@@ -95,6 +95,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [The Open Source Definition](https://opensource.org/osd) — standard
 2. [Software license — Wikipedia](https://en.wikipedia.org/wiki/Software_license) — encyclopedia
+3. [SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
 
 ## 코스에서 계속 읽기
 

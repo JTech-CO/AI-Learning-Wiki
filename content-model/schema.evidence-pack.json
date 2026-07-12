@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-learning-wiki/schema/evidence-pack.json",
+  "title": "WikiArticleEvidencePacks",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "generatedAt", "topicCatalogSha256", "articles"],
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "topicCatalogSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "articles": {
+      "type": "array",
+      "minItems": 150,
+      "maxItems": 1400,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["articleId", "titleKo", "titleEn", "categoryId", "tier", "volatility", "reviewedAt", "reviewDueAt", "manualReviewRequired", "researchAnchorIds", "sources", "sections", "audit"],
+        "properties": {
+          "articleId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "titleKo": { "type": "string", "minLength": 1 },
+          "titleEn": { "type": "string", "minLength": 1 },
+          "categoryId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "tier": { "type": "string", "enum": ["core", "standard", "brief"] },
+          "volatility": { "type": "string", "enum": ["evergreen", "periodic", "fast-changing"] },
+          "reviewedAt": { "type": "string", "format": "date" },
+          "reviewDueAt": { "type": "string", "format": "date-time" },
+          "manualReviewRequired": { "const": true },
+          "researchAnchorIds": { "type": "array", "minItems": 3, "uniqueItems": true, "items": { "type": "string" } },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "title", "url", "type", "family", "origin", "primaryCandidate", "encyclopedia", "reachability", "relevanceStatus", "checkedAt"],
+              "properties": {
+                "id": { "type": "string", "pattern": "^src-[a-f0-9]{12}$" },
+                "title": { "type": "string", "minLength": 1 },
+                "url": { "type": "string", "format": "uri" },
+                "type": { "type": "string", "minLength": 1 },
+                "family": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+                "origin": { "type": "string", "enum": ["article", "wikimedia"] },
+                "primaryCandidate": { "type": "boolean" },
+                "encyclopedia": { "type": "boolean" },
+                "reachability": { "type": "string", "enum": ["verified", "restricted", "unavailable", "wikimedia-api"] },
+                "relevanceStatus": { "type": "string", "enum": ["editor-linked", "metadata-only"] },
+                "checkedAt": { "type": "string", "format": "date-time" }
+              }
+            }
+          },
+          "sections": {
+            "type": "array",
+            "minItems": 5,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["sectionId", "sectionTitle", "factual", "candidateSourceIds", "assignmentStatus"],
+              "properties": {
+                "sectionId": { "type": "string", "minLength": 1 },
+                "sectionTitle": { "type": "string", "minLength": 1 },
+                "factual": { "type": "boolean" },
+                "candidateSourceIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^src-[a-f0-9]{12}$" } },
+                "assignmentStatus": { "type": "string", "enum": ["review-required", "not-factual", "missing"] }
+              }
+            }
+          },
+          "audit": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["independentFamilies", "primaryCandidates", "encyclopediaFamilies", "reachableSources", "factualSections", "sectionsWithCandidates", "readyForManualClaimReview", "publicationReady", "gaps"],
+            "properties": {
+              "independentFamilies": { "type": "integer", "minimum": 0 },
+              "primaryCandidates": { "type": "integer", "minimum": 0 },
+              "encyclopediaFamilies": { "type": "integer", "minimum": 0 },
+              "reachableSources": { "type": "integer", "minimum": 0 },
+              "factualSections": { "type": "integer", "minimum": 0 },
+              "sectionsWithCandidates": { "type": "integer", "minimum": 0 },
+              "readyForManualClaimReview": { "type": "boolean" },
+              "publicationReady": { "const": false },
+              "gaps": { "type": "array", "uniqueItems": true, "items": { "type": "string", "enum": ["source-diversity", "primary-source", "encyclopedia-source", "unavailable-editor-source", "unmapped-factual-section", "manual-claim-review"] } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -94,6 +94,8 @@ _해당 문서가 없습니다._
 ## 참고 문헌
 
 1. [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
+2. [Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
+3. [Multimodal chat templates — Transformers documentation](https://huggingface.co/docs/transformers/en/chat_templating_multimodal) — documentation
 
 ## 코스에서 계속 읽기
 

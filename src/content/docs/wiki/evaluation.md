@@ -94,6 +94,8 @@ _해당 문서가 없습니다._
 ## 참고 문헌
 
 1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
+2. [Machine learning: model assessments — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning#Model_assessments) — encyclopedia
+3. [MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
 
 ## 코스에서 계속 읽기
 

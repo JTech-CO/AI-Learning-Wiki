@@ -94,7 +94,8 @@ _해당 문서가 없습니다._
 ## 참고 문헌
 
 1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-2. [Inference — Wikipedia](https://en.wikipedia.org/wiki/Inference) — encyclopedia
+2. [Machine learning: model assessments — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning#Model_assessments) — encyclopedia
+3. [vLLM documentation](https://docs.vllm.ai/en/stable/) — documentation
 
 ## 코스에서 계속 읽기
 

@@ -95,6 +95,7 @@ _해당 문서가 없습니다._
 
 1. [MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
 2. [API — 한국어 위키백과](https://ko.wikipedia.org/wiki/API) — encyclopedia
+3. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 
 ## 코스에서 계속 읽기
 

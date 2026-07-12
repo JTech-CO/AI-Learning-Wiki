@@ -98,6 +98,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
 2. [Fine-tuning (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Fine-tuning_%28deep_learning%29) — encyclopedia
+3. [Fine-tuning — Transformers documentation](https://huggingface.co/docs/transformers/training) — documentation
 
 ## 코스에서 계속 읽기
 

@@ -95,6 +95,7 @@ _해당 문서가 없습니다._
 
 1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
 2. [Euclidean vector — Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector) — encyclopedia
+3. [numpy.ndarray — NumPy documentation](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html) — documentation
 
 ## 코스에서 계속 읽기
 

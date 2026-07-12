@@ -7,57 +7,538 @@
     "preferVersionedPermalinks": true
   },
   "discoveryServices": [
-    { "id": "wikimedia-api", "title": "MediaWiki Action API", "publisher": "Wikimedia", "canonicalUrl": "https://www.mediawiki.org/wiki/API:Action_API", "family": "wikimedia", "mode": "metadata", "license": "API metadata and page licenses vary" },
-    { "id": "wikidata-api", "title": "Wikidata data access", "publisher": "Wikimedia", "canonicalUrl": "https://www.wikidata.org/wiki/Help:Data_access", "family": "wikimedia-structured-data", "mode": "metadata", "license": "CC0 for Wikidata structured data" },
-    { "id": "arxiv-api", "title": "arXiv API", "publisher": "Cornell University", "canonicalUrl": "https://info.arxiv.org/help/api/index.html", "family": "paper-repository", "mode": "discovery", "license": "Metadata use permitted; paper licenses vary" },
-    { "id": "crossref-api", "title": "Crossref REST API", "publisher": "Crossref", "canonicalUrl": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/", "family": "doi-metadata", "mode": "discovery", "license": "Metadata generally reusable; record-specific content varies" },
-    { "id": "openalex-api", "title": "OpenAlex API", "publisher": "OurResearch", "canonicalUrl": "https://developers.openalex.org/", "family": "academic-graph", "mode": "discovery", "license": "Metadata terms documented by OpenAlex" }
+    {
+      "id": "wikimedia-api",
+      "title": "MediaWiki Action API",
+      "publisher": "Wikimedia",
+      "canonicalUrl": "https://www.mediawiki.org/wiki/API:Action_API",
+      "family": "wikimedia",
+      "mode": "metadata",
+      "license": "API metadata and page licenses vary"
+    },
+    {
+      "id": "wikidata-api",
+      "title": "Wikidata data access",
+      "publisher": "Wikimedia",
+      "canonicalUrl": "https://www.wikidata.org/wiki/Help:Data_access",
+      "family": "wikimedia-structured-data",
+      "mode": "metadata",
+      "license": "CC0 for Wikidata structured data"
+    },
+    {
+      "id": "arxiv-api",
+      "title": "arXiv API",
+      "publisher": "Cornell University",
+      "canonicalUrl": "https://info.arxiv.org/help/api/index.html",
+      "family": "paper-repository",
+      "mode": "discovery",
+      "license": "Metadata use permitted; paper licenses vary"
+    },
+    {
+      "id": "crossref-api",
+      "title": "Crossref REST API",
+      "publisher": "Crossref",
+      "canonicalUrl": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "family": "doi-metadata",
+      "mode": "discovery",
+      "license": "Metadata generally reusable; record-specific content varies"
+    },
+    {
+      "id": "openalex-api",
+      "title": "OpenAlex API",
+      "publisher": "OurResearch",
+      "canonicalUrl": "https://developers.openalex.org/",
+      "family": "academic-graph",
+      "mode": "discovery",
+      "license": "Metadata terms documented by OpenAlex"
+    }
   ],
   "sources": [
-    { "id": "google-ml-glossary", "title": "Machine Learning Glossary", "publisher": "Google", "canonicalUrl": "https://developers.google.com/machine-learning/glossary", "family": "industry-reference", "kind": "reference", "primaryFor": ["Google terminology"], "categories": ["foundations", "llm", "evaluation"] },
-    { "id": "deep-learning-book", "title": "Deep Learning", "publisher": "MIT Press / authors", "canonicalUrl": "https://www.deeplearningbook.org/", "family": "academic-book", "kind": "book", "primaryFor": [], "categories": ["foundations", "mathematics", "neural"] },
-    { "id": "scikit-learn-guide", "title": "scikit-learn User Guide", "publisher": "scikit-learn project", "canonicalUrl": "https://scikit-learn.org/stable/user_guide.html", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["scikit-learn behavior"], "categories": ["foundations", "mathematics", "neural"] },
-    { "id": "pytorch-docs", "title": "PyTorch Documentation", "publisher": "PyTorch Foundation", "canonicalUrl": "https://docs.pytorch.org/docs/stable/", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["PyTorch behavior"], "categories": ["neural", "transformer", "training"] },
-    { "id": "transformer-paper", "title": "Attention Is All You Need", "publisher": "arXiv / NeurIPS authors", "canonicalUrl": "https://arxiv.org/abs/1706.03762", "family": "research-paper", "kind": "paper", "primaryFor": ["Transformer architecture"], "categories": ["transformer"] },
-    { "id": "huggingface-transformers", "title": "Transformers Documentation", "publisher": "Hugging Face", "canonicalUrl": "https://huggingface.co/docs/transformers/index", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["Transformers library behavior"], "categories": ["transformer", "llm", "inference", "multimodal"] },
-    { "id": "huggingface-tokenizers", "title": "Tokenizers Documentation", "publisher": "Hugging Face", "canonicalUrl": "https://huggingface.co/docs/tokenizers/index", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["Tokenizers library behavior"], "categories": ["llm"] },
-    { "id": "huggingface-trl", "title": "TRL Documentation", "publisher": "Hugging Face", "canonicalUrl": "https://huggingface.co/docs/trl/index", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["TRL behavior"], "categories": ["training"] },
-    { "id": "deepspeed-docs", "title": "DeepSpeed Documentation", "publisher": "Microsoft", "canonicalUrl": "https://www.deepspeed.ai/", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["DeepSpeed behavior"], "categories": ["training"] },
-    { "id": "vllm-docs", "title": "vLLM Documentation", "publisher": "vLLM project", "canonicalUrl": "https://docs.vllm.ai/en/stable/", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["vLLM behavior"], "categories": ["inference"] },
-    { "id": "tensorrt-llm-docs", "title": "TensorRT-LLM Documentation", "publisher": "NVIDIA", "canonicalUrl": "https://nvidia.github.io/TensorRT-LLM/", "family": "vendor-documentation", "kind": "official-doc", "primaryFor": ["TensorRT-LLM behavior"], "categories": ["inference"] },
-    { "id": "faiss-docs", "title": "Faiss Documentation", "publisher": "Meta", "canonicalUrl": "https://faiss.ai/", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["Faiss behavior"], "categories": ["retrieval"] },
-    { "id": "ir-book", "title": "Introduction to Information Retrieval", "publisher": "Cambridge University Press / Stanford authors", "canonicalUrl": "https://nlp.stanford.edu/IR-book/", "family": "academic-book", "kind": "book", "primaryFor": [], "categories": ["retrieval"] },
-    { "id": "sentence-transformers-docs", "title": "Sentence Transformers Documentation", "publisher": "Sentence Transformers project", "canonicalUrl": "https://sbert.net/", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["Sentence Transformers behavior"], "categories": ["retrieval"] },
-    { "id": "openapi-spec", "title": "OpenAPI Specification", "publisher": "OpenAPI Initiative", "canonicalUrl": "https://spec.openapis.org/oas/latest.html", "family": "technical-standard", "kind": "standard", "primaryFor": ["OpenAPI"], "categories": ["api", "agents"] },
-    { "id": "mdn-http", "title": "HTTP", "publisher": "MDN Web Docs", "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP", "family": "web-reference", "kind": "reference", "primaryFor": [], "categories": ["api"] },
-    { "id": "rfc-9110", "title": "HTTP Semantics RFC 9110", "publisher": "IETF", "canonicalUrl": "https://www.rfc-editor.org/rfc/rfc9110", "family": "technical-standard", "kind": "standard", "primaryFor": ["HTTP semantics"], "categories": ["api"] },
-    { "id": "mcp-spec", "title": "Model Context Protocol Specification", "publisher": "Model Context Protocol project", "canonicalUrl": "https://modelcontextprotocol.io/specification/2025-11-25", "family": "technical-standard", "kind": "standard", "primaryFor": ["Model Context Protocol"], "categories": ["agents"] },
-    { "id": "agent-security-nist", "title": "NIST AI Risk Management Framework", "publisher": "NIST", "canonicalUrl": "https://www.nist.gov/itl/ai-risk-management-framework", "family": "government-framework", "kind": "standard", "primaryFor": ["NIST AI RMF"], "categories": ["agents", "safety"] },
-    { "id": "w3c-webnn", "title": "Web Neural Network API", "publisher": "W3C", "canonicalUrl": "https://www.w3.org/TR/webnn/", "family": "technical-standard", "kind": "standard", "primaryFor": ["WebNN"], "categories": ["multimodal"] },
-    { "id": "clip-paper", "title": "Learning Transferable Visual Models From Natural Language Supervision", "publisher": "arXiv / ICML authors", "canonicalUrl": "https://arxiv.org/abs/2103.00020", "family": "research-paper", "kind": "paper", "primaryFor": ["CLIP"], "categories": ["multimodal"] },
-    { "id": "whisper-paper", "title": "Robust Speech Recognition via Large-Scale Weak Supervision", "publisher": "arXiv / ICML authors", "canonicalUrl": "https://arxiv.org/abs/2212.04356", "family": "research-paper", "kind": "paper", "primaryFor": ["Whisper"], "categories": ["multimodal"] },
-    { "id": "mlcommons", "title": "MLCommons Benchmarks", "publisher": "MLCommons", "canonicalUrl": "https://mlcommons.org/benchmarks/", "family": "benchmark-organization", "kind": "official-doc", "primaryFor": ["MLCommons benchmarks"], "categories": ["evaluation"] },
-    { "id": "nist-ai-evaluation", "title": "NIST AI Evaluation", "publisher": "NIST", "canonicalUrl": "https://www.nist.gov/artificial-intelligence", "family": "government-framework", "kind": "official-doc", "primaryFor": ["NIST AI evaluation programs"], "categories": ["evaluation"] },
-    { "id": "owasp-genai", "title": "OWASP GenAI Security Project", "publisher": "OWASP Foundation", "canonicalUrl": "https://genai.owasp.org/", "family": "security-community-standard", "kind": "standard", "primaryFor": ["OWASP GenAI guidance"], "categories": ["safety"] },
-    { "id": "mitre-atlas", "title": "MITRE ATLAS", "publisher": "MITRE", "canonicalUrl": "https://atlas.mitre.org/", "family": "security-knowledge-base", "kind": "official-doc", "primaryFor": ["ATLAS techniques"], "categories": ["safety"] },
-    { "id": "spdx-spec", "title": "SPDX Specification", "publisher": "Linux Foundation", "canonicalUrl": "https://spdx.github.io/spdx-spec/", "family": "technical-standard", "kind": "standard", "primaryFor": ["SPDX"], "categories": ["ecosystem"] },
-    { "id": "huggingface-hub-docs", "title": "Hugging Face Hub Documentation", "publisher": "Hugging Face", "canonicalUrl": "https://huggingface.co/docs/hub/index", "family": "platform-documentation", "kind": "official-doc", "primaryFor": ["Hugging Face Hub behavior"], "categories": ["ecosystem"] },
-    { "id": "mlflow-docs", "title": "MLflow Documentation", "publisher": "MLflow project", "canonicalUrl": "https://mlflow.org/docs/latest/", "family": "project-documentation", "kind": "official-doc", "primaryFor": ["MLflow behavior"], "categories": ["ecosystem"] }
+    {
+      "id": "google-ml-glossary",
+      "title": "Machine Learning Glossary",
+      "publisher": "Google",
+      "canonicalUrl": "https://developers.google.com/machine-learning/glossary",
+      "family": "industry-reference",
+      "kind": "reference",
+      "primaryFor": [
+        "Google terminology"
+      ],
+      "categories": [
+        "foundations",
+        "llm",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "deep-learning-book",
+      "title": "Deep Learning",
+      "publisher": "MIT Press / authors",
+      "canonicalUrl": "https://www.deeplearningbook.org/",
+      "family": "academic-book",
+      "kind": "book",
+      "primaryFor": [],
+      "categories": [
+        "foundations",
+        "mathematics",
+        "neural"
+      ]
+    },
+    {
+      "id": "scikit-learn-guide",
+      "title": "scikit-learn User Guide",
+      "publisher": "scikit-learn project",
+      "canonicalUrl": "https://scikit-learn.org/stable/user_guide.html",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "scikit-learn behavior"
+      ],
+      "categories": [
+        "foundations",
+        "mathematics",
+        "neural"
+      ]
+    },
+    {
+      "id": "pytorch-docs",
+      "title": "PyTorch Documentation",
+      "publisher": "PyTorch Foundation",
+      "canonicalUrl": "https://docs.pytorch.org/docs/stable/",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "PyTorch behavior"
+      ],
+      "categories": [
+        "neural",
+        "transformer",
+        "training"
+      ]
+    },
+    {
+      "id": "transformer-paper",
+      "title": "Attention Is All You Need",
+      "publisher": "arXiv / NeurIPS authors",
+      "canonicalUrl": "https://arxiv.org/abs/1706.03762",
+      "family": "research-paper",
+      "kind": "paper",
+      "primaryFor": [
+        "Transformer architecture"
+      ],
+      "categories": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "huggingface-transformers",
+      "title": "Transformers Documentation",
+      "publisher": "Hugging Face",
+      "canonicalUrl": "https://huggingface.co/docs/transformers/index",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "Transformers library behavior"
+      ],
+      "categories": [
+        "transformer",
+        "llm",
+        "inference",
+        "multimodal"
+      ]
+    },
+    {
+      "id": "huggingface-tokenizers",
+      "title": "Tokenizers Documentation",
+      "publisher": "Hugging Face",
+      "canonicalUrl": "https://huggingface.co/docs/tokenizers/index",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "Tokenizers library behavior"
+      ],
+      "categories": [
+        "llm"
+      ]
+    },
+    {
+      "id": "huggingface-trl",
+      "title": "TRL Documentation",
+      "publisher": "Hugging Face",
+      "canonicalUrl": "https://huggingface.co/docs/trl/index",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "TRL behavior"
+      ],
+      "categories": [
+        "training"
+      ]
+    },
+    {
+      "id": "deepspeed-docs",
+      "title": "DeepSpeed Documentation",
+      "publisher": "Microsoft",
+      "canonicalUrl": "https://www.deepspeed.ai/",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "DeepSpeed behavior"
+      ],
+      "categories": [
+        "training"
+      ]
+    },
+    {
+      "id": "vllm-docs",
+      "title": "vLLM Documentation",
+      "publisher": "vLLM project",
+      "canonicalUrl": "https://docs.vllm.ai/en/stable/",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "vLLM behavior"
+      ],
+      "categories": [
+        "inference"
+      ]
+    },
+    {
+      "id": "tensorrt-llm-docs",
+      "title": "TensorRT-LLM Documentation",
+      "publisher": "NVIDIA",
+      "canonicalUrl": "https://nvidia.github.io/TensorRT-LLM/",
+      "family": "vendor-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "TensorRT-LLM behavior"
+      ],
+      "categories": [
+        "inference"
+      ]
+    },
+    {
+      "id": "faiss-docs",
+      "title": "Faiss Documentation",
+      "publisher": "Meta",
+      "canonicalUrl": "https://faiss.ai/",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "Faiss behavior"
+      ],
+      "categories": [
+        "retrieval"
+      ]
+    },
+    {
+      "id": "ir-book",
+      "title": "Introduction to Information Retrieval",
+      "publisher": "Cambridge University Press / Stanford authors",
+      "canonicalUrl": "https://nlp.stanford.edu/IR-book/",
+      "family": "academic-book",
+      "kind": "book",
+      "primaryFor": [],
+      "categories": [
+        "retrieval"
+      ]
+    },
+    {
+      "id": "sentence-transformers-docs",
+      "title": "Sentence Transformers Documentation",
+      "publisher": "Sentence Transformers project",
+      "canonicalUrl": "https://sbert.net/",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "Sentence Transformers behavior"
+      ],
+      "categories": [
+        "retrieval"
+      ]
+    },
+    {
+      "id": "openapi-spec",
+      "title": "OpenAPI Specification",
+      "publisher": "OpenAPI Initiative",
+      "canonicalUrl": "https://spec.openapis.org/oas/latest.html",
+      "family": "technical-standard",
+      "kind": "standard",
+      "primaryFor": [
+        "OpenAPI"
+      ],
+      "categories": [
+        "api",
+        "agents"
+      ]
+    },
+    {
+      "id": "mdn-http",
+      "title": "HTTP",
+      "publisher": "MDN Web Docs",
+      "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+      "family": "web-reference",
+      "kind": "reference",
+      "primaryFor": [],
+      "categories": [
+        "api"
+      ]
+    },
+    {
+      "id": "rfc-9110",
+      "title": "HTTP Semantics RFC 9110",
+      "publisher": "IETF",
+      "canonicalUrl": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "family": "technical-standard",
+      "kind": "standard",
+      "primaryFor": [
+        "HTTP semantics"
+      ],
+      "categories": [
+        "api"
+      ]
+    },
+    {
+      "id": "mcp-spec",
+      "title": "Model Context Protocol Specification",
+      "publisher": "Model Context Protocol project",
+      "canonicalUrl": "https://modelcontextprotocol.io/specification/2025-11-25",
+      "family": "technical-standard",
+      "kind": "standard",
+      "primaryFor": [
+        "Model Context Protocol"
+      ],
+      "categories": [
+        "agents"
+      ]
+    },
+    {
+      "id": "agent-security-nist",
+      "title": "NIST AI Risk Management Framework",
+      "publisher": "NIST",
+      "canonicalUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "family": "government-framework",
+      "kind": "standard",
+      "primaryFor": [
+        "NIST AI RMF"
+      ],
+      "categories": [
+        "agents",
+        "safety"
+      ]
+    },
+    {
+      "id": "w3c-webnn",
+      "title": "Web Neural Network API",
+      "publisher": "W3C",
+      "canonicalUrl": "https://www.w3.org/TR/webnn/",
+      "family": "technical-standard",
+      "kind": "standard",
+      "primaryFor": [
+        "WebNN"
+      ],
+      "categories": [
+        "multimodal"
+      ]
+    },
+    {
+      "id": "clip-paper",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "publisher": "arXiv / ICML authors",
+      "canonicalUrl": "https://arxiv.org/abs/2103.00020",
+      "family": "research-paper",
+      "kind": "paper",
+      "primaryFor": [
+        "CLIP"
+      ],
+      "categories": [
+        "multimodal"
+      ]
+    },
+    {
+      "id": "whisper-paper",
+      "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "publisher": "arXiv / ICML authors",
+      "canonicalUrl": "https://arxiv.org/abs/2212.04356",
+      "family": "research-paper",
+      "kind": "paper",
+      "primaryFor": [
+        "Whisper"
+      ],
+      "categories": [
+        "multimodal"
+      ]
+    },
+    {
+      "id": "mlcommons",
+      "title": "MLCommons Benchmarks",
+      "publisher": "MLCommons",
+      "canonicalUrl": "https://mlcommons.org/benchmarks/",
+      "family": "benchmark-organization",
+      "kind": "official-doc",
+      "primaryFor": [
+        "MLCommons benchmarks"
+      ],
+      "categories": [
+        "evaluation"
+      ]
+    },
+    {
+      "id": "nist-ai-evaluation",
+      "title": "NIST AI Evaluation",
+      "publisher": "NIST",
+      "canonicalUrl": "https://www.nist.gov/artificial-intelligence",
+      "family": "government-framework",
+      "kind": "official-doc",
+      "primaryFor": [
+        "NIST AI evaluation programs"
+      ],
+      "categories": [
+        "evaluation"
+      ]
+    },
+    {
+      "id": "owasp-genai",
+      "title": "OWASP GenAI Security Project",
+      "publisher": "OWASP Foundation",
+      "canonicalUrl": "https://genai.owasp.org/",
+      "family": "security-community-standard",
+      "kind": "standard",
+      "primaryFor": [
+        "OWASP GenAI guidance"
+      ],
+      "categories": [
+        "safety"
+      ]
+    },
+    {
+      "id": "mitre-atlas",
+      "title": "MITRE ATLAS",
+      "publisher": "MITRE",
+      "canonicalUrl": "https://atlas.mitre.org/",
+      "family": "security-knowledge-base",
+      "kind": "official-doc",
+      "primaryFor": [
+        "ATLAS techniques"
+      ],
+      "categories": [
+        "safety"
+      ]
+    },
+    {
+      "id": "spdx-spec",
+      "title": "SPDX Specification",
+      "publisher": "Linux Foundation",
+      "canonicalUrl": "https://spdx.github.io/spdx-spec/",
+      "family": "technical-standard",
+      "kind": "standard",
+      "primaryFor": [
+        "SPDX"
+      ],
+      "categories": [
+        "ecosystem"
+      ]
+    },
+    {
+      "id": "huggingface-hub-docs",
+      "title": "Hugging Face Hub Documentation",
+      "publisher": "Hugging Face",
+      "canonicalUrl": "https://huggingface.co/docs/hub/index",
+      "family": "platform-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "Hugging Face Hub behavior"
+      ],
+      "categories": [
+        "ecosystem"
+      ]
+    },
+    {
+      "id": "mlflow-docs",
+      "title": "MLflow Documentation",
+      "publisher": "MLflow project",
+      "canonicalUrl": "https://mlflow.org/docs/latest/",
+      "family": "project-documentation",
+      "kind": "official-doc",
+      "primaryFor": [
+        "MLflow behavior"
+      ],
+      "categories": [
+        "ecosystem"
+      ]
+    }
   ],
   "categoryAnchors": {
-    "foundations": ["google-ml-glossary", "deep-learning-book", "scikit-learn-guide"],
-    "mathematics": ["deep-learning-book", "scikit-learn-guide", "pytorch-docs"],
-    "neural": ["deep-learning-book", "pytorch-docs", "scikit-learn-guide"],
-    "transformer": ["transformer-paper", "huggingface-transformers", "pytorch-docs"],
-    "llm": ["huggingface-transformers", "huggingface-tokenizers", "google-ml-glossary"],
-    "training": ["pytorch-docs", "huggingface-trl", "deepspeed-docs"],
-    "inference": ["vllm-docs", "tensorrt-llm-docs", "huggingface-transformers"],
-    "retrieval": ["faiss-docs", "ir-book", "sentence-transformers-docs"],
-    "api": ["openapi-spec", "mdn-http", "rfc-9110"],
-    "agents": ["mcp-spec", "openapi-spec", "agent-security-nist"],
-    "multimodal": ["w3c-webnn", "clip-paper", "whisper-paper", "huggingface-transformers"],
-    "evaluation": ["mlcommons", "nist-ai-evaluation", "google-ml-glossary"],
-    "safety": ["agent-security-nist", "owasp-genai", "mitre-atlas"],
-    "ecosystem": ["spdx-spec", "huggingface-hub-docs", "mlflow-docs"]
+    "foundations": [
+      "google-ml-glossary",
+      "deep-learning-book",
+      "scikit-learn-guide"
+    ],
+    "mathematics": [
+      "deep-learning-book",
+      "scikit-learn-guide",
+      "pytorch-docs"
+    ],
+    "neural": [
+      "deep-learning-book",
+      "pytorch-docs",
+      "scikit-learn-guide"
+    ],
+    "transformer": [
+      "transformer-paper",
+      "huggingface-transformers",
+      "pytorch-docs"
+    ],
+    "llm": [
+      "huggingface-transformers",
+      "huggingface-tokenizers",
+      "google-ml-glossary"
+    ],
+    "training": [
+      "pytorch-docs",
+      "huggingface-trl",
+      "deepspeed-docs"
+    ],
+    "inference": [
+      "vllm-docs",
+      "tensorrt-llm-docs",
+      "huggingface-transformers"
+    ],
+    "retrieval": [
+      "faiss-docs",
+      "ir-book",
+      "sentence-transformers-docs"
+    ],
+    "api": [
+      "openapi-spec",
+      "mdn-http",
+      "rfc-9110"
+    ],
+    "agents": [
+      "mcp-spec",
+      "openapi-spec",
+      "agent-security-nist"
+    ],
+    "multimodal": [
+      "w3c-webnn",
+      "clip-paper",
+      "whisper-paper",
+      "huggingface-transformers"
+    ],
+    "evaluation": [
+      "mlcommons",
+      "nist-ai-evaluation",
+      "google-ml-glossary"
+    ],
+    "safety": [
+      "agent-security-nist",
+      "owasp-genai",
+      "mitre-atlas"
+    ],
+    "ecosystem": [
+      "spdx-spec",
+      "huggingface-hub-docs",
+      "mlflow-docs"
+    ]
   }
 }

@@ -95,6 +95,7 @@ _해당 문서가 없습니다._
 
 1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
 2. [Transformer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29) — encyclopedia
+3. [Transformers documentation](https://huggingface.co/docs/transformers/index) — documentation
 
 ## 코스에서 계속 읽기
 

@@ -100,6 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
 2. [Large language model — Wikipedia](https://en.wikipedia.org/wiki/Large_language_model) — encyclopedia
+3. [Transformers documentation](https://huggingface.co/docs/transformers/index) — documentation
 
 ## 코스에서 계속 읽기
 

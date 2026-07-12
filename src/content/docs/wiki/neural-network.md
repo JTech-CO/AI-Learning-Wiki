@@ -95,6 +95,7 @@ _해당 문서가 없습니다._
 
 1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
 2. [Neural network — Wikipedia](https://en.wikipedia.org/wiki/Neural_network) — encyclopedia
+3. [torch.nn — PyTorch documentation](https://docs.pytorch.org/docs/stable/nn.html) — documentation
 
 ## 코스에서 계속 읽기
 

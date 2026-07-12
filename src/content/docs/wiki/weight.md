@@ -99,7 +99,7 @@ _포함된 코스가 없습니다._
 ## 참고 문헌
 
 1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-2. [Weight (artificial neural network) — Wikipedia](https://en.wikipedia.org/wiki/Weight_%28artificial_neural_network%29) — encyclopedia
+2. [Neural network (machine learning) — Wikipedia](https://en.wikipedia.org/wiki/Artificial_neural_network) — encyclopedia
 
 ## 코스에서 계속 읽기
 
