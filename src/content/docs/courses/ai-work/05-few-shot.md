@@ -144,7 +144,7 @@ AI는 수억 개의 글을 보며 '패턴을 흉내 내는 법'을 배웠어요.
 - [Few Shot Example](/concepts/few-shot-example/)
 - [Pattern](/concepts/pattern/)
 - [Output Format](/concepts/output-format/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

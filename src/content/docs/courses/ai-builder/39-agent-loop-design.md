@@ -121,7 +121,7 @@ _계획→도구 호출→관찰→다음 행동으로 도는 에이전트 실�
 
 ## 관련 개념
 
-- [Agent Loop](/concepts/agent-loop/)
+- [Agent Loop](/wiki/agent-loop/)
 - [Plan Act Observe Decide](/concepts/plan-act-observe-decide/)
 - [Stopping Condition](/concepts/stopping-condition/)
 - [Max Steps](/concepts/max-steps/)

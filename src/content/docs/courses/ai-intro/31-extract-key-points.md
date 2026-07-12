@@ -119,7 +119,7 @@ AI는 '어디가 핵심이고 어디가 살(설명·배경)인지' 패턴을 익
 - [Summarization](/concepts/summarization/)
 - [Extraction](/concepts/extraction/)
 - [Action Item](/concepts/action-item/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 
 
 ---

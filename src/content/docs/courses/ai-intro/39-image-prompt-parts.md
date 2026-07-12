@@ -117,8 +117,8 @@ _이미지 생성 프롬프트를 주제·스타일·구도·색감·분위기�
 
 ## 관련 개념
 
-- [Image Generation](/concepts/image-generation/)
-- [Prompt](/concepts/prompt/)
+- [Image Generation](/wiki/image-generation/)
+- [Prompt](/wiki/prompt/)
 - [Style](/concepts/style/)
 - [Composition](/concepts/composition/)
 

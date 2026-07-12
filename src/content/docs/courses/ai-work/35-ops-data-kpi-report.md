@@ -150,7 +150,7 @@ AI는 수억 개의 표·차트·통계 코드를 학습해서 "카테고리별 
 - [Kpi](/concepts/kpi/)
 - [Data Analysis](/concepts/data-analysis/)
 - [Outlier](/concepts/outlier/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Code Interpreter](/concepts/code-interpreter/)
 
 

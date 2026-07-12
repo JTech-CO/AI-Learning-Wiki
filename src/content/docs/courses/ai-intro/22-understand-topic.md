@@ -122,8 +122,8 @@ AI는 수억 개의 글에서 '쉬운 설명이 무엇인지'까지 학습했어
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
-- [Hallucination](/concepts/hallucination/)
+- [Prompt](/wiki/prompt/)
+- [Hallucination](/wiki/hallucination/)
 - [Chatbot](/concepts/chatbot/)
 - [Eli5](/concepts/eli5/)
 

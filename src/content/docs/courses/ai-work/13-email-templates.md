@@ -119,7 +119,7 @@ AI는 수억 통 이메일 패턴을 학습해 "안녕하세요 ~님"으로 시�
 - [Email Template](/concepts/email-template/)
 - [Placeholder](/concepts/placeholder/)
 - [Automation](/concepts/automation/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

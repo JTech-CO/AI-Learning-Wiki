@@ -204,7 +204,7 @@ Telegram 봇 연결하니, 신호 끊기면 텔레그램으로 '새벽백업 dow
 ## 관련 개념
 
 - [Automation](/concepts/automation/)
-- [Observability](/concepts/observability/)
+- [Observability](/wiki/observability/)
 
 
 ---

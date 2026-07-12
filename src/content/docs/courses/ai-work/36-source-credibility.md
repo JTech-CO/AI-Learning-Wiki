@@ -118,8 +118,8 @@ AI는 수억 개 문서의 출처·발행 패턴(도메인, 편집진 유무, �
 
 - [Source Evaluation](/concepts/source-evaluation/)
 - [Primary Source](/concepts/primary-source/)
-- [Bias](/concepts/bias/)
-- [Citation](/concepts/citation/)
+- [Bias](/wiki/bias/)
+- [Citation](/wiki/citation/)
 - [Fact Checking](/concepts/fact-checking/)
 
 

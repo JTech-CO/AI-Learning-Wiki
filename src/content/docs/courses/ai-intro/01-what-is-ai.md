@@ -109,8 +109,8 @@ AI는 사람처럼 생각하는 게 아니라, 인터넷의 엄청 많은 글을
 
 ## 관련 개념
 
-- [Generative Ai](/concepts/generative-ai/)
-- [Training Data](/concepts/training-data/)
+- [Generative Ai](/wiki/generative-ai/)
+- [Training Data](/wiki/training-data/)
 - [Pattern](/concepts/pattern/)
 - [Input Output](/concepts/input-output/)
 

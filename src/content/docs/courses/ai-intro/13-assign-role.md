@@ -119,7 +119,7 @@ AI는 수억 개의 글에서 '이런 사람은 이렇게 말한다'는 패턴�
 - [Role Prompting](/concepts/role-prompting/)
 - [Persona](/concepts/persona/)
 - [Tone](/concepts/tone/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

@@ -119,7 +119,7 @@ AI는 인터넷의 수억 개 글을 외운 **도서관 사서** 같다. "책 �
 - [Role Prompting](/concepts/role-prompting/)
 - [Context](/concepts/context/)
 - [Audience](/concepts/audience/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

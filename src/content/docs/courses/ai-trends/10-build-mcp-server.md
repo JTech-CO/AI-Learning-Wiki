@@ -250,7 +250,7 @@ Python FastMCP로 MCP 서버를 만들어줘. 도구는 [도구이름]이고, [�
 
 ## 관련 개념
 
-- [Mcp](/concepts/mcp/)
+- [Mcp](/wiki/mcp/)
 - [Deployment](/concepts/deployment/)
 
 

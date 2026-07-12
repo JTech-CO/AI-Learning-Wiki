@@ -119,9 +119,9 @@ AI는 요약은 잘하지만 빈틈이 생기면 그럴듯한 말로 채우는 �
 ## 관련 개념
 
 - [Document Qa](/concepts/document-qa/)
-- [Citation](/concepts/citation/)
-- [Hallucination](/concepts/hallucination/)
-- [Grounding](/concepts/grounding/)
+- [Citation](/wiki/citation/)
+- [Hallucination](/wiki/hallucination/)
+- [Grounding](/wiki/grounding/)
 
 
 ---

@@ -136,7 +136,7 @@ AI는 수억 개 대화와 역할극 텍스트를 학습해서, "너는 이런 �
 - [Custom Gpt](/concepts/custom-gpt/)
 - [Instructions](/concepts/instructions/)
 - [Guardrails](/concepts/guardrails/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Output Format](/concepts/output-format/)
 
 

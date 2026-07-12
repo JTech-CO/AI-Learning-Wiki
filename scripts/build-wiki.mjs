@@ -1,0 +1,60 @@
+import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { CATEGORY_META } from './wiki-core-data.mjs';
+
+const docs = path.resolve('src/content/docs');
+const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
+const articleFiles = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json'));
+const pathFiles = (await readdir('content-model/paths')).filter((file) => file.endsWith('.path.json'));
+const articles = (await Promise.all(articleFiles.map((file) => readJson(path.join('content-model/articles', file))))).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
+const courses = (await Promise.all(pathFiles.map((file) => readJson(path.join('content-model/paths', file))))).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
+const byId = new Map(articles.map((article) => [article.id, article]));
+const backlinks = new Map(articles.map((article) => [article.id, []]));
+const courseMap = new Map(articles.map((article) => [article.id, []]));
+
+for (const article of articles) for (const ref of [...article.prerequisites, ...article.related]) backlinks.get(ref)?.push(article.id);
+for (const course of courses) for (const step of course.steps) courseMap.get(step.ref)?.push(course.id);
+
+for (const dir of ['wiki', 'category', 'course', 'special']) {
+  const target = path.join(docs, dir);
+  await rm(target, { recursive: true, force: true });
+  await mkdir(target, { recursive: true });
+}
+
+const q = (value) => JSON.stringify(value);
+const list = (refs) => refs.length ? refs.map((ref) => `- [${byId.get(ref)?.title ?? ref}](/wiki/${ref}/)`).join('\n') : '_해당 문서가 없습니다._';
+
+for (const article of articles) {
+  const aliases = [article.englishTitle, ...article.aliases].filter((value, index, values) => value && value !== article.title && values.indexOf(value) === index);
+  const categoryLinks = article.categories.map((category) => `[${CATEGORY_META[category]?.[0] ?? category}](/category/${category}/)`).join(' · ');
+  const courseLinks = courseMap.get(article.id).map((id) => `[${courses.find((course) => course.id === id)?.title ?? id}](/course/${id}/)`).join(' · ');
+  const body = `---\ntitle: ${q(article.title)}\ndescription: ${q(article.summary)}\ntableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }\n---\n\n<p class="wiki-alias">${aliases.join(' · ')}</p>\n\n<p class="wiki-lead">${article.summary}</p>\n\n<div class="wiki-document-meta">분류: ${categoryLinks} · 문서 상태: 검토 완료 · 최근 검토: ${article.reviewedAt}</div>\n\n${article.sections.map((section) => `## ${section.title}\n\n${section.body}`).join('\n\n')}\n\n## 선행 개념\n\n${list(article.prerequisites)}\n\n## 관련 문서\n\n${list(article.related)}\n\n## 이 문서를 가리키는 문서\n\n${list([...new Set(backlinks.get(article.id))].sort())}\n\n## 이 문서를 포함하는 코스\n\n${courseLinks || '_포함된 코스가 없습니다._'}\n\n## 참고 문헌\n\n${article.sources.map((source, index) => `${index + 1}. [${source.title}](${source.url}) — ${source.type}`).join('\n')}\n`;
+  await writeFile(path.join(docs, 'wiki', `${article.id}.md`), body, 'utf8');
+}
+
+for (const [category, meta] of Object.entries(CATEGORY_META)) {
+  const members = articles.filter((article) => article.categories.includes(category));
+  const body = `---\ntitle: ${q(meta[0])}\ndescription: ${q(meta[1])}\n---\n\n# ${meta[0]}\n\n${meta[1]} 분야의 검토 완료 백과 문서입니다.\n\n${members.map((article) => `- [${article.title}](/wiki/${article.id}/) — ${article.summary}`).join('\n')}\n`;
+  await writeFile(path.join(docs, 'category', `${category}.md`), body, 'utf8');
+}
+
+for (const course of courses) {
+  const body = `---\ntitle: ${q(course.title)}\ndescription: ${q(course.description)}\n---\n\n<p class="wiki-lead">${course.description}</p>\n\n**대상:** ${course.audience}\n\n이 코스는 기존 실습 Guide의 순서를 재사용하지 않습니다. 백과 문서의 선행 관계를 기준으로 새로 구성한 읽기 순서입니다.\n\n## 권장 학습 순서\n\n${course.steps.map((step, index) => { const article = byId.get(step.ref); return `${index + 1}. [${article.title}](/wiki/${article.id}/) ${step.required ? '**필수**' : '선택'}  \n   ${step.reason}`; }).join('\n')}\n`;
+  await writeFile(path.join(docs, 'course', `${course.id}.md`), body, 'utf8');
+}
+
+const glossary = [...articles].sort((a, b) => a.title.localeCompare(b.title, 'ko'));
+await writeFile(path.join(docs, 'glossary.md'), `---\ntitle: 용어 색인\ndescription: AI·LLM 백과 문서 가나다 색인\n---\n\n# 용어 색인\n\n${glossary.map((article) => `- [${article.title}](/wiki/${article.id}/) <span class="wiki-en">${article.englishTitle}</span>`).join('\n')}\n`, 'utf8');
+await writeFile(path.join(docs, 'special', 'all-pages.md'), `---\ntitle: 전체 문서\ndescription: 검토 완료 AI·LLM 백과 문서 전체 목록\n---\n\n# 전체 문서\n\n현재 검토 완료된 백과 문서는 **${articles.length}개**입니다.\n\n${glossary.map((article) => `- [${article.title}](/wiki/${article.id}/) — ${article.summary}`).join('\n')}\n`, 'utf8');
+await writeFile(path.join(docs, 'special', 'recent.md'), `---\ntitle: 최근 검토 문서\ndescription: 최근 검토된 AI·LLM 백과 문서\n---\n\n# 최근 검토 문서\n\n${[...articles].sort((a, b) => b.reviewedAt.localeCompare(a.reviewedAt) || a.title.localeCompare(b.title, 'ko')).slice(0, 50).map((article) => `- ${article.reviewedAt} — [${article.title}](/wiki/${article.id}/)`).join('\n')}\n`, 'utf8');
+
+const index = {
+  generatedAt: new Date().toISOString(),
+  counts: { articles: articles.length, courses: courses.length },
+  categories: Object.entries(CATEGORY_META).map(([id, meta]) => ({ id, title: meta[0], description: meta[1], count: articles.filter((article) => article.categories.includes(id)).length })),
+  articles: articles.map((article) => ({ id: article.id, title: article.title, englishTitle: article.englishTitle, aliases: article.aliases, summary: article.summary, categories: article.categories, prerequisites: article.prerequisites, related: article.related, backlinks: [...new Set(backlinks.get(article.id))], courses: courseMap.get(article.id), reviewedAt: article.reviewedAt, url: `/wiki/${article.id}/` })),
+  courses: courses.map((course) => ({ ...course, url: `/course/${course.id}/`, steps: course.steps.map((step) => ({ ...step, title: byId.get(step.ref).title, url: `/wiki/${step.ref}/` })) }))
+};
+await mkdir('public/data', { recursive: true });
+await writeFile('public/data/wiki-index.json', `${JSON.stringify(index, null, 2)}\n`, 'utf8');
+console.log(`wiki pages: ${articles.length} articles, ${Object.keys(CATEGORY_META).length} categories, ${courses.length} courses`);

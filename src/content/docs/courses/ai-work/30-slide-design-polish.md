@@ -124,7 +124,7 @@ _정렬·여백·폰트 위계·색 대비의 기본 원칙으로 어수선한 �
 ## 관련 개념
 
 - [Slide Design](/concepts/slide-design/)
-- [Alignment](/concepts/alignment/)
+- [Alignment](/wiki/alignment/)
 - [Whitespace](/concepts/whitespace/)
 - [Typography](/concepts/typography/)
 - [Contrast](/concepts/contrast/)

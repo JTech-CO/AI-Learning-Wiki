@@ -121,9 +121,9 @@ AI 이미지 모델은 수억 장의 사진과 그 설명 문장을 함께 학�
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
-- [Image Generation](/concepts/image-generation/)
-- [Generative Ai](/concepts/generative-ai/)
+- [Prompt](/wiki/prompt/)
+- [Image Generation](/wiki/image-generation/)
+- [Generative Ai](/wiki/generative-ai/)
 - [Iteration](/concepts/iteration/)
 
 

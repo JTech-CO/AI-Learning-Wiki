@@ -229,7 +229,7 @@ try{ UrlFetchApp.fetch(url, opt) }catch(err){ MailApp.sendEmail('나@gmail.com',
 
 ## 관련 개념
 
-- [Webhook](/concepts/webhook/)
+- [Webhook](/wiki/webhook/)
 - [Automation](/concepts/automation/)
 
 

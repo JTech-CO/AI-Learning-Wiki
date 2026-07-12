@@ -110,10 +110,10 @@ AI는 진짜 사실을 '아는' 게 아니라 그럴듯하게 이어질 단어�
 
 ## 관련 개념
 
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Fact Checking](/concepts/fact-checking/)
 - [Critical Thinking](/concepts/critical-thinking/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

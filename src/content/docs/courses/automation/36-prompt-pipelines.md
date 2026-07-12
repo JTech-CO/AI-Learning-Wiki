@@ -232,7 +232,7 @@ AI가 준 아래 출력이 JSON으로 파싱이 안 돼. 무엇이 잘못됐는�
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Automation](/concepts/automation/)
 
 

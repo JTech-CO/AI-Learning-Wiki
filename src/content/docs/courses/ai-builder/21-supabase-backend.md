@@ -161,7 +161,7 @@ Supabase + 자바스크립트로 todo 앱을 만드는데 목록이 화면에 �
 - [Supabase](/concepts/supabase/)
 - [Backend](/concepts/backend/)
 - [Database](/concepts/database/)
-- [Api Key](/concepts/api-key/)
+- [Api Key](/wiki/api-key/)
 - [Publishable Key](/concepts/publishable-key/)
 - [Row Level Security](/concepts/row-level-security/)
 

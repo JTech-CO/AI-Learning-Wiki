@@ -116,12 +116,12 @@ AI 검색(RAG)은 질문과 "의미가 비슷한 조각"을 찾아 답을 만듭
 
 ## 관련 개념
 
-- [Chunking](/concepts/chunking/)
+- [Chunking](/wiki/chunking/)
 - [Chunk Size](/concepts/chunk-size/)
 - [Overlap](/concepts/overlap/)
 - [Sentence Boundary](/concepts/sentence-boundary/)
 - [Semantic Chunking](/concepts/semantic-chunking/)
-- [Rag](/concepts/rag/)
+- [Rag](/wiki/rag/)
 - [Retrieval Quality](/concepts/retrieval-quality/)
 
 

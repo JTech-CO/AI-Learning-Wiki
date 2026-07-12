@@ -128,7 +128,7 @@ AI는 '패턴을 읽어내는 눈'을 가졌어요. 잘 만든 예시 하나만 
 - [Few Shot Example](/concepts/few-shot-example/)
 - [Pattern](/concepts/pattern/)
 - [Output Format](/concepts/output-format/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

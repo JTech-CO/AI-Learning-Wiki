@@ -123,7 +123,7 @@ AI는 수억 건의 문서·회의록을 학습해 긴 글에서 '핵심이 뭔�
 ## 관련 개념
 
 - [Summarization](/concepts/summarization/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Action Item](/concepts/action-item/)
 - [Verification](/concepts/verification/)
 - [Table Formatting](/concepts/table-formatting/)

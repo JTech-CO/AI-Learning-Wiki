@@ -225,7 +225,7 @@ Top K를 2→4로 올리니 '경비 한도' 질문이 여러 문단을 종합해
 
 ## 관련 개념
 
-- [Rag](/concepts/rag/)
+- [Rag](/wiki/rag/)
 - [Automation](/concepts/automation/)
 
 

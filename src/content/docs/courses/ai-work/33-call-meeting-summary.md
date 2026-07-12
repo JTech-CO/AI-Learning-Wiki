@@ -149,7 +149,7 @@ AI는 수억 건의 회의록·통화 메모를 학습해 어떤 문장이 '결�
 - [Meeting Summary](/concepts/meeting-summary/)
 - [Action Item](/concepts/action-item/)
 - [Crm](/concepts/crm/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Template](/concepts/template/)
 - [Output Format](/concepts/output-format/)
 

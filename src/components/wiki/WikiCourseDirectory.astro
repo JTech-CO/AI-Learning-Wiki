@@ -1,0 +1,13 @@
+---
+import wiki from '../../../public/data/wiki-index.json';
+---
+<div class="wiki-course-directory">
+  {wiki.courses.map((course) => (
+    <section>
+      <h2><a href={course.url}>{course.title}</a></h2>
+      <p>{course.description}</p>
+      <p><strong>권장 순서:</strong> {course.steps.slice(0, 6).map((step, index) => <>{index ? ' → ' : ''}<a href={step.url}>{step.title}</a></>)}</p>
+      <p><a href={course.url}>전체 {course.steps.length}단계 보기</a></p>
+    </section>
+  ))}
+</div>

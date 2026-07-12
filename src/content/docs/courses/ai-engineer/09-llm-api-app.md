@@ -159,7 +159,7 @@ for q in questions:
 
 - [Llm Api](/concepts/llm-api/)
 - [Anthropic Api](/concepts/anthropic-api/)
-- [Api Key](/concepts/api-key/)
+- [Api Key](/wiki/api-key/)
 - [Streaming](/concepts/streaming/)
 - [Token Usage](/concepts/token-usage/)
 - [Pricing](/concepts/pricing/)

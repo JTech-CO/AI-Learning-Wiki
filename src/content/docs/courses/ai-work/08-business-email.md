@@ -131,8 +131,8 @@ AI는 수억 통의 업무 이메일을 학습해 **인사말→용건→요청�
 ## 관련 개념
 
 - [Email Writing](/concepts/email-writing/)
-- [Prompt](/concepts/prompt/)
-- [Hallucination](/concepts/hallucination/)
+- [Prompt](/wiki/prompt/)
+- [Hallucination](/wiki/hallucination/)
 - [Tone](/concepts/tone/)
 
 

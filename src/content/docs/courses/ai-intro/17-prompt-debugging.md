@@ -126,7 +126,7 @@ AI는 프롬프트에 적힌 정보만 갖고 답해요. 5칸 중 하나라도 �
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Debugging](/concepts/debugging/)
 - [Iteration](/concepts/iteration/)
 - [Role Prompting](/concepts/role-prompting/)

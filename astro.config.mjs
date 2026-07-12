@@ -6,26 +6,25 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'AI Learning Wiki',
-      description: '목표와 수준에 맞춰 배우는 305개 AI 실전 학습 위키',
-      customCss: ['./src/styles/custom.css', './src/styles/components.css'],
-      head: [{ tag: 'script', attrs: { src: '/progress.js', defer: true } }],
+      description: 'AI와 LLM을 연결해 설명하는 한국어 백과사전',
+      head: [{ tag: 'script', attrs: { src: '/wiki-course-progress.js', defer: true } }],
+      customCss: ['./src/styles/wiki.css', './src/styles/wiki-library.css'],
       locales: { root: { label: '한국어', lang: 'ko' } },
       pagination: false,
+      components: {
+        Header: './src/components/wiki/WikiHeader.astro',
+        Sidebar: './src/components/wiki/WikiSidebar.astro',
+        MobileMenuToggle: './src/components/wiki/WikiMobileMenuToggle.astro'
+      },
       sidebar: [
-        { label: '오늘의 학습', link: '/' },
-        { label: '맞춤 로드맵', link: '/paths/' },
-        { label: '전체 학습 탐색', link: '/explore/' },
-        { label: '프롬프트 탐색', link: '/prompt-explorer/' },
-        { label: '개념 사전', items: [{ autogenerate: { directory: 'concepts' } }] },
-        { label: '처음 시작', items: [{ autogenerate: { directory: 'courses/ai-start' } }] },
-        { label: 'AI 입문', items: [{ autogenerate: { directory: 'courses/ai-intro' } }] },
-        { label: '업무 활용', items: [{ autogenerate: { directory: 'courses/ai-work' } }] },
-        { label: '콘텐츠 제작', items: [{ autogenerate: { directory: 'courses/ai-content' } }] },
-        { label: '개발·엔지니어링', items: [{ autogenerate: { directory: 'courses/ai-engineer' } }] },
-        { label: '자동화·에이전트', items: [{ autogenerate: { directory: 'courses/ai-automation' } }] },
-        { label: '비즈니스·수익화', items: [{ autogenerate: { directory: 'courses/ai-earn' } }] },
-        { label: '최신 동향', items: [{ autogenerate: { directory: 'courses/ai-trends' } }] },
-      ],
-    }),
-  ],
+        { label: '대문', link: '/' },
+        { label: '전체 문서', link: '/special/all-pages/' },
+        { label: '용어 색인', link: '/glossary/' },
+        { label: '학습 코스', items: [{ autogenerate: { directory: 'course' } }] },
+        { label: '백과 분류', items: [{ autogenerate: { directory: 'category' } }] },
+        { label: '실습 자료실', link: '/explore/' },
+        { label: '프롬프트 자료실', link: '/prompt-explorer/' }
+      ]
+    })
+  ]
 });

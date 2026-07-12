@@ -116,7 +116,7 @@ AI가 엉뚱한 답을 주는 건 프롬프트에 정보가 빠졌기 때문이�
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Debugging](/concepts/debugging/)
 - [Iteration](/concepts/iteration/)
 - [Variable Control](/concepts/variable-control/)

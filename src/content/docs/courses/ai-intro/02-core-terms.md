@@ -127,12 +127,12 @@ AI는 인터넷 속 수억 개 문장을 학습해 '다음에 올 단어'를 잘
 
 ## 관련 개념
 
-- [Model](/concepts/model/)
-- [Prompt](/concepts/prompt/)
-- [Token](/concepts/token/)
+- [Model](/wiki/model/)
+- [Prompt](/wiki/prompt/)
+- [Token](/wiki/token/)
 - [Context](/concepts/context/)
-- [Temperature](/concepts/temperature/)
-- [Hallucination](/concepts/hallucination/)
+- [Temperature](/wiki/temperature/)
+- [Hallucination](/wiki/hallucination/)
 
 
 ---

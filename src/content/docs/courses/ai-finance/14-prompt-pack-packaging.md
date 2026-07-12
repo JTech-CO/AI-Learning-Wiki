@@ -232,7 +232,7 @@ AI: "⚠️ 본 프롬프트 결과물은 AI 생성이며 가격·법률·의학
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Monetization](/concepts/monetization/)
 
 

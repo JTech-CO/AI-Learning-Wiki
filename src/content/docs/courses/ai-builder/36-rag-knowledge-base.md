@@ -137,9 +137,9 @@ RAG는 **'Retrieval(검색)+Augmented(보강)+Generation(생성)'**의 줄임말
 
 ## 관련 개념
 
-- [Rag](/concepts/rag/)
+- [Rag](/wiki/rag/)
 - [Retrieval Augmented Generation](/concepts/retrieval-augmented-generation/)
-- [Embedding](/concepts/embedding/)
+- [Embedding](/wiki/embedding/)
 - [Vector Search](/concepts/vector-search/)
 - [Notebooklm](/concepts/notebooklm/)
 - [Citation Grounding](/concepts/citation-grounding/)

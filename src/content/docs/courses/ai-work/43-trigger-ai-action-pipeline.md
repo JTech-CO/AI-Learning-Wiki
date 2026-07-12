@@ -132,7 +132,7 @@ Zapier·Make 같은 자동화 도구는 앱과 앱 사이에 미리 깔린 컨�
 - [Trigger Action](/concepts/trigger-action/)
 - [Approval Gate](/concepts/approval-gate/)
 - [Zapier](/concepts/zapier/)
-- [Mcp](/concepts/mcp/)
+- [Mcp](/wiki/mcp/)
 
 
 ---

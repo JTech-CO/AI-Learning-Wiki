@@ -130,7 +130,7 @@ print(resp)
 ## 관련 개념
 
 - [Llm Api](/concepts/llm-api/)
-- [Sdk](/concepts/sdk/)
+- [Sdk](/wiki/sdk/)
 - [Messages Create](/concepts/messages-create/)
 - [Response Object](/concepts/response-object/)
 - [Content Block](/concepts/content-block/)

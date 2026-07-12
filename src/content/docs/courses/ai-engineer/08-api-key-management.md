@@ -138,7 +138,7 @@ $ cat .env.example   # OPENAI_API_KEY=
 
 ## 관련 개념
 
-- [Api Key](/concepts/api-key/)
+- [Api Key](/wiki/api-key/)
 - [Environment Variable](/concepts/environment-variable/)
 - [Dotenv](/concepts/dotenv/)
 - [Gitignore](/concepts/gitignore/)

@@ -209,7 +209,7 @@ else:
 - [Prompt Caching](/concepts/prompt-caching/)
 - [Cache Control](/concepts/cache-control/)
 - [Ephemeral](/concepts/ephemeral/)
-- [Context Window](/concepts/context-window/)
+- [Context Window](/wiki/context-window/)
 - [Cache Hit](/concepts/cache-hit/)
 - [Ttl](/concepts/ttl/)
 - [Cost Optimization](/concepts/cost-optimization/)

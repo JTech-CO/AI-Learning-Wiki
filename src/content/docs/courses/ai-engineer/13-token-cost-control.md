@@ -116,10 +116,10 @@ AI는 글자를 그대로 읽지 않고 '토큰'이라는 조각으로 잘라서
 
 ## 관련 개념
 
-- [Token](/concepts/token/)
+- [Token](/wiki/token/)
 - [Max Tokens](/concepts/max-tokens/)
 - [Api Cost](/concepts/api-cost/)
-- [Tokenization](/concepts/tokenization/)
+- [Tokenization](/wiki/tokenization/)
 - [Pricing](/concepts/pricing/)
 - [Budget Limit](/concepts/budget-limit/)
 - [Prompt Diet](/concepts/prompt-diet/)

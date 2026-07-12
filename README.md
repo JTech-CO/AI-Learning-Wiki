@@ -1,40 +1,58 @@
 # AI Learning Wiki
 
-EduVerse에서 운영 측과 합의된 공개 학습 데이터를 정규화하고 자체 제작 콘텐츠를 결합해, 학습자의 목표와 수준에 맞는 다음 학습을 제안하는 한국어 AI 학습 위키입니다.
+AI와 대규모 언어 모델의 원리, 용어, 기술을 하이퍼링크로 연결해 설명하는 한국어 백과사전입니다. 검색과 분야별 탐색으로 자유롭게 읽거나, 백과 문서의 선행 관계로 새로 구성한 학습 코스를 순서대로 따라갈 수 있습니다.
 
-## 현재 상태
+## 현재 구성
 
-- 전체 305개 모듈 수집·정규화 완료
-- 1,173개 프롬프트 템플릿과 예시 상태 추적
-- 537개 핵심 개념 페이지 자동 생성
-- 목표·수준·주당 시간 기반 학습 추천
-- 로그인 없는 브라우저 로컬 진도 저장
-- 학습·프롬프트 검색과 필터
-- 스키마, 생성물, 내부 링크, 핵심 경로를 포함한 릴리스 검증
-- Node.js 24 GitHub Actions CI
+- 검토 완료 핵심 백과 문서 150개
+- 백과 문서 검색 이름·별칭 320개
+- AI·LLM 대분류 14개
+- 백과 문서만 참조하는 Wiki 학습 코스 8개
+- 보존된 기존 실습 자료 305개
+- 프롬프트 자료 1,173개
+- 전체·최근·무작위 문서와 가나다·영문 용어 색인
+- 선행 개념, 관련 문서, 역링크, 포함 코스, 참고 문헌
+- 백과·실습·프롬프트 통합 검색
+
+Wiki 학습 코스는 기존 Guide 순서를 사용하지 않습니다. `content-model/paths`의 각 과정은 `content-model/articles`에 있는 백과 문서만 참조합니다. 기존 Guide는 `/explore/`의 자료실로 분리되어 있습니다.
 
 ## 시작하기
+
+Node.js 24를 사용합니다.
 
 ```bash
 npm ci
 npm run dev
 ```
 
-릴리스 가능한 상태를 검증하려면 Node.js 24에서 실행합니다.
+전체 검증과 정적 빌드:
 
 ```bash
 npm run build
 ```
 
-## 주요 경로
+## 콘텐츠 구조
 
-- `content-model/data/`: 정규화된 단일 콘텐츠 원본
-- `scripts/crawl/`: 공개 데이터 수집과 정규화
-- `scripts/build-pages.mjs`: 문서·개념 페이지 생성
-- `scripts/build-app-data.mjs`: 검색·추천용 JSON 생성
-- `src/components/`: 학습 추천 및 탐색 UI
-- `docs/BUILD.md`: 빌드와 데이터 갱신 방법
-- `docs/OPERATIONS.md`: 운영 인수와 배포 체크리스트
-- `docs/DATA_SCOPE.md`: 데이터 범위와 출처 원칙
+- `content-model/articles/`: 독립 백과 문서 원본
+- `content-model/paths/`: Wiki 학습 코스 원본
+- `content-model/data/`: 기존 305개 실습 자료 원본
+- `scripts/build-wiki.mjs`: 백과·분류·코스·색인 생성
+- `scripts/validate-wiki.mjs`: 백과 스키마와 참조 검증
+- `scripts/test-wiki.mjs`: 검색·그래프·Guide 미참조 검사
+- `public/data/wiki-index.json`: 통합 검색과 대문용 색인
+- `docs/WIKI_REDESIGN_PLAN.md`: 정보 구조와 단계별 기획
+- `docs/WIKI_CONTENT_GUIDE.md`: 백과 문서 작성·검토 기준
 
-파싱 원본 응답은 `content-model/raw/`에 로컬로만 보관하며 Git에 커밋하지 않습니다. 공개 키와 비밀값도 저장소에 저장하지 않습니다.
+## 주요 URL
+
+- `/`: 위키 대문
+- `/wiki/{slug}/`: 백과 문서
+- `/category/{slug}/`: 분야별 문서
+- `/course/{id}/`: Wiki 학습 코스
+- `/search/`: 통합 검색
+- `/glossary/`: 용어 색인
+- `/special/all-pages/`: 전체 문서
+- `/special/recent/`: 최근 검토 문서
+- `/special/random/`: 무작위 문서
+- `/explore/`: 기존 실습 자료실
+- `/prompt-explorer/`: 프롬프트 자료실

@@ -126,7 +126,7 @@ AI는 수억 건의 텍스트를 미리 읽고 "이런 문장은 대개 이런 �
 - [Classification](/concepts/classification/)
 - [Pipeline](/concepts/pipeline/)
 - [Output Format](/concepts/output-format/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

@@ -115,7 +115,7 @@ AI는 조건이 부족하면 학습한 것 중 가장 평범한 평균값을 골
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Specificity](/concepts/specificity/)
 - [Audience](/concepts/audience/)
 - [Task Decomposition](/concepts/task-decomposition/)

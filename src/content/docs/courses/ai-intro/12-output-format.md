@@ -117,9 +117,9 @@ AI는 형식을 안 정하면 그냥 '말하듯' 줄글로 답해요. '표로 �
 ## 관련 개념
 
 - [Output Format](/concepts/output-format/)
-- [Structured Output](/concepts/structured-output/)
-- [Json](/concepts/json/)
-- [Prompt](/concepts/prompt/)
+- [Structured Output](/wiki/structured-output/)
+- [Json](/wiki/json/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

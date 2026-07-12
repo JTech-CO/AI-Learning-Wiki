@@ -135,7 +135,7 @@ Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘
 - [Retry](/concepts/retry/)
 - [Exponential Backoff](/concepts/exponential-backoff/)
 - [Jitter](/concepts/jitter/)
-- [Rate Limit](/concepts/rate-limit/)
+- [Rate Limit](/wiki/rate-limit/)
 - [Timeout](/concepts/timeout/)
 - [Retry After](/concepts/retry-after/)
 - [Resilience](/concepts/resilience/)

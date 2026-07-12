@@ -282,7 +282,7 @@ console.log(data);
 
 ## 관련 개념
 
-- [Embedding](/concepts/embedding/)
+- [Embedding](/wiki/embedding/)
 - [Vector Search](/concepts/vector-search/)
 - [Database](/concepts/database/)
 - [Data](/concepts/data/)

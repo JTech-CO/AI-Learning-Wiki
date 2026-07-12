@@ -117,9 +117,9 @@ AI는 진짜/가짜 문장을 구분하지 않고 '그럴듯하게 이어지는 
 ## 관련 개념
 
 - [Source Verification](/concepts/source-verification/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Fact Checking](/concepts/fact-checking/)
-- [Citation](/concepts/citation/)
+- [Citation](/wiki/citation/)
 
 
 ---

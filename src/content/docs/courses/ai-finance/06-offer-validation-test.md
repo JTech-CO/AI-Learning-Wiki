@@ -233,7 +233,7 @@ DM: '안녕하세요 OO님, 자취 저녁 식단 관련 작은 걸 준비 중인
 ## 관련 개념
 
 - [Monetization](/concepts/monetization/)
-- [Evaluation](/concepts/evaluation/)
+- [Evaluation](/wiki/evaluation/)
 
 
 ---

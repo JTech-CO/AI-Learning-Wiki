@@ -138,7 +138,7 @@ asyncio 코드를 돌렸더니 이런 에러가 났습니다: [에러 메시지]
 - [Gather](/concepts/gather/)
 - [Concurrency](/concepts/concurrency/)
 - [Semaphore](/concepts/semaphore/)
-- [Rate Limit](/concepts/rate-limit/)
+- [Rate Limit](/wiki/rate-limit/)
 - [Coroutine](/concepts/coroutine/)
 
 

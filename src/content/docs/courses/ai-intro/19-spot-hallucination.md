@@ -116,9 +116,9 @@ AI는 사실을 '아는' 게 아니라 '다음에 올 법한 단어'를 이어 �
 
 ## 관련 개념
 
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Fact Checking](/concepts/fact-checking/)
-- [Citation](/concepts/citation/)
+- [Citation](/wiki/citation/)
 - [Critical Thinking](/concepts/critical-thinking/)
 
 

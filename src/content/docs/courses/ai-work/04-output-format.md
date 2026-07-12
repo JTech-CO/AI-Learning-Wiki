@@ -130,9 +130,9 @@ AI는 형식을 콕 집어 말해주지 않으면 편한 대로 줄글로 답해
 ## 관련 개념
 
 - [Output Format](/concepts/output-format/)
-- [Structured Output](/concepts/structured-output/)
-- [Json](/concepts/json/)
-- [Prompt](/concepts/prompt/)
+- [Structured Output](/wiki/structured-output/)
+- [Json](/wiki/json/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

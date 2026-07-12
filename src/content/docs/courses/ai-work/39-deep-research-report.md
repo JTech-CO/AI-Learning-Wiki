@@ -144,10 +144,10 @@ Deep Research는 사람 한 명이 30번 검색하고 10개 탭을 오가며 할
 ## 관련 개념
 
 - [Deep Research](/concepts/deep-research/)
-- [Citation](/concepts/citation/)
+- [Citation](/wiki/citation/)
 - [Verification](/concepts/verification/)
 - [Agent](/concepts/agent/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 
 
 ---

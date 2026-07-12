@@ -188,7 +188,7 @@ AI는 프롬프트 하나로 몇 초 만에 수십 개의 결과물을 뽑아냅
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Monetization](/concepts/monetization/)
 
 

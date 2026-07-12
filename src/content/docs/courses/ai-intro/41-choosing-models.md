@@ -134,7 +134,7 @@ AI 모델은 **'직원'**이라고 생각하면 쉬워요. 회사에 직원이 �
 - [Model Selection](/concepts/model-selection/)
 - [Reasoning Mode](/concepts/reasoning-mode/)
 - [Knowledge Cutoff](/concepts/knowledge-cutoff/)
-- [Context Window](/concepts/context-window/)
+- [Context Window](/wiki/context-window/)
 
 
 ---

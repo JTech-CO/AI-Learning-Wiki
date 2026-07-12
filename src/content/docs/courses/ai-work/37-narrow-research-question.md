@@ -124,7 +124,7 @@ AI는 좋은 질문만 던져주면 검색어를 순식간에 여러 개로 쪼�
 - [Question Scoping](/concepts/question-scoping/)
 - [Success Criteria](/concepts/success-criteria/)
 - [Scope](/concepts/scope/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

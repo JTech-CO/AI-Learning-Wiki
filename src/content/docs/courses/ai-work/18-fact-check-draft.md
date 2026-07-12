@@ -121,9 +121,9 @@ AI는 수억 개 문장을 학습해 '그럴듯하게 이어지는 다음 단어
 ## 관련 개념
 
 - [Fact Checking](/concepts/fact-checking/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Source Verification](/concepts/source-verification/)
-- [Citation](/concepts/citation/)
+- [Citation](/wiki/citation/)
 
 
 ---

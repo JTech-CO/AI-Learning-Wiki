@@ -1,0 +1,28 @@
+.catalog-explorer,
+.prompt-explorer { margin-top: 1rem; }
+.explorer-controls { display: grid; grid-template-columns: 2fr repeat(3, minmax(8rem,1fr)); gap: .75rem; border: 1px solid #c8ccd1; background: #f8f9fa; padding: .8rem; }
+.prompt-controls { grid-template-columns: 2fr repeat(2,minmax(8rem,1fr)); }
+.explorer-controls label { color: #54595d; font-size: .78rem; font-weight: 700; }
+.explorer-controls input,
+.explorer-controls select { display: block; width: 100%; height: 2.2rem; margin-top: .2rem; border: 1px solid #a2a9b1; border-radius: 0; background: #fff; color: #202122; padding: .35rem .5rem; }
+.explorer-count { color: #54595d; font-size: .82rem; }
+.catalog-results,
+.prompt-results { display: block; }
+.catalog-card,
+.prompt-card { display: block; border: 0; border-top: 1px solid #eaecf0; border-radius: 0; background: transparent; padding: .75rem 0; }
+.catalog-card h3,
+.prompt-card h3 { margin: .15rem 0; font-family: inherit; font-size: 1.05rem; }
+.catalog-card > p,
+.prompt-card > p { margin: .2rem 0; }
+.catalog-meta { color: #72777d; font-size: .72rem; }
+.catalog-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+.catalog-tags span,
+.example-badge { color: #54595d; font-size: .7rem; }
+.prompt-card pre { overflow: auto; white-space: pre-wrap; border: 1px solid #c8ccd1; border-radius: 0; background: #f8f9fa; padding: .7rem; }
+.prompt-actions { display: flex; gap: .7rem; align-items: center; }
+.prompt-actions button { border: 1px solid #72777d; border-radius: 0; background: #f8f9fa; color: #202122; padding: .4rem .65rem; }
+.wiki-course-directory section { border-top: 1px solid #c8ccd1; padding: .7rem 0; }
+.wiki-course-directory h2 { margin: 0; border: 0; font-family: inherit; font-size: 1.12rem; }
+.wiki-course-directory p { margin: .3rem 0; }
+.wiki-course-checked { color: #72777d; text-decoration: line-through; }
+@media(max-width:50rem){.explorer-controls,.prompt-controls{grid-template-columns:1fr;}}

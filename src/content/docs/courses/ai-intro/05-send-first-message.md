@@ -118,7 +118,7 @@ AI는 사람들이 주고받은 수억 개의 대화를 학습해 다음에 올 
 - [Chatbot](/concepts/chatbot/)
 - [Context](/concepts/context/)
 - [Regenerate](/concepts/regenerate/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

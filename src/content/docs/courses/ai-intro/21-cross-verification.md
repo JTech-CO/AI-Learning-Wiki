@@ -117,7 +117,7 @@ AI마다 학습 데이터·방식이 달라 같은 질문에도 서로 다른 �
 ## 관련 개념
 
 - [Cross Verification](/concepts/cross-verification/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Source Verification](/concepts/source-verification/)
 - [Critical Thinking](/concepts/critical-thinking/)
 

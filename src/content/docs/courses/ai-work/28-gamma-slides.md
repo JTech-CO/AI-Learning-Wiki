@@ -121,7 +121,7 @@ Gamma는 수많은 발표 자료를 학습해, 주제 한 줄만 던져도 '어�
 - [Gamma](/concepts/gamma/)
 - [Slide Generation](/concepts/slide-generation/)
 - [Presentation](/concepts/presentation/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Export](/concepts/export/)
 
 

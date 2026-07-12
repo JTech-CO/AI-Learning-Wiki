@@ -127,8 +127,8 @@ AI는 수많은 보고서·기획서의 논리 구조를 학습해서 목차 뼈
 - [Outline](/concepts/outline/)
 - [Structure](/concepts/structure/)
 - [Report Writing](/concepts/report-writing/)
-- [Prompt](/concepts/prompt/)
-- [Hallucination](/concepts/hallucination/)
+- [Prompt](/wiki/prompt/)
+- [Hallucination](/wiki/hallucination/)
 
 
 ---

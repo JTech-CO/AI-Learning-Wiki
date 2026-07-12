@@ -117,7 +117,7 @@ AI는 "지금까지 대화 전체"를 기억하며 코드를 고치기 때문에
 ## 관련 개념
 
 - [Iterative Editing](/concepts/iterative-editing/)
-- [Checkpoint](/concepts/checkpoint/)
+- [Checkpoint](/wiki/checkpoint/)
 - [Undo](/concepts/undo/)
 - [Scope Control](/concepts/scope-control/)
 - [Commit](/concepts/commit/)

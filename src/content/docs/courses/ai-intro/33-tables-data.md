@@ -116,10 +116,10 @@ AI는 이름·날짜·금액 패턴이 어디에 오는지 학습했어요. 열(
 
 ## 관련 개념
 
-- [Structured Output](/concepts/structured-output/)
+- [Structured Output](/wiki/structured-output/)
 - [Data Organization](/concepts/data-organization/)
 - [Csv](/concepts/csv/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

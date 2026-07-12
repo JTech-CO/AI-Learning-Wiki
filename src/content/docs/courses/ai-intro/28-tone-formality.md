@@ -120,7 +120,7 @@ _같은 내용을 정중하게·친근하게·간결하게 등 원하는 어조�
 
 - [Tone](/concepts/tone/)
 - [Formality](/concepts/formality/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Audience](/concepts/audience/)
 
 

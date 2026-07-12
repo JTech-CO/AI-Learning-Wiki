@@ -159,7 +159,7 @@ AI는 확률적으로 다음 글자를 예측할 뿐 '반드시 이 형식'을 �
 - [Pydantic](/concepts/pydantic/)
 - [Validation](/concepts/validation/)
 - [Retry](/concepts/retry/)
-- [Structured Output](/concepts/structured-output/)
+- [Structured Output](/wiki/structured-output/)
 - [Instructor](/concepts/instructor/)
 - [Defensive Parsing](/concepts/defensive-parsing/)
 

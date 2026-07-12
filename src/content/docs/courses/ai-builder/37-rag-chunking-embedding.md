@@ -119,8 +119,8 @@ AI는 질문이 들어올 때마다 문서 전체를 읽지 않고, **미리 잘
 ## 관련 개념
 
 - [Rag Tuning](/concepts/rag-tuning/)
-- [Chunking](/concepts/chunking/)
-- [Embedding](/concepts/embedding/)
+- [Chunking](/wiki/chunking/)
+- [Embedding](/wiki/embedding/)
 - [Vector Search](/concepts/vector-search/)
 - [Top K](/concepts/top-k/)
 - [Similarity Threshold](/concepts/similarity-threshold/)

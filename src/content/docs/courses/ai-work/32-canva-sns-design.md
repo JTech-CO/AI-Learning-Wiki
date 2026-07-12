@@ -116,7 +116,7 @@ Canva AI는 수억 장의 디자인 데이터를 학습해 '이 주제엔 이런
 - [Sns Design](/concepts/sns-design/)
 - [Brand Kit](/concepts/brand-kit/)
 - [Magic Resize](/concepts/magic-resize/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

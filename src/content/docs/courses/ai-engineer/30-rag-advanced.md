@@ -273,7 +273,7 @@ for r in resp.results:
 
 ## 관련 개념
 
-- [Rag](/concepts/rag/)
+- [Rag](/wiki/rag/)
 - [Data](/concepts/data/)
 
 

@@ -124,7 +124,7 @@ AI는 수억 개 문장을 학습해 **'자연스러운 한국어'가 어떤 느
 - [Editing](/concepts/editing/)
 - [Tone](/concepts/tone/)
 - [Revision](/concepts/revision/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 
 
 ---

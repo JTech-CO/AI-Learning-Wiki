@@ -117,7 +117,7 @@ _생성 결과를 보고 요소를 하나씩 바꿔가며(스타일 교체·요�
 ## 관련 개념
 
 - [Iteration](/concepts/iteration/)
-- [Image Generation](/concepts/image-generation/)
+- [Image Generation](/wiki/image-generation/)
 - [One Variable At A Time](/concepts/one-variable-at-a-time/)
 - [Style](/concepts/style/)
 

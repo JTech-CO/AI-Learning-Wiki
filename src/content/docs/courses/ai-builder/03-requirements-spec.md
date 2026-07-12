@@ -137,7 +137,7 @@ AI 코딩 도구는 수억 줄의 코드와 설계 패턴을 학습해서, '화�
 - [Spec Prompt](/concepts/spec-prompt/)
 - [Screens Features Data](/concepts/screens-features-data/)
 - [Decomposition](/concepts/decomposition/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

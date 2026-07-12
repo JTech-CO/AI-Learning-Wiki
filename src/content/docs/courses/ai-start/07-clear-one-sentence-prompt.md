@@ -127,7 +127,7 @@ AI는 수억 개의 글을 배운 똑똑한 요리사지만, 손님이 '아무�
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Specificity](/concepts/specificity/)
 - [Clarity](/concepts/clarity/)
 - [Iteration](/concepts/iteration/)

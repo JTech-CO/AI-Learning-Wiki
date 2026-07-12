@@ -128,7 +128,7 @@ AI는 인터넷 수억 개 글의 **'패턴'을 통째로 익혀둔 존재**예�
 - [Chain Of Thought](/concepts/chain-of-thought/)
 - [React](/concepts/react/)
 - [System Prompt](/concepts/system-prompt/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

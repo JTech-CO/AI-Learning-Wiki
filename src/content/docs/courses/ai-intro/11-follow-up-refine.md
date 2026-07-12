@@ -117,7 +117,7 @@ AI는 대화 내내 앞서 나눈 말을 다 기억해요. 그래서 처음 답�
 
 - [Iteration](/concepts/iteration/)
 - [Context](/concepts/context/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Refinement](/concepts/refinement/)
 
 

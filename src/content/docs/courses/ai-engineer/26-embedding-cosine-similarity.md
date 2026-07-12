@@ -118,13 +118,13 @@ AI는 수백만 개의 문장을 학습하면서 뜻이 비슷한 말들은 좌�
 
 ## 관련 개념
 
-- [Embedding](/concepts/embedding/)
-- [Cosine Similarity](/concepts/cosine-similarity/)
-- [Vector](/concepts/vector/)
+- [Embedding](/wiki/embedding/)
+- [Cosine Similarity](/wiki/cosine-similarity/)
+- [Vector](/wiki/vector/)
 - [Dot Product](/concepts/dot-product/)
 - [Normalization](/concepts/normalization/)
-- [Semantic Search](/concepts/semantic-search/)
-- [Rag](/concepts/rag/)
+- [Semantic Search](/wiki/semantic-search/)
+- [Rag](/wiki/rag/)
 
 
 ---

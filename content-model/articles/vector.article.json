@@ -1,0 +1,49 @@
+{
+  "id": "vector",
+  "title": "벡터",
+  "englishTitle": "Vector",
+  "aliases": [
+    "Vector"
+  ],
+  "summary": "크기와 방향 또는 순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "개요",
+      "body": "크기와 방향 또는 순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다. 이 개념은 수학·통계 기초 분야에서 시스템의 구성 요소와 선택 기준을 설명하는 데 쓰인다. 용어의 이름뿐 아니라 입력, 처리 과정, 출력, 적용 조건을 함께 확인해야 서로 다른 구현에서 같은 표현이 어떻게 달라지는지 이해할 수 있다."
+    },
+    {
+      "id": "principle",
+      "title": "핵심 원리",
+      "body": "벡터은 모델을 이해하는 데 필요한 수학과 확률를 설명하는 출발점이다. 실제 시스템에서는 데이터가 어떤 표현으로 들어오고, 어떤 계산과 규칙을 거쳐, 어떤 형태의 결과로 나오는지를 기준으로 개념의 범위를 구분한다."
+    },
+    {
+      "id": "relationships",
+      "title": "관련 개념과 활용",
+      "body": "벡터은 [행렬](/wiki/matrix/), [텐서](/wiki/tensor/)와 함께 사용된다. 이 관계를 알면 모델을 설계하거나 API를 선택하고, 품질·비용·안전 문제를 진단할 때 어느 계층의 문제인지 구분할 수 있다. 관련 문서의 정의와 선행 관계를 따라가면 단일 제품의 기능명에 종속되지 않는 지식 구조를 만들 수 있다."
+    },
+    {
+      "id": "limitations",
+      "title": "주의점",
+      "body": "벡터의 세부 동작과 성능은 구현 버전, 데이터, 실행 환경에 따라 달라진다. 하나의 수치나 사례를 모든 시스템에 일반화하지 말아야 하며, 안정적인 원리와 빠르게 변하는 제품 정보를 구분해야 한다. 중요한 판단에서는 아래 1차 자료와 실제 사용하는 구현의 최신 문서를 함께 확인한다."
+    }
+  ],
+  "categories": [
+    "mathematics"
+  ],
+  "prerequisites": [],
+  "related": [
+    "matrix",
+    "tensor"
+  ],
+  "sources": [
+    {
+      "title": "Deep Learning Book: Linear Algebra",
+      "url": "https://www.deeplearningbook.org/contents/linear_algebra.html",
+      "type": "book"
+    }
+  ],
+  "status": "reviewed",
+  "volatility": "evergreen",
+  "reviewedAt": "2026-07-12"
+}

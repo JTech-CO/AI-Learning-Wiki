@@ -180,7 +180,7 @@ print(data.get("attendance", "정보 없음"))  # 정보 없음
 
 ## 관련 개념
 
-- [Json](/concepts/json/)
+- [Json](/wiki/json/)
 - [Json Loads](/concepts/json-loads/)
 - [Json Dumps](/concepts/json-dumps/)
 - [Llm Response Parsing](/concepts/llm-response-parsing/)

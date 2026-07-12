@@ -127,7 +127,7 @@ AI는 방금 붙여넣은 내용만 보고도 그 자리에서 문제·정답·�
 
 - [Retrieval Practice](/concepts/retrieval-practice/)
 - [Self Assessment](/concepts/self-assessment/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Learning](/concepts/learning/)
 
 

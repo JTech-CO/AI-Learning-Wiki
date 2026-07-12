@@ -112,8 +112,8 @@ AI는 진실 검색기가 아니라 '다음 단어 맞히기' 달인이에요. �
 ## 관련 개념
 
 - [Source Verification](/concepts/source-verification/)
-- [Hallucination](/concepts/hallucination/)
-- [Citation](/concepts/citation/)
+- [Hallucination](/wiki/hallucination/)
+- [Citation](/wiki/citation/)
 - [Fact Checking](/concepts/fact-checking/)
 
 

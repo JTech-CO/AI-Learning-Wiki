@@ -131,9 +131,9 @@ id	point	sentiment	keyword
 
 ## 관련 개념
 
-- [Structured Output](/concepts/structured-output/)
+- [Structured Output](/wiki/structured-output/)
 - [Function Calling](/concepts/function-calling/)
-- [Tool Calling](/concepts/tool-calling/)
+- [Tool Calling](/wiki/tool-calling/)
 - [Json Schema](/concepts/json-schema/)
 - [Tsv](/concepts/tsv/)
 - [Data Extraction](/concepts/data-extraction/)

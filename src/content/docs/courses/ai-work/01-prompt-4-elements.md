@@ -116,7 +116,7 @@ AI는 프롬프트에 있는 정보만 가지고 다음 단어를 예측해 답�
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Role Prompting](/concepts/role-prompting/)
 - [Context](/concepts/context/)
 - [Output Format](/concepts/output-format/)

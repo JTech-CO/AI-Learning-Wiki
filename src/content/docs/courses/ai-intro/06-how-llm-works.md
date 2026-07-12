@@ -107,10 +107,10 @@ AI는 인터넷의 수억 개 문장을 읽고 '다음에 어떤 단어가 올 �
 ## 관련 개념
 
 - [Llm](/concepts/llm/)
-- [Next Token Prediction](/concepts/next-token-prediction/)
-- [Hallucination](/concepts/hallucination/)
-- [Transformer](/concepts/transformer/)
-- [Temperature](/concepts/temperature/)
+- [Next Token Prediction](/wiki/next-token-prediction/)
+- [Hallucination](/wiki/hallucination/)
+- [Transformer](/wiki/transformer/)
+- [Temperature](/wiki/temperature/)
 
 
 ---

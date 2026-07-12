@@ -119,7 +119,7 @@ AI는 '가장 평균적으로 그럴듯한 답'을 고르는 방식이라, 대�
 - [Context](/concepts/context/)
 - [Audience](/concepts/audience/)
 - [Constraint](/concepts/constraint/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

@@ -249,8 +249,8 @@ AI 답: [Output 붙여넣기]
 ## 관련 개념
 
 - [Agent](/concepts/agent/)
-- [Observability](/concepts/observability/)
-- [Evaluation](/concepts/evaluation/)
+- [Observability](/wiki/observability/)
+- [Evaluation](/wiki/evaluation/)
 
 
 ---

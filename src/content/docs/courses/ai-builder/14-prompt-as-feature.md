@@ -132,7 +132,7 @@ JSON 외 어떤 문장도 쓰지 마라.
 - [Json Output](/concepts/json-output/)
 - [Response Parsing](/concepts/response-parsing/)
 - [Classification](/concepts/classification/)
-- [Prompt Injection](/concepts/prompt-injection/)
+- [Prompt Injection](/wiki/prompt-injection/)
 
 
 ---

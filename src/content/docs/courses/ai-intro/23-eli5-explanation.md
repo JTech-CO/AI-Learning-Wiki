@@ -117,7 +117,7 @@ AI는 수억 개의 설명 방식을 학습했지만 상대가 초등학생인�
 
 - [Eli5](/concepts/eli5/)
 - [Analogy](/concepts/analogy/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Audience](/concepts/audience/)
 
 

@@ -104,8 +104,8 @@ _변동이 빠른 LLM을 이름이나 단일 순위로 고르지 않고, 공식 
 ## 관련 개념
 
 - [Model Selection](/concepts/model-selection/)
-- [Benchmark](/concepts/benchmark/)
-- [Latency](/concepts/latency/)
+- [Benchmark](/wiki/benchmark/)
+- [Latency](/wiki/latency/)
 - [Token Usage](/concepts/token-usage/)
 - [Cost Control](/concepts/cost-control/)
 - [Regression Testing](/concepts/regression-testing/)

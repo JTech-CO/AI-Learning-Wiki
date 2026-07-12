@@ -121,8 +121,8 @@ AI는 수억 개의 공지문·보고서를 학습해 뼈대와 사실 메모만
 
 - [Outlining](/concepts/outlining/)
 - [Writing](/concepts/writing/)
-- [Structured Output](/concepts/structured-output/)
-- [Prompt](/concepts/prompt/)
+- [Structured Output](/wiki/structured-output/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

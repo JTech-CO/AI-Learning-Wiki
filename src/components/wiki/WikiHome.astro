@@ -1,0 +1,87 @@
+---
+import wiki from '../../../public/data/wiki-index.json';
+import catalog from '../../../public/data/catalog.json';
+import prompts from '../../../public/data/prompts.json';
+
+const featured = wiki.articles.find((article) => article.id === 'large-language-model') ?? wiki.articles[0];
+const categoryMap = new Map(wiki.categories.map((category) => [category.id, category]));
+const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.reviewedAt) || a.title.localeCompare(b.title, 'ko')).slice(0, 12);
+---
+<div class="wiki-home">
+  <header class="wiki-home-intro">
+    <p class="wiki-home-name">AI Learning Wiki</p>
+    <p>AI와 대규모 언어 모델의 원리, 용어, 기술을 서로 연결해 설명하는 한국어 백과사전입니다.</p>
+    <p class="wiki-counts">검토 완료 백과 문서 <strong>{wiki.counts.articles}</strong>개 · 학습 코스 <strong>{wiki.counts.courses}</strong>개 · 실습 자료 <strong>{catalog.modules.length}</strong>개 · 프롬프트 <strong>{prompts.prompts.length}</strong>개</p>
+  </header>
+
+  <div class="wiki-home-columns">
+    <section class="wiki-home-section">
+      <h2>분야별 백과 탐색</h2>
+      <div class="wiki-category-index">
+        {wiki.categories.map((category) => (
+          <div>
+            <h3><a href={`/category/${category.id}/`}>{category.title}</a> <span>{category.count}</span></h3>
+            <p>{category.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <aside class="wiki-home-section wiki-featured">
+      <h2>주요 문서</h2>
+      <h3><a href={featured.url}>{featured.title}</a></h3>
+      <p class="wiki-en">{featured.englishTitle}</p>
+      <p>{featured.summary}</p>
+      <p><a href={featured.url}>문서 읽기</a> · <a href={`/category/${featured.categories[0]}/`}>{categoryMap.get(featured.categories[0])?.title}</a></p>
+      <h2>최근 검토</h2>
+      <ul class="wiki-compact-list">
+        {recent.map((article) => <li><a href={article.url}>{article.title}</a> <time>{article.reviewedAt}</time></li>)}
+      </ul>
+    </aside>
+  </div>
+
+  <section class="wiki-home-section wiki-course-browser" aria-labelledby="wiki-course-title">
+    <h2 id="wiki-course-title">Wiki 학습 코스</h2>
+    <p>기존 실습 Guide의 순서가 아니라 백과 문서의 선행 관계로 새로 구성한 읽기 과정입니다. 코스를 선택하지 않아도 위의 분류와 검색으로 모든 문서를 자유롭게 볼 수 있습니다.</p>
+    <div class="wiki-course-tabs" role="tablist" aria-label="학습 코스 선택">
+      {wiki.courses.map((course, index) => <button type="button" role="tab" aria-selected={index === 0 ? 'true' : 'false'} data-course={course.id}>{course.title}</button>)}
+    </div>
+    {wiki.courses.map((course, index) => (
+      <div class="wiki-course-sequence" data-course-panel={course.id} hidden={index !== 0}>
+        <h3><a href={course.url}>{course.title}</a></h3>
+        <p>{course.description}</p>
+        <ol>
+          {course.steps.slice(0, 12).map((step) => <li><a href={step.url}>{step.title}</a> <span>{step.required ? '필수' : '선택'}</span></li>)}
+        </ol>
+        <p><a href={course.url}>전체 {course.steps.length}단계 보기</a></p>
+      </div>
+    ))}
+  </section>
+
+  <div class="wiki-home-columns wiki-home-lower">
+    <section class="wiki-home-section">
+      <h2>바로 찾아보기</h2>
+      <ul>
+        <li><a href="/special/all-pages/">전체 백과 문서</a></li>
+        <li><a href="/glossary/">가나다·영문 용어 색인</a></li>
+        <li><a href="/special/random/">무작위 백과 문서</a></li>
+        <li><a href="/search/">백과·실습·프롬프트 통합 검색</a></li>
+      </ul>
+    </section>
+    <section class="wiki-home-section">
+      <h2>기존 자료실</h2>
+      <p>기존 305개 실습 자료와 1,173개 프롬프트는 삭제하지 않고 백과사전과 분리된 자료실로 보존합니다.</p>
+      <p><a href="/explore/">실습 자료 찾기</a> · <a href="/prompt-explorer/">프롬프트 찾기</a></p>
+    </section>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('[data-course]');
+  const panels = document.querySelectorAll('[data-course-panel]');
+  buttons.forEach((button) => button.addEventListener('click', () => {
+    const id = button.dataset.course;
+    buttons.forEach((item) => item.setAttribute('aria-selected', String(item === button)));
+    panels.forEach((panel) => { panel.hidden = panel.dataset.coursePanel !== id; });
+  }));
+</script>

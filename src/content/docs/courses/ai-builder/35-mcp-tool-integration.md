@@ -138,7 +138,7 @@ Google Drive에서 '주간보고' 폴더의 최신 문서를 읽고 핵심 3가�
 
 ## 관련 개념
 
-- [Mcp](/concepts/mcp/)
+- [Mcp](/wiki/mcp/)
 - [Model Context Protocol](/concepts/model-context-protocol/)
 - [Remote Mcp Server](/concepts/remote-mcp-server/)
 - [Oauth Connector](/concepts/oauth-connector/)

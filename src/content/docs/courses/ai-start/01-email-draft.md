@@ -134,9 +134,9 @@ AI는 수억 통의 실제 이메일을 학습해서, "견적 검토 요청" 같
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
-- [Hallucination](/concepts/hallucination/)
-- [Generative Ai](/concepts/generative-ai/)
+- [Prompt](/wiki/prompt/)
+- [Hallucination](/wiki/hallucination/)
+- [Generative Ai](/wiki/generative-ai/)
 
 
 ---

@@ -140,8 +140,8 @@ AI는 이미 회의록·보고서·기사 같은 글을 수억 건 읽으며 "�
 ## 관련 개념
 
 - [Summarization](/concepts/summarization/)
-- [Hallucination](/concepts/hallucination/)
-- [Prompt](/concepts/prompt/)
+- [Hallucination](/wiki/hallucination/)
+- [Prompt](/wiki/prompt/)
 - [File Upload](/concepts/file-upload/)
 
 

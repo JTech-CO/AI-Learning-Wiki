@@ -16,17 +16,6 @@ expect(new Set(catalog.modules.map((item) => item.url)).size === 305, 'module UR
 expect(catalog.modules.every((item) => item.url.startsWith('/courses/') && item.title && item.summary), 'catalog has incomplete module entries');
 expect(prompts.prompts.every((item) => item.template && Array.isArray(item.examples)), 'prompt schema is incomplete');
 
-const profiles = {
-  beginner: ['ai-start', 'ai-intro'],
-  engineer: ['ai-intro', 'ai-engineer'],
-  business: ['ai-start', 'ai-intro', 'ai-finance'],
-};
-const firstRoutes = Object.fromEntries(Object.entries(profiles).map(([name, courses]) => [
-  name,
-  catalog.modules.find((item) => courses.includes(item.course))?.url,
-]));
-expect(new Set(Object.values(firstRoutes)).size >= 2, 'profile recommendations do not diverge');
-
 for (const route of ['index.html', 'paths/index.html', 'explore/index.html', 'prompt-explorer/index.html', 'pagefind/pagefind.js']) {
   expect(await fileExists(path.join('dist', route)), `missing dist/${route}`);
 }
@@ -35,15 +24,19 @@ for (const locale of ['en', 'es', 'ja', 'zh']) {
 }
 
 const home = await readFile('dist/index.html', 'utf8');
-const dashboard = await readFile('src/components/LearningDashboard.astro', 'utf8');
-const progressScript = await readFile('public/progress.js', 'utf8');
-expect(home.includes('305개 AI 학습'), 'home hero text missing');
-expect(dashboard.includes('aiwiki-profile-v1') && dashboard.includes('aiwiki-progress-v1'), 'local profile/progress storage missing');
-expect(progressScript.includes('aiwiki-progress-v1'), 'module completion control missing');
-expect(dashboard.includes('브라우저에만 저장'), 'local data privacy notice missing');
+const courseProgress = await readFile('public/wiki-course-progress.js', 'utf8');
+expect(home.includes('AI와 대규모 언어 모델'), 'wiki home introduction missing');
+expect(home.includes('분야별 백과 탐색'), 'wiki category navigation missing');
+expect(courseProgress.includes('aiwiki-course-v2'), 'wiki course progress storage missing');
 
 if (failures.length) {
   console.error(`release QA: ${failures.length} failure(s)\n- ${failures.join('\n- ')}`);
   process.exit(1);
 }
-console.log(`release QA: 305 modules, 1173 prompts, ${Object.keys(firstRoutes).length} profiles, required routes OK`);
+const wiki = JSON.parse(await readFile('public/data/wiki-index.json', 'utf8'));
+expect(wiki.articles.length === 150, `wiki articles: ${wiki.articles.length}`);
+expect(wiki.courses.length === 8, `wiki courses: ${wiki.courses.length}`);
+expect(wiki.courses.every((course) => course.steps.every((step) => step.url.startsWith('/wiki/'))), 'legacy guide found in wiki course');
+expect(wiki.articles.every((article) => article.related.length || article.prerequisites.length || article.backlinks.length), 'orphan wiki article found');
+if (failures.length) { console.error(`release QA: ${failures.length} failure(s)\n- ${failures.join('\n- ')}`); process.exit(1); }
+console.log(`release QA: 150 wiki articles, 8 wiki courses, 305 archived guides, 1173 prompts OK`);

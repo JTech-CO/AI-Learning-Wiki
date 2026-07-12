@@ -1,0 +1,22 @@
+<starlight-menu-button class="wiki-menu-control print:hidden">
+  <button aria-expanded="false" aria-controls="starlight__sidebar" class="md:sl-hidden">메뉴</button>
+</starlight-menu-button>
+<script>
+  class WikiMenuButton extends HTMLElement {
+    button = this.querySelector('button');
+    connectedCallback() {
+      this.button?.addEventListener('click', () => this.setExpanded(this.getAttribute('aria-expanded') !== 'true'));
+      this.closest('nav')?.addEventListener('keyup', (event) => {
+        if (event.code === 'Escape') { this.setExpanded(false); this.button?.focus(); }
+      });
+      matchMedia('(min-width: 50em)').addEventListener('change', () => this.setExpanded(false));
+    }
+    setExpanded(expanded) {
+      this.setAttribute('aria-expanded', String(expanded));
+      this.button?.setAttribute('aria-expanded', String(expanded));
+      document.body.toggleAttribute('data-mobile-menu-expanded', expanded);
+      document.querySelectorAll('.main-frame, .sl-skip-link').forEach((element) => element.toggleAttribute('inert', expanded));
+    }
+  }
+  if (!customElements.get('starlight-menu-button')) customElements.define('starlight-menu-button', WikiMenuButton);
+</script>

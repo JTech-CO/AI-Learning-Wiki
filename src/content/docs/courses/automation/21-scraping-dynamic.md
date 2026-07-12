@@ -248,7 +248,7 @@ Playwright(파이썬)로 [URL] 페이지를 끝까지 스크롤하며 [.item] �
 
 ## 관련 개념
 
-- [Api](/concepts/api/)
+- [Api](/wiki/api/)
 - [Web Scraping](/concepts/web-scraping/)
 - [Automation](/concepts/automation/)
 

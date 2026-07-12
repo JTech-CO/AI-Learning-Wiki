@@ -119,7 +119,7 @@ AI는 당신 머릿속 배경을 볼 수 없어 요청에 빠진 정보만큼 �
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Context](/concepts/context/)
 - [Few Shot Example](/concepts/few-shot-example/)
 - [Output Format](/concepts/output-format/)

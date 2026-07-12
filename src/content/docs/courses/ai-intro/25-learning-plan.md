@@ -124,7 +124,7 @@ AI는 수많은 커리큘럼·로드맵을 이미 훑어봐서 어떤 주제든 
 
 - [Learning Plan](/concepts/learning-plan/)
 - [Roadmap](/concepts/roadmap/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Goal Setting](/concepts/goal-setting/)
 
 

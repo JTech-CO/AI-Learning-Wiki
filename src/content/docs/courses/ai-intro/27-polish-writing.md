@@ -116,7 +116,7 @@ AI는 완성된 문장 수억 개를 학습해 자연스러운 표현과 어색�
 ## 관련 개념
 
 - [Editing](/concepts/editing/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Writing](/concepts/writing/)
 - [Revision](/concepts/revision/)
 

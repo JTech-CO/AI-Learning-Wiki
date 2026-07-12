@@ -117,9 +117,9 @@ AI는 한 창 안 메시지 전부를 매번 다시 훑어 답을 만들어요. 
 ## 관련 개념
 
 - [Context](/concepts/context/)
-- [Context Window](/concepts/context-window/)
+- [Context Window](/wiki/context-window/)
 - [Conversation Management](/concepts/conversation-management/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

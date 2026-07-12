@@ -1,0 +1,9 @@
+---
+import wiki from '../../../public/data/wiki-index.json';
+---
+<p>검토 완료된 {wiki.articles.length}개 백과 문서 중 하나를 무작위로 엽니다.</p>
+<button id="random-wiki-article" class="wiki-text-button" type="button">무작위 문서 열기</button>
+<noscript><p><a href={wiki.articles[0].url}>{wiki.articles[0].title}</a></p></noscript>
+<script define:vars={{ urls: wiki.articles.map((article) => article.url) }}>
+  document.querySelector('#random-wiki-article')?.addEventListener('click', () => { location.href = urls[Math.floor(Math.random() * urls.length)]; });
+</script>

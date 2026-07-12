@@ -115,7 +115,7 @@ AI는 수억 개 글을 읽어뒀지만 **당신이 뭘 원하는지는 모른�
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 - [Role Prompting](/concepts/role-prompting/)
 - [Context](/concepts/context/)
 - [Output Format](/concepts/output-format/)

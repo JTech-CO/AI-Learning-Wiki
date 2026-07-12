@@ -120,7 +120,7 @@ AI는 인터넷의 많은 글을 배워 답을 이어 붙여줘요. 그런데 �
 
 ## 관련 개념
 
-- [Privacy](/concepts/privacy/)
+- [Privacy](/wiki/privacy/)
 - [Online Safety](/concepts/online-safety/)
 - [Pii](/concepts/pii/)
 - [Data Retention](/concepts/data-retention/)

@@ -127,7 +127,7 @@ AI는 수만 건의 발표·Q&A 사례를 학습해서, 슬라이드 텍스트�
 - [Qa Prep](/concepts/qa-prep/)
 - [Rehearsal](/concepts/rehearsal/)
 - [Presentation](/concepts/presentation/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 
 
 ---

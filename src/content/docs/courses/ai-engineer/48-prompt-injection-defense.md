@@ -221,9 +221,9 @@ AI 요약 기능의 간접 프롬프트 인젝션 취약점을 테스트하려 �
 
 ## 관련 개념
 
-- [Prompt Injection](/concepts/prompt-injection/)
+- [Prompt Injection](/wiki/prompt-injection/)
 - [Security](/concepts/security/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

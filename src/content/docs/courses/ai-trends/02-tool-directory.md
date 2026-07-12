@@ -131,7 +131,7 @@ _유행하는 도구 이름을 나열하는 대신, 작업·데이터·협업·�
 
 - [Tool Selection](/concepts/tool-selection/)
 - [Requirements](/concepts/requirements/)
-- [Privacy](/concepts/privacy/)
+- [Privacy](/wiki/privacy/)
 - [Workflow](/concepts/workflow/)
 - [Export](/concepts/export/)
 - [Vendor Lock In](/concepts/vendor-lock-in/)

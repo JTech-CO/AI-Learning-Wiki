@@ -218,7 +218,7 @@ graphrag query --root ./ --method global --query "[여러 문서를 아우르는
 
 ## 관련 개념
 
-- [Rag](/concepts/rag/)
+- [Rag](/wiki/rag/)
 - [Agent](/concepts/agent/)
 
 

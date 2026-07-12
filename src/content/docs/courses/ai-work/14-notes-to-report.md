@@ -146,9 +146,9 @@ AI는 수백만 편의 보고서·기획서 구조를 학습해 '배경-현황-�
 
 - [Report Writing](/concepts/report-writing/)
 - [Structure](/concepts/structure/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Verification](/concepts/verification/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

@@ -1,0 +1,48 @@
+<section class="wiki-search-page">
+  <form id="wiki-search-form" class="wiki-page-search" role="search">
+    <label for="wiki-search-query">전체 자료 검색</label>
+    <div><input id="wiki-search-query" name="q" type="search" autocomplete="off" /><button type="submit">검색</button></div>
+  </form>
+  <div class="wiki-search-filters" aria-label="자료 유형">
+    <button type="button" data-type="all" aria-pressed="true">전체</button>
+    <button type="button" data-type="article" aria-pressed="false">백과 문서</button>
+    <button type="button" data-type="guide" aria-pressed="false">실습 자료</button>
+    <button type="button" data-type="prompt" aria-pressed="false">프롬프트</button>
+  </div>
+  <p id="wiki-search-count" aria-live="polite">검색어를 입력하세요.</p>
+  <div id="wiki-search-results" class="wiki-search-results"></div>
+</section>
+<script>
+  const form = document.querySelector('#wiki-search-form');
+  const input = document.querySelector('#wiki-search-query');
+  const count = document.querySelector('#wiki-search-count');
+  const results = document.querySelector('#wiki-search-results');
+  const filterButtons = document.querySelectorAll('[data-type]');
+  let items = [];
+  let activeType = 'all';
+  const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' })[char]);
+  const params = new URLSearchParams(location.search);
+  input.value = params.get('q') ?? '';
+  function render() {
+    const needle = input.value.trim().toLowerCase();
+    if (!needle) { count.textContent = '검색어를 입력하세요.'; results.replaceChildren(); return; }
+    const ranked = items.map((item) => {
+      const nameList = [item.title, item.englishTitle, ...(item.aliases ?? [])].filter(Boolean).map((value) => value.toLowerCase());
+      const names = nameList.join(' ');
+      const text = `${names} ${item.summary ?? ''} ${(item.tags ?? []).join(' ')}`.toLowerCase();
+      const score = nameList.includes(needle) ? 0 : nameList.some((value) => value.startsWith(needle)) ? 1 : names.includes(needle) ? 2 : text.includes(needle) ? 3 : 99;
+      return { item, score };
+    }).filter(({ item, score }) => score < 99 && (activeType === 'all' || item.type === activeType)).sort((a,b) => a.score-b.score || a.item.title.localeCompare(b.item.title,'ko')).slice(0,100);
+    count.textContent = `${ranked.length}개 결과`;
+    results.innerHTML = ranked.map(({ item }) => `<article><p>${escapeHtml(item.typeLabel)}</p><h2><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h2><p>${escapeHtml(item.summary)}</p></article>`).join('');
+  }
+  Promise.all([fetch('/data/wiki-index.json').then(r=>r.json()),fetch('/data/catalog.json').then(r=>r.json()),fetch('/data/prompts.json').then(r=>r.json())]).then(([wiki,catalog,prompts]) => {
+    items = [
+      ...wiki.articles.map(item => ({...item,type:'article',typeLabel:'백과 문서'})),
+      ...catalog.modules.map(item => ({...item,type:'guide',typeLabel:'실습 자료'})),
+      ...prompts.prompts.map(item => ({...item,type:'prompt',typeLabel:'프롬프트',summary:item.moduleTitle}))
+    ]; render();
+  });
+  form?.addEventListener('submit', (event) => { event.preventDefault(); history.replaceState(null,'',`?q=${encodeURIComponent(input.value)}`); render(); });
+  filterButtons.forEach((button) => button.addEventListener('click', () => { activeType=button.dataset.type; filterButtons.forEach(item=>item.setAttribute('aria-pressed',String(item===button))); render(); }));
+</script>

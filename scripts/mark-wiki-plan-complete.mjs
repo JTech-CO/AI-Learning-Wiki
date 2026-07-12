@@ -1,0 +1,13 @@
+import { readFile, writeFile } from 'node:fs/promises';
+const file = 'docs/WIKI_REDESIGN_PLAN.md';
+let source = await readFile(file, 'utf8');
+source = source.replace('상태: 구현 전 기획 확정안', '상태: W0~W6 구현 완료');
+source = source.replace('안정 URL: `/guide/{course-or-domain}/{slug}/`', '보존 URL: `/courses/{course}/{slug}/`');
+source = source.replace('현재 305개 모듈의 주된 이관 대상이다.', '현재 305개 모듈은 새 Wiki 코스와 분리된 기존 실습 자료실로 보존한다.');
+source = source.replace('### W4. 기존 305개 가이드 이관', '### W4. 기존 305개 가이드 자료실 분리');
+source = source.replace('- 기존 모듈 URL을 `/guide/` 체계로 이관\n', '- 기존 모듈 URL을 유지하고 `/explore/` 자료실에서 별도 탐색\n');
+source = source.replace('- 코스가 백과·가이드·프롬프트를 참조하도록 변경', '- 코스가 검토 완료 백과 문서만 참조하도록 변경');
+source = source.replace('- 메인 화면과 코스 화면에 권장 순서 제공', '- 메인 화면과 코스 화면에 백과 문서 권장 순서 제공');
+source += '\n\n## 15. W0~W6 구현 결과\n\n- 검토 완료 백과 문서 150개\n- 검색 이름·별칭 320개\n- 대분류 14개\n- 기존 Guide를 참조하지 않는 Wiki 코스 8개\n- 전체·최근·무작위·용어 색인·통합 검색 구현\n- 기존 305개 Guide와 1,173개 프롬프트를 별도 자료실에 보존\n- 백과 그래프·검색·내부 링크·정적 빌드 검증 통과\n';
+await writeFile(file, source, 'utf8');
+console.log('wiki redesign plan marked W0-W6 complete');

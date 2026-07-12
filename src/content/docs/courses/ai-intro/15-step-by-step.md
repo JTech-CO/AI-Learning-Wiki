@@ -121,7 +121,7 @@ AI는 머릿속으로 몰래 계산하지 않아요. 글자로 한 줄씩 써 �
 - [Chain Of Thought](/concepts/chain-of-thought/)
 - [Reasoning](/concepts/reasoning/)
 - [Verification](/concepts/verification/)
-- [Prompt](/concepts/prompt/)
+- [Prompt](/wiki/prompt/)
 
 
 ---

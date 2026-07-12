@@ -149,7 +149,7 @@ Anthropic messages.create가 돌려주는 응답 객체의 구조를 초보자�
 ## 관련 개념
 
 - [Llm Api](/concepts/llm-api/)
-- [Api Key](/concepts/api-key/)
+- [Api Key](/wiki/api-key/)
 - [Anthropic Sdk](/concepts/anthropic-sdk/)
 - [Environment Variable](/concepts/environment-variable/)
 - [Json Response](/concepts/json-response/)

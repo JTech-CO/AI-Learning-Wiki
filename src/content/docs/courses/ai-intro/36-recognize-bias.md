@@ -116,10 +116,10 @@ AI는 가장 흔하게 반복된 패턴을 답으로 내놓아요. 그래서 "�
 
 ## 관련 개념
 
-- [Bias](/concepts/bias/)
+- [Bias](/wiki/bias/)
 - [Fairness](/concepts/fairness/)
 - [Critical Thinking](/concepts/critical-thinking/)
-- [Training Data](/concepts/training-data/)
+- [Training Data](/wiki/training-data/)
 
 
 ---

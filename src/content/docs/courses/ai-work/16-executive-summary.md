@@ -119,7 +119,7 @@ AI는 수만 개 보고서·요약문 구조를 학습해 '중요한 문장'과 
 - [Executive Summary](/concepts/executive-summary/)
 - [Bluf](/concepts/bluf/)
 - [Summarization](/concepts/summarization/)
-- [Hallucination](/concepts/hallucination/)
+- [Hallucination](/wiki/hallucination/)
 - [Verification](/concepts/verification/)
 
 

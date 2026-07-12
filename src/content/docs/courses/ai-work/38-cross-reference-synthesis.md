@@ -133,7 +133,7 @@ AI는 검색·요약을 순식간에 해내지만 "이 세 출처 중 뭘 믿을
 - [Cross Reference](/concepts/cross-reference/)
 - [Synthesis](/concepts/synthesis/)
 - [Conflicting Data](/concepts/conflicting-data/)
-- [Bias](/concepts/bias/)
+- [Bias](/wiki/bias/)
 - [Comparison Table](/concepts/comparison-table/)
 
 

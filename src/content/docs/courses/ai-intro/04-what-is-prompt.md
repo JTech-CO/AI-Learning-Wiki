@@ -114,8 +114,8 @@ AI 그림 도구는 수억 장의 사진과 그 설명 글을 짝지어 공부�
 
 ## 관련 개념
 
-- [Prompt](/concepts/prompt/)
-- [Image Generation](/concepts/image-generation/)
+- [Prompt](/wiki/prompt/)
+- [Image Generation](/wiki/image-generation/)
 - [Specificity](/concepts/specificity/)
 
 
