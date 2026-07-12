@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-learning-wiki/schema/module.json",
+  "title": "WikiModule",
+  "description": "위키의 원자 콘텐츠 단위. EduVerse의 '모듈' 1개(레슨)에 1:1 대응한다. 추출 파이프라인의 출력이자 위키 렌더러의 입력인 정규 계약(canonical contract).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "course", "order", "title", "body"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+/[a-z0-9-]+$",
+      "description": "전역 고유 슬러그. '<코스슬러그>/<모듈슬러그>' 형식. 예: 'ai-intro/01-what-is-ai'"
+    },
+    "course": {
+      "type": "string",
+      "description": "소속 코스 슬러그. schema.course.json의 id와 일치해야 함."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "코스 내 정렬 순서(로드맵 순서)."
+    },
+    "title": { "$ref": "#/$defs/i18nString" },
+    "summary": { "$ref": "#/$defs/i18nString", "description": "1~2문장 요약. 목록/검색 미리보기·메타디스크립션에 사용." },
+    "body": { "$ref": "#/$defs/i18nMarkdown", "description": "본문(마크다운). 위키 문서의 핵심." },
+    "objectives": {
+      "type": "array",
+      "description": "학습 목표('이 모듈을 마치면 ~할 수 있다').",
+      "items": { "$ref": "#/$defs/i18nString" }
+    },
+    "prompts": {
+      "type": "array",
+      "description": "이 모듈에 포함된 실전 프롬프트. 별도의 '프롬프트 라이브러리'로도 색인됨.",
+      "items": { "$ref": "#/$defs/prompt" }
+    },
+    "concepts": {
+      "type": "array",
+      "description": "이 모듈이 다루는 용어집 개념 슬러그. 위키 특유의 양방향 링크(backlink)에 사용.",
+      "items": { "type": "string" }
+    },
+    "mission": {
+      "$ref": "#/$defs/i18nMarkdown",
+      "description": "'직접 만들기' 실습 과제(EduVerse의 배우고→만들고→채점 폐루프 중 '만들기')."
+    },
+    "rubric": {
+      "type": "array",
+      "description": "AI 채점 루브릭. EduVerse 놀이터의 명확성·맥락·구체성·형식(0~5점) 같은 평가 기준.",
+      "items": { "$ref": "#/$defs/rubricItem" }
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["intro", "basic", "intermediate", "advanced", "pro"]
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "estimatedMinutes": { "type": "integer", "minimum": 0 },
+    "source": { "$ref": "#/$defs/source" },
+    "updatedAt": { "type": "string", "format": "date" }
+  },
+  "$defs": {
+    "i18nString": {
+      "type": "object",
+      "description": "다국어 문자열. 'ko'는 필수, 나머지 언어는 있으면 채운다. 지원 언어: ko/en/es/ja/zh.",
+      "required": ["ko"],
+      "properties": {
+        "ko": { "type": "string" },
+        "en": { "type": "string" },
+        "es": { "type": "string" },
+        "ja": { "type": "string" },
+        "zh": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "i18nMarkdown": {
+      "type": "object",
+      "description": "다국어 마크다운 본문. i18nString과 동일하나 값이 마크다운 문자열임.",
+      "required": ["ko"],
+      "properties": {
+        "ko": { "type": "string" },
+        "en": { "type": "string" },
+        "es": { "type": "string" },
+        "ja": { "type": "string" },
+        "zh": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "prompt": {
+      "type": "object",
+      "required": ["title", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "$ref": "#/$defs/i18nString" },
+        "text": { "$ref": "#/$defs/i18nMarkdown", "description": "실제 프롬프트 원문." },
+        "notes": { "$ref": "#/$defs/i18nMarkdown", "description": "사용 팁·주의사항·변형 방법." },
+        "model": { "type": "string", "description": "권장 모델(있으면). 예: 'claude', 'gpt', 'gemini' 또는 무관." },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "rubricItem": {
+      "type": "object",
+      "required": ["criterion"],
+      "additionalProperties": false,
+      "properties": {
+        "criterion": { "$ref": "#/$defs/i18nString" },
+        "max": { "type": "integer", "default": 5 },
+        "description": { "$ref": "#/$defs/i18nString" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "description": "출처 추적(내부용 위키이므로 원본 EduVerse 위치를 기록해 재수집·검증 가능하게 함).",
+      "additionalProperties": false,
+      "properties": {
+        "platform": { "type": "string", "default": "eduverse-ai.app" },
+        "url": { "type": "string" },
+        "capturedAt": { "type": "string", "format": "date-time" },
+        "method": { "type": "string", "enum": ["operator-export", "authenticated-crawl", "api-capture", "manual"] }
+      }
+    }
+  }
+}

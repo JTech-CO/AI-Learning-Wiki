@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-learning-wiki/schema/course.json",
+  "title": "WikiCourse",
+  "description": "코스(프로그램) 1개. 로드맵 상위 노드이자 위키의 섹션. 모듈들의 컨테이너.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "moduleCount"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "코스 슬러그. 예: 'ai-intro'" },
+    "title": { "$ref": "module.json#/$defs/i18nString" },
+    "subtitle": { "$ref": "module.json#/$defs/i18nString" },
+    "description": { "$ref": "module.json#/$defs/i18nMarkdown" },
+    "order": { "type": "integer", "description": "로드맵 상 코스 순서." },
+    "level": { "type": "string", "enum": ["entry", "practitioner", "builder", "engineer", "automation", "finance", "trends"] },
+    "moduleCount": { "type": "integer", "minimum": 0, "description": "정합성 검증용 기대 모듈 수." },
+    "prerequisites": { "type": "array", "items": { "type": "string" }, "description": "선행 코스 슬러그." },
+    "icon": { "type": "string" },
+    "autoUpdated": { "type": "boolean", "default": false, "description": "AI 트렌드처럼 주기적 자동 갱신 여부." }
+  }
+}

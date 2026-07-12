@@ -1,0 +1,8 @@
+---
+title: "Select"
+description: "'Select' 개념을 다루는 모듈"
+---
+이 개념을 다루는 모듈:
+
+- [데이터베이스·SQL 기초 — 데이터를 담고 꺼내기](/en/courses/ai-builder/15-database-sql-basics/) <sub>(AI Builder)</sub>
+- [SELECT와 조건 필터](/en/courses/ai-builder/16-select-filter/) <sub>(AI Builder)</sub>

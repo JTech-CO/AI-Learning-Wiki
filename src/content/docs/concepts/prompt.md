@@ -1,0 +1,55 @@
+---
+title: "Prompt"
+description: "'Prompt' 개념을 다루는 모듈"
+---
+이 개념을 다루는 모듈:
+
+- [요구사항을 프롬프트로 명세하기](/courses/ai-builder/03-requirements-spec/) <sub>(AI 빌더)</sub>
+- [AI 핵심 용어 — 토큰·프롬프트·컨텍스트·모델](/courses/ai-intro/02-core-terms/) <sub>(AI 입문)</sub>
+- [명령(프롬프트)이 무엇인지 이해하기](/courses/ai-intro/04-what-is-prompt/) <sub>(AI 입문)</sub>
+- [첫 대화 보내기](/courses/ai-intro/05-send-first-message/) <sub>(AI 입문)</sub>
+- [분명하고 친절한 한 문장 명령 쓰기](/courses/ai-intro/07-clear-one-sentence-prompt/) <sub>(AI 입문)</sub>
+- [좋은 프롬프트의 4요소](/courses/ai-intro/08-four-elements/) <sub>(AI 입문)</sub>
+- [맥락과 배경 제공하기](/courses/ai-intro/09-provide-context/) <sub>(AI 입문)</sub>
+- [초보가 흔히 하는 프롬프트 실수](/courses/ai-intro/10-common-mistakes/) <sub>(AI 입문)</sub>
+- [후속 질문으로 답 다듬기](/courses/ai-intro/11-follow-up-refine/) <sub>(AI 입문)</sub>
+- [출력 형식 지정하기](/courses/ai-intro/12-output-format/) <sub>(AI 입문)</sub>
+- [역할 부여하기](/courses/ai-intro/13-assign-role/) <sub>(AI 입문)</sub>
+- [대화 맥락 관리하기](/courses/ai-intro/14-manage-context/) <sub>(AI 입문)</sub>
+- [단계적으로 생각하게 시키기](/courses/ai-intro/15-step-by-step/) <sub>(AI 입문)</sub>
+- [예시로 원하는 결과 보여주기](/courses/ai-intro/16-few-shot-examples/) <sub>(AI 입문)</sub>
+- [프롬프트 고쳐 쓰며 디버깅하기](/courses/ai-intro/17-prompt-debugging/) <sub>(AI 입문)</sub>
+- [AI도 틀린다 — AI 답을 무조건 믿지 않기](/courses/ai-intro/18-ai-can-be-wrong/) <sub>(AI 입문)</sub>
+- [낯선 주제를 AI에게 물어 빠르게 이해하기](/courses/ai-intro/22-understand-topic/) <sub>(AI 입문)</sub>
+- [눈높이 설명 요청하기](/courses/ai-intro/23-eli5-explanation/) <sub>(AI 입문)</sub>
+- [AI로 스스로 퀴즈 내기](/courses/ai-intro/24-self-quiz/) <sub>(AI 입문)</sub>
+- [AI와 학습 계획 세우기](/courses/ai-intro/25-learning-plan/) <sub>(AI 입문)</sub>
+- [AI로 업무 이메일 초안 30초에 뽑기](/courses/ai-intro/26-email-draft/) <sub>(AI 입문)</sub>
+- [내가 쓴 글 다듬기](/courses/ai-intro/27-polish-writing/) <sub>(AI 입문)</sub>
+- [어조와 격식 조절하기](/courses/ai-intro/28-tone-formality/) <sub>(AI 입문)</sub>
+- [긴 글 초안 만들기(공지·보고)](/courses/ai-intro/29-long-draft/) <sub>(AI 입문)</sub>
+- [긴 문서 1개를 AI에 붙여넣어 핵심 요약 뽑기](/courses/ai-intro/30-summarize-doc/) <sub>(AI 입문)</sub>
+- [표와 데이터로 정리하기](/courses/ai-intro/33-tables-data/) <sub>(AI 입문)</sub>
+- [AI로 첫 이미지 한 장 만들기](/courses/ai-intro/38-first-image/) <sub>(AI 입문)</sub>
+- [이미지 프롬프트의 구성 요소](/courses/ai-intro/39-image-prompt-parts/) <sub>(AI 입문)</sub>
+- [AI로 업무 이메일 초안 30초에 뽑기](/courses/ai-start/01-email-draft/) <sub>(시작 코스: AI 제로 → 첫 수익 8단계)</sub>
+- [긴 문서 1개를 AI에 붙여넣어 핵심 요약 뽑기](/courses/ai-start/02-summarize-doc/) <sub>(시작 코스: AI 제로 → 첫 수익 8단계)</sub>
+- [AI로 첫 이미지 한 장 만들기](/courses/ai-start/03-first-image/) <sub>(시작 코스: AI 제로 → 첫 수익 8단계)</sub>
+- [낯선 주제를 AI에게 물어 빠르게 이해하기](/courses/ai-start/04-understand-topic/) <sub>(시작 코스: AI 제로 → 첫 수익 8단계)</sub>
+- [명령(프롬프트)이 무엇인지 이해하기](/courses/ai-start/05-what-is-prompt/) <sub>(시작 코스: AI 제로 → 첫 수익 8단계)</sub>
+- [AI도 틀린다 — AI 답을 무조건 믿지 않기](/courses/ai-start/06-ai-can-be-wrong/) <sub>(시작 코스: AI 제로 → 첫 수익 8단계)</sub>
+- [분명하고 친절한 한 문장 명령 쓰기](/courses/ai-start/07-clear-one-sentence-prompt/) <sub>(시작 코스: AI 제로 → 첫 수익 8단계)</sub>
+- [프롬프트 4요소 해부](/courses/ai-work/01-prompt-4-elements/) <sub>(AI 실무)</sub>
+- [역할·맥락·형식·예시를 갖춘 구조화된 명령서 설계](/courses/ai-work/02-structured-command/) <sub>(AI 실무)</sub>
+- [역할과 맥락 심기](/courses/ai-work/03-role-context/) <sub>(AI 실무)</sub>
+- [출력 형식 지시하기](/courses/ai-work/04-output-format/) <sub>(AI 실무)</sub>
+- [예시로 결과 고정하기(few-shot)](/courses/ai-work/05-few-shot/) <sub>(AI 실무)</sub>
+- [프롬프트 디버깅 루프](/courses/ai-work/06-prompt-debugging/) <sub>(AI 실무)</sub>
+- [프롬프트 심화 패턴 — few-shot·CoT·ReAct](/courses/ai-work/07-advanced-patterns/) <sub>(AI 실무)</sub>
+- [AI로 업무 이메일 초안](/courses/ai-work/08-business-email/) <sub>(AI 실무)</sub>
+- [반복 이메일 템플릿화](/courses/ai-work/13-email-templates/) <sub>(AI 실무)</sub>
+- [메모·개조식 자료로 보고서 한 편 완성](/courses/ai-work/14-notes-to-report/) <sub>(AI 실무)</sub>
+- [문서 목차부터 짜기](/courses/ai-work/15-outline-first/) <sub>(AI 실무)</sub>
+- [Canva AI로 SNS 게시물 세트 디자인하기](/courses/ai-work/32-canva-sns-design/) <sub>(AI 실무)</sub>
+- [리서치 질문 좁히기](/courses/ai-work/37-narrow-research-question/) <sub>(AI 실무)</sub>
+- [자동화에 AI 단계 넣기](/courses/ai-work/46-ai-step-in-automation/) <sub>(AI 실무)</sub>

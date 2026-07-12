@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build output
+dist/
+.astro/
+.output/
+
+# raw captured data (may be large / sensitive — keep out of git by default)
+content-model/raw/
+scripts/crawl/captured/
+
+# env / secrets
+.env
+.env.*
+*.local
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# logs
+*.log
+npm-debug.log*

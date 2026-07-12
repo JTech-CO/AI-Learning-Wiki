@@ -1,0 +1,119 @@
+---
+title: "브랜치와 Pull Request"
+description: "새 기능을 별도 브랜치에서 작업하고 Pull Request로 변경을 검토·병합하는 협업 흐름을 실습한다. '망가뜨려도 안전한 놀이터'에서 작업하고 합치기 전에 한 번 더 확인해 main을 항상 정상 상태로 지키는 습관을 익힌다."
+sidebar:
+  order: 28
+---
+_새 기능을 별도 브랜치에서 작업하고 Pull Request로 변경을 검토·병합하는 협업 흐름을 실습한다. '망가뜨려도 안전한 놀이터'에서 작업하고 합치기 전에 한 번 더 확인해 main을 항상 정상 상태로 지키는 습관을 익힌다._
+
+:::note[학습 목표]
+- 새 기능을 별도 브랜치에서 작업해 main을 건드리지 않고 안전하게 수정한다
+- GitHub에서 Pull Request를 열어 변경을 검토·병합하는 협업 흐름을 혼자서 처음부터 끝까지 해낸다
+- diff를 AI나 동료에게 리뷰받아 병합 전에 실수를 잡고, main을 항상 정상 작동하는 상태로 지킨다
+:::
+
+## 핵심 개념
+
+**브랜치(branch)**는 원본 코드(main)를 건드리지 않고 복사본을 만들어 그 위에서 자유롭게 작업하는 '평행 세계'예요. 작업이 끝나면 **Pull Request(PR)**를 열어 "내 브랜치의 변경을 main에 합쳐 주세요"라고 요청하고, 이때 동료나 AI가 코드를 **검토(review)**합니다. 검토가 통과되면 **병합(merge)**해서 변경 내용을 main에 반영하고, 다 쓴 브랜치는 삭제해요. 실제 회사의 개발팀은 거의 100% 이 흐름으로 일하며, 혼자 작업할 때도 실수를 되돌리기 쉬워 강력히 권장돼요. 핵심 감각은 **"main은 항상 정상 작동하는 상태로 지킨다"**예요.
+
+### 흐름 한눈에 보기
+
+브랜치 만들기 → 브랜치에서 수정·커밋 → PR 열기 → 검토(사람·AI) → 병합 → 브랜치 삭제.
+
+### 왜 이게 될까?
+
+브랜치는 main을 안 건드리고 만드는 '복사본 놀이터'라서 여기서 뭘 고치든 실제 서비스는 멀쩡해요. Pull Request는 "이거 합쳐도 될까요?"라고 한 번 물어보는 절차라, AI나 동료가 수백만 건의 코드 사례로 학습한 감각으로 **diff(변경분)**만 훑어봐도 실수를 바로 잡아줘요. 당신은 브랜치 만들고 커밋하는 것만 하면, 검토와 안전장치는 PR 흐름이 맡아줍니다.
+
+## 👀 따라하기 예시 — my-first-app README에 방문자용 환영 문구 추가
+
+**① 브랜치 만들기** 브랜치 드롭다운 클릭 → `feature/add-welcome-message` 입력 → "Create branch: feature/add-welcome-message from main" 클릭 → 현재 브랜치가 main에서 feature/add-welcome-message로 바뀜
+> 💡 main은 그대로 두고 복사본에서만 작업을 시작해요. main이 다치지 않는다는 안전감이 핵심.
+
+**② 수정하고 커밋** README.md를 연필 아이콘으로 열어 "## 환영합니다 이 앱은 방문자에게 인사합니다" 추가 → 커밋 메시지 "Add welcome message to README" → "Commit directly to the feature/add-welcome-message branch" 선택
+> 💡 커밋 메시지에 '무엇을 왜'가 담겨야 나중에 히스토리만 봐도 무슨 일이 있었는지 알 수 있어요.
+
+**③ PR 열기** Pull requests 탭 → New pull request → base:main, compare:feature/add-welcome-message → 제목 "Add welcome message" / 설명 "방문자용 환영 문구를 README에 추가했습니다. 기능 변경 없음, 문서만 수정."
+> 💡 PR은 "합쳐도 되는지 봐주세요"라는 요청이에요. 설명을 적어두면 리뷰하는 사람(또는 AI)이 맥락을 바로 이해해요.
+
+**④ AI 리뷰** Files changed 탭의 diff를 복사해 AI에게 리뷰 요청 → "문법 오타 없음. 다만 제목 끝에 마침표 통일을 권장합니다" → 사소한 지적이라 그대로 진행
+> 💡 아하 포인트 — 사람이 놓치기 쉬운 사소한 것도 AI는 diff만 보고 몇 초 만에 짚어줘요.
+
+좋은 결과의 기준: (1) main이 병합 전/후 모두 정상 작동 (2) 커밋 메시지만 봐도 무엇을 왜 바꿨는지 이해됨 (3) 병합 전에 최소 한 번(AI든 사람이든) 검토를 거쳤음.
+
+## 단계별 따라하기
+
+1. **연습용 저장소와 브랜치 이해 준비** — GitHub에 로그인한 뒤, 실습용 저장소가 없다면 New repository로 하나 만들거나 기존 저장소로 이동. 저장소 메인 화면 왼쪽 위의 브랜치 표시(보통 'main')를 클릭해 현재 어떤 브랜치들이 있는지 눈으로 확인.
+2. **새 기능 브랜치 만들기** — 브랜치 드롭다운 클릭 → 검색창에 새 브랜치 이름 입력 → 'Create branch: [이름] from main'. 이름은 'feature/작업내용' 형식. 로컬(내 컴퓨터)에서 한다면 터미널에 `git checkout -b feature/add-header`. (브랜치 이름: feature/add-welcome-message)
+3. **브랜치에서 파일 수정하고 커밋** — 새 브랜치가 선택된 상태에서 README.md 같은 파일을 열고 연필(Edit) 아이콘을 눌러 한 줄을 추가. 아래로 스크롤해 'Commit changes' 창에서 커밋 메시지를 적고 'Commit directly to the feature/... branch'가 선택됐는지 확인 후 커밋. main이 아니라 내 브랜치에 저장되는 게 핵심.
+4. **Pull Request 열기** — 저장소 상단 'Pull requests' 탭 → 'New pull request' → base를 main, compare를 내 브랜치로 → 'Create pull request' → 제목과 설명(무엇을 왜 바꿨는지)을 적고 다시 'Create pull request'.
+5. **AI에게 코드 리뷰 받기** — PR 화면의 'Files changed' 탭에서 변경된 내용(diff)을 복사해 ChatGPT나 Claude에 붙여넣고 리뷰를 요청. 지적사항이 있으면 3단계로 돌아가 같은 브랜치에 수정 커밋을 추가하면 PR에 자동 반영. (예: '문법 오타 없음. 다만 제목의 마침표 통일을 권장' → 사소하므로 그대로)
+6. **병합하고 브랜치 정리** — PR 화면에서 'Merge pull request' → 'Confirm merge'. 병합 후 나타나는 'Delete branch' 버튼으로 다 쓴 브랜치를 삭제. 마지막으로 main 브랜치로 돌아가 방금 변경이 반영됐는지 확인.
+
+## 흔한 실수 → 교정
+
+- ✗ 새 브랜치를 만들지 않고 main에서 바로 수정·커밋 → **파일을 고치기 전에 먼저 브랜치 드롭다운에서 새 브랜치를 만들고, 그 브랜치가 선택된 상태인지 화면 왼쪽 위에서 항상 확인한 뒤 작업.**
+- ✗ 커밋 메시지를 'update'나 'fix'처럼 의미 없이 적음 → **'무엇을 왜'가 드러나게. 예: 'Add welcome message to README'. 나중에 히스토리만 봐도 변경을 이해할 수 있게.**
+- ✗ PR을 열자마자 검토도 없이 곧바로 병합 → **최소한 Files changed 탭에서 내 변경을 스스로 다시 읽거나 AI에게 리뷰를 받은 뒤 병합. main은 항상 정상 상태로 지킨다는 원칙.**
+
+## 도구
+
+- 🛠 **GitHub** (github.com) — 저장소·브랜치·Pull Request 호스팅.
+- 🛠 **GitHub Desktop** (desktop.github.com) — 터미널 없이 브랜치·커밋을 GUI로 관리.
+- 🛠 **ChatGPT** (chat.openai.com) — PR 설명 작성·코드 diff 리뷰.
+- 🛠 **Claude** (claude.ai) — 코드 리뷰·충돌 해결 단계별 안내.
+
+## 실전 프롬프트
+
+### PR 설명 자동 작성
+
+```text
+나는 초보 개발자야. 아래 변경 내용(diff)을 보고, 팀원이 검토하기 좋은 Pull Request 설명을 한국어로 작성해줘. 형식은 1)무엇을 바꿨나 2)왜 바꿨나 3)검토 시 봐 줄 부분 세 항목으로 간결하게. [변경 내용이나 diff]
+```
+
+`Pull Request` `PR 설명` `협업`
+
+### 내 코드 변경 리뷰 요청
+
+```text
+아래는 내 Pull Request의 변경 내용(diff)이야. 초보자 관점에서 1)명백한 버그나 오타 2)더 나은 방식 3)그대로 병합해도 되는지 판단을 한국어로 해줘. 사소한 취향 문제와 꼭 고쳐야 할 문제를 구분해. [diff]
+```
+
+`코드 리뷰` `diff` `병합`
+
+### 브랜치 이름 짓기
+
+```text
+내가 지금 하려는 작업은 '[작업 설명]'이야. 이 작업에 어울리는 git 브랜치 이름을 feature/ 접두사를 붙인 영어 kebab-case로 3개 지어줘. 각 이름이 왜 좋은지도 한 줄로.
+```
+
+`브랜치` `네이밍`
+
+### 충돌 해결 도움
+
+```text
+GitHub에서 PR을 병합하려는데 'This branch has conflicts that must be resolved'라는 메시지가 떴어. 초보자가 이해할 수 있게, 충돌이 왜 생겼는지와 GitHub 웹 화면에서 단계별로 해결하는 방법을 한국어로 알려줘.
+```
+
+`충돌` `merge` `문제해결`
+
+## 직접 만들기 (미션)
+
+:::tip
+✍️ 이제 당신 차례! 같은 저장소(또는 실습용 새 저장소)에서 feature/add-footer 브랜치를 만들고, README 맨 아래에 "문의: example@email.com" 같은 footer 한 줄을 추가해 커밋하세요. 그다음 PR을 열고 Files changed의 diff를 AI에게 붙여넣어 리뷰를 받아보세요. 지적사항을 반영해 같은 브랜치에 수정 커밋을 추가하고, 최종적으로 병합한 뒤 브랜치를 삭제합니다.
+:::
+
+## 채점 기준
+
+| 기준 | 배점 |
+| --- | --- |
+| 브랜치를 만들고 나서 화면 왼쪽 위 현재 브랜치가 main이 아니라 feature/add-footer로 바뀐 걸 확인했나 | 5 |
+| 커밋 메시지와 PR 설명만 읽고도 '무엇을, 왜' 바꿨는지 제3자가 이해할 수 있나 | 5 |
+| 병합 전에 AI 리뷰(또는 스스로 diff 재확인)를 최소 한 번 거쳤고, main은 병합 후에도 정상 작동하나 | 5 |
+
+## 관련 개념
+
+- [Branch](/concepts/branch/)
+- [Pull Request](/concepts/pull-request/)
+- [Code Review](/concepts/code-review/)
+- [Merge](/concepts/merge/)
+- [Collaboration](/concepts/collaboration/)

@@ -1,0 +1,130 @@
+{
+  "id": "ai-engineer/http-requests",
+  "course": "ai-engineer",
+  "order": 6,
+  "title": {
+    "ko": "HTTP 요청 보내기: requests 기초"
+  },
+  "summary": {
+    "ko": "브라우저 주소창에 URL을 치면 화면이 뜨는 그 '요청'을 이제 파이썬 몇 줄로 직접 보낸다. requests로 GET/POST 요청을 날리고 상태코드·헤더·바디·JSON 응답을 다뤄 세상 모든 웹 API를 코드에 연결하는 기본기를 익힌다."
+  },
+  "objectives": [
+    {
+      "ko": "requests로 공개 API에 GET/POST 요청을 보내고 상태코드(200/404/500)로 성공·실패를 판별한다"
+    },
+    {
+      "ko": "JSON 응답을 .json()으로 딕셔너리로 바꿔 원하는 키 값만 정확히 뽑아낸다"
+    },
+    {
+      "ko": "params·headers·json 바디를 붙이고 timeout·raise_for_status()로 에러를 방어한다"
+    }
+  ],
+  "body": {
+    "ko": "## 핵심 개념\n\n`requests`는 파이썬에서 웹 서버와 대화하는 **가장 표준적인 라이브러리**예요. 우리가 웹 브라우저로 '이 주소를 열어달라(GET)'거나 '이 정보를 보낼게(POST)'라고 말하듯, 코드도 똑같은 요청을 보냅니다. 서버는 항상 **상태코드**(200=성공, 404=없음, 500=서버오류)와 **바디**(실제 데이터, 보통 JSON)로 답해요.\n\n식당에 비유하면 한눈에 들어와요.\n\n- **URL** = 식당 주소\n- **메서드** = '먹으러 왔어요(GET)' / '주문할게요(POST)'\n- **헤더** = 예약자 이름표\n- **바디** = 주문서\n- **응답** = 나온 음식\n\n이 4가지(URL·메서드·헤더·바디)와 응답 2가지(상태코드·JSON)만 알면 **세상 대부분의 웹 API**를 다룰 수 있어요.\n\n### 왜 이게 될까?\n\n전 세계 API 서버들은 전부 똑같은 규칙(**HTTP**)으로 대화해요. URL·메서드·헤더·바디, 이 4가지 형식만 지키면 어떤 서버든 알아듣습니다. `requests`는 그 규칙을 파이썬 함수 한 줄로 감싸놓은 거라, 복잡한 통신 규약을 몰라도 `res = requests.get(url)` 한 줄이면 서버가 곧장 답을 줘요. 그래서 당신은 \"무엇을 물어볼지\"만 정하면 되고, \"어떻게 물어볼지\"는 `requests`가 대신합니다.\n\n## 👀 따라하기 예시 — 환율 API에서 원/달러 환율만 쏙 뽑아내기\n\n**① 먼저 상태코드부터 확인**\n\n```python\nres = requests.get(\"https://httpbin.org/get\")\nprint(res.status_code)  # 200\n```\n\n> 💡 응답 내용을 보기 전에 \"성공했는지\"부터 확인하는 게 습관이에요. 200이 아니면 뒤 코드는 다 의미 없어요.\n\n**② JSON으로 바꿔서 통째로 찍어보기**\n\n```python\ndata = res.json()\nprint(data)  # {'args': {}, 'headers': {...}, 'origin': '203.0.113.5', 'url': '...'}\n```\n\n> 💡 바로 원하는 값만 뽑으려 하지 말고, 먼저 전체 구조를 눈으로 훑어야 어느 키에 뭐가 들었는지 보여요. 아하 포인트!\n\n**③ 원하는 키만 콕 집어서 꺼내기**\n\n```python\nprint(data[\"origin\"])  # 203.0.113.5\n```\n\n> 💡 딕셔너리는 대괄호 안에 키 이름만 넣으면 그 값만 쏙. JSON 전체가 아니라 필요한 한 조각만.\n\n**④ 혹시 실패할 상황을 대비해 안전장치**\n\n```python\nres = requests.get(\"https://httpbin.org/get\", timeout=5)\nres.raise_for_status()\nprint(res.json()[\"origin\"])\n```\n\n> 💡 실전 API는 가끔 느려지거나 실패해요. `timeout`과 `raise_for_status()`가 있으면 프로그램이 멈추거나 죽지 않고 바로 알려줘요.\n\n좋은 결과의 기준: (1) 상태코드를 확인하고 나서 `json()`을 호출했는가 (2) `timeout`이 걸려 있는가 (3) 원하는 값이 정확히 하나만, 깔끔하게 출력되는가.\n\n## 단계별 따라하기\n\n1. **환경 준비하고 requests 설치** — 터미널(또는 VS Code 터미널)을 열고 `requests`를 설치한다. 그다음 `http_test.py`를 만들고 import 한 줄.\n\n   ```python\n   pip install requests\n   import requests\n   print(requests.__version__)  # 예: 2.32.3\n   ```\n\n2. **첫 GET 요청 보내고 상태코드 확인** — 공개 연습용 API인 `httpbin.org`에 GET을 보내고 응답 객체의 `.status_code`를 출력. 200이 나오면 통신 성공.\n\n   ```python\n   res = requests.get(\"https://httpbin.org/get\")\n   print(res.status_code)  # 200\n   print(res.ok)           # True (200~399면 True)\n   ```\n\n3. **JSON 응답에서 원하는 값 뽑기** — 응답이 JSON이면 `.json()`으로 파이썬 딕셔너리로 바꾼다. 그다음 대괄호 키로 원하는 값만.\n\n   ```python\n   res = requests.get(\"https://httpbin.org/ip\")\n   data = res.json()       # {'origin': '123.45.67.89'}\n   print(data[\"origin\"])\n   ```\n\n4. **쿼리 파라미터와 헤더 붙여 보내기** — 검색어·페이지 같은 옵션은 `params` 딕셔너리로, 인증 토큰·요청 형식은 `headers` 딕셔너리로 전달. `requests`가 알아서 URL 뒤에 `?key=value`로 붙여준다.\n\n   ```python\n   params = {\"q\": \"python\", \"page\": 2}\n   headers = {\"User-Agent\": \"my-app/1.0\"}\n   res = requests.get(\"https://httpbin.org/get\", params=params, headers=headers)\n   print(res.json()[\"args\"])  # {'page': '2', 'q': 'python'}\n   ```\n\n5. **POST로 데이터 보내기** — 서버에 무언가 만들거나 제출할 때는 POST. `json=` 인자로 딕셔너리를 넘기면 자동으로 JSON 바디와 `Content-Type` 헤더가 세팅되고, 응답으로 서버가 받은 값을 되돌려준다.\n\n   ```python\n   payload = {\"name\": \"봉이\", \"level\": 1}\n   res = requests.post(\"https://httpbin.org/post\", json=payload)\n   print(res.status_code)      # 200\n   print(res.json()[\"json\"])   # {'level': 1, 'name': '봉이'}\n   ```\n\n6. **에러 방어하고 AI로 코드 리뷰** — 실전에서는 서버가 실패(4xx·5xx)하거나 응답이 JSON이 아닐 수 있다. `timeout`을 걸고 `raise_for_status()`로 실패를 잡는다. 완성한 코드를 AI에 붙여 개선점을 물어본다.\n\n   ```python\n   try:\n       res = requests.get(\"https://httpbin.org/status/404\", timeout=5)\n       res.raise_for_status()  # 404면 여기서 예외\n       print(res.json())\n   except requests.exceptions.HTTPError as e:\n       print(\"요청 실패:\", e)\n   ```\n\n## 흔한 실수 → 교정\n\n- ✗ 상태코드를 확인하지 않고 바로 `res.json()`을 호출 → 서버가 404나 HTML 에러 페이지를 주면 `JSONDecodeError`로 프로그램이 죽는다. **먼저 `res.status_code`나 `res.ok`, 또는 `res.raise_for_status()`로 성공을 확인한 뒤에 `.json()`을 호출한다.**\n- ✗ POST로 딕셔너리를 보낼 때 `data=`와 `json=`을 헷갈려 씀 → `data=`로 딕셔너리를 넘기면 폼 형식(`x-www-form-urlencoded`)으로 나가서 JSON을 기대한 서버가 못 읽는다. **JSON API에는 `json=payload`를 쓴다.** 그러면 `requests`가 자동으로 JSON 직렬화와 `Content-Type: application/json` 헤더까지 붙여준다.\n- ✗ `timeout`을 안 걸어서 서버가 응답이 없으면 프로그램이 영원히 멈춤 → **모든 요청에 `timeout=5`처럼 초 단위 제한을 건다.** 그리고 `requests.exceptions.Timeout` / `RequestException`으로 감싸 예외를 처리한다.\n\n## 도구\n\n- 🛠 **requests** (requests.readthedocs.io) — 파이썬 HTTP 요청 표준 라이브러리.\n- 🛠 **httpbin** (httpbin.org) — 회원가입 없이 GET/POST/헤더를 테스트하는 연습용 API.\n- 🛠 **JSONPlaceholder** (jsonplaceholder.typicode.com) — 가짜 REST API로 GET/POST를 연습.\n- 🛠 **Postman** (postman.com) — 코드 전에 요청을 GUI로 먼저 실험하는 API 도구."
+  },
+  "prompts": [
+    {
+      "id": "p6e-review",
+      "title": {
+        "ko": "내 코드 리뷰 받기 (가장 유용)"
+      },
+      "text": {
+        "ko": "아래는 파이썬 requests로 작성한 API 호출 코드야. (1) 에러 처리(timeout, raise_for_status)가 빠진 곳 (2) 상태코드 확인 없이 .json()을 부르는 위험 (3) 더 깔끔하게 만들 부분을 한국어로 짚어주고 개선된 전체 코드를 줘. [내 코드]"
+      },
+      "tags": [
+        "코드리뷰",
+        "requests",
+        "에러처리"
+      ]
+    },
+    {
+      "id": "p6e-convert",
+      "title": {
+        "ko": "curl/브라우저 요청을 requests 코드로 변환"
+      },
+      "text": {
+        "ko": "아래 API 문서(또는 curl 명령)를 파이썬 requests 코드로 바꿔줘. URL, 메서드(GET/POST), 필요한 headers, params 또는 json 바디를 모두 반영하고 상태코드 확인과 timeout까지 넣어서 실행 가능한 완성 코드로 한국어 주석과 함께 줘. [API 문서나 curl 명령]"
+      },
+      "tags": [
+        "변환",
+        "curl",
+        "requests"
+      ]
+    },
+    {
+      "id": "p6e-error",
+      "title": {
+        "ko": "에러 메시지 해석"
+      },
+      "text": {
+        "ko": "파이썬 requests로 API를 호출했더니 아래 에러가 났어. 원인이 뭔지, 상태코드나 예외가 의미하는 바가 뭔지, 어떻게 고치는지 초보자도 알게 한국어로 설명해줘. [에러 메시지/스택트레이스]"
+      },
+      "tags": [
+        "디버깅",
+        "에러",
+        "상태코드"
+      ]
+    },
+    {
+      "id": "p6e-api",
+      "title": {
+        "ko": "연습용 무료 API 추천"
+      },
+      "text": {
+        "ko": "파이썬 requests를 연습하고 싶은 초보자야. 회원가입/API 키 없이 바로 GET·POST를 테스트할 수 있는 무료 공개 API를 3개 추천하고, 각각에 대해 requests로 호출하는 짧은 예제 코드를 한국어 주석과 함께 줘."
+      },
+      "tags": [
+        "학습자료",
+        "공개API",
+        "연습"
+      ]
+    }
+  ],
+  "mission": {
+    "ko": "✍️ 이제 당신 차례! httpbin.org/uuid 에 GET 요청을 보내서 서버가 만들어준 uuid 값만 뽑아 출력해보세요. (힌트: 응답 JSON은 {\"uuid\": \"...\"} 형태) 그다음 timeout=5와 raise_for_status()도 꼭 넣어보세요."
+  },
+  "rubric": [
+    {
+      "criterion": {
+        "ko": "json()을 호출하기 전에 상태코드나 raise_for_status()로 성공을 먼저 확인했나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "timeout을 걸어서 서버가 응답 없을 때 프로그램이 무한정 멈추지 않게 했나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "전체 JSON이 아니라 uuid 값 하나만 정확히 출력됐나"
+      },
+      "max": 5
+    }
+  ],
+  "difficulty": "basic",
+  "tags": [
+    "HTTP 요청",
+    "requests",
+    "웹 API",
+    "상태코드",
+    "JSON 응답",
+    "에러 처리"
+  ],
+  "estimatedMinutes": 30,
+  "concepts": [
+    "requests",
+    "http",
+    "get",
+    "post",
+    "status-code",
+    "headers",
+    "api-communication",
+    "error-handling"
+  ],
+  "source": {
+    "platform": "eduverse-ai.app",
+    "method": "authenticated-crawl"
+  }
+}

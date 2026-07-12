@@ -1,0 +1,53 @@
+---
+title: "AI Intro — 로드맵"
+description: "AI Intro 코스 개요"
+sidebar:
+  order: 0
+  label: "📍 로드맵"
+---
+> 레벨: `entry` · 모듈 44/44개
+
+1. [AI란 무엇인가 — 똑똑한 기계의 정체 이해](/en/courses/ai-intro/01-what-is-ai/)
+1. [AI 핵심 용어 — 토큰·프롬프트·컨텍스트·모델](/en/courses/ai-intro/02-core-terms/)
+1. [AI 챗봇 시작하기: 계정 만들고 열기](/en/courses/ai-intro/03-start-chatbot/)
+1. [명령(프롬프트)이 무엇인지 이해하기](/en/courses/ai-intro/04-what-is-prompt/)
+1. [첫 대화 보내기](/en/courses/ai-intro/05-send-first-message/)
+1. [LLM 작동 원리 — AI는 어떻게 글을 만드나](/en/courses/ai-intro/06-how-llm-works/)
+1. [분명하고 친절한 한 문장 명령 쓰기](/en/courses/ai-intro/07-clear-one-sentence-prompt/)
+1. [좋은 프롬프트의 4요소](/en/courses/ai-intro/08-four-elements/)
+1. [맥락과 배경 제공하기](/en/courses/ai-intro/09-provide-context/)
+1. [초보가 흔히 하는 프롬프트 실수](/en/courses/ai-intro/10-common-mistakes/)
+1. [후속 질문으로 답 다듬기](/en/courses/ai-intro/11-follow-up-refine/)
+1. [출력 형식 지정하기](/en/courses/ai-intro/12-output-format/)
+1. [역할 부여하기](/en/courses/ai-intro/13-assign-role/)
+1. [대화 맥락 관리하기](/en/courses/ai-intro/14-manage-context/)
+1. [단계적으로 생각하게 시키기](/en/courses/ai-intro/15-step-by-step/)
+1. [예시로 원하는 결과 보여주기](/en/courses/ai-intro/16-few-shot-examples/)
+1. [프롬프트 고쳐 쓰며 디버깅하기](/en/courses/ai-intro/17-prompt-debugging/)
+1. [AI도 틀린다 — AI 답을 무조건 믿지 않기](/en/courses/ai-intro/18-ai-can-be-wrong/)
+1. [환각(그럴듯한 거짓) 알아채기](/en/courses/ai-intro/19-spot-hallucination/)
+1. [출처 요구하고 직접 확인하기](/en/courses/ai-intro/20-verify-sources/)
+1. [교차검증 워크플로](/en/courses/ai-intro/21-cross-verification/)
+1. [낯선 주제를 AI에게 물어 빠르게 이해하기](/en/courses/ai-intro/22-understand-topic/)
+1. [눈높이 설명 요청하기](/en/courses/ai-intro/23-eli5-explanation/)
+1. [AI로 스스로 퀴즈 내기](/en/courses/ai-intro/24-self-quiz/)
+1. [AI와 학습 계획 세우기](/en/courses/ai-intro/25-learning-plan/)
+1. [AI로 업무 이메일 초안 30초에 뽑기](/en/courses/ai-intro/26-email-draft/)
+1. [내가 쓴 글 다듬기](/en/courses/ai-intro/27-polish-writing/)
+1. [어조와 격식 조절하기](/en/courses/ai-intro/28-tone-formality/)
+1. [긴 글 초안 만들기(공지·보고)](/en/courses/ai-intro/29-long-draft/)
+1. [긴 문서 1개를 AI에 붙여넣어 핵심 요약 뽑기](/en/courses/ai-intro/30-summarize-doc/)
+1. [핵심 요점만 뽑아내기](/en/courses/ai-intro/31-extract-key-points/)
+1. [문서에 질문 던지기](/en/courses/ai-intro/32-ask-documents/)
+1. [표와 데이터로 정리하기](/en/courses/ai-intro/33-tables-data/)
+1. [내 정보를 지키며 AI를 안전하게 쓴다](/en/courses/ai-intro/34-use-ai-safely/)
+1. [AI에 넣으면 안 되는 정보](/en/courses/ai-intro/35-what-not-to-input/)
+1. [AI의 편향 인식하기](/en/courses/ai-intro/36-recognize-bias/)
+1. [AI 사용 밝히기와 표절 피하기](/en/courses/ai-intro/37-disclose-ai-plagiarism/)
+1. [AI로 첫 이미지 한 장 만들기](/en/courses/ai-intro/38-first-image/)
+1. [이미지 프롬프트의 구성 요소](/en/courses/ai-intro/39-image-prompt-parts/)
+1. [이미지 다듬고 스타일 반복하기](/en/courses/ai-intro/40-iterate-images/)
+1. [AI 모델 고르기 — 언제 뭘 쓰나](/en/courses/ai-intro/41-choosing-models/)
+1. [무료와 유료 AI의 차이](/en/courses/ai-intro/42-free-vs-paid/)
+1. [작업에 맞는 AI 도구 고르기](/en/courses/ai-intro/43-match-tool-to-task/)
+1. [캡스톤: 첫 결과물 완성하기](/en/courses/ai-intro/44-capstone/)

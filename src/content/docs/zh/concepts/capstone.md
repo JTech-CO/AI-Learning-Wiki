@@ -1,0 +1,10 @@
+---
+title: "Capstone"
+description: "'Capstone' 개념을 다루는 모듈"
+---
+이 개념을 다루는 모듈:
+
+- [앱 제작 프로젝트 — AI로 실제 동작하는 작은 도구 만들기](/zh/courses/ai-builder/42-app-building-project/) <sub>(AI 빌더)</sub>
+- [정점 캡스톤 — 실사용자 있는 산출물을 기획부터 배포까지 출시](/zh/courses/ai-builder/44-capstone-launch/) <sub>(AI 빌더)</sub>
+- [캡스톤: 첫 결과물 완성하기](/zh/courses/ai-intro/44-capstone/) <sub>(AI 입문)</sub>
+- [주간보고 자동화 캡스톤](/zh/courses/ai-work/48-weekly-report-capstone/) <sub>(AI 실무)</sub>

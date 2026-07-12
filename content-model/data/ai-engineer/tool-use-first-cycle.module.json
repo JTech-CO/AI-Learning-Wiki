@@ -1,0 +1,127 @@
+{
+  "id": "ai-engineer/tool-use-first-cycle",
+  "course": "ai-engineer",
+  "order": 21,
+  "title": {
+    "ko": "도구 호출(tool use) 첫 사이클"
+  },
+  "summary": {
+    "ko": "함수 호출 개념으로 도구 스키마를 정의하고, 모델의 도구 호출 요청을 받아 함수를 실행한 뒤 결과를 되돌려 자연어 답을 완성하는 tool use 한 사이클을 직접 코드로 돌려본다."
+  },
+  "objectives": [
+    {
+      "ko": "도구 스키마(name·description·input_schema)를 JSON으로 정의한다"
+    },
+    {
+      "ko": "모델의 tool_use 요청을 받아 내 코드로 함수를 실행하고 결과를 tool_result로 되돌린다"
+    },
+    {
+      "ko": "두 번째 호출로 사이클을 닫아 자연어 최종 답변을 받는다"
+    }
+  ],
+  "body": {
+    "ko": "## 핵심 개념\n\nLLM은 학습 시점 이후의 정보·계산·외부 시스템에 접근하지 못해요. **도구 호출(tool use, function calling)**은 이 한계를 뚫는 표준 방법이에요. 개발자가 \"이런 함수가 있고, 이런 입력을 받는다\"는 **스키마(JSON)**를 모델에 알려주면, 모델은 필요할 때 텍스트가 아닌 **'함수 호출 요청'(함수 이름 + 인자)**을 만들어 냅니다.\n\n핵심 반전: **모델은 함수를 실행하지 않아요.** 실행은 여러분의 코드가 하고, 그 결과를 다시 모델에게 돌려주면 모델이 자연어 답변으로 마무리해요.\n\n> 💡 '스키마 정의 → 모델의 호출 요청 → 코드가 실행 → 결과 반환 → 최종 답변' 한 바퀴가 모든 AI 에이전트의 최소 단위예요.\n\n### 왜 이게 될까?\n\nAI는 스스로 계산기나 날씨 API를 두드릴 수 없어요. 대신 \"이 함수를 이 값으로 불러줘\"라는 요청서(tool_use)만 만들어 냅니다. 스키마만 잘 알려주면 **실행은 코드가 하고, 판단·정리는 AI가** 대신해줘요.\n\n## 👀 따라하기 예시 — \"부산 날씨 어때?\"로 tool use 한 사이클\n\n**① 진짜 함수와 스키마 준비**\n\n```python\ndef get_weather(city):\n    return {\"부산\": \"흐림, 21도\"}.get(city, \"데이터 없음\")\n\ntools = [{\n    \"name\": \"get_weather\",\n    \"description\": \"특정 도시의 현재 날씨를 반환한다\",\n    \"input_schema\": {\n        \"type\": \"object\",\n        \"properties\": {\"city\": {\"type\": \"string\"}},\n        \"required\": [\"city\"]\n    }\n}]\n```\n> 💡 모델은 함수 코드를 못 봐요. `description`과 `input_schema`가 \"사용설명서\"라, 부실하면 도구를 아예 안 불러요.\n\n**② 첫 호출 → 모델이 tool_use로 응답**\n\n```python\nresp = client.messages.create(model=\"claude-opus-4-8\", tools=tools,\n    messages=[{\"role\": \"user\", \"content\": \"부산 날씨 어때?\"}])\nprint(resp.stop_reason)  # tool_use\n# content 블록: {\"type\":\"tool_use\",\"name\":\"get_weather\",\"input\":{\"city\":\"부산\"},\"id\":\"toolu_01\"}\n```\n> 💡 모델이 직접 답하지 않고 \"이 함수를 이 인자로 불러줘\" 요청만 해요. 아직 최종 답이 아니라는 게 핵심 반전이에요.\n\n**③ 내 코드가 실제로 함수 실행**\n\n```python\ntool_block = next(b for b in resp.content if b.type == \"tool_use\")\nresult = get_weather(tool_block.input[\"city\"])  # \"흐림, 21도\"\n```\n> 💡 실행 권한은 항상 내 코드에 있어요. 결과는 문자열(또는 JSON)로 만들어 되돌릴 준비를 해요.\n\n**④ tool_result로 되돌려 두 번째 호출 → 최종 답**\n\n```python\nfollow = client.messages.create(model=\"claude-opus-4-8\", tools=tools,\n    messages=[\n        {\"role\": \"user\", \"content\": \"부산 날씨 어때?\"},\n        {\"role\": \"assistant\", \"content\": resp.content},\n        {\"role\": \"user\", \"content\": [\n            {\"type\": \"tool_result\", \"tool_use_id\": tool_block.id, \"content\": result}\n        ]}\n    ])\nprint(follow.content[0].text)  # \"부산은 현재 흐리고 21도예요.\"\n```\n> 💡 `tool_use_id`가 정확히 일치해야 모델이 맥락을 유지해요. 이 연결이 끊기면 맥락을 잃어요.\n\n좋은 결과의 기준: (1) `stop_reason`이 `tool_use`로 찍힘 (2) `tool_use_id`가 요청·응답에서 한 글자도 안 틀리고 일치 (3) 두 번째 호출에서 자연어 최종 답이 나옴.\n\n## 단계별 따라하기\n\n1. **실행 환경 준비** — Python 설치, `pip install anthropic`, console.anthropic.com에서 API 키 발급 → 환경변수 `ANTHROPIC_API_KEY`. (`export ANTHROPIC_API_KEY=sk-ant-...`, Windows는 `set`. 확인: `python -c \"import anthropic; print(anthropic.__version__)\"`)\n2. **실행할 진짜 함수부터** — 외부 API 없이 딕셔너리로 가짜 날씨 반환. `def get_weather(city): data={\"서울\":\"맑음, 24도\",\"부산\":\"흐림, 21도\"}; return data.get(city,\"데이터 없음\")`\n3. **도구 스키마를 JSON으로 선언** — `name`은 함수 이름과 똑같이, `description`은 '언제 쓰는지' 명확히, `input_schema`는 인자 타입·필수 여부를 JSON Schema로. (`\"properties\":{\"city\":{\"type\":\"string\",\"description\":\"도시 이름, 예: 서울\"}},\"required\":[\"city\"]`)\n4. **모델 호출하고 tool_use 응답 받기** — `messages.create`에 model·tools·질문을 넣는다. 함수가 필요하면 `stop_reason`이 `tool_use`, content에 함수 이름·인자 블록이 담긴다. (`resp = client.messages.create(model=\"claude-opus-4-8\", max_tokens=1024, tools=tools, messages=[...]); print(resp.stop_reason)`)\n5. **함수 실행 후 결과를 되돌려 사이클 닫기** — tool_use 블록의 name·input으로 `get_weather` 실행. 결과를 `role=\"user\"`의 tool_result 블록으로 만들어 (사용자 질문 + 모델 tool_use 응답)에 이어 붙여 두 번째 호출 → 자연어 최종 답변.\n6. **두 번째 도구 추가로 응용** — `add(a, b)` 계산 함수를 하나 더 만들고 스키마에 추가한 뒤 '3 더하기 5는?'과 '부산 날씨는?'을 각각 물어 모델이 상황에 맞는 도구를 스스로 고르는지 확인. (질문 '3 더하기 5는?' → add 선택 → 8 반환 → '8입니다')\n\n## 흔한 실수 → 교정\n\n- ✗ 모델이 tool_use 블록을 돌려줬는데 그게 곧 답인 줄 알고 실행 없이 출력 → **tool_use는 요청일 뿐이에요.** 반드시 내 코드가 함수를 실행하고 결과를 tool_result로 되돌려 두 번째 호출을 해야 최종 자연어 답이 나와요.\n- ✗ 두 번째 호출 때 assistant 차례를 빼먹거나 텍스트로 요약해 넣어 tool_use_id 연결이 끊김 → 두 번째 호출 messages에 **(1) 원래 사용자 질문 (2) 모델 응답 `resp.content` 원본 (3) 같은 id의 tool_result**를 순서대로 넣어요. `tool_use_id`는 정확히 일치해야 해요.\n- ✗ description을 'get_weather 함수'처럼 이름만 반복해 모델이 언제 써야 할지 몰라 도구를 안 부름 → **'무엇을, 언제 쓰는지'를 사람에게 설명하듯 구체적으로.** 예: '사용자가 특정 도시의 현재 날씨를 물을 때 그 도시의 날씨를 반환한다'.\n\n## 도구\n\n- 🛠 **Anthropic Python SDK** (`pip install anthropic`) — tool use 코드 실행.\n- 🛠 **Anthropic Console** (console.anthropic.com) — API 키 발급·사용량 확인.\n- 🛠 **Claude 공식 문서 tool use** (docs.anthropic.com) — 스키마·tool_result 형식 레퍼런스.\n- 🛠 **Python** (python.org) — 함수 정의·실행 환경."
+  },
+  "prompts": [
+    {
+      "id": "p21-schema",
+      "title": {
+        "ko": "도구 스키마 초안 생성"
+      },
+      "text": {
+        "ko": "나는 Anthropic Claude의 tool use를 처음 쓰는 개발자야. 아래 파이썬 함수를 모델에게 알려줄 tool 스키마(name, description, input_schema를 가진 JSON)로 변환해줘. description은 모델이 '언제 이 도구를 써야 하는지' 판단할 수 있게 구체적으로, 필수 인자는 required에. 함수: [파이썬 함수 코드]"
+      },
+      "tags": [
+        "tool-use",
+        "스키마",
+        "함수 변환"
+      ]
+    },
+    {
+      "id": "p21-skeleton",
+      "title": {
+        "ko": "한 사이클 전체 코드 뼈대"
+      },
+      "text": {
+        "ko": "Anthropic Python SDK로 tool use 한 사이클(스키마 정의 → 첫 호출 → tool_use 감지 → 함수 실행 → tool_result 반환 → 최종 답변)을 도는 최소 실행 코드를 처음부터 끝까지 짜줘. 도구는 get_weather(city) 하나, 모델은 claude-opus-4-8, 주석으로 각 단계를 한국어로. 실행하면 바로 답이 나오게."
+      },
+      "tags": [
+        "tool-use",
+        "코드",
+        "뼈대"
+      ]
+    },
+    {
+      "id": "p21-debug",
+      "title": {
+        "ko": "내 코드 디버깅/리뷰"
+      },
+      "text": {
+        "ko": "Claude tool use 코드를 짰는데 최종 답변까지 안 가고 멈추거나 에러가 나. 아래 내 코드와 에러 메시지를 보고 무엇이 틀렸는지, 특히 tool_use_id 연결, assistant 메시지에 resp.content를 그대로 넣었는지, tool_result의 content 타입이 맞는지 짚어줘. 코드: [코드] 에러: [에러]"
+      },
+      "tags": [
+        "tool-use",
+        "디버깅",
+        "tool-use-id"
+      ]
+    },
+    {
+      "id": "p21-select",
+      "title": {
+        "ko": "도구 여러 개 선택 테스트"
+      },
+      "text": {
+        "ko": "내 tool 목록은 [도구1 설명], [도구2 설명]이야. 모델이 상황에 맞는 도구를 제대로 고르는지 확인하려면 어떤 테스트 질문 5개를 던져봐야 할까? 각 질문마다 기대되는 선택 도구와, 도구를 안 써도 되는 질문(순수 대화) 1개도 포함해줘."
+      },
+      "tags": [
+        "tool-use",
+        "테스트",
+        "도구 선택"
+      ]
+    }
+  ],
+  "mission": {
+    "ko": "✍️ 이제 당신 차례! 날씨 대신 \"환율 변환\" 도구로 똑같은 사이클을 만들어보세요. `convert(amount, from_currency, to_currency)` 함수와 스키마를 선언하고, \"100달러는 원화로 얼마야?\"에 대해 tool_use → 실행 → tool_result → 최종 답변까지 코드로 돌려보세요."
+  },
+  "rubric": [
+    {
+      "criterion": {
+        "ko": "description만 읽고도 이 도구가 언제 쓰이는지 낯선 사람이 알 수 있나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "두 번째 호출 messages에 사용자 질문·모델 원본 응답·tool_result 세 가지가 순서대로 들어갔나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "tool_result의 tool_use_id가 모델이 준 tool_use 블록 id와 한 글자도 안 틀리고 일치하나"
+      },
+      "max": 5
+    }
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "도구 호출",
+    "함수 호출",
+    "tool use",
+    "에이전트",
+    "AI 엔지니어링"
+  ],
+  "estimatedMinutes": 45,
+  "concepts": [
+    "tool-use",
+    "function-calling",
+    "tool-schema",
+    "tool-result",
+    "agent-cycle",
+    "tool-use-id"
+  ],
+  "source": {
+    "platform": "eduverse-ai.app",
+    "method": "authenticated-crawl"
+  }
+}
