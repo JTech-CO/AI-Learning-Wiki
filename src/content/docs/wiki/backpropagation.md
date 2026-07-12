@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">출력의 손실에서 각 파라미터의 기여도를 연쇄 법칙으로 계산하는 알고리즘이다.</p>
 
-<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

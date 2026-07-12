@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">텍스트를 자연스러운 음성 파형으로 변환하는 기술이다.</p>
 
-<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

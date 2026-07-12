@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">제한된 자원과 특정 환경에서 효율적으로 동작하도록 규모를 줄인 언어 모델이다.</p>
 
-<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

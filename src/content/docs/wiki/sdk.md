@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

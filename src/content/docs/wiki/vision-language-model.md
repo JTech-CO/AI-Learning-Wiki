@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">이미지와 텍스트의 관계를 학습해 이해와 생성을 수행하는 멀티모달 모델이다.</p>
 
-<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

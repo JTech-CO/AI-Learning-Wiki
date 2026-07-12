@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다.</p>
 
-<div class="wiki-document-meta">분류: [트랜스포머와 모델 구조](/category/transformer/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [트랜스포머와 모델 구조](/category/transformer/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

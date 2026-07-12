@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">목표를 바탕으로 상태를 관찰하고 도구를 선택해 여러 단계의 작업을 수행하는 시스템이다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

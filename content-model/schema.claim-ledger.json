@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-learning-wiki/schema/claim-ledger.json",
+  "title": "WikiSentenceClaimLedger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "generatedAt", "rulesSha256", "articles"],
+  "properties": {
+    "version": { "type": "string", "pattern": "^W4-" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "rulesSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "articles": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["articleId", "reviewedAt", "reviewer", "reviewNote", "articleBodySha256", "publicationReady", "sections"],
+        "properties": {
+          "articleId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "reviewedAt": { "type": "string", "format": "date" },
+          "reviewer": { "type": "string", "minLength": 3 },
+          "reviewNote": { "type": "string", "minLength": 20 },
+          "articleBodySha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "publicationReady": { "const": true },
+          "sections": {
+            "type": "array",
+            "minItems": 9,
+            "maxItems": 9,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["sectionId", "classification", "claims"],
+              "properties": {
+                "sectionId": { "type": "string" },
+                "classification": { "type": "string", "enum": ["source-supported", "provenance-note", "editorial-synthesis", "editorial-guidance"] },
+                "claims": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["claimId", "textSha256", "decision", "evidence"],
+                    "properties": {
+                      "claimId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+                      "textSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+                      "decision": { "const": "accepted" },
+                      "evidence": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": ["sourceRef", "locator"],
+                          "properties": {
+                            "sourceRef": { "type": "integer", "minimum": 1 },
+                            "locator": { "type": "string", "minLength": 8 }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">모델이 정해진 함수 스키마를 선택하고 인수를 생성해 외부 기능 실행을 요청하는 방식이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

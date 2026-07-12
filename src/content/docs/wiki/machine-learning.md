@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">명시적으로 모든 규칙을 작성하지 않고 데이터에서 패턴을 학습해 예측이나 결정을 수행하는 인공지능의 한 분야다.</p>
 
-<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

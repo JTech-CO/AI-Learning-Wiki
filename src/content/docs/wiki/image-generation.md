@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">텍스트나 다른 조건을 바탕으로 새로운 이미지를 합성하는 생성 과제다.</p>
 
-<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

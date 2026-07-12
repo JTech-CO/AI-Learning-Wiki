@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">한 번의 최적화 단계에서 파라미터를 얼마나 크게 변경할지 정하는 값이다.</p>
 
-<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

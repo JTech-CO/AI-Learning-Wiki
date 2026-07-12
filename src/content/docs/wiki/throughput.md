@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">단위 시간에 시스템이 처리하거나 생성할 수 있는 요청 또는 토큰 수다.</p>
 
-<div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

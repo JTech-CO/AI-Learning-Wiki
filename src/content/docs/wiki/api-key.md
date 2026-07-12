@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">API 요청의 프로젝트나 사용자를 식별하고 권한을 확인하는 비밀 문자열이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

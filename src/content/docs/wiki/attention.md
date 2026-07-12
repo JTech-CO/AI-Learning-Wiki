@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">현재 표현을 만들 때 입력의 각 부분에 서로 다른 중요도를 부여해 정보를 결합하는 연산이다.</p>
 
-<div class="wiki-document-meta">분류: [트랜스포머와 모델 구조](/category/transformer/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [트랜스포머와 모델 구조](/category/transformer/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

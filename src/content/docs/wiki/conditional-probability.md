@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">어떤 사건이 주어졌을 때 다른 사건이 발생할 확률이다.</p>
 
-<div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

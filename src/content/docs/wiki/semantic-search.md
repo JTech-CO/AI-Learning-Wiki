@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">문자열의 정확한 일치보다 질의와 문서의 의미 유사성을 이용하는 검색 방식이다.</p>
 
-<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

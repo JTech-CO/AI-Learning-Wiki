@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다.</p>
 
-<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">가중치와 활성값을 낮은 정밀도로 표현해 메모리와 계산 비용을 줄이는 기법이다.</p>
 
-<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

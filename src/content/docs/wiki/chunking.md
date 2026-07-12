@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">긴 문서를 검색과 문맥 구성에 적합한 작은 단위로 나누는 과정이다.</p>
 
-<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

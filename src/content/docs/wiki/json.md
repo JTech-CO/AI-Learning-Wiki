@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">키-값과 배열 구조로 데이터를 표현하는 경량 텍스트 형식이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">손실 함수의 기울기 반대 방향으로 파라미터를 반복 갱신하는 최적화 방법이다.</p>
 
-<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">누적 확률이 p에 도달하는 최소 후보 집합에서 다음 토큰을 선택하는 방법이다.</p>
 
-<div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

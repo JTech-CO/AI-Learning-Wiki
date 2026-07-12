@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">데이터 자체에서 학습 목표를 만들어 대규모 비표지 데이터로 표현을 익히는 방식이다.</p>
 
-<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

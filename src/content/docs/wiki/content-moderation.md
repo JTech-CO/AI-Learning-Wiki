@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">유해하거나 정책을 위반하는 콘텐츠를 탐지·분류·처리하는 과정이다.</p>
 
-<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

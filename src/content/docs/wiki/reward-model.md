@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">여러 모델 출력 중 사람의 선호에 가까운 출력을 점수화하도록 학습된 모델이다.</p>
 
-<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

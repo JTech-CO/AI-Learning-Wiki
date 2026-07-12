@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">학습 데이터의 분포를 바탕으로 텍스트·이미지·음성·코드 같은 새로운 결과물을 생성하는 인공지능이다.</p>
 
-<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

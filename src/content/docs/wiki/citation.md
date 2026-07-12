@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">주장이나 생성 결과가 근거로 삼은 자료의 위치와 출처를 표시하는 정보다.</p>
 
-<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

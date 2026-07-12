@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리와 위험을 관리하는 원칙이다.</p>
 
-<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

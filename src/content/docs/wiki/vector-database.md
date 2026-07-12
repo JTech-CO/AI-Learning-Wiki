@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">고차원 벡터와 메타데이터를 저장하고 유사도 검색을 제공하는 데이터 시스템이다.</p>
 
-<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

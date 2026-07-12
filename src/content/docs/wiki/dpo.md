@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">별도 강화학습 루프 없이 선호 응답과 비선호 응답으로 정책을 직접 최적화하는 방법이다.</p>
 
-<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

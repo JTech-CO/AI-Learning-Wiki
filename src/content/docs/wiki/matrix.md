@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다.</p>
 
-<div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

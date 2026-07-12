@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다.</p>
 
-<div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

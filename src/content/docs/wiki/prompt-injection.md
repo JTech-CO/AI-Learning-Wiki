@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">악의적 입력이 기존 지시를 무시하거나 비밀을 노출하도록 모델 행동을 조작하는 공격이다.</p>
 
-<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

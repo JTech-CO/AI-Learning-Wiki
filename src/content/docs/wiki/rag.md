@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.</p>
 
-<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

@@ -1,0 +1,175 @@
+{
+  "version": "W4-2026-07-13",
+  "reviewedAt": "2026-07-13",
+  "reviewer": "AI Learning Wiki W4 editorial audit",
+  "policy": {
+    "claimUnit": "Intl.Segmenter ko sentence",
+    "rawClaimTextStored": false,
+    "bodyHashLocked": true,
+    "publicationRequiresAllClaimsAccepted": true,
+    "sectionClassifications": {
+      "overview": "source-supported",
+      "scope": "provenance-note",
+      "mechanism": "source-supported",
+      "structure": "editorial-synthesis",
+      "applications": "editorial-synthesis",
+      "limitations": "source-supported",
+      "distinctions": "editorial-synthesis",
+      "worked-example": "editorial-guidance",
+      "practice": "editorial-guidance"
+    },
+    "evidenceSetBySection": {
+      "overview": "concept",
+      "scope": "provenance",
+      "mechanism": "concept",
+      "structure": "implementation",
+      "applications": "implementation",
+      "limitations": "limitations",
+      "distinctions": "concept",
+      "worked-example": "implementation",
+      "practice": "implementation"
+    }
+  },
+  "articles": [
+    {
+      "articleId": "reinforcement-learning",
+      "reviewNote": "일반 정의와 보상·정책 설명은 교재의 학습 체계와 DQN의 상태-행동-미래 보상 구현 범위를 함께 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Deep Learning Book, Chapters 1 and 5: learning systems and machine learning basics" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and terminology sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Abstract and method: Q-learning, policy learning, value function, future rewards" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Deep Learning Book, Chapters 5 and 11: generalization and practical methodology" }]
+      }
+    },
+    {
+      "articleId": "vector",
+      "reviewNote": "기하 벡터와 머신러닝 배열 표현을 구분하고 차원·인덱스·내적 조건을 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Chapter 2, §2.1 Scalars, Vectors, Matrices and Tensors; §2.2 matrix and vector multiplication" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and vector representation sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "numpy.ndarray definition, shape, ndim, dtype and indexing" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Chapter 2, §2.5 Norms and §2.8 Singular Value Decomposition" }]
+      }
+    },
+    {
+      "articleId": "neural-network",
+      "reviewNote": "층의 함수 합성, 활성화, 파라미터 학습과 구현 단위의 관계를 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Chapter 6, §§6.1–6.5: feedforward networks, gradient learning and hidden units" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and components sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "torch.nn Module, Containers, Linear and activation layers" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Chapter 6, architecture design and back-propagation sections" }]
+      }
+    },
+    {
+      "articleId": "transformer",
+      "reviewNote": "셀프 어텐션·멀티헤드 어텐션·위치 인코딩·인코더/디코더 구성을 원 논문과 구현 문서로 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract; §§3.1–3.5 Model Architecture and Attention" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, architecture and training sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Transformers documentation: model, tokenizer and pipeline interfaces" }],
+        "limitations": [{ "sourceRef": 1, "locator": "§3.2.1 Scaled Dot-Product Attention and §5 Training" }]
+      }
+    },
+    {
+      "articleId": "large-language-model",
+      "reviewNote": "자기회귀 언어 모델, 사전학습, 문맥 내 학습과 한계의 범위를 GPT-3 연구와 구현 문서에서 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract; §§2–3 Approach and Evaluation" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, data, capabilities and limitations sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Transformers documentation: pretrained models, generation and pipelines" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Abstract and §§6–7: limitations, broader impacts and memorization" }]
+      }
+    },
+    {
+      "articleId": "fine-tuning",
+      "reviewNote": "사전학습 모델의 파라미터 갱신, 지도 미세조정과 인간 피드백 절차를 구분했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract and §3 Methods: supervised fine-tuning and human feedback" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and deep-learning fine-tuning sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Fine-tuning guide: dataset preparation, Trainer and training arguments" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Abstract and §§4–5 Results and Discussion" }]
+      }
+    },
+    {
+      "articleId": "inference",
+      "reviewNote": "학습된 모델의 출력 계산과 LLM 서빙의 배칭·KV 캐시·지연/처리량 제약을 구분했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract and §2 Background: LLM serving and autoregressive generation" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Model assessments and deployment context" }],
+        "implementation": [{ "sourceRef": 3, "locator": "vLLM documentation: serving, engine arguments, batching and generation" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Abstract and §§3–6: KV-cache fragmentation, PagedAttention and evaluation" }]
+      }
+    },
+    {
+      "articleId": "rag",
+      "reviewNote": "검색기와 생성기의 결합, 비매개 기억과 외부 문서 근거, 검색 실패 전파를 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract and §§2–3 Methods: parametric and non-parametric memory" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, process and limitations sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "RAG model documentation: retriever, question encoder and generator" }],
+        "limitations": [{ "sourceRef": 1, "locator": "§§4–6 Experiments, results and limitations" }]
+      }
+    },
+    {
+      "articleId": "api",
+      "reviewNote": "API 일반 개념, HTTP 메시지 교환, OpenAPI 인터페이스 기술을 서로 다른 층으로 구분했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "MDN HTTP overview, messages, methods and status codes" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and API types sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "OpenAPI Specification §§2–4: interface description, paths, operations, parameters, requests and responses" }],
+        "limitations": [{ "sourceRef": 3, "locator": "OpenAPI Specification §2.2 and §6 Security Considerations" }]
+      }
+    },
+    {
+      "articleId": "mcp",
+      "reviewNote": "클라이언트-서버 구조, JSON-RPC 기반 메시지, 도구·리소스·프롬프트 기능과 보안 경계를 공식 명세에서 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 3, "locator": "Architecture and Base Protocol sections" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, architecture and protocol sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Client Features, Server Features, Tools, Resources and Prompts sections" }],
+        "limitations": [{ "sourceRef": 3, "locator": "Security Best Practices and authorization sections" }]
+      }
+    },
+    {
+      "articleId": "multimodal-model",
+      "reviewNote": "서로 다른 모달리티의 인코딩·공동 표현·대조 학습과 입력 템플릿을 구분했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract and §§2–3 Approach: image and text encoders with contrastive learning" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, representation and fusion sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Multimodal chat templates: image/video content blocks and processor interface" }],
+        "limitations": [{ "sourceRef": 1, "locator": "§§4–7 Experiments, analysis, limitations and broader impacts" }]
+      }
+    },
+    {
+      "articleId": "evaluation",
+      "reviewNote": "시나리오·지표·적응·효율을 함께 보는 평가와 고정 벤치마크의 역할을 구분했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract and §§2–4: scenarios, metrics and holistic evaluation taxonomy" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Model assessments section" }],
+        "implementation": [{ "sourceRef": 3, "locator": "MLCommons benchmark suites, rules and result pages" }],
+        "limitations": [{ "sourceRef": 1, "locator": "§§4–6: metric trade-offs, gaps and limitations" }]
+      }
+    },
+    {
+      "articleId": "ai-governance",
+      "reviewNote": "위험 관리 수명주기와 신뢰 가능한 AI 원칙을 조직의 책임·측정·대응 절차로 연결했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "AI RMF 1.0 overview and Core: GOVERN, MAP, MEASURE, MANAGE" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Regulatory approaches and governance scope sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "OECD AI Principles: lifecycle, accountability, transparency, robustness and safety" }],
+        "limitations": [{ "sourceRef": 1, "locator": "AI RMF Core and Playbook implementation guidance" }, { "sourceRef": 3, "locator": "Values-based principles and accountability" }]
+      }
+    },
+    {
+      "articleId": "model-license",
+      "reviewNote": "공개 접근과 실제 사용 권리를 구분하고 재배포·파생물·식별자·구성 요소별 조건을 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Open Source Definition introduction and criteria 1–10" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, grant and restriction sections" }],
+        "implementation": [{ "sourceRef": 3, "locator": "SPDX Specification scope, document creation information, packages and license expressions" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Criteria 1–10: redistribution, source, derived works and non-discrimination" }, { "sourceRef": 3, "locator": "SPDX license expressions and package/file relationships" }]
+      }
+    }
+  ]
+}

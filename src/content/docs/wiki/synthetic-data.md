@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">실제 수집 대신 규칙·시뮬레이션·생성 모델로 만든 데이터다.</p>
 
-<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">두 벡터 사이 각도의 코사인으로 방향의 유사성을 측정하는 값이다.</p>
 
-<div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

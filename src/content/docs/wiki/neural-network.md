@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">연결된 계산 단위와 가중치를 층으로 쌓아 복잡한 함수를 학습하는 모델이다.</p>
 
-<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">입력 신호가 출력에 미치는 상대적 크기를 조절하며 학습되는 파라미터다.</p>
 
-<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
 
 ## 개요와 핵심 정의
 
