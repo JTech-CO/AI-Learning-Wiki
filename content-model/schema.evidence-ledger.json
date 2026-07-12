@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-learning-wiki/schema/evidence-ledger.json",
+  "title": "WikiEvidenceLedger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "generatedAt", "topicCatalogSha256", "sourceRegistryVersion", "topics"],
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "topicCatalogSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "sourceRegistryVersion": { "type": "string", "minLength": 1 },
+    "topics": {
+      "type": "array",
+      "minItems": 1400,
+      "maxItems": 1400,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["topicId", "titleKo", "titleEn", "categoryId", "subarea", "tier", "state", "volatility", "researchPhase", "manualReviewRequired", "wikimedia", "discovery", "authoritativeAnchorIds", "evidenceTarget"],
+        "properties": {
+          "topicId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "titleKo": { "type": "string", "minLength": 1 },
+          "titleEn": { "type": "string", "minLength": 1 },
+          "categoryId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "subarea": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "tier": { "type": "string", "enum": ["core", "standard", "brief"] },
+          "state": { "type": "string", "enum": ["existing", "candidate"] },
+          "volatility": { "type": "string", "enum": ["evergreen", "periodic", "fast-changing"] },
+          "researchPhase": { "type": "string", "enum": ["existing-enrichment", "core-expansion", "standard-expansion", "brief-expansion"] },
+          "manualReviewRequired": { "type": "boolean" },
+          "wikimedia": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["ko", "en"],
+            "properties": {
+              "ko": { "$ref": "#/definitions/wikimediaReference" },
+              "en": { "$ref": "#/definitions/wikimediaReference" }
+            }
+          },
+          "discovery": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["wikipediaKo", "wikipediaEn", "wikidata", "arxiv", "crossref", "openalex"],
+            "properties": {
+              "wikipediaKo": { "type": "string", "format": "uri" },
+              "wikipediaEn": { "type": "string", "format": "uri" },
+              "wikidata": { "type": "string", "format": "uri" },
+              "arxiv": { "type": "string", "format": "uri" },
+              "crossref": { "type": "string", "format": "uri" },
+              "openalex": { "type": "string", "format": "uri" }
+            }
+          },
+          "authoritativeAnchorIds": {
+            "type": "array",
+            "minItems": 3,
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+          },
+          "evidenceTarget": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["independentFamilies", "primarySources", "encyclopediaFamilies", "requiredFunctions"],
+            "properties": {
+              "independentFamilies": { "type": "integer", "minimum": 3 },
+              "primarySources": { "type": "integer", "minimum": 1 },
+              "encyclopediaFamilies": { "type": "integer", "minimum": 1 },
+              "requiredFunctions": { "type": "array", "minItems": 5, "uniqueItems": true, "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "wikimediaReference": {
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["language", "queryTitle", "title", "pageId", "canonicalUrl", "revisionId", "revisionTimestamp", "wikibaseItem", "accessedAt"],
+          "properties": {
+            "language": { "type": "string", "enum": ["ko", "en"] },
+            "queryTitle": { "type": "string", "minLength": 1 },
+            "title": { "type": "string", "minLength": 1 },
+            "pageId": { "type": "integer", "minimum": 1 },
+            "canonicalUrl": { "type": "string", "format": "uri" },
+            "revisionId": { "type": ["integer", "null"] },
+            "revisionTimestamp": { "type": ["string", "null"], "format": "date-time" },
+            "wikibaseItem": { "type": ["string", "null"], "pattern": "^Q[0-9]+$" },
+            "accessedAt": { "type": "string", "format": "date-time" }
+          }
+        }
+      ]
+    }
+  }
+}

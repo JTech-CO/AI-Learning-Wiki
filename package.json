@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run wiki:taxonomy && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run sites:entry && npm run smoke && npm run links && npm run qa",
+    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run sites:entry && npm run smoke && npm run links && npm run qa",
     "gen": "node scripts/build-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -24,7 +24,10 @@
     "wiki:build": "node scripts/build-wiki.mjs && node scripts/build-wiki-specials.mjs",
     "wiki:test": "node scripts/test-wiki.mjs",
     "wiki:taxonomy": "node scripts/build-w0-taxonomy.mjs && node scripts/validate-w0-taxonomy.mjs",
-    "wiki:w0:validate": "node scripts/validate-w0-taxonomy.mjs"
+    "wiki:w0:validate": "node scripts/validate-w0-taxonomy.mjs",
+    "wiki:evidence": "node scripts/build-w1-evidence-ledger.mjs && node scripts/validate-w1-evidence.mjs",
+    "wiki:w1:collect": "node scripts/collect-w1-wikimedia.mjs && npm run wiki:evidence",
+    "wiki:w1:validate": "node scripts/validate-w1-evidence.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",
