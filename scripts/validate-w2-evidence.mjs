@@ -27,7 +27,7 @@ addFormats(ajv);
 const validate = ajv.compile(schema);
 if (!validate(packsFile)) errors.push(`evidence pack schema: ${ajv.errorsText(validate.errors)}`);
 if (packsFile.topicCatalogSha256 !== w0Summary.catalogSha256) errors.push('W2 topic catalog hash mismatch');
-if (!verification.policy.metadataOnly || verification.policy.storedProse || !verification.policy.reachabilityDoesNotProveRelevance) errors.push('W2 verification safety policy is invalid');
+if (!verification.policy.metadataOnly || verification.policy.storedProse || !verification.policy.reachabilityDoesNotProveRelevance || !verification.policy.incrementalChecks) errors.push('W2 verification safety policy is invalid');
 
 const expectedUrls = new Set();
 for (const article of articles) for (const source of article.sources) expectedUrls.add(source.url);
@@ -37,7 +37,7 @@ if (new Set(verificationUrls).size !== verificationUrls.length) errors.push('sou
 if (verificationUrls.length !== expectedUrls.size || verificationUrls.some((url) => !expectedUrls.has(url))) errors.push('source verification scope differs from article sources and registry anchors');
 for (const source of verification.sources) {
   if (!['reachable', 'restricted', 'unavailable'].includes(source.state)) errors.push(`${source.url}: invalid verification state`);
-  if (source.checkedAt !== verification.checkedAt) errors.push(`${source.url}: checkedAt differs from snapshot`);
+  if (!Number.isFinite(Date.parse(source.checkedAt)) || Date.parse(source.checkedAt) > Date.parse(verification.checkedAt)) errors.push(`${source.url}: invalid incremental checkedAt`);
 }
 const stateCount = (state) => verification.sources.filter((source) => source.state === state).length;
 if (verification.totals.uniqueUrls !== verification.sources.length || verification.totals.reachable !== stateCount('reachable') || verification.totals.restricted !== stateCount('restricted') || verification.totals.unavailable !== stateCount('unavailable')) errors.push('source verification totals are invalid');

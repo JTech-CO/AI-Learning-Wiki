@@ -83,7 +83,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [AI 에이전트](/wiki/ai-agent/)
 - [알고리즘](/wiki/algorithm/)
+- [체크포인트](/wiki/checkpoint/)
 - [데이터셋](/wiki/dataset/)
 - [학습 데이터](/wiki/training-data/)
 

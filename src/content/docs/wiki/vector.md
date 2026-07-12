@@ -100,6 +100,7 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [어텐션](/wiki/attention/)
 - [행렬](/wiki/matrix/)
 - [텐서](/wiki/tensor/)
 

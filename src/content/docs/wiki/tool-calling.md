@@ -81,6 +81,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [AI 에이전트](/wiki/ai-agent/)
+- [프롬프트 인젝션](/wiki/prompt-injection/)
 - [스트리밍 응답](/wiki/streaming-response/)
 - [구조화 출력](/wiki/structured-output/)
 

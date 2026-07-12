@@ -85,7 +85,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [체크포인트](/wiki/checkpoint/)
 - [지식 증류](/wiki/knowledge-distillation/)
 - [양자화](/wiki/quantization/)
 - [합성 데이터](/wiki/synthetic-data/)

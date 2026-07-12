@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">컴퓨터 시스템이 지각·추론·학습·행동과 같은 지능적 과제를 수행하도록 만드는 연구와 기술의 총칭이다.</p>
 
-<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
 ## 개요와 핵심 정의
 
@@ -16,11 +16,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ‘인공지능’ 개념은 AI·머신러닝 기초 영역에서 무엇을 계산하거나 통제하는지 설명하는 표제어다. 이름을 외우는 데서 멈추지 않고 입력, 변환 과정, 출력, 적용 조건을 분리해 보면 제품과 논문마다 다른 표현을 같은 원리 위에서 비교할 수 있다. 이 분야는 인공지능 시스템의 범위와 데이터에서 규칙을 학습하는 기본 관점을 다룬다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+
 ## 배경과 설명 범위
 
 영문 Wikipedia의 ‘Artificial intelligence’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
 이 문서에서 다루는 범위는 안정적인 개념과 구현 원리다. 최신 모델명·가격·한도처럼 자주 바뀌는 정보는 포함하지 않으며, 실제 사용 시점에는 연결된 공식 문서와 배포 환경의 버전을 다시 확인한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a></div>
 
 ## 작동 원리
 
@@ -28,11 +32,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 직접 요구되는 선행 문서는 없지만, 정의와 입력·출력 범위를 먼저 확인한다. 이 선행 관계를 기준으로 어느 단계에서 값이 만들어지고 다음 구성 요소로 어떻게 전달되는지 추적하면, 비슷한 용어를 기능 이름만으로 혼동하는 일을 줄일 수 있다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+
 ## 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘인공지능’ 개념만 독립적으로 동작하지 않는다. [머신러닝](/wiki/machine-learning/), [딥러닝](/wiki/deep-learning/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
 처리 흐름을 문서화할 때는 입력 형식, 파라미터와 기본값, 실패 조건, 출력 스키마, 관측 가능한 지표를 함께 적는다. 이렇게 해야 같은 이름을 쓰는 서로 다른 라이브러리와 서비스의 동작 차이를 재현 가능한 방식으로 비교할 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 활용 분야와 선택 기준
 
@@ -40,22 +48,30 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 선택 기준은 “널리 쓰인다”가 아니라 현재 데이터와 사용자의 실패 비용을 얼마나 줄이는가이다. 오프라인 실험, 작은 실제 트래픽, 배포 후 모니터링 순으로 증거를 쌓는 편이 안전하다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+
 ## 한계와 흔한 오해
 
 사람처럼 보이는 출력과 실제 이해·의식은 같은 개념이 아니며, 시스템의 능력은 과제·데이터·환경 범위 안에서 평가해야 한다.
 
 제품의 유창한 출력과 일반 지능을 동일시하지 않고 과제별 증거로 능력을 판단한다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
+
 ## 관련 개념과의 구분
 
 - [머신러닝](/wiki/machine-learning/): 명시적으로 모든 규칙을 작성하지 않고 데이터에서 패턴을 학습해 예측이나 결정을 수행하는 인공지능의 한 분야다.
 - [딥러닝](/wiki/deep-learning/): 여러 층의 신경망으로 데이터의 표현을 단계적으로 학습하는 머신러닝 방법이다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 구체적 적용 예시
 
 업무 문제를 AI 문제로 바꿀 때는 먼저 입력 자료, 원하는 판단이나 생성 결과, 사람이 확인할 실패 유형을 적는다. ‘인공지능’을 적용하는 경우에는 인공지능은 규칙 기반 추론, 탐색, 확률 모델, 머신러닝을 포함하는 넓은 분야이며 머신러닝은 그중 데이터에서 패턴을 학습하는 접근이다.
 
 규칙 기반 기준선과 학습 기반 접근을 같은 시험 자료에서 비교하고, 과제 범위를 벗어난 요청에는 어떤 동작을 할지도 정한다. 이때 [머신러닝](/wiki/machine-learning/), [딥러닝](/wiki/deep-learning/) 문서의 역할을 나란히 비교하면 서로 다른 단계의 설정을 한 원인처럼 해석하는 오류를 줄일 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 실무 적용과 검증 절차
 
@@ -66,6 +82,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **운영 검증:** 버전, 기본값, 데이터 시점과 평가 결과를 기록하고 변경 뒤 같은 시험을 반복한다.
 6. **판단 근거 보존:** 성공 사례만 남기지 말고 실패 입력과 원인 가설, 수정 전후 수치를 함께 저장한다. 그래야 담당자가 바뀌거나 모델이 교체되어도 ‘인공지능’에 대한 선택을 다시 검증할 수 있다.
 7. **재검토 조건 지정:** 데이터 분포, 모델 버전, 비용 구조 또는 정책이 바뀌면 이전 결론을 그대로 재사용하지 않고 같은 기준으로 다시 평가한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 학습 체크
 
@@ -95,8 +113,9 @@ _해당 문서가 없습니다._
 
 ## 참고 문헌
 
-1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
-2. [Artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence) — encyclopedia
+<span id="reference-1"></span>1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
+<span id="reference-2"></span>2. [Artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence) — encyclopedia
+<span id="reference-3"></span>3. [OECD AI Principles](https://oecd.ai/en/principles) — standard
 
 ## 코스에서 계속 읽기
 

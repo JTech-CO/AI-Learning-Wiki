@@ -88,7 +88,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [파라미터](/wiki/parameter/)
 - [소규모 언어 모델](/wiki/small-language-model/)
 - [토큰](/wiki/token/)
-- [토큰화](/wiki/tokenization/)
 
 ## 이 문서를 포함하는 코스
 

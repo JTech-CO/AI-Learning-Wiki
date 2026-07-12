@@ -87,7 +87,6 @@ p와 온도를 함께 조절하면 효과가 상호작용하므로 품질·다�
 
 ## 이 문서를 가리키는 문서
 
-- [빔 탐색](/wiki/beam-search/)
 - [그리디 디코딩](/wiki/greedy-decoding/)
 - [생성 온도](/wiki/temperature/)
 - [Top-k 샘플링](/wiki/top-k-sampling/)

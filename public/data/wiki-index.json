@@ -581,6 +581,7 @@
         "mixture-of-experts"
       ],
       "backlinks": [
+        "beam-search",
         "mixture-of-experts",
         "completion",
         "prompt"
@@ -645,7 +646,6 @@
       "backlinks": [
         "quantization",
         "knowledge-distillation",
-        "checkpoint",
         "synthetic-data"
       ],
       "courses": [],
@@ -702,7 +702,9 @@
       ],
       "backlinks": [
         "structured-output",
-        "streaming-response"
+        "streaming-response",
+        "prompt-injection",
+        "ai-agent"
       ],
       "courses": [
         "agent-systems",
@@ -1065,7 +1067,9 @@
       "backlinks": [
         "dataset",
         "algorithm",
-        "training-data"
+        "checkpoint",
+        "training-data",
+        "ai-agent"
       ],
       "courses": [
         "ai-foundations"
@@ -1349,6 +1353,7 @@
         "tensor"
       ],
       "backlinks": [
+        "attention",
         "tensor",
         "matrix"
       ],
@@ -1388,7 +1393,7 @@
       "courses": [
         "rag-search"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/vector-database/"
     },
     {
@@ -1481,7 +1486,7 @@
       "courses": [
         "multimodal-ai"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/vision-language-model/"
     },
     {
@@ -1526,7 +1531,7 @@
         "inference"
       ],
       "prerequisites": [
-        "top-p-sampling",
+        "next-token-prediction",
         "greedy-decoding"
       ],
       "related": [
@@ -1541,7 +1546,7 @@
         "top-p-sampling"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/beam-search/"
     },
     {
@@ -1954,7 +1959,8 @@
         "transformer"
       ],
       "prerequisites": [
-        "transformer"
+        "vector",
+        "matrix"
       ],
       "related": [
         "transformer",
@@ -1969,7 +1975,7 @@
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/attention/"
     },
     {
@@ -2159,11 +2165,13 @@
       "aliases": [
         "Open-Source Model"
       ],
-      "summary": "가중치·코드·학습 정보 중 일부를 공개 라이선스나 이용 조건과 함께 배포하는 모델이다.",
+      "summary": "사용·연구·수정·공유의 자유를 보장하고, 모델을 수정하는 데 필요한 코드·파라미터·데이터 정보를 제공하는 AI 모델 또는 시스템이다.",
       "categories": [
         "ecosystem"
       ],
-      "prerequisites": [],
+      "prerequisites": [
+        "model-license"
+      ],
       "related": [
         "model-license",
         "model-hub"
@@ -2173,7 +2181,7 @@
         "model-hub"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/open-source-model/"
     },
     {
@@ -2545,7 +2553,7 @@
       "courses": [
         "ai-foundations"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/artificial-intelligence/"
     },
     {
@@ -2868,7 +2876,7 @@
       "courses": [
         "responsible-ai"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/accuracy/"
     },
     {
@@ -3162,8 +3170,8 @@
         "training"
       ],
       "prerequisites": [
-        "data-augmentation",
-        "synthetic-data"
+        "model",
+        "optimization"
       ],
       "related": [
         "synthetic-data",
@@ -3175,7 +3183,7 @@
         "alignment"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/checkpoint/"
     },
     {
@@ -3232,6 +3240,7 @@
       "backlinks": [
         "gradient",
         "derivative",
+        "checkpoint",
         "cosine-similarity"
       ],
       "courses": [
@@ -3615,8 +3624,8 @@
         "llm"
       ],
       "prerequisites": [
-        "hyperparameter",
-        "token"
+        "token",
+        "vocabulary"
       ],
       "related": [
         "token",
@@ -3632,7 +3641,7 @@
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/tokenization/"
     },
     {
@@ -3844,7 +3853,8 @@
         "next-token-prediction",
         "byte-pair-encoding",
         "context-window",
-        "completion"
+        "completion",
+        "prompt-injection"
       ],
       "courses": [
         "ai-foundations"
@@ -3864,7 +3874,8 @@
         "safety"
       ],
       "prerequisites": [
-        "hallucination"
+        "prompt",
+        "tool-calling"
       ],
       "related": [
         "hallucination",
@@ -3880,7 +3891,7 @@
         "responsible-ai",
         "agent-systems"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/prompt-injection/"
     },
     {
@@ -3936,7 +3947,6 @@
       "backlinks": [
         "small-language-model",
         "token",
-        "tokenization",
         "parameter"
       ],
       "courses": [],
@@ -4058,13 +4068,14 @@
       ],
       "backlinks": [
         "vector",
+        "attention",
         "tensor",
         "probability"
       ],
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/matrix/"
     },
     {
@@ -4215,7 +4226,7 @@
         "bias"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/activation-function/"
     },
     {
@@ -4257,7 +4268,10 @@
       "categories": [
         "agents"
       ],
-      "prerequisites": [],
+      "prerequisites": [
+        "model",
+        "tool-calling"
+      ],
       "related": [
         "agent-loop",
         "planning"
@@ -4269,7 +4283,7 @@
       "courses": [
         "agent-systems"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/ai-agent/"
     },
     {
@@ -4525,7 +4539,7 @@
       "aliases": [
         "REST"
       ],
-      "summary": "HTTP 자원과 메서드를 중심으로 상태를 주고받도록 설계한 웹 API 방식이다.",
+      "summary": "REST의 제약과 균일한 인터페이스를 적용해 자원의 표현을 주고받도록 설계한 웹 API 방식이다.",
       "categories": [
         "api"
       ],
@@ -4545,7 +4559,7 @@
       "courses": [
         "api-development"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/rest-api/"
     },
     {
@@ -4637,7 +4651,6 @@
       ],
       "backlinks": [
         "greedy-decoding",
-        "beam-search",
         "temperature",
         "top-k-sampling"
       ],

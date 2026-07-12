@@ -83,6 +83,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [빔 탐색](/wiki/beam-search/)
 - [컴플리션](/wiki/completion/)
 - [전문가 혼합](/wiki/mixture-of-experts/)
 - [프롬프트](/wiki/prompt/)

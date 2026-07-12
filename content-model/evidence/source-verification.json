@@ -1,16 +1,17 @@
 {
   "version": "W2-2026-07-13",
-  "checkedAt": "2026-07-12T21:56:01.403Z",
+  "checkedAt": "2026-07-13T00:25:00.000Z",
   "policy": {
     "metadataOnly": true,
     "storedProse": false,
-    "reachabilityDoesNotProveRelevance": true
+    "reachabilityDoesNotProveRelevance": true,
+    "incrementalChecks": true
   },
   "totals": {
-    "uniqueUrls": 111,
-    "articleUrls": 93,
+    "uniqueUrls": 121,
+    "articleUrls": 103,
     "anchorUrls": 29,
-    "reachable": 111,
+    "reachable": 121,
     "restricted": 0,
     "unavailable": 0
   },
@@ -27,6 +28,21 @@
       "error": null,
       "articleIds": [
         "reinforcement-learning"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://arxiv.org/abs/1606.08415",
+      "finalUrl": "https://arxiv.org/abs/1606.08415",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:20:00.000Z",
+      "error": null,
+      "articleIds": [
+        "activation-function"
       ],
       "anchorIds": []
     },
@@ -343,6 +359,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html",
+      "finalUrl": "https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:20:00.000Z",
+      "error": null,
+      "articleIds": [
+        "checkpoint"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://docs.vllm.ai/en/stable/",
       "finalUrl": "https://docs.vllm.ai/en/stable/",
       "status": 200,
@@ -358,36 +389,6 @@
       "anchorIds": [
         "vllm-docs"
       ]
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/AI_agent",
-      "finalUrl": "https://en.wikipedia.org/wiki/AI_agent",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=UTF-8",
-      "etag": null,
-      "lastModified": "Sun, 12 Jul 2026 17:49:54 GMT",
-      "checkedAt": "2026-07-12T21:56:01.403Z",
-      "error": null,
-      "articleIds": [
-        "ai-agent"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/AI_alignment",
-      "finalUrl": "https://en.wikipedia.org/wiki/AI_alignment",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=UTF-8",
-      "etag": null,
-      "lastModified": "Sun, 12 Jul 2026 20:05:55 GMT",
-      "checkedAt": "2026-07-12T21:56:01.403Z",
-      "error": null,
-      "articleIds": [
-        "alignment"
-      ],
-      "anchorIds": []
     },
     {
       "url": "https://en.wikipedia.org/wiki/Accuracy_and_precision",
@@ -416,6 +417,36 @@
       "error": null,
       "articleIds": [
         "activation-function"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AI_agent",
+      "finalUrl": "https://en.wikipedia.org/wiki/AI_agent",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 17:49:54 GMT",
+      "checkedAt": "2026-07-12T21:56:01.403Z",
+      "error": null,
+      "articleIds": [
+        "ai-agent"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AI_alignment",
+      "finalUrl": "https://en.wikipedia.org/wiki/AI_alignment",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 20:05:55 GMT",
+      "checkedAt": "2026-07-12T21:56:01.403Z",
+      "error": null,
+      "articleIds": [
+        "alignment"
       ],
       "anchorIds": []
     },
@@ -507,6 +538,21 @@
       "error": null,
       "articleIds": [
         "backpropagation"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Beam_search",
+      "finalUrl": "https://en.wikipedia.org/wiki/Beam_search",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:25:00.000Z",
+      "error": null,
+      "articleIds": [
+        "beam-search"
       ],
       "anchorIds": []
     },
@@ -811,21 +857,6 @@
       "anchorIds": []
     },
     {
-      "url": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
-      "finalUrl": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=UTF-8",
-      "etag": null,
-      "lastModified": "Sun, 12 Jul 2026 20:05:59 GMT",
-      "checkedAt": "2026-07-12T21:56:01.403Z",
-      "error": null,
-      "articleIds": [
-        "llm-as-a-judge"
-      ],
-      "anchorIds": []
-    },
-    {
       "url": "https://en.wikipedia.org/wiki/Language_model",
       "finalUrl": "https://en.wikipedia.org/wiki/Language_model",
       "status": 200,
@@ -883,6 +914,21 @@
       "articleIds": [
         "tokenization",
         "tokenizer"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
+      "finalUrl": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 20:05:59 GMT",
+      "checkedAt": "2026-07-12T21:56:01.403Z",
+      "error": null,
+      "articleIds": [
+        "llm-as-a-judge"
       ],
       "anchorIds": []
     },
@@ -1023,6 +1069,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://en.wikipedia.org/wiki/Open-source_artificial_intelligence",
+      "finalUrl": "https://en.wikipedia.org/wiki/Open-source_artificial_intelligence",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:20:00.000Z",
+      "error": null,
+      "articleIds": [
+        "open-source-model"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Precision_and_recall",
       "finalUrl": "https://en.wikipedia.org/wiki/Precision_and_recall",
       "status": 200,
@@ -1109,6 +1170,21 @@
       "error": null,
       "articleIds": [
         "rlhf"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/REST",
+      "finalUrl": "https://en.wikipedia.org/wiki/REST",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:25:00.000Z",
+      "error": null,
+      "articleIds": [
+        "rest-api"
       ],
       "anchorIds": []
     },
@@ -1398,6 +1474,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://huggingface.co/docs/transformers/en/generation_strategies",
+      "finalUrl": "https://huggingface.co/docs/transformers/en/generation_strategies",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:20:00.000Z",
+      "error": null,
+      "articleIds": [
+        "beam-search"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://huggingface.co/docs/transformers/index",
       "finalUrl": "https://huggingface.co/docs/transformers/index",
       "status": 200,
@@ -1459,6 +1550,36 @@
       "anchorIds": [
         "huggingface-trl"
       ]
+    },
+    {
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+      "finalUrl": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:20:00.000Z",
+      "error": null,
+      "articleIds": [
+        "rest-api"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8_%EC%9D%B8%EC%A0%9D%EC%85%98",
+      "finalUrl": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8_%EC%9D%B8%EC%A0%9D%EC%85%98",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:25:00.000Z",
+      "error": null,
+      "articleIds": [
+        "prompt-injection"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://ko.wikipedia.org/wiki/%ED%99%98%EA%B0%81",
@@ -1555,6 +1676,21 @@
       ]
     },
     {
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.matmul.html",
+      "finalUrl": "https://numpy.org/doc/stable/reference/generated/numpy.matmul.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:20:00.000Z",
+      "error": null,
+      "articleIds": [
+        "matrix"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html",
       "finalUrl": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html",
       "status": 200,
@@ -1596,6 +1732,21 @@
       "error": null,
       "articleIds": [
         "ai-governance"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://opensource.org/ai/open-source-ai-definition",
+      "finalUrl": "https://opensource.org/ai/open-source-ai-definition",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:20:00.000Z",
+      "error": null,
+      "articleIds": [
+        "open-source-model"
       ],
       "anchorIds": []
     },

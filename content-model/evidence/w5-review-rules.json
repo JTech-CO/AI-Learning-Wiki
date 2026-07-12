@@ -1,0 +1,190 @@
+{
+  "version": "W5-2026-07-13",
+  "reviewedAt": "2026-07-13",
+  "reviewer": "AI Learning Wiki W5 category expansion audit",
+  "policy": {
+    "claimUnit": "Intl.Segmenter ko sentence",
+    "rawClaimTextStored": false,
+    "bodyHashLocked": true,
+    "publicationRequiresAllClaimsAccepted": true,
+    "minimumIndependentSourceFamilies": 3,
+    "sectionClassifications": {
+      "overview": "source-supported",
+      "scope": "provenance-note",
+      "mechanism": "source-supported",
+      "structure": "editorial-synthesis",
+      "applications": "editorial-synthesis",
+      "limitations": "source-supported",
+      "distinctions": "editorial-synthesis",
+      "worked-example": "editorial-guidance",
+      "practice": "editorial-guidance"
+    },
+    "evidenceSetBySection": {
+      "overview": "concept",
+      "scope": "provenance",
+      "mechanism": "concept",
+      "structure": "implementation",
+      "applications": "implementation",
+      "limitations": "limitations",
+      "distinctions": "concept",
+      "worked-example": "implementation",
+      "practice": "implementation"
+    }
+  },
+  "articles": [
+    {
+      "articleId": "artificial-intelligence",
+      "categoryId": "foundations",
+      "reviewNote": "AI의 넓은 범위와 머신러닝의 포함 관계를 교재, OECD 원칙, 백과 표제 범위로 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Chapters 1 and 5: AI and machine learning scope" }, { "sourceRef": 3, "locator": "AI system definition and lifecycle principles" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, goals, techniques and applications" }],
+        "implementation": [{ "sourceRef": 1, "locator": "Chapters 5 and 11: task definition, generalization and methodology" }, { "sourceRef": 3, "locator": "Human-centred values, robustness and accountability" }],
+        "limitations": [{ "sourceRef": 3, "locator": "Transparency, robustness, safety and accountability principles" }]
+      }
+    },
+    {
+      "articleId": "matrix",
+      "categoryId": "mathematics",
+      "reviewNote": "행렬 표현, 곱셈 차원 조건, 원소별 곱과의 차이를 교재와 NumPy 명세로 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Chapter 2 §§2.1–2.3: matrices and multiplication" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and matrix multiplication definition" }],
+        "implementation": [{ "sourceRef": 3, "locator": "numpy.matmul signature, shape rule and broadcasting notes" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Chapter 2: dimension and linear transformation conditions" }, { "sourceRef": 3, "locator": "ValueError conditions and difference from element-wise multiplication" }]
+      }
+    },
+    {
+      "articleId": "activation-function",
+      "categoryId": "neural",
+      "reviewNote": "비선형성의 역할과 ReLU·시그모이드·GELU의 출력 및 기울기 차이를 교재, 원 논문, 구현 문서로 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Chapter 6 §§6.3–6.5: hidden units and nonlinear activation" }, { "sourceRef": 3, "locator": "Abstract and definition of GELU" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and comparison of activation functions" }],
+        "implementation": [{ "sourceRef": 4, "locator": "torch.nn activation modules: ReLU, GELU, Sigmoid and Tanh" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Chapter 6: saturation and optimization considerations" }, { "sourceRef": 3, "locator": "GELU formulation and empirical comparison" }]
+      }
+    },
+    {
+      "articleId": "attention",
+      "categoryId": "transformer",
+      "reviewNote": "질의·키·값 가중합, 마스킹, 다중 헤드와 긴 시퀀스 비용을 원 논문과 구현 문서에서 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "§3.2 Attention and scaled dot-product attention" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, mechanism and variants" }],
+        "implementation": [{ "sourceRef": 1, "locator": "§§3.2–3.5 multi-head attention and architecture" }, { "sourceRef": 3, "locator": "torch.nn.MultiheadAttention interface" }],
+        "limitations": [{ "sourceRef": 1, "locator": "§3.2.1 computation and sequence-length characteristics" }]
+      }
+    },
+    {
+      "articleId": "tokenization",
+      "categoryId": "llm",
+      "reviewNote": "문자열 정규화, 사전 분할, 서브워드 모델, ID 매핑과 특수 토큰 처리를 연구·구현 문서로 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "§2.3 Dataset and tokenization context" }, { "sourceRef": 3, "locator": "Tokenizer pipeline overview" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lexical analysis lead and tokenization scope" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Normalizer, PreTokenizer, Model, PostProcessor and Decoder" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Token accounting and context limitations" }, { "sourceRef": 3, "locator": "Unicode normalization, special tokens, truncation and padding" }]
+      }
+    },
+    {
+      "articleId": "checkpoint",
+      "categoryId": "training",
+      "reviewNote": "가중치 전용 저장과 학습 재개용 상태 묶음을 구분하고 모델·옵티마이저 상태 복원 조건을 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 3, "locator": "Saving and loading a general checkpoint" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Checkpointing lead and computer applications" }],
+        "implementation": [{ "sourceRef": 3, "locator": "state_dict, optimizer state, epoch, loss and train/eval mode" }],
+        "limitations": [{ "sourceRef": 3, "locator": "Serialization format, class binding, device and mode warnings" }]
+      }
+    },
+    {
+      "articleId": "beam-search",
+      "categoryId": "inference",
+      "reviewNote": "후보 유지·확장·가지치기와 빔 폭·길이 편향·메모리 비용을 생성 전략 문서와 서빙 연구에서 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 3, "locator": "Beam search generation strategy and num_beams" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and algorithm description" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Beam search, diverse beam search and generation configuration" }],
+        "limitations": [{ "sourceRef": 1, "locator": "PagedAttention discussion of beam-search memory sharing" }, { "sourceRef": 3, "locator": "Beam pruning, diversity and task suitability" }]
+      }
+    },
+    {
+      "articleId": "vector-database",
+      "categoryId": "retrieval",
+      "reviewNote": "고차원 벡터 저장·인덱싱·유사도 검색과 RAG에서의 검색 역할을 연구와 Faiss 문서로 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "§§2–3 non-parametric memory and dense retrieval" }, { "sourceRef": 3, "locator": "Faiss similarity search and vector indexes" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, features and use cases" }],
+        "implementation": [{ "sourceRef": 3, "locator": "Index construction, search, training and GPU support" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Retrieval quality and downstream generation limitations" }, { "sourceRef": 3, "locator": "Index choice, memory and approximate-search trade-offs" }]
+      }
+    },
+    {
+      "articleId": "rest-api",
+      "categoryId": "api",
+      "reviewNote": "REST 제약과 HTTP 구현 관행을 분리하고 균일한 인터페이스·무상태성·캐시·계층 구조를 원문에서 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 4, "locator": "Chapter 5 §§5.1–5.3 REST derivation, elements and constraints" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, history and architectural constraints" }],
+        "implementation": [{ "sourceRef": 1, "locator": "HTTP methods, messages, status and caching" }, { "sourceRef": 3, "locator": "HTTP semantics for methods, representations and status codes" }, { "sourceRef": 4, "locator": "Uniform interface and resource representations" }],
+        "limitations": [{ "sourceRef": 3, "locator": "HTTP semantics and security considerations" }, { "sourceRef": 4, "locator": "§5.5 induced properties and constraint trade-offs" }]
+      }
+    },
+    {
+      "articleId": "ai-agent",
+      "categoryId": "agents",
+      "reviewNote": "목표·관찰·행동·도구 사용 루프와 권한 경계를 ReAct, MCP 명세, NIST 위험 관리 절차로 대조했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract and method: interleaved reasoning and acting" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and generative-AI agent scope" }],
+        "implementation": [{ "sourceRef": 1, "locator": "Reasoning traces, actions and environment observations" }, { "sourceRef": 3, "locator": "Architecture, tools, resources and prompts" }],
+        "limitations": [{ "sourceRef": 4, "locator": "AI RMF Core: GOVERN, MAP, MEASURE and MANAGE" }]
+      }
+    },
+    {
+      "articleId": "vision-language-model",
+      "categoryId": "multimodal",
+      "reviewNote": "이미지·텍스트 표현 정렬, 대조 학습, 멀티모달 입력 블록과 한계를 CLIP 및 구현 문서로 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 1, "locator": "Abstract and §§2–3 natural-language supervision and contrastive learning" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, architecture and training" }],
+        "implementation": [{ "sourceRef": 1, "locator": "Image encoder, text encoder and shared representation" }, { "sourceRef": 3, "locator": "Multimodal content blocks, Processor and image-text pipeline" }],
+        "limitations": [{ "sourceRef": 1, "locator": "§§4–7 experiments, limitations and broader impacts" }, { "sourceRef": 3, "locator": "Input formatting and processor constraints" }]
+      }
+    },
+    {
+      "articleId": "accuracy",
+      "categoryId": "evaluation",
+      "reviewNote": "정확도 공식, 임계값과 클래스 불균형의 영향을 HELM과 Google 평가 문서에서 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 3, "locator": "Accuracy definition and classification metrics" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead and statistical distinction" }],
+        "implementation": [{ "sourceRef": 1, "locator": "§§2–4 scenarios, metrics and holistic evaluation" }, { "sourceRef": 3, "locator": "TP, TN, FP, FN formula and threshold" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Metric trade-offs and scenario coverage" }, { "sourceRef": 3, "locator": "Class imbalance and precision/recall alternatives" }]
+      }
+    },
+    {
+      "articleId": "prompt-injection",
+      "categoryId": "safety",
+      "reviewNote": "직접·간접 프롬프트 인젝션, 지시와 데이터의 혼동, 최소 권한과 사람 승인을 OWASP와 NIST 기준으로 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 2, "locator": "OWASP LLM01 Prompt Injection definition and attack types" }],
+        "provenance": [{ "sourceRef": 3, "locator": "Lead, examples, history and direct/indirect types" }],
+        "implementation": [{ "sourceRef": 2, "locator": "LLM01 attack scenarios and mitigation guidance" }, { "sourceRef": 1, "locator": "AI RMF Core risk identification and controls" }],
+        "limitations": [{ "sourceRef": 1, "locator": "GOVERN, MAP, MEASURE and MANAGE lifecycle controls" }, { "sourceRef": 2, "locator": "Limits of RAG, fine-tuning and filtering as mitigations" }]
+      }
+    },
+    {
+      "articleId": "open-source-model",
+      "categoryId": "ecosystem",
+      "reviewNote": "오픈소스 AI와 오픈웨이트를 구분하고 코드·파라미터·데이터 정보·라이선스 표현 요건을 OSI와 SPDX에서 확인했다.",
+      "evidenceSets": {
+        "concept": [{ "sourceRef": 2, "locator": "Open Source AI Definition 1.0: freedoms and preferred form for modification" }],
+        "provenance": [{ "sourceRef": 4, "locator": "Lead, open models, licensing and definition debate" }],
+        "implementation": [{ "sourceRef": 2, "locator": "Code, parameters and data information requirements" }, { "sourceRef": 3, "locator": "SPDX packages, files and license expressions" }],
+        "limitations": [{ "sourceRef": 1, "locator": "Open Source Definition criteria 1–10" }, { "sourceRef": 2, "locator": "Open-source models and open-source weights distinction" }, { "sourceRef": 3, "locator": "Declared and concluded licenses and compound expressions" }]
+      }
+    }
+  ]
+}

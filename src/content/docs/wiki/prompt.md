@@ -89,6 +89,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [컴플리션](/wiki/completion/)
 - [컨텍스트 윈도우](/wiki/context-window/)
 - [다음 토큰 예측](/wiki/next-token-prediction/)
+- [프롬프트 인젝션](/wiki/prompt-injection/)
 
 ## 이 문서를 포함하는 코스
 

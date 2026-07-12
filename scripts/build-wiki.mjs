@@ -8,8 +8,11 @@ const articleFiles = (await readdir('content-model/articles')).filter((file) => 
 const pathFiles = (await readdir('content-model/paths')).filter((file) => file.endsWith('.path.json'));
 const articles = (await Promise.all(articleFiles.map((file) => readJson(path.join('content-model/articles', file))))).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
 const courses = (await Promise.all(pathFiles.map((file) => readJson(path.join('content-model/paths', file))))).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
-const w4Ledger = await readJson('content-model/evidence/w4-claim-ledger.json');
-const publicationReady = new Set(w4Ledger.articles.filter((article) => article.publicationReady).map((article) => article.articleId));
+const [w4Ledger, w5Ledger] = await Promise.all([
+  readJson('content-model/evidence/w4-claim-ledger.json'),
+  readJson('content-model/evidence/w5-claim-ledger.json')
+]);
+const publicationReady = new Set([...w4Ledger.articles, ...w5Ledger.articles].filter((article) => article.publicationReady).map((article) => article.articleId));
 const byId = new Map(articles.map((article) => [article.id, article]));
 const backlinks = new Map(articles.map((article) => [article.id, []]));
 const courseMap = new Map(articles.map((article) => [article.id, []]));
