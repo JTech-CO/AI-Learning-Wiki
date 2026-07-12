@@ -12,5 +12,9 @@ description: "'Agent' 개념을 다루는 모듈"
 - [멀티 에이전트 오케스트레이션 — 여러 AI 협업](/courses/ai-engineer/40-agent-multi-orchestration/) <sub>(AI 엔지니어)</sub>
 - [에이전트 평가·관측 — eval·트레이싱·디버깅](/courses/ai-engineer/43-agent-eval-observability/) <sub>(AI 엔지니어)</sub>
 - [AI 에이전트 워크플로 구축](/courses/ai-finance/46-ai-agent-workflow/) <sub>(AI 금융)</sub>
+- [⚙️ AI 코딩 에이전트 도구 비교·선택 — Cursor·Windsurf·Claude Code 실전 워크플로](/courses/ai-trends/05-agentic-coding-tools/) <sub>(AI 트렌드)</sub>
+- [🎬 AI 영상·음성 에이전트 — Veo 3·Seedance·실시간 음성 파이프라인](/courses/ai-trends/07-video-voice-agents/) <sub>(AI 트렌드)</sub>
 - [헤르메스 — 자가성장 AI 에이전트 (MCP·메모리·자율루프)](/courses/ai-trends/09-hermes-self-improving-agent/) <sub>(AI 트렌드)</sub>
+- [🕸️ 에이전트 RAG·그래프 RAG — GraphRAG·LightRAG로 복잡 질문 정복](/courses/ai-trends/11-agentic-graph-rag/) <sub>(AI 트렌드)</sub>
 - [Deep Research로 인용 리포트 자동 생성·검수](/courses/ai-work/39-deep-research-report/) <sub>(AI 실무)</sub>
+- [AI 에이전트 — 도구 쓰는 자동화](/courses/automation/37-ai-agents-tools/) <sub>(자동화 개발)</sub>

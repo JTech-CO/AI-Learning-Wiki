@@ -201,11 +201,8 @@ canva.com 가입(무료). 검색창에 '전자책' 또는 'ebook' 입력 → 왕
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Sell](/concepts/sell/)
-- [Digital](/concepts/digital/)
-- [Product](/concepts/product/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

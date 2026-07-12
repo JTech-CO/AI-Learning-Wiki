@@ -251,8 +251,6 @@ Final Answer: (최종 답)
 ## 관련 개념
 
 - [Agent](/concepts/agent/)
-- [Loop](/concepts/loop/)
-- [Basics](/concepts/basics/)
 
 
 ---

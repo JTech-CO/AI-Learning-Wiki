@@ -222,9 +222,7 @@ AI에게 'EUR 500, PayPal vs Wise 실수령액 원화 비교표 만들어줘, �
 
 ## 관련 개념
 
-- [Cross](/concepts/cross/)
-- [Border](/concepts/border/)
-- [Payout](/concepts/payout/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

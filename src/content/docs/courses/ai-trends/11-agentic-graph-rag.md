@@ -218,9 +218,8 @@ graphrag query --root ./ --method global --query "[여러 문서를 아우르는
 
 ## 관련 개념
 
-- [Agentic](/concepts/agentic/)
-- [Graph](/concepts/graph/)
 - [Rag](/concepts/rag/)
+- [Agent](/concepts/agent/)
 
 
 ---

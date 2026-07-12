@@ -245,8 +245,7 @@ VS Code의 정규식 찾기·바꾸기(Ctrl+H)를 쓸 거야.
 
 ## 관련 개념
 
-- [Regex](/concepts/regex/)
-- [Text](/concepts/text/)
+- [Automation](/concepts/automation/)
 
 
 ---

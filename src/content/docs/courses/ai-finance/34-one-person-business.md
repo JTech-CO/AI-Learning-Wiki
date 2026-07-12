@@ -182,11 +182,7 @@ AI는 글쓰기·응대문구·정리 같은 반복 업무를 수백만 건 학�
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [One](/concepts/one/)
-- [Person](/concepts/person/)
-- [Business](/concepts/business/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

@@ -219,9 +219,9 @@ if(n%100===0) console.log('진행 ' + n + '건, 누적 ' + spent.toFixed(2) + ' 
 
 ## 관련 개념
 
-- [Cost](/concepts/cost/)
-- [Rate](/concepts/rate/)
-- [Guards](/concepts/guards/)
+- [Automation](/concepts/automation/)
+- [Security](/concepts/security/)
+- [Cost Control](/concepts/cost-control/)
 
 
 ---

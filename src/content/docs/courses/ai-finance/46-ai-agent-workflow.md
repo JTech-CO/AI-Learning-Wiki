@@ -235,7 +235,8 @@ LLM 출력이 JSON이 아닐 때를 대비해 '파싱 실패 시 [검토필요] 
 ## 관련 개념
 
 - [Agent](/concepts/agent/)
-- [Workflow](/concepts/workflow/)
+- [Automation](/concepts/automation/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

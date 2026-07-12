@@ -188,10 +188,7 @@ AI는 수억 개의 글을 학습해서, 주제만 던지면 초안·제목·키
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Content](/concepts/content/)
-- [Creator](/concepts/creator/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

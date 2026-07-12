@@ -264,11 +264,7 @@ ChatGPT가 "한도 도달" 뜨면 → 지금까지 답을 메모장에 복사 �
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Coding](/concepts/coding/)
 - [Agent](/concepts/agent/)
-- [Multi](/concepts/multi/)
-- [Orchestration](/concepts/orchestration/)
 
 
 ---

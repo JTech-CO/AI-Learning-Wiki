@@ -149,9 +149,7 @@ epoch 1 loss 1.84 → epoch 3 loss 0.62, 학습 시간 42분 (RTX 4090 1장)
 
 ## 관련 개념
 
-- [Finetune](/concepts/finetune/)
-- [Lora](/concepts/lora/)
-- [Distill](/concepts/distill/)
+- [Fine Tuning](/concepts/fine-tuning/)
 
 
 ---

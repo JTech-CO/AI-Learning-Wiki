@@ -209,7 +209,6 @@ AI 제안 중 내 상황에 맞는 트리거 하나를 고른다. 크게 두 종
 ## 관련 개념
 
 - [Automation](/concepts/automation/)
-- [Mindset](/concepts/mindset/)
 
 
 ---

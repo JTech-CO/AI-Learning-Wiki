@@ -233,8 +233,8 @@ DB_PASSWORD=여기에_DB_비밀번호_입력
 
 ## 관련 개념
 
-- [Secrets](/concepts/secrets/)
-- [Config](/concepts/config/)
+- [Automation](/concepts/automation/)
+- [Security](/concepts/security/)
 
 
 ---

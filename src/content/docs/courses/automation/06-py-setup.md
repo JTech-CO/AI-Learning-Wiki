@@ -229,7 +229,8 @@ me.py 내용:\nname = "지민"\nprint("안녕, " + name + "! 파이썬 시작이
 
 ## 관련 개념
 
-- [Setup](/concepts/setup/)
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
 
 
 ---

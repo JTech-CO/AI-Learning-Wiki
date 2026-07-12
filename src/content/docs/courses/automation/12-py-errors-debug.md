@@ -226,8 +226,8 @@ NameError 고쳤더니 이제 TypeError가 뜸 → 이건 실패가 아니라 �
 
 ## 관련 개념
 
-- [Errors](/concepts/errors/)
-- [Debug](/concepts/debug/)
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
 
 
 ---

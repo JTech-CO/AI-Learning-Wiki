@@ -221,8 +221,8 @@ OpenAI(또는 Anthropic) function calling으로 도구를 호출하고, 결과�
 
 ## 관련 개념
 
-- [Agents](/concepts/agents/)
-- [Tools](/concepts/tools/)
+- [Agent](/concepts/agent/)
+- [Automation](/concepts/automation/)
 
 
 ---

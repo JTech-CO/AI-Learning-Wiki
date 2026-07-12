@@ -248,11 +248,9 @@ AI 답: [Output 붙여넣기]
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Verification](/concepts/verification/)
 - [Agent](/concepts/agent/)
-- [Eval](/concepts/eval/)
 - [Observability](/concepts/observability/)
+- [Evaluation](/concepts/evaluation/)
 
 
 ---

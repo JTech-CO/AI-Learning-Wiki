@@ -236,8 +236,8 @@ top_k=15 검색 → rerank 후 top4 → precision 0.5→0.8, 환각률 25%→8%.
 ## 관련 개념
 
 - [Rag](/concepts/rag/)
-- [Eval](/concepts/eval/)
-- [Retrieval](/concepts/retrieval/)
+- [Evaluation](/concepts/evaluation/)
+- [Research](/concepts/research/)
 
 
 ---

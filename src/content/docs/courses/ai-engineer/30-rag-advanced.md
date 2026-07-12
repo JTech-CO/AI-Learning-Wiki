@@ -273,10 +273,8 @@ for r in resp.results:
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Data](/concepts/data/)
 - [Rag](/concepts/rag/)
-- [Advanced](/concepts/advanced/)
+- [Data](/concepts/data/)
 
 
 ---

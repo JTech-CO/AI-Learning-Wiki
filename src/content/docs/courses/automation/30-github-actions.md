@@ -219,8 +219,8 @@ GitHub Actions 워크플로에서 이전 스텝이 실패했을 때만 Slack으�
 
 ## 관련 개념
 
-- [Github](/concepts/github/)
-- [Actions](/concepts/actions/)
+- [Automation](/concepts/automation/)
+- [Git](/concepts/git/)
 
 
 ---

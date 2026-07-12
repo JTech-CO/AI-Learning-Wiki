@@ -225,8 +225,8 @@ https://discord.com/api/webhooks/12345/abcde
 
 ## 관련 개념
 
-- [Bot](/concepts/bot/)
-- [Webhooks](/concepts/webhooks/)
+- [Webhook](/concepts/webhook/)
+- [Automation](/concepts/automation/)
 
 
 ---

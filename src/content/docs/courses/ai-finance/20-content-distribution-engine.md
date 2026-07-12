@@ -232,9 +232,7 @@ AI는 이미 수억 개의 글·영상 스크립트 패턴을 학습해서, 같�
 
 ## 관련 개념
 
-- [Content](/concepts/content/)
-- [Distribution](/concepts/distribution/)
-- [Engine](/concepts/engine/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

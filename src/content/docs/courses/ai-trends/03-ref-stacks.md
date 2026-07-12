@@ -215,10 +215,7 @@ AI 도구는 각자 학습한 데이터와 설계 목적이 다릅니다. Perple
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Reference](/concepts/reference/)
-- [Ref](/concepts/ref/)
-- [Stacks](/concepts/stacks/)
+- [Ai Trends](/concepts/ai-trends/)
 
 
 ---

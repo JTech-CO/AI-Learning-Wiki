@@ -219,8 +219,7 @@ AI: "음… 그래도 옆 데가 더 싸던데요?" → 나: "맞아요, 가격�
 
 ## 관련 개념
 
-- [Objection](/concepts/objection/)
-- [Handling](/concepts/handling/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

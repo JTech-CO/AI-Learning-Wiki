@@ -214,11 +214,8 @@ chatgpt.com이나 claude.ai에 아래 '한 장 제안서' 프롬프트를 붙여
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Proposal](/concepts/proposal/)
-- [And](/concepts/and/)
-- [Closing](/concepts/closing/)
+- [Monetization](/concepts/monetization/)
+- [Freelancing](/concepts/freelancing/)
 
 
 ---

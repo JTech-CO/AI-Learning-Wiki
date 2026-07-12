@@ -238,10 +238,7 @@ AI가 쓴 환불 안내 메일에 '환불 계좌: 123-456'처럼 엉뚱한 가�
 
 ## 관련 개념
 
-- [Verification](/concepts/verification/)
-- [Ethics](/concepts/ethics/)
 - [Security](/concepts/security/)
-- [Defense](/concepts/defense/)
 
 
 ---

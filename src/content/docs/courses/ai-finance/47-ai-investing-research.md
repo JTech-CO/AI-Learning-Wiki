@@ -190,10 +190,7 @@ AI: '작년 매출 약 X조'라고 하면 → DART 사업보고서에서 실제 
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Verification](/concepts/verification/)
-- [Investing](/concepts/investing/)
+- [Monetization](/concepts/monetization/)
 - [Research](/concepts/research/)
 
 

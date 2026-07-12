@@ -233,8 +233,6 @@ rule: '중요 사실 5개까지만 유지, 90일 이상 안 쓴 사실은 archiv
 ## 관련 개념
 
 - [Agent](/concepts/agent/)
-- [Memory](/concepts/memory/)
-- [State](/concepts/state/)
 
 
 ---

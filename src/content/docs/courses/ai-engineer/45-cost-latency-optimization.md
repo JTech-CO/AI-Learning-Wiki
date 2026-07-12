@@ -224,9 +224,7 @@ GPT-4o-mini로 같은 20개 리뷰 분류 → 20개 전부 정답 일치, 응답
 
 ## 관련 개념
 
-- [Cost](/concepts/cost/)
-- [Latency](/concepts/latency/)
-- [Optimization](/concepts/optimization/)
+- [Cost Control](/concepts/cost-control/)
 
 
 ---

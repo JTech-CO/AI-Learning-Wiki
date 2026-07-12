@@ -219,9 +219,7 @@ AI에게 내 기술·시간·자본 조건을 주고, 기존 소득과 '동시�
 
 ## 관련 개념
 
-- [Diversify](/concepts/diversify/)
-- [Income](/concepts/income/)
-- [Streams](/concepts/streams/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

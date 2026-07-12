@@ -229,8 +229,7 @@ print(data['[꺼내고 싶은 이름표]'])
 
 ## 관련 개념
 
-- [Http](/concepts/http/)
-- [Requests](/concepts/requests/)
+- [Automation](/concepts/automation/)
 
 
 ---

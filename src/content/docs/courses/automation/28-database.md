@@ -224,6 +224,8 @@ Table Editor → New table → 이름 books → 열 추가: title(text), author(
 ## 관련 개념
 
 - [Database](/concepts/database/)
+- [Automation](/concepts/automation/)
+- [Data](/concepts/data/)
 
 
 ---

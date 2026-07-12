@@ -223,8 +223,7 @@ python-telegram-bot 최신 버전(v20 이상, async 방식) 기준으로, 초보
 
 ## 관련 개념
 
-- [Bot](/concepts/bot/)
-- [Telegram](/concepts/telegram/)
+- [Automation](/concepts/automation/)
 
 
 ---

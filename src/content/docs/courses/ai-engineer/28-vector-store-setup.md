@@ -219,9 +219,7 @@ docs = ["동아리 가입은 매 학기 초 2주간 신청받습니다.", "회�
 
 ## 관련 개념
 
-- [Vector](/concepts/vector/)
-- [Store](/concepts/store/)
-- [Setup](/concepts/setup/)
+- [Vector Search](/concepts/vector-search/)
 
 
 ---

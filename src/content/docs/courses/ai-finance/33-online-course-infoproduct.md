@@ -219,11 +219,8 @@ chatgpt.com이나 claude.ai에 아래 '커리큘럼' 프롬프트를 붙여 결�
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Online](/concepts/online/)
-- [Course](/concepts/course/)
-- [Infoproduct](/concepts/infoproduct/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

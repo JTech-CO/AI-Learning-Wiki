@@ -249,8 +249,7 @@ v1 결과: 20케이스 평균 72점, 통과 13/20. 최저=케이스07(45점, 톤
 ## 관련 개념
 
 - [Prompt](/concepts/prompt/)
-- [Eval](/concepts/eval/)
-- [Harness](/concepts/harness/)
+- [Evaluation](/concepts/evaluation/)
 
 
 ---

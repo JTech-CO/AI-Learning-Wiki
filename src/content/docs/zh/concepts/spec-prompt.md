@@ -1,7 +1,0 @@
----
-title: "Spec Prompt"
-description: "'Spec Prompt' 개념을 다루는 모듈"
----
-이 개념을 다루는 모듈:
-
-- [요구사항을 프롬프트로 명세하기](/zh/courses/ai-builder/03-requirements-spec/) <sub>(AI 빌더)</sub>

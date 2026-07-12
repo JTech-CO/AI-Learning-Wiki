@@ -189,11 +189,8 @@ AI 단계: 문의 메일을 AI가 분류 → 환불 건만 나에게 알림 / �
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Automate](/concepts/automate/)
-- [Income](/concepts/income/)
-- [Pipeline](/concepts/pipeline/)
+- [Automation](/concepts/automation/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

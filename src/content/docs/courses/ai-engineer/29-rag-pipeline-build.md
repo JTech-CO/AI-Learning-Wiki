@@ -220,8 +220,7 @@ q2='에듀버스 창업자 나이는?' → 상위 조각에 나이 정보 없음
 ## 관련 개념
 
 - [Rag](/concepts/rag/)
-- [Pipeline](/concepts/pipeline/)
-- [Build](/concepts/build/)
+- [Automation](/concepts/automation/)
 
 
 ---

@@ -214,8 +214,9 @@ products = [{'이름':'우유', '가격':2500, '재고':3}, {'이름':'빵', '�
 
 ## 관련 개념
 
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
 - [Data](/concepts/data/)
-- [Structures](/concepts/structures/)
 
 
 ---

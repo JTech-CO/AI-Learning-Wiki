@@ -220,11 +220,7 @@ chatgpt.com이나 claude.ai에 아래 '월간 리포트' 프롬프트로, 수익
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Passive](/concepts/passive/)
-- [Income](/concepts/income/)
-- [Portfolio](/concepts/portfolio/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

@@ -1,32 +1,37 @@
 ---
 title: AI Learning Wiki
-description: EduVerse 기반 AI 지식·프롬프트 내부 위키
+description: 목표와 수준에 맞춰 시작하는 AI 실전 학습 위키
 template: splash
 hero:
-  tagline: 입문부터 실무·빌더·엔지니어링·자동화·금융·트렌드까지 — AI에 관한 무엇이든 찾아보세요.
+  tagline: 내 목표에 맞춰 305개 AI 학습을 연결합니다. 필요한 개념과 프롬프트를 고르고, 오늘 할 한 단계를 바로 시작하세요.
   actions:
-    - text: AI 입문부터 시작
-      link: /courses/ai-intro/
+    - text: 전체 학습 찾기
+      link: /explore/
       icon: right-arrow
-    - text: 프롬프트 라이브러리
-      link: /prompts/
+      variant: primary
+    - text: 프롬프트 찾기
+      link: /prompt-explorer/
+      icon: magnifier
       variant: minimal
 ---
 
+import LearningDashboard from '../../components/LearningDashboard.astro';
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## 학습 로드맵
+<LearningDashboard />
+
+## 하나의 위키에서 배우고, 적용하고, 기록하세요
 
 <CardGrid>
-  <Card title="① AI 입문" icon="sprout">기초 개념과 첫 프롬프트. AI가 처음이라면 여기부터. [바로가기](/courses/ai-intro/)</Card>
-  <Card title="② AI 실무" icon="laptop">이메일·문서·데이터·자동화 실무 적용. [바로가기](/courses/ai-work/)</Card>
-  <Card title="③ AI 빌더" icon="pencil">AI로 직접 만들기(앱·서비스). [바로가기](/courses/ai-builder/)</Card>
-  <Card title="④ AI 엔지니어" icon="setting">모델·시스템 엔지니어링 심화. [바로가기](/courses/ai-engineer/)</Card>
-  <Card title="⑤ 자동화 개발" icon="random">워크플로우 자동화 개발. [바로가기](/courses/automation/)</Card>
-  <Card title="⑥ AI 금융" icon="seti:money">금융 도메인 AI 활용. [바로가기](/courses/ai-finance/)</Card>
-  <Card title="⑦ AI 트렌드" icon="rocket">주간 갱신 최신 동향. [바로가기](/courses/ai-trends/)</Card>
+  <Card title="305개 학습 모듈" icon="open-book">
+    처음 시작부터 엔지니어링, 자동화, 수익화까지 난이도와 예상 시간으로 골라 학습합니다.
+  </Card>
+  <Card title="1,173개 실전 프롬프트" icon="document">
+    빈 예시를 숨기지 않습니다. 확인된 작성 예시가 있는 프롬프트를 필터링하고 바로 복사할 수 있습니다.
+  </Card>
+  <Card title="537개 핵심 개념" icon="seti:config">
+    모듈에서 만난 용어를 개념 사전으로 연결해 필요한 순간에 빠르게 복습합니다.
+  </Card>
 </CardGrid>
 
-:::caution[구축 중]
-현재 스캐폴드 단계입니다. 실제 EduVerse 콘텐츠는 인증 크롤(방식 B)로 수집 후 채워집니다.
-:::
+학습 진도와 선택한 목표는 현재 브라우저에만 저장됩니다. 로그인 없이 시작할 수 있고, 외부로 전송하지 않습니다.

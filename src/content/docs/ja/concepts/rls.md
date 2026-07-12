@@ -1,7 +1,0 @@
----
-title: "Rls"
-description: "'Rls' 개념을 다루는 모듈"
----
-이 개념을 다루는 모듈:
-
-- [RLS로 데이터 지키기](/ja/courses/ai-builder/23-rls-data-security/) <sub>(AI 빌더)</sub>

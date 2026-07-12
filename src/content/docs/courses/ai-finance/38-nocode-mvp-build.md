@@ -220,9 +220,8 @@ Lemon Squeezy에서 'PDF 견적서 툴 - 5,000원' 상품 생성 → 'Buy' 링�
 
 ## 관련 개념
 
-- [Nocode](/concepts/nocode/)
-- [Mvp](/concepts/mvp/)
-- [Build](/concepts/build/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

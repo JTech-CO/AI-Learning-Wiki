@@ -234,7 +234,7 @@ except Exception as e:
 
 ## 관련 개념
 
-- [Notifications](/concepts/notifications/)
+- [Automation](/concepts/automation/)
 
 
 ---

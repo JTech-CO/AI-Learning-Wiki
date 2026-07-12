@@ -219,9 +219,8 @@ AI 출력 중 채택: '가계부 3번 실패한 당신을 위한, 안 쓰고 켜
 
 ## 관련 개념
 
-- [Product](/concepts/product/)
-- [Listing](/concepts/listing/)
-- [Copy](/concepts/copy/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

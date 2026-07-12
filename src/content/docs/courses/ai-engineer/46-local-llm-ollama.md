@@ -224,11 +224,7 @@ Open WebUI를 설치하면 브라우저에서 AI와 카톡처럼 대화할 수 �
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Skill Literacy](/concepts/skill-literacy/)
-- [Local](/concepts/local/)
 - [Llm](/concepts/llm/)
-- [Ollama](/concepts/ollama/)
 
 
 ---

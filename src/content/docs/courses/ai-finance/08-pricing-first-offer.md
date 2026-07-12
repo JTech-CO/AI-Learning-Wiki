@@ -219,9 +219,8 @@ AI는 이미 수만 건의 실제 판매가·후기·가격 논의를 학습해�
 
 ## 관련 개념
 
-- [Pricing](/concepts/pricing/)
-- [First](/concepts/first/)
-- [Offer](/concepts/offer/)
+- [Cost Control](/concepts/cost-control/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

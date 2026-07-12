@@ -243,9 +243,8 @@ openai
 
 ## 관련 개념
 
-- [Deploy](/concepts/deploy/)
 - [Api](/concepts/api/)
-- [Service](/concepts/service/)
+- [Deployment](/concepts/deployment/)
 
 
 ---

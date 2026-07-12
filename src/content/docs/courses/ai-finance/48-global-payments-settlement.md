@@ -217,11 +217,7 @@ chatgpt.com이나 claude.ai에 아래 '번역·정리' 프롬프트로 해외 �
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Global](/concepts/global/)
-- [Payments](/concepts/payments/)
-- [Settlement](/concepts/settlement/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

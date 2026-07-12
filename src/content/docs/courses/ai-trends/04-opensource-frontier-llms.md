@@ -191,9 +191,7 @@ curl localhost:11434/api/chat 로 내 프로그램에서 호출
 
 ## 관련 개념
 
-- [Opensource](/concepts/opensource/)
-- [Frontier](/concepts/frontier/)
-- [Llms](/concepts/llms/)
+- [Llm](/concepts/llm/)
 
 
 ---

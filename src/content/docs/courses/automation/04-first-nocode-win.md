@@ -209,9 +209,7 @@ Make(또는 Zapier)로 구글폼 응답이 오면 구글시트에 행을 추가�
 
 ## 관련 개념
 
-- [First](/concepts/first/)
-- [Nocode](/concepts/nocode/)
-- [Win](/concepts/win/)
+- [Automation](/concepts/automation/)
 
 
 ---

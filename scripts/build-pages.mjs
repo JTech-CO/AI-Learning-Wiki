@@ -19,7 +19,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CM = path.join(ROOT, 'content-model');
 const DOCS = path.join(ROOT, 'src', 'content', 'docs');
 
-const LOCALES = ['ko', 'en', 'es', 'ja', 'zh'];
+const LOCALES = ['ko'];
 const ROOT_LOCALE = 'ko'; // Starlight root 로케일 → 문서 루트에 렌더
 const localeSeg = (l) => (l === ROOT_LOCALE ? '' : l); // 경로 프리픽스
 

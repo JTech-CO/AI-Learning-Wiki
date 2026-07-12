@@ -228,9 +228,7 @@ ChatGPT나 Claude에 아래 템플릿1을 붙여넣어, 당신이 관심 있는 
 
 ## 관련 개념
 
-- [Income](/concepts/income/)
-- [Mindset](/concepts/mindset/)
-- [Reality](/concepts/reality/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

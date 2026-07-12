@@ -219,9 +219,7 @@ AI는 이미 수억 개의 게시글·댓글·검색 패턴을 학습해서, 당
 
 ## 관련 개념
 
-- [First](/concepts/first/)
-- [100](/concepts/100/)
-- [Customers](/concepts/customers/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

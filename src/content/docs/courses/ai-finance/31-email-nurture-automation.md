@@ -227,9 +227,8 @@ AI '최고의 원두를 소개합니다' → 나 '제가 3년간 20종을 볶아
 
 ## 관련 개념
 
-- [Email](/concepts/email/)
-- [Nurture](/concepts/nurture/)
 - [Automation](/concepts/automation/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

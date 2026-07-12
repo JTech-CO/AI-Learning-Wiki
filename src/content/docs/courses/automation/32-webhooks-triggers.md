@@ -229,8 +229,8 @@ try{ UrlFetchApp.fetch(url, opt) }catch(err){ MailApp.sendEmail('나@gmail.com',
 
 ## 관련 개념
 
-- [Webhooks](/concepts/webhooks/)
-- [Triggers](/concepts/triggers/)
+- [Webhook](/concepts/webhook/)
+- [Automation](/concepts/automation/)
 
 
 ---

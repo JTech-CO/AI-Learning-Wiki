@@ -223,9 +223,7 @@ A4 한 장에 5칸을 그린다: 오프닝 / 문제 / 영향 / 예산·결정권
 
 ## 관련 개념
 
-- [Discovery](/concepts/discovery/)
-- [Call](/concepts/call/)
-- [Framework](/concepts/framework/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

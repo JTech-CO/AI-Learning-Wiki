@@ -282,10 +282,10 @@ console.log(data);
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
+- [Embedding](/concepts/embedding/)
+- [Vector Search](/concepts/vector-search/)
+- [Database](/concepts/database/)
 - [Data](/concepts/data/)
-- [Vector](/concepts/vector/)
-- [Embeddings](/concepts/embeddings/)
 
 
 ---

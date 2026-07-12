@@ -215,11 +215,7 @@ chatgpt.com이나 claude.ai에 접속해 아래 templates의 '문제 발굴' 프
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Find](/concepts/find/)
-- [Your](/concepts/your/)
-- [Offer](/concepts/offer/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

@@ -224,8 +224,8 @@ mkdir my_notes && cd my_notes → python -m venv venv → source venv/bin/activa
 
 ## 관련 개념
 
-- [Libs](/concepts/libs/)
-- [Venv](/concepts/venv/)
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
 
 
 ---

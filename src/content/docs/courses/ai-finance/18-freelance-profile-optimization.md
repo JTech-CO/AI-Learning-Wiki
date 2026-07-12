@@ -219,9 +219,8 @@ BASIC 5만(상세1P·수정1회) / STANDARD 12만(상세3P·수정2회·모바�
 
 ## 관련 개념
 
-- [Freelance](/concepts/freelance/)
-- [Profile](/concepts/profile/)
-- [Optimization](/concepts/optimization/)
+- [Monetization](/concepts/monetization/)
+- [Freelancing](/concepts/freelancing/)
 
 
 ---

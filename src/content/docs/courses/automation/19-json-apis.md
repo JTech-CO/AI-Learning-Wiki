@@ -227,8 +227,9 @@ API를 호출했더니 아래 에러가 나왔어. 무슨 뜻이고, 초보자�
 
 ## 관련 개념
 
-- [Json](/concepts/json/)
-- [Apis](/concepts/apis/)
+- [Api](/concepts/api/)
+- [Automation](/concepts/automation/)
+- [Data](/concepts/data/)
 
 
 ---

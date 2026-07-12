@@ -1,7 +1,0 @@
----
-title: "Structures"
-description: "'Structures' 개념을 다루는 모듈"
----
-이 개념을 다루는 모듈:
-
-- [리스트·딕셔너리·집합 다루기](/courses/automation/09-py-data-structures/) <sub>(자동화 개발)</sub>

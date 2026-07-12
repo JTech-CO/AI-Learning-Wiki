@@ -223,7 +223,8 @@ df = pd.concat([pd.read_excel(f) for f in glob.glob("attendance/*.xlsx")]); 결�
 
 ## 관련 개념
 
-- [Spreadsheet](/concepts/spreadsheet/)
+- [Automation](/concepts/automation/)
+- [Data](/concepts/data/)
 
 
 ---

@@ -198,8 +198,7 @@ AI: 파일 이름 규칙 변경은 스크립트로 쉬움(적합). 반면 보고
 
 ## 관련 개념
 
-- [Spot](/concepts/spot/)
-- [Opportunities](/concepts/opportunities/)
+- [Automation](/concepts/automation/)
 
 
 ---

@@ -219,10 +219,8 @@ AI는 수억 개의 글을 학습하면서 "질문-즉답-근거" 형태로 딱 
 
 ## 관련 개념
 
-- [Seo](/concepts/seo/)
-- [Geo](/concepts/geo/)
-- [For](/concepts/for/)
-- [Discovery](/concepts/discovery/)
+- [Marketing](/concepts/marketing/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

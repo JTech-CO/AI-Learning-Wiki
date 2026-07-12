@@ -219,9 +219,7 @@ Save offer: '지금 해지 대신 2개월 일시정지는 어때요? 그동안 �
 
 ## 관련 개념
 
-- [Subscription](/concepts/subscription/)
-- [Retention](/concepts/retention/)
-- [Churn](/concepts/churn/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

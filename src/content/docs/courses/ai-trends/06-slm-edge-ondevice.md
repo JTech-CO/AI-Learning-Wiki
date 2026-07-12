@@ -205,9 +205,7 @@ LM Studio 왼쪽 돋보기(검색) 아이콘 클릭 → 검색창에 'gemma' 또
 
 ## 관련 개념
 
-- [Slm](/concepts/slm/)
-- [Edge](/concepts/edge/)
-- [Ondevice](/concepts/ondevice/)
+- [Ai Trends](/concepts/ai-trends/)
 
 
 ---

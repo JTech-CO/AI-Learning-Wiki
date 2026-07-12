@@ -227,9 +227,8 @@ AI 초안 '귀하의 소중한 시간을...' → 내 수정 '바쁘실 텐데 �
 
 ## 관련 개념
 
-- [Outreach](/concepts/outreach/)
-- [Followup](/concepts/followup/)
-- [Sequence](/concepts/sequence/)
+- [Marketing](/concepts/marketing/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

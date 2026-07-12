@@ -234,8 +234,6 @@ type: string → type: enum['product','user','order']. 삭제류엔 confirm: boo
 ## 관련 개념
 
 - [Agent](/concepts/agent/)
-- [Tool](/concepts/tool/)
-- [Design](/concepts/design/)
 
 
 ---

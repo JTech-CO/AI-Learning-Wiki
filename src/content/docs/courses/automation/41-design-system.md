@@ -222,8 +222,7 @@ AI: "메일이 하루 평균 15건이면 월 약 450건 실행. Zapier 무료 �
 
 ## 관련 개념
 
-- [Design](/concepts/design/)
-- [System](/concepts/system/)
+- [Automation](/concepts/automation/)
 
 
 ---

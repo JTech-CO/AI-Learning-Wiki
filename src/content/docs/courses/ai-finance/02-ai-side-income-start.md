@@ -183,11 +183,7 @@ AI는 이미 수십만 개의 성공한 부업 아이템·상품 소개·판매 
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Side](/concepts/side/)
-- [Income](/concepts/income/)
-- [Start](/concepts/start/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

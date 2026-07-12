@@ -234,8 +234,7 @@ AI 답 예: '전면 코드 대신 하이브리드 권장. 트리거·알림은 M
 
 ## 관련 개념
 
-- [Nocode](/concepts/nocode/)
-- [Code](/concepts/code/)
+- [Automation](/concepts/automation/)
 
 
 ---

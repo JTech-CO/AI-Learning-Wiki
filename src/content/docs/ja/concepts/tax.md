@@ -1,7 +1,0 @@
----
-title: "Tax"
-description: "'Tax' 개념을 다루는 모듈"
----
-이 개념을 다루는 모듈:
-
-- [인보이싱·세금 기초 (1인 사업자)](/ja/courses/ai-finance/43-invoicing-tax-basics/) <sub>(AI 금융)</sub>

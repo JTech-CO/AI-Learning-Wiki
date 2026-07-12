@@ -230,9 +230,7 @@ SOP 목록: [SOP 제목들 나열]
 
 ## 관련 개념
 
-- [Hire](/concepts/hire/)
-- [Delegate](/concepts/delegate/)
-- [Sops](/concepts/sops/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

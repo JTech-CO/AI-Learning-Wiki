@@ -188,11 +188,8 @@ AI는 프롬프트 하나로 몇 초 만에 수십 개의 결과물을 뽑아냅
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Prompting](/concepts/prompting/)
 - [Prompt](/concepts/prompt/)
-- [Cash](/concepts/cash/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

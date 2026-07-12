@@ -235,8 +235,7 @@ try:\n    resp = requests.get(url, timeout=10)\n    resp.raise_for_status()\nexc
 
 ## 관련 개념
 
-- [Error](/concepts/error/)
-- [Retry](/concepts/retry/)
+- [Automation](/concepts/automation/)
 
 
 ---

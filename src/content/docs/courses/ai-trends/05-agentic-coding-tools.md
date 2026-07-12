@@ -201,9 +201,7 @@ Cascade 패널에 "이 컴포넌트를 모바일 반응형으로 만들어줘" �
 
 ## 관련 개념
 
-- [Agentic](/concepts/agentic/)
-- [Coding](/concepts/coding/)
-- [Tools](/concepts/tools/)
+- [Agent](/concepts/agent/)
 
 
 ---

@@ -218,9 +218,7 @@ SOP: 1)키워드·톤 수집 양식 2)AI로 원고 10편 초안 3)사실관계·
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Agency](/concepts/agency/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

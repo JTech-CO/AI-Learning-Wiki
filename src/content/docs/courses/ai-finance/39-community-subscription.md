@@ -220,10 +220,7 @@ AI 활용: 주간 콘텐츠 주제 12개 초안 / 사람: 신규 가입자마다
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Community](/concepts/community/)
-- [Subscription](/concepts/subscription/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

@@ -1,8 +1,0 @@
----
-title: "Orchestration"
-description: "'Orchestration' 개념을 다루는 모듈"
----
-이 개념을 다루는 모듈:
-
-- [멀티 에이전트 오케스트레이션 — 여러 AI 협업](/en/courses/ai-engineer/40-agent-multi-orchestration/) <sub>(AI Engineer)</sub>
-- [멀티스텝 AI 워크플로 오케스트레이션](/en/courses/automation/39-ai-orchestration/) <sub>(Automation Dev)</sub>

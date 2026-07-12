@@ -214,11 +214,8 @@ chatgpt.com이나 claude.ai에 아래 '유닛 이코노믹스' 프롬프트로 �
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Unit](/concepts/unit/)
-- [Economics](/concepts/economics/)
-- [Pricing](/concepts/pricing/)
+- [Cost Control](/concepts/cost-control/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

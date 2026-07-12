@@ -219,9 +219,7 @@ AI는 브랜드 문제 진단·리서치·설명글 초안 같은 '생각 정리
 
 ## 관련 개념
 
-- [Portfolio](/concepts/portfolio/)
-- [From](/concepts/from/)
-- [Zero](/concepts/zero/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

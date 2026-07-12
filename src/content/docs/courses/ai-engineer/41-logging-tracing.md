@@ -219,8 +219,7 @@ llm_logs 테이블(컬럼: trace_id, timestamp, kind, model, prompt_tokens, comp
 
 ## 관련 개념
 
-- [Logging](/concepts/logging/)
-- [Tracing](/concepts/tracing/)
+- [Observability](/concepts/observability/)
 
 
 ---

@@ -219,8 +219,8 @@ expenses = [12000, 55000, 3000, 89000]\nbig = []\nfor e in expenses:\n    if e >
 
 ## 관련 개념
 
-- [Control](/concepts/control/)
-- [Flow](/concepts/flow/)
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
 
 
 ---

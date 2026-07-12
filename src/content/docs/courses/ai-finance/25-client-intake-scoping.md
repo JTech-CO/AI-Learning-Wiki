@@ -224,9 +224,8 @@ AI 출력: '산출물 1: 메인 페이지 디자인 시안 2안 (PSD/Figma, 10�
 
 ## 관련 개념
 
-- [Client](/concepts/client/)
-- [Intake](/concepts/intake/)
-- [Scoping](/concepts/scoping/)
+- [Monetization](/concepts/monetization/)
+- [Freelancing](/concepts/freelancing/)
 
 
 ---

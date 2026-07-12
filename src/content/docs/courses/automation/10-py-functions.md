@@ -207,7 +207,8 @@ print([함수이름]([테스트할 값]))
 
 ## 관련 개념
 
-- [Functions](/concepts/functions/)
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
 
 
 ---

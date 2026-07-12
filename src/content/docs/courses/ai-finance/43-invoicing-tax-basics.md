@@ -227,9 +227,7 @@ _인보이스 발행·수금 관리와 사업소득 신고·경비 처리·부�
 
 ## 관련 개념
 
-- [Invoicing](/concepts/invoicing/)
-- [Tax](/concepts/tax/)
-- [Basics](/concepts/basics/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

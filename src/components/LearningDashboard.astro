@@ -1,0 +1,160 @@
+<section class="learning-studio" aria-labelledby="learning-studio-title">
+  <div class="studio-heading">
+    <p class="studio-kicker">PERSONAL LEARNING ROUTE</p>
+    <h2 id="learning-studio-title">오늘의 다음 학습을 바로 정하세요</h2>
+    <p>목표·현재 수준·주당 시간을 저장하면 이 기기에서 다음 학습과 진도를 이어서 보여줍니다.</p>
+  </div>
+
+  <form id="learning-profile-form" class="profile-builder">
+    <fieldset>
+      <legend>1. 가장 먼저 이루고 싶은 목표</legend>
+      <div class="goal-grid">
+        <label><input type="radio" name="goal" value="start" checked /><span><b>AI 첫걸음</b><small>기초부터 첫 결과물</small></span></label>
+        <label><input type="radio" name="goal" value="work" /><span><b>업무 생산성</b><small>문서·데이터·자동화</small></span></label>
+        <label><input type="radio" name="goal" value="build" /><span><b>앱 만들기</b><small>아이디어를 작동하는 제품으로</small></span></label>
+        <label><input type="radio" name="goal" value="engineer" /><span><b>AI 엔지니어</b><small>API·RAG·에이전트</small></span></label>
+        <label><input type="radio" name="goal" value="automate" /><span><b>자동화 개발</b><small>반복 작업을 코드로 제거</small></span></label>
+        <label><input type="radio" name="goal" value="earn" /><span><b>첫 수익</b><small>상품·프리랜스·1인 사업</small></span></label>
+      </div>
+    </fieldset>
+
+    <div class="profile-row">
+      <label>2. 현재 수준
+        <select name="level">
+          <option value="new">완전 처음</option>
+          <option value="some">기초 경험 있음</option>
+          <option value="advanced">실전 경험 있음</option>
+        </select>
+      </label>
+      <label>3. 주당 학습 시간
+        <select name="hours">
+          <option value="2">주 2시간</option>
+          <option value="5" selected>주 5시간</option>
+          <option value="10">주 10시간 이상</option>
+        </select>
+      </label>
+    </div>
+    <button class="studio-primary" type="submit">내 학습 경로 만들기</button>
+  </form>
+
+  <div id="learning-plan" class="learning-plan" hidden aria-live="polite">
+    <div class="plan-summary">
+      <div>
+        <p class="studio-kicker">YOUR NEXT MOVES</p>
+        <h3 id="plan-title">맞춤 학습 경로</h3>
+        <p id="plan-description"></p>
+      </div>
+      <button id="profile-reset" class="studio-secondary" type="button">설정 바꾸기</button>
+    </div>
+    <div class="progress-meter" aria-label="전체 학습 진도">
+      <div><span id="progress-label">0 / 305 완료</span><span id="progress-percent">0%</span></div>
+      <progress id="progress-value" max="305" value="0"></progress>
+    </div>
+    <div id="next-module-grid" class="next-module-grid"></div>
+    <p class="plan-footnote">완료 기록은 이 브라우저에만 저장됩니다. 계정이나 개인정보 입력은 필요하지 않습니다.</p>
+  </div>
+</section>
+
+<script>
+  const PROFILE_KEY = 'aiwiki-profile-v1';
+  const PROGRESS_KEY = 'aiwiki-progress-v1';
+  const form = document.querySelector('#learning-profile-form');
+  const panel = document.querySelector('#learning-plan');
+  const grid = document.querySelector('#next-module-grid');
+  const reset = document.querySelector('#profile-reset');
+  const courseLabels = {
+    'ai-start': '시작 코스', 'ai-intro': 'AI 입문', 'ai-work': 'AI 실무',
+    'ai-builder': 'AI 빌더', 'ai-engineer': 'AI 엔지니어', automation: '자동화 개발',
+    'ai-finance': 'AI 금융', 'ai-trends': 'AI 트렌드',
+  };
+  const goalLabels = {
+    start: 'AI 첫걸음', work: '업무 생산성', build: '앱 만들기',
+    engineer: 'AI 엔지니어', automate: '자동화 개발', earn: '첫 수익',
+  };
+  const paths = {
+    start: ['ai-start', 'ai-intro'],
+    work: ['ai-start', 'ai-intro', 'ai-work'],
+    build: ['ai-start', 'ai-intro', 'ai-builder'],
+    engineer: ['ai-intro', 'ai-engineer'],
+    automate: ['ai-intro', 'automation'],
+    earn: ['ai-start', 'ai-intro', 'ai-finance'],
+  };
+  const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;',
+  })[char]);
+  const loadCompleted = () => {
+    try { return new Set(JSON.parse(localStorage.getItem(PROGRESS_KEY) ?? '[]')); }
+    catch { return new Set(); }
+  };
+  const saveCompleted = (set) => localStorage.setItem(PROGRESS_KEY, JSON.stringify([...set]));
+  const catalogPromise = fetch('/data/catalog.json').then((response) => {
+    if (!response.ok) throw new Error('catalog unavailable');
+    return response.json();
+  });
+
+  function profileFromForm() {
+    const data = new FormData(form);
+    return { goal: data.get('goal'), level: data.get('level'), hours: Number(data.get('hours')) };
+  }
+
+  function applyProfile(profile) {
+    const goal = form.querySelector(`[name="goal"][value="${profile.goal}"]`);
+    if (goal) goal.checked = true;
+    form.elements.level.value = profile.level;
+    form.elements.hours.value = String(profile.hours);
+  }
+
+  async function render(profile) {
+    const data = await catalogPromise;
+    const completed = loadCompleted();
+    const route = paths[profile.goal] ?? paths.start;
+    let candidates = route.flatMap((course) => data.modules.filter((mod) => mod.course === course));
+    if (profile.level === 'some') candidates = candidates.filter((mod) => mod.course !== 'ai-start' && !(mod.course === 'ai-intro' && mod.order < 9));
+    if (profile.level === 'advanced') candidates = candidates.filter((mod) => mod.course === route.at(-1) && mod.order >= 6);
+    const remaining = candidates.filter((mod) => !completed.has(mod.url));
+    const count = profile.hours >= 10 ? 7 : profile.hours >= 5 ? 5 : 3;
+    const next = remaining.slice(0, count);
+
+    form.hidden = true;
+    panel.hidden = false;
+    document.querySelector('#plan-title').textContent = `${goalLabels[profile.goal]} 경로`;
+    document.querySelector('#plan-description').textContent = next.length
+      ? `주 ${profile.hours}시간 기준, 지금 이어갈 ${next.length}개 학습입니다.`
+      : '이 경로의 학습을 모두 완료했습니다. AI 트렌드에서 다음 주제를 골라보세요.';
+    document.querySelector('#progress-label').textContent = `${completed.size} / ${data.modules.length} 완료`;
+    document.querySelector('#progress-percent').textContent = `${Math.round(completed.size / data.modules.length * 100)}%`;
+    const progress = document.querySelector('#progress-value');
+    progress.max = data.modules.length;
+    progress.value = completed.size;
+    grid.innerHTML = (next.length ? next : data.modules.filter((mod) => mod.course === 'ai-trends').slice(0, 3)).map((mod, index) => `
+      <article class="next-module-card">
+        <div class="module-sequence">${index === 0 ? '지금 시작' : `${index + 1}번째`}</div>
+        <p>${escapeHtml(courseLabels[mod.course])} · ${mod.estimatedMinutes}분</p>
+        <h4><a href="${escapeHtml(mod.url)}">${escapeHtml(mod.title)}</a></h4>
+        <p>${escapeHtml(mod.summary)}</p>
+        <div class="module-actions">
+          <a class="studio-link" href="${escapeHtml(mod.url)}">학습 열기 →</a>
+          <button class="quick-complete" type="button" data-url="${escapeHtml(mod.url)}">완료 표시</button>
+        </div>
+      </article>`).join('');
+    grid.querySelectorAll('.quick-complete').forEach((button) => button.addEventListener('click', () => {
+      completed.add(button.dataset.url);
+      saveCompleted(completed);
+      render(profile);
+    }));
+  }
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const profile = profileFromForm();
+    localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+    render(profile).catch(() => { panel.hidden = true; form.hidden = false; });
+  });
+  reset?.addEventListener('click', () => { panel.hidden = true; form.hidden = false; });
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(PROFILE_KEY));
+    if (saved?.goal) { applyProfile(saved); render(saved); }
+  } catch {}
+</script>
+

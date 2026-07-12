@@ -232,7 +232,7 @@ needs_human은 화가 났거나 즉시 대응이 필요하면 true.
 ## 관련 개념
 
 - [Llm](/concepts/llm/)
-- [Loop](/concepts/loop/)
+- [Automation](/concepts/automation/)
 
 
 ---

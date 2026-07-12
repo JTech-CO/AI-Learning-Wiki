@@ -281,8 +281,7 @@ audit_log: {ts, request_id, user, model_ver, policy_ver, input_hash, decision, h
 
 ## 관련 개념
 
-- [Safety](/concepts/safety/)
-- [Compliance](/concepts/compliance/)
+- [Ai Trends](/concepts/ai-trends/)
 
 
 ---

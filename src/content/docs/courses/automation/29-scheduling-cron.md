@@ -250,8 +250,7 @@ while True:
 
 ## 관련 개념
 
-- [Scheduling](/concepts/scheduling/)
-- [Cron](/concepts/cron/)
+- [Automation](/concepts/automation/)
 
 
 ---

@@ -316,10 +316,7 @@ claude -p "너는 자율 코딩 에이전트야. 목표: 이 폴더에 [무엇]�
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Coding](/concepts/coding/)
-- [Autonomous](/concepts/autonomous/)
-- [Loop](/concepts/loop/)
+- [Ai Trends](/concepts/ai-trends/)
 
 
 ---

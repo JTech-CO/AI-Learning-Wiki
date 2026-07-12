@@ -230,10 +230,8 @@ ICP: "[구체 직업/상황]이 [구체 행동]할 때마다 [구체 시간]을 
 
 ## 관련 개념
 
-- [Saas](/concepts/saas/)
-- [First](/concepts/first/)
-- [Paying](/concepts/paying/)
-- [User](/concepts/user/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

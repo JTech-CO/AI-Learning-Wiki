@@ -229,9 +229,8 @@ ElevenLabs에서 3단계 스토리보드의 나레이션 대본을 TTS로 만든
 
 ## 관련 개념
 
-- [Video](/concepts/video/)
-- [Voice](/concepts/voice/)
-- [Agents](/concepts/agents/)
+- [Agent](/concepts/agent/)
+- [Multimodal Ai](/concepts/multimodal-ai/)
 
 
 ---

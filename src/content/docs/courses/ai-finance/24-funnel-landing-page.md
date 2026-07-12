@@ -219,9 +219,8 @@ Carrd에서 'Publish'를 눌러 무료 주소(예: 내이름.carrd.co)를 발급
 
 ## 관련 개념
 
-- [Funnel](/concepts/funnel/)
-- [Landing](/concepts/landing/)
-- [Page](/concepts/page/)
+- [Marketing](/concepts/marketing/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

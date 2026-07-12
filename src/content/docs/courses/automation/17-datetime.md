@@ -211,7 +211,7 @@ AI 답이 나오면 '시차가 상식적인가' 한 번 확인해. 한국-뉴욕
 
 ## 관련 개념
 
-- [Datetime](/concepts/datetime/)
+- [Automation](/concepts/automation/)
 
 
 ---

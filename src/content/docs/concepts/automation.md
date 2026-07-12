@@ -4,11 +4,54 @@ description: "'Automation' 개념을 다루는 모듈"
 ---
 이 개념을 다루는 모듈:
 
+- [최소 RAG 파이프라인 구현](/courses/ai-engineer/29-rag-pipeline-build/) <sub>(AI 엔지니어)</sub>
 - [n8n 자동화 — 셀프호스팅 워크플로 자동화](/courses/ai-engineer/47-n8n-automation/) <sub>(AI 엔지니어)</sub>
 - [이메일 넛처 자동화 시퀀스](/courses/ai-finance/31-email-nurture-automation/) <sub>(AI 금융)</sub>
+- [수익 자동화 파이프라인 — 잠자는 동안 버는 구조](/courses/ai-finance/40-automate-income-pipeline/) <sub>(AI 금융)</sub>
 - [자동화 도구 기초 (Zapier·Make·n8n)](/courses/ai-finance/41-workflow-automation-tools/) <sub>(AI 금융)</sub>
+- [AI 에이전트 워크플로 구축](/courses/ai-finance/46-ai-agent-workflow/) <sub>(AI 금융)</sub>
 - [반복 이메일 템플릿화](/courses/ai-work/13-email-templates/) <sub>(AI 실무)</sub>
 - [자동화할 업무 찾기](/courses/ai-work/40-find-automation-tasks/) <sub>(AI 실무)</sub>
 - [첫 노코드 파이프라인](/courses/ai-work/44-first-nocode-pipeline/) <sub>(AI 실무)</sub>
 - [자동화란 무엇인가 — 반복을 코드가 대신하게](/courses/automation/01-what-is-automation/) <sub>(자동화 개발)</sub>
 - [자동화 사고법 — 트리거·조건·액션으로 분해](/courses/automation/02-automation-mindset/) <sub>(자동화 개발)</sub>
+- [자동화할 일 찾기 — 반복·규칙·시간낭비 진단](/courses/automation/03-spot-opportunities/) <sub>(자동화 개발)</sub>
+- [노코드로 첫 자동화 성공 — 30분 안에](/courses/automation/04-first-nocode-win/) <sub>(자동화 개발)</sub>
+- [노코드의 한계 — 언제 코드로 넘어가나](/courses/automation/05-nocode-vs-code/) <sub>(자동화 개발)</sub>
+- [파이썬 환경 세팅 — 설치·에디터·첫 실행](/courses/automation/06-py-setup/) <sub>(자동화 개발)</sub>
+- [파이썬 핵심 문법 — 변수·자료형·연산](/courses/automation/07-py-syntax/) <sub>(자동화 개발)</sub>
+- [조건·반복 실전 — if·for·while](/courses/automation/08-py-control-flow/) <sub>(자동화 개발)</sub>
+- [리스트·딕셔너리·집합 다루기](/courses/automation/09-py-data-structures/) <sub>(자동화 개발)</sub>
+- [함수로 재사용 가능한 코드 짜기](/courses/automation/10-py-functions/) <sub>(자동화 개발)</sub>
+- [파일 읽기·쓰기 — 자동화의 기본기](/courses/automation/11-py-files-io/) <sub>(자동화 개발)</sub>
+- [에러 읽기·디버깅 — 혼자 막힘 뚫기](/courses/automation/12-py-errors-debug/) <sub>(자동화 개발)</sub>
+- [라이브러리·pip·가상환경](/courses/automation/13-py-libs-venv/) <sub>(자동화 개발)</sub>
+- [정규식·텍스트 처리](/courses/automation/14-regex-text/) <sub>(자동화 개발)</sub>
+- [파일·폴더 일괄 자동화](/courses/automation/15-files-batch/) <sub>(자동화 개발)</sub>
+- [엑셀·CSV 자동화 — openpyxl·pandas](/courses/automation/16-spreadsheet/) <sub>(자동화 개발)</sub>
+- [날짜·시간 다루기](/courses/automation/17-datetime/) <sub>(자동화 개발)</sub>
+- [HTTP·requests로 웹 데이터 가져오기](/courses/automation/18-http-requests/) <sub>(자동화 개발)</sub>
+- [JSON·REST API 호출·인증](/courses/automation/19-json-apis/) <sub>(자동화 개발)</sub>
+- [웹 스크래핑 — BeautifulSoup](/courses/automation/20-web-scraping/) <sub>(자동화 개발)</sub>
+- [동적 페이지·브라우저 자동화 — Playwright](/courses/automation/21-scraping-dynamic/) <sub>(자동화 개발)</sub>
+- [비밀키·설정 안전하게 — .env](/courses/automation/22-secrets-config/) <sub>(자동화 개발)</sub>
+- [견고성 — 에러처리·재시도·타임아웃](/courses/automation/23-error-retry/) <sub>(자동화 개발)</sub>
+- [로깅 — 자동화가 한 일 남기기](/courses/automation/24-logging/) <sub>(자동화 개발)</sub>
+- [알림 자동화 — 이메일·슬랙](/courses/automation/25-notifications/) <sub>(자동화 개발)</sub>
+- [텔레그램 봇 만들기](/courses/automation/26-bot-telegram/) <sub>(자동화 개발)</sub>
+- [슬랙·디스코드 봇·웹훅](/courses/automation/27-bot-webhooks/) <sub>(자동화 개발)</sub>
+- [데이터 저장 — SQLite·Supabase](/courses/automation/28-database/) <sub>(자동화 개발)</sub>
+- [cron·스케줄러로 정기 실행](/courses/automation/29-scheduling-cron/) <sub>(자동화 개발)</sub>
+- [GitHub Actions로 무료 상시 실행](/courses/automation/30-github-actions/) <sub>(자동화 개발)</sub>
+- [서버·클라우드 상시 가동 — Railway/VPS](/courses/automation/31-deploy-server/) <sub>(자동화 개발)</sub>
+- [웹훅 — 이벤트 기반 자동화](/courses/automation/32-webhooks-triggers/) <sub>(자동화 개발)</sub>
+- [모니터링·헬스체크 — 죽었나 감시](/courses/automation/33-monitoring/) <sub>(자동화 개발)</sub>
+- [비용·레이트리밋·폭주 방지 가드](/courses/automation/34-cost-rate-guards/) <sub>(자동화 개발)</sub>
+- [LLM API를 자동화에 넣기](/courses/automation/35-llm-in-loop/) <sub>(자동화 개발)</sub>
+- [프롬프트 파이프라인·구조화 출력](/courses/automation/36-prompt-pipelines/) <sub>(자동화 개발)</sub>
+- [AI 에이전트 — 도구 쓰는 자동화](/courses/automation/37-ai-agents-tools/) <sub>(자동화 개발)</sub>
+- [문서 기반 자동응답 — RAG](/courses/automation/38-rag-pipeline/) <sub>(자동화 개발)</sub>
+- [멀티스텝 AI 워크플로 오케스트레이션](/courses/automation/39-ai-orchestration/) <sub>(자동화 개발)</sub>
+- [AI 자동화 가드 — 비용·품질·환각](/courses/automation/40-ai-guards/) <sub>(자동화 개발)</sub>
+- [나만의 자동화 시스템 설계](/courses/automation/41-design-system/) <sub>(자동화 개발)</sub>
+- [캡스톤 — 스크래퍼→AI→알림 봇 완성·배포·유지 (정점)](/courses/automation/42-capstone-ship/) <sub>(자동화 개발)</sub>

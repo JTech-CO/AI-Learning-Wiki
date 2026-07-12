@@ -187,10 +187,8 @@ AI로 빠르게 할 수 있고 수요가 있는 서비스를 고른다. 추천: 
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Freelance](/concepts/freelance/)
-- [With](/concepts/with/)
+- [Monetization](/concepts/monetization/)
+- [Freelancing](/concepts/freelancing/)
 
 
 ---

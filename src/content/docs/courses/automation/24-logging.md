@@ -227,7 +227,8 @@ logging.info('[작업이름] 끝')
 
 ## 관련 개념
 
-- [Logging](/concepts/logging/)
+- [Automation](/concepts/automation/)
+- [Observability](/concepts/observability/)
 
 
 ---

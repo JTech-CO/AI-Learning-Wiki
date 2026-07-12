@@ -218,10 +218,8 @@ chatgpt.com이나 claude.ai에 아래 '광고 카피' 프롬프트를 붙여넣�
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
 - [Marketing](/concepts/marketing/)
-- [Funnel](/concepts/funnel/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

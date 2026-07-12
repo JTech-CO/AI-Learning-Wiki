@@ -227,7 +227,7 @@ ChatGPT/Claude 새 대화에서 ①프롬프트 실행→나온 출력을 복사
 
 ## 관련 개념
 
-- [Orchestration](/concepts/orchestration/)
+- [Automation](/concepts/automation/)
 
 
 ---

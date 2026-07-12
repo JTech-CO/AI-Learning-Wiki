@@ -219,8 +219,7 @@ LTV =평균주문금액 × 평균구매횟수 / 배수 =LTV/CAC / 서식: 배수
 
 ## 관련 개념
 
-- [Metrics](/concepts/metrics/)
-- [Dashboard](/concepts/dashboard/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

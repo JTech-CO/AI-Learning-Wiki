@@ -216,10 +216,8 @@ AI가 [개인화 한 줄]로 비워둔 자리에, 1단계에서 메모한 그 �
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Sales](/concepts/sales/)
-- [Outreach](/concepts/outreach/)
+- [Marketing](/concepts/marketing/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

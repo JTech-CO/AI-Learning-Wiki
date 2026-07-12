@@ -219,8 +219,7 @@ main.py 끝에: notify('✅ 하루치 완료 ' + str(len(items)) + '건'). 3일�
 
 ## 관련 개념
 
-- [Capstone](/concepts/capstone/)
-- [Ship](/concepts/ship/)
+- [Automation](/concepts/automation/)
 
 
 ---

@@ -219,9 +219,8 @@ Zapier 자동화가 실패했어. Zap History에 뜬 에러 메시지 전체는 
 
 ## 관련 개념
 
-- [Workflow](/concepts/workflow/)
 - [Automation](/concepts/automation/)
-- [Tools](/concepts/tools/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

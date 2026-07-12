@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run validate && npm run gen && npm run validate:generated && astro build && npm run smoke",
+    "build": "npm run validate && npm run data && npm run gen && npm run validate:generated && astro build && npm run smoke",
     "gen": "node scripts/build-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -14,7 +14,8 @@
     "validate:generated": "node scripts/validate-content.mjs --generated",
     "validate:complete": "node scripts/validate-content.mjs --complete --generated",
     "progress": "node scripts/update-progress.mjs",
-    "smoke": "node scripts/smoke-test.mjs"
+    "smoke": "node scripts/smoke-test.mjs",
+    "data": "node scripts/build-app-data.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

@@ -219,7 +219,6 @@ AI는 수많은 사람들이 이미 자동화해 둔 사례(엑셀 매크로, �
 
 ## 관련 개념
 
-- [What](/concepts/what/)
 - [Automation](/concepts/automation/)
 
 

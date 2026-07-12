@@ -223,9 +223,8 @@ New product → Digital product 선택 → Content 탭에 'Generate license keys
 
 ## 관련 개념
 
-- [Digital](/concepts/digital/)
-- [Product](/concepts/product/)
-- [Delivery](/concepts/delivery/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

@@ -226,8 +226,7 @@ dry-run 출력: 'IMG_1.jpg → 여행_001.jpg / IMG_2.jpg → 여행_002.jpg ...
 
 ## 관련 개념
 
-- [Files](/concepts/files/)
-- [Batch](/concepts/batch/)
+- [Automation](/concepts/automation/)
 
 
 ---

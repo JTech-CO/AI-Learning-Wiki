@@ -227,10 +227,7 @@ AI가 만든 20통을 훑으며 로봇 같은 문장 3곳을 잡아 손으로 �
 
 ## 관련 개념
 
-- [Cold](/concepts/cold/)
-- [Email](/concepts/email/)
-- [That](/concepts/that/)
-- [Replies](/concepts/replies/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

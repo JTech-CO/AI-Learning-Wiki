@@ -223,10 +223,7 @@ A=트리거 확실+DM열림(빨강) / B=트리거 있으나 이메일뿐 / C=트
 
 ## 관련 개념
 
-- [Icp](/concepts/icp/)
-- [And](/concepts/and/)
-- [Lead](/concepts/lead/)
-- [List](/concepts/list/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

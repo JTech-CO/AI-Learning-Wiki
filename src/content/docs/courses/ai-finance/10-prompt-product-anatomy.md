@@ -226,8 +226,8 @@ AI는 “좋은 프롬프트”와 “팔리는 프롬프트”의 차이를 수
 ## 관련 개념
 
 - [Prompt](/concepts/prompt/)
-- [Product](/concepts/product/)
-- [Anatomy](/concepts/anatomy/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

@@ -237,7 +237,9 @@ name = "지민"\nallowance = 50000\nspent = 32000\nremaining = allowance - spent
 
 ## 관련 개념
 
-- [Syntax](/concepts/syntax/)
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

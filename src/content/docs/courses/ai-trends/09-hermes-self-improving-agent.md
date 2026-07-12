@@ -237,9 +237,6 @@ memory/skills/summarize_report.json 파일이 생겼다면 스킬 저장 성공
 
 ## 관련 개념
 
-- [Hermes](/concepts/hermes/)
-- [Self](/concepts/self/)
-- [Improving](/concepts/improving/)
 - [Agent](/concepts/agent/)
 
 

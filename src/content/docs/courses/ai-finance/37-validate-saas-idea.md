@@ -222,9 +222,8 @@ Carrd로 '프리랜서 정산 5분에 끝내기 — 사전예약' 페이지 제�
 
 ## 관련 개념
 
-- [Validate](/concepts/validate/)
-- [Saas](/concepts/saas/)
-- [Idea](/concepts/idea/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

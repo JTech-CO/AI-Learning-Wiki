@@ -240,10 +240,7 @@ AI가 작업을 끝내면 채팅칸 아래에 결과를 글로 정리해줍니�
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Coding](/concepts/coding/)
-- [Computer](/concepts/computer/)
-- [Use](/concepts/use/)
+- [Ai Engineer](/concepts/ai-engineer/)
 
 
 ---

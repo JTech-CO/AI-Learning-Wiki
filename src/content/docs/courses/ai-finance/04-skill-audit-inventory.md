@@ -242,9 +242,7 @@ O가 붙은 것에는 '어떤 AI 활용법'인지도 한 줄로 알려줘. 한�
 
 ## 관련 개념
 
-- [Skill](/concepts/skill/)
-- [Audit](/concepts/audit/)
-- [Inventory](/concepts/inventory/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

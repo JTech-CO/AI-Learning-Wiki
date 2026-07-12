@@ -227,7 +227,8 @@ with open('memo.txt', 'w', encoding='utf-8') as f:\n    f.write('오늘은 좋�
 
 ## 관련 개념
 
-- [Files](/concepts/files/)
+- [Python](/concepts/python/)
+- [Automation](/concepts/automation/)
 
 
 ---

@@ -1,0 +1,55 @@
+<section class="catalog-explorer" aria-labelledby="catalog-title">
+  <div class="explorer-controls">
+    <label class="explorer-search">학습 검색
+      <input id="catalog-query" type="search" placeholder="예: RAG, 업무 이메일, 자동화" autocomplete="off" />
+    </label>
+    <label>코스
+      <select id="catalog-course"><option value="">전체 코스</option></select>
+    </label>
+    <label>난이도
+      <select id="catalog-difficulty">
+        <option value="">전체 난이도</option><option value="intro">입문</option><option value="basic">기초</option>
+        <option value="intermediate">중급</option><option value="advanced">고급</option><option value="pro">프로</option>
+      </select>
+    </label>
+    <label>학습 시간
+      <select id="catalog-time"><option value="">제한 없음</option><option value="20">20분 이하</option><option value="40">40분 이하</option><option value="60">60분 이하</option></select>
+    </label>
+  </div>
+  <p id="catalog-count" class="explorer-count" aria-live="polite">목록을 불러오는 중…</p>
+  <div id="catalog-results" class="catalog-results"></div>
+</section>
+
+<script>
+  const courseNames = { 'ai-start':'시작 코스','ai-intro':'AI 입문','ai-work':'AI 실무','ai-builder':'AI 빌더','ai-engineer':'AI 엔지니어',automation:'자동화 개발','ai-finance':'AI 금융','ai-trends':'AI 트렌드' };
+  const difficultyNames = { intro:'입문',basic:'기초',intermediate:'중급',advanced:'고급',pro:'프로' };
+  const query = document.querySelector('#catalog-query');
+  const course = document.querySelector('#catalog-course');
+  const difficulty = document.querySelector('#catalog-difficulty');
+  const time = document.querySelector('#catalog-time');
+  const results = document.querySelector('#catalog-results');
+  const count = document.querySelector('#catalog-count');
+  let modules = [];
+
+  function card(mod) {
+    const article = document.createElement('article'); article.className = 'catalog-card';
+    const meta = document.createElement('p'); meta.className = 'catalog-meta'; meta.textContent = `${courseNames[mod.course]} · ${difficultyNames[mod.difficulty] ?? mod.difficulty} · ${mod.estimatedMinutes}분`;
+    const heading = document.createElement('h3'); const link = document.createElement('a'); link.href = mod.url; link.textContent = mod.title; heading.append(link);
+    const summary = document.createElement('p'); summary.textContent = mod.summary;
+    const tags = document.createElement('div'); tags.className = 'catalog-tags'; (mod.concepts ?? []).slice(0, 4).forEach((value) => { const tag = document.createElement('span'); tag.textContent = value; tags.append(tag); });
+    article.append(meta, heading, summary, tags); return article;
+  }
+  function render() {
+    const needle = query.value.trim().toLowerCase(); const max = Number(time.value || Infinity);
+    const filtered = modules.filter((mod) => (!course.value || mod.course === course.value) && (!difficulty.value || mod.difficulty === difficulty.value) && mod.estimatedMinutes <= max && (!needle || `${mod.title} ${mod.summary} ${(mod.tags ?? []).join(' ')} ${(mod.concepts ?? []).join(' ')}`.toLowerCase().includes(needle)));
+    count.textContent = `${filtered.length}개 학습 중 최대 60개 표시`;
+    results.replaceChildren(...filtered.slice(0, 60).map(card));
+  }
+  fetch('/data/catalog.json').then((response) => response.json()).then((data) => {
+    modules = data.modules;
+    data.courses.forEach((item) => { const option = document.createElement('option'); option.value = item.id; option.textContent = `${item.title.ko} (${item.moduleCount})`; course.append(option); });
+    render();
+  }).catch(() => { count.textContent = '학습 목록을 불러오지 못했습니다.'; });
+  [query, course, difficulty, time].forEach((control) => control?.addEventListener('input', render));
+</script>
+

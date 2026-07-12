@@ -231,7 +231,6 @@ filesystem + '@modelcontextprotocol/server-sequential-thinking' 두 개를 mcpSe
 ## 관련 개념
 
 - [Mcp](/concepts/mcp/)
-- [Intro](/concepts/intro/)
 
 
 ---

@@ -194,11 +194,7 @@ _검증된 작은 수익을 키우는 단계 — 가격 인상·상품 라인업
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Scale](/concepts/scale/)
-- [And](/concepts/and/)
-- [Protect](/concepts/protect/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

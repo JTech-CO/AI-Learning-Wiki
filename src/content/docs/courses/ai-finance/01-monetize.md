@@ -249,9 +249,7 @@ AI로 만들어 팔 수 있는 '디지털 상품' 아이디어 30개를 추천�
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Finance](/concepts/finance/)
-- [Monetize](/concepts/monetize/)
+- [Monetization](/concepts/monetization/)
 
 
 ---

@@ -219,9 +219,8 @@ AI는 수억 개의 카피·마케팅 문구를 학습해서 '누구에게, 무�
 
 ## 관련 개념
 
-- [Freelance](/concepts/freelance/)
-- [Niche](/concepts/niche/)
-- [Positioning](/concepts/positioning/)
+- [Monetization](/concepts/monetization/)
+- [Freelancing](/concepts/freelancing/)
 
 
 ---

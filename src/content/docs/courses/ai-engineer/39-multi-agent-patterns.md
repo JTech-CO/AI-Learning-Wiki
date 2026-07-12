@@ -219,9 +219,7 @@ AI 한 대에게 "써, 검수해, 다듬어"를 한꺼번에 시키면 머릿속
 
 ## 관련 개념
 
-- [Multi](/concepts/multi/)
 - [Agent](/concepts/agent/)
-- [Patterns](/concepts/patterns/)
 
 
 ---

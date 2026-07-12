@@ -229,9 +229,6 @@ Gmail Trigger → OpenAI(요약) 노드는 그대로 두고, 마지막 노드만
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Collaboration](/concepts/collaboration/)
-- [N8n](/concepts/n8n/)
 - [Automation](/concepts/automation/)
 
 

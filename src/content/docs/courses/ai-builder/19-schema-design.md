@@ -47,7 +47,7 @@ AI는 수억 개의 실제 서비스 스키마를 학습해서 "이 명사들이
 5. **외래키(FK)로 관계 연결하기** — 'A는 B에 속한다'는 관계를 FK로. '많은 쪽' 테이블에 '한 쪽'의 id를 넣음. 주문 하나는 회원 하나에 속하므로 `orders`에 member_id. 다대다(수강신청)는 중간 테이블로. (`enrollments`: id, member_id(FK→members.id), course_id(FK→courses.id))
 6. **다이어그램으로 그리고 AI로 검증** — 상자(테이블)를 그리고 컬럼을 나열한 뒤 FK를 화살표로 이음. 완성된 설계를 AI에게 붙여 넣어 정규화·누락·타입 문제를 점검. dbdiagram.io에 DBML로 붙이면 그림 자동 생성.
 
-```dbml
+```text
 Table members { id bigint [pk] }
 Table orders { id bigint [pk] member_id bigint [ref: > members.id] }
 ```

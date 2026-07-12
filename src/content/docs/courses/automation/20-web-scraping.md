@@ -241,8 +241,9 @@ import requests, csv\nfrom bs4 import BeautifulSoup\nr = requests.get('http://qu
 
 ## 관련 개념
 
-- [Web](/concepts/web/)
-- [Scraping](/concepts/scraping/)
+- [Api](/concepts/api/)
+- [Web Scraping](/concepts/web-scraping/)
+- [Automation](/concepts/automation/)
 
 
 ---

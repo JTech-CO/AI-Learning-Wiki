@@ -226,7 +226,8 @@ if(process.env.AUTOMATION_ENABLED!=='true') return; ... catch(e){ notifySlack('G
 
 ## 관련 개념
 
-- [Guards](/concepts/guards/)
+- [Automation](/concepts/automation/)
+- [Security](/concepts/security/)
 
 
 ---

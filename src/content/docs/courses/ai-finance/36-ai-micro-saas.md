@@ -222,10 +222,8 @@ MVP: '예약 1건을 캘린더에 자동 등록'만. 통계·다중계정·디�
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Micro](/concepts/micro/)
-- [Saas](/concepts/saas/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 
 
 ---

@@ -213,9 +213,8 @@ LiteLLM config.yaml을 만들어줘. 기본 모델은 [모델명], 폴백 순서
 
 ## 관련 개념
 
-- [Model](/concepts/model/)
-- [Routing](/concepts/routing/)
-- [Cost](/concepts/cost/)
+- [Llm](/concepts/llm/)
+- [Cost Control](/concepts/cost-control/)
 
 
 ---

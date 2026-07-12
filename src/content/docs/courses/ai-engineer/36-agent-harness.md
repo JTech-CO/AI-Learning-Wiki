@@ -268,10 +268,7 @@ anthropic 파이썬 SDK로 에이전트를 돌리다 아래 에러가 났다. �
 
 ## 관련 개념
 
-- [Literacy](/concepts/literacy/)
-- [Coding](/concepts/coding/)
 - [Agent](/concepts/agent/)
-- [Harness](/concepts/harness/)
 
 
 ---

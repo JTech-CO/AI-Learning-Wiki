@@ -219,8 +219,8 @@ Railway에 배포했더니 다음 에러 로그가 떴습니다. 무슨 문제�
 
 ## 관련 개념
 
-- [Deploy](/concepts/deploy/)
-- [Server](/concepts/server/)
+- [Automation](/concepts/automation/)
+- [Deployment](/concepts/deployment/)
 
 
 ---

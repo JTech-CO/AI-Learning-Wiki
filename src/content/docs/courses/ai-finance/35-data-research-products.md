@@ -217,12 +217,10 @@ chatgpt.com이나 claude.ai에 아래 '구조화' 프롬프트로, 모은 원자
 
 ## 관련 개념
 
-- [Finance](/concepts/finance/)
-- [Literacy](/concepts/literacy/)
-- [Verification](/concepts/verification/)
-- [Data](/concepts/data/)
+- [Monetization](/concepts/monetization/)
+- [Product Building](/concepts/product-building/)
 - [Research](/concepts/research/)
-- [Products](/concepts/products/)
+- [Data](/concepts/data/)
 
 
 ---
