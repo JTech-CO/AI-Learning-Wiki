@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 const failures = [];
 
-for (const required of ['index.html', '404.html', 'pagefind/pagefind.js']) {
+for (const required of ['index.html', '404.html']) {
   try { await access(path.join(DIST, required)); }
   catch { failures.push(`missing dist/${required}`); }
 }

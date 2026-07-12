@@ -16,7 +16,7 @@ expect(new Set(catalog.modules.map((item) => item.url)).size === 305, 'module UR
 expect(catalog.modules.every((item) => item.url.startsWith('/courses/') && item.title && item.summary), 'catalog has incomplete module entries');
 expect(prompts.prompts.every((item) => item.template && Array.isArray(item.examples)), 'prompt schema is incomplete');
 
-for (const route of ['index.html', 'paths/index.html', 'explore/index.html', 'prompt-explorer/index.html', 'pagefind/pagefind.js']) {
+for (const route of ['index.html', 'paths/index.html', 'explore/index.html', 'prompt-explorer/index.html', 'search/index.html']) {
   expect(await fileExists(path.join('dist', route)), `missing dist/${route}`);
 }
 for (const locale of ['en', 'es', 'ja', 'zh']) {

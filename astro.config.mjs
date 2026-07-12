@@ -10,6 +10,7 @@ export default defineConfig({
       head: [{ tag: 'script', attrs: { src: '/wiki-course-progress.js', defer: true } }],
       customCss: ['./src/styles/wiki.css', './src/styles/wiki-library.css'],
       locales: { root: { label: '한국어', lang: 'ko' } },
+      pagefind: false,
       pagination: false,
       components: {
         Header: './src/components/wiki/WikiHeader.astro',
