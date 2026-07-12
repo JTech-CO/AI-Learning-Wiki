@@ -166,7 +166,7 @@ PostgreSQL에서 WHERE [컬럼A] = ? AND [컬럼B] > ? ORDER BY [컬럼C] 형태
 
 ## 관련 개념
 
-- [Index](/concepts/index/)
+- [Database Index](/concepts/database-index/)
 - [Performance](/concepts/performance/)
 - [Explain Analyze](/concepts/explain-analyze/)
 - [Seq Scan](/concepts/seq-scan/)

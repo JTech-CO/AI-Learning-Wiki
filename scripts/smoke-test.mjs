@@ -6,9 +6,14 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 const failures = [];
 
-for (const required of ['index.html', '404.html', 'pagefind/pagefind.js', 'sitemap-index.xml']) {
+for (const required of ['index.html', '404.html', 'pagefind/pagefind.js']) {
   try { await access(path.join(DIST, required)); }
   catch { failures.push(`missing dist/${required}`); }
+}
+
+if (process.env.SITE_URL) {
+  try { await access(path.join(DIST, 'sitemap-index.xml')); }
+  catch { failures.push('missing dist/sitemap-index.xml with SITE_URL set'); }
 }
 
 const index = await readFile(path.join(DIST, 'index.html'), 'utf8').catch(() => '');

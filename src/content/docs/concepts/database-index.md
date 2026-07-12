@@ -1,6 +1,6 @@
 ---
-title: "Index"
-description: "'Index' 개념을 다루는 모듈"
+title: "Database Index"
+description: "'Database Index' 개념을 다루는 모듈"
 ---
 이 개념을 다루는 모듈:
 

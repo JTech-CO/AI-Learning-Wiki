@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://ai-learning-wiki.internal',
+  site: process.env.SITE_URL,
   integrations: [
     starlight({
       title: 'AI Learning Wiki',
