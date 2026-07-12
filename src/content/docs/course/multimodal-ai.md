@@ -7,29 +7,16 @@ description: "멀티모달 표현과 주요 생성·인식 기술의 관계를 �
 
 **대상:** 이미지·음성·텍스트 모델을 함께 이해하려는 학습자
 
-이 코스는 기존 실습 Guide의 순서를 재사용하지 않습니다. 백과 문서의 선행 관계를 기준으로 새로 구성한 읽기 순서입니다.
+## 권장 문서 순서
 
-## 권장 학습 순서
-
-1. [멀티모달 모델](/wiki/multimodal-model/) **필수**  
-   과정의 공통 언어와 출발점을 먼저 확립한다.
-2. [임베딩](/wiki/embedding/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-3. [멀티모달 임베딩](/wiki/multimodal-embedding/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-4. [비전-언어 모델](/wiki/vision-language-model/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-5. [광학 문자 인식](/wiki/ocr/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-6. [이미지 생성](/wiki/image-generation/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-7. [확산 모델](/wiki/diffusion-model/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-8. [음성 인식](/wiki/speech-recognition/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-9. [음성 합성](/wiki/text-to-speech/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-10. [모델 평가](/wiki/evaluation/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-11. [모델 라이선스](/wiki/model-license/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
+1. [멀티모달 모델](/wiki/multimodal-model/)
+2. [임베딩](/wiki/embedding/)
+3. [멀티모달 임베딩](/wiki/multimodal-embedding/)
+4. [비전-언어 모델](/wiki/vision-language-model/)
+5. [광학 문자 인식](/wiki/ocr/)
+6. [이미지 생성](/wiki/image-generation/)
+7. [확산 모델](/wiki/diffusion-model/)
+8. [음성 인식](/wiki/speech-recognition/)
+9. [음성 합성](/wiki/text-to-speech/)
+10. [모델 평가](/wiki/evaluation/)
+11. [모델 라이선스](/wiki/model-license/)

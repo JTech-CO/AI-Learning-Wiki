@@ -99,3 +99,7 @@ SDK 버전이 서버 기능과 어긋날 수 있어 변경 기록과 원시 HTTP
 ## 참고 문헌
 
 1. [MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+
+## 코스에서 계속 읽기
+
+- **AI API 개발:** [다음 문서 — API 키](/wiki/api-key/)

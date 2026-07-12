@@ -96,3 +96,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
+
+## 코스에서 계속 읽기
+
+- **모델 학습과 튜닝:** [다음 문서 — 손실 함수](/wiki/loss-function/)

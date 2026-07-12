@@ -97,3 +97,7 @@ AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리
 
 1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 2. [Information privacy — Wikipedia](https://en.wikipedia.org/wiki/Information_privacy) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — AI 거버넌스](/wiki/ai-governance/)

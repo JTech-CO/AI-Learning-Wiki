@@ -98,3 +98,7 @@ _포함된 코스가 없습니다._
 
 1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
 2. [Artificial neuron — Wikipedia](https://en.wikipedia.org/wiki/Artificial_neuron) — encyclopedia
+
+## 코스에서 계속 읽기
+
+_이 문서에서 이어지는 코스가 없습니다._

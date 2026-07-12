@@ -96,3 +96,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
+
+## 코스에서 계속 읽기
+
+- **AI API 개발:** [다음 문서 — 처리량](/wiki/throughput/)

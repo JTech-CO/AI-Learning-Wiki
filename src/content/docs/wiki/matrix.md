@@ -98,3 +98,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
 2. [Matrix multiplication — Wikipedia](https://en.wikipedia.org/wiki/Matrix_multiplication) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [다음 문서 — 신경망](/wiki/neural-network/)

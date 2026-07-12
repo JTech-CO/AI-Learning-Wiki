@@ -95,3 +95,7 @@ _해당 문서가 없습니다._
 
 1. [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
 2. [AI agent — Wikipedia](https://en.wikipedia.org/wiki/AI_agent) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 에이전트 시스템:** [다음 문서 — 에이전트 루프](/wiki/agent-loop/)

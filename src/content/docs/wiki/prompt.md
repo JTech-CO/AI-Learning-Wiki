@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
 2. [Prompt — Wikipedia](https://en.wikipedia.org/wiki/Prompt) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 환각](/wiki/hallucination/)

@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -20,12 +20,6 @@ const courses = JSON.parse(await readFile(path.join(ROOT, 'content-model', 'cour
 const modules = await Promise.all((await walk(DATA)).map(async (file) => JSON.parse(await readFile(file, 'utf8'))));
 modules.sort((a, b) => courses.findIndex((course) => course.id === a.course) - courses.findIndex((course) => course.id === b.course) || a.order - b.order);
 
-const route = (mod) => {
-  const number = String(mod.order).padStart(2, '0');
-  const tail = mod.id.split('/').at(-1);
-  const slug = tail.startsWith(number) ? tail : `${number}-${tail}`;
-  return `/courses/${mod.course}/${slug}/`;
-};
 const wikiArticleSlugs = new Set(
   (await readdir(path.join(ROOT, 'src', 'content', 'docs', 'wiki')))
     .filter((name) => name.endsWith('.md'))
@@ -122,48 +116,29 @@ const relatedWikiUrl = (mod, prompt) => {
   return `/wiki/${keyword}/`;
 };
 
-const catalog = modules.map((mod) => ({
-  id: mod.id,
-  course: mod.course,
-  order: mod.order,
-  title: mod.title.ko,
-  summary: mod.summary?.ko ?? '',
-  difficulty: mod.difficulty ?? 'basic',
-  tags: mod.tags ?? [],
-  concepts: mod.concepts ?? [],
-  estimatedMinutes: mod.estimatedMinutes ?? 20,
-  url: route(mod),
-}));
-
 const prompts = modules.flatMap((mod) => (mod.prompts ?? []).map((prompt, index) => {
   const wikiCourse = classifyWikiCourse(mod, prompt);
   const wikiUrl = relatedWikiUrl(mod, prompt);
   return {
     id: prompt.id ?? `${mod.id}-p${index + 1}`,
-    moduleId: mod.id,
-    sourceCourse: mod.course,
     course: wikiCourse.id,
     courseTitle: wikiCourse.title,
     courseUrl: wikiCourse.url,
-    moduleTitle: mod.title.ko,
     title: prompt.title.ko,
     template: prompt.template.ko,
     notes: prompt.notes?.ko ?? '',
-    tags: prompt.tags ?? [],
+    tags: (prompt.tags ?? []).filter((tag) => !/eduverse/i.test(tag)),
     examples: (prompt.examples ?? []).map((example) => ({
       label: example.label.ko,
       input: example.input.ko,
       output: example.output?.ko ?? '',
     })),
     relatedWikiUrl: wikiUrl,
-    sourceUrl: route(mod),
     url: wikiUrl,
   };
 }));
 
 await mkdir(OUT, { recursive: true });
-await Promise.all([
-  writeFile(path.join(OUT, 'catalog.json'), `${JSON.stringify({ generatedAt: new Date().toISOString(), courses, modules: catalog }, null, 2)}\n`, 'utf8'),
-  writeFile(path.join(OUT, 'prompts.json'), `${JSON.stringify({ generatedAt: new Date().toISOString(), prompts }, null, 2)}\n`, 'utf8'),
-]);
-console.log(`app data: ${catalog.length} modules, ${prompts.length} prompts`);
+await rm(path.join(OUT, 'catalog.json'), { force: true });
+await writeFile(path.join(OUT, 'prompts.json'), `${JSON.stringify({ generatedAt: new Date().toISOString(), prompts }, null, 2)}\n`, 'utf8');
+console.log('prompt data: ' + prompts.length + ' integrated prompts');

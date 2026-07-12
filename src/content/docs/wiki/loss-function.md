@@ -99,3 +99,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
+
+## 코스에서 계속 읽기
+
+- **모델 학습과 튜닝:** [다음 문서 — 역전파](/wiki/backpropagation/)

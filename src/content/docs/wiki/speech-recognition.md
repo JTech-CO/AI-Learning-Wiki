@@ -99,3 +99,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
+
+## 코스에서 계속 읽기
+
+- **멀티모달 AI:** [다음 문서 — 음성 합성](/wiki/text-to-speech/)

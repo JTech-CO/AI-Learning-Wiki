@@ -100,3 +100,7 @@ LLM 심사자는 평가 기준과 후보 응답을 입력받아 점수·순위·
 
 1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
 2. [LLM-as-a-Judge — Wikipedia](https://en.wikipedia.org/wiki/LLM-as-a-Judge) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 관측성](/wiki/observability/)

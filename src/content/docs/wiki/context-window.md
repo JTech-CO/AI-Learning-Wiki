@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
 2. [Context window — Wikipedia](https://en.wikipedia.org/wiki/Context_window) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [다음 문서 — 로짓](/wiki/logit/)

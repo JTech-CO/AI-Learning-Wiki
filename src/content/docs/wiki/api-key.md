@@ -99,3 +99,7 @@ API 키는 호출 주체나 프로젝트를 식별하는 비밀 문자열로, �
 ## 참고 문헌
 
 1. [MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+
+## 코스에서 계속 읽기
+
+- **AI API 개발:** [다음 문서 — 요청 한도](/wiki/rate-limit/)

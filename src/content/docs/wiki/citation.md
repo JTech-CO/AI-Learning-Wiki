@@ -94,3 +94,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
 2. [Citation — Wikipedia](https://en.wikipedia.org/wiki/Citation) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **임베딩과 RAG:** [코스 목록으로 돌아가기](/course/rag-search/)

@@ -1,6 +1,5 @@
 ---
 import wiki from '../../../public/data/wiki-index.json';
-import catalog from '../../../public/data/catalog.json';
 import prompts from '../../../public/data/prompts.json';
 
 const featured = wiki.articles.find((article) => article.id === 'large-language-model') ?? wiki.articles[0];
@@ -11,7 +10,7 @@ const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.re
   <header class="wiki-home-intro">
     <p class="wiki-home-name">AI Learning Wiki</p>
     <p>AI와 대규모 언어 모델의 원리, 용어, 기술을 서로 연결해 설명하는 한국어 백과사전입니다.</p>
-    <p class="wiki-counts">검토 완료 백과 문서 <strong>{wiki.counts.articles}</strong>개 · 학습 코스 <strong>{wiki.counts.courses}</strong>개 · 실습 자료 <strong>{catalog.modules.length}</strong>개 · 프롬프트 <strong>{prompts.prompts.length}</strong>개</p>
+    <p class="wiki-counts">검토 완료 백과 문서 <strong>{wiki.counts.articles}</strong>개 · 학습 코스 <strong>{wiki.counts.courses}</strong>개 · 프롬프트 <strong>{prompts.prompts.length}</strong>개</p>
   </header>
 
   <div class="wiki-home-columns">
@@ -42,7 +41,7 @@ const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.re
 
   <section class="wiki-home-section wiki-course-browser" aria-labelledby="wiki-course-title">
     <h2 id="wiki-course-title">Wiki 학습 코스</h2>
-    <p>기존 실습 Guide의 순서가 아니라 백과 문서의 선행 관계로 새로 구성한 읽기 과정입니다. 코스를 선택하지 않아도 위의 분류와 검색으로 모든 문서를 자유롭게 볼 수 있습니다.</p>
+    <p>백과 문서의 선행 관계를 따라 읽을 수 있도록 구성한 과정입니다. 코스를 선택하지 않아도 위의 분류와 검색으로 모든 문서를 자유롭게 볼 수 있습니다.</p>
     <div class="wiki-course-tabs" role="tablist" aria-label="학습 코스 선택">
       {wiki.courses.map((course, index) => <button type="button" role="tab" aria-selected={index === 0 ? 'true' : 'false'} data-course={course.id}>{course.title}</button>)}
     </div>
@@ -51,7 +50,7 @@ const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.re
         <h3><a href={course.url}>{course.title}</a></h3>
         <p>{course.description}</p>
         <ol>
-          {course.steps.slice(0, 12).map((step) => <li><a href={step.url}>{step.title}</a> <span>{step.required ? '필수' : '선택'}</span></li>)}
+          {course.steps.slice(0, 12).map((step) => <li><a href={step.url}>{step.title}</a></li>)}
         </ol>
         <p><a href={course.url}>전체 {course.steps.length}단계 보기</a></p>
       </div>
@@ -65,13 +64,13 @@ const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.re
         <li><a href="/special/all-pages/">전체 백과 문서</a></li>
         <li><a href="/glossary/">가나다·영문 용어 색인</a></li>
         <li><a href="/special/random/">무작위 백과 문서</a></li>
-        <li><a href="/search/">백과·실습·프롬프트 통합 검색</a></li>
+        <li><a href="/search/">백과·프롬프트 통합 검색</a></li>
       </ul>
     </section>
     <section class="wiki-home-section">
-      <h2>기존 자료실</h2>
-      <p>기존 305개 실습 자료와 1,173개 프롬프트는 삭제하지 않고 백과사전과 분리된 자료실로 보존합니다.</p>
-      <p><a href="/explore/">실습 자료 찾기</a> · <a href="/prompt-explorer/">프롬프트 찾기</a></p>
+      <h2>프롬프트 자료실</h2>
+      <p>업무·개발·학습에 바로 쓸 수 있는 1,173개 프롬프트를 Wiki 코스와 관련 백과 문서에 연결했습니다.</p>
+      <p><a href="/prompt-explorer/">프롬프트 검색하기</a></p>
     </section>
   </div>
 </div>

@@ -17,11 +17,11 @@
     "smoke": "node scripts/smoke-test.mjs",
     "data": "node scripts/build-app-data.mjs",
     "links": "node scripts/check-links.mjs",
-    "qa": "node scripts/qa-release.mjs",
+    "qa": "node scripts/qa-wiki-release.mjs",
     "sites:entry": "node scripts/build-sites-entry.mjs",
     "wiki:seed": "node scripts/seed-wiki-core.mjs && node scripts/enrich-wiki-articles.mjs",
     "wiki:validate": "node scripts/validate-wiki.mjs",
-    "wiki:build": "node scripts/build-wiki.mjs && node scripts/build-wiki-specials.mjs && node scripts/connect-guides-to-wiki.mjs",
+    "wiki:build": "node scripts/build-wiki.mjs && node scripts/build-wiki-specials.mjs",
     "wiki:test": "node scripts/test-wiki.mjs"
   },
   "dependencies": {

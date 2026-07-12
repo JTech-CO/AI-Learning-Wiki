@@ -3,8 +3,6 @@ title: 최근 검토 문서
 description: 최근 검토된 AI·LLM 백과 문서
 ---
 
-# 최근 검토 문서
-
 - 2026-07-12 — [가드레일](/wiki/guardrail/)
 - 2026-07-12 — [가중치](/wiki/weight/)
 - 2026-07-12 — [강화학습](/wiki/reinforcement-learning/)

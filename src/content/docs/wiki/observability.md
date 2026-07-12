@@ -97,3 +97,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
 2. [Observability (software) — Wikipedia](https://en.wikipedia.org/wiki/Observability_%28software%29) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 환각](/wiki/hallucination/)
+- **AI 에이전트 시스템:** [코스 목록으로 돌아가기](/course/agent-systems/)
+- **AI API 개발:** [다음 문서 — 추적](/wiki/tracing/)

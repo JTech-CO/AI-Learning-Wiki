@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
 2. [Vector database — Wikipedia](https://en.wikipedia.org/wiki/Vector_database) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **임베딩과 RAG:** [다음 문서 — 청킹](/wiki/chunking/)

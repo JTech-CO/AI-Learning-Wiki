@@ -94,3 +94,9 @@ _해당 문서가 없습니다._
 ## 참고 문헌
 
 1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
+
+## 코스에서 계속 읽기
+
+- **멀티모달 AI:** [다음 문서 — 멀티모달 임베딩](/wiki/multimodal-embedding/)
+- **임베딩과 RAG:** [다음 문서 — 임베딩 모델](/wiki/embedding-model/)
+- **LLM 내부 구조:** [다음 문서 — 토큰화](/wiki/tokenization/)

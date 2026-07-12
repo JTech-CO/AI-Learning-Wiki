@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
 2. [Diffusion model — Wikipedia](https://en.wikipedia.org/wiki/Diffusion_model) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **멀티모달 AI:** [다음 문서 — 음성 인식](/wiki/speech-recognition/)

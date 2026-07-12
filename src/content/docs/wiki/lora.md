@@ -99,3 +99,7 @@ LoRA는 원래 가중치를 고정하고 저랭크 행렬 두 개의 곱으로 �
 ## 참고 문헌
 
 1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
+
+## 코스에서 계속 읽기
+
+- **모델 학습과 튜닝:** [다음 문서 — 파라미터 효율적 미세조정](/wiki/peft/)

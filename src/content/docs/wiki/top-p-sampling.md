@@ -101,3 +101,7 @@ p와 온도를 함께 조절하면 효과가 상호작용하므로 품질·다�
 ## 참고 문헌
 
 1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [코스 목록으로 돌아가기](/course/llm-internals/)

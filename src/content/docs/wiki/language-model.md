@@ -95,3 +95,7 @@ _해당 문서가 없습니다._
 
 1. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
 2. [Language model — Wikipedia](https://en.wikipedia.org/wiki/Language_model) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 대규모 언어 모델](/wiki/large-language-model/)

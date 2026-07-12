@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
 2. [Machine learning — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 딥러닝](/wiki/deep-learning/)

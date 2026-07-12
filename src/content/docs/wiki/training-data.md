@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
 2. [Training, validation, and test data sets — Wikipedia](https://en.wikipedia.org/wiki/Training%2C_validation%2C_and_test_data_sets) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 신경망](/wiki/neural-network/)

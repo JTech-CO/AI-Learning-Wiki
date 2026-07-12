@@ -7,35 +7,19 @@ description: "용어와 원리부터 언어 모델의 기본 작동까지 이해
 
 **대상:** AI를 처음 체계적으로 이해하려는 학습자
 
-이 코스는 기존 실습 Guide의 순서를 재사용하지 않습니다. 백과 문서의 선행 관계를 기준으로 새로 구성한 읽기 순서입니다.
+## 권장 문서 순서
 
-## 권장 학습 순서
-
-1. [인공지능](/wiki/artificial-intelligence/) **필수**  
-   과정의 공통 언어와 출발점을 먼저 확립한다.
-2. [머신러닝](/wiki/machine-learning/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-3. [딥러닝](/wiki/deep-learning/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-4. [생성형 인공지능](/wiki/generative-ai/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-5. [모델](/wiki/model/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-6. [학습 데이터](/wiki/training-data/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-7. [신경망](/wiki/neural-network/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-8. [파라미터](/wiki/parameter/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-9. [언어 모델](/wiki/language-model/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-10. [대규모 언어 모델](/wiki/large-language-model/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-11. [토큰](/wiki/token/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-12. [다음 토큰 예측](/wiki/next-token-prediction/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-13. [프롬프트](/wiki/prompt/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-14. [환각](/wiki/hallucination/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
+1. [인공지능](/wiki/artificial-intelligence/)
+2. [머신러닝](/wiki/machine-learning/)
+3. [딥러닝](/wiki/deep-learning/)
+4. [생성형 인공지능](/wiki/generative-ai/)
+5. [모델](/wiki/model/)
+6. [학습 데이터](/wiki/training-data/)
+7. [신경망](/wiki/neural-network/)
+8. [파라미터](/wiki/parameter/)
+9. [언어 모델](/wiki/language-model/)
+10. [대규모 언어 모델](/wiki/large-language-model/)
+11. [토큰](/wiki/token/)
+12. [다음 토큰 예측](/wiki/next-token-prediction/)
+13. [프롬프트](/wiki/prompt/)
+14. [환각](/wiki/hallucination/)

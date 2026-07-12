@@ -99,3 +99,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+
+## 코스에서 계속 읽기
+
+- **AI API 개발:** [다음 문서 — 스트리밍 응답](/wiki/streaming-response/)

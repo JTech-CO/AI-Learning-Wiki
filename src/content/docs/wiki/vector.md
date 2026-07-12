@@ -95,3 +95,8 @@ _해당 문서가 없습니다._
 
 1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
 2. [Euclidean vector — Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **임베딩과 RAG:** [다음 문서 — 코사인 유사도](/wiki/cosine-similarity/)
+- **LLM 내부 구조:** [다음 문서 — 행렬](/wiki/matrix/)

@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 2. [Algorithmic bias — Wikipedia](https://en.wikipedia.org/wiki/Algorithmic_bias) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 개인정보 보호](/wiki/privacy/)

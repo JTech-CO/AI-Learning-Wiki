@@ -99,3 +99,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [다음 문서 — Top-k 샘플링](/wiki/top-k-sampling/)

@@ -97,3 +97,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
+
+## 코스에서 계속 읽기
+
+- **임베딩과 RAG:** [다음 문서 — 의미 검색](/wiki/semantic-search/)

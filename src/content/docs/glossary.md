@@ -3,8 +3,6 @@ title: 용어 색인
 description: AI·LLM 백과 문서 가나다 색인
 ---
 
-# 용어 색인
-
 - [가드레일](/wiki/guardrail/) <span class="wiki-en">Guardrail</span>
 - [가중치](/wiki/weight/) <span class="wiki-en">Weight</span>
 - [강화학습](/wiki/reinforcement-learning/) <span class="wiki-en">Reinforcement Learning</span>

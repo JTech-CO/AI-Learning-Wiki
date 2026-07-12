@@ -95,3 +95,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [The Open Source Definition](https://opensource.org/osd) — standard
 2. [Software license — Wikipedia](https://en.wikipedia.org/wiki/Software_license) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **멀티모달 AI:** [코스 목록으로 돌아가기](/course/multimodal-ai/)

@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
 2. [Accuracy and precision — Wikipedia](https://en.wikipedia.org/wiki/Accuracy_and_precision) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 정밀도와 재현율](/wiki/precision-recall/)

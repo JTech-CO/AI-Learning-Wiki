@@ -94,3 +94,7 @@ _포함된 코스가 없습니다._
 ## 참고 문헌
 
 1. [The Open Source Definition](https://opensource.org/osd) — standard
+
+## 코스에서 계속 읽기
+
+_이 문서에서 이어지는 코스가 없습니다._

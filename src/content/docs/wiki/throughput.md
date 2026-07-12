@@ -94,3 +94,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
 2. [Throughput — Wikipedia](https://en.wikipedia.org/wiki/Throughput) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI API 개발:** [다음 문서 — 관측성](/wiki/observability/)

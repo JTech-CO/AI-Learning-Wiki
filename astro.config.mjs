@@ -8,7 +8,6 @@ export default defineConfig({
     starlight({
       title: 'AI Learning Wiki',
       description: 'AI와 LLM을 연결해 설명하는 한국어 백과사전',
-      head: [{ tag: 'script', attrs: { src: '/wiki-course-progress.js', defer: true } }],
       customCss: ['./src/styles/wiki.css', './src/styles/wiki-library.css'],
       locales: { root: { label: '한국어', lang: 'ko' } },
       pagefind: false,
@@ -25,7 +24,6 @@ export default defineConfig({
         { label: '용어 색인', link: '/glossary/' },
         { label: '학습 코스', items: [{ autogenerate: { directory: 'course' } }] },
         { label: '백과 분류', items: [{ autogenerate: { directory: 'category' } }] },
-        { label: '실습 자료실', link: '/explore/' },
         { label: '프롬프트 자료실', link: '/prompt-explorer/' }
       ]
     })

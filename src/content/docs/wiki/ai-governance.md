@@ -93,3 +93,7 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 ## 참고 문헌
 
 1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [코스 목록으로 돌아가기](/course/responsible-ai/)

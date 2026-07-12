@@ -99,3 +99,7 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 ## 참고 문헌
 
 1. [MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+
+## 코스에서 계속 읽기
+
+- **AI API 개발:** [다음 문서 — JSON](/wiki/json/)

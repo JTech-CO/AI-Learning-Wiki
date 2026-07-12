@@ -97,3 +97,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
 2. [Grounding — Wikipedia](https://en.wikipedia.org/wiki/Grounding) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **임베딩과 RAG:** [다음 문서 — 인용](/wiki/citation/)

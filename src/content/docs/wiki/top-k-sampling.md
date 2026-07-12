@@ -101,3 +101,7 @@ Top-k 샘플링은 매 단계 확률이 높은 k개 토큰만 남기고 그 안�
 ## 참고 문헌
 
 1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [다음 문서 — Top-p 샘플링](/wiki/top-p-sampling/)

@@ -98,3 +98,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
 2. [Benchmark (computing) — Wikipedia](https://en.wikipedia.org/wiki/Benchmark_%28computing%29) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 평가 지표](/wiki/metric/)

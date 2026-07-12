@@ -101,3 +101,7 @@ Q·K·V는 고정된 의미 라벨이 아니라 학습된 선형 투영이므로
 ## 참고 문헌
 
 1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [다음 문서 — 위치 인코딩](/wiki/positional-encoding/)

@@ -97,3 +97,7 @@ _해당 문서가 없습니다._
 
 1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
 2. [Artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 머신러닝](/wiki/machine-learning/)

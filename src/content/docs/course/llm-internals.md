@@ -7,43 +7,23 @@ description: "토큰 처리에서 트랜스포머와 생성 파라미터까지 �
 
 **대상:** 언어 모델의 내부 원리를 이해하려는 학습자
 
-이 코스는 기존 실습 Guide의 순서를 재사용하지 않습니다. 백과 문서의 선행 관계를 기준으로 새로 구성한 읽기 순서입니다.
+## 권장 문서 순서
 
-## 권장 학습 순서
-
-1. [벡터](/wiki/vector/) **필수**  
-   과정의 공통 언어와 출발점을 먼저 확립한다.
-2. [행렬](/wiki/matrix/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-3. [신경망](/wiki/neural-network/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-4. [임베딩](/wiki/embedding/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-5. [토큰화](/wiki/tokenization/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-6. [어휘 집합](/wiki/vocabulary/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-7. [트랜스포머](/wiki/transformer/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-8. [어텐션](/wiki/attention/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-9. [셀프 어텐션](/wiki/self-attention/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-10. [쿼리·키·값](/wiki/query-key-value/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-11. [위치 인코딩](/wiki/positional-encoding/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-12. [디코더 전용 모델](/wiki/decoder-only-model/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-13. [컨텍스트 윈도우](/wiki/context-window/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-14. [로짓](/wiki/logit/) **필수**  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-15. [소프트맥스](/wiki/softmax/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-16. [생성 온도](/wiki/temperature/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-17. [Top-k 샘플링](/wiki/top-k-sampling/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
-18. [Top-p 샘플링](/wiki/top-p-sampling/) 선택  
-   앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.
+1. [벡터](/wiki/vector/)
+2. [행렬](/wiki/matrix/)
+3. [신경망](/wiki/neural-network/)
+4. [임베딩](/wiki/embedding/)
+5. [토큰화](/wiki/tokenization/)
+6. [어휘 집합](/wiki/vocabulary/)
+7. [트랜스포머](/wiki/transformer/)
+8. [어텐션](/wiki/attention/)
+9. [셀프 어텐션](/wiki/self-attention/)
+10. [쿼리·키·값](/wiki/query-key-value/)
+11. [위치 인코딩](/wiki/positional-encoding/)
+12. [디코더 전용 모델](/wiki/decoder-only-model/)
+13. [컨텍스트 윈도우](/wiki/context-window/)
+14. [로짓](/wiki/logit/)
+15. [소프트맥스](/wiki/softmax/)
+16. [생성 온도](/wiki/temperature/)
+17. [Top-k 샘플링](/wiki/top-k-sampling/)
+18. [Top-p 샘플링](/wiki/top-p-sampling/)

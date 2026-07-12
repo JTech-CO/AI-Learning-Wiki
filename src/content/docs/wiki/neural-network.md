@@ -95,3 +95,8 @@ _해당 문서가 없습니다._
 
 1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
 2. [Neural network — Wikipedia](https://en.wikipedia.org/wiki/Neural_network) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 파라미터](/wiki/parameter/)
+- **LLM 내부 구조:** [다음 문서 — 임베딩](/wiki/embedding/)

@@ -19,9 +19,13 @@ if (process.env.SITE_URL) {
 const index = await readFile(path.join(DIST, 'index.html'), 'utf8').catch(() => '');
 if (!index.includes('AI Learning Wiki')) failures.push('home page title missing');
 
-const courseRoot = path.join(DIST, 'courses');
+const courseRoot = path.join(DIST, 'course');
 const courseDirs = await readdir(courseRoot, { withFileTypes: true }).catch(() => []);
-if (courseDirs.filter((entry) => entry.isDirectory()).length < 8) failures.push('course routes incomplete');
+if (courseDirs.filter((entry) => entry.isDirectory()).length < 8) failures.push('Wiki course routes incomplete');
+for (const legacy of ['courses', 'explore/index.html', 'data/catalog.json']) {
+  try { await access(path.join(DIST, legacy)); failures.push('legacy public path remains: ' + legacy); }
+  catch {}
+}
 
 if (failures.length) {
   failures.forEach((message) => console.error(`ERROR ${message}`));

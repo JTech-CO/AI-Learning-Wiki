@@ -95,3 +95,7 @@ _해당 문서가 없습니다._
 
 1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
 2. [Transformer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [다음 문서 — 어텐션](/wiki/attention/)

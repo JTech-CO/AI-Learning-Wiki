@@ -94,3 +94,7 @@ _해당 문서가 없습니다._
 ## 참고 문헌
 
 1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
+
+## 코스에서 계속 읽기
+
+- **모델 학습과 튜닝:** [다음 문서 — 미세조정](/wiki/fine-tuning/)

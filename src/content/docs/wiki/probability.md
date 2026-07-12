@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
 2. [Probability — Wikipedia](https://en.wikipedia.org/wiki/Probability) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **모델 학습과 튜닝:** [다음 문서 — 기울기](/wiki/gradient/)

@@ -102,11 +102,17 @@ for (const file of files) {
   if (!mod.source?.url) warn(`source URL missing: ${mod.id}`);
   if (!mod.source?.capturedAt) warn(`capture time missing: ${mod.id}`);
 
-  if (checkGenerated) {
-    const generated = path.join(DOCS, 'courses', mod.course, `${moduleSlug(mod)}.md`);
-    try { await access(generated); }
-    catch { error(`generated page missing: ${path.relative(ROOT, generated)}`); }
+}
+
+if (checkGenerated) {
+  for (const legacy of ['courses', 'concepts']) {
+    try {
+      const entries = await readdir(path.join(DOCS, legacy));
+      if (entries.length) error('legacy generated directory remains: ' + legacy);
+    } catch (cause) { if (cause.code !== 'ENOENT') throw cause; }
   }
+  try { await access(path.join(DOCS, 'prompts.md')); error('legacy static prompt page remains'); }
+  catch (cause) { if (cause.code !== 'ENOENT') throw cause; }
 }
 
 for (const grouped of [

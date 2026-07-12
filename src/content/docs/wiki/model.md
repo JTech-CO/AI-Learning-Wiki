@@ -96,3 +96,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 학습 데이터](/wiki/training-data/)

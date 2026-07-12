@@ -99,3 +99,7 @@ REST라는 이름만으로 일관된 스키마·보안·버전 관리가 보장�
 ## 참고 문헌
 
 1. [MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+
+## 코스에서 계속 읽기
+
+- **AI API 개발:** [다음 문서 — SDK](/wiki/sdk/)

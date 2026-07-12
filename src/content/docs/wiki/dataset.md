@@ -100,3 +100,7 @@ _포함된 코스가 없습니다._
 
 1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
 2. [Data set — Wikipedia](https://en.wikipedia.org/wiki/Data_set) — encyclopedia
+
+## 코스에서 계속 읽기
+
+_이 문서에서 이어지는 코스가 없습니다._

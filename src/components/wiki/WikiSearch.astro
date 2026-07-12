@@ -1,12 +1,11 @@
 <section class="wiki-search-page">
   <form id="wiki-search-form" class="wiki-page-search" role="search">
-    <label for="wiki-search-query">전체 자료 검색</label>
+    <label for="wiki-search-query">백과·프롬프트 검색</label>
     <div><input id="wiki-search-query" name="q" type="search" autocomplete="off" /><button type="submit">검색</button></div>
   </form>
   <div class="wiki-search-filters" aria-label="자료 유형">
     <button type="button" data-type="all" aria-pressed="true">전체</button>
     <button type="button" data-type="article" aria-pressed="false">백과 문서</button>
-    <button type="button" data-type="guide" aria-pressed="false">실습 자료</button>
     <button type="button" data-type="prompt" aria-pressed="false">프롬프트</button>
   </div>
   <p id="wiki-search-count" aria-live="polite">검색어를 입력하세요.</p>
@@ -36,11 +35,10 @@
     count.textContent = `${ranked.length}개 결과`;
     results.innerHTML = ranked.map(({ item }) => `<article><p>${escapeHtml(item.typeLabel)}</p><h2><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h2><p>${escapeHtml(item.summary)}</p></article>`).join('');
   }
-  Promise.all([fetch('/data/wiki-index.json').then(r=>r.json()),fetch('/data/catalog.json').then(r=>r.json()),fetch('/data/prompts.json').then(r=>r.json())]).then(([wiki,catalog,prompts]) => {
+  Promise.all([fetch('/data/wiki-index.json').then(r=>r.json()),fetch('/data/prompts.json').then(r=>r.json())]).then(([wiki,prompts]) => {
     items = [
       ...wiki.articles.map(item => ({...item,type:'article',typeLabel:'백과 문서'})),
-      ...catalog.modules.map(item => ({...item,type:'guide',typeLabel:'실습 자료'})),
-      ...prompts.prompts.map(item => ({...item,type:'prompt',typeLabel:'프롬프트',summary:item.moduleTitle}))
+      ...prompts.prompts.map(item => ({...item,type:'prompt',typeLabel:'프롬프트',summary:'프롬프트 템플릿'}))
     ]; render();
   });
   form?.addEventListener('submit', (event) => { event.preventDefault(); history.replaceState(null,'',`?q=${encodeURIComponent(input.value)}`); render(); });

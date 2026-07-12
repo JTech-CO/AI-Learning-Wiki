@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
 2. [Precision and recall — Wikipedia](https://en.wikipedia.org/wiki/Precision_and_recall) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — LLM 심사자](/wiki/llm-as-a-judge/)

@@ -96,3 +96,8 @@ _해당 문서가 없습니다._
 1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 2. [환각 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%99%98%EA%B0%81) — encyclopedia
 3. [Hallucination (artificial intelligence) — Wikipedia](https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 프롬프트 인젝션](/wiki/prompt-injection/)
+- **AI 기초:** [코스 목록으로 돌아가기](/course/ai-foundations/)

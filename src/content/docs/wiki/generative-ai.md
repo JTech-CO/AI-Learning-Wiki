@@ -102,3 +102,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
 2. [Generative AI — Wikipedia](https://en.wikipedia.org/wiki/Generative_AI) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **AI 기초:** [다음 문서 — 모델](/wiki/model/)

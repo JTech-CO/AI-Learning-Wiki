@@ -100,3 +100,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
 2. [Nearest neighbor search — Wikipedia](https://en.wikipedia.org/wiki/Nearest_neighbor_search) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **임베딩과 RAG:** [다음 문서 — 근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)

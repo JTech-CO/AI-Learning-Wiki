@@ -21,9 +21,9 @@
   let prompts = [];
   function card(prompt) {
     const article = document.createElement('article'); article.className = 'prompt-card';
-    const meta = document.createElement('p'); meta.className = 'catalog-meta'; const courseLink = document.createElement('a'); courseLink.href = prompt.courseUrl; courseLink.textContent = courseNames[prompt.course] ?? prompt.courseTitle; meta.append(courseLink, ` · ${prompt.moduleTitle}`);
+    const meta = document.createElement('p'); meta.className = 'catalog-meta'; const courseLink = document.createElement('a'); courseLink.href = prompt.courseUrl; courseLink.textContent = courseNames[prompt.course] ?? prompt.courseTitle; meta.append(courseLink);
     const heading = document.createElement('h3'); heading.textContent = prompt.title;
-    const badge = document.createElement('span'); badge.className = `example-badge ${prompt.examples.length ? 'has-example' : ''}`; badge.textContent = prompt.examples.length ? `작성 예시 ${prompt.examples.length}개` : '원문 예시 없음';
+    const badge = document.createElement('span'); badge.className = `example-badge ${prompt.examples.length ? 'has-example' : ''}`; badge.textContent = prompt.examples.length ? `작성 예시 ${prompt.examples.length}개` : '작성 예시 없음';
     const pre = document.createElement('pre'); const code = document.createElement('code'); code.textContent = prompt.template; pre.append(code);
     const actions = document.createElement('div'); actions.className = 'prompt-actions';
     const copy = document.createElement('button'); copy.type = 'button'; copy.textContent = '프롬프트 복사'; copy.addEventListener('click', async () => { await navigator.clipboard.writeText(prompt.template); copy.textContent = '복사됨 ✓'; setTimeout(() => copy.textContent = '프롬프트 복사', 1200); });
@@ -35,7 +35,7 @@
   }
   function render() {
     const needle = query.value.trim().toLowerCase();
-    const filtered = prompts.filter((prompt) => (!course.value || prompt.course === course.value) && (!exampleFilter.value || (exampleFilter.value === 'yes') === Boolean(prompt.examples.length)) && (!needle || `${prompt.title} ${prompt.moduleTitle} ${prompt.template} ${(prompt.tags ?? []).join(' ')}`.toLowerCase().includes(needle)));
+    const filtered = prompts.filter((prompt) => (!course.value || prompt.course === course.value) && (!exampleFilter.value || (exampleFilter.value === 'yes') === Boolean(prompt.examples.length)) && (!needle || `${prompt.title} ${prompt.template} ${(prompt.tags ?? []).join(' ')}`.toLowerCase().includes(needle)));
     count.textContent = `${filtered.length}개 프롬프트 중 최대 40개 표시`;
     results.replaceChildren(...filtered.slice(0, 40).map(card));
   }

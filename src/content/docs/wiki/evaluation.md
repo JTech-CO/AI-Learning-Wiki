@@ -94,3 +94,8 @@ _해당 문서가 없습니다._
 ## 참고 문헌
 
 1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
+
+## 코스에서 계속 읽기
+
+- **멀티모달 AI:** [다음 문서 — 모델 라이선스](/wiki/model-license/)
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 벤치마크](/wiki/benchmark/)

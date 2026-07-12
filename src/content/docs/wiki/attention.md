@@ -98,3 +98,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
 2. [Attention (machine learning) — Wikipedia](https://en.wikipedia.org/wiki/Attention_%28machine_learning%29) — encyclopedia
+
+## 코스에서 계속 읽기
+
+- **LLM 내부 구조:** [다음 문서 — 셀프 어텐션](/wiki/self-attention/)

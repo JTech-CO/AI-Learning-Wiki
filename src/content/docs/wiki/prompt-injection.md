@@ -97,3 +97,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 참고 문헌
 
 1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+
+## 코스에서 계속 읽기
+
+- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 탈옥 공격](/wiki/jailbreak/)
+- **AI 에이전트 시스템:** [다음 문서 — 가드레일](/wiki/guardrail/)
