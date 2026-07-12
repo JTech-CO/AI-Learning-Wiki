@@ -1,0 +1,44 @@
+{
+  "version": "W0-2026-07-13",
+  "publicationState": "reviewed-only",
+  "tierTargetsPerCategory": { "core": 20, "standard": 50, "brief": 30 },
+  "lengthByTier": {
+    "core": { "minKoreanChars": 6000, "maxKoreanChars": 12000 },
+    "standard": { "minKoreanChars": 3500, "maxKoreanChars": 7000 },
+    "brief": { "minKoreanChars": 2000, "maxKoreanChars": 4000 }
+  },
+  "structure": {
+    "recommendedSectionCount": { "min": 5, "max": 8 },
+    "requiredFunctions": ["definition", "mechanism-or-logic", "distinctions", "applications", "limitations"],
+    "forbidSingleUniversalTemplate": true,
+    "titleFormat": "한국어 표제어 English Title"
+  },
+  "evidence": {
+    "minimumIndependentSourceFamilies": 3,
+    "minimumPrimarySources": 1,
+    "wikipediaLanguagesCountAsOneFamily": true,
+    "grokipediaCountsTowardMinimum": false,
+    "sourceRefsRequiredForEveryFactualSection": true,
+    "sentenceLevelSourceRefsRequiredFor": ["numbers", "dates", "benchmark-results", "law", "product-specification", "versioned-behavior"]
+  },
+  "graph": {
+    "minimumRelatedArticles": 3,
+    "allowNoPrerequisiteForRootConcept": true,
+    "forbidOrphans": true,
+    "primaryCategoryCountsOnce": true
+  },
+  "language": {
+    "requireTerminologyRegistry": true,
+    "rejectContextFreeLiteralTranslation": true,
+    "rejectUnexplainedAcronymOnFirstUse": true,
+    "preferNaturalKoreanWithEnglishTitle": true
+  },
+  "review": {
+    "allSafetyLegalFastChangingRequireManualReview": true,
+    "minimumManualSampleRateForOtherBatches": 0.1,
+    "evergreenReviewDays": 730,
+    "periodicReviewDays": 180,
+    "fastChangingReviewDays": 60,
+    "gates": ["schema", "source-diversity", "claim-citations", "terminology", "duplicate-prose", "internal-links", "external-links", "manual-review"]
+  }
+}

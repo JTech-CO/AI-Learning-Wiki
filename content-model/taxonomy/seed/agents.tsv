@@ -1,0 +1,100 @@
+ai-agent	AI 에이전트	AI Agent	architecture	periodic
+agent-loop	에이전트 루프	Agent Loop	architecture	evergreen
+workflow-orchestration	워크플로 오케스트레이션	Workflow Orchestration	architecture	periodic
+react-agent	ReAct 에이전트	ReAct Agent	architecture	periodic
+perceive-plan-act-cycle	인식-계획-행동 순환	Perceive-Plan-Act Cycle	architecture	evergreen
+sense-think-act-cycle	감지-사고-행동 순환	Sense-Think-Act Cycle	architecture	evergreen
+agent-goal	에이전트 목표	Agent Goal	architecture	evergreen
+agent-task-decomposition	에이전트 과제 분해	Agent Task Decomposition	architecture	periodic
+agent-control-loop	에이전트 제어 루프	Agent Control Loop	architecture	evergreen
+agent-autonomy-level	에이전트 자율성 수준	Agent Autonomy Level	architecture	periodic
+agent-runtime	에이전트 런타임	Agent Runtime	architecture	periodic
+agent-harness	에이전트 하네스	Agent Harness	architecture	periodic
+agent-executor	에이전트 실행기	Agent Executor	architecture	periodic
+orchestrator-agent	오케스트레이터 에이전트	Orchestrator Agent	architecture	periodic
+worker-agent	작업자 에이전트	Worker Agent	architecture	periodic
+planner-agent	계획자 에이전트	Planner Agent	architecture	periodic
+router-agent	라우터 에이전트	Router Agent	architecture	periodic
+agent-reflection	에이전트 성찰	Agent Reflection	architecture	periodic
+agent-self-correction	에이전트 자기 교정	Agent Self-Correction	architecture	periodic
+agent-termination-condition	에이전트 종료 조건	Agent Termination Condition	architecture	evergreen
+agent-tool	에이전트 도구	Agent Tool	tool-use	periodic
+tool-registry	도구 레지스트리	Tool Registry	tool-use	periodic
+tool-discovery	도구 발견	Tool Discovery	tool-use	periodic
+tool-selection	도구 선택	Tool Selection	tool-use	periodic
+tool-invocation	도구 실행	Tool Invocation	tool-use	periodic
+tool-result-handling	도구 결과 처리	Tool Result Handling	tool-use	evergreen
+webhook	웹훅	Webhook	tool-use	evergreen
+tool-permission	도구 권한	Tool Permission	tool-use	periodic
+agent-sandbox	에이전트 샌드박스	Agent Sandbox	tool-use	periodic
+computer-use-agent	컴퓨터 사용 에이전트	Computer-Use Agent	tool-use	fast-changing
+browser-use-agent	브라우저 사용 에이전트	Browser-Use Agent	tool-use	fast-changing
+code-execution-tool	코드 실행 도구	Code Execution Tool	tool-use	periodic
+api-action-tool	API 행동 도구	API Action Tool	tool-use	periodic
+human-approval-gate	인간 승인 게이트	Human Approval Gate	tool-use	periodic
+tool-side-effect	도구 부작용	Tool Side Effect	tool-use	evergreen
+agent-memory	에이전트 메모리	Agent Memory	memory-state	periodic
+state-management	상태 관리	State Management	memory-state	evergreen
+working-memory	작업 기억	Working Memory	memory-state	evergreen
+short-term-agent-memory	에이전트 단기 기억	Short-Term Agent Memory	memory-state	periodic
+long-term-agent-memory	에이전트 장기 기억	Long-Term Agent Memory	memory-state	periodic
+episodic-agent-memory	에이전트 일화 기억	Episodic Agent Memory	memory-state	periodic
+semantic-agent-memory	에이전트 의미 기억	Semantic Agent Memory	memory-state	periodic
+procedural-agent-memory	에이전트 절차 기억	Procedural Agent Memory	memory-state	periodic
+vector-memory	벡터 메모리	Vector Memory	memory-state	periodic
+conversation-memory	대화 메모리	Conversation Memory	memory-state	periodic
+agent-scratchpad	에이전트 스크래치패드	Agent Scratchpad	memory-state	periodic
+memory-consolidation	기억 통합	Memory Consolidation	memory-state	periodic
+memory-forgetting	기억 망각	Memory Forgetting	memory-state	periodic
+session-state	세션 상태	Session State	memory-state	evergreen
+persistent-agent-state	지속성 에이전트 상태	Persistent Agent State	memory-state	periodic
+planning	계획	Planning	planning-reasoning	evergreen
+plan-and-execute	계획 후 실행	Plan-and-Execute	planning-reasoning	periodic
+hierarchical-task-network	계층적 과제 네트워크	Hierarchical Task Network	planning-reasoning	evergreen
+tree-of-thoughts	생각의 나무	Tree of Thoughts	planning-reasoning	periodic
+graph-of-thoughts	생각의 그래프	Graph of Thoughts	planning-reasoning	periodic
+beam-planning	빔 계획	Beam Planning	planning-reasoning	periodic
+search-based-planning	탐색 기반 계획	Search-Based Planning	planning-reasoning	evergreen
+model-based-planning	모델 기반 계획	Model-Based Planning	planning-reasoning	evergreen
+agent-replanning	에이전트 재계획	Agent Replanning	planning-reasoning	periodic
+plan-verification	계획 검증	Plan Verification	planning-reasoning	periodic
+reasoning-action-interleaving	추론-행동 교차 수행	Reasoning-Action Interleaving	planning-reasoning	periodic
+agent-deliberation	에이전트 숙고	Agent Deliberation	planning-reasoning	periodic
+reflection-loop	성찰 루프	Reflection Loop	planning-reasoning	periodic
+critic-agent	비평 에이전트	Critic Agent	planning-reasoning	periodic
+verifier-agent	검증 에이전트	Verifier Agent	planning-reasoning	periodic
+multi-agent-system	멀티 에이전트 시스템	Multi-Agent System	multi-agent	periodic
+agent-swarm	에이전트 스웜	Agent Swarm	multi-agent	fast-changing
+agent-collaboration	에이전트 협업	Agent Collaboration	multi-agent	periodic
+agent-coordination	에이전트 조정	Agent Coordination	multi-agent	periodic
+inter-agent-communication	에이전트 간 통신	Inter-Agent Communication	multi-agent	periodic
+agent-delegation	에이전트 위임	Agent Delegation	multi-agent	periodic
+agent-role	에이전트 역할	Agent Role	multi-agent	evergreen
+multi-agent-consensus	다중 에이전트 합의	Multi-Agent Consensus	multi-agent	periodic
+multi-agent-debate	다중 에이전트 토론	Multi-Agent Debate	multi-agent	periodic
+blackboard-architecture	블랙보드 아키텍처	Blackboard Architecture	multi-agent	evergreen
+supervisor-agent	감독 에이전트	Supervisor Agent	multi-agent	periodic
+peer-to-peer-agents	피어투피어 에이전트	Peer-to-Peer Agents	multi-agent	periodic
+agent-handoff	에이전트 핸드오프	Agent Handoff	multi-agent	periodic
+shared-agent-memory	공유 에이전트 메모리	Shared Agent Memory	multi-agent	periodic
+multi-agent-conflict-resolution	다중 에이전트 갈등 해결	Multi-Agent Conflict Resolution	multi-agent	periodic
+mcp	모델 컨텍스트 프로토콜	Model Context Protocol	protocols-mcp	fast-changing
+mcp-host	MCP 호스트	MCP Host	protocols-mcp	fast-changing
+mcp-client	MCP 클라이언트	MCP Client	protocols-mcp	fast-changing
+mcp-server	MCP 서버	MCP Server	protocols-mcp	fast-changing
+mcp-tools	MCP 도구	MCP Tools	protocols-mcp	fast-changing
+mcp-resources	MCP 리소스	MCP Resources	protocols-mcp	fast-changing
+mcp-prompts	MCP 프롬프트	MCP Prompts	protocols-mcp	fast-changing
+mcp-sampling	MCP 샘플링	MCP Sampling	protocols-mcp	fast-changing
+mcp-elicitation	MCP 사용자 정보 요청	MCP Elicitation	protocols-mcp	fast-changing
+mcp-transport	MCP 전송 계층	MCP Transport	protocols-mcp	fast-changing
+agent-benchmark	에이전트 벤치마크	Agent Benchmark	evaluation-safety	periodic
+agent-trajectory-evaluation	에이전트 궤적 평가	Agent Trajectory Evaluation	evaluation-safety	periodic
+agent-task-success	에이전트 과제 성공률	Agent Task Success	evaluation-safety	periodic
+agent-tool-accuracy	에이전트 도구 정확도	Agent Tool Accuracy	evaluation-safety	periodic
+agent-plan-quality	에이전트 계획 품질	Agent Plan Quality	evaluation-safety	periodic
+agent-trace-evaluation	에이전트 추적 평가	Agent Trace Evaluation	evaluation-safety	periodic
+agent-guardrail	에이전트 가드레일	Agent Guardrail	evaluation-safety	periodic
+human-in-the-loop	인간 참여형 제어	Human in the Loop	evaluation-safety	evergreen
+runaway-agent	통제 이탈 에이전트	Runaway Agent	evaluation-safety	fast-changing
+agent-security	에이전트 보안	Agent Security	evaluation-safety	fast-changing

@@ -4,6 +4,8 @@ import path from 'node:path';
 const prompts = JSON.parse(await readFile('public/data/prompts.json', 'utf8'));
 const progress = JSON.parse(await readFile('content-model/progress.json', 'utf8'));
 const wiki = JSON.parse(await readFile('public/data/wiki-index.json', 'utf8'));
+const ledger = JSON.parse(await readFile('content-model/taxonomy/topic-ledger.json', 'utf8'));
+const expectedArticleCount = ledger.topics.filter((topic) => topic.state === 'existing').length;
 const failures = [];
 const expect = (condition, message) => { if (!condition) failures.push(message); };
 const fileExists = async (file) => { try { return (await stat(file)).isFile(); } catch { return false; } };
@@ -11,7 +13,7 @@ const readDist = (route) => readFile(path.join('dist', route), 'utf8');
 
 expect(prompts.prompts.length === 1173, 'prompt count: ' + prompts.prompts.length);
 expect(progress.totals?.complete === 305, 'source extraction coverage: ' + progress.totals?.complete);
-expect(wiki.articles.length === 150, 'wiki articles: ' + wiki.articles.length);
+expect(wiki.articles.length === expectedArticleCount, 'wiki articles: expected ' + expectedArticleCount + ', found ' + wiki.articles.length);
 expect(wiki.courses.length === 8, 'wiki courses: ' + wiki.courses.length);
 expect(prompts.prompts.every((item) => item.template && Array.isArray(item.examples)), 'prompt schema is incomplete');
 expect(prompts.prompts.every((item) => !('sourceUrl' in item) && !('sourceCourse' in item) && !('moduleId' in item) && !('moduleTitle' in item)), 'legacy lesson provenance remains public');
@@ -73,4 +75,4 @@ if (failures.length) {
   console.error('release QA: ' + failures.length + ' failure(s)\n- ' + failures.slice(0, 80).join('\n- '));
   process.exit(1);
 }
-console.log('release QA: 150 articles, 8 sequential courses, 1173 integrated prompts, no legacy lesson routes OK');
+console.log(`release QA: ${expectedArticleCount} articles, 8 sequential courses, 1173 integrated prompts, no legacy lesson routes OK`);

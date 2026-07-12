@@ -1,0 +1,100 @@
+language-model	언어 모델	Language Model	language-modeling	evergreen
+large-language-model	대규모 언어 모델	Large Language Model	language-modeling	periodic
+small-language-model	소규모 언어 모델	Small Language Model	language-modeling	periodic
+next-token-prediction	다음 토큰 예측	Next-Token Prediction	language-modeling	evergreen
+completion	컴플리션	Completion	language-modeling	evergreen
+autoregressive-language-model	자기회귀 언어 모델	Autoregressive Language Model	language-modeling	evergreen
+masked-language-model	마스크 언어 모델	Masked Language Model	language-modeling	evergreen
+causal-language-model	인과 언어 모델	Causal Language Model	language-modeling	evergreen
+sequence-likelihood	시퀀스 우도	Sequence Likelihood	language-modeling	evergreen
+n-gram-language-model	N-그램 언어 모델	N-Gram Language Model	language-modeling	evergreen
+neural-language-model	신경 언어 모델	Neural Language Model	language-modeling	evergreen
+conditional-language-model	조건부 언어 모델	Conditional Language Model	language-modeling	evergreen
+multilingual-language-model	다국어 언어 모델	Multilingual Language Model	language-modeling	periodic
+code-language-model	코드 언어 모델	Code Language Model	language-modeling	periodic
+multimodal-language-model	멀티모달 언어 모델	Multimodal Language Model	language-modeling	periodic
+token	토큰	Token	tokenization	evergreen
+tokenization	토큰화	Tokenization	tokenization	evergreen
+tokenizer	토크나이저	Tokenizer	tokenization	evergreen
+vocabulary	어휘 집합	Vocabulary	tokenization	evergreen
+byte-pair-encoding	바이트 페어 인코딩	Byte Pair Encoding	tokenization	evergreen
+wordpiece	WordPiece	WordPiece	tokenization	evergreen
+sentencepiece	SentencePiece	SentencePiece	tokenization	evergreen
+unigram-language-model-tokenizer	유니그램 언어 모델 토크나이저	Unigram Language Model Tokenizer	tokenization	evergreen
+character-tokenization	문자 단위 토큰화	Character Tokenization	tokenization	evergreen
+byte-level-tokenization	바이트 단위 토큰화	Byte-Level Tokenization	tokenization	evergreen
+subword-token	서브워드 토큰	Subword Token	tokenization	evergreen
+special-token	특수 토큰	Special Token	tokenization	evergreen
+beginning-end-token	시작·종료 토큰	Beginning and End Token	tokenization	evergreen
+padding-token	패딩 토큰	Padding Token	tokenization	evergreen
+out-of-vocabulary-token	미등록 토큰	Out-of-Vocabulary Token	tokenization	evergreen
+parameter	파라미터	Parameter	scaling	evergreen
+hyperparameter	하이퍼파라미터	Hyperparameter	scaling	evergreen
+mixture-of-experts	전문가 혼합	Mixture of Experts	scaling	periodic
+neural-scaling-law	신경망 스케일링 법칙	Neural Scaling Law	scaling	periodic
+compute-optimal-training	계산 최적 학습	Compute-Optimal Training	scaling	periodic
+parameter-count	파라미터 수	Parameter Count	scaling	evergreen
+model-size	모델 크기	Model Size	scaling	evergreen
+training-compute	학습 계산량	Training Compute	scaling	evergreen
+inference-compute	추론 계산량	Inference Compute	scaling	periodic
+dense-language-model	밀집 언어 모델	Dense Language Model	scaling	evergreen
+sparse-language-model	희소 언어 모델	Sparse Language Model	scaling	evergreen
+expert-routing	전문가 라우팅	Expert Routing	scaling	periodic
+expert-capacity-factor	전문가 용량 계수	Expert Capacity Factor	scaling	periodic
+emergent-ability	창발적 능력	Emergent Ability	scaling	periodic
+scaling-efficiency	스케일링 효율	Scaling Efficiency	scaling	periodic
+prompt	프롬프트	Prompt	prompting-icl	evergreen
+system-prompt	시스템 프롬프트	System Prompt	prompting-icl	periodic
+user-prompt	사용자 프롬프트	User Prompt	prompting-icl	evergreen
+instruction	지시문	Instruction	prompting-icl	evergreen
+zero-shot-prompting	제로샷 프롬프팅	Zero-Shot Prompting	prompting-icl	evergreen
+few-shot-prompting	퓨샷 프롬프팅	Few-Shot Prompting	prompting-icl	evergreen
+in-context-learning	문맥 내 학습	In-Context Learning	prompting-icl	evergreen
+chain-of-thought-prompting	사고 과정 프롬프팅	Chain-of-Thought Prompting	prompting-icl	periodic
+self-consistency-decoding	자기일관성 디코딩	Self-Consistency Decoding	prompting-icl	periodic
+prompt-template	프롬프트 템플릿	Prompt Template	prompting-icl	evergreen
+prompt-engineering	프롬프트 엔지니어링	Prompt Engineering	prompting-icl	periodic
+prompt-compression	프롬프트 압축	Prompt Compression	prompting-icl	periodic
+prompt-chaining	프롬프트 체이닝	Prompt Chaining	prompting-icl	periodic
+role-prompting	역할 프롬프팅	Role Prompting	prompting-icl	evergreen
+prompt-delimiter	프롬프트 구분자	Prompt Delimiter	prompting-icl	evergreen
+output-constraint	출력 제약	Output Constraint	prompting-icl	evergreen
+prompt-sensitivity	프롬프트 민감도	Prompt Sensitivity	prompting-icl	periodic
+automatic-prompt-optimization	자동 프롬프트 최적화	Automatic Prompt Optimization	prompting-icl	periodic
+retrieval-prompt	검색 결합 프롬프트	Retrieval Prompt	prompting-icl	periodic
+demonstration-example	시범 예시	Demonstration Example	prompting-icl	evergreen
+context-window	컨텍스트 윈도우	Context Window	context-memory	periodic
+context-length	문맥 길이	Context Length	context-memory	periodic
+context-engineering	컨텍스트 엔지니어링	Context Engineering	context-memory	fast-changing
+conversation-context	대화 문맥	Conversation Context	context-memory	evergreen
+context-truncation	문맥 절단	Context Truncation	context-memory	evergreen
+sliding-context-window	슬라이딩 컨텍스트 윈도우	Sliding Context Window	context-memory	periodic
+memory-token	메모리 토큰	Memory Token	context-memory	periodic
+external-language-model-memory	언어 모델 외부 메모리	External Language Model Memory	context-memory	periodic
+recurrent-language-model-memory	순환형 언어 모델 메모리	Recurrent Language Model Memory	context-memory	periodic
+context-caching	컨텍스트 캐싱	Context Caching	context-memory	periodic
+prompt-caching	프롬프트 캐싱	Prompt Caching	context-memory	periodic
+lost-in-the-middle	중간 정보 손실 현상	Lost in the Middle	context-memory	periodic
+context-utilization	문맥 활용률	Context Utilization	context-memory	periodic
+context-contamination	문맥 오염	Context Contamination	context-memory	periodic
+context-budget	문맥 예산	Context Budget	context-memory	periodic
+instruction-following	지시 이행	Instruction Following	model-properties	periodic
+reasoning-capability	추론 능력	Reasoning Capability	model-properties	fast-changing
+multilingual-capability	다국어 능력	Multilingual Capability	model-properties	periodic
+code-generation	코드 생성	Code Generation	model-properties	periodic
+steerability	조향 가능성	Steerability	model-properties	periodic
+controllability	제어 가능성	Controllability	model-properties	periodic
+model-knowledge	모델 지식	Model Knowledge	model-properties	periodic
+knowledge-cutoff	지식 기준 시점	Knowledge Cutoff	model-properties	fast-changing
+world-model	세계 모델	World Model	model-properties	periodic
+latent-knowledge	잠재 지식	Latent Knowledge	model-properties	periodic
+model-memorization	모델 암기	Model Memorization	model-properties	periodic
+in-context-generalization	문맥 내 일반화	In-Context Generalization	model-properties	periodic
+out-of-context-reasoning	문맥 밖 추론	Out-of-Context Reasoning	model-properties	periodic
+sycophancy	아첨 현상	Sycophancy	model-properties	periodic
+response-verbosity	응답 장황성	Response Verbosity	model-properties	periodic
+style-transfer	문체 변환	Style Transfer	model-properties	evergreen
+model-collapse	모델 붕괴	Model Collapse	model-properties	periodic
+token-efficiency	토큰 효율	Token Efficiency	model-properties	periodic
+language-model-confidence	언어 모델 신뢰도	Language Model Confidence	model-properties	periodic
+latent-reasoning	잠재 추론	Latent Reasoning	model-properties	fast-changing

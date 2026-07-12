@@ -1,0 +1,100 @@
+accuracy	정확도	Accuracy	metrics	evergreen
+metric	평가 지표	Evaluation Metric	metrics	evergreen
+precision-recall	정밀도와 재현율	Precision and Recall	metrics	evergreen
+f1-score	F1 점수	F1 Score	metrics	evergreen
+specificity	특이도	Specificity	metrics	evergreen
+evaluation	모델 평가	Model Evaluation	metrics	evergreen
+confusion-matrix	혼동 행렬	Confusion Matrix	metrics	evergreen
+roc-curve	ROC 곡선	Receiver Operating Characteristic Curve	metrics	evergreen
+area-under-curve	곡선 아래 면적	Area Under the Curve	metrics	evergreen
+precision-recall-curve	정밀도-재현율 곡선	Precision-Recall Curve	metrics	evergreen
+log-loss	로그 손실	Log Loss	metrics	evergreen
+brier-score	브라이어 점수	Brier Score	metrics	evergreen
+expected-calibration-error	기대 보정 오차	Expected Calibration Error	metrics	evergreen
+exact-match	완전 일치	Exact Match	metrics	evergreen
+bleu-score	BLEU 점수	BLEU Score	metrics	evergreen
+rouge-score	ROUGE 점수	ROUGE Score	metrics	evergreen
+meteor-score	METEOR 점수	METEOR Score	metrics	evergreen
+bertscore	BERTScore	BERTScore	metrics	periodic
+pass-at-k	Pass@K	Pass at K	metrics	periodic
+win-rate	승률	Win Rate	metrics	evergreen
+benchmark	벤치마크	Benchmark	benchmarks	periodic
+benchmark-dataset	벤치마크 데이터셋	Benchmark Dataset	benchmarks	periodic
+leaderboard	리더보드	Leaderboard	benchmarks	fast-changing
+benchmark-suite	벤치마크 모음	Benchmark Suite	benchmarks	periodic
+task-benchmark	과제 벤치마크	Task Benchmark	benchmarks	periodic
+capability-benchmark	능력 벤치마크	Capability Benchmark	benchmarks	periodic
+safety-benchmark	안전 벤치마크	Safety Benchmark	benchmarks	periodic
+mmlu	MMLU	Massive Multitask Language Understanding	benchmarks	periodic
+helm-benchmark	HELM 벤치마크	Holistic Evaluation of Language Models	benchmarks	periodic
+big-bench	BIG-bench	Beyond the Imitation Game Benchmark	benchmarks	periodic
+gpqa	GPQA	Graduate-Level Google-Proof Question and Answer Benchmark	benchmarks	periodic
+humaneval	HumanEval	HumanEval	benchmarks	periodic
+swe-bench	SWE-bench	SWE-bench	benchmarks	fast-changing
+mteb	MTEB	Massive Text Embedding Benchmark	benchmarks	periodic
+beir-benchmark	BEIR 벤치마크	Benchmarking Information Retrieval	benchmarks	periodic
+imagenet	ImageNet	ImageNet	benchmarks	periodic
+mlperf	MLPerf	MLPerf	benchmarks	fast-changing
+benchmark-saturation	벤치마크 포화	Benchmark Saturation	benchmarks	periodic
+dynamic-benchmark	동적 벤치마크	Dynamic Benchmark	benchmarks	periodic
+benchmark-validity	벤치마크 타당도	Benchmark Validity	benchmarks	periodic
+human-evaluation	인간 평가	Human Evaluation	human-evaluation	evergreen
+evaluation-rubric	평가 루브릭	Evaluation Rubric	human-evaluation	evergreen
+data-annotation	데이터 주석	Data Annotation	human-evaluation	evergreen
+annotator-agreement	주석자 합의도	Annotator Agreement	human-evaluation	evergreen
+inter-rater-reliability	평가자 간 신뢰도	Inter-Rater Reliability	human-evaluation	evergreen
+likert-scale	리커트 척도	Likert Scale	human-evaluation	evergreen
+pairwise-comparison	쌍대 비교	Pairwise Comparison	human-evaluation	evergreen
+blind-evaluation	맹검 평가	Blind Evaluation	human-evaluation	evergreen
+expert-evaluation	전문가 평가	Expert Evaluation	human-evaluation	evergreen
+crowdsourced-evaluation	크라우드소싱 평가	Crowdsourced Evaluation	human-evaluation	periodic
+evaluation-sampling	평가 표본추출	Evaluation Sampling	human-evaluation	evergreen
+annotation-adjudication	주석 판정	Annotation Adjudication	human-evaluation	evergreen
+annotator-fatigue	주석자 피로	Annotator Fatigue	human-evaluation	evergreen
+annotator-bias	주석자 편향	Annotator Bias	human-evaluation	evergreen
+qualitative-evaluation	정성 평가	Qualitative Evaluation	human-evaluation	evergreen
+llm-as-a-judge	LLM 심사자	LLM as a Judge	llm-judge	periodic
+automatic-rater	자동 평가자	Automatic Rater	llm-judge	periodic
+judge-model	심사 모델	Judge Model	llm-judge	periodic
+reference-based-evaluation	참조 기반 평가	Reference-Based Evaluation	llm-judge	evergreen
+reference-free-evaluation	참조 없는 평가	Reference-Free Evaluation	llm-judge	periodic
+rubric-based-judge	루브릭 기반 심사	Rubric-Based Judge	llm-judge	periodic
+pairwise-llm-judge	쌍대 LLM 심사	Pairwise LLM Judge	llm-judge	periodic
+pointwise-llm-judge	개별 LLM 심사	Pointwise LLM Judge	llm-judge	periodic
+judge-calibration	심사 모델 보정	Judge Calibration	llm-judge	periodic
+position-bias-in-judging	심사 위치 편향	Position Bias in Judging	llm-judge	periodic
+verbosity-bias	장황성 편향	Verbosity Bias	llm-judge	periodic
+self-preference-bias	자기 선호 편향	Self-Preference Bias	llm-judge	periodic
+judge-agreement	심사 모델 합의도	Judge Agreement	llm-judge	periodic
+judge-ensemble	심사 모델 앙상블	Judge Ensemble	llm-judge	periodic
+judge-meta-evaluation	심사 모델 메타평가	Judge Meta-Evaluation	llm-judge	periodic
+rag-evaluation	RAG 평가	RAG Evaluation	rag-agent-evaluation	periodic
+retrieval-evaluation	검색 평가	Retrieval Evaluation	rag-agent-evaluation	evergreen
+generation-evaluation	생성 평가	Generation Evaluation	rag-agent-evaluation	periodic
+faithfulness	충실성	Faithfulness	rag-agent-evaluation	periodic
+answer-relevance	답변 관련성	Answer Relevance	rag-agent-evaluation	periodic
+context-relevance	문맥 관련성	Context Relevance	rag-agent-evaluation	periodic
+citation-correctness	인용 정확성	Citation Correctness	rag-agent-evaluation	periodic
+groundedness	근거 충실도	Groundedness	rag-agent-evaluation	periodic
+agent-evaluation	에이전트 평가	Agent Evaluation	rag-agent-evaluation	periodic
+tool-use-evaluation	도구 사용 평가	Tool-Use Evaluation	rag-agent-evaluation	periodic
+planning-evaluation	계획 평가	Planning Evaluation	rag-agent-evaluation	periodic
+end-to-end-success-rate	종단간 성공률	End-to-End Success Rate	rag-agent-evaluation	periodic
+task-completion-rate	과제 완료율	Task Completion Rate	rag-agent-evaluation	periodic
+simulation-based-evaluation	시뮬레이션 기반 평가	Simulation-Based Evaluation	rag-agent-evaluation	periodic
+regression-evaluation	회귀 테스트형 평가	Regression Evaluation	rag-agent-evaluation	periodic
+observability	관측성	Observability	observability	periodic
+tracing	추적	Tracing	observability	periodic
+model-telemetry	모델 텔레메트리	Model Telemetry	observability	periodic
+prompt-trace	프롬프트 추적	Prompt Trace	observability	periodic
+token-usage-monitoring	토큰 사용량 모니터링	Token Usage Monitoring	observability	fast-changing
+latency-monitoring	지연 시간 모니터링	Latency Monitoring	observability	evergreen
+cost-monitoring	비용 모니터링	Cost Monitoring	observability	fast-changing
+model-drift-monitoring	모델 드리프트 모니터링	Model Drift Monitoring	observability	periodic
+user-feedback-collection	사용자 피드백 수집	User Feedback Collection	observability	evergreen
+production-evaluation	프로덕션 평가	Production Evaluation	observability	periodic
+statistical-significance	통계적 유의성	Statistical Significance	statistics-reproducibility	evergreen
+evaluation-uncertainty	평가 불확실성	Evaluation Uncertainty	statistics-reproducibility	evergreen
+bootstrap-confidence-interval	부트스트랩 신뢰구간	Bootstrap Confidence Interval	statistics-reproducibility	evergreen
+effect-size	효과 크기	Effect Size	statistics-reproducibility	evergreen
+reproducible-evaluation	재현 가능한 평가	Reproducible Evaluation	statistics-reproducibility	periodic

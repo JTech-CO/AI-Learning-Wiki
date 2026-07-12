@@ -1,0 +1,100 @@
+neuron	인공 뉴런	Artificial Neuron	components	evergreen
+layer	신경망 층	Neural Network Layer	components	evergreen
+weight	가중치	Weight	components	evergreen
+bias	편향 항	Bias Term	components	evergreen
+activation-function	활성화 함수	Activation Function	components	evergreen
+loss-function	손실 함수	Loss Function	components	evergreen
+forward-pass	순전파	Forward Pass	components	evergreen
+computational-graph	계산 그래프	Computational Graph	components	evergreen
+input-layer	입력층	Input Layer	components	evergreen
+output-layer	출력층	Output Layer	components	evergreen
+hidden-layer	은닉층	Hidden Layer	components	evergreen
+dense-layer	완전연결층	Dense Layer	components	evergreen
+linear-layer	선형층	Linear Layer	components	evergreen
+parameter-initialization	파라미터 초기화	Parameter Initialization	components	evergreen
+gradient-signal	그래디언트 신호	Gradient Signal	components	evergreen
+receptive-field	수용 영역	Receptive Field	components	evergreen
+hidden-state	은닉 상태	Hidden State	components	evergreen
+network-depth	신경망 깊이	Network Depth	components	evergreen
+network-width	신경망 너비	Network Width	components	evergreen
+neural-network	신경망	Neural Network	components	evergreen
+multilayer-perceptron	다층 퍼셉트론	Multilayer Perceptron	architectures	evergreen
+convolutional-neural-network	합성곱 신경망	Convolutional Neural Network	architectures	evergreen
+recurrent-neural-network	순환 신경망	Recurrent Neural Network	architectures	evergreen
+long-short-term-memory	장단기 메모리	Long Short-Term Memory	architectures	evergreen
+gated-recurrent-unit	게이트 순환 유닛	Gated Recurrent Unit	architectures	evergreen
+residual-network	잔차 신경망	Residual Network	architectures	evergreen
+densenet	DenseNet	DenseNet	architectures	evergreen
+u-net	U-Net	U-Net	architectures	evergreen
+generative-adversarial-network	생성적 적대 신경망	Generative Adversarial Network	architectures	evergreen
+variational-autoencoder	변분 오토인코더	Variational Autoencoder	architectures	evergreen
+energy-based-model	에너지 기반 모델	Energy-Based Model	architectures	evergreen
+hopfield-network	홉필드 네트워크	Hopfield Network	architectures	evergreen
+graph-neural-network	그래프 신경망	Graph Neural Network	architectures	evergreen
+graph-convolutional-network	그래프 합성곱 신경망	Graph Convolutional Network	architectures	evergreen
+graph-attention-network	그래프 어텐션 네트워크	Graph Attention Network	architectures	evergreen
+siamese-network	샴 신경망	Siamese Network	architectures	evergreen
+capsule-network	캡슐 네트워크	Capsule Network	architectures	evergreen
+neural-ordinary-differential-equation	신경 상미분방정식	Neural Ordinary Differential Equation	architectures	evergreen
+spiking-neural-network	스파이킹 신경망	Spiking Neural Network	architectures	periodic
+memory-network	메모리 네트워크	Memory Network	architectures	evergreen
+neural-turing-machine	신경 튜링 머신	Neural Turing Machine	architectures	evergreen
+deep-belief-network	심층 신뢰 신경망	Deep Belief Network	architectures	evergreen
+restricted-boltzmann-machine	제한 볼츠만 머신	Restricted Boltzmann Machine	architectures	evergreen
+echo-state-network	에코 상태 네트워크	Echo State Network	architectures	evergreen
+backpropagation	역전파	Backpropagation	architectures	evergreen
+gradient-descent	경사하강법	Gradient Descent	optimization	evergreen
+stochastic-gradient-descent	확률적 경사하강법	Stochastic Gradient Descent	optimization	evergreen
+mini-batch-gradient-descent	미니배치 경사하강법	Mini-Batch Gradient Descent	optimization	evergreen
+momentum-optimizer	모멘텀 최적화	Momentum Optimizer	optimization	evergreen
+nesterov-accelerated-gradient	네스테로프 가속 경사법	Nesterov Accelerated Gradient	optimization	evergreen
+adagrad	AdaGrad	AdaGrad	optimization	evergreen
+rmsprop	RMSProp	RMSProp	optimization	evergreen
+adam-optimizer	Adam 최적화	Adam Optimizer	optimization	evergreen
+adamw	AdamW	AdamW	optimization	evergreen
+learning-rate	학습률	Learning Rate	optimization	evergreen
+learning-rate-schedule	학습률 스케줄	Learning Rate Schedule	optimization	evergreen
+learning-rate-warmup	학습률 워밍업	Learning Rate Warmup	optimization	evergreen
+gradient-clipping	그래디언트 클리핑	Gradient Clipping	optimization	evergreen
+vanishing-gradient	그래디언트 소실	Vanishing Gradient	optimization	evergreen
+exploding-gradient	그래디언트 폭주	Exploding Gradient	optimization	evergreen
+second-order-optimization	2차 최적화	Second-Order Optimization	optimization	evergreen
+optimizer-state	옵티마이저 상태	Optimizer State	optimization	evergreen
+gradient-accumulation	그래디언트 누적	Gradient Accumulation	optimization	evergreen
+mixed-precision-training	혼합 정밀도 학습	Mixed-Precision Training	optimization	periodic
+adaptive-gradient-method	적응형 그래디언트 방법	Adaptive Gradient Method	optimization	evergreen
+dropout	드롭아웃	Dropout	regularization	evergreen
+weight-decay	가중치 감쇠	Weight Decay	regularization	evergreen
+l1-regularization	L1 정규화	L1 Regularization	regularization	evergreen
+l2-regularization	L2 정규화	L2 Regularization	regularization	evergreen
+early-stopping	조기 종료	Early Stopping	regularization	evergreen
+batch-normalization	배치 정규화	Batch Normalization	regularization	evergreen
+group-normalization	그룹 정규화	Group Normalization	regularization	evergreen
+instance-normalization	인스턴스 정규화	Instance Normalization	regularization	evergreen
+label-smoothing	레이블 스무딩	Label Smoothing	regularization	evergreen
+stochastic-depth	확률적 깊이	Stochastic Depth	regularization	evergreen
+spectral-normalization	스펙트럴 정규화	Spectral Normalization	regularization	evergreen
+noise-injection	잡음 주입	Noise Injection	regularization	evergreen
+max-norm-regularization	최대 노름 정규화	Max-Norm Regularization	regularization	evergreen
+mixup	Mixup	Mixup	regularization	evergreen
+cutmix	CutMix	CutMix	regularization	evergreen
+batch	배치	Batch	training-diagnostics	evergreen
+epoch	에포크	Epoch	training-diagnostics	evergreen
+training-loss	학습 손실	Training Loss	training-diagnostics	evergreen
+validation-loss	검증 손실	Validation Loss	training-diagnostics	evergreen
+learning-curve	학습 곡선	Learning Curve	training-diagnostics	evergreen
+gradient-norm	그래디언트 노름	Gradient Norm	training-diagnostics	evergreen
+loss-landscape	손실 지형	Loss Landscape	training-diagnostics	evergreen
+dead-neuron	죽은 뉴런	Dead Neuron	training-diagnostics	evergreen
+mode-collapse	모드 붕괴	Mode Collapse	training-diagnostics	evergreen
+training-convergence	학습 수렴	Training Convergence	training-diagnostics	evergreen
+saliency-map	현저성 지도	Saliency Map	interpretability	evergreen
+feature-visualization	특성 시각화	Feature Visualization	interpretability	evergreen
+activation-maximization	활성화 최대화	Activation Maximization	interpretability	evergreen
+integrated-gradients	통합 그래디언트	Integrated Gradients	interpretability	evergreen
+layer-wise-relevance-propagation	계층별 관련성 전파	Layer-Wise Relevance Propagation	interpretability	evergreen
+shapley-additive-explanations	SHAP 설명	SHapley Additive exPlanations	interpretability	evergreen
+local-interpretable-model-agnostic-explanations	LIME 설명	Local Interpretable Model-Agnostic Explanations	interpretability	evergreen
+concept-activation-vector	개념 활성화 벡터	Concept Activation Vector	interpretability	evergreen
+probing-classifier	프로빙 분류기	Probing Classifier	interpretability	evergreen
+mechanistic-interpretability	기계론적 해석 가능성	Mechanistic Interpretability	interpretability	periodic

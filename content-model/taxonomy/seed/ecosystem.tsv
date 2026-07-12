@@ -1,0 +1,100 @@
+model-hub	모델 허브	Model Hub	model-lifecycle	periodic
+model-registry	모델 레지스트리	Model Registry	model-lifecycle	periodic
+model-version	모델 버전	Model Version	model-lifecycle	periodic
+model-lineage	모델 계보	Model Lineage	model-lifecycle	periodic
+model-release	모델 출시	Model Release	model-lifecycle	fast-changing
+model-update	모델 업데이트	Model Update	model-lifecycle	fast-changing
+model-rollback	모델 롤백	Model Rollback	model-lifecycle	periodic
+model-retirement	모델 폐기	Model Retirement	model-lifecycle	periodic
+model-evaluation-report	모델 평가 보고서	Model Evaluation Report	model-lifecycle	periodic
+model-catalog	모델 카탈로그	Model Catalog	model-lifecycle	periodic
+model-package	모델 패키지	Model Package	model-lifecycle	periodic
+model-weights	모델 가중치 파일	Model Weights	model-lifecycle	periodic
+model-artifact-format	모델 아티팩트 형식	Model Artifact Format	model-lifecycle	periodic
+safetensors	SafeTensors	SafeTensors	model-lifecycle	periodic
+reproducible-model-build	재현 가능한 모델 빌드	Reproducible Model Build	model-lifecycle	periodic
+model-license	모델 라이선스	Model License	licensing-open-source	periodic
+open-source-model	오픈소스 모델	Open-Source Model	licensing-open-source	periodic
+open-weight-model	오픈 웨이트 모델	Open-Weight Model	licensing-open-source	periodic
+source-available-model	소스 공개 모델	Source-Available Model	licensing-open-source	periodic
+open-source-ai-definition	오픈소스 AI 정의	Open Source AI Definition	licensing-open-source	fast-changing
+permissive-license	허용적 라이선스	Permissive License	licensing-open-source	evergreen
+copyleft-license	카피레프트 라이선스	Copyleft License	licensing-open-source	evergreen
+research-only-license	연구 전용 라이선스	Research-Only License	licensing-open-source	periodic
+commercial-use-restriction	상업적 이용 제한	Commercial Use Restriction	licensing-open-source	periodic
+responsible-ai-license	책임 있는 AI 라이선스	Responsible AI License	licensing-open-source	periodic
+software-data-model-license	소프트웨어·데이터·모델 라이선스 구분	Software, Data, and Model Licenses	licensing-open-source	periodic
+license-compatibility	라이선스 호환성	License Compatibility	licensing-open-source	periodic
+attribution-requirement	저작자 표시 의무	Attribution Requirement	licensing-open-source	evergreen
+derivative-model	파생 모델	Derivative Model	licensing-open-source	periodic
+dataset-terms-of-use	데이터셋 이용 조건	Dataset Terms of Use	licensing-open-source	periodic
+dataset-hub	데이터셋 허브	Dataset Hub	hubs-registries	periodic
+model-repository	모델 저장소	Model Repository	hubs-registries	periodic
+artifact-registry	아티팩트 레지스트리	Artifact Registry	hubs-registries	periodic
+package-registry	패키지 레지스트리	Package Registry	hubs-registries	evergreen
+model-discovery	모델 탐색	Model Discovery	hubs-registries	periodic
+model-search	모델 검색	Model Search	hubs-registries	periodic
+model-metadata	모델 메타데이터	Model Metadata	hubs-registries	periodic
+model-collection	모델 컬렉션	Model Collection	hubs-registries	periodic
+interactive-model-demo	대화형 모델 데모	Interactive Model Demo	hubs-registries	periodic
+benchmark-registry	벤치마크 레지스트리	Benchmark Registry	hubs-registries	periodic
+graphics-processing-unit	그래픽 처리 장치	Graphics Processing Unit	hardware-cloud	periodic
+tensor-processing-unit	텐서 처리 장치	Tensor Processing Unit	hardware-cloud	periodic
+neural-processing-unit	신경망 처리 장치	Neural Processing Unit	hardware-cloud	fast-changing
+ai-accelerator	AI 가속기	AI Accelerator	hardware-cloud	fast-changing
+cloud-ai-service	클라우드 AI 서비스	Cloud AI Service	hardware-cloud	fast-changing
+on-premises-ai	온프레미스 AI	On-Premises AI	hardware-cloud	periodic
+edge-ai	엣지 AI	Edge AI	hardware-cloud	periodic
+ai-datacenter	AI 데이터센터	AI Datacenter	hardware-cloud	fast-changing
+compute-cluster	컴퓨트 클러스터	Compute Cluster	hardware-cloud	periodic
+accelerator-interconnect	가속기 인터커넥트	Accelerator Interconnect	hardware-cloud	periodic
+nvlink	NVLink	NVLink	hardware-cloud	fast-changing
+infiniband	InfiniBand	InfiniBand	hardware-cloud	periodic
+cuda	CUDA	CUDA	hardware-cloud	fast-changing
+rocm	ROCm	ROCm	hardware-cloud	fast-changing
+accelerator-memory-hierarchy	가속기 메모리 계층	Accelerator Memory Hierarchy	hardware-cloud	periodic
+machine-learning-framework	머신러닝 프레임워크	Machine Learning Framework	data-tooling	periodic
+tensor-library	텐서 라이브러리	Tensor Library	data-tooling	periodic
+pytorch	PyTorch	PyTorch	data-tooling	fast-changing
+tensorflow	TensorFlow	TensorFlow	data-tooling	fast-changing
+jax	JAX	JAX	data-tooling	fast-changing
+keras	Keras	Keras	data-tooling	fast-changing
+transformers-library	Transformers 라이브러리	Transformers Library	data-tooling	fast-changing
+dataset-library	데이터셋 라이브러리	Dataset Library	data-tooling	periodic
+experiment-tracking	실험 추적	Experiment Tracking	data-tooling	periodic
+feature-store	특성 저장소	Feature Store	data-tooling	periodic
+data-version-control	데이터 버전 관리	Data Version Control	data-tooling	periodic
+ml-pipeline-orchestrator	ML 파이프라인 오케스트레이터	ML Pipeline Orchestrator	data-tooling	periodic
+interactive-notebook	대화형 노트북	Interactive Notebook	data-tooling	periodic
+mlflow	MLflow	MLflow	data-tooling	fast-changing
+experiment-dashboard	실험 대시보드	Experiment Dashboard	data-tooling	periodic
+mlops	MLOps	MLOps	deployment-platforms	periodic
+llmops	LLMOps	LLMOps	deployment-platforms	fast-changing
+model-deployment	모델 배포	Model Deployment	deployment-platforms	periodic
+containerized-model	컨테이너화 모델	Containerized Model	deployment-platforms	periodic
+kubernetes-for-ai	AI용 쿠버네티스	Kubernetes for AI	deployment-platforms	periodic
+model-serving-platform	모델 서빙 플랫폼	Model Serving Platform	deployment-platforms	fast-changing
+managed-inference-platform	관리형 추론 플랫폼	Managed Inference Platform	deployment-platforms	fast-changing
+edge-model-deployment	엣지 모델 배포	Edge Model Deployment	deployment-platforms	periodic
+mobile-model-deployment	모바일 모델 배포	Mobile Model Deployment	deployment-platforms	periodic
+model-monitoring-platform	모델 모니터링 플랫폼	Model Monitoring Platform	deployment-platforms	periodic
+mlcommons	MLCommons	MLCommons	standards-organizations	periodic
+open-neural-network-exchange	개방형 신경망 교환 형식	Open Neural Network Exchange	standards-organizations	periodic
+nist-ai-program	NIST AI 프로그램	NIST AI Program	standards-organizations	periodic
+iso-iec-jtc1-sc42	ISO/IEC JTC 1/SC 42	ISO/IEC JTC 1/SC 42	standards-organizations	periodic
+ieee-ai-standards	IEEE AI 표준	IEEE AI Standards	standards-organizations	periodic
+oecd-ai-principles	OECD AI 원칙	OECD AI Principles	standards-organizations	periodic
+partnership-on-ai	Partnership on AI	Partnership on AI	standards-organizations	periodic
+linux-foundation-ai-data	Linux Foundation AI & Data	Linux Foundation AI & Data	standards-organizations	periodic
+w3c-web-machine-learning	W3C 웹 머신러닝	W3C Web Machine Learning	standards-organizations	periodic
+ai-interoperability-standard	AI 상호운용성 표준	AI Interoperability Standard	standards-organizations	fast-changing
+compute-cost	계산 비용	Compute Cost	economics-sustainability	fast-changing
+training-cost	학습 비용	Training Cost	economics-sustainability	fast-changing
+inference-economics	추론 경제성	Inference Economics	economics-sustainability	fast-changing
+ai-supply-chain	AI 공급망	AI Supply Chain	economics-sustainability	fast-changing
+ai-chip-availability	AI 칩 가용성	AI Chip Availability	economics-sustainability	fast-changing
+ai-energy-consumption	AI 에너지 소비	AI Energy Consumption	economics-sustainability	fast-changing
+ai-carbon-footprint	AI 탄소 발자국	AI Carbon Footprint	economics-sustainability	periodic
+ai-water-footprint	AI 물 발자국	AI Water Footprint	economics-sustainability	periodic
+total-cost-of-ownership-for-ai	AI 총소유비용	Total Cost of Ownership for AI	economics-sustainability	fast-changing
+model-commoditization	모델 범용재화화	Model Commoditization	economics-sustainability	fast-changing

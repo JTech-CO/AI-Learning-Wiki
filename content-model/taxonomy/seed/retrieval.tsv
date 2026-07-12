@@ -1,0 +1,100 @@
+embedding	임베딩	Embedding	embeddings	evergreen
+embedding-model	임베딩 모델	Embedding Model	embeddings	periodic
+dense-embedding	밀집 임베딩	Dense Embedding	embeddings	evergreen
+sparse-embedding	희소 임베딩	Sparse Embedding	embeddings	evergreen
+sentence-embedding	문장 임베딩	Sentence Embedding	embeddings	evergreen
+document-embedding	문서 임베딩	Document Embedding	embeddings	evergreen
+query-embedding	질의 임베딩	Query Embedding	embeddings	evergreen
+embedding-pooling	임베딩 풀링	Embedding Pooling	embeddings	evergreen
+embedding-anisotropy	임베딩 비등방성	Embedding Anisotropy	embeddings	periodic
+embedding-normalization	임베딩 정규화	Embedding Normalization	embeddings	evergreen
+embedding-dimension	임베딩 차원	Embedding Dimension	embeddings	evergreen
+matryoshka-embedding	마트료시카 임베딩	Matryoshka Embedding	embeddings	periodic
+cross-lingual-embedding	교차언어 임베딩	Cross-Lingual Embedding	embeddings	periodic
+instruction-tuned-embedding	지시 튜닝 임베딩	Instruction-Tuned Embedding	embeddings	periodic
+embedding-drift	임베딩 드리프트	Embedding Drift	embeddings	periodic
+vector-database	벡터 데이터베이스	Vector Database	indexes-vector-db	periodic
+approximate-nearest-neighbor	근사 최근접 이웃 검색	Approximate Nearest Neighbor	indexes-vector-db	evergreen
+nearest-neighbor-search	최근접 이웃 검색	Nearest Neighbor Search	indexes-vector-db	evergreen
+inverted-index	역색인	Inverted Index	indexes-vector-db	evergreen
+hierarchical-navigable-small-world	계층적 탐색 가능 소세계 그래프	Hierarchical Navigable Small World	indexes-vector-db	evergreen
+inverted-file-index	역파일 인덱스	Inverted File Index	indexes-vector-db	evergreen
+product-quantization	곱 양자화	Product Quantization	indexes-vector-db	evergreen
+locality-sensitive-hashing	지역 민감 해싱	Locality-Sensitive Hashing	indexes-vector-db	evergreen
+flat-vector-index	평면 벡터 인덱스	Flat Vector Index	indexes-vector-db	evergreen
+diskann	DiskANN	DiskANN	indexes-vector-db	periodic
+scann	ScaNN	ScaNN	indexes-vector-db	periodic
+faiss	FAISS	FAISS	indexes-vector-db	periodic
+vector-index	벡터 인덱스	Vector Index	indexes-vector-db	evergreen
+distance-metric-selection	거리 지표 선택	Distance Metric Selection	indexes-vector-db	evergreen
+index-building	인덱스 구축	Index Building	indexes-vector-db	evergreen
+incremental-index-update	증분 인덱스 갱신	Incremental Index Update	indexes-vector-db	periodic
+index-sharding	인덱스 샤딩	Index Sharding	indexes-vector-db	periodic
+index-replication	인덱스 복제	Index Replication	indexes-vector-db	periodic
+metadata-filtering	메타데이터 필터링	Metadata Filtering	indexes-vector-db	evergreen
+recall-latency-tradeoff	재현율-지연 시간 절충	Recall-Latency Tradeoff	indexes-vector-db	evergreen
+retriever	검색기	Retriever	retrieval-methods	evergreen
+semantic-search	의미 검색	Semantic Search	retrieval-methods	evergreen
+keyword-search	키워드 검색	Keyword Search	retrieval-methods	evergreen
+bm25	BM25	Best Matching 25	retrieval-methods	evergreen
+lexical-retrieval	어휘 검색	Lexical Retrieval	retrieval-methods	evergreen
+dense-retrieval	밀집 검색	Dense Retrieval	retrieval-methods	evergreen
+sparse-neural-retrieval	희소 신경 검색	Sparse Neural Retrieval	retrieval-methods	periodic
+hybrid-search	하이브리드 검색	Hybrid Search	retrieval-methods	periodic
+multi-vector-retrieval	다중 벡터 검색	Multi-Vector Retrieval	retrieval-methods	periodic
+query-expansion	질의 확장	Query Expansion	retrieval-methods	evergreen
+query-rewriting	질의 재작성	Query Rewriting	retrieval-methods	periodic
+pseudo-relevance-feedback	의사 관련성 피드백	Pseudo-Relevance Feedback	retrieval-methods	evergreen
+maximal-marginal-relevance	최대 한계 관련성	Maximal Marginal Relevance	retrieval-methods	evergreen
+passage-retrieval	구절 검색	Passage Retrieval	retrieval-methods	evergreen
+document-retrieval	문서 검색	Document Retrieval	retrieval-methods	evergreen
+federated-search	연합 검색	Federated Search	retrieval-methods	evergreen
+faceted-search	패싯 검색	Faceted Search	retrieval-methods	evergreen
+retrieval-filtering	검색 필터링	Retrieval Filtering	retrieval-methods	evergreen
+recursive-retrieval	재귀 검색	Recursive Retrieval	retrieval-methods	periodic
+adaptive-retrieval	적응형 검색	Adaptive Retrieval	retrieval-methods	periodic
+rag	검색 증강 생성	Retrieval-Augmented Generation	rag-pipeline	periodic
+chunking	청킹	Chunking	rag-pipeline	evergreen
+citation	인용	Citation	rag-pipeline	evergreen
+grounding	근거화	Grounding	rag-pipeline	periodic
+chunk-size	청크 크기	Chunk Size	rag-pipeline	evergreen
+chunk-overlap	청크 중첩	Chunk Overlap	rag-pipeline	evergreen
+sentence-segmentation	문장 분할	Sentence Segmentation	rag-pipeline	evergreen
+document-parsing	문서 파싱	Document Parsing	rag-pipeline	periodic
+document-ingestion-pipeline	문서 수집 파이프라인	Document Ingestion Pipeline	rag-pipeline	periodic
+retrieval-context	검색 문맥	Retrieval Context	rag-pipeline	evergreen
+context-assembly	문맥 조립	Context Assembly	rag-pipeline	periodic
+context-compression-for-rag	RAG 문맥 압축	Context Compression for RAG	rag-pipeline	periodic
+citation-generation	인용 생성	Citation Generation	rag-pipeline	periodic
+grounded-generation	근거 기반 생성	Grounded Generation	rag-pipeline	periodic
+query-routing	질의 라우팅	Query Routing	rag-pipeline	periodic
+multi-hop-rag	다중 홉 RAG	Multi-Hop RAG	rag-pipeline	periodic
+iterative-rag	반복형 RAG	Iterative RAG	rag-pipeline	periodic
+corrective-rag	교정형 RAG	Corrective RAG	rag-pipeline	periodic
+self-rag	Self-RAG	Self-Reflective Retrieval-Augmented Generation	rag-pipeline	periodic
+agentic-rag	에이전트형 RAG	Agentic RAG	rag-pipeline	fast-changing
+reranker	리랭커	Reranker	reranking-evaluation	periodic
+cross-encoder-reranker	크로스 인코더 리랭커	Cross-Encoder Reranker	reranking-evaluation	evergreen
+pointwise-ranking	포인트와이즈 순위화	Pointwise Ranking	reranking-evaluation	evergreen
+pairwise-ranking	페어와이즈 순위화	Pairwise Ranking	reranking-evaluation	evergreen
+listwise-ranking	리스트와이즈 순위화	Listwise Ranking	reranking-evaluation	evergreen
+reciprocal-rank-fusion	역순위 결합	Reciprocal Rank Fusion	reranking-evaluation	evergreen
+learning-to-rank	순위 학습	Learning to Rank	reranking-evaluation	evergreen
+relevance-score	관련성 점수	Relevance Score	reranking-evaluation	evergreen
+precision-at-k	Precision@K	Precision at K	reranking-evaluation	evergreen
+recall-at-k	Recall@K	Recall at K	reranking-evaluation	evergreen
+mean-reciprocal-rank	평균 역순위	Mean Reciprocal Rank	reranking-evaluation	evergreen
+normalized-discounted-cumulative-gain	정규화 할인 누적 이득	Normalized Discounted Cumulative Gain	reranking-evaluation	evergreen
+retrieval-hit-rate	검색 적중률	Retrieval Hit Rate	reranking-evaluation	evergreen
+context-precision	문맥 정밀도	Context Precision	reranking-evaluation	periodic
+context-recall	문맥 재현율	Context Recall	reranking-evaluation	periodic
+knowledge-graph	지식 그래프	Knowledge Graph	graph-hybrid	evergreen
+graph-rag	GraphRAG	Graph Retrieval-Augmented Generation	graph-hybrid	periodic
+entity-linking	개체 연결	Entity Linking	graph-hybrid	evergreen
+graph-retrieval	그래프 검색	Graph Retrieval	graph-hybrid	periodic
+subgraph-retrieval	부분 그래프 검색	Subgraph Retrieval	graph-hybrid	periodic
+ontology	온톨로지	Ontology	graph-hybrid	evergreen
+triple-store	트리플 저장소	Triple Store	graph-hybrid	evergreen
+sparql	SPARQL	SPARQL	graph-hybrid	evergreen
+hybrid-rag	하이브리드 RAG	Hybrid RAG	graph-hybrid	periodic
+knowledge-graph-embedding	지식 그래프 임베딩	Knowledge Graph Embedding	graph-hybrid	evergreen

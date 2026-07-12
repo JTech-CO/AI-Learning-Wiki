@@ -1,0 +1,100 @@
+attention	어텐션	Attention	attention	evergreen
+self-attention	셀프 어텐션	Self-Attention	attention	evergreen
+cross-attention	크로스 어텐션	Cross-Attention	attention	evergreen
+query-key-value	쿼리·키·값	Query, Key, Value	attention	evergreen
+multi-head-attention	멀티헤드 어텐션	Multi-Head Attention	attention	evergreen
+scaled-dot-product-attention	스케일드 닷프로덕트 어텐션	Scaled Dot-Product Attention	attention	evergreen
+additive-attention	가산 어텐션	Additive Attention	attention	evergreen
+dot-product-attention	닷프로덕트 어텐션	Dot-Product Attention	attention	evergreen
+local-attention	로컬 어텐션	Local Attention	attention	evergreen
+global-attention	글로벌 어텐션	Global Attention	attention	evergreen
+sparse-attention	희소 어텐션	Sparse Attention	attention	evergreen
+linear-attention	선형 어텐션	Linear Attention	attention	evergreen
+multi-query-attention	멀티쿼리 어텐션	Multi-Query Attention	attention	evergreen
+grouped-query-attention	그룹 쿼리 어텐션	Grouped-Query Attention	attention	periodic
+sliding-window-attention	슬라이딩 윈도 어텐션	Sliding-Window Attention	attention	evergreen
+bidirectional-attention	양방향 어텐션	Bidirectional Attention	attention	evergreen
+encoder-decoder-attention	인코더-디코더 어텐션	Encoder-Decoder Attention	attention	evergreen
+attention-score	어텐션 점수	Attention Score	attention	evergreen
+attention-matrix	어텐션 행렬	Attention Matrix	attention	evergreen
+attention-head	어텐션 헤드	Attention Head	attention	evergreen
+feed-forward-network	피드포워드 네트워크	Feed-Forward Network	block-components	evergreen
+residual-connection	잔차 연결	Residual Connection	block-components	evergreen
+layer-normalization	레이어 정규화	Layer Normalization	block-components	evergreen
+pre-normalization	프리 정규화	Pre-Normalization	block-components	evergreen
+post-normalization	포스트 정규화	Post-Normalization	block-components	evergreen
+rms-normalization	RMS 정규화	Root Mean Square Layer Normalization	block-components	evergreen
+swiglu	SwiGLU	SwiGLU	block-components	evergreen
+geglu	GEGLU	GEGLU	block-components	evergreen
+token-embedding-layer	토큰 임베딩층	Token Embedding Layer	block-components	evergreen
+output-projection	출력 투영	Output Projection	block-components	evergreen
+language-modeling-head	언어 모델링 헤드	Language Modeling Head	block-components	evergreen
+causal-mask	인과 마스크	Causal Mask	block-components	evergreen
+padding-mask	패딩 마스크	Padding Mask	block-components	evergreen
+attention-mask	어텐션 마스크	Attention Mask	block-components	evergreen
+key-value-projection	키·값 투영	Key-Value Projection	block-components	evergreen
+transformer-block	트랜스포머 블록	Transformer Block	block-components	evergreen
+encoder	인코더	Encoder	block-components	evergreen
+decoder	디코더	Decoder	block-components	evergreen
+encoder-decoder	인코더-디코더	Encoder-Decoder	block-components	evergreen
+normalization-placement	정규화 배치	Normalization Placement	block-components	evergreen
+transformer	트랜스포머	Transformer	architectures	evergreen
+decoder-only-model	디코더 전용 모델	Decoder-Only Model	architectures	evergreen
+encoder-only-transformer	인코더 전용 트랜스포머	Encoder-Only Transformer	architectures	evergreen
+prefix-language-model	프리픽스 언어 모델	Prefix Language Model	architectures	evergreen
+sequence-to-sequence-transformer	시퀀스-투-시퀀스 트랜스포머	Sequence-to-Sequence Transformer	architectures	evergreen
+bert-architecture	BERT 아키텍처	BERT Architecture	architectures	evergreen
+gpt-architecture	GPT 아키텍처	GPT Architecture	architectures	evergreen
+t5-architecture	T5 아키텍처	T5 Architecture	architectures	evergreen
+bart-architecture	BART 아키텍처	BART Architecture	architectures	evergreen
+xlnet-architecture	XLNet 아키텍처	XLNet Architecture	architectures	evergreen
+transformer-xl	Transformer-XL	Transformer-XL	architectures	evergreen
+longformer	Longformer	Longformer	architectures	evergreen
+bigbird	BigBird	BigBird	architectures	evergreen
+performer	Performer	Performer	architectures	evergreen
+reformer	Reformer	Reformer	architectures	evergreen
+switch-transformer	스위치 트랜스포머	Switch Transformer	architectures	evergreen
+retrieval-transformer	검색 결합 트랜스포머	Retrieval Transformer	architectures	periodic
+memory-augmented-transformer	메모리 증강 트랜스포머	Memory-Augmented Transformer	architectures	periodic
+hierarchical-transformer	계층형 트랜스포머	Hierarchical Transformer	architectures	evergreen
+recurrent-memory-transformer	순환 메모리 트랜스포머	Recurrent Memory Transformer	architectures	periodic
+positional-encoding	위치 인코딩	Positional Encoding	position-long-context	evergreen
+absolute-position-encoding	절대 위치 인코딩	Absolute Position Encoding	position-long-context	evergreen
+relative-position-encoding	상대 위치 인코딩	Relative Position Encoding	position-long-context	evergreen
+rotary-position-embedding	회전 위치 임베딩	Rotary Position Embedding	position-long-context	evergreen
+alibi-position-bias	ALiBi 위치 편향	Attention with Linear Biases	position-long-context	evergreen
+sinusoidal-position-encoding	사인파 위치 인코딩	Sinusoidal Position Encoding	position-long-context	evergreen
+learned-position-embedding	학습형 위치 임베딩	Learned Position Embedding	position-long-context	evergreen
+position-interpolation	위치 보간	Position Interpolation	position-long-context	periodic
+context-length-extension	문맥 길이 확장	Context Length Extension	position-long-context	periodic
+long-context-transformer	장문맥 트랜스포머	Long-Context Transformer	position-long-context	periodic
+segment-embedding	세그먼트 임베딩	Segment Embedding	position-long-context	evergreen
+position-id	위치 ID	Position ID	position-long-context	evergreen
+ntk-aware-scaling	NTK 인식 스케일링	NTK-Aware Scaling	position-long-context	periodic
+yarn-scaling	YaRN 스케일링	YaRN Scaling	position-long-context	periodic
+length-extrapolation	길이 외삽	Length Extrapolation	position-long-context	periodic
+flash-attention	플래시 어텐션	FlashAttention	efficiency	periodic
+memory-efficient-attention	메모리 효율적 어텐션	Memory-Efficient Attention	efficiency	periodic
+attention-complexity	어텐션 계산 복잡도	Attention Complexity	efficiency	evergreen
+chunked-attention	청크 어텐션	Chunked Attention	efficiency	periodic
+paged-attention	페이지드 어텐션	PagedAttention	efficiency	periodic
+block-sparse-attention	블록 희소 어텐션	Block-Sparse Attention	efficiency	evergreen
+low-rank-attention	저랭크 어텐션	Low-Rank Attention	efficiency	periodic
+kernelized-attention	커널화 어텐션	Kernelized Attention	efficiency	evergreen
+attention-sink	어텐션 싱크	Attention Sink	efficiency	periodic
+key-value-compression	키·값 압축	Key-Value Compression	efficiency	periodic
+head-pruning	어텐션 헤드 가지치기	Attention Head Pruning	efficiency	evergreen
+layer-dropping	레이어 드로핑	Layer Dropping	efficiency	evergreen
+early-exit-transformer	조기 종료 트랜스포머	Early-Exit Transformer	efficiency	periodic
+speculative-transformer-block	추측형 트랜스포머 블록	Speculative Transformer Block	efficiency	periodic
+fused-transformer-kernel	융합 트랜스포머 커널	Fused Transformer Kernel	efficiency	periodic
+universal-transformer	유니버설 트랜스포머	Universal Transformer	variants	evergreen
+adaptive-computation-time-transformer	적응형 계산 시간 트랜스포머	Adaptive Computation Time Transformer	variants	evergreen
+conformer-architecture	Conformer 아키텍처	Conformer Architecture	variants	evergreen
+vision-transformer	비전 트랜스포머	Vision Transformer	variants	evergreen
+graph-transformer	그래프 트랜스포머	Graph Transformer	variants	evergreen
+sparse-transformer	희소 트랜스포머	Sparse Transformer	variants	evergreen
+state-space-transformer-hybrid	상태 공간-트랜스포머 하이브리드	State Space-Transformer Hybrid	variants	periodic
+diffusion-transformer	확산 트랜스포머	Diffusion Transformer	variants	periodic
+multimodal-transformer	멀티모달 트랜스포머	Multimodal Transformer	variants	periodic
+mixture-of-depths	깊이 혼합	Mixture of Depths	variants	periodic

@@ -1,0 +1,100 @@
+api	API	Application Programming Interface	web-http	evergreen
+http-request	HTTP 요청	HTTP Request	web-http	evergreen
+http-response	HTTP 응답	HTTP Response	web-http	evergreen
+http-method	HTTP 메서드	HTTP Method	web-http	evergreen
+http-status-code	HTTP 상태 코드	HTTP Status Code	web-http	evergreen
+http-header	HTTP 헤더	HTTP Header	web-http	evergreen
+http-message-body	HTTP 메시지 본문	HTTP Message Body	web-http	evergreen
+uri	통합 자원 식별자	Uniform Resource Identifier	web-http	evergreen
+url	통합 자원 위치 지정자	Uniform Resource Locator	web-http	evergreen
+api-endpoint	API 엔드포인트	API Endpoint	web-http	evergreen
+query-parameter	질의 매개변수	Query Parameter	web-http	evergreen
+path-parameter	경로 매개변수	Path Parameter	web-http	evergreen
+mime-type	MIME 유형	MIME Type	web-http	evergreen
+content-type	콘텐츠 유형	Content Type	web-http	evergreen
+https	HTTPS	Hypertext Transfer Protocol Secure	web-http	evergreen
+transport-layer-security	전송 계층 보안	Transport Layer Security	web-http	periodic
+domain-name-system	도메인 이름 시스템	Domain Name System	web-http	evergreen
+transmission-control-protocol	전송 제어 프로토콜	Transmission Control Protocol	web-http	evergreen
+json	JSON	JavaScript Object Notation	web-http	evergreen
+rest-api	REST API	REST API	web-http	evergreen
+streaming-response	스트리밍 응답	Streaming Response	model-api-patterns	periodic
+completion-api	컴플리션 API	Completion API	model-api-patterns	periodic
+chat-api	채팅 API	Chat API	model-api-patterns	periodic
+unified-response-api	통합 응답 API	Unified Response API	model-api-patterns	fast-changing
+embedding-api	임베딩 API	Embedding API	model-api-patterns	periodic
+image-generation-api	이미지 생성 API	Image Generation API	model-api-patterns	periodic
+audio-api	오디오 API	Audio API	model-api-patterns	periodic
+moderation-api	콘텐츠 조정 API	Moderation API	model-api-patterns	periodic
+batch-api	배치 API	Batch API	model-api-patterns	periodic
+realtime-api	실시간 API	Realtime API	model-api-patterns	fast-changing
+asynchronous-api-job	비동기 API 작업	Asynchronous API Job	model-api-patterns	evergreen
+synchronous-api-request	동기 API 요청	Synchronous API Request	model-api-patterns	evergreen
+request-response-pattern	요청-응답 패턴	Request-Response Pattern	model-api-patterns	evergreen
+stateless-api	무상태 API	Stateless API	model-api-patterns	evergreen
+stateful-api	상태 유지 API	Stateful API	model-api-patterns	evergreen
+api-pagination	API 페이지네이션	API Pagination	model-api-patterns	evergreen
+file-upload-api	파일 업로드 API	File Upload API	model-api-patterns	periodic
+api-versioning	API 버전 관리	API Versioning	model-api-patterns	evergreen
+api-deprecation	API 지원 종료	API Deprecation	model-api-patterns	periodic
+server-sent-events	서버 전송 이벤트	Server-Sent Events	model-api-patterns	evergreen
+structured-output	구조화 출력	Structured Output	structured-tools	periodic
+tool-calling	도구 호출	Tool Calling	structured-tools	periodic
+function-calling	함수 호출	Function Calling	structured-tools	periodic
+json-schema	JSON 스키마	JSON Schema	structured-tools	periodic
+grammar-constrained-generation	문법 제약 생성	Grammar-Constrained Generation	structured-tools	periodic
+schema-validation	스키마 검증	Schema Validation	structured-tools	evergreen
+typed-response	형식 지정 응답	Typed Response	structured-tools	periodic
+tool-definition	도구 정의	Tool Definition	structured-tools	periodic
+tool-argument	도구 인수	Tool Argument	structured-tools	evergreen
+tool-result	도구 결과	Tool Result	structured-tools	evergreen
+parallel-tool-call	병렬 도구 호출	Parallel Tool Call	structured-tools	periodic
+tool-choice	도구 선택	Tool Choice	structured-tools	periodic
+tool-error	도구 오류	Tool Error	structured-tools	evergreen
+output-parser	출력 파서	Output Parser	structured-tools	evergreen
+response-validation	응답 검증	Response Validation	structured-tools	evergreen
+sdk	SDK	Software Development Kit	sdk-clients	periodic
+client-library	클라이언트 라이브러리	Client Library	sdk-clients	periodic
+api-client	API 클라이언트	API Client	sdk-clients	evergreen
+synchronous-client	동기 클라이언트	Synchronous Client	sdk-clients	evergreen
+asynchronous-client	비동기 클라이언트	Asynchronous Client	sdk-clients	evergreen
+retry-policy	재시도 정책	Retry Policy	sdk-clients	evergreen
+exponential-backoff	지수 백오프	Exponential Backoff	sdk-clients	evergreen
+client-middleware	클라이언트 미들웨어	Client Middleware	sdk-clients	evergreen
+request-interceptor	요청 인터셉터	Request Interceptor	sdk-clients	evergreen
+serialization	직렬화	Serialization	sdk-clients	evergreen
+deserialization	역직렬화	Deserialization	sdk-clients	evergreen
+api-type-generation	API 형식 생성	API Type Generation	sdk-clients	periodic
+openapi-specification	OpenAPI 명세	OpenAPI Specification	sdk-clients	periodic
+api-wrapper	API 래퍼	API Wrapper	sdk-clients	evergreen
+command-line-api-client	명령줄 API 클라이언트	Command-Line API Client	sdk-clients	evergreen
+api-key	API 키	API Key	auth-security	periodic
+oauth	OAuth	OAuth	auth-security	periodic
+bearer-token	베어러 토큰	Bearer Token	auth-security	evergreen
+json-web-token	JSON 웹 토큰	JSON Web Token	auth-security	periodic
+hmac-authentication	HMAC 인증	HMAC Authentication	auth-security	evergreen
+mutual-tls	상호 TLS	Mutual TLS	auth-security	periodic
+secret-management	비밀정보 관리	Secret Management	auth-security	periodic
+environment-variable-secret	환경 변수 비밀정보	Environment Variable Secret	auth-security	evergreen
+credential-rotation	자격 증명 순환	Credential Rotation	auth-security	periodic
+least-privilege	최소 권한	Least Privilege	auth-security	evergreen
+oauth-scope	OAuth 범위	OAuth Scope	auth-security	periodic
+cross-origin-resource-sharing	교차 출처 자원 공유	Cross-Origin Resource Sharing	auth-security	evergreen
+cross-site-request-forgery	교차 사이트 요청 위조	Cross-Site Request Forgery	auth-security	evergreen
+server-side-request-forgery	서버 측 요청 위조	Server-Side Request Forgery	auth-security	periodic
+request-signing	요청 서명	Request Signing	auth-security	evergreen
+rate-limit	요청 한도	Rate Limit	limits-operations	periodic
+api-quota	API 할당량	API Quota	limits-operations	periodic
+token-bucket	토큰 버킷	Token Bucket	limits-operations	evergreen
+leaky-bucket	리키 버킷	Leaky Bucket	limits-operations	evergreen
+concurrency-limit	동시성 한도	Concurrency Limit	limits-operations	periodic
+request-throttling	요청 조절	Request Throttling	limits-operations	evergreen
+http-429	HTTP 429	HTTP 429 Too Many Requests	limits-operations	evergreen
+usage-metering	사용량 계측	Usage Metering	limits-operations	periodic
+api-cost-tracking	API 비용 추적	API Cost Tracking	limits-operations	fast-changing
+api-logging	API 로깅	API Logging	limits-operations	evergreen
+api-audit-log	API 감사 로그	API Audit Log	limits-operations	periodic
+idempotency-key	멱등성 키	Idempotency Key	limits-operations	evergreen
+api-error-model	API 오류 모델	API Error Model	limits-operations	evergreen
+api-version-pinning	API 버전 고정	API Version Pinning	limits-operations	periodic
+service-level-agreement	서비스 수준 협약	Service-Level Agreement	limits-operations	periodic

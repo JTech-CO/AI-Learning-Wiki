@@ -1,0 +1,82 @@
+{
+  "version": "W0-2026-07-13",
+  "sourcePackMinimum": {
+    "independentFamilies": 3,
+    "primarySources": 1,
+    "encyclopediaFamilies": 1
+  },
+  "useModes": ["discovery", "metadata", "evidence"],
+  "sources": [
+    {
+      "id": "wikipedia-ko-en",
+      "name": "위키백과·Wikipedia",
+      "family": "wikimedia",
+      "allowedModes": ["discovery", "metadata", "evidence"],
+      "countsTowardMinimum": true,
+      "maximumFamilyCount": 1,
+      "license": "CC BY-SA 4.0 / GFDL as applicable",
+      "rules": ["Use MediaWiki API instead of screen scraping", "Store language, canonical URL, page ID, revision ID and accessedAt", "Do not copy or closely translate prose by default", "When adapting text, provide attribution and comply with share-alike terms"],
+      "officialPolicyUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+      "apiUrl": "https://www.mediawiki.org/wiki/API:Quick_start_guide"
+    },
+    {
+      "id": "grokipedia",
+      "name": "Grokipedia",
+      "family": "xai-grokipedia",
+      "allowedModes": ["discovery", "metadata"],
+      "countsTowardMinimum": false,
+      "maximumFamilyCount": 0,
+      "license": "xAI Community License; some pages may also be CC BY-SA 4.0",
+      "rules": ["Do not bulk ingest article prose", "Use only to discover omissions or disagreements", "Verify every candidate claim with independent primary sources", "Record page-specific license when available"],
+      "officialPolicyUrl": "https://x.ai/legal/terms-of-service"
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "family": "paper-repository",
+      "allowedModes": ["discovery", "metadata", "evidence"],
+      "countsTowardMinimum": true,
+      "maximumFamilyCount": 1,
+      "license": "Per-paper license",
+      "rules": ["Use public API for metadata", "Cite the original paper and version", "Do not assume all full text has the same reuse license", "Include the arXiv data-use acknowledgement when API data is published"],
+      "officialPolicyUrl": "https://info.arxiv.org/help/api/index.html"
+    },
+    {
+      "id": "acl-anthology",
+      "name": "ACL Anthology",
+      "family": "paper-publisher",
+      "allowedModes": ["discovery", "metadata", "evidence"],
+      "countsTowardMinimum": true,
+      "maximumFamilyCount": 1,
+      "license": "2016+ ACL materials CC BY 4.0; earlier ACL materials CC BY-NC-SA 3.0; third-party materials vary",
+      "rules": ["Store Anthology ID and DOI", "Check publication year and material ownership", "Cite the canonical paper page"],
+      "officialPolicyUrl": "https://aclanthology.org/faq/copyright/"
+    },
+    {
+      "id": "official-standard-doc",
+      "name": "표준·공식 명세·공식 문서",
+      "family": "primary-documentation",
+      "allowedModes": ["discovery", "metadata", "evidence"],
+      "countsTowardMinimum": true,
+      "maximumFamilyCount": 2,
+      "license": "Per-source terms",
+      "rules": ["Prefer versioned permalinks", "Record publisher, version and accessedAt", "Use product documentation only for that product's behavior", "Do not treat marketing claims as independent evidence"]
+    },
+    {
+      "id": "academic-index",
+      "name": "Semantic Scholar·OpenReview 등 학술 색인",
+      "family": "academic-index",
+      "allowedModes": ["discovery", "metadata"],
+      "countsTowardMinimum": false,
+      "maximumFamilyCount": 0,
+      "license": "Metadata terms vary",
+      "rules": ["Use to discover papers and citation relations", "Cite the original paper rather than the index record", "Do not count an index as an independent evidence source"]
+    }
+  ],
+  "storage": {
+    "storeFullThirdPartyText": false,
+    "storeMetadata": true,
+    "storeResearchNotes": true,
+    "requiredFields": ["sourceId", "canonicalUrl", "title", "publisher", "publishedAt", "accessedAt", "revision", "license", "useMode"]
+  }
+}

@@ -1,0 +1,100 @@
+inference	추론	Inference	decoding	evergreen
+logit	로짓	Logit	decoding	evergreen
+softmax	소프트맥스	Softmax	decoding	evergreen
+temperature	생성 온도	Temperature	decoding	evergreen
+top-k-sampling	Top-k 샘플링	Top-k Sampling	decoding	evergreen
+top-p-sampling	Top-p 샘플링	Top-p Sampling	decoding	evergreen
+greedy-decoding	그리디 디코딩	Greedy Decoding	decoding	evergreen
+beam-search	빔 탐색	Beam Search	decoding	evergreen
+multinomial-sampling	다항 표본추출	Multinomial Sampling	decoding	evergreen
+typical-sampling	전형성 샘플링	Typical Sampling	decoding	periodic
+min-p-sampling	Min-p 샘플링	Min-P Sampling	decoding	periodic
+repetition-penalty	반복 페널티	Repetition Penalty	decoding	evergreen
+frequency-penalty	빈도 페널티	Frequency Penalty	decoding	periodic
+presence-penalty	존재 페널티	Presence Penalty	decoding	periodic
+length-penalty	길이 페널티	Length Penalty	decoding	evergreen
+stop-sequence	중지 시퀀스	Stop Sequence	decoding	evergreen
+constrained-decoding	제약 디코딩	Constrained Decoding	decoding	periodic
+contrastive-search	대조 탐색	Contrastive Search	decoding	periodic
+diverse-beam-search	다양성 빔 탐색	Diverse Beam Search	decoding	evergreen
+token-sampling	토큰 샘플링	Token Sampling	decoding	evergreen
+model-serving	모델 서빙	Model Serving	serving	periodic
+inference-server	추론 서버	Inference Server	serving	periodic
+online-inference	온라인 추론	Online Inference	serving	evergreen
+batch-inference	배치 추론	Batch Inference	serving	evergreen
+inference-endpoint	추론 엔드포인트	Inference Endpoint	serving	periodic
+request-scheduler	요청 스케줄러	Request Scheduler	serving	periodic
+inference-autoscaling	추론 자동 확장	Inference Autoscaling	serving	periodic
+inference-load-balancing	추론 부하 분산	Inference Load Balancing	serving	periodic
+model-replica	모델 복제본	Model Replica	serving	evergreen
+multi-model-serving	다중 모델 서빙	Multi-Model Serving	serving	periodic
+model-gateway	모델 게이트웨이	Model Gateway	serving	periodic
+streaming-generation	스트리밍 생성	Streaming Generation	serving	periodic
+time-to-first-token	첫 토큰 시간	Time to First Token	serving	periodic
+inter-token-latency	토큰 간 지연 시간	Inter-Token Latency	serving	periodic
+prefill-phase	프리필 단계	Prefill Phase	serving	periodic
+decode-phase	디코드 단계	Decode Phase	serving	periodic
+request-queue	요청 대기열	Request Queue	serving	evergreen
+admission-control	수락 제어	Admission Control	serving	evergreen
+serverless-inference	서버리스 추론	Serverless Inference	serving	periodic
+edge-inference	엣지 추론	Edge Inference	serving	periodic
+batching	배칭	Batching	cache-batching	evergreen
+kv-cache	KV 캐시	Key-Value Cache	cache-batching	periodic
+continuous-batching	연속 배칭	Continuous Batching	cache-batching	periodic
+dynamic-batching	동적 배칭	Dynamic Batching	cache-batching	periodic
+static-batching	정적 배칭	Static Batching	cache-batching	evergreen
+prefix-caching	프리픽스 캐싱	Prefix Caching	cache-batching	periodic
+paged-kv-cache	페이지드 KV 캐시	Paged KV Cache	cache-batching	periodic
+kv-cache-quantization	KV 캐시 양자화	KV Cache Quantization	cache-batching	periodic
+cache-eviction	캐시 축출	Cache Eviction	cache-batching	evergreen
+cache-offloading	캐시 오프로딩	Cache Offloading	cache-batching	periodic
+chunked-prefill	청크 프리필	Chunked Prefill	cache-batching	periodic
+speculative-decoding	추측 디코딩	Speculative Decoding	cache-batching	periodic
+draft-model	초안 모델	Draft Model	cache-batching	periodic
+prompt-lookup-decoding	프롬프트 조회 디코딩	Prompt Lookup Decoding	cache-batching	periodic
+cache-hit-rate	캐시 적중률	Cache Hit Rate	cache-batching	evergreen
+post-training-quantization	학습 후 양자화	Post-Training Quantization	quantization-compilation	periodic
+weight-only-quantization	가중치 전용 양자화	Weight-Only Quantization	quantization-compilation	periodic
+activation-quantization	활성값 양자화	Activation Quantization	quantization-compilation	periodic
+int8-inference	INT8 추론	INT8 Inference	quantization-compilation	periodic
+int4-inference	INT4 추론	INT4 Inference	quantization-compilation	periodic
+fp8-inference	FP8 추론	FP8 Inference	quantization-compilation	periodic
+gguf-format	GGUF 형식	GGUF Format	quantization-compilation	periodic
+onnx-runtime	ONNX Runtime	ONNX Runtime	quantization-compilation	periodic
+graph-compilation	그래프 컴파일	Graph Compilation	quantization-compilation	periodic
+ahead-of-time-compilation	사전 컴파일	Ahead-of-Time Compilation	quantization-compilation	evergreen
+operator-fusion	연산자 융합	Operator Fusion	quantization-compilation	evergreen
+kernel-fusion	커널 융합	Kernel Fusion	quantization-compilation	evergreen
+tensorrt-llm	TensorRT-LLM	TensorRT-LLM	quantization-compilation	fast-changing
+xla-compiler	XLA 컴파일러	XLA Compiler	quantization-compilation	periodic
+inference-graph-optimization	추론 그래프 최적화	Inference Graph Optimization	quantization-compilation	periodic
+gpu-inference	GPU 추론	GPU Inference	hardware-systems	periodic
+tpu-inference	TPU 추론	TPU Inference	hardware-systems	periodic
+npu-inference	NPU 추론	NPU Inference	hardware-systems	fast-changing
+cpu-inference	CPU 추론	CPU Inference	hardware-systems	periodic
+accelerator-memory	가속기 메모리	Accelerator Memory	hardware-systems	periodic
+memory-bandwidth	메모리 대역폭	Memory Bandwidth	hardware-systems	evergreen
+high-bandwidth-memory	고대역폭 메모리	High-Bandwidth Memory	hardware-systems	periodic
+compute-bound-workload	연산 집약 작업	Compute-Bound Workload	hardware-systems	evergreen
+memory-bound-workload	메모리 집약 작업	Memory-Bound Workload	hardware-systems	evergreen
+roofline-model	루프라인 모델	Roofline Model	hardware-systems	evergreen
+latency	지연 시간	Latency	cost-reliability	evergreen
+throughput	처리량	Throughput	cost-reliability	evergreen
+service-level-objective	서비스 수준 목표	Service-Level Objective	cost-reliability	evergreen
+model-availability	모델 가용성	Model Availability	cost-reliability	evergreen
+tail-latency	꼬리 지연 시간	Tail Latency	cost-reliability	evergreen
+latency-throughput-tradeoff	지연 시간-처리량 절충	Latency-Throughput Tradeoff	cost-reliability	evergreen
+token-cost	토큰 비용	Token Cost	cost-reliability	fast-changing
+inference-capacity-planning	추론 용량 계획	Inference Capacity Planning	cost-reliability	periodic
+backpressure	백프레셔	Backpressure	cost-reliability	evergreen
+inference-timeout	추론 시간 초과	Inference Timeout	cost-reliability	evergreen
+inference-retry	추론 재시도	Inference Retry	cost-reliability	evergreen
+fallback-model	대체 모델	Fallback Model	cost-reliability	periodic
+circuit-breaker	서킷 브레이커	Circuit Breaker	cost-reliability	evergreen
+cold-start	콜드 스타트	Cold Start	cost-reliability	evergreen
+warm-start	웜 스타트	Warm Start	cost-reliability	evergreen
+out-of-memory-error	메모리 부족 오류	Out-of-Memory Error	cost-reliability	evergreen
+graceful-degradation	점진적 성능 저하	Graceful Degradation	cost-reliability	evergreen
+deterministic-inference	결정적 추론	Deterministic Inference	cost-reliability	periodic
+numerical-reproducibility	수치 재현성	Numerical Reproducibility	cost-reliability	periodic
+inference-monitoring	추론 모니터링	Inference Monitoring	cost-reliability	periodic

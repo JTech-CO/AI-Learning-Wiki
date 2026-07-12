@@ -5,6 +5,8 @@ import addFormats from 'ajv-formats';
 
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const articleSchema = await readJson('content-model/schema.article.json');
+const ledger = await readJson('content-model/taxonomy/topic-ledger.json');
+const topicById = new Map(ledger.topics.map((topic) => [topic.id, topic]));
 const pathSchema = await readJson('content-model/schema.path.json');
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
@@ -38,7 +40,15 @@ for (const course of paths) {
   for (const step of course.steps) if (!ids.has(step.ref)) errors.push(`${course.id}: missing course ref ${step.ref}`);
 }
 
-if (articles.length !== 150) errors.push(`expected 150 articles, found ${articles.length}`);
+if (articles.length < 150 || articles.length > 1400) errors.push(`expected 150–1400 articles, found ${articles.length}`);
+for (const article of articles) {
+  const topic = topicById.get(article.id);
+  if (!topic) {
+    errors.push(`${article.id}: not registered in the W0 topic ledger`);
+    continue;
+  }
+  if (topic.titleKo !== article.title || topic.titleEn !== article.englishTitle || !article.categories.includes(topic.primaryCategory)) errors.push(`${article.id}: title/category differs from the W0 topic ledger`);
+}
 if (paths.length !== 8) errors.push(`expected 8 wiki courses, found ${paths.length}`);
 
 if (errors.length) {

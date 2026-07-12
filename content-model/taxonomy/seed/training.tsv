@@ -1,0 +1,100 @@
+pretraining	사전학습	Pretraining	data-pretraining	evergreen
+checkpoint	체크포인트	Checkpoint	data-pretraining	evergreen
+synthetic-data	합성 데이터	Synthetic Data	data-pretraining	periodic
+data-augmentation	데이터 증강	Data Augmentation	data-pretraining	evergreen
+training-corpus	학습 말뭉치	Training Corpus	data-pretraining	evergreen
+dataset-deduplication	데이터셋 중복 제거	Dataset Deduplication	data-pretraining	periodic
+training-data-filtering	학습 데이터 필터링	Training Data Filtering	data-pretraining	periodic
+data-mixture	데이터 혼합	Data Mixture	data-pretraining	periodic
+data-curriculum	데이터 커리큘럼	Data Curriculum	data-pretraining	periodic
+benchmark-contamination	벤치마크 오염	Benchmark Contamination	data-pretraining	periodic
+document-packing	문서 패킹	Document Packing	data-pretraining	periodic
+sequence-packing	시퀀스 패킹	Sequence Packing	data-pretraining	periodic
+web-scale-training-data	웹 규모 학습 데이터	Web-Scale Training Data	data-pretraining	periodic
+pretraining-pipeline	사전학습 파이프라인	Pretraining Pipeline	data-pretraining	periodic
+training-data-provenance	학습 데이터 출처 추적	Training Data Provenance	data-pretraining	periodic
+causal-language-modeling-objective	인과 언어 모델링 목표	Causal Language Modeling Objective	objectives	evergreen
+masked-language-modeling-objective	마스크 언어 모델링 목표	Masked Language Modeling Objective	objectives	evergreen
+denoising-objective	잡음 제거 목표	Denoising Objective	objectives	evergreen
+span-corruption	구간 손상 복원	Span Corruption	objectives	evergreen
+contrastive-objective	대조 목적 함수	Contrastive Objective	objectives	evergreen
+next-sentence-prediction	다음 문장 예측	Next Sentence Prediction	objectives	evergreen
+sentence-order-prediction	문장 순서 예측	Sentence Order Prediction	objectives	evergreen
+multi-task-objective	다중 과제 목적 함수	Multi-Task Objective	objectives	evergreen
+auxiliary-loss	보조 손실	Auxiliary Loss	objectives	evergreen
+distillation-loss	증류 손실	Distillation Loss	objectives	evergreen
+preference-loss	선호 손실	Preference Loss	objectives	periodic
+policy-objective	정책 목적 함수	Policy Objective	objectives	evergreen
+value-function-loss	가치 함수 손실	Value Function Loss	objectives	evergreen
+reconstruction-loss	복원 손실	Reconstruction Loss	objectives	evergreen
+diffusion-training-objective	확산 학습 목표	Diffusion Training Objective	objectives	evergreen
+fine-tuning	미세조정	Fine-Tuning	sft-instruction	evergreen
+supervised-fine-tuning	지도 미세조정	Supervised Fine-Tuning	sft-instruction	evergreen
+instruction-tuning	지시 튜닝	Instruction Tuning	sft-instruction	evergreen
+full-parameter-fine-tuning	전체 파라미터 미세조정	Full-Parameter Fine-Tuning	sft-instruction	evergreen
+domain-adaptation	도메인 적응	Domain Adaptation	sft-instruction	evergreen
+task-adaptation	과제 적응	Task Adaptation	sft-instruction	evergreen
+continued-pretraining	연속 사전학습	Continued Pretraining	sft-instruction	periodic
+instruction-dataset	지시 데이터셋	Instruction Dataset	sft-instruction	periodic
+chat-template	채팅 템플릿	Chat Template	sft-instruction	periodic
+response-format-tuning	응답 형식 튜닝	Response Format Tuning	sft-instruction	periodic
+teacher-forcing	교사 강요	Teacher Forcing	sft-instruction	evergreen
+sequence-classification-fine-tuning	시퀀스 분류 미세조정	Sequence Classification Fine-Tuning	sft-instruction	evergreen
+multi-task-instruction-tuning	다중 과제 지시 튜닝	Multi-Task Instruction Tuning	sft-instruction	periodic
+instruction-mixture	지시 데이터 혼합	Instruction Mixture	sft-instruction	periodic
+training-data-formatting	학습 데이터 형식화	Training Data Formatting	sft-instruction	evergreen
+alignment	AI 정렬	AI Alignment	preference-posttraining	periodic
+rlhf	인간 피드백 기반 강화학습	Reinforcement Learning from Human Feedback	preference-posttraining	periodic
+reward-model	보상 모델	Reward Model	preference-posttraining	periodic
+dpo	직접 선호 최적화	Direct Preference Optimization	preference-posttraining	periodic
+proximal-policy-optimization-for-llm	LLM용 근접 정책 최적화	Proximal Policy Optimization for LLMs	preference-posttraining	periodic
+reinforcement-learning-from-ai-feedback	AI 피드백 기반 강화학습	Reinforcement Learning from AI Feedback	preference-posttraining	periodic
+preference-data	선호 데이터	Preference Data	preference-posttraining	periodic
+pairwise-preference-ranking	쌍대 선호 순위화	Pairwise Preference Ranking	preference-posttraining	evergreen
+bradley-terry-model	브래들리-테리 모형	Bradley-Terry Model	preference-posttraining	evergreen
+kl-penalty	KL 페널티	KL Penalty	preference-posttraining	evergreen
+reference-model	참조 모델	Reference Model	preference-posttraining	evergreen
+policy-model	정책 모델	Policy Model	preference-posttraining	evergreen
+rejection-sampling	기각 표본추출	Rejection Sampling	preference-posttraining	evergreen
+best-of-n-sampling	Best-of-N 표본추출	Best-of-N Sampling	preference-posttraining	periodic
+online-preference-learning	온라인 선호 학습	Online Preference Learning	preference-posttraining	periodic
+offline-preference-learning	오프라인 선호 학습	Offline Preference Learning	preference-posttraining	periodic
+constitutional-ai	헌법적 AI	Constitutional AI	preference-posttraining	periodic
+process-reward-model	과정 보상 모델	Process Reward Model	preference-posttraining	fast-changing
+outcome-reward-model	결과 보상 모델	Outcome Reward Model	preference-posttraining	periodic
+reward-hacking	보상 해킹	Reward Hacking	preference-posttraining	evergreen
+lora	LoRA	Low-Rank Adaptation	peft-compression	evergreen
+peft	파라미터 효율적 미세조정	Parameter-Efficient Fine-Tuning	peft-compression	evergreen
+quantization	양자화	Quantization	peft-compression	periodic
+knowledge-distillation	지식 증류	Knowledge Distillation	peft-compression	evergreen
+adapter-layer	어댑터 층	Adapter Layer	peft-compression	evergreen
+prefix-tuning	프리픽스 튜닝	Prefix Tuning	peft-compression	evergreen
+prompt-tuning	프롬프트 튜닝	Prompt Tuning	peft-compression	evergreen
+ia3	IA3	Infused Adapter by Inhibiting and Amplifying Inner Activations	peft-compression	evergreen
+qlora	QLoRA	Quantized Low-Rank Adaptation	peft-compression	periodic
+dora	DoRA	Weight-Decomposed Low-Rank Adaptation	peft-compression	periodic
+model-pruning	모델 가지치기	Model Pruning	peft-compression	evergreen
+model-sparsity	모델 희소성	Model Sparsity	peft-compression	evergreen
+model-merging	모델 병합	Model Merging	peft-compression	periodic
+task-vector	과제 벡터	Task Vector	peft-compression	periodic
+quantization-aware-training	양자화 인식 학습	Quantization-Aware Training	peft-compression	evergreen
+data-parallelism	데이터 병렬화	Data Parallelism	distributed-training	evergreen
+model-parallelism	모델 병렬화	Model Parallelism	distributed-training	evergreen
+tensor-parallelism	텐서 병렬화	Tensor Parallelism	distributed-training	periodic
+pipeline-parallelism	파이프라인 병렬화	Pipeline Parallelism	distributed-training	periodic
+expert-parallelism	전문가 병렬화	Expert Parallelism	distributed-training	periodic
+fully-sharded-data-parallel	완전 샤딩 데이터 병렬화	Fully Sharded Data Parallel	distributed-training	periodic
+zero-redundancy-optimizer	ZeRO 옵티마이저	Zero Redundancy Optimizer	distributed-training	periodic
+gradient-checkpointing	그래디언트 체크포인팅	Gradient Checkpointing	distributed-training	evergreen
+all-reduce	All-Reduce	All-Reduce	distributed-training	evergreen
+distributed-optimizer	분산 옵티마이저	Distributed Optimizer	distributed-training	periodic
+dataset-license	데이터셋 라이선스	Dataset License	data-governance	periodic
+training-data-consent	학습 데이터 동의	Training Data Consent	data-governance	periodic
+training-data-copyright	학습 데이터 저작권	Training Data Copyright	data-governance	fast-changing
+privacy-preserving-training	개인정보 보호 학습	Privacy-Preserving Training	data-governance	periodic
+federated-learning	연합학습	Federated Learning	data-governance	periodic
+differentially-private-training	차등 개인정보 보호 학습	Differentially Private Training	data-governance	periodic
+machine-unlearning	머신 언러닝	Machine Unlearning	data-governance	fast-changing
+data-documentation	데이터 문서화	Data Documentation	data-governance	evergreen
+training-reproducibility	학습 재현성	Training Reproducibility	data-governance	periodic
+training-audit-log	학습 감사 로그	Training Audit Log	data-governance	periodic

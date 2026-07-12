@@ -1,0 +1,21 @@
+{
+  "version": "W0-2026-07-13",
+  "targetPerCategory": 100,
+  "tierQuota": { "core": 20, "standard": 50, "brief": 30 },
+  "categories": [
+    { "id": "foundations", "title": "AI·머신러닝 기초", "subareas": { "history-paradigms": 10, "learning-paradigms": 15, "data-model-basics": 20, "classical-ml": 20, "representation-learning": 10, "probabilistic-ai": 10, "applications-limits": 15 } },
+    { "id": "mathematics", "title": "수학·통계 기초", "subareas": { "linear-algebra": 20, "calculus-optimization": 20, "probability-statistics": 25, "information-theory": 15, "numerical-methods": 10, "geometry-similarity": 10 } },
+    { "id": "neural", "title": "신경망과 딥러닝", "subareas": { "components": 20, "architectures": 25, "optimization": 20, "regularization": 15, "training-diagnostics": 10, "interpretability": 10 } },
+    { "id": "transformer", "title": "트랜스포머와 모델 구조", "subareas": { "attention": 20, "block-components": 20, "architectures": 20, "position-long-context": 15, "efficiency": 15, "variants": 10 } },
+    { "id": "llm", "title": "LLM과 토큰 처리", "subareas": { "language-modeling": 15, "tokenization": 15, "scaling": 15, "prompting-icl": 20, "context-memory": 15, "model-properties": 20 } },
+    { "id": "training", "title": "학습과 사후학습", "subareas": { "data-pretraining": 15, "objectives": 15, "sft-instruction": 15, "preference-posttraining": 20, "peft-compression": 15, "distributed-training": 10, "data-governance": 10 } },
+    { "id": "inference", "title": "추론·서빙·최적화", "subareas": { "decoding": 20, "serving": 20, "cache-batching": 15, "quantization-compilation": 15, "hardware-systems": 10, "cost-reliability": 20 } },
+    { "id": "retrieval", "title": "임베딩·검색·RAG", "subareas": { "embeddings": 15, "indexes-vector-db": 20, "retrieval-methods": 20, "rag-pipeline": 20, "reranking-evaluation": 15, "graph-hybrid": 10 } },
+    { "id": "api", "title": "API·SDK·도구 호출", "subareas": { "web-http": 20, "model-api-patterns": 20, "structured-tools": 15, "sdk-clients": 15, "auth-security": 15, "limits-operations": 15 } },
+    { "id": "agents", "title": "에이전트·자동화·MCP", "subareas": { "architecture": 20, "tool-use": 15, "memory-state": 15, "planning-reasoning": 15, "multi-agent": 15, "protocols-mcp": 10, "evaluation-safety": 10 } },
+    { "id": "multimodal", "title": "멀티모달 AI", "subareas": { "vision": 20, "audio-speech": 15, "video": 15, "cross-modal-learning": 20, "generation": 15, "ocr-documents": 10, "evaluation-safety": 5 } },
+    { "id": "evaluation", "title": "평가·관측성·벤치마크", "subareas": { "metrics": 20, "benchmarks": 20, "human-evaluation": 15, "llm-judge": 15, "rag-agent-evaluation": 15, "observability": 10, "statistics-reproducibility": 5 } },
+    { "id": "safety", "title": "안전·보안·윤리", "subareas": { "model-app-security": 20, "alignment-misuse": 15, "privacy": 15, "fairness": 15, "transparency": 10, "governance-risk": 15, "redteam-incidents": 10 } },
+    { "id": "ecosystem", "title": "모델·서비스 생태계", "subareas": { "model-lifecycle": 15, "licensing-open-source": 15, "hubs-registries": 10, "hardware-cloud": 15, "data-tooling": 15, "deployment-platforms": 10, "standards-organizations": 10, "economics-sustainability": 10 } }
+  ]
+}
