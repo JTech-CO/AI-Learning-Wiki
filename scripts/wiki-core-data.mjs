@@ -111,7 +111,7 @@ const groups = {
     ['inference','추론','Inference','학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다.'],
     ['logit','로짓','Logit','확률 변환 전에 모델이 각 후보 토큰에 부여하는 정규화되지 않은 점수다.'],
     ['softmax','소프트맥스','Softmax','여러 로짓을 합이 1인 확률 분포로 변환하는 함수다.'],
-    ['temperature','Temperature','Temperature','로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다.'],
+    ['temperature','생성 온도','Temperature','로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다.'],
     ['top-k-sampling','Top-k 샘플링','Top-k Sampling','확률이 높은 상위 k개 후보만 남겨 다음 토큰을 선택하는 방법이다.'],
     ['top-p-sampling','Top-p 샘플링','Top-p Sampling','누적 확률이 p에 도달하는 최소 후보 집합에서 다음 토큰을 선택하는 방법이다.'],
     ['greedy-decoding','그리디 디코딩','Greedy Decoding','매 단계에서 확률이 가장 높은 토큰을 선택하는 결정적 생성 방식이다.'],

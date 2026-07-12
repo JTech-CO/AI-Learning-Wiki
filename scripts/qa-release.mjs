@@ -16,6 +16,7 @@ expect(progress.totals?.complete === 305, `progress completed: ${progress.totals
 expect(new Set(catalog.modules.map((item) => item.url)).size === 305, 'module URLs are not unique');
 expect(catalog.modules.every((item) => item.url.startsWith('/courses/') && item.title && item.summary), 'catalog has incomplete module entries');
 expect(prompts.prompts.every((item) => item.template && Array.isArray(item.examples)), 'prompt schema is incomplete');
+expect(prompts.prompts.every((item) => !/온도 (낮춤|높임)/.test(item.title)), 'context-free temperature label remains');
 const wikiCourseIds = new Set(wiki.courses.map((course) => course.id));
 expect(prompts.prompts.every((item) => wikiCourseIds.has(item.course)), 'prompt has an unknown Wiki course');
 expect(new Set(prompts.prompts.map((item) => item.course)).size === wikiCourseIds.size, 'not every Wiki course has prompts');

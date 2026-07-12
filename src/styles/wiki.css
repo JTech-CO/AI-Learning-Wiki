@@ -25,7 +25,7 @@
   color-scheme: light;
 }
 
-html { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; }
+html { font-size: 120%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; }
 body { background: #fff !important; color: #202122; }
 a { color: #3366cc; text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -54,7 +54,8 @@ a:hover { text-decoration: underline; }
 .sl-markdown-content h1,
 .sl-markdown-content h2,
 .sl-markdown-content h3 { color: #202122; font-family: Georgia, "Noto Serif KR", serif; letter-spacing: 0; }
-.sl-markdown-content h1 { border-bottom: 1px solid #a2a9b1; padding-bottom: .35rem; font-size: 2rem; }
+.main-pane h1#_top { margin-bottom: .65rem; border-bottom: 2px solid #72777d; padding-bottom: .45rem; font-size: 2.25rem; line-height: 1.2; letter-spacing: -.025em; }
+.sl-markdown-content h1 { margin-bottom: .55rem; border-bottom: 2px solid #72777d; padding-bottom: .45rem; font-size: 2.25rem; line-height: 1.2; }
 .sl-markdown-content h2 { border-bottom: 1px solid #c8ccd1; padding-bottom: .25rem; font-size: 1.45rem; }
 .sl-markdown-content h3 { font-size: 1.13rem; }
 .sl-markdown-content table { display: table; width: 100%; }
@@ -64,7 +65,7 @@ a:hover { text-decoration: underline; }
 .sl-markdown-content code { border-radius: 0; }
 
 .wiki-alias { margin: -.5rem 0 .65rem; color: #54595d; font-size: .85rem; }
-.wiki-lead { font-size: 1.08rem; line-height: 1.72; }
+.wiki-lead { max-width: 60rem; font-size: 1.14rem; line-height: 1.72; }
 .wiki-document-meta { border-top: 1px solid #eaecf0; border-bottom: 1px solid #eaecf0; padding: .45rem 0; color: #54595d; font-size: .78rem; }
 .wiki-en { color: #72777d; font-size: .78rem; }
 
@@ -122,3 +123,5 @@ a:hover { text-decoration: underline; }
   .wiki-category-index { grid-template-columns: 1fr; }
   .wiki-course-sequence ol { columns: 1; }
 }
+
+.wiki-source-note { margin-top: 1.5rem; border-top: 1px solid #c8ccd1; padding-top: .7rem; color: #54595d; font-size: .76rem; line-height: 1.55; }

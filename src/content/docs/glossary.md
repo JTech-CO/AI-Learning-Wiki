@@ -55,6 +55,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [빔 탐색](/wiki/beam-search/) <span class="wiki-en">Beam Search</span>
 - [사전학습](/wiki/pretraining/) <span class="wiki-en">Pretraining</span>
 - [상태 관리](/wiki/state-management/) <span class="wiki-en">State Management</span>
+- [생성 온도](/wiki/temperature/) <span class="wiki-en">Temperature</span>
 - [생성형 인공지능](/wiki/generative-ai/) <span class="wiki-en">Generative AI</span>
 - [셀프 어텐션](/wiki/self-attention/) <span class="wiki-en">Self-Attention</span>
 - [소규모 언어 모델](/wiki/small-language-model/) <span class="wiki-en">Small Language Model</span>
@@ -152,6 +153,5 @@ description: AI·LLM 백과 문서 가나다 색인
 - [LoRA](/wiki/lora/) <span class="wiki-en">Low-Rank Adaptation</span>
 - [REST API](/wiki/rest-api/) <span class="wiki-en">REST API</span>
 - [SDK](/wiki/sdk/) <span class="wiki-en">Software Development Kit</span>
-- [Temperature](/wiki/temperature/) <span class="wiki-en">Temperature</span>
 - [Top-k 샘플링](/wiki/top-k-sampling/) <span class="wiki-en">Top-k Sampling</span>
 - [Top-p 샘플링](/wiki/top-p-sampling/) <span class="wiki-en">Top-p Sampling</span>

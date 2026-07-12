@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T11:29:25.455Z",
+  "generatedAt": "2026-07-12T15:23:41.251Z",
   "counts": {
     "articles": 150,
     "courses": 8
@@ -854,9 +854,9 @@
         "temperature"
       ],
       "backlinks": [
+        "temperature",
         "softmax",
-        "inference",
-        "temperature"
+        "inference"
       ],
       "courses": [
         "llm-internals"
@@ -1603,6 +1603,38 @@
       "url": "/wiki/state-management/"
     },
     {
+      "id": "temperature",
+      "title": "생성 온도",
+      "englishTitle": "Temperature",
+      "aliases": [
+        "Temperature"
+      ],
+      "summary": "로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "logit",
+        "softmax"
+      ],
+      "related": [
+        "softmax",
+        "top-k-sampling",
+        "top-p-sampling"
+      ],
+      "backlinks": [
+        "logit",
+        "softmax",
+        "top-k-sampling",
+        "top-p-sampling"
+      ],
+      "courses": [
+        "llm-internals"
+      ],
+      "reviewedAt": "2026-07-12",
+      "url": "/wiki/temperature/"
+    },
+    {
       "id": "generative-ai",
       "title": "생성형 인공지능",
       "englishTitle": "Generative AI",
@@ -1721,8 +1753,8 @@
       ],
       "backlinks": [
         "logit",
-        "inference",
         "temperature",
+        "inference",
         "top-k-sampling"
       ],
       "courses": [
@@ -4550,36 +4582,6 @@
       "url": "/wiki/sdk/"
     },
     {
-      "id": "temperature",
-      "title": "Temperature",
-      "englishTitle": "Temperature",
-      "aliases": [],
-      "summary": "로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다.",
-      "categories": [
-        "inference"
-      ],
-      "prerequisites": [
-        "logit",
-        "softmax"
-      ],
-      "related": [
-        "softmax",
-        "top-k-sampling",
-        "top-p-sampling"
-      ],
-      "backlinks": [
-        "logit",
-        "softmax",
-        "top-k-sampling",
-        "top-p-sampling"
-      ],
-      "courses": [
-        "llm-internals"
-      ],
-      "reviewedAt": "2026-07-12",
-      "url": "/wiki/temperature/"
-    },
-    {
       "id": "top-k-sampling",
       "title": "Top-k 샘플링",
       "englishTitle": "Top-k Sampling",
@@ -4602,8 +4604,8 @@
       ],
       "backlinks": [
         "greedy-decoding",
-        "softmax",
         "temperature",
+        "softmax",
         "top-p-sampling"
       ],
       "courses": [
@@ -5532,7 +5534,7 @@
           "ref": "temperature",
           "required": false,
           "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.",
-          "title": "Temperature",
+          "title": "생성 온도",
           "url": "/wiki/temperature/"
         },
         {
