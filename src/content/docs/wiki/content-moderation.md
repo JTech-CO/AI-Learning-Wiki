@@ -1,10 +1,8 @@
 ---
-title: "콘텐츠 조정"
+title: "콘텐츠 조정 Content Moderation"
 description: "유해하거나 정책을 위반하는 콘텐츠를 탐지·분류·처리하는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Content Moderation</p>
 
 <p class="wiki-lead">유해하거나 정책을 위반하는 콘텐츠를 탐지·분류·처리하는 과정이다.</p>
 

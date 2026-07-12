@@ -1,10 +1,8 @@
 ---
-title: "AI 에이전트"
+title: "AI 에이전트 AI Agent"
 description: "목표를 바탕으로 상태를 관찰하고 도구를 선택해 여러 단계의 작업을 수행하는 시스템이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">AI Agent</p>
 
 <p class="wiki-lead">목표를 바탕으로 상태를 관찰하고 도구를 선택해 여러 단계의 작업을 수행하는 시스템이다.</p>
 

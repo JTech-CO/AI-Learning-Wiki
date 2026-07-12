@@ -1,10 +1,8 @@
 ---
-title: "벤치마크"
+title: "벤치마크 Benchmark"
 description: "여러 모델이나 시스템을 비교하기 위해 고정한 과제·데이터·평가 지표의 묶음이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Benchmark</p>
 
 <p class="wiki-lead">여러 모델이나 시스템을 비교하기 위해 고정한 과제·데이터·평가 지표의 묶음이다.</p>
 

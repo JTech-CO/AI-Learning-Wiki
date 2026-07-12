@@ -1,10 +1,8 @@
 ---
-title: "토큰화"
+title: "토큰화 Tokenization"
 description: "문자열을 모델의 어휘 집합에 있는 토큰 ID 시퀀스로 변환하는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Tokenization</p>
 
 <p class="wiki-lead">문자열을 모델의 어휘 집합에 있는 토큰 ID 시퀀스로 변환하는 과정이다.</p>
 

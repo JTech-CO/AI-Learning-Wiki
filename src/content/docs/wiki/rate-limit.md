@@ -1,10 +1,8 @@
 ---
-title: "요청 한도"
+title: "요청 한도 Rate Limit"
 description: "일정 시간 동안 허용하는 요청이나 토큰 사용량을 제한하는 정책이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Rate Limit</p>
 
 <p class="wiki-lead">일정 시간 동안 허용하는 요청이나 토큰 사용량을 제한하는 정책이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "지도 미세조정"
+title: "지도 미세조정 Supervised Fine-Tuning"
 description: "지시와 모범 응답 쌍으로 모델이 원하는 응답 형식을 따르도록 학습하는 단계다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Supervised Fine-Tuning</p>
 
 <p class="wiki-lead">지시와 모범 응답 쌍으로 모델이 원하는 응답 형식을 따르도록 학습하는 단계다.</p>
 

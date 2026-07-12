@@ -1,10 +1,8 @@
 ---
-title: "행렬"
+title: "행렬 Matrix"
 description: "수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Matrix</p>
 
 <p class="wiki-lead">수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "로짓"
+title: "로짓 Logit"
 description: "확률 변환 전에 모델이 각 후보 토큰에 부여하는 정규화되지 않은 점수다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Logit</p>
 
 <p class="wiki-lead">확률 변환 전에 모델이 각 후보 토큰에 부여하는 정규화되지 않은 점수다.</p>
 

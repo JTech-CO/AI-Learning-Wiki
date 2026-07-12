@@ -1,10 +1,8 @@
 ---
-title: "경사하강법"
+title: "경사하강법 Gradient Descent"
 description: "손실 함수의 기울기 반대 방향으로 파라미터를 반복 갱신하는 최적화 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Gradient Descent</p>
 
 <p class="wiki-lead">손실 함수의 기울기 반대 방향으로 파라미터를 반복 갱신하는 최적화 방법이다.</p>
 

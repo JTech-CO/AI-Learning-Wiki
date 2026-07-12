@@ -1,10 +1,8 @@
 ---
-title: "생성 온도"
+title: "생성 온도 Temperature"
 description: "로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Temperature</p>
 
 <p class="wiki-lead">로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "텐서"
+title: "텐서 Tensor"
 description: "스칼라·벡터·행렬을 일반화한 다차원 수치 배열이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Tensor</p>
 
 <p class="wiki-lead">스칼라·벡터·행렬을 일반화한 다차원 수치 배열이다.</p>
 

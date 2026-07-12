@@ -1,10 +1,8 @@
 ---
-title: "가드레일"
+title: "가드레일 Guardrail"
 description: "모델 입력·출력·도구 실행을 검사하고 위험 행동을 제한하는 정책과 기술이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Guardrail</p>
 
 <p class="wiki-lead">모델 입력·출력·도구 실행을 검사하고 위험 행동을 제한하는 정책과 기술이다.</p>
 

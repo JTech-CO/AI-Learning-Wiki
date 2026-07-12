@@ -1,10 +1,8 @@
 ---
-title: "멀티모달 임베딩"
+title: "멀티모달 임베딩 Multimodal Embedding"
 description: "서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Multimodal Embedding</p>
 
 <p class="wiki-lead">서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다.</p>
 

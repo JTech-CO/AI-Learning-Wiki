@@ -1,10 +1,10 @@
 ---
-title: "KV 캐시"
+title: "KV 캐시 Key-Value Cache"
 description: "이전 토큰의 어텐션 키와 값을 저장해 자동회귀 생성의 중복 계산을 줄이는 캐시다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Key-Value Cache · KV Cache</p>
+<p class="wiki-alias">KV Cache</p>
 
 <p class="wiki-lead">이전 토큰의 어텐션 키와 값을 저장해 자동회귀 생성의 중복 계산을 줄이는 캐시다.</p>
 

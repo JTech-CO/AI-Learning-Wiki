@@ -1,10 +1,8 @@
 ---
-title: "관측성"
+title: "관측성 Observability"
 description: "로그·메트릭·추적 정보로 시스템 내부 상태와 실패 원인을 이해할 수 있는 정도다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Observability</p>
 
 <p class="wiki-lead">로그·메트릭·추적 정보로 시스템 내부 상태와 실패 원인을 이해할 수 있는 정도다.</p>
 

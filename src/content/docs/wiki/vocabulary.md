@@ -1,10 +1,8 @@
 ---
-title: "어휘 집합"
+title: "어휘 집합 Vocabulary"
 description: "토크나이저와 모델이 구분해 처리할 수 있는 토큰의 전체 목록이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Vocabulary</p>
 
 <p class="wiki-lead">토크나이저와 모델이 구분해 처리할 수 있는 토큰의 전체 목록이다.</p>
 

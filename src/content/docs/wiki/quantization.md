@@ -1,10 +1,8 @@
 ---
-title: "양자화"
+title: "양자화 Quantization"
 description: "가중치와 활성값을 낮은 정밀도로 표현해 메모리와 계산 비용을 줄이는 기법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Quantization</p>
 
 <p class="wiki-lead">가중치와 활성값을 낮은 정밀도로 표현해 메모리와 계산 비용을 줄이는 기법이다.</p>
 

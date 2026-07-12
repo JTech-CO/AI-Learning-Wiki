@@ -1,10 +1,8 @@
 ---
-title: "정확도"
+title: "정확도 Accuracy"
 description: "전체 평가 예시 중 모델이 정답을 맞힌 비율이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Accuracy</p>
 
 <p class="wiki-lead">전체 평가 예시 중 모델이 정답을 맞힌 비율이다.</p>
 

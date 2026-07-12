@@ -1,10 +1,8 @@
 ---
-title: "확산 모델"
+title: "확산 모델 Diffusion Model"
 description: "데이터에 노이즈를 더하고 제거하는 역과정을 학습해 샘플을 생성하는 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Diffusion Model</p>
 
 <p class="wiki-lead">데이터에 노이즈를 더하고 제거하는 역과정을 학습해 샘플을 생성하는 모델이다.</p>
 

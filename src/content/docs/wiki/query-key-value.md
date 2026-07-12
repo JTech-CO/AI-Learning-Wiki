@@ -1,10 +1,10 @@
 ---
-title: "쿼리·키·값"
+title: "쿼리·키·값 Query, Key, Value"
 description: "어텐션에서 참조할 정보의 관련도를 계산하고 내용을 모으는 세 표현이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Query, Key, Value · QKV</p>
+<p class="wiki-alias">QKV</p>
 
 <p class="wiki-lead">어텐션에서 참조할 정보의 관련도를 계산하고 내용을 모으는 세 표현이다.</p>
 

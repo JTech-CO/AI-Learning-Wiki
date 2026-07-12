@@ -1,10 +1,8 @@
 ---
-title: "에이전트 루프"
+title: "에이전트 루프 Agent Loop"
 description: "관찰·추론·행동·결과 반영을 목표 달성까지 반복하는 실행 구조다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Agent Loop</p>
 
 <p class="wiki-lead">관찰·추론·행동·결과 반영을 목표 달성까지 반복하는 실행 구조다.</p>
 

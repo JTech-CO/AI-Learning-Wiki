@@ -1,10 +1,8 @@
 ---
-title: "모델 허브"
+title: "모델 허브 Model Hub"
 description: "모델·데이터셋·데모·평가 정보를 검색하고 배포하는 공유 플랫폼이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Model Hub</p>
 
 <p class="wiki-lead">모델·데이터셋·데모·평가 정보를 검색하고 배포하는 공유 플랫폼이다.</p>
 

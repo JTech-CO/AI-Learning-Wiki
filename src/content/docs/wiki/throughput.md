@@ -1,10 +1,8 @@
 ---
-title: "처리량"
+title: "처리량 Throughput"
 description: "단위 시간에 시스템이 처리하거나 생성할 수 있는 요청 또는 토큰 수다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Throughput</p>
 
 <p class="wiki-lead">단위 시간에 시스템이 처리하거나 생성할 수 있는 요청 또는 토큰 수다.</p>
 

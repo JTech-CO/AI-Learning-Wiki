@@ -1,10 +1,8 @@
 ---
-title: "잔차 연결"
+title: "잔차 연결 Residual Connection"
 description: "블록의 입력을 출력에 더해 깊은 신경망의 학습을 안정화하는 연결이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Residual Connection</p>
 
 <p class="wiki-lead">블록의 입력을 출력에 더해 깊은 신경망의 학습을 안정화하는 연결이다.</p>
 

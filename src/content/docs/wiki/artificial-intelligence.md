@@ -1,10 +1,10 @@
 ---
-title: "인공지능"
+title: "인공지능 Artificial Intelligence"
 description: "컴퓨터 시스템이 지각·추론·학습·행동과 같은 지능적 과제를 수행하도록 만드는 연구와 기술의 총칭이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Artificial Intelligence · AI</p>
+<p class="wiki-alias">AI</p>
 
 <p class="wiki-lead">컴퓨터 시스템이 지각·추론·학습·행동과 같은 지능적 과제를 수행하도록 만드는 연구와 기술의 총칭이다.</p>
 

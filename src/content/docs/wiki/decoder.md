@@ -1,10 +1,8 @@
 ---
-title: "디코더"
+title: "디코더 Decoder"
 description: "이전 출력과 문맥을 이용해 다음 출력을 순차적으로 생성하는 구성 요소다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Decoder</p>
 
 <p class="wiki-lead">이전 출력과 문맥을 이용해 다음 출력을 순차적으로 생성하는 구성 요소다.</p>
 

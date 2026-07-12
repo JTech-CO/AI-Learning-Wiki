@@ -1,10 +1,8 @@
 ---
-title: "합성 데이터"
+title: "합성 데이터 Synthetic Data"
 description: "실제 수집 대신 규칙·시뮬레이션·생성 모델로 만든 데이터다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Synthetic Data</p>
 
 <p class="wiki-lead">실제 수집 대신 규칙·시뮬레이션·생성 모델로 만든 데이터다.</p>
 

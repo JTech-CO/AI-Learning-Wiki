@@ -1,10 +1,8 @@
 ---
-title: "신경망"
+title: "신경망 Neural Network"
 description: "연결된 계산 단위와 가중치를 층으로 쌓아 복잡한 함수를 학습하는 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Neural Network</p>
 
 <p class="wiki-lead">연결된 계산 단위와 가중치를 층으로 쌓아 복잡한 함수를 학습하는 모델이다.</p>
 

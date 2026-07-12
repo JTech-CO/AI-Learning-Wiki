@@ -1,10 +1,8 @@
 ---
-title: "웹훅"
+title: "웹훅 Webhook"
 description: "특정 이벤트가 발생했을 때 다른 시스템의 URL로 데이터를 보내는 자동 통지 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Webhook</p>
 
 <p class="wiki-lead">특정 이벤트가 발생했을 때 다른 시스템의 URL로 데이터를 보내는 자동 통지 방식이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "추적"
+title: "추적 Tracing"
 description: "한 요청이 여러 모델·도구·단계를 거치는 실행 흐름과 시간을 기록하는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Tracing</p>
 
 <p class="wiki-lead">한 요청이 여러 모델·도구·단계를 거치는 실행 흐름과 시간을 기록하는 방법이다.</p>
 

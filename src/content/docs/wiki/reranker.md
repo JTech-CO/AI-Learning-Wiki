@@ -1,10 +1,8 @@
 ---
-title: "리랭커"
+title: "리랭커 Reranker"
 description: "초기 검색 후보를 질의 관련성 기준으로 다시 정렬하는 모델이나 규칙이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Reranker</p>
 
 <p class="wiki-lead">초기 검색 후보를 질의 관련성 기준으로 다시 정렬하는 모델이나 규칙이다.</p>
 

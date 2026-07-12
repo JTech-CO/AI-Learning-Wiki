@@ -1,10 +1,8 @@
 ---
-title: "음성 인식"
+title: "음성 인식 Automatic Speech Recognition"
 description: "음성 신호를 텍스트나 언어 단위로 변환하는 기술이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Automatic Speech Recognition</p>
 
 <p class="wiki-lead">음성 신호를 텍스트나 언어 단위로 변환하는 기술이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "음성 합성"
+title: "음성 합성 Text-to-Speech"
 description: "텍스트를 자연스러운 음성 파형으로 변환하는 기술이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Text-to-Speech</p>
 
 <p class="wiki-lead">텍스트를 자연스러운 음성 파형으로 변환하는 기술이다.</p>
 

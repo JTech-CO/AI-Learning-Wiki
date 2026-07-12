@@ -1,10 +1,8 @@
 ---
-title: "파라미터"
+title: "파라미터 Parameter"
 description: "학습 과정에서 조정되어 모델의 입력-출력 변환을 결정하는 수치다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Parameter</p>
 
 <p class="wiki-lead">학습 과정에서 조정되어 모델의 입력-출력 변환을 결정하는 수치다.</p>
 

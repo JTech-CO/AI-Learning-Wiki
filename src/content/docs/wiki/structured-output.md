@@ -1,10 +1,8 @@
 ---
-title: "구조화 출력"
+title: "구조화 출력 Structured Output"
 description: "모델 출력을 미리 정의한 JSON 스키마나 데이터 구조에 맞추는 기능이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Structured Output</p>
 
 <p class="wiki-lead">모델 출력을 미리 정의한 JSON 스키마나 데이터 구조에 맞추는 기능이다.</p>
 

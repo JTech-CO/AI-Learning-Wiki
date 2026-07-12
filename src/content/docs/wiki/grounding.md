@@ -1,10 +1,8 @@
 ---
-title: "근거화"
+title: "근거화 Grounding"
 description: "모델 출력을 제공된 자료나 검증 가능한 외부 사실에 연결하는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Grounding</p>
 
 <p class="wiki-lead">모델 출력을 제공된 자료나 검증 가능한 외부 사실에 연결하는 방법이다.</p>
 

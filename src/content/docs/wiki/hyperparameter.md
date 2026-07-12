@@ -1,10 +1,8 @@
 ---
-title: "하이퍼파라미터"
+title: "하이퍼파라미터 Hyperparameter"
 description: "학습 전에 사람이 정하거나 탐색하며 학습 과정과 모델 구조를 제어하는 값이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Hyperparameter</p>
 
 <p class="wiki-lead">학습 전에 사람이 정하거나 탐색하며 학습 과정과 모델 구조를 제어하는 값이다.</p>
 

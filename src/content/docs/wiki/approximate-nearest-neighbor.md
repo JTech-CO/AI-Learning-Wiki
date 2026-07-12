@@ -1,10 +1,10 @@
 ---
-title: "근사 최근접 이웃 검색"
+title: "근사 최근접 이웃 검색 Approximate Nearest Neighbor"
 description: "정확도를 일부 양보하고 대규모 벡터 검색 속도를 높이는 알고리즘 계열이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Approximate Nearest Neighbor · ANN</p>
+<p class="wiki-alias">ANN</p>
 
 <p class="wiki-lead">정확도를 일부 양보하고 대규모 벡터 검색 속도를 높이는 알고리즘 계열이다.</p>
 

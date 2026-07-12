@@ -1,10 +1,8 @@
 ---
-title: "조건부확률"
+title: "조건부확률 Conditional Probability"
 description: "어떤 사건이 주어졌을 때 다른 사건이 발생할 확률이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Conditional Probability</p>
 
 <p class="wiki-lead">어떤 사건이 주어졌을 때 다른 사건이 발생할 확률이다.</p>
 

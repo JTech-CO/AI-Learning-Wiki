@@ -1,10 +1,8 @@
 ---
-title: "편향 항"
+title: "편향 항 Bias Term"
 description: "선형 변환의 기준점을 이동시키기 위해 더하는 학습 가능한 값이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Bias Term</p>
 
 <p class="wiki-lead">선형 변환의 기준점을 이동시키기 위해 더하는 학습 가능한 값이다.</p>
 

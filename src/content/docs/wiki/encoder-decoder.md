@@ -1,10 +1,8 @@
 ---
-title: "인코더-디코더"
+title: "인코더-디코더 Encoder-Decoder"
 description: "입력을 인코딩한 뒤 별도의 디코더가 출력을 생성하는 모델 구조다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Encoder-Decoder</p>
 
 <p class="wiki-lead">입력을 인코딩한 뒤 별도의 디코더가 출력을 생성하는 모델 구조다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "워크플로 오케스트레이션"
+title: "워크플로 오케스트레이션 Workflow Orchestration"
 description: "여러 작업·모델·도구의 실행 순서와 조건을 제어하는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Workflow Orchestration</p>
 
 <p class="wiki-lead">여러 작업·모델·도구의 실행 순서와 조건을 제어하는 과정이다.</p>
 

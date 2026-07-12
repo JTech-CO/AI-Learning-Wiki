@@ -1,10 +1,8 @@
 ---
-title: "개인정보 보호"
+title: "개인정보 보호 Privacy"
 description: "AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리와 위험을 관리하는 원칙이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Privacy</p>
 
 <p class="wiki-lead">AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리와 위험을 관리하는 원칙이다.</p>
 

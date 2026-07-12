@@ -1,10 +1,8 @@
 ---
-title: "지시 튜닝"
+title: "지시 튜닝 Instruction Tuning"
 description: "다양한 자연어 지시 데이터로 여러 과제를 지시 형식에 맞게 수행하도록 만드는 학습이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Instruction Tuning</p>
 
 <p class="wiki-lead">다양한 자연어 지시 데이터로 여러 과제를 지시 형식에 맞게 수행하도록 만드는 학습이다.</p>
 

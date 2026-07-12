@@ -1,10 +1,8 @@
 ---
-title: "지식 증류"
+title: "지식 증류 Knowledge Distillation"
 description: "큰 교사 모델의 출력이나 표현을 작은 학생 모델이 모방하도록 학습하는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Knowledge Distillation</p>
 
 <p class="wiki-lead">큰 교사 모델의 출력이나 표현을 작은 학생 모델이 모방하도록 학습하는 방법이다.</p>
 

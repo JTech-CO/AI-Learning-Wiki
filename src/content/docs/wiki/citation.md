@@ -1,10 +1,8 @@
 ---
-title: "인용"
+title: "인용 Citation"
 description: "주장이나 생성 결과가 근거로 삼은 자료의 위치와 출처를 표시하는 정보다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Citation</p>
 
 <p class="wiki-lead">주장이나 생성 결과가 근거로 삼은 자료의 위치와 출처를 표시하는 정보다.</p>
 

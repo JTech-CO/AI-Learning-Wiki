@@ -1,10 +1,8 @@
 ---
-title: "다음 토큰 예측"
+title: "다음 토큰 예측 Next-Token Prediction"
 description: "이전 토큰들이 주어졌을 때 다음 토큰의 확률 분포를 예측하는 학습 목표다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Next-Token Prediction</p>
 
 <p class="wiki-lead">이전 토큰들이 주어졌을 때 다음 토큰의 확률 분포를 예측하는 학습 목표다.</p>
 

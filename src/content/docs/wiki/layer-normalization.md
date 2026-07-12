@@ -1,10 +1,8 @@
 ---
-title: "레이어 정규화"
+title: "레이어 정규화 Layer Normalization"
 description: "한 샘플 내부 특성의 분포를 정규화해 학습과 추론을 안정화하는 연산이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Layer Normalization</p>
 
 <p class="wiki-lead">한 샘플 내부 특성의 분포를 정규화해 학습과 추론을 안정화하는 연산이다.</p>
 

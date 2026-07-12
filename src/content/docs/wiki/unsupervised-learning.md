@@ -1,10 +1,8 @@
 ---
-title: "비지도학습"
+title: "비지도학습 Unsupervised Learning"
 description: "정답 표지 없이 데이터 내부의 구조·군집·표현을 찾는 학습 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Unsupervised Learning</p>
 
 <p class="wiki-lead">정답 표지 없이 데이터 내부의 구조·군집·표현을 찾는 학습 방식이다.</p>
 

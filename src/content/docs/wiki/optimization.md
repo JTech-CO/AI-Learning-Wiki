@@ -1,10 +1,8 @@
 ---
-title: "최적화"
+title: "최적화 Optimization"
 description: "목적 함수를 최소화하거나 최대화하는 파라미터를 찾는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Optimization</p>
 
 <p class="wiki-lead">목적 함수를 최소화하거나 최대화하는 파라미터를 찾는 과정이다.</p>
 

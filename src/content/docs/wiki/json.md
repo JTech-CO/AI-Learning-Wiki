@@ -1,10 +1,8 @@
 ---
-title: "JSON"
+title: "JSON JavaScript Object Notation"
 description: "키-값과 배열 구조로 데이터를 표현하는 경량 텍스트 형식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">JavaScript Object Notation</p>
 
 <p class="wiki-lead">키-값과 배열 구조로 데이터를 표현하는 경량 텍스트 형식이다.</p>
 

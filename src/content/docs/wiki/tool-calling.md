@@ -1,10 +1,8 @@
 ---
-title: "도구 호출"
+title: "도구 호출 Tool Calling"
 description: "모델이 정해진 함수 스키마를 선택하고 인수를 생성해 외부 기능 실행을 요청하는 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Tool Calling</p>
 
 <p class="wiki-lead">모델이 정해진 함수 스키마를 선택하고 인수를 생성해 외부 기능 실행을 요청하는 방식이다.</p>
 

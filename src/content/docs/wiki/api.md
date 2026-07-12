@@ -1,10 +1,8 @@
 ---
-title: "API"
+title: "API Application Programming Interface"
 description: "소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Application Programming Interface</p>
 
 <p class="wiki-lead">소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다.</p>
 

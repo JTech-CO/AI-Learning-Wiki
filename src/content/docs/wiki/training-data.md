@@ -1,10 +1,8 @@
 ---
-title: "학습 데이터"
+title: "학습 데이터 Training Data"
 description: "모델이 파라미터를 조정하며 패턴을 배우는 데 사용하는 예시와 기록의 집합이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Training Data</p>
 
 <p class="wiki-lead">모델이 파라미터를 조정하며 패턴을 배우는 데 사용하는 예시와 기록의 집합이다.</p>
 

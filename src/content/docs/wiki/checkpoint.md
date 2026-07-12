@@ -1,10 +1,8 @@
 ---
-title: "체크포인트"
+title: "체크포인트 Checkpoint"
 description: "특정 학습 시점의 모델 가중치와 최적화 상태를 저장한 파일 집합이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Checkpoint</p>
 
 <p class="wiki-lead">특정 학습 시점의 모델 가중치와 최적화 상태를 저장한 파일 집합이다.</p>
 

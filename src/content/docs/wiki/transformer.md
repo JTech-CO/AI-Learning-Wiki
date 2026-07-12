@@ -1,10 +1,8 @@
 ---
-title: "트랜스포머"
+title: "트랜스포머 Transformer"
 description: "어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Transformer</p>
 
 <p class="wiki-lead">어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다.</p>
 

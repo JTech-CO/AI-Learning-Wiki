@@ -1,10 +1,8 @@
 ---
-title: "언어 모델"
+title: "언어 모델 Language Model"
 description: "토큰 시퀀스의 확률 분포를 학습해 다음 토큰이나 누락된 토큰을 예측하는 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Language Model</p>
 
 <p class="wiki-lead">토큰 시퀀스의 확률 분포를 학습해 다음 토큰이나 누락된 토큰을 예측하는 모델이다.</p>
 

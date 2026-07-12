@@ -1,10 +1,8 @@
 ---
-title: "LLM 심사자"
+title: "LLM 심사자 LLM as a Judge"
 description: "언어 모델을 사용해 다른 모델 출력의 품질을 판정하거나 비교하는 평가 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">LLM as a Judge</p>
 
 <p class="wiki-lead">언어 모델을 사용해 다른 모델 출력의 품질을 판정하거나 비교하는 평가 방식이다.</p>
 

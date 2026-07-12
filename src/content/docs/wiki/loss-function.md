@@ -1,10 +1,8 @@
 ---
-title: "손실 함수"
+title: "손실 함수 Loss Function"
 description: "모델의 예측과 목표 사이 차이를 하나의 수치로 측정하는 함수다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Loss Function</p>
 
 <p class="wiki-lead">모델의 예측과 목표 사이 차이를 하나의 수치로 측정하는 함수다.</p>
 

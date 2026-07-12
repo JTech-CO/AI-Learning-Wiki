@@ -1,10 +1,8 @@
 ---
-title: "멀티모달 모델"
+title: "멀티모달 모델 Multimodal Model"
 description: "텍스트·이미지·음성·영상 등 둘 이상의 데이터 양식을 함께 처리하는 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Multimodal Model</p>
 
 <p class="wiki-lead">텍스트·이미지·음성·영상 등 둘 이상의 데이터 양식을 함께 처리하는 모델이다.</p>
 

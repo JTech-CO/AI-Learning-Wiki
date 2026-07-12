@@ -1,10 +1,8 @@
 ---
-title: "에이전트 메모리"
+title: "에이전트 메모리 Agent Memory"
 description: "에이전트가 이전 상호작용과 작업 상태를 저장하고 이후 판단에 사용하는 구조다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Agent Memory</p>
 
 <p class="wiki-lead">에이전트가 이전 상호작용과 작업 상태를 저장하고 이후 판단에 사용하는 구조다.</p>
 

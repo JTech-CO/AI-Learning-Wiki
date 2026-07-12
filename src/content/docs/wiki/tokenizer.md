@@ -1,10 +1,8 @@
 ---
-title: "토크나이저"
+title: "토크나이저 Tokenizer"
 description: "텍스트와 토큰 ID 사이의 분할·변환 규칙을 구현한 구성 요소다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Tokenizer</p>
 
 <p class="wiki-lead">텍스트와 토큰 ID 사이의 분할·변환 규칙을 구현한 구성 요소다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "기울기"
+title: "기울기 Gradient"
 description: "여러 변수에 대한 함수 변화율을 모은 벡터로, 손실을 줄이는 방향을 알려준다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Gradient</p>
 
 <p class="wiki-lead">여러 변수에 대한 함수 변화율을 모은 벡터로, 손실을 줄이는 방향을 알려준다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "스트리밍 응답"
+title: "스트리밍 응답 Streaming Response"
 description: "전체 결과가 완성되기 전에 생성된 일부 데이터를 순차적으로 전송하는 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Streaming Response</p>
 
 <p class="wiki-lead">전체 결과가 완성되기 전에 생성된 일부 데이터를 순차적으로 전송하는 방식이다.</p>
 

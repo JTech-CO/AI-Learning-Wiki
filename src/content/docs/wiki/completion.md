@@ -1,10 +1,8 @@
 ---
-title: "컴플리션"
+title: "컴플리션 Completion"
 description: "프롬프트와 이전 토큰을 조건으로 모델이 생성한 후속 토큰 시퀀스다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Completion</p>
 
 <p class="wiki-lead">프롬프트와 이전 토큰을 조건으로 모델이 생성한 후속 토큰 시퀀스다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "그리디 디코딩"
+title: "그리디 디코딩 Greedy Decoding"
 description: "매 단계에서 확률이 가장 높은 토큰을 선택하는 결정적 생성 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Greedy Decoding</p>
 
 <p class="wiki-lead">매 단계에서 확률이 가장 높은 토큰을 선택하는 결정적 생성 방식이다.</p>
 

@@ -1,10 +1,10 @@
 ---
-title: "머신러닝"
+title: "머신러닝 Machine Learning"
 description: "명시적으로 모든 규칙을 작성하지 않고 데이터에서 패턴을 학습해 예측이나 결정을 수행하는 인공지능의 한 분야다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Machine Learning · ML</p>
+<p class="wiki-alias">ML</p>
 
 <p class="wiki-lead">명시적으로 모든 규칙을 작성하지 않고 데이터에서 패턴을 학습해 예측이나 결정을 수행하는 인공지능의 한 분야다.</p>
 

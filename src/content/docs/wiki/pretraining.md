@@ -1,10 +1,8 @@
 ---
-title: "사전학습"
+title: "사전학습 Pretraining"
 description: "대규모 데이터로 일반적인 표현과 패턴을 먼저 학습하는 단계다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Pretraining</p>
 
 <p class="wiki-lead">대규모 데이터로 일반적인 표현과 패턴을 먼저 학습하는 단계다.</p>
 

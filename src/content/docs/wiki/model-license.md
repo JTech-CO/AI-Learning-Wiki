@@ -1,10 +1,8 @@
 ---
-title: "모델 라이선스"
+title: "모델 라이선스 Model License"
 description: "모델 가중치와 출력의 사용·수정·재배포 조건을 정한 법적 약정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Model License</p>
 
 <p class="wiki-lead">모델 가중치와 출력의 사용·수정·재배포 조건을 정한 법적 약정이다.</p>
 

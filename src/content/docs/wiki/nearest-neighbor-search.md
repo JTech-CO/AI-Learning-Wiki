@@ -1,10 +1,8 @@
 ---
-title: "최근접 이웃 검색"
+title: "최근접 이웃 검색 Nearest Neighbor Search"
 description: "벡터 공간에서 질의 벡터와 가장 가까운 항목을 찾는 문제다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Nearest Neighbor Search</p>
 
 <p class="wiki-lead">벡터 공간에서 질의 벡터와 가장 가까운 항목을 찾는 문제다.</p>
 

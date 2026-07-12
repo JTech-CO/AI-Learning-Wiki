@@ -1,10 +1,8 @@
 ---
-title: "멀티 에이전트 시스템"
+title: "멀티 에이전트 시스템 Multi-Agent System"
 description: "역할이 다른 여러 에이전트가 협력하거나 경쟁하며 문제를 해결하는 시스템이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Multi-Agent System</p>
 
 <p class="wiki-lead">역할이 다른 여러 에이전트가 협력하거나 경쟁하며 문제를 해결하는 시스템이다.</p>
 

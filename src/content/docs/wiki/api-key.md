@@ -1,10 +1,8 @@
 ---
-title: "API 키"
+title: "API 키 API Key"
 description: "API 요청의 프로젝트나 사용자를 식별하고 권한을 확인하는 비밀 문자열이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">API Key</p>
 
 <p class="wiki-lead">API 요청의 프로젝트나 사용자를 식별하고 권한을 확인하는 비밀 문자열이다.</p>
 

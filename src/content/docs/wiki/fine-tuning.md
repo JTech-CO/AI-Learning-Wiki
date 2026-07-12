@@ -1,10 +1,8 @@
 ---
-title: "미세조정"
+title: "미세조정 Fine-Tuning"
 description: "사전학습 모델을 특정 데이터와 목적에 맞게 추가 학습하는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Fine-Tuning</p>
 
 <p class="wiki-lead">사전학습 모델을 특정 데이터와 목적에 맞게 추가 학습하는 과정이다.</p>
 

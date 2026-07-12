@@ -1,10 +1,8 @@
 ---
-title: "이미지 생성"
+title: "이미지 생성 Image Generation"
 description: "텍스트나 다른 조건을 바탕으로 새로운 이미지를 합성하는 생성 과제다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Image Generation</p>
 
 <p class="wiki-lead">텍스트나 다른 조건을 바탕으로 새로운 이미지를 합성하는 생성 과제다.</p>
 

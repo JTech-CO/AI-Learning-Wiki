@@ -1,10 +1,8 @@
 ---
-title: "편향과 공정성"
+title: "편향과 공정성 Bias and Fairness"
 description: "모델의 결과가 집단이나 특성에 따라 체계적으로 불리하게 달라지는지를 다루는 개념이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Bias and Fairness</p>
 
 <p class="wiki-lead">모델의 결과가 집단이나 특성에 따라 체계적으로 불리하게 달라지는지를 다루는 개념이다.</p>
 

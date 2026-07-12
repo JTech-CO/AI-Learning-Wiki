@@ -1,10 +1,8 @@
 ---
-title: "HTTP 요청"
+title: "HTTP 요청 HTTP Request"
 description: "클라이언트가 서버에 메서드·주소·헤더·본문을 보내는 메시지다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">HTTP Request</p>
 
 <p class="wiki-lead">클라이언트가 서버에 메서드·주소·헤더·본문을 보내는 메시지다.</p>
 

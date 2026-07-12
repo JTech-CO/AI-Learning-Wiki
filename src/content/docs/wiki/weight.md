@@ -1,10 +1,8 @@
 ---
-title: "가중치"
+title: "가중치 Weight"
 description: "입력 신호가 출력에 미치는 상대적 크기를 조절하며 학습되는 파라미터다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Weight</p>
 
 <p class="wiki-lead">입력 신호가 출력에 미치는 상대적 크기를 조절하며 학습되는 파라미터다.</p>
 

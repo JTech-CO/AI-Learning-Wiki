@@ -1,10 +1,8 @@
 ---
-title: "빔 탐색"
+title: "빔 탐색 Beam Search"
 description: "여러 후보 시퀀스를 동시에 유지하며 전체 점수가 높은 출력을 찾는 탐색 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Beam Search</p>
 
 <p class="wiki-lead">여러 후보 시퀀스를 동시에 유지하며 전체 점수가 높은 출력을 찾는 탐색 방법이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "지연 시간"
+title: "지연 시간 Latency"
 description: "요청을 보낸 뒤 첫 토큰 또는 전체 응답을 받을 때까지 걸리는 시간이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Latency</p>
 
 <p class="wiki-lead">요청을 보낸 뒤 첫 토큰 또는 전체 응답을 받을 때까지 걸리는 시간이다.</p>
 

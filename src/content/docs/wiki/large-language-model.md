@@ -1,10 +1,10 @@
 ---
-title: "대규모 언어 모델"
+title: "대규모 언어 모델 Large Language Model"
 description: "대규모 데이터와 많은 파라미터로 학습해 다양한 언어 과제를 수행하는 언어 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Large Language Model · LLM</p>
+<p class="wiki-alias">LLM</p>
 
 <p class="wiki-lead">대규모 데이터와 많은 파라미터로 학습해 다양한 언어 과제를 수행하는 언어 모델이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "확률"
+title: "확률 Probability"
 description: "불확실한 사건이 일어날 가능성을 수치로 표현하는 체계다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Probability</p>
 
 <p class="wiki-lead">불확실한 사건이 일어날 가능성을 수치로 표현하는 체계다.</p>
 

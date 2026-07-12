@@ -1,10 +1,8 @@
 ---
-title: "셀프 어텐션"
+title: "셀프 어텐션 Self-Attention"
 description: "하나의 시퀀스 안에서 각 위치가 다른 위치의 정보를 참조하는 어텐션이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Self-Attention</p>
 
 <p class="wiki-lead">하나의 시퀀스 안에서 각 위치가 다른 위치의 정보를 참조하는 어텐션이다.</p>
 

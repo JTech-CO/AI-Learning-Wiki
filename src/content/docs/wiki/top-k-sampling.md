@@ -1,10 +1,10 @@
 ---
-title: "Top-k 샘플링"
+title: "Top-k 샘플링 Top-k Sampling"
 description: "확률이 높은 상위 k개 후보만 남겨 다음 토큰을 선택하는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Top-k Sampling · Top-k</p>
+<p class="wiki-alias">Top-k</p>
 
 <p class="wiki-lead">확률이 높은 상위 k개 후보만 남겨 다음 토큰을 선택하는 방법이다.</p>
 

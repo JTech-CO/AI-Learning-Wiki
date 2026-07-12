@@ -1,10 +1,8 @@
 ---
-title: "멀티헤드 어텐션"
+title: "멀티헤드 어텐션 Multi-Head Attention"
 description: "여러 어텐션 헤드가 서로 다른 관계를 병렬로 학습하도록 구성한 연산이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Multi-Head Attention</p>
 
 <p class="wiki-lead">여러 어텐션 헤드가 서로 다른 관계를 병렬로 학습하도록 구성한 연산이다.</p>
 

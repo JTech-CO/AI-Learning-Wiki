@@ -1,10 +1,8 @@
 ---
-title: "탈옥 공격"
+title: "탈옥 공격 Jailbreak"
 description: "모델의 안전 정책과 행동 제한을 우회하도록 입력을 구성하는 공격 기법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Jailbreak</p>
 
 <p class="wiki-lead">모델의 안전 정책과 행동 제한을 우회하도록 입력을 구성하는 공격 기법이다.</p>
 

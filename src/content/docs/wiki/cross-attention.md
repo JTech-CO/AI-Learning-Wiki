@@ -1,10 +1,8 @@
 ---
-title: "크로스 어텐션"
+title: "크로스 어텐션 Cross-Attention"
 description: "한 시퀀스의 질의가 다른 시퀀스의 키와 값을 참조하는 어텐션이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Cross-Attention</p>
 
 <p class="wiki-lead">한 시퀀스의 질의가 다른 시퀀스의 키와 값을 참조하는 어텐션이다.</p>
 

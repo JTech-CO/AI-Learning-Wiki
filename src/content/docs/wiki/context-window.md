@@ -1,10 +1,8 @@
 ---
-title: "컨텍스트 윈도우"
+title: "컨텍스트 윈도우 Context Window"
 description: "모델이 한 번의 요청에서 참조할 수 있는 토큰 범위다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Context Window</p>
 
 <p class="wiki-lead">모델이 한 번의 요청에서 참조할 수 있는 토큰 범위다.</p>
 

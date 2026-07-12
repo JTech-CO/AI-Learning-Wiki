@@ -1,10 +1,8 @@
 ---
-title: "데이터 증강"
+title: "데이터 증강 Data Augmentation"
 description: "기존 예시를 변형하거나 합성해 학습 데이터의 다양성을 높이는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Data Augmentation</p>
 
 <p class="wiki-lead">기존 예시를 변형하거나 합성해 학습 데이터의 다양성을 높이는 방법이다.</p>
 

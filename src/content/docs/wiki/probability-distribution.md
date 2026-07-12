@@ -1,10 +1,8 @@
 ---
-title: "확률분포"
+title: "확률분포 Probability Distribution"
 description: "가능한 값마다 확률을 대응시켜 불확실성을 나타내는 함수다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Probability Distribution</p>
 
 <p class="wiki-lead">가능한 값마다 확률을 대응시켜 불확실성을 나타내는 함수다.</p>
 

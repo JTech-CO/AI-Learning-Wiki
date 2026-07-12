@@ -1,10 +1,10 @@
 ---
-title: "검색 증강 생성"
+title: "검색 증강 생성 Retrieval-Augmented Generation"
 description: "외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Retrieval-Augmented Generation · RAG</p>
+<p class="wiki-alias">RAG</p>
 
 <p class="wiki-lead">외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.</p>
 

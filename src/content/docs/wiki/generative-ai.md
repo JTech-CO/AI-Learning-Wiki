@@ -1,10 +1,10 @@
 ---
-title: "생성형 인공지능"
+title: "생성형 인공지능 Generative AI"
 description: "학습 데이터의 분포를 바탕으로 텍스트·이미지·음성·코드 같은 새로운 결과물을 생성하는 인공지능이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Generative AI · GenAI · 생성 AI</p>
+<p class="wiki-alias">GenAI · 생성 AI</p>
 
 <p class="wiki-lead">학습 데이터의 분포를 바탕으로 텍스트·이미지·음성·코드 같은 새로운 결과물을 생성하는 인공지능이다.</p>
 

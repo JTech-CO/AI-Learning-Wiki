@@ -1,10 +1,8 @@
 ---
-title: "인공 뉴런"
+title: "인공 뉴런 Artificial Neuron"
 description: "입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Artificial Neuron</p>
 
 <p class="wiki-lead">입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다.</p>
 

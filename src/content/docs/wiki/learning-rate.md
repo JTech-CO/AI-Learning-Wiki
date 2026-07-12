@@ -1,10 +1,8 @@
 ---
-title: "학습률"
+title: "학습률 Learning Rate"
 description: "한 번의 최적화 단계에서 파라미터를 얼마나 크게 변경할지 정하는 값이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Learning Rate</p>
 
 <p class="wiki-lead">한 번의 최적화 단계에서 파라미터를 얼마나 크게 변경할지 정하는 값이다.</p>
 

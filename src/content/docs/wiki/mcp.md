@@ -1,10 +1,10 @@
 ---
-title: "모델 컨텍스트 프로토콜"
+title: "모델 컨텍스트 프로토콜 Model Context Protocol"
 description: "AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으로 연결하도록 정의한 프로토콜이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Model Context Protocol · MCP</p>
+<p class="wiki-alias">MCP</p>
 
 <p class="wiki-lead">AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으로 연결하도록 정의한 프로토콜이다.</p>
 

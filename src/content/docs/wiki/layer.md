@@ -1,10 +1,8 @@
 ---
-title: "신경망 층"
+title: "신경망 층 Neural Network Layer"
 description: "같은 단계에서 입력을 변환하는 여러 계산 단위의 묶음이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Neural Network Layer</p>
 
 <p class="wiki-lead">같은 단계에서 입력을 변환하는 여러 계산 단위의 묶음이다.</p>
 

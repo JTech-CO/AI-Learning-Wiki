@@ -1,10 +1,8 @@
 ---
-title: "평가 지표"
+title: "평가 지표 Evaluation Metric"
 description: "성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Evaluation Metric</p>
 
 <p class="wiki-lead">성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다.</p>
 

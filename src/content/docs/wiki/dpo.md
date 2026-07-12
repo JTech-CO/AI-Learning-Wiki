@@ -1,10 +1,10 @@
 ---
-title: "직접 선호 최적화"
+title: "직접 선호 최적화 Direct Preference Optimization"
 description: "별도 강화학습 루프 없이 선호 응답과 비선호 응답으로 정책을 직접 최적화하는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Direct Preference Optimization · DPO</p>
+<p class="wiki-alias">DPO</p>
 
 <p class="wiki-lead">별도 강화학습 루프 없이 선호 응답과 비선호 응답으로 정책을 직접 최적화하는 방법이다.</p>
 

@@ -1,10 +1,10 @@
 ---
-title: "바이트 페어 인코딩"
+title: "바이트 페어 인코딩 Byte Pair Encoding"
 description: "자주 함께 나타나는 기호 쌍을 반복 병합해 서브워드 어휘를 만드는 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Byte Pair Encoding · BPE</p>
+<p class="wiki-alias">BPE</p>
 
 <p class="wiki-lead">자주 함께 나타나는 기호 쌍을 반복 병합해 서브워드 어휘를 만드는 방식이다.</p>
 

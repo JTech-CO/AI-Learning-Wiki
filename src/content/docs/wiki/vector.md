@@ -1,10 +1,8 @@
 ---
-title: "벡터"
+title: "벡터 Vector"
 description: "크기와 방향 또는 순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Vector</p>
 
 <p class="wiki-lead">크기와 방향 또는 순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다.</p>
 

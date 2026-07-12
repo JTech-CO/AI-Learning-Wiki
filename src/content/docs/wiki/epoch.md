@@ -1,10 +1,8 @@
 ---
-title: "에포크"
+title: "에포크 Epoch"
 description: "학습 알고리즘이 전체 학습 데이터셋을 한 번 처리한 주기다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Epoch</p>
 
 <p class="wiki-lead">학습 알고리즘이 전체 학습 데이터셋을 한 번 처리한 주기다.</p>
 

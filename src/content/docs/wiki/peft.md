@@ -1,10 +1,10 @@
 ---
-title: "파라미터 효율적 미세조정"
+title: "파라미터 효율적 미세조정 Parameter-Efficient Fine-Tuning"
 description: "전체 가중치 대신 일부 작은 파라미터만 학습해 비용을 줄이는 기법들의 총칭이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Parameter-Efficient Fine-Tuning · PEFT</p>
+<p class="wiki-alias">PEFT</p>
 
 <p class="wiki-lead">전체 가중치 대신 일부 작은 파라미터만 학습해 비용을 줄이는 기법들의 총칭이다.</p>
 

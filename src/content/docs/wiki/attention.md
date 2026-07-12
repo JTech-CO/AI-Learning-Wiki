@@ -1,10 +1,8 @@
 ---
-title: "어텐션"
+title: "어텐션 Attention"
 description: "현재 표현을 만들 때 입력의 각 부분에 서로 다른 중요도를 부여해 정보를 결합하는 연산이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Attention</p>
 
 <p class="wiki-lead">현재 표현을 만들 때 입력의 각 부분에 서로 다른 중요도를 부여해 정보를 결합하는 연산이다.</p>
 

@@ -1,10 +1,10 @@
 ---
-title: "Top-p 샘플링"
+title: "Top-p 샘플링 Top-p Sampling"
 description: "누적 확률이 p에 도달하는 최소 후보 집합에서 다음 토큰을 선택하는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Top-p Sampling · Top-p</p>
+<p class="wiki-alias">Top-p</p>
 
 <p class="wiki-lead">누적 확률이 p에 도달하는 최소 후보 집합에서 다음 토큰을 선택하는 방법이다.</p>
 

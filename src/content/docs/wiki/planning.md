@@ -1,10 +1,8 @@
 ---
-title: "계획"
+title: "계획 Planning"
 description: "목표를 하위 단계와 실행 순서로 분해하고 필요에 따라 계획을 수정하는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Planning</p>
 
 <p class="wiki-lead">목표를 하위 단계와 실행 순서로 분해하고 필요에 따라 계획을 수정하는 과정이다.</p>
 

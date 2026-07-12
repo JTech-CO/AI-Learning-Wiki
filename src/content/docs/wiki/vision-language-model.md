@@ -1,10 +1,10 @@
 ---
-title: "비전-언어 모델"
+title: "비전-언어 모델 Vision-Language Model"
 description: "이미지와 텍스트의 관계를 학습해 이해와 생성을 수행하는 멀티모달 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Vision-Language Model · VLM</p>
+<p class="wiki-alias">VLM</p>
 
 <p class="wiki-lead">이미지와 텍스트의 관계를 학습해 이해와 생성을 수행하는 멀티모달 모델이다.</p>
 

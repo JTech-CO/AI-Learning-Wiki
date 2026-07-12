@@ -1,10 +1,8 @@
 ---
-title: "강화학습"
+title: "강화학습 Reinforcement Learning"
 description: "에이전트가 환경과 상호작용하며 누적 보상을 높이는 행동 정책을 학습하는 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Reinforcement Learning</p>
 
 <p class="wiki-lead">에이전트가 환경과 상호작용하며 누적 보상을 높이는 행동 정책을 학습하는 방식이다.</p>
 

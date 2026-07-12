@@ -1,10 +1,8 @@
 ---
-title: "프롬프트 인젝션"
+title: "프롬프트 인젝션 Prompt Injection"
 description: "악의적 입력이 기존 지시를 무시하거나 비밀을 노출하도록 모델 행동을 조작하는 공격이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Prompt Injection</p>
 
 <p class="wiki-lead">악의적 입력이 기존 지시를 무시하거나 비밀을 노출하도록 모델 행동을 조작하는 공격이다.</p>
 

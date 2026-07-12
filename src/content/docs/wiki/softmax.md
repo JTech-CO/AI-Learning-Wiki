@@ -1,10 +1,8 @@
 ---
-title: "소프트맥스"
+title: "소프트맥스 Softmax"
 description: "여러 로짓을 합이 1인 확률 분포로 변환하는 함수다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Softmax</p>
 
 <p class="wiki-lead">여러 로짓을 합이 1인 확률 분포로 변환하는 함수다.</p>
 

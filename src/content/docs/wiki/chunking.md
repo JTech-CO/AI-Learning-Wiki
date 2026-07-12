@@ -1,10 +1,8 @@
 ---
-title: "청킹"
+title: "청킹 Chunking"
 description: "긴 문서를 검색과 문맥 구성에 적합한 작은 단위로 나누는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Chunking</p>
 
 <p class="wiki-lead">긴 문서를 검색과 문맥 구성에 적합한 작은 단위로 나누는 과정이다.</p>
 

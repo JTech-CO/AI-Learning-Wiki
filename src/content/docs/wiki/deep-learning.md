@@ -1,10 +1,10 @@
 ---
-title: "딥러닝"
+title: "딥러닝 Deep Learning"
 description: "여러 층의 신경망으로 데이터의 표현을 단계적으로 학습하는 머신러닝 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Deep Learning · DL</p>
+<p class="wiki-alias">DL</p>
 
 <p class="wiki-lead">여러 층의 신경망으로 데이터의 표현을 단계적으로 학습하는 머신러닝 방법이다.</p>
 

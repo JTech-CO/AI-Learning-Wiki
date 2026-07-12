@@ -1,10 +1,10 @@
 ---
-title: "전문가 혼합"
+title: "전문가 혼합 Mixture of Experts"
 description: "입력마다 일부 전문가 네트워크만 선택해 계산량 대비 모델 용량을 늘리는 구조다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Mixture of Experts · MoE</p>
+<p class="wiki-alias">MoE</p>
 
 <p class="wiki-lead">입력마다 일부 전문가 네트워크만 선택해 계산량 대비 모델 용량을 늘리는 구조다.</p>
 

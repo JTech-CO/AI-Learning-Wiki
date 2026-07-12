@@ -1,10 +1,8 @@
 ---
-title: "데이터셋"
+title: "데이터셋 Dataset"
 description: "특정 분석이나 학습 목적에 맞춰 구조화하고 관리하는 데이터의 모음이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Dataset</p>
 
 <p class="wiki-lead">특정 분석이나 학습 목적에 맞춰 구조화하고 관리하는 데이터의 모음이다.</p>
 

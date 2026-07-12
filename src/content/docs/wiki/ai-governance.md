@@ -1,10 +1,8 @@
 ---
-title: "AI 거버넌스"
+title: "AI 거버넌스 AI Governance"
 description: "AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">AI Governance</p>
 
 <p class="wiki-lead">AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다.</p>
 

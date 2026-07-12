@@ -1,10 +1,8 @@
 ---
-title: "임베딩"
+title: "임베딩 Embedding"
 description: "문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Embedding</p>
 
 <p class="wiki-lead">문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다.</p>
 

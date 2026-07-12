@@ -1,10 +1,8 @@
 ---
-title: "SDK"
+title: "SDK Software Development Kit"
 description: "특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Software Development Kit</p>
 
 <p class="wiki-lead">특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다.</p>
 

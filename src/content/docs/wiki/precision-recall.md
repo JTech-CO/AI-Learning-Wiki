@@ -1,10 +1,8 @@
 ---
-title: "정밀도와 재현율"
+title: "정밀도와 재현율 Precision and Recall"
 description: "양성 예측의 신뢰성과 실제 양성을 찾아낸 비율을 각각 나타내는 지표다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Precision and Recall</p>
 
 <p class="wiki-lead">양성 예측의 신뢰성과 실제 양성을 찾아낸 비율을 각각 나타내는 지표다.</p>
 

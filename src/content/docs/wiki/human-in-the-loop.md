@@ -1,10 +1,8 @@
 ---
-title: "인간 참여형 제어"
+title: "인간 참여형 제어 Human in the Loop"
 description: "중요한 판단이나 실행 단계에 사람의 검토·승인·교정을 포함하는 설계다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Human in the Loop</p>
 
 <p class="wiki-lead">중요한 판단이나 실행 단계에 사람의 검토·승인·교정을 포함하는 설계다.</p>
 

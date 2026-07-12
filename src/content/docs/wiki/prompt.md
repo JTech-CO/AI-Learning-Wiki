@@ -1,10 +1,8 @@
 ---
-title: "프롬프트"
+title: "프롬프트 Prompt"
 description: "모델에 과제·문맥·제약·출력 형식을 전달하는 입력이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Prompt</p>
 
 <p class="wiki-lead">모델에 과제·문맥·제약·출력 형식을 전달하는 입력이다.</p>
 

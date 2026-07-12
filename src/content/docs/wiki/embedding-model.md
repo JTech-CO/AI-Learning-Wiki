@@ -1,10 +1,8 @@
 ---
-title: "임베딩 모델"
+title: "임베딩 모델 Embedding Model"
 description: "입력을 의미 비교와 검색에 사용할 고정 길이 벡터로 변환하는 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Embedding Model</p>
 
 <p class="wiki-lead">입력을 의미 비교와 검색에 사용할 고정 길이 벡터로 변환하는 모델이다.</p>
 

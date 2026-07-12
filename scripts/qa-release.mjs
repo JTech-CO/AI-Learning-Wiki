@@ -39,6 +39,15 @@ expect(home.includes('분야별 백과 탐색'), 'wiki category navigation missi
 expect(courseProgress.includes('aiwiki-course-v2'), 'wiki course progress storage missing');
 expect(promptExplorer.includes('관련 Wiki 문서'), 'prompt explorer Wiki link missing');
 expect(!promptExplorer.includes('레슨 보기 →'), 'legacy lesson link remains in prompt explorer');
+const wikiCss = await readFile('src/styles/wiki.css', 'utf8');
+expect(/\.main-pane h1#_top \{[^}]*color: #202122/.test(wikiCss), 'visible Wiki article title color is missing');
+const escapeHtml = (value) => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+for (const article of wiki.articles) {
+  const distinctEnglish = article.englishTitle && article.englishTitle.localeCompare(article.title, undefined, { sensitivity: 'accent' }) !== 0;
+  const displayTitle = escapeHtml(distinctEnglish ? `${article.title} ${article.englishTitle}` : article.title);
+  const page = await readFile(path.join('dist', 'wiki', article.id, 'index.html'), 'utf8');
+  expect(page.includes(`>${displayTitle}</h1>`), `bilingual Wiki title missing: ${article.id}`);
+}
 
 if (failures.length) {
   console.error(`release QA: ${failures.length} failure(s)\n- ${failures.join('\n- ')}`);

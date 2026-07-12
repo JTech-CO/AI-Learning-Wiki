@@ -1,10 +1,8 @@
 ---
-title: "검색기"
+title: "검색기 Retriever"
 description: "질의와 관련된 문서나 청크 후보를 저장소에서 찾는 구성 요소다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Retriever</p>
 
 <p class="wiki-lead">질의와 관련된 문서나 청크 후보를 저장소에서 찾는 구성 요소다.</p>
 

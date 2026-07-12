@@ -1,10 +1,8 @@
 ---
-title: "활성화 함수"
+title: "활성화 함수 Activation Function"
 description: "신경망에 비선형성을 부여해 복잡한 관계를 표현하게 하는 함수다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Activation Function</p>
 
 <p class="wiki-lead">신경망에 비선형성을 부여해 복잡한 관계를 표현하게 하는 함수다.</p>
 

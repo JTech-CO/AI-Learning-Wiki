@@ -1,10 +1,8 @@
 ---
-title: "배치"
+title: "배치 Batch"
 description: "한 번의 순전파와 역전파에서 함께 처리하는 데이터 예시의 묶음이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Batch</p>
 
 <p class="wiki-lead">한 번의 순전파와 역전파에서 함께 처리하는 데이터 예시의 묶음이다.</p>
 

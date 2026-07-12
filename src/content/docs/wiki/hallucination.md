@@ -1,10 +1,8 @@
 ---
-title: "환각"
+title: "환각 Hallucination"
 description: "모델이 근거가 없거나 사실과 다른 내용을 그럴듯하게 생성하는 현상이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Hallucination</p>
 
 <p class="wiki-lead">모델이 근거가 없거나 사실과 다른 내용을 그럴듯하게 생성하는 현상이다.</p>
 

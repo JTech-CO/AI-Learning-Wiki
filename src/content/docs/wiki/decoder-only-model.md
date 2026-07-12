@@ -1,10 +1,8 @@
 ---
-title: "디코더 전용 모델"
+title: "디코더 전용 모델 Decoder-Only Model"
 description: "인과적 어텐션을 사용하는 디코더 블록만으로 다음 토큰을 생성하는 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Decoder-Only Model</p>
 
 <p class="wiki-lead">인과적 어텐션을 사용하는 디코더 블록만으로 다음 토큰을 생성하는 모델이다.</p>
 

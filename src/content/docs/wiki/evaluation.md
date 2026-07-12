@@ -1,10 +1,8 @@
 ---
-title: "모델 평가"
+title: "모델 평가 Model Evaluation"
 description: "정해진 데이터·기준·절차로 모델이나 시스템의 품질과 위험을 측정하는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Model Evaluation</p>
 
 <p class="wiki-lead">정해진 데이터·기준·절차로 모델이나 시스템의 품질과 위험을 측정하는 과정이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "배칭"
+title: "배칭 Batching"
 description: "여러 추론 요청을 묶어 하드웨어 사용률과 처리량을 높이는 기법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Batching</p>
 
 <p class="wiki-lead">여러 추론 요청을 묶어 하드웨어 사용률과 처리량을 높이는 기법이다.</p>
 

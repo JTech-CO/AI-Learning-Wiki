@@ -1,10 +1,8 @@
 ---
-title: "역전파"
+title: "역전파 Backpropagation"
 description: "출력의 손실에서 각 파라미터의 기여도를 연쇄 법칙으로 계산하는 알고리즘이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Backpropagation</p>
 
 <p class="wiki-lead">출력의 손실에서 각 파라미터의 기여도를 연쇄 법칙으로 계산하는 알고리즘이다.</p>
 

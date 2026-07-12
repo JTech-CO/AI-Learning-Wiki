@@ -1,10 +1,8 @@
 ---
-title: "상태 관리"
+title: "상태 관리 State Management"
 description: "여러 단계에 걸쳐 입력·중간 결과·진행 상황을 일관되게 유지하는 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">State Management</p>
 
 <p class="wiki-lead">여러 단계에 걸쳐 입력·중간 결과·진행 상황을 일관되게 유지하는 방법이다.</p>
 

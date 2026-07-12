@@ -1,10 +1,8 @@
 ---
-title: "미분"
+title: "미분 Derivative"
 description: "입력의 작은 변화에 따라 함수 값이 얼마나 변하는지를 나타내는 연산이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Derivative</p>
 
 <p class="wiki-lead">입력의 작은 변화에 따라 함수 값이 얼마나 변하는지를 나타내는 연산이다.</p>
 

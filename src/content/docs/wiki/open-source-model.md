@@ -1,10 +1,8 @@
 ---
-title: "오픈소스 모델"
+title: "오픈소스 모델 Open-Source Model"
 description: "가중치·코드·학습 정보 중 일부를 공개 라이선스나 이용 조건과 함께 배포하는 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Open-Source Model</p>
 
 <p class="wiki-lead">가중치·코드·학습 정보 중 일부를 공개 라이선스나 이용 조건과 함께 배포하는 모델이다.</p>
 

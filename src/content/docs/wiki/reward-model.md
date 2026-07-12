@@ -1,10 +1,8 @@
 ---
-title: "보상 모델"
+title: "보상 모델 Reward Model"
 description: "여러 모델 출력 중 사람의 선호에 가까운 출력을 점수화하도록 학습된 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Reward Model</p>
 
 <p class="wiki-lead">여러 모델 출력 중 사람의 선호에 가까운 출력을 점수화하도록 학습된 모델이다.</p>
 

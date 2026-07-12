@@ -1,10 +1,8 @@
 ---
-title: "위치 인코딩"
+title: "위치 인코딩 Positional Encoding"
 description: "어텐션 모델에 토큰의 순서와 상대 위치 정보를 주입하는 표현이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Positional Encoding</p>
 
 <p class="wiki-lead">어텐션 모델에 토큰의 순서와 상대 위치 정보를 주입하는 표현이다.</p>
 

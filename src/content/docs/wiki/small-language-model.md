@@ -1,10 +1,10 @@
 ---
-title: "소규모 언어 모델"
+title: "소규모 언어 모델 Small Language Model"
 description: "제한된 자원과 특정 환경에서 효율적으로 동작하도록 규모를 줄인 언어 모델이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Small Language Model · SLM</p>
+<p class="wiki-alias">SLM</p>
 
 <p class="wiki-lead">제한된 자원과 특정 환경에서 효율적으로 동작하도록 규모를 줄인 언어 모델이다.</p>
 

@@ -1,10 +1,10 @@
 ---
-title: "인간 피드백 기반 강화학습"
+title: "인간 피드백 기반 강화학습 Reinforcement Learning from Human Feedback"
 description: "사람의 선호 신호를 이용해 모델 응답 정책을 조정하는 사후학습 방법이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Reinforcement Learning from Human Feedback · RLHF</p>
+<p class="wiki-alias">RLHF</p>
 
 <p class="wiki-lead">사람의 선호 신호를 이용해 모델 응답 정책을 조정하는 사후학습 방법이다.</p>
 

@@ -1,10 +1,8 @@
 ---
-title: "지도학습"
+title: "지도학습 Supervised Learning"
 description: "입력과 정답이 함께 있는 데이터로 입력에서 정답으로의 관계를 학습하는 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Supervised Learning</p>
 
 <p class="wiki-lead">입력과 정답이 함께 있는 데이터로 입력에서 정답으로의 관계를 학습하는 방식이다.</p>
 

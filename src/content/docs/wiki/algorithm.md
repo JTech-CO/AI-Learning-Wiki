@@ -1,10 +1,8 @@
 ---
-title: "알고리즘"
+title: "알고리즘 Algorithm"
 description: "문제를 해결하기 위해 입력을 처리하는 유한하고 명확한 절차다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Algorithm</p>
 
 <p class="wiki-lead">문제를 해결하기 위해 입력을 처리하는 유한하고 명확한 절차다.</p>
 

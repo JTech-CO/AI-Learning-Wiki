@@ -1,10 +1,8 @@
 ---
-title: "의미 검색"
+title: "의미 검색 Semantic Search"
 description: "문자열의 정확한 일치보다 질의와 문서의 의미 유사성을 이용하는 검색 방식이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Semantic Search</p>
 
 <p class="wiki-lead">문자열의 정확한 일치보다 질의와 문서의 의미 유사성을 이용하는 검색 방식이다.</p>
 

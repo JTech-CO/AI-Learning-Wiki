@@ -1,10 +1,8 @@
 ---
-title: "모델"
+title: "모델 Model"
 description: "입력을 출력으로 변환하도록 데이터에서 학습된 수학적 함수와 파라미터의 집합이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Model</p>
 
 <p class="wiki-lead">입력을 출력으로 변환하도록 데이터에서 학습된 수학적 함수와 파라미터의 집합이다.</p>
 

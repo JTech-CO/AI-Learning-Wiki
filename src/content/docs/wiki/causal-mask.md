@@ -1,10 +1,8 @@
 ---
-title: "인과 마스크"
+title: "인과 마스크 Causal Mask"
 description: "현재 위치가 미래 토큰을 참조하지 못하게 어텐션 점수를 제한하는 마스크다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Causal Mask</p>
 
 <p class="wiki-lead">현재 위치가 미래 토큰을 참조하지 못하게 어텐션 점수를 제한하는 마스크다.</p>
 

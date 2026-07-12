@@ -1,10 +1,8 @@
 ---
-title: "인코더"
+title: "인코더 Encoder"
 description: "입력 시퀀스를 문맥이 반영된 내부 표현으로 변환하는 구성 요소다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Encoder</p>
 
 <p class="wiki-lead">입력 시퀀스를 문맥이 반영된 내부 표현으로 변환하는 구성 요소다.</p>
 

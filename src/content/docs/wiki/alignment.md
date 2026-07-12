@@ -1,10 +1,8 @@
 ---
-title: "AI 정렬"
+title: "AI 정렬 AI Alignment"
 description: "모델의 행동이 사람의 의도·가치·안전 제약과 일치하도록 만드는 연구와 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">AI Alignment</p>
 
 <p class="wiki-lead">모델의 행동이 사람의 의도·가치·안전 제약과 일치하도록 만드는 연구와 과정이다.</p>
 

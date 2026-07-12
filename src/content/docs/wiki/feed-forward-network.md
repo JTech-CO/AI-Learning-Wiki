@@ -1,10 +1,8 @@
 ---
-title: "피드포워드 네트워크"
+title: "피드포워드 네트워크 Feed-Forward Network"
 description: "각 토큰 위치에 독립적으로 적용되는 비선형 완전연결 변환 블록이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Feed-Forward Network</p>
 
 <p class="wiki-lead">각 토큰 위치에 독립적으로 적용되는 비선형 완전연결 변환 블록이다.</p>
 

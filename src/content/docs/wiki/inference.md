@@ -1,10 +1,8 @@
 ---
-title: "추론"
+title: "추론 Inference"
 description: "학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Inference</p>
 
 <p class="wiki-lead">학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다.</p>
 

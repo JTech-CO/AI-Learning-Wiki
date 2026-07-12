@@ -1,10 +1,8 @@
 ---
-title: "코사인 유사도"
+title: "코사인 유사도 Cosine Similarity"
 description: "두 벡터 사이 각도의 코사인으로 방향의 유사성을 측정하는 값이다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
-
-<p class="wiki-alias">Cosine Similarity</p>
 
 <p class="wiki-lead">두 벡터 사이 각도의 코사인으로 방향의 유사성을 측정하는 값이다.</p>
 
