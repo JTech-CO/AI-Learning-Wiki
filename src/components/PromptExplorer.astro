@@ -15,20 +15,21 @@
 </section>
 
 <script>
-  const courseNames = { 'ai-start':'시작 코스','ai-intro':'AI 입문','ai-work':'AI 실무','ai-builder':'AI 빌더','ai-engineer':'AI 엔지니어',automation:'자동화 개발','ai-finance':'AI 금융','ai-trends':'AI 트렌드' };
+  const courseNames = { 'ai-foundations':'AI 기초','llm-internals':'LLM 내부 구조','model-training':'모델 학습과 튜닝','rag-search':'임베딩과 RAG','api-development':'AI API 개발','agent-systems':'AI 에이전트','responsible-ai':'신뢰할 수 있는 AI','multimodal-ai':'멀티모달 AI' };
   const query = document.querySelector('#prompt-query'); const course = document.querySelector('#prompt-course');
   const exampleFilter = document.querySelector('#prompt-examples'); const results = document.querySelector('#prompt-results'); const count = document.querySelector('#prompt-count');
   let prompts = [];
   function card(prompt) {
     const article = document.createElement('article'); article.className = 'prompt-card';
-    const meta = document.createElement('p'); meta.className = 'catalog-meta'; meta.textContent = `${courseNames[prompt.course]} · ${prompt.moduleTitle}`;
+    const meta = document.createElement('p'); meta.className = 'catalog-meta'; const courseLink = document.createElement('a'); courseLink.href = prompt.courseUrl; courseLink.textContent = courseNames[prompt.course] ?? prompt.courseTitle; meta.append(courseLink, ` · ${prompt.moduleTitle}`);
     const heading = document.createElement('h3'); heading.textContent = prompt.title;
     const badge = document.createElement('span'); badge.className = `example-badge ${prompt.examples.length ? 'has-example' : ''}`; badge.textContent = prompt.examples.length ? `작성 예시 ${prompt.examples.length}개` : '원문 예시 없음';
     const pre = document.createElement('pre'); const code = document.createElement('code'); code.textContent = prompt.template; pre.append(code);
     const actions = document.createElement('div'); actions.className = 'prompt-actions';
     const copy = document.createElement('button'); copy.type = 'button'; copy.textContent = '프롬프트 복사'; copy.addEventListener('click', async () => { await navigator.clipboard.writeText(prompt.template); copy.textContent = '복사됨 ✓'; setTimeout(() => copy.textContent = '프롬프트 복사', 1200); });
-    const source = document.createElement('a'); source.href = prompt.url; source.textContent = '레슨 보기 →';
-    actions.append(copy, source); article.append(meta, heading, badge, pre, actions);
+    const source = document.createElement('a'); source.href = prompt.relatedWikiUrl; source.textContent = '관련 Wiki 문서 →';
+    const path = document.createElement('a'); path.href = prompt.courseUrl; path.textContent = '코스에서 보기 →';
+    actions.append(copy, source, path); article.append(meta, heading, badge, pre, actions);
     if (prompt.examples.length) { const details = document.createElement('details'); const summary = document.createElement('summary'); summary.textContent = '작성 예시 보기'; details.append(summary); prompt.examples.forEach((example) => { const h = document.createElement('h4'); h.textContent = example.label; const p = document.createElement('pre'); p.textContent = example.input; details.append(h, p); }); article.append(details); }
     return article;
   }

@@ -18,7 +18,13 @@
 .catalog-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
 .catalog-tags span,
 .example-badge { color: #54595d; font-size: .7rem; }
-.prompt-card pre { overflow: auto; white-space: pre-wrap; border: 1px solid #c8ccd1; border-radius: 0; background: #f8f9fa; padding: .7rem; }
+.prompt-card pre { overflow: auto; white-space: pre-wrap; border: 1px solid #c8ccd1; border-radius: 0; background: #f8f9fa; color: #202122; padding: .7rem; }
+.prompt-card pre code,
+.sl-markdown-content pre,
+.sl-markdown-content pre code,
+.sl-markdown-content pre code span { background: #f8f9fa !important; color: #202122 !important; }
+.catalog-meta a { font-weight: 700; }
+astro-dev-toolbar, .kudos { display: none !important; }
 .prompt-actions { display: flex; gap: .7rem; align-items: center; }
 .prompt-actions button { border: 1px solid #72777d; border-radius: 0; background: #f8f9fa; color: #202122; padding: .4rem .65rem; }
 .wiki-course-directory section { border-top: 1px solid #c8ccd1; padding: .7rem 0; }

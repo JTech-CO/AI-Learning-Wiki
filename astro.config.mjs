@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: process.env.SITE_URL,
+  devToolbar: { enabled: false },
   integrations: [
     starlight({
       title: 'AI Learning Wiki',
@@ -11,6 +12,7 @@ export default defineConfig({
       customCss: ['./src/styles/wiki.css', './src/styles/wiki-library.css'],
       locales: { root: { label: '한국어', lang: 'ko' } },
       pagefind: false,
+      credits: false,
       pagination: false,
       components: {
         Header: './src/components/wiki/WikiHeader.astro',
