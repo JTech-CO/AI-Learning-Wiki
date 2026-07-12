@@ -27,6 +27,10 @@ for (const article of articles) {
   if (article.sections.length < 10) errors.push(`${article.id}: expected at least 10 sections`);
   if (articleChars < 2400) errors.push(`${article.id}: article body too short (${articleChars})`);
   if (article.sections.some((section) => /트랜스포머은|개인정보 보호을|Temperature은|Temperature을|소프트맥스은/.test(section.body))) errors.push(`${article.id}: contextual Korean particle error`);
+  for (const section of article.sections) {
+    if (section.sourceRefs && new Set(section.sourceRefs).size !== section.sourceRefs.length) errors.push(`${article.id}/${section.id}: duplicate sourceRefs`);
+    for (const ref of section.sourceRefs ?? []) if (!article.sources[ref - 1]) errors.push(`${article.id}/${section.id}: sourceRefs points outside sources (${ref})`);
+  }
   if (articleFiles.filter((file) => file === `${article.id}.article.json`).length !== 1) errors.push(`${article.id}: filename mismatch`);
   for (const ref of [...article.prerequisites, ...article.related]) if (!ids.has(ref)) errors.push(`${article.id}: missing article ref ${ref}`);
   for (const alias of [article.title, article.englishTitle, ...article.aliases].map((value) => value.toLowerCase())) {

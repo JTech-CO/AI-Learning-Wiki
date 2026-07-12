@@ -66,6 +66,14 @@
           "body": {
             "type": "string",
             "minLength": 60
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "uniqueItems": true
           }
         }
       }

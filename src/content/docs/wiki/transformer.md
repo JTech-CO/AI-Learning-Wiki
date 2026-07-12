@@ -14,11 +14,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ‘트랜스포머’ 개념은 트랜스포머와 모델 구조 영역에서 무엇을 계산하거나 통제하는지 설명하는 표제어다. 이름을 외우는 데서 멈추지 않고 입력, 변환 과정, 출력, 적용 조건을 분리해 보면 제품과 논문마다 다른 표현을 같은 원리 위에서 비교할 수 있다. 트랜스포머 분야는 어텐션으로 시퀀스 위치 사이 정보를 결합하는 현대 모델 구조를 다룬다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+
 ## 배경과 설명 범위
 
 영문 Wikipedia의 ‘Transformer (deep learning)’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
 이 문서에서 다루는 범위는 안정적인 개념과 구현 원리다. 최신 모델명·가격·한도처럼 자주 바뀌는 정보는 포함하지 않으며, 실제 사용 시점에는 연결된 공식 문서와 배포 환경의 버전을 다시 확인한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
 ## 작동 원리
 
@@ -26,11 +30,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 직접 요구되는 선행 문서는 없지만, 정의와 입력·출력 범위를 먼저 확인한다. 이 선행 관계를 기준으로 어느 단계에서 값이 만들어지고 다음 구성 요소로 어떻게 전달되는지 추적하면, 비슷한 용어를 기능 이름만으로 혼동하는 일을 줄일 수 있다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+
 ## 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘트랜스포머’ 개념만 독립적으로 동작하지 않는다. [어텐션](/wiki/attention/), [셀프 어텐션](/wiki/self-attention/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
 처리 흐름을 문서화할 때는 입력 형식, 파라미터와 기본값, 실패 조건, 출력 스키마, 관측 가능한 지표를 함께 적는다. 이렇게 해야 같은 이름을 쓰는 서로 다른 라이브러리와 서비스의 동작 차이를 재현 가능한 방식으로 비교할 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 활용 분야와 선택 기준
 
@@ -38,22 +46,30 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 선택 기준은 “널리 쓰인다”가 아니라 현재 데이터와 사용자의 실패 비용을 얼마나 줄이는가이다. 오프라인 실험, 작은 실제 트래픽, 배포 후 모니터링 순으로 증거를 쌓는 편이 안전하다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+
 ## 한계와 흔한 오해
 
 순환 구조 없이 병렬 학습이 가능하지만 기본 어텐션 비용이 길이의 제곱으로 늘고 위치 표현과 마스크 설계에 민감하다.
 
 구조 이름만으로 성능을 설명하지 말고 마스크·위치 정보·연산 비용을 확인한다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+
 ## 관련 개념과의 구분
 
 - [어텐션](/wiki/attention/): 현재 표현을 만들 때 입력의 각 부분에 서로 다른 중요도를 부여해 정보를 결합하는 연산이다.
 - [셀프 어텐션](/wiki/self-attention/): 하나의 시퀀스 안에서 각 위치가 다른 위치의 정보를 참조하는 어텐션이다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
 ## 구체적 적용 예시
 
 짧은 토큰 열을 예로 들어 각 위치가 참조할 수 있는 범위와 어텐션 마스크를 표로 그리면 구조 차이가 선명해진다. ‘트랜스포머’를 적용하는 경우에는 트랜스포머는 토큰 임베딩에 위치 정보를 더하고, 멀티헤드 어텐션과 피드포워드 층을 잔차 연결·정규화와 함께 반복한다.
 
 시퀀스 길이를 늘리며 정확도뿐 아니라 메모리와 지연 시간도 측정하고, 위치 정보와 캐시 정책을 실험 조건에 포함한다. 이때 [어텐션](/wiki/attention/), [셀프 어텐션](/wiki/self-attention/) 문서의 역할을 나란히 비교하면 서로 다른 단계의 설정을 한 원인처럼 해석하는 오류를 줄일 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 실무 적용과 검증 절차
 
@@ -64,6 +80,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **운영 검증:** 버전, 기본값, 데이터 시점과 평가 결과를 기록하고 변경 뒤 같은 시험을 반복한다.
 6. **판단 근거 보존:** 성공 사례만 남기지 말고 실패 입력과 원인 가설, 수정 전후 수치를 함께 저장한다. 그래야 담당자가 바뀌거나 모델이 교체되어도 ‘트랜스포머’에 대한 선택을 다시 검증할 수 있다.
 7. **재검토 조건 지정:** 데이터 분포, 모델 버전, 비용 구조 또는 정책이 바뀌면 이전 결론을 그대로 재사용하지 않고 같은 기준으로 다시 평가한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
 ## 학습 체크
 
@@ -93,9 +111,9 @@ _해당 문서가 없습니다._
 
 ## 참고 문헌
 
-1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-2. [Transformer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29) — encyclopedia
-3. [Transformers documentation](https://huggingface.co/docs/transformers/index) — documentation
+<span id="reference-1"></span>1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
+<span id="reference-2"></span>2. [Transformer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29) — encyclopedia
+<span id="reference-3"></span>3. [Transformers documentation](https://huggingface.co/docs/transformers/index) — documentation
 
 ## 코스에서 계속 읽기
 
