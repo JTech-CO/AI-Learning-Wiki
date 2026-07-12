@@ -1,0 +1,224 @@
+---
+title: "🚀 프로덕션 LLM 서빙 — vLLM·llama.cpp로 고속·저비용 추론 서버 구축"
+description: "Ollama를 넘어 PagedAttention 기반 vLLM(고처리량 GPU 서빙)과 llama.cpp(경량 CPU/Apple Silicon 서빙)의 차이를 이해하고, CUDA·ROCm·MLX 환경에서 오픈소스 LLM을 프로덕션 API 서버로 배포해 동시 요청을 처리한다. EAGLE 추측 디코딩·양자화·batching 튜닝으로 비용을 최소화하는 기법도 습득한다."
+sidebar:
+  order: 12
+---
+_Ollama를 넘어 PagedAttention 기반 vLLM(고처리량 GPU 서빙)과 llama.cpp(경량 CPU/Apple Silicon 서빙)의 차이를 이해하고, CUDA·ROCm·MLX 환경에서 오픈소스 LLM을 프로덕션 API 서버로 배포해 동시 요청을 처리한다. EAGLE 추측 디코딩·양자화·batching 튜닝으로 비용을 최소화하는 기법도 습득한다._
+
+:::note[학습 목표]
+- 내 GPU나 노트북에서 오픈소스 LLM을 OpenAI처럼 호출 가능한 API 서버로 띄우고, 여러 사람의 동시 요청을 빠르고 저렴하게 처리할 수 있다.
+:::
+
+> Ollama는 혼자 쓰기엔 편하지만 동시에 100명이 몰리면 느려져 멈춰버린다. 진짜 서비스를 만들려면 '한 번에 여러 요청을 처리하는' 프로덕션 서버가 필요하다.
+
+## 이 레슨에서 만드는 것
+
+내 GPU나 노트북에서 오픈소스 LLM을 OpenAI처럼 호출 가능한 API 서버로 띄우고, 여러 사람의 동시 요청을 빠르고 저렴하게 처리할 수 있다.
+
+## 핵심 개념
+
+LLM 서빙은 '식당 주방'과 같다. Ollama는 손님 한 명씩 요리해주는 1인 분식집이고, vLLM은 여러 주문을 동시에 굽는 대형 식당 주방이다. vLLM의 핵심 기술 PagedAttention은 메모리(GPU)를 작은 책상 칸처럼 나눠 빈 공간 없이 알차게 써서 더 많은 손님을 받는다. llama.cpp는 GPU가 없어도 일반 CPU나 맥북(Apple Silicon)에서 모델을 가볍게 돌리는 도구다. '양자화'는 모델 숫자를 반올림해 가볍게 만드는 다이어트, '배칭'은 주문을 모아 한꺼번에 처리하는 것이다.
+
+### 왜 작동하는가
+
+Ollama가 손님 한 명씩 요리하는 동안, vLLM은 PagedAttention으로 GPU 메모리를 작은 책상 칸처럼 잘게 나눠 씁니다. 그래서 손님(요청) 여러 명이 동시에 앉아도 자리가 남아돌지 않고 꽉 채워지죠. 결과적으로 당신은 서버 하나만 띄우면, 배칭·메모리 관리는 vLLM이 알아서 하고 당신은 모델 이름만 골라주면 됩니다.
+
+## 👀 따라하기 예시
+
+RTX 4090(24GB) 노트북에 Qwen2.5-7B를 띄워서 동시 접속 API 서버로 만드는 상황. 제가 먼저 처음부터 끝까지 해볼게요, 눈으로 따라오세요.
+
+### 1. ① 내 환경부터 확인
+
+**실제 결과**
+
+```text
+nvidia-smi 실행 결과: NVIDIA GeForce RTX 4090, Memory 24576MiB
+```
+
+> VRAM 용량을 알아야 어떤 모델 크기·양자화를 쓸지 정할 수 있어요. 이게 없으면 뒷단계가 다 흔들려요.
+
+### 2. ② vLLM 서버 켜기
+
+**실제 결과**
+
+```text
+pip install vllm 후 vllm serve Qwen/Qwen2.5-7B-Instruct --port 8000 --gpu-memory-utilization 0.9 실행 → INFO: Uvicorn running on http://0.0.0.0:8000
+```
+
+> 명령 한 줄로 배칭·메모리 관리가 자동으로 켜져요. gpu-memory-utilization은 VRAM을 얼마나 넉넉히 쓸지 정하는 안전장치예요.
+
+### 3. ③ OpenAI 호환 API로 호출 테스트
+
+**실제 결과**
+
+```text
+curl로 localhost:8000/v1/chat/completions 에 안녕이라는 메시지를 보내면, 응답으로 안녕하세요! 무엇을 도와드릴까요? 라는 문장이 돌아옴
+```
+
+> base_url만 내 서버로 바꾸면 ChatGPT용 코드를 그대로 재사용할 수 있다는 게 아하 포인트예요.
+
+### 4. ④ 동시 요청 부하 테스트
+
+**실제 결과**
+
+```text
+locust로 50명 동시 접속 시뮬레이션 → 초당 12.4건 처리, 평균 응답 0.8초, 에러율 0%
+```
+
+> 실제 서비스는 한 명이 아니라 수십 명이 몰려요. 부하 테스트로 vLLM의 배칭 효과(여러 요청을 겹쳐 처리)를 눈으로 확인하는 거예요.
+
+### 완성 결과
+
+동시 50명 요청을 초당 12건씩, 평균 0.8초 안에 처리하는 나만의 LLM API 서버. 좋은 결과의 기준: (1) CUDA out of memory 없이 안정적으로 떠 있을 것 (2) 동시 요청에서도 응답 속도가 크게 안 떨어질 것 (3) OpenAI 코드 그대로 base_url만 바꿔 붙였을 때 잘 동작할 것.
+
+## 단계별 따라하기
+
+### 내 환경 확인하기
+
+터미널에 'nvidia-smi'를 입력해 NVIDIA GPU와 VRAM 용량(예: 24GB)을 확인한다. GPU가 없거나 맥북이면 llama.cpp 경로로 간다. GPU가 있고 VRAM 16GB 이상이면 vLLM을 추천한다.
+
+**복사·실행 예시**
+
+```text
+nvidia-smi 결과에 'RTX 4090, 24576MiB'가 보이면 7B~13B 모델 vLLM 서빙 가능
+```
+
+### (GPU) vLLM 설치하고 서버 켜기
+
+파이썬 가상환경에서 'pip install vllm' 후, 'vllm serve Qwen/Qwen2.5-7B-Instruct --port 8000' 명령으로 서버를 띄운다. 모델은 허깅페이스에서 자동 다운로드된다. VRAM이 부족하면 뒤에 '--max-model-len 4096' '--gpu-memory-utilization 0.9'를 붙인다.
+
+**복사·실행 예시**
+
+```text
+실행 후 'INFO: Uvicorn running on http://0.0.0.0:8000' 메시지가 뜨면 성공
+```
+
+### (CPU·맥북) llama.cpp 서버 켜기
+
+'brew install llama.cpp'(맥) 또는 github 빌드 후, 허깅페이스에서 GGUF 양자화 파일(예: Q4_K_M)을 받아 'llama-server -m model.gguf --port 8000 -c 4096' 로 실행한다. Q4는 적당한 다이어트, Q8은 정확하지만 무겁다.
+
+**복사·실행 예시**
+
+```text
+llama-server -m qwen2.5-7b-instruct-q4_k_m.gguf --port 8000 실행 → 브라우저에서 localhost:8000 접속
+```
+
+### API로 호출 테스트하기
+
+두 서버 모두 OpenAI 호환 API를 제공한다. curl이나 파이썬 openai 라이브러리에서 base_url을 'http://localhost:8000/v1'로 바꾸면 ChatGPT 코드 그대로 내 서버에 연결된다.
+
+**복사·실행 예시**
+
+```text
+curl http://localhost:8000/v1/chat/completions -d '{"model":"Qwen2.5-7B","messages":[{"role":"user","content":"안녕"}]}'
+```
+
+### 동시 요청·비용 튜닝하기
+
+vLLM은 배칭이 자동이라 여러 요청을 동시에 보내면 처리량이 올라간다. 더 빠르게 하려면 추측 디코딩(--speculative-config로 작은 보조모델이 미리 답을 예측)을 켜고, 메모리가 빠듯하면 양자화 모델(AWQ/GPTQ)을 쓴다. 'ab'나 'locust'로 부하 테스트한다.
+
+**복사·실행 예시**
+
+```text
+vllm serve 모델 --quantization awq 로 VRAM 절반만 쓰면서 동시 50요청 처리
+```
+
+## 흔한 실수와 교정
+- **실수:** VRAM 부족인데 큰 모델 실행 → 'CUDA out of memory' 에러
+  - **교정:** --max-model-len을 줄이거나 양자화 모델(AWQ/GPTQ/GGUF Q4) 사용, 또는 더 작은 7B 모델 선택
+- **실수:** 맥북에서 vLLM 설치 시도 → CUDA 없어 실패
+  - **교정:** vLLM은 NVIDIA GPU 전용. 맥은 llama.cpp(MLX 백엔드)를 쓴다
+- **실수:** llama.cpp가 GPU를 안 쓰고 느림
+  - **교정:** -ngl 99 옵션으로 모든 레이어를 GPU(또는 Metal)에 올린다
+- **실수:** 방화벽 때문에 외부에서 접속 안 됨
+  - **교정:** --host 0.0.0.0 으로 띄우고 서버 포트(8000)를 방화벽에서 열거나 nginx 리버스프록시 사용
+
+## 완료 체크리스트
+
+- nvidia-smi 또는 맥 사양으로 내 환경(GPU/CPU)을 확인했다
+- 환경에 맞는 도구(vLLM 또는 llama.cpp)를 골랐다
+- 서버가 실행되어 'Uvicorn running' 또는 접속 페이지가 떴다
+- curl/파이썬으로 /v1/chat/completions 응답을 받았다
+- 양자화·배칭·추측디코딩 중 하나로 속도나 메모리를 개선해봤다
+
+## 도구
+
+- vLLM — NVIDIA GPU에서 고처리량 LLM 서빙
+- llama.cpp — CPU·맥북에서 경량 GGUF 모델 서빙
+- Hugging Face — 오픈소스 모델·GGUF 파일 다운로드
+- Qwen2.5 / Llama3 — 무료 오픈소스 LLM 모델
+- locust — 동시 요청 부하 테스트 도구
+
+## 참고 답안
+
+1) 허깅페이스에서 qwen2.5-7b-instruct-q4_k_m.gguf 다운로드 2) llama-server -m qwen2.5-7b-instruct-q4_k_m.gguf --port 8000 -c 4096 -ngl 99 실행 3) curl로 localhost:8000/v1/chat/completions 호출 4) 비교 메모: GPU 없이도 돌아가지만 vLLM만큼 동시 요청을 많이 못 받는다 정도면 충분해요.
+
+## 실전 프롬프트
+
+### vLLM 서버 실행
+
+```text
+vllm serve [Qwen/Qwen2.5-7B-Instruct] --port 8000 --max-model-len [4096] --gpu-memory-utilization [0.9]
+```
+
+> 확인된 작성 예시 없음
+
+`eduverse` `vllm-production-serving`
+
+### llama.cpp 서버 실행
+
+```text
+llama-server -m [모델파일.gguf] --port 8000 -c [4096] -ngl [99]
+```
+
+> 확인된 작성 예시 없음
+
+`eduverse` `vllm-production-serving`
+
+### 파이썬 클라이언트 연결
+
+```text
+from openai import OpenAI
+client = OpenAI(base_url="http://localhost:8000/v1", api_key="none")
+r = client.chat.completions.create(model="[모델이름]", messages=[{"role":"user","content":"[질문]"}])
+print(r.choices[0].message.content)
+```
+
+> 확인된 작성 예시 없음
+
+`eduverse` `vllm-production-serving`
+
+### 부하 테스트
+
+```text
+locust -f loadtest.py --host http://localhost:8000 --users [100] --spawn-rate [10]
+```
+
+> 확인된 작성 예시 없음
+
+`eduverse` `vllm-production-serving`
+
+## 직접 만들기 (미션)
+
+:::tip
+이번엔 당신 차례! GPU가 없다고 가정하고(또는 실제로 맥북·CPU 환경이면 그대로), llama.cpp로 같은 Qwen2.5-7B 모델을 GGUF Q4_K_M 양자화로 띄워보세요. 서버를 켠 뒤 curl로 한 번 호출까지 해보고, vLLM 버전과 비교해 어떤 점이 다른지 한 줄로 적어보세요.
+:::
+
+## 채점 기준
+
+| 기준 | 배점 |
+| --- | --- |
+| 내 환경(GPU 유무)에 맞는 도구(vLLM vs llama.cpp)를 제대로 골랐나요? | 5 |
+| 서버가 CUDA·메모리 에러 없이 정상적으로 떠서 curl 호출에 응답했나요? | 5 |
+| vLLM과 llama.cpp의 차이(동시 처리량 vs 접근성)를 내 말로 한 줄 설명할 수 있나요? | 5 |
+
+## 관련 개념
+
+- [Vllm](/concepts/vllm/)
+- [Production](/concepts/production/)
+- [Serving](/concepts/serving/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=trends&node=eng_vllm_production_serving) · 방식: api-capture</sub>

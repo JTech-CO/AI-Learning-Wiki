@@ -5,6 +5,11 @@ description: "'Prompt' 개념을 다루는 모듈"
 이 개념을 다루는 모듈:
 
 - [요구사항을 프롬프트로 명세하기](/en/courses/ai-builder/03-requirements-spec/) <sub>(AI Builder)</sub>
+- [평가 하네스와 LLM 심판](/en/courses/ai-engineer/42-prompt-eval-harness/) <sub>(AI Engineer)</sub>
+- [프롬프트 인젝션 방어](/en/courses/ai-engineer/48-prompt-injection-defense/) <sub>(AI Engineer)</sub>
+- [프롬프트로 돈 벌기 — 결과물을 파는 법](/en/courses/ai-finance/09-prompt-to-cash/) <sub>(AI Finance)</sub>
+- [팔리는 프롬프트 상품의 해부학](/en/courses/ai-finance/10-prompt-product-anatomy/) <sub>(AI Finance)</sub>
+- [프롬프트 팩 패키징과 사용 설명서](/en/courses/ai-finance/14-prompt-pack-packaging/) <sub>(AI Finance)</sub>
 - [AI 핵심 용어 — 토큰·프롬프트·컨텍스트·모델](/en/courses/ai-intro/02-core-terms/) <sub>(AI Intro)</sub>
 - [명령(프롬프트)이 무엇인지 이해하기](/en/courses/ai-intro/04-what-is-prompt/) <sub>(AI Intro)</sub>
 - [첫 대화 보내기](/en/courses/ai-intro/05-send-first-message/) <sub>(AI Intro)</sub>
@@ -53,3 +58,4 @@ description: "'Prompt' 개념을 다루는 모듈"
 - [Canva AI로 SNS 게시물 세트 디자인하기](/en/courses/ai-work/32-canva-sns-design/) <sub>(AI for Work)</sub>
 - [리서치 질문 좁히기](/en/courses/ai-work/37-narrow-research-question/) <sub>(AI for Work)</sub>
 - [자동화에 AI 단계 넣기](/en/courses/ai-work/46-ai-step-in-automation/) <sub>(AI for Work)</sub>
+- [프롬프트 파이프라인·구조화 출력](/en/courses/automation/36-prompt-pipelines/) <sub>(Automation Dev)</sub>

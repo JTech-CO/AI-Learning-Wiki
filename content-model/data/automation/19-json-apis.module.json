@@ -1,0 +1,119 @@
+{
+  "id": "automation/json-apis",
+  "course": "automation",
+  "order": 19,
+  "title": {
+    "ko": "JSON·REST API 호출·인증"
+  },
+  "summary": {
+    "ko": "JSON 파싱, REST API 사용, API 키·헤더 인증으로 외부 서비스 연동."
+  },
+  "objectives": [
+    {
+      "ko": "이 레슨이 끝나면, 무료 공개 API에 인증 헤더를 붙여 호출하고, 돌아온 JSON에서 원하는 값 하나를 뽑아내는 작은 프로그램을 직접 실행할 수 있습니다."
+    }
+  ],
+  "body": {
+    "ko": "> \"환율이 얼마지?\" 매번 검색하는 대신, 코드 3줄로 세계 어느 나라 환율이든 실시간으로 불러올 수 있다면? 그 문을 여는 열쇠가 바로 API다.\n\n## 이 레슨에서 만드는 것\n\n이 레슨이 끝나면, 무료 공개 API에 인증 헤더를 붙여 호출하고, 돌아온 JSON에서 원하는 값 하나를 뽑아내는 작은 프로그램을 직접 실행할 수 있습니다.\n\n## 핵심 개념\n\nAPI(응용 프로그램 인터페이스)는 서로 다른 프로그램이 대화하는 창구입니다. 우리가 웹 브라우저 주소창에 URL을 넣듯, 코드도 특정 URL(엔드포인트)에 요청을 보내면 서버가 JSON이라는 정돈된 텍스트로 답을 돌려줍니다. JSON은 { \"키\": \"값\" } 형태의 사전(dictionary)이라, 원하는 정보를 이름으로 콕 집어 꺼낼 수 있습니다. 대부분의 유용한 API는 아무나 못 쓰게 API 키를 요구하는데, 이 키를 요청 헤더(header)에 넣어 \"나 정식 사용자야\"라고 신분을 증명합니다. 즉 REST API 사용의 핵심은 딱 세 가지 — 어디로(URL), 무엇을 들고(헤더·키), 무엇을 받아 어떻게 꺼내느냐(JSON 파싱)입니다.\n\n### 왜 작동하는가\n\nAPI는 수많은 서버가 24시간 대기하며 \"요청하면 답한다\"는 약속을 지키는 창구예요. 그래서 당신은 URL과 키만 정확히 넣으면 되고, 환율 계산이나 데이터 정리 같은 복잡한 뒷단은 서버가 대신 다 해줍니다. JSON은 그 답을 {\"키\":\"값\"} 사전 형태로 깔끔하게 포장해주는 규칙이라, 이름만 알면 원하는 값을 콕 집어 꺼낼 수 있어요.\n\n## 👀 따라하기 예시\n\n오늘 환율(USD→KRW)을 API로 직접 불러와서 원하는 숫자만 뽑아내는 상황이에요. 제가 먼저 처음부터 끝까지 해볼게요, 눈으로 따라오세요.\n\n### 1. ① 인증 없는 공개 API로 몸풀기\n\n**실제 결과**\n\n```text\nhttps://api.github.com/users/torvalds 접속 → {\"login\":\"torvalds\",\"public_repos\":7,...}\n```\n\n> 키 없이도 요청→JSON 응답이라는 뼈대부터 눈에 익히는 거예요.\n\n### 2. ② 무료 API 키 발급\n\n**실제 결과**\n\n```text\nexchangerate-api.com 가입 후 대시보드에 a1b2c3d4e5f6... 형태의 키 표시\n```\n\n> 이 키가 곧 \"나 정식 사용자예요\"라는 신분증이라서 서버가 나를 알아봐요.\n\n### 3. ③ AI에게 호출 코드 요청 (키는 YOUR_KEY로)\n\n**실제 결과**\n\n```text\nrequests.get(f\"https://v6.exchangerate-api.com/v6/{YOUR_KEY}/latest/USD\")\n```\n\n> 진짜 키를 프롬프트에 넣지 않는 습관이 유출 사고를 막아줘요.\n\n### 4. ④ 응답 JSON에서 값 꺼내기\n\n**실제 결과**\n\n```text\ndata[\"conversion_rates\"][\"KRW\"] → 1350.5\n```\n\n> 중첩된 사전은 키를 한 단계씩 따라 들어가면 원하는 숫자에 도달해요.\n\n### 완성 결과\n\n완성물은 \"USD 기준 KRW 환율 숫자 하나를 출력하는 5줄짜리 파이썬 코드\"예요. 좋은 결과의 기준: (1) 키가 코드에 노출되지 않았는가, (2) 에러 없이 숫자가 출력되는가, (3) 다른 통화(예: JPY)로도 바꿔 시도해봤는가.\n\n## 단계별 따라하기\n\n### 1단계 — API 개념을 그림으로 이해하기 (5분)\n\nAI에게 'API 요청과 응답'을 식당 주문에 비유해 설명해 달라고 요청해, 요청(URL)·헤더(신분증)·응답(JSON) 세 요소가 머릿속에 그려지게 만드세요. 🤖A(AI)\n\n**복사·실행 예시**\n\n```text\n🤖A 프롬프트: 'REST API 호출을 식당에서 주문하는 과정에 비유해서 요청 URL, 인증 헤더, JSON 응답이 각각 무엇에 해당하는지 초보자용으로 설명해줘.'\n```\n\n### 2단계 — 인증 없는 공개 API부터 호출 (7분)\n\n연습용으로 키가 필요 없는 공개 API를 브라우저 주소창에 그대로 붙여넣어 JSON이 화면에 뜨는 것을 눈으로 확인하세요. 인증 개념 없이 요청·응답 흐름만 먼저 체득합니다. 🙋나(me)\n\n**복사·실행 예시**\n\n```text\n주소창에 https://api.github.com/users/torvalds 입력 → { \"login\": \"torvalds\", \"public_repos\": 7, ... } 같은 JSON이 표시됨. 여기서 login 값이 사용자 이름.\n```\n\n### 3단계 — 무료 API 키 발급받기 (8분)\n\n실습용으로 무료 환율 API 서비스에 이메일로 가입해 대시보드에서 API 키(긴 문자열)를 복사해 안전한 메모장에 보관하세요. 이 키가 곧 당신의 신분증입니다. 🙋나(me)\n\n**복사·실행 예시**\n\n```text\nexchangerate-api.com 가입 → 대시보드에 'a1b2c3d4e5f6...' 형태의 키 표시 → 복사. (절대 SNS·공개 코드에 붙이지 말 것)\n```\n\n### 4단계 — AI에게 호출 코드 생성 요청 (7분)\n\n발급받은 키와 원하는 목표를 알려주고, 헤더 인증을 포함한 Python 코드를 만들어 달라고 AI에게 요청하세요. 키 자체는 프롬프트에 넣지 말고 YOUR_KEY 자리표시자로 두라고 지시합니다. 🤝함께\n\n**복사·실행 예시**\n\n```text\n🤖A 프롬프트: 'Python requests로 exchangerate-api에서 USD 기준 KRW 환율을 가져오는 코드를 써줘. API 키는 헤더가 아니라 URL 파라미터로 넣고, 코드에는 YOUR_KEY 자리표시자만 남겨줘.'\n```\n\n### 5단계 — 실행하고 JSON에서 값 꺼내기 (10분)\n\n온라인 Python 실행기에 코드를 붙이고 YOUR_KEY를 진짜 키로 바꿔 실행하세요. 응답 JSON에서 원하는 환율 값 하나만 print로 뽑아내면 성공입니다. 🙋나(me)\n\n**복사·실행 예시**\n\n```text\ndata['conversion_rates']['KRW'] → 1350.5 출력. 이 한 줄이 '중첩된 JSON에서 키로 값 꺼내기'의 핵심.\n```\n\n### 6단계 — 에러를 만나고 스스로 고치기 (8분)\n\n일부러 키를 틀리게 넣어 401(인증 실패) 같은 에러를 만들어 본 뒤, 에러 메시지 전체를 복사해 AI에게 붙여넣고 원인과 해결책을 물어보세요. 에러 읽는 습관이 개발자의 진짜 실력입니다. 🤝함께\n\n**복사·실행 예시**\n\n```text\n에러: {\"result\":\"error\",\"error-type\":\"invalid-key\"} → 🤖A '이 API 응답이 나오는데 무슨 뜻이고 어떻게 고쳐?' → '키가 틀렸거나 만료됨, 대시보드에서 재확인' 답변.\n```\n\n## 흔한 실수와 교정\n- **실수:** API 키를 코드에 그대로 적어 GitHub 등 공개된 곳에 올린다.\n  - **교정:** 키는 신분증이자 때로는 요금과 직결됩니다. 코드에는 YOUR_KEY 자리표시자만 두고, 실제 키는 환경변수나 별도 비공개 파일에 보관하세요. 실수로 노출했다면 즉시 대시보드에서 키를 재발급(폐기)하세요.\n- **실수:** JSON에서 값을 못 찾아 KeyError가 나는데 무작정 코드를 바꾼다.\n  - **교정:** 먼저 print(data)로 응답 전체 구조를 눈으로 확인하세요. 중첩 구조({ 안에 또 {)라 data['a']['b']처럼 단계별로 들어가야 하는 경우가 많습니다. 구조를 본 뒤 키 경로를 맞추세요.\n- **실수:** 401·403 인증 에러가 났는데 코드 문제로 오해하고 헤매기.\n  - **교정:** 401/403은 대부분 '키가 틀렸거나, 만료됐거나, 헤더 이름·형식이 문서와 다르다'는 뜻입니다. 코드보다 먼저 키 값과 API 문서의 인증 방식(헤더 이름, Bearer 여부)을 대조하세요.\n\n## 완료 체크리스트\n\n- 키 없는 공개 API를 브라우저에서 호출해 JSON 응답을 직접 눈으로 봤다\n- 무료 API 서비스에 가입해 내 API 키를 발급받고 안전하게 보관했다\n- 인증(키·헤더)을 포함한 API 호출 코드를 실행해 정상 응답을 받았다\n- 중첩된 JSON에서 원하는 값 하나를 print로 뽑아냈다\n- 일부러 에러를 내고 에러 메시지를 AI와 함께 읽어 해결해봤다\n\n## 도구\n\n- exchangerate-api.com (https://www.exchangerate-api.com) — 무료 환율 API 키 발급·실습\n- Google Colab (https://colab.research.google.com) — 설치 없이 브라우저에서 Python 코드 실행\n- JSONFormatter (https://jsonformatter.org) — 복잡한 JSON 응답을 보기 좋게 정렬·구조 파악\n- ChatGPT/Claude (https://claude.ai) — 호출 코드 생성·에러 메시지 해석\n\n## 참고 답안\n\nrequests.get(\"https://api.open-meteo.com/v1/forecast?latitude=37.57&longitude=126.98&current_weather=true\") 실행 → data[\"current_weather\"][\"temperature\"] 로 기온 값 출력. 에러가 나면 print(data)로 전체 구조부터 확인."
+  },
+  "prompts": [
+    {
+      "id": "json-apis-p1",
+      "title": {
+        "ko": "환율/공개 API 호출 코드 만들기"
+      },
+      "template": {
+        "ko": "나는 프로그래밍 초보야. Python requests 라이브러리로 [서비스명, 예: exchangerate-api] API를 호출해서 [목표, 예: USD 대비 KRW 환율]을 가져오는 코드를 써줘. 조건: (1) API 키는 코드에 YOUR_KEY 자리표시자로만 두고 (2) 응답 JSON에서 내가 원하는 값 하나만 print로 출력하고 (3) 각 줄에 한국어 주석을 달아줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "json-apis"
+      ]
+    },
+    {
+      "id": "json-apis-p2",
+      "title": {
+        "ko": "JSON 응답에서 원하는 값 찾기"
+      },
+      "template": {
+        "ko": "아래는 API가 돌려준 JSON 응답이야. 여기서 [원하는 정보, 예: 오늘 최고 기온]을 꺼내는 Python 코드 한 줄을 알려주고, 그 키 경로가 왜 그렇게 되는지 설명해줘.\n\n[여기에 JSON 응답 전체 붙여넣기]"
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "json-apis"
+      ]
+    },
+    {
+      "id": "json-apis-p3",
+      "title": {
+        "ko": "API 에러 메시지 해석·해결"
+      },
+      "template": {
+        "ko": "API를 호출했더니 아래 에러가 나왔어. 무슨 뜻이고, 초보자가 흔히 저지르는 어떤 실수 때문인지, 어떻게 고치는지 단계별로 알려줘.\n\n에러 내용:\n[여기에 에러 메시지 전체 붙여넣기]\n\n내가 쓴 코드:\n[여기에 코드 붙여넣기]"
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "json-apis"
+      ]
+    },
+    {
+      "id": "json-apis-p4",
+      "title": {
+        "ko": "헤더 인증 방식 이해하기"
+      },
+      "template": {
+        "ko": "[서비스명] API 문서를 보니 인증을 헤더로 하라는데, Authorization 헤더에 Bearer 토큰을 넣는 것과 API 키를 URL 파라미터로 넣는 것의 차이를 초보자용으로 설명하고, 각각의 Python 예시 코드를 보여줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "json-apis"
+      ]
+    }
+  ],
+  "concepts": [
+    "json",
+    "apis"
+  ],
+  "mission": {
+    "ko": "이번엔 환율 대신 날씨 API(예: open-meteo.com, 키 불필요)로 오늘 서울의 기온 하나만 뽑아보세요. AI에게 \"URL은 이거, 응답 JSON에서 temperature 값만 출력하는 코드 만들어줘\"라고 요청해서 실행해보세요."
+  },
+  "rubric": [
+    {
+      "criterion": {
+        "ko": "내 코드에 진짜 키나 민감한 값이 그대로 노출되어 있지 않은가?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "KeyError가 나면 무작정 코드를 고치기 전에 print(data)로 구조부터 확인했는가?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "에러 메시지를 AI에게 그대로 붙여넣고 원인을 물어보는 습관이 붙었는가?"
+      },
+      "max": 5
+    }
+  ],
+  "difficulty": "pro",
+  "tags": [
+    "Applied-AI",
+    "academic"
+  ],
+  "estimatedMinutes": 36,
+  "source": {
+    "platform": "eduverse-ai.app",
+    "url": "https://eduverse-ai.app/learn?course=automation&node=aut_json_apis",
+    "capturedAt": "2026-07-12T01:32:15.342Z",
+    "captureTimeBasis": "observed",
+    "method": "api-capture",
+    "citation": "EduVerse verified lesson; claude-opus-4-8; prompt ai-lesson-v3-agent"
+  },
+  "updatedAt": "2026-07-03"
+}

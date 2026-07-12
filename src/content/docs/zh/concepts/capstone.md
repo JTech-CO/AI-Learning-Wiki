@@ -8,3 +8,4 @@ description: "'Capstone' 개념을 다루는 모듈"
 - [정점 캡스톤 — 실사용자 있는 산출물을 기획부터 배포까지 출시](/zh/courses/ai-builder/44-capstone-launch/) <sub>(AI 빌더)</sub>
 - [캡스톤: 첫 결과물 완성하기](/zh/courses/ai-intro/44-capstone/) <sub>(AI 입문)</sub>
 - [주간보고 자동화 캡스톤](/zh/courses/ai-work/48-weekly-report-capstone/) <sub>(AI 실무)</sub>
+- [캡스톤 — 스크래퍼→AI→알림 봇 완성·배포·유지 (정점)](/zh/courses/automation/42-capstone-ship/) <sub>(자동화 개발)</sub>

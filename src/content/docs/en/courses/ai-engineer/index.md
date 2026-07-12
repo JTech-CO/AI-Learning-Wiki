@@ -5,7 +5,7 @@ sidebar:
   order: 0
   label: "📍 로드맵"
 ---
-> 레벨: `engineer` · 모듈 26/49개
+> 레벨: `engineer` · 모듈 49/49개
 
 1. [개발 환경 세팅: 파이썬·venv·에디터](/en/courses/ai-engineer/01-dev-environment-setup/)
 1. [파이썬 기초 — AI·자동화의 공용어](/en/courses/ai-engineer/02-python-basics/)
@@ -33,3 +33,26 @@ sidebar:
 1. [컨텍스트·프롬프트 캐싱 — 비용·속도 최적화](/en/courses/ai-engineer/24-prompt-caching/)
 1. [문서 청킹 전략](/en/courses/ai-engineer/25-document-chunking/)
 1. [임베딩과 코사인 유사도](/en/courses/ai-engineer/26-embedding-cosine-similarity/)
+1. [벡터DB·임베딩 실습 — 의미검색 직접 구현](/en/courses/ai-engineer/27-vector-db-embeddings/)
+1. [벡터 DB 구축과 검색](/en/courses/ai-engineer/28-vector-store-setup/)
+1. [최소 RAG 파이프라인 구현](/en/courses/ai-engineer/29-rag-pipeline-build/)
+1. [RAG 고도화 — chunking·reranking·하이브리드](/en/courses/ai-engineer/30-rag-advanced/)
+1. [RAG 검색 평가와 튜닝](/en/courses/ai-engineer/31-rag-eval-retrieval/)
+1. [컴퓨터·브라우저 제어 에이전트 — AI가 화면을 직접](/en/courses/ai-engineer/32-computer-use/)
+1. [에이전트 루프(ReAct) 직접 짜기](/en/courses/ai-engineer/33-agent-loop-basics/)
+1. [에이전트용 도구 설계 원칙](/en/courses/ai-engineer/34-agent-tool-design/)
+1. [에이전트 메모리와 상태 관리](/en/courses/ai-engineer/35-agent-memory-state/)
+1. [에이전트 하네스 구축 — 프레임워크로 도구·메모리·루프](/en/courses/ai-engineer/36-agent-harness/)
+1. [MCP로 외부 도구 표준 연결](/en/courses/ai-engineer/37-mcp-intro/)
+1. [자율 에이전트 루프 설계 — 스스로 끝까지 해내는 AI](/en/courses/ai-engineer/38-autonomous-loop/)
+1. [멀티 에이전트 협업 패턴](/en/courses/ai-engineer/39-multi-agent-patterns/)
+1. [멀티 에이전트 오케스트레이션 — 여러 AI 협업](/en/courses/ai-engineer/40-agent-multi-orchestration/)
+1. [LLM 호출 로깅·트레이싱](/en/courses/ai-engineer/41-logging-tracing/)
+1. [평가 하네스와 LLM 심판](/en/courses/ai-engineer/42-prompt-eval-harness/)
+1. [에이전트 평가·관측 — eval·트레이싱·디버깅](/en/courses/ai-engineer/43-agent-eval-observability/)
+1. [에이전트를 API 서비스로 배포](/en/courses/ai-engineer/44-deploy-api-service/)
+1. [비용·지연 최적화](/en/courses/ai-engineer/45-cost-latency-optimization/)
+1. [로컬 LLM — Ollama로 내 PC에서 AI 돌리기](/en/courses/ai-engineer/46-local-llm-ollama/)
+1. [n8n 자동화 — 셀프호스팅 워크플로 자동화](/en/courses/ai-engineer/47-n8n-automation/)
+1. [프롬프트 인젝션 방어](/en/courses/ai-engineer/48-prompt-injection-defense/)
+1. [AI 보안 — 프롬프트 인젝션·데이터 유출 방어](/en/courses/ai-engineer/49-security-defense/)

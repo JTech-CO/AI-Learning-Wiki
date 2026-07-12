@@ -4,6 +4,10 @@ description: "'Verification' 개념을 다루는 모듈"
 ---
 이 개념을 다루는 모듈:
 
+- [에이전트 평가·관측 — eval·트레이싱·디버깅](/courses/ai-engineer/43-agent-eval-observability/) <sub>(AI 엔지니어)</sub>
+- [AI 보안 — 프롬프트 인젝션·데이터 유출 방어](/courses/ai-engineer/49-security-defense/) <sub>(AI 엔지니어)</sub>
+- [AI로 데이터·리서치 판매하기](/courses/ai-finance/35-data-research-products/) <sub>(AI 금융)</sub>
+- [AI 투자·리서치 도구 활용 — 똑똑하게 조사하기](/courses/ai-finance/47-ai-investing-research/) <sub>(AI 금융)</sub>
 - [단계적으로 생각하게 시키기](/courses/ai-intro/15-step-by-step/) <sub>(AI 입문)</sub>
 - [긴 문서·회의록·메일 스레드 요약하기](/courses/ai-work/11-long-doc-summary/) <sub>(AI 실무)</sub>
 - [긴 메일 스레드 요약 답장](/courses/ai-work/12-thread-summary-reply/) <sub>(AI 실무)</sub>

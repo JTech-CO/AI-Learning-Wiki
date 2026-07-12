@@ -1,0 +1,120 @@
+{
+  "id": "automation/cost-rate-guards",
+  "course": "automation",
+  "order": 34,
+  "title": {
+    "ko": "비용·레이트리밋·폭주 방지 가드"
+  },
+  "summary": {
+    "ko": "API 비용·요청 한도·무한루프 폭주를 막는 안전장치."
+  },
+  "objectives": [
+    {
+      "ko": "이 레슨이 끝나면, 내 자동화·API 스크립트에 예산 상한·요청 레이트리밋·루프 킬스위치를 직접 붙여서 폭주 사고를 원천 차단할 수 있습니다."
+    }
+  ],
+  "body": {
+    "ko": "> 새벽에 짜둔 자동화 스크립트가 무한루프에 빠져 아침에 일어나니 API 청구서가 40만원. 이런 사고는 딱 세 줄의 가드만 넣어도 안 일어납니다.\n\n## 이 레슨에서 만드는 것\n\n이 레슨이 끝나면, 내 자동화·API 스크립트에 예산 상한·요청 레이트리밋·루프 킬스위치를 직접 붙여서 폭주 사고를 원천 차단할 수 있습니다.\n\n## 핵심 개념\n\n자동화의 진짜 위험은 버그가 아니라 '멈추지 않는 버그'입니다. API 호출은 한 번에 몇 원이지만, 루프가 초당 수십 번 돌면 몇 분 만에 수십만 원이 됩니다. 그래서 프로 엔지니어는 코드를 짜기 전에 먼저 세 개의 안전벨트를 답니다. (1) 예산 상한(이 금액 넘으면 중단), (2) 레이트리밋(초당·분당 요청 수 제한), (3) 킬스위치(루프 최대 횟수·타임아웃). 소방서가 불을 끄는 게 아니라 애초에 방화벽을 세우듯, 이 세 가드를 습관으로 만들면 자동화가 무섭지 않습니다.\n\n### 왜 작동하는가\n\n자동화 스크립트는 사람과 달리 지치지도, 멈칫하지도 않습니다. 그래서 버그가 나면 인간은 3번 실수하고 알아채지만, 스크립트는 초당 수십 번 같은 실수를 반복합니다. 예산 상한·레이트리밋·킬스위치는 이 '멈추지 않는 특성'을 역이용해서, 스크립트가 스스로 자기 목에 브레이크를 걸게 만드는 장치입니다.\n\n## 👀 따라하기 예시\n\n매일 새벽 뉴스 100건을 요약해서 저장하는 자동화 스크립트를 만든다고 해봅시다. 제가 먼저 세 가드를 붙이는 과정을 처음부터 끝까지 보여드릴게요, 눈으로 따라오세요.\n\n### 1. ① 최악의 시나리오부터 계산\n\n**실제 결과**\n\n```text\n\"뉴스 100건 × 호출당 0.0003달러 = 0.03달러. 그런데 만약 무한루프로 같은 뉴스를 계속 재처리하면? 초당 20회 × 3600초 × 0.0003달러 = 시간당 21.6달러(약 3만원), 방치하면 하루 72만원.\"\n```\n\n> 코드 짜기 전에 숫자로 겁을 먼저 먹어야 가드를 실제로 붙이게 됩니다.\n\n### 2. ② 예산 상한 카운터 삽입\n\n**실제 결과**\n\n```text\n\"let spent=0; const CAP=1.0;\\nfor(const article of articles){\\n  spent += 0.0003;\\n  if(spent>CAP) throw new Error('예산 초과 중단: '+spent);\\n  await summarize(article);\\n}\"\n```\n\n> throw로 진짜 멈추게 만드는 게 핵심입니다. console.warn만 찍고 계속 돌면 사고는 그대로 납니다.\n\n### 3. ③ 레이트리밋 + 429 백오프 추가\n\n**실제 결과**\n\n```text\n\"for(const article of articles){\\n  await summarize(article);\\n  await sleep(1000); // 분당 60회 제한\\n}\\n// 429 응답 시: await sleep(2**retryCount * 1000) 후 재시도, 최대 5회\"\n```\n\n> 429는 '더 보내지 마'라는 신호인데, 즉시 재시도하면 오히려 폭주를 가속시킵니다.\n\n### 4. ④ 드라이런으로 먼저 검증\n\n**실제 결과**\n\n```text\n\"const DRY_RUN=true;\\nasync function summarize(a){ if(DRY_RUN){ console.log('[dry]', a.title); return; } return realSummarize(a); }\\n→ 로그 100줄, 예상비용 0.03달러 확인 → DRY_RUN=false로 전환\"\n```\n\n> 진짜 돈이 나가기 전에 예상 호출 횟수를 눈으로 세어보면 10배 실수를 사전에 잡습니다.\n\n### 완성 결과\n\n완성물은 예산 상한·레이트리밋·킬스위치 세 가드가 모두 붙은 자동화 스크립트입니다. 좋은 결과의 기준: (1) 상한 초과 시 실제로 throw/중단되는가, (2) 429가 와도 폭주하지 않고 백오프하는가, (3) 실행 전 드라이런으로 예상 비용을 확인했는가.\n\n## 단계별 따라하기\n\n### 1단계 — 최악의 시나리오 비용 먼저 계산하기 (5분) 🙋나\n\n코드를 짜기 전에 종이나 메모장에 '이 스크립트가 미쳐서 최대한 빨리 돌면 시간당 얼마인가'를 계산합니다. API 단가 × 초당 가능 호출 수 × 3600을 곱해 최악값을 구합니다.\n\n**복사·실행 예시**\n\n```text\nGPT-4o-mini 호출당 약 0.0003달러, 루프가 초당 20회 → 시간당 20×3600×0.0003 = 21.6달러(약 3만원). 하루 방치 시 약 72만원. 이 숫자를 보면 가드가 필수임을 체감합니다.\n```\n\n### 2단계 — 예산 상한(하드 리밋) 카운터 붙이기 (10분) 🙋나\n\n누적 비용을 추적하는 변수를 만들고, 매 호출 직후 더한 뒤 상한을 넘으면 즉시 중단(throw/return)합니다. 경고가 아니라 '멈춤'이어야 합니다.\n\n**복사·실행 예시**\n\n```text\nlet spent=0; const CAP=2.0; // 달러 상한\\nfor(const item of items){\\n  spent += 0.0003;\\n  if(spent>CAP) throw new Error('예산 초과 중단: ' + spent + ' USD');\\n  await callApi(item);\\n}\n```\n\n### 3단계 — 레이트리밋으로 요청 간격 강제하기 (10분) 🤝함께\n\n매 호출 사이에 최소 대기시간을 넣어 초당 요청 수를 물리적으로 제한합니다. 429(Too Many Requests) 응답이 오면 지수 백오프로 대기 후 재시도합니다. 이 로직은 AI에게 짜달라고 하면 정확합니다.\n\n**복사·실행 예시**\n\n```text\nconst sleep=ms=>new Promise(r=>setTimeout(r,ms));\\n// 분당 60회 = 최소 1초 간격\\nfor(const item of items){ await callApi(item); await sleep(1000); }\\n// 429 시: 대기 2^n초 후 재시도\n```\n\n### 4단계 — 무한루프 킬스위치(최대 횟수+타임아웃) 심기 (10분) 🙋나\n\nwhile 루프나 재시도 로직에는 반드시 최대 반복 횟수 카운터와 전체 실행 타임아웃을 둡니다. 종료조건이 영영 안 오는 상황을 대비한 강제 탈출구입니다.\n\n**복사·실행 예시**\n\n```text\nconst start=Date.now(); let n=0;\\nwhile(!done){\\n  if(++n>1000) throw new Error('최대 반복 초과');\\n  if(Date.now()-start>60000) throw new Error('60초 타임아웃');\\n  done = await step();\\n}\n```\n\n### 5단계 — 드라이런으로 안전 검증하기 (5분) 🤝함께\n\n진짜 API를 부르기 전에 callApi를 콘솔 로그로 바꾼 '드라이런' 모드로 한 번 돌립니다. 예상 호출 횟수·누적 비용이 상한 안에 드는지 눈으로 확인한 뒤에만 실제 실행합니다.\n\n**복사·실행 예시**\n\n```text\nconst DRY_RUN=true;\\nasync function callApi(x){ if(DRY_RUN){ console.log('[dry]', x); return; } return realApi(x); }\\n// 로그가 예상대로 300회, 예상비용 0.09달러 → OK, DRY_RUN=false로 실행\n```\n\n### 6단계 — 실행 중 실시간 모니터링·알림 걸기 (5분) 🤖A\n\n긴 작업은 매 50~100회마다 진행상황과 누적 비용을 로그로 찍고, 제공사 대시보드의 사용량 알림(usage limit alert)을 반드시 켜둡니다. AI에게 로그·알림 코드를 요청하세요.\n\n**복사·실행 예시**\n\n```text\nif(n%100===0) console.log('진행 ' + n + '건, 누적 ' + spent.toFixed(2) + ' USD');\\n// OpenAI/Anthropic 콘솔 → Billing → Usage limits에서 소프트/하드 한도 이메일 알림 설정\n```\n\n## 흔한 실수와 교정\n- **실수:** 가드를 '경고 로그'로만 만들고 실행은 계속 진행한다 (console.warn 후 그냥 통과).\n  - **교정:** 상한 초과는 반드시 throw나 break/return으로 '실제 중단'시킨다. 경고는 사고를 막지 못한다.\n- **실수:** 레이트리밋 없이 429가 오면 곧바로 즉시 재시도해서 오히려 폭주를 가속시킨다.\n  - **교정:** 429·5xx에는 지수 백오프(2^n초 대기)와 최대 재시도 횟수를 둔다. 즉시 재시도는 금지.\n- **실수:** 실제 API로 바로 전체 실행해보고 나서야 호출 횟수가 예상의 10배였음을 청구서로 안다.\n  - **교정:** 처음엔 반드시 DRY_RUN=true로 돌려 예상 호출수·비용을 눈으로 확인한 뒤 실행한다.\n\n## 완료 체크리스트\n\n- 최악 시나리오(초당 최대 호출)의 시간당 비용을 계산해봤다\n- 누적 비용이 상한을 넘으면 실제로 중단(throw/break)되는 예산 가드를 넣었다\n- 호출 사이 최소 간격 + 429 지수 백오프 재시도를 넣었다\n- while·재시도 루프에 최대 횟수와 타임아웃 킬스위치를 심었다\n- DRY_RUN으로 예상 호출수·비용을 확인하고, 제공사 사용량 알림을 켰다\n\n## 도구\n\n- OpenAI Usage limits (platform.openai.com/settings/organization/limits) — 소프트·하드 결제 한도 이메일 알림 설정\n- Anthropic Console Billing (console.anthropic.com/settings/limits) — 월 사용 상한·알림 설정\n- p-limit (npmjs.com/package/p-limit) — 동시 요청 수를 코드로 제한하는 경량 라이브러리\n- Bottleneck (npmjs.com/package/bottleneck) — 정밀 레이트리밋·백오프 스케줄러\n\n## 참고 답안\n\n① 최악 계산: 호출당 0.001달러 × 초당 5회 × 3600 = 시간당 18달러. ② let spent=0; const CAP=0.5; if((spent+=0.001)>CAP) throw new Error('예산 초과'); ③ let n=0; while(running){ if(++n>500) throw new Error('최대 반복 초과'); await fetchRate(); }"
+  },
+  "prompts": [
+    {
+      "id": "cost-rate-guards-p1",
+      "title": {
+        "ko": "가드 3종 세트 자동 삽입"
+      },
+      "template": {
+        "ko": "다음 [내 스크립트 코드]에 세 가지 안전 가드를 추가해줘: (1) 누적 API 비용이 [상한 예: 2달러]를 넘으면 즉시 중단하는 예산 카운터, (2) 호출 사이 최소 [간격 예: 1초] 대기 + 429 응답 시 지수 백오프 재시도, (3) 최대 반복 [횟수 예: 1000]회와 [타임아웃 예: 60초] 킬스위치. 각 가드에 한글 주석을 달고, 변경 부분을 설명해줘.\\n\\n[내 스크립트 코드]:"
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "cost-rate-guards"
+      ]
+    },
+    {
+      "id": "cost-rate-guards-p2",
+      "title": {
+        "ko": "최악 비용 시나리오 계산"
+      },
+      "template": {
+        "ko": "내 자동화가 [API명: 예 GPT-4o-mini]를 호출당 약 [단가]에 사용하고, 최악의 경우 초당 [n]회까지 호출될 수 있어. 시간당·하루 방치 시 최대 비용을 계산해주고, 안전한 예산 상한값을 추천해줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "cost-rate-guards"
+      ]
+    },
+    {
+      "id": "cost-rate-guards-p3",
+      "title": {
+        "ko": "드라이런 모드 래퍼 만들기"
+      },
+      "template": {
+        "ko": "이 [함수]를 DRY_RUN 플래그로 감싸서, true일 때는 실제 호출 대신 호출 인자와 예상 누적 비용을 콘솔에 출력하고, false일 때만 실제 실행하도록 리팩터링해줘. 예상 총 호출 횟수와 비용을 마지막에 요약 출력하는 코드도 추가해줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "cost-rate-guards"
+      ]
+    },
+    {
+      "id": "cost-rate-guards-p4",
+      "title": {
+        "ko": "레이트리밋·백오프 로직만 추출"
+      },
+      "template": {
+        "ko": "분당 최대 [예: 60]회 요청 제한을 지키면서, 429나 5xx 응답을 받으면 지수 백오프(2^n초, 최대 [예: 5]회)로 재시도하는 재사용 가능한 [언어: 예 JavaScript] 헬퍼 함수를 만들어줘. 사용 예시도 함께 보여줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "cost-rate-guards"
+      ]
+    }
+  ],
+  "concepts": [
+    "cost",
+    "rate",
+    "guards"
+  ],
+  "mission": {
+    "ko": "이번엔 '매시간 환율 API를 호출해서 DB에 기록하는 자동화 스크립트'에 예산 상한과 킬스위치를 직접 붙여보세요. 최악 시나리오 계산부터 시작해서, throw로 멈추는 상한 코드, 최대 반복 횟수 킬스위치까지 작성해보세요."
+  },
+  "rubric": [
+    {
+      "criterion": {
+        "ko": "상한을 넘으면 코드가 경고만 하는가, 아니면 진짜로 멈추는가?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "429 에러가 왔을 때 즉시 재시도하지 않고 대기 후 재시도하도록 짰는가?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "실제 API를 부르기 전에 드라이런으로 예상 비용을 확인했는가?"
+      },
+      "max": 5
+    }
+  ],
+  "difficulty": "pro",
+  "tags": [
+    "Applied-AI",
+    "academic"
+  ],
+  "estimatedMinutes": 36,
+  "source": {
+    "platform": "eduverse-ai.app",
+    "url": "https://eduverse-ai.app/learn?course=automation&node=aut_cost_rate_guards",
+    "capturedAt": "2026-07-12T01:32:15.342Z",
+    "captureTimeBasis": "observed",
+    "method": "api-capture",
+    "citation": "EduVerse verified lesson; claude-opus-4-8; prompt ai-lesson-v3-agent"
+  },
+  "updatedAt": "2026-07-03"
+}

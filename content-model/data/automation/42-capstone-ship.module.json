@@ -1,0 +1,119 @@
+{
+  "id": "automation/capstone-ship",
+  "course": "automation",
+  "order": 42,
+  "title": {
+    "ko": "캡스톤 — 스크래퍼→AI→알림 봇 완성·배포·유지 (정점)"
+  },
+  "summary": {
+    "ko": "배운 것을 모아 실제 자동화(데이터 수집→AI 처리→알림)를 만들어 배포하고 유지보수까지."
+  },
+  "objectives": [
+    {
+      "ko": "이 레슨이 끝나면, '데이터 수집 → AI 요약 → 알림 전송'이 매일 자동으로 도는 봇을 무료로 배포하고, 고장나도 스스로 고칠 수 있습니다."
+    }
+  ],
+  "body": {
+    "ko": "> 매일 아침 눈뜨자마자 손으로 확인하던 그 정보, 이제 봇이 대신 수집하고 AI가 요약해서 당신 폰으로 쏴줍니다. 지금까지 배운 조각들을 하나로 이어 '진짜 돌아가는' 자동화를 완성할 시간입니다.\n\n## 이 레슨에서 만드는 것\n\n이 레슨이 끝나면, '데이터 수집 → AI 요약 → 알림 전송'이 매일 자동으로 도는 봇을 무료로 배포하고, 고장나도 스스로 고칠 수 있습니다.\n\n## 핵심 개념\n\n자동화는 결국 세 덩어리의 파이프라인입니다. (1) 수집(스크래퍼가 웹/API에서 데이터를 긁어옴) (2) 처리(AI가 요약·분류·판단) (3) 알림(텔레그램/이메일로 결과 전송). 캡스톤은 이 셋을 하나의 스크립트로 연결하고, 클라우드에 올려 '매일 정해진 시각에 알아서 도는' 상태까지 만드는 것입니다. 마치 신문 배달원을 고용하는 것과 같아요 — 한 번 계약해두면 매일 새벽 문 앞에 배달됩니다. 진짜 실력은 '만드는 것'이 아니라 '3주 뒤에도 살아있게 유지하는 것'에서 갈립니다.\n\n### 왜 작동하는가\n\nAI는 사람이 매일 반복하던 판단(이거 급매인가? 이거 살 만한가?)을 텍스트만 넣어주면 대신 내려줍니다. 그래서 당신은 수집(스크래퍼)과 배달(텔레그램)만 연결하면, 판단은 AI에게 맡기고 나머지는 클라우드가 알아서 매일 돌립니다. 사람이 할 일은 '무엇을 배달받을지' 정하는 것 하나로 줄어드는 거예요.\n\n## 👀 따라하기 예시\n\n당근마켓에서 '아이폰 15' 새 매물을 매일 아침 확인해 80만원 이하 급매만 텔레그램으로 받는 봇을 제가 처음부터 끝까지 만들어볼게요. 눈으로 따라오세요.\n\n### 1. ① 배달받을 결과를 한 문장으로 정하기\n\n**실제 결과**\n\n```text\n'매일 오전 8시, 당근 <아이폰 15> 매물 중 80만원 이하만 AI가 급매 여부 판단 후 텔레그램 전송'\n```\n\n> 목표 문장이 흐리면 코드도 흐려집니다. 수집·처리·알림 세 칸을 먼저 채워야 AI에게 정확히 시킬 수 있어요.\n\n### 2. ② 텔레그램 봇부터 뚫기\n\n**실제 결과**\n\n```text\nBotFather가 준 토큰 7834xxxx:AAF... 확인 후, api.telegram.org/bot<토큰>/getUpdates 에서 \"chat\":{\"id\":123456789} 확인 완료\n```\n\n> 알림 통로를 제일 먼저 뚫어두면, 나중에 어디서 코드가 터져도 최소한 '터졌다'는 신호는 받을 수 있어요.\n\n### 3. ③ AI에게 세 조각을 한 파일로 합쳐달라 요청\n\n**실제 결과**\n\n```text\nmain.py: def scrape() / def ask_ai(items) / def notify(text) / def main(): try: notify(ask_ai(scrape())) except Exception as e: notify(f\"봇 오류: {e}\")\n```\n\n> try/except로 전체를 감싸두면 어느 한 곳이 죽어도 '죽었다는 사실'만은 텔레그램으로 도착해요. 조용히 죽는 게 제일 무섭거든요.\n\n### 4. ④ 로컬에서 5번 돌려 확인\n\n**실제 결과**\n\n```text\npython main.py 5회 실행 → 매물 있는 날 \"[8시 리포트] 급매 2건\" 도착, 매물 0건인 날도 \"오늘 새 매물 없음\" 도착 확인\n```\n\n> 배포 전에 '데이터 없는 날'까지 테스트해야, 실제 서비스 중 데이터가 비는 날 봇이 조용히 죽는 걸 막을 수 있어요.\n\n### 완성 결과\n\nGitHub Actions cron으로 매일 한국시간 오전 8시(UTC 23시)에 자동 실행되는 main.py 한 파일. 좋은 결과의 기준: (1) API 키가 .env·Secrets로 코드 밖에 분리돼 있다 (2) 데이터 0건인 날도 알림이 온다 (3) 하루라도 하트비트가 안 오면 즉시 눈치챌 수 있다.\n\n## 단계별 따라하기\n\n### 1단계 — 무엇을 배달받을지 한 문장으로 정하기 (10분) 🙋나\n\n봇이 매일 당신에게 보내줄 '한 문장짜리 결과물'을 종이에 적어라. 수집처(어디서)·처리(무엇을)·알림(어떻게)를 명확히. 욕심내지 말고 딱 하나의 정보만.\n\n**복사·실행 예시**\n\n```text\n'매일 오전 8시, 당근마켓 <아이폰 15> 새 매물 중 80만원 이하만 골라 AI가 급매 여부를 판단해 텔레그램으로 보낸다.' → 수집=당근 검색결과, 처리=가격필터+AI 급매판단, 알림=텔레그램\n```\n\n### 2단계 — 알림 통로부터 뚫기 (15분) 🤝함께\n\n결과를 받을 텔레그램 봇을 먼저 만든다. 텔레그램에서 @BotFather 검색 → /newbot → 이름 입력 → 받은 토큰 복사. 그다음 내 봇과 대화 시작 후 chat_id 확인. AI에게 'chat_id 알아내는 최소 코드'를 요청해 붙여넣기만.\n\n**복사·실행 예시**\n\n```text\nBotFather가 준 토큰: 7834xxxx:AAF... / chat_id 확인용 URL: api.telegram.org/bot<토큰>/getUpdates → 봇에 아무 말이나 보낸 뒤 새로고침하면 \"chat\":{\"id\":123456789} 가 보임\n```\n\n### 3단계 — 세 조각을 한 파일로 잇기 (30분) 🤖A\n\n수집·처리·알림 코드를 AI에게 '하나의 파이썬 파일'로 합쳐달라고 요청한다. 각 조각을 함수로 나누고 main()에서 순서대로 호출하게. 반드시 try/except로 감싸 한 곳이 터져도 알림은 가게 한다.\n\n**복사·실행 예시**\n\n```text\nmain.py 구조: def scrape() → def ask_ai(items) → def notify(text) → def main(): try: notify(ask_ai(scrape())) except Exception as e: notify(f'봇 오류: {e}')\n```\n\n### 4단계 — 내 컴에서 5번 성공시키기 (20분) 🙋나\n\n배포 전에 로컬에서 python main.py 를 최소 5번 돌려 매번 텔레그램 알림이 오는지 확인. 데이터가 없는 날, 사이트 구조가 조금 바뀐 날도 죽지 않는지 본다. API 키는 코드에 직접 쓰지 말고 .env 파일로 분리.\n\n**복사·실행 예시**\n\n```text\n터미널: python main.py → 폰 텔레그램에 '[8시 리포트] 급매 2건: ...' 도착 확인. 매물 0건일 때도 '오늘 새 매물 없음'이 오면 통과\n```\n\n### 5단계 — 클라우드에 올려 매일 자동으로 (25분) 🤝함께\n\nGitHub에 코드를 올리고 GitHub Actions의 schedule(cron)로 매일 정해진 시각에 실행되게 한다. API 키는 Repo의 Settings → Secrets에 저장(코드에 노출 금지). AI에게 '.github/workflows/daily.yml cron 예시'를 요청.\n\n**복사·실행 예시**\n\n```text\ndaily.yml: on: schedule: - cron: '0 23 * * *'  # UTC 23시 = 한국 오전 8시. jobs에서 pip install 후 python main.py 실행, 키는 ${{ secrets.TELEGRAM_TOKEN }} 로 주입\n```\n\n### 6단계 — 3주 살아남는 유지보수 장치 (20분) 🤝함께\n\n봇이 조용히 죽는 걸 막는 안전장치를 넣는다. (1) 매일 정상 실행되면 '✅ 정상' 하트비트 알림 (2) 오류 시 에러 메시지를 텔레그램으로 (3) README에 '고장나면 볼 곳' 체크리스트 기록. 월 1회 로그 점검 알람을 캘린더에 등록.\n\n**복사·실행 예시**\n\n```text\nmain.py 끝에: notify('✅ 하루치 완료 ' + str(len(items)) + '건'). 3일간 하트비트가 안 오면 = 봇이 죽은 것 → GitHub Actions 로그 확인\n```\n\n## 흔한 실수와 교정\n- **실수:** API 키·봇 토큰을 코드에 그대로 적어 GitHub에 올림 → 남이 훔쳐씀\n  - **교정:** 키는 항상 .env(로컬)와 GitHub Secrets(클라우드)에 분리 저장하고, os.environ으로 읽는다. .gitignore에 .env 추가는 필수. 이미 올렸다면 즉시 키 재발급.\n- **실수:** 로컬에서 한 번 성공하자마자 배포 → 데이터 0건이거나 사이트가 살짝 바뀐 날 봇이 조용히 죽음\n  - **교정:** 배포 전 최소 5번, 특히 '데이터 없는 상황'까지 테스트. 전체를 try/except로 감싸고 오류도 알림으로 받아 죽은 걸 즉시 알게 한다.\n- **실수:** cron 시간을 한국시간으로 적어 엉뚱한 시각에 실행되거나 아예 안 됨\n  - **교정:** GitHub Actions cron은 UTC 기준. 한국시간에서 9시간을 빼서 계산한다(한국 08:00 = UTC 23:00, cron '0 23 * * *'). 배포 후 하루는 실제로 오는지 확인.\n\n## 완료 체크리스트\n\n- 봇이 보낼 '한 문장 결과물'을 종이에 적었다\n- 텔레그램 봇 토큰과 chat_id를 확보하고 테스트 메시지가 왔다\n- 수집·처리·알림이 하나의 파일에서 try/except로 연결됐다\n- 로컬에서 5번(데이터 0건 포함) 돌려 매번 알림이 왔다\n- GitHub Actions에 올려 매일 자동 실행 + Secrets에 키를 숨겼다\n\n## 도구\n\n- 텔레그램 BotFather (https://t.me/BotFather) — 알림받을 봇 생성·토큰 발급\n- GitHub Actions (https://github.com/features/actions) — 무료 cron 스케줄 자동 실행\n- Python + requests (https://www.python.org) — 수집·알림 스크립트 실행\n- ChatGPT/Claude (https://claude.ai) — 세 조각 코드 합치기·오류 디버깅\n\n## 참고 답안\n\n1단계: '매일 오전 9시, <채널명> 새 영상 제목 중 AI가 관심주제로 판단한 것만 텔레그램 전송'. 2단계: 텔레그램 봇 토큰·chat_id 확보. 3단계: scrape()=채널 RSS 확인, ask_ai(titles)=관심주제 필터링, notify(text)=전송, try/except로 감싸기. 4단계: 로컬 5회 실행(신규 영상 없는 날 포함) 확인. 5단계: GitHub Actions cron '0 0 * * *'(한국 09시=UTC 00시)로 배포, 키는 Secrets에. 6단계: 매일 \"✅ 확인 완료 N건\" 하트비트 + 3일 무응답 시 로그 점검."
+  },
+  "prompts": [
+    {
+      "id": "capstone-ship-p1",
+      "title": {
+        "ko": "세 조각을 한 파일로 합치기(핵심)"
+      },
+      "template": {
+        "ko": "파이썬 초보를 위해 아래 자동화를 '하나의 main.py 파일'로 만들어줘. 목표: [매일 오전 8시 당근마켓 아이폰15 매물 중 80만원 이하를 수집→AI로 급매 판단→텔레그램 전송]. 요구사항: (1) scrape(), ask_ai(items), notify(text) 세 함수로 분리 (2) main()에서 순서 호출하되 전체를 try/except로 감싸 오류도 텔레그램으로 알림 (3) API 키·토큰은 os.environ에서 읽기(.env) (4) 각 줄에 한국어 주석 (5) 데이터 0건일 때도 죽지 않게. 코드와 함께 필요한 pip 설치 명령도 알려줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "capstone-ship"
+      ]
+    },
+    {
+      "id": "capstone-ship-p2",
+      "title": {
+        "ko": "텔레그램 알림 연결"
+      },
+      "template": {
+        "ko": "텔레그램 봇으로 메시지를 보내는 가장 간단한 파이썬 함수 notify(text)를 만들어줘. 봇 토큰은 [토큰], chat_id는 [숫자]. requests 라이브러리만 사용하고, 전송 실패해도 프로그램이 멈추지 않게 예외처리 해줘. chat_id를 아직 모르면 알아내는 방법도 3줄로 알려줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "capstone-ship"
+      ]
+    },
+    {
+      "id": "capstone-ship-p3",
+      "title": {
+        "ko": "매일 자동 실행(GitHub Actions cron)"
+      },
+      "template": {
+        "ko": "내 GitHub 저장소의 main.py를 매일 한국시간 오전 8시에 자동 실행하는 .github/workflows/daily.yml 파일을 만들어줘. requirements.txt로 라이브러리 설치, API 키/토큰은 GitHub Secrets(TELEGRAM_TOKEN, AI_KEY)에서 주입. cron은 UTC 기준이니 한국 8시에 맞는 값으로 계산해서 주석으로 설명해줘. Secrets 등록하는 클릭 순서도 알려줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "capstone-ship"
+      ]
+    },
+    {
+      "id": "capstone-ship-p4",
+      "title": {
+        "ko": "안 죽는 봇으로 하드닝"
+      },
+      "template": {
+        "ko": "이 자동화 봇이 3주 뒤에도 조용히 죽지 않게 만들고 싶어. 아래 main.py에 (1) 매 실행 성공 시 '✅ 정상 N건' 하트비트 알림 (2) 사이트 구조 변경/네트워크 오류 시 구체적 에러 메시지 알림 (3) 재시도 3회 로직 (4) '고장나면 확인할 곳' README 체크리스트를 추가해줘. 코드: [여기에 붙여넣기]"
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "capstone-ship"
+      ]
+    }
+  ],
+  "concepts": [
+    "capstone",
+    "ship"
+  ],
+  "mission": {
+    "ko": "이번엔 대상을 바꿔봅니다. '유튜브 특정 채널의 새 영상 제목을 매일 확인해, AI가 '내가 볼 만한 주제'인지 판단한 뒤 텔레그램으로 알려주는 봇'을 위 6단계 그대로 적용해 설계해보세요. 1단계(한 문장 정의)부터 6단계(유지보수 장치)까지 각 단계에서 무엇을 채울지 직접 써보세요."
+  },
+  "rubric": [
+    {
+      "criterion": {
+        "ko": "내 봇의 cron 시각을 UTC로 정확히 환산했는가?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "데이터가 0건인 날에도 알림이 오도록 코드를 짰는가?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "API 키를 코드에 직접 적지 않고 .env/Secrets로 분리했는가?"
+      },
+      "max": 5
+    }
+  ],
+  "difficulty": "pro",
+  "tags": [
+    "Applied-AI",
+    "academic"
+  ],
+  "estimatedMinutes": 36,
+  "source": {
+    "platform": "eduverse-ai.app",
+    "url": "https://eduverse-ai.app/learn?course=automation&node=aut_capstone_ship",
+    "capturedAt": "2026-07-12T01:32:15.342Z",
+    "captureTimeBasis": "observed",
+    "method": "api-capture",
+    "citation": "EduVerse verified lesson; claude-opus-4-8; prompt ai-lesson-v3-agent"
+  },
+  "updatedAt": "2026-07-03"
+}

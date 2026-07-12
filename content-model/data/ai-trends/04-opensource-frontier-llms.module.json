@@ -1,0 +1,92 @@
+{
+  "id": "ai-trends/opensource-frontier-llms",
+  "course": "ai-trends",
+  "order": 4,
+  "title": {
+    "ko": "🌐 오픈소스 프론티어 LLM 고르기 — Kimi K2·DeepSeek V4·Qwen 3·GLM-5 비교와 로컬 구동"
+  },
+  "summary": {
+    "ko": "2026년 오픈소스 LLM 4대 계열(Kimi K2.6·DeepSeek V4·Qwen 3·GLM-5)의 벤치·라이선스·비용·에이전트 적합성을 비교하고, 내 하드웨어에 맞는 모델을 골라 로컬에서 직접 실행한다. 클로즈드 모델과의 성능 격차가 실질적으로 좁혀진 시대에 오픈소스를 언제·어떻게 선택할지 판단 기준을 갖춘다."
+  },
+  "objectives": [
+    {
+      "ko": "Ollama로 오픈소스 LLM(Qwen·Gemma·DeepSeek)을 내 컴퓨터에 설치·실행하고, 벤치·라이선스·VRAM·용도 4가지 기준으로 내 작업에 맞는 모델을 직접 고를 수 있습니다."
+    }
+  ],
+  "body": {
+    "ko": "> 유료 API 한 푼 없이, 내 노트북에서 GPT급 AI를 공짜로 무제한 돌릴 수 있다면 어디까지 해볼 수 있을까요?\n\n## 이 레슨에서 만드는 것\n\nOllama로 오픈소스 LLM(Qwen·Gemma·DeepSeek)을 내 컴퓨터에 설치·실행하고, 벤치·라이선스·VRAM·용도 4가지 기준으로 내 작업에 맞는 모델을 직접 고를 수 있습니다.\n\n## 핵심 개념\n\n오픈소스 LLM은 '가중치(weights)'가 공개돼 누구나 무료로 내려받아 로컬에서 돌릴 수 있는 모델입니다. 폐쇄 모델(GPT·Claude)과의 성능 격차가 빠르게 좁혀져, 이제 개인 PC에서도 쓸 만한 품질이 나옵니다. 마치 '정수기 대신 집에 우물을 파는 것' — 초기 설정만 하면 그 뒤론 공짜로 마음껏 씁니다. 고르는 기준은 4가지: ①벤치 성능 ②라이선스(상업 이용 가능한가) ③크기/VRAM(내 하드웨어에 맞나) ④용도(범용·한국어·코딩·추론). Ollama가 이 설치·실행을 명령어 한 줄로 단순화해 줍니다.\n\n### 왜 작동하는가\n\n오픈소스 LLM은 모델의 '가중치 파일'을 통째로 공개해버린 거예요. 그래서 Ollama 같은 도구가 그 파일을 내 컴퓨터에 내려받아 그대로 실행만 해주면 됩니다. 서버에 물어볼 필요가 없으니 요금도, 요청 한도도 없어요 — 우물을 한 번 파두면 물은 공짜인 것처럼요.\n\n## 👀 따라하기 예시\n\n상황: 노트북(16GB RAM, GPU 없음)으로 한국어 질문에 답해주는 로컬 챗봇을 하나 만들고 싶어요. 제가 먼저 처음부터 끝까지 골라서 돌려볼게요, 눈으로 따라오세요.\n\n### 1. ① 용도부터 정하기 — \"한국어 질문답변, 코딩 아님, 추론 아님\"\n\n**실제 결과**\n\n```text\n→ 범용·한국어 카테고리 = qwen2.5:7b 후보 확정\n```\n\n> 용도를 먼저 정하면 수십 개 모델 중 후보가 1~2개로 좁혀져요. 순서가 핵심입니다.\n\n### 2. ② 내 하드웨어로 크기 걸러내기 — GPU 없고 RAM 16GB\n\n**실제 결과**\n\n```text\n7B(q4) ≈ 8GB 필요 → 16GB RAM이면 여유 있게 돌아감. 통과.\n```\n\n> 파라미터 숫자(7b)는 그대로 필요 메모리 감각이에요. 여기서 걸리면 gemma2:2b로 내려가면 됩니다.\n\n### 3. ③ 라이선스 확인 — \"이 챗봇, 나중에 유료 서비스에 써도 될까?\"\n\n**실제 결과**\n\n```text\nQwen 라이선스 페이지 확인 → 조건부 상업 이용 허용 확인됨\n```\n\n> 오픈소스=완전 자유가 아니에요. 상업 이용 직전에 반드시 짚고 넘어가는 습관을 들이는 거예요.\n\n### 4. ④ 설치 후 한 줄 실행\n\n**실제 결과**\n\n```text\n$ brew install ollama\\n$ ollama run qwen2.5:7b\\n→ 첫 실행 시 4.7GB 자동 다운로드 후 대화창 등장, \"안녕하세요! 무엇을 도와드릴까요?\"\n```\n\n> Ollama가 다운로드·양자화·서버 실행을 전부 이 한 줄 뒤로 숨겨준 거예요. 우리는 결과만 확인하면 됩니다.\n\n### 완성 결과\n\n내 노트북에서 무료·무제한으로 돌아가는 한국어 챗봇 1개. 좋은 결과의 기준: (1) 용도-라이선스-하드웨어 3가지를 순서대로 확인했는가 (2) 실제 내 예시 질문으로 품질을 직접 테스트했는가 (3) 상업 이용 여부에 따라 라이선스 조건을 짚었는가.\n\n## 단계별 따라하기\n\n### Ollama 설치\n\nollama.com에서 설치 파일을 받거나 macOS면 터미널에 'brew install ollama'. 설치하면 백그라운드 서버가 뜬다.\n\n**복사·실행 예시**\n\n```text\nbrew install ollama\n```\n\n### 용도에 맞는 모델 고르기\n\n범용·한국어=qwen2.5:7b, 코딩=qwen2.5-coder:7b, 초경량(저사양)=gemma2:2b, 추론특화=deepseek-r1:7b. 숫자(7b/2b)는 파라미터 크기 = 필요 메모리.\n\n**복사·실행 예시**\n\n```text\n한국어 잘하는 범용 → qwen2.5:7b\n```\n\n### 다운로드+실행 (한 줄)\n\n'ollama run <모델>' 하면 첫 실행 시 자동 다운로드 후 바로 대화창이 뜬다. 7B 모델은 약 4.7GB.\n\n**복사·실행 예시**\n\n```text\nollama run qwen2.5:7b\n```\n\n### 내 하드웨어 확인\n\n7B(q4 양자화)는 대략 8GB RAM/VRAM 필요. 부족해서 느리거나 안 뜨면 더 작은 모델(gemma2:2b)로 낮춘다.\n\n**복사·실행 예시**\n\n```text\n메모리 부족 → ollama run gemma2:2b\n```\n\n### 라이선스 확인 후 활용\n\n상업적으로 쓸 거면 각 모델의 라이선스를 확인(Qwen·Gemma는 대체로 상업이용 허용, 조건 있음). 이후 API(localhost:11434)로 내 앱·자동화에 붙인다.\n\n**복사·실행 예시**\n\n```text\ncurl localhost:11434/api/chat 로 내 프로그램에서 호출\n```\n\n## 흔한 실수와 교정\n- **실수:** 무조건 제일 큰 모델(70B 등)을 고른다\n  - **교정:** VRAM이 모자라 안 돌거나 매우 느리다. 내 하드웨어에 맞는 크기(7B/2B)부터 시작한다.\n- **실수:** 라이선스를 안 보고 상업 서비스에 쓴다\n  - **교정:** 오픈'소스라도 상업 이용 조건이 다르다. 각 모델의 라이선스 페이지를 반드시 확인한다.\n- **실수:** 벤치 점수만 보고 고른다\n  - **교정:** 벤치가 높아도 내 언어·작업엔 약할 수 있다. 내 실제 예시로 직접 돌려보고 고른다.\n\n## 완료 체크리스트\n\n- Ollama가 설치돼 'ollama run'이 동작하는가\n- 선택한 모델이 다운로드·실행되어 대화가 되는가\n- 내 RAM/VRAM으로 버벅임 없이 도는가\n- 상업 이용이라면 라이선스 조건을 확인했는가\n\n## 도구\n\n- Ollama — 로컬 LLM 설치·실행(명령어 한 줄)\n- Hugging Face — 모델·벤치·라이선스 정보 확인\n- LM Studio — 명령어 대신 GUI로 쓰고 싶을 때 대안\n\n## 참고 답안\n\n① 용도: 범용 잡담, 코딩/추론 아님 → 가벼운 범용 모델 후보. ② 하드웨어: 8GB RAM·GPU 없음 → 7B는 빠듯하니 gemma2:2b(≈3GB) 선택. ③ 라이선스: Gemma 라이선스 확인 → 대체로 상업 이용 허용(조건 있음), 비상업 잡담용이면 걱정 없음. ④ 실행: ollama run gemma2:2b 한 줄로 바로 대화 시작."
+  },
+  "prompts": [
+    {
+      "id": "opensource-frontier-llms-p1",
+      "title": {
+        "ko": "모델 성능 빠른 테스트"
+      },
+      "template": {
+        "ko": "다음 세 가지를 순서대로 해줘:\n1) 다음 문장을 영어로 번역: [한국어 문장]\n2) 이 파이썬 코드의 버그를 찾아줘: [코드 붙여넣기]\n3) 아래 글을 3줄로 요약: [긴 글 붙여넣기]\n각 답변의 정확도를 내가 비교할 수 있게 명확하게 구분해서 답해줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "opensource-frontier-llms"
+      ]
+    },
+    {
+      "id": "opensource-frontier-llms-p2",
+      "title": {
+        "ko": "내 사양에 맞는 모델 추천받기(클로즈드 AI에게)"
+      },
+      "template": {
+        "ko": "내 컴퓨터 사양은 [GPU 모델명/VRAM GB, RAM GB]야. 주 용도는 [코딩/글쓰기/번역/에이전트 등]이야. 2026년 기준 Kimi K2, DeepSeek V4, Qwen 3, GLM-5 중에서 내가 LM Studio로 로컬 실행하기 좋은 모델과 정확한 양자화 버전(Q4/Q5 등)을 추천하고 이유를 알려줘."
+      },
+      "examples": [],
+      "tags": [
+        "eduverse",
+        "opensource-frontier-llms"
+      ]
+    }
+  ],
+  "concepts": [
+    "opensource",
+    "frontier",
+    "llms"
+  ],
+  "mission": {
+    "ko": "이번엔 용도를 바꿔서 골라보세요: \"저사양 노트북(8GB RAM, GPU 없음)으로, 코딩 아니고 그냥 빠른 잡담용 봇\"을 만든다면 어떤 모델을 고르고 왜 그런지, 위 4단계 순서(용도→하드웨어→라이선스→실행)로 직접 적어보세요."
+  },
+  "rubric": [
+    {
+      "criterion": {
+        "ko": "용도를 제일 먼저 정하고, 그다음에 크기를 골랐나요?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "내 하드웨어(RAM/VRAM)와 모델 크기를 실제로 비교했나요?"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "상업 이용 여부에 따라 라이선스를 확인할 생각을 했나요?"
+      },
+      "max": 5
+    }
+  ],
+  "difficulty": "advanced",
+  "tags": [
+    "Applied-AI",
+    "life"
+  ],
+  "estimatedMinutes": 30,
+  "source": {
+    "platform": "eduverse-ai.app",
+    "url": "https://eduverse-ai.app/learn?course=trends&node=eng_opensource_frontier_llms",
+    "capturedAt": "2026-07-12T01:32:15.342Z",
+    "captureTimeBasis": "observed",
+    "method": "api-capture",
+    "citation": "EduVerse verified lesson; claude-opus-4-8-authored; prompt claude-manual-ko-v1"
+  },
+  "updatedAt": "2026-07-02"
+}

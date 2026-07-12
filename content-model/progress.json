@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-12T01:14:03.769Z",
+  "updatedAt": "2026-07-12T01:36:36.721Z",
   "sourceOfTruth": {
     "manifest": "content-model/courses.json",
     "data": "content-model/data/**/*.module.json",
@@ -9,8 +9,8 @@
   },
   "totals": {
     "expected": 305,
-    "complete": 170,
-    "remaining": 135
+    "complete": 305,
+    "remaining": 0
   },
   "courses": {
     "ai-start": {
@@ -43,42 +43,33 @@
     },
     "ai-engineer": {
       "expected": 49,
-      "complete": 26,
-      "completedThrough": 26,
-      "status": "in_progress",
-      "lastModuleId": "ai-engineer/embedding-cosine-similarity",
-      "nextOrder": 27,
-      "nextTitle": null
+      "complete": 49,
+      "completedThrough": 49,
+      "status": "complete",
+      "lastModuleId": "ai-engineer/security-defense"
     },
     "automation": {
       "expected": 42,
-      "complete": 0,
-      "completedThrough": 0,
-      "status": "pending",
-      "nextOrder": 1,
-      "nextTitle": null
+      "complete": 42,
+      "completedThrough": 42,
+      "status": "complete",
+      "lastModuleId": "automation/capstone-ship"
     },
     "ai-finance": {
       "expected": 55,
-      "complete": 0,
-      "completedThrough": 0,
-      "status": "pending",
-      "nextOrder": 1,
-      "nextTitle": null
+      "complete": 55,
+      "completedThrough": 55,
+      "status": "complete",
+      "lastModuleId": "ai-finance/diversify-income-streams"
     },
     "ai-trends": {
       "expected": 15,
-      "complete": 0,
-      "completedThrough": 0,
-      "status": "pending",
-      "nextOrder": 1,
-      "nextTitle": null,
+      "complete": 15,
+      "completedThrough": 15,
+      "status": "complete",
+      "lastModuleId": "ai-trends/autonomous-loop",
       "rollingSnapshot": true
     }
   },
-  "resume": {
-    "course": "ai-engineer",
-    "nextOrder": 27,
-    "instruction": "라이브 코스 목록에서 27번 제목을 대조한 뒤 raw 저장부터 시작한다."
-  }
+  "resume": null
 }
