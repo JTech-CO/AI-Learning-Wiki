@@ -28,9 +28,10 @@
       "title": {
         "ko": "콘솔 에러 원인·해결 물어보기(가장 유용)"
       },
-      "text": {
+      "template": {
         "ko": "웹사이트에서 [내가 한 동작: 로그인 버튼 클릭]을 했더니 화면이 [증상: 아무 반응 없음]입니다. 브라우저 콘솔(F12)에 아래 빨간 에러가 떴어요. 이 에러가 무슨 뜻인지 초보자도 이해할 수 있게 설명하고, 개발자가 아닌 사용자 입장에서 시도해볼 수 있는 해결책과, 개발자에게 전달할 때 쓸 한 줄 요약을 함께 알려줘.\n에러 원문: [콘솔에서 복사한 빨간 에러 전체]"
       },
+      "examples": [],
       "tags": [
         "콘솔",
         "에러",
@@ -42,9 +43,10 @@
       "title": {
         "ko": "네트워크 상태코드 해석하기"
       },
-      "text": {
+      "template": {
         "ko": "브라우저 Network 탭에서 [요청 이름: /api/login] 요청의 Status Code가 [숫자: 403]으로 나왔습니다. 이 상태코드가 일반적으로 무슨 의미인지, 이 요청에서 흔한 원인 3가지, 그리고 사용자가 직접 확인해볼 수 있는 점검 순서를 알려줘."
       },
+      "examples": [],
       "tags": [
         "네트워크",
         "상태코드",
@@ -56,9 +58,10 @@
       "title": {
         "ko": "요소(HTML/CSS) 이해하기"
       },
-      "text": {
+      "template": {
         "ko": "브라우저 Elements 탭에서 어떤 요소를 선택했더니 아래 HTML과 CSS가 보입니다. 이 요소가 화면에서 무슨 역할을 하는지, class 이름은 무슨 뜻인지, 그리고 [바꾸고 싶은 것: 글자 색을 파랑으로]을 임시로 테스트하려면 Styles에서 어떤 값을 바꾸면 되는지 알려줘.\nHTML: [Elements에서 복사한 태그]\nCSS: [Styles 패널에서 복사한 값]"
       },
+      "examples": [],
       "tags": [
         "엘리먼트",
         "HTML",
@@ -70,9 +73,10 @@
       "title": {
         "ko": "DevTools로 문제 재현·기록하는 법 배우기"
       },
-      "text": {
+      "template": {
         "ko": "웹사이트 [사이트/기능]에서 [버그 증상]이 가끔 발생합니다. 브라우저 개발자도구(Console, Network, Elements)를 이용해 이 문제를 재현하고 근거를 수집하는 단계별 체크리스트를 만들어줘. 각 단계에서 어떤 탭을 보고 무엇을 캡처/복사해야 하는지 함께 알려줘."
       },
+      "examples": [],
       "tags": [
         "개발자도구",
         "재현",
@@ -123,6 +127,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-builder",
+    "capturedAt": "2026-07-08T20:28:48.174Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

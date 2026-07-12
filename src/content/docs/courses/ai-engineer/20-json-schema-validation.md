@@ -105,6 +105,8 @@ AI는 확률적으로 다음 글자를 예측할 뿐 '반드시 이 형식'을 �
 다음 Pydantic 모델로 LLM 응답을 검증하고 실패 시 에러를 되먹여 최대 3회 자동 재시도하는 파이썬 함수를. 구조화 출력(response_format/tool input_schema)을 우선 쓰고, 안 되면 정규식으로 첫 {부터 마지막 }까지 잘라 파싱하는 폴백도. 모델: [Pydantic BaseModel 코드] 사용 LLM: [OpenAI gpt-4o / Claude 중 택1]
 ```
 
+> 확인된 작성 예시 없음
+
 `검증` `재시도` `함수생성`
 
 ### 자연어 요구를 Pydantic 스키마로
@@ -112,6 +114,8 @@ AI는 확률적으로 다음 글자를 예측할 뿐 '반드시 이 형식'을 �
 ```text
 아래 추출 요구사항을 Pydantic v2 BaseModel로. 각 필드에 정확한 타입, 필수/선택 여부, Field 제약(gt·pattern·범위), 모델이 헷갈릴 필드엔 description을. 추출할 데이터: [인보이스에서 공급자명, 총액(양수), 통화 3자리 코드, 만기일 YYYY-MM-DD]
 ```
+
+> 확인된 작성 예시 없음
 
 `스키마` `pydantic`
 
@@ -121,6 +125,8 @@ AI는 확률적으로 다음 글자를 예측할 뿐 '반드시 이 형식'을 �
 내 수동 검증·재시도 코드를 Instructor 라이브러리(response_model=, max_retries=)로 리팩터링. 동작은 동일하게 유지하고 재시도 로그를 남기게. 현재 코드: [코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `instructor` `리팩터링`
 
 ### 실패 케이스 테스트 생성
@@ -128,6 +134,8 @@ AI는 확률적으로 다음 글자를 예측할 뿐 '반드시 이 형식'을 �
 ```text
 이 Pydantic 스키마에 대해 검증이 반드시 실패해야 하는 악성 LLM 응답 예시 6개(필드 누락·타입 오류·코드펜스 포함·값 범위 초과·잘못된 통화 코드·JSON 앞 설명문)를 만들고, 각각이 내 재시도 루프에서 통과되는지 확인하는 pytest 테스트를. 스키마: [모델]
 ```
+
+> 확인된 작성 예시 없음
 
 `테스트` `pytest` `실패케이스`
 
@@ -154,3 +162,7 @@ AI는 확률적으로 다음 글자를 예측할 뿐 '반드시 이 형식'을 �
 - [Structured Output](/concepts/structured-output/)
 - [Instructor](/concepts/instructor/)
 - [Defensive Parsing](/concepts/defensive-parsing/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

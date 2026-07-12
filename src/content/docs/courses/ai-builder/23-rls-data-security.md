@@ -107,6 +107,8 @@ rollback;
 너는 Supabase 보안 전문가야. 아래 테이블에 대해 로그인한 사용자가 '자기 데이터만' 읽고/쓰게 하는 RLS 정책을 SELECT, INSERT, UPDATE, DELETE 4개로 만들어줘. authenticated 롤 대상이고, 소유권 컬럼은 [user_id]야. enable row level security 문장도 포함하고, 각 정책 위에 한국어 주석을 달아줘. 테이블 정의: [CREATE TABLE 문 또는 컬럼 목록]
 ```
 
+> 확인된 작성 예시 없음
+
 `RLS` `정책 생성` `Supabase`
 
 ### 내 RLS 정책이 안전한지 감사
@@ -114,6 +116,8 @@ rollback;
 ```text
 아래는 내 Supabase 테이블의 RLS 정책들이야. 보안 허점을 찾아줘: (1) INSERT에 with check가 빠져 남의 user_id로 위조 가능한지 (2) UPDATE에 with check가 없어 수정 후 소유권이 바뀔 수 있는지 (3) using에 true나 과도한 조건이 있는지 (4) anon 롤에 실수로 권한이 열렸는지. 문제마다 위험도와 수정 SQL을 표로 정리해줘. [create policy 문들]
 ```
+
+> 확인된 작성 예시 없음
 
 `RLS` `보안 감사` `with-check`
 
@@ -123,6 +127,8 @@ rollback;
 아래 RLS 정책이 실제로 '남의 데이터를 못 본다'를 증명하는 테스트 SQL을 만들어줘. set_config로 request.jwt.claims의 sub를 특정 유저로 가장한 뒤, 그 유저가 (a) 자기 행만 보이는지 (b) 남의 행은 0건인지 (c) 남의 user_id로 insert가 거부되는지 확인하는 begin/rollback 블록으로. 테이블: [notes], 소유권 컬럼: [user_id]
 ```
 
+> 확인된 작성 예시 없음
+
 `RLS` `테스트` `set-config`
 
 ### RLS 켠 뒤 앱이 빈 화면일 때 진단
@@ -130,6 +136,8 @@ rollback;
 ```text
 Supabase에서 RLS를 켰더니 앱에서 데이터가 하나도 안 나와. 원인 후보를 체크리스트로 정리해줘: 정책이 아예 없는지, authenticated 대신 anon으로 요청하는지, auth.uid()가 null인지(로그인 안 됨), user_id가 안 채워졌는지. 각 후보를 확인하는 SQL이나 확인 방법도 함께 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `RLS` `디버깅` `auth-uid`
 
@@ -154,3 +162,7 @@ Supabase에서 RLS를 켰더니 앱에서 데이터가 하나도 안 나와. 원
 - [Auth Uid](/concepts/auth-uid/)
 - [Policy](/concepts/policy/)
 - [Security](/concepts/security/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

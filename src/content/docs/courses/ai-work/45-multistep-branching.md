@@ -72,6 +72,8 @@ Make 같은 노코드 도구는 "만약 ~이면 이 길, 아니면 저 길"을 R
 각 모듈의 이름과 핵심 설정값까지 구체적으로.
 ```
 
+> 확인된 작성 예시 없음
+
 `자동화` `설계` `순서도`
 
 ### 분기 조건(필터) 정확히 쓰기
@@ -84,6 +86,8 @@ Make의 Router 뒤 Filter 조건을 만들려고 해. 아래 상황에서 각 �
 경계 처리: [30만원은 승인 경로]
 ```
 
+> 확인된 작성 예시 없음
+
 `분기` `필터` `조건`
 
 ### 오류 처리·재시도 설계
@@ -91,6 +95,8 @@ Make의 Router 뒤 Filter 조건을 만들려고 해. 아래 상황에서 각 �
 ```text
 내 자동화에서 [모듈 이름, 예: Gmail 발송] 단계가 가끔 실패해. Make의 error handler로 '몇 번 재시도 후 그래도 실패하면 나에게 알림'을 넣고 싶어. Break/Resume/Ignore/Rollback 중 무엇을 골라야 하는지 이유와 함께, 재시도 횟수·간격은 어떻게 잡는 게 좋은지 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `오류 처리` `재시도`
 
@@ -100,6 +106,8 @@ Make의 Router 뒤 Filter 조건을 만들려고 해. 아래 상황에서 각 �
 아래는 내가 만든 자동화 흐름 설명이야. 논리적 허점(빠진 조건, 무한 반복 위험, 실패해도 알림 없는 구간, 두 경로에 다 걸리거나 아무 경로에도 안 걸리는 경우)이 있는지 점검하고, 고칠 점을 알려줘.
 [흐름 설명 붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `점검` `검증`
 
@@ -124,3 +132,7 @@ Make의 Router 뒤 Filter 조건을 만들려고 해. 아래 상황에서 각 �
 - [Filter](/concepts/filter/)
 - [Retry](/concepts/retry/)
 - [Error Handling](/concepts/error-handling/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-work) · 방식: authenticated-crawl</sub>

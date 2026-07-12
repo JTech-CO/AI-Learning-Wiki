@@ -116,6 +116,8 @@ CREATE INDEX idx_orders_user_time ON demo_orders (user_id, created_at DESC);
 나는 PostgreSQL을 쓰고 있어. 아래는 느린 쿼리와 EXPLAIN ANALYZE 결과야. (1) 왜 느린지 (2) 어느 컬럼에 인덱스를 걸어야 하는지 (3) 그 인덱스 생성 SQL을 알려줘. 쿼리: [SQL] / 결과: [EXPLAIN 결과]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `EXPLAIN` `진단`
 
 ### 인덱스 필요성 사전 판단
@@ -123,6 +125,8 @@ CREATE INDEX idx_orders_user_time ON demo_orders (user_id, created_at DESC);
 ```text
 내 테이블 스키마는 다음과 같아: [CREATE TABLE]. 이 앱에서 가장 자주 실행되는 조회는 [특정 user_id의 최근 주문 20개]야. 어느 컬럼(또는 복합 인덱스)에 인덱스를 걸면 좋을지, 걸면 안 되는 컬럼은 무엇인지 이유와 함께 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `인덱스` `설계`
 
@@ -132,6 +136,8 @@ CREATE INDEX idx_orders_user_time ON demo_orders (user_id, created_at DESC);
 PostgreSQL에서 WHERE [컬럼A] = ? AND [컬럼B] > ? ORDER BY [컬럼C] 형태 쿼리를 자주 써. 복합 인덱스를 만든다면 컬럼 순서를 어떻게 해야 하고 그 이유는 뭔지, DESC 정렬도 고려해서 CREATE INDEX 문으로 알려줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `복합 인덱스` `정렬`
 
 ### 불필요한 인덱스 정리
@@ -139,6 +145,8 @@ PostgreSQL에서 WHERE [컬럼A] = ? AND [컬럼B] > ? ORDER BY [컬럼C] 형태
 ```text
 내 PostgreSQL 테이블에 인덱스가 여러 개 있어: [인덱스 목록]. 쓰기 성능을 갉아먹는 중복·저효율 인덱스가 있는지 판단하고, 지워도 되는 것과 그 근거를 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `인덱스` `정리`
 
@@ -163,3 +171,7 @@ PostgreSQL에서 WHERE [컬럼A] = ? AND [컬럼B] > ? ORDER BY [컬럼C] 형태
 - [Explain Analyze](/concepts/explain-analyze/)
 - [Seq Scan](/concepts/seq-scan/)
 - [Cardinality](/concepts/cardinality/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

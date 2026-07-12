@@ -109,6 +109,8 @@ print(follow.content[0].text)  # "부산은 현재 흐리고 21도예요."
 나는 Anthropic Claude의 tool use를 처음 쓰는 개발자야. 아래 파이썬 함수를 모델에게 알려줄 tool 스키마(name, description, input_schema를 가진 JSON)로 변환해줘. description은 모델이 '언제 이 도구를 써야 하는지' 판단할 수 있게 구체적으로, 필수 인자는 required에. 함수: [파이썬 함수 코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `tool-use` `스키마` `함수 변환`
 
 ### 한 사이클 전체 코드 뼈대
@@ -116,6 +118,8 @@ print(follow.content[0].text)  # "부산은 현재 흐리고 21도예요."
 ```text
 Anthropic Python SDK로 tool use 한 사이클(스키마 정의 → 첫 호출 → tool_use 감지 → 함수 실행 → tool_result 반환 → 최종 답변)을 도는 최소 실행 코드를 처음부터 끝까지 짜줘. 도구는 get_weather(city) 하나, 모델은 claude-opus-4-8, 주석으로 각 단계를 한국어로. 실행하면 바로 답이 나오게.
 ```
+
+> 확인된 작성 예시 없음
 
 `tool-use` `코드` `뼈대`
 
@@ -125,6 +129,8 @@ Anthropic Python SDK로 tool use 한 사이클(스키마 정의 → 첫 호출 �
 Claude tool use 코드를 짰는데 최종 답변까지 안 가고 멈추거나 에러가 나. 아래 내 코드와 에러 메시지를 보고 무엇이 틀렸는지, 특히 tool_use_id 연결, assistant 메시지에 resp.content를 그대로 넣었는지, tool_result의 content 타입이 맞는지 짚어줘. 코드: [코드] 에러: [에러]
 ```
 
+> 확인된 작성 예시 없음
+
 `tool-use` `디버깅` `tool-use-id`
 
 ### 도구 여러 개 선택 테스트
@@ -132,6 +138,8 @@ Claude tool use 코드를 짰는데 최종 답변까지 안 가고 멈추거나 
 ```text
 내 tool 목록은 [도구1 설명], [도구2 설명]이야. 모델이 상황에 맞는 도구를 제대로 고르는지 확인하려면 어떤 테스트 질문 5개를 던져봐야 할까? 각 질문마다 기대되는 선택 도구와, 도구를 안 써도 되는 질문(순수 대화) 1개도 포함해줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `tool-use` `테스트` `도구 선택`
 
@@ -157,3 +165,7 @@ Claude tool use 코드를 짰는데 최종 답변까지 안 가고 멈추거나 
 - [Tool Result](/concepts/tool-result/)
 - [Agent Cycle](/concepts/agent-cycle/)
 - [Tool Use Id](/concepts/tool-use-id/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

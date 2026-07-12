@@ -122,6 +122,8 @@ resp = client.messages.create(
 ```
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트 캐싱` `cache_control` `문서 Q&A`
 
 ### 여러 예시(few-shot)를 캐시해 분류 작업 싸게 반복
@@ -137,6 +139,8 @@ system=[
 messages=[{"role": "user", "content": "분류할 새 문의: [내용]"}]
 ```
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트 캐싱` `few-shot` `분류`
 
@@ -160,6 +164,8 @@ resp = client.messages.create(
 ```
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트 캐싱` `ttl` `베타 헤더`
 
 ### 캐시 적중 여부 자동 점검
@@ -179,6 +185,8 @@ else:
     print("⚠️ 캐시 안 됨 — 문맥이 최소 토큰보다 짧음")
 ```
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트 캐싱` `usage` `검증`
 
@@ -205,3 +213,7 @@ else:
 - [Cache Hit](/concepts/cache-hit/)
 - [Ttl](/concepts/ttl/)
 - [Cost Optimization](/concepts/cost-optimization/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

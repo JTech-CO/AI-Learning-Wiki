@@ -76,6 +76,8 @@ body { background:#FFF8F0; font-family:sans-serif; }
 나는 [카페 메뉴 카드]를 만드는 초보야. 따뜻하고 깔끔한 느낌의 웹 색 팔레트를 추천해줘. 배경색, 카드색, 강조색, 글자색 4개를 각각 HEX 코드로 주고, 각 색을 CSS의 어떤 속성(background/color 등)에 쓰면 되는지 한 줄로. 한글 웹에 잘 어울리는 무료 글꼴도 1개.
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `색 팔레트` `글꼴`
 
 ### 내 CSS 코드 리뷰받기
@@ -83,6 +85,8 @@ body { background:#FFF8F0; font-family:sans-serif; }
 ```text
 아래는 내가 쓴 CSS야. 초보 눈높이로 (1)이상하거나 안 먹힐 부분 (2)더 깔끔해 보이게 할 수정 2가지를. 코드를 통째로 다시 쓰지 말고 바뀔 줄만 before/after로. [내 <style> 안 코드 붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `코드 리뷰` `CSS`
 
@@ -92,6 +96,8 @@ body { background:#FFF8F0; font-family:sans-serif; }
 CSS flex를 쓰는데 [카드들이 가로로 안 서고 세로로 쌓여] 있어. 내 HTML과 CSS는 아래와 같아. 무엇이 문제인지 초보도 알게 짚어주고, 고친 코드를. HTML: [붙여넣기] CSS: [붙여넣기]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `flex` `디버깅`
 
 ### 모바일에서도 안 깨지게
@@ -99,6 +105,8 @@ CSS flex를 쓰는데 [카드들이 가로로 안 서고 세로로 쌓여] 있�
 ```text
 내 카드 레이아웃이 휴대폰 좁은 화면에서 옆으로 삐져나와. flex-wrap이나 반응형으로 좁은 화면에선 세로로 쌓이게 하고 싶어. 아래 CSS에 추가할 최소한의 코드만. [CSS 붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `반응형` `모바일`
 
@@ -123,3 +131,7 @@ CSS flex를 쓰는데 [카드들이 가로로 안 서고 세로로 쌓여] 있�
 - [Flexbox](/concepts/flexbox/)
 - [Padding Margin](/concepts/padding-margin/)
 - [Layout](/concepts/layout/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

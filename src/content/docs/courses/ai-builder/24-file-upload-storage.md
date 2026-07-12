@@ -84,6 +84,8 @@ const { data } = supabase.storage.from('avatars').getPublicUrl(path);
 나는 Supabase Storage를 처음 써. [avatars]라는 [Public] 버킷에 사용자가 고른 이미지를 업로드하고, 업로드가 끝나면 그 이미지를 화면에 바로 보여주는 코드를 [React / 순수 자바스크립트] 기준으로 만들어줘. 파일명 충돌을 막는 방법과 각 줄 주석도 함께.
 ```
 
+> 확인된 작성 예시 없음
+
 `Storage` `업로드` `코드`
 
 ### Storage 접근 정책(RLS) SQL 받기
@@ -91,6 +93,8 @@ const { data } = supabase.storage.from('avatars').getPublicUrl(path);
 ```text
 Supabase Storage의 [avatars] 버킷에 대해 다음 규칙의 RLS 정책 SQL을 만들어줘: 1) 로그인한 사용자는 자기 user id 폴더 안에만 업로드 가능 2) 조회는 누구나 가능(공개). storage.foldername 함수를 사용하고, 대시보드 SQL Editor에 붙여넣을 수 있게 완성된 SQL로.
 ```
+
+> 확인된 작성 예시 없음
 
 `Storage` `RLS` `SQL`
 
@@ -100,6 +104,8 @@ Supabase Storage의 [avatars] 버킷에 대해 다음 규칙의 RLS 정책 SQL�
 Supabase의 [contracts]라는 Private 버킷에 있는 [user123/계약서.pdf] 파일을, 로그인한 본인에게만 [60]초 동안 열 수 있는 임시 링크(signed URL)로 보여주는 코드를 만들어줘. 만료됐을 때의 처리도 함께.
 ```
 
+> 확인된 작성 예시 없음
+
 `Storage` `서명 URL` `Private`
 
 ### 업로드 오류 진단
@@ -107,6 +113,8 @@ Supabase의 [contracts]라는 Private 버킷에 있는 [user123/계약서.pdf] �
 ```text
 Supabase Storage에 파일을 업로드하는데 [에러 메시지] 오류가 나. 버킷 이름은 [avatars], Public 여부는 [ON/OFF], 로그인 상태는 [로그인함/익명]이야. 원인 후보와 확인 순서를 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `Storage` `오류` `디버깅`
 
@@ -131,3 +139,7 @@ Supabase Storage에 파일을 업로드하는데 [에러 메시지] 오류가 �
 - [Bucket](/concepts/bucket/)
 - [Public Private](/concepts/public-private/)
 - [Signed Url](/concepts/signed-url/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

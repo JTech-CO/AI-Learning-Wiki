@@ -75,6 +75,8 @@ serve(async (req) => {
 Supabase Edge Function(Deno, TypeScript)을 작성해줘. 목적: [무엇을 하는 함수인지, 예: 사용자 질문을 받아 OpenAI에 물어보고 답만 반환]. 요구사항: (1)비밀 키는 코드에 넣지 말고 Deno.env.get("[환경변수명]")으로 읽기 (2)CORS 헤더 포함해 브라우저에서 호출 가능하게 (3)잘못된 입력은 400으로 거부 (4)외부 API 응답에서 [필요한 필드]만 골라 JSON으로 반환. 전체 코드와 배포 명령어까지.
 ```
 
+> 확인된 작성 예시 없음
+
 `Edge Function` `코드 생성` `Deno`
 
 ### 키 노출 위험 점검
@@ -82,6 +84,8 @@ Supabase Edge Function(Deno, TypeScript)을 작성해줘. 목적: [무엇을 하
 ```text
 내 프론트엔드 코드를 붙여넣을게. 브라우저에 노출되면 안 되는 비밀 키/시크릿이 하드코딩돼 있는지 찾아주고, 각각을 Supabase Edge Function으로 옮기는 방법을 우선순위 순으로. 코드: [붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `보안` `키 노출` `점검`
 
@@ -91,6 +95,8 @@ Supabase Edge Function(Deno, TypeScript)을 작성해줘. 목적: [무엇을 하
 Supabase JS 클라이언트로 [함수명] Edge Function을 호출하는 프론트엔드 코드를. body로 [보낼 데이터]를 넘기고, 응답의 [필드]를 받아 화면에 표시. 로딩 상태와 에러 처리도. 프레임워크는 [React/바닐라JS 등].
 ```
 
+> 확인된 작성 예시 없음
+
 `함수 호출` `프론트엔드` `invoke`
 
 ### 에러 디버깅
@@ -98,6 +104,8 @@ Supabase JS 클라이언트로 [함수명] Edge Function을 호출하는 프론�
 ```text
 Supabase Edge Function을 호출했더니 다음 에러가 났어: [에러 메시지]. Logs에 찍힌 내용은: [로그]. 원인과 수정 방법을 단계별로. CORS, 환경변수 누락, 인증 문제 중 무엇인지도.
 ```
+
+> 확인된 작성 예시 없음
 
 `디버깅` `에러` `CORS`
 
@@ -122,3 +130,7 @@ Supabase Edge Function을 호출했더니 다음 에러가 났어: [에러 메�
 - [Secrets](/concepts/secrets/)
 - [Api Key Security](/concepts/api-key-security/)
 - [Deno](/concepts/deno/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

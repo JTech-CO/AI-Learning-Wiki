@@ -111,6 +111,8 @@ print(msg.content[0].text)
 print(msg.usage)  # 토큰 수 확인
 ```
 
+> 확인된 작성 예시 없음
+
 `코드` `기본 호출` `복붙`
 
 ### 역할 지정 (system 프롬프트로 캐릭터 부여)
@@ -119,6 +121,8 @@ print(msg.usage)  # 토큰 수 확인
 msg = client.messages.create(model="claude-opus-4-8", max_tokens=500, system="너는 [친절한 초등 수학 선생님]이다. 항상 [쉬운 말과 예시]로 답한다.", messages=[{"role": "user", "content": "[학생 질문]"}])
 print(msg.content[0].text)
 ```
+
+> 확인된 작성 예시 없음
 
 `코드` `역할 지정` `system`
 
@@ -132,6 +136,8 @@ for q in questions:
     print("A:", msg.content[0].text)
     print("---")
 ```
+
+> 확인된 작성 예시 없음
 
 `코드` `반복문` `자동화`
 
@@ -158,3 +164,7 @@ for q in questions:
 - [Token Usage](/concepts/token-usage/)
 - [Pricing](/concepts/pricing/)
 - [Model Id](/concepts/model-id/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

@@ -28,9 +28,10 @@
       "title": {
         "ko": "주간 데이터 요약(가장 먼저)"
       },
-      "text": {
+      "template": {
         "ko": "너는 데이터 분석 비서야. 아래는 우리 팀 주간 지표 표야(열: 날짜/지표명/값/전주대비). [summary 시트 표 붙여넣기] 다음 형식으로 한국어 요약: 1)경영진용 핵심 3줄(가장 중요한 변화만, 숫자 포함) 2)지표별 상세 5줄(증감 원인 추정 포함, 확실치 않으면 '추정' 표기) 3)다음 주 주의 지표 1개. 과장 없이 표에 있는 숫자만 사용."
       },
+      "examples": [],
       "tags": [
         "요약",
         "데이터",
@@ -42,9 +43,10 @@
       "title": {
         "ko": "슬라이드 개요 생성"
       },
-      "text": {
+      "template": {
         "ko": "아래 주간 요약을 구글 슬라이드 5장 개요로. 각 장마다 [제목]과 불릿 3개. [3단계 AI 요약 붙여넣기] 1장 표지, 2장 핵심 요약, 3장 지표 상세, 4장 이슈/리스크, 5장 다음 주 액션. 불릿은 각 20자 이내."
       },
+      "examples": [],
       "tags": [
         "슬라이드",
         "출력형식"
@@ -55,9 +57,10 @@
       "title": {
         "ko": "상사 보고 이메일 초안"
       },
-      "text": {
+      "template": {
         "ko": "아래 주간 요약을 팀장에게 보낼 이메일로 정중하게. [3단계 AI 요약 붙여넣기] 제목은 '[주간보고] [주차] — [핵심성과]' 형식. 본문은 인사→핵심 3줄→첨부(슬라이드) 안내→마무리, 총 4문단 이내. 군더더기 없이."
       },
+      "examples": [],
       "tags": [
         "이메일",
         "보고",
@@ -69,9 +72,10 @@
       "title": {
         "ko": "Apps Script 디버깅 도우미"
       },
-      "text": {
+      "template": {
         "ko": "구글 Apps Script로 스프레드시트 summary 범위를 읽어 Gmail 초안을 만들려는데 에러가 나. [에러 메시지] [내 코드] 원인과 수정 코드를 한국어 주석과 함께. 초보라 한 줄씩 설명 부탁."
       },
+      "examples": [],
       "tags": [
         "apps-script",
         "디버깅"
@@ -121,6 +125,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-work",
+    "capturedAt": "2026-07-08T19:59:35.291Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

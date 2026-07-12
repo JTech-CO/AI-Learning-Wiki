@@ -128,6 +128,8 @@ print(data.get("attendance", "정보 없음"))  # 정보 없음
 아래 주제를 요약해서 반드시 유효한 JSON '하나'만 출력해줘. 코드블록 표시(백틱)나 설명 문장은 절대 넣지 말고 { 로 시작해 } 로 끝나야 해. 형식: {"title": "제목", "summary": "한 문장 요약", "tags": ["태그1", "태그2"]}. 주제: [요약할 내용]
 ```
 
+> 확인된 작성 예시 없음
+
 > 💡 실습 재료를 만드는 가장 유용한 템플릿. 앞뒤 설명 없이 순수 JSON만 받아오면 loads로 바로 풀 수 있다.
 
 `JSON` `출력형식` `LLM 응답`
@@ -138,6 +140,8 @@ print(data.get("attendance", "정보 없음"))  # 정보 없음
 파이썬 초보야. 아래 코드가 [에러 메시지] 에러를 내는데 json.loads 관점에서 원인이 뭔지 한 문장으로 알려주고 고친 코드를. 코드: [내 코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `JSON` `디버깅` `json.loads`
 
 ### 중첩 구조에서 값 꺼내는 코드 만들기
@@ -146,6 +150,8 @@ print(data.get("attendance", "정보 없음"))  # 정보 없음
 아래 JSON 문자열에서 [원하는 값 설명, 예: 첫 번째 문제의 정답]을 꺼내는 파이썬 코드를 data.get을 써서 키가 없어도 안 죽게. JSON: [JSON 문자열]
 ```
 
+> 확인된 작성 예시 없음
+
 `JSON` `중첩 JSON` `dict.get`
 
 ### 이 JSON 구조 그림으로 설명해줘
@@ -153,6 +159,8 @@ print(data.get("attendance", "정보 없음"))  # 정보 없음
 ```text
 아래 JSON의 구조를 초보자용으로 들여쓰기 트리 그림으로 그려주고, 각 값을 파이썬에서 꺼낼 때 써야 할 대괄호 경로(예: data["a"][0])를 옆에 붙여줘. JSON: [JSON]
 ```
+
+> 확인된 작성 예시 없음
 
 `JSON` `구조 이해` `학습`
 
@@ -178,3 +186,7 @@ print(data.get("attendance", "정보 없음"))  # 정보 없음
 - [Llm Response Parsing](/concepts/llm-response-parsing/)
 - [Nested Json](/concepts/nested-json/)
 - [Dict Get](/concepts/dict-get/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

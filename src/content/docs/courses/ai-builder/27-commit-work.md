@@ -91,6 +91,8 @@ $ git log --oneline
 나는 Git 초보야. 방금 한 작업은 다음과 같아: [무엇을 바꿨는지 편하게 설명]. 이걸 한 줄짜리 좋은 한국어 커밋 메시지로 만들어줘. 현재형 동사로 시작하고, 50자 이내로, '무엇을'이 명확하게. 후보 3개를 제시해줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `커밋 메시지` `다듬기` `git`
 
 ### 내 git status 해석해줘
@@ -98,6 +100,8 @@ $ git log --oneline
 ```text
 아래는 내 'git status' 출력이야. 각 파일이 어떤 상태인지(추적 안 됨/스테이징됨/수정됨) 쉽게 설명하고, 지금 커밋하려면 어떤 명령을 순서대로 쳐야 하는지 알려줘. [git status 출력]
 ```
+
+> 확인된 작성 예시 없음
 
 `git status` `해석` `git`
 
@@ -107,6 +111,8 @@ $ git log --oneline
 나는 Git 초보야. 방금 이런 실수를 했어: [파일을 잘못 수정함 / 커밋 메시지를 잘못 씀 / add를 취소하고 싶음]. 아직 push는 안 했어. 이걸 되돌리는 가장 안전한 명령을 한 단계씩, 각 명령이 무슨 일을 하는지 한 줄로 설명해줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `되돌리기` `복구` `git`
 
 ### 오늘 한 작업을 커밋 단위로 쪼개줘
@@ -114,6 +120,8 @@ $ git log --oneline
 ```text
 오늘 내가 한 작업들은 다음과 같아: [작업들 나열]. 이걸 의미 있는 커밋 여러 개로 어떻게 나누면 좋을지, 각 커밋의 메시지와 'git add' 대상 파일 예시까지 제안해줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `커밋 단위` `쪼개기` `git`
 
@@ -138,3 +146,7 @@ $ git log --oneline
 - [Staging](/concepts/staging/)
 - [Git Add](/concepts/git-add/)
 - [Version Control](/concepts/version-control/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

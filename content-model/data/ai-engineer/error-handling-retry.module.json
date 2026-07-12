@@ -2,12 +2,22 @@
   "id": "ai-engineer/error-handling-retry",
   "course": "ai-engineer",
   "order": 14,
-  "title": { "ko": "오류 처리와 재시도 전략" },
-  "summary": { "ko": "rate limit·타임아웃·5xx 오류를 try/except로 잡고 지수 백오프 재시도를 적용해, 새벽에 혼자 돌아도 안 죽는 견고한 API 호출 함수를 직접 만든다." },
+  "title": {
+    "ko": "오류 처리와 재시도 전략"
+  },
+  "summary": {
+    "ko": "rate limit·타임아웃·5xx 오류를 try/except로 잡고 지수 백오프 재시도를 적용해, 새벽에 혼자 돌아도 안 죽는 견고한 API 호출 함수를 직접 만든다."
+  },
   "objectives": [
-    { "ko": "일시적 실패(429·타임아웃·5xx)와 영구적 실패(400·401·404)를 구분해 일시적 실패만 재시도한다" },
-    { "ko": "지수 백오프(1→2→4초)에 지터와 Retry-After 존중을 더해 실전에서 안 죽는 호출 함수를 만든다" },
-    { "ko": "모든 호출에 timeout을 명시하고 max_retries·대기 상한으로 무한 루프를 막는다" }
+    {
+      "ko": "일시적 실패(429·타임아웃·5xx)와 영구적 실패(400·401·404)를 구분해 일시적 실패만 재시도한다"
+    },
+    {
+      "ko": "지수 백오프(1→2→4초)에 지터와 Retry-After 존중을 더해 실전에서 안 죽는 호출 함수를 만든다"
+    },
+    {
+      "ko": "모든 호출에 timeout을 명시하고 max_retries·대기 상한으로 무한 루프를 막는다"
+    }
   ],
   "body": {
     "ko": "## 핵심 개념\n\n외부 API 호출은 '성공 아니면 실패' 두 가지가 아니에요. **'지금은 안 되지만 잠시 후엔 될 수도 있는' 일시적 실패**(429 rate limit, 408/타임아웃, 500·502·503 같은 5xx)와 **'몇 번을 다시 해도 안 되는' 영구적 실패**(400 잘못된 요청, 401 인증 실패, 404 없음)로 나뉩니다. 핵심은 이 둘을 구분해서 **일시적 실패만 재시도**하는 것. 재시도할 때 곧바로 다시 때리면 서버를 더 밀어붙여 상황을 악화시키므로, 대기 시간을 1초→2초→4초처럼 점점 늘리는 **지수 백오프(exponential backoff)**를 씁니다. 여기에 여러 클라이언트가 동시에 같은 리듬으로 재시도해 서버를 두들기는 걸 막는 **지터(jitter, 무작위 흔들기)**를 더하면 완성. 은행 앱이 \"잠시 후 다시 시도해주세요\"를 점점 길게 띄우는 것과 똑같은 원리예요.\n\n### 왜 이게 될까?\n\n네트워크 오류는 사람으로 치면 \"지금 잠깐 통화 중\"인 것. 끊자마자 또 걸면 계속 통화 중이지만, 살짝 뜸 들이고 다시 걸면 대부분 연결돼요. 그래서 실패를 무조건 죽음으로 보지 않고 **\"일시적 실패면 잠깐 기다렸다 다시\"** 라는 규칙 하나만 코드에 넣어주면, 밤새 돌아가도 안 죽는 스크립트가 됩니다.\n\n## 👀 따라하기 예시 — 크롤링 스크립트가 외부 API를 1000번 호출, 250번째에서 429\n\n**① 오류를 두 종류로 나누기** 429, 500, 502, 503, 504, Timeout, ConnectionError → \"일시적\"(재시도 O) / 400, 401, 403, 404 → \"영구적\"(재시도 X, 즉시 raise).\n> 💡 인증 실패(401)는 100번 다시 불러도 여전히 401이니, 여기 시간 쓰면 손해.\n\n**② timeout부터 박아넣기** `requests.get(url, timeout=(10, 30))` # 연결 10초, 응답 30초.\n> 💡 timeout이 없으면 서버가 답을 영영 안 줄 때 스크립트가 그냥 멈춰버려요. 이게 진짜 사고의 8할.\n\n**③ 지수 백오프 루프 작성**\n\n```python\nfor attempt in range(5):\n    try:\n        r = requests.get(url, timeout=(10, 30))\n        if r.status_code in (429, 500, 502, 503, 504):\n            raise TransientError(r.status_code)\n        r.raise_for_status()\n        return r.json()\n    except (TransientError, requests.exceptions.Timeout):\n        if attempt == 4:\n            raise\n        wait = min(1 * (2 ** attempt), 60) + random.uniform(0, 1)\n        time.sleep(wait)\n```\n> 💡 1→2→4→8→16초로 점점 늘리면(+지터로 살짝 흔들면) 서버를 덜 밀어붙이면서도 회복할 시간을 벌어줘요.\n\n**④ 강제로 오류 내는 테스트 URL로 검증** `httpstat.us/503` 호출 → 로그 \"attempt 0, 503, 1.3초 대기\" → \"attempt 1, 503, 2.7초 대기\" → … 5회 후 \"최종 실패, raise\".\n> 💡 눈으로 대기 시간이 실제로 늘어나는 걸 봐야 \"될 것 같다\"가 아니라 \"된다\"를 확인한 거예요. 아하 포인트!\n\n좋은 결과의 기준: (1) timeout이 모든 호출에 명시돼 있다 (2) 재시도 간격이 1, 2, 4, 8…처럼 점점 늘어난다 (3) 재시도 횟수·대기 시간에 상한(max_retries, max_wait)이 걸려있어 무한루프가 안 된다.\n\n## 단계별 따라하기\n\n1. **실패의 종류를 종이에 3칸으로 나눠 적기** — 내가 부를 API 문서에서 오류 코드 표를 찾아 '재시도하면 될 것(일시적)' / '재시도 무의미(영구적)' / '애매함' 세 칸으로 분류. 이 표가 코드의 설계도. (일시적: 429, 408, 500, 502, 503, 504, ConnectionError·Timeout / 영구적: 400, 401, 403, 404, 422 / 애매: 409(중복)는 대개 재시도 무의미)\n2. **try/except로 '일단 안 죽게' 감싸기** — 호출 코드를 try 블록에 넣고 requests의 Timeout·ConnectionError·HTTPError를 except로 잡음. 호출에는 반드시 `timeout=(연결10초, 응답30초)`를 명시해 무한 대기를 원천 차단.\n3. **지수 백오프 재시도 루프 만들기** — `for attempt in range(max_retries):` 안에서 호출하고, 일시적 실패면 `wait = base * (2 ** attempt)` 만큼 `time.sleep` 후 continue, 영구적 실패면 즉시 raise, 성공이면 return. 마지막 시도까지 실패하면 최종 예외를 던짐. (1, 2, 4, 8, 16초)\n4. **지터 추가하고 Retry-After 존중하기** — 대기식에 `random.uniform(0, wait*0.5)`를 더해 지터를 넣음. 응답에 `Retry-After` 헤더가 있으면 내 계산값 대신 그 값을 우선 사용(서버가 알려준 정답).\n5. **상한선(안전장치) 걸기** — 무한 재시도·무한 대기를 막기 위해 `max_retries`(예: 5회)와 `max_wait`(예: 60초)로 cap. `wait = min(계산값, 60)`으로 대기 상한을 두고 전체 시도 횟수도 반드시 유한하게.\n6. **일부러 실패시켜 검증하기** — httpstat.us 같은 테스트 URL로 429·503·타임아웃을 강제로 만들어 재시도 로그(몇 초 대기 후 몇 번째 재시도인지)가 찍히는지 눈으로 확인. print로 attempt와 wait를 매번 출력하면 백오프가 실제로 늘어나는지 보임.\n\n## 흔한 실수 → 교정\n\n- ✗ 모든 오류를 무조건 재시도(401 인증 실패, 404 없음까지 5번씩 반복) → **재시도할 오류를 화이트리스트로 명시.** 429·408·5xx·네트워크 예외만 재시도하고, 4xx 중 그 외(400·401·403·404·422)는 즉시 raise. 잘못된 요청은 100번 보내도 잘못된 요청.\n- ✗ 재시도 사이 대기 없이(또는 고정 1초로) 곧바로 다시 때려 서버를 더 밀어붙임 → **지수 백오프를 씀(1→2→4→8초).** 여러 클라이언트가 동시에 몰리는 걸 막으려면 지터도 추가. 서버가 Retry-After를 주면 무조건 그 값을 우선.\n- ✗ timeout을 지정하지 않아 서버가 응답을 안 주면 스크립트가 영원히 멈춤 → **모든 호출에 timeout을 반드시 명시(예: 연결10초·응답30초).** 재시도 횟수·총 대기 시간에도 상한(max_retries, max_wait 60초)을 걸어 무한 루프를 원천 차단.\n\n## 도구\n\n- 🛠 **Python requests** (requests.readthedocs.io) — HTTP 호출·timeout·예외 처리.\n- 🛠 **tenacity** (tenacity.readthedocs.io) — 재시도·백오프·지터를 데코레이터로 자동화하는 라이브러리.\n- 🛠 **httpstat.us** (httpstat.us) — 원하는 상태코드(429·503 등)를 강제로 돌려주는 오류 테스트용 URL.\n- 🛠 **urllib3 Retry** (urllib3.readthedocs.io) — requests 세션에 재시도를 어댑터 레벨로 붙이는 표준 도구."
@@ -15,38 +25,116 @@
   "prompts": [
     {
       "id": "p14e-robust-func",
-      "title": { "ko": "안 죽는 API 호출 함수 생성 (가장 유용)" },
-      "text": { "ko": "Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘. 요구사항: (1) 429·408·5xx(500,502,503,504)와 Timeout·ConnectionError만 재시도하고 400·401·404는 즉시 예외 (2) 지수 백오프 base=1초, 2의 거듭제곱, max_retries=5 (3) random 지터 추가 (4) Retry-After 헤더가 있으면 우선 사용 (5) 대기 상한 60초 (6) 매 시도마다 attempt·상태코드·대기시간을 로그로. 주석을 한국어로." },
-      "tags": ["오류 처리", "재시도", "지수 백오프", "함수"]
+      "title": {
+        "ko": "안 죽는 API 호출 함수 생성 (가장 유용)"
+      },
+      "template": {
+        "ko": "Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘. 요구사항: (1) 429·408·5xx(500,502,503,504)와 Timeout·ConnectionError만 재시도하고 400·401·404는 즉시 예외 (2) 지수 백오프 base=1초, 2의 거듭제곱, max_retries=5 (3) random 지터 추가 (4) Retry-After 헤더가 있으면 우선 사용 (5) 대기 상한 60초 (6) 매 시도마다 attempt·상태코드·대기시간을 로그로. 주석을 한국어로."
+      },
+      "examples": [],
+      "tags": [
+        "오류 처리",
+        "재시도",
+        "지수 백오프",
+        "함수"
+      ]
     },
     {
       "id": "p14e-refactor",
-      "title": { "ko": "내 기존 코드 견고하게 리팩터링" },
-      "text": { "ko": "아래 API 호출 코드를 재시도·타임아웃 없이 그냥 한 번 호출하는 형태야. 지수 백오프 재시도, timeout 명시, 일시적/영구적 오류 구분을 넣어 견고하게 고쳐줘. 원래 로직은 유지하고 바뀐 부분을 주석으로. [내 코드]" },
-      "tags": ["리팩터링", "재시도", "타임아웃"]
+      "title": {
+        "ko": "내 기존 코드 견고하게 리팩터링"
+      },
+      "template": {
+        "ko": "아래 API 호출 코드를 재시도·타임아웃 없이 그냥 한 번 호출하는 형태야. 지수 백오프 재시도, timeout 명시, 일시적/영구적 오류 구분을 넣어 견고하게 고쳐줘. 원래 로직은 유지하고 바뀐 부분을 주석으로. [내 코드]"
+      },
+      "examples": [],
+      "tags": [
+        "리팩터링",
+        "재시도",
+        "타임아웃"
+      ]
     },
     {
       "id": "p14e-error-table",
-      "title": { "ko": "오류 코드 분류표 만들기" },
-      "text": { "ko": "[API 이름]의 공식 오류 응답 코드를 조사해서 '재시도 가능(일시적)' / '재시도 불가(영구적)' / '주의 필요' 3개 그룹으로 표를. 각 코드마다 의미와 권장 대응(재시도 여부·대기 방식)을 한 줄로." },
-      "tags": ["오류 처리", "분류", "표"]
+      "title": {
+        "ko": "오류 코드 분류표 만들기"
+      },
+      "template": {
+        "ko": "[API 이름]의 공식 오류 응답 코드를 조사해서 '재시도 가능(일시적)' / '재시도 불가(영구적)' / '주의 필요' 3개 그룹으로 표를. 각 코드마다 의미와 권장 대응(재시도 여부·대기 방식)을 한 줄로."
+      },
+      "examples": [],
+      "tags": [
+        "오류 처리",
+        "분류",
+        "표"
+      ]
     },
     {
       "id": "p14e-test-scenario",
-      "title": { "ko": "재시도 로직 테스트 시나리오" },
-      "text": { "ko": "방금 만든 재시도 함수를 검증할 테스트 코드를. httpstat.us 또는 mock을 써서 (1) 503 3번 후 성공 (2) 429 + Retry-After 헤더 (3) 타임아웃 (4) 400 즉시 실패 (5) max_retries 초과 최종 실패 — 5가지 시나리오를 각각 테스트하고 로그를." },
-      "tags": ["테스트", "재시도", "검증"]
+      "title": {
+        "ko": "재시도 로직 테스트 시나리오"
+      },
+      "template": {
+        "ko": "방금 만든 재시도 함수를 검증할 테스트 코드를. httpstat.us 또는 mock을 써서 (1) 503 3번 후 성공 (2) 429 + Retry-After 헤더 (3) 타임아웃 (4) 400 즉시 실패 (5) max_retries 초과 최종 실패 — 5가지 시나리오를 각각 테스트하고 로그를."
+      },
+      "examples": [],
+      "tags": [
+        "테스트",
+        "재시도",
+        "검증"
+      ]
     }
   ],
-  "mission": { "ko": "✍️ 이제 당신 차례! 아까 만든 재시도 함수를 \"결제 API 호출\"에 적용해보세요. 단, 결제는 특성상 409(중복 요청)가 오면 절대 재시도하면 안 됩니다 — 왜 그런지 먼저 한 문장으로 적고, 그 규칙을 화이트리스트에 반영해 코드를 고쳐보세요." },
+  "mission": {
+    "ko": "✍️ 이제 당신 차례! 아까 만든 재시도 함수를 \"결제 API 호출\"에 적용해보세요. 단, 결제는 특성상 409(중복 요청)가 오면 절대 재시도하면 안 됩니다 — 왜 그런지 먼저 한 문장으로 적고, 그 규칙을 화이트리스트에 반영해 코드를 고쳐보세요."
+  },
   "rubric": [
-    { "criterion": { "ko": "내 코드에서 409는 재시도 목록에 없고 즉시 실패 처리되는가" }, "max": 5 },
-    { "criterion": { "ko": "모든 API 호출에 timeout이 빠짐없이 걸려있는가" }, "max": 5 },
-    { "criterion": { "ko": "재시도 횟수와 대기 시간 둘 다 상한이 있어 최악의 경우에도 스크립트가 유한 시간 안에 끝나는가" }, "max": 5 }
+    {
+      "criterion": {
+        "ko": "내 코드에서 409는 재시도 목록에 없고 즉시 실패 처리되는가"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "모든 API 호출에 timeout이 빠짐없이 걸려있는가"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "재시도 횟수와 대기 시간 둘 다 상한이 있어 최악의 경우에도 스크립트가 유한 시간 안에 끝나는가"
+      },
+      "max": 5
+    }
   ],
   "difficulty": "intermediate",
-  "tags": ["오류 처리", "재시도", "지수 백오프", "지터", "타임아웃", "rate limit", "Retry-After", "견고성"],
+  "tags": [
+    "오류 처리",
+    "재시도",
+    "지수 백오프",
+    "지터",
+    "타임아웃",
+    "rate limit",
+    "Retry-After",
+    "견고성"
+  ],
   "estimatedMinutes": 30,
-  "concepts": ["error-handling", "retry", "exponential-backoff", "jitter", "rate-limit", "timeout", "retry-after", "resilience"],
-  "source": { "platform": "eduverse-ai.app", "method": "authenticated-crawl" }
+  "concepts": [
+    "error-handling",
+    "retry",
+    "exponential-backoff",
+    "jitter",
+    "rate-limit",
+    "timeout",
+    "retry-after",
+    "resilience"
+  ],
+  "source": {
+    "platform": "eduverse-ai.app",
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-engineer",
+    "capturedAt": "2026-07-09T09:16:40.087Z",
+    "captureTimeBasis": "file-mtime-estimate"
+  }
 }

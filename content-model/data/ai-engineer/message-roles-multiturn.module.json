@@ -28,9 +28,10 @@
       "title": {
         "ko": "멀티턴 대화 배열 만들기(가장 유용)"
       },
-      "text": {
+      "template": {
         "ko": "아래 상황으로 LLM API에 보낼 messages 배열을 JSON으로 만들어줘. system 1개 + user/assistant가 번갈아 3턴. 각 role의 역할을 주석으로 짧게.\n- 앱 종류: [여행 일정 도우미]\n- AI 성격/규칙: [존댓말, 항상 예산을 먼저 물어봄]\n- 사용자 첫 질문: [질문]"
       },
+      "examples": [],
       "tags": [
         "프롬프트",
         "messages 배열",
@@ -42,9 +43,10 @@
       "title": {
         "ko": "내 배열 검토받기"
       },
-      "text": {
+      "template": {
         "ko": "내가 만든 messages 배열이야. role 순서나 구조에 문제가 있는지, 멀티턴 맥락이 제대로 이어지는지 점검하고 고칠 점을 알려줘.\n[내 JSON 배열]"
       },
+      "examples": [],
       "tags": [
         "프롬프트",
         "점검"
@@ -55,9 +57,10 @@
       "title": {
         "ko": "system 프롬프트 3버전 비교"
       },
-      "text": {
+      "template": {
         "ko": "[앱 목적]을 위한 챗봇의 system 프롬프트를 성격이 뚜렷이 다른 3가지 버전으로(예: 엄격한/친근한/유머러스한) 만들어줘. 각 버전이 같은 사용자 질문 \"[질문]\"에 어떻게 답할지 예시 답변도 하나씩."
       },
+      "examples": [],
       "tags": [
         "프롬프트",
         "system 프롬프트",
@@ -69,9 +72,10 @@
       "title": {
         "ko": "긴 대화 요약 압축"
       },
-      "text": {
+      "template": {
         "ko": "아래는 길어진 messages 배열이야. 토큰을 아끼기 위해 오래된 앞부분을 \"핵심 맥락 한두 줄\"로 요약해서 system 다음에 넣을 요약 메시지를 만들어줘. 최근 6개 메시지는 그대로.\n[긴 배열]"
       },
+      "examples": [],
       "tags": [
         "프롬프트",
         "요약",
@@ -122,6 +126,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-engineer",
+    "capturedAt": "2026-07-09T09:10:44.066Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

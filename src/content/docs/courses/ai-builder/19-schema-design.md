@@ -73,6 +73,8 @@ Table orders { id bigint [pk] member_id bigint [ref: > members.id] }
 나는 [서비스 한 줄 설명] 서비스를 만들고 있어. 등장하는 주요 개념은 [명사들 나열]이야. 이걸 PostgreSQL 관계형 스키마로 설계해줘. 각 테이블마다 컬럼·데이터 타입·기본키·외래키를 표로 정리하고, 다대다 관계는 중간 테이블로 풀어줘. 마지막에 왜 그렇게 나눴는지 1줄씩.
 ```
 
+> 확인된 작성 예시 없음
+
 `스키마` `초안` `정규화`
 
 ### 내 설계 정규화 점검
@@ -80,6 +82,8 @@ Table orders { id bigint [pk] member_id bigint [ref: > members.id] }
 ```text
 아래는 내가 만든 테이블 스키마야: [테이블·컬럼]. 중복 저장되는 데이터, 한 칸에 여러 값이 들어간 컬럼, 잘못된 데이터 타입, 누락된 외래키가 있는지 점검. 문제마다 '왜 문제인지 → 어떻게 고칠지'를 짝지어.
 ```
+
+> 확인된 작성 예시 없음
 
 `정규화` `점검`
 
@@ -89,6 +93,8 @@ Table orders { id bigint [pk] member_id bigint [ref: > members.id] }
 아래 스키마를 dbdiagram.io에서 쓸 수 있는 DBML 코드로 변환해줘. 기본키는 [pk], 외래키는 [ref: > 테이블.컬럼] 문법을. [내 테이블·컬럼·관계]
 ```
 
+> 확인된 작성 예시 없음
+
 `DBML` `다이어그램`
 
 ### 실제 CREATE TABLE SQL로 변환
@@ -96,6 +102,8 @@ Table orders { id bigint [pk] member_id bigint [ref: > members.id] }
 ```text
 아래 설계를 PostgreSQL CREATE TABLE 문으로. 기본키·외래키 제약, NOT NULL, 적절한 데이터 타입, created_at timestamptz default now()를 포함. [내 스키마]
 ```
+
+> 확인된 작성 예시 없음
 
 `SQL` `CREATE TABLE`
 
@@ -120,3 +128,7 @@ Table orders { id bigint [pk] member_id bigint [ref: > members.id] }
 - [Primary Key](/concepts/primary-key/)
 - [Foreign Key](/concepts/foreign-key/)
 - [Data Type](/concepts/data-type/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

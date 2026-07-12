@@ -146,6 +146,8 @@ print(res.json()["origin"])
 아래는 파이썬 requests로 작성한 API 호출 코드야. (1) 에러 처리(timeout, raise_for_status)가 빠진 곳 (2) 상태코드 확인 없이 .json()을 부르는 위험 (3) 더 깔끔하게 만들 부분을 한국어로 짚어주고 개선된 전체 코드를 줘. [내 코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `코드리뷰` `requests` `에러처리`
 
 ### curl/브라우저 요청을 requests 코드로 변환
@@ -153,6 +155,8 @@ print(res.json()["origin"])
 ```text
 아래 API 문서(또는 curl 명령)를 파이썬 requests 코드로 바꿔줘. URL, 메서드(GET/POST), 필요한 headers, params 또는 json 바디를 모두 반영하고 상태코드 확인과 timeout까지 넣어서 실행 가능한 완성 코드로 한국어 주석과 함께 줘. [API 문서나 curl 명령]
 ```
+
+> 확인된 작성 예시 없음
 
 `변환` `curl` `requests`
 
@@ -162,6 +166,8 @@ print(res.json()["origin"])
 파이썬 requests로 API를 호출했더니 아래 에러가 났어. 원인이 뭔지, 상태코드나 예외가 의미하는 바가 뭔지, 어떻게 고치는지 초보자도 알게 한국어로 설명해줘. [에러 메시지/스택트레이스]
 ```
 
+> 확인된 작성 예시 없음
+
 `디버깅` `에러` `상태코드`
 
 ### 연습용 무료 API 추천
@@ -169,6 +175,8 @@ print(res.json()["origin"])
 ```text
 파이썬 requests를 연습하고 싶은 초보자야. 회원가입/API 키 없이 바로 GET·POST를 테스트할 수 있는 무료 공개 API를 3개 추천하고, 각각에 대해 requests로 호출하는 짧은 예제 코드를 한국어 주석과 함께 줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `학습자료` `공개API` `연습`
 
@@ -196,3 +204,7 @@ print(res.json()["origin"])
 - [Headers](/concepts/headers/)
 - [Api Communication](/concepts/api-communication/)
 - [Error Handling](/concepts/error-handling/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

@@ -88,6 +88,8 @@ Zapier·Make 같은 자동화 도구는 앱과 앱 사이에 미리 깔린 컨�
 다음 이메일을 [긴급/처리필요/참고/스팸] 중 하나로만 분류하고, 이유 1줄과 정중한 답장 초안을 작성. 확실하지 않으면 '처리필요'로 분류하고 그 이유를 명시. 출력은 JSON: {"category":"","reason":"","draft":""}
 ```
 
+> 확인된 작성 예시 없음
+
 `분류` `이메일` `JSON 출력` `안전 기본값`
 
 ### 승인 요청 메시지
@@ -96,6 +98,8 @@ Zapier·Make 같은 자동화 도구는 앱과 앱 사이에 미리 깔린 컨�
 [분류: {{category}}] 새 이메일 검토 요청. 발신자: {{sender}} / 이유: {{reason}} / AI 초안: """{{draft}}""" 승인하면 Gmail로 발송, ✏️수정 또는 ❌거절을 선택하세요.
 ```
 
+> 확인된 작성 예시 없음
+
 `승인 게이트` `Slack` `검토`
 
 ### 안전 가드레일 프롬프트
@@ -103,6 +107,8 @@ Zapier·Make 같은 자동화 도구는 앱과 앱 사이에 미리 깔린 컨�
 ```text
 발송 전 검사: 이 초안에 개인정보(전화·계좌·주민번호), 확정 약속, 금액/법적 표현이 포함되면 자동 발송을 막고 '사람 검토 필요'로 표시.
 ```
+
+> 확인된 작성 예시 없음
 
 `가드레일` `PII` `안전`
 
@@ -127,3 +133,7 @@ Zapier·Make 같은 자동화 도구는 앱과 앱 사이에 미리 깔린 컨�
 - [Approval Gate](/concepts/approval-gate/)
 - [Zapier](/concepts/zapier/)
 - [Mcp](/concepts/mcp/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-work) · 방식: authenticated-crawl</sub>

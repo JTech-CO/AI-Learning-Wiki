@@ -5,7 +5,7 @@ sidebar:
   order: 0
   label: "📍 로드맵"
 ---
-> 레벨: `engineer` · 모듈 24/49개
+> 레벨: `engineer` · 모듈 26/49개
 
 1. [개발 환경 세팅: 파이썬·venv·에디터](/es/courses/ai-engineer/01-dev-environment-setup/)
 1. [파이썬 기초 — AI·자동화의 공용어](/es/courses/ai-engineer/02-python-basics/)
@@ -31,3 +31,5 @@ sidebar:
 1. [다중 도구와 도구 루프](/es/courses/ai-engineer/22-multi-tool-loop/)
 1. [추론 모델·확장 사고 — 언제 깊게 생각시키나](/es/courses/ai-engineer/23-reasoning-thinking-mode/)
 1. [컨텍스트·프롬프트 캐싱 — 비용·속도 최적화](/es/courses/ai-engineer/24-prompt-caching/)
+1. [문서 청킹 전략](/es/courses/ai-engineer/25-document-chunking/)
+1. [임베딩과 코사인 유사도](/es/courses/ai-engineer/26-embedding-cosine-similarity/)

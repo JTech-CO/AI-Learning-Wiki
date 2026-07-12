@@ -28,9 +28,10 @@
       "title": {
         "ko": "동기→비동기 변환 요청 (가장 유용)"
       },
-      "text": {
+      "template": {
         "ko": "아래 파이썬 코드는 [반복문으로 API를 순서대로 호출]해서 느립니다. asyncio와 aiohttp(또는 AsyncOpenAI)를 써서 여러 호출을 동시에 실행하도록 바꿔주세요. asyncio.gather를 쓰고, return_exceptions=True로 실패 내성을 넣고, 동시 실행은 Semaphore로 최대 [5]개로 제한. 한 줄씩 왜 그렇게 바꿨는지 주석으로. [내 코드]"
       },
+      "examples": [],
       "tags": [
         "비동기",
         "코드 변환",
@@ -42,9 +43,10 @@
       "title": {
         "ko": "asyncio 개념 점검"
       },
-      "text": {
+      "template": {
         "ko": "파이썬 async/await 초보입니다. 다음 개념을 카페 비유로 각각 2문장씩 설명해 주세요: (1) 코루틴 (2) await가 하는 일 (3) asyncio.gather (4) 왜 time.sleep 대신 asyncio.sleep을 써야 하는지 (5) 이벤트 루프. 전문용어는 괄호 안에 쉬운 말로."
       },
+      "examples": [],
       "tags": [
         "비동기",
         "개념",
@@ -56,9 +58,10 @@
       "title": {
         "ko": "내 비동기 코드 리뷰"
       },
-      "text": {
+      "template": {
         "ko": "제 asyncio 코드를 리뷰해 주세요. 특히 (1) time.sleep이나 requests 같은 동기 블로킹 호출이 섞여 있는지 (2) await를 빠뜨린 코루틴이 있는지 (3) gather 예외 처리가 되어 있는지 (4) 동시 개수 제한이 있는지 체크하고 문제마다 수정 코드를. [내 코드]"
       },
+      "examples": [],
       "tags": [
         "비동기",
         "코드 리뷰"
@@ -69,9 +72,10 @@
       "title": {
         "ko": "에러 메시지 해석"
       },
-      "text": {
+      "template": {
         "ko": "asyncio 코드를 돌렸더니 이런 에러가 났습니다: [에러 메시지]. 무슨 뜻인지 초보도 알게 설명하고 원인과 수정 방법을 단계로."
       },
+      "examples": [],
       "tags": [
         "비동기",
         "에러",
@@ -124,6 +128,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-engineer",
+    "capturedAt": "2026-07-09T09:00:27.286Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

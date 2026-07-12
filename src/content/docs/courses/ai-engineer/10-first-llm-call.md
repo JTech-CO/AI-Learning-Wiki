@@ -79,6 +79,8 @@ print(resp)
 나는 [Anthropic/OpenAI] 공식 SDK로 첫 API 호출을 했어. print로 응답을 찍었더니 아래처럼 객체가 통째로 나왔어. 여기서 AI가 말한 텍스트만 꺼내려면 어떤 줄을 써야 해? 초보자용으로 한 줄씩 설명해줘. [print 결과]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `응답 객체` `텍스트 추출`
 
 ### 에러 메시지 해결
@@ -86,6 +88,8 @@ print(resp)
 ```text
 [언어: 파이썬/노드]로 LLM API를 호출하다가 아래 에러가 났어. 무슨 뜻이고 초보자가 따라 할 수 있게 해결 단계를 순서대로 알려줘. [에러 메시지 전체]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `에러 처리`
 
@@ -95,6 +99,8 @@ print(resp)
 내 운영체제는 [맥/윈도우/리눅스]야. API 키를 [ANTHROPIC_API_KEY] 환경변수로 등록했는데 코드가 키를 못 읽는 것 같아. 등록이 제대로 됐는지 확인하는 명령과 안 됐을 때 다시 설정하는 방법을 알려줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `환경변수`
 
 ### 가장 짧은 첫 호출 코드 만들기
@@ -102,6 +108,8 @@ print(resp)
 ```text
 [언어]와 [Anthropic 공식 SDK]로 내가 입력한 문장을 모델 [claude-opus-4-8]에게 보내고 답 텍스트만 출력하는 가장 짧은 예제 코드를 줘. 각 줄에 한국어 주석을 달아줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `예제 코드`
 
@@ -128,3 +136,7 @@ print(resp)
 - [Content Block](/concepts/content-block/)
 - [Error Handling](/concepts/error-handling/)
 - [Environment Variable](/concepts/environment-variable/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

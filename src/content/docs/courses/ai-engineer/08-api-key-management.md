@@ -88,6 +88,8 @@ $ cat .env.example   # OPENAI_API_KEY=
 나는 [Python / Node.js] 프로젝트에서 [OpenAI] API 키를 쓰고 있어. 지금 코드에 키가 하드코딩돼 있는데 이걸 .env 파일 + 환경변수로 안전하게 분리하고 싶어. (1) .env 파일 예시 (2) .gitignore에 추가할 내용 (3) 코드에서 환경변수로 불러오는 최소 코드 (4) 확인 방법을 순서대로 알려줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `API 키` `환경변수` `.env` `분리`
 
 ### 내 코드에 키가 노출됐는지 검사
@@ -95,6 +97,8 @@ $ cat .env.example   # OPENAI_API_KEY=
 ```text
 아래 코드를 검사해서 API 키·비밀번호·토큰 같은 민감정보가 하드코딩돼 있는지 찾아줘. 있으면 어느 줄인지, 어떻게 환경변수로 바꿔야 하는지 알려줘. [내 코드]
 ```
+
+> 확인된 작성 예시 없음
 
 `API 키` `보안` `검사`
 
@@ -104,6 +108,8 @@ $ cat .env.example   # OPENAI_API_KEY=
 방금 [GitHub / 채팅 / 스크린샷]에 [OpenAI] API 키를 실수로 노출했어. 지금 당장 해야 할 조치를 우선순위 순서대로 알려줘. 키 폐기(revoke) 방법과, git 히스토리에서 지워도 왜 재발급이 필수인지도 설명해줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `API 키` `노출` `폐기`
 
 ### .env.example 자동 생성
@@ -111,6 +117,8 @@ $ cat .env.example   # OPENAI_API_KEY=
 ```text
 아래 내 .env 파일 내용을 보고 값은 모두 비운 안전한 .env.example 파일을 만들어줘. 각 키가 무슨 용도인지 주석도 한 줄씩 달아줘. [.env 내용]
 ```
+
+> 확인된 작성 예시 없음
 
 `환경변수` `.env.example` `팀 공유`
 
@@ -136,3 +144,7 @@ $ cat .env.example   # OPENAI_API_KEY=
 - [Gitignore](/concepts/gitignore/)
 - [Secret Management](/concepts/secret-management/)
 - [Key Revocation](/concepts/key-revocation/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

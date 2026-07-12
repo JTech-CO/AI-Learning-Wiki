@@ -101,6 +101,8 @@ outEl.textContent = full;
 Node.js 18+ 환경에서 [OpenAI 또는 Anthropic] 채팅 API를 stream:true로 호출하는 최소 스트리밍 예제를. 요구사항: (1) fetch로 요청 (2) res.body의 ReadableStream을 reader로 읽기 (3) TextDecoder로 디코딩 (4) 'data: ' 줄만 파싱해 delta를 process.stdout.write로 실시간 출력 (5) '[DONE]'에서 종료 (6) 마지막에 누적된 full 문자열을 콘솔 출력. 주석을 한국어로. 모델은 [모델명], 질문은 [스트리밍을 설명해줘].
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `스트리밍` `Node.js`
 
 ### 브라우저 타이핑 UI
@@ -108,6 +110,8 @@ Node.js 18+ 환경에서 [OpenAI 또는 Anthropic] 채팅 API를 stream:true로 
 ```text
 바닐라 HTML+JS 한 파일로 LLM 스트리밍 챗 UI를 만들어줘. 입력창+전송버튼+출력 div. delta가 올 때마다 출력 div에 append하고 끝에 커서 '▍'를 붙였다가 완료되면 제거. 스크롤은 항상 맨 아래. API는 [내 백엔드 /api/chat 엔드포인트]가 event-stream을 반환한다고 가정. 코드에 한국어 주석.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `스트리밍` `UI`
 
@@ -117,6 +121,8 @@ Node.js 18+ 환경에서 [OpenAI 또는 Anthropic] 채팅 API를 stream:true로 
 아래 내 스트리밍 코드에 AbortController 기반 '중지' 버튼과 에러 처리를 추가해줘. 요구사항: 중지 시 지금까지 받은 텍스트는 화면에 유지, 네트워크 에러 시 사용자에게 '연결이 끊겼어요' 메시지 표시하되 누적 full은 보존, 재시도 버튼 제공. 내 코드: [코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `에러처리` `AbortController`
 
 ### provider별 delta 위치 확인
@@ -124,6 +130,8 @@ Node.js 18+ 환경에서 [OpenAI 또는 Anthropic] 채팅 API를 stream:true로 
 ```text
 [OpenAI Chat Completions / Anthropic Messages / OpenRouter] 스트리밍 응답에서 실제 새 텍스트 조각(delta)이 JSON의 어느 경로에 들어있는지, 종료 신호는 무엇인지 표로. 각 provider의 예시 청크 JSON도 하나씩.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `delta` `provider`
 
@@ -150,3 +158,7 @@ Node.js 18+ 환경에서 [OpenAI 또는 Anthropic] 채팅 API를 stream:true로 
 - [Typing Effect](/concepts/typing-effect/)
 - [Abort Controller](/concepts/abort-controller/)
 - [Chunk Parsing](/concepts/chunk-parsing/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

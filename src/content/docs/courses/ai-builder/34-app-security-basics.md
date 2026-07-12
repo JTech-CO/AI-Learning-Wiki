@@ -85,6 +85,8 @@ db.query("SELECT * FROM users WHERE email=$1", [input])
 아래는 내 앱의 [파일명] 코드야. 초보가 자주 놓치는 3대 취약점 관점에서 점검해줘: (1)하드코딩된 API 키·비밀번호 (2)서버에서 인증·본인 확인이 빠진 엔드포인트 (3)검증·이스케이프 없는 사용자 입력. 발견한 문제를 위험도 순으로 나열하고 각각 수정 코드를. [코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `보안점검` `취약점` `코드리뷰`
 
 ### 키를 .env로 안전하게 분리
@@ -92,6 +94,8 @@ db.query("SELECT * FROM users WHERE email=$1", [input])
 ```text
 내 [언어/프레임워크: Node.js Express] 프로젝트에서 하드코딩된 이 키를 환경변수로 옮기고 싶어: [키 이름]. .env 파일 예시, .gitignore 설정, 코드에서 불러오는 방법을 순서대로. 이미 깃허브에 올라간 경우 폐기·재발급 절차도.
 ```
+
+> 확인된 작성 예시 없음
 
 `API키` `env` `키관리`
 
@@ -101,6 +105,8 @@ db.query("SELECT * FROM users WHERE email=$1", [input])
 이 폼/엔드포인트는 사용자에게서 [email, age, comment]를 받아. 각 필드에 맞는 입력 검증(형식·길이·허용 문자)과 SQL/HTML 이스케이프 코드를 [언어]로. 검증 실패 시 명확한 에러 메시지도.
 ```
 
+> 확인된 작성 예시 없음
+
 `입력검증` `이스케이프` `SQL인젝션`
 
 ### 셀프 침투 테스트 시나리오
@@ -108,6 +114,8 @@ db.query("SELECT * FROM users WHERE email=$1", [input])
 ```text
 내 앱은 [기능 설명]이야. 초보가 만든 앱을 공격자가 노릴 시나리오를 5개 — 인증 우회, 남의 데이터 접근(IDOR), 입력값 주입 위주로. 각 시나리오마다 '어떻게 시도하는지'와 '통과되면 어디를 어떻게 고쳐야 하는지'를.
 ```
+
+> 확인된 작성 예시 없음
 
 `침투테스트` `IDOR` `인증우회`
 
@@ -132,3 +140,7 @@ db.query("SELECT * FROM users WHERE email=$1", [input])
 - [Authentication](/concepts/authentication/)
 - [Input Validation](/concepts/input-validation/)
 - [Sql Injection](/concepts/sql-injection/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

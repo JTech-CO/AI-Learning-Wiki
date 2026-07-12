@@ -2,12 +2,22 @@
   "id": "ai-engineer/first-llm-call",
   "course": "ai-engineer",
   "order": 10,
-  "title": { "ko": "첫 LLM API 호출 성공시키기" },
-  "summary": { "ko": "공식 SDK를 설치해 messages.create()로 LLM에 첫 채팅 요청을 보내고, 문자열이 아닌 응답 객체에서 resp.content[0].text로 진짜 답만 꺼내 출력하는 첫 왕복을 성공시킨다." },
+  "title": {
+    "ko": "첫 LLM API 호출 성공시키기"
+  },
+  "summary": {
+    "ko": "공식 SDK를 설치해 messages.create()로 LLM에 첫 채팅 요청을 보내고, 문자열이 아닌 응답 객체에서 resp.content[0].text로 진짜 답만 꺼내 출력하는 첫 왕복을 성공시킨다."
+  },
   "objectives": [
-    { "ko": "공식 SDK를 설치해 LLM에 첫 채팅 요청을 보낸다" },
-    { "ko": "응답 객체의 content 리스트에서 텍스트만 꺼내 화면에 출력한다" },
-    { "ko": "API 키를 코드에 하드코딩하지 않고 환경변수로 분리한다" }
+    {
+      "ko": "공식 SDK를 설치해 LLM에 첫 채팅 요청을 보낸다"
+    },
+    {
+      "ko": "응답 객체의 content 리스트에서 텍스트만 꺼내 화면에 출력한다"
+    },
+    {
+      "ko": "API 키를 코드에 하드코딩하지 않고 환경변수로 분리한다"
+    }
   ],
   "body": {
     "ko": "## 핵심 개념\n\nLLM API 호출은 결국 **내 프로그램이 AI 회사 서버에 질문을 보내고 답을 돌려받는 왕복 통신**이에요. 이 왕복을 쉽게 해주는 것이 공식 **SDK(소프트웨어 개발 키트)** 로, 복잡한 HTTP 요청을 `messages.create()` 같은 함수 하나로 감싸줘요. 요청에는 **어떤 모델을 쓸지**와 **무슨 말을 할지**를 담고, 응답은 여러 조각(블록)이 담긴 **객체**로 돌아와요. 초보자가 가장 많이 막히는 지점이 바로 이 응답 객체에서 텍스트만 꺼내는 부분인데, 답이 문자열이 아니라 `content` 리스트 안에 들어 있기 때문이에요. **식당에 주문서를 넣고(요청) 접시에 담긴 음식을 받아(응답) 그 안의 요리만 골라 먹는** 과정과 같아요.\n\n### 왜 이게 될까?\n\n공식 SDK는 복잡한 HTTP 통신을 `messages.create()` 함수 하나로 감싸주는 **번역기** 같은 존재예요. 그래서 \"무슨 모델에게 뭐라고 말할지\"만 정하면, 요청을 포장해 보내고 응답을 받아오는 궂은일은 SDK가 대신 해줘요. 다만 그 응답은 문자열이 아니라 **접시(객체) 안에 요리(텍스트)가 담긴 형태**로 오기 때문에, 접시에서 요리만 골라내는 한 줄이 꼭 필요해요.\n\n## 👀 따라하기 예시 — API 키 발급·SDK 설치 후 첫 호출\n\n**① 클라이언트부터 만든다** `client = Anthropic()` → 에러 없이 조용히 통과(환경변수 `ANTHROPIC_API_KEY`를 SDK가 자동으로 찾아 씀).\n> 💡 키를 코드에 안 적어도 되는 이유 — SDK가 환경변수를 대신 찾아줘요.\n\n**② `messages.create()`로 첫 요청 전송** `model`, `max_tokens`, `messages`를 넣으면 →\n```\nMessage(id=\"msg_01Xy...\", content=[TextBlock(text=\"안녕하세요! 저는 여러분의 학습을 돕는 AI입니다.\", type=\"text\")], model=\"claude-opus-4-8\", role=\"assistant\", stop_reason=\"end_turn\", usage=Usage(input_tokens=12, output_tokens=15))\n```\n> 💡 통째로 보면 무섭지만, 우리가 진짜 원하는 답은 딱 하나 — `content` 리스트 안 `text`뿐이에요.\n\n**③ `print(resp)` 대신 `resp.content[0].text`만 꺼내 출력** → `안녕하세요! 저는 여러분의 학습을 돕는 AI입니다.`\n> 💡 바로 이 순간이 '아하 포인트'! 객체 껍데기를 벗기고 진짜 답만 뽑아내는 게 API 다루기의 핵심 기술이에요.\n\n**④ 일부러 `model` 이름을 오타 내서 에러 재현** `\"claude-opus-4-8-typo\"` → `anthropic.NotFoundError: 404 - model: claude-opus-4-8-typo not found`\n> 💡 에러 메시지가 이미 답을 알려주고 있어요 — 404는 거의 항상 모델 이름 오타예요.\n\n좋은 결과의 기준: (1) `print(resp)` 전체가 아니라 텍스트만 깔끔하게 출력됨 (2) 에러 없이 매번 실행됨 (3) 키가 코드에 하드코딩되지 않고 환경변수로 분리되어 있음.\n\n## 단계별 따라하기\n\n1. **계정 만들고 API 키 발급받기** — 공식 콘솔(예: Anthropic은 `console.anthropic.com`)에 가입한 뒤 API Keys 메뉴에서 Create Key. 발급된 키는 이 화면에서만 보이므로 즉시 복사해 안전한 메모장에. (예: `sk-ant-api03-xxxxxxxx...` — 실제 키는 공개 저장소나 채팅에 절대 올리지 않기)\n2. **작업 폴더 만들고 공식 SDK 설치** — 터미널에서 새 폴더를 만들어 들어간 뒤 언어에 맞는 공식 SDK 설치. 비공식 래퍼 말고 반드시 공식 패키지. (파이썬: `mkdir first-api && cd first-api && pip install anthropic` / Node: `npm init -y && npm install @anthropic-ai/sdk`)\n3. **키를 코드에 직접 쓰지 말고 환경변수로 넣기** — 키를 코드 파일에 그대로 적으면 유출 위험. 터미널에서 환경변수로 등록하면 SDK가 자동으로 읽어감. 이름은 각 SDK가 기대하는 값(Anthropic은 `ANTHROPIC_API_KEY`)을 그대로. (맥/리눅스: `export ANTHROPIC_API_KEY=sk-ant-...` / 윈도우 파워셸: `setx ANTHROPIC_API_KEY \"sk-ant-...\"`)\n4. **첫 채팅 요청 코드 작성** — 파일 `first_call.py`를 만들고 클라이언트를 생성한 뒤 `messages.create()`로 요청. `model`에는 모델 이름, `max_tokens`에는 최대 응답 길이, `messages`에는 role과 content로 이루어진 대화.\n```python\nfrom anthropic import Anthropic\nclient = Anthropic()\nresp = client.messages.create(\n    model=\"claude-opus-4-8\",\n    max_tokens=1024,\n    messages=[{\"role\": \"user\", \"content\": \"한 문장으로 자기소개 해줘\"}],\n)\nprint(resp)\n```\n5. **실행하고 응답 객체에서 텍스트만 꺼내기** — `python first_call.py`로 실행. `print(resp)`를 하면 텍스트가 아니라 `content=[TextBlock(text=...)]` 같은 객체 구조가 통째로 보임. 우리가 원하는 답은 `resp.content[0].text`에 있으므로 마지막 줄을 그것을 출력하도록 바꾼다. (`print(resp.content[0].text)` → `안녕하세요, 저는 여러분을 돕는 AI입니다.` Node도 `resp.content[0].text`로 동일)\n6. **에러가 나면 원인별로 해결하기** — 401이면 키가 틀렸거나 환경변수가 안 읽힌 것, 404면 모델 이름 오타, 429면 요청 한도 초과. 에러 메시지 전체를 복사해 AI에게 붙여넣고 무슨 뜻이고 어떻게 고치냐고 물으면 대부분 즉시 해결. (`authentication_error(401)` → 터미널을 껐다 켠 뒤 `export`를 다시 하거나 `echo $ANTHROPIC_API_KEY`로 키가 실제 등록됐는지 확인)\n\n## 흔한 실수 → 교정\n\n- ✗ API 키를 코드 파일에 그대로 하드코딩하고 깃허브에 올림 → **키는 환경변수(`.env` 또는 `export`)로 분리하고 `.gitignore`에 `.env`를 추가.** 이미 올렸다면 즉시 콘솔에서 그 키를 폐기(revoke)하고 새로 발급.\n- ✗ 응답을 `print(resp)` 하고 왜 텍스트가 안 나오지 하며 막힘 → **응답은 문자열이 아니라 블록들이 담긴 객체.** `resp.content[0].text`처럼 리스트의 첫 블록에서 `text` 속성을 꺼내야 실제 답이 나옴.\n- ✗ 환경변수를 등록한 터미널과 다른 창에서 코드를 실행해 키가 안 읽힘 → **`export`/`setx`는 등록한 세션(또는 재시작 후)에만 반영.** 같은 터미널에서 실행하거나 터미널을 새로 열고 다시 등록한 뒤 실행.\n\n## 도구\n\n- 🛠 **Anthropic Console** (console.anthropic.com) — API 키 발급·사용량 확인.\n- 🛠 **anthropic 공식 SDK** (`pip install anthropic` / `npm install @anthropic-ai/sdk`) — 첫 호출 코드 작성.\n- 🛠 **ChatGPT·Claude** (claude.ai) — 에러·응답 구조 즉시 질문.\n- 🛠 **VS Code + 터미널** (code.visualstudio.com) — 코드 작성·실행 환경."
@@ -15,38 +25,109 @@
   "prompts": [
     {
       "id": "p10e-extract-text",
-      "title": { "ko": "응답 객체에서 텍스트 꺼내는 법 물어보기" },
-      "text": { "ko": "나는 [Anthropic/OpenAI] 공식 SDK로 첫 API 호출을 했어. print로 응답을 찍었더니 아래처럼 객체가 통째로 나왔어. 여기서 AI가 말한 텍스트만 꺼내려면 어떤 줄을 써야 해? 초보자용으로 한 줄씩 설명해줘. [print 결과]" },
-      "tags": ["프롬프트", "응답 객체", "텍스트 추출"]
+      "title": {
+        "ko": "응답 객체에서 텍스트 꺼내는 법 물어보기"
+      },
+      "template": {
+        "ko": "나는 [Anthropic/OpenAI] 공식 SDK로 첫 API 호출을 했어. print로 응답을 찍었더니 아래처럼 객체가 통째로 나왔어. 여기서 AI가 말한 텍스트만 꺼내려면 어떤 줄을 써야 해? 초보자용으로 한 줄씩 설명해줘. [print 결과]"
+      },
+      "examples": [],
+      "tags": [
+        "프롬프트",
+        "응답 객체",
+        "텍스트 추출"
+      ]
     },
     {
       "id": "p10e-error",
-      "title": { "ko": "에러 메시지 해결" },
-      "text": { "ko": "[언어: 파이썬/노드]로 LLM API를 호출하다가 아래 에러가 났어. 무슨 뜻이고 초보자가 따라 할 수 있게 해결 단계를 순서대로 알려줘. [에러 메시지 전체]" },
-      "tags": ["프롬프트", "에러 처리"]
+      "title": {
+        "ko": "에러 메시지 해결"
+      },
+      "template": {
+        "ko": "[언어: 파이썬/노드]로 LLM API를 호출하다가 아래 에러가 났어. 무슨 뜻이고 초보자가 따라 할 수 있게 해결 단계를 순서대로 알려줘. [에러 메시지 전체]"
+      },
+      "examples": [],
+      "tags": [
+        "프롬프트",
+        "에러 처리"
+      ]
     },
     {
       "id": "p10e-env-check",
-      "title": { "ko": "환경변수 등록 확인" },
-      "text": { "ko": "내 운영체제는 [맥/윈도우/리눅스]야. API 키를 [ANTHROPIC_API_KEY] 환경변수로 등록했는데 코드가 키를 못 읽는 것 같아. 등록이 제대로 됐는지 확인하는 명령과 안 됐을 때 다시 설정하는 방법을 알려줘." },
-      "tags": ["프롬프트", "환경변수"]
+      "title": {
+        "ko": "환경변수 등록 확인"
+      },
+      "template": {
+        "ko": "내 운영체제는 [맥/윈도우/리눅스]야. API 키를 [ANTHROPIC_API_KEY] 환경변수로 등록했는데 코드가 키를 못 읽는 것 같아. 등록이 제대로 됐는지 확인하는 명령과 안 됐을 때 다시 설정하는 방법을 알려줘."
+      },
+      "examples": [],
+      "tags": [
+        "프롬프트",
+        "환경변수"
+      ]
     },
     {
       "id": "p10e-shortest-call",
-      "title": { "ko": "가장 짧은 첫 호출 코드 만들기" },
-      "text": { "ko": "[언어]와 [Anthropic 공식 SDK]로 내가 입력한 문장을 모델 [claude-opus-4-8]에게 보내고 답 텍스트만 출력하는 가장 짧은 예제 코드를 줘. 각 줄에 한국어 주석을 달아줘." },
-      "tags": ["프롬프트", "예제 코드"]
+      "title": {
+        "ko": "가장 짧은 첫 호출 코드 만들기"
+      },
+      "template": {
+        "ko": "[언어]와 [Anthropic 공식 SDK]로 내가 입력한 문장을 모델 [claude-opus-4-8]에게 보내고 답 텍스트만 출력하는 가장 짧은 예제 코드를 줘. 각 줄에 한국어 주석을 달아줘."
+      },
+      "examples": [],
+      "tags": [
+        "프롬프트",
+        "예제 코드"
+      ]
     }
   ],
-  "mission": { "ko": "이제 당신 차례! messages 안 content를 '한 문장으로 자기소개 해줘' 대신 '파이썬과 자바스크립트 중 초보자에게 뭐가 더 쉬운지 한 문장으로 알려줘'로 바꾸고 실행해서, `resp.content[0].text`로 답만 뽑아 출력해보세요." },
+  "mission": {
+    "ko": "이제 당신 차례! messages 안 content를 '한 문장으로 자기소개 해줘' 대신 '파이썬과 자바스크립트 중 초보자에게 뭐가 더 쉬운지 한 문장으로 알려줘'로 바꾸고 실행해서, `resp.content[0].text`로 답만 뽑아 출력해보세요."
+  },
   "rubric": [
-    { "criterion": { "ko": "print(resp) 전체가 아니라 텍스트만 출력되게 했나" }, "max": 5 },
-    { "criterion": { "ko": "질문(content)만 바꾸고 model·max_tokens 구조는 그대로 유지했나" }, "max": 5 },
-    { "criterion": { "ko": "에러가 나면 401/404/429 중 어디에 해당하는지 스스로 짚어봤나" }, "max": 5 }
+    {
+      "criterion": {
+        "ko": "print(resp) 전체가 아니라 텍스트만 출력되게 했나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "질문(content)만 바꾸고 model·max_tokens 구조는 그대로 유지했나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "에러가 나면 401/404/429 중 어디에 해당하는지 스스로 짚어봤나"
+      },
+      "max": 5
+    }
   ],
   "difficulty": "basic",
-  "tags": ["LLM API", "공식 SDK", "messages.create", "응답 객체", "환경변수", "에러 처리"],
+  "tags": [
+    "LLM API",
+    "공식 SDK",
+    "messages.create",
+    "응답 객체",
+    "환경변수",
+    "에러 처리"
+  ],
   "estimatedMinutes": 30,
-  "concepts": ["llm-api", "sdk", "messages-create", "response-object", "content-block", "error-handling", "environment-variable"],
-  "source": { "platform": "eduverse-ai.app", "method": "authenticated-crawl" }
+  "concepts": [
+    "llm-api",
+    "sdk",
+    "messages-create",
+    "response-object",
+    "content-block",
+    "error-handling",
+    "environment-variable"
+  ],
+  "source": {
+    "platform": "eduverse-ai.app",
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-engineer",
+    "capturedAt": "2026-07-09T09:09:10.354Z",
+    "captureTimeBasis": "file-mtime-estimate"
+  }
 }

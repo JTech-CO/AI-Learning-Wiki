@@ -108,6 +108,8 @@ SELECT name, spent FROM customers ORDER BY spent ASC LIMIT 1;
 SQLite에서 실습할 예제 데이터를 만들어줘. 컬럼은 id(정수), name(이름), city(도시), grade(등급 VIP/일반), spent(누적결제액 정수)로 하고, 한국어 이름과 서울·부산·대구가 섞인 고객 8명을 CREATE TABLE 한 개와 INSERT 문으로 바로 복붙 실행되게. 설명 없이 SQL만.
 ```
 
+> 확인된 작성 예시 없음
+
 `SQL` `예제데이터` `CREATE TABLE`
 
 ### 자연어 → SQL 변환
@@ -115,6 +117,8 @@ SQLite에서 실습할 예제 데이터를 만들어줘. 컬럼은 id(정수), n
 ```text
 아래 테이블 구조를 기준으로 SQLite 쿼리를 만들어줘. 테이블 customers(id, name, city, grade, spent). 내가 알고 싶은 것: [서울에 사는 VIP 중 결제액 상위 3명]. SELECT/WHERE/ORDER BY/LIMIT을 써서 한 문장으로. SQL만 주고 각 줄이 무슨 뜻인지 한 줄 주석도.
 ```
+
+> 확인된 작성 예시 없음
 
 `SQL` `자연어변환` `쿼리작성`
 
@@ -124,6 +128,8 @@ SQLite에서 실습할 예제 데이터를 만들어줘. 컬럼은 id(정수), n
 내가 쓴 SQLite 쿼리를 검토해줘. 문법 오류, 문자열 따옴표, WHERE 조건, 정렬 방향(ASC/DESC)이 내 의도와 맞는지. 내 의도: [의도] 내 쿼리: [쿼리]. 틀린 부분만 고쳐서 최종 쿼리를.
 ```
 
+> 확인된 작성 예시 없음
+
 `SQL` `점검` `디버깅`
 
 ### WHERE 조건 확장 연습
@@ -131,6 +137,8 @@ SQLite에서 실습할 예제 데이터를 만들어줘. 컬럼은 id(정수), n
 ```text
 SQLite customers(id, name, city, grade, spent) 테이블로 WHERE 연습 문제 5개를 난이도 순으로. 각 문제는 한국어 질문 + 정답 쿼리 + 왜 그런지 한 줄 설명. AND/OR, 부등호(>, <), 그리고 IN 을 골고루.
 ```
+
+> 확인된 작성 예시 없음
 
 `SQL` `WHERE` `연습문제`
 
@@ -155,3 +163,7 @@ SQLite customers(id, name, city, grade, spent) 테이블로 WHERE 연습 문제 
 - [Order By](/concepts/order-by/)
 - [Limit](/concepts/limit/)
 - [Query](/concepts/query/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

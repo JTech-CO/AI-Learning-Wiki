@@ -88,6 +88,8 @@ AI는 원래 내 Notion·Drive를 볼 수도, 만질 수도 없어요. 문 앞�
 Notion에서 '회의록' 폴더의 이번 주 페이지들을 모두 읽고, 각 페이지의 액션아이템만 뽑아 '액션아이템'이라는 새 DB에 [할 일, 담당자, 마감일, 출처페이지] 열로 행을 추가해줘. 추가 전 추출 결과를 먼저 보여주고 내 확인을 받아.
 ```
 
+> 확인된 작성 예시 없음
+
 `MCP` `Notion` `읽기-쓰기`
 
 ### Drive→Notion 가공 파이프라인
@@ -95,6 +97,8 @@ Notion에서 '회의록' 폴더의 이번 주 페이지들을 모두 읽고, 각
 ```text
 Google Drive에서 '주간보고' 폴더의 최신 문서를 읽고 핵심 3가지로 요약한 뒤, Notion '주간요약' DB에 오늘 날짜로 새 행을 만들어 써넣어줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `MCP` `Google Drive` `파이프라인`
 
@@ -104,6 +108,8 @@ Google Drive에서 '주간보고' 폴더의 최신 문서를 읽고 핵심 3가�
 방금 만든 Notion 행들을 다시 조회해서 실제로 저장됐는지 표로 보여주고, 누락된 항목이 있으면 알려줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `MCP` `검증` `Notion`
 
 ### 따라하기 예시 프롬프트
@@ -111,6 +117,8 @@ Google Drive에서 '주간보고' 폴더의 최신 문서를 읽고 핵심 3가�
 ```text
 이번 주 회의록 페이지들을 읽고 액션아이템만 추출해서 '액션아이템'이라는 새 DB에 담당자·마감 열과 함께 넣어줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `MCP` `예시` `액션아이템`
 
@@ -135,3 +143,7 @@ Google Drive에서 '주간보고' 폴더의 최신 문서를 읽고 핵심 3가�
 - [Remote Mcp Server](/concepts/remote-mcp-server/)
 - [Oauth Connector](/concepts/oauth-connector/)
 - [Bidirectional Integration](/concepts/bidirectional-integration/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

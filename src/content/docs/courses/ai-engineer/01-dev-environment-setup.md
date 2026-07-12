@@ -79,6 +79,8 @@ python hello.py
 원인이 뭔지 초보도 알아듣게 설명하고, 복사해서 그대로 실행할 수 있는 해결 명령을 순서대로 알려줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `개발환경` `에러해결` `파이썬`
 
 ### 내 OS 맞춤 venv 명령 받기
@@ -86,6 +88,8 @@ python hello.py
 ```text
 내 운영체제는 [Windows 11 PowerShell / macOS 터미널]이야. 'my-ai-project'라는 폴더에서 가상환경(venv)을 만들고 활성화하는 정확한 명령어를 한 줄씩 복사할 수 있게 순서대로 알려줘. 활성화가 됐는지 확인하는 방법도 함께.
 ```
+
+> 확인된 작성 예시 없음
 
 `개발환경` `venv` `명령어`
 
@@ -95,6 +99,8 @@ python hello.py
 나는 [웹에서 데이터 가져와 분석하기 / 간단한 챗봇 만들기]를 파이썬으로 해보고 싶어. 초보에게 꼭 필요한 파이썬 패키지 3~5개를 추천하고, 각각 무슨 역할인지 한 줄 설명과 pip install 명령을 같이 줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `개발환경` `pip` `패키지`
 
 ### VS Code 세팅 점검받기
@@ -102,6 +108,8 @@ python hello.py
 ```text
 VS Code에서 파이썬을 쓰려고 해. 방금 만든 venv를 인터프리터로 지정하는 방법을 단계별로 알려주고, 제대로 연결됐는지 확인하는 체크 포인트도 알려줘. 나는 [Windows / Mac] 사용자야.
 ```
+
+> 확인된 작성 예시 없음
 
 `개발환경` `VS Code` `인터프리터`
 
@@ -127,3 +135,7 @@ VS Code에서 파이썬을 쓰려고 해. 방금 만든 venv를 인터프리터�
 - [Pip](/concepts/pip/)
 - [Vscode](/concepts/vscode/)
 - [Dev Environment](/concepts/dev-environment/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

@@ -87,6 +87,8 @@ RAG는 **'Retrieval(검색)+Augmented(보강)+Generation(생성)'**의 줄임말
 아래 규칙을 반드시 지켜 답해라. 1) 업로드된 문서에 근거가 있는 내용만 답한다. 2) 근거가 없으면 추측하지 말고 '제공된 문서에는 해당 내용이 없습니다'라고만 답한다. 3) 답의 각 핵심 문장 끝에 출처(문서명·페이지 또는 인용 번호)를 표시한다. 질문: [질문]
 ```
 
+> 확인된 작성 예시 없음
+
 `환각 방지` `근거` `출처`
 
 ### 정책/규정 빠른 조회
@@ -94,6 +96,8 @@ RAG는 **'Retrieval(검색)+Augmented(보강)+Generation(생성)'**의 줄임말
 ```text
 [제품명 또는 상황]에 대한 [환불/교환/배송/A/S] 규정을 알려줘. 조건·기간·예외사항을 항목별로 정리하고 각 항목마다 어느 문서 몇 페이지에서 나왔는지 출처를 함께. 문서에 없는 건 '없음'이라고.
 ```
+
+> 확인된 작성 예시 없음
 
 `정책 조회` `출처`
 
@@ -103,6 +107,8 @@ RAG는 **'Retrieval(검색)+Augmented(보강)+Generation(생성)'**의 줄임말
 업로드한 문서들 중 [환불 기간]에 대해 서로 다르게 적힌 부분이 있는지 비교해줘. 어느 문서에서 며칠이라고 했는지 각각 출처와 함께 표로 정리하고, 충돌하면 어떤 게 최신인지 추정해줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `문서 비교` `충돌 탐지` `출처`
 
 ### 신입 교육용 FAQ 자동 생성
@@ -110,6 +116,8 @@ RAG는 **'Retrieval(검색)+Augmented(보강)+Generation(생성)'**의 줄임말
 ```text
 이 문서들을 바탕으로 신입 직원이 자주 물어볼 질문 10개와 답을 FAQ 형식으로. 각 답변마다 근거가 된 문서명·페이지를 반드시 표시하고, 문서에 답이 없는 질문은 만들지 마.
 ```
+
+> 확인된 작성 예시 없음
 
 `FAQ 생성` `신입 교육` `출처`
 
@@ -135,3 +143,7 @@ RAG는 **'Retrieval(검색)+Augmented(보강)+Generation(생성)'**의 줄임말
 - [Vector Search](/concepts/vector-search/)
 - [Notebooklm](/concepts/notebooklm/)
 - [Citation Grounding](/concepts/citation-grounding/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

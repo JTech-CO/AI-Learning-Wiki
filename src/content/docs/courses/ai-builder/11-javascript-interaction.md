@@ -107,6 +107,8 @@ document.querySelector('#result').textContent = name + '님, 환영합니다!';
 나는 JavaScript 초보야. 아래 코드에서 버튼을 눌러도 [원하는 동작: 화면에 인사말이 안 뜸]이 안 돼. 원인을 초보도 알 수 있게 설명하고, 고친 전체 코드를 주고, 무엇을 바꿨는지 한 줄씩 짚어줘. [HTML과 JS 코드 전체 붙여넣기]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `디버깅` `JavaScript`
 
 ### 기능 추가 요청
@@ -114,6 +116,8 @@ document.querySelector('#result').textContent = name + '님, 환영합니다!';
 ```text
 아래는 내가 만든 버튼 클릭 인사 페이지야. 여기에 [추가하고 싶은 기능: 초기화 버튼]을 붙이고 싶어. 기존 코드 흐름을 유지하면서 필요한 HTML과 JS를 추가해 주고, 초보가 이해하도록 주석을 달아줘. [코드 붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `기능추가` `JavaScript`
 
@@ -123,6 +127,8 @@ document.querySelector('#result').textContent = name + '님, 환영합니다!';
 querySelector, addEventListener, .value, .textContent 이 네 가지의 차이와 각각 언제 쓰는지 초등학생도 이해할 비유로 설명해줘. 각각 짧은 예시 코드도 하나씩 줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `개념`
 
 ### 직접 도전 과제 받기
@@ -130,6 +136,8 @@ querySelector, addEventListener, .value, .textContent 이 네 가지의 차이�
 ```text
 나는 방금 '버튼 클릭 시 입력한 이름으로 인사 띄우기'를 만들었어. 이 수준에서 30분 안에 도전할 만한 상호작용 미니 과제 3개를 난이도 순으로 추천하고, 각 과제에 필요한 새 개념 힌트만 줘(정답 코드는 주지 마).
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `도전과제`
 
@@ -154,3 +162,7 @@ querySelector, addEventListener, .value, .textContent 이 네 가지의 차이�
 - [Queryselector](/concepts/queryselector/)
 - [Addeventlistener](/concepts/addeventlistener/)
 - [Dom](/concepts/dom/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

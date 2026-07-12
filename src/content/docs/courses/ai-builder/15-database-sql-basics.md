@@ -105,6 +105,8 @@ SELECT 이름, 나이, 도시 FROM 고객 WHERE 나이 >= 30 ORDER BY 나이 DES
 CREATE TABLE [표이름] ( id INTEGER PRIMARY KEY, [열1이름] TEXT, [열2이름] INTEGER );
 ```
 
+> 확인된 작성 예시 없음
+
 `SQL` `CREATE TABLE` `표 만들기`
 
 ### 조건으로 골라 꺼내기
@@ -113,6 +115,8 @@ CREATE TABLE [표이름] ( id INTEGER PRIMARY KEY, [열1이름] TEXT, [열2이�
 SELECT [원하는 열들] FROM [표이름] WHERE [열] = '[찾을 값]';
 ```
 
+> 확인된 작성 예시 없음
+
 `SQL` `SELECT` `WHERE`
 
 ### AI에게 SQL 받기
@@ -120,6 +124,8 @@ SELECT [원하는 열들] FROM [표이름] WHERE [열] = '[찾을 값]';
 ```text
 나는 SQL 초보야. [표이름] 테이블에 [열들: id·이름·나이·도시] 가 있어. [원하는 결과: 30세 이상이고 서울 사는 사람 이름]을 뽑는 SQL을 한 줄로 써주고, 각 부분이 무슨 뜻인지 한국어로 짧게 설명해줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `SQL` `AI 활용` `프롬프트`
 
@@ -145,3 +151,7 @@ SELECT [원하는 열들] FROM [표이름] WHERE [열] = '[찾을 값]';
 - [Select](/concepts/select/)
 - [Where](/concepts/where/)
 - [Primary Key](/concepts/primary-key/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

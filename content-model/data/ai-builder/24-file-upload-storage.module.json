@@ -28,9 +28,10 @@
       "title": {
         "ko": "업로드+표시 코드 통째로 받기"
       },
-      "text": {
+      "template": {
         "ko": "나는 Supabase Storage를 처음 써. [avatars]라는 [Public] 버킷에 사용자가 고른 이미지를 업로드하고, 업로드가 끝나면 그 이미지를 화면에 바로 보여주는 코드를 [React / 순수 자바스크립트] 기준으로 만들어줘. 파일명 충돌을 막는 방법과 각 줄 주석도 함께."
       },
+      "examples": [],
       "tags": [
         "Storage",
         "업로드",
@@ -42,9 +43,10 @@
       "title": {
         "ko": "Storage 접근 정책(RLS) SQL 받기"
       },
-      "text": {
+      "template": {
         "ko": "Supabase Storage의 [avatars] 버킷에 대해 다음 규칙의 RLS 정책 SQL을 만들어줘: 1) 로그인한 사용자는 자기 user id 폴더 안에만 업로드 가능 2) 조회는 누구나 가능(공개). storage.foldername 함수를 사용하고, 대시보드 SQL Editor에 붙여넣을 수 있게 완성된 SQL로."
       },
+      "examples": [],
       "tags": [
         "Storage",
         "RLS",
@@ -56,9 +58,10 @@
       "title": {
         "ko": "비공개 파일 서명 URL 만들기"
       },
-      "text": {
+      "template": {
         "ko": "Supabase의 [contracts]라는 Private 버킷에 있는 [user123/계약서.pdf] 파일을, 로그인한 본인에게만 [60]초 동안 열 수 있는 임시 링크(signed URL)로 보여주는 코드를 만들어줘. 만료됐을 때의 처리도 함께."
       },
+      "examples": [],
       "tags": [
         "Storage",
         "서명 URL",
@@ -70,9 +73,10 @@
       "title": {
         "ko": "업로드 오류 진단"
       },
-      "text": {
+      "template": {
         "ko": "Supabase Storage에 파일을 업로드하는데 [에러 메시지] 오류가 나. 버킷 이름은 [avatars], Public 여부는 [ON/OFF], 로그인 상태는 [로그인함/익명]이야. 원인 후보와 확인 순서를 알려줘."
       },
+      "examples": [],
       "tags": [
         "Storage",
         "오류",
@@ -122,6 +126,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-builder",
+    "capturedAt": "2026-07-08T20:57:49.178Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

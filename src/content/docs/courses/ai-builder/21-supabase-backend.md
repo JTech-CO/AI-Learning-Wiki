@@ -118,6 +118,8 @@ Supabase가 이미 수만 명이 쓰는 검증된 '주방'(회원가입·표·AP
 키: 2025년 11월 이후 프로젝트 → Publishable key `sb_publishable_...`, 그 이전 → anon public `eyJ...`.
 ```
 
+> 확인된 작성 예시 없음
+
 `Supabase` `HTML` `복붙` `todo`
 
 ### AI에게 코드 수정 부탁하기
@@ -126,6 +128,8 @@ Supabase가 이미 수만 명이 쓰는 검증된 '주방'(회원가입·표·AP
 나는 Supabase로 todo 앱을 만들고 있어. 테이블 이름은 'todos'이고 열은 id, created_at, task야. 아래 HTML 코드에 [원하는 기능: 완료 체크박스, 삭제 버튼]을 추가해서 전체 코드를 다시 줘. 초보라서 그대로 복붙할 수 있게 한 파일로. [내 todo.html 코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `Supabase` `코드수정` `기능추가`
 
 ### 에러 해결을 AI에게 물어보기
@@ -133,6 +137,8 @@ Supabase가 이미 수만 명이 쓰는 검증된 '주방'(회원가입·표·AP
 ```text
 Supabase + 자바스크립트로 todo 앱을 만드는데 목록이 화면에 안 떠. 브라우저 F12 콘솔에 이런 빨간 에러가 떠: [에러 문구]. 초보가 이해할 수 있게 원인과 해결 순서를 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `Supabase` `에러해결` `디버깅`
 
@@ -158,3 +164,7 @@ Supabase + 자바스크립트로 todo 앱을 만드는데 목록이 화면에 �
 - [Api Key](/concepts/api-key/)
 - [Publishable Key](/concepts/publishable-key/)
 - [Row Level Security](/concepts/row-level-security/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

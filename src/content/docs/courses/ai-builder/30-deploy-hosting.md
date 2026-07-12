@@ -83,6 +83,8 @@ AI가 만들어준 포트폴리오 사이트 폴더(index.html 포함)를 인터
 내 프로젝트 폴더를 Vercel에 배포하려고 해. 지금 폴더 구조는 [파일 목록]이야. 1)Vercel 배포에 필요 없는 파일·폴더를 .gitignore에 넣어줘. 2)GitHub 웹사이트에 드래그&드롭으로 올릴 거라면, 드래그할 때 손으로 빼야 하는 폴더·파일이 뭔지 콕 짚어줘. 3)빠진 설정 파일(package.json 등)이 있으면 만들어줘. 4)비밀키로 빼야 할 부분이 있으면 환경변수로. 초보자도 따라 하게 단계별로.
 ```
 
+> 확인된 작성 예시 없음
+
 `배포` `준비` `gitignore`
 
 ### 배포 에러 해결
@@ -90,6 +92,8 @@ AI가 만들어준 포트폴리오 사이트 폴더(index.html 포함)를 인터
 ```text
 Vercel(또는 Netlify·Railway)에서 배포가 실패했어. Build Log에 나온 에러 메시지는: [로그 빨간 글씨 그대로]. 이 에러가 왜 났는지 초등학생도 알 만큼 쉽게 설명하고, 정확히 어느 파일의 어느 줄을 어떻게 고쳐야 하는지 복붙할 코드로 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `배포` `에러` `로그`
 
@@ -99,6 +103,8 @@ Vercel(또는 Netlify·Railway)에서 배포가 실패했어. Build Log에 나�
 다음은 내 코드야: [코드]. 이 코드에서 외부에 노출되면 안 되는 비밀값(API 키, 비밀번호, DB 주소 등)을 전부 찾아서, Vercel Environment Variables에 넣을 'Key 이름 = 설명' 표로 만들어줘. 그리고 코드에서 그 값을 환경변수로 불러오게 수정한 버전도.
 ```
 
+> 확인된 작성 예시 없음
+
 `환경변수` `보안` `API키`
 
 ### Vercel vs Netlify vs Railway 어디에 올릴지 판단
@@ -106,6 +112,8 @@ Vercel(또는 Netlify·Railway)에서 배포가 실패했어. Build Log에 나�
 ```text
 내가 만든 건 [무엇인지 한 줄로: AI 챗봇 웹사이트 / HTML만 있는 정적 포트폴리오 / 24시간 도는 텔레그램 봇 / DB가 필요한 가계부 앱]야. Vercel·Netlify·Railway 중 어디에 올리는 게 맞는지 이유와 함께 추천하고, 각 서비스가 진짜 무료인지(개인용 무료냐, Railway처럼 체험 크레딧만이냐)도 알려줘. 추천한 서비스의 배포 순서를 1~5단계로.
 ```
+
+> 확인된 작성 예시 없음
 
 `배포` `도구선택` `무료플랜`
 
@@ -133,3 +141,7 @@ Vercel(또는 Netlify·Railway)에서 배포가 실패했어. Build Log에 나�
 - [Environment Variable](/concepts/environment-variable/)
 - [Github](/concepts/github/)
 - [Continuous Deployment](/concepts/continuous-deployment/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

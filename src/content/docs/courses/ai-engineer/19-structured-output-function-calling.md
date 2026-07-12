@@ -81,6 +81,8 @@ id	point	sentiment	keyword
 아래 [고객 후기]를 분석해 JSON 배열로만 답해. 설명·인사말 금지, JSON만 출력. 각 원소 형식: {"id": 숫자, "[칸이름1]": [값종류, 예: 1~5 정수], "[칸이름2]": "[허용값들, 예: 긍정|부정|중립]", "[칸이름3]": "문자열"} 값이 애매하면 비우지 말고 [기본값, 예: 중립/없음]으로 채워. 데이터: [줄글 목록]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `구조화출력` `JSON`
 
 ### 구글시트에 바로 붙일 TSV 표
@@ -88,6 +90,8 @@ id	point	sentiment	keyword
 ```text
 아래 [데이터]를 헤더 포함 TSV(탭 구분) 표로만 줘. 첫 줄 헤더: [칸이름1]\t[칸이름2]\t[칸이름3]. 설명·코드블록 표시 없이 순수 표만. 데이터: [붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `TSV` `구글시트`
 
@@ -97,6 +101,8 @@ id	point	sentiment	keyword
 아래 [메일/문의 원문]에서 다음 칸만 뽑아 JSON으로만 답해: {"고객명": "문자열|미상", "요청유형": "환불|교환|배송문의|기타", "긴급도": "높음|보통|낮음", "한줄요약": "문자열"}. 본문에 없으면 '미상'. JSON만. 원문: [붙여넣기]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `추출` `JSON`
 
 ### 정해진 항목으로 분류만 (라벨링)
@@ -104,6 +110,8 @@ id	point	sentiment	keyword
 ```text
 아래 항목들을 다음 카테고리 중 하나로만 분류해 JSON 배열로. 카테고리: ["A", "B", "C", "기타"]. 형식: {"항목": "원문", "분류": "카테고리"}. 새 카테고리 만들지 말고 목록 안에서만. JSON만. 항목: [붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `분류` `라벨링`
 
@@ -130,3 +138,7 @@ id	point	sentiment	keyword
 - [Tsv](/concepts/tsv/)
 - [Data Extraction](/concepts/data-extraction/)
 - [Pipeline](/concepts/pipeline/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

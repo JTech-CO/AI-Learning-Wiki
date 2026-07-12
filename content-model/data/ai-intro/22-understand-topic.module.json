@@ -28,9 +28,10 @@
       "title": {
         "ko": "낯선 주제 쉽게 이해하기 (기본형)"
       },
-      "text": {
+      "template": {
         "ko": "[모르는 주제나 단어]가 뭐야? 초등학생도 이해할 수 있게, 일상 비유를 들어서 5문장 이내로 설명해줘. 그리고 왜 요즘 이게 중요한지도 한 문장 덧붙여줘."
       },
+      "examples": [],
       "tags": [
         "학습",
         "설명"
@@ -41,9 +42,10 @@
       "title": {
         "ko": "답이 어려울 때 더 파고들기"
       },
-      "text": {
+      "template": {
         "ko": "방금 설명에서 '[여전히 어려운 단어]'를 더 쉽게, 다른 비유로 다시 설명해줘. 전문용어는 빼고."
       },
+      "examples": [],
       "tags": [
         "학습",
         "되묻기"
@@ -54,9 +56,10 @@
       "title": {
         "ko": "이해 노트로 마무리 정리"
       },
-      "text": {
+      "template": {
         "ko": "지금까지 설명한 내용을 이렇게 정리해줘: (1) 핵심 3줄 (2) 가장 쉬운 비유 1개 (3) 초보자가 헷갈릴 용어 3개를 한 줄씩 풀이."
       },
+      "examples": [],
       "tags": [
         "학습",
         "요약",
@@ -68,9 +71,10 @@
       "title": {
         "ko": "긴 글·기사 통째로 이해하기"
       },
-      "text": {
+      "template": {
         "ko": "아래 글을 초등학생도 알게 쉽게 풀어줘. 모르는 용어는 괄호로 한 줄 풀이 달고, 마지막에 핵심 3줄로 요약해줘. [기사나 문서 전체 붙여넣기]"
       },
+      "examples": [],
       "tags": [
         "학습",
         "기사"
@@ -116,6 +120,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-intro",
+    "capturedAt": "2026-07-07T10:29:42.168Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

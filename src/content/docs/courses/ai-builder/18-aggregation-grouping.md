@@ -107,6 +107,8 @@ SELECT category AS 카테고리, SUM(amount) AS 매출 FROM sales WHERE sold_at 
 나는 SQLite를 쓰고 있어. 테이블 [테이블명]에는 컬럼이 [컬럼1, 컬럼2, 컬럼3]이 있어. 나는 [원하는 리포트: 카테고리별 월매출 상위 5개]를 만들고 싶어. GROUP BY와 필요하면 HAVING·ORDER BY·LIMIT을 써서 바로 실행 가능한 쿼리 하나만 주고, 각 줄이 무슨 역할인지 한 줄씩 한국어 주석으로 달아줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `집계` `쿼리생성` `GROUP BY`
 
 ### WHERE vs HAVING 판별
@@ -114,6 +116,8 @@ SELECT category AS 카테고리, SUM(amount) AS 매출 FROM sales WHERE sold_at 
 ```text
 내가 만든 이 SQL을 봐줘: [쿼리]. 이 조건 [조건 설명]을 넣어야 하는데 WHERE에 넣어야 하는지 HAVING에 넣어야 하는지 이유와 함께 알려주고, 고친 최종 쿼리를 줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `WHERE` `HAVING` `디버깅`
 
@@ -123,6 +127,8 @@ SELECT category AS 카테고리, SUM(amount) AS 매출 FROM sales WHERE sold_at 
 SQLite에서 이 쿼리를 돌렸더니 [에러 메시지]가 나왔어. 쿼리는 [쿼리]야. 원인을 초보자도 알게 설명하고, GROUP BY 규칙을 지킨 올바른 쿼리로 고쳐줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `에러` `디버깅` `GROUP BY`
 
 ### 결과 검산 요청
@@ -130,6 +136,8 @@ SQLite에서 이 쿼리를 돌렸더니 [에러 메시지]가 나왔어. 쿼리�
 ```text
 이 집계 쿼리 결과 [결과]가 맞는지 확인하고 싶어. 원본 데이터는 [샘플 몇 행]이야. SUM·COUNT·AVG가 논리적으로 맞는지 수동으로 검산해서 틀린 부분이 있으면 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `검산` `집계`
 
@@ -154,3 +162,7 @@ SQLite에서 이 쿼리를 돌렸더니 [에러 메시지]가 나왔어. 쿼리�
 - [Having](/concepts/having/)
 - [Count Sum Avg](/concepts/count-sum-avg/)
 - [Where Vs Having](/concepts/where-vs-having/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

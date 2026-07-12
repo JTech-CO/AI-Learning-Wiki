@@ -71,6 +71,8 @@ GitHub는 **코드와 파일을 인터넷에 저장하고, 누가 언제 뭘 바
 예: 'README에 [프로젝트 소개] 추가' / '[로그인 버튼] 색 [파란색]으로 변경'
 ```
 
+> 확인된 작성 예시 없음
+
 `GitHub` `커밋` `커밋 메시지`
 
 ### PR 설명 양식(복붙)
@@ -86,6 +88,8 @@ GitHub는 **코드와 파일을 인터넷에 저장하고, 누가 언제 뭘 바
 ## 확인할 점
 - [ ] [확인 항목]
 ```
+
+> 확인된 작성 예시 없음
 
 `GitHub` `PR` `풀 리퀘스트`
 
@@ -103,6 +107,8 @@ GitHub는 **코드와 파일을 인터넷에 저장하고, 누가 언제 뭘 바
 [관련 링크나 메모]
 ```
 
+> 확인된 작성 예시 없음
+
 `GitHub` `이슈` `할 일`
 
 ### AI에게 README 대신 써달라고 시키기
@@ -110,6 +116,8 @@ GitHub는 **코드와 파일을 인터넷에 저장하고, 누가 언제 뭘 바
 ```text
 내 GitHub 프로젝트의 README를 마크다운으로 써줘. 프로젝트 이름: [이름]. 무엇을 하는 프로젝트인지: [한 줄 설명]. 사용법: [어떻게 쓰는지]. 초보자도 알아보게 제목·목록·코드블록을 써서 짧게.
 ```
+
+> 확인된 작성 예시 없음
 
 `GitHub` `README` `AI 글쓰기`
 
@@ -136,3 +144,7 @@ GitHub는 **코드와 파일을 인터넷에 저장하고, 누가 언제 뭘 바
 - [Pull Request](/concepts/pull-request/)
 - [Issue](/concepts/issue/)
 - [Version Control](/concepts/version-control/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

@@ -87,8 +87,16 @@ function renderModuleBody(mod, lang, courseTitle) {
     out.push('## 실전 프롬프트\n');
     for (const p of prompts) {
       out.push(`### ${pick(p.title, lang) ?? '프롬프트'}`);
-      const text = pick(p.text, lang);
-      if (text) out.push('\n```text\n' + text.trim() + '\n```\n');
+      const template = pick(p.template ?? p.text, lang);
+      if (template) out.push('\n```text\n' + template.trim() + '\n```\n');
+      for (const example of p.examples ?? []) {
+        out.push(`#### ${pick(example.label, lang) ?? '작성 예시'}`);
+        const input = pick(example.input, lang);
+        if (input) out.push('\n**입력**\n\n```text\n' + input.trim() + '\n```\n');
+        const output = pick(example.output, lang);
+        if (output) out.push('**기대 결과**\n\n' + output + '\n');
+      }
+      if (!(p.examples ?? []).length) out.push('> 확인된 작성 예시 없음\n');
       const notes = pick(p.notes, lang);
       if (notes) out.push(`> 💡 ${notes}\n`);
       if (p.tags?.length) out.push(`\`${p.tags.join('` `')}\`\n`);
@@ -244,7 +252,7 @@ async function main() {
       const t = pick(prompt.title, lang) ?? '프롬프트';
       const src = `[${pick(mod.title, lang)}](${prefixLink(lang, `/courses/${mod.course}/${moduleSlug(mod)}/`)})`;
       const tags = prompt.tags?.length ? '`' + prompt.tags.join('` `') + '`' : '';
-      return `### ${t}\n\n\`\`\`text\n${(pick(prompt.text, lang) ?? '').trim()}\n\`\`\`\n\n출처: ${src} ${tags}\n`;
+      return `### ${t}\n\n\`\`\`text\n${(pick(prompt.template ?? prompt.text, lang) ?? '').trim()}\n\`\`\`\n\n출처: ${src} ${tags}\n`;
     });
     const fm = frontmatter({
       title: '프롬프트 라이브러리',

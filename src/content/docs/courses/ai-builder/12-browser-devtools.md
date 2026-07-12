@@ -73,6 +73,8 @@ Uncaught TypeError: Cannot read properties of undefined (reading 'id') at addToC
 에러 원문: [콘솔에서 복사한 빨간 에러 전체]
 ```
 
+> 확인된 작성 예시 없음
+
 `콘솔` `에러` `디버깅`
 
 ### 네트워크 상태코드 해석하기
@@ -80,6 +82,8 @@ Uncaught TypeError: Cannot read properties of undefined (reading 'id') at addToC
 ```text
 브라우저 Network 탭에서 [요청 이름: /api/login] 요청의 Status Code가 [숫자: 403]으로 나왔습니다. 이 상태코드가 일반적으로 무슨 의미인지, 이 요청에서 흔한 원인 3가지, 그리고 사용자가 직접 확인해볼 수 있는 점검 순서를 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `네트워크` `상태코드` `API`
 
@@ -91,6 +95,8 @@ HTML: [Elements에서 복사한 태그]
 CSS: [Styles 패널에서 복사한 값]
 ```
 
+> 확인된 작성 예시 없음
+
 `엘리먼트` `HTML` `CSS`
 
 ### DevTools로 문제 재현·기록하는 법 배우기
@@ -98,6 +104,8 @@ CSS: [Styles 패널에서 복사한 값]
 ```text
 웹사이트 [사이트/기능]에서 [버그 증상]이 가끔 발생합니다. 브라우저 개발자도구(Console, Network, Elements)를 이용해 이 문제를 재현하고 근거를 수집하는 단계별 체크리스트를 만들어줘. 각 단계에서 어떤 탭을 보고 무엇을 캡처/복사해야 하는지 함께 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `개발자도구` `재현` `체크리스트`
 
@@ -122,3 +130,7 @@ CSS: [Styles 패널에서 복사한 값]
 - [Network](/concepts/network/)
 - [Elements](/concepts/elements/)
 - [Debugging](/concepts/debugging/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

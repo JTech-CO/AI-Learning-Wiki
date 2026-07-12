@@ -83,6 +83,8 @@ merge conflict는 두 사람(또는 두 브랜치)이 **같은 파일의 같은 
 다음은 git merge conflict 블록이야. HEAD 쪽과 [브랜치이름] 쪽이 각각 무엇을 어떻게 바꿨는지 한국어로 설명하고, [이 코드의 목적: 로그인 검증] 관점에서 어느 쪽을 남기거나 어떻게 합치면 좋을지 추천해줘. 최종 결정은 내가 할 거야. [<<<<<<< 부터 >>>>>>> 까지 통째로]
 ```
 
+> 확인된 작성 예시 없음
+
 `merge conflict` `해석` `git`
 
 ### 두 버전 합치기(둘 다 필요할 때)
@@ -90,6 +92,8 @@ merge conflict는 두 사람(또는 두 브랜치)이 **같은 파일의 같은 
 ```text
 아래 충돌 블록에서 HEAD와 상대 코드가 둘 다 필요한 기능 같아. 두 변경을 모두 살리면서 논리적으로 하나로 합친 최종 코드를 만들어줘. 충돌 기호(<<<<<<< ======= >>>>>>>)는 결과에 절대 포함하지 마. [충돌 블록]
 ```
+
+> 확인된 작성 예시 없음
 
 `merge conflict` `합치기`
 
@@ -99,6 +103,8 @@ merge conflict는 두 사람(또는 두 브랜치)이 **같은 파일의 같은 
 내가 충돌을 해결한 코드야. 충돌 기호(<<<<<<<, =======, >>>>>>>)가 하나라도 남아있는지, 문법이 깨지지 않았는지 확인해줘. 문제가 있으면 정확히 몇 번째 줄인지 알려줘. [내가 편집한 파일 내용]
 ```
 
+> 확인된 작성 예시 없음
+
 `merge conflict` `검증`
 
 ### 충돌 예방 습관 코칭
@@ -106,6 +112,8 @@ merge conflict는 두 사람(또는 두 브랜치)이 **같은 파일의 같은 
 ```text
 나는 [프로젝트 설명]를 [인원수]명이서 git으로 협업하는 초보야. merge conflict를 애초에 덜 만들려면 커밋/브랜치/pull을 어떤 습관으로 해야 하는지 실천 규칙 5개를 우선순위 순으로 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `merge conflict` `예방` `협업`
 
@@ -130,3 +138,7 @@ merge conflict는 두 사람(또는 두 브랜치)이 **같은 파일의 같은 
 - [Conflict Markers](/concepts/conflict-markers/)
 - [Merge Abort](/concepts/merge-abort/)
 - [Collaboration](/concepts/collaboration/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

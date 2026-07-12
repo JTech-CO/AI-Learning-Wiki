@@ -88,6 +88,8 @@ console.log(res.content[0].text);
 초등학생도 이해하게 API가 뭔지 3문장으로 설명해줘
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `예시`
 
 ### 실행 에러 붙여넣고 해결받기
@@ -95,6 +97,8 @@ console.log(res.content[0].text);
 ```text
 나는 Node.js로 Anthropic Claude API를 처음 호출하는 중이야. 아래는 내 app.mjs 코드와 터미널에 뜬 에러 전문이야. 초보자가 이해할 수 있게 원인 한 줄 요약 + 정확히 어디를 어떻게 고칠지 단계로 알려줘. [내 코드 붙여넣기] [에러 메시지 붙여넣기]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `에러` `디버깅`
 
@@ -104,6 +108,8 @@ console.log(res.content[0].text);
 아래 Node.js Anthropic Claude API 최소 호출 예제를 [Python / 내가 쓰는 언어]로 똑같이 동작하게 바꿔줘. API 키는 코드에 직접 쓰지 말고 환경변수에서 읽도록 하고, 설치 명령어와 실행 명령어도 함께 알려줘. [예제 코드 붙여넣기]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `변환` `언어`
 
 ### 응답 JSON 구조 설명받기
@@ -112,6 +118,8 @@ console.log(res.content[0].text);
 Anthropic messages.create가 돌려주는 응답 객체의 구조를 초보자용으로 설명해줘. 특히 res.content[0].text가 왜 그렇게 접근하는지, content가 배열인 이유가 뭔지, 답 텍스트만 안전하게 꺼내는 코드도 알려줘.
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `JSON` `응답`
 
 ### 다음 단계로 확장 아이디어
@@ -119,6 +127,8 @@ Anthropic messages.create가 돌려주는 응답 객체의 구조를 초보자�
 ```text
 나는 방금 Claude API 첫 호출(질문 보내고 답 출력)에 성공했어. 이 20줄 예제를 조금씩 키워서 만들 수 있는 작은 프로젝트 5개를 난이도 순으로 추천하고, 각각 무엇을 추가로 배우면 되는지 한 줄씩 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `확장` `프로젝트`
 
@@ -143,3 +153,7 @@ Anthropic messages.create가 돌려주는 응답 객체의 구조를 초보자�
 - [Anthropic Sdk](/concepts/anthropic-sdk/)
 - [Environment Variable](/concepts/environment-variable/)
 - [Json Response](/concepts/json-response/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

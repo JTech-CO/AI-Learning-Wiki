@@ -92,6 +92,8 @@ hot = [f['day'] for f in forecasts if f['temp']>30]  # ['화']
 나는 파이썬 초보야. 아래는 [API 이름]을 호출해 받은 JSON 응답이야. 이 안에서 [원하는 값, 예: 현재 기온과 도시 이름]을 꺼내는 파이썬 코드를 인덱싱/딕셔너리 키 접근으로 한 줄씩 주석을 달아 설명해줘. 응답: [print(data) 결과]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `파싱` `API`
 
 ### 자료구조 선택 가이드
@@ -99,6 +101,8 @@ hot = [f['day'] for f in forecasts if f['temp']>30]  # ['화']
 ```text
 나는 [사용자 이름과 점수를 저장]하려고 해. 리스트·딕셔너리·튜플·집합 중 무엇을 써야 할지 이유와 함께 추천하고, 각각으로 만든 예시 코드를 짧게. 파이썬 초보가 이해할 수 있게.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `자료구조` `선택`
 
@@ -108,6 +112,8 @@ hot = [f['day'] for f in forecasts if f['temp']>30]  # ['화']
 아래 for 반복문을 리스트/딕셔너리 컴프리헨션 한 줄로 바꾸고 어떻게 바뀌었는지 단계별로 설명해줘. 초보가 나중에 스스로 할 수 있게 변환 규칙도. 코드: [내 for문]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `컴프리헨션`
 
 ### 에러 메시지 해석
@@ -115,6 +121,8 @@ hot = [f['day'] for f in forecasts if f['temp']>30]  # ['화']
 ```text
 파이썬에서 리스트/딕셔너리를 다루다 이 에러가 났어: [에러 메시지]. 내 코드는 [코드]야. 왜 나는지, KeyError/IndexError/TypeError 중 무엇인지 초보 눈높이로 설명하고 고친 코드를.
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `에러` `디버깅`
 
@@ -142,3 +150,7 @@ hot = [f['day'] for f in forecasts if f['temp']>30]  # ['화']
 - [Slicing](/concepts/slicing/)
 - [List Comprehension](/concepts/list-comprehension/)
 - [Json Parsing](/concepts/json-parsing/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

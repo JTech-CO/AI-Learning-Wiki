@@ -81,6 +81,8 @@ for attempt in range(5):
 Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘. 요구사항: (1) 429·408·5xx(500,502,503,504)와 Timeout·ConnectionError만 재시도하고 400·401·404는 즉시 예외 (2) 지수 백오프 base=1초, 2의 거듭제곱, max_retries=5 (3) random 지터 추가 (4) Retry-After 헤더가 있으면 우선 사용 (5) 대기 상한 60초 (6) 매 시도마다 attempt·상태코드·대기시간을 로그로. 주석을 한국어로.
 ```
 
+> 확인된 작성 예시 없음
+
 `오류 처리` `재시도` `지수 백오프` `함수`
 
 ### 내 기존 코드 견고하게 리팩터링
@@ -88,6 +90,8 @@ Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘
 ```text
 아래 API 호출 코드를 재시도·타임아웃 없이 그냥 한 번 호출하는 형태야. 지수 백오프 재시도, timeout 명시, 일시적/영구적 오류 구분을 넣어 견고하게 고쳐줘. 원래 로직은 유지하고 바뀐 부분을 주석으로. [내 코드]
 ```
+
+> 확인된 작성 예시 없음
 
 `리팩터링` `재시도` `타임아웃`
 
@@ -97,6 +101,8 @@ Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘
 [API 이름]의 공식 오류 응답 코드를 조사해서 '재시도 가능(일시적)' / '재시도 불가(영구적)' / '주의 필요' 3개 그룹으로 표를. 각 코드마다 의미와 권장 대응(재시도 여부·대기 방식)을 한 줄로.
 ```
 
+> 확인된 작성 예시 없음
+
 `오류 처리` `분류` `표`
 
 ### 재시도 로직 테스트 시나리오
@@ -104,6 +110,8 @@ Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘
 ```text
 방금 만든 재시도 함수를 검증할 테스트 코드를. httpstat.us 또는 mock을 써서 (1) 503 3번 후 성공 (2) 429 + Retry-After 헤더 (3) 타임아웃 (4) 400 즉시 실패 (5) max_retries 초과 최종 실패 — 5가지 시나리오를 각각 테스트하고 로그를.
 ```
+
+> 확인된 작성 예시 없음
 
 `테스트` `재시도` `검증`
 
@@ -131,3 +139,7 @@ Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘
 - [Timeout](/concepts/timeout/)
 - [Retry After](/concepts/retry-after/)
 - [Resilience](/concepts/resilience/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

@@ -127,6 +127,8 @@ GROUP BY c.id, c.name;
 테이블2 스키마: [CREATE TABLE]
 ```
 
+> 확인된 작성 예시 없음
+
 `JOIN` `쿼리생성` `SQL`
 
 ### INNER vs LEFT 차이를 내 데이터로 설명
@@ -136,6 +138,8 @@ GROUP BY c.id, c.name;
 [테이블1 데이터]
 [테이블2 데이터]
 ```
+
+> 확인된 작성 예시 없음
 
 `JOIN` `INNER-LEFT` `비교`
 
@@ -147,6 +151,8 @@ GROUP BY c.id, c.name;
 각 테이블 스키마: [스키마]
 ```
 
+> 확인된 작성 예시 없음
+
 `JOIN` `디버깅`
 
 ### 세 개 이상 테이블 연결로 확장
@@ -154,6 +160,8 @@ GROUP BY c.id, c.name;
 ```text
 지금 customers와 orders를 JOIN하고 있는데, 여기에 [세 번째 테이블: products]를 [공통 키: __]로 더 붙이고 싶어. 세 테이블을 이어 붙이는 SQLite 쿼리를 써주고, JOIN을 여러 번 이어 쓰는 원리를 설명해줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `JOIN` `다중테이블` `확장`
 
@@ -178,3 +186,7 @@ GROUP BY c.id, c.name;
 - [Left Join](/concepts/left-join/)
 - [Foreign Key](/concepts/foreign-key/)
 - [Relational](/concepts/relational/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

@@ -28,9 +28,10 @@
       "title": {
         "ko": "긴 문서/매뉴얼을 캐시로 묶어 반복 질문"
       },
-      "text": {
+      "template": {
         "ko": "긴 문서/매뉴얼을 캐시로 묶어 반복 질문할 때:\n\n```python\nresp = client.messages.create(\n    model=\"claude-opus-4-8\",\n    max_tokens=300,\n    system=[\n        {\"type\": \"text\", \"text\": \"너는 [사내 규정 안내 봇]이야. 아래 문서만 근거로 답하고 문서에 없으면 '문서에 없음'.\"},\n        {\"type\": \"text\", \"text\": \"\"\"[안 바뀌는 긴 문서 전문 — Opus·Haiku4.5는 4,096토큰↑, Sonnet4.6은 2,048토큰↑]\"\"\", \"cache_control\": {\"type\": \"ephemeral\"}},\n    ],\n    messages=[{\"role\": \"user\", \"content\": \"[매번 바뀌는 질문]\"}],\n)\n```"
       },
+      "examples": [],
       "tags": [
         "프롬프트 캐싱",
         "cache_control",
@@ -42,9 +43,10 @@
       "title": {
         "ko": "여러 예시(few-shot)를 캐시해 분류 작업 싸게 반복"
       },
-      "text": {
+      "template": {
         "ko": "여러 예시(few-shot)를 캐시해 분류 작업을 싸게 반복할 때:\n\n```python\nsystem=[\n    {\"type\": \"text\", \"text\": \"너는 문의를 카테고리로 분류해. 아래 예시 규칙을 따라.\"},\n    {\"type\": \"text\", \"text\": \"\"\"예시1: 입력=[...] 정답=[...] ... (예시를 충분히 길게)\"\"\", \"cache_control\": {\"type\": \"ephemeral\"}},\n]\nmessages=[{\"role\": \"user\", \"content\": \"분류할 새 문의: [내용]\"}]\n```"
       },
+      "examples": [],
       "tags": [
         "프롬프트 캐싱",
         "few-shot",
@@ -56,9 +58,10 @@
       "title": {
         "ko": "1시간 캐시(베타 헤더 필수)"
       },
-      "text": {
+      "template": {
         "ko": "1시간 캐시(베타 헤더 필수) — ttl만으로는 안 되고 베타 헤더 + ttl 둘 다:\n\n```python\n# ttl만으로는 안 됨. 베타 헤더 + ttl 둘 다\nresp = client.messages.create(\n    model=\"claude-opus-4-8\",\n    max_tokens=300,\n    extra_headers={\"anthropic-beta\": \"extended-cache-ttl-2025-04-11\"},\n    system=[\n        {\"type\": \"text\", \"text\": \"너는 문서 도우미야.\"},\n        {\"type\": \"text\", \"text\": \"\"\"[긴 고정 문서]\"\"\", \"cache_control\": {\"type\": \"ephemeral\", \"ttl\": \"1h\"}},\n    ],\n    messages=[{\"role\": \"user\", \"content\": \"[질문]\"}],\n)\n```"
       },
+      "examples": [],
       "tags": [
         "프롬프트 캐싱",
         "ttl",
@@ -70,9 +73,10 @@
       "title": {
         "ko": "캐시 적중 여부 자동 점검"
       },
-      "text": {
+      "template": {
         "ko": "캐시 적중 여부 자동 점검:\n\n```python\nu = resp.usage\nprint(\"저장(write):\", u.cache_creation_input_tokens)\nprint(\"읽기(read):\", u.cache_read_input_tokens)\nif u.cache_read_input_tokens > 0:\n    print(\"✅ 캐시 적중! 비용 90% 절감 중\")\nelif u.cache_creation_input_tokens > 0:\n    print(\"💾 첫 저장 완료\")\nelse:\n    print(\"⚠️ 캐시 안 됨 — 문맥이 최소 토큰보다 짧음\")\n```"
       },
+      "examples": [],
       "tags": [
         "프롬프트 캐싱",
         "usage",
@@ -124,6 +128,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-engineer",
+    "capturedAt": "2026-07-11T23:11:02.162Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

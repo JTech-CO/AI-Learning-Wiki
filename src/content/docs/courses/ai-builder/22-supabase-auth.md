@@ -84,6 +84,8 @@ supabase.auth.onAuthStateChange((_e, session) => setUser(session?.user ?? null))
 나는 [React / 순수 HTML+JS] 로 만든 앱에 Supabase Auth를 붙이려고 해. 다음을 포함한 완성 코드를 파일 단위로 줘: 1)supabaseClient 초기화 (URL=[내 Project URL], anon key=[내 anon key]) 2)이메일 회원가입·로그인 폼 3)구글 소셜 로그인 버튼 4)세션 유무에 따라 로그인 화면과 대시보드를 나누는 로직 5)로그아웃 버튼. 초보자가 복붙해서 바로 돌아가게 주석도 한국어로.
 ```
 
+> 확인된 작성 예시 없음
+
 `Supabase` `인증` `전체코드` `로그인화면`
 
 ### 로그인 에러 메시지 해석
@@ -91,6 +93,8 @@ supabase.auth.onAuthStateChange((_e, session) => setUser(session?.user ?? null))
 ```text
 Supabase Auth로 로그인하는데 이런 에러가 떠: [에러 메시지]. 이게 무슨 뜻인지, 코드/설정 중 어디를 고쳐야 하는지 초보자도 알게 단계별로 설명해줘. 내 현재 코드는: [코드]
 ```
+
+> 확인된 작성 예시 없음
 
 `Supabase` `에러해석` `디버깅`
 
@@ -100,6 +104,8 @@ Supabase Auth로 로그인하는데 이런 에러가 떠: [에러 메시지]. �
 Supabase에서 구글 로그인을 붙였는데 [증상: redirect가 안 됨 / provider is not enabled 등]. Google Cloud OAuth 클라이언트와 Supabase Authentication 설정에서 확인해야 할 항목들을 체크리스트로 줘. redirect URL은 [내 앱 주소].
 ```
 
+> 확인된 작성 예시 없음
+
 `Supabase` `구글` `OAuth` `설정점검`
 
 ### 로그인한 사용자만 접근 가능한 화면 만들기
@@ -107,6 +113,8 @@ Supabase에서 구글 로그인을 붙였는데 [증상: redirect가 안 됨 / p
 ```text
 Supabase 세션이 있는 사용자만 [페이지 이름] 을 볼 수 있게 하고, 세션이 없으면 로그인 화면으로 보내는 보호 로직을 [React / 순수 JS] 로 만들어줘. getSession과 onAuthStateChange를 사용해줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `Supabase` `세션` `보호라우트`
 
@@ -131,3 +139,7 @@ Supabase 세션이 있는 사용자만 [페이지 이름] 을 볼 수 있게 하
 - [Session](/concepts/session/)
 - [Oauth](/concepts/oauth/)
 - [Social Login](/concepts/social-login/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

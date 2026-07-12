@@ -28,9 +28,10 @@
       "title": {
         "ko": "HTML 한 페이지 todo 앱 (그대로 복붙, 두 곳만 교체)"
       },
-      "text": {
+      "template": {
         "ko": "아래 HTML을 그대로 복사한 뒤, 코드 안 `SUPABASE_URL`과 `SUPABASE_KEY` 두 곳만 내 값으로 교체해서 `todo.html`로 저장하고 더블클릭하세요.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset='utf-8'>\n  <title>내 할일</title>\n</head>\n<body>\n  <h2>내 할 일</h2>\n  <input id='t' placeholder='할 일 입력'>\n  <button onclick='add()'>추가</button>\n  <ul id='list'></ul>\n  <script src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2'></script>\n  <script>\n    const SUPABASE_URL='[내_Project_URL]';\n    const SUPABASE_KEY='[내_Publishable_key_또는_anon_public_키]';\n    const db=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);\n    async function load(){\n      const{data}=await db.from('todos').select('*').order('id');\n      document.getElementById('list').innerHTML=data.map(r=>'<li>'+r.task+'</li>').join('');\n    }\n    async function add(){\n      const v=document.getElementById('t').value;\n      if(!v)return;\n      await db.from('todos').insert({task:v});\n      document.getElementById('t').value='';\n      load();\n    }\n    load();\n  </script>\n</body>\n</html>\n```\n\n키: 2025년 11월 이후 프로젝트 → Publishable key `sb_publishable_...`, 그 이전 → anon public `eyJ...`."
       },
+      "examples": [],
       "tags": [
         "Supabase",
         "HTML",
@@ -43,9 +44,10 @@
       "title": {
         "ko": "AI에게 코드 수정 부탁하기"
       },
-      "text": {
+      "template": {
         "ko": "나는 Supabase로 todo 앱을 만들고 있어. 테이블 이름은 'todos'이고 열은 id, created_at, task야. 아래 HTML 코드에 [원하는 기능: 완료 체크박스, 삭제 버튼]을 추가해서 전체 코드를 다시 줘. 초보라서 그대로 복붙할 수 있게 한 파일로. [내 todo.html 코드]"
       },
+      "examples": [],
       "tags": [
         "Supabase",
         "코드수정",
@@ -57,9 +59,10 @@
       "title": {
         "ko": "에러 해결을 AI에게 물어보기"
       },
-      "text": {
+      "template": {
         "ko": "Supabase + 자바스크립트로 todo 앱을 만드는데 목록이 화면에 안 떠. 브라우저 F12 콘솔에 이런 빨간 에러가 떠: [에러 문구]. 초보가 이해할 수 있게 원인과 해결 순서를 알려줘."
       },
+      "examples": [],
       "tags": [
         "Supabase",
         "에러해결",
@@ -110,6 +113,9 @@
   ],
   "source": {
     "platform": "eduverse-ai.app",
-    "method": "authenticated-crawl"
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-builder",
+    "capturedAt": "2026-07-08T20:58:30.999Z",
+    "captureTimeBasis": "file-mtime-estimate"
   }
 }

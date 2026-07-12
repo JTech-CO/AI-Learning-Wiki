@@ -2,12 +2,22 @@
   "id": "ai-builder/15-database-sql-basics",
   "course": "ai-builder",
   "order": 15,
-  "title": { "ko": "데이터베이스·SQL 기초 — 데이터를 담고 꺼내기" },
-  "summary": { "ko": "테이블·행·열·기본키 개념과 SELECT·WHERE 같은 기초 SQL로 데이터를 꺼내는 법을 익힌다. 엑셀 1만 줄을 스크롤하는 대신 '서울에 사는 30대 고객' 같은 답을 1초 만에 뽑는다." },
+  "title": {
+    "ko": "데이터베이스·SQL 기초 — 데이터를 담고 꺼내기"
+  },
+  "summary": {
+    "ko": "테이블·행·열·기본키 개념과 SELECT·WHERE 같은 기초 SQL로 데이터를 꺼내는 법을 익힌다. 엑셀 1만 줄을 스크롤하는 대신 '서울에 사는 30대 고객' 같은 답을 1초 만에 뽑는다."
+  },
   "objectives": [
-    { "ko": "무료 온라인 데이터베이스(sqliteonline.com)에 직접 표(테이블)를 만든다" },
-    { "ko": "SELECT·WHERE로 원하는 조건의 데이터만 골라서 꺼낸다" },
-    { "ko": "AI가 써준 SQL을 직접 Run 해서 결과를 화면에서 눈으로 확인한다" }
+    {
+      "ko": "무료 온라인 데이터베이스(sqliteonline.com)에 직접 표(테이블)를 만든다"
+    },
+    {
+      "ko": "SELECT·WHERE로 원하는 조건의 데이터만 골라서 꺼낸다"
+    },
+    {
+      "ko": "AI가 써준 SQL을 직접 Run 해서 결과를 화면에서 눈으로 확인한다"
+    }
   ],
   "body": {
     "ko": "## 핵심 개념\n\n데이터베이스는 **'잘 정리된 거대한 엑셀 표 창고'**예요. 표(테이블) 한 개는 **가로줄(행 = 데이터 한 건, 예: 고객 한 명)**과 **세로칸(열 = 항목, 예: 이름·나이·도시)**으로 이루어져요. **기본키(primary key)**는 학생의 학번처럼 '겹치지 않는 번호표'라서 데이터를 정확히 1건 집어낼 수 있어요. **SQL**은 이 창고 직원에게 시키는 '명령 문장'이에요. **SELECT**는 '꺼내 와', **WHERE**는 '단, 이 조건에 맞는 것만'. 즉 `SELECT 이름 FROM 고객 WHERE 도시 = '서울'`은 '고객 표에서 도시가 서울인 사람의 이름만 가져와'라는 한국어 부탁을 영어 문법으로 적은 것뿐이에요.\n\n**테이블 한 개의 구조**\n\n- 📊 **열(컬럼)** — 이름·나이·도시\n- ➡️ **행(로우)** — 고객 1명 = 1줄\n- 🔑 **기본키** — 겹치지 않는 번호표\n- 🔍 **SELECT** — 꺼내 와\n- 🎯 **WHERE** — 이 조건만\n\n### 왜 이게 될까?\n\nAI는 이미 수억 줄의 SQL 예문을 학습해서, \"이 표에서 이런 조건으로 뽑아줘\"라는 한국어 문장을 SELECT·WHERE 문법으로 바로 옮겨줘요. 당신은 **열 이름과 원하는 결과만 정확히** 말하면 되고, 등호 하나·세미콜론 하나 같은 문법 실수는 AI가 알아서 처리해요. 대신 나온 SQL을 sqliteonline.com에 붙여 **직접 Run 해서 눈으로 확인하는 건 항상 당신 몫**이에요.\n\n## 👀 따라하기 예시 — 고객 표에서 \"부산에 사는 사람 중 나이 많은 순으로\"\n\n**① AI에게 표 구조 + 원하는 결과를 그대로** \"고객 테이블에 id·이름·나이·도시 열이 있어. 부산에 사는 사람을 나이 많은 순으로 뽑는 SQL 한 줄 써줘.\" →\n\n```sql\nSELECT 이름, 나이 FROM 고객 WHERE 도시 = '부산' ORDER BY 나이 DESC;\n```\n\n> 💡 열 이름과 조건만 정확히 알려주면 AI가 WHERE·ORDER BY 문법을 알아서 조립해요.\n\n**② 받은 SQL을 그대로 sqliteonline.com 입력칸에 붙이기**\n> 💡 AI 답을 신뢰만 하지 않고 반드시 실제로 돌려서 검증하는 습관이 핵심이에요.\n\n**③ 파란 Run 버튼 누르기** — 결과칸에 `이서연(28)` 1줄. 부산 거주자가 이서연 한 명뿐이라 정렬해도 1줄이에요.\n> 💡 조건에 맞는 사람이 적으면 결과도 그만큼만 나오는 게 정상이에요. 에러가 아니에요.\n\n**④ 결과가 이상하면 AI에게 바로 되묻기** \"결과가 1줄만 나왔는데 맞아?\" → \"네, 고객 표에 부산 거주자가 이서연 한 명뿐이라 정상입니다.\"\n> 💡 AI는 대화형이라 결과를 보여주고 되물으면 원인을 바로 설명해줘요.\n\n**좋은 결과의 기준**: (1) 조건에 맞는 사람만 정확히 나왔는가 (2) 정렬 순서가 요청한 대로인가(나이 많은 순) (3) AI가 준 SQL을 내가 직접 Run 해서 확인했는가.\n\n## 단계별 따라하기\n\n1. **무료 연습장 열기(가입·설치 0)** — sqliteonline.com. 왼쪽 = 표 목록, 가운데 위 = 명령을 적는 흰 입력칸, 가운데 아래 = 결과. 왼쪽 위에 'SQLite'라고 적힌 초록 칸이 보이면 제대로예요. 누를 버튼은 딱 'Run'(파란 ▶) 하나.\n2. **표(테이블) 만들기 — 빈 엑셀 시트 만들 듯** — 가운데 흰 입력칸에 붙여넣고 Run. `CREATE TABLE`은 '새 표를 만들어라', 괄호 안은 '열 이름과 그 칸에 들어갈 자료 종류'(TEXT = 글자, INTEGER = 숫자). 'Query executed successfully' 초록 글씨가 뜨면 성공.\n\n```sql\nCREATE TABLE 고객 ( id INTEGER PRIMARY KEY, 이름 TEXT, 나이 INTEGER, 도시 TEXT );\n```\n\n3. **데이터 한 줄씩 채워넣기** — `INSERT INTO`는 '이 표에 한 줄 추가', VALUES 뒤 괄호가 실제 값. 글자(이름·도시)는 작은따옴표 `' '`로 감싸고, 숫자(나이)는 따옴표 없이.\n\n```sql\nINSERT INTO 고객 (id, 이름, 나이, 도시) VALUES (1,'김민수',34,'서울'), (2,'이서연',28,'부산'), (3,'박지훈',41,'서울'), (4,'최유진',25,'대구');\n```\n\n4. **전부 꺼내 보기 — `SELECT *`** — 별표 `*`는 '모든 열'. 결과가 비어 있으면 3단계 INSERT를 안 돌린 거예요.\n\n```sql\nSELECT * FROM 고객;\n```\n\n5. **조건 걸어 골라내기 — WHERE** — WHERE 뒤에 조건을 적으면 그 조건에 맞는 줄만 나와요. 등호는 `=` 하나만(엑셀의 `==` 아님). 1만 명이 있어도 결과는 똑같이 1초 — 엑셀 스크롤과의 결정적 차이예요.\n\n```sql\nSELECT 이름, 나이 FROM 고객 WHERE 도시 = '서울';\n```\n\n6. **숫자 조건·정렬까지 — 실전 한 방** — `>`는 '~보다 큰', `<`는 '~보다 작은'. `ORDER BY`는 '정렬해라', 뒤에 `DESC`를 붙이면 '큰 것부터'. 박지훈(41) → 김민수(34) 순으로 나와요.\n\n```sql\nSELECT 이름, 나이, 도시 FROM 고객 WHERE 나이 >= 30 ORDER BY 나이 DESC;\n```\n\n7. **AI에게 SQL 받아쓰기(외울 필요 없음)** — 문법이 헷갈리면 ChatGPT/Claude에 한국어로 시키면 SQL을 써 줘요. 표의 열 이름과 원하는 결과를 적고, 받은 SQL을 sqliteonline.com 입력칸에 붙여 'Run'으로 확인. 핵심: AI가 준 답도 반드시 실제로 돌려서 결과를 눈으로 확인하는 습관.\n\n## 흔한 실수 → 교정\n\n- ✗ 글자 값에 따옴표를 안 붙임(`도시 = 서울`) → **글자는 반드시 작은따옴표로 감쌈: `도시 = '서울'`.** 숫자(`나이 = 30`)는 따옴표 없이.\n- ✗ 비교에 `==`를 씀(엑셀·프로그래밍 습관) → **SQL의 '같다'는 등호 하나: `나이 = 30`.** 두 개(`==`)는 에러.\n- ✗ 문장 끝에 세미콜론(`;`)을 빼먹음 → **한 명령이 끝나면 끝에 `;`를 붙임.** 여러 명령을 한 번에 돌릴 때 특히 필수.\n- ✗ INSERT(넣기) 없이 SELECT만 해서 결과가 빈 줄로 나옴 → **표를 만들면 처음엔 비어 있음. 먼저 INSERT로 데이터를 넣은 뒤 SELECT.**\n\n## 도구\n\n- 🛠 **SQLite Online** (sqliteonline.com) — 가입·설치 없이 브라우저에서 바로 SQL 연습.\n- 🛠 **ChatGPT** (chat.openai.com) — 한국어로 부탁하면 SQL 문장을 대신 작성·설명.\n- 🛠 **Claude** (claude.ai) — 긴 표 구조·복잡한 조건도 정확히 SQL로 변환."
@@ -15,32 +25,96 @@
   "prompts": [
     {
       "id": "p15b-create-table",
-      "title": { "ko": "표 만들기(열 바꿔서 재사용)" },
-      "text": { "ko": "CREATE TABLE [표이름] ( id INTEGER PRIMARY KEY, [열1이름] TEXT, [열2이름] INTEGER );" },
-      "tags": ["SQL", "CREATE TABLE", "표 만들기"]
+      "title": {
+        "ko": "표 만들기(열 바꿔서 재사용)"
+      },
+      "template": {
+        "ko": "CREATE TABLE [표이름] ( id INTEGER PRIMARY KEY, [열1이름] TEXT, [열2이름] INTEGER );"
+      },
+      "examples": [],
+      "tags": [
+        "SQL",
+        "CREATE TABLE",
+        "표 만들기"
+      ]
     },
     {
       "id": "p15b-select-where",
-      "title": { "ko": "조건으로 골라 꺼내기" },
-      "text": { "ko": "SELECT [원하는 열들] FROM [표이름] WHERE [열] = '[찾을 값]';" },
-      "tags": ["SQL", "SELECT", "WHERE"]
+      "title": {
+        "ko": "조건으로 골라 꺼내기"
+      },
+      "template": {
+        "ko": "SELECT [원하는 열들] FROM [표이름] WHERE [열] = '[찾을 값]';"
+      },
+      "examples": [],
+      "tags": [
+        "SQL",
+        "SELECT",
+        "WHERE"
+      ]
     },
     {
       "id": "p15b-ask-ai-sql",
-      "title": { "ko": "AI에게 SQL 받기" },
-      "text": { "ko": "나는 SQL 초보야. [표이름] 테이블에 [열들: id·이름·나이·도시] 가 있어. [원하는 결과: 30세 이상이고 서울 사는 사람 이름]을 뽑는 SQL을 한 줄로 써주고, 각 부분이 무슨 뜻인지 한국어로 짧게 설명해줘." },
-      "tags": ["SQL", "AI 활용", "프롬프트"]
+      "title": {
+        "ko": "AI에게 SQL 받기"
+      },
+      "template": {
+        "ko": "나는 SQL 초보야. [표이름] 테이블에 [열들: id·이름·나이·도시] 가 있어. [원하는 결과: 30세 이상이고 서울 사는 사람 이름]을 뽑는 SQL을 한 줄로 써주고, 각 부분이 무슨 뜻인지 한국어로 짧게 설명해줘."
+      },
+      "examples": [],
+      "tags": [
+        "SQL",
+        "AI 활용",
+        "프롬프트"
+      ]
     }
   ],
-  "mission": { "ko": "이제 당신 차례! '대구에 사는 사람 중 나이가 25세 이상인 사람'을 뽑아보세요. AI에게 한국어로 요청해 SQL을 받고, sqliteonline.com에서 직접 Run 해서 결과를 눈으로 확인하세요." },
+  "mission": {
+    "ko": "이제 당신 차례! '대구에 사는 사람 중 나이가 25세 이상인 사람'을 뽑아보세요. AI에게 한국어로 요청해 SQL을 받고, sqliteonline.com에서 직접 Run 해서 결과를 눈으로 확인하세요."
+  },
   "rubric": [
-    { "criterion": { "ko": "AI가 준 SQL에 작은따옴표(글자)와 숫자 구분이 제대로 되어 있나" }, "max": 5 },
-    { "criterion": { "ko": "조건 두 개(도시·나이)를 AND로 연결했나" }, "max": 5 },
-    { "criterion": { "ko": "결과를 직접 Run 해서 눈으로 확인했나, 아니면 AI 말만 믿었나" }, "max": 5 }
+    {
+      "criterion": {
+        "ko": "AI가 준 SQL에 작은따옴표(글자)와 숫자 구분이 제대로 되어 있나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "조건 두 개(도시·나이)를 AND로 연결했나"
+      },
+      "max": 5
+    },
+    {
+      "criterion": {
+        "ko": "결과를 직접 Run 해서 눈으로 확인했나, 아니면 AI 말만 믿었나"
+      },
+      "max": 5
+    }
   ],
   "difficulty": "intermediate",
-  "tags": ["데이터베이스", "SQL", "테이블", "SELECT", "WHERE", "기본키"],
+  "tags": [
+    "데이터베이스",
+    "SQL",
+    "테이블",
+    "SELECT",
+    "WHERE",
+    "기본키"
+  ],
   "estimatedMinutes": 25,
-  "concepts": ["database", "sql", "table", "select", "where", "primary-key"],
-  "source": { "platform": "eduverse-ai.app", "method": "authenticated-crawl" }
+  "concepts": [
+    "database",
+    "sql",
+    "table",
+    "select",
+    "where",
+    "primary-key"
+  ],
+  "source": {
+    "platform": "eduverse-ai.app",
+    "method": "authenticated-crawl",
+    "url": "https://eduverse-ai.app/learn?course=ai-builder",
+    "capturedAt": "2026-07-08T20:37:30.994Z",
+    "captureTimeBasis": "file-mtime-estimate"
+  }
 }

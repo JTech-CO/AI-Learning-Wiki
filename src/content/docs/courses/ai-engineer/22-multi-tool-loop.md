@@ -104,6 +104,8 @@ AI는 수많은 "도구 요청 → 결과 받음 → 다음 행동 결정" 대�
 나는 [Node.js]로 Anthropic 메시지 API를 써서 미니 에이전트를 만들고 있어. 도구 두 개를 등록하고 stop_reason이 tool_use가 아닐 때까지 도는 도구 루프를 완성해줘. 도구1: [get_weather - 도시명을 받아 섭씨 기온 반환], 도구2: [calculate - 수식 문자열을 계산]. 요구사항: (1) tools 배열을 JSON Schema로 정의 (2) name→실제 함수 디스패처(mock) (3) while 루프에서 tool_result를 tool_use_id와 함께 되먹임 (4) 최대 반복 8회 가드 (5) 각 스텝 콘솔 로그. 전체 실행 가능한 코드로.
 ```
 
+> 확인된 작성 예시 없음
+
 `도구 루프` `코드 생성` `에이전트`
 
 ### 도구 description 다듬기
@@ -111,6 +113,8 @@ AI는 수많은 "도구 요청 → 결과 받음 → 다음 행동 결정" 대�
 ```text
 아래 도구 정의에서 description이 모호해서 모델이 언제 써야 할지 헷갈릴 것 같아. 모델이 정확히 이 도구를 고르도록 description과 input_schema를 더 구체적으로. 각 파라미터가 무엇이고 언제 쓰는지 한 줄씩 포함: [내 도구 JSON]
 ```
+
+> 확인된 작성 예시 없음
 
 `description` `도구 스키마`
 
@@ -120,6 +124,8 @@ AI는 수많은 "도구 요청 → 결과 받음 → 다음 행동 결정" 대�
 내 도구 루프가 같은 도구를 계속 반복 호출하며 멈추지 않아. 아래 코드를 보고 원인을 짚어줘. 특히 (1) tool_result를 제대로 되먹이고 있는지 (2) tool_use_id가 매칭되는지 (3) assistant 응답을 messages에 다시 넣고 있는지 (4) 종료 조건이 맞는지 점검하고 수정본을: [내 루프 코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `디버깅` `무한루프` `도구 루프`
 
 ### 새 도구 하나 추가하기
@@ -127,6 +133,8 @@ AI는 수많은 "도구 요청 → 결과 받음 → 다음 행동 결정" 대�
 ```text
 지금 내 에이전트에 도구 [get_weather, calculate]가 있어. 여기에 [save_note - 텍스트를 메모로 저장]라는 세 번째 도구를 추가하고 싶어. tools 배열 정의, 디스패처 분기, 그리고 이 도구가 마지막 단계에서 호출되도록 유도하는 시스템 프롬프트 한 줄을 함께.
 ```
+
+> 확인된 작성 예시 없음
 
 `도구 추가` `다중 도구`
 
@@ -152,3 +160,7 @@ AI는 수많은 "도구 요청 → 결과 받음 → 다음 행동 결정" 대�
 - [Tool Result](/concepts/tool-result/)
 - [Stop Reason](/concepts/stop-reason/)
 - [Max Iterations](/concepts/max-iterations/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>

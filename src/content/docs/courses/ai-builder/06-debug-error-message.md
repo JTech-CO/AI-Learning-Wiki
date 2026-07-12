@@ -78,6 +78,8 @@ TypeError: Cannot read properties of undefined (reading 'name')
 답은 이 순서로 줘: 1)원인 한 줄 2)고친 코드 3)왜 그렇게 고쳤는지 초보용 설명
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `디버깅` `상황·기대·실제`
 
 ### 이 에러가 무슨 뜻인지 풀어달라고 하기
@@ -86,6 +88,8 @@ TypeError: Cannot read properties of undefined (reading 'name')
 아래 에러 메시지가 무슨 뜻인지 코딩 초보에게 설명하듯 풀어줘. 특히 (1)에러 종류가 뜻하는 것 (2)어느 파일 몇 번째 줄을 봐야 하는지 콕 집어줘.
 (에러 메시지 붙여넣기)
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `에러 해석`
 
@@ -96,6 +100,8 @@ TypeError: Cannot read properties of undefined (reading 'name')
 [새 에러 메시지]
 ```
 
+> 확인된 작성 예시 없음
+
 `프롬프트` `반복 루프`
 
 ### 에러가 안 뜨는데 결과가 이상할 때
@@ -104,6 +110,8 @@ TypeError: Cannot read properties of undefined (reading 'name')
 에러 메시지는 없는데 결과가 이상해. [기대: 이렇게 나와야 하는데] [실제: 이렇게 나와]. 원인을 찾을 수 있게, 내가 어디에 무슨 값을 찍어보면(console.log 등) 되는지 초보용으로 알려줘.
 [관련 코드]
 ```
+
+> 확인된 작성 예시 없음
 
 `프롬프트` `디버깅`
 
@@ -128,3 +136,7 @@ TypeError: Cannot read properties of undefined (reading 'name')
 - [Stack Trace](/concepts/stack-trace/)
 - [Context Expected Actual](/concepts/context-expected-actual/)
 - [Iteration](/concepts/iteration/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

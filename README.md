@@ -1,53 +1,65 @@
 # AI Learning Wiki
 
-EduVerse(`eduverse-ai.app`)의 AI 교육 콘텐츠 — 입문부터 실무·빌더·엔지니어링·자동화·금융·트렌드까지
-총 ~297개 모듈과 프롬프트·로드맵·직무 경로 — 를 한데 모아, **위키피디아/나무위키식으로
-"AI에 관한 무엇이든 찾아볼 수 있는" 내부 지식베이스**로 재구성하는 프로젝트.
+EduVerse의 AI 교육 콘텐츠와 자체 제작 데이터를 정규화해, 검색 가능한 AI 지식 위키와 학습자 맞춤 로드맵으로 제공하는 프로젝트입니다.
 
-> **범위**: 운영자 허락을 받은 **팀/그룹 내부용**. 현 단계에서 사용자별 문서 편집 기능은 제외(읽기·검색 중심).
+> 데이터 수집과 이용은 EduVerse 운영 측과 협의된 범위에서 진행합니다. 현재 공개 범위는 확정 전이며, 기본 운영 원칙은 팀/그룹 내부용입니다.
 
-## 지금 상태 (2026-07-07)
+## 현재 상태
 
-정찰과 설계를 마쳤고, **딱 하나가 막혀 있다: 실제 콘텐츠 데이터 확보.**
+- 기준일: 2026-07-12
+- 공식 로컬 매니페스트: 시작 코스 8개 + 메인 코스 297개 = 305개
+- 정규화 완료: 170개(55.7%)
+- 마지막 완료: AI 엔지니어 26번 `임베딩과 코사인 유사도`
+- 다음 수집: AI 엔지니어 27번
+- 남은 수집: 135개
+- 프런트엔드: Astro + Starlight + Pagefind
+- 지원 언어: 현재 한국어 원문만 검증됨
 
-EduVerse의 실제 커리큘럼 본문·프롬프트는 로그인 후 `/api/`에서 동적 로드되므로 인증 없이 긁을 수 없다.
-(자세한 정찰 결과: [docs/EXTRACTION.md](docs/EXTRACTION.md))
-
-**다음 액션(당신 또는 운영자):** 아래 세 가지 콘텐츠 수집 방식 중 하나를 선택.
-
-| 방식 | 요약 | 필요한 것 |
-|------|------|-----------|
-| **A. 운영자 export** ⭐ | 커리큘럼 DB/JSON을 통째로 받음 | 운영자가 export 파일 1개 제공 |
-| B. 인증 크롤 | 로그인 세션으로 순회 수집 | Chrome 확장 연결 + 로그인 세션 |
-| C. API 캡처·재생 | B로 API 파악 후 직접 호출 | 로그인 세션 + 엔드포인트 관찰 |
-
-→ **방식 A를 권장**한다. 완전하고 견고하며, 운영자 허락이 이미 있으니 export 파일 하나면 끝난다.
-   무슨 형식으로 오든(그쪽 DB 스키마대로) 이쪽에서 정규 스키마로 매핑한다.
+세부 진척은 [`content-model/progress.json`](content-model/progress.json), 전체 이관 계획은 [`docs/CODEX_HANDOFF_PLAN.md`](docs/CODEX_HANDOFF_PLAN.md)를 기준으로 합니다.
 
 ## 구조
 
-```
-content-model/          정규 콘텐츠 계약(수집 방식과 무관하게 고정)
-  schema.module.json    모듈(레슨) 스키마 — 위키의 원자 단위
-  schema.course.json    코스 스키마
-  courses.json          7개 코스 매니페스트
-  examples/             스키마 시연용 가상 예시(실제 콘텐츠 아님)
+```text
+content-model/
+  courses.json             코스 매니페스트
+  progress.json            기계 판독 가능한 수집 체크포인트
+  schema.module.json       모듈 정규 스키마
+  schema.course.json       코스 정규 스키마
+  data/                    정규화된 모듈 JSON
+  raw/                     원문 캡처(기본적으로 Git 제외)
 docs/
-  ARCHITECTURE.md       3계층 구조·스택 선택 근거
-  EXTRACTION.md         정찰 결과 + 수집 방식 A/B/C 상세
-scripts/                (예정) import·페이지 생성·크롤 파이프라인
-src/                    (예정) Astro Starlight 위키 프론트엔드
+  ARCHITECTURE.md          시스템 구조
+  DATA_SCOPE.md            데이터 이용·수집 범위
+  EXTRACTION.md            수집 방식과 정찰 기록
+  CODEX_HANDOFF_PLAN.md    0~6단계 완성 계획
+scripts/
+  build-pages.mjs          정규 JSON → Starlight 문서 생성
+  crawl/                   수집 보조 도구와 체크포인트 지침
+src/                       Astro/Starlight 애플리케이션
 ```
 
 ## 파이프라인
 
+```text
+원문 캡처 → 정규화 JSON → 검증 → 위키 페이지 생성 → Astro 빌드 → 링크·검색 QA
 ```
-[원본 데이터] → import → content-model(JSON) → build-pages → 위키(MDX) → 정적 사이트 검색·열람
+
+원문, 정규 데이터, 생성 페이지, 빌드 산출물은 서로 다른 계층입니다. `src/content/docs/courses`, `concepts`, `prompts.md`는 생성물이므로 직접 편집하지 않습니다.
+
+## 명령
+
+```bash
+npm run validate
+npm run gen
+npm run build
+npm run dev
 ```
 
-정규 스키마 이후 단계는 수집 방식(A/B/C)과 무관하게 동일하다. 그래서 **스키마를 먼저 확정**했다.
+## 재개 규칙
 
-## 스택 (기본값, 변경 가능)
+1. `content-model/progress.json`을 읽습니다.
+2. 해당 코스의 라이브 목록에서 다음 순번과 제목을 대조합니다.
+3. 원문을 raw에 저장한 뒤 정규 JSON을 만듭니다.
+4. 검증에 통과한 경우에만 progress를 갱신합니다.
+5. 한 코스 또는 안전한 작업 묶음마다 커밋합니다.
 
-**Astro Starlight** — 사이드바 로드맵 네비, Pagefind 전문 검색(내부망 동작), 다국어(ko/en/es/ja/zh) 내장.
-근거: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).

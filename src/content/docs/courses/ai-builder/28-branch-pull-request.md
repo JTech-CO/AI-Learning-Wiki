@@ -70,6 +70,8 @@ _새 기능을 별도 브랜치에서 작업하고 Pull Request로 변경을 검
 나는 초보 개발자야. 아래 변경 내용(diff)을 보고, 팀원이 검토하기 좋은 Pull Request 설명을 한국어로 작성해줘. 형식은 1)무엇을 바꿨나 2)왜 바꿨나 3)검토 시 봐 줄 부분 세 항목으로 간결하게. [변경 내용이나 diff]
 ```
 
+> 확인된 작성 예시 없음
+
 `Pull Request` `PR 설명` `협업`
 
 ### 내 코드 변경 리뷰 요청
@@ -77,6 +79,8 @@ _새 기능을 별도 브랜치에서 작업하고 Pull Request로 변경을 검
 ```text
 아래는 내 Pull Request의 변경 내용(diff)이야. 초보자 관점에서 1)명백한 버그나 오타 2)더 나은 방식 3)그대로 병합해도 되는지 판단을 한국어로 해줘. 사소한 취향 문제와 꼭 고쳐야 할 문제를 구분해. [diff]
 ```
+
+> 확인된 작성 예시 없음
 
 `코드 리뷰` `diff` `병합`
 
@@ -86,6 +90,8 @@ _새 기능을 별도 브랜치에서 작업하고 Pull Request로 변경을 검
 내가 지금 하려는 작업은 '[작업 설명]'이야. 이 작업에 어울리는 git 브랜치 이름을 feature/ 접두사를 붙인 영어 kebab-case로 3개 지어줘. 각 이름이 왜 좋은지도 한 줄로.
 ```
 
+> 확인된 작성 예시 없음
+
 `브랜치` `네이밍`
 
 ### 충돌 해결 도움
@@ -93,6 +99,8 @@ _새 기능을 별도 브랜치에서 작업하고 Pull Request로 변경을 검
 ```text
 GitHub에서 PR을 병합하려는데 'This branch has conflicts that must be resolved'라는 메시지가 떴어. 초보자가 이해할 수 있게, 충돌이 왜 생겼는지와 GitHub 웹 화면에서 단계별로 해결하는 방법을 한국어로 알려줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `충돌` `merge` `문제해결`
 
@@ -117,3 +125,7 @@ GitHub에서 PR을 병합하려는데 'This branch has conflicts that must be re
 - [Code Review](/concepts/code-review/)
 - [Merge](/concepts/merge/)
 - [Collaboration](/concepts/collaboration/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

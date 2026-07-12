@@ -68,6 +68,8 @@ API 키는 '내 신용카드 비밀번호'와 같아요. 코드 안에 `sk-abc12
 아래 코드에 API 키나 비밀번호가 코드에 직접 박혀 있습니다. 이걸 .env 파일과 process.env 방식으로 안전하게 분리해 주세요. 1)수정된 코드 2).env 파일에 넣을 내용 3).gitignore에 추가할 줄을 각각 나눠서 보여주세요. 실제 키 값은 절대 출력에 그대로 쓰지 말고 placeholder로 표시해 주세요. [내 코드]
 ```
 
+> 확인된 작성 예시 없음
+
 `환경변수` `리팩터링` `보안`
 
 ### 내 프로젝트에 맞는 .env 세팅법 물어보기
@@ -75,6 +77,8 @@ API 키는 '내 신용카드 비밀번호'와 같아요. 코드 안에 `sk-abc12
 ```text
 저는 [프레임워크: Next.js / Node.js / Python Flask]로 프로젝트를 만들고 있고, [배포처: Vercel / Railway]에 배포할 예정입니다. 환경변수를 .env 파일과 배포 대시보드에 등록하는 정확한 단계를, 초보자가 따라 할 수 있게 명령어 포함해서 순서대로 알려주세요.
 ```
+
+> 확인된 작성 예시 없음
 
 `환경변수` `세팅` `배포`
 
@@ -84,6 +88,8 @@ API 키는 '내 신용카드 비밀번호'와 같아요. 코드 안에 `sk-abc12
 제 API 키 [OpenAI / Supabase / 기타]가 실수로 깃허브 공개 저장소에 올라간 것 같습니다. 지금 당장 해야 할 조치를 위험도 순으로 정리해 주세요. 키 폐기 방법, 새 키 발급, 커밋 기록 처리, 앞으로 재발 방지책까지 단계별로 알려주세요.
 ```
 
+> 확인된 작성 예시 없음
+
 `보안` `사고대응` `키 폐기`
 
 ### .env 값 팀원과 안전하게 공유하기
@@ -91,6 +97,8 @@ API 키는 '내 신용카드 비밀번호'와 같아요. 코드 안에 `sk-abc12
 ```text
 .env 파일은 깃허브에 못 올린다는데, 그럼 팀원에게는 환경변수 값을 어떻게 전달해야 하나요? .env.example 방식과 안전한 공유 방법을 초보자용으로 설명하고, .env.example 예시 파일도 만들어 주세요.
 ```
+
+> 확인된 작성 예시 없음
 
 `환경변수` `협업` `공유`
 
@@ -115,3 +123,7 @@ API 키는 '내 신용카드 비밀번호'와 같아요. 코드 안에 `sk-abc12
 - [Gitignore](/concepts/gitignore/)
 - [Secret Management](/concepts/secret-management/)
 - [Api Key Security](/concepts/api-key-security/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-builder) · 방식: authenticated-crawl</sub>

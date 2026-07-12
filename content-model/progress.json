@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-12T01:14:03.769Z",
+  "sourceOfTruth": {
+    "manifest": "content-model/courses.json",
+    "data": "content-model/data/**/*.module.json",
+    "generatedDocsAreSource": false,
+    "distIsSource": false
+  },
+  "totals": {
+    "expected": 305,
+    "complete": 170,
+    "remaining": 135
+  },
+  "courses": {
+    "ai-start": {
+      "expected": 8,
+      "complete": 8,
+      "completedThrough": 8,
+      "status": "complete",
+      "lastModuleId": "ai-start/08-first-income"
+    },
+    "ai-intro": {
+      "expected": 44,
+      "complete": 44,
+      "completedThrough": 44,
+      "status": "complete",
+      "lastModuleId": "ai-intro/44-capstone"
+    },
+    "ai-work": {
+      "expected": 48,
+      "complete": 48,
+      "completedThrough": 48,
+      "status": "complete",
+      "lastModuleId": "ai-work/48-weekly-report-capstone"
+    },
+    "ai-builder": {
+      "expected": 44,
+      "complete": 44,
+      "completedThrough": 44,
+      "status": "complete",
+      "lastModuleId": "ai-builder/capstone-launch"
+    },
+    "ai-engineer": {
+      "expected": 49,
+      "complete": 26,
+      "completedThrough": 26,
+      "status": "in_progress",
+      "lastModuleId": "ai-engineer/embedding-cosine-similarity",
+      "nextOrder": 27,
+      "nextTitle": null
+    },
+    "automation": {
+      "expected": 42,
+      "complete": 0,
+      "completedThrough": 0,
+      "status": "pending",
+      "nextOrder": 1,
+      "nextTitle": null
+    },
+    "ai-finance": {
+      "expected": 55,
+      "complete": 0,
+      "completedThrough": 0,
+      "status": "pending",
+      "nextOrder": 1,
+      "nextTitle": null
+    },
+    "ai-trends": {
+      "expected": 15,
+      "complete": 0,
+      "completedThrough": 0,
+      "status": "pending",
+      "nextOrder": 1,
+      "nextTitle": null,
+      "rollingSnapshot": true
+    }
+  },
+  "resume": {
+    "course": "ai-engineer",
+    "nextOrder": 27,
+    "instruction": "라이브 코스 목록에서 27번 제목을 대조한 뒤 raw 저장부터 시작한다."
+  }
+}

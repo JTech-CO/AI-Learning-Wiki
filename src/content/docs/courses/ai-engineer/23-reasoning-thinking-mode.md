@@ -72,6 +72,8 @@ ChatGPT 기본값(GPT-5.5 Instant)은 어려운 질문이 들어오면 알아서
 다음 문제를 풀어줘. 바로 답하지 말고 풀이 과정을 단계별로 보여준 뒤 마지막에 결론을 한 줄로 정리해줘. 중간에 계산이 있으면 검산도 한 번 해줘. [문제]
 ```
 
+> 확인된 작성 예시 없음
+
 `추론 모드` `단계 풀이` `검산`
 
 ### 이 질문에 어느 모드가 맞는지 AI에게 물어보기
@@ -79,6 +81,8 @@ ChatGPT 기본값(GPT-5.5 Instant)은 어려운 질문이 들어오면 알아서
 ```text
 다음 질문은 너의 '빠른 답변(Instant)'으로 충분해, 아니면 '깊게 생각하는 추론(Thinking) 모드'가 필요해? 한 줄 이유와 함께 둘 중 하나로. 질문: [내 질문]
 ```
+
+> 확인된 작성 예시 없음
 
 `모드 선택` `판단`
 
@@ -88,6 +92,8 @@ ChatGPT 기본값(GPT-5.5 Instant)은 어려운 질문이 들어오면 알아서
 방금 네 답이 맞는지, 이번엔 천천히 단계별로 다시 검토해줘. 각 단계의 숫자나 논리를 직접 검산하고, 틀린 부분이 있으면 어디서 왜 틀렸는지 짚은 뒤 고친 최종 답을 한 줄로.
 ```
 
+> 확인된 작성 예시 없음
+
 `검증` `검산` `재검토`
 
 ### 예시 — 연립방정식 단계별 풀이
@@ -95,6 +101,8 @@ ChatGPT 기본값(GPT-5.5 Instant)은 어려운 질문이 들어오면 알아서
 ```text
 사과 3개와 배 2개가 5000원, 사과 1개와 배 4개가 6000원. 각각 구하고 어떻게 풀었는지 단계별로 보여줘.
 ```
+
+> 확인된 작성 예시 없음
 
 `예시` `연립방정식` `단계 풀이`
 
@@ -120,3 +128,7 @@ ChatGPT 기본값(GPT-5.5 Instant)은 어려운 질문이 들어오면 알아서
 - [Effort](/concepts/effort/)
 - [Cost Accuracy Tradeoff](/concepts/cost-accuracy-tradeoff/)
 - [Model Selection](/concepts/model-selection/)
+
+
+---
+<sub>출처: [eduverse-ai.app](https://eduverse-ai.app/learn?course=ai-engineer) · 방식: authenticated-crawl</sub>
