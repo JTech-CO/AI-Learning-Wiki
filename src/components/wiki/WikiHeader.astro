@@ -3,8 +3,11 @@ const query = Astro.url.searchParams.get('q') ?? '';
 ---
 <div class="wiki-header">
   <a class="wiki-wordmark" href="/" aria-label="AI Learning Wiki 대문">
-    <strong>AI Learning Wiki</strong>
-    <span>AI와 LLM을 연결하는 백과사전</span>
+    <img class="wiki-site-logo" src="/logo.png" width="1254" height="1254" alt="" decoding="async" />
+    <span class="wiki-wordmark-text">
+      <strong>AI Learning Wiki</strong>
+      <small>AI와 LLM을 연결하는 백과사전</small>
+    </span>
   </a>
   <form class="wiki-global-search" action="/search/" method="get" role="search">
     <label class="sr-only" for="wiki-global-query">전체 문서 검색</label>
