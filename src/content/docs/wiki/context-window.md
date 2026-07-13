@@ -136,9 +136,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [자기회귀 언어 모델](/wiki/autoregressive-language-model/)
 - [바이트 페어 인코딩](/wiki/byte-pair-encoding/)
+- [인과 언어 모델](/wiki/causal-language-model/)
+- [코드 언어 모델](/wiki/code-language-model/)
 - [컴플리션](/wiki/completion/)
+- [조건부 언어 모델](/wiki/conditional-language-model/)
+- [마스크 언어 모델](/wiki/masked-language-model/)
+- [다국어 언어 모델](/wiki/multilingual-language-model/)
+- [멀티모달 언어 모델](/wiki/multimodal-language-model/)
+- [N-그램 언어 모델](/wiki/n-gram-language-model/)
+- [신경 언어 모델](/wiki/neural-language-model/)
 - [프롬프트](/wiki/prompt/)
+- [시퀀스 우도](/wiki/sequence-likelihood/)
 - [어휘 집합](/wiki/vocabulary/)
 
 ## 이 문서를 포함하는 코스

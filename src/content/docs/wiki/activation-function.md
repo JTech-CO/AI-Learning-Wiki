@@ -107,11 +107,21 @@ ReLU·시그모이드·GELU는 출력 범위와 기울기 특성이 달라 층�
 - [편향 항](/wiki/bias/)
 - [계산 그래프](/wiki/computational-graph/)
 - [딥러닝](/wiki/deep-learning/)
+- [완전연결층](/wiki/dense-layer/)
 - [순전파](/wiki/forward-pass/)
+- [그래디언트 신호](/wiki/gradient-signal/)
+- [은닉층](/wiki/hidden-layer/)
+- [은닉 상태](/wiki/hidden-state/)
 - [입력층](/wiki/input-layer/)
 - [신경망 층](/wiki/layer/)
+- [선형층](/wiki/linear-layer/)
 - [손실 함수](/wiki/loss-function/)
+- [신경망 깊이](/wiki/network-depth/)
+- [신경망 너비](/wiki/network-width/)
 - [인공 뉴런](/wiki/neuron/)
+- [출력층](/wiki/output-layer/)
+- [파라미터 초기화](/wiki/parameter-initialization/)
+- [수용 영역](/wiki/receptive-field/)
 
 ## 이 문서를 포함하는 코스
 

@@ -104,15 +104,25 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [적대적 예시](/wiki/adversarial-example/)
+- [AI 안전](/wiki/ai-safety/)
+- [AI 공급망 취약점](/wiki/ai-supply-chain-vulnerability/)
 - [회피 공격](/wiki/evasion-attack/)
+- [과도한 자율성](/wiki/excessive-agency/)
 - [가드레일](/wiki/guardrail/)
 - [환각](/wiki/hallucination/)
 - [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
+- [안전하지 않은 출력 처리](/wiki/insecure-output-handling/)
 - [탈옥 공격](/wiki/jailbreak/)
+- [멤버십 추론 공격](/wiki/membership-inference/)
 - [모델 백도어](/wiki/model-backdoor/)
+- [모델 서비스 거부 공격](/wiki/model-denial-of-service/)
 - [모델 추출 공격](/wiki/model-extraction/)
+- [모델 역추론 공격](/wiki/model-inversion/)
 - [모델 오염](/wiki/model-poisoning/)
+- [프롬프트 유출](/wiki/prompt-leakage/)
+- [RAG 오염](/wiki/rag-poisoning/)
 - [ReAct 에이전트](/wiki/react-agent/)
+- [민감정보 노출](/wiki/sensitive-information-disclosure/)
 - [학습 데이터 오염](/wiki/training-data-poisoning/)
 
 ## 이 문서를 포함하는 코스

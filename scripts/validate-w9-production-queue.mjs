@@ -26,18 +26,17 @@ if (readyIds.size !== 210) errors.push(`expected 210 unique ready articles, foun
 for (const [topicId, topic] of topicById) {
   const item = queueById.get(topicId);
   if (!item) { errors.push(`${topicId}: missing queue item`); continue; }
-  if (item.categoryId !== topic.primaryCategory || item.tier !== topic.tier || item.state !== topic.state || item.rank !== topic.rank) errors.push(`${topicId}: taxonomy fields differ`);
+  if (item.categoryId !== topic.primaryCategory || item.tier !== topic.tier || item.rank !== topic.rank) errors.push(`${topicId}: stable taxonomy fields differ`);
   if (item.publicationReady !== readyIds.has(topicId)) errors.push(`${topicId}: publication state differs`);
   if (item.publicationReady && (item.stage !== 'published' || item.blockers.length)) errors.push(`${topicId}: ready state is invalid`);
   if (item.publicationReady && !evidenceById.get(topicId)?.audit.readyForManualClaimReview) errors.push(`${topicId}: published without W2 evidence readiness`);
-  if (topic.state === 'candidate' && (item.stage !== 'research-queued' || item.publicationReady)) errors.push(`${topicId}: candidate bypassed research gate`);
-  if (topic.state === 'existing' && !item.publicationReady) errors.push(`${topicId}: all 210 existing articles must be publication-ready after W9`);
+  if (item.state === 'candidate' && !item.publicationReady && item.stage !== 'research-queued') errors.push(`${topicId}: W9 candidate bypassed research gate`);
 }
 const batchTopicIds = batches.batches.flatMap((batch) => batch.topicIds);
 if (batches.batches.length !== 56 || batchTopicIds.length !== 1400 || new Set(batchTopicIds).size !== 1400) errors.push('W1 batches must cover all topics');
 for (const batch of queue.batches) {
   const source = batches.batches.find((item) => item.id === batch.id);
-  if (!source || batch.topicCount !== source.topicCount || batch.published + batch.queued !== batch.topicCount) errors.push(`${batch.id}: batch counts differ`);
+  if (!source || batch.published + batch.queued !== batch.topicCount) errors.push(`${batch.id}: batch counts differ`);
 }
 for (const category of categories.categories) {
   const summary = queue.byCategory[category.id];

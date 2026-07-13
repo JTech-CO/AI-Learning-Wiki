@@ -116,14 +116,24 @@ AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞�
 ## 이 문서를 가리키는 문서
 
 - [적대적 예시](/wiki/adversarial-example/)
+- [AI 안전](/wiki/ai-safety/)
+- [AI 공급망 취약점](/wiki/ai-supply-chain-vulnerability/)
 - [편향과 공정성](/wiki/bias-fairness/)
 - [콘텐츠 조정](/wiki/content-moderation/)
 - [회피 공격](/wiki/evasion-attack/)
+- [과도한 자율성](/wiki/excessive-agency/)
+- [안전하지 않은 출력 처리](/wiki/insecure-output-handling/)
 - [탈옥 공격](/wiki/jailbreak/)
+- [멤버십 추론 공격](/wiki/membership-inference/)
 - [모델 백도어](/wiki/model-backdoor/)
+- [모델 서비스 거부 공격](/wiki/model-denial-of-service/)
 - [모델 추출 공격](/wiki/model-extraction/)
+- [모델 역추론 공격](/wiki/model-inversion/)
 - [모델 오염](/wiki/model-poisoning/)
 - [프롬프트 인젝션](/wiki/prompt-injection/)
+- [프롬프트 유출](/wiki/prompt-leakage/)
+- [RAG 오염](/wiki/rag-poisoning/)
+- [민감정보 노출](/wiki/sensitive-information-disclosure/)
 - [학습 데이터 오염](/wiki/training-data-poisoning/)
 
 ## 이 문서를 포함하는 코스

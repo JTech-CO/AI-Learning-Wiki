@@ -116,11 +116,21 @@ TP=40, FP=10, FN=20이면 정밀도 0.8, 재현율 약 0.667, F1은 약 0.727이
 ## 이 문서를 가리키는 문서
 
 - [곡선 아래 면적](/wiki/area-under-curve/)
+- [벤치마크 데이터셋](/wiki/benchmark-dataset/)
+- [BERTScore](/wiki/bertscore/)
+- [BLEU 점수](/wiki/bleu-score/)
+- [브라이어 점수](/wiki/brier-score/)
 - [혼동 행렬](/wiki/confusion-matrix/)
+- [완전 일치](/wiki/exact-match/)
+- [기대 보정 오차](/wiki/expected-calibration-error/)
 - [로그 손실](/wiki/log-loss/)
+- [METEOR 점수](/wiki/meteor-score/)
+- [Pass@K](/wiki/pass-at-k/)
 - [정밀도-재현율 곡선](/wiki/precision-recall-curve/)
 - [ROC 곡선](/wiki/roc-curve/)
+- [ROUGE 점수](/wiki/rouge-score/)
 - [특이도](/wiki/specificity/)
+- [승률](/wiki/win-rate/)
 
 ## 이 문서를 포함하는 코스
 

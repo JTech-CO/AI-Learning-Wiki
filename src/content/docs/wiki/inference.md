@@ -100,11 +100,21 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [제약 디코딩](/wiki/constrained-decoding/)
+- [대조 탐색](/wiki/contrastive-search/)
+- [다양성 빔 탐색](/wiki/diverse-beam-search/)
+- [빈도 페널티](/wiki/frequency-penalty/)
+- [길이 페널티](/wiki/length-penalty/)
 - [로짓](/wiki/logit/)
 - [Min-p 샘플링](/wiki/min-p-sampling/)
+- [모델 서빙](/wiki/model-serving/)
 - [다항 표본추출](/wiki/multinomial-sampling/)
+- [존재 페널티](/wiki/presence-penalty/)
+- [반복 페널티](/wiki/repetition-penalty/)
 - [소규모 언어 모델](/wiki/small-language-model/)
+- [중지 시퀀스](/wiki/stop-sequence/)
 - [생성 온도](/wiki/temperature/)
+- [토큰 샘플링](/wiki/token-sampling/)
 - [전형성 샘플링](/wiki/typical-sampling/)
 
 ## 이 문서를 포함하는 코스

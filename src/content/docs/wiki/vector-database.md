@@ -103,10 +103,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [교차언어 임베딩](/wiki/cross-lingual-embedding/)
 - [밀집 임베딩](/wiki/dense-embedding/)
+- [문서 임베딩](/wiki/document-embedding/)
 - [임베딩](/wiki/embedding/)
+- [임베딩 비등방성](/wiki/embedding-anisotropy/)
+- [임베딩 차원](/wiki/embedding-dimension/)
+- [임베딩 드리프트](/wiki/embedding-drift/)
 - [임베딩 모델](/wiki/embedding-model/)
+- [임베딩 정규화](/wiki/embedding-normalization/)
+- [임베딩 풀링](/wiki/embedding-pooling/)
+- [지시 튜닝 임베딩](/wiki/instruction-tuned-embedding/)
+- [마트료시카 임베딩](/wiki/matryoshka-embedding/)
 - [최근접 이웃 검색](/wiki/nearest-neighbor-search/)
+- [질의 임베딩](/wiki/query-embedding/)
 - [의미 검색](/wiki/semantic-search/)
 - [문장 임베딩](/wiki/sentence-embedding/)
 - [희소 임베딩](/wiki/sparse-embedding/)

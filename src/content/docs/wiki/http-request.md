@@ -102,15 +102,25 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 
 ## 이 문서를 가리키는 문서
 
+- [API 엔드포인트](/wiki/api-endpoint/)
 - [API 키](/wiki/api-key/)
+- [콘텐츠 유형](/wiki/content-type/)
+- [도메인 이름 시스템](/wiki/domain-name-system/)
 - [HTTP 헤더](/wiki/http-header/)
 - [HTTP 메시지 본문](/wiki/http-message-body/)
 - [HTTP 메서드](/wiki/http-method/)
 - [HTTP 응답](/wiki/http-response/)
 - [HTTP 상태 코드](/wiki/http-status-code/)
+- [HTTPS](/wiki/https/)
 - [JSON](/wiki/json/)
+- [MIME 유형](/wiki/mime-type/)
+- [경로 매개변수](/wiki/path-parameter/)
+- [질의 매개변수](/wiki/query-parameter/)
 - [REST API](/wiki/rest-api/)
 - [SDK](/wiki/sdk/)
+- [전송 계층 보안](/wiki/transport-layer-security/)
+- [통합 자원 식별자](/wiki/uri/)
+- [통합 자원 위치 지정자](/wiki/url/)
 
 ## 이 문서를 포함하는 코스
 

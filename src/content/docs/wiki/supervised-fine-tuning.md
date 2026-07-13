@@ -136,10 +136,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [벤치마크 오염](/wiki/benchmark-contamination/)
+- [데이터 커리큘럼](/wiki/data-curriculum/)
+- [데이터 혼합](/wiki/data-mixture/)
+- [데이터셋 중복 제거](/wiki/dataset-deduplication/)
+- [문서 패킹](/wiki/document-packing/)
 - [미세조정](/wiki/fine-tuning/)
 - [지시 튜닝](/wiki/instruction-tuning/)
 - [사전학습](/wiki/pretraining/)
+- [사전학습 파이프라인](/wiki/pretraining-pipeline/)
 - [인간 피드백 기반 강화학습](/wiki/rlhf/)
+- [시퀀스 패킹](/wiki/sequence-packing/)
+- [학습 말뭉치](/wiki/training-corpus/)
+- [학습 데이터 필터링](/wiki/training-data-filtering/)
+- [웹 규모 학습 데이터](/wiki/web-scale-training-data/)
 
 ## 이 문서를 포함하는 코스
 

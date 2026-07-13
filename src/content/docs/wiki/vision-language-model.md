@@ -104,14 +104,24 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [대조 언어-이미지 사전학습](/wiki/contrastive-language-image-pretraining/)
 - [확산 모델](/wiki/diffusion-model/)
+- [특성 피라미드 네트워크](/wiki/feature-pyramid-network/)
 - [이미지 캡셔닝](/wiki/image-captioning/)
+- [이미지 임베딩](/wiki/image-embedding/)
 - [이미지 생성](/wiki/image-generation/)
+- [이미지 패치](/wiki/image-patch/)
+- [이미지 검색](/wiki/image-retrieval/)
 - [이미지 분할](/wiki/image-segmentation/)
 - [멀티모달 모델](/wiki/multimodal-model/)
 - [객체 탐지](/wiki/object-detection/)
+- [개방형 어휘 객체 탐지](/wiki/open-vocabulary-detection/)
+- [영역 제안 네트워크](/wiki/region-proposal-network/)
+- [시각 인코더](/wiki/visual-encoder/)
 - [시각 근거화](/wiki/visual-grounding/)
 - [시각 질의응답](/wiki/visual-question-answering/)
+- [시각 추론](/wiki/visual-reasoning/)
+- [제로샷 이미지 분류](/wiki/zero-shot-image-classification/)
 
 ## 이 문서를 포함하는 코스
 

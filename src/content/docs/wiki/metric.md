@@ -106,13 +106,23 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [정확도](/wiki/accuracy/)
 - [곡선 아래 면적](/wiki/area-under-curve/)
 - [벤치마크](/wiki/benchmark/)
+- [벤치마크 데이터셋](/wiki/benchmark-dataset/)
+- [BERTScore](/wiki/bertscore/)
+- [BLEU 점수](/wiki/bleu-score/)
+- [브라이어 점수](/wiki/brier-score/)
 - [혼동 행렬](/wiki/confusion-matrix/)
 - [모델 평가](/wiki/evaluation/)
+- [완전 일치](/wiki/exact-match/)
+- [기대 보정 오차](/wiki/expected-calibration-error/)
 - [로그 손실](/wiki/log-loss/)
+- [METEOR 점수](/wiki/meteor-score/)
+- [Pass@K](/wiki/pass-at-k/)
 - [정밀도와 재현율](/wiki/precision-recall/)
 - [정밀도-재현율 곡선](/wiki/precision-recall-curve/)
 - [ROC 곡선](/wiki/roc-curve/)
+- [ROUGE 점수](/wiki/rouge-score/)
 - [특이도](/wiki/specificity/)
+- [승률](/wiki/win-rate/)
 
 ## 이 문서를 포함하는 코스
 

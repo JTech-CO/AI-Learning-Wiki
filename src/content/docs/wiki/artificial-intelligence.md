@@ -102,10 +102,20 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [능동학습](/wiki/active-learning/)
+- [인공지능 겨울](/wiki/ai-winter/)
+- [배치 학습](/wiki/batch-learning/)
+- [계산지능](/wiki/computational-intelligence/)
 - [연결주의](/wiki/connectionism/)
+- [전문가 시스템](/wiki/expert-system/)
+- [파운데이션 모델](/wiki/foundation-model/)
 - [고전적 인공지능](/wiki/good-old-fashioned-ai/)
 - [머신러닝](/wiki/machine-learning/)
+- [다중 과제 학습](/wiki/multi-task-learning/)
+- [온라인 학습](/wiki/online-learning/)
+- [준지도학습](/wiki/semi-supervised-learning/)
 - [기호주의 인공지능](/wiki/symbolic-ai/)
+- [전이학습](/wiki/transfer-learning/)
 
 ## 이 문서를 포함하는 코스
 

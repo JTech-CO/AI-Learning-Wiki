@@ -103,9 +103,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [가산 어텐션](/wiki/additive-attention/)
 - [크로스 어텐션](/wiki/cross-attention/)
+- [닷프로덕트 어텐션](/wiki/dot-product-attention/)
+- [글로벌 어텐션](/wiki/global-attention/)
+- [그룹 쿼리 어텐션](/wiki/grouped-query-attention/)
+- [선형 어텐션](/wiki/linear-attention/)
+- [로컬 어텐션](/wiki/local-attention/)
+- [멀티쿼리 어텐션](/wiki/multi-query-attention/)
 - [쿼리·키·값](/wiki/query-key-value/)
+- [스케일드 닷프로덕트 어텐션](/wiki/scaled-dot-product-attention/)
 - [셀프 어텐션](/wiki/self-attention/)
+- [슬라이딩 윈도 어텐션](/wiki/sliding-window-attention/)
+- [희소 어텐션](/wiki/sparse-attention/)
 - [트랜스포머](/wiki/transformer/)
 
 ## 이 문서를 포함하는 코스

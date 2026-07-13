@@ -101,16 +101,26 @@ _해당 문서가 없습니다._
 ## 이 문서를 가리키는 문서
 
 - [어텐션](/wiki/attention/)
+- [기저 벡터](/wiki/basis-vector/)
 - [밀집 임베딩](/wiki/dense-embedding/)
+- [행렬식](/wiki/determinant/)
 - [내적](/wiki/dot-product/)
+- [고유분해](/wiki/eigendecomposition/)
+- [고윳값과 고유벡터](/wiki/eigenvalue-eigenvector/)
 - [임베딩](/wiki/embedding/)
+- [선형 변환](/wiki/linear-transformation/)
 - [행렬](/wiki/matrix/)
+- [역행렬](/wiki/matrix-inverse/)
 - [행렬 곱셈](/wiki/matrix-multiplication/)
+- [행렬의 계수](/wiki/matrix-rank/)
 - [전치행렬](/wiki/matrix-transpose/)
 - [인공 뉴런](/wiki/neuron/)
 - [외적곱](/wiki/outer-product/)
 - [스칼라](/wiki/scalar/)
+- [특잇값 분해](/wiki/singular-value-decomposition/)
 - [텐서](/wiki/tensor/)
+- [벡터 노름](/wiki/vector-norm/)
+- [벡터 공간](/wiki/vector-space/)
 
 ## 이 문서를 포함하는 코스
 

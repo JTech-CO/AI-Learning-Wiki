@@ -104,13 +104,23 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [능동학습](/wiki/active-learning/)
+- [인공지능 겨울](/wiki/ai-winter/)
 - [인공지능](/wiki/artificial-intelligence/)
+- [배치 학습](/wiki/batch-learning/)
+- [계산지능](/wiki/computational-intelligence/)
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [연결주의](/wiki/connectionism/)
 - [딥러닝](/wiki/deep-learning/)
+- [전문가 시스템](/wiki/expert-system/)
+- [파운데이션 모델](/wiki/foundation-model/)
 - [생성형 인공지능](/wiki/generative-ai/)
 - [고전적 인공지능](/wiki/good-old-fashioned-ai/)
+- [다중 과제 학습](/wiki/multi-task-learning/)
+- [온라인 학습](/wiki/online-learning/)
+- [준지도학습](/wiki/semi-supervised-learning/)
 - [기호주의 인공지능](/wiki/symbolic-ai/)
+- [전이학습](/wiki/transfer-learning/)
 
 ## 이 문서를 포함하는 코스
 

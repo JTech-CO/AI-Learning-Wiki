@@ -113,10 +113,20 @@ REST API, 웹 페이지, 파일 전송, 모델 추론 API의 결과 전달에 �
 
 ## 이 문서를 가리키는 문서
 
+- [API 엔드포인트](/wiki/api-endpoint/)
+- [콘텐츠 유형](/wiki/content-type/)
+- [도메인 이름 시스템](/wiki/domain-name-system/)
 - [HTTP 헤더](/wiki/http-header/)
 - [HTTP 메시지 본문](/wiki/http-message-body/)
 - [HTTP 메서드](/wiki/http-method/)
 - [HTTP 상태 코드](/wiki/http-status-code/)
+- [HTTPS](/wiki/https/)
+- [MIME 유형](/wiki/mime-type/)
+- [경로 매개변수](/wiki/path-parameter/)
+- [질의 매개변수](/wiki/query-parameter/)
+- [전송 계층 보안](/wiki/transport-layer-security/)
+- [통합 자원 식별자](/wiki/uri/)
+- [통합 자원 위치 지정자](/wiki/url/)
 
 ## 이 문서를 포함하는 코스
 

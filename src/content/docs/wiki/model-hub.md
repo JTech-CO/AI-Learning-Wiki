@@ -100,6 +100,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [상업적 이용 제한](/wiki/commercial-use-restriction/)
+- [카피레프트 라이선스](/wiki/copyleft-license/)
 - [모델 아티팩트 형식](/wiki/model-artifact-format/)
 - [모델 카탈로그](/wiki/model-catalog/)
 - [모델 평가 보고서](/wiki/model-evaluation-report/)
@@ -113,7 +115,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [모델 업데이트](/wiki/model-update/)
 - [모델 버전](/wiki/model-version/)
 - [모델 가중치 파일](/wiki/model-weights/)
+- [오픈소스 AI 정의](/wiki/open-source-ai-definition/)
 - [오픈소스 모델](/wiki/open-source-model/)
+- [오픈 웨이트 모델](/wiki/open-weight-model/)
+- [허용적 라이선스](/wiki/permissive-license/)
+- [재현 가능한 모델 빌드](/wiki/reproducible-model-build/)
+- [연구 전용 라이선스](/wiki/research-only-license/)
+- [책임 있는 AI 라이선스](/wiki/responsible-ai-license/)
+- [SafeTensors](/wiki/safetensors/)
+- [소스 공개 모델](/wiki/source-available-model/)
 
 ## 이 문서를 포함하는 코스
 
