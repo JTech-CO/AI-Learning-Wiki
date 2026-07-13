@@ -4,37 +4,104 @@
   "title": "WikiProductionQueue",
   "type": "object",
   "additionalProperties": false,
-  "required": ["version", "generatedAt", "policy", "totals", "byCategory", "batches", "topics"],
+  "required": [
+    "version",
+    "generatedAt",
+    "policy",
+    "totals",
+    "byCategory",
+    "batches",
+    "topics"
+  ],
   "properties": {
-    "version": { "const": "W6-2026-07-13" },
-    "generatedAt": { "type": "string", "format": "date-time" },
+    "version": {
+      "enum": [
+        "W6-2026-07-13",
+        "W7-2026-07-13"
+      ]
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
     "policy": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["publicationRequiresClaimLedger", "candidatePublicationAllowed", "stageOrder"],
+      "required": [
+        "publicationRequiresClaimLedger",
+        "candidatePublicationAllowed",
+        "stageOrder"
+      ],
       "properties": {
-        "publicationRequiresClaimLedger": { "const": true },
-        "candidatePublicationAllowed": { "const": false },
+        "publicationRequiresClaimLedger": {
+          "const": true
+        },
+        "candidatePublicationAllowed": {
+          "const": false
+        },
         "stageOrder": {
           "type": "array",
-          "const": ["research-queued", "source-remediation", "claim-review-queued", "published"]
+          "const": [
+            "research-queued",
+            "source-remediation",
+            "claim-review-queued",
+            "published"
+          ]
         }
       }
     },
     "totals": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["topics", "categories", "batches", "existing", "candidates", "published", "sourceRemediation", "claimReviewQueued", "researchQueued"],
+      "required": [
+        "topics",
+        "categories",
+        "batches",
+        "existing",
+        "candidates",
+        "published",
+        "sourceRemediation",
+        "claimReviewQueued",
+        "researchQueued"
+      ],
       "properties": {
-        "topics": { "const": 1400 },
-        "categories": { "const": 14 },
-        "batches": { "const": 56 },
-        "existing": { "const": 150 },
-        "candidates": { "const": 1250 },
-        "published": { "const": 42 },
-        "sourceRemediation": { "type": "integer", "minimum": 0 },
-        "claimReviewQueued": { "type": "integer", "minimum": 0 },
-        "researchQueued": { "const": 1250 }
+        "topics": {
+          "const": 1400
+        },
+        "categories": {
+          "const": 14
+        },
+        "batches": {
+          "const": 56
+        },
+        "existing": {
+          "type": "integer",
+          "minimum": 150,
+          "maximum": 1400
+        },
+        "candidates": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1250
+        },
+        "published": {
+          "type": "integer",
+          "minimum": 42,
+          "maximum": 1400
+        },
+        "sourceRemediation": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "claimReviewQueued": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "researchQueued": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1250
+        }
       }
     },
     "byCategory": {
@@ -44,12 +111,29 @@
       "additionalProperties": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["topics", "published", "existingQueued", "candidates"],
+        "required": [
+          "topics",
+          "published",
+          "existingQueued",
+          "candidates"
+        ],
         "properties": {
-          "topics": { "const": 100 },
-          "published": { "const": 3 },
-          "existingQueued": { "type": "integer", "minimum": 0 },
-          "candidates": { "type": "integer", "minimum": 0 }
+          "topics": {
+            "const": 100
+          },
+          "published": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "existingQueued": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "candidates": {
+            "type": "integer",
+            "minimum": 0
+          }
         }
       }
     },
@@ -60,14 +144,36 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "categoryId", "phase", "topicCount", "published", "queued"],
+        "required": [
+          "id",
+          "categoryId",
+          "phase",
+          "topicCount",
+          "published",
+          "queued"
+        ],
         "properties": {
-          "id": { "type": "string" },
-          "categoryId": { "type": "string" },
-          "phase": { "type": "string" },
-          "topicCount": { "type": "integer", "minimum": 1 },
-          "published": { "type": "integer", "minimum": 0 },
-          "queued": { "type": "integer", "minimum": 0 }
+          "id": {
+            "type": "string"
+          },
+          "categoryId": {
+            "type": "string"
+          },
+          "phase": {
+            "type": "string"
+          },
+          "topicCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "published": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "queued": {
+            "type": "integer",
+            "minimum": 0
+          }
         }
       }
     },
@@ -78,19 +184,72 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["topicId", "categoryId", "tier", "state", "rank", "batchId", "stage", "publicationReady", "evidenceReady", "manualReviewRequired", "blockers"],
+        "required": [
+          "topicId",
+          "categoryId",
+          "tier",
+          "state",
+          "rank",
+          "batchId",
+          "stage",
+          "publicationReady",
+          "evidenceReady",
+          "manualReviewRequired",
+          "blockers"
+        ],
         "properties": {
-          "topicId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-          "categoryId": { "type": "string" },
-          "tier": { "enum": ["core", "standard", "brief"] },
-          "state": { "enum": ["existing", "candidate"] },
-          "rank": { "type": "integer", "minimum": 1, "maximum": 100 },
-          "batchId": { "type": "string" },
-          "stage": { "enum": ["research-queued", "source-remediation", "claim-review-queued", "published"] },
-          "publicationReady": { "type": "boolean" },
-          "evidenceReady": { "type": "boolean" },
-          "manualReviewRequired": { "type": "boolean" },
-          "blockers": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+          "topicId": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "categoryId": {
+            "type": "string"
+          },
+          "tier": {
+            "enum": [
+              "core",
+              "standard",
+              "brief"
+            ]
+          },
+          "state": {
+            "enum": [
+              "existing",
+              "candidate"
+            ]
+          },
+          "rank": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "batchId": {
+            "type": "string"
+          },
+          "stage": {
+            "enum": [
+              "research-queued",
+              "source-remediation",
+              "claim-review-queued",
+              "published"
+            ]
+          },
+          "publicationReady": {
+            "type": "boolean"
+          },
+          "evidenceReady": {
+            "type": "boolean"
+          },
+          "manualReviewRequired": {
+            "type": "boolean"
+          },
+          "blockers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
         }
       }
     }

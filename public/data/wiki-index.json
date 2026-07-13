@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T21:57:35.464Z",
+  "generatedAt": "2026-07-13T12:46:47.741Z",
   "counts": {
-    "articles": 150,
+    "articles": 155,
     "courses": 8
   },
   "categories": [
@@ -15,7 +15,7 @@
       "id": "mathematics",
       "title": "수학·통계 기초",
       "description": "모델을 이해하는 데 필요한 수학과 확률",
-      "count": 10
+      "count": 11
     },
     {
       "id": "neural",
@@ -57,7 +57,7 @@
       "id": "api",
       "title": "API·SDK·도구 호출",
       "description": "모델을 소프트웨어와 연결하는 인터페이스",
-      "count": 10
+      "count": 11
     },
     {
       "id": "agents",
@@ -69,7 +69,7 @@
       "id": "multimodal",
       "title": "멀티모달 AI",
       "description": "텍스트와 이미지·음성·영상을 함께 다루는 모델",
-      "count": 8
+      "count": 9
     },
     {
       "id": "evaluation",
@@ -81,13 +81,13 @@
       "id": "safety",
       "title": "안전·보안·윤리",
       "description": "AI 시스템의 위험을 식별하고 통제하는 방법",
-      "count": 8
+      "count": 9
     },
     {
       "id": "ecosystem",
       "title": "모델·서비스 생태계",
       "description": "모델 공개와 배포 생태계의 기본 개념",
-      "count": 3
+      "count": 4
     }
   ],
   "articles": [
@@ -155,6 +155,32 @@
       "url": "/wiki/weight/"
     },
     {
+      "id": "indirect-prompt-injection",
+      "title": "간접 프롬프트 인젝션",
+      "englishTitle": "Indirect Prompt Injection",
+      "aliases": [
+        "Indirect Prompt Injection",
+        "간접 지시문 주입"
+      ],
+      "summary": "모델이 읽는 웹·문서·메일·도구 결과 같은 외부 데이터에 악성 지시를 숨겨 애플리케이션의 행동을 바꾸려는 공격이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "prompt-injection",
+        "tool-calling"
+      ],
+      "related": [
+        "jailbreak",
+        "rag",
+        "human-in-the-loop"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/indirect-prompt-injection/"
+    },
+    {
       "id": "reinforcement-learning",
       "title": "강화학습",
       "englishTitle": "Reinforcement Learning",
@@ -206,6 +232,7 @@
       "backlinks": [
         "content-moderation",
         "bias-fairness",
+        "synthetic-data",
         "ai-governance"
       ],
       "courses": [
@@ -236,9 +263,11 @@
         "reranker"
       ],
       "backlinks": [
+        "indirect-prompt-injection",
         "retriever",
         "approximate-nearest-neighbor",
         "reranker",
+        "embedding-model",
         "nearest-neighbor-search"
       ],
       "courses": [
@@ -397,7 +426,8 @@
       ],
       "backlinks": [
         "multimodal-embedding",
-        "text-to-speech"
+        "text-to-speech",
+        "computer-vision"
       ],
       "courses": [
         "multimodal-ai"
@@ -427,7 +457,8 @@
       "backlinks": [
         "tool-calling",
         "streaming-response",
-        "rate-limit"
+        "rate-limit",
+        "http-response"
       ],
       "courses": [
         "api-development"
@@ -581,6 +612,7 @@
       ],
       "backlinks": [
         "beam-search",
+        "softmax",
         "language-model",
         "mixture-of-experts",
         "completion",
@@ -676,7 +708,8 @@
         "reinforcement-learning",
         "model",
         "algorithm",
-        "training-data"
+        "training-data",
+        "synthetic-data"
       ],
       "courses": [],
       "reviewedAt": "2026-07-12",
@@ -701,8 +734,10 @@
         "structured-output"
       ],
       "backlinks": [
+        "indirect-prompt-injection",
         "structured-output",
         "streaming-response",
+        "workflow-orchestration",
         "prompt-injection",
         "ai-agent"
       ],
@@ -783,18 +818,18 @@
         "Deep Learning",
         "DL"
       ],
-      "summary": "여러 층의 신경망으로 데이터의 표현을 단계적으로 학습하는 머신러닝 방법이다.",
+      "summary": "여러 처리 층을 가진 신경망이 데이터에서 단계적인 표현을 학습하도록 훈련하는 머신러닝 접근이다.",
       "categories": [
         "foundations"
       ],
       "prerequisites": [
-        "artificial-intelligence",
-        "machine-learning"
+        "machine-learning",
+        "neural-network"
       ],
       "related": [
-        "machine-learning",
-        "generative-ai",
-        "supervised-learning"
+        "activation-function",
+        "training-data",
+        "generative-ai"
       ],
       "backlinks": [
         "machine-learning",
@@ -805,7 +840,7 @@
       "courses": [
         "ai-foundations"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/deep-learning/"
     },
     {
@@ -921,7 +956,8 @@
       "backlinks": [
         "deep-learning",
         "generative-ai",
-        "artificial-intelligence"
+        "artificial-intelligence",
+        "computer-vision"
       ],
       "courses": [
         "ai-foundations"
@@ -980,7 +1016,9 @@
       "backlinks": [
         "vision-language-model",
         "speech-recognition",
-        "image-generation"
+        "image-generation",
+        "computer-vision",
+        "cross-attention"
       ],
       "courses": [
         "multimodal-ai"
@@ -1039,8 +1077,7 @@
       "backlinks": [
         "positional-encoding",
         "encoder",
-        "query-key-value",
-        "cross-attention"
+        "query-key-value"
       ],
       "courses": [],
       "reviewedAt": "2026-07-12",
@@ -1067,6 +1104,7 @@
       ],
       "backlinks": [
         "dataset",
+        "model-registry",
         "model-hub",
         "pretraining",
         "algorithm",
@@ -1100,6 +1138,7 @@
         "model-hub"
       ],
       "backlinks": [
+        "model-registry",
         "model-hub",
         "open-source-model"
       ],
@@ -1108,6 +1147,32 @@
       ],
       "reviewedAt": "2026-07-12",
       "url": "/wiki/model-license/"
+    },
+    {
+      "id": "model-registry",
+      "title": "모델 레지스트리",
+      "englishTitle": "Model Registry",
+      "aliases": [
+        "Model Registry",
+        "모델 등록소"
+      ],
+      "summary": "학습된 모델 버전과 메타데이터·검증 상태·배포 참조를 중앙에서 추적하고 관리하는 수명주기 시스템이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model",
+        "model-hub"
+      ],
+      "related": [
+        "model-license",
+        "checkpoint",
+        "workflow-orchestration"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/model-registry/"
     },
     {
       "id": "mcp",
@@ -1158,7 +1223,8 @@
       ],
       "backlinks": [
         "benchmark",
-        "metric"
+        "metric",
+        "synthetic-data"
       ],
       "courses": [
         "multimodal-ai",
@@ -1188,6 +1254,7 @@
       ],
       "backlinks": [
         "model-license",
+        "model-registry",
         "open-source-model"
       ],
       "courses": [],
@@ -1358,6 +1425,7 @@
         "tensor"
       ],
       "backlinks": [
+        "scalar",
         "attention",
         "neuron",
         "embedding",
@@ -1724,18 +1792,18 @@
         "Small Language Model",
         "SLM"
       ],
-      "summary": "제한된 자원과 특정 환경에서 효율적으로 동작하도록 규모를 줄인 언어 모델이다.",
+      "summary": "대규모 언어 모델보다 파라미터·메모리·연산 요구량을 줄여 제한된 환경에서 운용하도록 설계한 언어 모델이다.",
       "categories": [
         "llm"
       ],
       "prerequisites": [
         "language-model",
-        "large-language-model"
+        "parameter"
       ],
       "related": [
         "large-language-model",
-        "parameter",
-        "hyperparameter"
+        "quantization",
+        "inference"
       ],
       "backlinks": [
         "large-language-model",
@@ -1744,7 +1812,7 @@
         "hyperparameter"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/small-language-model/"
     },
     {
@@ -1752,20 +1820,21 @@
       "title": "소프트맥스",
       "englishTitle": "Softmax",
       "aliases": [
-        "Softmax"
+        "Softmax Function",
+        "소프트맥스 함수"
       ],
-      "summary": "여러 로짓을 합이 1인 확률 분포로 변환하는 함수다.",
+      "summary": "여러 실수 점수를 지수화하고 합으로 나눠 합이 1인 비율 벡터로 바꾸는 함수다.",
       "categories": [
         "inference"
       ],
       "prerequisites": [
-        "inference",
-        "logit"
+        "logit",
+        "probability"
       ],
       "related": [
-        "logit",
         "temperature",
-        "top-k-sampling"
+        "top-k-sampling",
+        "next-token-prediction"
       ],
       "backlinks": [
         "logit",
@@ -1776,7 +1845,7 @@
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/softmax/"
     },
     {
@@ -1812,6 +1881,29 @@
       "url": "/wiki/loss-function/"
     },
     {
+      "id": "scalar",
+      "title": "스칼라",
+      "englishTitle": "Scalar",
+      "aliases": [
+        "Scalar",
+        "스칼라값"
+      ],
+      "summary": "벡터 공간의 벡터를 확대·축소하거나 계산의 단일 값을 나타내는 수학적 원소다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [],
+      "related": [
+        "vector",
+        "tensor",
+        "parameter"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/scalar/"
+    },
+    {
       "id": "streaming-response",
       "title": "스트리밍 응답",
       "englishTitle": "Streaming Response",
@@ -1835,7 +1927,8 @@
         "structured-output",
         "tool-calling",
         "rate-limit",
-        "api-key"
+        "api-key",
+        "http-response"
       ],
       "courses": [
         "api-development"
@@ -1860,8 +1953,10 @@
         "layer"
       ],
       "backlinks": [
+        "deep-learning",
         "layer",
-        "neuron"
+        "neuron",
+        "computer-vision"
       ],
       "courses": [
         "ai-foundations",
@@ -1875,9 +1970,11 @@
       "title": "신경망 층",
       "englishTitle": "Neural Network Layer",
       "aliases": [
-        "Neural Network Layer"
+        "Neural Network Layer",
+        "Layer",
+        "레이어"
       ],
-      "summary": "같은 단계에서 입력을 변환하는 여러 계산 단위의 묶음이다.",
+      "summary": "입력 표현을 정해진 연산과 학습 파라미터로 변환해 다음 표현으로 전달하는 신경망의 구성 단위다.",
       "categories": [
         "neural"
       ],
@@ -1886,7 +1983,7 @@
         "neuron"
       ],
       "related": [
-        "neuron",
+        "activation-function",
         "weight",
         "bias"
       ],
@@ -1897,7 +1994,7 @@
         "bias"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/layer/"
     },
     {
@@ -1948,9 +2045,9 @@
       ],
       "backlinks": [
         "data-augmentation",
+        "small-language-model",
         "knowledge-distillation",
-        "peft",
-        "synthetic-data"
+        "peft"
       ],
       "courses": [
         "model-training"
@@ -2044,7 +2141,8 @@
       "backlinks": [
         "large-language-model",
         "small-language-model",
-        "speech-recognition"
+        "speech-recognition",
+        "embedding-model"
       ],
       "courses": [
         "ai-foundations"
@@ -2074,6 +2172,7 @@
       "backlinks": [
         "planning",
         "agent-memory",
+        "workflow-orchestration",
         "ai-agent"
       ],
       "courses": [
@@ -2105,8 +2204,7 @@
       "backlinks": [
         "planning",
         "state-management",
-        "agent-loop",
-        "workflow-orchestration"
+        "agent-loop"
       ],
       "courses": [
         "agent-systems"
@@ -2224,6 +2322,7 @@
         "structured-output",
         "streaming-response",
         "api-key",
+        "http-response",
         "json"
       ],
       "courses": [
@@ -2237,23 +2336,25 @@
       "title": "워크플로 오케스트레이션",
       "englishTitle": "Workflow Orchestration",
       "aliases": [
-        "Workflow Orchestration"
+        "Workflow Orchestration",
+        "작업 흐름 오케스트레이션"
       ],
-      "summary": "여러 작업·모델·도구의 실행 순서와 조건을 제어하는 과정이다.",
+      "summary": "여러 작업과 도구 호출의 의존 관계·상태·실패 처리를 정의하고 실행 순서를 조정하는 운영 방식이다.",
       "categories": [
         "agents"
       ],
       "prerequisites": [
-        "agent-memory",
+        "agent-loop",
         "state-management"
       ],
       "related": [
-        "state-management",
         "multi-agent-system",
-        "human-in-the-loop"
+        "human-in-the-loop",
+        "tool-calling"
       ],
       "backlinks": [
         "multi-agent-system",
+        "model-registry",
         "state-management",
         "agent-memory",
         "human-in-the-loop"
@@ -2261,7 +2362,7 @@
       "courses": [
         "agent-systems"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/workflow-orchestration/"
     },
     {
@@ -2443,6 +2544,7 @@
       "backlinks": [
         "multimodal-model",
         "vision-language-model",
+        "computer-vision",
         "diffusion-model"
       ],
       "courses": [
@@ -2472,6 +2574,7 @@
         "webhook"
       ],
       "backlinks": [
+        "indirect-prompt-injection",
         "multi-agent-system",
         "mcp",
         "workflow-orchestration",
@@ -2563,7 +2666,6 @@
         "deep-learning"
       ],
       "backlinks": [
-        "deep-learning",
         "machine-learning"
       ],
       "courses": [
@@ -2680,6 +2782,7 @@
         "decoder",
         "decoder-only-model",
         "encoder",
+        "cross-attention",
         "feed-forward-network"
       ],
       "courses": [],
@@ -2723,19 +2826,21 @@
       "title": "임베딩 모델",
       "englishTitle": "Embedding Model",
       "aliases": [
-        "Embedding Model"
+        "Embedding Model",
+        "임베더"
       ],
-      "summary": "입력을 의미 비교와 검색에 사용할 고정 길이 벡터로 변환하는 모델이다.",
+      "summary": "텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다.",
       "categories": [
         "retrieval"
       ],
       "prerequisites": [
-        "embedding"
+        "embedding",
+        "language-model"
       ],
       "related": [
-        "embedding",
         "vector-database",
-        "semantic-search"
+        "semantic-search",
+        "rag"
       ],
       "backlinks": [
         "vector-database",
@@ -2745,7 +2850,7 @@
       "courses": [
         "rag-search"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/embedding-model/"
     },
     {
@@ -2840,9 +2945,12 @@
       "title": "정밀도와 재현율",
       "englishTitle": "Precision and Recall",
       "aliases": [
-        "Precision and Recall"
+        "Precision",
+        "Recall",
+        "정밀도",
+        "재현율"
       ],
-      "summary": "양성 예측의 신뢰성과 실제 양성을 찾아낸 비율을 각각 나타내는 지표다.",
+      "summary": "정밀도는 양성으로 예측한 항목의 적중 비율이고 재현율은 실제 양성 가운데 찾아낸 비율이다.",
       "categories": [
         "evaluation"
       ],
@@ -2852,8 +2960,8 @@
       ],
       "related": [
         "accuracy",
-        "llm-as-a-judge",
-        "observability"
+        "observability",
+        "llm-as-a-judge"
       ],
       "backlinks": [
         "observability",
@@ -2864,7 +2972,7 @@
       "courses": [
         "responsible-ai"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/precision-recall/"
     },
     {
@@ -2982,7 +3090,6 @@
         "self-supervised-learning"
       ],
       "backlinks": [
-        "deep-learning",
         "unsupervised-learning",
         "generative-ai",
         "self-supervised-learning"
@@ -3200,7 +3307,7 @@
       ],
       "backlinks": [
         "data-augmentation",
-        "synthetic-data",
+        "model-registry",
         "alignment"
       ],
       "courses": [],
@@ -3288,7 +3395,7 @@
       ],
       "backlinks": [
         "logit",
-        "softmax"
+        "small-language-model"
       ],
       "courses": [
         "api-development"
@@ -3355,6 +3462,33 @@
       ],
       "reviewedAt": "2026-07-12",
       "url": "/wiki/context-window/"
+    },
+    {
+      "id": "computer-vision",
+      "title": "컴퓨터 비전",
+      "englishTitle": "Computer Vision",
+      "aliases": [
+        "Computer Vision",
+        "CV",
+        "컴퓨터 시각"
+      ],
+      "summary": "이미지와 영상에서 대상·장면·공간 구조를 추정하고 유용한 정보를 계산하는 인공지능 분야다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "machine-learning",
+        "neural-network"
+      ],
+      "related": [
+        "ocr",
+        "multimodal-model",
+        "image-generation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/computer-vision/"
     },
     {
       "id": "completion",
@@ -3485,20 +3619,21 @@
       "title": "크로스 어텐션",
       "englishTitle": "Cross-Attention",
       "aliases": [
-        "Cross-Attention"
+        "Cross-Attention",
+        "Encoder-Decoder Attention"
       ],
-      "summary": "한 시퀀스의 질의가 다른 시퀀스의 키와 값을 참조하는 어텐션이다.",
+      "summary": "한 표현의 질의가 다른 표현에서 만든 키와 값을 조회해 두 입력 사이의 관련 정보를 결합하는 어텐션이다.",
       "categories": [
         "transformer"
       ],
       "prerequisites": [
         "attention",
-        "self-attention"
+        "query-key-value"
       ],
       "related": [
         "self-attention",
-        "query-key-value",
-        "multi-head-attention"
+        "encoder-decoder",
+        "multimodal-model"
       ],
       "backlinks": [
         "multi-head-attention",
@@ -3507,7 +3642,7 @@
         "query-key-value"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/cross-attention/"
     },
     {
@@ -3532,6 +3667,7 @@
       ],
       "backlinks": [
         "guardrail",
+        "indirect-prompt-injection",
         "content-moderation",
         "prompt-injection",
         "hallucination"
@@ -3564,6 +3700,7 @@
       ],
       "backlinks": [
         "vector",
+        "scalar",
         "matrix",
         "probability",
         "probability-distribution"
@@ -3715,6 +3852,7 @@
       "backlinks": [
         "large-language-model",
         "small-language-model",
+        "scalar",
         "token",
         "hyperparameter"
       ],
@@ -3906,6 +4044,7 @@
       ],
       "backlinks": [
         "guardrail",
+        "indirect-prompt-injection",
         "jailbreak",
         "hallucination"
       ],
@@ -3967,7 +4106,6 @@
         "tokenization"
       ],
       "backlinks": [
-        "small-language-model",
         "token",
         "parameter"
       ],
@@ -3998,9 +4136,11 @@
       "backlinks": [
         "reinforcement-learning",
         "dataset",
+        "deep-learning",
         "model",
         "pretraining",
-        "self-supervised-learning"
+        "self-supervised-learning",
+        "synthetic-data"
       ],
       "courses": [
         "ai-foundations"
@@ -4045,20 +4185,21 @@
       "title": "합성 데이터",
       "englishTitle": "Synthetic Data",
       "aliases": [
-        "Synthetic Data"
+        "Synthetic Data",
+        "인공 데이터"
       ],
-      "summary": "실제 수집 대신 규칙·시뮬레이션·생성 모델로 만든 데이터다.",
+      "summary": "실제 관측값을 그대로 복제하지 않고 규칙·시뮬레이션·통계 또는 생성 모델로 만든 데이터다.",
       "categories": [
         "training"
       ],
       "prerequisites": [
-        "quantization",
+        "training-data",
         "data-augmentation"
       ],
       "related": [
-        "data-augmentation",
-        "checkpoint",
-        "alignment"
+        "privacy",
+        "dataset",
+        "evaluation"
       ],
       "backlinks": [
         "data-augmentation",
@@ -4067,7 +4208,7 @@
         "alignment"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/synthetic-data/"
     },
     {
@@ -4122,6 +4263,7 @@
         "conditional-probability"
       ],
       "backlinks": [
+        "softmax",
         "language-model",
         "conditional-probability",
         "tensor",
@@ -4243,7 +4385,9 @@
       ],
       "backlinks": [
         "weight",
+        "deep-learning",
         "loss-function",
+        "layer",
         "backpropagation",
         "neuron",
         "bias"
@@ -4328,8 +4472,7 @@
         "checkpoint"
       ],
       "backlinks": [
-        "checkpoint",
-        "synthetic-data"
+        "checkpoint"
       ],
       "courses": [],
       "reviewedAt": "2026-07-12",
@@ -4354,6 +4497,7 @@
       ],
       "backlinks": [
         "http-request",
+        "http-response",
         "rest-api",
         "sdk"
       ],
@@ -4415,6 +4559,7 @@
       ],
       "backlinks": [
         "api-key",
+        "http-response",
         "json",
         "rest-api",
         "sdk"
@@ -4424,6 +4569,32 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/http-request/"
+    },
+    {
+      "id": "http-response",
+      "title": "HTTP 응답",
+      "englishTitle": "HTTP Response",
+      "aliases": [
+        "HTTP Response",
+        "응답 메시지"
+      ],
+      "summary": "서버가 HTTP 요청의 처리 결과를 상태 코드·필드·선택적 콘텐츠로 전달하는 메시지다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "http-request",
+        "api"
+      ],
+      "related": [
+        "rate-limit",
+        "structured-output",
+        "streaming-response"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/http-response/"
     },
     {
       "id": "json",

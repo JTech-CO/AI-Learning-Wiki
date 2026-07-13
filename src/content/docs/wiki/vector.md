@@ -104,6 +104,7 @@ _해당 문서가 없습니다._
 - [임베딩](/wiki/embedding/)
 - [행렬](/wiki/matrix/)
 - [인공 뉴런](/wiki/neuron/)
+- [스칼라](/wiki/scalar/)
 - [텐서](/wiki/tensor/)
 
 ## 이 문서를 포함하는 코스

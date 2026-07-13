@@ -5,6 +5,7 @@ description: AI·LLM 백과 문서 가나다 색인
 
 - [가드레일](/wiki/guardrail/) <span class="wiki-en">Guardrail</span>
 - [가중치](/wiki/weight/) <span class="wiki-en">Weight</span>
+- [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/) <span class="wiki-en">Indirect Prompt Injection</span>
 - [강화학습](/wiki/reinforcement-learning/) <span class="wiki-en">Reinforcement Learning</span>
 - [개인정보 보호](/wiki/privacy/) <span class="wiki-en">Privacy</span>
 - [검색 증강 생성](/wiki/rag/) <span class="wiki-en">Retrieval-Augmented Generation</span>
@@ -36,6 +37,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [멀티헤드 어텐션](/wiki/multi-head-attention/) <span class="wiki-en">Multi-Head Attention</span>
 - [모델](/wiki/model/) <span class="wiki-en">Model</span>
 - [모델 라이선스](/wiki/model-license/) <span class="wiki-en">Model License</span>
+- [모델 레지스트리](/wiki/model-registry/) <span class="wiki-en">Model Registry</span>
 - [모델 컨텍스트 프로토콜](/wiki/mcp/) <span class="wiki-en">Model Context Protocol</span>
 - [모델 평가](/wiki/evaluation/) <span class="wiki-en">Model Evaluation</span>
 - [모델 허브](/wiki/model-hub/) <span class="wiki-en">Model Hub</span>
@@ -59,6 +61,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [소규모 언어 모델](/wiki/small-language-model/) <span class="wiki-en">Small Language Model</span>
 - [소프트맥스](/wiki/softmax/) <span class="wiki-en">Softmax</span>
 - [손실 함수](/wiki/loss-function/) <span class="wiki-en">Loss Function</span>
+- [스칼라](/wiki/scalar/) <span class="wiki-en">Scalar</span>
 - [스트리밍 응답](/wiki/streaming-response/) <span class="wiki-en">Streaming Response</span>
 - [신경망](/wiki/neural-network/) <span class="wiki-en">Neural Network</span>
 - [신경망 층](/wiki/layer/) <span class="wiki-en">Neural Network Layer</span>
@@ -110,6 +113,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [추론](/wiki/inference/) <span class="wiki-en">Inference</span>
 - [추적](/wiki/tracing/) <span class="wiki-en">Tracing</span>
 - [컨텍스트 윈도우](/wiki/context-window/) <span class="wiki-en">Context Window</span>
+- [컴퓨터 비전](/wiki/computer-vision/) <span class="wiki-en">Computer Vision</span>
 - [컴플리션](/wiki/completion/) <span class="wiki-en">Completion</span>
 - [코사인 유사도](/wiki/cosine-similarity/) <span class="wiki-en">Cosine Similarity</span>
 - [콘텐츠 조정](/wiki/content-moderation/) <span class="wiki-en">Content Moderation</span>
@@ -145,6 +149,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [API](/wiki/api/) <span class="wiki-en">Application Programming Interface</span>
 - [API 키](/wiki/api-key/) <span class="wiki-en">API Key</span>
 - [HTTP 요청](/wiki/http-request/) <span class="wiki-en">HTTP Request</span>
+- [HTTP 응답](/wiki/http-response/) <span class="wiki-en">HTTP Response</span>
 - [JSON](/wiki/json/) <span class="wiki-en">JavaScript Object Notation</span>
 - [KV 캐시](/wiki/kv-cache/) <span class="wiki-en">Key-Value Cache</span>
 - [LLM 심사자](/wiki/llm-as-a-judge/) <span class="wiki-en">LLM as a Judge</span>

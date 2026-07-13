@@ -103,6 +103,7 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 ## 이 문서를 가리키는 문서
 
 - [API 키](/wiki/api-key/)
+- [HTTP 응답](/wiki/http-response/)
 - [JSON](/wiki/json/)
 - [REST API](/wiki/rest-api/)
 - [SDK](/wiki/sdk/)

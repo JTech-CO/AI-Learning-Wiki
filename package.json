@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w6:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
+    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w7:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
     "gen": "node scripts/build-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -44,7 +44,11 @@
     "wiki:w6:validate": "node scripts/validate-w6-claims.mjs",
     "wiki:w6:queue": "node scripts/build-w6-production-queue.mjs && node scripts/validate-w6-production-queue.mjs",
     "wiki:w6:render": "node scripts/check-w6-render.mjs",
-    "wiki:w2:recheck": "node scripts/collect-w2-source-verification.mjs --refresh && npm run wiki:evidence:audit"
+    "wiki:w2:recheck": "node scripts/collect-w2-source-verification.mjs --refresh && npm run wiki:evidence:audit",
+    "wiki:w7:refresh": "node scripts/build-w7-claim-ledger.mjs",
+    "wiki:w7:validate": "node scripts/validate-w7-claims.mjs",
+    "wiki:w7:queue": "node scripts/build-w7-production-queue.mjs && node scripts/validate-w7-production-queue.mjs",
+    "wiki:w7:render": "node scripts/check-w7-render.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

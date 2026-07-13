@@ -149,6 +149,7 @@
       "categoryId": "mathematics",
       "phase": "existing-enrichment",
       "topicIds": [
+        "scalar",
         "vector",
         "matrix",
         "tensor",
@@ -160,16 +161,15 @@
         "conditional-probability",
         "cosine-similarity"
       ],
-      "topicCount": 10,
+      "topicCount": 11,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
+      "minimumManualReviewCount": 2
     },
     {
       "id": "mathematics-core-expansion",
       "categoryId": "mathematics",
       "phase": "core-expansion",
       "topicIds": [
-        "scalar",
         "matrix-multiplication",
         "dot-product",
         "outer-product",
@@ -187,7 +187,7 @@
         "orthogonality",
         "vector-projection"
       ],
-      "topicCount": 17,
+      "topicCount": 16,
       "mandatoryManualReviewTopicIds": [],
       "minimumManualReviewCount": 2
     },
@@ -1149,6 +1149,7 @@
       "topicIds": [
         "api",
         "http-request",
+        "http-response",
         "json",
         "rest-api",
         "streaming-response",
@@ -1158,16 +1159,15 @@
         "api-key",
         "rate-limit"
       ],
-      "topicCount": 10,
+      "topicCount": 11,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
+      "minimumManualReviewCount": 2
     },
     {
       "id": "api-core-expansion",
       "categoryId": "api",
       "phase": "core-expansion",
       "topicIds": [
-        "http-response",
         "http-method",
         "http-status-code",
         "http-header",
@@ -1184,7 +1184,7 @@
         "domain-name-system",
         "transmission-control-protocol"
       ],
-      "topicCount": 16,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [],
       "minimumManualReviewCount": 2
     },
@@ -1451,6 +1451,7 @@
       "phase": "existing-enrichment",
       "topicIds": [
         "vision-language-model",
+        "computer-vision",
         "speech-recognition",
         "text-to-speech",
         "multimodal-model",
@@ -1459,7 +1460,7 @@
         "image-generation",
         "ocr"
       ],
-      "topicCount": 8,
+      "topicCount": 9,
       "mandatoryManualReviewTopicIds": [],
       "minimumManualReviewCount": 1
     },
@@ -1468,7 +1469,6 @@
       "categoryId": "multimodal",
       "phase": "core-expansion",
       "topicIds": [
-        "computer-vision",
         "image-classification",
         "object-detection",
         "image-segmentation",
@@ -1488,7 +1488,7 @@
         "spatial-reasoning",
         "pixel-representation"
       ],
-      "topicCount": 19,
+      "topicCount": 18,
       "mandatoryManualReviewTopicIds": [],
       "minimumManualReviewCount": 2
     },
@@ -1750,6 +1750,7 @@
       "phase": "existing-enrichment",
       "topicIds": [
         "prompt-injection",
+        "indirect-prompt-injection",
         "jailbreak",
         "guardrail",
         "content-moderation",
@@ -1758,9 +1759,10 @@
         "bias-fairness",
         "ai-governance"
       ],
-      "topicCount": 8,
+      "topicCount": 9,
       "mandatoryManualReviewTopicIds": [
         "prompt-injection",
+        "indirect-prompt-injection",
         "jailbreak",
         "guardrail",
         "content-moderation",
@@ -1769,14 +1771,13 @@
         "bias-fairness",
         "ai-governance"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "safety-core-expansion",
       "categoryId": "safety",
       "phase": "core-expansion",
       "topicIds": [
-        "indirect-prompt-injection",
         "training-data-poisoning",
         "model-poisoning",
         "model-backdoor",
@@ -1793,9 +1794,8 @@
         "prompt-leakage",
         "rag-poisoning"
       ],
-      "topicCount": 16,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
-        "indirect-prompt-injection",
         "training-data-poisoning",
         "model-poisoning",
         "model-backdoor",
@@ -1812,7 +1812,7 @@
         "prompt-leakage",
         "rag-poisoning"
       ],
-      "minimumManualReviewCount": 16
+      "minimumManualReviewCount": 15
     },
     {
       "id": "safety-standard-expansion",
@@ -1994,10 +1994,11 @@
       "phase": "existing-enrichment",
       "topicIds": [
         "model-hub",
+        "model-registry",
         "model-license",
         "open-source-model"
       ],
-      "topicCount": 3,
+      "topicCount": 4,
       "mandatoryManualReviewTopicIds": [],
       "minimumManualReviewCount": 1
     },
@@ -2006,7 +2007,6 @@
       "categoryId": "ecosystem",
       "phase": "core-expansion",
       "topicIds": [
-        "model-registry",
         "model-version",
         "model-lineage",
         "model-release",
@@ -2024,7 +2024,7 @@
         "source-available-model",
         "open-source-ai-definition"
       ],
-      "topicCount": 17,
+      "topicCount": 16,
       "mandatoryManualReviewTopicIds": [
         "model-release",
         "model-update",

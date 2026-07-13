@@ -101,6 +101,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [모델 허브](/wiki/model-hub/)
+- [모델 레지스트리](/wiki/model-registry/)
 - [오픈소스 모델](/wiki/open-source-model/)
 
 ## 이 문서를 포함하는 코스

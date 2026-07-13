@@ -102,7 +102,6 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
-- [딥러닝](/wiki/deep-learning/)
 - [머신러닝](/wiki/machine-learning/)
 
 ## 이 문서를 포함하는 코스

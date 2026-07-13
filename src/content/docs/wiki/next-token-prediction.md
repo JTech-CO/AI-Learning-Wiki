@@ -88,6 +88,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [언어 모델](/wiki/language-model/)
 - [전문가 혼합](/wiki/mixture-of-experts/)
 - [프롬프트](/wiki/prompt/)
+- [소프트맥스](/wiki/softmax/)
 
 ## 이 문서를 포함하는 코스
 

@@ -85,7 +85,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [딥러닝](/wiki/deep-learning/)
 - [생성형 인공지능](/wiki/generative-ai/)
 - [자기지도학습](/wiki/self-supervised-learning/)
 - [비지도학습](/wiki/unsupervised-learning/)

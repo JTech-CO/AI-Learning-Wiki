@@ -88,7 +88,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [데이터 증강](/wiki/data-augmentation/)
 - [지식 증류](/wiki/knowledge-distillation/)
 - [파라미터 효율적 미세조정](/wiki/peft/)
-- [합성 데이터](/wiki/synthetic-data/)
+- [소규모 언어 모델](/wiki/small-language-model/)
 
 ## 이 문서를 포함하는 코스
 

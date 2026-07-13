@@ -101,7 +101,7 @@ _해당 문서가 없습니다._
 ## 이 문서를 가리키는 문서
 
 - [로짓](/wiki/logit/)
-- [소프트맥스](/wiki/softmax/)
+- [소규모 언어 모델](/wiki/small-language-model/)
 
 ## 이 문서를 포함하는 코스
 

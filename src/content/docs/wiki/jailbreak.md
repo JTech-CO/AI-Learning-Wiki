@@ -106,6 +106,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [콘텐츠 조정](/wiki/content-moderation/)
 - [가드레일](/wiki/guardrail/)
 - [환각](/wiki/hallucination/)
+- [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [프롬프트 인젝션](/wiki/prompt-injection/)
 
 ## 이 문서를 포함하는 코스

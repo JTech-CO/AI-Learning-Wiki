@@ -89,6 +89,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [데이터셋](/wiki/dataset/)
 - [임베딩](/wiki/embedding/)
 - [모델 허브](/wiki/model-hub/)
+- [모델 레지스트리](/wiki/model-registry/)
 - [사전학습](/wiki/pretraining/)
 - [학습 데이터](/wiki/training-data/)
 

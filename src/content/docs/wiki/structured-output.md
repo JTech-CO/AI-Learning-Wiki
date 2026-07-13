@@ -83,6 +83,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [HTTP 응답](/wiki/http-response/)
 - [요청 한도](/wiki/rate-limit/)
 - [스트리밍 응답](/wiki/streaming-response/)
 - [도구 호출](/wiki/tool-calling/)

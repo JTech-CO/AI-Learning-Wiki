@@ -85,7 +85,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [크로스 어텐션](/wiki/cross-attention/)
 - [인코더](/wiki/encoder/)
 - [위치 인코딩](/wiki/positional-encoding/)
 - [쿼리·키·값](/wiki/query-key-value/)

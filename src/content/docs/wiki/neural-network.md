@@ -100,6 +100,8 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [컴퓨터 비전](/wiki/computer-vision/)
+- [딥러닝](/wiki/deep-learning/)
 - [신경망 층](/wiki/layer/)
 - [인공 뉴런](/wiki/neuron/)
 

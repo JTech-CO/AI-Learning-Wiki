@@ -85,6 +85,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [컴퓨터 비전](/wiki/computer-vision/)
 - [확산 모델](/wiki/diffusion-model/)
 - [멀티모달 모델](/wiki/multimodal-model/)
 - [비전-언어 모델](/wiki/vision-language-model/)

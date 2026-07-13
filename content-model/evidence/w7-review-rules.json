@@ -1,0 +1,582 @@
+{
+  "version": "W7-2026-07-13",
+  "reviewedAt": "2026-07-13",
+  "reviewer": "AI Learning Wiki W7 first production batch audit",
+  "policy": {
+    "claimUnit": "Intl.Segmenter ko sentence",
+    "rawClaimTextStored": false,
+    "bodyHashLocked": true,
+    "publicationRequiresAllClaimsAccepted": true,
+    "minimumIndependentSourceFamilies": 3,
+    "sectionClassifications": {
+      "overview": "source-supported",
+      "scope": "provenance-note",
+      "mechanism": "source-supported",
+      "structure": "editorial-synthesis",
+      "applications": "editorial-synthesis",
+      "limitations": "source-supported",
+      "distinctions": "editorial-synthesis",
+      "worked-example": "editorial-guidance",
+      "practice": "editorial-guidance"
+    },
+    "evidenceSetBySection": {
+      "overview": "concept",
+      "scope": "provenance",
+      "mechanism": "concept",
+      "structure": "implementation",
+      "applications": "implementation",
+      "limitations": "limitations",
+      "distinctions": "concept",
+      "worked-example": "implementation",
+      "practice": "implementation"
+    }
+  },
+  "articles": [
+    {
+      "articleId": "workflow-orchestration",
+      "categoryId": "agents",
+      "reviewNote": "작업 그래프·상태·재시도·관측 구조와 에이전트 도구 실행의 관계를 논문, 공식 오케스트레이터 문서, 백과에서 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Workflow Orchestration"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Workflow Orchestration"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Workflow Orchestration"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Workflow Orchestration"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Workflow Orchestration"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Workflow Orchestration"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "precision-recall",
+      "categoryId": "evaluation",
+      "reviewNote": "TP·FP·FN 기반 정의, 임계값과 평균 방식, 불균형 데이터에서의 해석을 평가 논문·공식 구현 문서·백과로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Precision and Recall"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Precision and Recall"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Precision and Recall"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Precision and Recall"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Precision and Recall"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Precision and Recall"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "deep-learning",
+      "categoryId": "foundations",
+      "reviewNote": "다층 표현 학습, 역전파, 응용과 일반화 한계를 교재·대표 검토 논문·백과에서 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Deep Learning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Deep Learning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Deep Learning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Deep Learning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Deep Learning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Deep Learning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "softmax",
+      "categoryId": "inference",
+      "reviewNote": "소프트맥스 수식, 축과 수치 안정성, 온도·손실 함수와의 관계를 교재·공식 구현 문서·백과로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Softmax"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Softmax"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Softmax"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Softmax"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Softmax"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Softmax"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "small-language-model",
+      "categoryId": "llm",
+      "reviewNote": "SLM의 상대적 크기 개념, 효율적 학습·장치 배포와 품질 한계를 대표 기술 보고서·공식 자료·백과로 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Small Language Model"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Small Language Model"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Small Language Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Small Language Model"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Small Language Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Small Language Model"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "layer",
+      "categoryId": "neural",
+      "reviewNote": "층의 변환·파라미터·연결 구조와 프레임워크 모듈의 동작을 교재·공식 구현 문서·백과에서 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Neural Network Layer"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Neural Network Layer"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Neural Network Layer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Neural Network Layer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Neural Network Layer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Neural Network Layer"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "embedding-model",
+      "categoryId": "retrieval",
+      "reviewNote": "문장 벡터 생성, 대조 학습, 유사도 검색과 공간 왜곡·버전 호환 한계를 원 논문·공식 구현 문서·백과로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Embedding Model"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Embedding Model"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Embedding Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Embedding Model"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Embedding Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Embedding Model"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "synthetic-data",
+      "categoryId": "training",
+      "reviewNote": "합성 데이터의 생성 방식, 품질·효용 평가와 개인정보 한계를 원 논문·공식 도구 문서·백과에서 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Synthetic Data"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Synthetic Data"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Synthetic Data"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Synthetic Data"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Synthetic Data"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Synthetic Data"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "cross-attention",
+      "categoryId": "transformer",
+      "reviewNote": "서로 다른 입력에서 Q와 K·V를 만드는 계산, shape·마스크와 비용을 원 논문·공식 구현 문서·백과로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Cross-Attention"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Cross-Attention"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Cross-Attention"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Cross-Attention"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Cross-Attention"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Cross-Attention"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "http-response",
+      "categoryId": "api",
+      "reviewNote": "응답의 상태 코드·필드·콘텐츠 의미와 클라이언트 처리 조건을 최신 HTTP 표준·공식 웹 참조·백과로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to HTTP Response"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for HTTP Response"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for HTTP Response"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for HTTP Response"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for HTTP Response"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for HTTP Response"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "scalar",
+      "categoryId": "mathematics",
+      "reviewNote": "선형대수의 체 원소 정의와 배열 라이브러리의 0차원·자료형 표현을 교재·공식 문서·백과로 구분했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Scalar"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Scalar"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Scalar"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Scalar"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Scalar"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Scalar"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "computer-vision",
+      "categoryId": "multimodal",
+      "reviewNote": "시각 과제의 범위, 처리 파이프라인, 촬영 조건과 평가 한계를 표준 교재·공식 라이브러리 문서·백과로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Computer Vision"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Computer Vision"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Computer Vision"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Computer Vision"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Computer Vision"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Computer Vision"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "indirect-prompt-injection",
+      "categoryId": "safety",
+      "reviewNote": "외부 데이터에서 유입되는 지시의 공격 경로, 영향과 다층 방어를 최초 체계화 논문·OWASP·백과로 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Indirect Prompt Injection"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Indirect Prompt Injection"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Indirect Prompt Injection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Indirect Prompt Injection"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Indirect Prompt Injection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Indirect Prompt Injection"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-registry",
+      "categoryId": "ecosystem",
+      "reviewNote": "모델 버전·계보·승격·별칭과 운영 재현성을 생산 ML 논문·공식 레지스트리 문서·MLOps 백과에서 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Registry"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Model Registry"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Model Registry"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Model Registry"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Model Registry"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Model Registry"
+          }
+        ]
+      }
+    }
+  ]
+}

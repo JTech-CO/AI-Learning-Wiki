@@ -103,7 +103,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [AI 정렬](/wiki/alignment/)
 - [데이터 증강](/wiki/data-augmentation/)
-- [합성 데이터](/wiki/synthetic-data/)
+- [모델 레지스트리](/wiki/model-registry/)
 
 ## 이 문서를 포함하는 코스
 

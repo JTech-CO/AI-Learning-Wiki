@@ -102,6 +102,7 @@ _해당 문서가 없습니다._
 
 - [벤치마크](/wiki/benchmark/)
 - [평가 지표](/wiki/metric/)
+- [합성 데이터](/wiki/synthetic-data/)
 
 ## 이 문서를 포함하는 코스
 

@@ -106,6 +106,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)
+- [임베딩 모델](/wiki/embedding-model/)
+- [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [최근접 이웃 검색](/wiki/nearest-neighbor-search/)
 - [리랭커](/wiki/reranker/)
 - [검색기](/wiki/retriever/)

@@ -88,6 +88,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [알고리즘](/wiki/algorithm/)
 - [모델](/wiki/model/)
 - [강화학습](/wiki/reinforcement-learning/)
+- [합성 데이터](/wiki/synthetic-data/)
 - [학습 데이터](/wiki/training-data/)
 
 ## 이 문서를 포함하는 코스

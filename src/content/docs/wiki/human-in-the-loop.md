@@ -85,6 +85,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [모델 컨텍스트 프로토콜](/wiki/mcp/)
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [웹훅](/wiki/webhook/)

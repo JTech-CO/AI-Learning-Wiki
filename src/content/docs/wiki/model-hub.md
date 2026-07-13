@@ -101,6 +101,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [모델 라이선스](/wiki/model-license/)
+- [모델 레지스트리](/wiki/model-registry/)
 - [오픈소스 모델](/wiki/open-source-model/)
 
 ## 이 문서를 포함하는 코스

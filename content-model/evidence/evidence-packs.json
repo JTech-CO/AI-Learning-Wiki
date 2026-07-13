@@ -1,7 +1,7 @@
 {
   "version": "W2-2026-07-13",
-  "generatedAt": "2026-07-13T09:13:37.686Z",
-  "topicCatalogSha256": "8e76244f4f905a497dd5ab65dc3978fea272b242979786bf075a46103f8751e3",
+  "generatedAt": "2026-07-13T10:50:16.641Z",
+  "topicCatalogSha256": "2788fed817c4c3f4b24c93a6482a87fb702ddc57a7a559aff0e14fb2e4361688",
   "articles": [
     {
       "articleId": "accuracy",
@@ -4332,6 +4332,189 @@
       }
     },
     {
+      "articleId": "computer-vision",
+      "titleKo": "컴퓨터 비전",
+      "titleEn": "Computer Vision",
+      "categoryId": "multimodal",
+      "tier": "core",
+      "volatility": "evergreen",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
+      "manualReviewRequired": true,
+      "researchAnchorIds": [
+        "w3c-webnn",
+        "clip-paper",
+        "whisper-paper",
+        "huggingface-transformers"
+      ],
+      "sources": [
+        {
+          "id": "src-607fb6b7a034",
+          "title": "컴퓨터 비전 — 한국어 위키백과",
+          "url": "https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EB%B9%84%EC%A0%84",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "wikimedia",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "wikimedia-api",
+          "relevanceStatus": "metadata-only",
+          "checkedAt": "2026-07-12T21:36:57.587Z"
+        },
+        {
+          "id": "src-7802e17ab4e9",
+          "title": "Computer Vision: Algorithms and Applications",
+          "url": "https://szeliski.org/Book/",
+          "type": "book",
+          "family": "academic-book",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-8e78e35435a6",
+          "title": "OpenCV Introduction",
+          "url": "https://docs.opencv.org/4.x/d1/dfb/intro.html",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-f2465b07b9bd",
+          "title": "Computer vision — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Computer_vision",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "overview",
+          "sectionTitle": "개요와 핵심 정의",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-f2465b07b9bd"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "scope",
+          "sectionTitle": "배경과 설명 범위",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-f2465b07b9bd"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "mechanism",
+          "sectionTitle": "작동 원리",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-8e78e35435a6"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "structure",
+          "sectionTitle": "구성 요소와 처리 흐름",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-8e78e35435a6"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "applications",
+          "sectionTitle": "활용 분야와 선택 기준",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-8e78e35435a6"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "limitations",
+          "sectionTitle": "한계와 흔한 오해",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-8e78e35435a6"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "distinctions",
+          "sectionTitle": "관련 개념과의 구분",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-f2465b07b9bd"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "worked-example",
+          "sectionTitle": "구체적 적용 예시",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-8e78e35435a6"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "practice",
+          "sectionTitle": "실무 적용과 검증 절차",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-7802e17ab4e9",
+            "src-8e78e35435a6"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "check",
+          "sectionTitle": "학습 체크",
+          "factual": false,
+          "candidateSourceIds": [],
+          "assignmentStatus": "not-factual"
+        }
+      ],
+      "audit": {
+        "independentFamilies": 3,
+        "primaryCandidates": 1,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
+        "factualSections": 9,
+        "sectionsWithCandidates": 9,
+        "readyForManualClaimReview": true,
+        "publicationReady": false,
+        "gaps": [
+          "manual-claim-review"
+        ]
+      }
+    },
+    {
       "articleId": "conditional-probability",
       "titleKo": "조건부확률",
       "titleEn": "Conditional Probability",
@@ -4951,8 +5134,8 @@
       "categoryId": "transformer",
       "tier": "core",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "transformer-paper",
@@ -4960,6 +5143,19 @@
         "pytorch-docs"
       ],
       "sources": [
+        {
+          "id": "src-30b9d69e6eb4",
+          "title": "PyTorch MultiheadAttention",
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T09:13:37.686Z"
+        },
         {
           "id": "src-a7468c685165",
           "title": "Attention Is All You Need",
@@ -5013,6 +5209,7 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-30b9d69e6eb4",
             "src-a7468c685165"
           ],
           "assignmentStatus": "review-required"
@@ -5022,6 +5219,7 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-30b9d69e6eb4",
             "src-a7468c685165"
           ],
           "assignmentStatus": "review-required"
@@ -5031,6 +5229,7 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-30b9d69e6eb4",
             "src-a7468c685165"
           ],
           "assignmentStatus": "review-required"
@@ -5040,6 +5239,7 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-30b9d69e6eb4",
             "src-a7468c685165"
           ],
           "assignmentStatus": "review-required"
@@ -5059,6 +5259,7 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-30b9d69e6eb4",
             "src-a7468c685165"
           ],
           "assignmentStatus": "review-required"
@@ -5068,6 +5269,7 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-30b9d69e6eb4",
             "src-a7468c685165"
           ],
           "assignmentStatus": "review-required"
@@ -5081,16 +5283,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 2,
-        "primaryCandidates": 1,
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
         "encyclopediaFamilies": 1,
-        "reachableSources": 2,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
           "manual-claim-review"
         ]
       }
@@ -5729,8 +5930,8 @@
       "categoryId": "foundations",
       "tier": "core",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "google-ml-glossary",
@@ -5765,6 +5966,19 @@
           "checkedAt": "2026-07-12T21:36:57.587Z"
         },
         {
+          "id": "src-e4c6d6e59da1",
+          "title": "Deep learning",
+          "url": "https://www.nature.com/articles/nature14539",
+          "type": "paper",
+          "family": "research-paper",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
           "id": "src-ff7e829ddc87",
           "title": "Deep Learning Book",
           "url": "https://www.deeplearningbook.org/",
@@ -5785,6 +5999,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-18ac17e18c48",
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5795,6 +6010,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-18ac17e18c48",
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5804,6 +6020,7 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5813,6 +6030,7 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5822,6 +6040,7 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5831,6 +6050,7 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5841,6 +6061,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-18ac17e18c48",
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5850,6 +6071,7 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5859,6 +6081,7 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-e4c6d6e59da1",
             "src-ff7e829ddc87"
           ],
           "assignmentStatus": "review-required"
@@ -5872,17 +6095,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 2,
-        "primaryCandidates": 0,
+        "independentFamilies": 3,
+        "primaryCandidates": 1,
         "encyclopediaFamilies": 1,
-        "reachableSources": 2,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
-          "primary-source",
           "manual-claim-review"
         ]
       }
@@ -6552,9 +6773,9 @@
       "titleEn": "Embedding Model",
       "categoryId": "retrieval",
       "tier": "core",
-      "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "volatility": "periodic",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2027-01-09T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "faiss-docs",
@@ -6563,9 +6784,22 @@
       ],
       "sources": [
         {
-          "id": "src-02ad74cdb0c9",
-          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
-          "url": "https://arxiv.org/abs/2005.11401",
+          "id": "src-645c023a67b4",
+          "title": "Word embedding — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Word_embedding",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T09:13:37.686Z"
+        },
+        {
+          "id": "src-afdfedb70256",
+          "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+          "url": "https://arxiv.org/abs/1908.10084",
           "type": "paper",
           "family": "research-paper",
           "origin": "article",
@@ -6573,7 +6807,20 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-12T21:56:01.403Z"
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-cc49d90bc4f7",
+          "title": "Sentence Transformers: Semantic Textual Similarity",
+          "url": "https://sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         }
       ],
       "sections": [
@@ -6582,7 +6829,8 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-645c023a67b4",
+            "src-afdfedb70256"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6591,7 +6839,8 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-645c023a67b4",
+            "src-afdfedb70256"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6600,7 +6849,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-afdfedb70256",
+            "src-cc49d90bc4f7"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6609,7 +6859,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-afdfedb70256",
+            "src-cc49d90bc4f7"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6618,7 +6869,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-afdfedb70256",
+            "src-cc49d90bc4f7"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6627,7 +6879,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-afdfedb70256",
+            "src-cc49d90bc4f7"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6636,7 +6889,8 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-645c023a67b4",
+            "src-afdfedb70256"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6645,7 +6899,8 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-afdfedb70256",
+            "src-cc49d90bc4f7"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6654,7 +6909,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-02ad74cdb0c9"
+            "src-afdfedb70256",
+            "src-cc49d90bc4f7"
           ],
           "assignmentStatus": "review-required"
         },
@@ -6667,17 +6923,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 1,
-        "primaryCandidates": 1,
-        "encyclopediaFamilies": 0,
-        "reachableSources": 1,
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
-          "encyclopedia-source",
           "manual-claim-review"
         ]
       }
@@ -8922,6 +9176,175 @@
       }
     },
     {
+      "articleId": "http-response",
+      "titleKo": "HTTP 응답",
+      "titleEn": "HTTP Response",
+      "categoryId": "api",
+      "tier": "core",
+      "volatility": "evergreen",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
+      "manualReviewRequired": true,
+      "researchAnchorIds": [
+        "openapi-spec",
+        "mdn-http",
+        "rfc-9110"
+      ],
+      "sources": [
+        {
+          "id": "src-b1b13a12aee7",
+          "title": "RFC 9110: HTTP Semantics",
+          "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+          "type": "standard",
+          "family": "technical-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-12T21:56:01.403Z"
+        },
+        {
+          "id": "src-df35fd04b143",
+          "title": "MDN: HTTP messages",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages",
+          "type": "documentation",
+          "family": "web-reference",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-f300674206f5",
+          "title": "HTTP — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/HTTP",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T09:13:37.686Z"
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "overview",
+          "sectionTitle": "개요와 핵심 정의",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-f300674206f5"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "scope",
+          "sectionTitle": "배경과 설명 범위",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-f300674206f5"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "mechanism",
+          "sectionTitle": "작동 원리",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-df35fd04b143"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "structure",
+          "sectionTitle": "구성 요소와 처리 흐름",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-df35fd04b143"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "applications",
+          "sectionTitle": "활용 분야와 선택 기준",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-df35fd04b143"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "limitations",
+          "sectionTitle": "한계와 흔한 오해",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-df35fd04b143"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "distinctions",
+          "sectionTitle": "관련 개념과의 구분",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-f300674206f5"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "worked-example",
+          "sectionTitle": "구체적 적용 예시",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-df35fd04b143"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "practice",
+          "sectionTitle": "실무 적용과 검증 절차",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-b1b13a12aee7",
+            "src-df35fd04b143"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "check",
+          "sectionTitle": "학습 체크",
+          "factual": false,
+          "candidateSourceIds": [],
+          "assignmentStatus": "not-factual"
+        }
+      ],
+      "audit": {
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
+        "factualSections": 9,
+        "sectionsWithCandidates": 9,
+        "readyForManualClaimReview": true,
+        "publicationReady": false,
+        "gaps": [
+          "manual-claim-review"
+        ]
+      }
+    },
+    {
       "articleId": "human-in-the-loop",
       "titleKo": "인간 참여형 제어",
       "titleEn": "Human in the Loop",
@@ -9367,6 +9790,175 @@
         "gaps": [
           "source-diversity",
           "encyclopedia-source",
+          "manual-claim-review"
+        ]
+      }
+    },
+    {
+      "articleId": "indirect-prompt-injection",
+      "titleKo": "간접 프롬프트 인젝션",
+      "titleEn": "Indirect Prompt Injection",
+      "categoryId": "safety",
+      "tier": "core",
+      "volatility": "fast-changing",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2026-09-11T00:00:00.000Z",
+      "manualReviewRequired": true,
+      "researchAnchorIds": [
+        "agent-security-nist",
+        "owasp-genai",
+        "mitre-atlas"
+      ],
+      "sources": [
+        {
+          "id": "src-014997546961",
+          "title": "Prompt injection — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Prompt_injection",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T09:13:37.686Z"
+        },
+        {
+          "id": "src-430c5292e08d",
+          "title": "OWASP LLM01: Prompt Injection",
+          "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T09:13:37.686Z"
+        },
+        {
+          "id": "src-e8cc7f5045bc",
+          "title": "Not what you've signed up for: Indirect Prompt Injection",
+          "url": "https://arxiv.org/abs/2302.12173",
+          "type": "paper",
+          "family": "research-paper",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "overview",
+          "sectionTitle": "개요와 핵심 정의",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-014997546961",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "scope",
+          "sectionTitle": "배경과 설명 범위",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-014997546961",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "mechanism",
+          "sectionTitle": "작동 원리",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-430c5292e08d",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "structure",
+          "sectionTitle": "구성 요소와 처리 흐름",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-430c5292e08d",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "applications",
+          "sectionTitle": "활용 분야와 선택 기준",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-430c5292e08d",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "limitations",
+          "sectionTitle": "한계와 흔한 오해",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-430c5292e08d",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "distinctions",
+          "sectionTitle": "관련 개념과의 구분",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-014997546961",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "worked-example",
+          "sectionTitle": "구체적 적용 예시",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-430c5292e08d",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "practice",
+          "sectionTitle": "실무 적용과 검증 절차",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-430c5292e08d",
+            "src-e8cc7f5045bc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "check",
+          "sectionTitle": "학습 체크",
+          "factual": false,
+          "candidateSourceIds": [],
+          "assignmentStatus": "not-factual"
+        }
+      ],
+      "audit": {
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
+        "factualSections": 9,
+        "sectionsWithCandidates": 9,
+        "readyForManualClaimReview": true,
+        "publicationReady": false,
+        "gaps": [
           "manual-claim-review"
         ]
       }
@@ -10869,8 +11461,8 @@
       "categoryId": "neural",
       "tier": "core",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "deep-learning-book",
@@ -10890,6 +11482,32 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-12T21:56:01.403Z"
+        },
+        {
+          "id": "src-954f3db0a329",
+          "title": "PyTorch Sequential",
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-bb9391df192d",
+          "title": "Layer (deep learning) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Layer_%28deep_learning%29",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         }
       ],
       "sections": [
@@ -10898,7 +11516,8 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-bb9391df192d"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10907,7 +11526,8 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-bb9391df192d"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10916,7 +11536,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-954f3db0a329"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10925,7 +11546,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-954f3db0a329"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10934,7 +11556,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-954f3db0a329"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10943,7 +11566,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-954f3db0a329"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10952,7 +11576,8 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-bb9391df192d"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10961,7 +11586,8 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-954f3db0a329"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10970,7 +11596,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-658572757207"
+            "src-658572757207",
+            "src-954f3db0a329"
           ],
           "assignmentStatus": "review-required"
         },
@@ -10983,18 +11610,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 1,
-        "primaryCandidates": 0,
-        "encyclopediaFamilies": 0,
-        "reachableSources": 1,
+        "independentFamilies": 3,
+        "primaryCandidates": 1,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
-          "primary-source",
-          "encyclopedia-source",
           "manual-claim-review"
         ]
       }
@@ -13278,6 +13902,175 @@
           "candidateSourceIds": [
             "src-6c93c2c7dcd1",
             "src-a5878ed41338"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "check",
+          "sectionTitle": "학습 체크",
+          "factual": false,
+          "candidateSourceIds": [],
+          "assignmentStatus": "not-factual"
+        }
+      ],
+      "audit": {
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
+        "factualSections": 9,
+        "sectionsWithCandidates": 9,
+        "readyForManualClaimReview": true,
+        "publicationReady": false,
+        "gaps": [
+          "manual-claim-review"
+        ]
+      }
+    },
+    {
+      "articleId": "model-registry",
+      "titleKo": "모델 레지스트리",
+      "titleEn": "Model Registry",
+      "categoryId": "ecosystem",
+      "tier": "core",
+      "volatility": "periodic",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2027-01-09T00:00:00.000Z",
+      "manualReviewRequired": true,
+      "researchAnchorIds": [
+        "spdx-spec",
+        "huggingface-hub-docs",
+        "mlflow-docs"
+      ],
+      "sources": [
+        {
+          "id": "src-36d10217e688",
+          "title": "MLflow Model Registry Workflows",
+          "url": "https://mlflow.org/docs/latest/ml/model-registry/workflow/",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-680cf4f02598",
+          "title": "MLOps — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/MLOps",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-cace6ce01bfc",
+          "title": "TFX: A TensorFlow-Based Production-Scale Machine Learning Platform",
+          "url": "https://research.google/pubs/tfx-a-tensorflow-based-production-scale-machine-learning-platform/",
+          "type": "paper",
+          "family": "research-paper",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "overview",
+          "sectionTitle": "개요와 핵심 정의",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-680cf4f02598",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "scope",
+          "sectionTitle": "배경과 설명 범위",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-680cf4f02598",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "mechanism",
+          "sectionTitle": "작동 원리",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-36d10217e688",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "structure",
+          "sectionTitle": "구성 요소와 처리 흐름",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-36d10217e688",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "applications",
+          "sectionTitle": "활용 분야와 선택 기준",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-36d10217e688",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "limitations",
+          "sectionTitle": "한계와 흔한 오해",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-36d10217e688",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "distinctions",
+          "sectionTitle": "관련 개념과의 구분",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-680cf4f02598",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "worked-example",
+          "sectionTitle": "구체적 적용 예시",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-36d10217e688",
+            "src-cace6ce01bfc"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "practice",
+          "sectionTitle": "실무 적용과 검증 절차",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-36d10217e688",
+            "src-cace6ce01bfc"
           ],
           "assignmentStatus": "review-required"
         },
@@ -15861,8 +16654,8 @@
       "categoryId": "evaluation",
       "tier": "core",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mlcommons",
@@ -15870,6 +16663,19 @@
         "google-ml-glossary"
       ],
       "sources": [
+        {
+          "id": "src-05f057efe73a",
+          "title": "Scikit-learn: Metrics and scoring",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T09:13:37.686Z"
+        },
         {
           "id": "src-3ce408fba6b4",
           "title": "Holistic Evaluation of Language Models",
@@ -15936,6 +16742,7 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-05f057efe73a",
             "src-3ce408fba6b4"
           ],
           "assignmentStatus": "review-required"
@@ -15945,6 +16752,7 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-05f057efe73a",
             "src-3ce408fba6b4"
           ],
           "assignmentStatus": "review-required"
@@ -15954,6 +16762,7 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-05f057efe73a",
             "src-3ce408fba6b4"
           ],
           "assignmentStatus": "review-required"
@@ -15963,6 +16772,7 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-05f057efe73a",
             "src-3ce408fba6b4"
           ],
           "assignmentStatus": "review-required"
@@ -15982,6 +16792,7 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-05f057efe73a",
             "src-3ce408fba6b4"
           ],
           "assignmentStatus": "review-required"
@@ -15991,6 +16802,7 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-05f057efe73a",
             "src-3ce408fba6b4"
           ],
           "assignmentStatus": "review-required"
@@ -16004,16 +16816,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 2,
-        "primaryCandidates": 1,
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
         "encyclopediaFamilies": 1,
-        "reachableSources": 2,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
           "manual-claim-review"
         ]
       }
@@ -18745,6 +19556,201 @@
       }
     },
     {
+      "articleId": "scalar",
+      "titleKo": "스칼라",
+      "titleEn": "Scalar",
+      "categoryId": "mathematics",
+      "tier": "core",
+      "volatility": "evergreen",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
+      "manualReviewRequired": true,
+      "researchAnchorIds": [
+        "deep-learning-book",
+        "scikit-learn-guide",
+        "pytorch-docs"
+      ],
+      "sources": [
+        {
+          "id": "src-1a13e0207553",
+          "title": "스칼라 — 한국어 위키백과",
+          "url": "https://ko.wikipedia.org/wiki/%EC%8A%A4%EC%B9%BC%EB%9D%BC",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "wikimedia",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "wikimedia-api",
+          "relevanceStatus": "metadata-only",
+          "checkedAt": "2026-07-12T21:36:57.587Z"
+        },
+        {
+          "id": "src-abed20dc89c2",
+          "title": "Scalar (mathematics) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Scalar_%28mathematics%29",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-c3a48236566f",
+          "title": "Deep Learning Book: Linear Algebra",
+          "url": "https://www.deeplearningbook.org/contents/linear_algebra.html",
+          "type": "book",
+          "family": "academic-book",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-12T21:56:01.403Z"
+        },
+        {
+          "id": "src-c5bfd9d7b023",
+          "title": "Scalar — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Scalar",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "wikimedia",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "wikimedia-api",
+          "relevanceStatus": "metadata-only",
+          "checkedAt": "2026-07-12T21:36:57.587Z"
+        },
+        {
+          "id": "src-d2fd538deee2",
+          "title": "NumPy Scalars",
+          "url": "https://numpy.org/doc/stable/reference/arrays.scalars.html",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "overview",
+          "sectionTitle": "개요와 핵심 정의",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-abed20dc89c2",
+            "src-c3a48236566f"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "scope",
+          "sectionTitle": "배경과 설명 범위",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-abed20dc89c2",
+            "src-c3a48236566f"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "mechanism",
+          "sectionTitle": "작동 원리",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-c3a48236566f",
+            "src-d2fd538deee2"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "structure",
+          "sectionTitle": "구성 요소와 처리 흐름",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-c3a48236566f",
+            "src-d2fd538deee2"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "applications",
+          "sectionTitle": "활용 분야와 선택 기준",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-c3a48236566f",
+            "src-d2fd538deee2"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "limitations",
+          "sectionTitle": "한계와 흔한 오해",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-c3a48236566f",
+            "src-d2fd538deee2"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "distinctions",
+          "sectionTitle": "관련 개념과의 구분",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-abed20dc89c2",
+            "src-c3a48236566f"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "worked-example",
+          "sectionTitle": "구체적 적용 예시",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-c3a48236566f",
+            "src-d2fd538deee2"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "practice",
+          "sectionTitle": "실무 적용과 검증 절차",
+          "factual": true,
+          "candidateSourceIds": [
+            "src-c3a48236566f",
+            "src-d2fd538deee2"
+          ],
+          "assignmentStatus": "review-required"
+        },
+        {
+          "sectionId": "check",
+          "sectionTitle": "학습 체크",
+          "factual": false,
+          "candidateSourceIds": [],
+          "assignmentStatus": "not-factual"
+        }
+      ],
+      "audit": {
+        "independentFamilies": 3,
+        "primaryCandidates": 1,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
+        "factualSections": 9,
+        "sectionsWithCandidates": 9,
+        "readyForManualClaimReview": true,
+        "publicationReady": false,
+        "gaps": [
+          "manual-claim-review"
+        ]
+      }
+    },
+    {
       "articleId": "sdk",
       "titleKo": "SDK",
       "titleEn": "Software Development Kit",
@@ -19395,9 +20401,9 @@
       "titleEn": "Small Language Model",
       "categoryId": "llm",
       "tier": "core",
-      "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "volatility": "periodic",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2027-01-09T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "huggingface-transformers",
@@ -19411,17 +20417,30 @@
           "url": "https://en.wikipedia.org/wiki/Small_language_model",
           "type": "encyclopedia",
           "family": "wikimedia",
-          "origin": "wikimedia",
+          "origin": "article",
           "primaryCandidate": false,
           "encyclopedia": true,
-          "reachability": "wikimedia-api",
-          "relevanceStatus": "metadata-only",
-          "checkedAt": "2026-07-12T21:36:57.587Z"
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         },
         {
-          "id": "src-2cab3ea10b8b",
-          "title": "Language Models are Few-Shot Learners",
-          "url": "https://arxiv.org/abs/2005.14165",
+          "id": "src-556c0edcf39c",
+          "title": "Microsoft Research: Phi-3 Technical Report",
+          "url": "https://www.microsoft.com/en-us/research/publication/phi-3-technical-report-a-highly-capable-language-model-locally-on-your-phone/",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
+          "id": "src-be8f642ea2ac",
+          "title": "Phi-3 Technical Report",
+          "url": "https://arxiv.org/abs/2404.14219",
           "type": "paper",
           "family": "research-paper",
           "origin": "article",
@@ -19429,7 +20448,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-12T21:56:01.403Z"
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         }
       ],
       "sections": [
@@ -19438,7 +20457,8 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-014f632887ca",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19447,7 +20467,8 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-014f632887ca",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19456,7 +20477,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-556c0edcf39c",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19465,7 +20487,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-556c0edcf39c",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19474,7 +20497,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-556c0edcf39c",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19483,7 +20507,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-556c0edcf39c",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19492,7 +20517,8 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-014f632887ca",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19501,7 +20527,8 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-556c0edcf39c",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19510,7 +20537,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-2cab3ea10b8b"
+            "src-556c0edcf39c",
+            "src-be8f642ea2ac"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19523,17 +20551,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 1,
-        "primaryCandidates": 1,
-        "encyclopediaFamilies": 0,
-        "reachableSources": 1,
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
-          "encyclopedia-source",
           "manual-claim-review"
         ]
       }
@@ -19545,8 +20571,8 @@
       "categoryId": "inference",
       "tier": "core",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2028-07-12T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "vllm-docs",
@@ -19555,30 +20581,43 @@
       ],
       "sources": [
         {
+          "id": "src-926e715b1413",
+          "title": "Deep Learning Book: Numerical Computation and Output Units",
+          "url": "https://www.deeplearningbook.org/contents/numerical.html",
+          "type": "book",
+          "family": "academic-book",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
+        {
           "id": "src-c5218183f8db",
           "title": "Softmax function — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Softmax_function",
           "type": "encyclopedia",
           "family": "wikimedia",
-          "origin": "wikimedia",
+          "origin": "article",
           "primaryCandidate": false,
           "encyclopedia": true,
-          "reachability": "wikimedia-api",
-          "relevanceStatus": "metadata-only",
-          "checkedAt": "2026-07-12T21:36:57.587Z"
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         },
         {
-          "id": "src-ef8b5f9fca84",
-          "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
-          "url": "https://arxiv.org/abs/2309.06180",
-          "type": "paper",
-          "family": "research-paper",
+          "id": "src-e53e40f40020",
+          "title": "PyTorch Softmax",
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Softmax.html",
+          "type": "documentation",
+          "family": "official-documentation",
           "origin": "article",
           "primaryCandidate": true,
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-12T21:56:01.403Z"
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         },
         {
           "id": "src-fc60bb7078d3",
@@ -19600,7 +20639,8 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-c5218183f8db"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19609,7 +20649,8 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-c5218183f8db"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19618,7 +20659,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-e53e40f40020"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19627,7 +20669,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-e53e40f40020"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19636,7 +20679,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-e53e40f40020"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19645,7 +20689,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-e53e40f40020"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19654,7 +20699,8 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-c5218183f8db"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19663,7 +20709,8 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-e53e40f40020"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19672,7 +20719,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-ef8b5f9fca84"
+            "src-926e715b1413",
+            "src-e53e40f40020"
           ],
           "assignmentStatus": "review-required"
         },
@@ -19685,17 +20733,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 1,
+        "independentFamilies": 3,
         "primaryCandidates": 1,
-        "encyclopediaFamilies": 0,
-        "reachableSources": 1,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
-          "encyclopedia-source",
           "manual-claim-review"
         ]
       }
@@ -20623,9 +21669,9 @@
       "titleEn": "Synthetic Data",
       "categoryId": "training",
       "tier": "core",
-      "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "volatility": "periodic",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2027-01-09T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "pytorch-docs",
@@ -20634,9 +21680,9 @@
       ],
       "sources": [
         {
-          "id": "src-1098fc60be7c",
-          "title": "Training language models to follow instructions with human feedback",
-          "url": "https://arxiv.org/abs/2203.02155",
+          "id": "src-08dab77b9ae2",
+          "title": "Synthetic Data — What, Why and How?",
+          "url": "https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/Synthetic_Data_Survey-24.pdf",
           "type": "paper",
           "family": "research-paper",
           "origin": "article",
@@ -20644,7 +21690,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-12T21:56:01.403Z"
+          "checkedAt": "2026-07-13T10:50:16.641Z"
         },
         {
           "id": "src-5d081412d3fc",
@@ -20671,6 +21717,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-12T21:56:01.403Z"
+        },
+        {
+          "id": "src-f0b18065ffb2",
+          "title": "Synthetic Data Vault Documentation",
+          "url": "https://docs.sdv.dev/sdv",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         }
       ],
       "sections": [
@@ -20679,7 +21738,7 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c",
+            "src-08dab77b9ae2",
             "src-9c88780cd8c1"
           ],
           "assignmentStatus": "review-required"
@@ -20689,7 +21748,7 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c",
+            "src-08dab77b9ae2",
             "src-9c88780cd8c1"
           ],
           "assignmentStatus": "review-required"
@@ -20699,7 +21758,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c"
+            "src-08dab77b9ae2",
+            "src-f0b18065ffb2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -20708,7 +21768,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c"
+            "src-08dab77b9ae2",
+            "src-f0b18065ffb2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -20717,7 +21778,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c"
+            "src-08dab77b9ae2",
+            "src-f0b18065ffb2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -20726,7 +21788,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c"
+            "src-08dab77b9ae2",
+            "src-f0b18065ffb2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -20735,7 +21798,7 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c",
+            "src-08dab77b9ae2",
             "src-9c88780cd8c1"
           ],
           "assignmentStatus": "review-required"
@@ -20745,7 +21808,8 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c"
+            "src-08dab77b9ae2",
+            "src-f0b18065ffb2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -20754,7 +21818,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-1098fc60be7c"
+            "src-08dab77b9ae2",
+            "src-f0b18065ffb2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -20767,16 +21832,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 2,
-        "primaryCandidates": 1,
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
         "encyclopediaFamilies": 1,
-        "reachableSources": 2,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
           "manual-claim-review"
         ]
       }
@@ -24113,9 +25177,9 @@
       "titleEn": "Workflow Orchestration",
       "categoryId": "agents",
       "tier": "core",
-      "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "volatility": "periodic",
+      "reviewedAt": "2026-07-13",
+      "reviewDueAt": "2027-01-09T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -24123,6 +25187,19 @@
         "agent-security-nist"
       ],
       "sources": [
+        {
+          "id": "src-33fcb68e366f",
+          "title": "Workflow — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Workflow",
+          "type": "encyclopedia",
+          "family": "wikimedia",
+          "origin": "article",
+          "primaryCandidate": false,
+          "encyclopedia": true,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
+        },
         {
           "id": "src-7647307fe498",
           "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
@@ -24135,6 +25212,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-12T21:56:01.403Z"
+        },
+        {
+          "id": "src-b9e6d0899e39",
+          "title": "Apache Airflow Architecture Overview",
+          "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-13T10:49:07.141Z"
         }
       ],
       "sections": [
@@ -24143,6 +25233,7 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
+            "src-33fcb68e366f",
             "src-7647307fe498"
           ],
           "assignmentStatus": "review-required"
@@ -24152,6 +25243,7 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
+            "src-33fcb68e366f",
             "src-7647307fe498"
           ],
           "assignmentStatus": "review-required"
@@ -24161,7 +25253,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-7647307fe498"
+            "src-7647307fe498",
+            "src-b9e6d0899e39"
           ],
           "assignmentStatus": "review-required"
         },
@@ -24170,7 +25263,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-7647307fe498"
+            "src-7647307fe498",
+            "src-b9e6d0899e39"
           ],
           "assignmentStatus": "review-required"
         },
@@ -24179,7 +25273,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-7647307fe498"
+            "src-7647307fe498",
+            "src-b9e6d0899e39"
           ],
           "assignmentStatus": "review-required"
         },
@@ -24188,7 +25283,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-7647307fe498"
+            "src-7647307fe498",
+            "src-b9e6d0899e39"
           ],
           "assignmentStatus": "review-required"
         },
@@ -24197,6 +25293,7 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
+            "src-33fcb68e366f",
             "src-7647307fe498"
           ],
           "assignmentStatus": "review-required"
@@ -24206,7 +25303,8 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-7647307fe498"
+            "src-7647307fe498",
+            "src-b9e6d0899e39"
           ],
           "assignmentStatus": "review-required"
         },
@@ -24215,7 +25313,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-7647307fe498"
+            "src-7647307fe498",
+            "src-b9e6d0899e39"
           ],
           "assignmentStatus": "review-required"
         },
@@ -24228,17 +25327,15 @@
         }
       ],
       "audit": {
-        "independentFamilies": 1,
-        "primaryCandidates": 1,
-        "encyclopediaFamilies": 0,
-        "reachableSources": 1,
+        "independentFamilies": 3,
+        "primaryCandidates": 2,
+        "encyclopediaFamilies": 1,
+        "reachableSources": 3,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
-        "readyForManualClaimReview": false,
+        "readyForManualClaimReview": true,
         "publicationReady": false,
         "gaps": [
-          "source-diversity",
-          "encyclopedia-source",
           "manual-claim-review"
         ]
       }

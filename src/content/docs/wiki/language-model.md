@@ -102,6 +102,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [임베딩 모델](/wiki/embedding-model/)
 - [대규모 언어 모델](/wiki/large-language-model/)
 - [소규모 언어 모델](/wiki/small-language-model/)
 - [음성 인식](/wiki/speech-recognition/)

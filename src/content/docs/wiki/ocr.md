@@ -85,6 +85,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [컴퓨터 비전](/wiki/computer-vision/)
 - [멀티모달 임베딩](/wiki/multimodal-embedding/)
 - [음성 합성](/wiki/text-to-speech/)
 

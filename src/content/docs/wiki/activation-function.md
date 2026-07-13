@@ -105,6 +105,8 @@ ReLU·시그모이드·GELU는 출력 범위와 기울기 특성이 달라 층�
 
 - [역전파](/wiki/backpropagation/)
 - [편향 항](/wiki/bias/)
+- [딥러닝](/wiki/deep-learning/)
+- [신경망 층](/wiki/layer/)
 - [손실 함수](/wiki/loss-function/)
 - [인공 뉴런](/wiki/neuron/)
 - [가중치](/wiki/weight/)

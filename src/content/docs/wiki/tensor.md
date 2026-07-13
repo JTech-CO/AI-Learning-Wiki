@@ -106,6 +106,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [행렬](/wiki/matrix/)
 - [확률](/wiki/probability/)
 - [확률분포](/wiki/probability-distribution/)
+- [스칼라](/wiki/scalar/)
 - [벡터](/wiki/vector/)
 
 ## 이 문서를 포함하는 코스

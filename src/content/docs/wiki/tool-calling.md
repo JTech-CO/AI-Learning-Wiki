@@ -82,9 +82,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [AI 에이전트](/wiki/ai-agent/)
+- [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [프롬프트 인젝션](/wiki/prompt-injection/)
 - [스트리밍 응답](/wiki/streaming-response/)
 - [구조화 출력](/wiki/structured-output/)
+- [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
 
 ## 이 문서를 포함하는 코스
 

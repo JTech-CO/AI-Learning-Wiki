@@ -87,6 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [하이퍼파라미터](/wiki/hyperparameter/)
 - [대규모 언어 모델](/wiki/large-language-model/)
+- [스칼라](/wiki/scalar/)
 - [소규모 언어 모델](/wiki/small-language-model/)
 - [토큰](/wiki/token/)
 
