@@ -101,8 +101,12 @@ AI 에이전트는 모델의 언어 생성 능력에 목표, 도구 목록, 상�
 
 ## 이 문서를 가리키는 문서
 
+- [에이전트 목표](/wiki/agent-goal/)
 - [에이전트 루프](/wiki/agent-loop/)
+- [에이전트 과제 분해](/wiki/agent-task-decomposition/)
+- [인식-계획-행동 순환](/wiki/perceive-plan-act-cycle/)
 - [계획](/wiki/planning/)
+- [감지-사고-행동 순환](/wiki/sense-think-act-cycle/)
 
 ## 이 문서를 포함하는 코스
 

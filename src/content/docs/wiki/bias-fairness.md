@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <p class="wiki-lead">모델의 결과가 집단이나 특성에 따라 체계적으로 불리하게 달라지는지를 다루는 개념이다.</p>
 
-<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 출처 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
 ## 개요와 핵심 정의
 
@@ -14,11 +14,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ‘편향과 공정성’ 개념은 안전·보안·윤리 영역에서 무엇을 계산하거나 통제하는지 설명하는 표제어다. 이름을 외우는 데서 멈추지 않고 입력, 변환 과정, 출력, 적용 조건을 분리해 보면 제품과 논문마다 다른 표현을 같은 원리 위에서 비교할 수 있다. 안전·거버넌스 분야는 모델과 데이터가 사람·조직·사회에 미치는 위험을 식별하고 통제하는 절차를 다룬다.
 
+**W9 개념 모델 확장**
+
+모델의 결과가 집단이나 특성에 따라 체계적으로 불리하게 달라지는지를 다루는 개념이다. 이 정의를 암기하는 데서 멈추지 않고 편향과 공정성이 전제하는 입력, 내부 표현, 변환 규칙과 관찰 가능한 출력을 각각 적는다. 상위 개념과 하위 구현을 분리하고, 정의가 성립하는 정상 사례와 성립하지 않는 반례를 한 쌍으로 구성한다. 용어가 여러 분야에서 쓰이면 공통 의미와 분야별 의미를 표로 나눠 같은 단어를 다른 계산 절차에 잘못 적용하지 않게 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
+
 ## 배경과 설명 범위
 
 영문 Wikipedia의 ‘Algorithmic bias’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
 이 문서에서 다루는 범위는 안정적인 개념과 구현 원리다. 최신 모델명·가격·한도처럼 자주 바뀌는 정보는 포함하지 않으며, 실제 사용 시점에는 연결된 공식 문서와 배포 환경의 버전을 다시 확인한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a></div>
 
 ## 작동 원리
 
@@ -26,11 +34,23 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 [가드레일](/wiki/guardrail/) 및 [콘텐츠 조정](/wiki/content-moderation/) 개념을 먼저 이해하면 계산 위치와 역할을 구분하기 쉽다. 이 선행 관계를 기준으로 어느 단계에서 값이 만들어지고 다음 구성 요소로 어떻게 전달되는지 추적하면, 비슷한 용어를 기능 이름만으로 혼동하는 일을 줄일 수 있다.
 
+**W9 심층 검토 — 편향과 공정성**
+
+편향과 공정성은 공격자의 능력과 지식, 접근 경로, 보호할 자산과 허용 가능한 잔여 위험을 명시해야 평가할 수 있다. 단일 방어책보다 예방, 탐지, 제한, 복구와 사건 기록을 겹쳐 배치하고 우회 가능성을 시험한다. 안전 문서는 공격 재현에 필요한 민감한 세부를 과도하게 공개하지 않으면서 방어자가 확인할 신호와 대응 절차를 제공해야 한다. 이 설명을 기존 정의와 연결해 입력, 처리, 출력, 평가와 실패 조건을 다시 확인한다. 출처마다 표제어의 범위가 다를 수 있으므로 공통된 정의와 구현별 차이를 구분하고, 수치·버전·정책처럼 변할 수 있는 내용은 기준 날짜와 원문 위치를 남긴다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
+
 ## 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘편향과 공정성’ 개념만 독립적으로 동작하지 않는다. [콘텐츠 조정](/wiki/content-moderation/), [개인정보 보호](/wiki/privacy/), [AI 거버넌스](/wiki/ai-governance/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
 처리 흐름을 문서화할 때는 입력 형식, 파라미터와 기본값, 실패 조건, 출력 스키마, 관측 가능한 지표를 함께 적는다. 이렇게 해야 같은 이름을 쓰는 서로 다른 라이브러리와 서비스의 동작 차이를 재현 가능한 방식으로 비교할 수 있다.
+
+**W9 구현·측정 설계**
+
+편향과 공정성의 구현을 비교할 때는 입력 스키마와 자료형, 중간 산출물, 기본값, 오류 처리, 버전과 실행 환경을 고정한다. 결과 품질은 하나의 평균값으로 끝내지 않고 하위 집단과 경계 사례, 지연시간, 메모리와 비용을 함께 기록한다. 작은 기준 사례를 손으로 계산하거나 독립 구현과 대조해 인터페이스가 맞지만 의미가 다른 오류를 찾는다. 구성 변경 전후에는 같은 데이터와 평가 코드를 사용하고 차이가 생긴 최초 단계를 추적한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 활용 분야와 선택 기준
 
@@ -38,11 +58,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 선택 기준은 “널리 쓰인다”가 아니라 현재 데이터와 사용자의 실패 비용을 얼마나 줄이는가이다. 오프라인 실험, 작은 실제 트래픽, 배포 후 모니터링 순으로 증거를 쌓는 편이 안전하다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+
 ## 한계와 흔한 오해
 
 서로 양립하지 않는 공정성 정의가 있으므로 어떤 집단과 피해를 보호할지 사회적·법적 맥락에서 명시해야 한다.
 
 원칙 선언이나 단일 필터가 아니라 수명주기 전체의 증거와 책임 구조를 요구한다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.
+
+**W9 반례·경계 사례**
+
+편향과 공정성이 잘 작동하는 조건만 나열하면 실제 적용 범위를 판단할 수 없다. 데이터가 부족하거나 분포가 달라지는 경우, 값의 단위와 차원이 맞지 않는 경우, 권한·네트워크·자원이 제한되는 경우와 의도적으로 조작된 입력을 별도 시험한다. 실패가 탐지되지 않은 채 정상 출력처럼 보이는 경우를 우선 찾아 경고 지표와 중단선을 정한다. 알려진 한계를 우회하는 임시 조치와 근본적인 개선을 구분하고 잔여 위험의 책임자를 명시한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 관련 개념과의 구분
 
@@ -50,11 +78,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [개인정보 보호](/wiki/privacy/): AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리와 위험을 관리하는 원칙이다.
 - [AI 거버넌스](/wiki/ai-governance/): AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다.
 
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
+
 ## 구체적 적용 예시
 
 위험 시나리오를 정상 사용, 우발적 오용, 의도적 공격으로 나누고 예방·탐지·대응 책임자를 각각 지정한다. ‘편향과 공정성’을 적용하는 경우에는 모델 편향은 데이터·표본 추출·라벨·목표 함수·배포 환경에서 집단별 오류 차이로 나타날 수 있으며 공정성 지표로 이를 측정한다.
 
 차단률만 높이는 대신 정상 요청의 거짓 차단, 우회 가능성, 이의 제기와 사고 복구 시간을 함께 측정한다. 이때 [콘텐츠 조정](/wiki/content-moderation/), [개인정보 보호](/wiki/privacy/), [AI 거버넌스](/wiki/ai-governance/) 문서의 역할을 나란히 비교하면 서로 다른 단계의 설정을 한 원인처럼 해석하는 오류를 줄일 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 실무 적용과 검증 절차
 
@@ -65,6 +97,25 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **운영 검증:** 버전, 기본값, 데이터 시점과 평가 결과를 기록하고 변경 뒤 같은 시험을 반복한다.
 6. **판단 근거 보존:** 성공 사례만 남기지 말고 실패 입력과 원인 가설, 수정 전후 수치를 함께 저장한다. 그래야 담당자가 바뀌거나 모델이 교체되어도 ‘편향과 공정성’에 대한 선택을 다시 검증할 수 있다.
 7. **재검토 조건 지정:** 데이터 분포, 모델 버전, 비용 구조 또는 정책이 바뀌면 이전 결론을 그대로 재사용하지 않고 같은 기준으로 다시 평가한다.
+
+**W9 출처·재현 점검**
+
+- 편향과 공정성의 정의를 외부 백과와 대조하되 핵심 작동 주장은 논문·표준·공식 문서에서 확인한다.
+- 데이터, 모델, 코드와 도구 버전을 고정하고 정상·경계·실패 사례를 같은 조건에서 반복한다.
+- 알려진 한계와 잔여 위험, 사람이 검토해야 하는 조건, 다음 검토 날짜를 기록한다.
+
+**W9 검증 기록 설계**
+
+1. 편향과 공정성을 선택한 이유와 제외한 대안을 같은 평가 기준으로 적는다.
+2. 데이터 기준 시점, 표본 구성, 전처리와 접근 권한을 고정한다.
+3. 정상·경계·실패 사례의 입력과 기대 결과를 배포 전에 승인한다.
+4. 품질, 안전, 지연시간과 비용에 경고선과 중단선을 따로 둔다.
+5. 모델·코드·도구가 바뀐 뒤 동일 평가를 반복하고 최초 차이 지점을 찾는다.
+6. 자동화가 확신하지 못하거나 영향이 큰 경우 사람이 판단할 수 있도록 입력, 근거와 가능한 대안을 함께 제공한다.
+
+최종 기록에는 출처의 기준 날짜와 위치, 실행 환경, 결과 해석, 알려진 한계, 롤백 대상과 다음 검토 날짜를 포함한다. 개선 폭이 운영 복잡성과 잔여 위험을 상쇄하지 못하면 단순한 기준선으로 되돌아간다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
 ## 학습 체크
 
@@ -97,8 +148,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 참고 문헌
 
-1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-2. [Algorithmic bias — Wikipedia](https://en.wikipedia.org/wiki/Algorithmic_bias) — encyclopedia
+<span id="reference-1"></span>1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+<span id="reference-2"></span>2. [Algorithmic bias — Wikipedia](https://en.wikipedia.org/wiki/Algorithmic_bias) — encyclopedia
+<span id="reference-3"></span>3. [OWASP GenAI Security Project](https://genai.owasp.org/) — standard
+<span id="reference-4"></span>4. [MITRE ATLAS](https://atlas.mitre.org/) — documentation
+<span id="reference-5"></span>5. [Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
 
 ## 코스에서 계속 읽기
 

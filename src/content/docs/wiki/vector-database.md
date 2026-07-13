@@ -108,6 +108,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [임베딩 모델](/wiki/embedding-model/)
 - [최근접 이웃 검색](/wiki/nearest-neighbor-search/)
 - [의미 검색](/wiki/semantic-search/)
+- [문장 임베딩](/wiki/sentence-embedding/)
+- [희소 임베딩](/wiki/sparse-embedding/)
 
 ## 이 문서를 포함하는 코스
 

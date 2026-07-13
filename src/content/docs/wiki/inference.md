@@ -101,8 +101,11 @@ _해당 문서가 없습니다._
 ## 이 문서를 가리키는 문서
 
 - [로짓](/wiki/logit/)
+- [Min-p 샘플링](/wiki/min-p-sampling/)
+- [다항 표본추출](/wiki/multinomial-sampling/)
 - [소규모 언어 모델](/wiki/small-language-model/)
 - [생성 온도](/wiki/temperature/)
+- [전형성 샘플링](/wiki/typical-sampling/)
 
 ## 이 문서를 포함하는 코스
 

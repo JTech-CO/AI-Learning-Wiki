@@ -114,6 +114,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [편향 항](/wiki/bias/)
+- [계산 그래프](/wiki/computational-graph/)
+- [순전파](/wiki/forward-pass/)
+- [입력층](/wiki/input-layer/)
 - [신경망](/wiki/neural-network/)
 - [인공 뉴런](/wiki/neuron/)
 - [가중치](/wiki/weight/)

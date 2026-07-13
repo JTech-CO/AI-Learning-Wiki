@@ -104,6 +104,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [밀집 임베딩](/wiki/dense-embedding/)
 - [임베딩 모델](/wiki/embedding-model/)
+- [문장 임베딩](/wiki/sentence-embedding/)
+- [희소 임베딩](/wiki/sparse-embedding/)
 - [벡터 데이터베이스](/wiki/vector-database/)
 
 ## 이 문서를 포함하는 코스

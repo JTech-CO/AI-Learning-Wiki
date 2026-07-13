@@ -102,9 +102,14 @@ _해당 문서가 없습니다._
 
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [크로스 어텐션](/wiki/cross-attention/)
+- [이미지 캡셔닝](/wiki/image-captioning/)
 - [이미지 생성](/wiki/image-generation/)
+- [이미지 분할](/wiki/image-segmentation/)
+- [객체 탐지](/wiki/object-detection/)
 - [음성 인식](/wiki/speech-recognition/)
 - [비전-언어 모델](/wiki/vision-language-model/)
+- [시각 근거화](/wiki/visual-grounding/)
+- [시각 질의응답](/wiki/visual-question-answering/)
 
 ## 이 문서를 포함하는 코스
 

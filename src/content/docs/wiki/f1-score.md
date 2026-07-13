@@ -115,7 +115,12 @@ TP=40, FP=10, FN=20이면 정밀도 0.8, 재현율 약 0.667, F1은 약 0.727이
 
 ## 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+- [곡선 아래 면적](/wiki/area-under-curve/)
+- [혼동 행렬](/wiki/confusion-matrix/)
+- [로그 손실](/wiki/log-loss/)
+- [정밀도-재현율 곡선](/wiki/precision-recall-curve/)
+- [ROC 곡선](/wiki/roc-curve/)
+- [특이도](/wiki/specificity/)
 
 ## 이 문서를 포함하는 코스
 

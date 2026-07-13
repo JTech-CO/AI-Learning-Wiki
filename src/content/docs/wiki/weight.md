@@ -117,6 +117,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [활성화 함수](/wiki/activation-function/)
 - [편향 항](/wiki/bias/)
+- [계산 그래프](/wiki/computational-graph/)
+- [순전파](/wiki/forward-pass/)
+- [입력층](/wiki/input-layer/)
 - [신경망 층](/wiki/layer/)
 - [행렬 곱셈](/wiki/matrix-multiplication/)
 - [인공 뉴런](/wiki/neuron/)

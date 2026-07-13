@@ -114,10 +114,16 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [정확도](/wiki/accuracy/)
+- [곡선 아래 면적](/wiki/area-under-curve/)
+- [혼동 행렬](/wiki/confusion-matrix/)
 - [F1 점수](/wiki/f1-score/)
 - [LLM 심사자](/wiki/llm-as-a-judge/)
+- [로그 손실](/wiki/log-loss/)
 - [평가 지표](/wiki/metric/)
 - [관측성](/wiki/observability/)
+- [정밀도-재현율 곡선](/wiki/precision-recall-curve/)
+- [ROC 곡선](/wiki/roc-curve/)
+- [특이도](/wiki/specificity/)
 
 ## 이 문서를 포함하는 코스
 

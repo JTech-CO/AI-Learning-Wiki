@@ -114,7 +114,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+- [연결주의](/wiki/connectionism/)
+- [고전적 인공지능](/wiki/good-old-fashioned-ai/)
 
 ## 이 문서를 포함하는 코스
 

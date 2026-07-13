@@ -103,11 +103,17 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [적대적 예시](/wiki/adversarial-example/)
+- [회피 공격](/wiki/evasion-attack/)
 - [가드레일](/wiki/guardrail/)
 - [환각](/wiki/hallucination/)
 - [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [탈옥 공격](/wiki/jailbreak/)
+- [모델 백도어](/wiki/model-backdoor/)
+- [모델 추출 공격](/wiki/model-extraction/)
+- [모델 오염](/wiki/model-poisoning/)
 - [ReAct 에이전트](/wiki/react-agent/)
+- [학습 데이터 오염](/wiki/training-data-poisoning/)
 
 ## 이 문서를 포함하는 코스
 

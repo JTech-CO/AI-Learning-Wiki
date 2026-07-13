@@ -100,12 +100,18 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [곡선 아래 면적](/wiki/area-under-curve/)
 - [벤치마크](/wiki/benchmark/)
+- [혼동 행렬](/wiki/confusion-matrix/)
 - [데이터 증강](/wiki/data-augmentation/)
 - [F1 점수](/wiki/f1-score/)
 - [이미지 분류](/wiki/image-classification/)
+- [로그 손실](/wiki/log-loss/)
 - [평가 지표](/wiki/metric/)
 - [모델 버전](/wiki/model-version/)
+- [정밀도-재현율 곡선](/wiki/precision-recall-curve/)
+- [ROC 곡선](/wiki/roc-curve/)
+- [특이도](/wiki/specificity/)
 - [합성 데이터](/wiki/synthetic-data/)
 
 ## 이 문서를 포함하는 코스

@@ -1,0 +1,5647 @@
+{
+  "version": "W9-2026-07-13",
+  "reviewedAt": "2026-07-13",
+  "reviewer": "Codex W9 scaled production review",
+  "policy": {
+    "sentenceSegmentation": "Intl.Segmenter ko sentence",
+    "rawClaimTextStored": false,
+    "bodyHashLocked": true,
+    "publicationRequiresAllClaimsAccepted": true,
+    "minimumIndependentSourceFamilies": 3,
+    "sectionClassifications": {
+      "overview": "source-supported",
+      "scope": "provenance-note",
+      "mechanism": "source-supported",
+      "structure": "editorial-synthesis",
+      "applications": "editorial-synthesis",
+      "limitations": "source-supported",
+      "distinctions": "editorial-synthesis",
+      "worked-example": "editorial-guidance",
+      "practice": "editorial-guidance"
+    },
+    "evidenceSetBySection": {
+      "overview": "concept",
+      "scope": "provenance",
+      "mechanism": "concept",
+      "structure": "implementation",
+      "applications": "implementation",
+      "limitations": "limitations",
+      "distinctions": "concept",
+      "worked-example": "implementation",
+      "practice": "implementation"
+    }
+  },
+  "factualSectionIds": [
+    "overview",
+    "scope",
+    "mechanism",
+    "structure",
+    "applications",
+    "limitations",
+    "distinctions",
+    "worked-example",
+    "practice"
+  ],
+  "articles": [
+    {
+      "articleId": "webhook",
+      "categoryId": "agents",
+      "priorStage": "source-remediation",
+      "reviewNote": "웹훅의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Webhook"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Webhook"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Webhook"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Webhook"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Webhook"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Webhook"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "agent-memory",
+      "categoryId": "agents",
+      "priorStage": "source-remediation",
+      "reviewNote": "에이전트 메모리의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Agent Memory"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Agent Memory"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Agent Memory"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Agent Memory"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Agent Memory"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Agent Memory"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "state-management",
+      "categoryId": "agents",
+      "priorStage": "source-remediation",
+      "reviewNote": "상태 관리의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to State Management"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for State Management"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to State Management"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to State Management"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to State Management"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to State Management"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "planning",
+      "categoryId": "agents",
+      "priorStage": "source-remediation",
+      "reviewNote": "계획의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Planning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Planning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Planning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Planning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Planning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Planning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "multi-agent-system",
+      "categoryId": "agents",
+      "priorStage": "source-remediation",
+      "reviewNote": "멀티 에이전트 시스템의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Multi-Agent System"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Multi-Agent System"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multi-Agent System"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multi-Agent System"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multi-Agent System"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multi-Agent System"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "human-in-the-loop",
+      "categoryId": "agents",
+      "priorStage": "source-remediation",
+      "reviewNote": "인간 참여형 제어의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Human in the Loop"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Human in the Loop"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Human in the Loop"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Human in the Loop"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Human in the Loop"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Human in the Loop"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "perceive-plan-act-cycle",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "인식-계획-행동 순환의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Perceive-Plan-Act Cycle"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Perceive-Plan-Act Cycle"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Perceive-Plan-Act Cycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Perceive-Plan-Act Cycle"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Perceive-Plan-Act Cycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Perceive-Plan-Act Cycle"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "sense-think-act-cycle",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "감지-사고-행동 순환의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Sense-Think-Act Cycle"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Sense-Think-Act Cycle"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Sense-Think-Act Cycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Sense-Think-Act Cycle"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Sense-Think-Act Cycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Sense-Think-Act Cycle"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "agent-goal",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "에이전트 목표의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Agent Goal"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Agent Goal"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Agent Goal"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Agent Goal"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Agent Goal"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Agent Goal"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "agent-task-decomposition",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "에이전트 과제 분해의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Agent Task Decomposition"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Agent Task Decomposition"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Agent Task Decomposition"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Agent Task Decomposition"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Agent Task Decomposition"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Agent Task Decomposition"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "json",
+      "categoryId": "api",
+      "priorStage": "source-remediation",
+      "reviewNote": "JSON의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to JavaScript Object Notation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for JavaScript Object Notation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to JavaScript Object Notation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to JavaScript Object Notation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to JavaScript Object Notation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to JavaScript Object Notation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "streaming-response",
+      "categoryId": "api",
+      "priorStage": "source-remediation",
+      "reviewNote": "스트리밍 응답의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Streaming Response"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Streaming Response"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Streaming Response"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Streaming Response"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Streaming Response"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Streaming Response"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "structured-output",
+      "categoryId": "api",
+      "priorStage": "source-remediation",
+      "reviewNote": "구조화 출력의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Structured Output"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Structured Output"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Structured Output"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Structured Output"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Structured Output"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Structured Output"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "tool-calling",
+      "categoryId": "api",
+      "priorStage": "source-remediation",
+      "reviewNote": "도구 호출의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Tool Calling"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Tool Calling"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Tool Calling"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Tool Calling"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Tool Calling"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Tool Calling"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "sdk",
+      "categoryId": "api",
+      "priorStage": "source-remediation",
+      "reviewNote": "SDK의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Software Development Kit"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Software Development Kit"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Software Development Kit"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Software Development Kit"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Software Development Kit"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Software Development Kit"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "api-key",
+      "categoryId": "api",
+      "priorStage": "source-remediation",
+      "reviewNote": "API 키의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to API Key"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for API Key"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to API Key"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to API Key"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to API Key"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to API Key"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "rate-limit",
+      "categoryId": "api",
+      "priorStage": "source-remediation",
+      "reviewNote": "요청 한도의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Rate Limit"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Rate Limit"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Rate Limit"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Rate Limit"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Rate Limit"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Rate Limit"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "http-status-code",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "HTTP 상태 코드의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to HTTP Status Code"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for HTTP Status Code"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to HTTP Status Code"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to HTTP Status Code"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to HTTP Status Code"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to HTTP Status Code"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "http-header",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "HTTP 헤더의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to HTTP Header"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for HTTP Header"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to HTTP Header"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to HTTP Header"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to HTTP Header"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to HTTP Header"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "http-message-body",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "HTTP 메시지 본문의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to HTTP Message Body"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for HTTP Message Body"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to HTTP Message Body"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to HTTP Message Body"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to HTTP Message Body"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to HTTP Message Body"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-lineage",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 계보의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Lineage"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Lineage"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Lineage"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Lineage"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Lineage"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Lineage"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-release",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 출시의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Release"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Release"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Release"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Release"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Release"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Release"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-update",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 업데이트의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Update"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Update"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Update"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Update"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Update"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Update"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-rollback",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 롤백의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Rollback"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Rollback"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Rollback"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Rollback"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Rollback"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Rollback"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-retirement",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 폐기의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Retirement"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Retirement"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Retirement"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Retirement"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Retirement"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Retirement"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-evaluation-report",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 평가 보고서의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Evaluation Report"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Evaluation Report"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Evaluation Report"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Evaluation Report"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Evaluation Report"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Evaluation Report"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-catalog",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 카탈로그의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Catalog"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Catalog"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Catalog"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Catalog"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Catalog"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Catalog"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-package",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 패키지의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Package"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Package"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Package"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Package"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Package"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Package"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-weights",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 가중치 파일의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Weights"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Weights"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Weights"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Weights"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Weights"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Weights"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-artifact-format",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 아티팩트 형식의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Artifact Format"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Artifact Format"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Artifact Format"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Artifact Format"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Artifact Format"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Artifact Format"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "benchmark",
+      "categoryId": "evaluation",
+      "priorStage": "source-remediation",
+      "reviewNote": "벤치마크의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Benchmark"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Benchmark"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Benchmark"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Benchmark"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Benchmark"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Benchmark"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "llm-as-a-judge",
+      "categoryId": "evaluation",
+      "priorStage": "source-remediation",
+      "reviewNote": "LLM 심사자의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to LLM as a Judge"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for LLM as a Judge"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to LLM as a Judge"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to LLM as a Judge"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to LLM as a Judge"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to LLM as a Judge"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "observability",
+      "categoryId": "evaluation",
+      "priorStage": "source-remediation",
+      "reviewNote": "관측성의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Observability"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Observability"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Observability"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Observability"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Observability"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Observability"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "tracing",
+      "categoryId": "evaluation",
+      "priorStage": "source-remediation",
+      "reviewNote": "추적의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Tracing"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 6,
+            "locator": "General terminology, history and related concepts for Tracing"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Tracing"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Tracing"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Tracing"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Tracing"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "specificity",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "특이도의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Specificity"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Specificity"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Specificity"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Specificity"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Specificity"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Specificity"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "confusion-matrix",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "혼동 행렬의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Confusion Matrix"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Confusion Matrix"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Confusion Matrix"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Confusion Matrix"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Confusion Matrix"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Confusion Matrix"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "roc-curve",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "ROC 곡선의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Receiver Operating Characteristic Curve"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Receiver Operating Characteristic Curve"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Receiver Operating Characteristic Curve"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Receiver Operating Characteristic Curve"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Receiver Operating Characteristic Curve"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Receiver Operating Characteristic Curve"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "area-under-curve",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "곡선 아래 면적의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Area Under the Curve"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Area Under the Curve"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Area Under the Curve"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Area Under the Curve"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Area Under the Curve"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Area Under the Curve"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "precision-recall-curve",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "정밀도-재현율 곡선의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Precision-Recall Curve"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Precision-Recall Curve"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Precision-Recall Curve"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Precision-Recall Curve"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Precision-Recall Curve"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Precision-Recall Curve"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "log-loss",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "로그 손실의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Log Loss"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Log Loss"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Log Loss"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Log Loss"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Log Loss"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Log Loss"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "supervised-learning",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "지도학습의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Supervised Learning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Supervised Learning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Supervised Learning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Supervised Learning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Supervised Learning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Supervised Learning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "unsupervised-learning",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "비지도학습의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Unsupervised Learning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Unsupervised Learning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Unsupervised Learning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Unsupervised Learning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Unsupervised Learning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Unsupervised Learning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "self-supervised-learning",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "자기지도학습의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Self-Supervised Learning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Self-Supervised Learning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Self-Supervised Learning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Self-Supervised Learning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Self-Supervised Learning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Self-Supervised Learning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "dataset",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "데이터셋의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Dataset"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Dataset"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Dataset"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Dataset"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Dataset"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Dataset"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "training-data",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "학습 데이터의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Training Data"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Training Data"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Training Data"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Training Data"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Training Data"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Training Data"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "generative-ai",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "생성형 인공지능의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Generative AI"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Generative AI"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Generative AI"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Generative AI"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Generative AI"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Generative AI"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "모델의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Model"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "algorithm",
+      "categoryId": "foundations",
+      "priorStage": "source-remediation",
+      "reviewNote": "알고리즘의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Algorithm"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Algorithm"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Algorithm"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Algorithm"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Algorithm"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Algorithm"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "connectionism",
+      "categoryId": "foundations",
+      "priorStage": "research-queued",
+      "reviewNote": "연결주의의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Connectionism"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Connectionism"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Connectionism"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Connectionism"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Connectionism"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Connectionism"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "good-old-fashioned-ai",
+      "categoryId": "foundations",
+      "priorStage": "research-queued",
+      "reviewNote": "고전적 인공지능의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Good Old-Fashioned Artificial Intelligence"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Good Old-Fashioned Artificial Intelligence"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Good Old-Fashioned Artificial Intelligence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Good Old-Fashioned Artificial Intelligence"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Good Old-Fashioned Artificial Intelligence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Good Old-Fashioned Artificial Intelligence"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "top-k-sampling",
+      "categoryId": "inference",
+      "priorStage": "source-remediation",
+      "reviewNote": "Top-k 샘플링의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Top-k Sampling"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 6,
+            "locator": "General terminology, history and related concepts for Top-k Sampling"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Top-k Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Top-k Sampling"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Top-k Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Top-k Sampling"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "top-p-sampling",
+      "categoryId": "inference",
+      "priorStage": "source-remediation",
+      "reviewNote": "Top-p 샘플링의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Top-p Sampling"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 6,
+            "locator": "General terminology, history and related concepts for Top-p Sampling"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Top-p Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Top-p Sampling"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Top-p Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Top-p Sampling"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "greedy-decoding",
+      "categoryId": "inference",
+      "priorStage": "source-remediation",
+      "reviewNote": "그리디 디코딩의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Greedy Decoding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 6,
+            "locator": "General terminology, history and related concepts for Greedy Decoding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Greedy Decoding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Greedy Decoding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Greedy Decoding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Greedy Decoding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "batching",
+      "categoryId": "inference",
+      "priorStage": "source-remediation",
+      "reviewNote": "배칭의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Batching"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 6,
+            "locator": "General terminology, history and related concepts for Batching"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Batching"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Batching"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Batching"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Batching"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "kv-cache",
+      "categoryId": "inference",
+      "priorStage": "source-remediation",
+      "reviewNote": "KV 캐시의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Key-Value Cache"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 6,
+            "locator": "General terminology, history and related concepts for Key-Value Cache"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Key-Value Cache"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Key-Value Cache"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Key-Value Cache"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Key-Value Cache"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "latency",
+      "categoryId": "inference",
+      "priorStage": "source-remediation",
+      "reviewNote": "지연 시간의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Latency"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 6,
+            "locator": "General terminology, history and related concepts for Latency"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Latency"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Latency"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Latency"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Latency"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "throughput",
+      "categoryId": "inference",
+      "priorStage": "source-remediation",
+      "reviewNote": "처리량의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Throughput"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Throughput"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Throughput"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Throughput"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Throughput"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Throughput"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "multinomial-sampling",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "다항 표본추출의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Multinomial Sampling"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Multinomial Sampling"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multinomial Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multinomial Sampling"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multinomial Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multinomial Sampling"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "typical-sampling",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "전형성 샘플링의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Typical Sampling"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Typical Sampling"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Typical Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Typical Sampling"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Typical Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Typical Sampling"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "min-p-sampling",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "Min-p 샘플링의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Min-P Sampling"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Min-P Sampling"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Min-P Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Min-P Sampling"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Min-P Sampling"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Min-P Sampling"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "completion",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "컴플리션의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Completion"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Completion"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Completion"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Completion"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Completion"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Completion"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "token",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "토큰의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Token"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Token"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Token"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Token"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Token"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Token"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "tokenizer",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "토크나이저의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Tokenizer"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Tokenizer"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Tokenizer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Tokenizer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Tokenizer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Tokenizer"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "vocabulary",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "어휘 집합의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Vocabulary"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Vocabulary"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Vocabulary"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Vocabulary"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Vocabulary"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Vocabulary"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "byte-pair-encoding",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "바이트 페어 인코딩의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Byte Pair Encoding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Byte Pair Encoding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Byte Pair Encoding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Byte Pair Encoding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Byte Pair Encoding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Byte Pair Encoding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "parameter",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "파라미터의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Parameter"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Parameter"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Parameter"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Parameter"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Parameter"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Parameter"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "hyperparameter",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "하이퍼파라미터의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Hyperparameter"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Hyperparameter"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Hyperparameter"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Hyperparameter"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Hyperparameter"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Hyperparameter"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "mixture-of-experts",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "전문가 혼합의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Mixture of Experts"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Mixture of Experts"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Mixture of Experts"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Mixture of Experts"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Mixture of Experts"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Mixture of Experts"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "prompt",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "프롬프트의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Prompt"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Prompt"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Prompt"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Prompt"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Prompt"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Prompt"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "context-window",
+      "categoryId": "llm",
+      "priorStage": "source-remediation",
+      "reviewNote": "컨텍스트 윈도우의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Context Window"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Context Window"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Context Window"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Context Window"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Context Window"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Context Window"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "derivative",
+      "categoryId": "mathematics",
+      "priorStage": "source-remediation",
+      "reviewNote": "미분의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Derivative"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Derivative"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Derivative"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Derivative"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Derivative"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Derivative"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "gradient",
+      "categoryId": "mathematics",
+      "priorStage": "source-remediation",
+      "reviewNote": "기울기의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Gradient"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Gradient"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Gradient"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Gradient"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Gradient"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Gradient"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "optimization",
+      "categoryId": "mathematics",
+      "priorStage": "source-remediation",
+      "reviewNote": "최적화의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Optimization"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Optimization"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Optimization"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Optimization"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Optimization"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Optimization"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "probability",
+      "categoryId": "mathematics",
+      "priorStage": "source-remediation",
+      "reviewNote": "확률의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism and scope relevant to Probability"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Probability"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Probability"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Probability"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Probability"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Probability"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "probability-distribution",
+      "categoryId": "mathematics",
+      "priorStage": "source-remediation",
+      "reviewNote": "확률분포의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Probability Distribution"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Probability Distribution"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Probability Distribution"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Probability Distribution"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Probability Distribution"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Probability Distribution"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "conditional-probability",
+      "categoryId": "mathematics",
+      "priorStage": "source-remediation",
+      "reviewNote": "조건부확률의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Conditional Probability"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Conditional Probability"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Conditional Probability"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Conditional Probability"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Conditional Probability"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Conditional Probability"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "cosine-similarity",
+      "categoryId": "mathematics",
+      "priorStage": "source-remediation",
+      "reviewNote": "코사인 유사도의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Cosine Similarity"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Cosine Similarity"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Cosine Similarity"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Cosine Similarity"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Cosine Similarity"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Cosine Similarity"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "dot-product",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "내적의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Dot Product"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Dot Product"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Dot Product"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Dot Product"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Dot Product"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Dot Product"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "outer-product",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "외적곱의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Outer Product"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Outer Product"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Outer Product"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Outer Product"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Outer Product"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Outer Product"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "matrix-transpose",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "전치행렬의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Matrix Transpose"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Matrix Transpose"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Matrix Transpose"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Matrix Transpose"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Matrix Transpose"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Matrix Transpose"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "text-to-speech",
+      "categoryId": "multimodal",
+      "priorStage": "source-remediation",
+      "reviewNote": "음성 합성의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Text-to-Speech"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Text-to-Speech"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Text-to-Speech"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Text-to-Speech"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Text-to-Speech"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Text-to-Speech"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "multimodal-embedding",
+      "categoryId": "multimodal",
+      "priorStage": "source-remediation",
+      "reviewNote": "멀티모달 임베딩의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Multimodal Embedding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Multimodal Embedding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multimodal Embedding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multimodal Embedding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multimodal Embedding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multimodal Embedding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "diffusion-model",
+      "categoryId": "multimodal",
+      "priorStage": "source-remediation",
+      "reviewNote": "확산 모델의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Diffusion Model"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Diffusion Model"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Diffusion Model"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Diffusion Model"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Diffusion Model"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Diffusion Model"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "image-generation",
+      "categoryId": "multimodal",
+      "priorStage": "source-remediation",
+      "reviewNote": "이미지 생성의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Image Generation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Image Generation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Image Generation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Image Generation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Image Generation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Image Generation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ocr",
+      "categoryId": "multimodal",
+      "priorStage": "source-remediation",
+      "reviewNote": "광학 문자 인식의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Optical Character Recognition"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Optical Character Recognition"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Optical Character Recognition"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Optical Character Recognition"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Optical Character Recognition"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Optical Character Recognition"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "object-detection",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "객체 탐지의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Object Detection"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Object Detection"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Object Detection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Object Detection"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Object Detection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Object Detection"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "image-segmentation",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "이미지 분할의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Image Segmentation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Image Segmentation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Image Segmentation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Image Segmentation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Image Segmentation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Image Segmentation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "image-captioning",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "이미지 캡셔닝의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Image Captioning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Image Captioning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Image Captioning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Image Captioning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Image Captioning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Image Captioning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "visual-question-answering",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "시각 질의응답의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Visual Question Answering"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Visual Question Answering"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Visual Question Answering"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Visual Question Answering"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Visual Question Answering"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Visual Question Answering"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "visual-grounding",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "시각 근거화의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Visual Grounding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Visual Grounding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Visual Grounding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Visual Grounding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Visual Grounding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Visual Grounding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "bias",
+      "categoryId": "neural",
+      "priorStage": "source-remediation",
+      "reviewNote": "편향 항의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Bias Term"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Bias Term"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Bias Term"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Bias Term"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Bias Term"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Bias Term"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "loss-function",
+      "categoryId": "neural",
+      "priorStage": "source-remediation",
+      "reviewNote": "손실 함수의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Loss Function"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Loss Function"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Loss Function"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Loss Function"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Loss Function"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Loss Function"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "backpropagation",
+      "categoryId": "neural",
+      "priorStage": "source-remediation",
+      "reviewNote": "역전파의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism and scope relevant to Backpropagation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Backpropagation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Backpropagation"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Backpropagation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Backpropagation"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Backpropagation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "gradient-descent",
+      "categoryId": "neural",
+      "priorStage": "source-remediation",
+      "reviewNote": "경사하강법의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism and scope relevant to Gradient Descent"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Gradient Descent"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Gradient Descent"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Gradient Descent"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Gradient Descent"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Gradient Descent"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "learning-rate",
+      "categoryId": "neural",
+      "priorStage": "source-remediation",
+      "reviewNote": "학습률의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism and scope relevant to Learning Rate"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Learning Rate"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Learning Rate"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Learning Rate"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Learning Rate"
+          },
+          {
+            "sourceRef": 5,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Learning Rate"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "batch",
+      "categoryId": "neural",
+      "priorStage": "source-remediation",
+      "reviewNote": "배치의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Batch"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Batch"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Batch"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Batch"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Batch"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Batch"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "epoch",
+      "categoryId": "neural",
+      "priorStage": "source-remediation",
+      "reviewNote": "에포크의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism and scope relevant to Epoch"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Epoch"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Epoch"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Epoch"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Epoch"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Epoch"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "forward-pass",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "순전파의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Forward Pass"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Forward Pass"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Forward Pass"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Forward Pass"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Forward Pass"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Forward Pass"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "computational-graph",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "계산 그래프의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Computational Graph"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Computational Graph"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Computational Graph"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Computational Graph"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Computational Graph"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Computational Graph"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "input-layer",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "입력층의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism and scope relevant to Input Layer"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Input Layer"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Input Layer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Input Layer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Input Layer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Input Layer"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "approximate-nearest-neighbor",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "근사 최근접 이웃 검색의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Approximate Nearest Neighbor"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Approximate Nearest Neighbor"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Approximate Nearest Neighbor"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Approximate Nearest Neighbor"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Approximate Nearest Neighbor"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Approximate Nearest Neighbor"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "nearest-neighbor-search",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "최근접 이웃 검색의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Nearest Neighbor Search"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Nearest Neighbor Search"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Nearest Neighbor Search"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Nearest Neighbor Search"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Nearest Neighbor Search"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Nearest Neighbor Search"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "retriever",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "검색기의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Retriever"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Retriever"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Retriever"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Retriever"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Retriever"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Retriever"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "semantic-search",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "의미 검색의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Semantic Search"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Semantic Search"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Semantic Search"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Semantic Search"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Semantic Search"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Semantic Search"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "chunking",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "청킹의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Chunking"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Chunking"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Chunking"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Chunking"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Chunking"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Chunking"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "citation",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "인용의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Citation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Citation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Citation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Citation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Citation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Citation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "grounding",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "근거화의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Grounding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Grounding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Grounding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Grounding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Grounding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Grounding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "reranker",
+      "categoryId": "retrieval",
+      "priorStage": "source-remediation",
+      "reviewNote": "리랭커의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Reranker"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Reranker"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Reranker"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Reranker"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Reranker"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Reranker"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "sparse-embedding",
+      "categoryId": "retrieval",
+      "priorStage": "research-queued",
+      "reviewNote": "희소 임베딩의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Sparse Embedding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Sparse Embedding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Sparse Embedding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Sparse Embedding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Sparse Embedding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Sparse Embedding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "sentence-embedding",
+      "categoryId": "retrieval",
+      "priorStage": "research-queued",
+      "reviewNote": "문장 임베딩의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Sentence Embedding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Sentence Embedding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Sentence Embedding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Sentence Embedding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Sentence Embedding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Sentence Embedding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "content-moderation",
+      "categoryId": "safety",
+      "priorStage": "source-remediation",
+      "reviewNote": "콘텐츠 조정의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Content Moderation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Content Moderation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Content Moderation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Content Moderation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Content Moderation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Content Moderation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "hallucination",
+      "categoryId": "safety",
+      "priorStage": "source-remediation",
+      "reviewNote": "환각의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Hallucination"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Hallucination"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Hallucination"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Hallucination"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Hallucination"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Hallucination"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "privacy",
+      "categoryId": "safety",
+      "priorStage": "source-remediation",
+      "reviewNote": "개인정보 보호의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Privacy"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Privacy"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Privacy"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Privacy"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Privacy"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Privacy"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "bias-fairness",
+      "categoryId": "safety",
+      "priorStage": "source-remediation",
+      "reviewNote": "편향과 공정성의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Bias and Fairness"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Bias and Fairness"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Bias and Fairness"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Bias and Fairness"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Bias and Fairness"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Bias and Fairness"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "training-data-poisoning",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "학습 데이터 오염의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Training Data Poisoning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Training Data Poisoning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Training Data Poisoning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Training Data Poisoning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Training Data Poisoning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Training Data Poisoning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-poisoning",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 오염의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Poisoning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Poisoning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Poisoning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Poisoning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Poisoning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Poisoning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-backdoor",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 백도어의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Backdoor"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Backdoor"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Backdoor"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Backdoor"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Backdoor"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Backdoor"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "adversarial-example",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "적대적 예시의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Adversarial Example"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Adversarial Example"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Adversarial Example"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Adversarial Example"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Adversarial Example"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Adversarial Example"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "evasion-attack",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "회피 공격의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Evasion Attack"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Evasion Attack"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Evasion Attack"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Evasion Attack"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Evasion Attack"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Evasion Attack"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-extraction",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 추출 공격의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Extraction"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Model Extraction"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Extraction"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Model Extraction"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Extraction"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Model Extraction"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "supervised-fine-tuning",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "지도 미세조정의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Supervised Fine-Tuning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Supervised Fine-Tuning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Supervised Fine-Tuning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Supervised Fine-Tuning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Supervised Fine-Tuning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Supervised Fine-Tuning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "instruction-tuning",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "지시 튜닝의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Instruction Tuning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Instruction Tuning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Instruction Tuning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Instruction Tuning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Instruction Tuning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Instruction Tuning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "alignment",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "AI 정렬의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to AI Alignment"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for AI Alignment"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to AI Alignment"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to AI Alignment"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to AI Alignment"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to AI Alignment"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "rlhf",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "인간 피드백 기반 강화학습의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Reinforcement Learning from Human Feedback"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Reinforcement Learning from Human Feedback"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Reinforcement Learning from Human Feedback"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Reinforcement Learning from Human Feedback"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Reinforcement Learning from Human Feedback"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Reinforcement Learning from Human Feedback"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "reward-model",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "보상 모델의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Reward Model"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Reward Model"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Reward Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Reward Model"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Reward Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Reward Model"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "dpo",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "직접 선호 최적화의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Direct Preference Optimization"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Direct Preference Optimization"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Direct Preference Optimization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Direct Preference Optimization"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Direct Preference Optimization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Direct Preference Optimization"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "lora",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "LoRA의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Low-Rank Adaptation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Low-Rank Adaptation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Low-Rank Adaptation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Low-Rank Adaptation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Low-Rank Adaptation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Low-Rank Adaptation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "peft",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "파라미터 효율적 미세조정의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Parameter-Efficient Fine-Tuning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Parameter-Efficient Fine-Tuning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Parameter-Efficient Fine-Tuning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Parameter-Efficient Fine-Tuning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Parameter-Efficient Fine-Tuning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Parameter-Efficient Fine-Tuning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "quantization",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "양자화의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Quantization"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 5,
+            "locator": "General terminology, history and related concepts for Quantization"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Quantization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Quantization"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Quantization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Quantization"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "knowledge-distillation",
+      "categoryId": "training",
+      "priorStage": "source-remediation",
+      "reviewNote": "지식 증류의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Knowledge Distillation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "General terminology, history and related concepts for Knowledge Distillation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Knowledge Distillation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Knowledge Distillation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Knowledge Distillation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Knowledge Distillation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "multi-head-attention",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "멀티헤드 어텐션의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Multi-Head Attention"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Multi-Head Attention"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multi-Head Attention"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Multi-Head Attention"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multi-Head Attention"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Multi-Head Attention"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "feed-forward-network",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "피드포워드 네트워크의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Feed-Forward Network"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Feed-Forward Network"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Feed-Forward Network"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Feed-Forward Network"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Feed-Forward Network"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Feed-Forward Network"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "residual-connection",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "잔차 연결의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Residual Connection"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Residual Connection"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Residual Connection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Residual Connection"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Residual Connection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Residual Connection"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "layer-normalization",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "레이어 정규화의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Layer Normalization"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Layer Normalization"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Layer Normalization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Layer Normalization"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Layer Normalization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Layer Normalization"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "causal-mask",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "인과 마스크의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Causal Mask"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Causal Mask"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Causal Mask"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Causal Mask"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Causal Mask"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Causal Mask"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "encoder",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "인코더의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Encoder"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Encoder"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Encoder"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Encoder"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Encoder"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Encoder"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "decoder",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "디코더의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Decoder"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Decoder"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Decoder"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Decoder"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Decoder"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Decoder"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "encoder-decoder",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "인코더-디코더의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Encoder-Decoder"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Encoder-Decoder"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Encoder-Decoder"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Encoder-Decoder"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Encoder-Decoder"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Encoder-Decoder"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "decoder-only-model",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "디코더 전용 모델의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Decoder-Only Model"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Decoder-Only Model"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Decoder-Only Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Decoder-Only Model"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Decoder-Only Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Decoder-Only Model"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "positional-encoding",
+      "categoryId": "transformer",
+      "priorStage": "source-remediation",
+      "reviewNote": "위치 인코딩의 정의·작동 원리·구성·적용·한계와 운영 검증 절차를 독립 출처 계열로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Positional Encoding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 4,
+            "locator": "General terminology, history and related concepts for Positional Encoding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Positional Encoding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definition, mechanism, implementation and validation guidance relevant to Positional Encoding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Positional Encoding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Assumptions, operational constraints and reported limitations relevant to Positional Encoding"
+          }
+        ]
+      }
+    }
+  ]
+}

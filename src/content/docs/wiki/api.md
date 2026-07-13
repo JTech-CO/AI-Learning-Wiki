@@ -100,9 +100,12 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [HTTP 헤더](/wiki/http-header/)
+- [HTTP 메시지 본문](/wiki/http-message-body/)
 - [HTTP 메서드](/wiki/http-method/)
 - [HTTP 요청](/wiki/http-request/)
 - [HTTP 응답](/wiki/http-response/)
+- [HTTP 상태 코드](/wiki/http-status-code/)
 - [REST API](/wiki/rest-api/)
 - [SDK](/wiki/sdk/)
 

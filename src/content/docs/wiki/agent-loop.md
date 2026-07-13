@@ -102,10 +102,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [에이전트 목표](/wiki/agent-goal/)
 - [에이전트 메모리](/wiki/agent-memory/)
+- [에이전트 과제 분해](/wiki/agent-task-decomposition/)
 - [AI 에이전트](/wiki/ai-agent/)
+- [인식-계획-행동 순환](/wiki/perceive-plan-act-cycle/)
 - [계획](/wiki/planning/)
 - [ReAct 에이전트](/wiki/react-agent/)
+- [감지-사고-행동 순환](/wiki/sense-think-act-cycle/)
 - [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
 
 ## 이 문서를 포함하는 코스

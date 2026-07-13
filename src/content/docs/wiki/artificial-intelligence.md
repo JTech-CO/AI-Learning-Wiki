@@ -102,6 +102,8 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [연결주의](/wiki/connectionism/)
+- [고전적 인공지능](/wiki/good-old-fashioned-ai/)
 - [머신러닝](/wiki/machine-learning/)
 - [기호주의 인공지능](/wiki/symbolic-ai/)
 

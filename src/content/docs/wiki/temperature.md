@@ -116,10 +116,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [로짓](/wiki/logit/)
+- [Min-p 샘플링](/wiki/min-p-sampling/)
+- [다항 표본추출](/wiki/multinomial-sampling/)
 - [다음 토큰 예측](/wiki/next-token-prediction/)
 - [소프트맥스](/wiki/softmax/)
 - [Top-k 샘플링](/wiki/top-k-sampling/)
 - [Top-p 샘플링](/wiki/top-p-sampling/)
+- [전형성 샘플링](/wiki/typical-sampling/)
 
 ## 이 문서를 포함하는 코스
 

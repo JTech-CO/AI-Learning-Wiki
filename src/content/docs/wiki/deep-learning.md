@@ -114,7 +114,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [인공지능](/wiki/artificial-intelligence/)
+- [연결주의](/wiki/connectionism/)
 - [생성형 인공지능](/wiki/generative-ai/)
+- [고전적 인공지능](/wiki/good-old-fashioned-ai/)
 - [머신러닝](/wiki/machine-learning/)
 - [지도학습](/wiki/supervised-learning/)
 

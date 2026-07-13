@@ -114,7 +114,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [데이터 증강](/wiki/data-augmentation/)
+- [이미지 캡셔닝](/wiki/image-captioning/)
 - [이미지 분류](/wiki/image-classification/)
+- [이미지 분할](/wiki/image-segmentation/)
+- [객체 탐지](/wiki/object-detection/)
+- [시각 근거화](/wiki/visual-grounding/)
+- [시각 질의응답](/wiki/visual-question-answering/)
 
 ## 이 문서를 포함하는 코스
 

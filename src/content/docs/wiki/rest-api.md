@@ -105,7 +105,10 @@ REST라는 이름만으로 일관된 스키마·보안·버전 관리가 보장�
 ## 이 문서를 가리키는 문서
 
 - [API](/wiki/api/)
+- [HTTP 헤더](/wiki/http-header/)
+- [HTTP 메시지 본문](/wiki/http-message-body/)
 - [HTTP 요청](/wiki/http-request/)
+- [HTTP 상태 코드](/wiki/http-status-code/)
 - [SDK](/wiki/sdk/)
 
 ## 이 문서를 포함하는 코스

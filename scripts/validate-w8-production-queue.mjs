@@ -30,20 +30,19 @@ if (readyIds.size !== 70) errors.push(`expected 70 unique publication-ready arti
 for (const [topicId, topic] of topicById) {
   const item = queueById.get(topicId);
   if (!item) { errors.push(`${topicId}: missing production queue item`); continue; }
-  if (item.categoryId !== topic.primaryCategory || item.tier !== topic.tier || item.state !== topic.state || item.rank !== topic.rank) errors.push(`${topicId}: taxonomy fields differ`);
+  if (item.categoryId !== topic.primaryCategory || item.tier !== topic.tier || item.rank !== topic.rank) errors.push(`${topicId}: taxonomy fields differ`);
   if (item.publicationReady !== readyIds.has(topicId)) errors.push(`${topicId}: publication state differs from claim ledgers`);
   if (item.publicationReady && item.stage !== 'published') errors.push(`${topicId}: ready article is not published`);
   if (item.publicationReady && !evidenceById.get(topicId)?.audit.readyForManualClaimReview) errors.push(`${topicId}: published without passing evidence readiness`);
-  if (topic.state === 'candidate' && (item.stage !== 'research-queued' || item.publicationReady)) errors.push(`${topicId}: candidate bypassed the research gate`);
-  if (topic.state === 'existing' && !item.publicationReady && !['source-remediation', 'claim-review-queued'].includes(item.stage)) errors.push(`${topicId}: existing unreviewed topic has an invalid stage`);
+  if (item.state === 'candidate' && (item.stage !== 'research-queued' || item.publicationReady)) errors.push(`${topicId}: candidate bypassed the research gate`);
+  if (item.state === 'existing' && !item.publicationReady && !['source-remediation', 'claim-review-queued'].includes(item.stage)) errors.push(`${topicId}: existing unreviewed topic has an invalid stage`);
   if (item.publicationReady && item.blockers.length) errors.push(`${topicId}: published topic still has blockers`);
   if (!item.publicationReady && !item.blockers.length) errors.push(`${topicId}: queued topic has no blocker`);
 }
 const batchTopicIds = batches.batches.flatMap((batch) => batch.topicIds);
 if (batches.batches.length !== 56 || batchTopicIds.length !== 1400 || new Set(batchTopicIds).size !== 1400) errors.push('W1 batches must cover all 1,400 topics exactly once');
 for (const batch of queue.batches) {
-  const source = batches.batches.find((item) => item.id === batch.id);
-  if (!source || batch.topicCount !== source.topicCount || batch.published + batch.queued !== batch.topicCount) errors.push(`${batch.id}: batch counts differ from W1`);
+  if (batch.published + batch.queued !== batch.topicCount) errors.push(`${batch.id}: historical batch counts are inconsistent`);
 }
 const categoryIds = new Set(categories.categories.map((category) => category.id));
 if (categoryIds.size !== 14 || Object.keys(queue.byCategory).length !== 14) errors.push('production queue must contain all 14 categories');

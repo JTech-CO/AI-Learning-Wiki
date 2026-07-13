@@ -105,8 +105,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [확산 모델](/wiki/diffusion-model/)
+- [이미지 캡셔닝](/wiki/image-captioning/)
 - [이미지 생성](/wiki/image-generation/)
+- [이미지 분할](/wiki/image-segmentation/)
 - [멀티모달 모델](/wiki/multimodal-model/)
+- [객체 탐지](/wiki/object-detection/)
+- [시각 근거화](/wiki/visual-grounding/)
+- [시각 질의응답](/wiki/visual-question-answering/)
 
 ## 이 문서를 포함하는 코스
 

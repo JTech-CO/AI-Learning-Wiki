@@ -115,10 +115,16 @@ AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞�
 
 ## 이 문서를 가리키는 문서
 
+- [적대적 예시](/wiki/adversarial-example/)
 - [편향과 공정성](/wiki/bias-fairness/)
 - [콘텐츠 조정](/wiki/content-moderation/)
+- [회피 공격](/wiki/evasion-attack/)
 - [탈옥 공격](/wiki/jailbreak/)
+- [모델 백도어](/wiki/model-backdoor/)
+- [모델 추출 공격](/wiki/model-extraction/)
+- [모델 오염](/wiki/model-poisoning/)
 - [프롬프트 인젝션](/wiki/prompt-injection/)
+- [학습 데이터 오염](/wiki/training-data-poisoning/)
 
 ## 이 문서를 포함하는 코스
 

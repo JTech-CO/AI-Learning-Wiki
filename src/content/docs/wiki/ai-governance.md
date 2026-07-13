@@ -99,8 +99,14 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 
 ## 이 문서를 가리키는 문서
 
+- [적대적 예시](/wiki/adversarial-example/)
 - [편향과 공정성](/wiki/bias-fairness/)
+- [회피 공격](/wiki/evasion-attack/)
+- [모델 백도어](/wiki/model-backdoor/)
+- [모델 추출 공격](/wiki/model-extraction/)
+- [모델 오염](/wiki/model-poisoning/)
 - [개인정보 보호](/wiki/privacy/)
+- [학습 데이터 오염](/wiki/training-data-poisoning/)
 
 ## 이 문서를 포함하는 코스
 

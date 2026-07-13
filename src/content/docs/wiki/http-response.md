@@ -113,7 +113,10 @@ REST API, 웹 페이지, 파일 전송, 모델 추론 API의 결과 전달에 �
 
 ## 이 문서를 가리키는 문서
 
+- [HTTP 헤더](/wiki/http-header/)
+- [HTTP 메시지 본문](/wiki/http-message-body/)
 - [HTTP 메서드](/wiki/http-method/)
+- [HTTP 상태 코드](/wiki/http-status-code/)
 
 ## 이 문서를 포함하는 코스
 

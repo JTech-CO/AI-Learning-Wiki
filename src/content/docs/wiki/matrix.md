@@ -103,6 +103,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [어텐션](/wiki/attention/)
+- [내적](/wiki/dot-product/)
+- [전치행렬](/wiki/matrix-transpose/)
+- [외적곱](/wiki/outer-product/)
 - [확률](/wiki/probability/)
 - [텐서](/wiki/tensor/)
 - [벡터](/wiki/vector/)

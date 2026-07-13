@@ -102,10 +102,13 @@ _해당 문서가 없습니다._
 
 - [어텐션](/wiki/attention/)
 - [밀집 임베딩](/wiki/dense-embedding/)
+- [내적](/wiki/dot-product/)
 - [임베딩](/wiki/embedding/)
 - [행렬](/wiki/matrix/)
 - [행렬 곱셈](/wiki/matrix-multiplication/)
+- [전치행렬](/wiki/matrix-transpose/)
 - [인공 뉴런](/wiki/neuron/)
+- [외적곱](/wiki/outer-product/)
 - [스칼라](/wiki/scalar/)
 - [텐서](/wiki/tensor/)
 

@@ -104,9 +104,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [정확도](/wiki/accuracy/)
+- [곡선 아래 면적](/wiki/area-under-curve/)
 - [벤치마크](/wiki/benchmark/)
+- [혼동 행렬](/wiki/confusion-matrix/)
 - [모델 평가](/wiki/evaluation/)
+- [로그 손실](/wiki/log-loss/)
 - [정밀도와 재현율](/wiki/precision-recall/)
+- [정밀도-재현율 곡선](/wiki/precision-recall-curve/)
+- [ROC 곡선](/wiki/roc-curve/)
+- [특이도](/wiki/specificity/)
 
 ## 이 문서를 포함하는 코스
 

@@ -112,6 +112,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [최근접 이웃 검색](/wiki/nearest-neighbor-search/)
 - [리랭커](/wiki/reranker/)
 - [검색기](/wiki/retriever/)
+- [문장 임베딩](/wiki/sentence-embedding/)
+- [희소 임베딩](/wiki/sparse-embedding/)
 
 ## 이 문서를 포함하는 코스
 
