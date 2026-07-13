@@ -82,6 +82,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [미분](/wiki/derivative/)
+- [임베딩](/wiki/embedding/)
 - [최적화](/wiki/optimization/)
 
 ## 이 문서를 포함하는 코스

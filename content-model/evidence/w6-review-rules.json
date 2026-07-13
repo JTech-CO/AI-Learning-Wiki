@@ -1,0 +1,598 @@
+{
+  "version": "W6-2026-07-13",
+  "reviewedAt": "2026-07-13",
+  "reviewer": "AI Learning Wiki W6 production gate audit",
+  "policy": {
+    "claimUnit": "Intl.Segmenter ko sentence",
+    "rawClaimTextStored": false,
+    "bodyHashLocked": true,
+    "publicationRequiresAllClaimsAccepted": true,
+    "minimumIndependentSourceFamilies": 3,
+    "sectionClassifications": {
+      "overview": "source-supported",
+      "scope": "provenance-note",
+      "mechanism": "source-supported",
+      "structure": "editorial-synthesis",
+      "applications": "editorial-synthesis",
+      "limitations": "source-supported",
+      "distinctions": "editorial-synthesis",
+      "worked-example": "editorial-guidance",
+      "practice": "editorial-guidance"
+    },
+    "evidenceSetBySection": {
+      "overview": "concept",
+      "scope": "provenance",
+      "mechanism": "concept",
+      "structure": "implementation",
+      "applications": "implementation",
+      "limitations": "limitations",
+      "distinctions": "concept",
+      "worked-example": "implementation",
+      "practice": "implementation"
+    }
+  },
+  "articles": [
+    {
+      "articleId": "machine-learning",
+      "categoryId": "foundations",
+      "reviewNote": "머신러닝의 데이터 기반 학습 정의와 학습 유형, 일반화 한계를 교재·공식 강좌·백과에서 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Chapters 5 and 7: learning algorithms, capacity and generalization"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Definition and supervised, unsupervised, reinforcement and generative categories"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Lead, history, approaches and limitations"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Chapters 5, 7 and 11: objectives, evaluation and methodology"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Regression, classification and data-derived model examples"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Generalization, dataset distribution and statistical estimation conditions"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Task categories and prediction scope"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "tensor",
+      "categoryId": "mathematics",
+      "reviewNote": "수학적 텐서와 프레임워크의 다차원 배열 표현을 구분하고 shape·자료형·장치 속성을 공식 문서로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Chapter 2: scalars, vectors, matrices and multidimensional arrays"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "torch tensor data structures and multidimensional operations"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Tensor use and terminology in machine learning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Tensor creation, dtype, shape, device and operation interfaces"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Chapter 2 dimension and linear-algebra constraints"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Tensor attribute, storage and device behavior"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "neuron",
+      "categoryId": "neural",
+      "reviewNote": "가중합·편향·활성화로 이루어진 인공 뉴런 계산과 생물학적 비유의 한계를 교재·구현 문서로 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Chapter 6: affine transformations, hidden units and activation functions"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Artificial neuron definition, history and relation to biological neurons"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Chapter 6 feedforward unit computation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Linear transformation y = xA^T + b and parameter shapes"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Chapter 6: artificial unit abstraction, model capacity and nonlinear activation considerations"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "self-attention",
+      "categoryId": "transformer",
+      "reviewNote": "동일 시퀀스의 Q·K·V 가중합, 마스크, 멀티헤드 구성과 길이 제곱 비용을 원 논문과 구현 문서로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Sections 3.2 to 3.5: scaled dot-product and multi-head self-attention"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Attention mechanism scope and self-attention terminology"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Query, key, value projections, masks and multi-head composition"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "MultiheadAttention inputs, masks, dimensions and optimized paths"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Section 4 complexity per layer and sequence-length comparison"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Shape, masking and fast-path constraints"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "language-model",
+      "categoryId": "llm",
+      "reviewNote": "시퀀스와 다음 토큰의 확률 분포, 자기회귀 생성, 평가와 사실성 한계를 언어처리 교재와 논문으로 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Sections 2 and 3: autoregressive language modeling objective"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Chapter 3 definition of next-word and sequence probabilities"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Language model definition, history and model types"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Autoregressive factorization, sampling and in-context use"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Conditional probabilities, chain rule, smoothing and evaluation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Limitations, bias, memorization and task sensitivity"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Training-test separation, domain match and perplexity limits"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "pretraining",
+      "categoryId": "training",
+      "reviewNote": "대규모 선행 학습으로 표현을 만들고 후속 과제에 전이하는 과정과 데이터·목적 함수의 제약을 원 논문·교재로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Abstract and Section 3: pre-training objectives and downstream transfer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Chapter 15 shared representations and transfer to subsequent tasks"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Transfer learning definition and pre-trained model relationship"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Masked language modeling, next-sentence objective and fine-tuning"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Representation learning and task transfer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Training corpus, task setup and empirical limitations"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Representation quality depends on data-generating assumptions and downstream task"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "logit",
+      "categoryId": "inference",
+      "reviewNote": "이항 로그 오즈 정의와 다중 클래스 모델의 정규화 전 점수를 구분하고 소프트맥스·온도와의 관계를 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "logit ufunc definition log(p/(1-p)) and domain behavior"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Logistic regression chapter: log-odds and class probabilities"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Logit definition, inverse and statistical usage"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "SciPy logit signature, examples and boundary behavior"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Logistic model fitting and probability transformation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Input domain and infinities at probability boundaries"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Interpretation and decision-boundary conditions"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "embedding",
+      "categoryId": "retrieval",
+      "reviewNote": "이산 항목을 연속 벡터로 학습하는 목적과 유사도 활용, 학습 데이터에 따른 공간 왜곡을 논문·구현 문서로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Abstract and model architectures for continuous word representations"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Word embedding definition, methods and semantic properties"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Continuous bag-of-words and skip-gram training objectives"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Embedding lookup table, dimensions, padding and sparse gradients"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Corpus-dependent semantic and syntactic evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Index range, norm and gradient constraints"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "http-request",
+      "categoryId": "api",
+      "reviewNote": "HTTP 요청의 메서드·대상·필드·내용 구조와 응답 의미, 멱등성·인증·재시도 조건을 최신 표준으로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Sections 3, 6 and 9: messages, request semantics and methods"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "HTTP overview, request-response model and history"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Request target, method, fields, content and status semantics"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "HTTP messages, methods, headers and status references"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Safe and idempotent methods, authentication and error semantics"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Caching, redirects, authentication and connection behavior"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "agent-loop",
+      "categoryId": "agents",
+      "reviewNote": "관찰·추론·행동을 반복하는 실행 구조와 도구 결과 반영, 종료·권한·위험 관리 조건을 논문·표준으로 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Abstract and method: interleaved reasoning traces and task actions"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Intelligent agent definition, environment and agent function"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Reasoning, acting, observations and task feedback loop"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Failure cases and dependence on action and observation quality"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "AI RMF Core functions for governing, measuring and managing risk"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "speech-recognition",
+      "categoryId": "multimodal",
+      "reviewNote": "음향 신호를 텍스트로 전사하는 처리 흐름과 언어 문맥 결합, 소음·억양·도메인 오류 조건을 논문·공식 문서로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Abstract and system description for end-to-end speech recognition"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Speech recognition definition, history and system components"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Acoustic input, recurrent model, language model and decoding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Recognition requests, audio configuration, models and results"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Noise, accent, dataset scale and evaluation conditions"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Audio, language, adaptation and recognition configuration constraints"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "metric",
+      "categoryId": "evaluation",
+      "reviewNote": "평가 지표가 측정하는 속성과 집계·임계값 의존성, 단일 점수의 한계를 다면 평가 논문과 구현 문서로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Sections 2 and 3: scenarios, metrics and multi-metric evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Scoring API and metric taxonomy"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 2,
+            "locator": "Model assessments, validation and common classification metrics"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 3,
+            "locator": "Classification, regression, ranking, clustering and scorer interfaces"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Metric selection, robustness, fairness and efficiency trade-offs"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Averaging, thresholds, labels and scorer parameter conditions"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "jailbreak",
+      "categoryId": "safety",
+      "reviewNote": "탈옥을 안전 규칙 우회를 목표로 하는 프롬프트 인젝션의 한 형태로 구분하고 다층 방어 원칙을 보안 자료로 확인했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Section 3 generative AI taxonomy and prompt injection attacks"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Prompt injection and jailbreaking distinction"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "Prompt injection definition, history and jailbreak distinction"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Direct and indirect prompt injection attack taxonomy"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Direct, indirect, obfuscated and multimodal attack scenarios"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Mitigations and open challenges across the AI lifecycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Least privilege, filtering, human approval and adversarial testing"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-hub",
+      "categoryId": "ecosystem",
+      "reviewNote": "모델·데이터·애플리케이션 저장소의 배포 기능과 모델 카드, 버전·라이선스·공급망 검토 항목을 공식 문서와 논문으로 대조했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Hub overview for models, datasets and Spaces repositories"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Model cards as documentation for intended use and evaluation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "Hugging Face Hub services and technology overview"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Repositories, versioning, model cards, access and collaboration"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Model card content, evaluation context and reporting structure"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Repository security, access, licenses and gated resources"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Documentation limitations and model reporting responsibilities"
+          }
+        ]
+      }
+    }
+  ]
+}

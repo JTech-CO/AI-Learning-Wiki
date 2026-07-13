@@ -85,7 +85,6 @@ API 키는 호출 주체나 프로젝트를 식별하는 비밀 문자열로, �
 
 ## 이 문서를 가리키는 문서
 
-- [HTTP 요청](/wiki/http-request/)
 - [JSON](/wiki/json/)
 - [요청 한도](/wiki/rate-limit/)
 - [스트리밍 응답](/wiki/streaming-response/)

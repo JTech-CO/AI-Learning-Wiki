@@ -86,6 +86,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [하이퍼파라미터](/wiki/hyperparameter/)
+- [언어 모델](/wiki/language-model/)
 - [파라미터](/wiki/parameter/)
 - [토큰화](/wiki/tokenization/)
 - [토크나이저](/wiki/tokenizer/)

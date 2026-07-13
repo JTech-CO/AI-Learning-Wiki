@@ -397,7 +397,6 @@
       ],
       "backlinks": [
         "multimodal-embedding",
-        "speech-recognition",
         "text-to-speech"
       ],
       "courses": [
@@ -582,6 +581,7 @@
       ],
       "backlinks": [
         "beam-search",
+        "language-model",
         "mixture-of-experts",
         "completion",
         "prompt"
@@ -843,7 +843,7 @@
       "aliases": [
         "Logit"
       ],
-      "summary": "확률 변환 전에 모델이 각 후보 토큰에 부여하는 정규화되지 않은 점수다.",
+      "summary": "확률로 정규화하기 전 모델이 각 클래스나 토큰 후보에 내놓는 실수 점수이며, 이항 문제에서는 로그 오즈로 해석된다.",
       "categories": [
         "inference"
       ],
@@ -863,7 +863,7 @@
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/logit/"
     },
     {
@@ -926,7 +926,7 @@
       "courses": [
         "ai-foundations"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/machine-learning/"
     },
     {
@@ -979,6 +979,7 @@
       ],
       "backlinks": [
         "vision-language-model",
+        "speech-recognition",
         "image-generation"
       ],
       "courses": [
@@ -1066,7 +1067,10 @@
       ],
       "backlinks": [
         "dataset",
+        "model-hub",
+        "pretraining",
         "algorithm",
+        "embedding",
         "checkpoint",
         "training-data",
         "ai-agent"
@@ -1175,10 +1179,11 @@
         "ecosystem"
       ],
       "prerequisites": [
-        "open-source-model",
+        "model",
         "model-license"
       ],
       "related": [
+        "open-source-model",
         "model-license"
       ],
       "backlinks": [
@@ -1186,7 +1191,7 @@
         "open-source-model"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/model-hub/"
     },
     {
@@ -1354,6 +1359,8 @@
       ],
       "backlinks": [
         "attention",
+        "neuron",
+        "embedding",
         "tensor",
         "matrix"
       ],
@@ -1560,10 +1567,14 @@
       "categories": [
         "training"
       ],
-      "prerequisites": [],
+      "prerequisites": [
+        "model",
+        "training-data"
+      ],
       "related": [
         "fine-tuning",
-        "supervised-fine-tuning"
+        "supervised-fine-tuning",
+        "instruction-tuning"
       ],
       "backlinks": [
         "fine-tuning",
@@ -1572,7 +1583,7 @@
       "courses": [
         "model-training"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/pretraining/"
     },
     {
@@ -1685,8 +1696,8 @@
         "transformer"
       ],
       "prerequisites": [
-        "transformer",
-        "attention"
+        "attention",
+        "query-key-value"
       ],
       "related": [
         "attention",
@@ -1702,7 +1713,7 @@
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/self-attention/"
     },
     {
@@ -2021,19 +2032,24 @@
       "categories": [
         "llm"
       ],
-      "prerequisites": [],
+      "prerequisites": [
+        "probability",
+        "token"
+      ],
       "related": [
         "large-language-model",
-        "small-language-model"
+        "small-language-model",
+        "next-token-prediction"
       ],
       "backlinks": [
         "large-language-model",
-        "small-language-model"
+        "small-language-model",
+        "speech-recognition"
       ],
       "courses": [
         "ai-foundations"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/language-model/"
     },
     {
@@ -2063,7 +2079,7 @@
       "courses": [
         "agent-systems"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/agent-loop/"
     },
     {
@@ -2320,13 +2336,13 @@
         "multimodal"
       ],
       "prerequisites": [
-        "image-generation",
-        "diffusion-model"
+        "multimodal-model",
+        "language-model"
       ],
       "related": [
-        "diffusion-model",
         "text-to-speech",
-        "ocr"
+        "multimodal-model",
+        "language-model"
       ],
       "backlinks": [
         "ocr",
@@ -2337,7 +2353,7 @@
       "courses": [
         "multimodal-ai"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/speech-recognition/"
     },
     {
@@ -2427,7 +2443,6 @@
       "backlinks": [
         "multimodal-model",
         "vision-language-model",
-        "speech-recognition",
         "diffusion-model"
       ],
       "courses": [
@@ -2513,7 +2528,8 @@
         "neural"
       ],
       "prerequisites": [
-        "neural-network"
+        "vector",
+        "activation-function"
       ],
       "related": [
         "neural-network",
@@ -2526,7 +2542,7 @@
         "layer"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/neuron/"
     },
     {
@@ -2681,10 +2697,14 @@
       "categories": [
         "retrieval"
       ],
-      "prerequisites": [],
+      "prerequisites": [
+        "vector",
+        "model"
+      ],
       "related": [
         "embedding-model",
-        "vector-database"
+        "vector-database",
+        "cosine-similarity"
       ],
       "backlinks": [
         "vector-database",
@@ -2695,7 +2715,7 @@
         "rag-search",
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/embedding/"
     },
     {
@@ -2994,6 +3014,7 @@
       "backlinks": [
         "fine-tuning",
         "reward-model",
+        "pretraining",
         "rlhf",
         "supervised-fine-tuning"
       ],
@@ -3385,6 +3406,7 @@
       ],
       "backlinks": [
         "derivative",
+        "embedding",
         "optimization"
       ],
       "courses": [
@@ -3500,8 +3522,8 @@
         "safety"
       ],
       "prerequisites": [
-        "hallucination",
-        "prompt-injection"
+        "prompt-injection",
+        "guardrail"
       ],
       "related": [
         "prompt-injection",
@@ -3517,7 +3539,7 @@
       "courses": [
         "responsible-ai"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/jailbreak/"
     },
     {
@@ -3527,7 +3549,7 @@
       "aliases": [
         "Tensor"
       ],
-      "summary": "스칼라·벡터·행렬을 일반화한 다차원 수치 배열이다.",
+      "summary": "머신러닝 프레임워크에서 스칼라·벡터·행렬과 그 이상의 차원을 일관된 방식으로 다루는 다차원 수치 배열이다.",
       "categories": [
         "mathematics"
       ],
@@ -3547,7 +3569,7 @@
         "probability-distribution"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/tensor/"
     },
     {
@@ -3601,6 +3623,7 @@
         "tokenizer"
       ],
       "backlinks": [
+        "language-model",
         "tokenizer",
         "tokenization",
         "parameter",
@@ -3661,7 +3684,6 @@
         "self-attention"
       ],
       "backlinks": [
-        "self-attention",
         "attention"
       ],
       "courses": [
@@ -3826,7 +3848,7 @@
       "courses": [
         "responsible-ai"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/metric/"
     },
     {
@@ -3977,6 +3999,7 @@
         "reinforcement-learning",
         "dataset",
         "model",
+        "pretraining",
         "self-supervised-learning"
       ],
       "courses": [
@@ -4099,6 +4122,7 @@
         "conditional-probability"
       ],
       "backlinks": [
+        "language-model",
         "conditional-probability",
         "tensor",
         "matrix",
@@ -4162,7 +4186,6 @@
       ],
       "backlinks": [
         "vision-language-model",
-        "speech-recognition",
         "text-to-speech",
         "image-generation"
       ],
@@ -4189,7 +4212,6 @@
         "jailbreak"
       ],
       "backlinks": [
-        "jailbreak",
         "prompt-injection"
       ],
       "courses": [
@@ -4223,6 +4245,7 @@
         "weight",
         "loss-function",
         "backpropagation",
+        "neuron",
         "bias"
       ],
       "courses": [],
@@ -4330,6 +4353,7 @@
         "sdk"
       ],
       "backlinks": [
+        "http-request",
         "rest-api",
         "sdk"
       ],
@@ -4362,7 +4386,6 @@
       "backlinks": [
         "streaming-response",
         "rate-limit",
-        "http-request",
         "json"
       ],
       "courses": [
@@ -4383,13 +4406,12 @@
         "api"
       ],
       "prerequisites": [
-        "rest-api",
-        "sdk"
+        "api"
       ],
       "related": [
+        "rest-api",
         "sdk",
-        "json",
-        "api-key"
+        "json"
       ],
       "backlinks": [
         "api-key",
@@ -4400,7 +4422,7 @@
       "courses": [
         "api-development"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/http-request/"
     },
     {

@@ -86,7 +86,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [이미지 생성](/wiki/image-generation/)
-- [음성 인식](/wiki/speech-recognition/)
 - [음성 합성](/wiki/text-to-speech/)
 - [비전-언어 모델](/wiki/vision-language-model/)
 

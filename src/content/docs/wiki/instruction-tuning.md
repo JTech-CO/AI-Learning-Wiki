@@ -86,6 +86,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [미세조정](/wiki/fine-tuning/)
+- [사전학습](/wiki/pretraining/)
 - [보상 모델](/wiki/reward-model/)
 - [인간 피드백 기반 강화학습](/wiki/rlhf/)
 - [지도 미세조정](/wiki/supervised-fine-tuning/)

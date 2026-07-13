@@ -87,6 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [데이터셋](/wiki/dataset/)
 - [모델](/wiki/model/)
+- [사전학습](/wiki/pretraining/)
 - [강화학습](/wiki/reinforcement-learning/)
 - [자기지도학습](/wiki/self-supervised-learning/)
 

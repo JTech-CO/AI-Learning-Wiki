@@ -101,6 +101,7 @@ _해당 문서가 없습니다._
 ## 이 문서를 가리키는 문서
 
 - [이미지 생성](/wiki/image-generation/)
+- [음성 인식](/wiki/speech-recognition/)
 - [비전-언어 모델](/wiki/vision-language-model/)
 
 ## 이 문서를 포함하는 코스

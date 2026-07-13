@@ -5,7 +5,11 @@ const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const articleFiles = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json'));
 const articles = await Promise.all(articleFiles.map((file) => readJson(path.join('content-model/articles', file))));
 const registry = await readJson('content-model/evidence/source-registry.json');
-const checkedAt = new Date().toISOString();
+let previous = { sources: [] };
+try { previous = await readJson('content-model/evidence/source-verification.json'); } catch {}
+const previousByUrl = new Map(previous.sources.map((source) => [source.url, source]));
+const runCheckedAt = new Date().toISOString();
+const refreshAll = process.argv.includes('--refresh');
 const urlUsage = new Map();
 
 for (const article of articles) {
@@ -58,7 +62,7 @@ async function verify(url) {
       contentType: response.headers.get('content-type'),
       etag: response.headers.get('etag'),
       lastModified: response.headers.get('last-modified'),
-      checkedAt,
+      checkedAt: runCheckedAt,
       error: null,
     };
   } catch (error) {
@@ -70,7 +74,7 @@ async function verify(url) {
       contentType: null,
       etag: null,
       lastModified: null,
-      checkedAt,
+      checkedAt: runCheckedAt,
       error: error.name === 'AbortError' ? 'timeout' : String(error.message ?? error).slice(0, 300),
     };
   }
@@ -83,7 +87,7 @@ async function worker() {
   while (cursor < urls.length) {
     const index = cursor;
     cursor += 1;
-    results[index] = await verify(urls[index]);
+    results[index] = !refreshAll && previousByUrl.has(urls[index]) ? previousByUrl.get(urls[index]) : await verify(urls[index]);
   }
 }
 await Promise.all(Array.from({ length: 6 }, worker));
@@ -97,6 +101,7 @@ const sources = results.map((result) => {
   };
 });
 const count = (state) => sources.filter((source) => source.state === state).length;
+const checkedAt = new Date(Math.max(...sources.map((source) => Date.parse(source.checkedAt)))).toISOString();
 const snapshot = {
   version: 'W2-2026-07-13',
   checkedAt,
@@ -104,6 +109,7 @@ const snapshot = {
     metadataOnly: true,
     storedProse: false,
     reachabilityDoesNotProveRelevance: true,
+    incrementalChecks: true,
   },
   totals: {
     uniqueUrls: sources.length,

@@ -100,6 +100,7 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [HTTP 요청](/wiki/http-request/)
 - [REST API](/wiki/rest-api/)
 - [SDK](/wiki/sdk/)
 

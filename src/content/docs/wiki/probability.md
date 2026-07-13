@@ -86,6 +86,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [조건부확률](/wiki/conditional-probability/)
+- [언어 모델](/wiki/language-model/)
 - [행렬](/wiki/matrix/)
 - [확률분포](/wiki/probability-distribution/)
 - [텐서](/wiki/tensor/)

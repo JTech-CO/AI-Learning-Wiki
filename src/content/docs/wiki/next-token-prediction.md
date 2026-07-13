@@ -85,6 +85,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [빔 탐색](/wiki/beam-search/)
 - [컴플리션](/wiki/completion/)
+- [언어 모델](/wiki/language-model/)
 - [전문가 혼합](/wiki/mixture-of-experts/)
 - [프롬프트](/wiki/prompt/)
 

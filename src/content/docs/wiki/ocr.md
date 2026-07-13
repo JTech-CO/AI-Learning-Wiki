@@ -86,7 +86,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [멀티모달 임베딩](/wiki/multimodal-embedding/)
-- [음성 인식](/wiki/speech-recognition/)
 - [음성 합성](/wiki/text-to-speech/)
 
 ## 이 문서를 포함하는 코스

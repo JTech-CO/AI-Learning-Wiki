@@ -1,6 +1,6 @@
 {
   "version": "W2-2026-07-13",
-  "checkedAt": "2026-07-13T00:25:00.000Z",
+  "checkedAt": "2026-07-13T09:13:37.686Z",
   "policy": {
     "metadataOnly": true,
     "storedProse": false,
@@ -8,14 +8,29 @@
     "incrementalChecks": true
   },
   "totals": {
-    "uniqueUrls": 121,
-    "articleUrls": 103,
+    "uniqueUrls": 145,
+    "articleUrls": 133,
     "anchorUrls": 29,
-    "reachable": 121,
+    "reachable": 145,
     "restricted": 0,
     "unavailable": 0
   },
   "sources": [
+    {
+      "url": "https://arxiv.org/abs/1301.3781",
+      "finalUrl": "https://arxiv.org/abs/1301.3781",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Tue, 10 Sep 2013 00:01:40 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "embedding"
+      ],
+      "anchorIds": []
+    },
     {
       "url": "https://arxiv.org/abs/1312.5602",
       "finalUrl": "https://arxiv.org/abs/1312.5602",
@@ -28,6 +43,21 @@
       "error": null,
       "articleIds": [
         "reinforcement-learning"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://arxiv.org/abs/1412.5567",
+      "finalUrl": "https://arxiv.org/abs/1412.5567",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Tue, 23 Dec 2014 01:03:23 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "speech-recognition"
       ],
       "anchorIds": []
     },
@@ -78,6 +108,36 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/1810.03993",
+      "finalUrl": "https://arxiv.org/abs/1810.03993",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Wed, 16 Jan 2019 01:02:59 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "model-hub"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://arxiv.org/abs/1810.04805",
+      "finalUrl": "https://arxiv.org/abs/1810.04805",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Mon, 09 Mar 2026 17:21:05 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "pretraining"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://arxiv.org/abs/2005.11401",
       "finalUrl": "https://arxiv.org/abs/2005.11401",
       "status": 200,
@@ -91,7 +151,6 @@
         "approximate-nearest-neighbor",
         "chunking",
         "citation",
-        "embedding",
         "embedding-model",
         "grounding",
         "nearest-neighbor-search",
@@ -148,7 +207,6 @@
         "multimodal-embedding",
         "multimodal-model",
         "ocr",
-        "speech-recognition",
         "text-to-speech",
         "vision-language-model"
       ],
@@ -176,7 +234,6 @@
         "knowledge-distillation",
         "lora",
         "peft",
-        "pretraining",
         "quantization",
         "reward-model",
         "rlhf",
@@ -263,7 +320,6 @@
         "inference",
         "kv-cache",
         "latency",
-        "logit",
         "softmax",
         "temperature",
         "throughput",
@@ -286,6 +342,21 @@
       "anchorIds": [
         "mitre-atlas"
       ]
+    },
+    {
+      "url": "https://cloud.google.com/speech-to-text/docs",
+      "finalUrl": "https://docs.cloud.google.com/speech-to-text/docs?hl=pt",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Thu, 15 Jan 2026 02:15:44 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "speech-recognition"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
@@ -323,10 +394,27 @@
       "lastModified": "Fri, 10 Apr 2026 20:18:04 GMT",
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
-      "articleIds": [],
+      "articleIds": [
+        "accuracy"
+      ],
       "anchorIds": [
         "google-ml-glossary"
       ]
+    },
+    {
+      "url": "https://developers.google.com/machine-learning/intro-to-ml/what-is-ml",
+      "finalUrl": "https://developers.google.com/machine-learning/intro-to-ml/what-is-ml?hl=ko",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Tue, 27 Jan 2026 18:45:52 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "machine-learning"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://docs.pytorch.org/docs/stable/",
@@ -344,6 +432,51 @@
       ]
     },
     {
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Embedding.html",
+      "finalUrl": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Embedding.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Mon, 13 Jul 2026 01:10:46 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "embedding"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html",
+      "finalUrl": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Mon, 13 Jul 2026 01:10:46 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "neuron"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html",
+      "finalUrl": "https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Mon, 13 Jul 2026 01:10:46 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "self-attention"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://docs.pytorch.org/docs/stable/nn.html",
       "finalUrl": "https://docs.pytorch.org/docs/stable/nn.html",
       "status": 200,
@@ -354,7 +487,24 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
+        "activation-function",
+        "attention",
         "neural-network"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/torch",
+      "finalUrl": "https://docs.pytorch.org/docs/stable/torch",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Mon, 13 Jul 2026 01:10:49 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "tensor"
       ],
       "anchorIds": []
     },
@@ -374,6 +524,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.logit.html",
+      "finalUrl": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.logit.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html",
+      "etag": "\"7c7e-6549d52527c00-gzip\"",
+      "lastModified": "Fri, 19 Jun 2026 15:55:28 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "logit"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://docs.vllm.ai/en/stable/",
       "finalUrl": "https://docs.vllm.ai/en/stable/",
       "status": 200,
@@ -389,36 +554,6 @@
       "anchorIds": [
         "vllm-docs"
       ]
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Accuracy_and_precision",
-      "finalUrl": "https://en.wikipedia.org/wiki/Accuracy_and_precision",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=UTF-8",
-      "etag": null,
-      "lastModified": "Sun, 12 Jul 2026 17:40:45 GMT",
-      "checkedAt": "2026-07-12T21:56:01.403Z",
-      "error": null,
-      "articleIds": [
-        "accuracy"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Activation_function",
-      "finalUrl": "https://en.wikipedia.org/wiki/Activation_function",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=UTF-8",
-      "etag": null,
-      "lastModified": "Sun, 12 Jul 2026 17:43:44 GMT",
-      "checkedAt": "2026-07-12T21:56:01.403Z",
-      "error": null,
-      "articleIds": [
-        "activation-function"
-      ],
-      "anchorIds": []
     },
     {
       "url": "https://en.wikipedia.org/wiki/AI_agent",
@@ -447,6 +582,36 @@
       "error": null,
       "articleIds": [
         "alignment"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Accuracy_and_precision",
+      "finalUrl": "https://en.wikipedia.org/wiki/Accuracy_and_precision",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 17:40:45 GMT",
+      "checkedAt": "2026-07-12T21:56:01.403Z",
+      "error": null,
+      "articleIds": [
+        "accuracy"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Activation_function",
+      "finalUrl": "https://en.wikipedia.org/wiki/Activation_function",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 17:43:44 GMT",
+      "checkedAt": "2026-07-12T21:56:01.403Z",
+      "error": null,
+      "articleIds": [
+        "activation-function"
       ],
       "anchorIds": []
     },
@@ -522,7 +687,8 @@
       "error": null,
       "articleIds": [
         "attention",
-        "cross-attention"
+        "cross-attention",
+        "self-attention"
       ],
       "anchorIds": []
     },
@@ -782,6 +948,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://en.wikipedia.org/wiki/HTTP",
+      "finalUrl": "https://en.wikipedia.org/wiki/HTTP",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Mon, 13 Jul 2026 00:48:38 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "http-request"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29",
       "finalUrl": "https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29",
       "status": 200,
@@ -793,6 +974,21 @@
       "error": null,
       "articleIds": [
         "hallucination"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+      "finalUrl": "https://en.wikipedia.org/wiki/Hugging_Face",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Mon, 13 Jul 2026 00:15:18 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "model-hub"
       ],
       "anchorIds": []
     },
@@ -837,6 +1033,7 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
+        "agent-loop",
         "agent-memory"
       ],
       "anchorIds": []
@@ -853,6 +1050,21 @@
       "error": null,
       "articleIds": [
         "knowledge-distillation"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
+      "finalUrl": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 20:05:59 GMT",
+      "checkedAt": "2026-07-12T21:56:01.403Z",
+      "error": null,
+      "articleIds": [
+        "llm-as-a-judge"
       ],
       "anchorIds": []
     },
@@ -918,17 +1130,17 @@
       "anchorIds": []
     },
     {
-      "url": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
-      "finalUrl": "https://en.wikipedia.org/wiki/LLM-as-a-Judge",
+      "url": "https://en.wikipedia.org/wiki/Logit",
+      "finalUrl": "https://en.wikipedia.org/wiki/Logit",
       "status": 200,
       "state": "reachable",
       "contentType": "text/html; charset=UTF-8",
       "etag": null,
-      "lastModified": "Sun, 12 Jul 2026 20:05:59 GMT",
-      "checkedAt": "2026-07-12T21:56:01.403Z",
+      "lastModified": "Sun, 12 Jul 2026 11:16:10 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
       "error": null,
       "articleIds": [
-        "llm-as-a-judge"
+        "logit"
       ],
       "anchorIds": []
     },
@@ -943,7 +1155,8 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
-        "machine-learning"
+        "machine-learning",
+        "metric"
       ],
       "anchorIds": []
     },
@@ -1129,6 +1342,36 @@
       "anchorIds": []
     },
     {
+      "url": "https://en.wikipedia.org/wiki/Prompt_injection",
+      "finalUrl": "https://en.wikipedia.org/wiki/Prompt_injection",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Thu, 09 Jul 2026 05:19:00 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "jailbreak"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/REST",
+      "finalUrl": "https://en.wikipedia.org/wiki/REST",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-07-13T00:25:00.000Z",
+      "error": null,
+      "articleIds": [
+        "rest-api"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Regulation_of_artificial_intelligence",
       "finalUrl": "https://en.wikipedia.org/wiki/Regulation_of_artificial_intelligence",
       "status": 200,
@@ -1174,21 +1417,6 @@
       "anchorIds": []
     },
     {
-      "url": "https://en.wikipedia.org/wiki/REST",
-      "finalUrl": "https://en.wikipedia.org/wiki/REST",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": null,
-      "checkedAt": "2026-07-13T00:25:00.000Z",
-      "error": null,
-      "articleIds": [
-        "rest-api"
-      ],
-      "anchorIds": []
-    },
-    {
       "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
       "finalUrl": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
       "status": 200,
@@ -1230,6 +1458,21 @@
       "error": null,
       "articleIds": [
         "model-license"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Speech_recognition",
+      "finalUrl": "https://en.wikipedia.org/wiki/Speech_recognition",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 17:40:44 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "speech-recognition"
       ],
       "anchorIds": []
     },
@@ -1324,6 +1567,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://en.wikipedia.org/wiki/Transfer_learning",
+      "finalUrl": "https://en.wikipedia.org/wiki/Transfer_learning",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 06:02:34 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "pretraining"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29",
       "finalUrl": "https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29",
       "status": 200,
@@ -1399,6 +1657,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://en.wikipedia.org/wiki/Word_embedding",
+      "finalUrl": "https://en.wikipedia.org/wiki/Word_embedding",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Sun, 12 Jul 2026 17:47:01 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "embedding"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://faiss.ai/",
       "finalUrl": "https://faiss.ai/",
       "status": 200,
@@ -1408,7 +1681,9 @@
       "lastModified": "Fri, 10 Jul 2026 17:10:35 GMT",
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
-      "articleIds": [],
+      "articleIds": [
+        "vector-database"
+      ],
       "anchorIds": [
         "faiss-docs"
       ]
@@ -1423,10 +1698,27 @@
       "lastModified": "Sat, 11 Jul 2026 18:46:05 GMT",
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
-      "articleIds": [],
+      "articleIds": [
+        "prompt-injection"
+      ],
       "anchorIds": [
         "owasp-genai"
       ]
+    },
+    {
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "finalUrl": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": null,
+      "lastModified": "Mon, 13 Jul 2026 09:10:46 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "jailbreak"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://huggingface.co/docs/hub/index",
@@ -1438,7 +1730,9 @@
       "lastModified": null,
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
-      "articleIds": [],
+      "articleIds": [
+        "model-hub"
+      ],
       "anchorIds": [
         "huggingface-hub-docs"
       ]
@@ -1453,7 +1747,9 @@
       "lastModified": null,
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
-      "articleIds": [],
+      "articleIds": [
+        "tokenization"
+      ],
       "anchorIds": [
         "huggingface-tokenizers"
       ]
@@ -1469,7 +1765,8 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
-        "multimodal-model"
+        "multimodal-model",
+        "vision-language-model"
       ],
       "anchorIds": []
     },
@@ -1654,6 +1951,7 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
+        "ai-agent",
         "mcp"
       ],
       "anchorIds": [
@@ -1721,6 +2019,21 @@
       ]
     },
     {
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf",
+      "finalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "application/pdf",
+      "etag": "\"a24a85f09cdb1:0\"",
+      "lastModified": "Mon, 24 Mar 2025 19:11:17 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "jailbreak"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://oecd.ai/en/principles",
       "finalUrl": "https://oecd.ai/en/principles",
       "status": 200,
@@ -1731,7 +2044,8 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
-        "ai-governance"
+        "ai-governance",
+        "artificial-intelligence"
       ],
       "anchorIds": []
     },
@@ -1761,7 +2075,6 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
-        "model-hub",
         "model-license",
         "open-source-model"
       ],
@@ -1781,6 +2094,21 @@
       "anchorIds": [
         "sentence-transformers-docs"
       ]
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "finalUrl": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"6a4766b7-6b1e7\"",
+      "lastModified": "Fri, 03 Jul 2026 07:37:27 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "metric"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://scikit-learn.org/stable/user_guide.html",
@@ -1808,7 +2136,8 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
-        "model-license"
+        "model-license",
+        "open-source-model"
       ],
       "anchorIds": [
         "spdx-spec"
@@ -1830,6 +2159,21 @@
       "anchorIds": [
         "openapi-spec"
       ]
+    },
+    {
+      "url": "https://web.stanford.edu/~jurafsky/slp3/3.pdf",
+      "finalUrl": "https://web.stanford.edu/~jurafsky/slp3/3.pdf",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "application/pdf",
+      "etag": "\"351c5-647bac0a82c80\"",
+      "lastModified": "Tue, 06 Jan 2026 16:34:42 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "language-model"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://www.deeplearningbook.org/",
@@ -1910,6 +2254,21 @@
       "anchorIds": []
     },
     {
+      "url": "https://www.deeplearningbook.org/contents/representation.html",
+      "finalUrl": "https://www.deeplearningbook.org/contents/representation.html",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"66dcdf18-35cc04\"",
+      "lastModified": "Sat, 07 Sep 2024 23:17:44 GMT",
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "pretraining"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://www.deepspeed.ai/",
       "finalUrl": "https://www.deepspeed.ai/",
       "status": 200,
@@ -1950,12 +2309,13 @@
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
       "articleIds": [
+        "agent-loop",
+        "ai-agent",
         "ai-governance",
         "bias-fairness",
         "content-moderation",
         "guardrail",
         "hallucination",
-        "jailbreak",
         "privacy",
         "prompt-injection"
       ],
@@ -1973,10 +2333,28 @@
       "lastModified": null,
       "checkedAt": "2026-07-12T21:56:01.403Z",
       "error": null,
-      "articleIds": [],
+      "articleIds": [
+        "http-request",
+        "rest-api"
+      ],
       "anchorIds": [
         "rfc-9110"
       ]
+    },
+    {
+      "url": "https://www.statlearning.com/",
+      "finalUrl": "https://www.statlearning.com/",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html;charset=utf-8",
+      "etag": "W/\"6947c46d6660dd50400fd282dbd970d4\"",
+      "lastModified": null,
+      "checkedAt": "2026-07-13T09:13:37.686Z",
+      "error": null,
+      "articleIds": [
+        "logit"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://www.w3.org/TR/webnn/",
