@@ -100,11 +100,18 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 ## 이 문서를 가리키는 문서
 
 - [적대적 예시](/wiki/adversarial-example/)
+- [AI 오용](/wiki/ai-misuse/)
 - [AI 안전](/wiki/ai-safety/)
 - [AI 공급망 취약점](/wiki/ai-supply-chain-vulnerability/)
 - [편향과 공정성](/wiki/bias-fairness/)
+- [능력 통제](/wiki/capability-control/)
+- [파국적 AI 위험](/wiki/catastrophic-ai-risk/)
+- [교정 가능성](/wiki/corrigibility/)
+- [기만적 정렬](/wiki/deceptive-alignment/)
+- [이중용도 AI](/wiki/dual-use-ai/)
 - [회피 공격](/wiki/evasion-attack/)
 - [과도한 자율성](/wiki/excessive-agency/)
+- [목표 오일반화](/wiki/goal-misgeneralization/)
 - [안전하지 않은 출력 처리](/wiki/insecure-output-handling/)
 - [멤버십 추론 공격](/wiki/membership-inference/)
 - [모델 백도어](/wiki/model-backdoor/)
@@ -115,7 +122,10 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 - [개인정보 보호](/wiki/privacy/)
 - [프롬프트 유출](/wiki/prompt-leakage/)
 - [RAG 오염](/wiki/rag-poisoning/)
+- [보상 변조](/wiki/reward-tampering/)
+- [확장 가능한 감독](/wiki/scalable-oversight/)
 - [민감정보 노출](/wiki/sensitive-information-disclosure/)
+- [명세 편법 수행](/wiki/specification-gaming/)
 - [학습 데이터 오염](/wiki/training-data-poisoning/)
 
 ## 이 문서를 포함하는 코스

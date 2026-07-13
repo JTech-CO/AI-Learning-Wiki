@@ -102,9 +102,13 @@ _해당 문서가 없습니다._
 
 - [계산 그래프](/wiki/computational-graph/)
 - [컴퓨터 비전](/wiki/computer-vision/)
+- [합성곱 신경망](/wiki/convolutional-neural-network/)
 - [딥러닝](/wiki/deep-learning/)
 - [완전연결층](/wiki/dense-layer/)
+- [DenseNet](/wiki/densenet/)
 - [순전파](/wiki/forward-pass/)
+- [게이트 순환 유닛](/wiki/gated-recurrent-unit/)
+- [생성적 적대 신경망](/wiki/generative-adversarial-network/)
 - [그래디언트 신호](/wiki/gradient-signal/)
 - [은닉층](/wiki/hidden-layer/)
 - [은닉 상태](/wiki/hidden-state/)
@@ -112,13 +116,19 @@ _해당 문서가 없습니다._
 - [입력층](/wiki/input-layer/)
 - [신경망 층](/wiki/layer/)
 - [선형층](/wiki/linear-layer/)
+- [장단기 메모리](/wiki/long-short-term-memory/)
+- [다층 퍼셉트론](/wiki/multilayer-perceptron/)
 - [신경망 깊이](/wiki/network-depth/)
 - [신경망 너비](/wiki/network-width/)
 - [인공 뉴런](/wiki/neuron/)
 - [출력층](/wiki/output-layer/)
 - [파라미터 초기화](/wiki/parameter-initialization/)
 - [수용 영역](/wiki/receptive-field/)
+- [순환 신경망](/wiki/recurrent-neural-network/)
+- [잔차 신경망](/wiki/residual-network/)
 - [기호주의 인공지능](/wiki/symbolic-ai/)
+- [U-Net](/wiki/u-net/)
+- [변분 오토인코더](/wiki/variational-autoencoder/)
 
 ## 이 문서를 포함하는 코스
 

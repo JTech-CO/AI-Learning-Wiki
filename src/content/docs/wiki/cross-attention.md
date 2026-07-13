@@ -4,8 +4,6 @@ description: "한 표현의 질의가 다른 표현에서 만든 키와 값을 �
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ---
 
-<p class="wiki-alias">Encoder-Decoder Attention</p>
-
 <p class="wiki-lead">한 표현의 질의가 다른 표현에서 만든 키와 값을 조회해 두 입력 사이의 관련 정보를 결합하는 어텐션이다.</p>
 
 <div class="wiki-document-meta">분류: [트랜스포머와 모델 구조](/category/transformer/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>

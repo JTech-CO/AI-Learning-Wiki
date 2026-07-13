@@ -102,17 +102,27 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [보조 손실](/wiki/auxiliary-loss/)
 - [벤치마크 오염](/wiki/benchmark-contamination/)
+- [인과 언어 모델링 목표](/wiki/causal-language-modeling-objective/)
+- [대조 목적 함수](/wiki/contrastive-objective/)
 - [데이터 커리큘럼](/wiki/data-curriculum/)
 - [데이터 혼합](/wiki/data-mixture/)
 - [데이터셋 중복 제거](/wiki/dataset-deduplication/)
+- [잡음 제거 목표](/wiki/denoising-objective/)
 - [문서 패킹](/wiki/document-packing/)
 - [미세조정](/wiki/fine-tuning/)
+- [마스크 언어 모델링 목표](/wiki/masked-language-modeling-objective/)
+- [다중 과제 목적 함수](/wiki/multi-task-objective/)
+- [다음 문장 예측](/wiki/next-sentence-prediction/)
 - [사전학습 파이프라인](/wiki/pretraining-pipeline/)
+- [문장 순서 예측](/wiki/sentence-order-prediction/)
 - [시퀀스 패킹](/wiki/sequence-packing/)
+- [구간 손상 복원](/wiki/span-corruption/)
 - [지도 미세조정](/wiki/supervised-fine-tuning/)
 - [학습 말뭉치](/wiki/training-corpus/)
 - [학습 데이터 필터링](/wiki/training-data-filtering/)
+- [학습 데이터 출처 추적](/wiki/training-data-provenance/)
 - [웹 규모 학습 데이터](/wiki/web-scale-training-data/)
 
 ## 이 문서를 포함하는 코스

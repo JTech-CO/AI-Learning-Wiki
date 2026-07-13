@@ -104,10 +104,17 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [적대적 예시](/wiki/adversarial-example/)
+- [AI 오용](/wiki/ai-misuse/)
 - [AI 안전](/wiki/ai-safety/)
 - [AI 공급망 취약점](/wiki/ai-supply-chain-vulnerability/)
+- [능력 통제](/wiki/capability-control/)
+- [파국적 AI 위험](/wiki/catastrophic-ai-risk/)
+- [교정 가능성](/wiki/corrigibility/)
+- [기만적 정렬](/wiki/deceptive-alignment/)
+- [이중용도 AI](/wiki/dual-use-ai/)
 - [회피 공격](/wiki/evasion-attack/)
 - [과도한 자율성](/wiki/excessive-agency/)
+- [목표 오일반화](/wiki/goal-misgeneralization/)
 - [가드레일](/wiki/guardrail/)
 - [환각](/wiki/hallucination/)
 - [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
@@ -122,7 +129,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [프롬프트 유출](/wiki/prompt-leakage/)
 - [RAG 오염](/wiki/rag-poisoning/)
 - [ReAct 에이전트](/wiki/react-agent/)
+- [보상 변조](/wiki/reward-tampering/)
+- [확장 가능한 감독](/wiki/scalable-oversight/)
 - [민감정보 노출](/wiki/sensitive-information-disclosure/)
+- [명세 편법 수행](/wiki/specification-gaming/)
 - [학습 데이터 오염](/wiki/training-data-poisoning/)
 
 ## 이 문서를 포함하는 코스

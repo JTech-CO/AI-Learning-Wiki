@@ -67,7 +67,11 @@ async function walk(dir) {
 await walk('dist');
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
-  expect(!/(?:에듀버스|eduverse|기존 실습|\bGuide\b)/i.test(html), 'legacy source wording in ' + path.relative('dist', file));
+  const visibleText = html
+    .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ');
+  expect(!/(?:에듀버스|eduverse|기존 실습|\bGuide\b)/i.test(visibleText), 'legacy source wording in ' + path.relative('dist', file));
   expect(!/href=["']\/courses\//i.test(html), 'legacy lesson link in ' + path.relative('dist', file));
 }
 

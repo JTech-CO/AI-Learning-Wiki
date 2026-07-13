@@ -27,15 +27,25 @@
         "batch-learning",
         "transfer-learning",
         "multi-task-learning",
+        "meta-learning",
+        "few-shot-learning",
+        "zero-shot-learning",
+        "curriculum-learning",
+        "continual-learning",
         "dataset",
         "training-data",
+        "validation-set",
+        "test-set",
         "generative-ai",
+        "feature",
+        "label",
+        "target-variable",
         "model",
         "algorithm"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "foundations-core-expansion",
@@ -51,16 +61,6 @@
       "categoryId": "foundations",
       "phase": "standard-expansion",
       "topicIds": [
-        "meta-learning",
-        "few-shot-learning",
-        "zero-shot-learning",
-        "curriculum-learning",
-        "continual-learning",
-        "validation-set",
-        "test-set",
-        "feature",
-        "label",
-        "target-variable",
         "model-capacity",
         "hypothesis",
         "hypothesis-space",
@@ -97,9 +97,9 @@
         "manifold-learning",
         "disentangled-representation"
       ],
-      "topicCount": 45,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "foundations-brief-expansion",
@@ -166,43 +166,42 @@
         "eigendecomposition",
         "singular-value-decomposition",
         "vector-norm",
-        "derivative",
-        "gradient",
-        "optimization",
-        "probability",
-        "probability-distribution",
-        "conditional-probability",
-        "cosine-similarity"
-      ],
-      "topicCount": 25,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
-    },
-    {
-      "id": "mathematics-core-expansion",
-      "categoryId": "mathematics",
-      "phase": "core-expansion",
-      "topicIds": [
         "orthogonality",
-        "vector-projection"
-      ],
-      "topicCount": 2,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
-    },
-    {
-      "id": "mathematics-standard-expansion",
-      "categoryId": "mathematics",
-      "phase": "standard-expansion",
-      "topicIds": [
+        "vector-projection",
+        "derivative",
         "partial-derivative",
+        "gradient",
         "jacobian-matrix",
         "hessian-matrix",
         "chain-rule",
         "taylor-expansion",
         "multivariable-calculus",
         "directional-derivative",
+        "optimization",
         "convex-optimization",
+        "probability",
+        "probability-distribution",
+        "conditional-probability",
+        "cosine-similarity"
+      ],
+      "topicCount": 35,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 4
+    },
+    {
+      "id": "mathematics-core-expansion",
+      "categoryId": "mathematics",
+      "phase": "core-expansion",
+      "topicIds": [],
+      "topicCount": 0,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 0
+    },
+    {
+      "id": "mathematics-standard-expansion",
+      "categoryId": "mathematics",
+      "phase": "standard-expansion",
+      "topicIds": [
         "convex-function",
         "objective-function",
         "constrained-optimization",
@@ -240,9 +239,9 @@
         "mutual-information",
         "conditional-entropy"
       ],
-      "topicCount": 44,
+      "topicCount": 36,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "mathematics-brief-expansion",
@@ -308,15 +307,25 @@
         "network-depth",
         "network-width",
         "neural-network",
+        "multilayer-perceptron",
+        "convolutional-neural-network",
+        "recurrent-neural-network",
+        "long-short-term-memory",
+        "gated-recurrent-unit",
+        "residual-network",
+        "densenet",
+        "u-net",
+        "generative-adversarial-network",
+        "variational-autoencoder",
         "backpropagation",
         "gradient-descent",
         "learning-rate",
         "batch",
         "epoch"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "neural-core-expansion",
@@ -332,16 +341,6 @@
       "categoryId": "neural",
       "phase": "standard-expansion",
       "topicIds": [
-        "multilayer-perceptron",
-        "convolutional-neural-network",
-        "recurrent-neural-network",
-        "long-short-term-memory",
-        "gated-recurrent-unit",
-        "residual-network",
-        "densenet",
-        "u-net",
-        "generative-adversarial-network",
-        "variational-autoencoder",
         "energy-based-model",
         "hopfield-network",
         "graph-neural-network",
@@ -380,9 +379,9 @@
         "l2-regularization",
         "early-stopping"
       ],
-      "topicCount": 47,
+      "topicCount": 37,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "neural-brief-expansion",
@@ -442,9 +441,19 @@
         "multi-query-attention",
         "grouped-query-attention",
         "sliding-window-attention",
+        "bidirectional-attention",
+        "encoder-decoder-attention",
+        "attention-score",
+        "attention-matrix",
+        "attention-head",
         "feed-forward-network",
         "residual-connection",
         "layer-normalization",
+        "pre-normalization",
+        "post-normalization",
+        "rms-normalization",
+        "swiglu",
+        "geglu",
         "causal-mask",
         "encoder",
         "decoder",
@@ -453,35 +462,24 @@
         "decoder-only-model",
         "positional-encoding"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "transformer-core-expansion",
       "categoryId": "transformer",
       "phase": "core-expansion",
-      "topicIds": [
-        "bidirectional-attention",
-        "encoder-decoder-attention",
-        "attention-score",
-        "attention-matrix",
-        "attention-head"
-      ],
-      "topicCount": 5,
+      "topicIds": [],
+      "topicCount": 0,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
+      "minimumManualReviewCount": 0
     },
     {
       "id": "transformer-standard-expansion",
       "categoryId": "transformer",
       "phase": "standard-expansion",
       "topicIds": [
-        "pre-normalization",
-        "post-normalization",
-        "rms-normalization",
-        "swiglu",
-        "geglu",
         "token-embedding-layer",
         "output-projection",
         "language-modeling-head",
@@ -518,7 +516,7 @@
         "context-length-extension",
         "long-context-transformer"
       ],
-      "topicCount": 40,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
       "minimumManualReviewCount": 4
     },
@@ -587,15 +585,25 @@
         "tokenizer",
         "vocabulary",
         "byte-pair-encoding",
+        "wordpiece",
+        "sentencepiece",
+        "unigram-language-model-tokenizer",
+        "character-tokenization",
+        "byte-level-tokenization",
+        "subword-token",
+        "special-token",
+        "beginning-end-token",
+        "padding-token",
+        "out-of-vocabulary-token",
         "parameter",
         "hyperparameter",
         "mixture-of-experts",
         "prompt",
         "context-window"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "llm-core-expansion",
@@ -611,16 +619,6 @@
       "categoryId": "llm",
       "phase": "standard-expansion",
       "topicIds": [
-        "wordpiece",
-        "sentencepiece",
-        "unigram-language-model-tokenizer",
-        "character-tokenization",
-        "byte-level-tokenization",
-        "subword-token",
-        "special-token",
-        "beginning-end-token",
-        "padding-token",
-        "out-of-vocabulary-token",
         "neural-scaling-law",
         "compute-optimal-training",
         "parameter-count",
@@ -657,11 +655,11 @@
         "conversation-context",
         "context-truncation"
       ],
-      "topicCount": 45,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [
         "context-engineering"
       ],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "llm-brief-expansion",
@@ -726,6 +724,16 @@
         "sequence-packing",
         "web-scale-training-data",
         "pretraining-pipeline",
+        "training-data-provenance",
+        "causal-language-modeling-objective",
+        "masked-language-modeling-objective",
+        "denoising-objective",
+        "span-corruption",
+        "contrastive-objective",
+        "next-sentence-prediction",
+        "sentence-order-prediction",
+        "multi-task-objective",
+        "auxiliary-loss",
         "fine-tuning",
         "supervised-fine-tuning",
         "instruction-tuning",
@@ -738,35 +746,24 @@
         "quantization",
         "knowledge-distillation"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "training-core-expansion",
       "categoryId": "training",
       "phase": "core-expansion",
-      "topicIds": [
-        "training-data-provenance",
-        "causal-language-modeling-objective",
-        "masked-language-modeling-objective",
-        "denoising-objective",
-        "span-corruption",
-        "contrastive-objective"
-      ],
-      "topicCount": 6,
+      "topicIds": [],
+      "topicCount": 0,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
+      "minimumManualReviewCount": 0
     },
     {
       "id": "training-standard-expansion",
       "categoryId": "training",
       "phase": "standard-expansion",
       "topicIds": [
-        "next-sentence-prediction",
-        "sentence-order-prediction",
-        "multi-task-objective",
-        "auxiliary-loss",
         "distillation-loss",
         "preference-loss",
         "policy-objective",
@@ -803,7 +800,7 @@
         "reward-hacking",
         "adapter-layer"
       ],
-      "topicCount": 39,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [
         "process-reward-model"
       ],
@@ -878,14 +875,24 @@
         "diverse-beam-search",
         "token-sampling",
         "model-serving",
+        "inference-server",
+        "online-inference",
+        "batch-inference",
+        "inference-endpoint",
+        "request-scheduler",
+        "inference-autoscaling",
+        "inference-load-balancing",
+        "model-replica",
+        "multi-model-serving",
+        "model-gateway",
         "batching",
         "kv-cache",
         "latency",
         "throughput"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "inference-core-expansion",
@@ -901,16 +908,6 @@
       "categoryId": "inference",
       "phase": "standard-expansion",
       "topicIds": [
-        "inference-server",
-        "online-inference",
-        "batch-inference",
-        "inference-endpoint",
-        "request-scheduler",
-        "inference-autoscaling",
-        "inference-load-balancing",
-        "model-replica",
-        "multi-model-serving",
-        "model-gateway",
         "streaming-generation",
         "time-to-first-token",
         "inter-token-latency",
@@ -949,11 +946,11 @@
         "xla-compiler",
         "inference-graph-optimization"
       ],
-      "topicCount": 47,
+      "topicCount": 37,
       "mandatoryManualReviewTopicIds": [
         "tensorrt-llm"
       ],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "inference-brief-expansion",
@@ -1019,35 +1016,8 @@
         "vector-database",
         "approximate-nearest-neighbor",
         "nearest-neighbor-search",
-        "retriever",
-        "semantic-search",
-        "rag",
-        "chunking",
-        "citation",
-        "grounding",
-        "reranker"
-      ],
-      "topicCount": 25,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
-    },
-    {
-      "id": "retrieval-core-expansion",
-      "categoryId": "retrieval",
-      "phase": "core-expansion",
-      "topicIds": [
         "inverted-index",
-        "hierarchical-navigable-small-world"
-      ],
-      "topicCount": 2,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
-    },
-    {
-      "id": "retrieval-standard-expansion",
-      "categoryId": "retrieval",
-      "phase": "standard-expansion",
-      "topicIds": [
+        "hierarchical-navigable-small-world",
         "inverted-file-index",
         "product-quantization",
         "locality-sensitive-hashing",
@@ -1056,6 +1026,32 @@
         "scann",
         "faiss",
         "vector-index",
+        "retriever",
+        "semantic-search",
+        "rag",
+        "chunking",
+        "citation",
+        "grounding",
+        "reranker"
+      ],
+      "topicCount": 35,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 4
+    },
+    {
+      "id": "retrieval-core-expansion",
+      "categoryId": "retrieval",
+      "phase": "core-expansion",
+      "topicIds": [],
+      "topicCount": 0,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 0
+    },
+    {
+      "id": "retrieval-standard-expansion",
+      "categoryId": "retrieval",
+      "phase": "standard-expansion",
+      "topicIds": [
         "distance-metric-selection",
         "index-building",
         "incremental-index-update",
@@ -1093,9 +1089,9 @@
         "grounded-generation",
         "query-routing"
       ],
-      "topicCount": 44,
+      "topicCount": 36,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "retrieval-brief-expansion",
@@ -1160,35 +1156,10 @@
         "https",
         "transport-layer-security",
         "domain-name-system",
+        "transmission-control-protocol",
         "json",
         "rest-api",
         "streaming-response",
-        "structured-output",
-        "tool-calling",
-        "sdk",
-        "api-key",
-        "rate-limit"
-      ],
-      "topicCount": 25,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
-    },
-    {
-      "id": "api-core-expansion",
-      "categoryId": "api",
-      "phase": "core-expansion",
-      "topicIds": [
-        "transmission-control-protocol"
-      ],
-      "topicCount": 1,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
-    },
-    {
-      "id": "api-standard-expansion",
-      "categoryId": "api",
-      "phase": "standard-expansion",
-      "topicIds": [
         "completion-api",
         "chat-api",
         "unified-response-api",
@@ -1198,6 +1169,33 @@
         "moderation-api",
         "batch-api",
         "realtime-api",
+        "structured-output",
+        "tool-calling",
+        "sdk",
+        "api-key",
+        "rate-limit"
+      ],
+      "topicCount": 35,
+      "mandatoryManualReviewTopicIds": [
+        "unified-response-api",
+        "realtime-api"
+      ],
+      "minimumManualReviewCount": 4
+    },
+    {
+      "id": "api-core-expansion",
+      "categoryId": "api",
+      "phase": "core-expansion",
+      "topicIds": [],
+      "topicCount": 0,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 0
+    },
+    {
+      "id": "api-standard-expansion",
+      "categoryId": "api",
+      "phase": "standard-expansion",
+      "topicIds": [
         "asynchronous-api-job",
         "synchronous-api-request",
         "request-response-pattern",
@@ -1236,12 +1234,9 @@
         "api-wrapper",
         "command-line-api-client"
       ],
-      "topicCount": 46,
-      "mandatoryManualReviewTopicIds": [
-        "unified-response-api",
-        "realtime-api"
-      ],
-      "minimumManualReviewCount": 5
+      "topicCount": 37,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 4
     },
     {
       "id": "api-brief-expansion",
@@ -1306,7 +1301,17 @@
         "planner-agent",
         "router-agent",
         "agent-reflection",
+        "agent-self-correction",
+        "agent-termination-condition",
+        "agent-tool",
+        "tool-registry",
+        "tool-discovery",
+        "tool-selection",
+        "tool-invocation",
+        "tool-result-handling",
         "webhook",
+        "tool-permission",
+        "agent-sandbox",
         "agent-memory",
         "state-management",
         "planning",
@@ -1314,37 +1319,26 @@
         "mcp",
         "human-in-the-loop"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [
         "mcp"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "agents-core-expansion",
       "categoryId": "agents",
       "phase": "core-expansion",
-      "topicIds": [
-        "agent-self-correction",
-        "agent-termination-condition"
-      ],
-      "topicCount": 2,
+      "topicIds": [],
+      "topicCount": 0,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
+      "minimumManualReviewCount": 0
     },
     {
       "id": "agents-standard-expansion",
       "categoryId": "agents",
       "phase": "standard-expansion",
       "topicIds": [
-        "agent-tool",
-        "tool-registry",
-        "tool-discovery",
-        "tool-selection",
-        "tool-invocation",
-        "tool-result-handling",
-        "tool-permission",
-        "agent-sandbox",
         "computer-use-agent",
         "browser-use-agent",
         "code-execution-tool",
@@ -1383,13 +1377,13 @@
         "agent-coordination",
         "inter-agent-communication"
       ],
-      "topicCount": 45,
+      "topicCount": 37,
       "mandatoryManualReviewTopicIds": [
         "computer-use-agent",
         "browser-use-agent",
         "agent-swarm"
       ],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "agents-brief-expansion",
@@ -1464,35 +1458,10 @@
         "open-vocabulary-detection",
         "image-retrieval",
         "visual-reasoning",
+        "spatial-reasoning",
+        "pixel-representation",
         "speech-recognition",
         "text-to-speech",
-        "multimodal-model",
-        "multimodal-embedding",
-        "diffusion-model",
-        "image-generation",
-        "ocr"
-      ],
-      "topicCount": 25,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
-    },
-    {
-      "id": "multimodal-core-expansion",
-      "categoryId": "multimodal",
-      "phase": "core-expansion",
-      "topicIds": [
-        "spatial-reasoning",
-        "pixel-representation"
-      ],
-      "topicCount": 2,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 1
-    },
-    {
-      "id": "multimodal-standard-expansion",
-      "categoryId": "multimodal",
-      "phase": "standard-expansion",
-      "topicIds": [
         "audio-model",
         "speech-to-text",
         "speaker-diarization",
@@ -1501,6 +1470,30 @@
         "speech-translation",
         "audio-embedding",
         "spectrogram",
+        "multimodal-model",
+        "multimodal-embedding",
+        "diffusion-model",
+        "image-generation",
+        "ocr"
+      ],
+      "topicCount": 35,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 4
+    },
+    {
+      "id": "multimodal-core-expansion",
+      "categoryId": "multimodal",
+      "phase": "core-expansion",
+      "topicIds": [],
+      "topicCount": 0,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 0
+    },
+    {
+      "id": "multimodal-standard-expansion",
+      "categoryId": "multimodal",
+      "phase": "standard-expansion",
+      "topicIds": [
         "mel-spectrogram",
         "neural-vocoder",
         "text-audio-model",
@@ -1540,7 +1533,7 @@
         "audio-token",
         "modality-adapter"
       ],
-      "topicCount": 46,
+      "topicCount": 38,
       "mandatoryManualReviewTopicIds": [
         "speech-language-model",
         "video-generation",
@@ -1620,13 +1613,25 @@
         "win-rate",
         "benchmark",
         "benchmark-dataset",
+        "leaderboard",
+        "benchmark-suite",
+        "task-benchmark",
+        "capability-benchmark",
+        "safety-benchmark",
+        "mmlu",
+        "helm-benchmark",
+        "big-bench",
+        "gpqa",
+        "humaneval",
         "llm-as-a-judge",
         "observability",
         "tracing"
       ],
-      "topicCount": 25,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "topicCount": 35,
+      "mandatoryManualReviewTopicIds": [
+        "leaderboard"
+      ],
+      "minimumManualReviewCount": 4
     },
     {
       "id": "evaluation-core-expansion",
@@ -1642,16 +1647,6 @@
       "categoryId": "evaluation",
       "phase": "standard-expansion",
       "topicIds": [
-        "leaderboard",
-        "benchmark-suite",
-        "task-benchmark",
-        "capability-benchmark",
-        "safety-benchmark",
-        "mmlu",
-        "helm-benchmark",
-        "big-bench",
-        "gpqa",
-        "humaneval",
         "swe-bench",
         "mteb",
         "beir-benchmark",
@@ -1690,13 +1685,12 @@
         "judge-ensemble",
         "judge-meta-evaluation"
       ],
-      "topicCount": 47,
+      "topicCount": 37,
       "mandatoryManualReviewTopicIds": [
-        "leaderboard",
         "swe-bench",
         "mlperf"
       ],
-      "minimumManualReviewCount": 5
+      "minimumManualReviewCount": 4
     },
     {
       "id": "evaluation-brief-expansion",
@@ -1766,11 +1760,21 @@
         "rag-poisoning",
         "ai-safety",
         "hallucination",
+        "ai-misuse",
+        "dual-use-ai",
+        "catastrophic-ai-risk",
+        "deceptive-alignment",
+        "goal-misgeneralization",
+        "specification-gaming",
+        "reward-tampering",
+        "corrigibility",
+        "scalable-oversight",
+        "capability-control",
         "privacy",
         "bias-fairness",
         "ai-governance"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [
         "prompt-injection",
         "indirect-prompt-injection",
@@ -1794,11 +1798,21 @@
         "rag-poisoning",
         "ai-safety",
         "hallucination",
+        "ai-misuse",
+        "dual-use-ai",
+        "catastrophic-ai-risk",
+        "deceptive-alignment",
+        "goal-misgeneralization",
+        "specification-gaming",
+        "reward-tampering",
+        "corrigibility",
+        "scalable-oversight",
+        "capability-control",
         "privacy",
         "bias-fairness",
         "ai-governance"
       ],
-      "minimumManualReviewCount": 25
+      "minimumManualReviewCount": 35
     },
     {
       "id": "safety-core-expansion",
@@ -1814,16 +1828,6 @@
       "categoryId": "safety",
       "phase": "standard-expansion",
       "topicIds": [
-        "ai-misuse",
-        "dual-use-ai",
-        "catastrophic-ai-risk",
-        "deceptive-alignment",
-        "goal-misgeneralization",
-        "specification-gaming",
-        "reward-tampering",
-        "corrigibility",
-        "scalable-oversight",
-        "capability-control",
         "ai-control-problem",
         "emergent-misalignment",
         "alignment-tax",
@@ -1861,18 +1865,8 @@
         "model-card",
         "datasheet-for-datasets"
       ],
-      "topicCount": 46,
+      "topicCount": 36,
       "mandatoryManualReviewTopicIds": [
-        "ai-misuse",
-        "dual-use-ai",
-        "catastrophic-ai-risk",
-        "deceptive-alignment",
-        "goal-misgeneralization",
-        "specification-gaming",
-        "reward-tampering",
-        "corrigibility",
-        "scalable-oversight",
-        "capability-control",
         "ai-control-problem",
         "emergent-misalignment",
         "alignment-tax",
@@ -1910,7 +1904,7 @@
         "model-card",
         "datasheet-for-datasets"
       ],
-      "minimumManualReviewCount": 46
+      "minimumManualReviewCount": 36
     },
     {
       "id": "safety-brief-expansion",
@@ -2010,15 +2004,25 @@
         "copyleft-license",
         "research-only-license",
         "commercial-use-restriction",
-        "responsible-ai-license"
+        "responsible-ai-license",
+        "software-data-model-license",
+        "license-compatibility",
+        "attribution-requirement",
+        "derivative-model",
+        "dataset-terms-of-use",
+        "dataset-hub",
+        "model-repository",
+        "artifact-registry",
+        "package-registry",
+        "model-discovery"
       ],
-      "topicCount": 25,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [
         "model-release",
         "model-update",
         "open-source-ai-definition"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 4
     },
     {
       "id": "ecosystem-core-expansion",
@@ -2034,16 +2038,6 @@
       "categoryId": "ecosystem",
       "phase": "standard-expansion",
       "topicIds": [
-        "software-data-model-license",
-        "license-compatibility",
-        "attribution-requirement",
-        "derivative-model",
-        "dataset-terms-of-use",
-        "dataset-hub",
-        "model-repository",
-        "artifact-registry",
-        "package-registry",
-        "model-discovery",
         "model-search",
         "model-metadata",
         "model-collection",
@@ -2080,7 +2074,7 @@
         "mlflow",
         "experiment-dashboard"
       ],
-      "topicCount": 45,
+      "topicCount": 35,
       "mandatoryManualReviewTopicIds": [
         "neural-processing-unit",
         "ai-accelerator",

@@ -104,6 +104,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [교차언어 임베딩](/wiki/cross-lingual-embedding/)
 - [밀집 임베딩](/wiki/dense-embedding/)
+- [DiskANN](/wiki/diskann/)
 - [문서 임베딩](/wiki/document-embedding/)
 - [임베딩 비등방성](/wiki/embedding-anisotropy/)
 - [임베딩 차원](/wiki/embedding-dimension/)
@@ -111,12 +112,21 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [임베딩 모델](/wiki/embedding-model/)
 - [임베딩 정규화](/wiki/embedding-normalization/)
 - [임베딩 풀링](/wiki/embedding-pooling/)
+- [FAISS](/wiki/faiss/)
+- [평면 벡터 인덱스](/wiki/flat-vector-index/)
+- [계층적 탐색 가능 소세계 그래프](/wiki/hierarchical-navigable-small-world/)
 - [지시 튜닝 임베딩](/wiki/instruction-tuned-embedding/)
+- [역파일 인덱스](/wiki/inverted-file-index/)
+- [역색인](/wiki/inverted-index/)
+- [지역 민감 해싱](/wiki/locality-sensitive-hashing/)
 - [마트료시카 임베딩](/wiki/matryoshka-embedding/)
+- [곱 양자화](/wiki/product-quantization/)
 - [질의 임베딩](/wiki/query-embedding/)
+- [ScaNN](/wiki/scann/)
 - [문장 임베딩](/wiki/sentence-embedding/)
 - [희소 임베딩](/wiki/sparse-embedding/)
 - [벡터 데이터베이스](/wiki/vector-database/)
+- [벡터 인덱스](/wiki/vector-index/)
 
 ## 이 문서를 포함하는 코스
 

@@ -119,13 +119,23 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [배치 학습](/wiki/batch-learning/)
 - [계산지능](/wiki/computational-intelligence/)
 - [연결주의](/wiki/connectionism/)
+- [지속학습](/wiki/continual-learning/)
+- [커리큘럼 학습](/wiki/curriculum-learning/)
 - [전문가 시스템](/wiki/expert-system/)
+- [특성](/wiki/feature/)
+- [퓨샷 학습](/wiki/few-shot-learning/)
 - [파운데이션 모델](/wiki/foundation-model/)
 - [고전적 인공지능](/wiki/good-old-fashioned-ai/)
+- [레이블](/wiki/label/)
+- [메타학습](/wiki/meta-learning/)
 - [다중 과제 학습](/wiki/multi-task-learning/)
 - [온라인 학습](/wiki/online-learning/)
 - [준지도학습](/wiki/semi-supervised-learning/)
+- [목표 변수](/wiki/target-variable/)
+- [테스트 데이터셋](/wiki/test-set/)
 - [전이학습](/wiki/transfer-learning/)
+- [검증 데이터셋](/wiki/validation-set/)
+- [제로샷 학습](/wiki/zero-shot-learning/)
 
 ## 이 문서를 포함하는 코스
 

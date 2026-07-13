@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
+    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run wiki:w11:validate && npm run wiki:w11:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w11:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
     "gen": "node scripts/build-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -61,8 +61,13 @@
     "wiki:w10:prepare": "node scripts/prepare-w10-batch.mjs",
     "wiki:w10:refresh": "node scripts/build-w10-claim-ledger.mjs",
     "wiki:w10:validate": "node scripts/validate-w10-claims.mjs",
-    "wiki:w10:queue": "node scripts/build-w10-production-queue.mjs && node scripts/validate-w10-production-queue.mjs",
-    "wiki:w10:render": "node scripts/check-w10-render.mjs"
+    "wiki:w10:queue": "node scripts/validate-w10-production-queue.mjs",
+    "wiki:w10:render": "node scripts/check-w10-render.mjs",
+    "wiki:w11:prepare": "node scripts/prepare-w11-batch.mjs",
+    "wiki:w11:refresh": "node scripts/build-w11-claim-ledger.mjs",
+    "wiki:w11:validate": "node scripts/validate-w11-claims.mjs",
+    "wiki:w11:queue": "node scripts/build-w11-production-queue.mjs && node scripts/validate-w11-production-queue.mjs",
+    "wiki:w11:render": "node scripts/check-w11-render.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

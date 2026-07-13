@@ -100,6 +100,8 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 가리키는 문서
 
+- [오디오 임베딩](/wiki/audio-embedding/)
+- [오디오 모델](/wiki/audio-model/)
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [대조 언어-이미지 사전학습](/wiki/contrastive-language-image-pretraining/)
 - [크로스 어텐션](/wiki/cross-attention/)
@@ -112,13 +114,21 @@ _해당 문서가 없습니다._
 - [이미지 분할](/wiki/image-segmentation/)
 - [객체 탐지](/wiki/object-detection/)
 - [개방형 어휘 객체 탐지](/wiki/open-vocabulary-detection/)
+- [픽셀 표현](/wiki/pixel-representation/)
 - [영역 제안 네트워크](/wiki/region-proposal-network/)
+- [공간 추론](/wiki/spatial-reasoning/)
+- [화자 분리](/wiki/speaker-diarization/)
+- [화자 인식](/wiki/speaker-recognition/)
+- [스펙트로그램](/wiki/spectrogram/)
 - [음성 인식](/wiki/speech-recognition/)
+- [음성-텍스트 변환](/wiki/speech-to-text/)
+- [음성 번역](/wiki/speech-translation/)
 - [비전-언어 모델](/wiki/vision-language-model/)
 - [시각 인코더](/wiki/visual-encoder/)
 - [시각 근거화](/wiki/visual-grounding/)
 - [시각 질의응답](/wiki/visual-question-answering/)
 - [시각 추론](/wiki/visual-reasoning/)
+- [음성 활동 탐지](/wiki/voice-activity-detection/)
 - [제로샷 이미지 분류](/wiki/zero-shot-image-classification/)
 
 ## 이 문서를 포함하는 코스
