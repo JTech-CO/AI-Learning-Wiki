@@ -90,7 +90,7 @@ for (const reviewed of ledger.articles) {
 }
 
 const articleCount = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json')).length;
-if (articleCount !== 490) errors.push(`expected 490 article files after W11, found ${articleCount}`);
+if (articleCount < 490) errors.push(`expected at least 490 article files after W11, found ${articleCount}`);
 if (ledger.articles.length !== 140 || rules.articles.length !== 140 || manifest.topics.length !== 140) errors.push('W11 must contain exactly 140 new articles');
 if (reviewedIds.size !== 140) errors.push('W11 reviewed article IDs are not unique');
 for (const category of categories.categories) if (reviewedCategories.get(category.id) !== 10) errors.push(`${category.id}: expected 10 W11 articles`);

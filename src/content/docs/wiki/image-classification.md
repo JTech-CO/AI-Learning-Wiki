@@ -115,6 +115,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [행동 인식](/wiki/action-recognition/)
+- [오디오 캡셔닝](/wiki/audio-captioning/)
 - [오디오 임베딩](/wiki/audio-embedding/)
 - [오디오 모델](/wiki/audio-model/)
 - [대조 언어-이미지 사전학습](/wiki/contrastive-language-image-pretraining/)
@@ -124,6 +126,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [이미지 패치](/wiki/image-patch/)
 - [이미지 검색](/wiki/image-retrieval/)
 - [이미지 분할](/wiki/image-segmentation/)
+- [멜 스펙트로그램](/wiki/mel-spectrogram/)
+- [신경 보코더](/wiki/neural-vocoder/)
 - [객체 탐지](/wiki/object-detection/)
 - [개방형 어휘 객체 탐지](/wiki/open-vocabulary-detection/)
 - [픽셀 표현](/wiki/pixel-representation/)
@@ -132,8 +136,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [화자 분리](/wiki/speaker-diarization/)
 - [화자 인식](/wiki/speaker-recognition/)
 - [스펙트로그램](/wiki/spectrogram/)
+- [음성 언어 모델](/wiki/speech-language-model/)
 - [음성-텍스트 변환](/wiki/speech-to-text/)
 - [음성 번역](/wiki/speech-translation/)
+- [시간적 모델링](/wiki/temporal-modeling/)
+- [텍스트-오디오 모델](/wiki/text-audio-model/)
+- [비디오 분류](/wiki/video-classification/)
+- [비디오 생성](/wiki/video-generation/)
+- [비디오 이해](/wiki/video-understanding/)
 - [시각 인코더](/wiki/visual-encoder/)
 - [시각 근거화](/wiki/visual-grounding/)
 - [시각 질의응답](/wiki/visual-question-answering/)

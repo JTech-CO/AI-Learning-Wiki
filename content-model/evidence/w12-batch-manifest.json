@@ -1,0 +1,2969 @@
+{
+  "version": "W12-2026-07-14",
+  "generatedAt": "2026-07-13T19:24:50.697Z",
+  "policy": {
+    "categories": 14,
+    "newTopicsPerCategory": 10,
+    "topicsPerSlice": 14,
+    "slices": 10,
+    "candidateOrder": "ascending-rank"
+  },
+  "totals": {
+    "topics": 140,
+    "newlyCreated": 140,
+    "cumulativeArticles": 630
+  },
+  "slices": [
+    {
+      "id": "w12-slice-01",
+      "topics": [
+        "computer-use-agent",
+        "asynchronous-api-job",
+        "model-search",
+        "swe-bench",
+        "model-capacity",
+        "streaming-generation",
+        "neural-scaling-law",
+        "convex-function",
+        "mel-spectrogram",
+        "energy-based-model",
+        "distance-metric-selection",
+        "ai-control-problem",
+        "distillation-loss",
+        "token-embedding-layer"
+      ]
+    },
+    {
+      "id": "w12-slice-02",
+      "topics": [
+        "browser-use-agent",
+        "synchronous-api-request",
+        "model-metadata",
+        "mteb",
+        "hypothesis",
+        "time-to-first-token",
+        "compute-optimal-training",
+        "objective-function",
+        "neural-vocoder",
+        "hopfield-network",
+        "index-building",
+        "emergent-misalignment",
+        "preference-loss",
+        "output-projection"
+      ]
+    },
+    {
+      "id": "w12-slice-03",
+      "topics": [
+        "code-execution-tool",
+        "request-response-pattern",
+        "model-collection",
+        "beir-benchmark",
+        "hypothesis-space",
+        "inter-token-latency",
+        "parameter-count",
+        "constrained-optimization",
+        "text-audio-model",
+        "graph-neural-network",
+        "incremental-index-update",
+        "alignment-tax",
+        "policy-objective",
+        "language-modeling-head"
+      ]
+    },
+    {
+      "id": "w12-slice-04",
+      "topics": [
+        "api-action-tool",
+        "stateless-api",
+        "interactive-model-demo",
+        "imagenet",
+        "inductive-bias",
+        "prefill-phase",
+        "model-size",
+        "lagrange-multiplier",
+        "audio-captioning",
+        "graph-convolutional-network",
+        "index-sharding",
+        "personally-identifiable-information",
+        "value-function-loss",
+        "padding-mask"
+      ]
+    },
+    {
+      "id": "w12-slice-05",
+      "topics": [
+        "human-approval-gate",
+        "stateful-api",
+        "benchmark-registry",
+        "mlperf",
+        "generalization",
+        "decode-phase",
+        "training-compute",
+        "line-search",
+        "speech-language-model",
+        "graph-attention-network",
+        "index-replication",
+        "anonymization",
+        "reconstruction-loss",
+        "attention-mask"
+      ]
+    },
+    {
+      "id": "w12-slice-06",
+      "topics": [
+        "tool-side-effect",
+        "api-pagination",
+        "graphics-processing-unit",
+        "benchmark-saturation",
+        "train-validation-test-split",
+        "request-queue",
+        "inference-compute",
+        "newtons-method",
+        "video-understanding",
+        "siamese-network",
+        "metadata-filtering",
+        "pseudonymization",
+        "diffusion-training-objective",
+        "key-value-projection"
+      ]
+    },
+    {
+      "id": "w12-slice-07",
+      "topics": [
+        "working-memory",
+        "file-upload-api",
+        "tensor-processing-unit",
+        "dynamic-benchmark",
+        "data-distribution",
+        "admission-control",
+        "dense-language-model",
+        "quasi-newton-method",
+        "video-generation",
+        "capsule-network",
+        "recall-latency-tradeoff",
+        "differential-privacy",
+        "full-parameter-fine-tuning",
+        "transformer-block"
+      ]
+    },
+    {
+      "id": "w12-slice-08",
+      "topics": [
+        "short-term-agent-memory",
+        "api-versioning",
+        "neural-processing-unit",
+        "benchmark-validity",
+        "data-preprocessing",
+        "serverless-inference",
+        "sparse-language-model",
+        "saddle-point",
+        "video-classification",
+        "neural-ordinary-differential-equation",
+        "keyword-search",
+        "data-minimization",
+        "domain-adaptation",
+        "normalization-placement"
+      ]
+    },
+    {
+      "id": "w12-slice-09",
+      "topics": [
+        "long-term-agent-memory",
+        "api-deprecation",
+        "ai-accelerator",
+        "human-evaluation",
+        "feature-engineering",
+        "edge-inference",
+        "expert-routing",
+        "local-global-optimum",
+        "action-recognition",
+        "spiking-neural-network",
+        "bm25",
+        "data-retention",
+        "task-adaptation",
+        "encoder-only-transformer"
+      ]
+    },
+    {
+      "id": "w12-slice-10",
+      "topics": [
+        "episodic-agent-memory",
+        "server-sent-events",
+        "cloud-ai-service",
+        "evaluation-rubric",
+        "data-leakage",
+        "continuous-batching",
+        "expert-capacity-factor",
+        "random-variable",
+        "temporal-modeling",
+        "memory-network",
+        "lexical-retrieval",
+        "right-to-deletion",
+        "continued-pretraining",
+        "prefix-language-model"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "computer-use-agent",
+      "categoryId": "agents",
+      "rank": 30,
+      "tier": "standard",
+      "subarea": "tool-use",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "컴퓨터 사용 에이전트",
+      "titleEn": "Computer-Use Agent",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5289
+    },
+    {
+      "topicId": "browser-use-agent",
+      "categoryId": "agents",
+      "rank": 31,
+      "tier": "standard",
+      "subarea": "tool-use",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "브라우저 사용 에이전트",
+      "titleEn": "Browser-Use Agent",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5326
+    },
+    {
+      "topicId": "code-execution-tool",
+      "categoryId": "agents",
+      "rank": 32,
+      "tier": "standard",
+      "subarea": "tool-use",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "코드 실행 도구",
+      "titleEn": "Code Execution Tool",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5248
+    },
+    {
+      "topicId": "api-action-tool",
+      "categoryId": "agents",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "tool-use",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "API 행동 도구",
+      "titleEn": "API Action Tool",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5217
+    },
+    {
+      "topicId": "human-approval-gate",
+      "categoryId": "agents",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "tool-use",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인간 승인 게이트",
+      "titleEn": "Human Approval Gate",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5273
+    },
+    {
+      "topicId": "tool-side-effect",
+      "categoryId": "agents",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "tool-use",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "도구 부작용",
+      "titleEn": "Tool Side Effect",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5108
+    },
+    {
+      "topicId": "working-memory",
+      "categoryId": "agents",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "memory-state",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "작업 기억",
+      "titleEn": "Working Memory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5352
+    },
+    {
+      "topicId": "short-term-agent-memory",
+      "categoryId": "agents",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "memory-state",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "에이전트 단기 기억",
+      "titleEn": "Short-Term Agent Memory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5316
+    },
+    {
+      "topicId": "long-term-agent-memory",
+      "categoryId": "agents",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "memory-state",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "에이전트 장기 기억",
+      "titleEn": "Long-Term Agent Memory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5298
+    },
+    {
+      "topicId": "episodic-agent-memory",
+      "categoryId": "agents",
+      "rank": 41,
+      "tier": "standard",
+      "subarea": "memory-state",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "에이전트 일화 기억",
+      "titleEn": "Episodic Agent Memory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5294
+    },
+    {
+      "topicId": "asynchronous-api-job",
+      "categoryId": "api",
+      "rank": 31,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "비동기 API 작업",
+      "titleEn": "Asynchronous API Job",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5363
+    },
+    {
+      "topicId": "synchronous-api-request",
+      "categoryId": "api",
+      "rank": 32,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "동기 API 요청",
+      "titleEn": "Synchronous API Request",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5254
+    },
+    {
+      "topicId": "request-response-pattern",
+      "categoryId": "api",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "요청-응답 패턴",
+      "titleEn": "Request-Response Pattern",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5267
+    },
+    {
+      "topicId": "stateless-api",
+      "categoryId": "api",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "무상태 API",
+      "titleEn": "Stateless API",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5156
+    },
+    {
+      "topicId": "stateful-api",
+      "categoryId": "api",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "상태 유지 API",
+      "titleEn": "Stateful API",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5362
+    },
+    {
+      "topicId": "api-pagination",
+      "categoryId": "api",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "API 페이지네이션",
+      "titleEn": "API Pagination",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5223
+    },
+    {
+      "topicId": "file-upload-api",
+      "categoryId": "api",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "파일 업로드 API",
+      "titleEn": "File Upload API",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5181
+    },
+    {
+      "topicId": "api-versioning",
+      "categoryId": "api",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "API 버전 관리",
+      "titleEn": "API Versioning",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5164
+    },
+    {
+      "topicId": "api-deprecation",
+      "categoryId": "api",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "API 지원 종료",
+      "titleEn": "API Deprecation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5172
+    },
+    {
+      "topicId": "server-sent-events",
+      "categoryId": "api",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "model-api-patterns",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "서버 전송 이벤트",
+      "titleEn": "Server-Sent Events",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5316
+    },
+    {
+      "topicId": "model-search",
+      "categoryId": "ecosystem",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "hubs-registries",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 검색",
+      "titleEn": "Model Search",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5331
+    },
+    {
+      "topicId": "model-metadata",
+      "categoryId": "ecosystem",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "hubs-registries",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 메타데이터",
+      "titleEn": "Model Metadata",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5163
+    },
+    {
+      "topicId": "model-collection",
+      "categoryId": "ecosystem",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "hubs-registries",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 컬렉션",
+      "titleEn": "Model Collection",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5097
+    },
+    {
+      "topicId": "interactive-model-demo",
+      "categoryId": "ecosystem",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "hubs-registries",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "대화형 모델 데모",
+      "titleEn": "Interactive Model Demo",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5230
+    },
+    {
+      "topicId": "benchmark-registry",
+      "categoryId": "ecosystem",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "hubs-registries",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "벤치마크 레지스트리",
+      "titleEn": "Benchmark Registry",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5481
+    },
+    {
+      "topicId": "graphics-processing-unit",
+      "categoryId": "ecosystem",
+      "rank": 41,
+      "tier": "standard",
+      "subarea": "hardware-cloud",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "그래픽 처리 장치",
+      "titleEn": "Graphics Processing Unit",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5270
+    },
+    {
+      "topicId": "tensor-processing-unit",
+      "categoryId": "ecosystem",
+      "rank": 42,
+      "tier": "standard",
+      "subarea": "hardware-cloud",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "텐서 처리 장치",
+      "titleEn": "Tensor Processing Unit",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5193
+    },
+    {
+      "topicId": "neural-processing-unit",
+      "categoryId": "ecosystem",
+      "rank": 43,
+      "tier": "standard",
+      "subarea": "hardware-cloud",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "신경망 처리 장치",
+      "titleEn": "Neural Processing Unit",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5212
+    },
+    {
+      "topicId": "ai-accelerator",
+      "categoryId": "ecosystem",
+      "rank": 44,
+      "tier": "standard",
+      "subarea": "hardware-cloud",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "AI 가속기",
+      "titleEn": "AI Accelerator",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5424
+    },
+    {
+      "topicId": "cloud-ai-service",
+      "categoryId": "ecosystem",
+      "rank": 45,
+      "tier": "standard",
+      "subarea": "hardware-cloud",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "클라우드 AI 서비스",
+      "titleEn": "Cloud AI Service",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5228
+    },
+    {
+      "topicId": "swe-bench",
+      "categoryId": "evaluation",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "SWE-bench",
+      "titleEn": "SWE-bench",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5323
+    },
+    {
+      "topicId": "mteb",
+      "categoryId": "evaluation",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "MTEB",
+      "titleEn": "Massive Text Embedding Benchmark",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5411
+    },
+    {
+      "topicId": "beir-benchmark",
+      "categoryId": "evaluation",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "BEIR 벤치마크",
+      "titleEn": "Benchmarking Information Retrieval",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5232
+    },
+    {
+      "topicId": "imagenet",
+      "categoryId": "evaluation",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "ImageNet",
+      "titleEn": "ImageNet",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5461
+    },
+    {
+      "topicId": "mlperf",
+      "categoryId": "evaluation",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "MLPerf",
+      "titleEn": "MLPerf",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5461
+    },
+    {
+      "topicId": "benchmark-saturation",
+      "categoryId": "evaluation",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "벤치마크 포화",
+      "titleEn": "Benchmark Saturation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5600
+    },
+    {
+      "topicId": "dynamic-benchmark",
+      "categoryId": "evaluation",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "동적 벤치마크",
+      "titleEn": "Dynamic Benchmark",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5524
+    },
+    {
+      "topicId": "benchmark-validity",
+      "categoryId": "evaluation",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "benchmarks",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "벤치마크 타당도",
+      "titleEn": "Benchmark Validity",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5539
+    },
+    {
+      "topicId": "human-evaluation",
+      "categoryId": "evaluation",
+      "rank": 41,
+      "tier": "standard",
+      "subarea": "human-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인간 평가",
+      "titleEn": "Human Evaluation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5506
+    },
+    {
+      "topicId": "evaluation-rubric",
+      "categoryId": "evaluation",
+      "rank": 42,
+      "tier": "standard",
+      "subarea": "human-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "평가 루브릭",
+      "titleEn": "Evaluation Rubric",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5477
+    },
+    {
+      "topicId": "model-capacity",
+      "categoryId": "foundations",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 용량",
+      "titleEn": "Model Capacity",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5773
+    },
+    {
+      "topicId": "hypothesis",
+      "categoryId": "foundations",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "가설",
+      "titleEn": "Hypothesis",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5673
+    },
+    {
+      "topicId": "hypothesis-space",
+      "categoryId": "foundations",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "가설 공간",
+      "titleEn": "Hypothesis Space",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5287
+    },
+    {
+      "topicId": "inductive-bias",
+      "categoryId": "foundations",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "귀납적 편향",
+      "titleEn": "Inductive Bias",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5311
+    },
+    {
+      "topicId": "generalization",
+      "categoryId": "foundations",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "일반화",
+      "titleEn": "Generalization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5548
+    },
+    {
+      "topicId": "train-validation-test-split",
+      "categoryId": "foundations",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "학습·검증·테스트 분할",
+      "titleEn": "Train-Validation-Test Split",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5305
+    },
+    {
+      "topicId": "data-distribution",
+      "categoryId": "foundations",
+      "rank": 41,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "데이터 분포",
+      "titleEn": "Data Distribution",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5831
+    },
+    {
+      "topicId": "data-preprocessing",
+      "categoryId": "foundations",
+      "rank": 42,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "데이터 전처리",
+      "titleEn": "Data Preprocessing",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5626
+    },
+    {
+      "topicId": "feature-engineering",
+      "categoryId": "foundations",
+      "rank": 43,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "특성 공학",
+      "titleEn": "Feature Engineering",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5347
+    },
+    {
+      "topicId": "data-leakage",
+      "categoryId": "foundations",
+      "rank": 44,
+      "tier": "standard",
+      "subarea": "data-model-basics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "데이터 누수",
+      "titleEn": "Data Leakage",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5133
+    },
+    {
+      "topicId": "streaming-generation",
+      "categoryId": "inference",
+      "rank": 32,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "스트리밍 생성",
+      "titleEn": "Streaming Generation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5378
+    },
+    {
+      "topicId": "time-to-first-token",
+      "categoryId": "inference",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "첫 토큰 시간",
+      "titleEn": "Time to First Token",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5537
+    },
+    {
+      "topicId": "inter-token-latency",
+      "categoryId": "inference",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "토큰 간 지연 시간",
+      "titleEn": "Inter-Token Latency",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5334
+    },
+    {
+      "topicId": "prefill-phase",
+      "categoryId": "inference",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "프리필 단계",
+      "titleEn": "Prefill Phase",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5530
+    },
+    {
+      "topicId": "decode-phase",
+      "categoryId": "inference",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "디코드 단계",
+      "titleEn": "Decode Phase",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5532
+    },
+    {
+      "topicId": "request-queue",
+      "categoryId": "inference",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "요청 대기열",
+      "titleEn": "Request Queue",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5490
+    },
+    {
+      "topicId": "admission-control",
+      "categoryId": "inference",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "수락 제어",
+      "titleEn": "Admission Control",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5559
+    },
+    {
+      "topicId": "serverless-inference",
+      "categoryId": "inference",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "서버리스 추론",
+      "titleEn": "Serverless Inference",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5394
+    },
+    {
+      "topicId": "edge-inference",
+      "categoryId": "inference",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "serving",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "엣지 추론",
+      "titleEn": "Edge Inference",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5517
+    },
+    {
+      "topicId": "continuous-batching",
+      "categoryId": "inference",
+      "rank": 43,
+      "tier": "standard",
+      "subarea": "cache-batching",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "연속 배칭",
+      "titleEn": "Continuous Batching",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5341
+    },
+    {
+      "topicId": "neural-scaling-law",
+      "categoryId": "llm",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "신경망 스케일링 법칙",
+      "titleEn": "Neural Scaling Law",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5649
+    },
+    {
+      "topicId": "compute-optimal-training",
+      "categoryId": "llm",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "계산 최적 학습",
+      "titleEn": "Compute-Optimal Training",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5364
+    },
+    {
+      "topicId": "parameter-count",
+      "categoryId": "llm",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "파라미터 수",
+      "titleEn": "Parameter Count",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5684
+    },
+    {
+      "topicId": "model-size",
+      "categoryId": "llm",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 크기",
+      "titleEn": "Model Size",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5463
+    },
+    {
+      "topicId": "training-compute",
+      "categoryId": "llm",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "학습 계산량",
+      "titleEn": "Training Compute",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5492
+    },
+    {
+      "topicId": "inference-compute",
+      "categoryId": "llm",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "추론 계산량",
+      "titleEn": "Inference Compute",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5510
+    },
+    {
+      "topicId": "dense-language-model",
+      "categoryId": "llm",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "밀집 언어 모델",
+      "titleEn": "Dense Language Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5068
+    },
+    {
+      "topicId": "sparse-language-model",
+      "categoryId": "llm",
+      "rank": 41,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "희소 언어 모델",
+      "titleEn": "Sparse Language Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5360
+    },
+    {
+      "topicId": "expert-routing",
+      "categoryId": "llm",
+      "rank": 42,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "전문가 라우팅",
+      "titleEn": "Expert Routing",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5515
+    },
+    {
+      "topicId": "expert-capacity-factor",
+      "categoryId": "llm",
+      "rank": 43,
+      "tier": "standard",
+      "subarea": "scaling",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "전문가 용량 계수",
+      "titleEn": "Expert Capacity Factor",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5165
+    },
+    {
+      "topicId": "convex-function",
+      "categoryId": "mathematics",
+      "rank": 32,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "볼록 함수",
+      "titleEn": "Convex Function",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5470
+    },
+    {
+      "topicId": "objective-function",
+      "categoryId": "mathematics",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "목적 함수",
+      "titleEn": "Objective Function",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5456
+    },
+    {
+      "topicId": "constrained-optimization",
+      "categoryId": "mathematics",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "제약 최적화",
+      "titleEn": "Constrained Optimization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5555
+    },
+    {
+      "topicId": "lagrange-multiplier",
+      "categoryId": "mathematics",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "라그랑주 승수법",
+      "titleEn": "Lagrange Multiplier",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5565
+    },
+    {
+      "topicId": "line-search",
+      "categoryId": "mathematics",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "선 탐색",
+      "titleEn": "Line Search",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5467
+    },
+    {
+      "topicId": "newtons-method",
+      "categoryId": "mathematics",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "뉴턴 방법",
+      "titleEn": "Newton's Method",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5462
+    },
+    {
+      "topicId": "quasi-newton-method",
+      "categoryId": "mathematics",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "준뉴턴 방법",
+      "titleEn": "Quasi-Newton Method",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5211
+    },
+    {
+      "topicId": "saddle-point",
+      "categoryId": "mathematics",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "안장점",
+      "titleEn": "Saddle Point",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5625
+    },
+    {
+      "topicId": "local-global-optimum",
+      "categoryId": "mathematics",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "calculus-optimization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "국소 최적점과 전역 최적점",
+      "titleEn": "Local and Global Optimum",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5685
+    },
+    {
+      "topicId": "random-variable",
+      "categoryId": "mathematics",
+      "rank": 44,
+      "tier": "standard",
+      "subarea": "probability-statistics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "확률변수",
+      "titleEn": "Random Variable",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5656
+    },
+    {
+      "topicId": "mel-spectrogram",
+      "categoryId": "multimodal",
+      "rank": 31,
+      "tier": "standard",
+      "subarea": "audio-speech",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "멜 스펙트로그램",
+      "titleEn": "Mel Spectrogram",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5341
+    },
+    {
+      "topicId": "neural-vocoder",
+      "categoryId": "multimodal",
+      "rank": 32,
+      "tier": "standard",
+      "subarea": "audio-speech",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "신경 보코더",
+      "titleEn": "Neural Vocoder",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5547
+    },
+    {
+      "topicId": "text-audio-model",
+      "categoryId": "multimodal",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "audio-speech",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "텍스트-오디오 모델",
+      "titleEn": "Text-Audio Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5165
+    },
+    {
+      "topicId": "audio-captioning",
+      "categoryId": "multimodal",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "audio-speech",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "오디오 캡셔닝",
+      "titleEn": "Audio Captioning",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5803
+    },
+    {
+      "topicId": "speech-language-model",
+      "categoryId": "multimodal",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "audio-speech",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "음성 언어 모델",
+      "titleEn": "Speech Language Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5409
+    },
+    {
+      "topicId": "video-understanding",
+      "categoryId": "multimodal",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "video",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "비디오 이해",
+      "titleEn": "Video Understanding",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5324
+    },
+    {
+      "topicId": "video-generation",
+      "categoryId": "multimodal",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "video",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "비디오 생성",
+      "titleEn": "Video Generation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5565
+    },
+    {
+      "topicId": "video-classification",
+      "categoryId": "multimodal",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "video",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "비디오 분류",
+      "titleEn": "Video Classification",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5832
+    },
+    {
+      "topicId": "action-recognition",
+      "categoryId": "multimodal",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "video",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "행동 인식",
+      "titleEn": "Action Recognition",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5504
+    },
+    {
+      "topicId": "temporal-modeling",
+      "categoryId": "multimodal",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "video",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "시간적 모델링",
+      "titleEn": "Temporal Modeling",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5354
+    },
+    {
+      "topicId": "energy-based-model",
+      "categoryId": "neural",
+      "rank": 31,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "에너지 기반 모델",
+      "titleEn": "Energy-Based Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5323
+    },
+    {
+      "topicId": "hopfield-network",
+      "categoryId": "neural",
+      "rank": 32,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "홉필드 네트워크",
+      "titleEn": "Hopfield Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5488
+    },
+    {
+      "topicId": "graph-neural-network",
+      "categoryId": "neural",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "그래프 신경망",
+      "titleEn": "Graph Neural Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5281
+    },
+    {
+      "topicId": "graph-convolutional-network",
+      "categoryId": "neural",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "그래프 합성곱 신경망",
+      "titleEn": "Graph Convolutional Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5145
+    },
+    {
+      "topicId": "graph-attention-network",
+      "categoryId": "neural",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "그래프 어텐션 네트워크",
+      "titleEn": "Graph Attention Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5361
+    },
+    {
+      "topicId": "siamese-network",
+      "categoryId": "neural",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "샴 신경망",
+      "titleEn": "Siamese Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5663
+    },
+    {
+      "topicId": "capsule-network",
+      "categoryId": "neural",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "캡슐 네트워크",
+      "titleEn": "Capsule Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5473
+    },
+    {
+      "topicId": "neural-ordinary-differential-equation",
+      "categoryId": "neural",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "신경 상미분방정식",
+      "titleEn": "Neural Ordinary Differential Equation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5509
+    },
+    {
+      "topicId": "spiking-neural-network",
+      "categoryId": "neural",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "스파이킹 신경망",
+      "titleEn": "Spiking Neural Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5600
+    },
+    {
+      "topicId": "memory-network",
+      "categoryId": "neural",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "메모리 네트워크",
+      "titleEn": "Memory Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5470
+    },
+    {
+      "topicId": "distance-metric-selection",
+      "categoryId": "retrieval",
+      "rank": 29,
+      "tier": "standard",
+      "subarea": "indexes-vector-db",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "거리 지표 선택",
+      "titleEn": "Distance Metric Selection",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5397
+    },
+    {
+      "topicId": "index-building",
+      "categoryId": "retrieval",
+      "rank": 30,
+      "tier": "standard",
+      "subarea": "indexes-vector-db",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인덱스 구축",
+      "titleEn": "Index Building",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5291
+    },
+    {
+      "topicId": "incremental-index-update",
+      "categoryId": "retrieval",
+      "rank": 31,
+      "tier": "standard",
+      "subarea": "indexes-vector-db",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "증분 인덱스 갱신",
+      "titleEn": "Incremental Index Update",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5431
+    },
+    {
+      "topicId": "index-sharding",
+      "categoryId": "retrieval",
+      "rank": 32,
+      "tier": "standard",
+      "subarea": "indexes-vector-db",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인덱스 샤딩",
+      "titleEn": "Index Sharding",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5267
+    },
+    {
+      "topicId": "index-replication",
+      "categoryId": "retrieval",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "indexes-vector-db",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인덱스 복제",
+      "titleEn": "Index Replication",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5509
+    },
+    {
+      "topicId": "metadata-filtering",
+      "categoryId": "retrieval",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "indexes-vector-db",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "메타데이터 필터링",
+      "titleEn": "Metadata Filtering",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5534
+    },
+    {
+      "topicId": "recall-latency-tradeoff",
+      "categoryId": "retrieval",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "indexes-vector-db",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "재현율-지연 시간 절충",
+      "titleEn": "Recall-Latency Tradeoff",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5483
+    },
+    {
+      "topicId": "keyword-search",
+      "categoryId": "retrieval",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "retrieval-methods",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "키워드 검색",
+      "titleEn": "Keyword Search",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5479
+    },
+    {
+      "topicId": "bm25",
+      "categoryId": "retrieval",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "retrieval-methods",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "BM25",
+      "titleEn": "Best Matching 25",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5263
+    },
+    {
+      "topicId": "lexical-retrieval",
+      "categoryId": "retrieval",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "retrieval-methods",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "어휘 검색",
+      "titleEn": "Lexical Retrieval",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5239
+    },
+    {
+      "topicId": "ai-control-problem",
+      "categoryId": "safety",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "alignment-misuse",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "AI 통제 문제",
+      "titleEn": "AI Control Problem",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5406
+    },
+    {
+      "topicId": "emergent-misalignment",
+      "categoryId": "safety",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "alignment-misuse",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "창발적 오정렬",
+      "titleEn": "Emergent Misalignment",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5416
+    },
+    {
+      "topicId": "alignment-tax",
+      "categoryId": "safety",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "alignment-misuse",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "정렬 비용",
+      "titleEn": "Alignment Tax",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5509
+    },
+    {
+      "topicId": "personally-identifiable-information",
+      "categoryId": "safety",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "privacy",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "개인 식별 정보",
+      "titleEn": "Personally Identifiable Information",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5294
+    },
+    {
+      "topicId": "anonymization",
+      "categoryId": "safety",
+      "rank": 38,
+      "tier": "standard",
+      "subarea": "privacy",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "익명화",
+      "titleEn": "Anonymization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5235
+    },
+    {
+      "topicId": "pseudonymization",
+      "categoryId": "safety",
+      "rank": 39,
+      "tier": "standard",
+      "subarea": "privacy",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "가명화",
+      "titleEn": "Pseudonymization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5525
+    },
+    {
+      "topicId": "differential-privacy",
+      "categoryId": "safety",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "privacy",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "차등 개인정보 보호",
+      "titleEn": "Differential Privacy",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5184
+    },
+    {
+      "topicId": "data-minimization",
+      "categoryId": "safety",
+      "rank": 41,
+      "tier": "standard",
+      "subarea": "privacy",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "데이터 최소화",
+      "titleEn": "Data Minimization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5299
+    },
+    {
+      "topicId": "data-retention",
+      "categoryId": "safety",
+      "rank": 42,
+      "tier": "standard",
+      "subarea": "privacy",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "데이터 보존",
+      "titleEn": "Data Retention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5542
+    },
+    {
+      "topicId": "right-to-deletion",
+      "categoryId": "safety",
+      "rank": 43,
+      "tier": "standard",
+      "subarea": "privacy",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "삭제권",
+      "titleEn": "Right to Deletion",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5537
+    },
+    {
+      "topicId": "distillation-loss",
+      "categoryId": "training",
+      "rank": 25,
+      "tier": "standard",
+      "subarea": "objectives",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "증류 손실",
+      "titleEn": "Distillation Loss",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5743
+    },
+    {
+      "topicId": "preference-loss",
+      "categoryId": "training",
+      "rank": 26,
+      "tier": "standard",
+      "subarea": "objectives",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "선호 손실",
+      "titleEn": "Preference Loss",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5263
+    },
+    {
+      "topicId": "policy-objective",
+      "categoryId": "training",
+      "rank": 27,
+      "tier": "standard",
+      "subarea": "objectives",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "정책 목적 함수",
+      "titleEn": "Policy Objective",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5311
+    },
+    {
+      "topicId": "value-function-loss",
+      "categoryId": "training",
+      "rank": 28,
+      "tier": "standard",
+      "subarea": "objectives",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "가치 함수 손실",
+      "titleEn": "Value Function Loss",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5327
+    },
+    {
+      "topicId": "reconstruction-loss",
+      "categoryId": "training",
+      "rank": 29,
+      "tier": "standard",
+      "subarea": "objectives",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "복원 손실",
+      "titleEn": "Reconstruction Loss",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5325
+    },
+    {
+      "topicId": "diffusion-training-objective",
+      "categoryId": "training",
+      "rank": 30,
+      "tier": "standard",
+      "subarea": "objectives",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "확산 학습 목표",
+      "titleEn": "Diffusion Training Objective",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5249
+    },
+    {
+      "topicId": "full-parameter-fine-tuning",
+      "categoryId": "training",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "sft-instruction",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "전체 파라미터 미세조정",
+      "titleEn": "Full-Parameter Fine-Tuning",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5283
+    },
+    {
+      "topicId": "domain-adaptation",
+      "categoryId": "training",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "sft-instruction",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "도메인 적응",
+      "titleEn": "Domain Adaptation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5111
+    },
+    {
+      "topicId": "task-adaptation",
+      "categoryId": "training",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "sft-instruction",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "과제 적응",
+      "titleEn": "Task Adaptation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5358
+    },
+    {
+      "topicId": "continued-pretraining",
+      "categoryId": "training",
+      "rank": 37,
+      "tier": "standard",
+      "subarea": "sft-instruction",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "연속 사전학습",
+      "titleEn": "Continued Pretraining",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5182
+    },
+    {
+      "topicId": "token-embedding-layer",
+      "categoryId": "transformer",
+      "rank": 29,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "토큰 임베딩층",
+      "titleEn": "Token Embedding Layer",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5320
+    },
+    {
+      "topicId": "output-projection",
+      "categoryId": "transformer",
+      "rank": 30,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "출력 투영",
+      "titleEn": "Output Projection",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5524
+    },
+    {
+      "topicId": "language-modeling-head",
+      "categoryId": "transformer",
+      "rank": 31,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "언어 모델링 헤드",
+      "titleEn": "Language Modeling Head",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5152
+    },
+    {
+      "topicId": "padding-mask",
+      "categoryId": "transformer",
+      "rank": 33,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "패딩 마스크",
+      "titleEn": "Padding Mask",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5575
+    },
+    {
+      "topicId": "attention-mask",
+      "categoryId": "transformer",
+      "rank": 34,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "어텐션 마스크",
+      "titleEn": "Attention Mask",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5494
+    },
+    {
+      "topicId": "key-value-projection",
+      "categoryId": "transformer",
+      "rank": 35,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "키·값 투영",
+      "titleEn": "Key-Value Projection",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5101
+    },
+    {
+      "topicId": "transformer-block",
+      "categoryId": "transformer",
+      "rank": 36,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "트랜스포머 블록",
+      "titleEn": "Transformer Block",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5593
+    },
+    {
+      "topicId": "normalization-placement",
+      "categoryId": "transformer",
+      "rank": 40,
+      "tier": "standard",
+      "subarea": "block-components",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "정규화 배치",
+      "titleEn": "Normalization Placement",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5366
+    },
+    {
+      "topicId": "encoder-only-transformer",
+      "categoryId": "transformer",
+      "rank": 43,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인코더 전용 트랜스포머",
+      "titleEn": "Encoder-Only Transformer",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5445
+    },
+    {
+      "topicId": "prefix-language-model",
+      "categoryId": "transformer",
+      "rank": 44,
+      "tier": "standard",
+      "subarea": "architectures",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "프리픽스 언어 모델",
+      "titleEn": "Prefix Language Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5165
+    }
+  ]
+}
