@@ -90,6 +90,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [행렬](/wiki/matrix/)
 - [확률분포](/wiki/probability-distribution/)
 - [소프트맥스](/wiki/softmax/)
+- [생성 온도](/wiki/temperature/)
 - [텐서](/wiki/tensor/)
 
 ## 이 문서를 포함하는 코스

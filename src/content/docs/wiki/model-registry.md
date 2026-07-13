@@ -113,7 +113,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+- [모델 버전](/wiki/model-version/)
 
 ## 이 문서를 포함하는 코스
 

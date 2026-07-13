@@ -113,6 +113,7 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 
 ## 이 문서를 가리키는 문서
 
+- [밀집 임베딩](/wiki/dense-embedding/)
 - [임베딩](/wiki/embedding/)
 - [의미 검색](/wiki/semantic-search/)
 - [벡터 데이터베이스](/wiki/vector-database/)
@@ -126,7 +127,7 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 ## 참고 문헌
 
 <span id="reference-1"></span>1. [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) — paper
-<span id="reference-2"></span>2. [Sentence Transformers: Semantic Textual Similarity](https://sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html) — documentation
+<span id="reference-2"></span>2. [Sentence Transformers: Semantic Textual Similarity](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html) — documentation
 <span id="reference-3"></span>3. [Word embedding — Wikipedia](https://en.wikipedia.org/wiki/Word_embedding) — encyclopedia
 
 ## 코스에서 계속 읽기

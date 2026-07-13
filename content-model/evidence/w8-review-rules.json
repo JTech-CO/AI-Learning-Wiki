@@ -1,0 +1,582 @@
+{
+  "version": "W8-2026-07-13",
+  "reviewedAt": "2026-07-13",
+  "policy": {
+    "sentenceSegmentation": "Intl.Segmenter ko sentence",
+    "rawClaimTextStored": false,
+    "bodyHashLocked": true,
+    "publicationRequiresAllClaimsAccepted": true,
+    "minimumIndependentSourceFamilies": 3,
+    "sectionClassifications": {
+      "overview": "source-supported",
+      "scope": "provenance-note",
+      "mechanism": "source-supported",
+      "structure": "editorial-synthesis",
+      "applications": "editorial-synthesis",
+      "limitations": "source-supported",
+      "distinctions": "editorial-synthesis",
+      "worked-example": "editorial-guidance",
+      "practice": "editorial-guidance"
+    },
+    "evidenceSetBySection": {
+      "overview": "concept",
+      "scope": "provenance",
+      "mechanism": "concept",
+      "structure": "implementation",
+      "applications": "implementation",
+      "limitations": "limitations",
+      "distinctions": "concept",
+      "worked-example": "implementation",
+      "practice": "implementation"
+    }
+  },
+  "articles": [
+    {
+      "articleId": "symbolic-ai",
+      "categoryId": "foundations",
+      "reviewNote": "상징적 인공지능의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Symbolic Artificial Intelligence"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Symbolic Artificial Intelligence"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Symbolic Artificial Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Symbolic Artificial Intelligence"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Symbolic Artificial Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Symbolic Artificial Intelligence"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "matrix-multiplication",
+      "categoryId": "mathematics",
+      "reviewNote": "행렬 곱셈의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Matrix Multiplication"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Matrix Multiplication"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Matrix Multiplication"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Matrix Multiplication"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Matrix Multiplication"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Matrix Multiplication"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "weight",
+      "categoryId": "neural",
+      "reviewNote": "가중치의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Weight"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Weight"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Weight"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Weight"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Weight"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Weight"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "query-key-value",
+      "categoryId": "transformer",
+      "reviewNote": "쿼리·키·값의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Query, Key, and Value"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Query, Key, and Value"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Query, Key, and Value"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Query, Key, and Value"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Query, Key, and Value"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Query, Key, and Value"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "next-token-prediction",
+      "categoryId": "llm",
+      "reviewNote": "다음 토큰 예측의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Next-Token Prediction"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Next-Token Prediction"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Next-Token Prediction"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Next-Token Prediction"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Next-Token Prediction"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Next-Token Prediction"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "data-augmentation",
+      "categoryId": "training",
+      "reviewNote": "데이터 증강의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Data Augmentation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Data Augmentation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Data Augmentation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Data Augmentation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Data Augmentation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Data Augmentation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "temperature",
+      "categoryId": "inference",
+      "reviewNote": "생성 온도의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Temperature"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Temperature"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Temperature"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Temperature"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Temperature"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Temperature"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "dense-embedding",
+      "categoryId": "retrieval",
+      "reviewNote": "밀집 임베딩의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Dense Embedding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Dense Embedding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Dense Embedding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Dense Embedding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Dense Embedding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Dense Embedding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "http-method",
+      "categoryId": "api",
+      "reviewNote": "HTTP 메서드의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to HTTP Method"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for HTTP Method"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for HTTP Method"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for HTTP Method"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for HTTP Method"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for HTTP Method"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "react-agent",
+      "categoryId": "agents",
+      "reviewNote": "ReAct 에이전트의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to ReAct Agent"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for ReAct Agent"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for ReAct Agent"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for ReAct Agent"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for ReAct Agent"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for ReAct Agent"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "image-classification",
+      "categoryId": "multimodal",
+      "reviewNote": "이미지 분류의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Image Classification"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Image Classification"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Image Classification"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Image Classification"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Image Classification"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Image Classification"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "f1-score",
+      "categoryId": "evaluation",
+      "reviewNote": "F1 점수의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to F1 Score"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for F1 Score"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for F1 Score"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for F1 Score"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for F1 Score"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for F1 Score"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "guardrail",
+      "categoryId": "safety",
+      "reviewNote": "AI 가드레일의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to AI Guardrail"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for AI Guardrail"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for AI Guardrail"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for AI Guardrail"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for AI Guardrail"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for AI Guardrail"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-version",
+      "categoryId": "ecosystem",
+      "reviewNote": "모델 버전의 정의·작동 원리·구성·적용 한계와 운영 검증 절차를 1차 자료, 공식 문서, 외부 백과로 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definition, mechanism and scope relevant to Model Version"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 3,
+            "locator": "General terminology, history and related concepts for Model Version"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 1,
+            "locator": "Method, system structure and evaluation conditions for Model Version"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Official interface, workflow and implementation constraints for Model Version"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Assumptions, evaluation boundaries and reported limitations for Model Version"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Operational constraints, edge cases and validation guidance for Model Version"
+          }
+        ]
+      }
+    }
+  ],
+  "reviewer": "Codex W8 evidence review"
+}

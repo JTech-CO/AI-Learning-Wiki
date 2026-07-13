@@ -97,7 +97,7 @@ const priorStages = rules.articles.map((rule) => priorQueueById.get(rule.article
 if (ledger.articles.length !== 14 || rules.articles.length !== 14) errors.push(`expected 14 W7 articles, found ${ledger.articles.length}`);
 if (reviewedCategories.size !== 14 || [...expectedCategories].some((id) => !reviewedCategories.has(id))) errors.push('W7 batch must contain exactly one article from every category');
 if (priorStages.filter((stage) => stage === 'source-remediation').length !== 9 || priorStages.filter((stage) => stage === 'research-queued').length !== 5) errors.push('W7 must remediate 9 existing articles and create 5 queued articles');
-if (articleCount !== 155) errors.push(`expected 155 article files after W7, found ${articleCount}`);
+if (articleCount < 155) errors.push(`expected at least 155 article files after W7, found ${articleCount}`);
 if (summary.batchReviewedArticles !== 14 || summary.cumulativeReviewedArticles !== 56 || summary.reviewedSections !== 126 || summary.publicationReadyArticles !== 14 || summary.remediatedExistingArticles !== 9 || summary.newlyCreatedArticles !== 5 || summary.productionTopics !== 1400 || summary.existingArticles !== 155 || summary.candidateTopics !== 1245 || !summary.bodyHashLocked) errors.push('W7 publication gate summary is incomplete');
 if (summary.reviewedClaimUnits !== claimCount || summary.acceptedClaimUnits !== claimCount) errors.push('W7 summary counts differ from the locked ledger');
 

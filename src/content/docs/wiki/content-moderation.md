@@ -86,7 +86,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [편향과 공정성](/wiki/bias-fairness/)
-- [가드레일](/wiki/guardrail/)
 - [탈옥 공격](/wiki/jailbreak/)
 - [개인정보 보호](/wiki/privacy/)
 

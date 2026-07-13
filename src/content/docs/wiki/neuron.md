@@ -105,7 +105,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [신경망 층](/wiki/layer/)
 - [신경망](/wiki/neural-network/)
-- [가중치](/wiki/weight/)
 
 ## 이 문서를 포함하는 코스
 

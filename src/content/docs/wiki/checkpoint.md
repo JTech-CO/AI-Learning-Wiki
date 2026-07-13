@@ -102,8 +102,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [AI 정렬](/wiki/alignment/)
-- [데이터 증강](/wiki/data-augmentation/)
 - [모델 레지스트리](/wiki/model-registry/)
+- [모델 버전](/wiki/model-version/)
+- [가중치](/wiki/weight/)
 
 ## 이 문서를 포함하는 코스
 

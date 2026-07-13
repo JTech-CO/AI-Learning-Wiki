@@ -101,8 +101,10 @@ _해당 문서가 없습니다._
 ## 이 문서를 가리키는 문서
 
 - [어텐션](/wiki/attention/)
+- [밀집 임베딩](/wiki/dense-embedding/)
 - [임베딩](/wiki/embedding/)
 - [행렬](/wiki/matrix/)
+- [행렬 곱셈](/wiki/matrix-multiplication/)
 - [인공 뉴런](/wiki/neuron/)
 - [스칼라](/wiki/scalar/)
 - [텐서](/wiki/tensor/)

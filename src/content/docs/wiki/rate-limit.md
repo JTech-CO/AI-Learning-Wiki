@@ -86,6 +86,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [API 키](/wiki/api-key/)
+- [HTTP 메서드](/wiki/http-method/)
 - [HTTP 응답](/wiki/http-response/)
 - [JSON](/wiki/json/)
 - [스트리밍 응답](/wiki/streaming-response/)

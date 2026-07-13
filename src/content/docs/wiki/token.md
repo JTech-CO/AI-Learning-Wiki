@@ -87,6 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [하이퍼파라미터](/wiki/hyperparameter/)
 - [언어 모델](/wiki/language-model/)
+- [다음 토큰 예측](/wiki/next-token-prediction/)
 - [파라미터](/wiki/parameter/)
 - [토큰화](/wiki/tokenization/)
 - [토크나이저](/wiki/tokenizer/)

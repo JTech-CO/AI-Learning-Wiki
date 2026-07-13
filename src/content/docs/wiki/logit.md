@@ -104,7 +104,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [추론](/wiki/inference/)
 - [소프트맥스](/wiki/softmax/)
-- [생성 온도](/wiki/temperature/)
 
 ## 이 문서를 포함하는 코스
 

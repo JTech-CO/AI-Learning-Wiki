@@ -114,6 +114,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [정확도](/wiki/accuracy/)
+- [F1 점수](/wiki/f1-score/)
 - [LLM 심사자](/wiki/llm-as-a-judge/)
 - [평가 지표](/wiki/metric/)
 - [관측성](/wiki/observability/)

@@ -104,6 +104,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [임베딩 모델](/wiki/embedding-model/)
 - [대규모 언어 모델](/wiki/large-language-model/)
+- [다음 토큰 예측](/wiki/next-token-prediction/)
 - [소규모 언어 모델](/wiki/small-language-model/)
 - [음성 인식](/wiki/speech-recognition/)
 

@@ -108,6 +108,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [딥러닝](/wiki/deep-learning/)
 - [생성형 인공지능](/wiki/generative-ai/)
+- [기호주의 인공지능](/wiki/symbolic-ai/)
 
 ## 이 문서를 포함하는 코스
 

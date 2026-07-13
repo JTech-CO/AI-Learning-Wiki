@@ -115,6 +115,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [추론](/wiki/inference/)
 - [로짓](/wiki/logit/)
+- [행렬 곱셈](/wiki/matrix-multiplication/)
+- [다음 토큰 예측](/wiki/next-token-prediction/)
+- [쿼리·키·값](/wiki/query-key-value/)
 - [생성 온도](/wiki/temperature/)
 - [Top-k 샘플링](/wiki/top-k-sampling/)
 

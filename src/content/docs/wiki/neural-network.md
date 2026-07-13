@@ -102,8 +102,10 @@ _해당 문서가 없습니다._
 
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [딥러닝](/wiki/deep-learning/)
+- [이미지 분류](/wiki/image-classification/)
 - [신경망 층](/wiki/layer/)
 - [인공 뉴런](/wiki/neuron/)
+- [기호주의 인공지능](/wiki/symbolic-ai/)
 
 ## 이 문서를 포함하는 코스
 

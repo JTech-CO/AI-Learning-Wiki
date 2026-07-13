@@ -117,7 +117,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [인간 참여형 제어](/wiki/human-in-the-loop/)
 - [모델 레지스트리](/wiki/model-registry/)
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
+- [ReAct 에이전트](/wiki/react-agent/)
 - [상태 관리](/wiki/state-management/)
+- [기호주의 인공지능](/wiki/symbolic-ai/)
 
 ## 이 문서를 포함하는 코스
 

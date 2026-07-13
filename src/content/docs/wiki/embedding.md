@@ -102,6 +102,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [밀집 임베딩](/wiki/dense-embedding/)
 - [임베딩 모델](/wiki/embedding-model/)
 - [벡터 데이터베이스](/wiki/vector-database/)
 

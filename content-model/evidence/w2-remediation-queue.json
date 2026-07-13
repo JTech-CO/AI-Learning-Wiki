@@ -1,6 +1,6 @@
 {
   "version": "W2-2026-07-13",
-  "generatedAt": "2026-07-13T10:50:16.641Z",
+  "generatedAt": "2026-07-13T13:42:41.586Z",
   "queue": [
     {
       "articleId": "approximate-nearest-neighbor",
@@ -79,37 +79,8 @@
       "reviewDueAt": "2028-07-11T00:00:00.000Z"
     },
     {
-      "articleId": "data-augmentation",
-      "categoryId": "training",
-      "tier": "core",
-      "gaps": [
-        "source-diversity",
-        "manual-claim-review"
-      ],
-      "independentFamilies": 2,
-      "primaryCandidates": 1,
-      "encyclopediaFamilies": 1,
-      "readyForManualClaimReview": false,
-      "reviewDueAt": "2028-07-11T00:00:00.000Z"
-    },
-    {
       "articleId": "greedy-decoding",
       "categoryId": "inference",
-      "tier": "core",
-      "gaps": [
-        "source-diversity",
-        "encyclopedia-source",
-        "manual-claim-review"
-      ],
-      "independentFamilies": 1,
-      "primaryCandidates": 1,
-      "encyclopediaFamilies": 0,
-      "readyForManualClaimReview": false,
-      "reviewDueAt": "2028-07-11T00:00:00.000Z"
-    },
-    {
-      "articleId": "guardrail",
-      "categoryId": "safety",
       "tier": "core",
       "gaps": [
         "source-diversity",
@@ -183,36 +154,6 @@
       "reviewDueAt": "2028-07-11T00:00:00.000Z"
     },
     {
-      "articleId": "next-token-prediction",
-      "categoryId": "llm",
-      "tier": "core",
-      "gaps": [
-        "source-diversity",
-        "encyclopedia-source",
-        "manual-claim-review"
-      ],
-      "independentFamilies": 1,
-      "primaryCandidates": 1,
-      "encyclopediaFamilies": 0,
-      "readyForManualClaimReview": false,
-      "reviewDueAt": "2028-07-11T00:00:00.000Z"
-    },
-    {
-      "articleId": "query-key-value",
-      "categoryId": "transformer",
-      "tier": "core",
-      "gaps": [
-        "source-diversity",
-        "encyclopedia-source",
-        "manual-claim-review"
-      ],
-      "independentFamilies": 1,
-      "primaryCandidates": 1,
-      "encyclopediaFamilies": 0,
-      "readyForManualClaimReview": false,
-      "reviewDueAt": "2028-07-11T00:00:00.000Z"
-    },
-    {
       "articleId": "self-supervised-learning",
       "categoryId": "foundations",
       "tier": "core",
@@ -239,21 +180,6 @@
       "independentFamilies": 2,
       "primaryCandidates": 0,
       "encyclopediaFamilies": 1,
-      "readyForManualClaimReview": false,
-      "reviewDueAt": "2028-07-11T00:00:00.000Z"
-    },
-    {
-      "articleId": "temperature",
-      "categoryId": "inference",
-      "tier": "core",
-      "gaps": [
-        "source-diversity",
-        "encyclopedia-source",
-        "manual-claim-review"
-      ],
-      "independentFamilies": 1,
-      "primaryCandidates": 1,
-      "encyclopediaFamilies": 0,
       "readyForManualClaimReview": false,
       "reviewDueAt": "2028-07-11T00:00:00.000Z"
     },
@@ -341,21 +267,6 @@
       ],
       "independentFamilies": 2,
       "primaryCandidates": 1,
-      "encyclopediaFamilies": 1,
-      "readyForManualClaimReview": false,
-      "reviewDueAt": "2028-07-11T00:00:00.000Z"
-    },
-    {
-      "articleId": "weight",
-      "categoryId": "neural",
-      "tier": "core",
-      "gaps": [
-        "source-diversity",
-        "primary-source",
-        "manual-claim-review"
-      ],
-      "independentFamilies": 2,
-      "primaryCandidates": 0,
       "encyclopediaFamilies": 1,
       "readyForManualClaimReview": false,
       "reviewDueAt": "2028-07-11T00:00:00.000Z"
@@ -1618,6 +1529,19 @@
       "reviewDueAt": "2028-07-12T00:00:00.000Z"
     },
     {
+      "articleId": "data-augmentation",
+      "categoryId": "training",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
       "articleId": "deep-learning",
       "categoryId": "foundations",
       "tier": "core",
@@ -1626,6 +1550,19 @@
       ],
       "independentFamilies": 3,
       "primaryCandidates": 1,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
+      "articleId": "dense-embedding",
+      "categoryId": "retrieval",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
       "encyclopediaFamilies": 1,
       "readyForManualClaimReview": true,
       "reviewDueAt": "2028-07-12T00:00:00.000Z"
@@ -1670,6 +1607,45 @@
       "reviewDueAt": "2028-07-11T00:00:00.000Z"
     },
     {
+      "articleId": "f1-score",
+      "categoryId": "evaluation",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
+      "articleId": "guardrail",
+      "categoryId": "safety",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2027-01-09T00:00:00.000Z"
+    },
+    {
+      "articleId": "http-method",
+      "categoryId": "api",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2027-01-09T00:00:00.000Z"
+    },
+    {
       "articleId": "http-request",
       "categoryId": "api",
       "tier": "core",
@@ -1685,6 +1661,19 @@
     {
       "articleId": "http-response",
       "categoryId": "api",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
+      "articleId": "image-classification",
+      "categoryId": "multimodal",
       "tier": "core",
       "gaps": [
         "manual-claim-review"
@@ -1813,6 +1802,19 @@
       "reviewDueAt": "2028-07-12T00:00:00.000Z"
     },
     {
+      "articleId": "matrix-multiplication",
+      "categoryId": "mathematics",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 1,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
       "articleId": "metric",
       "categoryId": "evaluation",
       "tier": "core",
@@ -1865,6 +1867,19 @@
       "reviewDueAt": "2027-01-09T00:00:00.000Z"
     },
     {
+      "articleId": "model-version",
+      "categoryId": "ecosystem",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2027-01-09T00:00:00.000Z"
+    },
+    {
       "articleId": "neural-network",
       "categoryId": "neural",
       "tier": "core",
@@ -1886,6 +1901,19 @@
       ],
       "independentFamilies": 3,
       "primaryCandidates": 1,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
+      "articleId": "next-token-prediction",
+      "categoryId": "llm",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
       "encyclopediaFamilies": 1,
       "readyForManualClaimReview": true,
       "reviewDueAt": "2028-07-12T00:00:00.000Z"
@@ -1941,6 +1969,32 @@
       "encyclopediaFamilies": 1,
       "readyForManualClaimReview": true,
       "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
+      "articleId": "query-key-value",
+      "categoryId": "transformer",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
+      "articleId": "react-agent",
+      "categoryId": "agents",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2027-01-09T00:00:00.000Z"
     },
     {
       "articleId": "reinforcement-learning",
@@ -2021,6 +2075,19 @@
       "reviewDueAt": "2028-07-12T00:00:00.000Z"
     },
     {
+      "articleId": "symbolic-ai",
+      "categoryId": "foundations",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 1,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
       "articleId": "synthetic-data",
       "categoryId": "training",
       "tier": "core",
@@ -2032,6 +2099,19 @@
       "encyclopediaFamilies": 1,
       "readyForManualClaimReview": true,
       "reviewDueAt": "2027-01-09T00:00:00.000Z"
+    },
+    {
+      "articleId": "temperature",
+      "categoryId": "inference",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
     },
     {
       "articleId": "tensor",
@@ -2094,6 +2174,19 @@
       ],
       "independentFamilies": 3,
       "primaryCandidates": 2,
+      "encyclopediaFamilies": 1,
+      "readyForManualClaimReview": true,
+      "reviewDueAt": "2028-07-12T00:00:00.000Z"
+    },
+    {
+      "articleId": "weight",
+      "categoryId": "neural",
+      "tier": "core",
+      "gaps": [
+        "manual-claim-review"
+      ],
+      "independentFamilies": 3,
+      "primaryCandidates": 1,
       "encyclopediaFamilies": 1,
       "readyForManualClaimReview": true,
       "reviewDueAt": "2028-07-12T00:00:00.000Z"

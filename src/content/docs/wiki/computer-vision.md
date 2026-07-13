@@ -113,7 +113,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+- [데이터 증강](/wiki/data-augmentation/)
+- [이미지 분류](/wiki/image-classification/)
 
 ## 이 문서를 포함하는 코스
 

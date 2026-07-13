@@ -88,7 +88,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [디코더](/wiki/decoder/)
 - [인코더](/wiki/encoder/)
 - [멀티헤드 어텐션](/wiki/multi-head-attention/)
-- [쿼리·키·값](/wiki/query-key-value/)
 
 ## 이 문서를 포함하는 코스
 

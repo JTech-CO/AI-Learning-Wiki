@@ -102,6 +102,7 @@ _해당 문서가 없습니다._
 
 - [로짓](/wiki/logit/)
 - [소규모 언어 모델](/wiki/small-language-model/)
+- [생성 온도](/wiki/temperature/)
 
 ## 이 문서를 포함하는 코스
 

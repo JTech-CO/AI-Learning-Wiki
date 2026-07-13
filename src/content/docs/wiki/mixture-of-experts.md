@@ -84,7 +84,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [컴플리션](/wiki/completion/)
-- [다음 토큰 예측](/wiki/next-token-prediction/)
 
 ## 이 문서를 포함하는 코스
 

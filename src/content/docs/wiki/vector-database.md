@@ -103,6 +103,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [밀집 임베딩](/wiki/dense-embedding/)
 - [임베딩](/wiki/embedding/)
 - [임베딩 모델](/wiki/embedding-model/)
 - [최근접 이웃 검색](/wiki/nearest-neighbor-search/)

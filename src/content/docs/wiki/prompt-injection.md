@@ -107,6 +107,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [환각](/wiki/hallucination/)
 - [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [탈옥 공격](/wiki/jailbreak/)
+- [ReAct 에이전트](/wiki/react-agent/)
 
 ## 이 문서를 포함하는 코스
 

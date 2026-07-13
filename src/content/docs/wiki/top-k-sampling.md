@@ -88,6 +88,7 @@ Top-k 샘플링은 매 단계 확률이 높은 k개 토큰만 남기고 그 안�
 ## 이 문서를 가리키는 문서
 
 - [그리디 디코딩](/wiki/greedy-decoding/)
+- [다음 토큰 예측](/wiki/next-token-prediction/)
 - [소프트맥스](/wiki/softmax/)
 - [생성 온도](/wiki/temperature/)
 - [Top-p 샘플링](/wiki/top-p-sampling/)

@@ -104,6 +104,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [행렬](/wiki/matrix/)
+- [행렬 곱셈](/wiki/matrix-multiplication/)
 - [확률](/wiki/probability/)
 - [확률분포](/wiki/probability-distribution/)
 - [스칼라](/wiki/scalar/)

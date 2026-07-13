@@ -19,6 +19,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [근거화](/wiki/grounding/) <span class="wiki-en">Grounding</span>
 - [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/) <span class="wiki-en">Approximate Nearest Neighbor</span>
 - [기울기](/wiki/gradient/) <span class="wiki-en">Gradient</span>
+- [기호주의 인공지능](/wiki/symbolic-ai/) <span class="wiki-en">Symbolic Artificial Intelligence</span>
 - [다음 토큰 예측](/wiki/next-token-prediction/) <span class="wiki-en">Next-Token Prediction</span>
 - [대규모 언어 모델](/wiki/large-language-model/) <span class="wiki-en">Large Language Model</span>
 - [데이터 증강](/wiki/data-augmentation/) <span class="wiki-en">Data Augmentation</span>
@@ -38,11 +39,13 @@ description: AI·LLM 백과 문서 가나다 색인
 - [모델](/wiki/model/) <span class="wiki-en">Model</span>
 - [모델 라이선스](/wiki/model-license/) <span class="wiki-en">Model License</span>
 - [모델 레지스트리](/wiki/model-registry/) <span class="wiki-en">Model Registry</span>
+- [모델 버전](/wiki/model-version/) <span class="wiki-en">Model Version</span>
 - [모델 컨텍스트 프로토콜](/wiki/mcp/) <span class="wiki-en">Model Context Protocol</span>
 - [모델 평가](/wiki/evaluation/) <span class="wiki-en">Model Evaluation</span>
 - [모델 허브](/wiki/model-hub/) <span class="wiki-en">Model Hub</span>
 - [미분](/wiki/derivative/) <span class="wiki-en">Derivative</span>
 - [미세조정](/wiki/fine-tuning/) <span class="wiki-en">Fine-Tuning</span>
+- [밀집 임베딩](/wiki/dense-embedding/) <span class="wiki-en">Dense Embedding</span>
 - [바이트 페어 인코딩](/wiki/byte-pair-encoding/) <span class="wiki-en">Byte Pair Encoding</span>
 - [배치](/wiki/batch/) <span class="wiki-en">Batch</span>
 - [배칭](/wiki/batching/) <span class="wiki-en">Batching</span>
@@ -82,6 +85,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [음성 인식](/wiki/speech-recognition/) <span class="wiki-en">Automatic Speech Recognition</span>
 - [음성 합성](/wiki/text-to-speech/) <span class="wiki-en">Text-to-Speech</span>
 - [의미 검색](/wiki/semantic-search/) <span class="wiki-en">Semantic Search</span>
+- [이미지 분류](/wiki/image-classification/) <span class="wiki-en">Image Classification</span>
 - [이미지 생성](/wiki/image-generation/) <span class="wiki-en">Image Generation</span>
 - [인간 참여형 제어](/wiki/human-in-the-loop/) <span class="wiki-en">Human in the Loop</span>
 - [인간 피드백 기반 강화학습](/wiki/rlhf/) <span class="wiki-en">Reinforcement Learning from Human Feedback</span>
@@ -138,6 +142,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [학습률](/wiki/learning-rate/) <span class="wiki-en">Learning Rate</span>
 - [합성 데이터](/wiki/synthetic-data/) <span class="wiki-en">Synthetic Data</span>
 - [행렬](/wiki/matrix/) <span class="wiki-en">Matrix</span>
+- [행렬 곱셈](/wiki/matrix-multiplication/) <span class="wiki-en">Matrix Multiplication</span>
 - [확률](/wiki/probability/) <span class="wiki-en">Probability</span>
 - [확률분포](/wiki/probability-distribution/) <span class="wiki-en">Probability Distribution</span>
 - [확산 모델](/wiki/diffusion-model/) <span class="wiki-en">Diffusion Model</span>
@@ -148,12 +153,15 @@ description: AI·LLM 백과 문서 가나다 색인
 - [AI 정렬](/wiki/alignment/) <span class="wiki-en">AI Alignment</span>
 - [API](/wiki/api/) <span class="wiki-en">Application Programming Interface</span>
 - [API 키](/wiki/api-key/) <span class="wiki-en">API Key</span>
+- [F1 점수](/wiki/f1-score/) <span class="wiki-en">F1 Score</span>
+- [HTTP 메서드](/wiki/http-method/) <span class="wiki-en">HTTP Method</span>
 - [HTTP 요청](/wiki/http-request/) <span class="wiki-en">HTTP Request</span>
 - [HTTP 응답](/wiki/http-response/) <span class="wiki-en">HTTP Response</span>
 - [JSON](/wiki/json/) <span class="wiki-en">JavaScript Object Notation</span>
 - [KV 캐시](/wiki/kv-cache/) <span class="wiki-en">Key-Value Cache</span>
 - [LLM 심사자](/wiki/llm-as-a-judge/) <span class="wiki-en">LLM as a Judge</span>
 - [LoRA](/wiki/lora/) <span class="wiki-en">Low-Rank Adaptation</span>
+- [ReAct 에이전트](/wiki/react-agent/) <span class="wiki-en">ReAct Agent</span>
 - [REST API](/wiki/rest-api/) <span class="wiki-en">REST API</span>
 - [SDK](/wiki/sdk/) <span class="wiki-en">Software Development Kit</span>
 - [Top-k 샘플링](/wiki/top-k-sampling/) <span class="wiki-en">Top-k Sampling</span>

@@ -86,6 +86,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [정확도](/wiki/accuracy/)
 - [모델 평가](/wiki/evaluation/)
+- [F1 점수](/wiki/f1-score/)
 - [평가 지표](/wiki/metric/)
 
 ## 이 문서를 포함하는 코스

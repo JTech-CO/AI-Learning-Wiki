@@ -87,7 +87,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [컨텍스트 윈도우](/wiki/context-window/)
 - [전문가 혼합](/wiki/mixture-of-experts/)
-- [다음 토큰 예측](/wiki/next-token-prediction/)
 - [프롬프트](/wiki/prompt/)
 
 ## 이 문서를 포함하는 코스

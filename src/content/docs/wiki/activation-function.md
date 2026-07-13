@@ -109,7 +109,6 @@ ReLU·시그모이드·GELU는 출력 범위와 기울기 특성이 달라 층�
 - [신경망 층](/wiki/layer/)
 - [손실 함수](/wiki/loss-function/)
 - [인공 뉴런](/wiki/neuron/)
-- [가중치](/wiki/weight/)
 
 ## 이 문서를 포함하는 코스
 

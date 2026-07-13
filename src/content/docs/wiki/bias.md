@@ -88,7 +88,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [활성화 함수](/wiki/activation-function/)
 - [신경망 층](/wiki/layer/)
 - [손실 함수](/wiki/loss-function/)
-- [가중치](/wiki/weight/)
 
 ## 이 문서를 포함하는 코스
 

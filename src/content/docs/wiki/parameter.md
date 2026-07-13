@@ -90,6 +90,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [스칼라](/wiki/scalar/)
 - [소규모 언어 모델](/wiki/small-language-model/)
 - [토큰](/wiki/token/)
+- [가중치](/wiki/weight/)
 
 ## 이 문서를 포함하는 코스
 

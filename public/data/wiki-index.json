@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T12:46:47.741Z",
+  "generatedAt": "2026-07-13T13:43:42.184Z",
   "counts": {
-    "articles": 155,
+    "articles": 163,
     "courses": 8
   },
   "categories": [
@@ -9,13 +9,13 @@
       "id": "foundations",
       "title": "AI·머신러닝 기초",
       "description": "인공지능의 범위와 기본 학습 방식",
-      "count": 12
+      "count": 13
     },
     {
       "id": "mathematics",
       "title": "수학·통계 기초",
       "description": "모델을 이해하는 데 필요한 수학과 확률",
-      "count": 11
+      "count": 12
     },
     {
       "id": "neural",
@@ -51,31 +51,31 @@
       "id": "retrieval",
       "title": "임베딩·검색·RAG",
       "description": "외부 지식을 검색해 생성에 결합하는 기술",
-      "count": 12
+      "count": 13
     },
     {
       "id": "api",
       "title": "API·SDK·도구 호출",
       "description": "모델을 소프트웨어와 연결하는 인터페이스",
-      "count": 11
+      "count": 12
     },
     {
       "id": "agents",
       "title": "에이전트·자동화·MCP",
       "description": "모델이 도구를 사용해 여러 단계를 수행하는 구조",
-      "count": 10
+      "count": 11
     },
     {
       "id": "multimodal",
       "title": "멀티모달 AI",
       "description": "텍스트와 이미지·음성·영상을 함께 다루는 모델",
-      "count": 9
+      "count": 10
     },
     {
       "id": "evaluation",
       "title": "평가·관측성·벤치마크",
       "description": "모델과 시스템의 품질을 측정하는 방법",
-      "count": 8
+      "count": 9
     },
     {
       "id": "safety",
@@ -87,7 +87,7 @@
       "id": "ecosystem",
       "title": "모델·서비스 생태계",
       "description": "모델 공개와 배포 생태계의 기본 개념",
-      "count": 4
+      "count": 5
     }
   ],
   "articles": [
@@ -96,20 +96,22 @@
       "title": "가드레일",
       "englishTitle": "Guardrail",
       "aliases": [
-        "Guardrail"
+        "AI 가드레일",
+        "안전 가드레일",
+        "LLM Guardrail"
       ],
-      "summary": "모델 입력·출력·도구 실행을 검사하고 위험 행동을 제한하는 정책과 기술이다.",
+      "summary": "AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞게 제한·검사·기록하는 다층 안전 통제 장치다.",
       "categories": [
         "safety"
       ],
       "prerequisites": [
-        "prompt-injection",
-        "jailbreak"
+        "alignment",
+        "prompt-injection"
       ],
       "related": [
         "jailbreak",
-        "content-moderation",
-        "bias-fairness"
+        "privacy",
+        "human-in-the-loop"
       ],
       "backlinks": [
         "content-moderation",
@@ -121,7 +123,7 @@
         "responsible-ai",
         "agent-systems"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/guardrail/"
     },
     {
@@ -129,29 +131,31 @@
       "title": "가중치",
       "englishTitle": "Weight",
       "aliases": [
-        "Weight"
+        "신경망 가중치",
+        "Model Weight"
       ],
-      "summary": "입력 신호가 출력에 미치는 상대적 크기를 조절하며 학습되는 파라미터다.",
+      "summary": "신경망에서 입력 신호의 영향력을 조절하며 학습 과정에서 손실을 줄이는 방향으로 갱신되는 수치형 매개변수다.",
       "categories": [
         "neural"
       ],
       "prerequisites": [
-        "neuron",
+        "parameter",
         "layer"
       ],
       "related": [
-        "layer",
-        "bias",
-        "activation-function"
+        "checkpoint",
+        "quantization",
+        "training-data"
       ],
       "backlinks": [
         "layer",
         "neuron",
         "bias",
+        "matrix-multiplication",
         "activation-function"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/weight/"
     },
     {
@@ -230,6 +234,7 @@
         "ai-governance"
       ],
       "backlinks": [
+        "guardrail",
         "content-moderation",
         "bias-fairness",
         "synthetic-data",
@@ -267,6 +272,7 @@
         "retriever",
         "approximate-nearest-neighbor",
         "reranker",
+        "dense-embedding",
         "embedding-model",
         "nearest-neighbor-search"
       ],
@@ -458,6 +464,7 @@
         "tool-calling",
         "streaming-response",
         "rate-limit",
+        "http-method",
         "http-response"
       ],
       "courses": [
@@ -592,26 +599,55 @@
       "url": "/wiki/gradient/"
     },
     {
+      "id": "symbolic-ai",
+      "title": "기호주의 인공지능",
+      "englishTitle": "Symbolic Artificial Intelligence",
+      "aliases": [
+        "상징적 인공지능",
+        "Symbolic AI",
+        "GOFAI"
+      ],
+      "summary": "지식을 기호와 명시적 규칙으로 표현하고 탐색·추론 절차를 적용해 결론이나 행동을 도출하는 인공지능 접근법이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "neural-network",
+        "workflow-orchestration"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/symbolic-ai/"
+    },
+    {
       "id": "next-token-prediction",
       "title": "다음 토큰 예측",
       "englishTitle": "Next-Token Prediction",
       "aliases": [
-        "Next-Token Prediction"
+        "자동회귀 언어 모델링",
+        "Causal Language Modeling"
       ],
-      "summary": "이전 토큰들이 주어졌을 때 다음 토큰의 확률 분포를 예측하는 학습 목표다.",
+      "summary": "앞선 토큰 문맥을 조건으로 바로 다음 토큰의 확률분포를 예측하도록 언어 모델을 학습하고 생성하는 방식이다.",
       "categories": [
         "llm"
       ],
       "prerequisites": [
-        "prompt",
-        "completion"
+        "token",
+        "language-model"
       ],
       "related": [
-        "completion",
-        "mixture-of-experts"
+        "softmax",
+        "temperature",
+        "top-k-sampling"
       ],
       "backlinks": [
         "beam-search",
+        "temperature",
         "softmax",
         "language-model",
         "mixture-of-experts",
@@ -621,7 +657,7 @@
       "courses": [
         "ai-foundations"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/next-token-prediction/"
     },
     {
@@ -660,28 +696,30 @@
       "title": "데이터 증강",
       "englishTitle": "Data Augmentation",
       "aliases": [
-        "Data Augmentation"
+        "학습 데이터 증강",
+        "Augmentation"
       ],
-      "summary": "기존 예시를 변형하거나 합성해 학습 데이터의 다양성을 높이는 방법이다.",
+      "summary": "과제의 정답 의미를 보존하는 변환이나 합성으로 학습 표본의 다양성을 늘려 모델의 일반화와 견고성을 높이는 기법이다.",
       "categories": [
         "training"
       ],
       "prerequisites": [
-        "knowledge-distillation",
-        "quantization"
+        "dataset",
+        "training-data"
       ],
       "related": [
-        "quantization",
         "synthetic-data",
-        "checkpoint"
+        "computer-vision",
+        "evaluation"
       ],
       "backlinks": [
         "quantization",
+        "image-classification",
         "knowledge-distillation",
         "synthetic-data"
       ],
       "courses": [],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/data-augmentation/"
     },
     {
@@ -706,10 +744,12 @@
       ],
       "backlinks": [
         "reinforcement-learning",
+        "data-augmentation",
         "model",
         "algorithm",
         "training-data",
-        "synthetic-data"
+        "synthetic-data",
+        "f1-score"
       ],
       "courses": [],
       "reviewedAt": "2026-07-12",
@@ -739,7 +779,8 @@
         "streaming-response",
         "workflow-orchestration",
         "prompt-injection",
-        "ai-agent"
+        "ai-agent",
+        "react-agent"
       ],
       "courses": [
         "agent-systems",
@@ -891,7 +932,6 @@
         "temperature"
       ],
       "backlinks": [
-        "temperature",
         "softmax",
         "inference"
       ],
@@ -954,6 +994,7 @@
         "generative-ai"
       ],
       "backlinks": [
+        "symbolic-ai",
         "deep-learning",
         "generative-ai",
         "artificial-intelligence",
@@ -1139,6 +1180,7 @@
       ],
       "backlinks": [
         "model-registry",
+        "model-version",
         "model-hub",
         "open-source-model"
       ],
@@ -1169,10 +1211,38 @@
         "checkpoint",
         "workflow-orchestration"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "model-version"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/model-registry/"
+    },
+    {
+      "id": "model-version",
+      "title": "모델 버전",
+      "englishTitle": "Model Version",
+      "aliases": [
+        "머신러닝 모델 버전",
+        "Model Release Version"
+      ],
+      "summary": "가중치·구조·전처리·토크나이저·설정과 평가 기록의 특정 조합을 식별하고 재현·비교·롤백하기 위한 불변 참조 단위다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-registry",
+        "checkpoint"
+      ],
+      "related": [
+        "model-hub",
+        "model-license",
+        "evaluation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/model-version/"
     },
     {
       "id": "mcp",
@@ -1222,9 +1292,13 @@
         "metric"
       ],
       "backlinks": [
+        "data-augmentation",
+        "model-version",
         "benchmark",
+        "image-classification",
         "metric",
-        "synthetic-data"
+        "synthetic-data",
+        "f1-score"
       ],
       "courses": [
         "multimodal-ai",
@@ -1255,6 +1329,7 @@
       "backlinks": [
         "model-license",
         "model-registry",
+        "model-version",
         "open-source-model"
       ],
       "courses": [],
@@ -1320,6 +1395,32 @@
       ],
       "reviewedAt": "2026-07-12",
       "url": "/wiki/fine-tuning/"
+    },
+    {
+      "id": "dense-embedding",
+      "title": "밀집 임베딩",
+      "englishTitle": "Dense Embedding",
+      "aliases": [
+        "Dense Vector Embedding",
+        "밀집 벡터 표현"
+      ],
+      "summary": "대부분의 차원이 연속값을 갖는 고정 길이 벡터로 질의와 문서의 의미를 표현해 벡터 유사도로 검색하는 표현 방식이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding",
+        "vector"
+      ],
+      "related": [
+        "embedding-model",
+        "vector-database",
+        "rag"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/dense-embedding/"
     },
     {
       "id": "byte-pair-encoding",
@@ -1425,12 +1526,14 @@
         "tensor"
       ],
       "backlinks": [
+        "dense-embedding",
         "scalar",
         "attention",
         "neuron",
         "embedding",
         "tensor",
-        "matrix"
+        "matrix",
+        "matrix-multiplication"
       ],
       "courses": [
         "rag-search",
@@ -1460,6 +1563,7 @@
         "nearest-neighbor-search"
       ],
       "backlinks": [
+        "dense-embedding",
         "semantic-search",
         "embedding",
         "embedding-model",
@@ -1493,7 +1597,8 @@
       "backlinks": [
         "evaluation",
         "accuracy",
-        "metric"
+        "metric",
+        "f1-score"
       ],
       "courses": [
         "responsible-ai"
@@ -1691,22 +1796,24 @@
       "title": "생성 온도",
       "englishTitle": "Temperature",
       "aliases": [
-        "Temperature"
+        "샘플링 온도",
+        "Softmax Temperature"
       ],
-      "summary": "로짓의 크기를 조정해 생성 확률 분포의 평탄함과 무작위성을 제어하는 값이다.",
+      "summary": "생성 시 로짓을 나누어 토큰 확률분포의 집중도를 조절하고 출력의 반복성과 다양성 사이의 균형을 바꾸는 디코딩 매개변수다.",
       "categories": [
         "inference"
       ],
       "prerequisites": [
-        "logit",
-        "softmax"
+        "softmax",
+        "next-token-prediction"
       ],
       "related": [
-        "softmax",
         "top-k-sampling",
-        "top-p-sampling"
+        "inference",
+        "probability"
       ],
       "backlinks": [
+        "next-token-prediction",
         "logit",
         "softmax",
         "top-k-sampling",
@@ -1715,7 +1822,7 @@
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/temperature/"
     },
     {
@@ -1837,9 +1944,12 @@
         "next-token-prediction"
       ],
       "backlinks": [
+        "next-token-prediction",
         "logit",
         "temperature",
         "inference",
+        "query-key-value",
+        "matrix-multiplication",
         "top-k-sampling"
       ],
       "courses": [
@@ -1898,7 +2008,9 @@
         "tensor",
         "parameter"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "matrix-multiplication"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/scalar/"
@@ -1953,8 +2065,10 @@
         "layer"
       ],
       "backlinks": [
+        "symbolic-ai",
         "deep-learning",
         "layer",
+        "image-classification",
         "neuron",
         "computer-vision"
       ],
@@ -2044,7 +2158,7 @@
         "synthetic-data"
       ],
       "backlinks": [
-        "data-augmentation",
+        "weight",
         "small-language-model",
         "knowledge-distillation",
         "peft"
@@ -2077,6 +2191,7 @@
       ],
       "backlinks": [
         "self-attention",
+        "query-key-value",
         "cross-attention",
         "transformer"
       ],
@@ -2139,6 +2254,7 @@
         "next-token-prediction"
       ],
       "backlinks": [
+        "next-token-prediction",
         "large-language-model",
         "small-language-model",
         "speech-recognition",
@@ -2173,7 +2289,8 @@
         "planning",
         "agent-memory",
         "workflow-orchestration",
-        "ai-agent"
+        "ai-agent",
+        "react-agent"
       ],
       "courses": [
         "agent-systems"
@@ -2322,6 +2439,7 @@
         "structured-output",
         "streaming-response",
         "api-key",
+        "http-method",
         "http-response",
         "json"
       ],
@@ -2353,11 +2471,13 @@
         "tool-calling"
       ],
       "backlinks": [
+        "symbolic-ai",
         "multi-agent-system",
         "model-registry",
         "state-management",
         "agent-memory",
-        "human-in-the-loop"
+        "human-in-the-loop",
+        "react-agent"
       ],
       "courses": [
         "agent-systems"
@@ -2416,8 +2536,7 @@
       "backlinks": [
         "decoder",
         "multi-head-attention",
-        "encoder",
-        "query-key-value"
+        "encoder"
       ],
       "courses": [
         "llm-internals"
@@ -2522,6 +2641,32 @@
       "url": "/wiki/semantic-search/"
     },
     {
+      "id": "image-classification",
+      "title": "이미지 분류",
+      "englishTitle": "Image Classification",
+      "aliases": [
+        "영상 분류",
+        "Image Recognition Classification"
+      ],
+      "summary": "입력 이미지 전체를 하나 이상의 사전 정의된 범주나 확률분포에 매핑하는 컴퓨터 비전 과제다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "computer-vision",
+        "neural-network"
+      ],
+      "related": [
+        "data-augmentation",
+        "evaluation",
+        "image-generation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/image-classification/"
+    },
+    {
       "id": "image-generation",
       "title": "이미지 생성",
       "englishTitle": "Image Generation",
@@ -2544,6 +2689,7 @@
       "backlinks": [
         "multimodal-model",
         "vision-language-model",
+        "image-classification",
         "computer-vision",
         "diffusion-model"
       ],
@@ -2574,11 +2720,13 @@
         "webhook"
       ],
       "backlinks": [
+        "guardrail",
         "indirect-prompt-injection",
         "multi-agent-system",
         "mcp",
         "workflow-orchestration",
-        "webhook"
+        "webhook",
+        "react-agent"
       ],
       "courses": [
         "agent-systems"
@@ -2640,7 +2788,6 @@
         "weight"
       ],
       "backlinks": [
-        "weight",
         "neural-network",
         "layer"
       ],
@@ -2666,6 +2813,7 @@
         "deep-learning"
       ],
       "backlinks": [
+        "symbolic-ai",
         "machine-learning"
       ],
       "courses": [
@@ -2810,6 +2958,7 @@
         "cosine-similarity"
       ],
       "backlinks": [
+        "dense-embedding",
         "vector-database",
         "embedding-model"
       ],
@@ -2843,6 +2992,7 @@
         "rag"
       ],
       "backlinks": [
+        "dense-embedding",
         "vector-database",
         "semantic-search",
         "embedding"
@@ -2933,7 +3083,6 @@
         "next-token-prediction"
       ],
       "backlinks": [
-        "next-token-prediction",
         "completion"
       ],
       "courses": [],
@@ -2967,6 +3116,7 @@
         "observability",
         "accuracy",
         "metric",
+        "f1-score",
         "llm-as-a-judge"
       ],
       "courses": [
@@ -2999,6 +3149,7 @@
         "benchmark",
         "precision-recall",
         "metric",
+        "f1-score",
         "llm-as-a-judge"
       ],
       "courses": [
@@ -3152,7 +3303,6 @@
         "data-augmentation"
       ],
       "backlinks": [
-        "data-augmentation",
         "quantization",
         "peft",
         "lora"
@@ -3306,8 +3456,9 @@
         "alignment"
       ],
       "backlinks": [
-        "data-augmentation",
+        "weight",
         "model-registry",
+        "model-version",
         "alignment"
       ],
       "courses": [],
@@ -3395,6 +3546,7 @@
       ],
       "backlinks": [
         "logit",
+        "temperature",
         "small-language-model"
       ],
       "courses": [
@@ -3485,7 +3637,10 @@
         "multimodal-model",
         "image-generation"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "data-augmentation",
+        "image-classification"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/computer-vision/"
@@ -3511,7 +3666,6 @@
         "mixture-of-experts"
       ],
       "backlinks": [
-        "next-token-prediction",
         "mixture-of-experts",
         "context-window",
         "prompt"
@@ -3570,7 +3724,6 @@
         "privacy"
       ],
       "backlinks": [
-        "guardrail",
         "privacy",
         "jailbreak",
         "bias-fairness"
@@ -3586,21 +3739,22 @@
       "title": "쿼리·키·값",
       "englishTitle": "Query, Key, Value",
       "aliases": [
-        "Query, Key, Value",
-        "QKV"
+        "Query, Key, and Value",
+        "QKV",
+        "Query-Key-Value"
       ],
-      "summary": "어텐션에서 참조할 정보의 관련도를 계산하고 내용을 모으는 세 표현이다.",
+      "summary": "어텐션에서 무엇을 찾을지 나타내는 쿼리와 비교 기준인 키, 선택된 정보를 전달하는 값으로 입력 표현을 투영한 세 집합이다.",
       "categories": [
         "transformer"
       ],
       "prerequisites": [
-        "self-attention",
-        "cross-attention"
+        "attention",
+        "softmax"
       ],
       "related": [
+        "self-attention",
         "cross-attention",
-        "multi-head-attention",
-        "positional-encoding"
+        "multi-head-attention"
       ],
       "backlinks": [
         "multi-head-attention",
@@ -3611,7 +3765,7 @@
       "courses": [
         "llm-internals"
       ],
-      "reviewedAt": "2026-07-12",
+      "reviewedAt": "2026-07-13",
       "url": "/wiki/query-key-value/"
     },
     {
@@ -3702,6 +3856,7 @@
         "vector",
         "scalar",
         "matrix",
+        "matrix-multiplication",
         "probability",
         "probability-distribution"
       ],
@@ -3760,6 +3915,7 @@
         "tokenizer"
       ],
       "backlinks": [
+        "next-token-prediction",
         "language-model",
         "tokenizer",
         "tokenization",
@@ -3850,6 +4006,7 @@
         "token"
       ],
       "backlinks": [
+        "weight",
         "large-language-model",
         "small-language-model",
         "scalar",
@@ -3916,7 +4073,6 @@
         "loss-function"
       ],
       "backlinks": [
-        "weight",
         "loss-function",
         "layer",
         "activation-function"
@@ -3946,7 +4102,6 @@
         "ai-governance"
       ],
       "backlinks": [
-        "guardrail",
         "privacy",
         "content-moderation",
         "ai-governance"
@@ -4010,7 +4165,6 @@
         "next-token-prediction"
       ],
       "backlinks": [
-        "next-token-prediction",
         "byte-pair-encoding",
         "context-window",
         "completion",
@@ -4046,7 +4200,8 @@
         "guardrail",
         "indirect-prompt-injection",
         "jailbreak",
-        "hallucination"
+        "hallucination",
+        "react-agent"
       ],
       "courses": [
         "responsible-ai",
@@ -4134,7 +4289,9 @@
         "model"
       ],
       "backlinks": [
+        "weight",
         "reinforcement-learning",
+        "data-augmentation",
         "dataset",
         "deep-learning",
         "model",
@@ -4243,6 +4400,32 @@
       "url": "/wiki/matrix/"
     },
     {
+      "id": "matrix-multiplication",
+      "title": "행렬 곱셈",
+      "englishTitle": "Matrix Multiplication",
+      "aliases": [
+        "행렬곱",
+        "Matrix Product"
+      ],
+      "summary": "첫 행렬의 행과 둘째 행렬의 열을 내적해 새로운 행렬을 만드는 선형대수 연산으로, 신경망의 선형 변환을 구성하는 핵심 계산이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "scalar",
+        "vector"
+      ],
+      "related": [
+        "tensor",
+        "weight",
+        "softmax"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/matrix-multiplication/"
+    },
+    {
       "id": "probability",
       "title": "확률",
       "englishTitle": "Probability",
@@ -4263,6 +4446,7 @@
         "conditional-probability"
       ],
       "backlinks": [
+        "temperature",
         "softmax",
         "language-model",
         "conditional-probability",
@@ -4384,7 +4568,6 @@
         "backpropagation"
       ],
       "backlinks": [
-        "weight",
         "deep-learning",
         "loss-function",
         "layer",
@@ -4472,6 +4655,7 @@
         "checkpoint"
       ],
       "backlinks": [
+        "guardrail",
         "checkpoint"
       ],
       "courses": [],
@@ -4496,6 +4680,7 @@
         "sdk"
       ],
       "backlinks": [
+        "http-method",
         "http-request",
         "http-response",
         "rest-api",
@@ -4539,6 +4724,58 @@
       "url": "/wiki/api-key/"
     },
     {
+      "id": "f1-score",
+      "title": "F1 점수",
+      "englishTitle": "F1 Score",
+      "aliases": [
+        "F1 스코어",
+        "F-measure"
+      ],
+      "summary": "정밀도와 재현율의 조화평균으로 두 지표가 모두 높을 때만 큰 값을 갖는 분류·검색 성능 지표다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "precision-recall",
+        "evaluation"
+      ],
+      "related": [
+        "accuracy",
+        "benchmark",
+        "dataset"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/f1-score/"
+    },
+    {
+      "id": "http-method",
+      "title": "HTTP 메서드",
+      "englishTitle": "HTTP Method",
+      "aliases": [
+        "HTTP 요청 메서드",
+        "HTTP Verb"
+      ],
+      "summary": "HTTP 요청이 대상 자원에 대해 수행하려는 의미를 나타내며 안전성·멱등성·캐시 가능성 같은 프로토콜 속성을 정의하는 토큰이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "http-request",
+        "api"
+      ],
+      "related": [
+        "http-response",
+        "rate-limit",
+        "structured-output"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/http-method/"
+    },
+    {
       "id": "http-request",
       "title": "HTTP 요청",
       "englishTitle": "HTTP Request",
@@ -4559,6 +4796,7 @@
       ],
       "backlinks": [
         "api-key",
+        "http-method",
         "http-response",
         "json",
         "rest-api",
@@ -4591,7 +4829,9 @@
         "structured-output",
         "streaming-response"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "http-method"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/http-response/"
@@ -4726,6 +4966,32 @@
       "url": "/wiki/lora/"
     },
     {
+      "id": "react-agent",
+      "title": "ReAct 에이전트",
+      "englishTitle": "ReAct Agent",
+      "aliases": [
+        "Reasoning and Acting Agent",
+        "ReAct 패턴"
+      ],
+      "summary": "언어 모델이 추론 메모와 외부 행동, 관찰을 번갈아 생성하며 계획을 수정하고 도구를 사용하는 에이전트 패턴이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "agent-loop",
+        "tool-calling"
+      ],
+      "related": [
+        "workflow-orchestration",
+        "prompt-injection",
+        "human-in-the-loop"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-13",
+      "url": "/wiki/react-agent/"
+    },
+    {
       "id": "rest-api",
       "title": "REST API",
       "englishTitle": "REST API",
@@ -4811,6 +5077,7 @@
       ],
       "backlinks": [
         "greedy-decoding",
+        "next-token-prediction",
         "temperature",
         "softmax",
         "top-p-sampling"
@@ -4844,7 +5111,6 @@
       ],
       "backlinks": [
         "greedy-decoding",
-        "temperature",
         "top-k-sampling"
       ],
       "courses": [

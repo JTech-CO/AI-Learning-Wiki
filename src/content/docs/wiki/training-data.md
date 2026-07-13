@@ -85,6 +85,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [데이터 증강](/wiki/data-augmentation/)
 - [데이터셋](/wiki/dataset/)
 - [딥러닝](/wiki/deep-learning/)
 - [모델](/wiki/model/)
@@ -92,6 +93,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [강화학습](/wiki/reinforcement-learning/)
 - [자기지도학습](/wiki/self-supervised-learning/)
 - [합성 데이터](/wiki/synthetic-data/)
+- [가중치](/wiki/weight/)
 
 ## 이 문서를 포함하는 코스
 

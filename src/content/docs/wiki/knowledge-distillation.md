@@ -85,7 +85,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [데이터 증강](/wiki/data-augmentation/)
 - [LoRA](/wiki/lora/)
 - [파라미터 효율적 미세조정](/wiki/peft/)
 - [양자화](/wiki/quantization/)
