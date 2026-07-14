@@ -103,9 +103,11 @@ _해당 문서가 없습니다._
 ## 이 문서를 가리키는 문서
 
 - [능동학습](/wiki/active-learning/)
+- [인공지능 생명주기](/wiki/ai-lifecycle/)
 - [인공지능 시스템](/wiki/ai-system/)
 - [인공지능 겨울](/wiki/ai-winter/)
 - [이상 탐지](/wiki/anomaly-detection/)
+- [범용 인공지능](/wiki/artificial-general-intelligence/)
 - [오토인코더](/wiki/autoencoder/)
 - [배깅](/wiki/bagging/)
 - [배치 학습](/wiki/batch-learning/)
@@ -163,6 +165,8 @@ _해당 문서가 없습니다._
 - [모델 용량](/wiki/model-capacity/)
 - [다중 과제 학습](/wiki/multi-task-learning/)
 - [나이브 베이즈 분류기](/wiki/naive-bayes-classifier/)
+- [약인공지능](/wiki/narrow-ai/)
+- [공짜 점심 없음 정리](/wiki/no-free-lunch-theorem/)
 - [온라인 학습](/wiki/online-learning/)
 - [분포 외 데이터](/wiki/out-of-distribution-data/)
 - [과적합](/wiki/overfitting/)
@@ -182,6 +186,7 @@ _해당 문서가 없습니다._
 - [테스트 데이터셋](/wiki/test-set/)
 - [학습·검증·테스트 분할](/wiki/train-validation-test-split/)
 - [전이학습](/wiki/transfer-learning/)
+- [튜링 테스트](/wiki/turing-test/)
 - [불확실성 정량화](/wiki/uncertainty-quantification/)
 - [과소적합](/wiki/underfitting/)
 - [검증 데이터셋](/wiki/validation-set/)

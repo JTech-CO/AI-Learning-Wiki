@@ -1,0 +1,3969 @@
+{
+  "version": "W18-2026-07-15",
+  "reviewedAt": "2026-07-15",
+  "reviewer": "Codex W18 expansion review",
+  "policy": {
+    "sentenceSegmentation": "Intl.Segmenter ko sentence",
+    "rawClaimTextStored": false,
+    "bodyHashLocked": true,
+    "publicationRequiresAllClaimsAccepted": true,
+    "minimumIndependentSourceFamilies": 3,
+    "minimumSectionCharacters": 450,
+    "duplicateParagraphsForbidden": true,
+    "sectionClassifications": {
+      "overview": "source-supported",
+      "scope": "provenance-note",
+      "mechanism": "source-supported",
+      "structure": "editorial-synthesis",
+      "applications": "editorial-synthesis",
+      "limitations": "source-supported",
+      "distinctions": "editorial-synthesis",
+      "worked-example": "editorial-guidance",
+      "practice": "editorial-guidance"
+    },
+    "evidenceSetBySection": {
+      "overview": "concept",
+      "scope": "provenance",
+      "mechanism": "concept",
+      "structure": "implementation",
+      "applications": "implementation",
+      "limitations": "limitations",
+      "distinctions": "concept",
+      "worked-example": "implementation",
+      "practice": "implementation"
+    }
+  },
+  "factualSectionIds": [
+    "overview",
+    "scope",
+    "mechanism",
+    "structure",
+    "applications",
+    "limitations",
+    "distinctions",
+    "worked-example",
+    "practice"
+  ],
+  "articles": [
+    {
+      "articleId": "agent-plan-quality",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "에이전트 계획 품질의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Plan Quality"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Plan Quality"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Agent Plan Quality"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Plan Quality"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Plan Quality"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Plan Quality"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Plan Quality"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Plan Quality"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Plan Quality"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Plan Quality"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "agent-trace-evaluation",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "에이전트 추적 평가의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Trace Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Trace Evaluation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Agent Trace Evaluation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Trace Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Trace Evaluation"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Trace Evaluation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Trace Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Trace Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Trace Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Trace Evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "agent-guardrail",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "에이전트 가드레일의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Guardrail"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Guardrail"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Agent Guardrail"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Guardrail"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Guardrail"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Guardrail"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Guardrail"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Guardrail"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Guardrail"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Guardrail"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "runaway-agent",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "통제 이탈 에이전트의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Runaway Agent"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Runaway Agent"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Runaway Agent"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Runaway Agent"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Runaway Agent"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Runaway Agent"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Runaway Agent"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Runaway Agent"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Runaway Agent"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Runaway Agent"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "agent-security",
+      "categoryId": "agents",
+      "priorStage": "research-queued",
+      "reviewNote": "에이전트 보안의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Security"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Security"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Agent Security"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Security"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Security"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Security"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Security"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Agent Security"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Security"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Agent Security"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "api-audit-log",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "API 감사 로그의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Audit Log"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Audit Log"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for API Audit Log"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Audit Log"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Audit Log"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Audit Log"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Audit Log"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Audit Log"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Audit Log"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Audit Log"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "idempotency-key",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "멱등성 키의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Idempotency Key"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Idempotency Key"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Idempotency Key"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Idempotency Key"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Idempotency Key"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Idempotency Key"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Idempotency Key"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Idempotency Key"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Idempotency Key"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Idempotency Key"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "api-error-model",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "API 오류 모델의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Error Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Error Model"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for API Error Model"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Error Model"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Error Model"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Error Model"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Error Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Error Model"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Error Model"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Error Model"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "api-version-pinning",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "API 버전 고정의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Version Pinning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Version Pinning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for API Version Pinning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Version Pinning"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Version Pinning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Version Pinning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Version Pinning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to API Version Pinning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Version Pinning"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to API Version Pinning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "service-level-agreement",
+      "categoryId": "api",
+      "priorStage": "research-queued",
+      "reviewNote": "서비스 수준 협약의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Service-Level Agreement"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Service-Level Agreement"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Service-Level Agreement"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Service-Level Agreement"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Service-Level Agreement"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Service-Level Agreement"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Service-Level Agreement"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Service-Level Agreement"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Service-Level Agreement"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Service-Level Agreement"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ai-energy-consumption",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "AI 에너지 소비의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Energy Consumption"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Energy Consumption"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for AI Energy Consumption"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Energy Consumption"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Energy Consumption"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Energy Consumption"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Energy Consumption"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Energy Consumption"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Energy Consumption"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Energy Consumption"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ai-carbon-footprint",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "AI 탄소 발자국의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Carbon Footprint"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Carbon Footprint"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for AI Carbon Footprint"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Carbon Footprint"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Carbon Footprint"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Carbon Footprint"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Carbon Footprint"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Carbon Footprint"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Carbon Footprint"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Carbon Footprint"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ai-water-footprint",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "AI 물 발자국의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Water Footprint"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Water Footprint"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for AI Water Footprint"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Water Footprint"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Water Footprint"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Water Footprint"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Water Footprint"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Water Footprint"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Water Footprint"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Water Footprint"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "total-cost-of-ownership-for-ai",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "AI 총소유비용의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Total Cost of Ownership for AI"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Total Cost of Ownership for AI"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Total Cost of Ownership for AI"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Total Cost of Ownership for AI"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Total Cost of Ownership for AI"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Total Cost of Ownership for AI"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Total Cost of Ownership for AI"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Total Cost of Ownership for AI"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Total Cost of Ownership for AI"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Total Cost of Ownership for AI"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-commoditization",
+      "categoryId": "ecosystem",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 범용재화화의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Commoditization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Commoditization"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Model Commoditization"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Commoditization"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Commoditization"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Commoditization"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Commoditization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Commoditization"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Commoditization"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Commoditization"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "statistical-significance",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "통계적 유의성의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Statistical Significance"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Statistical Significance"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Statistical Significance"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Statistical Significance"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Statistical Significance"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Statistical Significance"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Statistical Significance"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Statistical Significance"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Statistical Significance"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Statistical Significance"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "evaluation-uncertainty",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "평가 불확실성의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Evaluation Uncertainty"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Evaluation Uncertainty"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Evaluation Uncertainty"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Evaluation Uncertainty"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Evaluation Uncertainty"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Evaluation Uncertainty"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Evaluation Uncertainty"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Evaluation Uncertainty"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Evaluation Uncertainty"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Evaluation Uncertainty"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "bootstrap-confidence-interval",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "부트스트랩 신뢰구간의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Bootstrap Confidence Interval"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Bootstrap Confidence Interval"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Bootstrap Confidence Interval"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Bootstrap Confidence Interval"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Bootstrap Confidence Interval"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Bootstrap Confidence Interval"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Bootstrap Confidence Interval"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Bootstrap Confidence Interval"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Bootstrap Confidence Interval"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Bootstrap Confidence Interval"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "effect-size",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "효과 크기의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Effect Size"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Effect Size"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Effect Size"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Effect Size"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Effect Size"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Effect Size"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Effect Size"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Effect Size"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Effect Size"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Effect Size"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "reproducible-evaluation",
+      "categoryId": "evaluation",
+      "priorStage": "research-queued",
+      "reviewNote": "재현 가능한 평가의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Reproducible Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Reproducible Evaluation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Reproducible Evaluation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Reproducible Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Reproducible Evaluation"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Reproducible Evaluation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Reproducible Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Reproducible Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Reproducible Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Reproducible Evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "no-free-lunch-theorem",
+      "categoryId": "foundations",
+      "priorStage": "research-queued",
+      "reviewNote": "공짜 점심 없음 정리의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to No Free Lunch Theorem"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to No Free Lunch Theorem"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for No Free Lunch Theorem"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to No Free Lunch Theorem"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to No Free Lunch Theorem"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to No Free Lunch Theorem"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to No Free Lunch Theorem"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to No Free Lunch Theorem"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to No Free Lunch Theorem"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to No Free Lunch Theorem"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "narrow-ai",
+      "categoryId": "foundations",
+      "priorStage": "research-queued",
+      "reviewNote": "약인공지능의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Narrow Artificial Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Narrow Artificial Intelligence"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Narrow Artificial Intelligence"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Narrow Artificial Intelligence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Narrow Artificial Intelligence"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Narrow Artificial Intelligence"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Narrow Artificial Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Narrow Artificial Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Narrow Artificial Intelligence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Narrow Artificial Intelligence"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "artificial-general-intelligence",
+      "categoryId": "foundations",
+      "priorStage": "research-queued",
+      "reviewNote": "범용 인공지능의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Artificial General Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Artificial General Intelligence"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Artificial General Intelligence"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Artificial General Intelligence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Artificial General Intelligence"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Artificial General Intelligence"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Artificial General Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Artificial General Intelligence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Artificial General Intelligence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Artificial General Intelligence"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "turing-test",
+      "categoryId": "foundations",
+      "priorStage": "research-queued",
+      "reviewNote": "튜링 테스트의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Turing Test"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Turing Test"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Turing Test"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Turing Test"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Turing Test"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Turing Test"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Turing Test"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Turing Test"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Turing Test"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Turing Test"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ai-lifecycle",
+      "categoryId": "foundations",
+      "priorStage": "research-queued",
+      "reviewNote": "인공지능 생명주기의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Lifecycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Lifecycle"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for AI Lifecycle"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Lifecycle"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Lifecycle"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Lifecycle"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Lifecycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Lifecycle"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Lifecycle"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Lifecycle"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "out-of-memory-error",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "메모리 부족 오류의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Out-of-Memory Error"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Out-of-Memory Error"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Out-of-Memory Error"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Out-of-Memory Error"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Out-of-Memory Error"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Out-of-Memory Error"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Out-of-Memory Error"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Out-of-Memory Error"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Out-of-Memory Error"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Out-of-Memory Error"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "graceful-degradation",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "점진적 성능 저하의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Graceful Degradation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Graceful Degradation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Graceful Degradation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Graceful Degradation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Graceful Degradation"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Graceful Degradation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Graceful Degradation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Graceful Degradation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Graceful Degradation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Graceful Degradation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "deterministic-inference",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "결정적 추론의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deterministic Inference"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deterministic Inference"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Deterministic Inference"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deterministic Inference"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deterministic Inference"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deterministic Inference"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deterministic Inference"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deterministic Inference"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deterministic Inference"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deterministic Inference"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "numerical-reproducibility",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "수치 재현성의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Numerical Reproducibility"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Numerical Reproducibility"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Numerical Reproducibility"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Numerical Reproducibility"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Numerical Reproducibility"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Numerical Reproducibility"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Numerical Reproducibility"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Numerical Reproducibility"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Numerical Reproducibility"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Numerical Reproducibility"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "inference-monitoring",
+      "categoryId": "inference",
+      "priorStage": "research-queued",
+      "reviewNote": "추론 모니터링의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Inference Monitoring"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Inference Monitoring"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Inference Monitoring"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Inference Monitoring"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Inference Monitoring"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Inference Monitoring"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Inference Monitoring"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Inference Monitoring"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Inference Monitoring"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Inference Monitoring"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "style-transfer",
+      "categoryId": "llm",
+      "priorStage": "research-queued",
+      "reviewNote": "문체 변환의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Style Transfer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Style Transfer"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Style Transfer"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Style Transfer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Style Transfer"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Style Transfer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Style Transfer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Style Transfer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Style Transfer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Style Transfer"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "model-collapse",
+      "categoryId": "llm",
+      "priorStage": "research-queued",
+      "reviewNote": "모델 붕괴의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Collapse"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Collapse"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Model Collapse"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Collapse"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Collapse"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Collapse"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Collapse"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Model Collapse"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Collapse"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Model Collapse"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "token-efficiency",
+      "categoryId": "llm",
+      "priorStage": "research-queued",
+      "reviewNote": "토큰 효율의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Token Efficiency"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Token Efficiency"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Token Efficiency"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Token Efficiency"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Token Efficiency"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Token Efficiency"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Token Efficiency"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Token Efficiency"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Token Efficiency"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Token Efficiency"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "language-model-confidence",
+      "categoryId": "llm",
+      "priorStage": "research-queued",
+      "reviewNote": "언어 모델 신뢰도의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Language Model Confidence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Language Model Confidence"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Language Model Confidence"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Language Model Confidence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Language Model Confidence"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Language Model Confidence"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Language Model Confidence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Language Model Confidence"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Language Model Confidence"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Language Model Confidence"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "latent-reasoning",
+      "categoryId": "llm",
+      "priorStage": "research-queued",
+      "reviewNote": "잠재 추론의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Latent Reasoning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Latent Reasoning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Latent Reasoning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Latent Reasoning"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Latent Reasoning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Latent Reasoning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Latent Reasoning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Latent Reasoning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Latent Reasoning"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Latent Reasoning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "kernel-function",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "커널 함수의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Function"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Function"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Kernel Function"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Function"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Function"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Function"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Function"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Function"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Function"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Function"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "kernel-trick",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "커널 트릭의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Trick"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Trick"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Kernel Trick"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Trick"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Trick"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Trick"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Trick"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Kernel Trick"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Trick"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Kernel Trick"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "high-dimensional-geometry",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "고차원 기하학의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to High-Dimensional Geometry"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to High-Dimensional Geometry"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for High-Dimensional Geometry"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to High-Dimensional Geometry"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to High-Dimensional Geometry"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to High-Dimensional Geometry"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to High-Dimensional Geometry"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to High-Dimensional Geometry"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to High-Dimensional Geometry"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to High-Dimensional Geometry"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "curse-of-dimensionality",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "차원의 저주의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Curse of Dimensionality"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Curse of Dimensionality"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Curse of Dimensionality"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Curse of Dimensionality"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Curse of Dimensionality"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Curse of Dimensionality"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Curse of Dimensionality"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Curse of Dimensionality"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Curse of Dimensionality"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Curse of Dimensionality"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "concentration-of-measure",
+      "categoryId": "mathematics",
+      "priorStage": "research-queued",
+      "reviewNote": "측도 집중의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concentration of Measure"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concentration of Measure"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Concentration of Measure"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concentration of Measure"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concentration of Measure"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concentration of Measure"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concentration of Measure"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concentration of Measure"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concentration of Measure"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concentration of Measure"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "multimodal-evaluation",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "멀티모달 평가의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Evaluation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Multimodal Evaluation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Evaluation"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Evaluation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "visual-hallucination",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "시각 환각의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Visual Hallucination"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Visual Hallucination"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Visual Hallucination"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Visual Hallucination"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Visual Hallucination"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Visual Hallucination"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Visual Hallucination"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Visual Hallucination"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Visual Hallucination"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Visual Hallucination"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "multimodal-jailbreak",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "멀티모달 탈옥 공격의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Jailbreak"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Jailbreak"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Multimodal Jailbreak"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Jailbreak"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Jailbreak"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Jailbreak"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Jailbreak"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Jailbreak"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Jailbreak"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Jailbreak"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "deepfake-detection",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "딥페이크 탐지의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deepfake Detection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deepfake Detection"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Deepfake Detection"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deepfake Detection"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deepfake Detection"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deepfake Detection"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deepfake Detection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Deepfake Detection"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deepfake Detection"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Deepfake Detection"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "content-provenance",
+      "categoryId": "multimodal",
+      "priorStage": "research-queued",
+      "reviewNote": "콘텐츠 출처 증명의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Content Provenance"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Content Provenance"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Content Provenance"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Content Provenance"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Content Provenance"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Content Provenance"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Content Provenance"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Content Provenance"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Content Provenance"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Content Provenance"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "shapley-additive-explanations",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "SHAP 설명의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to SHapley Additive exPlanations"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to SHapley Additive exPlanations"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for SHapley Additive exPlanations"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to SHapley Additive exPlanations"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to SHapley Additive exPlanations"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to SHapley Additive exPlanations"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to SHapley Additive exPlanations"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to SHapley Additive exPlanations"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to SHapley Additive exPlanations"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to SHapley Additive exPlanations"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "local-interpretable-model-agnostic-explanations",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "LIME 설명의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Local Interpretable Model-Agnostic Explanations"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Local Interpretable Model-Agnostic Explanations"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Local Interpretable Model-Agnostic Explanations"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Local Interpretable Model-Agnostic Explanations"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Local Interpretable Model-Agnostic Explanations"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Local Interpretable Model-Agnostic Explanations"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Local Interpretable Model-Agnostic Explanations"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Local Interpretable Model-Agnostic Explanations"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Local Interpretable Model-Agnostic Explanations"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Local Interpretable Model-Agnostic Explanations"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "concept-activation-vector",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "개념 활성화 벡터의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concept Activation Vector"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concept Activation Vector"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Concept Activation Vector"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concept Activation Vector"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concept Activation Vector"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concept Activation Vector"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concept Activation Vector"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Concept Activation Vector"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concept Activation Vector"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Concept Activation Vector"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "probing-classifier",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "프로빙 분류기의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Probing Classifier"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Probing Classifier"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Probing Classifier"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Probing Classifier"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Probing Classifier"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Probing Classifier"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Probing Classifier"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Probing Classifier"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Probing Classifier"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Probing Classifier"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "mechanistic-interpretability",
+      "categoryId": "neural",
+      "priorStage": "research-queued",
+      "reviewNote": "기계론적 해석 가능성의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mechanistic Interpretability"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mechanistic Interpretability"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Mechanistic Interpretability"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mechanistic Interpretability"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mechanistic Interpretability"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mechanistic Interpretability"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mechanistic Interpretability"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mechanistic Interpretability"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mechanistic Interpretability"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mechanistic Interpretability"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ontology",
+      "categoryId": "retrieval",
+      "priorStage": "research-queued",
+      "reviewNote": "온톨로지의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Ontology"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Ontology"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Ontology"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Ontology"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Ontology"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Ontology"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Ontology"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Ontology"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Ontology"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Ontology"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "triple-store",
+      "categoryId": "retrieval",
+      "priorStage": "research-queued",
+      "reviewNote": "트리플 저장소의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Triple Store"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Triple Store"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Triple Store"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Triple Store"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Triple Store"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Triple Store"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Triple Store"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Triple Store"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Triple Store"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Triple Store"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "sparql",
+      "categoryId": "retrieval",
+      "priorStage": "research-queued",
+      "reviewNote": "SPARQL의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to SPARQL"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to SPARQL"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for SPARQL"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to SPARQL"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to SPARQL"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to SPARQL"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to SPARQL"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to SPARQL"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to SPARQL"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to SPARQL"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "hybrid-rag",
+      "categoryId": "retrieval",
+      "priorStage": "research-queued",
+      "reviewNote": "하이브리드 RAG의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Hybrid RAG"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Hybrid RAG"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Hybrid RAG"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Hybrid RAG"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Hybrid RAG"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Hybrid RAG"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Hybrid RAG"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Hybrid RAG"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Hybrid RAG"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Hybrid RAG"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "knowledge-graph-embedding",
+      "categoryId": "retrieval",
+      "priorStage": "research-queued",
+      "reviewNote": "지식 그래프 임베딩의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Knowledge Graph Embedding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Knowledge Graph Embedding"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Knowledge Graph Embedding"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Knowledge Graph Embedding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Knowledge Graph Embedding"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Knowledge Graph Embedding"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Knowledge Graph Embedding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Knowledge Graph Embedding"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Knowledge Graph Embedding"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Knowledge Graph Embedding"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "safety-evaluation",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "안전 평가의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Safety Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Safety Evaluation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Safety Evaluation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Safety Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Safety Evaluation"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Safety Evaluation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Safety Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Safety Evaluation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Safety Evaluation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Safety Evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ai-incident-response",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "AI 사고 대응의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Incident Response"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Incident Response"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for AI Incident Response"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Incident Response"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Incident Response"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Incident Response"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Incident Response"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Incident Response"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Incident Response"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Incident Response"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "coordinated-vulnerability-disclosure",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "조정된 취약점 공개의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Coordinated Vulnerability Disclosure"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Coordinated Vulnerability Disclosure"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Coordinated Vulnerability Disclosure"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Coordinated Vulnerability Disclosure"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Coordinated Vulnerability Disclosure"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Coordinated Vulnerability Disclosure"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Coordinated Vulnerability Disclosure"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Coordinated Vulnerability Disclosure"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Coordinated Vulnerability Disclosure"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Coordinated Vulnerability Disclosure"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "ai-security-monitoring",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "AI 보안 모니터링의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Security Monitoring"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Security Monitoring"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for AI Security Monitoring"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Security Monitoring"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Security Monitoring"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Security Monitoring"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Security Monitoring"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to AI Security Monitoring"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Security Monitoring"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to AI Security Monitoring"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "defense-in-depth-for-ai",
+      "categoryId": "safety",
+      "priorStage": "research-queued",
+      "reviewNote": "AI 심층 방어의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Defense in Depth for AI"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Defense in Depth for AI"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Defense in Depth for AI"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Defense in Depth for AI"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Defense in Depth for AI"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Defense in Depth for AI"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Defense in Depth for AI"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Defense in Depth for AI"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Defense in Depth for AI"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Defense in Depth for AI"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "differentially-private-training",
+      "categoryId": "training",
+      "priorStage": "research-queued",
+      "reviewNote": "차등 개인정보 보호 학습의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Differentially Private Training"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Differentially Private Training"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Differentially Private Training"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Differentially Private Training"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Differentially Private Training"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Differentially Private Training"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Differentially Private Training"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Differentially Private Training"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Differentially Private Training"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Differentially Private Training"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "machine-unlearning",
+      "categoryId": "training",
+      "priorStage": "research-queued",
+      "reviewNote": "머신 언러닝의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Machine Unlearning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Machine Unlearning"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Machine Unlearning"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Machine Unlearning"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Machine Unlearning"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Machine Unlearning"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Machine Unlearning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Machine Unlearning"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Machine Unlearning"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Machine Unlearning"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "data-documentation",
+      "categoryId": "training",
+      "priorStage": "research-queued",
+      "reviewNote": "데이터 문서화의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Data Documentation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Data Documentation"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Data Documentation"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Data Documentation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Data Documentation"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Data Documentation"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Data Documentation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Data Documentation"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Data Documentation"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Data Documentation"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "training-reproducibility",
+      "categoryId": "training",
+      "priorStage": "research-queued",
+      "reviewNote": "학습 재현성의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Reproducibility"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Reproducibility"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Training Reproducibility"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Reproducibility"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Reproducibility"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Reproducibility"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Reproducibility"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Reproducibility"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Reproducibility"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Reproducibility"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "training-audit-log",
+      "categoryId": "training",
+      "priorStage": "research-queued",
+      "reviewNote": "학습 감사 로그의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Audit Log"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Audit Log"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Training Audit Log"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Audit Log"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Audit Log"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Audit Log"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Audit Log"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Training Audit Log"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Audit Log"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Training Audit Log"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "sparse-transformer",
+      "categoryId": "transformer",
+      "priorStage": "research-queued",
+      "reviewNote": "희소 트랜스포머의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Sparse Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Sparse Transformer"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Sparse Transformer"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Sparse Transformer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Sparse Transformer"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Sparse Transformer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Sparse Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Sparse Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Sparse Transformer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Sparse Transformer"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "state-space-transformer-hybrid",
+      "categoryId": "transformer",
+      "priorStage": "research-queued",
+      "reviewNote": "상태 공간-트랜스포머 하이브리드의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to State Space-Transformer Hybrid"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to State Space-Transformer Hybrid"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for State Space-Transformer Hybrid"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to State Space-Transformer Hybrid"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to State Space-Transformer Hybrid"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to State Space-Transformer Hybrid"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to State Space-Transformer Hybrid"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to State Space-Transformer Hybrid"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to State Space-Transformer Hybrid"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to State Space-Transformer Hybrid"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "diffusion-transformer",
+      "categoryId": "transformer",
+      "priorStage": "research-queued",
+      "reviewNote": "확산 트랜스포머의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Diffusion Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Diffusion Transformer"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Diffusion Transformer"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Diffusion Transformer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Diffusion Transformer"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Diffusion Transformer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Diffusion Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Diffusion Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Diffusion Transformer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Diffusion Transformer"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "multimodal-transformer",
+      "categoryId": "transformer",
+      "priorStage": "research-queued",
+      "reviewNote": "멀티모달 트랜스포머의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Transformer"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Multimodal Transformer"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Transformer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Transformer"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Transformer"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Multimodal Transformer"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Transformer"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Multimodal Transformer"
+          }
+        ]
+      }
+    },
+    {
+      "articleId": "mixture-of-depths",
+      "categoryId": "transformer",
+      "priorStage": "research-queued",
+      "reviewNote": "깊이 혼합의 정의, 작동 원리, 적용 범위와 한계를 주제별 핵심 사실 및 독립 출처 계열에 맞춰 교차 검토했다.",
+      "evidenceSets": {
+        "concept": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mixture of Depths"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mixture of Depths"
+          }
+        ],
+        "provenance": [
+          {
+            "sourceRef": 8,
+            "locator": "General terminology and related concepts for Mixture of Depths"
+          }
+        ],
+        "implementation": [
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mixture of Depths"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mixture of Depths"
+          },
+          {
+            "sourceRef": 4,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mixture of Depths"
+          }
+        ],
+        "limitations": [
+          {
+            "sourceRef": 1,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mixture of Depths"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Definitions, assumptions and mechanisms relevant to Mixture of Depths"
+          },
+          {
+            "sourceRef": 2,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mixture of Depths"
+          },
+          {
+            "sourceRef": 3,
+            "locator": "Implementation, evaluation and operational guidance relevant to Mixture of Depths"
+          }
+        ]
+      }
+    }
+  ]
+}

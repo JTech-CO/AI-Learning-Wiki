@@ -23,6 +23,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [감지-사고-행동 순환](/wiki/sense-think-act-cycle/) <span class="wiki-en">Sense-Think-Act Cycle</span>
 - [강화학습](/wiki/reinforcement-learning/) <span class="wiki-en">Reinforcement Learning</span>
 - [개념 드리프트](/wiki/concept-drift/) <span class="wiki-en">Concept Drift</span>
+- [개념 활성화 벡터](/wiki/concept-activation-vector/) <span class="wiki-en">Concept Activation Vector</span>
 - [개방형 신경망 교환 형식](/wiki/open-neural-network-exchange/) <span class="wiki-en">Open Neural Network Exchange</span>
 - [개방형 어휘 객체 탐지](/wiki/open-vocabulary-detection/) <span class="wiki-en">Open-Vocabulary Detection</span>
 - [개별 LLM 심사](/wiki/pointwise-llm-judge/) <span class="wiki-en">Pointwise LLM Judge</span>
@@ -50,6 +51,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [게이트 순환 유닛](/wiki/gated-recurrent-unit/) <span class="wiki-en">Gated Recurrent Unit</span>
 - [결과 보상 모델](/wiki/outcome-reward-model/) <span class="wiki-en">Outcome Reward Model</span>
 - [결정 트리](/wiki/decision-tree/) <span class="wiki-en">Decision Tree</span>
+- [결정적 추론](/wiki/deterministic-inference/) <span class="wiki-en">Deterministic Inference</span>
 - [결합 엔트로피](/wiki/joint-entropy/) <span class="wiki-en">Joint Entropy</span>
 - [결합확률분포](/wiki/joint-probability-distribution/) <span class="wiki-en">Joint Probability Distribution</span>
 - [경로 매개변수](/wiki/path-parameter/) <span class="wiki-en">Path Parameter</span>
@@ -72,6 +74,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [고유분해](/wiki/eigendecomposition/) <span class="wiki-en">Eigendecomposition</span>
 - [고윳값과 고유벡터](/wiki/eigenvalue-eigenvector/) <span class="wiki-en">Eigenvalue and Eigenvector</span>
 - [고전적 인공지능](/wiki/good-old-fashioned-ai/) <span class="wiki-en">Good Old-Fashioned Artificial Intelligence</span>
+- [고차원 기하학](/wiki/high-dimensional-geometry/) <span class="wiki-en">High-Dimensional Geometry</span>
 - [곡선 아래 면적](/wiki/area-under-curve/) <span class="wiki-en">Area Under the Curve</span>
 - [곱 양자화](/wiki/product-quantization/) <span class="wiki-en">Product Quantization</span>
 - [공간 추론](/wiki/spatial-reasoning/) <span class="wiki-en">Spatial Reasoning</span>
@@ -79,6 +82,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [공분산](/wiki/covariance/) <span class="wiki-en">Covariance</span>
 - [공유 에이전트 메모리](/wiki/shared-agent-memory/) <span class="wiki-en">Shared Agent Memory</span>
 - [공정성 지표](/wiki/fairness-metric/) <span class="wiki-en">Fairness Metric</span>
+- [공짜 점심 없음 정리](/wiki/no-free-lunch-theorem/) <span class="wiki-en">No Free Lunch Theorem</span>
 - [과도한 자율성](/wiki/excessive-agency/) <span class="wiki-en">Excessive Agency</span>
 - [과소적합](/wiki/underfitting/) <span class="wiki-en">Underfitting</span>
 - [과적합](/wiki/overfitting/) <span class="wiki-en">Overfitting</span>
@@ -134,6 +138,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/) <span class="wiki-en">Approximate Nearest Neighbor</span>
 - [글로벌 어텐션](/wiki/global-attention/) <span class="wiki-en">Global Attention</span>
 - [기각 표본추출](/wiki/rejection-sampling/) <span class="wiki-en">Rejection Sampling</span>
+- [기계론적 해석 가능성](/wiki/mechanistic-interpretability/) <span class="wiki-en">Mechanistic Interpretability</span>
 - [기대 보정 오차](/wiki/expected-calibration-error/) <span class="wiki-en">Expected Calibration Error</span>
 - [기댓값](/wiki/expected-value/) <span class="wiki-en">Expected Value</span>
 - [기만적 정렬](/wiki/deceptive-alignment/) <span class="wiki-en">Deceptive Alignment</span>
@@ -146,6 +151,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [기회 균등](/wiki/equality-of-opportunity/) <span class="wiki-en">Equality of Opportunity</span>
 - [길이 외삽](/wiki/length-extrapolation/) <span class="wiki-en">Length Extrapolation</span>
 - [길이 페널티](/wiki/length-penalty/) <span class="wiki-en">Length Penalty</span>
+- [깊이 혼합](/wiki/mixture-of-depths/) <span class="wiki-en">Mixture of Depths</span>
 - [꼬리 지연 시간](/wiki/tail-latency/) <span class="wiki-en">Tail Latency</span>
 - [나이브 베이즈 분류기](/wiki/naive-bayes-classifier/) <span class="wiki-en">Naive Bayes Classifier</span>
 - [내적](/wiki/dot-product/) <span class="wiki-en">Dot Product</span>
@@ -186,6 +192,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [대화형 모델 데모](/wiki/interactive-model-demo/) <span class="wiki-en">Interactive Model Demo</span>
 - [데이터 누수](/wiki/data-leakage/) <span class="wiki-en">Data Leakage</span>
 - [데이터 동의](/wiki/data-consent/) <span class="wiki-en">Data Consent</span>
+- [데이터 문서화](/wiki/data-documentation/) <span class="wiki-en">Data Documentation</span>
 - [데이터 버전 관리](/wiki/data-version-control/) <span class="wiki-en">Data Version Control</span>
 - [데이터 병렬화](/wiki/data-parallelism/) <span class="wiki-en">Data Parallelism</span>
 - [데이터 보존](/wiki/data-retention/) <span class="wiki-en">Data Retention</span>
@@ -234,6 +241,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [디코더 전용 모델](/wiki/decoder-only-model/) <span class="wiki-en">Decoder-Only Model</span>
 - [디코드 단계](/wiki/decode-phase/) <span class="wiki-en">Decode Phase</span>
 - [딥러닝](/wiki/deep-learning/) <span class="wiki-en">Deep Learning</span>
+- [딥페이크 탐지](/wiki/deepfake-detection/) <span class="wiki-en">Deepfake Detection</span>
 - [라그랑주 승수법](/wiki/lagrange-multiplier/) <span class="wiki-en">Lagrange Multiplier</span>
 - [라우터 에이전트](/wiki/router-agent/) <span class="wiki-en">Router Agent</span>
 - [라이선스 호환성](/wiki/license-compatibility/) <span class="wiki-en">License Compatibility</span>
@@ -261,6 +269,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [마할라노비스 거리](/wiki/mahalanobis-distance/) <span class="wiki-en">Mahalanobis Distance</span>
 - [맨해튼 거리](/wiki/manhattan-distance/) <span class="wiki-en">Manhattan Distance</span>
 - [맹검 평가](/wiki/blind-evaluation/) <span class="wiki-en">Blind Evaluation</span>
+- [머신 언러닝](/wiki/machine-unlearning/) <span class="wiki-en">Machine Unlearning</span>
 - [머신러닝](/wiki/machine-learning/) <span class="wiki-en">Machine Learning</span>
 - [머신러닝 파이프라인](/wiki/machine-learning-pipeline/) <span class="wiki-en">Machine Learning Pipeline</span>
 - [머신러닝 프레임워크](/wiki/machine-learning-framework/) <span class="wiki-en">Machine Learning Framework</span>
@@ -272,11 +281,15 @@ description: AI·LLM 백과 문서 가나다 색인
 - [멀티모달 융합](/wiki/multimodal-fusion/) <span class="wiki-en">Multimodal Fusion</span>
 - [멀티모달 임베딩](/wiki/multimodal-embedding/) <span class="wiki-en">Multimodal Embedding</span>
 - [멀티모달 지시 튜닝](/wiki/multimodal-instruction-tuning/) <span class="wiki-en">Multimodal Instruction Tuning</span>
+- [멀티모달 탈옥 공격](/wiki/multimodal-jailbreak/) <span class="wiki-en">Multimodal Jailbreak</span>
 - [멀티모달 토크나이저](/wiki/multimodal-tokenizer/) <span class="wiki-en">Multimodal Tokenizer</span>
+- [멀티모달 트랜스포머](/wiki/multimodal-transformer/) <span class="wiki-en">Multimodal Transformer</span>
+- [멀티모달 평가](/wiki/multimodal-evaluation/) <span class="wiki-en">Multimodal Evaluation</span>
 - [멀티쿼리 어텐션](/wiki/multi-query-attention/) <span class="wiki-en">Multi-Query Attention</span>
 - [멀티헤드 어텐션](/wiki/multi-head-attention/) <span class="wiki-en">Multi-Head Attention</span>
 - [메모리 네트워크](/wiki/memory-network/) <span class="wiki-en">Memory Network</span>
 - [메모리 대역폭](/wiki/memory-bandwidth/) <span class="wiki-en">Memory Bandwidth</span>
+- [메모리 부족 오류](/wiki/out-of-memory-error/) <span class="wiki-en">Out-of-Memory Error</span>
 - [메모리 증강 트랜스포머](/wiki/memory-augmented-transformer/) <span class="wiki-en">Memory-Augmented Transformer</span>
 - [메모리 집약 작업](/wiki/memory-bound-workload/) <span class="wiki-en">Memory-Bound Workload</span>
 - [메모리 토큰](/wiki/memory-token/) <span class="wiki-en">Memory Token</span>
@@ -285,6 +298,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [메타학습](/wiki/meta-learning/) <span class="wiki-en">Meta-Learning</span>
 - [멜 스펙트로그램](/wiki/mel-spectrogram/) <span class="wiki-en">Mel Spectrogram</span>
 - [멤버십 추론 공격](/wiki/membership-inference/) <span class="wiki-en">Membership Inference</span>
+- [멱등성 키](/wiki/idempotency-key/) <span class="wiki-en">Idempotency Key</span>
 - [명령줄 API 클라이언트](/wiki/command-line-api-client/) <span class="wiki-en">Command-Line API Client</span>
 - [명세 편법 수행](/wiki/specification-gaming/) <span class="wiki-en">Specification Gaming</span>
 - [모달리티](/wiki/modality/) <span class="wiki-en">Modality</span>
@@ -308,9 +322,11 @@ description: AI·LLM 백과 문서 가나다 색인
 - [모델 배포](/wiki/model-deployment/) <span class="wiki-en">Model Deployment</span>
 - [모델 백도어](/wiki/model-backdoor/) <span class="wiki-en">Model Backdoor</span>
 - [모델 버전](/wiki/model-version/) <span class="wiki-en">Model Version</span>
+- [모델 범용재화화](/wiki/model-commoditization/) <span class="wiki-en">Model Commoditization</span>
 - [모델 병렬화](/wiki/model-parallelism/) <span class="wiki-en">Model Parallelism</span>
 - [모델 병합](/wiki/model-merging/) <span class="wiki-en">Model Merging</span>
 - [모델 복제본](/wiki/model-replica/) <span class="wiki-en">Model Replica</span>
+- [모델 붕괴](/wiki/model-collapse/) <span class="wiki-en">Model Collapse</span>
 - [모델 서비스 거부 공격](/wiki/model-denial-of-service/) <span class="wiki-en">Model Denial of Service</span>
 - [모델 서빙](/wiki/model-serving/) <span class="wiki-en">Model Serving</span>
 - [모델 서빙 플랫폼](/wiki/model-serving-platform/) <span class="wiki-en">Model Serving Platform</span>
@@ -373,6 +389,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [문장 분할](/wiki/sentence-segmentation/) <span class="wiki-en">Sentence Segmentation</span>
 - [문장 순서 예측](/wiki/sentence-order-prediction/) <span class="wiki-en">Sentence Order Prediction</span>
 - [문장 임베딩](/wiki/sentence-embedding/) <span class="wiki-en">Sentence Embedding</span>
+- [문체 변환](/wiki/style-transfer/) <span class="wiki-en">Style Transfer</span>
 - [미니배치 경사하강법](/wiki/mini-batch-gradient-descent/) <span class="wiki-en">Mini-Batch Gradient Descent</span>
 - [미등록 토큰](/wiki/out-of-vocabulary-token/) <span class="wiki-en">Out-of-Vocabulary Token</span>
 - [미분](/wiki/derivative/) <span class="wiki-en">Derivative</span>
@@ -394,6 +411,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [배치 API](/wiki/batch-api/) <span class="wiki-en">Batch API</span>
 - [배칭](/wiki/batching/) <span class="wiki-en">Batching</span>
 - [백프레셔](/wiki/backpressure/) <span class="wiki-en">Backpressure</span>
+- [범용 인공지능](/wiki/artificial-general-intelligence/) <span class="wiki-en">Artificial General Intelligence</span>
 - [베어러 토큰](/wiki/bearer-token/) <span class="wiki-en">Bearer Token</span>
 - [베이즈 네트워크](/wiki/bayesian-network/) <span class="wiki-en">Bayesian Network</span>
 - [베이즈 정리](/wiki/bayes-theorem/) <span class="wiki-en">Bayes' Theorem</span>
@@ -426,6 +444,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [부분 그래프 검색](/wiki/subgraph-retrieval/) <span class="wiki-en">Subgraph Retrieval</span>
 - [부스팅](/wiki/boosting/) <span class="wiki-en">Boosting</span>
 - [부트스트랩 방법](/wiki/bootstrap-method/) <span class="wiki-en">Bootstrap Method</span>
+- [부트스트랩 신뢰구간](/wiki/bootstrap-confidence-interval/) <span class="wiki-en">Bootstrap Confidence Interval</span>
 - [부호 이론](/wiki/coding-theory/) <span class="wiki-en">Coding Theory</span>
 - [분류](/wiki/classification/) <span class="wiki-en">Classification</span>
 - [분류기 없는 가이던스](/wiki/classifier-free-guidance/) <span class="wiki-en">Classifier-Free Guidance</span>
@@ -474,6 +493,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [상관관계](/wiki/correlation/) <span class="wiki-en">Correlation</span>
 - [상대 위치 인코딩](/wiki/relative-position-encoding/) <span class="wiki-en">Relative Position Encoding</span>
 - [상업적 이용 제한](/wiki/commercial-use-restriction/) <span class="wiki-en">Commercial Use Restriction</span>
+- [상태 공간-트랜스포머 하이브리드](/wiki/state-space-transformer-hybrid/) <span class="wiki-en">State Space-Transformer Hybrid</span>
 - [상태 관리](/wiki/state-management/) <span class="wiki-en">State Management</span>
 - [상태 유지 API](/wiki/stateful-api/) <span class="wiki-en">Stateful API</span>
 - [상호 TLS](/wiki/mutual-tls/) <span class="wiki-en">Mutual TLS</span>
@@ -491,6 +511,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [서버리스 추론](/wiki/serverless-inference/) <span class="wiki-en">Serverless Inference</span>
 - [서브워드 토큰](/wiki/subword-token/) <span class="wiki-en">Subword Token</span>
 - [서비스 수준 목표](/wiki/service-level-objective/) <span class="wiki-en">Service-Level Objective</span>
+- [서비스 수준 협약](/wiki/service-level-agreement/) <span class="wiki-en">Service-Level Agreement</span>
 - [서킷 브레이커](/wiki/circuit-breaker/) <span class="wiki-en">Circuit Breaker</span>
 - [서포트 벡터 머신](/wiki/support-vector-machine/) <span class="wiki-en">Support Vector Machine</span>
 - [선 탐색](/wiki/line-search/) <span class="wiki-en">Line Search</span>
@@ -518,6 +539,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [수락 제어](/wiki/admission-control/) <span class="wiki-en">Admission Control</span>
 - [수용 영역](/wiki/receptive-field/) <span class="wiki-en">Receptive Field</span>
 - [수치 안정성](/wiki/numerical-stability/) <span class="wiki-en">Numerical Stability</span>
+- [수치 재현성](/wiki/numerical-reproducibility/) <span class="wiki-en">Numerical Reproducibility</span>
 - [수치 적분](/wiki/numerical-integration/) <span class="wiki-en">Numerical Integration</span>
 - [수치 정밀도](/wiki/numerical-precision/) <span class="wiki-en">Numerical Precision</span>
 - [순위 학습](/wiki/learning-to-rank/) <span class="wiki-en">Learning to Rank</span>
@@ -543,6 +565,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [시각 인코더](/wiki/visual-encoder/) <span class="wiki-en">Visual Encoder</span>
 - [시각 질의응답](/wiki/visual-question-answering/) <span class="wiki-en">Visual Question Answering</span>
 - [시각 추론](/wiki/visual-reasoning/) <span class="wiki-en">Visual Reasoning</span>
+- [시각 환각](/wiki/visual-hallucination/) <span class="wiki-en">Visual Hallucination</span>
 - [시간 어텐션](/wiki/temporal-attention/) <span class="wiki-en">Temporal Attention</span>
 - [시간적 모델링](/wiki/temporal-modeling/) <span class="wiki-en">Temporal Modeling</span>
 - [시뮬레이션 기반 평가](/wiki/simulation-based-evaluation/) <span class="wiki-en">Simulation-Based Evaluation</span>
@@ -582,6 +605,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [아티팩트 레지스트리](/wiki/artifact-registry/) <span class="wiki-en">Artifact Registry</span>
 - [안장점](/wiki/saddle-point/) <span class="wiki-en">Saddle Point</span>
 - [안전 벤치마크](/wiki/safety-benchmark/) <span class="wiki-en">Safety Benchmark</span>
+- [안전 평가](/wiki/safety-evaluation/) <span class="wiki-en">Safety Evaluation</span>
 - [안전하지 않은 출력 처리](/wiki/insecure-output-handling/) <span class="wiki-en">Insecure Output Handling</span>
 - [알고리즘](/wiki/algorithm/) <span class="wiki-en">Algorithm</span>
 - [알고리즘 감사](/wiki/algorithmic-audit/) <span class="wiki-en">Algorithmic Audit</span>
@@ -591,6 +615,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [암기 데이터 추출](/wiki/memorized-data-extraction/) <span class="wiki-en">Memorized Data Extraction</span>
 - [앙상블 학습](/wiki/ensemble-learning/) <span class="wiki-en">Ensemble Learning</span>
 - [야코비 행렬](/wiki/jacobian-matrix/) <span class="wiki-en">Jacobian Matrix</span>
+- [약인공지능](/wiki/narrow-ai/) <span class="wiki-en">Narrow Artificial Intelligence</span>
 - [양방향 어텐션](/wiki/bidirectional-attention/) <span class="wiki-en">Bidirectional Attention</span>
 - [양자화](/wiki/quantization/) <span class="wiki-en">Quantization</span>
 - [양자화 인식 학습](/wiki/quantization-aware-training/) <span class="wiki-en">Quantization-Aware Training</span>
@@ -606,10 +631,13 @@ description: AI·LLM 백과 문서 가나다 색인
 - [어휘 검색](/wiki/lexical-retrieval/) <span class="wiki-en">Lexical Retrieval</span>
 - [어휘 집합](/wiki/vocabulary/) <span class="wiki-en">Vocabulary</span>
 - [언어 모델](/wiki/language-model/) <span class="wiki-en">Language Model</span>
+- [언어 모델 신뢰도](/wiki/language-model-confidence/) <span class="wiki-en">Language Model Confidence</span>
 - [언어 모델 외부 메모리](/wiki/external-language-model-memory/) <span class="wiki-en">External Language Model Memory</span>
 - [언어 모델링 헤드](/wiki/language-modeling-head/) <span class="wiki-en">Language Modeling Head</span>
 - [에너지 기반 모델](/wiki/energy-based-model/) <span class="wiki-en">Energy-Based Model</span>
+- [에이전트 가드레일](/wiki/agent-guardrail/) <span class="wiki-en">Agent Guardrail</span>
 - [에이전트 간 통신](/wiki/inter-agent-communication/) <span class="wiki-en">Inter-Agent Communication</span>
+- [에이전트 계획 품질](/wiki/agent-plan-quality/) <span class="wiki-en">Agent Plan Quality</span>
 - [에이전트 과제 분해](/wiki/agent-task-decomposition/) <span class="wiki-en">Agent Task Decomposition</span>
 - [에이전트 과제 성공률](/wiki/agent-task-success/) <span class="wiki-en">Agent Task Success</span>
 - [에이전트 궤적 평가](/wiki/agent-trajectory-evaluation/) <span class="wiki-en">Agent Trajectory Evaluation</span>
@@ -621,6 +649,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [에이전트 메모리](/wiki/agent-memory/) <span class="wiki-en">Agent Memory</span>
 - [에이전트 목표](/wiki/agent-goal/) <span class="wiki-en">Agent Goal</span>
 - [에이전트 벤치마크](/wiki/agent-benchmark/) <span class="wiki-en">Agent Benchmark</span>
+- [에이전트 보안](/wiki/agent-security/) <span class="wiki-en">Agent Security</span>
 - [에이전트 샌드박스](/wiki/agent-sandbox/) <span class="wiki-en">Agent Sandbox</span>
 - [에이전트 성찰](/wiki/agent-reflection/) <span class="wiki-en">Agent Reflection</span>
 - [에이전트 숙고](/wiki/agent-deliberation/) <span class="wiki-en">Agent Deliberation</span>
@@ -639,6 +668,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [에이전트 제어 루프](/wiki/agent-control-loop/) <span class="wiki-en">Agent Control Loop</span>
 - [에이전트 조정](/wiki/agent-coordination/) <span class="wiki-en">Agent Coordination</span>
 - [에이전트 종료 조건](/wiki/agent-termination-condition/) <span class="wiki-en">Agent Termination Condition</span>
+- [에이전트 추적 평가](/wiki/agent-trace-evaluation/) <span class="wiki-en">Agent Trace Evaluation</span>
 - [에이전트 평가](/wiki/agent-evaluation/) <span class="wiki-en">Agent Evaluation</span>
 - [에이전트 하네스](/wiki/agent-harness/) <span class="wiki-en">Agent Harness</span>
 - [에이전트 핸드오프](/wiki/agent-handoff/) <span class="wiki-en">Agent Handoff</span>
@@ -686,6 +716,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [온라인 선호 학습](/wiki/online-preference-learning/) <span class="wiki-en">Online Preference Learning</span>
 - [온라인 추론](/wiki/online-inference/) <span class="wiki-en">Online Inference</span>
 - [온라인 학습](/wiki/online-learning/) <span class="wiki-en">Online Learning</span>
+- [온톨로지](/wiki/ontology/) <span class="wiki-en">Ontology</span>
 - [온프레미스 AI](/wiki/on-premises-ai/) <span class="wiki-en">On-Premises AI</span>
 - [옵티마이저 상태](/wiki/optimizer-state/) <span class="wiki-en">Optimizer State</span>
 - [완전 샤딩 데이터 병렬화](/wiki/fully-sharded-data-parallel/) <span class="wiki-en">Fully Sharded Data Parallel</span>
@@ -752,6 +783,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [인공 뉴런](/wiki/neuron/) <span class="wiki-en">Artificial Neuron</span>
 - [인공지능](/wiki/artificial-intelligence/) <span class="wiki-en">Artificial Intelligence</span>
 - [인공지능 겨울](/wiki/ai-winter/) <span class="wiki-en">AI Winter</span>
+- [인공지능 생명주기](/wiki/ai-lifecycle/) <span class="wiki-en">AI Lifecycle</span>
 - [인공지능 시스템](/wiki/ai-system/) <span class="wiki-en">AI System</span>
 - [인과 마스크](/wiki/causal-mask/) <span class="wiki-en">Causal Mask</span>
 - [인과 언어 모델](/wiki/causal-language-model/) <span class="wiki-en">Causal Language Model</span>
@@ -792,6 +824,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [잔차 신경망](/wiki/residual-network/) <span class="wiki-en">Residual Network</span>
 - [잔차 연결](/wiki/residual-connection/) <span class="wiki-en">Residual Connection</span>
 - [잠재 지식](/wiki/latent-knowledge/) <span class="wiki-en">Latent Knowledge</span>
+- [잠재 추론](/wiki/latent-reasoning/) <span class="wiki-en">Latent Reasoning</span>
 - [잠재 표현](/wiki/latent-representation/) <span class="wiki-en">Latent Representation</span>
 - [잠재 확산 모델](/wiki/latent-diffusion-model/) <span class="wiki-en">Latent Diffusion Model</span>
 - [잡음 제거 목표](/wiki/denoising-objective/) <span class="wiki-en">Denoising Objective</span>
@@ -804,6 +837,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [재귀 검색](/wiki/recursive-retrieval/) <span class="wiki-en">Recursive Retrieval</span>
 - [재시도 정책](/wiki/retry-policy/) <span class="wiki-en">Retry Policy</span>
 - [재현 가능한 모델 빌드](/wiki/reproducible-model-build/) <span class="wiki-en">Reproducible Model Build</span>
+- [재현 가능한 평가](/wiki/reproducible-evaluation/) <span class="wiki-en">Reproducible Evaluation</span>
 - [재현율-지연 시간 절충](/wiki/recall-latency-tradeoff/) <span class="wiki-en">Recall-Latency Tradeoff</span>
 - [저랭크 어텐션](/wiki/low-rank-attention/) <span class="wiki-en">Low-Rank Attention</span>
 - [저작자 표시 의무](/wiki/attribution-requirement/) <span class="wiki-en">Attribution Requirement</span>
@@ -826,6 +860,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [전형성 샘플링](/wiki/typical-sampling/) <span class="wiki-en">Typical Sampling</span>
 - [절대 위치 인코딩](/wiki/absolute-position-encoding/) <span class="wiki-en">Absolute Position Encoding</span>
 - [점수 기반 생성 모델](/wiki/score-based-generative-model/) <span class="wiki-en">Score-Based Generative Model</span>
+- [점진적 성능 저하](/wiki/graceful-degradation/) <span class="wiki-en">Graceful Degradation</span>
 - [정규화 배치](/wiki/normalization-placement/) <span class="wiki-en">Normalization Placement</span>
 - [정규화 할인 누적 이득](/wiki/normalized-discounted-cumulative-gain/) <span class="wiki-en">Normalized Discounted Cumulative Gain</span>
 - [정렬 비용](/wiki/alignment-tax/) <span class="wiki-en">Alignment Tax</span>
@@ -852,6 +887,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [조건수](/wiki/condition-number/) <span class="wiki-en">Condition Number</span>
 - [조기 종료](/wiki/early-stopping/) <span class="wiki-en">Early Stopping</span>
 - [조기 종료 트랜스포머](/wiki/early-exit-transformer/) <span class="wiki-en">Early-Exit Transformer</span>
+- [조정된 취약점 공개](/wiki/coordinated-vulnerability-disclosure/) <span class="wiki-en">Coordinated Vulnerability Disclosure</span>
 - [조향 가능성](/wiki/steerability/) <span class="wiki-en">Steerability</span>
 - [존재 페널티](/wiki/presence-penalty/) <span class="wiki-en">Presence Penalty</span>
 - [종단간 성공률](/wiki/end-to-end-success-rate/) <span class="wiki-en">End-to-End Success Rate</span>
@@ -881,6 +917,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [지시 튜닝 임베딩](/wiki/instruction-tuned-embedding/) <span class="wiki-en">Instruction-Tuned Embedding</span>
 - [지시문](/wiki/instruction/) <span class="wiki-en">Instruction</span>
 - [지식 그래프](/wiki/knowledge-graph/) <span class="wiki-en">Knowledge Graph</span>
+- [지식 그래프 임베딩](/wiki/knowledge-graph-embedding/) <span class="wiki-en">Knowledge Graph Embedding</span>
 - [지식 기준 시점](/wiki/knowledge-cutoff/) <span class="wiki-en">Knowledge Cutoff</span>
 - [지식 증류](/wiki/knowledge-distillation/) <span class="wiki-en">Knowledge Distillation</span>
 - [지역 민감 해싱](/wiki/locality-sensitive-hashing/) <span class="wiki-en">Locality-Sensitive Hashing</span>
@@ -896,8 +933,10 @@ description: AI·LLM 백과 문서 가나다 색인
 - [질의 재작성](/wiki/query-rewriting/) <span class="wiki-en">Query Rewriting</span>
 - [질의 확장](/wiki/query-expansion/) <span class="wiki-en">Query Expansion</span>
 - [차등 개인정보 보호](/wiki/differential-privacy/) <span class="wiki-en">Differential Privacy</span>
+- [차등 개인정보 보호 학습](/wiki/differentially-private-training/) <span class="wiki-en">Differentially Private Training</span>
 - [차별적 영향](/wiki/disparate-impact/) <span class="wiki-en">Disparate Impact</span>
 - [차원 축소](/wiki/dimensionality-reduction/) <span class="wiki-en">Dimensionality Reduction</span>
+- [차원의 저주](/wiki/curse-of-dimensionality/) <span class="wiki-en">Curse of Dimensionality</span>
 - [참조 기반 평가](/wiki/reference-based-evaluation/) <span class="wiki-en">Reference-Based Evaluation</span>
 - [참조 모델](/wiki/reference-model/) <span class="wiki-en">Reference Model</span>
 - [참조 없는 평가](/wiki/reference-free-evaluation/) <span class="wiki-en">Reference-Free Evaluation</span>
@@ -929,6 +968,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [추론 계산량](/wiki/inference-compute/) <span class="wiki-en">Inference Compute</span>
 - [추론 그래프 최적화](/wiki/inference-graph-optimization/) <span class="wiki-en">Inference Graph Optimization</span>
 - [추론 능력](/wiki/reasoning-capability/) <span class="wiki-en">Reasoning Capability</span>
+- [추론 모니터링](/wiki/inference-monitoring/) <span class="wiki-en">Inference Monitoring</span>
 - [추론 부하 분산](/wiki/inference-load-balancing/) <span class="wiki-en">Inference Load Balancing</span>
 - [추론 서버](/wiki/inference-server/) <span class="wiki-en">Inference Server</span>
 - [추론 시간 초과](/wiki/inference-timeout/) <span class="wiki-en">Inference Timeout</span>
@@ -946,6 +986,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [출력 파서](/wiki/output-parser/) <span class="wiki-en">Output Parser</span>
 - [출력층](/wiki/output-layer/) <span class="wiki-en">Output Layer</span>
 - [충실성](/wiki/faithfulness/) <span class="wiki-en">Faithfulness</span>
+- [측도 집중](/wiki/concentration-of-measure/) <span class="wiki-en">Concentration of Measure</span>
 - [측정 편향](/wiki/measurement-bias/) <span class="wiki-en">Measurement Bias</span>
 - [카피레프트 라이선스](/wiki/copyleft-license/) <span class="wiki-en">Copyleft License</span>
 - [캐시 오프로딩](/wiki/cache-offloading/) <span class="wiki-en">Cache Offloading</span>
@@ -953,6 +994,8 @@ description: AI·LLM 백과 문서 가나다 색인
 - [캐시 축출](/wiki/cache-eviction/) <span class="wiki-en">Cache Eviction</span>
 - [캡슐 네트워크](/wiki/capsule-network/) <span class="wiki-en">Capsule Network</span>
 - [커널 융합](/wiki/kernel-fusion/) <span class="wiki-en">Kernel Fusion</span>
+- [커널 트릭](/wiki/kernel-trick/) <span class="wiki-en">Kernel Trick</span>
+- [커널 함수](/wiki/kernel-function/) <span class="wiki-en">Kernel Function</span>
 - [커널화 어텐션](/wiki/kernelized-attention/) <span class="wiki-en">Kernelized Attention</span>
 - [커리큘럼 학습](/wiki/curriculum-learning/) <span class="wiki-en">Curriculum Learning</span>
 - [컨테이너화 모델](/wiki/containerized-model/) <span class="wiki-en">Containerized Model</span>
@@ -971,6 +1014,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [콘텐츠 유형](/wiki/content-type/) <span class="wiki-en">Content Type</span>
 - [콘텐츠 조정](/wiki/content-moderation/) <span class="wiki-en">Content Moderation</span>
 - [콘텐츠 조정 API](/wiki/moderation-api/) <span class="wiki-en">Moderation API</span>
+- [콘텐츠 출처 증명](/wiki/content-provenance/) <span class="wiki-en">Content Provenance</span>
 - [콜드 스타트](/wiki/cold-start/) <span class="wiki-en">Cold Start</span>
 - [쿨백-라이블러 발산](/wiki/kullback-leibler-divergence/) <span class="wiki-en">Kullback-Leibler Divergence</span>
 - [쿼리·키·값](/wiki/query-key-value/) <span class="wiki-en">Query, Key, Value</span>
@@ -1004,16 +1048,21 @@ description: AI·LLM 백과 문서 가나다 색인
 - [토큰 사용량 모니터링](/wiki/token-usage-monitoring/) <span class="wiki-en">Token Usage Monitoring</span>
 - [토큰 샘플링](/wiki/token-sampling/) <span class="wiki-en">Token Sampling</span>
 - [토큰 임베딩층](/wiki/token-embedding-layer/) <span class="wiki-en">Token Embedding Layer</span>
+- [토큰 효율](/wiki/token-efficiency/) <span class="wiki-en">Token Efficiency</span>
 - [토큰화](/wiki/tokenization/) <span class="wiki-en">Tokenization</span>
+- [통계적 유의성](/wiki/statistical-significance/) <span class="wiki-en">Statistical Significance</span>
 - [통계적 추정량](/wiki/statistical-estimator/) <span class="wiki-en">Statistical Estimator</span>
 - [통계적 편향](/wiki/statistical-bias/) <span class="wiki-en">Statistical Bias</span>
 - [통계적 표본추출](/wiki/statistical-sampling/) <span class="wiki-en">Statistical Sampling</span>
+- [통제 이탈 에이전트](/wiki/runaway-agent/) <span class="wiki-en">Runaway Agent</span>
 - [통합 그래디언트](/wiki/integrated-gradients/) <span class="wiki-en">Integrated Gradients</span>
 - [통합 응답 API](/wiki/unified-response-api/) <span class="wiki-en">Unified Response API</span>
 - [통합 자원 식별자](/wiki/uri/) <span class="wiki-en">Uniform Resource Identifier</span>
 - [통합 자원 위치 지정자](/wiki/url/) <span class="wiki-en">Uniform Resource Locator</span>
+- [튜링 테스트](/wiki/turing-test/) <span class="wiki-en">Turing Test</span>
 - [트랜스포머](/wiki/transformer/) <span class="wiki-en">Transformer</span>
 - [트랜스포머 블록](/wiki/transformer-block/) <span class="wiki-en">Transformer Block</span>
+- [트리플 저장소](/wiki/triple-store/) <span class="wiki-en">Triple Store</span>
 - [특성](/wiki/feature/) <span class="wiki-en">Feature</span>
 - [특성 공학](/wiki/feature-engineering/) <span class="wiki-en">Feature Engineering</span>
 - [특성 시각화](/wiki/feature-visualization/) <span class="wiki-en">Feature Visualization</span>
@@ -1046,6 +1095,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [편향-분산 절충](/wiki/bias-variance-tradeoff/) <span class="wiki-en">Bias-Variance Tradeoff</span>
 - [편향과 공정성](/wiki/bias-fairness/) <span class="wiki-en">Bias and Fairness</span>
 - [평가 루브릭](/wiki/evaluation-rubric/) <span class="wiki-en">Evaluation Rubric</span>
+- [평가 불확실성](/wiki/evaluation-uncertainty/) <span class="wiki-en">Evaluation Uncertainty</span>
 - [평가 지표](/wiki/metric/) <span class="wiki-en">Evaluation Metric</span>
 - [평가 표본추출](/wiki/evaluation-sampling/) <span class="wiki-en">Evaluation Sampling</span>
 - [평가자 간 신뢰도](/wiki/inter-rater-reliability/) <span class="wiki-en">Inter-Rater Reliability</span>
@@ -1060,6 +1110,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [퓨샷 학습](/wiki/few-shot-learning/) <span class="wiki-en">Few-Shot Learning</span>
 - [프레임 샘플링](/wiki/frame-sampling/) <span class="wiki-en">Frame Sampling</span>
 - [프로덕션 평가](/wiki/production-evaluation/) <span class="wiki-en">Production Evaluation</span>
+- [프로빙 분류기](/wiki/probing-classifier/) <span class="wiki-en">Probing Classifier</span>
 - [프롬프트](/wiki/prompt/) <span class="wiki-en">Prompt</span>
 - [프롬프트 구분자](/wiki/prompt-delimiter/) <span class="wiki-en">Prompt Delimiter</span>
 - [프롬프트 민감도](/wiki/prompt-sensitivity/) <span class="wiki-en">Prompt Sensitivity</span>
@@ -1084,7 +1135,9 @@ description: AI·LLM 백과 문서 가나다 색인
 - [픽셀 표현](/wiki/pixel-representation/) <span class="wiki-en">Pixel Representation</span>
 - [필기 문자 인식](/wiki/handwritten-text-recognition/) <span class="wiki-en">Handwritten Text Recognition</span>
 - [하이브리드 검색](/wiki/hybrid-search/) <span class="wiki-en">Hybrid Search</span>
+- [하이브리드 RAG](/wiki/hybrid-rag/) <span class="wiki-en">Hybrid RAG</span>
 - [하이퍼파라미터](/wiki/hyperparameter/) <span class="wiki-en">Hyperparameter</span>
+- [학습 감사 로그](/wiki/training-audit-log/) <span class="wiki-en">Training Audit Log</span>
 - [학습 계산량](/wiki/training-compute/) <span class="wiki-en">Training Compute</span>
 - [학습 곡선](/wiki/learning-curve/) <span class="wiki-en">Learning Curve</span>
 - [학습 데이터](/wiki/training-data/) <span class="wiki-en">Training Data</span>
@@ -1098,6 +1151,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [학습 비용](/wiki/training-cost/) <span class="wiki-en">Training Cost</span>
 - [학습 손실](/wiki/training-loss/) <span class="wiki-en">Training Loss</span>
 - [학습 수렴](/wiki/training-convergence/) <span class="wiki-en">Training Convergence</span>
+- [학습 재현성](/wiki/training-reproducibility/) <span class="wiki-en">Training Reproducibility</span>
 - [학습 후 양자화](/wiki/post-training-quantization/) <span class="wiki-en">Post-Training Quantization</span>
 - [학습·검증·테스트 분할](/wiki/train-validation-test-split/) <span class="wiki-en">Train-Validation-Test Split</span>
 - [학습률](/wiki/learning-rate/) <span class="wiki-en">Learning Rate</span>
@@ -1133,6 +1187,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [확산 모델](/wiki/diffusion-model/) <span class="wiki-en">Diffusion Model</span>
 - [확산 스케줄러](/wiki/diffusion-scheduler/) <span class="wiki-en">Diffusion Scheduler</span>
 - [확산 잡음 제거 단계](/wiki/diffusion-denoising-step/) <span class="wiki-en">Diffusion Denoising Step</span>
+- [확산 트랜스포머](/wiki/diffusion-transformer/) <span class="wiki-en">Diffusion Transformer</span>
 - [확산 학습 목표](/wiki/diffusion-training-objective/) <span class="wiki-en">Diffusion Training Objective</span>
 - [확장 가능한 감독](/wiki/scalable-oversight/) <span class="wiki-en">Scalable Oversight</span>
 - [환각](/wiki/hallucination/) <span class="wiki-en">Hallucination</span>
@@ -1144,12 +1199,14 @@ description: AI·LLM 백과 문서 가나다 색인
 - [회귀 테스트형 평가](/wiki/regression-evaluation/) <span class="wiki-en">Regression Evaluation</span>
 - [회전 위치 임베딩](/wiki/rotary-position-embedding/) <span class="wiki-en">Rotary Position Embedding</span>
 - [회피 공격](/wiki/evasion-attack/) <span class="wiki-en">Evasion Attack</span>
+- [효과 크기](/wiki/effect-size/) <span class="wiki-en">Effect Size</span>
 - [후기 융합](/wiki/late-fusion/) <span class="wiki-en">Late Fusion</span>
 - [희소 부호화](/wiki/sparse-coding/) <span class="wiki-en">Sparse Coding</span>
 - [희소 신경 검색](/wiki/sparse-neural-retrieval/) <span class="wiki-en">Sparse Neural Retrieval</span>
 - [희소 어텐션](/wiki/sparse-attention/) <span class="wiki-en">Sparse Attention</span>
 - [희소 언어 모델](/wiki/sparse-language-model/) <span class="wiki-en">Sparse Language Model</span>
 - [희소 임베딩](/wiki/sparse-embedding/) <span class="wiki-en">Sparse Embedding</span>
+- [희소 트랜스포머](/wiki/sparse-transformer/) <span class="wiki-en">Sparse Transformer</span>
 - [AdaGrad](/wiki/adagrad/) <span class="wiki-en">AdaGrad</span>
 - [Adam 최적화](/wiki/adam-optimizer/) <span class="wiki-en">Adam Optimizer</span>
 - [AdamW](/wiki/adamw/) <span class="wiki-en">AdamW</span>
@@ -1161,10 +1218,15 @@ description: AI·LLM 백과 문서 가나다 색인
 - [AI 규제 분류](/wiki/ai-regulatory-classification/) <span class="wiki-en">AI Regulatory Classification</span>
 - [AI 데이터센터](/wiki/ai-datacenter/) <span class="wiki-en">AI Datacenter</span>
 - [AI 레드팀 평가](/wiki/ai-red-teaming/) <span class="wiki-en">AI Red Teaming</span>
+- [AI 물 발자국](/wiki/ai-water-footprint/) <span class="wiki-en">AI Water Footprint</span>
+- [AI 보안 모니터링](/wiki/ai-security-monitoring/) <span class="wiki-en">AI Security Monitoring</span>
+- [AI 사고 대응](/wiki/ai-incident-response/) <span class="wiki-en">AI Incident Response</span>
 - [AI 사고 보고](/wiki/ai-incident-reporting/) <span class="wiki-en">AI Incident Reporting</span>
 - [AI 사용 고지](/wiki/ai-disclosure/) <span class="wiki-en">AI Disclosure</span>
 - [AI 상호운용성 표준](/wiki/ai-interoperability-standard/) <span class="wiki-en">AI Interoperability Standard</span>
+- [AI 심층 방어](/wiki/defense-in-depth-for-ai/) <span class="wiki-en">Defense in Depth for AI</span>
 - [AI 안전](/wiki/ai-safety/) <span class="wiki-en">AI Safety</span>
+- [AI 에너지 소비](/wiki/ai-energy-consumption/) <span class="wiki-en">AI Energy Consumption</span>
 - [AI 에이전트](/wiki/ai-agent/) <span class="wiki-en">AI Agent</span>
 - [AI 오용](/wiki/ai-misuse/) <span class="wiki-en">AI Misuse</span>
 - [AI 위험 대장](/wiki/ai-risk-register/) <span class="wiki-en">AI Risk Register</span>
@@ -1174,7 +1236,9 @@ description: AI·LLM 백과 문서 가나다 색인
 - [AI 정책 집행](/wiki/ai-policy-enforcement/) <span class="wiki-en">AI Policy Enforcement</span>
 - [AI 준수 모니터링](/wiki/ai-compliance-monitoring/) <span class="wiki-en">AI Compliance Monitoring</span>
 - [AI 책임성](/wiki/ai-accountability/) <span class="wiki-en">AI Accountability</span>
+- [AI 총소유비용](/wiki/total-cost-of-ownership-for-ai/) <span class="wiki-en">Total Cost of Ownership for AI</span>
 - [AI 칩 가용성](/wiki/ai-chip-availability/) <span class="wiki-en">AI Chip Availability</span>
+- [AI 탄소 발자국](/wiki/ai-carbon-footprint/) <span class="wiki-en">AI Carbon Footprint</span>
 - [AI 통제 문제](/wiki/ai-control-problem/) <span class="wiki-en">AI Control Problem</span>
 - [AI 피드백 기반 강화학습](/wiki/reinforcement-learning-from-ai-feedback/) <span class="wiki-en">Reinforcement Learning from AI Feedback</span>
 - [AI 해석 가능성](/wiki/ai-interpretability/) <span class="wiki-en">AI Interpretability</span>
@@ -1182,11 +1246,14 @@ description: AI·LLM 백과 문서 가나다 색인
 - [ALiBi 위치 편향](/wiki/alibi-position-bias/) <span class="wiki-en">Attention with Linear Biases</span>
 - [All-Reduce](/wiki/all-reduce/) <span class="wiki-en">All-Reduce</span>
 - [API](/wiki/api/) <span class="wiki-en">Application Programming Interface</span>
+- [API 감사 로그](/wiki/api-audit-log/) <span class="wiki-en">API Audit Log</span>
 - [API 래퍼](/wiki/api-wrapper/) <span class="wiki-en">API Wrapper</span>
 - [API 로깅](/wiki/api-logging/) <span class="wiki-en">API Logging</span>
+- [API 버전 고정](/wiki/api-version-pinning/) <span class="wiki-en">API Version Pinning</span>
 - [API 버전 관리](/wiki/api-versioning/) <span class="wiki-en">API Versioning</span>
 - [API 비용 추적](/wiki/api-cost-tracking/) <span class="wiki-en">API Cost Tracking</span>
 - [API 엔드포인트](/wiki/api-endpoint/) <span class="wiki-en">API Endpoint</span>
+- [API 오류 모델](/wiki/api-error-model/) <span class="wiki-en">API Error Model</span>
 - [API 지원 종료](/wiki/api-deprecation/) <span class="wiki-en">API Deprecation</span>
 - [API 클라이언트](/wiki/api-client/) <span class="wiki-en">API Client</span>
 - [API 키](/wiki/api-key/) <span class="wiki-en">API Key</span>
@@ -1251,6 +1318,7 @@ description: AI·LLM 백과 문서 가나다 색인
 - [KV 캐시 양자화](/wiki/kv-cache-quantization/) <span class="wiki-en">KV Cache Quantization</span>
 - [L1 정규화](/wiki/l1-regularization/) <span class="wiki-en">L1 Regularization</span>
 - [L2 정규화](/wiki/l2-regularization/) <span class="wiki-en">L2 Regularization</span>
+- [LIME 설명](/wiki/local-interpretable-model-agnostic-explanations/) <span class="wiki-en">Local Interpretable Model-Agnostic Explanations</span>
 - [Linux Foundation AI & Data](/wiki/linux-foundation-ai-data/) <span class="wiki-en">Linux Foundation AI & Data</span>
 - [LLM 심사자](/wiki/llm-as-a-judge/) <span class="wiki-en">LLM as a Judge</span>
 - [LLM 침투 테스트](/wiki/llm-penetration-testing/) <span class="wiki-en">LLM Penetration Testing</span>
@@ -1316,6 +1384,8 @@ description: AI·LLM 백과 문서 가나다 색인
 - [SDK](/wiki/sdk/) <span class="wiki-en">Software Development Kit</span>
 - [Self-RAG](/wiki/self-rag/) <span class="wiki-en">Self-Reflective Retrieval-Augmented Generation</span>
 - [SentencePiece](/wiki/sentencepiece/) <span class="wiki-en">SentencePiece</span>
+- [SHAP 설명](/wiki/shapley-additive-explanations/) <span class="wiki-en">SHapley Additive exPlanations</span>
+- [SPARQL](/wiki/sparql/) <span class="wiki-en">SPARQL</span>
 - [SWE-bench](/wiki/swe-bench/) <span class="wiki-en">SWE-bench</span>
 - [SwiGLU](/wiki/swiglu/) <span class="wiki-en">SwiGLU</span>
 - [T5 아키텍처](/wiki/t5-architecture/) <span class="wiki-en">T5 Architecture</span>

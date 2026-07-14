@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run wiki:w11:validate && npm run wiki:w11:queue && npm run wiki:w12:validate && npm run wiki:w12:queue && npm run wiki:w13:validate && npm run wiki:w13:queue && npm run wiki:w14:validate && npm run wiki:w14:queue && npm run wiki:w15:validate && npm run wiki:w15:queue && npm run wiki:w16:validate && npm run wiki:w16:queue && npm run wiki:w17:validate && npm run wiki:w17:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && node --max-old-space-size=8192 node_modules/astro/bin/astro.mjs build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w11:render && npm run wiki:w12:render && npm run wiki:w13:render && npm run wiki:w14:render && npm run wiki:w15:render && npm run wiki:w16:render && npm run wiki:w17:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
+    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run wiki:w11:validate && npm run wiki:w11:queue && npm run wiki:w12:validate && npm run wiki:w12:queue && npm run wiki:w13:validate && npm run wiki:w13:queue && npm run wiki:w14:validate && npm run wiki:w14:queue && npm run wiki:w15:validate && npm run wiki:w15:queue && npm run wiki:w16:validate && npm run wiki:w16:queue && npm run wiki:w17:validate && npm run wiki:w17:queue && npm run wiki:w18:validate && npm run wiki:w18:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && node --max-old-space-size=8192 node_modules/astro/bin/astro.mjs build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w11:render && npm run wiki:w12:render && npm run wiki:w13:render && npm run wiki:w14:render && npm run wiki:w15:render && npm run wiki:w16:render && npm run wiki:w17:render && npm run wiki:w18:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
     "gen": "node scripts/build-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -98,7 +98,12 @@
     "wiki:w17:refresh": "node scripts/build-w17-claim-ledger.mjs",
     "wiki:w17:validate": "node scripts/validate-w17-claims.mjs",
     "wiki:w17:queue": "node scripts/build-w17-production-queue.mjs && node scripts/validate-w17-production-queue.mjs",
-    "wiki:w17:render": "node scripts/check-w17-render.mjs"
+    "wiki:w17:render": "node scripts/check-w17-render.mjs",
+    "wiki:w18:prepare": "node scripts/prepare-w18-batch.mjs",
+    "wiki:w18:refresh": "node scripts/build-w18-claim-ledger.mjs",
+    "wiki:w18:validate": "node scripts/validate-w18-claims.mjs",
+    "wiki:w18:queue": "node scripts/build-w18-production-queue.mjs && node scripts/validate-w18-production-queue.mjs",
+    "wiki:w18:render": "node scripts/check-w18-render.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",
