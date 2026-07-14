@@ -8,6 +8,7 @@ description: "모델 공개와 배포 생태계의 기본 개념"
 - [가속기 메모리 계층](/wiki/accelerator-memory-hierarchy/) — 가속기 메모리 계층은 레지스터, 온칩 공유 메모리·캐시, 고대역폭 장치 메모리와 호스트 메모리로 이어지는 저장 단계다.
 - [가속기 인터커넥트](/wiki/accelerator-interconnect/) — 가속기 인터커넥트는 GPU·NPU 같은 가속기 사이에서 텐서와 동기화 정보를 고속으로 전달하는 연결 기술이다.
 - [개방형 신경망 교환 형식](/wiki/open-neural-network-exchange/) — 개방형 신경망 교환 형식은 서로 다른 프레임워크와 런타임 사이에서 모델 그래프와 가중치를 전달하기 위한 ONNX 표준이다.
+- [계산 비용](/wiki/compute-cost/) — 계산 비용은 AI 작업이 소비한 프로세서 시간, 메모리, 저장소, 네트워크와 에너지에 가격을 적용한 총 자원 비용이다.
 - [관리형 추론 플랫폼](/wiki/managed-inference-platform/) — 관리형 추론 플랫폼은 클라우드나 서비스 제공자가 인프라 운영을 맡고 사용자가 모델 배포와 호출에 집중하게 하는 호스팅 서비스다.
 - [그래픽 처리 장치](/wiki/graphics-processing-unit/) — 그래픽 처리 장치는 많은 연산 코어와 높은 메모리 대역폭으로 병렬 행렬·벡터 계산을 수행하는 프로세서다.
 - [대화형 노트북](/wiki/interactive-notebook/) — 대화형 노트북은 코드, 실행 결과, 설명과 시각화를 셀 단위 문서에 함께 기록하는 계산 환경이다.
@@ -59,6 +60,7 @@ description: "모델 공개와 배포 생태계의 기본 개념"
 - [재현 가능한 모델 빌드](/wiki/reproducible-model-build/) — 재현 가능한 모델 빌드는 같은 소스, 데이터 식별자와 환경에서 의미상 동일한 모델 아티팩트를 다시 만들 수 있는 성질이다.
 - [저작자 표시 의무](/wiki/attribution-requirement/) — 저작자 표시 의무는 아티팩트를 사용하거나 배포할 때 원저작자, 출처와 라이선스 고지를 유지하도록 요구하는 조건이다.
 - [책임 있는 AI 라이선스](/wiki/responsible-ai-license/) — 책임 있는 AI 라이선스는 모델 사용 권한에 특정 위해 행위, 감시, 차별 또는 불법 목적 금지 조건을 결합한 라이선스 유형이다.
+- [추론 경제성](/wiki/inference-economics/) — 추론 경제성은 배포된 모델의 요청당 비용과 품질·지연시간·처리량 사이의 운영적 관계를 분석하는 관점이다.
 - [카피레프트 라이선스](/wiki/copyleft-license/) — 카피레프트 라이선스는 프로그램 또는 일정한 파생물을 배포할 때 같은 자유를 유지하도록 소스 제공과 동일 조건 적용을 요구한다.
 - [컨테이너화 모델](/wiki/containerized-model/) — 컨테이너화 모델은 모델 파일과 추론 코드 및 시스템 의존성을 컨테이너 이미지로 묶어 실행 환경을 고정한 배포 단위다.
 - [컴퓨트 클러스터](/wiki/compute-cluster/) — 컴퓨트 클러스터는 여러 서버를 네트워크로 연결해 하나의 대규모 작업이나 다수 작업의 자원을 공동 제공하는 시스템이다.
@@ -68,9 +70,13 @@ description: "모델 공개와 배포 생태계의 기본 개념"
 - [특성 저장소](/wiki/feature-store/) — 피처 스토어는 모델 입력 특성의 정의, 계산, 저장과 온라인·오프라인 제공을 일관되게 관리하는 시스템이다.
 - [파생 모델](/wiki/derivative-model/) — 파생 모델은 기존 모델의 가중치, 구조 또는 출력 지식을 이용해 미세조정·병합·증류 등으로 만들어진 후속 모델이다.
 - [패키지 레지스트리](/wiki/package-registry/) — 패키지 레지스트리는 라이브러리와 실행 패키지를 이름·버전·의존성 메타데이터와 함께 배포하는 서비스다.
+- [학습 비용](/wiki/training-cost/) — 학습 비용은 데이터 준비부터 분산 학습, 실험 반복과 체크포인트 저장까지 모델을 만드는 데 든 직접·간접 비용이다.
 - [허용적 라이선스](/wiki/permissive-license/) — 허용적 라이선스는 저작권 고지와 면책 같은 최소 조건을 지키면 수정과 재배포를 폭넓게 허용하는 라이선스 계열이다.
 - [AI 가속기](/wiki/ai-accelerator/) — AI 가속기는 신경망 학습이나 추론의 핵심 연산을 범용 프로세서보다 빠르고 효율적으로 처리하도록 특화된 하드웨어의 총칭이다.
+- [AI 공급망](/wiki/ai-supply-chain/) — AI 공급망은 데이터·모델·코드·가속기·클라우드·배포 서비스가 최종 AI 시스템에 이르는 의존 관계와 공급 주체의 연쇄다.
 - [AI 데이터센터](/wiki/ai-datacenter/) — AI 데이터센터는 대규모 모델 학습과 추론을 위해 가속기, 고대역폭 네트워크, 저장소와 냉각·전력 설비를 통합한 시설이다.
+- [AI 상호운용성 표준](/wiki/ai-interoperability-standard/) — AI 상호운용성 표준은 서로 다른 모델 형식, 런타임, 데이터·메타데이터 시스템이 의미를 보존하며 교환되도록 정한 공통 계약이다.
+- [AI 칩 가용성](/wiki/ai-chip-availability/) — AI 칩 가용성은 필요한 종류와 수량의 가속기를 목표 지역·시점·가격에 조달하고 사용할 수 있는 정도다.
 - [AI용 쿠버네티스](/wiki/kubernetes-for-ai/) — AI용 쿠버네티스는 컨테이너화한 학습·추론 작업을 쿠버네티스의 스케줄링과 선언적 제어로 운영하는 방식이다.
 - [CUDA](/wiki/cuda/) — CUDA는 NVIDIA GPU에서 병렬 커널을 작성·컴파일·실행하고 메모리와 라이브러리를 관리하는 프로그래밍 플랫폼이다.
 - [IEEE AI 표준](/wiki/ieee-ai-standards/) — IEEE AI 표준은 인공지능 시스템의 윤리, 투명성, 데이터, 평가와 기술 상호운용성을 다루는 IEEE 표준 묶음이다.
@@ -78,6 +84,7 @@ description: "모델 공개와 배포 생태계의 기본 개념"
 - [ISO/IEC JTC 1/SC 42](/wiki/iso-iec-jtc1-sc42/) — ISO/IEC JTC 1/SC 42는 인공지능 분야의 국제 표준화를 담당하는 ISO와 IEC 공동 기술위원회 산하 분과다.
 - [JAX](/wiki/jax/) — JAX는 NumPy와 유사한 배열 API에 자동 미분, 벡터화, 병렬화와 XLA 기반 컴파일 변환을 결합한 수치 계산 라이브러리다.
 - [Keras](/wiki/keras/) — Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다.
+- [Linux Foundation AI & Data](/wiki/linux-foundation-ai-data/) — Linux Foundation AI & Data는 개방형 인공지능과 데이터 프로젝트의 중립적 거버넌스·협업·생태계 지원을 제공하는 재단 조직이다.
 - [LLMOps](/wiki/llmops/) — LLMOps는 대규모 언어 모델 애플리케이션의 프롬프트, 검색, 평가, 모델 버전과 운영 위험을 관리하는 수명주기 실천이다.
 - [ML 파이프라인 오케스트레이터](/wiki/ml-pipeline-orchestrator/) — ML 파이프라인 오케스트레이터는 데이터 준비, 학습, 평가와 배포 작업의 의존성과 실행 상태를 관리하는 시스템이다.
 - [MLCommons](/wiki/mlcommons/) — MLCommons는 머신러닝 벤치마크, 데이터셋과 모범 사례를 공동 개발하는 산업·학계 컨소시엄이다.
@@ -85,8 +92,11 @@ description: "모델 공개와 배포 생태계의 기본 개념"
 - [MLOps](/wiki/mlops/) — MLOps는 머신러닝 시스템의 개발, 검증, 배포와 운영을 자동화하고 재현 가능하게 만드는 공학적 실천이다.
 - [NIST AI 프로그램](/wiki/nist-ai-program/) — NIST AI 프로그램은 신뢰할 수 있는 인공지능의 측정, 표준, 위험 관리와 기술 연구를 추진하는 미국 국립표준기술연구소의 활동군이다.
 - [NVLink](/wiki/nvlink/) — NVLink는 NVIDIA 프로세서와 가속기 사이에 높은 대역폭과 직접 메모리 접근 경로를 제공하는 전용 인터커넥트 계열이다.
+- [OECD AI 원칙](/wiki/oecd-ai-principles/) — OECD AI 원칙은 포용적 성장, 인간 중심 가치, 투명성, 견고성, 책임성을 중심으로 신뢰할 수 있는 AI 정책 방향을 제시하는 정부 간 권고다.
+- [Partnership on AI](/wiki/partnership-on-ai/) — Partnership on AI는 산업계·시민사회·학계가 AI의 책임 있는 개발과 사용에 관한 연구와 실무 지침을 공동으로 만드는 비영리 협력체다.
 - [PyTorch](/wiki/pytorch/) — PyTorch는 동적 텐서 연산, 자동 미분, 신경망 모듈과 분산 학습 도구를 제공하는 오픈소스 머신러닝 프레임워크다.
 - [ROCm](/wiki/rocm/) — ROCm은 AMD GPU에서 계산 커널, 수학 라이브러리, 컴파일러와 분산 통신을 제공하는 개방형 소프트웨어 플랫폼이다.
 - [SafeTensors](/wiki/safetensors/) — SafeTensors는 텐서 메타데이터와 원시 바이트를 분리해 저장하고 임의 코드 실행을 피하도록 설계된 모델 가중치 형식이다.
 - [TensorFlow](/wiki/tensorflow/) — TensorFlow는 텐서 계산, 자동 미분, 모델 학습·서빙·배포 도구를 제공하는 오픈소스 머신러닝 플랫폼이다.
 - [Transformers 라이브러리](/wiki/transformers-library/) — Transformers 라이브러리는 사전학습된 트랜스포머 모델, 토크나이저, 설정과 학습·추론 유틸리티를 공통 API로 제공한다.
+- [W3C 웹 머신러닝](/wiki/w3c-web-machine-learning/) — W3C 웹 머신러닝은 브라우저와 웹 애플리케이션에서 장치의 신경망 가속 기능을 이식성 있게 사용하도록 표준 API를 정의하는 활동이다.

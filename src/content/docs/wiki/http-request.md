@@ -103,10 +103,13 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 ## 이 문서를 가리키는 문서
 
 - [API 클라이언트](/wiki/api-client/)
+- [API 비용 추적](/wiki/api-cost-tracking/)
 - [API 지원 종료](/wiki/api-deprecation/)
 - [API 엔드포인트](/wiki/api-endpoint/)
 - [API 키](/wiki/api-key/)
+- [API 로깅](/wiki/api-logging/)
 - [API 페이지네이션](/wiki/api-pagination/)
+- [API 할당량](/wiki/api-quota/)
 - [API 형식 생성](/wiki/api-type-generation/)
 - [API 버전 관리](/wiki/api-versioning/)
 - [API 래퍼](/wiki/api-wrapper/)
@@ -120,6 +123,7 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [클라이언트 미들웨어](/wiki/client-middleware/)
 - [명령줄 API 클라이언트](/wiki/command-line-api-client/)
 - [컴플리션 API](/wiki/completion-api/)
+- [동시성 한도](/wiki/concurrency-limit/)
 - [콘텐츠 유형](/wiki/content-type/)
 - [자격 증명 순환](/wiki/credential-rotation/)
 - [교차 출처 자원 공유](/wiki/cross-origin-resource-sharing/)
@@ -133,6 +137,7 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [함수 호출](/wiki/function-calling/)
 - [문법 제약 생성](/wiki/grammar-constrained-generation/)
 - [HMAC 인증](/wiki/hmac-authentication/)
+- [HTTP 429](/wiki/http-429/)
 - [HTTP 헤더](/wiki/http-header/)
 - [HTTP 메시지 본문](/wiki/http-message-body/)
 - [HTTP 메서드](/wiki/http-method/)
@@ -143,6 +148,7 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [JSON](/wiki/json/)
 - [JSON 스키마](/wiki/json-schema/)
 - [JSON 웹 토큰](/wiki/json-web-token/)
+- [리키 버킷](/wiki/leaky-bucket/)
 - [최소 권한](/wiki/least-privilege/)
 - [MIME 유형](/wiki/mime-type/)
 - [콘텐츠 조정 API](/wiki/moderation-api/)
@@ -157,6 +163,8 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [실시간 API](/wiki/realtime-api/)
 - [요청 인터셉터](/wiki/request-interceptor/)
 - [요청-응답 패턴](/wiki/request-response-pattern/)
+- [요청 서명](/wiki/request-signing/)
+- [요청 조절](/wiki/request-throttling/)
 - [응답 검증](/wiki/response-validation/)
 - [REST API](/wiki/rest-api/)
 - [재시도 정책](/wiki/retry-policy/)
@@ -170,6 +178,7 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [무상태 API](/wiki/stateless-api/)
 - [동기 API 요청](/wiki/synchronous-api-request/)
 - [동기 클라이언트](/wiki/synchronous-client/)
+- [토큰 버킷](/wiki/token-bucket/)
 - [도구 인수](/wiki/tool-argument/)
 - [도구 선택 제어](/wiki/tool-choice/)
 - [도구 정의](/wiki/tool-definition/)
@@ -181,6 +190,7 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [통합 응답 API](/wiki/unified-response-api/)
 - [통합 자원 식별자](/wiki/uri/)
 - [통합 자원 위치 지정자](/wiki/url/)
+- [사용량 계측](/wiki/usage-metering/)
 
 ## 이 문서를 포함하는 코스
 
