@@ -158,9 +158,11 @@ Top-p 샘플링의 정의, 작동 단계, 입력과 출력, 필요한 데이터,
 
 ## 이 문서를 가리키는 문서
 
+- [활성값 양자화](/wiki/activation-quantization/)
 - [수락 제어](/wiki/admission-control/)
 - [배치 추론](/wiki/batch-inference/)
 - [캐시 축출](/wiki/cache-eviction/)
+- [캐시 적중률](/wiki/cache-hit-rate/)
 - [캐시 오프로딩](/wiki/cache-offloading/)
 - [청크 프리필](/wiki/chunked-prefill/)
 - [제약 디코딩](/wiki/constrained-decoding/)
@@ -171,12 +173,16 @@ Top-p 샘플링의 정의, 작동 단계, 입력과 출력, 필요한 데이터,
 - [초안 모델](/wiki/draft-model/)
 - [동적 배칭](/wiki/dynamic-batching/)
 - [엣지 추론](/wiki/edge-inference/)
+- [FP8 추론](/wiki/fp8-inference/)
 - [빈도 페널티](/wiki/frequency-penalty/)
+- [GGUF 형식](/wiki/gguf-format/)
 - [그리디 디코딩](/wiki/greedy-decoding/)
 - [추론 자동 확장](/wiki/inference-autoscaling/)
 - [추론 엔드포인트](/wiki/inference-endpoint/)
 - [추론 부하 분산](/wiki/inference-load-balancing/)
 - [추론 서버](/wiki/inference-server/)
+- [INT4 추론](/wiki/int4-inference/)
+- [INT8 추론](/wiki/int8-inference/)
 - [토큰 간 지연 시간](/wiki/inter-token-latency/)
 - [KV 캐시 양자화](/wiki/kv-cache-quantization/)
 - [길이 페널티](/wiki/length-penalty/)
@@ -187,10 +193,13 @@ Top-p 샘플링의 정의, 작동 단계, 입력과 출력, 필요한 데이터,
 - [다중 모델 서빙](/wiki/multi-model-serving/)
 - [다항 표본추출](/wiki/multinomial-sampling/)
 - [온라인 추론](/wiki/online-inference/)
+- [ONNX Runtime](/wiki/onnx-runtime/)
 - [페이지드 KV 캐시](/wiki/paged-kv-cache/)
+- [학습 후 양자화](/wiki/post-training-quantization/)
 - [프리필 단계](/wiki/prefill-phase/)
 - [프리픽스 캐싱](/wiki/prefix-caching/)
 - [존재 페널티](/wiki/presence-penalty/)
+- [프롬프트 조회 디코딩](/wiki/prompt-lookup-decoding/)
 - [반복 페널티](/wiki/repetition-penalty/)
 - [요청 대기열](/wiki/request-queue/)
 - [요청 스케줄러](/wiki/request-scheduler/)
@@ -203,6 +212,7 @@ Top-p 샘플링의 정의, 작동 단계, 입력과 출력, 필요한 데이터,
 - [토큰 샘플링](/wiki/token-sampling/)
 - [Top-k 샘플링](/wiki/top-k-sampling/)
 - [전형성 샘플링](/wiki/typical-sampling/)
+- [가중치 전용 양자화](/wiki/weight-only-quantization/)
 
 ## 이 문서를 포함하는 코스
 

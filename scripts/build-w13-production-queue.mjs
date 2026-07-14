@@ -18,14 +18,14 @@ for (const batch of batches.batches) for (const topicId of batch.topicIds) batch
 const queueTopics = topics.topics.map((topic) => {
   const pack = evidenceById.get(topic.id);
   const ready = publicationReady.has(topic.id);
-  const evidenceReady = Boolean(pack?.audit.readyForManualClaimReview);
+  const evidenceReady = ready && Boolean(pack?.audit.readyForManualClaimReview);
   let stage;
   let blockers;
   if (ready) { stage = 'published'; blockers = []; }
-  else if (topic.state === 'candidate') { stage = 'research-queued'; blockers = ['article-draft', 'source-relevance-review', 'sentence-claim-review']; }
+  else if (!ready) { stage = 'research-queued'; blockers = ['article-draft', 'source-relevance-review', 'sentence-claim-review']; }
   else if (evidenceReady) { stage = 'claim-review-queued'; blockers = ['sentence-claim-review']; }
   else { stage = 'source-remediation'; blockers = [...new Set([...(pack?.audit.gaps ?? []).filter((gap) => gap !== 'manual-claim-review'), 'sentence-claim-review'])]; }
-  return { topicId: topic.id, categoryId: topic.primaryCategory, tier: topic.tier, state: topic.state, rank: topic.rank, batchId: batchByTopic.get(topic.id), stage, publicationReady: ready, evidenceReady, manualReviewRequired: Boolean(researchById.get(topic.id)?.manualReviewRequired), blockers };
+  return { topicId: topic.id, categoryId: topic.primaryCategory, tier: topic.tier, state: ready ? 'existing' : 'candidate', rank: topic.rank, batchId: batchByTopic.get(topic.id), stage, publicationReady: ready, evidenceReady, manualReviewRequired: Boolean(researchById.get(topic.id)?.manualReviewRequired), blockers };
 });
 
 const countStage = (stage) => queueTopics.filter((topic) => topic.stage === stage).length;

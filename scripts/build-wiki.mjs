@@ -8,7 +8,7 @@ const articleFiles = (await readdir('content-model/articles')).filter((file) => 
 const pathFiles = (await readdir('content-model/paths')).filter((file) => file.endsWith('.path.json'));
 const articles = (await Promise.all(articleFiles.map((file) => readJson(path.join('content-model/articles', file))))).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
 const courses = (await Promise.all(pathFiles.map((file) => readJson(path.join('content-model/paths', file))))).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
-const [w4Ledger, w5Ledger, w6Ledger, w7Ledger, w8Ledger, w9Ledger, w10Ledger, w11Ledger, w12Ledger, w13Ledger] = await Promise.all([
+const [w4Ledger, w5Ledger, w6Ledger, w7Ledger, w8Ledger, w9Ledger, w10Ledger, w11Ledger, w12Ledger, w13Ledger, w14Ledger] = await Promise.all([
   readJson('content-model/evidence/w4-claim-ledger.json'),
   readJson('content-model/evidence/w5-claim-ledger.json'),
   readJson('content-model/evidence/w6-claim-ledger.json'),
@@ -18,9 +18,10 @@ const [w4Ledger, w5Ledger, w6Ledger, w7Ledger, w8Ledger, w9Ledger, w10Ledger, w1
   readJson('content-model/evidence/w10-claim-ledger.json'),
   readJson('content-model/evidence/w11-claim-ledger.json'),
   readJson('content-model/evidence/w12-claim-ledger.json'),
-  readJson('content-model/evidence/w13-claim-ledger.json')
+  readJson('content-model/evidence/w13-claim-ledger.json'),
+  readJson('content-model/evidence/w14-claim-ledger.json')
 ]);
-const publicationReady = new Set([...w4Ledger.articles, ...w5Ledger.articles, ...w6Ledger.articles, ...w7Ledger.articles, ...w8Ledger.articles, ...w9Ledger.articles, ...w10Ledger.articles, ...w11Ledger.articles, ...w12Ledger.articles, ...w13Ledger.articles].filter((article) => article.publicationReady).map((article) => article.articleId));
+const publicationReady = new Set([...w4Ledger.articles, ...w5Ledger.articles, ...w6Ledger.articles, ...w7Ledger.articles, ...w8Ledger.articles, ...w9Ledger.articles, ...w10Ledger.articles, ...w11Ledger.articles, ...w12Ledger.articles, ...w13Ledger.articles, ...w14Ledger.articles].filter((article) => article.publicationReady).map((article) => article.articleId));
 const byId = new Map(articles.map((article) => [article.id, article]));
 const backlinks = new Map(articles.map((article) => [article.id, []]));
 const courseMap = new Map(articles.map((article) => [article.id, []]));

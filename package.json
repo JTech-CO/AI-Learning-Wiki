@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run wiki:w11:validate && npm run wiki:w11:queue && npm run wiki:w12:validate && npm run wiki:w12:queue && npm run wiki:w13:validate && npm run wiki:w13:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w11:render && npm run wiki:w12:render && npm run wiki:w13:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
+    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run wiki:w11:validate && npm run wiki:w11:queue && npm run wiki:w12:validate && npm run wiki:w12:queue && npm run wiki:w13:validate && npm run wiki:w13:queue && npm run wiki:w14:validate && npm run wiki:w14:queue && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run validate:generated && astro build && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w11:render && npm run wiki:w12:render && npm run wiki:w13:render && npm run wiki:w14:render && npm run sites:entry && npm run smoke && npm run links && npm run qa",
     "gen": "node scripts/build-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -77,7 +77,12 @@
     "wiki:w13:refresh": "node scripts/build-w13-claim-ledger.mjs",
     "wiki:w13:validate": "node scripts/validate-w13-claims.mjs",
     "wiki:w13:queue": "node scripts/build-w13-production-queue.mjs && node scripts/validate-w13-production-queue.mjs",
-    "wiki:w13:render": "node scripts/check-w13-render.mjs"
+    "wiki:w13:render": "node scripts/check-w13-render.mjs",
+    "wiki:w14:prepare": "node scripts/prepare-w14-batch.mjs",
+    "wiki:w14:refresh": "node scripts/build-w14-claim-ledger.mjs",
+    "wiki:w14:validate": "node scripts/validate-w14-claims.mjs",
+    "wiki:w14:queue": "node scripts/build-w14-production-queue.mjs && node scripts/validate-w14-production-queue.mjs",
+    "wiki:w14:render": "node scripts/check-w14-render.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

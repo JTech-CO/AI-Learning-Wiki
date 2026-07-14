@@ -160,6 +160,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [자동 프롬프트 최적화](/wiki/automatic-prompt-optimization/)
 - [자기회귀 언어 모델](/wiki/autoregressive-language-model/)
 - [시작·종료 토큰](/wiki/beginning-end-token/)
 - [바이트 단위 토큰화](/wiki/byte-level-tokenization/)
@@ -188,9 +189,18 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [신경망 스케일링 법칙](/wiki/neural-scaling-law/)
 - [다음 토큰 예측](/wiki/next-token-prediction/)
 - [미등록 토큰](/wiki/out-of-vocabulary-token/)
+- [출력 제약](/wiki/output-constraint/)
 - [패딩 토큰](/wiki/padding-token/)
 - [파라미터](/wiki/parameter/)
 - [파라미터 수](/wiki/parameter-count/)
+- [프롬프트 체이닝](/wiki/prompt-chaining/)
+- [프롬프트 압축](/wiki/prompt-compression/)
+- [프롬프트 구분자](/wiki/prompt-delimiter/)
+- [프롬프트 엔지니어링](/wiki/prompt-engineering/)
+- [프롬프트 민감도](/wiki/prompt-sensitivity/)
+- [프롬프트 템플릿](/wiki/prompt-template/)
+- [검색 결합 프롬프트](/wiki/retrieval-prompt/)
+- [역할 프롬프팅](/wiki/role-prompting/)
 - [스케일링 효율](/wiki/scaling-efficiency/)
 - [자기일관성 디코딩](/wiki/self-consistency-decoding/)
 - [SentencePiece](/wiki/sentencepiece/)
