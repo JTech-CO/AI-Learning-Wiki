@@ -56,7 +56,7 @@ const normalizeSentence = (value, article) => replaceTopic(value, article)
   .replace(/\s+/g, ' ')
   .trim()
   .toLowerCase();
-const normalizeParagraph = (value, article) => normalizeSentence(value, article).replace(/[.!?。]+$/g, '');
+export const normalizeParagraph = (value, article) => normalizeSentence(value, article).replace(/[.!?。]+$/g, '');
 const sentencesOf = (article) => article.sections
   .flatMap((section) => [...segmenter.segment(section.body)].map(({ segment }) => segment.trim()))
   .filter((sentence) => sentence.replace(/\s+/g, '').length >= 35);

@@ -1,0 +1,16 @@
+{
+  "version": "W21-2026-07-15",
+  "snapshotDate": "2026-07-15",
+  "scope": "duplicate paragraphs within the same article only",
+  "comparison": "topic labels, links, URLs, numbers, punctuation, and whitespace normalized using the W19 quality metric",
+  "retainOccurrence": "first",
+  "removePairedBoldHeading": true,
+  "semanticRewriteAllowed": false,
+  "crossArticleDeletionAllowed": false,
+  "safeguards": [
+    "all 1400 pre-change hashes must match W20",
+    "all duplicate counts must reach zero",
+    "W20 particle corrections must remain valid",
+    "W4-W18 claim ledgers must be refreshed"
+  ]
+}

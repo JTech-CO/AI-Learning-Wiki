@@ -1,0 +1,3058 @@
+{
+  "version": "W21-2026-07-15",
+  "snapshotDate": "2026-07-15",
+  "baselineCorpusSha256": "c7ed991e8f16e5d8f820b45982df6492b5dda6f077a37be2325d2f9614902f81",
+  "currentCorpusSha256": "60fdaae9a8e2a95e7bcbd41878dbfa488f9a28098638922e524edd586fdf79f7",
+  "policy": {
+    "scope": "within-article normalized duplicate blocks only",
+    "retainedOccurrence": "first",
+    "pairedHeadingRemoval": true,
+    "semanticRewriteAllowed": false,
+    "crossArticleDeletionAllowed": false,
+    "claimLedgerRefreshRequired": true
+  },
+  "totals": {
+    "articlesScanned": 1400,
+    "articlesChanged": 162,
+    "beforeDuplicateParagraphs": 427,
+    "afterDuplicateParagraphs": 0,
+    "paragraphsRemoved": 427,
+    "pairedHeadingsRemoved": 427,
+    "rawExactRemoved": 284,
+    "normalizedEquivalentRemoved": 143,
+    "bodyCharactersRemoved": 177714,
+    "baselineQualityAverage": 68.73,
+    "baselineP0": 162,
+    "baselineP1": 1238,
+    "baselineP2": 0,
+    "postQualityAverage": 68.82,
+    "postP0": 0,
+    "postP1": 1400,
+    "postP2": 0,
+    "depthRemediationArticles": 200,
+    "deduplicationRevealedDepthArticles": 132,
+    "preExistingDepthArticles": 68
+  },
+  "byCategory": {
+    "agents": {
+      "articlesChanged": 6,
+      "paragraphsRemoved": 20
+    },
+    "api": {
+      "articlesChanged": 6,
+      "paragraphsRemoved": 18
+    },
+    "ecosystem": {
+      "articlesChanged": 11,
+      "paragraphsRemoved": 45
+    },
+    "evaluation": {
+      "articlesChanged": 15,
+      "paragraphsRemoved": 47
+    },
+    "foundations": {
+      "articlesChanged": 11,
+      "paragraphsRemoved": 25
+    },
+    "inference": {
+      "articlesChanged": 15,
+      "paragraphsRemoved": 39
+    },
+    "llm": {
+      "articlesChanged": 7,
+      "paragraphsRemoved": 22
+    },
+    "mathematics": {
+      "articlesChanged": 15,
+      "paragraphsRemoved": 37
+    },
+    "multimodal": {
+      "articlesChanged": 12,
+      "paragraphsRemoved": 36
+    },
+    "neural": {
+      "articlesChanged": 15,
+      "paragraphsRemoved": 41
+    },
+    "retrieval": {
+      "articlesChanged": 14,
+      "paragraphsRemoved": 28
+    },
+    "safety": {
+      "articlesChanged": 12,
+      "paragraphsRemoved": 39
+    },
+    "training": {
+      "articlesChanged": 11,
+      "paragraphsRemoved": 11
+    },
+    "transformer": {
+      "articlesChanged": 12,
+      "paragraphsRemoved": 19
+    }
+  },
+  "changes": [
+    {
+      "articleId": "active-learning",
+      "title": "능동학습",
+      "categoryId": "foundations",
+      "beforeHash": "482db732df3e25f7a4db5ef02058341b1e1a1e9f16b1362141a20252af82b361",
+      "afterHash": "5a7047c0767115612c8ac0a8c3a0259fdf4673416ea0f3af241e701b0dd06c2d",
+      "removedCharacters": 271,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "adversarial-example",
+      "title": "적대적 예시",
+      "categoryId": "safety",
+      "beforeHash": "3ef2429f1cb70c84a386240687d24c6b94a716a550c1c3c5d5d2900590f010ab",
+      "afterHash": "ae42fea5a3649f67a229fbe43fc69e7501c431451e3beba560835fba68bb3403",
+      "removedCharacters": 2780,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "agent-goal",
+      "title": "에이전트 목표",
+      "categoryId": "agents",
+      "beforeHash": "9df1d645737ed15b993a8dff15c7228bbf53b52aa3eef48535a92ca0aecb16d2",
+      "afterHash": "2d94950a33b34c2f21f0262123e9c63dbbcd83b91010c5481ddaee007808163e",
+      "removedCharacters": 2785,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "agent-harness",
+      "title": "에이전트 하네스",
+      "categoryId": "agents",
+      "beforeHash": "2bb2d3bae7c5d100f7b281b31fdabb4759c43d74605b82416900c4ed631df728",
+      "afterHash": "245c34b9a159d2131938f7b825d05e16f96819049853cb4f7bf49a60afba7ae8",
+      "removedCharacters": 264,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "agent-task-decomposition",
+      "title": "에이전트 과제 분해",
+      "categoryId": "agents",
+      "beforeHash": "1981166582af75168afe31f62ebe98515bd7e029a9ec27ecae24e1014a3da186",
+      "afterHash": "e28c0d3175d3a17223570d06607f7af8b83dd9276defe41ed14bce406a3ba362",
+      "removedCharacters": 2272,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "ai-winter",
+      "title": "인공지능 겨울",
+      "categoryId": "foundations",
+      "beforeHash": "31a356fee79a713ddc6799ab639ff49a3608744da3c0b09a67d2a8f2cf74dc2f",
+      "afterHash": "aa6605393f7daef55db7e22bb985cd3f2b56b2015367d63a039bfeab18645cef",
+      "removedCharacters": 272,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "approximate-nearest-neighbor",
+      "title": "근사 최근접 이웃 검색",
+      "categoryId": "retrieval",
+      "beforeHash": "21d20d285a0f3a63d9b5faec63ff1621bf2f09f0a5b5e7797f4dacad2329b55a",
+      "afterHash": "d30200cce83987da82fa9b63427fe150eb5842eb778316c338cfd89fdeaeaab8",
+      "removedCharacters": 921,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "area-under-curve",
+      "title": "곡선 아래 면적",
+      "categoryId": "evaluation",
+      "beforeHash": "b3bd5b76683b1ca68d14bb7e798f1e12bb3a3d63ea3202c385c4b22f0560043c",
+      "afterHash": "98443ddf7043fe407fd8516aff1aa64a354fb3872d5892161ed665cdf3862a20",
+      "removedCharacters": 2765,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "attention-head",
+      "title": "어텐션 헤드",
+      "categoryId": "transformer",
+      "beforeHash": "e4c73118b8cf21add9643fb44d874c456e599c543ecd91b5f4c9d50261ac9e16",
+      "afterHash": "5e2ed2a93f6d183917fabc2c313e6e73f808b033fec183859636898275f1bc93",
+      "removedCharacters": 528,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "attention-matrix",
+      "title": "어텐션 행렬",
+      "categoryId": "transformer",
+      "beforeHash": "aec57d555181ebb35777a25c31807d80707734b7cc8dee468bc251f83ab129cd",
+      "afterHash": "6dfade1ae04f7613466210959c4ad3b51692d0e0d1de5d2c135463f112ed69ad",
+      "removedCharacters": 264,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "attention-score",
+      "title": "어텐션 점수",
+      "categoryId": "transformer",
+      "beforeHash": "d3c0a6df4988338838f874bea956b0893053bb751f5d4bd0d3c3299b55374832",
+      "afterHash": "bd3246fea4de1f4f17fe63a4baed9a1c382297dc3d9a7dab0863e5215307e42a",
+      "removedCharacters": 528,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "basis-vector",
+      "title": "기저 벡터",
+      "categoryId": "mathematics",
+      "beforeHash": "9171a334379cc5862901b02616f10ff5d5b888bc9175b3e6ff8fce6c14929e7c",
+      "afterHash": "e9737e0ee0eec278ed87e7b6462fa80a61d9249f4ed18f49fa4ff5634ff260d5",
+      "removedCharacters": 268,
+      "affectedSections": [
+        "applications"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "benchmark-contamination",
+      "title": "벤치마크 오염",
+      "categoryId": "training",
+      "beforeHash": "a3b125373b3365ee78f0a177c51c6cd96c14250d716288cbc86c68eb52ebc28c",
+      "afterHash": "e095dd1b9a04b91fe79b61b87893aaf2ae052e23c1f85de2e6d58692db903cf1",
+      "removedCharacters": 269,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "bertscore",
+      "title": "BERTScore",
+      "categoryId": "evaluation",
+      "beforeHash": "6195a508f5d20aa89587c039f7cdf79eefa6cf7329840748d69596c2222e811c",
+      "afterHash": "b7e8cfa9242fe2370b2ae590ed1c10443ae901e5240218da3c7869f25393ab86",
+      "removedCharacters": 528,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "bias",
+      "title": "편향 항",
+      "categoryId": "neural",
+      "beforeHash": "be84884e089b461e483f53fc0363319abf8975358824472c650c0e7e88d4076a",
+      "afterHash": "50579c0c2d57a0c05de99a834268736a4396242c66efcb816dc3c75399c5dc83",
+      "removedCharacters": 1176,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "bidirectional-attention",
+      "title": "양방향 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "7614b23be60dd670766b97f1986acc9425494bf6eb42ef9689c4109e490dbebd",
+      "afterHash": "19166db899d0db50378b96149153664dde7a6560085307eb38b64c937c99b6ff",
+      "removedCharacters": 265,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "bleu-score",
+      "title": "BLEU 점수",
+      "categoryId": "evaluation",
+      "beforeHash": "64883f6f7b7200da8cc90097c9e5fc26a0d7c3e43bc0b03114748f468e2afbc8",
+      "afterHash": "736e29d4f954a2a6f928f97557a816f444cb2eba8b6acc5650b21694d4605047",
+      "removedCharacters": 524,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "brier-score",
+      "title": "브라이어 점수",
+      "categoryId": "evaluation",
+      "beforeHash": "4d08e5dc7137c01121f9c3084419bd1345fda762f93b31a7baeff45ad43594bc",
+      "afterHash": "ef7cfb84d8acea442d5ad3bf3f19cf708022ab762dcdfc3c33f642c5e5f15cb0",
+      "removedCharacters": 524,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "byte-pair-encoding",
+      "title": "바이트 페어 인코딩",
+      "categoryId": "llm",
+      "beforeHash": "89ddca8ad5361dec5f98b44c6e306e067415d044aafbb72392b8cfaadb2e50d6",
+      "afterHash": "0b8df9b0ded0e98679cb6f0f3461fcceca10aa83fb7b7a8fb6dc536988d9ec6a",
+      "removedCharacters": 918,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "completion",
+      "title": "컴플리션",
+      "categoryId": "llm",
+      "beforeHash": "878e159ceb9ef464abc6eab56243bb0d91f513097172f4b1014ed0d36d764832",
+      "afterHash": "3793ad98a44d72c286b0637066a755de54e42fed5d3519ef67e8ec3313360f3d",
+      "removedCharacters": 885,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "computational-graph",
+      "title": "계산 그래프",
+      "categoryId": "neural",
+      "beforeHash": "4e0f9e06d743622ffabae511d00cab6a21fc7e0ed2de05a0996dedbd54ca4eb3",
+      "afterHash": "1826bacdb9527ae11510cb9e687c86daead40c83326a10dacd6060651ed809dd",
+      "removedCharacters": 2535,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "confusion-matrix",
+      "title": "혼동 행렬",
+      "categoryId": "evaluation",
+      "beforeHash": "a0b7c7c72598006e5767c152668d33047482e8ccf1f2eabc456bc5d221844764",
+      "afterHash": "b253e7a1fb76a808f134eebcfff8334dae6c7ebc7c47dc797e42f4564a01c132",
+      "removedCharacters": 2740,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "connectionism",
+      "title": "연결주의",
+      "categoryId": "foundations",
+      "beforeHash": "7ee59734c3c0467f980e2dacc173d52f16bc0973316c05f42b882c658563d4b7",
+      "afterHash": "14861a96a9b0051eca952c5b065fe1a88aad36ae265583969347dbfb1651fa94",
+      "removedCharacters": 2700,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "constrained-decoding",
+      "title": "제약 디코딩",
+      "categoryId": "inference",
+      "beforeHash": "be14fc265fac30587baaf8cab9883c7340101d60f04a9a84e073019dba9b3450",
+      "afterHash": "ffd041a0d3aa80c1da095c0d56eef6f582a5b1b27ee0268c63ff407b16bfe4ae",
+      "removedCharacters": 261,
+      "affectedSections": [
+        "applications"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "content-moderation",
+      "title": "콘텐츠 조정",
+      "categoryId": "safety",
+      "beforeHash": "ccfdebe04ec79a9d894ce0215ebd2f5b85d8ed29e15290824a869bfcf460872c",
+      "afterHash": "e89a26cc96a7540c6e2f915647797972d0a8db59368a835b041f3556f8aee5ad",
+      "removedCharacters": 1184,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "content-type",
+      "title": "콘텐츠 유형",
+      "categoryId": "api",
+      "beforeHash": "996757e73f33522930ed4977e7513c48b94d7547e71f41bd2f53dede70963365",
+      "afterHash": "2fa851e425c5d290f7aa3be4d64e4655dd33dc81631e9382ddbf23d8e81e9130",
+      "removedCharacters": 255,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "contrastive-search",
+      "title": "대조 탐색",
+      "categoryId": "inference",
+      "beforeHash": "47abd4a995d63ccb90a926991101a2bd90bef05916c7c9aa44e36841ca595855",
+      "afterHash": "f78564bf07712ea25a9e490ac13d406ff84a3927e8754009e1b82d8800e98c62",
+      "removedCharacters": 520,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "cross-lingual-embedding",
+      "title": "교차언어 임베딩",
+      "categoryId": "retrieval",
+      "beforeHash": "e58707f980dbbb5c1d335135f13a39ddf61ad35b53811970d787d7054fa7666b",
+      "afterHash": "5a4b8ab35861cc1ad2b11b43ef03974d73d4bd1ff0c44b5ef4a5e67a791f95a6",
+      "removedCharacters": 265,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "data-curriculum",
+      "title": "데이터 커리큘럼",
+      "categoryId": "training",
+      "beforeHash": "6ec6cbb380ad6c76083e9cee2843230ac9832fdd2aa5c45514e968855baf331c",
+      "afterHash": "037c6a497cb46e2f1cc3d585fefa73a372735cf68b10eb9604482341e80d21e3",
+      "removedCharacters": 269,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "data-mixture",
+      "title": "데이터 혼합",
+      "categoryId": "training",
+      "beforeHash": "7eed4df476c827612905459d3a77b02a606a018da335e42b03882e3e28706f9c",
+      "afterHash": "6d1752d225297a4c8d9be6c603576cdf6a944fc3d270d6f63017c9dc65da76cc",
+      "removedCharacters": 267,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "dataset-deduplication",
+      "title": "데이터셋 중복 제거",
+      "categoryId": "training",
+      "beforeHash": "33e33648b3d6e63a2462a3beb88da825b7e03996dd8ed3bbaf6f0a2ede3f42ec",
+      "afterHash": "6b5d70dba9808d9426d5cea8f56dcef0eab045d9002c978c1a40dbca18900544",
+      "removedCharacters": 271,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "denoising-objective",
+      "title": "잡음 제거 목표",
+      "categoryId": "training",
+      "beforeHash": "9b068cd852eb32573a5539652dc32bc726078336b299ece7b09d9721009a34b6",
+      "afterHash": "2ea56ed7f38dcd0cfe6a3fb7a9c95773574e40b44db80ee0bb849d1dca2f817c",
+      "removedCharacters": 264,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "dense-layer",
+      "title": "완전연결층",
+      "categoryId": "neural",
+      "beforeHash": "e02d8fbdd56e116686539f4dfd7a6495faf97353a3a7514df219d3d149b66a5a",
+      "afterHash": "e2bde39ecf2d80252754fb8c3e013242d019bbc2431976a21af4712492229e65",
+      "removedCharacters": 518,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "determinant",
+      "title": "행렬식",
+      "categoryId": "mathematics",
+      "beforeHash": "5a3f32592e131c2af81d9e85523ac68e39465f9225f6dd77a1cf8a4fdd730592",
+      "afterHash": "e33877a4e768be78c97afd06f3f064b39d4f3d34cc2188edae9e0f4327219353",
+      "removedCharacters": 532,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "diverse-beam-search",
+      "title": "다양성 빔 탐색",
+      "categoryId": "inference",
+      "beforeHash": "27e9c90f4d4f67f7f11a65a51aebfea2d938aa19bda43924591008609c947c47",
+      "afterHash": "80210cda81c0917a00bb9fbef99384cd77a388aa7664488e078650bbf9c88f6e",
+      "removedCharacters": 526,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "document-embedding",
+      "title": "문서 임베딩",
+      "categoryId": "retrieval",
+      "beforeHash": "9bdc9f65336dd45ab76654163861db3633bedd89c3cd1f2f61e6ba154716f3b9",
+      "afterHash": "fddd5592f37155b703d98ed1574d0784e8f5dbd37d63e89fa0d0d794667b2c24",
+      "removedCharacters": 524,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "document-packing",
+      "title": "문서 패킹",
+      "categoryId": "training",
+      "beforeHash": "46fc8109366be25f0bcceb9690ad5fb94adee6b9efbb6b229f116720d6c7c1af",
+      "afterHash": "e03da28d059f54c7761ca1f944a819475ed0fa2f19ae423e0fe012eaa341c9b6",
+      "removedCharacters": 267,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "dot-product-attention",
+      "title": "닷프로덕트 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "c1c5187b8943979c10ed9709415e93ebef6ae8570d6357c78a5a5281af576b0c",
+      "afterHash": "329bf0ee4943ce211e835c209ab8ac61a896aeaf1f38a35087cc9687d8c4e522",
+      "removedCharacters": 266,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "dot-product",
+      "title": "내적",
+      "categoryId": "mathematics",
+      "beforeHash": "1dbdc5d088d7931655c2f82e0c9eda747e4362879fa210c631f47e2486653275",
+      "afterHash": "e41e42751875f0d768a16a1b7f155af3eed2a43b360787c96cdead5f78fe597c",
+      "removedCharacters": 2560,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "eigendecomposition",
+      "title": "고유분해",
+      "categoryId": "mathematics",
+      "beforeHash": "4441cbc806c22f461ff8b9c9f39ad45aafb79af272cbe76547225da690d127b2",
+      "afterHash": "ee0c9e95c37e0b7cae16fa8b5118d4c268777e6e5fa3fd424c49b8ef0d1bf89a",
+      "removedCharacters": 534,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "eigenvalue-eigenvector",
+      "title": "고윳값과 고유벡터",
+      "categoryId": "mathematics",
+      "beforeHash": "ab8d66704f88bf22e7622ee241c0daeeca9e4114d6df3fafa325a89c455ee838",
+      "afterHash": "dad974e6d564f955b9e57e5833d0673131fdebec388dc084d8834e8b5321680b",
+      "removedCharacters": 272,
+      "affectedSections": [
+        "applications"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "embedding-anisotropy",
+      "title": "임베딩 비등방성",
+      "categoryId": "retrieval",
+      "beforeHash": "db9278e8b6fe390f79138f72f9a918098ffdcacdc71d16df41078328d4156ab7",
+      "afterHash": "5fcb627cf8c52d54a513d01220a40982d9b8a6b0570d762530c9e69667d43045",
+      "removedCharacters": 264,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "embedding-dimension",
+      "title": "임베딩 차원",
+      "categoryId": "retrieval",
+      "beforeHash": "817648abdd7ed73eaede69bd238dd92a430e75ffa293d6305a7b3ba2e77aa9c9",
+      "afterHash": "0c4b041c2cc7ecb78266789c48643d761beb196ebf5e2771ed1941e893c0da38",
+      "removedCharacters": 263,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "embedding-drift",
+      "title": "임베딩 드리프트",
+      "categoryId": "retrieval",
+      "beforeHash": "8d38b904f81370794083e686ab6270a30815c1c9c44e7cdddc1c91d8031639af",
+      "afterHash": "4551e859d9c60dc9ff9b50ec8ad1f907115377641b749c2fb0ddfad33a082980",
+      "removedCharacters": 265,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "embedding-normalization",
+      "title": "임베딩 정규화",
+      "categoryId": "retrieval",
+      "beforeHash": "62420e93716a9e54d5a313a69eaef418f3a1710bdcc2bca5399c0fd73bd24b9b",
+      "afterHash": "a7087db1fc9b3999a9d99c8e84d6bed8508fa5e41656d40aa322629d2825724e",
+      "removedCharacters": 264,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "embedding-pooling",
+      "title": "임베딩 풀링",
+      "categoryId": "retrieval",
+      "beforeHash": "b2d2a6f70af9695b0c82fd73b23a2e5957b49461db596c4aed42f7fe7fcf45a5",
+      "afterHash": "a5955a3e77143e3032822f7e14bef1c2fab663dac361b57edacf6d4084fe55d6",
+      "removedCharacters": 262,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "evasion-attack",
+      "title": "회피 공격",
+      "categoryId": "safety",
+      "beforeHash": "b79e0d12d510892715c8eba8e03fa63d7a8991c519c47b4b21c4717f42bc8f88",
+      "afterHash": "0bcf489542456389639c66e4a99c53ed6f1a46e74dab9459e2a27c99abe7935d",
+      "removedCharacters": 2695,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "exact-match",
+      "title": "완전 일치",
+      "categoryId": "evaluation",
+      "beforeHash": "03e67a822698528d48a992b6a3369bc60eedc513442981927b89cb10c38238d2",
+      "afterHash": "01cb0124ea0d4efc187fd65bdd9ffe22b60f2a12a777072a57244268860a0c36",
+      "removedCharacters": 520,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "excessive-agency",
+      "title": "과도한 자율성",
+      "categoryId": "safety",
+      "beforeHash": "37802526399304f13a5d291c86f71e6b6a1e1c3f9943e1c52f537307c3885df2",
+      "afterHash": "08ad1f22bb42eaff818e4aff690088831a83114ba788eff96dc5953e824a4719",
+      "removedCharacters": 269,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "expected-calibration-error",
+      "title": "기대 보정 오차",
+      "categoryId": "evaluation",
+      "beforeHash": "e94056151f46673b24b776dc5be0d99574e838b8cc0de94d31cf820d7c4f8c49",
+      "afterHash": "df4d9ffb1c7bf7d5d4c6b451bfb66a7f96eb1d9906b4c48e18f3d5adb013c373",
+      "removedCharacters": 263,
+      "affectedSections": [
+        "applications"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "forward-pass",
+      "title": "순전파",
+      "categoryId": "neural",
+      "beforeHash": "9204add7a2fd64a3e54d92cd0e7a1f2b91691876ee08d731a69ba7d58ba4fe76",
+      "afterHash": "69d2f73f4bcb9c602087affdb36c5330449d35aea8b8df1c7c91df0a4d2bab19",
+      "removedCharacters": 2550,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "foundation-model",
+      "title": "파운데이션 모델",
+      "categoryId": "foundations",
+      "beforeHash": "0c6b321e0d79d64d7132c988b21ebabbe1eb3e01c45ff60479ca821a1f96b19b",
+      "afterHash": "ac94d766bcec910a10817d3b8c9de823a168259c4d8327380e63af4f15d1abf4",
+      "removedCharacters": 274,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "frequency-penalty",
+      "title": "빈도 페널티",
+      "categoryId": "inference",
+      "beforeHash": "3b408f0089fe8c73f804de2ef1b1c29d484fa0bba77a172312a27a454ad0c24d",
+      "afterHash": "b551a0ad9f5e2ca09a3bedc56215ccf6fd8cb5266d8b17847ad052e03252e1a0",
+      "removedCharacters": 522,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "global-attention",
+      "title": "글로벌 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "222b88e11e966867744eda4a6efc7bc731d086ef50e8d41a8c036fba497611ab",
+      "afterHash": "3d1ac9148f466f2347d7f49026a259743427c291cf2589d4c58282257eee6281",
+      "removedCharacters": 530,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "good-old-fashioned-ai",
+      "title": "고전적 인공지능",
+      "categoryId": "foundations",
+      "beforeHash": "2e8411142ee1f0d34280bc2ec39b94c7639d7ae1a766e0a19bd69f0e51973b49",
+      "afterHash": "b220a065fcfd56e7592067550da727bbb38f0eecc231c25f3cbde23b2cc462e3",
+      "removedCharacters": 2725,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "gradient-signal",
+      "title": "그래디언트 신호",
+      "categoryId": "neural",
+      "beforeHash": "689148f3074de575ab8208788cd4478ab41072ec05fdf8b04f3cbf1051c7043a",
+      "afterHash": "be0adbfea0fd6850665e115efda72b131007917c0d2e3b70846d14dac1f5e662",
+      "removedCharacters": 524,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "greedy-decoding",
+      "title": "그리디 디코딩",
+      "categoryId": "inference",
+      "beforeHash": "1ddb6fa14f51f1f69e7d202ac6d5759b24b08d3c47eed39bc57d6d5cce692431",
+      "afterHash": "e88b2768d16c8a88dee8fe8f0c26666affa4e13fb3b60ea121d455fb99c3aaa7",
+      "removedCharacters": 897,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "grouped-query-attention",
+      "title": "그룹 쿼리 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "12101a3d72626d46bedec9d12db1579a856a3a49611b59015c6dd9d88d5c47eb",
+      "afterHash": "841acd207481aceb130cb2ca96ce34031a490d217954b7c9d0adc0213d9fec7b",
+      "removedCharacters": 267,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "hidden-layer",
+      "title": "은닉층",
+      "categoryId": "neural",
+      "beforeHash": "6f7e90883246e52fd0333aa3fe7319c962b3573643d0f2795596688ab9194647",
+      "afterHash": "5ca4914efe377b0d3483665b81bd5236b2f1c3b0ac78096c78539727c4af47c2",
+      "removedCharacters": 514,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "hidden-state",
+      "title": "은닉 상태",
+      "categoryId": "neural",
+      "beforeHash": "1e38006ee97e31eba3aab1eefbcb7301b77bd0e5a9b65cfb9dc97af1108196a2",
+      "afterHash": "a909415b6b2ad9da6b5808ccd4a2088cbb7c76d39f29951c01d28bd4db1eb608",
+      "removedCharacters": 518,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "http-header",
+      "title": "HTTP 헤더",
+      "categoryId": "api",
+      "beforeHash": "22317676e090fe7d857d7abf369d8055b541331821c5af27e53da51db794b0c2",
+      "afterHash": "70a4dc9e2b1846b52e2c3ba399994879870a9591753cfb5523167464d81107e5",
+      "removedCharacters": 2372,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "http-message-body",
+      "title": "HTTP 메시지 본문",
+      "categoryId": "api",
+      "beforeHash": "7d3dc1265d013364ebc782557c451ad1d713ae05b36f034e30d367dd005b74f6",
+      "afterHash": "6acd43caa74d4ddc3fa97fd0955f6c4fc0cfdb4b58cdb0664d2705f8cde7e5da",
+      "removedCharacters": 2368,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "http-status-code",
+      "title": "HTTP 상태 코드",
+      "categoryId": "api",
+      "beforeHash": "cfd645f524be9ffb3b86782e5790e63b5ff2d52157ea5992270fd9dcaae8636f",
+      "afterHash": "41f1830b2efb3bda9873b2df13bc1449978d921b7494e63719f570ec28543483",
+      "removedCharacters": 2364,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "image-captioning",
+      "title": "이미지 캡셔닝",
+      "categoryId": "multimodal",
+      "beforeHash": "8430e1cee75e9cbd0054c84c840c831672eb7b49e2799d93f60ae815d95412f6",
+      "afterHash": "45d8d3f06a236a20e5003ece2f959dcc166beba042620e85ed9c076c806f8edb",
+      "removedCharacters": 2660,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "image-embedding",
+      "title": "이미지 임베딩",
+      "categoryId": "multimodal",
+      "beforeHash": "6f4cc40ad31ae41a27473379d93bddcaa11a956627e0375993f136157dbd0f3d",
+      "afterHash": "a40a11434b43987a9e505039338610ab1cbb723296464ff00a5ae7c8d795716d",
+      "removedCharacters": 520,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "image-patch",
+      "title": "이미지 패치",
+      "categoryId": "multimodal",
+      "beforeHash": "09e49b7325346002b3dd16bb18672f1a327b70aa97e82539d4b333015ade6f57",
+      "afterHash": "35f35e7a4c0948c7297b83421051d819dc27c7e4e8f1b225eb9af4b841e94678",
+      "removedCharacters": 520,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "image-retrieval",
+      "title": "이미지 검색",
+      "categoryId": "multimodal",
+      "beforeHash": "d33ab91b98d3b2267d59cc29f66fae4bf94052aa4fb7167f8ae569751346aa3f",
+      "afterHash": "5d4259ff4ad3dd843d5a9aa423a094bdd918e970d379f2ac56e0c16aaa4f62c9",
+      "removedCharacters": 260,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "image-segmentation",
+      "title": "이미지 분할",
+      "categoryId": "multimodal",
+      "beforeHash": "933ab3a29c51f80a4e0133eb3df80cf9dddbc0bfd54268f2e46076c23addaf72",
+      "afterHash": "7b21c4fb126e2589edbab57efc13d1547f5ada98e92e3fd4bfdbb05bea89d0a0",
+      "removedCharacters": 2620,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "input-layer",
+      "title": "입력층",
+      "categoryId": "neural",
+      "beforeHash": "e3f27a54dccb0c7a859561d408fd3932304b92e8740e9fb8817fd0bd8a02ad9a",
+      "afterHash": "5b287a9ab8e142f3950da40c917c3827aa8bb8ffc3d070c7bd93f9af0847155f",
+      "removedCharacters": 2645,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "inverted-index",
+      "title": "역색인",
+      "categoryId": "retrieval",
+      "beforeHash": "6c6878198b386d679dbb702b0fc56ebace00e5ccbb1434e6b2ac50c37cec943d",
+      "afterHash": "99cbce18b949d72bff2d52bded514054190e89603cf7009d80c8766c7c84d85f",
+      "removedCharacters": 534,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "json",
+      "title": "JSON",
+      "categoryId": "api",
+      "beforeHash": "31a92e5810381666dd72b7686e1e0f81d66487b5020e0608f521ede0d3a824b4",
+      "afterHash": "7afcccf0e9e4318dfd439df3d692efeae0f5549684ead201468334d52502b29c",
+      "removedCharacters": 1168,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "length-penalty",
+      "title": "길이 페널티",
+      "categoryId": "inference",
+      "beforeHash": "302b8de83081c7d7e65de0d3fadd6af707f24669fd168d63c0c7ab7ece2bfd43",
+      "afterHash": "4b9053e100d33d14e1846e50b590c46ab239d9b0eca050a56ac0eb0f0c056cf0",
+      "removedCharacters": 522,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "linear-attention",
+      "title": "선형 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "8f7dbc50d42f785e24ef6992ccf016601ad84cdc747ec906176961962529eacc",
+      "afterHash": "ad7d2f37f3312be423141469a37e2e715f47adde3fd9f8f923f38a2b67235294",
+      "removedCharacters": 528,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "linear-layer",
+      "title": "선형층",
+      "categoryId": "neural",
+      "beforeHash": "c16c2746fc2acfc7a33c1d24f552a08de515e513f8065374edc76aeae25fd1b8",
+      "afterHash": "84cd0d72c16a124077178c6491c15c999919ddc52646f116908bb45546a0d9c1",
+      "removedCharacters": 514,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "linear-transformation",
+      "title": "선형 변환",
+      "categoryId": "mathematics",
+      "beforeHash": "f0381b3bed7283d1748ccd73556ca6bc2ebec51fb7d39153d71512f61b4f8b63",
+      "afterHash": "eb69943aead5b88be73fd52303e6968e73a2646aee73c10d8644d0791c91391f",
+      "removedCharacters": 536,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "local-attention",
+      "title": "로컬 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "9a443949890b699b509979f5af330c9b5f9b131d79e410f225b9988f2977ae21",
+      "afterHash": "696e65f0471c99cad71707e39fc8a05547b2720b3767ed81bf4cedab1b1e8fed",
+      "removedCharacters": 263,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "log-loss",
+      "title": "로그 손실",
+      "categoryId": "evaluation",
+      "beforeHash": "8623944f2d65ef8f023ec62b149d4e4bdbff4c69e165d451a4c97256ea3ffbb5",
+      "afterHash": "231fd6c9990c261f0c195ad68eea8ef26abb2345750d6e327e4f85ee2dc3c26d",
+      "removedCharacters": 2725,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "loss-function",
+      "title": "손실 함수",
+      "categoryId": "neural",
+      "beforeHash": "8a8281acc087ca36d9c25eafae65bbe9eeeb63863ee2d7544c7e6b8171dad7d3",
+      "afterHash": "c56d909aa928ef1fc2fa5e0cd836ec8118ef6804a7f2886d2a48322b1c861d42",
+      "removedCharacters": 882,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "matrix-inverse",
+      "title": "역행렬",
+      "categoryId": "mathematics",
+      "beforeHash": "0e25f801f1e2fd996e7cb49b17c67801ca30345175c3c30af1934a8d884e36f1",
+      "afterHash": "b73fd7329645465c990a2bb0bf4b0caaad2534950940125e137f424802515346",
+      "removedCharacters": 530,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "matrix-rank",
+      "title": "행렬의 계수",
+      "categoryId": "mathematics",
+      "beforeHash": "ea8d050a627f4525db7cc73ad2a6d58a13bac09772a7555fa5180c51f741d37f",
+      "afterHash": "0e49cd0b2f190031316f6fcf1459f1f501d111b0044f0c06d8f6e2942512b301",
+      "removedCharacters": 538,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "matrix-transpose",
+      "title": "전치행렬",
+      "categoryId": "mathematics",
+      "beforeHash": "d07e8f56935b0bb87740172224947a396bd6e7762a0a8d0288bf52068b3c0d6d",
+      "afterHash": "39ac4f8996f48be1211f3ad559a9be781ff70e00e1d8e3ab9e091efd90791d11",
+      "removedCharacters": 2635,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "matryoshka-embedding",
+      "title": "마트료시카 임베딩",
+      "categoryId": "retrieval",
+      "beforeHash": "887e3353fff0fd19e5f0204851492dfb72a371fdbaa272015b0e304d1456c8d3",
+      "afterHash": "3bacf655edbf066fb7f705e19b571cf67c555350057f347984f693fd08296361",
+      "removedCharacters": 266,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "membership-inference",
+      "title": "멤버십 추론 공격",
+      "categoryId": "safety",
+      "beforeHash": "86e9feab7a661ed709751adf1f7128e50ca95b5ecee6eefcdb4bbee5d436c4e5",
+      "afterHash": "24fe9fbbc6ebea3116dbe93dcdd88983c2da87e43f97117c57d185691283e6cb",
+      "removedCharacters": 271,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "meteor-score",
+      "title": "METEOR 점수",
+      "categoryId": "evaluation",
+      "beforeHash": "3d87248e62fce742b7f5453cbc8c6014823ef6385cf9fc1feedf95ac21efcdf1",
+      "afterHash": "eab0bb82572cc0020e64d11bdd557cbc0eaed886f33fcba9df709fed1063696e",
+      "removedCharacters": 528,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "min-p-sampling",
+      "title": "Min-p 샘플링",
+      "categoryId": "inference",
+      "beforeHash": "570db866adad99de91466af9dfe1db9e4b5c3db3c69eb6b958704e7adeb0f09e",
+      "afterHash": "c21fc810f76811e69464e7cdf171a2d18d315d6c1e491b88e6afc381c462feb5",
+      "removedCharacters": 2770,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "model-artifact-format",
+      "title": "모델 아티팩트 형식",
+      "categoryId": "ecosystem",
+      "beforeHash": "7a5b9680f7a576d795d93a0f9a41afc7c2a6c903d72a533e2309c92222b13b51",
+      "afterHash": "57acfdab798b6e05ad92b075e759b48886f9befaed2de5e302de1c791ee2ffc3",
+      "removedCharacters": 2760,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "model-backdoor",
+      "title": "모델 백도어",
+      "categoryId": "safety",
+      "beforeHash": "3e16d27ab5327de979c510a754115165ad123bddbb549a9e2e7234fb2c148e76",
+      "afterHash": "cfec8cfd1aaadd37f972bddcbc2e4401a67f24e5400f4eb9b5f0984d05db5879",
+      "removedCharacters": 2725,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "model-catalog",
+      "title": "모델 카탈로그",
+      "categoryId": "ecosystem",
+      "beforeHash": "e83785b3512669f908f7d05c6493bd4b0fb7e66896d8c53076b487d6833b2c08",
+      "afterHash": "1b7aed6810dc4657cc5c1834e3a94560015a23b2dca05f2467731101d122bdcc",
+      "removedCharacters": 2252,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "model-evaluation-report",
+      "title": "모델 평가 보고서",
+      "categoryId": "ecosystem",
+      "beforeHash": "69d5e9662bb54e3de8bc638bc396416a269a6363c651fc9b0148920d1772d768",
+      "afterHash": "effdb3a4d530a923476f778c56932f5fb969ffc2c4e38c5cad6c6b2fac42d1a9",
+      "removedCharacters": 2232,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "model-extraction",
+      "title": "모델 추출 공격",
+      "categoryId": "safety",
+      "beforeHash": "1371f99f08f01e86da4b42046cbda754f83295f248ba961d048bfbb6889adc49",
+      "afterHash": "9673b9a15b11433ef39030f365827af74af77449db4fe75e6fc9da5eeb9df50e",
+      "removedCharacters": 2725,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "model-inversion",
+      "title": "모델 역추론 공격",
+      "categoryId": "safety",
+      "beforeHash": "bf34dd081d5097cceffd4e7baf92db22d22ea4c77e2f30f80b811366876fd9c7",
+      "afterHash": "e3e6663b26f349729291e0ddf7eb878d375f711748e34010dfd748803f2f4824",
+      "removedCharacters": 271,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "model-lineage",
+      "title": "모델 계보",
+      "categoryId": "ecosystem",
+      "beforeHash": "f36ff1853282b9bf99492982cb2b7cd391b99aced8296daf7966715d90501a9c",
+      "afterHash": "fe247186ac84cf13254d9dffc392922c65b6903742ece00e6eb496ccdc26d30a",
+      "removedCharacters": 2328,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "model-package",
+      "title": "모델 패키지",
+      "categoryId": "ecosystem",
+      "beforeHash": "0276b56ef6e1af9d147015f680859b4e21d8bb5c80a1f1824239206d63d59256",
+      "afterHash": "a72c52d4985d0baaa99141b677a5d52d8e6693414a32e0c1e51ab8682c80a757",
+      "removedCharacters": 2268,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "model-poisoning",
+      "title": "모델 오염",
+      "categoryId": "safety",
+      "beforeHash": "f020ac6d38bba9999be462e7d297c3ef787ee1febbfca6415a1235da86170703",
+      "afterHash": "24e01e3d59a1dcc59d7adfcf72a528d36436506a298467e432fc69bb506b7cff",
+      "removedCharacters": 2690,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "model-release",
+      "title": "모델 출시",
+      "categoryId": "ecosystem",
+      "beforeHash": "29fcf8af308b93c62f3b5b4312a835614f32f972ce79af070b326f1245e3637a",
+      "afterHash": "8ec85bee7af395ef80bda27a024b9a75e3a3de305066d34988d27769167dc0da",
+      "removedCharacters": 2810,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "model-retirement",
+      "title": "모델 폐기",
+      "categoryId": "ecosystem",
+      "beforeHash": "eb06b22dc1ae6dc5304935fe0b9670efdd0423c12f9718b6823cc4a3138afafa",
+      "afterHash": "16c08a9793726cd79423358ea4be1faf2113e78c0a6e1a7184099a8c52129c0b",
+      "removedCharacters": 2316,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "model-rollback",
+      "title": "모델 롤백",
+      "categoryId": "ecosystem",
+      "beforeHash": "505fc6b3785c83c07cd25dd43551f07851ed49db96954b284aa46116e082e976",
+      "afterHash": "486c857426ff9844285535fa1ceb382ce4ff03c5cf67a468c8bc5ffaaaedcd93",
+      "removedCharacters": 2276,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "model-update",
+      "title": "모델 업데이트",
+      "categoryId": "ecosystem",
+      "beforeHash": "da208bb439e554d5bd8c279b99b4fc9319b128644126b8da4b1f1ca80abb08be",
+      "afterHash": "e9e6104d4ac47fa957a6444e2d6e37b2909493d5bbcb5187b4ab23adbe944f3e",
+      "removedCharacters": 2765,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "model-weights",
+      "title": "모델 가중치 파일",
+      "categoryId": "ecosystem",
+      "beforeHash": "e00b8919a3feca09450bd7d673d9aa1e8d82f50f3d0df8c584d0036e4393d9b2",
+      "afterHash": "d228544440f5d8904c1f9d40d1fe76ba973856b234de9acf44a16aa8fc1e3b24",
+      "removedCharacters": 2645,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "multi-head-attention",
+      "title": "멀티헤드 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "0f17f276e5a9471c70502f4163f98c8d40f9ce6d8ff933b3f010dc2b717ecb24",
+      "afterHash": "cf7c608e7430f6de97043552dfa1e6cc704e431439096b891340b21edce279c5",
+      "removedCharacters": 906,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "multi-query-attention",
+      "title": "멀티쿼리 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "2649400bd84f45eb46683f3a3e562a720de9236fae68f573dac052a2ebca0ec2",
+      "afterHash": "fa10a843333e99e487bf9f0f427c55d5c123e3353155979d5d2af61fbb490508",
+      "removedCharacters": 266,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "multinomial-sampling",
+      "title": "다항 표본추출",
+      "categoryId": "inference",
+      "beforeHash": "7135762f6e0bbe8baf7eef862d44f2c872afc4f75108313788d214ed1d71f899",
+      "afterHash": "e77585621d89418a3ee66be1919c8a368d3fbfcaadf0a552cb590276db1daed9",
+      "removedCharacters": 2665,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "nearest-neighbor-search",
+      "title": "최근접 이웃 검색",
+      "categoryId": "retrieval",
+      "beforeHash": "09d971c3506593bfe62d11803b2636f7fee7c6243c291bc90b6870c195f1658b",
+      "afterHash": "ef2388741f1ce5000886988605ec1ba60d3bf41338e3c8ab78e5f5b6a95605b7",
+      "removedCharacters": 888,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "network-depth",
+      "title": "신경망 깊이",
+      "categoryId": "neural",
+      "beforeHash": "d759c1bc91341ad56f465473c1d6c7a28b21c6353c4a9ee013be5ddc2462aad3",
+      "afterHash": "7de3f58757dae59a535ec40258c131bad7c1f99ba48c4c014f65850e792335cf",
+      "removedCharacters": 520,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "network-width",
+      "title": "신경망 너비",
+      "categoryId": "neural",
+      "beforeHash": "2d102e0dd688d268ee2e2a477fefe62b9b1674d570d2658b7b74f86dbd67c530",
+      "afterHash": "835e34ab3c4270b02af837a7ef710350fb7ceb2cf0cd57ebe929177428938c85",
+      "removedCharacters": 520,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "neural-language-model",
+      "title": "신경 언어 모델",
+      "categoryId": "llm",
+      "beforeHash": "6996e48a2da6d35b8e385beb99ef35f0652590282c16b7ac41bbeb445f8c498e",
+      "afterHash": "3409f2aa2be0c1fe37e7db2afa5b83e8ad54934c8e96e578e95a5c6f1944ef1a",
+      "removedCharacters": 532,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "object-detection",
+      "title": "객체 탐지",
+      "categoryId": "multimodal",
+      "beforeHash": "fbc6fb04aa9d1fd6b76598294dbe567e751a83e66c04e9701844e5151ac16bf6",
+      "afterHash": "e98c2e2489ed2952ac597033dc1fac3a4899d4f3ec766267ebdda5c6a8347364",
+      "removedCharacters": 2675,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "online-learning",
+      "title": "온라인 학습",
+      "categoryId": "foundations",
+      "beforeHash": "2232dbc7f3b88c5fbef24b45d07a76ad41bb1191062fec6af7efee96e6cfcf46",
+      "afterHash": "528eb29a8c35cb0be95f617a4a089804762319c33f8c9045bf294c9c2af5f1eb",
+      "removedCharacters": 273,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "open-weight-model",
+      "title": "오픈 웨이트 모델",
+      "categoryId": "ecosystem",
+      "beforeHash": "6503ac462add6cd59e47e2140564b6a69c426e67795ae305c95e9309b9d21206",
+      "afterHash": "9118c7434aa423028302acc676b2f07d79f84ce19de6e73c7284d847372644b2",
+      "removedCharacters": 277,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "orthogonality",
+      "title": "직교성",
+      "categoryId": "mathematics",
+      "beforeHash": "b558892e6f90ccc816e1ab9e8329379e90d0a0568cb75b7b617f5eb9d1ca50dd",
+      "afterHash": "9a1ea1fb3e54b385fcb24a8192dfe76b488284bf4a9a9e6c251927eeecbe28a2",
+      "removedCharacters": 532,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "outer-product",
+      "title": "외적곱",
+      "categoryId": "mathematics",
+      "beforeHash": "ab26e5999643ba4749f23c9eaf51bbc905dca23a9f496c42e0edee8e4a27bcce",
+      "afterHash": "18a0df77b70abb75aca4d050c638870caa18078023ce665396d5038a4ec838f2",
+      "removedCharacters": 2952,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 6,
+        "normalizedEquivalent": 0,
+        "paragraphs": 6,
+        "pairedHeadings": 6,
+        "total": 6
+      }
+    },
+    {
+      "articleId": "output-layer",
+      "title": "출력층",
+      "categoryId": "neural",
+      "beforeHash": "18cfcb752267bb6fcedffbadabde9de412b1aec959c3145bd87933108ac309af",
+      "afterHash": "8ae175a383c7ca727fc786eb280f6d0cb3a560c1fc75ff3dc8314d05e6a56ed0",
+      "removedCharacters": 514,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "parameter-initialization",
+      "title": "파라미터 초기화",
+      "categoryId": "neural",
+      "beforeHash": "7adfb96135ac0f1673228d0b94cda65c0d13af8002331bfe424639414c30140b",
+      "afterHash": "232fa9bec23fac350c63fdfc41df3fe4893a4379f54aa624ea5cf6165745f260",
+      "removedCharacters": 262,
+      "affectedSections": [
+        "applications"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "pass-at-k",
+      "title": "Pass@K",
+      "categoryId": "evaluation",
+      "beforeHash": "010c8f2e1ab438fcdea98292030ba31573098d3a018860be34e37a790e48361e",
+      "afterHash": "3483ce7788b1c1e7faf4d403a797f7e5255e72ad1af761cadd1166310a0d6ac4",
+      "removedCharacters": 522,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "path-parameter",
+      "title": "경로 매개변수",
+      "categoryId": "api",
+      "beforeHash": "68782e71b7da925b98de8e0cf94f7a02229db96fdc5fe3a2aa8c621e19dafaba",
+      "afterHash": "9ddd594a9d4d24f311ac7f3b57320e6fb4c46e533cc339257c75320c3aa7b2fd",
+      "removedCharacters": 256,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "perceive-plan-act-cycle",
+      "title": "인식-계획-행동 순환",
+      "categoryId": "agents",
+      "beforeHash": "4e6d4f691a1a4cc06e1e079f00a0aa8361ccc0cebfa97d70c02364d8000f5d48",
+      "afterHash": "7cf958de7b7129ac224c889900ee507c879432b39951621f038d1503c369fc6a",
+      "removedCharacters": 2436,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "pixel-representation",
+      "title": "픽셀 표현",
+      "categoryId": "multimodal",
+      "beforeHash": "1a5d2a983813010b1d26174fe5490c161a3c67b7640ab46237b092a0e342e722",
+      "afterHash": "36df5326ca42ee11edc3137bb4df1dd6ffeea079249c4263f914d6d59d969e05",
+      "removedCharacters": 259,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "precision-recall-curve",
+      "title": "정밀도-재현율 곡선",
+      "categoryId": "evaluation",
+      "beforeHash": "c93404a88dd7afbfc9be45c7bdabd01ce908afe4f68af2f80c2df27bf62a03cc",
+      "afterHash": "e354d691e848858d2b5d54a6367f2809a021879fe11633f31688fc136bbb105d",
+      "removedCharacters": 2665,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "presence-penalty",
+      "title": "존재 페널티",
+      "categoryId": "inference",
+      "beforeHash": "14e40ed002a3cb6ee02b8ee7c58a49b647b954a4f9d6361dbd0c264586fb164a",
+      "afterHash": "17f4b38b401764bd41c65e65068a7be295ffb1c90028a1c5eb01aed172588057",
+      "removedCharacters": 522,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "pretraining-pipeline",
+      "title": "사전학습 파이프라인",
+      "categoryId": "training",
+      "beforeHash": "7b99eec04cb20498e6e937de78e8052ef813cd11c6986c4448e5151d21eb453d",
+      "afterHash": "0754550122da706aabf5fe1859ff0be5358bcbf5a4fca5cc1ea2eef618e32dd2",
+      "removedCharacters": 272,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "prompt-leakage",
+      "title": "프롬프트 유출",
+      "categoryId": "safety",
+      "beforeHash": "3bcab62b1d736f5b50069d9f45c28ba19721aaf6d2b05635f49e00875a6d3d52",
+      "afterHash": "6fe98b81a336f804aeb13c4432c048378e35e8351895afc4fa7da541900fe017",
+      "removedCharacters": 269,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "query-embedding",
+      "title": "질의 임베딩",
+      "categoryId": "retrieval",
+      "beforeHash": "a0ecffec3c5a637a472eabd95303bee015ca4a1308e80b23a100950af5533d04",
+      "afterHash": "d4b2b4535188cf61ff7931d4631050e5fde0b1bde0fda81694901277fbb9400d",
+      "removedCharacters": 262,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "rag-poisoning",
+      "title": "RAG 오염",
+      "categoryId": "safety",
+      "beforeHash": "e08e418f5022141946d6eeef5cccea8fa4ddda0f0146790f78f437d6f99f5a03",
+      "afterHash": "0e3518a086dd7055e7296ff5c1eed59a2155d432b40aaabfbfef237ed3817e13",
+      "removedCharacters": 268,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "receptive-field",
+      "title": "수용 영역",
+      "categoryId": "neural",
+      "beforeHash": "f61e6b5f50b7f3887e7d2a397bfcbefcd915b25181b853a7b2f1a5a49b610559",
+      "afterHash": "3d4c1bd1912e63cdcb3beb68877e12f0a826fabd23c070a20de59b93ea91fff8",
+      "removedCharacters": 518,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "repetition-penalty",
+      "title": "반복 페널티",
+      "categoryId": "inference",
+      "beforeHash": "98d6fcfef638931b7c5699c180cf70f3c254c1237ee5a295ff919a0ddc8a27fb",
+      "afterHash": "81364adaa3ec5d8db8ec0e54beb52f8b61d4d27be94b059bcf291291e7e146eb",
+      "removedCharacters": 261,
+      "affectedSections": [
+        "applications"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "roc-curve",
+      "title": "ROC 곡선",
+      "categoryId": "evaluation",
+      "beforeHash": "0c4823a63279f6bce6ce12fcdc6b8a176fda88d913e4c05426b29cf9c6250f0a",
+      "afterHash": "f3f0d006387684d42f0d1979e6a9d0183edbe504d81abb0e3f9813028c1cda02",
+      "removedCharacters": 2530,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "rouge-score",
+      "title": "ROUGE 점수",
+      "categoryId": "evaluation",
+      "beforeHash": "c33582225ca437603afc4910da4325ce85ba8469d15a91d19144c6666714737a",
+      "afterHash": "2550a22b4e8a99131a97957f7bd6e51f4e70acbf106471570b234c482113965f",
+      "removedCharacters": 526,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "self-supervised-learning",
+      "title": "자기지도학습",
+      "categoryId": "foundations",
+      "beforeHash": "a92e1546871652f71d1dd04dd54c4a97d8433314fdfbaf5bf77e59c0c68aa65a",
+      "afterHash": "50eff0989df7b008b1fc8e51a49b340f8555a11634ab1cdace59a8189c36263a",
+      "removedCharacters": 918,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "semi-supervised-learning",
+      "title": "준지도학습",
+      "categoryId": "foundations",
+      "beforeHash": "aa8ef0be9da7b8327992f11665f509ee0da6e1a375cccb240a675fd01a84308a",
+      "afterHash": "d06070d77a5ef1738d807bb8049b3f1d468f73bbea715bed004e1ae449d5d2f0",
+      "removedCharacters": 272,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "sense-think-act-cycle",
+      "title": "감지-사고-행동 순환",
+      "categoryId": "agents",
+      "beforeHash": "48826715a72e7b9472d93b0967cd8900fbd9be4ece437fbd415ae23d4b7f32cd",
+      "afterHash": "3dc0d73bcb376787d3b7cac1c250ecd914f64fe7dcc90cb0c923bea1c94605ce",
+      "removedCharacters": 2665,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "sentence-embedding",
+      "title": "문장 임베딩",
+      "categoryId": "retrieval",
+      "beforeHash": "01d7611d93a185505c4dba88f26d508c4b2690860d9b926b450a711143e60b8b",
+      "afterHash": "f1dbffa109b698e4979ff980e5dde2787c17e72895a3fb9599f2b013beaac997",
+      "removedCharacters": 2620,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "sequence-likelihood",
+      "title": "시퀀스 우도",
+      "categoryId": "llm",
+      "beforeHash": "81f47f2321b1c396859b3972e451d0456ee6f53b1f69026acaa735c830ce995a",
+      "afterHash": "b5f86fd5e9d87de14c580ae6a0410dd0ee01b52744fae5e4d65a29f6a459a96b",
+      "removedCharacters": 526,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "sequence-packing",
+      "title": "시퀀스 패킹",
+      "categoryId": "training",
+      "beforeHash": "bc563775d9e7b898aba8c89e6f809140a3059e32d217ebf65b1b7a7c5888d0df",
+      "afterHash": "aab27f8caf472cbcb7951f5af5bc7f46efaa5576abd2e9188763e2427bbde6e3",
+      "removedCharacters": 268,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "singular-value-decomposition",
+      "title": "특잇값 분해",
+      "categoryId": "mathematics",
+      "beforeHash": "16189bb7b8ca1545e7683badcf1c85857ec6f64d24d6964b619cd6c577075bf8",
+      "afterHash": "c1350fa9bb85f2466f7701b24ff8b07265d04d185aa479ec4fa794da1b72a1fc",
+      "removedCharacters": 269,
+      "affectedSections": [
+        "applications"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "span-corruption",
+      "title": "구간 손상 복원",
+      "categoryId": "training",
+      "beforeHash": "f9d1ce24b17db115c34de51751f48f9c97bed10e344507f4d684261ed5829721",
+      "afterHash": "834eb2fdfbaaaaac54837bab6f59535c6abdcafc17b399b62531ea610f5f1087",
+      "removedCharacters": 264,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "sparse-attention",
+      "title": "희소 어텐션",
+      "categoryId": "transformer",
+      "beforeHash": "8a567f870c4c315390422f4ace9801d0741122f97dffd9ff7ff7d87952676a62",
+      "afterHash": "fa96eed0fffd717c38beeeec243b551a5d0ba2902fc17b263003a35f52561adf",
+      "removedCharacters": 528,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "sparse-embedding",
+      "title": "희소 임베딩",
+      "categoryId": "retrieval",
+      "beforeHash": "de78d58f00adbab83e9ffbebd79446e97d9cd43229994230db79dbeae6b1c01a",
+      "afterHash": "9868fe427491283f9b4298e15ef19191761056e05ad2092df8e6615c3199b555",
+      "removedCharacters": 2770,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "spatial-reasoning",
+      "title": "공간 추론",
+      "categoryId": "multimodal",
+      "beforeHash": "0b34dbda0355cef01161aab0c9066c13d9fec7528d325f0277d72bda8764f880",
+      "afterHash": "cc36ec7f5d0cde43ddab928925a30ae4656fd911a5e7bb732585471acec39215",
+      "removedCharacters": 518,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "specificity",
+      "title": "특이도",
+      "categoryId": "evaluation",
+      "beforeHash": "a5ce9d3e1d42bcc264fd5cf39e089d0be04fb4b35e424e7feb0e9dc9dfd141d2",
+      "afterHash": "95022184de0e6e1caec6a4a5d22be487972034549b5a61f0b2221af27b989155",
+      "removedCharacters": 2655,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "stop-sequence",
+      "title": "중지 시퀀스",
+      "categoryId": "inference",
+      "beforeHash": "60092514aa0369eeff6a15762d8fd90b808e69171e12827e91345fd63e825d59",
+      "afterHash": "9750291e1c0b965437c3399dba250d62e44a35337f808db09161d1f99cd20d2b",
+      "removedCharacters": 522,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "supervised-learning",
+      "title": "지도학습",
+      "categoryId": "foundations",
+      "beforeHash": "d909e4cf581bfaf9a1bc3ae610531a4655caf00a41a41aae1a6b773ba979012b",
+      "afterHash": "a4ef1d1fc3eadc958ab04fa421bd9b6b6b5c2c94eb817e3a773a3ac904c51563",
+      "removedCharacters": 906,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "token-sampling",
+      "title": "토큰 샘플링",
+      "categoryId": "inference",
+      "beforeHash": "3819b6d7bd718819e263424457d10046708e5369f319577ccfddb70cb060fcb8",
+      "afterHash": "d9447d3201c054a5ebad52d0304205f837ea35e42135ce88bc83a0f434c46b2f",
+      "removedCharacters": 522,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "token",
+      "title": "토큰",
+      "categoryId": "llm",
+      "beforeHash": "5850300b4e15eeea6d47e0151d1440cd8ec46473ac3d0d3d5837b8d142227794",
+      "afterHash": "64f68d6876f84252ca3cf23c0a31f1dd536e653896498925e0edb8964a8ca57f",
+      "removedCharacters": 1156,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "tokenizer",
+      "title": "토크나이저",
+      "categoryId": "llm",
+      "beforeHash": "a240d4da18325518cb576f755d387df295c0990eff885e11bece8eef0f140788",
+      "afterHash": "ba4728bbb0b01aab6f95fb9a222147624e33a9db3f2fd4cd8f784eb57c20a24a",
+      "removedCharacters": 1180,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "top-k-sampling",
+      "title": "Top-k 샘플링",
+      "categoryId": "inference",
+      "beforeHash": "d99aad319eeab5d9808b1143f373be305db0b118bad34eebab170573dd5dbf0b",
+      "afterHash": "198ae7fab13f93d236eb57894486db37b63671a2aa9ca1dfe5cb872e45ae5437",
+      "removedCharacters": 900,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "top-p-sampling",
+      "title": "Top-p 샘플링",
+      "categoryId": "inference",
+      "beforeHash": "1082e59e3755fa1d8e70ff326ab0433ec9a82de1fa1853e4c64e9eaf263d2cf7",
+      "afterHash": "403a48394efab7f0c10dd41e54ede8c3c0173c4e7b02ac10bbf1203c0a2b729a",
+      "removedCharacters": 918,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "training-corpus",
+      "title": "학습 말뭉치",
+      "categoryId": "training",
+      "beforeHash": "1c347f0a1eb7c1d5755b48740c29fc4f26b3b2d11397379a75de3ecf273ae530",
+      "afterHash": "8b36b6a1eb665707552d2087006cc11049326466e382fa3f54e59164e39f40d3",
+      "removedCharacters": 267,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "training-data-filtering",
+      "title": "학습 데이터 필터링",
+      "categoryId": "training",
+      "beforeHash": "b7e9bdbd1ad1c66077fe334d9b0207cbe6568230364a49d02abdb01429c30453",
+      "afterHash": "b6d4b425c1c71de7c7abf3f68b6cffcb0184e8b81ed9e4b30de7e25fa844d804",
+      "removedCharacters": 271,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "training-data-poisoning",
+      "title": "학습 데이터 오염",
+      "categoryId": "safety",
+      "beforeHash": "5580aa234d15d03026e217538df8b1c8a6400e54a12e460cacf10f524162d845",
+      "afterHash": "26b68fa2e423c0f97d89ec30418b377d0e3fc99a15f01674082a90e1e515221b",
+      "removedCharacters": 2765,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "transfer-learning",
+      "title": "전이학습",
+      "categoryId": "foundations",
+      "beforeHash": "e003b8b648660455bb293757751bfd62f94331ef7f6046339b38c3a11cfec4b0",
+      "afterHash": "2d7612e6781527c50518d47c30726d03f7630b4e4e997242d143f4c1c5b8e04e",
+      "removedCharacters": 271,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "typical-sampling",
+      "title": "전형성 샘플링",
+      "categoryId": "inference",
+      "beforeHash": "9275547d6d3d1be117deeecc6c0dc3c477b5d79726580e4a12ac2d63fd2cf8a7",
+      "afterHash": "7797403c8ae0f94366ea87d0c6be0bc60de41ecf937d9c500dd9fd1ae2a99227",
+      "removedCharacters": 2284,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "unsupervised-learning",
+      "title": "비지도학습",
+      "categoryId": "foundations",
+      "beforeHash": "dc72ff2fd7cfc96bd114d554ba613620c7a983982ee63643991d491b479b207e",
+      "afterHash": "f71e93812bad5b08f69b57bef274c4619e26764e6e00c7cfa5fcf95562d1d98a",
+      "removedCharacters": 891,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 3,
+        "normalizedEquivalent": 0,
+        "paragraphs": 3,
+        "pairedHeadings": 3,
+        "total": 3
+      }
+    },
+    {
+      "articleId": "vector-norm",
+      "title": "벡터 노름",
+      "categoryId": "mathematics",
+      "beforeHash": "14f8f4fb307bcb78a6502e2363b4430f2b2590092f9ee43179d6b1fc9f5fc110",
+      "afterHash": "cee75511dc9297e21c7d4631149bd4fb357985a27622a0b727a90beaacf178fc",
+      "removedCharacters": 536,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "vector-projection",
+      "title": "벡터 사영",
+      "categoryId": "mathematics",
+      "beforeHash": "f0d4face8d355e6c5e5b13b6b967f94e1fdbefa2640568f9fadcec32557913e1",
+      "afterHash": "308c317e0ec1b4d802494416c5182d00561f735e296d2505c4e63cf63689a516",
+      "removedCharacters": 536,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "vector-space",
+      "title": "벡터 공간",
+      "categoryId": "mathematics",
+      "beforeHash": "f3883869d1d2e5a7110bd6468c89130b881befd1b751a12182e969d8d56533a6",
+      "afterHash": "69cae7c36894ee65fa811df6a8177ab7e5428b0634c79b5cf83f2af865efd131",
+      "removedCharacters": 536,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "visual-encoder",
+      "title": "시각 인코더",
+      "categoryId": "multimodal",
+      "beforeHash": "bf9bad9ff26857a76c714c3d4d8a277a9acf2ba5f128ebd5638001eeffc74eed",
+      "afterHash": "13bb9ca7071193e6577504a6f07198f83f17682eb654876f69c940a2db6ffa95",
+      "removedCharacters": 520,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "visual-grounding",
+      "title": "시각 근거화",
+      "categoryId": "multimodal",
+      "beforeHash": "5f999a179290d1480257edc90243a00b71e77fbe7e28e41bfe8d4f1674687572",
+      "afterHash": "45ea8ce8ce807f7ab8cfb583c044901957c18407e9999d7155155446a8d97ef7",
+      "removedCharacters": 2745,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "visual-question-answering",
+      "title": "시각 질의응답",
+      "categoryId": "multimodal",
+      "beforeHash": "893bf0efbf76b9d8aacf0a825c6ec2e3f1fe6b3f6cc722c3a166683a4e5ee770",
+      "afterHash": "49d61245baa097d22848a7271f0850e1c19ccdc79d24dd3944e2903505b2747c",
+      "removedCharacters": 2625,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 5,
+        "normalizedEquivalent": 0,
+        "paragraphs": 5,
+        "pairedHeadings": 5,
+        "total": 5
+      }
+    },
+    {
+      "articleId": "visual-reasoning",
+      "title": "시각 추론",
+      "categoryId": "multimodal",
+      "beforeHash": "ca58155c9a7ca3c220498d493b756b7cc5eeb0ecfa79c1b256f0e376802d4698",
+      "afterHash": "10c42060410b78bdaf6ce4ec82ea027320218f0770a97ed545632a1190cafbcb",
+      "removedCharacters": 259,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    },
+    {
+      "articleId": "vocabulary",
+      "title": "어휘 집합",
+      "categoryId": "llm",
+      "beforeHash": "d60235ae5df01179eb65e7ed3f2e2a928f69e176b42d3398d0898ed6993eb2c0",
+      "afterHash": "18956ccbd847b63bccea378635a62d30a1e79d263ce9b5eade9c785210c5400e",
+      "removedCharacters": 1180,
+      "affectedSections": [
+        "practice"
+      ],
+      "removals": {
+        "rawExact": 4,
+        "normalizedEquivalent": 0,
+        "paragraphs": 4,
+        "pairedHeadings": 4,
+        "total": 4
+      }
+    },
+    {
+      "articleId": "win-rate",
+      "title": "승률",
+      "categoryId": "evaluation",
+      "beforeHash": "a32ffdf2678eb3abedb6b3a0df517b207897619142e0f6788601c611679dc350",
+      "afterHash": "17b9eeb97c723b7cfe5863fc5b2f6589f85f091218444abfdadd5650edeffa39",
+      "removedCharacters": 514,
+      "affectedSections": [
+        "applications",
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 2,
+        "paragraphs": 2,
+        "pairedHeadings": 2,
+        "total": 2
+      }
+    },
+    {
+      "articleId": "worker-agent",
+      "title": "작업자 에이전트",
+      "categoryId": "agents",
+      "beforeHash": "cc0f8e2f96581a1dfaa5eddf5561b5020fc66ce39426ce2cc61b758588e7d11e",
+      "afterHash": "424f3335c87a15829345636924c44ccd3eedeb7fb1f55583811dc0c8c7e320c5",
+      "removedCharacters": 264,
+      "affectedSections": [
+        "structure"
+      ],
+      "removals": {
+        "rawExact": 0,
+        "normalizedEquivalent": 1,
+        "paragraphs": 1,
+        "pairedHeadings": 1,
+        "total": 1
+      }
+    }
+  ]
+}
