@@ -1,0 +1,369 @@
+{
+  "version": "W22-2026-07-15",
+  "snapshotDate": "2026-07-15",
+  "baselineCorpusSha256": "60fdaae9a8e2a95e7bcbd41878dbfa488f9a28098638922e524edd586fdf79f7",
+  "currentCorpusSha256": "602f131a11aacc835c078779702dcda13006747cbc1e3ed4f41de4ed38db79c5",
+  "policy": {
+    "scope": "one highest-deficit pre-existing core article per category",
+    "categoryCount": 14,
+    "targetCharacters": 6000,
+    "automaticFillerAllowed": false,
+    "sourceLinkedSectionsOnly": true,
+    "claimLedgerRefreshRequired": true
+  },
+  "totals": {
+    "articlesScanned": 1400,
+    "articlesChanged": 14,
+    "categoriesCovered": 14,
+    "charactersAdded": 51295,
+    "baselineQualityAverage": 68.82,
+    "baselineP0": 0,
+    "baselineP1": 1400,
+    "baselineP2": 0,
+    "postQualityAverage": 69.06,
+    "postP0": 0,
+    "postP1": 1386,
+    "postP2": 14,
+    "remainingDepthArticles": 186
+  },
+  "byCategory": {
+    "agents": {
+      "articleId": "ai-agent",
+      "beforeCharacters": 2591,
+      "afterCharacters": 6376,
+      "addedCharacters": 3785
+    },
+    "api": {
+      "articleId": "api",
+      "beforeCharacters": 2575,
+      "afterCharacters": 6342,
+      "addedCharacters": 3767
+    },
+    "ecosystem": {
+      "articleId": "model-hub",
+      "beforeCharacters": 2560,
+      "afterCharacters": 6336,
+      "addedCharacters": 3776
+    },
+    "evaluation": {
+      "articleId": "evaluation",
+      "beforeCharacters": 2510,
+      "afterCharacters": 6162,
+      "addedCharacters": 3652
+    },
+    "foundations": {
+      "articleId": "artificial-intelligence",
+      "beforeCharacters": 2697,
+      "afterCharacters": 6396,
+      "addedCharacters": 3699
+    },
+    "inference": {
+      "articleId": "inference",
+      "beforeCharacters": 2488,
+      "afterCharacters": 6258,
+      "addedCharacters": 3770
+    },
+    "llm": {
+      "articleId": "language-model",
+      "beforeCharacters": 2650,
+      "afterCharacters": 6342,
+      "addedCharacters": 3692
+    },
+    "mathematics": {
+      "articleId": "vector",
+      "beforeCharacters": 2528,
+      "afterCharacters": 6081,
+      "addedCharacters": 3553
+    },
+    "multimodal": {
+      "articleId": "image-classification",
+      "beforeCharacters": 2571,
+      "afterCharacters": 6171,
+      "addedCharacters": 3600
+    },
+    "neural": {
+      "articleId": "neural-network",
+      "beforeCharacters": 2533,
+      "afterCharacters": 6141,
+      "addedCharacters": 3608
+    },
+    "retrieval": {
+      "articleId": "embedding",
+      "beforeCharacters": 2562,
+      "afterCharacters": 6195,
+      "addedCharacters": 3633
+    },
+    "safety": {
+      "articleId": "guardrail",
+      "beforeCharacters": 2654,
+      "afterCharacters": 6203,
+      "addedCharacters": 3549
+    },
+    "training": {
+      "articleId": "pretraining",
+      "beforeCharacters": 2572,
+      "afterCharacters": 6170,
+      "addedCharacters": 3598
+    },
+    "transformer": {
+      "articleId": "query-key-value",
+      "beforeCharacters": 2658,
+      "afterCharacters": 6271,
+      "addedCharacters": 3613
+    }
+  },
+  "changes": [
+    {
+      "articleId": "ai-agent",
+      "title": "AI 에이전트",
+      "categoryId": "agents",
+      "tier": "core",
+      "beforeHash": "e2d5213268151965aaf28c9c701f9ff75dd0bedb7543136b337d97633011343c",
+      "afterHash": "24cdc44ae46d843d7fd96eb0a54474e1b69fe0a284660a86ed72f2a39f948e07",
+      "beforeCharacters": 2591,
+      "afterCharacters": 6376,
+      "addedCharacters": 3785,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "api",
+      "title": "API",
+      "categoryId": "api",
+      "tier": "core",
+      "beforeHash": "1a9858ce168234075ba6693c06ae80de28467231f1e5f514f5919050e59bcfea",
+      "afterHash": "65c9a345b1581a89282938b3a8cdf751658be73925717f4b1e6b5d65e4f33e56",
+      "beforeCharacters": 2575,
+      "afterCharacters": 6342,
+      "addedCharacters": 3767,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "artificial-intelligence",
+      "title": "인공지능",
+      "categoryId": "foundations",
+      "tier": "core",
+      "beforeHash": "4391ea40d6fb44f0b849dfefcf1bda2d7c6c6b967cb0d75113c33addf23b6975",
+      "afterHash": "5177154b21246810b89078056a2528009ebc4240283ff0201a685fff896937f1",
+      "beforeCharacters": 2697,
+      "afterCharacters": 6396,
+      "addedCharacters": 3699,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "embedding",
+      "title": "임베딩",
+      "categoryId": "retrieval",
+      "tier": "core",
+      "beforeHash": "b994eb4bd42d93c50dc6f4f6ba50229664f89b1098b3fde10f73587348e214db",
+      "afterHash": "6cfc568bc14347a439971a48a94c472f7b6ec22e63d030cc6bc3420e530504f3",
+      "beforeCharacters": 2562,
+      "afterCharacters": 6195,
+      "addedCharacters": 3633,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "evaluation",
+      "title": "모델 평가",
+      "categoryId": "evaluation",
+      "tier": "core",
+      "beforeHash": "9d34f18f26984b91c58d82ec101373e453bbde7568868a4793f59ed97835742d",
+      "afterHash": "72eb3ce13c7353970617d1b7320525d55189ea4533745a898076decff1ed6433",
+      "beforeCharacters": 2510,
+      "afterCharacters": 6162,
+      "addedCharacters": 3652,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "guardrail",
+      "title": "가드레일",
+      "categoryId": "safety",
+      "tier": "core",
+      "beforeHash": "c1a2212ecac76df1c92ee3c3519870a0d209618fc8d997fdae4f7d201cbcba2d",
+      "afterHash": "4d80404f631e3e554b84851fcf96beae071c51d64775a753cb21341a4ddb94cc",
+      "beforeCharacters": 2654,
+      "afterCharacters": 6203,
+      "addedCharacters": 3549,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "image-classification",
+      "title": "이미지 분류",
+      "categoryId": "multimodal",
+      "tier": "core",
+      "beforeHash": "692137496f6cc3c70cfa9d70deabcde0d675ef45a10760112141a71f17a9fa9a",
+      "afterHash": "71fe2c836de893fa5a0ddf0d711a02a4f946d927091456c78206ba28926ea400",
+      "beforeCharacters": 2571,
+      "afterCharacters": 6171,
+      "addedCharacters": 3600,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "inference",
+      "title": "추론",
+      "categoryId": "inference",
+      "tier": "core",
+      "beforeHash": "0552ef2428a7b28d7de9e97945ef5d45539f9263e2e8fe3fb50b0e3db5ea9353",
+      "afterHash": "55a108d32dd0b7ca22125258b38162f308a78424bfc86f0a56adcd932cb0ad7a",
+      "beforeCharacters": 2488,
+      "afterCharacters": 6258,
+      "addedCharacters": 3770,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "language-model",
+      "title": "언어 모델",
+      "categoryId": "llm",
+      "tier": "core",
+      "beforeHash": "f6a95c2adbbf4e3d361868ab51b150fe3e8791c29c89be04ca30380f8896b545",
+      "afterHash": "2ca78754b1e13016236c85985e2cc356ec01c08fad5425d8bf5006471c0144c6",
+      "beforeCharacters": 2650,
+      "afterCharacters": 6342,
+      "addedCharacters": 3692,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "model-hub",
+      "title": "모델 허브",
+      "categoryId": "ecosystem",
+      "tier": "core",
+      "beforeHash": "01213b6eb7e5ea43dbb5e500bc82ee3db02167d41a28866897f649047368c193",
+      "afterHash": "57584e2506ba77fd3b4735f27ace6691358f47bc2b2c499798347f82b7630d67",
+      "beforeCharacters": 2560,
+      "afterCharacters": 6336,
+      "addedCharacters": 3776,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "neural-network",
+      "title": "신경망",
+      "categoryId": "neural",
+      "tier": "core",
+      "beforeHash": "18358e592c1bd9c074d6d75317b1724be15eadabb33a26d4038705913ffa7ab3",
+      "afterHash": "9fb32db822ae348db5db36e4e91e65ce7fe13ffc77b6ba0551add2ed0e3fb264",
+      "beforeCharacters": 2533,
+      "afterCharacters": 6141,
+      "addedCharacters": 3608,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "pretraining",
+      "title": "사전학습",
+      "categoryId": "training",
+      "tier": "core",
+      "beforeHash": "c057c4b4449e6d56492a40098b901262b55dd907b3d3c120ff6df011c84ffe19",
+      "afterHash": "089b980f867a040c8d912d4d168d152aefb62a0d9e36570421bcabd0b353a5e3",
+      "beforeCharacters": 2572,
+      "afterCharacters": 6170,
+      "addedCharacters": 3598,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "query-key-value",
+      "title": "쿼리·키·값",
+      "categoryId": "transformer",
+      "tier": "core",
+      "beforeHash": "8c90ebd890b790f7cc7e361da91332ba64c0bc9320bfd0b0b61c8760792f2eb5",
+      "afterHash": "080a7e139057604281ef346c32deffe654f2637b5f0373decc94780d02039649",
+      "beforeCharacters": 2658,
+      "afterCharacters": 6271,
+      "addedCharacters": 3613,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "vector",
+      "title": "벡터",
+      "categoryId": "mathematics",
+      "tier": "core",
+      "beforeHash": "8e22149522e836e7e50121a69de9c13edc5f1de1c1be573781f7e676da0909c8",
+      "afterHash": "6eeba8419b795a90952ee798a8d6d4567a66c67eb0c8c67505eadbae0302faab",
+      "beforeCharacters": 2528,
+      "afterCharacters": 6081,
+      "addedCharacters": 3553,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    }
+  ]
+}
