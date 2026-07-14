@@ -1,0 +1,345 @@
+{
+  "version": "W23-2026-07-15",
+  "snapshotDate": "2026-07-15",
+  "baselineCorpusSha256": "602f131a11aacc835c078779702dcda13006747cbc1e3ed4f41de4ed38db79c5",
+  "currentCorpusSha256": "d6b3416c8daef950212de077938ed1ddcd539177a66627201f55c8a682a5fe28",
+  "policy": {
+    "scope": "one minimum-deficit deduplication-revealed article per category",
+    "categories": 14,
+    "targetCharacters": 6000,
+    "automaticFillerAllowed": false,
+    "sourceLinkedSectionsOnly": true,
+    "claimLedgerRefreshRequired": true
+  },
+  "totals": {
+    "articlesScanned": 1400,
+    "articlesChanged": 14,
+    "categoriesCovered": 14,
+    "charactersAdded": 7768,
+    "baselineQualityAverage": 69.06,
+    "baselineP0": 0,
+    "baselineP1": 1386,
+    "baselineP2": 14,
+    "postQualityAverage": 69.1,
+    "postP0": 0,
+    "postP1": 1386,
+    "postP2": 14,
+    "remainingDepthArticles": 172
+  },
+  "byCategory": {
+    "agents": {
+      "articleId": "perceive-plan-act-cycle",
+      "beforeCharacters": 3913,
+      "afterCharacters": 6097,
+      "addedCharacters": 2184
+    },
+    "api": {
+      "articleId": "json",
+      "beforeCharacters": 5070,
+      "afterCharacters": 6198,
+      "addedCharacters": 1128
+    },
+    "ecosystem": {
+      "articleId": "open-weight-model",
+      "beforeCharacters": 5953,
+      "afterCharacters": 6372,
+      "addedCharacters": 419
+    },
+    "evaluation": {
+      "articleId": "win-rate",
+      "beforeCharacters": 5761,
+      "afterCharacters": 6146,
+      "addedCharacters": 385
+    },
+    "foundations": {
+      "articleId": "semi-supervised-learning",
+      "beforeCharacters": 5904,
+      "afterCharacters": 6245,
+      "addedCharacters": 341
+    },
+    "inference": {
+      "articleId": "diverse-beam-search",
+      "beforeCharacters": 5857,
+      "afterCharacters": 6210,
+      "addedCharacters": 353
+    },
+    "llm": {
+      "articleId": "neural-language-model",
+      "beforeCharacters": 5828,
+      "afterCharacters": 6186,
+      "addedCharacters": 358
+    },
+    "mathematics": {
+      "articleId": "basis-vector",
+      "beforeCharacters": 5856,
+      "afterCharacters": 6219,
+      "addedCharacters": 363
+    },
+    "multimodal": {
+      "articleId": "image-retrieval",
+      "beforeCharacters": 5985,
+      "afterCharacters": 6342,
+      "addedCharacters": 357
+    },
+    "neural": {
+      "articleId": "receptive-field",
+      "beforeCharacters": 5853,
+      "afterCharacters": 6253,
+      "addedCharacters": 400
+    },
+    "retrieval": {
+      "articleId": "embedding-dimension",
+      "beforeCharacters": 5979,
+      "afterCharacters": 6364,
+      "addedCharacters": 385
+    },
+    "safety": {
+      "articleId": "membership-inference",
+      "beforeCharacters": 5916,
+      "afterCharacters": 6282,
+      "addedCharacters": 366
+    },
+    "training": {
+      "articleId": "training-data-filtering",
+      "beforeCharacters": 5946,
+      "afterCharacters": 6306,
+      "addedCharacters": 360
+    },
+    "transformer": {
+      "articleId": "attention-matrix",
+      "beforeCharacters": 5993,
+      "afterCharacters": 6362,
+      "addedCharacters": 369
+    }
+  },
+  "changes": [
+    {
+      "articleId": "perceive-plan-act-cycle",
+      "title": "인식-계획-행동 순환",
+      "categoryId": "agents",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "7cf958de7b7129ac224c889900ee507c879432b39951621f038d1503c369fc6a",
+      "afterHash": "7101def9c6bb61c0e87f5ac63674bc83f5688d9d5386ed17a1cac4d6017e96a9",
+      "beforeCharacters": 3913,
+      "afterCharacters": 6097,
+      "addedCharacters": 2184,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "limitations",
+        "practice",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "json",
+      "title": "JSON",
+      "categoryId": "api",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "7afcccf0e9e4318dfd439df3d692efeae0f5549684ead201468334d52502b29c",
+      "afterHash": "c7f0054b53a875e9c8e4ad07f982bc086b46937f75ea442ffd71b857d340d24c",
+      "beforeCharacters": 5070,
+      "afterCharacters": 6198,
+      "addedCharacters": 1128,
+      "affectedSections": [
+        "mechanism",
+        "structure",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "open-weight-model",
+      "title": "오픈 웨이트 모델",
+      "categoryId": "ecosystem",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "9118c7434aa423028302acc676b2f07d79f84ce19de6e73c7284d847372644b2",
+      "afterHash": "bf9d1cd7900f64e3773fca89242d3d2e39e6d2d22e0ea3ef296f33e7ca3ae020",
+      "beforeCharacters": 5953,
+      "afterCharacters": 6372,
+      "addedCharacters": 419,
+      "affectedSections": [
+        "limitations",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "win-rate",
+      "title": "승률",
+      "categoryId": "evaluation",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "17b9eeb97c723b7cfe5863fc5b2f6589f85f091218444abfdadd5650edeffa39",
+      "afterHash": "f6dcc8e05410e062a55f90d3b7ffa747ee22816b78bb78be4d52596fb2a070c3",
+      "beforeCharacters": 5761,
+      "afterCharacters": 6146,
+      "addedCharacters": 385,
+      "affectedSections": [
+        "mechanism",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "semi-supervised-learning",
+      "title": "준지도학습",
+      "categoryId": "foundations",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "d06070d77a5ef1738d807bb8049b3f1d468f73bbea715bed004e1ae449d5d2f0",
+      "afterHash": "9895326df9cc904162be9f9e2d5210c51e914ca34c5aa007dafe9fa117e27997",
+      "beforeCharacters": 5904,
+      "afterCharacters": 6245,
+      "addedCharacters": 341,
+      "affectedSections": [
+        "limitations",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "diverse-beam-search",
+      "title": "다양성 빔 탐색",
+      "categoryId": "inference",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "80210cda81c0917a00bb9fbef99384cd77a388aa7664488e078650bbf9c88f6e",
+      "afterHash": "30db47208cc6574b3b88f7913530378a762a66262485a701351d2b1a57ed1691",
+      "beforeCharacters": 5857,
+      "afterCharacters": 6210,
+      "addedCharacters": 353,
+      "affectedSections": [
+        "mechanism",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "neural-language-model",
+      "title": "신경 언어 모델",
+      "categoryId": "llm",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "3409f2aa2be0c1fe37e7db2afa5b83e8ad54934c8e96e578e95a5c6f1944ef1a",
+      "afterHash": "3bb691054fdd1ff51892a66aa9077762c9d8eca5a6ab85dd9c9bd9ba89387475",
+      "beforeCharacters": 5828,
+      "afterCharacters": 6186,
+      "addedCharacters": 358,
+      "affectedSections": [
+        "mechanism",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "basis-vector",
+      "title": "기저 벡터",
+      "categoryId": "mathematics",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "e9737e0ee0eec278ed87e7b6462fa80a61d9249f4ed18f49fa4ff5634ff260d5",
+      "afterHash": "cb22348cf2a8e55372628d28191dfb22c2afb0f3af4f304112a1d763701e5af4",
+      "beforeCharacters": 5856,
+      "afterCharacters": 6219,
+      "addedCharacters": 363,
+      "affectedSections": [
+        "mechanism",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "image-retrieval",
+      "title": "이미지 검색",
+      "categoryId": "multimodal",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "5d4259ff4ad3dd843d5a9aa423a094bdd918e970d379f2ac56e0c16aaa4f62c9",
+      "afterHash": "a7627725786d456e28ca804da66dd8c03651c16a6fd6ca9633b4678098d1a3f6",
+      "beforeCharacters": 5985,
+      "afterCharacters": 6342,
+      "addedCharacters": 357,
+      "affectedSections": [
+        "limitations",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "receptive-field",
+      "title": "수용 영역",
+      "categoryId": "neural",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "3d4c1bd1912e63cdcb3beb68877e12f0a826fabd23c070a20de59b93ea91fff8",
+      "afterHash": "3420c30d79de4f5dcb9a623cf14ce1d97f06747d7c67b9a7c218f9b57e80a91e",
+      "beforeCharacters": 5853,
+      "afterCharacters": 6253,
+      "addedCharacters": 400,
+      "affectedSections": [
+        "mechanism",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "embedding-dimension",
+      "title": "임베딩 차원",
+      "categoryId": "retrieval",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "0c4b041c2cc7ecb78266789c48643d761beb196ebf5e2771ed1941e893c0da38",
+      "afterHash": "03b443c224974811936e24584831dd51b0f4f1dde5f2ce8a5b2922658efaabb5",
+      "beforeCharacters": 5979,
+      "afterCharacters": 6364,
+      "addedCharacters": 385,
+      "affectedSections": [
+        "limitations",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "membership-inference",
+      "title": "멤버십 추론 공격",
+      "categoryId": "safety",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "24fe9fbbc6ebea3116dbe93dcdd88983c2da87e43f97117c57d185691283e6cb",
+      "afterHash": "488185b0a9caa706cd13047ecd1f158cda05c6f09a154d03990e756f9aa8a5b2",
+      "beforeCharacters": 5916,
+      "afterCharacters": 6282,
+      "addedCharacters": 366,
+      "affectedSections": [
+        "limitations",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "training-data-filtering",
+      "title": "학습 데이터 필터링",
+      "categoryId": "training",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "b6d4b425c1c71de7c7abf3f68b6cffcb0184e8b81ed9e4b30de7e25fa844d804",
+      "afterHash": "d8207a25a658a57fb0c63cc60afdca07f247057f29d1f93bfd6095c9dadec334",
+      "beforeCharacters": 5946,
+      "afterCharacters": 6306,
+      "addedCharacters": 360,
+      "affectedSections": [
+        "limitations",
+        "applications"
+      ]
+    },
+    {
+      "articleId": "attention-matrix",
+      "title": "어텐션 행렬",
+      "categoryId": "transformer",
+      "tier": "core",
+      "origin": "deduplication-revealed",
+      "beforeHash": "6dfade1ae04f7613466210959c4ad3b51692d0e0d1de5d2c135463f112ed69ad",
+      "afterHash": "f53a21c984211cca05def970275c97de843cccc5f707b09b55abbb9edf80fdfd",
+      "beforeCharacters": 5993,
+      "afterCharacters": 6362,
+      "addedCharacters": 369,
+      "affectedSections": [
+        "limitations",
+        "applications"
+      ]
+    }
+  ]
+}
