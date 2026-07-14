@@ -19,6 +19,7 @@ description: "현대 언어 모델을 이루는 핵심 아키텍처"
 - [셀프 어텐션](/wiki/self-attention/) — 하나의 시퀀스 안에서 각 위치가 다른 위치의 정보를 참조하는 어텐션이다.
 - [스케일드 닷프로덕트 어텐션](/wiki/scaled-dot-product-attention/) — 스케일드 닷프로덕트 어텐션은 질의와 키의 내적을 키 차원의 제곱근으로 나눈 뒤 소프트맥스를 적용해 값의 가중합을 구한다.
 - [슬라이딩 윈도 어텐션](/wiki/sliding-window-attention/) — 슬라이딩 윈도 어텐션은 각 위치가 일정한 앞뒤 또는 이전 토큰 창에만 주의를 주도록 창을 이동시키는 희소 패턴이다.
+- [시퀀스-투-시퀀스 트랜스포머](/wiki/sequence-to-sequence-transformer/) — 시퀀스-투-시퀀스 트랜스포머는 인코더가 입력 시퀀스를 표현하고 디코더가 이를 참조해 출력 시퀀스를 자동회귀 생성하는 구조다.
 - [양방향 어텐션](/wiki/bidirectional-attention/) — 양방향 어텐션은 각 토큰이 시퀀스의 앞과 뒤 모든 허용 위치를 함께 참고하도록 하는 어텐션 패턴이다.
 - [어텐션](/wiki/attention/) — 현재 표현을 만들 때 입력의 각 부분에 서로 다른 중요도를 부여해 정보를 결합하는 연산이다.
 - [어텐션 마스크](/wiki/attention-mask/) — 어텐션 마스크는 각 질의 위치가 참조할 수 있는 키 위치를 허용·차단하는 행렬 또는 규칙이다.
@@ -47,6 +48,15 @@ description: "현대 언어 모델을 이루는 핵심 아키텍처"
 - [프리픽스 언어 모델](/wiki/prefix-language-model/) — 프리픽스 언어 모델은 지정된 접두 구간에서는 양방향 문맥을 허용하고 생성 구간에서는 이전 위치만 참조하게 하는 언어 모델이다.
 - [피드포워드 네트워크](/wiki/feed-forward-network/) — 각 토큰 위치에 독립적으로 적용되는 비선형 완전연결 변환 블록이다.
 - [희소 어텐션](/wiki/sparse-attention/) — 희소 어텐션은 전체 토큰 쌍 중 일부 연결만 계산하도록 고정·학습 패턴을 적용한 어텐션 계열이다.
+- [BART 아키텍처](/wiki/bart-architecture/) — BART 아키텍처는 양방향 인코더와 왼쪽에서 오른쪽으로 생성하는 디코더를 결합한 잡음 제거 시퀀스-투-시퀀스 모델이다.
+- [BERT 아키텍처](/wiki/bert-architecture/) — BERT 아키텍처는 양방향 자기어텐션 인코더를 쌓아 문맥에 따른 토큰 표현을 학습하는 트랜스포머 구조다.
+- [BigBird](/wiki/bigbird/) — BigBird는 국소·무작위·전역 연결을 조합한 블록 희소 어텐션으로 긴 시퀀스의 계산량을 줄이는 트랜스포머다.
 - [GEGLU](/wiki/geglu/) — GEGLU는 GELU로 활성화한 선형 분기와 다른 선형 분기를 원소별로 곱하는 게이트 선형 유닛 변형이다.
+- [GPT 아키텍처](/wiki/gpt-architecture/) — GPT 아키텍처는 이전 토큰만 볼 수 있는 인과 마스크를 사용해 다음 토큰을 예측하는 디코더 전용 트랜스포머 구조다.
+- [Longformer](/wiki/longformer/) — Longformer는 각 토큰의 국소 슬라이딩 창 어텐션과 일부 토큰의 전역 어텐션을 결합해 긴 문서를 처리하는 트랜스포머다.
+- [Performer](/wiki/performer/) — Performer는 소프트맥스 어텐션을 무작위 특징 기반 커널로 근사해 시퀀스 길이에 선형인 계산을 목표로 하는 트랜스포머 변형이다.
 - [RMS 정규화](/wiki/rms-normalization/) — RMS 정규화는 평균을 빼지 않고 특징 값의 제곱평균제곱근으로 크기를 조정하는 정규화 방법이다.
 - [SwiGLU](/wiki/swiglu/) — SwiGLU는 SiLU로 활성화한 선형 분기와 다른 선형 분기를 원소별로 곱하는 게이트 순방향층 함수다.
+- [T5 아키텍처](/wiki/t5-architecture/) — T5 아키텍처는 모든 자연어 처리 과제를 텍스트 입력에서 텍스트 출력으로 표현하는 인코더-디코더 트랜스포머다.
+- [Transformer-XL](/wiki/transformer-xl/) — Transformer-XL은 이전 구간의 은닉 상태를 다음 구간에서 재사용해 고정 길이 문맥을 넘어선 의존성을 모델링하는 트랜스포머다.
+- [XLNet 아키텍처](/wiki/xlnet-architecture/) — XLNet 아키텍처는 토큰 위치의 여러 순열에 대해 자동회귀 예측을 수행해 양방향 문맥을 학습하는 트랜스포머 구조다.

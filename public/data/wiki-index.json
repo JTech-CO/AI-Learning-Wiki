@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T19:39:56.633Z",
+  "generatedAt": "2026-07-14T11:27:16.973Z",
   "counts": {
-    "articles": 630,
+    "articles": 770,
     "courses": 8
   },
   "categories": [
@@ -9,85 +9,85 @@
       "id": "foundations",
       "title": "AI·머신러닝 기초",
       "description": "인공지능의 범위와 기본 학습 방식",
-      "count": 45
+      "count": 55
     },
     {
       "id": "mathematics",
       "title": "수학·통계 기초",
       "description": "모델을 이해하는 데 필요한 수학과 확률",
-      "count": 45
+      "count": 55
     },
     {
       "id": "neural",
       "title": "신경망과 딥러닝",
       "description": "신경망의 구성 요소와 학습 원리",
-      "count": 45
+      "count": 55
     },
     {
       "id": "transformer",
       "title": "트랜스포머와 모델 구조",
       "description": "현대 언어 모델을 이루는 핵심 아키텍처",
-      "count": 45
+      "count": 55
     },
     {
       "id": "llm",
       "title": "LLM과 토큰 처리",
       "description": "언어 모델의 입력·문맥·생성 단위",
-      "count": 45
+      "count": 55
     },
     {
       "id": "training",
       "title": "학습과 사후학습",
       "description": "사전학습부터 정렬·경량화까지의 방법",
-      "count": 45
+      "count": 55
     },
     {
       "id": "inference",
       "title": "추론·서빙·최적화",
       "description": "학습된 모델이 출력을 생성하고 서비스되는 방식",
-      "count": 45
+      "count": 55
     },
     {
       "id": "retrieval",
       "title": "임베딩·검색·RAG",
       "description": "외부 지식을 검색해 생성에 결합하는 기술",
-      "count": 45
+      "count": 55
     },
     {
       "id": "api",
       "title": "API·SDK·도구 호출",
       "description": "모델을 소프트웨어와 연결하는 인터페이스",
-      "count": 45
+      "count": 55
     },
     {
       "id": "agents",
       "title": "에이전트·자동화·MCP",
       "description": "모델이 도구를 사용해 여러 단계를 수행하는 구조",
-      "count": 45
+      "count": 55
     },
     {
       "id": "multimodal",
       "title": "멀티모달 AI",
       "description": "텍스트와 이미지·음성·영상을 함께 다루는 모델",
-      "count": 45
+      "count": 55
     },
     {
       "id": "evaluation",
       "title": "평가·관측성·벤치마크",
       "description": "모델과 시스템의 품질을 측정하는 방법",
-      "count": 45
+      "count": 55
     },
     {
       "id": "safety",
       "title": "안전·보안·윤리",
       "description": "AI 시스템의 위험을 식별하고 통제하는 방법",
-      "count": 45
+      "count": 55
     },
     {
       "id": "ecosystem",
       "title": "모델·서비스 생태계",
       "description": "모델 공개와 배포 생태계의 기본 개념",
-      "count": 45
+      "count": 55
     }
   ],
   "articles": [
@@ -116,12 +116,17 @@
       "backlinks": [
         "pseudonymization",
         "personally-identifiable-information",
+        "privacy-audit",
+        "privacy-attack",
         "excessive-agency",
         "corrigibility",
         "deceptive-alignment",
+        "confidential-computing",
         "capability-control",
+        "data-consent",
         "data-retention",
         "data-minimization",
+        "data-bias",
         "membership-inference",
         "specification-gaming",
         "model-backdoor",
@@ -132,8 +137,12 @@
         "goal-misgeneralization",
         "sensitive-information-disclosure",
         "reward-tampering",
+        "secure-aggregation",
         "right-to-deletion",
         "insecure-output-handling",
+        "algorithmic-bias",
+        "memorized-data-extraction",
+        "federated-analytics",
         "dual-use-ai",
         "anonymization",
         "adversarial-example",
@@ -144,6 +153,7 @@
         "jailbreak",
         "catastrophic-ai-risk",
         "bias-fairness",
+        "representation-bias",
         "prompt-leakage",
         "prompt-injection",
         "training-data-poisoning",
@@ -259,6 +269,54 @@
       "url": "/wiki/hypothesis-space/"
     },
     {
+      "id": "accelerator-memory-hierarchy",
+      "title": "가속기 메모리 계층",
+      "englishTitle": "Accelerator Memory Hierarchy",
+      "aliases": [
+        "Accelerator Memory Hierarchy"
+      ],
+      "summary": "가속기 메모리 계층은 레지스터, 온칩 공유 메모리·캐시, 고대역폭 장치 메모리와 호스트 메모리로 이어지는 저장 단계다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/accelerator-memory-hierarchy/"
+    },
+    {
+      "id": "accelerator-interconnect",
+      "title": "가속기 인터커넥트",
+      "englishTitle": "Accelerator Interconnect",
+      "aliases": [
+        "Accelerator Interconnect"
+      ],
+      "summary": "가속기 인터커넥트는 GPU·NPU 같은 가속기 사이에서 텐서와 동기화 정보를 고속으로 전달하는 연결 기술이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/accelerator-interconnect/"
+    },
+    {
       "id": "weight",
       "title": "가중치",
       "englishTitle": "Weight",
@@ -286,8 +344,11 @@
         "graph-neural-network",
         "graph-attention-network",
         "graph-convolutional-network",
+        "nesterov-accelerated-gradient",
         "multilayer-perceptron",
         "memory-network",
+        "momentum-optimizer",
+        "mini-batch-gradient-descent",
         "variational-autoencoder",
         "generative-adversarial-network",
         "siamese-network",
@@ -297,10 +358,13 @@
         "recurrent-neural-network",
         "spiking-neural-network",
         "neural-ordinary-differential-equation",
+        "neural-turing-machine",
         "network-depth",
         "network-width",
         "layer",
+        "deep-belief-network",
         "energy-based-model",
+        "echo-state-network",
         "dense-layer",
         "hidden-state",
         "hidden-layer",
@@ -308,6 +372,7 @@
         "input-layer",
         "residual-network",
         "long-short-term-memory",
+        "restricted-boltzmann-machine",
         "output-layer",
         "capsule-network",
         "parameter-initialization",
@@ -315,8 +380,11 @@
         "convolutional-neural-network",
         "matrix-multiplication",
         "hopfield-network",
+        "stochastic-gradient-descent",
         "activation-function",
+        "adagrad",
         "densenet",
+        "rmsprop",
         "u-net"
       ],
       "courses": [],
@@ -428,6 +496,30 @@
       "url": "/wiki/reinforcement-learning/"
     },
     {
+      "id": "concept-drift",
+      "title": "개념 드리프트",
+      "englishTitle": "Concept Drift",
+      "aliases": [
+        "Concept Drift"
+      ],
+      "summary": "개념 드리프트는 시간에 따라 입력과 목표 사이의 관계가 바뀌어 과거 데이터로 학습한 모델의 예측 규칙이 덜 맞게 되는 현상이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/concept-drift/"
+    },
+    {
       "id": "open-vocabulary-detection",
       "title": "개방형 어휘 객체 탐지",
       "englishTitle": "Open-Vocabulary Detection",
@@ -474,6 +566,54 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/personally-identifiable-information/"
+    },
+    {
+      "id": "privacy-audit",
+      "title": "개인정보 감사",
+      "englishTitle": "Privacy Audit",
+      "aliases": [
+        "Privacy Audit"
+      ],
+      "summary": "개인정보 감사는 데이터 수명주기와 시스템 동작이 명시된 개인정보 원칙·정책·법적 요구를 지키는지 증거로 점검하는 절차다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/privacy-audit/"
+    },
+    {
+      "id": "privacy-attack",
+      "title": "개인정보 공격",
+      "englishTitle": "Privacy Attack",
+      "aliases": [
+        "Privacy Attack"
+      ],
+      "summary": "개인정보 공격은 모델·출력·기울기·API 응답을 이용해 개인의 참여 여부나 민감한 속성·원본 정보를 추론하려는 공격이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/privacy-attack/"
     },
     {
       "id": "privacy",
@@ -583,17 +723,22 @@
         "hierarchical-navigable-small-world",
         "product-quantization",
         "cross-lingual-embedding",
+        "passage-retrieval",
         "approximate-nearest-neighbor",
+        "multi-vector-retrieval",
         "reranker",
         "matryoshka-embedding",
         "metadata-filtering",
+        "document-retrieval",
         "document-embedding",
         "sentence-embedding",
+        "dense-retrieval",
         "dense-embedding",
         "vector-index",
         "lexical-retrieval",
         "inverted-index",
         "inverted-file-index",
+        "pseudo-relevance-feedback",
         "index-building",
         "index-replication",
         "index-sharding",
@@ -608,9 +753,14 @@
         "instruction-tuned-embedding",
         "locality-sensitive-hashing",
         "query-embedding",
+        "query-rewriting",
+        "query-expansion",
         "nearest-neighbor-search",
+        "maximal-marginal-relevance",
         "keyword-search",
         "flat-vector-index",
+        "hybrid-search",
+        "sparse-neural-retrieval",
         "sparse-embedding",
         "bm25",
         "diskann",
@@ -702,6 +852,54 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/gated-recurrent-unit/"
+    },
+    {
+      "id": "decision-tree",
+      "title": "결정 트리",
+      "englishTitle": "Decision Tree",
+      "aliases": [
+        "Decision Tree"
+      ],
+      "summary": "결정 트리는 특성 조건으로 데이터를 재귀적으로 분할해 잎에서 범주나 수치를 예측하는 비모수 지도학습 모형이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/decision-tree/"
+    },
+    {
+      "id": "joint-probability-distribution",
+      "title": "결합확률분포",
+      "englishTitle": "Joint Probability Distribution",
+      "aliases": [
+        "Joint Probability Distribution"
+      ],
+      "summary": "결합확률분포는 둘 이상의 확률변수가 동시에 특정 값을 취하는 가능성을 하나의 분포로 나타낸 것이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/joint-probability-distribution/"
     },
     {
       "id": "path-parameter",
@@ -832,6 +1030,30 @@
       "url": "/wiki/computational-intelligence/"
     },
     {
+      "id": "hierarchical-clustering",
+      "title": "계층적 군집화",
+      "englishTitle": "Hierarchical Clustering",
+      "aliases": [
+        "Hierarchical Clustering"
+      ],
+      "summary": "계층적 군집화는 데이터 집단을 단계적으로 합치거나 나누어 중첩된 군집 관계를 덴드로그램으로 표현하는 방법이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/hierarchical-clustering/"
+    },
+    {
       "id": "hierarchical-navigable-small-world",
       "title": "계층적 탐색 가능 소세계 그래프",
       "englishTitle": "Hierarchical Navigable Small World",
@@ -886,6 +1108,30 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/planning/"
+    },
+    {
+      "id": "plan-and-execute",
+      "title": "계획 후 실행",
+      "englishTitle": "Plan-and-Execute",
+      "aliases": [
+        "Plan-and-Execute"
+      ],
+      "summary": "계획 후 실행은 목표를 먼저 여러 하위 과제로 분해한 다음 실행기가 각 단계를 수행하고 결과에 따라 계획을 수정하는 에이전트 방식이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/plan-and-execute/"
     },
     {
       "id": "planner-agent",
@@ -1056,6 +1302,30 @@
       "url": "/wiki/spatial-reasoning/"
     },
     {
+      "id": "covariance",
+      "title": "공분산",
+      "englishTitle": "Covariance",
+      "aliases": [
+        "Covariance"
+      ],
+      "summary": "공분산은 두 확률변수가 각자의 평균에서 같은 방향 또는 반대 방향으로 함께 변하는 정도를 나타낸 값이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/covariance/"
+    },
+    {
       "id": "excessive-agency",
       "title": "과도한 자율성",
       "englishTitle": "Excessive Agency",
@@ -1191,6 +1461,54 @@
       "url": "/wiki/ocr/"
     },
     {
+      "id": "optical-flow",
+      "title": "광학 흐름",
+      "englishTitle": "Optical Flow",
+      "aliases": [
+        "Optical Flow"
+      ],
+      "summary": "광학 흐름은 연속 영상 프레임 사이에서 각 화소가 이동한 방향과 크기를 추정한 벡터장이다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/optical-flow/"
+    },
+    {
+      "id": "teacher-forcing",
+      "title": "교사 강요",
+      "englishTitle": "Teacher Forcing",
+      "aliases": [
+        "Teacher Forcing"
+      ],
+      "summary": "교사 강요는 순차 모델 학습에서 이전 시점의 모델 예측 대신 실제 정답 토큰을 다음 입력으로 제공하는 방법이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/teacher-forcing/"
+    },
+    {
       "id": "corrigibility",
       "title": "교정 가능성",
       "englishTitle": "Corrigibility",
@@ -1263,6 +1581,30 @@
       "url": "/wiki/span-corruption/"
     },
     {
+      "id": "passage-retrieval",
+      "title": "구절 검색",
+      "englishTitle": "Passage Retrieval",
+      "aliases": [
+        "Passage Retrieval"
+      ],
+      "summary": "구절 검색은 긴 문서를 작은 문단이나 청크로 나누어 질의에 직접 관련된 구간을 반환하는 검색 과제다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/passage-retrieval/"
+    },
+    {
       "id": "structured-output",
       "title": "구조화 출력",
       "englishTitle": "Structured Output",
@@ -1317,6 +1659,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/local-global-optimum/"
+    },
+    {
+      "id": "clustering",
+      "title": "군집화",
+      "englishTitle": "Clustering",
+      "aliases": [
+        "Clustering"
+      ],
+      "summary": "군집화는 정답 레이블 없이 유사한 데이터가 같은 집단에 모이도록 구조를 찾는 비지도학습 과제다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/clustering/"
     },
     {
       "id": "inductive-bias",
@@ -1512,6 +1878,7 @@
         "multi-model-serving",
         "multinomial-sampling",
         "contrastive-search",
+        "dynamic-batching",
         "decode-phase",
         "model-gateway",
         "model-replica",
@@ -1529,18 +1896,27 @@
         "request-queue",
         "request-scheduler",
         "typical-sampling",
+        "static-batching",
         "constrained-decoding",
         "presence-penalty",
         "stop-sequence",
         "time-to-first-token",
+        "chunked-prefill",
+        "draft-model",
         "inference-load-balancing",
         "inference-server",
         "inference-endpoint",
         "inference-autoscaling",
+        "speculative-decoding",
+        "cache-offloading",
+        "cache-eviction",
         "inter-token-latency",
         "token-sampling",
+        "paged-kv-cache",
+        "prefix-caching",
         "prefill-phase",
         "kv-cache",
+        "kv-cache-quantization",
         "min-p-sampling",
         "top-k-sampling",
         "top-p-sampling"
@@ -1661,6 +2037,30 @@
       "url": "/wiki/expected-calibration-error/"
     },
     {
+      "id": "expected-value",
+      "title": "기댓값",
+      "englishTitle": "Expected Value",
+      "aliases": [
+        "Expected Value"
+      ],
+      "summary": "기댓값은 확률변수가 장기 반복에서 취할 값의 확률 가중 평균을 나타내는 분포의 요약량이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/expected-value/"
+    },
+    {
       "id": "deceptive-alignment",
       "title": "기만적 정렬",
       "englishTitle": "Deceptive Alignment",
@@ -1683,6 +2083,78 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/deceptive-alignment/"
+    },
+    {
+      "id": "confidential-computing",
+      "title": "기밀 컴퓨팅",
+      "englishTitle": "Confidential Computing",
+      "aliases": [
+        "Confidential Computing"
+      ],
+      "summary": "기밀 컴퓨팅은 하드웨어 기반 신뢰 실행 환경에서 사용 중인 데이터와 코드를 격리·검증해 보호하는 방식이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/confidential-computing/"
+    },
+    {
+      "id": "memory-forgetting",
+      "title": "기억 망각",
+      "englishTitle": "Memory Forgetting",
+      "aliases": [
+        "Memory Forgetting"
+      ],
+      "summary": "기억 망각은 오래되거나 부정확하거나 과제와 무관한 기록의 검색 우선순위를 낮추거나 삭제하는 기억 관리 과정이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/memory-forgetting/"
+    },
+    {
+      "id": "memory-consolidation",
+      "title": "기억 통합",
+      "englishTitle": "Memory Consolidation",
+      "aliases": [
+        "Memory Consolidation"
+      ],
+      "summary": "기억 통합은 여러 일화와 단기 기록에서 반복되는 정보를 추려 더 안정적인 요약·의미 기억·절차로 재구성하는 과정이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/memory-consolidation/"
     },
     {
       "id": "gradient",
@@ -1764,20 +2236,28 @@
       "backlinks": [
         "hypothesis",
         "hypothesis-space",
+        "concept-drift",
         "validation-set",
+        "decision-tree",
         "computational-intelligence",
+        "hierarchical-clustering",
         "good-old-fashioned-ai",
+        "clustering",
         "inductive-bias",
         "active-learning",
         "multi-task-learning",
         "data-leakage",
         "data-distribution",
         "data-preprocessing",
+        "random-forest",
         "label",
+        "logistic-regression",
         "meta-learning",
         "model-capacity",
         "target-variable",
         "batch-learning",
+        "classification",
+        "linear-regression",
         "connectionism",
         "online-learning",
         "ai-winter",
@@ -1793,7 +2273,9 @@
         "feature-engineering",
         "foundation-model",
         "few-shot-learning",
-        "train-validation-test-split"
+        "train-validation-test-split",
+        "regression",
+        "k-means-clustering"
       ],
       "courses": [],
       "reviewedAt": "2026-07-13",
@@ -1846,6 +2328,30 @@
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/dot-product/"
+    },
+    {
+      "id": "nesterov-accelerated-gradient",
+      "title": "네스테로프 가속 경사법",
+      "englishTitle": "Nesterov Accelerated Gradient",
+      "aliases": [
+        "Nesterov Accelerated Gradient"
+      ],
+      "summary": "네스테로프 가속 경사법은 모멘텀으로 예상한 앞선 위치에서 기울기를 계산해 갱신 방향을 미리 보정하는 최적화법이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/nesterov-accelerated-gradient/"
     },
     {
       "id": "newtons-method",
@@ -2100,6 +2606,30 @@
       "url": "/wiki/multi-task-objective/"
     },
     {
+      "id": "multi-task-instruction-tuning",
+      "title": "다중 과제 지시 튜닝",
+      "englishTitle": "Multi-Task Instruction Tuning",
+      "aliases": [
+        "Multi-Task Instruction Tuning"
+      ],
+      "summary": "다중 과제 지시 튜닝은 서로 다른 과제를 자연어 지시 형식으로 통합해 하나의 모델을 동시에 미세조정하는 방법이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/multi-task-instruction-tuning/"
+    },
+    {
       "id": "multi-task-learning",
       "title": "다중 과제 학습",
       "englishTitle": "Multi-Task Learning",
@@ -2146,6 +2676,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/multi-model-serving/"
+    },
+    {
+      "id": "multi-vector-retrieval",
+      "title": "다중 벡터 검색",
+      "englishTitle": "Multi-Vector Retrieval",
+      "aliases": [
+        "Multi-Vector Retrieval"
+      ],
+      "summary": "다중 벡터 검색은 문서 하나를 단일 벡터가 아니라 토큰·구절·관점별 여러 벡터로 표현해 세밀한 일치를 계산하는 방식이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/multi-vector-retrieval/"
     },
     {
       "id": "multilayer-perceptron",
@@ -2245,12 +2799,17 @@
         "masked-language-model",
         "multimodal-language-model",
         "model-size",
+        "in-context-learning",
         "character-tokenization",
         "out-of-vocabulary-token",
         "dense-language-model",
         "byte-level-tokenization",
+        "chain-of-thought-prompting",
+        "user-prompt",
         "subword-token",
         "small-language-model",
+        "scaling-efficiency",
+        "system-prompt",
         "beginning-end-token",
         "sequence-likelihood",
         "neural-language-model",
@@ -2258,16 +2817,21 @@
         "language-model",
         "unigram-language-model-tokenizer",
         "causal-language-model",
+        "self-consistency-decoding",
         "autoregressive-language-model",
         "expert-routing",
         "expert-capacity-factor",
+        "zero-shot-prompting",
         "conditional-language-model",
+        "instruction",
+        "emergent-ability",
         "inference-compute",
         "code-language-model",
         "special-token",
         "parameter",
         "parameter-count",
         "padding-token",
+        "few-shot-prompting",
         "training-compute",
         "sparse-language-model",
         "n-gram-language-model",
@@ -2353,6 +2917,30 @@
       "url": "/wiki/contrastive-search/"
     },
     {
+      "id": "conversation-memory",
+      "title": "대화 메모리",
+      "englishTitle": "Conversation Memory",
+      "aliases": [
+        "Conversation Memory"
+      ],
+      "summary": "대화 메모리는 사용자와 에이전트 사이의 발화, 역할, 결정과 미해결 항목을 대화 단위로 유지하는 기억이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/conversation-memory/"
+    },
+    {
       "id": "interactive-model-demo",
       "title": "대화형 모델 데모",
       "englishTitle": "Interactive Model Demo",
@@ -2399,6 +2987,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/data-leakage/"
+    },
+    {
+      "id": "data-consent",
+      "title": "데이터 동의",
+      "englishTitle": "Data Consent",
+      "aliases": [
+        "Data Consent"
+      ],
+      "summary": "데이터 동의는 개인이 자신의 데이터가 어떤 목적과 범위로 수집·사용·공유되는지 알고 자발적으로 허용한 상태다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/data-consent/"
     },
     {
       "id": "data-retention",
@@ -2471,6 +3083,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/data-preprocessing/"
+    },
+    {
+      "id": "data-annotation",
+      "title": "데이터 주석",
+      "englishTitle": "Data Annotation",
+      "aliases": [
+        "Data Annotation"
+      ],
+      "summary": "데이터 주석은 원시 데이터에 범주, 경계, 관계, 선호나 설명을 부여해 학습·평가에 사용할 참조 정보를 만드는 과정이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/data-annotation/"
     },
     {
       "id": "data-augmentation",
@@ -2550,6 +3186,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/data-curriculum/"
+    },
+    {
+      "id": "data-bias",
+      "title": "데이터 편향",
+      "englishTitle": "Data Bias",
+      "aliases": [
+        "Data Bias"
+      ],
+      "summary": "데이터 편향은 수집·표본·레이블·전처리 과정이 현실 모집단이나 사용 목적을 체계적으로 왜곡한 상태다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/data-bias/"
     },
     {
       "id": "data-mixture",
@@ -2679,6 +3339,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/dataset-hub/"
+    },
+    {
+      "id": "tool-result",
+      "title": "도구 결과",
+      "englishTitle": "Tool Result",
+      "aliases": [
+        "Tool Result"
+      ],
+      "summary": "도구 결과는 외부 기능 실행 뒤 에이전트에 반환되는 데이터, 상태, 오류와 부작용 정보다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/tool-result/"
     },
     {
       "id": "tool-result-handling",
@@ -2825,6 +3509,30 @@
       "url": "/wiki/tool-selection/"
     },
     {
+      "id": "tool-choice",
+      "title": "도구 선택 제어",
+      "englishTitle": "Tool Choice",
+      "aliases": [
+        "Tool Choice"
+      ],
+      "summary": "도구 선택은 현재 요청에서 모델이 사용할 수 있는 도구를 허용·금지하거나 특정 도구 사용을 강제하는 제어다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/tool-choice/"
+    },
+    {
       "id": "tool-invocation",
       "title": "도구 실행",
       "englishTitle": "Tool Invocation",
@@ -2849,6 +3557,54 @@
       "url": "/wiki/tool-invocation/"
     },
     {
+      "id": "tool-argument",
+      "title": "도구 인수",
+      "englishTitle": "Tool Argument",
+      "aliases": [
+        "Tool Argument"
+      ],
+      "summary": "도구 인수는 선택된 도구 호출에 전달되는 구조화된 입력 값의 집합이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/tool-argument/"
+    },
+    {
+      "id": "tool-definition",
+      "title": "도구 정의",
+      "englishTitle": "Tool Definition",
+      "aliases": [
+        "Tool Definition"
+      ],
+      "summary": "도구 정의는 에이전트가 호출할 수 있는 기능의 이름, 목적, 입력 스키마, 권한과 부작용을 기술한 계약이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/tool-definition/"
+    },
+    {
       "id": "tool-calling",
       "title": "도구 호출",
       "englishTitle": "Tool Calling",
@@ -2869,8 +3625,12 @@
       "backlinks": [
         "indirect-prompt-injection",
         "sense-think-act-cycle",
+        "plan-and-execute",
         "planner-agent",
         "structured-output",
+        "memory-forgetting",
+        "memory-consolidation",
+        "conversation-memory",
         "tool-result-handling",
         "tool-permission",
         "tool-registry",
@@ -2879,7 +3639,9 @@
         "tool-selection",
         "tool-invocation",
         "router-agent",
+        "vector-memory",
         "browser-use-agent",
+        "session-state",
         "streaming-response",
         "agent-task-decomposition",
         "short-term-agent-memory",
@@ -2888,11 +3650,14 @@
         "agent-goal",
         "agent-sandbox",
         "agent-reflection",
+        "agent-scratchpad",
         "agent-executor",
+        "semantic-agent-memory",
         "episodic-agent-memory",
         "agent-self-correction",
         "agent-autonomy-level",
         "long-term-agent-memory",
+        "procedural-agent-memory",
         "agent-control-loop",
         "agent-termination-condition",
         "agent-harness",
@@ -2902,6 +3667,7 @@
         "perceive-plan-act-cycle",
         "working-memory",
         "worker-agent",
+        "persistent-agent-state",
         "computer-use-agent",
         "code-execution-tool",
         "prompt-injection",
@@ -2965,6 +3731,30 @@
       "url": "/wiki/domain-adaptation/"
     },
     {
+      "id": "lip-reading",
+      "title": "독순술 인식",
+      "englishTitle": "Lip Reading",
+      "aliases": [
+        "Lip Reading"
+      ],
+      "summary": "독순술 인식은 화자의 입술과 얼굴 움직임만으로 발화 음소·단어·문장을 추정하는 시각 음성 인식 과제다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/lip-reading/"
+    },
+    {
       "id": "synchronous-api-request",
       "title": "동기 API 요청",
       "englishTitle": "Synchronous API Request",
@@ -2987,6 +3777,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/synchronous-api-request/"
+    },
+    {
+      "id": "dynamic-batching",
+      "title": "동적 배칭",
+      "englishTitle": "Dynamic Batching",
+      "aliases": [
+        "Dynamic Batching"
+      ],
+      "summary": "동적 배칭은 도착 시간이 다른 추론 요청을 짧은 대기 창에서 묶어 실행 시점마다 배치 크기를 구성하는 서빙 방식이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/dynamic-batching/"
     },
     {
       "id": "dynamic-benchmark",
@@ -3122,22 +3936,30 @@
       "backlinks": [
         "hypothesis",
         "hypothesis-space",
+        "concept-drift",
         "validation-set",
+        "decision-tree",
         "computational-intelligence",
+        "hierarchical-clustering",
         "good-old-fashioned-ai",
+        "clustering",
         "inductive-bias",
         "active-learning",
         "multi-task-learning",
         "data-leakage",
         "data-distribution",
         "data-preprocessing",
+        "random-forest",
         "label",
+        "logistic-regression",
         "machine-learning",
         "meta-learning",
         "model-capacity",
         "target-variable",
         "batch-learning",
+        "classification",
         "generative-ai",
+        "linear-regression",
         "connectionism",
         "online-learning",
         "artificial-intelligence",
@@ -3155,7 +3977,9 @@
         "feature-engineering",
         "foundation-model",
         "few-shot-learning",
-        "train-validation-test-split"
+        "train-validation-test-split",
+        "regression",
+        "k-means-clustering"
       ],
       "courses": [
         "ai-foundations"
@@ -3236,6 +4060,30 @@
       "url": "/wiki/license-compatibility/"
     },
     {
+      "id": "random-forest",
+      "title": "랜덤 포레스트",
+      "englishTitle": "Random Forest",
+      "aliases": [
+        "Random Forest"
+      ],
+      "summary": "랜덤 포레스트는 부트스트랩 표본과 무작위 특성 부분집합으로 학습한 여러 결정 트리의 예측을 결합하는 앙상블이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/random-forest/"
+    },
+    {
       "id": "label",
       "title": "레이블",
       "englishTitle": "Label",
@@ -3310,6 +4158,30 @@
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/log-loss/"
+    },
+    {
+      "id": "logistic-regression",
+      "title": "로지스틱 회귀",
+      "englishTitle": "Logistic Regression",
+      "aliases": [
+        "Logistic Regression"
+      ],
+      "summary": "로지스틱 회귀는 특성의 선형 결합을 로짓으로 사용해 범주, 특히 이진 사건의 조건부 확률을 추정하는 분류 모형이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/logistic-regression/"
     },
     {
       "id": "logit",
@@ -3421,6 +4293,30 @@
       "url": "/wiki/reranker/"
     },
     {
+      "id": "likert-scale",
+      "title": "리커트 척도",
+      "englishTitle": "Likert Scale",
+      "aliases": [
+        "Likert Scale"
+      ],
+      "summary": "리커트 척도는 응답자가 진술에 대한 동의나 평가 정도를 순서가 있는 여러 범주 중 하나로 표시하는 척도다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/likert-scale/"
+    },
+    {
       "id": "masked-language-model",
       "title": "마스크 언어 모델",
       "englishTitle": "Masked Language Model",
@@ -3493,6 +4389,30 @@
       "url": "/wiki/matryoshka-embedding/"
     },
     {
+      "id": "blind-evaluation",
+      "title": "맹검 평가",
+      "englishTitle": "Blind Evaluation",
+      "aliases": [
+        "Blind Evaluation"
+      ],
+      "summary": "맹검 평가는 평가자가 후보의 제작자·모델명·실험 조건 중 판단에 불필요한 정보를 모른 채 결과를 판정하는 절차다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/blind-evaluation/"
+    },
+    {
       "id": "machine-learning",
       "title": "머신러닝",
       "englishTitle": "Machine Learning",
@@ -3515,9 +4435,13 @@
       "backlinks": [
         "hypothesis",
         "hypothesis-space",
+        "concept-drift",
         "validation-set",
+        "decision-tree",
         "computational-intelligence",
+        "hierarchical-clustering",
         "good-old-fashioned-ai",
+        "clustering",
         "inductive-bias",
         "symbolic-ai",
         "active-learning",
@@ -3526,12 +4450,16 @@
         "data-distribution",
         "data-preprocessing",
         "deep-learning",
+        "random-forest",
         "label",
+        "logistic-regression",
         "meta-learning",
         "model-capacity",
         "target-variable",
         "batch-learning",
+        "classification",
         "generative-ai",
+        "linear-regression",
         "connectionism",
         "online-learning",
         "artificial-intelligence",
@@ -3549,7 +4477,9 @@
         "feature-engineering",
         "foundation-model",
         "few-shot-learning",
-        "train-validation-test-split"
+        "train-validation-test-split",
+        "regression",
+        "k-means-clustering"
       ],
       "courses": [
         "ai-foundations"
@@ -3609,17 +4539,25 @@
         "open-vocabulary-detection",
         "object-detection",
         "spatial-reasoning",
+        "optical-flow",
         "contrastive-language-image-pretraining",
+        "lip-reading",
         "mel-spectrogram",
         "video-classification",
         "video-generation",
         "video-understanding",
+        "video-question-answering",
+        "video-captioning",
+        "video-tokenization",
+        "video-diffusion",
         "vision-language-model",
+        "world-simulation-model",
         "spectrogram",
         "visual-grounding",
         "visual-encoder",
         "visual-question-answering",
         "visual-reasoning",
+        "temporal-attention",
         "temporal-modeling",
         "neural-vocoder",
         "region-proposal-network",
@@ -3637,11 +4575,13 @@
         "image-embedding",
         "image-captioning",
         "image-patch",
+        "long-video-understanding",
         "zero-shot-image-classification",
         "computer-vision",
         "cross-attention",
         "text-audio-model",
         "feature-pyramid-network",
+        "frame-sampling",
         "pixel-representation",
         "action-recognition",
         "speaker-diarization",
@@ -3759,6 +4699,7 @@
         "linear-attention",
         "scaled-dot-product-attention",
         "sliding-window-attention",
+        "sequence-to-sequence-transformer",
         "bidirectional-attention",
         "attention-mask",
         "attention-score",
@@ -3780,9 +4721,18 @@
         "pre-normalization",
         "prefix-language-model",
         "sparse-attention",
+        "bart-architecture",
+        "bert-architecture",
+        "bigbird",
         "geglu",
+        "gpt-architecture",
+        "longformer",
+        "performer",
         "rms-normalization",
-        "swiglu"
+        "swiglu",
+        "t5-architecture",
+        "transformer-xl",
+        "xlnet-architecture"
       ],
       "courses": [],
       "reviewedAt": "2026-07-13",
@@ -4116,6 +5066,8 @@
         "workflow-orchestration"
       ],
       "backlinks": [
+        "accelerator-memory-hierarchy",
+        "accelerator-interconnect",
         "graphics-processing-unit",
         "interactive-model-demo",
         "dataset-terms-of-use",
@@ -4143,19 +5095,27 @@
         "software-data-model-license",
         "neural-processing-unit",
         "artifact-registry",
+        "edge-ai",
         "research-only-license",
         "open-weight-model",
         "open-source-ai-definition",
+        "on-premises-ai",
         "reproducible-model-build",
         "attribution-requirement",
         "responsible-ai-license",
         "copyleft-license",
+        "compute-cluster",
         "cloud-ai-service",
         "tensor-processing-unit",
         "derivative-model",
         "package-registry",
         "permissive-license",
         "ai-accelerator",
+        "ai-datacenter",
+        "cuda",
+        "infiniband",
+        "nvlink",
+        "rocm",
         "safetensors"
       ],
       "courses": [],
@@ -4256,6 +5216,8 @@
         "evaluation"
       ],
       "backlinks": [
+        "accelerator-memory-hierarchy",
+        "accelerator-interconnect",
         "graphics-processing-unit",
         "interactive-model-demo",
         "dataset-terms-of-use",
@@ -4282,19 +5244,27 @@
         "software-data-model-license",
         "neural-processing-unit",
         "artifact-registry",
+        "edge-ai",
         "research-only-license",
         "open-weight-model",
         "open-source-ai-definition",
+        "on-premises-ai",
         "reproducible-model-build",
         "attribution-requirement",
         "responsible-ai-license",
         "copyleft-license",
+        "compute-cluster",
         "cloud-ai-service",
         "tensor-processing-unit",
         "derivative-model",
         "package-registry",
         "permissive-license",
         "ai-accelerator",
+        "ai-datacenter",
+        "cuda",
+        "infiniband",
+        "nvlink",
+        "rocm",
         "safetensors"
       ],
       "courses": [],
@@ -4737,10 +5707,13 @@
         "task-benchmark",
         "expected-calibration-error",
         "capability-benchmark",
+        "data-annotation",
         "data-augmentation",
         "dynamic-benchmark",
         "log-loss",
         "leaderboard",
+        "likert-scale",
+        "blind-evaluation",
         "model-version",
         "benchmark",
         "benchmark-dataset",
@@ -4749,14 +5722,21 @@
         "benchmark-saturation",
         "brier-score",
         "win-rate",
+        "pairwise-comparison",
         "safety-benchmark",
         "exact-match",
         "image-classification",
         "human-evaluation",
+        "expert-evaluation",
         "precision-recall-curve",
+        "annotation-adjudication",
+        "annotator-agreement",
+        "crowdsourced-evaluation",
         "specificity",
         "evaluation-rubric",
         "metric",
+        "evaluation-sampling",
+        "inter-rater-reliability",
         "synthetic-data",
         "confusion-matrix",
         "beir-benchmark",
@@ -4852,6 +5832,8 @@
         "model-license"
       ],
       "backlinks": [
+        "accelerator-memory-hierarchy",
+        "accelerator-interconnect",
         "graphics-processing-unit",
         "interactive-model-demo",
         "dataset-terms-of-use",
@@ -4881,25 +5863,57 @@
         "software-data-model-license",
         "neural-processing-unit",
         "artifact-registry",
+        "edge-ai",
         "research-only-license",
         "open-weight-model",
         "open-source-model",
         "open-source-ai-definition",
+        "on-premises-ai",
         "reproducible-model-build",
         "attribution-requirement",
         "responsible-ai-license",
         "copyleft-license",
+        "compute-cluster",
         "cloud-ai-service",
         "tensor-processing-unit",
         "derivative-model",
         "package-registry",
         "permissive-license",
         "ai-accelerator",
+        "ai-datacenter",
+        "cuda",
+        "infiniband",
+        "nvlink",
+        "rocm",
         "safetensors"
       ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/model-hub/"
+    },
+    {
+      "id": "momentum-optimizer",
+      "title": "모멘텀 최적화",
+      "englishTitle": "Momentum Optimizer",
+      "aliases": [
+        "Momentum Optimizer"
+      ],
+      "summary": "모멘텀 최적화는 과거 기울기의 누적 방향을 속도 변수에 보존해 진동을 줄이고 일관된 방향의 이동을 가속하는 방법이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/momentum-optimizer/"
     },
     {
       "id": "objective-function",
@@ -4996,6 +6010,78 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/stateless-api/"
+    },
+    {
+      "id": "in-context-learning",
+      "title": "문맥 내 학습",
+      "englishTitle": "In-Context Learning",
+      "aliases": [
+        "In-Context Learning"
+      ],
+      "summary": "문맥 내 학습은 모델 매개변수를 갱신하지 않고 프롬프트 속 지시·예시·관찰을 이용해 현재 과제에 맞는 동작을 구성하는 능력이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/in-context-learning/"
+    },
+    {
+      "id": "grammar-constrained-generation",
+      "title": "문법 제약 생성",
+      "englishTitle": "Grammar-Constrained Generation",
+      "aliases": [
+        "Grammar-Constrained Generation"
+      ],
+      "summary": "문법 제약 생성은 출력이 지정된 문법이나 구조 스키마를 벗어나지 않도록 다음 토큰 후보를 제한하는 디코딩 방식이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/grammar-constrained-generation/"
+    },
+    {
+      "id": "document-retrieval",
+      "title": "문서 검색",
+      "englishTitle": "Document Retrieval",
+      "aliases": [
+        "Document Retrieval"
+      ],
+      "summary": "문서 검색은 질의에 관련된 전체 문서 단위를 대규모 컬렉션에서 찾아 순위화하는 과정이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/document-retrieval/"
     },
     {
       "id": "document-embedding",
@@ -5118,6 +6204,30 @@
       "url": "/wiki/sentence-embedding/"
     },
     {
+      "id": "mini-batch-gradient-descent",
+      "title": "미니배치 경사하강법",
+      "englishTitle": "Mini-Batch Gradient Descent",
+      "aliases": [
+        "Mini-Batch Gradient Descent"
+      ],
+      "summary": "미니배치 경사하강법은 여러 사례로 구성된 작은 배치의 평균 기울기를 사용해 신경망 매개변수를 갱신하는 방식이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/mini-batch-gradient-descent/"
+    },
+    {
       "id": "out-of-vocabulary-token",
       "title": "미등록 토큰",
       "englishTitle": "Out-of-Vocabulary Token",
@@ -5193,9 +6303,11 @@
       "backlinks": [
         "value-function-loss",
         "task-adaptation",
+        "teacher-forcing",
         "span-corruption",
         "next-sentence-prediction",
         "multi-task-objective",
+        "multi-task-instruction-tuning",
         "contrastive-objective",
         "data-curriculum",
         "data-mixture",
@@ -5210,20 +6322,28 @@
         "pretraining",
         "pretraining-pipeline",
         "preference-loss",
+        "sequence-classification-fine-tuning",
         "sequence-packing",
         "continued-pretraining",
         "web-scale-training-data",
+        "response-format-tuning",
         "causal-language-modeling-objective",
         "denoising-objective",
         "full-parameter-fine-tuning",
         "policy-objective",
         "distillation-loss",
         "supervised-fine-tuning",
+        "instruction-mixture",
+        "instruction-dataset",
         "instruction-tuning",
+        "chat-template",
         "training-data-provenance",
         "training-data-filtering",
+        "training-data-formatting",
         "training-corpus",
-        "diffusion-training-objective"
+        "diffusion-training-objective",
+        "reinforcement-learning-from-ai-feedback",
+        "proximal-policy-optimization-for-llm"
       ],
       "courses": [
         "model-training"
@@ -5254,6 +6374,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/sensitive-information-disclosure/"
+    },
+    {
+      "id": "dense-retrieval",
+      "title": "밀집 검색",
+      "englishTitle": "Dense Retrieval",
+      "aliases": [
+        "Dense Retrieval"
+      ],
+      "summary": "밀집 검색은 질의와 문서를 연속 벡터로 인코딩하고 벡터 유사도로 관련 항목을 찾는 검색 방식이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/dense-retrieval/"
     },
     {
       "id": "dense-language-model",
@@ -5537,6 +6681,30 @@
       "url": "/wiki/batching/"
     },
     {
+      "id": "bayes-theorem",
+      "title": "베이즈 정리",
+      "englishTitle": "Bayes' Theorem",
+      "aliases": [
+        "Bayes' Theorem"
+      ],
+      "summary": "베이즈 정리는 관측 증거가 주어졌을 때 가설의 사후확률을 사전확률과 우도, 증거확률로 연결하는 관계다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/bayes-theorem/"
+    },
+    {
       "id": "vector",
       "title": "벡터",
       "englishTitle": "Vector",
@@ -5553,9 +6721,12 @@
         "tensor"
       ],
       "backlinks": [
+        "joint-probability-distribution",
         "eigendecomposition",
         "eigenvalue-eigenvector",
+        "covariance",
         "local-global-optimum",
+        "expected-value",
         "basis-vector",
         "dot-product",
         "newtons-method",
@@ -5564,11 +6735,14 @@
         "objective-function",
         "dense-embedding",
         "directional-derivative",
+        "bayes-theorem",
         "vector-space",
         "vector-norm",
         "vector-projection",
         "convex-optimization",
         "convex-function",
+        "variance",
+        "correlation",
         "line-search",
         "linear-transformation",
         "scalar",
@@ -5582,10 +6756,14 @@
         "embedding",
         "matrix-transpose",
         "constrained-optimization",
+        "marginal-probability",
         "quasi-newton-method",
+        "central-limit-theorem",
         "orthogonality",
+        "law-of-large-numbers",
         "taylor-expansion",
         "tensor",
+        "statistical-sampling",
         "singular-value-decomposition",
         "partial-derivative",
         "matrix",
@@ -5675,16 +6853,21 @@
         "hierarchical-navigable-small-world",
         "product-quantization",
         "cross-lingual-embedding",
+        "passage-retrieval",
+        "multi-vector-retrieval",
         "matryoshka-embedding",
         "metadata-filtering",
+        "document-retrieval",
         "document-embedding",
         "sentence-embedding",
+        "dense-retrieval",
         "dense-embedding",
         "vector-index",
         "lexical-retrieval",
         "inverted-index",
         "inverted-file-index",
         "semantic-search",
+        "pseudo-relevance-feedback",
         "index-building",
         "index-replication",
         "index-sharding",
@@ -5700,9 +6883,14 @@
         "instruction-tuned-embedding",
         "locality-sensitive-hashing",
         "query-embedding",
+        "query-rewriting",
+        "query-expansion",
         "nearest-neighbor-search",
+        "maximal-marginal-relevance",
         "keyword-search",
         "flat-vector-index",
+        "hybrid-search",
+        "sparse-neural-retrieval",
         "sparse-embedding",
         "bm25",
         "diskann",
@@ -5714,6 +6902,30 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/vector-database/"
+    },
+    {
+      "id": "vector-memory",
+      "title": "벡터 메모리",
+      "englishTitle": "Vector Memory",
+      "aliases": [
+        "Vector Memory"
+      ],
+      "summary": "벡터 메모리는 텍스트나 관찰을 임베딩 벡터와 메타데이터로 저장해 의미적 유사성으로 회상하는 에이전트 기억 구현이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/vector-memory/"
     },
     {
       "id": "vector-projection",
@@ -5963,6 +7175,30 @@
       "url": "/wiki/variational-autoencoder/"
     },
     {
+      "id": "parallel-tool-call",
+      "title": "병렬 도구 호출",
+      "englishTitle": "Parallel Tool Call",
+      "aliases": [
+        "Parallel Tool Call"
+      ],
+      "summary": "병렬 도구 호출은 서로 의존하지 않는 여러 도구 요청을 동시에 실행해 전체 대기 시간을 줄이는 방식이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/parallel-tool-call/"
+    },
+    {
       "id": "reward-model",
       "title": "보상 모델",
       "englishTitle": "Reward Model",
@@ -6017,6 +7253,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/reward-tampering/"
+    },
+    {
+      "id": "secure-aggregation",
+      "title": "보안 집계",
+      "englishTitle": "Secure Aggregation",
+      "aliases": [
+        "Secure Aggregation"
+      ],
+      "summary": "보안 집계는 서버가 개별 참여자의 입력을 보지 못한 채 여러 입력의 합이나 집계값만 얻도록 하는 암호 프로토콜이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/secure-aggregation/"
     },
     {
       "id": "auxiliary-loss",
@@ -6113,6 +7373,54 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/convex-function/"
+    },
+    {
+      "id": "classification",
+      "title": "분류",
+      "englishTitle": "Classification",
+      "aliases": [
+        "Classification"
+      ],
+      "summary": "분류는 입력을 미리 정의된 하나 이상의 범주로 예측하는 지도학습 문제다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/classification/"
+    },
+    {
+      "id": "variance",
+      "title": "분산",
+      "englishTitle": "Variance",
+      "aliases": [
+        "Variance"
+      ],
+      "summary": "분산은 확률변수가 평균에서 얼마나 퍼져 있는지를 평균 제곱 편차로 나타낸 값이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/variance/"
     },
     {
       "id": "browser-use-agent",
@@ -6259,6 +7567,102 @@
       "url": "/wiki/video-understanding/"
     },
     {
+      "id": "video-question-answering",
+      "title": "비디오 질의응답",
+      "englishTitle": "Video Question Answering",
+      "aliases": [
+        "Video Question Answering"
+      ],
+      "summary": "비디오 질의응답은 영상과 자연어 질문을 함께 입력받아 시간적·공간적 근거를 바탕으로 답을 생성하거나 선택하는 과제다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/video-question-answering/"
+    },
+    {
+      "id": "video-captioning",
+      "title": "비디오 캡셔닝",
+      "englishTitle": "Video Captioning",
+      "aliases": [
+        "Video Captioning"
+      ],
+      "summary": "비디오 캡셔닝은 영상의 장면, 객체, 행동과 시간적 사건을 자연어 설명으로 생성하는 멀티모달 과제다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/video-captioning/"
+    },
+    {
+      "id": "video-tokenization",
+      "title": "비디오 토큰화",
+      "englishTitle": "Video Tokenization",
+      "aliases": [
+        "Video Tokenization"
+      ],
+      "summary": "비디오 토큰화는 연속적인 화소와 시간 정보를 모델이 처리할 이산 코드나 연속 토큰 시퀀스로 변환하는 과정이다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/video-tokenization/"
+    },
+    {
+      "id": "video-diffusion",
+      "title": "비디오 확산",
+      "englishTitle": "Video Diffusion",
+      "aliases": [
+        "Video Diffusion"
+      ],
+      "summary": "비디오 확산은 잡음에서 시작해 시공간적으로 일관된 영상 표본을 반복 복원하는 생성 모형이다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/video-diffusion/"
+    },
+    {
       "id": "vision-language-model",
       "title": "비전-언어 모델",
       "englishTitle": "Vision-Language Model",
@@ -6282,17 +7686,25 @@
         "open-vocabulary-detection",
         "object-detection",
         "spatial-reasoning",
+        "optical-flow",
         "contrastive-language-image-pretraining",
+        "lip-reading",
         "multimodal-model",
         "mel-spectrogram",
         "video-classification",
         "video-generation",
         "video-understanding",
+        "video-question-answering",
+        "video-captioning",
+        "video-tokenization",
+        "video-diffusion",
+        "world-simulation-model",
         "spectrogram",
         "visual-grounding",
         "visual-encoder",
         "visual-question-answering",
         "visual-reasoning",
+        "temporal-attention",
         "temporal-modeling",
         "neural-vocoder",
         "region-proposal-network",
@@ -6309,9 +7721,11 @@
         "image-embedding",
         "image-captioning",
         "image-patch",
+        "long-video-understanding",
         "zero-shot-image-classification",
         "text-audio-model",
         "feature-pyramid-network",
+        "frame-sampling",
         "pixel-representation",
         "action-recognition",
         "speaker-diarization",
@@ -6409,6 +7823,54 @@
       "url": "/wiki/beam-search/"
     },
     {
+      "id": "chain-of-thought-prompting",
+      "title": "사고 과정 프롬프팅",
+      "englishTitle": "Chain-of-Thought Prompting",
+      "aliases": [
+        "Chain-of-Thought Prompting"
+      ],
+      "summary": "사고 과정 프롬프팅은 복수 단계 문제에서 중간 추론 단계를 생성하도록 예시나 지시를 제공하는 프롬프팅 방식이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/chain-of-thought-prompting/"
+    },
+    {
+      "id": "user-prompt",
+      "title": "사용자 프롬프트",
+      "englishTitle": "User Prompt",
+      "aliases": [
+        "User Prompt"
+      ],
+      "summary": "사용자 프롬프트는 사용자가 모델에 전달하는 질문, 자료, 제약과 원하는 결과 형식을 담은 입력 메시지다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/user-prompt/"
+    },
+    {
       "id": "pretraining",
       "title": "사전학습",
       "englishTitle": "Pretraining",
@@ -6431,9 +7893,11 @@
       "backlinks": [
         "value-function-loss",
         "task-adaptation",
+        "teacher-forcing",
         "span-corruption",
         "next-sentence-prediction",
         "multi-task-objective",
+        "multi-task-instruction-tuning",
         "contrastive-objective",
         "data-curriculum",
         "data-mixture",
@@ -6448,19 +7912,27 @@
         "reconstruction-loss",
         "pretraining-pipeline",
         "preference-loss",
+        "sequence-classification-fine-tuning",
         "sequence-packing",
         "continued-pretraining",
         "web-scale-training-data",
+        "response-format-tuning",
         "causal-language-modeling-objective",
         "denoising-objective",
         "full-parameter-fine-tuning",
         "policy-objective",
         "distillation-loss",
         "supervised-fine-tuning",
+        "instruction-mixture",
+        "instruction-dataset",
+        "chat-template",
         "training-data-provenance",
         "training-data-filtering",
+        "training-data-formatting",
         "training-corpus",
-        "diffusion-training-objective"
+        "diffusion-training-objective",
+        "reinforcement-learning-from-ai-feedback",
+        "proximal-policy-optimization-for-llm"
       ],
       "courses": [
         "model-training"
@@ -6515,6 +7987,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/right-to-deletion/"
+    },
+    {
+      "id": "correlation",
+      "title": "상관관계",
+      "englishTitle": "Correlation",
+      "aliases": [
+        "Correlation"
+      ],
+      "summary": "상관관계는 두 변수의 선형 동행 정도를 각 표준편차로 정규화해 단위 없이 나타낸 값이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/correlation/"
     },
     {
       "id": "commercial-use-restriction",
@@ -6624,6 +8120,7 @@
         "multi-model-serving",
         "multinomial-sampling",
         "contrastive-search",
+        "dynamic-batching",
         "decode-phase",
         "logit",
         "model-gateway",
@@ -6642,17 +8139,26 @@
         "request-queue",
         "request-scheduler",
         "typical-sampling",
+        "static-batching",
         "constrained-decoding",
         "presence-penalty",
         "stop-sequence",
         "time-to-first-token",
+        "chunked-prefill",
+        "draft-model",
         "inference-load-balancing",
         "inference-server",
         "inference-endpoint",
         "inference-autoscaling",
+        "speculative-decoding",
+        "cache-offloading",
+        "cache-eviction",
         "inter-token-latency",
         "token-sampling",
+        "paged-kv-cache",
+        "prefix-caching",
         "prefill-phase",
+        "kv-cache-quantization",
         "min-p-sampling",
         "top-k-sampling",
         "top-p-sampling"
@@ -6890,6 +8396,30 @@
       "url": "/wiki/linear-attention/"
     },
     {
+      "id": "linear-regression",
+      "title": "선형 회귀",
+      "englishTitle": "Linear Regression",
+      "aliases": [
+        "Linear Regression"
+      ],
+      "summary": "선형 회귀는 목표값을 입력 특성의 가중합과 절편으로 표현해 연속값을 추정하는 회귀 모형이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/linear-regression/"
+    },
+    {
       "id": "linear-layer",
       "title": "선형층",
       "englishTitle": "Linear Layer",
@@ -6938,6 +8468,54 @@
       "url": "/wiki/preference-loss/"
     },
     {
+      "id": "world-simulation-model",
+      "title": "세계 시뮬레이션 모델",
+      "englishTitle": "World Simulation Model",
+      "aliases": [
+        "World Simulation Model"
+      ],
+      "summary": "세계 시뮬레이션 모델은 관찰과 행동을 조건으로 환경의 다음 상태나 가능한 미래 궤적을 생성하는 모델이다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/world-simulation-model/"
+    },
+    {
+      "id": "session-state",
+      "title": "세션 상태",
+      "englishTitle": "Session State",
+      "aliases": [
+        "Session State"
+      ],
+      "summary": "세션 상태는 하나의 상호작용 세션에서 현재 사용자, 메시지 순서, 선택한 도구, 임시 변수와 진행 단계를 나타내는 상태다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/session-state/"
+    },
+    {
       "id": "self-attention",
       "title": "셀프 어텐션",
       "englishTitle": "Self-Attention",
@@ -6967,6 +8545,7 @@
         "linear-attention",
         "scaled-dot-product-attention",
         "sliding-window-attention",
+        "sequence-to-sequence-transformer",
         "bidirectional-attention",
         "attention",
         "attention-mask",
@@ -6989,9 +8568,18 @@
         "pre-normalization",
         "prefix-language-model",
         "sparse-attention",
+        "bart-architecture",
+        "bert-architecture",
+        "bigbird",
         "geglu",
+        "gpt-architecture",
+        "longformer",
+        "performer",
         "rms-normalization",
-        "swiglu"
+        "swiglu",
+        "t5-architecture",
+        "transformer-xl",
+        "xlnet-architecture"
       ],
       "courses": [
         "llm-internals"
@@ -7292,6 +8880,54 @@
       "url": "/wiki/scaled-dot-product-attention/"
     },
     {
+      "id": "scaling-efficiency",
+      "title": "스케일링 효율",
+      "englishTitle": "Scaling Efficiency",
+      "aliases": [
+        "Scaling Efficiency"
+      ],
+      "summary": "스케일링 효율은 모델·데이터·계산량을 늘릴 때 품질 개선이 추가 자원과 비용에 비해 얼마나 크게 나타나는지를 뜻한다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/scaling-efficiency/"
+    },
+    {
+      "id": "schema-validation",
+      "title": "스키마 검증",
+      "englishTitle": "Schema Validation",
+      "aliases": [
+        "Schema Validation"
+      ],
+      "summary": "스키마 검증은 입력이나 출력 데이터가 선언된 구조·자료형·제약을 만족하는지 실행 전에 확인하는 절차다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/schema-validation/"
+    },
+    {
       "id": "streaming-generation",
       "title": "스트리밍 생성",
       "englishTitle": "Streaming Generation",
@@ -7541,6 +9177,30 @@
       "url": "/wiki/visual-reasoning/"
     },
     {
+      "id": "temporal-attention",
+      "title": "시간 어텐션",
+      "englishTitle": "Temporal Attention",
+      "aliases": [
+        "Temporal Attention"
+      ],
+      "summary": "시간 어텐션은 비디오나 시계열에서 서로 다른 시점의 특징에 가중치를 부여해 장기·단기 관계를 결합하는 메커니즘이다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/temporal-attention/"
+    },
+    {
       "id": "temporal-modeling",
       "title": "시간적 모델링",
       "englishTitle": "Temporal Modeling",
@@ -7565,6 +9225,30 @@
       "url": "/wiki/temporal-modeling/"
     },
     {
+      "id": "system-prompt",
+      "title": "시스템 프롬프트",
+      "englishTitle": "System Prompt",
+      "aliases": [
+        "System Prompt"
+      ],
+      "summary": "시스템 프롬프트는 대화형 언어 모델에 역할, 전역 규칙, 도구 사용과 응답 경계를 우선 문맥으로 제공하는 지시 메시지다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/system-prompt/"
+    },
+    {
       "id": "beginning-end-token",
       "title": "시작·종료 토큰",
       "englishTitle": "Beginning and End Token",
@@ -7587,6 +9271,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/beginning-end-token/"
+    },
+    {
+      "id": "sequence-classification-fine-tuning",
+      "title": "시퀀스 분류 미세조정",
+      "englishTitle": "Sequence Classification Fine-Tuning",
+      "aliases": [
+        "Sequence Classification Fine-Tuning"
+      ],
+      "summary": "시퀀스 분류 미세조정은 사전학습 모델의 문장·문서 표현에 분류기를 연결해 범주 예측 과제에 맞게 매개변수를 갱신하는 과정이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/sequence-classification-fine-tuning/"
     },
     {
       "id": "sequence-likelihood",
@@ -7635,6 +9343,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/sequence-packing/"
+    },
+    {
+      "id": "sequence-to-sequence-transformer",
+      "title": "시퀀스-투-시퀀스 트랜스포머",
+      "englishTitle": "Sequence-to-Sequence Transformer",
+      "aliases": [
+        "Sequence-to-Sequence Transformer"
+      ],
+      "summary": "시퀀스-투-시퀀스 트랜스포머는 인코더가 입력 시퀀스를 표현하고 디코더가 이를 참조해 출력 시퀀스를 자동회귀 생성하는 구조다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/sequence-to-sequence-transformer/"
     },
     {
       "id": "neural-vocoder",
@@ -7709,6 +9441,30 @@
       "url": "/wiki/neural-language-model/"
     },
     {
+      "id": "neural-turing-machine",
+      "title": "신경 튜링 머신",
+      "englishTitle": "Neural Turing Machine",
+      "aliases": [
+        "Neural Turing Machine"
+      ],
+      "summary": "신경 튜링 머신은 신경망 제어기와 주소 지정 가능한 외부 메모리를 결합해 읽기·쓰기 절차를 학습하는 미분 가능한 구조다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/neural-turing-machine/"
+    },
+    {
       "id": "neural-network",
       "title": "신경망",
       "englishTitle": "Neural Network",
@@ -7732,9 +9488,12 @@
         "graph-attention-network",
         "graph-convolutional-network",
         "symbolic-ai",
+        "nesterov-accelerated-gradient",
         "multilayer-perceptron",
         "deep-learning",
         "memory-network",
+        "momentum-optimizer",
+        "mini-batch-gradient-descent",
         "variational-autoencoder",
         "generative-adversarial-network",
         "siamese-network",
@@ -7744,10 +9503,13 @@
         "recurrent-neural-network",
         "spiking-neural-network",
         "neural-ordinary-differential-equation",
+        "neural-turing-machine",
         "network-depth",
         "network-width",
         "layer",
+        "deep-belief-network",
         "energy-based-model",
+        "echo-state-network",
         "dense-layer",
         "hidden-state",
         "hidden-layer",
@@ -7756,13 +9518,17 @@
         "input-layer",
         "residual-network",
         "long-short-term-memory",
+        "restricted-boltzmann-machine",
         "output-layer",
         "capsule-network",
         "computer-vision",
         "parameter-initialization",
         "convolutional-neural-network",
         "hopfield-network",
+        "stochastic-gradient-descent",
+        "adagrad",
         "densenet",
+        "rmsprop",
         "u-net"
       ],
       "courses": [
@@ -7898,8 +9664,11 @@
         "graph-neural-network",
         "graph-attention-network",
         "graph-convolutional-network",
+        "nesterov-accelerated-gradient",
         "multilayer-perceptron",
         "memory-network",
+        "momentum-optimizer",
+        "mini-batch-gradient-descent",
         "variational-autoencoder",
         "generative-adversarial-network",
         "siamese-network",
@@ -7909,10 +9678,13 @@
         "recurrent-neural-network",
         "spiking-neural-network",
         "neural-ordinary-differential-equation",
+        "neural-turing-machine",
         "neural-network",
         "network-depth",
         "network-width",
+        "deep-belief-network",
         "energy-based-model",
+        "echo-state-network",
         "dense-layer",
         "hidden-state",
         "hidden-layer",
@@ -7920,13 +9692,17 @@
         "input-layer",
         "residual-network",
         "long-short-term-memory",
+        "restricted-boltzmann-machine",
         "output-layer",
         "capsule-network",
         "parameter-initialization",
         "bias",
         "convolutional-neural-network",
         "hopfield-network",
+        "stochastic-gradient-descent",
+        "adagrad",
         "densenet",
+        "rmsprop",
         "u-net"
       ],
       "courses": [],
@@ -7956,6 +9732,54 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/realtime-api/"
+    },
+    {
+      "id": "deep-belief-network",
+      "title": "심층 신뢰 신경망",
+      "englishTitle": "Deep Belief Network",
+      "aliases": [
+        "Deep Belief Network"
+      ],
+      "summary": "심층 신뢰 신경망은 여러 확률적 잠재층을 쌓아 데이터의 계층적 표현을 학습하는 생성 모형 계열이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/deep-belief-network/"
+    },
+    {
+      "id": "pairwise-comparison",
+      "title": "쌍대 비교",
+      "englishTitle": "Pairwise Comparison",
+      "aliases": [
+        "Pairwise Comparison"
+      ],
+      "summary": "쌍대 비교는 두 후보를 동시에 제시하고 어느 쪽이 기준에 더 부합하는지 선택하게 하는 평가 방식이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/pairwise-comparison/"
     },
     {
       "id": "artifact-registry",
@@ -8080,6 +9904,54 @@
       "url": "/wiki/algorithm/"
     },
     {
+      "id": "algorithmic-bias",
+      "title": "알고리즘 편향",
+      "englishTitle": "Algorithmic Bias",
+      "aliases": [
+        "Algorithmic Bias"
+      ],
+      "summary": "알고리즘 편향은 모델이나 의사결정 절차가 특정 집단·조건에 체계적으로 불리하거나 왜곡된 결과를 만드는 현상이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/algorithmic-bias/"
+    },
+    {
+      "id": "memorized-data-extraction",
+      "title": "암기 데이터 추출",
+      "englishTitle": "Memorized Data Extraction",
+      "aliases": [
+        "Memorized Data Extraction"
+      ],
+      "summary": "암기 데이터 추출은 생성 모델에 반복 또는 최적화된 질의를 보내 학습 데이터의 희귀하거나 민감한 문자열을 재생하도록 유도하는 공격이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/memorized-data-extraction/"
+    },
+    {
       "id": "jacobian-matrix",
       "title": "야코비 행렬",
       "englishTitle": "Jacobian Matrix",
@@ -8190,6 +10062,7 @@
         "self-attention",
         "scaled-dot-product-attention",
         "sliding-window-attention",
+        "sequence-to-sequence-transformer",
         "bidirectional-attention",
         "attention-mask",
         "attention-score",
@@ -8211,9 +10084,18 @@
         "pre-normalization",
         "prefix-language-model",
         "sparse-attention",
+        "bart-architecture",
+        "bert-architecture",
+        "bigbird",
         "geglu",
+        "gpt-architecture",
+        "longformer",
+        "performer",
         "rms-normalization",
-        "swiglu"
+        "swiglu",
+        "t5-architecture",
+        "transformer-xl",
+        "xlnet-architecture"
       ],
       "courses": [
         "llm-internals"
@@ -8572,7 +10454,11 @@
       "backlinks": [
         "sense-think-act-cycle",
         "planning",
+        "plan-and-execute",
         "planner-agent",
+        "memory-forgetting",
+        "memory-consolidation",
+        "conversation-memory",
         "tool-result-handling",
         "tool-permission",
         "tool-registry",
@@ -8581,7 +10467,9 @@
         "tool-selection",
         "tool-invocation",
         "router-agent",
+        "vector-memory",
         "browser-use-agent",
+        "session-state",
         "agent-task-decomposition",
         "short-term-agent-memory",
         "agent-tool",
@@ -8590,11 +10478,14 @@
         "agent-goal",
         "agent-sandbox",
         "agent-reflection",
+        "agent-scratchpad",
         "agent-executor",
+        "semantic-agent-memory",
         "episodic-agent-memory",
         "agent-self-correction",
         "agent-autonomy-level",
         "long-term-agent-memory",
+        "procedural-agent-memory",
         "agent-control-loop",
         "agent-termination-condition",
         "agent-harness",
@@ -8604,6 +10495,7 @@
         "perceive-plan-act-cycle",
         "working-memory",
         "worker-agent",
+        "persistent-agent-state",
         "computer-use-agent",
         "code-execution-tool",
         "ai-agent",
@@ -8720,6 +10612,30 @@
       "url": "/wiki/agent-reflection/"
     },
     {
+      "id": "agent-scratchpad",
+      "title": "에이전트 스크래치패드",
+      "englishTitle": "Agent Scratchpad",
+      "aliases": [
+        "Agent Scratchpad"
+      ],
+      "summary": "에이전트 스크래치패드는 한 과제를 푸는 동안 임시 계산, 도구 결과, 다음 행동 후보를 유지하는 작업 공간이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/agent-scratchpad/"
+    },
+    {
       "id": "agent-executor",
       "title": "에이전트 실행기",
       "englishTitle": "Agent Executor",
@@ -8742,6 +10658,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/agent-executor/"
+    },
+    {
+      "id": "semantic-agent-memory",
+      "title": "에이전트 의미 기억",
+      "englishTitle": "Semantic Agent Memory",
+      "aliases": [
+        "Semantic Agent Memory"
+      ],
+      "summary": "에이전트 의미 기억은 특정 사건의 시간 순서와 분리해 일반화된 사실·개념·관계를 장기 보존하는 기억 계층이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/semantic-agent-memory/"
     },
     {
       "id": "episodic-agent-memory",
@@ -8840,6 +10780,30 @@
       "url": "/wiki/long-term-agent-memory/"
     },
     {
+      "id": "procedural-agent-memory",
+      "title": "에이전트 절차 기억",
+      "englishTitle": "Procedural Agent Memory",
+      "aliases": [
+        "Procedural Agent Memory"
+      ],
+      "summary": "에이전트 절차 기억은 과제를 수행하는 방법, 도구 사용 순서, 성공·실패 조건을 재사용 가능한 절차로 보존한 기억이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/procedural-agent-memory/"
+    },
+    {
       "id": "agent-control-loop",
       "title": "에이전트 제어 루프",
       "englishTitle": "Agent Control Loop",
@@ -8912,6 +10876,30 @@
       "url": "/wiki/agent-harness/"
     },
     {
+      "id": "echo-state-network",
+      "title": "에코 상태 네트워크",
+      "englishTitle": "Echo State Network",
+      "aliases": [
+        "Echo State Network"
+      ],
+      "summary": "에코 상태 네트워크는 고정된 희소 순환 저장소가 입력의 시간적 흔적을 만들고 출력층만 학습하는 저장소 컴퓨팅 모형이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/echo-state-network/"
+    },
+    {
       "id": "epoch",
       "title": "에포크",
       "englishTitle": "Epoch",
@@ -8962,6 +10950,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/edge-inference/"
+    },
+    {
+      "id": "edge-ai",
+      "title": "엣지 AI",
+      "englishTitle": "Edge AI",
+      "aliases": [
+        "Edge AI"
+      ],
+      "summary": "엣지 AI는 데이터가 생성되는 단말이나 가까운 게이트웨이에서 모델 추론 또는 일부 학습을 수행하는 방식이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/edge-ai/"
     },
     {
       "id": "inverted-index",
@@ -9188,6 +11200,30 @@
       "url": "/wiki/chain-rule/"
     },
     {
+      "id": "federated-analytics",
+      "title": "연합 분석",
+      "englishTitle": "Federated Analytics",
+      "aliases": [
+        "Federated Analytics"
+      ],
+      "summary": "연합 분석은 원시 데이터를 중앙에 모으지 않고 여러 장치나 기관에서 계산한 통계만 집계해 전체 경향을 분석하는 방식이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/federated-analytics/"
+    },
+    {
       "id": "region-proposal-network",
       "title": "영역 제안 네트워크",
       "englishTitle": "Region Proposal Network",
@@ -9374,6 +11410,8 @@
         "model-hub"
       ],
       "backlinks": [
+        "accelerator-memory-hierarchy",
+        "accelerator-interconnect",
         "graphics-processing-unit",
         "interactive-model-demo",
         "dataset-terms-of-use",
@@ -9402,19 +11440,27 @@
         "software-data-model-license",
         "neural-processing-unit",
         "artifact-registry",
+        "edge-ai",
         "research-only-license",
         "open-weight-model",
         "open-source-ai-definition",
+        "on-premises-ai",
         "reproducible-model-build",
         "attribution-requirement",
         "responsible-ai-license",
         "copyleft-license",
+        "compute-cluster",
         "cloud-ai-service",
         "tensor-processing-unit",
         "derivative-model",
         "package-registry",
         "permissive-license",
         "ai-accelerator",
+        "ai-datacenter",
+        "cuda",
+        "infiniband",
+        "nvlink",
+        "rocm",
         "safetensors"
       ],
       "courses": [],
@@ -9492,6 +11538,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/online-learning/"
+    },
+    {
+      "id": "on-premises-ai",
+      "title": "온프레미스 AI",
+      "englishTitle": "On-Premises AI",
+      "aliases": [
+        "On-Premises AI"
+      ],
+      "summary": "온프레미스 AI는 조직이 직접 통제하는 시설과 인프라에서 모델·데이터·추론 서비스를 운영하는 배포 형태다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/on-premises-ai/"
     },
     {
       "id": "exact-match",
@@ -10023,6 +12093,30 @@
       "url": "/wiki/speech-to-text/"
     },
     {
+      "id": "response-format-tuning",
+      "title": "응답 형식 튜닝",
+      "englishTitle": "Response Format Tuning",
+      "aliases": [
+        "Response Format Tuning"
+      ],
+      "summary": "응답 형식 튜닝은 모델이 지정된 구조, 문체, 길이 또는 스키마에 맞춰 답하도록 예시 데이터로 미세조정하는 과정이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/response-format-tuning/"
+    },
+    {
       "id": "semantic-search",
       "title": "의미 검색",
       "englishTitle": "Semantic Search",
@@ -10047,16 +12141,21 @@
         "hierarchical-navigable-small-world",
         "product-quantization",
         "cross-lingual-embedding",
+        "passage-retrieval",
         "approximate-nearest-neighbor",
+        "multi-vector-retrieval",
         "matryoshka-embedding",
         "metadata-filtering",
+        "document-retrieval",
         "document-embedding",
         "sentence-embedding",
+        "dense-retrieval",
         "vector-database",
         "vector-index",
         "lexical-retrieval",
         "inverted-index",
         "inverted-file-index",
+        "pseudo-relevance-feedback",
         "index-building",
         "index-replication",
         "index-sharding",
@@ -10071,9 +12170,14 @@
         "instruction-tuned-embedding",
         "locality-sensitive-hashing",
         "query-embedding",
+        "query-rewriting",
+        "query-expansion",
         "nearest-neighbor-search",
+        "maximal-marginal-relevance",
         "keyword-search",
         "flat-vector-index",
+        "hybrid-search",
+        "sparse-neural-retrieval",
         "sparse-embedding",
         "bm25",
         "diskann",
@@ -10085,6 +12189,30 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/semantic-search/"
+    },
+    {
+      "id": "pseudo-relevance-feedback",
+      "title": "의사 관련성 피드백",
+      "englishTitle": "Pseudo-Relevance Feedback",
+      "aliases": [
+        "Pseudo-Relevance Feedback"
+      ],
+      "summary": "의사 관련성 피드백은 첫 검색의 상위 문서가 관련 있다고 가정하고 그 문서의 용어나 표현으로 질의를 보강하는 기법이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/pseudo-relevance-feedback/"
     },
     {
       "id": "image-retrieval",
@@ -10135,16 +12263,24 @@
         "open-vocabulary-detection",
         "object-detection",
         "spatial-reasoning",
+        "optical-flow",
         "contrastive-language-image-pretraining",
+        "lip-reading",
         "mel-spectrogram",
         "video-classification",
         "video-generation",
         "video-understanding",
+        "video-question-answering",
+        "video-captioning",
+        "video-tokenization",
+        "video-diffusion",
+        "world-simulation-model",
         "spectrogram",
         "visual-grounding",
         "visual-encoder",
         "visual-question-answering",
         "visual-reasoning",
+        "temporal-attention",
         "temporal-modeling",
         "neural-vocoder",
         "region-proposal-network",
@@ -10160,9 +12296,11 @@
         "image-embedding",
         "image-captioning",
         "image-patch",
+        "long-video-understanding",
         "zero-shot-image-classification",
         "text-audio-model",
         "feature-pyramid-network",
+        "frame-sampling",
         "pixel-representation",
         "action-recognition",
         "speaker-diarization",
@@ -10537,9 +12675,13 @@
       "backlinks": [
         "hypothesis",
         "hypothesis-space",
+        "concept-drift",
         "validation-set",
+        "decision-tree",
         "computational-intelligence",
+        "hierarchical-clustering",
         "good-old-fashioned-ai",
+        "clustering",
         "inductive-bias",
         "symbolic-ai",
         "active-learning",
@@ -10547,12 +12689,16 @@
         "data-leakage",
         "data-distribution",
         "data-preprocessing",
+        "random-forest",
         "label",
+        "logistic-regression",
         "machine-learning",
         "meta-learning",
         "model-capacity",
         "target-variable",
         "batch-learning",
+        "classification",
+        "linear-regression",
         "connectionism",
         "online-learning",
         "ai-winter",
@@ -10568,7 +12714,9 @@
         "feature-engineering",
         "foundation-model",
         "few-shot-learning",
-        "train-validation-test-split"
+        "train-validation-test-split",
+        "regression",
+        "k-means-clustering"
       ],
       "courses": [
         "ai-foundations"
@@ -10956,16 +13104,21 @@
         "hierarchical-navigable-small-world",
         "product-quantization",
         "cross-lingual-embedding",
+        "passage-retrieval",
+        "multi-vector-retrieval",
         "matryoshka-embedding",
         "metadata-filtering",
+        "document-retrieval",
         "document-embedding",
         "sentence-embedding",
+        "dense-retrieval",
         "dense-embedding",
         "vector-database",
         "vector-index",
         "lexical-retrieval",
         "inverted-index",
         "inverted-file-index",
+        "pseudo-relevance-feedback",
         "index-building",
         "index-replication",
         "index-sharding",
@@ -10980,8 +13133,13 @@
         "instruction-tuned-embedding",
         "locality-sensitive-hashing",
         "query-embedding",
+        "query-rewriting",
+        "query-expansion",
+        "maximal-marginal-relevance",
         "keyword-search",
         "flat-vector-index",
+        "hybrid-search",
+        "sparse-neural-retrieval",
         "sparse-embedding",
         "bm25",
         "diskann",
@@ -11198,6 +13356,30 @@
       "url": "/wiki/input-layer/"
     },
     {
+      "id": "self-consistency-decoding",
+      "title": "자기일관성 디코딩",
+      "englishTitle": "Self-Consistency Decoding",
+      "aliases": [
+        "Self-Consistency Decoding"
+      ],
+      "summary": "자기일관성 디코딩은 같은 추론 문제에서 여러 사고 경로를 표본화하고 가장 일관되게 도출된 답을 선택하는 방식이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/self-consistency-decoding/"
+    },
+    {
       "id": "self-supervised-learning",
       "title": "자기지도학습",
       "englishTitle": "Self-Supervised Learning",
@@ -11402,6 +13584,30 @@
       "url": "/wiki/long-short-term-memory/"
     },
     {
+      "id": "long-video-understanding",
+      "title": "장시간 비디오 이해",
+      "englishTitle": "Long-Video Understanding",
+      "aliases": [
+        "Long-Video Understanding"
+      ],
+      "summary": "장시간 비디오 이해는 수분에서 수시간에 걸친 영상의 사건, 인물, 원인과 장거리 시간 관계를 파악하는 과제다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/long-video-understanding/"
+    },
+    {
       "id": "reproducible-model-build",
       "title": "재현 가능한 모델 빌드",
       "englishTitle": "Reproducible Model Build",
@@ -11568,6 +13774,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/expert-capacity-factor/"
+    },
+    {
+      "id": "expert-evaluation",
+      "title": "전문가 평가",
+      "englishTitle": "Expert Evaluation",
+      "aliases": [
+        "Expert Evaluation"
+      ],
+      "summary": "전문가 평가는 해당 분야의 지식과 실무 경험을 가진 평가자가 전문 기준으로 결과의 정확성·유용성·위험을 판정하는 방식이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/expert-evaluation/"
     },
     {
       "id": "mixture-of-experts",
@@ -11840,23 +14070,33 @@
         "observability",
         "expected-calibration-error",
         "capability-benchmark",
+        "data-annotation",
         "dynamic-benchmark",
         "log-loss",
         "leaderboard",
+        "likert-scale",
+        "blind-evaluation",
         "benchmark-dataset",
         "benchmark-suite",
         "benchmark-validity",
         "benchmark-saturation",
         "brier-score",
         "win-rate",
+        "pairwise-comparison",
         "safety-benchmark",
         "exact-match",
         "human-evaluation",
+        "expert-evaluation",
         "precision-recall-curve",
         "accuracy",
+        "annotation-adjudication",
+        "annotator-agreement",
+        "crowdsourced-evaluation",
         "specificity",
         "evaluation-rubric",
         "metric",
+        "evaluation-sampling",
+        "inter-rater-reliability",
         "confusion-matrix",
         "beir-benchmark",
         "bertscore",
@@ -11882,6 +14122,30 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/precision-recall/"
+    },
+    {
+      "id": "static-batching",
+      "title": "정적 배칭",
+      "englishTitle": "Static Batching",
+      "aliases": [
+        "Static Batching"
+      ],
+      "summary": "정적 배칭은 미리 정한 개수나 고정된 입력 묶음을 하나의 텐서로 구성해 함께 추론하는 방식이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/static-batching/"
     },
     {
       "id": "policy-objective",
@@ -11965,6 +14229,30 @@
       "url": "/wiki/zero-shot-image-classification/"
     },
     {
+      "id": "zero-shot-prompting",
+      "title": "제로샷 프롬프팅",
+      "englishTitle": "Zero-Shot Prompting",
+      "aliases": [
+        "Zero-Shot Prompting"
+      ],
+      "summary": "제로샷 프롬프팅은 과제의 정답 예시를 제공하지 않고 지시와 입력만으로 모델의 수행을 유도하는 방식이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/zero-shot-prompting/"
+    },
+    {
       "id": "zero-shot-learning",
       "title": "제로샷 학습",
       "englishTitle": "Zero-Shot Learning",
@@ -12035,6 +14323,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/constrained-optimization/"
+    },
+    {
+      "id": "restricted-boltzmann-machine",
+      "title": "제한 볼츠만 머신",
+      "englishTitle": "Restricted Boltzmann Machine",
+      "aliases": [
+        "Restricted Boltzmann Machine"
+      ],
+      "summary": "제한 볼츠만 머신은 가시층과 은닉층 사이에만 연결을 둔 에너지 기반 확률 모형이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/restricted-boltzmann-machine/"
     },
     {
       "id": "conditional-language-model",
@@ -12115,6 +14427,78 @@
       "url": "/wiki/presence-penalty/"
     },
     {
+      "id": "marginal-probability",
+      "title": "주변확률",
+      "englishTitle": "Marginal Probability",
+      "aliases": [
+        "Marginal Probability"
+      ],
+      "summary": "주변확률은 결합분포에서 관심 없는 변수의 값을 합하거나 적분해 특정 변수만의 확률을 얻은 것이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/marginal-probability/"
+    },
+    {
+      "id": "annotation-adjudication",
+      "title": "주석 판정",
+      "englishTitle": "Annotation Adjudication",
+      "aliases": [
+        "Annotation Adjudication"
+      ],
+      "summary": "주석 판정은 주석자 사이의 불일치를 지침과 증거에 따라 검토해 최종 참조 레이블을 결정하는 절차다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/annotation-adjudication/"
+    },
+    {
+      "id": "annotator-agreement",
+      "title": "주석자 합의도",
+      "englishTitle": "Annotator Agreement",
+      "aliases": [
+        "Annotator Agreement"
+      ],
+      "summary": "주석자 합의도는 같은 사례를 독립적으로 판정한 주석자들이 얼마나 일치하는지 나타내는 품질 정보다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/annotator-agreement/"
+    },
+    {
       "id": "quasi-newton-method",
       "title": "준뉴턴 방법",
       "englishTitle": "Quasi-Newton Method",
@@ -12161,6 +14545,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/semi-supervised-learning/"
+    },
+    {
+      "id": "central-limit-theorem",
+      "title": "중심극한정리",
+      "englishTitle": "Central Limit Theorem",
+      "aliases": [
+        "Central Limit Theorem"
+      ],
+      "summary": "중심극한정리는 일정한 조건에서 독립 변수의 정규화된 합이나 평균 분포가 표본 수가 커질수록 정규분포에 가까워진다는 정리다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/central-limit-theorem/"
     },
     {
       "id": "stop-sequence",
@@ -12257,9 +14665,11 @@
       "backlinks": [
         "value-function-loss",
         "task-adaptation",
+        "teacher-forcing",
         "span-corruption",
         "next-sentence-prediction",
         "multi-task-objective",
+        "multi-task-instruction-tuning",
         "contrastive-objective",
         "data-curriculum",
         "data-mixture",
@@ -12275,20 +14685,28 @@
         "pretraining",
         "pretraining-pipeline",
         "preference-loss",
+        "sequence-classification-fine-tuning",
         "sequence-packing",
         "continued-pretraining",
         "web-scale-training-data",
+        "response-format-tuning",
         "rlhf",
         "causal-language-modeling-objective",
         "denoising-objective",
         "full-parameter-fine-tuning",
         "policy-objective",
         "distillation-loss",
+        "instruction-mixture",
+        "instruction-dataset",
         "instruction-tuning",
+        "chat-template",
         "training-data-provenance",
         "training-data-filtering",
+        "training-data-formatting",
         "training-corpus",
-        "diffusion-training-objective"
+        "diffusion-training-objective",
+        "reinforcement-learning-from-ai-feedback",
+        "proximal-policy-optimization-for-llm"
       ],
       "courses": [
         "model-training"
@@ -12326,6 +14744,30 @@
       "url": "/wiki/supervised-learning/"
     },
     {
+      "id": "persistent-agent-state",
+      "title": "지속성 에이전트 상태",
+      "englishTitle": "Persistent Agent State",
+      "aliases": [
+        "Persistent Agent State"
+      ],
+      "summary": "지속성 에이전트 상태는 프로세스나 세션이 종료된 뒤에도 목표, 작업 진행, 승인과 기억을 다시 불러올 수 있게 저장한 상태다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "ai-agent"
+      ],
+      "related": [
+        "agent-loop",
+        "react-agent",
+        "tool-calling"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/persistent-agent-state/"
+    },
+    {
       "id": "continual-learning",
       "title": "지속학습",
       "englishTitle": "Continual Learning",
@@ -12348,6 +14790,54 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/continual-learning/"
+    },
+    {
+      "id": "instruction-mixture",
+      "title": "지시 데이터 혼합",
+      "englishTitle": "Instruction Mixture",
+      "aliases": [
+        "Instruction Mixture"
+      ],
+      "summary": "지시 데이터 혼합은 지시 튜닝에 사용할 여러 과제·출처·형식 데이터의 구성과 표본 비율을 정한 집합이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/instruction-mixture/"
+    },
+    {
+      "id": "instruction-dataset",
+      "title": "지시 데이터셋",
+      "englishTitle": "Instruction Dataset",
+      "aliases": [
+        "Instruction Dataset"
+      ],
+      "summary": "지시 데이터셋은 자연어 지시, 선택적 입력과 기대 응답을 짝지어 모델의 과제 수행과 지시 따르기를 학습시키는 데이터 모음이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/instruction-dataset/"
     },
     {
       "id": "instruction-tuning",
@@ -12405,6 +14895,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/instruction-tuned-embedding/"
+    },
+    {
+      "id": "instruction",
+      "title": "지시문",
+      "englishTitle": "Instruction",
+      "aliases": [
+        "Instruction"
+      ],
+      "summary": "지시문은 모델이 수행해야 할 과제, 입력의 의미, 제약과 성공 조건을 자연어나 구조화된 형식으로 기술한 내용이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/instruction/"
     },
     {
       "id": "knowledge-distillation",
@@ -12597,6 +15111,54 @@
       "url": "/wiki/query-embedding/"
     },
     {
+      "id": "query-rewriting",
+      "title": "질의 재작성",
+      "englishTitle": "Query Rewriting",
+      "aliases": [
+        "Query Rewriting"
+      ],
+      "summary": "질의 재작성은 사용자의 원래 질문을 검색 시스템이 처리하기 쉬운 명확한 검색어 또는 독립 질의로 변환하는 과정이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/query-rewriting/"
+    },
+    {
+      "id": "query-expansion",
+      "title": "질의 확장",
+      "englishTitle": "Query Expansion",
+      "aliases": [
+        "Query Expansion"
+      ],
+      "summary": "질의 확장은 원래 질의에 동의어, 관련 용어, 생성된 설명을 추가해 검색 가능한 표현 범위를 넓히는 기법이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/query-expansion/"
+    },
+    {
       "id": "differential-privacy",
       "title": "차등 개인정보 보호",
       "englishTitle": "Differential Privacy",
@@ -12621,6 +15183,30 @@
       "url": "/wiki/differential-privacy/"
     },
     {
+      "id": "emergent-ability",
+      "title": "창발적 능력",
+      "englishTitle": "Emergent Ability",
+      "aliases": [
+        "Emergent Ability"
+      ],
+      "summary": "창발적 능력은 모델 규모나 학습량이 증가할 때 특정 측정에서 이전보다 급격히 나타나는 것처럼 보이는 과제 수행 능력이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/emergent-ability/"
+    },
+    {
       "id": "emergent-misalignment",
       "title": "창발적 오정렬",
       "englishTitle": "Emergent Misalignment",
@@ -12643,6 +15229,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/emergent-misalignment/"
+    },
+    {
+      "id": "chat-template",
+      "title": "채팅 템플릿",
+      "englishTitle": "Chat Template",
+      "aliases": [
+        "Chat Template"
+      ],
+      "summary": "채팅 템플릿은 역할이 있는 대화 메시지를 모델이 학습한 특수 토큰과 구분자 순서의 단일 토큰열로 변환하는 규칙이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/chat-template/"
     },
     {
       "id": "chat-api",
@@ -12745,6 +15355,30 @@
       "url": "/wiki/time-to-first-token/"
     },
     {
+      "id": "chunked-prefill",
+      "title": "청크 프리필",
+      "englishTitle": "Chunked Prefill",
+      "aliases": [
+        "Chunked Prefill"
+      ],
+      "summary": "청크 프리필은 긴 입력 프롬프트의 사전 계산을 여러 토큰 구간으로 나누어 디코딩 요청과 번갈아 실행하는 스케줄링 기법이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/chunked-prefill/"
+    },
+    {
       "id": "chunking",
       "title": "청킹",
       "englishTitle": "Chunking",
@@ -12806,6 +15440,30 @@
       "url": "/wiki/checkpoint/"
     },
     {
+      "id": "draft-model",
+      "title": "초안 모델",
+      "englishTitle": "Draft Model",
+      "aliases": [
+        "Draft Model"
+      ],
+      "summary": "초안 모델은 추측 디코딩에서 목표 모델보다 빠르게 다음 토큰 후보 묶음을 제안하는 보조 모델이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/draft-model/"
+    },
+    {
       "id": "nearest-neighbor-search",
       "title": "최근접 이웃 검색",
       "englishTitle": "Nearest Neighbor Search",
@@ -12836,6 +15494,30 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/nearest-neighbor-search/"
+    },
+    {
+      "id": "maximal-marginal-relevance",
+      "title": "최대 한계 관련성",
+      "englishTitle": "Maximal Marginal Relevance",
+      "aliases": [
+        "Maximal Marginal Relevance"
+      ],
+      "summary": "최대 한계 관련성은 질의와의 관련성을 높이면서 이미 선택한 결과와의 중복을 줄이도록 문서를 순차 선택하는 기준이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/maximal-marginal-relevance/"
     },
     {
       "id": "optimization",
@@ -12890,6 +15572,7 @@
         "multi-model-serving",
         "multinomial-sampling",
         "contrastive-search",
+        "dynamic-batching",
         "decode-phase",
         "logit",
         "model-gateway",
@@ -12909,17 +15592,26 @@
         "request-queue",
         "request-scheduler",
         "typical-sampling",
+        "static-batching",
         "constrained-decoding",
         "presence-penalty",
         "stop-sequence",
         "time-to-first-token",
+        "chunked-prefill",
+        "draft-model",
         "inference-load-balancing",
         "inference-server",
         "inference-endpoint",
         "inference-autoscaling",
+        "speculative-decoding",
+        "cache-offloading",
+        "cache-eviction",
         "inter-token-latency",
         "token-sampling",
+        "paged-kv-cache",
+        "prefix-caching",
         "prefill-phase",
+        "kv-cache-quantization",
         "min-p-sampling"
       ],
       "courses": [
@@ -13077,6 +15769,30 @@
       "url": "/wiki/tracing/"
     },
     {
+      "id": "speculative-decoding",
+      "title": "추측 디코딩",
+      "englishTitle": "Speculative Decoding",
+      "aliases": [
+        "Speculative Decoding"
+      ],
+      "summary": "추측 디코딩은 작은 초안 모델이 여러 토큰 후보를 먼저 만들고 큰 목표 모델이 한 번에 검증해 자동회귀 생성 속도를 높이는 기법이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/speculative-decoding/"
+    },
+    {
       "id": "output-projection",
       "title": "출력 투영",
       "englishTitle": "Output Projection",
@@ -13147,6 +15863,54 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/copyleft-license/"
+    },
+    {
+      "id": "cache-offloading",
+      "title": "캐시 오프로딩",
+      "englishTitle": "Cache Offloading",
+      "aliases": [
+        "Cache Offloading"
+      ],
+      "summary": "캐시 오프로딩은 장치 메모리의 KV나 모델 상태 일부를 호스트 메모리 또는 저장장치로 옮겨 가속기 용량을 확보하는 방식이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/cache-offloading/"
+    },
+    {
+      "id": "cache-eviction",
+      "title": "캐시 축출",
+      "englishTitle": "Cache Eviction",
+      "aliases": [
+        "Cache Eviction"
+      ],
+      "summary": "캐시 축출은 제한된 KV 또는 접두사 캐시에서 보존 가치가 낮은 항목을 제거해 새 요청 공간을 확보하는 정책이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/cache-eviction/"
     },
     {
       "id": "capsule-network",
@@ -13222,12 +15986,17 @@
         "masked-language-model",
         "multimodal-language-model",
         "model-size",
+        "in-context-learning",
         "character-tokenization",
         "out-of-vocabulary-token",
         "dense-language-model",
         "byte-level-tokenization",
         "byte-pair-encoding",
+        "chain-of-thought-prompting",
+        "user-prompt",
         "subword-token",
+        "scaling-efficiency",
+        "system-prompt",
         "beginning-end-token",
         "sequence-likelihood",
         "neural-language-model",
@@ -13235,16 +16004,21 @@
         "vocabulary",
         "unigram-language-model-tokenizer",
         "causal-language-model",
+        "self-consistency-decoding",
         "autoregressive-language-model",
         "expert-routing",
         "expert-capacity-factor",
+        "zero-shot-prompting",
         "conditional-language-model",
+        "instruction",
+        "emergent-ability",
         "inference-compute",
         "completion",
         "code-language-model",
         "special-token",
         "parameter-count",
         "padding-token",
+        "few-shot-prompting",
         "prompt",
         "training-compute",
         "sparse-language-model",
@@ -13284,17 +16058,25 @@
         "open-vocabulary-detection",
         "object-detection",
         "spatial-reasoning",
+        "optical-flow",
         "contrastive-language-image-pretraining",
         "data-augmentation",
+        "lip-reading",
         "mel-spectrogram",
         "video-classification",
         "video-generation",
         "video-understanding",
+        "video-question-answering",
+        "video-captioning",
+        "video-tokenization",
+        "video-diffusion",
+        "world-simulation-model",
         "spectrogram",
         "visual-grounding",
         "visual-encoder",
         "visual-question-answering",
         "visual-reasoning",
+        "temporal-attention",
         "temporal-modeling",
         "neural-vocoder",
         "region-proposal-network",
@@ -13311,9 +16093,11 @@
         "image-embedding",
         "image-captioning",
         "image-patch",
+        "long-video-understanding",
         "zero-shot-image-classification",
         "text-audio-model",
         "feature-pyramid-network",
+        "frame-sampling",
         "pixel-representation",
         "action-recognition",
         "speaker-diarization",
@@ -13346,6 +16130,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/computer-use-agent/"
+    },
+    {
+      "id": "compute-cluster",
+      "title": "컴퓨트 클러스터",
+      "englishTitle": "Compute Cluster",
+      "aliases": [
+        "Compute Cluster"
+      ],
+      "summary": "컴퓨트 클러스터는 여러 서버를 네트워크로 연결해 하나의 대규모 작업이나 다수 작업의 자원을 공동 제공하는 시스템이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/compute-cluster/"
     },
     {
       "id": "completion",
@@ -13467,9 +16275,12 @@
         "optimization"
       ],
       "backlinks": [
+        "joint-probability-distribution",
         "eigendecomposition",
         "eigenvalue-eigenvector",
+        "covariance",
         "local-global-optimum",
+        "expected-value",
         "basis-vector",
         "dot-product",
         "newtons-method",
@@ -13478,11 +16289,14 @@
         "objective-function",
         "derivative",
         "directional-derivative",
+        "bayes-theorem",
         "vector-space",
         "vector-norm",
         "vector-projection",
         "convex-optimization",
         "convex-function",
+        "variance",
+        "correlation",
         "line-search",
         "linear-transformation",
         "saddle-point",
@@ -13493,10 +16307,14 @@
         "embedding",
         "matrix-transpose",
         "constrained-optimization",
+        "marginal-probability",
         "quasi-newton-method",
+        "central-limit-theorem",
         "orthogonality",
         "optimization",
+        "law-of-large-numbers",
         "taylor-expansion",
+        "statistical-sampling",
         "singular-value-decomposition",
         "partial-derivative",
         "determinant",
@@ -13557,13 +16375,18 @@
       "backlinks": [
         "pseudonymization",
         "personally-identifiable-information",
+        "privacy-audit",
+        "privacy-attack",
         "privacy",
         "excessive-agency",
         "corrigibility",
         "deceptive-alignment",
+        "confidential-computing",
         "capability-control",
+        "data-consent",
         "data-retention",
         "data-minimization",
+        "data-bias",
         "membership-inference",
         "specification-gaming",
         "model-backdoor",
@@ -13574,8 +16397,12 @@
         "goal-misgeneralization",
         "sensitive-information-disclosure",
         "reward-tampering",
+        "secure-aggregation",
         "right-to-deletion",
         "insecure-output-handling",
+        "algorithmic-bias",
+        "memorized-data-extraction",
+        "federated-analytics",
         "dual-use-ai",
         "anonymization",
         "adversarial-example",
@@ -13585,6 +16412,7 @@
         "jailbreak",
         "catastrophic-ai-risk",
         "bias-fairness",
+        "representation-bias",
         "prompt-leakage",
         "training-data-poisoning",
         "scalable-oversight",
@@ -13660,6 +16488,30 @@
       "url": "/wiki/query-key-value/"
     },
     {
+      "id": "crowdsourced-evaluation",
+      "title": "크라우드소싱 평가",
+      "englishTitle": "Crowdsourced Evaluation",
+      "aliases": [
+        "Crowdsourced Evaluation"
+      ],
+      "summary": "크라우드소싱 평가는 온라인 참여자 집단에 작은 평가 과제를 분배해 대규모 판단 데이터를 수집하는 방식이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/crowdsourced-evaluation/"
+    },
+    {
       "id": "cross-attention",
       "title": "크로스 어텐션",
       "englishTitle": "Cross-Attention",
@@ -13688,6 +16540,30 @@
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/cross-attention/"
+    },
+    {
+      "id": "law-of-large-numbers",
+      "title": "큰 수의 법칙",
+      "englishTitle": "Law of Large Numbers",
+      "aliases": [
+        "Law of Large Numbers"
+      ],
+      "summary": "큰 수의 법칙은 적절한 조건에서 독립적으로 반복한 표본의 평균이 표본 수가 늘수록 모집단 기댓값에 가까워진다는 정리다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/law-of-large-numbers/"
     },
     {
       "id": "cloud-ai-service",
@@ -13887,9 +16763,12 @@
         "probability-distribution"
       ],
       "backlinks": [
+        "joint-probability-distribution",
         "eigendecomposition",
         "eigenvalue-eigenvector",
+        "covariance",
         "local-global-optimum",
+        "expected-value",
         "basis-vector",
         "dot-product",
         "newtons-method",
@@ -13897,12 +16776,15 @@
         "lagrange-multiplier",
         "objective-function",
         "directional-derivative",
+        "bayes-theorem",
         "vector",
         "vector-space",
         "vector-norm",
         "vector-projection",
         "convex-optimization",
         "convex-function",
+        "variance",
+        "correlation",
         "line-search",
         "linear-transformation",
         "scalar",
@@ -13913,9 +16795,13 @@
         "outer-product",
         "matrix-transpose",
         "constrained-optimization",
+        "marginal-probability",
         "quasi-newton-method",
+        "central-limit-theorem",
         "orthogonality",
+        "law-of-large-numbers",
         "taylor-expansion",
+        "statistical-sampling",
         "singular-value-decomposition",
         "partial-derivative",
         "matrix",
@@ -14012,11 +16898,16 @@
         "masked-language-model",
         "multimodal-language-model",
         "model-size",
+        "in-context-learning",
         "character-tokenization",
         "out-of-vocabulary-token",
         "dense-language-model",
         "byte-level-tokenization",
+        "chain-of-thought-prompting",
+        "user-prompt",
         "subword-token",
+        "scaling-efficiency",
+        "system-prompt",
         "beginning-end-token",
         "sequence-likelihood",
         "neural-language-model",
@@ -14024,10 +16915,14 @@
         "language-model",
         "unigram-language-model-tokenizer",
         "causal-language-model",
+        "self-consistency-decoding",
         "autoregressive-language-model",
         "expert-routing",
         "expert-capacity-factor",
+        "zero-shot-prompting",
         "conditional-language-model",
+        "instruction",
+        "emergent-ability",
         "inference-compute",
         "code-language-model",
         "tokenizer",
@@ -14036,6 +16931,7 @@
         "parameter",
         "parameter-count",
         "padding-token",
+        "few-shot-prompting",
         "hyperparameter",
         "training-compute",
         "sparse-language-model",
@@ -14154,6 +17050,30 @@
       "url": "/wiki/tokenization/"
     },
     {
+      "id": "statistical-sampling",
+      "title": "통계적 표본추출",
+      "englishTitle": "Statistical Sampling",
+      "aliases": [
+        "Statistical Sampling"
+      ],
+      "summary": "통계적 표본추출은 모집단의 특성을 추정하기 위해 일부 관측 단위를 확률적 또는 설계된 규칙으로 선택하는 과정이다.",
+      "categories": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "vector"
+      ],
+      "related": [
+        "matrix",
+        "tensor",
+        "cosine-similarity"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/statistical-sampling/"
+    },
+    {
       "id": "unified-response-api",
       "title": "통합 응답 API",
       "englishTitle": "Unified Response API",
@@ -14251,6 +17171,7 @@
         "linear-attention",
         "scaled-dot-product-attention",
         "sliding-window-attention",
+        "sequence-to-sequence-transformer",
         "bidirectional-attention",
         "attention",
         "attention-mask",
@@ -14270,9 +17191,18 @@
         "pre-normalization",
         "prefix-language-model",
         "sparse-attention",
+        "bart-architecture",
+        "bert-architecture",
+        "bigbird",
         "geglu",
+        "gpt-architecture",
+        "longformer",
+        "performer",
         "rms-normalization",
-        "swiglu"
+        "swiglu",
+        "t5-architecture",
+        "transformer-xl",
+        "xlnet-architecture"
       ],
       "courses": [
         "llm-internals"
@@ -14732,6 +17662,30 @@
       "url": "/wiki/package-registry/"
     },
     {
+      "id": "paged-kv-cache",
+      "title": "페이지드 KV 캐시",
+      "englishTitle": "Paged KV Cache",
+      "aliases": [
+        "Paged KV Cache"
+      ],
+      "summary": "페이지드 KV 캐시는 시퀀스의 어텐션 키·값을 고정 크기 블록으로 나누어 비연속 장치 메모리에 배치하는 관리 방식이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/paged-kv-cache/"
+    },
+    {
       "id": "partial-derivative",
       "title": "편미분",
       "englishTitle": "Partial Derivative",
@@ -14864,9 +17818,12 @@
         "task-benchmark",
         "expected-calibration-error",
         "capability-benchmark",
+        "data-annotation",
         "dynamic-benchmark",
         "log-loss",
         "leaderboard",
+        "likert-scale",
+        "blind-evaluation",
         "evaluation",
         "benchmark",
         "benchmark-dataset",
@@ -14875,14 +17832,21 @@
         "benchmark-saturation",
         "brier-score",
         "win-rate",
+        "pairwise-comparison",
         "safety-benchmark",
         "exact-match",
         "human-evaluation",
+        "expert-evaluation",
         "precision-recall-curve",
         "precision-recall",
         "accuracy",
+        "annotation-adjudication",
+        "annotator-agreement",
+        "crowdsourced-evaluation",
         "specificity",
         "evaluation-rubric",
+        "evaluation-sampling",
+        "inter-rater-reliability",
         "confusion-matrix",
         "beir-benchmark",
         "bertscore",
@@ -14906,6 +17870,54 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/metric/"
+    },
+    {
+      "id": "evaluation-sampling",
+      "title": "평가 표본추출",
+      "englishTitle": "Evaluation Sampling",
+      "aliases": [
+        "Evaluation Sampling"
+      ],
+      "summary": "평가 표본추출은 전체 가능한 입력 중 평가에 사용할 사례를 규칙에 따라 선택하는 과정이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/evaluation-sampling/"
+    },
+    {
+      "id": "inter-rater-reliability",
+      "title": "평가자 간 신뢰도",
+      "englishTitle": "Inter-Rater Reliability",
+      "aliases": [
+        "Inter-Rater Reliability"
+      ],
+      "summary": "평가자 간 신뢰도는 여러 평가자의 점수가 평가 대상의 차이를 일관되게 반영하는 정도를 통계적으로 측정한 값이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "evaluation"
+      ],
+      "related": [
+        "metric",
+        "f1-score",
+        "precision-recall"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/inter-rater-reliability/"
     },
     {
       "id": "flat-vector-index",
@@ -14956,6 +17968,54 @@
       "url": "/wiki/post-normalization/"
     },
     {
+      "id": "representation-bias",
+      "title": "표현 편향",
+      "englishTitle": "Representation Bias",
+      "aliases": [
+        "Representation Bias"
+      ],
+      "summary": "표현 편향은 데이터셋에서 일부 집단이나 상황이 부족하거나 고정관념적인 방식으로 나타나 학습 신호가 불균형해진 상태다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "guardrail"
+      ],
+      "related": [
+        "prompt-injection",
+        "ai-governance",
+        "content-moderation"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/representation-bias/"
+    },
+    {
+      "id": "few-shot-prompting",
+      "title": "퓨샷 프롬프팅",
+      "englishTitle": "Few-Shot Prompting",
+      "aliases": [
+        "Few-Shot Prompting"
+      ],
+      "summary": "퓨샷 프롬프팅은 소수의 입력-출력 예시를 문맥에 배치해 새 입력의 과제와 응답 패턴을 보여주는 방식이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "large-language-model"
+      ],
+      "related": [
+        "token",
+        "prompt",
+        "context-window"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/few-shot-prompting/"
+    },
+    {
       "id": "few-shot-learning",
       "title": "퓨샷 학습",
       "englishTitle": "Few-Shot Learning",
@@ -14978,6 +18038,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/few-shot-learning/"
+    },
+    {
+      "id": "frame-sampling",
+      "title": "프레임 샘플링",
+      "englishTitle": "Frame Sampling",
+      "aliases": [
+        "Frame Sampling"
+      ],
+      "summary": "프레임 샘플링은 비디오 전체에서 모델에 입력할 일부 프레임이나 클립을 선택하는 과정이다.",
+      "categories": [
+        "multimodal"
+      ],
+      "prerequisites": [
+        "multimodal-model"
+      ],
+      "related": [
+        "computer-vision",
+        "image-classification",
+        "vision-language-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/frame-sampling/"
     },
     {
       "id": "prompt",
@@ -15005,22 +18089,31 @@
         "masked-language-model",
         "multimodal-language-model",
         "model-size",
+        "in-context-learning",
         "character-tokenization",
         "out-of-vocabulary-token",
         "dense-language-model",
         "byte-level-tokenization",
         "byte-pair-encoding",
+        "chain-of-thought-prompting",
+        "user-prompt",
         "subword-token",
+        "scaling-efficiency",
+        "system-prompt",
         "beginning-end-token",
         "sequence-likelihood",
         "neural-language-model",
         "neural-scaling-law",
         "unigram-language-model-tokenizer",
         "causal-language-model",
+        "self-consistency-decoding",
         "autoregressive-language-model",
         "expert-routing",
         "expert-capacity-factor",
+        "zero-shot-prompting",
         "conditional-language-model",
+        "instruction",
+        "emergent-ability",
         "inference-compute",
         "context-window",
         "completion",
@@ -15028,6 +18121,7 @@
         "special-token",
         "parameter-count",
         "padding-token",
+        "few-shot-prompting",
         "prompt-injection",
         "training-compute",
         "sparse-language-model",
@@ -15090,12 +18184,17 @@
         "pseudonymization",
         "indirect-prompt-injection",
         "personally-identifiable-information",
+        "privacy-audit",
+        "privacy-attack",
         "excessive-agency",
         "corrigibility",
         "deceptive-alignment",
+        "confidential-computing",
         "capability-control",
+        "data-consent",
         "data-retention",
         "data-minimization",
+        "data-bias",
         "membership-inference",
         "specification-gaming",
         "model-backdoor",
@@ -15106,8 +18205,12 @@
         "goal-misgeneralization",
         "sensitive-information-disclosure",
         "reward-tampering",
+        "secure-aggregation",
         "right-to-deletion",
         "insecure-output-handling",
+        "algorithmic-bias",
+        "memorized-data-extraction",
+        "federated-analytics",
         "dual-use-ai",
         "anonymization",
         "adversarial-example",
@@ -15116,6 +18219,7 @@
         "emergent-misalignment",
         "jailbreak",
         "catastrophic-ai-risk",
+        "representation-bias",
         "prompt-leakage",
         "training-data-poisoning",
         "scalable-oversight",
@@ -15182,6 +18286,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/prefix-language-model/"
+    },
+    {
+      "id": "prefix-caching",
+      "title": "프리픽스 캐싱",
+      "englishTitle": "Prefix Caching",
+      "aliases": [
+        "Prefix Caching"
+      ],
+      "summary": "프리픽스 캐싱은 여러 요청이 공유하는 프롬프트 접두사의 KV 상태를 저장해 같은 구간의 프리필 계산을 재사용하는 기법이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/prefix-caching/"
     },
     {
       "id": "prefill-phase",
@@ -15262,6 +18390,30 @@
       "url": "/wiki/pixel-representation/"
     },
     {
+      "id": "hybrid-search",
+      "title": "하이브리드 검색",
+      "englishTitle": "Hybrid Search",
+      "aliases": [
+        "Hybrid Search"
+      ],
+      "summary": "하이브리드 검색은 키워드 기반 희소 점수와 임베딩 기반 밀집 점수를 결합해 후보를 찾는 방식이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/hybrid-search/"
+    },
+    {
       "id": "hyperparameter",
       "title": "하이퍼파라미터",
       "englishTitle": "Hyperparameter",
@@ -15338,9 +18490,11 @@
         "value-function-loss",
         "reinforcement-learning",
         "task-adaptation",
+        "teacher-forcing",
         "span-corruption",
         "next-sentence-prediction",
         "multi-task-objective",
+        "multi-task-instruction-tuning",
         "contrastive-objective",
         "data-augmentation",
         "data-curriculum",
@@ -15359,20 +18513,28 @@
         "pretraining",
         "pretraining-pipeline",
         "preference-loss",
+        "sequence-classification-fine-tuning",
         "sequence-packing",
         "continued-pretraining",
         "web-scale-training-data",
+        "response-format-tuning",
         "causal-language-modeling-objective",
         "self-supervised-learning",
         "denoising-objective",
         "full-parameter-fine-tuning",
         "policy-objective",
         "distillation-loss",
+        "instruction-mixture",
+        "instruction-dataset",
+        "chat-template",
         "training-data-provenance",
         "training-data-filtering",
+        "training-data-formatting",
         "training-corpus",
         "synthetic-data",
-        "diffusion-training-objective"
+        "diffusion-training-objective",
+        "reinforcement-learning-from-ai-feedback",
+        "proximal-policy-optimization-for-llm"
       ],
       "courses": [
         "ai-foundations"
@@ -15453,6 +18615,30 @@
       "url": "/wiki/training-data-filtering/"
     },
     {
+      "id": "training-data-formatting",
+      "title": "학습 데이터 형식화",
+      "englishTitle": "Training Data Formatting",
+      "aliases": [
+        "Training Data Formatting"
+      ],
+      "summary": "학습 데이터 형식화는 원시 사례를 모델이 읽을 입력·목표 토큰, 역할, 마스크와 메타데이터 구조로 변환하는 과정이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/training-data-formatting/"
+    },
+    {
       "id": "training-corpus",
       "title": "학습 말뭉치",
       "englishTitle": "Training Corpus",
@@ -15531,6 +18717,30 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/learning-rate/"
+    },
+    {
+      "id": "function-calling",
+      "title": "함수 호출",
+      "englishTitle": "Function Calling",
+      "aliases": [
+        "Function Calling"
+      ],
+      "summary": "함수 호출은 모델이 자연어 답 대신 미리 정의된 함수 이름과 구조화된 인수를 선택해 외부 실행을 요청하는 인터페이스 패턴이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/function-calling/"
     },
     {
       "id": "synthetic-data",
@@ -15631,9 +18841,12 @@
         "probability"
       ],
       "backlinks": [
+        "joint-probability-distribution",
         "eigendecomposition",
         "eigenvalue-eigenvector",
+        "covariance",
         "local-global-optimum",
+        "expected-value",
         "basis-vector",
         "dot-product",
         "newtons-method",
@@ -15641,12 +18854,15 @@
         "lagrange-multiplier",
         "objective-function",
         "directional-derivative",
+        "bayes-theorem",
         "vector",
         "vector-space",
         "vector-norm",
         "vector-projection",
         "convex-optimization",
         "convex-function",
+        "variance",
+        "correlation",
         "line-search",
         "linear-transformation",
         "saddle-point",
@@ -15657,10 +18873,14 @@
         "outer-product",
         "matrix-transpose",
         "constrained-optimization",
+        "marginal-probability",
         "quasi-newton-method",
+        "central-limit-theorem",
         "orthogonality",
+        "law-of-large-numbers",
         "taylor-expansion",
         "tensor",
+        "statistical-sampling",
         "singular-value-decomposition",
         "partial-derivative",
         "determinant",
@@ -15796,6 +19016,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/hessian-matrix/"
+    },
+    {
+      "id": "typed-response",
+      "title": "형식 지정 응답",
+      "englishTitle": "Typed Response",
+      "aliases": [
+        "Typed Response"
+      ],
+      "summary": "형식 지정 응답은 모델이나 API의 결과를 자유 텍스트가 아니라 명시된 필드와 자료형을 가진 응답 객체로 제공하는 방식이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/typed-response/"
     },
     {
       "id": "confusion-matrix",
@@ -15983,6 +19227,30 @@
       "url": "/wiki/probability-distribution/"
     },
     {
+      "id": "stochastic-gradient-descent",
+      "title": "확률적 경사하강법",
+      "englishTitle": "Stochastic Gradient Descent",
+      "aliases": [
+        "Stochastic Gradient Descent"
+      ],
+      "summary": "확률적 경사하강법은 전체 데이터 대신 한 사례 또는 작은 무작위 표본의 손실 기울기로 매개변수를 반복 갱신하는 최적화법이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/stochastic-gradient-descent/"
+    },
+    {
       "id": "diffusion-model",
       "title": "확산 모델",
       "englishTitle": "Diffusion Model",
@@ -16114,9 +19382,12 @@
         "graph-neural-network",
         "graph-attention-network",
         "graph-convolutional-network",
+        "nesterov-accelerated-gradient",
         "multilayer-perceptron",
         "deep-learning",
         "memory-network",
+        "momentum-optimizer",
+        "mini-batch-gradient-descent",
         "variational-autoencoder",
         "generative-adversarial-network",
         "siamese-network",
@@ -16127,10 +19398,13 @@
         "recurrent-neural-network",
         "spiking-neural-network",
         "neural-ordinary-differential-equation",
+        "neural-turing-machine",
         "network-depth",
         "network-width",
         "layer",
+        "deep-belief-network",
         "energy-based-model",
+        "echo-state-network",
         "backpropagation",
         "dense-layer",
         "hidden-state",
@@ -16139,18 +19413,46 @@
         "input-layer",
         "residual-network",
         "long-short-term-memory",
+        "restricted-boltzmann-machine",
         "output-layer",
         "capsule-network",
         "parameter-initialization",
         "bias",
         "convolutional-neural-network",
         "hopfield-network",
+        "stochastic-gradient-descent",
+        "adagrad",
         "densenet",
+        "rmsprop",
         "u-net"
       ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/activation-function/"
+    },
+    {
+      "id": "regression",
+      "title": "회귀",
+      "englishTitle": "Regression",
+      "aliases": [
+        "Regression"
+      ],
+      "summary": "회귀는 입력 변수로부터 연속값이나 순서 있는 수치 목표의 조건부 경향을 추정하는 지도학습 문제다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/regression/"
     },
     {
       "id": "evasion-attack",
@@ -16175,6 +19477,30 @@
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/evasion-attack/"
+    },
+    {
+      "id": "sparse-neural-retrieval",
+      "title": "희소 신경 검색",
+      "englishTitle": "Sparse Neural Retrieval",
+      "aliases": [
+        "Sparse Neural Retrieval"
+      ],
+      "summary": "희소 신경 검색은 신경망이 어휘 차원의 희소 가중치를 생성해 역색인에서 의미 확장과 정확한 용어 일치를 함께 사용하는 방식이다.",
+      "categories": [
+        "retrieval"
+      ],
+      "prerequisites": [
+        "embedding"
+      ],
+      "related": [
+        "semantic-search",
+        "rag",
+        "vector-database"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/sparse-neural-retrieval/"
     },
     {
       "id": "sparse-attention",
@@ -16249,6 +19575,28 @@
       "url": "/wiki/sparse-embedding/"
     },
     {
+      "id": "adagrad",
+      "title": "AdaGrad",
+      "englishTitle": "AdaGrad",
+      "aliases": [],
+      "summary": "AdaGrad는 매개변수별 과거 제곱 기울기를 누적해 자주 갱신된 방향의 유효 학습률을 줄이는 적응형 최적화법이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/adagrad/"
+    },
+    {
       "id": "ai-accelerator",
       "title": "AI 가속기",
       "englishTitle": "AI Accelerator",
@@ -16293,13 +19641,18 @@
       "backlinks": [
         "pseudonymization",
         "personally-identifiable-information",
+        "privacy-audit",
+        "privacy-attack",
         "privacy",
         "excessive-agency",
         "corrigibility",
         "deceptive-alignment",
+        "confidential-computing",
         "capability-control",
+        "data-consent",
         "data-retention",
         "data-minimization",
+        "data-bias",
         "membership-inference",
         "specification-gaming",
         "model-backdoor",
@@ -16310,8 +19663,12 @@
         "goal-misgeneralization",
         "sensitive-information-disclosure",
         "reward-tampering",
+        "secure-aggregation",
         "right-to-deletion",
         "insecure-output-handling",
+        "algorithmic-bias",
+        "memorized-data-extraction",
+        "federated-analytics",
         "dual-use-ai",
         "anonymization",
         "adversarial-example",
@@ -16320,6 +19677,7 @@
         "emergent-misalignment",
         "catastrophic-ai-risk",
         "bias-fairness",
+        "representation-bias",
         "prompt-leakage",
         "training-data-poisoning",
         "scalable-oversight",
@@ -16359,6 +19717,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/ai-supply-chain-vulnerability/"
+    },
+    {
+      "id": "ai-datacenter",
+      "title": "AI 데이터센터",
+      "englishTitle": "AI Datacenter",
+      "aliases": [
+        "AI Datacenter"
+      ],
+      "summary": "AI 데이터센터는 대규모 모델 학습과 추론을 위해 가속기, 고대역폭 네트워크, 저장소와 냉각·전력 설비를 통합한 시설이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/ai-datacenter/"
     },
     {
       "id": "ai-safety",
@@ -16406,7 +19788,11 @@
       "backlinks": [
         "sense-think-act-cycle",
         "planning",
+        "plan-and-execute",
         "planner-agent",
+        "memory-forgetting",
+        "memory-consolidation",
+        "conversation-memory",
         "tool-result-handling",
         "tool-permission",
         "tool-registry",
@@ -16415,7 +19801,9 @@
         "tool-selection",
         "tool-invocation",
         "router-agent",
+        "vector-memory",
         "browser-use-agent",
+        "session-state",
         "agent-task-decomposition",
         "short-term-agent-memory",
         "agent-tool",
@@ -16424,11 +19812,14 @@
         "agent-goal",
         "agent-sandbox",
         "agent-reflection",
+        "agent-scratchpad",
         "agent-executor",
+        "semantic-agent-memory",
         "episodic-agent-memory",
         "agent-self-correction",
         "agent-autonomy-level",
         "long-term-agent-memory",
+        "procedural-agent-memory",
         "agent-control-loop",
         "agent-termination-condition",
         "agent-harness",
@@ -16437,6 +19828,7 @@
         "perceive-plan-act-cycle",
         "working-memory",
         "worker-agent",
+        "persistent-agent-state",
         "computer-use-agent",
         "code-execution-tool",
         "api-action-tool"
@@ -16522,6 +19914,30 @@
       "url": "/wiki/ai-control-problem/"
     },
     {
+      "id": "reinforcement-learning-from-ai-feedback",
+      "title": "AI 피드백 기반 강화학습",
+      "englishTitle": "Reinforcement Learning from AI Feedback",
+      "aliases": [
+        "Reinforcement Learning from AI Feedback"
+      ],
+      "summary": "AI 피드백 기반 강화학습은 사람 대신 또는 사람과 함께 다른 모델의 비평·선호·규칙 판정을 보상 신호로 사용해 정책을 조정하는 방식이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/reinforcement-learning-from-ai-feedback/"
+    },
+    {
       "id": "api",
       "title": "API",
       "englishTitle": "Application Programming Interface",
@@ -16540,13 +19956,20 @@
       ],
       "backlinks": [
         "path-parameter",
+        "tool-result",
+        "tool-choice",
+        "tool-argument",
+        "tool-definition",
         "domain-name-system",
         "synchronous-api-request",
         "stateless-api",
+        "grammar-constrained-generation",
         "batch-api",
+        "parallel-tool-call",
         "asynchronous-api-job",
         "stateful-api",
         "server-sent-events",
+        "schema-validation",
         "realtime-api",
         "audio-api",
         "request-response-pattern",
@@ -16563,6 +19986,8 @@
         "uri",
         "url",
         "file-upload-api",
+        "function-calling",
+        "typed-response",
         "api-versioning",
         "api-endpoint",
         "api-deprecation",
@@ -16574,6 +19999,7 @@
         "http-response",
         "http-header",
         "https",
+        "json-schema",
         "mime-type",
         "rest-api",
         "sdk"
@@ -16736,6 +20162,30 @@
       "url": "/wiki/api-action-tool/"
     },
     {
+      "id": "bart-architecture",
+      "title": "BART 아키텍처",
+      "englishTitle": "BART Architecture",
+      "aliases": [
+        "BART Architecture"
+      ],
+      "summary": "BART 아키텍처는 양방향 인코더와 왼쪽에서 오른쪽으로 생성하는 디코더를 결합한 잡음 제거 시퀀스-투-시퀀스 모델이다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/bart-architecture/"
+    },
+    {
       "id": "beir-benchmark",
       "title": "BEIR 벤치마크",
       "englishTitle": "Benchmarking Information Retrieval",
@@ -16758,6 +20208,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/beir-benchmark/"
+    },
+    {
+      "id": "bert-architecture",
+      "title": "BERT 아키텍처",
+      "englishTitle": "BERT Architecture",
+      "aliases": [
+        "BERT Architecture"
+      ],
+      "summary": "BERT 아키텍처는 양방향 자기어텐션 인코더를 쌓아 문맥에 따른 토큰 표현을 학습하는 트랜스포머 구조다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/bert-architecture/"
     },
     {
       "id": "bertscore",
@@ -16806,6 +20280,28 @@
       "url": "/wiki/big-bench/"
     },
     {
+      "id": "bigbird",
+      "title": "BigBird",
+      "englishTitle": "BigBird",
+      "aliases": [],
+      "summary": "BigBird는 국소·무작위·전역 연결을 조합한 블록 희소 어텐션으로 긴 시퀀스의 계산량을 줄이는 트랜스포머다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/bigbird/"
+    },
+    {
       "id": "bleu-score",
       "title": "BLEU 점수",
       "englishTitle": "BLEU Score",
@@ -16852,6 +20348,28 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/bm25/"
+    },
+    {
+      "id": "cuda",
+      "title": "CUDA",
+      "englishTitle": "CUDA",
+      "aliases": [],
+      "summary": "CUDA는 NVIDIA GPU에서 병렬 커널을 작성·컴파일·실행하고 메모리와 라이브러리를 관리하는 프로그래밍 플랫폼이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/cuda/"
     },
     {
       "id": "densenet",
@@ -16923,21 +20441,31 @@
         "task-benchmark",
         "expected-calibration-error",
         "capability-benchmark",
+        "data-annotation",
         "dynamic-benchmark",
         "log-loss",
         "leaderboard",
+        "likert-scale",
+        "blind-evaluation",
         "benchmark-dataset",
         "benchmark-suite",
         "benchmark-validity",
         "benchmark-saturation",
         "brier-score",
         "win-rate",
+        "pairwise-comparison",
         "safety-benchmark",
         "exact-match",
         "human-evaluation",
+        "expert-evaluation",
         "precision-recall-curve",
+        "annotation-adjudication",
+        "annotator-agreement",
+        "crowdsourced-evaluation",
         "specificity",
         "evaluation-rubric",
+        "evaluation-sampling",
+        "inter-rater-reliability",
         "confusion-matrix",
         "beir-benchmark",
         "bertscore",
@@ -17027,6 +20555,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/gpqa/"
+    },
+    {
+      "id": "gpt-architecture",
+      "title": "GPT 아키텍처",
+      "englishTitle": "GPT Architecture",
+      "aliases": [
+        "GPT Architecture"
+      ],
+      "summary": "GPT 아키텍처는 이전 토큰만 볼 수 있는 인과 마스크를 사용해 다음 토큰을 예측하는 디코더 전용 트랜스포머 구조다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/gpt-architecture/"
     },
     {
       "id": "helm-benchmark",
@@ -17147,13 +20699,20 @@
       ],
       "backlinks": [
         "path-parameter",
+        "tool-result",
+        "tool-choice",
+        "tool-argument",
+        "tool-definition",
         "domain-name-system",
         "synchronous-api-request",
         "stateless-api",
+        "grammar-constrained-generation",
         "batch-api",
+        "parallel-tool-call",
         "asynchronous-api-job",
         "stateful-api",
         "server-sent-events",
+        "schema-validation",
         "realtime-api",
         "audio-api",
         "request-response-pattern",
@@ -17170,6 +20729,8 @@
         "uri",
         "url",
         "file-upload-api",
+        "function-calling",
+        "typed-response",
         "api-versioning",
         "api-endpoint",
         "api-deprecation",
@@ -17182,6 +20743,7 @@
         "http-header",
         "https",
         "json",
+        "json-schema",
         "mime-type",
         "rest-api",
         "sdk"
@@ -17215,13 +20777,20 @@
       ],
       "backlinks": [
         "path-parameter",
+        "tool-result",
+        "tool-choice",
+        "tool-argument",
+        "tool-definition",
         "domain-name-system",
         "synchronous-api-request",
         "stateless-api",
+        "grammar-constrained-generation",
         "batch-api",
+        "parallel-tool-call",
         "asynchronous-api-job",
         "stateful-api",
         "server-sent-events",
+        "schema-validation",
         "realtime-api",
         "audio-api",
         "request-response-pattern",
@@ -17238,6 +20807,8 @@
         "uri",
         "url",
         "file-upload-api",
+        "function-calling",
+        "typed-response",
         "api-versioning",
         "api-endpoint",
         "api-deprecation",
@@ -17247,6 +20818,7 @@
         "http-status-code",
         "http-header",
         "https",
+        "json-schema",
         "mime-type"
       ],
       "courses": [],
@@ -17346,6 +20918,28 @@
       "url": "/wiki/imagenet/"
     },
     {
+      "id": "infiniband",
+      "title": "InfiniBand",
+      "englishTitle": "InfiniBand",
+      "aliases": [],
+      "summary": "InfiniBand는 원격 직접 메모리 접근과 낮은 지연의 메시지 전송을 지원하는 스위치 패브릭 네트워크 규격이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/infiniband/"
+    },
+    {
       "id": "json",
       "title": "JSON",
       "englishTitle": "JavaScript Object Notation",
@@ -17379,6 +20973,54 @@
       "url": "/wiki/json/"
     },
     {
+      "id": "json-schema",
+      "title": "JSON 스키마",
+      "englishTitle": "JSON Schema",
+      "aliases": [
+        "JSON Schema"
+      ],
+      "summary": "JSON 스키마는 JSON 인스턴스가 만족해야 할 자료형, 필수 속성, 값 범위와 조합 규칙을 선언하는 표준 어휘다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "api"
+      ],
+      "related": [
+        "http-request",
+        "http-response",
+        "rest-api"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/json-schema/"
+    },
+    {
+      "id": "k-means-clustering",
+      "title": "K-평균 군집화",
+      "englishTitle": "K-Means Clustering",
+      "aliases": [
+        "K-Means Clustering"
+      ],
+      "summary": "K-평균 군집화는 각 점을 가장 가까운 중심에 배정하고 군집 내 제곱거리를 줄이도록 K개 중심을 반복 갱신하는 알고리즘이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "machine-learning",
+        "deep-learning",
+        "symbolic-ai"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/k-means-clustering/"
+    },
+    {
       "id": "kv-cache",
       "title": "KV 캐시",
       "englishTitle": "Key-Value Cache",
@@ -17408,6 +21050,30 @@
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/kv-cache/"
+    },
+    {
+      "id": "kv-cache-quantization",
+      "title": "KV 캐시 양자화",
+      "englishTitle": "KV Cache Quantization",
+      "aliases": [
+        "KV Cache Quantization"
+      ],
+      "summary": "KV 캐시 양자화는 어텐션 키와 값을 더 낮은 비트 표현으로 저장해 생성 중 메모리 사용량을 줄이는 기법이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "related": [
+        "temperature",
+        "top-p-sampling",
+        "greedy-decoding"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/kv-cache-quantization/"
     },
     {
       "id": "llm-as-a-judge",
@@ -17440,6 +21106,52 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/llm-as-a-judge/"
+    },
+    {
+      "id": "proximal-policy-optimization-for-llm",
+      "title": "LLM용 근접 정책 최적화",
+      "englishTitle": "Proximal Policy Optimization for LLMs",
+      "aliases": [
+        "Proximal Policy Optimization for LLMs"
+      ],
+      "summary": "LLM용 근접 정책 최적화는 보상 신호를 높이되 새 언어 모델 정책이 기준 정책에서 한 번에 너무 멀어지지 않도록 갱신하는 강화학습 방법이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "fine-tuning"
+      ],
+      "related": [
+        "pretraining",
+        "supervised-fine-tuning",
+        "training-data"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/proximal-policy-optimization-for-llm/"
+    },
+    {
+      "id": "longformer",
+      "title": "Longformer",
+      "englishTitle": "Longformer",
+      "aliases": [],
+      "summary": "Longformer는 각 토큰의 국소 슬라이딩 창 어텐션과 일부 토큰의 전역 어텐션을 결합해 긴 문서를 처리하는 트랜스포머다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/longformer/"
     },
     {
       "id": "lora",
@@ -17641,6 +21353,28 @@
       "url": "/wiki/n-gram-language-model/"
     },
     {
+      "id": "nvlink",
+      "title": "NVLink",
+      "englishTitle": "NVLink",
+      "aliases": [],
+      "summary": "NVLink는 NVIDIA 프로세서와 가속기 사이에 높은 대역폭과 직접 메모리 접근 경로를 제공하는 전용 인터커넥트 계열이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/nvlink/"
+    },
+    {
       "id": "pass-at-k",
       "title": "Pass@K",
       "englishTitle": "Pass at K",
@@ -17663,6 +21397,28 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/pass-at-k/"
+    },
+    {
+      "id": "performer",
+      "title": "Performer",
+      "englishTitle": "Performer",
+      "aliases": [],
+      "summary": "Performer는 소프트맥스 어텐션을 무작위 특징 기반 커널로 근사해 시퀀스 길이에 선형인 계산을 목표로 하는 트랜스포머 변형이다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/performer/"
     },
     {
       "id": "rag-poisoning",
@@ -17711,7 +21467,11 @@
       ],
       "backlinks": [
         "sense-think-act-cycle",
+        "plan-and-execute",
         "planner-agent",
+        "memory-forgetting",
+        "memory-consolidation",
+        "conversation-memory",
         "tool-result-handling",
         "tool-permission",
         "tool-registry",
@@ -17720,7 +21480,9 @@
         "tool-selection",
         "tool-invocation",
         "router-agent",
+        "vector-memory",
         "browser-use-agent",
+        "session-state",
         "agent-task-decomposition",
         "short-term-agent-memory",
         "agent-tool",
@@ -17728,11 +21490,14 @@
         "agent-goal",
         "agent-sandbox",
         "agent-reflection",
+        "agent-scratchpad",
         "agent-executor",
+        "semantic-agent-memory",
         "episodic-agent-memory",
         "agent-self-correction",
         "agent-autonomy-level",
         "long-term-agent-memory",
+        "procedural-agent-memory",
         "agent-control-loop",
         "agent-termination-condition",
         "agent-harness",
@@ -17741,6 +21506,7 @@
         "perceive-plan-act-cycle",
         "working-memory",
         "worker-agent",
+        "persistent-agent-state",
         "computer-use-agent",
         "code-execution-tool",
         "api-action-tool"
@@ -17770,13 +21536,20 @@
       ],
       "backlinks": [
         "path-parameter",
+        "tool-result",
+        "tool-choice",
+        "tool-argument",
+        "tool-definition",
         "domain-name-system",
         "synchronous-api-request",
         "stateless-api",
+        "grammar-constrained-generation",
         "batch-api",
+        "parallel-tool-call",
         "asynchronous-api-job",
         "stateful-api",
         "server-sent-events",
+        "schema-validation",
         "realtime-api",
         "audio-api",
         "request-response-pattern",
@@ -17793,6 +21566,8 @@
         "uri",
         "url",
         "file-upload-api",
+        "function-calling",
+        "typed-response",
         "api",
         "api-versioning",
         "api-endpoint",
@@ -17803,6 +21578,7 @@
         "http-request",
         "http-header",
         "https",
+        "json-schema",
         "mime-type",
         "sdk"
       ],
@@ -17837,6 +21613,28 @@
       "url": "/wiki/rms-normalization/"
     },
     {
+      "id": "rmsprop",
+      "title": "RMSProp",
+      "englishTitle": "RMSProp",
+      "aliases": [],
+      "summary": "RMSProp은 최근 제곱 기울기의 지수이동평균으로 각 매개변수의 학습률을 조정하는 적응형 최적화법이다.",
+      "categories": [
+        "neural"
+      ],
+      "prerequisites": [
+        "neural-network"
+      ],
+      "related": [
+        "layer",
+        "activation-function",
+        "weight"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/rmsprop/"
+    },
+    {
       "id": "roc-curve",
       "title": "ROC 곡선",
       "englishTitle": "Receiver Operating Characteristic Curve",
@@ -17859,6 +21657,28 @@
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/roc-curve/"
+    },
+    {
+      "id": "rocm",
+      "title": "ROCm",
+      "englishTitle": "ROCm",
+      "aliases": [],
+      "summary": "ROCm은 AMD GPU에서 계산 커널, 수학 라이브러리, 컴파일러와 분산 통신을 제공하는 개방형 소프트웨어 플랫폼이다.",
+      "categories": [
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "model-version"
+      ],
+      "related": [
+        "model-registry",
+        "model-hub",
+        "open-source-model"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/rocm/"
     },
     {
       "id": "rouge-score",
@@ -18028,6 +21848,30 @@
       "url": "/wiki/swiglu/"
     },
     {
+      "id": "t5-architecture",
+      "title": "T5 아키텍처",
+      "englishTitle": "T5 Architecture",
+      "aliases": [
+        "T5 Architecture"
+      ],
+      "summary": "T5 아키텍처는 모든 자연어 처리 과제를 텍스트 입력에서 텍스트 출력으로 표현하는 인코더-디코더 트랜스포머다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/t5-architecture/"
+    },
+    {
       "id": "top-k-sampling",
       "title": "Top-k 샘플링",
       "englishTitle": "Top-k Sampling",
@@ -18089,6 +21933,7 @@
         "multi-model-serving",
         "multinomial-sampling",
         "contrastive-search",
+        "dynamic-batching",
         "decode-phase",
         "model-gateway",
         "model-replica",
@@ -18105,17 +21950,26 @@
         "request-queue",
         "request-scheduler",
         "typical-sampling",
+        "static-batching",
         "constrained-decoding",
         "presence-penalty",
         "stop-sequence",
         "time-to-first-token",
+        "chunked-prefill",
+        "draft-model",
         "inference-load-balancing",
         "inference-server",
         "inference-endpoint",
         "inference-autoscaling",
+        "speculative-decoding",
+        "cache-offloading",
+        "cache-eviction",
         "inter-token-latency",
         "token-sampling",
+        "paged-kv-cache",
+        "prefix-caching",
         "prefill-phase",
+        "kv-cache-quantization",
         "min-p-sampling",
         "top-k-sampling"
       ],
@@ -18124,6 +21978,28 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/top-p-sampling/"
+    },
+    {
+      "id": "transformer-xl",
+      "title": "Transformer-XL",
+      "englishTitle": "Transformer-XL",
+      "aliases": [],
+      "summary": "Transformer-XL은 이전 구간의 은닉 상태를 다음 구간에서 재사용해 고정 길이 문맥을 넘어선 의존성을 모델링하는 트랜스포머다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/transformer-xl/"
     },
     {
       "id": "u-net",
@@ -18168,6 +22044,30 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/wordpiece/"
+    },
+    {
+      "id": "xlnet-architecture",
+      "title": "XLNet 아키텍처",
+      "englishTitle": "XLNet Architecture",
+      "aliases": [
+        "XLNet Architecture"
+      ],
+      "summary": "XLNet 아키텍처는 토큰 위치의 여러 순열에 대해 자동회귀 예측을 수행해 양방향 문맥을 학습하는 트랜스포머 구조다.",
+      "categories": [
+        "transformer"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "related": [
+        "attention",
+        "self-attention",
+        "multi-head-attention"
+      ],
+      "backlinks": [],
+      "courses": [],
+      "reviewedAt": "2026-07-14",
+      "url": "/wiki/xlnet-architecture/"
     }
   ],
   "courses": [
