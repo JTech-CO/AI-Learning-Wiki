@@ -81,11 +81,21 @@
         "contrastive-learning",
         "autoencoder",
         "sparse-coding",
-        "dimensionality-reduction"
+        "dimensionality-reduction",
+        "probabilistic-model",
+        "generative-discriminative-model",
+        "bayesian-learning",
+        "maximum-a-posteriori-estimation",
+        "probabilistic-graphical-model",
+        "bayesian-network",
+        "markov-random-field",
+        "hidden-markov-model",
+        "gaussian-process",
+        "uncertainty-quantification"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "foundations-core-expansion",
@@ -110,16 +120,6 @@
       "categoryId": "foundations",
       "phase": "brief-expansion",
       "topicIds": [
-        "probabilistic-model",
-        "generative-discriminative-model",
-        "bayesian-learning",
-        "maximum-a-posteriori-estimation",
-        "probabilistic-graphical-model",
-        "bayesian-network",
-        "markov-random-field",
-        "hidden-markov-model",
-        "gaussian-process",
-        "uncertainty-quantification",
         "ai-system",
         "machine-learning-pipeline",
         "prediction",
@@ -136,11 +136,11 @@
         "turing-test",
         "ai-lifecycle"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
         "artificial-general-intelligence"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "mathematics-existing-enrichment",
@@ -221,11 +221,21 @@
         "perplexity",
         "information-gain",
         "coding-theory",
+        "source-coding",
+        "channel-capacity",
+        "data-processing-inequality",
+        "jensen-shannon-divergence",
+        "f-divergence",
+        "rate-distortion-theory",
+        "floating-point-arithmetic",
+        "numerical-stability",
+        "overflow-underflow",
+        "condition-number",
         "cosine-similarity"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "mathematics-core-expansion",
@@ -250,16 +260,6 @@
       "categoryId": "mathematics",
       "phase": "brief-expansion",
       "topicIds": [
-        "source-coding",
-        "channel-capacity",
-        "data-processing-inequality",
-        "jensen-shannon-divergence",
-        "f-divergence",
-        "rate-distortion-theory",
-        "floating-point-arithmetic",
-        "numerical-stability",
-        "overflow-underflow",
-        "condition-number",
         "numerical-precision",
         "finite-difference-method",
         "automatic-differentiation",
@@ -276,9 +276,9 @@
         "curse-of-dimensionality",
         "concentration-of-measure"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "neural-existing-enrichment",
@@ -358,12 +358,22 @@
         "batch-normalization",
         "group-normalization",
         "instance-normalization",
+        "label-smoothing",
+        "stochastic-depth",
+        "spectral-normalization",
+        "noise-injection",
+        "max-norm-regularization",
+        "mixup",
+        "cutmix",
         "batch",
-        "epoch"
+        "epoch",
+        "training-loss",
+        "validation-loss",
+        "learning-curve"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "neural-core-expansion",
@@ -388,16 +398,6 @@
       "categoryId": "neural",
       "phase": "brief-expansion",
       "topicIds": [
-        "label-smoothing",
-        "stochastic-depth",
-        "spectral-normalization",
-        "noise-injection",
-        "max-norm-regularization",
-        "mixup",
-        "cutmix",
-        "training-loss",
-        "validation-loss",
-        "learning-curve",
         "gradient-norm",
         "loss-landscape",
         "dead-neuron",
@@ -414,9 +414,9 @@
         "probing-classifier",
         "mechanistic-interpretability"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "transformer-existing-enrichment",
@@ -497,11 +497,21 @@
         "position-id",
         "ntk-aware-scaling",
         "yarn-scaling",
-        "length-extrapolation"
+        "length-extrapolation",
+        "flash-attention",
+        "memory-efficient-attention",
+        "attention-complexity",
+        "chunked-attention",
+        "paged-attention",
+        "block-sparse-attention",
+        "low-rank-attention",
+        "kernelized-attention",
+        "attention-sink",
+        "key-value-compression"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "transformer-core-expansion",
@@ -526,16 +536,6 @@
       "categoryId": "transformer",
       "phase": "brief-expansion",
       "topicIds": [
-        "flash-attention",
-        "memory-efficient-attention",
-        "attention-complexity",
-        "chunked-attention",
-        "paged-attention",
-        "block-sparse-attention",
-        "low-rank-attention",
-        "kernelized-attention",
-        "attention-sink",
-        "key-value-compression",
         "head-pruning",
         "layer-dropping",
         "early-exit-transformer",
@@ -552,9 +552,9 @@
         "multimodal-transformer",
         "mixture-of-depths"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "llm-existing-enrichment",
@@ -635,13 +635,24 @@
         "memory-token",
         "external-language-model-memory",
         "recurrent-language-model-memory",
-        "context-caching"
+        "context-caching",
+        "prompt-caching",
+        "lost-in-the-middle",
+        "context-utilization",
+        "context-contamination",
+        "context-budget",
+        "instruction-following",
+        "reasoning-capability",
+        "multilingual-capability",
+        "code-generation",
+        "steerability"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
-        "context-engineering"
+        "context-engineering",
+        "reasoning-capability"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "llm-core-expansion",
@@ -666,16 +677,6 @@
       "categoryId": "llm",
       "phase": "brief-expansion",
       "topicIds": [
-        "prompt-caching",
-        "lost-in-the-middle",
-        "context-utilization",
-        "context-contamination",
-        "context-budget",
-        "instruction-following",
-        "reasoning-capability",
-        "multilingual-capability",
-        "code-generation",
-        "steerability",
         "controllability",
         "model-knowledge",
         "knowledge-cutoff",
@@ -692,13 +693,12 @@
         "language-model-confidence",
         "latent-reasoning"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
-        "reasoning-capability",
         "knowledge-cutoff",
         "latent-reasoning"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "training-existing-enrichment",
@@ -779,13 +779,23 @@
         "prompt-tuning",
         "ia3",
         "qlora",
-        "dora"
+        "dora",
+        "model-pruning",
+        "model-sparsity",
+        "model-merging",
+        "task-vector",
+        "quantization-aware-training",
+        "data-parallelism",
+        "model-parallelism",
+        "tensor-parallelism",
+        "pipeline-parallelism",
+        "expert-parallelism"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "process-reward-model"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "training-core-expansion",
@@ -810,16 +820,6 @@
       "categoryId": "training",
       "phase": "brief-expansion",
       "topicIds": [
-        "model-pruning",
-        "model-sparsity",
-        "model-merging",
-        "task-vector",
-        "quantization-aware-training",
-        "data-parallelism",
-        "model-parallelism",
-        "tensor-parallelism",
-        "pipeline-parallelism",
-        "expert-parallelism",
         "fully-sharded-data-parallel",
         "zero-redundancy-optimizer",
         "gradient-checkpointing",
@@ -836,12 +836,12 @@
         "training-reproducibility",
         "training-audit-log"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
         "training-data-copyright",
         "machine-unlearning"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "inference-existing-enrichment",
@@ -921,15 +921,25 @@
         "gpu-inference",
         "tpu-inference",
         "npu-inference",
+        "cpu-inference",
+        "accelerator-memory",
+        "memory-bandwidth",
+        "high-bandwidth-memory",
+        "compute-bound-workload",
+        "memory-bound-workload",
+        "roofline-model",
         "latency",
-        "throughput"
+        "throughput",
+        "service-level-objective",
+        "model-availability",
+        "tail-latency"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "tensorrt-llm",
         "npu-inference"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "inference-core-expansion",
@@ -954,16 +964,6 @@
       "categoryId": "inference",
       "phase": "brief-expansion",
       "topicIds": [
-        "cpu-inference",
-        "accelerator-memory",
-        "memory-bandwidth",
-        "high-bandwidth-memory",
-        "compute-bound-workload",
-        "memory-bound-workload",
-        "roofline-model",
-        "service-level-objective",
-        "model-availability",
-        "tail-latency",
         "latency-throughput-tradeoff",
         "token-cost",
         "inference-capacity-planning",
@@ -980,11 +980,11 @@
         "numerical-reproducibility",
         "inference-monitoring"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
         "token-cost"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "retrieval-existing-enrichment",
@@ -1065,11 +1065,23 @@
         "iterative-rag",
         "corrective-rag",
         "self-rag",
-        "reranker"
+        "agentic-rag",
+        "reranker",
+        "cross-encoder-reranker",
+        "pointwise-ranking",
+        "pairwise-ranking",
+        "listwise-ranking",
+        "reciprocal-rank-fusion",
+        "learning-to-rank",
+        "relevance-score",
+        "precision-at-k",
+        "recall-at-k"
       ],
-      "topicCount": 75,
-      "mandatoryManualReviewTopicIds": [],
-      "minimumManualReviewCount": 8
+      "topicCount": 85,
+      "mandatoryManualReviewTopicIds": [
+        "agentic-rag"
+      ],
+      "minimumManualReviewCount": 9
     },
     {
       "id": "retrieval-core-expansion",
@@ -1094,16 +1106,6 @@
       "categoryId": "retrieval",
       "phase": "brief-expansion",
       "topicIds": [
-        "agentic-rag",
-        "cross-encoder-reranker",
-        "pointwise-ranking",
-        "pairwise-ranking",
-        "listwise-ranking",
-        "reciprocal-rank-fusion",
-        "learning-to-rank",
-        "relevance-score",
-        "precision-at-k",
-        "recall-at-k",
         "mean-reciprocal-rank",
         "normalized-discounted-cumulative-gain",
         "retrieval-hit-rate",
@@ -1120,11 +1122,9 @@
         "hybrid-rag",
         "knowledge-graph-embedding"
       ],
-      "topicCount": 25,
-      "mandatoryManualReviewTopicIds": [
-        "agentic-rag"
-      ],
-      "minimumManualReviewCount": 3
+      "topicCount": 15,
+      "mandatoryManualReviewTopicIds": [],
+      "minimumManualReviewCount": 2
     },
     {
       "id": "api-existing-enrichment",
@@ -1205,14 +1205,24 @@
         "oauth",
         "bearer-token",
         "json-web-token",
+        "hmac-authentication",
+        "mutual-tls",
+        "secret-management",
+        "environment-variable-secret",
+        "credential-rotation",
+        "least-privilege",
+        "oauth-scope",
+        "cross-origin-resource-sharing",
+        "cross-site-request-forgery",
+        "server-side-request-forgery",
         "rate-limit"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "unified-response-api",
         "realtime-api"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "api-core-expansion",
@@ -1237,16 +1247,6 @@
       "categoryId": "api",
       "phase": "brief-expansion",
       "topicIds": [
-        "hmac-authentication",
-        "mutual-tls",
-        "secret-management",
-        "environment-variable-secret",
-        "credential-rotation",
-        "least-privilege",
-        "oauth-scope",
-        "cross-origin-resource-sharing",
-        "cross-site-request-forgery",
-        "server-side-request-forgery",
         "request-signing",
         "api-quota",
         "token-bucket",
@@ -1263,11 +1263,11 @@
         "api-version-pinning",
         "service-level-agreement"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
         "api-cost-tracking"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "agents-existing-enrichment",
@@ -1347,17 +1347,30 @@
         "agent-delegation",
         "agent-role",
         "multi-agent-consensus",
+        "multi-agent-debate",
+        "blackboard-architecture",
+        "supervisor-agent",
+        "peer-to-peer-agents",
+        "agent-handoff",
+        "shared-agent-memory",
+        "multi-agent-conflict-resolution",
         "mcp",
+        "mcp-host",
+        "mcp-client",
+        "mcp-server",
         "human-in-the-loop"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "computer-use-agent",
         "browser-use-agent",
         "agent-swarm",
-        "mcp"
+        "mcp",
+        "mcp-host",
+        "mcp-client",
+        "mcp-server"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "agents-core-expansion",
@@ -1382,16 +1395,6 @@
       "categoryId": "agents",
       "phase": "brief-expansion",
       "topicIds": [
-        "multi-agent-debate",
-        "blackboard-architecture",
-        "supervisor-agent",
-        "peer-to-peer-agents",
-        "agent-handoff",
-        "shared-agent-memory",
-        "multi-agent-conflict-resolution",
-        "mcp-host",
-        "mcp-client",
-        "mcp-server",
         "mcp-tools",
         "mcp-resources",
         "mcp-prompts",
@@ -1408,11 +1411,8 @@
         "runaway-agent",
         "agent-security"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
-        "mcp-host",
-        "mcp-client",
-        "mcp-server",
         "mcp-tools",
         "mcp-resources",
         "mcp-prompts",
@@ -1422,7 +1422,7 @@
         "runaway-agent",
         "agent-security"
       ],
-      "minimumManualReviewCount": 11
+      "minimumManualReviewCount": 8
     },
     {
       "id": "multimodal-existing-enrichment",
@@ -1503,18 +1503,29 @@
         "image-generation",
         "latent-diffusion-model",
         "text-to-image-generation",
+        "image-to-image-generation",
+        "image-inpainting",
+        "image-outpainting",
+        "controlnet",
+        "classifier-free-guidance",
+        "score-based-generative-model",
+        "diffusion-scheduler",
+        "diffusion-denoising-step",
+        "text-to-video-generation",
+        "text-to-audio-generation",
         "ocr"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "speech-language-model",
         "video-generation",
         "video-diffusion",
         "world-simulation-model",
         "long-video-understanding",
-        "multimodal-tokenizer"
+        "multimodal-tokenizer",
+        "text-to-video-generation"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "multimodal-core-expansion",
@@ -1539,16 +1550,6 @@
       "categoryId": "multimodal",
       "phase": "brief-expansion",
       "topicIds": [
-        "image-to-image-generation",
-        "image-inpainting",
-        "image-outpainting",
-        "controlnet",
-        "classifier-free-guidance",
-        "score-based-generative-model",
-        "diffusion-scheduler",
-        "diffusion-denoising-step",
-        "text-to-video-generation",
-        "text-to-audio-generation",
         "multimodal-generation",
         "document-ai",
         "document-layout-analysis",
@@ -1565,14 +1566,13 @@
         "deepfake-detection",
         "content-provenance"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
-        "text-to-video-generation",
         "multimodal-jailbreak",
         "deepfake-detection",
         "content-provenance"
       ],
-      "minimumManualReviewCount": 4
+      "minimumManualReviewCount": 3
     },
     {
       "id": "evaluation-existing-enrichment",
@@ -1652,16 +1652,26 @@
         "rag-evaluation",
         "retrieval-evaluation",
         "generation-evaluation",
+        "faithfulness",
+        "answer-relevance",
+        "context-relevance",
+        "citation-correctness",
+        "groundedness",
+        "agent-evaluation",
+        "tool-use-evaluation",
+        "planning-evaluation",
+        "end-to-end-success-rate",
+        "task-completion-rate",
         "observability",
         "tracing"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "leaderboard",
         "swe-bench",
         "mlperf"
       ],
-      "minimumManualReviewCount": 8
+      "minimumManualReviewCount": 9
     },
     {
       "id": "evaluation-core-expansion",
@@ -1686,16 +1696,6 @@
       "categoryId": "evaluation",
       "phase": "brief-expansion",
       "topicIds": [
-        "faithfulness",
-        "answer-relevance",
-        "context-relevance",
-        "citation-correctness",
-        "groundedness",
-        "agent-evaluation",
-        "tool-use-evaluation",
-        "planning-evaluation",
-        "end-to-end-success-rate",
-        "task-completion-rate",
         "simulation-based-evaluation",
         "regression-evaluation",
         "model-telemetry",
@@ -1712,12 +1712,12 @@
         "effect-size",
         "reproducible-evaluation"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
         "token-usage-monitoring",
         "cost-monitoring"
       ],
-      "minimumManualReviewCount": 3
+      "minimumManualReviewCount": 2
     },
     {
       "id": "safety-existing-enrichment",
@@ -1798,9 +1798,19 @@
         "ai-disclosure",
         "decision-provenance",
         "uncertainty-communication",
-        "ai-governance"
+        "algorithmic-contestability",
+        "ai-governance",
+        "nist-ai-risk-management-framework",
+        "ai-risk-assessment",
+        "algorithmic-impact-assessment",
+        "ai-risk-register",
+        "ai-governance-framework",
+        "algorithmic-audit",
+        "ai-accountability",
+        "human-oversight",
+        "acceptable-use-policy"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "prompt-injection",
         "indirect-prompt-injection",
@@ -1876,9 +1886,19 @@
         "ai-disclosure",
         "decision-provenance",
         "uncertainty-communication",
-        "ai-governance"
+        "algorithmic-contestability",
+        "ai-governance",
+        "nist-ai-risk-management-framework",
+        "ai-risk-assessment",
+        "algorithmic-impact-assessment",
+        "ai-risk-register",
+        "ai-governance-framework",
+        "algorithmic-audit",
+        "ai-accountability",
+        "human-oversight",
+        "acceptable-use-policy"
       ],
-      "minimumManualReviewCount": 75
+      "minimumManualReviewCount": 85
     },
     {
       "id": "safety-core-expansion",
@@ -1903,16 +1923,6 @@
       "categoryId": "safety",
       "phase": "brief-expansion",
       "topicIds": [
-        "algorithmic-contestability",
-        "nist-ai-risk-management-framework",
-        "ai-risk-assessment",
-        "algorithmic-impact-assessment",
-        "ai-risk-register",
-        "ai-governance-framework",
-        "algorithmic-audit",
-        "ai-accountability",
-        "human-oversight",
-        "acceptable-use-policy",
         "ai-policy-enforcement",
         "ai-compliance-monitoring",
         "ai-regulatory-classification",
@@ -1929,18 +1939,8 @@
         "ai-security-monitoring",
         "defense-in-depth-for-ai"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
-        "algorithmic-contestability",
-        "nist-ai-risk-management-framework",
-        "ai-risk-assessment",
-        "algorithmic-impact-assessment",
-        "ai-risk-register",
-        "ai-governance-framework",
-        "algorithmic-audit",
-        "ai-accountability",
-        "human-oversight",
-        "acceptable-use-policy",
         "ai-policy-enforcement",
         "ai-compliance-monitoring",
         "ai-regulatory-classification",
@@ -1957,7 +1957,7 @@
         "ai-security-monitoring",
         "defense-in-depth-for-ai"
       ],
-      "minimumManualReviewCount": 25
+      "minimumManualReviewCount": 15
     },
     {
       "id": "ecosystem-existing-enrichment",
@@ -2038,9 +2038,19 @@
         "llmops",
         "model-deployment",
         "containerized-model",
-        "kubernetes-for-ai"
+        "kubernetes-for-ai",
+        "model-serving-platform",
+        "managed-inference-platform",
+        "edge-model-deployment",
+        "mobile-model-deployment",
+        "model-monitoring-platform",
+        "mlcommons",
+        "open-neural-network-exchange",
+        "nist-ai-program",
+        "iso-iec-jtc1-sc42",
+        "ieee-ai-standards"
       ],
-      "topicCount": 75,
+      "topicCount": 85,
       "mandatoryManualReviewTopicIds": [
         "model-release",
         "model-update",
@@ -2058,9 +2068,11 @@
         "keras",
         "transformers-library",
         "mlflow",
-        "llmops"
+        "llmops",
+        "model-serving-platform",
+        "managed-inference-platform"
       ],
-      "minimumManualReviewCount": 17
+      "minimumManualReviewCount": 19
     },
     {
       "id": "ecosystem-core-expansion",
@@ -2085,16 +2097,6 @@
       "categoryId": "ecosystem",
       "phase": "brief-expansion",
       "topicIds": [
-        "model-serving-platform",
-        "managed-inference-platform",
-        "edge-model-deployment",
-        "mobile-model-deployment",
-        "model-monitoring-platform",
-        "mlcommons",
-        "open-neural-network-exchange",
-        "nist-ai-program",
-        "iso-iec-jtc1-sc42",
-        "ieee-ai-standards",
         "oecd-ai-principles",
         "partnership-on-ai",
         "linux-foundation-ai-data",
@@ -2111,10 +2113,8 @@
         "total-cost-of-ownership-for-ai",
         "model-commoditization"
       ],
-      "topicCount": 25,
+      "topicCount": 15,
       "mandatoryManualReviewTopicIds": [
-        "model-serving-platform",
-        "managed-inference-platform",
         "ai-interoperability-standard",
         "compute-cost",
         "training-cost",
@@ -2125,7 +2125,7 @@
         "total-cost-of-ownership-for-ai",
         "model-commoditization"
       ],
-      "minimumManualReviewCount": 11
+      "minimumManualReviewCount": 9
     }
   ]
 }

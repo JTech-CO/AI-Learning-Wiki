@@ -1,0 +1,2973 @@
+{
+  "version": "W16-2026-07-15",
+  "generatedAt": "2026-07-14T17:19:23.153Z",
+  "policy": {
+    "categories": 14,
+    "newTopicsPerCategory": 10,
+    "topicsPerSlice": 14,
+    "slices": 10,
+    "candidateOrder": "ascending-rank"
+  },
+  "totals": {
+    "topics": 140,
+    "newlyCreated": 140,
+    "cumulativeArticles": 1190
+  },
+  "slices": [
+    {
+      "id": "w16-slice-01",
+      "topics": [
+        "multi-agent-debate",
+        "hmac-authentication",
+        "model-serving-platform",
+        "faithfulness",
+        "probabilistic-model",
+        "cpu-inference",
+        "prompt-caching",
+        "source-coding",
+        "image-to-image-generation",
+        "label-smoothing",
+        "agentic-rag",
+        "algorithmic-contestability",
+        "model-pruning",
+        "flash-attention"
+      ]
+    },
+    {
+      "id": "w16-slice-02",
+      "topics": [
+        "blackboard-architecture",
+        "mutual-tls",
+        "managed-inference-platform",
+        "answer-relevance",
+        "generative-discriminative-model",
+        "accelerator-memory",
+        "lost-in-the-middle",
+        "channel-capacity",
+        "image-inpainting",
+        "stochastic-depth",
+        "cross-encoder-reranker",
+        "nist-ai-risk-management-framework",
+        "model-sparsity",
+        "memory-efficient-attention"
+      ]
+    },
+    {
+      "id": "w16-slice-03",
+      "topics": [
+        "supervisor-agent",
+        "secret-management",
+        "edge-model-deployment",
+        "context-relevance",
+        "bayesian-learning",
+        "memory-bandwidth",
+        "context-utilization",
+        "data-processing-inequality",
+        "image-outpainting",
+        "spectral-normalization",
+        "pointwise-ranking",
+        "ai-risk-assessment",
+        "model-merging",
+        "attention-complexity"
+      ]
+    },
+    {
+      "id": "w16-slice-04",
+      "topics": [
+        "peer-to-peer-agents",
+        "environment-variable-secret",
+        "mobile-model-deployment",
+        "citation-correctness",
+        "maximum-a-posteriori-estimation",
+        "high-bandwidth-memory",
+        "context-contamination",
+        "jensen-shannon-divergence",
+        "controlnet",
+        "noise-injection",
+        "pairwise-ranking",
+        "algorithmic-impact-assessment",
+        "task-vector",
+        "chunked-attention"
+      ]
+    },
+    {
+      "id": "w16-slice-05",
+      "topics": [
+        "agent-handoff",
+        "credential-rotation",
+        "model-monitoring-platform",
+        "groundedness",
+        "probabilistic-graphical-model",
+        "compute-bound-workload",
+        "context-budget",
+        "f-divergence",
+        "classifier-free-guidance",
+        "max-norm-regularization",
+        "listwise-ranking",
+        "ai-risk-register",
+        "quantization-aware-training",
+        "paged-attention"
+      ]
+    },
+    {
+      "id": "w16-slice-06",
+      "topics": [
+        "shared-agent-memory",
+        "least-privilege",
+        "mlcommons",
+        "agent-evaluation",
+        "bayesian-network",
+        "memory-bound-workload",
+        "instruction-following",
+        "rate-distortion-theory",
+        "score-based-generative-model",
+        "mixup",
+        "reciprocal-rank-fusion",
+        "ai-governance-framework",
+        "data-parallelism",
+        "block-sparse-attention"
+      ]
+    },
+    {
+      "id": "w16-slice-07",
+      "topics": [
+        "multi-agent-conflict-resolution",
+        "oauth-scope",
+        "open-neural-network-exchange",
+        "tool-use-evaluation",
+        "markov-random-field",
+        "roofline-model",
+        "reasoning-capability",
+        "floating-point-arithmetic",
+        "diffusion-scheduler",
+        "cutmix",
+        "learning-to-rank",
+        "algorithmic-audit",
+        "model-parallelism",
+        "low-rank-attention"
+      ]
+    },
+    {
+      "id": "w16-slice-08",
+      "topics": [
+        "mcp-host",
+        "cross-origin-resource-sharing",
+        "nist-ai-program",
+        "planning-evaluation",
+        "hidden-markov-model",
+        "service-level-objective",
+        "multilingual-capability",
+        "numerical-stability",
+        "diffusion-denoising-step",
+        "training-loss",
+        "relevance-score",
+        "ai-accountability",
+        "tensor-parallelism",
+        "kernelized-attention"
+      ]
+    },
+    {
+      "id": "w16-slice-09",
+      "topics": [
+        "mcp-client",
+        "cross-site-request-forgery",
+        "iso-iec-jtc1-sc42",
+        "end-to-end-success-rate",
+        "gaussian-process",
+        "model-availability",
+        "code-generation",
+        "overflow-underflow",
+        "text-to-video-generation",
+        "validation-loss",
+        "precision-at-k",
+        "human-oversight",
+        "pipeline-parallelism",
+        "attention-sink"
+      ]
+    },
+    {
+      "id": "w16-slice-10",
+      "topics": [
+        "mcp-server",
+        "server-side-request-forgery",
+        "ieee-ai-standards",
+        "task-completion-rate",
+        "uncertainty-quantification",
+        "tail-latency",
+        "steerability",
+        "condition-number",
+        "text-to-audio-generation",
+        "learning-curve",
+        "recall-at-k",
+        "acceptable-use-policy",
+        "expert-parallelism",
+        "key-value-compression"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "multi-agent-debate",
+      "categoryId": "agents",
+      "rank": 74,
+      "tier": "brief",
+      "subarea": "multi-agent",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "다중 에이전트 토론",
+      "titleEn": "Multi-Agent Debate",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5328
+    },
+    {
+      "topicId": "blackboard-architecture",
+      "categoryId": "agents",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "multi-agent",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "블랙보드 아키텍처",
+      "titleEn": "Blackboard Architecture",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5325
+    },
+    {
+      "topicId": "supervisor-agent",
+      "categoryId": "agents",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "multi-agent",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "감독 에이전트",
+      "titleEn": "Supervisor Agent",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5231
+    },
+    {
+      "topicId": "peer-to-peer-agents",
+      "categoryId": "agents",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "multi-agent",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "피어투피어 에이전트",
+      "titleEn": "Peer-to-Peer Agents",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5270
+    },
+    {
+      "topicId": "agent-handoff",
+      "categoryId": "agents",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "multi-agent",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "에이전트 핸드오프",
+      "titleEn": "Agent Handoff",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5241
+    },
+    {
+      "topicId": "shared-agent-memory",
+      "categoryId": "agents",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "multi-agent",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "공유 에이전트 메모리",
+      "titleEn": "Shared Agent Memory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5547
+    },
+    {
+      "topicId": "multi-agent-conflict-resolution",
+      "categoryId": "agents",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "multi-agent",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "다중 에이전트 갈등 해결",
+      "titleEn": "Multi-Agent Conflict Resolution",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5497
+    },
+    {
+      "topicId": "mcp-host",
+      "categoryId": "agents",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "protocols-mcp",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "MCP 호스트",
+      "titleEn": "MCP Host",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5205
+    },
+    {
+      "topicId": "mcp-client",
+      "categoryId": "agents",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "protocols-mcp",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "MCP 클라이언트",
+      "titleEn": "MCP Client",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5161
+    },
+    {
+      "topicId": "mcp-server",
+      "categoryId": "agents",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "protocols-mcp",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "MCP 서버",
+      "titleEn": "MCP Server",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5138
+    },
+    {
+      "topicId": "hmac-authentication",
+      "categoryId": "api",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "HMAC 인증",
+      "titleEn": "HMAC Authentication",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5316
+    },
+    {
+      "topicId": "mutual-tls",
+      "categoryId": "api",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "상호 TLS",
+      "titleEn": "Mutual TLS",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5107
+    },
+    {
+      "topicId": "secret-management",
+      "categoryId": "api",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "비밀정보 관리",
+      "titleEn": "Secret Management",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5260
+    },
+    {
+      "topicId": "environment-variable-secret",
+      "categoryId": "api",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "환경 변수 비밀정보",
+      "titleEn": "Environment Variable Secret",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5451
+    },
+    {
+      "topicId": "credential-rotation",
+      "categoryId": "api",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "자격 증명 순환",
+      "titleEn": "Credential Rotation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5251
+    },
+    {
+      "topicId": "least-privilege",
+      "categoryId": "api",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "최소 권한",
+      "titleEn": "Least Privilege",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5098
+    },
+    {
+      "topicId": "oauth-scope",
+      "categoryId": "api",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "OAuth 범위",
+      "titleEn": "OAuth Scope",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5139
+    },
+    {
+      "topicId": "cross-origin-resource-sharing",
+      "categoryId": "api",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "교차 출처 자원 공유",
+      "titleEn": "Cross-Origin Resource Sharing",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5500
+    },
+    {
+      "topicId": "cross-site-request-forgery",
+      "categoryId": "api",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "교차 사이트 요청 위조",
+      "titleEn": "Cross-Site Request Forgery",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5479
+    },
+    {
+      "topicId": "server-side-request-forgery",
+      "categoryId": "api",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "auth-security",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "서버 측 요청 위조",
+      "titleEn": "Server-Side Request Forgery",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "web-reference",
+        "wikimedia"
+      ],
+      "bodyChars": 5409
+    },
+    {
+      "topicId": "model-serving-platform",
+      "categoryId": "ecosystem",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "deployment-platforms",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 서빙 플랫폼",
+      "titleEn": "Model Serving Platform",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5298
+    },
+    {
+      "topicId": "managed-inference-platform",
+      "categoryId": "ecosystem",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "deployment-platforms",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "관리형 추론 플랫폼",
+      "titleEn": "Managed Inference Platform",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5391
+    },
+    {
+      "topicId": "edge-model-deployment",
+      "categoryId": "ecosystem",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "deployment-platforms",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "엣지 모델 배포",
+      "titleEn": "Edge Model Deployment",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5279
+    },
+    {
+      "topicId": "mobile-model-deployment",
+      "categoryId": "ecosystem",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "deployment-platforms",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모바일 모델 배포",
+      "titleEn": "Mobile Model Deployment",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5330
+    },
+    {
+      "topicId": "model-monitoring-platform",
+      "categoryId": "ecosystem",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "deployment-platforms",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 모니터링 플랫폼",
+      "titleEn": "Model Monitoring Platform",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5384
+    },
+    {
+      "topicId": "mlcommons",
+      "categoryId": "ecosystem",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "standards-organizations",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "MLCommons",
+      "titleEn": "MLCommons",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5387
+    },
+    {
+      "topicId": "open-neural-network-exchange",
+      "categoryId": "ecosystem",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "standards-organizations",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "개방형 신경망 교환 형식",
+      "titleEn": "Open Neural Network Exchange",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5452
+    },
+    {
+      "topicId": "nist-ai-program",
+      "categoryId": "ecosystem",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "standards-organizations",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "NIST AI 프로그램",
+      "titleEn": "NIST AI Program",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5327
+    },
+    {
+      "topicId": "iso-iec-jtc1-sc42",
+      "categoryId": "ecosystem",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "standards-organizations",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "ISO/IEC JTC 1/SC 42",
+      "titleEn": "ISO/IEC JTC 1/SC 42",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5406
+    },
+    {
+      "topicId": "ieee-ai-standards",
+      "categoryId": "ecosystem",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "standards-organizations",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "IEEE AI 표준",
+      "titleEn": "IEEE AI Standards",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5249
+    },
+    {
+      "topicId": "faithfulness",
+      "categoryId": "evaluation",
+      "rank": 74,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "충실성",
+      "titleEn": "Faithfulness",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5663
+    },
+    {
+      "topicId": "answer-relevance",
+      "categoryId": "evaluation",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "답변 관련성",
+      "titleEn": "Answer Relevance",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5571
+    },
+    {
+      "topicId": "context-relevance",
+      "categoryId": "evaluation",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "문맥 관련성",
+      "titleEn": "Context Relevance",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5525
+    },
+    {
+      "topicId": "citation-correctness",
+      "categoryId": "evaluation",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인용 정확성",
+      "titleEn": "Citation Correctness",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5563
+    },
+    {
+      "topicId": "groundedness",
+      "categoryId": "evaluation",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "근거 충실도",
+      "titleEn": "Groundedness",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5561
+    },
+    {
+      "topicId": "agent-evaluation",
+      "categoryId": "evaluation",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "에이전트 평가",
+      "titleEn": "Agent Evaluation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5395
+    },
+    {
+      "topicId": "tool-use-evaluation",
+      "categoryId": "evaluation",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "도구 사용 평가",
+      "titleEn": "Tool-Use Evaluation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5691
+    },
+    {
+      "topicId": "planning-evaluation",
+      "categoryId": "evaluation",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "계획 평가",
+      "titleEn": "Planning Evaluation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5534
+    },
+    {
+      "topicId": "end-to-end-success-rate",
+      "categoryId": "evaluation",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "종단간 성공률",
+      "titleEn": "End-to-End Success Rate",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5415
+    },
+    {
+      "topicId": "task-completion-rate",
+      "categoryId": "evaluation",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "rag-agent-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "과제 완료율",
+      "titleEn": "Task Completion Rate",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5559
+    },
+    {
+      "topicId": "probabilistic-model",
+      "categoryId": "foundations",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "확률 모델",
+      "titleEn": "Probabilistic Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5366
+    },
+    {
+      "topicId": "generative-discriminative-model",
+      "categoryId": "foundations",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "생성 모델과 판별 모델",
+      "titleEn": "Generative and Discriminative Models",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5631
+    },
+    {
+      "topicId": "bayesian-learning",
+      "categoryId": "foundations",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "베이즈 학습",
+      "titleEn": "Bayesian Learning",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5135
+    },
+    {
+      "topicId": "maximum-a-posteriori-estimation",
+      "categoryId": "foundations",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "최대 사후 확률 추정",
+      "titleEn": "Maximum A Posteriori Estimation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5392
+    },
+    {
+      "topicId": "probabilistic-graphical-model",
+      "categoryId": "foundations",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "확률 그래프 모델",
+      "titleEn": "Probabilistic Graphical Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5346
+    },
+    {
+      "topicId": "bayesian-network",
+      "categoryId": "foundations",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "베이즈 네트워크",
+      "titleEn": "Bayesian Network",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5470
+    },
+    {
+      "topicId": "markov-random-field",
+      "categoryId": "foundations",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "마르코프 확률장",
+      "titleEn": "Markov Random Field",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5440
+    },
+    {
+      "topicId": "hidden-markov-model",
+      "categoryId": "foundations",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "은닉 마르코프 모델",
+      "titleEn": "Hidden Markov Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5263
+    },
+    {
+      "topicId": "gaussian-process",
+      "categoryId": "foundations",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "가우스 과정",
+      "titleEn": "Gaussian Process",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5402
+    },
+    {
+      "topicId": "uncertainty-quantification",
+      "categoryId": "foundations",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "probabilistic-ai",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "불확실성 정량화",
+      "titleEn": "Uncertainty Quantification",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5295
+    },
+    {
+      "topicId": "cpu-inference",
+      "categoryId": "inference",
+      "rank": 74,
+      "tier": "brief",
+      "subarea": "hardware-systems",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "CPU 추론",
+      "titleEn": "CPU Inference",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5536
+    },
+    {
+      "topicId": "accelerator-memory",
+      "categoryId": "inference",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "hardware-systems",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "가속기 메모리",
+      "titleEn": "Accelerator Memory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5385
+    },
+    {
+      "topicId": "memory-bandwidth",
+      "categoryId": "inference",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "hardware-systems",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "메모리 대역폭",
+      "titleEn": "Memory Bandwidth",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5609
+    },
+    {
+      "topicId": "high-bandwidth-memory",
+      "categoryId": "inference",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "hardware-systems",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "고대역폭 메모리",
+      "titleEn": "High-Bandwidth Memory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5447
+    },
+    {
+      "topicId": "compute-bound-workload",
+      "categoryId": "inference",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "hardware-systems",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "연산 집약 작업",
+      "titleEn": "Compute-Bound Workload",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5415
+    },
+    {
+      "topicId": "memory-bound-workload",
+      "categoryId": "inference",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "hardware-systems",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "메모리 집약 작업",
+      "titleEn": "Memory-Bound Workload",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5419
+    },
+    {
+      "topicId": "roofline-model",
+      "categoryId": "inference",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "hardware-systems",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "루프라인 모델",
+      "titleEn": "Roofline Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5647
+    },
+    {
+      "topicId": "service-level-objective",
+      "categoryId": "inference",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "cost-reliability",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "서비스 수준 목표",
+      "titleEn": "Service-Level Objective",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5209
+    },
+    {
+      "topicId": "model-availability",
+      "categoryId": "inference",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "cost-reliability",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 가용성",
+      "titleEn": "Model Availability",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5620
+    },
+    {
+      "topicId": "tail-latency",
+      "categoryId": "inference",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "cost-reliability",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "꼬리 지연 시간",
+      "titleEn": "Tail Latency",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5542
+    },
+    {
+      "topicId": "prompt-caching",
+      "categoryId": "llm",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "context-memory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "프롬프트 캐싱",
+      "titleEn": "Prompt Caching",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5601
+    },
+    {
+      "topicId": "lost-in-the-middle",
+      "categoryId": "llm",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "context-memory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "중간 정보 손실 현상",
+      "titleEn": "Lost in the Middle",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5445
+    },
+    {
+      "topicId": "context-utilization",
+      "categoryId": "llm",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "context-memory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "문맥 활용률",
+      "titleEn": "Context Utilization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5377
+    },
+    {
+      "topicId": "context-contamination",
+      "categoryId": "llm",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "context-memory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "문맥 오염",
+      "titleEn": "Context Contamination",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5147
+    },
+    {
+      "topicId": "context-budget",
+      "categoryId": "llm",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "context-memory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "문맥 예산",
+      "titleEn": "Context Budget",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5517
+    },
+    {
+      "topicId": "instruction-following",
+      "categoryId": "llm",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "model-properties",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "지시 이행",
+      "titleEn": "Instruction Following",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5151
+    },
+    {
+      "topicId": "reasoning-capability",
+      "categoryId": "llm",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "model-properties",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "추론 능력",
+      "titleEn": "Reasoning Capability",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5391
+    },
+    {
+      "topicId": "multilingual-capability",
+      "categoryId": "llm",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "model-properties",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "다국어 능력",
+      "titleEn": "Multilingual Capability",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5403
+    },
+    {
+      "topicId": "code-generation",
+      "categoryId": "llm",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "model-properties",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "코드 생성",
+      "titleEn": "Code Generation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5501
+    },
+    {
+      "topicId": "steerability",
+      "categoryId": "llm",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "model-properties",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "조향 가능성",
+      "titleEn": "Steerability",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5582
+    },
+    {
+      "topicId": "source-coding",
+      "categoryId": "mathematics",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "information-theory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "소스 부호화",
+      "titleEn": "Source Coding",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5698
+    },
+    {
+      "topicId": "channel-capacity",
+      "categoryId": "mathematics",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "information-theory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "채널 용량",
+      "titleEn": "Channel Capacity",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5474
+    },
+    {
+      "topicId": "data-processing-inequality",
+      "categoryId": "mathematics",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "information-theory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "데이터 처리 부등식",
+      "titleEn": "Data Processing Inequality",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5488
+    },
+    {
+      "topicId": "jensen-shannon-divergence",
+      "categoryId": "mathematics",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "information-theory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "젠슨-섀넌 발산",
+      "titleEn": "Jensen-Shannon Divergence",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5416
+    },
+    {
+      "topicId": "f-divergence",
+      "categoryId": "mathematics",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "information-theory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "F-발산",
+      "titleEn": "F-Divergence",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5357
+    },
+    {
+      "topicId": "rate-distortion-theory",
+      "categoryId": "mathematics",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "information-theory",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "율-왜곡 이론",
+      "titleEn": "Rate-Distortion Theory",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5564
+    },
+    {
+      "topicId": "floating-point-arithmetic",
+      "categoryId": "mathematics",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "numerical-methods",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "부동소수점 연산",
+      "titleEn": "Floating-Point Arithmetic",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5663
+    },
+    {
+      "topicId": "numerical-stability",
+      "categoryId": "mathematics",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "numerical-methods",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "수치 안정성",
+      "titleEn": "Numerical Stability",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5503
+    },
+    {
+      "topicId": "overflow-underflow",
+      "categoryId": "mathematics",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "numerical-methods",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "오버플로와 언더플로",
+      "titleEn": "Overflow and Underflow",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5377
+    },
+    {
+      "topicId": "condition-number",
+      "categoryId": "mathematics",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "numerical-methods",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "조건수",
+      "titleEn": "Condition Number",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "wikimedia"
+      ],
+      "bodyChars": 5542
+    },
+    {
+      "topicId": "image-to-image-generation",
+      "categoryId": "multimodal",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "이미지-이미지 생성",
+      "titleEn": "Image-to-Image Generation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5251
+    },
+    {
+      "topicId": "image-inpainting",
+      "categoryId": "multimodal",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "이미지 인페인팅",
+      "titleEn": "Image Inpainting",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5429
+    },
+    {
+      "topicId": "image-outpainting",
+      "categoryId": "multimodal",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "이미지 아웃페인팅",
+      "titleEn": "Image Outpainting",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5435
+    },
+    {
+      "topicId": "controlnet",
+      "categoryId": "multimodal",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "ControlNet",
+      "titleEn": "ControlNet",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5413
+    },
+    {
+      "topicId": "classifier-free-guidance",
+      "categoryId": "multimodal",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "분류기 없는 가이던스",
+      "titleEn": "Classifier-Free Guidance",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5298
+    },
+    {
+      "topicId": "score-based-generative-model",
+      "categoryId": "multimodal",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "점수 기반 생성 모델",
+      "titleEn": "Score-Based Generative Model",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5364
+    },
+    {
+      "topicId": "diffusion-scheduler",
+      "categoryId": "multimodal",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "확산 스케줄러",
+      "titleEn": "Diffusion Scheduler",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5429
+    },
+    {
+      "topicId": "diffusion-denoising-step",
+      "categoryId": "multimodal",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "확산 잡음 제거 단계",
+      "titleEn": "Diffusion Denoising Step",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5340
+    },
+    {
+      "topicId": "text-to-video-generation",
+      "categoryId": "multimodal",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "텍스트-비디오 생성",
+      "titleEn": "Text-to-Video Generation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5531
+    },
+    {
+      "topicId": "text-to-audio-generation",
+      "categoryId": "multimodal",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "generation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "텍스트-오디오 생성",
+      "titleEn": "Text-to-Audio Generation",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "web-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5255
+    },
+    {
+      "topicId": "label-smoothing",
+      "categoryId": "neural",
+      "rank": 74,
+      "tier": "brief",
+      "subarea": "regularization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "레이블 스무딩",
+      "titleEn": "Label Smoothing",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5515
+    },
+    {
+      "topicId": "stochastic-depth",
+      "categoryId": "neural",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "regularization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "확률적 깊이",
+      "titleEn": "Stochastic Depth",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5518
+    },
+    {
+      "topicId": "spectral-normalization",
+      "categoryId": "neural",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "regularization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "스펙트럴 정규화",
+      "titleEn": "Spectral Normalization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5300
+    },
+    {
+      "topicId": "noise-injection",
+      "categoryId": "neural",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "regularization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "잡음 주입",
+      "titleEn": "Noise Injection",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5517
+    },
+    {
+      "topicId": "max-norm-regularization",
+      "categoryId": "neural",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "regularization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "최대 노름 정규화",
+      "titleEn": "Max-Norm Regularization",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5557
+    },
+    {
+      "topicId": "mixup",
+      "categoryId": "neural",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "regularization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "Mixup",
+      "titleEn": "Mixup",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5558
+    },
+    {
+      "topicId": "cutmix",
+      "categoryId": "neural",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "regularization",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "CutMix",
+      "titleEn": "CutMix",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5430
+    },
+    {
+      "topicId": "training-loss",
+      "categoryId": "neural",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "training-diagnostics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "학습 손실",
+      "titleEn": "Training Loss",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5658
+    },
+    {
+      "topicId": "validation-loss",
+      "categoryId": "neural",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "training-diagnostics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "검증 손실",
+      "titleEn": "Validation Loss",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5451
+    },
+    {
+      "topicId": "learning-curve",
+      "categoryId": "neural",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "training-diagnostics",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "학습 곡선",
+      "titleEn": "Learning Curve",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5656
+    },
+    {
+      "topicId": "agentic-rag",
+      "categoryId": "retrieval",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "rag-pipeline",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "에이전트형 RAG",
+      "titleEn": "Agentic RAG",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5620
+    },
+    {
+      "topicId": "cross-encoder-reranker",
+      "categoryId": "retrieval",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "크로스 인코더 리랭커",
+      "titleEn": "Cross-Encoder Reranker",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5394
+    },
+    {
+      "topicId": "pointwise-ranking",
+      "categoryId": "retrieval",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "포인트와이즈 순위화",
+      "titleEn": "Pointwise Ranking",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5316
+    },
+    {
+      "topicId": "pairwise-ranking",
+      "categoryId": "retrieval",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "페어와이즈 순위화",
+      "titleEn": "Pairwise Ranking",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5318
+    },
+    {
+      "topicId": "listwise-ranking",
+      "categoryId": "retrieval",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "리스트와이즈 순위화",
+      "titleEn": "Listwise Ranking",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5336
+    },
+    {
+      "topicId": "reciprocal-rank-fusion",
+      "categoryId": "retrieval",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "역순위 결합",
+      "titleEn": "Reciprocal Rank Fusion",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5374
+    },
+    {
+      "topicId": "learning-to-rank",
+      "categoryId": "retrieval",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "순위 학습",
+      "titleEn": "Learning to Rank",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5282
+    },
+    {
+      "topicId": "relevance-score",
+      "categoryId": "retrieval",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "관련성 점수",
+      "titleEn": "Relevance Score",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5262
+    },
+    {
+      "topicId": "precision-at-k",
+      "categoryId": "retrieval",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "Precision@K",
+      "titleEn": "Precision at K",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5558
+    },
+    {
+      "topicId": "recall-at-k",
+      "categoryId": "retrieval",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "reranking-evaluation",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "Recall@K",
+      "titleEn": "Recall at K",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "academic-book",
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5457
+    },
+    {
+      "topicId": "algorithmic-contestability",
+      "categoryId": "safety",
+      "rank": 75,
+      "tier": "brief",
+      "subarea": "transparency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "알고리즘 이의제기 가능성",
+      "titleEn": "Algorithmic Contestability",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5331
+    },
+    {
+      "topicId": "nist-ai-risk-management-framework",
+      "categoryId": "safety",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "NIST AI 위험 관리 프레임워크",
+      "titleEn": "NIST AI Risk Management Framework",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5503
+    },
+    {
+      "topicId": "ai-risk-assessment",
+      "categoryId": "safety",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "AI 위험 평가",
+      "titleEn": "AI Risk Assessment",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5363
+    },
+    {
+      "topicId": "algorithmic-impact-assessment",
+      "categoryId": "safety",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "알고리즘 영향 평가",
+      "titleEn": "Algorithmic Impact Assessment",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5286
+    },
+    {
+      "topicId": "ai-risk-register",
+      "categoryId": "safety",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "AI 위험 대장",
+      "titleEn": "AI Risk Register",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5353
+    },
+    {
+      "topicId": "ai-governance-framework",
+      "categoryId": "safety",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "AI 거버넌스 프레임워크",
+      "titleEn": "AI Governance Framework",
+      "sourceCount": 7,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5503
+    },
+    {
+      "topicId": "algorithmic-audit",
+      "categoryId": "safety",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "알고리즘 감사",
+      "titleEn": "Algorithmic Audit",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5115
+    },
+    {
+      "topicId": "ai-accountability",
+      "categoryId": "safety",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "AI 책임성",
+      "titleEn": "AI Accountability",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5361
+    },
+    {
+      "topicId": "human-oversight",
+      "categoryId": "safety",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "인간 감독",
+      "titleEn": "Human Oversight",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5605
+    },
+    {
+      "topicId": "acceptable-use-policy",
+      "categoryId": "safety",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "governance-risk",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "허용 사용 정책",
+      "titleEn": "Acceptable Use Policy",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "government-standard",
+        "official-documentation",
+        "research-paper",
+        "technical-standard",
+        "wikimedia"
+      ],
+      "bodyChars": 5670
+    },
+    {
+      "topicId": "model-pruning",
+      "categoryId": "training",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "peft-compression",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 가지치기",
+      "titleEn": "Model Pruning",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5361
+    },
+    {
+      "topicId": "model-sparsity",
+      "categoryId": "training",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "peft-compression",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 희소성",
+      "titleEn": "Model Sparsity",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5313
+    },
+    {
+      "topicId": "model-merging",
+      "categoryId": "training",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "peft-compression",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 병합",
+      "titleEn": "Model Merging",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5297
+    },
+    {
+      "topicId": "task-vector",
+      "categoryId": "training",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "peft-compression",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "과제 벡터",
+      "titleEn": "Task Vector",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5498
+    },
+    {
+      "topicId": "quantization-aware-training",
+      "categoryId": "training",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "peft-compression",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "양자화 인식 학습",
+      "titleEn": "Quantization-Aware Training",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5300
+    },
+    {
+      "topicId": "data-parallelism",
+      "categoryId": "training",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "distributed-training",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "데이터 병렬화",
+      "titleEn": "Data Parallelism",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5345
+    },
+    {
+      "topicId": "model-parallelism",
+      "categoryId": "training",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "distributed-training",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "모델 병렬화",
+      "titleEn": "Model Parallelism",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5333
+    },
+    {
+      "topicId": "tensor-parallelism",
+      "categoryId": "training",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "distributed-training",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "텐서 병렬화",
+      "titleEn": "Tensor Parallelism",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5377
+    },
+    {
+      "topicId": "pipeline-parallelism",
+      "categoryId": "training",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "distributed-training",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "파이프라인 병렬화",
+      "titleEn": "Pipeline Parallelism",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5162
+    },
+    {
+      "topicId": "expert-parallelism",
+      "categoryId": "training",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "distributed-training",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "전문가 병렬화",
+      "titleEn": "Expert Parallelism",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5425
+    },
+    {
+      "topicId": "flash-attention",
+      "categoryId": "transformer",
+      "rank": 76,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "플래시 어텐션",
+      "titleEn": "FlashAttention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5578
+    },
+    {
+      "topicId": "memory-efficient-attention",
+      "categoryId": "transformer",
+      "rank": 77,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "메모리 효율적 어텐션",
+      "titleEn": "Memory-Efficient Attention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5208
+    },
+    {
+      "topicId": "attention-complexity",
+      "categoryId": "transformer",
+      "rank": 78,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "어텐션 계산 복잡도",
+      "titleEn": "Attention Complexity",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5167
+    },
+    {
+      "topicId": "chunked-attention",
+      "categoryId": "transformer",
+      "rank": 79,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "청크 어텐션",
+      "titleEn": "Chunked Attention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5595
+    },
+    {
+      "topicId": "paged-attention",
+      "categoryId": "transformer",
+      "rank": 80,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "페이지드 어텐션",
+      "titleEn": "PagedAttention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5633
+    },
+    {
+      "topicId": "block-sparse-attention",
+      "categoryId": "transformer",
+      "rank": 81,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "블록 희소 어텐션",
+      "titleEn": "Block-Sparse Attention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5422
+    },
+    {
+      "topicId": "low-rank-attention",
+      "categoryId": "transformer",
+      "rank": 82,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "저랭크 어텐션",
+      "titleEn": "Low-Rank Attention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5130
+    },
+    {
+      "topicId": "kernelized-attention",
+      "categoryId": "transformer",
+      "rank": 83,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "커널화 어텐션",
+      "titleEn": "Kernelized Attention",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5382
+    },
+    {
+      "topicId": "attention-sink",
+      "categoryId": "transformer",
+      "rank": 84,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "어텐션 싱크",
+      "titleEn": "Attention Sink",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5392
+    },
+    {
+      "topicId": "key-value-compression",
+      "categoryId": "transformer",
+      "rank": 85,
+      "tier": "brief",
+      "subarea": "efficiency",
+      "previousState": "candidate",
+      "previousStage": "research-queued",
+      "action": "create-new",
+      "titleKo": "키·값 압축",
+      "titleEn": "Key-Value Compression",
+      "sourceCount": 8,
+      "sourceFamilies": [
+        "official-documentation",
+        "research-paper",
+        "wikimedia"
+      ],
+      "bodyChars": 5671
+    }
+  ]
+}
