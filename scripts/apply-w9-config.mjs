@@ -20,7 +20,7 @@ pkg.scripts['wiki:w9:queue'] = 'node scripts/build-w9-production-queue.mjs && no
 pkg.scripts['wiki:w9:render'] = 'node scripts/check-w9-render.mjs';
 pkg.scripts.build = pkg.scripts.build
   .replace('npm run wiki:w8:validate && npm run wiki:w8:queue && npm run validate', 'npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run validate')
-  .replace('npm run wiki:w8:render && npm run sites:entry', 'npm run wiki:w8:render && npm run wiki:w9:render && npm run sites:entry');
+  .replace('npm run wiki:w8:render && npm run wiki:w24:validate', 'npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w24:validate');
 await writeFile(packageFile, `${JSON.stringify(pkg, null, 2)}\n`, 'utf8');
 
 const wikiFile = 'scripts/build-wiki.mjs';

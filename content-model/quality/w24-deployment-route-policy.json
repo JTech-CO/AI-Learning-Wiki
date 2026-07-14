@@ -2,18 +2,19 @@
   "version": "W24-2026-07-15",
   "snapshotDate": "2026-07-15",
   "purpose": "prevent the Wiki root URL from being replaced by a legal subpage during release",
-  "canonicalOrigin": "https://ai-learning-wiki.bryan131.chatgpt.site",
+  "canonicalOrigin": "https://jtech-co.github.io/AI-Learning-Wiki",
   "routes": {
-    "home": "/",
-    "privacy": "/privacy-policy/",
-    "terms": "/terms-of-use/"
+    "home": "/AI-Learning-Wiki/",
+    "privacy": "/AI-Learning-Wiki/privacy-policy/",
+    "terms": "/AI-Learning-Wiki/terms-of-use/"
   },
   "gates": {
     "homeIdentityRequired": true,
     "legalPagesSeparate": true,
     "legalPagesLinkHome": true,
     "canonicalUrlsRequired": true,
-    "workerRedirectsForbidden": true,
-    "hostingMetadataMinimal": true
+    "projectBasePathRequired": true,
+    "githubActionsDeploymentRequired": true,
+    "legacySitesConfigurationForbidden": true
   }
 }

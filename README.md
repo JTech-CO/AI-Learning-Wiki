@@ -41,7 +41,7 @@ cd AI-Learning-Wiki
 npm ci
 ```
 
-필수 환경 변수는 없습니다. 배포 환경의 canonical URL을 바꾸려면 선택적으로 `SITE_URL`을 지정할 수 있습니다.
+필수 환경 변수는 없습니다. 배포 주소를 바꾸는 경우 origin은 `SITE_URL`, 하위 경로는 `BASE_PATH`로 지정합니다. 기본 프로덕션 값은 GitHub Pages의 `https://jtech-co.github.io`와 `/AI-Learning-Wiki`입니다.
 
 ### 2. 개발 서버 실행 (Run)
 
@@ -81,8 +81,8 @@ AI-Learning-Wiki/
 
 ## 5. 정보 (Information)
 
-- **Service:** [AI Learning Wiki](https://ai-learning-wiki.bryan131.chatgpt.site/)
-- **Privacy:** [개인정보 처리방침](https://ai-learning-wiki.bryan131.chatgpt.site/privacy-policy/)
-- **Terms:** [이용약관](https://ai-learning-wiki.bryan131.chatgpt.site/terms-of-use/)
+- **Service:** [AI Learning Wiki](https://jtech-co.github.io/AI-Learning-Wiki/)
+- **Privacy:** [개인정보 처리방침](https://jtech-co.github.io/AI-Learning-Wiki/privacy-policy/)
+- **Terms:** [이용약관](https://jtech-co.github.io/AI-Learning-Wiki/terms-of-use/)
 - **License:** 별도 오픈소스 라이선스가 지정되지 않았으며, 저작권은 각 권리자에게 있습니다.
 - **Contact:** [GitHub Issues](https://github.com/JTech-CO/AI-Learning-Wiki/issues)

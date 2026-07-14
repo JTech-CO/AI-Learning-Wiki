@@ -22,5 +22,5 @@ packageJson.scripts['wiki:w10:queue'] = 'node scripts/build-w10-production-queue
 packageJson.scripts['wiki:w10:render'] = 'node scripts/check-w10-render.mjs';
 packageJson.scripts.build = packageJson.scripts.build
   .replace('npm run wiki:w9:queue && npm run validate', 'npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run validate')
-  .replace('npm run wiki:w9:render && npm run sites:entry', 'npm run wiki:w9:render && npm run wiki:w10:render && npm run sites:entry');
+  .replace('npm run wiki:w9:render && npm run wiki:w24:validate', 'npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w24:validate');
 await writeFile(packageFile, `${JSON.stringify(packageJson, null, 2)}\n`, 'utf8');

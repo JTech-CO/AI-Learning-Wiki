@@ -16,7 +16,7 @@ async function fetchJson(url, attempt = 1) {
   const response = await fetch(url, {
     headers: {
       Accept: 'application/json',
-      'User-Agent': 'AI-Learning-Wiki/0.1 (https://ai-learning-wiki.bryan131.chatgpt.site)',
+      'User-Agent': 'AI-Learning-Wiki/0.1 (https://jtech-co.github.io/AI-Learning-Wiki/)',
     },
   });
   if (response.ok) return response.json();

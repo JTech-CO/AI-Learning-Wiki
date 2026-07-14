@@ -2,6 +2,9 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve('dist');
+const configuredBase = process.env.BASE_PATH ?? '/AI-Learning-Wiki';
+const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
+const stripBase = (pathname) => pathname === basePath ? '/' : pathname.startsWith(`${basePath}/`) ? pathname.slice(basePath.length) : pathname;
 const htmlFiles = [];
 const outputFiles = new Set();
 
@@ -18,7 +21,7 @@ async function walk(dir) {
 }
 
 function hasOutput(pathname) {
-  const clean = decodeURIComponent(pathname).replace(/^\/+|\/+$/g, '');
+  const clean = decodeURIComponent(stripBase(pathname)).replace(/^\/+|\/+$/g, '');
   if (!clean) return outputFiles.has('index.html');
   if (path.extname(clean)) return outputFiles.has(clean);
   return outputFiles.has(clean) || outputFiles.has(`${clean}/index.html`) || outputFiles.has(`${clean}.html`);
@@ -30,7 +33,7 @@ let checked = 0;
 
 for (const { full, relative } of htmlFiles) {
   const html = await readFile(full, 'utf8');
-  const route = `/${relative.replace(/index\.html$/, '')}`;
+  const route = `${basePath}/${relative.replace(/index\.html$/, '')}`.replace(/\/{2,}/g, '/');
   const hrefs = [...html.matchAll(/\bhref=["']([^"']+)["']/gi)].map((match) => match[1].replaceAll('&amp;', '&'));
   for (const href of new Set(hrefs)) {
     if (/^(?:[a-z]+:|\/\/|#)/i.test(href) || href.includes('${')) continue;

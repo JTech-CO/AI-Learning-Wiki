@@ -10,6 +10,9 @@ const failures = [];
 const expect = (condition, message) => { if (!condition) failures.push(message); };
 const fileExists = async (file) => { try { return (await stat(file)).isFile(); } catch { return false; } };
 const readDist = (route) => readFile(path.join('dist', route), 'utf8');
+const configuredBase = process.env.BASE_PATH ?? '/AI-Learning-Wiki';
+const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
+const withBase = (url) => url.startsWith('/') ? `${basePath}${url}` : url;
 
 expect(prompts.prompts.length === 1173, 'prompt count: ' + prompts.prompts.length);
 expect(progress.totals?.complete === 305, 'source extraction coverage: ' + progress.totals?.complete);
@@ -43,7 +46,7 @@ for (const course of wiki.courses) {
   const courseHtml = await readDist('course/' + course.id + '/index.html');
   let cursor = -1;
   for (const step of course.steps) {
-    const position = courseHtml.indexOf('href="' + step.url + '"');
+    const position = courseHtml.indexOf('href="' + withBase(step.url) + '"');
     expect(position > cursor, 'course order mismatch: ' + course.id + ' -> ' + step.ref);
     cursor = position;
   }
@@ -52,7 +55,7 @@ for (const course of wiki.courses) {
     const current = course.steps[index];
     const next = course.steps[index + 1];
     const articleHtml = await readDist('wiki/' + current.ref + '/index.html');
-    expect(articleHtml.includes('코스에서 계속 읽기') && articleHtml.includes('href="' + next.url + '"'), 'next course article missing: ' + course.id + ' -> ' + current.ref);
+    expect(articleHtml.includes('코스에서 계속 읽기') && articleHtml.includes('href="' + withBase(next.url) + '"'), 'next course article missing: ' + course.id + ' -> ' + current.ref);
   }
 }
 

@@ -1,11 +1,15 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const siteUrl = process.env.SITE_URL ?? 'https://ai-learning-wiki.bryan131.chatgpt.site';
-const logoUrl = new URL('/logo.png', siteUrl).toString();
+const siteUrl = process.env.SITE_URL ?? 'https://jtech-co.github.io';
+const configuredBase = process.env.BASE_PATH ?? (process.argv.includes('dev') ? '/' : '/AI-Learning-Wiki');
+const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
+const withBase = (pathname) => `${basePath}${pathname}`;
+const logoUrl = new URL(withBase('/logo.png'), siteUrl).toString();
 
 export default defineConfig({
   site: siteUrl,
+  base: basePath || '/',
   devToolbar: { enabled: false },
   integrations: [
     starlight({
@@ -13,8 +17,8 @@ export default defineConfig({
       description: 'AI와 LLM을 연결해 설명하는 한국어 백과사전',
       favicon: '/logo.png',
       head: [
-        { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/logo.png' } },
-        { tag: 'link', attrs: { rel: 'manifest', href: '/site.webmanifest' } },
+        { tag: 'link', attrs: { rel: 'apple-touch-icon', href: withBase('/logo.png') } },
+        { tag: 'link', attrs: { rel: 'manifest', href: withBase('/site.webmanifest') } },
         { tag: 'meta', attrs: { name: 'theme-color', content: '#ffffff' } },
         { tag: 'meta', attrs: { property: 'og:image', content: logoUrl } },
         { tag: 'meta', attrs: { property: 'og:image:width', content: '1254' } },

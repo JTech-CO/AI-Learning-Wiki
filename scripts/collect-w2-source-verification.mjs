@@ -33,7 +33,7 @@ async function request(url, method, attempt = 1) {
   try {
     const headers = {
       Accept: 'text/html,application/xhtml+xml,application/json,application/pdf;q=0.8,*/*;q=0.5',
-      'User-Agent': 'AI-Learning-Wiki/0.1 source-metadata-audit (https://ai-learning-wiki.bryan131.chatgpt.site)',
+      'User-Agent': 'AI-Learning-Wiki/0.1 source-metadata-audit (https://jtech-co.github.io/AI-Learning-Wiki/)',
     };
     if (method === 'GET') headers.Range = 'bytes=0-0';
     const response = await fetch(url, { method, redirect: 'follow', headers, signal: controller.signal });
