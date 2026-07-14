@@ -1,0 +1,19 @@
+{
+  "version": "W24-2026-07-15",
+  "snapshotDate": "2026-07-15",
+  "purpose": "prevent the Wiki root URL from being replaced by a legal subpage during release",
+  "canonicalOrigin": "https://ai-learning-wiki.bryan131.chatgpt.site",
+  "routes": {
+    "home": "/",
+    "privacy": "/privacy-policy/",
+    "terms": "/terms-of-use/"
+  },
+  "gates": {
+    "homeIdentityRequired": true,
+    "legalPagesSeparate": true,
+    "legalPagesLinkHome": true,
+    "canonicalUrlsRequired": true,
+    "workerRedirectsForbidden": true,
+    "hostingMetadataMinimal": true
+  }
+}
