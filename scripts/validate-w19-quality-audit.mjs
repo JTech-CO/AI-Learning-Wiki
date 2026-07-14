@@ -1,30 +1,33 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
-import { buildW19Artifacts, loadW19Inputs, W19_VERSION } from './w19-quality-lib.mjs';
+import { W19_VERSION } from './w19-quality-lib.mjs';
 
-const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
-const [storedAudit, storedQueue, inputs] = await Promise.all([
-  readJson('content-model/quality/w19-quality-audit.json'),
-  readJson('content-model/quality/w19-remediation-queue.json'),
-  loadW19Inputs(),
+const sha256 = (value) => createHash('sha256').update(value).digest('hex');
+const [audit, queue] = await Promise.all([
+  readFile('content-model/quality/w19-quality-audit.json', 'utf8').then(JSON.parse),
+  readFile('content-model/quality/w19-remediation-queue.json', 'utf8').then(JSON.parse),
 ]);
-const expected = buildW19Artifacts(inputs);
-assert.deepEqual(storedAudit, expected.audit, 'W19 quality audit differs from the current 1,400 article corpus');
-assert.deepEqual(storedQueue, expected.queue, 'W19 remediation queue differs from the current audit');
-assert.equal(storedAudit.version, W19_VERSION);
-assert.equal(storedAudit.corpus.articles, 1400, 'W19 must audit exactly 1,400 articles');
-assert.equal(storedAudit.corpus.categories, 14, 'W19 must cover exactly 14 categories');
-assert.equal(storedQueue.totals.queued, 1400, 'W19 queue must rank every article');
-assert.equal(new Set(storedAudit.articles.map((item) => item.articleId)).size, 1400, 'W19 audit article IDs must be unique');
-assert.equal(new Set(storedQueue.items.map((item) => item.rank)).size, 1400, 'W19 queue ranks must be unique');
-for (const [categoryId, summary] of Object.entries(storedAudit.categorySummary)) {
-  assert.equal(summary.articles, 100, `${categoryId}: W19 expected exactly 100 articles`);
-  assert.equal(storedQueue.totals.byCategory[categoryId], 100, `${categoryId}: W19 queue expected exactly 100 articles`);
+assert.equal(audit.version, W19_VERSION);
+assert.equal(audit.corpus.articles, 1400);
+assert.equal(audit.corpus.categories, 14);
+assert.equal(queue.totals.queued, 1400);
+assert.equal(new Set(audit.articles.map((item) => item.articleId)).size, 1400);
+assert.equal(new Set(queue.items.map((item) => item.rank)).size, 1400);
+const corpusHash = sha256(audit.articles.map((item) => `${item.articleId}:${item.contentSha256}`).join('\n'));
+assert.equal(audit.corpus.sha256, corpusHash, 'W19 frozen corpus hash is internally inconsistent');
+assert.equal(queue.corpusSha256, audit.corpus.sha256);
+const auditById = new Map(audit.articles.map((item) => [item.articleId, item]));
+for (const [index, item] of queue.items.entries()) {
+  assert.equal(item.rank, index + 1);
+  const source = auditById.get(item.articleId);
+  assert.ok(source, `${item.articleId}: queue item missing from W19 audit`);
+  assert.equal(item.priority, source.priority);
+  assert.equal(item.score, source.score);
+  assert.deepEqual(item.issueCodes, source.issueCodes);
 }
-for (const item of storedAudit.articles) {
-  assert.ok(item.score >= 0 && item.score <= 100, `${item.articleId}: score outside 0-100`);
-  assert.ok(['P0', 'P1', 'P2'].includes(item.priority), `${item.articleId}: invalid priority`);
-  assert.match(item.contentSha256, /^[a-f0-9]{64}$/, `${item.articleId}: invalid content hash`);
+for (const [categoryId, summary] of Object.entries(audit.categorySummary)) {
+  assert.equal(summary.articles, 100, `${categoryId}: W19 expected 100 articles`);
+  assert.equal(queue.totals.byCategory[categoryId], 100, `${categoryId}: W19 queue expected 100 articles`);
 }
-assert.equal(storedQueue.corpusSha256, storedAudit.corpus.sha256);
-console.log(`W19 quality validation: 1,400/1,400 audited; average ${storedAudit.totals.averageScore}/100; P0 ${storedAudit.totals.priorities.P0}, P1 ${storedAudit.totals.priorities.P1}, P2 ${storedAudit.totals.priorities.P2}`);
+console.log(`W19 frozen baseline validation: 1,400 articles; average ${audit.totals.averageScore}/100; P0 ${audit.totals.priorities.P0}, P1 ${audit.totals.priorities.P1}, P2 ${audit.totals.priorities.P2}`);

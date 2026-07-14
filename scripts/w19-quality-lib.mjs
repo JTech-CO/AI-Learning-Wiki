@@ -90,7 +90,8 @@ export async function loadW19Inputs() {
   return { loaded, taxonomy };
 }
 
-export function buildW19Artifacts({ loaded, taxonomy }) {
+export function buildW19Artifacts({ loaded, taxonomy }, options = {}) {
+  const particleIssueCounter = options.particleIssueCounter ?? ((article, body) => wrongParticleCount(article, body));
   const tierById = new Map(taxonomy.topics.map((topic) => [topic.id, topic.tier]));
   const categoryById = new Map(taxonomy.topics.map((topic) => [topic.id, topic.primaryCategory]));
   const sentenceDocumentFrequency = new Map();
@@ -117,7 +118,7 @@ export function buildW19Artifacts({ loaded, taxonomy }) {
     const sourceDomains = new Set(article.sources.map((source) => normalizeDomain(source.url)));
     const primarySourceCount = article.sources.filter((source) => PRIMARY_SOURCE_TYPES.has(source.type)).length;
     const genericPhraseHits = genericPhrases.reduce((sum, phrase) => sum + occurrences(body, phrase), 0);
-    const contextualParticleErrors = wrongParticleCount(article, body);
+    const contextualParticleErrors = particleIssueCounter(article, body);
     const summaryOccurrences = occurrences(body, article.summary);
     const hangulLetters = (body.match(/[가-힣]/g) ?? []).length;
     const latinLetters = (body.match(/[A-Za-z]/g) ?? []).length;

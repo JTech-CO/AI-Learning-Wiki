@@ -1,0 +1,44 @@
+{
+  "version": "W20-2026-07-15",
+  "scope": "Korean editorial normalization for encyclopedia articles and prompt metadata",
+  "particleRules": {
+    "object": "받침 있음: 을, 받침 없음: 를",
+    "topic": "받침 있음: 은, 받침 없음: 는",
+    "subject": "받침 있음: 이, 받침 없음: 가",
+    "conjunction": "받침 있음: 과, 받침 없음: 와",
+    "direction": "받침 없음 또는 ㄹ 받침: 로, 그 밖의 받침: 으로"
+  },
+  "preferredTerms": [
+    {
+      "concept": "sampling temperature",
+      "preferred": "생성 온도",
+      "avoid": "온도 낮춤",
+      "guidance": "값의 높고 낮음과 출력 다양성·일관성의 관계를 함께 설명한다."
+    },
+    {
+      "concept": "factual response",
+      "preferred": "근거 중심 응답",
+      "avoid": "사실형",
+      "guidance": "정확성을 보장하는 모드처럼 표현하지 않고 근거 확인 절차를 명시한다."
+    },
+    {
+      "concept": "deterministic behavior",
+      "preferred": "결과 일관성 우선",
+      "avoid": "정확형",
+      "guidance": "일관성과 사실 정확도를 같은 의미로 취급하지 않는다."
+    },
+    {
+      "concept": "context window",
+      "preferred": "문맥 창",
+      "avoid": "컨텍스트 윈도우만 단독 사용",
+      "guidance": "첫 사용에서 한국어 표기와 영문 용어를 함께 제시한다."
+    }
+  ],
+  "bannedLiteralTranslations": [
+    "정확·사실형",
+    "온도 낮춤",
+    "(온도 낮춤)",
+    "정확형 모드"
+  ],
+  "semanticRewritePolicy": "자동 교정은 표제어 뒤의 문법적으로 확정 가능한 조사에 한정하며 의미 변경은 별도 근거 검토를 거친다."
+}
