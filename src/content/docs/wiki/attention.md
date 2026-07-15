@@ -108,6 +108,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [가산 어텐션](/wiki/additive-attention/)
 - [ALiBi 위치 편향](/wiki/alibi-position-bias/)
 - [어텐션 계산 복잡도](/wiki/attention-complexity/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 84개 문서 보기</summary>
+
 - [어텐션 헤드](/wiki/attention-head/)
 - [어텐션 마스크](/wiki/attention-mask/)
 - [어텐션 행렬](/wiki/attention-matrix/)
@@ -192,6 +196,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [비전 트랜스포머](/wiki/vision-transformer/)
 - [XLNet 아키텍처](/wiki/xlnet-architecture/)
 - [YaRN 스케일링](/wiki/yarn-scaling/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

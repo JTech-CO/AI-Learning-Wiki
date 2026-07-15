@@ -120,6 +120,10 @@ TP=40, FP=10, FN=20이면 정밀도 0.8, 재현율 약 0.667, F1은 약 0.727이
 - [주석자 합의도](/wiki/annotator-agreement/)
 - [주석자 편향](/wiki/annotator-bias/)
 - [주석자 피로](/wiki/annotator-fatigue/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 86개 문서 보기</summary>
+
 - [답변 관련성](/wiki/answer-relevance/)
 - [곡선 아래 면적](/wiki/area-under-curve/)
 - [자동 평가자](/wiki/automatic-rater/)
@@ -206,6 +210,8 @@ TP=40, FP=10, FN=20이면 정밀도 0.8, 재현율 약 0.667, F1은 약 0.727이
 - [사용자 피드백 수집](/wiki/user-feedback-collection/)
 - [장황성 편향](/wiki/verbosity-bias/)
 - [승률](/wiki/win-rate/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

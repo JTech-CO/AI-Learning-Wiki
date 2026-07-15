@@ -109,6 +109,10 @@ REST라는 이름만으로 일관된 스키마·보안·버전 관리가 보장�
 - [API 클라이언트](/wiki/api-client/)
 - [API 비용 추적](/wiki/api-cost-tracking/)
 - [API 지원 종료](/wiki/api-deprecation/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 86개 문서 보기</summary>
+
 - [API 엔드포인트](/wiki/api-endpoint/)
 - [API 오류 모델](/wiki/api-error-model/)
 - [API 로깅](/wiki/api-logging/)
@@ -195,6 +199,8 @@ REST라는 이름만으로 일관된 스키마·보안·버전 관리가 보장�
 - [통합 자원 식별자](/wiki/uri/)
 - [통합 자원 위치 지정자](/wiki/url/)
 - [사용량 계측](/wiki/usage-metering/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

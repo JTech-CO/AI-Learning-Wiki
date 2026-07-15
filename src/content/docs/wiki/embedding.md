@@ -147,6 +147,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [BM25](/wiki/bm25/)
 - [청크 중첩](/wiki/chunk-overlap/)
 - [청크 크기](/wiki/chunk-size/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 85개 문서 보기</summary>
+
 - [인용 생성](/wiki/citation-generation/)
 - [문맥 조립](/wiki/context-assembly/)
 - [RAG 문맥 압축](/wiki/context-compression-for-rag/)
@@ -232,6 +236,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [트리플 저장소](/wiki/triple-store/)
 - [벡터 데이터베이스](/wiki/vector-database/)
 - [벡터 인덱스](/wiki/vector-index/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

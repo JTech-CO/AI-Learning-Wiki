@@ -141,8 +141,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [행렬](/wiki/matrix/)
 - [확률분포](/wiki/probability-distribution/)
 - [소프트맥스](/wiki/softmax/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 2개 문서 보기</summary>
+
 - [생성 온도](/wiki/temperature/)
 - [텐서](/wiki/tensor/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

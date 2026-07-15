@@ -137,6 +137,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [에이전트 협업](/wiki/agent-collaboration/)
 - [에이전트 제어 루프](/wiki/agent-control-loop/)
 - [에이전트 조정](/wiki/agent-coordination/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 91개 문서 보기</summary>
+
 - [에이전트 위임](/wiki/agent-delegation/)
 - [에이전트 숙고](/wiki/agent-deliberation/)
 - [에이전트 실행기](/wiki/agent-executor/)
@@ -228,6 +232,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [작업자 에이전트](/wiki/worker-agent/)
 - [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
 - [작업 기억](/wiki/working-memory/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

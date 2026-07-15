@@ -118,6 +118,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [Adam 최적화](/wiki/adam-optimizer/)
 - [AdamW](/wiki/adamw/)
 - [적응형 그래디언트 방법](/wiki/adaptive-gradient-method/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 87개 문서 보기</summary>
+
 - [배치 정규화](/wiki/batch-normalization/)
 - [편향 항](/wiki/bias/)
 - [캡슐 네트워크](/wiki/capsule-network/)
@@ -205,6 +209,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [변분 오토인코더](/wiki/variational-autoencoder/)
 - [가중치](/wiki/weight/)
 - [가중치 감쇠](/wiki/weight-decay/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

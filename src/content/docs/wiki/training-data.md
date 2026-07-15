@@ -141,6 +141,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [보조 손실](/wiki/auxiliary-loss/)
 - [벤치마크 오염](/wiki/benchmark-contamination/)
 - [Best-of-N 표본추출](/wiki/best-of-n-sampling/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 89개 문서 보기</summary>
+
 - [브래들리-테리 모형](/wiki/bradley-terry-model/)
 - [인과 언어 모델링 목표](/wiki/causal-language-modeling-objective/)
 - [채팅 템플릿](/wiki/chat-template/)
@@ -230,6 +234,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [웹 규모 학습 데이터](/wiki/web-scale-training-data/)
 - [가중치](/wiki/weight/)
 - [ZeRO 옵티마이저](/wiki/zero-redundancy-optimizer/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

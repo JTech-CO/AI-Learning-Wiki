@@ -139,10 +139,16 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [체크포인트](/wiki/checkpoint/)
 - [데이터셋](/wiki/dataset/)
 - [임베딩](/wiki/embedding/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 4개 문서 보기</summary>
+
 - [모델 허브](/wiki/model-hub/)
 - [모델 레지스트리](/wiki/model-registry/)
 - [사전학습](/wiki/pretraining/)
 - [학습 데이터](/wiki/training-data/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

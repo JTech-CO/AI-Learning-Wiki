@@ -149,6 +149,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [수락 제어](/wiki/admission-control/)
 - [사전 컴파일](/wiki/ahead-of-time-compilation/)
 - [백프레셔](/wiki/backpressure/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 87개 문서 보기</summary>
+
 - [배치 추론](/wiki/batch-inference/)
 - [빔 탐색](/wiki/beam-search/)
 - [캐시 축출](/wiki/cache-eviction/)
@@ -236,6 +240,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [웜 스타트](/wiki/warm-start/)
 - [가중치 전용 양자화](/wiki/weight-only-quantization/)
 - [XLA 컴파일러](/wiki/xla-compiler/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

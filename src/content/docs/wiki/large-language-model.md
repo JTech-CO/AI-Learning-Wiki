@@ -109,6 +109,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [시작·종료 토큰](/wiki/beginning-end-token/)
 - [바이트 단위 토큰화](/wiki/byte-level-tokenization/)
 - [인과 언어 모델](/wiki/causal-language-model/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 83개 문서 보기</summary>
+
 - [사고 과정 프롬프팅](/wiki/chain-of-thought-prompting/)
 - [문자 단위 토큰화](/wiki/character-tokenization/)
 - [코드 생성](/wiki/code-generation/)
@@ -192,6 +196,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [WordPiece](/wiki/wordpiece/)
 - [세계 모델](/wiki/world-model/)
 - [제로샷 프롬프팅](/wiki/zero-shot-prompting/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

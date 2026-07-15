@@ -105,6 +105,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [AI 가속기](/wiki/ai-accelerator/)
 - [AI 탄소 발자국](/wiki/ai-carbon-footprint/)
 - [AI 칩 가용성](/wiki/ai-chip-availability/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 92개 문서 보기</summary>
+
 - [AI 데이터센터](/wiki/ai-datacenter/)
 - [AI 에너지 소비](/wiki/ai-energy-consumption/)
 - [AI 상호운용성 표준](/wiki/ai-interoperability-standard/)
@@ -197,6 +201,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [학습 비용](/wiki/training-cost/)
 - [Transformers 라이브러리](/wiki/transformers-library/)
 - [W3C 웹 머신러닝](/wiki/w3c-web-machine-learning/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

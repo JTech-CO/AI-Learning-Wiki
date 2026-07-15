@@ -144,6 +144,10 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 - [에이전트 협업](/wiki/agent-collaboration/)
 - [에이전트 제어 루프](/wiki/agent-control-loop/)
 - [에이전트 조정](/wiki/agent-coordination/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 86개 문서 보기</summary>
+
 - [에이전트 위임](/wiki/agent-delegation/)
 - [에이전트 숙고](/wiki/agent-deliberation/)
 - [에이전트 실행기](/wiki/agent-executor/)
@@ -230,6 +234,8 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 - [검증 에이전트](/wiki/verifier-agent/)
 - [작업자 에이전트](/wiki/worker-agent/)
 - [작업 기억](/wiki/working-memory/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

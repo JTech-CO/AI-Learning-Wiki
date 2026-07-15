@@ -145,6 +145,10 @@ _해당 문서가 없습니다._
 - [주석자 합의도](/wiki/annotator-agreement/)
 - [주석자 편향](/wiki/annotator-bias/)
 - [주석자 피로](/wiki/annotator-fatigue/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 93개 문서 보기</summary>
+
 - [답변 관련성](/wiki/answer-relevance/)
 - [곡선 아래 면적](/wiki/area-under-curve/)
 - [자동 평가자](/wiki/automatic-rater/)
@@ -238,6 +242,8 @@ _해당 문서가 없습니다._
 - [사용자 피드백 수집](/wiki/user-feedback-collection/)
 - [장황성 편향](/wiki/verbosity-bias/)
 - [승률](/wiki/win-rate/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

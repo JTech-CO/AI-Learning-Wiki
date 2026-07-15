@@ -145,6 +145,10 @@ _해당 문서가 없습니다._
 - [인공지능 시스템](/wiki/ai-system/)
 - [인공지능 겨울](/wiki/ai-winter/)
 - [이상 탐지](/wiki/anomaly-detection/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 84개 문서 보기</summary>
+
 - [범용 인공지능](/wiki/artificial-general-intelligence/)
 - [오토인코더](/wiki/autoencoder/)
 - [배깅](/wiki/bagging/)
@@ -229,6 +233,8 @@ _해당 문서가 없습니다._
 - [과소적합](/wiki/underfitting/)
 - [검증 데이터셋](/wiki/validation-set/)
 - [제로샷 학습](/wiki/zero-shot-learning/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

@@ -141,8 +141,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [F1 점수](/wiki/f1-score/)
 - [모델](/wiki/model/)
 - [강화학습](/wiki/reinforcement-learning/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 2개 문서 보기</summary>
+
 - [합성 데이터](/wiki/synthetic-data/)
 - [학습 데이터](/wiki/training-data/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

@@ -41,6 +41,15 @@ for (const dir of ['wiki', 'category', 'course', 'special']) {
 
 const q = (value) => JSON.stringify(value);
 const list = (refs) => refs.length ? refs.map((ref) => `- [${byId.get(ref)?.title ?? ref}](/wiki/${ref}/)`).join('\n') : '_해당 문서가 없습니다._';
+const backlinkList = (refs) => {
+  const uniqueRefs = [...new Set(refs)].sort();
+  const visible = uniqueRefs.slice(0, 5);
+  const hidden = uniqueRefs.slice(5);
+  const visibleList = list(visible);
+  if (!hidden.length) return visibleList;
+
+  return `${visibleList}\n\n<details class="wiki-backlinks-more">\n<summary>나머지 ${hidden.length}개 문서 보기</summary>\n\n${list(hidden)}\n\n</details>`;
+};
 const sectionEvidence = (section) => section.sourceRefs?.length ? `\n\n<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> ${section.sourceRefs.map((ref) => `<a href="#reference-${ref}">[${ref}]</a>`).join(' ')}</div>` : '';
 const courseContinuation = (article) => courseMap.get(article.id).map((courseId) => {
   const course = courses.find((item) => item.id === courseId);
@@ -58,7 +67,7 @@ for (const article of articles) {
   const aliasBlock = aliases.length ? `<p class="wiki-alias">${aliases.join(' · ')}</p>\n\n` : '';
   const categoryLinks = article.categories.map((category) => `[${CATEGORY_META[category]?.[0] ?? category}](/category/${category}/)`).join(' · ');
   const courseLinks = courseMap.get(article.id).map((id) => `[${courses.find((course) => course.id === id)?.title ?? id}](/course/${id}/)`).join(' · ');
-  const body = `---\ntitle: ${q(displayTitle)}\ndescription: ${q(article.summary)}\ntableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }\n---\n\n${aliasBlock}<p class="wiki-lead">${article.summary}</p>\n\n<div class="wiki-document-meta">분류: ${categoryLinks} · 문서 상태: ${publicationReady.has(article.id) ? '문장 단위 근거 검토 완료' : '출처 검토 완료'} · 최근 검토: ${article.reviewedAt}</div>\n\n${article.sections.map((section) => `## ${section.title}\n\n${section.body}${sectionEvidence(section)}`).join('\n\n')}\n\n## 선행 개념\n\n${list(article.prerequisites)}\n\n## 관련 문서\n\n${list(article.related)}\n\n## 이 문서를 가리키는 문서\n\n${list([...new Set(backlinks.get(article.id))].sort())}\n\n## 이 문서를 포함하는 코스\n\n${courseLinks || '_포함된 코스가 없습니다._'}\n\n<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>\n\n## 참고 문헌\n\n${article.sources.map((source, index) => `${hasSectionEvidence ? `<span id="reference-${index + 1}"></span>` : ''}${index + 1}. [${source.title}](${source.url}) — ${source.type}`).join('\n')}\n\n## 코스에서 계속 읽기\n\n${courseContinuation(article)}\n`;
+  const body = `---\ntitle: ${q(displayTitle)}\ndescription: ${q(article.summary)}\ntableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }\n---\n\n${aliasBlock}<p class="wiki-lead">${article.summary}</p>\n\n<div class="wiki-document-meta">분류: ${categoryLinks} · 문서 상태: ${publicationReady.has(article.id) ? '문장 단위 근거 검토 완료' : '출처 검토 완료'} · 최근 검토: ${article.reviewedAt}</div>\n\n${article.sections.map((section) => `## ${section.title}\n\n${section.body}${sectionEvidence(section)}`).join('\n\n')}\n\n## 선행 개념\n\n${list(article.prerequisites)}\n\n## 관련 문서\n\n${list(article.related)}\n\n## 이 문서를 가리키는 문서\n\n${backlinkList(backlinks.get(article.id))}\n\n## 이 문서를 포함하는 코스\n\n${courseLinks || '_포함된 코스가 없습니다._'}\n\n<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>\n\n## 참고 문헌\n\n${article.sources.map((source, index) => `${hasSectionEvidence ? `<span id="reference-${index + 1}"></span>` : ''}${index + 1}. [${source.title}](${source.url}) — ${source.type}`).join('\n')}\n\n## 코스에서 계속 읽기\n\n${courseContinuation(article)}\n`;
   await writeFile(path.join(docs, 'wiki', `${article.id}.md`), body, 'utf8');
 }
 

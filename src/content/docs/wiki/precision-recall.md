@@ -118,6 +118,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [주석 판정](/wiki/annotation-adjudication/)
 - [주석자 합의도](/wiki/annotator-agreement/)
 - [주석자 편향](/wiki/annotator-bias/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 91개 문서 보기</summary>
+
 - [주석자 피로](/wiki/annotator-fatigue/)
 - [답변 관련성](/wiki/answer-relevance/)
 - [곡선 아래 면적](/wiki/area-under-curve/)
@@ -209,6 +213,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [사용자 피드백 수집](/wiki/user-feedback-collection/)
 - [장황성 편향](/wiki/verbosity-bias/)
 - [승률](/wiki/win-rate/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

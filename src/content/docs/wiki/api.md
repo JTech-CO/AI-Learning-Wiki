@@ -143,6 +143,10 @@ _해당 문서가 없습니다._
 - [API 비용 추적](/wiki/api-cost-tracking/)
 - [API 지원 종료](/wiki/api-deprecation/)
 - [API 엔드포인트](/wiki/api-endpoint/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 88개 문서 보기</summary>
+
 - [API 오류 모델](/wiki/api-error-model/)
 - [API 로깅](/wiki/api-logging/)
 - [API 페이지네이션](/wiki/api-pagination/)
@@ -231,6 +235,8 @@ _해당 문서가 없습니다._
 - [통합 자원 식별자](/wiki/uri/)
 - [통합 자원 위치 지정자](/wiki/url/)
 - [사용량 계측](/wiki/usage-metering/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

@@ -108,6 +108,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [적대적 예시](/wiki/adversarial-example/)
 - [적대적 테스트](/wiki/adversarial-testing/)
 - [AI 책임성](/wiki/ai-accountability/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 91개 문서 보기</summary>
+
 - [AI 준수 모니터링](/wiki/ai-compliance-monitoring/)
 - [AI 통제 문제](/wiki/ai-control-problem/)
 - [AI 사용 고지](/wiki/ai-disclosure/)
@@ -199,6 +203,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [제3자 AI 위험](/wiki/third-party-ai-risk/)
 - [학습 데이터 오염](/wiki/training-data-poisoning/)
 - [불확실성 소통](/wiki/uncertainty-communication/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

@@ -108,6 +108,10 @@ ReLU·시그모이드·GELU는 출력 범위와 기울기 특성이 달라 층�
 - [Adam 최적화](/wiki/adam-optimizer/)
 - [AdamW](/wiki/adamw/)
 - [적응형 그래디언트 방법](/wiki/adaptive-gradient-method/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 89개 문서 보기</summary>
+
 - [역전파](/wiki/backpropagation/)
 - [배치 정규화](/wiki/batch-normalization/)
 - [편향 항](/wiki/bias/)
@@ -197,6 +201,8 @@ ReLU·시그모이드·GELU는 출력 범위와 기울기 특성이 달라 층�
 - [그래디언트 소실](/wiki/vanishing-gradient/)
 - [변분 오토인코더](/wiki/variational-autoencoder/)
 - [가중치 감쇠](/wiki/weight-decay/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

@@ -120,8 +120,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [언어 모델](/wiki/language-model/)
 - [전문가 혼합](/wiki/mixture-of-experts/)
 - [프롬프트](/wiki/prompt/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 2개 문서 보기</summary>
+
 - [소프트맥스](/wiki/softmax/)
 - [생성 온도](/wiki/temperature/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

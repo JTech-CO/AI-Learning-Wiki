@@ -141,7 +141,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [HTTP 응답](/wiki/http-response/)
 - [JSON](/wiki/json/)
 - [스트리밍 응답](/wiki/streaming-response/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 1개 문서 보기</summary>
+
 - [구조화 출력](/wiki/structured-output/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

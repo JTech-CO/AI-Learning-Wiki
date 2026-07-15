@@ -105,6 +105,10 @@ _해당 문서가 없습니다._
 - [가산 어텐션](/wiki/additive-attention/)
 - [ALiBi 위치 편향](/wiki/alibi-position-bias/)
 - [어텐션](/wiki/attention/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 81개 문서 보기</summary>
+
 - [어텐션 계산 복잡도](/wiki/attention-complexity/)
 - [어텐션 헤드](/wiki/attention-head/)
 - [어텐션 마스크](/wiki/attention-mask/)
@@ -186,6 +190,8 @@ _해당 문서가 없습니다._
 - [비전 트랜스포머](/wiki/vision-transformer/)
 - [XLNet 아키텍처](/wiki/xlnet-architecture/)
 - [YaRN 스케일링](/wiki/yarn-scaling/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

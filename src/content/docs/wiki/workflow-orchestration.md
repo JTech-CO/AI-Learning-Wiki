@@ -118,8 +118,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 - [모델 레지스트리](/wiki/model-registry/)
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [ReAct 에이전트](/wiki/react-agent/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 2개 문서 보기</summary>
+
 - [상태 관리](/wiki/state-management/)
 - [기호주의 인공지능](/wiki/symbolic-ai/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

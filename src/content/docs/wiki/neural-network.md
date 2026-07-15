@@ -145,6 +145,10 @@ _해당 문서가 없습니다._
 - [Adam 최적화](/wiki/adam-optimizer/)
 - [AdamW](/wiki/adamw/)
 - [적응형 그래디언트 방법](/wiki/adaptive-gradient-method/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 89개 문서 보기</summary>
+
 - [배치 정규화](/wiki/batch-normalization/)
 - [캡슐 네트워크](/wiki/capsule-network/)
 - [계산 그래프](/wiki/computational-graph/)
@@ -234,6 +238,8 @@ _해당 문서가 없습니다._
 - [그래디언트 소실](/wiki/vanishing-gradient/)
 - [변분 오토인코더](/wiki/variational-autoencoder/)
 - [가중치 감쇠](/wiki/weight-decay/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

@@ -105,6 +105,10 @@ _해당 문서가 없습니다._
 - [오디오 임베딩](/wiki/audio-embedding/)
 - [오디오 모델](/wiki/audio-model/)
 - [오디오 토큰](/wiki/audio-token/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 90개 문서 보기</summary>
+
 - [분류기 없는 가이던스](/wiki/classifier-free-guidance/)
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [콘텐츠 출처 증명](/wiki/content-provenance/)
@@ -195,6 +199,8 @@ _해당 문서가 없습니다._
 - [음성 활동 탐지](/wiki/voice-activity-detection/)
 - [세계 시뮬레이션 모델](/wiki/world-simulation-model/)
 - [제로샷 이미지 분류](/wiki/zero-shot-image-classification/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

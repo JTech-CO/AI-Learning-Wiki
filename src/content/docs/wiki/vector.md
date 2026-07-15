@@ -145,6 +145,10 @@ _해당 문서가 없습니다._
 - [자동 미분](/wiki/automatic-differentiation/)
 - [기저 벡터](/wiki/basis-vector/)
 - [베이즈 정리](/wiki/bayes-theorem/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 91개 문서 보기</summary>
+
 - [부트스트랩 방법](/wiki/bootstrap-method/)
 - [중심극한정리](/wiki/central-limit-theorem/)
 - [연쇄 법칙](/wiki/chain-rule/)
@@ -236,6 +240,8 @@ _해당 문서가 없습니다._
 - [벡터 노름](/wiki/vector-norm/)
 - [벡터 사영](/wiki/vector-projection/)
 - [벡터 공간](/wiki/vector-space/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 

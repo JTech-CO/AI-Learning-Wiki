@@ -107,6 +107,10 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [API 비용 추적](/wiki/api-cost-tracking/)
 - [API 지원 종료](/wiki/api-deprecation/)
 - [API 엔드포인트](/wiki/api-endpoint/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 89개 문서 보기</summary>
+
 - [API 오류 모델](/wiki/api-error-model/)
 - [API 키](/wiki/api-key/)
 - [API 로깅](/wiki/api-logging/)
@@ -196,6 +200,8 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 - [통합 자원 식별자](/wiki/uri/)
 - [통합 자원 위치 지정자](/wiki/url/)
 - [사용량 계측](/wiki/usage-metering/)
+
+</details>
 
 ## 이 문서를 포함하는 코스
 
