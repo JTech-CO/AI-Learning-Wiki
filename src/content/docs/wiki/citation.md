@@ -132,8 +132,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [청킹](/wiki/chunking/)
 - [근거화](/wiki/grounding/)
+- [청킹](/wiki/chunking/)
 
 ## 이 문서를 포함하는 코스
 

@@ -136,9 +136,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [AI 거버넌스](/wiki/ai-governance/)
-- [콘텐츠 조정](/wiki/content-moderation/)
 - [개인정보 보호](/wiki/privacy/)
+- [콘텐츠 조정](/wiki/content-moderation/)
+- [AI 거버넌스](/wiki/ai-governance/)
 
 ## 이 문서를 포함하는 코스
 

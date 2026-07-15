@@ -136,9 +136,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [에이전트 루프](/wiki/agent-loop/)
 - [계획](/wiki/planning/)
 - [상태 관리](/wiki/state-management/)
+- [에이전트 루프](/wiki/agent-loop/)
 
 ## 이 문서를 포함하는 코스
 

@@ -145,9 +145,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [바이트 페어 인코딩](/wiki/byte-pair-encoding/)
+- [어휘 집합](/wiki/vocabulary/)
 - [토큰](/wiki/token/)
 - [토큰화](/wiki/tokenization/)
-- [어휘 집합](/wiki/vocabulary/)
 
 ## 이 문서를 포함하는 코스
 

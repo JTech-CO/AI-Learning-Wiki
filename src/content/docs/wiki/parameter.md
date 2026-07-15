@@ -136,16 +136,16 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [하이퍼파라미터](/wiki/hyperparameter/)
+- [가중치](/wiki/weight/)
 - [대규모 언어 모델](/wiki/large-language-model/)
-- [스칼라](/wiki/scalar/)
 - [소규모 언어 모델](/wiki/small-language-model/)
+- [스칼라](/wiki/scalar/)
 - [토큰](/wiki/token/)
 
 <details class="wiki-backlinks-more">
 <summary>나머지 1개 문서 보기</summary>
 
-- [가중치](/wiki/weight/)
+- [하이퍼파라미터](/wiki/hyperparameter/)
 
 </details>
 

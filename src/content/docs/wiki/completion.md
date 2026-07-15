@@ -144,8 +144,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [컨텍스트 윈도우](/wiki/context-window/)
 - [전문가 혼합](/wiki/mixture-of-experts/)
+- [컨텍스트 윈도우](/wiki/context-window/)
 - [프롬프트](/wiki/prompt/)
 
 ## 이 문서를 포함하는 코스

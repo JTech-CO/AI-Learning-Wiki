@@ -144,10 +144,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)
 - [검색 증강 생성](/wiki/rag/)
-- [의미 검색](/wiki/semantic-search/)
+- [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)
 - [벡터 데이터베이스](/wiki/vector-database/)
+- [의미 검색](/wiki/semantic-search/)
 
 ## 이 문서를 포함하는 코스
 

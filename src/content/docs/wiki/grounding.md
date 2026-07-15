@@ -134,9 +134,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [청킹](/wiki/chunking/)
-- [인용](/wiki/citation/)
 - [리랭커](/wiki/reranker/)
+- [인용](/wiki/citation/)
+- [청킹](/wiki/chunking/)
 
 ## 이 문서를 포함하는 코스
 

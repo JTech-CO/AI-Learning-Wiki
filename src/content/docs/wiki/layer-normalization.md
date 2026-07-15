@@ -135,8 +135,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [인과 마스크](/wiki/causal-mask/)
-- [피드포워드 네트워크](/wiki/feed-forward-network/)
 - [잔차 연결](/wiki/residual-connection/)
+- [피드포워드 네트워크](/wiki/feed-forward-network/)
 
 ## 이 문서를 포함하는 코스
 

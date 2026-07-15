@@ -134,8 +134,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [배치](/wiki/batch/)
 - [경사하강법](/wiki/gradient-descent/)
+- [배치](/wiki/batch/)
 - [학습률](/wiki/learning-rate/)
 
 ## 이 문서를 포함하는 코스

@@ -103,8 +103,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [신경망 층](/wiki/layer/)
 - [신경망](/wiki/neural-network/)
+- [신경망 층](/wiki/layer/)
 
 ## 이 문서를 포함하는 코스
 

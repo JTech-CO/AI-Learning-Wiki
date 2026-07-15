@@ -146,8 +146,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [바이트 페어 인코딩](/wiki/byte-pair-encoding/)
 - [컨텍스트 윈도우](/wiki/context-window/)
-- [토큰화](/wiki/tokenization/)
 - [토크나이저](/wiki/tokenizer/)
+- [토큰화](/wiki/tokenization/)
 
 ## 이 문서를 포함하는 코스
 

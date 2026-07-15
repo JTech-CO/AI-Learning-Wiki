@@ -102,8 +102,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [추론](/wiki/inference/)
 - [소프트맥스](/wiki/softmax/)
+- [추론](/wiki/inference/)
 
 ## 이 문서를 포함하는 코스
 

@@ -113,10 +113,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [AI 정렬](/wiki/alignment/)
-- [체크포인트](/wiki/checkpoint/)
 - [데이터 증강](/wiki/data-augmentation/)
 - [양자화](/wiki/quantization/)
+- [체크포인트](/wiki/checkpoint/)
+- [AI 정렬](/wiki/alignment/)
 
 ## 이 문서를 포함하는 코스
 

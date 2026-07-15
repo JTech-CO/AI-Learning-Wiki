@@ -137,9 +137,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [빔 탐색](/wiki/beam-search/)
-- [KV 캐시](/wiki/kv-cache/)
 - [지연 시간](/wiki/latency/)
 - [처리량](/wiki/throughput/)
+- [KV 캐시](/wiki/kv-cache/)
 
 ## 이 문서를 포함하는 코스
 

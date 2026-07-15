@@ -132,8 +132,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [인간 참여형 제어](/wiki/human-in-the-loop/)
 - [모델 컨텍스트 프로토콜](/wiki/mcp/)
+- [인간 참여형 제어](/wiki/human-in-the-loop/)
 
 ## 이 문서를 포함하는 코스
 

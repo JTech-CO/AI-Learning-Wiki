@@ -104,9 +104,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [데이터셋](/wiki/dataset/)
+- [비지도학습](/wiki/unsupervised-learning/)
 - [자기지도학습](/wiki/self-supervised-learning/)
 - [학습 데이터](/wiki/training-data/)
-- [비지도학습](/wiki/unsupervised-learning/)
 
 ## 이 문서를 포함하는 코스
 

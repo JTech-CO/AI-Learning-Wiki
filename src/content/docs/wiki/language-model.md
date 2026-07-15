@@ -142,11 +142,11 @@ n-그램과 작은 전용 모델은 제한된 어휘와 낮은 지연, 해석 �
 
 ## 이 문서를 가리키는 문서
 
-- [임베딩 모델](/wiki/embedding-model/)
-- [대규모 언어 모델](/wiki/large-language-model/)
 - [다음 토큰 예측](/wiki/next-token-prediction/)
+- [대규모 언어 모델](/wiki/large-language-model/)
 - [소규모 언어 모델](/wiki/small-language-model/)
 - [음성 인식](/wiki/speech-recognition/)
+- [임베딩 모델](/wiki/embedding-model/)
 
 ## 이 문서를 포함하는 코스
 

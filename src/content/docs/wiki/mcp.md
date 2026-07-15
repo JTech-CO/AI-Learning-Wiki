@@ -103,9 +103,9 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 ## 이 문서를 가리키는 문서
 
-- [인간 참여형 제어](/wiki/human-in-the-loop/)
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [웹훅](/wiki/webhook/)
+- [인간 참여형 제어](/wiki/human-in-the-loop/)
 
 ## 이 문서를 포함하는 코스
 

@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [역전파](/wiki/backpropagation/)
-- [에포크](/wiki/epoch/)
-- [학습률](/wiki/learning-rate/)
 - [손실 함수](/wiki/loss-function/)
+- [에포크](/wiki/epoch/)
+- [역전파](/wiki/backpropagation/)
+- [학습률](/wiki/learning-rate/)
 
 ## 이 문서를 포함하는 코스
 

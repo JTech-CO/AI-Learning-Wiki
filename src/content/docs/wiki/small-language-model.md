@@ -113,10 +113,10 @@ SLM도 토큰 시퀀스의 조건부 확률을 학습하지만 층 수, 은닉 �
 
 ## 이 문서를 가리키는 문서
 
-- [하이퍼파라미터](/wiki/hyperparameter/)
-- [언어 모델](/wiki/language-model/)
 - [대규모 언어 모델](/wiki/large-language-model/)
+- [언어 모델](/wiki/language-model/)
 - [파라미터](/wiki/parameter/)
+- [하이퍼파라미터](/wiki/hyperparameter/)
 
 ## 이 문서를 포함하는 코스
 

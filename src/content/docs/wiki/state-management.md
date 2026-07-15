@@ -136,9 +136,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [에이전트 메모리](/wiki/agent-memory/)
-- [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [계획](/wiki/planning/)
+- [멀티 에이전트 시스템](/wiki/multi-agent-system/)
+- [에이전트 메모리](/wiki/agent-memory/)
 - [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
 
 ## 이 문서를 포함하는 코스

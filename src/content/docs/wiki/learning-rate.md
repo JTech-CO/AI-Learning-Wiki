@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [역전파](/wiki/backpropagation/)
+- [경사하강법](/wiki/gradient-descent/)
 - [배치](/wiki/batch/)
 - [에포크](/wiki/epoch/)
-- [경사하강법](/wiki/gradient-descent/)
+- [역전파](/wiki/backpropagation/)
 
 ## 이 문서를 포함하는 코스
 

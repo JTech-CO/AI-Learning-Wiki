@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [가중치](/wiki/weight/)
+- [소규모 언어 모델](/wiki/small-language-model/)
 - [지식 증류](/wiki/knowledge-distillation/)
 - [파라미터 효율적 미세조정](/wiki/peft/)
-- [소규모 언어 모델](/wiki/small-language-model/)
-- [가중치](/wiki/weight/)
 
 ## 이 문서를 포함하는 코스
 

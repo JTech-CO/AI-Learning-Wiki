@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)
-- [청킹](/wiki/chunking/)
 - [검색 증강 생성](/wiki/rag/)
+- [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)
 - [리랭커](/wiki/reranker/)
+- [청킹](/wiki/chunking/)
 
 ## 이 문서를 포함하는 코스
 

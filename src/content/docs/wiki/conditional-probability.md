@@ -136,8 +136,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [미분](/wiki/derivative/)
 - [기울기](/wiki/gradient/)
+- [미분](/wiki/derivative/)
 - [확률](/wiki/probability/)
 - [확률분포](/wiki/probability-distribution/)
 

@@ -138,9 +138,9 @@ KV 캐시가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판
 
 ## 이 문서를 가리키는 문서
 
+- [그리디 디코딩](/wiki/greedy-decoding/)
 - [배칭](/wiki/batching/)
 - [빔 탐색](/wiki/beam-search/)
-- [그리디 디코딩](/wiki/greedy-decoding/)
 - [지연 시간](/wiki/latency/)
 
 ## 이 문서를 포함하는 코스

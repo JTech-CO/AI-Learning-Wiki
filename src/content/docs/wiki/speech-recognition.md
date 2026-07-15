@@ -103,10 +103,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [확산 모델](/wiki/diffusion-model/)
-- [이미지 생성](/wiki/image-generation/)
 - [광학 문자 인식](/wiki/ocr/)
 - [음성 합성](/wiki/text-to-speech/)
+- [이미지 생성](/wiki/image-generation/)
+- [확산 모델](/wiki/diffusion-model/)
 
 ## 이 문서를 포함하는 코스
 

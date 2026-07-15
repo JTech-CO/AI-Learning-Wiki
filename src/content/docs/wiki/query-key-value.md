@@ -155,10 +155,10 @@ KV 캐시를 구현할 때 배치에서 끝난 요청의 블록이 다른 요청
 
 ## 이 문서를 가리키는 문서
 
-- [크로스 어텐션](/wiki/cross-attention/)
 - [멀티헤드 어텐션](/wiki/multi-head-attention/)
-- [위치 인코딩](/wiki/positional-encoding/)
 - [셀프 어텐션](/wiki/self-attention/)
+- [위치 인코딩](/wiki/positional-encoding/)
+- [크로스 어텐션](/wiki/cross-attention/)
 
 ## 이 문서를 포함하는 코스
 

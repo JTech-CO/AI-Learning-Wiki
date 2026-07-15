@@ -136,16 +136,16 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [구조화 출력](/wiki/structured-output/)
+- [스트리밍 응답](/wiki/streaming-response/)
 - [API 키](/wiki/api-key/)
 - [HTTP 메서드](/wiki/http-method/)
 - [HTTP 응답](/wiki/http-response/)
-- [JSON](/wiki/json/)
-- [스트리밍 응답](/wiki/streaming-response/)
 
 <details class="wiki-backlinks-more">
 <summary>나머지 1개 문서 보기</summary>
 
-- [구조화 출력](/wiki/structured-output/)
+- [JSON](/wiki/json/)
 
 </details>
 

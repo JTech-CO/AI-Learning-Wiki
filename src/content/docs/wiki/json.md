@@ -158,9 +158,9 @@ JSON의 정의, 작동 단계, 입력과 출력, 필요한 데이터, 계산 비
 
 ## 이 문서를 가리키는 문서
 
+- [요청 한도](/wiki/rate-limit/)
 - [API 키](/wiki/api-key/)
 - [HTTP 요청](/wiki/http-request/)
-- [요청 한도](/wiki/rate-limit/)
 - [SDK](/wiki/sdk/)
 
 ## 이 문서를 포함하는 코스

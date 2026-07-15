@@ -138,10 +138,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [직접 선호 최적화](/wiki/dpo/)
-- [지시 튜닝](/wiki/instruction-tuning/)
 - [보상 모델](/wiki/reward-model/)
 - [지도 미세조정](/wiki/supervised-fine-tuning/)
+- [지시 튜닝](/wiki/instruction-tuning/)
+- [직접 선호 최적화](/wiki/dpo/)
 
 ## 이 문서를 포함하는 코스
 

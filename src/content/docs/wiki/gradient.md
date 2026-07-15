@@ -136,8 +136,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [조건부확률](/wiki/conditional-probability/)
 - [미분](/wiki/derivative/)
+- [조건부확률](/wiki/conditional-probability/)
 - [최적화](/wiki/optimization/)
 - [확률분포](/wiki/probability-distribution/)
 

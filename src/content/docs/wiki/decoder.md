@@ -137,9 +137,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [디코더 전용 모델](/wiki/decoder-only-model/)
+- [위치 인코딩](/wiki/positional-encoding/)
 - [인코더](/wiki/encoder/)
 - [인코더-디코더](/wiki/encoder-decoder/)
-- [위치 인코딩](/wiki/positional-encoding/)
 
 ## 이 문서를 포함하는 코스
 

@@ -114,9 +114,9 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 ## 이 문서를 가리키는 문서
 
 - [밀집 임베딩](/wiki/dense-embedding/)
-- [임베딩](/wiki/embedding/)
-- [의미 검색](/wiki/semantic-search/)
 - [벡터 데이터베이스](/wiki/vector-database/)
+- [의미 검색](/wiki/semantic-search/)
+- [임베딩](/wiki/embedding/)
 
 ## 이 문서를 포함하는 코스
 

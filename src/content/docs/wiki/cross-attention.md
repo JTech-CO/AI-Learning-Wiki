@@ -111,10 +111,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [어텐션](/wiki/attention/)
 - [멀티헤드 어텐션](/wiki/multi-head-attention/)
-- [쿼리·키·값](/wiki/query-key-value/)
 - [셀프 어텐션](/wiki/self-attention/)
+- [어텐션](/wiki/attention/)
+- [쿼리·키·값](/wiki/query-key-value/)
 
 ## 이 문서를 포함하는 코스
 

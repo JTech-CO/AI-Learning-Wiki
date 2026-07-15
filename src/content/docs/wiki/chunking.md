@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [인용](/wiki/citation/)
+- [검색기](/wiki/retriever/)
 - [근거화](/wiki/grounding/)
 - [리랭커](/wiki/reranker/)
-- [검색기](/wiki/retriever/)
+- [인용](/wiki/citation/)
 
 ## 이 문서를 포함하는 코스
 

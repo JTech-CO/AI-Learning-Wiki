@@ -103,10 +103,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [하이퍼파라미터](/wiki/hyperparameter/)
-- [토큰](/wiki/token/)
-- [토크나이저](/wiki/tokenizer/)
 - [어휘 집합](/wiki/vocabulary/)
+- [토크나이저](/wiki/tokenizer/)
+- [토큰](/wiki/token/)
+- [하이퍼파라미터](/wiki/hyperparameter/)
 
 ## 이 문서를 포함하는 코스
 

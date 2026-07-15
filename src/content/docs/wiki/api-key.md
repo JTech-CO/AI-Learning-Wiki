@@ -136,9 +136,9 @@ API 키가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판�
 
 ## 이 문서를 가리키는 문서
 
-- [JSON](/wiki/json/)
-- [요청 한도](/wiki/rate-limit/)
 - [스트리밍 응답](/wiki/streaming-response/)
+- [요청 한도](/wiki/rate-limit/)
+- [JSON](/wiki/json/)
 
 ## 이 문서를 포함하는 코스
 

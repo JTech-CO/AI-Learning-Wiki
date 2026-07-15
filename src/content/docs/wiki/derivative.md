@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [조건부확률](/wiki/conditional-probability/)
-- [코사인 유사도](/wiki/cosine-similarity/)
 - [기울기](/wiki/gradient/)
+- [조건부확률](/wiki/conditional-probability/)
 - [최적화](/wiki/optimization/)
+- [코사인 유사도](/wiki/cosine-similarity/)
 
 ## 이 문서를 포함하는 코스
 

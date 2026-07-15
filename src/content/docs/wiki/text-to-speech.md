@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [확산 모델](/wiki/diffusion-model/)
-- [멀티모달 임베딩](/wiki/multimodal-embedding/)
 - [광학 문자 인식](/wiki/ocr/)
+- [멀티모달 임베딩](/wiki/multimodal-embedding/)
 - [음성 인식](/wiki/speech-recognition/)
+- [확산 모델](/wiki/diffusion-model/)
 
 ## 이 문서를 포함하는 코스
 

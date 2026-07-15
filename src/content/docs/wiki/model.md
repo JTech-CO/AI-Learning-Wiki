@@ -134,19 +134,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [AI 에이전트](/wiki/ai-agent/)
-- [알고리즘](/wiki/algorithm/)
-- [체크포인트](/wiki/checkpoint/)
 - [데이터셋](/wiki/dataset/)
-- [임베딩](/wiki/embedding/)
+- [모델 레지스트리](/wiki/model-registry/)
+- [모델 허브](/wiki/model-hub/)
+- [사전학습](/wiki/pretraining/)
+- [알고리즘](/wiki/algorithm/)
 
 <details class="wiki-backlinks-more">
 <summary>나머지 4개 문서 보기</summary>
 
-- [모델 허브](/wiki/model-hub/)
-- [모델 레지스트리](/wiki/model-registry/)
-- [사전학습](/wiki/pretraining/)
+- [임베딩](/wiki/embedding/)
+- [체크포인트](/wiki/checkpoint/)
 - [학습 데이터](/wiki/training-data/)
+- [AI 에이전트](/wiki/ai-agent/)
 
 </details>
 

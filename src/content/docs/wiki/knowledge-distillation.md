@@ -136,9 +136,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [LoRA](/wiki/lora/)
-- [파라미터 효율적 미세조정](/wiki/peft/)
 - [양자화](/wiki/quantization/)
+- [파라미터 효율적 미세조정](/wiki/peft/)
+- [LoRA](/wiki/lora/)
 
 ## 이 문서를 포함하는 코스
 

@@ -136,17 +136,17 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [조건부확률](/wiki/conditional-probability/)
-- [언어 모델](/wiki/language-model/)
-- [행렬](/wiki/matrix/)
-- [확률분포](/wiki/probability-distribution/)
+- [생성 온도](/wiki/temperature/)
 - [소프트맥스](/wiki/softmax/)
+- [언어 모델](/wiki/language-model/)
+- [조건부확률](/wiki/conditional-probability/)
+- [텐서](/wiki/tensor/)
 
 <details class="wiki-backlinks-more">
 <summary>나머지 2개 문서 보기</summary>
 
-- [생성 온도](/wiki/temperature/)
-- [텐서](/wiki/tensor/)
+- [행렬](/wiki/matrix/)
+- [확률분포](/wiki/probability-distribution/)
 
 </details>
 

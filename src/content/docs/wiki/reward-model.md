@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [직접 선호 최적화](/wiki/dpo/)
-- [지시 튜닝](/wiki/instruction-tuning/)
-- [LoRA](/wiki/lora/)
 - [인간 피드백 기반 강화학습](/wiki/rlhf/)
+- [지시 튜닝](/wiki/instruction-tuning/)
+- [직접 선호 최적화](/wiki/dpo/)
+- [LoRA](/wiki/lora/)
 
 ## 이 문서를 포함하는 코스
 

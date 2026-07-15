@@ -113,16 +113,16 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [추론](/wiki/inference/)
-- [로짓](/wiki/logit/)
-- [행렬 곱셈](/wiki/matrix-multiplication/)
 - [다음 토큰 예측](/wiki/next-token-prediction/)
+- [로짓](/wiki/logit/)
+- [생성 온도](/wiki/temperature/)
+- [추론](/wiki/inference/)
 - [쿼리·키·값](/wiki/query-key-value/)
 
 <details class="wiki-backlinks-more">
 <summary>나머지 2개 문서 보기</summary>
 
-- [생성 온도](/wiki/temperature/)
+- [행렬 곱셈](/wiki/matrix-multiplication/)
 - [Top-k 샘플링](/wiki/top-k-sampling/)
 
 </details>

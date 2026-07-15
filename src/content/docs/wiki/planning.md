@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [상태 관리](/wiki/state-management/)
 - [에이전트 루프](/wiki/agent-loop/)
 - [에이전트 메모리](/wiki/agent-memory/)
 - [AI 에이전트](/wiki/ai-agent/)
-- [상태 관리](/wiki/state-management/)
 
 ## 이 문서를 포함하는 코스
 

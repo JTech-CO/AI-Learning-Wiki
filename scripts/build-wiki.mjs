@@ -41,8 +41,16 @@ for (const dir of ['wiki', 'category', 'course', 'special']) {
 
 const q = (value) => JSON.stringify(value);
 const list = (refs) => refs.length ? refs.map((ref) => `- [${byId.get(ref)?.title ?? ref}](/wiki/${ref}/)`).join('\n') : '_해당 문서가 없습니다._';
+const backlinkTitle = (ref) => byId.get(ref)?.title ?? ref;
+const backlinkTitleGroup = (ref) => /^[가-힣]/u.test(backlinkTitle(ref).trim()) ? 0 : /^[A-Za-z]/.test(backlinkTitle(ref).trim()) ? 1 : 2;
+const compareBacklinks = (leftRef, rightRef) => {
+  const groupDifference = backlinkTitleGroup(leftRef) - backlinkTitleGroup(rightRef);
+  if (groupDifference) return groupDifference;
+  const locale = backlinkTitleGroup(leftRef) === 0 ? 'ko' : 'en';
+  return backlinkTitle(leftRef).localeCompare(backlinkTitle(rightRef), locale, { numeric: true, sensitivity: 'base' });
+};
 const backlinkList = (refs) => {
-  const uniqueRefs = [...new Set(refs)].sort();
+  const uniqueRefs = [...new Set(refs)].sort(compareBacklinks);
   const visible = uniqueRefs.slice(0, 5);
   const hidden = uniqueRefs.slice(5);
   const visibleList = list(visible);

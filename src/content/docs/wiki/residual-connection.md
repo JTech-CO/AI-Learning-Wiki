@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [인과 마스크](/wiki/causal-mask/)
 - [디코더 전용 모델](/wiki/decoder-only-model/)
-- [피드포워드 네트워크](/wiki/feed-forward-network/)
 - [레이어 정규화](/wiki/layer-normalization/)
+- [인과 마스크](/wiki/causal-mask/)
+- [피드포워드 네트워크](/wiki/feed-forward-network/)
 
 ## 이 문서를 포함하는 코스
 

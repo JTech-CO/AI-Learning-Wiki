@@ -138,10 +138,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [직접 선호 최적화](/wiki/dpo/)
-- [지식 증류](/wiki/knowledge-distillation/)
-- [LoRA](/wiki/lora/)
 - [양자화](/wiki/quantization/)
+- [지식 증류](/wiki/knowledge-distillation/)
+- [직접 선호 최적화](/wiki/dpo/)
+- [LoRA](/wiki/lora/)
 
 ## 이 문서를 포함하는 코스
 

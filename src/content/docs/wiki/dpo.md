@@ -138,10 +138,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [LoRA](/wiki/lora/)
-- [파라미터 효율적 미세조정](/wiki/peft/)
 - [보상 모델](/wiki/reward-model/)
 - [인간 피드백 기반 강화학습](/wiki/rlhf/)
+- [파라미터 효율적 미세조정](/wiki/peft/)
+- [LoRA](/wiki/lora/)
 
 ## 이 문서를 포함하는 코스
 

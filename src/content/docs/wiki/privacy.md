@@ -134,11 +134,11 @@ AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리
 
 ## 이 문서를 가리키는 문서
 
-- [AI 거버넌스](/wiki/ai-governance/)
-- [편향과 공정성](/wiki/bias-fairness/)
-- [콘텐츠 조정](/wiki/content-moderation/)
 - [가드레일](/wiki/guardrail/)
+- [콘텐츠 조정](/wiki/content-moderation/)
+- [편향과 공정성](/wiki/bias-fairness/)
 - [합성 데이터](/wiki/synthetic-data/)
+- [AI 거버넌스](/wiki/ai-governance/)
 
 ## 이 문서를 포함하는 코스
 

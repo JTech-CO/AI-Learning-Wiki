@@ -145,9 +145,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [강화학습](/wiki/reinforcement-learning/)
+- [비지도학습](/wiki/unsupervised-learning/)
 - [지도학습](/wiki/supervised-learning/)
 - [학습 데이터](/wiki/training-data/)
-- [비지도학습](/wiki/unsupervised-learning/)
 
 ## 이 문서를 포함하는 코스
 

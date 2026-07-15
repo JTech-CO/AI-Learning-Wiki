@@ -134,10 +134,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
+- [기울기](/wiki/gradient/)
+- [미분](/wiki/derivative/)
 - [체크포인트](/wiki/checkpoint/)
 - [코사인 유사도](/wiki/cosine-similarity/)
-- [미분](/wiki/derivative/)
-- [기울기](/wiki/gradient/)
 
 ## 이 문서를 포함하는 코스
 

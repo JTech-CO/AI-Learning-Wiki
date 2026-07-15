@@ -132,8 +132,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [LLM 심사자](/wiki/llm-as-a-judge/)
 - [관측성](/wiki/observability/)
+- [LLM 심사자](/wiki/llm-as-a-judge/)
 
 ## 이 문서를 포함하는 코스
 

@@ -148,8 +148,8 @@ Top-k 샘플링의 정의, 작동 단계, 입력과 출력, 필요한 데이터,
 
 - [그리디 디코딩](/wiki/greedy-decoding/)
 - [다음 토큰 예측](/wiki/next-token-prediction/)
-- [소프트맥스](/wiki/softmax/)
 - [생성 온도](/wiki/temperature/)
+- [소프트맥스](/wiki/softmax/)
 - [Top-p 샘플링](/wiki/top-p-sampling/)
 
 ## 이 문서를 포함하는 코스

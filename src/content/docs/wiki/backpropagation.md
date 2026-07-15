@@ -136,10 +136,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [활성화 함수](/wiki/activation-function/)
 - [경사하강법](/wiki/gradient-descent/)
-- [학습률](/wiki/learning-rate/)
 - [손실 함수](/wiki/loss-function/)
+- [학습률](/wiki/learning-rate/)
+- [활성화 함수](/wiki/activation-function/)
 
 ## 이 문서를 포함하는 코스
 

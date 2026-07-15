@@ -136,10 +136,10 @@ LoRA의 구현을 비교할 때는 입력 스키마와 자료형, 중간 산출�
 
 ## 이 문서를 가리키는 문서
 
-- [직접 선호 최적화](/wiki/dpo/)
-- [지식 증류](/wiki/knowledge-distillation/)
-- [파라미터 효율적 미세조정](/wiki/peft/)
 - [보상 모델](/wiki/reward-model/)
+- [지식 증류](/wiki/knowledge-distillation/)
+- [직접 선호 최적화](/wiki/dpo/)
+- [파라미터 효율적 미세조정](/wiki/peft/)
 
 ## 이 문서를 포함하는 코스
 

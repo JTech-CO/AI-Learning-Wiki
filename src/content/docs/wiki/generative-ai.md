@@ -140,8 +140,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 - [딥러닝](/wiki/deep-learning/)
 - [머신러닝](/wiki/machine-learning/)
-- [지도학습](/wiki/supervised-learning/)
 - [비지도학습](/wiki/unsupervised-learning/)
+- [지도학습](/wiki/supervised-learning/)
 
 ## 이 문서를 포함하는 코스
 

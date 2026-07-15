@@ -137,9 +137,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [디코더](/wiki/decoder/)
-- [인코더-디코더](/wiki/encoder-decoder/)
 - [멀티헤드 어텐션](/wiki/multi-head-attention/)
 - [위치 인코딩](/wiki/positional-encoding/)
+- [인코더-디코더](/wiki/encoder-decoder/)
 
 ## 이 문서를 포함하는 코스
 

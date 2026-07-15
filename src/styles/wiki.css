@@ -131,3 +131,27 @@ a:hover { text-decoration: underline; }
 .wiki-section-sources span { margin-right: .25rem; font-weight: 600; }
 .wiki-section-sources a { margin-right: .18rem; }
 [id^="reference-"] { scroll-margin-top: 5.5rem; }
+
+.wiki-backlinks-more { margin-top: .65rem; }
+.sl-markdown-content .wiki-backlinks-more > summary {
+  color: #202122 !important;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sl-markdown-content .wiki-backlinks-more > ul {
+  columns: 4;
+  column-gap: 1.5rem;
+  margin-top: .65rem;
+  padding-left: 1.2rem;
+}
+.sl-markdown-content .wiki-backlinks-more > ul > li {
+  break-inside: avoid;
+  margin: .12rem 0;
+}
+
+@media (max-width: 40rem) {
+  .sl-markdown-content .wiki-backlinks-more > ul { columns: 2; }
+}
+@media (max-width: 28rem) {
+  .sl-markdown-content .wiki-backlinks-more > ul { columns: 1; }
+}

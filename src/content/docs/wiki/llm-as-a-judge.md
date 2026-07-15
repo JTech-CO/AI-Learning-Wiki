@@ -136,9 +136,9 @@ LLM 심사자가 잘 작동하는 조건만 나열하면 실제 적용 범위를
 
 ## 이 문서를 가리키는 문서
 
-- [정확도](/wiki/accuracy/)
 - [관측성](/wiki/observability/)
 - [정밀도와 재현율](/wiki/precision-recall/)
+- [정확도](/wiki/accuracy/)
 - [추적](/wiki/tracing/)
 
 ## 이 문서를 포함하는 코스

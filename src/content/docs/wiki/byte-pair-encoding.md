@@ -146,10 +146,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [컨텍스트 윈도우](/wiki/context-window/)
-- [프롬프트](/wiki/prompt/)
-- [토크나이저](/wiki/tokenizer/)
 - [어휘 집합](/wiki/vocabulary/)
+- [컨텍스트 윈도우](/wiki/context-window/)
+- [토크나이저](/wiki/tokenizer/)
+- [프롬프트](/wiki/prompt/)
 
 ## 이 문서를 포함하는 코스
 

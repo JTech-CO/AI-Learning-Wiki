@@ -144,10 +144,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [활성화 함수](/wiki/activation-function/)
+- [경사하강법](/wiki/gradient-descent/)
 - [역전파](/wiki/backpropagation/)
 - [편향 항](/wiki/bias/)
-- [경사하강법](/wiki/gradient-descent/)
+- [활성화 함수](/wiki/activation-function/)
 
 ## 이 문서를 포함하는 코스
 

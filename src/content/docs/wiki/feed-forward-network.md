@@ -137,8 +137,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [디코더 전용 모델](/wiki/decoder-only-model/)
-- [인코더-디코더](/wiki/encoder-decoder/)
 - [레이어 정규화](/wiki/layer-normalization/)
+- [인코더-디코더](/wiki/encoder-decoder/)
 - [잔차 연결](/wiki/residual-connection/)
 
 ## 이 문서를 포함하는 코스

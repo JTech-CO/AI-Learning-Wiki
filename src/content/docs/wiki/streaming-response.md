@@ -136,11 +136,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [API 키](/wiki/api-key/)
-- [HTTP 응답](/wiki/http-response/)
-- [요청 한도](/wiki/rate-limit/)
 - [구조화 출력](/wiki/structured-output/)
 - [도구 호출](/wiki/tool-calling/)
+- [요청 한도](/wiki/rate-limit/)
+- [API 키](/wiki/api-key/)
+- [HTTP 응답](/wiki/http-response/)
 
 ## 이 문서를 포함하는 코스
 

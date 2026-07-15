@@ -103,8 +103,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [배칭](/wiki/batching/)
 - [그리디 디코딩](/wiki/greedy-decoding/)
+- [배칭](/wiki/batching/)
 - [KV 캐시](/wiki/kv-cache/)
 - [Top-p 샘플링](/wiki/top-p-sampling/)
 

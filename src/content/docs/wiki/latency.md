@@ -135,8 +135,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 ## 이 문서를 가리키는 문서
 
 - [배칭](/wiki/batching/)
-- [KV 캐시](/wiki/kv-cache/)
 - [처리량](/wiki/throughput/)
+- [KV 캐시](/wiki/kv-cache/)
 
 ## 이 문서를 포함하는 코스
 

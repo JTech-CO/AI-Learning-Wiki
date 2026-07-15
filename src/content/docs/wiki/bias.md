@@ -144,9 +144,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 가리키는 문서
 
-- [활성화 함수](/wiki/activation-function/)
-- [신경망 층](/wiki/layer/)
 - [손실 함수](/wiki/loss-function/)
+- [신경망 층](/wiki/layer/)
+- [활성화 함수](/wiki/activation-function/)
 
 ## 이 문서를 포함하는 코스
 
