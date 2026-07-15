@@ -5,7 +5,7 @@ import { countParticleIssues } from './w20-korean-lib.mjs';
 import { countArticleDuplicateBlocks, sha256 } from './w21-duplicate-lib.mjs';
 import { buildW23DepthRemediation, buildW23QualityArtifacts, W23_VERSION } from './w23-quality-lib.mjs';
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
-const [baselineAudit, baselineDepth, report, storedAudit, storedQueue, storedDepth, policy, inputs] = await Promise.all([
+const [baselineAudit, baselineDepth, report, storedAudit, storedQueue, storedDepth, policy, languageAudit, inputs] = await Promise.all([
   readJson('content-model/quality/w22-quality-audit.json'),
   readJson('content-model/quality/w22-depth-remediation.json'),
   readJson('content-model/quality/w23-restoration-report.json'),
@@ -13,6 +13,7 @@ const [baselineAudit, baselineDepth, report, storedAudit, storedQueue, storedDep
   readJson('content-model/quality/w23-remediation-queue.json'),
   readJson('content-model/quality/w23-depth-remediation.json'),
   readJson('content-model/quality/w23-restoration-policy.json'),
+  readJson('content-model/evidence/w36-language-audit.json'),
   loadW19Inputs(),
 ]);
 const expected = buildW23QualityArtifacts(inputs, baselineAudit);
@@ -33,6 +34,8 @@ for (const item of baselineDepth.items.filter((entry) => entry.origin === 'dedup
   if (!current || item.deficitCharacters < current.deficitCharacters || (item.deficitCharacters === current.deficitCharacters && item.articleId.localeCompare(current.articleId) < 0)) expectedByCategory.set(item.categoryId, item);
 }
 const reportById = new Map(report.changes.map((item) => [item.articleId, item]));
+const languageAuditIds = new Set(languageAudit.ledgers.flatMap((ledger) => ledger.articleIds));
+assert.equal(languageAuditIds.size, 93);
 for (const change of report.changes) {
   assert.equal(change.articleId, expectedByCategory.get(change.categoryId)?.articleId);
   assert.equal(change.beforeHash, baselineById.get(change.articleId)?.contentSha256);
@@ -43,8 +46,9 @@ for (const { article, raw } of inputs.loaded) {
   assert.equal(countArticleDuplicateBlocks(article).total, 0, `${article.id}: duplicate paragraph`);
   assert.equal(countParticleIssues(article).total, 0, `${article.id}: contextual particle issue`);
   const changed = sha256(raw) !== baselineById.get(article.id).contentSha256;
-  assert.equal(reportById.has(article.id), changed, `${article.id}: report/corpus mismatch`);
-  if (changed) assert.equal(reportById.get(article.id).afterHash, sha256(raw));
+  const auditedChange = reportById.has(article.id) || languageAuditIds.has(article.id);
+  assert.equal(auditedChange, changed, `${article.id}: report/audit/corpus mismatch`);
+  if (reportById.has(article.id)) assert.equal(reportById.get(article.id).afterHash, sha256(raw));
 }
 assert.equal(report.currentCorpusSha256, storedAudit.corpus.sha256);
 assert.equal(policy.rules.automaticFillerAllowed, false);

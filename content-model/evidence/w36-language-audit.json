@@ -1,0 +1,218 @@
+{
+  "version": "W36-2026-07-16",
+  "reviewedAt": "2026-07-16",
+  "reviewType": "editorial-terminology-only",
+  "scope": {
+    "articleSourcesReviewed": 1400,
+    "articleSourcesChanged": 93,
+    "lockedLedgerArticlesUpdated": 93,
+    "lockedClaimUnitsRehashed": 195
+  },
+  "editorialPolicy": [
+    "문장의 사실 주장, 출처 연결, 판정과 분류는 변경하지 않는다.",
+    "직역 표현만 문맥에 맞는 한국어 기술 용어로 교정한다.",
+    "문장 경계와 근거 배열을 유지하고 바뀐 문장의 해시만 다시 잠근다."
+  ],
+  "preservedFields": [
+    "classification",
+    "decision",
+    "evidence",
+    "sourceRef",
+    "locator",
+    "claimId"
+  ],
+  "terminology": {
+    "판단 문턱": "판단 기준점 또는 문맥별 허용·출시 기준",
+    "건조 실행": "모의 실행",
+    "출력 소비자": "출력이 사용되는 지점",
+    "API 소비자": "클라이언트(단, 소비자 주도 계약은 정착 용어로 유지)",
+    "호출 흔적": "호출 기록",
+    "새 연산을 내기": "새 기능을 출시하기"
+  },
+  "ledgers": [
+    {
+      "milestone": "W4",
+      "articleCount": 3,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "inference",
+        "api",
+        "evaluation"
+      ]
+    },
+    {
+      "milestone": "W5",
+      "articleCount": 2,
+      "claimUnitsUpdated": 2,
+      "articleIds": [
+        "artificial-intelligence",
+        "ai-agent"
+      ]
+    },
+    {
+      "milestone": "W6",
+      "articleCount": 1,
+      "claimUnitsUpdated": 1,
+      "articleIds": [
+        "pretraining"
+      ]
+    },
+    {
+      "milestone": "W9",
+      "articleCount": 1,
+      "claimUnitsUpdated": 1,
+      "articleIds": [
+        "perceive-plan-act-cycle"
+      ]
+    },
+    {
+      "milestone": "W10",
+      "articleCount": 11,
+      "claimUnitsUpdated": 21,
+      "articleIds": [
+        "win-rate",
+        "membership-inference",
+        "model-inversion",
+        "insecure-output-handling",
+        "excessive-agency",
+        "ai-supply-chain-vulnerability",
+        "sensitive-information-disclosure",
+        "model-denial-of-service",
+        "prompt-leakage",
+        "rag-poisoning",
+        "ai-safety"
+      ]
+    },
+    {
+      "milestone": "W11",
+      "articleCount": 10,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "ai-misuse",
+        "dual-use-ai",
+        "catastrophic-ai-risk",
+        "deceptive-alignment",
+        "goal-misgeneralization",
+        "specification-gaming",
+        "reward-tampering",
+        "corrigibility",
+        "scalable-oversight",
+        "capability-control"
+      ]
+    },
+    {
+      "milestone": "W12",
+      "articleCount": 10,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "ai-control-problem",
+        "emergent-misalignment",
+        "alignment-tax",
+        "personally-identifiable-information",
+        "anonymization",
+        "pseudonymization",
+        "differential-privacy",
+        "data-minimization",
+        "data-retention",
+        "right-to-deletion"
+      ]
+    },
+    {
+      "milestone": "W13",
+      "articleCount": 10,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "data-consent",
+        "federated-analytics",
+        "secure-aggregation",
+        "privacy-attack",
+        "memorized-data-extraction",
+        "confidential-computing",
+        "privacy-audit",
+        "algorithmic-bias",
+        "data-bias",
+        "representation-bias"
+      ]
+    },
+    {
+      "milestone": "W14",
+      "articleCount": 10,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "measurement-bias",
+        "selection-bias",
+        "historical-bias",
+        "demographic-parity",
+        "equalized-odds",
+        "equality-of-opportunity",
+        "disparate-impact",
+        "fairness-through-unawareness",
+        "intersectional-fairness",
+        "fairness-metric"
+      ]
+    },
+    {
+      "milestone": "W15",
+      "articleCount": 10,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "bias-mitigation",
+        "explainable-ai",
+        "ai-interpretability",
+        "model-transparency",
+        "model-card",
+        "datasheet-for-datasets",
+        "system-card",
+        "ai-disclosure",
+        "decision-provenance",
+        "uncertainty-communication"
+      ]
+    },
+    {
+      "milestone": "W16",
+      "articleCount": 10,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "algorithmic-contestability",
+        "nist-ai-risk-management-framework",
+        "ai-risk-assessment",
+        "algorithmic-impact-assessment",
+        "ai-risk-register",
+        "ai-governance-framework",
+        "algorithmic-audit",
+        "ai-accountability",
+        "human-oversight",
+        "acceptable-use-policy"
+      ]
+    },
+    {
+      "milestone": "W17",
+      "articleCount": 10,
+      "claimUnitsUpdated": 20,
+      "articleIds": [
+        "ai-policy-enforcement",
+        "ai-compliance-monitoring",
+        "ai-regulatory-classification",
+        "ai-incident-reporting",
+        "third-party-ai-risk",
+        "ai-red-teaming",
+        "adversarial-testing",
+        "ai-threat-modeling",
+        "abuse-testing",
+        "llm-penetration-testing"
+      ]
+    },
+    {
+      "milestone": "W18",
+      "articleCount": 5,
+      "claimUnitsUpdated": 10,
+      "articleIds": [
+        "safety-evaluation",
+        "ai-incident-response",
+        "coordinated-vulnerability-disclosure",
+        "ai-security-monitoring",
+        "defense-in-depth-for-ai"
+      ]
+    }
+  ]
+}
