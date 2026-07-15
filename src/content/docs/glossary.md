@@ -87,7 +87,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="covariance"><a href="/wiki/covariance/">공분산</a><span class="wiki-en">Covariance</span></li>
 <li data-article-id="shared-agent-memory"><a href="/wiki/shared-agent-memory/">공유 에이전트 메모리</a><span class="wiki-en">Shared Agent Memory</span></li>
 <li data-article-id="fairness-metric"><a href="/wiki/fairness-metric/">공정성 지표</a><span class="wiki-en">Fairness Metric</span></li>
-<li data-article-id="no-free-lunch-theorem"><a href="/wiki/no-free-lunch-theorem/">공짜 점심 없음 정리</a><span class="wiki-en">No Free Lunch Theorem</span></li>
+<li data-article-id="no-free-lunch-theorem"><a href="/wiki/no-free-lunch-theorem/">공짜 점심 없음 정리</a><span class="wiki-en">No Free Lunch Theorem (NFTL)</span></li>
 <li data-article-id="excessive-agency"><a href="/wiki/excessive-agency/">과도한 자율성</a><span class="wiki-en">Excessive Agency</span></li>
 <li data-article-id="underfitting"><a href="/wiki/underfitting/">과소적합</a><span class="wiki-en">Underfitting</span></li>
 <li data-article-id="overfitting"><a href="/wiki/overfitting/">과적합</a><span class="wiki-en">Overfitting</span></li>

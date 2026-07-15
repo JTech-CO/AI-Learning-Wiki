@@ -22,7 +22,7 @@ description: "인공지능의 범위와 기본 학습 방식"
 <li data-article-id="computational-intelligence"><a href="/wiki/computational-intelligence/">계산지능</a><span class="wiki-index-summary">계산지능은 신경망, 진화 계산, 퍼지 시스템처럼 적응과 근사 계산을 활용해 복잡한 문제를 푸는 접근 계열이다.</span></li>
 <li data-article-id="hierarchical-clustering"><a href="/wiki/hierarchical-clustering/">계층적 군집화</a><span class="wiki-index-summary">계층적 군집화는 데이터 집단을 단계적으로 합치거나 나누어 중첩된 군집 관계를 덴드로그램으로 표현하는 방법이다.</span></li>
 <li data-article-id="good-old-fashioned-ai"><a href="/wiki/good-old-fashioned-ai/">고전적 인공지능</a><span class="wiki-index-summary">명시적인 기호, 논리, 규칙, 탐색과 지식 표현을 중심으로 한 고전적 인공지능 연구 전통을 가리키는 표현이다.</span></li>
-<li data-article-id="no-free-lunch-theorem"><a href="/wiki/no-free-lunch-theorem/">공짜 점심 없음 정리</a><span class="wiki-index-summary">무공짜 점심 정리는 모든 가능한 문제 분포를 평균하면 어떤 학습 알고리즘도 다른 알고리즘보다 항상 우월할 수 없다는 결과다.</span></li>
+<li data-article-id="no-free-lunch-theorem"><a href="/wiki/no-free-lunch-theorem/">공짜 점심 없음 정리</a><span class="wiki-index-summary">공짜 점심 없음 정리는 모든 가능한 문제 분포를 평균하면 어떤 학습 알고리즘도 다른 알고리즘보다 항상 우월할 수 없다는 결과다.</span></li>
 <li data-article-id="underfitting"><a href="/wiki/underfitting/">과소적합</a><span class="wiki-index-summary">과소적합은 모델이 학습 데이터의 주요 구조조차 충분히 표현하거나 최적화하지 못해 학습과 평가 오차가 모두 큰 상태다.</span></li>
 <li data-article-id="overfitting"><a href="/wiki/overfitting/">과적합</a><span class="wiki-index-summary">과적합은 모델이 학습 데이터의 우연한 세부와 잡음까지 맞춰 새 데이터에서 성능이 떨어지는 상태다.</span></li>
 <li data-article-id="clustering"><a href="/wiki/clustering/">군집화</a><span class="wiki-index-summary">군집화는 정답 레이블 없이 유사한 데이터가 같은 집단에 모이도록 구조를 찾는 비지도학습 과제다.</span></li>

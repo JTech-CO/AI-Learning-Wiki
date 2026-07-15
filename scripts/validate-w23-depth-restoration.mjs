@@ -35,7 +35,7 @@ for (const item of baselineDepth.items.filter((entry) => entry.origin === 'dedup
 }
 const reportById = new Map(report.changes.map((item) => [item.articleId, item]));
 const languageAuditIds = new Set(languageAudit.ledgers.flatMap((ledger) => ledger.articleIds));
-assert.equal(languageAuditIds.size, 93);
+assert.equal(languageAuditIds.size, 94);
 for (const change of report.changes) {
   assert.equal(change.articleId, expectedByCategory.get(change.categoryId)?.articleId);
   assert.equal(change.beforeHash, baselineById.get(change.articleId)?.contentSha256);

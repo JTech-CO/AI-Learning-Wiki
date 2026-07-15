@@ -89,7 +89,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="covariance"><a href="/wiki/covariance/">공분산</a><span class="wiki-index-summary">공분산은 두 확률변수가 각자의 평균에서 같은 방향 또는 반대 방향으로 함께 변하는 정도를 나타낸 값이다.</span></li>
 <li data-article-id="shared-agent-memory"><a href="/wiki/shared-agent-memory/">공유 에이전트 메모리</a><span class="wiki-index-summary">공유 에이전트 메모리는 여러 에이전트가 공동으로 읽거나 갱신하는 사실, 작업 상태와 경험 저장소다.</span></li>
 <li data-article-id="fairness-metric"><a href="/wiki/fairness-metric/">공정성 지표</a><span class="wiki-index-summary">공정성 지표는 집단 또는 개인 사이의 예측 결과와 오류 차이를 특정 규범 기준으로 수치화한 측정값이다.</span></li>
-<li data-article-id="no-free-lunch-theorem"><a href="/wiki/no-free-lunch-theorem/">공짜 점심 없음 정리</a><span class="wiki-index-summary">무공짜 점심 정리는 모든 가능한 문제 분포를 평균하면 어떤 학습 알고리즘도 다른 알고리즘보다 항상 우월할 수 없다는 결과다.</span></li>
+<li data-article-id="no-free-lunch-theorem"><a href="/wiki/no-free-lunch-theorem/">공짜 점심 없음 정리</a><span class="wiki-index-summary">공짜 점심 없음 정리는 모든 가능한 문제 분포를 평균하면 어떤 학습 알고리즘도 다른 알고리즘보다 항상 우월할 수 없다는 결과다.</span></li>
 <li data-article-id="excessive-agency"><a href="/wiki/excessive-agency/">과도한 자율성</a><span class="wiki-index-summary">과도한 자율성은 AI 시스템에 필요한 범위를 넘는 기능, 권한 또는 독립 실행 능력을 부여해 피해 가능성이 커지는 위험이다.</span></li>
 <li data-article-id="underfitting"><a href="/wiki/underfitting/">과소적합</a><span class="wiki-index-summary">과소적합은 모델이 학습 데이터의 주요 구조조차 충분히 표현하거나 최적화하지 못해 학습과 평가 오차가 모두 큰 상태다.</span></li>
 <li data-article-id="overfitting"><a href="/wiki/overfitting/">과적합</a><span class="wiki-index-summary">과적합은 모델이 학습 데이터의 우연한 세부와 잡음까지 맞춰 새 데이터에서 성능이 떨어지는 상태다.</span></li>
