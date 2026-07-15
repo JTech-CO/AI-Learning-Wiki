@@ -17,9 +17,9 @@ description: "텍스트와 이미지·음성·영상을 함께 다루는 모델"
 <li data-article-id="joint-embedding-space"><a href="/wiki/joint-embedding-space/">공동 임베딩 공간</a><span class="wiki-index-summary">공동 임베딩 공간은 서로 다른 모달리티의 의미적으로 대응하는 항목을 비교할 수 있도록 같은 벡터 공간에 배치한 표현 체계다.</span></li>
 <li data-article-id="ocr"><a href="/wiki/ocr/">광학 문자 인식</a><span class="wiki-index-summary">이미지 속 글자의 위치와 내용을 판독해 텍스트로 변환하는 기술이다.</span></li>
 <li data-article-id="optical-flow"><a href="/wiki/optical-flow/">광학 흐름</a><span class="wiki-index-summary">광학 흐름은 연속 영상 프레임 사이에서 각 화소가 이동한 방향과 크기를 추정한 벡터장이다.</span></li>
-<li data-article-id="interleaved-multimodal-data"><a href="/wiki/interleaved-multimodal-data/">교차 배열 멀티모달 데이터</a><span class="wiki-index-summary">교차 배치 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다.</span></li>
-<li data-article-id="cross-modal-attention"><a href="/wiki/cross-modal-attention/">교차모달 어텐션</a><span class="wiki-index-summary">교차 모달 어텐션은 한 모달리티의 표현을 질의로, 다른 모달리티의 표현을 키와 값으로 사용해 관련 정보를 선택하는 연산이다.</span></li>
-<li data-article-id="cross-modal-alignment"><a href="/wiki/cross-modal-alignment/">교차모달 정렬</a><span class="wiki-index-summary">교차 모달 정렬은 서로 다른 모달리티에서 같은 대상이나 의미를 나타내는 요소를 대응시키는 과정이다.</span></li>
+<li data-article-id="interleaved-multimodal-data"><a href="/wiki/interleaved-multimodal-data/">교차 배열 멀티모달 데이터</a><span class="wiki-index-summary">교차 배열 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다.</span></li>
+<li data-article-id="cross-modal-attention"><a href="/wiki/cross-modal-attention/">교차모달 어텐션</a><span class="wiki-index-summary">교차모달 어텐션은 한 모달리티의 표현을 질의로, 다른 모달리티의 표현을 키와 값으로 사용해 관련 정보를 선택하는 연산이다.</span></li>
+<li data-article-id="cross-modal-alignment"><a href="/wiki/cross-modal-alignment/">교차모달 정렬</a><span class="wiki-index-summary">교차모달 정렬은 서로 다른 모달리티에서 같은 대상이나 의미를 나타내는 요소를 대응시키는 과정이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-d">
@@ -38,8 +38,8 @@ description: "텍스트와 이미지·음성·영상을 함께 다루는 모델"
 <li data-article-id="multimodal-generation"><a href="/wiki/multimodal-generation/">멀티모달 생성</a><span class="wiki-index-summary">멀티모달 생성은 텍스트·이미지·음성·영상 중 하나 이상의 입력을 조건으로 여러 양식의 새 콘텐츠를 만드는 작업이다.</span></li>
 <li data-article-id="multimodal-fusion"><a href="/wiki/multimodal-fusion/">멀티모달 융합</a><span class="wiki-index-summary">멀티모달 융합은 둘 이상의 모달리티 표현을 결합해 단일 채널보다 풍부한 예측이나 생성을 수행하는 과정이다.</span></li>
 <li data-article-id="multimodal-embedding"><a href="/wiki/multimodal-embedding/">멀티모달 임베딩</a><span class="wiki-index-summary">서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다.</span></li>
-<li data-article-id="multimodal-instruction-tuning"><a href="/wiki/multimodal-instruction-tuning/">멀티모달 지시 튜닝</a><span class="wiki-index-summary">멀티모달 지시 미세조정은 이미지·음성 등과 자연어 지시 및 응답의 짝으로 모델을 조정해 대화형 과제를 수행하게 하는 과정이다.</span></li>
-<li data-article-id="multimodal-jailbreak"><a href="/wiki/multimodal-jailbreak/">멀티모달 탈옥 공격</a><span class="wiki-index-summary">멀티모달 탈옥은 텍스트 외 이미지·음성 등 입력 채널을 이용해 모델의 안전 정책이나 입력 검사를 우회하도록 유도하는 공격이다.</span></li>
+<li data-article-id="multimodal-instruction-tuning"><a href="/wiki/multimodal-instruction-tuning/">멀티모달 지시 튜닝</a><span class="wiki-index-summary">멀티모달 지시 튜닝은 이미지·음성 등과 자연어 지시 및 응답의 짝으로 모델을 조정해 대화형 과제를 수행하게 하는 과정이다.</span></li>
+<li data-article-id="multimodal-jailbreak"><a href="/wiki/multimodal-jailbreak/">멀티모달 탈옥 공격</a><span class="wiki-index-summary">멀티모달 탈옥 공격은 텍스트 외 이미지·음성 등 입력 채널을 이용해 모델의 안전 정책이나 입력 검사를 우회하도록 유도하는 공격이다.</span></li>
 <li data-article-id="multimodal-tokenizer"><a href="/wiki/multimodal-tokenizer/">멀티모달 토크나이저</a><span class="wiki-index-summary">멀티모달 토크나이저는 이미지·음성·영상 같은 연속 신호를 모델이 다룰 토큰 또는 토큰 유사 표현으로 변환하는 구성 요소다.</span></li>
 <li data-article-id="multimodal-evaluation"><a href="/wiki/multimodal-evaluation/">멀티모달 평가</a><span class="wiki-index-summary">멀티모달 평가는 둘 이상의 입력·출력 양식을 사용하는 모델의 인식·정렬·추론·생성 품질을 함께 측정하는 평가 체계다.</span></li>
 <li data-article-id="mel-spectrogram"><a href="/wiki/mel-spectrogram/">멜 스펙트로그램</a><span class="wiki-index-summary">멜 스펙트로그램은 음성 신호의 시간-주파수 에너지를 사람의 청각 해상도에 가까운 멜 주파수 축으로 변환한 표현이다.</span></li>
@@ -56,7 +56,7 @@ description: "텍스트와 이미지·음성·영상을 함께 다루는 모델"
 <section class="wiki-index-group" data-index-group="ko-b">
 <h2 id="index-ko-b">ㅂ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="classifier-free-guidance"><a href="/wiki/classifier-free-guidance/">분류기 없는 가이던스</a><span class="wiki-index-summary">분류기 비사용 유도는 별도 분류기 없이 조건부와 무조건부 확산 예측의 차이를 이용해 조건 일치도를 조절하는 방법이다.</span></li>
+<li data-article-id="classifier-free-guidance"><a href="/wiki/classifier-free-guidance/">분류기 없는 가이던스</a><span class="wiki-index-summary">분류기 없는 가이던스는 별도 분류기 없이 조건부와 무조건부 확산 예측의 차이를 이용해 조건 일치도를 조절하는 방법이다.</span></li>
 <li data-article-id="video-classification"><a href="/wiki/video-classification/">비디오 분류</a><span class="wiki-index-summary">비디오 분류는 영상 전체 또는 구간을 미리 정한 사건·장면·행동 범주에 할당하는 과제다.</span></li>
 <li data-article-id="video-generation"><a href="/wiki/video-generation/">비디오 생성</a><span class="wiki-index-summary">비디오 생성은 텍스트·이미지·동작 조건으로 시간적으로 일관된 새 프레임 시퀀스를 합성하는 생성 과제다.</span></li>
 <li data-article-id="video-understanding"><a href="/wiki/video-understanding/">비디오 이해</a><span class="wiki-index-summary">비디오 이해는 연속 프레임과 소리의 객체·행동·사건·시간 관계를 해석하는 멀티모달 과제의 총칭이다.</span></li>
@@ -130,7 +130,7 @@ description: "텍스트와 이미지·음성·영상을 함께 다루는 모델"
 <h2 id="index-ko-k">ㅋ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="computer-vision"><a href="/wiki/computer-vision/">컴퓨터 비전</a><span class="wiki-index-summary">이미지와 영상에서 대상·장면·공간 구조를 추정하고 유용한 정보를 계산하는 인공지능 분야다.</span></li>
-<li data-article-id="content-provenance"><a href="/wiki/content-provenance/">콘텐츠 출처 증명</a><span class="wiki-index-summary">콘텐츠 출처 추적은 디지털 콘텐츠의 생성 주체·도구·편집 이력과 무결성을 검증 가능한 메타데이터로 연결하는 체계다.</span></li>
+<li data-article-id="content-provenance"><a href="/wiki/content-provenance/">콘텐츠 출처 증명</a><span class="wiki-index-summary">콘텐츠 출처 증명은 디지털 콘텐츠의 생성 주체·도구·편집 이력과 무결성을 검증 가능한 메타데이터로 연결하는 체계다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-t">

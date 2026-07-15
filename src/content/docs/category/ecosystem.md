@@ -147,12 +147,12 @@ description: "모델 공개와 배포 생태계의 기본 개념"
 <li data-article-id="ai-accelerator"><a href="/wiki/ai-accelerator/">AI 가속기</a><span class="wiki-index-summary">AI 가속기는 신경망 학습이나 추론의 핵심 연산을 범용 프로세서보다 빠르고 효율적으로 처리하도록 특화된 하드웨어의 총칭이다.</span></li>
 <li data-article-id="ai-supply-chain"><a href="/wiki/ai-supply-chain/">AI 공급망</a><span class="wiki-index-summary">AI 공급망은 데이터·모델·코드·가속기·클라우드·배포 서비스가 최종 AI 시스템에 이르는 의존 관계와 공급 주체의 연쇄다.</span></li>
 <li data-article-id="ai-datacenter"><a href="/wiki/ai-datacenter/">AI 데이터센터</a><span class="wiki-index-summary">AI 데이터센터는 대규모 모델 학습과 추론을 위해 가속기, 고대역폭 네트워크, 저장소와 냉각·전력 설비를 통합한 시설이다.</span></li>
-<li data-article-id="ai-water-footprint"><a href="/wiki/ai-water-footprint/">AI 물 발자국</a><span class="wiki-index-summary">AI 물발자국은 AI 계산을 위한 데이터센터 냉각과 전력 생산, 하드웨어 공급망에서 소비·취수되는 물의 양과 지역 영향을 나타낸 지표다.</span></li>
+<li data-article-id="ai-water-footprint"><a href="/wiki/ai-water-footprint/">AI 물 발자국</a><span class="wiki-index-summary">AI 물 발자국은 AI 계산을 위한 데이터센터 냉각과 전력 생산, 하드웨어 공급망에서 소비·취수되는 물의 양과 지역 영향을 나타낸 지표다.</span></li>
 <li data-article-id="ai-interoperability-standard"><a href="/wiki/ai-interoperability-standard/">AI 상호운용성 표준</a><span class="wiki-index-summary">AI 상호운용성 표준은 서로 다른 모델 형식, 런타임, 데이터·메타데이터 시스템이 의미를 보존하며 교환되도록 정한 공통 계약이다.</span></li>
 <li data-article-id="ai-energy-consumption"><a href="/wiki/ai-energy-consumption/">AI 에너지 소비</a><span class="wiki-index-summary">AI 에너지 소비는 모델 학습·추론과 이를 지원하는 저장·네트워크·냉각 인프라가 일정 기간 사용한 에너지량이다.</span></li>
 <li data-article-id="total-cost-of-ownership-for-ai"><a href="/wiki/total-cost-of-ownership-for-ai/">AI 총소유비용</a><span class="wiki-index-summary">AI 총소유비용은 AI 시스템을 도입해 운영하고 폐기하기까지 발생하는 자본·사용·인력·데이터·위험 비용의 전체 합이다.</span></li>
 <li data-article-id="ai-chip-availability"><a href="/wiki/ai-chip-availability/">AI 칩 가용성</a><span class="wiki-index-summary">AI 칩 가용성은 필요한 종류와 수량의 가속기를 목표 지역·시점·가격에 조달하고 사용할 수 있는 정도다.</span></li>
-<li data-article-id="ai-carbon-footprint"><a href="/wiki/ai-carbon-footprint/">AI 탄소 발자국</a><span class="wiki-index-summary">AI 탄소발자국은 AI 시스템의 전력 사용과 하드웨어 생애주기에서 발생한 온실가스 배출량을 이산화탄소환산량으로 나타낸 값이다.</span></li>
+<li data-article-id="ai-carbon-footprint"><a href="/wiki/ai-carbon-footprint/">AI 탄소 발자국</a><span class="wiki-index-summary">AI 탄소 발자국은 AI 시스템의 전력 사용과 하드웨어 생애주기에서 발생한 온실가스 배출량을 이산화탄소환산량으로 나타낸 값이다.</span></li>
 <li data-article-id="kubernetes-for-ai"><a href="/wiki/kubernetes-for-ai/">AI용 쿠버네티스</a><span class="wiki-index-summary">AI용 쿠버네티스는 컨테이너화한 학습·추론 작업을 쿠버네티스의 스케줄링과 선언적 제어로 운영하는 방식이다.</span></li>
 </ul>
 </section>

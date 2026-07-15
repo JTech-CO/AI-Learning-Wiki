@@ -68,7 +68,7 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 <li data-article-id="iterative-rag"><a href="/wiki/iterative-rag/">반복형 RAG</a><span class="wiki-index-summary">반복형 RAG는 생성 또는 평가 결과를 바탕으로 검색 질의와 문맥을 여러 차례 갱신하는 방식이다.</span></li>
 <li data-article-id="vector-database"><a href="/wiki/vector-database/">벡터 데이터베이스</a><span class="wiki-index-summary">고차원 벡터와 메타데이터를 저장하고 유사도 검색을 제공하는 데이터 시스템이다.</span></li>
 <li data-article-id="vector-index"><a href="/wiki/vector-index/">벡터 인덱스</a><span class="wiki-index-summary">벡터 인덱스는 임베딩 벡터를 저장하고 거리나 내적 기준으로 가까운 항목을 빠르게 검색하도록 조직한 자료구조다.</span></li>
-<li data-article-id="subgraph-retrieval"><a href="/wiki/subgraph-retrieval/">부분 그래프 검색</a><span class="wiki-index-summary">하위 그래프 검색은 질의에 답하는 데 필요한 연결된 노드와 관계 집합을 지식 그래프에서 선택하는 작업이다.</span></li>
+<li data-article-id="subgraph-retrieval"><a href="/wiki/subgraph-retrieval/">부분 그래프 검색</a><span class="wiki-index-summary">부분 그래프 검색은 질의에 답하는 데 필요한 연결된 노드와 관계 집합을 지식 그래프에서 선택하는 작업이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-s">
@@ -141,7 +141,7 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 <section class="wiki-index-group" data-index-group="ko-t">
 <h2 id="index-ko-t">ㅌ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="triple-store"><a href="/wiki/triple-store/">트리플 저장소</a><span class="wiki-index-summary">트리플 스토어는 지식을 주어-술어-목적어 형태의 RDF 트리플로 저장하고 그래프 패턴으로 조회하도록 최적화된 데이터베이스다.</span></li>
+<li data-article-id="triple-store"><a href="/wiki/triple-store/">트리플 저장소</a><span class="wiki-index-summary">트리플 저장소는 지식을 주어-술어-목적어 형태의 RDF 트리플로 저장하고 그래프 패턴으로 조회하도록 최적화된 데이터베이스다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-p">

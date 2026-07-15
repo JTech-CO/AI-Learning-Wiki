@@ -18,7 +18,7 @@ description: "신경망의 구성 요소와 학습 원리"
 <li data-article-id="gated-recurrent-unit"><a href="/wiki/gated-recurrent-unit/">게이트 순환 유닛</a><span class="wiki-index-summary">게이트 순환 유닛은 갱신 게이트와 리셋 게이트로 이전 상태와 새 후보 상태를 혼합하는 순환 신경망 구조다.</span></li>
 <li data-article-id="gradient-descent"><a href="/wiki/gradient-descent/">경사하강법</a><span class="wiki-index-summary">손실 함수의 기울기 반대 방향으로 파라미터를 반복 갱신하는 최적화 방법이다.</span></li>
 <li data-article-id="computational-graph"><a href="/wiki/computational-graph/">계산 그래프</a><span class="wiki-index-summary">계산을 값과 연산 노드, 의존 관계의 방향성 그래프로 표현한 구조다.</span></li>
-<li data-article-id="layer-wise-relevance-propagation"><a href="/wiki/layer-wise-relevance-propagation/">계층별 관련성 전파</a><span class="wiki-index-summary">층별 관련성 전파는 모델 출력 점수를 보존 규칙에 따라 뒤쪽 층에서 입력 특징까지 재분배하는 설명 기법이다.</span></li>
+<li data-article-id="layer-wise-relevance-propagation"><a href="/wiki/layer-wise-relevance-propagation/">계층별 관련성 전파</a><span class="wiki-index-summary">계층별 관련성 전파는 모델 출력 점수를 보존 규칙에 따라 뒤쪽 층에서 입력 특징까지 재분배하는 설명 기법이다.</span></li>
 <li data-article-id="gradient-norm"><a href="/wiki/gradient-norm/">그래디언트 노름</a><span class="wiki-index-summary">기울기 노름은 손실 함수의 파라미터 기울기 벡터 크기를 하나의 스칼라로 요약한 값이다.</span></li>
 <li data-article-id="gradient-accumulation"><a href="/wiki/gradient-accumulation/">그래디언트 누적</a><span class="wiki-index-summary">그래디언트 누적은 여러 마이크로배치의 그래디언트를 모은 뒤 한 번 매개변수를 갱신해 큰 유효 배치를 구현하는 기법이다.</span></li>
 <li data-article-id="vanishing-gradient"><a href="/wiki/vanishing-gradient/">그래디언트 소실</a><span class="wiki-index-summary">그래디언트 소실은 깊거나 반복적인 계산 그래프에서 역전파 신호가 연속 곱셈으로 매우 작아져 앞단 매개변수가 거의 학습되지 않는 현상이다.</span></li>
@@ -135,7 +135,7 @@ description: "신경망의 구성 요소와 학습 원리"
 <h2 id="index-ko-t">ㅌ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="integrated-gradients"><a href="/wiki/integrated-gradients/">통합 그래디언트</a><span class="wiki-index-summary">통합 기울기는 기준 입력에서 실제 입력까지의 경로에서 입력 기울기를 적분해 예측 차이를 특징별 기여도로 배분하는 방법이다.</span></li>
-<li data-article-id="feature-visualization"><a href="/wiki/feature-visualization/">특성 시각화</a><span class="wiki-index-summary">특징 시각화는 신경망 내부 채널·뉴런·표현이 반응하는 입력 패턴과 데이터 사례를 보여주는 분석 방법이다.</span></li>
+<li data-article-id="feature-visualization"><a href="/wiki/feature-visualization/">특성 시각화</a><span class="wiki-index-summary">특성 시각화는 신경망 내부 채널·뉴런·표현이 반응하는 입력 패턴과 데이터 사례를 보여주는 분석 방법이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-p">
@@ -161,7 +161,7 @@ description: "신경망의 구성 요소와 학습 원리"
 <li data-article-id="hopfield-network"><a href="/wiki/hopfield-network/">홉필드 네트워크</a><span class="wiki-index-summary">홉필드 네트워크는 대칭 연결과 에너지 함수를 사용해 저장된 패턴을 안정 상태로 회상하는 순환 신경망이다.</span></li>
 <li data-article-id="stochastic-gradient-descent"><a href="/wiki/stochastic-gradient-descent/">확률적 경사하강법</a><span class="wiki-index-summary">확률적 경사하강법은 전체 데이터 대신 한 사례 또는 작은 무작위 표본의 손실 기울기로 매개변수를 반복 갱신하는 최적화법이다.</span></li>
 <li data-article-id="stochastic-depth"><a href="/wiki/stochastic-depth/">확률적 깊이</a><span class="wiki-index-summary">확률적 깊이는 잔차 신경망 학습 중 일부 잔차 블록을 무작위로 건너뛰어 다양한 유효 깊이를 학습하는 정규화 기법이다.</span></li>
-<li data-article-id="activation-maximization"><a href="/wiki/activation-maximization/">활성화 최대화</a><span class="wiki-index-summary">활성 최대화는 선택한 뉴런이나 클래스 점수를 크게 만드는 입력을 경사 상승으로 합성해 선호 패턴을 탐색하는 기법이다.</span></li>
+<li data-article-id="activation-maximization"><a href="/wiki/activation-maximization/">활성화 최대화</a><span class="wiki-index-summary">활성화 최대화는 선택한 뉴런이나 클래스 점수를 크게 만드는 입력을 경사 상승으로 합성해 선호 패턴을 탐색하는 기법이다.</span></li>
 <li data-article-id="activation-function"><a href="/wiki/activation-function/">활성화 함수</a><span class="wiki-index-summary">신경망에 비선형성을 부여해 복잡한 관계를 표현하게 하는 함수다.</span></li>
 </ul>
 </section>

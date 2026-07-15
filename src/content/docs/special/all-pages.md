@@ -33,7 +33,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="concept-activation-vector"><a href="/wiki/concept-activation-vector/">개념 활성화 벡터</a><span class="wiki-index-summary">개념 활성화 벡터는 신경망의 중간 표현 공간에서 사람이 정의한 개념의 방향을 학습해 출력이 그 개념에 얼마나 민감한지 측정하는 도구다.</span></li>
 <li data-article-id="open-neural-network-exchange"><a href="/wiki/open-neural-network-exchange/">개방형 신경망 교환 형식</a><span class="wiki-index-summary">개방형 신경망 교환 형식은 서로 다른 프레임워크와 런타임 사이에서 모델 그래프와 가중치를 전달하기 위한 ONNX 표준이다.</span></li>
 <li data-article-id="open-vocabulary-detection"><a href="/wiki/open-vocabulary-detection/">개방형 어휘 객체 탐지</a><span class="wiki-index-summary">개방형 어휘 객체 탐지는 학습 때 고정된 클래스 목록을 넘어 텍스트로 제시한 새로운 범주의 위치와 이름을 예측한다.</span></li>
-<li data-article-id="pointwise-llm-judge"><a href="/wiki/pointwise-llm-judge/">개별 LLM 심사</a><span class="wiki-index-summary">개별 LLM 판정은 평가 모델이 한 응답을 독립적으로 보고 절대 등급이나 수치 점수를 부여하는 방식이다.</span></li>
+<li data-article-id="pointwise-llm-judge"><a href="/wiki/pointwise-llm-judge/">개별 LLM 심사</a><span class="wiki-index-summary">개별 LLM 심사은 평가 모델이 한 응답을 독립적으로 보고 절대 등급이나 수치 점수를 부여하는 방식이다.</span></li>
 <li data-article-id="personally-identifiable-information"><a href="/wiki/personally-identifiable-information/">개인 식별 정보</a><span class="wiki-index-summary">개인 식별 정보는 단독 또는 다른 정보와 결합해 특정 개인을 직접·간접적으로 식별할 수 있는 정보다.</span></li>
 <li data-article-id="privacy-audit"><a href="/wiki/privacy-audit/">개인정보 감사</a><span class="wiki-index-summary">개인정보 감사는 데이터 수명주기와 시스템 동작이 명시된 개인정보 원칙·정책·법적 요구를 지키는지 증거로 점검하는 절차다.</span></li>
 <li data-article-id="privacy-attack"><a href="/wiki/privacy-attack/">개인정보 공격</a><span class="wiki-index-summary">개인정보 공격은 모델·출력·기울기·API 응답을 이용해 개인의 참여 여부나 민감한 속성·원본 정보를 추론하려는 공격이다.</span></li>
@@ -45,7 +45,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="distance-metric-selection"><a href="/wiki/distance-metric-selection/">거리 지표 선택</a><span class="wiki-index-summary">거리 지표 선택은 임베딩 공간에서 어떤 유사도 함수가 과제의 관련성과 인덱스 구조에 맞는지 결정하는 과정이다.</span></li>
 <li data-article-id="metric-learning"><a href="/wiki/metric-learning/">거리 학습</a><span class="wiki-index-summary">거리 학습은 같은 의미의 표본은 가깝고 다른 의미의 표본은 멀어지도록 표현 공간의 거리 함수나 임베딩을 학습하는 방법이다.</span></li>
 <li data-article-id="retrieval-transformer"><a href="/wiki/retrieval-transformer/">검색 결합 트랜스포머</a><span class="wiki-index-summary">검색 결합 트랜스포머는 외부 코퍼스에서 찾은 이웃 문맥을 모델 계산에 통합해 매개변수 밖의 정보를 사용하는 구조다.</span></li>
-<li data-article-id="retrieval-prompt"><a href="/wiki/retrieval-prompt/">검색 결합 프롬프트</a><span class="wiki-index-summary">검색 프롬프트는 검색된 문서를 모델의 답변 근거로 제공하도록 문맥 배치, 인용 규칙과 불충분 정보 처리를 정의한 입력 형식이다.</span></li>
+<li data-article-id="retrieval-prompt"><a href="/wiki/retrieval-prompt/">검색 결합 프롬프트</a><span class="wiki-index-summary">검색 결합 프롬프트는 검색된 문서를 모델의 답변 근거로 제공하도록 문맥 배치, 인용 규칙과 불충분 정보 처리를 정의한 입력 형식이다.</span></li>
 <li data-article-id="retrieval-context"><a href="/wiki/retrieval-context/">검색 문맥</a><span class="wiki-index-summary">검색 문맥은 질의에 응답하기 위해 검색 시스템이 선택해 생성 모델에 제공하는 문서 조각과 메타데이터의 집합이다.</span></li>
 <li data-article-id="retrieval-hit-rate"><a href="/wiki/retrieval-hit-rate/">검색 적중률</a><span class="wiki-index-summary">검색 적중률은 질의의 상위 k 결과 안에 하나 이상의 정답 또는 관련 항목이 포함된 비율이다.</span></li>
 <li data-article-id="rag"><a href="/wiki/rag/">검색 증강 생성</a><span class="wiki-index-summary">외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.</span></li>
@@ -67,11 +67,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="compute-cost"><a href="/wiki/compute-cost/">계산 비용</a><span class="wiki-index-summary">계산 비용은 AI 작업이 소비한 프로세서 시간, 메모리, 저장소, 네트워크와 에너지에 가격을 적용한 총 자원 비용이다.</span></li>
 <li data-article-id="compute-optimal-training"><a href="/wiki/compute-optimal-training/">계산 최적 학습</a><span class="wiki-index-summary">계산 최적 학습은 고정된 총 계산 예산에서 모델 크기와 학습 토큰 수를 배분해 손실을 최소화하는 학습 설계다.</span></li>
 <li data-article-id="computational-intelligence"><a href="/wiki/computational-intelligence/">계산지능</a><span class="wiki-index-summary">계산지능은 신경망, 진화 계산, 퍼지 시스템처럼 적응과 근사 계산을 활용해 복잡한 문제를 푸는 접근 계열이다.</span></li>
-<li data-article-id="layer-wise-relevance-propagation"><a href="/wiki/layer-wise-relevance-propagation/">계층별 관련성 전파</a><span class="wiki-index-summary">층별 관련성 전파는 모델 출력 점수를 보존 규칙에 따라 뒤쪽 층에서 입력 특징까지 재분배하는 설명 기법이다.</span></li>
-<li data-article-id="hierarchical-task-network"><a href="/wiki/hierarchical-task-network/">계층적 과제 네트워크</a><span class="wiki-index-summary">계층적 작업 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다.</span></li>
+<li data-article-id="layer-wise-relevance-propagation"><a href="/wiki/layer-wise-relevance-propagation/">계층별 관련성 전파</a><span class="wiki-index-summary">계층별 관련성 전파는 모델 출력 점수를 보존 규칙에 따라 뒤쪽 층에서 입력 특징까지 재분배하는 설명 기법이다.</span></li>
+<li data-article-id="hierarchical-task-network"><a href="/wiki/hierarchical-task-network/">계층적 과제 네트워크</a><span class="wiki-index-summary">계층적 과제 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다.</span></li>
 <li data-article-id="hierarchical-clustering"><a href="/wiki/hierarchical-clustering/">계층적 군집화</a><span class="wiki-index-summary">계층적 군집화는 데이터 집단을 단계적으로 합치거나 나누어 중첩된 군집 관계를 덴드로그램으로 표현하는 방법이다.</span></li>
 <li data-article-id="hierarchical-navigable-small-world"><a href="/wiki/hierarchical-navigable-small-world/">계층적 탐색 가능 소세계 그래프</a><span class="wiki-index-summary">계층적 탐색 가능 소세계 그래프는 벡터를 여러 층의 근접 그래프로 연결해 근사 최근접 이웃을 빠르게 찾는 인덱스다.</span></li>
-<li data-article-id="hierarchical-transformer"><a href="/wiki/hierarchical-transformer/">계층형 트랜스포머</a><span class="wiki-index-summary">계층적 트랜스포머는 토큰, 문장, 문서처럼 서로 다른 해상도의 표현을 단계적으로 계산하고 결합하는 구조다.</span></li>
+<li data-article-id="hierarchical-transformer"><a href="/wiki/hierarchical-transformer/">계층형 트랜스포머</a><span class="wiki-index-summary">계층형 트랜스포머는 토큰, 문장, 문서처럼 서로 다른 해상도의 표현을 단계적으로 계산하고 결합하는 구조다.</span></li>
 <li data-article-id="planning"><a href="/wiki/planning/">계획</a><span class="wiki-index-summary">목표를 하위 단계와 실행 순서로 분해하고 필요에 따라 계획을 수정하는 과정이다.</span></li>
 <li data-article-id="plan-verification"><a href="/wiki/plan-verification/">계획 검증</a><span class="wiki-index-summary">계획 검증은 생성된 행동 순서가 전제조건·안전 제약·목표 조건을 만족하는지 실행 전에 확인하는 과정이다.</span></li>
 <li data-article-id="planning-evaluation"><a href="/wiki/planning-evaluation/">계획 평가</a><span class="wiki-index-summary">계획 평가는 목표를 달성하기 위해 만든 행동 순서가 타당하고 효율적이며 제약을 지키는지를 측정한다.</span></li>
@@ -107,12 +107,12 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="corrigibility"><a href="/wiki/corrigibility/">교정 가능성</a><span class="wiki-index-summary">교정 가능성은 AI 시스템이 사람의 수정, 중단, 목표 변경과 통제 시도를 방해하지 않고 받아들이는 성질이다.</span></li>
 <li data-article-id="corrective-rag"><a href="/wiki/corrective-rag/">교정형 RAG</a><span class="wiki-index-summary">교정형 RAG는 검색 결과의 관련성과 신뢰성을 평가한 뒤 부족하거나 잘못된 문맥을 보완해 답변을 생성하는 방식이다.</span></li>
 <li data-article-id="intersectional-fairness"><a href="/wiki/intersectional-fairness/">교차 공정성</a><span class="wiki-index-summary">교차 공정성은 성별·인종·연령 등 여러 속성이 겹치는 하위 집단에서 성능과 결과의 불균형을 평가하는 관점이다.</span></li>
-<li data-article-id="interleaved-multimodal-data"><a href="/wiki/interleaved-multimodal-data/">교차 배열 멀티모달 데이터</a><span class="wiki-index-summary">교차 배치 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다.</span></li>
+<li data-article-id="interleaved-multimodal-data"><a href="/wiki/interleaved-multimodal-data/">교차 배열 멀티모달 데이터</a><span class="wiki-index-summary">교차 배열 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다.</span></li>
 <li data-article-id="cross-site-request-forgery"><a href="/wiki/cross-site-request-forgery/">교차 사이트 요청 위조</a><span class="wiki-index-summary">교차 사이트 요청 위조는 로그인된 사용자의 브라우저가 공격자 의도대로 다른 사이트에 상태 변경 요청을 보내게 하는 공격이다.</span></li>
 <li data-article-id="cross-entropy"><a href="/wiki/cross-entropy/">교차 엔트로피</a><span class="wiki-index-summary">교차 엔트로피는 실제 분포의 표본을 다른 예측 분포로 부호화할 때 필요한 평균 정보량이다.</span></li>
 <li data-article-id="cross-origin-resource-sharing"><a href="/wiki/cross-origin-resource-sharing/">교차 출처 자원 공유</a><span class="wiki-index-summary">교차 출처 자원 공유는 서버가 브라우저의 동일 출처 정책을 선택적으로 완화하도록 허용 출처와 요청 조건을 HTTP 헤더로 알리는 메커니즘이다.</span></li>
-<li data-article-id="cross-modal-attention"><a href="/wiki/cross-modal-attention/">교차모달 어텐션</a><span class="wiki-index-summary">교차 모달 어텐션은 한 모달리티의 표현을 질의로, 다른 모달리티의 표현을 키와 값으로 사용해 관련 정보를 선택하는 연산이다.</span></li>
-<li data-article-id="cross-modal-alignment"><a href="/wiki/cross-modal-alignment/">교차모달 정렬</a><span class="wiki-index-summary">교차 모달 정렬은 서로 다른 모달리티에서 같은 대상이나 의미를 나타내는 요소를 대응시키는 과정이다.</span></li>
+<li data-article-id="cross-modal-attention"><a href="/wiki/cross-modal-attention/">교차모달 어텐션</a><span class="wiki-index-summary">교차모달 어텐션은 한 모달리티의 표현을 질의로, 다른 모달리티의 표현을 키와 값으로 사용해 관련 정보를 선택하는 연산이다.</span></li>
+<li data-article-id="cross-modal-alignment"><a href="/wiki/cross-modal-alignment/">교차모달 정렬</a><span class="wiki-index-summary">교차모달 정렬은 서로 다른 모달리티에서 같은 대상이나 의미를 나타내는 요소를 대응시키는 과정이다.</span></li>
 <li data-article-id="cross-lingual-embedding"><a href="/wiki/cross-lingual-embedding/">교차언어 임베딩</a><span class="wiki-index-summary">교차언어 임베딩은 서로 다른 언어의 의미가 같은 문장이나 문서를 공통 벡터 공간에서 가깝게 표현한다.</span></li>
 <li data-article-id="span-corruption"><a href="/wiki/span-corruption/">구간 손상 복원</a><span class="wiki-index-summary">구간 손상 복원은 연속된 여러 토큰 구간을 특수 표식으로 바꾸고 누락된 구간을 생성하도록 하는 잡음 제거 학습 방식이다.</span></li>
 <li data-article-id="passage-retrieval"><a href="/wiki/passage-retrieval/">구절 검색</a><span class="wiki-index-summary">구절 검색은 긴 문서를 작은 문단이나 청크로 나누어 질의에 직접 관련된 구간을 반환하는 검색 과제다.</span></li>
@@ -125,7 +125,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="gradient-boosting"><a href="/wiki/gradient-boosting/">그래디언트 부스팅</a><span class="wiki-index-summary">그래디언트 부스팅은 이전 앙상블의 손실을 줄이는 방향으로 약한 예측기를 순차적으로 추가하는 지도학습 방법이다.</span></li>
 <li data-article-id="vanishing-gradient"><a href="/wiki/vanishing-gradient/">그래디언트 소실</a><span class="wiki-index-summary">그래디언트 소실은 깊거나 반복적인 계산 그래프에서 역전파 신호가 연속 곱셈으로 매우 작아져 앞단 매개변수가 거의 학습되지 않는 현상이다.</span></li>
 <li data-article-id="gradient-signal"><a href="/wiki/gradient-signal/">그래디언트 신호</a><span class="wiki-index-summary">그래디언트 신호는 손실이 각 파라미터 변화에 얼마나 민감한지를 나타내며 역전파로 층을 거슬러 전달된다.</span></li>
-<li data-article-id="gradient-checkpointing"><a href="/wiki/gradient-checkpointing/">그래디언트 체크포인팅</a><span class="wiki-index-summary">기울기 체크포인팅은 순전파 활성값 일부만 저장하고 역전파 때 누락된 구간을 다시 계산해 메모리를 줄이는 기법이다.</span></li>
+<li data-article-id="gradient-checkpointing"><a href="/wiki/gradient-checkpointing/">그래디언트 체크포인팅</a><span class="wiki-index-summary">그래디언트 체크포인팅은 순전파 활성값 일부만 저장하고 역전파 때 누락된 구간을 다시 계산해 메모리를 줄이는 기법이다.</span></li>
 <li data-article-id="gradient-clipping"><a href="/wiki/gradient-clipping/">그래디언트 클리핑</a><span class="wiki-index-summary">그래디언트 클리핑은 그래디언트 값이나 전체 노름이 임계값을 넘을 때 크기를 제한해 불안정한 갱신을 줄이는 기법이다.</span></li>
 <li data-article-id="exploding-gradient"><a href="/wiki/exploding-gradient/">그래디언트 폭주</a><span class="wiki-index-summary">그래디언트 폭주는 역전파 과정의 반복 곱셈으로 그래디언트 크기가 급격히 커져 손실과 매개변수가 불안정해지는 현상이다.</span></li>
 <li data-article-id="graph-retrieval"><a href="/wiki/graph-retrieval/">그래프 검색</a><span class="wiki-index-summary">그래프 검색은 질의와 관련된 노드·간선·경로를 구조적·의미적 조건으로 찾아 반환하는 정보 검색 방식이다.</span></li>
@@ -155,7 +155,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="gradient"><a href="/wiki/gradient/">기울기</a><span class="wiki-index-summary">여러 변수에 대한 함수 변화율을 모은 벡터로, 손실을 줄이는 방향을 알려준다.</span></li>
 <li data-article-id="basis-vector"><a href="/wiki/basis-vector/">기저 벡터</a><span class="wiki-index-summary">기저 벡터는 벡터 공간의 모든 벡터를 유일한 선형결합으로 표현할 수 있게 하는 선형 독립 벡터 집합의 원소다.</span></li>
 <li data-article-id="symbolic-ai"><a href="/wiki/symbolic-ai/">기호주의 인공지능</a><span class="wiki-index-summary">지식을 기호와 명시적 규칙으로 표현하고 탐색·추론 절차를 적용해 결론이나 행동을 도출하는 인공지능 접근법이다.</span></li>
-<li data-article-id="equality-of-opportunity"><a href="/wiki/equality-of-opportunity/">기회 균등</a><span class="wiki-index-summary">기회균등은 실제 양성인 사례에서 보호 집단별 참양성률이 같도록 요구하는 공정성 기준이다.</span></li>
+<li data-article-id="equality-of-opportunity"><a href="/wiki/equality-of-opportunity/">기회 균등</a><span class="wiki-index-summary">기회 균등은 실제 양성인 사례에서 보호 집단별 참양성률이 같도록 요구하는 공정성 기준이다.</span></li>
 <li data-article-id="length-extrapolation"><a href="/wiki/length-extrapolation/">길이 외삽</a><span class="wiki-index-summary">길이 외삽은 모델이 학습에서 본 시퀀스 길이를 넘어선 입력에서도 규칙과 성능을 유지하는 능력이다.</span></li>
 <li data-article-id="length-penalty"><a href="/wiki/length-penalty/">길이 페널티</a><span class="wiki-index-summary">길이 페널티는 후보 시퀀스 점수를 길이에 따라 보정해 빔 탐색이 지나치게 짧거나 긴 출력을 선호하지 않게 하는 규칙이다.</span></li>
 <li data-article-id="mixture-of-depths"><a href="/wiki/mixture-of-depths/">깊이 혼합</a><span class="wiki-index-summary">깊이 혼합은 각 트랜스포머 층에서 일부 토큰만 계산 블록을 통과시키고 나머지는 우회시켜 토큰별 계산 깊이를 달리하는 조건부 계산 기법이다.</span></li>
@@ -242,7 +242,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="tool-side-effect"><a href="/wiki/tool-side-effect/">도구 부작용</a><span class="wiki-index-summary">도구 부작용은 도구 호출이 반환값 이외에 파일·계정·메시지·금전·외부 시스템 상태에 남기는 변화다.</span></li>
 <li data-article-id="tool-use-evaluation"><a href="/wiki/tool-use-evaluation/">도구 사용 평가</a><span class="wiki-index-summary">도구 사용 평가는 에이전트가 적절한 도구를 선택하고 올바른 인수로 호출하며 결과와 오류를 정확히 처리하는지를 측정한다.</span></li>
 <li data-article-id="tool-selection"><a href="/wiki/tool-selection/">도구 선택</a><span class="wiki-index-summary">도구 선택은 여러 도구 후보 중 목표, 입력 형식, 비용, 신뢰도와 권한 조건에 맞는 실행 수단을 고르는 과정이다.</span></li>
-<li data-article-id="tool-choice"><a href="/wiki/tool-choice/">도구 선택 제어</a><span class="wiki-index-summary">도구 선택은 현재 요청에서 모델이 사용할 수 있는 도구를 허용·금지하거나 특정 도구 사용을 강제하는 제어다.</span></li>
+<li data-article-id="tool-choice"><a href="/wiki/tool-choice/">도구 선택 제어</a><span class="wiki-index-summary">도구 선택 제어은 현재 요청에서 모델이 사용할 수 있는 도구를 허용·금지하거나 특정 도구 사용을 강제하는 제어다.</span></li>
 <li data-article-id="tool-invocation"><a href="/wiki/tool-invocation/">도구 실행</a><span class="wiki-index-summary">도구 실행은 선택된 도구의 입력 스키마에 맞춰 인수를 구성하고 실제 호출을 경계 계층에 전달하는 단계다.</span></li>
 <li data-article-id="tool-error"><a href="/wiki/tool-error/">도구 오류</a><span class="wiki-index-summary">도구 오류는 에이전트나 API 호출이 형식, 권한, 네트워크, 실행 로직 등의 이유로 정상 결과를 반환하지 못한 상태다.</span></li>
 <li data-article-id="tool-argument"><a href="/wiki/tool-argument/">도구 인수</a><span class="wiki-index-summary">도구 인수는 선택된 도구 호출에 전달되는 구조화된 입력 값의 집합이다.</span></li>
@@ -254,7 +254,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="lip-reading"><a href="/wiki/lip-reading/">독순술 인식</a><span class="wiki-index-summary">독순술 인식은 화자의 입술과 얼굴 움직임만으로 발화 음소·단어·문장을 추정하는 시각 음성 인식 과제다.</span></li>
 <li data-article-id="synchronous-client"><a href="/wiki/synchronous-client/">동기 클라이언트</a><span class="wiki-index-summary">동기 클라이언트는 원격 요청이 완료될 때까지 호출 스레드나 작업의 진행을 기다리게 하는 API 사용 방식이다.</span></li>
 <li data-article-id="synchronous-api-request"><a href="/wiki/synchronous-api-request/">동기 API 요청</a><span class="wiki-index-summary">동기 API 요청은 클라이언트가 요청을 보낸 연결에서 처리가 끝날 때까지 기다린 뒤 최종 응답을 받는 상호작용 방식이다.</span></li>
-<li data-article-id="equalized-odds"><a href="/wiki/equalized-odds/">동등 오즈</a><span class="wiki-index-summary">균등 오즈는 실제 결과가 주어졌을 때 예측이 보호 집단과 조건부 독립이 되도록 참양성률과 거짓양성률을 같게 요구하는 기준이다.</span></li>
+<li data-article-id="equalized-odds"><a href="/wiki/equalized-odds/">동등 오즈</a><span class="wiki-index-summary">동등 오즈는 실제 결과가 주어졌을 때 예측이 보호 집단과 조건부 독립이 되도록 참양성률과 거짓양성률을 같게 요구하는 기준이다.</span></li>
 <li data-article-id="concurrency-limit"><a href="/wiki/concurrency-limit/">동시성 한도</a><span class="wiki-index-summary">동시성 한도는 한 주체나 서비스에서 같은 시점에 실행될 수 있는 요청·작업 수를 제한하는 운영 정책이다.</span></li>
 <li data-article-id="dynamic-batching"><a href="/wiki/dynamic-batching/">동적 배칭</a><span class="wiki-index-summary">동적 배칭은 도착 시간이 다른 추론 요청을 짧은 대기 창에서 묶어 실행 시점마다 배치 크기를 구성하는 서빙 방식이다.</span></li>
 <li data-article-id="dynamic-benchmark"><a href="/wiki/dynamic-benchmark/">동적 벤치마크</a><span class="wiki-index-summary">동적 벤치마크는 모델 성능과 실패 양상에 맞추어 평가 사례를 지속적으로 수집·갱신하는 벤치마크다.</span></li>
@@ -281,13 +281,13 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="logistic-regression"><a href="/wiki/logistic-regression/">로지스틱 회귀</a><span class="wiki-index-summary">로지스틱 회귀는 특성의 선형 결합을 로짓으로 사용해 범주, 특히 이진 사건의 조건부 확률을 추정하는 분류 모형이다.</span></li>
 <li data-article-id="logit"><a href="/wiki/logit/">로짓</a><span class="wiki-index-summary">확률로 정규화하기 전 모델이 각 클래스나 토큰 후보에 내놓는 실수 점수이며, 이항 문제에서는 로그 오즈로 해석된다.</span></li>
 <li data-article-id="local-attention"><a href="/wiki/local-attention/">로컬 어텐션</a><span class="wiki-index-summary">로컬 어텐션은 각 토큰이 주변의 제한된 창이나 이웃 위치에만 주의를 주도록 연결 범위를 줄인 방식이다.</span></li>
-<li data-article-id="rubric-based-judge"><a href="/wiki/rubric-based-judge/">루브릭 기반 심사</a><span class="wiki-index-summary">루브릭 기반 판정은 명시된 평가 차원, 등급 설명과 감점 조건에 따라 후보 응답을 채점하는 방식이다.</span></li>
+<li data-article-id="rubric-based-judge"><a href="/wiki/rubric-based-judge/">루브릭 기반 심사</a><span class="wiki-index-summary">루브릭 기반 심사은 명시된 평가 차원, 등급 설명과 감점 조건에 따라 후보 응답을 채점하는 방식이다.</span></li>
 <li data-article-id="roofline-model"><a href="/wiki/roofline-model/">루프라인 모델</a><span class="wiki-index-summary">루프라인 모델은 하드웨어의 최대 계산 성능과 메모리 대역폭을 연산 강도에 따라 결합해 커널 성능 상한을 보여 주는 분석 모델이다.</span></li>
 <li data-article-id="leaderboard"><a href="/wiki/leaderboard/">리더보드</a><span class="wiki-index-summary">리더보드는 동일한 평가 규칙으로 측정한 모델이나 시스템의 성능을 순위와 함께 공개하는 표다.</span></li>
 <li data-article-id="reranker"><a href="/wiki/reranker/">리랭커</a><span class="wiki-index-summary">초기 검색 후보를 질의 관련성 기준으로 다시 정렬하는 모델이나 규칙이다.</span></li>
 <li data-article-id="listwise-ranking"><a href="/wiki/listwise-ranking/">리스트와이즈 순위화</a><span class="wiki-index-summary">리스트와이즈 순위화는 한 질의의 후보 목록 전체와 정답 순위를 함께 고려해 학습하는 방법이다.</span></li>
 <li data-article-id="likert-scale"><a href="/wiki/likert-scale/">리커트 척도</a><span class="wiki-index-summary">리커트 척도는 응답자가 진술에 대한 동의나 평가 정도를 순서가 있는 여러 범주 중 하나로 표시하는 척도다.</span></li>
-<li data-article-id="leaky-bucket"><a href="/wiki/leaky-bucket/">리키 버킷</a><span class="wiki-index-summary">누수 버킷은 들어오는 요청을 유한 큐에 담고 거의 일정한 속도로 내보내 출력 트래픽을 평탄화하는 알고리즘이다.</span></li>
+<li data-article-id="leaky-bucket"><a href="/wiki/leaky-bucket/">리키 버킷</a><span class="wiki-index-summary">리키 버킷은 들어오는 요청을 유한 큐에 담고 거의 일정한 속도로 내보내 출력 트래픽을 평탄화하는 알고리즘이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-m">
@@ -301,7 +301,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="mahalanobis-distance"><a href="/wiki/mahalanobis-distance/">마할라노비스 거리</a><span class="wiki-index-summary">마할라노비스 거리는 변수의 분산과 상관관계를 공분산 역행렬로 보정한 다변량 거리다.</span></li>
 <li data-article-id="manhattan-distance"><a href="/wiki/manhattan-distance/">맨해튼 거리</a><span class="wiki-index-summary">맨해튼 거리는 두 벡터의 각 좌표 차이 절댓값을 합한 L1 거리다.</span></li>
 <li data-article-id="blind-evaluation"><a href="/wiki/blind-evaluation/">맹검 평가</a><span class="wiki-index-summary">맹검 평가는 평가자가 후보의 제작자·모델명·실험 조건 중 판단에 불필요한 정보를 모른 채 결과를 판정하는 절차다.</span></li>
-<li data-article-id="machine-unlearning"><a href="/wiki/machine-unlearning/">머신 언러닝</a><span class="wiki-index-summary">기계 언러닝은 특정 학습 데이터의 영향을 모델에서 제거해 해당 데이터를 제외하고 다시 학습한 모델에 가까운 상태를 만드는 절차다.</span></li>
+<li data-article-id="machine-unlearning"><a href="/wiki/machine-unlearning/">머신 언러닝</a><span class="wiki-index-summary">머신 언러닝은 특정 학습 데이터의 영향을 모델에서 제거해 해당 데이터를 제외하고 다시 학습한 모델에 가까운 상태를 만드는 절차다.</span></li>
 <li data-article-id="machine-learning"><a href="/wiki/machine-learning/">머신러닝</a><span class="wiki-index-summary">명시적으로 모든 규칙을 작성하지 않고 데이터에서 패턴을 학습해 예측이나 결정을 수행하는 인공지능의 한 분야다.</span></li>
 <li data-article-id="machine-learning-pipeline"><a href="/wiki/machine-learning-pipeline/">머신러닝 파이프라인</a><span class="wiki-index-summary">머신러닝 파이프라인은 데이터 수집·검증·변환·학습·평가·배포 단계를 재현 가능한 의존 그래프로 연결한 작업 흐름이다.</span></li>
 <li data-article-id="machine-learning-framework"><a href="/wiki/machine-learning-framework/">머신러닝 프레임워크</a><span class="wiki-index-summary">머신러닝 프레임워크는 모델 정의, 자동 미분, 최적화, 데이터 처리와 장치 실행을 통합 제공하는 개발 기반이다.</span></li>
@@ -312,8 +312,8 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="multimodal-language-model"><a href="/wiki/multimodal-language-model/">멀티모달 언어 모델</a><span class="wiki-index-summary">멀티모달 언어 모델은 텍스트와 이미지, 오디오 등 다른 양식의 표현을 언어 모델과 결합해 이해와 생성을 수행한다.</span></li>
 <li data-article-id="multimodal-fusion"><a href="/wiki/multimodal-fusion/">멀티모달 융합</a><span class="wiki-index-summary">멀티모달 융합은 둘 이상의 모달리티 표현을 결합해 단일 채널보다 풍부한 예측이나 생성을 수행하는 과정이다.</span></li>
 <li data-article-id="multimodal-embedding"><a href="/wiki/multimodal-embedding/">멀티모달 임베딩</a><span class="wiki-index-summary">서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다.</span></li>
-<li data-article-id="multimodal-instruction-tuning"><a href="/wiki/multimodal-instruction-tuning/">멀티모달 지시 튜닝</a><span class="wiki-index-summary">멀티모달 지시 미세조정은 이미지·음성 등과 자연어 지시 및 응답의 짝으로 모델을 조정해 대화형 과제를 수행하게 하는 과정이다.</span></li>
-<li data-article-id="multimodal-jailbreak"><a href="/wiki/multimodal-jailbreak/">멀티모달 탈옥 공격</a><span class="wiki-index-summary">멀티모달 탈옥은 텍스트 외 이미지·음성 등 입력 채널을 이용해 모델의 안전 정책이나 입력 검사를 우회하도록 유도하는 공격이다.</span></li>
+<li data-article-id="multimodal-instruction-tuning"><a href="/wiki/multimodal-instruction-tuning/">멀티모달 지시 튜닝</a><span class="wiki-index-summary">멀티모달 지시 튜닝은 이미지·음성 등과 자연어 지시 및 응답의 짝으로 모델을 조정해 대화형 과제를 수행하게 하는 과정이다.</span></li>
+<li data-article-id="multimodal-jailbreak"><a href="/wiki/multimodal-jailbreak/">멀티모달 탈옥 공격</a><span class="wiki-index-summary">멀티모달 탈옥 공격은 텍스트 외 이미지·음성 등 입력 채널을 이용해 모델의 안전 정책이나 입력 검사를 우회하도록 유도하는 공격이다.</span></li>
 <li data-article-id="multimodal-tokenizer"><a href="/wiki/multimodal-tokenizer/">멀티모달 토크나이저</a><span class="wiki-index-summary">멀티모달 토크나이저는 이미지·음성·영상 같은 연속 신호를 모델이 다룰 토큰 또는 토큰 유사 표현으로 변환하는 구성 요소다.</span></li>
 <li data-article-id="multimodal-transformer"><a href="/wiki/multimodal-transformer/">멀티모달 트랜스포머</a><span class="wiki-index-summary">멀티모달 트랜스포머는 텍스트·이미지·음성 등 서로 다른 양식의 토큰을 어텐션으로 결합해 공동 표현이나 출력을 만드는 모델이다.</span></li>
 <li data-article-id="multimodal-evaluation"><a href="/wiki/multimodal-evaluation/">멀티모달 평가</a><span class="wiki-index-summary">멀티모달 평가는 둘 이상의 입력·출력 양식을 사용하는 모델의 인식·정렬·추론·생성 품질을 함께 측정하는 평가 체계다.</span></li>
@@ -478,13 +478,13 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="convex-optimization"><a href="/wiki/convex-optimization/">볼록 최적화</a><span class="wiki-index-summary">볼록 최적화는 볼록 목적 함수와 볼록 가능 영역에서 최솟값을 찾는 최적화 문제와 방법을 다루는 분야다.</span></li>
 <li data-article-id="convex-function"><a href="/wiki/convex-function/">볼록 함수</a><span class="wiki-index-summary">볼록 함수는 정의역의 두 점을 잇는 선분 위 함수값이 두 끝점 함수값의 선형 보간보다 크지 않은 함수다.</span></li>
 <li data-article-id="floating-point-arithmetic"><a href="/wiki/floating-point-arithmetic/">부동소수점 연산</a><span class="wiki-index-summary">부동소수점 연산은 실수를 부호, 유효숫자와 지수의 유한 비트 표현으로 근사해 계산하는 방식이다.</span></li>
-<li data-article-id="subgraph-retrieval"><a href="/wiki/subgraph-retrieval/">부분 그래프 검색</a><span class="wiki-index-summary">하위 그래프 검색은 질의에 답하는 데 필요한 연결된 노드와 관계 집합을 지식 그래프에서 선택하는 작업이다.</span></li>
+<li data-article-id="subgraph-retrieval"><a href="/wiki/subgraph-retrieval/">부분 그래프 검색</a><span class="wiki-index-summary">부분 그래프 검색은 질의에 답하는 데 필요한 연결된 노드와 관계 집합을 지식 그래프에서 선택하는 작업이다.</span></li>
 <li data-article-id="boosting"><a href="/wiki/boosting/">부스팅</a><span class="wiki-index-summary">부스팅은 약한 학습기를 순차적으로 추가하면서 이전 단계가 어려워한 표본이나 잔차에 더 집중하는 앙상블 계열이다.</span></li>
 <li data-article-id="bootstrap-method"><a href="/wiki/bootstrap-method/">부트스트랩 방법</a><span class="wiki-index-summary">부트스트랩은 관측 표본에서 복원 추출한 재표본을 반복 생성해 추정량의 표집분포를 근사하는 방법이다.</span></li>
 <li data-article-id="bootstrap-confidence-interval"><a href="/wiki/bootstrap-confidence-interval/">부트스트랩 신뢰구간</a><span class="wiki-index-summary">부트스트랩 신뢰구간은 관측 표본을 복원 추출해 통계량의 경험적 표집분포를 만들고 그 분위수 등으로 구한 불확실성 구간이다.</span></li>
 <li data-article-id="coding-theory"><a href="/wiki/coding-theory/">부호 이론</a><span class="wiki-index-summary">부호 이론은 정보를 효율적이고 신뢰성 있게 표현·전송하기 위한 부호의 한계와 구성 방법을 연구하는 분야다.</span></li>
 <li data-article-id="classification"><a href="/wiki/classification/">분류</a><span class="wiki-index-summary">분류는 입력을 미리 정의된 하나 이상의 범주로 예측하는 지도학습 문제다.</span></li>
-<li data-article-id="classifier-free-guidance"><a href="/wiki/classifier-free-guidance/">분류기 없는 가이던스</a><span class="wiki-index-summary">분류기 비사용 유도는 별도 분류기 없이 조건부와 무조건부 확산 예측의 차이를 이용해 조건 일치도를 조절하는 방법이다.</span></li>
+<li data-article-id="classifier-free-guidance"><a href="/wiki/classifier-free-guidance/">분류기 없는 가이던스</a><span class="wiki-index-summary">분류기 없는 가이던스는 별도 분류기 없이 조건부와 무조건부 확산 예측의 차이를 이용해 조건 일치도를 조절하는 방법이다.</span></li>
 <li data-article-id="disentangled-representation"><a href="/wiki/disentangled-representation/">분리 표현</a><span class="wiki-index-summary">분리 표현은 데이터의 서로 다른 생성 요인이 잠재 표현의 독립적이거나 해석 가능한 성분에 대응하도록 만든 표현이다.</span></li>
 <li data-article-id="variance"><a href="/wiki/variance/">분산</a><span class="wiki-index-summary">분산은 확률변수가 평균에서 얼마나 퍼져 있는지를 평균 제곱 편차로 나타낸 값이다.</span></li>
 <li data-article-id="distributed-optimizer"><a href="/wiki/distributed-optimizer/">분산 옵티마이저</a><span class="wiki-index-summary">분산 옵티마이저는 대규모 학습에서 옵티마이저 상태와 파라미터 갱신 계산을 여러 장치에 분배하는 최적화 구성이다.</span></li>
@@ -508,7 +508,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="video-diffusion"><a href="/wiki/video-diffusion/">비디오 확산</a><span class="wiki-index-summary">비디오 확산은 잡음에서 시작해 시공간적으로 일관된 영상 표본을 반복 복원하는 생성 모형이다.</span></li>
 <li data-article-id="secret-management"><a href="/wiki/secret-management/">비밀정보 관리</a><span class="wiki-index-summary">비밀정보 관리는 API 키, 비밀번호와 암호키의 생성·저장·배포·사용·교체·폐기를 통제하는 수명주기 활동이다.</span></li>
 <li data-article-id="cost-monitoring"><a href="/wiki/cost-monitoring/">비용 모니터링</a><span class="wiki-index-summary">비용 모니터링은 AI 서비스의 사용량과 가격을 지속 결합해 실제 지출, 단위 비용과 예산 소진을 관찰하는 활동이다.</span></li>
-<li data-article-id="fairness-through-unawareness"><a href="/wiki/fairness-through-unawareness/">비인지에 의한 공정성</a><span class="wiki-index-summary">비인지 공정성은 모델 입력에서 보호 속성을 제거하면 공정해진다고 보는 접근이다.</span></li>
+<li data-article-id="fairness-through-unawareness"><a href="/wiki/fairness-through-unawareness/">비인지에 의한 공정성</a><span class="wiki-index-summary">비인지에 의한 공정성은 모델 입력에서 보호 속성을 제거하면 공정해진다고 보는 접근이다.</span></li>
 <li data-article-id="vision-transformer"><a href="/wiki/vision-transformer/">비전 트랜스포머</a><span class="wiki-index-summary">비전 트랜스포머는 이미지를 고정 크기 패치 토큰 시퀀스로 바꾸어 트랜스포머 인코더로 처리하는 시각 모델이다.</span></li>
 <li data-article-id="vision-language-model"><a href="/wiki/vision-language-model/">비전-언어 모델</a><span class="wiki-index-summary">이미지와 텍스트의 관계를 학습해 이해와 생성을 수행하는 멀티모달 모델이다.</span></li>
 <li data-article-id="unsupervised-learning"><a href="/wiki/unsupervised-learning/">비지도학습</a><span class="wiki-index-summary">정답 표지 없이 데이터 내부의 구조·군집·표현을 찾는 학습 방식이다.</span></li>
@@ -522,7 +522,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <h2 id="index-ko-s">ㅅ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="chain-of-thought-prompting"><a href="/wiki/chain-of-thought-prompting/">사고 과정 프롬프팅</a><span class="wiki-index-summary">사고 과정 프롬프팅은 복수 단계 문제에서 중간 추론 단계를 생성하도록 예시나 지시를 제공하는 프롬프팅 방식이다.</span></li>
-<li data-article-id="usage-metering"><a href="/wiki/usage-metering/">사용량 계측</a><span class="wiki-index-summary">사용량 계량은 API 요청이 소비한 호출 수, 토큰, 바이트, 시간과 연산 자원을 귀속 가능한 측정값으로 기록하는 과정이다.</span></li>
+<li data-article-id="usage-metering"><a href="/wiki/usage-metering/">사용량 계측</a><span class="wiki-index-summary">사용량 계측은 API 요청이 소비한 호출 수, 토큰, 바이트, 시간과 연산 자원을 귀속 가능한 측정값으로 기록하는 과정이다.</span></li>
 <li data-article-id="user-prompt"><a href="/wiki/user-prompt/">사용자 프롬프트</a><span class="wiki-index-summary">사용자 프롬프트는 사용자가 모델에 전달하는 질문, 자료, 제약과 원하는 결과 형식을 담은 입력 메시지다.</span></li>
 <li data-article-id="user-feedback-collection"><a href="/wiki/user-feedback-collection/">사용자 피드백 수집</a><span class="wiki-index-summary">사용자 피드백 수집은 실제 이용자가 AI 결과의 유용성·정확성·안전성에 제공한 명시적·암묵적 신호를 구조화해 기록하는 과정이다.</span></li>
 <li data-article-id="sinusoidal-position-encoding"><a href="/wiki/sinusoidal-position-encoding/">사인파 위치 인코딩</a><span class="wiki-index-summary">사인파 위치 인코딩은 서로 다른 주파수의 사인·코사인 함숫값으로 토큰 위치를 나타내는 고정 벡터 방식이다.</span></li>
@@ -535,7 +535,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="correlation"><a href="/wiki/correlation/">상관관계</a><span class="wiki-index-summary">상관관계는 두 변수의 선형 동행 정도를 각 표준편차로 정규화해 단위 없이 나타낸 값이다.</span></li>
 <li data-article-id="relative-position-encoding"><a href="/wiki/relative-position-encoding/">상대 위치 인코딩</a><span class="wiki-index-summary">상대 위치 인코딩은 두 토큰의 절대 인덱스 대신 서로 떨어진 거리와 방향을 어텐션 계산에 반영하는 방식이다.</span></li>
 <li data-article-id="commercial-use-restriction"><a href="/wiki/commercial-use-restriction/">상업적 이용 제한</a><span class="wiki-index-summary">상업적 이용 제한은 수익 활동, 유료 서비스 또는 기업 내부 운영 등 일정한 경제적 사용을 금지하거나 별도 허가 대상으로 두는 조건이다.</span></li>
-<li data-article-id="state-space-transformer-hybrid"><a href="/wiki/state-space-transformer-hybrid/">상태 공간-트랜스포머 하이브리드</a><span class="wiki-index-summary">상태공간-트랜스포머 하이브리드는 선형 상태공간 시퀀스 층과 어텐션 층을 한 모델에서 결합한 구조다.</span></li>
+<li data-article-id="state-space-transformer-hybrid"><a href="/wiki/state-space-transformer-hybrid/">상태 공간-트랜스포머 하이브리드</a><span class="wiki-index-summary">상태 공간-트랜스포머 하이브리드는 선형 상태공간 시퀀스 층과 어텐션 층을 한 모델에서 결합한 구조다.</span></li>
 <li data-article-id="state-management"><a href="/wiki/state-management/">상태 관리</a><span class="wiki-index-summary">여러 단계에 걸쳐 입력·중간 결과·진행 상황을 일관되게 유지하는 방법이다.</span></li>
 <li data-article-id="stateful-api"><a href="/wiki/stateful-api/">상태 유지 API</a><span class="wiki-index-summary">상태 유지 API는 여러 요청 사이의 세션·대화·작업 상태를 서버 측 식별자와 연결해 이어서 처리하는 API다.</span></li>
 <li data-article-id="mutual-tls"><a href="/wiki/mutual-tls/">상호 TLS</a><span class="wiki-index-summary">상호 TLS는 TLS 연결에서 서버뿐 아니라 클라이언트도 인증서를 제시해 양쪽 신원을 검증하는 인증 방식이다.</span></li>
@@ -553,7 +553,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="serverless-inference"><a href="/wiki/serverless-inference/">서버리스 추론</a><span class="wiki-index-summary">서버리스 추론은 사용자가 서버를 상시 관리하지 않고 요청이나 작업량에 따라 자동 할당되는 실행 환경에서 모델을 제공하는 방식이다.</span></li>
 <li data-article-id="subword-token"><a href="/wiki/subword-token/">서브워드 토큰</a><span class="wiki-index-summary">서브워드 토큰은 단어보다 작고 문자보다 긴 경우가 많은 반복 문자열 조각을 나타내는 토큰이다.</span></li>
 <li data-article-id="service-level-objective"><a href="/wiki/service-level-objective/">서비스 수준 목표</a><span class="wiki-index-summary">서비스 수준 목표는 지연시간, 가용성이나 오류율 같은 서비스 지표가 일정 기간 충족해야 할 수치 목표다.</span></li>
-<li data-article-id="service-level-agreement"><a href="/wiki/service-level-agreement/">서비스 수준 협약</a><span class="wiki-index-summary">서비스 수준 계약은 제공자와 이용자 사이에 가용성·지연·지원·보상 같은 측정 가능한 서비스 약속을 정한 합의다.</span></li>
+<li data-article-id="service-level-agreement"><a href="/wiki/service-level-agreement/">서비스 수준 협약</a><span class="wiki-index-summary">서비스 수준 협약은 제공자와 이용자 사이에 가용성·지연·지원·보상 같은 측정 가능한 서비스 약속을 정한 합의다.</span></li>
 <li data-article-id="circuit-breaker"><a href="/wiki/circuit-breaker/">서킷 브레이커</a><span class="wiki-index-summary">회로 차단기는 하류 서비스의 반복 실패가 일정 기준을 넘으면 새 호출을 빠르게 차단해 연쇄 장애를 막는 패턴이다.</span></li>
 <li data-article-id="support-vector-machine"><a href="/wiki/support-vector-machine/">서포트 벡터 머신</a><span class="wiki-index-summary">서포트 벡터 머신은 클래스 사이 여백을 최대화하는 결정 경계 또는 커널 공간의 회귀 함수를 학습하는 모델이다.</span></li>
 <li data-article-id="line-search"><a href="/wiki/line-search/">선 탐색</a><span class="wiki-index-summary">선 탐색은 현재점과 탐색 방향이 주어졌을 때 목적 함수를 충분히 줄이는 이동 거리인 스텝 크기를 선택하는 절차다.</span></li>
@@ -633,7 +633,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="realtime-api"><a href="/wiki/realtime-api/">실시간 API</a><span class="wiki-index-summary">실시간 API는 음성·텍스트·이벤트를 지속적인 양방향 연결에서 낮은 지연으로 주고받는 모델 인터페이스다.</span></li>
 <li data-article-id="experiment-dashboard"><a href="/wiki/experiment-dashboard/">실험 대시보드</a><span class="wiki-index-summary">실험 대시보드는 여러 학습 실행의 매개변수, 지표와 산출물을 조회·비교하는 시각적 운영 화면이다.</span></li>
 <li data-article-id="experiment-tracking"><a href="/wiki/experiment-tracking/">실험 추적</a><span class="wiki-index-summary">실험 추적은 학습 실행의 코드 버전, 하이퍼파라미터, 지표, 산출물과 환경을 연결해 비교 가능하게 기록하는 체계다.</span></li>
-<li data-article-id="judge-model"><a href="/wiki/judge-model/">심사 모델</a><span class="wiki-index-summary">판정 모델은 하나 이상의 후보 응답을 평가 기준에 따라 채점하거나 비교하도록 지시된 언어 모델이다.</span></li>
+<li data-article-id="judge-model"><a href="/wiki/judge-model/">심사 모델</a><span class="wiki-index-summary">심사 모델은 하나 이상의 후보 응답을 평가 기준에 따라 채점하거나 비교하도록 지시된 언어 모델이다.</span></li>
 <li data-article-id="judge-meta-evaluation"><a href="/wiki/judge-meta-evaluation/">심사 모델 메타평가</a><span class="wiki-index-summary">심사 모델 메타평가는 자동 판정자 자체의 정확성, 일관성, 편향과 강건성을 평가하는 절차다.</span></li>
 <li data-article-id="judge-calibration"><a href="/wiki/judge-calibration/">심사 모델 보정</a><span class="wiki-index-summary">심사 모델 보정은 판정 모델이 내는 점수나 확률이 실제 품질 수준 또는 사람 판단 빈도와 맞도록 조정하는 과정이다.</span></li>
 <li data-article-id="judge-ensemble"><a href="/wiki/judge-ensemble/">심사 모델 앙상블</a><span class="wiki-index-summary">심사 모델 앙상블은 서로 다른 판정 모델이나 판정 설정의 결과를 결합해 단일 판정자의 변동과 편향을 줄이는 방법이다.</span></li>
@@ -647,13 +647,13 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <ul class="wiki-index-list">
 <li data-article-id="pairwise-comparison"><a href="/wiki/pairwise-comparison/">쌍대 비교</a><span class="wiki-index-summary">쌍대 비교는 두 후보를 동시에 제시하고 어느 쪽이 기준에 더 부합하는지 선택하게 하는 평가 방식이다.</span></li>
 <li data-article-id="pairwise-preference-ranking"><a href="/wiki/pairwise-preference-ranking/">쌍대 선호 순위화</a><span class="wiki-index-summary">쌍대 선호 순위화는 두 후보 중 선호되는 항목을 관측해 전체 후보의 상대적 품질이나 보상 함수를 학습하는 방식이다.</span></li>
-<li data-article-id="pairwise-llm-judge"><a href="/wiki/pairwise-llm-judge/">쌍대 LLM 심사</a><span class="wiki-index-summary">쌍대 LLM 판정은 평가 모델이 두 후보 응답을 나란히 비교해 더 나은 쪽이나 동률을 선택하는 방식이다.</span></li>
+<li data-article-id="pairwise-llm-judge"><a href="/wiki/pairwise-llm-judge/">쌍대 LLM 심사</a><span class="wiki-index-summary">쌍대 LLM 심사은 평가 모델이 두 후보 응답을 나란히 비교해 더 나은 쪽이나 동률을 선택하는 방식이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-ng">
 <h2 id="index-ko-ng">ㅇ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="sycophancy"><a href="/wiki/sycophancy/">아첨 현상</a><span class="wiki-index-summary">아첨 편향은 모델이 사실이나 독립 판단보다 사용자가 드러낸 신념과 선호에 과도하게 동조하는 행동이다.</span></li>
+<li data-article-id="sycophancy"><a href="/wiki/sycophancy/">아첨 현상</a><span class="wiki-index-summary">아첨 현상은 모델이 사실이나 독립 판단보다 사용자가 드러낸 신념과 선호에 과도하게 동조하는 행동이다.</span></li>
 <li data-article-id="artifact-registry"><a href="/wiki/artifact-registry/">아티팩트 레지스트리</a><span class="wiki-index-summary">아티팩트 레지스트리는 모델·컨테이너·데이터 패키지 같은 빌드 산출물을 식별자와 버전으로 관리하는 서비스다.</span></li>
 <li data-article-id="saddle-point"><a href="/wiki/saddle-point/">안장점</a><span class="wiki-index-summary">안장점은 어떤 방향에서는 함수가 증가하고 다른 방향에서는 감소해 국소 최소나 최대가 아닌 정지점이다.</span></li>
 <li data-article-id="safety-benchmark"><a href="/wiki/safety-benchmark/">안전 벤치마크</a><span class="wiki-index-summary">안전 벤치마크는 유해 출력, 편향, 보안 취약성이나 거부 행동 등 모델의 위험 관련 특성을 측정하는 평가다.</span></li>
@@ -691,7 +691,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="inter-agent-communication"><a href="/wiki/inter-agent-communication/">에이전트 간 통신</a><span class="wiki-index-summary">에이전트 간 통신은 에이전트들이 의도, 관측, 요청과 결과를 정해진 메시지 형식으로 교환하는 메커니즘이다.</span></li>
 <li data-article-id="agent-plan-quality"><a href="/wiki/agent-plan-quality/">에이전트 계획 품질</a><span class="wiki-index-summary">에이전트 계획 품질은 목표를 달성하기 위한 단계가 타당한 순서·의존성·완료 조건·비용·위험을 얼마나 잘 표현하는지 나타내는 평가 대상이다.</span></li>
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-index-summary">복잡한 에이전트 과제를 실행 가능하고 검증 가능한 하위 과제로 나누고 의존 관계를 정하는 과정이다.</span></li>
-<li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공은 주어진 목표의 필수 완료 조건과 제약을 에이전트 실행 결과가 모두 만족한 상태다.</span></li>
+<li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공률은 주어진 목표의 필수 완료 조건과 제약을 모두 만족한 독립 실행이 전체 시도에서 차지하는 비율이다.</span></li>
 <li data-article-id="agent-trajectory-evaluation"><a href="/wiki/agent-trajectory-evaluation/">에이전트 궤적 평가</a><span class="wiki-index-summary">에이전트 궤적 평가는 최종 답뿐 아니라 관측·추론·도구 호출·상태 전환으로 이어지는 실행 경로의 품질을 판정하는 방법이다.</span></li>
 <li data-article-id="short-term-agent-memory"><a href="/wiki/short-term-agent-memory/">에이전트 단기 기억</a><span class="wiki-index-summary">에이전트 단기 기억은 한 세션이나 인접한 작업 단계 사이에서 최근 대화와 행동 결과를 유지하는 임시 기억 계층이다.</span></li>
 <li data-article-id="agent-tool"><a href="/wiki/agent-tool/">에이전트 도구</a><span class="wiki-index-summary">에이전트 도구는 모델이 외부 정보 조회나 상태 변경을 수행할 수 있도록 명세된 함수·API·실행 환경이다.</span></li>
@@ -758,7 +758,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="audio-token"><a href="/wiki/audio-token/">오디오 토큰</a><span class="wiki-index-summary">오디오 토큰은 음성·음악 파형의 짧은 구간이나 압축 코드에 대응하는 연속 또는 이산 표현 단위다.</span></li>
 <li data-article-id="audio-api"><a href="/wiki/audio-api/">오디오 API</a><span class="wiki-index-summary">오디오 API는 음성 인식, 번역, 합성 등 오디오 입력과 출력을 모델 서비스로 요청하는 인터페이스다.</span></li>
 <li data-article-id="overflow-underflow"><a href="/wiki/overflow-underflow/">오버플로와 언더플로</a><span class="wiki-index-summary">오버플로와 언더플로는 계산 결과의 크기가 수치 형식이 표현할 최대 범위를 넘거나 최소 정상 범위보다 작아지는 현상이다.</span></li>
-<li data-article-id="abuse-testing"><a href="/wiki/abuse-testing/">오용 테스트</a><span class="wiki-index-summary">오용 시험은 허용되지 않은 목적을 가진 사용자가 정상 기능을 악용할 때 시스템이 이를 예방·탐지·제한하는지 평가하는 활동이다.</span></li>
+<li data-article-id="abuse-testing"><a href="/wiki/abuse-testing/">오용 테스트</a><span class="wiki-index-summary">오용 테스트은 허용되지 않은 목적을 가진 사용자가 정상 기능을 악용할 때 시스템이 이를 예방·탐지·제한하는지 평가하는 활동이다.</span></li>
 <li data-article-id="orchestrator-agent"><a href="/wiki/orchestrator-agent/">오케스트레이터 에이전트</a><span class="wiki-index-summary">오케스트레이터 에이전트는 여러 작업자와 도구 사이의 의존 관계, 순서, 병렬 실행과 결과 통합을 조정한다.</span></li>
 <li data-article-id="autoencoder"><a href="/wiki/autoencoder/">오토인코더</a><span class="wiki-index-summary">오토인코더는 입력을 잠재 표현으로 압축하는 인코더와 그 표현에서 입력을 복원하는 디코더를 함께 학습하는 신경망이다.</span></li>
 <li data-article-id="offline-preference-learning"><a href="/wiki/offline-preference-learning/">오프라인 선호 학습</a><span class="wiki-index-summary">오프라인 선호 학습은 미리 수집해 고정한 비교·순위 데이터만으로 정책 또는 보상 모델을 최적화하는 방식이다.</span></li>
@@ -771,7 +771,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="ontology"><a href="/wiki/ontology/">온톨로지</a><span class="wiki-index-summary">온톨로지는 특정 영역의 개념·관계·제약을 명시적인 형식 의미와 함께 정의한 지식 표현 체계다.</span></li>
 <li data-article-id="on-premises-ai"><a href="/wiki/on-premises-ai/">온프레미스 AI</a><span class="wiki-index-summary">온프레미스 AI는 조직이 직접 통제하는 시설과 인프라에서 모델·데이터·추론 서비스를 운영하는 배포 형태다.</span></li>
 <li data-article-id="optimizer-state"><a href="/wiki/optimizer-state/">옵티마이저 상태</a><span class="wiki-index-summary">옵티마이저 상태는 학습 갱신을 계산하기 위해 매개변수 외에 유지하는 모멘트, 누적 그래디언트, 단계 수 등의 값이다.</span></li>
-<li data-article-id="fully-sharded-data-parallel"><a href="/wiki/fully-sharded-data-parallel/">완전 샤딩 데이터 병렬화</a><span class="wiki-index-summary">완전 샤딩 데이터 병렬은 모델 파라미터·기울기·옵티마이저 상태를 데이터 병렬 작업자에 분할해 메모리 중복을 줄이는 학습 방식이다.</span></li>
+<li data-article-id="fully-sharded-data-parallel"><a href="/wiki/fully-sharded-data-parallel/">완전 샤딩 데이터 병렬화</a><span class="wiki-index-summary">완전 샤딩 데이터 병렬화은 모델 파라미터·기울기·옵티마이저 상태를 데이터 병렬 작업자에 분할해 메모리 중복을 줄이는 학습 방식이다.</span></li>
 <li data-article-id="exact-match"><a href="/wiki/exact-match/">완전 일치</a><span class="wiki-index-summary">완전 일치는 예측 문자열이나 구조가 정답과 사전에 정한 정규화 뒤 정확히 같은지를 세는 평가 지표다.</span></li>
 <li data-article-id="dense-layer"><a href="/wiki/dense-layer/">완전연결층</a><span class="wiki-index-summary">완전연결층은 모든 입력 특성과 모든 출력 유닛 사이에 학습 가능한 가중치를 두는 신경망 층이다.</span></li>
 <li data-article-id="outer-product"><a href="/wiki/outer-product/">외적곱</a><span class="wiki-index-summary">한 벡터의 각 성분과 다른 벡터의 각 성분을 모두 곱해 행렬을 만드는 연산이다.</span></li>
@@ -840,7 +840,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="causal-mask"><a href="/wiki/causal-mask/">인과 마스크</a><span class="wiki-index-summary">현재 위치가 미래 토큰을 참조하지 못하게 어텐션 점수를 제한하는 마스크다.</span></li>
 <li data-article-id="causal-language-model"><a href="/wiki/causal-language-model/">인과 언어 모델</a><span class="wiki-index-summary">인과 언어 모델은 각 위치가 자신보다 앞선 토큰만 보도록 제한해 다음 토큰 예측을 학습하는 언어 모델이다.</span></li>
 <li data-article-id="causal-language-modeling-objective"><a href="/wiki/causal-language-modeling-objective/">인과 언어 모델링 목표</a><span class="wiki-index-summary">인과 언어 모델링 목표는 이전 토큰들만 조건으로 다음 토큰의 확률을 높이도록 모델을 학습하는 목적 함수다.</span></li>
-<li data-article-id="demographic-parity"><a href="/wiki/demographic-parity/">인구통계학적 동등성</a><span class="wiki-index-summary">인구통계적 동등성은 보호 집단과 무관하게 긍정 예측의 비율이 같도록 요구하는 공정성 기준이다.</span></li>
+<li data-article-id="demographic-parity"><a href="/wiki/demographic-parity/">인구통계학적 동등성</a><span class="wiki-index-summary">인구통계학적 동등성은 보호 집단과 무관하게 긍정 예측의 비율이 같도록 요구하는 공정성 기준이다.</span></li>
 <li data-article-id="index-building"><a href="/wiki/index-building/">인덱스 구축</a><span class="wiki-index-summary">인덱스 구축은 문서나 벡터를 검색 가능한 자료 구조로 변환해 질의 시 전체 데이터를 직접 순회하지 않게 하는 과정이다.</span></li>
 <li data-article-id="index-replication"><a href="/wiki/index-replication/">인덱스 복제</a><span class="wiki-index-summary">인덱스 복제는 같은 검색 인덱스의 사본을 여러 노드에 유지해 처리량과 가용성을 높이는 방식이다.</span></li>
 <li data-article-id="index-sharding"><a href="/wiki/index-sharding/">인덱스 샤딩</a><span class="wiki-index-summary">인덱스 샤딩은 큰 검색 인덱스를 키 범위·해시·의미 영역 등에 따라 여러 노드나 파티션으로 나누는 방식이다.</span></li>
@@ -874,7 +874,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="self-supervised-learning"><a href="/wiki/self-supervised-learning/">자기지도학습</a><span class="wiki-index-summary">데이터 자체에서 학습 목표를 만들어 대규모 비표지 데이터로 표현을 익히는 방식이다.</span></li>
 <li data-article-id="autoregressive-language-model"><a href="/wiki/autoregressive-language-model/">자기회귀 언어 모델</a><span class="wiki-index-summary">자기회귀 언어 모델은 앞선 토큰을 조건으로 다음 토큰 확률을 예측하며 시퀀스의 결합확률을 분해하는 모델이다.</span></li>
 <li data-article-id="automatic-differentiation"><a href="/wiki/automatic-differentiation/">자동 미분</a><span class="wiki-index-summary">자동 미분은 프로그램의 기본 연산에 연쇄법칙을 기계적으로 적용해 도함수를 부동소수점 정확도로 계산하는 기법이다.</span></li>
-<li data-article-id="automatic-rater"><a href="/wiki/automatic-rater/">자동 평가자</a><span class="wiki-index-summary">자동 평가기는 규칙, 통계 모델 또는 언어 모델을 사용해 시스템 출력을 사람의 개별 판정 없이 점수화하는 평가 구성 요소다.</span></li>
+<li data-article-id="automatic-rater"><a href="/wiki/automatic-rater/">자동 평가자</a><span class="wiki-index-summary">자동 평가자는 규칙, 통계 모델 또는 언어 모델을 사용해 시스템 출력을 사람의 개별 판정 없이 점수화하는 평가 구성 요소다.</span></li>
 <li data-article-id="automatic-prompt-optimization"><a href="/wiki/automatic-prompt-optimization/">자동 프롬프트 최적화</a><span class="wiki-index-summary">자동 프롬프트 최적화는 평가 신호를 사용해 프롬프트 후보를 자동 생성·선택·수정하는 탐색 과정이다.</span></li>
 <li data-article-id="working-memory"><a href="/wiki/working-memory/">작업 기억</a><span class="wiki-index-summary">작업 기억은 현재 과제를 해결하는 동안 필요한 목표·중간 결과·제약을 짧은 범위에서 유지하는 활성 정보 공간이다.</span></li>
 <li data-article-id="worker-agent"><a href="/wiki/worker-agent/">작업자 에이전트</a><span class="wiki-index-summary">작업자 에이전트는 명확한 입력과 완료 조건을 가진 제한된 하위 작업을 수행하는 역할형 에이전트다.</span></li>
@@ -899,9 +899,9 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="low-rank-attention"><a href="/wiki/low-rank-attention/">저랭크 어텐션</a><span class="wiki-index-summary">저랭크 어텐션은 키·값이나 어텐션 행렬이 더 낮은 차원 구조로 근사될 수 있다는 가정을 이용해 계산량을 줄이는 방법이다.</span></li>
 <li data-article-id="attribution-requirement"><a href="/wiki/attribution-requirement/">저작자 표시 의무</a><span class="wiki-index-summary">저작자 표시 의무는 아티팩트를 사용하거나 배포할 때 원저작자, 출처와 라이선스 고지를 유지하도록 요구하는 조건이다.</span></li>
 <li data-article-id="adversarial-example"><a href="/wiki/adversarial-example/">적대적 예시</a><span class="wiki-index-summary">사람이 보기에는 같거나 의미가 유지되지만 모델의 예측을 바꾸도록 의도적으로 조작된 입력이다.</span></li>
-<li data-article-id="adversarial-testing"><a href="/wiki/adversarial-testing/">적대적 테스트</a><span class="wiki-index-summary">적대적 시험은 시스템이 최악 조건이나 의도적으로 조작된 입력에서 어떻게 실패하는지 확인하는 검증 방법이다.</span></li>
+<li data-article-id="adversarial-testing"><a href="/wiki/adversarial-testing/">적대적 테스트</a><span class="wiki-index-summary">적대적 테스트은 시스템이 최악 조건이나 의도적으로 조작된 입력에서 어떻게 실패하는지 확인하는 검증 방법이다.</span></li>
 <li data-article-id="adaptive-retrieval"><a href="/wiki/adaptive-retrieval/">적응형 검색</a><span class="wiki-index-summary">적응형 검색은 질문 난이도와 현재 모델의 불확실성에 따라 검색 여부, 횟수, 질의 또는 검색 범위를 동적으로 바꾸는 방식이다.</span></li>
-<li data-article-id="adaptive-computation-time-transformer"><a href="/wiki/adaptive-computation-time-transformer/">적응형 계산 시간 트랜스포머</a><span class="wiki-index-summary">적응 계산 시간 트랜스포머는 입력 위치나 예제별로 필요한 반복 계산 단계 수를 동적으로 결정하는 구조다.</span></li>
+<li data-article-id="adaptive-computation-time-transformer"><a href="/wiki/adaptive-computation-time-transformer/">적응형 계산 시간 트랜스포머</a><span class="wiki-index-summary">적응형 계산 시간 트랜스포머는 입력 위치나 예제별로 필요한 반복 계산 단계 수를 동적으로 결정하는 구조다.</span></li>
 <li data-article-id="adaptive-gradient-method"><a href="/wiki/adaptive-gradient-method/">적응형 그래디언트 방법</a><span class="wiki-index-summary">적응형 그래디언트 방법은 매개변수별 과거 기울기 통계를 이용해 유효 학습률을 자동으로 조정하는 최적화 방법군이다.</span></li>
 <li data-article-id="expert-routing"><a href="/wiki/expert-routing/">전문가 라우팅</a><span class="wiki-index-summary">전문가 라우팅은 혼합 전문가 모델에서 각 토큰을 처리할 일부 전문가를 점수화하고 선택하는 과정이다.</span></li>
 <li data-article-id="expert-parallelism"><a href="/wiki/expert-parallelism/">전문가 병렬화</a><span class="wiki-index-summary">전문가 병렬화는 혼합 전문가 모델의 여러 전문가 네트워크를 장치에 나누어 배치하는 분산 실행 방식이다.</span></li>
@@ -979,8 +979,8 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="knowledge-distillation"><a href="/wiki/knowledge-distillation/">지식 증류</a><span class="wiki-index-summary">큰 교사 모델의 출력이나 표현을 작은 학생 모델이 모방하도록 학습하는 방법이다.</span></li>
 <li data-article-id="locality-sensitive-hashing"><a href="/wiki/locality-sensitive-hashing/">지역 민감 해싱</a><span class="wiki-index-summary">지역 민감 해싱은 가까운 벡터가 같은 해시 버킷에 들어갈 확률이 높도록 설계된 해시 함수 계열이다.</span></li>
 <li data-article-id="latency"><a href="/wiki/latency/">지연 시간</a><span class="wiki-index-summary">요청을 보낸 뒤 첫 토큰 또는 전체 응답을 받을 때까지 걸리는 시간이다.</span></li>
-<li data-article-id="latency-monitoring"><a href="/wiki/latency-monitoring/">지연 시간 모니터링</a><span class="wiki-index-summary">지연시간 모니터링은 요청 시작부터 첫 토큰과 완료까지 걸린 시간을 단계별 분포로 추적하는 활동이다.</span></li>
-<li data-article-id="latency-throughput-tradeoff"><a href="/wiki/latency-throughput-tradeoff/">지연 시간-처리량 절충</a><span class="wiki-index-summary">지연시간-처리량 상충은 요청 하나의 응답 시간을 줄이는 목표와 단위 시간당 처리량을 높이는 목표가 배치·큐잉에서 충돌하는 관계다.</span></li>
+<li data-article-id="latency-monitoring"><a href="/wiki/latency-monitoring/">지연 시간 모니터링</a><span class="wiki-index-summary">지연 시간 모니터링은 요청 시작부터 첫 토큰과 완료까지 걸린 시간을 단계별 분포로 추적하는 활동이다.</span></li>
+<li data-article-id="latency-throughput-tradeoff"><a href="/wiki/latency-throughput-tradeoff/">지연 시간-처리량 절충</a><span class="wiki-index-summary">지연 시간-처리량 절충은 요청 하나의 응답 시간을 줄이는 목표와 단위 시간당 처리량을 높이는 목표가 배치·큐잉에서 충돌하는 관계다.</span></li>
 <li data-article-id="orthogonality"><a href="/wiki/orthogonality/">직교성</a><span class="wiki-index-summary">직교성은 두 벡터의 내적이 0이어서 서로 수직이며 한 방향의 성분이 다른 방향에 투영되지 않는 관계다.</span></li>
 <li data-article-id="serialization"><a href="/wiki/serialization/">직렬화</a><span class="wiki-index-summary">직렬화는 메모리의 객체나 구조화된 값을 저장·전송 가능한 바이트 또는 텍스트 표현으로 바꾸는 과정이다.</span></li>
 <li data-article-id="dpo"><a href="/wiki/dpo/">직접 선호 최적화</a><span class="wiki-index-summary">별도 강화학습 루프 없이 선호 응답과 비선호 응답으로 정책을 직접 최적화하는 방법이다.</span></li>
@@ -995,13 +995,13 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <h2 id="index-ko-ch">ㅊ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="differential-privacy"><a href="/wiki/differential-privacy/">차등 개인정보 보호</a><span class="wiki-index-summary">차등 개인정보 보호는 한 개인의 데이터 포함 여부가 공개 결과의 확률 분포에 미치는 영향을 수학적으로 제한하는 프라이버시 정의다.</span></li>
-<li data-article-id="differentially-private-training"><a href="/wiki/differentially-private-training/">차등 개인정보 보호 학습</a><span class="wiki-index-summary">차등 개인정보보호 학습은 한 개인의 학습 레코드 포함 여부가 모델 출력 분포에 미치는 영향을 수학적으로 제한하는 학습 방식이다.</span></li>
-<li data-article-id="disparate-impact"><a href="/wiki/disparate-impact/">차별적 영향</a><span class="wiki-index-summary">불균등 영향은 겉으로 중립적인 결정 규칙이 보호 집단에 결과 비율의 불리한 차이를 만드는 현상 또는 그 평가 개념이다.</span></li>
+<li data-article-id="differentially-private-training"><a href="/wiki/differentially-private-training/">차등 개인정보 보호 학습</a><span class="wiki-index-summary">차등 개인정보 보호 학습은 한 개인의 학습 레코드 포함 여부가 모델 출력 분포에 미치는 영향을 수학적으로 제한하는 학습 방식이다.</span></li>
+<li data-article-id="disparate-impact"><a href="/wiki/disparate-impact/">차별적 영향</a><span class="wiki-index-summary">차별적 영향은 겉으로 중립적인 결정 규칙이 보호 집단에 결과 비율의 불리한 차이를 만드는 현상 또는 그 평가 개념이다.</span></li>
 <li data-article-id="dimensionality-reduction"><a href="/wiki/dimensionality-reduction/">차원 축소</a><span class="wiki-index-summary">차원 축소는 데이터의 중요한 구조를 보존하면서 변수나 표현 좌표의 수를 줄이는 과정이다.</span></li>
 <li data-article-id="curse-of-dimensionality"><a href="/wiki/curse-of-dimensionality/">차원의 저주</a><span class="wiki-index-summary">차원의 저주는 변수 수가 늘어날수록 공간을 덮는 데 필요한 표본과 계산량이 급격히 증가해 추정과 탐색이 어려워지는 현상이다.</span></li>
 <li data-article-id="reference-based-evaluation"><a href="/wiki/reference-based-evaluation/">참조 기반 평가</a><span class="wiki-index-summary">참조 기반 평가는 모델 출력과 사람이 작성했거나 검증된 정답을 비교해 품질을 측정하는 방식이다.</span></li>
-<li data-article-id="reference-model"><a href="/wiki/reference-model/">참조 모델</a><span class="wiki-index-summary">기준 모델은 선호 최적화 중 새 정책의 변화량을 측정하거나 비교 확률을 계산하기 위해 고정해 두는 이전 모델이다.</span></li>
-<li data-article-id="reference-free-evaluation"><a href="/wiki/reference-free-evaluation/">참조 없는 평가</a><span class="wiki-index-summary">무참조 평가는 정답 문장 없이 입력, 출력, 평가 기준만으로 응답의 품질을 판단하는 방식이다.</span></li>
+<li data-article-id="reference-model"><a href="/wiki/reference-model/">참조 모델</a><span class="wiki-index-summary">참조 모델은 선호 최적화 중 새 정책의 변화량을 측정하거나 비교 확률을 계산하기 위해 고정해 두는 이전 모델이다.</span></li>
+<li data-article-id="reference-free-evaluation"><a href="/wiki/reference-free-evaluation/">참조 없는 평가</a><span class="wiki-index-summary">참조 없는 평가는 정답 문장 없이 입력, 출력, 평가 기준만으로 응답의 품질을 판단하는 방식이다.</span></li>
 <li data-article-id="emergent-ability"><a href="/wiki/emergent-ability/">창발적 능력</a><span class="wiki-index-summary">창발적 능력은 모델 규모나 학습량이 증가할 때 특정 측정에서 이전보다 급격히 나타나는 것처럼 보이는 과제 수행 능력이다.</span></li>
 <li data-article-id="emergent-misalignment"><a href="/wiki/emergent-misalignment/">창발적 오정렬</a><span class="wiki-index-summary">창발적 오정렬은 제한된 유해 또는 편향 학습 조건이 예상보다 넓은 상황의 부적절한 목표와 행동으로 일반화되는 현상이다.</span></li>
 <li data-article-id="channel-capacity"><a href="/wiki/channel-capacity/">채널 용량</a><span class="wiki-index-summary">채널 용량은 주어진 잡음 채널에서 오류 확률을 임의로 작게 하면서 전달할 수 있는 최대 정보율이다.</span></li>
@@ -1038,7 +1038,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="inference-capacity-planning"><a href="/wiki/inference-capacity-planning/">추론 용량 계획</a><span class="wiki-index-summary">추론 용량 계획은 예상 트래픽과 서비스 목표를 만족하도록 모델 복제본, 가속기, 메모리와 큐 용량을 산정하는 과정이다.</span></li>
 <li data-article-id="inference-autoscaling"><a href="/wiki/inference-autoscaling/">추론 자동 확장</a><span class="wiki-index-summary">추론 자동 확장은 요청량과 자원 지표에 따라 모델 복제본 수를 자동으로 늘리거나 줄이는 운영 방식이다.</span></li>
 <li data-article-id="inference-retry"><a href="/wiki/inference-retry/">추론 재시도</a><span class="wiki-index-summary">추론 재시도는 일시적 오류나 제한 응답 뒤 같은 논리 요청을 다시 수행하는 복구 전략이다.</span></li>
-<li data-article-id="reasoning-action-interleaving"><a href="/wiki/reasoning-action-interleaving/">추론-행동 교차 수행</a><span class="wiki-index-summary">추론과 행동의 교차 수행은 내부 판단과 외부 도구 실행을 번갈아 수행하며 다음 결정을 관측에 맞춰 갱신하는 에이전트 패턴이다.</span></li>
+<li data-article-id="reasoning-action-interleaving"><a href="/wiki/reasoning-action-interleaving/">추론-행동 교차 수행</a><span class="wiki-index-summary">추론-행동 교차 수행은 내부 판단과 외부 도구 실행을 번갈아 수행하며 다음 결정을 관측에 맞춰 갱신하는 에이전트 패턴이다.</span></li>
 <li data-article-id="tracing"><a href="/wiki/tracing/">추적</a><span class="wiki-index-summary">한 요청이 여러 모델·도구·단계를 거치는 실행 흐름과 시간을 기록하는 방법이다.</span></li>
 <li data-article-id="recommendation-system"><a href="/wiki/recommendation-system/">추천 시스템</a><span class="wiki-index-summary">추천 시스템은 사용자와 항목의 정보 및 상호작용을 이용해 관련성이 높은 항목을 선택·정렬하는 정보 필터링 시스템이다.</span></li>
 <li data-article-id="speculative-decoding"><a href="/wiki/speculative-decoding/">추측 디코딩</a><span class="wiki-index-summary">추측 디코딩은 작은 초안 모델이 여러 토큰 후보를 먼저 만들고 큰 목표 모델이 한 번에 검증해 자동회귀 생성 속도를 높이는 기법이다.</span></li>
@@ -1081,7 +1081,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="content-type"><a href="/wiki/content-type/">콘텐츠 유형</a><span class="wiki-index-summary">Content-Type은 HTTP 메시지 본문의 매체 유형과 문자 집합 같은 표현 정보를 알리는 헤더 필드다.</span></li>
 <li data-article-id="content-moderation"><a href="/wiki/content-moderation/">콘텐츠 조정</a><span class="wiki-index-summary">유해하거나 정책을 위반하는 콘텐츠를 탐지·분류·처리하는 과정이다.</span></li>
 <li data-article-id="moderation-api"><a href="/wiki/moderation-api/">콘텐츠 조정 API</a><span class="wiki-index-summary">콘텐츠 조정 API는 입력 콘텐츠가 안전 정책의 위험 범주에 해당하는지 분류하고 관련 점수를 제공하는 인터페이스다.</span></li>
-<li data-article-id="content-provenance"><a href="/wiki/content-provenance/">콘텐츠 출처 증명</a><span class="wiki-index-summary">콘텐츠 출처 추적은 디지털 콘텐츠의 생성 주체·도구·편집 이력과 무결성을 검증 가능한 메타데이터로 연결하는 체계다.</span></li>
+<li data-article-id="content-provenance"><a href="/wiki/content-provenance/">콘텐츠 출처 증명</a><span class="wiki-index-summary">콘텐츠 출처 증명은 디지털 콘텐츠의 생성 주체·도구·편집 이력과 무결성을 검증 가능한 메타데이터로 연결하는 체계다.</span></li>
 <li data-article-id="cold-start"><a href="/wiki/cold-start/">콜드 스타트</a><span class="wiki-index-summary">콜드 스타트는 모델 인스턴스가 없는 상태에서 런타임·가중치·캐시를 준비해 첫 요청을 처리할 때 생기는 초기화 지연이다.</span></li>
 <li data-article-id="kullback-leibler-divergence"><a href="/wiki/kullback-leibler-divergence/">쿨백-라이블러 발산</a><span class="wiki-index-summary">쿨백-라이블러 발산은 한 확률분포를 다른 분포로 근사할 때 발생하는 추가 평균 정보량을 측정한다.</span></li>
 <li data-article-id="query-key-value"><a href="/wiki/query-key-value/">쿼리·키·값</a><span class="wiki-index-summary">어텐션에서 무엇을 찾을지 나타내는 쿼리와 비교 기준인 키, 선택된 정보를 전달하는 값으로 입력 표현을 투영한 세 집합이다.</span></li>
@@ -1126,7 +1126,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="statistical-estimator"><a href="/wiki/statistical-estimator/">통계적 추정량</a><span class="wiki-index-summary">통계적 추정량은 표본 데이터의 함수로서 모집단 매개변수나 그 함수를 추정하는 확률변수다.</span></li>
 <li data-article-id="statistical-bias"><a href="/wiki/statistical-bias/">통계적 편향</a><span class="wiki-index-summary">통계적 편향은 추정량의 기대값과 추정하려는 참 매개변수 사이의 체계적인 차이다.</span></li>
 <li data-article-id="statistical-sampling"><a href="/wiki/statistical-sampling/">통계적 표본추출</a><span class="wiki-index-summary">통계적 표본추출은 모집단의 특성을 추정하기 위해 일부 관측 단위를 확률적 또는 설계된 규칙으로 선택하는 과정이다.</span></li>
-<li data-article-id="runaway-agent"><a href="/wiki/runaway-agent/">통제 이탈 에이전트</a><span class="wiki-index-summary">폭주 에이전트는 잘못된 목표·종료 조건·피드백 고리 때문에 불필요하거나 위험한 행동을 반복하며 자원과 권한을 계속 소비하는 실패 상태다.</span></li>
+<li data-article-id="runaway-agent"><a href="/wiki/runaway-agent/">통제 이탈 에이전트</a><span class="wiki-index-summary">통제 이탈 에이전트는 잘못된 목표·종료 조건·피드백 고리 때문에 불필요하거나 위험한 행동을 반복하며 자원과 권한을 계속 소비하는 실패 상태다.</span></li>
 <li data-article-id="integrated-gradients"><a href="/wiki/integrated-gradients/">통합 그래디언트</a><span class="wiki-index-summary">통합 기울기는 기준 입력에서 실제 입력까지의 경로에서 입력 기울기를 적분해 예측 차이를 특징별 기여도로 배분하는 방법이다.</span></li>
 <li data-article-id="unified-response-api"><a href="/wiki/unified-response-api/">통합 응답 API</a><span class="wiki-index-summary">통합 응답 API는 텍스트·이미지·도구 호출 같은 여러 입력과 출력 유형을 하나의 응답 객체와 이벤트 모델로 다루는 API 형식이다.</span></li>
 <li data-article-id="uri"><a href="/wiki/uri/">통합 자원 식별자</a><span class="wiki-index-summary">통합 자원 식별자(URI)는 자원을 식별하기 위한 문자열 문법의 총칭이며 URL과 URN 같은 식별 방식을 포괄한다.</span></li>
@@ -1134,10 +1134,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="turing-test"><a href="/wiki/turing-test/">튜링 테스트</a><span class="wiki-index-summary">튜링 테스트는 텍스트 대화에서 심사자가 기계와 사람을 신뢰성 있게 구분할 수 있는지로 기계의 언어적 모방 능력을 평가하는 사고실험이다.</span></li>
 <li data-article-id="transformer"><a href="/wiki/transformer/">트랜스포머</a><span class="wiki-index-summary">어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다.</span></li>
 <li data-article-id="transformer-block"><a href="/wiki/transformer-block/">트랜스포머 블록</a><span class="wiki-index-summary">트랜스포머 블록은 어텐션·피드포워드·정규화·잔차 연결을 반복 가능한 단위로 묶은 핵심 계층이다.</span></li>
-<li data-article-id="triple-store"><a href="/wiki/triple-store/">트리플 저장소</a><span class="wiki-index-summary">트리플 스토어는 지식을 주어-술어-목적어 형태의 RDF 트리플로 저장하고 그래프 패턴으로 조회하도록 최적화된 데이터베이스다.</span></li>
+<li data-article-id="triple-store"><a href="/wiki/triple-store/">트리플 저장소</a><span class="wiki-index-summary">트리플 저장소는 지식을 주어-술어-목적어 형태의 RDF 트리플로 저장하고 그래프 패턴으로 조회하도록 최적화된 데이터베이스다.</span></li>
 <li data-article-id="feature"><a href="/wiki/feature/">특성</a><span class="wiki-index-summary">특성은 예측이나 분석에 사용하도록 관측 대상을 수치·범주·벡터 등으로 표현한 입력 변수다.</span></li>
 <li data-article-id="feature-engineering"><a href="/wiki/feature-engineering/">특성 공학</a><span class="wiki-index-summary">특성 공학은 원시 관측에서 예측에 유용한 입력 변수를 선택·변환·조합하는 과정이다.</span></li>
-<li data-article-id="feature-visualization"><a href="/wiki/feature-visualization/">특성 시각화</a><span class="wiki-index-summary">특징 시각화는 신경망 내부 채널·뉴런·표현이 반응하는 입력 패턴과 데이터 사례를 보여주는 분석 방법이다.</span></li>
+<li data-article-id="feature-visualization"><a href="/wiki/feature-visualization/">특성 시각화</a><span class="wiki-index-summary">특성 시각화는 신경망 내부 채널·뉴런·표현이 반응하는 입력 패턴과 데이터 사례를 보여주는 분석 방법이다.</span></li>
 <li data-article-id="feature-store"><a href="/wiki/feature-store/">특성 저장소</a><span class="wiki-index-summary">피처 스토어는 모델 입력 특성의 정의, 계산, 저장과 온라인·오프라인 제공을 일관되게 관리하는 시스템이다.</span></li>
 <li data-article-id="feature-pyramid-network"><a href="/wiki/feature-pyramid-network/">특성 피라미드 네트워크</a><span class="wiki-index-summary">특성 피라미드 네트워크(FPN)는 서로 다른 해상도의 신경망 특징을 상향식·하향식 경로와 측면 연결로 결합하는 구조다.</span></li>
 <li data-article-id="feature-learning"><a href="/wiki/feature-learning/">특성 학습</a><span class="wiki-index-summary">특성 학습은 과제에 필요한 입력 변환과 특징을 사람이 고정하지 않고 데이터와 목적 함수로부터 학습하는 과정이다.</span></li>
@@ -1169,7 +1169,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="partial-derivative"><a href="/wiki/partial-derivative/">편미분</a><span class="wiki-index-summary">편미분은 다변수 함수에서 다른 변수는 고정하고 한 변수만 변화시킬 때의 순간 변화율이다.</span></li>
 <li data-article-id="bias-mitigation"><a href="/wiki/bias-mitigation/">편향 완화</a><span class="wiki-index-summary">편향 완화는 데이터, 모델 또는 의사결정 과정에서 특정 집단에 체계적으로 불리한 차이를 줄이는 개입이다.</span></li>
 <li data-article-id="bias"><a href="/wiki/bias/">편향 항</a><span class="wiki-index-summary">선형 변환의 기준점을 이동시키기 위해 더하는 학습 가능한 값이다.</span></li>
-<li data-article-id="bias-variance-tradeoff"><a href="/wiki/bias-variance-tradeoff/">편향-분산 절충</a><span class="wiki-index-summary">편향-분산 상충은 모델의 단순화로 생기는 체계적 오차와 학습 표본 변화에 민감한 오차 사이의 관계다.</span></li>
+<li data-article-id="bias-variance-tradeoff"><a href="/wiki/bias-variance-tradeoff/">편향-분산 절충</a><span class="wiki-index-summary">편향-분산 절충은 모델의 단순화로 생기는 체계적 오차와 학습 표본 변화에 민감한 오차 사이의 관계다.</span></li>
 <li data-article-id="bias-fairness"><a href="/wiki/bias-fairness/">편향과 공정성</a><span class="wiki-index-summary">모델의 결과가 집단이나 특성에 따라 체계적으로 불리하게 달라지는지를 다루는 개념이다.</span></li>
 <li data-article-id="evaluation-rubric"><a href="/wiki/evaluation-rubric/">평가 루브릭</a><span class="wiki-index-summary">평가 루브릭은 결과를 판단할 기준과 수준별 설명, 배점 규칙을 명시한 채점 도구다.</span></li>
 <li data-article-id="evaluation-uncertainty"><a href="/wiki/evaluation-uncertainty/">평가 불확실성</a><span class="wiki-index-summary">평가 불확실성은 제한된 표본·평가자·무작위 실행·측정 오류 때문에 보고된 모델 성능이 참 성능과 다를 수 있는 정도다.</span></li>
@@ -1275,10 +1275,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="hallucination"><a href="/wiki/hallucination/">환각</a><span class="wiki-index-summary">모델이 근거가 없거나 사실과 다른 내용을 그럴듯하게 생성하는 현상이다.</span></li>
 <li data-article-id="environment-variable-secret"><a href="/wiki/environment-variable-secret/">환경 변수 비밀정보</a><span class="wiki-index-summary">환경 변수 비밀정보는 자격 증명을 코드나 설정 파일 대신 프로세스 환경 변수로 주입하는 배포 방식이다.</span></li>
 <li data-article-id="activation-quantization"><a href="/wiki/activation-quantization/">활성값 양자화</a><span class="wiki-index-summary">활성값 양자화는 계층 사이에서 생성되는 중간 텐서를 낮은 정밀도 범위로 표현하는 기법이다.</span></li>
-<li data-article-id="activation-maximization"><a href="/wiki/activation-maximization/">활성화 최대화</a><span class="wiki-index-summary">활성 최대화는 선택한 뉴런이나 클래스 점수를 크게 만드는 입력을 경사 상승으로 합성해 선호 패턴을 탐색하는 기법이다.</span></li>
+<li data-article-id="activation-maximization"><a href="/wiki/activation-maximization/">활성화 최대화</a><span class="wiki-index-summary">활성화 최대화는 선택한 뉴런이나 클래스 점수를 크게 만드는 입력을 경사 상승으로 합성해 선호 패턴을 탐색하는 기법이다.</span></li>
 <li data-article-id="activation-function"><a href="/wiki/activation-function/">활성화 함수</a><span class="wiki-index-summary">신경망에 비선형성을 부여해 복잡한 관계를 표현하게 하는 함수다.</span></li>
 <li data-article-id="regression"><a href="/wiki/regression/">회귀</a><span class="wiki-index-summary">회귀는 입력 변수로부터 연속값이나 순서 있는 수치 목표의 조건부 경향을 추정하는 지도학습 문제다.</span></li>
-<li data-article-id="regression-evaluation"><a href="/wiki/regression-evaluation/">회귀 테스트형 평가</a><span class="wiki-index-summary">회귀 평가는 모델·프롬프트·데이터 변경 뒤 이전에 통과하던 사례와 핵심 지표가 나빠지지 않았는지 확인하는 반복 시험이다.</span></li>
+<li data-article-id="regression-evaluation"><a href="/wiki/regression-evaluation/">회귀 테스트형 평가</a><span class="wiki-index-summary">회귀 테스트형 평가는 모델·프롬프트·데이터 변경 뒤 이전에 통과하던 사례와 핵심 지표가 나빠지지 않았는지 확인하는 반복 시험이다.</span></li>
 <li data-article-id="rotary-position-embedding"><a href="/wiki/rotary-position-embedding/">회전 위치 임베딩</a><span class="wiki-index-summary">회전 위치 임베딩은 위치에 따른 회전 변환을 질의와 키 벡터의 차원 쌍에 적용해 상대 위치가 내적에 나타나게 하는 방식이다.</span></li>
 <li data-article-id="evasion-attack"><a href="/wiki/evasion-attack/">회피 공격</a><span class="wiki-index-summary">운영 중인 모델의 입력을 조작해 탐지나 올바른 분류를 피하게 만드는 추론 시점 공격이다.</span></li>
 <li data-article-id="effect-size"><a href="/wiki/effect-size/">효과 크기</a><span class="wiki-index-summary">효과 크기는 두 조건의 차이나 변수 관계의 크기를 표본 수와 분리해 정량화한 값이다.</span></li>
@@ -1304,11 +1304,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="ai-supply-chain-vulnerability"><a href="/wiki/ai-supply-chain-vulnerability/">AI 공급망 취약점</a><span class="wiki-index-summary">AI 공급망 취약점은 모델, 데이터, 라이브러리, 저장소와 배포 구성 요소 중 하나가 변조되거나 신뢰되지 않아 전체 시스템이 손상되는 위험이다.</span></li>
 <li data-article-id="ai-regulatory-classification"><a href="/wiki/ai-regulatory-classification/">AI 규제 분류</a><span class="wiki-index-summary">AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 범주와 의무 수준에 대응시키는 절차다.</span></li>
 <li data-article-id="ai-datacenter"><a href="/wiki/ai-datacenter/">AI 데이터센터</a><span class="wiki-index-summary">AI 데이터센터는 대규모 모델 학습과 추론을 위해 가속기, 고대역폭 네트워크, 저장소와 냉각·전력 설비를 통합한 시설이다.</span></li>
-<li data-article-id="ai-red-teaming"><a href="/wiki/ai-red-teaming/">AI 레드팀 평가</a><span class="wiki-index-summary">AI 레드팀은 공격자·오용자 관점에서 모델과 전체 시스템의 실패·우회·피해 경로를 체계적으로 탐색하는 평가 활동이다.</span></li>
-<li data-article-id="ai-water-footprint"><a href="/wiki/ai-water-footprint/">AI 물 발자국</a><span class="wiki-index-summary">AI 물발자국은 AI 계산을 위한 데이터센터 냉각과 전력 생산, 하드웨어 공급망에서 소비·취수되는 물의 양과 지역 영향을 나타낸 지표다.</span></li>
+<li data-article-id="ai-red-teaming"><a href="/wiki/ai-red-teaming/">AI 레드팀 평가</a><span class="wiki-index-summary">AI 레드팀 평가은 공격자·오용자 관점에서 모델과 전체 시스템의 실패·우회·피해 경로를 체계적으로 탐색하는 평가 활동이다.</span></li>
+<li data-article-id="ai-water-footprint"><a href="/wiki/ai-water-footprint/">AI 물 발자국</a><span class="wiki-index-summary">AI 물 발자국은 AI 계산을 위한 데이터센터 냉각과 전력 생산, 하드웨어 공급망에서 소비·취수되는 물의 양과 지역 영향을 나타낸 지표다.</span></li>
 <li data-article-id="ai-security-monitoring"><a href="/wiki/ai-security-monitoring/">AI 보안 모니터링</a><span class="wiki-index-summary">AI 보안 모니터링은 모델·데이터·도구·API와 사용 행위에서 공격·오용·무결성 손상을 지속 탐지하는 활동이다.</span></li>
-<li data-article-id="ai-incident-response"><a href="/wiki/ai-incident-response/">AI 사고 대응</a><span class="wiki-index-summary">AI 사건 대응은 AI 시스템의 위해·보안 침해·중대한 오작동을 식별하고 억제·복구·통지·학습하는 조직적 절차다.</span></li>
-<li data-article-id="ai-incident-reporting"><a href="/wiki/ai-incident-reporting/">AI 사고 보고</a><span class="wiki-index-summary">AI 사건 보고는 AI 시스템의 피해·오작동·보안 위반을 정해진 형식과 기한에 내부 또는 감독 기관에 알리는 절차다.</span></li>
+<li data-article-id="ai-incident-response"><a href="/wiki/ai-incident-response/">AI 사고 대응</a><span class="wiki-index-summary">AI 사고 대응은 AI 시스템의 위해·보안 침해·중대한 오작동을 식별하고 억제·복구·통지·학습하는 조직적 절차다.</span></li>
+<li data-article-id="ai-incident-reporting"><a href="/wiki/ai-incident-reporting/">AI 사고 보고</a><span class="wiki-index-summary">AI 사고 보고는 AI 시스템의 피해·오작동·보안 위반을 정해진 형식과 기한에 내부 또는 감독 기관에 알리는 절차다.</span></li>
 <li data-article-id="ai-disclosure"><a href="/wiki/ai-disclosure/">AI 사용 고지</a><span class="wiki-index-summary">AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI가 관여했다는 사실과 범위를 이용자에게 알리는 행위다.</span></li>
 <li data-article-id="ai-interoperability-standard"><a href="/wiki/ai-interoperability-standard/">AI 상호운용성 표준</a><span class="wiki-index-summary">AI 상호운용성 표준은 서로 다른 모델 형식, 런타임, 데이터·메타데이터 시스템이 의미를 보존하며 교환되도록 정한 공통 계약이다.</span></li>
 <li data-article-id="defense-in-depth-for-ai"><a href="/wiki/defense-in-depth-for-ai/">AI 심층 방어</a><span class="wiki-index-summary">AI 심층 방어는 한 통제가 실패해도 위해가 발생하지 않도록 데이터·모델·애플리케이션·도구·인프라·운영에 독립적인 보호층을 겹치는 전략이다.</span></li>
@@ -1321,11 +1321,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="ai-threat-modeling"><a href="/wiki/ai-threat-modeling/">AI 위협 모델링</a><span class="wiki-index-summary">AI 위협 모델링은 AI 시스템의 자산·행위자·신뢰 경계·공격 표면과 가능한 피해 경로를 구조적으로 식별하는 과정이다.</span></li>
 <li data-article-id="alignment"><a href="/wiki/alignment/">AI 정렬</a><span class="wiki-index-summary">모델의 행동이 사람의 의도·가치·안전 제약과 일치하도록 만드는 연구와 과정이다.</span></li>
 <li data-article-id="ai-policy-enforcement"><a href="/wiki/ai-policy-enforcement/">AI 정책 집행</a><span class="wiki-index-summary">AI 정책 집행은 사용·데이터·출력·도구 권한 규칙을 AI 시스템의 요청 처리 경로에서 실제 허용·차단 행동으로 적용하는 활동이다.</span></li>
-<li data-article-id="ai-compliance-monitoring"><a href="/wiki/ai-compliance-monitoring/">AI 준수 모니터링</a><span class="wiki-index-summary">AI 규정 준수 모니터링은 시스템 운영과 변경이 적용 법규·표준·내부 통제 요구를 계속 만족하는지 증거로 확인하는 과정이다.</span></li>
+<li data-article-id="ai-compliance-monitoring"><a href="/wiki/ai-compliance-monitoring/">AI 준수 모니터링</a><span class="wiki-index-summary">AI 준수 모니터링은 시스템 운영과 변경이 적용 법규·표준·내부 통제 요구를 계속 만족하는지 증거로 확인하는 과정이다.</span></li>
 <li data-article-id="ai-accountability"><a href="/wiki/ai-accountability/">AI 책임성</a><span class="wiki-index-summary">AI 책임성은 AI 관련 결정과 결과에 대해 지정된 주체가 설명하고 통제하며 피해를 시정할 의무를 갖는 원칙이다.</span></li>
 <li data-article-id="total-cost-of-ownership-for-ai"><a href="/wiki/total-cost-of-ownership-for-ai/">AI 총소유비용</a><span class="wiki-index-summary">AI 총소유비용은 AI 시스템을 도입해 운영하고 폐기하기까지 발생하는 자본·사용·인력·데이터·위험 비용의 전체 합이다.</span></li>
 <li data-article-id="ai-chip-availability"><a href="/wiki/ai-chip-availability/">AI 칩 가용성</a><span class="wiki-index-summary">AI 칩 가용성은 필요한 종류와 수량의 가속기를 목표 지역·시점·가격에 조달하고 사용할 수 있는 정도다.</span></li>
-<li data-article-id="ai-carbon-footprint"><a href="/wiki/ai-carbon-footprint/">AI 탄소 발자국</a><span class="wiki-index-summary">AI 탄소발자국은 AI 시스템의 전력 사용과 하드웨어 생애주기에서 발생한 온실가스 배출량을 이산화탄소환산량으로 나타낸 값이다.</span></li>
+<li data-article-id="ai-carbon-footprint"><a href="/wiki/ai-carbon-footprint/">AI 탄소 발자국</a><span class="wiki-index-summary">AI 탄소 발자국은 AI 시스템의 전력 사용과 하드웨어 생애주기에서 발생한 온실가스 배출량을 이산화탄소환산량으로 나타낸 값이다.</span></li>
 <li data-article-id="ai-control-problem"><a href="/wiki/ai-control-problem/">AI 통제 문제</a><span class="wiki-index-summary">AI 통제 문제는 강력한 AI 시스템이 사람의 의도와 안전 경계 안에서 행동하도록 감시·제한·개입 수단을 설계하는 문제다.</span></li>
 <li data-article-id="reinforcement-learning-from-ai-feedback"><a href="/wiki/reinforcement-learning-from-ai-feedback/">AI 피드백 기반 강화학습</a><span class="wiki-index-summary">AI 피드백 기반 강화학습은 사람 대신 또는 사람과 함께 다른 모델의 비평·선호·규칙 판정을 보상 신호로 사용해 정책을 조정하는 방식이다.</span></li>
 <li data-article-id="ai-interpretability"><a href="/wiki/ai-interpretability/">AI 해석 가능성</a><span class="wiki-index-summary">AI 해석 가능성은 모델의 내부 표현, 계산 과정과 행동 원인을 조사해 의미 있는 설명을 얻을 수 있는 성질과 분석 활동이다.</span></li>
@@ -1357,7 +1357,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="beir-benchmark"><a href="/wiki/beir-benchmark/">BEIR 벤치마크</a><span class="wiki-index-summary">BEIR 벤치마크는 여러 도메인의 정보 검색 데이터셋에서 검색 모델의 제로샷 일반화 성능을 비교하는 평가 모음이다.</span></li>
 <li data-article-id="bert-architecture"><a href="/wiki/bert-architecture/">BERT 아키텍처</a><span class="wiki-index-summary">BERT 아키텍처는 양방향 자기어텐션 인코더를 쌓아 문맥에 따른 토큰 표현을 학습하는 트랜스포머 구조다.</span></li>
 <li data-article-id="bertscore"><a href="/wiki/bertscore/">BERTScore</a><span class="wiki-index-summary">BERTScore는 문맥 임베딩 사이의 코사인 유사도로 후보와 참조 토큰을 대응시켜 정밀도, 재현율과 F1을 계산한다.</span></li>
-<li data-article-id="best-of-n-sampling"><a href="/wiki/best-of-n-sampling/">Best-of-N 표본추출</a><span class="wiki-index-summary">Best-of-N 표집은 같은 입력에서 N개의 응답을 생성하고 보상 모델이나 평가 기준의 점수가 가장 높은 응답을 선택하는 추론·데이터 생성 방식이다.</span></li>
+<li data-article-id="best-of-n-sampling"><a href="/wiki/best-of-n-sampling/">Best-of-N 표본추출</a><span class="wiki-index-summary">Best-of-N 표본추출은 같은 입력에서 N개의 응답을 생성하고 보상 모델이나 평가 기준의 점수가 가장 높은 응답을 선택하는 추론·데이터 생성 방식이다.</span></li>
 <li data-article-id="big-bench"><a href="/wiki/big-bench/">BIG-bench</a><span class="wiki-index-summary">BIG-bench는 다양한 연구자가 제안한 광범위한 과제로 대규모 언어 모델의 능력과 한계를 탐색하는 협업 벤치마크다.</span></li>
 <li data-article-id="bigbird"><a href="/wiki/bigbird/">BigBird</a><span class="wiki-index-summary">BigBird는 국소·무작위·전역 연결을 조합한 블록 희소 어텐션으로 긴 시퀀스의 계산량을 줄이는 트랜스포머다.</span></li>
 <li data-article-id="bleu-score"><a href="/wiki/bleu-score/">BLEU 점수</a><span class="wiki-index-summary">BLEU 점수는 기계 번역 후보와 하나 이상의 참조 문장 사이의 수정된 n-그램 정밀도와 길이 패널티를 결합한 말뭉치 수준 지표다.</span></li>
@@ -1442,10 +1442,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <section class="wiki-index-group" data-index-group="en-k">
 <h2 id="index-en-k">K</h2>
 <ul class="wiki-index-list">
-<li data-article-id="k-nearest-neighbors"><a href="/wiki/k-nearest-neighbors/">K-최근접 이웃</a><span class="wiki-index-summary">k-최근접 이웃은 새 입력과 가장 가까운 k개 학습 표본의 라벨이나 값을 이용하는 비모수 예측 방법이다.</span></li>
+<li data-article-id="k-nearest-neighbors"><a href="/wiki/k-nearest-neighbors/">K-최근접 이웃</a><span class="wiki-index-summary">K-최근접 이웃은 새 입력과 가장 가까운 k개 학습 표본의 라벨이나 값을 이용하는 비모수 예측 방법이다.</span></li>
 <li data-article-id="k-means-clustering"><a href="/wiki/k-means-clustering/">K-평균 군집화</a><span class="wiki-index-summary">K-평균 군집화는 각 점을 가장 가까운 중심에 배정하고 군집 내 제곱거리를 줄이도록 K개 중심을 반복 갱신하는 알고리즘이다.</span></li>
 <li data-article-id="keras"><a href="/wiki/keras/">Keras</a><span class="wiki-index-summary">Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다.</span></li>
-<li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-index-summary">KL 패널티는 새 정책의 출력 분포가 기준 정책에서 지나치게 멀어지는 것을 억제하기 위해 KL 발산을 목적함수에 더하는 항이다.</span></li>
+<li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-index-summary">KL 페널티는 새 정책의 출력 분포가 기준 정책에서 지나치게 멀어지는 것을 억제하기 위해 KL 발산을 목적함수에 더하는 항이다.</span></li>
 <li data-article-id="kv-cache"><a href="/wiki/kv-cache/">KV 캐시</a><span class="wiki-index-summary">이전 토큰의 어텐션 키와 값을 저장해 자동회귀 생성의 중복 계산을 줄이는 캐시다.</span></li>
 <li data-article-id="kv-cache-quantization"><a href="/wiki/kv-cache-quantization/">KV 캐시 양자화</a><span class="wiki-index-summary">KV 캐시 양자화는 어텐션 키와 값을 더 낮은 비트 표현으로 저장해 생성 중 메모리 사용량을 줄이는 기법이다.</span></li>
 </ul>
@@ -1458,7 +1458,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="local-interpretable-model-agnostic-explanations"><a href="/wiki/local-interpretable-model-agnostic-explanations/">LIME 설명</a><span class="wiki-index-summary">LIME은 관심 예측 주변에서 원래 모델의 동작을 근사하는 단순한 지역 대리 모델로 특징 중요도를 설명하는 방법이다.</span></li>
 <li data-article-id="linux-foundation-ai-data"><a href="/wiki/linux-foundation-ai-data/">Linux Foundation AI &amp; Data</a><span class="wiki-index-summary">Linux Foundation AI &amp; Data는 개방형 인공지능과 데이터 프로젝트의 중립적 거버넌스·협업·생태계 지원을 제공하는 재단 조직이다.</span></li>
 <li data-article-id="llm-as-a-judge"><a href="/wiki/llm-as-a-judge/">LLM 심사자</a><span class="wiki-index-summary">언어 모델을 사용해 다른 모델 출력의 품질을 판정하거나 비교하는 평가 방식이다.</span></li>
-<li data-article-id="llm-penetration-testing"><a href="/wiki/llm-penetration-testing/">LLM 침투 테스트</a><span class="wiki-index-summary">LLM 침투 시험은 언어 모델 애플리케이션의 프롬프트·검색·도구·권한 경계를 실제 공격 절차로 검증하는 보안 시험이다.</span></li>
+<li data-article-id="llm-penetration-testing"><a href="/wiki/llm-penetration-testing/">LLM 침투 테스트</a><span class="wiki-index-summary">LLM 침투 테스트은 언어 모델 애플리케이션의 프롬프트·검색·도구·권한 경계를 실제 공격 절차로 검증하는 보안 시험이다.</span></li>
 <li data-article-id="llmops"><a href="/wiki/llmops/">LLMOps</a><span class="wiki-index-summary">LLMOps는 대규모 언어 모델 애플리케이션의 프롬프트, 검색, 평가, 모델 버전과 운영 위험을 관리하는 수명주기 실천이다.</span></li>
 <li data-article-id="proximal-policy-optimization-for-llm"><a href="/wiki/proximal-policy-optimization-for-llm/">LLM용 근접 정책 최적화</a><span class="wiki-index-summary">LLM용 근접 정책 최적화는 보상 신호를 높이되 새 언어 모델 정책이 기준 정책에서 한 번에 너무 멀어지지 않도록 갱신하는 강화학습 방법이다.</span></li>
 <li data-article-id="longformer"><a href="/wiki/longformer/">Longformer</a><span class="wiki-index-summary">Longformer는 각 토큰의 국소 슬라이딩 창 어텐션과 일부 토큰의 전역 어텐션을 결합해 긴 문서를 처리하는 트랜스포머다.</span></li>
@@ -1473,7 +1473,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="mcp-elicitation"><a href="/wiki/mcp-elicitation/">MCP 사용자 정보 요청</a><span class="wiki-index-summary">MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 정보를 요청하는 기능이다.</span></li>
 <li data-article-id="mcp-sampling"><a href="/wiki/mcp-sampling/">MCP 샘플링</a><span class="wiki-index-summary">MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다.</span></li>
 <li data-article-id="mcp-server"><a href="/wiki/mcp-server/">MCP 서버</a><span class="wiki-index-summary">MCP 서버는 표준 프로토콜을 통해 도구, 리소스와 프롬프트 같은 기능을 MCP 클라이언트에 제공하는 프로그램이다.</span></li>
-<li data-article-id="mcp-transport"><a href="/wiki/mcp-transport/">MCP 전송 계층</a><span class="wiki-index-summary">MCP 전송은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.</span></li>
+<li data-article-id="mcp-transport"><a href="/wiki/mcp-transport/">MCP 전송 계층</a><span class="wiki-index-summary">MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.</span></li>
 <li data-article-id="mcp-client"><a href="/wiki/mcp-client/">MCP 클라이언트</a><span class="wiki-index-summary">MCP 클라이언트는 MCP 호스트 안에서 특정 서버와 일대일 세션을 맺고 프로토콜 메시지를 주고받는 구성 요소다.</span></li>
 <li data-article-id="mcp-prompts"><a href="/wiki/mcp-prompts/">MCP 프롬프트</a><span class="wiki-index-summary">MCP 프롬프트는 서버가 재사용 가능한 메시지 템플릿과 입력 인수로 공개하는 사용자 선택형 상호작용 구성 요소다.</span></li>
 <li data-article-id="mcp-host"><a href="/wiki/mcp-host/">MCP 호스트</a><span class="wiki-index-summary">MCP 호스트는 하나 이상의 MCP 클라이언트를 내장해 사용자 애플리케이션과 외부 MCP 서버 사이의 연결·권한·문맥을 관리하는 프로그램이다.</span></li>

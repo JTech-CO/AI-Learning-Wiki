@@ -19,7 +19,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <li data-article-id="task-adaptation"><a href="/wiki/task-adaptation/">과제 적응</a><span class="wiki-index-summary">과제 적응은 범용 또는 다른 과제로 학습된 모델을 새로운 목표 과제의 입출력과 평가 기준에 맞게 조정하는 과정이다.</span></li>
 <li data-article-id="teacher-forcing"><a href="/wiki/teacher-forcing/">교사 강요</a><span class="wiki-index-summary">교사 강요는 순차 모델 학습에서 이전 시점의 모델 예측 대신 실제 정답 토큰을 다음 입력으로 제공하는 방법이다.</span></li>
 <li data-article-id="span-corruption"><a href="/wiki/span-corruption/">구간 손상 복원</a><span class="wiki-index-summary">구간 손상 복원은 연속된 여러 토큰 구간을 특수 표식으로 바꾸고 누락된 구간을 생성하도록 하는 잡음 제거 학습 방식이다.</span></li>
-<li data-article-id="gradient-checkpointing"><a href="/wiki/gradient-checkpointing/">그래디언트 체크포인팅</a><span class="wiki-index-summary">기울기 체크포인팅은 순전파 활성값 일부만 저장하고 역전파 때 누락된 구간을 다시 계산해 메모리를 줄이는 기법이다.</span></li>
+<li data-article-id="gradient-checkpointing"><a href="/wiki/gradient-checkpointing/">그래디언트 체크포인팅</a><span class="wiki-index-summary">그래디언트 체크포인팅은 순전파 활성값 일부만 저장하고 역전파 때 누락된 구간을 다시 계산해 메모리를 줄이는 기법이다.</span></li>
 <li data-article-id="rejection-sampling"><a href="/wiki/rejection-sampling/">기각 표본추출</a><span class="wiki-index-summary">거부 표집은 제안 분포에서 후보를 생성한 뒤 목표 기준에 따른 수용 확률이나 임계값으로 일부만 채택하는 표집 방법이다.</span></li>
 </ul>
 </section>
@@ -44,7 +44,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <h2 id="index-ko-m">ㅁ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="masked-language-modeling-objective"><a href="/wiki/masked-language-modeling-objective/">마스크 언어 모델링 목표</a><span class="wiki-index-summary">마스크 언어 모델링 목표는 입력 토큰 일부를 숨기거나 바꾼 뒤 주변 문맥으로 원래 토큰을 예측하도록 학습하는 목적 함수다.</span></li>
-<li data-article-id="machine-unlearning"><a href="/wiki/machine-unlearning/">머신 언러닝</a><span class="wiki-index-summary">기계 언러닝은 특정 학습 데이터의 영향을 모델에서 제거해 해당 데이터를 제외하고 다시 학습한 모델에 가까운 상태를 만드는 절차다.</span></li>
+<li data-article-id="machine-unlearning"><a href="/wiki/machine-unlearning/">머신 언러닝</a><span class="wiki-index-summary">머신 언러닝은 특정 학습 데이터의 영향을 모델에서 제거해 해당 데이터를 제외하고 다시 학습한 모델에 가까운 상태를 만드는 절차다.</span></li>
 <li data-article-id="model-pruning"><a href="/wiki/model-pruning/">모델 가지치기</a><span class="wiki-index-summary">모델 가지치기는 성능에 미치는 영향이 작은 가중치, 채널, 헤드나 층을 제거해 모델 크기와 계산량을 줄이는 기법이다.</span></li>
 <li data-article-id="model-parallelism"><a href="/wiki/model-parallelism/">모델 병렬화</a><span class="wiki-index-summary">모델 병렬화는 하나의 모델 파라미터와 계산을 여러 장치에 나누어 단일 장치 용량을 넘는 모델을 실행하는 방식이다.</span></li>
 <li data-article-id="model-merging"><a href="/wiki/model-merging/">모델 병합</a><span class="wiki-index-summary">모델 병합은 같은 기반에서 학습된 여러 모델의 가중치나 업데이트를 결합해 하나의 모델을 만드는 방법이다.</span></li>
@@ -93,7 +93,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <li data-article-id="federated-learning"><a href="/wiki/federated-learning/">연합학습</a><span class="wiki-index-summary">연합학습은 원시 데이터를 중앙에 모으지 않고 여러 참여자가 로컬에서 모델을 학습해 갱신값만 집계하는 분산 학습 방식이다.</span></li>
 <li data-article-id="offline-preference-learning"><a href="/wiki/offline-preference-learning/">오프라인 선호 학습</a><span class="wiki-index-summary">오프라인 선호 학습은 미리 수집해 고정한 비교·순위 데이터만으로 정책 또는 보상 모델을 최적화하는 방식이다.</span></li>
 <li data-article-id="online-preference-learning"><a href="/wiki/online-preference-learning/">온라인 선호 학습</a><span class="wiki-index-summary">온라인 선호 학습은 현재 정책이 새 후보를 생성하고 그에 대한 최신 선호 피드백을 받아 반복적으로 정책을 갱신하는 방식이다.</span></li>
-<li data-article-id="fully-sharded-data-parallel"><a href="/wiki/fully-sharded-data-parallel/">완전 샤딩 데이터 병렬화</a><span class="wiki-index-summary">완전 샤딩 데이터 병렬은 모델 파라미터·기울기·옵티마이저 상태를 데이터 병렬 작업자에 분할해 메모리 중복을 줄이는 학습 방식이다.</span></li>
+<li data-article-id="fully-sharded-data-parallel"><a href="/wiki/fully-sharded-data-parallel/">완전 샤딩 데이터 병렬화</a><span class="wiki-index-summary">완전 샤딩 데이터 병렬화은 모델 파라미터·기울기·옵티마이저 상태를 데이터 병렬 작업자에 분할해 메모리 중복을 줄이는 학습 방식이다.</span></li>
 <li data-article-id="web-scale-training-data"><a href="/wiki/web-scale-training-data/">웹 규모 학습 데이터</a><span class="wiki-index-summary">웹 규모 학습 데이터는 공개 웹에서 대량 수집한 문서와 미디어를 정제해 구성한 대규모 사전학습 자료다.</span></li>
 <li data-article-id="response-format-tuning"><a href="/wiki/response-format-tuning/">응답 형식 튜닝</a><span class="wiki-index-summary">응답 형식 튜닝은 모델이 지정된 구조, 문체, 길이 또는 스키마에 맞춰 답하도록 예시 데이터로 미세조정하는 과정이다.</span></li>
 <li data-article-id="rlhf"><a href="/wiki/rlhf/">인간 피드백 기반 강화학습</a><span class="wiki-index-summary">사람의 선호 신호를 이용해 모델 응답 정책을 조정하는 사후학습 방법이다.</span></li>
@@ -120,8 +120,8 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <section class="wiki-index-group" data-index-group="ko-ch">
 <h2 id="index-ko-ch">ㅊ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="differentially-private-training"><a href="/wiki/differentially-private-training/">차등 개인정보 보호 학습</a><span class="wiki-index-summary">차등 개인정보보호 학습은 한 개인의 학습 레코드 포함 여부가 모델 출력 분포에 미치는 영향을 수학적으로 제한하는 학습 방식이다.</span></li>
-<li data-article-id="reference-model"><a href="/wiki/reference-model/">참조 모델</a><span class="wiki-index-summary">기준 모델은 선호 최적화 중 새 정책의 변화량을 측정하거나 비교 확률을 계산하기 위해 고정해 두는 이전 모델이다.</span></li>
+<li data-article-id="differentially-private-training"><a href="/wiki/differentially-private-training/">차등 개인정보 보호 학습</a><span class="wiki-index-summary">차등 개인정보 보호 학습은 한 개인의 학습 레코드 포함 여부가 모델 출력 분포에 미치는 영향을 수학적으로 제한하는 학습 방식이다.</span></li>
+<li data-article-id="reference-model"><a href="/wiki/reference-model/">참조 모델</a><span class="wiki-index-summary">참조 모델은 선호 최적화 중 새 정책의 변화량을 측정하거나 비교 확률을 계산하기 위해 고정해 두는 이전 모델이다.</span></li>
 <li data-article-id="chat-template"><a href="/wiki/chat-template/">채팅 템플릿</a><span class="wiki-index-summary">채팅 템플릿은 역할이 있는 대화 메시지를 모델이 학습한 특수 토큰과 구분자 순서의 단일 토큰열로 변환하는 규칙이다.</span></li>
 <li data-article-id="checkpoint"><a href="/wiki/checkpoint/">체크포인트</a><span class="wiki-index-summary">특정 학습 시점의 모델 가중치와 최적화 상태를 저장한 파일 집합이다.</span></li>
 </ul>
@@ -168,7 +168,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <section class="wiki-index-group" data-index-group="en-b">
 <h2 id="index-en-b">B</h2>
 <ul class="wiki-index-list">
-<li data-article-id="best-of-n-sampling"><a href="/wiki/best-of-n-sampling/">Best-of-N 표본추출</a><span class="wiki-index-summary">Best-of-N 표집은 같은 입력에서 N개의 응답을 생성하고 보상 모델이나 평가 기준의 점수가 가장 높은 응답을 선택하는 추론·데이터 생성 방식이다.</span></li>
+<li data-article-id="best-of-n-sampling"><a href="/wiki/best-of-n-sampling/">Best-of-N 표본추출</a><span class="wiki-index-summary">Best-of-N 표본추출은 같은 입력에서 N개의 응답을 생성하고 보상 모델이나 평가 기준의 점수가 가장 높은 응답을 선택하는 추론·데이터 생성 방식이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-d">
@@ -186,7 +186,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <section class="wiki-index-group" data-index-group="en-k">
 <h2 id="index-en-k">K</h2>
 <ul class="wiki-index-list">
-<li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-index-summary">KL 패널티는 새 정책의 출력 분포가 기준 정책에서 지나치게 멀어지는 것을 억제하기 위해 KL 발산을 목적함수에 더하는 항이다.</span></li>
+<li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-index-summary">KL 페널티는 새 정책의 출력 분포가 기준 정책에서 지나치게 멀어지는 것을 억제하기 위해 KL 발산을 목적함수에 더하는 항이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-l">

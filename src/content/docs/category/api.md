@@ -21,7 +21,7 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <h2 id="index-ko-d">ㄷ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="tool-result"><a href="/wiki/tool-result/">도구 결과</a><span class="wiki-index-summary">도구 결과는 외부 기능 실행 뒤 에이전트에 반환되는 데이터, 상태, 오류와 부작용 정보다.</span></li>
-<li data-article-id="tool-choice"><a href="/wiki/tool-choice/">도구 선택 제어</a><span class="wiki-index-summary">도구 선택은 현재 요청에서 모델이 사용할 수 있는 도구를 허용·금지하거나 특정 도구 사용을 강제하는 제어다.</span></li>
+<li data-article-id="tool-choice"><a href="/wiki/tool-choice/">도구 선택 제어</a><span class="wiki-index-summary">도구 선택 제어은 현재 요청에서 모델이 사용할 수 있는 도구를 허용·금지하거나 특정 도구 사용을 강제하는 제어다.</span></li>
 <li data-article-id="tool-error"><a href="/wiki/tool-error/">도구 오류</a><span class="wiki-index-summary">도구 오류는 에이전트나 API 호출이 형식, 권한, 네트워크, 실행 로직 등의 이유로 정상 결과를 반환하지 못한 상태다.</span></li>
 <li data-article-id="tool-argument"><a href="/wiki/tool-argument/">도구 인수</a><span class="wiki-index-summary">도구 인수는 선택된 도구 호출에 전달되는 구조화된 입력 값의 집합이다.</span></li>
 <li data-article-id="tool-definition"><a href="/wiki/tool-definition/">도구 정의</a><span class="wiki-index-summary">도구 정의는 에이전트가 호출할 수 있는 기능의 이름, 목적, 입력 스키마, 권한과 부작용을 기술한 계약이다.</span></li>
@@ -35,7 +35,7 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <section class="wiki-index-group" data-index-group="ko-r">
 <h2 id="index-ko-r">ㄹ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="leaky-bucket"><a href="/wiki/leaky-bucket/">리키 버킷</a><span class="wiki-index-summary">누수 버킷은 들어오는 요청을 유한 큐에 담고 거의 일정한 속도로 내보내 출력 트래픽을 평탄화하는 알고리즘이다.</span></li>
+<li data-article-id="leaky-bucket"><a href="/wiki/leaky-bucket/">리키 버킷</a><span class="wiki-index-summary">리키 버킷은 들어오는 요청을 유한 큐에 담고 거의 일정한 속도로 내보내 출력 트래픽을 평탄화하는 알고리즘이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-m">
@@ -61,12 +61,12 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <section class="wiki-index-group" data-index-group="ko-s">
 <h2 id="index-ko-s">ㅅ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="usage-metering"><a href="/wiki/usage-metering/">사용량 계측</a><span class="wiki-index-summary">사용량 계량은 API 요청이 소비한 호출 수, 토큰, 바이트, 시간과 연산 자원을 귀속 가능한 측정값으로 기록하는 과정이다.</span></li>
+<li data-article-id="usage-metering"><a href="/wiki/usage-metering/">사용량 계측</a><span class="wiki-index-summary">사용량 계측은 API 요청이 소비한 호출 수, 토큰, 바이트, 시간과 연산 자원을 귀속 가능한 측정값으로 기록하는 과정이다.</span></li>
 <li data-article-id="stateful-api"><a href="/wiki/stateful-api/">상태 유지 API</a><span class="wiki-index-summary">상태 유지 API는 여러 요청 사이의 세션·대화·작업 상태를 서버 측 식별자와 연결해 이어서 처리하는 API다.</span></li>
 <li data-article-id="mutual-tls"><a href="/wiki/mutual-tls/">상호 TLS</a><span class="wiki-index-summary">상호 TLS는 TLS 연결에서 서버뿐 아니라 클라이언트도 인증서를 제시해 양쪽 신원을 검증하는 인증 방식이다.</span></li>
 <li data-article-id="server-sent-events"><a href="/wiki/server-sent-events/">서버 전송 이벤트</a><span class="wiki-index-summary">서버 전송 이벤트는 하나의 HTTP 연결에서 서버가 텍스트 이벤트를 클라이언트로 지속적으로 밀어 보내는 단방향 스트리밍 방식이다.</span></li>
 <li data-article-id="server-side-request-forgery"><a href="/wiki/server-side-request-forgery/">서버 측 요청 위조</a><span class="wiki-index-summary">서버 측 요청 위조는 공격자가 서버의 URL 요청 기능을 조작해 내부망이나 허용되지 않은 외부 대상에 요청하게 하는 취약점이다.</span></li>
-<li data-article-id="service-level-agreement"><a href="/wiki/service-level-agreement/">서비스 수준 협약</a><span class="wiki-index-summary">서비스 수준 계약은 제공자와 이용자 사이에 가용성·지연·지원·보상 같은 측정 가능한 서비스 약속을 정한 합의다.</span></li>
+<li data-article-id="service-level-agreement"><a href="/wiki/service-level-agreement/">서비스 수준 협약</a><span class="wiki-index-summary">서비스 수준 협약은 제공자와 이용자 사이에 가용성·지연·지원·보상 같은 측정 가능한 서비스 약속을 정한 합의다.</span></li>
 <li data-article-id="schema-validation"><a href="/wiki/schema-validation/">스키마 검증</a><span class="wiki-index-summary">스키마 검증은 입력이나 출력 데이터가 선언된 구조·자료형·제약을 만족하는지 실행 전에 확인하는 절차다.</span></li>
 <li data-article-id="streaming-response"><a href="/wiki/streaming-response/">스트리밍 응답</a><span class="wiki-index-summary">전체 결과가 완성되기 전에 생성된 일부 데이터를 순차적으로 전송하는 방식이다.</span></li>
 <li data-article-id="realtime-api"><a href="/wiki/realtime-api/">실시간 API</a><span class="wiki-index-summary">실시간 API는 음성·텍스트·이벤트를 지속적인 양방향 연결에서 낮은 지연으로 주고받는 모델 인터페이스다.</span></li>

@@ -11,7 +11,7 @@ description: "언어 모델의 입력·문맥·생성 단위"
 <section class="wiki-index-group" data-index-group="ko-g">
 <h2 id="index-ko-g">ㄱ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="retrieval-prompt"><a href="/wiki/retrieval-prompt/">검색 결합 프롬프트</a><span class="wiki-index-summary">검색 프롬프트는 검색된 문서를 모델의 답변 근거로 제공하도록 문맥 배치, 인용 규칙과 불충분 정보 처리를 정의한 입력 형식이다.</span></li>
+<li data-article-id="retrieval-prompt"><a href="/wiki/retrieval-prompt/">검색 결합 프롬프트</a><span class="wiki-index-summary">검색 결합 프롬프트는 검색된 문서를 모델의 답변 근거로 제공하도록 문맥 배치, 인용 규칙과 불충분 정보 처리를 정의한 입력 형식이다.</span></li>
 <li data-article-id="compute-optimal-training"><a href="/wiki/compute-optimal-training/">계산 최적 학습</a><span class="wiki-index-summary">계산 최적 학습은 고정된 총 계산 예산에서 모델 크기와 학습 토큰 수를 배분해 손실을 최소화하는 학습 설계다.</span></li>
 </ul>
 </section>
@@ -78,7 +78,7 @@ description: "언어 모델의 입력·문맥·생성 단위"
 <section class="wiki-index-group" data-index-group="ko-ng">
 <h2 id="index-ko-ng">ㅇ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="sycophancy"><a href="/wiki/sycophancy/">아첨 현상</a><span class="wiki-index-summary">아첨 편향은 모델이 사실이나 독립 판단보다 사용자가 드러낸 신념과 선호에 과도하게 동조하는 행동이다.</span></li>
+<li data-article-id="sycophancy"><a href="/wiki/sycophancy/">아첨 현상</a><span class="wiki-index-summary">아첨 현상은 모델이 사실이나 독립 판단보다 사용자가 드러낸 신념과 선호에 과도하게 동조하는 행동이다.</span></li>
 <li data-article-id="vocabulary"><a href="/wiki/vocabulary/">어휘 집합</a><span class="wiki-index-summary">토크나이저와 모델이 구분해 처리할 수 있는 토큰의 전체 목록이다.</span></li>
 <li data-article-id="language-model"><a href="/wiki/language-model/">언어 모델</a><span class="wiki-index-summary">토큰 시퀀스의 확률 분포를 학습해 다음 토큰이나 누락된 토큰을 예측하는 모델이다.</span></li>
 <li data-article-id="language-model-confidence"><a href="/wiki/language-model-confidence/">언어 모델 신뢰도</a><span class="wiki-index-summary">언어 모델 신뢰도는 모델이 생성한 답이나 토큰이 맞을 가능성에 대해 모델 점수 또는 별도 추정기가 나타내는 확신 정도다.</span></li>

@@ -160,7 +160,7 @@ description: "인공지능의 범위와 기본 학습 방식"
 <h2 id="index-ko-p">ㅍ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="foundation-model"><a href="/wiki/foundation-model/">파운데이션 모델</a><span class="wiki-index-summary">파운데이션 모델은 광범위한 데이터로 대규모 사전학습한 뒤 여러 하위 과제와 응용에 적응할 수 있는 범용 모델이다.</span></li>
-<li data-article-id="bias-variance-tradeoff"><a href="/wiki/bias-variance-tradeoff/">편향-분산 절충</a><span class="wiki-index-summary">편향-분산 상충은 모델의 단순화로 생기는 체계적 오차와 학습 표본 변화에 민감한 오차 사이의 관계다.</span></li>
+<li data-article-id="bias-variance-tradeoff"><a href="/wiki/bias-variance-tradeoff/">편향-분산 절충</a><span class="wiki-index-summary">편향-분산 절충은 모델의 단순화로 생기는 체계적 오차와 학습 표본 변화에 민감한 오차 사이의 관계다.</span></li>
 <li data-article-id="representation-learning"><a href="/wiki/representation-learning/">표현학습</a><span class="wiki-index-summary">표현학습은 원시 데이터에서 예측과 전이에 유용한 특징 표현을 모델이 자동으로 학습하는 방법이다.</span></li>
 <li data-article-id="few-shot-learning"><a href="/wiki/few-shot-learning/">퓨샷 학습</a><span class="wiki-index-summary">퓨샷 학습은 과제마다 소수의 레이블 예시만 주어진 상황에서 유용한 예측 규칙을 학습하는 문제 설정이다.</span></li>
 </ul>
@@ -179,7 +179,7 @@ description: "인공지능의 범위와 기본 학습 방식"
 <section class="wiki-index-group" data-index-group="en-k">
 <h2 id="index-en-k">K</h2>
 <ul class="wiki-index-list">
-<li data-article-id="k-nearest-neighbors"><a href="/wiki/k-nearest-neighbors/">K-최근접 이웃</a><span class="wiki-index-summary">k-최근접 이웃은 새 입력과 가장 가까운 k개 학습 표본의 라벨이나 값을 이용하는 비모수 예측 방법이다.</span></li>
+<li data-article-id="k-nearest-neighbors"><a href="/wiki/k-nearest-neighbors/">K-최근접 이웃</a><span class="wiki-index-summary">K-최근접 이웃은 새 입력과 가장 가까운 k개 학습 표본의 라벨이나 값을 이용하는 비모수 예측 방법이다.</span></li>
 <li data-article-id="k-means-clustering"><a href="/wiki/k-means-clustering/">K-평균 군집화</a><span class="wiki-index-summary">K-평균 군집화는 각 점을 가장 가까운 중심에 배정하고 군집 내 제곱거리를 줄이도록 K개 중심을 반복 갱신하는 알고리즘이다.</span></li>
 </ul>
 </section>

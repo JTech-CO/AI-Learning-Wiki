@@ -11,7 +11,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-g">
 <h2 id="index-ko-g">ㄱ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="pointwise-llm-judge"><a href="/wiki/pointwise-llm-judge/">개별 LLM 심사</a><span class="wiki-index-summary">개별 LLM 판정은 평가 모델이 한 응답을 독립적으로 보고 절대 등급이나 수치 점수를 부여하는 방식이다.</span></li>
+<li data-article-id="pointwise-llm-judge"><a href="/wiki/pointwise-llm-judge/">개별 LLM 심사</a><span class="wiki-index-summary">개별 LLM 심사은 평가 모델이 한 응답을 독립적으로 보고 절대 등급이나 수치 점수를 부여하는 방식이다.</span></li>
 <li data-article-id="retrieval-evaluation"><a href="/wiki/retrieval-evaluation/">검색 평가</a><span class="wiki-index-summary">검색 평가는 질의에 대해 관련 문서가 결과 목록의 적절한 위치에 나타나는지를 측정하는 과정이다.</span></li>
 <li data-article-id="planning-evaluation"><a href="/wiki/planning-evaluation/">계획 평가</a><span class="wiki-index-summary">계획 평가는 목표를 달성하기 위해 만든 행동 순서가 타당하고 효율적이며 제약을 지키는지를 측정한다.</span></li>
 <li data-article-id="area-under-curve"><a href="/wiki/area-under-curve/">곡선 아래 면적</a><span class="wiki-index-summary">성능 곡선 아래의 면적을 하나의 수로 요약한 값이며 어떤 곡선과 적분 규칙을 사용했는지 함께 명시해야 한다.</span></li>
@@ -41,7 +41,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-ko-r">ㄹ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="log-loss"><a href="/wiki/log-loss/">로그 손실</a><span class="wiki-index-summary">모델이 실제 클래스에 부여한 확률의 음의 로그를 평균한 확률적 분류 손실이다.</span></li>
-<li data-article-id="rubric-based-judge"><a href="/wiki/rubric-based-judge/">루브릭 기반 심사</a><span class="wiki-index-summary">루브릭 기반 판정은 명시된 평가 차원, 등급 설명과 감점 조건에 따라 후보 응답을 채점하는 방식이다.</span></li>
+<li data-article-id="rubric-based-judge"><a href="/wiki/rubric-based-judge/">루브릭 기반 심사</a><span class="wiki-index-summary">루브릭 기반 심사은 명시된 평가 차원, 등급 설명과 감점 조건에 따라 후보 응답을 채점하는 방식이다.</span></li>
 <li data-article-id="leaderboard"><a href="/wiki/leaderboard/">리더보드</a><span class="wiki-index-summary">리더보드는 동일한 평가 규칙으로 측정한 모델이나 시스템의 성능을 순위와 함께 공개하는 표다.</span></li>
 <li data-article-id="likert-scale"><a href="/wiki/likert-scale/">리커트 척도</a><span class="wiki-index-summary">리커트 척도는 응답자가 진술에 대한 동의나 평가 정도를 순서가 있는 여러 범주 중 하나로 표시하는 척도다.</span></li>
 </ul>
@@ -76,7 +76,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <li data-article-id="generation-evaluation"><a href="/wiki/generation-evaluation/">생성 평가</a><span class="wiki-index-summary">생성 평가는 모델 출력의 정확성, 관련성, 유창성, 다양성, 안전성과 과제 제약 준수를 측정하는 과정이다.</span></li>
 <li data-article-id="win-rate"><a href="/wiki/win-rate/">승률</a><span class="wiki-index-summary">승률은 두 모델이나 방법을 쌍대 비교했을 때 한쪽이 더 낫다고 판정된 비율이다.</span></li>
 <li data-article-id="simulation-based-evaluation"><a href="/wiki/simulation-based-evaluation/">시뮬레이션 기반 평가</a><span class="wiki-index-summary">시뮬레이션 기반 평가는 실제 환경을 모사한 상태 전이와 사용자·도구 모델 안에서 AI 시스템의 행동을 반복 시험하는 방법이다.</span></li>
-<li data-article-id="judge-model"><a href="/wiki/judge-model/">심사 모델</a><span class="wiki-index-summary">판정 모델은 하나 이상의 후보 응답을 평가 기준에 따라 채점하거나 비교하도록 지시된 언어 모델이다.</span></li>
+<li data-article-id="judge-model"><a href="/wiki/judge-model/">심사 모델</a><span class="wiki-index-summary">심사 모델은 하나 이상의 후보 응답을 평가 기준에 따라 채점하거나 비교하도록 지시된 언어 모델이다.</span></li>
 <li data-article-id="judge-meta-evaluation"><a href="/wiki/judge-meta-evaluation/">심사 모델 메타평가</a><span class="wiki-index-summary">심사 모델 메타평가는 자동 판정자 자체의 정확성, 일관성, 편향과 강건성을 평가하는 절차다.</span></li>
 <li data-article-id="judge-calibration"><a href="/wiki/judge-calibration/">심사 모델 보정</a><span class="wiki-index-summary">심사 모델 보정은 판정 모델이 내는 점수나 확률이 실제 품질 수준 또는 사람 판단 빈도와 맞도록 조정하는 과정이다.</span></li>
 <li data-article-id="judge-ensemble"><a href="/wiki/judge-ensemble/">심사 모델 앙상블</a><span class="wiki-index-summary">심사 모델 앙상블은 서로 다른 판정 모델이나 판정 설정의 결과를 결합해 단일 판정자의 변동과 편향을 줄이는 방법이다.</span></li>
@@ -88,7 +88,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-ko-ss">ㅆ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="pairwise-comparison"><a href="/wiki/pairwise-comparison/">쌍대 비교</a><span class="wiki-index-summary">쌍대 비교는 두 후보를 동시에 제시하고 어느 쪽이 기준에 더 부합하는지 선택하게 하는 평가 방식이다.</span></li>
-<li data-article-id="pairwise-llm-judge"><a href="/wiki/pairwise-llm-judge/">쌍대 LLM 심사</a><span class="wiki-index-summary">쌍대 LLM 판정은 평가 모델이 두 후보 응답을 나란히 비교해 더 나은 쪽이나 동률을 선택하는 방식이다.</span></li>
+<li data-article-id="pairwise-llm-judge"><a href="/wiki/pairwise-llm-judge/">쌍대 LLM 심사</a><span class="wiki-index-summary">쌍대 LLM 심사은 평가 모델이 두 후보 응답을 나란히 비교해 더 나은 쪽이나 동률을 선택하는 방식이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-ng">
@@ -105,7 +105,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-ko-j">ㅈ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="self-preference-bias"><a href="/wiki/self-preference-bias/">자기 선호 편향</a><span class="wiki-index-summary">자기 선호 편향은 평가 모델이 자신이나 같은 계열 모델이 생성한 답변을 다른 모델의 답변보다 더 높게 평가하는 경향이다.</span></li>
-<li data-article-id="automatic-rater"><a href="/wiki/automatic-rater/">자동 평가자</a><span class="wiki-index-summary">자동 평가기는 규칙, 통계 모델 또는 언어 모델을 사용해 시스템 출력을 사람의 개별 판정 없이 점수화하는 평가 구성 요소다.</span></li>
+<li data-article-id="automatic-rater"><a href="/wiki/automatic-rater/">자동 평가자</a><span class="wiki-index-summary">자동 평가자는 규칙, 통계 모델 또는 언어 모델을 사용해 시스템 출력을 사람의 개별 판정 없이 점수화하는 평가 구성 요소다.</span></li>
 <li data-article-id="verbosity-bias"><a href="/wiki/verbosity-bias/">장황성 편향</a><span class="wiki-index-summary">장황성 편향은 평가자가 동일한 핵심 품질에서도 더 길고 자세한 답변을 부당하게 높게 평가하는 경향이다.</span></li>
 <li data-article-id="reproducible-evaluation"><a href="/wiki/reproducible-evaluation/">재현 가능한 평가</a><span class="wiki-index-summary">재현 가능한 평가는 동일한 데이터·모델·평가기·환경을 사용한 독립 실행에서 허용 오차 안의 결과를 얻을 수 있는 평가 절차다.</span></li>
 <li data-article-id="expert-evaluation"><a href="/wiki/expert-evaluation/">전문가 평가</a><span class="wiki-index-summary">전문가 평가는 해당 분야의 지식과 실무 경험을 가진 평가자가 전문 기준으로 결과의 정확성·유용성·위험을 판정하는 방식이다.</span></li>
@@ -118,14 +118,14 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <li data-article-id="annotator-bias"><a href="/wiki/annotator-bias/">주석자 편향</a><span class="wiki-index-summary">주석자 편향은 평가자의 배경, 기대, 선호 또는 제시 방식이 정답과 무관하게 라벨이나 점수에 체계적으로 영향을 주는 현상이다.</span></li>
 <li data-article-id="annotator-fatigue"><a href="/wiki/annotator-fatigue/">주석자 피로</a><span class="wiki-index-summary">주석자 피로는 반복적이거나 긴 평가 작업으로 주의력과 판단 일관성이 시간에 따라 떨어지는 현상이다.</span></li>
 <li data-article-id="annotator-agreement"><a href="/wiki/annotator-agreement/">주석자 합의도</a><span class="wiki-index-summary">주석자 합의도는 같은 사례를 독립적으로 판정한 주석자들이 얼마나 일치하는지 나타내는 품질 정보다.</span></li>
-<li data-article-id="latency-monitoring"><a href="/wiki/latency-monitoring/">지연 시간 모니터링</a><span class="wiki-index-summary">지연시간 모니터링은 요청 시작부터 첫 토큰과 완료까지 걸린 시간을 단계별 분포로 추적하는 활동이다.</span></li>
+<li data-article-id="latency-monitoring"><a href="/wiki/latency-monitoring/">지연 시간 모니터링</a><span class="wiki-index-summary">지연 시간 모니터링은 요청 시작부터 첫 토큰과 완료까지 걸린 시간을 단계별 분포로 추적하는 활동이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-ch">
 <h2 id="index-ko-ch">ㅊ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="reference-based-evaluation"><a href="/wiki/reference-based-evaluation/">참조 기반 평가</a><span class="wiki-index-summary">참조 기반 평가는 모델 출력과 사람이 작성했거나 검증된 정답을 비교해 품질을 측정하는 방식이다.</span></li>
-<li data-article-id="reference-free-evaluation"><a href="/wiki/reference-free-evaluation/">참조 없는 평가</a><span class="wiki-index-summary">무참조 평가는 정답 문장 없이 입력, 출력, 평가 기준만으로 응답의 품질을 판단하는 방식이다.</span></li>
+<li data-article-id="reference-free-evaluation"><a href="/wiki/reference-free-evaluation/">참조 없는 평가</a><span class="wiki-index-summary">참조 없는 평가는 정답 문장 없이 입력, 출력, 평가 기준만으로 응답의 품질을 판단하는 방식이다.</span></li>
 <li data-article-id="tracing"><a href="/wiki/tracing/">추적</a><span class="wiki-index-summary">한 요청이 여러 모델·도구·단계를 거치는 실행 흐름과 시간을 기록하는 방법이다.</span></li>
 <li data-article-id="faithfulness"><a href="/wiki/faithfulness/">충실성</a><span class="wiki-index-summary">충실성은 생성 답변의 사실 주장과 추론이 제공된 근거 문맥에서 실제로 지지되는 정도다.</span></li>
 </ul>
@@ -160,7 +160,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="confusion-matrix"><a href="/wiki/confusion-matrix/">혼동 행렬</a><span class="wiki-index-summary">분류 모델의 실제 클래스와 예측 클래스를 교차표로 집계해 어떤 종류의 정답과 오류가 발생했는지 보여 주는 행렬이다.</span></li>
-<li data-article-id="regression-evaluation"><a href="/wiki/regression-evaluation/">회귀 테스트형 평가</a><span class="wiki-index-summary">회귀 평가는 모델·프롬프트·데이터 변경 뒤 이전에 통과하던 사례와 핵심 지표가 나빠지지 않았는지 확인하는 반복 시험이다.</span></li>
+<li data-article-id="regression-evaluation"><a href="/wiki/regression-evaluation/">회귀 테스트형 평가</a><span class="wiki-index-summary">회귀 테스트형 평가는 모델·프롬프트·데이터 변경 뒤 이전에 통과하던 사례와 핵심 지표가 나빠지지 않았는지 확인하는 반복 시험이다.</span></li>
 <li data-article-id="effect-size"><a href="/wiki/effect-size/">효과 크기</a><span class="wiki-index-summary">효과 크기는 두 조건의 차이나 변수 관계의 크기를 표본 수와 분리해 정량화한 값이다.</span></li>
 </ul>
 </section>

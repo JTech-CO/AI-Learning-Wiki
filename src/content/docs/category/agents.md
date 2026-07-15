@@ -14,7 +14,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="supervisor-agent"><a href="/wiki/supervisor-agent/">감독 에이전트</a><span class="wiki-index-summary">감독 에이전트는 목표를 하위 작업으로 나누고 작업 에이전트의 배정·진행·결과를 통제하는 상위 역할이다.</span></li>
 <li data-article-id="sense-think-act-cycle"><a href="/wiki/sense-think-act-cycle/">감지-사고-행동 순환</a><span class="wiki-index-summary">센서 입력을 수집하고 해석한 뒤 행동을 선택해 환경에 적용하는 세 단계 제어 모형이다.</span></li>
 <li data-article-id="verifier-agent"><a href="/wiki/verifier-agent/">검증 에이전트</a><span class="wiki-index-summary">검증 에이전트는 주장이나 작업 결과가 명세, 외부 근거 또는 실행 가능한 검사와 일치하는지 확인하는 에이전트다.</span></li>
-<li data-article-id="hierarchical-task-network"><a href="/wiki/hierarchical-task-network/">계층적 과제 네트워크</a><span class="wiki-index-summary">계층적 작업 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다.</span></li>
+<li data-article-id="hierarchical-task-network"><a href="/wiki/hierarchical-task-network/">계층적 과제 네트워크</a><span class="wiki-index-summary">계층적 과제 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다.</span></li>
 <li data-article-id="planning"><a href="/wiki/planning/">계획</a><span class="wiki-index-summary">목표를 하위 단계와 실행 순서로 분해하고 필요에 따라 계획을 수정하는 과정이다.</span></li>
 <li data-article-id="plan-verification"><a href="/wiki/plan-verification/">계획 검증</a><span class="wiki-index-summary">계획 검증은 생성된 행동 순서가 전제조건·안전 제약·목표 조건을 만족하는지 실행 전에 확인하는 과정이다.</span></li>
 <li data-article-id="plan-and-execute"><a href="/wiki/plan-and-execute/">계획 후 실행</a><span class="wiki-index-summary">계획 후 실행은 목표를 먼저 여러 하위 과제로 분해한 다음 실행기가 각 단계를 수행하고 결과에 따라 계획을 수정하는 에이전트 방식이다.</span></li>
@@ -81,7 +81,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="inter-agent-communication"><a href="/wiki/inter-agent-communication/">에이전트 간 통신</a><span class="wiki-index-summary">에이전트 간 통신은 에이전트들이 의도, 관측, 요청과 결과를 정해진 메시지 형식으로 교환하는 메커니즘이다.</span></li>
 <li data-article-id="agent-plan-quality"><a href="/wiki/agent-plan-quality/">에이전트 계획 품질</a><span class="wiki-index-summary">에이전트 계획 품질은 목표를 달성하기 위한 단계가 타당한 순서·의존성·완료 조건·비용·위험을 얼마나 잘 표현하는지 나타내는 평가 대상이다.</span></li>
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-index-summary">복잡한 에이전트 과제를 실행 가능하고 검증 가능한 하위 과제로 나누고 의존 관계를 정하는 과정이다.</span></li>
-<li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공은 주어진 목표의 필수 완료 조건과 제약을 에이전트 실행 결과가 모두 만족한 상태다.</span></li>
+<li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공률은 주어진 목표의 필수 완료 조건과 제약을 모두 만족한 독립 실행이 전체 시도에서 차지하는 비율이다.</span></li>
 <li data-article-id="agent-trajectory-evaluation"><a href="/wiki/agent-trajectory-evaluation/">에이전트 궤적 평가</a><span class="wiki-index-summary">에이전트 궤적 평가는 최종 답뿐 아니라 관측·추론·도구 호출·상태 전환으로 이어지는 실행 경로의 품질을 판정하는 방법이다.</span></li>
 <li data-article-id="short-term-agent-memory"><a href="/wiki/short-term-agent-memory/">에이전트 단기 기억</a><span class="wiki-index-summary">에이전트 단기 기억은 한 세션이나 인접한 작업 단계 사이에서 최근 대화와 행동 결과를 유지하는 임시 기억 계층이다.</span></li>
 <li data-article-id="agent-tool"><a href="/wiki/agent-tool/">에이전트 도구</a><span class="wiki-index-summary">에이전트 도구는 모델이 외부 정보 조회나 상태 변경을 수행할 수 있도록 명세된 함수·API·실행 환경이다.</span></li>
@@ -133,7 +133,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <section class="wiki-index-group" data-index-group="ko-ch">
 <h2 id="index-ko-ch">ㅊ</h2>
 <ul class="wiki-index-list">
-<li data-article-id="reasoning-action-interleaving"><a href="/wiki/reasoning-action-interleaving/">추론-행동 교차 수행</a><span class="wiki-index-summary">추론과 행동의 교차 수행은 내부 판단과 외부 도구 실행을 번갈아 수행하며 다음 결정을 관측에 맞춰 갱신하는 에이전트 패턴이다.</span></li>
+<li data-article-id="reasoning-action-interleaving"><a href="/wiki/reasoning-action-interleaving/">추론-행동 교차 수행</a><span class="wiki-index-summary">추론-행동 교차 수행은 내부 판단과 외부 도구 실행을 번갈아 수행하며 다음 결정을 관측에 맞춰 갱신하는 에이전트 패턴이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-k">
@@ -147,7 +147,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <h2 id="index-ko-t">ㅌ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="search-based-planning"><a href="/wiki/search-based-planning/">탐색 기반 계획</a><span class="wiki-index-summary">탐색 기반 계획은 상태를 노드, 행동을 전이로 보고 초기 상태에서 목표 상태까지의 경로를 탐색하는 계획 방식이다.</span></li>
-<li data-article-id="runaway-agent"><a href="/wiki/runaway-agent/">통제 이탈 에이전트</a><span class="wiki-index-summary">폭주 에이전트는 잘못된 목표·종료 조건·피드백 고리 때문에 불필요하거나 위험한 행동을 반복하며 자원과 권한을 계속 소비하는 실패 상태다.</span></li>
+<li data-article-id="runaway-agent"><a href="/wiki/runaway-agent/">통제 이탈 에이전트</a><span class="wiki-index-summary">통제 이탈 에이전트는 잘못된 목표·종료 조건·피드백 고리 때문에 불필요하거나 위험한 행동을 반복하며 자원과 권한을 계속 소비하는 실패 상태다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-p">
@@ -171,7 +171,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="mcp-elicitation"><a href="/wiki/mcp-elicitation/">MCP 사용자 정보 요청</a><span class="wiki-index-summary">MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 정보를 요청하는 기능이다.</span></li>
 <li data-article-id="mcp-sampling"><a href="/wiki/mcp-sampling/">MCP 샘플링</a><span class="wiki-index-summary">MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다.</span></li>
 <li data-article-id="mcp-server"><a href="/wiki/mcp-server/">MCP 서버</a><span class="wiki-index-summary">MCP 서버는 표준 프로토콜을 통해 도구, 리소스와 프롬프트 같은 기능을 MCP 클라이언트에 제공하는 프로그램이다.</span></li>
-<li data-article-id="mcp-transport"><a href="/wiki/mcp-transport/">MCP 전송 계층</a><span class="wiki-index-summary">MCP 전송은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.</span></li>
+<li data-article-id="mcp-transport"><a href="/wiki/mcp-transport/">MCP 전송 계층</a><span class="wiki-index-summary">MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.</span></li>
 <li data-article-id="mcp-client"><a href="/wiki/mcp-client/">MCP 클라이언트</a><span class="wiki-index-summary">MCP 클라이언트는 MCP 호스트 안에서 특정 서버와 일대일 세션을 맺고 프로토콜 메시지를 주고받는 구성 요소다.</span></li>
 <li data-article-id="mcp-prompts"><a href="/wiki/mcp-prompts/">MCP 프롬프트</a><span class="wiki-index-summary">MCP 프롬프트는 서버가 재사용 가능한 메시지 템플릿과 입력 인수로 공개하는 사용자 선택형 상호작용 구성 요소다.</span></li>
 <li data-article-id="mcp-host"><a href="/wiki/mcp-host/">MCP 호스트</a><span class="wiki-index-summary">MCP 호스트는 하나 이상의 MCP 클라이언트를 내장해 사용자 애플리케이션과 외부 MCP 서버 사이의 연결·권한·문맥을 관리하는 프로그램이다.</span></li>

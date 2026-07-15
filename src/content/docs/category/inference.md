@@ -105,7 +105,7 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <li data-article-id="presence-penalty"><a href="/wiki/presence-penalty/">존재 페널티</a><span class="wiki-index-summary">존재 페널티는 토큰이 한 번이라도 등장했는지를 기준으로 고정된 패널티를 적용하는 생성 제어 방식이다.</span></li>
 <li data-article-id="stop-sequence"><a href="/wiki/stop-sequence/">중지 시퀀스</a><span class="wiki-index-summary">중지 시퀀스는 생성 결과에서 지정한 토큰 또는 문자열 패턴이 나타나면 디코딩을 종료하도록 하는 조건이다.</span></li>
 <li data-article-id="latency"><a href="/wiki/latency/">지연 시간</a><span class="wiki-index-summary">요청을 보낸 뒤 첫 토큰 또는 전체 응답을 받을 때까지 걸리는 시간이다.</span></li>
-<li data-article-id="latency-throughput-tradeoff"><a href="/wiki/latency-throughput-tradeoff/">지연 시간-처리량 절충</a><span class="wiki-index-summary">지연시간-처리량 상충은 요청 하나의 응답 시간을 줄이는 목표와 단위 시간당 처리량을 높이는 목표가 배치·큐잉에서 충돌하는 관계다.</span></li>
+<li data-article-id="latency-throughput-tradeoff"><a href="/wiki/latency-throughput-tradeoff/">지연 시간-처리량 절충</a><span class="wiki-index-summary">지연 시간-처리량 절충은 요청 하나의 응답 시간을 줄이는 목표와 단위 시간당 처리량을 높이는 목표가 배치·큐잉에서 충돌하는 관계다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-ch">

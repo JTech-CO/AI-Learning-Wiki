@@ -13,7 +13,7 @@ description: "현대 언어 모델을 이루는 핵심 아키텍처"
 <ul class="wiki-index-list">
 <li data-article-id="additive-attention"><a href="/wiki/additive-attention/">가산 어텐션</a><span class="wiki-index-summary">가산 어텐션은 질의와 키를 별도 선형 변환한 뒤 비선형 함수와 점수 벡터로 정렬 점수를 계산하는 어텐션 방식이다.</span></li>
 <li data-article-id="retrieval-transformer"><a href="/wiki/retrieval-transformer/">검색 결합 트랜스포머</a><span class="wiki-index-summary">검색 결합 트랜스포머는 외부 코퍼스에서 찾은 이웃 문맥을 모델 계산에 통합해 매개변수 밖의 정보를 사용하는 구조다.</span></li>
-<li data-article-id="hierarchical-transformer"><a href="/wiki/hierarchical-transformer/">계층형 트랜스포머</a><span class="wiki-index-summary">계층적 트랜스포머는 토큰, 문장, 문서처럼 서로 다른 해상도의 표현을 단계적으로 계산하고 결합하는 구조다.</span></li>
+<li data-article-id="hierarchical-transformer"><a href="/wiki/hierarchical-transformer/">계층형 트랜스포머</a><span class="wiki-index-summary">계층형 트랜스포머는 토큰, 문장, 문서처럼 서로 다른 해상도의 표현을 단계적으로 계산하고 결합하는 구조다.</span></li>
 <li data-article-id="graph-transformer"><a href="/wiki/graph-transformer/">그래프 트랜스포머</a><span class="wiki-index-summary">그래프 트랜스포머는 노드와 간선 구조를 어텐션에 반영해 그래프 데이터를 처리하는 트랜스포머 계열 모델이다.</span></li>
 <li data-article-id="grouped-query-attention"><a href="/wiki/grouped-query-attention/">그룹 쿼리 어텐션</a><span class="wiki-index-summary">그룹 쿼리 어텐션은 여러 질의 헤드를 그룹으로 나누고 그룹마다 하나의 키·값 헤드를 공유하는 구조다.</span></li>
 <li data-article-id="global-attention"><a href="/wiki/global-attention/">글로벌 어텐션</a><span class="wiki-index-summary">글로벌 어텐션은 선택된 토큰이 시퀀스 전체와 상호작용하거나 모든 토큰이 전역 위치를 볼 수 있게 하는 연결 방식이다.</span></li>
@@ -60,7 +60,7 @@ description: "현대 언어 모델을 이루는 핵심 아키텍처"
 <ul class="wiki-index-list">
 <li data-article-id="sinusoidal-position-encoding"><a href="/wiki/sinusoidal-position-encoding/">사인파 위치 인코딩</a><span class="wiki-index-summary">사인파 위치 인코딩은 서로 다른 주파수의 사인·코사인 함숫값으로 토큰 위치를 나타내는 고정 벡터 방식이다.</span></li>
 <li data-article-id="relative-position-encoding"><a href="/wiki/relative-position-encoding/">상대 위치 인코딩</a><span class="wiki-index-summary">상대 위치 인코딩은 두 토큰의 절대 인덱스 대신 서로 떨어진 거리와 방향을 어텐션 계산에 반영하는 방식이다.</span></li>
-<li data-article-id="state-space-transformer-hybrid"><a href="/wiki/state-space-transformer-hybrid/">상태 공간-트랜스포머 하이브리드</a><span class="wiki-index-summary">상태공간-트랜스포머 하이브리드는 선형 상태공간 시퀀스 층과 어텐션 층을 한 모델에서 결합한 구조다.</span></li>
+<li data-article-id="state-space-transformer-hybrid"><a href="/wiki/state-space-transformer-hybrid/">상태 공간-트랜스포머 하이브리드</a><span class="wiki-index-summary">상태 공간-트랜스포머 하이브리드는 선형 상태공간 시퀀스 층과 어텐션 층을 한 모델에서 결합한 구조다.</span></li>
 <li data-article-id="linear-attention"><a href="/wiki/linear-attention/">선형 어텐션</a><span class="wiki-index-summary">선형 어텐션은 커널 변환이나 연산 순서 변경으로 시퀀스 길이에 대한 어텐션 계산을 선형에 가깝게 줄이는 방법군이다.</span></li>
 <li data-article-id="segment-embedding"><a href="/wiki/segment-embedding/">세그먼트 임베딩</a><span class="wiki-index-summary">세그먼트 임베딩은 한 입력 안에서 문장 쌍이나 문서 구간처럼 서로 다른 부분의 소속을 나타내는 학습 벡터다.</span></li>
 <li data-article-id="self-attention"><a href="/wiki/self-attention/">셀프 어텐션</a><span class="wiki-index-summary">하나의 시퀀스 안에서 각 위치가 다른 위치의 정보를 참조하는 어텐션이다.</span></li>
@@ -102,7 +102,7 @@ description: "현대 언어 모델을 이루는 핵심 아키텍처"
 <li data-article-id="residual-connection"><a href="/wiki/residual-connection/">잔차 연결</a><span class="wiki-index-summary">블록의 입력을 출력에 더해 깊은 신경망의 학습을 안정화하는 연결이다.</span></li>
 <li data-article-id="long-context-transformer"><a href="/wiki/long-context-transformer/">장문맥 트랜스포머</a><span class="wiki-index-summary">장문맥 트랜스포머는 일반적인 문맥 창보다 훨씬 긴 시퀀스를 처리하도록 어텐션, 위치 표현과 메모리를 설계한 모델이다.</span></li>
 <li data-article-id="low-rank-attention"><a href="/wiki/low-rank-attention/">저랭크 어텐션</a><span class="wiki-index-summary">저랭크 어텐션은 키·값이나 어텐션 행렬이 더 낮은 차원 구조로 근사될 수 있다는 가정을 이용해 계산량을 줄이는 방법이다.</span></li>
-<li data-article-id="adaptive-computation-time-transformer"><a href="/wiki/adaptive-computation-time-transformer/">적응형 계산 시간 트랜스포머</a><span class="wiki-index-summary">적응 계산 시간 트랜스포머는 입력 위치나 예제별로 필요한 반복 계산 단계 수를 동적으로 결정하는 구조다.</span></li>
+<li data-article-id="adaptive-computation-time-transformer"><a href="/wiki/adaptive-computation-time-transformer/">적응형 계산 시간 트랜스포머</a><span class="wiki-index-summary">적응형 계산 시간 트랜스포머는 입력 위치나 예제별로 필요한 반복 계산 단계 수를 동적으로 결정하는 구조다.</span></li>
 <li data-article-id="absolute-position-encoding"><a href="/wiki/absolute-position-encoding/">절대 위치 인코딩</a><span class="wiki-index-summary">절대 위치 인코딩은 각 토큰의 시퀀스 내 고유 위치를 나타내는 벡터를 내용 표현에 더하거나 결합하는 방식이다.</span></li>
 <li data-article-id="normalization-placement"><a href="/wiki/normalization-placement/">정규화 배치</a><span class="wiki-index-summary">정규화 배치는 트랜스포머 하위 계층의 앞이나 뒤 어느 위치에 정규화 연산을 둘지 정하는 구조 선택이다.</span></li>
 <li data-article-id="early-exit-transformer"><a href="/wiki/early-exit-transformer/">조기 종료 트랜스포머</a><span class="wiki-index-summary">조기 종료 트랜스포머는 중간 층에 예측 헤드를 두고 충분히 확신하는 입력을 마지막 층 전에 반환하는 적응형 추론 구조다.</span></li>
