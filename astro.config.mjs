@@ -43,7 +43,8 @@ export default defineConfig({
         { label: '용어 색인', link: '/glossary/' },
         { label: '학습 코스', items: [{ autogenerate: { directory: 'course' } }] },
         { label: '백과 분류', items: [{ autogenerate: { directory: 'category' } }] },
-        { label: '프롬프트 자료실', link: '/prompt-explorer/' }
+        { label: '프롬프트 자료실', link: '/prompt-explorer/' },
+        { label: '코드·설정 자료실', link: '/snippet-explorer/' }
       ]
     })
   ]

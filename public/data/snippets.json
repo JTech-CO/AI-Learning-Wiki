@@ -1,0 +1,482 @@
+{
+  "generatedAt": "2026-07-15T13:39:48.782Z",
+  "policyVersion": "W33-2026-07-15",
+  "counts": {
+    "sourceModules": 305,
+    "sourcePrompts": 1173,
+    "duplicateMerges": 38,
+    "exactDuplicateMerges": 35,
+    "reviewedNearDuplicateMerges": 3,
+    "snippets": 25,
+    "additions": 32,
+    "prompts": 1142
+  },
+  "snippets": [
+    {
+      "id": "ai-builder-15-database-sql-basics-p15b-create-table",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "표 만들기(열 바꿔서 재사용)",
+      "content": "CREATE TABLE [표이름] ( id INTEGER PRIMARY KEY, [열1이름] TEXT, [열2이름] INTEGER );",
+      "tags": [
+        "스프레드시트",
+        "데이터베이스",
+        "SQL"
+      ],
+      "course": "api-development",
+      "courseTitle": "AI API 개발",
+      "courseUrl": "/course/api-development/",
+      "relatedWikiUrl": "/wiki/prompt/",
+      "url": "/wiki/prompt/"
+    },
+    {
+      "id": "ai-builder-15-database-sql-basics-p15b-select-where",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "조건으로 골라 꺼내기",
+      "content": "SELECT [원하는 열들] FROM [표이름] WHERE [열] = '[찾을 값]';",
+      "tags": [
+        "스프레드시트",
+        "데이터베이스",
+        "SQL"
+      ],
+      "course": "api-development",
+      "courseTitle": "AI API 개발",
+      "courseUrl": "/course/api-development/",
+      "relatedWikiUrl": "/wiki/prompt/",
+      "url": "/wiki/prompt/"
+    },
+    {
+      "id": "ai-builder-21-supabase-backend-p21b-todo-html",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "HTML 한 페이지 todo 앱 (그대로 복붙, 두 곳만 교체)",
+      "content": "아래 HTML을 그대로 복사한 뒤, 코드 안 `SUPABASE_URL`과 `SUPABASE_KEY` 두 곳만 내 값으로 교체해서 `todo.html`로 저장하고 더블클릭하세요.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset='utf-8'>\n  <title>내 할일</title>\n</head>\n<body>\n  <h2>내 할 일</h2>\n  <input id='t' placeholder='할 일 입력'>\n  <button onclick='add()'>추가</button>\n  <ul id='list'></ul>\n  <script src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2'></script>\n  <script>\n    const SUPABASE_URL='[내_Project_URL]';\n    const SUPABASE_KEY='[내_Publishable_key_또는_anon_public_키]';\n    const db=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);\n    async function load(){\n      const{data}=await db.from('todos').select('*').order('id');\n      document.getElementById('list').innerHTML=data.map(r=>'<li>'+r.task+'</li>').join('');\n    }\n    async function add(){\n      const v=document.getElementById('t').value;\n      if(!v)return;\n      await db.from('todos').insert({task:v});\n      document.getElementById('t').value='';\n      load();\n    }\n    load();\n  </script>\n</body>\n</html>\n```\n\n키: 2025년 11월 이후 프로젝트 → Publishable key `sb_publishable_...`, 그 이전 → anon public `eyJ...`.",
+      "tags": [
+        "문서 분석",
+        "코딩",
+        "API",
+        "데이터베이스",
+        "생산성",
+        "보안"
+      ],
+      "course": "responsible-ai",
+      "courseTitle": "신뢰할 수 있는 AI",
+      "courseUrl": "/course/responsible-ai/",
+      "relatedWikiUrl": "/wiki/api-key/",
+      "url": "/wiki/api-key/"
+    },
+    {
+      "id": "ai-builder-26-github-basics-p26b-pr",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "PR 설명 양식(복붙)",
+      "content": "## 무엇을 바꿨나\n- [바꾼 내용 1]\n- [바꾼 내용 2]\n\n## 왜 바꿨나\n- [이유]\n\n## 확인할 점\n- [ ] [확인 항목]",
+      "tags": [
+        "문서 분석",
+        "코딩",
+        "검증",
+        "협업",
+        "웹 개발"
+      ],
+      "course": "api-development",
+      "courseTitle": "AI API 개발",
+      "courseUrl": "/course/api-development/",
+      "relatedWikiUrl": "/wiki/http-request/",
+      "url": "/wiki/http-request/"
+    },
+    {
+      "id": "ai-builder-26-github-basics-p26b-issue",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "이슈(할 일) 양식(복붙)",
+      "content": "## 하고 싶은 것\n[원하는 결과 한 줄]\n\n## 해야 할 일\n- [ ] [작은 단계 1]\n- [ ] [작은 단계 2]\n\n## 참고\n[관련 링크나 메모]",
+      "tags": [
+        "문서 분석",
+        "코딩",
+        "생산성",
+        "협업",
+        "웹 개발"
+      ],
+      "course": "api-development",
+      "courseTitle": "AI API 개발",
+      "courseUrl": "/course/api-development/",
+      "relatedWikiUrl": "/wiki/http-request/",
+      "url": "/wiki/http-request/"
+    },
+    {
+      "id": "ai-engineer-llm-api-app-p9e-basic",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "기본 1회 질문 (복붙용 전체 코드)",
+      "content": "import anthropic\nclient = anthropic.Anthropic(api_key=\"[내 API 키]\")\nmsg = client.messages.create(model=\"claude-opus-4-8\", max_tokens=[최대 답 길이 예: 500], messages=[{\"role\": \"user\", \"content\": \"[여기에 질문]\"}])\nprint(msg.content[0].text)\nprint(msg.usage)  # 토큰 수 확인",
+      "tags": [
+        "코딩",
+        "API",
+        "콘텐츠",
+        "검증",
+        "Python",
+        "노코드"
+      ],
+      "course": "api-development",
+      "courseTitle": "AI API 개발",
+      "courseUrl": "/course/api-development/",
+      "relatedWikiUrl": "/wiki/api-key/",
+      "url": "/wiki/api-key/"
+    },
+    {
+      "id": "ai-engineer-llm-api-app-p9e-system",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "역할 지정 (system 프롬프트로 캐릭터 부여)",
+      "content": "msg = client.messages.create(model=\"claude-opus-4-8\", max_tokens=500, system=\"너는 [친절한 초등 수학 선생님]이다. 항상 [쉬운 말과 예시]로 답한다.\", messages=[{\"role\": \"user\", \"content\": \"[학생 질문]\"}])\nprint(msg.content[0].text)",
+      "tags": [
+        "교육",
+        "코딩",
+        "API",
+        "프롬프트 설계",
+        "콘텐츠",
+        "Python"
+      ],
+      "course": "api-development",
+      "courseTitle": "AI API 개발",
+      "courseUrl": "/course/api-development/",
+      "relatedWikiUrl": "/wiki/api-key/",
+      "url": "/wiki/api-key/"
+    },
+    {
+      "id": "ai-engineer-llm-api-app-p9e-loop",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "여러 질문 자동 반복 (반복문)",
+      "content": "questions = [\"[질문1]\", \"[질문2]\", \"[질문3]\"]\nfor q in questions:\n    msg = client.messages.create(model=\"claude-opus-4-8\", max_tokens=300, messages=[{\"role\": \"user\", \"content\": q}])\n    print(\"Q:\", q)\n    print(\"A:\", msg.content[0].text)\n    print(\"---\")",
+      "tags": [
+        "코딩",
+        "API",
+        "자동화",
+        "콘텐츠",
+        "Python",
+        "노코드"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/api-key/",
+      "url": "/wiki/api-key/"
+    },
+    {
+      "id": "ai-engineer-prompt-caching-p24-cache-doc",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "긴 문서/매뉴얼을 캐시로 묶어 반복 질문",
+      "content": "긴 문서/매뉴얼을 캐시로 묶어 반복 질문할 때:\n\n```python\nresp = client.messages.create(\n    model=\"claude-opus-4-8\",\n    max_tokens=300,\n    system=[\n        {\"type\": \"text\", \"text\": \"너는 [사내 규정 안내 봇]이야. 아래 문서만 근거로 답하고 문서에 없으면 '문서에 없음'.\"},\n        {\"type\": \"text\", \"text\": \"\"\"[안 바뀌는 긴 문서 전문 — Opus·Haiku4.5는 4,096토큰↑, Sonnet4.6은 2,048토큰↑]\"\"\", \"cache_control\": {\"type\": \"ephemeral\"}},\n    ],\n    messages=[{\"role\": \"user\", \"content\": \"[매번 바뀌는 질문]\"}],\n)\n```",
+      "tags": [
+        "문서 분석",
+        "API",
+        "프롬프트 설계",
+        "콘텐츠",
+        "검증",
+        "출처·인용"
+      ],
+      "course": "responsible-ai",
+      "courseTitle": "신뢰할 수 있는 AI",
+      "courseUrl": "/course/responsible-ai/",
+      "relatedWikiUrl": "/wiki/prompt-caching/",
+      "url": "/wiki/prompt-caching/"
+    },
+    {
+      "id": "ai-engineer-prompt-caching-p24-cache-1h",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "1시간 캐시(베타 헤더 필수)",
+      "content": "1시간 캐시(베타 헤더 필수) — ttl만으로는 안 되고 베타 헤더 + ttl 둘 다:\n\n```python\n# ttl만으로는 안 됨. 베타 헤더 + ttl 둘 다\nresp = client.messages.create(\n    model=\"claude-opus-4-8\",\n    max_tokens=300,\n    extra_headers={\"anthropic-beta\": \"extended-cache-ttl-2025-04-11\"},\n    system=[\n        {\"type\": \"text\", \"text\": \"너는 문서 도우미야.\"},\n        {\"type\": \"text\", \"text\": \"\"\"[긴 고정 문서]\"\"\", \"cache_control\": {\"type\": \"ephemeral\", \"ttl\": \"1h\"}},\n    ],\n    messages=[{\"role\": \"user\", \"content\": \"[질문]\"}],\n)\n```",
+      "tags": [
+        "문서 분석",
+        "API",
+        "프롬프트 설계",
+        "콘텐츠",
+        "검증",
+        "Python"
+      ],
+      "course": "responsible-ai",
+      "courseTitle": "신뢰할 수 있는 AI",
+      "courseUrl": "/course/responsible-ai/",
+      "relatedWikiUrl": "/wiki/prompt-caching/",
+      "url": "/wiki/prompt-caching/"
+    },
+    {
+      "id": "ai-engineer-prompt-caching-p24-cache-check",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "캐시 적중 여부 자동 점검",
+      "content": "캐시 적중 여부 자동 점검:\n\n```python\nu = resp.usage\nprint(\"저장(write):\", u.cache_creation_input_tokens)\nprint(\"읽기(read):\", u.cache_read_input_tokens)\nif u.cache_read_input_tokens > 0:\n    print(\"✅ 캐시 적중! 비용 90% 절감 중\")\nelif u.cache_creation_input_tokens > 0:\n    print(\"💾 첫 저장 완료\")\nelse:\n    print(\"⚠️ 캐시 안 됨 — 문맥이 최소 토큰보다 짧음\")\n```",
+      "tags": [
+        "글쓰기",
+        "문서 분석",
+        "API",
+        "프롬프트 설계",
+        "검증",
+        "Python"
+      ],
+      "course": "responsible-ai",
+      "courseTitle": "신뢰할 수 있는 AI",
+      "courseUrl": "/course/responsible-ai/",
+      "relatedWikiUrl": "/wiki/prompt-caching/",
+      "url": "/wiki/prompt-caching/"
+    },
+    {
+      "id": "ai-engineer-rag-advanced-rag-advanced-p5",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "진짜 reranker — Cohere Rerank 4.0 API 호출(코드)",
+      "content": "# Cohere Rerank 4.0 (rerank-v4.0-pro) 예시 — 벡터 검색 후보를 정밀 재순위\n# 현행 Cohere 플래그십 (2025년 12월 출시). 저지연이 필요하면 rerank-v4.0-fast 사용\nimport cohere\nco = cohere.ClientV2(\"<COHERE_API_KEY>\")\nresp = co.rerank(\n    model=\"rerank-v4.0-pro\",\n    query=\"AX-7200 보증기간\",\n    documents=[c1, c2, c3],  # 벡터 검색으로 뽑은 후보 50~100개 텍스트\n    top_n=5,\n)\nfor r in resp.results:\n    print(r.index, r.relevance_score)  # 점수순 정렬된 상위 5개\n# 오픈소스로 자체 서버에 두려면 model 자리에 BGE-reranker-v2-m3 / jina-reranker-v3를 LlamaIndex·LangChain reranker로 등록",
+      "tags": [
+        "문서 분석",
+        "코딩",
+        "API",
+        "RAG",
+        "검색",
+        "SQL"
+      ],
+      "course": "rag-search",
+      "courseTitle": "임베딩과 RAG",
+      "courseUrl": "/course/rag-search/",
+      "relatedWikiUrl": "/wiki/rag/",
+      "url": "/wiki/rag/"
+    },
+    {
+      "id": "ai-engineer-mcp-intro-mcp-intro-p1",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "파일시스템 서버 config (가장 먼저 쓰기)",
+      "content": "{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"@modelcontextprotocol/server-filesystem\",\n        \"[내_허용_폴더_절대경로]\"\n      ]\n    }\n  }\n}",
+      "tags": [
+        "AI 에이전트"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/mcp/",
+      "url": "/wiki/mcp/"
+    },
+    {
+      "id": "automation-py-functions-py-functions-p1",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "기본 함수 틀",
+      "content": "def [함수이름]([입력값]):\n    [처리할 명령]\n    return [돌려줄 결과]\n\nprint([함수이름]([테스트할 값]))",
+      "tags": [
+        "코딩",
+        "테스트",
+        "자동화",
+        "Python"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "automation-http-requests-http-requests-p1",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "기본 GET 요청 뼈대",
+      "content": "import requests\nr = requests.get('[가져올 주소 URL]', timeout=5)\nprint('상태:', r.status_code)\nprint(r.text[:300])  # 앞 300글자만 미리보기",
+      "tags": [
+        "글쓰기",
+        "코딩",
+        "API",
+        "자동화",
+        "웹 개발"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "automation-http-requests-http-requests-p2",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "JSON API에서 값 뽑기",
+      "content": "import requests\nr = requests.get('[API 주소]', params={'[조건이름]':'[값]'}, timeout=5)\nr.raise_for_status()\ndata = r.json()\nprint(data['[꺼내고 싶은 이름표]'])",
+      "tags": [
+        "API",
+        "자동화",
+        "구조화 출력",
+        "웹 개발"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "automation-logging-logging-p1",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "로깅 기본 틀(복붙용)",
+      "content": "import logging\n\nlogging.basicConfig(\n    filename='app.log',\n    level=logging.INFO,\n    format='%(asctime)s %(levelname)s %(message)s',\n    encoding='utf-8'\n)\n\nlogging.info('[작업이름] 시작')\ntry:\n    # 여기에 자동화가 할 일 작성\n    logging.info('[단계1 설명] 완료')\nexcept Exception as e:\n    logging.error(f'[단계1 설명] 실패: {e}')\n\nlogging.info('[작업이름] 끝')",
+      "tags": [
+        "글쓰기",
+        "코딩",
+        "디버깅",
+        "자동화",
+        "생산성",
+        "모니터링"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/observability/",
+      "url": "/wiki/observability/"
+    },
+    {
+      "id": "automation-notifications-notifications-p1",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "슬랙 알림 (파이썬)",
+      "content": "import requests\nWEBHOOK = \"[여기에 복사한 웹훅 주소]\"\ndef slack(msg):\n    requests.post(WEBHOOK, json={\"text\": msg})\nslack(\"✅ [작업이름] 완료!\")",
+      "tags": [
+        "이메일",
+        "디버깅",
+        "자동화",
+        "구조화 출력",
+        "웹 개발",
+        "Python"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "automation-notifications-notifications-p2",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "이메일 알림 (Gmail)",
+      "content": "import smtplib\nfrom email.mime.text import MIMEText\ndef mail(제목, 내용):\n    m = MIMEText(내용)\n    m[\"Subject\"] = 제목\n    m[\"From\"] = \"[내이메일@gmail.com]\"\n    m[\"To\"] = \"[받을이메일@gmail.com]\"\n    s = smtplib.SMTP_SSL(\"smtp.gmail.com\", 465)\n    s.login(\"[내이메일@gmail.com]\", \"[16자리앱비밀번호]\")\n    s.send_message(m); s.quit()\nmail(\"작업 알림\", \"[작업이름] 완료\")",
+      "tags": [
+        "이메일",
+        "디버깅",
+        "자동화"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "automation-notifications-notifications-p3",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "조건부 알림 (성공/실패)",
+      "content": "try:\n    # 여기에 실제 작업 코드\n    [내작업코드]\n    slack(\"✅ [작업이름] 성공적으로 완료!\")\nexcept Exception as e:\n    slack(f\"❌ [작업이름] 실패! 오류: {e}\")",
+      "tags": [
+        "이메일",
+        "코딩",
+        "디버깅",
+        "자동화"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "automation-bot-webhooks-bot-webhooks-p1",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "슬랙 기본 알림 Body",
+      "content": "{\"text\":\"[이모지] [알림제목]\\n[항목1]: [값1]\\n[항목2]: [값2]\"}",
+      "tags": [
+        "코딩",
+        "자동화",
+        "협업",
+        "웹 개발"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/webhook/",
+      "url": "/wiki/webhook/"
+    },
+    {
+      "id": "automation-bot-webhooks-bot-webhooks-p2",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "디스코드 기본 알림 Body",
+      "content": "{\"content\":\"[이모지] [알림제목] — [값1] / [값2]\"}",
+      "tags": [
+        "코딩",
+        "자동화",
+        "콘텐츠",
+        "협업",
+        "웹 개발"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/webhook/",
+      "url": "/wiki/webhook/"
+    },
+    {
+      "id": "automation-scheduling-cron-scheduling-cron-p1",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "schedule 매일 지정시각 실행",
+      "content": "import schedule\nimport time\n\ndef 할일():\n    print('[할 일 내용] 실행됨!')\n\nschedule.every().day.at('[09:00]').do(할일)\n\nwhile True:\n    schedule.run_pending()\n    time.sleep(60)",
+      "tags": [
+        "계획",
+        "자동화",
+        "생산성"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "automation-scheduling-cron-scheduling-cron-p2",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "schedule N분마다 반복",
+      "content": "import schedule\nimport time\n\ndef 할일():\n    print('점검 실행!')\n\nschedule.every([10]).minutes.do(할일)\n\nwhile True:\n    schedule.run_pending()\n    time.sleep(1)",
+      "tags": [
+        "계획",
+        "자동화"
+      ],
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "relatedWikiUrl": "/wiki/workflow-orchestration/",
+      "url": "/wiki/workflow-orchestration/"
+    },
+    {
+      "id": "ai-trends-vllm-production-serving-vllm-production-serving-p3",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "파이썬 클라이언트 연결",
+      "content": "from openai import OpenAI\nclient = OpenAI(base_url=\"http://localhost:8000/v1\", api_key=\"none\")\nr = client.chat.completions.create(model=\"[모델이름]\", messages=[{\"role\":\"user\",\"content\":\"[질문]\"}])\nprint(r.choices[0].message.content)",
+      "tags": [
+        "API",
+        "콘텐츠",
+        "Python",
+        "비즈니스",
+        "배포"
+      ],
+      "course": "model-training",
+      "courseTitle": "모델 학습과 튜닝",
+      "courseUrl": "/course/model-training/",
+      "relatedWikiUrl": "/wiki/fine-tuning/",
+      "url": "/wiki/fine-tuning/"
+    }
+  ]
+}

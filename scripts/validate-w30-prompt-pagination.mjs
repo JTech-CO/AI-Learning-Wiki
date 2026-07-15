@@ -7,7 +7,7 @@ const [component, css, prompts] = await Promise.all([
   readFile('public/data/prompts.json', 'utf8').then(JSON.parse),
 ]);
 
-assert.equal(prompts.prompts.length, 1173, 'prompt catalog count changed');
+assert.equal(prompts.prompts.length, 1142, 'prompt catalog count changed');
 assert.match(component, /id="prompt-pagination"[^>]*aria-label="프롬프트 목록 페이지"/, 'prompt pagination navigation missing');
 assert.match(component, /const PAGE_SIZE = 40;/, 'prompt page size changed');
 assert.match(component, /filtered\.slice\(start, end\)\.map\(card\)/, 'prompt page slice missing');

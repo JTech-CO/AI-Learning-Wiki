@@ -38,3 +38,15 @@ astro-dev-toolbar, .kudos { display: none !important; }
 .wiki-pagination button { min-width: 4.4rem; border: 1px solid #72777d; border-radius: 0; background: #f8f9fa; color: #202122; padding: .42rem .7rem; font: inherit; cursor: pointer; }
 .wiki-pagination button:disabled { color: #72777d; cursor: default; opacity: .65; }
 .wiki-pagination span { min-width: 7rem; color: #54595d; text-align: center; font-size: .82rem; }
+
+.snippet-explorer { margin-top: 1rem; }
+.snippet-controls { grid-template-columns: 2fr repeat(2, minmax(8rem, 1fr)); }
+.snippet-results { display: block; }
+.snippet-card { display: block; border: 0; border-top: 1px solid #eaecf0; border-radius: 0; background: transparent; padding: .75rem 0; }
+.snippet-card h3 { margin: .15rem 0; font-family: inherit; font-size: 1.05rem; }
+.snippet-card > p { margin: .2rem 0; }
+.snippet-card pre { overflow: auto; white-space: pre-wrap; border: 1px solid #c8ccd1; border-radius: 0; background: #f8f9fa; color: #202122; padding: .7rem; }
+.snippet-card pre code { background: #f8f9fa !important; color: #202122 !important; }
+.prompt-note { border-left: 3px solid #72777d; color: #54595d; padding-left: .65rem; }
+.example-label { color: #54595d; font-size: .75rem; font-weight: 700; margin-bottom: .2rem; }
+@media(max-width:50rem){.snippet-controls{grid-template-columns:1fr;}}

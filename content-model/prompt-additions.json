@@ -1,0 +1,703 @@
+{
+  "version": "W33-2026-07-15",
+  "coveragePlan": [
+    {
+      "id": "accessibility",
+      "label": "접근성",
+      "count": 5
+    },
+    {
+      "id": "feedback",
+      "label": "사용자 피드백",
+      "count": 4
+    },
+    {
+      "id": "multimodal-documents",
+      "label": "멀티모달 문서",
+      "count": 5
+    },
+    {
+      "id": "rag-evaluation",
+      "label": "RAG 평가",
+      "count": 5
+    },
+    {
+      "id": "structured-output",
+      "label": "구조화 출력",
+      "count": 5
+    },
+    {
+      "id": "privacy",
+      "label": "개인정보 보호",
+      "count": 4
+    },
+    {
+      "id": "adversarial-edge-cases",
+      "label": "적대적·경계 사례",
+      "count": 4
+    }
+  ],
+  "prompts": [
+    {
+      "id": "accessible-alt-text",
+      "course": "multimodal-ai",
+      "title": "사실 중심 이미지 대체 텍스트 작성",
+      "template": "첨부한 이미지의 대체 텍스트를 한국어로 작성해줘. 이미지에서 직접 확인되는 사실만 쓰고 추측은 제외해. 장식용 요소는 생략하고, 정보 전달에 중요한 사람·사물·행동·문자·공간 관계를 2문장 이내로 설명해. 이미지 안 문자는 정확히 옮겨 적어.",
+      "notes": "신원·감정·장애처럼 이미지로 확정할 수 없는 특성은 추정하지 않는다. 실제 화면에서 주변 문맥과 함께 검토한다.",
+      "tags": [
+        "accessibility",
+        "image",
+        "multimodal"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부한 행사 포스터에서 날짜·장소·행사명을 포함한 대체 텍스트를 2문장으로 작성해줘."
+        }
+      ],
+      "relatedWikiSlug": "image-captioning",
+      "coverageArea": "accessibility"
+    },
+    {
+      "id": "accessible-chart-description",
+      "course": "multimodal-ai",
+      "title": "차트 접근성 설명 작성",
+      "template": "첨부한 차트를 스크린리더 사용자가 이해할 수 있도록 설명해줘. 차트 유형, 축과 단위, 가장 큰 값과 작은 값, 주요 추세, 예외값을 순서대로 적고 표에서 읽을 수 없는 값은 추정하지 마. 마지막에 핵심 결론을 한 문장으로 써줘.",
+      "notes": "시각적 색상 차이만으로 계열을 구분하지 말고 범례의 명칭을 함께 사용한다.",
+      "tags": [
+        "accessibility",
+        "visualization",
+        "data-analysis",
+        "multimodal"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부한 월별 고객 문의 막대그래프를 축·단위·최댓값·추세 순서로 설명해줘."
+        }
+      ],
+      "relatedWikiSlug": "multimodal-evaluation",
+      "coverageArea": "accessibility"
+    },
+    {
+      "id": "accessible-form-copy",
+      "course": "responsible-ai",
+      "title": "접근 가능한 폼 안내 문구 검토",
+      "template": "아래 폼의 라벨, 도움말, 오류 메시지를 접근성 관점에서 검토해줘. 색상이나 위치만 가리키는 표현, 모호한 오류, 입력 형식 누락을 찾아 표로 정리하고 각 항목에 교체 문구를 제안해. 원문: [폼 문구 붙여넣기]",
+      "notes": "자동 검토 뒤 키보드 탐색과 실제 스크린리더 시험을 별도로 수행한다.",
+      "tags": [
+        "accessibility",
+        "writing",
+        "web-development",
+        "evaluation"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "원문: 이름 / 전화번호 / 빨간 칸을 확인하세요. 각 필드의 구체적인 라벨과 오류 문구를 제안해줘."
+        }
+      ],
+      "relatedWikiSlug": "evaluation",
+      "coverageArea": "accessibility"
+    },
+    {
+      "id": "readable-plain-language",
+      "course": "responsible-ai",
+      "title": "쉬운 한국어로 문서 다시 쓰기",
+      "template": "아래 문서를 의미와 법적·기술적 조건은 유지하면서 쉬운 한국어로 다시 써줘. 한 문장에는 한 가지 정보만 두고, 어려운 용어는 처음 나올 때 짧게 설명해. 제목과 목록을 사용하고 원문에 없는 약속은 추가하지 마. 대상 독자: [독자] 원문: [문서]",
+      "notes": "법률·의료·계약 문서는 쉬운 표현으로 바꾼 뒤 담당 전문가가 의미 보존 여부를 확인한다.",
+      "tags": [
+        "accessibility",
+        "writing",
+        "document-analysis"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "대상 독자: 처음 서비스를 이용하는 고령 사용자. 원문: 계정 복구 정책 안내문."
+        }
+      ],
+      "relatedWikiSlug": "image-captioning",
+      "coverageArea": "accessibility"
+    },
+    {
+      "id": "accessible-caption-transcript",
+      "course": "multimodal-ai",
+      "title": "영상 자막과 음성 설명 초안 작성",
+      "template": "첨부한 영상 구간을 바탕으로 자막 초안을 작성해줘. 발화는 의미 단위로 나누고 화자가 바뀌면 표시해. 이해에 필요한 비언어 음향은 대괄호로, 화면에서만 전달되는 중요한 행동은 음성 설명 후보로 별도 정리해. 들리지 않는 부분은 [불명확]으로 표시해.",
+      "notes": "자동 전사는 고유명사와 숫자 오류가 잦으므로 원음과 타임코드를 대조한다.",
+      "tags": [
+        "accessibility",
+        "video",
+        "audio",
+        "multimodal"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부한 40초 제품 시연 영상에서 발화 자막과 화면 동작 설명을 분리해 작성해줘."
+        }
+      ],
+      "relatedWikiSlug": "video-captioning",
+      "coverageArea": "accessibility"
+    },
+    {
+      "id": "feedback-clustering",
+      "course": "responsible-ai",
+      "title": "사용자 피드백 주제별 군집화",
+      "template": "아래 사용자 피드백을 의미가 비슷한 주제별로 묶어줘. 각 군집에 대표 이름, 포함된 피드백 번호, 반복되는 요구, 대표 원문 1개를 적어. 하나의 피드백이 여러 주제에 해당하면 중복 배치하고 임의로 감정을 추정하지 마. 피드백: [목록]",
+      "notes": "군집 수를 미리 고정하지 말고 소수 의견과 안전·접근성 관련 의견을 별도로 보존한다.",
+      "tags": [
+        "customer-support",
+        "data-analysis",
+        "evaluation"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "피드백: 1) 검색이 느림 2) 결과가 늦게 뜸 3) 글자가 작음 4) 필터가 편리함. 주제별로 묶어줘."
+        }
+      ],
+      "relatedWikiSlug": "user-feedback-collection",
+      "coverageArea": "feedback"
+    },
+    {
+      "id": "feedback-prioritization",
+      "course": "responsible-ai",
+      "title": "피드백 개선 우선순위 산정",
+      "template": "아래 피드백 후보의 우선순위를 정해줘. 사용자 영향, 발생 빈도, 안전·법적 위험, 구현 노력, 되돌리기 가능성을 각각 1~5점으로 평가하고 근거를 한 줄씩 써. 정보가 없으면 추정값 대신 '자료 필요'로 표시해. 후보: [피드백 목록]",
+      "notes": "AI 점수는 의사결정 보조값이다. 실제 사용량과 장애·민원 기록으로 다시 보정한다.",
+      "tags": [
+        "decision",
+        "project-management",
+        "evaluation",
+        "customer-support"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "후보: 검색 지연, 작은 글자, 내보내기 버튼 추가. 다섯 기준으로 우선순위를 표로 정리해줘."
+        }
+      ],
+      "relatedWikiSlug": "user-feedback-collection",
+      "coverageArea": "feedback"
+    },
+    {
+      "id": "feedback-conflict-analysis",
+      "course": "responsible-ai",
+      "title": "서로 충돌하는 사용자 요구 분석",
+      "template": "아래 사용자 요구 중 서로 충돌하는 항목을 찾아줘. 충돌 이유, 영향을 받는 사용자 집단, 공통 목표, 절충안, 추가로 확인할 질문을 표로 작성해. 다수 의견이라는 이유만으로 소수 사용자의 접근성·안전 요구를 제외하지 마. 요구 목록: [목록]",
+      "notes": "집단별 표본 수와 사용 환경을 확인한 뒤 제품 담당자가 최종 판단한다.",
+      "tags": [
+        "decision",
+        "customer-support",
+        "accessibility",
+        "safety"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "요구: 화면을 최대한 단순하게 / 고급 필터를 항상 표시 / 키보드 단축키를 늘려 달라. 충돌과 절충안을 분석해줘."
+        }
+      ],
+      "relatedWikiSlug": "user-feedback-collection",
+      "coverageArea": "feedback"
+    },
+    {
+      "id": "feedback-release-note",
+      "course": "responsible-ai",
+      "title": "피드백 반영 내역 공개 문구 작성",
+      "template": "아래 사용자 피드백과 실제 변경 내역을 바탕으로 업데이트 안내를 작성해줘. 무엇이 바뀌었는지, 어떤 피드백을 반영했는지, 아직 해결되지 않은 점, 추가 의견을 보내는 방법을 구분해 적어. 구현하지 않은 기능을 완료된 것처럼 쓰지 마. 자료: [피드백과 변경 내역]",
+      "notes": "배포 기록과 일치하는지 확인하고 개인정보가 포함된 원문 피드백은 인용하지 않는다.",
+      "tags": [
+        "writing",
+        "customer-support",
+        "project-management",
+        "verification"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "피드백: 검색 속도 개선 요청. 변경: 캐시 적용으로 중앙값 2.1초→0.9초, 오래된 필터 문제는 미해결. 안내문을 작성해줘."
+        }
+      ],
+      "relatedWikiSlug": "user-feedback-collection",
+      "coverageArea": "feedback"
+    },
+    {
+      "id": "multimodal-pdf-audit",
+      "course": "multimodal-ai",
+      "title": "PDF 페이지별 텍스트·표·이미지 통합 점검",
+      "template": "첨부한 PDF를 페이지별로 검토해줘. 본문 주장, 표의 핵심 수치, 이미지가 전달하는 정보, 각주·출처를 분리해 기록하고 서로 모순되는 부분을 표시해. 읽을 수 없는 영역은 추측하지 말고 페이지 번호와 함께 재확인 대상으로 남겨.",
+      "notes": "OCR 결과는 원본 페이지와 대조하고 중요한 숫자·날짜는 사람이 재확인한다.",
+      "tags": [
+        "multimodal",
+        "document-analysis",
+        "verification",
+        "citation"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부한 6페이지 사업보고서 PDF에서 본문 수치와 표 수치가 다른 부분을 페이지별로 찾아줘."
+        }
+      ],
+      "relatedWikiSlug": "visual-document-retrieval",
+      "coverageArea": "multimodal-documents"
+    },
+    {
+      "id": "multimodal-chart-reading",
+      "course": "multimodal-ai",
+      "title": "차트 이미지에서 수치와 추세 분리",
+      "template": "첨부한 차트를 분석해줘. 눈으로 확인되는 축·단위·범례와 읽을 수 있는 수치를 먼저 표로 옮기고, 그다음 추세 해석을 별도 구역에 작성해. 해상도 때문에 정확히 읽을 수 없는 값은 범위로도 추정하지 말고 '판독 불가'로 표시해.",
+      "notes": "차트가 잘린 경우 원본 데이터나 고해상도 이미지를 요청한다.",
+      "tags": [
+        "multimodal",
+        "visualization",
+        "data-analysis",
+        "verification"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부한 분기별 매출 선그래프에서 직접 읽히는 값과 해석을 분리해 작성해줘."
+        }
+      ],
+      "relatedWikiSlug": "multimodal-evaluation",
+      "coverageArea": "multimodal-documents"
+    },
+    {
+      "id": "multimodal-table-extraction",
+      "course": "multimodal-ai",
+      "title": "표 스크린샷을 검증 가능한 데이터로 변환",
+      "template": "첨부한 표 스크린샷을 행과 열 구조가 유지되는 CSV 형태로 변환해줘. 병합 셀과 각주를 별도 표시하고, 판독이 불확실한 셀은 [?]로 남겨. 변환 뒤 각 행의 열 개수가 같은지 검사 결과도 알려줘.",
+      "notes": "내보낸 CSV는 원본 표와 표본 대조하고 개인정보가 있으면 저장 전에 제거한다.",
+      "tags": [
+        "multimodal",
+        "data-analysis",
+        "spreadsheet",
+        "verification"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부한 8행 가격표 이미지를 CSV로 옮기고 읽기 어려운 셀을 [?]로 표시해줘."
+        }
+      ],
+      "relatedWikiSlug": "visual-document-retrieval",
+      "coverageArea": "multimodal-documents"
+    },
+    {
+      "id": "multimodal-diagram-explanation",
+      "course": "multimodal-ai",
+      "title": "시스템 구성도 흐름 설명",
+      "template": "첨부한 시스템 구성도를 분석해줘. 구성 요소 이름, 화살표 방향, 데이터 흐름, 외부 시스템 경계, 표시된 보안 통제를 순서대로 설명해. 그림에 없는 연결을 상상하지 말고 불명확한 화살표는 위치를 적어 질문으로 남겨.",
+      "notes": "보안·네트워크 구성도는 민감정보를 제거한 뒤 사용한다.",
+      "tags": [
+        "multimodal",
+        "document-analysis",
+        "data-engineering",
+        "security"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부한 RAG 구성도에서 사용자 요청부터 답변까지의 데이터 흐름과 외부 경계를 설명해줘."
+        }
+      ],
+      "relatedWikiSlug": "multimodal-model",
+      "coverageArea": "multimodal-documents"
+    },
+    {
+      "id": "multimodal-conflict-check",
+      "course": "multimodal-ai",
+      "title": "본문·표·그림 간 주장 충돌 검사",
+      "template": "첨부 문서의 본문, 표, 그림 설명이 같은 사실을 서로 다르게 말하는지 검사해줘. 각 충돌마다 페이지와 요소, 서로 다른 값이나 주장, 확인에 필요한 원자료를 표로 적어. 어느 쪽이 맞는지는 근거가 없으면 결정하지 마.",
+      "notes": "최종 정정은 원자료 소유자나 문서 작성자에게 확인한다.",
+      "tags": [
+        "multimodal",
+        "verification",
+        "document-analysis",
+        "evaluation"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "첨부 보고서에서 본문 성장률, 표의 성장률, 그래프 레이블이 일치하는지 검사해줘."
+        }
+      ],
+      "relatedWikiSlug": "multimodal-evaluation",
+      "coverageArea": "multimodal-documents"
+    },
+    {
+      "id": "rag-golden-set",
+      "course": "rag-search",
+      "title": "RAG 골든 질문셋 설계",
+      "template": "아래 지식 문서 목록을 바탕으로 RAG 평가용 질문셋을 만들어줘. 단일 문서 질문, 여러 문서를 결합해야 하는 질문, 답이 문서에 없는 질문, 날짜·숫자 확인 질문을 골고루 포함해. 각 질문에 정답 근거 문서 ID와 정답 가능 여부를 표시해. 문서 목록: [목록]",
+      "notes": "생성된 정답과 근거 위치는 평가에 사용하기 전에 사람이 원문과 대조한다.",
+      "tags": [
+        "rag",
+        "evaluation",
+        "testing",
+        "citation"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "문서 A: 환불 정책, 문서 B: 배송 정책, 문서 C: 회원 등급 안내. 유형별 골든 질문 12개를 만들어줘."
+        }
+      ],
+      "relatedWikiSlug": "rag-evaluation",
+      "coverageArea": "rag-evaluation"
+    },
+    {
+      "id": "rag-context-precision-recall",
+      "course": "rag-search",
+      "title": "검색 문맥 정밀도·재현율 진단",
+      "template": "질문, 정답 근거 구간, 검색된 구간 목록을 비교해줘. 각 검색 구간이 답변에 필요한지 판정해 문맥 정밀도를 설명하고, 빠진 근거가 있는지 확인해 문맥 재현율 문제를 적어. 판정 근거 문장을 인용하고 개선할 검색 조건을 제안해. 자료: [질문·근거·검색 결과]",
+      "notes": "자동 판정만으로 점수를 확정하지 말고 경계 사례는 검토자 두 명 이상이 확인한다.",
+      "tags": [
+        "rag",
+        "retrieval",
+        "evaluation",
+        "verification"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "질문: 환불 기한은? 정답 근거: 구매 후 14일. 검색 결과 5개를 관련·불필요·누락으로 판정해줘."
+        }
+      ],
+      "relatedWikiSlug": "retrieval-evaluation",
+      "coverageArea": "rag-evaluation"
+    },
+    {
+      "id": "rag-citation-alignment",
+      "course": "rag-search",
+      "title": "답변 주장과 인용 근거 정합성 검사",
+      "template": "아래 RAG 답변의 각 사실 주장을 문장 단위로 나누고 연결된 인용 구간이 그 주장을 직접 뒷받침하는지 판정해줘. 판정은 충분·부분·불충분·무관으로 구분하고 인용에 없는 세부사항은 표시해. 답변과 인용: [내용]",
+      "notes": "링크 존재 여부와 근거 적합성은 별개이므로 원문 접근과 문장 정합성을 모두 확인한다.",
+      "tags": [
+        "rag",
+        "citation",
+        "verification",
+        "evaluation"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "답변의 세 주장과 인용 문단 두 개를 충분·부분·불충분·무관으로 판정해줘."
+        }
+      ],
+      "relatedWikiSlug": "citation",
+      "coverageArea": "rag-evaluation"
+    },
+    {
+      "id": "rag-failure-triage",
+      "course": "rag-search",
+      "title": "RAG 실패 원인 단계별 분류",
+      "template": "아래 실패 사례를 질의 해석, 검색, 재순위화, 문맥 조립, 생성, 인용 단계 중 어디에서 시작됐는지 분류해줘. 관찰 증거, 가장 가능성 높은 원인, 추가 로그, 최소 재현 시험, 우선 수정안을 표로 작성해. 로그: [실패 사례와 추적 로그]",
+      "notes": "한 번에 여러 단계를 바꾸지 말고 최소 재현 시험으로 최초 실패 지점을 확인한다.",
+      "tags": [
+        "rag",
+        "debugging",
+        "evaluation",
+        "monitoring"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "정답 문서는 검색 20위, reranker 뒤 2위였지만 최종 문맥에서 누락된 로그를 단계별로 분류해줘."
+        }
+      ],
+      "relatedWikiSlug": "rag-evaluation",
+      "coverageArea": "rag-evaluation"
+    },
+    {
+      "id": "rag-query-rewrite-ab",
+      "course": "rag-search",
+      "title": "질의 재작성 A/B 평가 설계",
+      "template": "원본 질의와 재작성 질의 후보를 비교하는 평가표를 만들어줘. 의미 보존, 핵심 개체 보존, 검색 결과 관련성, 정답 근거 도달 여부, 불필요한 범위 확장을 기준으로 채점하고 최종 선택 이유를 적어. 자료: [원본 질의·후보·검색 결과]",
+      "notes": "같은 검색 색인과 파라미터를 사용해 질의만 바꾼 결과를 비교한다.",
+      "tags": [
+        "rag",
+        "search",
+        "evaluation",
+        "testing"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "원본: 해지 언제 가능? 후보 A: 서비스 계약 해지 가능 시점, 후보 B: 환불 정책. 검색 결과와 함께 비교해줘."
+        }
+      ],
+      "relatedWikiSlug": "retrieval-evaluation",
+      "coverageArea": "rag-evaluation"
+    },
+    {
+      "id": "json-schema-draft",
+      "course": "api-development",
+      "title": "자연어 요구사항을 JSON Schema로 변환",
+      "template": "아래 요구사항을 JSON Schema 초안으로 변환해줘. 필수·선택 필드, 자료형, enum, 길이·범위, 중첩 구조, additionalProperties 정책을 명시해. 모호한 조건은 임의로 결정하지 말고 질문 목록으로 분리해. 요구사항: [내용]",
+      "notes": "생성된 스키마는 실제 검증 라이브러리와 정상·경계·오류 예제로 시험한다.",
+      "tags": [
+        "structured-output",
+        "api",
+        "testing"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "주문에는 주문번호, 이메일, 1개 이상의 상품, 원화 총액, 상태가 필요하다. JSON Schema 초안과 질문을 만들어줘."
+        }
+      ],
+      "relatedWikiSlug": "json-schema",
+      "coverageArea": "structured-output"
+    },
+    {
+      "id": "schema-repair",
+      "course": "api-development",
+      "title": "스키마 검증 실패 응답 복구",
+      "template": "아래 JSON과 검증 오류를 보고 원래 의미를 바꾸지 않는 최소 수정안을 만들어줘. 오류 경로, 기대 형식, 현재 값, 수정 값, 자동 수정 가능 여부를 표로 먼저 적고 마지막에 수정된 JSON만 별도 코드 블록으로 출력해. 자료: [JSON·스키마 오류]",
+      "notes": "금액·날짜·식별자는 자동 변환 전에 원자료와 확인하고 원본을 보존한다.",
+      "tags": [
+        "structured-output",
+        "debugging",
+        "api",
+        "verification"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "오류: /quantity must be integer. 현재 JSON의 quantity가 \"3\"이다. 최소 수정안과 수정 JSON을 작성해줘."
+        }
+      ],
+      "relatedWikiSlug": "schema-validation",
+      "coverageArea": "structured-output"
+    },
+    {
+      "id": "enum-normalization",
+      "course": "api-development",
+      "title": "자유 입력값을 허용 enum으로 정규화",
+      "template": "사용자 입력값을 아래 허용 enum 중 하나로 정규화해줘. 정확히 대응하지 않거나 여러 후보가 가능하면 null과 이유를 반환해. 출력은 {\"value\": enum|null, \"confidence\": 0~1, \"reason\": 한 문장} 형식만 사용해. 허용값: [enum 목록] 입력: [값]",
+      "notes": "낮은 확신도와 null 결과를 처리하는 사용자 확인 절차를 함께 둔다.",
+      "tags": [
+        "structured-output",
+        "data-engineering",
+        "api"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "허용값: pending, approved, rejected. 입력: 승인된 것 같음. 지정 형식으로 정규화해줘."
+        }
+      ],
+      "relatedWikiSlug": "structured-output",
+      "coverageArea": "structured-output"
+    },
+    {
+      "id": "tool-argument-builder",
+      "course": "api-development",
+      "title": "도구 호출 인자 생성과 누락값 확인",
+      "template": "아래 도구 스키마와 사용자 요청을 비교해 호출 인자를 만들어줘. 필수값이 없으면 도구를 호출하지 말고 missing 배열에 질문할 필드를 넣어. 출력은 {\"ready\": boolean, \"arguments\": object, \"missing\": string[]} 형식만 사용해. 스키마: [도구 스키마] 요청: [사용자 요청]",
+      "notes": "쓰기·전송·삭제 도구는 ready=true여도 실행 전에 사용자 승인을 별도로 받는다.",
+      "tags": [
+        "structured-output",
+        "api",
+        "agent",
+        "safety"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "스키마: send_email(to, subject, body). 요청: 김 대리에게 회의 연기 메일 보내줘. 누락값을 판정해줘."
+        }
+      ],
+      "relatedWikiSlug": "tool-calling",
+      "coverageArea": "structured-output"
+    },
+    {
+      "id": "structured-retry-policy",
+      "course": "api-development",
+      "title": "구조화 출력 실패 재시도 지시문",
+      "template": "아래 스키마 검증 오류를 모델이 고칠 수 있는 짧은 재시도 지시문으로 바꿔줘. 이미 맞는 필드는 유지하고 오류 경로와 허용 형식만 알려줘. 원문 데이터나 비밀값을 반복하지 말고 최대 3회 뒤에는 사람 검토로 보내도록 종료 조건을 포함해. 오류: [검증 오류]",
+      "notes": "재시도 횟수와 비용을 제한하고 동일 오류가 반복되면 원본 프롬프트나 스키마를 점검한다.",
+      "tags": [
+        "structured-output",
+        "automation",
+        "debugging",
+        "safety"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "오류: /items/0/price must be number, /currency must be one of KRW, USD. 재시도 지시문을 작성해줘."
+        }
+      ],
+      "relatedWikiSlug": "schema-validation",
+      "coverageArea": "structured-output"
+    },
+    {
+      "id": "pii-inventory",
+      "course": "responsible-ai",
+      "title": "문서의 개인정보 유형 목록화",
+      "template": "아래 문서에서 개인정보 가능성이 있는 항목을 유형별로 찾아줘. 직접 식별자, 간접 식별자, 민감정보, 위치·기기 정보로 구분하고 원문 값을 반복하지 말고 위치와 유형만 기록해. 판단이 불확실하면 '검토 필요'로 표시해. 문서: [내용]",
+      "notes": "실제 개인정보를 외부 모델에 보내기 전에 조직 정책과 처리 근거를 확인하고 가능하면 로컬 도구를 사용한다.",
+      "tags": [
+        "privacy",
+        "security",
+        "document-analysis"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "고객 상담 기록에서 이름·전화번호·주문번호·건강 관련 언급의 위치와 유형만 목록화해줘."
+        }
+      ],
+      "relatedWikiSlug": "privacy-audit",
+      "coverageArea": "privacy"
+    },
+    {
+      "id": "privacy-redaction",
+      "course": "responsible-ai",
+      "title": "개인정보 마스킹 규칙 적용",
+      "template": "아래 텍스트의 개인정보를 의미 분석에 필요한 최소 정보만 남기고 마스킹해줘. 이름은 [PERSON_1], 이메일은 [EMAIL_1]처럼 같은 값에 동일 토큰을 사용하고 원문과 치환표는 출력하지 마. 불확실한 항목은 [REVIEW]로 표시해. 텍스트: [내용]",
+      "notes": "출력만 믿고 원문을 폐기하지 말며 정규식·전용 탐지기와 표본 검토를 함께 사용한다.",
+      "tags": [
+        "privacy",
+        "security",
+        "automation"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "텍스트: 김하나 고객의 이메일 hana@example.com과 주문번호 A-102를 상담팀에 전달했다. 규칙에 따라 마스킹해줘."
+        }
+      ],
+      "relatedWikiSlug": "privacy",
+      "coverageArea": "privacy"
+    },
+    {
+      "id": "data-minimization",
+      "course": "responsible-ai",
+      "title": "AI 작업 전 데이터 최소화 검토",
+      "template": "AI로 수행할 작업과 입력 필드 목록을 보고 각 필드가 필수인지 평가해줘. 필수·선택·제거로 분류하고 더 낮은 정밀도나 범주값으로 대체할 수 있는지, 보관 기간은 얼마나 필요한지 질문 형태로 정리해. 작업: [목적] 필드: [목록]",
+      "notes": "법적 보관 의무와 조직 정책은 개인정보 담당자에게 확인한다.",
+      "tags": [
+        "privacy",
+        "evaluation",
+        "safety"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "작업: 고객 문의 주제 분류. 필드: 이름, 이메일, 문의 본문, 생년월일, 가입일. 최소화 표를 만들어줘."
+        }
+      ],
+      "relatedWikiSlug": "privacy",
+      "coverageArea": "privacy"
+    },
+    {
+      "id": "synthetic-safe-example",
+      "course": "responsible-ai",
+      "title": "개인정보 없는 합성 테스트 데이터 생성",
+      "template": "아래 스키마를 만족하는 합성 테스트 데이터 [개수]개를 만들어줘. 실제 사람·회사·주소를 연상시키지 않는 명백한 가상값을 사용하고 경계값·누락값·잘못된 형식 사례를 구분해. 생성 규칙과 포함하지 않은 민감정보도 함께 적어. 스키마: [필드와 제약]",
+      "notes": "합성 데이터도 실제 데이터의 희귀 조합을 그대로 재현하지 않는지 확인한다.",
+      "tags": [
+        "privacy",
+        "testing",
+        "data-engineering"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "스키마: 고객 ID, 가입일, 등급 enum, 월 사용량 0~1000. 정상·경계·오류 합성 데이터 12개를 만들어줘."
+        }
+      ],
+      "relatedWikiSlug": "synthetic-data",
+      "coverageArea": "privacy"
+    },
+    {
+      "id": "edge-case-generator",
+      "course": "model-training",
+      "title": "요구사항 기반 엣지 케이스 생성",
+      "template": "아래 요구사항에서 정상 흐름이 놓치기 쉬운 엣지 케이스를 만들어줘. 빈 값, 최솟값·최댓값, 순서 뒤바뀜, 중복, 시간대·언어, 권한, 네트워크 실패를 검토하고 각 사례에 기대 동작과 실패 위험을 적어. 요구사항: [내용]",
+      "notes": "생성된 사례를 위험도와 발생 가능성으로 우선순위화하고 실제 테스트 코드로 옮긴다.",
+      "tags": [
+        "testing",
+        "evaluation",
+        "safety"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "요구사항: 사용자가 예약 시간을 선택하고 결제하면 확인 메일을 받는다. 엣지 케이스와 기대 동작을 만들어줘."
+        }
+      ],
+      "relatedWikiSlug": "adversarial-testing",
+      "coverageArea": "adversarial-edge-cases"
+    },
+    {
+      "id": "counterexample-review",
+      "course": "model-training",
+      "title": "주장과 규칙의 반례 탐색",
+      "template": "아래 주장이나 규칙이 성립하지 않을 수 있는 반례를 찾아줘. 전제가 빠진 경우, 경계 조건, 다른 사용자 집단, 시간 변화, 측정 오류를 구분해 제시하고 반례가 실제로 유효한지 확인할 추가 자료를 적어. 주장: [내용]",
+      "notes": "반례 후보는 결론이 아니라 검증 질문이다. 실제 데이터와 전문가 검토로 확인한다.",
+      "tags": [
+        "evaluation",
+        "verification",
+        "research"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "주장: 응답 시간이 짧을수록 모든 사용자의 만족도가 높다. 가능한 반례와 필요한 데이터를 제시해줘."
+        }
+      ],
+      "relatedWikiSlug": "evaluation",
+      "coverageArea": "adversarial-edge-cases"
+    },
+    {
+      "id": "prompt-injection-red-team",
+      "course": "responsible-ai",
+      "title": "간접 프롬프트 인젝션 방어 시험",
+      "template": "외부 문서를 읽는 AI 시스템의 방어 시험을 설계해줘. 시스템 지시 무시, 비밀 요청, 도구 오용, 인용 위장, 다국어 우회 유형별로 안전한 모의 입력을 만들고 기대 거부·격리 동작과 탐지 로그를 적어. 실제 비밀값이나 유해 실행 명령은 포함하지 마. 시스템 설명: [내용]",
+      "notes": "허가된 테스트 환경에서만 실행하고 외부 시스템에 실제 요청을 보내지 않는다.",
+      "tags": [
+        "security",
+        "safety",
+        "testing",
+        "agent"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "시스템: 업로드 문서를 요약하고 사내 검색 도구를 사용할 수 있음. 다섯 유형의 안전한 모의 공격과 기대 동작을 설계해줘."
+        }
+      ],
+      "relatedWikiSlug": "prompt-injection",
+      "coverageArea": "adversarial-edge-cases"
+    },
+    {
+      "id": "prompt-regression-suite",
+      "course": "model-training",
+      "title": "프롬프트 변경 회귀 테스트 세트",
+      "template": "기존 프롬프트와 수정 프롬프트를 비교할 회귀 테스트를 설계해줘. 정상·경계·거부·다국어 입력을 포함하고 각 테스트에 필수 조건, 금지 조건, 구조화 출력 검사, 사람 평가 항목을 정의해. 기존: [프롬프트 A] 수정: [프롬프트 B]",
+      "notes": "같은 모델 버전과 파라미터로 반복 실행하고 비결정성을 고려해 여러 표본을 비교한다.",
+      "tags": [
+        "prompt-design",
+        "testing",
+        "evaluation",
+        "monitoring"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "기존: 문의를 한 문장으로 분류. 수정: 분류와 근거를 JSON으로 출력. 회귀 테스트 12개를 설계해줘."
+        }
+      ],
+      "relatedWikiSlug": "adversarial-testing",
+      "coverageArea": "adversarial-edge-cases"
+    }
+  ]
+}

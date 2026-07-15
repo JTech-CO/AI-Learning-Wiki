@@ -16,7 +16,7 @@ async function walk(directory) {
   return files;
 }
 
-const [workflow, config, packageJson, home, manifest, wikiIndex, prompts] = await Promise.all([
+const [workflow, config, packageJson, home, manifest, wikiIndex, prompts, snippets] = await Promise.all([
   readFile('.github/workflows/ci.yml', 'utf8'),
   readFile('astro.config.mjs', 'utf8'),
   readFile('package.json', 'utf8').then(JSON.parse),
@@ -24,6 +24,7 @@ const [workflow, config, packageJson, home, manifest, wikiIndex, prompts] = awai
   readFile('dist/site.webmanifest', 'utf8').then(JSON.parse),
   readFile('dist/data/wiki-index.json', 'utf8').then(JSON.parse),
   readFile('dist/data/prompts.json', 'utf8').then(JSON.parse),
+  readFile('dist/data/snippets.json', 'utf8').then(JSON.parse),
 ]);
 
 await access('dist/.nojekyll');
@@ -42,6 +43,12 @@ assert.ok(
     (item) => item.courseUrl.startsWith(`${BASE_PATH}/`) && item.relatedWikiUrl.startsWith(`${BASE_PATH}/`),
   ),
   'prompt data contains root-domain URLs',
+);
+assert.ok(
+  snippets.snippets.every(
+    (item) => item.courseUrl.startsWith(`${BASE_PATH}/`) && item.relatedWikiUrl.startsWith(`${BASE_PATH}/`),
+  ),
+  'snippet data contains root-domain URLs',
 );
 
 assert.match(workflow, /actions\/configure-pages@v5/);

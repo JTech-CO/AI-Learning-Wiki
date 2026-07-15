@@ -45,8 +45,19 @@
     const copy = document.createElement('button'); copy.type = 'button'; copy.textContent = '프롬프트 복사'; copy.addEventListener('click', async () => { await navigator.clipboard.writeText(prompt.template); copy.textContent = '복사됨 ✓'; setTimeout(() => copy.textContent = '프롬프트 복사', 1200); });
     const source = document.createElement('a'); source.href = prompt.relatedWikiUrl; source.textContent = '관련 Wiki 문서 →';
     const path = document.createElement('a'); path.href = prompt.courseUrl; path.textContent = '코스에서 보기 →';
-    actions.append(copy, source, path); article.append(meta, heading, badge, pre, actions);
-    if (prompt.examples.length) { const details = document.createElement('details'); const summary = document.createElement('summary'); summary.textContent = '작성 예시 보기'; details.append(summary); prompt.examples.forEach((example) => { const h = document.createElement('h4'); h.textContent = example.label; const p = document.createElement('pre'); p.textContent = example.input; details.append(h, p); }); article.append(details); }
+    const tagRow = document.createElement('p'); tagRow.className = 'catalog-tags'; prompt.tags.forEach((tag) => { const item = document.createElement('span'); item.textContent = tag; tagRow.append(item); });
+    actions.append(copy, source, path); article.append(meta, heading, badge, tagRow, pre, actions);
+    if (prompt.notes) { const note = document.createElement('p'); note.className = 'prompt-note'; note.textContent = '사용 주의: ' + prompt.notes; article.append(note); }
+    if (prompt.examples.length) {
+      const details = document.createElement('details'); const summary = document.createElement('summary'); summary.textContent = '작성 예시 보기'; details.append(summary);
+      prompt.examples.forEach((example) => {
+        const h = document.createElement('h4'); h.textContent = example.label;
+        const inputLabel = document.createElement('p'); inputLabel.className = 'example-label'; inputLabel.textContent = '입력 예시';
+        const input = document.createElement('pre'); input.textContent = example.input; details.append(h, inputLabel, input);
+        if (example.output) { const outputLabel = document.createElement('p'); outputLabel.className = 'example-label'; outputLabel.textContent = '출력 예시'; const output = document.createElement('pre'); output.textContent = example.output; details.append(outputLabel, output); }
+      });
+      article.append(details);
+    }
     return article;
   }
   function syncUrl() {

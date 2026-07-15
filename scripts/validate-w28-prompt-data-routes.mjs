@@ -3,26 +3,23 @@ import { readFile } from 'node:fs/promises';
 
 const ORIGIN = 'https://jtech-co.github.io';
 const BASE_PATH = '/AI-Learning-Wiki';
-const PROMPTS_PATH = `${BASE_PATH}/data/prompts.json`;
-const WIKI_PATH = `${BASE_PATH}/data/wiki-index.json`;
-
-const [promptPage, searchPage, prompts] = await Promise.all([
+const [promptPage, snippetPage, searchPage, prompts, snippets] = await Promise.all([
   readFile('dist/prompt-explorer/index.html', 'utf8'),
+  readFile('dist/snippet-explorer/index.html', 'utf8'),
   readFile('dist/search/index.html', 'utf8'),
   readFile('dist/data/prompts.json', 'utf8').then(JSON.parse),
+  readFile('dist/data/snippets.json', 'utf8').then(JSON.parse),
 ]);
-
 const attribute = (html, name) => html.match(new RegExp(`\\b${name}="([^"]+)"`))?.[1];
 const resolvesTo = (value, pagePath, expectedPath) => value && new URL(value, `${ORIGIN}${pagePath}`).pathname === expectedPath;
 
-const promptUrl = attribute(promptPage, 'data-prompts-url');
-const searchPromptUrl = attribute(searchPage, 'data-prompts-url');
-const searchWikiUrl = attribute(searchPage, 'data-wiki-url');
+assert.equal(prompts.prompts.length, 1142);
+assert.equal(snippets.snippets.length, 25);
+assert.ok(resolvesTo(attribute(promptPage, 'data-prompts-url'), `${BASE_PATH}/prompt-explorer/`, `${BASE_PATH}/data/prompts.json`));
+assert.ok(resolvesTo(attribute(snippetPage, 'data-snippets-url'), `${BASE_PATH}/snippet-explorer/`, `${BASE_PATH}/data/snippets.json`));
+assert.ok(resolvesTo(attribute(searchPage, 'data-prompts-url'), `${BASE_PATH}/search/`, `${BASE_PATH}/data/prompts.json`));
+assert.ok(resolvesTo(attribute(searchPage, 'data-snippets-url'), `${BASE_PATH}/search/`, `${BASE_PATH}/data/snippets.json`));
+assert.ok(resolvesTo(attribute(searchPage, 'data-wiki-url'), `${BASE_PATH}/search/`, `${BASE_PATH}/data/wiki-index.json`));
+assert.ok(!/fetch\((['"`])\/data\//.test(promptPage + snippetPage + searchPage));
 
-assert.equal(prompts.prompts.length, 1173, 'prompt data count changed');
-assert.ok(resolvesTo(promptUrl, `${BASE_PATH}/prompt-explorer/`, PROMPTS_PATH), 'prompt explorer data URL escapes the Pages base path');
-assert.ok(resolvesTo(searchPromptUrl, `${BASE_PATH}/search/`, PROMPTS_PATH), 'search prompt URL escapes the Pages base path');
-assert.ok(resolvesTo(searchWikiUrl, `${BASE_PATH}/search/`, WIKI_PATH), 'search wiki URL escapes the Pages base path');
-assert.ok(!/fetch\((['"`])\/data\//.test(promptPage + searchPage), 'root-domain data fetch remains in a deployed page');
-
-console.log(`W28 prompt route validation: ${prompts.prompts.length} prompts and search data resolve under ${BASE_PATH}`);
+console.log(`W28 library route validation: ${prompts.prompts.length} prompts and ${snippets.snippets.length} snippets resolve under ${BASE_PATH}`);

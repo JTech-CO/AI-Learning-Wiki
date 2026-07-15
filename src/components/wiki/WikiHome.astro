@@ -1,6 +1,7 @@
 ---
 import wiki from '../../../public/data/wiki-index.json';
 import prompts from '../../../public/data/prompts.json';
+import snippets from '../../../public/data/snippets.json';
 
 const featured = wiki.articles.find((article) => article.id === 'large-language-model') ?? wiki.articles[0];
 const categoryMap = new Map(wiki.categories.map((category) => [category.id, category]));
@@ -10,7 +11,7 @@ const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.re
   <header class="wiki-home-intro">
     <p class="wiki-home-name">AI Learning Wiki</p>
     <p>AI와 대규모 언어 모델의 원리, 용어, 기술을 서로 연결해 설명하는 한국어 백과사전입니다.</p>
-    <p class="wiki-counts">검토 완료 백과 문서 <strong>{wiki.counts.articles}</strong>개 · 학습 코스 <strong>{wiki.counts.courses}</strong>개 · 프롬프트 <strong>{prompts.prompts.length}</strong>개</p>
+    <p class="wiki-counts">검토 완료 백과 문서 <strong>{wiki.counts.articles}</strong>개 · 학습 코스 <strong>{wiki.counts.courses}</strong>개 · 프롬프트 <strong>{prompts.prompts.length}</strong>개 · 코드·설정 자료 <strong>{snippets.snippets.length}</strong>개</p>
   </header>
 
   <div class="wiki-home-columns">
@@ -69,8 +70,9 @@ const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.re
     </section>
     <section class="wiki-home-section">
       <h2>프롬프트 자료실</h2>
-      <p>업무·개발·학습에 바로 쓸 수 있는 1,173개 프롬프트를 Wiki 코스와 관련 백과 문서에 연결했습니다.</p>
+      <p>업무·개발·학습에 바로 쓸 수 있는 {prompts.prompts.length}개 프롬프트를 Wiki 코스와 관련 백과 문서에 연결했습니다.</p>
       <p><a href="/prompt-explorer/">프롬프트 검색하기</a></p>
+      <p><a href="/snippet-explorer/">코드·설정 자료실 열기</a></p>
     </section>
   </div>
 </div>

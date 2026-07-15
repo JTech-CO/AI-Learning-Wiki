@@ -2,6 +2,7 @@ import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 
 const prompts = JSON.parse(await readFile('public/data/prompts.json', 'utf8'));
+const snippets = JSON.parse(await readFile('public/data/snippets.json', 'utf8'));
 const progress = JSON.parse(await readFile('content-model/progress.json', 'utf8'));
 const wiki = JSON.parse(await readFile('public/data/wiki-index.json', 'utf8'));
 const ledger = JSON.parse(await readFile('content-model/taxonomy/topic-ledger.json', 'utf8'));
@@ -14,7 +15,8 @@ const configuredBase = process.env.BASE_PATH ?? '/AI-Learning-Wiki';
 const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 const withBase = (url) => url.startsWith('/') ? `${basePath}${url}` : url;
 
-expect(prompts.prompts.length === 1173, 'prompt count: ' + prompts.prompts.length);
+expect(prompts.prompts.length === 1142, 'prompt count: ' + prompts.prompts.length);
+expect(snippets.snippets.length === 25, 'snippet count: ' + snippets.snippets.length);
 expect(progress.totals?.complete === 305, 'source extraction coverage: ' + progress.totals?.complete);
 expect(wiki.articles.length === expectedArticleCount, 'wiki articles: expected ' + expectedArticleCount + ', found ' + wiki.articles.length);
 expect(wiki.courses.length === 8, 'wiki courses: ' + wiki.courses.length);
@@ -24,14 +26,14 @@ expect(prompts.prompts.every((item) => !(item.tags ?? []).some((tag) => /eduvers
 expect(prompts.prompts.every((item) => item.courseUrl === '/course/' + item.course + '/'), 'prompt course URL mismatch');
 expect(prompts.prompts.every((item) => item.url.startsWith('/wiki/') && item.relatedWikiUrl === item.url), 'prompt Wiki link mismatch');
 
-for (const route of ['index.html', 'paths/index.html', 'prompt-explorer/index.html', 'search/index.html']) {
+for (const route of ['index.html', 'paths/index.html', 'prompt-explorer/index.html', 'snippet-explorer/index.html', 'search/index.html']) {
   expect(await fileExists(path.join('dist', route)), 'missing dist/' + route);
 }
 expect(!(await fileExists('dist/explore/index.html')), 'legacy explore route remains');
 expect(!(await fileExists('dist/data/catalog.json')), 'legacy catalog remains');
 
 const oneTitleRoutes = [
-  'paths/index.html', 'prompt-explorer/index.html', 'search/index.html', 'glossary/index.html',
+  'paths/index.html', 'prompt-explorer/index.html', 'snippet-explorer/index.html', 'search/index.html', 'glossary/index.html',
   'special/all-pages/index.html', 'special/recent/index.html', 'special/random/index.html',
   ...wiki.categories.map((item) => 'category/' + item.id + '/index.html'),
   ...wiki.courses.map((item) => 'course/' + item.id + '/index.html'),
@@ -82,4 +84,4 @@ if (failures.length) {
   console.error('release QA: ' + failures.length + ' failure(s)\n- ' + failures.slice(0, 80).join('\n- '));
   process.exit(1);
 }
-console.log(`release QA: ${expectedArticleCount} articles, 8 sequential courses, 1173 integrated prompts, no legacy lesson routes OK`);
+console.log(`release QA: ${expectedArticleCount} articles, 8 sequential courses, ${prompts.prompts.length} prompts, ${snippets.snippets.length} snippets, no legacy lesson routes OK`);

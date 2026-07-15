@@ -1,5 +1,3 @@
-// 원본 모듈에서는 프롬프트만 공개 데이터로 사용한다.
-// 기존 따라하기 페이지와 개념 역색인은 공개 사이트에서 제거한다.
 import { readFile, readdir, rm } from 'node:fs/promises';
 import path from 'node:path';
 
@@ -12,13 +10,14 @@ async function walk(dir) {
   }
   return files;
 }
-
-const files = await walk('content-model/data');
-const modules = await Promise.all(files.map(async (file) => JSON.parse(await readFile(file, 'utf8'))));
-const promptCount = modules.reduce((sum, mod) => sum + (mod.prompts?.length ?? 0), 0);
+const [files, promptData, snippetData] = await Promise.all([
+  walk('content-model/data'),
+  readFile('public/data/prompts.json', 'utf8').then(JSON.parse),
+  readFile('public/data/snippets.json', 'utf8').then(JSON.parse),
+]);
 await Promise.all([
   rm('src/content/docs/courses', { recursive: true, force: true }),
   rm('src/content/docs/concepts', { recursive: true, force: true }),
   rm('src/content/docs/prompts.md', { force: true }),
 ]);
-console.log('prompt integration: ' + modules.length + ' source modules -> ' + promptCount + ' prompts; legacy lesson pages removed');
+console.log(`prompt integration: ${files.length} source modules -> ${promptData.prompts.length} canonical prompts + ${snippetData.snippets.length} snippets; legacy lesson pages removed`);

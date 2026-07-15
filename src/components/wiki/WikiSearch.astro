@@ -1,4 +1,4 @@
-<section class="wiki-search-page" data-wiki-url="../data/wiki-index.json" data-prompts-url="../data/prompts.json">
+<section class="wiki-search-page" data-wiki-url="../data/wiki-index.json" data-prompts-url="../data/prompts.json" data-snippets-url="../data/snippets.json">
   <form id="wiki-search-form" class="wiki-page-search" role="search">
     <label for="wiki-search-query">백과·프롬프트 검색</label>
     <div><input id="wiki-search-query" name="q" type="search" autocomplete="off" /><button type="submit">검색</button></div>
@@ -7,6 +7,7 @@
     <button type="button" data-type="all" aria-pressed="true">전체</button>
     <button type="button" data-type="article" aria-pressed="false">백과 문서</button>
     <button type="button" data-type="prompt" aria-pressed="false">프롬프트</button>
+    <button type="button" data-type="snippet" aria-pressed="false">코드·설정</button>
   </div>
   <p id="wiki-search-count" aria-live="polite">검색어를 입력하세요.</p>
   <div id="wiki-search-results" class="wiki-search-results"></div>
@@ -29,9 +30,11 @@
   const pageStatus = document.querySelector('#wiki-search-page-status');
   const wikiDataUrl = searchPage?.getAttribute('data-wiki-url') ?? '../data/wiki-index.json';
   const promptDataUrl = searchPage?.getAttribute('data-prompts-url') ?? '../data/prompts.json';
+  const snippetDataUrl = searchPage?.getAttribute('data-snippets-url') ?? '../data/snippets.json';
   const promptLibraryUrl = new URL('../prompt-explorer/', location.href).pathname;
+  const snippetLibraryUrl = new URL('../snippet-explorer/', location.href).pathname;
   const PAGE_SIZE = 30;
-  const validTypes = new Set(['all', 'article', 'prompt']);
+  const validTypes = new Set(['all', 'article', 'prompt', 'snippet']);
   const initialParams = new URLSearchParams(location.search);
   let items = [];
   let activeType = validTypes.has(initialParams.get('type')) ? initialParams.get('type') : 'all';
@@ -98,10 +101,11 @@
     if (!response.ok) throw new Error('HTTP ' + response.status);
     return response.json();
   };
-  Promise.all([fetch(wikiDataUrl).then(parseJson), fetch(promptDataUrl).then(parseJson)]).then(([wiki, prompts]) => {
+  Promise.all([fetch(wikiDataUrl).then(parseJson), fetch(promptDataUrl).then(parseJson), fetch(snippetDataUrl).then(parseJson)]).then(([wiki, prompts, snippets]) => {
     items = [
       ...wiki.articles.map((item) => ({ ...item, type: 'article', typeLabel: '백과 문서' })),
       ...prompts.prompts.map((item) => ({ ...item, type: 'prompt', typeLabel: '프롬프트', summary: item.template.length > 180 ? item.template.slice(0, 180).trimEnd() + '…' : item.template, searchText: item.template, url: promptLibraryUrl + '?q=' + encodeURIComponent(item.title) })),
+      ...snippets.snippets.map((item) => ({ ...item, type: 'snippet', typeLabel: '코드·설정', summary: item.content.length > 180 ? item.content.slice(0, 180).trimEnd() + '…' : item.content, searchText: item.content, url: snippetLibraryUrl + '?q=' + encodeURIComponent(item.title) })),
     ];
     render();
   }).catch(() => {
