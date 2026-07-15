@@ -1,4 +1,4 @@
-<section class="prompt-explorer" aria-labelledby="prompt-explorer-title">
+<section class="prompt-explorer" aria-labelledby="prompt-explorer-title" data-prompts-url="../data/prompts.json">
   <div class="explorer-controls prompt-controls">
     <label class="explorer-search">프롬프트 검색
       <input id="prompt-query" type="search" placeholder="예: 보고서, RAG, 고객 이메일" autocomplete="off" />
@@ -18,6 +18,7 @@
   const courseNames = { 'ai-foundations':'AI 기초','llm-internals':'LLM 내부 구조','model-training':'모델 학습과 튜닝','rag-search':'임베딩과 RAG','api-development':'AI API 개발','agent-systems':'AI 에이전트','responsible-ai':'신뢰할 수 있는 AI','multimodal-ai':'멀티모달 AI' };
   const query = document.querySelector('#prompt-query'); const course = document.querySelector('#prompt-course');
   const exampleFilter = document.querySelector('#prompt-examples'); const results = document.querySelector('#prompt-results'); const count = document.querySelector('#prompt-count');
+  const promptDataUrl = document.querySelector('.prompt-explorer')?.getAttribute('data-prompts-url') ?? '../data/prompts.json';
   let prompts = [];
   function card(prompt) {
     const article = document.createElement('article'); article.className = 'prompt-card';
@@ -39,7 +40,7 @@
     count.textContent = `${filtered.length}개 프롬프트 중 최대 40개 표시`;
     results.replaceChildren(...filtered.slice(0, 40).map(card));
   }
-  fetch('/data/prompts.json').then((response) => response.json()).then((data) => { prompts = data.prompts; [...new Set(prompts.map((item) => item.course))].forEach((id) => { const option = document.createElement('option'); option.value = id; option.textContent = courseNames[id]; course.append(option); }); render(); }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했습니다.');
+  fetch(promptDataUrl).then((response) => response.json()).then((data) => { prompts = data.prompts; [...new Set(prompts.map((item) => item.course))].forEach((id) => { const option = document.createElement('option'); option.value = id; option.textContent = courseNames[id]; course.append(option); }); render(); }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했습니다.');
   [query, course, exampleFilter].forEach((control) => control?.addEventListener('input', render));
 </script>
 

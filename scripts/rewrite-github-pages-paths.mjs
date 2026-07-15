@@ -47,10 +47,6 @@ for (const file of await walk(DIST)) {
       /(\b(?:href|src|action|poster)=["'])(\/(?!\/)[^"']*)/gi,
       (_, lead, value) => `${lead}${prefixPath(value)}`,
     );
-    source = source.replace(
-      /fetch\((["'])\/(?!\/)(data\/[^"']*)\1/g,
-      (_, quote, value) => `fetch(${quote}${BASE_PATH}/${value}${quote}`,
-    );
     await writeFile(file, source, 'utf8');
     htmlCount += 1;
     continue;

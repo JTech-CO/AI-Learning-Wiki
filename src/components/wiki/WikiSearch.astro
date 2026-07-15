@@ -1,4 +1,4 @@
-<section class="wiki-search-page">
+<section class="wiki-search-page" data-wiki-url="../data/wiki-index.json" data-prompts-url="../data/prompts.json">
   <form id="wiki-search-form" class="wiki-page-search" role="search">
     <label for="wiki-search-query">백과·프롬프트 검색</label>
     <div><input id="wiki-search-query" name="q" type="search" autocomplete="off" /><button type="submit">검색</button></div>
@@ -17,6 +17,9 @@
   const count = document.querySelector('#wiki-search-count');
   const results = document.querySelector('#wiki-search-results');
   const filterButtons = document.querySelectorAll('[data-type]');
+  const searchPage = document.querySelector('.wiki-search-page');
+  const wikiDataUrl = searchPage?.getAttribute('data-wiki-url') ?? '../data/wiki-index.json';
+  const promptDataUrl = searchPage?.getAttribute('data-prompts-url') ?? '../data/prompts.json';
   let items = [];
   let activeType = 'all';
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' })[char]);
@@ -35,7 +38,7 @@
     count.textContent = `${ranked.length}개 결과`;
     results.innerHTML = ranked.map(({ item }) => `<article><p>${escapeHtml(item.typeLabel)}</p><h2><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h2><p>${escapeHtml(item.summary)}</p></article>`).join('');
   }
-  Promise.all([fetch('/data/wiki-index.json').then(r=>r.json()),fetch('/data/prompts.json').then(r=>r.json())]).then(([wiki,prompts]) => {
+  Promise.all([fetch(wikiDataUrl).then(r=>r.json()),fetch(promptDataUrl).then(r=>r.json())]).then(([wiki,prompts]) => {
     items = [
       ...wiki.articles.map(item => ({...item,type:'article',typeLabel:'백과 문서'})),
       ...prompts.prompts.map(item => ({...item,type:'prompt',typeLabel:'프롬프트',summary:'프롬프트 템플릿'}))

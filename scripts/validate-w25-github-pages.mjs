@@ -66,7 +66,7 @@ for (const file of htmlFiles) {
       failures.push(`${path.relative(DIST, file)} -> ${value}`);
     }
   }
-  if (/fetch\((["'])\/(?!AI-Learning-Wiki\/)/.test(html)) {
+  if (/fetch\((["'`])\/(?!AI-Learning-Wiki\/)/.test(html)) {
     failures.push(`${path.relative(DIST, file)} -> root fetch()`);
   }
 }
