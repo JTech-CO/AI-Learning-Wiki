@@ -57,7 +57,7 @@ assert.match(randomArticle, /location\.assign\(`\$\{basePath\}wiki\//u);
 assert.doesNotMatch(randomArticle, /urls:\s*wiki\.articles\.map/u, 'legacy root-relative random URL list remains');
 
 assert.match(config, /tableOfContents:\s*false/u, 'non-article table of contents is not globally disabled');
-assert.match(buildWiki, /tableOfContents: \{ minHeadingLevel: 2, maxHeadingLevel: 3 \}/u, 'wiki article table of contents override missing');
+assert.match(buildWiki, /tableOfContents: \{ minHeadingLevel: 2, maxHeadingLevel: 4 \}/u, 'wiki article table of contents override missing');
 const nonArticleDocs = (await walk('src/content/docs')).filter((file) => file.endsWith('.md') && !file.includes(`${path.sep}wiki${path.sep}`));
 for (const file of nonArticleDocs) {
   assert.doesNotMatch(await read(file), /^tableOfContents:/mu, `${file}: non-article page overrides the disabled table of contents`);

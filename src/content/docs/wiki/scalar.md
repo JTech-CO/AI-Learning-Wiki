@@ -1,7 +1,7 @@
 ---
 title: "스칼라 Scalar"
 description: "벡터 공간의 벡터를 확대·축소하거나 계산의 단일 값을 나타내는 수학적 원소다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">스칼라값</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 벡터 공간의 벡터를 확대·축소하거나 계산의 단일 값을 나타내는 수학적 원소다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 수학적 정의와 수치 배열 라이브러리의 스칼라 표현을 함께 다룬다. 값 하나, 길이 1인 벡터, shape가 빈 0차원 배열은 값이 비슷해 보여도 자료 구조와 연산 규칙이 다를 수 있다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 스칼라 곱은 벡터의 각 성분에 같은 스칼라를 곱해 크기와 방향을 바꾼다. 머신러닝에서는 손실, 학습률, 온도와 같은 스칼라가 텐서 전체에 브로드캐스팅되어 연산될 수 있다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 스칼라는 값과 자료형을 가지며 구현에 따라 장치와 기울기 정보도 가질 수 있다. 정수·부동소수점·복소수의 범위와 정밀도는 결과와 오버플로에 영향을 준다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 손실값, 확률, 하이퍼파라미터, 벡터의 배율, 평균과 합계처럼 하나의 수로 표현되는 계산에 사용한다. 단위와 정규화 범위를 함께 기록해야 값의 의미를 비교할 수 있다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 하나의 스칼라 지표는 데이터 분포와 하위 집단의 차이를 숨길 수 있다. 유한 정밀도에서는 결합 법칙이 수학과 다르게 보일 수 있고 매우 크거나 작은 값은 오버플로·언더플로를 만든다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [벡터](/wiki/vector/): 벡터는 여러 성분과 방향 구조를 가지며 스칼라는 벡터를 배율 조정하는 단일 원소다.
 - [텐서](/wiki/tensor/): 텐서는 여러 축을 가질 수 있고 0차원 텐서는 구현상 스칼라 값을 담지만 메타데이터와 연산 그래프를 가질 수 있다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 벡터 [1, -2, 3]에 스칼라 0.5를 곱하면 [0.5, -1, 1.5]가 된다. 모델 손실 0.8도 스칼라이지만 배치의 여러 오차를 어떤 방식으로 집계했는지에 따라 의미가 달라진다. 코드에서는 결과의 shape, dtype, device를 함께 확인한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 스칼라이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 스칼라을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,38 +98,42 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 스칼라의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [벡터](/wiki/vector/)와 [텐서](/wiki/tensor/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 _해당 문서가 없습니다._
 
-## 관련 문서
+### 관련 문서
 
 - [벡터](/wiki/vector/)
 - [텐서](/wiki/tensor/)
 - [파라미터](/wiki/parameter/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [행렬 곱셈](/wiki/matrix-multiplication/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
 <span id="reference-2"></span>2. [NumPy Scalars](https://numpy.org/doc/stable/reference/arrays.scalars.html) — documentation
 <span id="reference-3"></span>3. [Scalar (mathematics) — Wikipedia](https://en.wikipedia.org/wiki/Scalar_%28mathematics%29) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

@@ -1,7 +1,7 @@
 ---
 title: "이미지 분류 Image Classification"
 description: "입력 이미지 전체를 하나 이상의 사전 정의된 범주나 확률분포에 매핑하는 컴퓨터 비전 과제다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">영상 분류 · Image Recognition Classification</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 입력 이미지 전체를 하나 이상의 사전 정의된 범주나 확률분포에 매핑하는 컴퓨터 비전 과제다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 객체의 위치까지 찾는 탐지, 픽셀별 범주를 예측하는 분할과 구분된다. 제로샷 이미지 분류는 텍스트 라벨과 이미지 표현을 비교하지만, 고정 클래스 지도학습과 평가 조건이 다르다.
 
@@ -26,13 +28,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 합성곱 신경망이나 비전 트랜스포머가 계층적 표현을 만들고 마지막 층이 클래스 점수를 출력한다. 학습은 보통 교차 엔트로피로 정답 클래스 확률을 높인다. 전처리 크기와 정규화가 사전학습 가중치의 계약과 맞아야 한다.
 
 원리를 검증할 때는 입력, 중간 상태, 출력과 실패 조건을 분리한다. 결과값 하나만 확인하지 않고 어떤 가정과 변환을 거쳤는지 관찰 가능한 기록으로 남겨야 다른 구현과 비교할 수 있다.
 
-**화소에서 클래스 점수까지**
+#### 화소에서 클래스 점수까지
 
 이미지 분류 모델은 전체 이미지에 하나 이상의 범주를 부여한다. 합성곱 신경망은 작은 필터를 공간 전체에 공유해 가장자리와 질감 같은 지역 패턴을 찾고, 층이 깊어질수록 더 넓은 수용 영역에서 형태를 조합한다. AlexNet은 대규모 ImageNet 분류에서 깊은 합성곱망, GPU 학습, ReLU와 규제 기법의 효과를 보여 주며 현대 시각 모델 확산의 계기가 되었다. 최근에는 이미지를 패치 토큰으로 나누고 Transformer로 관계를 계산하는 구조도 널리 사용된다. 마지막 표현은 클래스별 로짓으로 변환되고 softmax를 적용하면 상호 배타적 범주의 확률처럼 해석할 값이 나온다.
 
@@ -40,13 +42,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 클래스 목록과 ID, 이미지 디코딩, 크기 조정·자르기·정규화, 모델 가중치, 임계값과 후처리가 파이프라인이다. 학습·평가 분할은 같은 대상이나 연속 촬영 장면이 양쪽에 섞이지 않게 구성한다.
 
 구현 비교에서는 기본값에 기대지 않고 인터페이스, 자료형 또는 스키마, 버전과 오류 처리 방식을 명시한다. 같은 명칭의 기능도 라이브러리와 서비스에 따라 경계 조건이 다를 수 있으므로 작은 기준 사례를 고정한다.
 
-**입력 파이프라인과 레이블 공간**
+#### 입력 파이프라인과 레이블 공간
 
 모델 가중치에는 기대하는 입력 크기, 색상 채널 순서, 값 범위, 평균·표준편차 정규화가 따라온다. Torchvision의 사전학습 가중치는 해당 전처리 변환과 함께 제공되며 다른 resize나 crop을 사용하면 문법적으로 실행되어도 정확도가 크게 달라질 수 있다. 평가에서는 학습용 무작위 증강을 끄고 결정적인 변환과 평가 모드를 사용해야 배치 정규화와 드롭아웃이 올바르게 동작한다. 이미지 디코더의 방향 메타데이터, 알파 채널, 색 공간 처리도 실제 입력 차이를 만든다.
 
@@ -54,13 +56,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 제품 검사, 문서 유형 분류, 의료 영상 보조, 콘텐츠 정리에 사용된다. 클래스별 비용이 다르면 전체 정확도 대신 재현율, 정밀도, 보정과 거부 옵션을 함께 설계한다.
 
 도입 여부는 정확도만이 아니라 지연시간, 비용, 설명 가능성, 데이터 요구량과 실패 시 피해를 함께 비교해 결정한다. 단순한 기준선과 실제 업무 데이터에서의 검증 결과가 복잡한 구성을 정당화해야 한다.
 
-**분류가 적합한 문제인지 판단하기**
+#### 분류가 적합한 문제인지 판단하기
 
 이미지 전체의 주된 범주만 필요하면 분류가 단순하고 효율적이다. 한 이미지에서 여러 물체의 위치가 필요하면 객체 탐지, 각 화소의 영역이 필요하면 분할, 시각과 문장의 관계가 필요하면 멀티모달 검색이나 질의응답이 더 적합하다. 분류기로 위치 문제를 억지로 풀면 배경과 작은 물체를 구분하지 못한다. 여러 속성이 동시에 필요한 상품·의료 영상은 다중 레이블이나 계층 분류를 고려하며, 레이블 간 상호 배타성 가정을 데이터 정의에서 확인한다.
 
@@ -78,13 +82,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 배경·조명·카메라와 클래스 분포가 바뀌면 성능이 크게 떨어질 수 있다. 학습 데이터의 지름길 특징을 사용할 수 있고, 닫힌 클래스 밖 입력에도 높은 확률을 낼 수 있다. 사람 집단과 촬영 조건별 오류 분석이 필요하다.
 
 평균 성능만 보고 한계를 숨기지 않도록 하위 집단, 경계 입력, 분포 변화와 악의적 입력을 별도로 시험한다. 알려진 실패를 탐지하는 모니터링과 안전한 대체 경로가 없으면 운영 준비가 끝난 것으로 보지 않는다.
 
-**배경 지름길과 분포 이동**
+#### 배경 지름길과 분포 이동
 
 분류기는 사람이 의도한 물체 대신 배경, 촬영 장비, 워터마크 같은 상관관계를 지름길로 배울 수 있다. 훈련 사진에서 특정 동물이 항상 눈밭에 있었다면 배경이 바뀐 실제 환경에서 실패한다. 무작위 데이터 분할도 같은 촬영 연속 장면이나 동일 대상이 양쪽에 들어가면 성능을 부풀릴 수 있다. 사람·장소·시간·장비 단위로 그룹을 나누고, 실제 배포와 다른 조건을 별도 시험한다. 살짝 변형한 적대적 입력과 압축·흐림·밝기 변화도 안정성을 확인하는 도구지만 현실 위험을 모두 대표하지는 않는다.
 
@@ -92,7 +96,7 @@ softmax 최고값이 높다고 입력이 학습 범주에 속한다는 보장은
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [computer-vision](/wiki/computer-vision/): 이미지 이해 전반을 다루는 상위 분야다.
 - [image-generation](/wiki/image-generation/): 라벨을 예측하는 대신 새로운 이미지를 합성한다.
@@ -100,7 +104,7 @@ softmax 최고값이 높다고 입력이 학습 범주에 속한다는 보장은
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 불량 제품 분류에서 정상·긁힘·균열 클래스를 정의하고 촬영 일자별로 분할한다. 클래스별 혼동 행렬과 macro F1, 미확신 표본의 거부율을 측정하고 새로운 카메라 데이터로 외부 검증한다.
 
@@ -108,7 +112,7 @@ softmax 최고값이 높다고 입력이 학습 범주에 속한다는 보장은
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 이 개념이 해결할 업무와 해결하지 않을 업무를 한 문장씩 적는다.
 2. **입력·출력 계약:** 자료 형식, 단위, 스키마와 오류 응답을 고정한다.
@@ -119,7 +123,7 @@ softmax 최고값이 높다고 입력이 학습 범주에 속한다는 보장은
 
 검토자는 문서의 출처 번호를 따라 정의와 한계를 다시 확인하고, 구현 버전이 바뀔 때 같은 기준 사례와 실패 시험을 반복한다. 개선 폭이 복잡성과 잔여 위험을 상쇄하지 못하면 단순한 기준선으로 돌아간다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - 선택 근거와 제외한 대안을 함께 적어 나중에 결정 조건을 복원한다.
 - 입력 데이터의 기준 시점, 표본 수, 결측 처리와 권한 범위를 고정한다.
@@ -128,7 +132,7 @@ softmax 최고값이 높다고 입력이 학습 범주에 속한다는 보장은
 - 변경 뒤 동일 평가를 반복하고 결과 차이가 데이터, 코드, 모델 또는 정책 중 어디에서 생겼는지 분류한다.
 - 자동화가 확신하지 못하거나 영향이 큰 경우 사람이 판단할 수 있도록 입력과 근거, 가능한 대안을 한 화면에 제공한다.
 
-**데이터 감사와 배포 시험**
+#### 데이터 감사와 배포 시험
 
 각 클래스의 정의와 제외 예시를 작성하고 표본 수, 출처, 시간, 장비, 집단별 분포를 조사한다. 중복 및 근접 중복을 제거한 뒤 그룹 단위로 훈련·검증·시험을 나눈다. 기준 모델과 사전학습 모델을 같은 전처리와 데이터에서 비교하고, 전체 정확도 외에 클래스별 지표와 혼동 행렬을 기록한다. 잘못 분류된 이미지는 배경 지름길, 작은 대상, 가림, 레이블 오류, 분포 밖 입력으로 유형화한다. 설명용 히트맵은 모델 근거의 증명이 아니라 조사 단서로만 사용한다.
 
@@ -136,24 +140,26 @@ softmax 최고값이 높다고 입력이 학습 범주에 속한다는 보장은
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이미지 분류 개념의 입력, 처리와 출력을 한 문장씩 설명할 수 있는가?
 - 관련 문서 세 개와의 차이를 실제 사례로 구분할 수 있는가?
 - 운영 기록과 실패 시험에서 반드시 남겨야 할 항목을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [신경망](/wiki/neural-network/)
 
-## 관련 문서
+### 관련 문서
 
 - [데이터 증강](/wiki/data-augmentation/)
 - [모델 평가](/wiki/evaluation/)
 - [이미지 생성](/wiki/image-generation/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [개방형 어휘 객체 탐지](/wiki/open-vocabulary-detection/)
 - [객체 탐지](/wiki/object-detection/)
@@ -252,18 +258,20 @@ softmax 최고값이 높다고 입력이 학습 범주에 속한다는 보장은
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) — paper
 <span id="reference-2"></span>2. [Torchvision Models and Pre-trained Weights](https://docs.pytorch.org/vision/stable/models.html) — documentation
 <span id="reference-3"></span>3. [Image classification — Wikipedia](https://en.wikipedia.org/wiki/Image_classification) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

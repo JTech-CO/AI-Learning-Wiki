@@ -1,14 +1,16 @@
 ---
 title: "능동학습 Active Learning"
 description: "능동학습은 모델이 라벨을 받으면 가장 도움이 될 표본을 선택하고 사람이나 오라클에 질의하는 학습 방식이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">능동학습은 모델이 라벨을 받으면 가장 도움이 될 표본을 선택하고 사람이나 오라클에 질의하는 학습 방식이다.</p>
 
 <div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 능동학습은 모델이 라벨을 받으면 가장 도움이 될 표본을 선택하고 사람이나 오라클에 질의하는 학습 방식이다.
 
@@ -16,13 +18,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ‘능동학습(Active Learning)’라는 표제는 한국어 설명과 국제적으로 통용되는 영문 용어를 함께 제공한다. 핵심은 번역된 이름이 아니라 이 개념이 무엇을 입력으로 받아 어떤 변환을 거쳐 어떤 결과를 내며, 결과가 유효하다고 판단할 조건이 무엇인지 이해하는 데 있다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다.
 
-**개요와 핵심 정의 심화 점검 1**
+#### 개요와 핵심 정의 심화 점검 1
 
 ‘능동학습’의 개요와 핵심 정의를 검토하는 1번째 기록에서는 분야 foundations, 세부 영역 learning-paradigms, 우선순위 16라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 ‘능동학습(Active Learning)’의 설명 범위에는 역사적 배경이나 이름의 유래뿐 아니라 현재 시스템에서의 계산 절차와 운영 경계가 포함된다. 학습 패러다임은 사용할 수 있는 데이터와 피드백, 갱신 시점, 목표 함수와 일반화 가정으로 구분한다. 비슷한 이름보다 어떤 정보가 언제 모델에 들어가는지가 핵심이다.
 
@@ -30,7 +32,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-7">[7]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 불확실성, 대표성 또는 예상 정보 이득으로 질의 우선순위를 정해 라벨 비용을 줄인다.
 
@@ -38,37 +40,39 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. ‘능동학습(Active Learning)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-**작동 원리 심화 점검 3**
+#### 작동 원리 심화 점검 3
 
 ‘능동학습’의 작동 원리를 검토하는 3번째 기록에서는 분야 foundations, 세부 영역 learning-paradigms, 우선순위 16라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 ‘능동학습(Active Learning)’을 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 데이터 분할과 기본 모델을 고정하고 학습 절차가 추가로 활용하는 라벨, 비라벨 데이터, 다른 과제와 시간 순서를 명시한다. 비교 실험에서는 총 데이터와 계산 예산을 맞춘다.
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 능동학습은 모델이 라벨을 받으면 가장 도움이 될 표본을 선택하고 사람이나 오라클에 질의하는 학습 방식이다.
 
-**구성 요소와 처리 흐름 심화 점검 2**
+#### 구성 요소와 처리 흐름 심화 점검 2
 
 ‘능동학습’의 구성 요소와 처리 흐름를 검토하는 2번째 기록에서는 분야 foundations, 세부 영역 learning-paradigms, 우선순위 16라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 ‘능동학습(Active Learning)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 소량 라벨을 가진 고객 문의 분류에서 기본 지도학습과 추가 비라벨 활용, 사전학습 표현 이전, 여러 과제 공동학습을 같은 분할에서 비교한다.
 
 학습 분포와 다른 평가셋, 적은 데이터와 충분한 데이터 조건을 모두 시험한다. 성능 향상이 데이터 누출이나 더 큰 모델 때문인지 분리하기 위한 절제 실험이 필요하다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다.
 
-**활용 분야와 선택 기준 심화 점검 5**
+#### 활용 분야와 선택 기준 심화 점검 5
 
 ‘능동학습’의 활용 분야와 선택 기준를 검토하는 5번째 기록에서는 분야 foundations, 세부 영역 learning-paradigms, 우선순위 16라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 방법의 가정이 실제 데이터 구조와 맞지 않으면 부정적 전이, 오류 증폭과 망각이 생긴다. 역사적 성공 사례를 현재의 대규모 모델에 그대로 일반화하지 않는다.
 
@@ -78,7 +82,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 ‘능동학습(Active Learning)’은 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. 능동학습은 모델이 라벨을 받으면 가장 도움이 될 표본을 선택하고 사람이나 오라클에 질의하는 학습 방식이다.
 
@@ -91,7 +95,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 소량 라벨을 가진 고객 문의 분류에서 기본 지도학습과 추가 비라벨 활용, 사전학습 표현 이전, 여러 과제 공동학습을 같은 분할에서 비교한다.
 
@@ -101,7 +105,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **문제와 경계 정의:** ‘능동학습(Active Learning)’이 해결할 문제와 해결하지 않을 문제를 각각 두 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 크기, 권한, 오류 상태와 완료 조건을 고정한다.
@@ -116,33 +120,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 능동학습의 정의를 입력·처리·출력으로 설명할 수 있는가?
 - 선행 개념과 인접 개념의 차이를 실제 사례로 구분할 수 있는가?
 - 적용 전 확인할 실패 조건, 지표와 사람 검토 지점을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [인공지능](/wiki/artificial-intelligence/)
 
-## 관련 문서
+### 관련 문서
 
 - [머신러닝](/wiki/machine-learning/)
 - [딥러닝](/wiki/deep-learning/)
 - [기호주의 인공지능](/wiki/symbolic-ai/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258) — paper
 <span id="reference-2"></span>2. [A Survey of Transfer Learning](https://arxiv.org/abs/1911.02685) — paper
@@ -152,6 +160,6 @@ _포함된 코스가 없습니다._
 <span id="reference-6"></span>6. [scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
 <span id="reference-7"></span>7. [능동적 학습 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%8A%A5%EB%8F%99%EC%A0%81_%ED%95%99%EC%8A%B5) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

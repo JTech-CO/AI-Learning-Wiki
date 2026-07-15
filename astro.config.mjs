@@ -36,7 +36,9 @@ export default defineConfig({
         Header: './src/components/wiki/WikiHeader.astro',
         Sidebar: './src/components/wiki/WikiSidebar.astro',
         MobileMenuToggle: './src/components/wiki/WikiMobileMenuToggle.astro',
-        Footer: './src/components/wiki/WikiFooter.astro'
+        Footer: './src/components/wiki/WikiFooter.astro',
+        TableOfContents: './src/components/wiki/WikiTableOfContents.astro',
+        MobileTableOfContents: './src/components/wiki/WikiMobileTableOfContents.astro'
       },
       sidebar: [
         { label: '대문', link: '/' },

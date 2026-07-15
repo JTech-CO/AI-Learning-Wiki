@@ -1,7 +1,7 @@
 ---
 title: "기호주의 인공지능 Symbolic Artificial Intelligence"
 description: "지식을 기호와 명시적 규칙으로 표현하고 탐색·추론 절차를 적용해 결론이나 행동을 도출하는 인공지능 접근법이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">상징적 인공지능 · Symbolic AI · GOFAI</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 지식을 기호와 명시적 규칙으로 표현하고 탐색·추론 절차를 적용해 결론이나 행동을 도출하는 인공지능 접근법이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 전문가 시스템, 논리 프로그래밍, 지식 그래프, 자동 계획, 제약 충족과 정리 증명이 대표 범위다. 뉴로심볼릭 시스템처럼 신경망의 지각 결과를 기호 추론에 연결하는 혼합 구조도 있으므로 상징적 방법과 비상징적 방법을 배타적인 시대 구분으로 이해하면 안 된다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 사실과 규칙을 지식 기반에 저장하고, 전방 추론이나 후방 추론으로 적용 가능한 규칙을 찾는다. 탐색 문제에서는 상태, 연산자, 목표 검사를 정의하고 휴리스틱으로 후보 경로의 우선순위를 정한다. 충돌하는 규칙이 있으면 우선순위와 확신도, 예외 규칙을 별도로 관리해야 한다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 운영 시스템은 지식 기반, 작업 기억, 추론 엔진, 탐색 제어, 설명 모듈로 나뉜다. 규칙 ID와 버전, 적용 전제, 결론, 예외를 기록하면 결론이 나온 경로를 재현할 수 있다. 외부 데이터가 기호로 변환되는 경계가 오류의 주요 발생 지점이다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 규정 준수, 구성 검증, 진단 보조처럼 규칙과 근거를 설명해야 하고 문제 범위가 비교적 안정적인 업무에 적합하다. 새로운 사례가 계속 등장하는 지각 문제에서는 학습 모델과 결합하고, 최종 결정 규칙만 상징 계층에 두는 구성이 실용적이다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 지식 획득 병목과 규칙 폭증, 예외 누락, 불확실한 감각 입력 처리의 어려움이 핵심 한계다. 규칙이 많아지면 상호작용으로 예상하지 못한 결론이 생길 수 있으므로 회귀 사례와 모순 검사, 사람이 검토할 수 있는 추론 로그가 필요하다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [artificial-intelligence](/wiki/artificial-intelligence/): 상위 연구 분야이며 상징적 접근은 그 안의 한 방법론이다.
 - [machine-learning](/wiki/machine-learning/): 데이터로 함수나 표현을 학습하는 방법을 중심으로 하며 규칙이 항상 명시적이지 않다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 대출 자격 검토에서 소득 확인, 연체 이력, 담보 조건을 사실로 입력하고 규칙별 근거 조항을 연결한다. 결과가 거절이면 적용된 규칙과 누락된 증빙을 함께 출력한다. 규칙이 바뀐 뒤 같은 사례를 재실행해 결정 변화가 의도한 것인지 확인한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 이 개념이 해결할 업무와 해결하지 않을 업무를 한 문장씩 적는다.
 2. **입력·출력 계약:** 자료 형식, 단위, 스키마와 오류 응답을 고정한다.
@@ -85,7 +89,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 검토자는 문서의 출처 번호를 따라 정의와 한계를 다시 확인하고, 구현 버전이 바뀔 때 같은 기준 사례와 실패 시험을 반복한다. 개선 폭이 복잡성과 잔여 위험을 상쇄하지 못하면 단순한 기준선으로 돌아간다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - 선택 근거와 제외한 대안을 함께 적어 나중에 결정 조건을 복원한다.
 - 입력 데이터의 기준 시점, 표본 수, 결측 처리와 권한 범위를 고정한다.
@@ -96,23 +100,25 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 상징적 인공지능 개념의 입력, 처리와 출력을 한 문장씩 설명할 수 있는가?
 - 관련 문서 세 개와의 차이를 실제 사례로 구분할 수 있는가?
 - 운영 기록과 실패 시험에서 반드시 남겨야 할 항목을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [인공지능](/wiki/artificial-intelligence/)
 
-## 관련 문서
+### 관련 문서
 
 - [머신러닝](/wiki/machine-learning/)
 - [신경망](/wiki/neural-network/)
 - [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [가설](/wiki/hypothesis/)
 - [가설 공간](/wiki/hypothesis-space/)
@@ -208,18 +214,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Computer Science as Empirical Inquiry: Symbols and Search](https://courses.media.mit.edu/2004spring/mas966/Newell%20Simon%20Physical%20symbol%20systems.pdf) — paper
 <span id="reference-2"></span>2. [The Quest for Artificial Intelligence](https://ai.stanford.edu/~nilsson/QAI/qai) — book
 <span id="reference-3"></span>3. [Symbolic artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

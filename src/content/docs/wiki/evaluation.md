@@ -1,14 +1,16 @@
 ---
 title: "모델 평가 Model Evaluation"
 description: "정해진 데이터·기준·절차로 모델이나 시스템의 품질과 위험을 측정하는 과정이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">정해진 데이터·기준·절차로 모델이나 시스템의 품질과 위험을 측정하는 과정이다.</p>
 
 <div class="wiki-document-meta">분류: [평가·관측성·벤치마크](/category/evaluation/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 정해진 데이터·기준·절차로 모델이나 시스템의 품질과 위험을 측정하는 과정이다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 직접 대응하는 외부 백과 표제어가 뚜렷하지 않은 신생·세부 용어다. 따라서 아래 1차 자료와 상위 개념 문서를 중심으로 범위를 정하고, 제품별 용어는 일반 원리와 분리했다.
 
@@ -24,13 +26,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 모델 평가는 과제 정의, 데이터 분할, 지표, 기준선, 통계적 불확실성을 묶어 모델이 요구 조건을 만족하는지 측정한다.
 
 직접 요구되는 선행 문서는 없지만, 정의와 입력·출력 범위를 먼저 확인한다. 이 선행 관계를 기준으로 어느 단계에서 값이 만들어지고 다음 구성 요소로 어떻게 전달되는지 추적하면, 비슷한 용어를 기능 이름만으로 혼동하는 일을 줄일 수 있다.
 
-**측정 대상과 관측 절차**
+#### 측정 대상과 관측 절차
 
 모델 평가는 추상적인 “좋음”을 관측 가능한 과제, 데이터, 지표와 판정 규칙으로 바꾸는 과정이다. 같은 출력도 사용 목적에 따라 정답 일치, 순위, 사실 근거, 유해성, 지연 시간 중 다른 기준으로 판단된다. 먼저 평가하려는 능력과 실제 의사결정을 명시한 뒤 그 능력을 드러내는 표본을 설계해야 한다. 이미 있는 벤치마크를 선택하고 나서 설명 가능한 목표를 끼워 맞추면 점수는 높아져도 제품 실패를 예측하지 못한다. HELM처럼 시나리오와 지표를 여러 축으로 공개하는 접근은 하나의 종합 점수에 가려지는 정확성·강건성·공정성·효율성의 상충 관계를 드러내는 데 도움이 된다.
 
@@ -38,13 +40,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘모델 평가’ 개념만 독립적으로 동작하지 않는다. [벤치마크](/wiki/benchmark/), [평가 지표](/wiki/metric/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
 처리 흐름을 문서화할 때는 입력 형식, 파라미터와 기본값, 실패 조건, 출력 스키마, 관측 가능한 지표를 함께 적는다. 이렇게 해야 같은 이름을 쓰는 서로 다른 라이브러리와 서비스의 동작 차이를 재현 가능한 방식으로 비교할 수 있다.
 
-**데이터 분할과 비교 설계**
+#### 데이터 분할과 비교 설계
 
 학습, 검증, 시험 데이터는 서로 다른 결정을 위해 분리한다. 검증 세트로 모델과 프롬프트를 반복 선택하면 그 세트에 과적합되므로 최종 시험 세트는 선택이 끝날 때까지 격리한다. 공개 벤치마크는 학습 데이터에 포함되었거나 인터넷을 통해 간접 노출되었을 수 있어 오염 점검이 필요하다. 문장 중복만 찾는 것으로 충분하지 않고 번역, 재서술, 풀이 설명처럼 의미가 같은 표본도 고려한다. 운영 데이터는 시간에 따라 변하므로 고정 회귀 세트와 최근 분포를 반영한 순환 세트를 함께 유지한다.
 
@@ -52,13 +54,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 모델 선택, 회귀 테스트, 출시 기준, 운영 모니터링에 사용한다. ‘모델 평가’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
 선택 기준은 “널리 쓰인다”가 아니라 현재 데이터와 사용자의 실패 비용을 얼마나 줄이는가이다. 오프라인 실험, 작은 실제 트래픽, 배포 후 모니터링 순으로 증거를 쌓는 편이 안전하다.
 
-**평가 방법을 과제에 맞추기**
+#### 평가 방법을 과제에 맞추기
 
 정답이 하나인 분류·추출은 정확 일치와 클래스별 지표가 유용하지만, 자유 형식 생성은 핵심 사실, 근거, 형식, 유해성을 별도 기준으로 나누는 편이 낫다. 검색 시스템은 최종 답변만 보면 검색 실패와 생성 실패를 구분할 수 없으므로 후보 회수율, 재순위와 근거 사용을 단계별로 측정한다. 에이전트는 최종 상태뿐 아니라 도구 호출의 유효성, 불필요한 행동, 승인 우회와 복구 능력을 본다. 코드 생성은 테스트 통과에 더해 보안, 성능, 기존 동작 회귀를 확인한다.
 
@@ -76,13 +80,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 오프라인 점수가 실제 사용자 가치와 안전을 완전히 대변하지 않으므로 배포 후 모니터링과 사람 평가를 보완한다.
 
 벤치마크 오염과 지표 편향, 사람 평가 불일치를 함께 기록한다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.
 
-**벤치마크 포화와 대리 지표**
+#### 벤치마크 포화와 대리 지표
 
 평가 지표는 실제 목표의 대리 변수다. 정확도를 높이는 최적화가 사용자의 시간 절약이나 안전 개선으로 이어지지 않을 수 있으며, 모델이 지표의 허점을 이용하면 점수와 품질이 분리된다. 객관식 정답률은 추론 과정의 신뢰성을 보장하지 않고, 문자열 겹침 지표는 사실을 뒤집은 문장에도 높은 점수를 줄 수 있다. 모델 기반 채점은 장문, 특정 문체, 자기 계열 모델을 선호할 수 있다. 중요한 의사결정에서는 서로 다른 원리의 지표와 사람 검토, 실제 업무 결과를 삼각 측량한다.
 
@@ -90,14 +94,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [벤치마크](/wiki/benchmark/): 여러 모델이나 시스템을 비교하기 위해 고정한 과제·데이터·평가 지표의 묶음이다.
 - [평가 지표](/wiki/metric/): 성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 평가 항목마다 무엇을 맞았다고 볼지 판정 기준과 예시를 작성하고 모델 이름을 가린 상태에서 반복 측정한다. ‘모델 평가’를 적용하는 경우에는 모델 평가는 과제 정의, 데이터 분할, 지표, 기준선, 통계적 불확실성을 묶어 모델이 요구 조건을 만족하는지 측정한다.
 
@@ -105,7 +109,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘모델 평가’가 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** 입력 자료의 형식·분포·권한과 기준 시점을 확인한다.
@@ -115,7 +119,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 6. **판단 근거 보존:** 성공 사례만 남기지 말고 실패 입력과 원인 가설, 수정 전후 수치를 함께 저장한다. 그래야 담당자가 바뀌거나 모델이 교체되어도 ‘모델 평가’에 대한 선택을 다시 검증할 수 있다.
 7. **재검토 조건 지정:** 데이터 분포, 모델 버전, 비용 구조 또는 정책이 바뀌면 이전 결론을 그대로 재사용하지 않고 같은 기준으로 다시 평가한다.
 
-**평가 카드와 릴리스 문턱**
+#### 평가 카드와 릴리스 문턱
 
 평가를 시작할 때 목적, 이해관계자, 실패 비용, 모델을 바꿀 의사결정 기준을 한 장의 평가 카드로 작성한다. 표본 출처와 포함·제외 규칙, 기준 시점, 프롬프트와 생성 설정, 채점 코드 버전, 사람 평가 지침을 고정한다. 전체 결과를 보기 전에 합격 문턱과 중요한 하위 집단의 최소 성능을 정하면 결과에 맞춰 기준을 바꾸는 일을 줄일 수 있다. 기준 모델과 후보 모델의 표본별 출력, 채점 근거와 오류 분류를 보존해 재검토가 가능하게 한다.
 
@@ -123,22 +127,24 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - 기본 정의와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 _해당 문서가 없습니다._
 
-## 관련 문서
+### 관련 문서
 
 - [벤치마크](/wiki/benchmark/)
 - [평가 지표](/wiki/metric/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [개별 LLM 심사](/wiki/pointwise-llm-judge/)
 - [검색 평가](/wiki/retrieval-evaluation/)
@@ -245,19 +251,21 @@ _해당 문서가 없습니다._
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [멀티모달 AI](/course/multimodal-ai/) · [신뢰할 수 있는 AI](/course/responsible-ai/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
 <span id="reference-2"></span>2. [Machine learning: model assessments — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning#Model_assessments) — encyclopedia
 <span id="reference-3"></span>3. [MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 모델 라이선스](/wiki/model-license/)
 - **신뢰할 수 있는 AI:** [다음 문서 — 벤치마크](/wiki/benchmark/)

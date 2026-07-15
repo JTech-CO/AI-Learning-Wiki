@@ -22,7 +22,7 @@ for (const file of (await readdir('src/content/docs/wiki')).filter((name) => nam
   const article = articleById.get(id);
   if (!article) continue;
   const source = await readFile(path.join('src/content/docs/wiki', file), 'utf8');
-  const section = source.match(/## 이 문서를 가리키는 문서\n\n([\s\S]*?)\n\n## 이 문서를 포함하는 코스/)?.[1];
+  const section = source.match(/### 이 문서를 가리키는 문서\n\n([\s\S]*?)\n\n### 이 문서를 포함하는 코스/)?.[1];
   if (!section) {
     failures.push(`${id}: backlink section missing`);
     continue;

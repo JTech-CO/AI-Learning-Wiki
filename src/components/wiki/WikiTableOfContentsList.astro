@@ -1,0 +1,128 @@
+---
+interface TocItem {
+  depth: number;
+  slug: string;
+  text: string;
+  children: TocItem[];
+}
+
+interface Props {
+  toc: TocItem[];
+  depth?: number;
+  root?: boolean;
+}
+
+const { toc, depth = 0, root = false } = Astro.props;
+---
+
+<ul class:list={['wiki-toc-list', `wiki-toc-depth-${depth}`]}>
+  {toc.map((heading) => {
+    const isTop = heading.slug === '_top';
+    const isGroup = root && !isTop && heading.children.length > 0;
+    const label = isTop ? '처음 위치' : heading.text;
+
+    if (isGroup) {
+      return (
+        <li class="wiki-toc-group">
+          <details open data-wiki-toc-group>
+            <summary>
+              <a href={`#${heading.slug}`} data-wiki-toc-link>{label}</a>
+            </summary>
+            <Astro.self toc={heading.children} depth={depth + 1} />
+          </details>
+        </li>
+      );
+    }
+
+    return (
+      <li class:list={{ 'wiki-toc-top': isTop }}>
+        <a href={`#${heading.slug}`} data-wiki-toc-link>{label}</a>
+        {heading.children.length > 0 && <Astro.self toc={heading.children} depth={depth + 1} />}
+      </li>
+    );
+  })}
+</ul>
+
+<style>
+  .wiki-toc-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .wiki-toc-list .wiki-toc-list {
+    margin: .18rem 0 .35rem .55rem;
+    border-left: 1px solid #c8ccd1;
+    padding-left: .55rem;
+  }
+  .wiki-toc-list li {
+    margin: 0;
+  }
+  .wiki-toc-list a {
+    display: block;
+    border-radius: 0;
+    padding: .19rem .28rem;
+    color: #3366cc;
+    font-size: .76rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+  }
+  .wiki-toc-depth-0 > .wiki-toc-top {
+    margin-bottom: .35rem;
+    border-bottom: 1px solid #eaecf0;
+    padding-bottom: .35rem;
+  }
+  .wiki-toc-depth-0 > .wiki-toc-top > a {
+    color: #54595d;
+    font-weight: 600;
+  }
+  .wiki-toc-depth-1 > li > a {
+    font-size: .73rem;
+  }
+  .wiki-toc-depth-2 > li > a {
+    color: #54595d;
+    font-size: .69rem;
+  }
+  details > summary {
+    display: flex;
+    align-items: flex-start;
+    gap: .25rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details > summary::before {
+    content: '›';
+    width: .7rem;
+    flex: none;
+    margin-top: .17rem;
+    color: #54595d;
+    font-size: .8rem;
+    line-height: 1;
+    text-align: center;
+    transform: rotate(0deg);
+  }
+  details[open] > summary::before {
+    transform: rotate(90deg);
+  }
+  details > summary > a {
+    min-width: 0;
+    flex: 1;
+    padding-left: 0;
+    font-size: .79rem;
+    font-weight: 700;
+  }
+  .wiki-toc-list a[aria-current='true'] {
+    border-left: 2px solid #3366cc;
+    background: #eaecf0;
+    color: #202122;
+    font-weight: 700;
+  }
+  .wiki-toc-list a:focus-visible,
+  details > summary:focus-visible {
+    outline: 2px solid #3366cc;
+    outline-offset: 1px;
+  }
+</style>

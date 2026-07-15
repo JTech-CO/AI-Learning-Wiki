@@ -1,0 +1,95 @@
+---
+import WikiTableOfContentsList from './WikiTableOfContentsList.astro';
+
+const { toc } = Astro.locals.starlightRoute;
+---
+
+{toc && (
+  <wiki-table-of-contents data-wiki-toc-mobile data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
+    <nav aria-labelledby="wiki__table-of-contents--mobile">
+      <details class="wiki-mobile-toc-panel" data-wiki-mobile-panel>
+        <summary id="wiki__table-of-contents--mobile">
+          <strong>목차</strong>
+          <span data-wiki-toc-current>처음 위치</span>
+        </summary>
+        <div class="wiki-mobile-toc-dropdown">
+          <div class="wiki-mobile-toc-tools">
+            <button type="button" data-wiki-toc-toggle-all aria-expanded="true">모두 접기</button>
+          </div>
+          <WikiTableOfContentsList toc={toc.items} root />
+        </div>
+      </details>
+    </nav>
+  </wiki-table-of-contents>
+)}
+
+<style>
+  nav {
+    position: fixed;
+    z-index: var(--sl-z-index-toc);
+    top: calc(var(--sl-nav-height) - 1px);
+    inset-inline: 0;
+    border-top: 1px solid #c8ccd1;
+    background: #fff;
+  }
+  @media (min-width: 50rem) {
+    nav {
+      inset-inline-start: var(--sl-content-inline-start, 0);
+    }
+  }
+  .wiki-mobile-toc-panel > summary {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    height: var(--sl-mobile-toc-height);
+    border-bottom: 1px solid #c8ccd1;
+    padding: .48rem 1rem;
+    color: #202122;
+    font-size: .72rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  .wiki-mobile-toc-panel > summary::-webkit-details-marker {
+    display: none;
+  }
+  .wiki-mobile-toc-panel > summary::after {
+    content: '›';
+    margin-left: auto;
+    color: #54595d;
+    transform: rotate(90deg);
+  }
+  .wiki-mobile-toc-panel[open] > summary::after {
+    transform: rotate(-90deg);
+  }
+  [data-wiki-toc-current] {
+    min-width: 0;
+    overflow: hidden;
+    color: #54595d;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .wiki-mobile-toc-dropdown {
+    max-height: calc(85vh - var(--sl-nav-height) - var(--sl-mobile-toc-height));
+    overflow-y: auto;
+    border-bottom: 1px solid #a2a9b1;
+    background: #fff;
+    padding: .55rem 1rem .9rem;
+    box-shadow: 0 .2rem .45rem rgb(0 0 0 / 12%);
+    overscroll-behavior: contain;
+  }
+  .wiki-mobile-toc-tools {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: .25rem;
+  }
+  .wiki-mobile-toc-tools button {
+    border: 1px solid #c8ccd1;
+    border-radius: 0;
+    background: #f8f9fa;
+    color: #54595d;
+    padding: .18rem .4rem;
+    font: inherit;
+    font-size: .66rem;
+    cursor: pointer;
+  }
+</style>

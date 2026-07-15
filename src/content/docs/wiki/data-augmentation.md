@@ -1,7 +1,7 @@
 ---
 title: "데이터 증강 Data Augmentation"
 description: "과제의 정답 의미를 보존하는 변환이나 합성으로 학습 표본의 다양성을 늘려 모델의 일반화와 견고성을 높이는 기법이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">학습 데이터 증강 · Augmentation</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 과제의 정답 의미를 보존하는 변환이나 합성으로 학습 표본의 다양성을 늘려 모델의 일반화와 견고성을 높이는 기법이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 온라인 증강은 학습 배치마다 무작위 변환을 만들고 오프라인 증강은 변환 결과를 저장한다. 믹스업과 컷믹스처럼 입력과 라벨을 함께 조합하는 방법, 생성 모델로 새 표본을 만드는 합성 데이터도 넓은 범위에 포함된다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 원본 표본 x와 변환 T를 선택해 T(x)를 만들고 라벨 보존 또는 라벨 변환 규칙을 적용한다. 변환 분포가 실제 배포 환경의 변동을 닮을수록 일반화에 도움이 되지만, 과제 의미를 깨뜨리면 잘못된 감독 신호가 된다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 변환 목록, 적용 확률, 강도, 순서, 난수 시드와 라벨 처리 규칙이 파이프라인 계약이다. 학습·검증 분할 이후 학습 집합에만 증강을 적용해야 누수를 막을 수 있다. 시각화 샘플과 클래스별 통계를 함께 저장한다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 표본이 적거나 촬영 조건 변화가 큰 분류·탐지·음성 과제에서 널리 사용한다. 선택 기준은 현실성, 라벨 보존, 희귀 클래스 효과와 계산 비용이며, 증강 없는 기준선과 강도별 소거 실험으로 효과를 확인한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 과도한 변환은 실제로 존재하지 않는 표본을 만들거나 라벨을 틀리게 한다. 소수 클래스에 동일 변환을 반복해도 새로운 의미 다양성이 생기지 않을 수 있다. 검증 데이터까지 증강하면 배포 성능을 과대평가할 위험이 있다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [training-data](/wiki/training-data/): 증강의 원본이 되는 학습 표본과 기록의 집합이다.
 - [synthetic-data](/wiki/synthetic-data/): 실제 표본의 단순 변환을 넘어 생성 규칙이나 모델로 새 데이터를 만든다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 고양이 사진 분류에서 작은 수평 이동과 밝기 변화를 적용하되 상하 반전이 과제 의미를 해치지 않는지 먼저 검토한다. 증강 전후 클래스별 F1, 보정 오차와 실패 이미지를 비교해 이득과 손상을 분리한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 이 개념이 해결할 업무와 해결하지 않을 업무를 한 문장씩 적는다.
 2. **입력·출력 계약:** 자료 형식, 단위, 스키마와 오류 응답을 고정한다.
@@ -85,7 +89,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 검토자는 문서의 출처 번호를 따라 정의와 한계를 다시 확인하고, 구현 버전이 바뀔 때 같은 기준 사례와 실패 시험을 반복한다. 개선 폭이 복잡성과 잔여 위험을 상쇄하지 못하면 단순한 기준선으로 돌아간다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - 선택 근거와 제외한 대안을 함께 적어 나중에 결정 조건을 복원한다.
 - 입력 데이터의 기준 시점, 표본 수, 결측 처리와 권한 범위를 고정한다.
@@ -96,42 +100,46 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 데이터 증강 개념의 입력, 처리와 출력을 한 문장씩 설명할 수 있는가?
 - 관련 문서 세 개와의 차이를 실제 사례로 구분할 수 있는가?
 - 운영 기록과 실패 시험에서 반드시 남겨야 할 항목을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [데이터셋](/wiki/dataset/)
 - [학습 데이터](/wiki/training-data/)
 
-## 관련 문서
+### 관련 문서
 
 - [합성 데이터](/wiki/synthetic-data/)
 - [컴퓨터 비전](/wiki/computer-vision/)
 - [모델 평가](/wiki/evaluation/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [양자화](/wiki/quantization/)
 - [이미지 분류](/wiki/image-classification/)
 - [지식 증류](/wiki/knowledge-distillation/)
 - [합성 데이터](/wiki/synthetic-data/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [A Survey on Image Data Augmentation for Deep Learning](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0197-0) — paper
 <span id="reference-2"></span>2. [Torchvision Transforms](https://docs.pytorch.org/vision/stable/transforms.html) — documentation
 <span id="reference-3"></span>3. [Data augmentation — Wikipedia](https://en.wikipedia.org/wiki/Data_augmentation) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

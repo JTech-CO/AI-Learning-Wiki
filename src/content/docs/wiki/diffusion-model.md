@@ -1,26 +1,28 @@
 ---
 title: "확산 모델 Diffusion Model"
 description: "데이터에 노이즈를 더하고 제거하는 역과정을 학습해 샘플을 생성하는 모델이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">데이터에 노이즈를 더하고 제거하는 역과정을 학습해 샘플을 생성하는 모델이다.</p>
 
 <div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 데이터에 노이즈를 더하고 제거하는 역과정을 학습해 샘플을 생성하는 모델이다.
 
 ‘확산 모델’ 개념은 멀티모달 AI 영역에서 무엇을 계산하거나 통제하는지 설명하는 표제어다. 이름을 외우는 데서 멈추지 않고 입력, 변환 과정, 출력, 적용 조건을 분리해 보면 제품과 논문마다 다른 표현을 같은 원리 위에서 비교할 수 있다. 멀티모달 분야는 텍스트·이미지·음성처럼 형식이 다른 데이터를 표현하고 정렬·생성하는 방법을 다룬다.
 
-**개념 모델 확장**
+#### 개념 모델 확장
 
 데이터에 노이즈를 더하고 제거하는 역과정을 학습해 샘플을 생성하는 모델이다. 이 정의를 암기하는 데서 멈추지 않고 확산 모델이 전제하는 입력, 내부 표현, 변환 규칙과 관찰 가능한 출력을 각각 적는다. 상위 개념과 하위 구현을 분리하고, 정의가 성립하는 정상 사례와 성립하지 않는 반례를 한 쌍으로 구성한다. 용어가 여러 분야에서 쓰이면 공통 의미와 분야별 의미를 표로 나눠 같은 단어를 다른 계산 절차에 잘못 적용하지 않게 한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 영문 Wikipedia의 ‘Diffusion model’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
@@ -28,31 +30,33 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 확산 모델은 데이터에 잡음을 단계적으로 더하는 전방 과정과 그 잡음을 역으로 제거하는 생성 과정을 학습한다.
 
 [비전-언어 모델](/wiki/vision-language-model/) 및 [이미지 생성](/wiki/image-generation/) 개념을 먼저 이해하면 계산 위치와 역할을 구분하기 쉽다. 이 선행 관계를 기준으로 어느 단계에서 값이 만들어지고 다음 구성 요소로 어떻게 전달되는지 추적하면, 비슷한 용어를 기능 이름만으로 혼동하는 일을 줄일 수 있다.
 
-**심층 검토 — 확산 모델**
+#### 심층 검토 — 확산 모델
 
 확산 모델은 서로 다른 감각 표현과 정답 단위를 연결하므로 입력 전처리, 정렬 방식, 출력 좌표계와 평가 기준을 함께 정의해야 한다. 텍스트와 이미지의 상관관계가 실제 근거인지 데이터 편향인지 구분하기 위해 반사실적 사례와 영역별 성능을 확인한다. 개인정보, 저작권과 접근성 요구도 모델 정확도와 별개의 운영 조건으로 다룬다. 이 설명을 기존 정의와 연결해 입력, 처리, 출력, 평가와 실패 조건을 다시 확인한다. 출처마다 표제어의 범위가 다를 수 있으므로 공통된 정의와 구현별 차이를 구분하고, 수치·버전·정책처럼 변할 수 있는 내용은 기준 날짜와 원문 위치를 남긴다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘확산 모델’ 개념만 독립적으로 동작하지 않는다. [이미지 생성](/wiki/image-generation/), [음성 인식](/wiki/speech-recognition/), [음성 합성](/wiki/text-to-speech/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
 처리 흐름을 문서화할 때는 입력 형식, 파라미터와 기본값, 실패 조건, 출력 스키마, 관측 가능한 지표를 함께 적는다. 이렇게 해야 같은 이름을 쓰는 서로 다른 라이브러리와 서비스의 동작 차이를 재현 가능한 방식으로 비교할 수 있다.
 
-**구현·측정 설계**
+#### 구현·측정 설계
 
 확산 모델의 구현을 비교할 때는 입력 스키마와 자료형, 중간 산출물, 기본값, 오류 처리, 버전과 실행 환경을 고정한다. 결과 품질은 하나의 평균값으로 끝내지 않고 하위 집단과 경계 사례, 지연시간, 메모리와 비용을 함께 기록한다. 작은 기준 사례를 손으로 계산하거나 독립 구현과 대조해 인터페이스가 맞지만 의미가 다른 오류를 찾는다. 구성 변경 전후에는 같은 데이터와 평가 코드를 사용하고 차이가 생긴 최초 단계를 추적한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 문서 이해, 이미지 질의응답, 음성 인터페이스와 콘텐츠 생성에 사용한다. ‘확산 모델’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -60,19 +64,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 반복 샘플링 비용이 크고 학습 데이터의 편향·저작권 문제가 출력에 반영될 수 있다.
 
 모달리티별 오류와 권리·사칭·접근성 위험을 따로 평가한다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.
 
-**반례·경계 사례**
+#### 반례·경계 사례
 
 확산 모델이 잘 작동하는 조건만 나열하면 실제 적용 범위를 판단할 수 없다. 데이터가 부족하거나 분포가 달라지는 경우, 값의 단위와 차원이 맞지 않는 경우, 권한·네트워크·자원이 제한되는 경우와 의도적으로 조작된 입력을 별도 시험한다. 실패가 탐지되지 않은 채 정상 출력처럼 보이는 경우를 우선 찾아 경고 지표와 중단선을 정한다. 알려진 한계를 우회하는 임시 조치와 근본적인 개선을 구분하고 잔여 위험의 책임자를 명시한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [이미지 생성](/wiki/image-generation/): 텍스트나 다른 조건을 바탕으로 새로운 이미지를 합성하는 생성 과제다.
 - [음성 인식](/wiki/speech-recognition/): 음성 신호를 텍스트나 언어 단위로 변환하는 기술이다.
@@ -80,7 +84,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 텍스트와 이미지·음성 각각의 입력 품질을 따로 바꿔 보면서 어느 모달리티가 결과에 기여했는지 비교한다. ‘확산 모델’을 적용하는 경우에는 확산 모델은 데이터에 잡음을 단계적으로 더하는 전방 과정과 그 잡음을 역으로 제거하는 생성 과정을 학습한다.
 
@@ -88,7 +92,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘확산 모델’이 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [비전-언어 모델](/wiki/vision-language-model/), [이미지 생성](/wiki/image-generation/)의 정의와 입력 조건을 먼저 확인한다.
@@ -98,13 +102,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 6. **판단 근거 보존:** 성공 사례만 남기지 말고 실패 입력과 원인 가설, 수정 전후 수치를 함께 저장한다. 그래야 담당자가 바뀌거나 모델이 교체되어도 ‘확산 모델’에 대한 선택을 다시 검증할 수 있다.
 7. **재검토 조건 지정:** 데이터 분포, 모델 버전, 비용 구조 또는 정책이 바뀌면 이전 결론을 그대로 재사용하지 않고 같은 기준으로 다시 평가한다.
 
-**출처·재현 점검**
+#### 출처·재현 점검
 
 - 확산 모델의 정의를 외부 백과와 대조하되 핵심 작동 주장은 논문·표준·공식 문서에서 확인한다.
 - 데이터, 모델, 코드와 도구 버전을 고정하고 정상·경계·실패 사례를 같은 조건에서 반복한다.
 - 알려진 한계와 잔여 위험, 사람이 검토해야 하는 조건, 다음 검토 날짜를 기록한다.
 
-**검증 기록 설계**
+#### 검증 기록 설계
 
 1. 확산 모델을 선택한 이유와 제외한 대안을 같은 평가 기준으로 적는다.
 2. 데이터 기준 시점, 표본 구성, 전처리와 접근 권한을 고정한다.
@@ -117,36 +121,40 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [비전-언어 모델](/wiki/vision-language-model/), [이미지 생성](/wiki/image-generation/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [비전-언어 모델](/wiki/vision-language-model/)
 - [이미지 생성](/wiki/image-generation/)
 
-## 관련 문서
+### 관련 문서
 
 - [이미지 생성](/wiki/image-generation/)
 - [음성 인식](/wiki/speech-recognition/)
 - [음성 합성](/wiki/text-to-speech/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [비전-언어 모델](/wiki/vision-language-model/)
 - [음성 합성](/wiki/text-to-speech/)
 - [이미지 생성](/wiki/image-generation/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [멀티모달 AI](/course/multimodal-ai/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
 <span id="reference-2"></span>2. [Diffusion model — Wikipedia](https://en.wikipedia.org/wiki/Diffusion_model) — encyclopedia
@@ -155,6 +163,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 <span id="reference-5"></span>5. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
 <span id="reference-6"></span>6. [확산 모델 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%99%95%EC%82%B0_%EB%AA%A8%EB%8D%B8) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 음성 인식](/wiki/speech-recognition/)

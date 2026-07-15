@@ -1,14 +1,16 @@
 ---
 title: "체크포인트 Checkpoint"
 description: "특정 학습 시점의 모델 가중치와 최적화 상태를 저장한 파일 집합이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">특정 학습 시점의 모델 가중치와 최적화 상태를 저장한 파일 집합이다.</p>
 
 <div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 특정 학습 시점의 모델 가중치와 최적화 상태를 저장한 파일 집합이다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 영문 Wikipedia의 ‘Checkpointing’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 체크포인트는 특정 학습 시점의 가중치, 옵티마이저 상태, 스케줄러, 난수 상태를 저장해 중단된 학습을 재개하거나 모델을 비교하게 한다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘체크포인트’ 개념만 독립적으로 동작하지 않는다. [합성 데이터](/wiki/synthetic-data/), [AI 정렬](/wiki/alignment/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 사전학습, 미세조정, 선호 최적화, 경량화 방법을 선택하고 실험을 재현하는 데 사용한다. ‘체크포인트’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 가중치만 저장한 파일과 완전 재개 가능한 체크포인트를 구분하고, 포맷·코드 버전·토크나이저를 함께 기록한다.
 
@@ -56,14 +60,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [합성 데이터](/wiki/synthetic-data/): 실제 수집 대신 규칙·시뮬레이션·생성 모델로 만든 데이터다.
 - [AI 정렬](/wiki/alignment/): 모델의 행동이 사람의 의도·가치·안전 제약과 일치하도록 만드는 연구와 과정이다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 학습 전에는 데이터 분할, 기준 모델, 손실과 평가 지표를 고정하고 각 실행의 코드·데이터·체크포인트 버전을 연결한다. ‘체크포인트’를 적용하는 경우에는 체크포인트는 특정 학습 시점의 가중치, 옵티마이저 상태, 스케줄러, 난수 상태를 저장해 중단된 학습을 재개하거나 모델을 비교하게 한다.
 
@@ -71,7 +75,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘체크포인트’가 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [모델](/wiki/model/)과 [최적화](/wiki/optimization/)의 상태 항목을 먼저 확인한다.
@@ -83,41 +87,45 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [데이터 증강](/wiki/data-augmentation/), [합성 데이터](/wiki/synthetic-data/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [모델](/wiki/model/)
 - [최적화](/wiki/optimization/)
 
-## 관련 문서
+### 관련 문서
 
 - [합성 데이터](/wiki/synthetic-data/)
 - [AI 정렬](/wiki/alignment/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [가중치](/wiki/weight/)
 - [모델 레지스트리](/wiki/model-registry/)
 - [모델 버전](/wiki/model-version/)
 - [AI 정렬](/wiki/alignment/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
 <span id="reference-2"></span>2. [Checkpointing — Wikipedia](https://en.wikipedia.org/wiki/Checkpointing) — encyclopedia
 <span id="reference-3"></span>3. [PyTorch: Saving and Loading Models](https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html) — documentation
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

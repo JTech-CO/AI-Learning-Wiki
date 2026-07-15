@@ -1,7 +1,7 @@
 ---
 title: "신경망 층 Neural Network Layer"
 description: "입력 표현을 정해진 연산과 학습 파라미터로 변환해 다음 표현으로 전달하는 신경망의 구성 단위다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">Layer · 레이어</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 입력 표현을 정해진 연산과 학습 파라미터로 변환해 다음 표현으로 전달하는 신경망의 구성 단위다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 완전연결·합성곱·정규화·활성화·어텐션 층의 공통 인터페이스를 다룬다. 프레임워크의 모듈 객체와 수학적 변환, 사람이 붙인 논리적 경계가 항상 일치하지는 않음을 구분한다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 층은 텐서 입력을 받아 순전파 함수를 적용하고 출력 텐서를 만든다. 학습 가능한 파라미터가 있으면 역전파가 손실에 대한 기울기를 계산해 최적화기가 값을 갱신한다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 층에는 입력·출력 shape, 파라미터와 버퍼, 학습 모드와 평가 모드, 하위 모듈이 포함될 수 있다. 순차 모델에서는 앞 층의 출력이 다음 층의 입력이 되지만 잔차 연결이나 분기 구조에서는 그래프로 연결된다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 데이터 종류와 필요한 귀납 편향에 따라 합성곱, 순환, 어텐션, 정규화 층을 조합한다. 각 층의 출력 shape와 파라미터 수를 추적하면 구조 오류와 메모리 병목을 찾기 쉽다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 층의 이름만으로 실제 계산을 완전히 알 수 없으며 라이브러리별 기본값과 텐서 축 순서가 다를 수 있다. 깊은 구조는 표현력을 늘리지만 기울기, 메모리, 지연 문제도 키운다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [인공 뉴런](/wiki/neuron/): 뉴런은 가중합과 활성화를 설명하는 계산 단위이고 층은 여러 연산과 파라미터를 묶은 구조적 단위다.
 - [활성화 함수](/wiki/activation-function/): 활성화 함수는 비선형 변환이며 독립 층으로 구현되거나 다른 층 내부에 포함될 수 있다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 입력 특성 8개를 받는 분류기는 Linear(8,16), ReLU, Linear(16,3)으로 구성할 수 있다. 첫 선형 층은 16차원 표현을 만들고 활성화가 비선형성을 추가하며 마지막 층이 세 클래스 로짓을 낸다. 배치 축은 유지되고 특성 축만 8→16→3으로 바뀌는지 확인한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 신경망 층이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 신경망 층을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,24 +98,26 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 신경망 층의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [활성화 함수](/wiki/activation-function/)와 [가중치](/wiki/weight/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [신경망](/wiki/neural-network/)
 - [인공 뉴런](/wiki/neuron/)
 
-## 관련 문서
+### 관련 문서
 
 - [활성화 함수](/wiki/activation-function/)
 - [가중치](/wiki/weight/)
 - [편향 항](/wiki/bias/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [가중치](/wiki/weight/)
 - [가중치 감쇠](/wiki/weight-decay/)
@@ -212,18 +218,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
 <span id="reference-2"></span>2. [PyTorch Sequential](https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html) — documentation
 <span id="reference-3"></span>3. [Layer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Layer_%28deep_learning%29) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

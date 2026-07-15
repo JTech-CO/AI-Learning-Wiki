@@ -1,7 +1,7 @@
 ---
 title: "소프트맥스 Softmax"
 description: "여러 실수 점수를 지수화하고 합으로 나눠 합이 1인 비율 벡터로 바꾸는 함수다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">Softmax Function · 소프트맥스 함수</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 여러 실수 점수를 지수화하고 합으로 나눠 합이 1인 비율 벡터로 바꾸는 함수다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 함수의 수식, 수치 안정성, 온도 조정, 교차 엔트로피와의 연결을 다룬다. 모델의 확률 보정이나 샘플링 정책 전체와 소프트맥스 연산 자체를 구분한다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 입력 x_i에 대해 exp(x_i)를 모든 입력 지수의 합으로 나눈다. 같은 상수를 모든 로짓에서 빼도 결과가 같으므로 구현은 보통 최댓값을 먼저 빼 지수 오버플로를 줄인다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 입력 로짓, 정규화할 차원, 선택적 온도가 핵심 요소다. 분류에서는 클래스 축에 적용하고 언어 생성에서는 어휘 축에 적용한 뒤 디코딩 규칙이 실제 토큰을 선택한다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 다중 클래스 분류의 출력, 어텐션 가중치, 다음 토큰 분포와 정책 선택에 사용한다. 비교 대상이 상호 배타적인지와 어떤 축을 정규화하는지 먼저 확인해야 한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 큰 로짓 차이는 매우 뾰족한 분포를 만들고 작은 차이는 평평한 분포를 만든다. 높은 출력값은 학습 데이터 밖에서도 나타날 수 있으므로 신뢰도와 동일시하면 안 된다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [로짓](/wiki/logit/): 로짓은 정규화 전 점수이고 소프트맥스는 여러 로짓을 상대적 비율로 변환한다.
 - [생성 온도](/wiki/temperature/): 온도는 로짓의 상대적 간격을 조정하고 소프트맥스 분포의 뾰족함을 바꾼다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 로짓 [2, 1, 0]에서 최댓값 2를 빼 [0, -1, -2]로 만든 뒤 지수화하고 합으로 나눈다. 결과는 대략 [0.665, 0.245, 0.090]이며 순서는 유지되지만 차이가 비선형적으로 강조된다. 온도를 높이면 더 평평해지고 낮추면 첫 항목에 더 집중된다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 소프트맥스이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 소프트맥스을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,24 +98,26 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 소프트맥스의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [생성 온도](/wiki/temperature/)와 [Top-k 샘플링](/wiki/top-k-sampling/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [로짓](/wiki/logit/)
 - [확률](/wiki/probability/)
 
-## 관련 문서
+### 관련 문서
 
 - [생성 온도](/wiki/temperature/)
 - [Top-k 샘플링](/wiki/top-k-sampling/)
 - [다음 토큰 예측](/wiki/next-token-prediction/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [다음 토큰 예측](/wiki/next-token-prediction/)
 - [로짓](/wiki/logit/)
@@ -127,18 +133,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [LLM 내부 구조](/course/llm-internals/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deep Learning Book: Numerical Computation and Output Units](https://www.deeplearningbook.org/contents/numerical.html) — book
 <span id="reference-2"></span>2. [PyTorch Softmax](https://docs.pytorch.org/docs/stable/generated/torch.nn.Softmax.html) — documentation
 <span id="reference-3"></span>3. [Softmax function — Wikipedia](https://en.wikipedia.org/wiki/Softmax_function) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **LLM 내부 구조:** [다음 문서 — 생성 온도](/wiki/temperature/)

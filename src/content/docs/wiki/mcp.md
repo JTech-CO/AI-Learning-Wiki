@@ -1,7 +1,7 @@
 ---
 title: "모델 컨텍스트 프로토콜 Model Context Protocol"
 description: "AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으로 연결하도록 정의한 프로토콜이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">MCP</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으로 연결하도록 정의한 프로토콜이다.
 
@@ -18,7 +20,7 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 영문 Wikipedia의 ‘Model Context Protocol’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
@@ -26,7 +28,7 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 모델 컨텍스트 프로토콜은 AI 애플리케이션이 도구·리소스·프롬프트를 표준 메시지로 발견하고 호출하도록 클라이언트와 서버 경계를 정의한다.
 
@@ -34,7 +36,7 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘모델 컨텍스트 프로토콜’ 개념만 독립적으로 동작하지 않는다. [인간 참여형 제어](/wiki/human-in-the-loop/), [웹훅](/wiki/webhook/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
@@ -42,7 +44,9 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 조사, 코딩, 업무 자동화, 감시와 승인 기반 실행에 사용한다. ‘모델 컨텍스트 프로토콜’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -50,7 +54,7 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 프로토콜 연결이 곧 신뢰를 뜻하지 않으므로 서버 권한, 입력 스키마, 사용자 승인, 비밀정보 노출을 통제한다.
 
@@ -58,14 +62,14 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [인간 참여형 제어](/wiki/human-in-the-loop/): 중요한 판단이나 실행 단계에 사람의 검토·승인·교정을 포함하는 설계다.
 - [웹훅](/wiki/webhook/): 특정 이벤트가 발생했을 때 다른 시스템의 URL로 데이터를 보내는 자동 통지 방식이다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 하나의 목표를 관찰, 판단, 도구 실행, 결과 확인 단계로 나눈 추적 기록을 남기면 잘못된 행동의 원인을 찾기 쉽다. ‘모델 컨텍스트 프로토콜’을 적용하는 경우에는 모델 컨텍스트 프로토콜은 AI 애플리케이션이 도구·리소스·프롬프트를 표준 메시지로 발견하고 호출하도록 클라이언트와 서버 경계를 정의한다.
 
@@ -73,7 +77,7 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘모델 컨텍스트 프로토콜’이 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [멀티 에이전트 시스템](/wiki/multi-agent-system/), [인간 참여형 제어](/wiki/human-in-the-loop/)의 정의와 입력 조건을 먼저 확인한다.
@@ -85,40 +89,44 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/), [인간 참여형 제어](/wiki/human-in-the-loop/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [인간 참여형 제어](/wiki/human-in-the-loop/)
 
-## 관련 문서
+### 관련 문서
 
 - [인간 참여형 제어](/wiki/human-in-the-loop/)
 - [웹훅](/wiki/webhook/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [웹훅](/wiki/webhook/)
 - [인간 참여형 제어](/wiki/human-in-the-loop/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [AI 에이전트 시스템](/course/agent-systems/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
 <span id="reference-2"></span>2. [Model Context Protocol — Wikipedia](https://en.wikipedia.org/wiki/Model_Context_Protocol) — encyclopedia
 <span id="reference-3"></span>3. [Model Context Protocol Specification 2025-11-25](https://modelcontextprotocol.io/specification/2025-11-25) — standard
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **AI 에이전트 시스템:** [다음 문서 — 인간 참여형 제어](/wiki/human-in-the-loop/)

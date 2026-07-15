@@ -1,7 +1,7 @@
 ---
 title: "정밀도와 재현율 Precision and Recall"
 description: "정밀도는 양성으로 예측한 항목의 적중 비율이고 재현율은 실제 양성 가운데 찾아낸 비율이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">Precision · Recall · 정밀도 · 재현율</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [평가·관측성·벤치마크](/category/evaluation/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 정밀도는 양성으로 예측한 항목의 적중 비율이고 재현율은 실제 양성 가운데 찾아낸 비율이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 이진 분류의 정의를 출발점으로 다중 클래스·다중 레이블에서의 평균 방식과 검색·생성 평가에서의 해석까지 다룬다. 지표 이름만 제시하지 않고 양성 클래스, 임계값, 평균 방식을 함께 기록해야 한다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 정밀도는 TP/(TP+FP), 재현율은 TP/(TP+FN)으로 계산한다. 모델 점수의 판정 임계값을 바꾸면 양성 예측 수가 달라져 두 값이 함께 변하므로 정밀도-재현율 곡선으로 여러 임계값을 비교한다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 평가에는 정답 레이블, 모델 점수 또는 예측, 양성 클래스 정의, 임계값이 필요하다. 다중 클래스에서는 클래스별 값을 계산한 뒤 macro·micro·weighted 방식 중 목적에 맞는 집계를 선택한다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 스팸 차단, 질병 선별, 검색 결과, 안전 위반 탐지처럼 거짓 양성과 거짓 음성의 비용이 다른 문제에 사용한다. 운영 임계값은 단일 최고 점수가 아니라 허용 가능한 실패 비용과 처리 용량을 기준으로 정한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 데이터의 양성 비율, 레이블 품질, 표본 추출 방식이 바뀌면 같은 모델의 값도 달라진다. 특히 테스트셋에서 임계값을 반복 조정하면 평가 결과가 낙관적으로 편향된다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [정확도](/wiki/accuracy/): 정확도는 전체 예측 중 맞은 비율이라 클래스 불균형에서 소수 양성의 실패를 가릴 수 있다.
 - [평가 지표](/wiki/metric/): 평가 지표는 측정값의 상위 개념이고 정밀도와 재현율은 분류 오류를 보는 구체적 지표다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 실제 위험 문서가 20개인 100개 자료에서 모델이 10개를 위험으로 표시했고 그중 8개가 맞았다면 정밀도는 8/10=0.8이다. 실제 위험 20개 중 8개를 찾았으므로 재현율은 8/20=0.4다. 이 결과는 경보의 신뢰도는 높지만 많은 위험을 놓친다는 뜻이다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 정밀도와 재현율이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 정밀도와 재현율을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,24 +98,26 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 정밀도와 재현율의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [정확도](/wiki/accuracy/)와 [관측성](/wiki/observability/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [평가 지표](/wiki/metric/)
 - [정확도](/wiki/accuracy/)
 
-## 관련 문서
+### 관련 문서
 
 - [정확도](/wiki/accuracy/)
 - [관측성](/wiki/observability/)
 - [LLM 심사자](/wiki/llm-as-a-judge/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [개별 LLM 심사](/wiki/pointwise-llm-judge/)
 - [검색 평가](/wiki/retrieval-evaluation/)
@@ -216,18 +222,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [신뢰할 수 있는 AI](/course/responsible-ai/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
 <span id="reference-2"></span>2. [Scikit-learn: Metrics and scoring](https://scikit-learn.org/stable/modules/model_evaluation.html) — documentation
 <span id="reference-3"></span>3. [Precision and recall — Wikipedia](https://en.wikipedia.org/wiki/Precision_and_recall) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — LLM 심사자](/wiki/llm-as-a-judge/)

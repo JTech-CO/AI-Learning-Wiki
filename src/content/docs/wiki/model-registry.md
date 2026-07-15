@@ -1,7 +1,7 @@
 ---
 title: "모델 레지스트리 Model Registry"
 description: "학습된 모델 버전과 메타데이터·검증 상태·배포 참조를 중앙에서 추적하고 관리하는 수명주기 시스템이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">모델 등록소</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 학습된 모델 버전과 메타데이터·검증 상태·배포 참조를 중앙에서 추적하고 관리하는 수명주기 시스템이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 등록 모델, 버전, 별칭, 태그, 계보, 승인과 배포 연계를 다룬다. 공개 모델을 탐색·공유하는 모델 허브와 조직 내부 수명주기를 통제하는 레지스트리의 역할을 구분한다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 학습 실행이 모델 산출물과 서명·메트릭·데이터 참조를 기록하고 레지스트리에 새 버전으로 등록한다. 검증 절차가 결과를 승인하면 운영 코드는 고정 버전이나 관리되는 별칭을 통해 모델을 불러온다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 모델 이름, 불변 버전, 산출물 위치, 입력·출력 서명, 실행·데이터 계보, 평가 결과, 태그·별칭, 승인 이력과 접근 정책이 핵심 요소다. 저장소와 메타데이터 데이터베이스의 일관성을 유지해야 한다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 실험에서 운영으로의 승격, 롤백, 여러 환경의 모델 추적, 감사와 협업, 지속 학습 파이프라인에 사용한다. 배포 시스템이 가리키는 모델을 해시나 불변 버전으로 재현할 수 있어야 한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 등록됐다는 사실은 모델의 품질·안전·라이선스를 보증하지 않는다. 별칭이 새 버전으로 이동하면 같은 이름이 다른 동작을 가리킬 수 있으므로 변경 관리와 배포 기록이 필요하다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [모델 허브](/wiki/model-hub/): 모델 허브는 발견·공유·협업 기능이 중심이고 레지스트리는 조직의 버전·승인·배포 계보 통제가 중심이다.
 - [체크포인트](/wiki/checkpoint/): 체크포인트는 학습 시점의 파일 집합이고 레지스트리는 선택된 산출물과 메타데이터의 수명주기를 관리한다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 사기 탐지 모델의 학습 실행이 모델 파일, 입력 스키마, 실제 시험셋 지표를 버전 12로 등록한다. 검토자는 기준선과 하위 집단 오류를 확인한 뒤 champion 별칭을 버전 12로 이동한다. 문제가 생기면 이전 버전 11로 별칭을 되돌리고 어떤 요청이 어느 버전을 사용했는지 로그로 확인한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 모델 레지스트리이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 모델 레지스트리을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,24 +98,26 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 모델 레지스트리의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [모델 라이선스](/wiki/model-license/)와 [체크포인트](/wiki/checkpoint/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [모델](/wiki/model/)
 - [모델 허브](/wiki/model-hub/)
 
-## 관련 문서
+### 관련 문서
 
 - [모델 라이선스](/wiki/model-license/)
 - [체크포인트](/wiki/checkpoint/)
 - [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [가속기 메모리 계층](/wiki/accelerator-memory-hierarchy/)
 - [가속기 인터커넥트](/wiki/accelerator-interconnect/)
@@ -216,18 +222,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [TFX: A TensorFlow-Based Production-Scale Machine Learning Platform](https://research.google/pubs/tfx-a-tensorflow-based-production-scale-machine-learning-platform/) — paper
 <span id="reference-2"></span>2. [MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) — documentation
 <span id="reference-3"></span>3. [MLOps — Wikipedia](https://en.wikipedia.org/wiki/MLOps) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

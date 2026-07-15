@@ -1,14 +1,16 @@
 ---
 title: "인공 뉴런 Artificial Neuron"
 description: "입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다.</p>
 
 <div class="wiki-document-meta">분류: [신경망과 딥러닝](/category/neural/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 영문 Wikipedia의 ‘Artificial neuron’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 인공 뉴런은 입력값과 가중치의 곱을 합하고 편향을 더한 뒤 활성화 함수를 적용해 하나의 출력을 만든다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘인공 뉴런’ 개념만 독립적으로 동작하지 않는다. [신경망](/wiki/neural-network/), [신경망 층](/wiki/layer/), [가중치](/wiki/weight/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 이미지·음성·텍스트 모델의 공통 계산 블록과 학습 안정성을 설계할 때 사용한다. ‘인공 뉴런’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 생물학적 뉴런의 매우 단순화된 수학 모델이며 생물학적 동작과 일대일로 대응하지 않는다.
 
@@ -56,7 +60,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [신경망](/wiki/neural-network/): 연결된 계산 단위와 가중치를 층으로 쌓아 복잡한 함수를 학습하는 모델이다.
 - [신경망 층](/wiki/layer/): 같은 단계에서 입력을 변환하는 여러 계산 단위의 묶음이다.
@@ -64,7 +68,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 신경망 블록을 검증할 때는 입력 shape, 출력 shape, 학습 가능한 파라미터 수, 기울기 흐름을 차례로 확인한다. ‘인공 뉴런’을 적용하는 경우에는 인공 뉴런은 입력값과 가중치의 곱을 합하고 편향을 더한 뒤 활성화 함수를 적용해 하나의 출력을 만든다.
 
@@ -72,7 +76,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘인공 뉴런’이 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [신경망](/wiki/neural-network/)의 정의와 입력 조건을 먼저 확인한다.
@@ -84,40 +88,44 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [신경망](/wiki/neural-network/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [벡터](/wiki/vector/)
 - [활성화 함수](/wiki/activation-function/)
 
-## 관련 문서
+### 관련 문서
 
 - [신경망](/wiki/neural-network/)
 - [신경망 층](/wiki/layer/)
 - [가중치](/wiki/weight/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [신경망](/wiki/neural-network/)
 - [신경망 층](/wiki/layer/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
 <span id="reference-2"></span>2. [Artificial neuron — Wikipedia](https://en.wikipedia.org/wiki/Artificial_neuron) — encyclopedia
 <span id="reference-3"></span>3. [PyTorch Linear layer](https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html) — documentation
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

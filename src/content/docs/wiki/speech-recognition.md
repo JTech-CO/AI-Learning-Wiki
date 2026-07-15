@@ -1,14 +1,16 @@
 ---
 title: "음성 인식 Automatic Speech Recognition"
 description: "음성 신호를 텍스트나 언어 단위로 변환하는 기술이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">음성 신호를 텍스트나 언어 단위로 변환하는 기술이다.</p>
 
 <div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 음성 신호를 텍스트나 언어 단위로 변환하는 기술이다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 직접 대응하는 외부 백과 표제어가 뚜렷하지 않은 신생·세부 용어다. 따라서 아래 1차 자료와 상위 개념 문서를 중심으로 범위를 정하고, 제품별 용어는 일반 원리와 분리했다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 음성 인식은 음향 파형을 특징이나 토큰으로 바꾸고 언어적 문맥을 결합해 발화 내용을 텍스트로 전사한다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘음성 인식’ 개념만 독립적으로 동작하지 않는다. [멀티모달 모델](/wiki/multimodal-model/), [음성 합성](/wiki/text-to-speech/), [언어 모델](/wiki/language-model/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 회의·방송의 자동 전사, 자막, 음성 명령, 콜센터 기록, 접근성 지원과 음성 검색에 사용한다. ‘음성 인식’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 억양·소음·겹말·전문 용어·화자 집단에 따른 오류율 차이를 실제 환경에서 측정한다.
 
@@ -56,7 +60,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [음성 합성](/wiki/text-to-speech/): 텍스트를 음성 파형으로 변환하므로 음성을 텍스트로 바꾸는 음성 인식과 입출력 방향이 반대다.
 - [멀티모달 모델](/wiki/multimodal-model/): 텍스트·이미지·음성처럼 둘 이상의 형식을 함께 처리하는 모델을 뜻하며, 음성 인식은 음성 입력을 다루는 독립 과제로도 구현된다.
@@ -64,7 +68,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 같은 발화를 조용한 환경과 실제 소음 환경에서 각각 전사하고 단어 오류율과 고유명사 오류를 비교하면 배포 조건에 따른 품질 차이를 확인할 수 있다. ‘음성 인식’을 적용하는 경우에는 음성 인식은 음향 파형을 특징이나 토큰으로 바꾸고 언어적 문맥을 결합해 발화 내용을 텍스트로 전사한다.
 
@@ -72,7 +76,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘음성 인식’이 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [멀티모달 모델](/wiki/multimodal-model/), [언어 모델](/wiki/language-model/)의 정의와 입력 조건을 먼저 확인한다.
@@ -84,42 +88,46 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [멀티모달 모델](/wiki/multimodal-model/), [언어 모델](/wiki/language-model/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [멀티모달 모델](/wiki/multimodal-model/)
 - [언어 모델](/wiki/language-model/)
 
-## 관련 문서
+### 관련 문서
 
 - [음성 합성](/wiki/text-to-speech/)
 - [멀티모달 모델](/wiki/multimodal-model/)
 - [언어 모델](/wiki/language-model/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [광학 문자 인식](/wiki/ocr/)
 - [음성 합성](/wiki/text-to-speech/)
 - [이미지 생성](/wiki/image-generation/)
 - [확산 모델](/wiki/diffusion-model/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [멀티모달 AI](/course/multimodal-ai/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deep Speech: Scaling up end-to-end speech recognition](https://arxiv.org/abs/1412.5567) — paper
 <span id="reference-2"></span>2. [Speech recognition — Wikipedia](https://en.wikipedia.org/wiki/Speech_recognition) — encyclopedia
 <span id="reference-3"></span>3. [Google Cloud Speech-to-Text documentation](https://cloud.google.com/speech-to-text/docs) — documentation
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 음성 합성](/wiki/text-to-speech/)

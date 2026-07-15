@@ -1,14 +1,16 @@
 ---
 title: "커널 융합 Kernel Fusion"
 description: "커널 융합은 장치에서 따로 실행될 여러 계산 커널을 단일 커널로 합쳐 전역 메모리 왕복과 실행 시작 비용을 줄이는 기법이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">커널 융합은 장치에서 따로 실행될 여러 계산 커널을 단일 커널로 합쳐 전역 메모리 왕복과 실행 시작 비용을 줄이는 기법이다.</p>
 
 <div class="wiki-document-meta">분류: [추론·서빙·최적화](/category/inference/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 커널 융합은 장치에서 따로 실행될 여러 계산 커널을 단일 커널로 합쳐 전역 메모리 왕복과 실행 시작 비용을 줄이는 기법이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 ‘커널 융합(Kernel Fusion)’의 설명 범위에는 역사적 배경이나 이름의 유래뿐 아니라 현재 시스템에서의 계산 절차와 운영 경계가 포함된다. 추론 설정은 모델 확률분포를 실제 출력으로 바꾸는 디코딩 정책과 이를 서비스하는 시스템을 구분한다. 생성 품질, 지연시간, 처리량과 재현성은 서로 다른 축이다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 융합 커널이 중간 값을 레지스터나 공유 메모리에 유지하며 여러 연산을 한 번에 수행하되, 레지스터 압력과 병렬 점유율을 고려해 융합 경계를 정한다.
 
@@ -36,7 +38,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 ‘커널 융합(Kernel Fusion)’을 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 매 토큰 단계에서 로짓을 조정하고 허용 후보를 만든 뒤 선택 또는 샘플링한다. 서비스 계층은 요청을 배치하고 캐시와 메모리를 배분하며 중단과 스트리밍을 처리한다.
 
@@ -44,19 +46,21 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 ‘커널 융합(Kernel Fusion)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 구조화된 답변 서비스에서 허용 스키마, 중지 조건과 샘플링 설정을 고정하고 단일 요청 지연시간과 동시 처리량을 별도로 측정한다.
 
 고정 시드와 다양한 시드, 짧은·긴 입력, 경계 매개변수와 동시 요청을 시험한다. 텍스트 품질 지표와 시스템 지표를 같은 표에 섞지 않고 함께 보고한다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다.
 
-**활용 분야와 선택 기준 심화 점검 1**
+#### 활용 분야와 선택 기준 심화 점검 1
 
 ‘커널 융합’의 활용 분야와 선택 기준를 검토하는 1번째 기록에서는 분야 inference, 세부 영역 quantization-compilation, 우선순위 67라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 반복 억제와 제약을 지나치게 적용하면 사실에 필요한 용어나 유효한 출력 경로까지 제거할 수 있다. 서비스 최적화는 요청 간 데이터 격리와 공정성을 해치지 않아야 한다.
 
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 ‘커널 융합(Kernel Fusion)’은 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. 커널 융합은 장치에서 따로 실행될 여러 계산 커널을 단일 커널로 합쳐 전역 메모리 왕복과 실행 시작 비용을 줄이는 기법이다.
 
@@ -79,7 +83,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 구조화된 답변 서비스에서 허용 스키마, 중지 조건과 샘플링 설정을 고정하고 단일 요청 지연시간과 동시 처리량을 별도로 측정한다.
 
@@ -89,7 +93,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **문제와 경계 정의:** ‘커널 융합(Kernel Fusion)’이 해결할 문제와 해결하지 않을 문제를 각각 두 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 크기, 권한, 오류 상태와 완료 조건을 고정한다.
@@ -104,33 +108,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 커널 융합의 정의를 입력·처리·출력으로 설명할 수 있는가?
 - 선행 개념과 인접 개념의 차이를 실제 사례로 구분할 수 있는가?
 - 적용 전 확인할 실패 조건, 지표와 사람 검토 지점을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [추론](/wiki/inference/)
 
-## 관련 문서
+### 관련 문서
 
 - [생성 온도](/wiki/temperature/)
 - [Top-p 샘플링](/wiki/top-p-sampling/)
 - [그리디 디코딩](/wiki/greedy-decoding/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [The Deep Learning Compiler: A Comprehensive Survey](https://arxiv.org/abs/2002.03794) — paper
 <span id="reference-2"></span>2. [The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
@@ -141,6 +149,6 @@ _포함된 코스가 없습니다._
 <span id="reference-7"></span>7. [vLLM Documentation](https://docs.vllm.ai/en/stable/) — documentation
 <span id="reference-8"></span>8. [Natural language generation — Wikipedia](https://en.wikipedia.org/wiki/Natural_language_generation) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

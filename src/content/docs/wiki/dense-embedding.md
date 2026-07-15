@@ -1,7 +1,7 @@
 ---
 title: "밀집 임베딩 Dense Embedding"
 description: "대부분의 차원이 연속값을 갖는 고정 길이 벡터로 질의와 문서의 의미를 표현해 벡터 유사도로 검색하는 표현 방식이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">Dense Vector Embedding · 밀집 벡터 표현</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 대부분의 차원이 연속값을 갖는 고정 길이 벡터로 질의와 문서의 의미를 표현해 벡터 유사도로 검색하는 표현 방식이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 단일 인코더, 쌍대 인코더, 문장 임베딩과 문서 임베딩이 포함된다. 크로스 인코더는 질의와 문서를 함께 입력해 점수를 내므로 일반적으로 밀집 임베딩 색인과는 다른 재순위화 단계로 본다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 쌍대 인코더는 관련 질의-문서 벡터를 가깝게, 부정 예시를 멀게 만드는 대조 학습을 사용한다. 운영 시 문서 벡터를 미리 계산해 색인하고 질의 벡터의 근사 최근접 이웃을 찾는다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 임베딩 모델과 버전, 벡터 차원, 정규화, 유사도 함수, 문서 분할 규칙, 색인 알고리즘이 하나의 호환성 계약이다. 모델을 교체하면 기존 벡터와 공간이 달라질 수 있어 전체 재색인이 필요하다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 의미 검색, RAG 후보 검색, 중복 탐지, 추천과 군집화에 사용된다. 키워드가 중요한 전문 검색에서는 BM25 같은 희소 검색과 결합하고 재순위화로 정밀도를 보완한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 도메인 이동, 희귀 고유명사, 숫자와 부정 표현에서 의미가 뭉개질 수 있다. 근사 색인의 속도 향상은 재현율 손실과 맞바꾸며, 벡터만 저장하면 원문 갱신과 삭제를 추적하기 어렵다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [embedding](/wiki/embedding/): 개체를 벡터로 표현하는 상위 개념이다.
 - [embedding-model](/wiki/embedding-model/): 임베딩을 생성하도록 학습된 모델과 전처리 계약을 뜻한다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 질문과 문단을 각각 768차원 벡터로 만들고 코사인 유사도가 큰 문단 20개를 찾은 뒤 재순위화한다. 평가에서는 정답 문서의 Recall@k, 지연시간, 색인 크기와 실패 질의 유형을 함께 기록한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 이 개념이 해결할 업무와 해결하지 않을 업무를 한 문장씩 적는다.
 2. **입력·출력 계약:** 자료 형식, 단위, 스키마와 오류 응답을 고정한다.
@@ -85,7 +89,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 검토자는 문서의 출처 번호를 따라 정의와 한계를 다시 확인하고, 구현 버전이 바뀔 때 같은 기준 사례와 실패 시험을 반복한다. 개선 폭이 복잡성과 잔여 위험을 상쇄하지 못하면 단순한 기준선으로 돌아간다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - 선택 근거와 제외한 대안을 함께 적어 나중에 결정 조건을 복원한다.
 - 입력 데이터의 기준 시점, 표본 수, 결측 처리와 권한 범위를 고정한다.
@@ -96,39 +100,43 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 밀집 임베딩 개념의 입력, 처리와 출력을 한 문장씩 설명할 수 있는가?
 - 관련 문서 세 개와의 차이를 실제 사례로 구분할 수 있는가?
 - 운영 기록과 실패 시험에서 반드시 남겨야 할 항목을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [임베딩](/wiki/embedding/)
 - [벡터](/wiki/vector/)
 
-## 관련 문서
+### 관련 문서
 
 - [임베딩 모델](/wiki/embedding-model/)
 - [벡터 데이터베이스](/wiki/vector-database/)
 - [검색 증강 생성](/wiki/rag/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/abs/2004.04906) — paper
 <span id="reference-2"></span>2. [Sentence Transformers: Retrieve & Re-Rank](https://www.sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html) — documentation
 <span id="reference-3"></span>3. [Semantic search — Wikipedia](https://en.wikipedia.org/wiki/Semantic_search) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

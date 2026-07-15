@@ -1,7 +1,7 @@
 ---
 title: "딥러닝 Deep Learning"
 description: "여러 처리 층을 가진 신경망이 데이터에서 단계적인 표현을 학습하도록 훈련하는 머신러닝 접근이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">DL</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [AI·머신러닝 기초](/category/foundations/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 여러 처리 층을 가진 신경망이 데이터에서 단계적인 표현을 학습하도록 훈련하는 머신러닝 접근이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 피드포워드·합성곱·순환·어텐션 계열의 공통 학습 원리를 다루며 특정 최신 모델의 성능 순위는 다루지 않는다. 표현 학습, 역전파, 최적화, 일반화라는 안정적인 개념을 중심으로 설명한다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 각 층은 입력을 가중치와 비선형 함수로 변환해 다음 표현을 만든다. 순전파로 예측과 손실을 계산한 뒤 역전파로 각 파라미터의 기울기를 구하고 최적화기가 손실을 줄이는 방향으로 값을 갱신한다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 모델은 입력 표현, 여러 은닉층, 출력층으로 구성된다. 학습 과정에는 데이터 배치, 손실 함수, 최적화기, 정규화와 검증 절차가 함께 필요하며 배포 시에는 전처리와 후처리도 동일하게 재현돼야 한다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 시각 인식, 음성 인식, 번역, 추천, 생성 모델과 과학 계산에 활용된다. 충분한 데이터와 계산량이 없는 문제에서는 더 단순한 모델이나 사전학습 모델의 전이가 더 효율적일 수 있다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 학습 데이터의 편향과 오류를 흡수하고 분포 밖 입력에서 예측이 불안정할 수 있다. 큰 모델은 많은 연산과 에너지를 요구하며 높은 벤치마크 점수가 사실성이나 안전성을 자동 보장하지 않는다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [머신러닝](/wiki/machine-learning/): 머신러닝은 데이터에서 규칙을 학습하는 더 넓은 분야이며 딥러닝은 다층 신경망을 사용하는 하위 접근이다.
 - [신경망](/wiki/neural-network/): 신경망은 계산 구조를 가리키고 딥러닝은 깊은 신경망을 데이터와 최적화로 학습하는 방법론까지 포함한다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 손글씨 분류에서는 픽셀을 입력하고 여러 층이 가장자리, 획, 숫자 형태에 유용한 표현을 학습한다. 학습에 쓰지 않은 시험 이미지에서 정확도와 클래스별 오류를 측정해야 암기와 일반화를 구분할 수 있다. 밝기나 회전이 달라진 자료도 따로 시험해 실제 환경의 분포 변화를 확인한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 딥러닝이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 딥러닝을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,24 +98,26 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 딥러닝의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [활성화 함수](/wiki/activation-function/)와 [학습 데이터](/wiki/training-data/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [머신러닝](/wiki/machine-learning/)
 - [신경망](/wiki/neural-network/)
 
-## 관련 문서
+### 관련 문서
 
 - [활성화 함수](/wiki/activation-function/)
 - [학습 데이터](/wiki/training-data/)
 - [생성형 인공지능](/wiki/generative-ai/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [가설](/wiki/hypothesis/)
 - [가설 공간](/wiki/hypothesis-space/)
@@ -211,18 +217,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [AI 기초](/course/ai-foundations/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
 <span id="reference-2"></span>2. [Deep learning](https://www.nature.com/articles/nature14539) — paper
 <span id="reference-3"></span>3. [Deep learning — Wikipedia](https://en.wikipedia.org/wiki/Deep_learning) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **AI 기초:** [다음 문서 — 생성형 인공지능](/wiki/generative-ai/)

@@ -1,14 +1,16 @@
 ---
 title: "미세조정 Fine-Tuning"
 description: "사전학습 모델을 특정 데이터와 목적에 맞게 추가 학습하는 과정이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">사전학습 모델을 특정 데이터와 목적에 맞게 추가 학습하는 과정이다.</p>
 
 <div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 사전학습 모델을 특정 데이터와 목적에 맞게 추가 학습하는 과정이다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 영문 Wikipedia의 ‘Fine-tuning (deep learning)’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 미세조정은 사전학습 모델을 더 작은 목표 데이터와 낮은 학습률로 업데이트해 특정 과제·도메인·행동 규칙에 적응시킨다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘미세조정’ 개념만 독립적으로 동작하지 않는다. [사전학습](/wiki/pretraining/), [지도 미세조정](/wiki/supervised-fine-tuning/), [지시 튜닝](/wiki/instruction-tuning/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 사전학습, 미세조정, 선호 최적화, 경량화 방법을 선택하고 실험을 재현하는 데 사용한다. ‘미세조정’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 데이터가 작거나 편향되면 과적합과 망각이 생길 수 있으며 기준 모델 대비 일반 능력과 안전성을 다시 평가한다.
 
@@ -56,7 +60,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [사전학습](/wiki/pretraining/): 대규모 데이터로 일반적인 표현과 패턴을 먼저 학습하는 단계다.
 - [지도 미세조정](/wiki/supervised-fine-tuning/): 지시와 모범 응답 쌍으로 모델이 원하는 응답 형식을 따르도록 학습하는 단계다.
@@ -64,7 +68,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 학습 전에는 데이터 분할, 기준 모델, 손실과 평가 지표를 고정하고 각 실행의 코드·데이터·체크포인트 버전을 연결한다. ‘미세조정’을 적용하는 경우에는 미세조정은 사전학습 모델을 더 작은 목표 데이터와 낮은 학습률로 업데이트해 특정 과제·도메인·행동 규칙에 적응시킨다.
 
@@ -72,7 +76,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘미세조정’이 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [사전학습](/wiki/pretraining/)의 정의와 입력 조건을 먼저 확인한다.
@@ -84,23 +88,25 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [사전학습](/wiki/pretraining/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [사전학습](/wiki/pretraining/)
 
-## 관련 문서
+### 관련 문서
 
 - [사전학습](/wiki/pretraining/)
 - [지도 미세조정](/wiki/supervised-fine-tuning/)
 - [지시 튜닝](/wiki/instruction-tuning/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [가치 함수 손실](/wiki/value-function-loss/)
 - [개인정보 보호 학습](/wiki/privacy-preserving-training/)
@@ -197,18 +203,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [모델 학습과 튜닝](/course/model-training/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
 <span id="reference-2"></span>2. [Fine-tuning (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Fine-tuning_%28deep_learning%29) — encyclopedia
 <span id="reference-3"></span>3. [Fine-tuning — Transformers documentation](https://huggingface.co/docs/transformers/training) — documentation
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **모델 학습과 튜닝:** [다음 문서 — 지도 미세조정](/wiki/supervised-fine-tuning/)

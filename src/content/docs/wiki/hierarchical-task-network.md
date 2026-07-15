@@ -1,14 +1,16 @@
 ---
 title: "계층적 과제 네트워크 Hierarchical Task Network"
 description: "계층적 작업 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">계층적 작업 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다.</p>
 
 <div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 계층적 작업 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 ‘계층적 과제 네트워크(Hierarchical Task Network)’의 설명 범위에는 역사적 배경이나 이름의 유래뿐 아니라 현재 시스템에서의 계산 절차와 운영 경계가 포함된다. 에이전트 구조를 설명할 때는 언어 모델의 추론 능력과 실행 시스템의 권한을 분리한다. 모델이 제안한 행동, 런타임이 허용한 행동, 외부 시스템에서 실제로 발생한 상태 변화는 서로 다른 기록이다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 계획기는 현재 상태에서 적용 가능한 방법을 골라 추상 작업을 하위 작업으로 바꾸고, 모든 잎 작업이 실행 가능한 연산이 될 때까지 분해와 제약 검사를 반복한다.
 
@@ -36,7 +38,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 ‘계층적 과제 네트워크(Hierarchical Task Network)’를 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 실행 경로는 입력 수신, 상태 구성, 선택, 도구 실행, 결과 관찰과 종료 판단으로 나눈다. 각 단계에 식별자와 시간·비용 예산을 붙이면 무한 반복과 중복 부작용을 탐지할 수 있다.
 
@@ -44,7 +46,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 ‘계층적 과제 네트워크(Hierarchical Task Network)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 고객 문의 처리 업무를 예로 들면 요청 분류, 자료 조회, 답안 작성과 발송 승인을 서로 다른 단계로 나누고 각 단계의 입력과 결과를 보존한다.
 
@@ -52,7 +56,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 외부 쓰기, 결제, 메시지 전송처럼 되돌리기 어려운 행동은 사람 승인이나 별도 정책 엔진을 거친다. 프롬프트상의 금지 문구만으로 권한 통제를 대신하지 않는다.
 
@@ -62,7 +66,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 ‘계층적 과제 네트워크(Hierarchical Task Network)’는 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. 계층적 작업 네트워크는 복잡한 목표를 미리 정의한 방법 규칙에 따라 더 작은 작업으로 반복 분해하는 계획 표현이다.
 
@@ -75,7 +79,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 고객 문의 처리 업무를 예로 들면 요청 분류, 자료 조회, 답안 작성과 발송 승인을 서로 다른 단계로 나누고 각 단계의 입력과 결과를 보존한다.
 
@@ -85,7 +89,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **문제와 경계 정의:** ‘계층적 과제 네트워크(Hierarchical Task Network)’가 해결할 문제와 해결하지 않을 문제를 각각 두 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 크기, 권한, 오류 상태와 완료 조건을 고정한다.
@@ -100,33 +104,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 계층적 과제 네트워크의 정의를 입력·처리·출력으로 설명할 수 있는가?
 - 선행 개념과 인접 개념의 차이를 실제 사례로 구분할 수 있는가?
 - 적용 전 확인할 실패 조건, 지표와 사람 검토 지점을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [AI 에이전트](/wiki/ai-agent/)
 
-## 관련 문서
+### 관련 문서
 
 - [에이전트 루프](/wiki/agent-loop/)
 - [ReAct 에이전트](/wiki/react-agent/)
 - [도구 호출](/wiki/tool-calling/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [An Overview of Hierarchical Task Network Planning](https://arxiv.org/abs/1403.7426) — paper
 <span id="reference-2"></span>2. [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
@@ -137,6 +145,6 @@ _포함된 코스가 없습니다._
 <span id="reference-7"></span>7. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 <span id="reference-8"></span>8. [Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

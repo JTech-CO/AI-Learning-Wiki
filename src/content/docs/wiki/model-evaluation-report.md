@@ -1,14 +1,16 @@
 ---
 title: "모델 평가 보고서 Model Evaluation Report"
 description: "모델을 어떤 데이터와 절차, 지표로 평가했고 어떤 한계와 승인 결론을 얻었는지 기록한 검토 산출물이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">모델을 어떤 데이터와 절차, 지표로 평가했고 어떤 한계와 승인 결론을 얻었는지 기록한 검토 산출물이다.</p>
 
 <div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 모델을 어떤 데이터와 절차, 지표로 평가했고 어떤 한계와 승인 결론을 얻었는지 기록한 검토 산출물이다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 모델을 어떤 데이터와 절차, 지표로 평가했고 어떤 한계와 승인 결론을 얻었는지 기록한 검토 산출물이다. 설명 범위에는 개념의 역사적 배경뿐 아니라 현재의 계산 절차와 운영 경계가 포함된다. 모델 카드가 사용 범위와 책임 있는 사용을 폭넓게 설명한다면 평가 보고서는 특정 평가 실행과 결론에 더 초점을 둔다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-4">[4]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 평가 목적과 기준선을 정의하고 재현 가능한 실행에서 결과를 수집해 하위 집단, 실패 사례와 불확실성을 함께 해석한다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 모델 식별자, 데이터 계보, 지표 정의, 실험 설정, 결과, 한계, 위험과 승인 결정이 포함된다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 릴리스 승인, 모델 비교, 규제 감사, 사용자 고지와 후속 개선 우선순위 결정에 사용한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 최고 점수만 선택하거나 평가 세트 오염과 반복 비교를 숨기면 보고서가 실제 일반화 성능을 과장한다.
 
@@ -56,7 +60,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 모델 카드가 사용 범위와 책임 있는 사용을 폭넓게 설명한다면 평가 보고서는 특정 평가 실행과 결론에 더 초점을 둔다.
 
@@ -69,7 +73,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 분류 모델의 전체 정확도뿐 아니라 클래스별 재현율, 보정, 실패 예시와 실행 환경을 기록하고 승인 기준과 비교한다.
 
@@ -77,7 +81,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 모델 평가 보고서가 해결할 문제와 해결하지 않을 문제를 각각 한 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 모양, 단위, 권한, 오류 응답과 종료 조건을 고정한다.
@@ -88,7 +92,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 7. **운영 통제:** 경고선과 자동 중단선, 롤백 대상, 사람이 승인할 사건을 지정한다.
 8. **변경 검증:** 구성 요소가 바뀔 때 같은 기준 사례와 실패 시험을 반복하고 차이를 분류한다.
 
-**검토 질문**
+#### 검토 질문
 
 - 평가 목적과 기준선을 정의하고 재현 가능한 실행에서 결과를 수집해 하위 집단, 실패 사례와 불확실성을 함께 해석한다.
 - 모델 식별자, 데이터 계보, 지표 정의, 실험 설정, 결과, 한계, 위험과 승인 결정이 포함된다.
@@ -96,45 +100,49 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 검토 결과에는 선택 근거와 제외한 대안, 알려진 한계, 잔여 위험과 다음 검토 날짜를 함께 남긴다. 성능 개선 폭이 복잡성과 운영 위험을 상쇄하지 못하면 단순한 기준선으로 돌아간다.
 
-**심화 검토 메모**
+#### 심화 검토 메모
 
 모델을 어떤 데이터와 절차, 지표로 평가했고 어떤 한계와 승인 결론을 얻었는지 기록한 검토 산출물이다. 평가 목적과 기준선을 정의하고 재현 가능한 실행에서 결과를 수집해 하위 집단, 실패 사례와 불확실성을 함께 해석한다. 모델 식별자, 데이터 계보, 지표 정의, 실험 설정, 결과, 한계, 위험과 승인 결정이 포함된다. 이 세 문장을 입력·변환·출력의 순서로 다시 써 보고, 릴리스 승인, 모델 비교, 규제 감사, 사용자 고지와 후속 개선 우선순위 결정에 사용한다.라는 적용 범위에서 최고 점수만 선택하거나 평가 세트 오염과 반복 비교를 숨기면 보고서가 실제 일반화 성능을 과장한다.라는 한계가 어떤 관측 지표로 나타나는지 정의한다. 분류 모델의 전체 정확도뿐 아니라 클래스별 재현율, 보정, 실패 예시와 실행 환경을 기록하고 승인 기준과 비교한다. 예시를 정상·경계·실패 사례로 나누고 각 사례의 기대 결과와 허용 오차, 중단 조건을 표로 만든다. 마지막으로 관련 문서와의 차이를 용어가 아니라 데이터 요구량, 계산 절차, 출력 형식과 실패 비용으로 비교한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 모델 평가 보고서의 입력, 처리와 출력을 각각 설명할 수 있는가?
 - 인접 개념과의 차이를 실제 사례로 구분할 수 있는가?
 - 운영 전 검증할 실패 조건과 기록 항목을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [모델 버전](/wiki/model-version/)
 
-## 관련 문서
+### 관련 문서
 
 - [모델 레지스트리](/wiki/model-registry/)
 - [모델 허브](/wiki/model-hub/)
 - [오픈소스 모델](/wiki/open-source-model/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
 <span id="reference-2"></span>2. [Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
 <span id="reference-3"></span>3. [MLflow Documentation](https://mlflow.org/docs/latest/) — documentation
 <span id="reference-4"></span>4. [MLOps — Wikipedia](https://en.wikipedia.org/wiki/MLOps) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

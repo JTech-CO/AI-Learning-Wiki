@@ -1,0 +1,55 @@
+---
+import WikiTableOfContentsList from './WikiTableOfContentsList.astro';
+
+const { toc } = Astro.locals.starlightRoute;
+---
+
+{toc && (
+  <wiki-table-of-contents data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
+    <div class="wiki-toc-header">
+      <h2 id="wiki__table-of-contents">목차</h2>
+      <button type="button" data-wiki-toc-toggle-all aria-expanded="true">모두 접기</button>
+    </div>
+    <nav aria-labelledby="wiki__table-of-contents">
+      <WikiTableOfContentsList toc={toc.items} root />
+    </nav>
+  </wiki-table-of-contents>
+)}
+
+<script src="../../scripts/wiki-toc.ts"></script>
+
+<style>
+  wiki-table-of-contents {
+    display: block;
+    padding: .15rem .15rem 1rem;
+  }
+  .wiki-toc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: .45rem;
+    border-bottom: 1px solid #c8ccd1;
+    padding: 0 .18rem .38rem;
+  }
+  .wiki-toc-header h2 {
+    margin: 0;
+    color: #202122;
+    font-size: .86rem;
+    font-weight: 700;
+  }
+  .wiki-toc-header button {
+    border: 1px solid #c8ccd1;
+    border-radius: 0;
+    background: #f8f9fa;
+    color: #54595d;
+    padding: .16rem .35rem;
+    font: inherit;
+    font-size: .63rem;
+    cursor: pointer;
+  }
+  .wiki-toc-header button:focus-visible {
+    outline: 2px solid #3366cc;
+    outline-offset: 2px;
+  }
+</style>

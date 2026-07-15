@@ -1,14 +1,16 @@
 ---
 title: "Keras"
 description: "Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다.</p>
 
 <div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다.
 
@@ -18,7 +20,7 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 ‘Keras(Keras)’의 설명 범위에는 역사적 배경이나 이름의 유래뿐 아니라 현재 시스템에서의 계산 절차와 운영 경계가 포함된다. 모델 생태계 문서는 가중치, 코드, 데이터 정보, 라이선스와 배포 아티팩트를 분리해 다룬다. 공개되어 있다는 사실과 법적으로 사용·수정·재배포할 권리는 같은 의미가 아니다.
 
@@ -26,7 +28,7 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 층을 함수형 또는 순차 그래프로 연결한 뒤 compile 단계에서 손실·옵티마이저·지표를 지정하고 fit 루프가 배치 학습과 검증을 수행한다.
 
@@ -36,7 +38,7 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 ‘Keras(Keras)’를 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 도입 전에는 파일 출처와 해시, 적용 라이선스, 파생물 조건, 취약점과 재현 가능성을 확인한다. 모델 버전과 실행 환경을 하나의 계보로 묶어 이후 변경과 회수를 추적한다.
 
@@ -44,7 +46,9 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 ‘Keras(Keras)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 팀이 외부 모델을 제품에 넣는 상황에서는 가중치 형식의 안전성, 모델 카드, 코드와 데이터 조건, 상업 이용 가능성, 재배포 의무를 순서대로 확인한다.
 
@@ -52,7 +56,7 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 용어가 비슷하다는 이유로 오픈소스, 오픈 웨이트와 소스 공개를 혼용하면 잘못된 배포 의사결정이 생긴다. 빠르게 바뀌는 정의와 정책은 검토 날짜와 버전을 함께 기록한다.
 
@@ -62,7 +66,7 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 ‘Keras(Keras)’는 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다.
 
@@ -75,7 +79,7 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 팀이 외부 모델을 제품에 넣는 상황에서는 가중치 형식의 안전성, 모델 카드, 코드와 데이터 조건, 상업 이용 가능성, 재배포 의무를 순서대로 확인한다.
 
@@ -85,7 +89,7 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **문제와 경계 정의:** ‘Keras(Keras)’가 해결할 문제와 해결하지 않을 문제를 각각 두 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 크기, 권한, 오류 상태와 완료 조건을 고정한다.
@@ -100,33 +104,37 @@ Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 �
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - Keras의 정의를 입력·처리·출력으로 설명할 수 있는가?
 - 선행 개념과 인접 개념의 차이를 실제 사례로 구분할 수 있는가?
 - 적용 전 확인할 실패 조건, 지표와 사람 검토 지점을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [모델 버전](/wiki/model-version/)
 
-## 관련 문서
+### 관련 문서
 
 - [모델 레지스트리](/wiki/model-registry/)
 - [모델 허브](/wiki/model-hub/)
 - [오픈소스 모델](/wiki/open-source-model/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Keras Developer Guides](https://keras.io/guides/) — documentation
 <span id="reference-2"></span>2. [Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — standard
@@ -137,6 +145,6 @@ _포함된 코스가 없습니다._
 <span id="reference-7"></span>7. [Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
 <span id="reference-8"></span>8. [Keras — Wikipedia](https://en.wikipedia.org/wiki/Keras) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

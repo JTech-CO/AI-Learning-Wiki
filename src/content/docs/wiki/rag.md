@@ -1,7 +1,7 @@
 ---
 title: "검색 증강 생성 Retrieval-Augmented Generation"
 description: "외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">RAG</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 직접 대응하는 외부 백과 표제어가 뚜렷하지 않은 신생·세부 용어다. 따라서 아래 1차 자료와 상위 개념 문서를 중심으로 범위를 정하고, 제품별 용어는 일반 원리와 분리했다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 검색 증강 생성은 질의를 임베딩하거나 검색어로 변환해 관련 문서를 찾고, 선택한 근거를 프롬프트에 넣어 응답을 생성한다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘검색 증강 생성’ 개념만 독립적으로 동작하지 않는다. [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/), [검색기](/wiki/retriever/), [리랭커](/wiki/reranker/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 사내 문서 질의응답, 최신 정보 연결, 추천과 의미 검색에 사용한다. ‘검색 증강 생성’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 검색 실패·청킹 오류·오래된 문서·근거와 답의 불일치를 각각 측정해야 하며 RAG가 환각을 완전히 없애지는 않는다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/): 정확도를 일부 양보하고 대규모 벡터 검색 속도를 높이는 알고리즘 계열이다.
 - [검색기](/wiki/retriever/): 질의와 관련된 문서나 청크 후보를 저장소에서 찾는 구성 요소다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 질문, 기대 문서, 기대 답을 묶은 평가셋으로 검색 성공과 생성 성공을 따로 측정하면 어느 단계가 실패했는지 알 수 있다. ‘검색 증강 생성’을 적용하는 경우에는 검색 증강 생성은 질의를 임베딩하거나 검색어로 변환해 관련 문서를 찾고, 선택한 근거를 프롬프트에 넣어 응답을 생성한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘검색 증강 생성’이 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [최근접 이웃 검색](/wiki/nearest-neighbor-search/), [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)의 정의와 입력 조건을 먼저 확인한다.
@@ -86,24 +90,26 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [최근접 이웃 검색](/wiki/nearest-neighbor-search/), [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [최근접 이웃 검색](/wiki/nearest-neighbor-search/)
 - [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)
 
-## 관련 문서
+### 관련 문서
 
 - [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/)
 - [검색기](/wiki/retriever/)
 - [리랭커](/wiki/reranker/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [개체 연결](/wiki/entity-linking/)
@@ -206,18 +212,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [임베딩과 RAG](/course/rag-search/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
 <span id="reference-2"></span>2. [Retrieval-augmented generation — Wikipedia](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) — encyclopedia
 <span id="reference-3"></span>3. [RAG — Transformers documentation](https://huggingface.co/docs/transformers/model_doc/rag) — documentation
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **임베딩과 RAG:** [다음 문서 — 근거화](/wiki/grounding/)

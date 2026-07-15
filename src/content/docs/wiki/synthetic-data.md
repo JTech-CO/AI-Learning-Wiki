@@ -1,7 +1,7 @@
 ---
 title: "합성 데이터 Synthetic Data"
 description: "실제 관측값을 그대로 복제하지 않고 규칙·시뮬레이션·통계 또는 생성 모델로 만든 데이터다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">인공 데이터</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 실제 관측값을 그대로 복제하지 않고 규칙·시뮬레이션·통계 또는 생성 모델로 만든 데이터다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 표 형식·시계열·이미지·텍스트의 합성 원리를 포괄하되 표 형식 생성의 데이터 계보와 품질 평가를 주요 예로 든다. 단순 익명화나 기존 자료 복사와 합성 생성을 구분한다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 규칙과 시뮬레이터는 알려진 과정에서 표본을 만들고 통계·생성 모델은 실제 데이터의 분포와 관계를 학습해 새 표본을 샘플링한다. 조건부 생성은 희귀 집단이나 특정 속성 조합을 목표로 만들 수 있다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 원본 데이터와 메타데이터, 생성기, 제약 조건, 품질·개인정보 평가, 계보 기록으로 구성된다. 학습·검증·시험 분할 전에 합성 절차를 설계해 동일 원본이 여러 분할에 간접 누출되지 않게 한다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 개발용 데이터, 희귀 사건 보강, 시뮬레이션, 개인정보 제약이 있는 협업, 모델의 스트레스 테스트에 사용한다. 실제 데이터가 부족한 원인을 가리지 않고 합성 자료가 목표 과제의 오류를 줄이는지 검증한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 생성기가 모르는 사건을 만들어내지 못하고 다수 패턴을 과도하게 반복할 수 있다. 외형상 그럴듯한 표본이 실제 인과 관계나 장기 꼬리 분포를 보존한다는 보장은 없다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [데이터 증강](/wiki/data-augmentation/): 데이터 증강은 기존 예시를 변형하는 경우가 많고 합성 데이터는 별도 생성 과정에서 새 표본을 만들 수 있다.
 - [학습 데이터](/wiki/training-data/): 학습 데이터는 모델 학습에 쓰이는 역할을 뜻하며 실제 자료와 합성 자료를 모두 포함할 수 있다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 사기 탐지 데이터에서 희귀 사기 유형을 조건부로 생성해 학습 자료에 추가할 수 있다. 원본만 사용한 기준 모델과 합성 자료를 추가한 모델을 같은 실제 시험셋에서 비교한다. 전체 정확도뿐 아니라 사기 재현율, 정상 거래 오탐, 하위 유형별 결과와 개인정보 공격 시험을 함께 본다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 합성 데이터이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 합성 데이터을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,42 +98,46 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 합성 데이터의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [개인정보 보호](/wiki/privacy/)와 [데이터셋](/wiki/dataset/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [학습 데이터](/wiki/training-data/)
 - [데이터 증강](/wiki/data-augmentation/)
 
-## 관련 문서
+### 관련 문서
 
 - [개인정보 보호](/wiki/privacy/)
 - [데이터셋](/wiki/dataset/)
 - [모델 평가](/wiki/evaluation/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [데이터 증강](/wiki/data-augmentation/)
 - [양자화](/wiki/quantization/)
 - [체크포인트](/wiki/checkpoint/)
 - [AI 정렬](/wiki/alignment/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Synthetic Data — What, Why and How?](https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/Synthetic_Data_Survey-24.pdf) — paper
 <span id="reference-2"></span>2. [Synthetic Data Vault Documentation](https://docs.sdv.dev/sdv) — documentation
 <span id="reference-3"></span>3. [Synthetic data — Wikipedia](https://en.wikipedia.org/wiki/Synthetic_data) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

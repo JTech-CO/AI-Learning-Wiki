@@ -1,14 +1,16 @@
 ---
 title: "행렬 Matrix"
 description: "수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다.</p>
 
 <div class="wiki-document-meta">분류: [수학·통계 기초](/category/mathematics/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 영문 Wikipedia의 ‘Matrix multiplication’ 표제어를 대조해 용어의 일반적 범위와 인접 개념을 확인했다. 외부 백과의 문장을 복제하지 않고, 아래 1차 자료와 내부 개념 그래프를 기준으로 한국어 설명을 다시 구성했다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 행렬은 수를 행과 열로 배열한 구조로 선형 변환, 연립방정식, 신경망의 가중치 계산을 표현한다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 실제 시스템에서는 ‘행렬’ 개념만 독립적으로 동작하지 않는다. [벡터](/wiki/vector/), [텐서](/wiki/tensor/), [확률](/wiki/probability/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 모델의 손실과 거리, 확률, 기울기를 해석하고 구현의 차원·단위를 검증하는 데 쓰인다. ‘행렬’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 행렬 곱은 원소별 곱과 다르며 차원 순서가 맞아야 하므로 텐서 shape를 명시한다.
 
@@ -56,7 +60,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [벡터](/wiki/vector/): 크기와 방향 또는 순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다.
 - [텐서](/wiki/tensor/): 스칼라·벡터·행렬을 일반화한 다차원 수치 배열이다.
@@ -64,7 +68,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 작은 숫자 예제를 손으로 계산한 뒤 텐서 차원과 단위를 표시하면 수식과 구현이 같은 계산을 하는지 확인하기 쉽다. ‘행렬’을 적용하는 경우에는 행렬은 수를 행과 열로 배열한 구조로 선형 변환, 연립방정식, 신경망의 가중치 계산을 표현한다.
 
@@ -72,7 +76,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적 정의:** ‘행렬’이 해결해야 할 문제와 해결하지 않아도 되는 범위를 한 문장씩 적는다.
 2. **입력과 조건 확인:** [벡터](/wiki/vector/)의 정의와 입력 조건을 먼저 확인한다.
@@ -84,23 +88,25 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 이 개념의 입력과 출력 또는 적용 대상을 한 문장으로 구분할 수 있는가?
 - [벡터](/wiki/vector/)와 어떤 선후 관계가 있는지 설명할 수 있는가?
 - 이 문서의 주의점을 실제 모델·데이터·API 선택에 적용할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [벡터](/wiki/vector/)
 
-## 관련 문서
+### 관련 문서
 
 - [벡터](/wiki/vector/)
 - [텐서](/wiki/tensor/)
 - [확률](/wiki/probability/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [가설검정](/wiki/hypothesis-testing/)
 - [거리 공간](/wiki/metric-space/)
@@ -201,18 +207,20 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 </details>
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [LLM 내부 구조](/course/llm-internals/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
 <span id="reference-2"></span>2. [Matrix multiplication — Wikipedia](https://en.wikipedia.org/wiki/Matrix_multiplication) — encyclopedia
 <span id="reference-3"></span>3. [NumPy: numpy.matmul](https://numpy.org/doc/stable/reference/generated/numpy.matmul.html) — documentation
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **LLM 내부 구조:** [다음 문서 — 신경망](/wiki/neural-network/)

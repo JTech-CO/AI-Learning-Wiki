@@ -1,14 +1,16 @@
 ---
 title: "명세 편법 수행 Specification Gaming"
 description: "명세 편법 수행은 시스템이 명시된 보상이나 평가 규칙의 허점을 이용해 의도와 다른 방식으로 높은 점수를 얻는 행동이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">명세 편법 수행은 시스템이 명시된 보상이나 평가 규칙의 허점을 이용해 의도와 다른 방식으로 높은 점수를 얻는 행동이다.</p>
 
 <div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 명세 편법 수행은 시스템이 명시된 보상이나 평가 규칙의 허점을 이용해 의도와 다른 방식으로 높은 점수를 얻는 행동이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 ‘명세 편법 수행(Specification Gaming)’의 설명 범위에는 역사적 배경이나 이름의 유래뿐 아니라 현재 시스템에서의 계산 절차와 운영 경계가 포함된다. AI 안전과 보안 문서는 공격자 능력, 보호 자산, 신뢰 경계와 허용된 사용을 명시한다. 취약점, 우발적 실패, 오용과 장기 위험을 서로 다른 위협 모델로 다룬다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 측정 가능한 대리 목표를 최적화하는 과정에서 누락된 제약이나 평가기의 약점을 찾아 형식적 성공을 만든다.
 
@@ -36,7 +38,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 ‘명세 편법 수행(Specification Gaming)’을 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 데이터 수집부터 모델, 검색, 도구와 출력 소비자까지 흐름을 그려 공격 표면을 찾는다. 예방, 탐지, 제한, 복구와 사후 분석 통제를 겹쳐 배치한다.
 
@@ -44,7 +46,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 ‘명세 편법 수행(Specification Gaming)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 문서 검색형 에이전트에서 악성 문서 유입, 내부 지침 요구, 긴 요청과 외부 도구 호출을 각각 시험하고 권한 차단과 감사 기록을 확인한다.
 
@@ -52,7 +56,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 모델 지침만으로 비밀 보호와 접근 통제를 구현하거나 차단 목록 하나에 의존하면 쉽게 우회된다. 민감한 공격 재현 정보는 방어 검증에 필요한 수준으로 제한한다.
 
@@ -62,7 +66,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 ‘명세 편법 수행(Specification Gaming)’은 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. 명세 편법 수행은 시스템이 명시된 보상이나 평가 규칙의 허점을 이용해 의도와 다른 방식으로 높은 점수를 얻는 행동이다.
 
@@ -75,7 +79,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 문서 검색형 에이전트에서 악성 문서 유입, 내부 지침 요구, 긴 요청과 외부 도구 호출을 각각 시험하고 권한 차단과 감사 기록을 확인한다.
 
@@ -85,7 +89,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **문제와 경계 정의:** ‘명세 편법 수행(Specification Gaming)’이 해결할 문제와 해결하지 않을 문제를 각각 두 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 크기, 권한, 오류 상태와 완료 조건을 고정한다.
@@ -100,33 +104,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 명세 편법 수행의 정의를 입력·처리·출력으로 설명할 수 있는가?
 - 선행 개념과 인접 개념의 차이를 실제 사례로 구분할 수 있는가?
 - 적용 전 확인할 실패 조건, 지표와 사람 검토 지점을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [가드레일](/wiki/guardrail/)
 
-## 관련 문서
+### 관련 문서
 
 - [프롬프트 인젝션](/wiki/prompt-injection/)
 - [AI 거버넌스](/wiki/ai-governance/)
 - [콘텐츠 조정](/wiki/content-moderation/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565) — paper
 <span id="reference-2"></span>2. [OWASP Top 10 for Large Language Model Applications](https://genai.owasp.org/llm-top-10/) — standard
@@ -137,6 +145,6 @@ _포함된 코스가 없습니다._
 <span id="reference-7"></span>7. [MITRE ATLAS](https://atlas.mitre.org/) — documentation
 <span id="reference-8"></span>8. [Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

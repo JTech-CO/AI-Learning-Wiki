@@ -1,14 +1,16 @@
 ---
 title: "벤치마크 오염 Benchmark Contamination"
 description: "벤치마크 오염은 평가 문제나 그 변형이 학습 데이터에 포함되어 모델이 일반화 대신 기억으로 높은 점수를 얻는 현상이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">벤치마크 오염은 평가 문제나 그 변형이 학습 데이터에 포함되어 모델이 일반화 대신 기억으로 높은 점수를 얻는 현상이다.</p>
 
 <div class="wiki-document-meta">분류: [학습과 사후학습](/category/training/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 벤치마크 오염은 평가 문제나 그 변형이 학습 데이터에 포함되어 모델이 일반화 대신 기억으로 높은 점수를 얻는 현상이다.
 
@@ -18,19 +20,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 ‘벤치마크 오염(Benchmark Contamination)’의 설명 범위에는 역사적 배경이나 이름의 유래뿐 아니라 현재 시스템에서의 계산 절차와 운영 경계가 포함된다. 학습 데이터와 파이프라인은 원천 자료, 변환 단계, 샘플링 단위, 토큰화와 손실 마스크로 나눠 설명한다. 데이터의 양과 유효한 다양성을 같은 것으로 보지 않는다.
 
 ‘벤치마크 오염(Benchmark Contamination)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-**배경과 설명 범위 심화 점검 2**
+#### 배경과 설명 범위 심화 점검 2
 
 ‘벤치마크 오염’의 배경과 설명 범위를 검토하는 2번째 기록에서는 분야 training, 세부 영역 data-pretraining, 우선순위 10라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 문자열·의미 중복 검사, 시간 기준 분리와 비공개 평가로 오염 가능성을 추적한다.
 
@@ -38,25 +40,27 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. ‘벤치마크 오염(Benchmark Contamination)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-**작동 원리 심화 점검 3**
+#### 작동 원리 심화 점검 3
 
 ‘벤치마크 오염’의 작동 원리를 검토하는 3번째 기록에서는 분야 training, 세부 영역 data-pretraining, 우선순위 10라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 ‘벤치마크 오염(Benchmark Contamination)’을 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 수집한 자료에 출처와 권리를 연결하고 중복 제거, 필터링, 혼합과 패킹을 순서가 기록된 작업으로 실행한다. 각 산출물에 버전과 품질 통계를 남긴다.
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. 벤치마크 오염은 평가 문제나 그 변형이 학습 데이터에 포함되어 모델이 일반화 대신 기억으로 높은 점수를 얻는 현상이다.
 
-**구성 요소와 처리 흐름 심화 점검 1**
+#### 구성 요소와 처리 흐름 심화 점검 1
 
 ‘벤치마크 오염’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 training, 세부 영역 data-pretraining, 우선순위 10라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 ‘벤치마크 오염(Benchmark Contamination)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 사전학습 자료를 구축할 때 원시 웹 문서부터 정제 말뭉치, 토큰 블록과 학습 배치까지 개수와 해시를 추적하고 단계별 표본을 수동 점검한다.
 
@@ -64,7 +68,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 필터가 특정 언어와 집단의 자료를 과도하게 제거하거나 패킹이 문서 경계를 흐리면 규모는 커져도 품질이 낮아진다. 평가셋 중복은 성능을 직접 왜곡한다.
 
@@ -74,7 +78,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 ‘벤치마크 오염(Benchmark Contamination)’은 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. 벤치마크 오염은 평가 문제나 그 변형이 학습 데이터에 포함되어 모델이 일반화 대신 기억으로 높은 점수를 얻는 현상이다.
 
@@ -87,7 +91,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 사전학습 자료를 구축할 때 원시 웹 문서부터 정제 말뭉치, 토큰 블록과 학습 배치까지 개수와 해시를 추적하고 단계별 표본을 수동 점검한다.
 
@@ -97,7 +101,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **문제와 경계 정의:** ‘벤치마크 오염(Benchmark Contamination)’이 해결할 문제와 해결하지 않을 문제를 각각 두 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 크기, 권한, 오류 상태와 완료 조건을 고정한다.
@@ -112,33 +116,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 벤치마크 오염의 정의를 입력·처리·출력으로 설명할 수 있는가?
 - 선행 개념과 인접 개념의 차이를 실제 사례로 구분할 수 있는가?
 - 적용 전 확인할 실패 조건, 지표와 사람 검토 지점을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [미세조정](/wiki/fine-tuning/)
 
-## 관련 문서
+### 관련 문서
 
 - [사전학습](/wiki/pretraining/)
 - [지도 미세조정](/wiki/supervised-fine-tuning/)
 - [학습 데이터](/wiki/training-data/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499) — paper
 <span id="reference-2"></span>2. [The RefinedWeb Dataset for Falcon LLM](https://arxiv.org/abs/2306.01116) — paper
@@ -149,6 +157,6 @@ _포함된 코스가 없습니다._
 <span id="reference-7"></span>7. [PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
 <span id="reference-8"></span>8. [Machine learning — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

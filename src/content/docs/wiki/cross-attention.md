@@ -1,14 +1,16 @@
 ---
 title: "크로스 어텐션 Cross-Attention"
 description: "한 표현의 질의가 다른 표현에서 만든 키와 값을 조회해 두 입력 사이의 관련 정보를 결합하는 어텐션이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">한 표현의 질의가 다른 표현에서 만든 키와 값을 조회해 두 입력 사이의 관련 정보를 결합하는 어텐션이다.</p>
 
 <div class="wiki-document-meta">분류: [트랜스포머와 모델 구조](/category/transformer/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 한 표현의 질의가 다른 표현에서 만든 키와 값을 조회해 두 입력 사이의 관련 정보를 결합하는 어텐션이다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 쿼리·키·값의 출처, 마스크, shape와 계산 비용을 다룬다. 특정 모델의 전체 구조와 크로스 어텐션 한 층의 역할을 구분한다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 목표 시퀀스에서 질의 Q를 만들고 원천 시퀀스에서 키 K와 값 V를 만든다. QK 전치의 유사도를 스케일링하고 마스크와 소프트맥스를 적용한 가중치로 V를 합산한다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 질의 길이와 원천 길이가 다를 수 있으며 출력 길이는 질의 쪽을 따른다. 멀티헤드 구성은 여러 투영 공간에서 대응 관계를 병렬로 계산한 뒤 결과를 결합한다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 번역 디코더가 원문 표현을 참조하거나 이미지 생성기가 텍스트 조건을 반영하고, 시각-언어 모델이 이미지와 텍스트 특징을 결합할 때 사용한다. 어떤 입력이 Q이고 어떤 입력이 K·V인지 문서화해야 한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 높은 어텐션 가중치를 인과적 설명이나 인간의 주의와 동일시할 수 없다. 잘못된 마스크, 패딩 처리, 축 순서는 조용히 품질을 떨어뜨릴 수 있다.
 
@@ -56,7 +60,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [셀프 어텐션](/wiki/self-attention/): 셀프 어텐션은 Q·K·V가 같은 입력에서 나오고 크로스 어텐션은 질의와 키·값의 출처가 다르다.
 - [쿼리·키·값](/wiki/query-key-value/): 쿼리·키·값은 어텐션의 계산 표현이고 크로스 어텐션은 이 표현들의 입력 출처를 다르게 구성한 방식이다.
@@ -64,7 +68,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 번역에서 디코더의 현재 토큰 표현이 질의가 되고 인코더가 만든 원문 토큰 표현이 키와 값이 된다. 각 출력 위치는 원문 전체를 조회하되 패딩 위치는 마스크한다. 배치, 헤드, 목표 길이, 원천 길이의 축을 출력 전후로 확인하면 구현 오류를 줄일 수 있다.
 
@@ -72,7 +76,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 크로스 어텐션이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -81,7 +85,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 크로스 어텐션을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -92,42 +96,46 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 크로스 어텐션의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [셀프 어텐션](/wiki/self-attention/)와 [인코더-디코더](/wiki/encoder-decoder/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [어텐션](/wiki/attention/)
 - [쿼리·키·값](/wiki/query-key-value/)
 
-## 관련 문서
+### 관련 문서
 
 - [셀프 어텐션](/wiki/self-attention/)
 - [인코더-디코더](/wiki/encoder-decoder/)
 - [멀티모달 모델](/wiki/multimodal-model/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [멀티헤드 어텐션](/wiki/multi-head-attention/)
 - [셀프 어텐션](/wiki/self-attention/)
 - [어텐션](/wiki/attention/)
 - [쿼리·키·값](/wiki/query-key-value/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
 <span id="reference-2"></span>2. [PyTorch MultiheadAttention](https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html) — documentation
 <span id="reference-3"></span>3. [Attention (machine learning) — Wikipedia](https://en.wikipedia.org/wiki/Attention_%28machine_learning%29) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

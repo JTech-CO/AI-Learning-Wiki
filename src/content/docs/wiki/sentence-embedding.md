@@ -1,14 +1,16 @@
 ---
 title: "문장 임베딩 Sentence Embedding"
 description: "문장이나 짧은 텍스트 전체의 의미를 고정 길이의 밀집 벡터로 표현한 것이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">문장이나 짧은 텍스트 전체의 의미를 고정 길이의 밀집 벡터로 표현한 것이다.</p>
 
 <div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 문장이나 짧은 텍스트 전체의 의미를 고정 길이의 밀집 벡터로 표현한 것이다.
 
@@ -16,7 +18,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 문장이나 짧은 텍스트 전체의 의미를 고정 길이의 밀집 벡터로 표현한 것이다. 설명 범위에는 개념의 역사적 배경뿐 아니라 현재의 계산 절차와 운영 경계가 포함된다. 토큰 임베딩이 개별 토큰 표현이라면 문장 임베딩은 여러 토큰을 하나의 비교 가능한 벡터로 집약한다.
 
@@ -24,7 +26,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-4">[4]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 토큰 표현을 문장 수준으로 풀링하거나 문장 쌍 목표로 인코더를 학습해 의미가 비슷한 문장의 벡터가 가까워지게 한다.
 
@@ -32,7 +34,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 토크나이저, 문장 인코더, 풀링, 벡터 차원, 정규화와 유사도 함수가 필요하다.
 
@@ -40,7 +42,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 의미 검색, 중복 탐지, 군집화, 추천과 문장 유사도 계산에 사용한다.
 
@@ -48,7 +52,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 길고 복합적인 문장을 하나의 벡터로 압축하면 세부 관계가 사라지고 학습 도메인 밖 의미가 왜곡될 수 있다.
 
@@ -56,7 +60,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 토큰 임베딩이 개별 토큰 표현이라면 문장 임베딩은 여러 토큰을 하나의 비교 가능한 벡터로 집약한다.
 
@@ -69,7 +73,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 질의와 문서 문장을 임베딩해 코사인 유사도로 순위를 만들고 부정 표현과 숫자 차이를 놓치는 사례를 별도 평가한다.
 
@@ -77,7 +81,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 문장 임베딩이 해결할 문제와 해결하지 않을 문제를 각각 한 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 모양, 단위, 권한, 오류 응답과 종료 조건을 고정한다.
@@ -88,7 +92,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 7. **운영 통제:** 경고선과 자동 중단선, 롤백 대상, 사람이 승인할 사건을 지정한다.
 8. **변경 검증:** 구성 요소가 바뀔 때 같은 기준 사례와 실패 시험을 반복하고 차이를 분류한다.
 
-**검토 질문**
+#### 검토 질문
 
 - 토큰 표현을 문장 수준으로 풀링하거나 문장 쌍 목표로 인코더를 학습해 의미가 비슷한 문장의 벡터가 가까워지게 한다.
 - 토크나이저, 문장 인코더, 풀링, 벡터 차원, 정규화와 유사도 함수가 필요하다.
@@ -96,45 +100,49 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 검토 결과에는 선택 근거와 제외한 대안, 알려진 한계, 잔여 위험과 다음 검토 날짜를 함께 남긴다. 성능 개선 폭이 복잡성과 운영 위험을 상쇄하지 못하면 단순한 기준선으로 돌아간다.
 
-**심화 검토 메모**
+#### 심화 검토 메모
 
 문장이나 짧은 텍스트 전체의 의미를 고정 길이의 밀집 벡터로 표현한 것이다. 토큰 표현을 문장 수준으로 풀링하거나 문장 쌍 목표로 인코더를 학습해 의미가 비슷한 문장의 벡터가 가까워지게 한다. 토크나이저, 문장 인코더, 풀링, 벡터 차원, 정규화와 유사도 함수가 필요하다. 이 세 문장을 입력·변환·출력의 순서로 다시 써 보고, 의미 검색, 중복 탐지, 군집화, 추천과 문장 유사도 계산에 사용한다.라는 적용 범위에서 길고 복합적인 문장을 하나의 벡터로 압축하면 세부 관계가 사라지고 학습 도메인 밖 의미가 왜곡될 수 있다.라는 한계가 어떤 관측 지표로 나타나는지 정의한다. 질의와 문서 문장을 임베딩해 코사인 유사도로 순위를 만들고 부정 표현과 숫자 차이를 놓치는 사례를 별도 평가한다. 예시를 정상·경계·실패 사례로 나누고 각 사례의 기대 결과와 허용 오차, 중단 조건을 표로 만든다. 마지막으로 관련 문서와의 차이를 용어가 아니라 데이터 요구량, 계산 절차, 출력 형식과 실패 비용으로 비교한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 문장 임베딩의 입력, 처리와 출력을 각각 설명할 수 있는가?
 - 인접 개념과의 차이를 실제 사례로 구분할 수 있는가?
 - 운영 전 검증할 실패 조건과 기록 항목을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [임베딩](/wiki/embedding/)
 
-## 관련 문서
+### 관련 문서
 
 - [의미 검색](/wiki/semantic-search/)
 - [검색 증강 생성](/wiki/rag/)
 - [벡터 데이터베이스](/wiki/vector-database/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Faiss Documentation](https://faiss.ai/) — documentation
 <span id="reference-2"></span>2. [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) — book
 <span id="reference-3"></span>3. [Sentence Transformers Documentation](https://sbert.net/) — documentation
 <span id="reference-4"></span>4. [Information retrieval — Wikipedia](https://en.wikipedia.org/wiki/Information_retrieval) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

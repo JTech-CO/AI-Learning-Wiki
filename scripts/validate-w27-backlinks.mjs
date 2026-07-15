@@ -15,7 +15,7 @@ for (const file of files) {
   }
 
   const source = await readFile(path.join('src/content/docs/wiki', file), 'utf8');
-  const section = source.match(/## 이 문서를 가리키는 문서\n\n([\s\S]*?)\n\n## 이 문서를 포함하는 코스/);
+  const section = source.match(/### 이 문서를 가리키는 문서\n\n([\s\S]*?)\n\n### 이 문서를 포함하는 코스/);
   if (!section) {
     failures.push(`${id}: backlink section missing`);
     continue;

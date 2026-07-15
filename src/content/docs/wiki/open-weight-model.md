@@ -1,14 +1,16 @@
 ---
 title: "오픈 웨이트 모델 Open-Weight Model"
 description: "오픈 웨이트 모델은 학습된 파라미터가 공개되어 내려받아 추론하거나 추가 학습할 수 있는 모델이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-lead">오픈 웨이트 모델은 학습된 파라미터가 공개되어 내려받아 추론하거나 추가 학습할 수 있는 모델이다.</p>
 
 <div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 오픈 웨이트 모델은 학습된 파라미터가 공개되어 내려받아 추론하거나 추가 학습할 수 있는 모델이다.
 
@@ -18,19 +20,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 ‘오픈 웨이트 모델(Open-Weight Model)’의 설명 범위에는 역사적 배경이나 이름의 유래뿐 아니라 현재 시스템에서의 계산 절차와 운영 경계가 포함된다. 모델 생태계 문서는 가중치, 코드, 데이터 정보, 라이선스와 배포 아티팩트를 분리해 다룬다. 공개되어 있다는 사실과 법적으로 사용·수정·재배포할 권리는 같은 의미가 아니다.
 
 ‘오픈 웨이트 모델(Open-Weight Model)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-**배경과 설명 범위 심화 점검 2**
+#### 배경과 설명 범위 심화 점검 2
 
 ‘오픈 웨이트 모델’의 배경과 설명 범위를 검토하는 2번째 기록에서는 분야 ecosystem, 세부 영역 licensing-open-source, 우선순위 18라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 가중치 공개는 학습 코드, 데이터와 자유로운 사용 권한까지 자동으로 보장하지 않으므로 라이선스 범위를 따로 확인해야 한다.
 
@@ -38,25 +40,27 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. ‘오픈 웨이트 모델(Open-Weight Model)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-**작동 원리 심화 점검 3**
+#### 작동 원리 심화 점검 3
 
 ‘오픈 웨이트 모델’의 작동 원리를 검토하는 3번째 기록에서는 분야 ecosystem, 세부 영역 licensing-open-source, 우선순위 18라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 ‘오픈 웨이트 모델(Open-Weight Model)’을 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 도입 전에는 파일 출처와 해시, 적용 라이선스, 파생물 조건, 취약점과 재현 가능성을 확인한다. 모델 버전과 실행 환경을 하나의 계보로 묶어 이후 변경과 회수를 추적한다.
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. 오픈 웨이트 모델은 학습된 파라미터가 공개되어 내려받아 추론하거나 추가 학습할 수 있는 모델이다.
 
-**구성 요소와 처리 흐름 심화 점검 1**
+#### 구성 요소와 처리 흐름 심화 점검 1
 
 ‘오픈 웨이트 모델’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 ecosystem, 세부 영역 licensing-open-source, 우선순위 18라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 ‘오픈 웨이트 모델(Open-Weight Model)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 팀이 외부 모델을 제품에 넣는 상황에서는 가중치 형식의 안전성, 모델 카드, 코드와 데이터 조건, 상업 이용 가능성, 재배포 의무를 순서대로 확인한다.
 
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 용어가 비슷하다는 이유로 오픈소스, 오픈 웨이트와 소스 공개를 혼용하면 잘못된 배포 의사결정이 생긴다. 빠르게 바뀌는 정의와 정책은 검토 날짜와 버전을 함께 기록한다.
 
@@ -74,13 +78,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. ‘오픈 웨이트 모델(Open-Weight Model)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-**가중치 접근성과 사용 자유의 차이**
+#### 가중치 접근성과 사용 자유의 차이
 
 가중치를 내려받을 수 있다는 사실만으로 소프트웨어 전체가 오픈 소스이거나 모든 용도의 수정·재배포가 허용되는 것은 아니다. 라이선스의 사용 제한, 기반 코드와 토크나이저, 학습 데이터의 공개 범위를 각각 확인한다. 배포 전에는 정확한 리비전과 체크섬을 고정하고 직렬화 형식과 원격 코드를 격리된 환경에서 검사한다. 자체 호스팅은 데이터 경계를 통제할 수 있지만 패치, 용량, 안전 평가와 사건 대응 책임도 운영자에게 옮긴다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 ‘오픈 웨이트 모델(Open-Weight Model)’은 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. 오픈 웨이트 모델은 학습된 파라미터가 공개되어 내려받아 추론하거나 추가 학습할 수 있는 모델이다.
 
@@ -93,7 +97,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 구체적인 적용 예시
+### 구체적인 적용 예시
 
 팀이 외부 모델을 제품에 넣는 상황에서는 가중치 형식의 안전성, 모델 카드, 코드와 데이터 조건, 상업 이용 가능성, 재배포 의무를 순서대로 확인한다.
 
@@ -103,7 +107,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **문제와 경계 정의:** ‘오픈 웨이트 모델(Open-Weight Model)’이 해결할 문제와 해결하지 않을 문제를 각각 두 문장으로 적는다.
 2. **입력·출력 계약:** 자료형, 크기, 권한, 오류 상태와 완료 조건을 고정한다.
@@ -118,33 +122,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 오픈 웨이트 모델의 정의를 입력·처리·출력으로 설명할 수 있는가?
 - 선행 개념과 인접 개념의 차이를 실제 사례로 구분할 수 있는가?
 - 적용 전 확인할 실패 조건, 지표와 사람 검토 지점을 제시할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [모델 버전](/wiki/model-version/)
 
-## 관련 문서
+### 관련 문서
 
 - [모델 레지스트리](/wiki/model-registry/)
 - [모델 허브](/wiki/model-hub/)
 - [오픈소스 모델](/wiki/open-source-model/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 _해당 문서가 없습니다._
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 _포함된 코스가 없습니다._
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — standard
 <span id="reference-2"></span>2. [SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) — documentation
@@ -155,6 +163,6 @@ _포함된 코스가 없습니다._
 <span id="reference-7"></span>7. [MLflow Documentation](https://mlflow.org/docs/latest/) — documentation
 <span id="reference-8"></span>8. [MLOps — Wikipedia](https://en.wikipedia.org/wiki/MLOps) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 _이 문서에서 이어지는 코스가 없습니다._

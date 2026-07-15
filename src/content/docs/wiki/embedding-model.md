@@ -1,7 +1,7 @@
 ---
 title: "임베딩 모델 Embedding Model"
 description: "텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다."
-tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
 <p class="wiki-alias">임베더</p>
@@ -10,7 +10,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-document-meta">분류: [임베딩·검색·RAG](/category/retrieval/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
 
-## 개요와 핵심 정의
+## 개념과 원리
+
+### 개요와 핵심 정의
 
 텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다.
 
@@ -18,7 +20,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 배경과 설명 범위
+### 배경과 설명 범위
 
 문장 임베딩을 중심으로 인코더, 풀링, 대조 학습, 유사도와 검색 평가를 다룬다. 토큰 임베딩 테이블과 전체 문서용 임베딩 모델을 구분한다.
 
@@ -26,7 +28,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
 
-## 작동 원리
+### 작동 원리
 
 인코더가 입력을 토큰별 표현으로 바꾸고 풀링 또는 전용 토큰을 사용해 하나의 벡터로 합친다. 양성 쌍은 가깝게, 음성 쌍은 멀게 만드는 대조 목적이나 검색 손실로 파라미터를 학습한다.
 
@@ -34,7 +36,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구성 요소와 처리 흐름
+### 구성 요소와 처리 흐름
 
 토크나이저, 인코더, 풀링, 선택적 정규화가 기본 구성이다. 검색 시스템에서는 문서 벡터를 미리 저장하고 질의 벡터와 같은 거리 함수를 사용해 가까운 후보를 찾는다.
 
@@ -42,7 +44,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 활용 분야와 선택 기준
+## 활용과 검증
+
+### 활용 분야와 선택 기준
 
 의미 검색, 중복 탐지, 군집화, 추천, RAG의 후보 검색에 사용한다. 언어·도메인·문서 길이·질의 형태가 실제 사용 조건과 같은 평가셋을 준비해야 한다.
 
@@ -50,7 +54,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 한계와 흔한 오해
+### 한계와 흔한 오해
 
 한 벡터에 긴 문서의 모든 세부 정보를 보존하기 어렵고 학습 데이터의 편향이 거리 구조에 반영된다. 코사인 유사도가 높다는 사실만으로 문장이 사실적으로 동등하거나 답을 직접 지지한다는 뜻은 아니다.
 
@@ -58,7 +62,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 관련 개념과의 구분
+### 관련 개념과의 구분
 
 - [임베딩](/wiki/embedding/): 임베딩은 만들어진 벡터 표현이고 임베딩 모델은 그 표현을 계산하는 학습된 함수다.
 - [벡터 데이터베이스](/wiki/vector-database/): 벡터 데이터베이스는 벡터를 저장·검색하며 임베딩 모델 자체를 대신하지 않는다.
@@ -66,7 +70,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
 
-## 구체적 적용 예시
+### 구체적 적용 예시
 
 FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하고 코사인 유사도가 높은 문서를 반환한다. 철자가 달라도 의미가 같은 질문을 찾는지, 비슷한 단어지만 다른 정책 문서를 잘 구분하는지 평가한다. 검색 실패와 생성 실패를 분리해 기록해야 모델 교체 효과를 판단할 수 있다.
 
@@ -74,7 +78,7 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 실무 적용과 검증 절차
+### 실무 적용과 검증 절차
 
 1. **목적과 경계 정의:** 임베딩 모델이 해결해야 할 문제와 하지 않아야 할 행동을 한 문장씩 적는다.
 2. **입력·출력 명세:** 입력 형식, 단위, shape 또는 스키마와 기대 출력을 고정한다.
@@ -83,7 +87,7 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 5. **버전과 근거 보존:** 데이터·코드·모델·문서 버전과 판단 근거를 연결해 변경 뒤 같은 시험을 반복한다.
 6. **운영 통제:** 권한, 예산, 중단·롤백 조건과 사람 검토가 필요한 지점을 지정한다.
 
-**운영 기록 템플릿**
+#### 운영 기록 템플릿
 
 - **선택 근거:** 임베딩 모델을 사용한 이유와 사용하지 않은 대안을 함께 적는다.
 - **재현 조건:** 입력 자료의 시점과 범위, 코드·모델·라이브러리 버전, 핵심 파라미터와 실행 환경을 기록한다.
@@ -94,42 +98,46 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
-## 학습 체크
+### 학습 체크
 
 - 임베딩 모델의 입력과 출력 또는 적용 대상을 한 문장으로 설명할 수 있는가?
 - [벡터 데이터베이스](/wiki/vector-database/)와 [의미 검색](/wiki/semantic-search/)의 차이를 실제 사례로 구분할 수 있는가?
 - 이 문서의 실패 조건을 평가 자료와 운영 로그에서 확인할 수 있는가?
 
-## 선행 개념
+## 문서 관계
+
+### 선행 개념
 
 - [임베딩](/wiki/embedding/)
 - [언어 모델](/wiki/language-model/)
 
-## 관련 문서
+### 관련 문서
 
 - [벡터 데이터베이스](/wiki/vector-database/)
 - [의미 검색](/wiki/semantic-search/)
 - [검색 증강 생성](/wiki/rag/)
 
-## 이 문서를 가리키는 문서
+### 이 문서를 가리키는 문서
 
 - [밀집 임베딩](/wiki/dense-embedding/)
 - [벡터 데이터베이스](/wiki/vector-database/)
 - [의미 검색](/wiki/semantic-search/)
 - [임베딩](/wiki/embedding/)
 
-## 이 문서를 포함하는 코스
+### 이 문서를 포함하는 코스
 
 [임베딩과 RAG](/course/rag-search/)
 
+## 참고와 다음 학습
+
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
-## 참고 문헌
+### 참고 문헌
 
 <span id="reference-1"></span>1. [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) — paper
 <span id="reference-2"></span>2. [Sentence Transformers: Semantic Textual Similarity](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html) — documentation
 <span id="reference-3"></span>3. [Word embedding — Wikipedia](https://en.wikipedia.org/wiki/Word_embedding) — encyclopedia
 
-## 코스에서 계속 읽기
+### 코스에서 계속 읽기
 
 - **임베딩과 RAG:** [다음 문서 — 의미 검색](/wiki/semantic-search/)
