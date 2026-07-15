@@ -32,3 +32,9 @@ astro-dev-toolbar, .kudos { display: none !important; }
 .wiki-course-directory p { margin: .3rem 0; }
 .wiki-course-checked { color: #72777d; text-decoration: line-through; }
 @media(max-width:50rem){.explorer-controls,.prompt-controls{grid-template-columns:1fr;}}
+
+.wiki-pagination { display: flex; align-items: center; justify-content: center; gap: .8rem; margin: 1rem 0; border-top: 1px solid #c8ccd1; padding-top: 1rem; }
+.wiki-pagination[hidden] { display: none; }
+.wiki-pagination button { min-width: 4.4rem; border: 1px solid #72777d; border-radius: 0; background: #f8f9fa; color: #202122; padding: .42rem .7rem; font: inherit; cursor: pointer; }
+.wiki-pagination button:disabled { color: #72777d; cursor: default; opacity: .65; }
+.wiki-pagination span { min-width: 7rem; color: #54595d; text-align: center; font-size: .82rem; }

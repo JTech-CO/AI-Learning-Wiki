@@ -12,6 +12,11 @@
   </div>
   <p id="prompt-count" class="explorer-count" aria-live="polite">프롬프트를 불러오는 중…</p>
   <div id="prompt-results" class="prompt-results"></div>
+  <nav id="prompt-pagination" class="wiki-pagination" aria-label="프롬프트 목록 페이지" hidden>
+    <button id="prompt-prev" type="button">이전</button>
+    <span id="prompt-page-status" aria-live="polite"></span>
+    <button id="prompt-next" type="button">다음</button>
+  </nav>
 </section>
 
 <script>
@@ -19,7 +24,17 @@
   const query = document.querySelector('#prompt-query'); const course = document.querySelector('#prompt-course');
   const exampleFilter = document.querySelector('#prompt-examples'); const results = document.querySelector('#prompt-results'); const count = document.querySelector('#prompt-count');
   const promptDataUrl = document.querySelector('.prompt-explorer')?.getAttribute('data-prompts-url') ?? '../data/prompts.json';
+  const pagination = document.querySelector('#prompt-pagination');
+  const previousPage = document.querySelector('#prompt-prev');
+  const nextPage = document.querySelector('#prompt-next');
+  const pageStatus = document.querySelector('#prompt-page-status');
+  const PAGE_SIZE = 40;
   let prompts = [];
+  let currentPage = 1;
+  const initialParams = new URLSearchParams(location.search);
+  query.value = initialParams.get('q') ?? '';
+  exampleFilter.value = initialParams.get('examples') ?? '';
+  currentPage = Math.max(1, Number.parseInt(initialParams.get('page') ?? '1', 10) || 1);
   function card(prompt) {
     const article = document.createElement('article'); article.className = 'prompt-card';
     const meta = document.createElement('p'); meta.className = 'catalog-meta'; const courseLink = document.createElement('a'); courseLink.href = prompt.courseUrl; courseLink.textContent = courseNames[prompt.course] ?? prompt.courseTitle; meta.append(courseLink);
@@ -34,13 +49,42 @@
     if (prompt.examples.length) { const details = document.createElement('details'); const summary = document.createElement('summary'); summary.textContent = '작성 예시 보기'; details.append(summary); prompt.examples.forEach((example) => { const h = document.createElement('h4'); h.textContent = example.label; const p = document.createElement('pre'); p.textContent = example.input; details.append(h, p); }); article.append(details); }
     return article;
   }
-  function render() {
+  function syncUrl() {
+    const params = new URLSearchParams();
+    if (query.value.trim()) params.set('q', query.value.trim());
+    if (course.value) params.set('course', course.value);
+    if (exampleFilter.value) params.set('examples', exampleFilter.value);
+    if (currentPage > 1) params.set('page', String(currentPage));
+    const search = params.toString();
+    history.replaceState(null, '', search ? `?${search}` : location.pathname);
+  }
+  function render({ updateUrl = true } = {}) {
     const needle = query.value.trim().toLowerCase();
     const filtered = prompts.filter((prompt) => (!course.value || prompt.course === course.value) && (!exampleFilter.value || (exampleFilter.value === 'yes') === Boolean(prompt.examples.length)) && (!needle || `${prompt.title} ${prompt.template} ${(prompt.tags ?? []).join(' ')}`.toLowerCase().includes(needle)));
-    count.textContent = `${filtered.length}개 프롬프트 중 최대 40개 표시`;
-    results.replaceChildren(...filtered.slice(0, 40).map(card));
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    currentPage = Math.min(Math.max(1, currentPage), totalPages);
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = Math.min(start + PAGE_SIZE, filtered.length);
+    results.replaceChildren(...filtered.slice(start, end).map(card));
+    count.textContent = filtered.length ? `${filtered.length}개 중 ${start + 1}–${end}번째 프롬프트` : '조건에 맞는 프롬프트가 없습니다.';
+    pagination.hidden = filtered.length <= PAGE_SIZE;
+    previousPage.disabled = currentPage <= 1;
+    nextPage.disabled = currentPage >= totalPages;
+    pageStatus.textContent = `${currentPage} / ${totalPages} 페이지`;
+    if (updateUrl) syncUrl();
   }
-  fetch(promptDataUrl).then((response) => response.json()).then((data) => { prompts = data.prompts; [...new Set(prompts.map((item) => item.course))].forEach((id) => { const option = document.createElement('option'); option.value = id; option.textContent = courseNames[id]; course.append(option); }); render(); }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했습니다.');
-  [query, course, exampleFilter].forEach((control) => control?.addEventListener('input', render));
+  fetch(promptDataUrl).then((response) => {
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  }).then((data) => {
+    prompts = data.prompts;
+    [...new Set(prompts.map((item) => item.course))].forEach((id) => { const option = document.createElement('option'); option.value = id; option.textContent = courseNames[id] ?? id; course.append(option); });
+    const requestedCourse = initialParams.get('course') ?? '';
+    course.value = [...course.options].some((option) => option.value === requestedCourse) ? requestedCourse : '';
+    render({ updateUrl: false });
+  }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했습니다.');
+  [query, course, exampleFilter].forEach((control) => control?.addEventListener('input', () => { currentPage = 1; render(); }));
+  previousPage?.addEventListener('click', () => { if (currentPage > 1) { currentPage -= 1; render(); results.scrollIntoView({ block: 'start' }); } });
+  nextPage?.addEventListener('click', () => { currentPage += 1; render(); results.scrollIntoView({ block: 'start' }); });
 </script>
 
