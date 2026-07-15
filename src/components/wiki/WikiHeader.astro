@@ -1,7 +1,9 @@
 ---
 const query = Astro.url.searchParams.get('q') ?? '';
+const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
+const indexUrl = `${basePath}data/wiki-index.json`;
 ---
-<div class="wiki-header">
+<div class="wiki-header" data-wiki-index-url={indexUrl} data-wiki-base-path={basePath}>
   <a class="wiki-wordmark" href="/" aria-label="AI Learning Wiki 대문">
     <img class="wiki-site-logo" src="/logo.png" width="1254" height="1254" alt="" decoding="async" />
     <span class="wiki-wordmark-text">
@@ -15,7 +17,33 @@ const query = Astro.url.searchParams.get('q') ?? '';
     <button type="submit">검색</button>
   </form>
   <nav class="wiki-header-links" aria-label="빠른 메뉴">
-    <a href="/special/all-pages/">전체 문서</a>
-    <a href="/glossary/">용어 색인</a>
+    <a href="/special/all-pages/">전체 문서(색인)</a>
   </nav>
 </div>
+
+<script>
+  const header = document.querySelector('.wiki-header');
+  const randomLinks = [...document.querySelectorAll('[data-random-document]')];
+  if (header && randomLinks.length) {
+    const indexUrl = header.getAttribute('data-wiki-index-url');
+    const basePath = header.getAttribute('data-wiki-base-path') ?? '/';
+    const articlesPromise = fetch(indexUrl).then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    }).then((data) => data.articles);
+    randomLinks.forEach((link) => {
+      const fallbackUrl = link.href;
+      link.addEventListener('click', async (event) => {
+        event.preventDefault();
+        try {
+          const articles = await articlesPromise;
+          const article = articles[Math.floor(Math.random() * articles.length)];
+          if (!article?.id) throw new Error('random article missing');
+          location.assign(`${basePath}wiki/${encodeURIComponent(article.id)}/`);
+        } catch {
+          location.assign(fallbackUrl);
+        }
+      });
+    });
+  }
+</script>

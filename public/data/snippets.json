@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T13:39:48.782Z",
+  "generatedAt": "2026-07-15T16:37:32.367Z",
   "policyVersion": "W33-2026-07-15",
   "counts": {
     "sourceModules": 305,
@@ -7,6 +7,8 @@
     "duplicateMerges": 38,
     "exactDuplicateMerges": 35,
     "reviewedNearDuplicateMerges": 3,
+    "titleCleanups": 287,
+    "sourceNameCleanups": 2,
     "snippets": 25,
     "additions": 32,
     "prompts": 1142
@@ -16,7 +18,7 @@
       "id": "ai-builder-15-database-sql-basics-p15b-create-table",
       "type": "query",
       "typeLabel": "쿼리",
-      "title": "표 만들기(열 바꿔서 재사용)",
+      "title": "표 생성(열 바꿔서 재사용)",
       "content": "CREATE TABLE [표이름] ( id INTEGER PRIMARY KEY, [열1이름] TEXT, [열2이름] INTEGER );",
       "tags": [
         "스프레드시트",
@@ -50,7 +52,7 @@
       "id": "ai-builder-21-supabase-backend-p21b-todo-html",
       "type": "code",
       "typeLabel": "코드",
-      "title": "HTML 한 페이지 todo 앱 (그대로 복붙, 두 곳만 교체)",
+      "title": "HTML 한 페이지 todo 앱 (그대로 재사용, 두 곳만 교체)",
       "content": "아래 HTML을 그대로 복사한 뒤, 코드 안 `SUPABASE_URL`과 `SUPABASE_KEY` 두 곳만 내 값으로 교체해서 `todo.html`로 저장하고 더블클릭하세요.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset='utf-8'>\n  <title>내 할일</title>\n</head>\n<body>\n  <h2>내 할 일</h2>\n  <input id='t' placeholder='할 일 입력'>\n  <button onclick='add()'>추가</button>\n  <ul id='list'></ul>\n  <script src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2'></script>\n  <script>\n    const SUPABASE_URL='[내_Project_URL]';\n    const SUPABASE_KEY='[내_Publishable_key_또는_anon_public_키]';\n    const db=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);\n    async function load(){\n      const{data}=await db.from('todos').select('*').order('id');\n      document.getElementById('list').innerHTML=data.map(r=>'<li>'+r.task+'</li>').join('');\n    }\n    async function add(){\n      const v=document.getElementById('t').value;\n      if(!v)return;\n      await db.from('todos').insert({task:v});\n      document.getElementById('t').value='';\n      load();\n    }\n    load();\n  </script>\n</body>\n</html>\n```\n\n키: 2025년 11월 이후 프로젝트 → Publishable key `sb_publishable_...`, 그 이전 → anon public `eyJ...`.",
       "tags": [
         "문서 분석",
@@ -70,7 +72,7 @@
       "id": "ai-builder-26-github-basics-p26b-pr",
       "type": "template",
       "typeLabel": "문서 양식",
-      "title": "PR 설명 양식(복붙)",
+      "title": "PR 설명 양식(재사용)",
       "content": "## 무엇을 바꿨나\n- [바꾼 내용 1]\n- [바꾼 내용 2]\n\n## 왜 바꿨나\n- [이유]\n\n## 확인할 점\n- [ ] [확인 항목]",
       "tags": [
         "문서 분석",
@@ -89,7 +91,7 @@
       "id": "ai-builder-26-github-basics-p26b-issue",
       "type": "template",
       "typeLabel": "문서 양식",
-      "title": "이슈(할 일) 양식(복붙)",
+      "title": "이슈(할 일) 양식(재사용)",
       "content": "## 하고 싶은 것\n[원하는 결과 한 줄]\n\n## 해야 할 일\n- [ ] [작은 단계 1]\n- [ ] [작은 단계 2]\n\n## 참고\n[관련 링크나 메모]",
       "tags": [
         "문서 분석",
@@ -108,7 +110,7 @@
       "id": "ai-engineer-llm-api-app-p9e-basic",
       "type": "code",
       "typeLabel": "코드",
-      "title": "기본 1회 질문 (복붙용 전체 코드)",
+      "title": "기본 1회 질문 (재사용용 전체 코드)",
       "content": "import anthropic\nclient = anthropic.Anthropic(api_key=\"[내 API 키]\")\nmsg = client.messages.create(model=\"claude-opus-4-8\", max_tokens=[최대 답 길이 예: 500], messages=[{\"role\": \"user\", \"content\": \"[여기에 질문]\"}])\nprint(msg.content[0].text)\nprint(msg.usage)  # 토큰 수 확인",
       "tags": [
         "코딩",
@@ -300,7 +302,7 @@
       "id": "automation-http-requests-http-requests-p2",
       "type": "code",
       "typeLabel": "코드",
-      "title": "JSON API에서 값 뽑기",
+      "title": "JSON API에서 값 도출",
       "content": "import requests\nr = requests.get('[API 주소]', params={'[조건이름]':'[값]'}, timeout=5)\nr.raise_for_status()\ndata = r.json()\nprint(data['[꺼내고 싶은 이름표]'])",
       "tags": [
         "API",
@@ -318,7 +320,7 @@
       "id": "automation-logging-logging-p1",
       "type": "code",
       "typeLabel": "코드",
-      "title": "로깅 기본 틀(복붙용)",
+      "title": "로깅 기본 틀(재사용용)",
       "content": "import logging\n\nlogging.basicConfig(\n    filename='app.log',\n    level=logging.INFO,\n    format='%(asctime)s %(levelname)s %(message)s',\n    encoding='utf-8'\n)\n\nlogging.info('[작업이름] 시작')\ntry:\n    # 여기에 자동화가 할 일 작성\n    logging.info('[단계1 설명] 완료')\nexcept Exception as e:\n    logging.error(f'[단계1 설명] 실패: {e}')\n\nlogging.info('[작업이름] 끝')",
       "tags": [
         "글쓰기",

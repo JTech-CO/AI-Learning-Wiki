@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T13:39:48.782Z",
+  "generatedAt": "2026-07-15T16:37:32.367Z",
   "policyVersion": "W33-2026-07-15",
   "counts": {
     "sourceModules": 305,
@@ -7,6 +7,8 @@
     "duplicateMerges": 38,
     "exactDuplicateMerges": 35,
     "reviewedNearDuplicateMerges": 3,
+    "titleCleanups": 287,
+    "sourceNameCleanups": 2,
     "snippets": 25,
     "additions": 32,
     "prompts": 1142
@@ -17,7 +19,7 @@
       "course": "model-training",
       "courseTitle": "모델 학습과 튜닝",
       "courseUrl": "/course/model-training/",
-      "title": "AI에게 'AI가 뭔지' 쉽게 설명 듣기",
+      "title": "'AI가 뭔지' 쉽게 설명 듣기",
       "template": "안녕! 나는 [초등학교 4학년]이야. 'AI가 무엇인지'를 마법이 아니라 진짜 원리로, 비유를 하나 들어서 5문장 안으로 아주 쉽게 설명해줘.",
       "notes": "",
       "tags": [
@@ -69,25 +71,18 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "무엇이든 좋은 답 받는 만능 주문서",
+      "title": "무엇이든 좋은 답 받는 주문서",
       "template": "역할: 너는 [분야] 전문가야. 상황: 나는 [내 상황·수준]. 원하는 것: [구체적 결과물]을 만들어줘. 조건: [형식(표·목록·줄 수)], [말투], [빼야 할 것]. 모르면 추측하지 말고 나에게 되물어봐.",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "요약",
         "문서 분석",
         "프롬프트 설계",
         "안전"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "역할: 너는 실제 값 전문가야. 상황: 나는 실제 값. 원하는 것: 실제 값을 만들어줘. 조건: 월별 고객 문의 건수 표, 정중하고 간결한 말투, 실제 값. 모르면 추측하지 말고 나에게 되물어봐.",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/model/",
-      "url": "/wiki/model/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/model/"
     },
     {
       "id": "p2-summarize",
@@ -150,7 +145,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "AI에게 사용법부터 물어보기 (첫 질문 추천)",
+      "title": "사용법 질문",
       "template": "안녕! 나는 AI 챗봇을 오늘 처음 써보는 초보야. [내 상황: 예-40대 직장인, 엑셀을 자주 씀]을 알려줄게. 너를 내 일상과 일에 활용할 수 있는 방법 3가지를, 초등학생도 알아듣게 아주 쉬운 말로 예시와 함께 알려줘.",
       "notes": "",
       "tags": [
@@ -202,7 +197,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "내 첫 실전 질문 만들기",
+      "title": "내 첫 실전 질문 생성",
       "template": "내가 지금 겪는 고민은 [고민: 예-주말에 아이랑 뭐 하고 놀지 모르겠음]이야. 이걸 해결하도록 구체적인 아이디어 5개를, 준비물과 함께 알려줘.",
       "notes": "",
       "tags": [
@@ -218,7 +213,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "그림 자세히 부탁하기",
+      "title": "그림 자세히 요청",
       "template": "갈색 강아지가 빨간 풍선을 들고 있는 모습을 크레용으로 그린 그림",
       "notes": "",
       "tags": [
@@ -236,7 +231,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "색·개수까지 정해 부탁하기",
+      "title": "색·개수까지 정해 요청",
       "template": "노란 우산 2개를 든 하얀 고양이를 바닷가에서 그린 그림",
       "notes": "",
       "tags": [
@@ -273,7 +268,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "첫 질문 (가장 쉬운 시작)",
+      "title": "첫 질문",
       "template": "[궁금한 것 한 가지]를 초등학생도 이해할 만큼 쉽게 3줄로 알려줘.",
       "notes": "",
       "tags": [
@@ -387,7 +382,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "기본 또렷한 명령 (만능 틀)",
+      "title": "기본 또렷한 명령 (틀)",
       "template": "[누구]에게 [무엇을 할/읽을] 용으로, [주제]에 대해 [쉬운 말/재미있게]로 [개수/길이]만큼 알려줘",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -459,7 +454,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "4요소 만능 프롬프트",
+      "title": "4요소 프롬프트",
       "template": "[지시] 아래 요청을 수행해줘: [무엇을 만들지 결과물과 개수]\n[맥락] 나는 [나/우리 소개]이고, 이 결과물의 독자는 [대상]이야. 목적은 [왜 필요한지]. 톤은 [원하는 분위기].\n[예시] 이런 느낌이 좋아: [좋아하는 예 1개]. 이런 건 피해줘: [싫은 예 1개].\n[출력형식] [분량·개수·형식(목록/표/해시태그 등)]로 줘.",
       "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
@@ -538,25 +533,18 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "만능 3종 맥락 프롬프트 (가장 먼저)",
+      "title": "3종 맥락 프롬프트",
       "template": "[대상: 누구에게]에게, [배경: 어떤 상황이라서] [하고 싶은 일]을 해줘. 조건은 [제약: 길이·형식·말투]야.",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "이메일",
         "의사결정",
         "교육",
         "프롬프트 설계"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "신입 직장인에게, 실제 값 실제 값을 해줘. 조건은 정중하고 간결한 말투야.",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/prompt/"
     },
     {
       "id": "p9i-mail",
@@ -690,7 +678,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "길이·말투 다듬기 (가장 자주 씀)",
+      "title": "길이·말투 다듬기",
       "template": "방금 답변에서 [내용은 그대로 두고 / 핵심만 남기고] 길이를 [두 문장]으로 줄이고, 말투는 [친근한 반말 / 정중한 존댓말]로 바꿔줘.",
       "notes": "",
       "tags": [
@@ -753,7 +741,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "표로 받기 (가장 자주 씀)",
+      "title": "표 형식 출력",
       "template": "[질문 내용] 결과를 표로 만들어줘. 열은 [열1], [열2], [열3] 이렇게 3개로 하고, 각 칸은 짧게 써줘. 줄글 설명은 넣지 마.",
       "notes": "",
       "tags": [
@@ -823,7 +811,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "역할 부여 기본형 (가장 많이 씀)",
+      "title": "역할 부여 기본형",
       "template": "너는 [역할: 예-친절한 초등 영어 선생님]이야. [질문/요청 내용]을 설명해줘. 초보자도 이해하게 쉬운 말과 예시를 써줘.",
       "notes": "",
       "tags": [
@@ -859,14 +847,21 @@
       "courseUrl": "/course/ai-foundations/",
       "title": "디테일 얹은 페르소나",
       "template": "너는 [경력/성격: 예-20년 경력의 유쾌한] [역할: 예-학원 강사]이고, 항상 [특징: 예-실생활 예시로] 설명해. 말투는 [어조: 예-친근한 반말/정중한 존댓말]로. 이제 [질문 내용]을 알려줘.",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "프롬프트 설계",
         "검증"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "너는 경력 데이터 분석가이고, 항상 특징: 예-실생활 예시로 설명해. 말투는 어조: 예-친근한 반말로. 이제 회의록 원문을 알려줘.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/role-prompting/",
-      "url": "/wiki/role-prompting/"
+      "url": "/wiki/role-prompting/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p13i-eval",
@@ -1032,7 +1027,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "예시 하나로 형식 따라 하게 (가장 많이 씀)",
+      "title": "예시 하나로 형식 따라 하게",
       "template": "아래는 내가 원하는 결과의 예시야. 이 형식과 말투를 그대로 따라서 새 입력에 답해줘.\n[예시 입력]: [여기에 상황 하나]\n[예시 출력]: [내가 원하는 완벽한 결과물]\n[새 입력]: [실제로 처리할 내용]",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -1056,20 +1051,27 @@
       "courseUrl": "/course/ai-foundations/",
       "title": "예시 2~3개로 정확도 올리기",
       "template": "아래 예시들의 형식·길이·말투를 정확히 똑같이 따라 해줘. 설명은 하지 말고 결과만 줘.\n예시1 입력: [상황A] 예시1 출력: [원하는 결과A]\n예시2 입력: [상황B] 예시2 출력: [원하는 결과B]\n새 입력: [실제 내용]",
-      "notes": "",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
         "프롬프트 설계"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "아래 예시들의 형식·길이·말투를 정확히 똑같이 따라 해줘. 설명은 하지 말고 결과만 줘.\n예시1 입력: 실제 값 예시1 출력: 실제 값\n예시2 입력: 실제 값 예시2 출력: 실제 값\n새 입력: 회의록 원문",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/"
+      "url": "/wiki/prompt/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p16i-genexamples",
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "AI에게 예시 자체를 더 만들게 하기",
+      "title": "예시 자체를 더 만들게 하기",
       "template": "아래는 내가 만든 견본 예시 1개야. 이 형식(길이·말투·구조)을 그대로 유지하면서, 서로 다른 상황의 예시 [2]개를 네가 추가로 만들어줘.\n견본 입력: [상황] 견본 출력: [결과]",
       "notes": "",
       "tags": [
@@ -1099,7 +1101,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "① 나쁜 답 진단 요청 (가장 먼저)",
+      "title": "1 나쁜 답 진단 요청",
       "template": "아래는 내가 쓴 프롬프트와 그 결과, 내가 원했던 것이야.\n[내 프롬프트] \"\"\"[원래 프롬프트]\"\"\"\n[AI가 준 답] \"\"\"[실망스러운 답]\"\"\"\n[내가 원했던 것] [한 문장]\n이 프롬프트를 역할/맥락/구체지시/예시/출력형식 5요소로 나눠 어느 요소가 비었거나 약한지 표로 진단해줘. 그리고 '한 번에 하나만 고친다'는 원칙으로 가장 먼저 고칠 요소 딱 하나만 추천하고 이유를 말해줘.",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -1124,7 +1126,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "② 한 요소만 수정한 버전 요청",
+      "title": "2 한 요소만 수정한 버전 요청",
       "template": "다음 프롬프트에서 [고칠 요소: 예-맥락] 부분만 보강하고 나머지 문장은 절대 바꾸지 마. 무엇을 어떻게 바꿨는지 수정 전/후를 굵게 표시해 보여준 다음, 수정된 프롬프트 전체를 코드블록으로 줘.\n[원래 프롬프트] \"\"\"[붙여넣기]\"\"\"\n보강 기준: [예: 독자는 초등 4학년, 용어 모름]",
       "notes": "",
       "tags": [
@@ -1143,25 +1145,32 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "③ 두 답 비교·판정 요청",
+      "title": "3 두 답 비교·판정 요청",
       "template": "같은 요청에 대한 두 답이 있어. 내 목표는 [증상 목표: 예-더 쉽고 짧게]야.\n[이전 답] \"\"\"[붙여넣기]\"\"\"\n[수정 후 답] \"\"\"[붙여넣기]\"\"\"\n목표 기준으로 어느 쪽이 나은지, 증상이 얼마나 줄었는지, 아직 남은 문제는 무엇인지 3줄로 판정해줘. 다음엔 5요소 중 어디를 건드려야 할지도 알려줘.",
-      "notes": "",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
         "의사결정",
         "디버깅",
         "프롬프트 설계",
         "모델 학습"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "같은 요청에 대한 두 답이 있어. 내 목표는 반복 업무 시간을 절반으로 줄이기야.\n실제 값 \"\"\"실제 값\"\"\"\n실제 값 \"\"\"실제 값\"\"\"\n목표 기준으로 어느 쪽이 나은지, 증상이 얼마나 줄었는지, 아직 남은 문제는 무엇인지 3줄로 판정해줘. 다음엔 5요소 중 어디를 건드려야 할지도 알려줘.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/role-prompting/",
-      "url": "/wiki/role-prompting/"
+      "url": "/wiki/role-prompting/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p17i-template",
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "④ 성공 프롬프트 템플릿화 요청",
+      "title": "4 성공 프롬프트 템플릿화 요청",
       "template": "아래 완성된 프롬프트에서 다음에 재사용할 수 있게 주제·대상 등 바뀔 부분만 대괄호 [ ] 변수로 바꿔 템플릿으로 만들어줘. 그리고 이번 디버깅에서 핵심이었던 교훈을 한 줄로 요약해줘.\n[완성 프롬프트] \"\"\"[붙여넣기]\"\"\"",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -1203,7 +1212,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "AI에게 사실 확인 되묻기",
+      "title": "사실 확인 되묻기",
       "template": "방금 네가 말한 [내용]이 진짜로 있었던 사실이야? 만약 확실하지 않으면 '잘 모르겠다'고 솔직하게 말해줘.",
       "notes": "",
       "tags": [
@@ -1238,7 +1247,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "출처 강제 검증 프롬프트 (가장 유용)",
+      "title": "출처 강제 검증 프롬프트",
       "template": "다음 답변에서 사실·숫자·인용·날짜를 모두 찾아 표로 정리해줘. 각 항목마다 (1)출처를 댈 수 있는지, (2)불확실하면 '확인 필요'로 표시해줘. 출처가 없는 주장은 절대 사실인 척하지 마. [여기에 AI가 준 답변 붙여넣기]",
       "notes": "",
       "tags": [
@@ -1391,7 +1400,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "근거·확신도 되묻기 (가장 먼저)",
+      "title": "근거·확신도 되묻기",
       "template": "방금 준 답에 대해 다음을 표로 정리해줘. 1) 각 핵심 주장 2) 그 근거 출처 3) 네 확신도(높음/중간/낮음) 4) 확실하지 않아 외부 검증이 필요한 부분. 근거를 댈 수 없는 항목은 솔직히 '출처 없음'이라고 표시해줘. 주제: [질문 내용]",
       "notes": "",
       "tags": [
@@ -1451,7 +1460,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "내 분야 검증 규칙표 만들기",
+      "title": "내 분야 검증 규칙표 생성",
       "template": "나는 [내 직업/관심 분야]에서 AI를 자주 쓴다. 이 분야에서 검증 없이 그대로 쓰면 위험한 정보 유형과, 각각을 확인할 수 있는 한국 공식 출처를 3열 표(정보유형 / 위험도 / 공식출처)로 정리해줘.",
       "notes": "",
       "tags": [
@@ -1525,7 +1534,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "긴 글·기사 통째로 이해하기",
+      "title": "긴 글·기사 전체로 이해하기",
       "template": "아래 글을 초등학생도 알게 쉽게 풀어줘. 모르는 용어는 괄호로 한 줄 풀이 달고, 마지막에 핵심 3줄로 요약해줘. [기사나 문서 전체 붙여넣기]",
       "notes": "",
       "tags": [
@@ -1545,7 +1554,7 @@
       "course": "model-training",
       "courseTitle": "모델 학습과 튜닝",
       "courseUrl": "/course/model-training/",
-      "title": "눈높이+비유 지정 설명 (가장 자주 씀)",
+      "title": "눈높이+비유 지정 설명",
       "template": "[이해하고 싶은 개념]을(를) 초등학생도 이해할 수 있게, [친숙한 소재: 요리/게임/택배 등]에 비유해서 3문장으로 설명해줘. 어려운 용어는 쓰지 말고, 썼다면 바로 옆에 쉬운 말로 풀어줘.",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -1706,9 +1715,9 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "주차별 로드맵 만들기 (가장 먼저)",
+      "title": "주차별 로드맵 생성",
       "template": "당신은 내 개인 학습 코치입니다. 아래 조건으로 현실적인 주차별 학습 로드맵을 표로 만들어 주세요.\n- 배울 주제: [예: 파이썬으로 엑셀 업무 자동화]\n- 목표(왜): [예: 3개월 뒤 회사 반복 업무 자동화]\n- 현재 수준: [예: 프로그래밍 완전 초보]\n- 주당 가능 시간: [예: 주 5시간, 평일 밤 30분 + 토 오전 2.5시간]\n- 총 기간: [예: 12주]\n요구사항: (1)각 주차마다 학습 주제·구체 활동·예상 시간을 표로, (2)쉬운 것부터 어려운 순서로, (3)마지막 주는 복습/작은 프로젝트로 마무리. 표만 먼저 보여주세요.",
-      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+      "notes": "",
       "tags": [
         "계획",
         "교육",
@@ -1717,16 +1726,9 @@
         "자동화",
         "프롬프트 설계"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "당신은 내 개인 학습 코치입니다. 아래 조건으로 현실적인 주차별 학습 로드맵을 표로 만들어 주세요.\n- 배울 주제: 파이썬으로 엑셀 업무 자동화\n- 목표(왜): 가온테크\n- 현재 수준: 프로그래밍 완전 초보\n- 주당 가능 시간: 주 5시간, 평일 밤 30분 + 토 오전 2.5시간\n- 총 기간: 12주\n요구사항: (1)각 주차마다 학습 주제·구체 활동·예상 시간을 표로, (2)쉬운 것부터 어려운 순서로, (3)마지막 주는 복습/작은 프로젝트로 마무리. 표만 먼저 보여주세요.",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/prompt/"
     },
     {
       "id": "p25i-adjust",
@@ -1880,7 +1882,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "기본 다듬기 (가장 먼저)",
+      "title": "기본 다듬기",
       "template": "다음 글을 맞춤법과 띄어쓰기를 교정하고, 원래 뜻은 그대로 유지한 채 더 간결하고 자연스럽게 다듬어줘. 어려운 표현은 쉽게 바꿔줘. 원문: [여기에 내 글 붙여넣기]",
       "notes": "",
       "tags": [
@@ -1914,7 +1916,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "세 가지 버전 뽑기",
+      "title": "세 가지 버전 도출",
       "template": "다음 글을 서로 다른 느낌으로 3가지 버전으로 다듬어줘. 1) 간결하고 담백하게 2) 정중하고 격식 있게 3) 부드럽고 친근하게. 각 버전마다 어떤 상황에 어울리는지 한 줄로 설명해줘. 원문: [여기에 내 글 붙여넣기]",
       "notes": "",
       "tags": [
@@ -1947,9 +1949,9 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "어조 3종 한 번에 뽑기 (가장 유용)",
+      "title": "어조 3종 한 번에 도출",
       "template": "아래 [원문]을 내용은 그대로 두고 어조만 바꿔서 세 가지 버전으로 써줘. 1) 정중체(격식 높음, 윗사람용) 2) 친근체(편안한 사이용) 3) 간결체(핵심만). 각 버전은 3문장 이내로.\n받는 사람: [예: 팀장님] 상황: [예: 갑작스러운 회의 불참 양해]\n[원문]: [여기에 내 문장 붙여넣기]",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "이메일",
@@ -1957,16 +1959,9 @@
         "프롬프트 설계",
         "협업"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "아래 회의록 원문을 내용은 그대로 두고 어조만 바꿔서 세 가지 버전으로 써줘. 1) 정중체(격식 높음, 윗사람용) 2) 친근체(편안한 사이용) 3) 간결체(핵심만). 각 버전은 3문장 이내로.\n받는 사람: 팀장님 상황: 갑작스러운 회의 불참 양해\n회의록 원문: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/prompt/"
     },
     {
       "id": "p28i-dial",
@@ -2007,7 +2002,7 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "내 어조 프리셋 만들기",
+      "title": "내 어조 프리셋 생성",
       "template": "나는 [상황: 예-상사에게 사과]할 때 항상 [격식 숫자]·[이모지 유무]·[문장 수 제한]·[반드시 포함할 요소] 스타일로 쓰고 싶어. 이 규칙을 앞으로 재사용할 수 있게 한 줄 지시문으로 정리해주고, 예시 문장도 하나 만들어줘.",
       "notes": "",
       "tags": [
@@ -2024,9 +2019,9 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "개요→초안 자동 완성 (가장 유용)",
+      "title": "개요→초안 자동 완성",
       "template": "너는 사내 문서 담당자야. 아래 [개요]와 [사실 메모]만 근거로 사내 공지문 초안을 존댓말로 써줘. 규칙: (1)메모에 없는 사실·규정·숫자는 절대 지어내지 말 것 (2)섹션 순서는 개요 그대로 (3)각 섹션은 2~4문장 (4)마지막에 마감일과 문의처를 눈에 띄게.\n[독자] [예: 3팀 전원]\n[개요] [소제목 3~5줄 붙여넣기]\n[사실 메모] [섹션별 사실 조각 붙여넣기]",
-      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "문서 분석",
@@ -2035,23 +2030,16 @@
         "출처·인용",
         "협업"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 사내 문서 담당자야. 아래 실제 값와 실제 값만 근거로 사내 공지문 초안을 존댓말로 써줘. 규칙: (1)메모에 없는 사실·규정·숫자는 절대 지어내지 말 것 (2)섹션 순서는 개요 그대로 (3)각 섹션은 2~4문장 (4)마지막에 마감일과 문의처를 눈에 띄게.\n신입 직장인 3팀 전원\n실제 값 실제 값\n실제 값 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/structured-output/",
-      "url": "/wiki/structured-output/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/structured-output/"
     },
     {
       "id": "p29i-title",
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "제목·한 줄 요약 후보 만들기",
+      "title": "제목·한 줄 요약 후보 생성",
       "template": "아래 글을 읽고 (1)무엇을·언제까지가 드러나는 제목 후보 3개 (2)바쁜 사람용 한 줄 요약(TL;DR) 1개를 만들어줘. 제목은 20자 이내, 과장·이모지 없이 담백하게. [본문] [초안 붙여넣기]",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -2153,7 +2141,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "계약서·약관 → 주의할 점 뽑기",
+      "title": "계약서·약관 → 주의할 점 도출",
       "template": "이 [계약서/약관]에서 내가 손해 볼 수 있거나 주의해야 할 조항만 골라서, 각 항목을 '쉬운 설명 + 왜 주의해야 하는지' 형식으로 알려줘. 5개 이내로.",
       "notes": "",
       "tags": [
@@ -2193,7 +2181,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "① 핵심 요점 3~5개 뽑기 (가장 많이 씀)",
+      "title": "1 핵심 요점 3~5개 도출",
       "template": "아래 글에서 가장 중요한 핵심 요점만 3~5개 골라, 번호 목록으로, 한 항목당 한 줄로 정리해줘. 배경 설명이나 반복되는 내용은 빼고 알맹이만 남겨줘. [여기에 긴 글 붙여넣기]",
       "notes": "",
       "tags": [
@@ -2210,7 +2198,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "② 결론 + 내가 할 일 뽑기",
+      "title": "2 결론 + 내가 할 일 도출",
       "template": "아래 글을 읽고 두 가지만 알려줘. 1) 핵심 결론 한 줄, 2) 내가 실제로 해야 할 행동 항목(action item)을 마감일이 있으면 함께 목록으로. 그 외 내용은 생략해도 돼. [여기에 글 붙여넣기]",
       "notes": "",
       "tags": [
@@ -2228,7 +2216,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "③ 회의록/대화에서 결정사항만",
+      "title": "3 회의록/대화에서 결정사항만",
       "template": "아래는 회의(또는 단체 대화) 내용이야. 여기서 '결정된 사항'과 '누가 무엇을 언제까지 하기로 했는지'만 표 형태(담당자 / 할 일 / 기한)로 정리해줘. 잡담과 미정 사항은 빼줘. [여기에 회의록/대화 붙여넣기]",
       "notes": "",
       "tags": [
@@ -2247,7 +2235,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "④ 요약 더 좁히기 (후속 요청)",
+      "title": "4 요약 더 좁히기 (후속 요청)",
       "template": "방금 요약이 너무 길어. 나한테 직접 영향을 주는 것만 골라 [숫자]개로 줄이고, 어려운 용어는 초등학생도 이해할 쉬운 말로 바꿔줘.",
       "notes": "",
       "tags": [
@@ -2265,9 +2253,9 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "① 근거 기반 문서 질문 (가장 먼저)",
+      "title": "1 근거 기반 문서 질문",
       "template": "아래 문서를 읽고 내 질문에 답해줘. 규칙: ① 이 문서에 있는 내용만으로 답할 것 ② 답마다 근거가 된 원문 문장을 \"큰따옴표\"로 그대로 인용할 것 ③ 문서에 없으면 지어내지 말고 \"문서에 명시 없음\"이라고 답할 것.\n[질문] 1) [궁금한 조건 — 예: 환불 신청 기한은 며칠이고 무엇을 기준으로 하는지] 2) [두 번째 질문]\n[문서] <<< [약관·계약서·규정 전문 붙여넣기] >>>",
-      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "문서 분석",
@@ -2275,23 +2263,16 @@
         "안전",
         "법무"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "아래 문서를 읽고 내 질문에 답해줘. 규칙: ① 이 문서에 있는 내용만으로 답할 것 ② 답마다 근거가 된 원문 문장을 \"큰따옴표\"로 그대로 인용할 것 ③ 문서에 없으면 지어내지 말고 \"문서에 명시 없음\"이라고 답할 것.\n실제 값 1) 2026년 7월 31일 2) 실제 값\n회의록 원문 <<< 실제 값 >>>",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/citation/",
-      "url": "/wiki/citation/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/citation/"
     },
     {
       "id": "p32i-verify",
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "② 근거 대조 검증",
+      "title": "2 근거 대조 검증",
       "template": "방금 답에서 근거 원문을 인용한 항목과, 인용 없이 추측으로 보이는 항목을 나눠서 표시해줘. 인용이 없는 항목은 '문서 미기재로 추정'이라고 명확히 표시하고, 절대 새로 지어내지 마.",
       "notes": "",
       "tags": [
@@ -2310,7 +2291,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "③ 조건 적용 시점 콕 집기",
+      "title": "3 조건 적용 시점 콕 집기",
       "template": "[특정 조건 — 예: 위약금 면제]이 정확히 '언제/어떤 경우에' 적용되는지만 알려줘. 적용되는 상황과 적용 안 되는 상황을 각각 원문 인용과 함께 구분해줘. 문서에 시점이 안 나와 있으면 '시점 미명시'라고 답해.",
       "notes": "",
       "tags": [
@@ -2328,7 +2309,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "④ 최종 표 정리",
+      "title": "4 최종 표 정리",
       "template": "지금까지의 모든 질문과 답을 | 질문 | 답 | 근거 원문 | 판정(근거있음/추측·미기재) | 4칸 표로 정리해줘. 판정이 '추측·미기재'인 행만 아래에 따로 모아 '사람에게 재확인 필요' 목록으로 뽑아줘.",
       "notes": "",
       "tags": [
@@ -2347,24 +2328,17 @@
       "course": "ai-foundations",
       "courseTitle": "AI 기초",
       "courseUrl": "/course/ai-foundations/",
-      "title": "흩어진 글을 표로 (가장 자주 씀)",
+      "title": "흩어진 글을 표로",
       "template": "다음 내용을 [날짜/회사/담당자/연락처/용건] 열을 가진 표로 정리해줘. 각 행은 하나의 항목이고, 값이 없는 칸은 - 로 표시해. 내가 준 정보에 없는 내용은 절대 지어내지 마. [여기에 원본 텍스트 붙여넣기]",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "프롬프트 설계",
         "구조화 출력"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "다음 내용을 2026년 7월 31일 열을 가진 표로 정리해줘. 각 행은 하나의 항목이고, 값이 없는 칸은 - 로 표시해. 내가 준 정보에 없는 내용은 절대 지어내지 마. 회의록 원문",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/structured-output/",
-      "url": "/wiki/structured-output/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/structured-output/"
     },
     {
       "id": "p33i-filter",
@@ -2478,7 +2452,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "상상 이야기 만들기 (안전한 놀이)",
+      "title": "상상 이야기 생성 (안전한 놀이)",
       "template": "[좋아하는 동물]이 주인공인 짧고 재미있는 동화를 만들어 줘. 무서운 내용은 빼고.",
       "notes": "",
       "tags": [
@@ -2495,7 +2469,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "① 민감정보 안전 치환 (가장 많이 씀)",
+      "title": "1 민감정보 안전 치환",
       "template": "다음 문장을 AI에게 안전하게 물어볼 수 있도록, 실명은 '고객A' 같은 가명으로, 주민번호·카드번호·계좌·전화번호 같은 식별번호는 형식만 남기고 [가림] 처리해서 다시 써줘. 의미는 그대로 유지해줘. 원문: [내 문장 붙여넣기]",
       "notes": "",
       "tags": [
@@ -2514,7 +2488,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "② 내 문장 민감정보 점검",
+      "title": "2 내 문장 민감정보 점검",
       "template": "아래 문장에 넣으면 안 되는 개인정보나 민감정보(주민번호, 카드/계좌번호, 비밀번호, 타인 실명·연락처, 건강정보, 회사기밀)가 있는지 항목별로 찾아줘. 있으면 어떻게 바꾸면 안전한지도 알려줘. 문장: [점검할 문장]",
       "notes": "",
       "tags": [
@@ -2533,7 +2507,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "③ 상황별 안전 질문 만들기",
+      "title": "3 상황별 안전 질문 생성",
       "template": "나는 [상황: 예 - 카드 결제 오류 문의]을 AI에게 물어보고 싶은데, 실제 개인정보 없이도 좋은 답을 받을 수 있게 질문을 다시 작성해줘. 가명과 범주(예: 30대 남성)를 사용해줘.",
       "notes": "",
       "tags": [
@@ -2553,7 +2527,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "④ 우리 가족·팀용 규칙 카드",
+      "title": "4 우리 가족·팀용 규칙 카드",
       "template": "AI를 처음 쓰는 사람을 위해 'AI에 넣으면 안 되는 정보' 규칙을 5줄 이내로, 초등학생도 이해할 쉬운 한국어로 만들어줘. 냉장고에 붙일 카드 형식으로.",
       "notes": "",
       "tags": [
@@ -2573,7 +2547,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "편향 탐지 재질문 (가장 유용)",
+      "title": "편향 탐지 재질문",
       "template": "방금 네 답에서 성별, 국적, 나이, 가족 형태, 종교 같은 부분을 네가 임의로 정한 곳이 있으면 모두 짚어줘. 각각 왜 그렇게 정했는지, 근거가 있는지 없는지 솔직하게 알려줘. 그리고 다른 선택지도 함께 제시해줘.",
       "notes": "",
       "tags": [
@@ -2801,7 +2775,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "5요소 → 영어 이미지 프롬프트 변환 (가장 먼저)",
+      "title": "5요소 → 영어 이미지 프롬프트 변환",
       "template": "아래 한국어 5요소를 이미지 생성 AI용 영어 프롬프트 한 줄로 바꿔줘. 미사여구는 빼고 시각적 단어 위주로, 각 요소가 다 들어가게 해줘.\n주제: [주황 고양이가 창가에 앉음] 스타일: [수채화] 구도: [로우앵글 클로즈업] 색감: [따뜻한 파스텔] 분위기: [나른한 오후 햇살]",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -2843,7 +2817,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "한 요소만 바꿀 후보 뽑기",
+      "title": "한 요소만 바꿀 후보 도출",
       "template": "지금 이 이미지 프롬프트를 쓰고 있어: [현재 영어 프롬프트]. 결과에서 [불만인 점, 예: 구도가 밋밋함]이 마음에 안 들어. 이 요소 하나만 바꿀 수 있는 대체 단어 5개를 제안해줘. 나머지는 그대로 둘 거야.",
       "notes": "",
       "tags": [
@@ -2860,7 +2834,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "스타일 단어 사전 만들기",
+      "title": "스타일 단어 사전 생성",
       "template": "이미지 생성에서 자주 쓰는 '스타일' 키워드를 초보가 알아둘 만한 것 10개만, 한국어 뜻과 영어 표기를 함께 표로 정리해줘. 예: 수채화(watercolor).",
       "notes": "",
       "tags": [
@@ -2879,13 +2853,20 @@
       "courseUrl": "/course/multimodal-ai/",
       "title": "기준 이미지 첫 생성",
       "template": "[장면 한 줄 설명: 누가/어디서/무엇을]. 배경: [배경·시간·날씨]. 스타일: [사실적인 사진/수채화 일러스트/3D 렌더 중 택1]. 비율: [3:4 세로]. 고화질로 만들어줘.",
-      "notes": "",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
         "이미지"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "실제 값. 배경: 실제 값. 스타일: 실제 값. 비율: 실제 값. 고화질로 만들어줘.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/image-generation/",
-      "url": "/wiki/image-generation/"
+      "url": "/wiki/image-generation/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p40i-styleonly",
@@ -3025,7 +3006,7 @@
       "course": "llm-internals",
       "courseTitle": "LLM 내부 구조",
       "courseUrl": "/course/llm-internals/",
-      "title": "무료 유지 vs 유료 전환 판단표 만들기",
+      "title": "무료 유지 vs 유료 전환 판단표 생성",
       "template": "나는 AI 무료 버전을 쓰는 [직업/상황]이야. '무료 유지'와 '유료 전환'을 결정하도록 표를 만들어줘. 행은 (1)하루 평균 사용횟수 (2)최근 2주 한도 도달 횟수 (3)속도 답답함 (4)무료 답변 품질 부족 체감 (5)월 [금액]원 부담 정도. 각 행을 무료쪽/유료쪽 점수로 채울 수 있게 빈칸으로 주고, 합산해서 어느 쪽인지 판단하는 방법도 알려줘.",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -3087,7 +3068,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "1) 조사 (검색형 AI에 붙여넣기)",
+      "title": "조사 (검색형 AI에 붙여넣기)",
       "template": "나는 [주제]에 대한 글을 쓰려고 해. 2026년 기준 최신 핵심 정보 3~5가지를 알려줘. 각 항목마다 반드시 출처 링크를 함께 달아주고, 확실하지 않은 건 '불확실'이라고 표시해줘.",
       "notes": "",
       "tags": [
@@ -3107,9 +3088,9 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "2) 초안 쓰기 (챗봇에 재료와 함께)",
+      "title": "초안 쓰기 (챗봇에 재료와 함께)",
       "template": "아래는 내가 모은 조사 재료야: [조사 결과 붙여넣기] 이 재료만 사용해서 [독자: 예 초보 사장]를 위한 [분량: 예 800자] 글 초안을 써줘. 톤은 [예: 친근하고 쉬운], 소제목 3개로 구성하고, 재료에 없는 내용은 지어내지 마.",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "글쓰기",
         "요약",
@@ -3118,16 +3099,23 @@
         "검색",
         "이미지"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "아래는 내가 모은 조사 재료야: 실제 값 이 재료만 사용해서 신입 직장인를 위한 실제 값 글 초안을 써줘. 톤은 친근하고 쉬운, 소제목 3개로 구성하고, 재료에 없는 내용은 지어내지 마.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/tool-selection/",
-      "url": "/wiki/tool-selection/"
+      "url": "/wiki/tool-selection/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p43i-image",
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "3) 대표 이미지 만들기 (이미지 생성 도구에)",
+      "title": "대표 이미지 생성 (이미지 생성 도구에)",
       "template": "[장면 묘사: 예 아늑한 동네 카페 외관], [분위기: 따뜻한 조명], [스타일: 일러스트], [비율: 가로형 썸네일]. 글자는 넣지 말고 깔끔하게.",
       "notes": "",
       "tags": [
@@ -3147,7 +3135,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "4) 검토·다듬기 (챗봇에)",
+      "title": "검토·다듬기 (챗봇에)",
       "template": "아래 글의 오탈자, 어색한 문장, 사실이 틀릴 수 있는 부분을 표로 정리해줘. '원문 / 문제 / 수정안' 3칸으로 보여주고, 확인이 필요한 사실 주장에는 ⚠️ 표시를 해줘. [글 붙여넣기]",
       "notes": "",
       "tags": [
@@ -3167,7 +3155,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "1) 안내문·보고서 초안 생성 (가장 먼저)",
+      "title": "안내문·보고서 초안 생성",
       "template": "너는 실무 카피라이터야. 아래 '확정 정보'만 사용해서 [행사 안내문]을 작성해줘. 없는 정보는 절대 지어내지 말고 [빈칸]으로 남겨줘.\n[대상 독자]: [예: 20~30대 독서모임 회원]\n[톤]: [예: 친근한 존댓말] [분량]: [예: A4 반 페이지, 본문 5줄 이내]\n[형식]: 제목 3안 + 본문 + 이미지에 넣을 짧은 문구 1줄\n확정 정보: - 행사명:[ ] - 날짜/시간:[ ] - 장소/주소:[ ] - 참가비:[ ] - 신청 방법/링크:[ ] - 문의:[ ] - 준비물:[ ]",
       "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
@@ -3194,7 +3182,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "2) 수정 반복 지시",
+      "title": "수정 반복 지시",
       "template": "방금 초안에서 아래 항목만 고쳐서 전체 다시 써줘. 나머지는 그대로 유지해. 1) [예: 날짜 요일을 (토)로 수정] 2) [예: 본문을 5줄 이내로] 3) [예: 존댓말로 톤 통일] 4) [예: 마지막 줄에 신청 링크 강조]",
       "notes": "",
       "tags": [
@@ -3214,7 +3202,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "3) 홍보 이미지 프롬프트",
+      "title": "홍보 이미지 프롬프트",
       "template": "[정사각형 1:1] SNS 홍보 이미지를 만들어줘. 주제: [행사명] 분위기: [예: 따뜻하고 차분한, 책과 커피] 색감: [예: 베이지+짙은 녹색] 이미지 안 글자: [핵심 문구 1줄, 예: '3월 독서모임 · 3/22(토) 오후 2시'] 주의: 글자는 정확히 이 문장만 오타 없이. 여백을 두어 나중에 텍스트를 얹을 수 있게.",
       "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
@@ -3241,7 +3229,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "4) 자료 요약 보고서용 (대안 과제)",
+      "title": "자료 요약 보고서용 (대안 과제)",
       "template": "아래 붙여넣은 자료를 [1페이지 요약 보고서]로 정리해줘. 구성: 1)핵심 요약 3줄 2)주요 내용 불릿 5개 3)결론/제안 2줄. 규칙: 자료에 없는 수치·주장은 넣지 말고, 불확실하면 '자료에 없음'이라 표기해줘. [여기에 자료 붙여넣기]",
       "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
@@ -3333,9 +3321,9 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "만능 6칸 명령서",
+      "title": "6칸 명령서",
       "template": "너는 [역할: 예-환경 카피라이터]야. [대상: 예-초등학생]을 대상으로 [과제: 예-재활용 표어]를 만들어줘. 형식은 [형식: 예-표어 3개, 각 12자 이내]. 조건: [제약: 예-어려운 한자어 금지]. 원하는 느낌 예시: \"[예시 견본 한 줄]\"",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "의사결정",
@@ -3343,16 +3331,9 @@
         "프롬프트 설계",
         "구조화 출력"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 데이터 분석가야. 신입 직장인을 대상으로 월별 고객 문의 건수 표를 만들어줘. 형식은 월별 고객 문의 건수 표. 조건: 제약: 예-어려운 한자어 금지. 원하는 느낌 예시: \"실제 값\"",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/role-prompting/",
-      "url": "/wiki/role-prompting/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/role-prompting/"
     },
     {
       "id": "p2w-writing",
@@ -3430,7 +3411,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "역할 추천받기형",
+      "title": "역할 추천",
       "template": "나는 [내 상황: 예 동네 카페 사장]이고 [원하는 것: 예 단골 늘리기]을 하고 싶어. 이 일을 가장 잘 도와줄 전문가 역할 3개를 제안하고, 각 역할이 어떤 관점으로 답할지 한 줄씩.",
       "notes": "",
       "tags": [
@@ -3464,24 +3445,17 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "만능 표 출력",
+      "title": "표 출력",
       "template": "[주제]에 대해 정리해줘. 반드시:\n- 출력 형식: 마크다운 표 하나만. 표 앞뒤 설명 금지.\n- 열: [열이름1] | [열이름2] | [열이름3]\n- 행 개수: [예 5]개\n- 말투: 존댓말, 이모지 금지",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "프롬프트 설계",
         "구조화 출력"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "신입 구성원의 원격 온보딩에 대해 정리해줘. 반드시:\n- 출력 형식: 마크다운 표 하나만. 표 앞뒤 설명 금지.\n- 열: 실제 값 | 실제 값 | 실제 값\n- 행 개수: 실제 값개\n- 말투: 존댓말, 이모지 금지",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/structured-output/",
-      "url": "/wiki/structured-output/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/structured-output/"
     },
     {
       "id": "p4w-bullet",
@@ -3508,7 +3482,7 @@
       "courseUrl": "/course/agent-systems/",
       "title": "JSON만 출력(자동화용)",
       "template": "아래 [텍스트]를 분석해 JSON만 출력. 코드블록(백틱)과 설명 문장 절대 금지.\n스키마: {\"[키1]\":\"[타입/허용값]\",\"[키2]\":[\"문자열 배열\"],\"[키3]\":0~5 정수}\n텍스트: [붙여넣기]",
-      "notes": "",
+      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
         "글쓰기",
         "데이터 분석",
@@ -3517,9 +3491,16 @@
         "프롬프트 설계",
         "구조화 출력"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "아래 회의록 원문를 분석해 JSON만 출력. 코드블록(백틱)과 설명 문장 절대 금지.\n스키마: {\"실제 값\":\"실제 값\",\"실제 값\":실제 값,\"실제 값\":0~5 정수}\n텍스트: 실제 값",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/structured-output/",
-      "url": "/wiki/structured-output/"
+      "url": "/wiki/structured-output/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p4w-report",
@@ -3544,7 +3525,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "만능 few-shot 뼈대",
+      "title": "few-shot 뼈대",
       "template": "아래 예시들과 똑같은 톤과 형식으로 결과를 만들어줘. 설명 없이 출력만.\n입력: [예시1 입력]\n출력: [예시1 결과]\n입력: [예시2 입력]\n출력: [예시2 결과]\n입력: [진짜 새 입력]\n출력:",
       "notes": "",
       "tags": [
@@ -3741,7 +3722,7 @@
       "courseUrl": "/course/responsible-ai/",
       "title": "기본 초안",
       "template": "업무 이메일 초안을 써줘.\n- 받는 사람: [예: A거래처 김부장, 나는 발주처 담당자]\n- 원하는 것: [예: 자재 납기를 6/20에서 6/27로 1주 연기 요청]\n- 꼭 들어갈 사실: [예: 현장 공정 지연이 원인, 추가 비용 없음 확인]\n- 톤: [정중하게 / 담백하게 / 친근하게 중 택1]\n인사-본문-요청-마무리 구조로, 5~7줄 이내로. 확실하지 않은 날짜·금액은 지어내지 말고 [ ]로 비워둬.",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "글쓰기",
         "이메일",
@@ -3750,9 +3731,16 @@
         "생산성",
         "검증"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "업무 이메일 초안을 써줘.\n- 받는 사람: A거래처 김부장, 나는 발주처 담당자\n- 원하는 것: 자재 납기를 6\n- 꼭 들어갈 사실: 현장 공정 지연이 원인, 추가 비용 없음 확인\n- 톤: 실제 값\n인사-본문-요청-마무리 구조로, 5~7줄 이내로. 확실하지 않은 날짜·금액은 지어내지 말고 실제 값로 비워둬.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/hallucination/",
-      "url": "/wiki/hallucination/"
+      "url": "/wiki/hallucination/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p8w-tone",
@@ -3779,7 +3767,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "제목 후보 뽑기",
+      "title": "제목 후보 도출",
       "template": "이 이메일에 어울리는 제목을 3개. 받는 사람이 열기 전에 용건·핵심(날짜/대상)을 바로 알 수 있게, 각 20자 이내. 대괄호 태그(예: [요청]) 버전도 하나 포함.",
       "notes": "",
       "tags": [
@@ -3888,7 +3876,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "한 번에 3버전 뽑기",
+      "title": "한 번에 3버전 도출",
       "template": "아래 핵심 내용을 세 가지 톤의 이메일로 각각 써줘. 사실은 그대로 두고 톤만. 1)사내 편한 반존대(짧고 친근, 이모지 1개까지) 2)사외 정중한 존댓말(회사명/직함 호칭, ~드립니다 어미, 마무리 인사) 3)concise business English(Subject·인사·본문·마감요청·Best regards). [핵심 사실] - 무슨 일: [예: 3분기 매출 자료 초안 완성] - 언제까지: [예: 금요일 오후 3시] - 부탁할 것: [예: 검토 후 코멘트 회신] 내 서명: [이름/팀/회사]",
       "notes": "",
       "tags": [
@@ -4046,7 +4034,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "긴 스레드 쟁점 요약(가장 먼저)",
+      "title": "긴 스레드 쟁점 요약",
       "template": "아래는 여러 명이 주고받은 긴 메일 스레드 전문이야. 1)쟁점(주제)별로 행을 만들고 [쟁점|누가 요청/제기|현재 상태(합의됨/미합의/미답변)|핵심 내용] 4개 열. 2)표 아래에 '내가 아직 답하지 않은 항목'을 목록으로. 3)각 발언은 반드시 실제 발화자에게 귀속, 추측이면 (추정) 표시. 스레드: [붙여넣기]",
       "notes": "",
       "tags": [
@@ -4121,9 +4109,9 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "반복 메일 3종 한 번에 템플릿화 (가장 먼저)",
+      "title": "반복 메일 3종 한 번에 템플릿화",
       "template": "너는 한국 비즈니스 이메일 카피라이터야. 아래 내 실제 메일을 재사용 템플릿으로 바꿔줘. 규칙: (1)매번 바뀌는 부분은 [고객명][날짜]처럼 뜻이 보이는 대괄호 변수로 (2)문장 톤은 정중하되 과하지 않게 (3)제목 줄도 템플릿으로 (4)맨 위에 '※ 채울 변수' 목록. [실제 보낸 메일 붙여넣기] 그리고 같은 톤으로 '요청형(자료 부탁)'과 '거절형(정중한 사양)' 템플릿도 각각 추가로.",
-      "notes": "",
+      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
         "글쓰기",
         "이메일",
@@ -4131,9 +4119,16 @@
         "프롬프트 설계",
         "비즈니스"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "너는 한국 비즈니스 이메일 카피라이터야. 아래 내 실제 메일을 재사용 템플릿으로 바꿔줘. 규칙: (1)매번 바뀌는 부분은 신입 직장인2026년 7월 31일처럼 뜻이 보이는 대괄호 변수로 (2)문장 톤은 정중하되 과하지 않게 (3)제목 줄도 템플릿으로 (4)맨 위에 '※ 채울 변수' 목록. 실제 값 그리고 같은 톤으로 '요청형(자료 부탁)'과 '거절형(정중한 사양)' 템플릿도 각각 추가로.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/"
+      "url": "/wiki/prompt/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p13w-reject",
@@ -4160,16 +4155,23 @@
       "courseUrl": "/course/agent-systems/",
       "title": "자료·확인 요청 메일 템플릿",
       "template": "상대에게 자료·확인을 요청하는 한국어 이메일 템플릿을. (1)무엇을 (2)언제까지 (3)왜 필요한지 순서. 부담 안 주는 정중한 톤, 변수는 [상대이름][요청항목][기한][사유]. 마지막에 '회신 부탁드립니다' 한 줄.",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "이메일",
         "자동화",
         "프롬프트 설계",
         "검증"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "상대에게 자료·확인을 요청하는 한국어 이메일 템플릿을. (1)무엇을 (2)언제까지 (3)왜 필요한지 순서. 부담 안 주는 정중한 톤, 변수는 실제 값실제 값2026년 7월 31일실제 값. 마지막에 '회신 부탁드립니다' 한 줄.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/"
+      "url": "/wiki/prompt/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p13w-tone",
@@ -4178,7 +4180,7 @@
       "courseUrl": "/course/agent-systems/",
       "title": "기존 템플릿 톤 통일",
       "template": "아래 이메일 템플릿 3종의 인사말·맺음말·존댓말 수준을 하나로 통일해줘. 우리 팀은 [격식있는/친근한] 톤, 이모지는 [쓰지 않음/가볍게 허용]. 변수 자리([ ])는 그대로 두고 문장만. [템플릿 3종 붙여넣기]",
-      "notes": "",
+      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
         "글쓰기",
         "이메일",
@@ -4186,9 +4188,16 @@
         "프롬프트 설계",
         "협업"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "아래 이메일 템플릿 3종의 인사말·맺음말·존댓말 수준을 하나로 통일해줘. 우리 팀은 실제 값 톤, 이모지는 실제 값. 변수 자리(실제 값)는 그대로 두고 문장만. 실제 값",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/"
+      "url": "/wiki/prompt/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p14w-memo-to-report",
@@ -4274,7 +4283,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "목차 3안 받기 (가장 먼저)",
+      "title": "목차 3안 생성",
       "template": "나는 아래 문서를 쓰려고 해. 본문은 아직 쓰지 말고, 서로 논리 구조가 다른 목차 3안만 제안해줘.\n- 목적: [이 문서로 얻고 싶은 결과]\n- 독자: [읽는 사람과 관심사]\n- 분량: [대략 몇 장/몇 분]\n각 안마다 왜 이 구조가 이 독자에게 효과적인지 한 줄 설명도.",
       "notes": "",
       "tags": [
@@ -4354,7 +4363,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "보고서 → 한 장 요약 변환(가장 유용)",
+      "title": "보고서 → 한 장 요약 변환",
       "template": "아래는 [보고서 종류] 보고서 전문이야. 이걸 경영진용 한 페이지 요약으로 압축해줘. 구조는 반드시: (1)결론 한 문장 — 무엇을 결정/실행하자는 액션 (2)핵심 3가지 — 각 한 줄에 근거 숫자 하나씩 (3)근거 — 데이터 출처와 기간. 내가 생각하는 결론은 [내 결론]이야. 원문에 없는 숫자는 절대 지어내지 말고, 수식어는 빼고 짧은 문장으로. 30초에 읽히게. [보고서 전문 붙여넣기]",
       "notes": "",
       "tags": [
@@ -4374,7 +4383,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "핵심 3가지 뽑기",
+      "title": "핵심 3가지 도출",
       "template": "아래 보고서에서 '[내 결론]'이라는 결론을 뒷받침하는 가장 강력한 근거를 딱 3개만. 각각 한 줄, 반드시 원문에 있는 수치를 하나씩 붙이고, 중복·약한 근거는 빼줘. [보고서 전문]",
       "notes": "",
       "tags": [
@@ -4501,7 +4510,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "환각 후보 추출(가장 먼저)",
+      "title": "환각 후보 추출",
       "template": "아래 문서에서 '검증이 필요한 구체적 주장'만 표로 뽑아줘. 대상은 숫자·퍼센트·금액, 사람/기관/제품 이름, 따옴표 직접인용, 날짜, URL·출처야. 의견이나 일반론은 제외. 표 열은 [문장|주장 유형|문서 안에 출처가 명시돼 있나(예/아니오)]. 절대 사실 여부를 판단하지 말고 추출만.\n--- [초안 전문 붙여넣기]",
       "notes": "",
       "tags": [
@@ -4559,7 +4568,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "직접인용 진위 확인 질문 만들기",
+      "title": "직접인용 진위 확인 질문 생성",
       "template": "아래 문서의 모든 직접인용(따옴표 문장)과 통계에 대해, 내가 원 출처에서 검색할 때 쓸 '검색어'를 각각. 예: 인용문의 핵심 키워드 3개, 통계라면 '기관명+연도+지표명' 형태. 인용의 진위는 판단하지 말고 검색어만.\n--- [문서 붙여넣기]",
       "notes": "",
       "tags": [
@@ -4679,7 +4688,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "파일 만들기가 막혔을 때 — CSV 텍스트로(설정 없이 우회)",
+      "title": "파일 생성가 막혔을 때 — CSV 텍스트로(설정 없이 우회)",
       "template": "방금 집계 표를 CSV 형식(쉼표로 구분된 텍스트)으로 코드 블록에 그대로 출력해줘. 내가 복사해서 엑셀에 붙여넣을게.",
       "notes": "",
       "tags": [
@@ -4699,7 +4708,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "표 구조 알려주고 수식 받기 (가장 자주)",
+      "title": "표 구조 알려주고 수식 생성",
       "template": "엑셀 수식을 만들어줘. 표 구조는 이래.\n- 열 위치와 제목: [A열=이름, B열=급여, C열=부서 …]\n- 데이터 범위: [2행부터 101행까지]\n- 결과를 넣을 셀: [I2]\n하고 싶은 계산: [H2에 입력한 이름과 같은 사람의 급여를 찾아오기]\n조건: 결과 셀에 바로 붙여넣을 수 있는 완성된 수식 하나만, 각 인자가 무슨 뜻인지 한 줄 설명도.",
       "notes": "",
       "tags": [
@@ -4774,7 +4783,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "오염 진단(가장 먼저)",
+      "title": "오염 진단",
       "template": "아래는 내 엑셀 데이터의 샘플이야. 데이터 클리닝 관점에서 문제점을 '①중복 ②빈칸/결측 ③날짜·숫자 형식 혼재 ④앞뒤 공백/표기 불일치' 4가지 유형으로 나눠서 찾아주고, 각 문제가 몇 개 열/행에 있는지 알려줘. [표 상단 15~20행 붙여넣기]",
       "notes": "",
       "tags": [
@@ -4916,7 +4925,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "피벗표 만들기",
+      "title": "피벗표 생성",
       "template": "올린 [파일이름] 파일에서 [카테고리]별로 [매출]의 합계를 낸 피벗표를. 행은 [기준], 열은 [월/분기 등], 값은 [합계/평균]으로.",
       "notes": "",
       "tags": [
@@ -4974,7 +4983,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "한 번에 보고서 만들기",
+      "title": "한 번에 보고서 생성",
       "template": "올린 데이터로 (1)[기준]별 피벗표 (2)추세를 보여주는 막대 또는 선 차트 1개 (3)핵심 인사이트 3가지를 순서대로. 비전문가도 이해하게 쉬운 말로.",
       "notes": "",
       "tags": [
@@ -5013,7 +5022,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "피벗 설계 코치(가장 먼저)",
+      "title": "피벗 설계 코치",
       "template": "나는 엑셀 피벗테이블을 설계 중이야. 내 원자료 열은 [주문일, 지역, 상품, 수량, 매출, 원가]이고, 알고 싶은 건 [지역별 월 매출 추세와 상품별 이익률]이야. 이 목적을 위해 행/열/값/필터에 각각 어떤 필드를 넣어야 하는지, 값의 집계 방식(합계·평균·개수)까지 콕 집어 표로 정리해줘. 왜 그렇게 배치하는지 한 줄 이유도.",
       "notes": "",
       "tags": [
@@ -5031,7 +5040,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "계산 필드 수식 만들기",
+      "title": "계산 필드 수식 생성",
       "template": "엑셀 피벗테이블 계산 필드를 만들고 싶어. 원자료 열은 [매출, 원가, 수량]이야. 나는 [이익률, 개당 평균단가, 원가율]을 피벗에서 보고 싶어. 각각 계산 필드에 넣을 정확한 수식과, 결과 셀에 적용할 표시 서식(%, 통화 등)을 알려줘. 계산 필드에서 하면 안 되는 흔한 함정도 하나.",
       "notes": "",
       "tags": [
@@ -5162,7 +5171,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "대시보드 설계 받기(가장 먼저)",
+      "title": "대시보드 설계안 생성",
       "template": "나는 엑셀 초보야. 아래 열을 가진 매출 데이터로 '한 장 대시보드'를 만들려고 해. 열: [날짜, 지역, 상품, 담당자, 매출]. (1)어떤 피벗테이블 3개를 만들면 좋을지 (2)각각 어떤 차트가 어울리는지 (3)어떤 슬라이서를 넣을지 (4)상단 KPI 카드 3개는 무엇으로 할지 표로. 클릭당 한 문장씩 실행 단계도.",
       "notes": "",
       "tags": [
@@ -5202,7 +5211,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "KPI 카드 수식 만들기",
+      "title": "KPI 카드 수식 생성",
       "template": "엑셀에서 표 이름이 [tbl_매출]이고 열이 [매출], [지역], [날짜]야. 다음 KPI 카드용 수식을 각각: (1)전체 총매출 (2)평균 매출 (3)거래 건수 (4)특정 지역만 합계. SUMIFS/COUNTA 등 초보용 수식으로.",
       "notes": "",
       "tags": [
@@ -5242,7 +5251,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "발표 스토리라인 초안 만들기",
+      "title": "발표 스토리라인 초안 생성",
       "template": "너는 발표 코치야. 아래 정보로 '도입-근거-결론' 3단 구조의 발표 스토리라인을 만들어줘.\n- 발표 목적(청중이 하길 바라는 행동): [팀장이 예산 승인]\n- 청중: [마케팅 팀장, 숫자 중시, 5분]\n- 내가 가진 핵심 사실 2~3개: [나열]\n출력 형식: 도입 1문장 / 근거 2~3개(각 1문장, 슬라이드 제목형 완결 문장) / 결론 1문장. 각 문장은 명사 제목이 아니라 주장하는 완결 문장으로.",
       "notes": "",
       "tags": [
@@ -5458,7 +5467,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "어수선한 슬라이드 진단(가장 먼저)",
+      "title": "어수선한 슬라이드 진단",
       "template": "내 발표 슬라이드 한 장의 내용을 아래에 붙여넣을게. 정렬·여백·폰트 위계·색 대비 4가지 원칙 관점에서 어수선해 보이는 문제점을 3가지 짚고, 각각 어떻게 고칠지 구체적 수치(폰트 pt, 여백 cm, 색 개수)로 알려줘.\n[슬라이드 제목]: [제목]\n[본문 내용]: [불릿들]\n[현재 사용 색]: [파랑, 빨강, 초록]",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -5538,25 +5547,18 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "슬라이드별 발표 스크립트 (가장 먼저)",
+      "title": "슬라이드별 발표 스크립트",
       "template": "너는 발표 코치야. 아래는 내 발표 슬라이드 내용이야. 청중은 [팀장급 결정권자], 총 발표 시간은 [10분], 발표 목적은 [도입 승인]이야. 각 슬라이드별로 실제로 소리 내어 말할 구어체 스크립트를. 조건: (1)슬라이드에 안 적힌 배경 설명과 다음 장으로 넘어가는 전환 문장 포함 (2)각 슬라이드 예상 소요 시간 표기 (3)너무 딱딱하지 않게, 잠깐 멈추는 포인트는 (…)로. 슬라이드 내용: [붙여넣기]",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "프레젠테이션",
         "안전",
         "협업"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 발표 코치야. 아래는 내 발표 슬라이드 내용이야. 청중은 실제 값, 총 발표 시간은 실제 값, 발표 목적은 실제 값이야. 각 슬라이드별로 실제로 소리 내어 말할 구어체 스크립트를. 조건: (1)슬라이드에 안 적힌 배경 설명과 다음 장으로 넘어가는 전환 문장 포함 (2)각 슬라이드 예상 소요 시간 표기 (3)너무 딱딱하지 않게, 잠깐 멈추는 포인트는 (…)로. 슬라이드 내용: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/hallucination/",
-      "url": "/wiki/hallucination/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/hallucination/"
     },
     {
       "id": "p31w-questions",
@@ -5681,16 +5683,23 @@
       "courseUrl": "/course/responsible-ai/",
       "title": "통화 메모 → 3칸 액션 표(기본)",
       "template": "아래 통화 메모를 표로 정리해줘. 칸은 [결정사항] / [고객 요청] / [다음 액션(누가·언제)] 3개로. 표 아래에 '고객 등급 단서' 한 줄도. 추측은 (추정)이라고 표시하고, 메모에 없는 내용은 지어내지 마. 오늘은 [오늘 날짜]야 — '다음주 화요일' 같은 표현은 정확한 날짜로.\n=== 통화 메모 ===\n[붙여넣기]",
-      "notes": "",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
         "요약",
         "구조화 출력",
         "안전",
         "협업"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "아래 통화 메모를 표로 정리해줘. 칸은 실제 값 / 신입 직장인 / 실제 값 3개로. 표 아래에 '고객 등급 단서' 한 줄도. 추측은 (추정)이라고 표시하고, 메모에 없는 내용은 지어내지 마. 오늘은 2026년 7월 31일야 — '다음주 화요일' 같은 표현은 정확한 날짜로.\n=== 통화 메모 ===\n실제 값",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/hallucination/",
-      "url": "/wiki/hallucination/"
+      "url": "/wiki/hallucination/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p33w-tab-excel",
@@ -5753,7 +5762,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "다음 통화용 준비 멘트 만들기",
+      "title": "다음 통화용 준비 멘트 생성",
       "template": "아래 지난 통화 요약을 바탕으로, 다음 통화 때 내가 꺼낼 '오프닝 멘트 3줄'과 '꼭 물어볼 질문 3개'를. 자연스러운 구어체로.\n[붙여넣기]",
       "notes": "",
       "tags": [
@@ -5828,7 +5837,7 @@
       "course": "model-training",
       "courseTitle": "모델 학습과 튜닝",
       "courseUrl": "/course/model-training/",
-      "title": "이긴 톤 학습시켜 다음 배치 뽑기",
+      "title": "이긴 톤 학습시켜 다음 배치 도출",
       "template": "A/B 테스트 결과 '[친근]' 톤이 저장 수가 2배 높았어. 이 톤만 살려서 [다음 신제품/이번 행사]용 캡션 5개를 새로 만들어줘. 조건은 지난번과 동일(80자 이내, 이모지, 행동 유도 문구).",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -5954,7 +5963,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "출처 신뢰도 3분 평가(가장 유용)",
+      "title": "출처 신뢰도 3분 평가",
       "template": "다음 자료의 인용 신뢰도를 평가해줘. 링크: [URL]. 핵심 주장: [내가 인용하려는 문장]. 아래 6항목으로 각각 판단하고 표로: 1)1차/2차 출처 여부와 근거 2)발행처 유형(공공/학술/언론/개인/광고성) 3)최신성(작성일과 현재 기준 유효한지) 4)이해관계(제작자가 이득 보는 게 있는지) 5)예상 반론 2가지 6)종합등급 A/B/C. 마지막에 더 신뢰도 높은 대체 출처 2곳을 링크 후보와 함께.",
       "notes": "",
       "tags": [
@@ -6071,7 +6080,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "질문별 성공 기준·범위 만들기",
+      "title": "질문별 성공 기준·범위 생성",
       "template": "내 하위 질문 목록이야: [질문1] [질문2] [질문3]. 각 질문마다 (a)무엇을 보면 답으로 인정할지 성공 기준, (b)포함할 범위, (c)제외할 범위, (d)찾아볼 만한 출처 후보 2개를 표로 정리해줘. 성공 기준에는 필요한 출처 개수와 기간을 숫자로 넣어줘.",
       "notes": "",
       "tags": [
@@ -6110,9 +6119,9 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "비교표 자동 채우기(가장 유용)",
+      "title": "비교표 자동 채우기",
       "template": "다음 [질문]에 대해 내가 붙여넣는 3개 출처 원문을 읽고, 각 출처의 핵심 주장·수치·발행일을 비교표로 정리해줘. 열은 [항목|출처A|출처B|출처C|비고], 행은 항목별로. 수치가 서로 다른 칸은 ⚠️로 표시하고, 표 아래에 상충 지점만 따로 목록으로 정리해줘.\n질문: [질문]\n출처A 원문: [붙여넣기]\n출처B 원문: [붙여넣기]\n출처C 원문: [붙여넣기]",
-      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+      "notes": "",
       "tags": [
         "요약",
         "의사결정",
@@ -6121,16 +6130,9 @@
         "출처·인용",
         "안전"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "다음 실제 값에 대해 내가 붙여넣는 3개 출처 원문을 읽고, 각 출처의 핵심 주장·수치·발행일을 비교표로 정리해줘. 열은 실제 값, 행은 항목별로. 수치가 서로 다른 칸은 ⚠️로 표시하고, 표 아래에 상충 지점만 따로 목록으로 정리해줘.\n질문: 실제 값\n출처A 원문: 실제 값\n출처B 원문: 실제 값\n출처C 원문: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/bias/",
-      "url": "/wiki/bias/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/bias/"
     },
     {
       "id": "p38w-conflict",
@@ -6237,7 +6239,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "비교표 만들기",
+      "title": "비교표 생성",
       "template": "[대상 A], [대상 B], [대상 C]를 [가격/성능/장단점] 기준으로 비교하는 리서치를 해줘. 결과는 한 개의 비교표로, 각 칸의 근거 출처 링크를 표 아래 각주로 달아줘. 마지막에 '누구에게 무엇을 추천'을 한 줄로 정리해줘.",
       "notes": "",
       "tags": [
@@ -6334,7 +6336,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "1순위 작업의 첫 실행 단계 뽑기",
+      "title": "1순위 작업의 첫 실행 단계 도출",
       "template": "나는 '[1순위 작업]'을 자동화하기로 정했어. 나는 비개발자이고 도구 예산은 무료 우선이야. 이번 주에 30분 안에 할 수 있는 첫 실행 단계 3개만, 순서대로 아주 구체적으로. 각 단계마다 뭘 클릭/입력해야 하는지까지.",
       "notes": "",
       "tags": [
@@ -6409,7 +6411,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "지시문 4블록 초안 생성 (가장 먼저)",
+      "title": "지시문 4블록 초안 생성",
       "template": "너는 Custom GPT 지시문 설계 전문가야. 아래 업무를 위한 Custom GPT 지시문을 [역할]/[규칙]/[금지사항]/[지식파일 참조규칙]/[출력형식] 5블록으로 만들어줘. 각 블록은 실무자가 바로 쓸 수 있게 구체적으로.\n- 이 GPT의 업무: [쇼핑몰 고객 문의 답변 초안 작성]\n- 사용자: [누가 쓰나]\n- 입력: [무엇을 붙여넣나]\n- 원하는 결과물: [무엇을 받나]\n- 우리 회사 톤: [정중/친근/전문 등]",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -6633,7 +6635,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "순서도 → 자동화 설계 변환 (가장 먼저)",
+      "title": "순서도 → 자동화 설계 변환",
       "template": "나는 노코드 자동화 도구 [Make 또는 n8n]로 아래 업무 흐름을 만들려고 해. 초보자용으로, 어떤 모듈(블록)을 어떤 순서로 놓아야 하는지 단계별로 알려줘. 조건 분기는 Router+Filter로, 실패 대비는 재시도와 오류 알림으로 해줘.\n[업무 흐름]\n트리거: [구글폼 신청 접수]\n중간 단계: [견적 금액 계산]\n조건 분기: 만약 [조건]이면 [경로A], 아니면 [경로B]\n실패 대비: [어떤 단계]가 실패하면 [재시도/알림]\n각 모듈의 이름과 핵심 설정값까지 구체적으로.",
       "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
@@ -6717,7 +6719,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "문의 분류기 (가장 먼저)",
+      "title": "문의 분류기",
       "template": "너는 고객문의 분류기다. 아래 문의 본문을 읽고 [환불, 배송, 제품문의, 기타] 중 정확히 한 단어로만 답하라. 설명·문장부호 없이 단어 하나만 출력. 애매하면 기타로 분류. 특수규칙: - [규칙1, 예: 포장 손상은 배송] - [규칙2]. 문의 본문: \"\"\"[여기에]\"\"\"",
       "notes": "",
       "tags": [
@@ -6797,7 +6799,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "실패 알림 코드 만들기(가장 먼저)",
+      "title": "실패 알림 코드 생성",
       "template": "나는 [구글 앱스스크립트 / Make / Zapier / n8n]로 [자동화 내용 한 줄]을 만들었어. 실행이 실패하거나 처리 건수가 0건일 때만 나에게 [이메일 / 카카오톡]으로 알림이 오게 하고 싶어. 오류 메시지와 실행 시각이 포함되도록, 내 도구에 바로 붙일 수 있는 코드(또는 설정 단계)를 알려줘. 성공했을 때는 알림을 보내지 말고 로그에만 남기도록 해줘.",
       "notes": "",
       "tags": [
@@ -6817,7 +6819,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "실패 테스트 데이터 만들기",
+      "title": "실패 테스트 데이터 생성",
       "template": "내 자동화는 [입력 형식: 이름·이메일·날짜가 든 스프레드시트 행]을 처리해. 고의로 깨보려고 해. 빈 값, 잘못된 형식, 경계값(너무 긴 값·특수문자·중복)을 포함한 '실패 유발 테스트 데이터' 8줄을 표로 만들어줘. 각 줄이 무엇을 테스트하는지 한 줄 설명도 붙여줘.",
       "notes": "",
       "tags": [
@@ -6877,7 +6879,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "주간 데이터 요약(가장 먼저)",
+      "title": "주간 데이터 요약",
       "template": "너는 데이터 분석 비서야. 아래는 우리 팀 주간 지표 표야(열: 날짜/지표명/값/전주대비). [summary 시트 표 붙여넣기] 다음 형식으로 한국어 요약: 1)경영진용 핵심 3줄(가장 중요한 변화만, 숫자 포함) 2)지표별 상세 5줄(증감 원인 추정 포함, 확실치 않으면 '추정' 표기) 3)다음 주 주의 지표 1개. 과장 없이 표에 있는 숫자만 사용.",
       "notes": "",
       "tags": [
@@ -6957,11 +6959,12 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "첫 실행 파일 만들기(가장 먼저)",
-      "template": "나는 코딩을 처음 배우는 사람이야. [내 폴더]에 index.html 파일을 새로 만들어줘. 화면 한가운데에 아주 큰 글씨로 'Hello EduVerse'라는 문구가 보이게 하고, 배경은 흰색, 글씨는 검은색으로. 파일을 브라우저로 열면 바로 보이도록 완성된 전체 코드로.",
+      "title": "첫 실행 파일 생성",
+      "template": "나는 코딩을 처음 배우는 사람이야. [내 폴더]에 index.html 파일을 새로 만들어줘. 화면 한가운데에 아주 큰 글씨로 'Hello AI Learning Wiki'라는 문구가 보이게 하고, 배경은 흰색, 글씨는 검은색으로. 파일을 브라우저로 열면 바로 보이도록 완성된 전체 코드로.",
       "notes": "",
       "tags": [
         "글쓰기",
+        "교육",
         "코딩",
         "프롬프트 설계",
         "프로젝트 관리",
@@ -7033,11 +7036,12 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "예시: 한 줄로 첫 화면 만들기",
-      "template": "초보자용 index.html 파일을 만들고 화면 가운데에 큰 글씨로 Hello EduVerse를 띄워줘.",
+      "title": "한 줄로 첫 화면 생성",
+      "template": "초보자용 index.html 파일을 만들고 화면 가운데에 큰 글씨로 Hello AI Learning Wiki를 띄워줘.",
       "notes": "",
       "tags": [
         "글쓰기",
+        "교육",
         "코딩",
         "프롬프트 설계",
         "프로젝트 관리",
@@ -7111,7 +7115,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "예시: 간단 견적 계산기",
+      "title": "간단 견적 계산기",
       "template": "간단한 견적 계산기 단일 페이지 웹앱을 만들어줘. 입력칸 3개(수량, 단가, 할인율%)가 있고, 입력하면 자동으로 '합계 = 수량 × 단가 × (1 − 할인율/100)'을 계산해 큰 글씨로. 결과는 천 단위 콤마와 '원'. 한국어, 휴대폰에서도 잘 보이게, 깔끔한 디자인.",
       "notes": "",
       "tags": [
@@ -7131,7 +7135,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "예시: 하루 습관 체크리스트",
+      "title": "하루 습관 체크리스트",
       "template": "하루 습관 체크리스트 단일 페이지 웹앱을 만들어줘. 운동/물 마시기/독서 3개 항목, 각 항목 옆 동그라미를 누르면 완료 체크, 맨 아래에 '3개 중 2개 완료'처럼 오늘 진행도. 맨 위에 오늘 날짜도. 한국어, 큰 글씨, 휴대폰에서도.",
       "notes": "",
       "tags": [
@@ -7255,7 +7259,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "UI만 뽑기 (v0)",
+      "title": "UI만 도출 (v0)",
       "template": "[페이지 이름] 화면을 shadcn/ui + Tailwind로 만들어줘. 구성 요소: [헤더, 카드 목록, CTA 버튼]. 반응형, 다크모드 지원.",
       "notes": "",
       "tags": [
@@ -7414,7 +7418,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "에러 디버깅 3종 세트(가장 먼저)",
+      "title": "에러 디버깅 3종 세트",
       "template": "나는 코딩 초보야. 아래 문제를 초보도 이해할 수 있게 고쳐줘.\n[상황] 지금 [무엇을 만들다가]\n[기대] [이렇게 되길 원했어]\n[실제] [대신 이런 일이 일어났어]\n[에러 메시지] (빨간 글씨 전체를 여기에)\n[관련 코드] (에러 위치 근처 코드)\n답은 이 순서로 줘: 1)원인 한 줄 2)고친 코드 3)왜 그렇게 고쳤는지 초보용 설명",
       "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
       "tags": [
@@ -7492,7 +7496,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "하나만 콕 집어 요청(가장 많이 씀)",
+      "title": "하나만 콕 집어 요청",
       "template": "[앱의 어느 화면/부분]의 [바꿀 것 하나]만 [원하는 값]으로 바꿔줘. 다른 코드, 레이아웃, 기능은 절대 건드리지 마. 바꾼 부분만 알려줘.",
       "notes": "",
       "tags": [
@@ -7628,7 +7632,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "4대 언어 한 장 요약표 만들기",
+      "title": "4대 언어 한 장 요약표 생성",
       "template": "Python, JavaScript, HTML/CSS, SQL을 '언어 | 한 줄 용도 | 대표 예시 | 난이도' 4칸짜리 표로. 한국어로.",
       "notes": "",
       "tags": [
@@ -7668,7 +7672,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "이벤트 신청 페이지 뼈대 만들기",
+      "title": "이벤트 신청 페이지 뼈대 생성",
       "template": "HTML 기본 태그만 써서 간단한 '[이벤트 이름]' 신청 페이지를 만들어 줘. 조건: (1)CSS·자바스크립트 없이 순수 HTML 태그만 (2)제목은 <h1>, 안내 문단은 <p>, 이름·이메일 입력은 <input>에 placeholder 넣기, 신청 버튼은 <button> (3)초보자가 읽기 쉽게 태그마다 한 줄씩 줄바꿈 (4)20줄 이내. 코드만 출력.",
       "notes": "",
       "tags": [
@@ -7740,7 +7744,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "색 팔레트+글꼴 추천 (가장 먼저)",
+      "title": "색 팔레트+글꼴 추천",
       "template": "나는 [카페 메뉴 카드]를 만드는 초보야. 따뜻하고 깔끔한 느낌의 웹 색 팔레트를 추천해줘. 배경색, 카드색, 강조색, 글자색 4개를 각각 HEX 코드로 주고, 각 색을 CSS의 어떤 속성(background/color 등)에 쓰면 되는지 한 줄로. 한글 웹에 잘 어울리는 무료 글꼴도 1개.",
       "notes": "",
       "tags": [
@@ -7817,7 +7821,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "안 되는 코드 디버깅 (제일 먼저)",
+      "title": "안 되는 코드 디버깅",
       "template": "나는 JavaScript 초보야. 아래 코드에서 버튼을 눌러도 [원하는 동작: 화면에 인사말이 안 뜸]이 안 돼. 원인을 초보도 알 수 있게 설명하고, 고친 전체 코드를 주고, 무엇을 바꿨는지 한 줄씩 짚어줘. [HTML과 JS 코드 전체 붙여넣기]",
       "notes": "",
       "tags": [
@@ -7897,9 +7901,9 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "콘솔 에러 원인·해결 물어보기(가장 유용)",
+      "title": "콘솔 에러 원인·해결 물어보기",
       "template": "웹사이트에서 [내가 한 동작: 로그인 버튼 클릭]을 했더니 화면이 [증상: 아무 반응 없음]입니다. 브라우저 콘솔(F12)에 아래 빨간 에러가 떴어요. 이 에러가 무슨 뜻인지 초보자도 이해할 수 있게 설명하고, 개발자가 아닌 사용자 입장에서 시도해볼 수 있는 해결책과, 개발자에게 전달할 때 쓸 한 줄 요약을 함께 알려줘.\n에러 원문: [콘솔에서 복사한 빨간 에러 전체]",
-      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+      "notes": "",
       "tags": [
         "요약",
         "조사",
@@ -7908,16 +7912,9 @@
         "웹 개발",
         "모니터링"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "웹사이트에서 실제 값을 했더니 화면이 실제 값입니다. 브라우저 콘솔(F12)에 아래 빨간 에러가 떴어요. 이 에러가 무슨 뜻인지 초보자도 이해할 수 있게 설명하고, 개발자가 아닌 사용자 입장에서 시도해볼 수 있는 해결책과, 개발자에게 전달할 때 쓸 한 줄 요약을 함께 알려줘.\n에러 원문: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/api/",
-      "url": "/wiki/api/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/api/"
     },
     {
       "id": "p12b-network",
@@ -7983,7 +7980,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "예시 질문(그대로 보내보기)",
+      "title": "예시 질문",
       "template": "초등학생도 이해하게 API가 뭔지 3문장으로 설명해줘",
       "notes": "",
       "tags": [
@@ -8083,7 +8080,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "JSON 강제 분류 시스템 프롬프트 (바로 쓰기)",
+      "title": "JSON 강제 분류 시스템 프롬프트",
       "template": "너는 [분류할 대상, 예: 한국어 고객 리뷰] 분류기다. 입력을 읽고 다음 라벨 중 정확히 하나를 고른다: [라벨1|라벨2|라벨3]. 반드시 아래 JSON만 출력하고 그 외 인사말·설명·코드블록 표시를 절대 쓰지 마라: {\"label\":\"라벨1|라벨2|라벨3\",\"reason\":\"[N]자 이내 근거\"}. 애매하면 가장 가까운 라벨을 고르되 reason에 애매함을 적어라. 입력: [여기에 실제 데이터 한 건]",
       "notes": "",
       "tags": [
@@ -8159,7 +8156,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "AI에게 SQL 받기",
+      "title": "SQL 생성",
       "template": "나는 SQL 초보야. [표이름] 테이블에 [열들: id·이름·나이·도시] 가 있어. [원하는 결과: 30세 이상이고 서울 사는 사람 이름]을 뽑는 SQL을 한 줄로 써주고, 각 부분이 무슨 뜻인지 한국어로 짧게 설명해줘.",
       "notes": "",
       "tags": [
@@ -8178,7 +8175,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "연습 테이블 만들기 (제일 먼저 실행)",
+      "title": "연습 테이블 생성",
       "template": "SQLite에서 실습할 예제 데이터를 만들어줘. 컬럼은 id(정수), name(이름), city(도시), grade(등급 VIP/일반), spent(누적결제액 정수)로 하고, 한국어 이름과 서울·부산·대구가 섞인 고객 8명을 CREATE TABLE 한 개와 INSERT 문으로 바로 복붙 실행되게. 설명 없이 SQL만.",
       "notes": "",
       "tags": [
@@ -8252,25 +8249,19 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "내 두 테이블 JOIN 쿼리 짜주기(가장 유용)",
+      "title": "두 테이블 JOIN 쿼리 작성",
       "template": "나는 SQL 초보야. 아래 두 테이블을 [공통 키: __ = __]로 연결해서 [보고 싶은 결과: 고객 이름별 주문 목록]를 뽑는 SQLite 쿼리를 써줘. INNER JOIN과 LEFT JOIN 두 버전을 각각 주고, 결과가 어떻게 달라지는지 한 줄로 설명해줘.\n테이블1 스키마: [CREATE TABLE]\n테이블2 스키마: [CREATE TABLE]",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
+        "글쓰기",
         "데이터베이스",
         "구조화 출력",
         "SQL",
         "데이터 엔지니어링"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "나는 SQL 초보야. 아래 두 테이블을 실제 값로 연결해서 신입 직장인를 뽑는 SQLite 쿼리를 써줘. INNER JOIN과 LEFT JOIN 두 버전을 각각 주고, 결과가 어떻게 달라지는지 한 줄로 설명해줘.\n테이블1 스키마: 실제 값\n테이블2 스키마: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/prompt/"
     },
     {
       "id": "p17b-inner-vs-left",
@@ -8405,7 +8396,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "스키마 초안 만들기(가장 먼저)",
+      "title": "스키마 초안 생성",
       "template": "나는 [서비스 한 줄 설명] 서비스를 만들고 있어. 등장하는 주요 개념은 [명사들 나열]이야. 이걸 PostgreSQL 관계형 스키마로 설계해줘. 각 테이블마다 컬럼·데이터 타입·기본키·외래키를 표로 정리하고, 다대다 관계는 중간 테이블로 풀어줘. 마지막에 왜 그렇게 나눴는지 1줄씩.",
       "notes": "",
       "tags": [
@@ -8552,7 +8543,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "AI에게 코드 수정 부탁하기",
+      "title": "코드 수정 요청",
       "template": "나는 Supabase로 todo 앱을 만들고 있어. 테이블 이름은 'todos'이고 열은 id, created_at, task야. 아래 HTML 코드에 [원하는 기능: 완료 체크박스, 삭제 버튼]을 추가해서 전체 코드를 다시 줘. 초보라서 그대로 복붙할 수 있게 한 파일로. [내 todo.html 코드]",
       "notes": "",
       "tags": [
@@ -8652,7 +8643,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "로그인한 사용자만 접근 가능한 화면 만들기",
+      "title": "로그인한 사용자만 접근 가능한 화면 생성",
       "template": "Supabase 세션이 있는 사용자만 [페이지 이름] 을 볼 수 있게 하고, 세션이 없으면 로그인 화면으로 보내는 보호 로직을 [React / 순수 JS] 로 만들어줘. getSession과 onAuthStateChange를 사용해줘.",
       "notes": "",
       "tags": [
@@ -8711,7 +8702,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "정책 테스트 SQL 만들기",
+      "title": "정책 테스트 SQL 생성",
       "template": "아래 RLS 정책이 실제로 '남의 데이터를 못 본다'를 증명하는 테스트 SQL을 만들어줘. set_config로 request.jwt.claims의 sub를 특정 유저로 가장한 뒤, 그 유저가 (a) 자기 행만 보이는지 (b) 남의 행은 0건인지 (c) 남의 user_id로 insert가 거부되는지 확인하는 begin/rollback 블록으로. 테이블: [notes], 소유권 컬럼: [user_id]",
       "notes": "",
       "tags": [
@@ -8751,7 +8742,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "업로드+표시 코드 통째로 받기",
+      "title": "업로드+표시 전체 코드 생성",
       "template": "나는 Supabase Storage를 처음 써. [avatars]라는 [Public] 버킷에 사용자가 고른 이미지를 업로드하고, 업로드가 끝나면 그 이미지를 화면에 바로 보여주는 코드를 [React / 순수 자바스크립트] 기준으로 만들어줘. 파일명 충돌을 막는 방법과 각 줄 주석도 함께.",
       "notes": "",
       "tags": [
@@ -8769,7 +8760,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "Storage 접근 정책(RLS) SQL 받기",
+      "title": "Storage 접근 정책(RLS) SQL 생성",
       "template": "Supabase Storage의 [avatars] 버킷에 대해 다음 규칙의 RLS 정책 SQL을 만들어줘: 1) 로그인한 사용자는 자기 user id 폴더 안에만 업로드 가능 2) 조회는 누구나 가능(공개). storage.foldername 함수를 사용하고, 대시보드 SQL Editor에 붙여넣을 수 있게 완성된 SQL로.",
       "notes": "",
       "tags": [
@@ -8787,7 +8778,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "비공개 파일 서명 URL 만들기",
+      "title": "비공개 파일 서명 URL 생성",
       "template": "Supabase의 [contracts]라는 Private 버킷에 있는 [user123/계약서.pdf] 파일을, 로그인한 본인에게만 [60]초 동안 열 수 있는 임시 링크(signed URL)로 보여주는 코드를 만들어줘. 만료됐을 때의 처리도 함께.",
       "notes": "",
       "tags": [
@@ -8826,7 +8817,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "Edge Function 코드 생성(가장 먼저)",
+      "title": "Edge Function 코드 생성",
       "template": "Supabase Edge Function(Deno, TypeScript)을 작성해줘. 목적: [무엇을 하는 함수인지, 예: 사용자 질문을 받아 OpenAI에 물어보고 답만 반환]. 요구사항: (1)비밀 키는 코드에 넣지 말고 Deno.env.get(\"[환경변수명]\")으로 읽기 (2)CORS 헤더 포함해 브라우저에서 호출 가능하게 (3)잘못된 입력은 400으로 거부 (4)외부 API 응답에서 [필요한 필드]만 골라 JSON으로 반환. 전체 코드와 배포 명령어까지.",
       "notes": "",
       "tags": [
@@ -8866,7 +8857,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "함수 호출 코드 만들기",
+      "title": "함수 호출 코드 생성",
       "template": "Supabase JS 클라이언트로 [함수명] Edge Function을 호출하는 프론트엔드 코드를. body로 [보낼 데이터]를 넘기고, 응답의 [필드]를 받아 화면에 표시. 로딩 상태와 에러 처리도. 프레임워크는 [React/바닐라JS 등].",
       "notes": "",
       "tags": [
@@ -8926,7 +8917,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "AI에게 README 대신 써달라고 시키기",
+      "title": "README 대신 써달라고 시키기",
       "template": "내 GitHub 프로젝트의 README를 마크다운으로 써줘. 프로젝트 이름: [이름]. 무엇을 하는 프로젝트인지: [한 줄 설명]. 사용법: [어떻게 쓰는지]. 초보자도 알아보게 제목·목록·코드블록을 써서 짧게.",
       "notes": "",
       "tags": [
@@ -8946,7 +8937,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "커밋 메시지 다듬기 (가장 유용)",
+      "title": "커밋 메시지 다듬기",
       "template": "나는 Git 초보야. 방금 한 작업은 다음과 같아: [무엇을 바꿨는지 편하게 설명]. 이걸 한 줄짜리 좋은 한국어 커밋 메시지로 만들어줘. 현재형 동사로 시작하고, 50자 이내로, '무엇을'이 명확하게. 후보 3개를 제시해줘.",
       "notes": "",
       "tags": [
@@ -9088,7 +9079,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "충돌 블록 해석 요청(가장 유용)",
+      "title": "충돌 블록 해석 요청",
       "template": "다음은 git merge conflict 블록이야. HEAD 쪽과 [브랜치이름] 쪽이 각각 무엇을 어떻게 바꿨는지 한국어로 설명하고, [이 코드의 목적: 로그인 검증] 관점에서 어느 쪽을 남기거나 어떻게 합치면 좋을지 추천해줘. 최종 결정은 내가 할 거야. [<<<<<<< 부터 >>>>>>> 까지 통째로]",
       "notes": "",
       "tags": [
@@ -9202,7 +9193,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "환경변수 목록 뽑기",
+      "title": "환경변수 목록 도출",
       "template": "다음은 내 코드야: [코드]. 이 코드에서 외부에 노출되면 안 되는 비밀값(API 키, 비밀번호, DB 주소 등)을 전부 찾아서, Vercel Environment Variables에 넣을 'Key 이름 = 설명' 표로 만들어줘. 그리고 코드에서 그 값을 환경변수로 불러오게 수정한 버전도.",
       "notes": "",
       "tags": [
@@ -9393,7 +9384,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "에러 로그 통역 (가장 먼저)",
+      "title": "에러 로그 해석",
       "template": "나는 코딩 초보야. 방금 웹사이트를 배포했는데 아래 에러 로그가 반복해서 떠. 무슨 뜻인지, 사용자에게 지금 영향이 있는지, 심각도(상/중/하)를 알려주고, 지금 당장 롤백해야 할지 다음에 고쳐도 될지 한 문장으로 판단해줘.\n[에러 로그]",
       "notes": "",
       "tags": [
@@ -9433,7 +9424,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "모니터링 체크리스트 만들기",
+      "title": "모니터링 체크리스트 생성",
       "template": "내 서비스는 [무엇을 하는 사이트인지 한 줄]이야. 배포 직후 5분 동안 뭘 확인해야 하는지 초보용 모니터링 체크리스트를 5개 항목으로, 각 항목마다 '어디서 보는지'도 함께.",
       "notes": "",
       "tags": [
@@ -9472,7 +9463,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "내 코드 보안 점검(가장 먼저)",
+      "title": "내 코드 보안 점검",
       "template": "아래는 내 앱의 [파일명] 코드야. 초보가 자주 놓치는 3대 취약점 관점에서 점검해줘: (1)하드코딩된 API 키·비밀번호 (2)서버에서 인증·본인 확인이 빠진 엔드포인트 (3)검증·이스케이프 없는 사용자 입력. 발견한 문제를 위험도 순으로 나열하고 각각 수정 코드를. [코드]",
       "notes": "",
       "tags": [
@@ -9712,9 +9703,9 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "내 문서 청킹 전략 설계(가장 먼저)",
+      "title": "내 문서 청킹 전략 설계",
       "template": "나는 [제품 FAQ/사내 규정/매뉴얼]으로 RAG 챗봇을 만들고 있어. 이 문서 특성에 맞는 청크 크기(글자 수), 겹침(overlap), 문단·표·목록 처리 방법을 표로 추천해줘. 각 선택의 이유도 한 줄씩. 문서 샘플: [문서 일부]",
-      "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "의사결정",
@@ -9723,16 +9714,9 @@
         "검색",
         "법무"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "나는 업무 자동화 템플릿으로 RAG 챗봇을 만들고 있어. 이 문서 특성에 맞는 청크 크기(글자 수), 겹침(overlap), 문단·표·목록 처리 방법을 표로 추천해줘. 각 선택의 이유도 한 줄씩. 문서 샘플: 회의록 원문",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/chunking/",
-      "url": "/wiki/chunking/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/chunking/"
     },
     {
       "id": "p37-diagnose",
@@ -9800,7 +9784,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "미니 CRM 통째 주문(예시)",
+      "title": "미니 CRM 전체 주문(예시)",
       "template": "이름·전화번호·메모를 입력해 저장하는 간단한 고객관리(CRM) 웹앱을 만들어줘. 저장된 고객은 목록 카드로 보여주고 카드마다 삭제 버튼을 넣어줘. Replit의 PostgreSQL 데이터베이스를 연결해서 새로고침해도 안 사라지게 해줘.",
       "notes": "",
       "tags": [
@@ -9820,7 +9804,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "처음 앱 통째 주문 템플릿",
+      "title": "처음 앱 전체 주문 템플릿",
       "template": "[동네 미용실 예약 관리] 용도의 간단한 웹앱을 만들어줘. 입력 항목은 [이름, 전화번호, 방문일, 메모]이고 저장하면 아래에 카드 목록으로. 각 카드에 삭제 버튼, 데이터는 새로고침해도 사라지지 않게 Replit의 PostgreSQL에 영구 저장. 화면은 한국어, 모바일에서도 잘 보이게. 무료 라이트 빌드로 만들어도 돼.",
       "notes": "",
       "tags": [
@@ -9940,7 +9924,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "DECIDE 규칙 초안 생성 (가장 유용)",
+      "title": "DECIDE 규칙 초안 생성",
       "template": "나는 다음 목표의 에이전트 루프를 설계 중이야. 목표: [목표 한 문장] 완료 신호: [무엇이 보이면 끝인지] 사용 가능한 도구: [도구명: 입력→출력형식 을 줄바꿈으로]. PLAN→ACT→OBSERVE→DECIDE 루프에서 DECIDE 단계의 판단 규칙을 if-then 목록으로 8개 이내로. 반드시 성공 종료·에러 재시도 한계·최대 반복 종료 세 가지 중단 규칙을 포함하고, 각 규칙은 '관찰에서 무엇을 보면 → 어떤 행동'인지 구체적으로.",
       "notes": "",
       "tags": [
@@ -10015,7 +9999,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "LLM 심사관 채점 프롬프트(가장 먼저)",
+      "title": "LLM 심사관 채점 프롬프트",
       "template": "너는 엄격한 AI 품질 심사관이다. 아래 판정기준에 따라 에이전트 답변을 0~2점으로 채점하라.\n[사용자 입력] [질문]\n[기대 결과] [이상적 답변 요약]\n[판정기준] 2점=[조건], 1점=[부분조건], 0점=[실패조건]\n[에이전트 실제 답변] [채점할 답변]\n출력 형식: 점수(0/1/2) | 한 줄 이유. 관대하게 봐주지 말고 판정기준 문구에만 근거해 채점하라.",
       "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
@@ -10120,7 +10104,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "빠진 기능·엣지케이스 뽑기",
+      "title": "빠진 기능·엣지케이스 도출",
       "template": "내 제품 아이디어는 [한 문장 문제 정의]야. 사용자가 이 문제를 풀 때 필요한 기능을 내가 놓쳤을 수 있어. 떠오르는 기능을 20개까지 나열하고, 각 기능을 '핵심(없으면 문제 못 품)' / '나중' 두 그룹으로 나눠줘.",
       "notes": "",
       "tags": [
@@ -10175,7 +10159,7 @@
       "course": "model-training",
       "courseTitle": "모델 학습과 튜닝",
       "courseUrl": "/course/model-training/",
-      "title": "예시 — 학급 점심 메뉴 투표 앱(그대로 붙여넣기)",
+      "title": "예시 — 학급 점심 메뉴 투표 앱",
       "template": "점심 메뉴 투표 웹앱. 메뉴는 돈까스·김치찌개·비빔밥 3개. 각 메뉴마다 큰 버튼, 누르면 투표 수 1 증가, 버튼 아래에 '○표' 숫자. 제목 '오늘 점심 뭐 먹지?'. 한국어로, 글씨 크고 파란색 계열. 가능하면 외부 라이브러리 없이 단순하게.",
       "notes": "",
       "tags": [
@@ -10195,7 +10179,7 @@
       "course": "model-training",
       "courseTitle": "모델 학습과 튜닝",
       "courseUrl": "/course/model-training/",
-      "title": "처음 앱 만들기",
+      "title": "처음 앱 생성",
       "template": "[누가] 쓸 [무엇을 하는] 한 페이지짜리 웹앱을 만들어줘. 화면에는 [보이는 항목들]이 있고 [어떤 버튼]을 누르면 [무슨 일]이 일어나게. 제목은 '[제목]'. 한국어로, 글씨 크게, 색깔은 [색깔] 계열로. 가능하면 외부 라이브러리 없이 단순하게.",
       "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
       "tags": [
@@ -10422,7 +10406,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "v0로 화면 만들기",
+      "title": "v0로 화면 생성",
       "template": "[앱 이름] 웹앱을 만들어줘. 핵심 기능: [한 문장]. 화면에 [필요한 버튼·입력칸]이 있고, 누르면 [무슨 일이 일어나는지]. 모바일에서 보기 좋게, [원하는 색·분위기]으로. 글씨는 크게.",
       "notes": "",
       "tags": [
@@ -10523,7 +10507,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "패키지 무엇을 깔지 추천받기",
+      "title": "설치 패키지 추천",
       "template": "나는 [웹에서 데이터 가져와 분석하기 / 간단한 챗봇 만들기]를 파이썬으로 해보고 싶어. 초보에게 꼭 필요한 파이썬 패키지 3~5개를 추천하고, 각각 무슨 역할인지 한 줄 설명과 pip install 명령을 같이 줘.",
       "notes": "",
       "tags": [
@@ -10559,7 +10543,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "AI에게 초보용 코드 받기",
+      "title": "초보용 코드 받기",
       "template": "나는 파이썬 완전 초보야. [하고 싶은 일: 한 달 용돈에서 지출을 빼고 남은 돈 계산]을 하는 파이썬 코드를 써줘. 조건: ① 10줄 이내로 짧게 ② 줄마다 한국어 주석으로 설명 ③ Google Colab에 바로 붙여넣어 실행되게 ④ 어려운 라이브러리 없이 기본 문법만.",
       "notes": "",
       "tags": [
@@ -10639,9 +10623,9 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "API 응답 파싱 도우미(가장 유용)",
+      "title": "API 응답 파싱 도우미",
       "template": "나는 파이썬 초보야. 아래는 [API 이름]을 호출해 받은 JSON 응답이야. 이 안에서 [원하는 값, 예: 현재 기온과 도시 이름]을 꺼내는 파이썬 코드를 인덱싱/딕셔너리 키 접근으로 한 줄씩 주석을 달아 설명해줘. 응답: [print(data) 결과]",
-      "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+      "notes": "",
       "tags": [
         "코딩",
         "API",
@@ -10649,16 +10633,9 @@
         "구조화 출력",
         "Python"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "나는 파이썬 초보야. 아래는 실제 값을 호출해 받은 JSON 응답이야. 이 안에서 원하는 값, 예: 현재 기온과 도시 이름을 꺼내는 파이썬 코드를 인덱싱/딕셔너리 키 접근으로 한 줄씩 주석을 달아 설명해줘. 응답: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/api/",
-      "url": "/wiki/api/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/api/"
     },
     {
       "id": "p3e-choose",
@@ -10790,7 +10767,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "오직 JSON만 받아내기(제일 유용)",
+      "title": "JSON 출력 강제",
       "template": "아래 주제를 요약해서 반드시 유효한 JSON '하나'만 출력해줘. 코드블록 표시(백틱)나 설명 문장은 절대 넣지 말고 { 로 시작해 } 로 끝나야 해. 형식: {\"title\": \"제목\", \"summary\": \"한 문장 요약\", \"tags\": [\"태그1\", \"태그2\"]}. 주제: [요약할 내용]",
       "notes": "실습 재료를 만드는 가장 유용한 템플릿. 앞뒤 설명 없이 순수 JSON만 받아오면 loads로 바로 풀 수 있다.",
       "tags": [
@@ -10829,7 +10806,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "중첩 구조에서 값 꺼내는 코드 만들기",
+      "title": "중첩 구조에서 값 꺼내는 코드 생성",
       "template": "아래 JSON 문자열에서 [원하는 값 설명, 예: 첫 번째 문제의 정답]을 꺼내는 파이썬 코드를 data.get을 써서 키가 없어도 안 죽게. JSON: [JSON 문자열]",
       "notes": "",
       "tags": [
@@ -10867,7 +10844,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "내 코드 리뷰 받기 (가장 유용)",
+      "title": "코드 리뷰 요청",
       "template": "아래는 파이썬 requests로 작성한 API 호출 코드야. (1) 에러 처리(timeout, raise_for_status)가 빠진 곳 (2) 상태코드 확인 없이 .json()을 부르는 위험 (3) 더 깔끔하게 만들 부분을 한국어로 짚어주고 개선된 전체 코드를 줘. [내 코드]",
       "notes": "",
       "tags": [
@@ -10947,7 +10924,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "동기→비동기 변환 요청 (가장 유용)",
+      "title": "동기→비동기 변환 요청",
       "template": "아래 파이썬 코드는 [반복문으로 API를 순서대로 호출]해서 느립니다. asyncio와 aiohttp(또는 AsyncOpenAI)를 써서 여러 호출을 동시에 실행하도록 바꿔주세요. asyncio.gather를 쓰고, return_exceptions=True로 실패 내성을 넣고, 동시 실행은 Semaphore로 최대 [5]개로 제한. 한 줄씩 왜 그렇게 바꿨는지 주석으로. [내 코드]",
       "notes": "",
       "tags": [
@@ -11015,7 +10992,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "내 프로젝트 키 분리 점검(가장 유용)",
+      "title": "내 프로젝트 키 분리 점검",
       "template": "나는 [Python / Node.js] 프로젝트에서 [OpenAI] API 키를 쓰고 있어. 지금 코드에 키가 하드코딩돼 있는데 이걸 .env 파일 + 환경변수로 안전하게 분리하고 싶어. (1) .env 파일 예시 (2) .gitignore에 추가할 내용 (3) 코드에서 환경변수로 불러오는 최소 코드 (4) 확인 방법을 순서대로 알려줘.",
       "notes": "",
       "tags": [
@@ -11149,9 +11126,9 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "가장 짧은 첫 호출 코드 만들기",
+      "title": "가장 짧은 첫 호출 코드 생성",
       "template": "[언어]와 [Anthropic 공식 SDK]로 내가 입력한 문장을 모델 [claude-opus-4-8]에게 보내고 답 텍스트만 출력하는 가장 짧은 예제 코드를 줘. 각 줄에 한국어 주석을 달아줘.",
-      "notes": "",
+      "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
       "tags": [
         "글쓰기",
         "코딩",
@@ -11160,16 +11137,23 @@
         "프롬프트 설계",
         "콘텐츠"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "한국어와 실제 값로 내가 입력한 문장을 모델 실제 값에게 보내고 답 텍스트만 출력하는 가장 짧은 예제 코드를 줘. 각 줄에 한국어 주석을 달아줘.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/sdk/",
-      "url": "/wiki/sdk/"
+      "url": "/wiki/sdk/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p11e-build-array",
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "멀티턴 대화 배열 만들기(가장 유용)",
+      "title": "멀티턴 대화 배열 생성",
       "template": "아래 상황으로 LLM API에 보낼 messages 배열을 JSON으로 만들어줘. system 1개 + user/assistant가 번갈아 3턴. 각 role의 역할을 주석으로 짧게.\n- 앱 종류: [여행 일정 도우미]\n- AI 성격/규칙: [존댓말, 항상 예산을 먼저 물어봄]\n- 사용자 첫 질문: [질문]",
       "notes": "",
       "tags": [
@@ -11253,7 +11237,7 @@
       "courseUrl": "/course/rag-search/",
       "title": "스트리밍 최소 예제(Node.js)",
       "template": "Node.js 18+ 환경에서 [OpenAI 또는 Anthropic] 채팅 API를 stream:true로 호출하는 최소 스트리밍 예제를. 요구사항: (1) fetch로 요청 (2) res.body의 ReadableStream을 reader로 읽기 (3) TextDecoder로 디코딩 (4) 'data: ' 줄만 파싱해 delta를 process.stdout.write로 실시간 출력 (5) '[DONE]'에서 종료 (6) 마지막에 누적된 full 문자열을 콘솔 출력. 주석을 한국어로. 모델은 [모델명], 질문은 [스트리밍을 설명해줘].",
-      "notes": "",
+      "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
       "tags": [
         "글쓰기",
         "번역",
@@ -11262,9 +11246,16 @@
         "프롬프트 설계",
         "프로젝트 관리"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "Node.js 18+ 환경에서 실제 값 채팅 API를 stream:true로 호출하는 최소 스트리밍 예제를. 요구사항: (1) fetch로 요청 (2) res.body의 ReadableStream을 reader로 읽기 (3) TextDecoder로 디코딩 (4) 'data: ' 줄만 파싱해 delta를 process.stdout.write로 실시간 출력 (5) '실제 값'에서 종료 (6) 마지막에 누적된 full 문자열을 콘솔 출력. 주석을 한국어로. 모델은 실제 값, 질문은 실제 값.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/server-sent-events/",
-      "url": "/wiki/server-sent-events/"
+      "url": "/wiki/server-sent-events/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p12e-browser-ui",
@@ -11346,7 +11337,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "시스템 프롬프트 토큰 다이어트",
+      "title": "시스템 프롬프트 토큰 절감",
       "template": "아래 시스템 프롬프트를 의미와 지시사항은 100% 보존하면서 토큰 수를 최대한 줄여줘. 예의 표현·중복·불필요한 수식어를 제거하고, 줄인 버전과 함께 대략 몇 %를 절감했는지. [기존 시스템 프롬프트]",
       "notes": "",
       "tags": [
@@ -11402,7 +11393,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "안 죽는 API 호출 함수 생성 (가장 유용)",
+      "title": "복원력 있는 API 호출 함수 생성",
       "template": "Python requests로 [API 이름]을 호출하는 견고한 함수를 작성해줘. 요구사항: (1) 429·408·5xx(500,502,503,504)와 Timeout·ConnectionError만 재시도하고 400·401·404는 즉시 예외 (2) 지수 백오프 base=1초, 2의 거듭제곱, max_retries=5 (3) random 지터 추가 (4) Retry-After 헤더가 있으면 우선 사용 (5) 대기 상한 60초 (6) 매 시도마다 attempt·상태코드·대기시간을 로그로. 주석을 한국어로.",
       "notes": "",
       "tags": [
@@ -11439,7 +11430,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "오류 코드 분류표 만들기",
+      "title": "오류 코드 분류표 생성",
       "template": "[API 이름]의 공식 오류 응답 코드를 조사해서 '재시도 가능(일시적)' / '재시도 불가(영구적)' / '주의 필요' 3개 그룹으로 표를. 각 코드마다 의미와 권장 대응(재시도 여부·대기 방식)을 한 줄로.",
       "notes": "",
       "tags": [
@@ -11477,7 +11468,7 @@
       "course": "llm-internals",
       "courseTitle": "LLM 내부 구조",
       "courseUrl": "/course/llm-internals/",
-      "title": "5요소 완성 프롬프트(가장 많이 씀)",
+      "title": "5요소 완성 프롬프트",
       "template": "[맥락: 너는 ___ 역할이고, 상황은 ___ 이다.] [지시: ___ 을(를) 해줘.] [입력: 아래 정보를 사용해. ___] [출력형식: ___ 형태로, 분량은 ___.] [제약: ___ 은(는) 하지 말고, 톤은 ___ 로.]",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -11765,7 +11756,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "실패 사례 분류기 (가장 먼저)",
+      "title": "실패 사례 분류기",
       "template": "아래는 내 프롬프트가 만든 실패 출력 5건이야. 각 건의 '입력 / 실제출력 / 내가 불만인 점'을 표로 정리했어. [실패 5건]. 이 실패들을 2~3개의 반복 유형으로 분류하고 각 유형에 이름과 발생 건수를 붙여줘. 그리고 가장 먼저 고쳐야 할 유형 1개를 이유와 함께 추천해줘.",
       "notes": "",
       "tags": [
@@ -11845,7 +11836,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "줄글 → 고정 JSON 표 (가장 기본)",
+      "title": "줄글 → 고정 JSON 표",
       "template": "아래 [고객 후기]를 분석해 JSON 배열로만 답해. 설명·인사말 금지, JSON만 출력. 각 원소 형식: {\"id\": 숫자, \"[칸이름1]\": [값종류, 예: 1~5 정수], \"[칸이름2]\": \"[허용값들, 예: 긍정|부정|중립]\", \"[칸이름3]\": \"문자열\"} 값이 애매하면 비우지 말고 [기본값, 예: 중립/없음]으로 채워. 데이터: [줄글 목록]",
       "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
@@ -11892,7 +11883,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "여러 메일·문의에서 정보 뽑기 (추출)",
+      "title": "여러 메일·문의에서 정보 도출 (추출)",
       "template": "아래 [메일/문의 원문]에서 다음 칸만 뽑아 JSON으로만 답해: {\"고객명\": \"문자열|미상\", \"요청유형\": \"환불|교환|배송문의|기타\", \"긴급도\": \"높음|보통|낮음\", \"한줄요약\": \"문자열\"}. 본문에 없으면 '미상'. JSON만. 원문: [붙여넣기]",
       "notes": "",
       "tags": [
@@ -12011,7 +12002,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "도구 스키마 초안 생성",
+      "title": "Python 함수를 Claude 도구 스키마로 변환",
       "template": "나는 Anthropic Claude의 tool use를 처음 쓰는 개발자야. 아래 파이썬 함수를 모델에게 알려줄 tool 스키마(name, description, input_schema를 가진 JSON)로 변환해줘. description은 모델이 '언제 이 도구를 써야 하는지' 판단할 수 있게 구체적으로, 필수 인자는 required에. 함수: [파이썬 함수 코드]",
       "notes": "",
       "tags": [
@@ -12091,7 +12082,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "도구 2개 + 루프 코드 생성 (가장 유용)",
+      "title": "도구 2개 + 루프 코드 생성",
       "template": "나는 [Node.js]로 Anthropic 메시지 API를 써서 미니 에이전트를 만들고 있어. 도구 두 개를 등록하고 stop_reason이 tool_use가 아닐 때까지 도는 도구 루프를 완성해줘. 도구1: [get_weather - 도시명을 받아 섭씨 기온 반환], 도구2: [calculate - 수식 문자열을 계산]. 요구사항: (1) tools 배열을 JSON Schema로 정의 (2) name→실제 함수 디스패처(mock) (3) while 루프에서 tool_result를 tool_use_id와 함께 되먹임 (4) 최대 반복 8회 가드 (5) 각 스텝 콘솔 로그. 전체 실행 가능한 코드로.",
       "notes": "",
       "tags": [
@@ -12259,7 +12250,7 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "의미 단위 청킹 시키기 (가장 유용)",
+      "title": "의미 단위 청킹 시키기",
       "template": "아래 문서를 RAG 검색용으로 청킹해줘. 규칙: (1) 문장 경계를 절대 자르지 마. (2) 같은 주제 문장끼리 묶어 의미 단위로 나눠. (3) 각 청크는 [250~400] 토큰 목표. (4) 인접 청크끼리 [1문장] 오버랩. 결과는 [청크번호]로 시작하는 목록으로, 각 청크 끝에 대략 토큰 수를 괄호로. 문서: \"\"\"[문서 전체]\"\"\"",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -12287,7 +12278,7 @@
       "courseUrl": "/course/rag-search/",
       "title": "고정 토큰 청킹 (비교용 베이스라인)",
       "template": "아래 문서를 약 [300] 토큰(한글 기준 약 [450]자)마다 오버랩 없이 기계적으로 잘라줘. 의미는 고려하지 말고 길이 기준으로만, [청크번호]로 목록화. 문장 중간에서 끊긴 청크가 있으면 그 번호를 마지막에 따로. 문서: \"\"\"[문서 전체]\"\"\"",
-      "notes": "",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
         "글쓰기",
         "의사결정",
@@ -12295,9 +12286,16 @@
         "RAG",
         "검색"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "아래 문서를 약 실제 값 토큰(한글 기준 약 실제 값자)마다 오버랩 없이 기계적으로 잘라줘. 의미는 고려하지 말고 길이 기준으로만, 실제 값로 목록화. 문장 중간에서 끊긴 청크가 있으면 그 번호를 마지막에 따로. 문서: \"\"\"회의록 원문\"\"\"",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/chunking/",
-      "url": "/wiki/chunking/"
+      "url": "/wiki/chunking/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p25-score",
@@ -12344,7 +12342,7 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "임베딩 3D 비유 좌표 뽑기",
+      "title": "임베딩 3D 비유 좌표 도출",
       "template": "다음 세 문장을 의미 임베딩의 원리대로 사람이 이해할 수 있게 3차원 벡터(각 축 0~1)로 좌표를 매겨줘. 각 축이 대략 어떤 의미(예: 동물성/동작/경제성)를 담는지도 한 줄로. 문장1: [강아지가 공을 물고 왔다] 문장2: [반려견이 장난감을 가져왔다] 문장3: [오늘 주가가 크게 떨어졌다]. 마지막에 세 문장 중 어느 두 개가 방향이 가장 비슷한지 알려줘.",
       "notes": "",
       "tags": [
@@ -12382,7 +12380,7 @@
       "courseUrl": "/course/rag-search/",
       "title": "미니 의미검색기(RAG 맛보기)",
       "template": "너는 임베딩 기반 의미검색 엔진이야. 아래 [문서] 5개와 [질문] 1개가 있어. 각 문서와 질문의 의미 유사도를 0~1로 추정해 높은 순으로 정렬하고, 왜 1위 문서가 질문과 가장 가까운지 한 줄로 설명해줘. [질문]: [강아지 산책 팁]. [문서]: 1)... 2)... 3)... 4)... 5)...",
-      "notes": "",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
         "글쓰기",
         "문서 분석",
@@ -12391,9 +12389,16 @@
         "고객 지원",
         "비즈니스"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "너는 임베딩 기반 의미검색 엔진이야. 아래 회의록 원문 5개와 실제 값 1개가 있어. 각 문서와 질문의 의미 유사도를 0~1로 추정해 높은 순으로 정렬하고, 왜 1위 문서가 질문과 가장 가까운지 한 줄로 설명해줘. 실제 값: 실제 값. 회의록 원문: 1)... 2)... 3)... 4)... 5)...",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/embedding/",
-      "url": "/wiki/embedding/"
+      "url": "/wiki/embedding/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "p26-check-calc",
@@ -12485,25 +12490,18 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "문서 청킹 도와줘 (가장 먼저 써보세요)",
+      "title": "문서 청킹 설계 지원",
       "template": "아래 긴 문서를 벡터 DB에 넣기 좋게 300~500자 단위의 의미 있는 청크로 나눠줘. 문맥이 끊기지 않게 문단 경계를 지키고, 결과를 파이썬 리스트(docs = [...]) 형태로 출력해줘.\\n\\n문서:\\n[여기에 내 문서 붙여넣기]",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "문서 분석",
         "데이터베이스",
         "검색",
         "Python"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "아래 긴 문서를 벡터 DB에 넣기 좋게 300~500자 단위의 의미 있는 청크로 나눠줘. 문맥이 끊기지 않게 문단 경계를 지키고, 결과를 파이썬 리스트(docs = 실제 값) 형태로 출력해줘.\\n\\n문서:\\n회의록 원문",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/embedding/",
-      "url": "/wiki/embedding/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/embedding/"
     },
     {
       "id": "vector-store-setup-p2",
@@ -12530,7 +12528,7 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "검색 결과로 RAG 답변 만들기",
+      "title": "검색 결과로 RAG 답변 생성",
       "template": "아래 '검색된 자료'만을 근거로 질문에 답해줘. 자료에 없는 내용은 지어내지 말고 '자료에 없음'이라고 말해줘.\\n\\n검색된 자료:\\n[top-k 청크 붙여넣기]\\n\\n질문: [내 질문]",
       "notes": "",
       "tags": [
@@ -12646,7 +12644,7 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "근거 강제 Q&A (헛소리 차단)",
+      "title": "근거 강제 Q&A (환각 억제)",
       "template": "아래 질문에 답할 때 반드시 업로드한 문서에서만 근거를 찾아 답하세요. 답 끝에 근거가 된 원문 문장을 그대로 인용하세요. 문서에 근거가 없으면 추측하지 말고 \"문서에 해당 내용이 없습니다\"라고만 답하세요.\n질문: [여기에 질문]",
       "notes": "",
       "tags": [
@@ -12654,7 +12652,8 @@
         "문서 분석",
         "RAG",
         "검색",
-        "출처·인용"
+        "출처·인용",
+        "안전"
       ],
       "examples": [],
       "relatedWikiUrl": "/wiki/rag/",
@@ -12886,7 +12885,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "1. ReAct 시스템 프롬프트 (가장 먼저 복붙)",
+      "title": "ReAct 시스템 프롬프트",
       "template": "당신은 도구를 사용해 문제를 푸는 에이전트입니다. 반드시 아래 형식만 사용하세요.\n\nThought: (지금 무엇을 할지 한국어로 한 줄 생각)\nAction: (사용할 도구 이름 - calculator 또는 search 중 하나만)\nAction Input: (그 도구에 넣을 입력)\n\n그러면 시스템이 다음 줄에 'Observation: 결과'를 줄 것입니다. 필요한 만큼 Thought/Action/Action Input을 반복하세요. 답을 확정할 수 있으면 다음 형식으로 끝내세요.\n\nFinal Answer: (최종 답)\n\n도구 설명:\n- calculator: 수식 문자열을 계산. 예 Action Input: 330000000*1.05\n- search: 짧은 검색어로 사실 조회. 예 Action Input: 한국 인구\n\n한 번에 Action은 하나만. Observation을 직접 상상해서 쓰지 마세요.",
       "notes": "",
       "tags": [
@@ -12905,7 +12904,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "2. 파싱 코드 디버깅 요청",
+      "title": "파싱 코드 디버깅 요청",
       "template": "파이썬으로 ReAct 에이전트 루프를 만들고 있는데, 모델 응답에서 Action과 Action Input을 뽑아내는 이 파싱 코드가 [증상: 예를 들어 IndexError가 남 / 엉뚱한 값이 잡힘]. 아래 코드를 견고하게 고쳐줘. 여러 줄 입력이나 형식 이탈에도 안 죽게 정규식(re) 기반으로 바꿔줘.\n\n[여기에 내 파싱 코드 붙여넣기]",
       "notes": "",
       "tags": [
@@ -12923,7 +12922,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "3. 도구 추가 아이디어 요청",
+      "title": "도구 추가 아이디어 요청",
       "template": "내 최소 ReAct 에이전트에 calculator와 search 도구가 있어. 초보가 15분 안에 파이썬 함수로 직접 구현할 수 있으면서 데모가 인상적인 세 번째 도구를 3개 추천하고, 각각의 함수 시그니처(입력/출력)와 5줄 이내 예시 구현을 한국어 주석과 함께 줘. 외부 유료 API 없이 되는 걸로.",
       "notes": "",
       "tags": [
@@ -12943,7 +12942,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "4. 내 루프 코드 안전성 리뷰",
+      "title": "내 루프 코드 안전성 리뷰",
       "template": "아래는 내가 짠 ReAct 에이전트 while 루프야. (1) 무한루프 위험 (2) 없는 도구 호출 (3) eval 보안 위험 (4) 대화 기록이 너무 길어지는 문제, 이 4가지 관점에서 위험한 줄을 지적하고 각각 고친 코드를 한국어로 설명해줘.\n\n[여기에 내 루프 코드 붙여넣기]",
       "notes": "",
       "tags": [
@@ -13013,7 +13012,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "애매한 요청으로 오용 테스트 케이스 만들기",
+      "title": "애매한 요청으로 오용 테스트 케이스 생성",
       "template": "아래 도구 세트를 쓰는 에이전트를 시험할, 오용을 유도하는 애매한 사용자 요청 5개를 만들어줘. 각 요청마다 '올바른 도구 선택'과 '흔한 오용'을 함께 표로 정리해줘.\n\n도구 목록과 설명:\n[붙여넣기]",
       "notes": "",
       "tags": [
@@ -13031,23 +13030,16 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "기억 불러와 대화 시작 (가장 유용)",
+      "title": "기억 불러와 대화 시작",
       "template": "당신은 나의 개인 비서입니다. 아래는 내가 저장해둔 이 사용자에 대한 기억입니다. 이 기억을 반드시 반영해서 답하세요.\n[기억]\n이름: [김민수]\n선호: [존댓말, 짧게, 핫 음료]\n최근요약: [지난주 텀블러 구매, 오전 방문 잦음]\n[/기억]\n\n이제 사용자의 새 메시지에 답하세요: [사용자 질문]",
-      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+      "notes": "",
       "tags": [
         "요약",
         "AI 에이전트"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "당신은 나의 개인 비서입니다. 아래는 내가 저장해둔 이 사용자에 대한 기억입니다. 이 기억을 반드시 반영해서 답하세요.\n실제 값\n이름: 실제 값\n선호: 실제 값\n최근요약: 실제 값\n실제 값\n\n이제 사용자의 새 메시지에 답하세요: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/ai-agent/",
-      "url": "/wiki/ai-agent/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/ai-agent/"
     },
     {
       "id": "agent-memory-state-p2",
@@ -13237,9 +13229,9 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "자율 루프 기본 봉투(어디든 복붙)",
+      "title": "자율 루프 기본 실행 구조",
       "template": "너는 자율 작업 에이전트야.\n[목표]: [여기에 하고 싶은 일 한 줄]\n[규칙]\n1) 먼저 할 일을 번호 목록으로 쪼개라.\n2) 한 번에 한 단계만 실행하고, 끝나면 결과를 보여줘.\n3) 실시간 정보(가격 등)는 웹 검색으로 확인하고, 출처가 불확실하면 ⚠️로 표시해.\n4) 매 단계 후 '맞았나? 빠진 게 있나?'를 스스로 점검하고 틀리면 고쳐 다시 해.\n5) [완료 기준]: [예: 표 3행이 다 차면] 되면 '완료'라고만 말하고 멈춰.\n6) 한 단계를 5번 시도해도 안 되면 멈추고 막힌 이유를 보고해.\n7) 되돌릴 수 없는 행동(저장·전송·삭제) 직전엔 나에게 'OK?'라고 먼저 물어.\n이제 1단계부터 시작해.",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "계획",
         "코딩",
@@ -13248,9 +13240,16 @@
         "생산성",
         "검증"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "너는 자율 작업 에이전트야.\n반복 업무 시간을 절반으로 줄이기: 실제 값\n실제 값\n1) 먼저 할 일을 번호 목록으로 쪼개라.\n2) 한 번에 한 단계만 실행하고, 끝나면 결과를 보여줘.\n3) 실시간 정보(가격 등)는 웹 검색으로 확인하고, 출처가 불확실하면 ⚠️로 표시해.\n4) 매 단계 후 '맞았나? 빠진 게 있나?'를 스스로 점검하고 틀리면 고쳐 다시 해.\n5) 실제 값: 월별 고객 문의 건수 표 되면 '완료'라고만 말하고 멈춰.\n6) 한 단계를 5번 시도해도 안 되면 멈추고 막힌 이유를 보고해.\n7) 되돌릴 수 없는 행동(저장·전송·삭제) 직전엔 나에게 'OK?'라고 먼저 물어.\n이제 1단계부터 시작해.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/citation/",
-      "url": "/wiki/citation/"
+      "url": "/wiki/citation/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "autonomous-loop-p2",
@@ -13384,7 +13383,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "파이프라인 설계서 뽑기 (가장 먼저 써보세요)",
+      "title": "파이프라인 설계서 도출",
       "template": "나는 [최종 산출물: 예-초등 수학 블로그 글 1편]을 자동으로 만들고 싶어. 이걸 파이프라인 멀티 에이전트로 설계해줘. 각 에이전트마다 (1)이름 (2)한 줄 임무 (3)절대 하지 말 것 (4)입력 형식 (5)출력 형식을 표로 정리하고, 마지막에 전체 종료 조건(성공 조건 / 최대 반복 횟수 / 실패 탈출)을 명시해줘. 역할은 3~4개로 좁게 쪼개.",
       "notes": "",
       "tags": [
@@ -13440,7 +13439,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "핸드오프 JSON 계약 만들기",
+      "title": "핸드오프 JSON 계약 생성",
       "template": "내 워크플로에서 [에이전트A: 예-검수자]가 [에이전트B: 예-작가]에게 결과를 넘길 때 쓸 JSON 형식을 설계해줘. 필드 이름·타입·예시값을 정하고, B가 이 JSON을 받아 다음에 뭘 해야 하는지 분기 규칙(예: pass=false면 issues 반영해 재작성)도 같이 적어줘.",
       "notes": "",
       "tags": [
@@ -13634,7 +13633,7 @@
       "courseUrl": "/course/responsible-ai/",
       "title": "LLM 심판 채점 프롬프트",
       "template": "너는 엄격한 채점관이다. 아래 [평가 기준]에 따라 모델의 답을 0~100점으로 채점하라.\n\n[평가 기준]\n1. [기준1]\n2. [기준2]\n3. [기준3]\n\n[입력]\n{{input}}\n\n[기대 포인트]\n{{expected}}\n\n[모델의 답]\n{{model_output}}\n\n다음 JSON만 출력하라. 점수는 감점 항목을 근거로 계산하고, 추측/환각이 있으면 즉시 크게 감점하라.\n{\"score\": 0-100 정수, \"passed\": true/false, \"reasons\": [\"항목 -점수\"]}",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "테스트",
         "AI 에이전트",
@@ -13643,9 +13642,16 @@
         "평가",
         "출처·인용"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "너는 엄격한 채점관이다. 아래 실제 값에 따라 모델의 답을 0~100점으로 채점하라.\n\n실제 값\n1. 실제 값\n2. 실제 값\n3. 실제 값\n\n회의록 원문\n{{input}}\n\n실제 값\n{{expected}}\n\n실제 값\n{{model_output}}\n\n다음 JSON만 출력하라. 점수는 감점 항목을 근거로 계산하고, 추측/환각이 있으면 즉시 크게 감점하라.\n{\"score\": 0-100 정수, \"passed\": true/false, \"reasons\": 실제 값}",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/evaluation/",
-      "url": "/wiki/evaluation/"
+      "url": "/wiki/evaluation/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "prompt-eval-harness-p2",
@@ -13712,7 +13718,7 @@
       "courseUrl": "/course/responsible-ai/",
       "title": "LLM 심판용 채점 프롬프트(정확성)",
       "template": "너는 엄격한 채점관이다. 아래 [질문]에 대한 [AI답]이 [모범답]과 의미상 일치하는지 판단하라.\n- 완전히 맞으면 1, 부분만 맞으면 0.5, 틀리면 0으로 점수만 매겨라.\n- 표현이 달라도 핵심 사실이 같으면 정답으로 본다.\n[질문]: [여기에 질문]\n[모범답]: [여기에 정답]\n[AI답]: [여기에 AI가 낸 답]\n점수와 한 줄 이유를 출력하라.",
-      "notes": "",
+      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
         "요약",
         "디버깅",
@@ -13721,9 +13727,16 @@
         "프롬프트 설계",
         "평가"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "너는 엄격한 채점관이다. 아래 실제 값에 대한 실제 값이 실제 값과 의미상 일치하는지 판단하라.\n- 완전히 맞으면 1, 부분만 맞으면 0.5, 틀리면 0으로 점수만 매겨라.\n- 표현이 달라도 핵심 사실이 같으면 정답으로 본다.\n실제 값: 실제 값\n실제 값: 실제 값\n실제 값: 실제 값\n점수와 한 줄 이유를 출력하라.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/observability/",
-      "url": "/wiki/observability/"
+      "url": "/wiki/observability/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "agent-eval-observability-p2",
@@ -13829,7 +13842,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "curl 테스트 시나리오 만들기",
+      "title": "curl 테스트 시나리오 생성",
       "template": "내 배포된 엔드포인트 [https://내주소/ask]를 검증할 curl 명령 5개를 만들어줘: (1) 정상 요청 (2) 키 없는 요청 401 (3) 잘못된 키 401 (4) 2000자 초과 413 (5) 빈 question. 각각 기대 응답도 적어줘.",
       "notes": "",
       "tags": [
@@ -13868,7 +13881,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "프롬프트 축약(토큰 다이어트)",
+      "title": "프롬프트 축약(토큰 절감)",
       "template": "아래 프롬프트를 의미와 지시 강도를 유지하면서 최대한 짧게 다시 써줘. 중복 설명·불필요한 예의 표현·장황한 예시를 제거하고, 핵심 지시만 남겨줘. 원본과 축약본의 대략적인 토큰 수도 각각 알려줘.\n원본 프롬프트: [프롬프트 붙여넣기]",
       "notes": "",
       "tags": [
@@ -13923,7 +13936,7 @@
       "courseUrl": "/course/api-development/",
       "title": "민감 문서 요약·검토",
       "template": "다음 [계약서/진단서/일기] 내용을 인터넷에 올리지 않고 너에게만 보여줄게. 초등학생도 알 만큼 쉬운 말로 핵심 3가지와 내가 주의할 점 1가지를 짚어줘:\n[여기에 민감한 글 붙여넣기]",
-      "notes": "",
+      "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
       "tags": [
         "글쓰기",
         "요약",
@@ -13931,9 +13944,16 @@
         "문서 분석",
         "법무"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "다음 실제 값 내용을 인터넷에 올리지 않고 너에게만 보여줄게. 초등학생도 알 만큼 쉬운 말로 핵심 3가지와 내가 주의할 점 1가지를 짚어줘:\n실제 값",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/large-language-model/",
-      "url": "/wiki/large-language-model/"
+      "url": "/wiki/large-language-model/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "local-llm-ollama-p2",
@@ -14190,7 +14210,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "팀 공유용 AI 사용 보안 규칙 만들기",
+      "title": "팀 공유용 AI 사용 보안 규칙 생성",
       "template": "우리 팀이 [업종/업무: 예 통신 영업 CRM]에서 ChatGPT를 안전하게 쓰기 위한 규칙을 만들어줘. 절대 넣지 말 정보 목록, 마스킹 방법, 인젝션 방어 문구, '방어는 100%가 아니므로 발송 전 사람이 확인'한다는 원칙, 발송 전 점검 항목을 포함해 A4 한 장 분량으로 정리해줘.",
       "notes": "",
       "tags": [
@@ -14444,7 +14464,7 @@
       "courseUrl": "/course/agent-systems/",
       "title": "노코드 vs 코드 판정 요청",
       "template": "나는 다음 자동화를 운영 중이야.\n흐름: [무엇이 → 무엇을 하면 → 무엇을 한다]\n월 실행량: [예: 1만 건]\n사용 중인 노코드 도구: [Zapier/Make/노션 등]\n5가지 전환 신호에 대한 내 답:\n1) 요금제 한도 초과 위험: [예/아니오]\n2) 도구에 없는 세밀한 로직 필요: [예/아니오]\n3) 같은 흐름 5개 이상 복제: [예/아니오]\n4) 커넥터 없는 API 직접 호출: [예/아니오]\n5) 재시도·로그·버전관리 필요: [예/아니오]\n이 상황에서 '노코드 유지 / 하이브리드 / 전면 코드' 중 무엇을 추천하는지, 그 이유, 그리고 코드로 갈아탈 부분이 있다면 정확히 어느 조각인지 알려줘.",
-      "notes": "",
+      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
       "tags": [
         "코딩",
         "API",
@@ -14453,16 +14473,23 @@
         "노코드",
         "모니터링"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "나는 다음 자동화를 운영 중이야.\n흐름: 실제 값\n월 실행량: 1만 건\n사용 중인 노코드 도구: 실제 값\n5가지 전환 신호에 대한 내 답:\n1) 요금제 한도 초과 위험: 실제 값\n2) 도구에 없는 세밀한 로직 필요: 실제 값\n3) 같은 흐름 5개 이상 복제: 실제 값\n4) 커넥터 없는 API 직접 호출: 실제 값\n5) 재시도·로그·버전관리 필요: 실제 값\n이 상황에서 '노코드 유지 / 하이브리드 / 전면 코드' 중 무엇을 추천하는지, 그 이유, 그리고 코드로 갈아탈 부분이 있다면 정확히 어느 조각인지 알려줘.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/workflow-orchestration/",
-      "url": "/wiki/workflow-orchestration/"
+      "url": "/wiki/workflow-orchestration/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "nocode-vs-code-p2",
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "병목 한 조각만 최소 코드로 뽑기",
+      "title": "병목 한 조각만 최소 코드로 도출",
       "template": "내 자동화에서 노코드로 처리하기 어려운 이 부분만 최소한의 코드로 만들어줘.\n하고 싶은 일: [예: 배송사 API에 운송장 번호 POST, 실패 시 3회 재시도]\n입력 데이터: [예: 주문번호, 운송장번호(JSON)]\n원하는 언어: [파이썬/자바스크립트]\n실행 환경: [예: Make HTTP 모듈 / 서버리스 / 로컬]\n초보자도 복붙해서 쓸 수 있게 주석을 달고, 어디에 붙여넣는지도 설명해줘.",
       "notes": "",
       "tags": [
@@ -14500,7 +14527,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "전환 결정표 만들기",
+      "title": "전환 결정표 생성",
       "template": "내가 운영하는 자동화 흐름들을 노코드/코드/하이브리드로 분류해 관리하는 표를 만들고 싶어. 열 구성과, 각 흐름을 재판정해야 하는 시점(트리거 조건)을 함께 제안해줘. 내 흐름 목록: [흐름1, 흐름2, 흐름3]",
       "notes": "",
       "tags": [
@@ -14630,7 +14657,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "연습 문제 5개 만들기",
+      "title": "연습 문제 5개 생성",
       "template": "변수, 문자열·숫자·불리언, 기본 연산과 print만 사용하는 파이썬 연습 문제 5개를 난이도 순서로 만들어줘. 각 문제마다 힌트 한 줄을 붙이되 정답 코드는 아직 보여주지 마.",
       "notes": "",
       "tags": [
@@ -14668,7 +14695,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "내 엑셀을 조건+반복으로 자동 처리 (가장 유용)",
+      "title": "내 엑셀을 조건+반복으로 자동 처리",
       "template": "파이썬 초보야. [엑셀/CSV 파일 설명: 예 '학생 이름과 점수가 든 성적표']을 처리하고 싶어. [원하는 작업: 예 '60점 미만인 학생만 골라내서 새 파일로 저장']을 하는 코드를 pandas 없이 순수 for/if만 써서 짜주고, 각 줄이 무슨 뜻인지 한국어 주석을 달아줘. 실행 순서도 알려줘.",
       "notes": "",
       "tags": [
@@ -14796,7 +14823,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "AI에게 함수 만들어달라기",
+      "title": "함수 만들어달라기",
       "template": "파이썬 초보자입니다. [무엇을 하는] 동작을 함수로 만들어 주세요. 입력은 [입력 설명], 출력은 [출력 설명]입니다. def를 쓰고, 각 줄에 한국어 주석을 달고, 실제 호출 예시 3개도 함께 보여주세요.",
       "notes": "",
       "tags": [
@@ -14885,7 +14912,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "트레이스백 원인 진단 (가장 유용)",
+      "title": "트레이스백 원인 진단",
       "template": "아래는 파이썬 실행 중 나온 에러야. (1) 에러의 진짜 원인을 한 문장으로, (2) 정확히 몇 번째 줄 무엇을 어떻게 바꿔야 하는지, (3) 수정된 전체 코드 순서로 알려줘. 추측이면 추측이라고 표시해.\n\n[에러 트레이스백 전체 붙여넣기]\n\n[문제된 코드 붙여넣기]",
       "notes": "",
       "tags": [
@@ -15035,7 +15062,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "정규식 만들어줘 (가장 자주 씀)",
+      "title": "정규식 생성",
       "template": "아래는 내 텍스트 샘플이야:\n[여기에 실제 텍스트 3~5줄 붙여넣기]\n\n여기서 [뽑고 싶은 것: 예-이메일 주소만]을 추출하는 정규식을 만들어줘. 조건:\n1) Python/JavaScript/regex101에서 그대로 쓸 수 있는 문법\n2) 패턴의 각 조각을 한글로 한 줄씩 설명\n3) 이 샘플에서 실제로 몇 개가 매치되는지\n4) 놓치기 쉬운 예외 케이스 1~2개",
       "notes": "",
       "tags": [
@@ -15111,7 +15138,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "파일 일괄 이름변경 스크립트 만들기 (가장 먼저 사용)",
+      "title": "파일 일괄 이름변경 스크립트 생성",
       "template": "너는 파일 자동화 도우미야. 내 컴퓨터 파일을 일괄로 바꾸는 스크립트를 짜 줘.\n- 운영체제: [윈도우 11 / macOS 중 선택]\n- 대상 폴더 경로: [예: C:\\Users\\내이름\\Downloads]\n- 대상 파일: [예: 확장자가 .png 인 파일 전부]\n- 원하는 규칙: [예: '스크린샷_촬영날짜_두자리순번.png' 형식으로 이름변경]\n요구사항: (1) 초보자가 그대로 복사해 실행할 수 있게 실행 방법을 1,2,3 단계로 알려줘. (2) 순번은 001,002처럼 자릿수를 맞춰줘. (3) 실행 전 위험한 점이 있으면 먼저 경고해 줘.",
       "notes": "",
       "tags": [
@@ -15178,9 +15205,9 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "내 엑셀 자동집계 코드 생성 (가장 먼저 쓰세요)",
+      "title": "내 엑셀 자동집계 코드 생성",
       "template": "파이썬 pandas와 openpyxl로 엑셀 자동화 스크립트를 만들어줘. 폴더 [sales]에 있는 여러 .xlsx 파일을 모두 읽어 하나로 합친 뒤, [지점]별 [금액] 합계와 [상품]별 수량 합계를 구하고, 결과를 서식(헤더 볼드, 열 너비 자동, 숫자 천단위 콤마)이 적용된 새 엑셀 파일 하나로 저장하는 코드야. 내 데이터 컬럼은 다음과 같아: [날짜, 지점, 상품, 수량, 금액]. 첫 3줄 예시: [여기에 실제 데이터 3줄 붙여넣기]. 초보자용으로 각 줄에 주석을 달고, 실행 방법도 알려줘.",
-      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+      "notes": "",
       "tags": [
         "데이터 분석",
         "스프레드시트",
@@ -15189,16 +15216,9 @@
         "영업",
         "Python"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "파이썬 pandas와 openpyxl로 엑셀 자동화 스크립트를 만들어줘. 폴더 실제 값에 있는 여러 .xlsx 파일을 모두 읽어 하나로 합친 뒤, 실제 값별 실제 값 합계와 업무 자동화 템플릿별 수량 합계를 구하고, 결과를 서식(헤더 볼드, 열 너비 자동, 숫자 천단위 콤마)이 적용된 새 엑셀 파일 하나로 저장하는 코드야. 내 데이터 컬럼은 다음과 같아: 2026년 7월 31일. 첫 3줄 예시: 월별 고객 문의 건수 표. 초보자용으로 각 줄에 주석을 달고, 실행 방법도 알려줘.",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/workflow-orchestration/",
-      "url": "/wiki/workflow-orchestration/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/workflow-orchestration/"
     },
     {
       "id": "spreadsheet-p2",
@@ -15326,7 +15346,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "AI에게 도움 요청하기",
+      "title": "도움 요청하기",
       "template": "파이썬 requests로 '[하고 싶은 일: 예-이 API에서 날씨 데이터 가져오기]'를 하려고 합니다. 이 API 주소는 [URL]입니다. 초보자가 코랩에서 복붙할 수 있는 코드와, 각 줄이 무슨 뜻인지 한 줄 설명을 붙여 알려주세요.",
       "notes": "",
       "tags": [
@@ -15345,7 +15365,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "환율/공개 API 호출 코드 만들기",
+      "title": "환율/공개 API 호출 코드 생성",
       "template": "나는 프로그래밍 초보야. Python requests 라이브러리로 [서비스명, 예: exchangerate-api] API를 호출해서 [목표, 예: USD 대비 KRW 환율]을 가져오는 코드를 써줘. 조건: (1) API 키는 코드에 YOUR_KEY 자리표시자로만 두고 (2) 응답 JSON에서 내가 원하는 값 하나만 print로 출력하고 (3) 각 줄에 한국어 주석을 달아줘.",
       "notes": "",
       "tags": [
@@ -15425,7 +15445,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "스크래퍼 코드 통째로 받기",
+      "title": "스크래퍼 전체 코드 생성",
       "template": "파이썬 requests와 BeautifulSoup으로 [http://books.toscrape.com] 페이지에서 [책 제목과 가격]을 뽑아 books.csv로 저장하는 코드를 20줄 이내로 써줘. 각 줄에 한국어 주석을 달고, 초보자가 그대로 복붙해서 실행할 수 있게 해줘.",
       "notes": "",
       "tags": [
@@ -15501,7 +15521,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "셀렉터 뽑기 (가장 유용)",
+      "title": "셀렉터 도출",
       "template": "아래는 크롬 검사(F12)로 복사한 HTML 조각이야. 여기서 [가격 / 제목 / 링크]를 Playwright(파이썬 sync API)로 추출하는 query_selector 코드를 만들어줘. 여러 개면 query_selector_all로. HTML: [여기에 HTML 붙여넣기]",
       "notes": "",
       "tags": [
@@ -15660,7 +15680,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "재시도+백오프+타임아웃 함수 만들기",
+      "title": "재시도+백오프+타임아웃 함수 생성",
       "template": "파이썬으로 외부 API를 안전하게 호출하는 함수를 만들어줘. 요구사항: (1) 모든 요청에 timeout=[10]초, (2) 최대 [4]회 재시도, (3) 재시도마다 대기시간을 1,2,4초로 늘리는 지수 백오프, (4) 4xx 같은 재시도 무의미한 오류는 즉시 포기하고 5xx·네트워크 오류만 재시도, (5) 각 시도의 실패 이유를 print로 남기고 최종 실패 시 예외를 던짐. 함수 이름은 fetch_with_retry(url)로 하고, 초보가 읽기 쉽게 한글 주석을 달아줘.",
       "notes": "",
       "tags": [
@@ -15738,7 +15758,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "AI에게 로깅 추가 요청",
+      "title": "로깅 추가 요청",
       "template": "아래 파이썬 코드에 logging을 추가해줘. 각 주요 단계마다 logging.info로 진행 상황을 남기고, 에러가 날 수 있는 부분은 try/except로 감싸 logging.error로 실패를 기록해줘. 로그는 'app.log' 파일에 시간·등급·메시지 형식으로 한글이 깨지지 않게 저장되게 해줘.\n\n[여기에 내 코드 붙여넣기]",
       "notes": "",
       "tags": [
@@ -15758,7 +15778,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "AI에게 코드 요청",
+      "title": "코드 요청",
       "template": "파이썬으로 [내 작업 설명]을 실행하고, 성공하면 슬랙에 '완료' 메시지를, 오류가 나면 오류 내용을 슬랙에 보내는 코드를 만들어줘. 슬랙 웹훅 방식으로, 초보자도 이해하게 주석을 달아줘.",
       "notes": "",
       "tags": [
@@ -15778,7 +15798,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "1) 봇 명령어 설계",
+      "title": "봇 명령어 설계",
       "template": "나는 텔레그램 봇을 처음 만든다. 봇의 목적은 [봇의 목적, 예: 매일 환율/날씨 알려주기]이다. 이 봇에 넣을 명령어 5개를 표로 만들어줘. 각 행에 (명령어, 사용자가 보는 설명, 봇의 응답 예시 문장)을 한국어로 채워줘. /start 와 /help 는 반드시 포함해줘.",
       "notes": "",
       "tags": [
@@ -15796,7 +15816,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "2) 파이썬 봇 코드 생성",
+      "title": "파이썬 봇 코드 생성",
       "template": "python-telegram-bot 최신 버전(v20 이상, async 방식) 기준으로, 초보자가 Replit에 그대로 붙여넣고 실행할 수 있는 완전한 텔레그램 봇 코드를 작성해줘. 다음 명령어를 처리해줘: [3단계에서 정리한 명령어 목록]. 코드 맨 위에 TOKEN 변수를 두고 주석으로 '여기에 토큰 붙여넣기'라고 표시해줘. 각 줄에 초보자용 한국어 주석을 달아줘.",
       "notes": "",
       "tags": [
@@ -15814,7 +15834,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "3) 키워드 자동응답 추가",
+      "title": "키워드 자동응답 추가",
       "template": "아래 내 텔레그램 봇 코드에, 사용자가 명령어가 아니라 일반 메시지로 '[키워드, 예: 안녕]'을 보내면 '[응답 문구]'라고 답하는 핸들러를 추가해줘. 기존 코드를 해치지 말고 추가할 부분과 붙여넣을 위치를 명확히 알려줘.\n\n[여기에 현재 코드 붙여넣기]",
       "notes": "",
       "tags": [
@@ -15830,7 +15850,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "4) 오류 해결",
+      "title": "오류 해결",
       "template": "내 텔레그램 봇을 실행했더니 아래 오류가 났어. 원인을 초보자도 알 수 있게 한 줄로 설명하고, 정확히 어디를 어떻게 고쳐야 하는지 알려줘.\n\n[콘솔에 뜬 빨간 오류 메시지 전체 붙여넣기]",
       "notes": "",
       "tags": [
@@ -15958,7 +15978,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "AI에게 스케줄 코드 요청",
+      "title": "스케줄 코드 요청",
       "template": "파이썬 schedule 라이브러리로 [매일 오전 8시]에 [날씨 정보를 이메일로 보내는] 자동 실행 코드를 만들어줘. 초보자용으로 주석을 한국어로 달고, 실행 방법도 알려줘.",
       "notes": "",
       "tags": [
@@ -16116,7 +16136,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "① 구글폼→웹훅 Apps Script 코드 생성 (가장 유용)",
+      "title": "1 구글폼→웹훅 Apps Script 코드 생성",
       "template": "구글폼 응답이 제출될 때마다 지정한 웹훅 URL로 JSON을 POST하는 Google Apps Script 코드를 만들어줘. 요구사항: 1) 함수명 onFormSubmit, 2) e.namedValues 전체를 JSON.stringify해서 보냄, 3) contentType은 application/json, 4) try/catch로 감싸고 실패하면 [내이메일]로 MailApp.sendEmail 알림. 웹훅 URL은 [여기에_내_URL]. 주석은 한국어로.",
       "notes": "",
       "tags": [
@@ -16136,7 +16156,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "② webhook.site 페이로드를 슬랙/디스코드 형식으로 변환",
+      "title": "2 webhook.site 페이로드를 슬랙/디스코드 형식으로 변환",
       "template": "아래는 내 웹훅에 도착한 실제 JSON 페이로드야. 이걸 [디스코드 또는 슬랙] 웹훅이 받아들이는 메시지 형식으로 바꾸는 Apps Script payload 코드 한 조각을 만들어줘. 사람이 읽기 좋은 한 줄 요약으로. 도착한 JSON: [붙여넣기]",
       "notes": "",
       "tags": [
@@ -16155,7 +16175,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "③ 폴링 vs 웹훅 어느 쪽이 맞는지 판단",
+      "title": "3 폴링 vs 웹훅 어느 쪽이 맞는지 판단",
       "template": "내 상황은 이래: [예: 5분마다 특정 사이트 재고를 확인하고 싶다 / 결제가 완료되면 즉시 처리하고 싶다]. 이 경우 폴링과 웹훅 중 무엇이 적합한지, 상대 서비스가 웹훅을 지원하는지 확인하는 방법, 웹훅이 없다면 대안을 표로 정리해줘.",
       "notes": "",
       "tags": [
@@ -16173,7 +16193,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "④ 웹훅 보안 토큰 검증 로직 만들기",
+      "title": "4 웹훅 보안 토큰 검증 로직 생성",
       "template": "내 웹훅 수신 엔드포인트로 아무나 가짜 요청을 못 보내게 하고 싶어. 보내는 쪽 헤더에 비밀 토큰 X-Webhook-Token: [내토큰]을 넣고, 받는 쪽([Supabase Edge Function 또는 Apps Script doPost])에서 이 토큰이 일치할 때만 처리하는 코드를 만들어줘. 불일치면 401 반환.",
       "notes": "",
       "tags": [
@@ -16213,7 +16233,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "curl 핑 명령 만들기",
+      "title": "curl 핑 명령 생성",
       "template": "내 리눅스 서버 스크립트 맨 끝에 healthchecks.io로 생존신호를 보내고 싶다. 내 핑 주소는 [https://hc-ping.com/여기]다. 작업이 성공했을 때만 신호를 보내고, 실패하면 실패신호(/fail)를 보내는 명령을 만들어줘. 각 줄이 무슨 뜻인지도 설명해줘.",
       "notes": "",
       "tags": [
@@ -16286,7 +16306,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "드라이런 모드 래퍼 만들기",
+      "title": "드라이런 모드 래퍼 생성",
       "template": "이 [함수]를 DRY_RUN 플래그로 감싸서, true일 때는 실제 호출 대신 호출 인자와 예상 누적 비용을 콘솔에 출력하고, false일 때만 실제 실행하도록 리팩터링해줘. 예상 총 호출 횟수와 비용을 마지막에 요약 출력하는 코드도 추가해줘.",
       "notes": "",
       "tags": [
@@ -16325,7 +16345,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "① 문의 분류+요약기 (가장 먼저 써보세요)",
+      "title": "1 문의 분류+요약기",
       "template": "너는 고객 문의 분류기다. 아래 문의를 읽고 반드시 아래 JSON 형식으로만 답하라. 설명·인사·코드블록 없이 JSON 객체 하나만 출력하라.\n형식: {\"category\": \"환불|배송|칭찬|기타 중 하나\", \"summary\": \"한글 3줄 이내 핵심 요약\", \"urgency\": \"높음|보통|낮음\"}\n\n문의: [여기에 고객 문의 텍스트]",
       "notes": "",
       "tags": [
@@ -16345,7 +16365,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "② 자유 텍스트 → 구조화 데이터 추출",
+      "title": "2 자유 텍스트 → 구조화 데이터 추출",
       "template": "아래 텍스트에서 다음 항목을 뽑아 JSON으로만 답하라. 값이 없으면 null. 다른 말 금지.\n형식: {\"이름\": null, \"연락처\": null, \"희망일자\": null, \"요청내용\": null}\n\n텍스트: [여기에 이메일/메모 원문]",
       "notes": "",
       "tags": [
@@ -16363,7 +16383,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "③ 감정·긴급도 판정(라우팅용)",
+      "title": "3 감정·긴급도 판정(라우팅용)",
       "template": "다음 메시지의 감정과 긴급도를 판정해 JSON으로만 답하라.\n형식: {\"sentiment\": \"긍정|중립|부정\", \"needs_human\": true|false, \"reason\": \"한 문장\"}\nneeds_human은 화가 났거나 즉시 대응이 필요하면 true.\n\n메시지: [여기에 텍스트]",
       "notes": "",
       "tags": [
@@ -16381,7 +16401,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "④ 프롬프트 안정화 점검",
+      "title": "4 프롬프트 안정화 점검",
       "template": "아래 프롬프트를 자동화의 분류 스텝에 넣으려 한다. 형식을 어기거나 엉뚱한 값이 나올 위험 요소를 3가지 짚고, 각각 프롬프트를 어떻게 고치면 되는지 수정본을 제안하라.\n\n내 프롬프트: [여기에 프롬프트 붙여넣기]",
       "notes": "",
       "tags": [
@@ -16400,9 +16420,9 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "구조화 출력 강제 (가장 유용)",
+      "title": "구조화 출력 강제",
       "template": "너는 데이터 추출기다. 아래 [입력]을 분석해 오직 순수 JSON 객체 하나만 출력해라. 마크다운 코드블록, 설명, 인사말 절대 금지.\n스키마:\n{\n  \"[키1]\": \"[타입/허용값 예: positive|neutral|negative]\",\n  \"[키2]\": \"string 또는 null\",\n  \"[키3]\": true\n}\n규칙: 값을 모르면 null. 스키마에 없는 키 추가 금지.\n[입력]:\n[여기에 원문 텍스트]",
-      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+      "notes": "",
       "tags": [
         "데이터 분석",
         "코딩",
@@ -16411,16 +16431,9 @@
         "구조화 출력",
         "데이터 엔지니어링"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 데이터 추출기다. 아래 회의록 원문을 분석해 오직 순수 JSON 객체 하나만 출력해라. 마크다운 코드블록, 설명, 인사말 절대 금지.\n스키마:\n{\n  \"실제 값\": \"타입\",\n  \"실제 값\": \"string 또는 null\",\n  \"실제 값\": true\n}\n규칙: 값을 모르면 null. 스키마에 없는 키 추가 금지.\n회의록 원문:\n회의록 원문",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/prompt/"
     },
     {
       "id": "prompt-pipelines-p2",
@@ -16485,7 +16498,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "도구 스키마 초안 만들기",
+      "title": "도구 스키마 초안 생성",
       "template": "나는 초보자이고 LLM 에이전트에 붙일 도구(함수)를 설계 중이야. 내가 만들고 싶은 기능은 [예: 도시 날씨 조회]야. 이 도구의 (1) 함수 이름, (2) 한 줄 설명(LLM이 언제 이 도구를 골라야 하는지 분명하게), (3) 입력 파라미터 JSON 스키마를 OpenAI function calling 형식으로 만들어줘. 오해 없이 고르도록 설명을 특히 신경 써줘.",
       "notes": "",
       "tags": [
@@ -16559,7 +16572,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "근거 밖 답 금지 시스템 프롬프트 (가장 먼저 쓰세요)",
+      "title": "근거 밖 답 금지 시스템 프롬프트",
       "template": "당신은 [회사/주제]의 문서 기반 답변 도우미입니다. 규칙: 1) 반드시 검색된 문서 근거에만 기반해 답한다. 2) 근거에 없는 내용은 절대 추측하거나 지어내지 말고 '제공된 문서에서 확인되지 않습니다'라고 답한다. 3) 답변 끝에 근거가 된 문서명을 (출처: 파일명) 형식으로 표시한다. 4) 애매하면 사용자에게 어떤 문서를 더 올려야 하는지 되묻는다. 말투는 [간결한 존댓말].",
       "notes": "",
       "tags": [
@@ -16639,7 +16652,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "① 워크플로 설계 도우미 (가장 먼저 써보세요)",
+      "title": "1 워크플로 설계 도우미",
       "template": "나는 [만들 결과물: 예-블로그 글 1편]을 AI 여러 단계로 자동 생산하려고 해. 이 결과가 나오기까지 필요한 단계를 4~6개로 쪼개줘. 각 단계는 '단계명 / 입력 / AI가 하는 일 / 출력 형식 / 다음 단계'를 표로 정리하고, 순서·분기·병렬 중 무엇인지 표시해줘. 검수(품질 게이트) 단계를 반드시 1개 포함해줘.",
       "notes": "",
       "tags": [
@@ -16658,7 +16671,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "② 단계별 프롬프트 생성기",
+      "title": "2 단계별 프롬프트 생성기",
       "template": "아래 워크플로 표를 줄게. 각 단계마다 그 단계 '하나의 임무만' 수행하는 프롬프트를 따로 작성해줘. 각 프롬프트는 [입력] 자리 표시자를 포함하고, 출력 형식을 마지막에 못박아서 다음 단계가 바로 받아먹게 해줘. 인사말·설명 없이 결과만 나오게.\n워크플로:\n[여기에 1번 템플릿 결과 붙여넣기]",
       "notes": "",
       "tags": [
@@ -16676,7 +16689,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "③ 검수(품질 게이트) 프롬프트",
+      "title": "3 검수(품질 게이트) 프롬프트",
       "template": "너는 깐깐한 편집자야. 아래 초안을 검수해서 반드시 첫 줄에 'PASS' 또는 'FAIL' 중 하나만 적고, 다음 줄부터 이유를 불릿으로 최대 5개 적어줘. 사실 오류·논리 비약·근거 없는 수치·중복을 우선 지적해. 고쳐쓰지는 말고 지적만 해.\n초안:\n[여기에 초안 붙여넣기]",
       "notes": "",
       "tags": [
@@ -16695,7 +16708,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "④ 지적 반영 재작성 프롬프트",
+      "title": "4 지적 반영 재작성 프롬프트",
       "template": "아래 '원본 초안'을 '검수 지적'에 따라 고쳐 최종본을 써줘. 지적된 부분만 정확히 수정하고 나머지 톤·길이는 유지해. 최종본 텍스트만 출력해.\n원본 초안:\n[초안 붙여넣기]\n검수 지적:\n[검수 결과 붙여넣기]",
       "notes": "",
       "tags": [
@@ -16712,7 +16725,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "출력 스키마 검증 코드 생성 (가장 유용)",
+      "title": "출력 스키마 검증 코드 생성",
       "template": "다음 작업의 LLM 출력을 검증하는 zod 스키마와 검증 함수를 만들어줘. 작업: [작업 설명, 예: 블로그 초안 생성]. 필수 필드: [title, body, tags]. 규칙: [title 5자 이상, body 200자 이상, tags 최소 1개]. 검증 실패 시 1회 재시도 후 리뷰 큐로 보내는 흐름도 포함하고, 각 줄에 한국어 주석을 달아줘.",
       "notes": "",
       "tags": [
@@ -16791,7 +16804,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "자동화 설계도 초안 만들기",
+      "title": "자동화 설계도 초안 생성",
       "template": "나는 자동화 초보야. 내가 반복하는 업무를 자동화 시스템으로 설계하고 싶어. 업무: [예: 매일 구글시트 매출을 요약해 카톡으로 받기]. 이 업무를 (1)트리거(시간/이벤트/수동 중 무엇) (2)데이터 흐름을 입력→처리→출력 화살표로 (3)각 단계에서 생길 수 있는 에러 3가지와 대응 (4)월 예상 실행 횟수와 비용, 이렇게 4개 항목으로 1페이지 설계도를 표로 만들어줘. 아직 코드는 짜지 말고 설계만.",
       "notes": "",
       "tags": [
@@ -16849,7 +16862,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "도구 추천받기",
+      "title": "도구 추천",
       "template": "이 자동화 설계도로 [설계도 붙여넣기] 실제로 만들려고 해. 코딩을 [거의 못해 / 조금 해] 하는 초보 기준으로, Zapier·Make·n8n 중 무엇이 이 설계에 가장 맞는지 이유와 함께 하나만 추천하고, 첫 30분 안에 만들 수 있는 최소 버전(MVP) 구성 순서를 알려줘.",
       "notes": "",
       "tags": [
@@ -16923,7 +16936,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "안 죽는 봇으로 하드닝",
+      "title": "복원력 있는 봇으로 하드닝",
       "template": "이 자동화 봇이 3주 뒤에도 조용히 죽지 않게 만들고 싶어. 아래 main.py에 (1) 매 실행 성공 시 '✅ 정상 N건' 하트비트 알림 (2) 사이트 구조 변경/네트워크 오류 시 구체적 에러 메시지 알림 (3) 재시도 3회 로직 (4) '고장나면 확인할 곳' README 체크리스트를 추가해줘. 코드: [여기에 붙여넣기]",
       "notes": "",
       "tags": [
@@ -16982,7 +16995,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "아이템 아이디어 30개 뽑기 (뭘 팔지 모를 때)",
+      "title": "아이템 아이디어 30개 도출 (뭘 팔지 모를 때)",
       "template": "AI로 만들어 팔 수 있는 '디지털 상품' 아이디어 30개를 추천해줘.\n조건: ①혼자 AI만으로 하루 안에 만들 수 있을 것 ②5천~3만원에 팔 만한 것 ③[내 관심사: 예—요리/육아/엑셀] 분야 위주.\n각 아이디어마다 '상품명 / 누가 사는지 / 예상 가격'을 한 줄로 써줘.",
       "notes": "",
       "tags": [
@@ -17041,7 +17054,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "현실 타임라인·착각 진단 (가장 먼저 써보세요)",
+      "title": "현실 타임라인·착각 진단",
       "template": "나는 AI 수익화 완전 초보야. 내가 관심 있는 방식은 [예: 블로그 애드센스 / 전자책 / 이모티콘 / 프리랜스 글쓰기]야.\n과장 없이 현실적으로 알려줘:\n1) 이 방식으로 '첫 1원'을 벌기까지 보통 걸리는 기간\n2) 초보의 현실적인 첫 달 수익 범위(원 단위)\n3) 초보가 흔히 하는 착각 3가지\n4) 이게 나한테 안 맞을 수 있는 신호 2가지\n숫자는 두루뭉술하게 말하지 말고 범위로 구체적으로 말해줘.",
       "notes": "",
       "tags": [
@@ -17124,7 +17137,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "① 숨은 자산 캐내기 (제일 먼저 써라)",
+      "title": "1 숨은 자산 발굴",
       "template": "나는 나만의 판매 자산을 찾는 중이야. 아래는 내가 적은 스킬 인벤토리야.\n\n[여기에 기술/경험/관심사/인맥/시간 표를 그대로 붙여넣기]\n\n다음을 해줘:\n1) 내가 당연하게 여겨 안 적었을 법한 숨은 자산 5개를 추가 발굴해줘.\n2) 서로 다른 항목을 조합해 만들 수 있는 'AI로 증폭 가능한 판매 자산' 아이디어 5개를 제안해줘.\n3) 각 아이디어에 왜 팔릴 수 있는지 한 줄 근거를 붙여줘. 한국어로, 표 형태로 답해줘.",
       "notes": "",
       "tags": [
@@ -17143,7 +17156,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "② AI 증폭 가능성 판정",
+      "title": "2 AI 증폭 가능성 판정",
       "template": "아래 각 항목에 대해 'AI(ChatGPT·Claude 등)를 붙이면 작업 속도나 품질이 크게 오르는가?'를 O/△/X로 판정하고, 이유를 한 줄씩 붙여줘.\n\n항목: [내 O/X 판정하고 싶은 항목들 나열]\n\nO가 붙은 것에는 '어떤 AI 활용법'인지도 한 줄로 알려줘. 한국어로.",
       "notes": "",
       "tags": [
@@ -17160,7 +17173,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "③ 수요·고객 검증",
+      "title": "3 수요·고객 검증",
       "template": "나는 '[내 자산 아이디어 1문장]'을 팔아볼까 고민 중이야.\n1) 이걸 돈 주고 살 만한 구체적인 고객층 3개를 묘사해줘(나이·상황·고민).\n2) 이미 존재하는 비슷한 서비스나 경쟁자가 있으면 알려줘.\n3) 초보가 가장 작게 시작할 수 있는 첫 버전은 뭘지 제안해줘. 한국어로 현실적으로.",
       "notes": "",
       "tags": [
@@ -17180,7 +17193,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "④ 인벤토리 빈칸 자극 질문",
+      "title": "4 인벤토리 빈칸 자극 질문",
       "template": "나는 스킬 인벤토리 표의 '[비어있는 칸: 예-인맥]'을 못 채우고 있어. 이 칸을 채울 수 있게 자극하는 구체적인 질문 10개를 던져줘. 각 질문은 '예/아니오'가 아니라 떠올리게 만드는 질문이어야 해. 한국어로.",
       "notes": "",
       "tags": [
@@ -17197,13 +17210,14 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "문제 발굴 (대상의 아픈 점 펼치기)",
+      "title": "문제 발굴 (대상의 문제점 분석)",
       "template": "너는 고객 리서치 전문가야. 다음 대상이 '돈을 내서라도 해결하고 싶어 하는' 현실적인 문제 10개를 뽑아줘.\n- 대상: [인스타 막 시작한 동네 카페 사장]\n조건:\n1) 각 문제를 그 사람이 실제로 쓸 법한 말투의 한 문장으로.\n2) 각 문제 옆에 '돈/시간/불안' 중 무엇과 연결되는지 한 단어로 표시.\n3) 막연한 것 말고, 구체적이고 반복적으로 겪는 것 위주로.\n표 없이 번호 목록으로.",
       "notes": "",
       "tags": [
         "글쓰기",
         "조사",
         "아이디어",
+        "데이터 분석",
         "재무·금융",
         "검증"
       ],
@@ -17253,7 +17267,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "랜딩페이지 카피 초안 만들기",
+      "title": "랜딩페이지 카피 초안 생성",
       "template": "너는 전환율 높은 랜딩페이지 카피라이터야. 아래 가설로 한 페이지짜리 사전주문 랜딩 카피를 써줘.\n가설: [누가 / 어떤 문제로 / 얼마 낼 것이다]\n구성해줘: (1) 문제를 찌르는 헤드라인 3개 후보 (2) 서브헤드라인 (3) 핵심 약속 3줄 (4) 가격 제시 문구 (5) 버튼 문구 3개 후보 (6) 대기명단 유도 문구. 과장·거짓 금지, 한국어, 자취 20대가 읽는 톤으로.",
       "notes": "",
       "tags": [
@@ -17330,7 +17344,7 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "고객의 진짜 검색어 20개 뽑기 (가장 먼저 쓰세요)",
+      "title": "고객의 진짜 검색어 20개 도출",
       "template": "너는 초기 창업 마케팅 코치야. 내 타깃 고객은 다음과 같아: [1단계에서 쓴 고객 한 문장]. 이 사람이 마케팅 용어가 아니라 실제 검색창·커뮤니티에 칠 법한 '고통의 구어체 단어/문장' 20개를 뽑아줘. 각 단어 옆에 그 단어를 검색할 때의 심리 상태를 한 줄로 붙여줘. 뻔한 일반명사 말고 구체적일수록 좋아.",
       "notes": "",
       "tags": [
@@ -17347,7 +17361,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "물웅덩이(커뮤니티) 후보 리스트업",
+      "title": "잠재 고객 커뮤니티 후보 목록",
       "template": "내 타깃 고객은 [고객 한 문장]이고, 한국에서 활동해. 이 고객이 모여 있을 법한 곳을 채널 유형별로 나눠서 제안해줘: (1)네이버 카페 (2)카카오 오픈채팅 검색 키워드 (3)유튜브 채널·영상 주제 (4)인스타/틱톡 해시태그 (5)관련 앱·서비스 후기 게시판. 각 유형마다 내가 직접 검색할 '검색어'와 '어떤 신호(회원수·글빈도)를 보고 활성 여부를 판단할지'를 알려줘.",
       "notes": "",
       "tags": [
@@ -17401,7 +17415,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "가치 금액 환산기 (제일 먼저 써보세요)",
+      "title": "가치 금액 환산기",
       "template": "나는 [대상 고객]에게 [상품/서비스]를 팔려고 해. 이 결과로 고객이 얻는 이득을 (1)추가로 버는 돈 (2)아끼는 시간을 시급으로 환산 (3)줄어드는 고통/리스크 세 가지로 나눠 각각 금액으로 추정해줘. 보수적 추정과 낙관적 추정 두 버전으로, 마지막에 '이 고객이 지불해도 아깝지 않은 가격 상한선'을 한 줄로 알려줘.",
       "notes": "",
       "tags": [
@@ -17514,7 +17528,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "① 프롬프트 상품화 변환기 (가장 먼저 쓰세요)",
+      "title": "1 프롬프트 상품화 변환기",
       "template": "너는 프롬프트 상품 편집자야. 아래 '원본 프롬프트'를 팔리는 프롬프트 상품으로 개조해줘.\n반드시 이 4가지를 적용: (1) 결과물을 구체적으로 명시, (2) 사람마다 바뀔 부분을 [대괄호 변수]로 추출(3~6개, 각 변수 옆 예시값 괄호로), (3) 출력 형식·개수·금지사항 제약 추가, (4) 완성 프롬프트로 만든 예시 출력 1세트.\n출력 순서: A)개조된 프롬프트  B)변수 설명표  C)예시 출력.\n원본 프롬프트: [여기에 내 프롬프트 붙여넣기]",
       "notes": "",
       "tags": [
@@ -17531,7 +17545,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "② 4대 부품 진단기",
+      "title": "2 4대 부품 진단기",
       "template": "아래 프롬프트를 '팔리는 프롬프트 상품' 기준 4대 부품으로 채점해줘: 1)구체적 결과물 2)재사용성 3)변수화 4)예시출력. 각 항목 O/X와 한 줄 근거, 그리고 X를 O로 바꾸는 구체적 수정안을 제시해줘.\n프롬프트: [여기에 붙여넣기]",
       "notes": "",
       "tags": [
@@ -17549,7 +17563,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "③ 판매 페이지 카피 생성기",
+      "title": "3 판매 페이지 카피 생성기",
       "template": "아래 프롬프트 상품을 마켓(PromptBase·크몽 등)에 올릴 판매글로 만들어줘. 포함: 눈길 끄는 제목, 이 프롬프트가 해결하는 고통 3줄, 결과물 설명, 사용법 3단계, 예상 활용 대상. 과장광고 표현은 금지.\n상품 정보: [상품명/무엇을 하는지/변수 목록 붙여넣기]",
       "notes": "",
       "tags": [
@@ -17568,7 +17582,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "④ 출력 일관성 스트레스 테스트",
+      "title": "4 출력 일관성 스트레스 테스트",
       "template": "아래 프롬프트를 서로 다른 3가지 입력값으로 각각 실행한 결과를 보여주고, 세 결과의 형식·길이·품질 편차가 있으면 지적한 뒤 편차를 없앨 제약 문구를 추가로 제안해줘.\n프롬프트: [여기에 붙여넣기]",
       "notes": "",
       "tags": [
@@ -17625,7 +17639,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "고객 문제·지불의사 진단 (가장 먼저 써보세요)",
+      "title": "고객 문제·지불의사 진단",
       "template": "나는 [내 무기: 예-상세페이지 제작]를 할 수 있는 프리랜서야. 아래 고객군 각각에 대해 (1) 이들이 돈을 내서라도 해결하고 싶은 가장 급한 문제 3가지, (2) 지불 의사 1~5점, (3) 이 문제를 겪는다는 신호를 어디서 볼 수 있는지 표로 정리해줘. 고객군: [① 1인 쇼핑몰 사장 ② 학원 원장 ③ 신규 카페 사장]",
       "notes": "",
       "tags": [
@@ -17640,16 +17654,23 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "포지셔닝 선언문 3버전 만들기",
+      "title": "포지셔닝 선언문 3버전 생성",
       "template": "다음 정보로 '저는 [누구]가 [문제]를 [방법]으로 해결하도록 돕습니다' 형식의 포지셔닝 문장을 3가지 톤(전문적/친근한/임팩트)으로 써줘. 전문용어 없이 고객이 3초 만에 이해하게. 고객군:[  ] 해결할 문제:[  ] 내 해결법:[  ]",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "글쓰기",
         "검증"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "다음 정보로 '저는 실제 값가 실제 값를 실제 값으로 해결하도록 돕습니다' 형식의 포지셔닝 문장을 3가지 톤(전문적/친근한/임팩트)으로 써줘. 전문용어 없이 고객이 3초 만에 이해하게. 고객군:실제 값 해결할 문제:실제 값 내 해결법:실제 값",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/"
+      "url": "/wiki/prompt/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "freelance-niche-positioning-p3",
@@ -17723,7 +17744,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "복붙 카드 형식으로 프롬프트 다듬기",
+      "title": "재사용 카드 형식으로 프롬프트 다듬기",
       "template": "아래 프롬프트를 초보자용 '복붙 카드' 형식으로 다시 써줘. 형식: [번호·이름] / 언제 쓰나(1줄) / 복붙 프롬프트(바꿀 부분은 대괄호 [ ]로 표시) / 입력 예시 / 예상 결과 요약(2~3줄). 대괄호 안에는 무엇을 넣는지 힌트도 적어줘.\n원본 프롬프트:\n[프롬프트 붙여넣기]",
       "notes": "",
       "tags": [
@@ -17741,7 +17762,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "판매 표지·미리보기 문구 만들기",
+      "title": "판매 표지·미리보기 문구 생성",
       "template": "너는 디지털 상품 카피라이터다. 아래 정보로 프롬프트 팩의 (1) 표지 제목 3개 후보 (2) 한 줄 소개 (3) '이 팩이 필요한 사람' 체크리스트 4개 (4) 무료 미리보기로 공개하기 좋은 카드 2개 추천을 만들어줘.\n대상: [대상]\n핵심 약속: [한 문장 약속]\n프롬프트 개수: [개수]\n카테고리: [카테고리 나열]",
       "notes": "",
       "tags": [
@@ -17761,7 +17782,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "판매 페이지 카피 뽑기",
+      "title": "판매 페이지 카피 도출",
       "template": "너는 디지털 상품 카피라이터야. 아래 상품을 Gumroad에서 팔 거야. 한국어로 (1) 8단어 이내 제목, (2) 구매 버튼을 누르고 싶게 만드는 3줄 설명, (3) 결제 후 자동으로 나갈 감사·사용법 안내문 3줄을 만들어줘.\n상품: [상품 이름]\n구매자가 얻는 것: [핵심 이득]\n대상: [누구를 위한 것인지]\n가격: [가격]",
       "notes": "",
       "tags": [
@@ -17851,7 +17872,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "헤드라인 10개 뽑기",
+      "title": "헤드라인 10개 도출",
       "template": "아래 상품의 상세페이지 헤드라인 10개를 써줘. 숫자형 3개, 질문형 3개, 결과약속형 4개로 섞고, 각 헤드라인은 15자 내외로 짧게. 상품:[상품명] 타깃:[고객 상황] 가장 큰 통증:[통증 한 줄]",
       "notes": "",
       "tags": [
@@ -17901,7 +17922,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "타깃 고객 3후보 뽑기 (가장 먼저)",
+      "title": "타깃 고객 3후보 도출",
       "template": "나는 [관심 분야/할 수 있는 것: 예 인스타 피드 디자인]을 배우는 초보야. 주당 [가능 시간]을 쓸 수 있어. 이걸 돈 주고 살 만한 현실적인 고객 유형 3개를 추천해줘. 각 유형마다 (1)왜 이들이 이걸 필요로 하는지 (2)내가 첫 포트폴리오로 만들면 좋은 결과물 1개를 표로 정리해줘.",
       "notes": "",
       "tags": [
@@ -17963,9 +17984,9 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "제목 후보 5개 뽑기 (가장 먼저 써보세요)",
+      "title": "제목 후보 5개 도출",
       "template": "너는 크몽/Fiverr 프리랜서 마케팅 전문가야. 내 서비스는 [서비스 한 줄 설명]이고, 구매자가 검색하는 핵심 키워드는 [키워드1, 키워드2, 키워드3]이야. 검색에 잘 걸리도록 핵심 키워드를 제목 앞쪽에 넣고, 막연한 형용사 대신 숫자·기한·대상으로 구체화한 제목 후보 5개를 만들어줘. 각 후보마다 왜 클릭을 부르는지 한 줄 이유도 붙여줘.",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "요약",
         "검색",
@@ -17973,23 +17994,16 @@
         "고객 지원",
         "비즈니스"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 크몽/Fiverr 프리랜서 마케팅 전문가야. 내 서비스는 업무 자동화 템플릿이고, 구매자가 검색하는 핵심 키워드는 실제 값이야. 검색에 잘 걸리도록 핵심 키워드를 제목 앞쪽에 넣고, 막연한 형용사 대신 숫자·기한·대상으로 구체화한 제목 후보 5개를 만들어줘. 각 후보마다 왜 클릭을 부르는지 한 줄 이유도 붙여줘.",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/semantic-search/",
-      "url": "/wiki/semantic-search/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/semantic-search/"
     },
     {
       "id": "freelance-profile-optimization-p2",
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "소개글 3구조 초안 만들기",
+      "title": "소개글 3구조 초안 생성",
       "template": "내 크몽 서비스 소개글을 써줘. 서비스: [서비스 설명]. 대상 고객: [누구]. 내 강점(실제 사실만): [경력·산출물·차별점]. 구조는 (1)첫 3줄은 구매자가 얻을 결과 약속 (2)본문은 '이런 분께 추천' + 작업 프로세스 3~4단계 + 최종 산출물 목록 (3)마지막은 구매 전 문의 유도 문장으로 써줘. 과장·허위 실적은 절대 넣지 말고, 첫 3줄에 [핵심 키워드]를 자연스럽게 포함해줘.",
       "notes": "",
       "tags": [
@@ -18082,7 +18096,7 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "숏폼 대본 배치 생성 (가장 유용)",
+      "title": "숏폼 대본 배치 생성",
       "template": "아래는 내 코어 콘텐츠야:\n\"\"\"\n[코어 콘텐츠 전문 붙여넣기]\n\"\"\"\n이걸 바탕으로 30~45초짜리 숏폼(릴스/쇼츠/틱톡) 대본 3개를 만들어줘. 각 대본은 (1)첫 3초 훅 (2)본론 3문장 (3)마지막 행동유도(CTA) 구조로 써줘. 말투는 친근한 반말체, 한국어. 화면에 넣을 자막 텍스트 형태로.",
       "notes": "",
       "tags": [
@@ -18160,7 +18174,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "잠재 고객 리스트 만들기 도움",
+      "title": "잠재 고객 리스트 생성 도움",
       "template": "내 오퍼에 맞는 잠재 고객을 어디서 어떻게 찾을지 알려줘.\n- 오퍼: [...]\n- 대상: [...]\n조건:\n1) 후보를 찾을 수 있는 '장소' 5곳(SNS·지도·커뮤니티·디렉터리 등)을 구체적 검색어 예시와 함께.\n2) 각 후보를 평가할 '적합도 체크 3가지'.\n3) 개인화에 쓸 '관찰 포인트'(무엇을 메모하면 좋은지) 5가지.\n표 없이 목록으로.",
       "notes": "",
       "tags": [
@@ -18220,19 +18234,36 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "ICP 3개 후보 뽑기 (가장 먼저 쓰세요)",
+      "title": "ICP 3개 후보 도출",
       "template": "나는 [상품/서비스 한 줄 설명]을 판매합니다. 이 상품이 해결하는 고객 고통은 [1단계에서 적은 고통 3개]입니다. 이 정보를 바탕으로 '이상적 고객 프로필(ICP)' 후보 3개를 표로 제안해줘. 각 후보는 반드시 (1)산업/업종 (2)규모(직원수·매출·매장수 등) (3)의사결정 역할 (4)지금 이 문제를 겪고 있다는 것을 밖에서 알아챌 수 있는 '관찰 가능한 신호(트리거)' 네 칸을 구체적인 값으로 채워줘. 마지막에 '가장 좁고 검색으로 명단화하기 쉬운' 후보 1개를 추천하고 이유를 한 줄로 알려줘.",
-      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "notes": "",
       "tags": [
         "의사결정",
         "검색",
         "영업",
         "비즈니스"
       ],
+      "examples": [],
+      "relatedWikiUrl": "/wiki/semantic-search/",
+      "url": "/wiki/semantic-search/"
+    },
+    {
+      "id": "icp-and-lead-list-p2",
+      "course": "rag-search",
+      "courseTitle": "임베딩과 RAG",
+      "courseUrl": "/course/rag-search/",
+      "title": "검색어·소스 리스트 도출",
+      "template": "나의 ICP는 다음과 같습니다: 산업=[..], 규모=[..], 역할=[..], 트리거=[..]. 이 대상을 실제로 찾아 연락처를 모으기 위해 사용할 (1)네이버/구글 지도 검색어 5개 (2)이들이 모여있을 만한 협회·디렉터리·커뮤니티 3곳 (3)링크드인/잡코리아에서 쓸 검색 키워드 3개 를 알려줘. 한국 상황에 맞게, 실제 존재하는 유형의 소스만 제안해줘.",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+      "tags": [
+        "글쓰기",
+        "검색",
+        "영업"
+      ],
       "examples": [
         {
           "label": "작성 예시",
-          "input": "나는 업무 자동화 템플릿을 판매합니다. 이 상품이 해결하는 고객 고통은 실제 값입니다. 이 정보를 바탕으로 '이상적 고객 프로필(ICP)' 후보 3개를 표로 제안해줘. 각 후보는 반드시 (1)산업/업종 (2)규모(직원수·매출·매장수 등) (3)의사결정 역할 (4)지금 이 문제를 겪고 있다는 것을 밖에서 알아챌 수 있는 '관찰 가능한 신호(트리거)' 네 칸을 구체적인 값으로 채워줘. 마지막에 '가장 좁고 검색으로 명단화하기 쉬운' 후보 1개를 추천하고 이유를 한 줄로 알려줘.",
+          "input": "나의 ICP는 다음과 같습니다: 산업=실제 값, 규모=실제 값, 역할=실제 값, 트리거=실제 값. 이 대상을 실제로 찾아 연락처를 모으기 위해 사용할 (1)네이버/구글 지도 검색어 5개 (2)이들이 모여있을 만한 협회·디렉터리·커뮤니티 3곳 (3)링크드인/잡코리아에서 쓸 검색 키워드 3개 를 알려줘. 한국 상황에 맞게, 실제 존재하는 유형의 소스만 제안해줘.",
           "output": ""
         }
       ],
@@ -18241,38 +18272,28 @@
       "enrichment": "wiki-core"
     },
     {
-      "id": "icp-and-lead-list-p2",
-      "course": "rag-search",
-      "courseTitle": "임베딩과 RAG",
-      "courseUrl": "/course/rag-search/",
-      "title": "검색어·소스 리스트 뽑기",
-      "template": "나의 ICP는 다음과 같습니다: 산업=[..], 규모=[..], 역할=[..], 트리거=[..]. 이 대상을 실제로 찾아 연락처를 모으기 위해 사용할 (1)네이버/구글 지도 검색어 5개 (2)이들이 모여있을 만한 협회·디렉터리·커뮤니티 3곳 (3)링크드인/잡코리아에서 쓸 검색 키워드 3개 를 알려줘. 한국 상황에 맞게, 실제 존재하는 유형의 소스만 제안해줘.",
-      "notes": "",
-      "tags": [
-        "글쓰기",
-        "검색",
-        "영업"
-      ],
-      "examples": [],
-      "relatedWikiUrl": "/wiki/semantic-search/",
-      "url": "/wiki/semantic-search/"
-    },
-    {
       "id": "icp-and-lead-list-p3",
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
       "title": "리드 적합성 판정 기준 통일",
       "template": "내 ICP 트리거는 '[트리거 설명]'입니다. 아래 후보들이 이 트리거에 해당하는지 각각 적합/부적합/판단보류로 분류하고 한 줄 이유를 달아줘. 판단보류는 '무엇을 더 확인하면 되는지'까지 알려줘.\n후보:\n1) [업체명 - 관찰한 정보]\n2) [업체명 - 관찰한 정보]\n3) [업체명 - 관찰한 정보]",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "검색",
         "영업",
         "검증"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "내 ICP 트리거는 '실제 값'입니다. 아래 후보들이 이 트리거에 해당하는지 각각 적합/부적합/판단보류로 분류하고 한 줄 이유를 달아줘. 판단보류는 '무엇을 더 확인하면 되는지'까지 알려줘.\n후보:\n1) 실제 값\n2) 실제 값\n3) 실제 값",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/semantic-search/",
-      "url": "/wiki/semantic-search/"
+      "url": "/wiki/semantic-search/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "icp-and-lead-list-p4",
@@ -18357,7 +18378,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "리드마그넷 본문 생성 (가장 먼저 쓰세요)",
+      "title": "리드마그넷 본문 생성",
       "template": "너는 리드마그넷 카피라이터야. 타깃은 [타깃 예: 스마트스토어를 막 시작한 1인 셀러]이고, 이들이 지금 당장 원하는 결과는 [원하는 결과 예: 잘 팔리는 상세페이지를 빨리 완성하기]야. 이 결과를 5분 안에 얻게 해주는 실용 체크리스트를 만들어줘. 조건: (1) 항목 10개, 각 항목은 '동사로 시작하는 실행 지시' 한 줄 + 왜 중요한지 한 줄, (2) 전문용어 없이 초보가 바로 따라 할 수 있게, (3) 맨 위에 자료 제목 1개 제안. 한국어로.",
       "notes": "",
       "tags": [
@@ -18437,7 +18458,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "요구사항→산출물 번역 (가장 먼저 써보세요)",
+      "title": "요구사항→산출물 번역",
       "template": "아래는 클라이언트와의 첫 상담 메모야. 이 모호한 요구사항들을 '측정 가능한 산출물 목록'으로 바꿔줘. 각 산출물마다 (1)구체적 결과물 이름 (2)수량/형식 (3)예상 기한을 표로 정리하고, 상담에서 언급 안 됐지만 내가 반드시 확인해야 할 누락 항목도 별도로 알려줘.\n\n[상담 메모 붙여넣기]",
       "notes": "",
       "tags": [
@@ -18512,7 +18533,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "콜드 이메일 초안 만들기 (가장 먼저 쓰세요)",
+      "title": "콜드 이메일 초안 생성",
       "template": "너는 답장률 높은 콜드 이메일 코치야. 아래 정보로 3문장짜리 짧은 콜드 이메일을 써줘. 규칙: (1) 첫 문장은 반드시 이 트리거를 언급, (2) 둘째 문장은 내가 줄 수 있는 구체적 가치 1개, (3) 셋째 문장은 1분이면 되는 아주 작은 요청(전화·미팅 요청 금지, '답장만 주세요' 수준). 광고 문구·'귀사'·'최적의 솔루션' 같은 표현 금지, 친구에게 쓰듯 반말 아닌 존댓말 구어체.\n- 내가 하는 일: [예: 릴스 훅 카피라이팅]\n- 상대: [이름/회사/역할]\n- 트리거(최근 일어난 일): [내가 관찰한 사실]",
       "notes": "",
       "tags": [
@@ -18529,7 +18550,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "열고 싶은 제목 5개 뽑기",
+      "title": "열고 싶은 제목 5개 도출",
       "template": "아래 콜드 이메일 본문을 읽고, 열어보고 싶은 제목 5개를 만들어줘. 규칙: 40자 이내, 가능하면 소문자, 상대 회사명이나 트리거를 포함, 광고·과장·이모지 금지, 사람이 직접 보낸 것처럼. 각 제목 옆에 '왜 열고 싶은지' 한 줄 이유도 붙여줘.\n본문: [2단계에서 쓴 메일 붙여넣기]",
       "notes": "",
       "tags": [
@@ -18578,7 +18599,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "4각도 팔로업 시퀀스 초안 생성기 (가장 먼저 쓰세요)",
+      "title": "4각도 팔로업 시퀀스 초안 생성",
       "template": "너는 콜드 아웃리치 카피라이터야. 아래 정보로 팔로업 메시지 4개 초안을 써줘.\n- 내 제안: [예: 20분 화상 미팅]\n- 상대: [이름/직함/회사와 그들의 상황]\n- 첫 메일 요지: [첫 메일에서 이미 말한 것]\n각 팔로업은 서로 다른 각도로: 1=새로운 가치 제공, 2=비슷한 사례/사회적 증거, 3=한 줄짜리 초경량 재확인, 4=정중한 종료(마지막 메일 명시).\n조건: 각 메시지 5문장·100단어 이내, 한국어, 과장·이모지 금지, 제목줄 포함, 이전 메일을 언급하되 반복하지 말 것.",
       "notes": "",
       "tags": [
@@ -18713,7 +18734,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "질문 시트 초안 생성 (가장 먼저 쓰세요)",
+      "title": "질문 시트 초안 생성",
       "template": "너는 B2B 세일즈 코치야. 나는 [내 제품/서비스: 예- 소상공인용 재고관리 SaaS]를 [내 고객: 예- 5~20인 도소매업 대표]에게 판다. 20분 디스커버리 콜용 질문 시트를 만들어줘. 5개 섹션(오프닝/문제/영향/예산·결정권/다음단계)으로 나누고, 각 섹션마다 예/아니오가 아닌 '열린 질문' 2~3개를 써줘. 영향 섹션은 반드시 손실을 숫자로 끌어내는 질문을 포함해줘. 딱딱하지 않고 사람이 실제 쓰는 말투로.",
       "notes": "",
       "tags": [
@@ -18853,9 +18874,9 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "① 5~7통 시퀀스 통째 생성 (가장 먼저 써보세요)",
+      "title": "1 5~7통 시퀀스 전체 생성",
       "template": "너는 이메일 마케팅 카피라이터야. 아래 정보로 신규 구독자용 자동 넛처 이메일 시퀀스를 [6]통 만들어줘.\n- 대상 독자: [예: 30대 홈카페 입문자]\n- 구독 시 약속한 선물: [예: 원두 고르는 법 PDF]\n- 내가 파는 것/목표 행동: [예: 원두 정기배송 첫 달 50%, 신청 유도]\n- 톤: [예: 다정한 존댓말, 과장 없이]\n각 통마다 다음을 표로 줘: (1)발송 시점(즉시/1일차/2일차...) (2)이 통의 역할 (3)제목 후보 3개 (4)본문(200자 내외) (5)버튼 문구. 앞 통은 신뢰를 쌓고, 뒤 1~2통에서만 오퍼를 내는 구조로 해줘.",
-      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "이메일",
@@ -18863,23 +18884,16 @@
         "자동화",
         "마케팅"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 이메일 마케팅 카피라이터야. 아래 정보로 신규 구독자용 자동 넛처 이메일 시퀀스를 실제 값통 만들어줘.\n- 대상 독자: 30대 홈카페 입문자\n- 구독 시 약속한 선물: 원두 고르는 법 PDF\n- 내가 파는 것/목표 행동: 원두 정기배송 첫 달 50%, 신청 유도\n- 톤: 다정한 존댓말, 과장 없이\n각 통마다 다음을 표로 줘: (1)발송 시점(즉시/1일차/2일차...) (2)이 통의 역할 (3)제목 후보 3개 (4)본문(200자 내외) (5)버튼 문구. 앞 통은 신뢰를 쌓고, 뒤 1~2통에서만 오퍼를 내는 구조로 해줘.",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/workflow-orchestration/",
-      "url": "/wiki/workflow-orchestration/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/workflow-orchestration/"
     },
     {
       "id": "email-nurture-automation-p2",
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "② 제목만 A/B용 5개 뽑기 (오픈율 개선)",
+      "title": "2 제목만 A/B용 5개 도출 (오픈율 개선)",
       "template": "아래 이메일 본문을 읽고, 오픈율을 높일 제목 5개를 서로 다른 스타일(호기심형/이득형/질문형/숫자형/긴급형)로 만들어줘. 각 제목은 40자 이내, 낚시성 과장 금지, 이모지 최대 1개.\n본문: [여기에 이메일 본문 붙여넣기]",
       "notes": "",
       "tags": [
@@ -18896,7 +18910,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "③ 클릭 안 되는 통 살리기 (클릭률 개선)",
+      "title": "3 저성과 이메일 개선 (클릭률 개선)",
       "template": "이 넛처 이메일의 클릭률이 낮아. 독자가 버튼을 누르도록 다시 써줘. 조건: (1)첫 3줄 안에 독자 이득을 명확히, (2)버튼 문구를 '자세히 보기' 같은 막연한 말 대신 구체적 이득형으로 3개 제안, (3)버튼을 본문 위쪽과 아래쪽 2곳에 배치 제안. \n현재 본문: [붙여넣기] / 목표 행동: [예: 정기배송 신청]",
       "notes": "",
       "tags": [
@@ -18913,7 +18927,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "④ 브랜드 스토리 통(2통) 작성",
+      "title": "4 브랜드 스토리 이메일 2통 작성",
       "template": "내 넛처 시퀀스 2번째 이메일을 써줘. 목적은 판매가 아니라 '왜 이 일을 시작했는지' 이야기로 신뢰를 쌓는 거야. 아래 내 이야기 소재를 자연스러운 편지체로 300자 내외로 엮어줘. 마지막에 다음 통 예고 한 줄 넣어줘.\n소재: [예: 카페에서 마신 커피에 반해 직접 볶기 시작함, 3년간 20종 실패담]",
       "notes": "",
       "tags": [
@@ -18931,9 +18945,9 @@
       "course": "rag-search",
       "courseTitle": "임베딩과 RAG",
       "courseUrl": "/course/rag-search/",
-      "title": "롱테일 키워드 확장 (가장 먼저 써보세요)",
+      "title": "롱테일 키워드 확장",
       "template": "너는 SEO 키워드 전략가야. 내 사업은 [사업/상품 설명]이고 주요 지역은 [지역]이야. 실제 고객이 검색할 법한 '질문형 롱테일 키워드'를 검색 의도(정보탐색/구매)별로 15개 뽑아줘. 각 키워드마다 예상 검색 의도와 이 키워드로 만들면 좋은 콘텐츠 제목 1개를 표로 제시해줘.",
-      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+      "notes": "",
       "tags": [
         "검색",
         "구조화 출력",
@@ -18942,16 +18956,9 @@
         "출처·인용",
         "비즈니스"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 SEO 키워드 전략가야. 내 사업은 업무 자동화 템플릿이고 주요 지역은 실제 값이야. 실제 고객이 검색할 법한 '질문형 롱테일 키워드'를 검색 의도(정보탐색/구매)별로 15개 뽑아줘. 각 키워드마다 예상 검색 의도와 이 키워드로 만들면 좋은 콘텐츠 제목 1개를 표로 제시해줘.",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/citation/",
-      "url": "/wiki/citation/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/citation/"
     },
     {
       "id": "seo-geo-for-discovery-p2",
@@ -19118,7 +19125,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "원자료 구조화 (바로 쓰게 정리)",
+      "title": "원자료 구조화",
       "template": "아래 원자료를 [대상]이 바로 쓸 수 있게 표로 구조화해줘.\n- 대상: [...] / 주제: [...]\n- 원자료(붙여넣기): [...]\n조건:\n1) 열은 [대상]에게 가장 중요한 항목 위주로(예: 이름/대상/금액/마감일/출처).\n2) 내가 '1차 출처로 반드시 검증'해야 할 숫자·날짜·인용에는 [검증 필요] 표시.\n3) 출처가 불명확한 항목은 지어내지 말고 '출처 미확인'이라고 적어줘.",
       "notes": "",
       "tags": [
@@ -19276,7 +19283,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "고객 인터뷰 질문 만들기",
+      "title": "고객 인터뷰 질문 생성",
       "template": "[타겟 고객] 5명에게 [문제]의 실재 여부를 검증하려고 인터뷰할 거야. 내 아이디어를 언급하지 않고 '과거 행동'만 캐묻는 인터뷰 질문 7개를 만들어줘. 마지막 실제 사건·해결 방법·지불 여부를 끌어내는 질문 위주로. 유도질문·예의상 긍정을 부르는 질문은 빼줘.",
       "notes": "",
       "tags": [
@@ -19313,7 +19320,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "화면·기능 명세 뽑기 (가장 먼저 쓰세요)",
+      "title": "화면·기능 명세 도출",
       "template": "나는 노코드/AI로 MVP를 만들려는 초보야. 내 아이디어는 이거야: [한 문장 아이디어 — 누가/무엇을 하고/무엇을 얻는다]. 핵심 기능은 딱 하나야: [핵심 기능]. 이걸 며칠 안에 만들 수 있게, 화면은 최대 2개로 제한해서 아래를 표로 정리해줘. 1) 화면 목록과 각 화면의 UI 요소 2) 필요한 데이터 구조(필드명과 타입) 3) 각 버튼이 하는 동작. 지금 당장 필요 없는 기능은 '나중' 목록으로 따로 빼줘.",
       "notes": "",
       "tags": [
@@ -19372,7 +19379,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "피드백 1순위 뽑기",
+      "title": "피드백 1순위 도출",
       "template": "내 MVP를 3명이 써보고 준 피드백이야: [피드백 3개 붙여넣기]. 이 중에서 '결제 전환에 가장 영향이 큰 개선 딱 1가지'만 골라주고, 왜 그게 1순위인지 한 줄로 설명해줘. 나머지는 '나중' 목록으로 정리해줘.",
       "notes": "",
       "tags": [
@@ -19523,7 +19530,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "슬랙 알림 메시지 문구 만들기",
+      "title": "슬랙 알림 메시지 문구 생성",
       "template": "리드가 들어올 때 슬랙에 보낼 알림 메시지 문구를 만들어줘. 사용할 수 있는 필드는 [이름], [연락처], [관심상품], [신청시각]이야. 한눈에 보기 좋고 이모지로 강조된 1~2줄짜리 문구 3가지 버전을 제안하고, 각 필드를 {{필드명}} 형식으로 표시해줘.",
       "notes": "",
       "tags": [
@@ -19617,24 +19624,17 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "인보이스 초안 자동 작성 (가장 유용)",
+      "title": "인보이스 초안 자동 작성",
       "template": "너는 프리랜서 회계 도우미야. 아래 정보로 한국식 인보이스(청구서) 표를 마크다운으로 만들어줘. 필수 8항목(인보이스번호, 발행일, 공급자 이름/연락처/계좌, 클라이언트명, 항목별 내역과 단가, 합계, 입금기한, 입금계좌)을 모두 포함하고, 빠진 정보가 있으면 무엇이 필요한지 먼저 물어봐.\n- 내 이름/연락처/계좌: [홍길동 / 010-0000-0000 / 국민 000-00-000000]\n- 클라이언트명: [(주)ABC]\n- 작업 내역과 금액: [랜딩페이지 디자인 1건 800000원]\n- 발행일: [2026-07-03] / 입금기한: [발행 후 14일]",
-      "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "재무·금융",
         "비즈니스"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 프리랜서 회계 도우미야. 아래 정보로 한국식 인보이스(청구서) 표를 마크다운으로 만들어줘. 필수 8항목(인보이스번호, 발행일, 공급자 이름/연락처/계좌, 클라이언트명, 항목별 내역과 단가, 합계, 입금기한, 입금계좌)을 모두 포함하고, 빠진 정보가 있으면 무엇이 필요한지 먼저 물어봐.\n- 내 이름/연락처/계좌: 실제 값\n- 클라이언트명: 실제 값\n- 작업 내역과 금액: 실제 값\n- 발행일: 실제 값 / 입금기한: 실제 값",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/prompt/"
     },
     {
       "id": "invoicing-tax-basics-p2",
@@ -19675,7 +19675,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "내 세금 신고 요약 만들기",
+      "title": "내 세금 신고 요약 생성",
       "template": "나는 한국에서 일하는 [사업자등록 없는 프리랜서 / 1인 사업자 일반과세]야. 내가 올해 챙겨야 할 세금 신고를 (1)무엇을 (2)언제(월) (3)어디서(홈택스 등) (4)준비물 형식으로 표로 정리해줘. 그리고 지금부터 매달 해두면 좋은 기록 습관 3가지를 알려줘. 세율이나 금액은 확정 조언이 아니라 참고용이며 정확한 건 국세청/세무사 확인이 필요하다고 명시해줘.",
       "notes": "",
       "tags": [
@@ -19693,7 +19693,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "1:1 개인화 아웃리치 DM 초안 (가장 먼저 쓰세요)",
+      "title": "1:1 개인화 아웃리치 DM 초안",
       "template": "너는 초기 SaaS 파운더의 아웃리치 코치야. 아래 정보로 판매 냄새 안 나는 따뜻한 1:1 DM 초안 3가지 버전을 써줘. 각 DM은 (1)상대 원문 인용으로 시작 (2)내 제품 한 줄 소개 (3)'무료 베타 5분 데모' 부드러운 제안 순서. 링크 강매 금지, 3문장 이내.\n[내 제품 한 줄]: [여기]\n[해결하는 고통]: [여기]\n[상대가 쓴 원문]: [여기 복붙]",
       "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
@@ -19763,7 +19763,7 @@
       "courseUrl": "/course/api-development/",
       "title": "피드백 통화 답변 분류·우선순위",
       "template": "아래는 초기 유료 유저 피드백 통화 원문이야. 이걸 [가격/핵심기능/버그/온보딩/기타] 태그로 분류하고, 이탈 위험이 가장 큰 원인 1개와 이번 주에 고칠 액션 1개를 제안해줘. 표로 정리.\n[유저1 답변]: [여기]\n[유저2 답변]: [여기]\n[유저3 답변]: [여기]",
-      "notes": "",
+      "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
         "요약",
         "의사결정",
@@ -19771,9 +19771,16 @@
         "안전",
         "비즈니스"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "아래는 초기 유료 유저 피드백 통화 원문이야. 이걸 실제 값 태그로 분류하고, 이탈 위험이 가장 큰 원인 1개와 이번 주에 고칠 액션 1개를 제안해줘. 표로 정리.\n실제 값: 실제 값\n실제 값: 실제 값\n실제 값: 실제 값",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/"
+      "url": "/wiki/prompt/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "subscription-retention-churn-p1",
@@ -19845,7 +19852,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "이메일 분류+초안 에이전트 시스템 프롬프트 (가장 유용)",
+      "title": "이메일 분류+초안 에이전트 시스템 프롬프트",
       "template": "당신은 고객지원 이메일 분류 어시스턴트입니다. 아래 이메일을 읽고 반드시 순수 JSON만 출력하세요. 설명·인사·코드블록 표시 없이 JSON 객체 하나만 출력합니다.\n\n규칙:\n- category 는 다음 중 하나: [환불, 기술문의, 제휴, 스팸, 기타]. 애매하면 기타.\n- urgency 는 [높음, 보통, 낮음] 중 하나.\n- draft 는 스팸이면 빈 문자열, 아니면 3~5문장의 정중한 한국어 답장 초안. 확실치 않은 사실은 지어내지 말고 '담당자가 확인 후 안내드리겠습니다'로 표현.\n\n출력 형식: {\"category\":\"\",\"urgency\":\"\",\"draft\":\"\"}\n\n이메일 제목: [제목]\n이메일 본문: [본문]",
       "notes": "",
       "tags": [
@@ -20032,7 +20039,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "경로별 실수령액 비교표 (가장 먼저 써보세요)",
+      "title": "경로별 실수령액 비교표",
       "template": "나는 해외 고객에게 [USD 1000] 대금을 받아 최종적으로 [원화 계좌]로 받으려 해. 오늘 환율은 1 [USD] = [1380] [KRW]야. 아래 세 경로의 최종 실수령액(원화)을 표로 계산하고 가장 유리한 순서로 정렬해줘. 각 경로마다 (플랫폼 인출 수수료, 환율 스프레드 %, 원화 이체 수수료)를 그대로 반영해서 중간 계산 과정도 보여줘.\n경로1 PayPal: 인출 [0], 스프레드 [3.5]%, 이체수수료 [0]\n경로2 Payoneer: 인출 [1.5 USD], 스프레드 [2]%, 이체수수료 [0]\n경로3 Wise: 인출 [0], 스프레드 [0]%(중간환율), 이체수수료 [6.5 USD]",
       "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
       "tags": [
@@ -20098,7 +20105,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "통화별 정산 경로 결정 규칙 만들기",
+      "title": "통화별 정산 경로 결정 규칙 생성",
       "template": "나는 [USD, EUR, JPY] 통화로 해외 대금을 받는 프리랜서야. 각 통화·금액대별로 (Wise / Payoneer / PayPal / 은행 전신환) 중 실수령액 기준 어떤 경로가 유리한지 일반 원칙을 표로 정리해줘. 스프레드와 고정 수수료가 금액에 따라 어떻게 유불리가 바뀌는지 이유도 한 줄씩 붙여줘.",
       "notes": "",
       "tags": [
@@ -20154,9 +20161,9 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "이번 주 지표 해석하고 행동 1개 뽑기",
+      "title": "이번 주 지표 해석하고 행동 1개 도출",
       "template": "이번 주 내 지표야: 매출 [금액], 구매전환율 [%], CAC [금액], LTV [금액], 이탈률 [%]. 지난주 대비 [변화]. 이 숫자로 판단할 때 이번 주에 내가 딱 1가지만 바꾼다면 뭘 해야 해? 이유와 함께, 그리고 그게 효과 있었는지 다음 주에 어떤 지표로 확인하면 되는지 알려줘.",
-      "notes": "",
+      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
       "tags": [
         "요약",
         "의사결정",
@@ -20165,16 +20172,23 @@
         "검증",
         "노코드"
       ],
-      "examples": [],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "이번 주 내 지표야: 매출 실제 값, 구매전환율 실제 값, CAC 실제 값, LTV 실제 값, 이탈률 실제 값. 지난주 대비 실제 값. 이 숫자로 판단할 때 이번 주에 내가 딱 1가지만 바꾼다면 뭘 해야 해? 이유와 함께, 그리고 그게 효과 있었는지 다음 주에 어떤 지표로 확인하면 되는지 알려줘.",
+          "output": ""
+        }
+      ],
       "relatedWikiUrl": "/wiki/prompt/",
-      "url": "/wiki/prompt/"
+      "url": "/wiki/prompt/",
+      "enrichment": "wiki-core"
     },
     {
       "id": "metrics-dashboard-p4",
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "위험 신호 자동 경보 규칙 만들기",
+      "title": "위험 신호 자동 경보 규칙 생성",
       "template": "구글시트 대시보드에 조건부 서식으로 '위험 신호'를 빨강으로 표시하고 싶어. 다음 지표에 대해 각각 어떤 임계값을 넘으면 위험인지 스타트업 통용 기준으로 제안하고, 구글시트 조건부 서식 규칙(맞춤 수식)으로 알려줘: LTV/CAC 배수, 월 이탈률, 전환율. 내 사업은 [사업 종류]야.",
       "notes": "",
       "tags": [
@@ -20194,7 +20208,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "작업 절차서(SOP) 만들기",
+      "title": "작업 절차서(SOP) 생성",
       "template": "내 서비스를 '누가 해도 같은 품질'로 할 수 있는 작업 절차서(SOP)로 만들어줘.\n- 서비스(범위·결과물): [...]\n- 내가 평소 하는 방식: [...]\n조건:\n1) 단계별로 '무엇을·어떻게·주의점·예시'.\n2) 각 단계 끝에 '이게 잘 됐는지 확인하는 기준(품질 체크)'.\n3) 내가 말로 설명 못 한 '암묵지'가 있을 만한 곳에 '여기 보강 질문'을 달아줘.\n따라 하기 쉬운 목록으로.",
       "notes": "",
       "tags": [
@@ -20287,7 +20301,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "① 녹화 설명 → SOP 문서 자동 정리 (가장 먼저 쓰세요)",
+      "title": "1 녹화 설명 → SOP 문서 자동 정리",
       "template": "너는 업무 표준화 전문가야. 아래는 내가 [업무이름] 작업을 실제로 하면서 말로 설명한 내용이야. 이걸 초보자도 그대로 따라 할 수 있는 SOP 문서로 정리해줘.\n\n형식: (1)업무명·소요시간·준비물 (2)번호 매긴 실행 단계 — 각 단계에 무엇을 클릭/입력하는지 구체적으로 (3)⚠️주의사항 3개 (4)✅합격 기준 한 줄. 모호한 표현 없이 명령형으로.\n\n[여기에 녹화하며 말한 내용 붙여넣기]",
       "notes": "",
       "tags": [
@@ -20305,7 +20319,7 @@
       "course": "api-development",
       "courseTitle": "AI API 개발",
       "courseUrl": "/course/api-development/",
-      "title": "② 위임 메시지 작성 (프리랜서·가상비서에게)",
+      "title": "2 위임 메시지 작성 (프리랜서·가상비서에게)",
       "template": "아래 SOP를 [가상비서/프리랜서]에게 처음 위임하려고 해. 정중하지만 명확한 위임 메시지를 써줘. 포함할 것: 무엇을·언제까지·완료 증거로 무엇을 보낼지·첫 몇 회는 검수받을 것·질문 환영한다는 말. 너무 길지 않게.\n\nSOP: [SOP 내용 붙여넣기]\n마감: [예: 매주 월요일 오전 10시]",
       "notes": "",
       "tags": [
@@ -20323,7 +20337,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "③ 이 업무를 AI/자동화에 맡길 수 있는지 진단",
+      "title": "3 이 업무를 AI/자동화에 맡길 수 있는지 진단",
       "template": "다음 반복 업무를 사람에게 맡길지, AI·자동화 도구에 맡길지 판단해줘. 판단이 필요한 부분과 단순 반복인 부분을 나눠서 표로 정리하고, 자동화 가능하면 어떤 도구(Zapier/Make/ChatGPT 등)로 어떻게 구성할지 제안해줘.\n\n업무 설명: [업무를 3~5문장으로]",
       "notes": "",
       "tags": [
@@ -20343,7 +20357,7 @@
       "course": "model-training",
       "courseTitle": "모델 학습과 튜닝",
       "courseUrl": "/course/model-training/",
-      "title": "④ 여러 SOP를 위임 매뉴얼로 묶기",
+      "title": "4 여러 SOP를 위임 매뉴얼로 묶기",
       "template": "아래 여러 개의 SOP를 신입/가상비서가 첫날 읽을 수 있는 하나의 온보딩 매뉴얼 목차로 묶어줘. 우선순위 순서로 정렬하고, 각 SOP마다 한 줄 요약과 예상 학습 시간을 붙여줘.\n\nSOP 목록: [SOP 제목들 나열]",
       "notes": "",
       "tags": [
@@ -20423,7 +20437,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "내 소득 리스크 진단 (가장 먼저 쓰세요)",
+      "title": "내 소득 리스크 진단",
       "template": "나는 [직업/하는 일]이고, 최근 3개월 소득은 다음과 같아: [항목명-금액-유형(노동형/판매형/반복형/자본형)-출처(플랫폼·고객명)]을 줄바꿈으로 나열. 이걸 표로 정리하고 각 항목의 비중(%)을 계산해줘. 그다음 (1) 40%를 넘는 집중 리스크, (2) 단일 고객·단일 플랫폼 의존 지점, (3) 이 구조가 무너질 수 있는 현실적 시나리오 2가지를 짚어줘. 조언은 냉정하고 구체적으로.",
       "notes": "",
       "tags": [
@@ -20442,7 +20456,7 @@
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
       "courseUrl": "/course/responsible-ai/",
-      "title": "상관관계 낮은 새 수익원 후보 뽑기",
+      "title": "상관관계 낮은 새 수익원 후보 도출",
       "template": "내 현재 소득은 [주 수익원과 유형]에 집중돼 있어. 내가 가진 조건은 기술=[기술], 주당 가용시간=[N시간], 투자 가능 자본=[금액]이야. 기존 수익원과 '같은 이유로 동시에 망하지 않는'(상관관계 낮은) 새 수익원 후보 5개를 노동형/판매형/반복형/자본형으로 분산해 제안해줘. 각 후보마다 초기 투입시간, 초기 비용, 첫 수익까지 예상 기간, 6개월 뒤 예상 월수익 범위를 표로 줘. 과장 없이 보수적으로.",
       "notes": "",
       "tags": [
@@ -20497,7 +20511,7 @@
       "course": "model-training",
       "courseTitle": "모델 학습과 튜닝",
       "courseUrl": "/course/model-training/",
-      "title": "업무별 모델 평가표 만들기",
+      "title": "업무별 모델 평가표 생성",
       "template": "아래 [업무]에 사용할 AI 모델을 비교하려고 한다. 먼저 평가 기준과 합격선을 표로 설계해줘. 정확성·형식 준수·지연 시간·작업 1건 비용·재시도 안정성을 반드시 포함하고, 실제 입력 표본 10개를 어떻게 익명화해 만들지도 제안해줘. 특정 모델을 미리 1등으로 정하지 말고, 동일 조건으로 비교할 수 있는 테스트 절차를 작성해줘.\n\n[업무]: [설명]\n[필수 출력 형식]: [JSON/표/문서]\n[허용 지연]: [초]\n[월 처리량]: [건]",
       "notes": "가격은 실행 당일 각 공급자의 공식 가격 페이지에서 다시 확인한다.",
       "tags": [
@@ -20649,7 +20663,7 @@
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
       "courseUrl": "/course/agent-systems/",
-      "title": "내 사양에 맞는 모델 추천받기(클로즈드 AI에게)",
+      "title": "내 사양에 맞는 모델 추천",
       "template": "내 컴퓨터 사양은 [GPU 모델명/VRAM GB, RAM GB]야. 주 용도는 [코딩/글쓰기/번역/에이전트 등]이야. 2026년 기준 Kimi K2, DeepSeek V4, Qwen 3, GLM-5 중에서 내가 LM Studio로 로컬 실행하기 좋은 모델과 정확한 양자화 버전(Q4/Q5 등)을 추천하고 이유를 알려줘.",
       "notes": "",
       "tags": [
@@ -20771,9 +20785,9 @@
       "course": "multimodal-ai",
       "courseTitle": "멀티모달 AI",
       "courseUrl": "/course/multimodal-ai/",
-      "title": "스토리보드 3컷 설계 (가장 먼저 써보세요)",
+      "title": "스토리보드 3컷 설계",
       "template": "너는 숏폼 영상 감독이야. 아래 브리프를 [총 길이]초 영상용으로 3개 컷으로 나눠줘. 각 컷마다 (1)샷 구성과 피사체 (2)카메라 움직임 (3)동기화될 오디오/환경음 (4)영상 생성 모델에 넣을 영어 프롬프트 한 줄을 표로 정리해줘.\n브리프: [한 문장 브리프]\n분위기: [분위기/톤]\n용도: [인스타 릴스 / 유튜브 쇼츠 / 제품 상세페이지]",
-      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+      "notes": "",
       "tags": [
         "글쓰기",
         "교육",
@@ -20782,16 +20796,9 @@
         "영상",
         "오디오"
       ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "너는 숏폼 영상 감독이야. 아래 브리프를 실제 값초 영상용으로 3개 컷으로 나눠줘. 각 컷마다 (1)샷 구성과 피사체 (2)카메라 움직임 (3)동기화될 오디오/환경음 (4)영상 생성 모델에 넣을 영어 프롬프트 한 줄을 표로 정리해줘.\n브리프: 실제 값\n분위기: 정중하고 간결한 말투\n용도: 업무 자동화 템플릿",
-          "output": ""
-        }
-      ],
+      "examples": [],
       "relatedWikiUrl": "/wiki/multimodal-model/",
-      "url": "/wiki/multimodal-model/",
-      "enrichment": "wiki-core"
+      "url": "/wiki/multimodal-model/"
     },
     {
       "id": "video-voice-agents-p2",

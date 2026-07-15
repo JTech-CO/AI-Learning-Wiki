@@ -247,7 +247,7 @@ _해당 문서가 없습니다._
 
 ## 이 문서를 포함하는 코스
 
-[멀티모달 AI](/course/multimodal-ai/) · [안전하고 신뢰할 수 있는 AI](/course/responsible-ai/)
+[멀티모달 AI](/course/multimodal-ai/) · [신뢰할 수 있는 AI](/course/responsible-ai/)
 
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
@@ -260,4 +260,4 @@ _해당 문서가 없습니다._
 ## 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 모델 라이선스](/wiki/model-license/)
-- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 벤치마크](/wiki/benchmark/)
+- **신뢰할 수 있는 AI:** [다음 문서 — 벤치마크](/wiki/benchmark/)

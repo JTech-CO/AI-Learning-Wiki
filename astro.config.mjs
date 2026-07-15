@@ -29,6 +29,7 @@ export default defineConfig({
       customCss: ['./src/styles/wiki.css', './src/styles/wiki-library.css'],
       locales: { root: { label: '한국어', lang: 'ko' } },
       pagefind: false,
+      tableOfContents: false,
       credits: false,
       pagination: false,
       components: {
@@ -39,8 +40,7 @@ export default defineConfig({
       },
       sidebar: [
         { label: '대문', link: '/' },
-        { label: '전체 문서', link: '/special/all-pages/' },
-        { label: '용어 색인', link: '/glossary/' },
+        { label: '전체 문서(색인)', link: '/special/all-pages/' },
         { label: '학습 코스', items: [{ autogenerate: { directory: 'course' } }] },
         { label: '백과 분류', items: [{ autogenerate: { directory: 'category' } }] },
         { label: '프롬프트 자료실', link: '/prompt-explorer/' },

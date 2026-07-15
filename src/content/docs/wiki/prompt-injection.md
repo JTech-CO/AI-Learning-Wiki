@@ -208,7 +208,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 이 문서를 포함하는 코스
 
-[안전하고 신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 에이전트 시스템](/course/agent-systems/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 <div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
 
@@ -220,5 +220,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 }
 
 ## 코스에서 계속 읽기
 
-- **안전하고 신뢰할 수 있는 AI:** [다음 문서 — 탈옥 공격](/wiki/jailbreak/)
+- **신뢰할 수 있는 AI:** [다음 문서 — 탈옥 공격](/wiki/jailbreak/)
 - **AI 에이전트 시스템:** [다음 문서 — 가드레일](/wiki/guardrail/)

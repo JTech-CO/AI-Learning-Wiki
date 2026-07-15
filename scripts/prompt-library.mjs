@@ -126,6 +126,58 @@ const TAG_PATTERNS = {
 };
 
 const SNIPPET_TYPE_LABELS = { code: '코드', config: '설정', query: '쿼리', payload: '요청 본문', template: '문서 양식' };
+const CTA_TITLE_ASIDE = /\s*\((?:첫 질문 추천|(?:가장|제일)\s*(?:먼저(?:\s*(?:쓰세요|써보세요|사용|복붙|실행|써라))?|쉬운 시작|자주(?:\s*씀)?|많이\s*씀|유용|기본)|그대로\s*(?:보내보기|붙여넣기)|바로 쓰기|어디든 복붙|바로 쓰게 정리|클로즈드 AI에게)\)\s*/giu;
+
+function normalizePublicTitle(value) {
+  return String(value ?? '').normalize('NFKC')
+    .replace(/^[①②③④⑤⑥⑦⑧⑨⑩]\s*/u, '')
+    .replace(/^\d+[.)]\s*/, '')
+    .replace(/^예시\s*[:：]\s*/, '')
+    .replace(CTA_TITLE_ASIDE, ' ')
+    .replace(/^AI에게\s+사용법부터\s+물어보기$/, 'AI 사용법 질문')
+    .replace(/^AI에게\s+/, '')
+    .replace(/패키지 무엇을 깔지 추천/g, '설치 패키지 추천')
+    .replace(/코드 통째로 받기/g, '전체 코드 생성')
+    .replace(/통째 생성/g, '전체 생성')
+    .replace(/통째로/g, '전체로')
+    .replace(/통째/g, '전체')
+    .replace(/만능\s*/g, '')
+    .replace(/추천받기형/g, '추천')
+    .replace(/추천받기/g, '추천')
+    .replace(/목차 3안 받기/g, '목차 3안 생성')
+    .replace(/대시보드 설계 받기/g, '대시보드 설계안 생성')
+    .replace(/복붙/g, '재사용')
+    .replace(/도와줘/g, '설계 지원')
+    .replace(/안 죽는 봇/g, '복원력 있는 봇')
+    .replace(/안 죽는 API/g, '복원력 있는 API')
+    .replace(/기본 봉투/g, '기본 실행 구조')
+    .replace(/뽑기/g, '도출')
+    .replace(/초안 생성기/g, '초안 생성')
+    .replace(/만들기/g, '생성')
+    .replace(/부탁하기/g, '요청')
+    .replace(/통역/g, '해석')
+    .replace(/캐내기/g, '발굴')
+    .replace(/헛소리 차단/g, '환각 억제')
+    .replace(/토큰 다이어트/g, '토큰 절감')
+    .replace(/정규식 만들어줘/g, '정규식 생성')
+    .replace(/내 코드 리뷰 받기/g, '코드 리뷰 요청')
+    .replace(/내 두 테이블 JOIN 쿼리 짜주기/g, '두 테이블 JOIN 쿼리 작성')
+    .replace(/수식 받기/g, '수식 생성')
+    .replace(/SQL 받기/g, 'SQL 생성')
+    .replace(/오직 JSON만 받아내기/g, 'JSON 출력 강제')
+    .replace(/표로 받기/g, '표 형식 출력')
+    .replace(/사용법부터 물어보기/g, '사용법 질문')
+    .replace(/물웅덩이\(커뮤니티\) 후보 리스트업/g, '잠재 고객 커뮤니티 후보 목록')
+    .replace(/아픈 점 펼치기/g, '문제점 분석')
+    .replace(/클릭 안 되는 통 살리기/g, '저성과 이메일 개선')
+    .replace(/브랜드 스토리 통\(2통\) 작성/g, '브랜드 스토리 이메일 2통 작성')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizePublicTemplate(value) {
+  return String(value ?? '').replace(/EduVerse|에듀버스(?:\s*AI)?/gi, 'AI Learning Wiki');
+}
 
 async function walk(directory) {
   const files = [];
@@ -244,16 +296,23 @@ export async function buildPromptLibrary(root) {
   const snippets = [];
   let ordinal = 0;
   let sourcePromptCount = 0;
+  let titleCleanups = 0;
+  let sourceNameCleanups = 0;
 
   for (const mod of modules) {
     for (const [index, prompt] of (mod.prompts ?? []).entries()) {
       sourcePromptCount += 1;
       const key = sourceKey(mod, prompt, index);
-      const template = prompt.template?.ko ?? prompt.text?.ko ?? '';
-      sourceEntries.set(key, { template });
+      const sourceTemplate = prompt.template?.ko ?? prompt.text?.ko ?? '';
+      sourceEntries.set(key, { template: sourceTemplate });
       if (duplicateKeys.has(key)) continue;
       const wikiCourse = classifyWikiCourse(mod, prompt);
-      const title = policy.titleOverrides[key] ?? prompt.title?.ko ?? '';
+      const sourceTitle = policy.titleOverrides[key] ?? prompt.title?.ko ?? '';
+      const normalizedTitle = normalizePublicTitle(sourceTitle);
+      const title = prompt.id === 'p21-schema' ? 'Python 함수를 Claude 도구 스키마로 변환' : normalizedTitle;
+      const template = normalizePublicTemplate(sourceTemplate);
+      if (title !== sourceTitle) titleCleanups += 1;
+      if (template !== sourceTemplate) sourceNameCleanups += 1;
       const id = policy.idOverrides[key] ?? prompt.id ?? `${mod.id.replace('/', '-')}-p${index + 1}`;
       const tags = controlledTags(`${searchableText(mod, prompt)} ${title} ${template}`, [], policy);
       const wikiUrl = relatedWikiUrl(mod, prompt, wikiArticleSlugs);
@@ -315,8 +374,8 @@ export async function buildPromptLibrary(root) {
       course: wikiCourse.id,
       courseTitle: wikiCourse.title,
       courseUrl: wikiCourse.url,
-      title: addition.title,
-      template: addition.template,
+      title: normalizePublicTitle(addition.title),
+      template: normalizePublicTemplate(addition.template),
       notes: addition.notes,
       tags: controlledTags(`${addition.title} ${addition.template} ${addition.tags.join(' ')}`, addition.tags, policy),
       examples: mapExamples(addition.examples),
@@ -341,6 +400,8 @@ export async function buildPromptLibrary(root) {
       duplicateMerges: policy.duplicateMerges.length,
       exactDuplicateMerges,
       reviewedNearDuplicateMerges: policy.duplicateMerges.length - exactDuplicateMerges,
+      titleCleanups,
+      sourceNameCleanups,
       snippets: snippets.length,
       additions: additions.prompts.length,
       prompts: prompts.length,

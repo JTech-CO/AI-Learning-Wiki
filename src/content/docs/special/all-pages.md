@@ -1,6 +1,6 @@
 ---
-title: 전체 문서
-description: 검토 완료 AI·LLM 백과 문서 전체 목록
+title: 전체 문서(색인)
+description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 ---
 
 현재 검토 완료된 백과 문서는 **1400개**입니다.
