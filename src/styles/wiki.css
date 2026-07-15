@@ -166,3 +166,8 @@ a:hover { text-decoration: underline; }
 .wiki-index-list .wiki-en { display: block; }
 @media (max-width: 50rem) { .sl-markdown-content .wiki-index-list { columns: 2; } }
 @media (max-width: 28rem) { .sl-markdown-content .wiki-index-list { columns: 1; } }
+
+.wiki-search-filters button:focus-visible,
+.wiki-pagination button:focus-visible,
+.wiki-page-search input:focus-visible,
+.wiki-page-search button:focus-visible { outline: 3px solid #36c; outline-offset: 2px; }

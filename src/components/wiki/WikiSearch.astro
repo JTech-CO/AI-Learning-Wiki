@@ -10,40 +10,121 @@
   </div>
   <p id="wiki-search-count" aria-live="polite">검색어를 입력하세요.</p>
   <div id="wiki-search-results" class="wiki-search-results"></div>
+  <nav id="wiki-search-pagination" class="wiki-pagination" aria-label="검색 결과 페이지" hidden>
+    <button id="wiki-search-prev" type="button">이전</button>
+    <span id="wiki-search-page-status" aria-live="polite"></span>
+    <button id="wiki-search-next" type="button">다음</button>
+  </nav>
 </section>
 <script>
   const form = document.querySelector('#wiki-search-form');
   const input = document.querySelector('#wiki-search-query');
   const count = document.querySelector('#wiki-search-count');
   const results = document.querySelector('#wiki-search-results');
-  const filterButtons = document.querySelectorAll('[data-type]');
+  const filterButtons = [...document.querySelectorAll('[data-type]')];
   const searchPage = document.querySelector('.wiki-search-page');
+  const pagination = document.querySelector('#wiki-search-pagination');
+  const previousPage = document.querySelector('#wiki-search-prev');
+  const nextPage = document.querySelector('#wiki-search-next');
+  const pageStatus = document.querySelector('#wiki-search-page-status');
   const wikiDataUrl = searchPage?.getAttribute('data-wiki-url') ?? '../data/wiki-index.json';
   const promptDataUrl = searchPage?.getAttribute('data-prompts-url') ?? '../data/prompts.json';
+  const promptLibraryUrl = new URL('../prompt-explorer/', location.href).pathname;
+  const PAGE_SIZE = 30;
+  const validTypes = new Set(['all', 'article', 'prompt']);
+  const initialParams = new URLSearchParams(location.search);
   let items = [];
-  let activeType = 'all';
-  const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' })[char]);
-  const params = new URLSearchParams(location.search);
-  input.value = params.get('q') ?? '';
-  function render() {
+  let activeType = validTypes.has(initialParams.get('type')) ? initialParams.get('type') : 'all';
+  let currentPage = Math.max(1, Number.parseInt(initialParams.get('page') ?? '1', 10) || 1);
+  input.value = initialParams.get('q') ?? '';
+  filterButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.type === activeType)));
+
+  function resultCard(item) {
+    const article = document.createElement('article');
+    const type = document.createElement('p');
+    const heading = document.createElement('h2');
+    const link = document.createElement('a');
+    const summary = document.createElement('p');
+    type.textContent = item.typeLabel;
+    link.href = item.url;
+    link.textContent = item.title;
+    summary.textContent = item.summary;
+    heading.append(link);
+    article.append(type, heading, summary);
+    return article;
+  }
+
+  function syncUrl() {
+    const params = new URLSearchParams();
+    if (input.value.trim()) params.set('q', input.value.trim());
+    if (activeType !== 'all') params.set('type', activeType);
+    if (currentPage > 1) params.set('page', String(currentPage));
+    const search = params.toString();
+    history.replaceState(null, '', search ? '?' + search : location.pathname);
+  }
+
+  function render({ updateUrl = true } = {}) {
     const needle = input.value.trim().toLowerCase();
-    if (!needle) { count.textContent = '검색어를 입력하세요.'; results.replaceChildren(); return; }
+    if (!needle) {
+      count.textContent = '검색어를 입력하세요.';
+      results.replaceChildren();
+      pagination.hidden = true;
+      currentPage = 1;
+      if (updateUrl) syncUrl();
+      return;
+    }
     const ranked = items.map((item) => {
       const nameList = [item.title, item.englishTitle, ...(item.aliases ?? [])].filter(Boolean).map((value) => value.toLowerCase());
       const names = nameList.join(' ');
-      const text = `${names} ${item.summary ?? ''} ${(item.tags ?? []).join(' ')}`.toLowerCase();
+      const text = [names, item.searchText ?? item.summary ?? '', ...(item.tags ?? [])].join(' ').toLowerCase();
       const score = nameList.includes(needle) ? 0 : nameList.some((value) => value.startsWith(needle)) ? 1 : names.includes(needle) ? 2 : text.includes(needle) ? 3 : 99;
       return { item, score };
-    }).filter(({ item, score }) => score < 99 && (activeType === 'all' || item.type === activeType)).sort((a,b) => a.score-b.score || a.item.title.localeCompare(b.item.title,'ko')).slice(0,100);
-    count.textContent = `${ranked.length}개 결과`;
-    results.innerHTML = ranked.map(({ item }) => `<article><p>${escapeHtml(item.typeLabel)}</p><h2><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h2><p>${escapeHtml(item.summary)}</p></article>`).join('');
+    }).filter(({ item, score }) => score < 99 && (activeType === 'all' || item.type === activeType)).sort((a, b) => a.score - b.score || a.item.title.localeCompare(b.item.title, 'ko', { numeric: true, sensitivity: 'base' }));
+    const totalPages = Math.max(1, Math.ceil(ranked.length / PAGE_SIZE));
+    currentPage = Math.min(Math.max(1, currentPage), totalPages);
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = Math.min(start + PAGE_SIZE, ranked.length);
+    const pageItems = ranked.slice(start, end);
+    count.textContent = ranked.length ? ranked.length + '개 중 ' + (start + 1) + '–' + end + '번째 결과' : '검색 결과가 없습니다.';
+    results.replaceChildren(...pageItems.map(({ item }) => resultCard(item)));
+    pagination.hidden = ranked.length <= PAGE_SIZE;
+    previousPage.disabled = currentPage <= 1;
+    nextPage.disabled = currentPage >= totalPages;
+    pageStatus.textContent = currentPage + ' / ' + totalPages + ' 페이지';
+    if (updateUrl) syncUrl();
   }
-  Promise.all([fetch(wikiDataUrl).then(r=>r.json()),fetch(promptDataUrl).then(r=>r.json())]).then(([wiki,prompts]) => {
+
+  const parseJson = (response) => {
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return response.json();
+  };
+  Promise.all([fetch(wikiDataUrl).then(parseJson), fetch(promptDataUrl).then(parseJson)]).then(([wiki, prompts]) => {
     items = [
-      ...wiki.articles.map(item => ({...item,type:'article',typeLabel:'백과 문서'})),
-      ...prompts.prompts.map(item => ({...item,type:'prompt',typeLabel:'프롬프트',summary:'프롬프트 템플릿'}))
-    ]; render();
+      ...wiki.articles.map((item) => ({ ...item, type: 'article', typeLabel: '백과 문서' })),
+      ...prompts.prompts.map((item) => ({ ...item, type: 'prompt', typeLabel: '프롬프트', summary: item.template.length > 180 ? item.template.slice(0, 180).trimEnd() + '…' : item.template, searchText: item.template, url: promptLibraryUrl + '?q=' + encodeURIComponent(item.title) })),
+    ];
+    render();
+  }).catch(() => {
+    count.textContent = '검색 자료를 불러오지 못했습니다.';
+    pagination.hidden = true;
   });
-  form?.addEventListener('submit', (event) => { event.preventDefault(); history.replaceState(null,'',`?q=${encodeURIComponent(input.value)}`); render(); });
-  filterButtons.forEach((button) => button.addEventListener('click', () => { activeType=button.dataset.type; filterButtons.forEach(item=>item.setAttribute('aria-pressed',String(item===button))); render(); }));
+
+  form?.addEventListener('submit', (event) => { event.preventDefault(); currentPage = 1; render(); });
+  filterButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      activeType = button.dataset.type;
+      currentPage = 1;
+      filterButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      render();
+    });
+    button.addEventListener('keydown', (event) => {
+      const keyTargets = { ArrowRight: (index + 1) % filterButtons.length, ArrowLeft: (index - 1 + filterButtons.length) % filterButtons.length, Home: 0, End: filterButtons.length - 1 };
+      if (!(event.key in keyTargets)) return;
+      event.preventDefault();
+      filterButtons[keyTargets[event.key]].focus();
+      filterButtons[keyTargets[event.key]].click();
+    });
+  });
+  previousPage?.addEventListener('click', () => { if (currentPage > 1) { currentPage -= 1; render(); results.scrollIntoView({ block: 'start' }); } });
+  nextPage?.addEventListener('click', () => { currentPage += 1; render(); results.scrollIntoView({ block: 'start' }); });
 </script>
