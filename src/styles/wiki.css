@@ -155,3 +155,14 @@ a:hover { text-decoration: underline; }
 @media (max-width: 28rem) {
   .sl-markdown-content .wiki-backlinks-more > ul { columns: 1; }
 }
+
+.wiki-letter-index { display: flex; flex-wrap: wrap; gap: .25rem; margin: .75rem 0 1.25rem; border: 1px solid #c8ccd1; background: #f8f9fa; padding: .6rem; }
+.wiki-letter-index a { min-width: 1.8rem; border-right: 1px solid #c8ccd1; padding: .08rem .35rem; text-align: center; font-weight: 600; }
+.wiki-index-group { margin-top: 1.2rem; }
+.wiki-index-group > h2 { scroll-margin-top: 5.5rem; }
+.sl-markdown-content .wiki-index-list { columns: 4; column-gap: 1.6rem; margin: .55rem 0 0; padding-left: 1.1rem; }
+.sl-markdown-content .wiki-index-list > li { break-inside: avoid; margin: 0 0 .45rem; line-height: 1.45; }
+.wiki-index-summary { display: block; color: #54595d; font-size: .72rem; }
+.wiki-index-list .wiki-en { display: block; }
+@media (max-width: 50rem) { .sl-markdown-content .wiki-index-list { columns: 2; } }
+@media (max-width: 28rem) { .sl-markdown-content .wiki-index-list { columns: 1; } }

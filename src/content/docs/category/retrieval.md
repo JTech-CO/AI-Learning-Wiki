@@ -5,103 +5,207 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 
 외부 지식을 검색해 생성에 결합하는 기술 분야의 검토 완료 백과 문서입니다.
 
-- [개체 연결](/wiki/entity-linking/) — 개체 연결은 텍스트의 개체 언급을 지식베이스의 고유 항목에 대응시키거나 연결 불가로 판정하는 작업이다.
-- [거리 지표 선택](/wiki/distance-metric-selection/) — 거리 지표 선택은 임베딩 공간에서 어떤 유사도 함수가 과제의 관련성과 인덱스 구조에 맞는지 결정하는 과정이다.
-- [검색 문맥](/wiki/retrieval-context/) — 검색 문맥은 질의에 응답하기 위해 검색 시스템이 선택해 생성 모델에 제공하는 문서 조각과 메타데이터의 집합이다.
-- [검색 적중률](/wiki/retrieval-hit-rate/) — 검색 적중률은 질의의 상위 k 결과 안에 하나 이상의 정답 또는 관련 항목이 포함된 비율이다.
-- [검색 증강 생성](/wiki/rag/) — 외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.
-- [검색 필터링](/wiki/retrieval-filtering/) — 검색 필터링은 의미 또는 키워드 검색 전후에 메타데이터·권한·시간·품질 조건으로 후보 문서를 제한하는 과정이다.
-- [검색기](/wiki/retriever/) — 질의와 관련된 문서나 청크 후보를 저장소에서 찾는 구성 요소다.
-- [계층적 탐색 가능 소세계 그래프](/wiki/hierarchical-navigable-small-world/) — 계층적 탐색 가능 소세계 그래프는 벡터를 여러 층의 근접 그래프로 연결해 근사 최근접 이웃을 빠르게 찾는 인덱스다.
-- [곱 양자화](/wiki/product-quantization/) — 곱 양자화는 고차원 벡터를 여러 부분공간으로 나누고 각 부분을 작은 코드북의 중심점 번호로 압축하는 방법이다.
-- [관련성 점수](/wiki/relevance-score/) — 관련성 점수는 특정 질의와 문서가 정보 요구 관점에서 얼마나 잘 맞는지를 나타내는 수치다.
-- [교정형 RAG](/wiki/corrective-rag/) — 교정형 RAG는 검색 결과의 관련성과 신뢰성을 평가한 뒤 부족하거나 잘못된 문맥을 보완해 답변을 생성하는 방식이다.
-- [교차언어 임베딩](/wiki/cross-lingual-embedding/) — 교차언어 임베딩은 서로 다른 언어의 의미가 같은 문장이나 문서를 공통 벡터 공간에서 가깝게 표현한다.
-- [구절 검색](/wiki/passage-retrieval/) — 구절 검색은 긴 문서를 작은 문단이나 청크로 나누어 질의에 직접 관련된 구간을 반환하는 검색 과제다.
-- [그래프 검색](/wiki/graph-retrieval/) — 그래프 검색은 질의와 관련된 노드·간선·경로를 구조적·의미적 조건으로 찾아 반환하는 정보 검색 방식이다.
-- [근거 기반 생성](/wiki/grounded-generation/) — 근거 기반 생성은 주어진 문서나 검증 가능한 자료에 답변의 사실 주장을 제한하는 생성 방식이다.
-- [근거화](/wiki/grounding/) — 모델 출력을 제공된 자료나 검증 가능한 외부 사실에 연결하는 방법이다.
-- [근사 최근접 이웃 검색](/wiki/approximate-nearest-neighbor/) — 정확도를 일부 양보하고 대규모 벡터 검색 속도를 높이는 알고리즘 계열이다.
-- [다중 벡터 검색](/wiki/multi-vector-retrieval/) — 다중 벡터 검색은 문서 하나를 단일 벡터가 아니라 토큰·구절·관점별 여러 벡터로 표현해 세밀한 일치를 계산하는 방식이다.
-- [다중 홉 RAG](/wiki/multi-hop-rag/) — 다중 홉 RAG는 하나의 검색으로 답하기 어려운 질의를 여러 단계의 검색과 추론으로 해결하는 검색 증강 생성 방식이다.
-- [리랭커](/wiki/reranker/) — 초기 검색 후보를 질의 관련성 기준으로 다시 정렬하는 모델이나 규칙이다.
-- [리스트와이즈 순위화](/wiki/listwise-ranking/) — 리스트와이즈 순위화는 한 질의의 후보 목록 전체와 정답 순위를 함께 고려해 학습하는 방법이다.
-- [마트료시카 임베딩](/wiki/matryoshka-embedding/) — 마트료시카 임베딩은 하나의 벡터 앞부분만 사용해도 의미 있는 표현이 되도록 여러 중첩 차원에서 동시에 학습한 임베딩이다.
-- [메타데이터 필터링](/wiki/metadata-filtering/) — 메타데이터 필터링은 벡터나 문서의 속성 조건을 사용해 검색 후보를 제한하는 기능이다.
-- [문맥 재현율](/wiki/context-recall/) — 문맥 재현율은 정답을 뒷받침하는 필수 정보 중 검색 문맥이 얼마나 포괄했는지를 나타내는 RAG 평가 지표다.
-- [문맥 정밀도](/wiki/context-precision/) — 문맥 정밀도는 검색된 문맥 중 답변에 필요한 관련 구절이 상위에 얼마나 집중되어 있는지를 나타내는 RAG 평가 지표다.
-- [문맥 조립](/wiki/context-assembly/) — 문맥 조립은 여러 검색 결과와 지시·대화 상태를 모델 입력의 일관된 순서와 형식으로 구성하는 과정이다.
-- [문서 검색](/wiki/document-retrieval/) — 문서 검색은 질의에 관련된 전체 문서 단위를 대규모 컬렉션에서 찾아 순위화하는 과정이다.
-- [문서 수집 파이프라인](/wiki/document-ingestion-pipeline/) — 문서 수집 파이프라인은 원천 문서를 가져와 파싱, 정제, 분할, 메타데이터 부여, 임베딩과 색인까지 처리하는 작업 흐름이다.
-- [문서 임베딩](/wiki/document-embedding/) — 문서 임베딩은 문서 전체의 의미를 고정 길이 벡터로 나타내 검색, 군집과 분류에 사용하는 표현이다.
-- [문서 파싱](/wiki/document-parsing/) — 문서 파싱은 PDF, HTML, 워드 파일 등의 바이트와 레이아웃을 제목·문단·표·목록 같은 구조화된 요소로 변환하는 과정이다.
-- [문장 분할](/wiki/sentence-segmentation/) — 문장 분할은 연속 텍스트에서 문장의 시작과 끝 경계를 식별하는 전처리 작업이다.
-- [문장 임베딩](/wiki/sentence-embedding/) — 문장이나 짧은 텍스트 전체의 의미를 고정 길이의 밀집 벡터로 표현한 것이다.
-- [밀집 검색](/wiki/dense-retrieval/) — 밀집 검색은 질의와 문서를 연속 벡터로 인코딩하고 벡터 유사도로 관련 항목을 찾는 검색 방식이다.
-- [밀집 임베딩](/wiki/dense-embedding/) — 대부분의 차원이 연속값을 갖는 고정 길이 벡터로 질의와 문서의 의미를 표현해 벡터 유사도로 검색하는 표현 방식이다.
-- [반복형 RAG](/wiki/iterative-rag/) — 반복형 RAG는 생성 또는 평가 결과를 바탕으로 검색 질의와 문맥을 여러 차례 갱신하는 방식이다.
-- [벡터 데이터베이스](/wiki/vector-database/) — 고차원 벡터와 메타데이터를 저장하고 유사도 검색을 제공하는 데이터 시스템이다.
-- [벡터 인덱스](/wiki/vector-index/) — 벡터 인덱스는 임베딩 벡터를 저장하고 거리나 내적 기준으로 가까운 항목을 빠르게 검색하도록 조직한 자료구조다.
-- [부분 그래프 검색](/wiki/subgraph-retrieval/) — 하위 그래프 검색은 질의에 답하는 데 필요한 연결된 노드와 관계 집합을 지식 그래프에서 선택하는 작업이다.
-- [순위 학습](/wiki/learning-to-rank/) — 순위 학습은 관련성 라벨이나 사용자 선호를 이용해 질의별 후보의 정렬 함수를 학습하는 방법군이다.
-- [어휘 검색](/wiki/lexical-retrieval/) — 어휘 검색은 질의와 문서에 실제로 나타난 토큰·어근·구의 일치를 중심으로 후보를 찾는 검색 방식이다.
-- [에이전트형 RAG](/wiki/agentic-rag/) — 에이전트형 RAG는 에이전트가 검색 필요성, 질의, 도구, 반복과 답변 검증을 동적으로 결정하는 검색 증강 생성 방식이다.
-- [역색인](/wiki/inverted-index/) — 역색인은 각 용어나 토큰에서 그것이 등장한 문서와 위치 목록으로 연결하는 검색 자료구조다.
-- [역순위 결합](/wiki/reciprocal-rank-fusion/) — 역순위 결합은 여러 검색 결과에서 문서의 순위 역수 점수를 합해 하나의 순위로 합치는 비지도 융합 방법이다.
-- [역파일 인덱스](/wiki/inverted-file-index/) — 역파일 인덱스는 벡터 공간을 중심점별 셀로 나누고 각 벡터를 가까운 중심점의 목록에 저장하는 근사 검색 구조다.
-- [연합 검색](/wiki/federated-search/) — 연합 검색은 서로 다른 색인이나 검색 서비스에 질의를 분배하고 결과를 하나의 순위 목록으로 통합하는 방식이다.
-- [온톨로지](/wiki/ontology/) — 온톨로지는 특정 영역의 개념·관계·제약을 명시적인 형식 의미와 함께 정의한 지식 표현 체계다.
-- [의미 검색](/wiki/semantic-search/) — 문자열의 정확한 일치보다 질의와 문서의 의미 유사성을 이용하는 검색 방식이다.
-- [의사 관련성 피드백](/wiki/pseudo-relevance-feedback/) — 의사 관련성 피드백은 첫 검색의 상위 문서가 관련 있다고 가정하고 그 문서의 용어나 표현으로 질의를 보강하는 기법이다.
-- [인덱스 구축](/wiki/index-building/) — 인덱스 구축은 문서나 벡터를 검색 가능한 자료 구조로 변환해 질의 시 전체 데이터를 직접 순회하지 않게 하는 과정이다.
-- [인덱스 복제](/wiki/index-replication/) — 인덱스 복제는 같은 검색 인덱스의 사본을 여러 노드에 유지해 처리량과 가용성을 높이는 방식이다.
-- [인덱스 샤딩](/wiki/index-sharding/) — 인덱스 샤딩은 큰 검색 인덱스를 키 범위·해시·의미 영역 등에 따라 여러 노드나 파티션으로 나누는 방식이다.
-- [인용](/wiki/citation/) — 주장이나 생성 결과가 근거로 삼은 자료의 위치와 출처를 표시하는 정보다.
-- [인용 생성](/wiki/citation-generation/) — 인용 생성은 생성 답변의 주장과 그 주장을 뒷받침하는 검색 문서 위치를 연결해 표시하는 과정이다.
-- [임베딩](/wiki/embedding/) — 문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다.
-- [임베딩 드리프트](/wiki/embedding-drift/) — 임베딩 드리프트는 모델, 데이터 또는 전처리 변경으로 같은 입력의 벡터 분포와 이웃 관계가 시간에 따라 달라지는 현상이다.
-- [임베딩 모델](/wiki/embedding-model/) — 텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다.
-- [임베딩 비등방성](/wiki/embedding-anisotropy/) — 임베딩 비등방성은 벡터들이 공간 전체에 고르게 퍼지지 않고 좁은 방향이나 원뿔에 몰리는 현상이다.
-- [임베딩 정규화](/wiki/embedding-normalization/) — 임베딩 정규화는 벡터 길이를 1로 맞추거나 분포를 조정해 비교 척도와 수치 범위를 일정하게 만드는 절차다.
-- [임베딩 차원](/wiki/embedding-dimension/) — 임베딩 차원은 벡터가 가진 좌표 수로 표현 용량, 저장 공간과 검색 계산량을 좌우한다.
-- [임베딩 풀링](/wiki/embedding-pooling/) — 임베딩 풀링은 여러 토큰 또는 구간 표현을 하나의 고정 길이 벡터로 합치는 연산이다.
-- [재귀 검색](/wiki/recursive-retrieval/) — 재귀 검색은 첫 검색 결과에서 새 질의나 하위 주제를 만들어 필요한 근거가 충분할 때까지 반복 검색하는 방식이다.
-- [재현율-지연 시간 절충](/wiki/recall-latency-tradeoff/) — 재현율-지연 시간 절충은 더 많은 관련 항목을 찾기 위한 탐색 확대가 응답 시간과 자원 사용을 늘리는 관계다.
-- [적응형 검색](/wiki/adaptive-retrieval/) — 적응형 검색은 질문 난이도와 현재 모델의 불확실성에 따라 검색 여부, 횟수, 질의 또는 검색 범위를 동적으로 바꾸는 방식이다.
-- [정규화 할인 누적 이득](/wiki/normalized-discounted-cumulative-gain/) — 정규화 할인 누적 이득은 순위가 낮아질수록 할인된 등급별 관련성 이득을 이상적인 순위의 값으로 나눈 지표다.
-- [증분 인덱스 갱신](/wiki/incremental-index-update/) — 증분 인덱스 갱신은 전체 인덱스를 다시 만들지 않고 추가·변경·삭제된 항목만 기존 검색 구조에 반영하는 절차다.
-- [지시 튜닝 임베딩](/wiki/instruction-tuned-embedding/) — 지시 튜닝 임베딩은 검색·분류 같은 과제 설명을 입력에 포함하고 그 지시에 맞는 표현을 만들도록 학습한 임베딩이다.
-- [지식 그래프](/wiki/knowledge-graph/) — 지식 그래프는 개체를 노드, 의미 관계를 간선으로 표현하고 스키마와 식별자를 통해 사실을 연결한 구조화 지식 표현이다.
-- [지식 그래프 임베딩](/wiki/knowledge-graph-embedding/) — 지식 그래프 임베딩은 개체와 관계를 저차원 벡터나 변환으로 표현해 그래프 사실의 타당성을 점수화하는 방법이다.
-- [지역 민감 해싱](/wiki/locality-sensitive-hashing/) — 지역 민감 해싱은 가까운 벡터가 같은 해시 버킷에 들어갈 확률이 높도록 설계된 해시 함수 계열이다.
-- [질의 라우팅](/wiki/query-routing/) — 질의 라우팅은 사용자 질의를 특성과 목적에 따라 적절한 검색기, 지식원 또는 처리 경로로 보내는 과정이다.
-- [질의 임베딩](/wiki/query-embedding/) — 질의 임베딩은 사용자의 검색 의도를 벡터로 표현해 문서 임베딩과 비교할 수 있게 한 표현이다.
-- [질의 재작성](/wiki/query-rewriting/) — 질의 재작성은 사용자의 원래 질문을 검색 시스템이 처리하기 쉬운 명확한 검색어 또는 독립 질의로 변환하는 과정이다.
-- [질의 확장](/wiki/query-expansion/) — 질의 확장은 원래 질의에 동의어, 관련 용어, 생성된 설명을 추가해 검색 가능한 표현 범위를 넓히는 기법이다.
-- [청크 중첩](/wiki/chunk-overlap/) — 청크 중첩은 인접한 문서 조각이 경계 주변의 일부 내용을 공유하도록 반복 포함하는 범위다.
-- [청크 크기](/wiki/chunk-size/) — 청크 크기는 검색·임베딩·생성에 사용하기 위해 문서를 나눈 각 조각의 토큰, 문자 또는 문장 길이다.
-- [청킹](/wiki/chunking/) — 긴 문서를 검색과 문맥 구성에 적합한 작은 단위로 나누는 과정이다.
-- [최근접 이웃 검색](/wiki/nearest-neighbor-search/) — 벡터 공간에서 질의 벡터와 가장 가까운 항목을 찾는 문제다.
-- [최대 한계 관련성](/wiki/maximal-marginal-relevance/) — 최대 한계 관련성은 질의와의 관련성을 높이면서 이미 선택한 결과와의 중복을 줄이도록 문서를 순차 선택하는 기준이다.
-- [크로스 인코더 리랭커](/wiki/cross-encoder-reranker/) — 크로스 인코더 리랭커는 질의와 후보 문서를 하나의 입력으로 함께 인코딩해 관련성 점수를 계산하는 재순위 모델이다.
-- [키워드 검색](/wiki/keyword-search/) — 키워드 검색은 질의에 나타난 단어나 구와 문서의 어휘 일치를 이용해 관련 문서를 찾는 방식이다.
-- [트리플 저장소](/wiki/triple-store/) — 트리플 스토어는 지식을 주어-술어-목적어 형태의 RDF 트리플로 저장하고 그래프 패턴으로 조회하도록 최적화된 데이터베이스다.
-- [패싯 검색](/wiki/faceted-search/) — 패싯 검색은 검색 결과를 범주, 날짜, 유형 같은 구조화된 속성별 개수와 필터로 탐색하게 하는 인터페이스 및 검색 방식이다.
-- [페어와이즈 순위화](/wiki/pairwise-ranking/) — 페어와이즈 순위화는 같은 질의의 두 후보 중 어느 쪽이 더 관련 있는지를 학습하는 방법이다.
-- [평균 역순위](/wiki/mean-reciprocal-rank/) — 평균 역순위는 각 질의에서 첫 번째 관련 결과의 순위 역수를 구해 질의 전체에 평균한 검색 지표다.
-- [평면 벡터 인덱스](/wiki/flat-vector-index/) — 평면 벡터 인덱스는 모든 저장 벡터를 질의와 직접 비교해 정확한 최근접 이웃을 찾는 기본 검색 구조다.
-- [포인트와이즈 순위화](/wiki/pointwise-ranking/) — 포인트와이즈 순위화는 각 질의-문서 쌍의 관련성 점수나 등급을 서로 독립적인 예측 문제로 학습하는 방법이다.
-- [하이브리드 검색](/wiki/hybrid-search/) — 하이브리드 검색은 키워드 기반 희소 점수와 임베딩 기반 밀집 점수를 결합해 후보를 찾는 방식이다.
-- [하이브리드 RAG](/wiki/hybrid-rag/) — 하이브리드 RAG는 생성 모델에 문맥을 공급할 때 키워드·밀집 벡터·지식 그래프 등 둘 이상의 검색 방식을 결합하는 검색 증강 생성 구조다.
-- [희소 신경 검색](/wiki/sparse-neural-retrieval/) — 희소 신경 검색은 신경망이 어휘 차원의 희소 가중치를 생성해 역색인에서 의미 확장과 정확한 용어 일치를 함께 사용하는 방식이다.
-- [희소 임베딩](/wiki/sparse-embedding/) — 대부분의 차원이 0이고 일부 차원만 값이 있는 고차원 벡터 표현이며 차원이 단어나 학습된 어휘 특징과 연결되는 경우가 많다.
-- [BM25](/wiki/bm25/) — BM25는 질의어의 문서 내 빈도·전체 문서 희소성·문서 길이 보정을 결합한 확률적 어휘 검색 점수 함수다.
-- [DiskANN](/wiki/diskann/) — DiskANN은 대규모 벡터를 SSD에 두고 그래프 탐색과 메모리 캐시를 결합해 낮은 지연의 근사 검색을 수행하는 방법이다.
-- [FAISS](/wiki/faiss/) — FAISS는 고차원 벡터의 유사도 검색과 군집화를 위한 다양한 CPU·GPU 인덱스를 제공하는 라이브러리다.
-- [GraphRAG](/wiki/graph-rag/) — 그래프 RAG는 지식 그래프의 개체·관계·커뮤니티를 탐색해 생성 모델에 구조화된 근거를 제공하는 검색 증강 방식이다.
-- [Precision@K](/wiki/precision-at-k/) — Precision@K는 검색 결과 상위 K개 중 관련 문서가 차지하는 비율이다.
-- [RAG 문맥 압축](/wiki/context-compression-for-rag/) — RAG 문맥 압축은 검색된 자료에서 질의에 필요한 정보만 남겨 생성 모델에 전달할 토큰 수와 잡음을 줄이는 기법이다.
-- [Recall@K](/wiki/recall-at-k/) — Recall@K는 전체 관련 문서 중 검색 결과 상위 K개 안에 포함된 비율이다.
-- [ScaNN](/wiki/scann/) — ScaNN은 벡터 분할, 양자화와 재정렬을 결합해 최대 내적 또는 최근접 이웃 검색을 가속하는 시스템이다.
-- [Self-RAG](/wiki/self-rag/) — Self-RAG는 언어 모델이 필요할 때 검색하고 검색 결과의 관련성 및 자신의 답변 근거성을 스스로 평가하도록 학습하는 방식이다.
-- [SPARQL](/wiki/sparql/) — SPARQL은 RDF 그래프에서 트리플 패턴을 매칭하고 결과를 선택·구성·갱신하는 표준 질의 언어와 프로토콜이다.
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-b">B</a><a href="#index-en-d">D</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-p">P</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a></nav>
+
+<div class="wiki-index-groups">
+<section class="wiki-index-group" data-index-group="ko-g">
+<h2 id="index-ko-g">ㄱ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="entity-linking"><a href="/wiki/entity-linking/">개체 연결</a><span class="wiki-index-summary">개체 연결은 텍스트의 개체 언급을 지식베이스의 고유 항목에 대응시키거나 연결 불가로 판정하는 작업이다.</span></li>
+<li data-article-id="distance-metric-selection"><a href="/wiki/distance-metric-selection/">거리 지표 선택</a><span class="wiki-index-summary">거리 지표 선택은 임베딩 공간에서 어떤 유사도 함수가 과제의 관련성과 인덱스 구조에 맞는지 결정하는 과정이다.</span></li>
+<li data-article-id="retrieval-context"><a href="/wiki/retrieval-context/">검색 문맥</a><span class="wiki-index-summary">검색 문맥은 질의에 응답하기 위해 검색 시스템이 선택해 생성 모델에 제공하는 문서 조각과 메타데이터의 집합이다.</span></li>
+<li data-article-id="retrieval-hit-rate"><a href="/wiki/retrieval-hit-rate/">검색 적중률</a><span class="wiki-index-summary">검색 적중률은 질의의 상위 k 결과 안에 하나 이상의 정답 또는 관련 항목이 포함된 비율이다.</span></li>
+<li data-article-id="rag"><a href="/wiki/rag/">검색 증강 생성</a><span class="wiki-index-summary">외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.</span></li>
+<li data-article-id="retrieval-filtering"><a href="/wiki/retrieval-filtering/">검색 필터링</a><span class="wiki-index-summary">검색 필터링은 의미 또는 키워드 검색 전후에 메타데이터·권한·시간·품질 조건으로 후보 문서를 제한하는 과정이다.</span></li>
+<li data-article-id="retriever"><a href="/wiki/retriever/">검색기</a><span class="wiki-index-summary">질의와 관련된 문서나 청크 후보를 저장소에서 찾는 구성 요소다.</span></li>
+<li data-article-id="hierarchical-navigable-small-world"><a href="/wiki/hierarchical-navigable-small-world/">계층적 탐색 가능 소세계 그래프</a><span class="wiki-index-summary">계층적 탐색 가능 소세계 그래프는 벡터를 여러 층의 근접 그래프로 연결해 근사 최근접 이웃을 빠르게 찾는 인덱스다.</span></li>
+<li data-article-id="product-quantization"><a href="/wiki/product-quantization/">곱 양자화</a><span class="wiki-index-summary">곱 양자화는 고차원 벡터를 여러 부분공간으로 나누고 각 부분을 작은 코드북의 중심점 번호로 압축하는 방법이다.</span></li>
+<li data-article-id="relevance-score"><a href="/wiki/relevance-score/">관련성 점수</a><span class="wiki-index-summary">관련성 점수는 특정 질의와 문서가 정보 요구 관점에서 얼마나 잘 맞는지를 나타내는 수치다.</span></li>
+<li data-article-id="corrective-rag"><a href="/wiki/corrective-rag/">교정형 RAG</a><span class="wiki-index-summary">교정형 RAG는 검색 결과의 관련성과 신뢰성을 평가한 뒤 부족하거나 잘못된 문맥을 보완해 답변을 생성하는 방식이다.</span></li>
+<li data-article-id="cross-lingual-embedding"><a href="/wiki/cross-lingual-embedding/">교차언어 임베딩</a><span class="wiki-index-summary">교차언어 임베딩은 서로 다른 언어의 의미가 같은 문장이나 문서를 공통 벡터 공간에서 가깝게 표현한다.</span></li>
+<li data-article-id="passage-retrieval"><a href="/wiki/passage-retrieval/">구절 검색</a><span class="wiki-index-summary">구절 검색은 긴 문서를 작은 문단이나 청크로 나누어 질의에 직접 관련된 구간을 반환하는 검색 과제다.</span></li>
+<li data-article-id="graph-retrieval"><a href="/wiki/graph-retrieval/">그래프 검색</a><span class="wiki-index-summary">그래프 검색은 질의와 관련된 노드·간선·경로를 구조적·의미적 조건으로 찾아 반환하는 정보 검색 방식이다.</span></li>
+<li data-article-id="grounded-generation"><a href="/wiki/grounded-generation/">근거 기반 생성</a><span class="wiki-index-summary">근거 기반 생성은 주어진 문서나 검증 가능한 자료에 답변의 사실 주장을 제한하는 생성 방식이다.</span></li>
+<li data-article-id="grounding"><a href="/wiki/grounding/">근거화</a><span class="wiki-index-summary">모델 출력을 제공된 자료나 검증 가능한 외부 사실에 연결하는 방법이다.</span></li>
+<li data-article-id="approximate-nearest-neighbor"><a href="/wiki/approximate-nearest-neighbor/">근사 최근접 이웃 검색</a><span class="wiki-index-summary">정확도를 일부 양보하고 대규모 벡터 검색 속도를 높이는 알고리즘 계열이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-d">
+<h2 id="index-ko-d">ㄷ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="multi-vector-retrieval"><a href="/wiki/multi-vector-retrieval/">다중 벡터 검색</a><span class="wiki-index-summary">다중 벡터 검색은 문서 하나를 단일 벡터가 아니라 토큰·구절·관점별 여러 벡터로 표현해 세밀한 일치를 계산하는 방식이다.</span></li>
+<li data-article-id="multi-hop-rag"><a href="/wiki/multi-hop-rag/">다중 홉 RAG</a><span class="wiki-index-summary">다중 홉 RAG는 하나의 검색으로 답하기 어려운 질의를 여러 단계의 검색과 추론으로 해결하는 검색 증강 생성 방식이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-r">
+<h2 id="index-ko-r">ㄹ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="reranker"><a href="/wiki/reranker/">리랭커</a><span class="wiki-index-summary">초기 검색 후보를 질의 관련성 기준으로 다시 정렬하는 모델이나 규칙이다.</span></li>
+<li data-article-id="listwise-ranking"><a href="/wiki/listwise-ranking/">리스트와이즈 순위화</a><span class="wiki-index-summary">리스트와이즈 순위화는 한 질의의 후보 목록 전체와 정답 순위를 함께 고려해 학습하는 방법이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-m">
+<h2 id="index-ko-m">ㅁ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="matryoshka-embedding"><a href="/wiki/matryoshka-embedding/">마트료시카 임베딩</a><span class="wiki-index-summary">마트료시카 임베딩은 하나의 벡터 앞부분만 사용해도 의미 있는 표현이 되도록 여러 중첩 차원에서 동시에 학습한 임베딩이다.</span></li>
+<li data-article-id="metadata-filtering"><a href="/wiki/metadata-filtering/">메타데이터 필터링</a><span class="wiki-index-summary">메타데이터 필터링은 벡터나 문서의 속성 조건을 사용해 검색 후보를 제한하는 기능이다.</span></li>
+<li data-article-id="context-recall"><a href="/wiki/context-recall/">문맥 재현율</a><span class="wiki-index-summary">문맥 재현율은 정답을 뒷받침하는 필수 정보 중 검색 문맥이 얼마나 포괄했는지를 나타내는 RAG 평가 지표다.</span></li>
+<li data-article-id="context-precision"><a href="/wiki/context-precision/">문맥 정밀도</a><span class="wiki-index-summary">문맥 정밀도는 검색된 문맥 중 답변에 필요한 관련 구절이 상위에 얼마나 집중되어 있는지를 나타내는 RAG 평가 지표다.</span></li>
+<li data-article-id="context-assembly"><a href="/wiki/context-assembly/">문맥 조립</a><span class="wiki-index-summary">문맥 조립은 여러 검색 결과와 지시·대화 상태를 모델 입력의 일관된 순서와 형식으로 구성하는 과정이다.</span></li>
+<li data-article-id="document-retrieval"><a href="/wiki/document-retrieval/">문서 검색</a><span class="wiki-index-summary">문서 검색은 질의에 관련된 전체 문서 단위를 대규모 컬렉션에서 찾아 순위화하는 과정이다.</span></li>
+<li data-article-id="document-ingestion-pipeline"><a href="/wiki/document-ingestion-pipeline/">문서 수집 파이프라인</a><span class="wiki-index-summary">문서 수집 파이프라인은 원천 문서를 가져와 파싱, 정제, 분할, 메타데이터 부여, 임베딩과 색인까지 처리하는 작업 흐름이다.</span></li>
+<li data-article-id="document-embedding"><a href="/wiki/document-embedding/">문서 임베딩</a><span class="wiki-index-summary">문서 임베딩은 문서 전체의 의미를 고정 길이 벡터로 나타내 검색, 군집과 분류에 사용하는 표현이다.</span></li>
+<li data-article-id="document-parsing"><a href="/wiki/document-parsing/">문서 파싱</a><span class="wiki-index-summary">문서 파싱은 PDF, HTML, 워드 파일 등의 바이트와 레이아웃을 제목·문단·표·목록 같은 구조화된 요소로 변환하는 과정이다.</span></li>
+<li data-article-id="sentence-segmentation"><a href="/wiki/sentence-segmentation/">문장 분할</a><span class="wiki-index-summary">문장 분할은 연속 텍스트에서 문장의 시작과 끝 경계를 식별하는 전처리 작업이다.</span></li>
+<li data-article-id="sentence-embedding"><a href="/wiki/sentence-embedding/">문장 임베딩</a><span class="wiki-index-summary">문장이나 짧은 텍스트 전체의 의미를 고정 길이의 밀집 벡터로 표현한 것이다.</span></li>
+<li data-article-id="dense-retrieval"><a href="/wiki/dense-retrieval/">밀집 검색</a><span class="wiki-index-summary">밀집 검색은 질의와 문서를 연속 벡터로 인코딩하고 벡터 유사도로 관련 항목을 찾는 검색 방식이다.</span></li>
+<li data-article-id="dense-embedding"><a href="/wiki/dense-embedding/">밀집 임베딩</a><span class="wiki-index-summary">대부분의 차원이 연속값을 갖는 고정 길이 벡터로 질의와 문서의 의미를 표현해 벡터 유사도로 검색하는 표현 방식이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-b">
+<h2 id="index-ko-b">ㅂ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="iterative-rag"><a href="/wiki/iterative-rag/">반복형 RAG</a><span class="wiki-index-summary">반복형 RAG는 생성 또는 평가 결과를 바탕으로 검색 질의와 문맥을 여러 차례 갱신하는 방식이다.</span></li>
+<li data-article-id="vector-database"><a href="/wiki/vector-database/">벡터 데이터베이스</a><span class="wiki-index-summary">고차원 벡터와 메타데이터를 저장하고 유사도 검색을 제공하는 데이터 시스템이다.</span></li>
+<li data-article-id="vector-index"><a href="/wiki/vector-index/">벡터 인덱스</a><span class="wiki-index-summary">벡터 인덱스는 임베딩 벡터를 저장하고 거리나 내적 기준으로 가까운 항목을 빠르게 검색하도록 조직한 자료구조다.</span></li>
+<li data-article-id="subgraph-retrieval"><a href="/wiki/subgraph-retrieval/">부분 그래프 검색</a><span class="wiki-index-summary">하위 그래프 검색은 질의에 답하는 데 필요한 연결된 노드와 관계 집합을 지식 그래프에서 선택하는 작업이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-s">
+<h2 id="index-ko-s">ㅅ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="learning-to-rank"><a href="/wiki/learning-to-rank/">순위 학습</a><span class="wiki-index-summary">순위 학습은 관련성 라벨이나 사용자 선호를 이용해 질의별 후보의 정렬 함수를 학습하는 방법군이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-ng">
+<h2 id="index-ko-ng">ㅇ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="lexical-retrieval"><a href="/wiki/lexical-retrieval/">어휘 검색</a><span class="wiki-index-summary">어휘 검색은 질의와 문서에 실제로 나타난 토큰·어근·구의 일치를 중심으로 후보를 찾는 검색 방식이다.</span></li>
+<li data-article-id="agentic-rag"><a href="/wiki/agentic-rag/">에이전트형 RAG</a><span class="wiki-index-summary">에이전트형 RAG는 에이전트가 검색 필요성, 질의, 도구, 반복과 답변 검증을 동적으로 결정하는 검색 증강 생성 방식이다.</span></li>
+<li data-article-id="inverted-index"><a href="/wiki/inverted-index/">역색인</a><span class="wiki-index-summary">역색인은 각 용어나 토큰에서 그것이 등장한 문서와 위치 목록으로 연결하는 검색 자료구조다.</span></li>
+<li data-article-id="reciprocal-rank-fusion"><a href="/wiki/reciprocal-rank-fusion/">역순위 결합</a><span class="wiki-index-summary">역순위 결합은 여러 검색 결과에서 문서의 순위 역수 점수를 합해 하나의 순위로 합치는 비지도 융합 방법이다.</span></li>
+<li data-article-id="inverted-file-index"><a href="/wiki/inverted-file-index/">역파일 인덱스</a><span class="wiki-index-summary">역파일 인덱스는 벡터 공간을 중심점별 셀로 나누고 각 벡터를 가까운 중심점의 목록에 저장하는 근사 검색 구조다.</span></li>
+<li data-article-id="federated-search"><a href="/wiki/federated-search/">연합 검색</a><span class="wiki-index-summary">연합 검색은 서로 다른 색인이나 검색 서비스에 질의를 분배하고 결과를 하나의 순위 목록으로 통합하는 방식이다.</span></li>
+<li data-article-id="ontology"><a href="/wiki/ontology/">온톨로지</a><span class="wiki-index-summary">온톨로지는 특정 영역의 개념·관계·제약을 명시적인 형식 의미와 함께 정의한 지식 표현 체계다.</span></li>
+<li data-article-id="semantic-search"><a href="/wiki/semantic-search/">의미 검색</a><span class="wiki-index-summary">문자열의 정확한 일치보다 질의와 문서의 의미 유사성을 이용하는 검색 방식이다.</span></li>
+<li data-article-id="pseudo-relevance-feedback"><a href="/wiki/pseudo-relevance-feedback/">의사 관련성 피드백</a><span class="wiki-index-summary">의사 관련성 피드백은 첫 검색의 상위 문서가 관련 있다고 가정하고 그 문서의 용어나 표현으로 질의를 보강하는 기법이다.</span></li>
+<li data-article-id="index-building"><a href="/wiki/index-building/">인덱스 구축</a><span class="wiki-index-summary">인덱스 구축은 문서나 벡터를 검색 가능한 자료 구조로 변환해 질의 시 전체 데이터를 직접 순회하지 않게 하는 과정이다.</span></li>
+<li data-article-id="index-replication"><a href="/wiki/index-replication/">인덱스 복제</a><span class="wiki-index-summary">인덱스 복제는 같은 검색 인덱스의 사본을 여러 노드에 유지해 처리량과 가용성을 높이는 방식이다.</span></li>
+<li data-article-id="index-sharding"><a href="/wiki/index-sharding/">인덱스 샤딩</a><span class="wiki-index-summary">인덱스 샤딩은 큰 검색 인덱스를 키 범위·해시·의미 영역 등에 따라 여러 노드나 파티션으로 나누는 방식이다.</span></li>
+<li data-article-id="citation"><a href="/wiki/citation/">인용</a><span class="wiki-index-summary">주장이나 생성 결과가 근거로 삼은 자료의 위치와 출처를 표시하는 정보다.</span></li>
+<li data-article-id="citation-generation"><a href="/wiki/citation-generation/">인용 생성</a><span class="wiki-index-summary">인용 생성은 생성 답변의 주장과 그 주장을 뒷받침하는 검색 문서 위치를 연결해 표시하는 과정이다.</span></li>
+<li data-article-id="embedding"><a href="/wiki/embedding/">임베딩</a><span class="wiki-index-summary">문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다.</span></li>
+<li data-article-id="embedding-drift"><a href="/wiki/embedding-drift/">임베딩 드리프트</a><span class="wiki-index-summary">임베딩 드리프트는 모델, 데이터 또는 전처리 변경으로 같은 입력의 벡터 분포와 이웃 관계가 시간에 따라 달라지는 현상이다.</span></li>
+<li data-article-id="embedding-model"><a href="/wiki/embedding-model/">임베딩 모델</a><span class="wiki-index-summary">텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다.</span></li>
+<li data-article-id="embedding-anisotropy"><a href="/wiki/embedding-anisotropy/">임베딩 비등방성</a><span class="wiki-index-summary">임베딩 비등방성은 벡터들이 공간 전체에 고르게 퍼지지 않고 좁은 방향이나 원뿔에 몰리는 현상이다.</span></li>
+<li data-article-id="embedding-normalization"><a href="/wiki/embedding-normalization/">임베딩 정규화</a><span class="wiki-index-summary">임베딩 정규화는 벡터 길이를 1로 맞추거나 분포를 조정해 비교 척도와 수치 범위를 일정하게 만드는 절차다.</span></li>
+<li data-article-id="embedding-dimension"><a href="/wiki/embedding-dimension/">임베딩 차원</a><span class="wiki-index-summary">임베딩 차원은 벡터가 가진 좌표 수로 표현 용량, 저장 공간과 검색 계산량을 좌우한다.</span></li>
+<li data-article-id="embedding-pooling"><a href="/wiki/embedding-pooling/">임베딩 풀링</a><span class="wiki-index-summary">임베딩 풀링은 여러 토큰 또는 구간 표현을 하나의 고정 길이 벡터로 합치는 연산이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-j">
+<h2 id="index-ko-j">ㅈ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="recursive-retrieval"><a href="/wiki/recursive-retrieval/">재귀 검색</a><span class="wiki-index-summary">재귀 검색은 첫 검색 결과에서 새 질의나 하위 주제를 만들어 필요한 근거가 충분할 때까지 반복 검색하는 방식이다.</span></li>
+<li data-article-id="recall-latency-tradeoff"><a href="/wiki/recall-latency-tradeoff/">재현율-지연 시간 절충</a><span class="wiki-index-summary">재현율-지연 시간 절충은 더 많은 관련 항목을 찾기 위한 탐색 확대가 응답 시간과 자원 사용을 늘리는 관계다.</span></li>
+<li data-article-id="adaptive-retrieval"><a href="/wiki/adaptive-retrieval/">적응형 검색</a><span class="wiki-index-summary">적응형 검색은 질문 난이도와 현재 모델의 불확실성에 따라 검색 여부, 횟수, 질의 또는 검색 범위를 동적으로 바꾸는 방식이다.</span></li>
+<li data-article-id="normalized-discounted-cumulative-gain"><a href="/wiki/normalized-discounted-cumulative-gain/">정규화 할인 누적 이득</a><span class="wiki-index-summary">정규화 할인 누적 이득은 순위가 낮아질수록 할인된 등급별 관련성 이득을 이상적인 순위의 값으로 나눈 지표다.</span></li>
+<li data-article-id="incremental-index-update"><a href="/wiki/incremental-index-update/">증분 인덱스 갱신</a><span class="wiki-index-summary">증분 인덱스 갱신은 전체 인덱스를 다시 만들지 않고 추가·변경·삭제된 항목만 기존 검색 구조에 반영하는 절차다.</span></li>
+<li data-article-id="instruction-tuned-embedding"><a href="/wiki/instruction-tuned-embedding/">지시 튜닝 임베딩</a><span class="wiki-index-summary">지시 튜닝 임베딩은 검색·분류 같은 과제 설명을 입력에 포함하고 그 지시에 맞는 표현을 만들도록 학습한 임베딩이다.</span></li>
+<li data-article-id="knowledge-graph"><a href="/wiki/knowledge-graph/">지식 그래프</a><span class="wiki-index-summary">지식 그래프는 개체를 노드, 의미 관계를 간선으로 표현하고 스키마와 식별자를 통해 사실을 연결한 구조화 지식 표현이다.</span></li>
+<li data-article-id="knowledge-graph-embedding"><a href="/wiki/knowledge-graph-embedding/">지식 그래프 임베딩</a><span class="wiki-index-summary">지식 그래프 임베딩은 개체와 관계를 저차원 벡터나 변환으로 표현해 그래프 사실의 타당성을 점수화하는 방법이다.</span></li>
+<li data-article-id="locality-sensitive-hashing"><a href="/wiki/locality-sensitive-hashing/">지역 민감 해싱</a><span class="wiki-index-summary">지역 민감 해싱은 가까운 벡터가 같은 해시 버킷에 들어갈 확률이 높도록 설계된 해시 함수 계열이다.</span></li>
+<li data-article-id="query-routing"><a href="/wiki/query-routing/">질의 라우팅</a><span class="wiki-index-summary">질의 라우팅은 사용자 질의를 특성과 목적에 따라 적절한 검색기, 지식원 또는 처리 경로로 보내는 과정이다.</span></li>
+<li data-article-id="query-embedding"><a href="/wiki/query-embedding/">질의 임베딩</a><span class="wiki-index-summary">질의 임베딩은 사용자의 검색 의도를 벡터로 표현해 문서 임베딩과 비교할 수 있게 한 표현이다.</span></li>
+<li data-article-id="query-rewriting"><a href="/wiki/query-rewriting/">질의 재작성</a><span class="wiki-index-summary">질의 재작성은 사용자의 원래 질문을 검색 시스템이 처리하기 쉬운 명확한 검색어 또는 독립 질의로 변환하는 과정이다.</span></li>
+<li data-article-id="query-expansion"><a href="/wiki/query-expansion/">질의 확장</a><span class="wiki-index-summary">질의 확장은 원래 질의에 동의어, 관련 용어, 생성된 설명을 추가해 검색 가능한 표현 범위를 넓히는 기법이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-ch">
+<h2 id="index-ko-ch">ㅊ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="chunk-overlap"><a href="/wiki/chunk-overlap/">청크 중첩</a><span class="wiki-index-summary">청크 중첩은 인접한 문서 조각이 경계 주변의 일부 내용을 공유하도록 반복 포함하는 범위다.</span></li>
+<li data-article-id="chunk-size"><a href="/wiki/chunk-size/">청크 크기</a><span class="wiki-index-summary">청크 크기는 검색·임베딩·생성에 사용하기 위해 문서를 나눈 각 조각의 토큰, 문자 또는 문장 길이다.</span></li>
+<li data-article-id="chunking"><a href="/wiki/chunking/">청킹</a><span class="wiki-index-summary">긴 문서를 검색과 문맥 구성에 적합한 작은 단위로 나누는 과정이다.</span></li>
+<li data-article-id="nearest-neighbor-search"><a href="/wiki/nearest-neighbor-search/">최근접 이웃 검색</a><span class="wiki-index-summary">벡터 공간에서 질의 벡터와 가장 가까운 항목을 찾는 문제다.</span></li>
+<li data-article-id="maximal-marginal-relevance"><a href="/wiki/maximal-marginal-relevance/">최대 한계 관련성</a><span class="wiki-index-summary">최대 한계 관련성은 질의와의 관련성을 높이면서 이미 선택한 결과와의 중복을 줄이도록 문서를 순차 선택하는 기준이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-k">
+<h2 id="index-ko-k">ㅋ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="cross-encoder-reranker"><a href="/wiki/cross-encoder-reranker/">크로스 인코더 리랭커</a><span class="wiki-index-summary">크로스 인코더 리랭커는 질의와 후보 문서를 하나의 입력으로 함께 인코딩해 관련성 점수를 계산하는 재순위 모델이다.</span></li>
+<li data-article-id="keyword-search"><a href="/wiki/keyword-search/">키워드 검색</a><span class="wiki-index-summary">키워드 검색은 질의에 나타난 단어나 구와 문서의 어휘 일치를 이용해 관련 문서를 찾는 방식이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-t">
+<h2 id="index-ko-t">ㅌ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="triple-store"><a href="/wiki/triple-store/">트리플 저장소</a><span class="wiki-index-summary">트리플 스토어는 지식을 주어-술어-목적어 형태의 RDF 트리플로 저장하고 그래프 패턴으로 조회하도록 최적화된 데이터베이스다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-p">
+<h2 id="index-ko-p">ㅍ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="faceted-search"><a href="/wiki/faceted-search/">패싯 검색</a><span class="wiki-index-summary">패싯 검색은 검색 결과를 범주, 날짜, 유형 같은 구조화된 속성별 개수와 필터로 탐색하게 하는 인터페이스 및 검색 방식이다.</span></li>
+<li data-article-id="pairwise-ranking"><a href="/wiki/pairwise-ranking/">페어와이즈 순위화</a><span class="wiki-index-summary">페어와이즈 순위화는 같은 질의의 두 후보 중 어느 쪽이 더 관련 있는지를 학습하는 방법이다.</span></li>
+<li data-article-id="mean-reciprocal-rank"><a href="/wiki/mean-reciprocal-rank/">평균 역순위</a><span class="wiki-index-summary">평균 역순위는 각 질의에서 첫 번째 관련 결과의 순위 역수를 구해 질의 전체에 평균한 검색 지표다.</span></li>
+<li data-article-id="flat-vector-index"><a href="/wiki/flat-vector-index/">평면 벡터 인덱스</a><span class="wiki-index-summary">평면 벡터 인덱스는 모든 저장 벡터를 질의와 직접 비교해 정확한 최근접 이웃을 찾는 기본 검색 구조다.</span></li>
+<li data-article-id="pointwise-ranking"><a href="/wiki/pointwise-ranking/">포인트와이즈 순위화</a><span class="wiki-index-summary">포인트와이즈 순위화는 각 질의-문서 쌍의 관련성 점수나 등급을 서로 독립적인 예측 문제로 학습하는 방법이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-h">
+<h2 id="index-ko-h">ㅎ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="hybrid-search"><a href="/wiki/hybrid-search/">하이브리드 검색</a><span class="wiki-index-summary">하이브리드 검색은 키워드 기반 희소 점수와 임베딩 기반 밀집 점수를 결합해 후보를 찾는 방식이다.</span></li>
+<li data-article-id="hybrid-rag"><a href="/wiki/hybrid-rag/">하이브리드 RAG</a><span class="wiki-index-summary">하이브리드 RAG는 생성 모델에 문맥을 공급할 때 키워드·밀집 벡터·지식 그래프 등 둘 이상의 검색 방식을 결합하는 검색 증강 생성 구조다.</span></li>
+<li data-article-id="sparse-neural-retrieval"><a href="/wiki/sparse-neural-retrieval/">희소 신경 검색</a><span class="wiki-index-summary">희소 신경 검색은 신경망이 어휘 차원의 희소 가중치를 생성해 역색인에서 의미 확장과 정확한 용어 일치를 함께 사용하는 방식이다.</span></li>
+<li data-article-id="sparse-embedding"><a href="/wiki/sparse-embedding/">희소 임베딩</a><span class="wiki-index-summary">대부분의 차원이 0이고 일부 차원만 값이 있는 고차원 벡터 표현이며 차원이 단어나 학습된 어휘 특징과 연결되는 경우가 많다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-b">
+<h2 id="index-en-b">B</h2>
+<ul class="wiki-index-list">
+<li data-article-id="bm25"><a href="/wiki/bm25/">BM25</a><span class="wiki-index-summary">BM25는 질의어의 문서 내 빈도·전체 문서 희소성·문서 길이 보정을 결합한 확률적 어휘 검색 점수 함수다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-d">
+<h2 id="index-en-d">D</h2>
+<ul class="wiki-index-list">
+<li data-article-id="diskann"><a href="/wiki/diskann/">DiskANN</a><span class="wiki-index-summary">DiskANN은 대규모 벡터를 SSD에 두고 그래프 탐색과 메모리 캐시를 결합해 낮은 지연의 근사 검색을 수행하는 방법이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-f">
+<h2 id="index-en-f">F</h2>
+<ul class="wiki-index-list">
+<li data-article-id="faiss"><a href="/wiki/faiss/">FAISS</a><span class="wiki-index-summary">FAISS는 고차원 벡터의 유사도 검색과 군집화를 위한 다양한 CPU·GPU 인덱스를 제공하는 라이브러리다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-g">
+<h2 id="index-en-g">G</h2>
+<ul class="wiki-index-list">
+<li data-article-id="graph-rag"><a href="/wiki/graph-rag/">GraphRAG</a><span class="wiki-index-summary">그래프 RAG는 지식 그래프의 개체·관계·커뮤니티를 탐색해 생성 모델에 구조화된 근거를 제공하는 검색 증강 방식이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-p">
+<h2 id="index-en-p">P</h2>
+<ul class="wiki-index-list">
+<li data-article-id="precision-at-k"><a href="/wiki/precision-at-k/">Precision@K</a><span class="wiki-index-summary">Precision@K는 검색 결과 상위 K개 중 관련 문서가 차지하는 비율이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-r">
+<h2 id="index-en-r">R</h2>
+<ul class="wiki-index-list">
+<li data-article-id="context-compression-for-rag"><a href="/wiki/context-compression-for-rag/">RAG 문맥 압축</a><span class="wiki-index-summary">RAG 문맥 압축은 검색된 자료에서 질의에 필요한 정보만 남겨 생성 모델에 전달할 토큰 수와 잡음을 줄이는 기법이다.</span></li>
+<li data-article-id="recall-at-k"><a href="/wiki/recall-at-k/">Recall@K</a><span class="wiki-index-summary">Recall@K는 전체 관련 문서 중 검색 결과 상위 K개 안에 포함된 비율이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-s">
+<h2 id="index-en-s">S</h2>
+<ul class="wiki-index-list">
+<li data-article-id="scann"><a href="/wiki/scann/">ScaNN</a><span class="wiki-index-summary">ScaNN은 벡터 분할, 양자화와 재정렬을 결합해 최대 내적 또는 최근접 이웃 검색을 가속하는 시스템이다.</span></li>
+<li data-article-id="self-rag"><a href="/wiki/self-rag/">Self-RAG</a><span class="wiki-index-summary">Self-RAG는 언어 모델이 필요할 때 검색하고 검색 결과의 관련성 및 자신의 답변 근거성을 스스로 평가하도록 학습하는 방식이다.</span></li>
+<li data-article-id="sparql"><a href="/wiki/sparql/">SPARQL</a><span class="wiki-index-summary">SPARQL은 RDF 그래프에서 트리플 패턴을 매칭하고 결과를 선택·구성·갱신하는 표준 질의 언어와 프로토콜이다.</span></li>
+</ul>
+</section>
+</div>

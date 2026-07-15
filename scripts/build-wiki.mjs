@@ -40,6 +40,32 @@ for (const dir of ['wiki', 'category', 'course', 'special']) {
 }
 
 const q = (value) => JSON.stringify(value);
+const html = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+const KO_INITIALS = [
+  ['ㄱ', 'ko-g'], ['ㄲ', 'ko-gg'], ['ㄴ', 'ko-n'], ['ㄷ', 'ko-d'], ['ㄸ', 'ko-dd'], ['ㄹ', 'ko-r'], ['ㅁ', 'ko-m'],
+  ['ㅂ', 'ko-b'], ['ㅃ', 'ko-bb'], ['ㅅ', 'ko-s'], ['ㅆ', 'ko-ss'], ['ㅇ', 'ko-ng'], ['ㅈ', 'ko-j'], ['ㅉ', 'ko-jj'],
+  ['ㅊ', 'ko-ch'], ['ㅋ', 'ko-k'], ['ㅌ', 'ko-t'], ['ㅍ', 'ko-p'], ['ㅎ', 'ko-h'],
+];
+const EN_INITIALS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((label) => [label, `en-${label.toLowerCase()}`]);
+const INDEX_GROUPS = [...KO_INITIALS, ...EN_INITIALS, ['기타', 'other']].map(([label, id], order) => ({ label, id, order }));
+const indexGroup = (title) => {
+  const first = title.trim().charAt(0);
+  const code = first.codePointAt(0);
+  if (code >= 0xac00 && code <= 0xd7a3) return INDEX_GROUPS[Math.floor((code - 0xac00) / 588)];
+  if (/^[A-Za-z]$/.test(first)) return INDEX_GROUPS.find((group) => group.id === `en-${first.toLowerCase()}`);
+  return INDEX_GROUPS.at(-1);
+};
+const groupedArticleIndex = (items) => {
+  const grouped = new Map(INDEX_GROUPS.map((group) => [group.id, []]));
+  for (const article of items) grouped.get(indexGroup(article.title).id).push(article);
+  return INDEX_GROUPS.map((group) => ({ ...group, articles: grouped.get(group.id).sort((left, right) => left.title.localeCompare(right.title, group.id.startsWith('en-') ? 'en' : 'ko', { numeric: true, sensitivity: 'base' })) })).filter((group) => group.articles.length);
+};
+const renderArticleIndex = (items, renderItem) => {
+  const groups = groupedArticleIndex(items);
+  const navigation = `<nav class="wiki-letter-index" aria-label="문서 초성 색인">${groups.map((group) => `<a href="#index-${group.id}">${group.label}</a>`).join('')}</nav>`;
+  const sections = groups.map((group) => `<section class="wiki-index-group" data-index-group="${group.id}">\n<h2 id="index-${group.id}">${group.label}</h2>\n<ul class="wiki-index-list">\n${group.articles.map(renderItem).join('\n')}\n</ul>\n</section>`).join('\n');
+  return `${navigation}\n\n<div class="wiki-index-groups">\n${sections}\n</div>`;
+};
 const list = (refs) => refs.length ? refs.map((ref) => `- [${byId.get(ref)?.title ?? ref}](/wiki/${ref}/)`).join('\n') : '_해당 문서가 없습니다._';
 const backlinkTitle = (ref) => byId.get(ref)?.title ?? ref;
 const backlinkTitleGroup = (ref) => /^[가-힣]/u.test(backlinkTitle(ref).trim()) ? 0 : /^[A-Za-z]/.test(backlinkTitle(ref).trim()) ? 1 : 2;
@@ -81,7 +107,7 @@ for (const article of articles) {
 
 for (const [category, meta] of Object.entries(CATEGORY_META)) {
   const members = articles.filter((article) => article.categories.includes(category));
-  const body = `---\ntitle: ${q(meta[0])}\ndescription: ${q(meta[1])}\n---\n\n${meta[1]} 분야의 검토 완료 백과 문서입니다.\n\n${members.map((article) => `- [${article.title}](/wiki/${article.id}/) — ${article.summary}`).join('\n')}\n`;
+  const body = `---\ntitle: ${q(meta[0])}\ndescription: ${q(meta[1])}\n---\n\n${meta[1]} 분야의 검토 완료 백과 문서입니다.\n\n${renderArticleIndex(members, (article) => `<li data-article-id="${article.id}"><a href="/wiki/${article.id}/">${html(article.title)}</a><span class="wiki-index-summary">${html(article.summary)}</span></li>`)}\n`;
   await writeFile(path.join(docs, 'category', `${category}.md`), body, 'utf8');
 }
 
@@ -91,8 +117,10 @@ for (const course of courses) {
 }
 
 const glossary = [...articles].sort((a, b) => a.title.localeCompare(b.title, 'ko'));
-await writeFile(path.join(docs, 'glossary.md'), `---\ntitle: 용어 색인\ndescription: AI·LLM 백과 문서 가나다 색인\n---\n\n${glossary.map((article) => `- [${article.title}](/wiki/${article.id}/) <span class="wiki-en">${article.englishTitle}</span>`).join('\n')}\n`, 'utf8');
-await writeFile(path.join(docs, 'special', 'all-pages.md'), `---\ntitle: 전체 문서\ndescription: 검토 완료 AI·LLM 백과 문서 전체 목록\n---\n\n현재 검토 완료된 백과 문서는 **${articles.length}개**입니다.\n\n${glossary.map((article) => `- [${article.title}](/wiki/${article.id}/) — ${article.summary}`).join('\n')}\n`, 'utf8');
+const glossaryIndex = renderArticleIndex(glossary, (article) => `<li data-article-id="${article.id}"><a href="/wiki/${article.id}/">${html(article.title)}</a><span class="wiki-en">${html(article.englishTitle)}</span></li>`);
+const allPagesIndex = renderArticleIndex(glossary, (article) => `<li data-article-id="${article.id}"><a href="/wiki/${article.id}/">${html(article.title)}</a><span class="wiki-index-summary">${html(article.summary)}</span></li>`);
+await writeFile(path.join(docs, 'glossary.md'), `---\ntitle: 용어 색인\ndescription: AI·LLM 백과 문서 가나다 색인\n---\n\n${glossaryIndex}\n`, 'utf8');
+await writeFile(path.join(docs, 'special', 'all-pages.md'), `---\ntitle: 전체 문서\ndescription: 검토 완료 AI·LLM 백과 문서 전체 목록\n---\n\n현재 검토 완료된 백과 문서는 **${articles.length}개**입니다.\n\n${allPagesIndex}\n`, 'utf8');
 await writeFile(path.join(docs, 'special', 'recent.md'), `---\ntitle: 최근 검토 문서\ndescription: 최근 검토된 AI·LLM 백과 문서\n---\n\n${[...articles].sort((a, b) => b.reviewedAt.localeCompare(a.reviewedAt) || a.title.localeCompare(b.title, 'ko')).slice(0, 50).map((article) => `- ${article.reviewedAt} — [${article.title}](/wiki/${article.id}/)`).join('\n')}\n`, 'utf8');
 
 const index = {
