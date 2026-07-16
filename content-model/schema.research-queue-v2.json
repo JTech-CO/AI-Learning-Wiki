@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jtech-co.github.io/AI-Learning-Wiki/schema.research-queue-v2.json",
+  "title": "AI Learning Wiki research queue v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "version", "generatedAt", "publicationPolicy", "totals", "distribution", "candidates"],
+  "properties": {
+    "schemaVersion": { "const": "2.0" },
+    "version": { "const": "W42-2026-07-16" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "publicationPolicy": {
+      "type": "object", "additionalProperties": false, "required": ["directPublicationAllowed", "requiredStages"],
+      "properties": {
+        "directPublicationAllowed": { "const": false },
+        "requiredStages": { "const": ["research-queued", "source-verified", "claim-reviewed", "editorial-reviewed", "published"] }
+      }
+    },
+    "totals": {
+      "type": "object", "additionalProperties": false, "required": ["candidates", "courseBlocking", "categories"],
+      "properties": { "candidates": { "const": 200 }, "courseBlocking": { "const": 40 }, "categories": { "const": 8 } }
+    },
+    "distribution": {
+      "type": "object", "additionalProperties": false,
+      "required": ["llm", "evaluation", "api", "agents", "inference", "safety", "retrieval", "training"],
+      "properties": {
+        "llm": { "const": 40 }, "evaluation": { "const": 30 }, "api": { "const": 25 }, "agents": { "const": 25 },
+        "inference": { "const": 25 }, "safety": { "const": 25 }, "retrieval": { "const": 15 }, "training": { "const": 15 }
+      }
+    },
+    "candidates": { "type": "array", "minItems": 200, "maxItems": 200, "items": { "$ref": "#/$defs/candidate" } }
+  },
+  "$defs": {
+    "title": {
+      "type": "object", "additionalProperties": false, "required": ["ko", "en"],
+      "properties": { "ko": { "type": "string", "minLength": 2 }, "en": { "type": "string", "minLength": 2 } }
+    },
+    "candidate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "order", "title", "category", "priority", "courseIds", "relatedExistingArticleIds", "scope", "exclusion", "researchQuestions", "sourcePackId", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "order": { "type": "integer", "minimum": 1, "maximum": 200 },
+        "title": { "$ref": "#/$defs/title" },
+        "category": { "enum": ["llm", "evaluation", "api", "agents", "inference", "safety", "retrieval", "training"] },
+        "priority": { "enum": ["course-blocking", "expansion"] },
+        "courseIds": { "type": "array", "maxItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "relatedExistingArticleIds": { "type": "array", "minItems": 2, "uniqueItems": true, "items": { "type": "string" } },
+        "scope": { "type": "string", "minLength": 30 },
+        "exclusion": { "type": "string", "minLength": 30 },
+        "researchQuestions": { "type": "array", "minItems": 3, "uniqueItems": true, "items": { "type": "string", "minLength": 20 } },
+        "sourcePackId": { "type": "string", "pattern": "^w42-" },
+        "status": { "const": "research-queued" }
+      }
+    }
+  }
+}
