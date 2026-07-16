@@ -213,7 +213,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [LLM 평가와 관측성](/course/llm-evaluation/)
 
 ## 참고와 다음 학습
 
@@ -228,3 +228,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — 정확도](/wiki/accuracy/)
+- **LLM 평가와 관측성:** [다음 문서 — 벤치마크](/wiki/benchmark/)

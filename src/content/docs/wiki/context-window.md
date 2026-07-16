@@ -240,7 +240,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[LLM 내부 구조](/course/llm-internals/)
+[프롬프트 시스템 설계](/course/prompt-systems/) · [LLM 내부 구조](/course/llm-internals/)
 
 ## 참고와 다음 학습
 
@@ -256,4 +256,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **프롬프트 시스템 설계:** [다음 문서 — 구조화 출력](/wiki/structured-output/)
 - **LLM 내부 구조:** [다음 문서 — 로짓](/wiki/logit/)

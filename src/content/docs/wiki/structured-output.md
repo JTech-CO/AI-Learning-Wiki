@@ -148,7 +148,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[AI API 개발](/course/api-development/)
+[프롬프트 시스템 설계](/course/prompt-systems/) · [AI API 개발](/course/api-development/)
 
 ## 참고와 다음 학습
 
@@ -164,4 +164,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **프롬프트 시스템 설계:** [다음 문서 — JSON 스키마](/wiki/json-schema/)
 - **AI API 개발:** [다음 문서 — 도구 호출](/wiki/tool-calling/)

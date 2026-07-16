@@ -143,7 +143,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[AI API 개발](/course/api-development/)
+[AI API 개발](/course/api-development/) · [LLMOps와 프로덕션 서빙](/course/llmops-production/)
 
 ## 참고와 다음 학습
 
@@ -162,3 +162,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **AI API 개발:** [다음 문서 — 관측성](/wiki/observability/)
+- **LLMOps와 프로덕션 서빙:** [다음 문서 — 지연 시간](/wiki/latency/)

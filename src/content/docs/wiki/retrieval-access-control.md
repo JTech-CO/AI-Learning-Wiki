@@ -121,7 +121,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없습니다._
+[고급 RAG와 지식 시스템](/course/advanced-rag/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +136,4 @@ _포함된 코스가 없습니다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없습니다._
+- **고급 RAG와 지식 시스템:** [다음 문서 — 인용 근거 계약](/wiki/citation-grounding-contract/)

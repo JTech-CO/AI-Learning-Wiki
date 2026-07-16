@@ -250,7 +250,7 @@ _해당 문서가 없습니다._
 
 ### 이 문서를 포함하는 코스
 
-[멀티모달 AI](/course/multimodal-ai/)
+[멀티모달 AI](/course/multimodal-ai/) · [멀티모달 AI 시스템](/course/multimodal-systems/)
 
 ## 참고와 다음 학습
 
@@ -265,3 +265,4 @@ _해당 문서가 없습니다._
 ### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 임베딩](/wiki/embedding/)
+- **멀티모달 AI 시스템:** [다음 문서 — 멀티모달 언어 모델](/wiki/multimodal-language-model/)

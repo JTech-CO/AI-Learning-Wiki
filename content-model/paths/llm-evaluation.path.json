@@ -1,0 +1,128 @@
+{
+  "id": "llm-evaluation",
+  "title": "LLM 평가와 관측성",
+  "audience": "모델과 LLM 기반 시스템의 품질 기준과 배포 게이트를 설계하는 평가 담당자",
+  "description": "모델과 LLM 기반 시스템의 품질 기준과 배포 게이트를 설계하는 평가 담당자을 대상으로 핵심 개념부터 평가·운영·통제까지 백과 문서를 순서대로 연결한 전문 학습 코스입니다.",
+  "steps": [
+    {
+      "ref": "evaluation",
+      "required": true,
+      "reason": "모델 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "metric",
+      "required": true,
+      "reason": "평가 지표 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "benchmark",
+      "required": true,
+      "reason": "벤치마크 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "benchmark-dataset",
+      "required": true,
+      "reason": "벤치마크 데이터셋 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "benchmark-suite",
+      "required": true,
+      "reason": "벤치마크 모음 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "benchmark-validity",
+      "required": true,
+      "reason": "벤치마크 타당도 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "benchmark-contamination",
+      "required": true,
+      "reason": "벤치마크 오염 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "evaluation-rubric",
+      "required": true,
+      "reason": "평가 루브릭 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "evaluation-sampling",
+      "required": true,
+      "reason": "평가 표본추출 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "evaluation-uncertainty",
+      "required": true,
+      "reason": "평가 불확실성 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "reference-based-evaluation",
+      "required": true,
+      "reason": "참조 기반 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "reference-free-evaluation",
+      "required": true,
+      "reason": "참조 없는 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "human-evaluation",
+      "required": true,
+      "reason": "인간 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "expert-evaluation",
+      "required": true,
+      "reason": "전문가 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "judge-meta-evaluation",
+      "required": true,
+      "reason": "심사 모델 메타평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "generation-evaluation",
+      "required": true,
+      "reason": "생성 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "production-evaluation",
+      "required": true,
+      "reason": "프로덕션 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "regression-evaluation",
+      "required": true,
+      "reason": "회귀 테스트형 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "observability",
+      "required": true,
+      "reason": "관측성 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "llm-evaluation-contract",
+      "required": true,
+      "reason": "LLM 평가 계약 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "judge-calibration-curve",
+      "required": true,
+      "reason": "판정 모델 교정 곡선 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "evaluation-budget-allocation",
+      "required": true,
+      "reason": "평가 예산 배분 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "slice-based-release-gate",
+      "required": true,
+      "reason": "슬라이스 기반 릴리스 게이트 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "online-evaluation-drift",
+      "required": true,
+      "reason": "온라인 평가 드리프트 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    }
+  ]
+}

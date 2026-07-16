@@ -283,7 +283,7 @@ _해당 문서가 없습니다._
 
 ### 이 문서를 포함하는 코스
 
-[멀티모달 AI](/course/multimodal-ai/) · [신뢰할 수 있는 AI](/course/responsible-ai/)
+[멀티모달 AI](/course/multimodal-ai/) · [신뢰할 수 있는 AI](/course/responsible-ai/) · [LLM 평가와 관측성](/course/llm-evaluation/)
 
 ## 참고와 다음 학습
 
@@ -299,3 +299,4 @@ _해당 문서가 없습니다._
 
 - **멀티모달 AI:** [다음 문서 — 모델 라이선스](/wiki/model-license/)
 - **신뢰할 수 있는 AI:** [다음 문서 — 벤치마크](/wiki/benchmark/)
+- **LLM 평가와 관측성:** [다음 문서 — 평가 지표](/wiki/metric/)

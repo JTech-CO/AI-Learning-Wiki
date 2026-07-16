@@ -211,7 +211,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[AI 에이전트 시스템](/course/agent-systems/)
+[프로덕션 AI 에이전트](/course/production-agents/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 ## 참고와 다음 학습
 
@@ -225,4 +225,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **프로덕션 AI 에이전트:** [다음 문서 — 에이전트 목표](/wiki/agent-goal/)
 - **AI 에이전트 시스템:** [다음 문서 — 계획](/wiki/planning/)

@@ -214,7 +214,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 에이전트 시스템](/course/agent-systems/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 보안과 레드팀](/course/ai-security-redteam/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 ## 참고와 다음 학습
 
@@ -229,4 +229,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — 탈옥 공격](/wiki/jailbreak/)
+- **AI 보안과 레드팀:** [다음 문서 — 간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - **AI 에이전트 시스템:** [다음 문서 — 가드레일](/wiki/guardrail/)

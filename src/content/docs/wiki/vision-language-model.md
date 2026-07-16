@@ -212,7 +212,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[멀티모달 AI](/course/multimodal-ai/)
+[멀티모달 AI](/course/multimodal-ai/) · [멀티모달 AI 시스템](/course/multimodal-systems/)
 
 ## 참고와 다음 학습
 
@@ -227,3 +227,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 광학 문자 인식](/wiki/ocr/)
+- **멀티모달 AI 시스템:** [다음 문서 — 이미지 임베딩](/wiki/image-embedding/)

@@ -60,7 +60,7 @@ for (const article of articles) {
   }
   if (expansion.title.ko !== article.title || expansion.title.en !== article.englishTitle || !article.categories.includes(expansion.category)) errors.push(`${article.id}: title/category differs from the W42 queue`);
 }
-if (paths.length !== 8) errors.push(`expected 8 wiki courses, found ${paths.length}`);
+if (paths.length !== 16) errors.push(`expected 16 wiki courses, found ${paths.length}`);
 
 if (errors.length) {
   console.error(`wiki validation: ${errors.length} error(s)\n${errors.slice(0, 40).join('\n')}`);

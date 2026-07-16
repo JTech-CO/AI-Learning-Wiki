@@ -117,7 +117,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 보안과 레드팀](/course/ai-security-redteam/)
 
 ## 참고와 다음 학습
 
@@ -132,3 +132,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — 가드레일](/wiki/guardrail/)
+- **AI 보안과 레드팀:** [다음 문서 — 에이전트 보안](/wiki/agent-security/)

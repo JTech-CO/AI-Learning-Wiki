@@ -126,7 +126,7 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 
 ### 이 문서를 포함하는 코스
 
-[임베딩과 RAG](/course/rag-search/)
+[고급 RAG와 지식 시스템](/course/advanced-rag/) · [임베딩과 RAG](/course/rag-search/)
 
 ## 참고와 다음 학습
 
@@ -140,4 +140,5 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 
 ### 코스에서 계속 읽기
 
+- **고급 RAG와 지식 시스템:** [다음 문서 — 문서 임베딩](/wiki/document-embedding/)
 - **임베딩과 RAG:** [다음 문서 — 의미 검색](/wiki/semantic-search/)

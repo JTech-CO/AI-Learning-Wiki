@@ -1,0 +1,128 @@
+{
+  "id": "ai-security-redteam",
+  "title": "AI 보안과 레드팀",
+  "audience": "모델·데이터·도구·운영 계층의 위협을 검증하는 보안과 안전 담당자",
+  "description": "모델·데이터·도구·운영 계층의 위협을 검증하는 보안과 안전 담당자을 대상으로 핵심 개념부터 평가·운영·통제까지 백과 문서를 순서대로 연결한 전문 학습 코스입니다.",
+  "steps": [
+    {
+      "ref": "ai-safety",
+      "required": true,
+      "reason": "AI 안전 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-threat-modeling",
+      "required": true,
+      "reason": "AI 위협 모델링 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-risk-assessment",
+      "required": true,
+      "reason": "AI 위험 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-risk-register",
+      "required": true,
+      "reason": "AI 위험 대장 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-red-teaming",
+      "required": true,
+      "reason": "AI 레드팀 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "adversarial-testing",
+      "required": true,
+      "reason": "적대적 테스트 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "adversarial-example",
+      "required": true,
+      "reason": "적대적 예시 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "prompt-injection",
+      "required": true,
+      "reason": "프롬프트 인젝션 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "indirect-prompt-injection",
+      "required": true,
+      "reason": "간접 프롬프트 인젝션 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "jailbreak",
+      "required": true,
+      "reason": "탈옥 공격 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "agent-security",
+      "required": true,
+      "reason": "에이전트 보안 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "guardrail",
+      "required": true,
+      "reason": "가드레일 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "agent-guardrail",
+      "required": true,
+      "reason": "에이전트 가드레일 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-security-monitoring",
+      "required": true,
+      "reason": "AI 보안 모니터링 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "privacy-attack",
+      "required": true,
+      "reason": "개인정보 공격 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "privacy-audit",
+      "required": true,
+      "reason": "개인정보 감사 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-misuse",
+      "required": true,
+      "reason": "AI 오용 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-incident-response",
+      "required": true,
+      "reason": "AI 사고 대응 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-incident-reporting",
+      "required": true,
+      "reason": "AI 사고 보고 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-attack-surface-map",
+      "required": true,
+      "reason": "AI 공격 표면 지도 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "model-abuse-case-library",
+      "required": true,
+      "reason": "모델 악용 사례 라이브러리 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "guardrail-coverage-matrix",
+      "required": true,
+      "reason": "가드레일 커버리지 행렬 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "ai-red-team-retest",
+      "required": true,
+      "reason": "AI 레드팀 재시험 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "model-security-disclosure",
+      "required": true,
+      "reason": "모델 보안 취약점 공개 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    }
+  ]
+}

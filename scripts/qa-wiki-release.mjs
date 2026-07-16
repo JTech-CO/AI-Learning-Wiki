@@ -7,6 +7,7 @@ const migration = JSON.parse(await readFile('content-model/migration/w40-library
 const wiki = JSON.parse(await readFile('public/data/wiki-index.json', 'utf8'));
 const ledger = JSON.parse(await readFile('content-model/taxonomy/topic-ledger.json', 'utf8'));
 const expectedArticleCount = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json')).length;
+const expectedCourseCount = (await readdir('content-model/paths')).filter((file) => file.endsWith('.path.json')).length;
 const failures = [];
 const expect = (condition, message) => { if (!condition) failures.push(message); };
 const fileExists = async (file) => { try { return (await stat(file)).isFile(); } catch { return false; } };
@@ -20,7 +21,7 @@ expect(snippets.snippets.length === 25, 'snippet count: ' + snippets.snippets.le
 expect(migration.counts.prompts === 1142 && migration.counts.artifacts === 25, 'canonical migration counts changed');
 expect(prompts.counts.sourceModules === 0, 'legacy module source remains active');
 expect(wiki.articles.length === expectedArticleCount, 'wiki articles: expected ' + expectedArticleCount + ', found ' + wiki.articles.length);
-expect(wiki.courses.length === 8, 'wiki courses: ' + wiki.courses.length);
+expect(wiki.courses.length === expectedCourseCount, 'wiki courses: expected ' + expectedCourseCount + ', found ' + wiki.courses.length);
 expect(prompts.prompts.every((item) => item.template && item.notes && item.kind && Array.isArray(item.examples)), 'prompt schema is incomplete');
 expect(prompts.prompts.every((item) => !('sourceUrl' in item) && !('sourceCourse' in item) && !('moduleId' in item) && !('moduleTitle' in item)), 'legacy lesson provenance remains public');
 expect(prompts.prompts.every((item) => !(item.tags ?? []).some((tag) => /eduverse/i.test(tag))), 'source-specific prompt tag remains');
@@ -85,4 +86,4 @@ if (failures.length) {
   console.error('release QA: ' + failures.length + ' failure(s)\n- ' + failures.slice(0, 80).join('\n- '));
   process.exit(1);
 }
-console.log(`release QA: ${expectedArticleCount} articles, 8 sequential courses, ${prompts.prompts.length} prompts, ${snippets.snippets.length} snippets, no legacy lesson routes OK`);
+console.log(`release QA: ${expectedArticleCount} articles, ${expectedCourseCount} sequential courses, ${prompts.prompts.length} prompts, ${snippets.snippets.length} snippets, no legacy lesson routes OK`);

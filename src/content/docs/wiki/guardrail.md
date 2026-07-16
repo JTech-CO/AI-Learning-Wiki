@@ -265,7 +265,7 @@ AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞�
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 에이전트 시스템](/course/agent-systems/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 보안과 레드팀](/course/ai-security-redteam/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 ## 참고와 다음 학습
 
@@ -280,4 +280,5 @@ AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞�
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — 콘텐츠 조정](/wiki/content-moderation/)
+- **AI 보안과 레드팀:** [다음 문서 — 에이전트 가드레일](/wiki/agent-guardrail/)
 - **AI 에이전트 시스템:** [다음 문서 — 관측성](/wiki/observability/)

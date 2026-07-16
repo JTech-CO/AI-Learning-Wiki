@@ -121,7 +121,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없습니다._
+[프롬프트 시스템 설계](/course/prompt-systems/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +136,4 @@ _포함된 코스가 없습니다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없습니다._
+- **프롬프트 시스템 설계:** [다음 문서 — 프롬프트 릴리스 거버넌스](/wiki/prompt-release-governance/)

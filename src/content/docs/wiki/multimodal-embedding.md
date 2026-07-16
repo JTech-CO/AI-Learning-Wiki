@@ -143,7 +143,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[멀티모달 AI](/course/multimodal-ai/)
+[멀티모달 AI](/course/multimodal-ai/) · [멀티모달 AI 시스템](/course/multimodal-systems/)
 
 ## 참고와 다음 학습
 
@@ -160,3 +160,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 비전-언어 모델](/wiki/vision-language-model/)
+- **멀티모달 AI 시스템:** [다음 문서 — 교차모달 정렬](/wiki/cross-modal-alignment/)

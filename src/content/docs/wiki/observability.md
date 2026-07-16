@@ -146,7 +146,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 에이전트 시스템](/course/agent-systems/) · [AI API 개발](/course/api-development/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 에이전트 시스템](/course/agent-systems/) · [AI API 개발](/course/api-development/) · [LLM 평가와 관측성](/course/llm-evaluation/)
 
 ## 참고와 다음 학습
 
@@ -167,3 +167,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - **신뢰할 수 있는 AI:** [다음 문서 — 환각](/wiki/hallucination/)
 - **AI 에이전트 시스템:** [코스 목록으로 돌아가기](/course/agent-systems/)
 - **AI API 개발:** [다음 문서 — 추적](/wiki/tracing/)
+- **LLM 평가와 관측성:** [다음 문서 — LLM 평가 계약](/wiki/llm-evaluation-contract/)

@@ -151,7 +151,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[모델 학습과 튜닝](/course/model-training/)
+[모델 학습과 튜닝](/course/model-training/) · [사후학습과 정렬 심화](/course/post-training-alignment/)
 
 ## 참고와 다음 학습
 
@@ -168,3 +168,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **모델 학습과 튜닝:** [다음 문서 — LoRA](/wiki/lora/)
+- **사후학습과 정렬 심화:** [다음 문서 — 오프라인 선호 학습](/wiki/offline-preference-learning/)

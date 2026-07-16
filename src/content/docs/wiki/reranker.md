@@ -149,7 +149,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[임베딩과 RAG](/course/rag-search/)
+[고급 RAG와 지식 시스템](/course/advanced-rag/) · [임베딩과 RAG](/course/rag-search/)
 
 ## 참고와 다음 학습
 
@@ -165,4 +165,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **고급 RAG와 지식 시스템:** [다음 문서 — 크로스 인코더 리랭커](/wiki/cross-encoder-reranker/)
 - **임베딩과 RAG:** [다음 문서 — 검색 증강 생성](/wiki/rag/)

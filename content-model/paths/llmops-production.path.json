@@ -1,0 +1,128 @@
+{
+  "id": "llmops-production",
+  "title": "LLMOps와 프로덕션 서빙",
+  "audience": "지연 시간·처리량·비용·안정성을 함께 책임지는 LLM 플랫폼 엔지니어",
+  "description": "지연 시간·처리량·비용·안정성을 함께 책임지는 LLM 플랫폼 엔지니어을 대상으로 핵심 개념부터 평가·운영·통제까지 백과 문서를 순서대로 연결한 전문 학습 코스입니다.",
+  "steps": [
+    {
+      "ref": "inference",
+      "required": true,
+      "reason": "추론 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "model-serving",
+      "required": true,
+      "reason": "모델 서빙 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "model-serving-platform",
+      "required": true,
+      "reason": "모델 서빙 플랫폼 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "inference-server",
+      "required": true,
+      "reason": "추론 서버 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "online-inference",
+      "required": true,
+      "reason": "온라인 추론 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "batch-inference",
+      "required": true,
+      "reason": "배치 추론 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "inference-endpoint",
+      "required": true,
+      "reason": "추론 엔드포인트 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "throughput",
+      "required": true,
+      "reason": "처리량 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "latency",
+      "required": true,
+      "reason": "지연 시간 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "inter-token-latency",
+      "required": true,
+      "reason": "토큰 간 지연 시간 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "tail-latency",
+      "required": true,
+      "reason": "꼬리 지연 시간 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "latency-throughput-tradeoff",
+      "required": true,
+      "reason": "지연 시간-처리량 절충 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "kv-cache",
+      "required": true,
+      "reason": "KV 캐시 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "paged-kv-cache",
+      "required": true,
+      "reason": "페이지드 KV 캐시 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "prompt-caching",
+      "required": true,
+      "reason": "프롬프트 캐싱 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "inference-load-balancing",
+      "required": true,
+      "reason": "추론 부하 분산 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "inference-autoscaling",
+      "required": true,
+      "reason": "추론 자동 확장 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "inference-capacity-planning",
+      "required": true,
+      "reason": "추론 용량 계획 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "inference-monitoring",
+      "required": true,
+      "reason": "추론 모니터링 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "llm-serving-slo",
+      "required": true,
+      "reason": "LLM 서빙 SLO 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "token-budget-admission-control",
+      "required": true,
+      "reason": "토큰 예산 수용 제어 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "continuous-batching-policy",
+      "required": true,
+      "reason": "연속 배칭 정책 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "model-fleet-routing",
+      "required": true,
+      "reason": "모델 플릿 라우팅 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    },
+    {
+      "ref": "llm-cost-attribution",
+      "required": true,
+      "reason": "LLM 비용 귀속 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다."
+    }
+  ]
+}

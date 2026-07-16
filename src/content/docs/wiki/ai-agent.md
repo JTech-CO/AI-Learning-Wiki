@@ -270,7 +270,7 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 
 ### 이 문서를 포함하는 코스
 
-[AI 에이전트 시스템](/course/agent-systems/)
+[프로덕션 AI 에이전트](/course/production-agents/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 ## 참고와 다음 학습
 
@@ -285,4 +285,5 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 
 ### 코스에서 계속 읽기
 
+- **프로덕션 AI 에이전트:** [다음 문서 — 에이전트 루프](/wiki/agent-loop/)
 - **AI 에이전트 시스템:** [다음 문서 — 에이전트 루프](/wiki/agent-loop/)
