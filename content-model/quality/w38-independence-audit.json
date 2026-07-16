@@ -1,0 +1,131 @@
+{
+  "version": "W38-2026-07-16",
+  "auditedAt": "2026-07-16",
+  "objective": "공개 위키 라이브러리의 레거시 수집 데이터 종속을 제거하고 자체 원본 확장 기준을 잠근다.",
+  "baseline": {
+    "reviewedArticles": 1400,
+    "wikiCourses": 8,
+    "wikiCourseSteps": 119,
+    "legacyCourseDefinitions": 8,
+    "legacyModules": 305,
+    "sourcePrompts": 1173,
+    "publicPrompts": 1142,
+    "publicArtifacts": 25
+  },
+  "legacyDependency": {
+    "active": true,
+    "activeConsumers": [
+      "scripts/prompt-library.mjs",
+      "scripts/build-pages.mjs",
+      "scripts/validate-content.mjs"
+    ],
+    "moduleSourceDomains": {
+      "eduverse-ai.app": 301,
+      "tech.yahoo.com": 2,
+      "www.iweaver.ai": 2
+    },
+    "moduleSourceMethods": {
+      "api-capture": 133,
+      "authenticated-crawl": 170,
+      "manual": 2
+    },
+    "canonicalPromptSourceExists": false,
+    "canonicalArtifactSourceExists": false,
+    "publicLessonRoutesRemoved": true
+  },
+  "promptQuality": {
+    "byCourse": {
+      "agent-systems": 254,
+      "ai-foundations": 44,
+      "api-development": 226,
+      "llm-internals": 21,
+      "model-training": 36,
+      "multimodal-ai": 82,
+      "rag-search": 55,
+      "responsible-ai": 424
+    },
+    "lengthCharacters": {
+      "minimum": 29,
+      "median": 132,
+      "p90": 217,
+      "p95": 242,
+      "maximum": 451,
+      "atLeast500": 0,
+      "atLeast1000": 0
+    },
+    "withExamples": 114,
+    "withUsageNotes": 116,
+    "controlledTags": 55
+  },
+  "artifactQuality": {
+    "byType": {
+      "code": 18,
+      "config": 1,
+      "payload": 2,
+      "query": 2,
+      "template": 2
+    },
+    "withRuntimeMetadata": 0,
+    "withValidationCommand": 0,
+    "withExpectedResult": 0,
+    "withSecurityNotes": 0
+  },
+  "target": {
+    "reviewedArticles": 1600,
+    "wikiCourses": 16,
+    "publicPrompts": 1500,
+    "publicArtifacts": 120,
+    "longFormPromptsAtLeast500": 300,
+    "markdownPrompts": 200,
+    "schemaPrompts": 120,
+    "promptsWithExamples": 500,
+    "promptsWithUsageNotes": 1500
+  },
+  "gaps": {
+    "reviewedArticles": 200,
+    "wikiCourses": 8,
+    "publicPrompts": 358,
+    "publicArtifacts": 95,
+    "longFormPromptsAtLeast500": 300,
+    "promptsWithExamples": 386,
+    "promptsWithUsageNotes": 1384
+  },
+  "blockers": [
+    {
+      "id": "legacy-modules-are-build-input",
+      "severity": "blocking",
+      "evidence": "3개 활성 스크립트가 305개 레거시 모듈을 직접 읽는다.",
+      "exitGate": "공개 프롬프트·자료 빌더가 자체 canonical library만 읽는다."
+    },
+    {
+      "id": "no-long-form-prompt",
+      "severity": "high",
+      "evidence": "500자 이상 프롬프트 0개, 최대 451자다.",
+      "exitGate": "500자 이상 300개와 스키마형 120개를 확보한다."
+    },
+    {
+      "id": "prompt-enrichment-coverage",
+      "severity": "high",
+      "evidence": "예시 114개, 주의사항 116개다.",
+      "exitGate": "모든 프롬프트에 주의사항을 두고 최소 500개에 검토된 예시를 둔다."
+    },
+    {
+      "id": "artifact-schema-too-thin",
+      "severity": "high",
+      "evidence": "25개 자료에 런타임·검증 명령·예상 결과·보안 주의사항 필드가 없다.",
+      "exitGate": "v2 artifact schema와 형식별 자동 검증을 통과한다."
+    },
+    {
+      "id": "course-library-coupling",
+      "severity": "medium",
+      "evidence": "공개 위키 코스 8개와 레거시 코스 정의 8개가 서로 다른 체계로 공존한다.",
+      "exitGate": "프롬프트는 courseIds 다대다 연결을 사용하고 위키 path만 공개 코스 원본이 된다."
+    }
+  ],
+  "migrationOrder": [
+    "v2 prompt·artifact schema를 먼저 고정한다.",
+    "현재 공개 ID와 URL을 보존하며 자체 원본으로 이관한다.",
+    "생성 결과 parity를 확인한 뒤 레거시 모듈 읽기를 차단한다.",
+    "전문 코스·신규 문서·장문 프롬프트·검증 자료를 자체 원본에 추가한다."
+  ]
+}
