@@ -24,7 +24,7 @@ for (const course of plan.courses) assert.equal(artifacts.filter((artifact) => a
 for (const artifact of artifacts) {
   assert.equal(validateArtifact(artifact), true, `${artifact.id}: ${ajvMessage(validateArtifact)}`);
   assert.equal(artifact.status, 'draft');
-  assert.ok(!canonicalIds.has(artifact.id), `${artifact.id}: canonical collision`);
+  if (canonicalIds.has(artifact.id)) { const canonical = readJson(`content-model/library/artifacts/${artifact.id}.artifact.json`); assert.deepEqual({ ...canonical, status: `draft` }, artifact, `${artifact.id}: promoted content drift`); }
   assert.ok(artifact.tags.every((tag) => controlledTags.has(tag)), `${artifact.id}: uncontrolled tag`);
   assert.ok(fs.existsSync(`content-model/articles/${artifact.relatedWikiSlugs[0]}.article.json`), `${artifact.id}: wiki link missing`);
   assert.ok(artifact.runInstructions.length >= 3 && artifact.securityNotes.length >= 2, `${artifact.id}: operational metadata incomplete`);

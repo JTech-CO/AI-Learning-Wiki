@@ -1,0 +1,50 @@
+{
+  "id": "lab-le-09-template",
+  "version": 1,
+  "title": "평가 표본추출 · LLM 평가와 관측성 운영 기록 템플릿",
+  "summary": "평가 표본추출 관련 설계와 운영 결정을 재현 가능하게 검토하기 위한 운영 기록 템플릿 자료다.",
+  "type": "template",
+  "language": "Markdown",
+  "runtime": "CommonMark 호환 문서 도구",
+  "files": [
+    {
+      "path": "lab-le-09-template.md",
+      "content": "# 평가 표본추출 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "language": "Markdown"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "파일을 격리된 시험 환경에 저장한다.",
+    "실제 데이터 대신 비식별 시험 데이터로 검증한다.",
+    "검증 결과와 승인자를 변경 기록에 남긴다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+  },
+  "securityNotes": [
+    "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+    "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+  ],
+  "tags": [
+    "평가",
+    "테스트",
+    "데이터 분석"
+  ],
+  "courseIds": [
+    "llm-evaluation"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation-sampling"
+  ],
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

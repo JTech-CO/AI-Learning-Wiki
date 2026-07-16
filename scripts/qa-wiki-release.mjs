@@ -17,7 +17,7 @@ const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|
 const withBase = (url) => url.startsWith('/') ? `${basePath}${url}` : url;
 
 expect(prompts.prompts.length === 1500, 'prompt count: ' + prompts.prompts.length);
-expect(snippets.snippets.length === 25, 'snippet count: ' + snippets.snippets.length);
+expect(snippets.snippets.length === 120, 'snippet count: ' + snippets.snippets.length);
 expect(migration.counts.prompts === 1142 && migration.counts.artifacts === 25, 'canonical migration counts changed');
 expect(prompts.counts.sourceModules === 0, 'legacy module source remains active');
 expect(wiki.articles.length === expectedArticleCount, 'wiki articles: expected ' + expectedArticleCount + ', found ' + wiki.articles.length);

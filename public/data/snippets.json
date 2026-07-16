@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T12:10:01.990Z",
+  "generatedAt": "2026-07-16T12:16:30.239Z",
   "policyVersion": "W39-2026-07-16",
   "counts": {
     "sourceModules": 0,
@@ -9,11 +9,11 @@
     "reviewedNearDuplicateMerges": 0,
     "titleCleanups": 0,
     "sourceNameCleanups": 0,
-    "snippets": 25,
+    "snippets": 120,
     "additions": 0,
     "prompts": 1500,
     "canonicalPrompts": 1500,
-    "canonicalArtifacts": 25
+    "canonicalArtifacts": 120
   },
   "snippets": [
     {
@@ -44,6 +44,286 @@
       },
       "securityNotes": [
         "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+      ]
+    },
+    {
+      "id": "lab-sr-12-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "가드레일 · AI 보안과 레드팀 운영 설정",
+      "content": "version: 1\ntopic: \"가드레일\"\ncourse: ai-security-redteam\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/guardrail/",
+      "url": "/wiki/guardrail/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-09-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "간접 프롬프트 인젝션 · AI 보안과 레드팀 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"간접 프롬프트 인젝션 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/indirect-prompt-injection/",
+      "url": "/wiki/indirect-prompt-injection/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-01-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "검색 증강 생성 · 고급 RAG와 지식 시스템 운영 설정",
+      "content": "version: 1\ntopic: \"검색 증강 생성\"\ncourse: advanced-rag\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/rag/",
+      "url": "/wiki/rag/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-10-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "검색 필터링 · 고급 RAG와 지식 시스템 API 요청 본문",
+      "content": "{\n  \"topic\": \"검색 필터링\",\n  \"course\": \"advanced-rag\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/retrieval-filtering/",
+      "url": "/wiki/retrieval-filtering/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-07-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "결과 보상 모델 · 사후학습과 정렬 심화 API 요청 본문",
+      "content": "{\n  \"topic\": \"결과 보상 모델\",\n  \"course\": \"post-training-alignment\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/outcome-reward-model/",
+      "url": "/wiki/outcome-reward-model/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-06-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "공동 임베딩 공간 · 멀티모달 AI 시스템 품질 게이트 워크플로",
+      "content": "name: \"공동 임베딩 공간 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/joint-embedding-space/",
+      "url": "/wiki/joint-embedding-space/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-08-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "과정 보상 모델 · 사후학습과 정렬 심화 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"과정 보상 모델 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/process-reward-model/",
+      "url": "/wiki/process-reward-model/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-05-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "교차 배열 멀티모달 데이터 · 멀티모달 AI 시스템 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"교차 배열 멀티모달 데이터 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/interleaved-multimodal-data/",
+      "url": "/wiki/interleaved-multimodal-data/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-09-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "교차모달 어텐션 · 멀티모달 AI 시스템 검증 유틸리티",
+      "content": "\"\"\"교차모달 어텐션 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"교차모달 어텐션\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/cross-modal-attention/",
+      "url": "/wiki/cross-modal-attention/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-mm-09-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-08-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "교차모달 정렬 · 멀티모달 AI 시스템 검증 유틸리티",
+      "content": "\"\"\"교차모달 정렬 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"교차모달 정렬\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/cross-modal-alignment/",
+      "url": "/wiki/cross-modal-alignment/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-mm-08-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
       ]
     },
     {
@@ -164,6 +444,34 @@
       ]
     },
     {
+      "id": "lab-lp-11-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "꼬리 지연 시간 · LLMOps와 프로덕션 서빙 운영 기록 템플릿",
+      "content": "# 꼬리 지연 시간 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/tail-latency/",
+      "url": "/wiki/tail-latency/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
       "id": "automation-bot-webhooks-bot-webhooks-p2",
       "type": "payload",
       "typeLabel": "요청 본문",
@@ -223,6 +531,734 @@
       ]
     },
     {
+      "id": "lab-ar-11-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "리랭커 · 고급 RAG와 지식 시스템 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"리랭커 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/reranker/",
+      "url": "/wiki/reranker/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-01-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "멀티모달 모델 · 멀티모달 AI 시스템 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"멀티모달 모델 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/multimodal-model/",
+      "url": "/wiki/multimodal-model/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-02-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "멀티모달 언어 모델 · 멀티모달 AI 시스템 품질 게이트 워크플로",
+      "content": "name: \"멀티모달 언어 모델 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/multimodal-language-model/",
+      "url": "/wiki/multimodal-language-model/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-10-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "멀티모달 융합 · 멀티모달 AI 시스템 검증 유틸리티",
+      "content": "\"\"\"멀티모달 융합 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"멀티모달 융합\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/multimodal-fusion/",
+      "url": "/wiki/multimodal-fusion/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-mm-10-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-07-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "멀티모달 임베딩 · 멀티모달 AI 시스템 검증 유틸리티",
+      "content": "\"\"\"멀티모달 임베딩 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"멀티모달 임베딩\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/multimodal-embedding/",
+      "url": "/wiki/multimodal-embedding/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-mm-07-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-11-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "멀티모달 지시 튜닝 · 멀티모달 AI 시스템 검증 유틸리티",
+      "content": "\"\"\"멀티모달 지시 튜닝 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"멀티모달 지시 튜닝\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/multimodal-instruction-tuning/",
+      "url": "/wiki/multimodal-instruction-tuning/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-mm-11-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-04-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "멀티모달 토크나이저 · 멀티모달 AI 시스템 운영 설정",
+      "content": "version: 1\ntopic: \"멀티모달 토크나이저\"\ncourse: multimodal-systems\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/multimodal-tokenizer/",
+      "url": "/wiki/multimodal-tokenizer/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-mm-03-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "멀티모달 트랜스포머 · 멀티모달 AI 시스템 검증 유틸리티",
+      "content": "\"\"\"멀티모달 트랜스포머 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"멀티모달 트랜스포머\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "멀티모달",
+        "이미지",
+        "오디오"
+      ],
+      "course": "multimodal-systems",
+      "courseTitle": "멀티모달 AI 시스템",
+      "courseUrl": "/course/multimodal-systems/",
+      "relatedWikiUrl": "/wiki/multimodal-transformer/",
+      "url": "/wiki/multimodal-transformer/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-mm-03-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-02-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "모델 서빙 · LLMOps와 프로덕션 서빙 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"모델 서빙 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/model-serving/",
+      "url": "/wiki/model-serving/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-03-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "모델 서빙 플랫폼 · LLMOps와 프로덕션 서빙 품질 게이트 워크플로",
+      "content": "name: \"모델 서빙 플랫폼 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/model-serving-platform/",
+      "url": "/wiki/model-serving-platform/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-01-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "모델 평가 · LLM 평가와 관측성 품질 게이트 워크플로",
+      "content": "name: \"모델 평가 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/evaluation/",
+      "url": "/wiki/evaluation/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-02-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "문서 검색 · 고급 RAG와 지식 시스템 관측 SQL",
+      "content": "-- 문서 검색 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/document-retrieval/",
+      "url": "/wiki/document-retrieval/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-07-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "문서 임베딩 · 고급 RAG와 지식 시스템 검증 유틸리티",
+      "content": "\"\"\"문서 임베딩 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"문서 임베딩\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/document-embedding/",
+      "url": "/wiki/document-embedding/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-ar-07-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-01-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "미세조정 · 사후학습과 정렬 심화 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"미세조정 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/fine-tuning/",
+      "url": "/wiki/fine-tuning/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-04-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "밀집 검색 · 고급 RAG와 지식 시스템 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"밀집 검색 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/dense-retrieval/",
+      "url": "/wiki/dense-retrieval/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-06-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "배치 추론 · LLMOps와 프로덕션 서빙 운영 설정",
+      "content": "version: 1\ntopic: \"배치 추론\"\ncourse: llmops-production\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/batch-inference/",
+      "url": "/wiki/batch-inference/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-09-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "벡터 인덱스 · 고급 RAG와 지식 시스템 관측 SQL",
+      "content": "-- 벡터 인덱스 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/vector-index/",
+      "url": "/wiki/vector-index/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-03-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "벤치마크 · LLM 평가와 관측성 검증 유틸리티",
+      "content": "\"\"\"벤치마크 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"벤치마크\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/benchmark/",
+      "url": "/wiki/benchmark/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-le-03-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-04-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "벤치마크 데이터셋 · LLM 평가와 관측성 운영 설정",
+      "content": "version: 1\ntopic: \"벤치마크 데이터셋\"\ncourse: llm-evaluation\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/benchmark-dataset/",
+      "url": "/wiki/benchmark-dataset/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-05-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "벤치마크 모음 · LLM 평가와 관측성 관측 SQL",
+      "content": "-- 벤치마크 모음 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/benchmark-suite/",
+      "url": "/wiki/benchmark-suite/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-07-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "벤치마크 오염 · LLM 평가와 관측성 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"벤치마크 오염 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/benchmark-contamination/",
+      "url": "/wiki/benchmark-contamination/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-06-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "벤치마크 타당도 · LLM 평가와 관측성 API 요청 본문",
+      "content": "{\n  \"topic\": \"벤치마크 타당도\",\n  \"course\": \"llm-evaluation\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/benchmark-validity/",
+      "url": "/wiki/benchmark-validity/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-06-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "보상 모델 · 사후학습과 정렬 심화 관측 SQL",
+      "content": "-- 보상 모델 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/reward-model/",
+      "url": "/wiki/reward-model/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-10-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "사고 과정 프롬프팅 · 프롬프트 시스템 설계 관측 SQL",
+      "content": "-- 사고 과정 프롬프팅 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/chain-of-thought-prompting/",
+      "url": "/wiki/chain-of-thought-prompting/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-04-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "사용자 프롬프트 · 프롬프트 시스템 설계 API 요청 본문",
+      "content": "{\n  \"topic\": \"사용자 프롬프트\",\n  \"course\": \"prompt-systems\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/user-prompt/",
+      "url": "/wiki/user-prompt/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-04-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "선호 데이터 · 사후학습과 정렬 심화 검증 유틸리티",
+      "content": "\"\"\"선호 데이터 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"선호 데이터\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/preference-data/",
+      "url": "/wiki/preference-data/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-pt-04-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
       "id": "automation-bot-webhooks-bot-webhooks-p1",
       "type": "payload",
       "typeLabel": "요청 본문",
@@ -278,6 +1314,426 @@
       },
       "securityNotes": [
         "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+      ]
+    },
+    {
+      "id": "lab-ps-03-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "시스템 프롬프트 · 프롬프트 시스템 설계 관측 SQL",
+      "content": "-- 시스템 프롬프트 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/system-prompt/",
+      "url": "/wiki/system-prompt/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-05-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "쌍대 선호 순위화 · 사후학습과 정렬 심화 운영 설정",
+      "content": "version: 1\ntopic: \"쌍대 선호 순위화\"\ncourse: post-training-alignment\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/pairwise-preference-ranking/",
+      "url": "/wiki/pairwise-preference-ranking/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-03-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "어휘 검색 · 고급 RAG와 지식 시스템 API 요청 본문",
+      "content": "{\n  \"topic\": \"어휘 검색\",\n  \"course\": \"advanced-rag\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/lexical-retrieval/",
+      "url": "/wiki/lexical-retrieval/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-06-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "에이전트 계획 품질 · 프로덕션 AI 에이전트 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"에이전트 계획 품질 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-plan-quality/",
+      "url": "/wiki/agent-plan-quality/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-04-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "에이전트 과제 분해 · 프로덕션 AI 에이전트 관측 SQL",
+      "content": "-- 에이전트 과제 분해 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-task-decomposition/",
+      "url": "/wiki/agent-task-decomposition/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-08-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "에이전트 도구 · 프로덕션 AI 에이전트 운영 기록 템플릿",
+      "content": "# 에이전트 도구 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-tool/",
+      "url": "/wiki/agent-tool/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-09-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "에이전트 도구 정확도 · 프로덕션 AI 에이전트 검증 유틸리티",
+      "content": "\"\"\"에이전트 도구 정확도 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"에이전트 도구 정확도\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-tool-accuracy/",
+      "url": "/wiki/agent-tool-accuracy/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-pa-09-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-10-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "에이전트 런타임 · 프로덕션 AI 에이전트 운영 설정",
+      "content": "version: 1\ntopic: \"에이전트 런타임\"\ncourse: production-agents\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-runtime/",
+      "url": "/wiki/agent-runtime/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-02-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "에이전트 루프 · 프로덕션 AI 에이전트 검증 유틸리티",
+      "content": "\"\"\"에이전트 루프 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"에이전트 루프\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-loop/",
+      "url": "/wiki/agent-loop/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-pa-02-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-11-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "에이전트 메모리 · 프로덕션 AI 에이전트 관측 SQL",
+      "content": "-- 에이전트 메모리 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-memory/",
+      "url": "/wiki/agent-memory/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-03-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "에이전트 목표 · 프로덕션 AI 에이전트 운영 설정",
+      "content": "version: 1\ntopic: \"에이전트 목표\"\ncourse: production-agents\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-goal/",
+      "url": "/wiki/agent-goal/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-11-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "에이전트 보안 · AI 보안과 레드팀 검증 유틸리티",
+      "content": "\"\"\"에이전트 보안 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"에이전트 보안\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/agent-security/",
+      "url": "/wiki/agent-security/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-sr-11-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-05-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "에이전트 숙고 · 프로덕션 AI 에이전트 API 요청 본문",
+      "content": "{\n  \"topic\": \"에이전트 숙고\",\n  \"course\": \"production-agents\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-deliberation/",
+      "url": "/wiki/agent-deliberation/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-07-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "에이전트 실행기 · 프로덕션 AI 에이전트 품질 게이트 워크플로",
+      "content": "name: \"에이전트 실행기 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/agent-executor/",
+      "url": "/wiki/agent-executor/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-12-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "에이전트 일화 기억 · 프로덕션 AI 에이전트 API 요청 본문",
+      "content": "{\n  \"topic\": \"에이전트 일화 기억\",\n  \"course\": \"production-agents\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/episodic-agent-memory/",
+      "url": "/wiki/episodic-agent-memory/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
       ]
     },
     {
@@ -341,6 +1797,90 @@
       ]
     },
     {
+      "id": "lab-ps-07-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "역할 프롬프팅 · 프롬프트 시스템 설계 운영 기록 템플릿",
+      "content": "# 역할 프롬프팅 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/role-prompting/",
+      "url": "/wiki/role-prompting/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-12-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "오프라인 선호 학습 · 사후학습과 정렬 심화 운영 설정",
+      "content": "version: 1\ntopic: \"오프라인 선호 학습\"\ncourse: post-training-alignment\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/offline-preference-learning/",
+      "url": "/wiki/offline-preference-learning/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-05-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "온라인 추론 · LLMOps와 프로덕션 서빙 검증 유틸리티",
+      "content": "\"\"\"온라인 추론 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"온라인 추론\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/online-inference/",
+      "url": "/wiki/online-inference/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-lp-05-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
       "id": "automation-notifications-notifications-p2",
       "type": "code",
       "typeLabel": "코드",
@@ -394,6 +1934,146 @@
       },
       "securityNotes": [
         "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+      ]
+    },
+    {
+      "id": "lab-pt-09-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "인간 피드백 기반 강화학습 · 사후학습과 정렬 심화 품질 게이트 워크플로",
+      "content": "name: \"인간 피드백 기반 강화학습 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/rlhf/",
+      "url": "/wiki/rlhf/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-06-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "임베딩 모델 · 고급 RAG와 지식 시스템 운영 기록 템플릿",
+      "content": "# 임베딩 모델 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/embedding-model/",
+      "url": "/wiki/embedding-model/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-07-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "적대적 예시 · AI 보안과 레드팀 검증 유틸리티",
+      "content": "\"\"\"적대적 예시 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"적대적 예시\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/adversarial-example/",
+      "url": "/wiki/adversarial-example/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-sr-07-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-06-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "적대적 테스트 · AI 보안과 레드팀 품질 게이트 워크플로",
+      "content": "name: \"적대적 테스트 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/adversarial-testing/",
+      "url": "/wiki/adversarial-testing/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-08-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "제로샷 프롬프팅 · 프롬프트 시스템 설계 검증 유틸리티",
+      "content": "\"\"\"제로샷 프롬프팅 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"제로샷 프롬프팅\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/zero-shot-prompting/",
+      "url": "/wiki/zero-shot-prompting/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-ps-08-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
       ]
     },
     {
@@ -452,6 +2132,146 @@
       ]
     },
     {
+      "id": "lab-pt-02-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "지도 미세조정 · 사후학습과 정렬 심화 품질 게이트 워크플로",
+      "content": "name: \"지도 미세조정 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/supervised-fine-tuning/",
+      "url": "/wiki/supervised-fine-tuning/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-03-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "지시 튜닝 · 사후학습과 정렬 심화 운영 기록 템플릿",
+      "content": "# 지시 튜닝 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/instruction-tuning/",
+      "url": "/wiki/instruction-tuning/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-09-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "지연 시간 · LLMOps와 프로덕션 서빙 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"지연 시간 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/latency/",
+      "url": "/wiki/latency/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-12-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "지연 시간-처리량 절충 · LLMOps와 프로덕션 서빙 검증 유틸리티",
+      "content": "\"\"\"지연 시간-처리량 절충 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"지연 시간-처리량 절충\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/latency-throughput-tradeoff/",
+      "url": "/wiki/latency-throughput-tradeoff/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-lp-12-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-11-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "직접 선호 최적화 · 사후학습과 정렬 심화 검증 유틸리티",
+      "content": "\"\"\"직접 선호 최적화 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"직접 선호 최적화\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/dpo/",
+      "url": "/wiki/dpo/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-pt-11-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
       "id": "ai-engineer-rag-advanced-rag-advanced-p5",
       "type": "code",
       "typeLabel": "코드",
@@ -482,6 +2302,202 @@
       ]
     },
     {
+      "id": "lab-ar-08-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "질의 임베딩 · 고급 RAG와 지식 시스템 운영 설정",
+      "content": "version: 1\ntopic: \"질의 임베딩\"\ncourse: advanced-rag\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/query-embedding/",
+      "url": "/wiki/query-embedding/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-11-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "참조 기반 평가 · LLM 평가와 관측성 운영 설정",
+      "content": "version: 1\ntopic: \"참조 기반 평가\"\ncourse: llm-evaluation\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/reference-based-evaluation/",
+      "url": "/wiki/reference-based-evaluation/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-12-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "참조 없는 평가 · LLM 평가와 관측성 관측 SQL",
+      "content": "-- 참조 없는 평가 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/reference-free-evaluation/",
+      "url": "/wiki/reference-free-evaluation/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-08-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "처리량 · LLMOps와 프로덕션 서빙 API 요청 본문",
+      "content": "{\n  \"topic\": \"처리량\",\n  \"course\": \"llmops-production\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/throughput/",
+      "url": "/wiki/throughput/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-01-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "추론 · LLMOps와 프로덕션 서빙 API 요청 본문",
+      "content": "{\n  \"topic\": \"추론\",\n  \"course\": \"llmops-production\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/inference/",
+      "url": "/wiki/inference/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-04-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "추론 서버 · LLMOps와 프로덕션 서빙 운영 기록 템플릿",
+      "content": "# 추론 서버 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/inference-server/",
+      "url": "/wiki/inference-server/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-07-query",
+      "type": "query",
+      "typeLabel": "쿼리",
+      "title": "추론 엔드포인트 · LLMOps와 프로덕션 서빙 관측 SQL",
+      "content": "-- 추론 엔드포인트 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/inference-endpoint/",
+      "url": "/wiki/inference-endpoint/",
+      "language": "SQL",
+      "runtime": "ANSI SQL 호환 분석 데이터베이스",
+      "validation": {
+        "method": "syntax",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
       "id": "ai-engineer-prompt-caching-p24-cache-check",
       "type": "code",
       "typeLabel": "코드",
@@ -509,6 +2525,146 @@
       },
       "securityNotes": [
         "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+      ]
+    },
+    {
+      "id": "lab-ps-11-payload",
+      "type": "payload",
+      "typeLabel": "요청 본문",
+      "title": "컨텍스트 엔지니어링 · 프롬프트 시스템 설계 API 요청 본문",
+      "content": "{\n  \"topic\": \"컨텍스트 엔지니어링\",\n  \"course\": \"prompt-systems\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/context-engineering/",
+      "url": "/wiki/context-engineering/",
+      "language": "JSON",
+      "runtime": "JSON 호환 HTTP 클라이언트",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-12-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "컨텍스트 윈도우 · 프롬프트 시스템 설계 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"컨텍스트 윈도우 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/context-window/",
+      "url": "/wiki/context-window/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-12-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "크로스 인코더 리랭커 · 고급 RAG와 지식 시스템 품질 게이트 워크플로",
+      "content": "name: \"크로스 인코더 리랭커 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/cross-encoder-reranker/",
+      "url": "/wiki/cross-encoder-reranker/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-10-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "탈옥 공격 · AI 보안과 레드팀 품질 게이트 워크플로",
+      "content": "name: \"탈옥 공격 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/jailbreak/",
+      "url": "/wiki/jailbreak/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-lp-10-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "토큰 간 지연 시간 · LLMOps와 프로덕션 서빙 품질 게이트 워크플로",
+      "content": "name: \"토큰 간 지연 시간 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "배포",
+        "모니터링",
+        "데이터 엔지니어링"
+      ],
+      "course": "llmops-production",
+      "courseTitle": "LLMOps와 프로덕션 서빙",
+      "courseUrl": "/course/llmops-production/",
+      "relatedWikiUrl": "/wiki/inter-token-latency/",
+      "url": "/wiki/inter-token-latency/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
       ]
     },
     {
@@ -566,6 +2722,118 @@
       ]
     },
     {
+      "id": "lab-le-08-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "평가 루브릭 · LLM 평가와 관측성 품질 게이트 워크플로",
+      "content": "name: \"평가 루브릭 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/evaluation-rubric/",
+      "url": "/wiki/evaluation-rubric/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-10-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "평가 불확실성 · LLM 평가와 관측성 검증 유틸리티",
+      "content": "\"\"\"평가 불확실성 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"평가 불확실성\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/evaluation-uncertainty/",
+      "url": "/wiki/evaluation-uncertainty/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-le-10-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-02-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "평가 지표 · LLM 평가와 관측성 운영 기록 템플릿",
+      "content": "# 평가 지표 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/metric/",
+      "url": "/wiki/metric/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-le-09-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "평가 표본추출 · LLM 평가와 관측성 운영 기록 템플릿",
+      "content": "# 평가 표본추출 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "평가",
+        "테스트",
+        "데이터 분석"
+      ],
+      "course": "llm-evaluation",
+      "courseTitle": "LLM 평가와 관측성",
+      "courseUrl": "/course/llm-evaluation/",
+      "relatedWikiUrl": "/wiki/evaluation-sampling/",
+      "url": "/wiki/evaluation-sampling/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
       "id": "ai-builder-15-database-sql-basics-p15b-create-table",
       "type": "query",
       "typeLabel": "쿼리",
@@ -590,6 +2858,398 @@
       },
       "securityNotes": [
         "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+      ]
+    },
+    {
+      "id": "lab-ps-09-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "퓨샷 프롬프팅 · 프롬프트 시스템 설계 운영 설정",
+      "content": "version: 1\ntopic: \"퓨샷 프롬프팅\"\ncourse: prompt-systems\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/few-shot-prompting/",
+      "url": "/wiki/few-shot-prompting/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-01-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "프롬프트 · 프롬프트 시스템 설계 검증 유틸리티",
+      "content": "\"\"\"프롬프트 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"프롬프트\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/prompt/",
+      "url": "/wiki/prompt/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-ps-01-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-06-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "프롬프트 구분자 · 프롬프트 시스템 설계 품질 게이트 워크플로",
+      "content": "name: \"프롬프트 구분자 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/prompt-delimiter/",
+      "url": "/wiki/prompt-delimiter/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-02-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "프롬프트 엔지니어링 · 프롬프트 시스템 설계 운영 설정",
+      "content": "version: 1\ntopic: \"프롬프트 엔지니어링\"\ncourse: prompt-systems\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/prompt-engineering/",
+      "url": "/wiki/prompt-engineering/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-08-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "프롬프트 인젝션 · AI 보안과 레드팀 운영 설정",
+      "content": "version: 1\ntopic: \"프롬프트 인젝션\"\ncourse: ai-security-redteam\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/prompt-injection/",
+      "url": "/wiki/prompt-injection/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ps-05-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "프롬프트 템플릿 · 프롬프트 시스템 설계 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"프롬프트 템플릿 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "프롬프트 설계",
+        "구조화 출력",
+        "테스트"
+      ],
+      "course": "prompt-systems",
+      "courseTitle": "프롬프트 시스템 설계",
+      "courseUrl": "/course/prompt-systems/",
+      "relatedWikiUrl": "/wiki/prompt-template/",
+      "url": "/wiki/prompt-template/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-ar-05-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "하이브리드 RAG · 고급 RAG와 지식 시스템 품질 게이트 워크플로",
+      "content": "name: \"하이브리드 RAG 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "RAG",
+        "검색",
+        "검증"
+      ],
+      "course": "advanced-rag",
+      "courseTitle": "고급 RAG와 지식 시스템",
+      "courseUrl": "/course/advanced-rag/",
+      "relatedWikiUrl": "/wiki/hybrid-rag/",
+      "url": "/wiki/hybrid-rag/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-05-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "AI 레드팀 평가 · AI 보안과 레드팀 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"AI 레드팀 평가 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/ai-red-teaming/",
+      "url": "/wiki/ai-red-teaming/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-01-schema",
+      "type": "schema",
+      "typeLabel": "스키마",
+      "title": "AI 안전 · AI 보안과 레드팀 출력 스키마",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"AI 안전 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/ai-safety/",
+      "url": "/wiki/ai-safety/",
+      "language": "JSON Schema",
+      "runtime": "JSON Schema Draft 2020-12 검증기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pa-01-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "AI 에이전트 · 프로덕션 AI 에이전트 운영 기록 템플릿",
+      "content": "# AI 에이전트 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "AI 에이전트",
+        "자동화",
+        "프로젝트 관리"
+      ],
+      "course": "production-agents",
+      "courseTitle": "프로덕션 AI 에이전트",
+      "courseUrl": "/course/production-agents/",
+      "relatedWikiUrl": "/wiki/ai-agent/",
+      "url": "/wiki/ai-agent/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-04-config",
+      "type": "config",
+      "typeLabel": "설정",
+      "title": "AI 위험 대장 · AI 보안과 레드팀 운영 설정",
+      "content": "version: 1\ntopic: \"AI 위험 대장\"\ncourse: ai-security-redteam\nquality_gate:\n  required_evidence: true\n  minimum_reviewers: 1\n  block_on_high_risk: true\nlogging:\n  redact_personal_data: true\n  retention_days: 30\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/ai-risk-register/",
+      "url": "/wiki/ai-risk-register/",
+      "language": "YAML",
+      "runtime": "YAML 1.2 호환 설정 로더",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-03-code",
+      "type": "code",
+      "typeLabel": "코드",
+      "title": "AI 위험 평가 · AI 보안과 레드팀 검증 유틸리티",
+      "content": "\"\"\"AI 위험 평가 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"AI 위험 평가\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/ai-risk-assessment/",
+      "url": "/wiki/ai-risk-assessment/",
+      "language": "Python",
+      "runtime": "Python 3.11 이상 표준 라이브러리",
+      "validation": {
+        "method": "syntax",
+        "command": "python -m py_compile lab-sr-03-code.py",
+        "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-sr-02-workflow",
+      "type": "workflow",
+      "typeLabel": "워크플로",
+      "title": "AI 위협 모델링 · AI 보안과 레드팀 품질 게이트 워크플로",
+      "content": "name: \"AI 위협 모델링 품질 게이트\"\non:\n  workflow_dispatch:\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Validate reviewed artifacts\n        run: npm run wiki:w52:validate\n",
+      "tags": [
+        "보안",
+        "안전",
+        "개인정보"
+      ],
+      "course": "ai-security-redteam",
+      "courseTitle": "AI 보안과 레드팀",
+      "courseUrl": "/course/ai-security-redteam/",
+      "relatedWikiUrl": "/wiki/ai-threat-modeling/",
+      "url": "/wiki/ai-threat-modeling/",
+      "language": "YAML",
+      "runtime": "CI 또는 워크플로 실행기",
+      "validation": {
+        "method": "parse",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+      ]
+    },
+    {
+      "id": "lab-pt-10-template",
+      "type": "template",
+      "typeLabel": "문서 양식",
+      "title": "AI 피드백 기반 강화학습 · 사후학습과 정렬 심화 운영 기록 템플릿",
+      "content": "# AI 피드백 기반 강화학습 운영 검토 기록\n\n## 문맥과 목표\n\n- 문맥:\n- 측정 가능한 목표:\n- 범위 밖 항목:\n\n## 근거와 가정\n\n| 구분 | 내용 | 출처 또는 확인 방법 | 담당자 |\n|---|---|---|---|\n| 근거 |  |  |  |\n| 가정 |  |  |  |\n\n## 위험과 통제\n\n- 주요 실패 모드:\n- 조기 경보 신호:\n- 사람 승인 지점:\n- 되돌리기 절차:\n\n## 실행 및 검증\n\n- 다음 조치:\n- 완료 기준:\n- 재검토 날짜:\n",
+      "tags": [
+        "모델 학습",
+        "평가",
+        "안전"
+      ],
+      "course": "post-training-alignment",
+      "courseTitle": "사후학습과 정렬 심화",
+      "courseUrl": "/course/post-training-alignment/",
+      "relatedWikiUrl": "/wiki/reinforcement-learning-from-ai-feedback/",
+      "url": "/wiki/reinforcement-learning-from-ai-feedback/",
+      "language": "Markdown",
+      "runtime": "CommonMark 호환 문서 도구",
+      "validation": {
+        "method": "manual",
+        "command": null,
+        "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+      },
+      "securityNotes": [
+        "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+        "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
       ]
     },
     {

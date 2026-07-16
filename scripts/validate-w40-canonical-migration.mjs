@@ -19,7 +19,7 @@ const [migration, prompts, artifacts, validators, built, publicPrompts, publicAr
 
 assert.equal(migration.version, 'W40-2026-07-16');
 assert.equal(prompts.length, 1500);
-assert.equal(artifacts.length, 25);
+assert.equal(artifacts.length, 120);
 assert.equal(migration.counts.promptsWithUsageNotes, 1142);
 assert.equal(migration.counts.promptsWithExamples, 114);
 assert.equal(migration.counts.wikiOriginalPrompts, 32);
@@ -31,13 +31,14 @@ for (const { file, value } of artifacts) assert.equal(validators.validateArtifac
 const promptIds = prompts.map((entry) => entry.value.id).sort();
 const basePromptIds = promptIds.filter((id) => base.promptIds.includes(id));
 const artifactIds = artifacts.map((entry) => entry.value.id).sort();
+const baseArtifactIds = artifactIds.filter((id) => base.artifactIds.includes(id));
 assert.equal(sha256(basePromptIds.join('\n')), migration.compatibility.publicPromptIdsSha256);
-assert.equal(sha256(artifactIds.join('\n')), migration.compatibility.publicArtifactIdsSha256);
+assert.equal(sha256(baseArtifactIds.join('\n')), migration.compatibility.publicArtifactIdsSha256);
 assert.deepEqual(publicPrompts.prompts.map((item) => item.id).sort(), promptIds);
 assert.deepEqual(publicArtifacts.snippets.map((item) => item.id).sort(), artifactIds);
 assert.equal(built.counts.sourceModules, 0);
 assert.equal(built.counts.prompts, 1500);
-assert.equal(built.counts.snippets, 25);
+assert.equal(built.counts.snippets, 120);
 
 for (const file of ['scripts/prompt-library.mjs', 'scripts/build-pages.mjs', 'scripts/validate-content.mjs']) {
   const source = await readFile(file, 'utf8');

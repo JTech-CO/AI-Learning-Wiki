@@ -14,7 +14,7 @@ const attribute = (html, name) => html.match(new RegExp(`\\b${name}="([^"]+)"`))
 const resolvesTo = (value, pagePath, expectedPath) => value && new URL(value, `${ORIGIN}${pagePath}`).pathname === expectedPath;
 
 assert.equal(prompts.prompts.length, 1500);
-assert.equal(snippets.snippets.length, 25);
+assert.equal(snippets.snippets.length, 120);
 assert.ok(resolvesTo(attribute(promptPage, 'data-prompts-url'), `${BASE_PATH}/prompt-explorer/`, `${BASE_PATH}/data/prompts.json`));
 assert.ok(resolvesTo(attribute(snippetPage, 'data-snippets-url'), `${BASE_PATH}/snippet-explorer/`, `${BASE_PATH}/data/snippets.json`));
 assert.ok(resolvesTo(attribute(searchPage, 'data-prompts-url'), `${BASE_PATH}/search/`, `${BASE_PATH}/data/prompts.json`));

@@ -11,7 +11,7 @@ const [component, css, wiki, prompts, snippets] = await Promise.all([
 
 assert.equal(wiki.articles.length, 1600, 'wiki search corpus changed');
 assert.equal(prompts.prompts.length, 1500, 'prompt search corpus changed');
-assert.equal(snippets.snippets.length, 25, 'snippet search corpus changed');
+assert.equal(snippets.snippets.length, 120, 'snippet search corpus changed');
 assert.match(component, /id="wiki-search-pagination"[^>]*aria-label="검색 결과 페이지"/, 'search pagination navigation missing');
 assert.match(component, /const PAGE_SIZE = 30;/, 'search page size changed');
 assert.match(component, /ranked\.slice\(start, end\)/, 'search pagination slice missing');
