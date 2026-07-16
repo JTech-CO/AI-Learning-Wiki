@@ -1,7 +1,7 @@
 {
   "version": "W23-2026-07-15",
   "snapshotDate": "2026-07-15",
-  "corpusSha256": "48f2a05d8b9395db00f22e5858634d1cc19860105be7b09ff765144e38902f30",
+  "corpusSha256": "c618d46c4d46eea725c3fb5aed7fc2053bd6aaeb3ce5288c22eb4333169cb125",
   "baselineCorpusSha256": "602f131a11aacc835c078779702dcda13006747cbc1e3ed4f41de4ed38db79c5",
   "policy": {
     "purpose": "remaining depth queue after balanced deduplication-restoration batch",
@@ -14,7 +14,7 @@
     "remediated": 14,
     "deduplicationRevealed": 118,
     "preExisting": 54,
-    "totalDeficitCharacters": 295474
+    "totalDeficitCharacters": 295496
   },
   "items": [
     {
@@ -1248,6 +1248,16 @@
       "origin": "deduplication-revealed"
     },
     {
+      "articleId": "bertscore",
+      "title": "BERTScore",
+      "categoryId": "evaluation",
+      "tier": "core",
+      "bodyCharacters": 5666,
+      "targetCharacters": 6000,
+      "deficitCharacters": 334,
+      "origin": "deduplication-revealed"
+    },
+    {
       "articleId": "inverted-index",
       "title": "역색인",
       "categoryId": "retrieval",
@@ -1275,16 +1285,6 @@
       "bodyCharacters": 5686,
       "targetCharacters": 6000,
       "deficitCharacters": 314,
-      "origin": "deduplication-revealed"
-    },
-    {
-      "articleId": "bertscore",
-      "title": "BERTScore",
-      "categoryId": "evaluation",
-      "tier": "core",
-      "bodyCharacters": 5688,
-      "targetCharacters": 6000,
-      "deficitCharacters": 312,
       "origin": "deduplication-revealed"
     },
     {

@@ -66,11 +66,9 @@ const paragraphsOf = (article) => article.sections
   .filter((paragraph) => paragraph.length >= 60);
 const wrongParticleCount = (article, body) => {
   const batchim = hasBatchim(article.title);
-  const labels = [
-    `‘${article.title}(${article.englishTitle})’`,
-    `${article.title}(${article.englishTitle})`,
-    `‘${article.title}’`,
-  ];
+  const labels = article.title === article.englishTitle
+    ? [`‘${article.title}’`, article.title]
+    : [`‘${article.title}(${article.englishTitle})’`, `${article.title}(${article.englishTitle})`, `‘${article.title}’`];
   const wrongParticles = batchim ? ['를', '는', '가'] : ['을', '은', '이'];
   return labels.reduce((sum, label) => sum + wrongParticles.reduce((count, particle) => count + occurrences(body, `${label}${particle}`), 0), 0);
 };

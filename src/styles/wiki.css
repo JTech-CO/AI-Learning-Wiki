@@ -69,6 +69,7 @@ a:hover { text-decoration: underline; }
 .sl-markdown-content h2 { border-bottom: 1px solid #c8ccd1; padding-bottom: .25rem; font-size: 1.45rem; }
 .sl-markdown-content h3 { font-size: 1.13rem; }
 .sl-markdown-content h4 { margin-top: 1.35rem; font-size: 1rem; }
+.sl-markdown-content .sl-heading-wrapper { --sl-anchor-icon-size: .78rem; --sl-anchor-icon-gap: .55rem; }
 .sl-markdown-content table { display: table; width: 100%; }
 .sl-markdown-content th { background: #eaecf0; }
 .sl-markdown-content th,
@@ -91,7 +92,7 @@ a:hover { text-decoration: underline; }
 .wiki-home-section h2 { border-bottom: 1px solid #a2a9b1; padding-bottom: .3rem; font-size: 1.18rem; }
 .wiki-home-section h3 { font-family: inherit; font-size: .98rem; }
 .wiki-category-index { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 1.2rem; }
-.wiki-category-index > div { border-bottom: 1px solid #eaecf0; padding: .4rem 0; }
+.wiki-category-index > div { margin-top: 0 !important; border-bottom: 1px solid #eaecf0; padding: .4rem 0; }
 .wiki-category-index h3 { margin: 0; }
 .wiki-category-index h3 span { color: #72777d; font-size: .72rem; font-weight: 400; }
 .wiki-category-index p { margin: .15rem 0; color: #54595d; font-size: .78rem; line-height: 1.45; }
@@ -101,6 +102,7 @@ a:hover { text-decoration: underline; }
 .wiki-compact-list time { color: #72777d; font-size: .68rem; }
 .wiki-course-browser { margin-top: 1rem; }
 .wiki-course-tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid #a2a9b1; gap: 0; }
+.wiki-course-tabs > button { margin-top: 0 !important; }
 .wiki-course-tabs button,
 .wiki-search-filters button { border: 0; border-right: 1px solid #c8ccd1; border-radius: 0; background: #f8f9fa; color: #3366cc; padding: .45rem .7rem; cursor: pointer; }
 .wiki-course-tabs button[aria-selected='true'],

@@ -31,11 +31,9 @@ const particleRulesFor = (title) => {
     direction: { expected: !hasBatchim || rieulBatchim ? '로' : '으로', wrong: !hasBatchim || rieulBatchim ? '으로' : '로' },
   };
 };
-const labelsFor = (article) => [
-  `‘${article.title}(${article.englishTitle})’`,
-  `${article.title}(${article.englishTitle})`,
-  `‘${article.title}’`,
-];
+const labelsFor = (article) => article.title === article.englishTitle
+  ? [`‘${article.title}’`, article.title]
+  : [`‘${article.title}(${article.englishTitle})’`, `${article.title}(${article.englishTitle})`, `‘${article.title}’`];
 
 export function countParticleIssues(article) {
   const counts = { object: 0, topic: 0, subject: 0, conjunction: 0, direction: 0 };

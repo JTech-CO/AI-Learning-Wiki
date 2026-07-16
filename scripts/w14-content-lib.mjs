@@ -246,7 +246,7 @@ function buildBodies(topic) {
   const fact = topicFacts[topic.id];
   const domain = context[topic.primaryCategory];
   if (!fact || !domain) throw new Error(`${topic.id}: W14 fact profile or category context missing`);
-  const name = `‘${topic.titleKo}(${topic.titleEn})’`;
+  const name = topic.titleKo === topic.titleEn ? `‘${topic.titleKo}’` : `‘${topic.titleKo}(${topic.titleEn})’`;
   const links = categoryLinks[topic.primaryCategory];
   const variant = (sectionId, offset = 0) => variants[(hashIndex(`${topic.id}:${sectionId}`, variants.length) + offset) % variants.length];
   const commonBoundary = `${name}를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.`;

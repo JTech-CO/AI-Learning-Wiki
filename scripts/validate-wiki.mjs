@@ -26,6 +26,10 @@ const aliases = new Map();
 for (const article of articles) {
   if (!validateArticle(article)) errors.push(`${article.id}: ${ajv.errorsText(validateArticle.errors)}`);
   const articleChars = article.sections.reduce((sum, section) => sum + section.body.length, 0);
+  if (article.title.localeCompare(article.englishTitle, undefined, { sensitivity: 'accent' }) === 0) {
+    const redundantLabels = [`${article.title}(${article.englishTitle})`, `${article.title} (${article.englishTitle})`];
+    if (article.sections.some((section) => redundantLabels.some((label) => section.body.includes(label)))) errors.push(`${article.id}: redundant identical Korean/English title in body`);
+  }
   if (article.sections.length < 10) errors.push(`${article.id}: expected at least 10 sections`);
   if (articleChars < 2400) errors.push(`${article.id}: article body too short (${articleChars})`);
   if (article.sections.some((section) => /트랜스포머은|개인정보 보호을|Temperature은|Temperature을|소프트맥스은/.test(section.body))) errors.push(`${article.id}: contextual Korean particle error`);
