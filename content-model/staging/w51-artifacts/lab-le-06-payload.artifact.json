@@ -1,0 +1,50 @@
+{
+  "id": "lab-le-06-payload",
+  "version": 1,
+  "title": "벤치마크 타당도 · LLM 평가와 관측성 API 요청 본문",
+  "summary": "벤치마크 타당도 관련 설계와 운영 결정을 재현 가능하게 검토하기 위한 API 요청 본문 자료다.",
+  "type": "payload",
+  "language": "JSON",
+  "runtime": "JSON 호환 HTTP 클라이언트",
+  "files": [
+    {
+      "path": "lab-le-06-payload.json",
+      "content": "{\n  \"topic\": \"벤치마크 타당도\",\n  \"course\": \"llm-evaluation\",\n  \"objective\": \"evidence-backed-review\",\n  \"inputs\": {\n    \"evidence_uri\": \"https://example.invalid/evidence.json\",\n    \"risk_level\": \"medium\"\n  },\n  \"controls\": {\n    \"human_approval\": true,\n    \"redact_sensitive_data\": true\n  }\n}\n",
+      "language": "JSON"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "파일을 격리된 시험 환경에 저장한다.",
+    "실제 데이터 대신 비식별 시험 데이터로 검증한다.",
+    "검증 결과와 승인자를 변경 기록에 남긴다."
+  ],
+  "validation": {
+    "method": "parse",
+    "command": null,
+    "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+  },
+  "securityNotes": [
+    "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+    "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+  ],
+  "tags": [
+    "평가",
+    "테스트",
+    "데이터 분석"
+  ],
+  "courseIds": [
+    "llm-evaluation"
+  ],
+  "relatedWikiSlugs": [
+    "benchmark-validity"
+  ],
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-16"
+}

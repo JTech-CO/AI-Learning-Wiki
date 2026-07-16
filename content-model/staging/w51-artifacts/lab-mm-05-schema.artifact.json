@@ -1,0 +1,50 @@
+{
+  "id": "lab-mm-05-schema",
+  "version": 1,
+  "title": "교차 배열 멀티모달 데이터 · 멀티모달 AI 시스템 출력 스키마",
+  "summary": "교차 배열 멀티모달 데이터 관련 설계와 운영 결정을 재현 가능하게 검토하기 위한 출력 스키마 자료다.",
+  "type": "schema",
+  "language": "JSON Schema",
+  "runtime": "JSON Schema Draft 2020-12 검증기",
+  "files": [
+    {
+      "path": "lab-mm-05-schema.schema.json",
+      "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"교차 배열 멀티모달 데이터 검토 결과\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"decision\",\n    \"evidence\",\n    \"risks\",\n    \"actions\"\n  ],\n  \"properties\": {\n    \"decision\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"risks\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"actions\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 1\n    },\n    \"approved\": {\n      \"type\": \"boolean\",\n      \"default\": false\n    }\n  }\n}\n",
+      "language": "JSON Schema"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "파일을 격리된 시험 환경에 저장한다.",
+    "실제 데이터 대신 비식별 시험 데이터로 검증한다.",
+    "검증 결과와 승인자를 변경 기록에 남긴다."
+  ],
+  "validation": {
+    "method": "parse",
+    "command": null,
+    "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+  },
+  "securityNotes": [
+    "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+    "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+  ],
+  "tags": [
+    "멀티모달",
+    "이미지",
+    "오디오"
+  ],
+  "courseIds": [
+    "multimodal-systems"
+  ],
+  "relatedWikiSlugs": [
+    "interleaved-multimodal-data"
+  ],
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-16"
+}

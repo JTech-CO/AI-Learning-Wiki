@@ -1,0 +1,50 @@
+{
+  "id": "lab-ps-01-code",
+  "version": 1,
+  "title": "프롬프트 · 프롬프트 시스템 설계 검증 유틸리티",
+  "summary": "프롬프트 관련 설계와 운영 결정을 재현 가능하게 검토하기 위한 검증 유틸리티 자료다.",
+  "type": "code",
+  "language": "Python",
+  "runtime": "Python 3.11 이상 표준 라이브러리",
+  "files": [
+    {
+      "path": "lab-ps-01-code.py",
+      "content": "\"\"\"프롬프트 입력 레코드의 필수 필드와 승인 상태를 점검한다.\"\"\"\nfrom dataclasses import dataclass\nfrom typing import Any\n\nTOPIC = \"프롬프트\"\nREQUIRED_FIELDS = (\"evidence\", \"owner\", \"status\")\n\n@dataclass(frozen=True)\nclass CheckResult:\n    valid: bool\n    missing: tuple[str, ...]\n\ndef validate_record(record: dict[str, Any]) -> CheckResult:\n    missing = tuple(field for field in REQUIRED_FIELDS if not record.get(field))\n    return CheckResult(valid=not missing, missing=missing)\n\nif __name__ == \"__main__\":\n    sample = {\"evidence\": \"evaluation.json\", \"owner\": \"reviewer\", \"status\": \"pending\"}\n    result = validate_record(sample)\n    print({\"topic\": TOPIC, \"valid\": result.valid, \"missing\": result.missing})\n",
+      "language": "Python"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "파일을 격리된 시험 환경에 저장한다.",
+    "실제 데이터 대신 비식별 시험 데이터로 검증한다.",
+    "검증 결과와 승인자를 변경 기록에 남긴다."
+  ],
+  "validation": {
+    "method": "syntax",
+    "command": "python -m py_compile lab-ps-01-code.py",
+    "expectedResult": "구문 오류 없이 컴파일되고 시험 레코드가 valid=true를 출력한다."
+  },
+  "securityNotes": [
+    "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+    "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+  ],
+  "tags": [
+    "프롬프트 설계",
+    "구조화 출력",
+    "테스트"
+  ],
+  "courseIds": [
+    "prompt-systems"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-16"
+}

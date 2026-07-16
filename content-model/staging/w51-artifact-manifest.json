@@ -1,0 +1,771 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W51",
+  "stagedAt": "2026-07-16",
+  "status": "technical-review-staged",
+  "counts": {
+    "artifacts": 95
+  },
+  "staged": [
+    {
+      "id": "lab-ps-01-code",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt",
+      "type": "code",
+      "filePath": "lab-ps-01-code.py",
+      "contentSha256": "e91069563f2e8a964f43e55d9e0ff63cb38e9fcf2524eac6382af1656d085867"
+    },
+    {
+      "id": "lab-ps-02-config",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-engineering",
+      "type": "config",
+      "filePath": "lab-ps-02-config.yaml",
+      "contentSha256": "aa26baa1f02e455ed8826f8d35b7aac7ac9ab84ee3a81cc49a069ffcc00f8655"
+    },
+    {
+      "id": "lab-ps-03-query",
+      "courseId": "prompt-systems",
+      "wikiSlug": "system-prompt",
+      "type": "query",
+      "filePath": "lab-ps-03-query.sql",
+      "contentSha256": "9d6ef67db17418f04aae79b8a4e25cb37fe100c104d4bad077323cd00e1589ff"
+    },
+    {
+      "id": "lab-ps-04-payload",
+      "courseId": "prompt-systems",
+      "wikiSlug": "user-prompt",
+      "type": "payload",
+      "filePath": "lab-ps-04-payload.json",
+      "contentSha256": "c1fe8ba628981b303b8e399acbe31fe76ad128e0b75fe81c228f87efbb271550"
+    },
+    {
+      "id": "lab-ps-05-schema",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-template",
+      "type": "schema",
+      "filePath": "lab-ps-05-schema.schema.json",
+      "contentSha256": "650bc64dc322231d2402dcb3c6aa87ac2640313189e424ffc7a17e8aab6e5c37"
+    },
+    {
+      "id": "lab-ps-06-workflow",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-delimiter",
+      "type": "workflow",
+      "filePath": "lab-ps-06-workflow.workflow.yaml",
+      "contentSha256": "f9721b996eddb7e48db2afeb03ddb23876c4682c6c8550cde94c5acfcf6ae5ff"
+    },
+    {
+      "id": "lab-ps-07-template",
+      "courseId": "prompt-systems",
+      "wikiSlug": "role-prompting",
+      "type": "template",
+      "filePath": "lab-ps-07-template.md",
+      "contentSha256": "cd7107b9fca5863cdf655558bda6970435e7247c3652550277e4e38011bb3e07"
+    },
+    {
+      "id": "lab-ps-08-code",
+      "courseId": "prompt-systems",
+      "wikiSlug": "zero-shot-prompting",
+      "type": "code",
+      "filePath": "lab-ps-08-code.py",
+      "contentSha256": "3a8a6df56dfd2997f06b2a224fd4c5ea0d3582b7c985e7303c1fed4642250500"
+    },
+    {
+      "id": "lab-ps-09-config",
+      "courseId": "prompt-systems",
+      "wikiSlug": "few-shot-prompting",
+      "type": "config",
+      "filePath": "lab-ps-09-config.yaml",
+      "contentSha256": "87e204b7920ab45b9b32ebdb0711809398e6e21e0a241ca8c22753fea5efa2e9"
+    },
+    {
+      "id": "lab-ps-10-query",
+      "courseId": "prompt-systems",
+      "wikiSlug": "chain-of-thought-prompting",
+      "type": "query",
+      "filePath": "lab-ps-10-query.sql",
+      "contentSha256": "c7590fe48e48a24030f9a503ff03d80e1194f6cd6562fda06e8886b8251df9e9"
+    },
+    {
+      "id": "lab-ps-11-payload",
+      "courseId": "prompt-systems",
+      "wikiSlug": "context-engineering",
+      "type": "payload",
+      "filePath": "lab-ps-11-payload.json",
+      "contentSha256": "e16a535968b620cd590af4344a6901cb1b028dfc1e0bed85ea412b5e15ee970e"
+    },
+    {
+      "id": "lab-ps-12-schema",
+      "courseId": "prompt-systems",
+      "wikiSlug": "context-window",
+      "type": "schema",
+      "filePath": "lab-ps-12-schema.schema.json",
+      "contentSha256": "e73ba7773fd2322f69348737b035d1b19249a16fbc7cf8bba0212e3d844f6614"
+    },
+    {
+      "id": "lab-le-01-workflow",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation",
+      "type": "workflow",
+      "filePath": "lab-le-01-workflow.workflow.yaml",
+      "contentSha256": "cc78814c398c1ed18e0b089da840e5295de5a9a94fcb0e84491efbbcd5c2c6a3"
+    },
+    {
+      "id": "lab-le-02-template",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "metric",
+      "type": "template",
+      "filePath": "lab-le-02-template.md",
+      "contentSha256": "12a8eb32d21600c47fe29d2a66617188514834e3fa5adc08efa05f101f90ad75"
+    },
+    {
+      "id": "lab-le-03-code",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark",
+      "type": "code",
+      "filePath": "lab-le-03-code.py",
+      "contentSha256": "82bb68b2e72eee23205e165697a42b0042f594d8ec95a1b82d00dd822ef30712"
+    },
+    {
+      "id": "lab-le-04-config",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-dataset",
+      "type": "config",
+      "filePath": "lab-le-04-config.yaml",
+      "contentSha256": "cb7b61fa2bf2f30d33c1d0bd64a203e76ac591078f654acbf4ab9db5a027be02"
+    },
+    {
+      "id": "lab-le-05-query",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-suite",
+      "type": "query",
+      "filePath": "lab-le-05-query.sql",
+      "contentSha256": "a05c0cef5d5970f93e7886fac4cfcffe75720cc3d27b7c9801ff241400993385"
+    },
+    {
+      "id": "lab-le-06-payload",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-validity",
+      "type": "payload",
+      "filePath": "lab-le-06-payload.json",
+      "contentSha256": "52094fc80a5aa3f0e7255fc79563eded7edce76bc81e81e15cf972f6c41002c6"
+    },
+    {
+      "id": "lab-le-07-schema",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-contamination",
+      "type": "schema",
+      "filePath": "lab-le-07-schema.schema.json",
+      "contentSha256": "0fa6f2981c097796dddaf04e76eee46d22bc04a4a5a1a738ce4ef3f2f302cf25"
+    },
+    {
+      "id": "lab-le-08-workflow",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-rubric",
+      "type": "workflow",
+      "filePath": "lab-le-08-workflow.workflow.yaml",
+      "contentSha256": "17c5af4f15ac0233319db44adc4028167a115dede61af175afe428f23b8e034c"
+    },
+    {
+      "id": "lab-le-09-template",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-sampling",
+      "type": "template",
+      "filePath": "lab-le-09-template.md",
+      "contentSha256": "b3a0ca73ab0c7612809f8b282baf496b4b166e46afd9f3095e3cc39b4c4031cc"
+    },
+    {
+      "id": "lab-le-10-code",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-uncertainty",
+      "type": "code",
+      "filePath": "lab-le-10-code.py",
+      "contentSha256": "f18314b7bfab903ec25c8489a4e94806314892e5b1c21220c5c9174b9c66926b"
+    },
+    {
+      "id": "lab-le-11-config",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "reference-based-evaluation",
+      "type": "config",
+      "filePath": "lab-le-11-config.yaml",
+      "contentSha256": "88d05c631543812485f4c3d218013cd42e017fd676322aabfeb0852bc006649c"
+    },
+    {
+      "id": "lab-le-12-query",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "reference-free-evaluation",
+      "type": "query",
+      "filePath": "lab-le-12-query.sql",
+      "contentSha256": "979e6e0e7dcc86bc9bfdf9c9ff937934d8edd42794d814824a92603ddac02697"
+    },
+    {
+      "id": "lab-lp-01-payload",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference",
+      "type": "payload",
+      "filePath": "lab-lp-01-payload.json",
+      "contentSha256": "f29e75af589177e5f80bbfa15b15db1c2ec90405264a80ad22f98b74399c4e8e"
+    },
+    {
+      "id": "lab-lp-02-schema",
+      "courseId": "llmops-production",
+      "wikiSlug": "model-serving",
+      "type": "schema",
+      "filePath": "lab-lp-02-schema.schema.json",
+      "contentSha256": "e7410544af11c340ab7d1ac909058fa62c815ab10b5932b4912fd4c7af8943d7"
+    },
+    {
+      "id": "lab-lp-03-workflow",
+      "courseId": "llmops-production",
+      "wikiSlug": "model-serving-platform",
+      "type": "workflow",
+      "filePath": "lab-lp-03-workflow.workflow.yaml",
+      "contentSha256": "62d3487f78ff33ba72a27cb8ee61150b69d61f2013df9b3f5255d7650217b973"
+    },
+    {
+      "id": "lab-lp-04-template",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-server",
+      "type": "template",
+      "filePath": "lab-lp-04-template.md",
+      "contentSha256": "daf04eae3f7101a51b674d3d056f69f5478dcb6e3f151a0e7c2a288e0c0b4453"
+    },
+    {
+      "id": "lab-lp-05-code",
+      "courseId": "llmops-production",
+      "wikiSlug": "online-inference",
+      "type": "code",
+      "filePath": "lab-lp-05-code.py",
+      "contentSha256": "c0c1396ffae65e62b2c17646a9b73b103cf6cd18975cb6725d34f95ca4639f68"
+    },
+    {
+      "id": "lab-lp-06-config",
+      "courseId": "llmops-production",
+      "wikiSlug": "batch-inference",
+      "type": "config",
+      "filePath": "lab-lp-06-config.yaml",
+      "contentSha256": "0d23d0d5f5489d743e4046edb9e0459ac4b9a7bdffd76bd4fb607c958d3888e3"
+    },
+    {
+      "id": "lab-lp-07-query",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-endpoint",
+      "type": "query",
+      "filePath": "lab-lp-07-query.sql",
+      "contentSha256": "459faa76378c535fd2c4f7b71870c5fed16ed8ca4cc45f4520bf6759c9d02c9d"
+    },
+    {
+      "id": "lab-lp-08-payload",
+      "courseId": "llmops-production",
+      "wikiSlug": "throughput",
+      "type": "payload",
+      "filePath": "lab-lp-08-payload.json",
+      "contentSha256": "f822c289a40c4b6c651b99ab2db2fc8e5d353869d82d62d21e11ef8a99d3abba"
+    },
+    {
+      "id": "lab-lp-09-schema",
+      "courseId": "llmops-production",
+      "wikiSlug": "latency",
+      "type": "schema",
+      "filePath": "lab-lp-09-schema.schema.json",
+      "contentSha256": "666a7a18136c96544d01664f95176bc1fe18ef207442cfeeedc3155df61c16d5"
+    },
+    {
+      "id": "lab-lp-10-workflow",
+      "courseId": "llmops-production",
+      "wikiSlug": "inter-token-latency",
+      "type": "workflow",
+      "filePath": "lab-lp-10-workflow.workflow.yaml",
+      "contentSha256": "9ba85a1330373c70303c6be54cf2631f5bea18ae6c3a3bdc2e566122bcc200df"
+    },
+    {
+      "id": "lab-lp-11-template",
+      "courseId": "llmops-production",
+      "wikiSlug": "tail-latency",
+      "type": "template",
+      "filePath": "lab-lp-11-template.md",
+      "contentSha256": "cedab4ebda29f02a3e95b842820d1d551aa322cae0715001022bee27ce853885"
+    },
+    {
+      "id": "lab-lp-12-code",
+      "courseId": "llmops-production",
+      "wikiSlug": "latency-throughput-tradeoff",
+      "type": "code",
+      "filePath": "lab-lp-12-code.py",
+      "contentSha256": "c3216e57ea7f63cf699d47dbb65fd5e3467152201e65f8ecec3b4856d57b7b7c"
+    },
+    {
+      "id": "lab-ar-01-config",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag",
+      "type": "config",
+      "filePath": "lab-ar-01-config.yaml",
+      "contentSha256": "8e3426887a9d6660363a7213f7c6313a8f2d6b008344fe7d2b4b1857b487c5a3"
+    },
+    {
+      "id": "lab-ar-02-query",
+      "courseId": "advanced-rag",
+      "wikiSlug": "document-retrieval",
+      "type": "query",
+      "filePath": "lab-ar-02-query.sql",
+      "contentSha256": "e4274e3055b9110412c62771f44ff9a2a00e629e20900a8d80bae53e80bb490d"
+    },
+    {
+      "id": "lab-ar-03-payload",
+      "courseId": "advanced-rag",
+      "wikiSlug": "lexical-retrieval",
+      "type": "payload",
+      "filePath": "lab-ar-03-payload.json",
+      "contentSha256": "b6759a287566e0502ef4501468c17a7ae3764cdc332ad219ad536e3037fba05d"
+    },
+    {
+      "id": "lab-ar-04-schema",
+      "courseId": "advanced-rag",
+      "wikiSlug": "dense-retrieval",
+      "type": "schema",
+      "filePath": "lab-ar-04-schema.schema.json",
+      "contentSha256": "ce9b0fe14c7098347850a96fef3ce8dcce16dd6b6a614e914ac2a507197bd7f2"
+    },
+    {
+      "id": "lab-ar-05-workflow",
+      "courseId": "advanced-rag",
+      "wikiSlug": "hybrid-rag",
+      "type": "workflow",
+      "filePath": "lab-ar-05-workflow.workflow.yaml",
+      "contentSha256": "7985a13e77da0b3f8ef56250cbd1aaaf897ebfb2e75780ed336512087624d0a7"
+    },
+    {
+      "id": "lab-ar-06-template",
+      "courseId": "advanced-rag",
+      "wikiSlug": "embedding-model",
+      "type": "template",
+      "filePath": "lab-ar-06-template.md",
+      "contentSha256": "53dbca3e0c9962bc535b0034257019c0bf9ae2775fef29a34f04c8e6cfefcb9b"
+    },
+    {
+      "id": "lab-ar-07-code",
+      "courseId": "advanced-rag",
+      "wikiSlug": "document-embedding",
+      "type": "code",
+      "filePath": "lab-ar-07-code.py",
+      "contentSha256": "9880277a1f60e92bf2da0b900238d2c69bf8c762f8b8cf30b4605ab479d01416"
+    },
+    {
+      "id": "lab-ar-08-config",
+      "courseId": "advanced-rag",
+      "wikiSlug": "query-embedding",
+      "type": "config",
+      "filePath": "lab-ar-08-config.yaml",
+      "contentSha256": "8a1d8d9643e2365ab27ac057a149fa702abc09789ed7d0ac6c4869741687631e"
+    },
+    {
+      "id": "lab-ar-09-query",
+      "courseId": "advanced-rag",
+      "wikiSlug": "vector-index",
+      "type": "query",
+      "filePath": "lab-ar-09-query.sql",
+      "contentSha256": "cf43e758bbdca285ad003e533437935c15429962d9d6088d78a2cb92b74aaf3b"
+    },
+    {
+      "id": "lab-ar-10-payload",
+      "courseId": "advanced-rag",
+      "wikiSlug": "retrieval-filtering",
+      "type": "payload",
+      "filePath": "lab-ar-10-payload.json",
+      "contentSha256": "a8085f2f9b5604f848bdf33dc1925b115c53758fa7c12dd11115cf23516c01ce"
+    },
+    {
+      "id": "lab-ar-11-schema",
+      "courseId": "advanced-rag",
+      "wikiSlug": "reranker",
+      "type": "schema",
+      "filePath": "lab-ar-11-schema.schema.json",
+      "contentSha256": "cf1b7d33bd213361dfab0d49e16df10217289fbb796c1588e6576f0150ed609b"
+    },
+    {
+      "id": "lab-ar-12-workflow",
+      "courseId": "advanced-rag",
+      "wikiSlug": "cross-encoder-reranker",
+      "type": "workflow",
+      "filePath": "lab-ar-12-workflow.workflow.yaml",
+      "contentSha256": "d03b6b19e87e3d055d203d2fad28f9ec203fb48d22981303c1148205b7d59263"
+    },
+    {
+      "id": "lab-pa-01-template",
+      "courseId": "production-agents",
+      "wikiSlug": "ai-agent",
+      "type": "template",
+      "filePath": "lab-pa-01-template.md",
+      "contentSha256": "d0fe889a8ab4d90d0b74e895bb8a1cdc766c506186ff2b1baa8b51b7eeb14e5c"
+    },
+    {
+      "id": "lab-pa-02-code",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-loop",
+      "type": "code",
+      "filePath": "lab-pa-02-code.py",
+      "contentSha256": "d90c3a2fe66fe6e621a527e91b356cd1d134417288b18ad445f33297b7695a4d"
+    },
+    {
+      "id": "lab-pa-03-config",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-goal",
+      "type": "config",
+      "filePath": "lab-pa-03-config.yaml",
+      "contentSha256": "e6e04cbd60dbb4c7f1b0f6aded46b9e16ccec4127a1cbd1c515a5efcf9f97069"
+    },
+    {
+      "id": "lab-pa-04-query",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-task-decomposition",
+      "type": "query",
+      "filePath": "lab-pa-04-query.sql",
+      "contentSha256": "42fbf0dfc8991d1041be154baaccea9fb52084cb7414108b08798f4332548310"
+    },
+    {
+      "id": "lab-pa-05-payload",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-deliberation",
+      "type": "payload",
+      "filePath": "lab-pa-05-payload.json",
+      "contentSha256": "38dee632381e375c195ea5e6e56dced8e9715d7fe28a1e8fb731482ba6ae4fbb"
+    },
+    {
+      "id": "lab-pa-06-schema",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-plan-quality",
+      "type": "schema",
+      "filePath": "lab-pa-06-schema.schema.json",
+      "contentSha256": "3089cbeaf9a1ace5f0dab3d7b88d81e5aa3497b198d6faf5a27b1bb2c3792437"
+    },
+    {
+      "id": "lab-pa-07-workflow",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-executor",
+      "type": "workflow",
+      "filePath": "lab-pa-07-workflow.workflow.yaml",
+      "contentSha256": "c7a6777f368a769ce917c7dba9b4d6f34aa749680db5a889d808a2091372abda"
+    },
+    {
+      "id": "lab-pa-08-template",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-tool",
+      "type": "template",
+      "filePath": "lab-pa-08-template.md",
+      "contentSha256": "75d05c97378ac2442fd82554e4ae8533a4c61e67dfc8fe25948798f8ce218b3f"
+    },
+    {
+      "id": "lab-pa-09-code",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-tool-accuracy",
+      "type": "code",
+      "filePath": "lab-pa-09-code.py",
+      "contentSha256": "f30a006c2a62b457a96676813a3c5481e5e2a2788fd9077b6f9511e24921af3b"
+    },
+    {
+      "id": "lab-pa-10-config",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-runtime",
+      "type": "config",
+      "filePath": "lab-pa-10-config.yaml",
+      "contentSha256": "13dc75118ce94ddb1f5b1faf5fe54cb0fa956ab7ddaaf919d8a11a12639942fd"
+    },
+    {
+      "id": "lab-pa-11-query",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-memory",
+      "type": "query",
+      "filePath": "lab-pa-11-query.sql",
+      "contentSha256": "36c45d4b8510a96e5d20dc71b832fb1a809a3bb584afc90b27746632446982cf"
+    },
+    {
+      "id": "lab-pa-12-payload",
+      "courseId": "production-agents",
+      "wikiSlug": "episodic-agent-memory",
+      "type": "payload",
+      "filePath": "lab-pa-12-payload.json",
+      "contentSha256": "da61878d3e1747d98592ddb35a254830905b57c507d2c70a78f739d4fc349f93"
+    },
+    {
+      "id": "lab-pt-01-schema",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "fine-tuning",
+      "type": "schema",
+      "filePath": "lab-pt-01-schema.schema.json",
+      "contentSha256": "cacab7740fd9d76cbb581d84538efe79a33e72f0c63c271c8f05e1e5a5dd75aa"
+    },
+    {
+      "id": "lab-pt-02-workflow",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "supervised-fine-tuning",
+      "type": "workflow",
+      "filePath": "lab-pt-02-workflow.workflow.yaml",
+      "contentSha256": "d47af90584caf94bf47b7fcd7f9b4f394bb1aacc7f1d996136d8a1cd378dec7f"
+    },
+    {
+      "id": "lab-pt-03-template",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "instruction-tuning",
+      "type": "template",
+      "filePath": "lab-pt-03-template.md",
+      "contentSha256": "90d3f38617ae91d71c937076edd8653a8b64a3d4e86b43d92b7e14a048e099fa"
+    },
+    {
+      "id": "lab-pt-04-code",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "preference-data",
+      "type": "code",
+      "filePath": "lab-pt-04-code.py",
+      "contentSha256": "11e42128ca7ca44140164d6cf710ba9c1883c9f4e04118ba74f71160a1700a54"
+    },
+    {
+      "id": "lab-pt-05-config",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "pairwise-preference-ranking",
+      "type": "config",
+      "filePath": "lab-pt-05-config.yaml",
+      "contentSha256": "6e5aa7db541254dd4e4abb2664a9b99cd3ddf2f5a30ea0955df2bb173768b196"
+    },
+    {
+      "id": "lab-pt-06-query",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reward-model",
+      "type": "query",
+      "filePath": "lab-pt-06-query.sql",
+      "contentSha256": "b57097a79521e41d71cdd98625bafcc5d40ca18be66c147ba3b9bd1c919f502f"
+    },
+    {
+      "id": "lab-pt-07-payload",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "outcome-reward-model",
+      "type": "payload",
+      "filePath": "lab-pt-07-payload.json",
+      "contentSha256": "73f92fb6aebc92d9e505606f98e6119e564567633ea413bff687200f0974da3f"
+    },
+    {
+      "id": "lab-pt-08-schema",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "process-reward-model",
+      "type": "schema",
+      "filePath": "lab-pt-08-schema.schema.json",
+      "contentSha256": "9ab5e9549c1c110f27c081077914eda0420ecfd6f742ef43f0c4d296afa3da7a"
+    },
+    {
+      "id": "lab-pt-09-workflow",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "rlhf",
+      "type": "workflow",
+      "filePath": "lab-pt-09-workflow.workflow.yaml",
+      "contentSha256": "c3aa363e2b960cbd03df43dcd92c9df37394015bdf1c87b0b3f3a2a4ca9ac1ac"
+    },
+    {
+      "id": "lab-pt-10-template",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reinforcement-learning-from-ai-feedback",
+      "type": "template",
+      "filePath": "lab-pt-10-template.md",
+      "contentSha256": "4e7b45eb9d5374b25f74f865b2313f9eda6c88a18e421a874d3a71c0451c2e50"
+    },
+    {
+      "id": "lab-pt-11-code",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "dpo",
+      "type": "code",
+      "filePath": "lab-pt-11-code.py",
+      "contentSha256": "684481cfef1f590e094327e3af6d643ac5b3934b3ac3cbfc62ccdbe154826c25"
+    },
+    {
+      "id": "lab-pt-12-config",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "offline-preference-learning",
+      "type": "config",
+      "filePath": "lab-pt-12-config.yaml",
+      "contentSha256": "b8eb428b1b15d48465086c77e928f5e23efd61a01c021d79df40dbfe76ee6e2b"
+    },
+    {
+      "id": "lab-sr-01-schema",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-safety",
+      "type": "schema",
+      "filePath": "lab-sr-01-schema.schema.json",
+      "contentSha256": "c2c6de809ae2dc3c2102c7256c99b386b28e9096447a101b62ccb5f4ae7a954b"
+    },
+    {
+      "id": "lab-sr-02-workflow",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-threat-modeling",
+      "type": "workflow",
+      "filePath": "lab-sr-02-workflow.workflow.yaml",
+      "contentSha256": "2db93cf59e2746b3fdb0246438c2025f8c9405657e149d833d9e8baeb1900181"
+    },
+    {
+      "id": "lab-sr-03-code",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-risk-assessment",
+      "type": "code",
+      "filePath": "lab-sr-03-code.py",
+      "contentSha256": "919f8335a48783926282840e61af8ba7496f923556f194ece4f2ec45bf18c724"
+    },
+    {
+      "id": "lab-sr-04-config",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-risk-register",
+      "type": "config",
+      "filePath": "lab-sr-04-config.yaml",
+      "contentSha256": "0def87b9fd95a4217f49b25c83c387f8e1a38cae0f1bf0994462d017a13964f6"
+    },
+    {
+      "id": "lab-sr-05-schema",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-red-teaming",
+      "type": "schema",
+      "filePath": "lab-sr-05-schema.schema.json",
+      "contentSha256": "a26725d4be031e09dd45149266bbd5657ae95c141e600ea7978fbd94b9d2ed30"
+    },
+    {
+      "id": "lab-sr-06-workflow",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "adversarial-testing",
+      "type": "workflow",
+      "filePath": "lab-sr-06-workflow.workflow.yaml",
+      "contentSha256": "f3f8c802b82914c5f94195e103fa90472ecbb1a4aecb861cf518db53477f67dc"
+    },
+    {
+      "id": "lab-sr-07-code",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "adversarial-example",
+      "type": "code",
+      "filePath": "lab-sr-07-code.py",
+      "contentSha256": "682a10a7251724fe3723cae0f78a04cb7c91f2db310f24bbb0197dbc5ccfa23c"
+    },
+    {
+      "id": "lab-sr-08-config",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "prompt-injection",
+      "type": "config",
+      "filePath": "lab-sr-08-config.yaml",
+      "contentSha256": "bbae050935d76016e704be418cdbd90ad123faad88dc725a1291ae3616f45713"
+    },
+    {
+      "id": "lab-sr-09-schema",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "indirect-prompt-injection",
+      "type": "schema",
+      "filePath": "lab-sr-09-schema.schema.json",
+      "contentSha256": "3327a26041daa08c4ff8786a2fe5e0613f2eaf232306b4c2e5200ad94f635b57"
+    },
+    {
+      "id": "lab-sr-10-workflow",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "jailbreak",
+      "type": "workflow",
+      "filePath": "lab-sr-10-workflow.workflow.yaml",
+      "contentSha256": "384c7e4e1368fd17fb2c864ad6b32e8abbd3b922b7a440971d217d96e599a407"
+    },
+    {
+      "id": "lab-sr-11-code",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "agent-security",
+      "type": "code",
+      "filePath": "lab-sr-11-code.py",
+      "contentSha256": "d7a57aae845f5b2e4935792ec03d0ae6ed9e3a237edc3ca172983f85e79e8ba3"
+    },
+    {
+      "id": "lab-sr-12-config",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "guardrail",
+      "type": "config",
+      "filePath": "lab-sr-12-config.yaml",
+      "contentSha256": "a0591141e435448db199e0aa359fcc912c244953b6452242ca895c205d0fd0da"
+    },
+    {
+      "id": "lab-mm-01-schema",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-model",
+      "type": "schema",
+      "filePath": "lab-mm-01-schema.schema.json",
+      "contentSha256": "522209d3342efdf92d0ab90109300076084bd0bf3b18d1a77e60dcc4ddba19c0"
+    },
+    {
+      "id": "lab-mm-02-workflow",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-language-model",
+      "type": "workflow",
+      "filePath": "lab-mm-02-workflow.workflow.yaml",
+      "contentSha256": "653a71b60814122499567f7c31ef6915763c76386c419185ffa9129bfe58bdf0"
+    },
+    {
+      "id": "lab-mm-03-code",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-transformer",
+      "type": "code",
+      "filePath": "lab-mm-03-code.py",
+      "contentSha256": "ab729abec4f68c0ea5449a817e190d6d8d3628cfa36f8599a5d21371cab43640"
+    },
+    {
+      "id": "lab-mm-04-config",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-tokenizer",
+      "type": "config",
+      "filePath": "lab-mm-04-config.yaml",
+      "contentSha256": "b4656899c6f1215428fd3ebb74c0ce409831b250cf3843058b91b9d63bc45857"
+    },
+    {
+      "id": "lab-mm-05-schema",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "interleaved-multimodal-data",
+      "type": "schema",
+      "filePath": "lab-mm-05-schema.schema.json",
+      "contentSha256": "285945489c47fdb8b08431f527da9e6694a2a95ff0021ad67261a9f91020ed32"
+    },
+    {
+      "id": "lab-mm-06-workflow",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "joint-embedding-space",
+      "type": "workflow",
+      "filePath": "lab-mm-06-workflow.workflow.yaml",
+      "contentSha256": "74d28fd5e9aed0151665ca2032abfef889b17752f6514ad6bbd59c55c02261e7"
+    },
+    {
+      "id": "lab-mm-07-code",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-embedding",
+      "type": "code",
+      "filePath": "lab-mm-07-code.py",
+      "contentSha256": "ca6d197d94056f8fc0845e86b6ee5a61c1662b8f6a13f2b2ef5fa6eec1efdea5"
+    },
+    {
+      "id": "lab-mm-08-code",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "cross-modal-alignment",
+      "type": "code",
+      "filePath": "lab-mm-08-code.py",
+      "contentSha256": "e393de0219f182a1c0a588418147e90b4527fbbe3c5416eaa600d4a88324a54b"
+    },
+    {
+      "id": "lab-mm-09-code",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "cross-modal-attention",
+      "type": "code",
+      "filePath": "lab-mm-09-code.py",
+      "contentSha256": "0cbd6470ee1bf3e77d0e75f840b100deeaad5083b37e9913f53192e53576c25c"
+    },
+    {
+      "id": "lab-mm-10-code",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-fusion",
+      "type": "code",
+      "filePath": "lab-mm-10-code.py",
+      "contentSha256": "3a0e4957bf362432cc5baec47f44514b790605f95a6434365936634882be378a"
+    },
+    {
+      "id": "lab-mm-11-code",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-instruction-tuning",
+      "type": "code",
+      "filePath": "lab-mm-11-code.py",
+      "contentSha256": "a8519cde0d43b89b628ca6657f97c4c8e9d673d80c49b0b137c8b18a2224e5b6"
+    }
+  ]
+}

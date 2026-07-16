@@ -1,0 +1,50 @@
+{
+  "id": "lab-pa-11-query",
+  "version": 1,
+  "title": "에이전트 메모리 · 프로덕션 AI 에이전트 관측 SQL",
+  "summary": "에이전트 메모리 관련 설계와 운영 결정을 재현 가능하게 검토하기 위한 관측 SQL 자료다.",
+  "type": "query",
+  "language": "SQL",
+  "runtime": "ANSI SQL 호환 분석 데이터베이스",
+  "files": [
+    {
+      "path": "lab-pa-11-query.sql",
+      "content": "-- 에이전트 메모리 운영 지표: 파라미터는 실행기가 바인딩한다.\nSELECT event_type, COUNT(*) AS event_count, AVG(latency_ms) AS avg_latency_ms\nFROM ai_system_events\nWHERE course_id = :course_id\n  AND occurred_at >= :window_start\nGROUP BY event_type\nORDER BY event_count DESC;\n",
+      "language": "SQL"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "파일을 격리된 시험 환경에 저장한다.",
+    "실제 데이터 대신 비식별 시험 데이터로 검증한다.",
+    "검증 결과와 승인자를 변경 기록에 남긴다."
+  ],
+  "validation": {
+    "method": "syntax",
+    "command": null,
+    "expectedResult": "형식 파서 또는 검토 절차가 오류 없이 완료되고 필수 필드가 확인된다."
+  },
+  "securityNotes": [
+    "인증 정보, 실제 개인 정보와 내부 비밀을 예제에 직접 기록하지 않는다.",
+    "외부 전송과 배포 전에는 변경 내용과 권한 범위를 사람이 검토한다."
+  ],
+  "tags": [
+    "AI 에이전트",
+    "자동화",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "production-agents"
+  ],
+  "relatedWikiSlugs": [
+    "agent-memory"
+  ],
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "draft",
+  "reviewedAt": "2026-07-16"
+}
