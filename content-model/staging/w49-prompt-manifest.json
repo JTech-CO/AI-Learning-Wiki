@@ -1,0 +1,2876 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W49",
+  "stagedAt": "2026-07-16",
+  "status": "editorial-staged",
+  "counts": {
+    "prompts": 358,
+    "exampleEnrichments": 28
+  },
+  "staged": [
+    {
+      "id": "pro-ps-01-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "a21e99fe84e516994ed18333e932a474ef41e74e80c5026a5292fb6b11b1622d"
+    },
+    {
+      "id": "pro-ps-02-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "00591a0817fcd3baf8afb719314f4f94d4d241789d85d08965d1bd6a55a40189"
+    },
+    {
+      "id": "pro-ps-03-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-engineering",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "71400eef0e7525c58f451efd135dc082dfa7a4c19217fbdd8db3dae228dccee9"
+    },
+    {
+      "id": "pro-ps-04-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-engineering",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "b0672d15bbe6ae71e49c49b5e07ca20c385662a66b7e3b8ef372f031a7bfb545"
+    },
+    {
+      "id": "pro-ps-05-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "system-prompt",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "f4bcbb7040aa4253105d7ef03a7219a20a894e6b54355cfe6001e10a4d24523a"
+    },
+    {
+      "id": "pro-ps-06-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "system-prompt",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "85de60a7078043a81c542e689e608fe3d09ca2e9f90460d16b8649309c6cf828"
+    },
+    {
+      "id": "pro-ps-07-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "user-prompt",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "f9a79f420ae53a2135d44f07a2028e79705e2fa76ccd212ddab1e17f54005a36"
+    },
+    {
+      "id": "pro-ps-08-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "user-prompt",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "11cd43a45f44d8f850dd4452ce0eac4291845b2169d01011c33b4e3fe8ed2fc7"
+    },
+    {
+      "id": "pro-ps-09-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-template",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "cb400010ddcb43b61716c19f6f602fc60a553f65288e0e2a21bf728f0c78f2dc"
+    },
+    {
+      "id": "pro-ps-10-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-template",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "6938b0e0e26b813892a58af4623b56fe1140eb646bc518597a6017aef3e974bc"
+    },
+    {
+      "id": "pro-ps-11-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-delimiter",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "addafb60fae2020a6b391414bbee5a54b8406eced340237e4f1fcb798820e331"
+    },
+    {
+      "id": "pro-ps-12-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-delimiter",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "12f738a2cd4e6047184b76fe495e2c2de5fafafcc859281ba0df96701f248a2c"
+    },
+    {
+      "id": "pro-ps-13-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "role-prompting",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "a2b44b085c336c92997a172f3c3b770d1f85983148d563239ceec57c9a5f6a8f"
+    },
+    {
+      "id": "pro-ps-14-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "role-prompting",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "c8e94f5ea0eddc01de90cdfc0ac5cc6a3efcdcd4b0412961fbaf3267a4d8bbc9"
+    },
+    {
+      "id": "pro-ps-15-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "zero-shot-prompting",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "babd6e8dab47494259980dbe866226c06f845e3a78e76e5f8fc3a2fca983b356"
+    },
+    {
+      "id": "pro-ps-16-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "zero-shot-prompting",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "b60809d3bba4cc86b85a92ca3ed1397349715812d04d7ba47a860601cc8e6fc5"
+    },
+    {
+      "id": "pro-ps-17-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "few-shot-prompting",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "e00ba2e961dc802d16e9608ce0892d2feb342858ba3dd82357bc121b400768ac"
+    },
+    {
+      "id": "pro-ps-18-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "few-shot-prompting",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "5667bd2b0e67f86efe0e71538f81c3b0b3469fe40812e594b0ed463708f18d24"
+    },
+    {
+      "id": "pro-ps-19-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "chain-of-thought-prompting",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "0ca1d32638903c944ead66dea1e16781ebb2ee36bd1dfec67d109fc1e3c62bee"
+    },
+    {
+      "id": "pro-ps-20-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "chain-of-thought-prompting",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "d02c19921c37a6823522f8d06cfb9e569f8d2fa476aa072d183fa44517000b16"
+    },
+    {
+      "id": "pro-ps-21-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "context-engineering",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "23cbe0ea49dfa34759e892b691899ec3a443273c888a856e6b10124ed3afb33c"
+    },
+    {
+      "id": "pro-ps-22-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "context-engineering",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "a4d9582625efd66db39bd95b733073598bd922cffe41efe3dbf58142f9ee0e9e"
+    },
+    {
+      "id": "pro-ps-23-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "context-window",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "738955ae7ac869d66a1aaa70e688772e72fc99850ec47ca6b210f18941e23e5b"
+    },
+    {
+      "id": "pro-ps-24-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "context-window",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "5496a6567a62163307c0141cfb669b651370ad4e3fd911a663dca27758f58503"
+    },
+    {
+      "id": "pro-ps-25-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "structured-output",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "dce76023c4ff282043a88e03c4c53457eff9f3db7e2e57da90c84298adcb566b"
+    },
+    {
+      "id": "pro-ps-26-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "structured-output",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "464d987016e2e5274a53429af50b937ca437797e808bf3a301c3fa0778590bd5"
+    },
+    {
+      "id": "pro-ps-27-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "json-schema",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "557f19b1817b9ecd023e25b4c4f74ceef0f471b119acfe18f465637415f97602"
+    },
+    {
+      "id": "pro-ps-28-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "json-schema",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "3525feac8e74633f5a2b64e740d868ffc3a99f649be4d6ece0dba7f2110e1547"
+    },
+    {
+      "id": "pro-ps-29-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "schema-validation",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "fdf6daa1fcfe7862a30f192dbec45a298c4cd95a4dd040e678eafa2211804f21"
+    },
+    {
+      "id": "pro-ps-30-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "schema-validation",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "6d8fc47a43fc5558e5e002d0a724b4fdac25e5c42eb0492e9ccfc7c1b313d77d"
+    },
+    {
+      "id": "pro-ps-31-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-chaining",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "26bb7c54da37c2804b5d03fff668bbd23dc67dd133e2096c8579b57b5bca6ff2"
+    },
+    {
+      "id": "pro-ps-32-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-chaining",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "3d4c4a84989985740ade61a06433300e0cd1ddba42a9501859c7cb6c777db113"
+    },
+    {
+      "id": "pro-ps-33-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-caching",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "49b6efdd649343414c0562511d398023569a53054e6de7bf4538e1a2e462a04b"
+    },
+    {
+      "id": "pro-ps-34-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-caching",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "234a8e883e13e13a8c76ae55c55e172adea085c592c87c9e83e4804f93286d05"
+    },
+    {
+      "id": "pro-ps-35-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-compression",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "f8e835becd1216c847964442b04e2a5bf5cf47da24c958426f5a37a92b7eb45f"
+    },
+    {
+      "id": "pro-ps-36-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-compression",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "a3e64b2399234dcae158b067c039eb6b2b13a20cff5f7717232105a41cd3f230"
+    },
+    {
+      "id": "pro-ps-37-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "automatic-prompt-optimization",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "a1a4f8ae9b99ecbfa4c517ff62407b799df77da9ebf8ac3c43781bfb16884c94"
+    },
+    {
+      "id": "pro-ps-38-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "automatic-prompt-optimization",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "c1326e7dbd7d27e17caf91fe9214adc6f33263a3a4b86f5a33c051ef9c831da9"
+    },
+    {
+      "id": "pro-ps-39-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-contract-testing",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "50cb26513fdd7eea15ba3529c554d19530b9e472b5474ceb3c9a9835df1128f0"
+    },
+    {
+      "id": "pro-ps-40-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-contract-testing",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "3d701526423c88622ee37100145384e4a11199420e6d1500e3ae9518fd493fba"
+    },
+    {
+      "id": "pro-ps-41-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "instruction-priority-architecture",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "5f4426f75e2ff978f01a0a18727384f2cd4eddb1f49bd9563bc590be734d964c"
+    },
+    {
+      "id": "pro-ps-42-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "instruction-priority-architecture",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "252302a6b0523b6688524a84421ac2989bc19d1fa38b41d76bbe4e42c3301e75"
+    },
+    {
+      "id": "pro-ps-43-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-release-governance",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "0e0634ef4a6d8372172b1db21c440d67c4660aa0ef79979bcff52864d20c0f81"
+    },
+    {
+      "id": "pro-ps-44-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-release-governance",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "fbde1fccc674dc617b11574680d4ffa42c31251ca70b632606ef6d61540744ec"
+    },
+    {
+      "id": "pro-ps-45-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "structured-output-recovery",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "7ce9a60cc1f2e3facbe2c392f45744a97d6d7a7f0cff22b73cc3cfec2fe790bb"
+    },
+    {
+      "id": "pro-ps-46-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "structured-output-recovery",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "b76dbffe9bcda9dc175841fd3947606e93cd40c00fdd0ce323fefa97138da1c6"
+    },
+    {
+      "id": "pro-ps-47-review",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-portfolio-observability",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "844a492fc12166c29b3f3d854aa27c0190e0ae91286b45eb83991179812e6e09"
+    },
+    {
+      "id": "pro-ps-48-ops",
+      "courseId": "prompt-systems",
+      "wikiSlug": "prompt-portfolio-observability",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "a15bac510bc3a157bd26852863beec186e889d7cb28346323a01bc34a4be908f"
+    },
+    {
+      "id": "pro-le-01-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "ad47b3dcea25d0dbbaee279b6b3bd9a14fa142cd4cbbb38993466660a6e02063"
+    },
+    {
+      "id": "pro-le-02-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "63694725106826d131c627b1de202af173295888d141d9c2030f8276cc49e5d4"
+    },
+    {
+      "id": "pro-le-03-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "metric",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "35c41a574fb654d30d12ac6ef00b6d292c732f72573b1f25939574200a213724"
+    },
+    {
+      "id": "pro-le-04-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "metric",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "5f8ff489b6b452cf6f623b02212a9c8d141a61fef08534c2a4ac1cb91e30367b"
+    },
+    {
+      "id": "pro-le-05-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "c4f4b9364202b37cb8a64760125f5b2c53ba3627b882b9f838eb5410920154ba"
+    },
+    {
+      "id": "pro-le-06-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "8d4bdf7892d46077711e0e3a2004c571ee6458278c040f23a21e96672f45a165"
+    },
+    {
+      "id": "pro-le-07-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-dataset",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "8d8138fe8223b623dcfe14dbcbb6d73c7b254990257880a1a811ad2519f2c79c"
+    },
+    {
+      "id": "pro-le-08-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-dataset",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "552218ed8ab54ec4634d7b1ee7296f0295d1478338ba7f7a15d1d6af25bb3b66"
+    },
+    {
+      "id": "pro-le-09-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-suite",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "7fa0283c362a4fa41d71b3302f0c39d942ae5ead95babea7d45ba40821916e32"
+    },
+    {
+      "id": "pro-le-10-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-suite",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "3f4ba0cda9484561960b556bea93bdc25c6b76cb5c042445bd9ccfece42bd428"
+    },
+    {
+      "id": "pro-le-11-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-validity",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "dd97b28dab6a742e4017a6c5b7995e6422c4871b7513b8b0fa0bb306e8d08fc3"
+    },
+    {
+      "id": "pro-le-12-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-validity",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "72576d1cfec01dd07e3d3e7f7d2fce916f5fd8f71dc872c9926e9d7440fe5437"
+    },
+    {
+      "id": "pro-le-13-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-contamination",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "11b8f3e303f6e6f69a6ae7dfa2993267563ab8c6876555d6f6a810e43a405930"
+    },
+    {
+      "id": "pro-le-14-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "benchmark-contamination",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "426bda690647833da0b7692cfd2d47f2e32a84093f09592311fb5426f3d9807c"
+    },
+    {
+      "id": "pro-le-15-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-rubric",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "308e07857101caaff75dae8377416d2dc6006850f2e72b2729e5fdaffc9339bd"
+    },
+    {
+      "id": "pro-le-16-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-rubric",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "9d9286fc276ecdefce93e5434142f2f599c6b54000a8d61078a8b1a94e2d8587"
+    },
+    {
+      "id": "pro-le-17-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-sampling",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "5f06e26373ef6c4c011e2c52a9902108a06ccd52803c011cd44086b7f0a0998f"
+    },
+    {
+      "id": "pro-le-18-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-sampling",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "84a195193184a95862d1f1d73804682b1cd7e58ac07c0d63e33d805c0e0ca732"
+    },
+    {
+      "id": "pro-le-19-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-uncertainty",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "21b9fac0fa30a11644d2d44f011941db4d5e30986714b7047408c50646d25dc4"
+    },
+    {
+      "id": "pro-le-20-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-uncertainty",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "f7f122b497bb7c96101a0e40c76f896d1f13727fe86c8bb82966670465a10519"
+    },
+    {
+      "id": "pro-le-21-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "reference-based-evaluation",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "a72ecbbee12a15020c4787f1ce5545a304ecff98b9526e68f4b465066907bb21"
+    },
+    {
+      "id": "pro-le-22-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "reference-based-evaluation",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "4d0afb01698852e18cbb80bad7cf941ebf4b998fc9bad800731db8a4d0a7c3ff"
+    },
+    {
+      "id": "pro-le-23-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "reference-free-evaluation",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "f5ee6f7a517b4a9c5ed370ed4f45dd594a09fe48228dd6a71437b25e1d74d2f4"
+    },
+    {
+      "id": "pro-le-24-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "reference-free-evaluation",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "5b23377c5be79f2bd443e14a93774a4361492de7340427c3bc05599cd22074ad"
+    },
+    {
+      "id": "pro-le-25-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "human-evaluation",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "6f709cfa97984b3c80e4a561983ef1d733cef86a7b860b9efa7b1db130ac6107"
+    },
+    {
+      "id": "pro-le-26-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "human-evaluation",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "cf6c6c094f3e6bffae795d452c56d34db8cae44b247a0a9a18f3787037456137"
+    },
+    {
+      "id": "pro-le-27-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "expert-evaluation",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "5360166e2c29424589d09630c60f2da6da06d00a87a80470a6b5ee415ae83fcd"
+    },
+    {
+      "id": "pro-le-28-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "expert-evaluation",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "97ffcb2b066a7e75b5d9ada514afb8bd34fd4bed8af09af38e9a9af47cdc540e"
+    },
+    {
+      "id": "pro-le-29-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "judge-meta-evaluation",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "917cc934db151570f75a9dc6f22467a50b430598fbda6ead4775b7eb55cc21fe"
+    },
+    {
+      "id": "pro-le-30-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "judge-meta-evaluation",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "e46f14ca811473ee7f3ddcf7c9bcf9523a0cbeca694d5263234cc7561b795721"
+    },
+    {
+      "id": "pro-le-31-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "generation-evaluation",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "68bc4c4e491e99a17fa9a85f0e7dde579736e673499843863058617d8e16a8f8"
+    },
+    {
+      "id": "pro-le-32-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "generation-evaluation",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "1e72077340ca7921d7b35830e3d29c33dacd8ee4b4c8f55683bd13c619f1e6d0"
+    },
+    {
+      "id": "pro-le-33-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "production-evaluation",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "ecdc42344cefc3bdc748c263d2bcdf01b1809199b2a54b793e4d6891184ddba2"
+    },
+    {
+      "id": "pro-le-34-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "production-evaluation",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "878b70e4fc04a2fcf34470c267513e3f4717826a82b1690f012ee6fa0336462e"
+    },
+    {
+      "id": "pro-le-35-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "regression-evaluation",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "41f3b53104b327c522ae4d9cf19a1ab8ab645b32c2a8d5ac43526b743741b872"
+    },
+    {
+      "id": "pro-le-36-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "regression-evaluation",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "a589ad5325fe3425f4b77126452037a305f08df0f4e8c37573d951095aaee71d"
+    },
+    {
+      "id": "pro-le-37-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "observability",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "cedc2a87592256511652dad1bd52587824a97ff41ed058d3d4f046da78562a7f"
+    },
+    {
+      "id": "pro-le-38-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "observability",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "f1a4a4a03c7a9953e7c05f6dbe2238912f9911876224d3fd1a0d92f3051c6fd2"
+    },
+    {
+      "id": "pro-le-39-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "llm-evaluation-contract",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "b3f7dba45a8c8c6cbc0063fd1017ed7e1b4314cc3bbc9c3ad55910e3488d64af"
+    },
+    {
+      "id": "pro-le-40-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "llm-evaluation-contract",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "69d016988617cc4ad055861d9a51b6e11d2d77b44e30bc716853f2103e8ecc92"
+    },
+    {
+      "id": "pro-le-41-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "judge-calibration-curve",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "7a142085c2761e3cc91c61e975885d3c4fc0e6da8009157a73fb3dd85205a1f8"
+    },
+    {
+      "id": "pro-le-42-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "judge-calibration-curve",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "685908ed7249396882bcc748737724c7d6fcc8f400e4988c8e86e075c48d1a3c"
+    },
+    {
+      "id": "pro-le-43-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-budget-allocation",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "1f980bc857c9f7f43b4adc51096ef325a9b619e317e7898fc8c40e6ec7a71761"
+    },
+    {
+      "id": "pro-le-44-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "evaluation-budget-allocation",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "22c0ae20a6749510cc4dab3fec05983884361daec88d5e73ca31b453f9bd53fb"
+    },
+    {
+      "id": "pro-le-45-review",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "slice-based-release-gate",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "7db971210d66e20b72654be09965d26d946b9bcf698fad27d2964223d7b445e6"
+    },
+    {
+      "id": "pro-le-46-ops",
+      "courseId": "llm-evaluation",
+      "wikiSlug": "slice-based-release-gate",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "0c5b4045b7c76405bf20c7e31a04e75bfb8fbabc6cb88d5094047c7f4868daa0"
+    },
+    {
+      "id": "pro-lp-01-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "1cf6ecebc9d07847f580a65a38bb26cb8829f5abb82b7773dd068de24072b623"
+    },
+    {
+      "id": "pro-lp-02-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "13b8e58733f6ec3e5b1257ffac6b938e7caea4a05ea04e92ea905c326a55d849"
+    },
+    {
+      "id": "pro-lp-03-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "model-serving",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "f3d7ce070a2b3e6e9ef5da7c71de119ed13f25347616ab10ebd9c3213cac6bea"
+    },
+    {
+      "id": "pro-lp-04-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "model-serving",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "f3abba850d855c639b0a15d5c8718e789ee87ffc0cf5091ee8c4c6c6f14ff34c"
+    },
+    {
+      "id": "pro-lp-05-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "model-serving-platform",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "1166fb2077c85553b0fe7e2b2f151316da6c7ee6b259bb8747589b25c728a7fb"
+    },
+    {
+      "id": "pro-lp-06-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "model-serving-platform",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "24da0dcd5c15ccb1801ed5b0137eb40bc0b7367a80b3585e664d6c06854ef80b"
+    },
+    {
+      "id": "pro-lp-07-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-server",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "36fc34b652ec9d06a061571e6885b3138e7d08e1329a1fa744be09e59e9e3ebd"
+    },
+    {
+      "id": "pro-lp-08-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-server",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "f53504346d3edcdda898daadadd11e0fb41d9ac678e85e810f79506958dfb459"
+    },
+    {
+      "id": "pro-lp-09-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "online-inference",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "19c905b318fb8839d1be46b505e67b86a9ed8ce6709ac90f38b3bb65add968fd"
+    },
+    {
+      "id": "pro-lp-10-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "online-inference",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "0cb6bd34d7a338f6303ee5919e5a0bd51414cef01440ec457cf097780d6c1503"
+    },
+    {
+      "id": "pro-lp-11-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "batch-inference",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "e2ac1f74ac888dae15260a89846e25d5b2b11b747ab0ce66fb8bc9eb95e445ac"
+    },
+    {
+      "id": "pro-lp-12-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "batch-inference",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "f7aea4d74c33558a1cc48a01c4ec16f94b8a593230c111249f36fdecdac776d9"
+    },
+    {
+      "id": "pro-lp-13-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-endpoint",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "61347f9d5b274155b9e5498e6420a24a3af8b3f2b154a13c72a2330531af5cfb"
+    },
+    {
+      "id": "pro-lp-14-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-endpoint",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "1477b7aba1c05561831f26eff15f3a43d038d35e910b2c4b56b0b518f3070564"
+    },
+    {
+      "id": "pro-lp-15-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "throughput",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "316bb5c5f0938834840ed03de8591abdf6d75508609500b1a6401602f01e2e1c"
+    },
+    {
+      "id": "pro-lp-16-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "throughput",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "84465d4689576fc441f71e5aafdf4f1d7dd033d21418979da03beeeb0da2e364"
+    },
+    {
+      "id": "pro-lp-17-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "latency",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "47b433ea4ef7f37640cfe093e8d4ea4a955537f69a75fa9e8ec113a34939261a"
+    },
+    {
+      "id": "pro-lp-18-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "latency",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "b50cc47ee16fa88d40bd51f2515ec9c0224ad511c288a85d9a77b1f2cd5f8446"
+    },
+    {
+      "id": "pro-lp-19-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inter-token-latency",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "10d4f212a3b8c9732dbe98a9d50d65326c13f9a42b802de30e5b85871b6f69e3"
+    },
+    {
+      "id": "pro-lp-20-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inter-token-latency",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "4c54ddc48f99408dccae20b97e15e8643e1103bad86f95ab83e63d24f5c8f2e8"
+    },
+    {
+      "id": "pro-lp-21-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "tail-latency",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "d0fd519c820e4a6b20fd6fe6135cce60163576a8135e2d3b95b3e66283ea8ec0"
+    },
+    {
+      "id": "pro-lp-22-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "tail-latency",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "1c080dcac43242c719f67283c831f2535f827906a866d48805c79bcf956e9443"
+    },
+    {
+      "id": "pro-lp-23-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "latency-throughput-tradeoff",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "feaf177c1f6d7fcac1e38139f351a77b6d958c7d15919cabbc7d50e44faf5848"
+    },
+    {
+      "id": "pro-lp-24-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "latency-throughput-tradeoff",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "ac0bb696f044d7d081443fe87f01195afa249abe1f34366daf2c3e4d94a7a46f"
+    },
+    {
+      "id": "pro-lp-25-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "kv-cache",
+      "kind": "plain",
+      "difficulty": "professional",
+      "templateSha256": "1d865b280a10f1f498c1d0c609285ecf7f34e78d6d4fc9e7bcc5c6f99c2da9ff"
+    },
+    {
+      "id": "pro-lp-26-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "kv-cache",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "88f62e7addf3e7e6277988fccf318f8e940b79d677eddfb3fcc9aac8451d5224"
+    },
+    {
+      "id": "pro-lp-27-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "paged-kv-cache",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "e8e28ce348b6530413ba44e74e2f97223dd10210ccbdde0df6a318b4528649dd"
+    },
+    {
+      "id": "pro-lp-28-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "paged-kv-cache",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "98edc36d9a2be348cbbfb0f85789e01ab58978cf0c662c2d645f40bf05c76237"
+    },
+    {
+      "id": "pro-lp-29-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "prompt-caching",
+      "kind": "xml",
+      "difficulty": "professional",
+      "templateSha256": "e8b9678f7e72ae34b27ecf7d245208abdcbf82e28038b59536a72750299be172"
+    },
+    {
+      "id": "pro-lp-30-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "prompt-caching",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "c306da824f380395ae755350fe1420dfa692499da235015b050665cc232125ac"
+    },
+    {
+      "id": "pro-lp-31-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-load-balancing",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "f35e31b6bdb00c174ec6f3d7961bd0a0581071ecd1443d89baee0f652959bae6"
+    },
+    {
+      "id": "pro-lp-32-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-load-balancing",
+      "kind": "plain",
+      "difficulty": "advanced",
+      "templateSha256": "d41df92377093356899a3aa33753624ad670349a2d707d8d4b8a84011cbc9386"
+    },
+    {
+      "id": "pro-lp-33-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-autoscaling",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "a73f5fe676f8efc1213f27148761533a9212c4ee830f6f181ff15806af14ae1c"
+    },
+    {
+      "id": "pro-lp-34-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-autoscaling",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "d124f40bb2718b0353b88323a43d0a177ce539fb35fbaae4d9f569fe23d06230"
+    },
+    {
+      "id": "pro-lp-35-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-capacity-planning",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "1d2cdb6c8b638563a2dbbe07fd94c115a4c025253b7e95cd5265adc3d178c0ad"
+    },
+    {
+      "id": "pro-lp-36-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-capacity-planning",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "c12260330e654cde7a8856cb4c8d2de093b54f1122f3b746d9fbff6aa8590939"
+    },
+    {
+      "id": "pro-lp-37-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-monitoring",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "2d736cb0fc7fb15c0013f9488491a9237b302e7e11d6c43d0aa89ffa55fd72cc"
+    },
+    {
+      "id": "pro-lp-38-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "inference-monitoring",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "1bc6eec5bfb7ddd262cbc0c2e0d1fccef7664b53c573c5c01906006566e002ae"
+    },
+    {
+      "id": "pro-lp-39-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "llm-serving-slo",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "7b54cc71938df7d8fb0ccad304dbeed6c2ffd1933e68cd894f72b1dbc33f62d0"
+    },
+    {
+      "id": "pro-lp-40-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "llm-serving-slo",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "78d6f707e117119906d964d10cd7cf28515337a9ebf0cb41be96e609ed5aed19"
+    },
+    {
+      "id": "pro-lp-41-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "token-budget-admission-control",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "768fa086b9421ae644cf727c196576f2fea6d3b042cb8f4ad8442facd647f454"
+    },
+    {
+      "id": "pro-lp-42-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "token-budget-admission-control",
+      "kind": "xml",
+      "difficulty": "advanced",
+      "templateSha256": "c74fc5554e920deabefdacbf0fd0e06e8ca6dfa7e28c51d33c22eb6a3e90f76f"
+    },
+    {
+      "id": "pro-lp-43-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "continuous-batching-policy",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "1c759d8b3a3bccd1f8748688d2abff03385ec6b458e5ef782bb222b9c0b1a176"
+    },
+    {
+      "id": "pro-lp-44-ops",
+      "courseId": "llmops-production",
+      "wikiSlug": "continuous-batching-policy",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "e0981175b7216f45ff8aa4cc53dc41700018f9bf00315d93c628f263a61c3a4b"
+    },
+    {
+      "id": "pro-lp-45-review",
+      "courseId": "llmops-production",
+      "wikiSlug": "model-fleet-routing",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "ce1aa000aa859a6895b8bff194fa7561f6e0644a568fbe3110cab834ad91fc11"
+    },
+    {
+      "id": "pro-ar-01-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "6f7f49da05f46f46102e584e01e339c492e0696ee14fb6224d8e6cedd83ceb8d"
+    },
+    {
+      "id": "pro-ar-02-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "214e49c1b584cf77453c573e18906a490088a7f66a9d9b8a1c7ba33a614d19da"
+    },
+    {
+      "id": "pro-ar-03-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "document-retrieval",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "cbdb2bc97f937ccb37baae2233f975934be43d4ab485e0d5ded4f4b03c04db16"
+    },
+    {
+      "id": "pro-ar-04-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "document-retrieval",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "ec38dbafaa45b8befc16f680bf9b70b5d174a17627304fa7efff1a96c2239753"
+    },
+    {
+      "id": "pro-ar-05-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "lexical-retrieval",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "4f3b2e5b2b55942e9851393e30be062bdec9cd23dfe38b93d7a1980374b97b6f"
+    },
+    {
+      "id": "pro-ar-06-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "lexical-retrieval",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "32925f5097ee7be62ddf65104efdee67560f4328faf177f82e05ad2cf2305060"
+    },
+    {
+      "id": "pro-ar-07-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "dense-retrieval",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "f57093acb77346c45512c2937b841439866c686ba94c581441c067d3642d5e53"
+    },
+    {
+      "id": "pro-ar-08-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "dense-retrieval",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "742f6f32c8ab9f0271053b3d92d619c3b6fb0ff2070374b375f4bf928b68dc7d"
+    },
+    {
+      "id": "pro-ar-09-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "hybrid-rag",
+      "kind": "evaluation-rubric",
+      "difficulty": "advanced",
+      "templateSha256": "9786f362ad2db576c215d26aebbaebc3b9997c40608084a6d6c3717977fb1dcf"
+    },
+    {
+      "id": "pro-ar-10-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "hybrid-rag",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "39cf4c661d521f2356c6be5f1fb6c84221b3bbdbd69820c52706fc3016c7dd2a"
+    },
+    {
+      "id": "pro-ar-11-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "embedding-model",
+      "kind": "json-schema",
+      "difficulty": "advanced",
+      "templateSha256": "1c12371702aba89baa4fea78f11c2df2f5c59bf25a251c9dc52651f48affe875"
+    },
+    {
+      "id": "pro-ar-12-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "embedding-model",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "f4bd612f776577d71c1d1261d6cb89e8e2b32502c7d41057075f6b9e28d03ad7"
+    },
+    {
+      "id": "pro-ar-13-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "document-embedding",
+      "kind": "multi-message",
+      "difficulty": "advanced",
+      "templateSha256": "68de9bd27db3680895cede1aade9448b3fff64be38cce7530f593bc90756dde6"
+    },
+    {
+      "id": "pro-ar-14-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "document-embedding",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "a0cd0b6f3325e850ca051497e17fd802ede4e75f9cec2b0046419caadcad05e2"
+    },
+    {
+      "id": "pro-ar-15-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "query-embedding",
+      "kind": "markdown",
+      "difficulty": "advanced",
+      "templateSha256": "5e0bc2633e91f2cacd1c53adb3fb664f8a22c21f07f6710a9432d0f1a16cb58c"
+    },
+    {
+      "id": "pro-ar-16-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "query-embedding",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "d5288a63be49c5cf1e87f5d4a23bc34ff698198677eba4b93f6d75380892ada2"
+    },
+    {
+      "id": "pro-ar-17-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "vector-index",
+      "kind": "yaml",
+      "difficulty": "advanced",
+      "templateSha256": "fdb6e3c70454acccd0c8dc27d17d3673f23e97e130697f3c05b343fb98cbe499"
+    },
+    {
+      "id": "pro-ar-18-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "vector-index",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "f3444bc39b88e6111a671aa1ef17991ddeb953dd16cb4cfd350c05ee23b5c08f"
+    },
+    {
+      "id": "pro-ar-19-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "retrieval-filtering",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "b8787fab1193535f29c969e3586b8673c2d72fcb02cb35c6fd866d562f948b33"
+    },
+    {
+      "id": "pro-ar-20-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "retrieval-filtering",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "ebdd4e24f64661bed383f3d8007ae3edb6ed8560bb1cac13aeaf923a2e18561d"
+    },
+    {
+      "id": "pro-ar-21-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "reranker",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "ca9e3be6f7df2eb35822c2ed1ed103854214383f1a10fb869df27c3cb8e7d21e"
+    },
+    {
+      "id": "pro-ar-22-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "reranker",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "8b45faf37330c71d219bf65503a5a7cb6094b31d3c96c7673cfef83db07afe86"
+    },
+    {
+      "id": "pro-ar-23-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "cross-encoder-reranker",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "755adb9a035b30ab80013981fae03dc8111a51feca75b3b83a77e6a37b70db81"
+    },
+    {
+      "id": "pro-ar-24-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "cross-encoder-reranker",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "ffc1d9afa85d6cbb8c7b28e7145787f87a03466de0d39a59c1ee95e1303ab19a"
+    },
+    {
+      "id": "pro-ar-25-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "adaptive-retrieval",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "9a4c1d5b497ddc51f64824ab83cceb8f6ec6d9a57917b2dd501059e8ebe52d16"
+    },
+    {
+      "id": "pro-ar-26-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "adaptive-retrieval",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "239d43e56a31ed9fc4a4f1542ec9f86ab5305ed95661550327596ee23fa77b90"
+    },
+    {
+      "id": "pro-ar-27-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "multi-hop-rag",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "d46de18b4d378e0b99b5e82fcbcf10e30a06f1092c3ca2bfb416d2d08dcc91b4"
+    },
+    {
+      "id": "pro-ar-28-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "multi-hop-rag",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "d605b206b48a7e88d4f2be0d798b0616084ad468ce92acbcf9c9ba13329ac196"
+    },
+    {
+      "id": "pro-ar-29-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "iterative-rag",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "a648475136f6b9cdb7aef5e5d71d0932f0491c9bfeb9f36e0f88b2d998ddbed5"
+    },
+    {
+      "id": "pro-ar-30-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "iterative-rag",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "c29e16754d837d8ca14864ff66beca232b01a0e682936e6c526c7d79dd4552e1"
+    },
+    {
+      "id": "pro-ar-31-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "corrective-rag",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "d79ea89f033f495548bf536f6dcf0ed3fc61b28257adada2aabb56c5f7b52d0c"
+    },
+    {
+      "id": "pro-ar-32-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "corrective-rag",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "c0c11bce5e58d17587ee943d4c7a634bc28705986e17c15a6a084ba90721c47a"
+    },
+    {
+      "id": "pro-ar-33-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "graph-rag",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "a7238b61c91276103a9ed0a49b8188f691d99f042bdc5775d4d5b7f4f931881b"
+    },
+    {
+      "id": "pro-ar-34-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "graph-rag",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "a6d1ecbcbea506913eeddbdcbe7e0890d602c314cef137dc49a4a3f73220f6db"
+    },
+    {
+      "id": "pro-ar-35-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "context-compression-for-rag",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "bde47a4e298d1b559d6c54e086c59815579471dce34a4a15f8c4d38913a2cdfd"
+    },
+    {
+      "id": "pro-ar-36-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "context-compression-for-rag",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "00aa97b2d5755e107360ad5a724441f983eaf1c0ff8c26c3f559a807ad138e5a"
+    },
+    {
+      "id": "pro-ar-37-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag-evaluation",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "1991aca2b7a2b657fb87f9ab5ee07c5a3d50b33b36130398f774bd3c801dc626"
+    },
+    {
+      "id": "pro-ar-38-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag-evaluation",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "0aedc50f3e6ce91b3d4617f18a17378d74995557337ba4fed86255b845f3cb77"
+    },
+    {
+      "id": "pro-ar-39-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag-index-freshness",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "87a52910f2ef5a55be5b9572fd6cbb705524cf42534f32c4d7d9b21ef7b1ea78"
+    },
+    {
+      "id": "pro-ar-40-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag-index-freshness",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "f96c22acf73db54189fee6995b512424f80d049225761640f55391011d80b12d"
+    },
+    {
+      "id": "pro-ar-41-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "retrieval-access-control",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "5c1208325d1bfc575e61ad895907285c24eb352428236b37b111db120d2bc480"
+    },
+    {
+      "id": "pro-ar-42-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "retrieval-access-control",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "b2f53de8f4c842ca0217f7556646b6f2fad914f4b76927436b13fa936807453e"
+    },
+    {
+      "id": "pro-ar-43-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "citation-grounding-contract",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "d2f5335575c9e53651a7f6c8010f43578da9ade0c7b40a61f6dd1b4445d8a1eb"
+    },
+    {
+      "id": "pro-ar-44-ops",
+      "courseId": "advanced-rag",
+      "wikiSlug": "citation-grounding-contract",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "c6c3f74451f00e941dd225b3bc33130793178f65e087d235685327b82500096d"
+    },
+    {
+      "id": "pro-ar-45-review",
+      "courseId": "advanced-rag",
+      "wikiSlug": "rag-evidence-lineage",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "79f6befec5f1191a2022c1f64f3ed159c1f237ab668409b9741d922ca97078fc"
+    },
+    {
+      "id": "pro-pa-01-review",
+      "courseId": "production-agents",
+      "wikiSlug": "ai-agent",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "642a05be7629bbe9acd6c3858274f03200305588a2526e55fd16a9001b5c805f"
+    },
+    {
+      "id": "pro-pa-02-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "ai-agent",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "72ffe8da3f8309069f90efc4095418a1e7e7810914969c3e4e71b51c6e20cc25"
+    },
+    {
+      "id": "pro-pa-03-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-loop",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "27d2085e89ac44093912919a51594d15462961f53f07214bde12bf692bdd5994"
+    },
+    {
+      "id": "pro-pa-04-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-loop",
+      "kind": "evaluation-rubric",
+      "difficulty": "professional",
+      "templateSha256": "05eb3832e7557d19d0593546cd7a3414112f1dd559c6edad6e8e6d00d2cf258a"
+    },
+    {
+      "id": "pro-pa-05-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-goal",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "f37404409fc1e5316fb15cd88bde83221c8ba843e1ab8d7d406ebfc20788e0d3"
+    },
+    {
+      "id": "pro-pa-06-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-goal",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "1271b09749707729c0d833c335bf9bd5e2e67bfb86858275c6b92198e361ae86"
+    },
+    {
+      "id": "pro-pa-07-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-task-decomposition",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "4fca5c95d3bd65fcc020dcf734af3b71b71bdb20d0c1071389cd0131559a9d44"
+    },
+    {
+      "id": "pro-pa-08-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-task-decomposition",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "943b6c5ad155231697268ee55f3e3f3ef4f2ffcbbc75856c73bf4ab38fa3b67a"
+    },
+    {
+      "id": "pro-pa-09-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-deliberation",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "bf906b23a8c628004a42954301a37c2cb647a37df259888c657d738079652c2d"
+    },
+    {
+      "id": "pro-pa-10-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-deliberation",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "29bca6c8806d43f43f4b85136eb8300f96e3d0d08b6d65a7c4308860b8b9c223"
+    },
+    {
+      "id": "pro-pa-11-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-plan-quality",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "6a306c03aa46fcbf6f954eb7d34c6f82c241debee67a010823496cdac7c9e4c7"
+    },
+    {
+      "id": "pro-pa-12-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-plan-quality",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "53368bb5b1f6078a2c2c5ddd6de0f140fc524d628b2e853138ba6e262ff2ab72"
+    },
+    {
+      "id": "pro-pa-13-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-executor",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "a96a5fec2825cb2f37c1fbd570974cdebe21f2f90e63862d5448446e1af62257"
+    },
+    {
+      "id": "pro-pa-14-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-executor",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "b7abfccc776e9f29d1f98cd9b3e2a115201be094fefed2502babdd7db17db5aa"
+    },
+    {
+      "id": "pro-pa-15-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-tool",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "3dffd250206d6feadf48f694405bc4a1c9ad60742559e7ec22ada42aadd81150"
+    },
+    {
+      "id": "pro-pa-16-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-tool",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "ce6241cb99e9d61ed5772a795411f41af106340b4b3520699587e35fb18914f7"
+    },
+    {
+      "id": "pro-pa-17-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-tool-accuracy",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "6f50670657ca4031ce8bfbef8a8ae95e4eb9bd0bcb22b217e9ac86a66805cb66"
+    },
+    {
+      "id": "pro-pa-18-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-tool-accuracy",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "5bb2db75fb4f931e197d1b247a16f65bdc0e7b417d86561fb35b3351c3399795"
+    },
+    {
+      "id": "pro-pa-19-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-runtime",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "902360b20e4620b33387ad10dcfd0108b2472223be047f1e89ef66fd667f6187"
+    },
+    {
+      "id": "pro-pa-20-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-runtime",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "288045fa476aeab8fd9e919c0e849a4a7086265440bf49685f074e90ef07e884"
+    },
+    {
+      "id": "pro-pa-21-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-memory",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "60bc972a595a7423089ecb183762d5d3de6ef2b34ed01cf516b341c3aca73ccd"
+    },
+    {
+      "id": "pro-pa-22-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-memory",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "03575873926a8b81a028ba7fa702c0a0dfaf40d226c88e604dfbd5f25bb6ba99"
+    },
+    {
+      "id": "pro-pa-23-review",
+      "courseId": "production-agents",
+      "wikiSlug": "episodic-agent-memory",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "2a4be2ad9f1ef6be9cb229d5170c365ff8e3008733c4bf82b2b280b2d5d01a3e"
+    },
+    {
+      "id": "pro-pa-24-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "episodic-agent-memory",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "1289265aec9d74410f2e36b189e3c51a42f6e89729d64711657ac6c83fc844c9"
+    },
+    {
+      "id": "pro-pa-25-review",
+      "courseId": "production-agents",
+      "wikiSlug": "long-term-agent-memory",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "36c091603b9003fc30ef234593f3e245351830d7e9dc34981b75825ad710e9a3"
+    },
+    {
+      "id": "pro-pa-26-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "long-term-agent-memory",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "135383c7b2a8fbad1bf674c4a994d414e7b476884fbf573cb707d65fedd7bd37"
+    },
+    {
+      "id": "pro-pa-27-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-reflection",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "cabc533a723b7dc5e527af2dee1530c879d0a94de8e752872fe1eddb3b800397"
+    },
+    {
+      "id": "pro-pa-28-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-reflection",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "3541e9ae0b222579c62c63c8c988d953fe5be2adc7a24af56b17df2f30602da8"
+    },
+    {
+      "id": "pro-pa-29-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-self-correction",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "b4bc603a60149e3eb2e8e5edef0203801c2cbb64e66f1782449012485af07dde"
+    },
+    {
+      "id": "pro-pa-30-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-self-correction",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "c0ad15cb770c81dd006852689d4e767afb7709eb8ba9ef0a72af1bd266b31f26"
+    },
+    {
+      "id": "pro-pa-31-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-replanning",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "d88afa023c1c860eb3f463ac5a83f557b02da2b833896e636f32f2a93171c9ca"
+    },
+    {
+      "id": "pro-pa-32-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-replanning",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "89911dc76f048e61d606fabc24c7bd54f5805a07be7642c1547b031fdf21fc1c"
+    },
+    {
+      "id": "pro-pa-33-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-termination-condition",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "68543815939ef411c10a8438c74904922c29a2896c7d8515ee6e5cd699993af5"
+    },
+    {
+      "id": "pro-pa-34-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-termination-condition",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "c8d923d5bdfeaf5064f88fecaf89be11c217a43fc113c9e5484947b8e8a047e5"
+    },
+    {
+      "id": "pro-pa-35-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-sandbox",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "de5bd7750c7610031a22f0189ab26de14b96d7baaf877d2de7d4f1e24fd60f12"
+    },
+    {
+      "id": "pro-pa-36-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-sandbox",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "42e2f7caa69e4de8d1eb31fc5398864851e56e474e64275192ee6e8ffdc9bdd9"
+    },
+    {
+      "id": "pro-pa-37-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-evaluation",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "614a8e14920d1da32eea79b06ed7c73148de7069b05fcbb676f35a91b67f4c9e"
+    },
+    {
+      "id": "pro-pa-38-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-evaluation",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "3f04a02e357944688be4cd3927ba14eb5067dfd3e7ebfcd13b2802e226c49162"
+    },
+    {
+      "id": "pro-pa-39-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-idempotency",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "fb67df00e862c42870b1d401554b47e5db77c865ad69b81339fbaa57718b0055"
+    },
+    {
+      "id": "pro-pa-40-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-idempotency",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "0e801df76a2a0dd58146df8951c24ea5eef87506b98f7ffe8e5dc8b09f2406d8"
+    },
+    {
+      "id": "pro-pa-41-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-action-ledger",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "8efa9c0a584e57f71d89ba0bf2bed2405a109677dbeb37a99ef6c15ba52acc26"
+    },
+    {
+      "id": "pro-pa-42-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-action-ledger",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "52db234aeeb521d74ddab5b4a10d306b50b65115967f538b5224006dc17ca881"
+    },
+    {
+      "id": "pro-pa-43-review",
+      "courseId": "production-agents",
+      "wikiSlug": "tool-permission-broker",
+      "kind": "yaml",
+      "difficulty": "professional",
+      "templateSha256": "4ab0c36afcd777c7d8587e0a2c67532beb5df77722385cf8c4bd7a4fc9390ab6"
+    },
+    {
+      "id": "pro-pa-44-ops",
+      "courseId": "production-agents",
+      "wikiSlug": "tool-permission-broker",
+      "kind": "multi-message",
+      "difficulty": "professional",
+      "templateSha256": "09787cf7ad1cd66d134b0cf64145292bb78b9b1984ccd825cc7731f281adec8e"
+    },
+    {
+      "id": "pro-pa-45-review",
+      "courseId": "production-agents",
+      "wikiSlug": "agent-compensation-transaction",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "288fbb63f4f8b4974bbcfc2469c3f485b82db565a319e1ede2079d98f7f90b7f"
+    },
+    {
+      "id": "pro-pt-01-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "fine-tuning",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "56407421b54ee87d62c7e41f23844d93193346b95e71217da96f8e78c0a36e8b"
+    },
+    {
+      "id": "pro-pt-02-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "fine-tuning",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "099438ddbf7b016f0cb3fd43b104bab0addf962c98935016ed3a625c64bc8b71"
+    },
+    {
+      "id": "pro-pt-03-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "supervised-fine-tuning",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "18e4b59fc5af47e9d7b36cf91c39104ae7fa558cc0c93f4d42c7b0b1e3bb31b3"
+    },
+    {
+      "id": "pro-pt-04-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "supervised-fine-tuning",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "5c2c08b047f88ea5c2694bfa4a9ffba027de1ce512cc4fbcfb48d16dc2df442d"
+    },
+    {
+      "id": "pro-pt-05-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "instruction-tuning",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "94dcb473243434b8127829bb8b757017bc25ab0c531787c9e3d8002379c9ebd6"
+    },
+    {
+      "id": "pro-pt-06-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "instruction-tuning",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "69952745d1699c64fe7f29c3b9539cc615b9f612805198582455195e30012526"
+    },
+    {
+      "id": "pro-pt-07-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "preference-data",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "7f6a9ac24651e683e83faece79c5281292f0ac07b941b8fc2502c4e058bd85b3"
+    },
+    {
+      "id": "pro-pt-08-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "preference-data",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "0c8c0b29a000610c77801f32a325560db216495041e881418ee0c279cc2049ee"
+    },
+    {
+      "id": "pro-pt-09-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "pairwise-preference-ranking",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "042af4033697160bfa55a33064599209b894d3648a9ab1799f01c074535e6f20"
+    },
+    {
+      "id": "pro-pt-10-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "pairwise-preference-ranking",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "24a9783960d9dde3e1db8e17db9bc38261f5b94a7540cfa03bfbeddf40c0576c"
+    },
+    {
+      "id": "pro-pt-11-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reward-model",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "8994c3cea78099674efa1df3bf7e0bb57101b459793302276705f517cd91dff3"
+    },
+    {
+      "id": "pro-pt-12-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reward-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "27b2e725d2fba51950b737355d1adcf125fc03b3a8af03032cbb9e6fa8405ecf"
+    },
+    {
+      "id": "pro-pt-13-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "outcome-reward-model",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "d175da94596390bdeeb8ba688d7dc4381f4b89eb2e0d4d2ace05c900071f7d73"
+    },
+    {
+      "id": "pro-pt-14-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "outcome-reward-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "e1af55a779b1c5656d1ed00daff571b9e1c402ac316bd6f3c0e911fb41b70e4c"
+    },
+    {
+      "id": "pro-pt-15-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "process-reward-model",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "202da0efefe456828fdea576bb781538e501a25be18453f6a179a38e316c8cd3"
+    },
+    {
+      "id": "pro-pt-16-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "process-reward-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "df413efd4fe7f945158c5ade38f14caf6170e6dc1f4d1b6ec570a840e34ce2de"
+    },
+    {
+      "id": "pro-pt-17-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "rlhf",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "bc54f13ac00d307b31c3beaeffcb9658605f8ebed7466dadb3d7cfe486aa41ce"
+    },
+    {
+      "id": "pro-pt-18-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "rlhf",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "0877c99abee786e6ec2faa7147edfc9b291f1a31c7b84fec9802d90423f40f13"
+    },
+    {
+      "id": "pro-pt-19-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reinforcement-learning-from-ai-feedback",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "1919a7b9579a62ec3e328a500583307f595ff7297f8117b6cd1443ffedf02b3d"
+    },
+    {
+      "id": "pro-pt-20-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reinforcement-learning-from-ai-feedback",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "810790b47d077977e51f4b2a131e12f32c1ca4630beedec1a5eda59ed312d4aa"
+    },
+    {
+      "id": "pro-pt-21-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "dpo",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "3f4c261e68d97a64533560fdf45e2689883da3314e35604f5d046c6a1a159a3c"
+    },
+    {
+      "id": "pro-pt-22-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "dpo",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "eda81e221f1f6ce0a6e7ccb370a46bfbc96132f2b986db516a1e95821c929688"
+    },
+    {
+      "id": "pro-pt-23-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "offline-preference-learning",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "6da70a5e6448e99f7074b28b091b878539d3f3c59412be383fc9b39a82c2acba"
+    },
+    {
+      "id": "pro-pt-24-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "offline-preference-learning",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "7108c5d11f3bbd0cea7c9f9b137cdc05198470b548e0feb2fa743b38cdd57d10"
+    },
+    {
+      "id": "pro-pt-25-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "online-preference-learning",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "bd30dd1f7351ede1fa7625d0c80a8125a37f50fdb2f5ec1d4526e42cdb99e152"
+    },
+    {
+      "id": "pro-pt-26-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "online-preference-learning",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "080d593507077e8d5b55735a0cc9f6fd451e70b0aa8dc606c5f6f5c2e4b5faed"
+    },
+    {
+      "id": "pro-pt-27-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "preference-loss",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "e951b56e2dd842908642ca3fb0ee7059bb25df28f9da8be0db99b1b8bb229354"
+    },
+    {
+      "id": "pro-pt-28-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "preference-loss",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "784d82de34d3cb1e599d10a47409365fe7194e1ea66a6975fd400957be340467"
+    },
+    {
+      "id": "pro-pt-29-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "proximal-policy-optimization-for-llm",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "2eff4221f3ca4b6bbd61b57599f60eb95f02b8d1864357cdd3f289bf867a6b44"
+    },
+    {
+      "id": "pro-pt-30-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "proximal-policy-optimization-for-llm",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "04ba7e8fdd87644a953a4b3af943126ea082d9a99913260830ea3d7855832afa"
+    },
+    {
+      "id": "pro-pt-31-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "rejection-sampling",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "85a0c0db4455d7cd5de292e6917632d80571df64d78e6aafbbe95bcb77f2f122"
+    },
+    {
+      "id": "pro-pt-32-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "rejection-sampling",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "400522af617d2b76212d68e81f5d34b17c0c25e7e07f323f6e866cedf58bd4bd"
+    },
+    {
+      "id": "pro-pt-33-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "constitutional-ai",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "b75a1dfba2df80f8e21129abbbfe051ed260cac9ba5c40801c5d705449b2dd1e"
+    },
+    {
+      "id": "pro-pt-34-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "constitutional-ai",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "05410dcf19cc338e965005cd4858ae665941eb8d550cc7ab245efcb3c1955b6a"
+    },
+    {
+      "id": "pro-pt-35-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reward-hacking",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "4397518ab280c966ce48ce4d2a344dd1f376466b4e744bb3a89626bce1c198fc"
+    },
+    {
+      "id": "pro-pt-36-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reward-hacking",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "3bd12a330fdce63dac5d4b89c1df3ca20ee0f5d3c48aa129ebba1c7cac8b5343"
+    },
+    {
+      "id": "pro-pt-37-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "alignment",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "f4f89e0db8909ec03da0a9259a06d16d672b25bd4350275ad351bd9764c877e5"
+    },
+    {
+      "id": "pro-pt-38-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "alignment",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "aa063ecf4784be93cd673ab8574214547650564d2836d8ad5350aab6202a001b"
+    },
+    {
+      "id": "pro-pt-39-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "preference-data-governance",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "aa6cac9e92dd778b22bea512bbfda563bcb1728cd030e83d26282c0e5e39fbe9"
+    },
+    {
+      "id": "pro-pt-40-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "preference-data-governance",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "12a9de64f2cfdd4ffe1bcfe35d57632def21c671a37a5aef2a4a6ad5a4eb1ff6"
+    },
+    {
+      "id": "pro-pt-41-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reward-model-calibration",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "a26364376f1c26f6db1b7d32aa64cb04c6ddc3b8fe8600e3ea75fbfb53f9dc04"
+    },
+    {
+      "id": "pro-pt-42-ops",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "reward-model-calibration",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "b3b9dcdadcad27249d6cad1ba9b9f67e94fe2507953806aee79590d55814ba5f"
+    },
+    {
+      "id": "pro-pt-43-review",
+      "courseId": "post-training-alignment",
+      "wikiSlug": "post-training-ablation",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "531c9c87386d396b4855145bc5ea19eb3500563c486110723b7b9222068b564a"
+    },
+    {
+      "id": "pro-sr-01-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-safety",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "d407e196ee04ab3dc3e2578963d337d7bdee71b3991223fab3c6a1d951c9563e"
+    },
+    {
+      "id": "pro-sr-02-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-safety",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "738a9b5f8b210e4ef282149413c6b780391bc3e823b76decd829f600e0e60b3c"
+    },
+    {
+      "id": "pro-sr-03-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-threat-modeling",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "f5fa574950de20a936dbf7c2da50cd74ac8b442107b2d7c8315abace176130be"
+    },
+    {
+      "id": "pro-sr-04-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-threat-modeling",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "1d427ea98c8962833ce6a82a05e9f597fa2e3d9b3cc9602516d0caad7d5ccdf3"
+    },
+    {
+      "id": "pro-sr-05-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-risk-assessment",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "fadb950eff33ebcb35de9636442c02b293750c738fd0873e7f2a14aff2bc6305"
+    },
+    {
+      "id": "pro-sr-06-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-risk-assessment",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "0043807496003e4a8e9c9d8d0af69f1b292d24028c33e0b7f10b881551c1bfe2"
+    },
+    {
+      "id": "pro-sr-07-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-risk-register",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "52cb336f2fa1e014e1a17f12aeda7eaeb5e97ae43a276d783bc8ef147ccf6d1d"
+    },
+    {
+      "id": "pro-sr-08-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-risk-register",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "93d0f98b670ce12de9135dd4f981e1db99b94c60d44e0e07dc0801f5a5266e29"
+    },
+    {
+      "id": "pro-sr-09-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-red-teaming",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "dfe24f3cd7e9c8a439f97ee35147ad09cfa1fb6918abaf69fdd1cb1a444d9d34"
+    },
+    {
+      "id": "pro-sr-10-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-red-teaming",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "821cc83c99067bc02e411ffec01887924a4156f872b4910412efd6e0ac9cf83c"
+    },
+    {
+      "id": "pro-sr-11-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "adversarial-testing",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "0d3eaa15dce7dddb712040a5310eb15298df05a1ab10d737fdb0b7ea7ccaa2db"
+    },
+    {
+      "id": "pro-sr-12-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "adversarial-testing",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "01ccede44a2fde7044bc6da4424c7971d05ad9373f161a7bbb83807fedb5eaa5"
+    },
+    {
+      "id": "pro-sr-13-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "adversarial-example",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "584a2afcb1b7c4ba733f33b5b2bc69e23a38695f908acacbc5a330d2790983da"
+    },
+    {
+      "id": "pro-sr-14-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "adversarial-example",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "c738ad33db8c313b7ab6639ac0debc0862bf40ca162adee99539d23fe664da3c"
+    },
+    {
+      "id": "pro-sr-15-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "prompt-injection",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "a48c50a45a9c05c0faa79ee6a127aff5a11d92d414b2b474be87a02ba1469a8b"
+    },
+    {
+      "id": "pro-sr-16-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "prompt-injection",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "c17081e60072fe3e5db496620523b7b940998c656ae2014942152e11cac9cc79"
+    },
+    {
+      "id": "pro-sr-17-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "indirect-prompt-injection",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "d1622f7e72d541492dff2a5675747e66c55d91e61ae659420f7cf4e8da589881"
+    },
+    {
+      "id": "pro-sr-18-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "indirect-prompt-injection",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "e53027af1fbadf9eac730a6c4c9507ed2905a6e0615c43116c273d88cc284525"
+    },
+    {
+      "id": "pro-sr-19-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "jailbreak",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "4f756f860a38bc2f74bf580154092e173e88c1e67bed6ad52fb16d1605f23619"
+    },
+    {
+      "id": "pro-sr-20-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "jailbreak",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "15e357781daca47a05e3b62df1aa9ef4aef85a67bb1e4e517685451902287c04"
+    },
+    {
+      "id": "pro-sr-21-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "agent-security",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "af0e74d62401246b02c7962d3519156ad9a3da67d84a34bef9a84622a2d10a69"
+    },
+    {
+      "id": "pro-sr-22-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "agent-security",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "af470d561ea367cd37cc53177b5705f42962d1ab90bb62015b845a1b3415480f"
+    },
+    {
+      "id": "pro-sr-23-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "guardrail",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "a9aa55e1c5b51400218ba8c2bfd42004f45c92b6aee2a5bc178bbdb8e4994513"
+    },
+    {
+      "id": "pro-sr-24-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "guardrail",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "4b21d1aaa450179c8590a5d90ffe3ad1603744746e4adbd7f56a2a7a38d7a2a6"
+    },
+    {
+      "id": "pro-sr-25-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "agent-guardrail",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "6db974abe2c77089fdfc737477e4460d8f33534d0718ea0bd7b2280df13f53d9"
+    },
+    {
+      "id": "pro-sr-26-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "agent-guardrail",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "0549d70381a6ace61afc999e9a95f86ecc99e539448c182d2d5ac55bac85a4d7"
+    },
+    {
+      "id": "pro-sr-27-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-security-monitoring",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "3a59bee1bc400fb793c81d8f69a59e55a9b800f8170d5a7a56eba31d9c4e7f6e"
+    },
+    {
+      "id": "pro-sr-28-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-security-monitoring",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "920dcb215abc92e53e291e2ae71218c1fe11eb7143f1554f589a396f95b2a08c"
+    },
+    {
+      "id": "pro-sr-29-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "privacy-attack",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "040568bdd0666dd5fd65276e72c130464b98d950492b5fa9e5d44d6af9253f80"
+    },
+    {
+      "id": "pro-sr-30-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "privacy-attack",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "a3d0af70ee938c651285a865d5565199332d2af8ca06b9fececffc29d711220d"
+    },
+    {
+      "id": "pro-sr-31-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "privacy-audit",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "13ab2400c4afffb3895db60cb450ffab87a127a77b3db021998c67805c1ffdea"
+    },
+    {
+      "id": "pro-sr-32-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "privacy-audit",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "4077622a969a8bbb0d675f479caf43382670007d627268f218026bb4f834f01e"
+    },
+    {
+      "id": "pro-sr-33-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-misuse",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "fcfa1a0bb7a283d45506435daa4c57db711375f6c5b02e13a4de2da4bc6d8971"
+    },
+    {
+      "id": "pro-sr-34-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-misuse",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "deacdaa7b21fe829aebf52362e2032159d79832c77d33feb4a8bad5f058a2e30"
+    },
+    {
+      "id": "pro-sr-35-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-incident-response",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "cc56fb59dcfb397edf196b55a3ffdaa08d7983b1bfa32116a0ed977a38faeb80"
+    },
+    {
+      "id": "pro-sr-36-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-incident-response",
+      "kind": "json-schema",
+      "difficulty": "professional",
+      "templateSha256": "2e884fddf262c3559d573e3b92cc4f08945db4c3a76d86e40000e3e99995b5f8"
+    },
+    {
+      "id": "pro-sr-37-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-incident-reporting",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "79b7f2d80a8920524516fb550a6d99ab818e751c7e00c24db773b509273415a6"
+    },
+    {
+      "id": "pro-sr-38-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-incident-reporting",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "04782dcc1ab2ac21aed9ce268e02b1862d8b75724ee48a27c57e455c6d20e2ce"
+    },
+    {
+      "id": "pro-sr-39-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-attack-surface-map",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "7c2f5ec86595ee9b1a56ffb7847898384153718de4510d734490d0437f5bcde5"
+    },
+    {
+      "id": "pro-sr-40-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "ai-attack-surface-map",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "c4afb9a009582b03ee6a8ea74dc5fc1484fd596332aa81a5f99359c64ff7caf1"
+    },
+    {
+      "id": "pro-sr-41-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "model-abuse-case-library",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "33b486fd2411a195c8adadadf41aba7a9b7d224c720cb7c70c2beabc4e2a2336"
+    },
+    {
+      "id": "pro-sr-42-ops",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "model-abuse-case-library",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "0ad3c4c66d857cd3b450957da290837633e958466a5a8b0ff05f8f53b65f94cb"
+    },
+    {
+      "id": "pro-sr-43-review",
+      "courseId": "ai-security-redteam",
+      "wikiSlug": "guardrail-coverage-matrix",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "9835cee7c6316b879b850997c94cd98c820c36bbe2442a1aac7c62f51f4f3cae"
+    },
+    {
+      "id": "pro-mm-01-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "f7406e9d3d3fbc636b0fd29996c0967683cba6ee4dfda0b3e271c50b5011fcec"
+    },
+    {
+      "id": "pro-mm-02-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "590e2492afbd514008cb97876a9d2299cafb03f213f47bd1fa1dd3e58827cafe"
+    },
+    {
+      "id": "pro-mm-03-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-language-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "83de4bcac422e2ac3d7a812921d344cae1cc9385b4523c1c16dcd29d81f14499"
+    },
+    {
+      "id": "pro-mm-04-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-language-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "286b120434032885109e9d752e1838c873fae7c5905bb9154ccc4fea83bfc23b"
+    },
+    {
+      "id": "pro-mm-05-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-transformer",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "8a8ad81f07d9b77d1079d4c525249196979cf65f673171d81fc776d91c6f4a8b"
+    },
+    {
+      "id": "pro-mm-06-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-transformer",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "1e71f4072cc65b69f97905fdc5cc4468af8edb7fb196a59cde1b84c468614c73"
+    },
+    {
+      "id": "pro-mm-07-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-tokenizer",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "3453ceffde1672d39e6b16de107e5af391227cee00cef7b71ab6b7b1c938928f"
+    },
+    {
+      "id": "pro-mm-08-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-tokenizer",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "0b0f0a44ad04f0e483bbf24a22a4ecc2321b7d427dc5f3df6a24b28c1de5b136"
+    },
+    {
+      "id": "pro-mm-09-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "interleaved-multimodal-data",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "51aede6d29ef3df1ff19bd98a0dd63e04012b3c66f6292617099d941cb0e8d23"
+    },
+    {
+      "id": "pro-mm-10-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "interleaved-multimodal-data",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "bd2db7017c2809321c403710197f5846a601b94980e3ec1b99ac848cca7f1a61"
+    },
+    {
+      "id": "pro-mm-11-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "joint-embedding-space",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "bd07dc63ee5ec6412de973169a07e4f0f84c9bdcdf0e5d0078d1f20091b8acbd"
+    },
+    {
+      "id": "pro-mm-12-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "joint-embedding-space",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "a56eec35e2335353f591f3c90c87d30952c5f3299866d2e31533c1d340dbac48"
+    },
+    {
+      "id": "pro-mm-13-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-embedding",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "62340f453c9dd4c7a92fad316e0ffaad130209d2894132257b3e1ab312a451ca"
+    },
+    {
+      "id": "pro-mm-14-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-embedding",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "ac51c00adbeac297bd0c9b2aea730a9e9baaa4d27cbe86e72b68d3c22554c076"
+    },
+    {
+      "id": "pro-mm-15-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "cross-modal-alignment",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "d693cc87c52aaa2f978dfc18776d496661fc5d7e412c6dead545eec243d68cb5"
+    },
+    {
+      "id": "pro-mm-16-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "cross-modal-alignment",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "ae00e1442fcb49dfbc165813f7a1cb2f90a42d44024aa43a62eb698b0803afe0"
+    },
+    {
+      "id": "pro-mm-17-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "cross-modal-attention",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "6c99d24a8d342d47180ce12dfc21dd185e33feec7fc5fd153fafb770ed596b18"
+    },
+    {
+      "id": "pro-mm-18-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "cross-modal-attention",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "eccfb97a5eec6b12ba733687fd87c907aa8312eaa55741a3fd23d8967ac7e43f"
+    },
+    {
+      "id": "pro-mm-19-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-fusion",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "dcfb096a639b8a9b58f138884bbd9b62736eae09d7354432a941737f00ac108f"
+    },
+    {
+      "id": "pro-mm-20-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-fusion",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "46bfe841d7b541a6bff36df5fe1999b9b757e42de66d752e7a5bc94518582814"
+    },
+    {
+      "id": "pro-mm-21-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-instruction-tuning",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "0b65eb0a59050c23cf815d2a91f2c978c12217599d5bc3874972d110060d956e"
+    },
+    {
+      "id": "pro-mm-22-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-instruction-tuning",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "42501e3c8118fda44f5ac20eb85e5866fb351df81cac6cf1c7bc7262b382b56b"
+    },
+    {
+      "id": "pro-mm-23-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "vision-language-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "60b7d37e73fc845649390b98c15291ca5073ac3e9cffba8e35ecd69186269ad3"
+    },
+    {
+      "id": "pro-mm-24-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "vision-language-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "96a577d21eff23b55ad1b1a83f58640dd7171d8dae01e172884785e0e6fd0178"
+    },
+    {
+      "id": "pro-mm-25-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "image-embedding",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "3d2a0fc59b5169f85120823949ea38af8fe457a65eb34dae7f9d2b214dfb20ec"
+    },
+    {
+      "id": "pro-mm-26-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "image-embedding",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "cbf37e57b80923022afb7ea9b42b96c75445cf968c5622c2a9a2f34058ee3ce0"
+    },
+    {
+      "id": "pro-mm-27-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "audio-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "f43e6fad54b5dce25ac7f7fdf11ab3eb157dd1374b622180ec68d21c9900eff9"
+    },
+    {
+      "id": "pro-mm-28-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "audio-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "76bd29257ed05d7dc97b8ae4691fdfb2bb3a0878c3f317653c22b1ce1e50797d"
+    },
+    {
+      "id": "pro-mm-29-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "speech-language-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "64dd2a60647596f11cf5c89c1c30edb65e1f9b39d105bb1a205795427c1094c9"
+    },
+    {
+      "id": "pro-mm-30-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "speech-language-model",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "1a31b7c28eab2bbb4fb1c49a2bd299f3993c5aab66541a318b70555140c14292"
+    },
+    {
+      "id": "pro-mm-31-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "speech-recognition",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "68eb9c0a113f5b2486fd066a488b73849421a47e94b55912bbcbe350ea9443da"
+    },
+    {
+      "id": "pro-mm-32-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "speech-recognition",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "263f31b3379deca48d8115aa7664e7758660b1c3d5f03f8a938c9febac8096cf"
+    },
+    {
+      "id": "pro-mm-33-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "video-understanding",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "dd4dc553cd4267d08668d858dfb37d220b7e85286462fc07763b51eb5a263a8d"
+    },
+    {
+      "id": "pro-mm-34-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "video-understanding",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "f40a3897b9e2edb11da534f99d5d182f1528d977e36ad5c9e7f6e6ea7f48f997"
+    },
+    {
+      "id": "pro-mm-35-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-evaluation",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "d2e299be28a7da6739a66a34f66c89254dbfce12cc570c4fccf443a9e3f8f283"
+    },
+    {
+      "id": "pro-mm-36-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-evaluation",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "c76811b28c57ea0d18103e84d4e7e3b0f296d18c518b387555be0e561bc4ef85"
+    },
+    {
+      "id": "pro-mm-37-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-jailbreak",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "73406355a1050308470cb77e9713c8c2653801fce6a38f7382f875dbde61715a"
+    },
+    {
+      "id": "pro-mm-38-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-jailbreak",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "06a1ae56b0a65dfddc3da37fe1bf0d18310cd8ca21b0ff64ec268958e7fc7a25"
+    },
+    {
+      "id": "pro-mm-39-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-input-contract",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "bde29ff9ca2d45e6d6274af11a46db22bf0d4c67b005dedc2ff28f821182b44c"
+    },
+    {
+      "id": "pro-mm-40-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "multimodal-input-contract",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "c448fa7464f84c3eda640718c80d83075b2e85703f8f16329fd65f5163052bd8"
+    },
+    {
+      "id": "pro-mm-41-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "modality-fallback-policy",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "7808ef80e6afac2fdb7ebaaef91800340eaac6b888363efc59e790db26fa1cef"
+    },
+    {
+      "id": "pro-mm-42-ops",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "modality-fallback-policy",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "d0167ec01cbfded1a3889f8ad97c6b9bd1d21c8367d7a75b5da8749324fba591"
+    },
+    {
+      "id": "pro-mm-43-review",
+      "courseId": "multimodal-systems",
+      "wikiSlug": "cross-modal-latency-budget",
+      "kind": "markdown",
+      "difficulty": "professional",
+      "templateSha256": "23f226c3ca45ed99887f312d09ae4f002be7bbcc56c18db03ecc35408c01c653"
+    }
+  ]
+}
