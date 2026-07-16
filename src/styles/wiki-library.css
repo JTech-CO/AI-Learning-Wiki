@@ -5,6 +5,18 @@
 .explorer-controls label { color: #54595d; font-size: .78rem; font-weight: 700; }
 .explorer-controls input,
 .explorer-controls select { display: block; width: 100%; height: 2.2rem; margin-top: .2rem; border: 1px solid #a2a9b1; border-radius: 0; background: #fff; color: #202122; padding: .35rem .5rem; }
+.explorer-filter { min-width: 0; color: #54595d; font-size: .78rem; font-weight: 700; }
+.prompt-course-menu { position: relative; margin-top: .2rem; font-size: .82rem; font-weight: 400; }
+.prompt-course-menu > summary { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 2.2rem; border: 1px solid #a2a9b1; background: #fff; color: #202122; cursor: pointer; list-style: none; padding: .35rem .5rem; }
+.prompt-course-menu > summary::-webkit-details-marker { display: none; }
+.prompt-course-menu > summary::after { content: '⌄'; margin-left: .5rem; font-size: 1rem; line-height: 1; }
+.prompt-course-menu[open] > summary::after { content: '⌃'; }
+.prompt-course-menu > summary:focus-visible { outline: 3px solid #36c; outline-offset: 2px; }
+.prompt-course-options { position: absolute; z-index: 50; top: calc(100% + .15rem); right: 0; left: 0; max-height: min(28rem, 60vh); overflow-y: auto; border: 1px solid #72777d; background: #fff; padding: .18rem 0; }
+.prompt-course-options button { display: block; width: 100%; border: 0; background: #fff; color: #202122; cursor: pointer; padding: .42rem .65rem; text-align: left; font: inherit; }
+.prompt-course-options button:hover,
+.prompt-course-options button:focus-visible { background: #eaecf0; outline: 0; }
+.prompt-course-options button[aria-selected='true'] { background: #3366cc; color: #fff; font-weight: 600; }
 .explorer-count { color: #54595d; font-size: .82rem; }
 .catalog-results,
 .prompt-results { display: block; }

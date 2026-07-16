@@ -3,9 +3,13 @@
     <label class="explorer-search">프롬프트 검색
       <input id="prompt-query" type="search" placeholder="예: 보고서, RAG, 고객 이메일" autocomplete="off" />
     </label>
-    <label>코스
-      <select id="prompt-course"><option value="">전체 코스</option></select>
-    </label>
+    <div class="explorer-filter">
+      <span class="explorer-filter-label">코스</span>
+      <details id="prompt-course-menu" class="prompt-course-menu">
+        <summary aria-haspopup="listbox" aria-expanded="false"><span id="prompt-course-label">전체 코스</span></summary>
+        <div id="prompt-course-options" class="prompt-course-options" role="listbox" aria-label="프롬프트 코스"></div>
+      </details>
+    </div>
     <label>작성 예시
       <select id="prompt-examples"><option value="">전체</option><option value="yes">예시 있음</option><option value="no">예시 없음</option></select>
     </label>
@@ -20,8 +24,12 @@
 </section>
 
 <script>
-  const courseNames = { 'ai-foundations':'AI 기초','llm-internals':'LLM 내부 구조','model-training':'모델 학습과 튜닝','rag-search':'임베딩과 RAG','api-development':'AI API 개발','agent-systems':'AI 에이전트','responsible-ai':'신뢰할 수 있는 AI','multimodal-ai':'멀티모달 AI' };
-  const query = document.querySelector('#prompt-query'); const course = document.querySelector('#prompt-course');
+  const courseNames = { 'ai-foundations':'AI 기초','llm-internals':'LLM 내부 구조','model-training':'모델 학습과 튜닝','rag-search':'임베딩과 RAG','api-development':'AI API 개발','agent-systems':'AI 에이전트','responsible-ai':'신뢰할 수 있는 AI','multimodal-ai':'멀티모달 AI','prompt-systems':'프롬프트 시스템 설계','llm-evaluation':'LLM 평가와 관측성','llmops-production':'LLMOps와 프로덕션 서빙','advanced-rag':'고급 RAG와 지식 시스템','production-agents':'프로덕션 AI 에이전트','post-training-alignment':'사후학습과 정렬 심화','ai-security-redteam':'AI 보안과 레드팀','multimodal-systems':'멀티모달 AI 시스템' };
+  const courseOrder = Object.keys(courseNames);
+  const query = document.querySelector('#prompt-query');
+  const courseMenu = document.querySelector('#prompt-course-menu');
+  const courseLabel = document.querySelector('#prompt-course-label');
+  const courseOptions = document.querySelector('#prompt-course-options');
   const exampleFilter = document.querySelector('#prompt-examples'); const results = document.querySelector('#prompt-results'); const count = document.querySelector('#prompt-count');
   const promptDataUrl = document.querySelector('.prompt-explorer')?.getAttribute('data-prompts-url') ?? '../data/prompts.json';
   const pagination = document.querySelector('#prompt-pagination');
@@ -30,6 +38,7 @@
   const pageStatus = document.querySelector('#prompt-page-status');
   const PAGE_SIZE = 40;
   let prompts = [];
+  let selectedCourse = '';
   let currentPage = 1;
   const initialParams = new URLSearchParams(location.search);
   query.value = initialParams.get('q') ?? '';
@@ -63,7 +72,7 @@
   function syncUrl() {
     const params = new URLSearchParams();
     if (query.value.trim()) params.set('q', query.value.trim());
-    if (course.value) params.set('course', course.value);
+    if (selectedCourse) params.set('course', selectedCourse);
     if (exampleFilter.value) params.set('examples', exampleFilter.value);
     if (currentPage > 1) params.set('page', String(currentPage));
     const search = params.toString();
@@ -71,7 +80,7 @@
   }
   function render({ updateUrl = true } = {}) {
     const needle = query.value.trim().toLowerCase();
-    const filtered = prompts.filter((prompt) => (!course.value || prompt.course === course.value) && (!exampleFilter.value || (exampleFilter.value === 'yes') === Boolean(prompt.examples.length)) && (!needle || `${prompt.title} ${prompt.template} ${(prompt.tags ?? []).join(' ')}`.toLowerCase().includes(needle)));
+    const filtered = prompts.filter((prompt) => (!selectedCourse || prompt.course === selectedCourse) && (!exampleFilter.value || (exampleFilter.value === 'yes') === Boolean(prompt.examples.length)) && (!needle || `${prompt.title} ${prompt.template} ${(prompt.tags ?? []).join(' ')}`.toLowerCase().includes(needle)));
     const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
     currentPage = Math.min(Math.max(1, currentPage), totalPages);
     const start = (currentPage - 1) * PAGE_SIZE;
@@ -89,12 +98,34 @@
     return response.json();
   }).then((data) => {
     prompts = data.prompts;
-    [...new Set(prompts.map((item) => item.course))].forEach((id) => { const option = document.createElement('option'); option.value = id; option.textContent = courseNames[id] ?? id; course.append(option); });
+    const availableCourses = new Set(prompts.map((item) => item.course));
+    const courseIds = courseOrder.filter((id) => availableCourses.has(id));
+    const makeCourseOption = (id, label) => {
+      const option = document.createElement('button');
+      option.type = 'button'; option.role = 'option'; option.dataset.courseValue = id;
+      option.textContent = label; option.setAttribute('aria-selected', 'false');
+      return option;
+    };
+    courseOptions.replaceChildren(makeCourseOption('', '전체 코스'), ...courseIds.map((id) => makeCourseOption(id, courseNames[id])));
+    const selectCourse = (id, { update = true } = {}) => {
+      selectedCourse = courseIds.includes(id) ? id : '';
+      courseLabel.textContent = selectedCourse ? courseNames[selectedCourse] : '전체 코스';
+      courseOptions.querySelectorAll('[data-course-value]').forEach((option) => option.setAttribute('aria-selected', String(option.dataset.courseValue === selectedCourse)));
+      courseMenu.open = false;
+      if (update) { currentPage = 1; render(); }
+    };
+    courseOptions.addEventListener('click', (event) => {
+      const option = event.target.closest('[data-course-value]');
+      if (option) selectCourse(option.dataset.courseValue ?? '');
+    });
     const requestedCourse = initialParams.get('course') ?? '';
-    course.value = [...course.options].some((option) => option.value === requestedCourse) ? requestedCourse : '';
+    selectCourse(requestedCourse, { update: false });
     render({ updateUrl: false });
   }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했습니다.');
-  [query, course, exampleFilter].forEach((control) => control?.addEventListener('input', () => { currentPage = 1; render(); }));
+  [query, exampleFilter].forEach((control) => control?.addEventListener('input', () => { currentPage = 1; render(); }));
+  courseMenu?.addEventListener('toggle', () => courseMenu.querySelector('summary')?.setAttribute('aria-expanded', String(courseMenu.open)));
+  courseMenu?.addEventListener('keydown', (event) => { if (event.key === 'Escape') { courseMenu.open = false; courseMenu.querySelector('summary')?.focus(); } });
+  document.addEventListener('click', (event) => { if (courseMenu?.open && !courseMenu.contains(event.target)) courseMenu.open = false; });
   previousPage?.addEventListener('click', () => { if (currentPage > 1) { currentPage -= 1; render(); results.scrollIntoView({ block: 'start' }); } });
   nextPage?.addEventListener('click', () => { currentPage += 1; render(); results.scrollIntoView({ block: 'start' }); });
 </script>

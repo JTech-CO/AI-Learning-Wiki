@@ -1,3 +1,16 @@
+---
+const additionalCourses = [
+  { id: 'prompt-systems', title: '프롬프트 시스템 설계' },
+  { id: 'llm-evaluation', title: 'LLM 평가와 관측성' },
+  { id: 'llmops-production', title: 'LLMOps와 프로덕션 서빙' },
+  { id: 'advanced-rag', title: '고급 RAG와 지식 시스템' },
+  { id: 'production-agents', title: '프로덕션 AI 에이전트' },
+  { id: 'post-training-alignment', title: '사후학습과 정렬 심화' },
+  { id: 'ai-security-redteam', title: 'AI 보안과 레드팀' },
+  { id: 'multimodal-systems', title: '멀티모달 AI 시스템' },
+];
+const showAdditionalCourses = additionalCourses.some((course) => Astro.url.pathname.includes(`/course/${course.id}/`));
+---
 <div class="wiki-sidebar-nav">
   <section>
     <h2>둘러보기</h2>
@@ -16,6 +29,12 @@
     <a href="/course/agent-systems/">AI 에이전트</a>
     <a href="/course/responsible-ai/">신뢰할 수 있는 AI</a>
     <a href="/course/multimodal-ai/">멀티모달 AI</a>
+    <details class="wiki-sidebar-more" open={showAdditionalCourses}>
+      <summary>더 보기</summary>
+      <div class="wiki-sidebar-more-links">
+        {additionalCourses.map((course) => <a href={`/course/${course.id}/`}>{course.title}</a>)}
+      </div>
+    </details>
   </section>
   <section>
     <h2>자료실</h2>

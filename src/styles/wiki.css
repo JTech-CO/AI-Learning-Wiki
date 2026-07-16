@@ -49,6 +49,13 @@ a:hover { text-decoration: underline; }
 .wiki-sidebar-nav section { display: flex; flex-direction: column; gap: .28rem; }
 .wiki-sidebar-nav h2 { margin: 0 0 .25rem; border-bottom: 1px solid #eaecf0; padding-bottom: .3rem; color: #54595d; font-size: .78rem; font-weight: 700; }
 .wiki-sidebar-nav a { padding: .08rem 0; font-size: .82rem; }
+.wiki-sidebar-more { margin-top: .2rem; }
+.wiki-sidebar-more > summary { display: flex; align-items: center; gap: .35rem; color: #3366cc; cursor: pointer; font-size: .78rem; font-weight: 600; list-style: none; padding: .16rem 0; }
+.wiki-sidebar-more > summary::-webkit-details-marker { display: none; }
+.wiki-sidebar-more > summary::before { content: '▸'; color: #54595d; font-size: .68rem; }
+.wiki-sidebar-more[open] > summary::before { content: '▾'; }
+.wiki-sidebar-more-links { display: flex; flex-direction: column; gap: .28rem; margin: .28rem 0 0 .22rem; border-left: 1px solid #c8ccd1; padding-left: .65rem; }
+.wiki-sidebar-more > summary:focus-visible { outline: 3px solid #36c; outline-offset: 2px; }
 .wiki-menu-control button { position: fixed; z-index: 20; top: .75rem; right: .75rem; height: 2.3rem; border: 1px solid #72777d; border-radius: 0; background: #fff; color: #202122; padding: .35rem .65rem; }
 
 .main-pane { --sl-content-pad-x: clamp(1rem, 3vw, 2.5rem); }
