@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "2.0",
+  "id": "llmops-production",
+  "order": 10,
+  "title": {
+    "ko": "LLMOps와 프로덕션 서빙",
+    "en": "LLMOps and Production Serving"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "지연 시간·처리량·비용·안정성을 함께 책임지는 LLM 플랫폼 엔지니어",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-engineer",
+    "automation"
+  ],
+  "learningOutcomes": [
+    "서빙 워크로드의 용량과 SLO를 산정한다.",
+    "캐시·배칭·양자화로 비용과 성능을 조율한다.",
+    "오류·타임아웃·오토스케일 정책을 설계한다.",
+    "관측 지표를 배포 판단과 장애 대응에 연결한다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "inference",
+          "title": {
+            "ko": "추론",
+            "en": "Inference"
+          },
+          "rationale": "추론 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "model-serving",
+          "title": {
+            "ko": "모델 서빙",
+            "en": "Model Serving"
+          },
+          "rationale": "모델 서빙 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "model-serving-platform",
+          "title": {
+            "ko": "모델 서빙 플랫폼",
+            "en": "Model Serving Platform"
+          },
+          "rationale": "모델 서빙 플랫폼 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "inference-server",
+          "title": {
+            "ko": "추론 서버",
+            "en": "Inference Server"
+          },
+          "rationale": "추론 서버 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "online-inference",
+          "title": {
+            "ko": "온라인 추론",
+            "en": "Online Inference"
+          },
+          "rationale": "온라인 추론 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "batch-inference",
+          "title": {
+            "ko": "배치 추론",
+            "en": "Batch Inference"
+          },
+          "rationale": "배치 추론 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "inference-endpoint",
+          "title": {
+            "ko": "추론 엔드포인트",
+            "en": "Inference Endpoint"
+          },
+          "rationale": "추론 엔드포인트 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "throughput",
+          "title": {
+            "ko": "처리량",
+            "en": "Throughput"
+          },
+          "rationale": "처리량 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "latency",
+          "title": {
+            "ko": "지연 시간",
+            "en": "Latency"
+          },
+          "rationale": "지연 시간 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "inter-token-latency",
+          "title": {
+            "ko": "토큰 간 지연 시간",
+            "en": "Inter-Token Latency"
+          },
+          "rationale": "토큰 간 지연 시간 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "tail-latency",
+          "title": {
+            "ko": "꼬리 지연 시간",
+            "en": "Tail Latency"
+          },
+          "rationale": "꼬리 지연 시간 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "latency-throughput-tradeoff",
+          "title": {
+            "ko": "지연 시간-처리량 절충",
+            "en": "Latency-Throughput Tradeoff"
+          },
+          "rationale": "지연 시간-처리량 절충 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "kv-cache",
+          "title": {
+            "ko": "KV 캐시",
+            "en": "Key-Value Cache"
+          },
+          "rationale": "KV 캐시 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "paged-kv-cache",
+          "title": {
+            "ko": "페이지드 KV 캐시",
+            "en": "Paged KV Cache"
+          },
+          "rationale": "페이지드 KV 캐시 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "prompt-caching",
+          "title": {
+            "ko": "프롬프트 캐싱",
+            "en": "Prompt Caching"
+          },
+          "rationale": "프롬프트 캐싱 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "inference-load-balancing",
+          "title": {
+            "ko": "추론 부하 분산",
+            "en": "Inference Load Balancing"
+          },
+          "rationale": "추론 부하 분산 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "inference-autoscaling",
+          "title": {
+            "ko": "추론 자동 확장",
+            "en": "Inference Autoscaling"
+          },
+          "rationale": "추론 자동 확장 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "inference-capacity-planning",
+          "title": {
+            "ko": "추론 용량 계획",
+            "en": "Inference Capacity Planning"
+          },
+          "rationale": "추론 용량 계획 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "inference-monitoring",
+          "title": {
+            "ko": "추론 모니터링",
+            "en": "Inference Monitoring"
+          },
+          "rationale": "추론 모니터링 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "llm-serving-slo",
+          "title": {
+            "ko": "LLM 서빙 SLO",
+            "en": "LLM Serving SLO"
+          },
+          "rationale": "LLM 서빙 SLO 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "token-budget-admission-control",
+          "title": {
+            "ko": "토큰 예산 수용 제어",
+            "en": "Token-budget Admission Control"
+          },
+          "rationale": "토큰 예산 수용 제어 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "continuous-batching-policy",
+          "title": {
+            "ko": "연속 배칭 정책",
+            "en": "Continuous Batching Policy"
+          },
+          "rationale": "연속 배칭 정책 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "model-fleet-routing",
+          "title": {
+            "ko": "모델 플릿 라우팅",
+            "en": "Model Fleet Routing"
+          },
+          "rationale": "모델 플릿 라우팅 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "llm-cost-attribution",
+          "title": {
+            "ko": "LLM 비용 귀속",
+            "en": "LLM Cost Attribution"
+          },
+          "rationale": "LLM 비용 귀속 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}

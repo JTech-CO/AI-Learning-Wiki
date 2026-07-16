@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "2.0",
+  "id": "multimodal-systems",
+  "order": 15,
+  "title": {
+    "ko": "멀티모달 AI 시스템",
+    "en": "Multimodal AI Systems"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "텍스트·이미지·음성·영상을 결합한 제품을 설계하는 개발자와 기획자",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-engineer"
+  ],
+  "learningOutcomes": [
+    "모달리티별 토큰화와 표현 방식을 비교한다.",
+    "공동 임베딩과 퓨전 구조를 선택한다.",
+    "지연·비용·품질 제약에 맞는 파이프라인을 설계한다.",
+    "모달리티별 평가와 안전 검증을 수행한다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "multimodal-model",
+          "title": {
+            "ko": "멀티모달 모델",
+            "en": "Multimodal Model"
+          },
+          "rationale": "멀티모달 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "multimodal-language-model",
+          "title": {
+            "ko": "멀티모달 언어 모델",
+            "en": "Multimodal Language Model"
+          },
+          "rationale": "멀티모달 언어 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "multimodal-transformer",
+          "title": {
+            "ko": "멀티모달 트랜스포머",
+            "en": "Multimodal Transformer"
+          },
+          "rationale": "멀티모달 트랜스포머 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "multimodal-tokenizer",
+          "title": {
+            "ko": "멀티모달 토크나이저",
+            "en": "Multimodal Tokenizer"
+          },
+          "rationale": "멀티모달 토크나이저 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "interleaved-multimodal-data",
+          "title": {
+            "ko": "교차 배열 멀티모달 데이터",
+            "en": "Interleaved Multimodal Data"
+          },
+          "rationale": "교차 배열 멀티모달 데이터 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "joint-embedding-space",
+          "title": {
+            "ko": "공동 임베딩 공간",
+            "en": "Joint Embedding Space"
+          },
+          "rationale": "공동 임베딩 공간 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "multimodal-embedding",
+          "title": {
+            "ko": "멀티모달 임베딩",
+            "en": "Multimodal Embedding"
+          },
+          "rationale": "멀티모달 임베딩 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "cross-modal-alignment",
+          "title": {
+            "ko": "교차모달 정렬",
+            "en": "Cross-Modal Alignment"
+          },
+          "rationale": "교차모달 정렬 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "cross-modal-attention",
+          "title": {
+            "ko": "교차모달 어텐션",
+            "en": "Cross-Modal Attention"
+          },
+          "rationale": "교차모달 어텐션 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "multimodal-fusion",
+          "title": {
+            "ko": "멀티모달 융합",
+            "en": "Multimodal Fusion"
+          },
+          "rationale": "멀티모달 융합 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "multimodal-instruction-tuning",
+          "title": {
+            "ko": "멀티모달 지시 튜닝",
+            "en": "Multimodal Instruction Tuning"
+          },
+          "rationale": "멀티모달 지시 튜닝 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "vision-language-model",
+          "title": {
+            "ko": "비전-언어 모델",
+            "en": "Vision-Language Model"
+          },
+          "rationale": "비전-언어 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "image-embedding",
+          "title": {
+            "ko": "이미지 임베딩",
+            "en": "Image Embedding"
+          },
+          "rationale": "이미지 임베딩 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "audio-model",
+          "title": {
+            "ko": "오디오 모델",
+            "en": "Audio Model"
+          },
+          "rationale": "오디오 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "speech-language-model",
+          "title": {
+            "ko": "음성 언어 모델",
+            "en": "Speech Language Model"
+          },
+          "rationale": "음성 언어 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "speech-recognition",
+          "title": {
+            "ko": "음성 인식",
+            "en": "Automatic Speech Recognition"
+          },
+          "rationale": "음성 인식 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "video-understanding",
+          "title": {
+            "ko": "비디오 이해",
+            "en": "Video Understanding"
+          },
+          "rationale": "비디오 이해 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "multimodal-evaluation",
+          "title": {
+            "ko": "멀티모달 평가",
+            "en": "Multimodal Evaluation"
+          },
+          "rationale": "멀티모달 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "multimodal-jailbreak",
+          "title": {
+            "ko": "멀티모달 탈옥 공격",
+            "en": "Multimodal Jailbreak"
+          },
+          "rationale": "멀티모달 탈옥 공격 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "multimodal-input-contract",
+          "title": {
+            "ko": "멀티모달 입력 계약",
+            "en": "Multimodal Input Contract"
+          },
+          "rationale": "멀티모달 입력 계약 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "modality-fallback-policy",
+          "title": {
+            "ko": "모달리티 대체 정책",
+            "en": "Modality Fallback Policy"
+          },
+          "rationale": "모달리티 대체 정책 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "cross-modal-latency-budget",
+          "title": {
+            "ko": "교차 모달 지연 예산",
+            "en": "Cross-modal Latency Budget"
+          },
+          "rationale": "교차 모달 지연 예산 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "multimodal-safety-evaluation",
+          "title": {
+            "ko": "멀티모달 안전 평가",
+            "en": "Multimodal Safety Evaluation"
+          },
+          "rationale": "멀티모달 안전 평가 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "media-provenance-pipeline",
+          "title": {
+            "ko": "미디어 출처 파이프라인",
+            "en": "Media Provenance Pipeline"
+          },
+          "rationale": "미디어 출처 파이프라인 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}

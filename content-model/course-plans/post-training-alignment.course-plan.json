@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "2.0",
+  "id": "post-training-alignment",
+  "order": 13,
+  "title": {
+    "ko": "사후학습과 정렬 심화",
+    "en": "Post-training and Alignment"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "지시 순응·선호 최적화·안전 정렬을 설계하는 모델 개발자와 연구자",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-engineer"
+  ],
+  "learningOutcomes": [
+    "SFT와 선호 학습 데이터 파이프라인을 설계한다.",
+    "RLHF·DPO·RLAIF의 목표와 제약을 비교한다.",
+    "보상 모델과 정책 최적화의 실패를 탐지한다.",
+    "정렬 품질과 역량 보존을 함께 평가한다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "fine-tuning",
+          "title": {
+            "ko": "미세조정",
+            "en": "Fine-Tuning"
+          },
+          "rationale": "미세조정 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "supervised-fine-tuning",
+          "title": {
+            "ko": "지도 미세조정",
+            "en": "Supervised Fine-Tuning"
+          },
+          "rationale": "지도 미세조정 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "instruction-tuning",
+          "title": {
+            "ko": "지시 튜닝",
+            "en": "Instruction Tuning"
+          },
+          "rationale": "지시 튜닝 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "preference-data",
+          "title": {
+            "ko": "선호 데이터",
+            "en": "Preference Data"
+          },
+          "rationale": "선호 데이터 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "pairwise-preference-ranking",
+          "title": {
+            "ko": "쌍대 선호 순위화",
+            "en": "Pairwise Preference Ranking"
+          },
+          "rationale": "쌍대 선호 순위화 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "reward-model",
+          "title": {
+            "ko": "보상 모델",
+            "en": "Reward Model"
+          },
+          "rationale": "보상 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "outcome-reward-model",
+          "title": {
+            "ko": "결과 보상 모델",
+            "en": "Outcome Reward Model"
+          },
+          "rationale": "결과 보상 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "process-reward-model",
+          "title": {
+            "ko": "과정 보상 모델",
+            "en": "Process Reward Model"
+          },
+          "rationale": "과정 보상 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "rlhf",
+          "title": {
+            "ko": "인간 피드백 기반 강화학습",
+            "en": "Reinforcement Learning from Human Feedback"
+          },
+          "rationale": "인간 피드백 기반 강화학습 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "reinforcement-learning-from-ai-feedback",
+          "title": {
+            "ko": "AI 피드백 기반 강화학습",
+            "en": "Reinforcement Learning from AI Feedback"
+          },
+          "rationale": "AI 피드백 기반 강화학습 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "dpo",
+          "title": {
+            "ko": "직접 선호 최적화",
+            "en": "Direct Preference Optimization"
+          },
+          "rationale": "직접 선호 최적화 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "offline-preference-learning",
+          "title": {
+            "ko": "오프라인 선호 학습",
+            "en": "Offline Preference Learning"
+          },
+          "rationale": "오프라인 선호 학습 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "online-preference-learning",
+          "title": {
+            "ko": "온라인 선호 학습",
+            "en": "Online Preference Learning"
+          },
+          "rationale": "온라인 선호 학습 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "preference-loss",
+          "title": {
+            "ko": "선호 손실",
+            "en": "Preference Loss"
+          },
+          "rationale": "선호 손실 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "proximal-policy-optimization-for-llm",
+          "title": {
+            "ko": "LLM용 근접 정책 최적화",
+            "en": "Proximal Policy Optimization for LLMs"
+          },
+          "rationale": "LLM용 근접 정책 최적화 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "rejection-sampling",
+          "title": {
+            "ko": "기각 표본추출",
+            "en": "Rejection Sampling"
+          },
+          "rationale": "기각 표본추출 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "constitutional-ai",
+          "title": {
+            "ko": "헌법적 AI",
+            "en": "Constitutional AI"
+          },
+          "rationale": "헌법적 AI 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "reward-hacking",
+          "title": {
+            "ko": "보상 해킹",
+            "en": "Reward Hacking"
+          },
+          "rationale": "보상 해킹 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "alignment",
+          "title": {
+            "ko": "AI 정렬",
+            "en": "AI Alignment"
+          },
+          "rationale": "AI 정렬 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "preference-data-governance",
+          "title": {
+            "ko": "선호 데이터 거버넌스",
+            "en": "Preference Data Governance"
+          },
+          "rationale": "선호 데이터 거버넌스 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "reward-model-calibration",
+          "title": {
+            "ko": "보상 모델 교정",
+            "en": "Reward Model Calibration"
+          },
+          "rationale": "보상 모델 교정 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "post-training-ablation",
+          "title": {
+            "ko": "사후학습 제거 실험",
+            "en": "Post-training Ablation"
+          },
+          "rationale": "사후학습 제거 실험 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "alignment-capability-retention",
+          "title": {
+            "ko": "정렬 역량 보존",
+            "en": "Alignment Capability Retention"
+          },
+          "rationale": "정렬 역량 보존 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "preference-shift-monitoring",
+          "title": {
+            "ko": "선호 변화 관측",
+            "en": "Preference Shift Monitoring"
+          },
+          "rationale": "선호 변화 관측 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}

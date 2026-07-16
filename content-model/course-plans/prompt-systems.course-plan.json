@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "2.0",
+  "id": "prompt-systems",
+  "order": 8,
+  "title": {
+    "ko": "프롬프트 시스템 설계",
+    "en": "Prompt Systems Engineering"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "프롬프트를 반복 가능한 제품 품질 관리 단위로 다루려는 기획자와 개발자",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-intro",
+    "ai-work"
+  ],
+  "learningOutcomes": [
+    "지시 계층과 입출력 계약을 설계한다.",
+    "구조화 출력과 복구 전략을 구현한다.",
+    "프롬프트 평가·버전·배포 절차를 정의한다.",
+    "콘텍스트 비용과 품질을 함께 최적화한다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "prompt",
+          "title": {
+            "ko": "프롬프트",
+            "en": "Prompt"
+          },
+          "rationale": "프롬프트 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "prompt-engineering",
+          "title": {
+            "ko": "프롬프트 엔지니어링",
+            "en": "Prompt Engineering"
+          },
+          "rationale": "프롬프트 엔지니어링 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "system-prompt",
+          "title": {
+            "ko": "시스템 프롬프트",
+            "en": "System Prompt"
+          },
+          "rationale": "시스템 프롬프트 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "user-prompt",
+          "title": {
+            "ko": "사용자 프롬프트",
+            "en": "User Prompt"
+          },
+          "rationale": "사용자 프롬프트 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "prompt-template",
+          "title": {
+            "ko": "프롬프트 템플릿",
+            "en": "Prompt Template"
+          },
+          "rationale": "프롬프트 템플릿 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "prompt-delimiter",
+          "title": {
+            "ko": "프롬프트 구분자",
+            "en": "Prompt Delimiter"
+          },
+          "rationale": "프롬프트 구분자 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "role-prompting",
+          "title": {
+            "ko": "역할 프롬프팅",
+            "en": "Role Prompting"
+          },
+          "rationale": "역할 프롬프팅 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "zero-shot-prompting",
+          "title": {
+            "ko": "제로샷 프롬프팅",
+            "en": "Zero-Shot Prompting"
+          },
+          "rationale": "제로샷 프롬프팅 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "few-shot-prompting",
+          "title": {
+            "ko": "퓨샷 프롬프팅",
+            "en": "Few-Shot Prompting"
+          },
+          "rationale": "퓨샷 프롬프팅 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "chain-of-thought-prompting",
+          "title": {
+            "ko": "사고 과정 프롬프팅",
+            "en": "Chain-of-Thought Prompting"
+          },
+          "rationale": "사고 과정 프롬프팅 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "context-engineering",
+          "title": {
+            "ko": "컨텍스트 엔지니어링",
+            "en": "Context Engineering"
+          },
+          "rationale": "컨텍스트 엔지니어링 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "context-window",
+          "title": {
+            "ko": "컨텍스트 윈도우",
+            "en": "Context Window"
+          },
+          "rationale": "컨텍스트 윈도우 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "structured-output",
+          "title": {
+            "ko": "구조화 출력",
+            "en": "Structured Output"
+          },
+          "rationale": "구조화 출력 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "json-schema",
+          "title": {
+            "ko": "JSON 스키마",
+            "en": "JSON Schema"
+          },
+          "rationale": "JSON 스키마 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "schema-validation",
+          "title": {
+            "ko": "스키마 검증",
+            "en": "Schema Validation"
+          },
+          "rationale": "스키마 검증 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "prompt-chaining",
+          "title": {
+            "ko": "프롬프트 체이닝",
+            "en": "Prompt Chaining"
+          },
+          "rationale": "프롬프트 체이닝 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "prompt-caching",
+          "title": {
+            "ko": "프롬프트 캐싱",
+            "en": "Prompt Caching"
+          },
+          "rationale": "프롬프트 캐싱 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "prompt-compression",
+          "title": {
+            "ko": "프롬프트 압축",
+            "en": "Prompt Compression"
+          },
+          "rationale": "프롬프트 압축 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "automatic-prompt-optimization",
+          "title": {
+            "ko": "자동 프롬프트 최적화",
+            "en": "Automatic Prompt Optimization"
+          },
+          "rationale": "자동 프롬프트 최적화 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "prompt-contract-testing",
+          "title": {
+            "ko": "프롬프트 계약 테스트",
+            "en": "Prompt Contract Testing"
+          },
+          "rationale": "프롬프트 계약 테스트 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "instruction-priority-architecture",
+          "title": {
+            "ko": "지시 우선순위 아키텍처",
+            "en": "Instruction Priority Architecture"
+          },
+          "rationale": "지시 우선순위 아키텍처 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "prompt-release-governance",
+          "title": {
+            "ko": "프롬프트 릴리스 거버넌스",
+            "en": "Prompt Release Governance"
+          },
+          "rationale": "프롬프트 릴리스 거버넌스 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "structured-output-recovery",
+          "title": {
+            "ko": "구조화 출력 복구",
+            "en": "Structured Output Recovery"
+          },
+          "rationale": "구조화 출력 복구 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "prompt-portfolio-observability",
+          "title": {
+            "ko": "프롬프트 포트폴리오 관측성",
+            "en": "Prompt Portfolio Observability"
+          },
+          "rationale": "프롬프트 포트폴리오 관측성 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}

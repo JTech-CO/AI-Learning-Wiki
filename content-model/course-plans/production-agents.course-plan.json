@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "2.0",
+  "id": "production-agents",
+  "order": 12,
+  "title": {
+    "ko": "프로덕션 AI 에이전트",
+    "en": "Production AI Agents"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "도구 호출과 상태 변경을 안전하게 운영하는 에이전트 시스템 개발자",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-engineer",
+    "automation"
+  ],
+  "learningOutcomes": [
+    "계획·실행·반성 루프의 종료 조건을 정의한다.",
+    "도구 스키마와 권한 경계를 설계한다.",
+    "메모리와 핸드오프의 일관성을 관리한다.",
+    "궤적·실패·안전성을 평가하고 장애에 대응한다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "ai-agent",
+          "title": {
+            "ko": "AI 에이전트",
+            "en": "AI Agent"
+          },
+          "rationale": "AI 에이전트 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "agent-loop",
+          "title": {
+            "ko": "에이전트 루프",
+            "en": "Agent Loop"
+          },
+          "rationale": "에이전트 루프 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "agent-goal",
+          "title": {
+            "ko": "에이전트 목표",
+            "en": "Agent Goal"
+          },
+          "rationale": "에이전트 목표 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "agent-task-decomposition",
+          "title": {
+            "ko": "에이전트 과제 분해",
+            "en": "Agent Task Decomposition"
+          },
+          "rationale": "에이전트 과제 분해 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "agent-deliberation",
+          "title": {
+            "ko": "에이전트 숙고",
+            "en": "Agent Deliberation"
+          },
+          "rationale": "에이전트 숙고 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "agent-plan-quality",
+          "title": {
+            "ko": "에이전트 계획 품질",
+            "en": "Agent Plan Quality"
+          },
+          "rationale": "에이전트 계획 품질 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "agent-executor",
+          "title": {
+            "ko": "에이전트 실행기",
+            "en": "Agent Executor"
+          },
+          "rationale": "에이전트 실행기 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "agent-tool",
+          "title": {
+            "ko": "에이전트 도구",
+            "en": "Agent Tool"
+          },
+          "rationale": "에이전트 도구 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "agent-tool-accuracy",
+          "title": {
+            "ko": "에이전트 도구 정확도",
+            "en": "Agent Tool Accuracy"
+          },
+          "rationale": "에이전트 도구 정확도 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "agent-runtime",
+          "title": {
+            "ko": "에이전트 런타임",
+            "en": "Agent Runtime"
+          },
+          "rationale": "에이전트 런타임 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "agent-memory",
+          "title": {
+            "ko": "에이전트 메모리",
+            "en": "Agent Memory"
+          },
+          "rationale": "에이전트 메모리 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "episodic-agent-memory",
+          "title": {
+            "ko": "에이전트 일화 기억",
+            "en": "Episodic Agent Memory"
+          },
+          "rationale": "에이전트 일화 기억 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "long-term-agent-memory",
+          "title": {
+            "ko": "에이전트 장기 기억",
+            "en": "Long-Term Agent Memory"
+          },
+          "rationale": "에이전트 장기 기억 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "agent-reflection",
+          "title": {
+            "ko": "에이전트 성찰",
+            "en": "Agent Reflection"
+          },
+          "rationale": "에이전트 성찰 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "agent-self-correction",
+          "title": {
+            "ko": "에이전트 자기 교정",
+            "en": "Agent Self-Correction"
+          },
+          "rationale": "에이전트 자기 교정 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "agent-replanning",
+          "title": {
+            "ko": "에이전트 재계획",
+            "en": "Agent Replanning"
+          },
+          "rationale": "에이전트 재계획 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "agent-termination-condition",
+          "title": {
+            "ko": "에이전트 종료 조건",
+            "en": "Agent Termination Condition"
+          },
+          "rationale": "에이전트 종료 조건 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "agent-sandbox",
+          "title": {
+            "ko": "에이전트 샌드박스",
+            "en": "Agent Sandbox"
+          },
+          "rationale": "에이전트 샌드박스 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "agent-evaluation",
+          "title": {
+            "ko": "에이전트 평가",
+            "en": "Agent Evaluation"
+          },
+          "rationale": "에이전트 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "agent-idempotency",
+          "title": {
+            "ko": "에이전트 멱등성",
+            "en": "Agent Idempotency"
+          },
+          "rationale": "에이전트 멱등성 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "agent-action-ledger",
+          "title": {
+            "ko": "에이전트 행동 원장",
+            "en": "Agent Action Ledger"
+          },
+          "rationale": "에이전트 행동 원장 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "tool-permission-broker",
+          "title": {
+            "ko": "도구 권한 브로커",
+            "en": "Tool Permission Broker"
+          },
+          "rationale": "도구 권한 브로커 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "agent-compensation-transaction",
+          "title": {
+            "ko": "에이전트 보상 트랜잭션",
+            "en": "Agent Compensation Transaction"
+          },
+          "rationale": "에이전트 보상 트랜잭션 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "agent-incident-playbook",
+          "title": {
+            "ko": "에이전트 사고 대응 절차",
+            "en": "Agent Incident Playbook"
+          },
+          "rationale": "에이전트 사고 대응 절차 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}

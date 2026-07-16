@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "2.0",
+  "id": "advanced-rag",
+  "order": 11,
+  "title": {
+    "ko": "고급 RAG와 지식 시스템",
+    "en": "Advanced RAG and Knowledge Systems"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "검색 품질과 근거 추적성이 중요한 지식 서비스를 설계하는 개발자",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-engineer"
+  ],
+  "learningOutcomes": [
+    "질문과 콘텐츠에 맞는 검색 아키텍처를 선택한다.",
+    "색인·청크·리랭킹 전략을 조율한다.",
+    "검색과 생성 실패를 분리해 평가한다.",
+    "인용·갱신·권한 정책을 포함한 운영 계획을 세운다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "rag",
+          "title": {
+            "ko": "검색 증강 생성",
+            "en": "Retrieval-Augmented Generation"
+          },
+          "rationale": "검색 증강 생성 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "document-retrieval",
+          "title": {
+            "ko": "문서 검색",
+            "en": "Document Retrieval"
+          },
+          "rationale": "문서 검색 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "lexical-retrieval",
+          "title": {
+            "ko": "어휘 검색",
+            "en": "Lexical Retrieval"
+          },
+          "rationale": "어휘 검색 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "dense-retrieval",
+          "title": {
+            "ko": "밀집 검색",
+            "en": "Dense Retrieval"
+          },
+          "rationale": "밀집 검색 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "hybrid-rag",
+          "title": {
+            "ko": "하이브리드 RAG",
+            "en": "Hybrid RAG"
+          },
+          "rationale": "하이브리드 RAG 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "embedding-model",
+          "title": {
+            "ko": "임베딩 모델",
+            "en": "Embedding Model"
+          },
+          "rationale": "임베딩 모델 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "document-embedding",
+          "title": {
+            "ko": "문서 임베딩",
+            "en": "Document Embedding"
+          },
+          "rationale": "문서 임베딩 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "query-embedding",
+          "title": {
+            "ko": "질의 임베딩",
+            "en": "Query Embedding"
+          },
+          "rationale": "질의 임베딩 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "vector-index",
+          "title": {
+            "ko": "벡터 인덱스",
+            "en": "Vector Index"
+          },
+          "rationale": "벡터 인덱스 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "retrieval-filtering",
+          "title": {
+            "ko": "검색 필터링",
+            "en": "Retrieval Filtering"
+          },
+          "rationale": "검색 필터링 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "reranker",
+          "title": {
+            "ko": "리랭커",
+            "en": "Reranker"
+          },
+          "rationale": "리랭커 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "cross-encoder-reranker",
+          "title": {
+            "ko": "크로스 인코더 리랭커",
+            "en": "Cross-Encoder Reranker"
+          },
+          "rationale": "크로스 인코더 리랭커 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "adaptive-retrieval",
+          "title": {
+            "ko": "적응형 검색",
+            "en": "Adaptive Retrieval"
+          },
+          "rationale": "적응형 검색 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "multi-hop-rag",
+          "title": {
+            "ko": "다중 홉 RAG",
+            "en": "Multi-Hop RAG"
+          },
+          "rationale": "다중 홉 RAG 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "iterative-rag",
+          "title": {
+            "ko": "반복형 RAG",
+            "en": "Iterative RAG"
+          },
+          "rationale": "반복형 RAG 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "corrective-rag",
+          "title": {
+            "ko": "교정형 RAG",
+            "en": "Corrective RAG"
+          },
+          "rationale": "교정형 RAG 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "graph-rag",
+          "title": {
+            "ko": "GraphRAG",
+            "en": "Graph Retrieval-Augmented Generation"
+          },
+          "rationale": "GraphRAG 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "context-compression-for-rag",
+          "title": {
+            "ko": "RAG 문맥 압축",
+            "en": "Context Compression for RAG"
+          },
+          "rationale": "RAG 문맥 압축 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "rag-evaluation",
+          "title": {
+            "ko": "RAG 평가",
+            "en": "RAG Evaluation"
+          },
+          "rationale": "RAG 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "rag-index-freshness",
+          "title": {
+            "ko": "RAG 색인 신선도",
+            "en": "RAG Index Freshness"
+          },
+          "rationale": "RAG 색인 신선도 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "retrieval-access-control",
+          "title": {
+            "ko": "검색 접근 제어",
+            "en": "Retrieval Access Control"
+          },
+          "rationale": "검색 접근 제어 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "citation-grounding-contract",
+          "title": {
+            "ko": "인용 근거 계약",
+            "en": "Citation Grounding Contract"
+          },
+          "rationale": "인용 근거 계약 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "rag-evidence-lineage",
+          "title": {
+            "ko": "RAG 근거 계보",
+            "en": "RAG Evidence Lineage"
+          },
+          "rationale": "RAG 근거 계보 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "retrieval-capacity-planning",
+          "title": {
+            "ko": "검색 용량 계획",
+            "en": "Retrieval Capacity Planning"
+          },
+          "rationale": "검색 용량 계획 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}

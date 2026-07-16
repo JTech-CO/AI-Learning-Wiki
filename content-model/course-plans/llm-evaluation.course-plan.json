@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "2.0",
+  "id": "llm-evaluation",
+  "order": 9,
+  "title": {
+    "ko": "LLM 평가와 관측성",
+    "en": "LLM Evaluation and Observability"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "모델과 LLM 기반 시스템의 품질 기준과 배포 게이트를 설계하는 평가 담당자",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-engineer"
+  ],
+  "learningOutcomes": [
+    "평가 목적에 맞는 지표와 벤치마크를 선택한다.",
+    "사람·모델 평가의 편향과 불확실성을 계량화한다.",
+    "오프라인과 프로덕션 평가를 연결한다.",
+    "회귀 탐지와 릴리스 판정 규칙을 운영한다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "evaluation",
+          "title": {
+            "ko": "모델 평가",
+            "en": "Model Evaluation"
+          },
+          "rationale": "모델 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "metric",
+          "title": {
+            "ko": "평가 지표",
+            "en": "Evaluation Metric"
+          },
+          "rationale": "평가 지표 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "benchmark",
+          "title": {
+            "ko": "벤치마크",
+            "en": "Benchmark"
+          },
+          "rationale": "벤치마크 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "benchmark-dataset",
+          "title": {
+            "ko": "벤치마크 데이터셋",
+            "en": "Benchmark Dataset"
+          },
+          "rationale": "벤치마크 데이터셋 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "benchmark-suite",
+          "title": {
+            "ko": "벤치마크 모음",
+            "en": "Benchmark Suite"
+          },
+          "rationale": "벤치마크 모음 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "benchmark-validity",
+          "title": {
+            "ko": "벤치마크 타당도",
+            "en": "Benchmark Validity"
+          },
+          "rationale": "벤치마크 타당도 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "benchmark-contamination",
+          "title": {
+            "ko": "벤치마크 오염",
+            "en": "Benchmark Contamination"
+          },
+          "rationale": "벤치마크 오염 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "evaluation-rubric",
+          "title": {
+            "ko": "평가 루브릭",
+            "en": "Evaluation Rubric"
+          },
+          "rationale": "평가 루브릭 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "evaluation-sampling",
+          "title": {
+            "ko": "평가 표본추출",
+            "en": "Evaluation Sampling"
+          },
+          "rationale": "평가 표본추출 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "evaluation-uncertainty",
+          "title": {
+            "ko": "평가 불확실성",
+            "en": "Evaluation Uncertainty"
+          },
+          "rationale": "평가 불확실성 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "reference-based-evaluation",
+          "title": {
+            "ko": "참조 기반 평가",
+            "en": "Reference-Based Evaluation"
+          },
+          "rationale": "참조 기반 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "reference-free-evaluation",
+          "title": {
+            "ko": "참조 없는 평가",
+            "en": "Reference-Free Evaluation"
+          },
+          "rationale": "참조 없는 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "human-evaluation",
+          "title": {
+            "ko": "인간 평가",
+            "en": "Human Evaluation"
+          },
+          "rationale": "인간 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "expert-evaluation",
+          "title": {
+            "ko": "전문가 평가",
+            "en": "Expert Evaluation"
+          },
+          "rationale": "전문가 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "judge-meta-evaluation",
+          "title": {
+            "ko": "심사 모델 메타평가",
+            "en": "Judge Meta-Evaluation"
+          },
+          "rationale": "심사 모델 메타평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "generation-evaluation",
+          "title": {
+            "ko": "생성 평가",
+            "en": "Generation Evaluation"
+          },
+          "rationale": "생성 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "production-evaluation",
+          "title": {
+            "ko": "프로덕션 평가",
+            "en": "Production Evaluation"
+          },
+          "rationale": "프로덕션 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "regression-evaluation",
+          "title": {
+            "ko": "회귀 테스트형 평가",
+            "en": "Regression Evaluation"
+          },
+          "rationale": "회귀 테스트형 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "observability",
+          "title": {
+            "ko": "관측성",
+            "en": "Observability"
+          },
+          "rationale": "관측성 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "llm-evaluation-contract",
+          "title": {
+            "ko": "LLM 평가 계약",
+            "en": "LLM Evaluation Contract"
+          },
+          "rationale": "LLM 평가 계약 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "judge-calibration-curve",
+          "title": {
+            "ko": "판정 모델 교정 곡선",
+            "en": "Judge Calibration Curve"
+          },
+          "rationale": "판정 모델 교정 곡선 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "evaluation-budget-allocation",
+          "title": {
+            "ko": "평가 예산 배분",
+            "en": "Evaluation Budget Allocation"
+          },
+          "rationale": "평가 예산 배분 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "slice-based-release-gate",
+          "title": {
+            "ko": "슬라이스 기반 릴리스 게이트",
+            "en": "Slice-based Release Gate"
+          },
+          "rationale": "슬라이스 기반 릴리스 게이트 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "online-evaluation-drift",
+          "title": {
+            "ko": "온라인 평가 드리프트",
+            "en": "Online Evaluation Drift"
+          },
+          "rationale": "온라인 평가 드리프트 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}

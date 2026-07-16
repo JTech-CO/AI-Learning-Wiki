@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "2.0",
+  "id": "ai-security-redteam",
+  "order": 14,
+  "title": {
+    "ko": "AI 보안과 레드팀",
+    "en": "AI Security and Red Teaming"
+  },
+  "level": "professional",
+  "status": "planned",
+  "deliveryModel": "ordered-wiki-path",
+  "audience": "모델·데이터·도구·운영 계층의 위협을 검증하는 보안과 안전 담당자",
+  "estimatedHours": 18,
+  "prerequisites": [
+    "ai-engineer"
+  ],
+  "learningOutcomes": [
+    "AI 시스템의 자산과 신뢰 경계를 식별한다.",
+    "프롬프트 주입·제일브레이크·데이터 공격을 시험한다.",
+    "가드레일과 권한 제어의 잔여 위험을 측정한다.",
+    "사고 기록·보고·복구 절차를 운영한다."
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "order": 1,
+      "title": {
+        "ko": "기반 개념과 설계 경계",
+        "en": "Foundations and design boundaries"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "refType": "existing",
+          "articleId": "ai-safety",
+          "title": {
+            "ko": "AI 안전",
+            "en": "AI Safety"
+          },
+          "rationale": "AI 안전 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 2,
+          "refType": "existing",
+          "articleId": "ai-threat-modeling",
+          "title": {
+            "ko": "AI 위협 모델링",
+            "en": "AI Threat Modeling"
+          },
+          "rationale": "AI 위협 모델링 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 3,
+          "refType": "existing",
+          "articleId": "ai-risk-assessment",
+          "title": {
+            "ko": "AI 위험 평가",
+            "en": "AI Risk Assessment"
+          },
+          "rationale": "AI 위험 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 4,
+          "refType": "existing",
+          "articleId": "ai-risk-register",
+          "title": {
+            "ko": "AI 위험 대장",
+            "en": "AI Risk Register"
+          },
+          "rationale": "AI 위험 대장 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 5,
+          "refType": "existing",
+          "articleId": "ai-red-teaming",
+          "title": {
+            "ko": "AI 레드팀 평가",
+            "en": "AI Red Teaming"
+          },
+          "rationale": "AI 레드팀 평가 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 6,
+          "refType": "existing",
+          "articleId": "adversarial-testing",
+          "title": {
+            "ko": "적대적 테스트",
+            "en": "Adversarial Testing"
+          },
+          "rationale": "적대적 테스트 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "order": 2,
+      "title": {
+        "ko": "핵심 구성 요소와 선택",
+        "en": "Core components and choices"
+      },
+      "steps": [
+        {
+          "order": 7,
+          "refType": "existing",
+          "articleId": "adversarial-example",
+          "title": {
+            "ko": "적대적 예시",
+            "en": "Adversarial Example"
+          },
+          "rationale": "적대적 예시 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 8,
+          "refType": "existing",
+          "articleId": "prompt-injection",
+          "title": {
+            "ko": "프롬프트 인젝션",
+            "en": "Prompt Injection"
+          },
+          "rationale": "프롬프트 인젝션 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 9,
+          "refType": "existing",
+          "articleId": "indirect-prompt-injection",
+          "title": {
+            "ko": "간접 프롬프트 인젝션",
+            "en": "Indirect Prompt Injection"
+          },
+          "rationale": "간접 프롬프트 인젝션 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 10,
+          "refType": "existing",
+          "articleId": "jailbreak",
+          "title": {
+            "ko": "탈옥 공격",
+            "en": "Jailbreak"
+          },
+          "rationale": "탈옥 공격 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 11,
+          "refType": "existing",
+          "articleId": "agent-security",
+          "title": {
+            "ko": "에이전트 보안",
+            "en": "Agent Security"
+          },
+          "rationale": "에이전트 보안 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 12,
+          "refType": "existing",
+          "articleId": "guardrail",
+          "title": {
+            "ko": "가드레일",
+            "en": "Guardrail"
+          },
+          "rationale": "가드레일 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "order": 3,
+      "title": {
+        "ko": "평가와 최적화",
+        "en": "Evaluation and optimization"
+      },
+      "steps": [
+        {
+          "order": 13,
+          "refType": "existing",
+          "articleId": "agent-guardrail",
+          "title": {
+            "ko": "에이전트 가드레일",
+            "en": "Agent Guardrail"
+          },
+          "rationale": "에이전트 가드레일 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 14,
+          "refType": "existing",
+          "articleId": "ai-security-monitoring",
+          "title": {
+            "ko": "AI 보안 모니터링",
+            "en": "AI Security Monitoring"
+          },
+          "rationale": "AI 보안 모니터링 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 15,
+          "refType": "existing",
+          "articleId": "privacy-attack",
+          "title": {
+            "ko": "개인정보 공격",
+            "en": "Privacy Attack"
+          },
+          "rationale": "개인정보 공격 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 16,
+          "refType": "existing",
+          "articleId": "privacy-audit",
+          "title": {
+            "ko": "개인정보 감사",
+            "en": "Privacy Audit"
+          },
+          "rationale": "개인정보 감사 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 17,
+          "refType": "existing",
+          "articleId": "ai-misuse",
+          "title": {
+            "ko": "AI 오용",
+            "en": "AI Misuse"
+          },
+          "rationale": "AI 오용 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 18,
+          "refType": "existing",
+          "articleId": "ai-incident-response",
+          "title": {
+            "ko": "AI 사고 대응",
+            "en": "AI Incident Response"
+          },
+          "rationale": "AI 사고 대응 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "order": 4,
+      "title": {
+        "ko": "프로덕션 운영과 통제",
+        "en": "Production operations and controls"
+      },
+      "steps": [
+        {
+          "order": 19,
+          "refType": "existing",
+          "articleId": "ai-incident-reporting",
+          "title": {
+            "ko": "AI 사고 보고",
+            "en": "AI Incident Reporting"
+          },
+          "rationale": "AI 사고 보고 문서로 개념과 프로덕션 판단 근거를 연결한다."
+        },
+        {
+          "order": 20,
+          "refType": "planned",
+          "candidateId": "ai-attack-surface-map",
+          "title": {
+            "ko": "AI 공격 표면 지도",
+            "en": "AI Attack Surface Map"
+          },
+          "rationale": "AI 공격 표면 지도 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 21,
+          "refType": "planned",
+          "candidateId": "model-abuse-case-library",
+          "title": {
+            "ko": "모델 악용 사례 라이브러리",
+            "en": "Model Abuse Case Library"
+          },
+          "rationale": "모델 악용 사례 라이브러리 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 22,
+          "refType": "planned",
+          "candidateId": "guardrail-coverage-matrix",
+          "title": {
+            "ko": "가드레일 커버리지 행렬",
+            "en": "Guardrail Coverage Matrix"
+          },
+          "rationale": "가드레일 커버리지 행렬 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 23,
+          "refType": "planned",
+          "candidateId": "ai-red-team-retest",
+          "title": {
+            "ko": "AI 레드팀 재시험",
+            "en": "AI Red-team Retest"
+          },
+          "rationale": "AI 레드팀 재시험 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        },
+        {
+          "order": 24,
+          "refType": "planned",
+          "candidateId": "model-security-disclosure",
+          "title": {
+            "ko": "모델 보안 취약점 공개",
+            "en": "Model Security Disclosure"
+          },
+          "rationale": "모델 보안 취약점 공개 백과 후보를 확충해 현장 운영 단계의 공백을 메운다."
+        }
+      ]
+    }
+  ],
+  "completion": {
+    "requiredSteps": 24,
+    "assessment": "각 문서의 핵심 판단 기준을 실제 시스템 설계안에 적용한다."
+  },
+  "publicationGate": {
+    "articleCandidatesReady": false,
+    "editorialReviewRequired": true,
+    "activateAfter": "W50"
+  }
+}
