@@ -1,0 +1,38 @@
+{
+  "version": "W39-2026-07-16",
+  "sourceOfTruth": {
+    "prompts": "content-model/library/prompts/*.prompt.json",
+    "artifacts": "content-model/library/artifacts/*.artifact.json",
+    "courses": "content-model/paths/*.path.json"
+  },
+  "compatibility": {
+    "preservePublicIds": true,
+    "preservePublicRoutes": true,
+    "legacyModulesMayBeBuildInput": false,
+    "legacyCoursesMayBePublicSource": false
+  },
+  "promptQuality": {
+    "requiredUsageNotes": true,
+    "requiredOutputContract": true,
+    "requiredRelatedWikiDocument": true,
+    "maximumControlledTags": 6,
+    "longFormThresholdCharacters": 500,
+    "targetLongFormPrompts": 300,
+    "targetMarkdownPrompts": 200,
+    "targetSchemaPrompts": 120,
+    "targetPromptsWithExamples": 500
+  },
+  "artifactQuality": {
+    "requiredRuntimeMetadata": true,
+    "requiredValidation": true,
+    "requiredExpectedResult": true,
+    "requiredSecurityNotes": true,
+    "forbidLiteralSecrets": true
+  },
+  "targetCounts": {
+    "prompts": 1500,
+    "artifacts": 120,
+    "courses": 16,
+    "articles": 1600
+  }
+}

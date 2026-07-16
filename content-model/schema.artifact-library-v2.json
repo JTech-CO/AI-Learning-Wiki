@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-learning-wiki/schema/artifact-library-v2.json",
+  "title": "AI Learning Wiki Code and Configuration Artifact v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "title",
+    "summary",
+    "type",
+    "language",
+    "runtime",
+    "files",
+    "dependencies",
+    "environmentVariables",
+    "runInstructions",
+    "validation",
+    "securityNotes",
+    "tags",
+    "courseIds",
+    "relatedWikiSlugs",
+    "provenance",
+    "status",
+    "reviewedAt"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "version": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string", "minLength": 2, "maxLength": 120 },
+    "summary": { "type": "string", "minLength": 10, "maxLength": 400 },
+    "type": { "type": "string", "enum": ["code", "config", "query", "payload", "schema", "workflow", "template"] },
+    "language": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "runtime": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "content", "language"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1, "maxLength": 180 },
+          "content": { "type": "string", "minLength": 1, "maxLength": 50000 },
+          "language": { "type": "string", "minLength": 1, "maxLength": 40 }
+        }
+      }
+    },
+    "dependencies": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "environmentVariables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "required", "secret", "description"],
+        "properties": {
+          "name": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]*$" },
+          "required": { "type": "boolean" },
+          "secret": { "type": "boolean" },
+          "description": { "type": "string", "minLength": 2 }
+        }
+      }
+    },
+    "runInstructions": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "command", "expectedResult"],
+      "properties": {
+        "method": { "type": "string", "enum": ["syntax", "parse", "execute", "manual"] },
+        "command": { "type": ["string", "null"] },
+        "expectedResult": { "type": "string", "minLength": 3 }
+      }
+    },
+    "securityNotes": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 5 } },
+    "tags": { "type": "array", "minItems": 1, "maxItems": 6, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "courseIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" } },
+    "relatedWikiSlugs": { "type": "array", "minItems": 1, "maxItems": 8, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" } },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin", "authorship", "legacyKey"],
+      "properties": {
+        "origin": { "type": "string", "enum": ["wiki-original", "migrated-reference"] },
+        "authorship": { "type": "string", "enum": ["editorial", "migration-reviewed"] },
+        "legacyKey": { "type": ["string", "null"] }
+      }
+    },
+    "status": { "type": "string", "enum": ["draft", "reviewed"] },
+    "reviewedAt": { "type": "string", "format": "date" }
+  }
+}

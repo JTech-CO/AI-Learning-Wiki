@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-learning-wiki/schema/prompt-library-v2.json",
+  "title": "AI Learning Wiki Prompt v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "title",
+    "summary",
+    "kind",
+    "difficulty",
+    "template",
+    "variables",
+    "outputContract",
+    "notes",
+    "examples",
+    "tags",
+    "courseIds",
+    "relatedWikiSlugs",
+    "providerScope",
+    "provenance",
+    "status",
+    "reviewedAt"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "version": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string", "minLength": 2, "maxLength": 120 },
+    "summary": { "type": "string", "minLength": 10, "maxLength": 400 },
+    "kind": {
+      "type": "string",
+      "enum": ["plain", "markdown", "json-schema", "yaml", "xml", "multi-message", "evaluation-rubric"]
+    },
+    "difficulty": { "type": "string", "enum": ["entry", "intermediate", "advanced", "professional"] },
+    "template": { "type": "string", "minLength": 20, "maxLength": 20000 },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "description", "required", "example"],
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+          "description": { "type": "string", "minLength": 2 },
+          "required": { "type": "boolean" },
+          "example": { "type": "string" }
+        }
+      }
+    },
+    "outputContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "description"],
+      "properties": {
+        "format": { "type": "string", "enum": ["text", "markdown", "json", "yaml", "xml", "table", "code", "mixed"] },
+        "description": { "type": "string", "minLength": 5 },
+        "schema": { "type": ["object", "array", "string", "null"] },
+        "sections": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      }
+    },
+    "notes": { "type": "string", "minLength": 10, "maxLength": 2000 },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "input", "output"],
+        "properties": {
+          "label": { "type": "string", "minLength": 2 },
+          "input": { "type": "string", "minLength": 2 },
+          "output": { "type": "string" }
+        }
+      }
+    },
+    "tags": { "type": "array", "minItems": 1, "maxItems": 6, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "courseIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" } },
+    "relatedWikiSlugs": { "type": "array", "minItems": 1, "maxItems": 8, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" } },
+    "providerScope": { "type": "string", "enum": ["provider-agnostic", "openai", "anthropic", "google", "local", "multi-provider"] },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin", "authorship", "legacyKey"],
+      "properties": {
+        "origin": { "type": "string", "enum": ["wiki-original", "migrated-reference"] },
+        "authorship": { "type": "string", "enum": ["editorial", "migration-reviewed"] },
+        "legacyKey": { "type": ["string", "null"] }
+      }
+    },
+    "status": { "type": "string", "enum": ["draft", "reviewed"] },
+    "reviewedAt": { "type": "string", "format": "date" }
+  }
+}
