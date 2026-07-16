@@ -1,0 +1,70 @@
+{
+  "id": "p32i-ask",
+  "version": 1,
+  "title": "1 근거 기반 문서 질문",
+  "summary": "1 근거 기반 문서 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문서를 읽고 내 질문에 답해줘. 규칙: ① 이 문서에 있는 내용만으로 답할 것 ② 답마다 근거가 된 원문 문장을 \"큰따옴표\"로 그대로 인용할 것 ③ 문서에 없으면 지어내지 말고 \"문서에 명시 없음\"이라고 답할 것.\n[질문] 1) [궁금한 조건 — 예: 환불 신청 기한은 며칠이고 무엇을 기준으로 하는지] 2) [두 번째 질문]\n[문서] <<< [약관·계약서·규정 전문 붙여넣기] >>>",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    },
+    {
+      "name": "input_2",
+      "description": "궁금한 조건 — 예: 환불 신청 기한은 며칠이고 무엇을 기준으로 하는지",
+      "required": true,
+      "example": "궁금한 조건 — 예: 환불 신청 기한은 며칠이고 무엇을 기준으로 하는지"
+    },
+    {
+      "name": "input_3",
+      "description": "두 번째 질문",
+      "required": true,
+      "example": "두 번째 질문"
+    },
+    {
+      "name": "input_4",
+      "description": "문서",
+      "required": true,
+      "example": "문서"
+    },
+    {
+      "name": "input_5",
+      "description": "약관·계약서·규정 전문 붙여넣기",
+      "required": true,
+      "example": "약관·계약서·규정 전문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "출처·인용",
+    "안전",
+    "법무"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32i-ask"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

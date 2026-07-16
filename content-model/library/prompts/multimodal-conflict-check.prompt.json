@@ -1,0 +1,46 @@
+{
+  "id": "multimodal-conflict-check",
+  "version": 1,
+  "title": "본문·표·그림 간 주장 충돌 검사",
+  "summary": "본문·표·그림 간 주장 충돌 검사 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "첨부 문서의 본문, 표, 그림 설명이 같은 사실을 서로 다르게 말하는지 검사해줘. 각 충돌마다 페이지와 요소, 서로 다른 값이나 주장, 확인에 필요한 원자료를 표로 적어. 어느 쪽이 맞는지는 근거가 없으면 결정하지 마.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "최종 정정은 원자료 소유자나 문서 작성자에게 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "첨부 보고서에서 본문 성장률, 표의 성장률, 그래프 레이블이 일치하는지 검사해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "멀티모달",
+    "검증",
+    "문서 분석",
+    "평가",
+    "이미지",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "multimodal-evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

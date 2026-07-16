@@ -1,0 +1,40 @@
+{
+  "id": "p2b-fix-error",
+  "version": 1,
+  "title": "에러·오류 자동 수정",
+  "summary": "에러·오류 자동 수정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "지금 화면에 에러가 나거나 동작이 이상해. 원인을 찾아서 고쳐줘. 그리고 무엇이 문제였는지 한 줄로 쉽게 설명해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "프롬프트 설계",
+    "웹 개발",
+    "노코드",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2b-fix-error"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

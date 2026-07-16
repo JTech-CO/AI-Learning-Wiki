@@ -1,0 +1,74 @@
+{
+  "id": "p1w-frame",
+  "version": 1,
+  "title": "4요소 완성 프레임",
+  "summary": "4요소 완성 프레임 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "당신은 [역할: 예 10년차 카페 SNS 마케터]입니다. 맥락: 대상 고객은 [대상], 주제는 [주제], 톤은 [톤], 제약은 [제약: 글자수·금지어 등]입니다. 지시: [정확히 시킬 동작]을 해주세요. 출력형식: [결과 모양: 개수·구조·이모지 여부 등]으로 답해주세요.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "역할: 예 10년차 카페 SNS 마케터",
+      "required": true,
+      "example": "역할: 예 10년차 카페 SNS 마케터"
+    },
+    {
+      "name": "input_2",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_3",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_4",
+      "description": "제약: 글자수·금지어 등",
+      "required": true,
+      "example": "제약: 글자수·금지어 등"
+    },
+    {
+      "name": "input_5",
+      "description": "정확히 시킬 동작",
+      "required": true,
+      "example": "정확히 시킬 동작"
+    },
+    {
+      "name": "input_6",
+      "description": "결과 모양: 개수·구조·이모지 여부 등",
+      "required": true,
+      "example": "결과 모양: 개수·구조·이모지 여부 등"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p1w-frame"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

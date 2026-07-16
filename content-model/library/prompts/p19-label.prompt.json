@@ -1,0 +1,53 @@
+{
+  "id": "p19-label",
+  "version": 1,
+  "title": "정해진 항목으로 분류만 (라벨링)",
+  "summary": "정해진 항목으로 분류만 (라벨링) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 항목들을 다음 카테고리 중 하나로만 분류해 JSON 배열로. 카테고리: [\"A\", \"B\", \"C\", \"기타\"]. 형식: {\"항목\": \"원문\", \"분류\": \"카테고리\"}. 새 카테고리 만들지 말고 목록 안에서만. JSON만. 항목: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "\"A\", \"B\", \"C\", \"기타\"",
+      "required": true,
+      "example": "\"A\", \"B\", \"C\", \"기타\""
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "스프레드시트",
+    "코딩",
+    "자동화",
+    "AI 에이전트",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19-label"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

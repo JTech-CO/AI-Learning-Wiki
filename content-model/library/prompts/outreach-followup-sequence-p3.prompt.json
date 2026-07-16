@@ -1,0 +1,47 @@
+{
+  "id": "outreach-followup-sequence-p3",
+  "version": 1,
+  "title": "응답률·각도 분석",
+  "summary": "응답률·각도 분석 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 아웃리치 결과 데이터야. (1) 응답률을 계산하고 (2) 어느 팔로업 각도에서 답장이 가장 많이 나왔는지 (3) 다음 캠페인에서 첫 메일로 올릴 각도를 추천해줘. 한국어로 3줄 요약.\n데이터: [시트 내용 붙여넣기 — 발송 수, 답장 수, 답장이 나온 단계]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "시트 내용 붙여넣기 — 발송 수, 답장 수, 답장이 나온 단계",
+      "required": true,
+      "example": "시트 내용 붙여넣기 — 발송 수, 답장 수, 답장이 나온 단계"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "요약",
+    "번역",
+    "데이터 분석",
+    "마케팅",
+    "영업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:outreach-followup-sequence-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

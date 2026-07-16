@@ -1,0 +1,61 @@
+{
+  "id": "p7-write",
+  "version": 1,
+  "title": "글·문구를 써달라고 할 때",
+  "summary": "글·문구를 써달라고 할 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[누구]에게 줄 [생일 카드/편지/동시]를, [따뜻하게/재미있게] [4줄/5문장]으로 써줘",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "누구",
+      "required": true,
+      "example": "누구"
+    },
+    {
+      "name": "input_2",
+      "description": "생일 카드/편지/동시",
+      "required": true,
+      "example": "생일 카드/편지/동시"
+    },
+    {
+      "name": "input_3",
+      "description": "따뜻하게/재미있게",
+      "required": true,
+      "example": "따뜻하게/재미있게"
+    },
+    {
+      "name": "input_4",
+      "description": "4줄/5문장",
+      "required": true,
+      "example": "4줄/5문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7-write"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

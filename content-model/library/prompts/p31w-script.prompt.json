@@ -1,0 +1,63 @@
+{
+  "id": "p31w-script",
+  "version": 1,
+  "title": "슬라이드별 발표 스크립트",
+  "summary": "슬라이드별 발표 스크립트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 발표 코치야. 아래는 내 발표 슬라이드 내용이야. 청중은 [팀장급 결정권자], 총 발표 시간은 [10분], 발표 목적은 [도입 승인]이야. 각 슬라이드별로 실제로 소리 내어 말할 구어체 스크립트를. 조건: (1)슬라이드에 안 적힌 배경 설명과 다음 장으로 넘어가는 전환 문장 포함 (2)각 슬라이드 예상 소요 시간 표기 (3)너무 딱딱하지 않게, 잠깐 멈추는 포인트는 (…)로. 슬라이드 내용: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "팀장급 결정권자",
+      "required": true,
+      "example": "팀장급 결정권자"
+    },
+    {
+      "name": "input_2",
+      "description": "10분",
+      "required": true,
+      "example": "10분"
+    },
+    {
+      "name": "input_3",
+      "description": "도입 승인",
+      "required": true,
+      "example": "도입 승인"
+    },
+    {
+      "name": "input_4",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프레젠테이션",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p31w-script"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

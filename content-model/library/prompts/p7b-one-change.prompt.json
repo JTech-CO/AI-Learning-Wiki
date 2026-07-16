@@ -1,0 +1,56 @@
+{
+  "id": "p7b-one-change",
+  "version": 1,
+  "title": "하나만 콕 집어 요청",
+  "summary": "하나만 콕 집어 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[앱의 어느 화면/부분]의 [바꿀 것 하나]만 [원하는 값]으로 바꿔줘. 다른 코드, 레이아웃, 기능은 절대 건드리지 마. 바꾼 부분만 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "앱의 어느 화면/부분",
+      "required": true,
+      "example": "앱의 어느 화면/부분"
+    },
+    {
+      "name": "input_2",
+      "description": "바꿀 것 하나",
+      "required": true,
+      "example": "바꿀 것 하나"
+    },
+    {
+      "name": "input_3",
+      "description": "원하는 값",
+      "required": true,
+      "example": "원하는 값"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "checkpoint"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7b-one-change"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

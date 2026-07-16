@@ -1,0 +1,43 @@
+{
+  "id": "p21-diagnose",
+  "version": 1,
+  "title": "오염 진단",
+  "summary": "오염 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 엑셀 데이터의 샘플이야. 데이터 클리닝 관점에서 문제점을 '①중복 ②빈칸/결측 ③날짜·숫자 형식 혼재 ④앞뒤 공백/표기 불일치' 4가지 유형으로 나눠서 찾아주고, 각 문제가 몇 개 열/행에 있는지 알려줘. [표 상단 15~20행 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "표 상단 15~20행 붙여넣기",
+      "required": true,
+      "example": "표 상단 15~20행 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p21-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

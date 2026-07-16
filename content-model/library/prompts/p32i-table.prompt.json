@@ -1,0 +1,39 @@
+{
+  "id": "p32i-table",
+  "version": 1,
+  "title": "4 최종 표 정리",
+  "summary": "4 최종 표 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "지금까지의 모든 질문과 답을 | 질문 | 답 | 근거 원문 | 판정(근거있음/추측·미기재) | 4칸 표로 정리해줘. 판정이 '추측·미기재'인 행만 아래에 따로 모아 '사람에게 재확인 필요' 목록으로 뽑아줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "검증",
+    "출처·인용",
+    "안전",
+    "법무"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32i-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

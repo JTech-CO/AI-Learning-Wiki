@@ -1,0 +1,50 @@
+{
+  "id": "py-data-structures-p1",
+  "version": 1,
+  "title": "내 데이터를 그릇에 담기",
+  "summary": "내 데이터를 그릇에 담기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬 초보야. 다음 데이터를 [리스트 또는 딕셔너리]로 만드는 코드를 써줘. 데이터: [여기에 데이터 나열]. 각 줄에 한국어 주석으로 설명도 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "리스트 또는 딕셔너리",
+      "required": true,
+      "example": "리스트 또는 딕셔너리"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 데이터 나열",
+      "required": true,
+      "example": "여기에 데이터 나열"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "자동화",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-data-structures-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "accessible-form-copy",
+  "version": 1,
+  "title": "접근 가능한 폼 안내 문구 검토",
+  "summary": "접근 가능한 폼 안내 문구 검토 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 폼의 라벨, 도움말, 오류 메시지를 접근성 관점에서 검토해줘. 색상이나 위치만 가리키는 표현, 모호한 오류, 입력 형식 누락을 찾아 표로 정리하고 각 항목에 교체 문구를 제안해. 원문: [폼 문구 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "폼 문구 붙여넣기",
+      "required": true,
+      "example": "폼 문구 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "자동 검토 뒤 키보드 탐색과 실제 스크린리더 시험을 별도로 수행한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "원문: 이름 / 전화번호 / 빨간 칸을 확인하세요. 각 필드의 구체적인 라벨과 오류 문구를 제안해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "접근성",
+    "글쓰기",
+    "웹 개발",
+    "평가",
+    "디버깅"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

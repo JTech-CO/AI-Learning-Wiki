@@ -1,0 +1,47 @@
+{
+  "id": "learn-article",
+  "version": 1,
+  "title": "긴 글·기사 전체로 이해하기",
+  "summary": "긴 글·기사 전체로 이해하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 글을 초등학생도 알게 쉽게 풀어줘. 모르는 용어는 괄호로 한 줄 풀이 달고, 마지막에 핵심 3줄로 요약해줘. [기사나 문서 전체 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "기사나 문서 전체 붙여넣기",
+      "required": true,
+      "example": "기사나 문서 전체 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "교육",
+    "문서 분석",
+    "프롬프트 설계",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:learn-article"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

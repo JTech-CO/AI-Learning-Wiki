@@ -1,0 +1,58 @@
+{
+  "id": "database-p2",
+  "version": 1,
+  "title": "SQL 명령어 생성",
+  "summary": "SQL 명령어 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 조건으로 SQLite 명령어를 만들어줘. 테이블명: [news]. 열: [id, 제목, 링크, 날짜]. 작업: [1) 테이블 생성 2) 예시 데이터 2줄 삽입 3) 오늘 날짜만 조회]. 각 명령어에 한글 주석도 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "news",
+      "required": true,
+      "example": "news"
+    },
+    {
+      "name": "input_2",
+      "description": "id, 제목, 링크, 날짜",
+      "required": true,
+      "example": "id, 제목, 링크, 날짜"
+    },
+    {
+      "name": "input_3",
+      "description": "1) 테이블 생성 2) 예시 데이터 2줄 삽입 3) 오늘 날짜만 조회",
+      "required": true,
+      "example": "1) 테이블 생성 2) 예시 데이터 2줄 삽입 3) 오늘 날짜만 조회"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "데이터베이스",
+    "자동화",
+    "SQL"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:database-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

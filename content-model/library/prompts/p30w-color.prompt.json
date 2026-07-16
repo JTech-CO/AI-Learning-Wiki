@@ -1,0 +1,46 @@
+{
+  "id": "p30w-color",
+  "version": 1,
+  "title": "강조색·대비색 고르기",
+  "summary": "강조색·대비색 고르기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 브랜드 기본 색은 [HEX 예: #1A73E8]야. 이 색을 강조색으로 쓰는 슬라이드에서 글자색·배경색·보조색을 포함해 3색 이하의 조합을 HEX로. 접근성(색 대비)도 고려해서 글자가 잘 읽히게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "HEX 예: #1A73E8",
+      "required": true,
+      "example": "HEX 예: #1A73E8"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프레젠테이션",
+    "시각화",
+    "프롬프트 설계",
+    "접근성"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "alignment"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p30w-color"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

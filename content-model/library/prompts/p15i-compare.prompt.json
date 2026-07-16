@@ -1,0 +1,51 @@
+{
+  "id": "p15i-compare",
+  "version": 1,
+  "title": "결정용 — 여러 선택지 비교",
+  "summary": "결정용 — 여러 선택지 비교 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 선택지들을 비교해서 결정하려고 해. 선택지: [A, B, C] 판단 기준: [가격/시간/품질 등]. 각 선택지를 기준별로 단계적으로 따져보고, 표로 정리한 뒤, 마지막에 근거와 함께 추천을 하나 골라줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "A, B, C",
+      "required": true,
+      "example": "A, B, C"
+    },
+    {
+      "name": "input_2",
+      "description": "가격/시간/품질 등",
+      "required": true,
+      "example": "가격/시간/품질 등"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "프롬프트 설계",
+    "검증",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p15i-compare"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

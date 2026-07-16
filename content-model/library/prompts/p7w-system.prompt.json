@@ -1,0 +1,66 @@
+{
+  "id": "p7w-system",
+  "version": 1,
+  "title": "system — 역할·규칙 박아두기",
+  "summary": "system — 역할·규칙 박아두기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "지금부터 너는 [역할]이야. 규칙: ①[말투/길이] ②[반드시 포함] ③[절대 하지 말 것]. 이 규칙으로 [요청]을 해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "역할",
+      "required": true,
+      "example": "역할"
+    },
+    {
+      "name": "input_2",
+      "description": "말투/길이",
+      "required": true,
+      "example": "말투/길이"
+    },
+    {
+      "name": "input_3",
+      "description": "반드시 포함",
+      "required": true,
+      "example": "반드시 포함"
+    },
+    {
+      "name": "input_4",
+      "description": "절대 하지 말 것",
+      "required": true,
+      "example": "절대 하지 말 것"
+    },
+    {
+      "name": "input_5",
+      "description": "요청",
+      "required": true,
+      "example": "요청"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7w-system"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

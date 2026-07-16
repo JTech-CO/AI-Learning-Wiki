@@ -1,0 +1,71 @@
+{
+  "id": "p26b-commit",
+  "version": 1,
+  "title": "좋은 커밋 메시지 양식(한 줄)",
+  "summary": "좋은 커밋 메시지 양식(한 줄) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[무엇을] [어떻게 바꿈]\n예: 'README에 [프로젝트 소개] 추가' / '[로그인 버튼] 색 [파란색]으로 변경'",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무엇을",
+      "required": true,
+      "example": "무엇을"
+    },
+    {
+      "name": "input_2",
+      "description": "어떻게 바꿈",
+      "required": true,
+      "example": "어떻게 바꿈"
+    },
+    {
+      "name": "input_3",
+      "description": "프로젝트 소개",
+      "required": true,
+      "example": "프로젝트 소개"
+    },
+    {
+      "name": "input_4",
+      "description": "로그인 버튼",
+      "required": true,
+      "example": "로그인 버튼"
+    },
+    {
+      "name": "input_5",
+      "description": "파란색",
+      "required": true,
+      "example": "파란색"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "코딩",
+    "협업",
+    "프로젝트 관리",
+    "웹 개발",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26b-commit"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

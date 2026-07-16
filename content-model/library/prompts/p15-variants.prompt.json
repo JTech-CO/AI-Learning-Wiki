@@ -1,0 +1,55 @@
+{
+  "id": "p15-variants",
+  "version": 1,
+  "title": "한 부품만 바꾼 변형 3개 받기",
+  "summary": "한 부품만 바꾼 변형 3개 받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 프롬프트에서 [출력형식] 요소만 3가지로 다르게 바꾼 변형 3개를 만들어줘. 나머지 요소는 그대로 두고, 각 변형이 어떤 상황에 적합한지 한 줄로. 원본 프롬프트: [내 프롬프트]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "출력형식",
+      "required": true,
+      "example": "출력형식"
+    },
+    {
+      "name": "input_2",
+      "description": "내 프롬프트",
+      "required": true,
+      "example": "내 프롬프트"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래 프롬프트에서 표와 세 줄 요약 요소만 3가지로 다르게 바꾼 변형 3개를 만들어줘. 나머지 요소는 그대로 두고, 각 변형이 어떤 상황에 적합한지 한 줄로. 원본 프롬프트: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "테스트",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "instruction"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p15-variants"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

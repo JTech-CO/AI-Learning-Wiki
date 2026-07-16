@@ -1,0 +1,47 @@
+{
+  "id": "p36b-compare-docs",
+  "version": 1,
+  "title": "여러 문서 비교/충돌 찾기",
+  "summary": "여러 문서 비교/충돌 찾기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "업로드한 문서들 중 [환불 기간]에 대해 서로 다르게 적힌 부분이 있는지 비교해줘. 어느 문서에서 며칠이라고 했는지 각각 출처와 함께 표로 정리하고, 충돌하면 어떤 게 최신인지 추정해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "환불 기간",
+      "required": true,
+      "example": "환불 기간"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "문서 분석",
+    "RAG",
+    "검색",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36b-compare-docs"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

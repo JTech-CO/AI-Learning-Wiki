@@ -1,0 +1,55 @@
+{
+  "id": "p11e-system-3ver",
+  "version": 1,
+  "title": "system 프롬프트 3버전 비교",
+  "summary": "system 프롬프트 3버전 비교 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[앱 목적]을 위한 챗봇의 system 프롬프트를 성격이 뚜렷이 다른 3가지 버전으로(예: 엄격한/친근한/유머러스한) 만들어줘. 각 버전이 같은 사용자 질문 \"[질문]\"에 어떻게 답할지 예시 답변도 하나씩.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "앱 목적",
+      "required": true,
+      "example": "앱 목적"
+    },
+    {
+      "name": "input_2",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "핵심 내용을 빠르게 이해하도록 돕기을 위한 챗봇의 system 프롬프트를 성격이 뚜렷이 다른 3가지 버전으로(예: 엄격한/친근한/유머러스한) 만들어줘. 각 버전이 같은 사용자 질문 \"실제 값\"에 어떻게 답할지 예시 답변도 하나씩.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11e-system-3ver"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

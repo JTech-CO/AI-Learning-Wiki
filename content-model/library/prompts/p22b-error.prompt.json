@@ -1,0 +1,53 @@
+{
+  "id": "p22b-error",
+  "version": 1,
+  "title": "로그인 에러 메시지 해석",
+  "summary": "로그인 에러 메시지 해석 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Supabase Auth로 로그인하는데 이런 에러가 떠: [에러 메시지]. 이게 무슨 뜻인지, 코드/설정 중 어디를 고쳐야 하는지 초보자도 알게 단계별로 설명해줘. 내 현재 코드는: [코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "에러 메시지",
+      "required": true,
+      "example": "에러 메시지"
+    },
+    {
+      "name": "input_2",
+      "description": "코드",
+      "required": true,
+      "example": "코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "코딩",
+    "디버깅",
+    "데이터베이스",
+    "보안",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "oauth"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22b-error"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

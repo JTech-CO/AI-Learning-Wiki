@@ -1,0 +1,48 @@
+{
+  "id": "p40i-element",
+  "version": 1,
+  "title": "요소 하나 추가/삭제",
+  "summary": "요소 하나 추가/삭제 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 이미지 그대로 유지하고 [추가할 것: 예) 창밖 네온사인 / 뺄 것: 예) 뒤 배경의 사람들]만 [추가/삭제]해줘. 스타일과 색감은 동일하게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "추가할 것: 예) 창밖 네온사인 / 뺄 것: 예) 뒤 배경의 사람들",
+      "required": true,
+      "example": "추가할 것: 예) 창밖 네온사인 / 뺄 것: 예) 뒤 배경의 사람들"
+    },
+    {
+      "name": "input_2",
+      "description": "추가/삭제",
+      "required": true,
+      "example": "추가/삭제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p40i-element"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

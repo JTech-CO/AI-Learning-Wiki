@@ -1,0 +1,47 @@
+{
+  "id": "py-syntax-p1",
+  "version": 1,
+  "title": "내 코드 한 줄씩 설명받기",
+  "summary": "내 코드 한 줄씩 설명받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 파이썬을 오늘 처음 배우는 초보야. 아래 코드를 한 줄씩, 각 줄이 무슨 자료형을 만들고 무슨 일을 하는지 초등학생도 이해하게 설명해줘. 어려운 용어는 쉬운 비유로 바꿔줘.\n\n[여기에 내 코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 내 코드 붙여넣기",
+      "required": true,
+      "example": "여기에 내 코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "교육",
+    "코딩",
+    "자동화",
+    "재무·금융",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-syntax-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

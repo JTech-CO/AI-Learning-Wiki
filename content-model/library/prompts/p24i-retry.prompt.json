@@ -1,0 +1,47 @@
+{
+  "id": "p24i-retry",
+  "version": 1,
+  "title": "재시험 — 틀린 개념만 다시 출제",
+  "summary": "재시험 — 틀린 개념만 다시 출제 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 방금 [틀린 개념 이름]을(를) 틀렸어. 이 개념만 확실히 잡게, 같은 개념으로 각도만 다른 문제 [2]개를 새로 내줘. 정답은 내가 답한 뒤에 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "틀린 개념 이름",
+      "required": true,
+      "example": "틀린 개념 이름"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "테스트",
+    "검색",
+    "프롬프트 설계",
+    "고객 지원",
+    "평가"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24i-retry"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

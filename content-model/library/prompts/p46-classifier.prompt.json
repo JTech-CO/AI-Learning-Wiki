@@ -1,0 +1,65 @@
+{
+  "id": "p46-classifier",
+  "version": 1,
+  "title": "문의 분류기",
+  "summary": "문의 분류기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 고객문의 분류기다. 아래 문의 본문을 읽고 [환불, 배송, 제품문의, 기타] 중 정확히 한 단어로만 답하라. 설명·문장부호 없이 단어 하나만 출력. 애매하면 기타로 분류. 특수규칙: - [규칙1, 예: 포장 손상은 배송] - [규칙2]. 문의 본문: \"\"\"[여기에]\"\"\"",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "환불, 배송, 제품문의, 기타",
+      "required": true,
+      "example": "환불, 배송, 제품문의, 기타"
+    },
+    {
+      "name": "input_2",
+      "description": "규칙1, 예: 포장 손상은 배송",
+      "required": true,
+      "example": "규칙1, 예: 포장 손상은 배송"
+    },
+    {
+      "name": "input_3",
+      "description": "규칙2",
+      "required": true,
+      "example": "규칙2"
+    },
+    {
+      "name": "input_4",
+      "description": "여기에",
+      "required": true,
+      "example": "여기에"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "자동화",
+    "프롬프트 설계",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "classification"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p46-classifier"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

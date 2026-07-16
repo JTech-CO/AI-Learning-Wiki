@@ -1,0 +1,37 @@
+{
+  "id": "p7e-concept",
+  "version": 1,
+  "title": "asyncio 개념 점검",
+  "summary": "asyncio 개념 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "파이썬 async/await 초보입니다. 다음 개념을 카페 비유로 각각 2문장씩 설명해 주세요: (1) 코루틴 (2) await가 하는 일 (3) asyncio.gather (4) 왜 time.sleep 대신 asyncio.sleep을 써야 하는지 (5) 이벤트 루프. 전문용어는 괄호 안에 쉬운 말로.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "Python"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "rate-limit"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7e-concept"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

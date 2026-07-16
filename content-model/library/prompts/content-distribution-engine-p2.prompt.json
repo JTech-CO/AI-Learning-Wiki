@@ -1,0 +1,47 @@
+{
+  "id": "content-distribution-engine-p2",
+  "version": 1,
+  "title": "멀티 플랫폼 리퍼포징 한방",
+  "summary": "멀티 플랫폼 리퍼포징 한방 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 코어 콘텐츠를 5개 형태로 재활용해줘:\n\"\"\"\n[코어 콘텐츠 붙여넣기]\n\"\"\"\n1) 네이버 블로그 글(제목+800자, 검색 키워드 자연스럽게 포함)\n2) X 스레드 6개(첫 트윗은 강한 훅)\n3) 인스타 카드뉴스 4장 문구\n4) 링크드인 글 1개(정중한 존댓말)\n5) 뉴스레터 도입부 3문장\n각각 플랫폼 특성에 맞는 길이와 톤으로 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코어 콘텐츠 붙여넣기",
+      "required": true,
+      "example": "코어 콘텐츠 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "이미지",
+    "콘텐츠",
+    "배포",
+    "모니터링"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:content-distribution-engine-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

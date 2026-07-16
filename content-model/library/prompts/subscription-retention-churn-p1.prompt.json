@@ -1,0 +1,61 @@
+{
+  "id": "subscription-retention-churn-p1",
+  "version": 1,
+  "title": "이탈률·LTV 검산 + 개선 지렛대 찾기",
+  "summary": "이탈률·LTV 검산 + 개선 지렛대 찾기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 구독 서비스 숫자야. 지난달 말 활성 구독자 [400]명, 이번 달 신규 [80]명, 이번 달 해지 [32]명, 월 결제액 [9900]원. (1) 월 이탈률, 평균 유지 개월, LTV를 단계별로 계산해줘. (2) 이탈률을 1%p 낮추면 LTV가 얼마나 오르는지 숫자로 보여줘. (3) 이 수치에서 가장 효과 큰 개선 지렛대 3개를 우선순위로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "400",
+      "required": true,
+      "example": "400"
+    },
+    {
+      "name": "input_2",
+      "description": "80",
+      "required": true,
+      "example": "80"
+    },
+    {
+      "name": "input_3",
+      "description": "32",
+      "required": true,
+      "example": "32"
+    },
+    {
+      "name": "input_4",
+      "description": "9900",
+      "required": true,
+      "example": "9900"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:subscription-retention-churn-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

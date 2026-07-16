@@ -1,0 +1,58 @@
+{
+  "id": "p37-diagnose",
+  "version": 1,
+  "title": "엉뚱한 답 원인 진단",
+  "summary": "엉뚱한 답 원인 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 RAG 챗봇이 이 질문에 틀린 답을 했어. 질문: [질문]. 가져온 청크들: [검색된 청크 원문]. AI 최종 답변: [답변]. 청킹 문제인지, 유사도 검색 문제인지, 프롬프트 문제인지 구분해 진단하고 가장 먼저 고칠 것 1가지를.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    },
+    {
+      "name": "input_2",
+      "description": "검색된 청크 원문",
+      "required": true,
+      "example": "검색된 청크 원문"
+    },
+    {
+      "name": "input_3",
+      "description": "답변",
+      "required": true,
+      "example": "답변"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "디버깅",
+    "RAG",
+    "검색",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

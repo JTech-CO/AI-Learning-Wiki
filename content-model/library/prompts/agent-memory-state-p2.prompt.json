@@ -1,0 +1,44 @@
+{
+  "id": "agent-memory-state-p2",
+  "version": 1,
+  "title": "대화 끝 3줄 요약 저장",
+  "summary": "대화 끝 3줄 요약 저장 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 나눈 대화를 검토하고, '다음 대화에서도 기억해야 할 새로운 사실'만 골라 3~5줄 불릿으로 요약하세요. 이미 알던 정보나 일회성 잡담은 제외하고, 사람·선호·결정·약속 위주로만 적으세요. 결과는 JSON의 last_summary에 넣을 순수 텍스트로만 출력하세요.\n\n대화 내용: [대화 전문 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대화 전문 붙여넣기",
+      "required": true,
+      "example": "대화 전문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "AI 에이전트",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-memory-state-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

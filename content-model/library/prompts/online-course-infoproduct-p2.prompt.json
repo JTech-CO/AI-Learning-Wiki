@@ -1,0 +1,53 @@
+{
+  "id": "online-course-infoproduct-p2",
+  "version": 1,
+  "title": "한 차시 강의 대본 + 슬라이드 개요",
+  "summary": "한 차시 강의 대본 + 슬라이드 개요 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 모듈의 한 차시 강의 대본과 슬라이드 개요를 만들어줘.\n- 모듈/결과: [...]\n구성: ①도입(왜 중요한지 30초) ②핵심 3단계 ③실습 한 가지 ④요약·다음 차시 예고.\n조건:\n1) 슬라이드는 제목+핵심 3줄 형태로 6~8장 개요.\n2) 내가 사례·수치·도구명을 '직접 확인'해야 할 부분에는 [확인 필요] 표시를 달아줘(환각 방지).\n3) 친근하고 따라하기 쉬운 말투.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    },
+    {
+      "name": "input_2",
+      "description": "확인 필요",
+      "required": true,
+      "example": "확인 필요"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "프레젠테이션",
+    "구조화 출력",
+    "재무·금융",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:online-course-infoproduct-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

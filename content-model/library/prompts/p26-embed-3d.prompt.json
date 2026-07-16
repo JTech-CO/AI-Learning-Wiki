@@ -1,0 +1,57 @@
+{
+  "id": "p26-embed-3d",
+  "version": 1,
+  "title": "임베딩 3D 비유 좌표 도출",
+  "summary": "임베딩 3D 비유 좌표 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 세 문장을 의미 임베딩의 원리대로 사람이 이해할 수 있게 3차원 벡터(각 축 0~1)로 좌표를 매겨줘. 각 축이 대략 어떤 의미(예: 동물성/동작/경제성)를 담는지도 한 줄로. 문장1: [강아지가 공을 물고 왔다] 문장2: [반려견이 장난감을 가져왔다] 문장3: [오늘 주가가 크게 떨어졌다]. 마지막에 세 문장 중 어느 두 개가 방향이 가장 비슷한지 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "강아지가 공을 물고 왔다",
+      "required": true,
+      "example": "강아지가 공을 물고 왔다"
+    },
+    {
+      "name": "input_2",
+      "description": "반려견이 장난감을 가져왔다",
+      "required": true,
+      "example": "반려견이 장난감을 가져왔다"
+    },
+    {
+      "name": "input_3",
+      "description": "오늘 주가가 크게 떨어졌다",
+      "required": true,
+      "example": "오늘 주가가 크게 떨어졌다"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "RAG",
+    "검색",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "embedding"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26-embed-3d"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "sum-meeting",
+  "version": 1,
+  "title": "회의록 → 결정·할일·안건 정리",
+  "summary": "회의록 → 결정·할일·안건 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 회의록에서 다음 3가지를 각각 불릿으로 정리해줘. (1) 확정된 결정사항 (2) 담당자별 할 일(담당자 이름 포함) (3) 다음 회의 안건. 전체 5줄 이내로 짧게, 한국어로.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "번역",
+    "문서 분석",
+    "프롬프트 설계",
+    "생산성",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:sum-meeting"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

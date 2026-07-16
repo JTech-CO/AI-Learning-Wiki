@@ -1,0 +1,47 @@
+{
+  "id": "p28-refine-slide",
+  "version": 1,
+  "title": "슬라이드 다듬기",
+  "summary": "슬라이드 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 슬라이드에 [재방문율 42%] 통계를 한 줄로 추가하고, 텍스트를 절반으로 줄여 더 깔끔하게. 핵심만 남겨.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "재방문율 42%",
+      "required": true,
+      "example": "재방문율 42%"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "프레젠테이션",
+    "문서 분석",
+    "데이터 분석",
+    "안전"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p28-refine-slide"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

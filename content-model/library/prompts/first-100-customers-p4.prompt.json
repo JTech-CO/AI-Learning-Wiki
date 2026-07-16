@@ -1,0 +1,57 @@
+{
+  "id": "first-100-customers-p4",
+  "version": 1,
+  "title": "3일 테스트 결과 해석 & 다음 액션",
+  "summary": "3일 테스트 결과 해석 & 다음 액션 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 아래 3개 채널에서 첫 대화를 3일간 테스트했어. 결과: [채널1: 노출/답글/문의 수], [채널2: ...], [채널3: ...]. 어느 채널을 더 깊게 파고, 어느 채널을 버려야 할지 판단해줘. 그리고 반응이 온 채널에서 첫 고객 10명까지 늘리기 위한 다음 7일 액션 3가지를 구체적으로 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "채널1: 노출/답글/문의 수",
+      "required": true,
+      "example": "채널1: 노출/답글/문의 수"
+    },
+    {
+      "name": "input_2",
+      "description": "채널2: ...",
+      "required": true,
+      "example": "채널2: ..."
+    },
+    {
+      "name": "input_3",
+      "description": "채널3: ...",
+      "required": true,
+      "example": "채널3: ..."
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "검색",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:first-100-customers-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

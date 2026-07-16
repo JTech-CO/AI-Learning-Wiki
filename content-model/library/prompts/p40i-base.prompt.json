@@ -1,0 +1,66 @@
+{
+  "id": "p40i-base",
+  "version": 1,
+  "title": "기준 이미지 첫 생성",
+  "summary": "기준 이미지 첫 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[장면 한 줄 설명: 누가/어디서/무엇을]. 배경: [배경·시간·날씨]. 스타일: [사실적인 사진/수채화 일러스트/3D 렌더 중 택1]. 비율: [3:4 세로]. 고화질로 만들어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "장면 한 줄 설명: 누가/어디서/무엇을",
+      "required": true,
+      "example": "장면 한 줄 설명: 누가/어디서/무엇을"
+    },
+    {
+      "name": "input_2",
+      "description": "배경·시간·날씨",
+      "required": true,
+      "example": "배경·시간·날씨"
+    },
+    {
+      "name": "input_3",
+      "description": "사실적인 사진/수채화 일러스트/3D 렌더 중 택1",
+      "required": true,
+      "example": "사실적인 사진/수채화 일러스트/3D 렌더 중 택1"
+    },
+    {
+      "name": "input_4",
+      "description": "3:4 세로",
+      "required": true,
+      "example": "3:4 세로"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "실제 값. 배경: 실제 값. 스타일: 실제 값. 비율: 실제 값. 고화질로 만들어줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p40i-base"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

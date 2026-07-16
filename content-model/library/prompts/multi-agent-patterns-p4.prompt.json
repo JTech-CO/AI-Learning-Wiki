@@ -1,0 +1,52 @@
+{
+  "id": "multi-agent-patterns-p4",
+  "version": 1,
+  "title": "핸드오프 JSON 계약 생성",
+  "summary": "핸드오프 JSON 계약 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 워크플로에서 [에이전트A: 예-검수자]가 [에이전트B: 예-작가]에게 결과를 넘길 때 쓸 JSON 형식을 설계해줘. 필드 이름·타입·예시값을 정하고, B가 이 JSON을 받아 다음에 뭘 해야 하는지 분기 규칙(예: pass=false면 issues 반영해 재작성)도 같이 적어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "에이전트A: 예-검수자",
+      "required": true,
+      "example": "에이전트A: 예-검수자"
+    },
+    {
+      "name": "input_2",
+      "description": "에이전트B: 예-작가",
+      "required": true,
+      "example": "에이전트B: 예-작가"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "AI 에이전트",
+    "구조화 출력",
+    "협업",
+    "법무"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:multi-agent-patterns-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

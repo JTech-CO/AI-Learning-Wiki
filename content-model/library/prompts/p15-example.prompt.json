@@ -1,0 +1,38 @@
+{
+  "id": "p15-example",
+  "version": 1,
+  "title": "완성 프롬프트 예시 — 카페 흑임자 라떼 홍보",
+  "summary": "완성 프롬프트 예시 — 카페 흑임자 라떼 홍보 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 동네 카페 SNS 담당자야. 신메뉴 흑임자 라떼(5500원, 이번 주 출시) 홍보 글을 150자 이내로, 해시태그 3개 포함해서 써줘. 이모지는 2개까지, 존댓말로, 할인 언급은 하지 마.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "프롬프트 설계",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "instruction"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p15-example"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

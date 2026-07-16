@@ -1,0 +1,57 @@
+{
+  "id": "data-minimization",
+  "version": 1,
+  "title": "AI 작업 전 데이터 최소화 검토",
+  "summary": "AI 작업 전 데이터 최소화 검토 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "AI로 수행할 작업과 입력 필드 목록을 보고 각 필드가 필수인지 평가해줘. 필수·선택·제거로 분류하고 더 낮은 정밀도나 범주값으로 대체할 수 있는지, 보관 기간은 얼마나 필요한지 질문 형태로 정리해. 작업: [목적] 필드: [목록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "목적",
+      "required": true,
+      "example": "목적"
+    },
+    {
+      "name": "input_2",
+      "description": "목록",
+      "required": true,
+      "example": "목록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "법적 보관 의무와 조직 정책은 개인정보 담당자에게 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "작업: 고객 문의 주제 분류. 필드: 이름, 이메일, 문의 본문, 생년월일, 가입일. 최소화 표를 만들어줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "개인정보",
+    "평가",
+    "안전",
+    "의사결정"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

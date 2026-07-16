@@ -1,0 +1,64 @@
+{
+  "id": "p9i-explain",
+  "version": 1,
+  "title": "어려운 내용 눈높이 설명",
+  "summary": "어려운 내용 눈높이 설명 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[주제]를 [대상: 예 중학생 / 우리 부모님]이 이해하도록 [3문장]으로, [비유를 들어서] 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_2",
+      "description": "대상: 예 중학생 / 우리 부모님",
+      "required": true,
+      "example": "대상: 예 중학생 / 우리 부모님"
+    },
+    {
+      "name": "input_3",
+      "description": "3문장",
+      "required": true,
+      "example": "3문장"
+    },
+    {
+      "name": "input_4",
+      "description": "비유를 들어서",
+      "required": true,
+      "example": "비유를 들어서"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "의사결정",
+    "교육",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9i-explain"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

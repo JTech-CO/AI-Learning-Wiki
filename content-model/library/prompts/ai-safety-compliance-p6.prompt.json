@@ -1,0 +1,40 @@
+{
+  "id": "ai-safety-compliance-p6",
+  "version": 1,
+  "title": "NIST AI RMF 매핑 점검",
+  "summary": "NIST AI RMF 매핑 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 거버넌스 활동을 NIST AI RMF의 GOVERN/MAP/MEASURE/MANAGE 4기능에 매핑해줘. 각 기능별로 현재 갖춘 통제와 빠진 통제를 표로 정리하고, 빠진 항목의 우선순위(위험 영향 기준)와 다음 액션을 제안해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-safety-compliance-p6"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

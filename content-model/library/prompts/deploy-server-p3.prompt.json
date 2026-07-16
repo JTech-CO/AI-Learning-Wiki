@@ -1,0 +1,45 @@
+{
+  "id": "deploy-server-p3",
+  "version": 1,
+  "title": "비밀값을 환경변수로 분리",
+  "summary": "비밀값을 환경변수로 분리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 코드에서 API 키, 토큰, 비밀번호처럼 GitHub에 올리면 안 되는 값들을 찾아서, 코드에 직접 쓰지 말고 os.environ으로 읽도록 수정해 주세요. 그리고 Railway Variables 탭에 등록해야 할 변수 이름 목록도 정리해 주세요. 코드: [내 코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 코드 붙여넣기",
+      "required": true,
+      "example": "내 코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "자동화",
+    "배포"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:deploy-server-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

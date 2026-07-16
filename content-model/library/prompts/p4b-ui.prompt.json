@@ -1,0 +1,52 @@
+{
+  "id": "p4b-ui",
+  "version": 1,
+  "title": "UI만 도출 (v0)",
+  "summary": "UI만 도출 (v0) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[페이지 이름] 화면을 shadcn/ui + Tailwind로 만들어줘. 구성 요소: [헤더, 카드 목록, CTA 버튼]. 반응형, 다크모드 지원.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "페이지 이름",
+      "required": true,
+      "example": "페이지 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "헤더, 카드 목록, CTA 버튼",
+      "required": true,
+      "example": "헤더, 카드 목록, CTA 버튼"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "프롬프트 설계",
+    "웹 개발",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p4b-ui"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

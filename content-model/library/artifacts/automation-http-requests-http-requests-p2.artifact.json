@@ -1,0 +1,50 @@
+{
+  "id": "automation-http-requests-http-requests-p2",
+  "version": 1,
+  "title": "JSON API에서 값 도출",
+  "summary": "JSON API에서 값 도출 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Python",
+  "runtime": "Python 3.11 이상",
+  "files": [
+    {
+      "path": "automation-http-requests-http-requests-p2.py",
+      "content": "import requests\nr = requests.get('[API 주소]', params={'[조건이름]':'[값]'}, timeout=5)\nr.raise_for_status()\ndata = r.json()\nprint(data['[꺼내고 싶은 이름표]'])",
+      "language": "python"
+    }
+  ],
+  "dependencies": [
+    "requests"
+  ],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "API",
+    "자동화",
+    "구조화 출력",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-http-requests-http-requests-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

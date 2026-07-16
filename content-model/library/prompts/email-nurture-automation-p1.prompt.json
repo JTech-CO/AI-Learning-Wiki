@@ -1,0 +1,64 @@
+{
+  "id": "email-nurture-automation-p1",
+  "version": 1,
+  "title": "1 5~7통 시퀀스 전체 생성",
+  "summary": "1 5~7통 시퀀스 전체 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "너는 이메일 마케팅 카피라이터야. 아래 정보로 신규 구독자용 자동 넛처 이메일 시퀀스를 [6]통 만들어줘.\n- 대상 독자: [예: 30대 홈카페 입문자]\n- 구독 시 약속한 선물: [예: 원두 고르는 법 PDF]\n- 내가 파는 것/목표 행동: [예: 원두 정기배송 첫 달 50%, 신청 유도]\n- 톤: [예: 다정한 존댓말, 과장 없이]\n각 통마다 다음을 표로 줘: (1)발송 시점(즉시/1일차/2일차...) (2)이 통의 역할 (3)제목 후보 3개 (4)본문(200자 내외) (5)버튼 문구. 앞 통은 신뢰를 쌓고, 뒤 1~2통에서만 오퍼를 내는 구조로 해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 30대 홈카페 입문자",
+      "required": true,
+      "example": "30대 홈카페 입문자"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 원두 고르는 법 PDF",
+      "required": true,
+      "example": "원두 고르는 법 PDF"
+    },
+    {
+      "name": "input_3",
+      "description": "예: 원두 정기배송 첫 달 50%, 신청 유도",
+      "required": true,
+      "example": "원두 정기배송 첫 달 50%, 신청 유도"
+    },
+    {
+      "name": "input_4",
+      "description": "예: 다정한 존댓말, 과장 없이",
+      "required": true,
+      "example": "다정한 존댓말, 과장 없이"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "문서 분석",
+    "자동화",
+    "마케팅"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:email-nurture-automation-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

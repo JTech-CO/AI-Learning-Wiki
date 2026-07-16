@@ -1,0 +1,40 @@
+{
+  "id": "p6e-api",
+  "version": 1,
+  "title": "연습용 무료 API 추천",
+  "summary": "연습용 무료 API 추천 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬 requests를 연습하고 싶은 초보자야. 회원가입/API 키 없이 바로 GET·POST를 테스트할 수 있는 무료 공개 API를 3개 추천하고, 각각에 대해 requests로 호출하는 짧은 예제 코드를 한국어 주석과 함께 줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "코딩",
+    "디버깅",
+    "테스트",
+    "API",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6e-api"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

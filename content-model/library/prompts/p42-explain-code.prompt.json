@@ -1,0 +1,47 @@
+{
+  "id": "p42-explain-code",
+  "version": 1,
+  "title": "AI가 짠 코드 쉽게 설명 듣기",
+  "summary": "AI가 짠 코드 쉽게 설명 듣기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 만든 코드에서 [궁금한 버튼/부분]이 어떻게 동작하는지 초등학생도 알아듣게 비유를 들어 3문장으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "궁금한 버튼/부분",
+      "required": true,
+      "example": "궁금한 버튼/부분"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "코딩",
+    "테스트",
+    "프롬프트 설계",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42-explain-code"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

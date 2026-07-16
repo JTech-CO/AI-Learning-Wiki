@@ -1,0 +1,46 @@
+{
+  "id": "prompt-pipelines-p2",
+  "version": 1,
+  "title": "파이프라인 단계 쪼개기 설계",
+  "summary": "파이프라인 단계 쪼개기 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "json-schema",
+  "difficulty": "advanced",
+  "template": "나는 [자동화하려는 작업]을 프롬프트 파이프라인으로 만들고 싶어. 이 작업을 2~4개의 순차 단계로 쪼개줘. 각 단계마다 (1)단계 이름 (2)입력 (3)출력 JSON 스키마(키·타입·허용값) (4)한 줄 목적을 표로 정리해줘. 자유서술 필드는 가능하면 열거형으로 바꿔줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "자동화하려는 작업",
+      "required": true,
+      "example": "자동화하려는 작업"
+    }
+  ],
+  "outputContract": {
+    "format": "json",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "자동화",
+    "프롬프트 설계",
+    "구조화 출력",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-pipelines-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

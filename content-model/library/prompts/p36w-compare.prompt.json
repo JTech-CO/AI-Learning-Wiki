@@ -1,0 +1,47 @@
+{
+  "id": "p36w-compare",
+  "version": 1,
+  "title": "두 출처 신뢰도 비교",
+  "summary": "두 출처 신뢰도 비교 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "같은 주제에 대해 서로 다른 두 자료가 있어. A: [URL/요약], B: [URL/요약]. 1차/2차 여부, 발행처, 최신성, 이해관계 기준으로 둘을 비교표로 만들고, 인용용으로 어느 쪽이 더 적합한지와 이유를.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "URL/요약",
+      "required": true,
+      "example": "URL/요약"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "의사결정",
+    "평가",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36w-compare"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "py-functions-p3",
+  "version": 1,
+  "title": "내 반복코드 함수로 바꾸기",
+  "summary": "내 반복코드 함수로 바꾸기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 파이썬 코드에서 반복되는 부분을 함수로 묶어 주세요. 바뀌는 값은 매개변수로 빼고, 왜 이렇게 나눴는지 한 줄로 설명해 주세요.\n\n[여기에 내 코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 내 코드 붙여넣기",
+      "required": true,
+      "example": "여기에 내 코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "테스트",
+    "자동화",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-functions-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

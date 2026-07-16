@@ -1,0 +1,63 @@
+{
+  "id": "digital-product-delivery-p1",
+  "version": 1,
+  "title": "판매 페이지 카피 도출",
+  "summary": "판매 페이지 카피 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 디지털 상품 카피라이터야. 아래 상품을 Gumroad에서 팔 거야. 한국어로 (1) 8단어 이내 제목, (2) 구매 버튼을 누르고 싶게 만드는 3줄 설명, (3) 결제 후 자동으로 나갈 감사·사용법 안내문 3줄을 만들어줘.\n상품: [상품 이름]\n구매자가 얻는 것: [핵심 이득]\n대상: [누구를 위한 것인지]\n가격: [가격]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상품 이름",
+      "required": true,
+      "example": "상품 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "핵심 이득",
+      "required": true,
+      "example": "핵심 이득"
+    },
+    {
+      "name": "input_3",
+      "description": "누구를 위한 것인지",
+      "required": true,
+      "example": "누구를 위한 것인지"
+    },
+    {
+      "name": "input_4",
+      "description": "가격",
+      "required": true,
+      "example": "가격"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "번역",
+    "영업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:digital-product-delivery-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

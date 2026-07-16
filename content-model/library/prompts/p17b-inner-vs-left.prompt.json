@@ -1,0 +1,50 @@
+{
+  "id": "p17b-inner-vs-left",
+  "version": 1,
+  "title": "INNER vs LEFT 차이를 내 데이터로 설명",
+  "summary": "INNER vs LEFT 차이를 내 데이터로 설명 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 두 테이블 예시 데이터를 보고, 같은 JOIN을 INNER JOIN으로 했을 때와 LEFT JOIN으로 했을 때 결과 행이 어떻게 달라지는지 표로 비교해줘. 왜 그렇게 되는지 초보도 이해하게 설명해줘.\n[테이블1 데이터]\n[테이블2 데이터]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "테이블1 데이터",
+      "required": true,
+      "example": "테이블1 데이터"
+    },
+    {
+      "name": "input_2",
+      "description": "테이블2 데이터",
+      "required": true,
+      "example": "테이블2 데이터"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "데이터베이스",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17b-inner-vs-left"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

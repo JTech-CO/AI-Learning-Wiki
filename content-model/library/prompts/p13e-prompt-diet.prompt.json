@@ -1,0 +1,45 @@
+{
+  "id": "p13e-prompt-diet",
+  "version": 1,
+  "title": "시스템 프롬프트 토큰 절감",
+  "summary": "시스템 프롬프트 토큰 절감 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 시스템 프롬프트를 의미와 지시사항은 100% 보존하면서 토큰 수를 최대한 줄여줘. 예의 표현·중복·불필요한 수식어를 제거하고, 줄인 버전과 함께 대략 몇 %를 절감했는지. [기존 시스템 프롬프트]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "기존 시스템 프롬프트",
+      "required": true,
+      "example": "기존 시스템 프롬프트"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "스프레드시트",
+    "API",
+    "프롬프트 설계",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "token"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p13e-prompt-diet"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

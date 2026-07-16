@@ -1,0 +1,47 @@
+{
+  "id": "p1b-first-run",
+  "version": 1,
+  "title": "첫 실행 파일 생성",
+  "summary": "첫 실행 파일 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 코딩을 처음 배우는 사람이야. [내 폴더]에 index.html 파일을 새로 만들어줘. 화면 한가운데에 아주 큰 글씨로 'Hello AI Learning Wiki'라는 문구가 보이게 하고, 배경은 흰색, 글씨는 검은색으로. 파일을 브라우저로 열면 바로 보이도록 완성된 전체 코드로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 폴더",
+      "required": true,
+      "example": "내 폴더"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "코딩",
+    "프롬프트 설계",
+    "프로젝트 관리",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p1b-first-run"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

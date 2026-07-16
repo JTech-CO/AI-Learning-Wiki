@@ -1,0 +1,46 @@
+{
+  "id": "py-syntax-p4",
+  "version": 1,
+  "title": "실생활 자동화 예시로 바꾸기",
+  "summary": "실생활 자동화 예시로 바꾸기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 배운 변수·자료형·연산만 사용해서, [내가 겪는 반복 작업]을 계산해주는 아주 간단한 파이썬 코드를 만들어줘. 왜 그렇게 짰는지도 짧게 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내가 겪는 반복 작업",
+      "required": true,
+      "example": "내가 겪는 반복 작업"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "코딩",
+    "자동화",
+    "재무·금융",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-syntax-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

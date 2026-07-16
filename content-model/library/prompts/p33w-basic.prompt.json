@@ -1,0 +1,75 @@
+{
+  "id": "p33w-basic",
+  "version": 1,
+  "title": "통화 메모 → 3칸 액션 표(기본)",
+  "summary": "통화 메모 → 3칸 액션 표(기본) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 통화 메모를 표로 정리해줘. 칸은 [결정사항] / [고객 요청] / [다음 액션(누가·언제)] 3개로. 표 아래에 '고객 등급 단서' 한 줄도. 추측은 (추정)이라고 표시하고, 메모에 없는 내용은 지어내지 마. 오늘은 [오늘 날짜]야 — '다음주 화요일' 같은 표현은 정확한 날짜로.\n=== 통화 메모 ===\n[붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "결정사항",
+      "required": true,
+      "example": "결정사항"
+    },
+    {
+      "name": "input_2",
+      "description": "고객 요청",
+      "required": true,
+      "example": "고객 요청"
+    },
+    {
+      "name": "input_3",
+      "description": "다음 액션(누가·언제)",
+      "required": true,
+      "example": "다음 액션(누가·언제)"
+    },
+    {
+      "name": "input_4",
+      "description": "오늘 날짜",
+      "required": true,
+      "example": "오늘 날짜"
+    },
+    {
+      "name": "input_5",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래 통화 메모를 표로 정리해줘. 칸은 실제 값 / 신입 직장인 / 실제 값 3개로. 표 아래에 '고객 등급 단서' 한 줄도. 추측은 (추정)이라고 표시하고, 메모에 없는 내용은 지어내지 마. 오늘은 2026년 7월 31일야 — '다음주 화요일' 같은 표현은 정확한 날짜로.\n=== 통화 메모 ===\n실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "요약",
+    "구조화 출력",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33w-basic"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

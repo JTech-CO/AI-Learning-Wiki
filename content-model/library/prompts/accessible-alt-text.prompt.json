@@ -1,0 +1,46 @@
+{
+  "id": "accessible-alt-text",
+  "version": 1,
+  "title": "사실 중심 이미지 대체 텍스트 작성",
+  "summary": "사실 중심 이미지 대체 텍스트 작성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "첨부한 이미지의 대체 텍스트를 한국어로 작성해줘. 이미지에서 직접 확인되는 사실만 쓰고 추측은 제외해. 장식용 요소는 생략하고, 정보 전달에 중요한 사람·사물·행동·문자·공간 관계를 2문장 이내로 설명해. 이미지 안 문자는 정확히 옮겨 적어.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "신원·감정·장애처럼 이미지로 확정할 수 없는 특성은 추정하지 않는다. 실제 화면에서 주변 문맥과 함께 검토한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "첨부한 행사 포스터에서 날짜·장소·행사명을 포함한 대체 텍스트를 2문장으로 작성해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "접근성",
+    "이미지",
+    "멀티모달",
+    "글쓰기",
+    "번역",
+    "검증"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-captioning"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

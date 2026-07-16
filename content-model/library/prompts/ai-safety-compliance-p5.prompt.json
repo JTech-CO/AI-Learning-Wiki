@@ -1,0 +1,40 @@
+{
+  "id": "ai-safety-compliance-p5",
+  "version": 1,
+  "title": "감사 추적 스키마 설계",
+  "summary": "감사 추적 스키마 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "법적 감사 추적용 로그 스키마를 설계해줘. '누가·언제·어떤 입력으로·어떤 모델/정책 버전에서·어떤 결정을·인간이 검토했는지'를 포함하고, append-only 무결성(해시 체인 등)·보관 기간·접근 통제를 어떻게 보장할지 설명해줘. 성능 관찰성(OpenTelemetry) 로그와 어떻게 분리·연계할지도 정리해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "구조화 출력",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-safety-compliance-p5"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

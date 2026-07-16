@@ -1,0 +1,58 @@
+{
+  "id": "agent-tool-design-p2",
+  "version": 1,
+  "title": "설명문(사용/금지 조건) 초안 생성",
+  "summary": "설명문(사용/금지 조건) 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 도구에 대해 에이전트용 description을 3줄로 써줘. 1줄: 하는 일, 2줄: 언제 써야 하는지, 3줄: 언제 절대 쓰면 안 되고 대신 무엇을 써야 하는지. 비가역·위험 동작이면 사람 확인 전제 조건도 넣어줘.\n\n도구 이름: [예: cancel_order]\n하는 일: [설명]\n관련 대체 도구: [예: create_return]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: cancel_order",
+      "required": true,
+      "example": "cancel_order"
+    },
+    {
+      "name": "input_2",
+      "description": "설명",
+      "required": true,
+      "example": "설명"
+    },
+    {
+      "name": "input_3",
+      "description": "예: create_return",
+      "required": true,
+      "example": "create_return"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "디버깅",
+    "AI 에이전트",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-tool-design-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

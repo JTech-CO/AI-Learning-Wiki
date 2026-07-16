@@ -1,0 +1,46 @@
+{
+  "id": "p36i-rewrite",
+  "version": 1,
+  "title": "균형 잡힌 다시쓰기",
+  "summary": "균형 잡힌 다시쓰기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[붙여넣기: AI가 쓴 원래 글] 위 내용을 성별·문화·가족 형태를 특정 기본값에 치우치지 않고 다양하게 반영해서 다시 써줘. 고정관념(예: 리더=남성, 돌봄=여성)은 일부러 피해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기: AI가 쓴 원래 글",
+      "required": true,
+      "example": "붙여넣기: AI가 쓴 원래 글"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "검증",
+    "안전",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36i-rewrite"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

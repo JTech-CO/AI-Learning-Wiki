@@ -1,0 +1,38 @@
+{
+  "id": "p20i-selfcheck",
+  "version": 1,
+  "title": "환각 여부 자가점검 요청",
+  "summary": "환각 여부 자가점검 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 네가 준 출처가 실제로 존재하는 자료인지, 아니면 형식만 그럴듯하게 만들어진 것일 수 있는지 솔직하게 알려줘. 원문 제목과 URL을 다시 정확히 확인해서 알려주고, 확신이 없으면 '검증 필요'라고 말해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "검색",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20i-selfcheck"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

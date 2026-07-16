@@ -1,0 +1,46 @@
+{
+  "id": "offer-validation-test-p1",
+  "version": 1,
+  "title": "랜딩페이지 카피 초안 생성",
+  "summary": "랜딩페이지 카피 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 전환율 높은 랜딩페이지 카피라이터야. 아래 가설로 한 페이지짜리 사전주문 랜딩 카피를 써줘.\n가설: [누가 / 어떤 문제로 / 얼마 낼 것이다]\n구성해줘: (1) 문제를 찌르는 헤드라인 3개 후보 (2) 서브헤드라인 (3) 핵심 약속 3줄 (4) 가격 제시 문구 (5) 버튼 문구 3개 후보 (6) 대기명단 유도 문구. 과장·거짓 금지, 한국어, 자취 20대가 읽는 톤으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "누가 / 어떤 문제로 / 얼마 낼 것이다",
+      "required": true,
+      "example": "누가 / 어떤 문제로 / 얼마 낼 것이다"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "테스트",
+    "평가",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:offer-validation-test-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

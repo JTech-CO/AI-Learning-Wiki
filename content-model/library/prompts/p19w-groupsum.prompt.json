@@ -1,0 +1,53 @@
+{
+  "id": "p19w-groupsum",
+  "version": 1,
+  "title": "그룹별 합계 집계(대괄호를 실제 열 이름으로)",
+  "summary": "그룹별 합계 집계(대괄호를 실제 열 이름으로) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[지점]별로 [매출]의 합계를 구해서, 큰 순서대로 정렬한 표로 보여줘. 합계 숫자에는 천 단위 쉼표를.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "지점",
+      "required": true,
+      "example": "지점"
+    },
+    {
+      "name": "input_2",
+      "description": "매출",
+      "required": true,
+      "example": "매출"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트",
+    "코딩",
+    "검증",
+    "Python",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19w-groupsum"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

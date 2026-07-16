@@ -1,0 +1,89 @@
+{
+  "id": "p44-portfolio",
+  "version": 1,
+  "title": "회고·포트폴리오 자동작성 — Gamma",
+  "summary": "회고·포트폴리오 자동작성 — Gamma 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 캡스톤 프로젝트 포트폴리오를 한 장으로. 제목: [앱 이름]. 문제: [누구의 어떤 불편]. 해결: [내 앱이 하는 일]. 출시 주소: [URL]. AI가 한 일: [v0가 화면 제작]. 내가 판단한 일: [문제 선정·피드백 반영]. 결과: [친구 N명 테스트 후 OO 개선]. 윤리: AI 도구로 제작했음을 표기. 깔끔하고 따뜻한 디자인으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "앱 이름",
+      "required": true,
+      "example": "앱 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "누구의 어떤 불편",
+      "required": true,
+      "example": "누구의 어떤 불편"
+    },
+    {
+      "name": "input_3",
+      "description": "내 앱이 하는 일",
+      "required": true,
+      "example": "내 앱이 하는 일"
+    },
+    {
+      "name": "input_4",
+      "description": "URL",
+      "required": true,
+      "example": "URL"
+    },
+    {
+      "name": "input_5",
+      "description": "v0가 화면 제작",
+      "required": true,
+      "example": "v0가 화면 제작"
+    },
+    {
+      "name": "input_6",
+      "description": "문제 선정·피드백 반영",
+      "required": true,
+      "example": "문제 선정·피드백 반영"
+    },
+    {
+      "name": "input_7",
+      "description": "친구 N명 테스트 후 OO 개선",
+      "required": true,
+      "example": "친구 N명 테스트 후 OO 개선"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "내 캡스톤 프로젝트 포트폴리오를 한 장으로. 제목: 실제 값. 문제: 실제 값. 해결: 실제 값. 출시 주소: 실제 값. AI가 한 일: 실제 값. 내가 판단한 일: 실제 값. 결과: 실제 값. 윤리: AI 도구로 제작했음을 표기. 깔끔하고 따뜻한 디자인으로.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "프레젠테이션",
+    "테스트",
+    "프롬프트 설계",
+    "고객 지원",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p44-portfolio"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

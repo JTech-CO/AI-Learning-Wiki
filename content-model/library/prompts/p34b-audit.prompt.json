@@ -1,0 +1,53 @@
+{
+  "id": "p34b-audit",
+  "version": 1,
+  "title": "내 코드 보안 점검",
+  "summary": "내 코드 보안 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내 앱의 [파일명] 코드야. 초보가 자주 놓치는 3대 취약점 관점에서 점검해줘: (1)하드코딩된 API 키·비밀번호 (2)서버에서 인증·본인 확인이 빠진 엔드포인트 (3)검증·이스케이프 없는 사용자 입력. 발견한 문제를 위험도 순으로 나열하고 각각 수정 코드를. [코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "파일명",
+      "required": true,
+      "example": "파일명"
+    },
+    {
+      "name": "input_2",
+      "description": "코드",
+      "required": true,
+      "example": "코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "검증",
+    "보안",
+    "안전",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p34b-audit"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

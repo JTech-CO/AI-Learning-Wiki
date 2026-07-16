@@ -1,0 +1,47 @@
+{
+  "id": "security-defense-p3",
+  "version": 1,
+  "title": "내가 쓴 글에 비밀이 남았는지 점검",
+  "summary": "내가 쓴 글에 비밀이 남았는지 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 글을 다른 사람에게 보내거나 AI에 넣기 전, 노출되면 위험한 개인정보·비밀번호·계좌·미공개 정보가 있는지 찾아서 목록으로 알려줘. 점검만 하고, 찾은 비밀값 자체를 다시 적지는 마라(위치·종류만 알려줘).\n글: [여기에 점검할 글 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 점검할 글 붙여넣기",
+      "required": true,
+      "example": "여기에 점검할 글 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "검증",
+    "개인정보",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:security-defense-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "p14b-validate-prompt",
+  "version": 1,
+  "title": "내 시스템 프롬프트 검증받기",
+  "summary": "내 시스템 프롬프트 검증받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내가 만든 AI 기능용 시스템 프롬프트다. (1)출력 형식이 파싱하기 쉽게 고정돼 있는지 (2)AI가 형식을 벗어날 여지가 있는지 (3)few-shot 예시를 넣으면 좋을 위치를 지적하고, 개선한 프롬프트를 다시 써줘. 내 프롬프트: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "프롬프트 설계",
+    "구조화 출력",
+    "검증",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14b-validate-prompt"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

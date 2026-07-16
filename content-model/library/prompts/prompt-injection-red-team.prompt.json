@@ -1,0 +1,53 @@
+{
+  "id": "prompt-injection-red-team",
+  "version": 1,
+  "title": "간접 프롬프트 인젝션 방어 시험",
+  "summary": "간접 프롬프트 인젝션 방어 시험 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "외부 문서를 읽는 AI 시스템의 방어 시험을 설계해줘. 시스템 지시 무시, 비밀 요청, 도구 오용, 인용 위장, 다국어 우회 유형별로 안전한 모의 입력을 만들고 기대 거부·격리 동작과 탐지 로그를 적어. 실제 비밀값이나 유해 실행 명령은 포함하지 마. 시스템 설명: [내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내용",
+      "required": true,
+      "example": "내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "허가된 테스트 환경에서만 실행하고 외부 시스템에 실제 요청을 보내지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "시스템: 업로드 문서를 요약하고 사내 검색 도구를 사용할 수 있음. 다섯 유형의 안전한 모의 공격과 기대 동작을 설계해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "보안",
+    "안전",
+    "테스트",
+    "AI 에이전트",
+    "문서 분석",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt-injection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

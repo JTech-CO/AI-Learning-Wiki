@@ -1,0 +1,46 @@
+{
+  "id": "nocode-mvp-build-p4",
+  "version": 1,
+  "title": "피드백 1순위 도출",
+  "summary": "피드백 1순위 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 MVP를 3명이 써보고 준 피드백이야: [피드백 3개 붙여넣기]. 이 중에서 '결제 전환에 가장 영향이 큰 개선 딱 1가지'만 골라주고, 왜 그게 1순위인지 한 줄로 설명해줘. 나머지는 '나중' 목록으로 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "피드백 3개 붙여넣기",
+      "required": true,
+      "example": "피드백 3개 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "코딩",
+    "고객 지원",
+    "노코드",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:nocode-mvp-build-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

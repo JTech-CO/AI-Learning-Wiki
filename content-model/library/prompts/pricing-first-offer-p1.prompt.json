@@ -1,0 +1,49 @@
+{
+  "id": "pricing-first-offer-p1",
+  "version": 1,
+  "title": "가치 금액 환산기",
+  "summary": "가치 금액 환산기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [대상 고객]에게 [상품/서비스]를 팔려고 해. 이 결과로 고객이 얻는 이득을 (1)추가로 버는 돈 (2)아끼는 시간을 시급으로 환산 (3)줄어드는 고통/리스크 세 가지로 나눠 각각 금액으로 추정해줘. 보수적 추정과 낙관적 추정 두 버전으로, 마지막에 '이 고객이 지불해도 아깝지 않은 가격 상한선'을 한 줄로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상 고객",
+      "required": true,
+      "example": "대상 고객"
+    },
+    {
+      "name": "input_2",
+      "description": "상품/서비스",
+      "required": true,
+      "example": "상품/서비스"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:pricing-first-offer-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

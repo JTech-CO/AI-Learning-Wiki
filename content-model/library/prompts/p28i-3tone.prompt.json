@@ -1,0 +1,64 @@
+{
+  "id": "p28i-3tone",
+  "version": 1,
+  "title": "어조 3종 한 번에 도출",
+  "summary": "어조 3종 한 번에 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 [원문]을 내용은 그대로 두고 어조만 바꿔서 세 가지 버전으로 써줘. 1) 정중체(격식 높음, 윗사람용) 2) 친근체(편안한 사이용) 3) 간결체(핵심만). 각 버전은 3문장 이내로.\n받는 사람: [예: 팀장님] 상황: [예: 갑작스러운 회의 불참 양해]\n[원문]: [여기에 내 문장 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "원문",
+      "required": true,
+      "example": "원문"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 팀장님",
+      "required": true,
+      "example": "팀장님"
+    },
+    {
+      "name": "input_3",
+      "description": "예: 갑작스러운 회의 불참 양해",
+      "required": true,
+      "example": "갑작스러운 회의 불참 양해"
+    },
+    {
+      "name": "input_4",
+      "description": "여기에 내 문장 붙여넣기",
+      "required": true,
+      "example": "여기에 내 문장 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "프롬프트 설계",
+    "협업"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p28i-3tone"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "slm-edge-ondevice-p1",
+  "version": 1,
+  "title": "SLM 적합 판단 자가질문",
+  "summary": "SLM 적합 판단 자가질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 작업: [작업 내용]. 이 작업이 (1)단순 요약/번역/분류인가? (2)민감한 개인·회사 정보를 다루는가? (3)인터넷 없이 빨라야 하는가? 셋 중 하나라도 '예'면 SLM 우선, 모두 '아니오'이고 깊은 추론이 필요하면 LLM.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업 내용",
+      "required": true,
+      "example": "작업 내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "번역"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "large-language-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:slm-edge-ondevice-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

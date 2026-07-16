@@ -1,0 +1,71 @@
+{
+  "id": "p8w-basic",
+  "version": 1,
+  "title": "기본 초안",
+  "summary": "기본 초안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "업무 이메일 초안을 써줘.\n- 받는 사람: [예: A거래처 김부장, 나는 발주처 담당자]\n- 원하는 것: [예: 자재 납기를 6/20에서 6/27로 1주 연기 요청]\n- 꼭 들어갈 사실: [예: 현장 공정 지연이 원인, 추가 비용 없음 확인]\n- 톤: [정중하게 / 담백하게 / 친근하게 중 택1]\n인사-본문-요청-마무리 구조로, 5~7줄 이내로. 확실하지 않은 날짜·금액은 지어내지 말고 [ ]로 비워둬.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: A거래처 김부장, 나는 발주처 담당자",
+      "required": true,
+      "example": "A거래처 김부장, 나는 발주처 담당자"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 자재 납기를 6/20에서 6/27로 1주 연기 요청",
+      "required": true,
+      "example": "자재 납기를 6/20에서 6/27로 1주 연기 요청"
+    },
+    {
+      "name": "input_3",
+      "description": "예: 현장 공정 지연이 원인, 추가 비용 없음 확인",
+      "required": true,
+      "example": "현장 공정 지연이 원인, 추가 비용 없음 확인"
+    },
+    {
+      "name": "input_4",
+      "description": "정중하게 / 담백하게 / 친근하게 중 택1",
+      "required": true,
+      "example": "정중하게 / 담백하게 / 친근하게 중 택1"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "업무 이메일 초안을 써줘.\n- 받는 사람: A거래처 김부장, 나는 발주처 담당자\n- 원하는 것: 자재 납기를 6\n- 꼭 들어갈 사실: 현장 공정 지연이 원인, 추가 비용 없음 확인\n- 톤: 실제 값\n인사-본문-요청-마무리 구조로, 5~7줄 이내로. 확실하지 않은 날짜·금액은 지어내지 말고 실제 값로 비워둬.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "프롬프트 설계",
+    "생산성",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8w-basic"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

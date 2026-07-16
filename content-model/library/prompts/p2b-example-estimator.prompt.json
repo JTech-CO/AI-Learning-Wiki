@@ -1,0 +1,40 @@
+{
+  "id": "p2b-example-estimator",
+  "version": 1,
+  "title": "간단 견적 계산기",
+  "summary": "간단 견적 계산기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "간단한 견적 계산기 단일 페이지 웹앱을 만들어줘. 입력칸 3개(수량, 단가, 할인율%)가 있고, 입력하면 자동으로 '합계 = 수량 × 단가 × (1 − 할인율/100)'을 계산해 큰 글씨로. 결과는 천 단위 콤마와 '원'. 한국어, 휴대폰에서도 잘 보이게, 깔끔한 디자인.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "프롬프트 설계",
+    "웹 개발",
+    "노코드",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2b-example-estimator"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "p37w-measure",
+  "version": 1,
+  "title": "모호한 질문을 측정 가능하게 고치기",
+  "summary": "모호한 질문을 측정 가능하게 고치기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 리서치 질문이 너무 모호해: \"[내 질문]\". 이걸 (1)답이 하나로 좁혀지고 (2)검색어로 바로 바꿀 수 있고 (3)언제 끝났는지 알 수 있게, 측정 가능한 표현으로 3가지 버전으로 고쳐줘. 각 버전마다 무엇을 '답'으로 인정할지 성공 기준도 한 줄씩 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 질문",
+      "required": true,
+      "example": "내 질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "디버깅",
+    "검색",
+    "프롬프트 설계",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37w-measure"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

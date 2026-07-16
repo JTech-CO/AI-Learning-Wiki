@@ -1,0 +1,52 @@
+{
+  "id": "ai-engineer-prompt-caching-p24-cache-1h",
+  "version": 1,
+  "title": "1시간 캐시(베타 헤더 필수)",
+  "summary": "1시간 캐시(베타 헤더 필수) 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Python",
+  "runtime": "Python 3.11 이상",
+  "files": [
+    {
+      "path": "ai-engineer-prompt-caching-p24-cache-1h.py",
+      "content": "1시간 캐시(베타 헤더 필수) — ttl만으로는 안 되고 베타 헤더 + ttl 둘 다:\n\n```python\n# ttl만으로는 안 됨. 베타 헤더 + ttl 둘 다\nresp = client.messages.create(\n    model=\"claude-opus-4-8\",\n    max_tokens=300,\n    extra_headers={\"anthropic-beta\": \"extended-cache-ttl-2025-04-11\"},\n    system=[\n        {\"type\": \"text\", \"text\": \"너는 문서 도우미야.\"},\n        {\"type\": \"text\", \"text\": \"\"\"[긴 고정 문서]\"\"\", \"cache_control\": {\"type\": \"ephemeral\", \"ttl\": \"1h\"}},\n    ],\n    messages=[{\"role\": \"user\", \"content\": \"[질문]\"}],\n)\n```",
+      "language": "python"
+    }
+  ],
+  "dependencies": [
+    "anthropic"
+  ],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "문서 분석",
+    "API",
+    "프롬프트 설계",
+    "콘텐츠",
+    "검증",
+    "Python"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt-caching"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-engineer-prompt-caching-p24-cache-1h"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

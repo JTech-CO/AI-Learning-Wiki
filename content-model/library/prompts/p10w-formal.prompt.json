@@ -1,0 +1,59 @@
+{
+  "id": "p10w-formal",
+  "version": 1,
+  "title": "사외 정중 버전만 다듬기",
+  "summary": "사외 정중 버전만 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 초안을 외부 거래처에 보낼 격식 있는 정중한 존댓말 이메일로. 수신자 호칭은 [박팀장님], 마무리 인사와 서명 [이름/회사]을 넣어줘. 과하지 않게 자연스럽게. [초안 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "박팀장님",
+      "required": true,
+      "example": "박팀장님"
+    },
+    {
+      "name": "input_2",
+      "description": "이름/회사",
+      "required": true,
+      "example": "이름/회사"
+    },
+    {
+      "name": "input_3",
+      "description": "초안 붙여넣기",
+      "required": true,
+      "example": "초안 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "번역",
+    "검증",
+    "협업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p10w-formal"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "tool-shortlist",
+  "version": 1,
+  "title": "AI 도구 후보 3개로 좁히기",
+  "summary": "AI 도구 후보 3개로 좁히기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 작업에 맞는 AI 도구 후보를 최대 3개로 좁혀줘. 최신 기능과 가격은 각 도구의 공식 페이지에서 확인해야 한다고 표시하고, 결과 품질·학습 난이도·협업·내보내기·데이터 정책·월 예상 비용을 비교하는 표를 만들어줘. 마지막에는 20분 안에 실행할 동일 샘플 테스트를 제안해줘.\n\n[작업]: [예: 30초 제품 영상 제작]\n[입력 자료]: [텍스트/이미지/영상/코드]\n[필수 결과물]: [형식]\n[민감정보]: [있음/없음]\n[월 사용량·예산]: [설명]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업",
+      "required": true,
+      "example": "작업"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 30초 제품 영상 제작",
+      "required": true,
+      "example": "30초 제품 영상 제작"
+    },
+    {
+      "name": "input_3",
+      "description": "입력 자료",
+      "required": true,
+      "example": "입력 자료"
+    },
+    {
+      "name": "input_4",
+      "description": "텍스트/이미지/영상/코드",
+      "required": true,
+      "example": "텍스트/이미지/영상/코드"
+    },
+    {
+      "name": "input_5",
+      "description": "필수 결과물",
+      "required": true,
+      "example": "필수 결과물"
+    },
+    {
+      "name": "input_6",
+      "description": "형식",
+      "required": true,
+      "example": "형식"
+    },
+    {
+      "name": "input_7",
+      "description": "민감정보",
+      "required": true,
+      "example": "민감정보"
+    },
+    {
+      "name": "input_8",
+      "description": "있음/없음",
+      "required": true,
+      "example": "있음/없음"
+    },
+    {
+      "name": "input_9",
+      "description": "월 사용량·예산",
+      "required": true,
+      "example": "월 사용량·예산"
+    },
+    {
+      "name": "input_10",
+      "description": "설명",
+      "required": true,
+      "example": "설명"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "도구 추천 결과는 후보 생성용이다. 계약과 데이터 처리 조건은 공식 문서와 조직 정책으로 최종 확인한다.",
+  "examples": [
+    {
+      "label": "회의 요약 자동화 예시",
+      "input": "[작업]: 한국어 회의 녹음에서 요약과 담당자별 할 일 생성\n[입력 자료]: 30~60분 음성\n[필수 결과물]: Markdown과 CSV\n[민감정보]: 있음\n[월 사용량·예산]: 월 40회, 10만원 이하",
+      "output": "보안과 내보내기를 우선한 후보 비교표, 샘플 시험, 도입 전 확인 질문"
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "교육",
+    "코딩",
+    "테스트",
+    "자동화",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "tool-selection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:tool-shortlist"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

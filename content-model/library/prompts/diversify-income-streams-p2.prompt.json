@@ -1,0 +1,63 @@
+{
+  "id": "diversify-income-streams-p2",
+  "version": 1,
+  "title": "상관관계 낮은 새 수익원 후보 도출",
+  "summary": "상관관계 낮은 새 수익원 후보 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 현재 소득은 [주 수익원과 유형]에 집중돼 있어. 내가 가진 조건은 기술=[기술], 주당 가용시간=[N시간], 투자 가능 자본=[금액]이야. 기존 수익원과 '같은 이유로 동시에 망하지 않는'(상관관계 낮은) 새 수익원 후보 5개를 노동형/판매형/반복형/자본형으로 분산해 제안해줘. 각 후보마다 초기 투입시간, 초기 비용, 첫 수익까지 예상 기간, 6개월 뒤 예상 월수익 범위를 표로 줘. 과장 없이 보수적으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주 수익원과 유형",
+      "required": true,
+      "example": "주 수익원과 유형"
+    },
+    {
+      "name": "input_2",
+      "description": "기술",
+      "required": true,
+      "example": "기술"
+    },
+    {
+      "name": "input_3",
+      "description": "N시간",
+      "required": true,
+      "example": "N시간"
+    },
+    {
+      "name": "input_4",
+      "description": "금액",
+      "required": true,
+      "example": "금액"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "영업",
+    "재무·금융",
+    "안전",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:diversify-income-streams-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "client-intake-scoping-p1",
+  "version": 1,
+  "title": "요구사항→산출물 번역",
+  "summary": "요구사항→산출물 번역 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 클라이언트와의 첫 상담 메모야. 이 모호한 요구사항들을 '측정 가능한 산출물 목록'으로 바꿔줘. 각 산출물마다 (1)구체적 결과물 이름 (2)수량/형식 (3)예상 기한을 표로 정리하고, 상담에서 언급 안 됐지만 내가 반드시 확인해야 할 누락 항목도 별도로 알려줘.\n\n[상담 메모 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상담 메모 붙여넣기",
+      "required": true,
+      "example": "상담 메모 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "번역",
+    "문서 분석",
+    "재무·금융",
+    "고객 지원",
+    "검증",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:client-intake-scoping-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "n8n-automation-p1",
+  "version": 1,
+  "title": "메일 3줄 요약 프롬프트 (AI 노드 Prompt 칸에)",
+  "summary": "메일 3줄 요약 프롬프트 (AI 노드 Prompt 칸에) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 비서다. 다음 이메일을 한국어로 정리해라.\n1) 핵심 요약 3줄(각 줄 앞에 •)\n2) 내가 해야 할 행동(있으면) 한 줄, 없으면 '없음'\n이메일 내용: {{ $json.snippet }}",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "요약",
+    "번역",
+    "스프레드시트",
+    "자동화",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:n8n-automation-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

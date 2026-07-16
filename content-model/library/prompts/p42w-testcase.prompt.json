@@ -1,0 +1,46 @@
+{
+  "id": "p42w-testcase",
+  "version": 1,
+  "title": "테스트 케이스로 지시문 약점 찾기",
+  "summary": "테스트 케이스로 지시문 약점 찾기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 지시문으로 만든 GPT를 테스트하려고 해. 이 지시문이 무너지기 쉬운 까다로운 사용자 입력(엣지 케이스) 5개를 만들고, 각각에서 AI가 어떻게 잘못 답할 수 있는지, 그걸 막으려면 지시문에 어떤 규칙을 추가해야 하는지 표로 정리해줘.\n[현재 지시문 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "현재 지시문 붙여넣기",
+      "required": true,
+      "example": "현재 지시문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "테스트",
+    "프롬프트 설계",
+    "구조화 출력",
+    "생산성",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42w-testcase"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

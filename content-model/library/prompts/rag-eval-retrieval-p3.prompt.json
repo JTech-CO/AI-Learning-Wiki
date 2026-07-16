@@ -1,0 +1,65 @@
+{
+  "id": "rag-eval-retrieval-p3",
+  "version": 1,
+  "title": "환각 검출(faithfulness)",
+  "summary": "환각 검출(faithfulness) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 [답변]의 각 문장이 [검색된 근거]로 뒷받침되는지 문장별로 '지지=예/아니오'로 채점하고, 아니오인 문장을 모아 환각률(%)을 계산해줘. 근거에 없는데 사실처럼 쓴 문장을 그대로 인용해줘.\n검색된 근거:\n[근거 청크들]\n답변:\n[LLM 답변 전문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "답변",
+      "required": true,
+      "example": "답변"
+    },
+    {
+      "name": "input_2",
+      "description": "검색된 근거",
+      "required": true,
+      "example": "검색된 근거"
+    },
+    {
+      "name": "input_3",
+      "description": "근거 청크들",
+      "required": true,
+      "example": "근거 청크들"
+    },
+    {
+      "name": "input_4",
+      "description": "LLM 답변 전문",
+      "required": true,
+      "example": "LLM 답변 전문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "조사",
+    "RAG",
+    "검색",
+    "평가",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:rag-eval-retrieval-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

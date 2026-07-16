@@ -1,0 +1,40 @@
+{
+  "id": "p38-lite-build",
+  "version": 1,
+  "title": "무료(라이트 빌드)로 진행",
+  "summary": "무료(라이트 빌드)로 진행 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "풀빌드 대신 무료 라이트 빌드(Lite build)로 간단하게. 핵심 기능(입력·저장·목록·삭제)만 먼저 완성해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "코딩",
+    "데이터베이스",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p38-lite-build"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

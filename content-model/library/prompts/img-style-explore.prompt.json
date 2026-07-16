@@ -1,0 +1,46 @@
+{
+  "id": "img-style-explore",
+  "version": 1,
+  "title": "스타일 정하기 어려울 때",
+  "summary": "스타일 정하기 어려울 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[대상]을 그려줘. 사진 느낌, 수채화 느낌, 만화 느낌 세 가지 버전으로 각각 보여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "이미지",
+    "콘텐츠",
+    "모니터링"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:img-style-explore"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

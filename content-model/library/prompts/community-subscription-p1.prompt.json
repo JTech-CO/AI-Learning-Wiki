@@ -1,0 +1,44 @@
+{
+  "id": "community-subscription-p1",
+  "version": 1,
+  "title": "7일 온보딩 설계",
+  "summary": "7일 온보딩 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 유료 커뮤니티의 '첫 7일 온보딩' 흐름을 설계해줘.\n- 주제/형태: [...] / 멤버가 얻을 것: [...]\n조건:\n1) 가입 직후~7일차까지 '매일 한 가지' 환영/안내 액션.\n2) 한 달 안에 멤버가 느낄 '첫 작은 성공' 1개를 어떻게 만들지.\n3) 어디까지 자동(AI/예약 메시지)으로 하고, 어디부터 '사람이 직접' 해야 하는지 구분.\n핵심은 '소속감과 첫 성공'. 목록으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:community-subscription-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

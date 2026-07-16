@@ -1,0 +1,58 @@
+{
+  "id": "p34w-winner",
+  "version": 1,
+  "title": "이긴 톤 학습시켜 다음 배치 도출",
+  "summary": "이긴 톤 학습시켜 다음 배치 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "A/B 테스트 결과 '[친근]' 톤이 저장 수가 2배 높았어. 이 톤만 살려서 [다음 신제품/이번 행사]용 캡션 5개를 새로 만들어줘. 조건은 지난번과 동일(80자 이내, 이모지, 행동 유도 문구).",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "친근",
+      "required": true,
+      "example": "친근"
+    },
+    {
+      "name": "input_2",
+      "description": "다음 신제품/이번 행사",
+      "required": true,
+      "example": "다음 신제품/이번 행사"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "A/B 테스트 결과 '실제 값' 톤이 저장 수가 2배 높았어. 이 톤만 살려서 업무 자동화 템플릿용 캡션 5개를 새로 만들어줘. 조건은 지난번과 동일(80자 이내, 이모지, 행동 유도 문구).",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "이메일",
+    "교육",
+    "테스트",
+    "마케팅",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p34w-winner"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

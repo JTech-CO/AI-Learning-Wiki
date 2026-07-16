@@ -1,0 +1,56 @@
+{
+  "id": "icp-and-lead-list-p3",
+  "version": 1,
+  "title": "리드 적합성 판정 기준 통일",
+  "summary": "리드 적합성 판정 기준 통일 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 ICP 트리거는 '[트리거 설명]'입니다. 아래 후보들이 이 트리거에 해당하는지 각각 적합/부적합/판단보류로 분류하고 한 줄 이유를 달아줘. 판단보류는 '무엇을 더 확인하면 되는지'까지 알려줘.\n후보:\n1) [업체명 - 관찰한 정보]\n2) [업체명 - 관찰한 정보]\n3) [업체명 - 관찰한 정보]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "트리거 설명",
+      "required": true,
+      "example": "트리거 설명"
+    },
+    {
+      "name": "input_2",
+      "description": "업체명 - 관찰한 정보",
+      "required": true,
+      "example": "업체명 - 관찰한 정보"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "내 ICP 트리거는 '실제 값'입니다. 아래 후보들이 이 트리거에 해당하는지 각각 적합/부적합/판단보류로 분류하고 한 줄 이유를 달아줘. 판단보류는 '무엇을 더 확인하면 되는지'까지 알려줘.\n후보:\n1) 실제 값\n2) 실제 값\n3) 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "검색",
+    "영업",
+    "검증"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:icp-and-lead-list-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

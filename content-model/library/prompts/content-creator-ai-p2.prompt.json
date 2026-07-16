@@ -1,0 +1,59 @@
+{
+  "id": "content-creator-ai-p2",
+  "version": 1,
+  "title": "수익화 경로 매칭",
+  "summary": "수익화 경로 매칭 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 콘텐츠 상황은 다음과 같아:\n- 채널/주제: [블로그 / 직장인 도시락 레시피]\n- 현재 방문자: [거의 없음, 막 시작]\n- 내 강점: [실제로 매일 도시락을 싼다]\n광고·제휴(어필리에이트)·후원·내 디지털 상품 중에서, 지금 단계에 가장 현실적인 수익화 경로 1개를 추천하고 그 이유를 설명해줘. 그리고 그 경로를 콘텐츠에 자연스럽게 녹이는 구체적 방법 3가지와, 지켜야 할 고지·표기 의무도 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "블로그 / 직장인 도시락 레시피",
+      "required": true,
+      "example": "블로그 / 직장인 도시락 레시피"
+    },
+    {
+      "name": "input_2",
+      "description": "거의 없음, 막 시작",
+      "required": true,
+      "example": "거의 없음, 막 시작"
+    },
+    {
+      "name": "input_3",
+      "description": "실제로 매일 도시락을 싼다",
+      "required": true,
+      "example": "실제로 매일 도시락을 싼다"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이미지",
+    "영상",
+    "오디오",
+    "마케팅",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:content-creator-ai-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

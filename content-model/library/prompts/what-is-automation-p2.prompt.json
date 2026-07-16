@@ -1,0 +1,46 @@
+{
+  "id": "what-is-automation-p2",
+  "version": 1,
+  "title": "자동화 후보 문서 초안",
+  "summary": "자동화 후보 문서 초안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 반복 작업을 자동화 후보 문서로 정리해줘: [작업 설명]. 형식은 제목 / 지금 걸리는 시간 / 반복 주기 / 자동화할 규칙(단계별) / 사람이 남겨야 할 판단 / 추천 도구 6항목으로 표 형태로 만들어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업 설명",
+      "required": true,
+      "example": "작업 설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "코딩",
+    "자동화",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:what-is-automation-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

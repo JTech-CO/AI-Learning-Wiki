@@ -1,0 +1,52 @@
+{
+  "id": "diversify-income-streams-p1",
+  "version": 1,
+  "title": "내 소득 리스크 진단",
+  "summary": "내 소득 리스크 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [직업/하는 일]이고, 최근 3개월 소득은 다음과 같아: [항목명-금액-유형(노동형/판매형/반복형/자본형)-출처(플랫폼·고객명)]을 줄바꿈으로 나열. 이걸 표로 정리하고 각 항목의 비중(%)을 계산해줘. 그다음 (1) 40%를 넘는 집중 리스크, (2) 단일 고객·단일 플랫폼 의존 지점, (3) 이 구조가 무너질 수 있는 현실적 시나리오 2가지를 짚어줘. 조언은 냉정하고 구체적으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "직업/하는 일",
+      "required": true,
+      "example": "직업/하는 일"
+    },
+    {
+      "name": "input_2",
+      "description": "항목명-금액-유형(노동형/판매형/반복형/자본형)-출처(플랫폼·고객명)",
+      "required": true,
+      "example": "항목명-금액-유형(노동형/판매형/반복형/자본형)-출처(플랫폼·고객명)"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "영업",
+    "재무·금융",
+    "출처·인용",
+    "안전",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:diversify-income-streams-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

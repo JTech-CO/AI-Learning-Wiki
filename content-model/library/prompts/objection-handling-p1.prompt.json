@@ -1,0 +1,67 @@
+{
+  "id": "objection-handling-p1",
+  "version": 1,
+  "title": "반론별 응대 스크립트 3종 생성",
+  "summary": "반론별 응대 스크립트 3종 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 세일즈 코치야. 내가 [무엇을 판매/제안]하는 상황이고, 대상은 [고객 특징]이야. 자주 듣는 반론 3개는 다음과 같아: 1) [가격 반론] 2) [타이밍 반론] 3) [신뢰 반론]. 각 반론마다 '① 인정 문장 → ② 진짜 걱정을 여는 재질문 → ③ 프레임을 바꾸는 재구성 → ④ 부담 낮은 다음 스텝 클로징' 순서로 실제 말하듯 구어체 스크립트를 만들어줘. 반박하거나 몰아붙이지 말고, 없는 수치는 지어내지 말 것.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무엇을 판매/제안",
+      "required": true,
+      "example": "무엇을 판매/제안"
+    },
+    {
+      "name": "input_2",
+      "description": "고객 특징",
+      "required": true,
+      "example": "고객 특징"
+    },
+    {
+      "name": "input_3",
+      "description": "가격 반론",
+      "required": true,
+      "example": "가격 반론"
+    },
+    {
+      "name": "input_4",
+      "description": "타이밍 반론",
+      "required": true,
+      "example": "타이밍 반론"
+    },
+    {
+      "name": "input_5",
+      "description": "신뢰 반론",
+      "required": true,
+      "example": "신뢰 반론"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "영업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:objection-handling-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

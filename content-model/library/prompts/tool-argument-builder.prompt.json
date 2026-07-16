@@ -1,0 +1,59 @@
+{
+  "id": "tool-argument-builder",
+  "version": 1,
+  "title": "도구 호출 인자 생성과 누락값 확인",
+  "summary": "도구 호출 인자 생성과 누락값 확인 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 도구 스키마와 사용자 요청을 비교해 호출 인자를 만들어줘. 필수값이 없으면 도구를 호출하지 말고 missing 배열에 질문할 필드를 넣어. 출력은 {\"ready\": boolean, \"arguments\": object, \"missing\": string[]} 형식만 사용해. 스키마: [도구 스키마] 요청: [사용자 요청]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "도구 스키마",
+      "required": true,
+      "example": "도구 스키마"
+    },
+    {
+      "name": "input_2",
+      "description": "사용자 요청",
+      "required": true,
+      "example": "사용자 요청"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "쓰기·전송·삭제 도구는 ready=true여도 실행 전에 사용자 승인을 별도로 받는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "스키마: send_email(to, subject, body). 요청: 김 대리에게 회의 연기 메일 보내줘. 누락값을 판정해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "구조화 출력",
+    "API",
+    "AI 에이전트",
+    "안전",
+    "의사결정",
+    "검증"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "tool-calling"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

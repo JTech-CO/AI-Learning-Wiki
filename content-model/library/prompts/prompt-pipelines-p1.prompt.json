@@ -1,0 +1,77 @@
+{
+  "id": "prompt-pipelines-p1",
+  "version": 1,
+  "title": "구조화 출력 강제",
+  "summary": "구조화 출력 강제 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 데이터 추출기다. 아래 [입력]을 분석해 오직 순수 JSON 객체 하나만 출력해라. 마크다운 코드블록, 설명, 인사말 절대 금지.\n스키마:\n{\n  \"[키1]\": \"[타입/허용값 예: positive|neutral|negative]\",\n  \"[키2]\": \"string 또는 null\",\n  \"[키3]\": true\n}\n규칙: 값을 모르면 null. 스키마에 없는 키 추가 금지.\n[입력]:\n[여기에 원문 텍스트]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "입력",
+      "required": true,
+      "example": "입력"
+    },
+    {
+      "name": "input_2",
+      "description": "키1",
+      "required": true,
+      "example": "키1"
+    },
+    {
+      "name": "input_3",
+      "description": "타입/허용값 예: positive|neutral|negative",
+      "required": true,
+      "example": "타입/허용값 예: positive|neutral|negative"
+    },
+    {
+      "name": "input_4",
+      "description": "키2",
+      "required": true,
+      "example": "키2"
+    },
+    {
+      "name": "input_5",
+      "description": "키3",
+      "required": true,
+      "example": "키3"
+    },
+    {
+      "name": "input_6",
+      "description": "여기에 원문 텍스트",
+      "required": true,
+      "example": "여기에 원문 텍스트"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "코딩",
+    "자동화",
+    "프롬프트 설계",
+    "구조화 출력",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-pipelines-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

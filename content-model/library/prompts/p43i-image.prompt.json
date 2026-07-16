@@ -1,0 +1,65 @@
+{
+  "id": "p43i-image",
+  "version": 1,
+  "title": "대표 이미지 생성 (이미지 생성 도구에)",
+  "summary": "대표 이미지 생성 (이미지 생성 도구에) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[장면 묘사: 예 아늑한 동네 카페 외관], [분위기: 따뜻한 조명], [스타일: 일러스트], [비율: 가로형 썸네일]. 글자는 넣지 말고 깔끔하게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "장면 묘사: 예 아늑한 동네 카페 외관",
+      "required": true,
+      "example": "장면 묘사: 예 아늑한 동네 카페 외관"
+    },
+    {
+      "name": "input_2",
+      "description": "분위기: 따뜻한 조명",
+      "required": true,
+      "example": "분위기: 따뜻한 조명"
+    },
+    {
+      "name": "input_3",
+      "description": "스타일: 일러스트",
+      "required": true,
+      "example": "스타일: 일러스트"
+    },
+    {
+      "name": "input_4",
+      "description": "비율: 가로형 썸네일",
+      "required": true,
+      "example": "비율: 가로형 썸네일"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "조사",
+    "자동화",
+    "검색",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "tool-selection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p43i-image"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

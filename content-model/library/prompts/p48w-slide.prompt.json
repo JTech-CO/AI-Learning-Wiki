@@ -1,0 +1,53 @@
+{
+  "id": "p48w-slide",
+  "version": 1,
+  "title": "슬라이드 개요 생성",
+  "summary": "슬라이드 개요 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 주간 요약을 구글 슬라이드 5장 개요로. 각 장마다 [제목]과 불릿 3개. [3단계 AI 요약 붙여넣기] 1장 표지, 2장 핵심 요약, 3장 지표 상세, 4장 이슈/리스크, 5장 다음 주 액션. 불릿은 각 20자 이내.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "제목",
+      "required": true,
+      "example": "제목"
+    },
+    {
+      "name": "input_2",
+      "description": "3단계 AI 요약 붙여넣기",
+      "required": true,
+      "example": "3단계 AI 요약 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "프레젠테이션",
+    "문서 분석",
+    "자동화"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p48w-slide"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

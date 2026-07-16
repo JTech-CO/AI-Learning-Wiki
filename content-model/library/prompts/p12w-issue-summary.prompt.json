@@ -1,0 +1,51 @@
+{
+  "id": "p12w-issue-summary",
+  "version": 1,
+  "title": "긴 스레드 쟁점 요약",
+  "summary": "긴 스레드 쟁점 요약 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 여러 명이 주고받은 긴 메일 스레드 전문이야. 1)쟁점(주제)별로 행을 만들고 [쟁점|누가 요청/제기|현재 상태(합의됨/미합의/미답변)|핵심 내용] 4개 열. 2)표 아래에 '내가 아직 답하지 않은 항목'을 목록으로. 3)각 발언은 반드시 실제 발화자에게 귀속, 추측이면 (추정) 표시. 스레드: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "쟁점|누가 요청/제기|현재 상태(합의됨/미합의/미답변)|핵심 내용",
+      "required": true,
+      "example": "쟁점|누가 요청/제기|현재 상태(합의됨/미합의/미답변)|핵심 내용"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12w-issue-summary"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

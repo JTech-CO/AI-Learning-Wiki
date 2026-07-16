@@ -1,0 +1,43 @@
+{
+  "id": "p27b-undo",
+  "version": 1,
+  "title": "실수 되돌리는 법 알려줘",
+  "summary": "실수 되돌리는 법 알려줘 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 Git 초보야. 방금 이런 실수를 했어: [파일을 잘못 수정함 / 커밋 메시지를 잘못 씀 / add를 취소하고 싶음]. 아직 push는 안 했어. 이걸 되돌리는 가장 안전한 명령을 한 단계씩, 각 명령이 무슨 일을 하는지 한 줄로 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "파일을 잘못 수정함 / 커밋 메시지를 잘못 씀 / add를 취소하고 싶음",
+      "required": true,
+      "example": "파일을 잘못 수정함 / 커밋 메시지를 잘못 씀 / add를 취소하고 싶음"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27b-undo"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

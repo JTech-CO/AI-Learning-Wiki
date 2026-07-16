@@ -1,0 +1,38 @@
+{
+  "id": "p16b-where-drill",
+  "version": 1,
+  "title": "WHERE 조건 확장 연습",
+  "summary": "WHERE 조건 확장 연습 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "SQLite customers(id, name, city, grade, spent) 테이블로 WHERE 연습 문제 5개를 난이도 순으로. 각 문제는 한국어 질문 + 정답 쿼리 + 왜 그런지 한 줄 설명. AND/OR, 부등호(>, <), 그리고 IN 을 골고루.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "스프레드시트",
+    "데이터베이스",
+    "협업",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16b-where-drill"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

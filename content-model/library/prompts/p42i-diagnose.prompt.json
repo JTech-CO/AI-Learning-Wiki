@@ -1,0 +1,55 @@
+{
+  "id": "p42i-diagnose",
+  "version": 1,
+  "title": "내 상황에 유료가 값어치 있는지 냉정 진단",
+  "summary": "내 상황에 유료가 값어치 있는지 냉정 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 상황: 하루 평균 AI 사용 [N]회, 최근 2주 한도 도달 [N]회, 주 용도는 [용도]. 월 [금액]원 유료가 나에게 값어치 있는지 냉정하게 진단하고, '지금은 필요 없다'면 솔직히 그렇게 말해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "용도",
+      "required": true,
+      "example": "용도"
+    },
+    {
+      "name": "input_2",
+      "description": "금액",
+      "required": true,
+      "example": "금액"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "내 상황: 하루 평균 AI 사용 실제 값회, 최근 2주 한도 도달 실제 값회, 주 용도는 실제 값. 월 실제 값원 유료가 나에게 값어치 있는지 냉정하게 진단하고, '지금은 필요 없다'면 솔직히 그렇게 말해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "데이터 분석"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42i-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

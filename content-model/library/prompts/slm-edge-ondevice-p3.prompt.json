@@ -1,0 +1,49 @@
+{
+  "id": "slm-edge-ondevice-p3",
+  "version": 1,
+  "title": "SLM 결과 점검 후 승급",
+  "summary": "SLM 결과 점검 후 승급 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "위 SLM 답변을 검토. 만약 [사실오류/논리비약/길이부족]이 보이면, 같은 질문을 대형 모델(GPT/Claude)에 다시 넣어 비교한다. 질문 원문: [원문 복사]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사실오류/논리비약/길이부족",
+      "required": true,
+      "example": "사실오류/논리비약/길이부족"
+    },
+    {
+      "name": "input_2",
+      "description": "원문 복사",
+      "required": true,
+      "example": "원문 복사"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "디버깅"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "large-language-model"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:slm-edge-ondevice-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

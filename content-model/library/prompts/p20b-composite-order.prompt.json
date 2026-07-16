@@ -1,0 +1,57 @@
+{
+  "id": "p20b-composite-order",
+  "version": 1,
+  "title": "복합 인덱스 순서 결정",
+  "summary": "복합 인덱스 순서 결정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "PostgreSQL에서 WHERE [컬럼A] = ? AND [컬럼B] > ? ORDER BY [컬럼C] 형태 쿼리를 자주 써. 복합 인덱스를 만든다면 컬럼 순서를 어떻게 해야 하고 그 이유는 뭔지, DESC 정렬도 고려해서 CREATE INDEX 문으로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "컬럼A",
+      "required": true,
+      "example": "컬럼A"
+    },
+    {
+      "name": "input_2",
+      "description": "컬럼B",
+      "required": true,
+      "example": "컬럼B"
+    },
+    {
+      "name": "input_3",
+      "description": "컬럼C",
+      "required": true,
+      "example": "컬럼C"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "데이터베이스",
+    "프롬프트 설계",
+    "검증",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20b-composite-order"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

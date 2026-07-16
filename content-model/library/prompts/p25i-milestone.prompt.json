@@ -1,0 +1,37 @@
+{
+  "id": "p25i-milestone",
+  "version": 1,
+  "title": "각 주에 완료 기준(산출물) 붙이기",
+  "summary": "각 주에 완료 기준(산출물) 붙이기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 로드맵의 각 주차 끝에 '이걸 만들면 그 주 완료'라고 판단할 수 있는 눈에 보이는 작은 결과물(산출물)을 하나씩 추가해 주세요. 초보도 만들 수 있는 아주 작은 것으로, 예시 형태까지 간단히 알려주세요.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "교육",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25i-milestone"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

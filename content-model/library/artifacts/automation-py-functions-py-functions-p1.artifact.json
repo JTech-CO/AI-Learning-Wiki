@@ -1,0 +1,48 @@
+{
+  "id": "automation-py-functions-py-functions-p1",
+  "version": 1,
+  "title": "기본 함수 틀",
+  "summary": "기본 함수 틀 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Text",
+  "runtime": "텍스트 편집기",
+  "files": [
+    {
+      "path": "automation-py-functions-py-functions-p1.txt",
+      "content": "def [함수이름]([입력값]):\n    [처리할 명령]\n    return [돌려줄 결과]\n\nprint([함수이름]([테스트할 값]))",
+      "language": "text"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "코딩",
+    "테스트",
+    "자동화",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-py-functions-py-functions-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

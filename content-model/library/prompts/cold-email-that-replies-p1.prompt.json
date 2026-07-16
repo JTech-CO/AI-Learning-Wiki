@@ -1,0 +1,56 @@
+{
+  "id": "cold-email-that-replies-p1",
+  "version": 1,
+  "title": "콜드 이메일 초안 생성",
+  "summary": "콜드 이메일 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "너는 답장률 높은 콜드 이메일 코치야. 아래 정보로 3문장짜리 짧은 콜드 이메일을 써줘. 규칙: (1) 첫 문장은 반드시 이 트리거를 언급, (2) 둘째 문장은 내가 줄 수 있는 구체적 가치 1개, (3) 셋째 문장은 1분이면 되는 아주 작은 요청(전화·미팅 요청 금지, '답장만 주세요' 수준). 광고 문구·'귀사'·'최적의 솔루션' 같은 표현 금지, 친구에게 쓰듯 반말 아닌 존댓말 구어체.\n- 내가 하는 일: [예: 릴스 훅 카피라이팅]\n- 상대: [이름/회사/역할]\n- 트리거(최근 일어난 일): [내가 관찰한 사실]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 릴스 훅 카피라이팅",
+      "required": true,
+      "example": "릴스 훅 카피라이팅"
+    },
+    {
+      "name": "input_2",
+      "description": "이름/회사/역할",
+      "required": true,
+      "example": "이름/회사/역할"
+    },
+    {
+      "name": "input_3",
+      "description": "내가 관찰한 사실",
+      "required": true,
+      "example": "내가 관찰한 사실"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "마케팅"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cold-email-that-replies-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "p22e-loop-code",
+  "version": 1,
+  "title": "도구 2개 + 루프 코드 생성",
+  "summary": "도구 2개 + 루프 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "json-schema",
+  "difficulty": "advanced",
+  "template": "나는 [Node.js]로 Anthropic 메시지 API를 써서 미니 에이전트를 만들고 있어. 도구 두 개를 등록하고 stop_reason이 tool_use가 아닐 때까지 도는 도구 루프를 완성해줘. 도구1: [get_weather - 도시명을 받아 섭씨 기온 반환], 도구2: [calculate - 수식 문자열을 계산]. 요구사항: (1) tools 배열을 JSON Schema로 정의 (2) name→실제 함수 디스패처(mock) (3) while 루프에서 tool_result를 tool_use_id와 함께 되먹임 (4) 최대 반복 8회 가드 (5) 각 스텝 콘솔 로그. 전체 실행 가능한 코드로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Node.js",
+      "required": true,
+      "example": "Node.js"
+    },
+    {
+      "name": "input_2",
+      "description": "get_weather - 도시명을 받아 섭씨 기온 반환",
+      "required": true,
+      "example": "get_weather - 도시명을 받아 섭씨 기온 반환"
+    },
+    {
+      "name": "input_3",
+      "description": "calculate - 수식 문자열을 계산",
+      "required": true,
+      "example": "calculate - 수식 문자열을 계산"
+    }
+  ],
+  "outputContract": {
+    "format": "json",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "스프레드시트",
+    "코딩",
+    "API",
+    "자동화",
+    "AI 에이전트",
+    "검색"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "tool-result"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22e-loop-code"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

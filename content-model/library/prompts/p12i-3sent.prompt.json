@@ -1,0 +1,69 @@
+{
+  "id": "p12i-3sent",
+  "version": 1,
+  "title": "3문장 공유용 문구",
+  "summary": "3문장 공유용 문구 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[주제]에 대해 [대상: 예 친구/고객]에게 공유할 [문장수]문장으로 써줘. 말투는 [예: 친근하게], 이모지 [포함/제외].",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_2",
+      "description": "대상: 예 친구/고객",
+      "required": true,
+      "example": "대상: 예 친구/고객"
+    },
+    {
+      "name": "input_3",
+      "description": "문장수",
+      "required": true,
+      "example": "문장수"
+    },
+    {
+      "name": "input_4",
+      "description": "예: 친근하게",
+      "required": true,
+      "example": "친근하게"
+    },
+    {
+      "name": "input_5",
+      "description": "포함/제외",
+      "required": true,
+      "example": "포함/제외"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "구조화 출력",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12i-3sent"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

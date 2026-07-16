@@ -1,0 +1,63 @@
+{
+  "id": "p9i-mail",
+  "version": 1,
+  "title": "사과/부탁 메일",
+  "summary": "사과/부탁 메일 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[상대: 예 거래처 부장님]에게 보낼 [사과 또는 부탁] 메일을 써줘. 상황은 [무슨 일이 있었는지]이고, [300자] 이내, 메일 형식, 변명은 빼줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상대: 예 거래처 부장님",
+      "required": true,
+      "example": "상대: 예 거래처 부장님"
+    },
+    {
+      "name": "input_2",
+      "description": "사과 또는 부탁",
+      "required": true,
+      "example": "사과 또는 부탁"
+    },
+    {
+      "name": "input_3",
+      "description": "무슨 일이 있었는지",
+      "required": true,
+      "example": "무슨 일이 있었는지"
+    },
+    {
+      "name": "input_4",
+      "description": "300자",
+      "required": true,
+      "example": "300자"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "의사결정",
+    "교육",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9i-mail"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "p36i-detect",
+  "version": 1,
+  "title": "편향 탐지 재질문",
+  "summary": "편향 탐지 재질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 네 답에서 성별, 국적, 나이, 가족 형태, 종교 같은 부분을 네가 임의로 정한 곳이 있으면 모두 짚어줘. 각각 왜 그렇게 정했는지, 근거가 있는지 없는지 솔직하게 알려줘. 그리고 다른 선택지도 함께 제시해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "교육",
+    "검증",
+    "출처·인용",
+    "안전",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36i-detect"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

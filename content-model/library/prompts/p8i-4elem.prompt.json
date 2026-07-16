@@ -1,0 +1,117 @@
+{
+  "id": "p8i-4elem",
+  "version": 1,
+  "title": "4요소 프롬프트",
+  "summary": "4요소 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[지시] 아래 요청을 수행해줘: [무엇을 만들지 결과물과 개수]\n[맥락] 나는 [나/우리 소개]이고, 이 결과물의 독자는 [대상]이야. 목적은 [왜 필요한지]. 톤은 [원하는 분위기].\n[예시] 이런 느낌이 좋아: [좋아하는 예 1개]. 이런 건 피해줘: [싫은 예 1개].\n[출력형식] [분량·개수·형식(목록/표/해시태그 등)]로 줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "지시",
+      "required": true,
+      "example": "지시"
+    },
+    {
+      "name": "input_2",
+      "description": "무엇을 만들지 결과물과 개수",
+      "required": true,
+      "example": "무엇을 만들지 결과물과 개수"
+    },
+    {
+      "name": "input_3",
+      "description": "맥락",
+      "required": true,
+      "example": "맥락"
+    },
+    {
+      "name": "input_4",
+      "description": "나/우리 소개",
+      "required": true,
+      "example": "나/우리 소개"
+    },
+    {
+      "name": "input_5",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_6",
+      "description": "왜 필요한지",
+      "required": true,
+      "example": "왜 필요한지"
+    },
+    {
+      "name": "input_7",
+      "description": "원하는 분위기",
+      "required": true,
+      "example": "원하는 분위기"
+    },
+    {
+      "name": "input_8",
+      "description": "예시",
+      "required": true,
+      "example": "시"
+    },
+    {
+      "name": "input_9",
+      "description": "좋아하는 예 1개",
+      "required": true,
+      "example": "좋아하는 예 1개"
+    },
+    {
+      "name": "input_10",
+      "description": "싫은 예 1개",
+      "required": true,
+      "example": "싫은 예 1개"
+    },
+    {
+      "name": "input_11",
+      "description": "출력형식",
+      "required": true,
+      "example": "출력형식"
+    },
+    {
+      "name": "input_12",
+      "description": "분량·개수·형식(목록/표/해시태그 등)",
+      "required": true,
+      "example": "분량·개수·형식(목록/표/해시태그 등)"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "실제 값 아래 요청을 수행해줘: 5\n실제 값 나는 실제 값이고, 이 결과물의 독자는 신입 직장인이야. 목적은 실제 값. 톤은 실제 값.\n실제 값 이런 느낌이 좋아: 실제 값. 이런 건 피해줘: 실제 값.\n표와 세 줄 요약 월별 고객 문의 건수 표로 줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8i-4elem"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

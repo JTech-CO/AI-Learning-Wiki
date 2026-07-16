@@ -1,0 +1,53 @@
+{
+  "id": "prompt-to-cash-p2",
+  "version": 1,
+  "title": "프롬프트 팩 + 사용법 가이드",
+  "summary": "프롬프트 팩 + 사용법 가이드 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [디자인 입문자]를 위한 'AI 이미지 프롬프트 팩'을 만들어 팔려고 해. 단순 명령어가 아니라 '왜 작동하는지'까지 담아 베끼기 어렵게 하고 싶어.\n주제: [SNS용 깔끔한 제품 사진 스타일 이미지]\n각 프롬프트마다: ①용도(어떤 결과에 쓰는지) ②복붙용 프롬프트 본문 ③'이 프롬프트가 잘 되는 이유' 한 줄 ④바꿔볼 변수 팁.\n서로 다른 스타일 12종을 만들어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "디자인 입문자",
+      "required": true,
+      "example": "디자인 입문자"
+    },
+    {
+      "name": "input_2",
+      "description": "SNS용 깔끔한 제품 사진 스타일 이미지",
+      "required": true,
+      "example": "SNS용 깔끔한 제품 사진 스타일 이미지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "프롬프트 설계",
+    "이미지",
+    "영업",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-to-cash-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

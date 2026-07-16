@@ -1,0 +1,59 @@
+{
+  "id": "p12b-console",
+  "version": 1,
+  "title": "콘솔 에러 원인·해결 물어보기",
+  "summary": "콘솔 에러 원인·해결 물어보기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "웹사이트에서 [내가 한 동작: 로그인 버튼 클릭]을 했더니 화면이 [증상: 아무 반응 없음]입니다. 브라우저 콘솔(F12)에 아래 빨간 에러가 떴어요. 이 에러가 무슨 뜻인지 초보자도 이해할 수 있게 설명하고, 개발자가 아닌 사용자 입장에서 시도해볼 수 있는 해결책과, 개발자에게 전달할 때 쓸 한 줄 요약을 함께 알려줘.\n에러 원문: [콘솔에서 복사한 빨간 에러 전체]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내가 한 동작: 로그인 버튼 클릭",
+      "required": true,
+      "example": "내가 한 동작: 로그인 버튼 클릭"
+    },
+    {
+      "name": "input_2",
+      "description": "증상: 아무 반응 없음",
+      "required": true,
+      "example": "증상: 아무 반응 없음"
+    },
+    {
+      "name": "input_3",
+      "description": "콘솔에서 복사한 빨간 에러 전체",
+      "required": true,
+      "example": "콘솔에서 복사한 빨간 에러 전체"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "디버깅",
+    "API",
+    "웹 개발",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12b-console"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

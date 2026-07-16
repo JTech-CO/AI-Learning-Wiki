@@ -1,0 +1,47 @@
+{
+  "id": "design-system-p1",
+  "version": 1,
+  "title": "자동화 설계도 초안 생성",
+  "summary": "자동화 설계도 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 자동화 초보야. 내가 반복하는 업무를 자동화 시스템으로 설계하고 싶어. 업무: [예: 매일 구글시트 매출을 요약해 카톡으로 받기]. 이 업무를 (1)트리거(시간/이벤트/수동 중 무엇) (2)데이터 흐름을 입력→처리→출력 화살표로 (3)각 단계에서 생길 수 있는 에러 3가지와 대응 (4)월 예상 실행 횟수와 비용, 이렇게 4개 항목으로 1페이지 설계도를 표로 만들어줘. 아직 코드는 짜지 말고 설계만.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 매일 구글시트 매출을 요약해 카톡으로 받기",
+      "required": true,
+      "example": "매일 구글시트 매출을 요약해 카톡으로 받기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "코딩",
+    "디버깅",
+    "자동화",
+    "생산성"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:design-system-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

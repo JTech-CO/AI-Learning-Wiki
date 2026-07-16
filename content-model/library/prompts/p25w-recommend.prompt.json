@@ -1,0 +1,52 @@
+{
+  "id": "p25w-recommend",
+  "version": 1,
+  "title": "목적→차트 유형 추천",
+  "summary": "목적→차트 유형 추천 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 다음 데이터로 [전하고 싶은 결론 한 문장]을 보여주고 싶어. 데이터 항목은 [12개월, 온라인/오프라인 매출]이야. 비교·추세·비율·분포 중 어떤 목적에 해당하는지 판단하고, 가장 오해 없이 읽히는 차트 유형 1개와 그 이유, 피해야 할 차트 1개를.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "전하고 싶은 결론 한 문장",
+      "required": true,
+      "example": "전하고 싶은 결론 한 문장"
+    },
+    {
+      "name": "input_2",
+      "description": "12개월, 온라인/오프라인 매출",
+      "required": true,
+      "example": "12개월, 온라인/오프라인 매출"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "시각화",
+    "영업",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25w-recommend"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

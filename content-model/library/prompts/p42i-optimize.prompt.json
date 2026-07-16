@@ -1,0 +1,43 @@
+{
+  "id": "p42i-optimize",
+  "version": 1,
+  "title": "무료 최대한 아껴 쓰는 법",
+  "summary": "무료 최대한 아껴 쓰는 법 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [AI 이름] 무료 버전을 쓰고 있어. 유료로 넘어가기 전에 무료 한도와 속도 안에서 최대한 좋은 답을 얻는 실전 팁을 5개, 각각 예시와 함께 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "AI 이름",
+      "required": true,
+      "example": "AI 이름"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "데이터 분석"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42i-optimize"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

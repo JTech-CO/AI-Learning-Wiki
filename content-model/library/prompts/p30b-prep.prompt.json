@@ -1,0 +1,47 @@
+{
+  "id": "p30b-prep",
+  "version": 1,
+  "title": "배포 준비 정리시키기",
+  "summary": "배포 준비 정리시키기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 프로젝트 폴더를 Vercel에 배포하려고 해. 지금 폴더 구조는 [파일 목록]이야. 1)Vercel 배포에 필요 없는 파일·폴더를 .gitignore에 넣어줘. 2)GitHub 웹사이트에 드래그&드롭으로 올릴 거라면, 드래그할 때 손으로 빼야 하는 폴더·파일이 뭔지 콕 짚어줘. 3)빠진 설정 파일(package.json 등)이 있으면 만들어줘. 4)비밀키로 빼야 할 부분이 있으면 환경변수로. 초보자도 따라 하게 단계별로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "파일 목록",
+      "required": true,
+      "example": "파일 목록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "구조화 출력",
+    "프로젝트 관리",
+    "웹 개발",
+    "데이터 엔지니어링",
+    "배포",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "json"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p30b-prep"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

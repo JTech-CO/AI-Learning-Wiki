@@ -1,0 +1,59 @@
+{
+  "id": "p25b-edgefn-gen",
+  "version": 1,
+  "title": "Edge Function 코드 생성",
+  "summary": "Edge Function 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Supabase Edge Function(Deno, TypeScript)을 작성해줘. 목적: [무엇을 하는 함수인지, 예: 사용자 질문을 받아 OpenAI에 물어보고 답만 반환]. 요구사항: (1)비밀 키는 코드에 넣지 말고 Deno.env.get(\"[환경변수명]\")으로 읽기 (2)CORS 헤더 포함해 브라우저에서 호출 가능하게 (3)잘못된 입력은 400으로 거부 (4)외부 API 응답에서 [필요한 필드]만 골라 JSON으로 반환. 전체 코드와 배포 명령어까지.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무엇을 하는 함수인지, 예: 사용자 질문을 받아 OpenAI에 물어보고 답만 반환",
+      "required": true,
+      "example": "무엇을 하는 함수인지, 예: 사용자 질문을 받아 OpenAI에 물어보고 답만 반환"
+    },
+    {
+      "name": "input_2",
+      "description": "환경변수명",
+      "required": true,
+      "example": "환경변수명"
+    },
+    {
+      "name": "input_3",
+      "description": "필요한 필드",
+      "required": true,
+      "example": "필요한 필드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "API",
+    "데이터베이스",
+    "구조화 출력",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25b-edgefn-gen"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

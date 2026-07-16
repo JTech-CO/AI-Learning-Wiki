@@ -1,0 +1,57 @@
+{
+  "id": "p6b-noerror",
+  "version": 1,
+  "title": "에러가 안 뜨는데 결과가 이상할 때",
+  "summary": "에러가 안 뜨는데 결과가 이상할 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "에러 메시지는 없는데 결과가 이상해. [기대: 이렇게 나와야 하는데] [실제: 이렇게 나와]. 원인을 찾을 수 있게, 내가 어디에 무슨 값을 찍어보면(console.log 등) 되는지 초보용으로 알려줘.\n[관련 코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "기대: 이렇게 나와야 하는데",
+      "required": true,
+      "example": "기대: 이렇게 나와야 하는데"
+    },
+    {
+      "name": "input_2",
+      "description": "실제: 이렇게 나와",
+      "required": true,
+      "example": "실제: 이렇게 나와"
+    },
+    {
+      "name": "input_3",
+      "description": "관련 코드",
+      "required": true,
+      "example": "관련 코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6b-noerror"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

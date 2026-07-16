@@ -1,0 +1,53 @@
+{
+  "id": "p36w-eval",
+  "version": 1,
+  "title": "출처 신뢰도 3분 평가",
+  "summary": "출처 신뢰도 3분 평가 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 자료의 인용 신뢰도를 평가해줘. 링크: [URL]. 핵심 주장: [내가 인용하려는 문장]. 아래 6항목으로 각각 판단하고 표로: 1)1차/2차 출처 여부와 근거 2)발행처 유형(공공/학술/언론/개인/광고성) 3)최신성(작성일과 현재 기준 유효한지) 4)이해관계(제작자가 이득 보는 게 있는지) 5)예상 반론 2가지 6)종합등급 A/B/C. 마지막에 더 신뢰도 높은 대체 출처 2곳을 링크 후보와 함께.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "URL",
+      "required": true,
+      "example": "URL"
+    },
+    {
+      "name": "input_2",
+      "description": "내가 인용하려는 문장",
+      "required": true,
+      "example": "내가 인용하려는 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "마케팅",
+    "평가",
+    "검증",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36w-eval"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

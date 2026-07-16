@@ -1,0 +1,56 @@
+{
+  "id": "p7-explain",
+  "version": 1,
+  "title": "설명을 부탁할 때",
+  "summary": "설명을 부탁할 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[주제]를 [7살 아이/초등학생]도 이해할 수 있게, 어려운 말 없이 [3가지/5문장]로 알려줘",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_2",
+      "description": "7살 아이/초등학생",
+      "required": true,
+      "example": "7살 아이/초등학생"
+    },
+    {
+      "name": "input_3",
+      "description": "3가지/5문장",
+      "required": true,
+      "example": "3가지/5문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7-explain"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

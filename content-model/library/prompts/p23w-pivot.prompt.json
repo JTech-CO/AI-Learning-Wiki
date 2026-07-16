@@ -1,0 +1,76 @@
+{
+  "id": "p23w-pivot",
+  "version": 1,
+  "title": "피벗표 생성",
+  "summary": "피벗표 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "올린 [파일이름] 파일에서 [카테고리]별로 [매출]의 합계를 낸 피벗표를. 행은 [기준], 열은 [월/분기 등], 값은 [합계/평균]으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "파일이름",
+      "required": true,
+      "example": "파일이름"
+    },
+    {
+      "name": "input_2",
+      "description": "카테고리",
+      "required": true,
+      "example": "카테고리"
+    },
+    {
+      "name": "input_3",
+      "description": "매출",
+      "required": true,
+      "example": "매출"
+    },
+    {
+      "name": "input_4",
+      "description": "기준",
+      "required": true,
+      "example": "기준"
+    },
+    {
+      "name": "input_5",
+      "description": "월/분기 등",
+      "required": true,
+      "example": "월/분기 등"
+    },
+    {
+      "name": "input_6",
+      "description": "합계/평균",
+      "required": true,
+      "example": "합계/평균"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트",
+    "시각화",
+    "코딩",
+    "협업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23w-pivot"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

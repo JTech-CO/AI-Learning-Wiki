@@ -1,0 +1,53 @@
+{
+  "id": "webhooks-triggers-p4",
+  "version": 1,
+  "title": "4 웹훅 보안 토큰 검증 로직 생성",
+  "summary": "4 웹훅 보안 토큰 검증 로직 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 웹훅 수신 엔드포인트로 아무나 가짜 요청을 못 보내게 하고 싶어. 보내는 쪽 헤더에 비밀 토큰 X-Webhook-Token: [내토큰]을 넣고, 받는 쪽([Supabase Edge Function 또는 Apps Script doPost])에서 이 토큰이 일치할 때만 처리하는 코드를 만들어줘. 불일치면 401 반환.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내토큰",
+      "required": true,
+      "example": "내토큰"
+    },
+    {
+      "name": "input_2",
+      "description": "Supabase Edge Function 또는 Apps Script doPost",
+      "required": true,
+      "example": "Supabase Edge Function 또는 Apps Script doPost"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "데이터베이스",
+    "자동화",
+    "검증",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "webhook"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:webhooks-triggers-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

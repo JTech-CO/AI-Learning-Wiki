@@ -1,0 +1,47 @@
+{
+  "id": "hire-delegate-sops-p3",
+  "version": 1,
+  "title": "3 이 업무를 AI/자동화에 맡길 수 있는지 진단",
+  "summary": "3 이 업무를 AI/자동화에 맡길 수 있는지 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 반복 업무를 사람에게 맡길지, AI·자동화 도구에 맡길지 판단해줘. 판단이 필요한 부분과 단순 반복인 부분을 나눠서 표로 정리하고, 자동화 가능하면 어떤 도구(Zapier/Make/ChatGPT 등)로 어떻게 구성할지 제안해줘.\n\n업무 설명: [업무를 3~5문장으로]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "업무를 3~5문장으로",
+      "required": true,
+      "example": "업무를 3~5문장으로"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "자동화",
+    "생산성",
+    "협업",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:hire-delegate-sops-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

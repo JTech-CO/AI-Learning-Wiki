@@ -1,0 +1,47 @@
+{
+  "id": "ai-marketing-funnel-p2",
+  "version": 1,
+  "title": "랜딩 핵심 문구 (헤드라인+서브+버튼)",
+  "summary": "랜딩 핵심 문구 (헤드라인+서브+버튼) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "랜딩 페이지의 가장 중요한 세 부분을 만들어줘.\n- 오퍼: [...] / 대상: [...] / 가입 후 줄 것: [...]\n1) 헤드라인 1줄: '무엇을 + 누구에게' 한눈에. 후보 3개.\n2) 서브헤드 1줄: 왜 믿을 만한지(과장 없이).\n3) 버튼 글자: '제출' 금지, 얻는 것으로(예 '무료 샘플 받기') 후보 3개.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "마케팅",
+    "재무·금융",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-marketing-funnel-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

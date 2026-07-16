@@ -1,0 +1,46 @@
+{
+  "id": "p2-summarize",
+  "version": 1,
+  "title": "긴 글 요약 (토큰 절약형)",
+  "summary": "긴 글 요약 (토큰 절약형) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 글을 ①핵심 3줄 ②중요한 숫자·날짜 ③내가 해야 할 일, 이렇게 세 부분으로만 요약해줘. 추측은 빼고 글에 있는 내용만 써줘. [여기에 긴 글 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 긴 글 붙여넣기",
+      "required": true,
+      "example": "여기에 긴 글 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "프롬프트 설계",
+    "생산성",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2-summarize"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

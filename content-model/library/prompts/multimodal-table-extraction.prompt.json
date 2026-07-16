@@ -1,0 +1,44 @@
+{
+  "id": "multimodal-table-extraction",
+  "version": 1,
+  "title": "표 스크린샷을 검증 가능한 데이터로 변환",
+  "summary": "표 스크린샷을 검증 가능한 데이터로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "첨부한 표 스크린샷을 행과 열 구조가 유지되는 CSV 형태로 변환해줘. 병합 셀과 각주를 별도 표시하고, 판독이 불확실한 셀은 [?]로 남겨. 변환 뒤 각 행의 열 개수가 같은지 검사 결과도 알려줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "내보낸 CSV는 원본 표와 표본 대조하고 개인정보가 있으면 저장 전에 제거한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "첨부한 8행 가격표 이미지를 CSV로 옮기고 읽기 어려운 셀을 [?]로 표시해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "멀티모달",
+    "데이터 분석",
+    "스프레드시트",
+    "검증"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "visual-document-retrieval"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

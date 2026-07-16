@@ -1,0 +1,58 @@
+{
+  "id": "bot-webhooks-p4",
+  "version": 1,
+  "title": "슬랙 카드형(blocks) 요청",
+  "summary": "슬랙 카드형(blocks) 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "슬랙 웹훅으로 [제목]과 [항목1: 값], [항목2: 값]을 카드 형태로 보이게 하는 blocks JSON을 만들어줘. 복붙해서 바로 쓸 수 있게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "제목",
+      "required": true,
+      "example": "제목"
+    },
+    {
+      "name": "input_2",
+      "description": "항목1: 값",
+      "required": true,
+      "example": "항목1: 값"
+    },
+    {
+      "name": "input_3",
+      "description": "항목2: 값",
+      "required": true,
+      "example": "항목2: 값"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "자동화",
+    "구조화 출력",
+    "협업",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "webhook"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:bot-webhooks-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

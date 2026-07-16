@@ -1,0 +1,40 @@
+{
+  "id": "p42-no-cdn",
+  "version": 1,
+  "title": "외부 라이브러리(CDN) 없이 단순화하기",
+  "summary": "외부 라이브러리(CDN) 없이 단순화하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "이 앱에 외부 라이브러리나 인터넷에서 불러오는 링크(CDN)가 들어있으면 전부 빼고, 추가 설치 없이 한 파일로 바로 동작하게 다시 만들어줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "코딩",
+    "테스트",
+    "프롬프트 설계",
+    "프로젝트 관리",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42-no-cdn"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

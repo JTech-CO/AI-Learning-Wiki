@@ -1,0 +1,49 @@
+{
+  "id": "portfolio-from-zero-p3",
+  "version": 1,
+  "title": "재해석 케이스스터디 진단 프레임",
+  "summary": "재해석 케이스스터디 진단 프레임 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 실제로 쓰는 [서비스/가게/앱 이름]의 [특정 화면/부분]이 불편해. 이걸 케이스스터디로 정리하려고 해. '현상 → 원인 추정 → 개선안 → 기대효과' 4단 구조로 정리해줘. 개선안은 내가 직접 만들 수 있게 구체적으로. 사실이 아닌 수치는 쓰지 말고 '추정/기대'로 표기해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "서비스/가게/앱 이름",
+      "required": true,
+      "example": "서비스/가게/앱 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "특정 화면/부분",
+      "required": true,
+      "example": "특정 화면/부분"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프로젝트 관리",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:portfolio-from-zero-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

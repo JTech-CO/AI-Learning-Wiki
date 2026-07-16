@@ -1,0 +1,44 @@
+{
+  "id": "p3-choose",
+  "version": 1,
+  "title": "어떤 챗봇을 쓸지 고민될 때",
+  "summary": "어떤 챗봇을 쓸지 고민될 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [내 상황: 예-구글 계정이 있고, 주로 스마트폰으로 씀]인 사람이야. ChatGPT, Claude, Gemini 중에서 나한테 처음 시작하기 가장 쉬운 것 하나를 이유와 함께 추천해줘. 가입 절차가 간단한 순서로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 상황: 예-구글 계정이 있고, 주로 스마트폰으로 씀",
+      "required": true,
+      "example": "내 상황: 예-구글 계정이 있고, 주로 스마트폰으로 씀"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p3-choose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

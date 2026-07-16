@@ -1,0 +1,50 @@
+{
+  "id": "pii-inventory",
+  "version": 1,
+  "title": "문서의 개인정보 유형 목록화",
+  "summary": "문서의 개인정보 유형 목록화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 문서에서 개인정보 가능성이 있는 항목을 유형별로 찾아줘. 직접 식별자, 간접 식별자, 민감정보, 위치·기기 정보로 구분하고 원문 값을 반복하지 말고 위치와 유형만 기록해. 판단이 불확실하면 '검토 필요'로 표시해. 문서: [내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내용",
+      "required": true,
+      "example": "내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 개인정보를 외부 모델에 보내기 전에 조직 정책과 처리 근거를 확인하고 가능하면 로컬 도구를 사용한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "고객 상담 기록에서 이름·전화번호·주문번호·건강 관련 언급의 위치와 유형만 목록화해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "개인정보",
+    "보안",
+    "문서 분석"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy-audit"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

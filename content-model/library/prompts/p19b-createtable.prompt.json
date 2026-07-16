@@ -1,0 +1,46 @@
+{
+  "id": "p19b-createtable",
+  "version": 1,
+  "title": "실제 CREATE TABLE SQL로 변환",
+  "summary": "실제 CREATE TABLE SQL로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 설계를 PostgreSQL CREATE TABLE 문으로. 기본키·외래키 제약, NOT NULL, 적절한 데이터 타입, created_at timestamptz default now()를 포함. [내 스키마]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 스키마",
+      "required": true,
+      "example": "내 스키마"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "데이터베이스",
+    "구조화 출력",
+    "SQL",
+    "비즈니스",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19b-createtable"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

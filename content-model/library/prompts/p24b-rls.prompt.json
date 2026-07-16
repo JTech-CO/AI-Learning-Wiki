@@ -1,0 +1,45 @@
+{
+  "id": "p24b-rls",
+  "version": 1,
+  "title": "Storage 접근 정책(RLS) SQL 생성",
+  "summary": "Storage 접근 정책(RLS) SQL 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "Supabase Storage의 [avatars] 버킷에 대해 다음 규칙의 RLS 정책 SQL을 만들어줘: 1) 로그인한 사용자는 자기 user id 폴더 안에만 업로드 가능 2) 조회는 누구나 가능(공개). storage.foldername 함수를 사용하고, 대시보드 SQL Editor에 붙여넣을 수 있게 완성된 SQL로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "avatars",
+      "required": true,
+      "example": "avatars"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "데이터베이스",
+    "이미지",
+    "SQL",
+    "모니터링"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24b-rls"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

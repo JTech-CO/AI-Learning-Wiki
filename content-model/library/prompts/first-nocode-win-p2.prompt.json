@@ -1,0 +1,38 @@
+{
+  "id": "first-nocode-win-p2",
+  "version": 1,
+  "title": "내 자동화 아이디어를 노코드 단계로",
+  "summary": "내 자동화 아이디어를 노코드 단계로 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "트리거=[X], 액션=[Y]인 자동화를 Make로 만들려고 해. 어떤 모듈을 순서대로 추가하고 각 모듈에서 무엇을 설정해야 하는지 클릭 단위로 알려줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "아이디어",
+    "코딩",
+    "자동화",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:first-nocode-win-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

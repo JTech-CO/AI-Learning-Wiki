@@ -1,0 +1,59 @@
+{
+  "id": "p22b-fullcode",
+  "version": 1,
+  "title": "Supabase 로그인 화면 전체 코드 생성",
+  "summary": "Supabase 로그인 화면 전체 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [React / 순수 HTML+JS] 로 만든 앱에 Supabase Auth를 붙이려고 해. 다음을 포함한 완성 코드를 파일 단위로 줘: 1)supabaseClient 초기화 (URL=[내 Project URL], anon key=[내 anon key]) 2)이메일 회원가입·로그인 폼 3)구글 소셜 로그인 버튼 4)세션 유무에 따라 로그인 화면과 대시보드를 나누는 로직 5)로그아웃 버튼. 초보자가 복붙해서 바로 돌아가게 주석도 한국어로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "React / 순수 HTML+JS",
+      "required": true,
+      "example": "React / 순수 HTML+JS"
+    },
+    {
+      "name": "input_2",
+      "description": "내 Project URL",
+      "required": true,
+      "example": "내 Project URL"
+    },
+    {
+      "name": "input_3",
+      "description": "내 anon key",
+      "required": true,
+      "example": "내 anon key"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "번역",
+    "코딩",
+    "데이터베이스",
+    "보안"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "oauth"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22b-fullcode"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

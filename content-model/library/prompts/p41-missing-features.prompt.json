@@ -1,0 +1,46 @@
+{
+  "id": "p41-missing-features",
+  "version": 1,
+  "title": "빠진 기능·엣지케이스 도출",
+  "summary": "빠진 기능·엣지케이스 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 제품 아이디어는 [한 문장 문제 정의]야. 사용자가 이 문제를 풀 때 필요한 기능을 내가 놓쳤을 수 있어. 떠오르는 기능을 20개까지 나열하고, 각 기능을 '핵심(없으면 문제 못 품)' / '나중' 두 그룹으로 나눠줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "한 문장 문제 정의",
+      "required": true,
+      "example": "한 문장 문제 정의"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "아이디어",
+    "계획",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p41-missing-features"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

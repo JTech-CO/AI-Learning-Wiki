@@ -1,0 +1,44 @@
+{
+  "id": "p17-edge-case",
+  "version": 1,
+  "title": "경계 케이스 예시 보강",
+  "summary": "경계 케이스 예시 보강 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 퓨샷 예시들이야. [기존 예시] 이 형식에서 AI가 실수하기 쉬운 애매한 경계 케이스 2개와 그 정답 출력을, 위와 똑같은 형식으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "기존 예시",
+      "required": true,
+      "example": "기존 예시"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "in-context-learning"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17-edge-case"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

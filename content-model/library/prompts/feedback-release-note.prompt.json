@@ -1,0 +1,52 @@
+{
+  "id": "feedback-release-note",
+  "version": 1,
+  "title": "피드백 반영 내역 공개 문구 작성",
+  "summary": "피드백 반영 내역 공개 문구 작성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 사용자 피드백과 실제 변경 내역을 바탕으로 업데이트 안내를 작성해줘. 무엇이 바뀌었는지, 어떤 피드백을 반영했는지, 아직 해결되지 않은 점, 추가 의견을 보내는 방법을 구분해 적어. 구현하지 않은 기능을 완료된 것처럼 쓰지 마. 자료: [피드백과 변경 내역]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "피드백과 변경 내역",
+      "required": true,
+      "example": "피드백과 변경 내역"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "배포 기록과 일치하는지 확인하고 개인정보가 포함된 원문 피드백은 인용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "피드백: 검색 속도 개선 요청. 변경: 캐시 적용으로 중앙값 2.1초→0.9초, 오래된 필터 문제는 미해결. 안내문을 작성해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "고객 지원",
+    "프로젝트 관리",
+    "검증",
+    "코딩"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "user-feedback-collection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "json-apis-p1",
+  "version": 1,
+  "title": "환율/공개 API 호출 코드 생성",
+  "summary": "환율/공개 API 호출 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 프로그래밍 초보야. Python requests 라이브러리로 [서비스명, 예: exchangerate-api] API를 호출해서 [목표, 예: USD 대비 KRW 환율]을 가져오는 코드를 써줘. 조건: (1) API 키는 코드에 YOUR_KEY 자리표시자로만 두고 (2) 응답 JSON에서 내가 원하는 값 하나만 print로 출력하고 (3) 각 줄에 한국어 주석을 달아줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "서비스명, 예: exchangerate-api",
+      "required": true,
+      "example": "서비스명, 예: exchangerate-api"
+    },
+    {
+      "name": "input_2",
+      "description": "목표, 예: USD 대비 KRW 환율",
+      "required": true,
+      "example": "목표, 예: USD 대비 KRW 환율"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "자동화",
+    "구조화 출력",
+    "보안",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:json-apis-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

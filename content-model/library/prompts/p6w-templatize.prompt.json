@@ -1,0 +1,43 @@
+{
+  "id": "p6w-templatize",
+  "version": 1,
+  "title": "완성 프롬프트 템플릿화",
+  "summary": "완성 프롬프트 템플릿화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 여러 번 고쳐서 완성한 이 프롬프트를, 다음에 재사용할 수 있도록 바뀔 부분만 [대괄호] 변수로 바꾼 재사용 템플릿으로 정리해주세요.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대괄호",
+      "required": true,
+      "example": "대괄호"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6w-templatize"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

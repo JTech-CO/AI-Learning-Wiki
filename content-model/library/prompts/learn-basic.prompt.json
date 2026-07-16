@@ -1,0 +1,46 @@
+{
+  "id": "learn-basic",
+  "version": 1,
+  "title": "낯선 주제 쉽게 이해하기 (기본형)",
+  "summary": "낯선 주제 쉽게 이해하기 (기본형) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[모르는 주제나 단어]가 뭐야? 초등학생도 이해할 수 있게, 일상 비유를 들어서 5문장 이내로 설명해줘. 그리고 왜 요즘 이게 중요한지도 한 문장 덧붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "모르는 주제나 단어",
+      "required": true,
+      "example": "모르는 주제나 단어"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "교육",
+    "프롬프트 설계",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:learn-basic"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

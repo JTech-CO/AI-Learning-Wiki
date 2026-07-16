@@ -1,0 +1,49 @@
+{
+  "id": "p21-verify",
+  "version": 1,
+  "title": "정리본 최종 검산",
+  "summary": "정리본 최종 검산 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내가 클리닝을 마친 데이터야. 이 규칙([날짜=YYYY-MM-DD, 공백제거, 중복없음, 빈칸=미입력])이 모두 지켜졌는지 검사하고, 아직 남아있는 오염이 있으면 위치와 함께 알려줘. [정리본 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "날짜=YYYY-MM-DD, 공백제거, 중복없음, 빈칸=미입력",
+      "required": true,
+      "example": "날짜=YYYY-MM-DD, 공백제거, 중복없음, 빈칸=미입력"
+    },
+    {
+      "name": "input_2",
+      "description": "정리본 붙여넣기",
+      "required": true,
+      "example": "정리본 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p21-verify"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

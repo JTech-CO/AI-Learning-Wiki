@@ -1,0 +1,47 @@
+{
+  "id": "p12e-abort",
+  "version": 1,
+  "title": "중단·에러 견고화",
+  "summary": "중단·에러 견고화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 내 스트리밍 코드에 AbortController 기반 '중지' 버튼과 에러 처리를 추가해줘. 요구사항: 중지 시 지금까지 받은 텍스트는 화면에 유지, 네트워크 에러 시 사용자에게 '연결이 끊겼어요' 메시지 표시하되 누적 full은 보존, 재시도 버튼 제공. 내 코드: [코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코드",
+      "required": true,
+      "example": "코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "API",
+    "프롬프트 설계",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "server-sent-events"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12e-abort"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

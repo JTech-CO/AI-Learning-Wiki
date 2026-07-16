@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const prompts = JSON.parse(await readFile('public/data/prompts.json', 'utf8'));
 const snippets = JSON.parse(await readFile('public/data/snippets.json', 'utf8'));
-const progress = JSON.parse(await readFile('content-model/progress.json', 'utf8'));
+const migration = JSON.parse(await readFile('content-model/migration/w40-library-migration.json', 'utf8'));
 const wiki = JSON.parse(await readFile('public/data/wiki-index.json', 'utf8'));
 const ledger = JSON.parse(await readFile('content-model/taxonomy/topic-ledger.json', 'utf8'));
 const expectedArticleCount = ledger.topics.filter((topic) => topic.state === 'existing').length;
@@ -17,10 +17,11 @@ const withBase = (url) => url.startsWith('/') ? `${basePath}${url}` : url;
 
 expect(prompts.prompts.length === 1142, 'prompt count: ' + prompts.prompts.length);
 expect(snippets.snippets.length === 25, 'snippet count: ' + snippets.snippets.length);
-expect(progress.totals?.complete === 305, 'source extraction coverage: ' + progress.totals?.complete);
+expect(migration.counts.prompts === 1142 && migration.counts.artifacts === 25, 'canonical migration counts changed');
+expect(prompts.counts.sourceModules === 0, 'legacy module source remains active');
 expect(wiki.articles.length === expectedArticleCount, 'wiki articles: expected ' + expectedArticleCount + ', found ' + wiki.articles.length);
 expect(wiki.courses.length === 8, 'wiki courses: ' + wiki.courses.length);
-expect(prompts.prompts.every((item) => item.template && Array.isArray(item.examples)), 'prompt schema is incomplete');
+expect(prompts.prompts.every((item) => item.template && item.notes && item.kind && Array.isArray(item.examples)), 'prompt schema is incomplete');
 expect(prompts.prompts.every((item) => !('sourceUrl' in item) && !('sourceCourse' in item) && !('moduleId' in item) && !('moduleTitle' in item)), 'legacy lesson provenance remains public');
 expect(prompts.prompts.every((item) => !(item.tags ?? []).some((tag) => /eduverse/i.test(tag))), 'source-specific prompt tag remains');
 expect(prompts.prompts.every((item) => item.courseUrl === '/course/' + item.course + '/'), 'prompt course URL mismatch');

@@ -1,0 +1,46 @@
+{
+  "id": "p8e-example",
+  "version": 1,
+  "title": ".env.example 자동 생성",
+  "summary": ".env.example 자동 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 내 .env 파일 내용을 보고 값은 모두 비운 안전한 .env.example 파일을 만들어줘. 각 키가 무슨 용도인지 주석도 한 줄씩 달아줘. [.env 내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": ".env 내용",
+      "required": true,
+      "example": ".env 내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "보안",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8e-example"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

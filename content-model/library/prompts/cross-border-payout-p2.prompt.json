@@ -1,0 +1,51 @@
+{
+  "id": "cross-border-payout-p2",
+  "version": 1,
+  "title": "고객에게 저비용 결제 경로 안내 메일 (영문)",
+  "summary": "고객에게 저비용 결제 경로 안내 메일 (영문) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "해외 고객에게 보낼 짧고 공손한 영문 결제 안내 메일을 써줘. 핵심: 앞으로 대금은 [Wise USD 계좌]로 보내달라, 그러면 수수료가 낮아 서로 이득이다, 계좌 정보는 [계좌번호/라우팅] 이다. 3문장 이내, 프리랜서 톤.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Wise USD 계좌",
+      "required": true,
+      "example": "Wise USD 계좌"
+    },
+    {
+      "name": "input_2",
+      "description": "계좌번호/라우팅",
+      "required": true,
+      "example": "계좌번호/라우팅"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "의사결정"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cross-border-payout-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

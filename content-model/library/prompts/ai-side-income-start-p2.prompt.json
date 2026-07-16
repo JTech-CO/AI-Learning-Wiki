@@ -1,0 +1,47 @@
+{
+  "id": "ai-side-income-start-p2",
+  "version": 1,
+  "title": "첫 주 실행 계획 쪼개기",
+  "summary": "첫 주 실행 계획 쪼개기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [고른 아이템 한 줄: 예—신입 직장인용 비즈니스 이메일 템플릿 30종 PDF]를 만들어 팔려고 해. 이번 주 안에(7일) 끝낼 수 있는 가장 작은 첫 행동 1개만 정하고 싶어. 전체 과정을 5단계 이하로 쪼개고, 그중 '이번 주에 할 첫 1단계'를 명확히 짚어줘. 각 단계는 한 줄, 초보가 막히지 않게 구체적으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고른 아이템 한 줄: 예—신입 직장인용 비즈니스 이메일 템플릿 30종 PDF",
+      "required": true,
+      "example": "고른 아이템 한 줄: 예—신입 직장인용 비즈니스 이메일 템플릿 30종 PDF"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "계획",
+    "문서 분석",
+    "콘텐츠",
+    "재무·금융",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-side-income-start-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

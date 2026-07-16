@@ -1,0 +1,59 @@
+{
+  "id": "prompt-pipelines-p3",
+  "version": 1,
+  "title": "이어붙이는 파이썬 코드 생성",
+  "summary": "이어붙이는 파이썬 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 두 프롬프트를 잇는 파이썬 함수를 짜줘. 요구사항: (1)1단계 응답을 json.loads로 파싱 (2)파싱 실패 시 최대 2회 재시도 (3)필수 키 [키 목록] 검증, 없으면 예외 (4)검증 통과한 1단계 출력의 [필드]를 2단계 프롬프트 입력으로 전달. 주석은 한국어로.\n1단계 프롬프트: [붙여넣기]\n2단계 프롬프트: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "키 목록",
+      "required": true,
+      "example": "키 목록"
+    },
+    {
+      "name": "input_2",
+      "description": "필드",
+      "required": true,
+      "example": "필드"
+    },
+    {
+      "name": "input_3",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "번역",
+    "코딩",
+    "자동화",
+    "프롬프트 설계",
+    "구조화 출력",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-pipelines-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

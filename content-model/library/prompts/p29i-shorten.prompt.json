@@ -1,0 +1,52 @@
+{
+  "id": "p29i-shorten",
+  "version": 1,
+  "title": "너무 긴 초안 줄이기",
+  "summary": "너무 긴 초안 줄이기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 글이 너무 길어. 핵심 메시지와 마감·문의처는 유지하면서 분량을 절반으로 줄여줘. 중복 문장과 뻔한 인사말을 먼저 지우고, 읽는 사람이 30초 안에 다 읽을 수 있게 해줘. [원문] [초안 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "원문",
+      "required": true,
+      "example": "원문"
+    },
+    {
+      "name": "input_2",
+      "description": "초안 붙여넣기",
+      "required": true,
+      "example": "초안 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "문서 분석",
+    "프롬프트 설계",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29i-shorten"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

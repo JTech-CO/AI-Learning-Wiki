@@ -1,0 +1,58 @@
+{
+  "id": "p17b-debug",
+  "version": 1,
+  "title": "내 JOIN 쿼리 디버깅",
+  "summary": "내 JOIN 쿼리 디버깅 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 JOIN 쿼리를 실행했더니 [문제: 행이 너무 많이 나옴 / 원하는 고객이 안 나옴 / NULL이 이상함]이 발생해. 원인이 뭔지, 어떻게 고치면 되는지 알려줘.\n쿼리: [내 SQL]\n각 테이블 스키마: [스키마]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문제: 행이 너무 많이 나옴 / 원하는 고객이 안 나옴 / NULL이 이상함",
+      "required": true,
+      "example": "문제: 행이 너무 많이 나옴 / 원하는 고객이 안 나옴 / NULL이 이상함"
+    },
+    {
+      "name": "input_2",
+      "description": "내 SQL",
+      "required": true,
+      "example": "내 SQL"
+    },
+    {
+      "name": "input_3",
+      "description": "스키마",
+      "required": true,
+      "example": "스키마"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "데이터베이스",
+    "구조화 출력",
+    "SQL",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17b-debug"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

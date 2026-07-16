@@ -1,0 +1,50 @@
+{
+  "id": "prompt-product-anatomy-p1",
+  "version": 1,
+  "title": "1 프롬프트 상품화 변환기",
+  "summary": "1 프롬프트 상품화 변환기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 프롬프트 상품 편집자야. 아래 '원본 프롬프트'를 팔리는 프롬프트 상품으로 개조해줘.\n반드시 이 4가지를 적용: (1) 결과물을 구체적으로 명시, (2) 사람마다 바뀔 부분을 [대괄호 변수]로 추출(3~6개, 각 변수 옆 예시값 괄호로), (3) 출력 형식·개수·금지사항 제약 추가, (4) 완성 프롬프트로 만든 예시 출력 1세트.\n출력 순서: A)개조된 프롬프트  B)변수 설명표  C)예시 출력.\n원본 프롬프트: [여기에 내 프롬프트 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대괄호 변수",
+      "required": true,
+      "example": "대괄호 변수"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 내 프롬프트 붙여넣기",
+      "required": true,
+      "example": "여기에 내 프롬프트 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계",
+    "구조화 출력",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-product-anatomy-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

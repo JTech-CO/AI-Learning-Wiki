@@ -1,0 +1,50 @@
+{
+  "id": "p24w-calc-field",
+  "version": 1,
+  "title": "계산 필드 수식 생성",
+  "summary": "계산 필드 수식 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "엑셀 피벗테이블 계산 필드를 만들고 싶어. 원자료 열은 [매출, 원가, 수량]이야. 나는 [이익률, 개당 평균단가, 원가율]을 피벗에서 보고 싶어. 각각 계산 필드에 넣을 정확한 수식과, 결과 셀에 적용할 표시 서식(%, 통화 등)을 알려줘. 계산 필드에서 하면 안 되는 흔한 함정도 하나.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "매출, 원가, 수량",
+      "required": true,
+      "example": "매출, 원가, 수량"
+    },
+    {
+      "name": "input_2",
+      "description": "이익률, 개당 평균단가, 원가율",
+      "required": true,
+      "example": "이익률, 개당 평균단가, 원가율"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "스프레드시트"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24w-calc-field"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

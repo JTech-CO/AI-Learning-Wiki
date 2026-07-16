@@ -1,0 +1,47 @@
+{
+  "id": "monetize-p3",
+  "version": 1,
+  "title": "아이템 아이디어 30개 도출 (뭘 팔지 모를 때)",
+  "summary": "아이템 아이디어 30개 도출 (뭘 팔지 모를 때) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "AI로 만들어 팔 수 있는 '디지털 상품' 아이디어 30개를 추천해줘.\n조건: ①혼자 AI만으로 하루 안에 만들 수 있을 것 ②5천~3만원에 팔 만한 것 ③[내 관심사: 예—요리/육아/엑셀] 분야 위주.\n각 아이디어마다 '상품명 / 누가 사는지 / 예상 가격'을 한 줄로 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 관심사: 예—요리/육아/엑셀",
+      "required": true,
+      "example": "내 관심사: 예—요리/육아/엑셀"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "아이디어",
+    "교육",
+    "스프레드시트",
+    "자동화",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:monetize-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

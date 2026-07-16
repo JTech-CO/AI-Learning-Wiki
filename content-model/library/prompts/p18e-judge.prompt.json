@@ -1,0 +1,59 @@
+{
+  "id": "p18e-judge",
+  "version": 1,
+  "title": "A/B 심판 (기준 명시형)",
+  "summary": "A/B 심판 (기준 명시형) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "같은 입력에 대해 두 프롬프트 버전의 출력이야. 입력: [입력] / A(원본) 출력: [A출력] / B(수정본) 출력: [B출력]. 다음 기준으로만 채점해줘: 1) 길이 2문장 이내 2) 핵심 숫자 포함 3) 정중한 뉴스체. 각 기준별로 A/B 중 승자와 이유를 표로 주고 종합 승자를 골라줘. 감상 말고 기준 근거만.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "입력",
+      "required": true,
+      "example": "입력"
+    },
+    {
+      "name": "input_2",
+      "description": "A출력",
+      "required": true,
+      "example": "A출력"
+    },
+    {
+      "name": "input_3",
+      "description": "B출력",
+      "required": true,
+      "example": "B출력"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "코딩",
+    "디버깅",
+    "테스트"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p18e-judge"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "p27i-tone",
+  "version": 1,
+  "title": "톤 바꿔서 다시",
+  "summary": "톤 바꿔서 다시 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 문장을 [정중한 이메일 / 친근한 카톡 / 공식 보고서] 말투로 바꿔줘. 길이는 [더 짧게 / 지금 정도로] 하고, 뜻은 바꾸지 마.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "정중한 이메일 / 친근한 카톡 / 공식 보고서",
+      "required": true,
+      "example": "정중한 이메일 / 친근한 카톡 / 공식 보고서"
+    },
+    {
+      "name": "input_2",
+      "description": "더 짧게 / 지금 정도로",
+      "required": true,
+      "example": "더 짧게 / 지금 정도로"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "문서 분석",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27i-tone"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

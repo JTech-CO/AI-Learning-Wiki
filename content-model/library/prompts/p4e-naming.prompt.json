@@ -1,0 +1,42 @@
+{
+  "id": "p4e-naming",
+  "version": 1,
+  "title": "함수 이름·인자 점검",
+  "summary": "함수 이름·인자 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 함수들의 이름과 인자를 검토해줘. 이름만 보고 무슨 일을 하는지 알 수 있는지, 기본값을 줄 만한 인자가 있는지, 키워드 인자로 바꾸면 좋을 곳이 있는지 지적하고 개선안을 표로. [함수들]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "함수들",
+      "required": true,
+      "example": "함수들"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "코딩"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p4e-naming"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "p25w-declutter",
+  "version": 1,
+  "title": "색·군더더기 정리 조언",
+  "summary": "색·군더더기 정리 조언 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 차트에는 계열이 [N]개 있고 그중 [강조할 계열]을 돋보이게 하고 싶어. 색 배치(강조색/회색), 지워도 되는 요소(격자선·범례·데이터라벨) 관점에서 '오해 없이 깔끔하게' 만드는 구체적 정리 지침을 체크리스트로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "강조할 계열",
+      "required": true,
+      "example": "강조할 계열"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "시각화",
+    "영업",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25w-declutter"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

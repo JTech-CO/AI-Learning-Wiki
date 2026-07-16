@@ -1,0 +1,46 @@
+{
+  "id": "ai-guards-p4",
+  "version": 1,
+  "title": "자동화 리스크 사전 점검표",
+  "summary": "자동화 리스크 사전 점검표 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 LLM 자동화를 켜기 전에 점검할 리스크 체크리스트를 만들어줘. 자동화 설명: [설명]. 비용 폭주, 품질 저하, 환각 세 축으로 나누고, 각 항목마다 '어떻게 터지나 / 어떤 가드로 막나 / 어떻게 검증하나'를 표로 정리해줘. 우선순위(손해 큰 순)도 매겨줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "설명",
+      "required": true,
+      "example": "설명"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "자동화",
+    "검증",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-guards-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

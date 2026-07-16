@@ -1,0 +1,47 @@
+{
+  "id": "p39w-verify",
+  "version": 1,
+  "title": "검증/사실확인 요청",
+  "summary": "검증/사실확인 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 만든 리포트에서 아래 수치들의 출처를 다시 확인하고, 원문과 다르면 바로잡아줘. 출처를 못 찾으면 '출처 불명'이라고 솔직히 말해줘.\n확인할 수치: [① ____ ② ____ ③ ____]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "① ____ ② ____ ③ ____",
+      "required": true,
+      "example": "① ____ ② ____ ③ ____"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "의사결정",
+    "문서 분석",
+    "AI 에이전트",
+    "검색"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39w-verify"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

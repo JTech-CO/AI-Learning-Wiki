@@ -1,0 +1,59 @@
+{
+  "id": "p29b-interpret",
+  "version": 1,
+  "title": "충돌 블록 해석 요청",
+  "summary": "충돌 블록 해석 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음은 git merge conflict 블록이야. HEAD 쪽과 [브랜치이름] 쪽이 각각 무엇을 어떻게 바꿨는지 한국어로 설명하고, [이 코드의 목적: 로그인 검증] 관점에서 어느 쪽을 남기거나 어떻게 합치면 좋을지 추천해줘. 최종 결정은 내가 할 거야. [<<<<<<< 부터 >>>>>>> 까지 통째로]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "브랜치이름",
+      "required": true,
+      "example": "브랜치이름"
+    },
+    {
+      "name": "input_2",
+      "description": "이 코드의 목적: 로그인 검증",
+      "required": true,
+      "example": "이 코드의 목적: 로그인 검증"
+    },
+    {
+      "name": "input_3",
+      "description": "<<<<<<< 부터 >>>>>>> 까지 통째로",
+      "required": true,
+      "example": "<<<<<<< 부터 >>>>>>> 까지 통째로"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "번역",
+    "코딩",
+    "디버깅",
+    "검증",
+    "협업",
+    "모니터링"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29b-interpret"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

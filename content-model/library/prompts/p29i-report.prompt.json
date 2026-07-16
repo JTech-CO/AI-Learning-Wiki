@@ -1,0 +1,57 @@
+{
+  "id": "p29i-report",
+  "version": 1,
+  "title": "보고서 톤으로 바꾸기",
+  "summary": "보고서 톤으로 바꾸기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 공지문을 상사 보고용 '간단 보고서' 톤으로 다시 써줘. 구조는 '1. 배경 / 2. 진행 현황 / 3. 이슈 및 요청사항' 3단으로. 감정 표현 빼고 사실 중심, 개조식(짧은 문장) 위주로. 없는 수치는 [확인필요]로 표시해줘. [원문] [초안 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "확인필요",
+      "required": true,
+      "example": "확인필요"
+    },
+    {
+      "name": "input_2",
+      "description": "원문",
+      "required": true,
+      "example": "원문"
+    },
+    {
+      "name": "input_3",
+      "description": "초안 붙여넣기",
+      "required": true,
+      "example": "초안 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29i-report"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

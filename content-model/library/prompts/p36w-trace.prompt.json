@@ -1,0 +1,47 @@
+{
+  "id": "p36w-trace",
+  "version": 1,
+  "title": "원본 출처 역추적",
+  "summary": "원본 출처 역추적 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 자료는 '[숫자 또는 주장]'을 인용하고 있어. 이 수치의 원래 1차 출처(원자료·원문·원논문)가 어디일 가능성이 높은지 추정하고, 어떤 기관 사이트에서 어떤 검색어로 찾으면 되는지 단계별로. 원문 확인 전에는 사실로 단정하지 말라고 나에게 경고도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "숫자 또는 주장",
+      "required": true,
+      "example": "숫자 또는 주장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "검색",
+    "평가",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36w-trace"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

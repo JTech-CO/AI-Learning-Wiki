@@ -1,0 +1,53 @@
+{
+  "id": "p23b-gen",
+  "version": 1,
+  "title": "테이블 스키마 → RLS 정책 4종 생성",
+  "summary": "테이블 스키마 → RLS 정책 4종 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 Supabase 보안 전문가야. 아래 테이블에 대해 로그인한 사용자가 '자기 데이터만' 읽고/쓰게 하는 RLS 정책을 SELECT, INSERT, UPDATE, DELETE 4개로 만들어줘. authenticated 롤 대상이고, 소유권 컬럼은 [user_id]야. enable row level security 문장도 포함하고, 각 정책 위에 한국어 주석을 달아줘. 테이블 정의: [CREATE TABLE 문 또는 컬럼 목록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "user_id",
+      "required": true,
+      "example": "user_id"
+    },
+    {
+      "name": "input_2",
+      "description": "CREATE TABLE 문 또는 컬럼 목록",
+      "required": true,
+      "example": "CREATE TABLE 문 또는 컬럼 목록"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "데이터베이스",
+    "구조화 출력",
+    "개인정보",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23b-gen"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

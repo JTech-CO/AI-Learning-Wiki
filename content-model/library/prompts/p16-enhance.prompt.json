@@ -1,0 +1,71 @@
+{
+  "id": "p16-enhance",
+  "version": 1,
+  "title": "system 프롬프트 초안 강화받기",
+  "summary": "system 프롬프트 초안 강화받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 프롬프트 엔지니어링 코치야. 아래는 내가 만든 챗봇의 system 프롬프트 초안이야. 다음을 해줘: 1) 애매하거나 관찰 불가능한 표현을 찾아 관찰 가능한 행동 문장으로 고쳐줘. 2) 빠진 거부 경계(예: 의료·법률·범위 밖 질문)를 지적해줘. 3) 개선된 최종 버전을 한국어로 다시 써줘.\n\n[내 초안]\n페르소나: [역할]\n규칙: [반드시/절대]\n톤: [말투]\n거부 경계: [거부할 요청과 처리법]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 초안",
+      "required": true,
+      "example": "내 초안"
+    },
+    {
+      "name": "input_2",
+      "description": "역할",
+      "required": true,
+      "example": "역할"
+    },
+    {
+      "name": "input_3",
+      "description": "반드시/절대",
+      "required": true,
+      "example": "반드시/절대"
+    },
+    {
+      "name": "input_4",
+      "description": "말투",
+      "required": true,
+      "example": "말투"
+    },
+    {
+      "name": "input_5",
+      "description": "거부할 요청과 처리법",
+      "required": true,
+      "example": "거부할 요청과 처리법"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "테스트",
+    "프롬프트 설계",
+    "검증",
+    "법무"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16-enhance"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

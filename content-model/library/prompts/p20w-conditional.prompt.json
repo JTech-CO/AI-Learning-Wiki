@@ -1,0 +1,65 @@
+{
+  "id": "p20w-conditional",
+  "version": 1,
+  "title": "조건부 합계·개수·판정",
+  "summary": "조건부 합계·개수·판정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "조건이 있는 엑셀 계산 수식을 만들어줘.\n- 표 구조: [C열=부서, D열=급여, 2~101행]\n- 조건: [부서가 '영업팀'인 행만]\n- 원하는 결과: [합계 / 개수 / 조건 충족 O·X]\n- 결과 셀: [K2]\nSUMIF·COUNTIF·IF 중 맞는 걸 골라 완성 수식 하나로, 조건을 바꾸려면 어디를 고치는지도 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "C열=부서, D열=급여, 2~101행",
+      "required": true,
+      "example": "C열=부서, D열=급여, 2~101행"
+    },
+    {
+      "name": "input_2",
+      "description": "부서가 '영업팀'인 행만",
+      "required": true,
+      "example": "부서가 '영업팀'인 행만"
+    },
+    {
+      "name": "input_3",
+      "description": "합계 / 개수 / 조건 충족 O·X",
+      "required": true,
+      "example": "합계 / 개수 / 조건 충족 O·X"
+    },
+    {
+      "name": "input_4",
+      "description": "K2",
+      "required": true,
+      "example": "K2"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "스프레드시트",
+    "디버깅",
+    "영업",
+    "검증",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20w-conditional"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

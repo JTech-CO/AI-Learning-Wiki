@@ -1,0 +1,37 @@
+{
+  "id": "p32b-ssl-concept",
+  "version": 1,
+  "title": "HTTPS/SSL 개념 설명",
+  "summary": "HTTPS/SSL 개념 설명 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 앱 주소가 http에서 https로 바뀌면 자물쇠가 생기는데, SSL 인증서와 Let's Encrypt가 정확히 무슨 역할을 하는지 비전공자에게 비유로 3문장 안에 설명해줘. 그리고 Vercel에서 자동으로 처리되는 부분과 내가 직접 해야 하는 부분을 구분해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "보안",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "https"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32b-ssl-concept"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

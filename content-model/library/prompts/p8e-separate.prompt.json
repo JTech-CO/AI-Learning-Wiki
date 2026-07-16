@@ -1,0 +1,53 @@
+{
+  "id": "p8e-separate",
+  "version": 1,
+  "title": "내 프로젝트 키 분리 점검",
+  "summary": "내 프로젝트 키 분리 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [Python / Node.js] 프로젝트에서 [OpenAI] API 키를 쓰고 있어. 지금 코드에 키가 하드코딩돼 있는데 이걸 .env 파일 + 환경변수로 안전하게 분리하고 싶어. (1) .env 파일 예시 (2) .gitignore에 추가할 내용 (3) 코드에서 환경변수로 불러오는 최소 코드 (4) 확인 방법을 순서대로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Python / Node.js",
+      "required": true,
+      "example": "Python / Node.js"
+    },
+    {
+      "name": "input_2",
+      "description": "OpenAI",
+      "required": true,
+      "example": "OpenAI"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "검증",
+    "보안",
+    "안전",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8e-separate"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

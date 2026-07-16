@@ -1,0 +1,56 @@
+{
+  "id": "p29-compress",
+  "version": 1,
+  "title": "슬라이드 문구를 보는 문구로 압축",
+  "summary": "슬라이드 문구를 보는 문구로 압축 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음은 내 발표 슬라이드의 문장들이야. 각 문장을 슬라이드에 어울리는 '보는 문구'로 바꿔줘. 규칙: (1)슬라이드 제목은 결론형 한 줄 (2)불릿은 6단어 이내 명사·동사 위주 (3)청중은 [대상], 목적은 [설득/보고/교육 중 택1]. 원문: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_2",
+      "description": "설득/보고/교육 중 택1",
+      "required": true,
+      "example": "설득/보고/교육 중 택1"
+    },
+    {
+      "name": "input_3",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "프레젠테이션"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29-compress"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "p40-diagnose-candidate",
+  "version": 1,
+  "title": "이 작업이 자동화 후보인지 진단",
+  "summary": "이 작업이 자동화 후보인지 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 하는 이 업무를 설명할게: [작업 설명, 얼마나 자주, 얼마나 걸리는지]. 이 일이 반복적·규칙적·양이 많은지 각각 판단하고, 자동화하기 좋은 후보인지 0~10점으로. 자동화한다면 어떤 방식(엑셀/AI프롬프트/무료 자동화도구/코딩)이 현실적인지, 예상 구축 난이도(1~5)도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업 설명, 얼마나 자주, 얼마나 걸리는지",
+      "required": true,
+      "example": "작업 설명, 얼마나 자주, 얼마나 걸리는지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "스프레드시트",
+    "자동화",
+    "프롬프트 설계",
+    "생산성"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p40-diagnose-candidate"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

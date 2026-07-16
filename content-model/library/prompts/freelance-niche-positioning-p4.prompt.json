@@ -1,0 +1,42 @@
+{
+  "id": "freelance-niche-positioning-p4",
+  "version": 1,
+  "title": "한 줄 자기소개(프로필용)로 변환",
+  "summary": "한 줄 자기소개(프로필용)로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 포지셔닝 선언문 '[여기 붙여넣기]'를 크몽/인스타 프로필 첫 줄에 쓸 수 있게 30자 이내 한 줄 소개 3개로 바꿔줘. 클릭하고 싶게, 결과 중심으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기 붙여넣기",
+      "required": true,
+      "example": "여기 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:freelance-niche-positioning-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

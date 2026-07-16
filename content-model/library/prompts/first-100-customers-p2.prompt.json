@@ -1,0 +1,45 @@
+{
+  "id": "first-100-customers-p2",
+  "version": 1,
+  "title": "잠재 고객 커뮤니티 후보 목록",
+  "summary": "잠재 고객 커뮤니티 후보 목록 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 타깃 고객은 [고객 한 문장]이고, 한국에서 활동해. 이 고객이 모여 있을 법한 곳을 채널 유형별로 나눠서 제안해줘: (1)네이버 카페 (2)카카오 오픈채팅 검색 키워드 (3)유튜브 채널·영상 주제 (4)인스타/틱톡 해시태그 (5)관련 앱·서비스 후기 게시판. 각 유형마다 내가 직접 검색할 '검색어'와 '어떤 신호(회원수·글빈도)를 보고 활성 여부를 판단할지'를 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고객 한 문장",
+      "required": true,
+      "example": "고객 한 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "영상",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "multimodal-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:first-100-customers-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p30b-choose",
+  "version": 1,
+  "title": "Vercel vs Netlify vs Railway 어디에 올릴지 판단",
+  "summary": "Vercel vs Netlify vs Railway 어디에 올릴지 판단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 만든 건 [무엇인지 한 줄로: AI 챗봇 웹사이트 / HTML만 있는 정적 포트폴리오 / 24시간 도는 텔레그램 봇 / DB가 필요한 가계부 앱]야. Vercel·Netlify·Railway 중 어디에 올리는 게 맞는지 이유와 함께 추천하고, 각 서비스가 진짜 무료인지(개인용 무료냐, Railway처럼 체험 크레딧만이냐)도 알려줘. 추천한 서비스의 배포 순서를 1~5단계로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무엇인지 한 줄로: AI 챗봇 웹사이트 / HTML만 있는 정적 포트폴리오 / 24시간 도는 텔레그램 봇 / DB가 필요한 가계부 앱",
+      "required": true,
+      "example": "무엇인지 한 줄로: AI 챗봇 웹사이트 / HTML만 있는 정적 포트폴리오 / 24시간 도는 텔레그램 봇 / DB가 필요한 가계부 앱"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "데이터베이스",
+    "출처·인용",
+    "웹 개발",
+    "비즈니스",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p30b-choose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

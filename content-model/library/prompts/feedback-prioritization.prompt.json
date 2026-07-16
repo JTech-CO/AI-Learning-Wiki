@@ -1,0 +1,53 @@
+{
+  "id": "feedback-prioritization",
+  "version": 1,
+  "title": "피드백 개선 우선순위 산정",
+  "summary": "피드백 개선 우선순위 산정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 피드백 후보의 우선순위를 정해줘. 사용자 영향, 발생 빈도, 안전·법적 위험, 구현 노력, 되돌리기 가능성을 각각 1~5점으로 평가하고 근거를 한 줄씩 써. 정보가 없으면 추정값 대신 '자료 필요'로 표시해. 후보: [피드백 목록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "피드백 목록",
+      "required": true,
+      "example": "피드백 목록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "AI 점수는 의사결정 보조값이다. 실제 사용량과 장애·민원 기록으로 다시 보정한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "후보: 검색 지연, 작은 글자, 내보내기 버튼 추가. 다섯 기준으로 우선순위를 표로 정리해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "프로젝트 관리",
+    "평가",
+    "고객 지원",
+    "코딩",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "user-feedback-collection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

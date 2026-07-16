@@ -1,0 +1,50 @@
+{
+  "id": "p39i-swap",
+  "version": 1,
+  "title": "한 요소만 바꿀 후보 도출",
+  "summary": "한 요소만 바꿀 후보 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "지금 이 이미지 프롬프트를 쓰고 있어: [현재 영어 프롬프트]. 결과에서 [불만인 점, 예: 구도가 밋밋함]이 마음에 안 들어. 이 요소 하나만 바꿀 수 있는 대체 단어 5개를 제안해줘. 나머지는 그대로 둘 거야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "현재 영어 프롬프트",
+      "required": true,
+      "example": "현재 영어 프롬프트"
+    },
+    {
+      "name": "input_2",
+      "description": "불만인 점, 예: 구도가 밋밋함",
+      "required": true,
+      "example": "불만인 점, 예: 구도가 밋밋함"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39i-swap"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

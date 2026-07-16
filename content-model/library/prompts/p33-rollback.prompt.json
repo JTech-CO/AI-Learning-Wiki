@@ -1,0 +1,47 @@
+{
+  "id": "p33-rollback",
+  "version": 1,
+  "title": "롤백 방법 물어보기",
+  "summary": "롤백 방법 물어보기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [Vercel/Netlify/Railway/GitHub Pages]로 배포했어. 방금 배포한 버전에 문제가 생겨서 이전 버전으로 되돌리고 싶어. 화면 어디를 클릭하면 되는지 초보도 따라할 수 있게 단계별로, 클릭할 버튼 이름까지 정확히.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Vercel/Netlify/Railway/GitHub Pages",
+      "required": true,
+      "example": "Vercel/Netlify/Railway/GitHub Pages"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "디버깅",
+    "검증",
+    "데이터 엔지니어링",
+    "배포",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33-rollback"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

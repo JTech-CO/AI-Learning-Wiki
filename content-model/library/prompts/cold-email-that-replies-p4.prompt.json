@@ -1,0 +1,44 @@
+{
+  "id": "cold-email-that-replies-p4",
+  "version": 1,
+  "title": "스팸 냄새 감별 및 수정",
+  "summary": "스팸 냄새 감별 및 수정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 콜드 이메일을 '수신자 입장'에서 읽고, 스팸·자동발송처럼 느껴지는 문장이나 단어를 3개 찾아 왜 그런지 설명하고, 더 사람 냄새 나고 진정성 있게 고친 버전을 제안해줘. 검증 불가능하거나 지어낸 듯한 트리거가 있으면 반드시 지적해줘.\n메일: [확장한 메일 1통 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "확장한 메일 1통 붙여넣기",
+      "required": true,
+      "example": "확장한 메일 1통 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cold-email-that-replies-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

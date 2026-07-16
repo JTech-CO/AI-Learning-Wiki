@@ -1,0 +1,50 @@
+{
+  "id": "validate-saas-idea-p3",
+  "version": 1,
+  "title": "고객 인터뷰 질문 생성",
+  "summary": "고객 인터뷰 질문 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[타겟 고객] 5명에게 [문제]의 실재 여부를 검증하려고 인터뷰할 거야. 내 아이디어를 언급하지 않고 '과거 행동'만 캐묻는 인터뷰 질문 7개를 만들어줘. 마지막 실제 사건·해결 방법·지불 여부를 끌어내는 질문 위주로. 유도질문·예의상 긍정을 부르는 질문은 빼줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "타겟 고객",
+      "required": true,
+      "example": "타겟 고객"
+    },
+    {
+      "name": "input_2",
+      "description": "문제",
+      "required": true,
+      "example": "문제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "아이디어",
+    "검증",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:validate-saas-idea-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

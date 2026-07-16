@@ -1,0 +1,52 @@
+{
+  "id": "webhooks-triggers-p2",
+  "version": 1,
+  "title": "2 webhook.site 페이로드를 슬랙/디스코드 형식으로 변환",
+  "summary": "2 webhook.site 페이로드를 슬랙/디스코드 형식으로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내 웹훅에 도착한 실제 JSON 페이로드야. 이걸 [디스코드 또는 슬랙] 웹훅이 받아들이는 메시지 형식으로 바꾸는 Apps Script payload 코드 한 조각을 만들어줘. 사람이 읽기 좋은 한 줄 요약으로. 도착한 JSON: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "디스코드 또는 슬랙",
+      "required": true,
+      "example": "디스코드 또는 슬랙"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "코딩",
+    "자동화",
+    "구조화 출력",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "webhook"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:webhooks-triggers-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

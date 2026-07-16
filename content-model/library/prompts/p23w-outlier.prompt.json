@@ -1,0 +1,46 @@
+{
+  "id": "p23w-outlier",
+  "version": 1,
+  "title": "이상치·급변 찾기",
+  "summary": "이상치·급변 찾기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "이 데이터에서 전[월] 대비 가장 크게 [오른/내린] 항목 3개와, 평균에서 크게 벗어난 이상치를. 각 항목을 한 줄로 쉽게 설명하고, 왜 주목해야 하는지 덧붙여.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "오른/내린",
+      "required": true,
+      "example": "오른/내린"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트",
+    "시각화",
+    "코딩",
+    "협업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23w-outlier"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

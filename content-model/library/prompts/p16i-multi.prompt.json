@@ -1,0 +1,72 @@
+{
+  "id": "p16i-multi",
+  "version": 1,
+  "title": "예시 2~3개로 정확도 올리기",
+  "summary": "예시 2~3개로 정확도 올리기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 예시들의 형식·길이·말투를 정확히 똑같이 따라 해줘. 설명은 하지 말고 결과만 줘.\n예시1 입력: [상황A] 예시1 출력: [원하는 결과A]\n예시2 입력: [상황B] 예시2 출력: [원하는 결과B]\n새 입력: [실제 내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상황A",
+      "required": true,
+      "example": "상황A"
+    },
+    {
+      "name": "input_2",
+      "description": "원하는 결과A",
+      "required": true,
+      "example": "원하는 결과A"
+    },
+    {
+      "name": "input_3",
+      "description": "상황B",
+      "required": true,
+      "example": "상황B"
+    },
+    {
+      "name": "input_4",
+      "description": "원하는 결과B",
+      "required": true,
+      "example": "원하는 결과B"
+    },
+    {
+      "name": "input_5",
+      "description": "실제 내용",
+      "required": true,
+      "example": "실제 내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래 예시들의 형식·길이·말투를 정확히 똑같이 따라 해줘. 설명은 하지 말고 결과만 줘.\n예시1 입력: 실제 값 예시1 출력: 실제 값\n예시2 입력: 실제 값 예시2 출력: 실제 값\n새 입력: 회의록 원문",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16i-multi"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

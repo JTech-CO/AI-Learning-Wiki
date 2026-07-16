@@ -1,0 +1,82 @@
+{
+  "id": "p2w-writing",
+  "version": 1,
+  "title": "글쓰기용(안내문·편지·공지)",
+  "summary": "글쓰기용(안내문·편지·공지) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 [역할]야. [대상]이 읽을 [무엇: 안내문/편지/공지]을 써줘. [몇] 문장 이내, [말투: 친근한/정중한]으로. [넣을 핵심내용]은 포함하고 [빼고 싶은 것]은 빼줘. 비슷한 느낌 예시: \"[견본 한 줄]\"",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "역할",
+      "required": true,
+      "example": "역할"
+    },
+    {
+      "name": "input_2",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_3",
+      "description": "무엇: 안내문/편지/공지",
+      "required": true,
+      "example": "무엇: 안내문/편지/공지"
+    },
+    {
+      "name": "input_4",
+      "description": "말투: 친근한/정중한",
+      "required": true,
+      "example": "말투: 친근한/정중한"
+    },
+    {
+      "name": "input_5",
+      "description": "넣을 핵심내용",
+      "required": true,
+      "example": "넣을 핵심내용"
+    },
+    {
+      "name": "input_6",
+      "description": "빼고 싶은 것",
+      "required": true,
+      "example": "빼고 싶은 것"
+    },
+    {
+      "name": "input_7",
+      "description": "견본 한 줄",
+      "required": true,
+      "example": "견본 한 줄"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2w-writing"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

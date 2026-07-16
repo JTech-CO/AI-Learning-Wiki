@@ -1,0 +1,51 @@
+{
+  "id": "digital-product-delivery-p3",
+  "version": 1,
+  "title": "업데이트 공지 메일",
+  "summary": "업데이트 공지 메일 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 디지털 상품을 이미 구매한 고객에게 보낼 '업데이트 안내' 이메일을 한국어로 따뜻하게 써줘. 같은 다운로드 링크에서 최신 버전을 다시 받을 수 있다는 안내를 포함하고, 5문장 이내로. 상품: [상품명], 이번 업데이트 내용: [무엇이 바뀌었는지]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상품명",
+      "required": true,
+      "example": "상품명"
+    },
+    {
+      "name": "input_2",
+      "description": "무엇이 바뀌었는지",
+      "required": true,
+      "example": "무엇이 바뀌었는지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "번역",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:digital-product-delivery-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

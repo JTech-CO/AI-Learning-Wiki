@@ -1,0 +1,47 @@
+{
+  "id": "security-defense-p4",
+  "version": 1,
+  "title": "팀 공유용 AI 사용 보안 규칙 생성",
+  "summary": "팀 공유용 AI 사용 보안 규칙 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "우리 팀이 [업종/업무: 예 통신 영업 CRM]에서 ChatGPT를 안전하게 쓰기 위한 규칙을 만들어줘. 절대 넣지 말 정보 목록, 마스킹 방법, 인젝션 방어 문구, '방어는 100%가 아니므로 발송 전 사람이 확인'한다는 원칙, 발송 전 점검 항목을 포함해 A4 한 장 분량으로 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "업종/업무: 예 통신 영업 CRM",
+      "required": true,
+      "example": "업종/업무: 예 통신 영업 CRM"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계",
+    "영업",
+    "생산성",
+    "검증",
+    "개인정보",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:security-defense-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

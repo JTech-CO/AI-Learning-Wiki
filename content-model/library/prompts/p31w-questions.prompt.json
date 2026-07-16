@@ -1,0 +1,46 @@
+{
+  "id": "p31w-questions",
+  "version": 1,
+  "title": "예상질문 15개 (우호·중립·적대)",
+  "summary": "예상질문 15개 (우호·중립·적대) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 발표 내용에 대해 청중이 던질 예상질문 15개를. 유형을 3가지로: (A)우호적 3개 (B)중립적 확인 5개 (C)적대적·반박형 7개. 특히 (C)는 이 발표의 약점 — 비용 근거, 수치의 출처, 실행 리스크, 반대 논거 — 를 날카롭게 파고드는 질문으로. 실제 회의에서 나올 법한 현실적인 표현으로. 발표 내용: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "프레젠테이션",
+    "검증",
+    "출처·인용",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p31w-questions"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

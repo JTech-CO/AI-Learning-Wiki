@@ -1,0 +1,44 @@
+{
+  "id": "p42i-standard",
+  "version": 1,
+  "title": "무료·유료 품질 비교용 표준 질문",
+  "summary": "무료·유료 품질 비교용 표준 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 질문에 대해 초보자도 이해하도록 구체적인 예시 1개를 포함해 5문장 이내로 답해줘: [내가 실제로 자주 묻는 질문 하나]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내가 실제로 자주 묻는 질문 하나",
+      "required": true,
+      "example": "내가 실제로 자주 묻는 질문 하나"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "데이터 분석"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42i-standard"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

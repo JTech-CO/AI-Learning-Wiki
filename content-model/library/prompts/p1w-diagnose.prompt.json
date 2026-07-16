@@ -1,0 +1,43 @@
+{
+  "id": "p1w-diagnose",
+  "version": 1,
+  "title": "나쁜 프롬프트 진단기",
+  "summary": "나쁜 프롬프트 진단기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 프롬프트를 역할·맥락·지시·출력형식 네 요소로 분해해줘. 각 요소가 '채워짐/비어있음'인지 표로 표시하고, 비어 있는 요소를 채우기 위해 나에게 물어봐야 할 질문 3개를 제안해줘. 프롬프트: \"[내 프롬프트]\"",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 프롬프트",
+      "required": true,
+      "example": "내 프롬프트"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p1w-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

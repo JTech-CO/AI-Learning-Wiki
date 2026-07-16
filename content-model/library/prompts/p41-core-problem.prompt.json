@@ -1,0 +1,69 @@
+{
+  "id": "p41-core-problem",
+  "version": 1,
+  "title": "핵심 문제 1개로 압축하기",
+  "summary": "핵심 문제 1개로 압축하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [아이디어 한 줄]을 만들려는 초보 창업가야. 아래 기능 목록에서 '[누가]가 [어떤 상황]에서 겪는 [핵심 불편] 하나'를 푸는 데 반드시 필요한 기능만 최대 3개로 골라줘. 나머지는 '나중 목록'으로 분류하고 왜 지금 빼도 되는지 한 줄씩 붙여줘. 기능 목록: [기능들]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "아이디어 한 줄",
+      "required": true,
+      "example": "아이디어 한 줄"
+    },
+    {
+      "name": "input_2",
+      "description": "누가",
+      "required": true,
+      "example": "누가"
+    },
+    {
+      "name": "input_3",
+      "description": "어떤 상황",
+      "required": true,
+      "example": "어떤 상황"
+    },
+    {
+      "name": "input_4",
+      "description": "핵심 불편",
+      "required": true,
+      "example": "핵심 불편"
+    },
+    {
+      "name": "input_5",
+      "description": "기능들",
+      "required": true,
+      "example": "기능들"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "아이디어",
+    "계획",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p41-core-problem"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

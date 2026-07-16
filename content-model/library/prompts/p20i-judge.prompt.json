@@ -1,0 +1,53 @@
+{
+  "id": "p20i-judge",
+  "version": 1,
+  "title": "검색 결과로 대조 판정",
+  "summary": "검색 결과로 대조 판정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 [보고서 제목]을 구글에 검색했더니 [검색 결과: 안 나옴 / 다른 숫자 / 일치함]. 이 결과를 보면 네가 준 출처와 숫자가 맞는 거야, 아니면 정정이 필요한 거야? 근거와 함께 판정해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "보고서 제목",
+      "required": true,
+      "example": "보고서 제목"
+    },
+    {
+      "name": "input_2",
+      "description": "검색 결과: 안 나옴 / 다른 숫자 / 일치함",
+      "required": true,
+      "example": "검색 결과: 안 나옴 / 다른 숫자 / 일치함"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "검색",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20i-judge"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

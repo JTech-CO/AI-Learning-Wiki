@@ -1,0 +1,46 @@
+{
+  "id": "p-ai-think",
+  "version": 1,
+  "title": "AI가 진짜 생각하는지 확인하기",
+  "summary": "AI가 진짜 생각하는지 확인하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 사람처럼 진짜로 생각하고 기분을 느끼는 거야, 아니면 많은 글을 보고 다음에 올 말을 똑똑하게 맞히는 거야? [초등학생]도 알아듣게 정직하게 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "초등학생",
+      "required": true,
+      "example": "초등학생"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "검증",
+    "모델 학습",
+    "모니터링"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "generative-ai"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p-ai-think"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

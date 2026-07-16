@@ -1,0 +1,49 @@
+{
+  "id": "files-batch-p2",
+  "version": 1,
+  "title": "결과가 이상할 때 고치기",
+  "summary": "결과가 이상할 때 고치기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 준 스크립트를 복사본 폴더에서 실행했더니 결과가 예상과 달라. 아래는 실제로 나온 결과야:\n[여기에 바뀐 파일 이름 목록이나 오류 메시지를 그대로 붙여넣기]\n내가 원한 결과는 [원하는 형태]야. 무엇이 문제인지 쉬운 말로 설명하고, 고친 전체 스크립트를 다시 줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 바뀐 파일 이름 목록이나 오류 메시지를 그대로 붙여넣기",
+      "required": true,
+      "example": "여기에 바뀐 파일 이름 목록이나 오류 메시지를 그대로 붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "원하는 형태",
+      "required": true,
+      "example": "원하는 형태"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "자동화"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:files-batch-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

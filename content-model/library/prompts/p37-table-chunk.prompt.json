@@ -1,0 +1,50 @@
+{
+  "id": "p37-table-chunk",
+  "version": 1,
+  "title": "표·목록 데이터 청킹 처리",
+  "summary": "표·목록 데이터 청킹 처리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 문서에 [표 또는 번호 목록]이 있는데 청킹하면 데이터가 잘려서 검색이 안 돼. 이 [표/목록]을 RAG 검색에 잘 걸리도록 어떻게 청크로 변환하면 좋을지 예시와 함께. 원본: [표/목록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "표 또는 번호 목록",
+      "required": true,
+      "example": "표 또는 번호 목록"
+    },
+    {
+      "name": "input_2",
+      "description": "표/목록",
+      "required": true,
+      "example": "표/목록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37-table-chunk"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

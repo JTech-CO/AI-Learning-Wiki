@@ -1,0 +1,53 @@
+{
+  "id": "ai-guards-p2",
+  "version": 1,
+  "title": "비용 폭주 방지 가드 설계",
+  "summary": "비용 폭주 방지 가드 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 LLM 자동화의 비용 폭주를 막는 하드 가드를 설계해줘. 스택: [Node.js/Python]. 모델: [gpt-4o-mini 등]. 1회 실행에서 허용할 최대 호출 수와 예상 비용 상한을 정하고, 카운터·비용 추정·임계 초과 시 즉시 중단(throw) 코드를 예시로 줘. 무한 루프·과도한 재시도를 막는 지점도 표시해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Node.js/Python",
+      "required": true,
+      "example": "Node.js/Python"
+    },
+    {
+      "name": "input_2",
+      "description": "gpt-4o-mini 등",
+      "required": true,
+      "example": "gpt-4o-mini 등"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "자동화",
+    "검증",
+    "보안",
+    "안전",
+    "Python"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-guards-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

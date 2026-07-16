@@ -1,0 +1,44 @@
+{
+  "id": "skill-audit-inventory-p2",
+  "version": 1,
+  "title": "2 AI 증폭 가능성 판정",
+  "summary": "2 AI 증폭 가능성 판정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 각 항목에 대해 'AI(ChatGPT·Claude 등)를 붙이면 작업 속도나 품질이 크게 오르는가?'를 O/△/X로 판정하고, 이유를 한 줄씩 붙여줘.\n\n항목: [내 O/X 판정하고 싶은 항목들 나열]\n\nO가 붙은 것에는 '어떤 AI 활용법'인지도 한 줄로 알려줘. 한국어로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 O/X 판정하고 싶은 항목들 나열",
+      "required": true,
+      "example": "내 O/X 판정하고 싶은 항목들 나열"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "영업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:skill-audit-inventory-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "one-person-business-p1",
+  "version": 1,
+  "title": "한 줄 사업 모델 정리",
+  "summary": "한 줄 사업 모델 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 사업 아이디어를 '한 줄 사업 모델'로 다듬어줘.\n현재 생각: [신입 직장인용 비즈니스 이메일 템플릿과 간단 코칭을 팔고 싶다]\n'누구의 / 어떤 구체적 문제를 / 얼마에(가격·과금방식) 해결한다' 형식의 한 문장으로 3가지 후보를 제안하고, 각각의 장단점을 한 줄로 비교해줘. 그리고 이 사업에서 봐야 할 핵심 지표 3개(고객 수·객단가·반복구매 등)도 추천해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "신입 직장인용 비즈니스 이메일 템플릿과 간단 코칭을 팔고 싶다",
+      "required": true,
+      "example": "신입 직장인용 비즈니스 이메일 템플릿과 간단 코칭을 팔고 싶다"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "아이디어",
+    "의사결정",
+    "마케팅"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:one-person-business-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

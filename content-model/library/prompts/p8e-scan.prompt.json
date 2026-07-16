@@ -1,0 +1,46 @@
+{
+  "id": "p8e-scan",
+  "version": 1,
+  "title": "내 코드에 키가 노출됐는지 검사",
+  "summary": "내 코드에 키가 노출됐는지 검사 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 코드를 검사해서 API 키·비밀번호·토큰 같은 민감정보가 하드코딩돼 있는지 찾아줘. 있으면 어느 줄인지, 어떻게 환경변수로 바꿔야 하는지 알려줘. [내 코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 코드",
+      "required": true,
+      "example": "내 코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "개인정보",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8e-scan"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

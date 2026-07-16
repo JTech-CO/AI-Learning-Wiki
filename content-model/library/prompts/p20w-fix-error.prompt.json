@@ -1,0 +1,64 @@
+{
+  "id": "p20w-fix-error",
+  "version": 1,
+  "title": "자연어 수식 에러 고치기",
+  "summary": "자연어 수식 에러 고치기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "이 엑셀 수식에서 에러가 나. 원인과 수정된 수식을 알려줘.\n- 내가 쓴 수식: [=VLOOKUP(H2,A2:B101,2,FALSE)]\n- 뜬 에러: [#N/A]\n- 표 구조: [A열=이름, B열=급여, 2~101행]\n- 상황: [찾는 이름은 분명히 표에 있는데도 에러]\n초보도 알기 쉽게 설명하고 바로 쓸 수 있는 고친 수식을 줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "=VLOOKUP(H2,A2:B101,2,FALSE)",
+      "required": true,
+      "example": "=VLOOKUP(H2,A2:B101,2,FALSE)"
+    },
+    {
+      "name": "input_2",
+      "description": "#N/A",
+      "required": true,
+      "example": "#N/A"
+    },
+    {
+      "name": "input_3",
+      "description": "A열=이름, B열=급여, 2~101행",
+      "required": true,
+      "example": "A열=이름, B열=급여, 2~101행"
+    },
+    {
+      "name": "input_4",
+      "description": "찾는 이름은 분명히 표에 있는데도 에러",
+      "required": true,
+      "example": "찾는 이름은 분명히 표에 있는데도 에러"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "스프레드시트",
+    "디버깅",
+    "검증",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20w-fix-error"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

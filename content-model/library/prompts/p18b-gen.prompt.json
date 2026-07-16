@@ -1,0 +1,57 @@
+{
+  "id": "p18b-gen",
+  "version": 1,
+  "title": "내 데이터로 집계 쿼리 생성",
+  "summary": "내 데이터로 집계 쿼리 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 SQLite를 쓰고 있어. 테이블 [테이블명]에는 컬럼이 [컬럼1, 컬럼2, 컬럼3]이 있어. 나는 [원하는 리포트: 카테고리별 월매출 상위 5개]를 만들고 싶어. GROUP BY와 필요하면 HAVING·ORDER BY·LIMIT을 써서 바로 실행 가능한 쿼리 하나만 주고, 각 줄이 무슨 역할인지 한 줄씩 한국어 주석으로 달아줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "테이블명",
+      "required": true,
+      "example": "테이블명"
+    },
+    {
+      "name": "input_2",
+      "description": "컬럼1, 컬럼2, 컬럼3",
+      "required": true,
+      "example": "컬럼1, 컬럼2, 컬럼3"
+    },
+    {
+      "name": "input_3",
+      "description": "원하는 리포트: 카테고리별 월매출 상위 5개",
+      "required": true,
+      "example": "원하는 리포트: 카테고리별 월매출 상위 5개"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "데이터 분석",
+    "스프레드시트",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p18b-gen"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

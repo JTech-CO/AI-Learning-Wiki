@@ -1,0 +1,47 @@
+{
+  "id": "p11w-mail-thread",
+  "version": 1,
+  "title": "긴 메일 스레드 → 핵심 정리",
+  "summary": "긴 메일 스레드 → 핵심 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 길게 이어진 메일 스레드야. ①지금까지 논의의 핵심을 5줄 이내로 ②상대방이 나에게 요청한 것 ③내가 답장에서 꼭 답해야 할 질문 목록. 시간 순서가 헷갈리면 가장 최근 메일 기준.\n---\n[스레드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "스레드 붙여넣기",
+      "required": true,
+      "example": "스레드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "요약",
+    "문서 분석",
+    "검증",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11w-mail-thread"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

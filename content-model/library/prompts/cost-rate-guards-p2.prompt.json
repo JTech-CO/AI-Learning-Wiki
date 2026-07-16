@@ -1,0 +1,52 @@
+{
+  "id": "cost-rate-guards-p2",
+  "version": 1,
+  "title": "최악 비용 시나리오 계산",
+  "summary": "최악 비용 시나리오 계산 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 자동화가 [API명: 예 GPT-4o-mini]를 호출당 약 [단가]에 사용하고, 최악의 경우 초당 [n]회까지 호출될 수 있어. 시간당·하루 방치 시 최대 비용을 계산해주고, 안전한 예산 상한값을 추천해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "API명: 예 GPT-4o-mini",
+      "required": true,
+      "example": "API명: 예 GPT-4o-mini"
+    },
+    {
+      "name": "input_2",
+      "description": "단가",
+      "required": true,
+      "example": "단가"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "API",
+    "자동화",
+    "재무·금융",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cost-rate-guards-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

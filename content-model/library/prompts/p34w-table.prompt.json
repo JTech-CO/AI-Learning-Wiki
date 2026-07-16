@@ -1,0 +1,46 @@
+{
+  "id": "p34w-table",
+  "version": 1,
+  "title": "9개를 비교표로 정리",
+  "summary": "9개를 비교표로 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "위에서 만든 캡션 9개를 표로 정리해줘. 열은 [번호 / 톤 / 캡션 / 어떤 고객에게 잘 먹힐지 / 예상 약점]. 그리고 인스타에서 저장과 공유가 많이 될 것 같은 순서로 위에서부터 정렬해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "번호 / 톤 / 캡션 / 어떤 고객에게 잘 먹힐지 / 예상 약점",
+      "required": true,
+      "example": "번호 / 톤 / 캡션 / 어떤 고객에게 잘 먹힐지 / 예상 약점"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "의사결정",
+    "테스트",
+    "마케팅",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p34w-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

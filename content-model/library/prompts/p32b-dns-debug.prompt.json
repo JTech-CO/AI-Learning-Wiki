@@ -1,0 +1,64 @@
+{
+  "id": "p32b-dns-debug",
+  "version": 1,
+  "title": "DNS 문제 진단",
+  "summary": "DNS 문제 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "도메인 [mycafe.com]을 Vercel에 연결했는데 [30분]이 지나도 접속이 안 되고 Vercel에 [Invalid Configuration]이라고 떠. 내가 넣은 레코드는 [A @ 76.76.21.21]이야. 원인으로 의심되는 것 3가지와 각각 확인·해결 방법을 순서대로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "mycafe.com",
+      "required": true,
+      "example": "mycafe.com"
+    },
+    {
+      "name": "input_2",
+      "description": "30분",
+      "required": true,
+      "example": "30분"
+    },
+    {
+      "name": "input_3",
+      "description": "Invalid Configuration",
+      "required": true,
+      "example": "Invalid Configuration"
+    },
+    {
+      "name": "input_4",
+      "description": "A @ 76.76.21.21",
+      "required": true,
+      "example": "A @ 76.76.21.21"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "검증",
+    "보안",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "https"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32b-dns-debug"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

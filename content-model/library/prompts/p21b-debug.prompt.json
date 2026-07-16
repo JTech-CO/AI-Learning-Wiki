@@ -1,0 +1,47 @@
+{
+  "id": "p21b-debug",
+  "version": 1,
+  "title": "에러 해결을 AI에게 물어보기",
+  "summary": "에러 해결을 AI에게 물어보기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Supabase + 자바스크립트로 todo 앱을 만드는데 목록이 화면에 안 떠. 브라우저 F12 콘솔에 이런 빨간 에러가 떠: [에러 문구]. 초보가 이해할 수 있게 원인과 해결 순서를 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "에러 문구",
+      "required": true,
+      "example": "에러 문구"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "API",
+    "데이터베이스",
+    "생산성",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p21b-debug"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

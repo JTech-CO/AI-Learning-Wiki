@@ -1,0 +1,51 @@
+{
+  "id": "hire-delegate-sops-p1",
+  "version": 1,
+  "title": "1 녹화 설명 → SOP 문서 자동 정리",
+  "summary": "1 녹화 설명 → SOP 문서 자동 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 업무 표준화 전문가야. 아래는 내가 [업무이름] 작업을 실제로 하면서 말로 설명한 내용이야. 이걸 초보자도 그대로 따라 할 수 있는 SOP 문서로 정리해줘.\n\n형식: (1)업무명·소요시간·준비물 (2)번호 매긴 실행 단계 — 각 단계에 무엇을 클릭/입력하는지 구체적으로 (3)⚠️주의사항 3개 (4)✅합격 기준 한 줄. 모호한 표현 없이 명령형으로.\n\n[여기에 녹화하며 말한 내용 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "업무이름",
+      "required": true,
+      "example": "업무이름"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 녹화하며 말한 내용 붙여넣기",
+      "required": true,
+      "example": "여기에 녹화하며 말한 내용 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "생산성",
+    "협업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:hire-delegate-sops-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "structured-retry-policy",
+  "version": 1,
+  "title": "구조화 출력 실패 재시도 지시문",
+  "summary": "구조화 출력 실패 재시도 지시문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 스키마 검증 오류를 모델이 고칠 수 있는 짧은 재시도 지시문으로 바꿔줘. 이미 맞는 필드는 유지하고 오류 경로와 허용 형식만 알려줘. 원문 데이터나 비밀값을 반복하지 말고 최대 3회 뒤에는 사람 검토로 보내도록 종료 조건을 포함해. 오류: [검증 오류]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "검증 오류",
+      "required": true,
+      "example": "검증 오류"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "재시도 횟수와 비용을 제한하고 동일 오류가 반복되면 원본 프롬프트나 스키마를 점검한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "오류: /items/0/price must be number, /currency must be one of KRW, USD. 재시도 지시문을 작성해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "구조화 출력",
+    "자동화",
+    "디버깅",
+    "안전",
+    "검증",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "schema-validation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p37w-priority",
+  "version": 1,
+  "title": "우선순위 매겨 3개로 줄이기",
+  "summary": "우선순위 매겨 3개로 줄이기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 하위 질문들을 '이 답을 알면 내 의사결정이 바뀌는가'와 '조사 난이도(쉬움/중간/어려움)' 두 기준으로 평가해서 표로 정리하고, 가장 먼저 조사해야 할 상위 3개를 골라줘. 나머지는 '2차 보류'로 표시해줘. 질문 목록: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "의사결정",
+    "검색",
+    "프롬프트 설계",
+    "평가",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37w-priority"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "ai-marketing-funnel-p1",
+  "version": 1,
+  "title": "광고 카피 3종 (목표=클릭)",
+  "summary": "광고 카피 3종 (목표=클릭) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 오퍼의 광고 카피를 서로 다른 각도로 3개 써줘. 목표는 판매가 아니라 '클릭'이야.\n- 오퍼: [...]\n- 대상: [...]\n- 핵심 이득 1가지: [...]\n조건:\n1) ①고통 자극형 ②이득 강조형 ③호기심 유발형 각 1개.\n2) 각 2~3줄, 마지막에 클릭 유도 한 마디.\n3) 과장·허위·'보장' 표현 금지. 사실만.\n각 카피 아래 '왜 이 각도인지' 1줄 설명.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "마케팅",
+    "영업",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-marketing-funnel-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

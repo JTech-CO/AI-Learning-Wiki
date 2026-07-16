@@ -1,0 +1,40 @@
+{
+  "id": "p23b-diagnose",
+  "version": 1,
+  "title": "RLS 켠 뒤 앱이 빈 화면일 때 진단",
+  "summary": "RLS 켠 뒤 앱이 빈 화면일 때 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "Supabase에서 RLS를 켰더니 앱에서 데이터가 하나도 안 나와. 원인 후보를 체크리스트로 정리해줘: 정책이 아예 없는지, authenticated 대신 anon으로 요청하는지, auth.uid()가 null인지(로그인 안 됨), user_id가 안 채워졌는지. 각 후보를 확인하는 SQL이나 확인 방법도 함께 알려줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "디버깅",
+    "테스트",
+    "데이터베이스",
+    "검증",
+    "개인정보"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23b-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

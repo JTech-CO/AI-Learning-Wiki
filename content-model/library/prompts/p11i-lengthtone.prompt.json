@@ -1,0 +1,56 @@
+{
+  "id": "p11i-lengthtone",
+  "version": 1,
+  "title": "길이·말투 다듬기",
+  "summary": "길이·말투 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 답변에서 [내용은 그대로 두고 / 핵심만 남기고] 길이를 [두 문장]으로 줄이고, 말투는 [친근한 반말 / 정중한 존댓말]로 바꿔줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내용은 그대로 두고 / 핵심만 남기고",
+      "required": true,
+      "example": "내용은 그대로 두고 / 핵심만 남기고"
+    },
+    {
+      "name": "input_2",
+      "description": "두 문장",
+      "required": true,
+      "example": "두 문장"
+    },
+    {
+      "name": "input_3",
+      "description": "친근한 반말 / 정중한 존댓말",
+      "required": true,
+      "example": "친근한 반말 / 정중한 존댓말"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11i-lengthtone"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

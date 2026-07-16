@@ -1,0 +1,45 @@
+{
+  "id": "p32i-when",
+  "version": 1,
+  "title": "3 조건 적용 시점 콕 집기",
+  "summary": "3 조건 적용 시점 콕 집기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[특정 조건 — 예: 위약금 면제]이 정확히 '언제/어떤 경우에' 적용되는지만 알려줘. 적용되는 상황과 적용 안 되는 상황을 각각 원문 인용과 함께 구분해줘. 문서에 시점이 안 나와 있으면 '시점 미명시'라고 답해.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "특정 조건 — 예: 위약금 면제",
+      "required": true,
+      "example": "특정 조건 — 예: 위약금 면제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "출처·인용",
+    "안전",
+    "법무"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32i-when"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

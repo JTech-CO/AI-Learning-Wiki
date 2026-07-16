@@ -1,0 +1,46 @@
+{
+  "id": "agent-multi-orchestration-p1",
+  "version": 1,
+  "title": "오케스트레이터 — 일을 안 겹치게 3조각으로",
+  "summary": "오케스트레이터 — 일을 안 겹치게 3조각으로 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 아래 결과물을 만들려고 해. 이 큰 일을 서로 겹치지 않는 3개의 작은 작업으로 나눠서, 각 작업이 무엇을 조사·작성할지 번호(작업1, 작업2, 작업3)로 한두 줄씩 정리해줘. 작업끼리 내용이 겹치지 않게 경계를 분명히 해줘.\n결과물 주제: [내 주제]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 주제",
+      "required": true,
+      "example": "내 주제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "조사",
+    "코딩",
+    "AI 에이전트",
+    "협업"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-multi-orchestration-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

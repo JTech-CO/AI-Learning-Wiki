@@ -1,0 +1,44 @@
+{
+  "id": "cost-latency-optimization-p4",
+  "version": 1,
+  "title": "캐싱용 프롬프트 재구성",
+  "summary": "캐싱용 프롬프트 재구성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 프롬프트를 '매번 동일하게 반복되는 부분'과 '매 호출마다 바뀌는 부분'으로 분리해줘. 캐싱 효율을 높이도록 고정 부분은 앞쪽에, 가변 부분은 뒤쪽에 배치한 재구성 버전을 만들어줘.\n프롬프트: [프롬프트 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "프롬프트 붙여넣기",
+      "required": true,
+      "example": "프롬프트 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "API",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cost-latency-optimization-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

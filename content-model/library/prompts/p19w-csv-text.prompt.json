@@ -1,0 +1,40 @@
+{
+  "id": "p19w-csv-text",
+  "version": 1,
+  "title": "파일 생성가 막혔을 때 — CSV 텍스트로(설정 없이 우회)",
+  "summary": "파일 생성가 막혔을 때 — CSV 텍스트로(설정 없이 우회) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 집계 표를 CSV 형식(쉼표로 구분된 텍스트)으로 코드 블록에 그대로 출력해줘. 내가 복사해서 엑셀에 붙여넣을게.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트",
+    "코딩",
+    "검증",
+    "Python",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19w-csv-text"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

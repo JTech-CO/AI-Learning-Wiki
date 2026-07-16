@@ -1,0 +1,46 @@
+{
+  "id": "p22e-loop-debug",
+  "version": 1,
+  "title": "루프가 안 멈추는 버그 진단",
+  "summary": "루프가 안 멈추는 버그 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 도구 루프가 같은 도구를 계속 반복 호출하며 멈추지 않아. 아래 코드를 보고 원인을 짚어줘. 특히 (1) tool_result를 제대로 되먹이고 있는지 (2) tool_use_id가 매칭되는지 (3) assistant 응답을 messages에 다시 넣고 있는지 (4) 종료 조건이 맞는지 점검하고 수정본을: [내 루프 코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 루프 코드",
+      "required": true,
+      "example": "내 루프 코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "자동화",
+    "AI 에이전트",
+    "검색"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "tool-result"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22e-loop-debug"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

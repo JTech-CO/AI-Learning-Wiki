@@ -1,0 +1,52 @@
+{
+  "id": "freelance-profile-optimization-p1",
+  "version": 1,
+  "title": "제목 후보 5개 도출",
+  "summary": "제목 후보 5개 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 크몽/Fiverr 프리랜서 마케팅 전문가야. 내 서비스는 [서비스 한 줄 설명]이고, 구매자가 검색하는 핵심 키워드는 [키워드1, 키워드2, 키워드3]이야. 검색에 잘 걸리도록 핵심 키워드를 제목 앞쪽에 넣고, 막연한 형용사 대신 숫자·기한·대상으로 구체화한 제목 후보 5개를 만들어줘. 각 후보마다 왜 클릭을 부르는지 한 줄 이유도 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "서비스 한 줄 설명",
+      "required": true,
+      "example": "서비스 한 줄 설명"
+    },
+    {
+      "name": "input_2",
+      "description": "키워드1, 키워드2, 키워드3",
+      "required": true,
+      "example": "키워드1, 키워드2, 키워드3"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "검색",
+    "마케팅",
+    "고객 지원",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:freelance-profile-optimization-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

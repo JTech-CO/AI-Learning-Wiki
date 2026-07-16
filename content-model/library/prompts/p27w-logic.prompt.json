@@ -1,0 +1,44 @@
+{
+  "id": "p27w-logic",
+  "version": 1,
+  "title": "발표 흐름 논리 점검",
+  "summary": "발표 흐름 논리 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음은 내 발표의 슬라이드 제목만 순서대로 나열한 거야. [제목1 / 제목2 / …] 제목만 읽었을 때 도입에서 결론까지 논리가 자연스럽게 이어지는지 검토하고, 끊기는 지점과 순서 조정 또는 연결 문장을 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "제목1 / 제목2 / …",
+      "required": true,
+      "example": "제목1 / 제목2 / …"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프레젠테이션",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27w-logic"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

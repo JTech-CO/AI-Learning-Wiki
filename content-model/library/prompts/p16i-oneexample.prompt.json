@@ -1,0 +1,78 @@
+{
+  "id": "p16i-oneexample",
+  "version": 1,
+  "title": "예시 하나로 형식 따라 하게",
+  "summary": "예시 하나로 형식 따라 하게 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내가 원하는 결과의 예시야. 이 형식과 말투를 그대로 따라서 새 입력에 답해줘.\n[예시 입력]: [여기에 상황 하나]\n[예시 출력]: [내가 원하는 완벽한 결과물]\n[새 입력]: [실제로 처리할 내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예시 입력",
+      "required": true,
+      "example": "시 입력"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 상황 하나",
+      "required": true,
+      "example": "여기에 상황 하나"
+    },
+    {
+      "name": "input_3",
+      "description": "예시 출력",
+      "required": true,
+      "example": "시 출력"
+    },
+    {
+      "name": "input_4",
+      "description": "내가 원하는 완벽한 결과물",
+      "required": true,
+      "example": "내가 원하는 완벽한 결과물"
+    },
+    {
+      "name": "input_5",
+      "description": "새 입력",
+      "required": true,
+      "example": "새 입력"
+    },
+    {
+      "name": "input_6",
+      "description": "실제로 처리할 내용",
+      "required": true,
+      "example": "실제로 처리할 내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래는 내가 원하는 결과의 예시야. 이 형식과 말투를 그대로 따라서 새 입력에 답해줘.\n회의록 원문: 실제 값\n실제 값: 실제 값\n회의록 원문: 회의록 원문",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16i-oneexample"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

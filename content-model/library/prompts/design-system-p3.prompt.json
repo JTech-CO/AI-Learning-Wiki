@@ -1,0 +1,53 @@
+{
+  "id": "design-system-p3",
+  "version": 1,
+  "title": "비용·무료한도 점검받기",
+  "summary": "비용·무료한도 점검받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 자동화는 [트리거: 매일 1회] 실행되고, 단계마다 [Zapier / Make / n8n / AI API 등 사용 도구]를 써. 월 예상 실행 횟수를 계산하고, 각 도구의 무료 티어 한도 안에 드는지, 초과하면 대략 얼마가 드는지, 비용을 줄일 방법 2가지를 알려줘. (내가 확인해야 할 최신 요금 페이지 링크도 알려줘)",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "트리거: 매일 1회",
+      "required": true,
+      "example": "트리거: 매일 1회"
+    },
+    {
+      "name": "input_2",
+      "description": "Zapier / Make / n8n / AI API 등 사용 도구",
+      "required": true,
+      "example": "Zapier / Make / n8n / AI API 등 사용 도구"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "API",
+    "자동화",
+    "검증",
+    "프로젝트 관리",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:design-system-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

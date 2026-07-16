@@ -1,0 +1,53 @@
+{
+  "id": "global-payments-settlement-p2",
+  "version": 1,
+  "title": "영문 인보이스·고객 안내문",
+  "summary": "영문 인보이스·고객 안내문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "해외 고객용 문서를 만들어줘.\n- 상품: [...] / 가격·통화: [...] / 전달 방식(디지털): [...]\n1) 영문 인보이스 양식(항목/금액/통화/결제 방법, 빈칸은 [대괄호]).\n2) '결제 후 전달' 안내문(영문): 언제 어떻게 받는지.\n3) 환불 정책(영문): 디지털 상품 특성 반영, 과장·허위 금지.\n명확하고 정중하게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    },
+    {
+      "name": "input_2",
+      "description": "대괄호",
+      "required": true,
+      "example": "대괄호"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "번역",
+    "문서 분석",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:global-payments-settlement-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

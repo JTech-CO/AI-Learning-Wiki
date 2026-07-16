@@ -1,0 +1,52 @@
+{
+  "id": "p22w-followup",
+  "version": 1,
+  "title": "왜?를 캐묻는 후속 질문",
+  "summary": "왜?를 캐묻는 후속 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 답변 중 [1등 상품]에 대해 더 파고들자. 1)이 결과가 특정 [한 달]의 급증 때문인지 분해해줘. 2)평균에서 크게 벗어난 이상치 행을 이유와 함께. 3)네 결론과 반대되는 신호가 표에 있으면 솔직히.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "1등 상품",
+      "required": true,
+      "example": "1등 상품"
+    },
+    {
+      "name": "input_2",
+      "description": "한 달",
+      "required": true,
+      "example": "한 달"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "데이터 분석",
+    "스프레드시트",
+    "검증",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22w-followup"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

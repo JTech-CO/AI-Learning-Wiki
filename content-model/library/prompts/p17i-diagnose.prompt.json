@@ -1,0 +1,81 @@
+{
+  "id": "p17i-diagnose",
+  "version": 1,
+  "title": "1 나쁜 답 진단 요청",
+  "summary": "1 나쁜 답 진단 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내가 쓴 프롬프트와 그 결과, 내가 원했던 것이야.\n[내 프롬프트] \"\"\"[원래 프롬프트]\"\"\"\n[AI가 준 답] \"\"\"[실망스러운 답]\"\"\"\n[내가 원했던 것] [한 문장]\n이 프롬프트를 역할/맥락/구체지시/예시/출력형식 5요소로 나눠 어느 요소가 비었거나 약한지 표로 진단해줘. 그리고 '한 번에 하나만 고친다'는 원칙으로 가장 먼저 고칠 요소 딱 하나만 추천하고 이유를 말해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 프롬프트",
+      "required": true,
+      "example": "내 프롬프트"
+    },
+    {
+      "name": "input_2",
+      "description": "원래 프롬프트",
+      "required": true,
+      "example": "원래 프롬프트"
+    },
+    {
+      "name": "input_3",
+      "description": "AI가 준 답",
+      "required": true,
+      "example": "AI가 준 답"
+    },
+    {
+      "name": "input_4",
+      "description": "실망스러운 답",
+      "required": true,
+      "example": "실망스러운 답"
+    },
+    {
+      "name": "input_5",
+      "description": "내가 원했던 것",
+      "required": true,
+      "example": "내가 원했던 것"
+    },
+    {
+      "name": "input_6",
+      "description": "한 문장",
+      "required": true,
+      "example": "한 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래는 내가 쓴 프롬프트와 그 결과, 내가 원했던 것이야.\n실제 값 \"\"\"실제 값\"\"\"\n실제 값 \"\"\"실제 값\"\"\"\n실제 값 실제 값\n이 프롬프트를 역할/맥락/구체지시/예시/출력형식 5요소로 나눠 어느 요소가 비었거나 약한지 표로 진단해줘. 그리고 '한 번에 하나만 고친다'는 원칙으로 가장 먼저 고칠 요소 딱 하나만 추천하고 이유를 말해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "디버깅",
+    "프롬프트 설계",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17i-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

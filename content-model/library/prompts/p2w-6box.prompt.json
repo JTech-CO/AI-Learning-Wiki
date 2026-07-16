@@ -1,0 +1,76 @@
+{
+  "id": "p2w-6box",
+  "version": 1,
+  "title": "6칸 명령서",
+  "summary": "6칸 명령서 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 [역할: 예-환경 카피라이터]야. [대상: 예-초등학생]을 대상으로 [과제: 예-재활용 표어]를 만들어줘. 형식은 [형식: 예-표어 3개, 각 12자 이내]. 조건: [제약: 예-어려운 한자어 금지]. 원하는 느낌 예시: \"[예시 견본 한 줄]\"",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "역할: 예-환경 카피라이터",
+      "required": true,
+      "example": "역할: 예-환경 카피라이터"
+    },
+    {
+      "name": "input_2",
+      "description": "대상: 예-초등학생",
+      "required": true,
+      "example": "대상: 예-초등학생"
+    },
+    {
+      "name": "input_3",
+      "description": "과제: 예-재활용 표어",
+      "required": true,
+      "example": "과제: 예-재활용 표어"
+    },
+    {
+      "name": "input_4",
+      "description": "형식: 예-표어 3개, 각 12자 이내",
+      "required": true,
+      "example": "형식: 예-표어 3개, 각 12자 이내"
+    },
+    {
+      "name": "input_5",
+      "description": "제약: 예-어려운 한자어 금지",
+      "required": true,
+      "example": "제약: 예-어려운 한자어 금지"
+    },
+    {
+      "name": "input_6",
+      "description": "예시 견본 한 줄",
+      "required": true,
+      "example": "시 견본 한 줄"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "교육",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2w-6box"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

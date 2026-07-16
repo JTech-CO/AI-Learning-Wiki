@@ -1,0 +1,51 @@
+{
+  "id": "p26-check-calc",
+  "version": 1,
+  "title": "내 손계산 검산하기",
+  "summary": "내 손계산 검산하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "벡터 A=[숫자,숫자,숫자], B=[숫자,숫자,숫자]가 있어. 코사인 유사도를 내적과 각 벡터 크기를 단계별로 다 보여주면서 계산해줘. 내가 손으로 구한 값은 [내 답]인데 맞는지 검산하고, 틀렸으면 어디서 틀렸는지 짚어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "숫자,숫자,숫자",
+      "required": true,
+      "example": "숫자,숫자,숫자"
+    },
+    {
+      "name": "input_2",
+      "description": "내 답",
+      "required": true,
+      "example": "내 답"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "RAG",
+    "검색",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "embedding"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26-check-calc"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

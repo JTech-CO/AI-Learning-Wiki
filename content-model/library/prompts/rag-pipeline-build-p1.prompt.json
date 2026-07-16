@@ -1,0 +1,53 @@
+{
+  "id": "rag-pipeline-build-p1",
+  "version": 1,
+  "title": "청킹+임베딩+검색+생성 전체 코드 초안 받기",
+  "summary": "청킹+임베딩+검색+생성 전체 코드 초안 받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬으로 최소 RAG 파이프라인 한 파일을 만들어줘. 요구사항: (1) docs.txt를 읽어 [글자수]자·[겹침]자 overlap으로 청킹, (2) OpenAI text-embedding-3-small로 임베딩, (3) numpy 코사인 유사도로 상위 [k]개 검색, (4) 검색 결과를 컨텍스트로 gpt-4o-mini에 주입해 한국어로 답. 컨텍스트에 근거 없으면 '모른다'고 답하게 시스템 프롬프트 작성. 외부 벡터DB 없이 파이썬 리스트만 사용. 주석 한국어로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "글자수",
+      "required": true,
+      "example": "글자수"
+    },
+    {
+      "name": "input_2",
+      "description": "겹침",
+      "required": true,
+      "example": "겹침"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "코딩",
+    "데이터베이스",
+    "자동화",
+    "RAG"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:rag-pipeline-build-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

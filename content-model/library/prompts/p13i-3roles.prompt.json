@@ -1,0 +1,45 @@
+{
+  "id": "p13i-3roles",
+  "version": 1,
+  "title": "같은 질문, 세 역할 한 번에 비교",
+  "summary": "같은 질문, 세 역할 한 번에 비교 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 질문에 대해 세 가지 역할로 각각 답해줘: (1) 친절한 초등 선생님, (2) 핵심만 말하는 대학 교수, (3) 유쾌한 학원 강사. 질문: [질문 내용]. 세 답변을 표로 나란히 보여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문 내용",
+      "required": true,
+      "example": "질문 내용"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "의사결정",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p13i-3roles"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

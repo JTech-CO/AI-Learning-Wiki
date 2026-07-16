@@ -1,0 +1,44 @@
+{
+  "id": "p31i-points",
+  "version": 1,
+  "title": "1 핵심 요점 3~5개 도출",
+  "summary": "1 핵심 요점 3~5개 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 글에서 가장 중요한 핵심 요점만 3~5개 골라, 번호 목록으로, 한 항목당 한 줄로 정리해줘. 배경 설명이나 반복되는 내용은 빼고 알맹이만 남겨줘. [여기에 긴 글 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 긴 글 붙여넣기",
+      "required": true,
+      "example": "여기에 긴 글 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p31i-points"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

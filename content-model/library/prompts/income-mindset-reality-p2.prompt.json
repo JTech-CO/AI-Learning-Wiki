@@ -1,0 +1,51 @@
+{
+  "id": "income-mindset-reality-p2",
+  "version": 1,
+  "title": "작은 첫 목표(SMART)로 다듬기",
+  "summary": "작은 첫 목표(SMART)로 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 상황: 매주 쓸 수 있는 시간 [주 O시간], 가진 돈 [O만원], 잘하거나 좋아하는 것 [ ].\n나는 30일 안에 '검증 가능한 첫 수익'을 만들고 싶어. 금액·기한·검증방법이 명확한 SMART 목표 한 문장으로 만들어줘. 목표 금액은 월 5만~50만원 사이의 작고 현실적인 수준으로 잡아줘. 너무 큰 목표면 오히려 반려하고 더 작게 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주 O시간",
+      "required": true,
+      "example": "주 O시간"
+    },
+    {
+      "name": "input_2",
+      "description": "O만원",
+      "required": true,
+      "example": "O만원"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "마케팅",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:income-mindset-reality-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

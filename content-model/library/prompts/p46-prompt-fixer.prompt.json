@@ -1,0 +1,53 @@
+{
+  "id": "p46-prompt-fixer",
+  "version": 1,
+  "title": "프롬프트 오답 보강기",
+  "summary": "프롬프트 오답 보강기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 분류 프롬프트와, 이 프롬프트가 틀리게 분류한 실제 사례들이다. 왜 틀렸는지 진단하고, 프롬프트에 추가할 '특수규칙' 문장을 3개 이내로 짧게 제안. 현재 프롬프트: \"\"\"[…]\"\"\" 틀린 사례(입력 → AI답 → 정답): [사례1] [사례2]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사례1",
+      "required": true,
+      "example": "사례1"
+    },
+    {
+      "name": "input_2",
+      "description": "사례2",
+      "required": true,
+      "example": "사례2"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "테스트",
+    "자동화",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "classification"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p46-prompt-fixer"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "seo-geo-for-discovery-p1",
+  "version": 1,
+  "title": "롱테일 키워드 확장",
+  "summary": "롱테일 키워드 확장 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 SEO 키워드 전략가야. 내 사업은 [사업/상품 설명]이고 주요 지역은 [지역]이야. 실제 고객이 검색할 법한 '질문형 롱테일 키워드'를 검색 의도(정보탐색/구매)별로 15개 뽑아줘. 각 키워드마다 예상 검색 의도와 이 키워드로 만들면 좋은 콘텐츠 제목 1개를 표로 제시해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사업/상품 설명",
+      "required": true,
+      "example": "사업/상품 설명"
+    },
+    {
+      "name": "input_2",
+      "description": "지역",
+      "required": true,
+      "example": "지역"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "검색",
+    "구조화 출력",
+    "마케팅",
+    "콘텐츠",
+    "출처·인용",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:seo-geo-for-discovery-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

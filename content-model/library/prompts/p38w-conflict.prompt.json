@@ -1,0 +1,53 @@
+{
+  "id": "p38w-conflict",
+  "version": 1,
+  "title": "상충 원인 분석",
+  "summary": "상충 원인 분석 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "두 출처가 같은 항목에 대해 다른 수치를 제시한다. 출처1은 [수치1], 출처2는 [수치2]. 이 차이가 생길 수 있는 이유를 '측정 시점·정의·표본·계산방식' 관점에서 3가지 추정해줘. 각 이유마다 '어느 수치를 채택해야 하는지'와 근거도 함께. 추측이면 추측이라고 명시해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "수치1",
+      "required": true,
+      "example": "수치1"
+    },
+    {
+      "name": "input_2",
+      "description": "수치2",
+      "required": true,
+      "example": "수치2"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "데이터 분석",
+    "콘텐츠",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p38w-conflict"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

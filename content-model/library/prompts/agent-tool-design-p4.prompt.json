@@ -1,0 +1,45 @@
+{
+  "id": "agent-tool-design-p4",
+  "version": 1,
+  "title": "애매한 요청으로 오용 테스트 케이스 생성",
+  "summary": "애매한 요청으로 오용 테스트 케이스 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 도구 세트를 쓰는 에이전트를 시험할, 오용을 유도하는 애매한 사용자 요청 5개를 만들어줘. 각 요청마다 '올바른 도구 선택'과 '흔한 오용'을 함께 표로 정리해줘.\n\n도구 목록과 설명:\n[붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "디버깅",
+    "테스트",
+    "AI 에이전트"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-tool-design-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "agent-eval-observability-p3",
+  "version": 1,
+  "title": "테스트용 정답표 자동 생성",
+  "summary": "테스트용 정답표 자동 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[주제: 초등 분수 덧셈]에 대해 난이도가 골고루 섞인 평가용 질문-정답 쌍 10개를 만들어라. 형식은 JSON 배열로 input과 expected_output 키만 사용하라. 답은 짧고 명확하게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제: 초등 분수 덧셈",
+      "required": true,
+      "example": "주제: 초등 분수 덧셈"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "테스트",
+    "AI 에이전트",
+    "구조화 출력",
+    "평가",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "observability"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-eval-observability-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

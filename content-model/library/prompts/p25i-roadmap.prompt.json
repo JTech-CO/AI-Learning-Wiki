@@ -1,0 +1,71 @@
+{
+  "id": "p25i-roadmap",
+  "version": 1,
+  "title": "주차별 로드맵 생성",
+  "summary": "주차별 로드맵 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "intermediate",
+  "template": "당신은 내 개인 학습 코치입니다. 아래 조건으로 현실적인 주차별 학습 로드맵을 표로 만들어 주세요.\n- 배울 주제: [예: 파이썬으로 엑셀 업무 자동화]\n- 목표(왜): [예: 3개월 뒤 회사 반복 업무 자동화]\n- 현재 수준: [예: 프로그래밍 완전 초보]\n- 주당 가능 시간: [예: 주 5시간, 평일 밤 30분 + 토 오전 2.5시간]\n- 총 기간: [예: 12주]\n요구사항: (1)각 주차마다 학습 주제·구체 활동·예상 시간을 표로, (2)쉬운 것부터 어려운 순서로, (3)마지막 주는 복습/작은 프로젝트로 마무리. 표만 먼저 보여주세요.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 파이썬으로 엑셀 업무 자동화",
+      "required": true,
+      "example": "파이썬으로 엑셀 업무 자동화"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 3개월 뒤 회사 반복 업무 자동화",
+      "required": true,
+      "example": "3개월 뒤 회사 반복 업무 자동화"
+    },
+    {
+      "name": "input_3",
+      "description": "예: 프로그래밍 완전 초보",
+      "required": true,
+      "example": "프로그래밍 완전 초보"
+    },
+    {
+      "name": "input_4",
+      "description": "예: 주 5시간, 평일 밤 30분 + 토 오전 2.5시간",
+      "required": true,
+      "example": "주 5시간, 평일 밤 30분 + 토 오전 2.5시간"
+    },
+    {
+      "name": "input_5",
+      "description": "예: 12주",
+      "required": true,
+      "example": "12주"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "교육",
+    "스프레드시트",
+    "코딩",
+    "자동화",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25i-roadmap"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

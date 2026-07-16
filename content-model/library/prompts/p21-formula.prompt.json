@@ -1,0 +1,61 @@
+{
+  "id": "p21-formula",
+  "version": 1,
+  "title": "표준화 수식 생성",
+  "summary": "표준화 수식 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "엑셀에서 아래 규칙대로 데이터를 정리하는 수식을 만들어줘. 각 규칙마다 어떤 새 열에 붙이고 어떻게 드래그하는지도 알려줘.\n규칙:\n- 날짜 형식: [YYYY-MM-DD]\n- 전화번호 형식: [010-0000-0000]\n- 앞뒤 공백 제거\n- 지역명 표준화: ['서울특별시'→'서울']\n대상 열: [A열은 날짜, B열은 전화번호 …]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "YYYY-MM-DD",
+      "required": true,
+      "example": "YYYY-MM-DD"
+    },
+    {
+      "name": "input_2",
+      "description": "010-0000-0000",
+      "required": true,
+      "example": "010-0000-0000"
+    },
+    {
+      "name": "input_3",
+      "description": "'서울특별시'→'서울'",
+      "required": true,
+      "example": "'서울특별시'→'서울'"
+    },
+    {
+      "name": "input_4",
+      "description": "A열은 날짜, B열은 전화번호 …",
+      "required": true,
+      "example": "A열은 날짜, B열은 전화번호 …"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p21-formula"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

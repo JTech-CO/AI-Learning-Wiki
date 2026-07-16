@@ -1,0 +1,53 @@
+{
+  "id": "p21-select",
+  "version": 1,
+  "title": "도구 여러 개 선택 테스트",
+  "summary": "도구 여러 개 선택 테스트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 tool 목록은 [도구1 설명], [도구2 설명]이야. 모델이 상황에 맞는 도구를 제대로 고르는지 확인하려면 어떤 테스트 질문 5개를 던져봐야 할까? 각 질문마다 기대되는 선택 도구와, 도구를 안 써도 되는 질문(순수 대화) 1개도 포함해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "도구1 설명",
+      "required": true,
+      "example": "도구1 설명"
+    },
+    {
+      "name": "input_2",
+      "description": "도구2 설명",
+      "required": true,
+      "example": "도구2 설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "테스트",
+    "AI 에이전트",
+    "구조화 출력",
+    "검증"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "function-calling"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p21-select"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

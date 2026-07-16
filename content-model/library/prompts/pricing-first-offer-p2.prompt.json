@@ -1,0 +1,49 @@
+{
+  "id": "pricing-first-offer-p2",
+  "version": 1,
+  "title": "경쟁 시세 정리표",
+  "summary": "경쟁 시세 정리표 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음은 [상품/서비스]를 파는 경쟁자들의 정보야: [경쟁자별 가격·포함내용 붙여넣기]. 이걸 표로 정리하고 최저가·중간값·최고가를 계산해줘. 그리고 각 가격대에서 무엇이 더 포함되는지 차이도 한 줄씩 짚어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상품/서비스",
+      "required": true,
+      "example": "상품/서비스"
+    },
+    {
+      "name": "input_2",
+      "description": "경쟁자별 가격·포함내용 붙여넣기",
+      "required": true,
+      "example": "경쟁자별 가격·포함내용 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:pricing-first-offer-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

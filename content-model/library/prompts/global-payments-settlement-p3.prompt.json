@@ -1,0 +1,47 @@
+{
+  "id": "global-payments-settlement-p3",
+  "version": 1,
+  "title": "세무·외환·정책 확인 체크리스트",
+  "summary": "세무·외환·정책 확인 체크리스트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "해외 고객에게 판매·수금하기 전에 내가 '공식 자료나 전문가에게 직접 확인해야 할' 질문 목록을 만들어줘. (너는 답을 단정하지 말고, 내가 확인할 질문만.)\n- 내 상황: [국가, 개인/사업자, 상품, 주 고객 국가]\n포함: ①해외 매출 세금 처리 ②외환/송금 신고 기준 ③각 결제 서비스의 내 국가 지원·필요 서류 ④디지털 상품 관련 세금(부가세 등) 가능성.\n각 항목에 '누구에게/어디서 확인하면 되는지' 1줄.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "국가, 개인/사업자, 상품, 주 고객 국가",
+      "required": true,
+      "example": "국가, 개인/사업자, 상품, 주 고객 국가"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "번역",
+    "영업",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:global-payments-settlement-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

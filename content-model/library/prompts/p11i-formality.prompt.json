@@ -1,0 +1,49 @@
+{
+  "id": "p11i-formality",
+  "version": 1,
+  "title": "격식·대상 조정",
+  "summary": "격식·대상 조정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 글을 [상사에게 보내는 / 처음 만난 사람에게 하는] 상황에 맞게 좀 더 [격식 있고 정중하게 / 편하고 캐주얼하게] 고쳐줘. 내용은 유지해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상사에게 보내는 / 처음 만난 사람에게 하는",
+      "required": true,
+      "example": "상사에게 보내는 / 처음 만난 사람에게 하는"
+    },
+    {
+      "name": "input_2",
+      "description": "격식 있고 정중하게 / 편하고 캐주얼하게",
+      "required": true,
+      "example": "격식 있고 정중하게 / 편하고 캐주얼하게"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11i-formality"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

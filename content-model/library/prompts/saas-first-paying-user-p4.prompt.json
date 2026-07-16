@@ -1,0 +1,76 @@
+{
+  "id": "saas-first-paying-user-p4",
+  "version": 1,
+  "title": "피드백 통화 답변 분류·우선순위",
+  "summary": "피드백 통화 답변 분류·우선순위 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 초기 유료 유저 피드백 통화 원문이야. 이걸 [가격/핵심기능/버그/온보딩/기타] 태그로 분류하고, 이탈 위험이 가장 큰 원인 1개와 이번 주에 고칠 액션 1개를 제안해줘. 표로 정리.\n[유저1 답변]: [여기]\n[유저2 답변]: [여기]\n[유저3 답변]: [여기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "가격/핵심기능/버그/온보딩/기타",
+      "required": true,
+      "example": "가격/핵심기능/버그/온보딩/기타"
+    },
+    {
+      "name": "input_2",
+      "description": "유저1 답변",
+      "required": true,
+      "example": "유저1 답변"
+    },
+    {
+      "name": "input_3",
+      "description": "여기",
+      "required": true,
+      "example": "여기"
+    },
+    {
+      "name": "input_4",
+      "description": "유저2 답변",
+      "required": true,
+      "example": "유저2 답변"
+    },
+    {
+      "name": "input_5",
+      "description": "유저3 답변",
+      "required": true,
+      "example": "유저3 답변"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래는 초기 유료 유저 피드백 통화 원문이야. 이걸 실제 값 태그로 분류하고, 이탈 위험이 가장 큰 원인 1개와 이번 주에 고칠 액션 1개를 제안해줘. 표로 정리.\n실제 값: 실제 값\n실제 값: 실제 값\n실제 값: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "요약",
+    "의사결정",
+    "고객 지원",
+    "안전",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:saas-first-paying-user-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

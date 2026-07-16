@@ -1,0 +1,58 @@
+{
+  "id": "p39-decide",
+  "version": 1,
+  "title": "DECIDE 규칙 초안 생성",
+  "summary": "DECIDE 규칙 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 다음 목표의 에이전트 루프를 설계 중이야. 목표: [목표 한 문장] 완료 신호: [무엇이 보이면 끝인지] 사용 가능한 도구: [도구명: 입력→출력형식 을 줄바꿈으로]. PLAN→ACT→OBSERVE→DECIDE 루프에서 DECIDE 단계의 판단 규칙을 if-then 목록으로 8개 이내로. 반드시 성공 종료·에러 재시도 한계·최대 반복 종료 세 가지 중단 규칙을 포함하고, 각 규칙은 '관찰에서 무엇을 보면 → 어떤 행동'인지 구체적으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "목표 한 문장",
+      "required": true,
+      "example": "목표 한 문장"
+    },
+    {
+      "name": "input_2",
+      "description": "무엇이 보이면 끝인지",
+      "required": true,
+      "example": "무엇이 보이면 끝인지"
+    },
+    {
+      "name": "input_3",
+      "description": "도구명: 입력→출력형식 을 줄바꿈으로",
+      "required": true,
+      "example": "도구명: 입력→출력형식 을 줄바꿈으로"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "계획",
+    "디버깅",
+    "AI 에이전트",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "agent-loop"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39-decide"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

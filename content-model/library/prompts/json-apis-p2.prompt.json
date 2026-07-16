@@ -1,0 +1,53 @@
+{
+  "id": "json-apis-p2",
+  "version": 1,
+  "title": "JSON 응답에서 원하는 값 찾기",
+  "summary": "JSON 응답에서 원하는 값 찾기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 API가 돌려준 JSON 응답이야. 여기서 [원하는 정보, 예: 오늘 최고 기온]을 꺼내는 Python 코드 한 줄을 알려주고, 그 키 경로가 왜 그렇게 되는지 설명해줘.\n\n[여기에 JSON 응답 전체 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "원하는 정보, 예: 오늘 최고 기온",
+      "required": true,
+      "example": "원하는 정보, 예: 오늘 최고 기온"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 JSON 응답 전체 붙여넣기",
+      "required": true,
+      "example": "여기에 JSON 응답 전체 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "자동화",
+    "구조화 출력",
+    "보안",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:json-apis-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

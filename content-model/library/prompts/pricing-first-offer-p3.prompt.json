@@ -1,0 +1,45 @@
+{
+  "id": "pricing-first-offer-p3",
+  "version": 1,
+  "title": "첫 오퍼 가격 3안 제안",
+  "summary": "첫 오퍼 가격 3안 제안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 원가 하한선은 [금액], 경쟁 시세는 최저[  ]·중간[  ]·최고[  ], 고객이 얻는 가치 상한선은 [금액]이야. 나는 첫 판매라 후기가 아직 없어. 이 조건에서 '안전가·추천가·도전가' 3가지 첫 오퍼 가격을 이유와 함께 제안하고, 각각의 장단점을 알려줘. 원가 근처로 너무 싸게 가는 안은 넣지 마.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "금액",
+      "required": true,
+      "example": "금액"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "영업",
+    "안전",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:pricing-first-offer-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

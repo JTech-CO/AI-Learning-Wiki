@@ -1,0 +1,49 @@
+{
+  "id": "p11e-summarize",
+  "version": 1,
+  "title": "긴 대화 요약 압축",
+  "summary": "긴 대화 요약 압축 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 길어진 messages 배열이야. 토큰을 아끼기 위해 오래된 앞부분을 \"핵심 맥락 한두 줄\"로 요약해서 system 다음에 넣을 요약 메시지를 만들어줘. 최근 6개 메시지는 그대로.\n[긴 배열]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "긴 배열",
+      "required": true,
+      "example": "긴 배열"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래는 길어진 messages 배열이야. 토큰을 아끼기 위해 오래된 앞부분을 \"핵심 맥락 한두 줄\"로 요약해서 system 다음에 넣을 요약 메시지를 만들어줘. 최근 6개 메시지는 그대로.\n실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "요약",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11e-summarize"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p18e-classifier",
+  "version": 1,
+  "title": "실패 사례 분류기",
+  "summary": "실패 사례 분류기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내 프롬프트가 만든 실패 출력 5건이야. 각 건의 '입력 / 실제출력 / 내가 불만인 점'을 표로 정리했어. [실패 5건]. 이 실패들을 2~3개의 반복 유형으로 분류하고 각 유형에 이름과 발생 건수를 붙여줘. 그리고 가장 먼저 고쳐야 할 유형 1개를 이유와 함께 추천해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "실패 5건",
+      "required": true,
+      "example": "실패 5건"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "디버깅",
+    "테스트",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p18e-classifier"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

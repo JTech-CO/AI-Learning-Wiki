@@ -1,0 +1,66 @@
+{
+  "id": "p7w-fewshot",
+  "version": 1,
+  "title": "few-shot — 예시 그대로 따라 쓰기",
+  "summary": "few-shot — 예시 그대로 따라 쓰기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 예시와 똑같은 형식·말투로 써줘.\n예시1) [입력]: [결과]\n예시2) [입력2]: [결과2]\n[새 입력]:",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "입력",
+      "required": true,
+      "example": "입력"
+    },
+    {
+      "name": "input_2",
+      "description": "결과",
+      "required": true,
+      "example": "결과"
+    },
+    {
+      "name": "input_3",
+      "description": "입력2",
+      "required": true,
+      "example": "입력2"
+    },
+    {
+      "name": "input_4",
+      "description": "결과2",
+      "required": true,
+      "example": "결과2"
+    },
+    {
+      "name": "input_5",
+      "description": "새 입력",
+      "required": true,
+      "example": "새 입력"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7w-fewshot"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

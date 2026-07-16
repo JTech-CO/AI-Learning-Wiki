@@ -1,0 +1,52 @@
+{
+  "id": "p8e-incident",
+  "version": 1,
+  "title": "키 노출 사고 긴급 대응",
+  "summary": "키 노출 사고 긴급 대응 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 [GitHub / 채팅 / 스크린샷]에 [OpenAI] API 키를 실수로 노출했어. 지금 당장 해야 할 조치를 우선순위 순서대로 알려줘. 키 폐기(revoke) 방법과, git 히스토리에서 지워도 왜 재발급이 필수인지도 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "GitHub / 채팅 / 스크린샷",
+      "required": true,
+      "example": "GitHub / 채팅 / 스크린샷"
+    },
+    {
+      "name": "input_2",
+      "description": "OpenAI",
+      "required": true,
+      "example": "OpenAI"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "API",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8e-incident"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "freelance-niche-positioning-p3",
+  "version": 1,
+  "title": "니치가 너무 좁은지/넓은지 점검",
+  "summary": "니치가 너무 좁은지/넓은지 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 니치 문장은 '[여기 붙여넣기]'야. 이게 (1) 돈 내는 고객이 충분히 존재하는지 (2) 검색으로 그 고객을 찾을 수 있는지 (3) 경쟁이 얼마나 센지 냉정하게 평가하고, 너무 좁으면 한 단계 넓히는 안, 너무 넓으면 한 단계 좁히는 안을 각각 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기 붙여넣기",
+      "required": true,
+      "example": "여기 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "평가"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:freelance-niche-positioning-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

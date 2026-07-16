@@ -1,0 +1,50 @@
+{
+  "id": "p27w-counter",
+  "version": 1,
+  "title": "반론과 빠진 근거 점검",
+  "summary": "반론과 빠진 근거 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 발표 스토리라인이야. [붙여넣기] 청중은 [설명]이야. 이 사람이 던질 만한 날카로운 반론 3개와, 결론을 지지하기에 빠져 있는 근거 2개를 짚어줘. 각각을 보완할 슬라이드 제목(완결 문장)도 함께 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "설명",
+      "required": true,
+      "example": "설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프레젠테이션",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27w-counter"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

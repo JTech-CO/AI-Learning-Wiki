@@ -1,0 +1,63 @@
+{
+  "id": "cross-border-payout-p3",
+  "version": 1,
+  "title": "숨은 환율 스프레드 계산기",
+  "summary": "숨은 환율 스프레드 계산기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "어떤 서비스가 [USD 1000]를 [1350000 KRW]로 준다고 했어. 같은 시각 구글 중간환율은 1 USD = [1380] KRW야. 이 서비스가 실제로 떼간 총비용(원화)과 숨은 스프레드를 %로 계산해줘. 그리고 이게 비싼 건지 한 줄로 평가해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "USD 1000",
+      "required": true,
+      "example": "USD 1000"
+    },
+    {
+      "name": "input_2",
+      "description": "1350000 KRW",
+      "required": true,
+      "example": "1350000 KRW"
+    },
+    {
+      "name": "input_3",
+      "description": "1380",
+      "required": true,
+      "example": "1380"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "어떤 서비스가 실제 값를 실제 값로 준다고 했어. 같은 시각 구글 중간환율은 1 USD = 실제 값 KRW야. 이 서비스가 실제로 떼간 총비용(원화)과 숨은 스프레드를 %로 계산해줘. 그리고 이게 비싼 건지 한 줄로 평가해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "평가",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cross-border-payout-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

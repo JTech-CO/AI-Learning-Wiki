@@ -1,0 +1,50 @@
+{
+  "id": "icp-and-lead-list-p2",
+  "version": 1,
+  "title": "검색어·소스 리스트 도출",
+  "summary": "검색어·소스 리스트 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나의 ICP는 다음과 같습니다: 산업=[..], 규모=[..], 역할=[..], 트리거=[..]. 이 대상을 실제로 찾아 연락처를 모으기 위해 사용할 (1)네이버/구글 지도 검색어 5개 (2)이들이 모여있을 만한 협회·디렉터리·커뮤니티 3곳 (3)링크드인/잡코리아에서 쓸 검색 키워드 3개 를 알려줘. 한국 상황에 맞게, 실제 존재하는 유형의 소스만 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "..",
+      "required": true,
+      "example": ".."
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "나의 ICP는 다음과 같습니다: 산업=실제 값, 규모=실제 값, 역할=실제 값, 트리거=실제 값. 이 대상을 실제로 찾아 연락처를 모으기 위해 사용할 (1)네이버/구글 지도 검색어 5개 (2)이들이 모여있을 만한 협회·디렉터리·커뮤니티 3곳 (3)링크드인/잡코리아에서 쓸 검색 키워드 3개 를 알려줘. 한국 상황에 맞게, 실제 존재하는 유형의 소스만 제안해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "영업"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:icp-and-lead-list-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

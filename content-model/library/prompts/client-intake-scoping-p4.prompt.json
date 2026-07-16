@@ -1,0 +1,44 @@
+{
+  "id": "client-intake-scoping-p4",
+  "version": 1,
+  "title": "범위 밖 요청 정중히 거절+추가견적 전환",
+  "summary": "범위 밖 요청 정중히 거절+추가견적 전환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "클라이언트가 계약 산출물에 없던 '[추가 요청 내용]'을 무료로 해달라고 해. 관계를 해치지 않으면서 '이건 원래 범위 밖이라 별도 견적으로 진행해야 한다'는 걸 정중하고 프로페셔널하게 전하는 카톡 메시지 3가지 버전(부드러움/중립/단호)으로 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "추가 요청 내용",
+      "required": true,
+      "example": "추가 요청 내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "재무·금융",
+    "법무"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:client-intake-scoping-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

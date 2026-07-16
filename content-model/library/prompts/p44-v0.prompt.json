@@ -1,0 +1,71 @@
+{
+  "id": "p44-v0",
+  "version": 1,
+  "title": "v0로 화면 생성",
+  "summary": "v0로 화면 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[앱 이름] 웹앱을 만들어줘. 핵심 기능: [한 문장]. 화면에 [필요한 버튼·입력칸]이 있고, 누르면 [무슨 일이 일어나는지]. 모바일에서 보기 좋게, [원하는 색·분위기]으로. 글씨는 크게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "앱 이름",
+      "required": true,
+      "example": "앱 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "한 문장",
+      "required": true,
+      "example": "한 문장"
+    },
+    {
+      "name": "input_3",
+      "description": "필요한 버튼·입력칸",
+      "required": true,
+      "example": "필요한 버튼·입력칸"
+    },
+    {
+      "name": "input_4",
+      "description": "무슨 일이 일어나는지",
+      "required": true,
+      "example": "무슨 일이 일어나는지"
+    },
+    {
+      "name": "input_5",
+      "description": "원하는 색·분위기",
+      "required": true,
+      "example": "원하는 색·분위기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "프롬프트 설계",
+    "고객 지원",
+    "웹 개발",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p44-v0"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "p34w-expand",
+  "version": 1,
+  "title": "광고 카피·이메일 제목으로 확장",
+  "summary": "광고 카피·이메일 제목으로 확장 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "같은 제품으로 이번엔 [광고 헤드라인 / 이메일 제목줄]을 만들어줘.\n- 길이: 25자 이내(스마트폰에서 안 잘리게)\n- 호기심형 3개 + 혜택강조형 3개 + 숫자포함형 3개\n- 과장·허위 표현은 빼고, 클릭하고 싶게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "광고 헤드라인 / 이메일 제목줄",
+      "required": true,
+      "example": "광고 헤드라인 / 이메일 제목줄"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "테스트",
+    "마케팅",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p34w-expand"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

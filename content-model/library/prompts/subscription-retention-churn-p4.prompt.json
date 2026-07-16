@@ -1,0 +1,49 @@
+{
+  "id": "subscription-retention-churn-p4",
+  "version": 1,
+  "title": "해지 방어 + 재활성화 메시지 작성",
+  "summary": "해지 방어 + 재활성화 메시지 작성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 서비스 [서비스명/설명] 사용자가 해지 버튼을 눌렀어. 협박이나 죄책감 없이 가치를 상기시키는 '마지막 제안' 문구 3안(일시정지형·할인형·기능안내형)을 써줘. 또 30일 이상 미접속한 휴면 사용자에게 보낼 재활성화 메시지 2안도 각각 40자 이내로 작성해줘. 톤은 [친근하고 담백하게].",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "서비스명/설명",
+      "required": true,
+      "example": "서비스명/설명"
+    },
+    {
+      "name": "input_2",
+      "description": "친근하고 담백하게",
+      "required": true,
+      "example": "친근하고 담백하게"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:subscription-retention-churn-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

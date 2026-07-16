@@ -1,0 +1,47 @@
+{
+  "id": "p43b-script",
+  "version": 1,
+  "title": "사용성 테스트 대본 생성",
+  "summary": "사용성 테스트 대본 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 UX 리서처야. 내 앱의 이번 관찰 목표는 '[관찰 목표 한 문장]'이야. 이걸 검증할 사용성 테스트 대본을 만들어줘. (1) 사용자에게 시킬 현실적인 과제 3개 — 방법을 알려주지 말고 '무엇을 이루세요'만. (2) 과제 후 물어볼 개방형 질문 3개 — '좋았어요?' 같은 유도/예아니오 질문 금지, '어디서 멈췄나요?'처럼 행동을 캐묻는 질문. (3) 진행자인 내가 절대 하지 말아야 할 말 목록. 한국어로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "관찰 목표 한 문장",
+      "required": true,
+      "example": "관찰 목표 한 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "조사",
+    "의사결정",
+    "테스트",
+    "데이터베이스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p43b-script"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

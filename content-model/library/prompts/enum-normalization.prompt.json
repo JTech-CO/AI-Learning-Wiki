@@ -1,0 +1,51 @@
+{
+  "id": "enum-normalization",
+  "version": 1,
+  "title": "자유 입력값을 허용 enum으로 정규화",
+  "summary": "자유 입력값을 허용 enum으로 정규화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "사용자 입력값을 아래 허용 enum 중 하나로 정규화해줘. 정확히 대응하지 않거나 여러 후보가 가능하면 null과 이유를 반환해. 출력은 {\"value\": enum|null, \"confidence\": 0~1, \"reason\": 한 문장} 형식만 사용해. 허용값: [enum 목록] 입력: [값]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "enum 목록",
+      "required": true,
+      "example": "enum 목록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "낮은 확신도와 null 결과를 처리하는 사용자 확인 절차를 함께 둔다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "허용값: pending, approved, rejected. 입력: 승인된 것 같음. 지정 형식으로 정규화해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "구조화 출력",
+    "데이터 엔지니어링",
+    "API",
+    "글쓰기"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "p33w-crm-oneline",
+  "version": 1,
+  "title": "CRM 한 줄 메모로 압축",
+  "summary": "CRM 한 줄 메모로 압축 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 통화 내용을 CRM 메모칸에 들어갈 '한 줄 요약'으로. 형식: 결정:___ / 요청:___ / 다음:___(정확한 날짜). 오늘은 [오늘 날짜]야.\n[붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "오늘 날짜",
+      "required": true,
+      "example": "오늘 날짜"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "구조화 출력",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33w-crm-oneline"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

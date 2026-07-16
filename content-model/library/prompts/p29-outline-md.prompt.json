@@ -1,0 +1,50 @@
+{
+  "id": "p29-outline-md",
+  "version": 1,
+  "title": "개요를 Gamma 입력용 마크다운으로 변환",
+  "summary": "개요를 Gamma 입력용 마크다운으로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 발표 스토리라인을 Gamma에 붙여넣을 마크다운 개요로 바꿔줘. 형식: 맨 위 '# 발표제목', 각 슬라이드는 '## 소제목' + 그 아래 핵심 불릿 2~3개. 슬라이드는 총 [8~12]장으로, 한 슬라이드에 한 메시지만. 스토리라인: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "8~12",
+      "required": true,
+      "example": "8~12"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "프레젠테이션"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29-outline-md"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

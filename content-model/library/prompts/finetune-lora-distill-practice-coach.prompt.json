@@ -1,0 +1,53 @@
+{
+  "id": "finetune-lora-distill-practice-coach",
+  "version": 1,
+  "title": "실습 코치 프롬프트",
+  "summary": "실습 코치 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 학습 코치야. 아래 주제와 과제를 내가 직접 완수하도록 단계별로 도와줘. 결과를 대신 완성하지 말고, 먼저 내가 시도할 한 단계만 제시한 뒤 내 답을 기다려. 각 단계에서 잘된 점 1개와 개선점 1개를 알려줘.\n\n[학습 주제]\n🎯 LLM 파인튜닝·증류 — LoRA·QLoRA로 내 도메인 전용 모델 만들기\n\n[실습 과제]\n이번엔 상담봇 대신 \"우리 팀 회의록을 요약해주는 모델\"을 만든다고 가정하고, 데이터 정제부터 LoRA 설정까지 단계별로 직접 계획을 세워보세요. 어떤 데이터를 몇 건 모을지, rank는 몇으로 할지 적어보세요.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "학습 주제",
+      "required": true,
+      "example": "학습 주제"
+    },
+    {
+      "name": "input_2",
+      "description": "실습 과제",
+      "required": true,
+      "example": "실습 과제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "원문에 별도 복붙 템플릿이 없어 위키가 추가한 학습 보조 프롬프트입니다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "계획",
+    "의사결정",
+    "교육",
+    "프롬프트 설계",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "fine-tuning"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:finetune-lora-distill-practice-coach"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "multimodal-chart-reading",
+  "version": 1,
+  "title": "차트 이미지에서 수치와 추세 분리",
+  "summary": "차트 이미지에서 수치와 추세 분리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "첨부한 차트를 분석해줘. 눈으로 확인되는 축·단위·범례와 읽을 수 있는 수치를 먼저 표로 옮기고, 그다음 추세 해석을 별도 구역에 작성해. 해상도 때문에 정확히 읽을 수 없는 값은 범위로도 추정하지 말고 '판독 불가'로 표시해.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "차트가 잘린 경우 원본 데이터나 고해상도 이미지를 요청한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "첨부한 분기별 매출 선그래프에서 직접 읽히는 값과 해석을 분리해 작성해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "멀티모달",
+    "시각화",
+    "데이터 분석",
+    "검증",
+    "글쓰기",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "multimodal-evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

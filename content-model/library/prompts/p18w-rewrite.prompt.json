@@ -1,0 +1,64 @@
+{
+  "id": "p18w-rewrite",
+  "version": 1,
+  "title": "검증본으로 다시 쓰기",
+  "summary": "검증본으로 다시 쓰기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문서를 '검증된 사실만 남긴 버전'으로. 규칙: (1)내가 [확인됨]으로 표시한 문장만 유지 (2)[삭제] 표시 문장 제거 (3)[확인필요] 표시 문장은 '~로 추정된다' 또는 삭제 (4)새로운 숫자·인용·주장 절대 추가 금지. 없는 정보를 채우지 말고 비워둬.\n--- [표시가 끝난 문서 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "확인됨",
+      "required": true,
+      "example": "확인됨"
+    },
+    {
+      "name": "input_2",
+      "description": "삭제",
+      "required": true,
+      "example": "삭제"
+    },
+    {
+      "name": "input_3",
+      "description": "확인필요",
+      "required": true,
+      "example": "확인필요"
+    },
+    {
+      "name": "input_4",
+      "description": "표시가 끝난 문서 붙여넣기",
+      "required": true,
+      "example": "표시가 끝난 문서 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p18w-rewrite"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

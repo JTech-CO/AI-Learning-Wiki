@@ -1,0 +1,42 @@
+{
+  "id": "github-actions-p2",
+  "version": 1,
+  "title": "cron 시각 변환",
+  "summary": "cron 시각 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 원하는 실행 시각은 한국시간(KST) 기준 [매주 월/수/금 오후 7시]야. GitHub Actions는 UTC를 쓰니까, 이걸 cron 표현식으로 정확히 변환해줘. 변환 과정(KST-9시간)과 최종 cron 문자열, 그리고 자리별 의미(분 시 일 월 요일)를 표로 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "매주 월/수/금 오후 7시",
+      "required": true,
+      "example": "매주 월/수/금 오후 7시"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "자동화"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:github-actions-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

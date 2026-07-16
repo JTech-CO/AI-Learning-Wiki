@@ -1,0 +1,51 @@
+{
+  "id": "p44-feedback",
+  "version": 1,
+  "title": "피드백 요청 — 친구에게 카톡",
+  "summary": "피드백 요청 — 친구에게 카톡 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 AI로 만든 [앱 이름]이야: [출시 URL]. 1분만 써보고 3가지만 답해줘 🙏 ① 뭐 하는 건지 바로 알겠어? ② 쓰다가 막힌 곳 있어? ③ 딱 하나만 고친다면 뭐?",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "앱 이름",
+      "required": true,
+      "example": "앱 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "출시 URL",
+      "required": true,
+      "example": "출시 URL"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "테스트",
+    "프롬프트 설계",
+    "고객 지원",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p44-feedback"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

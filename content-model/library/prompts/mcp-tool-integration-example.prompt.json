@@ -1,0 +1,40 @@
+{
+  "id": "mcp-tool-integration-example",
+  "version": 1,
+  "title": "따라하기 예시 프롬프트",
+  "summary": "따라하기 예시 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "이번 주 회의록 페이지들을 읽고 액션아이템만 추출해서 '액션아이템'이라는 새 DB에 담당자·마감 열과 함께 넣어줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "데이터베이스",
+    "자동화",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "보안",
+    "협업"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "mcp"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:mcp-tool-integration-example"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

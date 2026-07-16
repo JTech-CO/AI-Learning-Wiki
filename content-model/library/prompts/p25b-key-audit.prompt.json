@@ -1,0 +1,47 @@
+{
+  "id": "p25b-key-audit",
+  "version": 1,
+  "title": "키 노출 위험 점검",
+  "summary": "키 노출 위험 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 프론트엔드 코드를 붙여넣을게. 브라우저에 노출되면 안 되는 비밀 키/시크릿이 하드코딩돼 있는지 찾아주고, 각각을 Supabase Edge Function으로 옮기는 방법을 우선순위 순으로. 코드: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "API",
+    "데이터베이스",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25b-key-audit"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

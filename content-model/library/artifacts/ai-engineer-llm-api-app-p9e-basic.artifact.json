@@ -1,0 +1,52 @@
+{
+  "id": "ai-engineer-llm-api-app-p9e-basic",
+  "version": 1,
+  "title": "기본 1회 질문 (재사용용 전체 코드)",
+  "summary": "기본 1회 질문 (재사용용 전체 코드) 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Python",
+  "runtime": "Python 3.11 이상",
+  "files": [
+    {
+      "path": "ai-engineer-llm-api-app-p9e-basic.py",
+      "content": "import anthropic\nclient = anthropic.Anthropic(api_key=\"[내 API 키]\")\nmsg = client.messages.create(model=\"claude-opus-4-8\", max_tokens=[최대 답 길이 예: 500], messages=[{\"role\": \"user\", \"content\": \"[여기에 질문]\"}])\nprint(msg.content[0].text)\nprint(msg.usage)  # 토큰 수 확인",
+      "language": "python"
+    }
+  ],
+  "dependencies": [
+    "anthropic"
+  ],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "코딩",
+    "API",
+    "콘텐츠",
+    "검증",
+    "Python",
+    "노코드"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-engineer-llm-api-app-p9e-basic"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

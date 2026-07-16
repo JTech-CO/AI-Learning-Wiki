@@ -1,0 +1,53 @@
+{
+  "id": "p37-chunk-strategy",
+  "version": 1,
+  "title": "내 문서 청킹 전략 설계",
+  "summary": "내 문서 청킹 전략 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [제품 FAQ/사내 규정/매뉴얼]으로 RAG 챗봇을 만들고 있어. 이 문서 특성에 맞는 청크 크기(글자 수), 겹침(overlap), 문단·표·목록 처리 방법을 표로 추천해줘. 각 선택의 이유도 한 줄씩. 문서 샘플: [문서 일부]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "제품 FAQ/사내 규정/매뉴얼",
+      "required": true,
+      "example": "제품 FAQ/사내 규정/매뉴얼"
+    },
+    {
+      "name": "input_2",
+      "description": "문서 일부",
+      "required": true,
+      "example": "문서 일부"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "문서 분석",
+    "RAG",
+    "검색",
+    "법무"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37-chunk-strategy"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

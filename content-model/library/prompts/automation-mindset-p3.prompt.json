@@ -1,0 +1,43 @@
+{
+  "id": "automation-mindset-p3",
+  "version": 1,
+  "title": "내 하루에서 자동화거리 찾기",
+  "summary": "내 하루에서 자동화거리 찾기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [직무/상황]이야. 내가 매일·매주 반복하는 일 중 자동화 가치가 높은 후보를 찾도록, 어떤 종류의 작업을 살펴봐야 하는지 질문 목록 5개로 만들어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "직무/상황",
+      "required": true,
+      "example": "직무/상황"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "자동화",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-mindset-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

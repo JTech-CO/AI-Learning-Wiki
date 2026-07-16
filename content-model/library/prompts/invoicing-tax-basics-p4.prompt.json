@@ -1,0 +1,45 @@
+{
+  "id": "invoicing-tax-basics-p4",
+  "version": 1,
+  "title": "내 세금 신고 요약 생성",
+  "summary": "내 세금 신고 요약 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 한국에서 일하는 [사업자등록 없는 프리랜서 / 1인 사업자 일반과세]야. 내가 올해 챙겨야 할 세금 신고를 (1)무엇을 (2)언제(월) (3)어디서(홈택스 등) (4)준비물 형식으로 표로 정리해줘. 그리고 지금부터 매달 해두면 좋은 기록 습관 3가지를 알려줘. 세율이나 금액은 확정 조언이 아니라 참고용이며 정확한 건 국세청/세무사 확인이 필요하다고 명시해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사업자등록 없는 프리랜서 / 1인 사업자 일반과세",
+      "required": true,
+      "example": "사업자등록 없는 프리랜서 / 1인 사업자 일반과세"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "재무·금융",
+    "검증",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:invoicing-tax-basics-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

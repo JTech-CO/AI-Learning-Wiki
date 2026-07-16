@@ -1,0 +1,59 @@
+{
+  "id": "p24b-signed",
+  "version": 1,
+  "title": "비공개 파일 서명 URL 생성",
+  "summary": "비공개 파일 서명 URL 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Supabase의 [contracts]라는 Private 버킷에 있는 [user123/계약서.pdf] 파일을, 로그인한 본인에게만 [60]초 동안 열 수 있는 임시 링크(signed URL)로 보여주는 코드를 만들어줘. 만료됐을 때의 처리도 함께.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "contracts",
+      "required": true,
+      "example": "contracts"
+    },
+    {
+      "name": "input_2",
+      "description": "user123/계약서.pdf",
+      "required": true,
+      "example": "user123/계약서.pdf"
+    },
+    {
+      "name": "input_3",
+      "description": "60",
+      "required": true,
+      "example": "60"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "코딩",
+    "데이터베이스",
+    "이미지",
+    "법무",
+    "모니터링"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24b-signed"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

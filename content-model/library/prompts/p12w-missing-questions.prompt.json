@@ -1,0 +1,45 @@
+{
+  "id": "p12w-missing-questions",
+  "version": 1,
+  "title": "빠진 질문 점검",
+  "summary": "빠진 질문 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 메일 스레드에서 상대가 나에게 물었는데 내가 아직 명확히 답하지 않은 질문만 골라 목록으로. 각 질문에 '언제(날짜) 누가 물었는지'도 표시. 스레드: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12w-missing-questions"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

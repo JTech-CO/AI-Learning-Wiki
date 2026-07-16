@@ -1,0 +1,40 @@
+{
+  "id": "sum-todo-table",
+  "version": 1,
+  "title": "할 일을 표로 정리",
+  "summary": "할 일을 표로 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 문서에 나온 할 일들을 '담당자 / 할 일 내용 / 마감일' 3칸짜리 표로 정리해줘. 마감일이 안 적혀 있으면 '미정'으로 표시해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "프롬프트 설계",
+    "생산성",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:sum-todo-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

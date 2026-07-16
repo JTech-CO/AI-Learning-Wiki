@@ -1,0 +1,47 @@
+{
+  "id": "logging-p2",
+  "version": 1,
+  "title": "로깅 추가 요청",
+  "summary": "로깅 추가 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 파이썬 코드에 logging을 추가해줘. 각 주요 단계마다 logging.info로 진행 상황을 남기고, 에러가 날 수 있는 부분은 try/except로 감싸 logging.error로 실패를 기록해줘. 로그는 'app.log' 파일에 시간·등급·메시지 형식으로 한글이 깨지지 않게 저장되게 해줘.\n\n[여기에 내 코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 내 코드 붙여넣기",
+      "required": true,
+      "example": "여기에 내 코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "자동화",
+    "Python",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "observability"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:logging-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

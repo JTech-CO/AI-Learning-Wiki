@@ -1,0 +1,45 @@
+{
+  "id": "p14e-error-table",
+  "version": 1,
+  "title": "오류 코드 분류표 생성",
+  "summary": "오류 코드 분류표 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[API 이름]의 공식 오류 응답 코드를 조사해서 '재시도 가능(일시적)' / '재시도 불가(영구적)' / '주의 필요' 3개 그룹으로 표를. 각 코드마다 의미와 권장 대응(재시도 여부·대기 방식)을 한 줄로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "API 이름",
+      "required": true,
+      "example": "API 이름"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "코딩",
+    "디버깅",
+    "API"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "exponential-backoff"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14e-error-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "p6w-diagnose",
+  "version": 1,
+  "title": "진단 요청",
+  "summary": "진단 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 준 답이 내 기대와 다릅니다. 내가 원한 것은 [원하는 결과]인데 실제 답은 [불만인 점]이었습니다. 이 답이 그렇게 나온 이유를, 내 프롬프트에서 빠졌거나 모호했던 조건 관점에서 3가지만 짚어주세요. 고치라고는 하지 말고 진단만.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "원하는 결과",
+      "required": true,
+      "example": "원하는 결과"
+    },
+    {
+      "name": "input_2",
+      "description": "불만인 점",
+      "required": true,
+      "example": "불만인 점"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6w-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

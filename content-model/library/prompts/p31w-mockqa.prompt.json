@@ -1,0 +1,52 @@
+{
+  "id": "p31w-mockqa",
+  "version": 1,
+  "title": "모의 Q&A 리허설 (까다로운 청중 역할)",
+  "summary": "모의 Q&A 리허설 (까다로운 청중 역할) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "지금부터 너는 내 발표를 듣는 까다로운 [투자심사역/팀장]이야. 아래 발표 내용을 근거로 예상질문을 '한 번에 하나씩' 던져줘. 내가 답하면 그 답의 허점을 파고드는 꼬리 질문을 이어서. 내가 '그만'이라고 할 때까지 계속하고, 마지막에 내 답변 중 가장 약했던 3가지와 개선 포인트를. 그럼 첫 질문부터. 발표 내용: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "투자심사역/팀장",
+      "required": true,
+      "example": "투자심사역/팀장"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "프레젠테이션",
+    "재무·금융",
+    "출처·인용",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p31w-mockqa"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

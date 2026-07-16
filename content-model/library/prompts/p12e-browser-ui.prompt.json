@@ -1,0 +1,46 @@
+{
+  "id": "p12e-browser-ui",
+  "version": 1,
+  "title": "브라우저 타이핑 UI",
+  "summary": "브라우저 타이핑 UI 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "바닐라 HTML+JS 한 파일로 LLM 스트리밍 챗 UI를 만들어줘. 입력창+전송버튼+출력 div. delta가 올 때마다 출력 div에 append하고 끝에 커서 '▍'를 붙였다가 완료되면 제거. 스크롤은 항상 맨 아래. API는 [내 백엔드 /api/chat 엔드포인트]가 event-stream을 반환한다고 가정. 코드에 한국어 주석.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 백엔드 /api/chat 엔드포인트",
+      "required": true,
+      "example": "내 백엔드 /api/chat 엔드포인트"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "API",
+    "프롬프트 설계",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "server-sent-events"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12e-browser-ui"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

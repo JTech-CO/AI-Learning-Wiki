@@ -1,0 +1,68 @@
+{
+  "id": "p5w-title-style",
+  "version": 1,
+  "title": "제목·카피 스타일 고정",
+  "summary": "제목·카피 스타일 고정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 예시들의 말투와 길이를 그대로 따라, 같은 스타일의 [SNS 게시글 제목]을 5개.\n예시1: [제목1]\n예시2: [제목2]\n예시3: [제목3]\n주제: [이번 주제]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "SNS 게시글 제목",
+      "required": true,
+      "example": "SNS 게시글 제목"
+    },
+    {
+      "name": "input_2",
+      "description": "제목1",
+      "required": true,
+      "example": "제목1"
+    },
+    {
+      "name": "input_3",
+      "description": "제목2",
+      "required": true,
+      "example": "제목2"
+    },
+    {
+      "name": "input_4",
+      "description": "제목3",
+      "required": true,
+      "example": "제목3"
+    },
+    {
+      "name": "input_5",
+      "description": "이번 주제",
+      "required": true,
+      "example": "이번 주제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p5w-title-style"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

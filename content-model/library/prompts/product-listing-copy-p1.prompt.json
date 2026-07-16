@@ -1,0 +1,64 @@
+{
+  "id": "product-listing-copy-p1",
+  "version": 1,
+  "title": "5블록 상세페이지 통짜 생성",
+  "summary": "5블록 상세페이지 통짜 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 전환율 높은 상세페이지 카피라이터야. 아래 정보로 '헤드라인 / 문제제기 / 베네핏 / 사회적증거 / CTA' 5블록 상세페이지를 써줘. 규칙: 과장·거짓 수치 금지, 없는 후기 지어내기 금지(자리는 [후기]로 비워둘 것), 한 문장 한 메시지. 상품:[상품명/가격/포함물] 타깃고객:[한 명의 상황] 핵심팩트:[보장/차별점]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "후기",
+      "required": true,
+      "example": "후기"
+    },
+    {
+      "name": "input_2",
+      "description": "상품명/가격/포함물",
+      "required": true,
+      "example": "상품명/가격/포함물"
+    },
+    {
+      "name": "input_3",
+      "description": "한 명의 상황",
+      "required": true,
+      "example": "한 명의 상황"
+    },
+    {
+      "name": "input_4",
+      "description": "보장/차별점",
+      "required": true,
+      "example": "보장/차별점"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "검증",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:product-listing-copy-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

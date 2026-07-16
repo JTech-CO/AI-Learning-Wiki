@@ -1,0 +1,51 @@
+{
+  "id": "py-files-io-p2",
+  "version": 1,
+  "title": "에러 해결 요청",
+  "summary": "에러 해결 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 파이썬 코드를 실행했더니 이런 에러가 났어. 초보도 알게 원인과 고친 코드를 알려줘.\n\n[코드 붙여넣기]\n\n에러메시지: [에러 내용 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코드 붙여넣기",
+      "required": true,
+      "example": "코드 붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "에러 내용 붙여넣기",
+      "required": true,
+      "example": "에러 내용 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "자동화",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-files-io-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

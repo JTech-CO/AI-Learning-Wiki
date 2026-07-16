@@ -1,0 +1,63 @@
+{
+  "id": "p9i-3context",
+  "version": 1,
+  "title": "3종 맥락 프롬프트",
+  "summary": "3종 맥락 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[대상: 누구에게]에게, [배경: 어떤 상황이라서] [하고 싶은 일]을 해줘. 조건은 [제약: 길이·형식·말투]야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상: 누구에게",
+      "required": true,
+      "example": "대상: 누구에게"
+    },
+    {
+      "name": "input_2",
+      "description": "배경: 어떤 상황이라서",
+      "required": true,
+      "example": "배경: 어떤 상황이라서"
+    },
+    {
+      "name": "input_3",
+      "description": "하고 싶은 일",
+      "required": true,
+      "example": "하고 싶은 일"
+    },
+    {
+      "name": "input_4",
+      "description": "제약: 길이·형식·말투",
+      "required": true,
+      "example": "제약: 길이·형식·말투"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "의사결정",
+    "교육",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9i-3context"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

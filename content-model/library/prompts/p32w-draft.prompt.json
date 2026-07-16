@@ -1,0 +1,56 @@
+{
+  "id": "p32w-draft",
+  "version": 1,
+  "title": "초안 생성 프롬프트",
+  "summary": "초안 생성 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "'[신메뉴/이벤트명] 출시 안내' 인스타그램 정사각 포스트를 만들어줘. 톤은 [밝고 상큼한], 색은 [브랜드 핑크], 제목·부제목·가격을 넣을 공간을 남겨줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "신메뉴/이벤트명",
+      "required": true,
+      "example": "신메뉴/이벤트명"
+    },
+    {
+      "name": "input_2",
+      "description": "밝고 상큼한",
+      "required": true,
+      "example": "밝고 상큼한"
+    },
+    {
+      "name": "input_3",
+      "description": "브랜드 핑크",
+      "required": true,
+      "example": "브랜드 핑크"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32w-draft"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

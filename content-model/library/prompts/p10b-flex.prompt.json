@@ -1,0 +1,53 @@
+{
+  "id": "p10b-flex",
+  "version": 1,
+  "title": "flex 정렬이 원하는 대로 안 될 때",
+  "summary": "flex 정렬이 원하는 대로 안 될 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "CSS flex를 쓰는데 [카드들이 가로로 안 서고 세로로 쌓여] 있어. 내 HTML과 CSS는 아래와 같아. 무엇이 문제인지 초보도 알게 짚어주고, 고친 코드를. HTML: [붙여넣기] CSS: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "카드들이 가로로 안 서고 세로로 쌓여",
+      "required": true,
+      "example": "카드들이 가로로 안 서고 세로로 쌓여"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "프롬프트 설계",
+    "검증",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p10b-flex"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "objection-handling-p3",
+  "version": 1,
+  "title": "까다로운 고객 롤플레이",
+  "summary": "까다로운 고객 롤플레이 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "지금부터 너는 [고객 특징]인 까다로운 고객이야. 나는 [판매 대상]을 파는 사람이고. 네가 반론을 하나 던지면 내가 응대할게. 내 응대가 약하면 실제 고객처럼 더 밀어붙이고, 설득력 있으면 자연스럽게 다음 반론으로 넘어가줘. 3턴 진행한 뒤 내 응대에서 가장 약했던 문장 1개와 개선안을 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고객 특징",
+      "required": true,
+      "example": "고객 특징"
+    },
+    {
+      "name": "input_2",
+      "description": "판매 대상",
+      "required": true,
+      "example": "판매 대상"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "영업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:objection-handling-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

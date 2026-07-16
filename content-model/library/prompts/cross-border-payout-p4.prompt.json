@@ -1,0 +1,43 @@
+{
+  "id": "cross-border-payout-p4",
+  "version": 1,
+  "title": "통화별 정산 경로 결정 규칙 생성",
+  "summary": "통화별 정산 경로 결정 규칙 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [USD, EUR, JPY] 통화로 해외 대금을 받는 프리랜서야. 각 통화·금액대별로 (Wise / Payoneer / PayPal / 은행 전신환) 중 실수령액 기준 어떤 경로가 유리한지 일반 원칙을 표로 정리해줘. 스프레드와 고정 수수료가 금액에 따라 어떻게 유불리가 바뀌는지 이유도 한 줄씩 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "USD, EUR, JPY",
+      "required": true,
+      "example": "USD, EUR, JPY"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cross-border-payout-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

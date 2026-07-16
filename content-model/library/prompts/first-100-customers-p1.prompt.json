@@ -1,0 +1,44 @@
+{
+  "id": "first-100-customers-p1",
+  "version": 1,
+  "title": "고객의 진짜 검색어 20개 도출",
+  "summary": "고객의 진짜 검색어 20개 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 초기 창업 마케팅 코치야. 내 타깃 고객은 다음과 같아: [1단계에서 쓴 고객 한 문장]. 이 사람이 마케팅 용어가 아니라 실제 검색창·커뮤니티에 칠 법한 '고통의 구어체 단어/문장' 20개를 뽑아줘. 각 단어 옆에 그 단어를 검색할 때의 심리 상태를 한 줄로 붙여줘. 뻔한 일반명사 말고 구체적일수록 좋아.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "1단계에서 쓴 고객 한 문장",
+      "required": true,
+      "example": "1단계에서 쓴 고객 한 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "마케팅"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:first-100-customers-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

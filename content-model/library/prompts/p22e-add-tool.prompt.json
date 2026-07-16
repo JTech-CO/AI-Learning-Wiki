@@ -1,0 +1,51 @@
+{
+  "id": "p22e-add-tool",
+  "version": 1,
+  "title": "새 도구 하나 추가하기",
+  "summary": "새 도구 하나 추가하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "지금 내 에이전트에 도구 [get_weather, calculate]가 있어. 여기에 [save_note - 텍스트를 메모로 저장]라는 세 번째 도구를 추가하고 싶어. tools 배열 정의, 디스패처 분기, 그리고 이 도구가 마지막 단계에서 호출되도록 유도하는 시스템 프롬프트 한 줄을 함께.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "get_weather, calculate",
+      "required": true,
+      "example": "get_weather, calculate"
+    },
+    {
+      "name": "input_2",
+      "description": "save_note - 텍스트를 메모로 저장",
+      "required": true,
+      "example": "save_note - 텍스트를 메모로 저장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "자동화",
+    "AI 에이전트",
+    "검색",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "tool-result"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22e-add-tool"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

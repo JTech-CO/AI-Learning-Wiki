@@ -1,0 +1,40 @@
+{
+  "id": "p2b-example-habit",
+  "version": 1,
+  "title": "하루 습관 체크리스트",
+  "summary": "하루 습관 체크리스트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "하루 습관 체크리스트 단일 페이지 웹앱을 만들어줘. 운동/물 마시기/독서 3개 항목, 각 항목 옆 동그라미를 누르면 완료 체크, 맨 아래에 '3개 중 2개 완료'처럼 오늘 진행도. 맨 위에 오늘 날짜도. 한국어, 큰 글씨, 휴대폰에서도.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "프롬프트 설계",
+    "웹 개발",
+    "노코드",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2b-example-habit"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

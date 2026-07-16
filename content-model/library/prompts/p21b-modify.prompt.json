@@ -1,0 +1,53 @@
+{
+  "id": "p21b-modify",
+  "version": 1,
+  "title": "코드 수정 요청",
+  "summary": "코드 수정 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 Supabase로 todo 앱을 만들고 있어. 테이블 이름은 'todos'이고 열은 id, created_at, task야. 아래 HTML 코드에 [원하는 기능: 완료 체크박스, 삭제 버튼]을 추가해서 전체 코드를 다시 줘. 초보라서 그대로 복붙할 수 있게 한 파일로. [내 todo.html 코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "원하는 기능: 완료 체크박스, 삭제 버튼",
+      "required": true,
+      "example": "원하는 기능: 완료 체크박스, 삭제 버튼"
+    },
+    {
+      "name": "input_2",
+      "description": "내 todo.html 코드",
+      "required": true,
+      "example": "내 todo.html 코드"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "데이터베이스",
+    "생산성",
+    "보안",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p21b-modify"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

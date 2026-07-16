@@ -1,0 +1,49 @@
+{
+  "id": "p33i-filter",
+  "version": 1,
+  "title": "목록에서 조건으로 골라내기",
+  "summary": "목록에서 조건으로 골라내기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 표에서 [연락처가 있는 행]만 골라 같은 형식의 표로 다시 보여줘. 조건에 맞지 않는 행은 제외해. [여기에 표 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "연락처가 있는 행",
+      "required": true,
+      "example": "연락처가 있는 행"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 표 붙여넣기",
+      "required": true,
+      "example": "여기에 표 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33i-filter"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

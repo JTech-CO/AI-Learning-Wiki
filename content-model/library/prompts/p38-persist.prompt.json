@@ -1,0 +1,40 @@
+{
+  "id": "p38-persist",
+  "version": 1,
+  "title": "데이터 저장 안 될 때",
+  "summary": "데이터 저장 안 될 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "저장한 내용이 새로고침하면 사라져. 메모리에만 임시 저장되는 것 같아. Replit PostgreSQL을 연결해서 영구 저장되도록 고쳐줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "데이터베이스",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "웹 개발",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p38-persist"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

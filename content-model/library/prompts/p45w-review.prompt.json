@@ -1,0 +1,47 @@
+{
+  "id": "p45w-review",
+  "version": 1,
+  "title": "흐름 점검 체크 (만들고 나서)",
+  "summary": "흐름 점검 체크 (만들고 나서) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내가 만든 자동화 흐름 설명이야. 논리적 허점(빠진 조건, 무한 반복 위험, 실패해도 알림 없는 구간, 두 경로에 다 걸리거나 아무 경로에도 안 걸리는 경우)이 있는지 점검하고, 고칠 점을 알려줘.\n[흐름 설명 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "흐름 설명 붙여넣기",
+      "required": true,
+      "example": "흐름 설명 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "자동화",
+    "검증",
+    "안전",
+    "노코드"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p45w-review"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

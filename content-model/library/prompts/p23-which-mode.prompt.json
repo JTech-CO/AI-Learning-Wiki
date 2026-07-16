@@ -1,0 +1,49 @@
+{
+  "id": "p23-which-mode",
+  "version": 1,
+  "title": "이 질문에 어느 모드가 맞는지 AI에게 물어보기",
+  "summary": "이 질문에 어느 모드가 맞는지 AI에게 물어보기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 질문은 너의 '빠른 답변(Instant)'으로 충분해, 아니면 '깊게 생각하는 추론(Thinking) 모드'가 필요해? 한 줄 이유와 함께 둘 중 하나로. 질문: [내 질문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 질문",
+      "required": true,
+      "example": "내 질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "다음 질문은 너의 '빠른 답변(Instant)'으로 충분해, 아니면 '깊게 생각하는 추론(Thinking) 모드'가 필요해? 한 줄 이유와 함께 둘 중 하나로. 질문: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "SQL"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23-which-mode"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

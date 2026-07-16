@@ -1,0 +1,52 @@
+{
+  "id": "p25w-title",
+  "version": 1,
+  "title": "차트 제목 문장 다듬기",
+  "summary": "차트 제목 문장 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "차트 제목을 데이터 라벨이 아니라 '결론을 말하는 한 문장'으로 바꾸려고 해. 원래 제목은 '[월별 매출]'이고 내가 보여주려는 결론은 '[3분기부터 온라인이 오프라인을 추월]'이야. 12자 내외로 눈에 띄는 제목 후보 3개를.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "월별 매출",
+      "required": true,
+      "example": "월별 매출"
+    },
+    {
+      "name": "input_2",
+      "description": "3분기부터 온라인이 오프라인을 추월",
+      "required": true,
+      "example": "3분기부터 온라인이 오프라인을 추월"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "시각화",
+    "영업",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25w-title"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p43i-research",
+  "version": 1,
+  "title": "조사 (검색형 AI에 붙여넣기)",
+  "summary": "조사 (검색형 AI에 붙여넣기) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [주제]에 대한 글을 쓰려고 해. 2026년 기준 최신 핵심 정보 3~5가지를 알려줘. 각 항목마다 반드시 출처 링크를 함께 달아주고, 확실하지 않은 건 '불확실'이라고 표시해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "조사",
+    "자동화",
+    "검색",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "tool-selection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p43i-research"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

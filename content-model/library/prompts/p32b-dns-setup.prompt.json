@@ -1,0 +1,63 @@
+{
+  "id": "p32b-dns-setup",
+  "version": 1,
+  "title": "DNS 레코드 설정 도우미",
+  "summary": "DNS 레코드 설정 도우미 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [가비아]에서 산 도메인 [mycafe.com]을 Vercel에 배포한 앱에 연결하려고 해. Vercel이 알려준 값은 루트는 A 레코드 [76.76.21.21], www는 CNAME [cname.vercel-dns.com]이야. [가비아] DNS 관리 화면에서 호스트/타입/값을 각각 어디에 어떻게 입력하는지 초보자용으로 단계별로 알려줘. 스크린샷 대신 글로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "가비아",
+      "required": true,
+      "example": "가비아"
+    },
+    {
+      "name": "input_2",
+      "description": "mycafe.com",
+      "required": true,
+      "example": "mycafe.com"
+    },
+    {
+      "name": "input_3",
+      "description": "76.76.21.21",
+      "required": true,
+      "example": "76.76.21.21"
+    },
+    {
+      "name": "input_4",
+      "description": "cname.vercel-dns.com",
+      "required": true,
+      "example": "cname.vercel-dns.com"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "보안",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "https"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32b-dns-setup"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

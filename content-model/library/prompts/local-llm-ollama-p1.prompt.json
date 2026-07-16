@@ -1,0 +1,58 @@
+{
+  "id": "local-llm-ollama-p1",
+  "version": 1,
+  "title": "민감 문서 요약·검토",
+  "summary": "민감 문서 요약·검토 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 [계약서/진단서/일기] 내용을 인터넷에 올리지 않고 너에게만 보여줄게. 초등학생도 알 만큼 쉬운 말로 핵심 3가지와 내가 주의할 점 1가지를 짚어줘:\n[여기에 민감한 글 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "계약서/진단서/일기",
+      "required": true,
+      "example": "계약서/진단서/일기"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 민감한 글 붙여넣기",
+      "required": true,
+      "example": "여기에 민감한 글 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "다음 실제 값 내용을 인터넷에 올리지 않고 너에게만 보여줄게. 초등학생도 알 만큼 쉬운 말로 핵심 3가지와 내가 주의할 점 1가지를 짚어줘:\n실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "교육",
+    "문서 분석",
+    "법무"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "large-language-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:local-llm-ollama-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

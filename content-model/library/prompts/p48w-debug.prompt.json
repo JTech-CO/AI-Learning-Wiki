@@ -1,0 +1,53 @@
+{
+  "id": "p48w-debug",
+  "version": 1,
+  "title": "Apps Script 디버깅 도우미",
+  "summary": "Apps Script 디버깅 도우미 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "구글 Apps Script로 스프레드시트 summary 범위를 읽어 Gmail 초안을 만들려는데 에러가 나. [에러 메시지] [내 코드] 원인과 수정 코드를 한국어 주석과 함께. 초보라 한 줄씩 설명 부탁.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "에러 메시지",
+      "required": true,
+      "example": "에러 메시지"
+    },
+    {
+      "name": "input_2",
+      "description": "내 코드",
+      "required": true,
+      "example": "내 코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "프레젠테이션",
+    "문서 분석",
+    "스프레드시트"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p48w-debug"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

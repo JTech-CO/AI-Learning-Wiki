@@ -1,0 +1,45 @@
+{
+  "id": "p8i-format",
+  "version": 1,
+  "title": "출력형식만 빠르게 조이기",
+  "summary": "출력형식만 빠르게 조이기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 준 답변을 내용은 그대로 두고 형식만 바꿔줘: [원하는 형식 예 - 표로 / 3개 항목 번호로 / 각 100자 이내 / 해시태그 3개 추가].",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "원하는 형식 예 - 표로 / 3개 항목 번호로 / 각 100자 이내 / 해시태그 3개 추가",
+      "required": true,
+      "example": "원하는 형식 예 - 표로 / 3개 항목 번호로 / 각 100자 이내 / 해시태그 3개 추가"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8i-format"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

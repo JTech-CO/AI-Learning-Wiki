@@ -1,0 +1,59 @@
+{
+  "id": "ai-guards-p1",
+  "version": 1,
+  "title": "출력 스키마 검증 코드 생성",
+  "summary": "출력 스키마 검증 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 작업의 LLM 출력을 검증하는 zod 스키마와 검증 함수를 만들어줘. 작업: [작업 설명, 예: 블로그 초안 생성]. 필수 필드: [title, body, tags]. 규칙: [title 5자 이상, body 200자 이상, tags 최소 1개]. 검증 실패 시 1회 재시도 후 리뷰 큐로 보내는 흐름도 포함하고, 각 줄에 한국어 주석을 달아줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업 설명, 예: 블로그 초안 생성",
+      "required": true,
+      "example": "작업 설명, 예: 블로그 초안 생성"
+    },
+    {
+      "name": "input_2",
+      "description": "title, body, tags",
+      "required": true,
+      "example": "title, body, tags"
+    },
+    {
+      "name": "input_3",
+      "description": "title 5자 이상, body 200자 이상, tags 최소 1개",
+      "required": true,
+      "example": "title 5자 이상, body 200자 이상, tags 최소 1개"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "자동화",
+    "구조화 출력",
+    "콘텐츠",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-guards-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

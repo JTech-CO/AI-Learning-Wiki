@@ -1,0 +1,53 @@
+{
+  "id": "p25-score",
+  "version": 1,
+  "title": "청킹 결과 채점",
+  "summary": "청킹 결과 채점 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 문서를 청킹한 결과와 검증 질문 5개야. 각 질문에 대해 그 질문의 정답 문장이 '온전히 하나의 청크 안에' 들어있으면 O, 두 청크로 쪼개졌거나 핵심 숫자/문장이 잘렸으면 X로 채점하고 어느 청크에 있었는지 번호를. 마지막에 O 개수를 5점 만점으로 합산. 질문: [질문 5개] 청크 목록: [청크 목록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문 5개",
+      "required": true,
+      "example": "질문 5개"
+    },
+    {
+      "name": "input_2",
+      "description": "청크 목록",
+      "required": true,
+      "example": "청크 목록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "문서 분석",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25-score"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "proposal-and-closing-p2",
+  "version": 1,
+  "title": "견적서 표",
+  "summary": "견적서 표 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 내용으로 깔끔한 견적서 표를 만들어줘. 항목/수량/단가/금액 열, 마지막에 합계.\n- 제공 항목: [...]\n- 단가: [...]\n조건:\n1) '포함'과 '불포함'을 분명히 구분해 적어줘(분쟁 방지).\n2) 합계는 내가 검산할 테니 계산식도 함께 보여줘.\n3) 모호한 '기타/추가'는 넣지 말 것.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "재무·금융",
+    "검증",
+    "법무"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:proposal-and-closing-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

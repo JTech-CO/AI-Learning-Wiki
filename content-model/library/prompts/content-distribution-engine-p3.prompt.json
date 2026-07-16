@@ -1,0 +1,46 @@
+{
+  "id": "content-distribution-engine-p3",
+  "version": 1,
+  "title": "1주일 배포 캘린더 짜기",
+  "summary": "1주일 배포 캘린더 짜기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 다음 게시물들을 갖고 있어: [쇼츠 3개, 블로그 1개, 카드뉴스 1개, 스레드 1개]. 월요일부터 금요일까지 하루 1개씩 배포하는 콘텐츠 캘린더를 표로 만들어줘. 각 요일에 어떤 플랫폼에 무엇을 올릴지, 추천 발행 시간대(한국 기준)와 함께 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "쇼츠 3개, 블로그 1개, 카드뉴스 1개, 스레드 1개",
+      "required": true,
+      "example": "쇼츠 3개, 블로그 1개, 카드뉴스 1개, 스레드 1개"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이미지",
+    "콘텐츠",
+    "배포",
+    "모니터링"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:content-distribution-engine-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

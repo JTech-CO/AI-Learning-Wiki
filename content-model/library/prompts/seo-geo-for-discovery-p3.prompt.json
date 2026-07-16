@@ -1,0 +1,47 @@
+{
+  "id": "seo-geo-for-discovery-p3",
+  "version": 1,
+  "title": "인용 가능성 진단",
+  "summary": "인용 가능성 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 본문을 ChatGPT 같은 AI가 답변에 인용한다고 가정하고 진단해줘. (1) 인용될 만한 문장 3개, (2) 형용사뿐이라 인용이 어려운 문장과 숫자·출처로 바꾸는 수정안, (3) 추가로 넣으면 인용 확률이 오를 사실 조각 3가지를 알려줘. 본문: [본문 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "본문 붙여넣기",
+      "required": true,
+      "example": "본문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "구조화 출력",
+    "마케팅",
+    "콘텐츠",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:seo-geo-for-discovery-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

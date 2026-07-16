@@ -1,0 +1,64 @@
+{
+  "id": "p45w-filter",
+  "version": 1,
+  "title": "분기 조건(필터) 정확히 쓰기",
+  "summary": "분기 조건(필터) 정확히 쓰기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Make의 Router 뒤 Filter 조건을 만들려고 해. 아래 상황에서 각 경로에 넣을 필터 조건(필드명, 연산자, 값)을 정확한 표현으로 알려줘. 경계값(예: 정확히 30만원)이 어느 경로로 가야 하는지도 명확히 해줘.\n분기 기준: [견적 금액]\n경로A: [팀장 승인]\n경로B: [자동 처리]\n경계 처리: [30만원은 승인 경로]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "견적 금액",
+      "required": true,
+      "example": "견적 금액"
+    },
+    {
+      "name": "input_2",
+      "description": "팀장 승인",
+      "required": true,
+      "example": "팀장 승인"
+    },
+    {
+      "name": "input_3",
+      "description": "자동 처리",
+      "required": true,
+      "example": "자동 처리"
+    },
+    {
+      "name": "input_4",
+      "description": "30만원은 승인 경로",
+      "required": true,
+      "example": "30만원은 승인 경로"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "자동화",
+    "협업",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p45w-filter"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

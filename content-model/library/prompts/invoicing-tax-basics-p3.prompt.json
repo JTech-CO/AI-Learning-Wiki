@@ -1,0 +1,68 @@
+{
+  "id": "invoicing-tax-basics-p3",
+  "version": 1,
+  "title": "미수금 리마인더 메일",
+  "summary": "미수금 리마인더 메일 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "입금 기한이 지났는데 아직 입금되지 않은 클라이언트에게 보낼, 관계를 해치지 않는 정중한 한국어 리마인더 이메일을 써줘. 압박하지 않되 명확하게. 인보이스 번호와 금액, 계좌를 다시 안내해줘.\n- 클라이언트: [(주)ABC] / 인보이스: [#2026-001] / 금액: [800,000원] / 원래 기한: [2026-07-17] / 계좌: [국민 000-00-000000]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "(주)ABC",
+      "required": true,
+      "example": "(주)ABC"
+    },
+    {
+      "name": "input_2",
+      "description": "#2026-001",
+      "required": true,
+      "example": "#2026-001"
+    },
+    {
+      "name": "input_3",
+      "description": "800,000원",
+      "required": true,
+      "example": "800,000원"
+    },
+    {
+      "name": "input_4",
+      "description": "2026-07-17",
+      "required": true,
+      "example": "2026-07-17"
+    },
+    {
+      "name": "input_5",
+      "description": "국민 000-00-000000",
+      "required": true,
+      "example": "국민 000-00-000000"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "재무·금융",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:invoicing-tax-basics-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

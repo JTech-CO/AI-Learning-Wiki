@@ -1,0 +1,45 @@
+{
+  "id": "hermes-self-improving-agent-p3",
+  "version": 1,
+  "title": "Claude로 어려운 일 처리",
+  "summary": "Claude로 어려운 일 처리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "이번 작업은 복잡하니까 두뇌를 Claude로 바꿔서 처리해줘. 목표: [복잡한 작업 설명]. 끝나면 결과와 핵심 단계를 메모리에 정리해두고, 평소 작업용 모델로 다시 돌아와줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "복잡한 작업 설명",
+      "required": true,
+      "example": "복잡한 작업 설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "AI 에이전트",
+    "검색"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:hermes-self-improving-agent-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "capstone-ship-p3",
+  "version": 1,
+  "title": "매일 자동 실행(GitHub Actions cron)",
+  "summary": "매일 자동 실행(GitHub Actions cron) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 GitHub 저장소의 main.py를 매일 한국시간 오전 8시에 자동 실행하는 .github/workflows/daily.yml 파일을 만들어줘. requirements.txt로 라이브러리 설치, API 키/토큰은 GitHub Secrets(TELEGRAM_TOKEN, AI_KEY)에서 주입. cron은 UTC 기준이니 한국 8시에 맞는 값으로 계산해서 주석으로 설명해줘. Secrets 등록하는 클릭 순서도 알려줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "API",
+    "자동화",
+    "프로젝트 관리",
+    "배포"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:capstone-ship-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

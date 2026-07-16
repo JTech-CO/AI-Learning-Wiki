@@ -1,0 +1,69 @@
+{
+  "id": "p17i-compare",
+  "version": 1,
+  "title": "3 두 답 비교·판정 요청",
+  "summary": "3 두 답 비교·판정 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "같은 요청에 대한 두 답이 있어. 내 목표는 [증상 목표: 예-더 쉽고 짧게]야.\n[이전 답] \"\"\"[붙여넣기]\"\"\"\n[수정 후 답] \"\"\"[붙여넣기]\"\"\"\n목표 기준으로 어느 쪽이 나은지, 증상이 얼마나 줄었는지, 아직 남은 문제는 무엇인지 3줄로 판정해줘. 다음엔 5요소 중 어디를 건드려야 할지도 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "증상 목표: 예-더 쉽고 짧게",
+      "required": true,
+      "example": "증상 목표: 예-더 쉽고 짧게"
+    },
+    {
+      "name": "input_2",
+      "description": "이전 답",
+      "required": true,
+      "example": "이전 답"
+    },
+    {
+      "name": "input_3",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    },
+    {
+      "name": "input_4",
+      "description": "수정 후 답",
+      "required": true,
+      "example": "수정 후 답"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "같은 요청에 대한 두 답이 있어. 내 목표는 반복 업무 시간을 절반으로 줄이기야.\n실제 값 \"\"\"실제 값\"\"\"\n실제 값 \"\"\"실제 값\"\"\"\n목표 기준으로 어느 쪽이 나은지, 증상이 얼마나 줄었는지, 아직 남은 문제는 무엇인지 3줄로 판정해줘. 다음엔 5요소 중 어디를 건드려야 할지도 알려줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "디버깅",
+    "프롬프트 설계",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17i-compare"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

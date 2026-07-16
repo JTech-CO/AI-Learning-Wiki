@@ -1,0 +1,40 @@
+{
+  "id": "p26w-connect",
+  "version": 1,
+  "title": "슬라이서 연결이 안 될 때",
+  "summary": "슬라이서 연결이 안 될 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "엑셀에서 슬라이서를 눌러도 차트 하나만 필터되고 나머지는 안 바뀌어. '보고서 연결'을 어디서 어떻게 하는지, 그리고 피벗들이 같은 데이터 원본을 써야 하는 이유를 초보도 알게 단계별로.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "스프레드시트",
+    "시각화",
+    "협업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26w-connect"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

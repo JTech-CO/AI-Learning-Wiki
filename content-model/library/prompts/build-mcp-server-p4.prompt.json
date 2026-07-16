@@ -1,0 +1,47 @@
+{
+  "id": "build-mcp-server-p4",
+  "version": 1,
+  "title": "공개 서버 고르기",
+  "summary": "공개 서버 고르기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[하고 싶은 일]을 위해 쓸 만한 공개 MCP 서버를 추천해줘. 공식 여부·인기도·업데이트 최근성·요구 권한을 기준으로 비교하고, 등록 방법까지 단계로 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "하고 싶은 일",
+      "required": true,
+      "example": "하고 싶은 일"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "API",
+    "데이터베이스",
+    "AI 에이전트",
+    "Python",
+    "JavaScript"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "mcp"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:build-mcp-server-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

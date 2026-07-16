@@ -1,0 +1,57 @@
+{
+  "id": "hire-delegate-sops-p2",
+  "version": 1,
+  "title": "2 위임 메시지 작성 (프리랜서·가상비서에게)",
+  "summary": "2 위임 메시지 작성 (프리랜서·가상비서에게) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 SOP를 [가상비서/프리랜서]에게 처음 위임하려고 해. 정중하지만 명확한 위임 메시지를 써줘. 포함할 것: 무엇을·언제까지·완료 증거로 무엇을 보낼지·첫 몇 회는 검수받을 것·질문 환영한다는 말. 너무 길지 않게.\n\nSOP: [SOP 내용 붙여넣기]\n마감: [예: 매주 월요일 오전 10시]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "가상비서/프리랜서",
+      "required": true,
+      "example": "가상비서/프리랜서"
+    },
+    {
+      "name": "input_2",
+      "description": "SOP 내용 붙여넣기",
+      "required": true,
+      "example": "SOP 내용 붙여넣기"
+    },
+    {
+      "name": "input_3",
+      "description": "예: 매주 월요일 오전 10시",
+      "required": true,
+      "example": "매주 월요일 오전 10시"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "생산성",
+    "협업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:hire-delegate-sops-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

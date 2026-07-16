@@ -1,0 +1,44 @@
+{
+  "id": "p41i-hard",
+  "version": 1,
+  "title": "어려운 계산·계획 (무료에서도 정확도 올리기)",
+  "summary": "어려운 계산·계획 (무료에서도 정확도 올리기) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 문제를 단계별로 천천히 풀어줘. 중간 계산도 보여주고, 마지막에 정답만 한 줄로 다시 정리해줘. (ChatGPT라면 +→Thinking을 먼저 켜면 더 좋다) [문제 내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문제 내용",
+      "required": true,
+      "example": "문제 내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "의사결정",
+    "SQL"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "knowledge-cutoff"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p41i-hard"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

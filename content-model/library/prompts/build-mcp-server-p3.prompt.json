@@ -1,0 +1,47 @@
+{
+  "id": "build-mcp-server-p3",
+  "version": 1,
+  "title": "Claude Desktop 등록 도움",
+  "summary": "Claude Desktop 등록 도움 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 MCP 서버 파일 경로는 [경로]이고 Python으로 실행해. Claude Desktop의 claude_desktop_config.json에 등록할 정확한 JSON과, 설정파일 위치(Mac/Windows별)를 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "경로",
+      "required": true,
+      "example": "경로"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "API",
+    "데이터베이스",
+    "AI 에이전트",
+    "구조화 출력",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "mcp"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:build-mcp-server-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "rag-citation-alignment",
+  "version": 1,
+  "title": "답변 주장과 인용 근거 정합성 검사",
+  "summary": "답변 주장과 인용 근거 정합성 검사 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 RAG 답변의 각 사실 주장을 문장 단위로 나누고 연결된 인용 구간이 그 주장을 직접 뒷받침하는지 판정해줘. 판정은 충분·부분·불충분·무관으로 구분하고 인용에 없는 세부사항은 표시해. 답변과 인용: [내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내용",
+      "required": true,
+      "example": "내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "링크 존재 여부와 근거 적합성은 별개이므로 원문 접근과 문장 정합성을 모두 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "답변의 세 주장과 인용 문단 두 개를 충분·부분·불충분·무관으로 판정해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "RAG",
+    "출처·인용",
+    "검증",
+    "평가",
+    "글쓰기"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "automation-mindset-p1",
+  "version": 1,
+  "title": "자동화 3조각 분해",
+  "summary": "자동화 3조각 분해 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 반복 업무를 자동화하려고 해: [업무 설명]. 이걸 트리거(언제 시작)·조건(무엇만 거를지)·액션(무엇을 자동으로)의 세 조각으로 분해해줘. 각 조각의 후보를 2~3개씩 제안하되, 아직 도구는 정하지 말고 논리만 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "업무 설명",
+      "required": true,
+      "example": "업무 설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "자동화",
+    "생산성",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-mindset-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "monitoring-p3",
+  "version": 1,
+  "title": "복구 절차 문서화",
+  "summary": "복구 절차 문서화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[자동화 이름]이 죽었다는 알림을 받았을 때 무엇을 확인하고 어떻게 다시 살릴지, 나와 동료가 새벽에도 바로 볼 수 있는 체크리스트를 만들어줘. 흔한 원인 3가지와 각각의 대처도 포함해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "자동화 이름",
+      "required": true,
+      "example": "자동화 이름"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "자동화",
+    "검증",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "observability"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:monitoring-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

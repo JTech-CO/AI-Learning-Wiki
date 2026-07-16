@@ -1,0 +1,50 @@
+{
+  "id": "ai-engineer-llm-api-app-p9e-loop",
+  "version": 1,
+  "title": "여러 질문 자동 반복 (반복문)",
+  "summary": "여러 질문 자동 반복 (반복문) 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Text",
+  "runtime": "텍스트 편집기",
+  "files": [
+    {
+      "path": "ai-engineer-llm-api-app-p9e-loop.txt",
+      "content": "questions = [\"[질문1]\", \"[질문2]\", \"[질문3]\"]\nfor q in questions:\n    msg = client.messages.create(model=\"claude-opus-4-8\", max_tokens=300, messages=[{\"role\": \"user\", \"content\": q}])\n    print(\"Q:\", q)\n    print(\"A:\", msg.content[0].text)\n    print(\"---\")",
+      "language": "text"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "코딩",
+    "API",
+    "자동화",
+    "콘텐츠",
+    "Python",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "api-key"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-engineer-llm-api-app-p9e-loop"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

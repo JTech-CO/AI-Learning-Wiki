@@ -1,0 +1,59 @@
+{
+  "id": "p38w-table",
+  "version": 1,
+  "title": "비교표 자동 채우기",
+  "summary": "비교표 자동 채우기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 [질문]에 대해 내가 붙여넣는 3개 출처 원문을 읽고, 각 출처의 핵심 주장·수치·발행일을 비교표로 정리해줘. 열은 [항목|출처A|출처B|출처C|비고], 행은 항목별로. 수치가 서로 다른 칸은 ⚠️로 표시하고, 표 아래에 상충 지점만 따로 목록으로 정리해줘.\n질문: [질문]\n출처A 원문: [붙여넣기]\n출처B 원문: [붙여넣기]\n출처C 원문: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    },
+    {
+      "name": "input_2",
+      "description": "항목|출처A|출처B|출처C|비고",
+      "required": true,
+      "example": "항목|출처A|출처B|출처C|비고"
+    },
+    {
+      "name": "input_3",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "의사결정",
+    "콘텐츠",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p38w-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

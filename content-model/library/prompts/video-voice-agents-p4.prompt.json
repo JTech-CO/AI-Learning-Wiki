@@ -1,0 +1,53 @@
+{
+  "id": "video-voice-agents-p4",
+  "version": 1,
+  "title": "TTS 나레이션 대본 다듬기",
+  "summary": "TTS 나레이션 대본 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 영상 나레이션 대본을 음성 합성(TTS)용으로 다듬어줘. 귀로 들었을 때 자연스럽게, 한 호흡에 읽히도록 문장을 짧게 끊고, 강조할 단어를 표시하고, 총 낭독 시간이 [초]초에 맞도록 글자 수를 조절해줘.\n원본 대본: [내 대본]\n톤: [따뜻한 / 신뢰감 있는 / 경쾌한]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 대본",
+      "required": true,
+      "example": "내 대본"
+    },
+    {
+      "name": "input_2",
+      "description": "따뜻한 / 신뢰감 있는 / 경쾌한",
+      "required": true,
+      "example": "따뜻한 / 신뢰감 있는 / 경쾌한"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "AI 에이전트",
+    "영상",
+    "오디오",
+    "멀티모달"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "multimodal-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:video-voice-agents-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

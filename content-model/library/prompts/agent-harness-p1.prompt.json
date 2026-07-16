@@ -1,0 +1,47 @@
+{
+  "id": "agent-harness-p1",
+  "version": 1,
+  "title": "도구 정의(스키마) 자동 생성",
+  "summary": "도구 정의(스키마) 자동 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 Anthropic 파이썬 SDK(pip install anthropic)로 저수준 tool-loop 에이전트를 만든다. [예: 도시별 환율을 조회하는] 도구를 추가하고 싶다. 이 도구의 tools 스키마(name, description, input_schema)와 실제 파이썬 함수를 함께 써줘. description은 AI가 언제 이 도구를 골라야 하는지 명확히 적어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 도시별 환율을 조회하는",
+      "required": true,
+      "example": "도시별 환율을 조회하는"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "시각화",
+    "코딩",
+    "API",
+    "AI 에이전트",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "agent-harness"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-harness-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

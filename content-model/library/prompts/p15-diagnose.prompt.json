@@ -1,0 +1,49 @@
+{
+  "id": "p15-diagnose",
+  "version": 1,
+  "title": "기존 프롬프트 5요소로 진단",
+  "summary": "기존 프롬프트 5요소로 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 프롬프트를 지시·맥락·입력·출력형식·제약 5개 요소로 분해해서 표로 보여줘. 비어 있거나 모호한 요소가 뭔지 지적하고, 각 빈칸을 어떻게 채우면 좋을지 예시 질문 1개씩 제안해줘. 프롬프트: [내 프롬프트]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 프롬프트",
+      "required": true,
+      "example": "내 프롬프트"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "다음 프롬프트를 지시·맥락·입력·출력형식·제약 5개 요소로 분해해서 표로 보여줘. 비어 있거나 모호한 요소가 뭔지 지적하고, 각 빈칸을 어떻게 채우면 좋을지 예시 질문 1개씩 제안해줘. 프롬프트: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "테스트",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "instruction"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p15-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

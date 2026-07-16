@@ -1,0 +1,65 @@
+{
+  "id": "p26-mini-search",
+  "version": 1,
+  "title": "미니 의미검색기(RAG 맛보기)",
+  "summary": "미니 의미검색기(RAG 맛보기) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 임베딩 기반 의미검색 엔진이야. 아래 [문서] 5개와 [질문] 1개가 있어. 각 문서와 질문의 의미 유사도를 0~1로 추정해 높은 순으로 정렬하고, 왜 1위 문서가 질문과 가장 가까운지 한 줄로 설명해줘. [질문]: [강아지 산책 팁]. [문서]: 1)... 2)... 3)... 4)... 5)...",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문서",
+      "required": true,
+      "example": "문서"
+    },
+    {
+      "name": "input_2",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    },
+    {
+      "name": "input_3",
+      "description": "강아지 산책 팁",
+      "required": true,
+      "example": "강아지 산책 팁"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 임베딩 기반 의미검색 엔진이야. 아래 회의록 원문 5개와 실제 값 1개가 있어. 각 문서와 질문의 의미 유사도를 0~1로 추정해 높은 순으로 정렬하고, 왜 1위 문서가 질문과 가장 가까운지 한 줄로 설명해줘. 실제 값: 실제 값. 회의록 원문: 1)... 2)... 3)... 4)... 5)...",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "RAG",
+    "검색",
+    "고객 지원",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "embedding"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26-mini-search"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

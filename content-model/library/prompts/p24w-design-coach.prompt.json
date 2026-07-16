@@ -1,0 +1,51 @@
+{
+  "id": "p24w-design-coach",
+  "version": 1,
+  "title": "피벗 설계 코치",
+  "summary": "피벗 설계 코치 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 엑셀 피벗테이블을 설계 중이야. 내 원자료 열은 [주문일, 지역, 상품, 수량, 매출, 원가]이고, 알고 싶은 건 [지역별 월 매출 추세와 상품별 이익률]이야. 이 목적을 위해 행/열/값/필터에 각각 어떤 필드를 넣어야 하는지, 값의 집계 방식(합계·평균·개수)까지 콕 집어 표로 정리해줘. 왜 그렇게 배치하는지 한 줄 이유도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주문일, 지역, 상품, 수량, 매출, 원가",
+      "required": true,
+      "example": "주문일, 지역, 상품, 수량, 매출, 원가"
+    },
+    {
+      "name": "input_2",
+      "description": "지역별 월 매출 추세와 상품별 이익률",
+      "required": true,
+      "example": "지역별 월 매출 추세와 상품별 이익률"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "스프레드시트",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24w-design-coach"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

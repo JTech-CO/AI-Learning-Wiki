@@ -1,0 +1,45 @@
+{
+  "id": "p39i-fill",
+  "version": 1,
+  "title": "빈 5요소 채우기 아이디어 요청",
+  "summary": "빈 5요소 채우기 아이디어 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 만들고 싶은 그림은 [한 문장 설명]이야. 이걸 주제/스타일/구도/색감/분위기 5요소로 나눠서, 각 요소에 어울리는 구체적 단어를 3개씩 후보로 제안해줘. 표로 보여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "한 문장 설명",
+      "required": true,
+      "example": "한 문장 설명"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "프롬프트 설계",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39i-fill"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

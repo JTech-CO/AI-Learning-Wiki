@@ -1,0 +1,68 @@
+{
+  "id": "invoicing-tax-basics-p1",
+  "version": 1,
+  "title": "인보이스 초안 자동 작성",
+  "summary": "인보이스 초안 자동 작성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "너는 프리랜서 회계 도우미야. 아래 정보로 한국식 인보이스(청구서) 표를 마크다운으로 만들어줘. 필수 8항목(인보이스번호, 발행일, 공급자 이름/연락처/계좌, 클라이언트명, 항목별 내역과 단가, 합계, 입금기한, 입금계좌)을 모두 포함하고, 빠진 정보가 있으면 무엇이 필요한지 먼저 물어봐.\n- 내 이름/연락처/계좌: [홍길동 / 010-0000-0000 / 국민 000-00-000000]\n- 클라이언트명: [(주)ABC]\n- 작업 내역과 금액: [랜딩페이지 디자인 1건 800000원]\n- 발행일: [2026-07-03] / 입금기한: [발행 후 14일]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "홍길동 / 010-0000-0000 / 국민 000-00-000000",
+      "required": true,
+      "example": "홍길동 / 010-0000-0000 / 국민 000-00-000000"
+    },
+    {
+      "name": "input_2",
+      "description": "(주)ABC",
+      "required": true,
+      "example": "(주)ABC"
+    },
+    {
+      "name": "input_3",
+      "description": "랜딩페이지 디자인 1건 800000원",
+      "required": true,
+      "example": "랜딩페이지 디자인 1건 800000원"
+    },
+    {
+      "name": "input_4",
+      "description": "2026-07-03",
+      "required": true,
+      "example": "2026-07-03"
+    },
+    {
+      "name": "input_5",
+      "description": "발행 후 14일",
+      "required": true,
+      "example": "발행 후 14일"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "재무·금융",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:invoicing-tax-basics-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

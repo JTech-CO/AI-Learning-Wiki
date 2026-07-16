@@ -1,0 +1,56 @@
+{
+  "id": "p33i-compare",
+  "version": 1,
+  "title": "여러 항목을 한눈에 비교표로",
+  "summary": "여러 항목을 한눈에 비교표로 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 항목들을 서로 비교할 수 있는 표로 만들어줘. 세로축은 [비교 대상], 가로축은 [비교 기준: 가격/장점/단점]으로 정리해줘. 없는 정보는 지어내지 말고 '정보없음'으로 표시해. [여기에 비교할 내용 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "비교 대상",
+      "required": true,
+      "example": "비교 대상"
+    },
+    {
+      "name": "input_2",
+      "description": "비교 기준: 가격/장점/단점",
+      "required": true,
+      "example": "비교 기준: 가격/장점/단점"
+    },
+    {
+      "name": "input_3",
+      "description": "여기에 비교할 내용 붙여넣기",
+      "required": true,
+      "example": "여기에 비교할 내용 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33i-compare"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

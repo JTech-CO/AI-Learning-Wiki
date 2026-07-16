@@ -1,0 +1,47 @@
+{
+  "id": "agent-multi-orchestration-p5",
+  "version": 1,
+  "title": "다음 단계 — 진짜 도구 고르기 메모",
+  "summary": "다음 단계 — 진짜 도구 고르기 메모 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [내 상황: 코딩 가능/불가, 만들 것]에 맞는 멀티 에이전트 도구를 고르고 싶어. 코딩 없이면 n8n, 파이썬 역할기반이면 CrewAI, 복잡한 분기·상태면 LangGraph, Claude로 에이전트를 깊게 만들면 Claude Agent SDK(pip install claude-agent-sdk / npm @anthropic-ai/claude-agent-sdk) 중 무엇이 맞는지, 그리고 무료/유료(특히 모델 API 키 종량과금)를 한 문단으로 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 상황: 코딩 가능/불가, 만들 것",
+      "required": true,
+      "example": "내 상황: 코딩 가능/불가, 만들 것"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "시각화",
+    "코딩",
+    "API",
+    "자동화",
+    "AI 에이전트",
+    "협업"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-multi-orchestration-p5"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

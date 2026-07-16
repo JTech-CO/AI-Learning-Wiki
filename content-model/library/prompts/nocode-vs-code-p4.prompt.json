@@ -1,0 +1,44 @@
+{
+  "id": "nocode-vs-code-p4",
+  "version": 1,
+  "title": "전환 결정표 생성",
+  "summary": "전환 결정표 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내가 운영하는 자동화 흐름들을 노코드/코드/하이브리드로 분류해 관리하는 표를 만들고 싶어. 열 구성과, 각 흐름을 재판정해야 하는 시점(트리거 조건)을 함께 제안해줘. 내 흐름 목록: [흐름1, 흐름2, 흐름3]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "흐름1, 흐름2, 흐름3",
+      "required": true,
+      "example": "흐름1, 흐름2, 흐름3"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "자동화",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:nocode-vs-code-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

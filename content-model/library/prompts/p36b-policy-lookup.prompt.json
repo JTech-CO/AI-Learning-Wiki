@@ -1,0 +1,53 @@
+{
+  "id": "p36b-policy-lookup",
+  "version": 1,
+  "title": "정책/규정 빠른 조회",
+  "summary": "정책/규정 빠른 조회 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[제품명 또는 상황]에 대한 [환불/교환/배송/A/S] 규정을 알려줘. 조건·기간·예외사항을 항목별로 정리하고 각 항목마다 어느 문서 몇 페이지에서 나왔는지 출처를 함께. 문서에 없는 건 '없음'이라고.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "제품명 또는 상황",
+      "required": true,
+      "example": "제품명 또는 상황"
+    },
+    {
+      "name": "input_2",
+      "description": "환불/교환/배송/A/S",
+      "required": true,
+      "example": "환불/교환/배송/A/S"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "RAG",
+    "검색",
+    "출처·인용",
+    "안전",
+    "법무"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36b-policy-lookup"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "p26-cosine-table",
+  "version": 1,
+  "title": "코사인 유사도 표 계산",
+  "summary": "코사인 유사도 표 계산 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문장들의 의미 임베딩을 기준으로 모든 쌍의 코사인 유사도를 -1~1 값으로 계산해 표로 보여줘. 계산 공식(내적 ÷ 크기 곱)도 한 줄로 같이 보여주고, 가장 유사한 쌍과 가장 다른 쌍을 콕 짚어줘. 문장 목록: [문장 3~5개]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문장 3~5개",
+      "required": true,
+      "example": "문장 3~5개"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "RAG",
+    "검색",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "embedding"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26-cosine-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

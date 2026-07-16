@@ -1,0 +1,46 @@
+{
+  "id": "agent-loop-basics-p4",
+  "version": 1,
+  "title": "내 루프 코드 안전성 리뷰",
+  "summary": "내 루프 코드 안전성 리뷰 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내가 짠 ReAct 에이전트 while 루프야. (1) 무한루프 위험 (2) 없는 도구 호출 (3) eval 보안 위험 (4) 대화 기록이 너무 길어지는 문제, 이 4가지 관점에서 위험한 줄을 지적하고 각각 고친 코드를 한국어로 설명해줘.\n\n[여기에 내 루프 코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 내 루프 코드 붙여넣기",
+      "required": true,
+      "example": "여기에 내 루프 코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "번역",
+    "코딩",
+    "AI 에이전트",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-loop-basics-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "p1b-check-setup",
+  "version": 1,
+  "title": "세팅이 맞았는지 점검받기",
+  "summary": "세팅이 맞았는지 점검받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 AI 코딩 툴을 방금 처음 설치한 초보자야. 지금 [Cursor 또는 Replit]에 로그인했고 [폴더 이름] 폴더를 열었어. 첫 프로젝트를 실행하기 전에 준비가 제대로 됐는지 확인하고 싶어. 지금 상태에서 내가 빠뜨린 게 있는지, 다음에 뭘 하면 되는지 초보자도 알아듣게 3단계로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Cursor 또는 Replit",
+      "required": true,
+      "example": "Cursor 또는 Replit"
+    },
+    {
+      "name": "input_2",
+      "description": "폴더 이름",
+      "required": true,
+      "example": "폴더 이름"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "프롬프트 설계",
+    "검증",
+    "프로젝트 관리",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p1b-check-setup"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

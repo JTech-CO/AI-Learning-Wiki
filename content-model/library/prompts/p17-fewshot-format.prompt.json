@@ -1,0 +1,86 @@
+{
+  "id": "p17-fewshot-format",
+  "version": 1,
+  "title": "기본 퓨샷 형식 고정",
+  "summary": "기본 퓨샷 형식 고정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 예시들과 똑같은 형식·말투·길이로 답해줘. 설명은 하지 말고 출력만.\n입력: [예시입력1] → 출력: [예시출력1]\n입력: [예시입력2] → 출력: [예시출력2]\n입력: [예시입력3] → 출력: [예시출력3]\n입력: [진짜입력] → 출력:",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예시입력1",
+      "required": true,
+      "example": "시입력1"
+    },
+    {
+      "name": "input_2",
+      "description": "예시출력1",
+      "required": true,
+      "example": "시출력1"
+    },
+    {
+      "name": "input_3",
+      "description": "예시입력2",
+      "required": true,
+      "example": "시입력2"
+    },
+    {
+      "name": "input_4",
+      "description": "예시출력2",
+      "required": true,
+      "example": "시출력2"
+    },
+    {
+      "name": "input_5",
+      "description": "예시입력3",
+      "required": true,
+      "example": "시입력3"
+    },
+    {
+      "name": "input_6",
+      "description": "예시출력3",
+      "required": true,
+      "example": "시출력3"
+    },
+    {
+      "name": "input_7",
+      "description": "진짜입력",
+      "required": true,
+      "example": "진짜입력"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "다음 예시들과 똑같은 형식·말투·길이로 답해줘. 설명은 하지 말고 출력만.\n입력: 회의록 원문 → 출력: 실제 값\n입력: 회의록 원문 → 출력: 실제 값\n입력: 회의록 원문 → 출력: 실제 값\n입력: 회의록 원문 → 출력:",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "교육",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "in-context-learning"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17-fewshot-format"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

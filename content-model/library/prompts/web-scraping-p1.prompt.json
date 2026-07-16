@@ -1,0 +1,52 @@
+{
+  "id": "web-scraping-p1",
+  "version": 1,
+  "title": "스크래퍼 전체 코드 생성",
+  "summary": "스크래퍼 전체 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬 requests와 BeautifulSoup으로 [http://books.toscrape.com] 페이지에서 [책 제목과 가격]을 뽑아 books.csv로 저장하는 코드를 20줄 이내로 써줘. 각 줄에 한국어 주석을 달고, 초보자가 그대로 복붙해서 실행할 수 있게 해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "http://books.toscrape.com",
+      "required": true,
+      "example": "http://books.toscrape.com"
+    },
+    {
+      "name": "input_2",
+      "description": "책 제목과 가격",
+      "required": true,
+      "example": "책 제목과 가격"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "자동화",
+    "웹 개발",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:web-scraping-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

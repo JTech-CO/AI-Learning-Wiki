@@ -1,0 +1,53 @@
+{
+  "id": "p25b-debug",
+  "version": 1,
+  "title": "Edge Function 에러 디버깅",
+  "summary": "Edge Function 에러 디버깅 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Supabase Edge Function을 호출했더니 다음 에러가 났어: [에러 메시지]. Logs에 찍힌 내용은: [로그]. 원인과 수정 방법을 단계별로. CORS, 환경변수 누락, 인증 문제 중 무엇인지도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "에러 메시지",
+      "required": true,
+      "example": "에러 메시지"
+    },
+    {
+      "name": "input_2",
+      "description": "로그",
+      "required": true,
+      "example": "로그"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "API",
+    "데이터베이스",
+    "보안",
+    "안전",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25b-debug"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

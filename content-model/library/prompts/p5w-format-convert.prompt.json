@@ -1,0 +1,44 @@
+{
+  "id": "p5w-format-convert",
+  "version": 1,
+  "title": "데이터→정해진 형식 변환",
+  "summary": "데이터→정해진 형식 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 예시처럼 입력 정보를 정해진 JSON으로. 키 이름을 예시와 100% 똑같이.\n입력: 홍길동, 서울, 30대\n출력: {\"name\":\"홍길동\",\"city\":\"서울\",\"age_group\":\"30s\"}\n입력: [새 정보]\n출력:",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "새 정보",
+      "required": true,
+      "example": "새 정보"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p5w-format-convert"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

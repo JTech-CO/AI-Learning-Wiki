@@ -1,0 +1,50 @@
+{
+  "id": "feedback-clustering",
+  "version": 1,
+  "title": "사용자 피드백 주제별 군집화",
+  "summary": "사용자 피드백 주제별 군집화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 사용자 피드백을 의미가 비슷한 주제별로 묶어줘. 각 군집에 대표 이름, 포함된 피드백 번호, 반복되는 요구, 대표 원문 1개를 적어. 하나의 피드백이 여러 주제에 해당하면 중복 배치하고 임의로 감정을 추정하지 마. 피드백: [목록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "목록",
+      "required": true,
+      "example": "목록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "군집 수를 미리 고정하지 말고 소수 의견과 안전·접근성 관련 의견을 별도로 보존한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "피드백: 1) 검색이 느림 2) 결과가 늦게 뜸 3) 글자가 작음 4) 필터가 편리함. 주제별로 묶어줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "고객 지원",
+    "데이터 분석",
+    "평가"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "user-feedback-collection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

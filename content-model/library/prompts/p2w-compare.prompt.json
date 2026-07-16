@@ -1,0 +1,57 @@
+{
+  "id": "p2w-compare",
+  "version": 1,
+  "title": "비교·강화 실험용",
+  "summary": "비교·강화 실험용 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[과제]를 3가지 버전으로 보여줘. 1번은 아무 조건 없이, 2번은 '[역할]'을 맡아서, 3번은 '[형식+제약+예시]'까지 반영해서. 세 버전을 표로 나란히 비교해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "과제",
+      "required": true,
+      "example": "과제"
+    },
+    {
+      "name": "input_2",
+      "description": "역할",
+      "required": true,
+      "example": "역할"
+    },
+    {
+      "name": "input_3",
+      "description": "형식+제약+예시",
+      "required": true,
+      "example": "형식+제약+예시"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2w-compare"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

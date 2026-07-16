@@ -1,0 +1,45 @@
+{
+  "id": "p39-stop-check",
+  "version": 1,
+  "title": "중단 조건 빈틈 점검",
+  "summary": "중단 조건 빈틈 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내 에이전트 중단 조건이야. [중단 조건 3가지]. 이 조건들로 무한루프·비용폭탄·조기종료가 날 수 있는 시나리오를 3개 찾아주고, 각각을 막을 구체적 수정안(숫자 포함)을. 새 기능 추가는 말고 안전벨트만 보강.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "중단 조건 3가지",
+      "required": true,
+      "example": "중단 조건 3가지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "AI 에이전트",
+    "재무·금융",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "agent-loop"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39-stop-check"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "ai-guards-p3",
+  "version": 1,
+  "title": "환각 근거 대조 체크",
+  "summary": "환각 근거 대조 체크 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "요약/추출 결과의 환각을 잡고 싶어. 원문 텍스트와 모델이 생성한 요약을 입력받아, 요약 속 숫자·고유명사·핵심 주장이 원문에 실제로 존재하는지 대조하고, 근거 없는 문장에 'UNVERIFIED' 플래그를 붙여 반환하는 함수를 [언어]로 만들어줘. 정규식/문자열 매칭 기준도 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "언어",
+      "required": true,
+      "example": "언어"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "자동화",
+    "검증",
+    "출처·인용",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-guards-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

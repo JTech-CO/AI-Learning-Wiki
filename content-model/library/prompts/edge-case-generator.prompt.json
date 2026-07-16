@@ -1,0 +1,51 @@
+{
+  "id": "edge-case-generator",
+  "version": 1,
+  "title": "요구사항 기반 엣지 케이스 생성",
+  "summary": "요구사항 기반 엣지 케이스 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 요구사항에서 정상 흐름이 놓치기 쉬운 엣지 케이스를 만들어줘. 빈 값, 최솟값·최댓값, 순서 뒤바뀜, 중복, 시간대·언어, 권한, 네트워크 실패를 검토하고 각 사례에 기대 동작과 실패 위험을 적어. 요구사항: [내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내용",
+      "required": true,
+      "example": "내용"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "생성된 사례를 위험도와 발생 가능성으로 우선순위화하고 실제 테스트 코드로 옮긴다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "요구사항: 사용자가 예약 시간을 선택하고 결제하면 확인 메일을 받는다. 엣지 케이스와 기대 동작을 만들어줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "테스트",
+    "평가",
+    "안전",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "adversarial-testing"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

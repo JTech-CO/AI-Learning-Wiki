@@ -1,0 +1,71 @@
+{
+  "id": "p3b-spec-main",
+  "version": 1,
+  "title": "요구사항 명세 프롬프트(메인)",
+  "summary": "요구사항 명세 프롬프트(메인) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "intermediate",
+  "template": "다음 요구사항으로 웹앱을 만들어줘.\n[한 문장 설명: 누가·무엇을·왜]\n[화면 목록] 1. … 2. … 3. …\n[화면별 기능](~할 수 있다 형태)\n- 화면1: …\n- 화면2: …\n[저장할 데이터](항목: 타입)\n- …: 숫자/글자/날짜/선택지(…)\n조건: 기술 스택은 초보가 다루기 쉬운 걸로 네가 추천해줘. 한 번에 다 만들지 말고, 먼저 화면 구조와 데이터 설계를 제안한 뒤 내 확인을 받고 단계별로 진행해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "한 문장 설명: 누가·무엇을·왜",
+      "required": true,
+      "example": "한 문장 설명: 누가·무엇을·왜"
+    },
+    {
+      "name": "input_2",
+      "description": "화면 목록",
+      "required": true,
+      "example": "화면 목록"
+    },
+    {
+      "name": "input_3",
+      "description": "화면별 기능",
+      "required": true,
+      "example": "화면별 기능"
+    },
+    {
+      "name": "input_4",
+      "description": "저장할 데이터",
+      "required": true,
+      "example": "저장할 데이터"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "다음 요구사항으로 웹앱을 만들어줘.\n실제 값\n실제 값 1. … 2. … 3. …\n실제 값(~할 수 있다 형태)\n- 화면1: …\n- 화면2: …\n월별 고객 문의 건수 표(항목: 타입)\n- …: 숫자/글자/날짜/선택지(…)\n조건: 기술 스택은 초보가 다루기 쉬운 걸로 네가 추천해줘. 한 번에 다 만들지 말고, 먼저 화면 구조와 데이터 설계를 제안한 뒤 내 확인을 받고 단계별로 진행해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "의사결정",
+    "코딩",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p3b-spec-main"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

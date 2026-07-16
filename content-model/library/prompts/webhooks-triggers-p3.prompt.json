@@ -1,0 +1,45 @@
+{
+  "id": "webhooks-triggers-p3",
+  "version": 1,
+  "title": "3 폴링 vs 웹훅 어느 쪽이 맞는지 판단",
+  "summary": "3 폴링 vs 웹훅 어느 쪽이 맞는지 판단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 상황은 이래: [예: 5분마다 특정 사이트 재고를 확인하고 싶다 / 결제가 완료되면 즉시 처리하고 싶다]. 이 경우 폴링과 웹훅 중 무엇이 적합한지, 상대 서비스가 웹훅을 지원하는지 확인하는 방법, 웹훅이 없다면 대안을 표로 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 5분마다 특정 사이트 재고를 확인하고 싶다 / 결제가 완료되면 즉시 처리하고 싶다",
+      "required": true,
+      "example": "5분마다 특정 사이트 재고를 확인하고 싶다 / 결제가 완료되면 즉시 처리하고 싶다"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "자동화",
+    "검증",
+    "웹 개발",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "webhook"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:webhooks-triggers-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

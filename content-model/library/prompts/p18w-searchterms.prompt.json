@@ -1,0 +1,47 @@
+{
+  "id": "p18w-searchterms",
+  "version": 1,
+  "title": "직접인용 진위 확인 질문 생성",
+  "summary": "직접인용 진위 확인 질문 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문서의 모든 직접인용(따옴표 문장)과 통계에 대해, 내가 원 출처에서 검색할 때 쓸 '검색어'를 각각. 예: 인용문의 핵심 키워드 3개, 통계라면 '기관명+연도+지표명' 형태. 인용의 진위는 판단하지 말고 검색어만.\n--- [문서 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문서 붙여넣기",
+      "required": true,
+      "example": "문서 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "문서 분석",
+    "데이터 분석",
+    "검색",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p18w-searchterms"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

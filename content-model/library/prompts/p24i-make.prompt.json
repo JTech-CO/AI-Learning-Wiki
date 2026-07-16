@@ -1,0 +1,52 @@
+{
+  "id": "p24i-make",
+  "version": 1,
+  "title": "기본 — 배운 내용으로 퀴즈 내기",
+  "summary": "기본 — 배운 내용으로 퀴즈 내기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "너는 나의 개인 출제 선생님이야. 아래 학습 내용으로 문제를 내줘.\n- 4지선다 [3]개, 서술형 [2]개\n- 난이도: [중]\n- 중요: 정답과 해설은 지금 알려주지 말고, 내가 답을 보낸 뒤에만 채점해줘.\n[여기에 방금 배운 내용 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 방금 배운 내용 붙여넣기",
+      "required": true,
+      "example": "여기에 방금 배운 내용 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 나의 개인 출제 선생님이야. 아래 학습 내용으로 문제를 내줘.\n- 4지선다 실제 값개, 서술형 실제 값개\n- 난이도: 실제 값\n- 중요: 정답과 해설은 지금 알려주지 말고, 내가 답을 보낸 뒤에만 채점해줘.\n회의록 원문",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "교육",
+    "검색",
+    "프롬프트 설계",
+    "고객 지원",
+    "평가"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24i-make"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

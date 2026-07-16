@@ -1,0 +1,57 @@
+{
+  "id": "first-100-customers-p3",
+  "version": 1,
+  "title": "채널 규칙에 안 걸리는 첫 글 초안",
+  "summary": "채널 규칙에 안 걸리는 첫 글 초안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [내 제품/서비스 한 줄]을 만든 창업 초기 단계야. 아래 커뮤니티에 홍보가 아니라 '도움을 주는 방식'으로 자연스럽게 첫 대화를 시작하고 싶어. 커뮤니티: [채널명·성격·홍보금지 규칙]. 타깃: [고객 한 문장]. 광고 냄새 안 나고, 진짜 도움이 되며, 규칙에 안 걸리는 첫 글(또는 첫 댓글) 초안 3가지 버전을 써줘. 각 버전이 어떤 반응을 노리는지도 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 제품/서비스 한 줄",
+      "required": true,
+      "example": "내 제품/서비스 한 줄"
+    },
+    {
+      "name": "input_2",
+      "description": "채널명·성격·홍보금지 규칙",
+      "required": true,
+      "example": "채널명·성격·홍보금지 규칙"
+    },
+    {
+      "name": "input_3",
+      "description": "고객 한 문장",
+      "required": true,
+      "example": "고객 한 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "마케팅",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:first-100-customers-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p20e-schema",
+  "version": 1,
+  "title": "자연어 요구를 Pydantic 스키마로",
+  "summary": "자연어 요구를 Pydantic 스키마로 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 추출 요구사항을 Pydantic v2 BaseModel로. 각 필드에 정확한 타입, 필수/선택 여부, Field 제약(gt·pattern·범위), 모델이 헷갈릴 필드엔 description을. 추출할 데이터: [인보이스에서 공급자명, 총액(양수), 통화 3자리 코드, 만기일 YYYY-MM-DD]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "인보이스에서 공급자명, 총액(양수), 통화 3자리 코드, 만기일 YYYY-MM-DD",
+      "required": true,
+      "example": "인보이스에서 공급자명, 총액(양수), 통화 3자리 코드, 만기일 YYYY-MM-DD"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "구조화 출력",
+    "검증",
+    "프로젝트 관리",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "json-schema"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20e-schema"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

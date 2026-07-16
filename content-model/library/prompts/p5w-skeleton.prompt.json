@@ -1,0 +1,67 @@
+{
+  "id": "p5w-skeleton",
+  "version": 1,
+  "title": "few-shot 뼈대",
+  "summary": "few-shot 뼈대 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 예시들과 똑같은 톤과 형식으로 결과를 만들어줘. 설명 없이 출력만.\n입력: [예시1 입력]\n출력: [예시1 결과]\n입력: [예시2 입력]\n출력: [예시2 결과]\n입력: [진짜 새 입력]\n출력:",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예시1 입력",
+      "required": true,
+      "example": "시1 입력"
+    },
+    {
+      "name": "input_2",
+      "description": "예시1 결과",
+      "required": true,
+      "example": "시1 결과"
+    },
+    {
+      "name": "input_3",
+      "description": "예시2 입력",
+      "required": true,
+      "example": "시2 입력"
+    },
+    {
+      "name": "input_4",
+      "description": "예시2 결과",
+      "required": true,
+      "example": "시2 결과"
+    },
+    {
+      "name": "input_5",
+      "description": "진짜 새 입력",
+      "required": true,
+      "example": "진짜 새 입력"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p5w-skeleton"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p16w-30sec",
+  "version": 1,
+  "title": "30초 낭독 길이로 줄이기",
+  "summary": "30초 낭독 길이로 줄이기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 요약을 소리 내 읽으면 30초를 넘겨. 의미는 그대로 두고 형용사·배경 설명·중복 표현을 잘라서 25~30초 분량으로. 결론·핵심3·근거 구조는 유지. [현재 요약 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "현재 요약 붙여넣기",
+      "required": true,
+      "example": "현재 요약 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "의사결정",
+    "문서 분석",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16w-30sec"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

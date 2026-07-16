@@ -1,0 +1,68 @@
+{
+  "id": "p4w-table",
+  "version": 1,
+  "title": "표 출력",
+  "summary": "표 출력 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "[주제]에 대해 정리해줘. 반드시:\n- 출력 형식: 마크다운 표 하나만. 표 앞뒤 설명 금지.\n- 열: [열이름1] | [열이름2] | [열이름3]\n- 행 개수: [예 5]개\n- 말투: 존댓말, 이모지 금지",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_2",
+      "description": "열이름1",
+      "required": true,
+      "example": "열이름1"
+    },
+    {
+      "name": "input_3",
+      "description": "열이름2",
+      "required": true,
+      "example": "열이름2"
+    },
+    {
+      "name": "input_4",
+      "description": "열이름3",
+      "required": true,
+      "example": "열이름3"
+    },
+    {
+      "name": "input_5",
+      "description": "예 5",
+      "required": true,
+      "example": "5"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p4w-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

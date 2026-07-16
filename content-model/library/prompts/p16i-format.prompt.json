@@ -1,0 +1,60 @@
+{
+  "id": "p16i-format",
+  "version": 1,
+  "title": "표·목록 같은 까다로운 형식 복제",
+  "summary": "표·목록 같은 까다로운 형식 복제 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 표 예시와 완전히 같은 열 구성과 줄 형식으로, 새 데이터를 정리해줘. 열 순서·이모지·줄바꿈까지 똑같이.\n[예시 표]: [여기에 완성된 표 한 줄 붙여넣기]\n[정리할 새 데이터]: [원자료]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예시 표",
+      "required": true,
+      "example": "시 표"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 완성된 표 한 줄 붙여넣기",
+      "required": true,
+      "example": "여기에 완성된 표 한 줄 붙여넣기"
+    },
+    {
+      "name": "input_3",
+      "description": "정리할 새 데이터",
+      "required": true,
+      "example": "정리할 새 데이터"
+    },
+    {
+      "name": "input_4",
+      "description": "원자료",
+      "required": true,
+      "example": "원자료"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16i-format"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

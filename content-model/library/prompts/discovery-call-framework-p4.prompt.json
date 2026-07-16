@@ -1,0 +1,52 @@
+{
+  "id": "discovery-call-framework-p4",
+  "version": 1,
+  "title": "통화 후 다음단계 확정 이메일",
+  "summary": "통화 후 다음단계 확정 이메일 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 [고객사명]와 디스커버리 콜을 마쳤어. 아래 요약을 바탕으로, 다음단계(데모/제안)를 확정하는 짧고 정중한 한국어 후속 이메일을 써줘. 통화에서 들은 문제와 영향을 1~2줄로 되짚고, 구체적 날짜·시간·참석자를 제안하고, 캘린더 초대를 보낼 예정임을 알려줘.\n\n[통화 요약 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고객사명",
+      "required": true,
+      "example": "고객사명"
+    },
+    {
+      "name": "input_2",
+      "description": "통화 요약 붙여넣기",
+      "required": true,
+      "example": "통화 요약 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "요약",
+    "구조화 출력",
+    "영업",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:discovery-call-framework-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

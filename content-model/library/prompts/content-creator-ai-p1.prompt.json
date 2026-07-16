@@ -1,0 +1,53 @@
+{
+  "id": "content-creator-ai-p1",
+  "version": 1,
+  "title": "콘텐츠 아이디어 30개 + 제작 워크플로",
+  "summary": "콘텐츠 아이디어 30개 + 제작 워크플로 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [직장인 점심 도시락 10분 레시피] 주제의 [블로그]를 운영하려 해.\n1) 검색에 잘 걸리고 사람들이 궁금해할 구체적 글 주제 30개를 뽑아줘(각 한 줄).\n2) 그중 1개를 골라, 내가 매번 따라 할 수 있는 '제작 워크플로'를 5단계로 정리해줘 — 어디에 내 실제 경험·사진을 넣어 AI 티를 없앨지 표시해서.\n과장 없이, 초보가 바로 실행 가능하게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "직장인 점심 도시락 10분 레시피",
+      "required": true,
+      "example": "직장인 점심 도시락 10분 레시피"
+    },
+    {
+      "name": "input_2",
+      "description": "블로그",
+      "required": true,
+      "example": "블로그"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "검색",
+    "이미지",
+    "영상",
+    "오디오"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:content-creator-ai-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

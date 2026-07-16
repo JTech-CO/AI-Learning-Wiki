@@ -1,0 +1,40 @@
+{
+  "id": "automation-mindset-p2",
+  "version": 1,
+  "title": "도구 접근법 비교",
+  "summary": "도구 접근법 비교 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "트리거=[X], 조건=[Y], 액션=[Z]인 자동화를 만들려고 해. 노코드(Zapier/Make)와 코드(파이썬) 두 방법으로 각각 어떻게 접근하는지, 초보에게는 어느 쪽이 나은지 이유와 함께 알려줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "자동화",
+    "Python",
+    "노코드",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-mindset-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

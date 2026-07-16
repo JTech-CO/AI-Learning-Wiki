@@ -1,0 +1,52 @@
+{
+  "id": "py-setup-p1",
+  "version": 1,
+  "title": "설치 오류를 AI에게 그대로 해결받기",
+  "summary": "설치 오류를 AI에게 그대로 해결받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 파이썬을 처음 설치하는 완전 초보야. [윈도우/맥] 환경이고, 아래 오류 메시지가 떴어. 이게 무슨 뜻인지 초등학생도 알 수 있게 설명하고, 지금 눌러야 할 버튼이나 입력할 명령을 순서대로 딱 알려줘.\n\n오류 메시지:\n[여기에 화면에 뜬 오류를 그대로 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "윈도우/맥",
+      "required": true,
+      "example": "윈도우/맥"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 화면에 뜬 오류를 그대로 붙여넣기",
+      "required": true,
+      "example": "여기에 화면에 뜬 오류를 그대로 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "코딩",
+    "디버깅",
+    "자동화",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-setup-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "p33-incident-diagnose",
+  "version": 1,
+  "title": "장애 원인 5분 진단",
+  "summary": "장애 원인 5분 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "배포 후 이런 증상: [화면 백지/로그인 안 됨/특정 버튼만 안 됨]. 가장 흔한 원인 3가지를 가능성 높은 순서로, 각 원인을 5분 안에 확인하는 방법과 함께.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "화면 백지/로그인 안 됨/특정 버튼만 안 됨",
+      "required": true,
+      "example": "화면 백지/로그인 안 됨/특정 버튼만 안 됨"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "디버깅",
+    "검증",
+    "배포",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33-incident-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

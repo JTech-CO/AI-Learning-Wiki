@@ -1,0 +1,59 @@
+{
+  "id": "prompt-regression-suite",
+  "version": 1,
+  "title": "프롬프트 변경 회귀 테스트 세트",
+  "summary": "프롬프트 변경 회귀 테스트 세트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "기존 프롬프트와 수정 프롬프트를 비교할 회귀 테스트를 설계해줘. 정상·경계·거부·다국어 입력을 포함하고 각 테스트에 필수 조건, 금지 조건, 구조화 출력 검사, 사람 평가 항목을 정의해. 기존: [프롬프트 A] 수정: [프롬프트 B]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "프롬프트 A",
+      "required": true,
+      "example": "프롬프트 A"
+    },
+    {
+      "name": "input_2",
+      "description": "프롬프트 B",
+      "required": true,
+      "example": "프롬프트 B"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "같은 모델 버전과 파라미터로 반복 실행하고 비결정성을 고려해 여러 표본을 비교한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "기존: 문의를 한 문장으로 분류. 수정: 분류와 근거를 JSON으로 출력. 회귀 테스트 12개를 설계해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "프롬프트 설계",
+    "테스트",
+    "평가",
+    "모니터링",
+    "의사결정",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "adversarial-testing"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

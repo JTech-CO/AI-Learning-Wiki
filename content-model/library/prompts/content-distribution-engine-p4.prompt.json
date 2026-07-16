@@ -1,0 +1,47 @@
+{
+  "id": "content-distribution-engine-p4",
+  "version": 1,
+  "title": "코어 아이디어 뽑아내기",
+  "summary": "코어 아이디어 뽑아내기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [주제/전문분야]에 대해 잘 알아. 이걸로 재활용하기 좋은 '코어 콘텐츠' 주제 5개를 제안해줘. 각 주제는 숏폼·글·이미지로 쪼개기 쉬운, 명확한 핵심 메시지가 있는 것으로 골라줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제/전문분야",
+      "required": true,
+      "example": "주제/전문분야"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "아이디어",
+    "이미지",
+    "콘텐츠",
+    "배포"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:content-distribution-engine-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

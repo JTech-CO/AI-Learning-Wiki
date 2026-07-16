@@ -1,0 +1,53 @@
+{
+  "id": "p5b-flow",
+  "version": 1,
+  "title": "파일 흐름 한눈에 파악",
+  "summary": "파일 흐름 한눈에 파악 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 AI가 만들어준 프로젝트야. 각 파일이 무슨 역할을 하고, 프로그램이 실행될 때 어떤 순서로 동작이 흘러가는지 화살표로 그려서 초보자용으로 설명해줘. 파일 목록: [붙여넣기] 진입 파일 내용: [코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "코드 붙여넣기",
+      "required": true,
+      "example": "코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "검색",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p5b-flow"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

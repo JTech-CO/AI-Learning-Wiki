@@ -1,0 +1,53 @@
+{
+  "id": "json-schema-draft",
+  "version": 1,
+  "title": "자연어 요구사항을 JSON Schema로 변환",
+  "summary": "자연어 요구사항을 JSON Schema로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "json-schema",
+  "difficulty": "advanced",
+  "template": "아래 요구사항을 JSON Schema 초안으로 변환해줘. 필수·선택 필드, 자료형, enum, 길이·범위, 중첩 구조, additionalProperties 정책을 명시해. 모호한 조건은 임의로 결정하지 말고 질문 목록으로 분리해. 요구사항: [내용]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내용",
+      "required": true,
+      "example": "내용"
+    }
+  ],
+  "outputContract": {
+    "format": "json",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "생성된 스키마는 실제 검증 라이브러리와 정상·경계·오류 예제로 시험한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "주문에는 주문번호, 이메일, 1개 이상의 상품, 원화 총액, 상태가 필요하다. JSON Schema 초안과 질문을 만들어줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "구조화 출력",
+    "API",
+    "테스트",
+    "글쓰기",
+    "의사결정",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "json-schema"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

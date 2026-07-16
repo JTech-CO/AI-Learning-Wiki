@@ -1,0 +1,46 @@
+{
+  "id": "prompt-product-anatomy-p3",
+  "version": 1,
+  "title": "3 판매 페이지 카피 생성기",
+  "summary": "3 판매 페이지 카피 생성기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 프롬프트 상품을 마켓(PromptBase·크몽 등)에 올릴 판매글로 만들어줘. 포함: 눈길 끄는 제목, 이 프롬프트가 해결하는 고통 3줄, 결과물 설명, 사용법 3단계, 예상 활용 대상. 과장광고 표현은 금지.\n상품 정보: [상품명/무엇을 하는지/변수 목록 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상품명/무엇을 하는지/변수 목록 붙여넣기",
+      "required": true,
+      "example": "상품명/무엇을 하는지/변수 목록 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "마케팅",
+    "영업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-product-anatomy-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

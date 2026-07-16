@@ -1,0 +1,57 @@
+{
+  "id": "p-ae1-install-error",
+  "version": 1,
+  "title": "설치 에러 그대로 해결받기",
+  "summary": "설치 에러 그대로 해결받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [Windows 11 / macOS]에서 파이썬 개발 환경을 처음 세팅 중이야. 다음 명령을 실행했더니 이런 에러가 났어:\n명령: [입력한 명령어]\n에러 메시지: [전체 에러 메시지].\n원인이 뭔지 초보도 알아듣게 설명하고, 복사해서 그대로 실행할 수 있는 해결 명령을 순서대로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Windows 11 / macOS",
+      "required": true,
+      "example": "Windows 11 / macOS"
+    },
+    {
+      "name": "input_2",
+      "description": "입력한 명령어",
+      "required": true,
+      "example": "입력한 명령어"
+    },
+    {
+      "name": "input_3",
+      "description": "전체 에러 메시지",
+      "required": true,
+      "example": "전체 에러 메시지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "검증",
+    "Python"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p-ae1-install-error"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

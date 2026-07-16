@@ -1,0 +1,58 @@
+{
+  "id": "p14b-summarize-json",
+  "version": 1,
+  "title": "요약 기능용 프롬프트",
+  "summary": "요약 기능용 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 [문서 종류] 요약기다. 입력 텍스트를 핵심만 남겨 요약한다. 반드시 이 JSON만 출력한다: {\"summary\":\"[N]자 이내 핵심 요약\",\"keywords\":[\"키워드1\",\"키워드2\",\"키워드3\"]}. 원문에 없는 사실을 지어내지 마라. 입력: [요약할 원문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문서 종류",
+      "required": true,
+      "example": "문서 종류"
+    },
+    {
+      "name": "input_2",
+      "description": "\"키워드1\",\"키워드2\",\"키워드3\"",
+      "required": true,
+      "example": "\"키워드1\",\"키워드2\",\"키워드3\""
+    },
+    {
+      "name": "input_3",
+      "description": "요약할 원문",
+      "required": true,
+      "example": "요약할 원문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "프롬프트 설계",
+    "구조화 출력",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14b-summarize-json"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "p41i-write",
+  "version": 1,
+  "title": "글쓰기·다듬기 (Claude/ChatGPT)",
+  "summary": "글쓰기·다듬기 (Claude/ChatGPT) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 글을 [더 정중하게 / 더 짧게 / 더 친근하게] 다듬어줘. 어색한 표현은 자연스럽게 고치고, 바꾼 이유도 한 줄로 알려줘. [여기에 내 글 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "더 정중하게 / 더 짧게 / 더 친근하게",
+      "required": true,
+      "example": "더 정중하게 / 더 짧게 / 더 친근하게"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 내 글 붙여넣기",
+      "required": true,
+      "example": "여기에 내 글 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "디버깅",
+    "SQL"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "knowledge-cutoff"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p41i-write"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "ai-agents-tools-p2",
+  "version": 1,
+  "title": "에이전트 루프 코드 뼈대",
+  "summary": "에이전트 루프 코드 뼈대 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "OpenAI(또는 Anthropic) function calling으로 도구를 호출하고, 결과를 되먹여 다시 모델에 넣는 최소 에이전트 루프를 Python으로 써줘. 도구는 [get_weather, calculator] 2개. 최대 호출 5회 제한과 각 단계 로그 출력을 포함하고, 초보자가 읽도록 줄마다 한국어 주석을 달아줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "get_weather, calculator",
+      "required": true,
+      "example": "get_weather, calculator"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "자동화",
+    "AI 에이전트",
+    "Python",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-agents-tools-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

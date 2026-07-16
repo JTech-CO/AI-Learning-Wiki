@@ -1,0 +1,45 @@
+{
+  "id": "p33w-next-call",
+  "version": 1,
+  "title": "다음 통화용 준비 멘트 생성",
+  "summary": "다음 통화용 준비 멘트 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 지난 통화 요약을 바탕으로, 다음 통화 때 내가 꺼낼 '오프닝 멘트 3줄'과 '꼭 물어볼 질문 3개'를. 자연스러운 구어체로.\n[붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "구조화 출력",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33w-next-call"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "prompt-pack-packaging-p1",
+  "version": 1,
+  "title": "프롬프트 자동 분류·카테고리 제안",
+  "summary": "프롬프트 자동 분류·카테고리 제안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 프롬프트 팩 큐레이터다. 아래 프롬프트 목록을 초보자가 이해하기 쉬운 카테고리 3~5개로 묶어줘. 각 카테고리에 이름, 한 줄 설명, 포함되는 프롬프트 번호를 표로 정리하고, 어디에도 안 맞거나 중복되는 것은 따로 표시해줘.\n대상 사용자: [예: 1인 자영업자]\n프롬프트 목록:\n[여기에 프롬프트들을 번호와 함께 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 1인 자영업자",
+      "required": true,
+      "example": "1인 자영업자"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 프롬프트들을 번호와 함께 붙여넣기",
+      "required": true,
+      "example": "여기에 프롬프트들을 번호와 함께 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "프롬프트 설계",
+    "영업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-pack-packaging-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "prompt-to-cash-p1",
+  "version": 1,
+  "title": "결과물 묶음 대량 생성",
+  "summary": "결과물 묶음 대량 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "intermediate",
+  "template": "나는 [카페·식당용 인스타그램 홍보] 콘텐츠 팩을 만들어 팔려고 해. 일관된 톤의 결과물을 묶음으로 만들고 싶어.\n- 묶음 종류: [홍보용 짧은 캡션 + 해시태그 세트] 30종\n- 톤: [친근하고 군침 도는, 자영업자가 바로 복붙 가능]\n- 각 항목: ①상황(신메뉴/이벤트/재오픈 등) ②캡션 본문([가게명],[메뉴] 빈칸 포함) ③추천 해시태그 8개\n30종을 상황이 겹치지 않게 골고루 만들어줘. 표 말고 읽기 좋은 목록으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "카페·식당용 인스타그램 홍보",
+      "required": true,
+      "example": "카페·식당용 인스타그램 홍보"
+    },
+    {
+      "name": "input_2",
+      "description": "홍보용 짧은 캡션 + 해시태그 세트",
+      "required": true,
+      "example": "홍보용 짧은 캡션 + 해시태그 세트"
+    },
+    {
+      "name": "input_3",
+      "description": "친근하고 군침 도는, 자영업자가 바로 복붙 가능",
+      "required": true,
+      "example": "친근하고 군침 도는, 자영업자가 바로 복붙 가능"
+    },
+    {
+      "name": "input_4",
+      "description": "가게명",
+      "required": true,
+      "example": "가게명"
+    },
+    {
+      "name": "input_5",
+      "description": "메뉴",
+      "required": true,
+      "example": "메뉴"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "나는 실제 값 콘텐츠 팩을 만들어 팔려고 해. 일관된 톤의 결과물을 묶음으로 만들고 싶어.\n- 묶음 종류: 실제 값 30종\n- 톤: 실제 값\n- 각 항목: ①상황(신메뉴/이벤트/재오픈 등) ②캡션 본문(실제 값,실제 값 빈칸 포함) ③추천 해시태그 8개\n30종을 상황이 겹치지 않게 골고루 만들어줘. 표 말고 읽기 좋은 목록으로.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "코딩",
+    "프롬프트 설계",
+    "이미지",
+    "영업",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-to-cash-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

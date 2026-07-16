@@ -1,0 +1,45 @@
+{
+  "id": "py-errors-debug-p2",
+  "version": 1,
+  "title": "에러 종류 초보용 설명",
+  "summary": "에러 종류 초보용 설명 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "파이썬 초보에게 설명하듯, 이 에러 종류가 보통 무슨 뜻이고 가장 흔한 원인 3가지와 각각의 확인 방법을 표로 정리해줘: [에러 종류 이름, 예: KeyError]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "에러 종류 이름, 예: KeyError",
+      "required": true,
+      "example": "에러 종류 이름, 예: KeyError"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "자동화",
+    "검증",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-errors-debug-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

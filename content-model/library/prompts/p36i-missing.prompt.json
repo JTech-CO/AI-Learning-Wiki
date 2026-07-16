@@ -1,0 +1,45 @@
+{
+  "id": "p36i-missing",
+  "version": 1,
+  "title": "관점 누락 점검",
+  "summary": "관점 누락 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[주제/질문]에 대한 네 답에서 빠져 있거나 과소대표된 관점·집단·문화가 있는지 알려줘. 특히 비주류나 소수의 입장에서 보면 이 답이 어떻게 다르게 보일지 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제/질문",
+      "required": true,
+      "example": "주제/질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "검증",
+    "안전",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36i-missing"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

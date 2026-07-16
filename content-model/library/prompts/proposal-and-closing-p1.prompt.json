@@ -1,0 +1,51 @@
+{
+  "id": "proposal-and-closing-p1",
+  "version": 1,
+  "title": "한 장 제안서 초안",
+  "summary": "한 장 제안서 초안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "관심을 보인 고객에게 보낼 한 장짜리 제안서를 써줘.\n- 오퍼: [...] / 고객이 말한 고민: [...] / 가격: [...] / 기간: [...]\n구성: ①당신의 문제(공감 2줄) ②제안: 무엇을 드리는지 ③진행 방식·기간 ④가격(명확히) ⑤안심 장치(샘플 먼저/수정·환불 정책) ⑥다음 한 걸음.\n조건: 한 장 분량, 군더더기 없이. '보장/2배' 같은 과장 금지. 빈칸은 [대괄호]로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    },
+    {
+      "name": "input_2",
+      "description": "대괄호",
+      "required": true,
+      "example": "대괄호"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "재무·금융",
+    "검증",
+    "법무"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:proposal-and-closing-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

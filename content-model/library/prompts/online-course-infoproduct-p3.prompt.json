@@ -1,0 +1,47 @@
+{
+  "id": "online-course-infoproduct-p3",
+  "version": 1,
+  "title": "한 장 판매 개요 + 윤리 체크",
+  "summary": "한 장 판매 개요 + 윤리 체크 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 강의의 한 장짜리 판매 개요를 만들어줘.\n- 결과: [...] / 대상: [...] / 가격: [...] / 무료 미니강의: [...]\n구성: ①누구에게(대상) ②끝나면 얻는 결과 ③강의 구성 ④가격·접근 방식 ⑤환불 정책 ⑥무료→유료 사다리.\n조건: '누구나 부자'식 보장·과장 금지, 책임지는 범위만 명확히. 마지막에 '내가 직접 점검할 윤리 체크리스트 5개'도 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "프레젠테이션",
+    "구조화 출력",
+    "영업",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:online-course-infoproduct-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

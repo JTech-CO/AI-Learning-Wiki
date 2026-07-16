@@ -1,0 +1,47 @@
+{
+  "id": "error-retry-p1",
+  "version": 1,
+  "title": "재시도+백오프+타임아웃 함수 생성",
+  "summary": "재시도+백오프+타임아웃 함수 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬으로 외부 API를 안전하게 호출하는 함수를 만들어줘. 요구사항: (1) 모든 요청에 timeout=[10]초, (2) 최대 [4]회 재시도, (3) 재시도마다 대기시간을 1,2,4초로 늘리는 지수 백오프, (4) 4xx 같은 재시도 무의미한 오류는 즉시 포기하고 5xx·네트워크 오류만 재시도, (5) 각 시도의 실패 이유를 print로 남기고 최종 실패 시 예외를 던짐. 함수 이름은 fetch_with_retry(url)로 하고, 초보가 읽기 쉽게 한글 주석을 달아줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "10",
+      "required": true,
+      "example": "10"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "디버깅",
+    "API",
+    "자동화",
+    "안전",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:error-retry-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

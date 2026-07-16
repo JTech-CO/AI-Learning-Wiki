@@ -1,0 +1,49 @@
+{
+  "id": "p6w-tone-example",
+  "version": 1,
+  "title": "좋은 예시로 톤 맞추기",
+  "summary": "좋은 예시로 톤 맞추기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내가 원하는 톤과 형식의 좋은 예시입니다. 이 예시의 문체와 구조를 그대로 따라, [내 주제]에 대해 새로 써주세요. 좋은 예시: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 주제",
+      "required": true,
+      "example": "내 주제"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6w-tone-example"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

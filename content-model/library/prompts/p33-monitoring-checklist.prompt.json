@@ -1,0 +1,47 @@
+{
+  "id": "p33-monitoring-checklist",
+  "version": 1,
+  "title": "모니터링 체크리스트 생성",
+  "summary": "모니터링 체크리스트 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 서비스는 [무엇을 하는 사이트인지 한 줄]이야. 배포 직후 5분 동안 뭘 확인해야 하는지 초보용 모니터링 체크리스트를 5개 항목으로, 각 항목마다 '어디서 보는지'도 함께.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무엇을 하는 사이트인지 한 줄",
+      "required": true,
+      "example": "무엇을 하는 사이트인지 한 줄"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "디버깅",
+    "검증",
+    "비즈니스",
+    "배포",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33-monitoring-checklist"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

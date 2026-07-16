@@ -1,0 +1,43 @@
+{
+  "id": "p3-first-real",
+  "version": 1,
+  "title": "내 첫 실전 질문 생성",
+  "summary": "내 첫 실전 질문 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 지금 겪는 고민은 [고민: 예-주말에 아이랑 뭐 하고 놀지 모르겠음]이야. 이걸 해결하도록 구체적인 아이디어 5개를, 준비물과 함께 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고민: 예-주말에 아이랑 뭐 하고 놀지 모르겠음",
+      "required": true,
+      "example": "고민: 예-주말에 아이랑 뭐 하고 놀지 모르겠음"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "아이디어",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p3-first-real"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

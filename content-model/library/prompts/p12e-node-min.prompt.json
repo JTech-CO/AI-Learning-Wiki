@@ -1,0 +1,71 @@
+{
+  "id": "p12e-node-min",
+  "version": 1,
+  "title": "스트리밍 최소 예제(Node.js)",
+  "summary": "스트리밍 최소 예제(Node.js) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Node.js 18+ 환경에서 [OpenAI 또는 Anthropic] 채팅 API를 stream:true로 호출하는 최소 스트리밍 예제를. 요구사항: (1) fetch로 요청 (2) res.body의 ReadableStream을 reader로 읽기 (3) TextDecoder로 디코딩 (4) 'data: ' 줄만 파싱해 delta를 process.stdout.write로 실시간 출력 (5) '[DONE]'에서 종료 (6) 마지막에 누적된 full 문자열을 콘솔 출력. 주석을 한국어로. 모델은 [모델명], 질문은 [스트리밍을 설명해줘].",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "OpenAI 또는 Anthropic",
+      "required": true,
+      "example": "OpenAI 또는 Anthropic"
+    },
+    {
+      "name": "input_2",
+      "description": "DONE",
+      "required": true,
+      "example": "DONE"
+    },
+    {
+      "name": "input_3",
+      "description": "모델명",
+      "required": true,
+      "example": "모델명"
+    },
+    {
+      "name": "input_4",
+      "description": "스트리밍을 설명해줘",
+      "required": true,
+      "example": "스트리밍을 설명해줘"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "Node.js 18+ 환경에서 실제 값 채팅 API를 stream:true로 호출하는 최소 스트리밍 예제를. 요구사항: (1) fetch로 요청 (2) res.body의 ReadableStream을 reader로 읽기 (3) TextDecoder로 디코딩 (4) 'data: ' 줄만 파싱해 delta를 process.stdout.write로 실시간 출력 (5) '실제 값'에서 종료 (6) 마지막에 누적된 full 문자열을 콘솔 출력. 주석을 한국어로. 모델은 실제 값, 질문은 실제 값.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "코딩",
+    "API",
+    "프롬프트 설계",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "server-sent-events"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12e-node-min"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

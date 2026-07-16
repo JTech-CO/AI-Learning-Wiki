@@ -1,0 +1,53 @@
+{
+  "id": "p19-extract",
+  "version": 1,
+  "title": "여러 메일·문의에서 정보 도출 (추출)",
+  "summary": "여러 메일·문의에서 정보 도출 (추출) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 [메일/문의 원문]에서 다음 칸만 뽑아 JSON으로만 답해: {\"고객명\": \"문자열|미상\", \"요청유형\": \"환불|교환|배송문의|기타\", \"긴급도\": \"높음|보통|낮음\", \"한줄요약\": \"문자열\"}. 본문에 없으면 '미상'. JSON만. 원문: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "메일/문의 원문",
+      "required": true,
+      "example": "메일/문의 원문"
+    },
+    {
+      "name": "input_2",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "스프레드시트",
+    "코딩",
+    "자동화"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19-extract"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

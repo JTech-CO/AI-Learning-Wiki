@@ -1,0 +1,51 @@
+{
+  "id": "icp-and-lead-list-p1",
+  "version": 1,
+  "title": "ICP 3개 후보 도출",
+  "summary": "ICP 3개 후보 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [상품/서비스 한 줄 설명]을 판매합니다. 이 상품이 해결하는 고객 고통은 [1단계에서 적은 고통 3개]입니다. 이 정보를 바탕으로 '이상적 고객 프로필(ICP)' 후보 3개를 표로 제안해줘. 각 후보는 반드시 (1)산업/업종 (2)규모(직원수·매출·매장수 등) (3)의사결정 역할 (4)지금 이 문제를 겪고 있다는 것을 밖에서 알아챌 수 있는 '관찰 가능한 신호(트리거)' 네 칸을 구체적인 값으로 채워줘. 마지막에 '가장 좁고 검색으로 명단화하기 쉬운' 후보 1개를 추천하고 이유를 한 줄로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상품/서비스 한 줄 설명",
+      "required": true,
+      "example": "상품/서비스 한 줄 설명"
+    },
+    {
+      "name": "input_2",
+      "description": "1단계에서 적은 고통 3개",
+      "required": true,
+      "example": "1단계에서 적은 고통 3개"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "검색",
+    "영업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:icp-and-lead-list-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

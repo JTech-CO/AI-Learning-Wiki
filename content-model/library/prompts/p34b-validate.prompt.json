@@ -1,0 +1,53 @@
+{
+  "id": "p34b-validate",
+  "version": 1,
+  "title": "입력값 검증 코드 생성",
+  "summary": "입력값 검증 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "이 폼/엔드포인트는 사용자에게서 [email, age, comment]를 받아. 각 필드에 맞는 입력 검증(형식·길이·허용 문자)과 SQL/HTML 이스케이프 코드를 [언어]로. 검증 실패 시 명확한 에러 메시지도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "email, age, comment",
+      "required": true,
+      "example": "email, age, comment"
+    },
+    {
+      "name": "input_2",
+      "description": "언어",
+      "required": true,
+      "example": "언어"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "코딩",
+    "디버깅",
+    "API",
+    "검증",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p34b-validate"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

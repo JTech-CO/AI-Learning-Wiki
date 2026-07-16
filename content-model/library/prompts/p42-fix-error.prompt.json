@@ -1,0 +1,47 @@
+{
+  "id": "p42-fix-error",
+  "version": 1,
+  "title": "에러·하얀 화면 고치기",
+  "summary": "에러·하얀 화면 고치기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "화면에 에러가 났어. 빨간 글씨로 '[에러 메시지 그대로]' 라고 떠. 다시 정상 동작하게 고쳐줘. 안 되면 직전에 잘 되던 버전으로 되돌려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "에러 메시지 그대로",
+      "required": true,
+      "example": "에러 메시지 그대로"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "코딩",
+    "디버깅",
+    "테스트",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42-fix-error"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

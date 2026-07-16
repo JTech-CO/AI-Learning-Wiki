@@ -1,0 +1,74 @@
+{
+  "id": "p39i-convert",
+  "version": 1,
+  "title": "5요소 → 영어 이미지 프롬프트 변환",
+  "summary": "5요소 → 영어 이미지 프롬프트 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 한국어 5요소를 이미지 생성 AI용 영어 프롬프트 한 줄로 바꿔줘. 미사여구는 빼고 시각적 단어 위주로, 각 요소가 다 들어가게 해줘.\n주제: [주황 고양이가 창가에 앉음] 스타일: [수채화] 구도: [로우앵글 클로즈업] 색감: [따뜻한 파스텔] 분위기: [나른한 오후 햇살]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주황 고양이가 창가에 앉음",
+      "required": true,
+      "example": "주황 고양이가 창가에 앉음"
+    },
+    {
+      "name": "input_2",
+      "description": "수채화",
+      "required": true,
+      "example": "수채화"
+    },
+    {
+      "name": "input_3",
+      "description": "로우앵글 클로즈업",
+      "required": true,
+      "example": "로우앵글 클로즈업"
+    },
+    {
+      "name": "input_4",
+      "description": "따뜻한 파스텔",
+      "required": true,
+      "example": "따뜻한 파스텔"
+    },
+    {
+      "name": "input_5",
+      "description": "나른한 오후 햇살",
+      "required": true,
+      "example": "나른한 오후 햇살"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래 한국어 5요소를 이미지 생성 AI용 영어 프롬프트 한 줄로 바꿔줘. 미사여구는 빼고 시각적 단어 위주로, 각 요소가 다 들어가게 해줘.\n주제: 실제 값 스타일: 실제 값 구도: 실제 값 색감: 실제 값 분위기: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39i-convert"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

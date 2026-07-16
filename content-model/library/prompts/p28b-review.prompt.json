@@ -1,0 +1,46 @@
+{
+  "id": "p28b-review",
+  "version": 1,
+  "title": "내 코드 변경 리뷰 요청",
+  "summary": "내 코드 변경 리뷰 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내 Pull Request의 변경 내용(diff)이야. 초보자 관점에서 1)명백한 버그나 오타 2)더 나은 방식 3)그대로 병합해도 되는지 판단을 한국어로 해줘. 사소한 취향 문제와 꼭 고쳐야 할 문제를 구분해. [diff]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "diff",
+      "required": true,
+      "example": "diff"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "번역",
+    "코딩",
+    "검증",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p28b-review"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

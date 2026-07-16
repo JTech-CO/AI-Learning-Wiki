@@ -1,0 +1,38 @@
+{
+  "id": "p22w-pattern",
+  "version": 1,
+  "title": "이상치·패턴 집중 탐지",
+  "summary": "이상치·패턴 집중 탐지 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 표에서 눈에 띄는 패턴과 이상치를 찾아줘. (1)값이 급등/급락한 지점 (2)다른 항목과 추세가 반대인 항목 (3)서로 관련 있어 보이는 두 열의 관계. 각 발견마다 '어느 행/값 때문인지' 구체적으로.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "데이터 분석",
+    "스프레드시트",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22w-pattern"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

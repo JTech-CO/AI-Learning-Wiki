@@ -1,0 +1,45 @@
+{
+  "id": "discovery-call-framework-p3",
+  "version": 1,
+  "title": "까다로운 답변에 대응하는 후속 질문",
+  "summary": "까다로운 답변에 대응하는 후속 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "세일즈 콜에서 고객이 '[고객이 한 말: 예- 지금은 딱히 불편한 거 없어요]'라고 답했어. 몰아붙이지 않으면서도 숨은 문제나 잠재 손실을 드러낼 수 있는 부드러운 후속 질문 3개를 만들어줘. 각 질문의 의도도 한 줄로 설명해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고객이 한 말: 예- 지금은 딱히 불편한 거 없어요",
+      "required": true,
+      "example": "고객이 한 말: 예- 지금은 딱히 불편한 거 없어요"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "구조화 출력",
+    "영업",
+    "재무·금융",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:discovery-call-framework-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

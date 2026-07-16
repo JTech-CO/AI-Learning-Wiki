@@ -1,0 +1,47 @@
+{
+  "id": "one-person-business-p2",
+  "version": 1,
+  "title": "AI/사람 업무 분담표",
+  "summary": "AI/사람 업무 분담표 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [신입 직장인용 이메일 템플릿·코칭] 1인 비즈니스를 혼자 운영하려 해. 업무를 '마케팅 / 고객응대 / 운영 / 상품제작' 4영역으로 나누고, 각 영역에서 ①AI 도구에 맡길 반복·초안 작업 ②사람(나)이 반드시 직접 할 판단·검수·책임 작업 을 표로 정리해줘. 각 칸은 구체적 작업명으로. 마지막에 '이번 달 내가 직접 해야 할 핵심 행동 3가지'도 골라줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "신입 직장인용 이메일 템플릿·코칭",
+      "required": true,
+      "example": "신입 직장인용 이메일 템플릿·코칭"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "마케팅",
+    "재무·금융",
+    "생산성"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:one-person-business-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "p34w-9captions",
+  "version": 1,
+  "title": "인스타 캡션 9개(톤 3종) 한 번에 생성",
+  "summary": "인스타 캡션 9개(톤 3종) 한 번에 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "너는 우리 브랜드의 SNS 마케터야. 아래 제품으로 인스타그램 캡션을 만들어줘.\n제품: [콜드브루 키트]\n타깃 고객: [아침마다 바쁜 2030 직장인]\n핵심 장점: [설거지 없는 1회용 캡슐]\n조건:\n- 톤 3종(전문적/친근/유머)으로 각 3개씩, 총 9개\n- 각 캡션은 80자 이내, 이모지 1~2개\n- 맨 끝에 행동 유도 문구(예: 프로필 링크 확인)\n- 관련 해시태그 3개 추천\n- '톤 - 번호' 형식으로 구분.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "콜드브루 키트",
+      "required": true,
+      "example": "콜드브루 키트"
+    },
+    {
+      "name": "input_2",
+      "description": "아침마다 바쁜 2030 직장인",
+      "required": true,
+      "example": "아침마다 바쁜 2030 직장인"
+    },
+    {
+      "name": "input_3",
+      "description": "설거지 없는 1회용 캡슐",
+      "required": true,
+      "example": "설거지 없는 1회용 캡슐"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "요약",
+    "테스트",
+    "마케팅",
+    "콘텐츠",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p34w-9captions"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

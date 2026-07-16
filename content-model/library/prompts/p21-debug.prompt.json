@@ -1,0 +1,53 @@
+{
+  "id": "p21-debug",
+  "version": 1,
+  "title": "내 코드 디버깅/리뷰",
+  "summary": "내 코드 디버깅/리뷰 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Claude tool use 코드를 짰는데 최종 답변까지 안 가고 멈추거나 에러가 나. 아래 내 코드와 에러 메시지를 보고 무엇이 틀렸는지, 특히 tool_use_id 연결, assistant 메시지에 resp.content를 그대로 넣었는지, tool_result의 content 타입이 맞는지 짚어줘. 코드: [코드] 에러: [에러]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코드",
+      "required": true,
+      "example": "코드"
+    },
+    {
+      "name": "input_2",
+      "description": "에러",
+      "required": true,
+      "example": "에러"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "AI 에이전트",
+    "구조화 출력",
+    "콘텐츠",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "function-calling"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p21-debug"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

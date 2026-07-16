@@ -1,0 +1,48 @@
+{
+  "id": "p11i-revert",
+  "version": 1,
+  "title": "이전 버전으로 되돌리기",
+  "summary": "이전 버전으로 되돌리기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 바꾼 게 오히려 별로야. [두 번 전 / 처음] 버전으로 돌아가서, 거기서 [이 부분]만 바꿔줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "두 번 전 / 처음",
+      "required": true,
+      "example": "두 번 전 / 처음"
+    },
+    {
+      "name": "input_2",
+      "description": "이 부분",
+      "required": true,
+      "example": "이 부분"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11i-revert"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

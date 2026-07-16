@@ -1,0 +1,65 @@
+{
+  "id": "prompt-pack-packaging-p4",
+  "version": 1,
+  "title": "판매 표지·미리보기 문구 생성",
+  "summary": "판매 표지·미리보기 문구 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 디지털 상품 카피라이터다. 아래 정보로 프롬프트 팩의 (1) 표지 제목 3개 후보 (2) 한 줄 소개 (3) '이 팩이 필요한 사람' 체크리스트 4개 (4) 무료 미리보기로 공개하기 좋은 카드 2개 추천을 만들어줘.\n대상: [대상]\n핵심 약속: [한 문장 약속]\n프롬프트 개수: [개수]\n카테고리: [카테고리 나열]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_2",
+      "description": "한 문장 약속",
+      "required": true,
+      "example": "한 문장 약속"
+    },
+    {
+      "name": "input_3",
+      "description": "개수",
+      "required": true,
+      "example": "개수"
+    },
+    {
+      "name": "input_4",
+      "description": "카테고리 나열",
+      "required": true,
+      "example": "카테고리 나열"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "문서 분석",
+    "프롬프트 설계",
+    "영업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-pack-packaging-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

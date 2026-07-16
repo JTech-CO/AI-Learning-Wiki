@@ -1,0 +1,52 @@
+{
+  "id": "opensource-frontier-llms-p2",
+  "version": 1,
+  "title": "내 사양에 맞는 모델 추천",
+  "summary": "내 사양에 맞는 모델 추천 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 컴퓨터 사양은 [GPU 모델명/VRAM GB, RAM GB]야. 주 용도는 [코딩/글쓰기/번역/에이전트 등]이야. 2026년 기준 Kimi K2, DeepSeek V4, Qwen 3, GLM-5 중에서 내가 LM Studio로 로컬 실행하기 좋은 모델과 정확한 양자화 버전(Q4/Q5 등)을 추천하고 이유를 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "GPU 모델명/VRAM GB, RAM GB",
+      "required": true,
+      "example": "GPU 모델명/VRAM GB, RAM GB"
+    },
+    {
+      "name": "input_2",
+      "description": "코딩/글쓰기/번역/에이전트 등",
+      "required": true,
+      "example": "코딩/글쓰기/번역/에이전트 등"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "의사결정",
+    "AI 에이전트",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:opensource-frontier-llms-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p20e-tests",
+  "version": 1,
+  "title": "실패 케이스 테스트 생성",
+  "summary": "실패 케이스 테스트 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "이 Pydantic 스키마에 대해 검증이 반드시 실패해야 하는 악성 LLM 응답 예시 6개(필드 누락·타입 오류·코드펜스 포함·값 범위 초과·잘못된 통화 코드·JSON 앞 설명문)를 만들고, 각각이 내 재시도 루프에서 통과되는지 확인하는 pytest 테스트를. 스키마: [모델]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "모델",
+      "required": true,
+      "example": "모델"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "테스트",
+    "구조화 출력",
+    "검증",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "json-schema"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20e-tests"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

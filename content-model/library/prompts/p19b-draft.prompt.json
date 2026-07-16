@@ -1,0 +1,52 @@
+{
+  "id": "p19b-draft",
+  "version": 1,
+  "title": "스키마 초안 생성",
+  "summary": "스키마 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [서비스 한 줄 설명] 서비스를 만들고 있어. 등장하는 주요 개념은 [명사들 나열]이야. 이걸 PostgreSQL 관계형 스키마로 설계해줘. 각 테이블마다 컬럼·데이터 타입·기본키·외래키를 표로 정리하고, 다대다 관계는 중간 테이블로 풀어줘. 마지막에 왜 그렇게 나눴는지 1줄씩.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "서비스 한 줄 설명",
+      "required": true,
+      "example": "서비스 한 줄 설명"
+    },
+    {
+      "name": "input_2",
+      "description": "명사들 나열",
+      "required": true,
+      "example": "명사들 나열"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "데이터베이스",
+    "구조화 출력",
+    "비즈니스",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19b-draft"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

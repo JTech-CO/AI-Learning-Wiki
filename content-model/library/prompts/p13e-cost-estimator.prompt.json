@@ -1,0 +1,68 @@
+{
+  "id": "p13e-cost-estimator",
+  "version": 1,
+  "title": "프롬프트 비용 견적 계산기",
+  "summary": "프롬프트 비용 견적 계산기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 프롬프트의 입력 토큰 수를 추정하고 예상 출력 [출력 예상 토큰 수]토큰 기준으로 1회 호출 비용을 계산해줘. 단가는 백만 토큰당 입력 [입력단가]달러, 출력 [출력단가]달러야. 계산식과 원화 환산(1달러=[환율]원)까지. 프롬프트: [시스템+사용자 프롬프트 전체]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "출력 예상 토큰 수",
+      "required": true,
+      "example": "출력 예상 토큰 수"
+    },
+    {
+      "name": "input_2",
+      "description": "입력단가",
+      "required": true,
+      "example": "입력단가"
+    },
+    {
+      "name": "input_3",
+      "description": "출력단가",
+      "required": true,
+      "example": "출력단가"
+    },
+    {
+      "name": "input_4",
+      "description": "환율",
+      "required": true,
+      "example": "환율"
+    },
+    {
+      "name": "input_5",
+      "description": "시스템+사용자 프롬프트 전체",
+      "required": true,
+      "example": "시스템+사용자 프롬프트 전체"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "API",
+    "프롬프트 설계",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "token"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p13e-cost-estimator"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

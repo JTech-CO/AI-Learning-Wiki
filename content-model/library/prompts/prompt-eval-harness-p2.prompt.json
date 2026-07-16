@@ -1,0 +1,45 @@
+{
+  "id": "prompt-eval-harness-p2",
+  "version": 1,
+  "title": "테스트 케이스 대량 생성",
+  "summary": "테스트 케이스 대량 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [프롬프트 용도]를 평가할 테스트 케이스를 만들고 있다. 쉬운 것 5개, 어려운 것 5개, 함정(모호·악의·경계) 5개를 섞어 총 15개를 만들어라. 각 케이스는 id, input, expected(기대 포인트 한 줄) 3개 열의 표로 출력하라. 실제 사용자가 쓸 법한 자연스러운 한국어 입력으로 만들어라.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "프롬프트 용도",
+      "required": true,
+      "example": "프롬프트 용도"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "테스트",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "평가"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-eval-harness-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

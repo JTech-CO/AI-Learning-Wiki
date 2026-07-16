@@ -1,0 +1,40 @@
+{
+  "id": "p35-verify-both-ways",
+  "version": 1,
+  "title": "양방향 확인용",
+  "summary": "양방향 확인용 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 만든 Notion 행들을 다시 조회해서 실제로 저장됐는지 표로 보여주고, 누락된 항목이 있으면 알려줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "데이터베이스",
+    "자동화",
+    "AI 에이전트",
+    "검증",
+    "출처·인용",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "mcp"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p35-verify-both-ways"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

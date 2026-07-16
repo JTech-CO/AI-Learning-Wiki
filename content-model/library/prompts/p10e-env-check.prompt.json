@@ -1,0 +1,53 @@
+{
+  "id": "p10e-env-check",
+  "version": 1,
+  "title": "환경변수 등록 확인",
+  "summary": "환경변수 등록 확인 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 운영체제는 [맥/윈도우/리눅스]야. API 키를 [ANTHROPIC_API_KEY] 환경변수로 등록했는데 코드가 키를 못 읽는 것 같아. 등록이 제대로 됐는지 확인하는 명령과 안 됐을 때 다시 설정하는 방법을 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "맥/윈도우/리눅스",
+      "required": true,
+      "example": "맥/윈도우/리눅스"
+    },
+    {
+      "name": "input_2",
+      "description": "ANTHROPIC_API_KEY",
+      "required": true,
+      "example": "ANTHROPIC_API_KEY"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "API",
+    "프롬프트 설계",
+    "콘텐츠",
+    "검증"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "sdk"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p10e-env-check"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

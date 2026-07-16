@@ -1,0 +1,53 @@
+{
+  "id": "p38-first-app",
+  "version": 1,
+  "title": "처음 앱 전체 주문 템플릿",
+  "summary": "처음 앱 전체 주문 템플릿 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[동네 미용실 예약 관리] 용도의 간단한 웹앱을 만들어줘. 입력 항목은 [이름, 전화번호, 방문일, 메모]이고 저장하면 아래에 카드 목록으로. 각 카드에 삭제 버튼, 데이터는 새로고침해도 사라지지 않게 Replit의 PostgreSQL에 영구 저장. 화면은 한국어, 모바일에서도 잘 보이게. 무료 라이트 빌드로 만들어도 돼.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "동네 미용실 예약 관리",
+      "required": true,
+      "example": "동네 미용실 예약 관리"
+    },
+    {
+      "name": "input_2",
+      "description": "이름, 전화번호, 방문일, 메모",
+      "required": true,
+      "example": "이름, 전화번호, 방문일, 메모"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "데이터베이스",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "웹 개발",
+    "노코드"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p38-first-app"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

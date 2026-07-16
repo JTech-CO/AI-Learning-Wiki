@@ -1,0 +1,44 @@
+{
+  "id": "p29b-merge-both",
+  "version": 1,
+  "title": "두 버전 합치기(둘 다 필요할 때)",
+  "summary": "두 버전 합치기(둘 다 필요할 때) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 충돌 블록에서 HEAD와 상대 코드가 둘 다 필요한 기능 같아. 두 변경을 모두 살리면서 논리적으로 하나로 합친 최종 코드를 만들어줘. 충돌 기호(<<<<<<< ======= >>>>>>>)는 결과에 절대 포함하지 마. [충돌 블록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "충돌 블록",
+      "required": true,
+      "example": "충돌 블록"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "협업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29b-merge-both"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

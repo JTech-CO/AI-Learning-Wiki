@@ -1,0 +1,53 @@
+{
+  "id": "feedback-conflict-analysis",
+  "version": 1,
+  "title": "서로 충돌하는 사용자 요구 분석",
+  "summary": "서로 충돌하는 사용자 요구 분석 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 사용자 요구 중 서로 충돌하는 항목을 찾아줘. 충돌 이유, 영향을 받는 사용자 집단, 공통 목표, 절충안, 추가로 확인할 질문을 표로 작성해. 다수 의견이라는 이유만으로 소수 사용자의 접근성·안전 요구를 제외하지 마. 요구 목록: [목록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "목록",
+      "required": true,
+      "example": "목록"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "집단별 표본 수와 사용 환경을 확인한 뒤 제품 담당자가 최종 판단한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "요구: 화면을 최대한 단순하게 / 고급 필터를 항상 표시 / 키보드 단축키를 늘려 달라. 충돌과 절충안을 분석해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "고객 지원",
+    "접근성",
+    "안전",
+    "글쓰기",
+    "데이터 분석"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "user-feedback-collection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "p14i-continue",
+  "version": 1,
+  "title": "앞 답 이어서 고치기",
+  "summary": "앞 답 이어서 고치기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 네가 준 답을 [더 짧게 / 표로 / 초등학생도 이해하게 / 존댓말로] 다시 정리해줘. 내용은 그대로 두고 형식만 바꿔줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "더 짧게 / 표로 / 초등학생도 이해하게 / 존댓말로",
+      "required": true,
+      "example": "더 짧게 / 표로 / 초등학생도 이해하게 / 존댓말로"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "context-window"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14i-continue"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

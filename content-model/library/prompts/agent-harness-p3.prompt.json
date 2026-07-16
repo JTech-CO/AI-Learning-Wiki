@@ -1,0 +1,47 @@
+{
+  "id": "agent-harness-p3",
+  "version": 1,
+  "title": "프레임워크 비교 추천",
+  "summary": "프레임워크 비교 추천 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [예: 여러 AI가 역할 나눠 협업하는 / 단일 AI가 도구만 쓰는] 에이전트를 만들고 싶다. LangGraph, CrewAI, OpenAI Agents SDK, Claude Agent SDK(claude-agent-sdk), anthropic 저수준 SDK 중 내 목적에 가장 쉬운 것 1개를 이유와 함께 골라주고, 그걸로 시작하는 10줄 예제를 줘. 참고로 claude-agent-sdk는 Claude Code CLI 기반 고수준 래퍼이고, anthropic 패키지는 루프를 직접 짜는 저수준 클라이언트다.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 여러 AI가 역할 나눠 협업하는 / 단일 AI가 도구만 쓰는",
+      "required": true,
+      "example": "여러 AI가 역할 나눠 협업하는 / 단일 AI가 도구만 쓰는"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "의사결정",
+    "시각화",
+    "코딩",
+    "API",
+    "AI 에이전트"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "agent-harness"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-harness-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

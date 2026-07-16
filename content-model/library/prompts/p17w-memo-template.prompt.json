@@ -1,0 +1,83 @@
+{
+  "id": "p17w-memo-template",
+  "version": 1,
+  "title": "검증 메모 양식(그대로 채우기)",
+  "summary": "검증 메모 양식(그대로 채우기) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[AI 답변 주제]: 검증한 주장과 결과 ▸ 🟢 확인됨 — [주장]/근거[링크·발행처] 🟡 의심 — [주장]/이유[원문과 어떻게 다른지] 🔴 허위 — [주장]/이유[링크 깨짐 or 숫자 불일치] 결론 ▸ [발표·인용해도 되는 것 / 절대 쓰면 안 되는 것]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "AI 답변 주제",
+      "required": true,
+      "example": "AI 답변 주제"
+    },
+    {
+      "name": "input_2",
+      "description": "주장",
+      "required": true,
+      "example": "주장"
+    },
+    {
+      "name": "input_3",
+      "description": "링크·발행처",
+      "required": true,
+      "example": "링크·발행처"
+    },
+    {
+      "name": "input_4",
+      "description": "원문과 어떻게 다른지",
+      "required": true,
+      "example": "원문과 어떻게 다른지"
+    },
+    {
+      "name": "input_5",
+      "description": "링크 깨짐 or 숫자 불일치",
+      "required": true,
+      "example": "링크 깨짐 or 숫자 불일치"
+    },
+    {
+      "name": "input_6",
+      "description": "발표·인용해도 되는 것 / 절대 쓰면 안 되는 것",
+      "required": true,
+      "example": "발표·인용해도 되는 것 / 절대 쓰면 안 되는 것"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "신입 구성원의 원격 온보딩: 검증한 주장과 결과 ▸ 🟢 확인됨 — 실제 값/근거실제 값 🟡 의심 — 실제 값/이유회의록 원문 🔴 허위 — 실제 값/이유5 결론 ▸ 월별 고객 문의 건수 표",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "조사",
+    "프레젠테이션",
+    "문서 분석",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17w-memo-template"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

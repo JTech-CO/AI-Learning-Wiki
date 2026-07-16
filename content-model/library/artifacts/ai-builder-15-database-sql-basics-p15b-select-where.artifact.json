@@ -1,0 +1,47 @@
+{
+  "id": "ai-builder-15-database-sql-basics-p15b-select-where",
+  "version": 1,
+  "title": "조건으로 골라 꺼내기",
+  "summary": "조건으로 골라 꺼내기 작업에 재사용할 수 있는 쿼리 자료다.",
+  "type": "query",
+  "language": "SQL",
+  "runtime": "표준 SQL 호환 데이터베이스",
+  "files": [
+    {
+      "path": "ai-builder-15-database-sql-basics-p15b-select-where.sql",
+      "content": "SELECT [원하는 열들] FROM [표이름] WHERE [열] = '[찾을 값]';",
+      "language": "sql"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "스프레드시트",
+    "데이터베이스",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-builder-15-database-sql-basics-p15b-select-where"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

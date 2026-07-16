@@ -1,0 +1,58 @@
+{
+  "id": "p37w-criteria",
+  "version": 1,
+  "title": "질문별 성공 기준·범위 생성",
+  "summary": "질문별 성공 기준·범위 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 하위 질문 목록이야: [질문1] [질문2] [질문3]. 각 질문마다 (a)무엇을 보면 답으로 인정할지 성공 기준, (b)포함할 범위, (c)제외할 범위, (d)찾아볼 만한 출처 후보 2개를 표로 정리해줘. 성공 기준에는 필요한 출처 개수와 기간을 숫자로 넣어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문1",
+      "required": true,
+      "example": "질문1"
+    },
+    {
+      "name": "input_2",
+      "description": "질문2",
+      "required": true,
+      "example": "질문2"
+    },
+    {
+      "name": "input_3",
+      "description": "질문3",
+      "required": true,
+      "example": "질문3"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "검색",
+    "프롬프트 설계",
+    "출처·인용",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37w-criteria"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

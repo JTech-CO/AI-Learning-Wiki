@@ -1,0 +1,40 @@
+{
+  "id": "deploy-api-service-p1",
+  "version": 1,
+  "title": "FastAPI 에이전트 서버 뼈대 생성",
+  "summary": "FastAPI 에이전트 서버 뼈대 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬 함수 run_agent(question: str) -> str 를 FastAPI로 감싸는 main.py 전체 코드를 만들어줘. 요구사항: (1) POST /ask 엔드포인트, Pydantic 모델로 question 받기 (2) X-API-Key 헤더로 서비스 인증, 틀리면 401 (3) OpenAI 키와 서비스 키는 os.environ 에서 읽기 (4) LLM 호출 timeout 25초 (5) 입력 길이 2000자 초과 시 413. 주석은 한국어로.",
+  "variables": [],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "번역",
+    "코딩",
+    "API",
+    "AI 에이전트",
+    "보안",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:deploy-api-service-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

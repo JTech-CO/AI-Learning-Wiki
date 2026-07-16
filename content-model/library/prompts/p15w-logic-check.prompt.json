@@ -1,0 +1,53 @@
+{
+  "id": "p15w-logic-check",
+  "version": 1,
+  "title": "논리 흐름 점검 (본문 쓰기 전)",
+  "summary": "논리 흐름 점검 (본문 쓰기 전) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 문서 목차와 각 소제목의 핵심 메시지야. [독자: OOO] 입장에서 읽었을 때 논리 비약, 빠진 단계, 순서가 어색한 곳을 지적해줘. 본문은 쓰지 말고 구조 문제만.\n[목차+한 줄 메시지 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "독자: OOO",
+      "required": true,
+      "example": "독자: OOO"
+    },
+    {
+      "name": "input_2",
+      "description": "목차+한 줄 메시지 붙여넣기",
+      "required": true,
+      "example": "목차+한 줄 메시지 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "문서 분석",
+    "프롬프트 설계",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p15w-logic-check"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

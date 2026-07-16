@@ -1,0 +1,46 @@
+{
+  "id": "outreach-followup-sequence-p4",
+  "version": 1,
+  "title": "정중한 종료 메일(팔로업4)",
+  "summary": "정중한 종료 메일(팔로업4) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 맥락으로 '마지막 팔로업' 메일을 써줘. 상대를 압박하지 않고, 문을 열어둔 채 깔끔하게 마무리. '이게 마지막 메일'임을 명시하고, 나중에 필요하면 편히 연락 달라는 톤. 한국어, 4문장 이내, 제목줄 포함.\n맥락: [제안/상대/앞선 메일 요지]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "제안/상대/앞선 메일 요지",
+      "required": true,
+      "example": "제안/상대/앞선 메일 요지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "마케팅",
+    "영업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:outreach-followup-sequence-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

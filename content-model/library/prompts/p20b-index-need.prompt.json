@@ -1,0 +1,52 @@
+{
+  "id": "p20b-index-need",
+  "version": 1,
+  "title": "인덱스 필요성 사전 판단",
+  "summary": "인덱스 필요성 사전 판단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 테이블 스키마는 다음과 같아: [CREATE TABLE]. 이 앱에서 가장 자주 실행되는 조회는 [특정 user_id의 최근 주문 20개]야. 어느 컬럼(또는 복합 인덱스)에 인덱스를 걸면 좋을지, 걸면 안 되는 컬럼은 무엇인지 이유와 함께 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "CREATE TABLE",
+      "required": true,
+      "example": "CREATE TABLE"
+    },
+    {
+      "name": "input_2",
+      "description": "특정 user_id의 최근 주문 20개",
+      "required": true,
+      "example": "특정 user_id의 최근 주문 20개"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "데이터베이스",
+    "프롬프트 설계",
+    "구조화 출력",
+    "검증",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20b-index-need"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

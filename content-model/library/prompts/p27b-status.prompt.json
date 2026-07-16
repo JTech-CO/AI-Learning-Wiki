@@ -1,0 +1,44 @@
+{
+  "id": "p27b-status",
+  "version": 1,
+  "title": "내 git status 해석해줘",
+  "summary": "내 git status 해석해줘 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 'git status' 출력이야. 각 파일이 어떤 상태인지(추적 안 됨/스테이징됨/수정됨) 쉽게 설명하고, 지금 커밋하려면 어떤 명령을 순서대로 쳐야 하는지 알려줘. [git status 출력]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "git status 출력",
+      "required": true,
+      "example": "git status 출력"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "안전",
+    "모니터링"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27b-status"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

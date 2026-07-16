@@ -1,0 +1,64 @@
+{
+  "id": "p13w-3types",
+  "version": 1,
+  "title": "반복 메일 3종 한 번에 템플릿화",
+  "summary": "반복 메일 3종 한 번에 템플릿화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 한국 비즈니스 이메일 카피라이터야. 아래 내 실제 메일을 재사용 템플릿으로 바꿔줘. 규칙: (1)매번 바뀌는 부분은 [고객명][날짜]처럼 뜻이 보이는 대괄호 변수로 (2)문장 톤은 정중하되 과하지 않게 (3)제목 줄도 템플릿으로 (4)맨 위에 '※ 채울 변수' 목록. [실제 보낸 메일 붙여넣기] 그리고 같은 톤으로 '요청형(자료 부탁)'과 '거절형(정중한 사양)' 템플릿도 각각 추가로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고객명",
+      "required": true,
+      "example": "고객명"
+    },
+    {
+      "name": "input_2",
+      "description": "날짜",
+      "required": true,
+      "example": "날짜"
+    },
+    {
+      "name": "input_3",
+      "description": "실제 보낸 메일 붙여넣기",
+      "required": true,
+      "example": "실제 보낸 메일 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 한국 비즈니스 이메일 카피라이터야. 아래 내 실제 메일을 재사용 템플릿으로 바꿔줘. 규칙: (1)매번 바뀌는 부분은 신입 직장인2026년 7월 31일처럼 뜻이 보이는 대괄호 변수로 (2)문장 톤은 정중하되 과하지 않게 (3)제목 줄도 템플릿으로 (4)맨 위에 '※ 채울 변수' 목록. 실제 값 그리고 같은 톤으로 '요청형(자료 부탁)'과 '거절형(정중한 사양)' 템플릿도 각각 추가로.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "자동화",
+    "프롬프트 설계",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p13w-3types"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "p35-drive-to-notion",
+  "version": 1,
+  "title": "Drive→Notion 가공 파이프라인",
+  "summary": "Drive→Notion 가공 파이프라인 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Google Drive에서 '주간보고' 폴더의 최신 문서를 읽고 핵심 3가지로 요약한 뒤, Notion '주간요약' DB에 오늘 날짜로 새 행을 만들어 써넣어줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "데이터베이스",
+    "자동화",
+    "AI 에이전트",
+    "보안"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "mcp"
+  ],
+  "providerScope": "google",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p35-drive-to-notion"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

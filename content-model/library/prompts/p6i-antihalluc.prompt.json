@@ -1,0 +1,45 @@
+{
+  "id": "p6i-antihalluc",
+  "version": 1,
+  "title": "환각 방지 기본 질문",
+  "summary": "환각 방지 기본 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[궁금한 것]에 대해 알려줘. 단, 확실하지 않으면 '모른다'고 솔직히 말하고, 사실을 지어내지 마. 답할 수 있으면 어떤 근거·자료 기준인지도 함께 적어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "궁금한 것",
+      "required": true,
+      "example": "궁금한 것"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "next-token-prediction"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6i-antihalluc"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

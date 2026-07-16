@@ -1,0 +1,53 @@
+{
+  "id": "agentic-graph-rag-p1",
+  "version": 1,
+  "title": "에이전트 분해 프롬프트",
+  "summary": "에이전트 분해 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 조사 에이전트다. 다음 복잡 질문을 답하기 위해 필요한 [3~5개]의 서브질문으로 쪼개라. 각 서브질문은 그래프 검색으로 답할 수 있어야 한다.\n질문: [여기에 복잡한 질문]\n출력형식: 1) 서브질문 / 검색해야 할 엔티티",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "3~5개",
+      "required": true,
+      "example": "3~5개"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 복잡한 질문",
+      "required": true,
+      "example": "여기에 복잡한 질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "문서 분석",
+    "시각화",
+    "AI 에이전트",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agentic-graph-rag-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

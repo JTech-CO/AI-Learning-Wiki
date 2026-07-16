@@ -1,0 +1,52 @@
+{
+  "id": "p30w-hierarchy",
+  "version": 1,
+  "title": "폰트 위계 수치 추천",
+  "summary": "폰트 위계 수치 추천 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "발표용 슬라이드(16:9, 한글)에서 제목/본문/캡션의 폰트 크기(pt)와 굵기, 한글 무료 글꼴 조합을 추천해줘. 청중은 [회의실 임원 10명], 화면은 [55인치 TV]. 위계가 분명하되 과하지 않게 3단으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "회의실 임원 10명",
+      "required": true,
+      "example": "회의실 임원 10명"
+    },
+    {
+      "name": "input_2",
+      "description": "55인치 TV",
+      "required": true,
+      "example": "55인치 TV"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프레젠테이션",
+    "시각화",
+    "프롬프트 설계",
+    "협업"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "alignment"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p30w-hierarchy"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

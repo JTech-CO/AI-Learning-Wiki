@@ -1,0 +1,64 @@
+{
+  "id": "offer-validation-test-p2",
+  "version": 1,
+  "title": "검증 실험 설계 점검받기",
+  "summary": "검증 실험 설계 점검받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 수요 검증 실험을 냉정하게 점검해줘.\n가설: [한 문장 가설]\n검증방법: [랜딩+선입금 등]\n합격선: [숫자 기준]\n노출채널: [어디에 뿌릴지]\n질문: (1) 이 합격선 숫자가 합리적인가, 너무 후하거나 빡빡하지 않나 (2) '말뿐인 관심'을 '진짜 지불 신호'로 착각할 위험은 없나 (3) 30분~하루 안에 더 강한 지불 신호를 얻을 방법 2개 (4) 이 실험의 가장 큰 허점 1개.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "한 문장 가설",
+      "required": true,
+      "example": "한 문장 가설"
+    },
+    {
+      "name": "input_2",
+      "description": "랜딩+선입금 등",
+      "required": true,
+      "example": "랜딩+선입금 등"
+    },
+    {
+      "name": "input_3",
+      "description": "숫자 기준",
+      "required": true,
+      "example": "숫자 기준"
+    },
+    {
+      "name": "input_4",
+      "description": "어디에 뿌릴지",
+      "required": true,
+      "example": "어디에 뿌릴지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "평가",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:offer-validation-test-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

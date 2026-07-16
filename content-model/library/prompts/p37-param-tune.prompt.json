@@ -1,0 +1,51 @@
+{
+  "id": "p37-param-tune",
+  "version": 1,
+  "title": "검색 파라미터 튜닝 조언",
+  "summary": "검색 파라미터 튜닝 조언 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "현재 설정은 chunk_size=[값], overlap=[값], top-k=[값], 임계값=[값]. 증상은 [관련 없는 청크가 자주 섞임/답이 문맥이 끊겨 부실함]. 이 증상을 줄이려면 어떤 값을 어느 방향으로 바꿔야 하는지 우선순위대로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "관련 없는 청크가 자주 섞임/답이 문맥이 끊겨 부실함",
+      "required": true,
+      "example": "관련 없는 청크가 자주 섞임/답이 문맥이 끊겨 부실함"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "현재 설정은 chunk_size=실제 값, overlap=실제 값, top-k=실제 값, 임계값=실제 값. 증상은 실제 값. 이 증상을 줄이려면 어떤 값을 어느 방향으로 바꿔야 하는지 우선순위대로.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "문서 분석",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37-param-tune"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

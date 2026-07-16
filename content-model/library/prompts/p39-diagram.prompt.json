@@ -1,0 +1,58 @@
+{
+  "id": "p39-diagram",
+  "version": 1,
+  "title": "상태 다이어그램을 글로 설명",
+  "summary": "상태 다이어그램을 글로 설명 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 에이전트 루프를 처음 보는 사람에게 설명하는 상태 다이어그램을 텍스트(박스와 화살표)로. 목표: [목표] 도구: [도구 나열] 중단 조건: [3가지]. PLAN/ACT/OBSERVE/DECIDE/END 노드를 쓰고 DECIDE의 분기(예/아니오)를 명확히 화살표로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "목표",
+      "required": true,
+      "example": "목표"
+    },
+    {
+      "name": "input_2",
+      "description": "도구 나열",
+      "required": true,
+      "example": "도구 나열"
+    },
+    {
+      "name": "input_3",
+      "description": "3가지",
+      "required": true,
+      "example": "3가지"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "계획",
+    "시각화",
+    "AI 에이전트",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "agent-loop"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39-diagram"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

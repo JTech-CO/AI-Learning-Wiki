@@ -1,0 +1,45 @@
+{
+  "id": "p3-stuck",
+  "version": 1,
+  "title": "가입하다 막혔을 때 도움 받기",
+  "summary": "가입하다 막혔을 때 도움 받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "AI 챗봇에 가입하다가 [막힌 지점: 예-이메일 인증 코드가 안 와요] 문제가 생겼어. 초보자도 따라 할 수 있게 해결 방법을 1번, 2번, 3번 순서로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "막힌 지점: 예-이메일 인증 코드가 안 와요",
+      "required": true,
+      "example": "막힌 지점: 예-이메일 인증 코드가 안 와요"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "코딩",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p3-stuck"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

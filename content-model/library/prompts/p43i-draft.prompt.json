@@ -1,0 +1,71 @@
+{
+  "id": "p43i-draft",
+  "version": 1,
+  "title": "초안 쓰기 (챗봇에 재료와 함께)",
+  "summary": "초안 쓰기 (챗봇에 재료와 함께) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내가 모은 조사 재료야: [조사 결과 붙여넣기] 이 재료만 사용해서 [독자: 예 초보 사장]를 위한 [분량: 예 800자] 글 초안을 써줘. 톤은 [예: 친근하고 쉬운], 소제목 3개로 구성하고, 재료에 없는 내용은 지어내지 마.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "조사 결과 붙여넣기",
+      "required": true,
+      "example": "조사 결과 붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "독자: 예 초보 사장",
+      "required": true,
+      "example": "독자: 예 초보 사장"
+    },
+    {
+      "name": "input_3",
+      "description": "분량: 예 800자",
+      "required": true,
+      "example": "분량: 예 800자"
+    },
+    {
+      "name": "input_4",
+      "description": "예: 친근하고 쉬운",
+      "required": true,
+      "example": "친근하고 쉬운"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래는 내가 모은 조사 재료야: 실제 값 이 재료만 사용해서 신입 직장인를 위한 실제 값 글 초안을 써줘. 톤은 친근하고 쉬운, 소제목 3개로 구성하고, 재료에 없는 내용은 지어내지 마.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "조사",
+    "자동화",
+    "검색",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "tool-selection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p43i-draft"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

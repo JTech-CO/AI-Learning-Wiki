@@ -1,0 +1,58 @@
+{
+  "id": "img-bg",
+  "version": 1,
+  "title": "SNS/블로그 배경 사진",
+  "summary": "SNS/블로그 배경 사진 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[찍을 대상, 예: 따뜻한 라떼 한 잔]이 [배경, 예: 카페 창가]에 놓여 있고, [분위기, 예: 아침 햇살이 부드럽게 드는] 느낌으로, 실제 사진처럼 만들어줘. 글자는 넣지 마.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "찍을 대상, 예: 따뜻한 라떼 한 잔",
+      "required": true,
+      "example": "찍을 대상, 예: 따뜻한 라떼 한 잔"
+    },
+    {
+      "name": "input_2",
+      "description": "배경, 예: 카페 창가",
+      "required": true,
+      "example": "배경, 예: 카페 창가"
+    },
+    {
+      "name": "input_3",
+      "description": "분위기, 예: 아침 햇살이 부드럽게 드는",
+      "required": true,
+      "example": "분위기, 예: 아침 햇살이 부드럽게 드는"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "이미지",
+    "콘텐츠",
+    "모니터링"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:img-bg"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

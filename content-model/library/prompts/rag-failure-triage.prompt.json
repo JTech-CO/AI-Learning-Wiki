@@ -1,0 +1,53 @@
+{
+  "id": "rag-failure-triage",
+  "version": 1,
+  "title": "RAG 실패 원인 단계별 분류",
+  "summary": "RAG 실패 원인 단계별 분류 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 실패 사례를 질의 해석, 검색, 재순위화, 문맥 조립, 생성, 인용 단계 중 어디에서 시작됐는지 분류해줘. 관찰 증거, 가장 가능성 높은 원인, 추가 로그, 최소 재현 시험, 우선 수정안을 표로 작성해. 로그: [실패 사례와 추적 로그]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "실패 사례와 추적 로그",
+      "required": true,
+      "example": "실패 사례와 추적 로그"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "한 번에 여러 단계를 바꾸지 말고 최소 재현 시험으로 최초 실패 지점을 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "정답 문서는 검색 20위, reranker 뒤 2위였지만 최종 문맥에서 누락된 로그를 단계별로 분류해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "RAG",
+    "디버깅",
+    "평가",
+    "모니터링",
+    "글쓰기",
+    "테스트"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "rag-evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

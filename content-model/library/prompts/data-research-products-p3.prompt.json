@@ -1,0 +1,47 @@
+{
+  "id": "data-research-products-p3",
+  "version": 1,
+  "title": "데이터·리서치 상품 한 장 기획서",
+  "summary": "데이터·리서치 상품 한 장 기획서 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 데이터/리서치 상품의 한 장 기획서를 만들어줘.\n- 주제·형태(데이터셋/리포트/뉴스레터): [...] / 대상: [...] / 업데이트 주기: [...] / 가격: [...]\n구성: ①누구에게+어떤 시간을 아껴주나 ②제공 형태·주기 ③무료 샘플 ④유료 구독 ⑤출처·정확성 정책(출처 표기/정정·환불) ⑥지켜야 할 약관·저작권 체크 3가지.\n과장 금지, 정확성·신뢰를 핵심 가치로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "데이터 분석",
+    "검색",
+    "구조화 출력",
+    "영업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:data-research-products-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

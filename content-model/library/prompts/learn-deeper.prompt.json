@@ -1,0 +1,45 @@
+{
+  "id": "learn-deeper",
+  "version": 1,
+  "title": "답이 어려울 때 더 파고들기",
+  "summary": "답이 어려울 때 더 파고들기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 설명에서 '[여전히 어려운 단어]'를 더 쉽게, 다른 비유로 다시 설명해줘. 전문용어는 빼고.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여전히 어려운 단어",
+      "required": true,
+      "example": "여전히 어려운 단어"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "교육",
+    "프롬프트 설계",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:learn-deeper"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

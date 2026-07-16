@@ -1,0 +1,59 @@
+{
+  "id": "opensource-frontier-llms-p1",
+  "version": 1,
+  "title": "모델 성능 빠른 테스트",
+  "summary": "모델 성능 빠른 테스트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 세 가지를 순서대로 해줘:\n1) 다음 문장을 영어로 번역: [한국어 문장]\n2) 이 파이썬 코드의 버그를 찾아줘: [코드 붙여넣기]\n3) 아래 글을 3줄로 요약: [긴 글 붙여넣기]\n각 답변의 정확도를 내가 비교할 수 있게 명확하게 구분해서 답해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "한국어 문장",
+      "required": true,
+      "example": "한국어 문장"
+    },
+    {
+      "name": "input_2",
+      "description": "코드 붙여넣기",
+      "required": true,
+      "example": "코드 붙여넣기"
+    },
+    {
+      "name": "input_3",
+      "description": "긴 글 붙여넣기",
+      "required": true,
+      "example": "긴 글 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "번역",
+    "의사결정",
+    "코딩",
+    "테스트"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:opensource-frontier-llms-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

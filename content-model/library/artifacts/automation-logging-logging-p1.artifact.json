@@ -1,0 +1,50 @@
+{
+  "id": "automation-logging-logging-p1",
+  "version": 1,
+  "title": "로깅 기본 틀(재사용용)",
+  "summary": "로깅 기본 틀(재사용용) 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Python",
+  "runtime": "Python 3.11 이상",
+  "files": [
+    {
+      "path": "automation-logging-logging-p1.py",
+      "content": "import logging\n\nlogging.basicConfig(\n    filename='app.log',\n    level=logging.INFO,\n    format='%(asctime)s %(levelname)s %(message)s',\n    encoding='utf-8'\n)\n\nlogging.info('[작업이름] 시작')\ntry:\n    # 여기에 자동화가 할 일 작성\n    logging.info('[단계1 설명] 완료')\nexcept Exception as e:\n    logging.error(f'[단계1 설명] 실패: {e}')\n\nlogging.info('[작업이름] 끝')",
+      "language": "python"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "자동화",
+    "생산성",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "observability"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-logging-logging-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

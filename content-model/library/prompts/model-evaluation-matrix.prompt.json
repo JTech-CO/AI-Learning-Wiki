@@ -1,0 +1,83 @@
+{
+  "id": "model-evaluation-matrix",
+  "version": 1,
+  "title": "업무별 모델 평가표 생성",
+  "summary": "업무별 모델 평가표 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "evaluation-rubric",
+  "difficulty": "entry",
+  "template": "아래 [업무]에 사용할 AI 모델을 비교하려고 한다. 먼저 평가 기준과 합격선을 표로 설계해줘. 정확성·형식 준수·지연 시간·작업 1건 비용·재시도 안정성을 반드시 포함하고, 실제 입력 표본 10개를 어떻게 익명화해 만들지도 제안해줘. 특정 모델을 미리 1등으로 정하지 말고, 동일 조건으로 비교할 수 있는 테스트 절차를 작성해줘.\n\n[업무]: [설명]\n[필수 출력 형식]: [JSON/표/문서]\n[허용 지연]: [초]\n[월 처리량]: [건]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "업무",
+      "required": true,
+      "example": "업무"
+    },
+    {
+      "name": "input_2",
+      "description": "설명",
+      "required": true,
+      "example": "설명"
+    },
+    {
+      "name": "input_3",
+      "description": "필수 출력 형식",
+      "required": true,
+      "example": "필수 출력 형식"
+    },
+    {
+      "name": "input_4",
+      "description": "JSON/표/문서",
+      "required": true,
+      "example": "JSON/표/문서"
+    },
+    {
+      "name": "input_5",
+      "description": "허용 지연",
+      "required": true,
+      "example": "허용 지연"
+    },
+    {
+      "name": "input_6",
+      "description": "월 처리량",
+      "required": true,
+      "example": "월 처리량"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "가격은 실행 당일 각 공급자의 공식 가격 페이지에서 다시 확인한다.",
+  "examples": [
+    {
+      "label": "고객 문의 분류 예시",
+      "input": "[업무]: 한국어 고객 문의를 환불/배송/계정/기타로 분류\n[필수 출력 형식]: JSON {category, confidence, reason}\n[허용 지연]: 2초\n[월 처리량]: 50,000건",
+      "output": "평가 항목, 표본 구성, 합격선, 측정 방법, 비용 계산식이 포함된 비교표"
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "문서 분석",
+    "테스트",
+    "구조화 출력",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "benchmark"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:model-evaluation-matrix"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

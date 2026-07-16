@@ -1,0 +1,56 @@
+{
+  "id": "p12i-list",
+  "version": 1,
+  "title": "번호 목록 + 글자수 제한",
+  "summary": "번호 목록 + 글자수 제한 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[질문 내용] 번호 목록으로 정리해줘. 항목은 [개수]개, 각 항목은 한 줄에 [글자수]자 이내로. 서론·결론 없이 목록만.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문 내용",
+      "required": true,
+      "example": "질문 내용"
+    },
+    {
+      "name": "input_2",
+      "description": "개수",
+      "required": true,
+      "example": "개수"
+    },
+    {
+      "name": "input_3",
+      "description": "글자수",
+      "required": true,
+      "example": "글자수"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12i-list"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

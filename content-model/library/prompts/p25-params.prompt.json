@@ -1,0 +1,53 @@
+{
+  "id": "p25-params",
+  "version": 1,
+  "title": "내 문서에 맞는 시작 파라미터 추천",
+  "summary": "내 문서에 맞는 시작 파라미터 추천 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 문서는 [보험 약관/제품 매뉴얼/고객 상담 대화록]이고, 사용자 질문은 주로 [특정 숫자/조건 조회]야. RAG 청킹의 시작 파라미터(청킹 전략, 청크 토큰 크기, 오버랩 비율)를 근거와 함께 추천하고, 이 값을 검증할 A/B 실험 1개를 설계.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "보험 약관/제품 매뉴얼/고객 상담 대화록",
+      "required": true,
+      "example": "보험 약관/제품 매뉴얼/고객 상담 대화록"
+    },
+    {
+      "name": "input_2",
+      "description": "특정 숫자/조건 조회",
+      "required": true,
+      "example": "특정 숫자/조건 조회"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "문서 분석",
+    "테스트",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25-params"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

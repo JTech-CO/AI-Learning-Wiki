@@ -1,0 +1,46 @@
+{
+  "id": "skill-audit-inventory-p1",
+  "version": 1,
+  "title": "1 숨은 자산 발굴",
+  "summary": "1 숨은 자산 발굴 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 나만의 판매 자산을 찾는 중이야. 아래는 내가 적은 스킬 인벤토리야.\n\n[여기에 기술/경험/관심사/인맥/시간 표를 그대로 붙여넣기]\n\n다음을 해줘:\n1) 내가 당연하게 여겨 안 적었을 법한 숨은 자산 5개를 추가 발굴해줘.\n2) 서로 다른 항목을 조합해 만들 수 있는 'AI로 증폭 가능한 판매 자산' 아이디어 5개를 제안해줘.\n3) 각 아이디어에 왜 팔릴 수 있는지 한 줄 근거를 붙여줘. 한국어로, 표 형태로 답해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 기술/경험/관심사/인맥/시간 표를 그대로 붙여넣기",
+      "required": true,
+      "example": "여기에 기술/경험/관심사/인맥/시간 표를 그대로 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "아이디어",
+    "영업",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:skill-audit-inventory-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

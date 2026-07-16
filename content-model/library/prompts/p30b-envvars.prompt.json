@@ -1,0 +1,47 @@
+{
+  "id": "p30b-envvars",
+  "version": 1,
+  "title": "환경변수 목록 도출",
+  "summary": "환경변수 목록 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음은 내 코드야: [코드]. 이 코드에서 외부에 노출되면 안 되는 비밀값(API 키, 비밀번호, DB 주소 등)을 전부 찾아서, Vercel Environment Variables에 넣을 'Key 이름 = 설명' 표로 만들어줘. 그리고 코드에서 그 값을 환경변수로 불러오게 수정한 버전도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코드",
+      "required": true,
+      "example": "코드"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "데이터베이스",
+    "보안",
+    "데이터 엔지니어링",
+    "배포"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p30b-envvars"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

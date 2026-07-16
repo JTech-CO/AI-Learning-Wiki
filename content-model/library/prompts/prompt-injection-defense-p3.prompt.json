@@ -1,0 +1,45 @@
+{
+  "id": "prompt-injection-defense-p3",
+  "version": 1,
+  "title": "방어 코드 리뷰 요청",
+  "summary": "방어 코드 리뷰 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음은 내 AI 기능의 프롬프트 조립·도구 권한·출력 처리 코드다:\n[코드 붙여넣기]\n프롬프트 인젝션 관점에서 취약점을 짚어줘: (1) 사용자 입력을 지시로 오인할 여지 (2) 과도한 도구·데이터 권한 (3) 출력에 비밀 유출 가능성. 각 항목마다 구체적 수정안과 예시 코드를 줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코드 붙여넣기",
+      "required": true,
+      "example": "코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "프롬프트 설계",
+    "검증",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt-injection"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-injection-defense-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

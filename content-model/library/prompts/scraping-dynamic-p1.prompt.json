@@ -1,0 +1,53 @@
+{
+  "id": "scraping-dynamic-p1",
+  "version": 1,
+  "title": "셀렉터 도출",
+  "summary": "셀렉터 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 크롬 검사(F12)로 복사한 HTML 조각이야. 여기서 [가격 / 제목 / 링크]를 Playwright(파이썬 sync API)로 추출하는 query_selector 코드를 만들어줘. 여러 개면 query_selector_all로. HTML: [여기에 HTML 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "가격 / 제목 / 링크",
+      "required": true,
+      "example": "가격 / 제목 / 링크"
+    },
+    {
+      "name": "input_2",
+      "description": "여기에 HTML 붙여넣기",
+      "required": true,
+      "example": "여기에 HTML 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "스프레드시트",
+    "코딩",
+    "API",
+    "자동화",
+    "웹 개발",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:scraping-dynamic-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

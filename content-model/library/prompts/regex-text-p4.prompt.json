@@ -1,0 +1,63 @@
+{
+  "id": "regex-text-p4",
+  "version": 1,
+  "title": "내 정규식이 왜 안 되는지 고쳐줘",
+  "summary": "내 정규식이 왜 안 되는지 고쳐줘 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 정규식을 썼는데 원하는 대로 안 잡혀:\n패턴: [내 패턴]\n대상 텍스트: [텍스트]\n원하는 결과: [뭘 잡고 싶은지]\n실제 결과: [지금 잡히는/안 잡히는 것]\n\n무엇이 문제인지 짚어주고 고친 패턴을 줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 패턴",
+      "required": true,
+      "example": "내 패턴"
+    },
+    {
+      "name": "input_2",
+      "description": "텍스트",
+      "required": true,
+      "example": "텍스트"
+    },
+    {
+      "name": "input_3",
+      "description": "뭘 잡고 싶은지",
+      "required": true,
+      "example": "뭘 잡고 싶은지"
+    },
+    {
+      "name": "input_4",
+      "description": "지금 잡히는/안 잡히는 것",
+      "required": true,
+      "example": "지금 잡히는/안 잡히는 것"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "자동화",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:regex-text-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

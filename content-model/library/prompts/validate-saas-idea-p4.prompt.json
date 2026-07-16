@@ -1,0 +1,47 @@
+{
+  "id": "validate-saas-idea-p4",
+  "version": 1,
+  "title": "스모크 테스트 랜딩 문구",
+  "summary": "스모크 테스트 랜딩 문구 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[문제]를 해결하는 마이크로 SaaS의 사전예약 랜딩페이지 문구를 써줘. 구성: (1) 고통을 찌르는 헤드라인, (2) 해결 약속 한 줄, (3) 3가지 핵심 혜택, (4) 예상 가격 제시, (5) '사전예약(이메일 등록)' CTA 문구. 한국어, 과장 없이 구체적으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문제",
+      "required": true,
+      "example": "문제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "요약",
+    "아이디어",
+    "테스트",
+    "검증",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:validate-saas-idea-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

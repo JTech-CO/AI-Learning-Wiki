@@ -1,0 +1,46 @@
+{
+  "id": "unit-economics-pricing-p3",
+  "version": 1,
+  "title": "가격 시나리오 3개 비교",
+  "summary": "가격 시나리오 3개 비교 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 정보로 가격 시나리오 3개의 마진과 '목표 수익에 필요한 판매량'을 비교해줘.\n- 현재가·한 건 마진: [...] / 인상 후보가: [...] / 번들/연간 후보: [...] / 월 목표 수익: [...]\n표로: 가격 / 한 건 마진 / 목표 달성에 필요한 판매량 / 장단점 1줄.\n주의: 모든 가정은 보수적으로. 마지막에 '가치를 더 보여주면 인상이 가능한 근거' 1줄도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "영업",
+    "재무·금융",
+    "검증",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:unit-economics-pricing-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

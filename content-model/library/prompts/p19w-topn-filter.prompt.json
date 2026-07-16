@@ -1,0 +1,59 @@
+{
+  "id": "p19w-topn-filter",
+  "version": 1,
+  "title": "Top N + 조건 필터(대괄호 교체)",
+  "summary": "Top N + 조건 필터(대괄호 교체) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[매출]이 가장 높은 [지점] top 5만 표로 보여주고, 그 중 [2024년 1월]에 해당하는 데이터만 따로 다시 합계를 내줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "매출",
+      "required": true,
+      "example": "매출"
+    },
+    {
+      "name": "input_2",
+      "description": "지점",
+      "required": true,
+      "example": "지점"
+    },
+    {
+      "name": "input_3",
+      "description": "2024년 1월",
+      "required": true,
+      "example": "2024년 1월"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트",
+    "코딩",
+    "검증",
+    "Python",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19w-topn-filter"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

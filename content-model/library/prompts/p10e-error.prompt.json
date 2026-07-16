@@ -1,0 +1,52 @@
+{
+  "id": "p10e-error",
+  "version": 1,
+  "title": "LLM API 호출 에러 해결",
+  "summary": "LLM API 호출 에러 해결 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[언어: 파이썬/노드]로 LLM API를 호출하다가 아래 에러가 났어. 무슨 뜻이고 초보자가 따라 할 수 있게 해결 단계를 순서대로 알려줘. [에러 메시지 전체]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "언어: 파이썬/노드",
+      "required": true,
+      "example": "언어: 파이썬/노드"
+    },
+    {
+      "name": "input_2",
+      "description": "에러 메시지 전체",
+      "required": true,
+      "example": "에러 메시지 전체"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "API",
+    "프롬프트 설계",
+    "콘텐츠",
+    "Python"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "sdk"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p10e-error"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

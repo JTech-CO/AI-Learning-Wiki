@@ -1,0 +1,47 @@
+{
+  "id": "logging-tracing-p2",
+  "version": 1,
+  "title": "T2 · 로그 스키마(DB 테이블) 설계",
+  "summary": "T2 · 로그 스키마(DB 테이블) 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "LLM 에이전트 관측용 로그 테이블을 [PostgreSQL/SQLite]로 설계해줘. 컬럼: trace_id, span_id, parent_span_id, timestamp, kind(llm|tool), model, prompt, response, prompt_tokens, completion_tokens, latency_ms, tool_name, tool_input(jsonb), tool_output, error. trace_id와 timestamp에 인덱스도 걸어줘. CREATE TABLE 문으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "PostgreSQL/SQLite",
+      "required": true,
+      "example": "PostgreSQL/SQLite"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "데이터베이스",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "구조화 출력",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "observability"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:logging-tracing-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

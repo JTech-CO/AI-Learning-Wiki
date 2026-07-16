@@ -1,0 +1,40 @@
+{
+  "id": "agent-loop-basics-p3",
+  "version": 1,
+  "title": "도구 추가 아이디어 요청",
+  "summary": "도구 추가 아이디어 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 최소 ReAct 에이전트에 calculator와 search 도구가 있어. 초보가 15분 안에 파이썬 함수로 직접 구현할 수 있으면서 데모가 인상적인 세 번째 도구를 3개 추천하고, 각각의 함수 시그니처(입력/출력)와 5줄 이내 예시 구현을 한국어 주석과 함께 줘. 외부 유료 API 없이 되는 걸로.",
+  "variables": [],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "아이디어",
+    "코딩",
+    "API",
+    "AI 에이전트",
+    "검색",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:agent-loop-basics-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

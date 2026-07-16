@@ -1,0 +1,47 @@
+{
+  "id": "ai-micro-saas-p3",
+  "version": 1,
+  "title": "제작·운영 계획 (노코드/AI 코딩)",
+  "summary": "제작·운영 계획 (노코드/AI 코딩) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "intermediate",
+  "template": "검증된 MVP를 빠르게 만들 계획을 세워줘.\n- 핵심 기능: [...]\n1) 필요한 도구(노코드/AI 코딩 어시스턴트 등)와 각 역할.\n2) 만드는 단계 5개 이내.\n3) 초보가 막힐 만한 지점 3가지 + 대비책.\n4) 출시 후 '운영 현실' 점검: 결제 수수료, 고객 문의, 버그, 환불을 어떻게 감당할지 각 1줄.\n현실적으로, 과장 없이.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "아이디어",
+    "계획",
+    "코딩",
+    "재무·금융",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-micro-saas-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

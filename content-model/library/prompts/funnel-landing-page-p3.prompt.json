@@ -1,0 +1,53 @@
+{
+  "id": "funnel-landing-page-p3",
+  "version": 1,
+  "title": "자동응답 이메일 초안",
+  "summary": "자동응답 이메일 초안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 [리드마그넷 이름]을 신청한 구독자에게 보낼 첫 자동응답 이메일을 써줘. 톤은 친근하고 짧게. 포함: (1) 신청 감사 한 줄, (2) 자료 다운로드 링크를 넣을 자리 표시 [다운로드 링크], (3) 이 자료를 어떻게 쓰면 좋은지 팁 1개, (4) 다음 메일에서 뭘 보낼지 기대 한 줄. 제목 후보 3개도. 한국어.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "리드마그넷 이름",
+      "required": true,
+      "example": "리드마그넷 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "다운로드 링크",
+      "required": true,
+      "example": "다운로드 링크"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "코딩",
+    "마케팅",
+    "노코드",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:funnel-landing-page-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

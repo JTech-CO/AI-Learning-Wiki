@@ -1,0 +1,53 @@
+{
+  "id": "seo-geo-for-discovery-p2",
+  "version": 1,
+  "title": "제목·소제목 재작성",
+  "summary": "제목·소제목 재작성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 콘텐츠를 SEO·GEO에 맞게 고쳐줘. 목표 키워드는 [키워드]야. (1) 30자 내외 제목 3안(숫자·대상 포함), (2) 질문형 소제목 4개와 각 소제목의 즉답 첫 문장, (3) 120자 메타설명을 제안해줘. 광고성 형용사는 빼고 검증 가능한 표현으로. 원문: [본문 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "키워드",
+      "required": true,
+      "example": "키워드"
+    },
+    {
+      "name": "input_2",
+      "description": "본문 붙여넣기",
+      "required": true,
+      "example": "본문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검색",
+    "구조화 출력",
+    "마케팅",
+    "콘텐츠",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:seo-geo-for-discovery-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "p16w-factcheck",
+  "version": 1,
+  "title": "숫자 팩트체크",
+  "summary": "숫자 팩트체크 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 [요약]에 나온 모든 숫자를 [원문]과 대조해서, 원문에 없거나 값이 다른 숫자를 표로 지적해줘(요약값/원문값/처리방법). 근거 없는 수치는 삭제 제안. [요약]…[원문]…",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "요약",
+      "required": true,
+      "example": "요약"
+    },
+    {
+      "name": "input_2",
+      "description": "원문",
+      "required": true,
+      "example": "원문"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "의사결정",
+    "문서 분석",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16w-factcheck"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

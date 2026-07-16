@@ -1,0 +1,65 @@
+{
+  "id": "ref-stacks-p2",
+  "version": 1,
+  "title": "브랜드 보이스 초안 프롬프트",
+  "summary": "브랜드 보이스 초안 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[대상 독자], [해결할 문제], [원하는 행동]을 담은 한 문단 브리프다. 우리 브랜드 톤 가이드에 맞춰 [형식] 초안을 작성해줘. 10-80-10 원칙 기준 80% 빌드만 해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상 독자",
+      "required": true,
+      "example": "대상 독자"
+    },
+    {
+      "name": "input_2",
+      "description": "해결할 문제",
+      "required": true,
+      "example": "해결할 문제"
+    },
+    {
+      "name": "input_3",
+      "description": "원하는 행동",
+      "required": true,
+      "example": "원하는 행동"
+    },
+    {
+      "name": "input_4",
+      "description": "형식",
+      "required": true,
+      "example": "형식"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "조사",
+    "계획",
+    "코딩",
+    "데이터베이스",
+    "자동화"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ref-stacks-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

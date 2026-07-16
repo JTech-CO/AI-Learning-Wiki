@@ -1,0 +1,56 @@
+{
+  "id": "prompt-pack-packaging-p2",
+  "version": 1,
+  "title": "초보자용 사용 설명서 자동 생성",
+  "summary": "초보자용 사용 설명서 자동 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 프롬프트 팩의 카드 목록을 보고, 완전 초보자(AI 처음 써봄)를 위한 '사용 설명서 앞장'을 써줘. 포함: (1) 이 팩으로 얻는 것 한 문단 (2) 쓰는 법 3단계 (3) 자주 묻는 질문 4개와 답 (4) 결과가 별로일 때 개선 팁 3개. 쉬운 말, 존댓말, 이모지 최소.\n팩 제목: [제목]\n대상: [대상]\n카드 목록:\n[카드 제목들 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "제목",
+      "required": true,
+      "example": "제목"
+    },
+    {
+      "name": "input_2",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_3",
+      "description": "카드 제목들 붙여넣기",
+      "required": true,
+      "example": "카드 제목들 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "문서 분석",
+    "프롬프트 설계",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-pack-packaging-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

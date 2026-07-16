@@ -1,0 +1,48 @@
+{
+  "id": "freelance-niche-positioning-p1",
+  "version": 1,
+  "title": "고객 문제·지불의사 진단",
+  "summary": "고객 문제·지불의사 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [내 무기: 예-상세페이지 제작]를 할 수 있는 프리랜서야. 아래 고객군 각각에 대해 (1) 이들이 돈을 내서라도 해결하고 싶은 가장 급한 문제 3가지, (2) 지불 의사 1~5점, (3) 이 문제를 겪는다는 신호를 어디서 볼 수 있는지 표로 정리해줘. 고객군: [① 1인 쇼핑몰 사장 ② 학원 원장 ③ 신규 카페 사장]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 무기: 예-상세페이지 제작",
+      "required": true,
+      "example": "내 무기: 예-상세페이지 제작"
+    },
+    {
+      "name": "input_2",
+      "description": "① 1인 쇼핑몰 사장 ② 학원 원장 ③ 신규 카페 사장",
+      "required": true,
+      "example": "① 1인 쇼핑몰 사장 ② 학원 원장 ③ 신규 카페 사장"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:freelance-niche-positioning-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

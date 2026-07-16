@@ -1,0 +1,45 @@
+{
+  "id": "bot-telegram-p2",
+  "version": 1,
+  "title": "파이썬 봇 코드 생성",
+  "summary": "파이썬 봇 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "python-telegram-bot 최신 버전(v20 이상, async 방식) 기준으로, 초보자가 Replit에 그대로 붙여넣고 실행할 수 있는 완전한 텔레그램 봇 코드를 작성해줘. 다음 명령어를 처리해줘: [3단계에서 정리한 명령어 목록]. 코드 맨 위에 TOKEN 변수를 두고 주석으로 '여기에 토큰 붙여넣기'라고 표시해줘. 각 줄에 초보자용 한국어 주석을 달아줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "3단계에서 정리한 명령어 목록",
+      "required": true,
+      "example": "3단계에서 정리한 명령어 목록"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "자동화",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:bot-telegram-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

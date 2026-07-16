@@ -1,0 +1,38 @@
+{
+  "id": "p16b-seed",
+  "version": 1,
+  "title": "연습 테이블 생성",
+  "summary": "연습 테이블 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "SQLite에서 실습할 예제 데이터를 만들어줘. 컬럼은 id(정수), name(이름), city(도시), grade(등급 VIP/일반), spent(누적결제액 정수)로 하고, 한국어 이름과 서울·부산·대구가 섞인 고객 8명을 CREATE TABLE 한 개와 INSERT 문으로 바로 복붙 실행되게. 설명 없이 SQL만.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "스프레드시트",
+    "데이터베이스",
+    "협업",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16b-seed"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

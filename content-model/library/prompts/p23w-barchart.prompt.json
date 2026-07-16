@@ -1,0 +1,47 @@
+{
+  "id": "p23w-barchart",
+  "version": 1,
+  "title": "비교 막대 차트",
+  "summary": "비교 막대 차트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 표를 [월]별로 [카테고리]를 비교하는 막대 차트로. 글자는 한글로, 색으로 항목을 구분하고, 각 막대 위에 숫자도. (차트가 안 그려지면 무료 플랜 한도 — 유료 업그레이드 필요)",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "카테고리",
+      "required": true,
+      "example": "카테고리"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "데이터 분석",
+    "스프레드시트",
+    "시각화",
+    "코딩"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23w-barchart"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

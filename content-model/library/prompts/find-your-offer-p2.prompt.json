@@ -1,0 +1,70 @@
+{
+  "id": "find-your-offer-p2",
+  "version": 1,
+  "title": "오퍼 후보 3개 비교",
+  "summary": "오퍼 후보 3개 비교 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 정보로 '오퍼 문장' 후보 3개를 만들어줘. 각 후보는 [대상]의 [문제]를 [방법]으로 풀어 [가격]에 판다 형식 한 문장 + 장단점 2줄.\n- 대상: [...]\n- 내가 줄 수 있는 것: [...]\n- 후보 가격대: [...]\n마지막에 '가장 빨리 검증 가능한 후보'를 하나 추천하고 이유를 1줄로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_2",
+      "description": "문제",
+      "required": true,
+      "example": "문제"
+    },
+    {
+      "name": "input_3",
+      "description": "방법",
+      "required": true,
+      "example": "방법"
+    },
+    {
+      "name": "input_4",
+      "description": "가격",
+      "required": true,
+      "example": "가격"
+    },
+    {
+      "name": "input_5",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "의사결정",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:find-your-offer-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "p20w-describe-only",
+  "version": 1,
+  "title": "함수 없이 결과만 설명하고 맡기기",
+  "summary": "함수 없이 결과만 설명하고 맡기기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 엑셀 함수 이름을 몰라. 아래 표를 붙일게. 원하는 결과만 말할 테니 알아서 최적의 수식을 만들어줘.\n[표 상단 몇 줄 붙여넣기]\n원하는 결과: [목표 500만원 넘으면 '달성', 아니면 '미달'을 옆 칸에]\n결과 셀: [E2, 아래로 드래그해 채울 예정]\n완성 수식과 함께, 아래 행에도 복사되게 하려면 주의점(절대참조 $)도 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "표 상단 몇 줄 붙여넣기",
+      "required": true,
+      "example": "표 상단 몇 줄 붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "목표 500만원 넘으면 '달성', 아니면 '미달'을 옆 칸에",
+      "required": true,
+      "example": "목표 500만원 넘으면 '달성', 아니면 '미달'을 옆 칸에"
+    },
+    {
+      "name": "input_3",
+      "description": "E2, 아래로 드래그해 채울 예정",
+      "required": true,
+      "example": "E2, 아래로 드래그해 채울 예정"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "스프레드시트",
+    "검증",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20w-describe-only"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

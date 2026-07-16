@@ -1,0 +1,58 @@
+{
+  "id": "p14w-refine-proposal",
+  "version": 1,
+  "title": "제안 부분만 구체화",
+  "summary": "제안 부분만 구체화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "위 보고서의 '제안' 항목을 다시 써줘. 막연한 말 대신 [무엇을][언제까지][누가] 형식의 구체적 실행안 3개로. 각 실행안에 예상 효과를 한 줄씩.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무엇을",
+      "required": true,
+      "example": "무엇을"
+    },
+    {
+      "name": "input_2",
+      "description": "언제까지",
+      "required": true,
+      "example": "언제까지"
+    },
+    {
+      "name": "input_3",
+      "description": "누가",
+      "required": true,
+      "example": "누가"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "프롬프트 설계",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14w-refine-proposal"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p11w-report-3part",
+  "version": 1,
+  "title": "긴 보고서·PDF → 3단 요약",
+  "summary": "긴 보고서·PDF → 3단 요약 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래(또는 첨부) 문서를 한국어로 요약해줘. 1)한 문장 핵심 결론 2)중요 수치·데이터 5개(원문 표현 그대로, 위치도) 3)내가 취해야 할 행동 3가지. 수치는 반드시 원문 그대로, 추측은 '(추정)'.\n---\n[문서 붙여넣기/PDF 첨부]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문서 붙여넣기/PDF 첨부",
+      "required": true,
+      "example": "문서 붙여넣기/PDF 첨부"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "요약",
+    "번역",
+    "문서 분석",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11w-report-3part"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

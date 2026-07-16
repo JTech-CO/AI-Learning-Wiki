@@ -1,0 +1,53 @@
+{
+  "id": "video-voice-agents-p3",
+  "version": 1,
+  "title": "실시간 음성 에이전트 페르소나·대본",
+  "summary": "실시간 음성 에이전트 페르소나·대본 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "실시간 음성 상담 에이전트를 설계해줘. STT로 받은 고객 발화에 LLM이 답하고 TTS로 말하는 구조야. (1)이 에이전트의 말투/페르소나 (2)첫 인사 멘트 (3)자주 나올 질문 5개와 20단어 이내 음성용 짧은 답변 (4)모르는 걸 물으면 넘기는 fallback 멘트를 만들어줘.\n업종: [내 업종]\n에이전트 성격: [친근한 / 전문적인]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 업종",
+      "required": true,
+      "example": "내 업종"
+    },
+    {
+      "name": "input_2",
+      "description": "친근한 / 전문적인",
+      "required": true,
+      "example": "친근한 / 전문적인"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "영상",
+    "오디오",
+    "멀티모달"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "multimodal-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:video-voice-agents-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

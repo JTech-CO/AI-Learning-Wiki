@@ -1,0 +1,44 @@
+{
+  "id": "p5w-cs-tone",
+  "version": 1,
+  "title": "고객 답변 톤 복제",
+  "summary": "고객 답변 톤 복제 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 우리 브랜드 CS 담당자야. 아래 예시처럼 '사과 → 해결책 → 재사과' 3문장, 존댓말, 이모지 없이.\n문의: 배송이 너무 늦어요\n답변: 늦어져 정말 죄송합니다. 오늘 중 우선 발송해 드리겠습니다. 불편을 드려 다시 한번 사과드립니다.\n문의: [실제 문의]\n답변:",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "실제 문의",
+      "required": true,
+      "example": "실제 문의"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p5w-cs-tone"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

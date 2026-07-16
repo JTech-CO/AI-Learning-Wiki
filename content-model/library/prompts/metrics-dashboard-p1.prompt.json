@@ -1,0 +1,53 @@
+{
+  "id": "metrics-dashboard-p1",
+  "version": 1,
+  "title": "내 사업용 5대 지표 대시보드 설계",
+  "summary": "내 사업용 5대 지표 대시보드 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [사업 종류: 예-온라인 강의 판매]를 운영해. 구글 스프레드시트로 핵심 지표 대시보드를 만들려고 해. 다음을 표로 만들어줘: (1) 내가 매주 볼 5대 지표와 각 지표가 어떤 의사결정에 쓰이는지 (2) 각 지표를 계산하려면 원본에 어떤 컬럼이 필요한지 (3) 구글시트 수식 예시. 내 원본 데이터는 [보유 데이터 설명: 예-주문내역, 광고비, 가입/해지 로그]야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사업 종류: 예-온라인 강의 판매",
+      "required": true,
+      "example": "사업 종류: 예-온라인 강의 판매"
+    },
+    {
+      "name": "input_2",
+      "description": "보유 데이터 설명: 예-주문내역, 광고비, 가입/해지 로그",
+      "required": true,
+      "example": "보유 데이터 설명: 예-주문내역, 광고비, 가입/해지 로그"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "스프레드시트",
+    "코딩",
+    "마케팅"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:metrics-dashboard-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

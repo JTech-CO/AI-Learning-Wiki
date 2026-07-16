@@ -1,0 +1,40 @@
+{
+  "id": "p4b-deploy",
+  "version": 1,
+  "title": "배포 준비 점검",
+  "summary": "배포 준비 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "배포 전 체크: 노출된 환경변수·API 키, 인증 처리, 에러 핸들링, 모바일 반응형을 검토하고 문제 목록과 수정안을.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "API",
+    "프롬프트 설계",
+    "보안"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p4b-deploy"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

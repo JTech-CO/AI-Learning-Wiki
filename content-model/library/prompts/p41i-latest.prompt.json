@@ -1,0 +1,45 @@
+{
+  "id": "p41i-latest",
+  "version": 1,
+  "title": "최신 정보 검색 (Gemini/검색 켠 ChatGPT)",
+  "summary": "최신 정보 검색 (Gemini/검색 켠 ChatGPT) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[찾고 싶은 최신 정보]를 오늘 기준으로 알려줘. 출처 링크도 함께 보여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "찾고 싶은 최신 정보",
+      "required": true,
+      "example": "찾고 싶은 최신 정보"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "검색",
+    "출처·인용",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "knowledge-cutoff"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p41i-latest"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

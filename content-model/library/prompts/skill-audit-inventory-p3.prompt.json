@@ -1,0 +1,47 @@
+{
+  "id": "skill-audit-inventory-p3",
+  "version": 1,
+  "title": "3 수요·고객 검증",
+  "summary": "3 수요·고객 검증 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 '[내 자산 아이디어 1문장]'을 팔아볼까 고민 중이야.\n1) 이걸 돈 주고 살 만한 구체적인 고객층 3개를 묘사해줘(나이·상황·고민).\n2) 이미 존재하는 비슷한 서비스나 경쟁자가 있으면 알려줘.\n3) 초보가 가장 작게 시작할 수 있는 첫 버전은 뭘지 제안해줘. 한국어로 현실적으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 자산 아이디어 1문장",
+      "required": true,
+      "example": "내 자산 아이디어 1문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "아이디어",
+    "영업",
+    "검증",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:skill-audit-inventory-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

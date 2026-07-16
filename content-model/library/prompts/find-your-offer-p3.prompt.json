@@ -1,0 +1,51 @@
+{
+  "id": "find-your-offer-p3",
+  "version": 1,
+  "title": "수요 검증 질문 (돈 의향 묻기)",
+  "summary": "수요 검증 질문 (돈 의향 묻기) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "다음 오퍼가 실제로 팔릴지 확인하려고 잠재 고객에게 직접 보낼 짧은 질문 5개를 만들어줘.\n- 오퍼: [...]\n조건:\n1) '좋은 생각인가요' 같은 칭찬 유도 질문 금지.\n2) '지금 [가격]이면 사겠는지 / 안 산다면 이유 / 지금은 이 문제를 어떻게 해결 중인지 / 비슷한 데 돈 써본 적 있는지'를 포함.\n3) 부담 없이 답할 수 있게 친근하고 짧게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    },
+    {
+      "name": "input_2",
+      "description": "가격",
+      "required": true,
+      "example": "가격"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:find-your-offer-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

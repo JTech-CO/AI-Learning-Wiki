@@ -1,0 +1,44 @@
+{
+  "id": "skill-audit-inventory-p4",
+  "version": 1,
+  "title": "4 인벤토리 빈칸 자극 질문",
+  "summary": "4 인벤토리 빈칸 자극 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 스킬 인벤토리 표의 '[비어있는 칸: 예-인맥]'을 못 채우고 있어. 이 칸을 채울 수 있게 자극하는 구체적인 질문 10개를 던져줘. 각 질문은 '예/아니오'가 아니라 떠올리게 만드는 질문이어야 해. 한국어로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "비어있는 칸: 예-인맥",
+      "required": true,
+      "example": "비어있는 칸: 예-인맥"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "영업"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:skill-audit-inventory-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

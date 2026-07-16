@@ -1,0 +1,62 @@
+{
+  "id": "slm-edge-ondevice-p2",
+  "version": 1,
+  "title": "SLM에게 시킬 명확한 지시",
+  "summary": "SLM에게 시킬 명확한 지시 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 [번역/요약/분류] 도우미야. 아래 [텍스트]를 [목표: 예-3문장으로 요약]해줘. 추측하지 말고 주어진 내용만 사용해.\n\n텍스트:\n[여기에 내용 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "번역/요약/분류",
+      "required": true,
+      "example": "번역/요약/분류"
+    },
+    {
+      "name": "input_2",
+      "description": "텍스트",
+      "required": true,
+      "example": "텍스트"
+    },
+    {
+      "name": "input_3",
+      "description": "목표: 예-3문장으로 요약",
+      "required": true,
+      "example": "목표: 예-3문장으로 요약"
+    },
+    {
+      "name": "input_4",
+      "description": "여기에 내용 붙여넣기",
+      "required": true,
+      "example": "여기에 내용 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "번역"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "large-language-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:slm-edge-ondevice-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

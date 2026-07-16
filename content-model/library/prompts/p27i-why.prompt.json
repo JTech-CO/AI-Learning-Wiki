@@ -1,0 +1,44 @@
+{
+  "id": "p27i-why",
+  "version": 1,
+  "title": "고친 이유 물어보기",
+  "summary": "고친 이유 물어보기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 글을 자연스럽게 다듬어주고, 어떤 부분을 왜 고쳤는지 3가지만 짚어줘. 내가 다음에 스스로 고칠 수 있게 배우고 싶어. 원문: [여기에 내 글 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 내 글 붙여넣기",
+      "required": true,
+      "example": "여기에 내 글 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "교육",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27i-why"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

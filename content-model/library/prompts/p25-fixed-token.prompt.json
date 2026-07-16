@@ -1,0 +1,70 @@
+{
+  "id": "p25-fixed-token",
+  "version": 1,
+  "title": "고정 토큰 청킹 (비교용 베이스라인)",
+  "summary": "고정 토큰 청킹 (비교용 베이스라인) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문서를 약 [300] 토큰(한글 기준 약 [450]자)마다 오버랩 없이 기계적으로 잘라줘. 의미는 고려하지 말고 길이 기준으로만, [청크번호]로 목록화. 문장 중간에서 끊긴 청크가 있으면 그 번호를 마지막에 따로. 문서: \"\"\"[문서 전체]\"\"\"",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "300",
+      "required": true,
+      "example": "300"
+    },
+    {
+      "name": "input_2",
+      "description": "450",
+      "required": true,
+      "example": "450"
+    },
+    {
+      "name": "input_3",
+      "description": "청크번호",
+      "required": true,
+      "example": "청크번호"
+    },
+    {
+      "name": "input_4",
+      "description": "문서 전체",
+      "required": true,
+      "example": "문서 전체"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래 문서를 약 실제 값 토큰(한글 기준 약 실제 값자)마다 오버랩 없이 기계적으로 잘라줘. 의미는 고려하지 말고 길이 기준으로만, 실제 값로 목록화. 문장 중간에서 끊긴 청크가 있으면 그 번호를 마지막에 따로. 문서: \"\"\"회의록 원문\"\"\"",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "문서 분석",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25-fixed-token"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

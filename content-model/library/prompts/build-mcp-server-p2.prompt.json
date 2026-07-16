@@ -1,0 +1,65 @@
+{
+  "id": "build-mcp-server-p2",
+  "version": 1,
+  "title": "사내 API 연결 도구",
+  "summary": "사내 API 연결 도구 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "우리 사내 API([API 주소])를 호출하는 MCP 도구를 만들어줘. API키는 환경변수 [환경변수명]에서 읽고, 입력은 [파라미터], 응답에서 [필요한 필드]만 골라 보기 좋게 정리해 반환해. 에러가 나면 사용자가 이해할 메시지를 돌려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "API 주소",
+      "required": true,
+      "example": "API 주소"
+    },
+    {
+      "name": "input_2",
+      "description": "환경변수명",
+      "required": true,
+      "example": "환경변수명"
+    },
+    {
+      "name": "input_3",
+      "description": "파라미터",
+      "required": true,
+      "example": "파라미터"
+    },
+    {
+      "name": "input_4",
+      "description": "필요한 필드",
+      "required": true,
+      "example": "필요한 필드"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "디버깅",
+    "API",
+    "데이터베이스",
+    "AI 에이전트",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "mcp"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:build-mcp-server-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

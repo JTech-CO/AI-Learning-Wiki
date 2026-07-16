@@ -1,0 +1,58 @@
+{
+  "id": "p39-simulate",
+  "version": 1,
+  "title": "손 시뮬레이션 검증",
+  "summary": "손 시뮬레이션 검증 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 에이전트 루프 설계야. 루프 규칙: [DECIDE if-then 규칙] 중단 조건: [3가지] 입력 예시: [테스트 입력값]. 이 루프를 반복 1회부터 종료까지 표로 시뮬레이션해줘. 열은 '반복횟수|호출도구|관찰값(가상)|DECIDE결정'. 실제로 종료 조건에 걸리는 지점을 표시하고, 안 걸리면 어디가 문제인지 지적.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "DECIDE if-then 규칙",
+      "required": true,
+      "example": "DECIDE if-then 규칙"
+    },
+    {
+      "name": "input_2",
+      "description": "3가지",
+      "required": true,
+      "example": "3가지"
+    },
+    {
+      "name": "input_3",
+      "description": "테스트 입력값",
+      "required": true,
+      "example": "테스트 입력값"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "테스트",
+    "AI 에이전트",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "agent-loop"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39-simulate"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

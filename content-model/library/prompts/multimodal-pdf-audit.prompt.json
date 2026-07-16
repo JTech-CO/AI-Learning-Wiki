@@ -1,0 +1,46 @@
+{
+  "id": "multimodal-pdf-audit",
+  "version": 1,
+  "title": "PDF 페이지별 텍스트·표·이미지 통합 점검",
+  "summary": "PDF 페이지별 텍스트·표·이미지 통합 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "첨부한 PDF를 페이지별로 검토해줘. 본문 주장, 표의 핵심 수치, 이미지가 전달하는 정보, 각주·출처를 분리해 기록하고 서로 모순되는 부분을 표시해. 읽을 수 없는 영역은 추측하지 말고 페이지 번호와 함께 재확인 대상으로 남겨.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "OCR 결과는 원본 페이지와 대조하고 중요한 숫자·날짜는 사람이 재확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "첨부한 6페이지 사업보고서 PDF에서 본문 수치와 표 수치가 다른 부분을 페이지별로 찾아줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "멀티모달",
+    "문서 분석",
+    "검증",
+    "출처·인용",
+    "요약",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "visual-document-retrieval"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

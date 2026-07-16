@@ -1,0 +1,44 @@
+{
+  "id": "p9w-fix",
+  "version": 1,
+  "title": "1단계 교정만(내용 보존)",
+  "summary": "1단계 교정만(내용 보존) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 글의 맞춤법, 띄어쓰기, 비문(말이 안 되는 문장)만 자연스럽게 교정해줘. 내용이나 길이, 말투는 바꾸지 마. [내 초안 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 초안 붙여넣기",
+      "required": true,
+      "example": "내 초안 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "안전"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9w-fix"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

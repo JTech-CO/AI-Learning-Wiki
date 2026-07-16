@@ -1,0 +1,59 @@
+{
+  "id": "freelance-with-ai-p2",
+  "version": 1,
+  "title": "서비스 설명 + 가격표 작성",
+  "summary": "서비스 설명 + 가격표 작성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "프리랜서 마켓(크몽/Upwork)에 올릴 내 서비스 소개 글을 써줘.\n- 서비스: [소상공인용 네이버 블로그 글 작성]\n- 대상 고객: [블로그 마케팅은 하고 싶지만 글 쓸 시간이 없는 자영업자]\n- 강점: [AI로 빠르게 초안 + 사람이 직접 검수해 자연스러움]\n순서: 1)눈길 끄는 제목 2)이런 분께 추천 3가지 3)제공 내용/분량 4)작업 기간·수정 횟수 5)가격 옵션 3개(기본/표준/프리미엄). 과장 없이 신뢰가게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "소상공인용 네이버 블로그 글 작성",
+      "required": true,
+      "example": "소상공인용 네이버 블로그 글 작성"
+    },
+    {
+      "name": "input_2",
+      "description": "블로그 마케팅은 하고 싶지만 글 쓸 시간이 없는 자영업자",
+      "required": true,
+      "example": "블로그 마케팅은 하고 싶지만 글 쓸 시간이 없는 자영업자"
+    },
+    {
+      "name": "input_3",
+      "description": "AI로 빠르게 초안 + 사람이 직접 검수해 자연스러움",
+      "required": true,
+      "example": "AI로 빠르게 초안 + 사람이 직접 검수해 자연스러움"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "마케팅",
+    "영업",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:freelance-with-ai-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

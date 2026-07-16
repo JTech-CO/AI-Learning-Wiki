@@ -1,0 +1,37 @@
+{
+  "id": "p39i-styledict",
+  "version": 1,
+  "title": "스타일 단어 사전 생성",
+  "summary": "스타일 단어 사전 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이미지 생성에서 자주 쓰는 '스타일' 키워드를 초보가 알아둘 만한 것 10개만, 한국어 뜻과 영어 표기를 함께 표로 정리해줘. 예: 수채화(watercolor).",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39i-styledict"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

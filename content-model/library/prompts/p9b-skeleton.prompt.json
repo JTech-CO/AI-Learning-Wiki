@@ -1,0 +1,46 @@
+{
+  "id": "p9b-skeleton",
+  "version": 1,
+  "title": "이벤트 신청 페이지 뼈대 생성",
+  "summary": "이벤트 신청 페이지 뼈대 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "HTML 기본 태그만 써서 간단한 '[이벤트 이름]' 신청 페이지를 만들어 줘. 조건: (1)CSS·자바스크립트 없이 순수 HTML 태그만 (2)제목은 <h1>, 안내 문단은 <p>, 이름·이메일 입력은 <input>에 placeholder 넣기, 신청 버튼은 <button> (3)초보자가 읽기 쉽게 태그마다 한 줄씩 줄바꿈 (4)20줄 이내. 코드만 출력.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "이벤트 이름",
+      "required": true,
+      "example": "이벤트 이름"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "코딩",
+    "웹 개발",
+    "JavaScript"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9b-skeleton"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

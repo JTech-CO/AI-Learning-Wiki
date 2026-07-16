@@ -1,0 +1,80 @@
+{
+  "id": "p30w-diagnose",
+  "version": 1,
+  "title": "어수선한 슬라이드 진단",
+  "summary": "어수선한 슬라이드 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 발표 슬라이드 한 장의 내용을 아래에 붙여넣을게. 정렬·여백·폰트 위계·색 대비 4가지 원칙 관점에서 어수선해 보이는 문제점을 3가지 짚고, 각각 어떻게 고칠지 구체적 수치(폰트 pt, 여백 cm, 색 개수)로 알려줘.\n[슬라이드 제목]: [제목]\n[본문 내용]: [불릿들]\n[현재 사용 색]: [파랑, 빨강, 초록]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "슬라이드 제목",
+      "required": true,
+      "example": "슬라이드 제목"
+    },
+    {
+      "name": "input_2",
+      "description": "제목",
+      "required": true,
+      "example": "제목"
+    },
+    {
+      "name": "input_3",
+      "description": "본문 내용",
+      "required": true,
+      "example": "본문 내용"
+    },
+    {
+      "name": "input_4",
+      "description": "불릿들",
+      "required": true,
+      "example": "불릿들"
+    },
+    {
+      "name": "input_5",
+      "description": "현재 사용 색",
+      "required": true,
+      "example": "현재 사용 색"
+    },
+    {
+      "name": "input_6",
+      "description": "파랑, 빨강, 초록",
+      "required": true,
+      "example": "파랑, 빨강, 초록"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "내 발표 슬라이드 한 장의 내용을 아래에 붙여넣을게. 정렬·여백·폰트 위계·색 대비 4가지 원칙 관점에서 어수선해 보이는 문제점을 3가지 짚고, 각각 어떻게 고칠지 구체적 수치(폰트 pt, 여백 cm, 색 개수)로 알려줘.\n실제 값: 실제 값\n회의록 원문: 실제 값\n실제 값: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "프레젠테이션",
+    "시각화",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "alignment"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p30w-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

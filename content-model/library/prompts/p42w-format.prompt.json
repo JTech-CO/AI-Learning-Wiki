@@ -1,0 +1,52 @@
+{
+  "id": "p42w-format",
+  "version": 1,
+  "title": "출력 형식 템플릿화",
+  "summary": "출력 형식 템플릿화 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "이 GPT의 답변이 매번 같은 구조로 나오게 하고 싶어. 아래 업무에 맞는 '출력 형식' 지시문을 만들어줘. 섹션 이름, 순서, 각 섹션 분량 제한, 말투를 명시.\n- 업무: [설명]\n- 결과물 사용처: [고객에게 그대로 발송 / 내부 검토용 초안]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "설명",
+      "required": true,
+      "example": "설명"
+    },
+    {
+      "name": "input_2",
+      "description": "고객에게 그대로 발송 / 내부 검토용 초안",
+      "required": true,
+      "example": "고객에게 그대로 발송 / 내부 검토용 초안"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "구조화 출력",
+    "생산성",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42w-format"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

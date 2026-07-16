@@ -1,0 +1,45 @@
+{
+  "id": "p24w-diagnose",
+  "version": 1,
+  "title": "원자료 진단",
+  "summary": "원자료 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "피벗을 만들기 전에 원자료를 점검하고 싶어. 내 데이터 첫 5줄은 다음과 같아: [붙여넣기]. 피벗이 깨지거나 집계가 틀릴 수 있는 문제(빈칸, 텍스트로 저장된 숫자·날짜, 소계 행, 병합셀 등)를 찾아 목록으로, 각각 어떻게 고치는지 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "스프레드시트",
+    "디버깅"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24w-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

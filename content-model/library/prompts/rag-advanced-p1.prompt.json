@@ -1,0 +1,47 @@
+{
+  "id": "rag-advanced-p1",
+  "version": 1,
+  "title": "근거 강제 Q&A (환각 억제)",
+  "summary": "근거 강제 Q&A (환각 억제) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 질문에 답할 때 반드시 업로드한 문서에서만 근거를 찾아 답하세요. 답 끝에 근거가 된 원문 문장을 그대로 인용하세요. 문서에 근거가 없으면 추측하지 말고 \"문서에 해당 내용이 없습니다\"라고만 답하세요.\n질문: [여기에 질문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 질문",
+      "required": true,
+      "example": "여기에 질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "RAG",
+    "검색",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:rag-advanced-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

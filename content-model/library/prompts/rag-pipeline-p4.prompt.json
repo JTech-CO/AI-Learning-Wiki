@@ -1,0 +1,59 @@
+{
+  "id": "rag-pipeline-p4",
+  "version": 1,
+  "title": "틀린 답 원인 진단",
+  "summary": "틀린 답 원인 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 문서 챗봇이 이 질문에 틀리게 답했어. 질문: [질문]. 챗봇 답: [틀린 답]. 문서에 있는 실제 정답: [정답]. 이게 검색 단계 문제인지(관련 조각을 못 찾음), 생성 단계 문제인지(찾았는데 잘못 요약) 구분해주고, 청크 크기·Top K·프롬프트 중 무엇을 어떻게 바꿔야 할지 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    },
+    {
+      "name": "input_2",
+      "description": "틀린 답",
+      "required": true,
+      "example": "틀린 답"
+    },
+    {
+      "name": "input_3",
+      "description": "정답",
+      "required": true,
+      "example": "정답"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "자동화",
+    "RAG",
+    "검색",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:rag-pipeline-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

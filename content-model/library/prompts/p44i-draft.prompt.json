@@ -1,0 +1,95 @@
+{
+  "id": "p44i-draft",
+  "version": 1,
+  "title": "안내문·보고서 초안 생성",
+  "summary": "안내문·보고서 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 실무 카피라이터야. 아래 '확정 정보'만 사용해서 [행사 안내문]을 작성해줘. 없는 정보는 절대 지어내지 말고 [빈칸]으로 남겨줘.\n[대상 독자]: [예: 20~30대 독서모임 회원]\n[톤]: [예: 친근한 존댓말] [분량]: [예: A4 반 페이지, 본문 5줄 이내]\n[형식]: 제목 3안 + 본문 + 이미지에 넣을 짧은 문구 1줄\n확정 정보: - 행사명:[ ] - 날짜/시간:[ ] - 장소/주소:[ ] - 참가비:[ ] - 신청 방법/링크:[ ] - 문의:[ ] - 준비물:[ ]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "행사 안내문",
+      "required": true,
+      "example": "행사 안내문"
+    },
+    {
+      "name": "input_2",
+      "description": "빈칸",
+      "required": true,
+      "example": "빈칸"
+    },
+    {
+      "name": "input_3",
+      "description": "대상 독자",
+      "required": true,
+      "example": "대상 독자"
+    },
+    {
+      "name": "input_4",
+      "description": "예: 20~30대 독서모임 회원",
+      "required": true,
+      "example": "20~30대 독서모임 회원"
+    },
+    {
+      "name": "input_5",
+      "description": "예: 친근한 존댓말",
+      "required": true,
+      "example": "친근한 존댓말"
+    },
+    {
+      "name": "input_6",
+      "description": "분량",
+      "required": true,
+      "example": "분량"
+    },
+    {
+      "name": "input_7",
+      "description": "예: A4 반 페이지, 본문 5줄 이내",
+      "required": true,
+      "example": "A4 반 페이지, 본문 5줄 이내"
+    },
+    {
+      "name": "input_8",
+      "description": "형식",
+      "required": true,
+      "example": "형식"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 실무 카피라이터야. 아래 '확정 정보'만 사용해서 실제 값을 작성해줘. 없는 정보는 절대 지어내지 말고 실제 값으로 남겨줘.\n신입 직장인: 20~30대 독서모임 회원\n정중하고 간결한 말투: 친근한 존댓말 실제 값: A4 반 페이지, 본문 5줄 이내\n표와 세 줄 요약: 제목 3안 + 본문 + 이미지에 넣을 짧은 문구 1줄\n확정 정보: - 행사명:실제 값 - 날짜/시간:실제 값 - 장소/주소:실제 값 - 참가비:실제 값 - 신청 방법/링크:실제 값 - 문의:실제 값 - 준비물:실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "문서 분석",
+    "자동화",
+    "프롬프트 설계",
+    "이미지"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p44i-draft"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

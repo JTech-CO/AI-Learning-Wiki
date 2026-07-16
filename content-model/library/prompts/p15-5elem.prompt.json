@@ -1,0 +1,73 @@
+{
+  "id": "p15-5elem",
+  "version": 1,
+  "title": "5요소 완성 프롬프트",
+  "summary": "5요소 완성 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[맥락: 너는 ___ 역할이고, 상황은 ___ 이다.] [지시: ___ 을(를) 해줘.] [입력: 아래 정보를 사용해. ___] [출력형식: ___ 형태로, 분량은 ___.] [제약: ___ 은(는) 하지 말고, 톤은 ___ 로.]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "맥락: 너는 ___ 역할이고, 상황은 ___ 이다.",
+      "required": true,
+      "example": "맥락: 너는 ___ 역할이고, 상황은 ___ 이다."
+    },
+    {
+      "name": "input_2",
+      "description": "지시: ___ 을(를) 해줘.",
+      "required": true,
+      "example": "지시: ___ 을(를) 해줘."
+    },
+    {
+      "name": "input_3",
+      "description": "입력: 아래 정보를 사용해. ___",
+      "required": true,
+      "example": "입력: 아래 정보를 사용해. ___"
+    },
+    {
+      "name": "input_4",
+      "description": "출력형식: ___ 형태로, 분량은 ___.",
+      "required": true,
+      "example": "출력형식: ___ 형태로, 분량은 ___."
+    },
+    {
+      "name": "input_5",
+      "description": "제약: ___ 은(는) 하지 말고, 톤은 ___ 로.",
+      "required": true,
+      "example": "제약: ___ 은(는) 하지 말고, 톤은 ___ 로."
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "데이터 분석가 실제 값 회의록 원문 표와 세 줄 요약 정중하고 간결한 말투",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "테스트",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "instruction"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p15-5elem"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

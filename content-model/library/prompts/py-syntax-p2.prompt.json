@@ -1,0 +1,53 @@
+{
+  "id": "py-syntax-p2",
+  "version": 1,
+  "title": "오류 메시지 해결받기",
+  "summary": "오류 메시지 해결받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬 코드를 실행했더니 아래 오류가 났어. 왜 났는지 이유를 한 문장으로 알려주고, 고친 코드를 보여준 뒤 무엇을 바꿨는지 알려줘.\n\n내 코드:\n[코드 붙여넣기]\n\n오류 메시지:\n[오류 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코드 붙여넣기",
+      "required": true,
+      "example": "코드 붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "오류 붙여넣기",
+      "required": true,
+      "example": "오류 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "코딩",
+    "디버깅",
+    "자동화",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-syntax-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

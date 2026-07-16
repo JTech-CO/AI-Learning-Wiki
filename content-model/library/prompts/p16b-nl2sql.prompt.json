@@ -1,0 +1,46 @@
+{
+  "id": "p16b-nl2sql",
+  "version": 1,
+  "title": "자연어 → SQL 변환",
+  "summary": "자연어 → SQL 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 테이블 구조를 기준으로 SQLite 쿼리를 만들어줘. 테이블 customers(id, name, city, grade, spent). 내가 알고 싶은 것: [서울에 사는 VIP 중 결제액 상위 3명]. SELECT/WHERE/ORDER BY/LIMIT을 써서 한 문장으로. SQL만 주고 각 줄이 무슨 뜻인지 한 줄 주석도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "서울에 사는 VIP 중 결제액 상위 3명",
+      "required": true,
+      "example": "서울에 사는 VIP 중 결제액 상위 3명"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "스프레드시트",
+    "데이터베이스",
+    "협업",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16b-nl2sql"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

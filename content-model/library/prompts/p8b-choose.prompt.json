@@ -1,0 +1,59 @@
+{
+  "id": "p8b-choose",
+  "version": 1,
+  "title": "내 목표에 맞는 언어 고르기",
+  "summary": "내 목표에 맞는 언어 고르기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [하고 싶은 일 구체적으로]을 하고 싶은 [직업/학생 등]이야. 코딩은 거의 처음이야. Python, JavaScript, HTML/CSS, SQL 중 뭘 가장 먼저 배우면 좋을지 1개만 추천하고, 그 이유와 첫 1주 학습 순서를 초보가 알게 한국어로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "하고 싶은 일 구체적으로",
+      "required": true,
+      "example": "하고 싶은 일 구체적으로"
+    },
+    {
+      "name": "input_2",
+      "description": "직업/학생 등",
+      "required": true,
+      "example": "직업/학생 등"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "나는 실제 값을 하고 싶은 실제 값이야. 코딩은 거의 처음이야. Python, JavaScript, HTML/CSS, SQL 중 뭘 가장 먼저 배우면 좋을지 1개만 추천하고, 그 이유와 첫 1주 학습 순서를 초보가 알게 한국어로.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "번역",
+    "의사결정",
+    "교육",
+    "코딩",
+    "프롬프트 설계",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8b-choose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

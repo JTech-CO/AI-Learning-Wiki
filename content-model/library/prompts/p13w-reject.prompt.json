@@ -1,0 +1,57 @@
+{
+  "id": "p13w-reject",
+  "version": 1,
+  "title": "정중한 거절 메일 템플릿",
+  "summary": "정중한 거절 메일 템플릿 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "정중하게 제안을 거절하는 한국어 이메일 템플릿을. 상대가 기분 상하지 않게 (1)제안에 감사 (2)이번엔 어렵다는 명확한 결론 (3)여지 한 줄. 변수는 [상대이름][제안내용][거절사유], 3~5문장으로 짧게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상대이름",
+      "required": true,
+      "example": "상대이름"
+    },
+    {
+      "name": "input_2",
+      "description": "제안내용",
+      "required": true,
+      "example": "제안내용"
+    },
+    {
+      "name": "input_3",
+      "description": "거절사유",
+      "required": true,
+      "example": "거절사유"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "자동화",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p13w-reject"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

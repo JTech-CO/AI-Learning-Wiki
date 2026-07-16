@@ -1,0 +1,47 @@
+{
+  "id": "hire-delegate-sops-p4",
+  "version": 1,
+  "title": "4 여러 SOP를 위임 매뉴얼로 묶기",
+  "summary": "4 여러 SOP를 위임 매뉴얼로 묶기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 여러 개의 SOP를 신입/가상비서가 첫날 읽을 수 있는 하나의 온보딩 매뉴얼 목차로 묶어줘. 우선순위 순서로 정렬하고, 각 SOP마다 한 줄 요약과 예상 학습 시간을 붙여줘.\n\nSOP 목록: [SOP 제목들 나열]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "SOP 제목들 나열",
+      "required": true,
+      "example": "SOP 제목들 나열"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "교육",
+    "문서 분석",
+    "생산성"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:hire-delegate-sops-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

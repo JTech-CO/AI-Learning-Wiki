@@ -1,0 +1,53 @@
+{
+  "id": "p23b-test",
+  "version": 1,
+  "title": "정책 테스트 SQL 생성",
+  "summary": "정책 테스트 SQL 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 RLS 정책이 실제로 '남의 데이터를 못 본다'를 증명하는 테스트 SQL을 만들어줘. set_config로 request.jwt.claims의 sub를 특정 유저로 가장한 뒤, 그 유저가 (a) 자기 행만 보이는지 (b) 남의 행은 0건인지 (c) 남의 user_id로 insert가 거부되는지 확인하는 begin/rollback 블록으로. 테이블: [notes], 소유권 컬럼: [user_id]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "notes",
+      "required": true,
+      "example": "notes"
+    },
+    {
+      "name": "input_2",
+      "description": "user_id",
+      "required": true,
+      "example": "user_id"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "데이터베이스",
+    "검증",
+    "개인정보",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23b-test"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

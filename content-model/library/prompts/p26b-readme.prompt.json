@@ -1,0 +1,59 @@
+{
+  "id": "p26b-readme",
+  "version": 1,
+  "title": "README 대신 써달라고 시키기",
+  "summary": "README 대신 써달라고 시키기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 GitHub 프로젝트의 README를 마크다운으로 써줘. 프로젝트 이름: [이름]. 무엇을 하는 프로젝트인지: [한 줄 설명]. 사용법: [어떻게 쓰는지]. 초보자도 알아보게 제목·목록·코드블록을 써서 짧게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "이름",
+      "required": true,
+      "example": "이름"
+    },
+    {
+      "name": "input_2",
+      "description": "한 줄 설명",
+      "required": true,
+      "example": "한 줄 설명"
+    },
+    {
+      "name": "input_3",
+      "description": "어떻게 쓰는지",
+      "required": true,
+      "example": "어떻게 쓰는지"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "코딩",
+    "협업",
+    "프로젝트 관리",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26b-readme"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

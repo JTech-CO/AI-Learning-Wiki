@@ -1,0 +1,101 @@
+{
+  "id": "p45w-flow2design",
+  "version": 1,
+  "title": "순서도 → 자동화 설계 변환",
+  "summary": "순서도 → 자동화 설계 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 노코드 자동화 도구 [Make 또는 n8n]로 아래 업무 흐름을 만들려고 해. 초보자용으로, 어떤 모듈(블록)을 어떤 순서로 놓아야 하는지 단계별로 알려줘. 조건 분기는 Router+Filter로, 실패 대비는 재시도와 오류 알림으로 해줘.\n[업무 흐름]\n트리거: [구글폼 신청 접수]\n중간 단계: [견적 금액 계산]\n조건 분기: 만약 [조건]이면 [경로A], 아니면 [경로B]\n실패 대비: [어떤 단계]가 실패하면 [재시도/알림]\n각 모듈의 이름과 핵심 설정값까지 구체적으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Make 또는 n8n",
+      "required": true,
+      "example": "Make 또는 n8n"
+    },
+    {
+      "name": "input_2",
+      "description": "업무 흐름",
+      "required": true,
+      "example": "업무 흐름"
+    },
+    {
+      "name": "input_3",
+      "description": "구글폼 신청 접수",
+      "required": true,
+      "example": "구글폼 신청 접수"
+    },
+    {
+      "name": "input_4",
+      "description": "견적 금액 계산",
+      "required": true,
+      "example": "견적 금액 계산"
+    },
+    {
+      "name": "input_5",
+      "description": "조건",
+      "required": true,
+      "example": "조건"
+    },
+    {
+      "name": "input_6",
+      "description": "경로A",
+      "required": true,
+      "example": "경로A"
+    },
+    {
+      "name": "input_7",
+      "description": "경로B",
+      "required": true,
+      "example": "경로B"
+    },
+    {
+      "name": "input_8",
+      "description": "어떤 단계",
+      "required": true,
+      "example": "어떤 단계"
+    },
+    {
+      "name": "input_9",
+      "description": "재시도/알림",
+      "required": true,
+      "example": "재시도/알림"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "나는 노코드 자동화 도구 실제 값로 아래 업무 흐름을 만들려고 해. 초보자용으로, 어떤 모듈(블록)을 어떤 순서로 놓아야 하는지 단계별로 알려줘. 조건 분기는 Router+Filter로, 실패 대비는 재시도와 오류 알림으로 해줘.\n실제 값\n트리거: 실제 값\n중간 단계: 실제 값\n조건 분기: 만약 실제 값이면 실제 값, 아니면 실제 값\n실패 대비: 실제 값가 실패하면 실제 값\n각 모듈의 이름과 핵심 설정값까지 구체적으로.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "코딩",
+    "디버깅",
+    "자동화",
+    "생산성"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p45w-flow2design"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

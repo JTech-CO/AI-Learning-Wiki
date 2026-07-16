@@ -1,0 +1,44 @@
+{
+  "id": "community-subscription-p3",
+  "version": 1,
+  "title": "구독 플랜 + 이탈 점검",
+  "summary": "구독 플랜 + 이탈 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 커뮤니티의 구독 플랜을 단순하게 설계하고 이탈을 줄일 장치를 제안해줘.\n- 무료로 줄 것: [...] / 유료 핵심 가치: [...] / 가격 후보: [...]\n1) 1~2단계로 단순한 플랜(혜택 명확히).\n2) 연간 결제 등 '유지'를 돕는 장치 2개.\n3) '왜 사람들이 해지할까' 예상 이유 3가지 + 각 대비책.\n4) 매달 봐야 할 핵심 지표(신규/이탈률/유지) 정의.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:community-subscription-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

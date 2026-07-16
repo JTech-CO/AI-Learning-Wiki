@@ -1,0 +1,43 @@
+{
+  "id": "p14i-seed",
+  "version": 1,
+  "title": "새 대화 시작할 때 맥락 심기",
+  "summary": "새 대화 시작할 때 맥락 심기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 이전 대화의 요약이야. 이걸 전제로 이어서 도와줘. 모르는 부분은 나한테 먼저 물어봐. [여기에 이전 요약 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 이전 요약 붙여넣기",
+      "required": true,
+      "example": "여기에 이전 요약 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "context-window"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14i-seed"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

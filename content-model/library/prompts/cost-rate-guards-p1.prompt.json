@@ -1,0 +1,71 @@
+{
+  "id": "cost-rate-guards-p1",
+  "version": 1,
+  "title": "가드 3종 세트 자동 삽입",
+  "summary": "가드 3종 세트 자동 삽입 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 [내 스크립트 코드]에 세 가지 안전 가드를 추가해줘: (1) 누적 API 비용이 [상한 예: 2달러]를 넘으면 즉시 중단하는 예산 카운터, (2) 호출 사이 최소 [간격 예: 1초] 대기 + 429 응답 시 지수 백오프 재시도, (3) 최대 반복 [횟수 예: 1000]회와 [타임아웃 예: 60초] 킬스위치. 각 가드에 한글 주석을 달고, 변경 부분을 설명해줘.\\n\\n[내 스크립트 코드]:",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 스크립트 코드",
+      "required": true,
+      "example": "내 스크립트 코드"
+    },
+    {
+      "name": "input_2",
+      "description": "상한 예: 2달러",
+      "required": true,
+      "example": "상한 예: 2달러"
+    },
+    {
+      "name": "input_3",
+      "description": "간격 예: 1초",
+      "required": true,
+      "example": "간격 예: 1초"
+    },
+    {
+      "name": "input_4",
+      "description": "횟수 예: 1000",
+      "required": true,
+      "example": "횟수 예: 1000"
+    },
+    {
+      "name": "input_5",
+      "description": "타임아웃 예: 60초",
+      "required": true,
+      "example": "타임아웃 예: 60초"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "API",
+    "자동화",
+    "재무·금융",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cost-rate-guards-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

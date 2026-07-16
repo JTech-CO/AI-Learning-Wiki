@@ -1,0 +1,46 @@
+{
+  "id": "content-distribution-engine-p1",
+  "version": 1,
+  "title": "숏폼 대본 배치 생성",
+  "summary": "숏폼 대본 배치 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 코어 콘텐츠야:\n\"\"\"\n[코어 콘텐츠 전문 붙여넣기]\n\"\"\"\n이걸 바탕으로 30~45초짜리 숏폼(릴스/쇼츠/틱톡) 대본 3개를 만들어줘. 각 대본은 (1)첫 3초 훅 (2)본론 3문장 (3)마지막 행동유도(CTA) 구조로 써줘. 말투는 친근한 반말체, 한국어. 화면에 넣을 자막 텍스트 형태로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "코어 콘텐츠 전문 붙여넣기",
+      "required": true,
+      "example": "코어 콘텐츠 전문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이미지",
+    "영상",
+    "콘텐츠",
+    "배포"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-generation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:content-distribution-engine-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

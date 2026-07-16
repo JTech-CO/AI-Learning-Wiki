@@ -1,0 +1,44 @@
+{
+  "id": "p34i-story",
+  "version": 1,
+  "title": "상상 이야기 생성 (안전한 놀이)",
+  "summary": "상상 이야기 생성 (안전한 놀이) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[좋아하는 동물]이 주인공인 짧고 재미있는 동화를 만들어 줘. 무서운 내용은 빼고.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "좋아하는 동물",
+      "required": true,
+      "example": "좋아하는 동물"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "이미지",
+    "개인정보",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p34i-story"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

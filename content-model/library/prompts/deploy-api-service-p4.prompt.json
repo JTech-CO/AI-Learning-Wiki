@@ -1,0 +1,47 @@
+{
+  "id": "deploy-api-service-p4",
+  "version": 1,
+  "title": "curl 테스트 시나리오 생성",
+  "summary": "curl 테스트 시나리오 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 배포된 엔드포인트 [https://내주소/ask]를 검증할 curl 명령 5개를 만들어줘: (1) 정상 요청 (2) 키 없는 요청 401 (3) 잘못된 키 401 (4) 2000자 초과 413 (5) 빈 question. 각각 기대 응답도 적어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "https://내주소/ask",
+      "required": true,
+      "example": "https://내주소/ask"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "테스트",
+    "API",
+    "AI 에이전트",
+    "검증",
+    "비즈니스",
+    "배포"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:deploy-api-service-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

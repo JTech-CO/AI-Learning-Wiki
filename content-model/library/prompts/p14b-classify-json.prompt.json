@@ -1,0 +1,59 @@
+{
+  "id": "p14b-classify-json",
+  "version": 1,
+  "title": "JSON 강제 분류 시스템 프롬프트",
+  "summary": "JSON 강제 분류 시스템 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 [분류할 대상, 예: 한국어 고객 리뷰] 분류기다. 입력을 읽고 다음 라벨 중 정확히 하나를 고른다: [라벨1|라벨2|라벨3]. 반드시 아래 JSON만 출력하고 그 외 인사말·설명·코드블록 표시를 절대 쓰지 마라: {\"label\":\"라벨1|라벨2|라벨3\",\"reason\":\"[N]자 이내 근거\"}. 애매하면 가장 가까운 라벨을 고르되 reason에 애매함을 적어라. 입력: [여기에 실제 데이터 한 건]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "분류할 대상, 예: 한국어 고객 리뷰",
+      "required": true,
+      "example": "분류할 대상, 예: 한국어 고객 리뷰"
+    },
+    {
+      "name": "input_2",
+      "description": "라벨1|라벨2|라벨3",
+      "required": true,
+      "example": "라벨1|라벨2|라벨3"
+    },
+    {
+      "name": "input_3",
+      "description": "여기에 실제 데이터 한 건",
+      "required": true,
+      "example": "여기에 실제 데이터 한 건"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "코딩",
+    "프롬프트 설계",
+    "구조화 출력",
+    "출처·인용",
+    "보안"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14b-classify-json"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

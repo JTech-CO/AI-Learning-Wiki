@@ -1,0 +1,56 @@
+{
+  "id": "saas-first-paying-user-p3",
+  "version": 1,
+  "title": "베타 오퍼(가격+환불) 설계",
+  "summary": "베타 오퍼(가격+환불) 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "초기 유료 유저 10명 확보용 얼리버드 오퍼를 설계해줘. (1)정가 대비 얼리버드 가격 (2)마감 조건(선착순/기간) (3)환불 보장 문구 (4)통화에서 결제로 넘어가는 마무리 멘트 1줄. 무료 평생 제공은 금지, 반드시 소액이라도 결제가 일어나게.\n[정가/월]: [여기]\n[핵심 가치 한 줄]: [여기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "정가/월",
+      "required": true,
+      "example": "정가/월"
+    },
+    {
+      "name": "input_2",
+      "description": "여기",
+      "required": true,
+      "example": "여기"
+    },
+    {
+      "name": "input_3",
+      "description": "핵심 가치 한 줄",
+      "required": true,
+      "example": "핵심 가치 한 줄"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "고객 지원",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:saas-first-paying-user-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

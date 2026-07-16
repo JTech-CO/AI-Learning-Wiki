@@ -1,0 +1,65 @@
+{
+  "id": "p25b-invoke",
+  "version": 1,
+  "title": "함수 호출 코드 생성",
+  "summary": "함수 호출 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Supabase JS 클라이언트로 [함수명] Edge Function을 호출하는 프론트엔드 코드를. body로 [보낼 데이터]를 넘기고, 응답의 [필드]를 받아 화면에 표시. 로딩 상태와 에러 처리도. 프레임워크는 [React/바닐라JS 등].",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "함수명",
+      "required": true,
+      "example": "함수명"
+    },
+    {
+      "name": "input_2",
+      "description": "보낼 데이터",
+      "required": true,
+      "example": "보낼 데이터"
+    },
+    {
+      "name": "input_3",
+      "description": "필드",
+      "required": true,
+      "example": "필드"
+    },
+    {
+      "name": "input_4",
+      "description": "React/바닐라JS 등",
+      "required": true,
+      "example": "React/바닐라JS 등"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "API",
+    "데이터베이스",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25b-invoke"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

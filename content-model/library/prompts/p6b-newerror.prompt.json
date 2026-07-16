@@ -1,0 +1,57 @@
+{
+  "id": "p6b-newerror",
+  "version": 1,
+  "title": "고쳤더니 새 에러가 났을 때",
+  "summary": "고쳤더니 새 에러가 났을 때 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아까 [이전 에러]를 네 말대로 [이렇게] 고쳤어. 그랬더니 이번엔 아래 새 에러가 나. 이전 수정이 원인일 수도 있어. 새 에러의 원인과 다음 고칠 코드를 알려줘.\n[새 에러 메시지]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "이전 에러",
+      "required": true,
+      "example": "이전 에러"
+    },
+    {
+      "name": "input_2",
+      "description": "이렇게",
+      "required": true,
+      "example": "이렇게"
+    },
+    {
+      "name": "input_3",
+      "description": "새 에러 메시지",
+      "required": true,
+      "example": "새 에러 메시지"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6b-newerror"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

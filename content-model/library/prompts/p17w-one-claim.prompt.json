@@ -1,0 +1,47 @@
+{
+  "id": "p17w-one-claim",
+  "version": 1,
+  "title": "한 주장만 끝까지 추궁",
+  "summary": "한 주장만 끝까지 추궁 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "'[복붙한 AI의 문장]' 이 주장 하나만 보자. 이게 사실이라는 1차 출처(원본 보고서·논문·공식 발표)의 정확한 제목과 링크를. 네가 그 출처를 실제로 확인한 게 아니라면 '확인 못 함'이라고 분명히.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "복붙한 AI의 문장",
+      "required": true,
+      "example": "복붙한 AI의 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "조사",
+    "프레젠테이션",
+    "문서 분석",
+    "검증",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17w-one-claim"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

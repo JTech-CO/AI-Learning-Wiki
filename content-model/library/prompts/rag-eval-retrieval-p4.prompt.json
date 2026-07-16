@@ -1,0 +1,59 @@
+{
+  "id": "rag-eval-retrieval-p4",
+  "version": 1,
+  "title": "가드레일 생성 프롬프트",
+  "summary": "가드레일 생성 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 사내 문서 도우미다. 아래 '근거'에 명시된 내용만 사용해 답하라. 근거로 뒷받침되지 않는 내용은 절대 추측하지 말고 '(근거 없음)'이라고 답하라. 모든 주장 끝에 [출처: 문서명 p.페이지]를 붙여라.\n근거:\n[검색된 청크들]\n질문: [사용자 질문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "출처: 문서명 p.페이지",
+      "required": true,
+      "example": "출처: 문서명 p.페이지"
+    },
+    {
+      "name": "input_2",
+      "description": "검색된 청크들",
+      "required": true,
+      "example": "검색된 청크들"
+    },
+    {
+      "name": "input_3",
+      "description": "사용자 질문",
+      "required": true,
+      "example": "사용자 질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "문서 분석",
+    "RAG",
+    "검색",
+    "프롬프트 설계",
+    "평가"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:rag-eval-retrieval-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

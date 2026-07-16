@@ -1,0 +1,47 @@
+{
+  "id": "passive-income-portfolio-p3",
+  "version": 1,
+  "title": "분산 추가 후보 브레인스토밍",
+  "summary": "분산 추가 후보 브레인스토밍 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 현재 포트폴리오의 '집중 위험'을 줄이기 위해, 성격이 다른 수익원 후보를 제안해줘.\n- 현재 수익원과 의존 플랫폼: [...]\n- 내 강점·자원: [...]\n조건:\n1) 현재와 '다른 성격'(일회성↔반복, 플랫폼 의존↔자체 채널)인 후보 3개.\n2) 각 후보의 '반자동성'과 '시작 난이도'를 솔직히.\n3) 다음 1개월에 '작게 검증'할 첫 걸음 1개.\n'완전 자동'ㆍ'쉽게 부자' 같은 과장 금지.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "아이디어",
+    "자동화",
+    "콘텐츠",
+    "재무·금융",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:passive-income-portfolio-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

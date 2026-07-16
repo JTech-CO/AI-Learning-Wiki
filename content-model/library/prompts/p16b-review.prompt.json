@@ -1,0 +1,52 @@
+{
+  "id": "p16b-review",
+  "version": 1,
+  "title": "내 쿼리 점검받기",
+  "summary": "내 쿼리 점검받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 쓴 SQLite 쿼리를 검토해줘. 문법 오류, 문자열 따옴표, WHERE 조건, 정렬 방향(ASC/DESC)이 내 의도와 맞는지. 내 의도: [의도] 내 쿼리: [쿼리]. 틀린 부분만 고쳐서 최종 쿼리를.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "의도",
+      "required": true,
+      "example": "의도"
+    },
+    {
+      "name": "input_2",
+      "description": "쿼리",
+      "required": true,
+      "example": "쿼리"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "스프레드시트",
+    "디버깅",
+    "데이터베이스",
+    "협업",
+    "SQL"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16b-review"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

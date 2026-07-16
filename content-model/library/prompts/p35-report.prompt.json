@@ -1,0 +1,47 @@
+{
+  "id": "p35-report",
+  "version": 1,
+  "title": "리포트 1장으로 정리",
+  "summary": "리포트 1장으로 정리 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "지금까지 분석을 '제목 / 핵심 3줄 / 급변 항목 표 / 주의사항' 순서의 깔끔한 마크다운 리포트로. [회사명/기간]을 제목에 넣어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "회사명/기간",
+      "required": true,
+      "example": "회사명/기간"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "데이터 분석",
+    "스프레드시트",
+    "시각화",
+    "코딩",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p35-report"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "p26w-layout",
+  "version": 1,
+  "title": "레이아웃·배색 다듬기",
+  "summary": "레이아웃·배색 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 엑셀 대시보드 스크린샷을 첨부할게. 실무 보고용으로 보이도록 (1)차트 배치 (2)색 2~3가지 배색 (3)폰트 크기 (4)없애면 좋을 요소를 구체적으로.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "스프레드시트",
+    "시각화",
+    "협업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p26w-layout"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

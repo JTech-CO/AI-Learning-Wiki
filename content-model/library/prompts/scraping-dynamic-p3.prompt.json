@@ -1,0 +1,53 @@
+{
+  "id": "scraping-dynamic-p3",
+  "version": 1,
+  "title": "무한 스크롤 수집",
+  "summary": "무한 스크롤 수집 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Playwright(파이썬)로 [URL] 페이지를 끝까지 스크롤하며 [.item] 요소를 모두 수집하는 코드를 만들어줘. 새 항목이 더 안 늘어나면 멈추도록 로직을 넣고, 결과를 리스트로 반환해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "URL",
+      "required": true,
+      "example": "URL"
+    },
+    {
+      "name": "input_2",
+      "description": ".item",
+      "required": true,
+      "example": ".item"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "API",
+    "자동화",
+    "웹 개발",
+    "Python",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:scraping-dynamic-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

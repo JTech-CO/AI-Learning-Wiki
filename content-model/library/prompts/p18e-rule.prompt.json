@@ -1,0 +1,53 @@
+{
+  "id": "p18e-rule",
+  "version": 1,
+  "title": "규칙 한 줄 제안기",
+  "summary": "규칙 한 줄 제안기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 현재 프롬프트는 다음과 같아: \"[현재 프롬프트]\". 이 프롬프트에서 '[고칠 유형: 길이 초과]' 문제가 반복돼. 이 문제 하나만 해결하는 '규칙 한 줄'을 3가지 다른 표현으로 제안해줘. 각 안이 왜 효과 있을지 한 줄로 설명하고, 다른 문제를 새로 만들지 않는지도 점검해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "현재 프롬프트",
+      "required": true,
+      "example": "현재 프롬프트"
+    },
+    {
+      "name": "input_2",
+      "description": "고칠 유형: 길이 초과",
+      "required": true,
+      "example": "고칠 유형: 길이 초과"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "디버깅",
+    "테스트",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p18e-rule"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

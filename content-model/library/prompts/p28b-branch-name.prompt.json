@@ -1,0 +1,45 @@
+{
+  "id": "p28b-branch-name",
+  "version": 1,
+  "title": "브랜치 이름 짓기",
+  "summary": "브랜치 이름 짓기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내가 지금 하려는 작업은 '[작업 설명]'이야. 이 작업에 어울리는 git 브랜치 이름을 feature/ 접두사를 붙인 영어 kebab-case로 3개 지어줘. 각 이름이 왜 좋은지도 한 줄로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업 설명",
+      "required": true,
+      "example": "작업 설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "검증",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p28b-branch-name"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

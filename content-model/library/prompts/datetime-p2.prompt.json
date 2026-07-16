@@ -1,0 +1,49 @@
+{
+  "id": "datetime-p2",
+  "version": 1,
+  "title": "기간 계산",
+  "summary": "기간 계산 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[시작: 2024-06-01 08:30]과 [끝: 2024-06-01 17:15] 사이의 걸린 시간을 시간과 분으로 알려줘. 두 시각은 같은 시간대야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "시작: 2024-06-01 08:30",
+      "required": true,
+      "example": "시작: 2024-06-01 08:30"
+    },
+    {
+      "name": "input_2",
+      "description": "끝: 2024-06-01 17:15",
+      "required": true,
+      "example": "끝: 2024-06-01 17:15"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "자동화",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:datetime-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

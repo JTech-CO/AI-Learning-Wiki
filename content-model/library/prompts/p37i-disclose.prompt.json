@@ -1,0 +1,58 @@
+{
+  "id": "p37i-disclose",
+  "version": 1,
+  "title": "밝히기 문구 3줄 자동 완성",
+  "summary": "밝히기 문구 3줄 자동 완성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [과제/보고서 제목]을 작성했고 AI를 다음처럼 썼어: [예: 서론 초안, 오탈자 교정, 아이디어 브레인스토밍]. 내가 직접 한 것은 [예: 본론 데이터 수집, 결론 작성, 사실 확인]이야. 이 내용을 '사용 도구 / 사용 범위 / 내가 한 검증' 세 줄로 된 정직하고 간결한 AI 사용 고지 문구로 만들어줘. 과장 없이 사실만.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "과제/보고서 제목",
+      "required": true,
+      "example": "과제/보고서 제목"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 서론 초안, 오탈자 교정, 아이디어 브레인스토밍",
+      "required": true,
+      "example": "서론 초안, 오탈자 교정, 아이디어 브레인스토밍"
+    },
+    {
+      "name": "input_3",
+      "description": "예: 본론 데이터 수집, 결론 작성, 사실 확인",
+      "required": true,
+      "example": "본론 데이터 수집, 결론 작성, 사실 확인"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "문서 분석",
+    "생산성",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p37i-disclose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p35i-safeq",
+  "version": 1,
+  "title": "3 상황별 안전 질문 생성",
+  "summary": "3 상황별 안전 질문 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [상황: 예 - 카드 결제 오류 문의]을 AI에게 물어보고 싶은데, 실제 개인정보 없이도 좋은 답을 받을 수 있게 질문을 다시 작성해줘. 가명과 범주(예: 30대 남성)를 사용해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상황: 예 - 카드 결제 오류 문의",
+      "required": true,
+      "example": "상황: 예 - 카드 결제 오류 문의"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "디버깅",
+    "프롬프트 설계",
+    "고객 지원",
+    "개인정보",
+    "보안"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "anonymization"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p35i-safeq"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

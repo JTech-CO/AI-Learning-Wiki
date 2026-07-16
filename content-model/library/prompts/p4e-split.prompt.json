@@ -1,0 +1,43 @@
+{
+  "id": "p4e-split",
+  "version": 1,
+  "title": "긴 함수 쪼개기 리뷰",
+  "summary": "긴 함수 쪼개기 리뷰 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 파이썬 함수를 '한 함수는 한 가지 일만' 원칙으로 리팩터링해줘. 각 함수에 명확한 이름, 인자 기본값, 반환값(return), 한 줄 docstring을 넣고 왜 그렇게 나눴는지 짧게 설명. 원본 동작은 절대 바꾸지 마. [내 함수 코드]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 함수 코드",
+      "required": true,
+      "example": "내 함수 코드"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "Python"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p4e-split"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

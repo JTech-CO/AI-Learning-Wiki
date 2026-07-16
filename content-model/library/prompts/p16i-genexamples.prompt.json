@@ -1,0 +1,48 @@
+{
+  "id": "p16i-genexamples",
+  "version": 1,
+  "title": "예시 자체를 더 만들게 하기",
+  "summary": "예시 자체를 더 만들게 하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내가 만든 견본 예시 1개야. 이 형식(길이·말투·구조)을 그대로 유지하면서, 서로 다른 상황의 예시 [2]개를 네가 추가로 만들어줘.\n견본 입력: [상황] 견본 출력: [결과]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상황",
+      "required": true,
+      "example": "상황"
+    },
+    {
+      "name": "input_2",
+      "description": "결과",
+      "required": true,
+      "example": "결과"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16i-genexamples"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

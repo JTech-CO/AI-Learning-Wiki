@@ -1,0 +1,46 @@
+{
+  "id": "ai-agents-tools-p1",
+  "version": 1,
+  "title": "도구 스키마 초안 생성",
+  "summary": "도구 스키마 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "json-schema",
+  "difficulty": "advanced",
+  "template": "나는 초보자이고 LLM 에이전트에 붙일 도구(함수)를 설계 중이야. 내가 만들고 싶은 기능은 [예: 도시 날씨 조회]야. 이 도구의 (1) 함수 이름, (2) 한 줄 설명(LLM이 언제 이 도구를 골라야 하는지 분명하게), (3) 입력 파라미터 JSON 스키마를 OpenAI function calling 형식으로 만들어줘. 오해 없이 고르도록 설명을 특히 신경 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 도시 날씨 조회",
+      "required": true,
+      "example": "도시 날씨 조회"
+    }
+  ],
+  "outputContract": {
+    "format": "json",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "자동화",
+    "AI 에이전트",
+    "구조화 출력",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "openai",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-agents-tools-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

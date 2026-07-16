@@ -1,0 +1,47 @@
+{
+  "id": "p23b-audit",
+  "version": 1,
+  "title": "내 RLS 정책이 안전한지 감사",
+  "summary": "내 RLS 정책이 안전한지 감사 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래는 내 Supabase 테이블의 RLS 정책들이야. 보안 허점을 찾아줘: (1) INSERT에 with check가 빠져 남의 user_id로 위조 가능한지 (2) UPDATE에 with check가 없어 수정 후 소유권이 바뀔 수 있는지 (3) using에 true나 과도한 조건이 있는지 (4) anon 롤에 실수로 권한이 열렸는지. 문제마다 위험도와 수정 SQL을 표로 정리해줘. [create policy 문들]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "create policy 문들",
+      "required": true,
+      "example": "create policy 문들"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "데이터베이스",
+    "개인정보",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "privacy"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p23b-audit"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

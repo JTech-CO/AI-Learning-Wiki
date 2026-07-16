@@ -1,0 +1,47 @@
+{
+  "id": "ai-safety-compliance-p4",
+  "version": 1,
+  "title": "가드레일 정책 명세",
+  "summary": "가드레일 정책 명세 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[시스템]의 런타임 가드레일을 '정책→규칙→구현' 3계층으로 명세해줘. 입력 가드레일(인젝션·정책위반·PII마스킹)과 출력 가드레일(유해성·PII누출·근거부족 거절)을 나누고, 각 규칙의 차단 조건·예외·false positive 완화책·차단 시 감사로그 기록 항목을 표로. 특정 라이브러리에 종속되지 않게 정책을 추상화해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "시스템",
+      "required": true,
+      "example": "시스템"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "출처·인용",
+    "개인정보"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-safety-compliance-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

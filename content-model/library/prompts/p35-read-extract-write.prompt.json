@@ -1,0 +1,47 @@
+{
+  "id": "p35-read-extract-write",
+  "version": 1,
+  "title": "읽기→추출→쓰기 한방",
+  "summary": "읽기→추출→쓰기 한방 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Notion에서 '회의록' 폴더의 이번 주 페이지들을 모두 읽고, 각 페이지의 액션아이템만 뽑아 '액션아이템'이라는 새 DB에 [할 일, 담당자, 마감일, 출처페이지] 열로 행을 추가해줘. 추가 전 추출 결과를 먼저 보여주고 내 확인을 받아.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "할 일, 담당자, 마감일, 출처페이지",
+      "required": true,
+      "example": "할 일, 담당자, 마감일, 출처페이지"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "데이터베이스",
+    "자동화",
+    "AI 에이전트",
+    "생산성",
+    "검증",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "mcp"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p35-read-extract-write"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

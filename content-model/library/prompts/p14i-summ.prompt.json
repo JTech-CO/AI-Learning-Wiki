@@ -1,0 +1,49 @@
+{
+  "id": "p14i-summ",
+  "version": 1,
+  "title": "긴 대화 요약해 새 창으로 이사",
+  "summary": "긴 대화 요약해 새 창으로 이사 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "지금까지 우리가 나눈 대화에서 앞으로도 꼭 기억해야 할 핵심 결정사항만 불릿 [10]개로 요약해줘. 이 요약만 봐도 새 대화에서 이어갈 수 있게 구체적으로 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "10",
+      "required": true,
+      "example": "10"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "지금까지 우리가 나눈 대화에서 앞으로도 꼭 기억해야 할 핵심 결정사항만 불릿 실제 값개로 요약해줘. 이 요약만 봐도 새 대화에서 이어갈 수 있게 구체적으로 써줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "요약",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "context-window"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14i-summ"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

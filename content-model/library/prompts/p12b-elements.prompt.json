@@ -1,0 +1,59 @@
+{
+  "id": "p12b-elements",
+  "version": 1,
+  "title": "요소(HTML/CSS) 이해하기",
+  "summary": "요소(HTML/CSS) 이해하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "브라우저 Elements 탭에서 어떤 요소를 선택했더니 아래 HTML과 CSS가 보입니다. 이 요소가 화면에서 무슨 역할을 하는지, class 이름은 무슨 뜻인지, 그리고 [바꾸고 싶은 것: 글자 색을 파랑으로]을 임시로 테스트하려면 Styles에서 어떤 값을 바꾸면 되는지 알려줘.\nHTML: [Elements에서 복사한 태그]\nCSS: [Styles 패널에서 복사한 값]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "바꾸고 싶은 것: 글자 색을 파랑으로",
+      "required": true,
+      "example": "바꾸고 싶은 것: 글자 색을 파랑으로"
+    },
+    {
+      "name": "input_2",
+      "description": "Elements에서 복사한 태그",
+      "required": true,
+      "example": "Elements에서 복사한 태그"
+    },
+    {
+      "name": "input_3",
+      "description": "Styles 패널에서 복사한 값",
+      "required": true,
+      "example": "Styles 패널에서 복사한 값"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "조사",
+    "의사결정",
+    "디버깅",
+    "테스트",
+    "API"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12b-elements"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

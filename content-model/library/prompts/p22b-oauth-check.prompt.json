@@ -1,0 +1,53 @@
+{
+  "id": "p22b-oauth-check",
+  "version": 1,
+  "title": "구글 OAuth 설정 점검",
+  "summary": "구글 OAuth 설정 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "Supabase에서 구글 로그인을 붙였는데 [증상: redirect가 안 됨 / provider is not enabled 등]. Google Cloud OAuth 클라이언트와 Supabase Authentication 설정에서 확인해야 할 항목들을 체크리스트로 줘. redirect URL은 [내 앱 주소].",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "증상: redirect가 안 됨 / provider is not enabled 등",
+      "required": true,
+      "example": "증상: redirect가 안 됨 / provider is not enabled 등"
+    },
+    {
+      "name": "input_2",
+      "description": "내 앱 주소",
+      "required": true,
+      "example": "내 앱 주소"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "코딩",
+    "데이터베이스",
+    "검증",
+    "보안"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "oauth"
+  ],
+  "providerScope": "google",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22b-oauth-check"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

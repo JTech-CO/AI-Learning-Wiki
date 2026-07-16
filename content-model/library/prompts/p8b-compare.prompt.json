@@ -1,0 +1,59 @@
+{
+  "id": "p8b-compare",
+  "version": 1,
+  "title": "두 언어 비교 결정",
+  "summary": "두 언어 비교 결정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[일/목표]를 하려는데 [언어A]와 [언어B] 중 고민돼. 둘을 '쉬움/할 수 있는 일/취업 수요' 기준으로 표로 비교하고, 내 경우엔 어느 쪽을 추천하는지 결론을 한국어로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "일/목표",
+      "required": true,
+      "example": "일/목표"
+    },
+    {
+      "name": "input_2",
+      "description": "언어A",
+      "required": true,
+      "example": "언어A"
+    },
+    {
+      "name": "input_3",
+      "description": "언어B",
+      "required": true,
+      "example": "언어B"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "번역",
+    "의사결정",
+    "코딩",
+    "프롬프트 설계",
+    "웹 개발",
+    "Python"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8b-compare"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

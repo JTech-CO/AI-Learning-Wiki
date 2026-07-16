@@ -1,0 +1,52 @@
+{
+  "id": "income-mindset-reality-p4",
+  "version": 1,
+  "title": "과대광고 사실 검증 필터",
+  "summary": "과대광고 사실 검증 필터 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 문구를 붙여넣을게: [광고나 영상 문구].\n이게 과대광고인지 아래 기준으로 판별해줘: (1) 노력·시간을 숨겼는가 (2) '자동/불로소득/누구나'를 강조하는가 (3) 실제 수익원이 강의·구독 판매인가. 각 기준 O/X와 이유를 한 줄씩, 마지막에 '주의/보통/신뢰' 중 하나로 종합 판정해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "광고나 영상 문구",
+      "required": true,
+      "example": "광고나 영상 문구"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "이 문구를 붙여넣을게: 실제 값.\n이게 과대광고인지 아래 기준으로 판별해줘: (1) 노력·시간을 숨겼는가 (2) '자동/불로소득/누구나'를 강조하는가 (3) 실제 수익원이 강의·구독 판매인가. 각 기준 O/X와 이유를 한 줄씩, 마지막에 '주의/보통/신뢰' 중 하나로 종합 판정해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "영상",
+    "마케팅",
+    "영업",
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "multimodal-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:income-mindset-reality-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

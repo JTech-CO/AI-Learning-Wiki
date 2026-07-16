@@ -1,0 +1,43 @@
+{
+  "id": "unit-economics-pricing-p2",
+  "version": 1,
+  "title": "손익분기 + 바닥 가격",
+  "summary": "손익분기 + 바닥 가격 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 비용 구조에서 손익분기 가격(마진 0이 되는 가격)과, 내 시간 가치까지 고려한 '더는 안 내리는 바닥 가격'을 계산해줘.\n- 비용 구조: [...]\n- 내 시간당 가치(원하는 값): [...] / 한 건당 내 작업 시간: [...]\n계산식을 보여주고, '이 밑으로 팔면 손해' 선과 '최소 이만큼은 남아야' 선을 각각 1줄로 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "재무·금융",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:unit-economics-pricing-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

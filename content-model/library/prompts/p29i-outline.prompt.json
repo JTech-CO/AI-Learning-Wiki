@@ -1,0 +1,77 @@
+{
+  "id": "p29i-outline",
+  "version": 1,
+  "title": "개요→초안 자동 완성",
+  "summary": "개요→초안 자동 완성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 사내 문서 담당자야. 아래 [개요]와 [사실 메모]만 근거로 사내 공지문 초안을 존댓말로 써줘. 규칙: (1)메모에 없는 사실·규정·숫자는 절대 지어내지 말 것 (2)섹션 순서는 개요 그대로 (3)각 섹션은 2~4문장 (4)마지막에 마감일과 문의처를 눈에 띄게.\n[독자] [예: 3팀 전원]\n[개요] [소제목 3~5줄 붙여넣기]\n[사실 메모] [섹션별 사실 조각 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "개요",
+      "required": true,
+      "example": "개요"
+    },
+    {
+      "name": "input_2",
+      "description": "사실 메모",
+      "required": true,
+      "example": "사실 메모"
+    },
+    {
+      "name": "input_3",
+      "description": "독자",
+      "required": true,
+      "example": "독자"
+    },
+    {
+      "name": "input_4",
+      "description": "예: 3팀 전원",
+      "required": true,
+      "example": "3팀 전원"
+    },
+    {
+      "name": "input_5",
+      "description": "소제목 3~5줄 붙여넣기",
+      "required": true,
+      "example": "소제목 3~5줄 붙여넣기"
+    },
+    {
+      "name": "input_6",
+      "description": "섹션별 사실 조각 붙여넣기",
+      "required": true,
+      "example": "섹션별 사실 조각 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "프롬프트 설계",
+    "고객 지원",
+    "출처·인용",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29i-outline"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

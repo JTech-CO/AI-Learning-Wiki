@@ -1,0 +1,47 @@
+{
+  "id": "scale-and-protect-p2",
+  "version": 1,
+  "title": "소득 기록·보호 점검(개념 정리용)",
+  "summary": "소득 기록·보호 점검(개념 정리용) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [한국]에서 AI 부업으로 디지털 상품을 팔아 소소한 소득이 생겼어. 사업을 '지키기' 위해 알아둘 기본을 개념 수준에서 정리해줘:\n1) 부업 소득이 생기면 일반적으로 어떤 기록(매출·비용)을 남겨야 하는지.\n2) '일정 소득을 넘으면 신고·납부 의무가 생긴다'는 개념과, 내가 정확한 기준을 어디서(어떤 공식 기관·전문가) 확인해야 하는지.\n3) 한 플랫폼에만 의존하는 위험과 분산 방법.\n주의: 너는 세무·법률 자문을 할 수 없으니, 구체적 세율·기준은 단정하지 말고 '반드시 공식 자료·세무 전문가로 확인'이라고 분명히 안내해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "한국",
+      "required": true,
+      "example": "한국"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "재무·금융",
+    "검증",
+    "안전",
+    "프로젝트 관리",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:scale-and-protect-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

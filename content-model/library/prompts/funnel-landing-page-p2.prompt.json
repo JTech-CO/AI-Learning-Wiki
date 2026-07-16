@@ -1,0 +1,53 @@
+{
+  "id": "funnel-landing-page-p2",
+  "version": 1,
+  "title": "헤드라인·CTA 문구 5안",
+  "summary": "헤드라인·CTA 문구 5안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 무료 리드마그넷은 [리드마그넷 이름]이고 타깃은 [타깃]이야. 이 자료를 받으려고 이메일을 남기게 만들 랜딩페이지 문구를 만들어줘. 출력: (1) 헤드라인 5개 후보 - 각각 '무엇을 공짜로 얻는지'가 분명하게, (2) 각 헤드라인에 어울리는 서브헤드 1줄, (3) 버튼 문구 3개. 과장·거짓 약속 금지, 한국어, 각 후보는 왜 이 문구가 클릭을 부르는지 한 줄 근거도 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "리드마그넷 이름",
+      "required": true,
+      "example": "리드마그넷 이름"
+    },
+    {
+      "name": "input_2",
+      "description": "타깃",
+      "required": true,
+      "example": "타깃"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "코딩",
+    "마케팅",
+    "출처·인용",
+    "노코드",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:funnel-landing-page-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

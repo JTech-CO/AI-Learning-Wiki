@@ -1,0 +1,47 @@
+{
+  "id": "p38w-bias",
+  "version": 1,
+  "title": "편향 자가점검",
+  "summary": "편향 자가점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 쓴 아래 결론이 특정 출처 한쪽으로 치우쳤는지 점검해줘. 반대 근거를 무시했거나, 오래된 데이터를 최신처럼 쓴 곳, 표본이 편향된 출처를 과신한 곳이 있으면 지적하고 고칠 문장을 제안해줘.\n내 결론: [붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "콘텐츠",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "bias"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p38w-bias"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

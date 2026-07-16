@@ -1,0 +1,57 @@
+{
+  "id": "py-files-io-p1",
+  "version": 1,
+  "title": "코드 만들어달라기",
+  "summary": "코드 만들어달라기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "파이썬 초보야. [텍스트/CSV] 파일 '[파일이름]'을 읽어서 [하고 싶은 처리: 예-각 줄 출력, 특정 단어 찾기]를 하는 코드를 줄마다 주석과 함께 만들어줘. 한글 깨짐 안 나게 encoding도 넣어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "텍스트/CSV",
+      "required": true,
+      "example": "텍스트/CSV"
+    },
+    {
+      "name": "input_2",
+      "description": "파일이름",
+      "required": true,
+      "example": "파일이름"
+    },
+    {
+      "name": "input_3",
+      "description": "하고 싶은 처리: 예-각 줄 출력, 특정 단어 찾기",
+      "required": true,
+      "example": "하고 싶은 처리: 예-각 줄 출력, 특정 단어 찾기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "자동화",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-files-io-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

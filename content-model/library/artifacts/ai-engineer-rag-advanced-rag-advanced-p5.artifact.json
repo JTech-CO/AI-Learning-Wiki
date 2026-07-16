@@ -1,0 +1,50 @@
+{
+  "id": "ai-engineer-rag-advanced-rag-advanced-p5",
+  "version": 1,
+  "title": "진짜 reranker — Cohere Rerank 4.0 API 호출(코드)",
+  "summary": "진짜 reranker — Cohere Rerank 4.0 API 호출(코드) 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Python",
+  "runtime": "Python 3.11 이상",
+  "files": [
+    {
+      "path": "ai-engineer-rag-advanced-rag-advanced-p5.py",
+      "content": "# Cohere Rerank 4.0 (rerank-v4.0-pro) 예시 — 벡터 검색 후보를 정밀 재순위\n# 현행 Cohere 플래그십 (2025년 12월 출시). 저지연이 필요하면 rerank-v4.0-fast 사용\nimport cohere\nco = cohere.ClientV2(\"<COHERE_API_KEY>\")\nresp = co.rerank(\n    model=\"rerank-v4.0-pro\",\n    query=\"AX-7200 보증기간\",\n    documents=[c1, c2, c3],  # 벡터 검색으로 뽑은 후보 50~100개 텍스트\n    top_n=5,\n)\nfor r in resp.results:\n    print(r.index, r.relevance_score)  # 점수순 정렬된 상위 5개\n# 오픈소스로 자체 서버에 두려면 model 자리에 BGE-reranker-v2-m3 / jina-reranker-v3를 LlamaIndex·LangChain reranker로 등록",
+      "language": "python"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "문서 분석",
+    "코딩",
+    "API",
+    "RAG",
+    "검색",
+    "SQL"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-engineer-rag-advanced-rag-advanced-p5"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

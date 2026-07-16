@@ -1,0 +1,52 @@
+{
+  "id": "local-llm-ollama-p3",
+  "version": 1,
+  "title": "내 PC에서 코딩 도우미",
+  "summary": "내 PC에서 코딩 도우미 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 프로그래밍 초보야. 아래 [엑셀 함수 / 파이썬 코드]가 무슨 일을 하는지 한 줄씩 주석으로 설명해주고, 오류가 있으면 고쳐줘:\n[코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "엑셀 함수 / 파이썬 코드",
+      "required": true,
+      "example": "엑셀 함수 / 파이썬 코드"
+    },
+    {
+      "name": "input_2",
+      "description": "코드 붙여넣기",
+      "required": true,
+      "example": "코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "스프레드시트",
+    "코딩",
+    "디버깅",
+    "Python",
+    "모니터링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "large-language-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:local-llm-ollama-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

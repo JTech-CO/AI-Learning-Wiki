@@ -1,0 +1,45 @@
+{
+  "id": "p32b-final-check",
+  "version": 1,
+  "title": "연결 후 최종 점검",
+  "summary": "연결 후 최종 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 도메인 [mycafe.com]을 앱에 연결하고 https까지 완료했어. 실제 서비스 공개 전에 도메인·SSL·리다이렉트 관점에서 반드시 확인해야 할 체크리스트를 실행 순서대로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "mycafe.com",
+      "required": true,
+      "example": "mycafe.com"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "검증",
+    "보안",
+    "비즈니스",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "https"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p32b-final-check"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

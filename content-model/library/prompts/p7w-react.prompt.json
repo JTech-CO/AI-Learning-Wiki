@@ -1,0 +1,69 @@
+{
+  "id": "p7w-react",
+  "version": 1,
+  "title": "ReAct — 생각·검색·결론으로 답하게 하기",
+  "summary": "ReAct — 생각·검색·결론으로 답하게 하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음 순서로 답해줘. 1)[생각] 알아야 할 핵심 질문 2)[검색] web에서 '[검색어]' 찾기 3)[결론] 찾은 내용으로 [최종 요청]. 각 단계에 라벨을.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "생각",
+      "required": true,
+      "example": "생각"
+    },
+    {
+      "name": "input_2",
+      "description": "검색",
+      "required": true,
+      "example": "검색"
+    },
+    {
+      "name": "input_3",
+      "description": "검색어",
+      "required": true,
+      "example": "검색어"
+    },
+    {
+      "name": "input_4",
+      "description": "결론",
+      "required": true,
+      "example": "결론"
+    },
+    {
+      "name": "input_5",
+      "description": "최종 요청",
+      "required": true,
+      "example": "최종 요청"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "검색",
+    "프롬프트 설계",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7w-react"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

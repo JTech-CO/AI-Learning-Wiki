@@ -1,0 +1,57 @@
+{
+  "id": "readable-plain-language",
+  "version": 1,
+  "title": "쉬운 한국어로 문서 다시 쓰기",
+  "summary": "쉬운 한국어로 문서 다시 쓰기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문서를 의미와 법적·기술적 조건은 유지하면서 쉬운 한국어로 다시 써줘. 한 문장에는 한 가지 정보만 두고, 어려운 용어는 처음 나올 때 짧게 설명해. 제목과 목록을 사용하고 원문에 없는 약속은 추가하지 마. 대상 독자: [독자] 원문: [문서]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "독자",
+      "required": true,
+      "example": "독자"
+    },
+    {
+      "name": "input_2",
+      "description": "문서",
+      "required": true,
+      "example": "문서"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "법률·의료·계약 문서는 쉬운 표현으로 바꾼 뒤 담당 전문가가 의미 보존 여부를 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "대상 독자: 처음 서비스를 이용하는 고령 사용자. 원문: 계정 복구 정책 안내문.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "접근성",
+    "글쓰기",
+    "문서 분석",
+    "번역"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "image-captioning"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

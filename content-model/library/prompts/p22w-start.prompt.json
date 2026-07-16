@@ -1,0 +1,65 @@
+{
+  "id": "p22w-start",
+  "version": 1,
+  "title": "데이터 인터뷰 시작(맥락+첫 질문)",
+  "summary": "데이터 인터뷰 시작(맥락+첫 질문) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음은 [데이터 설명: 우리 쇼핑몰 상반기 상품별 월매출표]야. 각 열의 의미는 [매출은 만원 단위, 반품수는 건수]야. [표 붙여넣기] 이 표에서 [매출]에 가장 큰 영향을 준 상위 3개 요인을 숫자 근거와 함께. 각 요인이 전체에서 차지하는 비중(%)도. 추측하지 말고 표에 있는 값만 근거로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "데이터 설명: 우리 쇼핑몰 상반기 상품별 월매출표",
+      "required": true,
+      "example": "데이터 설명: 우리 쇼핑몰 상반기 상품별 월매출표"
+    },
+    {
+      "name": "input_2",
+      "description": "매출은 만원 단위, 반품수는 건수",
+      "required": true,
+      "example": "매출은 만원 단위, 반품수는 건수"
+    },
+    {
+      "name": "input_3",
+      "description": "표 붙여넣기",
+      "required": true,
+      "example": "표 붙여넣기"
+    },
+    {
+      "name": "input_4",
+      "description": "매출",
+      "required": true,
+      "example": "매출"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "데이터 분석",
+    "스프레드시트",
+    "검증",
+    "출처·인용",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p22w-start"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

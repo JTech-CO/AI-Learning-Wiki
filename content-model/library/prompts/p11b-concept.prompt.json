@@ -1,0 +1,40 @@
+{
+  "id": "p11b-concept",
+  "version": 1,
+  "title": "개념 확인 질문",
+  "summary": "개념 확인 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "querySelector, addEventListener, .value, .textContent 이 네 가지의 차이와 각각 언제 쓰는지 초등학생도 이해할 비유로 설명해줘. 각각 짧은 예시 코드도 하나씩 줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "교육",
+    "코딩",
+    "프롬프트 설계",
+    "콘텐츠",
+    "검증",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11b-concept"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

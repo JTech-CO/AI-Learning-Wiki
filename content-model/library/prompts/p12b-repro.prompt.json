@@ -1,0 +1,52 @@
+{
+  "id": "p12b-repro",
+  "version": 1,
+  "title": "DevTools로 문제 재현·기록하는 법 배우기",
+  "summary": "DevTools로 문제 재현·기록하는 법 배우기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "웹사이트 [사이트/기능]에서 [버그 증상]이 가끔 발생합니다. 브라우저 개발자도구(Console, Network, Elements)를 이용해 이 문제를 재현하고 근거를 수집하는 단계별 체크리스트를 만들어줘. 각 단계에서 어떤 탭을 보고 무엇을 캡처/복사해야 하는지 함께 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사이트/기능",
+      "required": true,
+      "example": "사이트/기능"
+    },
+    {
+      "name": "input_2",
+      "description": "버그 증상",
+      "required": true,
+      "example": "버그 증상"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "디버깅",
+    "API",
+    "출처·인용",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12b-repro"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

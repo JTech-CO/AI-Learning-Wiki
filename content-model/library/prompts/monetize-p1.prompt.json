@@ -1,0 +1,71 @@
+{
+  "id": "monetize-p1",
+  "version": 1,
+  "title": "상품 내용(템플릿 모음) 생성",
+  "summary": "상품 내용(템플릿 모음) 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 [비즈니스 이메일] 전문 카피라이터야. 초보 직장인이 '복사해서 빈칸만 채우면 바로 보낼 수 있는' [상황별 비즈니스 이메일] 템플릿 30종을 만들어줘.\n\n조건:\n1) 각 템플릿은 ①번호와 제목 ②어떤 상황에 쓰는지 한 줄 설명 ③복붙용 본문 — 이렇게 3부분으로.\n2) 본문 안에 [고객명],[회사명],[날짜]처럼 바꿔 쓸 빈칸을 대괄호로 넣어줘.\n3) 사과·요청·거절·독촉·감사·일정조율·소개 등 자주 쓰는 상황을 골고루.\n4) 말투는 정중하지만 딱딱하지 않게.\n표 말고 읽기 좋은 목록 형태로 30개 전부 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "비즈니스 이메일",
+      "required": true,
+      "example": "비즈니스 이메일"
+    },
+    {
+      "name": "input_2",
+      "description": "상황별 비즈니스 이메일",
+      "required": true,
+      "example": "상황별 비즈니스 이메일"
+    },
+    {
+      "name": "input_3",
+      "description": "고객명",
+      "required": true,
+      "example": "고객명"
+    },
+    {
+      "name": "input_4",
+      "description": "회사명",
+      "required": true,
+      "example": "회사명"
+    },
+    {
+      "name": "input_5",
+      "description": "날짜",
+      "required": true,
+      "example": "날짜"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "계획",
+    "교육",
+    "자동화",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:monetize-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

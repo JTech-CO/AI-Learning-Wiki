@@ -1,0 +1,47 @@
+{
+  "id": "ai-investing-research-p1",
+  "version": 1,
+  "title": "기업·산업 쉽게 정리(이해용)",
+  "summary": "기업·산업 쉽게 정리(이해용) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 투자 '판단'이 아니라 '이해'를 위해 조사 중이야. 추천은 하지 마.\n[특정 기업 또는 산업: 예—반도체 파운드리 산업]에 대해:\n1) 이 사업이 돈을 버는 방식을 초보도 알게 3문단으로.\n2) 이 산업의 핵심 용어 5개를 한 줄씩 쉽게.\n3) 이 산업의 대표적 위험 요인 3가지.\n주의: 네가 말하는 숫자나 최신 정보는 부정확할 수 있으니, 내가 직접 확인해야 할 '출처 종류'(예: 기업 공시, 공식 통계)도 함께 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "특정 기업 또는 산업: 예—반도체 파운드리 산업",
+      "required": true,
+      "example": "특정 기업 또는 산업: 예—반도체 파운드리 산업"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "의사결정",
+    "데이터 분석",
+    "검색",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-investing-research-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

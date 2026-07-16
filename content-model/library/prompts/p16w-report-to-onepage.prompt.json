@@ -1,0 +1,59 @@
+{
+  "id": "p16w-report-to-onepage",
+  "version": 1,
+  "title": "보고서 → 한 장 요약 변환",
+  "summary": "보고서 → 한 장 요약 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 [보고서 종류] 보고서 전문이야. 이걸 경영진용 한 페이지 요약으로 압축해줘. 구조는 반드시: (1)결론 한 문장 — 무엇을 결정/실행하자는 액션 (2)핵심 3가지 — 각 한 줄에 근거 숫자 하나씩 (3)근거 — 데이터 출처와 기간. 내가 생각하는 결론은 [내 결론]이야. 원문에 없는 숫자는 절대 지어내지 말고, 수식어는 빼고 짧은 문장으로. 30초에 읽히게. [보고서 전문 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "보고서 종류",
+      "required": true,
+      "example": "보고서 종류"
+    },
+    {
+      "name": "input_2",
+      "description": "내 결론",
+      "required": true,
+      "example": "내 결론"
+    },
+    {
+      "name": "input_3",
+      "description": "보고서 전문 붙여넣기",
+      "required": true,
+      "example": "보고서 전문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "문서 분석",
+    "스프레드시트",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16w-report-to-onepage"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "subscription-retention-churn-p2",
+  "version": 1,
+  "title": "해지 사유 브레인스토밍 + 원인 분류",
+  "summary": "해지 사유 브레인스토밍 + 원인 분류 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 서비스는 [매일영어, 월 9900원 영어 학습 앱, 주 타깃은 직장인]이야. 사용자가 구독을 해지할 법한 현실적인 이유 8개를 뽑고, 각각을 '가치 부족 / 습관 미형성 / 가격 / 경쟁사 이동 / 일시적 사정' 5개 버킷으로 분류해줘. 그리고 가장 큰 버킷을 공략할 리텐션 전술 3개를 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "매일영어, 월 9900원 영어 학습 앱, 주 타깃은 직장인",
+      "required": true,
+      "example": "매일영어, 월 9900원 영어 학습 앱, 주 타깃은 직장인"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "아이디어",
+    "교육",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:subscription-retention-churn-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

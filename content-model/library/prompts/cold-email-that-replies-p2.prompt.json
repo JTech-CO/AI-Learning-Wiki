@@ -1,0 +1,43 @@
+{
+  "id": "cold-email-that-replies-p2",
+  "version": 1,
+  "title": "열고 싶은 제목 5개 도출",
+  "summary": "열고 싶은 제목 5개 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 콜드 이메일 본문을 읽고, 열어보고 싶은 제목 5개를 만들어줘. 규칙: 40자 이내, 가능하면 소문자, 상대 회사명이나 트리거를 포함, 광고·과장·이모지 금지, 사람이 직접 보낸 것처럼. 각 제목 옆에 '왜 열고 싶은지' 한 줄 이유도 붙여줘.\n본문: [2단계에서 쓴 메일 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "2단계에서 쓴 메일 붙여넣기",
+      "required": true,
+      "example": "2단계에서 쓴 메일 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "마케팅"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cold-email-that-replies-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

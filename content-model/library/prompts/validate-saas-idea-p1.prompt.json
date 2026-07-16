@@ -1,0 +1,52 @@
+{
+  "id": "validate-saas-idea-p1",
+  "version": 1,
+  "title": "문제 한 문장 다듬기",
+  "summary": "문제 한 문장 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 SaaS 아이디어를 검증 중이야. 아래 문제를 '누가 / 언제 / 무엇 때문에 괴롭다' 형식의 날카로운 한 문장으로 다듬어줘. 해결책은 빼고 문제만. 그리고 이게 '진통제(당장 돈 주고 없애고 싶은 고통)'인지 '비타민(있으면 좋은 것)'인지 근거와 함께 판정해줘.\n\n내 문제: [여기에 대충 적기]\n타겟 고객: [누구]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 대충 적기",
+      "required": true,
+      "example": "여기에 대충 적기"
+    },
+    {
+      "name": "input_2",
+      "description": "누구",
+      "required": true,
+      "example": "누구"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "검증",
+    "출처·인용",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:validate-saas-idea-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

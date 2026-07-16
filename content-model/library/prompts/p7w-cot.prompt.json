@@ -1,0 +1,42 @@
+{
+  "id": "p7w-cot",
+  "version": 1,
+  "title": "chain-of-thought — 단계별로 풀게 하기",
+  "summary": "chain-of-thought — 단계별로 풀게 하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[질문/문제] 천천히 단계별로 풀이 과정을 보여주고, 마지막 줄에 '답:'으로 결론만 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문/문제",
+      "required": true,
+      "example": "질문/문제"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7w-cot"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

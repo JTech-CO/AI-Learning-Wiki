@@ -1,0 +1,53 @@
+{
+  "id": "data-research-products-p2",
+  "version": 1,
+  "title": "리서치 요약 (출처 보존)",
+  "summary": "리서치 요약 (출처 보존) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 자료들을 [대상]을 위한 짧은 리서치 요약으로 정리해줘.\n- 자료/링크: [...]\n조건:\n1) 핵심 결론 3~5개를 불릿으로, 각 결론 옆에 '어느 자료에서 나왔는지' 표시.\n2) 자료 간 상충하는 내용이 있으면 '상충' 으로 따로 표시(한쪽으로 단정 금지).\n3) 원문에 없는 수치·주장은 절대 추가하지 말 것. 모르면 '자료에 없음'.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대상",
+      "required": true,
+      "example": "대상"
+    },
+    {
+      "name": "input_2",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "데이터 분석",
+    "검색",
+    "구조화 출력",
+    "영업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:data-research-products-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

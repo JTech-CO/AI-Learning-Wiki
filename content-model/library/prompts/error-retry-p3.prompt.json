@@ -1,0 +1,47 @@
+{
+  "id": "error-retry-p3",
+  "version": 1,
+  "title": "고장 리허설 시나리오 짜기",
+  "summary": "고장 리허설 시나리오 짜기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 자동화 스크립트가 진짜 견고한지 확인하고 싶어. 아래 코드를 보고, 일부러 실패를 일으켜 검증할 테스트 시나리오 5개를 만들어줘(예: 네트워크 끊김, 존재하지 않는 URL, 서버 500 응답, 타임아웃, 잘못된 응답 형식). 각 시나리오마다 '어떻게 재현하는지'와 '견고하다면 어떤 로그/동작이 나와야 하는지'를 표로 정리해줘.\\n\\n[여기에 내 코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여기에 내 코드 붙여넣기",
+      "required": true,
+      "example": "여기에 내 코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "테스트",
+    "자동화",
+    "검증",
+    "모니터링"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:error-retry-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

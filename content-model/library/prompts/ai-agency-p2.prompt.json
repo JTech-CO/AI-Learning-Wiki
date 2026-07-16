@@ -1,0 +1,44 @@
+{
+  "id": "ai-agency-p2",
+  "version": 1,
+  "title": "위임/책임 구분 + 마진 계산",
+  "summary": "위임/책임 구분 + 마진 계산 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 SOP 단계들을 '외주 위임 가능'과 '내가 직접 책임'으로 나누고, 한 건 마진을 계산해줘.\n- SOP 단계: [...]\n- 고객 단가: [...] / 외주 단가(예상): [...] / 결제·플랫폼 수수료: [...] / 내 검수 예상 시간: [...]\n1) 각 단계 위임/책임 분류 + 이유 1줄.\n2) 마진 = 단가 −(외주+수수료+내 시간 가치). 계산식을 보여줘(내가 검산).\n3) 마진이 얇을 때 '단가 인상/범위 축소/외주 조정' 중 추천 1개.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "재무·금융",
+    "협업",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-agency-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

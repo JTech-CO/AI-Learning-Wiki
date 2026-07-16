@@ -1,0 +1,58 @@
+{
+  "id": "py-libs-venv-p1",
+  "version": 1,
+  "title": "venv 에러 해결 요청",
+  "summary": "venv 에러 해결 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 파이썬 초보야. 아래 터미널 명령을 실행했더니 에러가 났어. 원인을 초보도 이해할 수 있게 한 문장으로 설명하고, 복사해서 그대로 실행할 해결 명령을 OS([맥/윈도우])에 맞게 알려줘.\n\n실행한 명령: [내가 친 명령]\n에러 메시지: [에러 전문 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "맥/윈도우",
+      "required": true,
+      "example": "맥/윈도우"
+    },
+    {
+      "name": "input_2",
+      "description": "내가 친 명령",
+      "required": true,
+      "example": "내가 친 명령"
+    },
+    {
+      "name": "input_3",
+      "description": "에러 전문 붙여넣기",
+      "required": true,
+      "example": "에러 전문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "디버깅",
+    "자동화",
+    "프로젝트 관리",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-libs-venv-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

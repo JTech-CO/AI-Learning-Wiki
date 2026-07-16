@@ -1,0 +1,70 @@
+{
+  "id": "p25-semantic",
+  "version": 1,
+  "title": "의미 단위 청킹 시키기",
+  "summary": "의미 단위 청킹 시키기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문서를 RAG 검색용으로 청킹해줘. 규칙: (1) 문장 경계를 절대 자르지 마. (2) 같은 주제 문장끼리 묶어 의미 단위로 나눠. (3) 각 청크는 [250~400] 토큰 목표. (4) 인접 청크끼리 [1문장] 오버랩. 결과는 [청크번호]로 시작하는 목록으로, 각 청크 끝에 대략 토큰 수를 괄호로. 문서: \"\"\"[문서 전체]\"\"\"",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "250~400",
+      "required": true,
+      "example": "250~400"
+    },
+    {
+      "name": "input_2",
+      "description": "1문장",
+      "required": true,
+      "example": "1문장"
+    },
+    {
+      "name": "input_3",
+      "description": "청크번호",
+      "required": true,
+      "example": "청크번호"
+    },
+    {
+      "name": "input_4",
+      "description": "문서 전체",
+      "required": true,
+      "example": "문서 전체"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "아래 문서를 RAG 검색용으로 청킹해줘. 규칙: (1) 문장 경계를 절대 자르지 마. (2) 같은 주제 문장끼리 묶어 의미 단위로 나눠. (3) 각 청크는 실제 값 토큰 목표. (4) 인접 청크끼리 실제 값 오버랩. 결과는 실제 값로 시작하는 목록으로, 각 청크 끝에 대략 토큰 수를 괄호로. 문서: \"\"\"회의록 원문\"\"\"",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "문서 분석",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "chunking"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25-semantic"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

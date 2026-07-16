@@ -1,0 +1,50 @@
+{
+  "id": "p9b-add",
+  "version": 1,
+  "title": "입력칸·버튼 하나 더 추가하기",
+  "summary": "입력칸·버튼 하나 더 추가하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 HTML에 '[추가하고 싶은 것: 전화번호 입력칸]'을 하나 더 넣어 줘. 기존 코드는 그대로 두고 추가되는 줄만 어디에 넣으면 되는지 위치와 함께 알려줘. [코드 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "추가하고 싶은 것: 전화번호 입력칸",
+      "required": true,
+      "example": "추가하고 싶은 것: 전화번호 입력칸"
+    },
+    {
+      "name": "input_2",
+      "description": "코드 붙여넣기",
+      "required": true,
+      "example": "코드 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9b-add"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

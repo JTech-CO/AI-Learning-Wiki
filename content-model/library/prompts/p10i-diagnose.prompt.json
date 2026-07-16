@@ -1,0 +1,43 @@
+{
+  "id": "p10i-diagnose",
+  "version": 1,
+  "title": "모호한 프롬프트 자가진단",
+  "summary": "모호한 프롬프트 자가진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음은 내가 AI에게 쓴 요청이야: \"[내 프롬프트]\". 이 요청이 대상·목적·분량·형식·말투 중 무엇이 빠졌는지 지적하고, 빠진 걸 채운 개선판 프롬프트를 하나 만들어줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 프롬프트",
+      "required": true,
+      "example": "내 프롬프트"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p10i-diagnose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

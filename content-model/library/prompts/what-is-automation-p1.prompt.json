@@ -1,0 +1,50 @@
+{
+  "id": "what-is-automation-p1",
+  "version": 1,
+  "title": "자동화 가능성 진단",
+  "summary": "자동화 가능성 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 이런 반복 작업을 하고 있어: [작업 설명을 구체적으로]. 이걸 프로그램으로 자동화할 수 있는지 판단해줘. 1) 자동화 가능/부분가능/불가능 중 무엇인지, 2) 그 이유(반복성·규칙성 기준), 3) 자동화하려면 어떤 무료 도구가 필요한지, 4) 사람이 계속 판단해야 하는 부분은 무엇인지 순서대로 알려줘. 나는 코딩을 [거의 모른다/조금 안다].",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업 설명을 구체적으로",
+      "required": true,
+      "example": "작업 설명을 구체적으로"
+    },
+    {
+      "name": "input_2",
+      "description": "거의 모른다/조금 안다",
+      "required": true,
+      "example": "거의 모른다/조금 안다"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "자동화",
+    "모니터링"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:what-is-automation-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

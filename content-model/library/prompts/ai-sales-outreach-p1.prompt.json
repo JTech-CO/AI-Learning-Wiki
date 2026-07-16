@@ -1,0 +1,47 @@
+{
+  "id": "ai-sales-outreach-p1",
+  "version": 1,
+  "title": "잠재 고객 리스트 생성 도움",
+  "summary": "잠재 고객 리스트 생성 도움 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 오퍼에 맞는 잠재 고객을 어디서 어떻게 찾을지 알려줘.\n- 오퍼: [...]\n- 대상: [...]\n조건:\n1) 후보를 찾을 수 있는 '장소' 5곳(SNS·지도·커뮤니티·디렉터리 등)을 구체적 검색어 예시와 함께.\n2) 각 후보를 평가할 '적합도 체크 3가지'.\n3) 개인화에 쓸 '관찰 포인트'(무엇을 메모하면 좋은지) 5가지.\n표 없이 목록으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "번역",
+    "조사",
+    "검색",
+    "마케팅",
+    "영업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-sales-outreach-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

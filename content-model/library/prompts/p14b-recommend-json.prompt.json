@@ -1,0 +1,63 @@
+{
+  "id": "p14b-recommend-json",
+  "version": 1,
+  "title": "추천 기능용 프롬프트",
+  "summary": "추천 기능용 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 [도메인, 예: 도서] 추천 엔진이다. 사용자 취향 입력을 보고 후보 목록 중에서만 추천한다. 반드시 이 JSON만 출력한다: {\"recommend\":[{\"item\":\"이름\",\"why\":\"추천 이유 한 줄\"}]}. 최대 3개, 후보 목록에 없는 항목은 절대 추천하지 마라. 사용자 취향: [취향 설명] 후보 목록: [항목들 나열]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "도메인, 예: 도서",
+      "required": true,
+      "example": "도메인, 예: 도서"
+    },
+    {
+      "name": "input_2",
+      "description": "{\"item\":\"이름\",\"why\":\"추천 이유 한 줄\"}",
+      "required": true,
+      "example": "{\"item\":\"이름\",\"why\":\"추천 이유 한 줄\"}"
+    },
+    {
+      "name": "input_3",
+      "description": "취향 설명",
+      "required": true,
+      "example": "취향 설명"
+    },
+    {
+      "name": "input_4",
+      "description": "항목들 나열",
+      "required": true,
+      "example": "항목들 나열"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "프롬프트 설계",
+    "구조화 출력",
+    "보안"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14b-recommend-json"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

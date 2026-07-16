@@ -1,0 +1,64 @@
+{
+  "id": "p17i-fixone",
+  "version": 1,
+  "title": "2 한 요소만 수정한 버전 요청",
+  "summary": "2 한 요소만 수정한 버전 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 프롬프트에서 [고칠 요소: 예-맥락] 부분만 보강하고 나머지 문장은 절대 바꾸지 마. 무엇을 어떻게 바꿨는지 수정 전/후를 굵게 표시해 보여준 다음, 수정된 프롬프트 전체를 코드블록으로 줘.\n[원래 프롬프트] \"\"\"[붙여넣기]\"\"\"\n보강 기준: [예: 독자는 초등 4학년, 용어 모름]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고칠 요소: 예-맥락",
+      "required": true,
+      "example": "고칠 요소: 예-맥락"
+    },
+    {
+      "name": "input_2",
+      "description": "원래 프롬프트",
+      "required": true,
+      "example": "원래 프롬프트"
+    },
+    {
+      "name": "input_3",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    },
+    {
+      "name": "input_4",
+      "description": "예: 독자는 초등 4학년, 용어 모름",
+      "required": true,
+      "example": "독자는 초등 4학년, 용어 모름"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "코딩",
+    "디버깅",
+    "프롬프트 설계",
+    "모델 학습"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17i-fixone"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

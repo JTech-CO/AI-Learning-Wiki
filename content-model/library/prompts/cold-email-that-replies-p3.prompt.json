@@ -1,0 +1,67 @@
+{
+  "id": "cold-email-that-replies-p3",
+  "version": 1,
+  "title": "20명분 개인화 대량 확장",
+  "summary": "20명분 개인화 대량 확장 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 '기준 메일'의 구조·말투·요청은 그대로 두고, 표의 각 사람에 맞게 첫 문장(트리거 부분)만 자연스럽게 바꿔서 사람 수만큼 완성본을 만들어줘. 트리거는 반드시 표에 적힌 사실만 사용하고 지어내지 마. 결과는 사람별로 [이름] / [제목] / [본문] 형식으로.\n기준 메일: [내 완성 메일]\n표(| 이름 | 회사 | 트리거 |):\n[여기에 20행 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "이름",
+      "required": true,
+      "example": "이름"
+    },
+    {
+      "name": "input_2",
+      "description": "제목",
+      "required": true,
+      "example": "제목"
+    },
+    {
+      "name": "input_3",
+      "description": "본문",
+      "required": true,
+      "example": "본문"
+    },
+    {
+      "name": "input_4",
+      "description": "내 완성 메일",
+      "required": true,
+      "example": "내 완성 메일"
+    },
+    {
+      "name": "input_5",
+      "description": "여기에 20행 붙여넣기",
+      "required": true,
+      "example": "여기에 20행 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "http-request"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cold-email-that-replies-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

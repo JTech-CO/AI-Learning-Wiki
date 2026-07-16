@@ -1,0 +1,57 @@
+{
+  "id": "p4w-report",
+  "version": 1,
+  "title": "보고용 톤+금지사항",
+  "summary": "보고용 톤+금지사항 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "[주제]를 [대상: 예 임원]에게 보고하는 형식으로.\n- 결론 먼저 1문장, 근거 3불릿.\n- 전체 [120]자 이내, 존댓말.\n- 인사말·서론 생략, 숫자는 **굵게**.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_2",
+      "description": "대상: 예 임원",
+      "required": true,
+      "example": "대상: 예 임원"
+    },
+    {
+      "name": "input_3",
+      "description": "120",
+      "required": true,
+      "example": "120"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "구조화 출력",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "structured-output"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p4w-report"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

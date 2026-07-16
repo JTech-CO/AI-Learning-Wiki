@@ -1,0 +1,47 @@
+{
+  "id": "p44-narrow",
+  "version": 1,
+  "title": "문제 좁히기 — 작은 아이디어 10개 받기",
+  "summary": "문제 좁히기 — 작은 아이디어 10개 받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 7일 안에 화면 하나짜리 작은 웹앱을 만들어 출시하고 싶어. 내 주변 사람들의 사소한 불편을 웹페이지 하나로 풀 수 있는 아이디어 10개를 예시로. 각각 '누가-무엇이불편-무엇을만든다' 한 문장으로. 너무 크거나 로그인·결제가 필요한 건 빼줘. 내 관심사는 [관심사]야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "관심사",
+      "required": true,
+      "example": "관심사"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "아이디어",
+    "프롬프트 설계",
+    "고객 지원",
+    "웹 개발",
+    "배포"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p44-narrow"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

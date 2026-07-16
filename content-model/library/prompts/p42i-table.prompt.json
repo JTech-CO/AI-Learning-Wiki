@@ -1,0 +1,55 @@
+{
+  "id": "p42i-table",
+  "version": 1,
+  "title": "무료 유지 vs 유료 전환 판단표 생성",
+  "summary": "무료 유지 vs 유료 전환 판단표 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 AI 무료 버전을 쓰는 [직업/상황]이야. '무료 유지'와 '유료 전환'을 결정하도록 표를 만들어줘. 행은 (1)하루 평균 사용횟수 (2)최근 2주 한도 도달 횟수 (3)속도 답답함 (4)무료 답변 품질 부족 체감 (5)월 [금액]원 부담 정도. 각 행을 무료쪽/유료쪽 점수로 채울 수 있게 빈칸으로 주고, 합산해서 어느 쪽인지 판단하는 방법도 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "직업/상황",
+      "required": true,
+      "example": "직업/상황"
+    },
+    {
+      "name": "input_2",
+      "description": "금액",
+      "required": true,
+      "example": "금액"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "나는 AI 무료 버전을 쓰는 실제 값이야. '무료 유지'와 '유료 전환'을 결정하도록 표를 만들어줘. 행은 (1)하루 평균 사용횟수 (2)최근 2주 한도 도달 횟수 (3)속도 답답함 (4)무료 답변 품질 부족 체감 (5)월 실제 값원 부담 정도. 각 행을 무료쪽/유료쪽 점수로 채울 수 있게 빈칸으로 주고, 합산해서 어느 쪽인지 판단하는 방법도 알려줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "데이터 분석"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42i-table"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

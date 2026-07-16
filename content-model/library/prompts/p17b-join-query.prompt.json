@@ -1,0 +1,58 @@
+{
+  "id": "p17b-join-query",
+  "version": 1,
+  "title": "두 테이블 JOIN 쿼리 작성",
+  "summary": "두 테이블 JOIN 쿼리 작성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 SQL 초보야. 아래 두 테이블을 [공통 키: __ = __]로 연결해서 [보고 싶은 결과: 고객 이름별 주문 목록]를 뽑는 SQLite 쿼리를 써줘. INNER JOIN과 LEFT JOIN 두 버전을 각각 주고, 결과가 어떻게 달라지는지 한 줄로 설명해줘.\n테이블1 스키마: [CREATE TABLE]\n테이블2 스키마: [CREATE TABLE]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "공통 키: __ = __",
+      "required": true,
+      "example": "공통 키: __ = __"
+    },
+    {
+      "name": "input_2",
+      "description": "보고 싶은 결과: 고객 이름별 주문 목록",
+      "required": true,
+      "example": "보고 싶은 결과: 고객 이름별 주문 목록"
+    },
+    {
+      "name": "input_3",
+      "description": "CREATE TABLE",
+      "required": true,
+      "example": "CREATE TABLE"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "데이터베이스",
+    "구조화 출력",
+    "SQL",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17b-join-query"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

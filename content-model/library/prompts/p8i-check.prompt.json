@@ -1,0 +1,45 @@
+{
+  "id": "p8i-check",
+  "version": 1,
+  "title": "내 프롬프트 4요소 점검받기",
+  "summary": "내 프롬프트 4요소 점검받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "다음은 내가 쓴 프롬프트야: \"[내 프롬프트 붙여넣기]\". 이걸 지시·맥락·예시·출력형식 4요소로 나눠서 표로 보여주고, 어떤 요소가 비어 있는지 짚은 다음, 4요소를 모두 갖춘 개선본으로 다시 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 프롬프트 붙여넣기",
+      "required": true,
+      "example": "내 프롬프트 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p8i-check"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

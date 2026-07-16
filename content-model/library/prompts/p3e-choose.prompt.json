@@ -1,0 +1,47 @@
+{
+  "id": "p3e-choose",
+  "version": 1,
+  "title": "자료구조 선택 가이드",
+  "summary": "자료구조 선택 가이드 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [사용자 이름과 점수를 저장]하려고 해. 리스트·딕셔너리·튜플·집합 중 무엇을 써야 할지 이유와 함께 추천하고, 각각으로 만든 예시 코드를 짧게. 파이썬 초보가 이해할 수 있게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사용자 이름과 점수를 저장",
+      "required": true,
+      "example": "사용자 이름과 점수를 저장"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "API",
+    "프롬프트 설계",
+    "구조화 출력",
+    "Python"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p3e-choose"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

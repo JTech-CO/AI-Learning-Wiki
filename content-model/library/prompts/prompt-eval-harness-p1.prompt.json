@@ -1,0 +1,95 @@
+{
+  "id": "prompt-eval-harness-p1",
+  "version": 1,
+  "title": "LLM 심판 채점 프롬프트",
+  "summary": "LLM 심판 채점 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "evaluation-rubric",
+  "difficulty": "intermediate",
+  "template": "너는 엄격한 채점관이다. 아래 [평가 기준]에 따라 모델의 답을 0~100점으로 채점하라.\n\n[평가 기준]\n1. [기준1]\n2. [기준2]\n3. [기준3]\n\n[입력]\n{{input}}\n\n[기대 포인트]\n{{expected}}\n\n[모델의 답]\n{{model_output}}\n\n다음 JSON만 출력하라. 점수는 감점 항목을 근거로 계산하고, 추측/환각이 있으면 즉시 크게 감점하라.\n{\"score\": 0-100 정수, \"passed\": true/false, \"reasons\": [\"항목 -점수\"]}",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "평가 기준",
+      "required": true,
+      "example": "평가 기준"
+    },
+    {
+      "name": "input_2",
+      "description": "기준1",
+      "required": true,
+      "example": "기준1"
+    },
+    {
+      "name": "input_3",
+      "description": "기준2",
+      "required": true,
+      "example": "기준2"
+    },
+    {
+      "name": "input_4",
+      "description": "기준3",
+      "required": true,
+      "example": "기준3"
+    },
+    {
+      "name": "input_5",
+      "description": "입력",
+      "required": true,
+      "example": "입력"
+    },
+    {
+      "name": "input_6",
+      "description": "기대 포인트",
+      "required": true,
+      "example": "기대 포인트"
+    },
+    {
+      "name": "input_7",
+      "description": "모델의 답",
+      "required": true,
+      "example": "모델의 답"
+    },
+    {
+      "name": "input_8",
+      "description": "\"항목 -점수\"",
+      "required": true,
+      "example": "\"항목 -점수\""
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 엄격한 채점관이다. 아래 실제 값에 따라 모델의 답을 0~100점으로 채점하라.\n\n실제 값\n1. 실제 값\n2. 실제 값\n3. 실제 값\n\n회의록 원문\n{{input}}\n\n실제 값\n{{expected}}\n\n실제 값\n{{model_output}}\n\n다음 JSON만 출력하라. 점수는 감점 항목을 근거로 계산하고, 추측/환각이 있으면 즉시 크게 감점하라.\n{\"score\": 0-100 정수, \"passed\": true/false, \"reasons\": 실제 값}",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "테스트",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "구조화 출력",
+    "평가",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:prompt-eval-harness-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

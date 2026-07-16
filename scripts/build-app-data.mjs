@@ -15,4 +15,4 @@ await Promise.all([
   writeFile(path.join(OUT, 'snippets.json'), `${JSON.stringify({ generatedAt, policyVersion: policy.version, counts, snippets }, null, 2)}\n`, 'utf8'),
 ]);
 
-console.log(`prompt library: ${counts.sourcePrompts} source - ${counts.duplicateMerges} merged - ${counts.snippets} snippets + ${counts.additions} additions = ${counts.prompts} prompts`);
+console.log(`prompt library: ${counts.canonicalPrompts} canonical prompts and ${counts.canonicalArtifacts} canonical artifacts generated without legacy modules`);

@@ -1,0 +1,53 @@
+{
+  "id": "client-intake-scoping-p2",
+  "version": 1,
+  "title": "인테이크 질문 리스트 생성",
+  "summary": "인테이크 질문 리스트 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [직종: 예-웹디자인 프리랜서]야. [클라이언트 업종: 예-동네 카페] 사장님과 첫 상담을 앞두고 있어. 진짜 니즈·예산·기한·의사결정권자·범위를 파악하기 위한 인테이크 질문 8개를 만들어줘. 각 질문 옆에 '이 질문으로 무엇을 알아내려는지' 의도도 한 줄씩 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "직종: 예-웹디자인 프리랜서",
+      "required": true,
+      "example": "직종: 예-웹디자인 프리랜서"
+    },
+    {
+      "name": "input_2",
+      "description": "클라이언트 업종: 예-동네 카페",
+      "required": true,
+      "example": "클라이언트 업종: 예-동네 카페"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "문서 분석",
+    "재무·금융",
+    "고객 지원",
+    "웹 개발",
+    "법무"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:client-intake-scoping-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

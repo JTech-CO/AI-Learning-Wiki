@@ -1,0 +1,52 @@
+{
+  "id": "diversify-income-streams-p3",
+  "version": 1,
+  "title": "선정 수익원 90일 실행 마일스톤",
+  "summary": "선정 수익원 90일 실행 마일스톤 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 새 수익원으로 [선정한 수익원]을 시작하려 해. 목표는 6개월 뒤 월 [금액]이야. 이걸 30일/60일/90일 3구간으로 나눠 각 구간마다 '측정 가능한 결과물'과 '핵심 할 일 3가지'를 표로 만들어줘. 현실적으로 첫 수익이 언제 날지도 표시해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "선정한 수익원",
+      "required": true,
+      "example": "선정한 수익원"
+    },
+    {
+      "name": "input_2",
+      "description": "금액",
+      "required": true,
+      "example": "금액"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "재무·금융",
+    "생산성",
+    "안전",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:diversify-income-streams-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

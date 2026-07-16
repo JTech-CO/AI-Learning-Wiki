@@ -1,0 +1,59 @@
+{
+  "id": "computer-use-p1",
+  "version": 1,
+  "title": "정보 찾아 한 줄 요약",
+  "summary": "정보 찾아 한 줄 요약 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "[사이트 주소]에 접속해. [찾을 항목]을 검색해서 찾고, 결과를 '[원하는 형식, 예: 항목 = 값]' 형태로 한 줄로만 알려줘. 광고와 무관한 내용은 무시해.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사이트 주소",
+      "required": true,
+      "example": "사이트 주소"
+    },
+    {
+      "name": "input_2",
+      "description": "찾을 항목",
+      "required": true,
+      "example": "찾을 항목"
+    },
+    {
+      "name": "input_3",
+      "description": "원하는 형식, 예: 항목 = 값",
+      "required": true,
+      "example": "원하는 형식, 예: 항목 = 값"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "코딩",
+    "AI 에이전트",
+    "검색",
+    "마케팅",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:computer-use-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

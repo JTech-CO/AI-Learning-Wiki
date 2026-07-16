@@ -1,0 +1,48 @@
+{
+  "id": "local-llm-ollama-p2",
+  "version": 1,
+  "title": "오프라인 글 다듬기",
+  "summary": "오프라인 글 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문장을 더 정중하고 자연스러운 [한국어/영어]로 고쳐줘. 뜻은 바꾸지 말고, 고친 이유도 한 줄로 알려줘:\n[내 문장 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "한국어/영어",
+      "required": true,
+      "example": "한국어/영어"
+    },
+    {
+      "name": "input_2",
+      "description": "내 문장 붙여넣기",
+      "required": true,
+      "example": "내 문장 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "large-language-model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:local-llm-ollama-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

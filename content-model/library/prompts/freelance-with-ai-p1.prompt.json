@@ -1,0 +1,53 @@
+{
+  "id": "freelance-with-ai-p1",
+  "version": 1,
+  "title": "포트폴리오 샘플 제작",
+  "summary": "포트폴리오 샘플 제작 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [네이버 블로그 글 작성] 프리랜서 서비스를 시작하려 해. 포트폴리오용 샘플을 만들고 싶어.\n가상 의뢰: [동네 카페가 신메뉴 '흑임자 라떼'를 알리는 블로그 글]\n조건: 1) 800자 내외 2) 검색에 걸리게 핵심 키워드 자연스럽게 포함 3) 친근하지만 신뢰가는 톤 4) 마지막에 방문 유도 한 줄.\n완성된 샘플 글 1개를 써줘. (나는 이걸 직접 읽고 다듬어 내 포트폴리오로 쓸 거야.)",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "네이버 블로그 글 작성",
+      "required": true,
+      "example": "네이버 블로그 글 작성"
+    },
+    {
+      "name": "input_2",
+      "description": "동네 카페가 신메뉴 '흑임자 라떼'를 알리는 블로그 글",
+      "required": true,
+      "example": "동네 카페가 신메뉴 '흑임자 라떼'를 알리는 블로그 글"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "번역",
+    "검색",
+    "콘텐츠",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "semantic-search"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:freelance-with-ai-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "portfolio-from-zero-p4",
+  "version": 1,
+  "title": "무료 초기 고객 제안 메시지",
+  "summary": "무료 초기 고객 제안 메시지 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "지인이 운영하는 [가게/업종]에 무료로 [결과물: 예 카드뉴스 3장]을 만들어 주고, 대신 완성 후 짧은 후기 한 줄을 받고 싶어. 부담스럽지 않고 진심이 느껴지는 카톡 제안 메시지를 3가지 톤(정중/친근/간결)으로 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "가게/업종",
+      "required": true,
+      "example": "가게/업종"
+    },
+    {
+      "name": "input_2",
+      "description": "결과물: 예 카드뉴스 3장",
+      "required": true,
+      "example": "결과물: 예 카드뉴스 3장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:portfolio-from-zero-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

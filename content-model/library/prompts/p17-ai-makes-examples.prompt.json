@@ -1,0 +1,58 @@
+{
+  "id": "p17-ai-makes-examples",
+  "version": 1,
+  "title": "예시를 AI에게 만들게 하기",
+  "summary": "예시를 AI에게 만들게 하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [고객문의 한 줄 요약]을 하고 싶어. 내가 원하는 출력 형식은 [이모지1개+반말+한줄]이야. 이 형식을 잘 보여주는 서로 다른 입력→출력 예시 3개를 만들어줘. 예시끼리 형식은 완전히 통일.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "고객문의 한 줄 요약",
+      "required": true,
+      "example": "고객문의 한 줄 요약"
+    },
+    {
+      "name": "input_2",
+      "description": "이모지1개+반말+한줄",
+      "required": true,
+      "example": "이모지1개+반말+한줄"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "나는 신입 직장인을 하고 싶어. 내가 원하는 출력 형식은 실제 값이야. 이 형식을 잘 보여주는 서로 다른 입력→출력 예시 3개를 만들어줘. 예시끼리 형식은 완전히 통일.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "요약",
+    "교육",
+    "프롬프트 설계",
+    "구조화 출력",
+    "고객 지원"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "in-context-learning"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17-ai-makes-examples"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

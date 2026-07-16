@@ -1,0 +1,40 @@
+{
+  "id": "autonomous-loop-p8",
+  "version": 1,
+  "title": "정해진 시각 자동 실행 — 클라우드 Routines(유료)",
+  "summary": "정해진 시각 자동 실행 — 클라우드 Routines(유료) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "advanced",
+  "template": "(실행은 Anthropic 클라우드에서 일어나 컴퓨터를 꺼둬도 돕니다. Pro·Max·Team·Enterprise 유료 플랜만, 무료 불가. 한도는 claude.ai/code/routines에서 확인.)\n방법 A — CLI: 세션에서 슬래시 명령 '/schedule'에 자연어로 적기. 예) /schedule daily PR review at 9am  또는 일회성: /schedule tomorrow at 9am, summarize yesterday merged PRs\n(주의: '/schedule'은 CLI v2.1.81+ & claude.ai 구독 로그인에서만 보입니다. 안 보이면 claude update 후 재시도하거나 방법 B 사용.)\n방법 B — 웹: claude.ai/code/routines 접속 → New routine → 프롬프트·일정 입력 → Create.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "계획",
+    "코딩",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "검증"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "anthropic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:autonomous-loop-p8"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

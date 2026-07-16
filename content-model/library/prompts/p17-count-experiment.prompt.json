@@ -1,0 +1,70 @@
+{
+  "id": "p17-count-experiment",
+  "version": 1,
+  "title": "예시 개수 비교 실험",
+  "summary": "예시 개수 비교 실험 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "같은 입력 [진짜입력]에 대해 아래 예시를 (a)1개만 줬을 때 (b)3개 다 줬을 때 각각 어떻게 답이 달라지는지 두 결과를 나란히. 예시: [예시1] / [예시2] / [예시3]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "진짜입력",
+      "required": true,
+      "example": "진짜입력"
+    },
+    {
+      "name": "input_2",
+      "description": "예시1",
+      "required": true,
+      "example": "시1"
+    },
+    {
+      "name": "input_3",
+      "description": "예시2",
+      "required": true,
+      "example": "시2"
+    },
+    {
+      "name": "input_4",
+      "description": "예시3",
+      "required": true,
+      "example": "시3"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "같은 입력 회의록 원문에 대해 아래 예시를 (a)1개만 줬을 때 (b)3개 다 줬을 때 각각 어떻게 답이 달라지는지 두 결과를 나란히. 예시: 실제 값 / 실제 값 / 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "의사결정",
+    "교육",
+    "테스트",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "in-context-learning"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p17-count-experiment"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

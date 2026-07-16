@@ -1,0 +1,43 @@
+{
+  "id": "p27b-msg",
+  "version": 1,
+  "title": "커밋 메시지 다듬기",
+  "summary": "커밋 메시지 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 Git 초보야. 방금 한 작업은 다음과 같아: [무엇을 바꿨는지 편하게 설명]. 이걸 한 줄짜리 좋은 한국어 커밋 메시지로 만들어줘. 현재형 동사로 시작하고, 50자 이내로, '무엇을'이 명확하게. 후보 3개를 제시해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무엇을 바꿨는지 편하게 설명",
+      "required": true,
+      "example": "무엇을 바꿨는지 편하게 설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27b-msg"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

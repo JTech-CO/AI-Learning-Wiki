@@ -1,0 +1,57 @@
+{
+  "id": "p25i-adjust",
+  "version": 1,
+  "title": "내 상황에 맞게 조정하기",
+  "summary": "내 상황에 맞게 조정하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "방금 만든 로드맵에서 아래 부분이 내 상황과 안 맞아요. 반영해서 다시 짜주세요.\n- 안 맞는 점: [예: 6주차에 일주일 휴가라 학습 불가 / 2주차 분량이 너무 많음]\n- 원하는 조정: [예: 그 주는 복습 주간으로 비우고 전체 일정을 1주 뒤로 / 어려운 주는 2주로 나눔]\n바뀐 부분을 표에서 굵게 표시해 주세요.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 6주차에 일주일 휴가라 학습 불가 / 2주차 분량이 너무 많음",
+      "required": true,
+      "example": "6주차에 일주일 휴가라 학습 불가 / 2주차 분량이 너무 많음"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 그 주는 복습 주간으로 비우고 전체 일정을 1주 뒤로 / 어려운 주는 2주로 나눔",
+      "required": true,
+      "example": "그 주는 복습 주간으로 비우고 전체 일정을 1주 뒤로 / 어려운 주는 2주로 나눔"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "방금 만든 로드맵에서 아래 부분이 내 상황과 안 맞아요. 반영해서 다시 짜주세요.\n- 안 맞는 점: 6주차에 일주일 휴가라 학습 불가\n- 원하는 조정: 그 주는 복습 주간으로 비우고 전체 일정을 1주 뒤로\n바뀐 부분을 표에서 굵게 표시해 주세요.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "계획",
+    "교육",
+    "프롬프트 설계",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "model-training"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p25i-adjust"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

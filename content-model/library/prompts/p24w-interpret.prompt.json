@@ -1,0 +1,47 @@
+{
+  "id": "p24w-interpret",
+  "version": 1,
+  "title": "내 요약표 해석·검증",
+  "summary": "내 요약표 해석·검증 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내가 만든 피벗 요약표야: [표 붙여넣기]. 이 표에서 읽어낼 수 있는 인사이트 3가지와, 배치가 목적에 안 맞아 오해를 부를 수 있는 지점 1가지를 지적해줘. 그리고 '경영진 한 줄 보고' 문장으로 요약해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "표 붙여넣기",
+      "required": true,
+      "example": "표 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "문서 분석",
+    "데이터 분석",
+    "스프레드시트",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p24w-interpret"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "automate-income-pipeline-p2",
+  "version": 1,
+  "title": "후속 메일 문구 생성",
+  "summary": "후속 메일 문구 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 디지털 상품 [상황별 비즈니스 이메일 템플릿 30종 PDF]을 구매한 고객에게 보낼 자동 후속 메일 2종을 써줘.\n1) [구매 직후] 감사 + 사용법 안내 메일 (따뜻하고 신뢰가게, 환불 없이 만족하도록)\n2) [3일 후] 후기 요청 메일 (부담 없이, 후기 남기면 좋은 점 한 줄)\n각 메일은 제목 + 본문. [고객명] 같은 자동 치환 변수를 대괄호로 넣어줘. 과장·스팸 느낌 없이.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상황별 비즈니스 이메일 템플릿 30종 PDF",
+      "required": true,
+      "example": "상황별 비즈니스 이메일 템플릿 30종 PDF"
+    },
+    {
+      "name": "input_2",
+      "description": "구매 직후",
+      "required": true,
+      "example": "구매 직후"
+    },
+    {
+      "name": "input_3",
+      "description": "3일 후",
+      "required": true,
+      "example": "3일 후"
+    },
+    {
+      "name": "input_4",
+      "description": "고객명",
+      "required": true,
+      "example": "고객명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "문서 분석",
+    "코딩",
+    "자동화",
+    "마케팅",
+    "재무·금융"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automate-income-pipeline-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

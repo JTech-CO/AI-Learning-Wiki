@@ -1,0 +1,52 @@
+{
+  "id": "py-libs-venv-p4",
+  "version": 1,
+  "title": "활성화 확인 점검",
+  "summary": "활성화 확인 점검 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 터미널 프롬프트가 지금 이렇게 생겼어: [프롬프트 줄 붙여넣기]. 가상환경이 지금 켜져 있는 상태인지 알려주고, 안 켜져 있다면 켜는 명령을 알려줘. OS는 [맥/윈도우]야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "프롬프트 줄 붙여넣기",
+      "required": true,
+      "example": "프롬프트 줄 붙여넣기"
+    },
+    {
+      "name": "input_2",
+      "description": "맥/윈도우",
+      "required": true,
+      "example": "맥/윈도우"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "자동화",
+    "프롬프트 설계",
+    "검증",
+    "프로젝트 관리",
+    "Python"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:py-libs-venv-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

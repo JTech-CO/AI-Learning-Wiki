@@ -1,0 +1,59 @@
+{
+  "id": "p39w-research-basic",
+  "version": 1,
+  "title": "시장/주제 리서치 의뢰(기본)",
+  "summary": "시장/주제 리서치 의뢰(기본) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "intermediate",
+  "template": "[주제]에 대한 리서치 리포트를 만들어줘.\n- 기간/지역: [한국, 2026년]\n- 출처: 정부·공식 통계·시장조사기관 등 1차 출처 [5]개 이상, 각 수치마다 출처 링크 각주\n- 형식: 핵심 수치는 표로, 표 아래에 요약 3줄\n- 관점: 낙관 시나리오와 비관 시나리오 둘 다\n- 대상 독자: [일반인 / 투자 검토자]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_2",
+      "description": "한국, 2026년",
+      "required": true,
+      "example": "한국, 2026년"
+    },
+    {
+      "name": "input_3",
+      "description": "일반인 / 투자 검토자",
+      "required": true,
+      "example": "일반인 / 투자 검토자"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "의사결정",
+    "문서 분석",
+    "데이터 분석",
+    "AI 에이전트"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p39w-research-basic"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

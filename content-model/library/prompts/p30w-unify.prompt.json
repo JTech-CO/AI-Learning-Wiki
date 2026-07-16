@@ -1,0 +1,57 @@
+{
+  "id": "p30w-unify",
+  "version": 1,
+  "title": "발표 전체 스타일 통일 체크",
+  "summary": "발표 전체 스타일 통일 체크 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래는 내 발표의 각 슬라이드 요약이야. 슬라이드마다 폰트 크기·색·정렬이 제각각인 부분을 찾아 일관성 있게 통일하는 규칙을 표로.\n[슬라이드1]: [요약]\n[슬라이드2]: [요약]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "슬라이드1",
+      "required": true,
+      "example": "슬라이드1"
+    },
+    {
+      "name": "input_2",
+      "description": "요약",
+      "required": true,
+      "example": "요약"
+    },
+    {
+      "name": "input_3",
+      "description": "슬라이드2",
+      "required": true,
+      "example": "슬라이드2"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "프레젠테이션",
+    "시각화",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "alignment"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p30w-unify"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

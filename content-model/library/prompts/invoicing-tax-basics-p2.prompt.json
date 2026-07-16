@@ -1,0 +1,68 @@
+{
+  "id": "invoicing-tax-basics-p2",
+  "version": 1,
+  "title": "인보이스 발송 이메일 본문",
+  "summary": "인보이스 발송 이메일 본문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 인보이스를 첨부해 보낼 정중하고 간결한 한국어 비즈니스 이메일을 제목과 본문으로 써줘. 금액, 입금기한, 입금계좌를 본문에도 한 번 더 명시하고, 마지막에 감사 인사를 넣어줘.\n- 클라이언트: [(주)ABC 김대리님]\n- 작업: [랜딩페이지 디자인]\n- 금액: [800,000원] / 입금기한: [2026-07-17] / 계좌: [국민 000-00-000000 홍길동]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "(주)ABC 김대리님",
+      "required": true,
+      "example": "(주)ABC 김대리님"
+    },
+    {
+      "name": "input_2",
+      "description": "랜딩페이지 디자인",
+      "required": true,
+      "example": "랜딩페이지 디자인"
+    },
+    {
+      "name": "input_3",
+      "description": "800,000원",
+      "required": true,
+      "example": "800,000원"
+    },
+    {
+      "name": "input_4",
+      "description": "2026-07-17",
+      "required": true,
+      "example": "2026-07-17"
+    },
+    {
+      "name": "input_5",
+      "description": "국민 000-00-000000 홍길동",
+      "required": true,
+      "example": "국민 000-00-000000 홍길동"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "재무·금융",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:invoicing-tax-basics-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

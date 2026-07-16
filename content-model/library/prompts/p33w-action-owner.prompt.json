@@ -1,0 +1,70 @@
+{
+  "id": "p33w-action-owner",
+  "version": 1,
+  "title": "회의 노트 → 할 일 담당자 배정",
+  "summary": "회의 노트 → 할 일 담당자 배정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 회의 노트에서 '할 일(액션 아이템)'만 뽑아 표로. 칸: [할 일] / [담당자] / [기한]. 담당자가 안 나오면 '미정'. 노트에 없는 내용은 절대 지어내지 마. 날짜는 오늘([오늘 날짜]) 기준으로 환산.\n[붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "할 일",
+      "required": true,
+      "example": "할 일"
+    },
+    {
+      "name": "input_2",
+      "description": "담당자",
+      "required": true,
+      "example": "담당자"
+    },
+    {
+      "name": "input_3",
+      "description": "기한",
+      "required": true,
+      "example": "기한"
+    },
+    {
+      "name": "input_4",
+      "description": "오늘 날짜",
+      "required": true,
+      "example": "오늘 날짜"
+    },
+    {
+      "name": "input_5",
+      "description": "붙여넣기",
+      "required": true,
+      "example": "붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "구조화 출력",
+    "생산성",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p33w-action-owner"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

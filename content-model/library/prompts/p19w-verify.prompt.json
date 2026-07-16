@@ -1,0 +1,47 @@
+{
+  "id": "p19w-verify",
+  "version": 1,
+  "title": "검산 되묻기(대괄호 교체)",
+  "summary": "검산 되묻기(대괄호 교체) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "방금 결과에서 [강남]의 합계가 맞는지, 원본 표에서 그 행만 다시 더해서 숫자가 같은지 확인해줘. 다르면 어디서 차이가 났는지.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "강남",
+      "required": true,
+      "example": "강남"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "데이터 분석",
+    "스프레드시트",
+    "코딩",
+    "검증",
+    "Python",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19w-verify"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

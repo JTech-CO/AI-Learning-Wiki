@@ -1,0 +1,43 @@
+{
+  "id": "objection-handling-p2",
+  "version": 1,
+  "title": "반론 뒤 진짜 걱정 진단",
+  "summary": "반론 뒤 진짜 걱정 진단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "고객이 [반론 문장]이라고 말했어. 이 말 뒤에 숨은 진짜 걱정 후보를 3개 뽑고, 각각을 확인하기 위해 내가 던질 수 있는 부드러운 질문을 하나씩 붙여줘. 압박하지 않는 톤으로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "반론 문장",
+      "required": true,
+      "example": "반론 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검증"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:objection-handling-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

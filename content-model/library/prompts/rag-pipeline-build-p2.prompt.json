@@ -1,0 +1,53 @@
+{
+  "id": "rag-pipeline-build-p2",
+  "version": 1,
+  "title": "청킹 전략 조언 받기",
+  "summary": "청킹 전략 조언 받기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 문서는 [문서 종류: 예 제품 FAQ / 법률 계약서 / 블로그]이고 평균 길이 [글자수]자야. RAG 검색 정확도를 높이려면 청크 크기와 overlap을 얼마로 잡는 게 좋을지, 문단 기준 vs 고정 길이 중 뭐가 나을지 이유와 함께 추천해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문서 종류: 예 제품 FAQ / 법률 계약서 / 블로그",
+      "required": true,
+      "example": "문서 종류: 예 제품 FAQ / 법률 계약서 / 블로그"
+    },
+    {
+      "name": "input_2",
+      "description": "글자수",
+      "required": true,
+      "example": "글자수"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "코딩",
+    "자동화",
+    "RAG",
+    "검색"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:rag-pipeline-build-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

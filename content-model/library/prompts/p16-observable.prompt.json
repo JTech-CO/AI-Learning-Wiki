@@ -1,0 +1,58 @@
+{
+  "id": "p16-observable",
+  "version": 1,
+  "title": "규칙을 관찰 가능한 행동으로 변환",
+  "summary": "규칙을 관찰 가능한 행동으로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "아래 문장들은 내 챗봇 규칙인데 추상적이야. 각 문장을 모델이 실제로 수행하는지 확인 가능한 구체 행동 지시(예: 문장 수, 순서, 금지 동작)로 다시 써줘. 표로 '원문 → 개선문'.\n- [친절하게 답한다]\n- [전문적으로 설명한다]\n- [안전하게 답한다]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "친절하게 답한다",
+      "required": true,
+      "example": "친절하게 답한다"
+    },
+    {
+      "name": "input_2",
+      "description": "전문적으로 설명한다",
+      "required": true,
+      "example": "전문적으로 설명한다"
+    },
+    {
+      "name": "input_3",
+      "description": "안전하게 답한다",
+      "required": true,
+      "example": "안전하게 답한다"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "프롬프트 설계",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p16-observable"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

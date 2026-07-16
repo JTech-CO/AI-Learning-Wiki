@@ -1,0 +1,47 @@
+{
+  "id": "sum-contract",
+  "version": 1,
+  "title": "계약서·약관 → 주의할 점 도출",
+  "summary": "계약서·약관 → 주의할 점 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 [계약서/약관]에서 내가 손해 볼 수 있거나 주의해야 할 조항만 골라서, 각 항목을 '쉬운 설명 + 왜 주의해야 하는지' 형식으로 알려줘. 5개 이내로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "계약서/약관",
+      "required": true,
+      "example": "계약서/약관"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "프롬프트 설계",
+    "생산성",
+    "안전",
+    "협업"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:sum-contract"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

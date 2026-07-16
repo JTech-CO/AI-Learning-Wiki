@@ -1,0 +1,53 @@
+{
+  "id": "rag-query-rewrite-ab",
+  "version": 1,
+  "title": "질의 재작성 A/B 평가 설계",
+  "summary": "질의 재작성 A/B 평가 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "원본 질의와 재작성 질의 후보를 비교하는 평가표를 만들어줘. 의미 보존, 핵심 개체 보존, 검색 결과 관련성, 정답 근거 도달 여부, 불필요한 범위 확장을 기준으로 채점하고 최종 선택 이유를 적어. 자료: [원본 질의·후보·검색 결과]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "원본 질의·후보·검색 결과",
+      "required": true,
+      "example": "원본 질의·후보·검색 결과"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "같은 검색 색인과 파라미터를 사용해 질의만 바꾼 결과를 비교한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "원본: 해지 언제 가능? 후보 A: 서비스 계약 해지 가능 시점, 후보 B: 환불 정책. 검색 결과와 함께 비교해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "RAG",
+    "검색",
+    "평가",
+    "테스트",
+    "글쓰기",
+    "요약"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "retrieval-evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "wiki-original",
+    "authorship": "editorial",
+    "legacyKey": null
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "p6i-verify",
+  "version": 1,
+  "title": "AI 답 검증 요청",
+  "summary": "AI 답 검증 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 네가 한 답에서 사실로 단정한 부분만 목록으로 뽑아줘. 그리고 각 항목이 '확실한 사실'인지 '추측'인지 표시해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "next-token-prediction"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p6i-verify"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

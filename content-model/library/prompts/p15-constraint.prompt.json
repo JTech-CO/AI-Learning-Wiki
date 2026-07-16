@@ -1,0 +1,56 @@
+{
+  "id": "p15-constraint",
+  "version": 1,
+  "title": "제약 강화로 답 다듬기",
+  "summary": "제약 강화로 답 다듬기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 준 답이 [너무 길어 / 톤이 안 맞아 / 불필요한 내용이 섞여] 있어. 지시·맥락·입력은 그대로 두고 제약만 이렇게 추가할게: [___ 금지, ___자 이내, 톤은 ___]. 이 제약을 반영해 다시 작성해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "너무 길어 / 톤이 안 맞아 / 불필요한 내용이 섞여",
+      "required": true,
+      "example": "너무 길어 / 톤이 안 맞아 / 불필요한 내용이 섞여"
+    },
+    {
+      "name": "input_2",
+      "description": "___ 금지, ___자 이내, 톤은 ___",
+      "required": true,
+      "example": "___ 금지, ___자 이내, 톤은 ___"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "방금 준 답이 정중하고 간결한 말투 있어. 지시·맥락·입력은 그대로 두고 제약만 이렇게 추가할게: 정중하고 간결한 말투. 이 제약을 반영해 다시 작성해줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "테스트",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "llm-internals"
+  ],
+  "relatedWikiSlugs": [
+    "instruction"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p15-constraint"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

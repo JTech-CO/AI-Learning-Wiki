@@ -1,0 +1,40 @@
+{
+  "id": "p14w-number-audit",
+  "version": 1,
+  "title": "숫자 검수용 역질문",
+  "summary": "숫자 검수용 역질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 보고서에서 내가 메모로 직접 준 숫자와, 네가 추가·추정한 숫자를 표로 구분해 보여줘. 두 번째 열에 '출처: 사용자 제공 / AI 추정'.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "프롬프트 설계",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p14w-number-audit"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

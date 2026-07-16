@@ -1,0 +1,50 @@
+{
+  "id": "ai-engineer-prompt-caching-p24-cache-doc",
+  "version": 1,
+  "title": "긴 문서/매뉴얼을 캐시로 묶어 반복 질문",
+  "summary": "긴 문서/매뉴얼을 캐시로 묶어 반복 질문 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Python",
+  "runtime": "Python 3.11 이상",
+  "files": [
+    {
+      "path": "ai-engineer-prompt-caching-p24-cache-doc.py",
+      "content": "긴 문서/매뉴얼을 캐시로 묶어 반복 질문할 때:\n\n```python\nresp = client.messages.create(\n    model=\"claude-opus-4-8\",\n    max_tokens=300,\n    system=[\n        {\"type\": \"text\", \"text\": \"너는 [사내 규정 안내 봇]이야. 아래 문서만 근거로 답하고 문서에 없으면 '문서에 없음'.\"},\n        {\"type\": \"text\", \"text\": \"\"\"[안 바뀌는 긴 문서 전문 — Opus·Haiku4.5는 4,096토큰↑, Sonnet4.6은 2,048토큰↑]\"\"\", \"cache_control\": {\"type\": \"ephemeral\"}},\n    ],\n    messages=[{\"role\": \"user\", \"content\": \"[매번 바뀌는 질문]\"}],\n)\n```",
+      "language": "python"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "문서 분석",
+    "API",
+    "프롬프트 설계",
+    "콘텐츠",
+    "검증",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt-caching"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-engineer-prompt-caching-p24-cache-doc"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

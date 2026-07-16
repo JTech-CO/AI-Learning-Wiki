@@ -1,0 +1,50 @@
+{
+  "id": "p3w-recommend-role",
+  "version": 1,
+  "title": "역할 추천",
+  "summary": "역할 추천 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [내 상황: 예 동네 카페 사장]이고 [원하는 것: 예 단골 늘리기]을 하고 싶어. 이 일을 가장 잘 도와줄 전문가 역할 3개를 제안하고, 각 역할이 어떤 관점으로 답할지 한 줄씩.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 상황: 예 동네 카페 사장",
+      "required": true,
+      "example": "내 상황: 예 동네 카페 사장"
+    },
+    {
+      "name": "input_2",
+      "description": "원하는 것: 예 단골 늘리기",
+      "required": true,
+      "example": "원하는 것: 예 단골 늘리기"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "role-prompting"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p3w-recommend-role"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "p35-basic-kpi",
+  "version": 1,
+  "title": "기본 KPI 분석 요청",
+  "summary": "기본 KPI 분석 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 데이터 분석가야. 첨부한 CSV는 [무슨 데이터: 월별 카테고리별 매출]야. 1)[보고싶은 것: 카테고리별 매출 추이]를 그래프로. 2)전월 대비 [20%] 이상 급변한 항목을 표로. 3)경영진이 5초 안에 읽을 3줄 요약을 숫자 포함해.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "무슨 데이터: 월별 카테고리별 매출",
+      "required": true,
+      "example": "무슨 데이터: 월별 카테고리별 매출"
+    },
+    {
+      "name": "input_2",
+      "description": "보고싶은 것: 카테고리별 매출 추이",
+      "required": true,
+      "example": "보고싶은 것: 카테고리별 매출 추이"
+    },
+    {
+      "name": "input_3",
+      "description": "20%",
+      "required": true,
+      "example": "20%"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "데이터 분석",
+    "스프레드시트",
+    "시각화",
+    "코딩",
+    "검증"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p35-basic-kpi"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

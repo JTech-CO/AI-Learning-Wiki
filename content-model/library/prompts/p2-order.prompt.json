@@ -1,0 +1,75 @@
+{
+  "id": "p2-order",
+  "version": 1,
+  "title": "무엇이든 좋은 답 받는 주문서",
+  "summary": "무엇이든 좋은 답 받는 주문서 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "역할: 너는 [분야] 전문가야. 상황: 나는 [내 상황·수준]. 원하는 것: [구체적 결과물]을 만들어줘. 조건: [형식(표·목록·줄 수)], [말투], [빼야 할 것]. 모르면 추측하지 말고 나에게 되물어봐.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "분야",
+      "required": true,
+      "example": "분야"
+    },
+    {
+      "name": "input_2",
+      "description": "내 상황·수준",
+      "required": true,
+      "example": "내 상황·수준"
+    },
+    {
+      "name": "input_3",
+      "description": "구체적 결과물",
+      "required": true,
+      "example": "구체적 결과물"
+    },
+    {
+      "name": "input_4",
+      "description": "형식(표·목록·줄 수)",
+      "required": true,
+      "example": "형식(표·목록·줄 수)"
+    },
+    {
+      "name": "input_5",
+      "description": "말투",
+      "required": true,
+      "example": "말투"
+    },
+    {
+      "name": "input_6",
+      "description": "빼야 할 것",
+      "required": true,
+      "example": "빼야 할 것"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "문서 분석",
+    "프롬프트 설계",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "model"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p2-order"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

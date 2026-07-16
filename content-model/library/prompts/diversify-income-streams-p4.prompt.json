@@ -1,0 +1,51 @@
+{
+  "id": "diversify-income-streams-p4",
+  "version": 1,
+  "title": "분기 리밸런싱 체크 질문",
+  "summary": "분기 리밸런싱 체크 질문 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 이번 분기 소득 구성은 [항목-금액-비중]이야. 지난 분기 [지난 구성]과 비교해서 (1) 집중도가 개선됐는지, (2) 50%를 넘은 항목이 있는지, (3) 다음 분기에 키우거나 줄여야 할 수익원 1개씩을 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "항목-금액-비중",
+      "required": true,
+      "example": "항목-금액-비중"
+    },
+    {
+      "name": "input_2",
+      "description": "지난 구성",
+      "required": true,
+      "example": "지난 구성"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "재무·금융",
+    "안전",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:diversify-income-streams-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

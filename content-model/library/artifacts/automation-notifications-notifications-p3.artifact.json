@@ -1,0 +1,48 @@
+{
+  "id": "automation-notifications-notifications-p3",
+  "version": 1,
+  "title": "조건부 알림 (성공/실패)",
+  "summary": "조건부 알림 (성공/실패) 작업에 재사용할 수 있는 코드 자료다.",
+  "type": "code",
+  "language": "Text",
+  "runtime": "텍스트 편집기",
+  "files": [
+    {
+      "path": "automation-notifications-notifications-p3.txt",
+      "content": "try:\n    # 여기에 실제 작업 코드\n    [내작업코드]\n    slack(\"✅ [작업이름] 성공적으로 완료!\")\nexcept Exception as e:\n    slack(f\"❌ [작업이름] 실패! 오류: {e}\")",
+      "language": "text"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "이메일",
+    "코딩",
+    "디버깅",
+    "자동화"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-notifications-notifications-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

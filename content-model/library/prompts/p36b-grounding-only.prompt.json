@@ -1,0 +1,47 @@
+{
+  "id": "p36b-grounding-only",
+  "version": 1,
+  "title": "근거-only 규칙 (환각 차단, 모든 질문 앞에)",
+  "summary": "근거-only 규칙 (환각 차단, 모든 질문 앞에) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 규칙을 반드시 지켜 답해라. 1) 업로드된 문서에 근거가 있는 내용만 답한다. 2) 근거가 없으면 추측하지 말고 '제공된 문서에는 해당 내용이 없습니다'라고만 답한다. 3) 답의 각 핵심 문장 끝에 출처(문서명·페이지 또는 인용 번호)를 표시한다. 질문: [질문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "문서 분석",
+    "RAG",
+    "검색",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "rag"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p36b-grounding-only"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "ai-agent-workflow-p1",
+  "version": 1,
+  "title": "이메일 분류+초안 에이전트 시스템 프롬프트",
+  "summary": "이메일 분류+초안 에이전트 시스템 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "advanced",
+  "template": "당신은 고객지원 이메일 분류 어시스턴트입니다. 아래 이메일을 읽고 반드시 순수 JSON만 출력하세요. 설명·인사·코드블록 표시 없이 JSON 객체 하나만 출력합니다.\n\n규칙:\n- category 는 다음 중 하나: [환불, 기술문의, 제휴, 스팸, 기타]. 애매하면 기타.\n- urgency 는 [높음, 보통, 낮음] 중 하나.\n- draft 는 스팸이면 빈 문자열, 아니면 3~5문장의 정중한 한국어 답장 초안. 확실치 않은 사실은 지어내지 말고 '담당자가 확인 후 안내드리겠습니다'로 표현.\n\n출력 형식: {\"category\":\"\",\"urgency\":\"\",\"draft\":\"\"}\n\n이메일 제목: [제목]\n이메일 본문: [본문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "환불, 기술문의, 제휴, 스팸, 기타",
+      "required": true,
+      "example": "환불, 기술문의, 제휴, 스팸, 기타"
+    },
+    {
+      "name": "input_2",
+      "description": "높음, 보통, 낮음",
+      "required": true,
+      "example": "높음, 보통, 낮음"
+    },
+    {
+      "name": "input_3",
+      "description": "제목",
+      "required": true,
+      "example": "제목"
+    },
+    {
+      "name": "input_4",
+      "description": "본문",
+      "required": true,
+      "example": "본문"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "코딩",
+    "디버깅",
+    "자동화",
+    "AI 에이전트"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "ai-agent"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ai-agent-workflow-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

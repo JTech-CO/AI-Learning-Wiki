@@ -1,0 +1,38 @@
+{
+  "id": "p9w-hallucheck",
+  "version": 1,
+  "title": "검수(AI가 사실을 지어냈는지)",
+  "summary": "검수(AI가 사실을 지어냈는지) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "이 답변에서 내가 원본에 안 적었던 내용(날짜, 약속, 숫자 등)을 네가 추가한 부분이 있으면 전부 표시해줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "검증",
+    "안전"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9w-hallucheck"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

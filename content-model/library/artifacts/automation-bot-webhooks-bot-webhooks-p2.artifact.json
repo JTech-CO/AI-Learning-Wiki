@@ -1,0 +1,49 @@
+{
+  "id": "automation-bot-webhooks-bot-webhooks-p2",
+  "version": 1,
+  "title": "디스코드 기본 알림 Body",
+  "summary": "디스코드 기본 알림 Body 작업에 재사용할 수 있는 요청 본문 자료다.",
+  "type": "payload",
+  "language": "JSON",
+  "runtime": "JSON 파서",
+  "files": [
+    {
+      "path": "automation-bot-webhooks-bot-webhooks-p2.json",
+      "content": "{\"content\":\"[이모지] [알림제목] — [값1] / [값2]\"}",
+      "language": "json"
+    }
+  ],
+  "dependencies": [],
+  "environmentVariables": [],
+  "runInstructions": [
+    "자리표시자와 환경 조건을 확인한 뒤 격리된 시험 환경에서 적용한다."
+  ],
+  "validation": {
+    "method": "manual",
+    "command": null,
+    "expectedResult": "형식과 예상 동작을 사람이 검토하고 실제 적용 전 시험한다."
+  },
+  "securityNotes": [
+    "실제 API 키·비밀번호·개인정보를 코드나 설정 파일에 직접 기록하지 않는다."
+  ],
+  "tags": [
+    "코딩",
+    "자동화",
+    "콘텐츠",
+    "협업",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "webhook"
+  ],
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:automation-bot-webhooks-bot-webhooks-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "p47w-testdata",
+  "version": 1,
+  "title": "실패 테스트 데이터 생성",
+  "summary": "실패 테스트 데이터 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 자동화는 [입력 형식: 이름·이메일·날짜가 든 스프레드시트 행]을 처리해. 고의로 깨보려고 해. 빈 값, 잘못된 형식, 경계값(너무 긴 값·특수문자·중복)을 포함한 '실패 유발 테스트 데이터' 8줄을 표로 만들어줘. 각 줄이 무엇을 테스트하는지 한 줄 설명도 붙여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "입력 형식: 이름·이메일·날짜가 든 스프레드시트 행",
+      "required": true,
+      "example": "입력 형식: 이름·이메일·날짜가 든 스프레드시트 행"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "스프레드시트",
+    "디버깅",
+    "테스트",
+    "API",
+    "자동화"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p47w-testdata"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

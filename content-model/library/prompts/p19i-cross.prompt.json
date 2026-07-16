@@ -1,0 +1,46 @@
+{
+  "id": "p19i-cross",
+  "version": 1,
+  "title": "두 AI 교차검증 프롬프트",
+  "summary": "두 AI 교차검증 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 주장이 사실인지 검증해줘. 근거가 되는 확인 가능한 출처가 있으면 링크와 함께 제시하고, 없으면 '근거 없음'이라고 말해줘. 앞선 AI의 답에 동의할 필요 없어. 주장: [검증할 문장]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "검증할 문장",
+      "required": true,
+      "example": "검증할 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p19i-cross"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

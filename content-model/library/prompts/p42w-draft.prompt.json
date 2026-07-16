@@ -1,0 +1,107 @@
+{
+  "id": "p42w-draft",
+  "version": 1,
+  "title": "지시문 4블록 초안 생성",
+  "summary": "지시문 4블록 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "너는 Custom GPT 지시문 설계 전문가야. 아래 업무를 위한 Custom GPT 지시문을 [역할]/[규칙]/[금지사항]/[지식파일 참조규칙]/[출력형식] 5블록으로 만들어줘. 각 블록은 실무자가 바로 쓸 수 있게 구체적으로.\n- 이 GPT의 업무: [쇼핑몰 고객 문의 답변 초안 작성]\n- 사용자: [누가 쓰나]\n- 입력: [무엇을 붙여넣나]\n- 원하는 결과물: [무엇을 받나]\n- 우리 회사 톤: [정중/친근/전문 등]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "역할",
+      "required": true,
+      "example": "역할"
+    },
+    {
+      "name": "input_2",
+      "description": "규칙",
+      "required": true,
+      "example": "규칙"
+    },
+    {
+      "name": "input_3",
+      "description": "금지사항",
+      "required": true,
+      "example": "금지사항"
+    },
+    {
+      "name": "input_4",
+      "description": "지식파일 참조규칙",
+      "required": true,
+      "example": "지식파일 참조규칙"
+    },
+    {
+      "name": "input_5",
+      "description": "출력형식",
+      "required": true,
+      "example": "출력형식"
+    },
+    {
+      "name": "input_6",
+      "description": "쇼핑몰 고객 문의 답변 초안 작성",
+      "required": true,
+      "example": "쇼핑몰 고객 문의 답변 초안 작성"
+    },
+    {
+      "name": "input_7",
+      "description": "누가 쓰나",
+      "required": true,
+      "example": "누가 쓰나"
+    },
+    {
+      "name": "input_8",
+      "description": "무엇을 붙여넣나",
+      "required": true,
+      "example": "무엇을 붙여넣나"
+    },
+    {
+      "name": "input_9",
+      "description": "무엇을 받나",
+      "required": true,
+      "example": "무엇을 받나"
+    },
+    {
+      "name": "input_10",
+      "description": "정중/친근/전문 등",
+      "required": true,
+      "example": "정중/친근/전문 등"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 Custom GPT 지시문 설계 전문가야. 아래 업무를 위한 Custom GPT 지시문을 데이터 분석가/실제 값/실제 값/실제 값/표와 세 줄 요약 5블록으로 만들어줘. 각 블록은 실무자가 바로 쓸 수 있게 구체적으로.\n- 이 GPT의 업무: 신입 직장인\n- 사용자: 실제 값\n- 입력: 실제 값\n- 원하는 결과물: 실제 값\n- 우리 회사 톤: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "구조화 출력",
+    "생산성",
+    "고객 지원",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p42w-draft"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

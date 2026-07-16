@@ -1,0 +1,46 @@
+{
+  "id": "offer-validation-test-p4",
+  "version": 1,
+  "title": "결과 데이터 해석 요청",
+  "summary": "결과 데이터 해석 요청 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 수요 검증 실험 결과를 해석하고 다음 행동을 조언해줘.\n합격선: [사전에 정한 기준]\n실제결과: 방문 [ ]명 / 버튼클릭 [ ]명 / 이메일 [ ]명 / 선입금 [ ]명 / 채널별 유입 [ ]\n원해: (1) 통과/애매/미달 판정과 근거 (2) 문제라면 대상·가격·문제정의·카피·채널 중 무엇이 병목일 가능성이 큰지 (3) 변수 하나만 바꾼 2차 실험안 (4) 지금 만들기 시작해도 되는지 예/아니오.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사전에 정한 기준",
+      "required": true,
+      "example": "사전에 정한 기준"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "이메일",
+    "테스트",
+    "평가",
+    "검증",
+    "출처·인용"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:offer-validation-test-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

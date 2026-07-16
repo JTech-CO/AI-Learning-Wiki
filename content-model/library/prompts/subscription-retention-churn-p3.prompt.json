@@ -1,0 +1,43 @@
+{
+  "id": "subscription-retention-churn-p3",
+  "version": 1,
+  "title": "온보딩 아하 순간 + 습관 훅 설계",
+  "summary": "온보딩 아하 순간 + 습관 훅 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 서비스 [서비스명/설명]의 신규 사용자가 첫 7일 안에 겪어야 할 핵심 '아하 순간' 후보 3개를 제안하고, 그 중 가장 강력한 1개를 골라 이유를 설명해줘. 그다음 그 아하 순간에 도달시키는 3스텝 온보딩 체크리스트와, 매일 재방문을 유도하는 습관 훅(트리거→행동→보상) 1개를 구체적으로 설계해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "서비스명/설명",
+      "required": true,
+      "example": "서비스명/설명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:subscription-retention-churn-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "cost-rate-guards-p3",
+  "version": 1,
+  "title": "드라이런 모드 래퍼 생성",
+  "summary": "드라이런 모드 래퍼 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "이 [함수]를 DRY_RUN 플래그로 감싸서, true일 때는 실제 호출 대신 호출 인자와 예상 누적 비용을 콘솔에 출력하고, false일 때만 실제 실행하도록 리팩터링해줘. 예상 총 호출 횟수와 비용을 마지막에 요약 출력하는 코드도 추가해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "함수",
+      "required": true,
+      "example": "함수"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "코딩",
+    "API",
+    "자동화",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cost-rate-guards-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

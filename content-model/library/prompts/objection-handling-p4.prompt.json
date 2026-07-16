@@ -1,0 +1,43 @@
+{
+  "id": "objection-handling-p4",
+  "version": 1,
+  "title": "가격 반론 가치 재구성",
+  "summary": "가격 반론 가치 재구성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "'[가격 반론 문장]'에 대해 방어하지 않고 가치로 재구성하는 문장을 3가지 버전으로 만들어줘. (1) 비용을 잘게 쪼개는 버전 (2) 안 샀을 때의 비용을 보여주는 버전 (3) 비교 기준을 바꾸는 버전. 과장·허위 수치 없이, 조건부 표현을 써서.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "가격 반론 문장",
+      "required": true,
+      "example": "가격 반론 문장"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:objection-handling-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

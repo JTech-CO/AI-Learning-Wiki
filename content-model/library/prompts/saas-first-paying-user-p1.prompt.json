@@ -1,0 +1,76 @@
+{
+  "id": "saas-first-paying-user-p1",
+  "version": 1,
+  "title": "1:1 개인화 아웃리치 DM 초안",
+  "summary": "1:1 개인화 아웃리치 DM 초안 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 초기 SaaS 파운더의 아웃리치 코치야. 아래 정보로 판매 냄새 안 나는 따뜻한 1:1 DM 초안 3가지 버전을 써줘. 각 DM은 (1)상대 원문 인용으로 시작 (2)내 제품 한 줄 소개 (3)'무료 베타 5분 데모' 부드러운 제안 순서. 링크 강매 금지, 3문장 이내.\n[내 제품 한 줄]: [여기]\n[해결하는 고통]: [여기]\n[상대가 쓴 원문]: [여기 복붙]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 제품 한 줄",
+      "required": true,
+      "example": "내 제품 한 줄"
+    },
+    {
+      "name": "input_2",
+      "description": "여기",
+      "required": true,
+      "example": "여기"
+    },
+    {
+      "name": "input_3",
+      "description": "해결하는 고통",
+      "required": true,
+      "example": "해결하는 고통"
+    },
+    {
+      "name": "input_4",
+      "description": "상대가 쓴 원문",
+      "required": true,
+      "example": "상대가 쓴 원문"
+    },
+    {
+      "name": "input_5",
+      "description": "여기 복붙",
+      "required": true,
+      "example": "여기 복붙"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 초기 SaaS 파운더의 아웃리치 코치야. 아래 정보로 판매 냄새 안 나는 따뜻한 1:1 DM 초안 3가지 버전을 써줘. 각 DM은 (1)상대 원문 인용으로 시작 (2)내 제품 한 줄 소개 (3)'무료 베타 5분 데모' 부드러운 제안 순서. 링크 강매 금지, 3문장 이내.\n업무 자동화 템플릿: 실제 값\n실제 값: 실제 값\n회의록 원문: 실제 값",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "영업",
+    "고객 지원",
+    "출처·인용",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:saas-first-paying-user-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "p10i-5elem",
+  "version": 1,
+  "title": "5요소 채운 요청 틀",
+  "summary": "5요소 채운 요청 틀 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[누가 읽을지: 예 채용담당자]를 대상으로, [목적: 예 서류 통과]를 위해, [형식: 예 500자 단락] 분량으로, [말투: 예 정중하고 자신감 있게] [무엇을: 예 성장경험 자기소개서]를 써줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "누가 읽을지: 예 채용담당자",
+      "required": true,
+      "example": "누가 읽을지: 예 채용담당자"
+    },
+    {
+      "name": "input_2",
+      "description": "목적: 예 서류 통과",
+      "required": true,
+      "example": "목적: 예 서류 통과"
+    },
+    {
+      "name": "input_3",
+      "description": "형식: 예 500자 단락",
+      "required": true,
+      "example": "형식: 예 500자 단락"
+    },
+    {
+      "name": "input_4",
+      "description": "말투: 예 정중하고 자신감 있게",
+      "required": true,
+      "example": "말투: 예 정중하고 자신감 있게"
+    },
+    {
+      "name": "input_5",
+      "description": "무엇을: 예 성장경험 자기소개서",
+      "required": true,
+      "example": "무엇을: 예 성장경험 자기소개서"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "실제 값를 대상으로, 핵심 내용을 빠르게 이해하도록 돕기를 위해, 표와 세 줄 요약 분량으로, 정중하고 간결한 말투 실제 값를 써줘.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p10i-5elem"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

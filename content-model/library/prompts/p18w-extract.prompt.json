@@ -1,0 +1,52 @@
+{
+  "id": "p18w-extract",
+  "version": 1,
+  "title": "환각 후보 추출",
+  "summary": "환각 후보 추출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 문서에서 '검증이 필요한 구체적 주장'만 표로 뽑아줘. 대상은 숫자·퍼센트·금액, 사람/기관/제품 이름, 따옴표 직접인용, 날짜, URL·출처야. 의견이나 일반론은 제외. 표 열은 [문장|주장 유형|문서 안에 출처가 명시돼 있나(예/아니오)]. 절대 사실 여부를 판단하지 말고 추출만.\n--- [초안 전문 붙여넣기]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "문장|주장 유형|문서 안에 출처가 명시돼 있나(예/아니오)",
+      "required": true,
+      "example": "문장|주장 유형|문서 안에 출처가 명시돼 있나(예/아니오)"
+    },
+    {
+      "name": "input_2",
+      "description": "초안 전문 붙여넣기",
+      "required": true,
+      "example": "초안 전문 붙여넣기"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "문서 분석",
+    "검증",
+    "출처·인용",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p18w-extract"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

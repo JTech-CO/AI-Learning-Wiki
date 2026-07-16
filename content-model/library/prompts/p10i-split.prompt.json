@@ -1,0 +1,43 @@
+{
+  "id": "p10i-split",
+  "version": 1,
+  "title": "여러 요구 쪼개기",
+  "summary": "여러 요구 쪼개기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [최종 목표]를 하려고 해. 한 번에 다 하지 말고, 이 작업을 3~5단계로 나눠서 각 단계에서 뭘 물어보면 되는지 순서만 먼저 알려줘. 내가 1단계부터 하나씩 요청할게.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "최종 목표",
+      "required": true,
+      "example": "최종 목표"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p10i-split"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

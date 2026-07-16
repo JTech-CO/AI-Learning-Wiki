@@ -1,0 +1,56 @@
+{
+  "id": "p9w-tone",
+  "version": 1,
+  "title": "2단계 톤+길이 조정",
+  "summary": "2단계 톤+길이 조정 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "방금 교정한 글을 [더 정중한 / 더 친근한 / 더 진정성 있는] 톤으로 바꾸고, 전체 길이를 [절반으로 / 3문장 이내로] 줄여줘. 받는 사람은 [고객 / 상사 / 동료]야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "더 정중한 / 더 친근한 / 더 진정성 있는",
+      "required": true,
+      "example": "더 정중한 / 더 친근한 / 더 진정성 있는"
+    },
+    {
+      "name": "input_2",
+      "description": "절반으로 / 3문장 이내로",
+      "required": true,
+      "example": "절반으로 / 3문장 이내로"
+    },
+    {
+      "name": "input_3",
+      "description": "고객 / 상사 / 동료",
+      "required": true,
+      "example": "고객 / 상사 / 동료"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "이메일",
+    "안전"
+  ],
+  "courseIds": [
+    "multimodal-ai"
+  ],
+  "relatedWikiSlugs": [
+    "hallucination"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p9w-tone"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

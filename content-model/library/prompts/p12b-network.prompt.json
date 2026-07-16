@@ -1,0 +1,53 @@
+{
+  "id": "p12b-network",
+  "version": 1,
+  "title": "네트워크 상태코드 해석하기",
+  "summary": "네트워크 상태코드 해석하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "브라우저 Network 탭에서 [요청 이름: /api/login] 요청의 Status Code가 [숫자: 403]으로 나왔습니다. 이 상태코드가 일반적으로 무슨 의미인지, 이 요청에서 흔한 원인 3가지, 그리고 사용자가 직접 확인해볼 수 있는 점검 순서를 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "요청 이름: /api/login",
+      "required": true,
+      "example": "요청 이름: /api/login"
+    },
+    {
+      "name": "input_2",
+      "description": "숫자: 403",
+      "required": true,
+      "example": "숫자: 403"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "코딩",
+    "디버깅",
+    "API",
+    "검증",
+    "웹 개발"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p12b-network"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

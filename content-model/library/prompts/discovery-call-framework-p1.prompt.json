@@ -1,0 +1,53 @@
+{
+  "id": "discovery-call-framework-p1",
+  "version": 1,
+  "title": "질문 시트 초안 생성",
+  "summary": "질문 시트 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "너는 B2B 세일즈 코치야. 나는 [내 제품/서비스: 예- 소상공인용 재고관리 SaaS]를 [내 고객: 예- 5~20인 도소매업 대표]에게 판다. 20분 디스커버리 콜용 질문 시트를 만들어줘. 5개 섹션(오프닝/문제/영향/예산·결정권/다음단계)으로 나누고, 각 섹션마다 예/아니오가 아닌 '열린 질문' 2~3개를 써줘. 영향 섹션은 반드시 손실을 숫자로 끌어내는 질문을 포함해줘. 딱딱하지 않고 사람이 실제 쓰는 말투로.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 제품/서비스: 예- 소상공인용 재고관리 SaaS",
+      "required": true,
+      "example": "내 제품/서비스: 예- 소상공인용 재고관리 SaaS"
+    },
+    {
+      "name": "input_2",
+      "description": "내 고객: 예- 5~20인 도소매업 대표",
+      "required": true,
+      "example": "내 고객: 예- 5~20인 도소매업 대표"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "구조화 출력",
+    "영업",
+    "재무·금융",
+    "출처·인용",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:discovery-call-framework-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

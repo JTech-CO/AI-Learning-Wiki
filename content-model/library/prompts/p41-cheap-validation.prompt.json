@@ -1,0 +1,46 @@
+{
+  "id": "p41-cheap-validation",
+  "version": 1,
+  "title": "코드 없이 검증하는 방법",
+  "summary": "코드 없이 검증하는 방법 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "내 MVP 핵심 기능은 [기능 1~3개]야. 개발 없이 노코드 도구나 수동 작업으로 이걸 실제 사용자에게 검증할 방법 3가지를 알려줘. 각 방법의 준비 시간, 비용, 얻을 수 있는 배움을 표로 정리해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "기능 1~3개",
+      "required": true,
+      "example": "기능 1~3개"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "계획",
+    "코딩",
+    "검증",
+    "노코드"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "api"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p41-cheap-validation"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

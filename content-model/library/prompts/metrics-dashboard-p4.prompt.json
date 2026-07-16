@@ -1,0 +1,47 @@
+{
+  "id": "metrics-dashboard-p4",
+  "version": 1,
+  "title": "위험 신호 자동 경보 규칙 생성",
+  "summary": "위험 신호 자동 경보 규칙 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "구글시트 대시보드에 조건부 서식으로 '위험 신호'를 빨강으로 표시하고 싶어. 다음 지표에 대해 각각 어떤 임계값을 넘으면 위험인지 스타트업 통용 기준으로 제안하고, 구글시트 조건부 서식 규칙(맞춤 수식)으로 알려줘: LTV/CAC 배수, 월 이탈률, 전환율. 내 사업은 [사업 종류]야.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사업 종류",
+      "required": true,
+      "example": "사업 종류"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "요약",
+    "의사결정",
+    "스프레드시트",
+    "코딩",
+    "안전"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:metrics-dashboard-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "p40-first-step",
+  "version": 1,
+  "title": "1순위 작업의 첫 실행 단계 도출",
+  "summary": "1순위 작업의 첫 실행 단계 도출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 '[1순위 작업]'을 자동화하기로 정했어. 나는 비개발자이고 도구 예산은 무료 우선이야. 이번 주에 30분 안에 할 수 있는 첫 실행 단계 3개만, 순서대로 아주 구체적으로. 각 단계마다 뭘 클릭/입력해야 하는지까지.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "1순위 작업",
+      "required": true,
+      "example": "1순위 작업"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "자동화",
+    "재무·금융",
+    "생산성"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p40-first-step"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

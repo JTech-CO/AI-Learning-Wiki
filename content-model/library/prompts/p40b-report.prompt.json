@@ -1,0 +1,47 @@
+{
+  "id": "p40b-report",
+  "version": 1,
+  "title": "전/후 점수 비교 리포트",
+  "summary": "전/후 점수 비교 리포트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "수정 전과 후의 채점 결과 표다. 각 케이스 번호별 수정전점수/수정후점수: [표: 번호, 수정전, 수정후].\n총점 변화, 개선된 항목, 점수가 떨어진 회귀 항목을 각각 정리하고, 다음 개선 라운드에서 무엇을 먼저 다뤄야 할지 한 문단으로 정리하라.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "표: 번호, 수정전, 수정후",
+      "required": true,
+      "example": "표: 번호, 수정전, 수정후"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "디버깅",
+    "테스트",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "평가"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "agent-evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p40b-report"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

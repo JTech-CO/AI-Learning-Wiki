@@ -1,0 +1,73 @@
+{
+  "id": "p7-template",
+  "version": 1,
+  "title": "기본 또렷한 명령 (틀)",
+  "summary": "기본 또렷한 명령 (틀) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "[누구]에게 [무엇을 할/읽을] 용으로, [주제]에 대해 [쉬운 말/재미있게]로 [개수/길이]만큼 알려줘",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "누구",
+      "required": true,
+      "example": "누구"
+    },
+    {
+      "name": "input_2",
+      "description": "무엇을 할/읽을",
+      "required": true,
+      "example": "무엇을 할/읽을"
+    },
+    {
+      "name": "input_3",
+      "description": "주제",
+      "required": true,
+      "example": "주제"
+    },
+    {
+      "name": "input_4",
+      "description": "쉬운 말/재미있게",
+      "required": true,
+      "example": "쉬운 말/재미있게"
+    },
+    {
+      "name": "input_5",
+      "description": "개수/길이",
+      "required": true,
+      "example": "개수/길이"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "대괄호 안의 예시 값을 실제 상황으로 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "실제 값에게 실제 값 용으로, 신입 구성원의 원격 온보딩에 대해 실제 값로 5만큼 알려줘",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "ai-foundations"
+  ],
+  "relatedWikiSlugs": [
+    "specificity"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p7-template"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

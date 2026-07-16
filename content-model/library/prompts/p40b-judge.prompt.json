@@ -1,0 +1,107 @@
+{
+  "id": "p40b-judge",
+  "version": 1,
+  "title": "LLM 심사관 채점 프롬프트",
+  "summary": "LLM 심사관 채점 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "너는 엄격한 AI 품질 심사관이다. 아래 판정기준에 따라 에이전트 답변을 0~2점으로 채점하라.\n[사용자 입력] [질문]\n[기대 결과] [이상적 답변 요약]\n[판정기준] 2점=[조건], 1점=[부분조건], 0점=[실패조건]\n[에이전트 실제 답변] [채점할 답변]\n출력 형식: 점수(0/1/2) | 한 줄 이유. 관대하게 봐주지 말고 판정기준 문구에만 근거해 채점하라.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "사용자 입력",
+      "required": true,
+      "example": "사용자 입력"
+    },
+    {
+      "name": "input_2",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    },
+    {
+      "name": "input_3",
+      "description": "기대 결과",
+      "required": true,
+      "example": "기대 결과"
+    },
+    {
+      "name": "input_4",
+      "description": "이상적 답변 요약",
+      "required": true,
+      "example": "이상적 답변 요약"
+    },
+    {
+      "name": "input_5",
+      "description": "판정기준",
+      "required": true,
+      "example": "판정기준"
+    },
+    {
+      "name": "input_6",
+      "description": "조건",
+      "required": true,
+      "example": "조건"
+    },
+    {
+      "name": "input_7",
+      "description": "부분조건",
+      "required": true,
+      "example": "부분조건"
+    },
+    {
+      "name": "input_8",
+      "description": "실패조건",
+      "required": true,
+      "example": "실패조건"
+    },
+    {
+      "name": "input_9",
+      "description": "에이전트 실제 답변",
+      "required": true,
+      "example": "에이전트 실제 답변"
+    },
+    {
+      "name": "input_10",
+      "description": "채점할 답변",
+      "required": true,
+      "example": "채점할 답변"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 승인을 받는다.",
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "너는 엄격한 AI 품질 심사관이다. 아래 판정기준에 따라 에이전트 답변을 0~2점으로 채점하라.\n회의록 원문 실제 값\n실제 값 실제 값\n실제 값 2점=실제 값, 1점=실제 값, 0점=실제 값\n실제 값 실제 값\n출력 형식: 점수(0/1/2) | 한 줄 이유. 관대하게 봐주지 말고 판정기준 문구에만 근거해 채점하라.",
+      "output": ""
+    }
+  ],
+  "tags": [
+    "요약",
+    "디버깅",
+    "테스트",
+    "AI 에이전트",
+    "프롬프트 설계",
+    "구조화 출력"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "agent-evaluation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p40b-judge"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

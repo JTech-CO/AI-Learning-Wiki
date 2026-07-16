@@ -1,0 +1,50 @@
+{
+  "id": "product-listing-copy-p3",
+  "version": 1,
+  "title": "기능을 베네핏으로 변환",
+  "summary": "기능을 베네핏으로 변환 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "아래 기능 목록을 '이 기능이라서 → 고객이 ~할 수 있다' 형태의 베네핏 문장으로 바꿔줘. 고객이 느끼는 삶의 변화 중심으로, 전문용어 없이. 기능목록:[기능1, 기능2, 기능3] 타깃고객:[상황]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "기능1, 기능2, 기능3",
+      "required": true,
+      "example": "기능1, 기능2, 기능3"
+    },
+    {
+      "name": "input_2",
+      "description": "상황",
+      "required": true,
+      "example": "상황"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "의사결정",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:product-listing-copy-p3"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

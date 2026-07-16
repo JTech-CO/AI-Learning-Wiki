@@ -1,0 +1,59 @@
+{
+  "id": "p11e-build-array",
+  "version": 1,
+  "title": "멀티턴 대화 배열 생성",
+  "summary": "멀티턴 대화 배열 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "intermediate",
+  "template": "아래 상황으로 LLM API에 보낼 messages 배열을 JSON으로 만들어줘. system 1개 + user/assistant가 번갈아 3턴. 각 role의 역할을 주석으로 짧게.\n- 앱 종류: [여행 일정 도우미]\n- AI 성격/규칙: [존댓말, 항상 예산을 먼저 물어봄]\n- 사용자 첫 질문: [질문]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "여행 일정 도우미",
+      "required": true,
+      "example": "여행 일정 도우미"
+    },
+    {
+      "name": "input_2",
+      "description": "존댓말, 항상 예산을 먼저 물어봄",
+      "required": true,
+      "example": "존댓말, 항상 예산을 먼저 물어봄"
+    },
+    {
+      "name": "input_3",
+      "description": "질문",
+      "required": true,
+      "example": "질문"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "계획",
+    "API",
+    "프롬프트 설계",
+    "구조화 출력",
+    "재무·금융",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "system-prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p11e-build-array"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

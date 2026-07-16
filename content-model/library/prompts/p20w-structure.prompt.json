@@ -1,0 +1,63 @@
+{
+  "id": "p20w-structure",
+  "version": 1,
+  "title": "표 구조 알려주고 수식 생성",
+  "summary": "표 구조 알려주고 수식 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "엑셀 수식을 만들어줘. 표 구조는 이래.\n- 열 위치와 제목: [A열=이름, B열=급여, C열=부서 …]\n- 데이터 범위: [2행부터 101행까지]\n- 결과를 넣을 셀: [I2]\n하고 싶은 계산: [H2에 입력한 이름과 같은 사람의 급여를 찾아오기]\n조건: 결과 셀에 바로 붙여넣을 수 있는 완성된 수식 하나만, 각 인자가 무슨 뜻인지 한 줄 설명도.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "A열=이름, B열=급여, C열=부서 …",
+      "required": true,
+      "example": "A열=이름, B열=급여, C열=부서 …"
+    },
+    {
+      "name": "input_2",
+      "description": "2행부터 101행까지",
+      "required": true,
+      "example": "2행부터 101행까지"
+    },
+    {
+      "name": "input_3",
+      "description": "I2",
+      "required": true,
+      "example": "I2"
+    },
+    {
+      "name": "input_4",
+      "description": "H2에 입력한 이름과 같은 사람의 급여를 찾아오기",
+      "required": true,
+      "example": "H2에 입력한 이름과 같은 사람의 급여를 찾아오기"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "스프레드시트",
+    "검증",
+    "SQL"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20w-structure"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

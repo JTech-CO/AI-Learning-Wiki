@@ -1,0 +1,53 @@
+{
+  "id": "p20e-func",
+  "version": 1,
+  "title": "검증+재시도 파이썬 함수 생성",
+  "summary": "검증+재시도 파이썬 함수 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "다음 Pydantic 모델로 LLM 응답을 검증하고 실패 시 에러를 되먹여 최대 3회 자동 재시도하는 파이썬 함수를. 구조화 출력(response_format/tool input_schema)을 우선 쓰고, 안 되면 정규식으로 첫 {부터 마지막 }까지 잘라 파싱하는 폴백도. 모델: [Pydantic BaseModel 코드] 사용 LLM: [OpenAI gpt-4o / Claude 중 택1]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "Pydantic BaseModel 코드",
+      "required": true,
+      "example": "Pydantic BaseModel 코드"
+    },
+    {
+      "name": "input_2",
+      "description": "OpenAI gpt-4o / Claude 중 택1",
+      "required": true,
+      "example": "OpenAI gpt-4o / Claude 중 택1"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "구조화 출력",
+    "검증",
+    "Python",
+    "데이터 엔지니어링"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "json-schema"
+  ],
+  "providerScope": "multi-provider",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p20e-func"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

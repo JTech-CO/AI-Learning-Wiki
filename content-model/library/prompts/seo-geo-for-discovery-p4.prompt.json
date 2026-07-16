@@ -1,0 +1,47 @@
+{
+  "id": "seo-geo-for-discovery-p4",
+  "version": 1,
+  "title": "AI 답변 노출 테스트",
+  "summary": "AI 답변 노출 테스트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내 잠재 고객이 물어볼 법한 질문 5개를 만들어 각각에 네가 지금 아는 정보만으로 답해줘. 그 답에 [내 브랜드/사이트명]이 등장하는지 표시하고, 등장하지 않았다면 내 콘텐츠에 어떤 정보(숫자·성분·후기·비교표 등)가 있어야 답변에 포함시키겠는지 구체적으로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 브랜드/사이트명",
+      "required": true,
+      "example": "내 브랜드/사이트명"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "테스트",
+    "검색",
+    "구조화 출력",
+    "마케팅",
+    "콘텐츠"
+  ],
+  "courseIds": [
+    "rag-search"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:seo-geo-for-discovery-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "unit-economics-pricing-p1",
+  "version": 1,
+  "title": "유닛 이코노믹스 계산표",
+  "summary": "유닛 이코노믹스 계산표 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "markdown",
+  "difficulty": "entry",
+  "template": "내 상품 '한 건'의 진짜 마진을 계산하는 표를 만들어줘.\n- 판매가: [...]\n- 직접 원가: [...] / 플랫폼·결제 수수료(%): [...] / AI·도구 사용료(건당 안분): [...] / 예상 환불률(%): [...] / 고객 1명 획득비(광고/내 시간): [...]\n조건:\n1) 각 비용을 빼는 계산식을 단계별로 보여줘(내가 검산).\n2) '한 건 마진'과 '마진율(%)'을 명확히.\n3) 내가 '가정'으로 넣은 값(환불률·획득비 등)에는 [가정-검토] 표시. 낙관적으로 잡지 말 것.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "...",
+      "required": true,
+      "example": "..."
+    },
+    {
+      "name": "input_2",
+      "description": "가정-검토",
+      "required": true,
+      "example": "가정-검토"
+    }
+  ],
+  "outputContract": {
+    "format": "markdown",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "마케팅",
+    "영업",
+    "재무·금융",
+    "검증",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:unit-economics-pricing-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

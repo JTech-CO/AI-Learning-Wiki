@@ -1,0 +1,65 @@
+{
+  "id": "workflow-automation-tools-p1",
+  "version": 1,
+  "title": "내 업무를 트리거·액션으로 쪼개기",
+  "summary": "내 업무를 트리거·액션으로 쪼개기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [내 일: 예-1인 온라인 강의 판매]를 하고 있어. 매일 손으로 반복하는 업무 목록이야: [반복업무1], [반복업무2], [반복업무3]. 각각을 '트리거(언제) → 액션(무엇을)' 형태로 쪼개고, Zapier/Make/n8n 중 어떤 도구가 적합한지 이유와 함께 표로 정리해줘. 초보가 가장 먼저 만들기 쉬운 것 1개를 추천하고 그 이유도 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "내 일: 예-1인 온라인 강의 판매",
+      "required": true,
+      "example": "내 일: 예-1인 온라인 강의 판매"
+    },
+    {
+      "name": "input_2",
+      "description": "반복업무1",
+      "required": true,
+      "example": "반복업무1"
+    },
+    {
+      "name": "input_3",
+      "description": "반복업무2",
+      "required": true,
+      "example": "반복업무2"
+    },
+    {
+      "name": "input_4",
+      "description": "반복업무3",
+      "required": true,
+      "example": "반복업무3"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "examples": [],
+  "tags": [
+    "코딩",
+    "디버깅",
+    "자동화",
+    "영업",
+    "콘텐츠",
+    "생산성"
+  ],
+  "courseIds": [
+    "agent-systems"
+  ],
+  "relatedWikiSlugs": [
+    "workflow-orchestration"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:workflow-automation-tools-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "cost-rate-guards-p4",
+  "version": 1,
+  "title": "레이트리밋·백오프 로직만 추출",
+  "summary": "레이트리밋·백오프 로직만 추출 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "분당 최대 [예: 60]회 요청 제한을 지키면서, 429나 5xx 응답을 받으면 지수 백오프(2^n초, 최대 [예: 5]회)로 재시도하는 재사용 가능한 [언어: 예 JavaScript] 헬퍼 함수를 만들어줘. 사용 예시도 함께 보여줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "예: 60",
+      "required": true,
+      "example": "60"
+    },
+    {
+      "name": "input_2",
+      "description": "예: 5",
+      "required": true,
+      "example": "5"
+    },
+    {
+      "name": "input_3",
+      "description": "언어: 예 JavaScript",
+      "required": true,
+      "example": "언어: 예 JavaScript"
+    }
+  ],
+  "outputContract": {
+    "format": "code",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "API",
+    "자동화",
+    "보안",
+    "안전",
+    "JavaScript"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:cost-rate-guards-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

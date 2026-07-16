@@ -1,0 +1,71 @@
+{
+  "id": "security-defense-p2",
+  "version": 1,
+  "title": "민감정보 마스킹 (정보를 가린 채 작업 요청)",
+  "summary": "민감정보 마스킹 (정보를 가린 채 작업 요청) 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "아래 정보는 진짜 값을 [대괄호]로 가린 상태다. 너는 가린 상태 그대로 작업하고, 진짜 값을 추측하거나 채우려 하지 마라.\n고객: [고객명] / 연락처: [전화] / 내용: [상황]\n해줄 일: [예: 정중한 환불 안내 문자 초안 작성]",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "대괄호",
+      "required": true,
+      "example": "대괄호"
+    },
+    {
+      "name": "input_2",
+      "description": "고객명",
+      "required": true,
+      "example": "고객명"
+    },
+    {
+      "name": "input_3",
+      "description": "전화",
+      "required": true,
+      "example": "전화"
+    },
+    {
+      "name": "input_4",
+      "description": "상황",
+      "required": true,
+      "example": "상황"
+    },
+    {
+      "name": "input_5",
+      "description": "예: 정중한 환불 안내 문자 초안 작성",
+      "required": true,
+      "example": "정중한 환불 안내 문자 초안 작성"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
+  "examples": [],
+  "tags": [
+    "글쓰기",
+    "프롬프트 설계",
+    "검증",
+    "개인정보",
+    "보안",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:security-defense-p2"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

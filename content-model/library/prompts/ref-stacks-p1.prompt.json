@@ -1,0 +1,40 @@
+{
+  "id": "ref-stacks-p1",
+  "version": 1,
+  "title": "리서치 딥다이브 프롬프트",
+  "summary": "리서치 딥다이브 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "주제 [X]에 대해 최근 3년 핵심 논문을 찾아 방법·표본·결과를 표로 비교하고, 상충되는 결과와 연구 공백을 표시해줘. 각 주장에 출처를 달아줘.",
+  "variables": [],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "요약",
+    "조사",
+    "계획",
+    "의사결정",
+    "코딩",
+    "데이터베이스"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:ref-stacks-p1"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

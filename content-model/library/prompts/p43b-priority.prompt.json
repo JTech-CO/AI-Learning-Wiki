@@ -1,0 +1,59 @@
+{
+  "id": "p43b-priority",
+  "version": 1,
+  "title": "3종 증거로 우선순위 정하기",
+  "summary": "3종 증거로 우선순위 정하기 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "내가 사용자 3명을 관찰한 결과야. [관찰 메모]. 인터뷰 답변: [인터뷰 답변]. 지표: [성공 인원/평균 시간/이탈]. 이 세 증거에서 '가장 여러 명에게 + 가장 심하게' 겹치는 문제 딱 1개를 골라줘. 왜 1순위인지 근거를 각 증거에서 인용하고, 이번 루프에서 고칠 구체적 변경 1가지를. 나머지 문제는 '다음 루프 대기'로 목록만.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "관찰 메모",
+      "required": true,
+      "example": "관찰 메모"
+    },
+    {
+      "name": "input_2",
+      "description": "인터뷰 답변",
+      "required": true,
+      "example": "인터뷰 답변"
+    },
+    {
+      "name": "input_3",
+      "description": "성공 인원/평균 시간/이탈",
+      "required": true,
+      "example": "성공 인원/평균 시간/이탈"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
+  "examples": [],
+  "tags": [
+    "조사",
+    "의사결정",
+    "테스트",
+    "데이터베이스",
+    "검색",
+    "프롬프트 설계"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "citation"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p43b-priority"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

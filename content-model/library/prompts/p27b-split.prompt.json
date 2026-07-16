@@ -1,0 +1,43 @@
+{
+  "id": "p27b-split",
+  "version": 1,
+  "title": "오늘 한 작업을 커밋 단위로 쪼개줘",
+  "summary": "오늘 한 작업을 커밋 단위로 쪼개줘 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "오늘 내가 한 작업들은 다음과 같아: [작업들 나열]. 이걸 의미 있는 커밋 여러 개로 어떻게 나누면 좋을지, 각 커밋의 메시지와 'git add' 대상 파일 예시까지 제안해줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "작업들 나열",
+      "required": true,
+      "example": "작업들 나열"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
+  "examples": [],
+  "tags": [
+    "디버깅",
+    "안전"
+  ],
+  "courseIds": [
+    "responsible-ai"
+  ],
+  "relatedWikiSlugs": [
+    "guardrail"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p27b-split"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "digital-product-delivery-p4",
+  "version": 1,
+  "title": "Gumroad vs Lemon Squeezy 판단",
+  "summary": "Gumroad vs Lemon Squeezy 판단 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "entry",
+  "template": "나는 [상품 종류]를 [주요 고객 지역]에 팔려고 해. 결제 자동전달 도구로 Gumroad와 Lemon Squeezy 중 뭐가 나은지, 세금·수수료·정산·해외판매 관점에서 표로 비교하고 내 상황에 맞는 하나를 추천 이유와 함께 골라줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "상품 종류",
+      "required": true,
+      "example": "상품 종류"
+    },
+    {
+      "name": "input_2",
+      "description": "주요 고객 지역",
+      "required": true,
+      "example": "주요 고객 지역"
+    }
+  ],
+  "outputContract": {
+    "format": "table",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "결과는 일반적인 초안이므로 실제 의사결정 전에 해당 분야 전문가와 공식 자료를 확인한다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "영업",
+    "재무·금융",
+    "비즈니스"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:digital-product-delivery-p4"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}

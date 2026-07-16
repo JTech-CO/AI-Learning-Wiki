@@ -1,0 +1,52 @@
+{
+  "id": "p29b-prevent",
+  "version": 1,
+  "title": "충돌 예방 습관 코칭",
+  "summary": "충돌 예방 습관 코칭 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "kind": "plain",
+  "difficulty": "intermediate",
+  "template": "나는 [프로젝트 설명]를 [인원수]명이서 git으로 협업하는 초보야. merge conflict를 애초에 덜 만들려면 커밋/브랜치/pull을 어떤 습관으로 해야 하는지 실천 규칙 5개를 우선순위 순으로 알려줘.",
+  "variables": [
+    {
+      "name": "input_1",
+      "description": "프로젝트 설명",
+      "required": true,
+      "example": "프로젝트 설명"
+    },
+    {
+      "name": "input_2",
+      "description": "인원수",
+      "required": true,
+      "example": "인원수"
+    }
+  ],
+  "outputContract": {
+    "format": "text",
+    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "schema": null,
+    "sections": []
+  },
+  "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
+  "examples": [],
+  "tags": [
+    "의사결정",
+    "코딩",
+    "디버깅",
+    "협업",
+    "프로젝트 관리"
+  ],
+  "courseIds": [
+    "api-development"
+  ],
+  "relatedWikiSlugs": [
+    "prompt"
+  ],
+  "providerScope": "provider-agnostic",
+  "provenance": {
+    "origin": "migrated-reference",
+    "authorship": "migration-reviewed",
+    "legacyKey": "public:p29b-prevent"
+  },
+  "status": "reviewed",
+  "reviewedAt": "2026-07-16"
+}
