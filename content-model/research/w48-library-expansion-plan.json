@@ -1,0 +1,934 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W48",
+  "plannedAt": "2026-07-16",
+  "objective": "Expand the independent professional library without importing former-site prose, CTA wording, or guide layouts.",
+  "targets": {
+    "prompts": 1500,
+    "artifacts": 120,
+    "courses": 16,
+    "articles": 1600
+  },
+  "baseline": {
+    "prompts": 1142,
+    "artifacts": 25
+  },
+  "additions": {
+    "prompts": 358,
+    "artifacts": 95,
+    "existingPromptExamples": 28
+  },
+  "final": {
+    "prompts": 1500,
+    "artifacts": 120,
+    "courses": 16,
+    "articles": 1600
+  },
+  "qualityTargets": {
+    "requiredUsageNotes": true,
+    "requiredOutputContract": true,
+    "requiredRelatedWikiDocument": true,
+    "maximumControlledTags": 6,
+    "longFormThresholdCharacters": 500,
+    "targetLongFormPrompts": 300,
+    "targetMarkdownPrompts": 200,
+    "targetSchemaPrompts": 120,
+    "targetPromptsWithExamples": 500
+  },
+  "promptKindQuotas": {
+    "markdown": 130,
+    "json-schema": 80,
+    "yaml": 40,
+    "xml": 20,
+    "multi-message": 40,
+    "evaluation-rubric": 30,
+    "plain": 18
+  },
+  "promptDifficultyQuotas": {
+    "professional": 280,
+    "advanced": 78
+  },
+  "artifactTypeQuotas": {
+    "code": 20,
+    "config": 15,
+    "query": 10,
+    "payload": 10,
+    "schema": 15,
+    "workflow": 15,
+    "template": 10
+  },
+  "editorialRules": {
+    "minimumTemplateCharacters": 500,
+    "exampleRequiredForEveryNewPrompt": true,
+    "controlledTagsOnly": true,
+    "providerNeutralByDefault": true,
+    "courseAndWikiLinksRequired": true,
+    "ctaLanguageForbidden": true,
+    "formerSiteMarkersForbidden": true,
+    "secretsForbidden": true
+  },
+  "exampleEnrichmentPromptIds": [
+    "agent-eval-observability-p2",
+    "agent-eval-observability-p3",
+    "agent-harness-p1",
+    "agent-harness-p2",
+    "agent-harness-p3",
+    "agent-harness-p4",
+    "agent-loop-basics-p1",
+    "agent-loop-basics-p2",
+    "agent-loop-basics-p3",
+    "agent-loop-basics-p4",
+    "agent-memory-state-p1",
+    "agent-memory-state-p2",
+    "agent-memory-state-p3",
+    "agent-memory-state-p4",
+    "agent-multi-orchestration-p1",
+    "agent-multi-orchestration-p2",
+    "agent-multi-orchestration-p3",
+    "agent-multi-orchestration-p4",
+    "agent-multi-orchestration-p5",
+    "agent-tool-design-p1",
+    "agent-tool-design-p2",
+    "agent-tool-design-p3",
+    "agent-tool-design-p4",
+    "agentic-coding-tools-p1",
+    "agentic-coding-tools-p2",
+    "agentic-coding-tools-p3",
+    "agentic-graph-rag-p1",
+    "agentic-graph-rag-p2"
+  ],
+  "courses": [
+    {
+      "courseId": "prompt-systems",
+      "title": "프롬프트 시스템 설계",
+      "promptQuota": 48,
+      "artifactQuota": 12,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "prompt"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "prompt-engineering"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "system-prompt"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "user-prompt"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "prompt-template"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "prompt-delimiter"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "role-prompting"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "zero-shot-prompting"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "few-shot-prompting"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "chain-of-thought-prompting"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "context-engineering"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "context-window"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "structured-output"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "json-schema"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "schema-validation"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "prompt-chaining"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "prompt-caching"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "prompt-compression"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "automatic-prompt-optimization"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "prompt-contract-testing"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "instruction-priority-architecture"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "prompt-release-governance"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "structured-output-recovery"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "prompt-portfolio-observability"
+        }
+      ]
+    },
+    {
+      "courseId": "llm-evaluation",
+      "title": "LLM 평가와 관측성",
+      "promptQuota": 46,
+      "artifactQuota": 12,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "evaluation"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "metric"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "benchmark"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "benchmark-dataset"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "benchmark-suite"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "benchmark-validity"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "benchmark-contamination"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "evaluation-rubric"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "evaluation-sampling"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "evaluation-uncertainty"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "reference-based-evaluation"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "reference-free-evaluation"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "human-evaluation"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "expert-evaluation"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "judge-meta-evaluation"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "generation-evaluation"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "production-evaluation"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "regression-evaluation"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "observability"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "llm-evaluation-contract"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "judge-calibration-curve"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "evaluation-budget-allocation"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "slice-based-release-gate"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "online-evaluation-drift"
+        }
+      ]
+    },
+    {
+      "courseId": "llmops-production",
+      "title": "LLMOps와 프로덕션 서빙",
+      "promptQuota": 45,
+      "artifactQuota": 12,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "inference"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "model-serving"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "model-serving-platform"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "inference-server"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "online-inference"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "batch-inference"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "inference-endpoint"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "throughput"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "latency"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "inter-token-latency"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "tail-latency"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "latency-throughput-tradeoff"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "kv-cache"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "paged-kv-cache"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "prompt-caching"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "inference-load-balancing"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "inference-autoscaling"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "inference-capacity-planning"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "inference-monitoring"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "llm-serving-slo"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "token-budget-admission-control"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "continuous-batching-policy"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "model-fleet-routing"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "llm-cost-attribution"
+        }
+      ]
+    },
+    {
+      "courseId": "advanced-rag",
+      "title": "고급 RAG와 지식 시스템",
+      "promptQuota": 45,
+      "artifactQuota": 12,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "rag"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "document-retrieval"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "lexical-retrieval"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "dense-retrieval"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "hybrid-rag"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "embedding-model"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "document-embedding"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "query-embedding"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "vector-index"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "retrieval-filtering"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "reranker"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "cross-encoder-reranker"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "adaptive-retrieval"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "multi-hop-rag"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "iterative-rag"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "corrective-rag"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "graph-rag"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "context-compression-for-rag"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "rag-evaluation"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "rag-index-freshness"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "retrieval-access-control"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "citation-grounding-contract"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "rag-evidence-lineage"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "retrieval-capacity-planning"
+        }
+      ]
+    },
+    {
+      "courseId": "production-agents",
+      "title": "프로덕션 AI 에이전트",
+      "promptQuota": 45,
+      "artifactQuota": 12,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "ai-agent"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "agent-loop"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "agent-goal"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "agent-task-decomposition"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "agent-deliberation"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "agent-plan-quality"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "agent-executor"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "agent-tool"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "agent-tool-accuracy"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "agent-runtime"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "agent-memory"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "episodic-agent-memory"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "long-term-agent-memory"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "agent-reflection"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "agent-self-correction"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "agent-replanning"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "agent-termination-condition"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "agent-sandbox"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "agent-evaluation"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "agent-idempotency"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "agent-action-ledger"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "tool-permission-broker"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "agent-compensation-transaction"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "agent-incident-playbook"
+        }
+      ]
+    },
+    {
+      "courseId": "post-training-alignment",
+      "title": "사후학습과 정렬 심화",
+      "promptQuota": 43,
+      "artifactQuota": 12,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "fine-tuning"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "supervised-fine-tuning"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "instruction-tuning"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "preference-data"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "pairwise-preference-ranking"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "reward-model"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "outcome-reward-model"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "process-reward-model"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "rlhf"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "reinforcement-learning-from-ai-feedback"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "dpo"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "offline-preference-learning"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "online-preference-learning"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "preference-loss"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "proximal-policy-optimization-for-llm"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "rejection-sampling"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "constitutional-ai"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "reward-hacking"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "alignment"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "preference-data-governance"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "reward-model-calibration"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "post-training-ablation"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "alignment-capability-retention"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "preference-shift-monitoring"
+        }
+      ]
+    },
+    {
+      "courseId": "ai-security-redteam",
+      "title": "AI 보안과 레드팀",
+      "promptQuota": 43,
+      "artifactQuota": 12,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "ai-safety"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "ai-threat-modeling"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "ai-risk-assessment"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "ai-risk-register"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "ai-red-teaming"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "adversarial-testing"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "adversarial-example"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "prompt-injection"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "indirect-prompt-injection"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "jailbreak"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "agent-security"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "guardrail"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "agent-guardrail"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "ai-security-monitoring"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "privacy-attack"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "privacy-audit"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "ai-misuse"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "ai-incident-response"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "ai-incident-reporting"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "ai-attack-surface-map"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "model-abuse-case-library"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "guardrail-coverage-matrix"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "ai-red-team-retest"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "model-security-disclosure"
+        }
+      ]
+    },
+    {
+      "courseId": "multimodal-systems",
+      "title": "멀티모달 AI 시스템",
+      "promptQuota": 43,
+      "artifactQuota": 11,
+      "sourceSteps": [
+        {
+          "order": 1,
+          "wikiSlug": "multimodal-model"
+        },
+        {
+          "order": 2,
+          "wikiSlug": "multimodal-language-model"
+        },
+        {
+          "order": 3,
+          "wikiSlug": "multimodal-transformer"
+        },
+        {
+          "order": 4,
+          "wikiSlug": "multimodal-tokenizer"
+        },
+        {
+          "order": 5,
+          "wikiSlug": "interleaved-multimodal-data"
+        },
+        {
+          "order": 6,
+          "wikiSlug": "joint-embedding-space"
+        },
+        {
+          "order": 7,
+          "wikiSlug": "multimodal-embedding"
+        },
+        {
+          "order": 8,
+          "wikiSlug": "cross-modal-alignment"
+        },
+        {
+          "order": 9,
+          "wikiSlug": "cross-modal-attention"
+        },
+        {
+          "order": 10,
+          "wikiSlug": "multimodal-fusion"
+        },
+        {
+          "order": 11,
+          "wikiSlug": "multimodal-instruction-tuning"
+        },
+        {
+          "order": 12,
+          "wikiSlug": "vision-language-model"
+        },
+        {
+          "order": 13,
+          "wikiSlug": "image-embedding"
+        },
+        {
+          "order": 14,
+          "wikiSlug": "audio-model"
+        },
+        {
+          "order": 15,
+          "wikiSlug": "speech-language-model"
+        },
+        {
+          "order": 16,
+          "wikiSlug": "speech-recognition"
+        },
+        {
+          "order": 17,
+          "wikiSlug": "video-understanding"
+        },
+        {
+          "order": 18,
+          "wikiSlug": "multimodal-evaluation"
+        },
+        {
+          "order": 19,
+          "wikiSlug": "multimodal-jailbreak"
+        },
+        {
+          "order": 20,
+          "wikiSlug": "multimodal-input-contract"
+        },
+        {
+          "order": 21,
+          "wikiSlug": "modality-fallback-policy"
+        },
+        {
+          "order": 22,
+          "wikiSlug": "cross-modal-latency-budget"
+        },
+        {
+          "order": 23,
+          "wikiSlug": "multimodal-safety-evaluation"
+        },
+        {
+          "order": 24,
+          "wikiSlug": "media-provenance-pipeline"
+        }
+      ]
+    }
+  ]
+}
