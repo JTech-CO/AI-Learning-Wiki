@@ -6,12 +6,13 @@ import snippets from '../../../public/data/snippets.json';
 const featured = wiki.articles.find((article) => article.id === 'large-language-model') ?? wiki.articles[0];
 const categoryMap = new Map(wiki.categories.map((category) => [category.id, category]));
 const recent = [...wiki.articles].sort((a, b) => b.reviewedAt.localeCompare(a.reviewedAt) || a.title.localeCompare(b.title, 'ko')).slice(0, 12);
+const formatCount = (value) => Number(value).toLocaleString('ko-KR');
 ---
 <div class="wiki-home">
   <header class="wiki-home-intro">
     <p class="wiki-home-name">AI Learning Wiki</p>
     <p>AI와 대규모 언어 모델의 원리, 용어, 기술을 서로 연결해 설명하는 한국어 백과사전입니다.</p>
-    <p class="wiki-counts">검토 완료 백과 문서 <strong>{wiki.counts.articles}</strong>개 · 학습 코스 <strong>{wiki.counts.courses}</strong>개 · 프롬프트 <strong>{prompts.prompts.length}</strong>개 · 코드·설정 자료 <strong>{snippets.snippets.length}</strong>개</p>
+    <p class="wiki-counts">검토 완료 백과 문서 <strong>{formatCount(wiki.counts.articles)}</strong>개 · 학습 코스 <strong>{formatCount(wiki.counts.courses)}</strong>개 · 프롬프트 <strong>{formatCount(prompts.prompts.length)}</strong>개 · 코드·설정 자료 <strong>{formatCount(snippets.snippets.length)}</strong>개</p>
   </header>
 
   <div class="wiki-home-columns">

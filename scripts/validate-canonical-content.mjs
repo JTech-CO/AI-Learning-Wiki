@@ -8,13 +8,13 @@ const errors = [];
 const error = (message) => errors.push(message);
 const normalize = (value) => String(value).normalize('NFKC').toLocaleLowerCase('ko').replace(/[\s\p{P}\p{S}]+/gu, '');
 
-const [promptEntries, artifactEntries, validators, paths, wikiFiles, migration, controlledPolicy] = await Promise.all([
+const [promptEntries, artifactEntries, validators, paths, wikiFiles, libraryPolicy, controlledPolicy] = await Promise.all([
   readLibraryEntries('content-model/library/prompts', '.prompt.json'),
   readLibraryEntries('content-model/library/artifacts', '.artifact.json'),
   loadLibraryV2Validators(),
   readdir('content-model/paths').then(async (files) => Promise.all(files.filter((file) => file.endsWith('.path.json')).map((file) => readFile(path.join('content-model/paths', file), 'utf8').then(JSON.parse)))),
   readdir('src/content/docs/wiki'),
-  readFile('content-model/migration/w40-library-migration.json', 'utf8').then(JSON.parse),
+  readFile('content-model/library-policy-v2.json', 'utf8').then(JSON.parse),
   readFile('content-model/prompt-library-policy.json', 'utf8').then(JSON.parse),
 ]);
 const courseIds = new Set(paths.map((course) => course.id));
@@ -51,8 +51,8 @@ for (const [label, entries, keyOf] of [
 }
 
 if (requireComplete) {
-  if (promptEntries.length !== migration.counts.prompts) error(`prompt count drift: ${promptEntries.length} != ${migration.counts.prompts}`);
-  if (artifactEntries.length !== migration.counts.artifacts) error(`artifact count drift: ${artifactEntries.length} != ${migration.counts.artifacts}`);
+  if (promptEntries.length !== libraryPolicy.targetCounts.prompts) error(`prompt count drift: ${promptEntries.length} != ${libraryPolicy.targetCounts.prompts}`);
+  if (artifactEntries.length !== libraryPolicy.targetCounts.artifacts) error(`artifact count drift: ${artifactEntries.length} != ${libraryPolicy.targetCounts.artifacts}`);
 }
 
 if (checkGenerated) {
