@@ -75,4 +75,5 @@ assert.match(promptExplorerSource, /<details id="prompt-course-menu" class="prom
 assert.doesNotMatch(promptExplorerSource, /<select id="prompt-course"/u);
 for (const label of professionalCourseLabels) assert.ok(promptExplorerSource.includes(label), `prompt course label missing: ${label}`);
 assert.match(libraryStyles, /\.prompt-course-options \{[^}]*top: calc\(100% \+ \.15rem\)/su);
+assert.match(libraryStyles, /\.prompt-card > details > summary \{[^}]*color: #202122 !important;[^}]*-webkit-text-fill-color: #202122;/su);
 console.log('W53 integrated release: 1600 articles + 16 courses + 1500 prompts + 120 artifacts, professional coverage and GitHub Pages routes OK');

@@ -35,6 +35,8 @@
 .sl-markdown-content pre,
 .sl-markdown-content pre code,
 .sl-markdown-content pre code span { background: #f8f9fa !important; color: #202122 !important; }
+.prompt-card > details > summary { color: #202122 !important; -webkit-text-fill-color: #202122; cursor: pointer; font-weight: 700; }
+.prompt-card > details > summary::marker { color: #54595d; }
 .catalog-meta a { font-weight: 700; }
 astro-dev-toolbar, .kudos { display: none !important; }
 .prompt-actions { display: flex; gap: .7rem; align-items: center; }
