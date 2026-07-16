@@ -16,7 +16,7 @@ const configuredBase = process.env.BASE_PATH ?? '/AI-Learning-Wiki';
 const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 const withBase = (url) => url.startsWith('/') ? `${basePath}${url}` : url;
 
-expect(prompts.prompts.length === 1142, 'prompt count: ' + prompts.prompts.length);
+expect(prompts.prompts.length === 1500, 'prompt count: ' + prompts.prompts.length);
 expect(snippets.snippets.length === 25, 'snippet count: ' + snippets.snippets.length);
 expect(migration.counts.prompts === 1142 && migration.counts.artifacts === 25, 'canonical migration counts changed');
 expect(prompts.counts.sourceModules === 0, 'legacy module source remains active');

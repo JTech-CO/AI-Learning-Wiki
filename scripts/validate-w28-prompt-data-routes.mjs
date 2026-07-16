@@ -13,7 +13,7 @@ const [promptPage, snippetPage, searchPage, prompts, snippets] = await Promise.a
 const attribute = (html, name) => html.match(new RegExp(`\\b${name}="([^"]+)"`))?.[1];
 const resolvesTo = (value, pagePath, expectedPath) => value && new URL(value, `${ORIGIN}${pagePath}`).pathname === expectedPath;
 
-assert.equal(prompts.prompts.length, 1142);
+assert.equal(prompts.prompts.length, 1500);
 assert.equal(snippets.snippets.length, 25);
 assert.ok(resolvesTo(attribute(promptPage, 'data-prompts-url'), `${BASE_PATH}/prompt-explorer/`, `${BASE_PATH}/data/prompts.json`));
 assert.ok(resolvesTo(attribute(snippetPage, 'data-snippets-url'), `${BASE_PATH}/snippet-explorer/`, `${BASE_PATH}/data/snippets.json`));

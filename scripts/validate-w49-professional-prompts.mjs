@@ -32,7 +32,7 @@ for (const prompt of prompts) {
   assert.ok(prompt.template.length >= plan.editorialRules.minimumTemplateCharacters, `${prompt.id}: short template`);
   assert.ok(prompt.examples.length > 0 && prompt.examples[0].output.length > 0, `${prompt.id}: example missing`);
   assert.ok(prompt.tags.every((tag) => controlledTags.has(tag)), `${prompt.id}: uncontrolled tag`);
-  assert.ok(!canonicalIds.has(prompt.id), `${prompt.id}: canonical collision`);
+  if (canonicalIds.has(prompt.id)) { const canonical = readJson(`content-model/library/prompts/${prompt.id}.prompt.json`); assert.deepEqual({ ...canonical, status: `draft` }, prompt, `${prompt.id}: promoted content drift`); }
   assert.ok(fs.existsSync(`content-model/articles/${prompt.relatedWikiSlugs[0]}.article.json`), `${prompt.id}: wiki link missing`);
   assert.doesNotMatch(JSON.stringify(prompt), /EduVerse|에듀버스|가장 먼저 쓰세요|지금 바로|클릭하세요/iu, `${prompt.id}: forbidden source or CTA marker`);
 }
@@ -42,7 +42,7 @@ assert.equal(new Set(templateHashes).size, 358, 'exact duplicate templates found
 assert.equal(enrichments.enrichments.length, 28);
 for (const patch of enrichments.enrichments) {
   const target = readJson(`content-model/library/prompts/${patch.id}.prompt.json`);
-  assert.equal(target.examples.length, 0, `${patch.id}: target changed before promotion`);
+  assert.ok(target.examples.length === 0 || target.examples.some((example) => JSON.stringify(example) === JSON.stringify(patch.example)), `${patch.id}: enrichment drift`);
   assert.ok(patch.example.input.length >= 2 && patch.example.output.length >= 2, `${patch.id}: invalid example patch`);
 }
 assert.deepEqual(manifest.staged.map((item) => item.id).sort(), prompts.map((prompt) => prompt.id).sort());

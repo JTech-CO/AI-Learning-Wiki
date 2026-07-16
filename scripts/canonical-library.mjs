@@ -11,6 +11,14 @@ export const WIKI_COURSES = {
   'agent-systems': { title: 'AI 에이전트', url: '/course/agent-systems/' },
   'responsible-ai': { title: '신뢰할 수 있는 AI', url: '/course/responsible-ai/' },
   'multimodal-ai': { title: '멀티모달 AI', url: '/course/multimodal-ai/' },
+  'prompt-systems': { title: '프롬프트 시스템 설계', url: '/course/prompt-systems/' },
+  'llm-evaluation': { title: 'LLM 평가와 관측성', url: '/course/llm-evaluation/' },
+  'llmops-production': { title: 'LLMOps와 프로덕션 서빙', url: '/course/llmops-production/' },
+  'advanced-rag': { title: '고급 RAG와 지식 시스템', url: '/course/advanced-rag/' },
+  'production-agents': { title: '프로덕션 AI 에이전트', url: '/course/production-agents/' },
+  'post-training-alignment': { title: '사후학습과 정렬 심화', url: '/course/post-training-alignment/' },
+  'ai-security-redteam': { title: 'AI 보안과 레드팀', url: '/course/ai-security-redteam/' },
+  'multimodal-systems': { title: '멀티모달 AI 시스템', url: '/course/multimodal-systems/' },
 };
 
 const TYPE_LABELS = { code: '코드', config: '설정', query: '쿼리', payload: '요청 본문', schema: '스키마', workflow: '워크플로', template: '문서 양식' };

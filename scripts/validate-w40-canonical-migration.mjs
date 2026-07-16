@@ -6,6 +6,7 @@ import { buildPromptLibrary } from './canonical-library.mjs';
 import { ajvMessage, loadLibraryV2Validators, readLibraryEntries } from './library-v2-lib.mjs';
 
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
+const base = JSON.parse(await readFile('content-model/migration/w48-base-library.json', 'utf8'));
 const [migration, prompts, artifacts, validators, built, publicPrompts, publicArtifacts] = await Promise.all([
   readFile('content-model/migration/w40-library-migration.json', 'utf8').then(JSON.parse),
   readLibraryEntries('content-model/library/prompts', '.prompt.json'),
@@ -17,7 +18,7 @@ const [migration, prompts, artifacts, validators, built, publicPrompts, publicAr
 ]);
 
 assert.equal(migration.version, 'W40-2026-07-16');
-assert.equal(prompts.length, 1142);
+assert.equal(prompts.length, 1500);
 assert.equal(artifacts.length, 25);
 assert.equal(migration.counts.promptsWithUsageNotes, 1142);
 assert.equal(migration.counts.promptsWithExamples, 114);
@@ -28,13 +29,14 @@ for (const { file, value } of prompts) assert.equal(validators.validatePrompt(va
 for (const { file, value } of artifacts) assert.equal(validators.validateArtifact(value), true, `${file}: ${ajvMessage(validators.validateArtifact)}`);
 
 const promptIds = prompts.map((entry) => entry.value.id).sort();
+const basePromptIds = promptIds.filter((id) => base.promptIds.includes(id));
 const artifactIds = artifacts.map((entry) => entry.value.id).sort();
-assert.equal(sha256(promptIds.join('\n')), migration.compatibility.publicPromptIdsSha256);
+assert.equal(sha256(basePromptIds.join('\n')), migration.compatibility.publicPromptIdsSha256);
 assert.equal(sha256(artifactIds.join('\n')), migration.compatibility.publicArtifactIdsSha256);
 assert.deepEqual(publicPrompts.prompts.map((item) => item.id).sort(), promptIds);
 assert.deepEqual(publicArtifacts.snippets.map((item) => item.id).sort(), artifactIds);
 assert.equal(built.counts.sourceModules, 0);
-assert.equal(built.counts.prompts, 1142);
+assert.equal(built.counts.prompts, 1500);
 assert.equal(built.counts.snippets, 25);
 
 for (const file of ['scripts/prompt-library.mjs', 'scripts/build-pages.mjs', 'scripts/validate-content.mjs']) {

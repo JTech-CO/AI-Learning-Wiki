@@ -68,9 +68,9 @@ assert.match(responsibleCourse, /^title: "신뢰할 수 있는 AI"$/mu);
 assert.doesNotMatch(responsibleCourse, /안전하고 신뢰할 수 있는 AI/u);
 assert.equal(wiki.courses.find((course) => course.id === 'responsible-ai')?.title, '신뢰할 수 있는 AI');
 
-assert.equal(promptData.prompts.length, 1142, 'public prompt count changed');
+assert.equal(promptData.prompts.length, 1500, 'public prompt count changed');
 assert.equal(promptData.counts.sourceModules, 0, 'legacy prompt source is active');
-assert.equal(promptData.counts.canonicalPrompts, 1142, 'canonical prompt count changed');
+assert.equal(promptData.counts.canonicalPrompts, 1500, 'canonical prompt count changed');
 const residualTitleTone = /(?:가장|제일)\s*(?:먼저|쉬운 시작|자주|많이|유용|기본)|첫 질문 추천|바로 쓰기|어디든 복붙|바로 쓰게 정리|복붙|통째|도와줘|뽑기|안 죽는|캐내기|헛소리|토큰 다이어트|써보세요|쓰세요|써라|^[①-⑩]|^\d+[.)]\s*/u;
 const residualTitles = promptData.prompts.filter((prompt) => residualTitleTone.test(prompt.title));
 assert.deepEqual(residualTitles.map((prompt) => [prompt.id, prompt.title]), [], 'CTA, emphasis, or source-site tone remains in prompt titles');

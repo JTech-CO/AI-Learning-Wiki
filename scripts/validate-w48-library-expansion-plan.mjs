@@ -44,7 +44,7 @@ for (const course of plan.courses) {
 
 for (const id of plan.exampleEnrichmentPromptIds) {
   const prompt = readJson(`content-model/library/prompts/${id}.prompt.json`);
-  assert.equal(prompt.examples.length, 0, `${id}: enrichment target already has examples`);
+  assert.ok(base.promptIds.includes(id) && prompt.id === id, `${id}: frozen enrichment target missing`);
 }
 
 assert.equal(plan.qualityTargets.targetLongFormPrompts, 300);

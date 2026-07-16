@@ -13,9 +13,9 @@ const [built, publicPrompts, publicArtifacts, component, artifactComponent, cont
 ]);
 
 assert.equal(built.counts.sourceModules, 0, 'legacy source module is active');
-assert.equal(built.counts.canonicalPrompts, 1142);
+assert.equal(built.counts.canonicalPrompts, 1500);
 assert.equal(built.counts.canonicalArtifacts, 25);
-assert.equal(publicPrompts.prompts.length, 1142);
+assert.equal(publicPrompts.prompts.length, 1500);
 assert.equal(publicArtifacts.snippets.length, 25);
 assert.equal(publicPrompts.policyVersion, 'W39-2026-07-16');
 assert.equal(publicArtifacts.policyVersion, 'W39-2026-07-16');
@@ -38,7 +38,7 @@ const allowedTags = new Set(controlledPolicy.controlledTags.map((item) => item.l
 assert.ok(publicPrompts.prompts.every((item) => item.tags.length >= 1 && item.tags.length <= 6 && item.tags.every((tag) => allowedTags.has(tag))), 'uncontrolled prompt tag remains');
 assert.ok(publicArtifacts.snippets.every((item) => item.tags.length >= 1 && item.tags.length <= 6 && item.tags.every((tag) => allowedTags.has(tag))), 'uncontrolled artifact tag remains');
 assert.ok(publicPrompts.prompts.every((item) => item.notes.length >= 10), 'prompt usage note missing');
-assert.equal(publicPrompts.prompts.filter((item) => item.examples.length > 0).length, 114);
+assert.equal(publicPrompts.prompts.filter((item) => item.examples.length > 0).length, 500);
 assert.deepEqual(new Set(publicArtifacts.snippets.map((item) => item.type)), new Set(['code', 'config', 'query', 'payload', 'template']));
 assert.ok(publicArtifacts.snippets.every((item) => item.runtime && item.validation && item.securityNotes.length > 0));
 assert.ok(!/EduVerse|에듀버스/iu.test(JSON.stringify(publicPrompts.prompts)));
