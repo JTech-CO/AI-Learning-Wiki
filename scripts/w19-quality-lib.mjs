@@ -82,7 +82,8 @@ export async function loadW19Inputs() {
     readdir(ARTICLE_DIR),
     readFile('content-model/taxonomy/topic-ledger.json', 'utf8').then(JSON.parse),
   ]);
-  const articleFiles = files.filter((file) => file.endsWith('.article.json')).sort();
+  const baselineIds = new Set(taxonomy.topics.map((topic) => topic.id));
+  const articleFiles = files.filter((file) => file.endsWith('.article.json') && baselineIds.has(file.replace('.article.json', ''))).sort();
   const loaded = await Promise.all(articleFiles.map(async (file) => {
     const raw = await readFile(path.join(ARTICLE_DIR, file), 'utf8');
     return { file, raw, article: JSON.parse(raw) };

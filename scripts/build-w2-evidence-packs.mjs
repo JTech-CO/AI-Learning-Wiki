@@ -45,7 +45,7 @@ function addDays(date, days) {
   return value.toISOString();
 }
 
-const packs = articles.sort((a, b) => a.id.localeCompare(b.id)).map((article) => {
+const packs = articles.filter((article) => topicById.has(article.id)).sort((a, b) => a.id.localeCompare(b.id)).map((article) => {
   const topic = topicById.get(article.id);
   const research = researchById.get(article.id);
   const sourcesByUrl = new Map();

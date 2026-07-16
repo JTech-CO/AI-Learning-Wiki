@@ -11,6 +11,8 @@ const planFiles = fs.readdirSync(plansDir).filter((name) => name.endsWith('.cour
 const plans = planFiles.map((name) => JSON.parse(fs.readFileSync(path.join(plansDir, name), 'utf8')));
 const currentCourseIds = new Set(['ai-start', 'ai-intro', 'ai-work', 'ai-builder', 'ai-engineer', 'automation', 'ai-finance', 'ai-trends']);
 const articleIds = new Set(fs.readdirSync(path.join(root, 'content-model', 'articles')).filter((name) => name.endsWith('.article.json')).map((name) => name.replace('.article.json', '')));
+const w46 = JSON.parse(fs.readFileSync(path.join(root, 'content-model', 'evidence', 'w46-claim-ledger.json'), 'utf8'));
+const publishedExpansionIds = new Set(w46.articles.filter((item) => item.publicationReady).map((item) => item.articleId));
 
 const assert = (condition, message) => { if (!condition) throw new Error(message); };
 assert(plans.length === 8, `W41 expected 8 plans, got ${plans.length}`);
@@ -35,7 +37,7 @@ for (const plan of plans) {
       assert(articleIds.has(step.articleId), `${plan.id}: missing article ${step.articleId}`);
       existingRefs += 1;
     } else {
-      assert(!articleIds.has(step.candidateId), `${plan.id}: planned ID already exists ${step.candidateId}`);
+      assert(!articleIds.has(step.candidateId) || publishedExpansionIds.has(step.candidateId), `${plan.id}: planned ID exists outside the W46 publication set ${step.candidateId}`);
       assert(!candidateIds.has(step.candidateId), `${plan.id}: duplicate candidate ${step.candidateId}`);
       candidateIds.add(step.candidateId);
       plannedRefs += 1;

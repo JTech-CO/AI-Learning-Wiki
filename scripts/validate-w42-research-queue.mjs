@@ -16,10 +16,12 @@ const assert = (condition, message) => { if (!condition) throw new Error(message
 
 assert(validate(queue), JSON.stringify(validate.errors));
 const articleIds = new Set(fs.readdirSync(path.join(root, 'content-model', 'articles')).filter((name) => name.endsWith('.article.json')).map((name) => name.replace('.article.json', '')));
+const w46 = readJson('content-model/evidence/w46-claim-ledger.json');
+const publishedExpansionIds = new Set(w46.articles.filter((item) => item.publicationReady).map((item) => item.articleId));
 const candidateIds = queue.candidates.map((item) => item.id);
 assert(new Set(candidateIds).size === 200, 'W42 candidate IDs must be unique');
 assert(queue.candidates.every((item, index) => item.order === index + 1), 'W42 candidate order must be contiguous');
-assert(queue.candidates.every((item) => !articleIds.has(item.id)), 'W42 candidates must not duplicate existing articles');
+assert(queue.candidates.every((item) => !articleIds.has(item.id) || publishedExpansionIds.has(item.id)), 'W42 candidate exists outside the W46 publication set');
 const normalizeTitle = (value) => String(value || '').toLocaleLowerCase('ko-KR').replace(/[^\p{L}\p{N}]/gu, '');
 const articleTitles = new Set();
 for (const file of fs.readdirSync(path.join(root, 'content-model', 'articles')).filter((name) => name.endsWith('.article.json'))) {
@@ -28,7 +30,11 @@ for (const file of fs.readdirSync(path.join(root, 'content-model', 'articles')).
 }
 const candidateTitles = queue.candidates.flatMap((item) => [normalizeTitle(item.title.ko), normalizeTitle(item.title.en)]);
 assert(new Set(candidateTitles).size === 400, 'W42 candidate titles must be unique');
-assert(candidateTitles.every((title) => !articleTitles.has(title)), 'W42 candidate title duplicates an existing article');
+for (const candidate of queue.candidates) {
+  if (!articleIds.has(candidate.id)) continue;
+  const article = readJson(`content-model/articles/${candidate.id}.article.json`);
+  assert(normalizeTitle(article.title) === normalizeTitle(candidate.title.ko) && normalizeTitle(article.englishTitle) === normalizeTitle(candidate.title.en), `${candidate.id}: published title differs from W42 candidate`);
+}
 assert(queue.candidates.every((item) => item.relatedExistingArticleIds.every((id) => articleIds.has(id))), 'W42 related article is missing');
 
 for (const [category, expected] of Object.entries(queue.distribution)) {

@@ -47,6 +47,7 @@ const topicById = new Map(topicLedger.topics.map((topic) => [topic.id, topic]));
 const researchById = new Map(w1Evidence.topics.map((topic) => [topic.topicId, topic]));
 const sourceId = (url) => `src-${createHash('sha256').update(url).digest('hex').slice(0, 12)}`;
 const seenArticles = new Set();
+const baselineArticleCount = topicLedger.topics.filter((topic) => articleById.has(topic.id)).length;
 const dayMap = {
   evergreen: qualityPolicy.review.evergreenReviewDays,
   periodic: qualityPolicy.review.periodicReviewDays,
@@ -107,7 +108,7 @@ for (const pack of packsFile.articles) {
   if (JSON.stringify(pack.audit) !== JSON.stringify(expectedAudit)) errors.push(`${pack.articleId}: audit calculation mismatch`);
 }
 
-if (seenArticles.size !== articles.length || packsFile.articles.length !== articles.length) errors.push(`expected ${articles.length} evidence packs, found ${packsFile.articles.length}`);
+if (seenArticles.size !== baselineArticleCount || packsFile.articles.length !== baselineArticleCount) errors.push(`expected ${baselineArticleCount} evidence packs, found ${packsFile.articles.length}`);
 const pilotCategories = new Set();
 if (pilotManifest.articles.length !== 14) errors.push(`expected 14 W2 pilot articles, found ${pilotManifest.articles.length}`);
 for (const item of pilotManifest.articles) {
@@ -121,13 +122,13 @@ for (const item of pilotManifest.articles) {
   for (const source of item.sources) if (!pack.sources.some((candidate) => candidate.url === source.url && candidate.relevanceStatus === 'editor-linked')) errors.push(`${item.articleId}: curated pilot source missing: ${source.url}`);
 }
 if (pilotCategories.size !== 14) errors.push(`W2 pilot must cover 14 categories, found ${pilotCategories.size}`);
-if (queueFile.queue.length !== articles.length || new Set(queueFile.queue.map((item) => item.articleId)).size !== articles.length) errors.push('remediation queue must cover every existing article exactly once');
+if (queueFile.queue.length !== baselineArticleCount || new Set(queueFile.queue.map((item) => item.articleId)).size !== baselineArticleCount) errors.push('remediation queue must cover every W0 baseline article exactly once');
 const readyCount = packsFile.articles.filter((pack) => pack.audit.readyForManualClaimReview).length;
-if (summary.totals.articles !== articles.length || summary.totals.readyForManualClaimReview !== readyCount || summary.totals.publicationReady !== 0 || summary.totals.remediationQueue !== articles.length) errors.push('W2 summary totals are invalid');
+if (summary.totals.articles !== baselineArticleCount || summary.totals.readyForManualClaimReview !== readyCount || summary.totals.publicationReady !== 0 || summary.totals.remediationQueue !== baselineArticleCount) errors.push('W2 summary totals are invalid');
 if (packsFile.articles.some((pack) => pack.audit.publicationReady)) errors.push('W2 automation must not mark any article publication-ready');
 
 if (errors.length) {
   console.error(`W2 evidence validation: ${errors.length} error(s)\n${errors.slice(0, 100).join('\n')}`);
   process.exit(1);
 }
-console.log(`W2 evidence validation: ${articles.length} packs, ${verification.sources.length} URL checks, ${readyCount} ready for manual claim review, 0 auto-published`);
+console.log(`W2 evidence validation: ${baselineArticleCount} baseline packs, ${verification.sources.length} URL checks, ${readyCount} ready for manual claim review, 0 auto-published`);

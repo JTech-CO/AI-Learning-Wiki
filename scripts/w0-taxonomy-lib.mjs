@@ -55,11 +55,17 @@ export async function loadW0Taxonomy() {
     }
   }
 
-  for (const article of articles) if (!seenIds.has(article.id)) errors.push(`existing article missing from taxonomy: ${article.id}`);
+  const taxonomyArticles = articles.filter((article) => seenIds.has(article.id));
+  const extensionArticles = articles.filter((article) => !seenIds.has(article.id));
+  const categoryIds = new Set(config.categories.map((category) => category.id));
+  for (const article of extensionArticles) {
+    if (!categoryIds.has(article.categories[0])) errors.push(`extension article has unknown primary category: ${article.id}`);
+    if (article.status !== 'reviewed') errors.push(`extension article is not reviewed: ${article.id}`);
+  }
   if (topics.length !== 1400) errors.push(`expected 1400 topics, found ${topics.length}`);
-  if (topics.filter((topic) => topic.state === 'existing').length !== articles.length) errors.push('existing topic count differs from article count');
-  if (articles.length < 150 || articles.length > 1400) errors.push(`expected 150–1400 existing articles, found ${articles.length}`);
+  if (topics.filter((topic) => topic.state === 'existing').length !== taxonomyArticles.length) errors.push('existing topic count differs from taxonomy article count');
+  if (taxonomyArticles.length < 150 || taxonomyArticles.length > 1400) errors.push(`expected 150..1400 taxonomy articles, found ${taxonomyArticles.length}`);
 
   const digest = createHash('sha256').update(JSON.stringify(topics)).digest('hex');
-  return { config, articles, topics, errors, digest };
+  return { config, articles: taxonomyArticles, extensionArticles, topics, errors, digest };
 }
