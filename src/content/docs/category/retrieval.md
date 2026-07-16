@@ -13,9 +13,19 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 <ul class="wiki-index-list">
 <li data-article-id="entity-linking"><a href="/wiki/entity-linking/">개체 연결</a><span class="wiki-index-summary">개체 연결은 텍스트의 개체 언급을 지식베이스의 고유 항목에 대응시키거나 연결 불가로 판정하는 작업이다.</span></li>
 <li data-article-id="distance-metric-selection"><a href="/wiki/distance-metric-selection/">거리 지표 선택</a><span class="wiki-index-summary">거리 지표 선택은 임베딩 공간에서 어떤 유사도 함수가 과제의 관련성과 인덱스 구조에 맞는지 결정하는 과정이다.</span></li>
+<li data-article-id="retrieval-result-diversity"><a href="/wiki/retrieval-result-diversity/">검색 결과 다양성</a><span class="wiki-index-summary">검색 결과 다양성은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-deduplication"><a href="/wiki/retrieval-deduplication/">검색 결과 중복 제거</a><span class="wiki-index-summary">검색 결과 중복 제거는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-provenance"><a href="/wiki/retrieval-provenance/">검색 결과 출처</a><span class="wiki-index-summary">검색 결과 출처는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-fallback"><a href="/wiki/retrieval-fallback/">검색 대체 전략</a><span class="wiki-index-summary">검색 대체 전략은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-context"><a href="/wiki/retrieval-context/">검색 문맥</a><span class="wiki-index-summary">검색 문맥은 질의에 응답하기 위해 검색 시스템이 선택해 생성 모델에 제공하는 문서 조각과 메타데이터의 집합이다.</span></li>
+<li data-article-id="retrieval-index-migration"><a href="/wiki/retrieval-index-migration/">검색 색인 마이그레이션</a><span class="wiki-index-summary">검색 색인 마이그레이션은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-capacity-planning"><a href="/wiki/retrieval-capacity-planning/">검색 용량 계획</a><span class="wiki-index-summary">검색 용량 계획은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-hit-rate"><a href="/wiki/retrieval-hit-rate/">검색 적중률</a><span class="wiki-index-summary">검색 적중률은 질의의 상위 k 결과 안에 하나 이상의 정답 또는 관련 항목이 포함된 비율이다.</span></li>
+<li data-article-id="retrieval-access-control"><a href="/wiki/retrieval-access-control/">검색 접근 제어</a><span class="wiki-index-summary">검색 접근 제어는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="rag"><a href="/wiki/rag/">검색 증강 생성</a><span class="wiki-index-summary">외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.</span></li>
+<li data-article-id="query-routing-for-retrieval"><a href="/wiki/query-routing-for-retrieval/">검색 질의 라우팅</a><span class="wiki-index-summary">검색 질의 라우팅은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-cache-invalidation"><a href="/wiki/retrieval-cache-invalidation/">검색 캐시 무효화</a><span class="wiki-index-summary">검색 캐시 무효화는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-quality-slo"><a href="/wiki/retrieval-quality-slo/">검색 품질 SLO</a><span class="wiki-index-summary">검색 품질 SLO은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-filtering"><a href="/wiki/retrieval-filtering/">검색 필터링</a><span class="wiki-index-summary">검색 필터링은 의미 또는 키워드 검색 전후에 메타데이터·권한·시간·품질 조건으로 후보 문서를 제한하는 과정이다.</span></li>
 <li data-article-id="retriever"><a href="/wiki/retriever/">검색기</a><span class="wiki-index-summary">질의와 관련된 문서나 청크 후보를 저장소에서 찾는 구성 요소다.</span></li>
 <li data-article-id="hierarchical-navigable-small-world"><a href="/wiki/hierarchical-navigable-small-world/">계층적 탐색 가능 소세계 그래프</a><span class="wiki-index-summary">계층적 탐색 가능 소세계 그래프는 벡터를 여러 층의 근접 그래프로 연결해 근사 최근접 이웃을 빠르게 찾는 인덱스다.</span></li>
@@ -41,6 +51,7 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 <h2 id="index-ko-r">ㄹ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="reranker"><a href="/wiki/reranker/">리랭커</a><span class="wiki-index-summary">초기 검색 후보를 질의 관련성 기준으로 다시 정렬하는 모델이나 규칙이다.</span></li>
+<li data-article-id="reranker-budgeting"><a href="/wiki/reranker-budgeting/">리랭커 예산 관리</a><span class="wiki-index-summary">리랭커 예산 관리는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="listwise-ranking"><a href="/wiki/listwise-ranking/">리스트와이즈 순위화</a><span class="wiki-index-summary">리스트와이즈 순위화는 한 질의의 후보 목록 전체와 정답 순위를 함께 고려해 학습하는 방법이다.</span></li>
 </ul>
 </section>
@@ -93,6 +104,7 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 <li data-article-id="index-replication"><a href="/wiki/index-replication/">인덱스 복제</a><span class="wiki-index-summary">인덱스 복제는 같은 검색 인덱스의 사본을 여러 노드에 유지해 처리량과 가용성을 높이는 방식이다.</span></li>
 <li data-article-id="index-sharding"><a href="/wiki/index-sharding/">인덱스 샤딩</a><span class="wiki-index-summary">인덱스 샤딩은 큰 검색 인덱스를 키 범위·해시·의미 영역 등에 따라 여러 노드나 파티션으로 나누는 방식이다.</span></li>
 <li data-article-id="citation"><a href="/wiki/citation/">인용</a><span class="wiki-index-summary">주장이나 생성 결과가 근거로 삼은 자료의 위치와 출처를 표시하는 정보다.</span></li>
+<li data-article-id="citation-grounding-contract"><a href="/wiki/citation-grounding-contract/">인용 근거 계약</a><span class="wiki-index-summary">인용 근거 계약은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="citation-generation"><a href="/wiki/citation-generation/">인용 생성</a><span class="wiki-index-summary">인용 생성은 생성 답변의 주장과 그 주장을 뒷받침하는 검색 문서 위치를 연결해 표시하는 과정이다.</span></li>
 <li data-article-id="embedding"><a href="/wiki/embedding/">임베딩</a><span class="wiki-index-summary">문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다.</span></li>
 <li data-article-id="embedding-drift"><a href="/wiki/embedding-drift/">임베딩 드리프트</a><span class="wiki-index-summary">임베딩 드리프트는 모델, 데이터 또는 전처리 변경으로 같은 입력의 벡터 분포와 이웃 관계가 시간에 따라 달라지는 현상이다.</span></li>
@@ -158,6 +170,7 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="hybrid-search"><a href="/wiki/hybrid-search/">하이브리드 검색</a><span class="wiki-index-summary">하이브리드 검색은 키워드 기반 희소 점수와 임베딩 기반 밀집 점수를 결합해 후보를 찾는 방식이다.</span></li>
+<li data-article-id="hybrid-retrieval-weighting"><a href="/wiki/hybrid-retrieval-weighting/">하이브리드 검색 가중치</a><span class="wiki-index-summary">하이브리드 검색 가중치는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="hybrid-rag"><a href="/wiki/hybrid-rag/">하이브리드 RAG</a><span class="wiki-index-summary">하이브리드 RAG는 생성 모델에 문맥을 공급할 때 키워드·밀집 벡터·지식 그래프 등 둘 이상의 검색 방식을 결합하는 검색 증강 생성 구조다.</span></li>
 <li data-article-id="sparse-neural-retrieval"><a href="/wiki/sparse-neural-retrieval/">희소 신경 검색</a><span class="wiki-index-summary">희소 신경 검색은 신경망이 어휘 차원의 희소 가중치를 생성해 역색인에서 의미 확장과 정확한 용어 일치를 함께 사용하는 방식이다.</span></li>
 <li data-article-id="sparse-embedding"><a href="/wiki/sparse-embedding/">희소 임베딩</a><span class="wiki-index-summary">대부분의 차원이 0이고 일부 차원만 값이 있는 고차원 벡터 표현이며 차원이 단어나 학습된 어휘 특징과 연결되는 경우가 많다.</span></li>
@@ -196,7 +209,9 @@ description: "외부 지식을 검색해 생성에 결합하는 기술"
 <section class="wiki-index-group" data-index-group="en-r">
 <h2 id="index-en-r">R</h2>
 <ul class="wiki-index-list">
+<li data-article-id="rag-evidence-lineage"><a href="/wiki/rag-evidence-lineage/">RAG 근거 계보</a><span class="wiki-index-summary">RAG 근거 계보는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="context-compression-for-rag"><a href="/wiki/context-compression-for-rag/">RAG 문맥 압축</a><span class="wiki-index-summary">RAG 문맥 압축은 검색된 자료에서 질의에 필요한 정보만 남겨 생성 모델에 전달할 토큰 수와 잡음을 줄이는 기법이다.</span></li>
+<li data-article-id="rag-index-freshness"><a href="/wiki/rag-index-freshness/">RAG 색인 신선도</a><span class="wiki-index-summary">RAG 색인 신선도는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="recall-at-k"><a href="/wiki/recall-at-k/">Recall@K</a><span class="wiki-index-summary">Recall@K는 전체 관련 문서 중 검색 결과 상위 K개 안에 포함된 비율이다.</span></li>
 </ul>
 </section>

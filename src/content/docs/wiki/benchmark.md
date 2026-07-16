@@ -141,10 +141,46 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
+- [개별 채점 평가 설계](/wiki/pointwise-evaluation-design/)
+- [견고성 평가 그리드](/wiki/robustness-evaluation-grid/)
+- [골든 세트 거버넌스](/wiki/golden-set-governance/)
+- [다국어 평가 프로토콜](/wiki/multilingual-evaluation-protocol/)
+- [도메인 전문가 평가](/wiki/domain-expert-evaluation/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 29개 문서 보기</summary>
+
+- [루브릭 신뢰도](/wiki/rubric-reliability/)
 - [모델 평가](/wiki/evaluation/)
+- [반사실 평가](/wiki/counterfactual-evaluation/)
+- [벤치마크 갱신 정책](/wiki/benchmark-refresh-policy/)
+- [벤치마크 폐기](/wiki/benchmark-retirement/)
+- [순차 평가](/wiki/sequential-evaluation/)
+- [쉐도 평가](/wiki/shadow-evaluation/)
+- [슬라이스 기반 릴리스 게이트](/wiki/slice-based-release-gate/)
+- [쌍대 비교 평가 설계](/wiki/pairwise-evaluation-design/)
+- [역량 회귀](/wiki/capability-regression/)
+- [온라인 평가 드리프트](/wiki/online-evaluation-drift/)
 - [정확도](/wiki/accuracy/)
+- [카나리 평가](/wiki/canary-evaluation/)
+- [판정 길이 편향 통제](/wiki/judge-length-bias-control/)
+- [판정 모델 교정 곡선](/wiki/judge-calibration-curve/)
+- [판정 위치 무작위화](/wiki/judge-position-randomization/)
+- [평가 데이터셋 계보](/wiki/evaluation-dataset-lineage/)
+- [평가 슬라이스](/wiki/evaluation-slice/)
+- [평가 신뢰구간](/wiki/evaluation-confidence-interval/)
+- [평가 예산 배분](/wiki/evaluation-budget-allocation/)
+- [평가 오류 분류 체계](/wiki/evaluation-error-taxonomy/)
+- [평가 오염 감사](/wiki/evaluation-contamination-audit/)
+- [평가 의사결정 로그](/wiki/evaluation-decision-log/)
 - [평가 지표](/wiki/metric/)
+- [행동 회귀](/wiki/behavioral-regression/)
 - [F1 점수](/wiki/f1-score/)
+- [LLM 판정 앙상블](/wiki/llm-judge-ensemble/)
+- [LLM 평가 계약](/wiki/llm-evaluation-contract/)
+- [LLM 평가자 간 일치도](/wiki/inter-rater-agreement-for-llm/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 

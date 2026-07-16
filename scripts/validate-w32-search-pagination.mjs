@@ -9,7 +9,7 @@ const [component, css, wiki, prompts, snippets] = await Promise.all([
   readFile('public/data/snippets.json', 'utf8').then(JSON.parse),
 ]);
 
-assert.equal(wiki.articles.length, 1400, 'wiki search corpus changed');
+assert.equal(wiki.articles.length, 1600, 'wiki search corpus changed');
 assert.equal(prompts.prompts.length, 1142, 'prompt search corpus changed');
 assert.equal(snippets.snippets.length, 25, 'snippet search corpus changed');
 assert.match(component, /id="wiki-search-pagination"[^>]*aria-label="검색 결과 페이지"/, 'search pagination navigation missing');

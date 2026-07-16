@@ -145,9 +145,30 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 이 문서를 가리키는 문서
 
 - [보상 모델](/wiki/reward-model/)
+- [보상 모델 교정](/wiki/reward-model-calibration/)
+- [보상 모델 드리프트](/wiki/reward-model-drift/)
+- [보상 모델 앙상블](/wiki/reward-model-ensemble/)
+- [사후학습 계보](/wiki/post-training-lineage/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 14개 문서 보기</summary>
+
+- [사후학습 데이터 오염 제거](/wiki/post-training-data-decontamination/)
+- [사후학습 재현성](/wiki/post-training-reproducibility/)
+- [사후학습 제거 실험](/wiki/post-training-ablation/)
+- [사후학습 체크포인트 선택](/wiki/post-training-checkpoint-selection/)
+- [선호 데이터 거버넌스](/wiki/preference-data-governance/)
+- [선호 변화 관측](/wiki/preference-shift-monitoring/)
+- [선호 쌍 품질](/wiki/preference-pair-quality/)
+- [정렬 역량 보존](/wiki/alignment-capability-retention/)
+- [정렬 평가 게이트](/wiki/alignment-evaluation-gate/)
 - [지도 미세조정](/wiki/supervised-fine-tuning/)
 - [지시 튜닝](/wiki/instruction-tuning/)
 - [직접 선호 최적화](/wiki/dpo/)
+- [DPO 베타 선택](/wiki/dpo-beta-selection/)
+- [SFT 데이터 혼합](/wiki/sft-data-mixture/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 

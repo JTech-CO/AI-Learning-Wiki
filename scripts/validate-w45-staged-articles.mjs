@@ -26,6 +26,7 @@ const queueById = new Map(queue.candidates.map((item) => [item.id, item]));
 const manifestById = new Map(manifest.items.map((item) => [item.articleId, item]));
 const existingIds = new Set(fs.readdirSync(path.join(root, 'content-model', 'articles')).filter((name) => name.endsWith('.article.json')).map((name) => name.replace('.article.json', '')));
 const draftIds = new Set(files.map((name) => name.replace('.article.json', '')));
+const preW46Ids = new Set([...existingIds].filter((id) => !draftIds.has(id)));
 const titles = new Set();
 const bodies = new Set();
 
@@ -43,9 +44,9 @@ for (const file of files) {
   assert(chars >= 3000 && item.characters === chars, `${article.id}: body too short or manifest mismatch (${chars})`);
   assert(article.sources.length === 4, `${article.id}: expected 4 sources`);
   assert(article.sections.every((section) => section.sourceRefs?.length >= 1 && section.sourceRefs.every((ref) => article.sources[ref - 1])), `${article.id}: source mapping gap`);
-  assert(article.prerequisites.every((id) => existingIds.has(id)), `${article.id}: prerequisite must be a published anchor`);
+  assert(article.prerequisites.every((id) => preW46Ids.has(id)), `${article.id}: prerequisite must be a published anchor`);
   assert(article.related.every((id) => existingIds.has(id) || draftIds.has(id)), `${article.id}: unresolved related ref`);
-  assert(!existingIds.has(article.id), `${article.id}: staging ID collides with published article`);
+  assert(!preW46Ids.has(article.id), `${article.id}: staging ID collides with published article`);
   const bodyText = article.sections.map((section) => section.body).join('\\n');
   assert(!/에듀버스|W4[0-9]|가장 먼저 쓰세요|클릭하세요|따라해/.test(bodyText) && !Array.from(bodyText).some((char) => char.codePointAt(0) >= 0x1f300), article.id + ': source-site or milestone residue');
   assert(!/은\(는\)|이\(가\)|을\(를\)/.test(article.sections.map((section) => section.body).join('\n')), `${article.id}: unresolved Korean particle`);

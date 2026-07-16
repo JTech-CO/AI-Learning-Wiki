@@ -115,7 +115,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [과제 벡터](/wiki/task-vector/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 83개 문서 보기</summary>
+<summary>나머지 98개 문서 보기</summary>
 
 - [과제 적응](/wiki/task-adaptation/)
 - [교사 강요](/wiki/teacher-forcing/)
@@ -142,6 +142,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [문서 패킹](/wiki/document-packing/)
 - [문장 순서 예측](/wiki/sentence-order-prediction/)
 - [벤치마크 오염](/wiki/benchmark-contamination/)
+- [보상 모델 교정](/wiki/reward-model-calibration/)
+- [보상 모델 드리프트](/wiki/reward-model-drift/)
+- [보상 모델 앙상블](/wiki/reward-model-ensemble/)
 - [보상 해킹](/wiki/reward-hacking/)
 - [보조 손실](/wiki/auxiliary-loss/)
 - [복원 손실](/wiki/reconstruction-loss/)
@@ -149,8 +152,16 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [브래들리-테리 모형](/wiki/bradley-terry-model/)
 - [사전학습](/wiki/pretraining/)
 - [사전학습 파이프라인](/wiki/pretraining-pipeline/)
+- [사후학습 계보](/wiki/post-training-lineage/)
+- [사후학습 데이터 오염 제거](/wiki/post-training-data-decontamination/)
+- [사후학습 재현성](/wiki/post-training-reproducibility/)
+- [사후학습 제거 실험](/wiki/post-training-ablation/)
+- [사후학습 체크포인트 선택](/wiki/post-training-checkpoint-selection/)
 - [선호 데이터](/wiki/preference-data/)
+- [선호 데이터 거버넌스](/wiki/preference-data-governance/)
+- [선호 변화 관측](/wiki/preference-shift-monitoring/)
 - [선호 손실](/wiki/preference-loss/)
+- [선호 쌍 품질](/wiki/preference-pair-quality/)
 - [시퀀스 분류 미세조정](/wiki/sequence-classification-fine-tuning/)
 - [시퀀스 패킹](/wiki/sequence-packing/)
 - [쌍대 선호 순위화](/wiki/pairwise-preference-ranking/)
@@ -167,6 +178,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [잡음 제거 목표](/wiki/denoising-objective/)
 - [전문가 병렬화](/wiki/expert-parallelism/)
 - [전체 파라미터 미세조정](/wiki/full-parameter-fine-tuning/)
+- [정렬 역량 보존](/wiki/alignment-capability-retention/)
+- [정렬 평가 게이트](/wiki/alignment-evaluation-gate/)
 - [정책 모델](/wiki/policy-model/)
 - [정책 목적 함수](/wiki/policy-objective/)
 - [증류 손실](/wiki/distillation-loss/)
@@ -195,10 +208,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [All-Reduce](/wiki/all-reduce/)
 - [Best-of-N 표본추출](/wiki/best-of-n-sampling/)
 - [DoRA](/wiki/dora/)
+- [DPO 베타 선택](/wiki/dpo-beta-selection/)
 - [IA3](/wiki/ia3/)
 - [KL 페널티](/wiki/kl-penalty/)
 - [LLM용 근접 정책 최적화](/wiki/proximal-policy-optimization-for-llm/)
 - [QLoRA](/wiki/qlora/)
+- [SFT 데이터 혼합](/wiki/sft-data-mixture/)
 - [ZeRO 옵티마이저](/wiki/zero-redundancy-optimizer/)
 
 </details>

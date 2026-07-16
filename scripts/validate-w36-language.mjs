@@ -5,7 +5,7 @@ import path from 'node:path';
 const read = (file) => readFile(file, 'utf8');
 const articleFiles = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json'));
 const generatedFiles = (await readdir('src/content/docs/wiki')).filter((file) => file.endsWith('.md'));
-assert.equal(articleFiles.length, 1400, 'wiki article source count changed');
+assert.equal(articleFiles.length, 1600, 'wiki article source count changed');
 assert.equal(generatedFiles.length, articleFiles.length, 'generated wiki article count changed');
 
 const bannedLiteralTranslations = /판단 문턱|릴리스 문턱|합격 문턱|지연과 비용 문턱|출력 소비자|건조 실행|새 연산을 내|기능의 종료 경로|호환 배포|호출 흔적|무공짜 점심 정리/u;

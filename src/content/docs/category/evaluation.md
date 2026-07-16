@@ -11,10 +11,13 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-g">
 <h2 id="index-ko-g">ㄱ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="pointwise-evaluation-design"><a href="/wiki/pointwise-evaluation-design/">개별 채점 평가 설계</a><span class="wiki-index-summary">개별 채점 평가 설계는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pointwise-llm-judge"><a href="/wiki/pointwise-llm-judge/">개별 LLM 심사</a><span class="wiki-index-summary">개별 LLM 심사은 평가 모델이 한 응답을 독립적으로 보고 절대 등급이나 수치 점수를 부여하는 방식이다.</span></li>
 <li data-article-id="retrieval-evaluation"><a href="/wiki/retrieval-evaluation/">검색 평가</a><span class="wiki-index-summary">검색 평가는 질의에 대해 관련 문서가 결과 목록의 적절한 위치에 나타나는지를 측정하는 과정이다.</span></li>
+<li data-article-id="robustness-evaluation-grid"><a href="/wiki/robustness-evaluation-grid/">견고성 평가 그리드</a><span class="wiki-index-summary">견고성 평가 그리드는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="planning-evaluation"><a href="/wiki/planning-evaluation/">계획 평가</a><span class="wiki-index-summary">계획 평가는 목표를 달성하기 위해 만든 행동 순서가 타당하고 효율적이며 제약을 지키는지를 측정한다.</span></li>
 <li data-article-id="area-under-curve"><a href="/wiki/area-under-curve/">곡선 아래 면적</a><span class="wiki-index-summary">성능 곡선 아래의 면적을 하나의 수로 요약한 값이며 어떤 곡선과 적분 규칙을 사용했는지 함께 명시해야 한다.</span></li>
+<li data-article-id="golden-set-governance"><a href="/wiki/golden-set-governance/">골든 세트 거버넌스</a><span class="wiki-index-summary">골든 세트 거버넌스는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="task-benchmark"><a href="/wiki/task-benchmark/">과제 벤치마크</a><span class="wiki-index-summary">과제 벤치마크는 번역·분류·코드 생성처럼 명시된 한 과제의 성능을 비교하기 위한 데이터와 채점 규칙이다.</span></li>
 <li data-article-id="task-completion-rate"><a href="/wiki/task-completion-rate/">과제 완료율</a><span class="wiki-index-summary">과제 완료율은 할당된 작업 중 명시한 완료 조건에 도달한 작업의 비율이다.</span></li>
 <li data-article-id="observability"><a href="/wiki/observability/">관측성</a><span class="wiki-index-summary">로그·메트릭·추적 정보로 시스템 내부 상태와 실패 원인을 이해할 수 있는 정도다.</span></li>
@@ -31,9 +34,11 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-d">
 <h2 id="index-ko-d">ㄷ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="multilingual-evaluation-protocol"><a href="/wiki/multilingual-evaluation-protocol/">다국어 평가 프로토콜</a><span class="wiki-index-summary">다국어 평가 프로토콜은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="answer-relevance"><a href="/wiki/answer-relevance/">답변 관련성</a><span class="wiki-index-summary">답변 관련성은 생성된 답이 사용자의 질문 의도와 필요한 정보에 얼마나 직접 대응하는지를 나타낸다.</span></li>
 <li data-article-id="data-annotation"><a href="/wiki/data-annotation/">데이터 주석</a><span class="wiki-index-summary">데이터 주석은 원시 데이터에 범주, 경계, 관계, 선호나 설명을 부여해 학습·평가에 사용할 참조 정보를 만드는 과정이다.</span></li>
 <li data-article-id="tool-use-evaluation"><a href="/wiki/tool-use-evaluation/">도구 사용 평가</a><span class="wiki-index-summary">도구 사용 평가는 에이전트가 적절한 도구를 선택하고 올바른 인수로 호출하며 결과와 오류를 정확히 처리하는지를 측정한다.</span></li>
+<li data-article-id="domain-expert-evaluation"><a href="/wiki/domain-expert-evaluation/">도메인 전문가 평가</a><span class="wiki-index-summary">도메인 전문가 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="dynamic-benchmark"><a href="/wiki/dynamic-benchmark/">동적 벤치마크</a><span class="wiki-index-summary">동적 벤치마크는 모델 성능과 실패 양상에 맞추어 평가 사례를 지속적으로 수집·갱신하는 벤치마크다.</span></li>
 </ul>
 </section>
@@ -42,6 +47,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <ul class="wiki-index-list">
 <li data-article-id="log-loss"><a href="/wiki/log-loss/">로그 손실</a><span class="wiki-index-summary">모델이 실제 클래스에 부여한 확률의 음의 로그를 평균한 확률적 분류 손실이다.</span></li>
 <li data-article-id="rubric-based-judge"><a href="/wiki/rubric-based-judge/">루브릭 기반 심사</a><span class="wiki-index-summary">루브릭 기반 심사은 명시된 평가 차원, 등급 설명과 감점 조건에 따라 후보 응답을 채점하는 방식이다.</span></li>
+<li data-article-id="rubric-reliability"><a href="/wiki/rubric-reliability/">루브릭 신뢰도</a><span class="wiki-index-summary">루브릭 신뢰도는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="leaderboard"><a href="/wiki/leaderboard/">리더보드</a><span class="wiki-index-summary">리더보드는 동일한 평가 규칙으로 측정한 모델이나 시스템의 성능을 순위와 함께 공개하는 표다.</span></li>
 <li data-article-id="likert-scale"><a href="/wiki/likert-scale/">리커트 척도</a><span class="wiki-index-summary">리커트 척도는 응답자가 진술에 대한 동의나 평가 정도를 순서가 있는 여러 범주 중 하나로 표시하는 척도다.</span></li>
 </ul>
@@ -59,10 +65,13 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-b">
 <h2 id="index-ko-b">ㅂ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="counterfactual-evaluation"><a href="/wiki/counterfactual-evaluation/">반사실 평가</a><span class="wiki-index-summary">반사실 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="benchmark"><a href="/wiki/benchmark/">벤치마크</a><span class="wiki-index-summary">여러 모델이나 시스템을 비교하기 위해 고정한 과제·데이터·평가 지표의 묶음이다.</span></li>
+<li data-article-id="benchmark-refresh-policy"><a href="/wiki/benchmark-refresh-policy/">벤치마크 갱신 정책</a><span class="wiki-index-summary">벤치마크 갱신 정책은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="benchmark-dataset"><a href="/wiki/benchmark-dataset/">벤치마크 데이터셋</a><span class="wiki-index-summary">벤치마크 데이터셋은 모델이나 방법을 같은 입력과 정답 기준에서 비교하도록 고정한 평가용 데이터 모음이다.</span></li>
 <li data-article-id="benchmark-suite"><a href="/wiki/benchmark-suite/">벤치마크 모음</a><span class="wiki-index-summary">벤치마크 모음은 여러 과제·데이터셋·지표를 하나의 평가 프로토콜로 묶어 시스템의 다양한 능력을 측정하는 구성이다.</span></li>
 <li data-article-id="benchmark-validity"><a href="/wiki/benchmark-validity/">벤치마크 타당도</a><span class="wiki-index-summary">벤치마크 타당도는 평가 점수가 측정하려는 실제 능력이나 사용 목표를 얼마나 제대로 대표하는지를 뜻한다.</span></li>
+<li data-article-id="benchmark-retirement"><a href="/wiki/benchmark-retirement/">벤치마크 폐기</a><span class="wiki-index-summary">벤치마크 폐기는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="benchmark-saturation"><a href="/wiki/benchmark-saturation/">벤치마크 포화</a><span class="wiki-index-summary">벤치마크 포화는 많은 시스템이 평가 상한에 가까워져 점수 차이가 실제 능력 차이를 충분히 구분하지 못하는 상태다.</span></li>
 <li data-article-id="bootstrap-confidence-interval"><a href="/wiki/bootstrap-confidence-interval/">부트스트랩 신뢰구간</a><span class="wiki-index-summary">부트스트랩 신뢰구간은 관측 표본을 복원 추출해 통계량의 경험적 표집분포를 만들고 그 분위수 등으로 구한 불확실성 구간이다.</span></li>
 <li data-article-id="brier-score"><a href="/wiki/brier-score/">브라이어 점수</a><span class="wiki-index-summary">브라이어 점수는 확률 예측과 실제 이진 결과 사이의 제곱 오차 평균으로 확률 예측의 정확성을 평가한다.</span></li>
@@ -74,6 +83,9 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <ul class="wiki-index-list">
 <li data-article-id="user-feedback-collection"><a href="/wiki/user-feedback-collection/">사용자 피드백 수집</a><span class="wiki-index-summary">사용자 피드백 수집은 실제 이용자가 AI 결과의 유용성·정확성·안전성에 제공한 명시적·암묵적 신호를 구조화해 기록하는 과정이다.</span></li>
 <li data-article-id="generation-evaluation"><a href="/wiki/generation-evaluation/">생성 평가</a><span class="wiki-index-summary">생성 평가는 모델 출력의 정확성, 관련성, 유창성, 다양성, 안전성과 과제 제약 준수를 측정하는 과정이다.</span></li>
+<li data-article-id="sequential-evaluation"><a href="/wiki/sequential-evaluation/">순차 평가</a><span class="wiki-index-summary">순차 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="shadow-evaluation"><a href="/wiki/shadow-evaluation/">쉐도 평가</a><span class="wiki-index-summary">쉐도 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="slice-based-release-gate"><a href="/wiki/slice-based-release-gate/">슬라이스 기반 릴리스 게이트</a><span class="wiki-index-summary">슬라이스 기반 릴리스 게이트는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="win-rate"><a href="/wiki/win-rate/">승률</a><span class="wiki-index-summary">승률은 두 모델이나 방법을 쌍대 비교했을 때 한쪽이 더 낫다고 판정된 비율이다.</span></li>
 <li data-article-id="simulation-based-evaluation"><a href="/wiki/simulation-based-evaluation/">시뮬레이션 기반 평가</a><span class="wiki-index-summary">시뮬레이션 기반 평가는 실제 환경을 모사한 상태 전이와 사용자·도구 모델 안에서 AI 시스템의 행동을 반복 시험하는 방법이다.</span></li>
 <li data-article-id="judge-model"><a href="/wiki/judge-model/">심사 모델</a><span class="wiki-index-summary">심사 모델은 하나 이상의 후보 응답을 평가 기준에 따라 채점하거나 비교하도록 지시된 언어 모델이다.</span></li>
@@ -88,6 +100,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-ko-ss">ㅆ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="pairwise-comparison"><a href="/wiki/pairwise-comparison/">쌍대 비교</a><span class="wiki-index-summary">쌍대 비교는 두 후보를 동시에 제시하고 어느 쪽이 기준에 더 부합하는지 선택하게 하는 평가 방식이다.</span></li>
+<li data-article-id="pairwise-evaluation-design"><a href="/wiki/pairwise-evaluation-design/">쌍대 비교 평가 설계</a><span class="wiki-index-summary">쌍대 비교 평가 설계는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pairwise-llm-judge"><a href="/wiki/pairwise-llm-judge/">쌍대 LLM 심사</a><span class="wiki-index-summary">쌍대 LLM 심사은 평가 모델이 두 후보 응답을 나란히 비교해 더 나은 쪽이나 동률을 선택하는 방식이다.</span></li>
 </ul>
 </section>
@@ -96,6 +109,8 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <ul class="wiki-index-list">
 <li data-article-id="safety-benchmark"><a href="/wiki/safety-benchmark/">안전 벤치마크</a><span class="wiki-index-summary">안전 벤치마크는 유해 출력, 편향, 보안 취약성이나 거부 행동 등 모델의 위험 관련 특성을 측정하는 평가다.</span></li>
 <li data-article-id="agent-evaluation"><a href="/wiki/agent-evaluation/">에이전트 평가</a><span class="wiki-index-summary">에이전트 평가는 자율 시스템의 최종 결과뿐 아니라 계획, 도구 사용, 상태 관리, 복구와 안전한 중단 능력을 측정하는 과정이다.</span></li>
+<li data-article-id="capability-regression"><a href="/wiki/capability-regression/">역량 회귀</a><span class="wiki-index-summary">역량 회귀는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="online-evaluation-drift"><a href="/wiki/online-evaluation-drift/">온라인 평가 드리프트</a><span class="wiki-index-summary">온라인 평가 드리프트는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="exact-match"><a href="/wiki/exact-match/">완전 일치</a><span class="wiki-index-summary">완전 일치는 예측 문자열이나 구조가 정답과 사전에 정한 정규화 뒤 정확히 같은지를 세는 평가 지표다.</span></li>
 <li data-article-id="human-evaluation"><a href="/wiki/human-evaluation/">인간 평가</a><span class="wiki-index-summary">인간 평가는 사람이 정의된 기준에 따라 모델 출력의 품질·선호·안전성 등을 직접 판단하는 평가 방식이다.</span></li>
 <li data-article-id="citation-correctness"><a href="/wiki/citation-correctness/">인용 정확성</a><span class="wiki-index-summary">인용 정확성은 답변에 붙은 인용이 해당 주장과 올바른 출처를 실제로 연결하는 정도다.</span></li>
@@ -133,6 +148,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-k">
 <h2 id="index-ko-k">ㅋ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="canary-evaluation"><a href="/wiki/canary-evaluation/">카나리 평가</a><span class="wiki-index-summary">카나리 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="crowdsourced-evaluation"><a href="/wiki/crowdsourced-evaluation/">크라우드소싱 평가</a><span class="wiki-index-summary">크라우드소싱 평가는 온라인 참여자 집단에 작은 평가 과제를 분배해 대규모 판단 데이터를 수집하는 방식이다.</span></li>
 </ul>
 </section>
@@ -147,8 +163,18 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-p">
 <h2 id="index-ko-p">ㅍ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="judge-length-bias-control"><a href="/wiki/judge-length-bias-control/">판정 길이 편향 통제</a><span class="wiki-index-summary">판정 길이 편향 통제는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="judge-calibration-curve"><a href="/wiki/judge-calibration-curve/">판정 모델 교정 곡선</a><span class="wiki-index-summary">판정 모델 교정 곡선은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="judge-position-randomization"><a href="/wiki/judge-position-randomization/">판정 위치 무작위화</a><span class="wiki-index-summary">판정 위치 무작위화는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-dataset-lineage"><a href="/wiki/evaluation-dataset-lineage/">평가 데이터셋 계보</a><span class="wiki-index-summary">평가 데이터셋 계보는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="evaluation-rubric"><a href="/wiki/evaluation-rubric/">평가 루브릭</a><span class="wiki-index-summary">평가 루브릭은 결과를 판단할 기준과 수준별 설명, 배점 규칙을 명시한 채점 도구다.</span></li>
 <li data-article-id="evaluation-uncertainty"><a href="/wiki/evaluation-uncertainty/">평가 불확실성</a><span class="wiki-index-summary">평가 불확실성은 제한된 표본·평가자·무작위 실행·측정 오류 때문에 보고된 모델 성능이 참 성능과 다를 수 있는 정도다.</span></li>
+<li data-article-id="evaluation-slice"><a href="/wiki/evaluation-slice/">평가 슬라이스</a><span class="wiki-index-summary">평가 슬라이스는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-confidence-interval"><a href="/wiki/evaluation-confidence-interval/">평가 신뢰구간</a><span class="wiki-index-summary">평가 신뢰구간은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-budget-allocation"><a href="/wiki/evaluation-budget-allocation/">평가 예산 배분</a><span class="wiki-index-summary">평가 예산 배분은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-error-taxonomy"><a href="/wiki/evaluation-error-taxonomy/">평가 오류 분류 체계</a><span class="wiki-index-summary">평가 오류 분류 체계는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-contamination-audit"><a href="/wiki/evaluation-contamination-audit/">평가 오염 감사</a><span class="wiki-index-summary">평가 오염 감사는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-decision-log"><a href="/wiki/evaluation-decision-log/">평가 의사결정 로그</a><span class="wiki-index-summary">평가 의사결정 로그는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="metric"><a href="/wiki/metric/">평가 지표</a><span class="wiki-index-summary">성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다.</span></li>
 <li data-article-id="evaluation-sampling"><a href="/wiki/evaluation-sampling/">평가 표본추출</a><span class="wiki-index-summary">평가 표본추출은 전체 가능한 입력 중 평가에 사용할 사례를 규칙에 따라 선택하는 과정이다.</span></li>
 <li data-article-id="inter-rater-reliability"><a href="/wiki/inter-rater-reliability/">평가자 간 신뢰도</a><span class="wiki-index-summary">평가자 간 신뢰도는 여러 평가자의 점수가 평가 대상의 차이를 일관되게 반영하는 정도를 통계적으로 측정한 값이다.</span></li>
@@ -159,6 +185,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-h">
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="behavioral-regression"><a href="/wiki/behavioral-regression/">행동 회귀</a><span class="wiki-index-summary">행동 회귀는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="confusion-matrix"><a href="/wiki/confusion-matrix/">혼동 행렬</a><span class="wiki-index-summary">분류 모델의 실제 클래스와 예측 클래스를 교차표로 집계해 어떤 종류의 정답과 오류가 발생했는지 보여 주는 행렬이다.</span></li>
 <li data-article-id="regression-evaluation"><a href="/wiki/regression-evaluation/">회귀 테스트형 평가</a><span class="wiki-index-summary">회귀 테스트형 평가는 모델·프롬프트·데이터 변경 뒤 이전에 통과하던 사례와 핵심 지표가 나빠지지 않았는지 확인하는 반복 시험이다.</span></li>
 <li data-article-id="effect-size"><a href="/wiki/effect-size/">효과 크기</a><span class="wiki-index-summary">효과 크기는 두 조건의 차이나 변수 관계의 크기를 표본 수와 분리해 정량화한 값이다.</span></li>
@@ -202,6 +229,9 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-en-l">L</h2>
 <ul class="wiki-index-list">
 <li data-article-id="llm-as-a-judge"><a href="/wiki/llm-as-a-judge/">LLM 심사자</a><span class="wiki-index-summary">언어 모델을 사용해 다른 모델 출력의 품질을 판정하거나 비교하는 평가 방식이다.</span></li>
+<li data-article-id="llm-judge-ensemble"><a href="/wiki/llm-judge-ensemble/">LLM 판정 앙상블</a><span class="wiki-index-summary">LLM 판정 앙상블은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-evaluation-contract"><a href="/wiki/llm-evaluation-contract/">LLM 평가 계약</a><span class="wiki-index-summary">LLM 평가 계약은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inter-rater-agreement-for-llm"><a href="/wiki/inter-rater-agreement-for-llm/">LLM 평가자 간 일치도</a><span class="wiki-index-summary">LLM 평가자 간 일치도는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-m">

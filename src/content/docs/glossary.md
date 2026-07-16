@@ -10,6 +10,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <h2 id="index-ko-g">ㄱ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="guardrail"><a href="/wiki/guardrail/">가드레일</a><span class="wiki-en">Guardrail</span></li>
+<li data-article-id="guardrail-coverage-matrix"><a href="/wiki/guardrail-coverage-matrix/">가드레일 커버리지 행렬</a><span class="wiki-en">Guardrail Coverage Matrix</span></li>
 <li data-article-id="pseudonymization"><a href="/wiki/pseudonymization/">가명화</a><span class="wiki-en">Pseudonymization</span></li>
 <li data-article-id="additive-attention"><a href="/wiki/additive-attention/">가산 어텐션</a><span class="wiki-en">Additive Attention</span></li>
 <li data-article-id="hypothesis"><a href="/wiki/hypothesis/">가설</a><span class="wiki-en">Hypothesis</span></li>
@@ -31,6 +32,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="concept-activation-vector"><a href="/wiki/concept-activation-vector/">개념 활성화 벡터</a><span class="wiki-en">Concept Activation Vector</span></li>
 <li data-article-id="open-neural-network-exchange"><a href="/wiki/open-neural-network-exchange/">개방형 신경망 교환 형식</a><span class="wiki-en">Open Neural Network Exchange</span></li>
 <li data-article-id="open-vocabulary-detection"><a href="/wiki/open-vocabulary-detection/">개방형 어휘 객체 탐지</a><span class="wiki-en">Open-Vocabulary Detection</span></li>
+<li data-article-id="pointwise-evaluation-design"><a href="/wiki/pointwise-evaluation-design/">개별 채점 평가 설계</a><span class="wiki-en">Pointwise Evaluation Design</span></li>
 <li data-article-id="pointwise-llm-judge"><a href="/wiki/pointwise-llm-judge/">개별 LLM 심사</a><span class="wiki-en">Pointwise LLM Judge</span></li>
 <li data-article-id="personally-identifiable-information"><a href="/wiki/personally-identifiable-information/">개인 식별 정보</a><span class="wiki-en">Personally Identifiable Information</span></li>
 <li data-article-id="privacy-audit"><a href="/wiki/privacy-audit/">개인정보 감사</a><span class="wiki-en">Privacy Audit</span></li>
@@ -42,18 +44,30 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="metric-space"><a href="/wiki/metric-space/">거리 공간</a><span class="wiki-en">Metric Space</span></li>
 <li data-article-id="distance-metric-selection"><a href="/wiki/distance-metric-selection/">거리 지표 선택</a><span class="wiki-en">Distance Metric Selection</span></li>
 <li data-article-id="metric-learning"><a href="/wiki/metric-learning/">거리 학습</a><span class="wiki-en">Metric Learning</span></li>
+<li data-article-id="retrieval-result-diversity"><a href="/wiki/retrieval-result-diversity/">검색 결과 다양성</a><span class="wiki-en">Retrieval-result Diversity</span></li>
+<li data-article-id="retrieval-deduplication"><a href="/wiki/retrieval-deduplication/">검색 결과 중복 제거</a><span class="wiki-en">Retrieval Deduplication</span></li>
+<li data-article-id="retrieval-provenance"><a href="/wiki/retrieval-provenance/">검색 결과 출처</a><span class="wiki-en">Retrieval Provenance</span></li>
 <li data-article-id="retrieval-transformer"><a href="/wiki/retrieval-transformer/">검색 결합 트랜스포머</a><span class="wiki-en">Retrieval Transformer</span></li>
 <li data-article-id="retrieval-prompt"><a href="/wiki/retrieval-prompt/">검색 결합 프롬프트</a><span class="wiki-en">Retrieval Prompt</span></li>
+<li data-article-id="retrieval-fallback"><a href="/wiki/retrieval-fallback/">검색 대체 전략</a><span class="wiki-en">Retrieval Fallback</span></li>
 <li data-article-id="retrieval-context"><a href="/wiki/retrieval-context/">검색 문맥</a><span class="wiki-en">Retrieval Context</span></li>
+<li data-article-id="retrieval-index-migration"><a href="/wiki/retrieval-index-migration/">검색 색인 마이그레이션</a><span class="wiki-en">Retrieval Index Migration</span></li>
+<li data-article-id="retrieval-capacity-planning"><a href="/wiki/retrieval-capacity-planning/">검색 용량 계획</a><span class="wiki-en">Retrieval Capacity Planning</span></li>
 <li data-article-id="retrieval-hit-rate"><a href="/wiki/retrieval-hit-rate/">검색 적중률</a><span class="wiki-en">Retrieval Hit Rate</span></li>
+<li data-article-id="retrieval-access-control"><a href="/wiki/retrieval-access-control/">검색 접근 제어</a><span class="wiki-en">Retrieval Access Control</span></li>
 <li data-article-id="rag"><a href="/wiki/rag/">검색 증강 생성</a><span class="wiki-en">Retrieval-Augmented Generation</span></li>
+<li data-article-id="query-routing-for-retrieval"><a href="/wiki/query-routing-for-retrieval/">검색 질의 라우팅</a><span class="wiki-en">Query Routing for Retrieval</span></li>
+<li data-article-id="retrieval-cache-invalidation"><a href="/wiki/retrieval-cache-invalidation/">검색 캐시 무효화</a><span class="wiki-en">Retrieval Cache Invalidation</span></li>
+<li data-article-id="retrieval-content-trust"><a href="/wiki/retrieval-content-trust/">검색 콘텐츠 신뢰</a><span class="wiki-en">Retrieval Content Trust</span></li>
 <li data-article-id="retrieval-evaluation"><a href="/wiki/retrieval-evaluation/">검색 평가</a><span class="wiki-en">Retrieval Evaluation</span></li>
+<li data-article-id="retrieval-quality-slo"><a href="/wiki/retrieval-quality-slo/">검색 품질 SLO</a><span class="wiki-en">Retrieval Quality SLO</span></li>
 <li data-article-id="retrieval-filtering"><a href="/wiki/retrieval-filtering/">검색 필터링</a><span class="wiki-en">Retrieval Filtering</span></li>
 <li data-article-id="retriever"><a href="/wiki/retriever/">검색기</a><span class="wiki-en">Retriever</span></li>
 <li data-article-id="validation-set"><a href="/wiki/validation-set/">검증 데이터셋</a><span class="wiki-en">Validation Set</span></li>
 <li data-article-id="validation-loss"><a href="/wiki/validation-loss/">검증 손실</a><span class="wiki-en">Validation Loss</span></li>
 <li data-article-id="verifier-agent"><a href="/wiki/verifier-agent/">검증 에이전트</a><span class="wiki-en">Verifier Agent</span></li>
 <li data-article-id="gated-recurrent-unit"><a href="/wiki/gated-recurrent-unit/">게이트 순환 유닛</a><span class="wiki-en">Gated Recurrent Unit</span></li>
+<li data-article-id="robustness-evaluation-grid"><a href="/wiki/robustness-evaluation-grid/">견고성 평가 그리드</a><span class="wiki-en">Robustness Evaluation Grid</span></li>
 <li data-article-id="outcome-reward-model"><a href="/wiki/outcome-reward-model/">결과 보상 모델</a><span class="wiki-en">Outcome Reward Model</span></li>
 <li data-article-id="decision-tree"><a href="/wiki/decision-tree/">결정 트리</a><span class="wiki-en">Decision Tree</span></li>
 <li data-article-id="deterministic-inference"><a href="/wiki/deterministic-inference/">결정적 추론</a><span class="wiki-en">Deterministic Inference</span></li>
@@ -81,6 +95,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="good-old-fashioned-ai"><a href="/wiki/good-old-fashioned-ai/">고전적 인공지능</a><span class="wiki-en">Good Old-Fashioned Artificial Intelligence</span></li>
 <li data-article-id="high-dimensional-geometry"><a href="/wiki/high-dimensional-geometry/">고차원 기하학</a><span class="wiki-en">High-Dimensional Geometry</span></li>
 <li data-article-id="area-under-curve"><a href="/wiki/area-under-curve/">곡선 아래 면적</a><span class="wiki-en">Area Under the Curve</span></li>
+<li data-article-id="golden-set-governance"><a href="/wiki/golden-set-governance/">골든 세트 거버넌스</a><span class="wiki-en">Golden-set Governance</span></li>
 <li data-article-id="product-quantization"><a href="/wiki/product-quantization/">곱 양자화</a><span class="wiki-en">Product Quantization</span></li>
 <li data-article-id="spatial-reasoning"><a href="/wiki/spatial-reasoning/">공간 추론</a><span class="wiki-en">Spatial Reasoning</span></li>
 <li data-article-id="joint-embedding-space"><a href="/wiki/joint-embedding-space/">공동 임베딩 공간</a><span class="wiki-en">Joint Embedding Space</span></li>
@@ -105,6 +120,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="corrigibility"><a href="/wiki/corrigibility/">교정 가능성</a><span class="wiki-en">Corrigibility</span></li>
 <li data-article-id="corrective-rag"><a href="/wiki/corrective-rag/">교정형 RAG</a><span class="wiki-en">Corrective RAG</span></li>
 <li data-article-id="intersectional-fairness"><a href="/wiki/intersectional-fairness/">교차 공정성</a><span class="wiki-en">Intersectional Fairness</span></li>
+<li data-article-id="cross-modal-latency-budget"><a href="/wiki/cross-modal-latency-budget/">교차 모달 지연 예산</a><span class="wiki-en">Cross-modal Latency Budget</span></li>
 <li data-article-id="interleaved-multimodal-data"><a href="/wiki/interleaved-multimodal-data/">교차 배열 멀티모달 데이터</a><span class="wiki-en">Interleaved Multimodal Data</span></li>
 <li data-article-id="cross-site-request-forgery"><a href="/wiki/cross-site-request-forgery/">교차 사이트 요청 위조</a><span class="wiki-en">Cross-Site Request Forgery</span></li>
 <li data-article-id="cross-entropy"><a href="/wiki/cross-entropy/">교차 엔트로피</a><span class="wiki-en">Cross-Entropy</span></li>
@@ -115,6 +131,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="span-corruption"><a href="/wiki/span-corruption/">구간 손상 복원</a><span class="wiki-en">Span Corruption</span></li>
 <li data-article-id="passage-retrieval"><a href="/wiki/passage-retrieval/">구절 검색</a><span class="wiki-en">Passage Retrieval</span></li>
 <li data-article-id="structured-output"><a href="/wiki/structured-output/">구조화 출력</a><span class="wiki-en">Structured Output</span></li>
+<li data-article-id="structured-output-recovery"><a href="/wiki/structured-output-recovery/">구조화 출력 복구</a><span class="wiki-en">Structured Output Recovery</span></li>
 <li data-article-id="local-global-optimum"><a href="/wiki/local-global-optimum/">국소 최적점과 전역 최적점</a><span class="wiki-en">Local and Global Optimum</span></li>
 <li data-article-id="clustering"><a href="/wiki/clustering/">군집화</a><span class="wiki-en">Clustering</span></li>
 <li data-article-id="inductive-bias"><a href="/wiki/inductive-bias/">귀납적 편향</a><span class="wiki-en">Inductive Bias</span></li>
@@ -154,6 +171,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="basis-vector"><a href="/wiki/basis-vector/">기저 벡터</a><span class="wiki-en">Basis Vector</span></li>
 <li data-article-id="symbolic-ai"><a href="/wiki/symbolic-ai/">기호주의 인공지능</a><span class="wiki-en">Symbolic Artificial Intelligence</span></li>
 <li data-article-id="equality-of-opportunity"><a href="/wiki/equality-of-opportunity/">기회 균등</a><span class="wiki-en">Equality of Opportunity</span></li>
+<li data-article-id="long-context-routing"><a href="/wiki/long-context-routing/">긴 문맥 라우팅</a><span class="wiki-en">Long-context Routing</span></li>
 <li data-article-id="length-extrapolation"><a href="/wiki/length-extrapolation/">길이 외삽</a><span class="wiki-en">Length Extrapolation</span></li>
 <li data-article-id="length-penalty"><a href="/wiki/length-penalty/">길이 페널티</a><span class="wiki-en">Length Penalty</span></li>
 <li data-article-id="mixture-of-depths"><a href="/wiki/mixture-of-depths/">깊이 혼합</a><span class="wiki-en">Mixture of Depths</span></li>
@@ -182,6 +200,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <ul class="wiki-index-list">
 <li data-article-id="multilingual-capability"><a href="/wiki/multilingual-capability/">다국어 능력</a><span class="wiki-en">Multilingual Capability</span></li>
 <li data-article-id="multilingual-language-model"><a href="/wiki/multilingual-language-model/">다국어 언어 모델</a><span class="wiki-en">Multilingual Language Model</span></li>
+<li data-article-id="multilingual-evaluation-protocol"><a href="/wiki/multilingual-evaluation-protocol/">다국어 평가 프로토콜</a><span class="wiki-en">Multilingual Evaluation Protocol</span></li>
 <li data-article-id="multivariable-calculus"><a href="/wiki/multivariable-calculus/">다변수 미적분학</a><span class="wiki-en">Multivariable Calculus</span></li>
 <li data-article-id="diverse-beam-search"><a href="/wiki/diverse-beam-search/">다양성 빔 탐색</a><span class="wiki-en">Diverse Beam Search</span></li>
 <li data-article-id="manifold-learning"><a href="/wiki/manifold-learning/">다양체 학습</a><span class="wiki-en">Manifold Learning</span></li>
@@ -208,6 +227,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="fallback-model"><a href="/wiki/fallback-model/">대체 모델</a><span class="wiki-en">Fallback Model</span></li>
 <li data-article-id="conversation-memory"><a href="/wiki/conversation-memory/">대화 메모리</a><span class="wiki-en">Conversation Memory</span></li>
 <li data-article-id="conversation-context"><a href="/wiki/conversation-context/">대화 문맥</a><span class="wiki-en">Conversation Context</span></li>
+<li data-article-id="conversation-state-compaction"><a href="/wiki/conversation-state-compaction/">대화 상태 압축</a><span class="wiki-en">Conversation State Compaction</span></li>
 <li data-article-id="interactive-notebook"><a href="/wiki/interactive-notebook/">대화형 노트북</a><span class="wiki-en">Interactive Notebook</span></li>
 <li data-article-id="interactive-model-demo"><a href="/wiki/interactive-model-demo/">대화형 모델 데모</a><span class="wiki-en">Interactive Model Demo</span></li>
 <li data-article-id="data-leakage"><a href="/wiki/data-leakage/">데이터 누수</a><span class="wiki-en">Data Leakage</span></li>
@@ -235,6 +255,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="tool-result"><a href="/wiki/tool-result/">도구 결과</a><span class="wiki-en">Tool Result</span></li>
 <li data-article-id="tool-result-handling"><a href="/wiki/tool-result-handling/">도구 결과 처리</a><span class="wiki-en">Tool Result Handling</span></li>
 <li data-article-id="tool-permission"><a href="/wiki/tool-permission/">도구 권한</a><span class="wiki-en">Tool Permission</span></li>
+<li data-article-id="tool-permission-broker"><a href="/wiki/tool-permission-broker/">도구 권한 브로커</a><span class="wiki-en">Tool Permission Broker</span></li>
 <li data-article-id="tool-registry"><a href="/wiki/tool-registry/">도구 레지스트리</a><span class="wiki-en">Tool Registry</span></li>
 <li data-article-id="tool-discovery"><a href="/wiki/tool-discovery/">도구 발견</a><span class="wiki-en">Tool Discovery</span></li>
 <li data-article-id="tool-side-effect"><a href="/wiki/tool-side-effect/">도구 부작용</a><span class="wiki-en">Tool Side Effect</span></li>
@@ -245,9 +266,11 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="tool-error"><a href="/wiki/tool-error/">도구 오류</a><span class="wiki-en">Tool Error</span></li>
 <li data-article-id="tool-argument"><a href="/wiki/tool-argument/">도구 인수</a><span class="wiki-en">Tool Argument</span></li>
 <li data-article-id="tool-definition"><a href="/wiki/tool-definition/">도구 정의</a><span class="wiki-en">Tool Definition</span></li>
+<li data-article-id="tool-output-sanitization"><a href="/wiki/tool-output-sanitization/">도구 출력 정화</a><span class="wiki-en">Tool-output Sanitization</span></li>
 <li data-article-id="tool-calling"><a href="/wiki/tool-calling/">도구 호출</a><span class="wiki-en">Tool Calling</span></li>
 <li data-article-id="domain-name-system"><a href="/wiki/domain-name-system/">도메인 이름 시스템</a><span class="wiki-en">Domain Name System</span></li>
 <li data-article-id="domain-adaptation"><a href="/wiki/domain-adaptation/">도메인 적응</a><span class="wiki-en">Domain Adaptation</span></li>
+<li data-article-id="domain-expert-evaluation"><a href="/wiki/domain-expert-evaluation/">도메인 전문가 평가</a><span class="wiki-en">Domain-expert Evaluation</span></li>
 <li data-article-id="independent-component-analysis"><a href="/wiki/independent-component-analysis/">독립 성분 분석</a><span class="wiki-en">Independent Component Analysis</span></li>
 <li data-article-id="lip-reading"><a href="/wiki/lip-reading/">독순술 인식</a><span class="wiki-en">Lip Reading</span></li>
 <li data-article-id="synchronous-client"><a href="/wiki/synchronous-client/">동기 클라이언트</a><span class="wiki-en">Synchronous Client</span></li>
@@ -271,6 +294,10 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="router-agent"><a href="/wiki/router-agent/">라우터 에이전트</a><span class="wiki-en">Router Agent</span></li>
 <li data-article-id="license-compatibility"><a href="/wiki/license-compatibility/">라이선스 호환성</a><span class="wiki-en">License Compatibility</span></li>
 <li data-article-id="random-forest"><a href="/wiki/random-forest/">랜덤 포레스트</a><span class="wiki-en">Random Forest</span></li>
+<li data-article-id="red-team-evidence-log"><a href="/wiki/red-team-evidence-log/">레드팀 근거 로그</a><span class="wiki-en">Red-team Evidence Log</span></li>
+<li data-article-id="red-team-finding-severity"><a href="/wiki/red-team-finding-severity/">레드팀 발견 심각도</a><span class="wiki-en">Red-team Finding Severity</span></li>
+<li data-article-id="red-team-scenario-coverage"><a href="/wiki/red-team-scenario-coverage/">레드팀 시나리오 커버리지</a><span class="wiki-en">Red-team Scenario Coverage</span></li>
+<li data-article-id="red-team-remediation-verification"><a href="/wiki/red-team-remediation-verification/">레드팀 조치 검증</a><span class="wiki-en">Red-team Remediation Verification</span></li>
 <li data-article-id="label"><a href="/wiki/label/">레이블</a><span class="wiki-en">Label</span></li>
 <li data-article-id="label-smoothing"><a href="/wiki/label-smoothing/">레이블 스무딩</a><span class="wiki-en">Label Smoothing</span></li>
 <li data-article-id="layer-dropping"><a href="/wiki/layer-dropping/">레이어 드로핑</a><span class="wiki-en">Layer Dropping</span></li>
@@ -280,9 +307,11 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="logit"><a href="/wiki/logit/">로짓</a><span class="wiki-en">Logit</span></li>
 <li data-article-id="local-attention"><a href="/wiki/local-attention/">로컬 어텐션</a><span class="wiki-en">Local Attention</span></li>
 <li data-article-id="rubric-based-judge"><a href="/wiki/rubric-based-judge/">루브릭 기반 심사</a><span class="wiki-en">Rubric-Based Judge</span></li>
+<li data-article-id="rubric-reliability"><a href="/wiki/rubric-reliability/">루브릭 신뢰도</a><span class="wiki-en">Rubric Reliability</span></li>
 <li data-article-id="roofline-model"><a href="/wiki/roofline-model/">루프라인 모델</a><span class="wiki-en">Roofline Model</span></li>
 <li data-article-id="leaderboard"><a href="/wiki/leaderboard/">리더보드</a><span class="wiki-en">Leaderboard</span></li>
 <li data-article-id="reranker"><a href="/wiki/reranker/">리랭커</a><span class="wiki-en">Reranker</span></li>
+<li data-article-id="reranker-budgeting"><a href="/wiki/reranker-budgeting/">리랭커 예산 관리</a><span class="wiki-en">Reranker Budgeting</span></li>
 <li data-article-id="listwise-ranking"><a href="/wiki/listwise-ranking/">리스트와이즈 순위화</a><span class="wiki-en">Listwise Ranking</span></li>
 <li data-article-id="likert-scale"><a href="/wiki/likert-scale/">리커트 척도</a><span class="wiki-en">Likert Scale</span></li>
 <li data-article-id="leaky-bucket"><a href="/wiki/leaky-bucket/">리키 버킷</a><span class="wiki-en">Leaky Bucket</span></li>
@@ -304,17 +333,23 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="machine-learning-pipeline"><a href="/wiki/machine-learning-pipeline/">머신러닝 파이프라인</a><span class="wiki-en">Machine Learning Pipeline</span></li>
 <li data-article-id="machine-learning-framework"><a href="/wiki/machine-learning-framework/">머신러닝 프레임워크</a><span class="wiki-en">Machine Learning Framework</span></li>
 <li data-article-id="multi-agent-system"><a href="/wiki/multi-agent-system/">멀티 에이전트 시스템</a><span class="wiki-en">Multi-Agent System</span></li>
+<li data-article-id="multi-lora-serving"><a href="/wiki/multi-lora-serving/">멀티 LoRA 서빙</a><span class="wiki-en">Multi-LoRA Serving</span></li>
 <li data-article-id="multimodal-contrastive-pretraining"><a href="/wiki/multimodal-contrastive-pretraining/">멀티모달 대조 사전학습</a><span class="wiki-en">Multimodal Contrastive Pretraining</span></li>
 <li data-article-id="multimodal-model"><a href="/wiki/multimodal-model/">멀티모달 모델</a><span class="wiki-en">Multimodal Model</span></li>
 <li data-article-id="multimodal-generation"><a href="/wiki/multimodal-generation/">멀티모달 생성</a><span class="wiki-en">Multimodal Generation</span></li>
+<li data-article-id="multimodal-safety-evaluation"><a href="/wiki/multimodal-safety-evaluation/">멀티모달 안전 평가</a><span class="wiki-en">Multimodal Safety Evaluation</span></li>
 <li data-article-id="multimodal-language-model"><a href="/wiki/multimodal-language-model/">멀티모달 언어 모델</a><span class="wiki-en">Multimodal Language Model</span></li>
 <li data-article-id="multimodal-fusion"><a href="/wiki/multimodal-fusion/">멀티모달 융합</a><span class="wiki-en">Multimodal Fusion</span></li>
 <li data-article-id="multimodal-embedding"><a href="/wiki/multimodal-embedding/">멀티모달 임베딩</a><span class="wiki-en">Multimodal Embedding</span></li>
+<li data-article-id="multimodal-input-contract"><a href="/wiki/multimodal-input-contract/">멀티모달 입력 계약</a><span class="wiki-en">Multimodal Input Contract</span></li>
 <li data-article-id="multimodal-instruction-tuning"><a href="/wiki/multimodal-instruction-tuning/">멀티모달 지시 튜닝</a><span class="wiki-en">Multimodal Instruction Tuning</span></li>
 <li data-article-id="multimodal-jailbreak"><a href="/wiki/multimodal-jailbreak/">멀티모달 탈옥 공격</a><span class="wiki-en">Multimodal Jailbreak</span></li>
 <li data-article-id="multimodal-tokenizer"><a href="/wiki/multimodal-tokenizer/">멀티모달 토크나이저</a><span class="wiki-en">Multimodal Tokenizer</span></li>
 <li data-article-id="multimodal-transformer"><a href="/wiki/multimodal-transformer/">멀티모달 트랜스포머</a><span class="wiki-en">Multimodal Transformer</span></li>
 <li data-article-id="multimodal-evaluation"><a href="/wiki/multimodal-evaluation/">멀티모달 평가</a><span class="wiki-en">Multimodal Evaluation</span></li>
+<li data-article-id="multi-agent-deadlock"><a href="/wiki/multi-agent-deadlock/">멀티에이전트 교착 상태</a><span class="wiki-en">Multi-agent Deadlock</span></li>
+<li data-article-id="multi-agent-conflict-mediation"><a href="/wiki/multi-agent-conflict-mediation/">멀티에이전트 충돌 중재</a><span class="wiki-en">Multi-agent Conflict Mediation</span></li>
+<li data-article-id="multi-agent-consensus-protocol"><a href="/wiki/multi-agent-consensus-protocol/">멀티에이전트 합의 프로토콜</a><span class="wiki-en">Multi-agent Consensus Protocol</span></li>
 <li data-article-id="multi-query-attention"><a href="/wiki/multi-query-attention/">멀티쿼리 어텐션</a><span class="wiki-en">Multi-Query Attention</span></li>
 <li data-article-id="multi-head-attention"><a href="/wiki/multi-head-attention/">멀티헤드 어텐션</a><span class="wiki-en">Multi-Head Attention</span></li>
 <li data-article-id="memory-network"><a href="/wiki/memory-network/">메모리 네트워크</a><span class="wiki-en">Memory Network</span></li>
@@ -333,40 +368,53 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="specification-gaming"><a href="/wiki/specification-gaming/">명세 편법 수행</a><span class="wiki-en">Specification Gaming</span></li>
 <li data-article-id="modality"><a href="/wiki/modality/">모달리티</a><span class="wiki-en">Modality</span></li>
 <li data-article-id="modality-gap"><a href="/wiki/modality-gap/">모달리티 격차</a><span class="wiki-en">Modality Gap</span></li>
+<li data-article-id="modality-fallback-policy"><a href="/wiki/modality-fallback-policy/">모달리티 대체 정책</a><span class="wiki-en">Modality Fallback Policy</span></li>
 <li data-article-id="modality-adapter"><a href="/wiki/modality-adapter/">모달리티 어댑터</a><span class="wiki-en">Modality Adapter</span></li>
 <li data-article-id="modality-projection"><a href="/wiki/modality-projection/">모달리티 투영</a><span class="wiki-en">Modality Projection</span></li>
 <li data-article-id="model"><a href="/wiki/model/">모델</a><span class="wiki-en">Model</span></li>
 <li data-article-id="model-availability"><a href="/wiki/model-availability/">모델 가용성</a><span class="wiki-en">Model Availability</span></li>
+<li data-article-id="model-weight-access-control"><a href="/wiki/model-weight-access-control/">모델 가중치 접근 제어</a><span class="wiki-en">Model-weight Access Control</span></li>
 <li data-article-id="model-weights"><a href="/wiki/model-weights/">모델 가중치 파일</a><span class="wiki-en">Model Weights</span></li>
 <li data-article-id="model-pruning"><a href="/wiki/model-pruning/">모델 가지치기</a><span class="wiki-en">Model Pruning</span></li>
 <li data-article-id="model-search"><a href="/wiki/model-search/">모델 검색</a><span class="wiki-en">Model Search</span></li>
 <li data-article-id="model-gateway"><a href="/wiki/model-gateway/">모델 게이트웨이</a><span class="wiki-en">Model Gateway</span></li>
 <li data-article-id="model-lineage"><a href="/wiki/model-lineage/">모델 계보</a><span class="wiki-en">Model Lineage</span></li>
+<li data-article-id="model-supply-chain-security"><a href="/wiki/model-supply-chain-security/">모델 공급망 보안</a><span class="wiki-en">Model Supply-chain Security</span></li>
 <li data-article-id="model-based-planning"><a href="/wiki/model-based-planning/">모델 기반 계획</a><span class="wiki-en">Model-Based Planning</span></li>
+<li data-article-id="model-fallback-chain"><a href="/wiki/model-fallback-chain/">모델 대체 체인</a><span class="wiki-en">Model Fallback Chain</span></li>
 <li data-article-id="model-drift-monitoring"><a href="/wiki/model-drift-monitoring/">모델 드리프트 모니터링</a><span class="wiki-en">Model Drift Monitoring</span></li>
 <li data-article-id="model-license"><a href="/wiki/model-license/">모델 라이선스</a><span class="wiki-en">Model License</span></li>
 <li data-article-id="model-registry"><a href="/wiki/model-registry/">모델 레지스트리</a><span class="wiki-en">Model Registry</span></li>
+<li data-article-id="model-loading-latency"><a href="/wiki/model-loading-latency/">모델 로딩 지연 시간</a><span class="wiki-en">Model-loading Latency</span></li>
 <li data-article-id="model-rollback"><a href="/wiki/model-rollback/">모델 롤백</a><span class="wiki-en">Model Rollback</span></li>
+<li data-article-id="model-rollback-safety"><a href="/wiki/model-rollback-safety/">모델 롤백 안전성</a><span class="wiki-en">Model Rollback Safety</span></li>
 <li data-article-id="model-metadata"><a href="/wiki/model-metadata/">모델 메타데이터</a><span class="wiki-en">Model Metadata</span></li>
 <li data-article-id="model-monitoring-platform"><a href="/wiki/model-monitoring-platform/">모델 모니터링 플랫폼</a><span class="wiki-en">Model Monitoring Platform</span></li>
 <li data-article-id="model-deployment"><a href="/wiki/model-deployment/">모델 배포</a><span class="wiki-en">Model Deployment</span></li>
 <li data-article-id="model-backdoor"><a href="/wiki/model-backdoor/">모델 백도어</a><span class="wiki-en">Model Backdoor</span></li>
 <li data-article-id="model-version"><a href="/wiki/model-version/">모델 버전</a><span class="wiki-en">Model Version</span></li>
+<li data-article-id="model-version-pinning"><a href="/wiki/model-version-pinning/">모델 버전 고정</a><span class="wiki-en">Model Version Pinning</span></li>
 <li data-article-id="model-commoditization"><a href="/wiki/model-commoditization/">모델 범용재화화</a><span class="wiki-en">Model Commoditization</span></li>
 <li data-article-id="model-parallelism"><a href="/wiki/model-parallelism/">모델 병렬화</a><span class="wiki-en">Model Parallelism</span></li>
 <li data-article-id="model-merging"><a href="/wiki/model-merging/">모델 병합</a><span class="wiki-en">Model Merging</span></li>
+<li data-article-id="model-security-disclosure"><a href="/wiki/model-security-disclosure/">모델 보안 취약점 공개</a><span class="wiki-en">Model Security Disclosure</span></li>
 <li data-article-id="model-replica"><a href="/wiki/model-replica/">모델 복제본</a><span class="wiki-en">Model Replica</span></li>
 <li data-article-id="model-collapse"><a href="/wiki/model-collapse/">모델 붕괴</a><span class="wiki-en">Model Collapse</span></li>
 <li data-article-id="model-denial-of-service"><a href="/wiki/model-denial-of-service/">모델 서비스 거부 공격</a><span class="wiki-en">Model Denial of Service</span></li>
 <li data-article-id="model-serving"><a href="/wiki/model-serving/">모델 서빙</a><span class="wiki-en">Model Serving</span></li>
 <li data-article-id="model-serving-platform"><a href="/wiki/model-serving-platform/">모델 서빙 플랫폼</a><span class="wiki-en">Model Serving Platform</span></li>
+<li data-article-id="model-selection-policy"><a href="/wiki/model-selection-policy/">모델 선택 정책</a><span class="wiki-en">Model Selection Policy</span></li>
+<li data-article-id="model-artifact-signing"><a href="/wiki/model-artifact-signing/">모델 아티팩트 서명</a><span class="wiki-en">Model Artifact Signing</span></li>
 <li data-article-id="model-artifact-format"><a href="/wiki/model-artifact-format/">모델 아티팩트 형식</a><span class="wiki-en">Model Artifact Format</span></li>
+<li data-article-id="model-abuse-case-library"><a href="/wiki/model-abuse-case-library/">모델 악용 사례 라이브러리</a><span class="wiki-en">Model Abuse Case Library</span></li>
 <li data-article-id="model-memorization"><a href="/wiki/model-memorization/">모델 암기</a><span class="wiki-en">Model Memorization</span></li>
 <li data-article-id="model-update"><a href="/wiki/model-update/">모델 업데이트</a><span class="wiki-en">Model Update</span></li>
+<li data-article-id="model-capability-profile"><a href="/wiki/model-capability-profile/">모델 역량 프로파일</a><span class="wiki-en">Model Capability Profile</span></li>
 <li data-article-id="model-inversion"><a href="/wiki/model-inversion/">모델 역추론 공격</a><span class="wiki-en">Model Inversion</span></li>
 <li data-article-id="model-poisoning"><a href="/wiki/model-poisoning/">모델 오염</a><span class="wiki-en">Model Poisoning</span></li>
 <li data-article-id="model-capacity"><a href="/wiki/model-capacity/">모델 용량</a><span class="wiki-en">Model Capacity</span></li>
 <li data-article-id="model-repository"><a href="/wiki/model-repository/">모델 저장소</a><span class="wiki-en">Model Repository</span></li>
+<li data-article-id="model-deprecation-migration"><a href="/wiki/model-deprecation-migration/">모델 종료 마이그레이션</a><span class="wiki-en">Model Deprecation Migration</span></li>
 <li data-article-id="model-knowledge"><a href="/wiki/model-knowledge/">모델 지식</a><span class="wiki-en">Model Knowledge</span></li>
 <li data-article-id="model-extraction"><a href="/wiki/model-extraction/">모델 추출 공격</a><span class="wiki-en">Model Extraction</span></li>
 <li data-article-id="model-release"><a href="/wiki/model-release/">모델 출시</a><span class="wiki-en">Model Release</span></li>
@@ -382,7 +430,9 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="evaluation"><a href="/wiki/evaluation/">모델 평가</a><span class="wiki-en">Model Evaluation</span></li>
 <li data-article-id="model-evaluation-report"><a href="/wiki/model-evaluation-report/">모델 평가 보고서</a><span class="wiki-en">Model Evaluation Report</span></li>
 <li data-article-id="model-retirement"><a href="/wiki/model-retirement/">모델 폐기</a><span class="wiki-en">Model Retirement</span></li>
+<li data-article-id="model-fleet-routing"><a href="/wiki/model-fleet-routing/">모델 플릿 라우팅</a><span class="wiki-en">Model Fleet Routing</span></li>
 <li data-article-id="model-hub"><a href="/wiki/model-hub/">모델 허브</a><span class="wiki-en">Model Hub</span></li>
+<li data-article-id="model-compatibility-matrix"><a href="/wiki/model-compatibility-matrix/">모델 호환성 행렬</a><span class="wiki-en">Model Compatibility Matrix</span></li>
 <li data-article-id="model-sparsity"><a href="/wiki/model-sparsity/">모델 희소성</a><span class="wiki-en">Model Sparsity</span></li>
 <li data-article-id="mode-collapse"><a href="/wiki/mode-collapse/">모드 붕괴</a><span class="wiki-en">Mode Collapse</span></li>
 <li data-article-id="momentum-optimizer"><a href="/wiki/momentum-optimizer/">모멘텀 최적화</a><span class="wiki-en">Momentum Optimizer</span></li>
@@ -422,6 +472,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="style-transfer"><a href="/wiki/style-transfer/">문체 변환</a><span class="wiki-en">Style Transfer</span></li>
 <li data-article-id="mini-batch-gradient-descent"><a href="/wiki/mini-batch-gradient-descent/">미니배치 경사하강법</a><span class="wiki-en">Mini-Batch Gradient Descent</span></li>
 <li data-article-id="out-of-vocabulary-token"><a href="/wiki/out-of-vocabulary-token/">미등록 토큰</a><span class="wiki-en">Out-of-Vocabulary Token</span></li>
+<li data-article-id="media-provenance-pipeline"><a href="/wiki/media-provenance-pipeline/">미디어 출처 파이프라인</a><span class="wiki-en">Media Provenance Pipeline</span></li>
 <li data-article-id="derivative"><a href="/wiki/derivative/">미분</a><span class="wiki-en">Derivative</span></li>
 <li data-article-id="fine-tuning"><a href="/wiki/fine-tuning/">미세조정</a><span class="wiki-en">Fine-Tuning</span></li>
 <li data-article-id="sensitive-information-disclosure"><a href="/wiki/sensitive-information-disclosure/">민감정보 노출</a><span class="wiki-en">Sensitive Information Disclosure</span></li>
@@ -437,6 +488,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="byte-pair-encoding"><a href="/wiki/byte-pair-encoding/">바이트 페어 인코딩</a><span class="wiki-en">Byte Pair Encoding</span></li>
 <li data-article-id="repetition-penalty"><a href="/wiki/repetition-penalty/">반복 페널티</a><span class="wiki-en">Repetition Penalty</span></li>
 <li data-article-id="iterative-rag"><a href="/wiki/iterative-rag/">반복형 RAG</a><span class="wiki-en">Iterative RAG</span></li>
+<li data-article-id="counterfactual-evaluation"><a href="/wiki/counterfactual-evaluation/">반사실 평가</a><span class="wiki-en">Counterfactual Evaluation</span></li>
 <li data-article-id="directional-derivative"><a href="/wiki/directional-derivative/">방향 미분</a><span class="wiki-en">Directional Derivative</span></li>
 <li data-article-id="bagging"><a href="/wiki/bagging/">배깅</a><span class="wiki-en">Bagging</span></li>
 <li data-article-id="batch"><a href="/wiki/batch/">배치</a><span class="wiki-en">Batch</span></li>
@@ -459,15 +511,20 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="vector-projection"><a href="/wiki/vector-projection/">벡터 사영</a><span class="wiki-en">Vector Projection</span></li>
 <li data-article-id="vector-index"><a href="/wiki/vector-index/">벡터 인덱스</a><span class="wiki-en">Vector Index</span></li>
 <li data-article-id="benchmark"><a href="/wiki/benchmark/">벤치마크</a><span class="wiki-en">Benchmark</span></li>
+<li data-article-id="benchmark-refresh-policy"><a href="/wiki/benchmark-refresh-policy/">벤치마크 갱신 정책</a><span class="wiki-en">Benchmark Refresh Policy</span></li>
 <li data-article-id="benchmark-dataset"><a href="/wiki/benchmark-dataset/">벤치마크 데이터셋</a><span class="wiki-en">Benchmark Dataset</span></li>
 <li data-article-id="benchmark-registry"><a href="/wiki/benchmark-registry/">벤치마크 레지스트리</a><span class="wiki-en">Benchmark Registry</span></li>
 <li data-article-id="benchmark-suite"><a href="/wiki/benchmark-suite/">벤치마크 모음</a><span class="wiki-en">Benchmark Suite</span></li>
 <li data-article-id="benchmark-contamination"><a href="/wiki/benchmark-contamination/">벤치마크 오염</a><span class="wiki-en">Benchmark Contamination</span></li>
 <li data-article-id="benchmark-validity"><a href="/wiki/benchmark-validity/">벤치마크 타당도</a><span class="wiki-en">Benchmark Validity</span></li>
+<li data-article-id="benchmark-retirement"><a href="/wiki/benchmark-retirement/">벤치마크 폐기</a><span class="wiki-en">Benchmark Retirement</span></li>
 <li data-article-id="benchmark-saturation"><a href="/wiki/benchmark-saturation/">벤치마크 포화</a><span class="wiki-en">Benchmark Saturation</span></li>
 <li data-article-id="variational-autoencoder"><a href="/wiki/variational-autoencoder/">변분 오토인코더</a><span class="wiki-en">Variational Autoencoder</span></li>
 <li data-article-id="parallel-tool-call"><a href="/wiki/parallel-tool-call/">병렬 도구 호출</a><span class="wiki-en">Parallel Tool Call</span></li>
 <li data-article-id="reward-model"><a href="/wiki/reward-model/">보상 모델</a><span class="wiki-en">Reward Model</span></li>
+<li data-article-id="reward-model-calibration"><a href="/wiki/reward-model-calibration/">보상 모델 교정</a><span class="wiki-en">Reward Model Calibration</span></li>
+<li data-article-id="reward-model-drift"><a href="/wiki/reward-model-drift/">보상 모델 드리프트</a><span class="wiki-en">Reward-model Drift</span></li>
+<li data-article-id="reward-model-ensemble"><a href="/wiki/reward-model-ensemble/">보상 모델 앙상블</a><span class="wiki-en">Reward-model Ensemble</span></li>
 <li data-article-id="reward-tampering"><a href="/wiki/reward-tampering/">보상 변조</a><span class="wiki-en">Reward Tampering</span></li>
 <li data-article-id="reward-hacking"><a href="/wiki/reward-hacking/">보상 해킹</a><span class="wiki-en">Reward Hacking</span></li>
 <li data-article-id="secure-aggregation"><a href="/wiki/secure-aggregation/">보안 집계</a><span class="wiki-en">Secure Aggregation</span></li>
@@ -528,6 +585,11 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="pretraining"><a href="/wiki/pretraining/">사전학습</a><span class="wiki-en">Pretraining</span></li>
 <li data-article-id="pretraining-pipeline"><a href="/wiki/pretraining-pipeline/">사전학습 파이프라인</a><span class="wiki-en">Pretraining Pipeline</span></li>
 <li data-article-id="prior-probability"><a href="/wiki/prior-probability/">사전확률</a><span class="wiki-en">Prior Probability</span></li>
+<li data-article-id="post-training-lineage"><a href="/wiki/post-training-lineage/">사후학습 계보</a><span class="wiki-en">Post-training Lineage</span></li>
+<li data-article-id="post-training-data-decontamination"><a href="/wiki/post-training-data-decontamination/">사후학습 데이터 오염 제거</a><span class="wiki-en">Post-training Data Decontamination</span></li>
+<li data-article-id="post-training-reproducibility"><a href="/wiki/post-training-reproducibility/">사후학습 재현성</a><span class="wiki-en">Post-training Reproducibility</span></li>
+<li data-article-id="post-training-ablation"><a href="/wiki/post-training-ablation/">사후학습 제거 실험</a><span class="wiki-en">Post-training Ablation</span></li>
+<li data-article-id="post-training-checkpoint-selection"><a href="/wiki/post-training-checkpoint-selection/">사후학습 체크포인트 선택</a><span class="wiki-en">Post-training Checkpoint Selection</span></li>
 <li data-article-id="posterior-probability"><a href="/wiki/posterior-probability/">사후확률</a><span class="wiki-en">Posterior Probability</span></li>
 <li data-article-id="right-to-deletion"><a href="/wiki/right-to-deletion/">삭제권</a><span class="wiki-en">Right to Deletion</span></li>
 <li data-article-id="correlation"><a href="/wiki/correlation/">상관관계</a><span class="wiki-en">Correlation</span></li>
@@ -561,7 +623,10 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="linear-regression"><a href="/wiki/linear-regression/">선형 회귀</a><span class="wiki-en">Linear Regression</span></li>
 <li data-article-id="linear-layer"><a href="/wiki/linear-layer/">선형층</a><span class="wiki-en">Linear Layer</span></li>
 <li data-article-id="preference-data"><a href="/wiki/preference-data/">선호 데이터</a><span class="wiki-en">Preference Data</span></li>
+<li data-article-id="preference-data-governance"><a href="/wiki/preference-data-governance/">선호 데이터 거버넌스</a><span class="wiki-en">Preference Data Governance</span></li>
+<li data-article-id="preference-shift-monitoring"><a href="/wiki/preference-shift-monitoring/">선호 변화 관측</a><span class="wiki-en">Preference Shift Monitoring</span></li>
 <li data-article-id="preference-loss"><a href="/wiki/preference-loss/">선호 손실</a><span class="wiki-en">Preference Loss</span></li>
+<li data-article-id="preference-pair-quality"><a href="/wiki/preference-pair-quality/">선호 쌍 품질</a><span class="wiki-en">Preference-pair Quality</span></li>
 <li data-article-id="explainable-ai"><a href="/wiki/explainable-ai/">설명 가능한 AI</a><span class="wiki-en">Explainable AI</span></li>
 <li data-article-id="reflection-loop"><a href="/wiki/reflection-loop/">성찰 루프</a><span class="wiki-en">Reflection Loop</span></li>
 <li data-article-id="world-model"><a href="/wiki/world-model/">세계 모델</a><span class="wiki-en">World Model</span></li>
@@ -584,9 +649,11 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="numerical-precision"><a href="/wiki/numerical-precision/">수치 정밀도</a><span class="wiki-en">Numerical Precision</span></li>
 <li data-article-id="learning-to-rank"><a href="/wiki/learning-to-rank/">순위 학습</a><span class="wiki-en">Learning to Rank</span></li>
 <li data-article-id="forward-pass"><a href="/wiki/forward-pass/">순전파</a><span class="wiki-en">Forward Pass</span></li>
+<li data-article-id="sequential-evaluation"><a href="/wiki/sequential-evaluation/">순차 평가</a><span class="wiki-en">Sequential Evaluation</span></li>
 <li data-article-id="recurrent-memory-transformer"><a href="/wiki/recurrent-memory-transformer/">순환 메모리 트랜스포머</a><span class="wiki-en">Recurrent Memory Transformer</span></li>
 <li data-article-id="recurrent-neural-network"><a href="/wiki/recurrent-neural-network/">순환 신경망</a><span class="wiki-en">Recurrent Neural Network</span></li>
 <li data-article-id="recurrent-language-model-memory"><a href="/wiki/recurrent-language-model-memory/">순환형 언어 모델 메모리</a><span class="wiki-en">Recurrent Language Model Memory</span></li>
+<li data-article-id="shadow-evaluation"><a href="/wiki/shadow-evaluation/">쉐도 평가</a><span class="wiki-en">Shadow Evaluation</span></li>
 <li data-article-id="switch-transformer"><a href="/wiki/switch-transformer/">스위치 트랜스포머</a><span class="wiki-en">Switch Transformer</span></li>
 <li data-article-id="scalar"><a href="/wiki/scalar/">스칼라</a><span class="wiki-en">Scalar</span></li>
 <li data-article-id="scaled-dot-product-attention"><a href="/wiki/scaled-dot-product-attention/">스케일드 닷프로덕트 어텐션</a><span class="wiki-en">Scaled Dot-Product Attention</span></li>
@@ -594,11 +661,14 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="schema-validation"><a href="/wiki/schema-validation/">스키마 검증</a><span class="wiki-en">Schema Validation</span></li>
 <li data-article-id="streaming-generation"><a href="/wiki/streaming-generation/">스트리밍 생성</a><span class="wiki-en">Streaming Generation</span></li>
 <li data-article-id="streaming-response"><a href="/wiki/streaming-response/">스트리밍 응답</a><span class="wiki-en">Streaming Response</span></li>
+<li data-article-id="streaming-response-contract"><a href="/wiki/streaming-response-contract/">스트리밍 응답 계약</a><span class="wiki-en">Streaming Response Contract</span></li>
+<li data-article-id="stream-resume-protocol"><a href="/wiki/stream-resume-protocol/">스트림 재개 프로토콜</a><span class="wiki-en">Stream Resume Protocol</span></li>
 <li data-article-id="spiking-neural-network"><a href="/wiki/spiking-neural-network/">스파이킹 신경망</a><span class="wiki-en">Spiking Neural Network</span></li>
 <li data-article-id="spectral-normalization"><a href="/wiki/spectral-normalization/">스펙트럴 정규화</a><span class="wiki-en">Spectral Normalization</span></li>
 <li data-article-id="spectrogram"><a href="/wiki/spectrogram/">스펙트로그램</a><span class="wiki-en">Spectrogram</span></li>
 <li data-article-id="sliding-window-attention"><a href="/wiki/sliding-window-attention/">슬라이딩 윈도 어텐션</a><span class="wiki-en">Sliding-Window Attention</span></li>
 <li data-article-id="sliding-context-window"><a href="/wiki/sliding-context-window/">슬라이딩 컨텍스트 윈도우</a><span class="wiki-en">Sliding Context Window</span></li>
+<li data-article-id="slice-based-release-gate"><a href="/wiki/slice-based-release-gate/">슬라이스 기반 릴리스 게이트</a><span class="wiki-en">Slice-based Release Gate</span></li>
 <li data-article-id="win-rate"><a href="/wiki/win-rate/">승률</a><span class="wiki-en">Win Rate</span></li>
 <li data-article-id="visual-grounding"><a href="/wiki/visual-grounding/">시각 근거화</a><span class="wiki-en">Visual Grounding</span></li>
 <li data-article-id="visual-document-retrieval"><a href="/wiki/visual-document-retrieval/">시각 문서 검색</a><span class="wiki-en">Visual Document Retrieval</span></li>
@@ -612,6 +682,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="demonstration-example"><a href="/wiki/demonstration-example/">시범 예시</a><span class="wiki-en">Demonstration Example</span></li>
 <li data-article-id="system-card"><a href="/wiki/system-card/">시스템 카드</a><span class="wiki-en">System Card</span></li>
 <li data-article-id="system-prompt"><a href="/wiki/system-prompt/">시스템 프롬프트</a><span class="wiki-en">System Prompt</span></li>
+<li data-article-id="system-prompt-composition"><a href="/wiki/system-prompt-composition/">시스템 프롬프트 합성</a><span class="wiki-en">System Prompt Composition</span></li>
 <li data-article-id="beginning-end-token"><a href="/wiki/beginning-end-token/">시작·종료 토큰</a><span class="wiki-en">Beginning and End Token</span></li>
 <li data-article-id="sequence-classification-fine-tuning"><a href="/wiki/sequence-classification-fine-tuning/">시퀀스 분류 미세조정</a><span class="wiki-en">Sequence Classification Fine-Tuning</span></li>
 <li data-article-id="sequence-likelihood"><a href="/wiki/sequence-likelihood/">시퀀스 우도</a><span class="wiki-en">Sequence Likelihood</span></li>
@@ -644,6 +715,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <h2 id="index-ko-ss">ㅆ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="pairwise-comparison"><a href="/wiki/pairwise-comparison/">쌍대 비교</a><span class="wiki-en">Pairwise Comparison</span></li>
+<li data-article-id="pairwise-evaluation-design"><a href="/wiki/pairwise-evaluation-design/">쌍대 비교 평가 설계</a><span class="wiki-en">Pairwise Evaluation Design</span></li>
 <li data-article-id="pairwise-preference-ranking"><a href="/wiki/pairwise-preference-ranking/">쌍대 선호 순위화</a><span class="wiki-en">Pairwise Preference Ranking</span></li>
 <li data-article-id="pairwise-llm-judge"><a href="/wiki/pairwise-llm-judge/">쌍대 LLM 심사</a><span class="wiki-en">Pairwise LLM Judge</span></li>
 </ul>
@@ -655,7 +727,11 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="artifact-registry"><a href="/wiki/artifact-registry/">아티팩트 레지스트리</a><span class="wiki-en">Artifact Registry</span></li>
 <li data-article-id="saddle-point"><a href="/wiki/saddle-point/">안장점</a><span class="wiki-en">Saddle Point</span></li>
 <li data-article-id="safety-benchmark"><a href="/wiki/safety-benchmark/">안전 벤치마크</a><span class="wiki-en">Safety Benchmark</span></li>
+<li data-article-id="safety-assurance-argument"><a href="/wiki/safety-assurance-argument/">안전 보증 논증</a><span class="wiki-en">Safety Assurance Argument</span></li>
+<li data-article-id="safety-exception-process"><a href="/wiki/safety-exception-process/">안전 예외 처리 절차</a><span class="wiki-en">Safety Exception Process</span></li>
+<li data-article-id="safety-policy-versioning"><a href="/wiki/safety-policy-versioning/">안전 정책 버전 관리</a><span class="wiki-en">Safety-policy Versioning</span></li>
 <li data-article-id="safety-evaluation"><a href="/wiki/safety-evaluation/">안전 평가</a><span class="wiki-en">Safety Evaluation</span></li>
+<li data-article-id="safety-case"><a href="/wiki/safety-case/">안전성 논증서</a><span class="wiki-en">Safety Case</span></li>
 <li data-article-id="insecure-output-handling"><a href="/wiki/insecure-output-handling/">안전하지 않은 출력 처리</a><span class="wiki-en">Insecure Output Handling</span></li>
 <li data-article-id="algorithm"><a href="/wiki/algorithm/">알고리즘</a><span class="wiki-en">Algorithm</span></li>
 <li data-article-id="algorithmic-audit"><a href="/wiki/algorithmic-audit/">알고리즘 감사</a><span class="wiki-en">Algorithmic Audit</span></li>
@@ -669,6 +745,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="bidirectional-attention"><a href="/wiki/bidirectional-attention/">양방향 어텐션</a><span class="wiki-en">Bidirectional Attention</span></li>
 <li data-article-id="quantization"><a href="/wiki/quantization/">양자화</a><span class="wiki-en">Quantization</span></li>
 <li data-article-id="quantization-aware-training"><a href="/wiki/quantization-aware-training/">양자화 인식 학습</a><span class="wiki-en">Quantization-Aware Training</span></li>
+<li data-article-id="adapter-serving"><a href="/wiki/adapter-serving/">어댑터 서빙</a><span class="wiki-en">Adapter Serving</span></li>
 <li data-article-id="adapter-layer"><a href="/wiki/adapter-layer/">어댑터 층</a><span class="wiki-en">Adapter Layer</span></li>
 <li data-article-id="attention"><a href="/wiki/attention/">어텐션</a><span class="wiki-en">Attention</span></li>
 <li data-article-id="attention-complexity"><a href="/wiki/attention-complexity/">어텐션 계산 복잡도</a><span class="wiki-en">Attention Complexity</span></li>
@@ -691,20 +768,38 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-en">Agent Task Decomposition</span></li>
 <li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-en">Agent Task Success</span></li>
 <li data-article-id="agent-trajectory-evaluation"><a href="/wiki/agent-trajectory-evaluation/">에이전트 궤적 평가</a><span class="wiki-en">Agent Trajectory Evaluation</span></li>
+<li data-article-id="agent-step-budget"><a href="/wiki/agent-step-budget/">에이전트 단계 예산</a><span class="wiki-en">Agent Step Budget</span></li>
 <li data-article-id="short-term-agent-memory"><a href="/wiki/short-term-agent-memory/">에이전트 단기 기억</a><span class="wiki-en">Short-Term Agent Memory</span></li>
 <li data-article-id="agent-tool"><a href="/wiki/agent-tool/">에이전트 도구</a><span class="wiki-en">Agent Tool</span></li>
+<li data-article-id="agent-tool-retry-policy"><a href="/wiki/agent-tool-retry-policy/">에이전트 도구 재시도 정책</a><span class="wiki-en">Agent Tool Retry Policy</span></li>
 <li data-article-id="agent-tool-accuracy"><a href="/wiki/agent-tool-accuracy/">에이전트 도구 정확도</a><span class="wiki-en">Agent Tool Accuracy</span></li>
+<li data-article-id="agent-tool-timeout-budget"><a href="/wiki/agent-tool-timeout-budget/">에이전트 도구 타임아웃 예산</a><span class="wiki-en">Agent Tool Timeout Budget</span></li>
+<li data-article-id="agent-tool-transaction"><a href="/wiki/agent-tool-transaction/">에이전트 도구 트랜잭션</a><span class="wiki-en">Agent Tool Transaction</span></li>
 <li data-article-id="agent-runtime"><a href="/wiki/agent-runtime/">에이전트 런타임</a><span class="wiki-en">Agent Runtime</span></li>
 <li data-article-id="agent-loop"><a href="/wiki/agent-loop/">에이전트 루프</a><span class="wiki-en">Agent Loop</span></li>
+<li data-article-id="agent-loop-watchdog"><a href="/wiki/agent-loop-watchdog/">에이전트 루프 감시기</a><span class="wiki-en">Agent Loop Watchdog</span></li>
 <li data-article-id="agent-memory"><a href="/wiki/agent-memory/">에이전트 메모리</a><span class="wiki-en">Agent Memory</span></li>
+<li data-article-id="agent-memory-retention"><a href="/wiki/agent-memory-retention/">에이전트 메모리 보유</a><span class="wiki-en">Agent Memory Retention</span></li>
+<li data-article-id="agent-memory-consistency"><a href="/wiki/agent-memory-consistency/">에이전트 메모리 일관성</a><span class="wiki-en">Agent Memory Consistency</span></li>
+<li data-article-id="agent-idempotency"><a href="/wiki/agent-idempotency/">에이전트 멱등성</a><span class="wiki-en">Agent Idempotency</span></li>
 <li data-article-id="agent-goal"><a href="/wiki/agent-goal/">에이전트 목표</a><span class="wiki-en">Agent Goal</span></li>
+<li data-article-id="agent-context-handoff"><a href="/wiki/agent-context-handoff/">에이전트 문맥 핸드오프</a><span class="wiki-en">Agent Context Handoff</span></li>
 <li data-article-id="agent-benchmark"><a href="/wiki/agent-benchmark/">에이전트 벤치마크</a><span class="wiki-en">Agent Benchmark</span></li>
+<li data-article-id="agent-compensation-transaction"><a href="/wiki/agent-compensation-transaction/">에이전트 보상 트랜잭션</a><span class="wiki-en">Agent Compensation Transaction</span></li>
 <li data-article-id="agent-security"><a href="/wiki/agent-security/">에이전트 보안</a><span class="wiki-en">Agent Security</span></li>
+<li data-article-id="agent-side-effect-control"><a href="/wiki/agent-side-effect-control/">에이전트 부수 효과 제어</a><span class="wiki-en">Agent Side-effect Control</span></li>
+<li data-article-id="agent-incident-playbook"><a href="/wiki/agent-incident-playbook/">에이전트 사고 대응 절차</a><span class="wiki-en">Agent Incident Playbook</span></li>
+<li data-article-id="agent-human-approval-gate"><a href="/wiki/agent-human-approval-gate/">에이전트 사람 승인 게이트</a><span class="wiki-en">Agent Human-approval Gate</span></li>
+<li data-article-id="agent-state-machine"><a href="/wiki/agent-state-machine/">에이전트 상태 기계</a><span class="wiki-en">Agent State Machine</span></li>
+<li data-article-id="agent-escalation-policy"><a href="/wiki/agent-escalation-policy/">에이전트 상향 보고 정책</a><span class="wiki-en">Agent Escalation Policy</span></li>
 <li data-article-id="agent-sandbox"><a href="/wiki/agent-sandbox/">에이전트 샌드박스</a><span class="wiki-en">Agent Sandbox</span></li>
 <li data-article-id="agent-reflection"><a href="/wiki/agent-reflection/">에이전트 성찰</a><span class="wiki-en">Agent Reflection</span></li>
 <li data-article-id="agent-deliberation"><a href="/wiki/agent-deliberation/">에이전트 숙고</a><span class="wiki-en">Agent Deliberation</span></li>
 <li data-article-id="agent-swarm"><a href="/wiki/agent-swarm/">에이전트 스웜</a><span class="wiki-en">Agent Swarm</span></li>
 <li data-article-id="agent-scratchpad"><a href="/wiki/agent-scratchpad/">에이전트 스크래치패드</a><span class="wiki-en">Agent Scratchpad</span></li>
+<li data-article-id="agent-simulation-test"><a href="/wiki/agent-simulation-test/">에이전트 시뮬레이션 테스트</a><span class="wiki-en">Agent Simulation Test</span></li>
+<li data-article-id="agent-run-contract"><a href="/wiki/agent-run-contract/">에이전트 실행 계약</a><span class="wiki-en">Agent Run Contract</span></li>
+<li data-article-id="agent-run-replay"><a href="/wiki/agent-run-replay/">에이전트 실행 재현</a><span class="wiki-en">Agent Run Replay</span></li>
 <li data-article-id="agent-executor"><a href="/wiki/agent-executor/">에이전트 실행기</a><span class="wiki-en">Agent Executor</span></li>
 <li data-article-id="agent-role"><a href="/wiki/agent-role/">에이전트 역할</a><span class="wiki-en">Agent Role</span></li>
 <li data-article-id="agent-delegation"><a href="/wiki/agent-delegation/">에이전트 위임</a><span class="wiki-en">Agent Delegation</span></li>
@@ -718,10 +813,14 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="agent-control-loop"><a href="/wiki/agent-control-loop/">에이전트 제어 루프</a><span class="wiki-en">Agent Control Loop</span></li>
 <li data-article-id="agent-coordination"><a href="/wiki/agent-coordination/">에이전트 조정</a><span class="wiki-en">Agent Coordination</span></li>
 <li data-article-id="agent-termination-condition"><a href="/wiki/agent-termination-condition/">에이전트 종료 조건</a><span class="wiki-en">Agent Termination Condition</span></li>
+<li data-article-id="agent-least-privilege"><a href="/wiki/agent-least-privilege/">에이전트 최소 권한</a><span class="wiki-en">Agent Least Privilege</span></li>
 <li data-article-id="agent-trace-evaluation"><a href="/wiki/agent-trace-evaluation/">에이전트 추적 평가</a><span class="wiki-en">Agent Trace Evaluation</span></li>
+<li data-article-id="agent-canary-run"><a href="/wiki/agent-canary-run/">에이전트 카나리 실행</a><span class="wiki-en">Agent Canary Run</span></li>
+<li data-article-id="agent-chaos-testing"><a href="/wiki/agent-chaos-testing/">에이전트 카오스 테스트</a><span class="wiki-en">Agent Chaos Testing</span></li>
 <li data-article-id="agent-evaluation"><a href="/wiki/agent-evaluation/">에이전트 평가</a><span class="wiki-en">Agent Evaluation</span></li>
 <li data-article-id="agent-harness"><a href="/wiki/agent-harness/">에이전트 하네스</a><span class="wiki-en">Agent Harness</span></li>
 <li data-article-id="agent-handoff"><a href="/wiki/agent-handoff/">에이전트 핸드오프</a><span class="wiki-en">Agent Handoff</span></li>
+<li data-article-id="agent-action-ledger"><a href="/wiki/agent-action-ledger/">에이전트 행동 원장</a><span class="wiki-en">Agent Action Ledger</span></li>
 <li data-article-id="agent-collaboration"><a href="/wiki/agent-collaboration/">에이전트 협업</a><span class="wiki-en">Agent Collaboration</span></li>
 <li data-article-id="agentic-rag"><a href="/wiki/agentic-rag/">에이전트형 RAG</a><span class="wiki-en">Agentic RAG</span></li>
 <li data-article-id="echo-state-network"><a href="/wiki/echo-state-network/">에코 상태 네트워크</a><span class="wiki-en">Echo State Network</span></li>
@@ -730,6 +829,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="edge-model-deployment"><a href="/wiki/edge-model-deployment/">엣지 모델 배포</a><span class="wiki-en">Edge Model Deployment</span></li>
 <li data-article-id="edge-inference"><a href="/wiki/edge-inference/">엣지 추론</a><span class="wiki-en">Edge Inference</span></li>
 <li data-article-id="edge-ai"><a href="/wiki/edge-ai/">엣지 AI</a><span class="wiki-en">Edge AI</span></li>
+<li data-article-id="capability-regression"><a href="/wiki/capability-regression/">역량 회귀</a><span class="wiki-en">Capability Regression</span></li>
 <li data-article-id="historical-bias"><a href="/wiki/historical-bias/">역사적 편향</a><span class="wiki-en">Historical Bias</span></li>
 <li data-article-id="inverted-index"><a href="/wiki/inverted-index/">역색인</a><span class="wiki-en">Inverted Index</span></li>
 <li data-article-id="reciprocal-rank-fusion"><a href="/wiki/reciprocal-rank-fusion/">역순위 결합</a><span class="wiki-en">Reciprocal Rank Fusion</span></li>
@@ -743,6 +843,8 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="compute-bound-workload"><a href="/wiki/compute-bound-workload/">연산 집약 작업</a><span class="wiki-en">Compute-Bound Workload</span></li>
 <li data-article-id="operator-fusion"><a href="/wiki/operator-fusion/">연산자 융합</a><span class="wiki-en">Operator Fusion</span></li>
 <li data-article-id="continuous-batching"><a href="/wiki/continuous-batching/">연속 배칭</a><span class="wiki-en">Continuous Batching</span></li>
+<li data-article-id="continuous-batching-fairness"><a href="/wiki/continuous-batching-fairness/">연속 배칭 공정성</a><span class="wiki-en">Continuous Batching Fairness</span></li>
+<li data-article-id="continuous-batching-policy"><a href="/wiki/continuous-batching-policy/">연속 배칭 정책</a><span class="wiki-en">Continuous Batching Policy</span></li>
 <li data-article-id="continued-pretraining"><a href="/wiki/continued-pretraining/">연속 사전학습</a><span class="wiki-en">Continued Pretraining</span></li>
 <li data-article-id="chain-rule"><a href="/wiki/chain-rule/">연쇄 법칙</a><span class="wiki-en">Chain Rule</span></li>
 <li data-article-id="federated-search"><a href="/wiki/federated-search/">연합 검색</a><span class="wiki-en">Federated Search</span></li>
@@ -765,6 +867,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="open-source-ai-definition"><a href="/wiki/open-source-ai-definition/">오픈소스 AI 정의</a><span class="wiki-en">Open Source AI Definition</span></li>
 <li data-article-id="online-preference-learning"><a href="/wiki/online-preference-learning/">온라인 선호 학습</a><span class="wiki-en">Online Preference Learning</span></li>
 <li data-article-id="online-inference"><a href="/wiki/online-inference/">온라인 추론</a><span class="wiki-en">Online Inference</span></li>
+<li data-article-id="online-evaluation-drift"><a href="/wiki/online-evaluation-drift/">온라인 평가 드리프트</a><span class="wiki-en">Online Evaluation Drift</span></li>
 <li data-article-id="online-learning"><a href="/wiki/online-learning/">온라인 학습</a><span class="wiki-en">Online Learning</span></li>
 <li data-article-id="ontology"><a href="/wiki/ontology/">온톨로지</a><span class="wiki-en">Ontology</span></li>
 <li data-article-id="on-premises-ai"><a href="/wiki/on-premises-ai/">온프레미스 AI</a><span class="wiki-en">On-Premises AI</span></li>
@@ -775,6 +878,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="outer-product"><a href="/wiki/outer-product/">외적곱</a><span class="wiki-en">Outer Product</span></li>
 <li data-article-id="request-queue"><a href="/wiki/request-queue/">요청 대기열</a><span class="wiki-en">Request Queue</span></li>
 <li data-article-id="request-signing"><a href="/wiki/request-signing/">요청 서명</a><span class="wiki-en">Request Signing</span></li>
+<li data-article-id="request-preemption"><a href="/wiki/request-preemption/">요청 선점</a><span class="wiki-en">Request Preemption</span></li>
 <li data-article-id="request-scheduler"><a href="/wiki/request-scheduler/">요청 스케줄러</a><span class="wiki-en">Request Scheduler</span></li>
 <li data-article-id="request-interceptor"><a href="/wiki/request-interceptor/">요청 인터셉터</a><span class="wiki-en">Request Interceptor</span></li>
 <li data-article-id="request-throttling"><a href="/wiki/request-throttling/">요청 조절</a><span class="wiki-en">Request Throttling</span></li>
@@ -804,9 +908,11 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="voice-activity-detection"><a href="/wiki/voice-activity-detection/">음성 활동 탐지</a><span class="wiki-en">Voice Activity Detection</span></li>
 <li data-article-id="speech-to-text"><a href="/wiki/speech-to-text/">음성-텍스트 변환</a><span class="wiki-en">Speech-to-Text</span></li>
 <li data-article-id="response-validation"><a href="/wiki/response-validation/">응답 검증</a><span class="wiki-en">Response Validation</span></li>
+<li data-article-id="response-contract"><a href="/wiki/response-contract/">응답 계약</a><span class="wiki-en">Response Contract</span></li>
 <li data-article-id="response-verbosity"><a href="/wiki/response-verbosity/">응답 장황성</a><span class="wiki-en">Response Verbosity</span></li>
 <li data-article-id="response-format-tuning"><a href="/wiki/response-format-tuning/">응답 형식 튜닝</a><span class="wiki-en">Response Format Tuning</span></li>
 <li data-article-id="semantic-search"><a href="/wiki/semantic-search/">의미 검색</a><span class="wiki-en">Semantic Search</span></li>
+<li data-article-id="semantic-output-validation"><a href="/wiki/semantic-output-validation/">의미 기반 출력 검증</a><span class="wiki-en">Semantic Output Validation</span></li>
 <li data-article-id="pseudo-relevance-feedback"><a href="/wiki/pseudo-relevance-feedback/">의사 관련성 피드백</a><span class="wiki-en">Pseudo-Relevance Feedback</span></li>
 <li data-article-id="decision-making-system"><a href="/wiki/decision-making-system/">의사결정 시스템</a><span class="wiki-en">Decision-Making System</span></li>
 <li data-article-id="decision-provenance"><a href="/wiki/decision-provenance/">의사결정 출처 추적</a><span class="wiki-en">Decision Provenance</span></li>
@@ -845,6 +951,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="instance-normalization"><a href="/wiki/instance-normalization/">인스턴스 정규화</a><span class="wiki-en">Instance Normalization</span></li>
 <li data-article-id="perceive-plan-act-cycle"><a href="/wiki/perceive-plan-act-cycle/">인식-계획-행동 순환</a><span class="wiki-en">Perceive-Plan-Act Cycle</span></li>
 <li data-article-id="citation"><a href="/wiki/citation/">인용</a><span class="wiki-en">Citation</span></li>
+<li data-article-id="citation-grounding-contract"><a href="/wiki/citation-grounding-contract/">인용 근거 계약</a><span class="wiki-en">Citation Grounding Contract</span></li>
 <li data-article-id="citation-generation"><a href="/wiki/citation-generation/">인용 생성</a><span class="wiki-en">Citation Generation</span></li>
 <li data-article-id="citation-correctness"><a href="/wiki/citation-correctness/">인용 정확성</a><span class="wiki-en">Citation Correctness</span></li>
 <li data-article-id="encoder"><a href="/wiki/encoder/">인코더</a><span class="wiki-en">Encoder</span></li>
@@ -919,6 +1026,8 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="normalization-placement"><a href="/wiki/normalization-placement/">정규화 배치</a><span class="wiki-en">Normalization Placement</span></li>
 <li data-article-id="normalized-discounted-cumulative-gain"><a href="/wiki/normalized-discounted-cumulative-gain/">정규화 할인 누적 이득</a><span class="wiki-en">Normalized Discounted Cumulative Gain</span></li>
 <li data-article-id="alignment-tax"><a href="/wiki/alignment-tax/">정렬 비용</a><span class="wiki-en">Alignment Tax</span></li>
+<li data-article-id="alignment-capability-retention"><a href="/wiki/alignment-capability-retention/">정렬 역량 보존</a><span class="wiki-en">Alignment Capability Retention</span></li>
+<li data-article-id="alignment-evaluation-gate"><a href="/wiki/alignment-evaluation-gate/">정렬 평가 게이트</a><span class="wiki-en">Alignment Evaluation Gate</span></li>
 <li data-article-id="precision-recall-curve"><a href="/wiki/precision-recall-curve/">정밀도-재현율 곡선</a><span class="wiki-en">Precision-Recall Curve</span></li>
 <li data-article-id="precision-recall"><a href="/wiki/precision-recall/">정밀도와 재현율</a><span class="wiki-en">Precision and Recall</span></li>
 <li data-article-id="information-gain"><a href="/wiki/information-gain/">정보 이득</a><span class="wiki-en">Information Gain</span></li>
@@ -967,7 +1076,9 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="exponential-backoff"><a href="/wiki/exponential-backoff/">지수 백오프</a><span class="wiki-en">Exponential Backoff</span></li>
 <li data-article-id="instruction-mixture"><a href="/wiki/instruction-mixture/">지시 데이터 혼합</a><span class="wiki-en">Instruction Mixture</span></li>
 <li data-article-id="instruction-dataset"><a href="/wiki/instruction-dataset/">지시 데이터셋</a><span class="wiki-en">Instruction Dataset</span></li>
+<li data-article-id="instruction-priority-architecture"><a href="/wiki/instruction-priority-architecture/">지시 우선순위 아키텍처</a><span class="wiki-en">Instruction Priority Architecture</span></li>
 <li data-article-id="instruction-following"><a href="/wiki/instruction-following/">지시 이행</a><span class="wiki-en">Instruction Following</span></li>
+<li data-article-id="instruction-conflict-resolution"><a href="/wiki/instruction-conflict-resolution/">지시 충돌 해소</a><span class="wiki-en">Instruction Conflict Resolution</span></li>
 <li data-article-id="instruction-tuning"><a href="/wiki/instruction-tuning/">지시 튜닝</a><span class="wiki-en">Instruction Tuning</span></li>
 <li data-article-id="instruction-tuned-embedding"><a href="/wiki/instruction-tuned-embedding/">지시 튜닝 임베딩</a><span class="wiki-en">Instruction-Tuned Embedding</span></li>
 <li data-article-id="instruction"><a href="/wiki/instruction/">지시문</a><span class="wiki-en">Instruction</span></li>
@@ -1026,16 +1137,28 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="inference"><a href="/wiki/inference/">추론</a><span class="wiki-en">Inference</span></li>
 <li data-article-id="inference-economics"><a href="/wiki/inference-economics/">추론 경제성</a><span class="wiki-en">Inference Economics</span></li>
 <li data-article-id="inference-compute"><a href="/wiki/inference-compute/">추론 계산량</a><span class="wiki-en">Inference Compute</span></li>
+<li data-article-id="inference-overload-control"><a href="/wiki/inference-overload-control/">추론 과부하 제어</a><span class="wiki-en">Inference Overload Control</span></li>
 <li data-article-id="inference-graph-optimization"><a href="/wiki/inference-graph-optimization/">추론 그래프 최적화</a><span class="wiki-en">Inference Graph Optimization</span></li>
+<li data-article-id="inference-tail-latency-debugging"><a href="/wiki/inference-tail-latency-debugging/">추론 꼬리 지연 디버깅</a><span class="wiki-en">Inference Tail-latency Debugging</span></li>
+<li data-article-id="reasoning-effort-control"><a href="/wiki/reasoning-effort-control/">추론 노력 제어</a><span class="wiki-en">Reasoning Effort Control</span></li>
 <li data-article-id="reasoning-capability"><a href="/wiki/reasoning-capability/">추론 능력</a><span class="wiki-en">Reasoning Capability</span></li>
 <li data-article-id="inference-monitoring"><a href="/wiki/inference-monitoring/">추론 모니터링</a><span class="wiki-en">Inference Monitoring</span></li>
 <li data-article-id="inference-load-balancing"><a href="/wiki/inference-load-balancing/">추론 부하 분산</a><span class="wiki-en">Inference Load Balancing</span></li>
 <li data-article-id="inference-server"><a href="/wiki/inference-server/">추론 서버</a><span class="wiki-en">Inference Server</span></li>
 <li data-article-id="inference-timeout"><a href="/wiki/inference-timeout/">추론 시간 초과</a><span class="wiki-en">Inference Timeout</span></li>
+<li data-article-id="inference-energy-efficiency"><a href="/wiki/inference-energy-efficiency/">추론 에너지 효율</a><span class="wiki-en">Inference Energy Efficiency</span></li>
 <li data-article-id="inference-endpoint"><a href="/wiki/inference-endpoint/">추론 엔드포인트</a><span class="wiki-en">Inference Endpoint</span></li>
+<li data-article-id="inference-backpressure"><a href="/wiki/inference-backpressure/">추론 역압</a><span class="wiki-en">Inference Backpressure</span></li>
 <li data-article-id="inference-capacity-planning"><a href="/wiki/inference-capacity-planning/">추론 용량 계획</a><span class="wiki-en">Inference Capacity Planning</span></li>
+<li data-article-id="inference-capacity-headroom"><a href="/wiki/inference-capacity-headroom/">추론 용량 여유분</a><span class="wiki-en">Inference Capacity Headroom</span></li>
+<li data-article-id="inference-workload-shaping"><a href="/wiki/inference-workload-shaping/">추론 워크로드 형상화</a><span class="wiki-en">Inference Workload Shaping</span></li>
+<li data-article-id="inference-warm-pool"><a href="/wiki/inference-warm-pool/">추론 웜 풀</a><span class="wiki-en">Inference Warm Pool</span></li>
 <li data-article-id="inference-autoscaling"><a href="/wiki/inference-autoscaling/">추론 자동 확장</a><span class="wiki-en">Inference Autoscaling</span></li>
 <li data-article-id="inference-retry"><a href="/wiki/inference-retry/">추론 재시도</a><span class="wiki-en">Inference Retry</span></li>
+<li data-article-id="reasoning-trace-policy"><a href="/wiki/reasoning-trace-policy/">추론 추적 정책</a><span class="wiki-en">Reasoning Trace Policy</span></li>
+<li data-article-id="inference-queue-discipline"><a href="/wiki/inference-queue-discipline/">추론 큐 규칙</a><span class="wiki-en">Inference Queue Discipline</span></li>
+<li data-article-id="inference-carbon-accounting"><a href="/wiki/inference-carbon-accounting/">추론 탄소 회계</a><span class="wiki-en">Inference Carbon Accounting</span></li>
+<li data-article-id="inference-slo-error-budget"><a href="/wiki/inference-slo-error-budget/">추론 SLO 오류 예산</a><span class="wiki-en">Inference SLO Error Budget</span></li>
 <li data-article-id="reasoning-action-interleaving"><a href="/wiki/reasoning-action-interleaving/">추론-행동 교차 수행</a><span class="wiki-en">Reasoning-Action Interleaving</span></li>
 <li data-article-id="tracing"><a href="/wiki/tracing/">추적</a><span class="wiki-en">Tracing</span></li>
 <li data-article-id="recommendation-system"><a href="/wiki/recommendation-system/">추천 시스템</a><span class="wiki-en">Recommendation System</span></li>
@@ -1053,6 +1176,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <section class="wiki-index-group" data-index-group="ko-k">
 <h2 id="index-ko-k">ㅋ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="canary-evaluation"><a href="/wiki/canary-evaluation/">카나리 평가</a><span class="wiki-en">Canary Evaluation</span></li>
 <li data-article-id="copyleft-license"><a href="/wiki/copyleft-license/">카피레프트 라이선스</a><span class="wiki-en">Copyleft License</span></li>
 <li data-article-id="cache-offloading"><a href="/wiki/cache-offloading/">캐시 오프로딩</a><span class="wiki-en">Cache Offloading</span></li>
 <li data-article-id="cache-hit-rate"><a href="/wiki/cache-hit-rate/">캐시 적중률</a><span class="wiki-en">Cache Hit Rate</span></li>
@@ -1066,6 +1190,8 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="containerized-model"><a href="/wiki/containerized-model/">컨테이너화 모델</a><span class="wiki-en">Containerized Model</span></li>
 <li data-article-id="context-engineering"><a href="/wiki/context-engineering/">컨텍스트 엔지니어링</a><span class="wiki-en">Context Engineering</span></li>
 <li data-article-id="context-window"><a href="/wiki/context-window/">컨텍스트 윈도우</a><span class="wiki-en">Context Window</span></li>
+<li data-article-id="context-window-budgeting"><a href="/wiki/context-window-budgeting/">컨텍스트 창 예산 관리</a><span class="wiki-en">Context-window Budgeting</span></li>
+<li data-article-id="context-cache-coherence"><a href="/wiki/context-cache-coherence/">컨텍스트 캐시 일관성</a><span class="wiki-en">Context Cache Coherence</span></li>
 <li data-article-id="context-caching"><a href="/wiki/context-caching/">컨텍스트 캐싱</a><span class="wiki-en">Context Caching</span></li>
 <li data-article-id="computer-vision"><a href="/wiki/computer-vision/">컴퓨터 비전</a><span class="wiki-en">Computer Vision</span></li>
 <li data-article-id="computer-use-agent"><a href="/wiki/computer-use-agent/">컴퓨터 사용 에이전트</a><span class="wiki-en">Computer-Use Agent</span></li>
@@ -1117,7 +1243,11 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="token-cost"><a href="/wiki/token-cost/">토큰 비용</a><span class="wiki-en">Token Cost</span></li>
 <li data-article-id="token-usage-monitoring"><a href="/wiki/token-usage-monitoring/">토큰 사용량 모니터링</a><span class="wiki-en">Token Usage Monitoring</span></li>
 <li data-article-id="token-sampling"><a href="/wiki/token-sampling/">토큰 샘플링</a><span class="wiki-en">Token Sampling</span></li>
+<li data-article-id="token-scheduler"><a href="/wiki/token-scheduler/">토큰 스케줄러</a><span class="wiki-en">Token Scheduler</span></li>
+<li data-article-id="token-budget-admission-control"><a href="/wiki/token-budget-admission-control/">토큰 예산 수용 제어</a><span class="wiki-en">Token-budget Admission Control</span></li>
+<li data-article-id="token-budget-controller"><a href="/wiki/token-budget-controller/">토큰 예산 제어기</a><span class="wiki-en">Token Budget Controller</span></li>
 <li data-article-id="token-embedding-layer"><a href="/wiki/token-embedding-layer/">토큰 임베딩층</a><span class="wiki-en">Token Embedding Layer</span></li>
+<li data-article-id="token-accounting"><a href="/wiki/token-accounting/">토큰 회계</a><span class="wiki-en">Token Accounting</span></li>
 <li data-article-id="token-efficiency"><a href="/wiki/token-efficiency/">토큰 효율</a><span class="wiki-en">Token Efficiency</span></li>
 <li data-article-id="tokenization"><a href="/wiki/tokenization/">토큰화</a><span class="wiki-en">Tokenization</span></li>
 <li data-article-id="statistical-significance"><a href="/wiki/statistical-significance/">통계적 유의성</a><span class="wiki-en">Statistical Significance</span></li>
@@ -1129,6 +1259,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="unified-response-api"><a href="/wiki/unified-response-api/">통합 응답 API</a><span class="wiki-en">Unified Response API</span></li>
 <li data-article-id="uri"><a href="/wiki/uri/">통합 자원 식별자</a><span class="wiki-en">Uniform Resource Identifier</span></li>
 <li data-article-id="url"><a href="/wiki/url/">통합 자원 위치 지정자</a><span class="wiki-en">Uniform Resource Locator</span></li>
+<li data-article-id="speculative-generation-policy"><a href="/wiki/speculative-generation-policy/">투기적 생성 정책</a><span class="wiki-en">Speculative Generation Policy</span></li>
 <li data-article-id="turing-test"><a href="/wiki/turing-test/">튜링 테스트</a><span class="wiki-en">Turing Test</span></li>
 <li data-article-id="transformer"><a href="/wiki/transformer/">트랜스포머</a><span class="wiki-en">Transformer</span></li>
 <li data-article-id="transformer-block"><a href="/wiki/transformer-block/">트랜스포머 블록</a><span class="wiki-en">Transformer Block</span></li>
@@ -1156,6 +1287,9 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="foundation-model"><a href="/wiki/foundation-model/">파운데이션 모델</a><span class="wiki-en">Foundation Model</span></li>
 <li data-article-id="pipeline-parallelism"><a href="/wiki/pipeline-parallelism/">파이프라인 병렬화</a><span class="wiki-en">Pipeline Parallelism</span></li>
 <li data-article-id="file-upload-api"><a href="/wiki/file-upload-api/">파일 업로드 API</a><span class="wiki-en">File Upload API</span></li>
+<li data-article-id="judge-length-bias-control"><a href="/wiki/judge-length-bias-control/">판정 길이 편향 통제</a><span class="wiki-en">Judge Length-bias Control</span></li>
+<li data-article-id="judge-calibration-curve"><a href="/wiki/judge-calibration-curve/">판정 모델 교정 곡선</a><span class="wiki-en">Judge Calibration Curve</span></li>
+<li data-article-id="judge-position-randomization"><a href="/wiki/judge-position-randomization/">판정 위치 무작위화</a><span class="wiki-en">Judge Position Randomization</span></li>
 <li data-article-id="padding-mask"><a href="/wiki/padding-mask/">패딩 마스크</a><span class="wiki-en">Padding Mask</span></li>
 <li data-article-id="padding-token"><a href="/wiki/padding-token/">패딩 토큰</a><span class="wiki-en">Padding Token</span></li>
 <li data-article-id="faceted-search"><a href="/wiki/faceted-search/">패싯 검색</a><span class="wiki-en">Faceted Search</span></li>
@@ -1169,8 +1303,15 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="bias"><a href="/wiki/bias/">편향 항</a><span class="wiki-en">Bias Term</span></li>
 <li data-article-id="bias-variance-tradeoff"><a href="/wiki/bias-variance-tradeoff/">편향-분산 절충</a><span class="wiki-en">Bias-Variance Tradeoff</span></li>
 <li data-article-id="bias-fairness"><a href="/wiki/bias-fairness/">편향과 공정성</a><span class="wiki-en">Bias and Fairness</span></li>
+<li data-article-id="evaluation-dataset-lineage"><a href="/wiki/evaluation-dataset-lineage/">평가 데이터셋 계보</a><span class="wiki-en">Evaluation Dataset Lineage</span></li>
 <li data-article-id="evaluation-rubric"><a href="/wiki/evaluation-rubric/">평가 루브릭</a><span class="wiki-en">Evaluation Rubric</span></li>
 <li data-article-id="evaluation-uncertainty"><a href="/wiki/evaluation-uncertainty/">평가 불확실성</a><span class="wiki-en">Evaluation Uncertainty</span></li>
+<li data-article-id="evaluation-slice"><a href="/wiki/evaluation-slice/">평가 슬라이스</a><span class="wiki-en">Evaluation Slice</span></li>
+<li data-article-id="evaluation-confidence-interval"><a href="/wiki/evaluation-confidence-interval/">평가 신뢰구간</a><span class="wiki-en">Evaluation Confidence Interval</span></li>
+<li data-article-id="evaluation-budget-allocation"><a href="/wiki/evaluation-budget-allocation/">평가 예산 배분</a><span class="wiki-en">Evaluation Budget Allocation</span></li>
+<li data-article-id="evaluation-error-taxonomy"><a href="/wiki/evaluation-error-taxonomy/">평가 오류 분류 체계</a><span class="wiki-en">Evaluation Error Taxonomy</span></li>
+<li data-article-id="evaluation-contamination-audit"><a href="/wiki/evaluation-contamination-audit/">평가 오염 감사</a><span class="wiki-en">Evaluation Contamination Audit</span></li>
+<li data-article-id="evaluation-decision-log"><a href="/wiki/evaluation-decision-log/">평가 의사결정 로그</a><span class="wiki-en">Evaluation Decision Log</span></li>
 <li data-article-id="metric"><a href="/wiki/metric/">평가 지표</a><span class="wiki-en">Evaluation Metric</span></li>
 <li data-article-id="evaluation-sampling"><a href="/wiki/evaluation-sampling/">평가 표본추출</a><span class="wiki-en">Evaluation Sampling</span></li>
 <li data-article-id="inter-rater-reliability"><a href="/wiki/inter-rater-reliability/">평가자 간 신뢰도</a><span class="wiki-en">Inter-Rater Reliability</span></li>
@@ -1187,23 +1328,28 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="production-evaluation"><a href="/wiki/production-evaluation/">프로덕션 평가</a><span class="wiki-en">Production Evaluation</span></li>
 <li data-article-id="probing-classifier"><a href="/wiki/probing-classifier/">프로빙 분류기</a><span class="wiki-en">Probing Classifier</span></li>
 <li data-article-id="prompt"><a href="/wiki/prompt/">프롬프트</a><span class="wiki-en">Prompt</span></li>
+<li data-article-id="prompt-contract-testing"><a href="/wiki/prompt-contract-testing/">프롬프트 계약 테스트</a><span class="wiki-en">Prompt Contract Testing</span></li>
 <li data-article-id="prompt-delimiter"><a href="/wiki/prompt-delimiter/">프롬프트 구분자</a><span class="wiki-en">Prompt Delimiter</span></li>
+<li data-article-id="prompt-release-governance"><a href="/wiki/prompt-release-governance/">프롬프트 릴리스 거버넌스</a><span class="wiki-en">Prompt Release Governance</span></li>
 <li data-article-id="prompt-sensitivity"><a href="/wiki/prompt-sensitivity/">프롬프트 민감도</a><span class="wiki-en">Prompt Sensitivity</span></li>
 <li data-article-id="prompt-compression"><a href="/wiki/prompt-compression/">프롬프트 압축</a><span class="wiki-en">Prompt Compression</span></li>
 <li data-article-id="prompt-engineering"><a href="/wiki/prompt-engineering/">프롬프트 엔지니어링</a><span class="wiki-en">Prompt Engineering</span></li>
 <li data-article-id="prompt-leakage"><a href="/wiki/prompt-leakage/">프롬프트 유출</a><span class="wiki-en">Prompt Leakage</span></li>
 <li data-article-id="prompt-injection"><a href="/wiki/prompt-injection/">프롬프트 인젝션</a><span class="wiki-en">Prompt Injection</span></li>
 <li data-article-id="prompt-lookup-decoding"><a href="/wiki/prompt-lookup-decoding/">프롬프트 조회 디코딩</a><span class="wiki-en">Prompt Lookup Decoding</span></li>
+<li data-article-id="prompt-injection-defense-in-depth"><a href="/wiki/prompt-injection-defense-in-depth/">프롬프트 주입 다계층 방어</a><span class="wiki-en">Prompt-injection Defense in Depth</span></li>
 <li data-article-id="prompt-chaining"><a href="/wiki/prompt-chaining/">프롬프트 체이닝</a><span class="wiki-en">Prompt Chaining</span></li>
 <li data-article-id="prompt-trace"><a href="/wiki/prompt-trace/">프롬프트 추적</a><span class="wiki-en">Prompt Trace</span></li>
 <li data-article-id="prompt-caching"><a href="/wiki/prompt-caching/">프롬프트 캐싱</a><span class="wiki-en">Prompt Caching</span></li>
 <li data-article-id="prompt-template"><a href="/wiki/prompt-template/">프롬프트 템플릿</a><span class="wiki-en">Prompt Template</span></li>
 <li data-article-id="prompt-tuning"><a href="/wiki/prompt-tuning/">프롬프트 튜닝</a><span class="wiki-en">Prompt Tuning</span></li>
+<li data-article-id="prompt-portfolio-observability"><a href="/wiki/prompt-portfolio-observability/">프롬프트 포트폴리오 관측성</a><span class="wiki-en">Prompt Portfolio Observability</span></li>
 <li data-article-id="pre-normalization"><a href="/wiki/pre-normalization/">프리 정규화</a><span class="wiki-en">Pre-Normalization</span></li>
 <li data-article-id="prefix-language-model"><a href="/wiki/prefix-language-model/">프리픽스 언어 모델</a><span class="wiki-en">Prefix Language Model</span></li>
 <li data-article-id="prefix-caching"><a href="/wiki/prefix-caching/">프리픽스 캐싱</a><span class="wiki-en">Prefix Caching</span></li>
 <li data-article-id="prefix-tuning"><a href="/wiki/prefix-tuning/">프리픽스 튜닝</a><span class="wiki-en">Prefix Tuning</span></li>
 <li data-article-id="prefill-phase"><a href="/wiki/prefill-phase/">프리필 단계</a><span class="wiki-en">Prefill Phase</span></li>
+<li data-article-id="prefill-decode-disaggregation"><a href="/wiki/prefill-decode-disaggregation/">프리필·디코드 분리</a><span class="wiki-en">Prefill-decode Disaggregation</span></li>
 <li data-article-id="flash-attention"><a href="/wiki/flash-attention/">플래시 어텐션</a><span class="wiki-en">FlashAttention</span></li>
 <li data-article-id="feed-forward-network"><a href="/wiki/feed-forward-network/">피드포워드 네트워크</a><span class="wiki-en">Feed-Forward Network</span></li>
 <li data-article-id="peer-to-peer-agents"><a href="/wiki/peer-to-peer-agents/">피어투피어 에이전트</a><span class="wiki-en">Peer-to-Peer Agents</span></li>
@@ -1215,6 +1361,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="hybrid-search"><a href="/wiki/hybrid-search/">하이브리드 검색</a><span class="wiki-en">Hybrid Search</span></li>
+<li data-article-id="hybrid-retrieval-weighting"><a href="/wiki/hybrid-retrieval-weighting/">하이브리드 검색 가중치</a><span class="wiki-en">Hybrid-retrieval Weighting</span></li>
 <li data-article-id="hybrid-rag"><a href="/wiki/hybrid-rag/">하이브리드 RAG</a><span class="wiki-en">Hybrid RAG</span></li>
 <li data-article-id="hyperparameter"><a href="/wiki/hyperparameter/">하이퍼파라미터</a><span class="wiki-en">Hyperparameter</span></li>
 <li data-article-id="training-audit-log"><a href="/wiki/training-audit-log/">학습 감사 로그</a><span class="wiki-en">Training Audit Log</span></li>
@@ -1242,6 +1389,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="synthetic-data"><a href="/wiki/synthetic-data/">합성 데이터</a><span class="wiki-en">Synthetic Data</span></li>
 <li data-article-id="convolutional-neural-network"><a href="/wiki/convolutional-neural-network/">합성곱 신경망</a><span class="wiki-en">Convolutional Neural Network</span></li>
 <li data-article-id="action-recognition"><a href="/wiki/action-recognition/">행동 인식</a><span class="wiki-en">Action Recognition</span></li>
+<li data-article-id="behavioral-regression"><a href="/wiki/behavioral-regression/">행동 회귀</a><span class="wiki-en">Behavioral Regression</span></li>
 <li data-article-id="matrix"><a href="/wiki/matrix/">행렬</a><span class="wiki-en">Matrix</span></li>
 <li data-article-id="matrix-multiplication"><a href="/wiki/matrix-multiplication/">행렬 곱셈</a><span class="wiki-en">Matrix Multiplication</span></li>
 <li data-article-id="determinant"><a href="/wiki/determinant/">행렬식</a><span class="wiki-en">Determinant</span></li>
@@ -1298,18 +1446,23 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="ai-accelerator"><a href="/wiki/ai-accelerator/">AI 가속기</a><span class="wiki-en">AI Accelerator</span></li>
 <li data-article-id="ai-governance"><a href="/wiki/ai-governance/">AI 거버넌스</a><span class="wiki-en">AI Governance</span></li>
 <li data-article-id="ai-governance-framework"><a href="/wiki/ai-governance-framework/">AI 거버넌스 프레임워크</a><span class="wiki-en">AI Governance Framework</span></li>
+<li data-article-id="ai-attack-surface-map"><a href="/wiki/ai-attack-surface-map/">AI 공격 표면 지도</a><span class="wiki-en">AI Attack Surface Map</span></li>
 <li data-article-id="ai-supply-chain"><a href="/wiki/ai-supply-chain/">AI 공급망</a><span class="wiki-en">AI Supply Chain</span></li>
 <li data-article-id="ai-supply-chain-vulnerability"><a href="/wiki/ai-supply-chain-vulnerability/">AI 공급망 취약점</a><span class="wiki-en">AI Supply Chain Vulnerability</span></li>
 <li data-article-id="ai-regulatory-classification"><a href="/wiki/ai-regulatory-classification/">AI 규제 분류</a><span class="wiki-en">AI Regulatory Classification</span></li>
+<li data-article-id="ai-kill-switch"><a href="/wiki/ai-kill-switch/">AI 긴급 정지 장치</a><span class="wiki-en">AI Kill Switch</span></li>
 <li data-article-id="ai-datacenter"><a href="/wiki/ai-datacenter/">AI 데이터센터</a><span class="wiki-en">AI Datacenter</span></li>
+<li data-article-id="ai-red-team-retest"><a href="/wiki/ai-red-team-retest/">AI 레드팀 재시험</a><span class="wiki-en">AI Red-team Retest</span></li>
 <li data-article-id="ai-red-teaming"><a href="/wiki/ai-red-teaming/">AI 레드팀 평가</a><span class="wiki-en">AI Red Teaming</span></li>
 <li data-article-id="ai-water-footprint"><a href="/wiki/ai-water-footprint/">AI 물 발자국</a><span class="wiki-en">AI Water Footprint</span></li>
 <li data-article-id="ai-security-monitoring"><a href="/wiki/ai-security-monitoring/">AI 보안 모니터링</a><span class="wiki-en">AI Security Monitoring</span></li>
+<li data-article-id="ai-security-control-baseline"><a href="/wiki/ai-security-control-baseline/">AI 보안 통제 기준선</a><span class="wiki-en">AI Security Control Baseline</span></li>
 <li data-article-id="ai-incident-response"><a href="/wiki/ai-incident-response/">AI 사고 대응</a><span class="wiki-en">AI Incident Response</span></li>
 <li data-article-id="ai-incident-reporting"><a href="/wiki/ai-incident-reporting/">AI 사고 보고</a><span class="wiki-en">AI Incident Reporting</span></li>
 <li data-article-id="ai-disclosure"><a href="/wiki/ai-disclosure/">AI 사용 고지</a><span class="wiki-en">AI Disclosure</span></li>
 <li data-article-id="ai-interoperability-standard"><a href="/wiki/ai-interoperability-standard/">AI 상호운용성 표준</a><span class="wiki-en">AI Interoperability Standard</span></li>
 <li data-article-id="defense-in-depth-for-ai"><a href="/wiki/defense-in-depth-for-ai/">AI 심층 방어</a><span class="wiki-en">Defense in Depth for AI</span></li>
+<li data-article-id="ai-abuse-monitoring"><a href="/wiki/ai-abuse-monitoring/">AI 악용 모니터링</a><span class="wiki-en">AI Abuse Monitoring</span></li>
 <li data-article-id="ai-safety"><a href="/wiki/ai-safety/">AI 안전</a><span class="wiki-en">AI Safety</span></li>
 <li data-article-id="ai-energy-consumption"><a href="/wiki/ai-energy-consumption/">AI 에너지 소비</a><span class="wiki-en">AI Energy Consumption</span></li>
 <li data-article-id="ai-agent"><a href="/wiki/ai-agent/">AI 에이전트</a><span class="wiki-en">AI Agent</span></li>
@@ -1317,6 +1470,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="ai-risk-register"><a href="/wiki/ai-risk-register/">AI 위험 대장</a><span class="wiki-en">AI Risk Register</span></li>
 <li data-article-id="ai-risk-assessment"><a href="/wiki/ai-risk-assessment/">AI 위험 평가</a><span class="wiki-en">AI Risk Assessment</span></li>
 <li data-article-id="ai-threat-modeling"><a href="/wiki/ai-threat-modeling/">AI 위협 모델링</a><span class="wiki-en">AI Threat Modeling</span></li>
+<li data-article-id="ai-anomaly-triage"><a href="/wiki/ai-anomaly-triage/">AI 이상 현상 분류</a><span class="wiki-en">AI Anomaly Triage</span></li>
 <li data-article-id="alignment"><a href="/wiki/alignment/">AI 정렬</a><span class="wiki-en">AI Alignment</span></li>
 <li data-article-id="ai-policy-enforcement"><a href="/wiki/ai-policy-enforcement/">AI 정책 집행</a><span class="wiki-en">AI Policy Enforcement</span></li>
 <li data-article-id="ai-compliance-monitoring"><a href="/wiki/ai-compliance-monitoring/">AI 준수 모니터링</a><span class="wiki-en">AI Compliance Monitoring</span></li>
@@ -1332,20 +1486,38 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="all-reduce"><a href="/wiki/all-reduce/">All-Reduce</a><span class="wiki-en">All-Reduce</span></li>
 <li data-article-id="api"><a href="/wiki/api/">API</a><span class="wiki-en">Application Programming Interface</span></li>
 <li data-article-id="api-audit-log"><a href="/wiki/api-audit-log/">API 감사 로그</a><span class="wiki-en">API Audit Log</span></li>
+<li data-article-id="api-provider-abstraction"><a href="/wiki/api-provider-abstraction/">API 공급자 추상화</a><span class="wiki-en">API Provider Abstraction</span></li>
+<li data-article-id="api-data-retention"><a href="/wiki/api-data-retention/">API 데이터 보유</a><span class="wiki-en">API Data Retention</span></li>
 <li data-article-id="api-wrapper"><a href="/wiki/api-wrapper/">API 래퍼</a><span class="wiki-en">API Wrapper</span></li>
 <li data-article-id="api-logging"><a href="/wiki/api-logging/">API 로깅</a><span class="wiki-en">API Logging</span></li>
+<li data-article-id="api-region-routing"><a href="/wiki/api-region-routing/">API 리전 라우팅</a><span class="wiki-en">API Region Routing</span></li>
+<li data-article-id="api-batch-contract"><a href="/wiki/api-batch-contract/">API 배치 계약</a><span class="wiki-en">API Batch Contract</span></li>
 <li data-article-id="api-version-pinning"><a href="/wiki/api-version-pinning/">API 버전 고정</a><span class="wiki-en">API Version Pinning</span></li>
 <li data-article-id="api-versioning"><a href="/wiki/api-versioning/">API 버전 관리</a><span class="wiki-en">API Versioning</span></li>
+<li data-article-id="api-version-negotiation"><a href="/wiki/api-version-negotiation/">API 버전 협상</a><span class="wiki-en">API Version Negotiation</span></li>
+<li data-article-id="api-partial-failure"><a href="/wiki/api-partial-failure/">API 부분 실패</a><span class="wiki-en">API Partial Failure</span></li>
+<li data-article-id="api-secret-rotation"><a href="/wiki/api-secret-rotation/">API 비밀 키 교체</a><span class="wiki-en">API Secret Rotation</span></li>
 <li data-article-id="api-cost-tracking"><a href="/wiki/api-cost-tracking/">API 비용 추적</a><span class="wiki-en">API Cost Tracking</span></li>
+<li data-article-id="api-schema-evolution"><a href="/wiki/api-schema-evolution/">API 스키마 진화</a><span class="wiki-en">API Schema Evolution</span></li>
 <li data-article-id="api-endpoint"><a href="/wiki/api-endpoint/">API 엔드포인트</a><span class="wiki-en">API Endpoint</span></li>
 <li data-article-id="api-error-model"><a href="/wiki/api-error-model/">API 오류 모델</a><span class="wiki-en">API Error Model</span></li>
+<li data-article-id="api-error-envelope"><a href="/wiki/api-error-envelope/">API 오류 엔벨로프</a><span class="wiki-en">API Error Envelope</span></li>
+<li data-article-id="api-rate-limit-budget"><a href="/wiki/api-rate-limit-budget/">API 요청 제한 예산</a><span class="wiki-en">API Rate-limit Budget</span></li>
+<li data-article-id="api-request-deduplication"><a href="/wiki/api-request-deduplication/">API 요청 중복 제거</a><span class="wiki-en">API Request Deduplication</span></li>
+<li data-article-id="api-retry-budget"><a href="/wiki/api-retry-budget/">API 재시도 예산</a><span class="wiki-en">API Retry Budget</span></li>
+<li data-article-id="api-conformance-suite"><a href="/wiki/api-conformance-suite/">API 적합성 테스트 스위트</a><span class="wiki-en">API Conformance Suite</span></li>
 <li data-article-id="api-deprecation"><a href="/wiki/api-deprecation/">API 지원 종료</a><span class="wiki-en">API Deprecation</span></li>
 <li data-article-id="api-client"><a href="/wiki/api-client/">API 클라이언트</a><span class="wiki-en">API Client</span></li>
+<li data-article-id="api-client-observability"><a href="/wiki/api-client-observability/">API 클라이언트 관측성</a><span class="wiki-en">API Client Observability</span></li>
 <li data-article-id="api-key"><a href="/wiki/api-key/">API 키</a><span class="wiki-en">API Key</span></li>
+<li data-article-id="api-timeout-budget"><a href="/wiki/api-timeout-budget/">API 타임아웃 예산</a><span class="wiki-en">API Timeout Budget</span></li>
 <li data-article-id="api-pagination"><a href="/wiki/api-pagination/">API 페이지네이션</a><span class="wiki-en">API Pagination</span></li>
+<li data-article-id="api-backward-compatibility"><a href="/wiki/api-backward-compatibility/">API 하위 호환성</a><span class="wiki-en">API Backward Compatibility</span></li>
 <li data-article-id="api-quota"><a href="/wiki/api-quota/">API 할당량</a><span class="wiki-en">API Quota</span></li>
+<li data-article-id="api-quota-allocation"><a href="/wiki/api-quota-allocation/">API 할당량 배분</a><span class="wiki-en">API Quota Allocation</span></li>
 <li data-article-id="api-action-tool"><a href="/wiki/api-action-tool/">API 행동 도구</a><span class="wiki-en">API Action Tool</span></li>
 <li data-article-id="api-type-generation"><a href="/wiki/api-type-generation/">API 형식 생성</a><span class="wiki-en">API Type Generation</span></li>
+<li data-article-id="api-circuit-breaker-policy"><a href="/wiki/api-circuit-breaker-policy/">API 회로 차단기 정책</a><span class="wiki-en">API Circuit-breaker Policy</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-b">
@@ -1378,6 +1550,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="densenet"><a href="/wiki/densenet/">DenseNet</a><span class="wiki-en">DenseNet</span></li>
 <li data-article-id="diskann"><a href="/wiki/diskann/">DiskANN</a><span class="wiki-en">DiskANN</span></li>
 <li data-article-id="dora"><a href="/wiki/dora/">DoRA</a><span class="wiki-en">Weight-Decomposed Low-Rank Adaptation</span></li>
+<li data-article-id="dpo-beta-selection"><a href="/wiki/dpo-beta-selection/">DPO 베타 선택</a><span class="wiki-en">DPO Beta Selection</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-f">
@@ -1445,7 +1618,10 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="keras"><a href="/wiki/keras/">Keras</a><span class="wiki-en">Keras</span></li>
 <li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-en">KL Penalty</span></li>
 <li data-article-id="kv-cache"><a href="/wiki/kv-cache/">KV 캐시</a><span class="wiki-en">Key-Value Cache</span></li>
+<li data-article-id="kv-cache-isolation"><a href="/wiki/kv-cache-isolation/">KV 캐시 격리</a><span class="wiki-en">KV-cache Isolation</span></li>
+<li data-article-id="kv-cache-admission"><a href="/wiki/kv-cache-admission/">KV 캐시 수용 제어</a><span class="wiki-en">KV-cache Admission</span></li>
 <li data-article-id="kv-cache-quantization"><a href="/wiki/kv-cache-quantization/">KV 캐시 양자화</a><span class="wiki-en">KV Cache Quantization</span></li>
+<li data-article-id="kv-cache-capacity-planning"><a href="/wiki/kv-cache-capacity-planning/">KV 캐시 용량 계획</a><span class="wiki-en">KV-cache Capacity Planning</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-l">
@@ -1455,8 +1631,28 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="l2-regularization"><a href="/wiki/l2-regularization/">L2 정규화</a><span class="wiki-en">L2 Regularization</span></li>
 <li data-article-id="local-interpretable-model-agnostic-explanations"><a href="/wiki/local-interpretable-model-agnostic-explanations/">LIME 설명</a><span class="wiki-en">Local Interpretable Model-Agnostic Explanations</span></li>
 <li data-article-id="linux-foundation-ai-data"><a href="/wiki/linux-foundation-ai-data/">Linux Foundation AI &amp; Data</a><span class="wiki-en">Linux Foundation AI &amp; Data</span></li>
+<li data-article-id="llm-api-contract-test"><a href="/wiki/llm-api-contract-test/">LLM API 계약 테스트</a><span class="wiki-en">LLM API Contract Test</span></li>
+<li data-article-id="llm-api-idempotency"><a href="/wiki/llm-api-idempotency/">LLM API 멱등성</a><span class="wiki-en">LLM API Idempotency</span></li>
+<li data-article-id="llm-api-pagination"><a href="/wiki/llm-api-pagination/">LLM API 페이지 나누기</a><span class="wiki-en">LLM API Pagination</span></li>
+<li data-article-id="llm-feature-flag"><a href="/wiki/llm-feature-flag/">LLM 기능 플래그</a><span class="wiki-en">LLM Feature Flag</span></li>
+<li data-article-id="llm-routing-gateway"><a href="/wiki/llm-routing-gateway/">LLM 라우팅 게이트웨이</a><span class="wiki-en">LLM Routing Gateway</span></li>
+<li data-article-id="llm-cost-attribution"><a href="/wiki/llm-cost-attribution/">LLM 비용 귀속</a><span class="wiki-en">LLM Cost Attribution</span></li>
+<li data-article-id="llm-serving-slo"><a href="/wiki/llm-serving-slo/">LLM 서빙 SLO</a><span class="wiki-en">LLM Serving SLO</span></li>
+<li data-article-id="llm-session-state"><a href="/wiki/llm-session-state/">LLM 세션 상태</a><span class="wiki-en">LLM Session State</span></li>
 <li data-article-id="llm-as-a-judge"><a href="/wiki/llm-as-a-judge/">LLM 심사자</a><span class="wiki-en">LLM as a Judge</span></li>
+<li data-article-id="llm-request-envelope"><a href="/wiki/llm-request-envelope/">LLM 요청 엔벨로프</a><span class="wiki-en">LLM Request Envelope</span></li>
+<li data-article-id="llm-request-normalization"><a href="/wiki/llm-request-normalization/">LLM 요청 정규화</a><span class="wiki-en">LLM Request Normalization</span></li>
+<li data-article-id="llm-workload-classification"><a href="/wiki/llm-workload-classification/">LLM 워크로드 분류</a><span class="wiki-en">LLM Workload Classification</span></li>
+<li data-article-id="llm-webhook-signature"><a href="/wiki/llm-webhook-signature/">LLM 웹훅 서명</a><span class="wiki-en">LLM Webhook Signature</span></li>
+<li data-article-id="llm-webhook-replay-defense"><a href="/wiki/llm-webhook-replay-defense/">LLM 웹훅 재전송 방어</a><span class="wiki-en">LLM Webhook Replay Defense</span></li>
+<li data-article-id="llm-response-reproducibility"><a href="/wiki/llm-response-reproducibility/">LLM 응답 재현성</a><span class="wiki-en">LLM Response Reproducibility</span></li>
+<li data-article-id="llm-response-normalization"><a href="/wiki/llm-response-normalization/">LLM 응답 정규화</a><span class="wiki-en">LLM Response Normalization</span></li>
+<li data-article-id="llm-output-determinism"><a href="/wiki/llm-output-determinism/">LLM 출력 결정성</a><span class="wiki-en">LLM Output Determinism</span></li>
 <li data-article-id="llm-penetration-testing"><a href="/wiki/llm-penetration-testing/">LLM 침투 테스트</a><span class="wiki-en">LLM Penetration Testing</span></li>
+<li data-article-id="llm-client-conformance"><a href="/wiki/llm-client-conformance/">LLM 클라이언트 적합성</a><span class="wiki-en">LLM Client Conformance</span></li>
+<li data-article-id="llm-judge-ensemble"><a href="/wiki/llm-judge-ensemble/">LLM 판정 앙상블</a><span class="wiki-en">LLM Judge Ensemble</span></li>
+<li data-article-id="llm-evaluation-contract"><a href="/wiki/llm-evaluation-contract/">LLM 평가 계약</a><span class="wiki-en">LLM Evaluation Contract</span></li>
+<li data-article-id="inter-rater-agreement-for-llm"><a href="/wiki/inter-rater-agreement-for-llm/">LLM 평가자 간 일치도</a><span class="wiki-en">Inter-rater Agreement for LLMs</span></li>
 <li data-article-id="llmops"><a href="/wiki/llmops/">LLMOps</a><span class="wiki-en">LLMOps</span></li>
 <li data-article-id="proximal-policy-optimization-for-llm"><a href="/wiki/proximal-policy-optimization-for-llm/">LLM용 근접 정책 최적화</a><span class="wiki-en">Proximal Policy Optimization for LLMs</span></li>
 <li data-article-id="longformer"><a href="/wiki/longformer/">Longformer</a><span class="wiki-en">Longformer</span></li>
@@ -1532,7 +1728,9 @@ description: AI·LLM 백과 문서 가나다 색인
 <section class="wiki-index-group" data-index-group="en-r">
 <h2 id="index-en-r">R</h2>
 <ul class="wiki-index-list">
+<li data-article-id="rag-evidence-lineage"><a href="/wiki/rag-evidence-lineage/">RAG 근거 계보</a><span class="wiki-en">RAG Evidence Lineage</span></li>
 <li data-article-id="context-compression-for-rag"><a href="/wiki/context-compression-for-rag/">RAG 문맥 압축</a><span class="wiki-en">Context Compression for RAG</span></li>
+<li data-article-id="rag-index-freshness"><a href="/wiki/rag-index-freshness/">RAG 색인 신선도</a><span class="wiki-en">RAG Index Freshness</span></li>
 <li data-article-id="rag-poisoning"><a href="/wiki/rag-poisoning/">RAG 오염</a><span class="wiki-en">RAG Poisoning</span></li>
 <li data-article-id="rag-evaluation"><a href="/wiki/rag-evaluation/">RAG 평가</a><span class="wiki-en">RAG Evaluation</span></li>
 <li data-article-id="react-agent"><a href="/wiki/react-agent/">ReAct 에이전트</a><span class="wiki-en">ReAct Agent</span></li>
@@ -1554,8 +1752,10 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="sdk"><a href="/wiki/sdk/">SDK</a><span class="wiki-en">Software Development Kit</span></li>
 <li data-article-id="self-rag"><a href="/wiki/self-rag/">Self-RAG</a><span class="wiki-en">Self-Reflective Retrieval-Augmented Generation</span></li>
 <li data-article-id="sentencepiece"><a href="/wiki/sentencepiece/">SentencePiece</a><span class="wiki-en">SentencePiece</span></li>
+<li data-article-id="sft-data-mixture"><a href="/wiki/sft-data-mixture/">SFT 데이터 혼합</a><span class="wiki-en">SFT Data Mixture</span></li>
 <li data-article-id="shapley-additive-explanations"><a href="/wiki/shapley-additive-explanations/">SHAP 설명</a><span class="wiki-en">SHapley Additive exPlanations</span></li>
 <li data-article-id="sparql"><a href="/wiki/sparql/">SPARQL</a><span class="wiki-en">SPARQL</span></li>
+<li data-article-id="server-sent-event-recovery"><a href="/wiki/server-sent-event-recovery/">SSE 복구</a><span class="wiki-en">Server-sent Event Recovery</span></li>
 <li data-article-id="swe-bench"><a href="/wiki/swe-bench/">SWE-bench</a><span class="wiki-en">SWE-bench</span></li>
 <li data-article-id="swiglu"><a href="/wiki/swiglu/">SwiGLU</a><span class="wiki-en">SwiGLU</span></li>
 </ul>

@@ -33,6 +33,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="conversation-memory"><a href="/wiki/conversation-memory/">대화 메모리</a><span class="wiki-index-summary">대화 메모리는 사용자와 에이전트 사이의 발화, 역할, 결정과 미해결 항목을 대화 단위로 유지하는 기억이다.</span></li>
 <li data-article-id="tool-result-handling"><a href="/wiki/tool-result-handling/">도구 결과 처리</a><span class="wiki-index-summary">도구 결과 처리는 외부 호출의 성공 값, 오류, 부분 결과와 부수 효과를 에이전트 상태에 안전하게 반영하는 절차다.</span></li>
 <li data-article-id="tool-permission"><a href="/wiki/tool-permission/">도구 권한</a><span class="wiki-index-summary">도구 권한은 에이전트가 특정 도구와 자원에 대해 조회·변경·전송할 수 있는 범위를 제한하는 정책이다.</span></li>
+<li data-article-id="tool-permission-broker"><a href="/wiki/tool-permission-broker/">도구 권한 브로커</a><span class="wiki-index-summary">도구 권한 브로커는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="tool-registry"><a href="/wiki/tool-registry/">도구 레지스트리</a><span class="wiki-index-summary">도구 레지스트리는 에이전트가 사용할 수 있는 도구의 명세, 버전, 권한과 상태를 검색 가능하게 관리하는 목록이다.</span></li>
 <li data-article-id="tool-discovery"><a href="/wiki/tool-discovery/">도구 발견</a><span class="wiki-index-summary">도구 발견은 현재 과제를 수행할 수 있는 도구를 레지스트리나 서버에서 찾아 기능과 제약을 파악하는 단계다.</span></li>
 <li data-article-id="tool-side-effect"><a href="/wiki/tool-side-effect/">도구 부작용</a><span class="wiki-index-summary">도구 부작용은 도구 호출이 반환값 이외에 파일·계정·메시지·금전·외부 시스템 상태에 남기는 변화다.</span></li>
@@ -50,6 +51,9 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <h2 id="index-ko-m">ㅁ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="multi-agent-system"><a href="/wiki/multi-agent-system/">멀티 에이전트 시스템</a><span class="wiki-index-summary">역할이 다른 여러 에이전트가 협력하거나 경쟁하며 문제를 해결하는 시스템이다.</span></li>
+<li data-article-id="multi-agent-deadlock"><a href="/wiki/multi-agent-deadlock/">멀티에이전트 교착 상태</a><span class="wiki-index-summary">멀티에이전트 교착 상태는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="multi-agent-conflict-mediation"><a href="/wiki/multi-agent-conflict-mediation/">멀티에이전트 충돌 중재</a><span class="wiki-index-summary">멀티에이전트 충돌 중재는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="multi-agent-consensus-protocol"><a href="/wiki/multi-agent-consensus-protocol/">멀티에이전트 합의 프로토콜</a><span class="wiki-index-summary">멀티에이전트 합의 프로토콜은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-based-planning"><a href="/wiki/model-based-planning/">모델 기반 계획</a><span class="wiki-index-summary">모델 기반 계획은 환경의 상태 전이와 보상 또는 비용을 예측하는 모델을 이용해 행동 결과를 미리 비교하는 방식이다.</span></li>
 <li data-article-id="mcp"><a href="/wiki/mcp/">모델 컨텍스트 프로토콜</a><span class="wiki-index-summary">AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으로 연결하도록 정의한 프로토콜이다.</span></li>
 </ul>
@@ -83,20 +87,38 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-index-summary">복잡한 에이전트 과제를 실행 가능하고 검증 가능한 하위 과제로 나누고 의존 관계를 정하는 과정이다.</span></li>
 <li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공률은 주어진 목표의 필수 완료 조건과 제약을 모두 만족한 독립 실행이 전체 시도에서 차지하는 비율이다.</span></li>
 <li data-article-id="agent-trajectory-evaluation"><a href="/wiki/agent-trajectory-evaluation/">에이전트 궤적 평가</a><span class="wiki-index-summary">에이전트 궤적 평가는 최종 답뿐 아니라 관측·추론·도구 호출·상태 전환으로 이어지는 실행 경로의 품질을 판정하는 방법이다.</span></li>
+<li data-article-id="agent-step-budget"><a href="/wiki/agent-step-budget/">에이전트 단계 예산</a><span class="wiki-index-summary">에이전트 단계 예산은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="short-term-agent-memory"><a href="/wiki/short-term-agent-memory/">에이전트 단기 기억</a><span class="wiki-index-summary">에이전트 단기 기억은 한 세션이나 인접한 작업 단계 사이에서 최근 대화와 행동 결과를 유지하는 임시 기억 계층이다.</span></li>
 <li data-article-id="agent-tool"><a href="/wiki/agent-tool/">에이전트 도구</a><span class="wiki-index-summary">에이전트 도구는 모델이 외부 정보 조회나 상태 변경을 수행할 수 있도록 명세된 함수·API·실행 환경이다.</span></li>
+<li data-article-id="agent-tool-retry-policy"><a href="/wiki/agent-tool-retry-policy/">에이전트 도구 재시도 정책</a><span class="wiki-index-summary">에이전트 도구 재시도 정책은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-tool-accuracy"><a href="/wiki/agent-tool-accuracy/">에이전트 도구 정확도</a><span class="wiki-index-summary">에이전트 도구 정확도는 적절한 도구 선택, 인수 구성, 호출 시점과 결과 해석이 기준에 맞는 정도다.</span></li>
+<li data-article-id="agent-tool-timeout-budget"><a href="/wiki/agent-tool-timeout-budget/">에이전트 도구 타임아웃 예산</a><span class="wiki-index-summary">에이전트 도구 타임아웃 예산은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-tool-transaction"><a href="/wiki/agent-tool-transaction/">에이전트 도구 트랜잭션</a><span class="wiki-index-summary">에이전트 도구 트랜잭션은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-runtime"><a href="/wiki/agent-runtime/">에이전트 런타임</a><span class="wiki-index-summary">에이전트 런타임은 모델 호출, 도구 실행, 상태 보존, 오류 복구와 관측 기록을 실제로 수행하는 실행 환경이다.</span></li>
 <li data-article-id="agent-loop"><a href="/wiki/agent-loop/">에이전트 루프</a><span class="wiki-index-summary">관찰·추론·행동·결과 반영을 목표 달성까지 반복하는 실행 구조다.</span></li>
+<li data-article-id="agent-loop-watchdog"><a href="/wiki/agent-loop-watchdog/">에이전트 루프 감시기</a><span class="wiki-index-summary">에이전트 루프 감시기는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-memory"><a href="/wiki/agent-memory/">에이전트 메모리</a><span class="wiki-index-summary">에이전트가 이전 상호작용과 작업 상태를 저장하고 이후 판단에 사용하는 구조다.</span></li>
+<li data-article-id="agent-memory-retention"><a href="/wiki/agent-memory-retention/">에이전트 메모리 보유</a><span class="wiki-index-summary">에이전트 메모리 보유는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-memory-consistency"><a href="/wiki/agent-memory-consistency/">에이전트 메모리 일관성</a><span class="wiki-index-summary">에이전트 메모리 일관성은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-idempotency"><a href="/wiki/agent-idempotency/">에이전트 멱등성</a><span class="wiki-index-summary">에이전트 멱등성은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-goal"><a href="/wiki/agent-goal/">에이전트 목표</a><span class="wiki-index-summary">에이전트가 도달하거나 유지하려는 바람직한 상태를 성공 조건과 제약으로 표현한 것이다.</span></li>
+<li data-article-id="agent-context-handoff"><a href="/wiki/agent-context-handoff/">에이전트 문맥 핸드오프</a><span class="wiki-index-summary">에이전트 문맥 핸드오프는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-benchmark"><a href="/wiki/agent-benchmark/">에이전트 벤치마크</a><span class="wiki-index-summary">에이전트 벤치마크는 계획·도구 사용·상태 관리가 필요한 과제와 성공 판정 환경을 묶어 에이전트 성능을 비교하는 평가 체계다.</span></li>
+<li data-article-id="agent-compensation-transaction"><a href="/wiki/agent-compensation-transaction/">에이전트 보상 트랜잭션</a><span class="wiki-index-summary">에이전트 보상 트랜잭션은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-security"><a href="/wiki/agent-security/">에이전트 보안</a><span class="wiki-index-summary">에이전트 보안은 자율 실행 시스템의 모델·메모리·도구·자격증명·통신과 공급망을 공격과 오용에서 보호하는 활동이다.</span></li>
+<li data-article-id="agent-side-effect-control"><a href="/wiki/agent-side-effect-control/">에이전트 부수 효과 제어</a><span class="wiki-index-summary">에이전트 부수 효과 제어는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-incident-playbook"><a href="/wiki/agent-incident-playbook/">에이전트 사고 대응 절차</a><span class="wiki-index-summary">에이전트 사고 대응 절차는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-human-approval-gate"><a href="/wiki/agent-human-approval-gate/">에이전트 사람 승인 게이트</a><span class="wiki-index-summary">에이전트 사람 승인 게이트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-state-machine"><a href="/wiki/agent-state-machine/">에이전트 상태 기계</a><span class="wiki-index-summary">에이전트 상태 기계는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-escalation-policy"><a href="/wiki/agent-escalation-policy/">에이전트 상향 보고 정책</a><span class="wiki-index-summary">에이전트 상향 보고 정책은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-sandbox"><a href="/wiki/agent-sandbox/">에이전트 샌드박스</a><span class="wiki-index-summary">에이전트 샌드박스는 에이전트가 실행하는 코드와 도구의 파일·네트워크·프로세스 접근을 격리하는 환경이다.</span></li>
 <li data-article-id="agent-reflection"><a href="/wiki/agent-reflection/">에이전트 성찰</a><span class="wiki-index-summary">에이전트 성찰은 직전 추론 과정이나 결과를 평가해 오류, 누락과 더 나은 다음 행동을 찾아내는 절차다.</span></li>
 <li data-article-id="agent-deliberation"><a href="/wiki/agent-deliberation/">에이전트 숙고</a><span class="wiki-index-summary">에이전트 숙고는 행동을 즉시 실행하지 않고 대안·근거·위험을 비교해 선택을 정교화하는 의사결정 단계다.</span></li>
 <li data-article-id="agent-swarm"><a href="/wiki/agent-swarm/">에이전트 스웜</a><span class="wiki-index-summary">에이전트 스웜은 다수의 비교적 자율적인 에이전트가 지역 정보와 단순한 상호작용 규칙으로 공동 문제를 푸는 구성이다.</span></li>
 <li data-article-id="agent-scratchpad"><a href="/wiki/agent-scratchpad/">에이전트 스크래치패드</a><span class="wiki-index-summary">에이전트 스크래치패드는 한 과제를 푸는 동안 임시 계산, 도구 결과, 다음 행동 후보를 유지하는 작업 공간이다.</span></li>
+<li data-article-id="agent-simulation-test"><a href="/wiki/agent-simulation-test/">에이전트 시뮬레이션 테스트</a><span class="wiki-index-summary">에이전트 시뮬레이션 테스트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-run-contract"><a href="/wiki/agent-run-contract/">에이전트 실행 계약</a><span class="wiki-index-summary">에이전트 실행 계약은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-run-replay"><a href="/wiki/agent-run-replay/">에이전트 실행 재현</a><span class="wiki-index-summary">에이전트 실행 재현은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-executor"><a href="/wiki/agent-executor/">에이전트 실행기</a><span class="wiki-index-summary">에이전트 실행기는 계획에 적힌 작업을 실제 모델 호출, 도구 호출 또는 외부 작업으로 변환하는 구성 요소다.</span></li>
 <li data-article-id="agent-role"><a href="/wiki/agent-role/">에이전트 역할</a><span class="wiki-index-summary">에이전트 역할은 다중 에이전트 시스템에서 한 에이전트가 맡을 책임, 사용 가능한 도구와 의사결정 범위를 정의한 규약이다.</span></li>
 <li data-article-id="agent-delegation"><a href="/wiki/agent-delegation/">에이전트 위임</a><span class="wiki-index-summary">에이전트 위임은 상위 에이전트가 목표의 일부와 필요한 권한·제약을 다른 에이전트에게 맡기는 작업 분배 방식이다.</span></li>
@@ -111,8 +133,11 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="agent-coordination"><a href="/wiki/agent-coordination/">에이전트 조정</a><span class="wiki-index-summary">에이전트 조정은 여러 에이전트의 작업 순서, 자원 사용과 상호 의존성을 맞춰 충돌과 중복을 줄이는 제어 활동이다.</span></li>
 <li data-article-id="agent-termination-condition"><a href="/wiki/agent-termination-condition/">에이전트 종료 조건</a><span class="wiki-index-summary">에이전트 종료 조건은 목표 달성, 실패 확정, 예산 소진 또는 사람 개입 필요성을 근거로 실행 루프를 멈추는 판정 규칙이다.</span></li>
 <li data-article-id="agent-trace-evaluation"><a href="/wiki/agent-trace-evaluation/">에이전트 추적 평가</a><span class="wiki-index-summary">에이전트 추적 평가는 관측·계획·도구 호출·결과·상태 전환으로 이어지는 실행 기록을 단계별로 분석하는 평가 방법이다.</span></li>
+<li data-article-id="agent-canary-run"><a href="/wiki/agent-canary-run/">에이전트 카나리 실행</a><span class="wiki-index-summary">에이전트 카나리 실행은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-chaos-testing"><a href="/wiki/agent-chaos-testing/">에이전트 카오스 테스트</a><span class="wiki-index-summary">에이전트 카오스 테스트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-harness"><a href="/wiki/agent-harness/">에이전트 하네스</a><span class="wiki-index-summary">에이전트 하네스는 언어 모델 주위에 프롬프트, 도구, 메모리, 정책과 평가기를 결합한 실행 골격이다.</span></li>
 <li data-article-id="agent-handoff"><a href="/wiki/agent-handoff/">에이전트 핸드오프</a><span class="wiki-index-summary">에이전트 핸드오프는 한 에이전트가 진행 중인 작업의 책임과 필요한 문맥을 다른 에이전트에게 넘기는 전환 절차다.</span></li>
+<li data-article-id="agent-action-ledger"><a href="/wiki/agent-action-ledger/">에이전트 행동 원장</a><span class="wiki-index-summary">에이전트 행동 원장은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-collaboration"><a href="/wiki/agent-collaboration/">에이전트 협업</a><span class="wiki-index-summary">에이전트 협업은 서로 다른 능력이나 정보를 가진 에이전트들이 공동 목표를 위해 산출물과 피드백을 주고받는 과정이다.</span></li>
 <li data-article-id="orchestrator-agent"><a href="/wiki/orchestrator-agent/">오케스트레이터 에이전트</a><span class="wiki-index-summary">오케스트레이터 에이전트는 여러 작업자와 도구 사이의 의존 관계, 순서, 병렬 실행과 결과 통합을 조정한다.</span></li>
 <li data-article-id="workflow-orchestration"><a href="/wiki/workflow-orchestration/">워크플로 오케스트레이션</a><span class="wiki-index-summary">여러 작업과 도구 호출의 의존 관계·상태·실패 처리를 정의하고 실행 순서를 조정하는 운영 방식이다.</span></li>

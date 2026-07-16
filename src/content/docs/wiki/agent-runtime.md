@@ -140,7 +140,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+- [도구 권한 브로커](/wiki/tool-permission-broker/)
+- [멀티에이전트 교착 상태](/wiki/multi-agent-deadlock/)
+- [멀티에이전트 충돌 중재](/wiki/multi-agent-conflict-mediation/)
+- [멀티에이전트 합의 프로토콜](/wiki/multi-agent-consensus-protocol/)
+- [에이전트 단계 예산](/wiki/agent-step-budget/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 20개 문서 보기</summary>
+
+- [에이전트 도구 재시도 정책](/wiki/agent-tool-retry-policy/)
+- [에이전트 도구 타임아웃 예산](/wiki/agent-tool-timeout-budget/)
+- [에이전트 도구 트랜잭션](/wiki/agent-tool-transaction/)
+- [에이전트 루프 감시기](/wiki/agent-loop-watchdog/)
+- [에이전트 메모리 보유](/wiki/agent-memory-retention/)
+- [에이전트 메모리 일관성](/wiki/agent-memory-consistency/)
+- [에이전트 멱등성](/wiki/agent-idempotency/)
+- [에이전트 문맥 핸드오프](/wiki/agent-context-handoff/)
+- [에이전트 보상 트랜잭션](/wiki/agent-compensation-transaction/)
+- [에이전트 부수 효과 제어](/wiki/agent-side-effect-control/)
+- [에이전트 사고 대응 절차](/wiki/agent-incident-playbook/)
+- [에이전트 사람 승인 게이트](/wiki/agent-human-approval-gate/)
+- [에이전트 상태 기계](/wiki/agent-state-machine/)
+- [에이전트 상향 보고 정책](/wiki/agent-escalation-policy/)
+- [에이전트 시뮬레이션 테스트](/wiki/agent-simulation-test/)
+- [에이전트 실행 계약](/wiki/agent-run-contract/)
+- [에이전트 실행 재현](/wiki/agent-run-replay/)
+- [에이전트 카나리 실행](/wiki/agent-canary-run/)
+- [에이전트 카오스 테스트](/wiki/agent-chaos-testing/)
+- [에이전트 행동 원장](/wiki/agent-action-ledger/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 

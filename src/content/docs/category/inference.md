@@ -5,7 +5,7 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 
 학습된 모델이 출력을 생성하고 서비스되는 방식 분야의 검토 완료 백과 문서입니다.
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-gg">ㄲ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-c">C</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-i">I</a><a href="#index-en-k">K</a><a href="#index-en-m">M</a><a href="#index-en-n">N</a><a href="#index-en-o">O</a><a href="#index-en-t">T</a><a href="#index-en-x">X</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-gg">ㄲ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-c">C</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-i">I</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-n">N</a><a href="#index-en-o">O</a><a href="#index-en-t">T</a><a href="#index-en-x">X</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
@@ -48,13 +48,16 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <section class="wiki-index-group" data-index-group="ko-m">
 <h2 id="index-ko-m">ㅁ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="multi-lora-serving"><a href="/wiki/multi-lora-serving/">멀티 LoRA 서빙</a><span class="wiki-index-summary">멀티 LoRA 서빙은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="memory-bandwidth"><a href="/wiki/memory-bandwidth/">메모리 대역폭</a><span class="wiki-index-summary">메모리 대역폭은 단위 시간에 메모리와 계산 장치 사이에서 전달할 수 있는 데이터 양이다.</span></li>
 <li data-article-id="out-of-memory-error"><a href="/wiki/out-of-memory-error/">메모리 부족 오류</a><span class="wiki-index-summary">메모리 부족 오류는 모델 추론에 필요한 장치 또는 호스트 메모리 할당이 사용 가능한 용량을 넘어 실패한 상태다.</span></li>
 <li data-article-id="memory-bound-workload"><a href="/wiki/memory-bound-workload/">메모리 집약 작업</a><span class="wiki-index-summary">메모리 집약 작업은 계산 장치보다 메모리에서 데이터를 읽고 쓰는 속도가 실행 시간을 제한하는 작업이다.</span></li>
 <li data-article-id="model-availability"><a href="/wiki/model-availability/">모델 가용성</a><span class="wiki-index-summary">모델 가용성은 사용자가 요구한 시점에 모델 서비스가 유효한 응답을 제공할 수 있는 비율이다.</span></li>
 <li data-article-id="model-gateway"><a href="/wiki/model-gateway/">모델 게이트웨이</a><span class="wiki-index-summary">모델 게이트웨이는 여러 모델 제공자와 내부 모델 앞에서 공통 인증, 라우팅, 정책과 관측 기능을 제공하는 진입 계층이다.</span></li>
+<li data-article-id="model-loading-latency"><a href="/wiki/model-loading-latency/">모델 로딩 지연 시간</a><span class="wiki-index-summary">모델 로딩 지연 시간은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-replica"><a href="/wiki/model-replica/">모델 복제본</a><span class="wiki-index-summary">모델 복제본은 같은 모델 버전과 설정을 독립 프로세스나 장치에 적재한 추론 서비스 인스턴스다.</span></li>
 <li data-article-id="model-serving"><a href="/wiki/model-serving/">모델 서빙</a><span class="wiki-index-summary">모델 서빙은 학습된 모델을 요청 가능한 서비스로 배치해 입력 전처리, 추론, 출력 후처리와 운영 관측을 제공하는 체계다.</span></li>
+<li data-article-id="model-fleet-routing"><a href="/wiki/model-fleet-routing/">모델 플릿 라우팅</a><span class="wiki-index-summary">모델 플릿 라우팅은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-b">
@@ -85,12 +88,16 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <section class="wiki-index-group" data-index-group="ko-ng">
 <h2 id="index-ko-ng">ㅇ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="adapter-serving"><a href="/wiki/adapter-serving/">어댑터 서빙</a><span class="wiki-index-summary">어댑터 서빙은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="edge-inference"><a href="/wiki/edge-inference/">엣지 추론</a><span class="wiki-index-summary">엣지 추론은 센서·모바일·현장 장치처럼 데이터 생성 지점 가까이에서 모델 예측을 수행하는 방식이다.</span></li>
 <li data-article-id="compute-bound-workload"><a href="/wiki/compute-bound-workload/">연산 집약 작업</a><span class="wiki-index-summary">연산 집약 작업은 실행 시간이 메모리 전송보다 계산 처리량에 주로 제한되는 작업이다.</span></li>
 <li data-article-id="operator-fusion"><a href="/wiki/operator-fusion/">연산자 융합</a><span class="wiki-index-summary">연산자 융합은 연속된 여러 고수준 연산을 하나의 실행 단위로 결합해 중간 메모리 이동과 실행 오버헤드를 줄이는 최적화다.</span></li>
 <li data-article-id="continuous-batching"><a href="/wiki/continuous-batching/">연속 배칭</a><span class="wiki-index-summary">연속 배칭은 실행 중인 추론 배치에 완료된 요청을 제거하고 새 요청을 단계별로 투입해 장치 활용률을 높이는 스케줄링 방식이다.</span></li>
+<li data-article-id="continuous-batching-fairness"><a href="/wiki/continuous-batching-fairness/">연속 배칭 공정성</a><span class="wiki-index-summary">연속 배칭 공정성은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="continuous-batching-policy"><a href="/wiki/continuous-batching-policy/">연속 배칭 정책</a><span class="wiki-index-summary">연속 배칭 정책은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="online-inference"><a href="/wiki/online-inference/">온라인 추론</a><span class="wiki-index-summary">온라인 추론은 사용자나 시스템의 개별 요청에 대해 짧은 지연 시간 안에 즉시 예측을 반환하는 처리 방식이다.</span></li>
 <li data-article-id="request-queue"><a href="/wiki/request-queue/">요청 대기열</a><span class="wiki-index-summary">요청 대기열은 즉시 실행할 자원이 없는 추론 요청을 도착 순서와 우선순위 정보와 함께 보관하는 구조다.</span></li>
+<li data-article-id="request-preemption"><a href="/wiki/request-preemption/">요청 선점</a><span class="wiki-index-summary">요청 선점은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="request-scheduler"><a href="/wiki/request-scheduler/">요청 스케줄러</a><span class="wiki-index-summary">요청 스케줄러는 동시 추론 요청의 우선순위, 배치 구성과 실행 순서를 결정하는 구성 요소다.</span></li>
 <li data-article-id="warm-start"><a href="/wiki/warm-start/">웜 스타트</a><span class="wiki-index-summary">웜 스타트는 이미 로드되었거나 이전 상태를 재사용할 수 있는 인스턴스에서 요청이나 학습을 시작해 초기화 비용을 줄이는 방식이다.</span></li>
 </ul>
@@ -116,15 +123,25 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <li data-article-id="chunked-prefill"><a href="/wiki/chunked-prefill/">청크 프리필</a><span class="wiki-index-summary">청크 프리필은 긴 입력 프롬프트의 사전 계산을 여러 토큰 구간으로 나누어 디코딩 요청과 번갈아 실행하는 스케줄링 기법이다.</span></li>
 <li data-article-id="draft-model"><a href="/wiki/draft-model/">초안 모델</a><span class="wiki-index-summary">초안 모델은 추측 디코딩에서 목표 모델보다 빠르게 다음 토큰 후보 묶음을 제안하는 보조 모델이다.</span></li>
 <li data-article-id="inference"><a href="/wiki/inference/">추론</a><span class="wiki-index-summary">학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다.</span></li>
+<li data-article-id="inference-overload-control"><a href="/wiki/inference-overload-control/">추론 과부하 제어</a><span class="wiki-index-summary">추론 과부하 제어는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-graph-optimization"><a href="/wiki/inference-graph-optimization/">추론 그래프 최적화</a><span class="wiki-index-summary">추론 그래프 최적화는 학습이 끝난 모델 그래프를 같은 출력 의미를 유지하면서 더 빠르고 작게 실행되도록 변환하는 과정이다.</span></li>
+<li data-article-id="inference-tail-latency-debugging"><a href="/wiki/inference-tail-latency-debugging/">추론 꼬리 지연 디버깅</a><span class="wiki-index-summary">추론 꼬리 지연 디버깅은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-monitoring"><a href="/wiki/inference-monitoring/">추론 모니터링</a><span class="wiki-index-summary">추론 모니터링은 운영 중 모델 요청의 품질·지연·오류·자원·안전 신호를 지속 수집하고 이상을 탐지하는 활동이다.</span></li>
 <li data-article-id="inference-load-balancing"><a href="/wiki/inference-load-balancing/">추론 부하 분산</a><span class="wiki-index-summary">추론 부하 분산은 여러 모델 복제본에 요청을 나눠 처리량과 가용성을 유지하는 방법이다.</span></li>
 <li data-article-id="inference-server"><a href="/wiki/inference-server/">추론 서버</a><span class="wiki-index-summary">추론 서버는 학습된 모델을 메모리에 적재하고 네트워크 요청을 받아 예측 결과를 반환하는 실행 서비스다.</span></li>
 <li data-article-id="inference-timeout"><a href="/wiki/inference-timeout/">추론 시간 초과</a><span class="wiki-index-summary">추론 시간 초과는 모델 요청이 정해진 기한 안에 완료되지 않으면 기다림을 중단하고 실패로 처리하는 제어다.</span></li>
+<li data-article-id="inference-energy-efficiency"><a href="/wiki/inference-energy-efficiency/">추론 에너지 효율</a><span class="wiki-index-summary">추론 에너지 효율은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-endpoint"><a href="/wiki/inference-endpoint/">추론 엔드포인트</a><span class="wiki-index-summary">추론 엔드포인트는 특정 모델 또는 모델 집합에 예측 요청을 보낼 수 있도록 공개된 네트워크 주소와 계약이다.</span></li>
+<li data-article-id="inference-backpressure"><a href="/wiki/inference-backpressure/">추론 역압</a><span class="wiki-index-summary">추론 역압은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-capacity-planning"><a href="/wiki/inference-capacity-planning/">추론 용량 계획</a><span class="wiki-index-summary">추론 용량 계획은 예상 트래픽과 서비스 목표를 만족하도록 모델 복제본, 가속기, 메모리와 큐 용량을 산정하는 과정이다.</span></li>
+<li data-article-id="inference-capacity-headroom"><a href="/wiki/inference-capacity-headroom/">추론 용량 여유분</a><span class="wiki-index-summary">추론 용량 여유분은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-workload-shaping"><a href="/wiki/inference-workload-shaping/">추론 워크로드 형상화</a><span class="wiki-index-summary">추론 워크로드 형상화는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-warm-pool"><a href="/wiki/inference-warm-pool/">추론 웜 풀</a><span class="wiki-index-summary">추론 웜 풀은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-autoscaling"><a href="/wiki/inference-autoscaling/">추론 자동 확장</a><span class="wiki-index-summary">추론 자동 확장은 요청량과 자원 지표에 따라 모델 복제본 수를 자동으로 늘리거나 줄이는 운영 방식이다.</span></li>
 <li data-article-id="inference-retry"><a href="/wiki/inference-retry/">추론 재시도</a><span class="wiki-index-summary">추론 재시도는 일시적 오류나 제한 응답 뒤 같은 논리 요청을 다시 수행하는 복구 전략이다.</span></li>
+<li data-article-id="inference-queue-discipline"><a href="/wiki/inference-queue-discipline/">추론 큐 규칙</a><span class="wiki-index-summary">추론 큐 규칙은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-carbon-accounting"><a href="/wiki/inference-carbon-accounting/">추론 탄소 회계</a><span class="wiki-index-summary">추론 탄소 회계는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-slo-error-budget"><a href="/wiki/inference-slo-error-budget/">추론 SLO 오류 예산</a><span class="wiki-index-summary">추론 SLO 오류 예산은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="speculative-decoding"><a href="/wiki/speculative-decoding/">추측 디코딩</a><span class="wiki-index-summary">추측 디코딩은 작은 초안 모델이 여러 토큰 후보를 먼저 만들고 큰 목표 모델이 한 번에 검증해 자동회귀 생성 속도를 높이는 기법이다.</span></li>
 </ul>
 </section>
@@ -144,6 +161,8 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <li data-article-id="inter-token-latency"><a href="/wiki/inter-token-latency/">토큰 간 지연 시간</a><span class="wiki-index-summary">토큰 간 지연 시간은 스트리밍 응답에서 연속한 출력 토큰 사이에 걸리는 시간이다.</span></li>
 <li data-article-id="token-cost"><a href="/wiki/token-cost/">토큰 비용</a><span class="wiki-index-summary">토큰 비용은 언어 모델이 처리하거나 생성한 토큰 수에 모델별 단가를 적용한 요청 비용이다.</span></li>
 <li data-article-id="token-sampling"><a href="/wiki/token-sampling/">토큰 샘플링</a><span class="wiki-index-summary">토큰 샘플링은 다음 토큰 확률분포에서 난수로 토큰을 뽑아 생성 시퀀스를 이어가는 디코딩 방식이다.</span></li>
+<li data-article-id="token-scheduler"><a href="/wiki/token-scheduler/">토큰 스케줄러</a><span class="wiki-index-summary">토큰 스케줄러는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="token-budget-admission-control"><a href="/wiki/token-budget-admission-control/">토큰 예산 수용 제어</a><span class="wiki-index-summary">토큰 예산 수용 제어는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-p">
@@ -153,6 +172,7 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <li data-article-id="prompt-lookup-decoding"><a href="/wiki/prompt-lookup-decoding/">프롬프트 조회 디코딩</a><span class="wiki-index-summary">프롬프트 조회 디코딩은 입력 문맥에 이미 나타난 토큰 연속열을 초안 후보로 찾아 여러 토큰을 한 번에 검증하는 추론 가속 방식이다.</span></li>
 <li data-article-id="prefix-caching"><a href="/wiki/prefix-caching/">프리픽스 캐싱</a><span class="wiki-index-summary">프리픽스 캐싱은 여러 요청이 공유하는 프롬프트 접두사의 KV 상태를 저장해 같은 구간의 프리필 계산을 재사용하는 기법이다.</span></li>
 <li data-article-id="prefill-phase"><a href="/wiki/prefill-phase/">프리필 단계</a><span class="wiki-index-summary">프리필 단계는 입력 토큰 전체를 병렬 처리해 첫 출력 예측과 이후 디코딩에 사용할 키·값 캐시를 만드는 추론 단계다.</span></li>
+<li data-article-id="prefill-decode-disaggregation"><a href="/wiki/prefill-decode-disaggregation/">프리필·디코드 분리</a><span class="wiki-index-summary">프리필·디코드 분리는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-h">
@@ -192,7 +212,17 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <h2 id="index-en-k">K</h2>
 <ul class="wiki-index-list">
 <li data-article-id="kv-cache"><a href="/wiki/kv-cache/">KV 캐시</a><span class="wiki-index-summary">이전 토큰의 어텐션 키와 값을 저장해 자동회귀 생성의 중복 계산을 줄이는 캐시다.</span></li>
+<li data-article-id="kv-cache-isolation"><a href="/wiki/kv-cache-isolation/">KV 캐시 격리</a><span class="wiki-index-summary">KV 캐시 격리는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="kv-cache-admission"><a href="/wiki/kv-cache-admission/">KV 캐시 수용 제어</a><span class="wiki-index-summary">KV 캐시 수용 제어는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="kv-cache-quantization"><a href="/wiki/kv-cache-quantization/">KV 캐시 양자화</a><span class="wiki-index-summary">KV 캐시 양자화는 어텐션 키와 값을 더 낮은 비트 표현으로 저장해 생성 중 메모리 사용량을 줄이는 기법이다.</span></li>
+<li data-article-id="kv-cache-capacity-planning"><a href="/wiki/kv-cache-capacity-planning/">KV 캐시 용량 계획</a><span class="wiki-index-summary">KV 캐시 용량 계획은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-l">
+<h2 id="index-en-l">L</h2>
+<ul class="wiki-index-list">
+<li data-article-id="llm-cost-attribution"><a href="/wiki/llm-cost-attribution/">LLM 비용 귀속</a><span class="wiki-index-summary">LLM 비용 귀속은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-serving-slo"><a href="/wiki/llm-serving-slo/">LLM 서빙 SLO</a><span class="wiki-index-summary">LLM 서빙 SLO은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-m">

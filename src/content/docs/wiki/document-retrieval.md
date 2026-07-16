@@ -128,7 +128,27 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+- [검색 결과 다양성](/wiki/retrieval-result-diversity/)
+- [검색 결과 중복 제거](/wiki/retrieval-deduplication/)
+- [검색 결과 출처](/wiki/retrieval-provenance/)
+- [검색 대체 전략](/wiki/retrieval-fallback/)
+- [검색 색인 마이그레이션](/wiki/retrieval-index-migration/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 10개 문서 보기</summary>
+
+- [검색 용량 계획](/wiki/retrieval-capacity-planning/)
+- [검색 접근 제어](/wiki/retrieval-access-control/)
+- [검색 질의 라우팅](/wiki/query-routing-for-retrieval/)
+- [검색 캐시 무효화](/wiki/retrieval-cache-invalidation/)
+- [검색 품질 SLO](/wiki/retrieval-quality-slo/)
+- [리랭커 예산 관리](/wiki/reranker-budgeting/)
+- [인용 근거 계약](/wiki/citation-grounding-contract/)
+- [하이브리드 검색 가중치](/wiki/hybrid-retrieval-weighting/)
+- [RAG 근거 계보](/wiki/rag-evidence-lineage/)
+- [RAG 색인 신선도](/wiki/rag-index-freshness/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 

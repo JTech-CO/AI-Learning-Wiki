@@ -79,7 +79,7 @@ assert.equal(promptData.prompts.find((prompt) => prompt.id === 'outreach-followu
 assert.equal(promptData.prompts.find((prompt) => prompt.id === 'p21-schema')?.title, 'Python 함수를 Claude 도구 스키마로 변환');
 
 const wikiFiles = (await readdir('src/content/docs/wiki')).filter((file) => file.endsWith('.md'));
-assert.equal(wikiFiles.length, 1400, 'wiki article count changed');
+assert.equal(wikiFiles.length, 1600, 'wiki article count changed');
 let planningMarkers = 0;
 for (const file of wikiFiles) {
   const source = await read(path.join('src/content/docs/wiki', file));
@@ -89,4 +89,4 @@ assert.equal(planningMarkers, 0, 'public wiki documents still contain W mileston
 assert.match(allPages, /^title: 전체 문서\(색인\)$/mu);
 assert.doesNotMatch(allPages, /^title: 전체 문서$/mu);
 
-console.log(`W34 content: direct random navigation, article-only TOC, canonical prompt titles remain source-neutral, 1400 wiki documents free of W labels`);
+console.log(`W34 content: direct random navigation, article-only TOC, canonical prompt titles remain source-neutral, 1600 wiki documents free of W labels`);

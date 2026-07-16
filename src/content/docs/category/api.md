@@ -5,7 +5,7 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 
 모델을 소프트웨어와 연결하는 인터페이스 분야의 검토 완료 백과 문서입니다.
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-h">H</a><a href="#index-en-j">J</a><a href="#index-en-m">M</a><a href="#index-en-o">O</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-h">H</a><a href="#index-en-j">J</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-o">O</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
@@ -69,6 +69,8 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <li data-article-id="service-level-agreement"><a href="/wiki/service-level-agreement/">서비스 수준 협약</a><span class="wiki-index-summary">서비스 수준 협약은 제공자와 이용자 사이에 가용성·지연·지원·보상 같은 측정 가능한 서비스 약속을 정한 합의다.</span></li>
 <li data-article-id="schema-validation"><a href="/wiki/schema-validation/">스키마 검증</a><span class="wiki-index-summary">스키마 검증은 입력이나 출력 데이터가 선언된 구조·자료형·제약을 만족하는지 실행 전에 확인하는 절차다.</span></li>
 <li data-article-id="streaming-response"><a href="/wiki/streaming-response/">스트리밍 응답</a><span class="wiki-index-summary">전체 결과가 완성되기 전에 생성된 일부 데이터를 순차적으로 전송하는 방식이다.</span></li>
+<li data-article-id="streaming-response-contract"><a href="/wiki/streaming-response-contract/">스트리밍 응답 계약</a><span class="wiki-index-summary">스트리밍 응답 계약은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="stream-resume-protocol"><a href="/wiki/stream-resume-protocol/">스트림 재개 프로토콜</a><span class="wiki-index-summary">스트림 재개 프로토콜은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="realtime-api"><a href="/wiki/realtime-api/">실시간 API</a><span class="wiki-index-summary">실시간 API는 음성·텍스트·이벤트를 지속적인 양방향 연결에서 낮은 지연으로 주고받는 모델 인터페이스다.</span></li>
 </ul>
 </section>
@@ -145,19 +147,37 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <ul class="wiki-index-list">
 <li data-article-id="api"><a href="/wiki/api/">API</a><span class="wiki-index-summary">소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다.</span></li>
 <li data-article-id="api-audit-log"><a href="/wiki/api-audit-log/">API 감사 로그</a><span class="wiki-index-summary">API 감사 로그는 누가 언제 어떤 API 자원에 어떤 작업을 요청했고 결과가 무엇이었는지를 보안·책임 추적 목적으로 기록한 사건 원장이다.</span></li>
+<li data-article-id="api-provider-abstraction"><a href="/wiki/api-provider-abstraction/">API 공급자 추상화</a><span class="wiki-index-summary">API 공급자 추상화는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-data-retention"><a href="/wiki/api-data-retention/">API 데이터 보유</a><span class="wiki-index-summary">API 데이터 보유는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-wrapper"><a href="/wiki/api-wrapper/">API 래퍼</a><span class="wiki-index-summary">API 래퍼는 원시 API 호출을 특정 업무에 맞는 더 단순하거나 안정적인 함수와 객체로 감싸는 계층이다.</span></li>
 <li data-article-id="api-logging"><a href="/wiki/api-logging/">API 로깅</a><span class="wiki-index-summary">API 로깅은 요청 수명주기의 식별자, 결과, 지연시간과 오류를 구조화된 사건으로 남기는 관측 활동이다.</span></li>
+<li data-article-id="api-region-routing"><a href="/wiki/api-region-routing/">API 리전 라우팅</a><span class="wiki-index-summary">API 리전 라우팅은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-batch-contract"><a href="/wiki/api-batch-contract/">API 배치 계약</a><span class="wiki-index-summary">API 배치 계약은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-version-pinning"><a href="/wiki/api-version-pinning/">API 버전 고정</a><span class="wiki-index-summary">API 버전 고정은 클라이언트가 호출할 API 계약의 특정 버전을 명시해 서버의 변경으로 동작이 예기치 않게 달라지는 것을 막는 방식이다.</span></li>
 <li data-article-id="api-versioning"><a href="/wiki/api-versioning/">API 버전 관리</a><span class="wiki-index-summary">API 버전 관리는 인터페이스 계약의 변경을 식별 가능한 버전으로 구분해 기존 클라이언트와 새 기능의 공존을 제어하는 절차다.</span></li>
+<li data-article-id="api-version-negotiation"><a href="/wiki/api-version-negotiation/">API 버전 협상</a><span class="wiki-index-summary">API 버전 협상은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-partial-failure"><a href="/wiki/api-partial-failure/">API 부분 실패</a><span class="wiki-index-summary">API 부분 실패는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-secret-rotation"><a href="/wiki/api-secret-rotation/">API 비밀 키 교체</a><span class="wiki-index-summary">API 비밀 키 교체는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-cost-tracking"><a href="/wiki/api-cost-tracking/">API 비용 추적</a><span class="wiki-index-summary">API 비용 추적은 측정된 사용량에 시점별 가격과 할인·예산 규칙을 적용해 요청·프로젝트·조직별 비용을 계산하는 활동이다.</span></li>
+<li data-article-id="api-schema-evolution"><a href="/wiki/api-schema-evolution/">API 스키마 진화</a><span class="wiki-index-summary">API 스키마 진화는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-endpoint"><a href="/wiki/api-endpoint/">API 엔드포인트</a><span class="wiki-index-summary">API 엔드포인트는 특정 기능이나 자원에 접근하도록 서버가 공개한 네트워크 주소와 요청 계약의 결합이다.</span></li>
 <li data-article-id="api-error-model"><a href="/wiki/api-error-model/">API 오류 모델</a><span class="wiki-index-summary">API 오류 모델은 실패를 기계가 처리할 수 있는 코드·상태·메시지·세부 정보·재시도 의미로 표현하는 일관된 계약이다.</span></li>
+<li data-article-id="api-error-envelope"><a href="/wiki/api-error-envelope/">API 오류 엔벨로프</a><span class="wiki-index-summary">API 오류 엔벨로프는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-rate-limit-budget"><a href="/wiki/api-rate-limit-budget/">API 요청 제한 예산</a><span class="wiki-index-summary">API 요청 제한 예산은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-request-deduplication"><a href="/wiki/api-request-deduplication/">API 요청 중복 제거</a><span class="wiki-index-summary">API 요청 중복 제거는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-retry-budget"><a href="/wiki/api-retry-budget/">API 재시도 예산</a><span class="wiki-index-summary">API 재시도 예산은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-conformance-suite"><a href="/wiki/api-conformance-suite/">API 적합성 테스트 스위트</a><span class="wiki-index-summary">API 적합성 테스트 스위트는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-deprecation"><a href="/wiki/api-deprecation/">API 지원 종료</a><span class="wiki-index-summary">API 지원 종료는 기존 기능을 즉시 제거하지 않고 사용 중단 예정과 대체 경로, 종료 시점을 공지하는 수명주기 단계다.</span></li>
 <li data-article-id="api-client"><a href="/wiki/api-client/">API 클라이언트</a><span class="wiki-index-summary">API 클라이언트는 원격 인터페이스의 엔드포인트를 호출하고 요청 수명주기를 관리하는 애플리케이션 구성 요소다.</span></li>
+<li data-article-id="api-client-observability"><a href="/wiki/api-client-observability/">API 클라이언트 관측성</a><span class="wiki-index-summary">API 클라이언트 관측성은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-key"><a href="/wiki/api-key/">API 키</a><span class="wiki-index-summary">API 요청의 프로젝트나 사용자를 식별하고 권한을 확인하는 비밀 문자열이다.</span></li>
+<li data-article-id="api-timeout-budget"><a href="/wiki/api-timeout-budget/">API 타임아웃 예산</a><span class="wiki-index-summary">API 타임아웃 예산은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-pagination"><a href="/wiki/api-pagination/">API 페이지네이션</a><span class="wiki-index-summary">API 페이지네이션은 큰 결과 집합을 제한된 크기의 여러 응답으로 나누고 다음 부분을 탐색할 위치 정보를 제공하는 방식이다.</span></li>
+<li data-article-id="api-backward-compatibility"><a href="/wiki/api-backward-compatibility/">API 하위 호환성</a><span class="wiki-index-summary">API 하위 호환성은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-quota"><a href="/wiki/api-quota/">API 할당량</a><span class="wiki-index-summary">API 할당량은 사용자·조직·키가 일정 기간에 소비할 수 있는 요청 수, 토큰, 연산량 또는 비용의 상한이다.</span></li>
+<li data-article-id="api-quota-allocation"><a href="/wiki/api-quota-allocation/">API 할당량 배분</a><span class="wiki-index-summary">API 할당량 배분은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-type-generation"><a href="/wiki/api-type-generation/">API 형식 생성</a><span class="wiki-index-summary">API 형식 생성은 기계 판독 가능한 API 명세에서 요청·응답 자료형과 클라이언트 인터페이스 코드를 만드는 작업이다.</span></li>
+<li data-article-id="api-circuit-breaker-policy"><a href="/wiki/api-circuit-breaker-policy/">API 회로 차단기 정책</a><span class="wiki-index-summary">API 회로 차단기 정책은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-h">
@@ -180,6 +200,15 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <li data-article-id="json"><a href="/wiki/json/">JSON</a><span class="wiki-index-summary">키-값과 배열 구조로 데이터를 표현하는 경량 텍스트 형식이다.</span></li>
 <li data-article-id="json-schema"><a href="/wiki/json-schema/">JSON 스키마</a><span class="wiki-index-summary">JSON 스키마는 JSON 인스턴스가 만족해야 할 자료형, 필수 속성, 값 범위와 조합 규칙을 선언하는 표준 어휘다.</span></li>
 <li data-article-id="json-web-token"><a href="/wiki/json-web-token/">JSON 웹 토큰</a><span class="wiki-index-summary">JSON 웹 토큰은 JSON 주장 집합을 점으로 구분된 URL 안전 문자열에 담고 서명하거나 암호화할 수 있는 토큰 형식이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-l">
+<h2 id="index-en-l">L</h2>
+<ul class="wiki-index-list">
+<li data-article-id="llm-api-idempotency"><a href="/wiki/llm-api-idempotency/">LLM API 멱등성</a><span class="wiki-index-summary">LLM API 멱등성은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-api-pagination"><a href="/wiki/llm-api-pagination/">LLM API 페이지 나누기</a><span class="wiki-index-summary">LLM API 페이지 나누기는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-webhook-signature"><a href="/wiki/llm-webhook-signature/">LLM 웹훅 서명</a><span class="wiki-index-summary">LLM 웹훅 서명은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-webhook-replay-defense"><a href="/wiki/llm-webhook-replay-defense/">LLM 웹훅 재전송 방어</a><span class="wiki-index-summary">LLM 웹훅 재전송 방어는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-m">
@@ -206,6 +235,7 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <h2 id="index-en-s">S</h2>
 <ul class="wiki-index-list">
 <li data-article-id="sdk"><a href="/wiki/sdk/">SDK</a><span class="wiki-index-summary">특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다.</span></li>
+<li data-article-id="server-sent-event-recovery"><a href="/wiki/server-sent-event-recovery/">SSE 복구</a><span class="wiki-index-summary">SSE 복구는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 </div>

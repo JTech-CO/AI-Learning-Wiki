@@ -5,19 +5,21 @@ description: "AI 시스템의 위험을 식별하고 통제하는 방법"
 
 AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완료 백과 문서입니다.
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-l">L</a><a href="#index-en-n">N</a><a href="#index-en-r">R</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-l">L</a><a href="#index-en-n">N</a><a href="#index-en-r">R</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
 <h2 id="index-ko-g">ㄱ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="guardrail"><a href="/wiki/guardrail/">가드레일</a><span class="wiki-index-summary">AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞게 제한·검사·기록하는 다층 안전 통제 장치다.</span></li>
+<li data-article-id="guardrail-coverage-matrix"><a href="/wiki/guardrail-coverage-matrix/">가드레일 커버리지 행렬</a><span class="wiki-index-summary">가드레일 커버리지 행렬은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pseudonymization"><a href="/wiki/pseudonymization/">가명화</a><span class="wiki-index-summary">가명화는 직접 식별자를 별도 관리되는 대체값으로 바꾸어 추가 정보 없이는 개인과 연결하기 어렵게 하는 처리다.</span></li>
 <li data-article-id="indirect-prompt-injection"><a href="/wiki/indirect-prompt-injection/">간접 프롬프트 인젝션</a><span class="wiki-index-summary">모델이 읽는 웹·문서·메일·도구 결과 같은 외부 데이터에 악성 지시를 숨겨 애플리케이션의 행동을 바꾸려는 공격이다.</span></li>
 <li data-article-id="personally-identifiable-information"><a href="/wiki/personally-identifiable-information/">개인 식별 정보</a><span class="wiki-index-summary">개인 식별 정보는 단독 또는 다른 정보와 결합해 특정 개인을 직접·간접적으로 식별할 수 있는 정보다.</span></li>
 <li data-article-id="privacy-audit"><a href="/wiki/privacy-audit/">개인정보 감사</a><span class="wiki-index-summary">개인정보 감사는 데이터 수명주기와 시스템 동작이 명시된 개인정보 원칙·정책·법적 요구를 지키는지 증거로 점검하는 절차다.</span></li>
 <li data-article-id="privacy-attack"><a href="/wiki/privacy-attack/">개인정보 공격</a><span class="wiki-index-summary">개인정보 공격은 모델·출력·기울기·API 응답을 이용해 개인의 참여 여부나 민감한 속성·원본 정보를 추론하려는 공격이다.</span></li>
 <li data-article-id="privacy"><a href="/wiki/privacy/">개인정보 보호</a><span class="wiki-index-summary">AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리와 위험을 관리하는 원칙이다.</span></li>
+<li data-article-id="retrieval-content-trust"><a href="/wiki/retrieval-content-trust/">검색 콘텐츠 신뢰</a><span class="wiki-index-summary">검색 콘텐츠 신뢰는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="fairness-metric"><a href="/wiki/fairness-metric/">공정성 지표</a><span class="wiki-index-summary">공정성 지표는 집단 또는 개인 사이의 예측 결과와 오류 차이를 특정 규범 기준으로 수치화한 측정값이다.</span></li>
 <li data-article-id="excessive-agency"><a href="/wiki/excessive-agency/">과도한 자율성</a><span class="wiki-index-summary">과도한 자율성은 AI 시스템에 필요한 범위를 넘는 기능, 권한 또는 독립 실행 능력을 부여해 피해 가능성이 커지는 위험이다.</span></li>
 <li data-article-id="corrigibility"><a href="/wiki/corrigibility/">교정 가능성</a><span class="wiki-index-summary">교정 가능성은 AI 시스템이 사람의 수정, 중단, 목표 변경과 통제 시도를 방해하지 않고 받아들이는 성질이다.</span></li>
@@ -41,7 +43,17 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <li data-article-id="data-minimization"><a href="/wiki/data-minimization/">데이터 최소화</a><span class="wiki-index-summary">데이터 최소화는 명시된 목적에 필요한 범위로 수집·사용·보존하는 개인 데이터를 제한하는 원칙이다.</span></li>
 <li data-article-id="data-bias"><a href="/wiki/data-bias/">데이터 편향</a><span class="wiki-index-summary">데이터 편향은 수집·표본·레이블·전처리 과정이 현실 모집단이나 사용 목적을 체계적으로 왜곡한 상태다.</span></li>
 <li data-article-id="datasheet-for-datasets"><a href="/wiki/datasheet-for-datasets/">데이터셋 데이터시트</a><span class="wiki-index-summary">데이터셋 데이터시트는 데이터의 동기, 구성, 수집, 전처리, 배포, 유지와 권리 정보를 체계적으로 기록하는 문서다.</span></li>
+<li data-article-id="tool-output-sanitization"><a href="/wiki/tool-output-sanitization/">도구 출력 정화</a><span class="wiki-index-summary">도구 출력 정화는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="equalized-odds"><a href="/wiki/equalized-odds/">동등 오즈</a><span class="wiki-index-summary">동등 오즈는 실제 결과가 주어졌을 때 예측이 보호 집단과 조건부 독립이 되도록 참양성률과 거짓양성률을 같게 요구하는 기준이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="ko-r">
+<h2 id="index-ko-r">ㄹ</h2>
+<ul class="wiki-index-list">
+<li data-article-id="red-team-evidence-log"><a href="/wiki/red-team-evidence-log/">레드팀 근거 로그</a><span class="wiki-index-summary">레드팀 근거 로그는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="red-team-finding-severity"><a href="/wiki/red-team-finding-severity/">레드팀 발견 심각도</a><span class="wiki-index-summary">레드팀 발견 심각도는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="red-team-scenario-coverage"><a href="/wiki/red-team-scenario-coverage/">레드팀 시나리오 커버리지</a><span class="wiki-index-summary">레드팀 시나리오 커버리지는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="red-team-remediation-verification"><a href="/wiki/red-team-remediation-verification/">레드팀 조치 검증</a><span class="wiki-index-summary">레드팀 조치 검증은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-m">
@@ -49,8 +61,14 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <ul class="wiki-index-list">
 <li data-article-id="membership-inference"><a href="/wiki/membership-inference/">멤버십 추론 공격</a><span class="wiki-index-summary">멤버십 추론 공격은 특정 데이터가 모델 학습에 포함되었는지를 출력 신뢰도나 행동 차이로 추정하는 개인정보 공격이다.</span></li>
 <li data-article-id="specification-gaming"><a href="/wiki/specification-gaming/">명세 편법 수행</a><span class="wiki-index-summary">명세 편법 수행은 시스템이 명시된 보상이나 평가 규칙의 허점을 이용해 의도와 다른 방식으로 높은 점수를 얻는 행동이다.</span></li>
+<li data-article-id="model-weight-access-control"><a href="/wiki/model-weight-access-control/">모델 가중치 접근 제어</a><span class="wiki-index-summary">모델 가중치 접근 제어는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="model-supply-chain-security"><a href="/wiki/model-supply-chain-security/">모델 공급망 보안</a><span class="wiki-index-summary">모델 공급망 보안은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="model-rollback-safety"><a href="/wiki/model-rollback-safety/">모델 롤백 안전성</a><span class="wiki-index-summary">모델 롤백 안전성은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-backdoor"><a href="/wiki/model-backdoor/">모델 백도어</a><span class="wiki-index-summary">평소에는 정상적으로 동작하지만 특정 트리거나 조건에서 공격자가 원하는 출력을 내도록 숨겨진 행동을 가진 모델이다.</span></li>
+<li data-article-id="model-security-disclosure"><a href="/wiki/model-security-disclosure/">모델 보안 취약점 공개</a><span class="wiki-index-summary">모델 보안 취약점 공개는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-denial-of-service"><a href="/wiki/model-denial-of-service/">모델 서비스 거부 공격</a><span class="wiki-index-summary">모델 서비스 거부 공격은 긴 입력, 반복 요청 또는 계산량이 큰 패턴으로 추론 자원을 고갈시켜 정상 사용을 방해하는 공격이다.</span></li>
+<li data-article-id="model-artifact-signing"><a href="/wiki/model-artifact-signing/">모델 아티팩트 서명</a><span class="wiki-index-summary">모델 아티팩트 서명은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="model-abuse-case-library"><a href="/wiki/model-abuse-case-library/">모델 악용 사례 라이브러리</a><span class="wiki-index-summary">모델 악용 사례 라이브러리는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-inversion"><a href="/wiki/model-inversion/">모델 역추론 공격</a><span class="wiki-index-summary">모델 역추론 공격은 모델 출력과 접근 가능한 정보를 이용해 입력의 민감한 속성이나 대표적인 학습 특징을 복원하려는 공격이다.</span></li>
 <li data-article-id="model-poisoning"><a href="/wiki/model-poisoning/">모델 오염</a><span class="wiki-index-summary">공격자가 모델 가중치, 체크포인트 또는 학습·배포 아티팩트를 변조해 의도한 오작동을 심는 공급망 공격이다.</span></li>
 <li data-article-id="model-extraction"><a href="/wiki/model-extraction/">모델 추출 공격</a><span class="wiki-index-summary">공격자가 모델 API를 반복 질의해 대상 모델의 기능, 결정 경계 또는 유사한 대체 모델을 복제하는 공격이다.</span></li>
@@ -81,13 +99,18 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <section class="wiki-index-group" data-index-group="ko-ng">
 <h2 id="index-ko-ng">ㅇ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="safety-assurance-argument"><a href="/wiki/safety-assurance-argument/">안전 보증 논증</a><span class="wiki-index-summary">안전 보증 논증은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="safety-exception-process"><a href="/wiki/safety-exception-process/">안전 예외 처리 절차</a><span class="wiki-index-summary">안전 예외 처리 절차는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="safety-policy-versioning"><a href="/wiki/safety-policy-versioning/">안전 정책 버전 관리</a><span class="wiki-index-summary">안전 정책 버전 관리는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="safety-evaluation"><a href="/wiki/safety-evaluation/">안전 평가</a><span class="wiki-index-summary">안전 평가는 AI 시스템이 정의된 위해·오용·정책 위반 상황에서 얼마나 위험한 결과를 만들고 통제가 작동하는지 측정하는 과정이다.</span></li>
+<li data-article-id="safety-case"><a href="/wiki/safety-case/">안전성 논증서</a><span class="wiki-index-summary">안전성 논증서는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="insecure-output-handling"><a href="/wiki/insecure-output-handling/">안전하지 않은 출력 처리</a><span class="wiki-index-summary">안전하지 않은 출력 처리는 언어 모델의 출력을 검증 없이 코드, 쿼리, HTML 또는 외부 명령으로 실행해 취약점이 생기는 문제다.</span></li>
 <li data-article-id="algorithmic-audit"><a href="/wiki/algorithmic-audit/">알고리즘 감사</a><span class="wiki-index-summary">알고리즘 감사는 AI 시스템의 설계, 데이터, 성능, 통제와 운영이 정한 기준을 충족하는지 독립적으로 조사하는 활동이다.</span></li>
 <li data-article-id="algorithmic-impact-assessment"><a href="/wiki/algorithmic-impact-assessment/">알고리즘 영향 평가</a><span class="wiki-index-summary">알고리즘 영향 평가는 시스템 도입 전후에 권리, 공정성, 안전과 사회적 영향을 구조적으로 검토하는 절차다.</span></li>
 <li data-article-id="algorithmic-contestability"><a href="/wiki/algorithmic-contestability/">알고리즘 이의제기 가능성</a><span class="wiki-index-summary">알고리즘 이의제기 가능성은 AI 또는 알고리즘 결정의 영향을 받은 사람이 결정을 이해하고 검토·수정 요청을 제기할 수 있는 성질이다.</span></li>
 <li data-article-id="algorithmic-bias"><a href="/wiki/algorithmic-bias/">알고리즘 편향</a><span class="wiki-index-summary">알고리즘 편향은 모델이나 의사결정 절차가 특정 집단·조건에 체계적으로 불리하거나 왜곡된 결과를 만드는 현상이다.</span></li>
 <li data-article-id="memorized-data-extraction"><a href="/wiki/memorized-data-extraction/">암기 데이터 추출</a><span class="wiki-index-summary">암기 데이터 추출은 생성 모델에 반복 또는 최적화된 질의를 보내 학습 데이터의 희귀하거나 민감한 문자열을 재생하도록 유도하는 공격이다.</span></li>
+<li data-article-id="agent-least-privilege"><a href="/wiki/agent-least-privilege/">에이전트 최소 권한</a><span class="wiki-index-summary">에이전트 최소 권한은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="historical-bias"><a href="/wiki/historical-bias/">역사적 편향</a><span class="wiki-index-summary">역사적 편향은 데이터가 정확히 측정되었더라도 과거 사회의 불평등과 제도적 차별이 목표와 패턴에 반영된 상태다.</span></li>
 <li data-article-id="federated-analytics"><a href="/wiki/federated-analytics/">연합 분석</a><span class="wiki-index-summary">연합 분석은 원시 데이터를 중앙에 모으지 않고 여러 장치나 기관에서 계산한 통계만 집계해 전체 경향을 분석하는 방식이다.</span></li>
 <li data-article-id="abuse-testing"><a href="/wiki/abuse-testing/">오용 테스트</a><span class="wiki-index-summary">오용 테스트은 허용되지 않은 목적을 가진 사용자가 정상 기능을 악용할 때 시스템이 이를 예방·탐지·제한하는지 평가하는 활동이다.</span></li>
@@ -138,6 +161,7 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <li data-article-id="representation-bias"><a href="/wiki/representation-bias/">표현 편향</a><span class="wiki-index-summary">표현 편향은 데이터셋에서 일부 집단이나 상황이 부족하거나 고정관념적인 방식으로 나타나 학습 신호가 불균형해진 상태다.</span></li>
 <li data-article-id="prompt-leakage"><a href="/wiki/prompt-leakage/">프롬프트 유출</a><span class="wiki-index-summary">프롬프트 유출은 시스템 지침, 내부 예시나 숨겨진 컨텍스트가 모델 응답을 통해 노출되는 현상이다.</span></li>
 <li data-article-id="prompt-injection"><a href="/wiki/prompt-injection/">프롬프트 인젝션</a><span class="wiki-index-summary">악의적 입력이 기존 지시를 무시하거나 비밀을 노출하도록 모델 행동을 조작하는 공격이다.</span></li>
+<li data-article-id="prompt-injection-defense-in-depth"><a href="/wiki/prompt-injection-defense-in-depth/">프롬프트 주입 다계층 방어</a><span class="wiki-index-summary">프롬프트 주입 다계층 방어는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-h">
@@ -155,19 +179,25 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <ul class="wiki-index-list">
 <li data-article-id="ai-governance"><a href="/wiki/ai-governance/">AI 거버넌스</a><span class="wiki-index-summary">AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다.</span></li>
 <li data-article-id="ai-governance-framework"><a href="/wiki/ai-governance-framework/">AI 거버넌스 프레임워크</a><span class="wiki-index-summary">AI 거버넌스 프레임워크는 조직의 AI 의사결정 권한, 정책, 수명주기 통제와 책임 구조를 정한 체계다.</span></li>
+<li data-article-id="ai-attack-surface-map"><a href="/wiki/ai-attack-surface-map/">AI 공격 표면 지도</a><span class="wiki-index-summary">AI 공격 표면 지도는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-supply-chain-vulnerability"><a href="/wiki/ai-supply-chain-vulnerability/">AI 공급망 취약점</a><span class="wiki-index-summary">AI 공급망 취약점은 모델, 데이터, 라이브러리, 저장소와 배포 구성 요소 중 하나가 변조되거나 신뢰되지 않아 전체 시스템이 손상되는 위험이다.</span></li>
 <li data-article-id="ai-regulatory-classification"><a href="/wiki/ai-regulatory-classification/">AI 규제 분류</a><span class="wiki-index-summary">AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 범주와 의무 수준에 대응시키는 절차다.</span></li>
+<li data-article-id="ai-kill-switch"><a href="/wiki/ai-kill-switch/">AI 긴급 정지 장치</a><span class="wiki-index-summary">AI 긴급 정지 장치는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="ai-red-team-retest"><a href="/wiki/ai-red-team-retest/">AI 레드팀 재시험</a><span class="wiki-index-summary">AI 레드팀 재시험은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-red-teaming"><a href="/wiki/ai-red-teaming/">AI 레드팀 평가</a><span class="wiki-index-summary">AI 레드팀 평가은 공격자·오용자 관점에서 모델과 전체 시스템의 실패·우회·피해 경로를 체계적으로 탐색하는 평가 활동이다.</span></li>
 <li data-article-id="ai-security-monitoring"><a href="/wiki/ai-security-monitoring/">AI 보안 모니터링</a><span class="wiki-index-summary">AI 보안 모니터링은 모델·데이터·도구·API와 사용 행위에서 공격·오용·무결성 손상을 지속 탐지하는 활동이다.</span></li>
+<li data-article-id="ai-security-control-baseline"><a href="/wiki/ai-security-control-baseline/">AI 보안 통제 기준선</a><span class="wiki-index-summary">AI 보안 통제 기준선은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-incident-response"><a href="/wiki/ai-incident-response/">AI 사고 대응</a><span class="wiki-index-summary">AI 사고 대응은 AI 시스템의 위해·보안 침해·중대한 오작동을 식별하고 억제·복구·통지·학습하는 조직적 절차다.</span></li>
 <li data-article-id="ai-incident-reporting"><a href="/wiki/ai-incident-reporting/">AI 사고 보고</a><span class="wiki-index-summary">AI 사고 보고는 AI 시스템의 피해·오작동·보안 위반을 정해진 형식과 기한에 내부 또는 감독 기관에 알리는 절차다.</span></li>
 <li data-article-id="ai-disclosure"><a href="/wiki/ai-disclosure/">AI 사용 고지</a><span class="wiki-index-summary">AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI가 관여했다는 사실과 범위를 이용자에게 알리는 행위다.</span></li>
 <li data-article-id="defense-in-depth-for-ai"><a href="/wiki/defense-in-depth-for-ai/">AI 심층 방어</a><span class="wiki-index-summary">AI 심층 방어는 한 통제가 실패해도 위해가 발생하지 않도록 데이터·모델·애플리케이션·도구·인프라·운영에 독립적인 보호층을 겹치는 전략이다.</span></li>
+<li data-article-id="ai-abuse-monitoring"><a href="/wiki/ai-abuse-monitoring/">AI 악용 모니터링</a><span class="wiki-index-summary">AI 악용 모니터링은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-safety"><a href="/wiki/ai-safety/">AI 안전</a><span class="wiki-index-summary">AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하고 오용, 사고와 예측하지 못한 피해를 줄이기 위한 연구와 실무 영역이다.</span></li>
 <li data-article-id="ai-misuse"><a href="/wiki/ai-misuse/">AI 오용</a><span class="wiki-index-summary">AI 오용은 정상적인 AI 기능을 사기, 조작, 공격이나 권리 침해처럼 해로운 목적에 의도적으로 사용하는 행위다.</span></li>
 <li data-article-id="ai-risk-register"><a href="/wiki/ai-risk-register/">AI 위험 대장</a><span class="wiki-index-summary">AI 위험 대장은 식별된 위험의 원인, 영향, 가능성, 통제, 책임자와 상태를 한곳에 추적하는 관리 기록이다.</span></li>
 <li data-article-id="ai-risk-assessment"><a href="/wiki/ai-risk-assessment/">AI 위험 평가</a><span class="wiki-index-summary">AI 위험 평가는 AI 시스템이 사람, 조직과 환경에 일으킬 가능성과 영향을 사용 맥락에서 식별·분석하는 과정이다.</span></li>
 <li data-article-id="ai-threat-modeling"><a href="/wiki/ai-threat-modeling/">AI 위협 모델링</a><span class="wiki-index-summary">AI 위협 모델링은 AI 시스템의 자산·행위자·신뢰 경계·공격 표면과 가능한 피해 경로를 구조적으로 식별하는 과정이다.</span></li>
+<li data-article-id="ai-anomaly-triage"><a href="/wiki/ai-anomaly-triage/">AI 이상 현상 분류</a><span class="wiki-index-summary">AI 이상 현상 분류는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-policy-enforcement"><a href="/wiki/ai-policy-enforcement/">AI 정책 집행</a><span class="wiki-index-summary">AI 정책 집행은 사용·데이터·출력·도구 권한 규칙을 AI 시스템의 요청 처리 경로에서 실제 허용·차단 행동으로 적용하는 활동이다.</span></li>
 <li data-article-id="ai-compliance-monitoring"><a href="/wiki/ai-compliance-monitoring/">AI 준수 모니터링</a><span class="wiki-index-summary">AI 준수 모니터링은 시스템 운영과 변경이 적용 법규·표준·내부 통제 요구를 계속 만족하는지 증거로 확인하는 과정이다.</span></li>
 <li data-article-id="ai-accountability"><a href="/wiki/ai-accountability/">AI 책임성</a><span class="wiki-index-summary">AI 책임성은 AI 관련 결정과 결과에 대해 지정된 주체가 설명하고 통제하며 피해를 시정할 의무를 갖는 원칙이다.</span></li>

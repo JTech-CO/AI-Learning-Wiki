@@ -42,7 +42,7 @@ assert.match(css, /\.sl-markdown-content h4/u, 'level-four article headings are 
 
 const articleFiles = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json'));
 const generatedFiles = (await readdir('src/content/docs/wiki')).filter((file) => file.endsWith('.md'));
-assert.equal(generatedFiles.length, 1400, 'wiki article count changed');
+assert.equal(generatedFiles.length, 1600, 'wiki article count changed');
 assert.equal(generatedFiles.length, articleFiles.length, 'generated article count does not match the content model');
 
 const expectedGroups = ['개념과 원리', '활용과 검증', '문서 관계', '참고와 다음 학습'];

@@ -6,7 +6,7 @@ const snippets = JSON.parse(await readFile('public/data/snippets.json', 'utf8'))
 const migration = JSON.parse(await readFile('content-model/migration/w40-library-migration.json', 'utf8'));
 const wiki = JSON.parse(await readFile('public/data/wiki-index.json', 'utf8'));
 const ledger = JSON.parse(await readFile('content-model/taxonomy/topic-ledger.json', 'utf8'));
-const expectedArticleCount = ledger.topics.filter((topic) => topic.state === 'existing').length;
+const expectedArticleCount = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json')).length;
 const failures = [];
 const expect = (condition, message) => { if (!condition) failures.push(message); };
 const fileExists = async (file) => { try { return (await stat(file)).isFile(); } catch { return false; } };

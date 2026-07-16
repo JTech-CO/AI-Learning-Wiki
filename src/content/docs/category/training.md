@@ -5,7 +5,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 
 사전학습부터 정렬·경량화까지의 방법 분야의 검토 완료 백과 문서입니다.
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-d">D</a><a href="#index-en-i">I</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-q">Q</a><a href="#index-en-z">Z</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-d">D</a><a href="#index-en-i">I</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-q">Q</a><a href="#index-en-s">S</a><a href="#index-en-z">Z</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
@@ -59,6 +59,9 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <ul class="wiki-index-list">
 <li data-article-id="benchmark-contamination"><a href="/wiki/benchmark-contamination/">벤치마크 오염</a><span class="wiki-index-summary">벤치마크 오염은 평가 문제나 그 변형이 학습 데이터에 포함되어 모델이 일반화 대신 기억으로 높은 점수를 얻는 현상이다.</span></li>
 <li data-article-id="reward-model"><a href="/wiki/reward-model/">보상 모델</a><span class="wiki-index-summary">여러 모델 출력 중 사람의 선호에 가까운 출력을 점수화하도록 학습된 모델이다.</span></li>
+<li data-article-id="reward-model-calibration"><a href="/wiki/reward-model-calibration/">보상 모델 교정</a><span class="wiki-index-summary">보상 모델 교정은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="reward-model-drift"><a href="/wiki/reward-model-drift/">보상 모델 드리프트</a><span class="wiki-index-summary">보상 모델 드리프트는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="reward-model-ensemble"><a href="/wiki/reward-model-ensemble/">보상 모델 앙상블</a><span class="wiki-index-summary">보상 모델 앙상블은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="reward-hacking"><a href="/wiki/reward-hacking/">보상 해킹</a><span class="wiki-index-summary">보상 해킹은 에이전트가 설계자의 실제 의도 대신 보상 함수의 허점이나 대리 지표를 이용해 높은 점수를 얻는 현상이다.</span></li>
 <li data-article-id="auxiliary-loss"><a href="/wiki/auxiliary-loss/">보조 손실</a><span class="wiki-index-summary">보조 손실은 주 과제 학습을 돕기 위해 중간 표현이나 추가 예측에 부과하는 부수적 목적 함수다.</span></li>
 <li data-article-id="reconstruction-loss"><a href="/wiki/reconstruction-loss/">복원 손실</a><span class="wiki-index-summary">복원 손실은 인코딩·손상·압축된 입력에서 원본 또는 목표 신호를 얼마나 정확히 재구성했는지 측정하는 손실이다.</span></li>
@@ -71,8 +74,16 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <ul class="wiki-index-list">
 <li data-article-id="pretraining"><a href="/wiki/pretraining/">사전학습</a><span class="wiki-index-summary">대규모 데이터로 일반적인 표현과 패턴을 먼저 학습하는 단계다.</span></li>
 <li data-article-id="pretraining-pipeline"><a href="/wiki/pretraining-pipeline/">사전학습 파이프라인</a><span class="wiki-index-summary">사전학습 파이프라인은 데이터 수집·정제·토큰화·혼합부터 분산 학습, 체크포인트와 평가까지 이어지는 생산 체계다.</span></li>
+<li data-article-id="post-training-lineage"><a href="/wiki/post-training-lineage/">사후학습 계보</a><span class="wiki-index-summary">사후학습 계보는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-data-decontamination"><a href="/wiki/post-training-data-decontamination/">사후학습 데이터 오염 제거</a><span class="wiki-index-summary">사후학습 데이터 오염 제거는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-reproducibility"><a href="/wiki/post-training-reproducibility/">사후학습 재현성</a><span class="wiki-index-summary">사후학습 재현성은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-ablation"><a href="/wiki/post-training-ablation/">사후학습 제거 실험</a><span class="wiki-index-summary">사후학습 제거 실험은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-checkpoint-selection"><a href="/wiki/post-training-checkpoint-selection/">사후학습 체크포인트 선택</a><span class="wiki-index-summary">사후학습 체크포인트 선택은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="preference-data"><a href="/wiki/preference-data/">선호 데이터</a><span class="wiki-index-summary">선호 데이터는 동일하거나 관련된 입력에 대한 여러 출력의 비교, 순위 또는 점수로 어떤 응답이 더 나은지 기록한 자료다.</span></li>
+<li data-article-id="preference-data-governance"><a href="/wiki/preference-data-governance/">선호 데이터 거버넌스</a><span class="wiki-index-summary">선호 데이터 거버넌스는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="preference-shift-monitoring"><a href="/wiki/preference-shift-monitoring/">선호 변화 관측</a><span class="wiki-index-summary">선호 변화 관측은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="preference-loss"><a href="/wiki/preference-loss/">선호 손실</a><span class="wiki-index-summary">선호 손실은 같은 입력에 대한 선호 출력과 비선호 출력의 상대 점수를 학습하도록 구성한 목적 함수다.</span></li>
+<li data-article-id="preference-pair-quality"><a href="/wiki/preference-pair-quality/">선호 쌍 품질</a><span class="wiki-index-summary">선호 쌍 품질은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="sequence-classification-fine-tuning"><a href="/wiki/sequence-classification-fine-tuning/">시퀀스 분류 미세조정</a><span class="wiki-index-summary">시퀀스 분류 미세조정은 사전학습 모델의 문장·문서 표현에 분류기를 연결해 범주 예측 과제에 맞게 매개변수를 갱신하는 과정이다.</span></li>
 <li data-article-id="sequence-packing"><a href="/wiki/sequence-packing/">시퀀스 패킹</a><span class="wiki-index-summary">시퀀스 패킹은 길이가 다른 토큰 시퀀스를 제한된 컨텍스트 블록에 효율적으로 배치해 연산 활용률을 높이는 기법이다.</span></li>
 </ul>
@@ -106,6 +117,8 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <li data-article-id="denoising-objective"><a href="/wiki/denoising-objective/">잡음 제거 목표</a><span class="wiki-index-summary">잡음 제거 목표는 원본 데이터에 손상을 가한 입력으로부터 손상 전 데이터나 필요한 부분을 복원하도록 학습하는 목적 함수다.</span></li>
 <li data-article-id="expert-parallelism"><a href="/wiki/expert-parallelism/">전문가 병렬화</a><span class="wiki-index-summary">전문가 병렬화는 혼합 전문가 모델의 여러 전문가 네트워크를 장치에 나누어 배치하는 분산 실행 방식이다.</span></li>
 <li data-article-id="full-parameter-fine-tuning"><a href="/wiki/full-parameter-fine-tuning/">전체 파라미터 미세조정</a><span class="wiki-index-summary">전체 파라미터 미세조정은 사전학습 모델의 모든 학습 가능한 가중치를 목표 데이터에 맞게 갱신하는 적응 방식이다.</span></li>
+<li data-article-id="alignment-capability-retention"><a href="/wiki/alignment-capability-retention/">정렬 역량 보존</a><span class="wiki-index-summary">정렬 역량 보존은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="alignment-evaluation-gate"><a href="/wiki/alignment-evaluation-gate/">정렬 평가 게이트</a><span class="wiki-index-summary">정렬 평가 게이트는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="policy-model"><a href="/wiki/policy-model/">정책 모델</a><span class="wiki-index-summary">정책 모델은 주어진 입력에서 다음 토큰이나 응답을 선택하는 확률분포를 나타내며 선호 신호로 직접 갱신되는 모델이다.</span></li>
 <li data-article-id="policy-objective"><a href="/wiki/policy-objective/">정책 목적 함수</a><span class="wiki-index-summary">정책 목적 함수는 상태에서 행동을 선택하는 정책이 기대 누적 보상을 높이도록 최적화하는 목표다.</span></li>
 <li data-article-id="distillation-loss"><a href="/wiki/distillation-loss/">증류 손실</a><span class="wiki-index-summary">증류 손실은 학생 모델이 교사 모델의 출력 분포나 중간 표현을 모방하도록 차이를 측정하는 학습 목적 함수다.</span></li>
@@ -175,6 +188,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <h2 id="index-en-d">D</h2>
 <ul class="wiki-index-list">
 <li data-article-id="dora"><a href="/wiki/dora/">DoRA</a><span class="wiki-index-summary">DoRA는 가중치 행렬을 크기와 방향으로 분해하고 방향 변화는 저계수 어댑터로, 크기는 별도 파라미터로 학습하는 미세조정 방법이다.</span></li>
+<li data-article-id="dpo-beta-selection"><a href="/wiki/dpo-beta-selection/">DPO 베타 선택</a><span class="wiki-index-summary">DPO 베타 선택은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-i">
@@ -200,6 +214,12 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <h2 id="index-en-q">Q</h2>
 <ul class="wiki-index-list">
 <li data-article-id="qlora"><a href="/wiki/qlora/">QLoRA</a><span class="wiki-index-summary">QLoRA는 사전학습 모델 가중치를 저비트로 양자화해 고정하고 저계수 어댑터만 학습하는 메모리 효율적 미세조정 방법이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-s">
+<h2 id="index-en-s">S</h2>
+<ul class="wiki-index-list">
+<li data-article-id="sft-data-mixture"><a href="/wiki/sft-data-mixture/">SFT 데이터 혼합</a><span class="wiki-index-summary">SFT 데이터 혼합은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-z">

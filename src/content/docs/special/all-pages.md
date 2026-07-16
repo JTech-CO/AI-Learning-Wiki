@@ -3,7 +3,7 @@ title: 전체 문서(색인)
 description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 ---
 
-현재 검토 완료된 백과 문서는 **1400개**입니다.
+현재 검토 완료된 백과 문서는 **1600개**입니다.
 
 <nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-gg">ㄲ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-c">C</a><a href="#index-en-d">D</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-h">H</a><a href="#index-en-i">I</a><a href="#index-en-j">J</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-n">N</a><a href="#index-en-o">O</a><a href="#index-en-p">P</a><a href="#index-en-q">Q</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a><a href="#index-en-t">T</a><a href="#index-en-u">U</a><a href="#index-en-w">W</a><a href="#index-en-x">X</a><a href="#index-en-y">Y</a><a href="#index-en-z">Z</a><a href="#index-other">기타</a></nav>
 
@@ -12,6 +12,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <h2 id="index-ko-g">ㄱ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="guardrail"><a href="/wiki/guardrail/">가드레일</a><span class="wiki-index-summary">AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞게 제한·검사·기록하는 다층 안전 통제 장치다.</span></li>
+<li data-article-id="guardrail-coverage-matrix"><a href="/wiki/guardrail-coverage-matrix/">가드레일 커버리지 행렬</a><span class="wiki-index-summary">가드레일 커버리지 행렬은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pseudonymization"><a href="/wiki/pseudonymization/">가명화</a><span class="wiki-index-summary">가명화는 직접 식별자를 별도 관리되는 대체값으로 바꾸어 추가 정보 없이는 개인과 연결하기 어렵게 하는 처리다.</span></li>
 <li data-article-id="additive-attention"><a href="/wiki/additive-attention/">가산 어텐션</a><span class="wiki-index-summary">가산 어텐션은 질의와 키를 별도 선형 변환한 뒤 비선형 함수와 점수 벡터로 정렬 점수를 계산하는 어텐션 방식이다.</span></li>
 <li data-article-id="hypothesis"><a href="/wiki/hypothesis/">가설</a><span class="wiki-index-summary">가설은 입력에서 출력을 예측하기 위해 학습 알고리즘이 후보로 고려하는 하나의 함수나 규칙이다.</span></li>
@@ -33,6 +34,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="concept-activation-vector"><a href="/wiki/concept-activation-vector/">개념 활성화 벡터</a><span class="wiki-index-summary">개념 활성화 벡터는 신경망의 중간 표현 공간에서 사람이 정의한 개념의 방향을 학습해 출력이 그 개념에 얼마나 민감한지 측정하는 도구다.</span></li>
 <li data-article-id="open-neural-network-exchange"><a href="/wiki/open-neural-network-exchange/">개방형 신경망 교환 형식</a><span class="wiki-index-summary">개방형 신경망 교환 형식은 서로 다른 프레임워크와 런타임 사이에서 모델 그래프와 가중치를 전달하기 위한 ONNX 표준이다.</span></li>
 <li data-article-id="open-vocabulary-detection"><a href="/wiki/open-vocabulary-detection/">개방형 어휘 객체 탐지</a><span class="wiki-index-summary">개방형 어휘 객체 탐지는 학습 때 고정된 클래스 목록을 넘어 텍스트로 제시한 새로운 범주의 위치와 이름을 예측한다.</span></li>
+<li data-article-id="pointwise-evaluation-design"><a href="/wiki/pointwise-evaluation-design/">개별 채점 평가 설계</a><span class="wiki-index-summary">개별 채점 평가 설계는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pointwise-llm-judge"><a href="/wiki/pointwise-llm-judge/">개별 LLM 심사</a><span class="wiki-index-summary">개별 LLM 심사은 평가 모델이 한 응답을 독립적으로 보고 절대 등급이나 수치 점수를 부여하는 방식이다.</span></li>
 <li data-article-id="personally-identifiable-information"><a href="/wiki/personally-identifiable-information/">개인 식별 정보</a><span class="wiki-index-summary">개인 식별 정보는 단독 또는 다른 정보와 결합해 특정 개인을 직접·간접적으로 식별할 수 있는 정보다.</span></li>
 <li data-article-id="privacy-audit"><a href="/wiki/privacy-audit/">개인정보 감사</a><span class="wiki-index-summary">개인정보 감사는 데이터 수명주기와 시스템 동작이 명시된 개인정보 원칙·정책·법적 요구를 지키는지 증거로 점검하는 절차다.</span></li>
@@ -44,18 +46,30 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="metric-space"><a href="/wiki/metric-space/">거리 공간</a><span class="wiki-index-summary">거리 공간은 집합과 함께 비음수성·동일성·대칭성·삼각부등식을 만족하는 거리 함수를 갖는 수학적 구조다.</span></li>
 <li data-article-id="distance-metric-selection"><a href="/wiki/distance-metric-selection/">거리 지표 선택</a><span class="wiki-index-summary">거리 지표 선택은 임베딩 공간에서 어떤 유사도 함수가 과제의 관련성과 인덱스 구조에 맞는지 결정하는 과정이다.</span></li>
 <li data-article-id="metric-learning"><a href="/wiki/metric-learning/">거리 학습</a><span class="wiki-index-summary">거리 학습은 같은 의미의 표본은 가깝고 다른 의미의 표본은 멀어지도록 표현 공간의 거리 함수나 임베딩을 학습하는 방법이다.</span></li>
+<li data-article-id="retrieval-result-diversity"><a href="/wiki/retrieval-result-diversity/">검색 결과 다양성</a><span class="wiki-index-summary">검색 결과 다양성은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-deduplication"><a href="/wiki/retrieval-deduplication/">검색 결과 중복 제거</a><span class="wiki-index-summary">검색 결과 중복 제거는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-provenance"><a href="/wiki/retrieval-provenance/">검색 결과 출처</a><span class="wiki-index-summary">검색 결과 출처는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-transformer"><a href="/wiki/retrieval-transformer/">검색 결합 트랜스포머</a><span class="wiki-index-summary">검색 결합 트랜스포머는 외부 코퍼스에서 찾은 이웃 문맥을 모델 계산에 통합해 매개변수 밖의 정보를 사용하는 구조다.</span></li>
 <li data-article-id="retrieval-prompt"><a href="/wiki/retrieval-prompt/">검색 결합 프롬프트</a><span class="wiki-index-summary">검색 결합 프롬프트는 검색된 문서를 모델의 답변 근거로 제공하도록 문맥 배치, 인용 규칙과 불충분 정보 처리를 정의한 입력 형식이다.</span></li>
+<li data-article-id="retrieval-fallback"><a href="/wiki/retrieval-fallback/">검색 대체 전략</a><span class="wiki-index-summary">검색 대체 전략은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-context"><a href="/wiki/retrieval-context/">검색 문맥</a><span class="wiki-index-summary">검색 문맥은 질의에 응답하기 위해 검색 시스템이 선택해 생성 모델에 제공하는 문서 조각과 메타데이터의 집합이다.</span></li>
+<li data-article-id="retrieval-index-migration"><a href="/wiki/retrieval-index-migration/">검색 색인 마이그레이션</a><span class="wiki-index-summary">검색 색인 마이그레이션은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-capacity-planning"><a href="/wiki/retrieval-capacity-planning/">검색 용량 계획</a><span class="wiki-index-summary">검색 용량 계획은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-hit-rate"><a href="/wiki/retrieval-hit-rate/">검색 적중률</a><span class="wiki-index-summary">검색 적중률은 질의의 상위 k 결과 안에 하나 이상의 정답 또는 관련 항목이 포함된 비율이다.</span></li>
+<li data-article-id="retrieval-access-control"><a href="/wiki/retrieval-access-control/">검색 접근 제어</a><span class="wiki-index-summary">검색 접근 제어는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="rag"><a href="/wiki/rag/">검색 증강 생성</a><span class="wiki-index-summary">외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다.</span></li>
+<li data-article-id="query-routing-for-retrieval"><a href="/wiki/query-routing-for-retrieval/">검색 질의 라우팅</a><span class="wiki-index-summary">검색 질의 라우팅은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-cache-invalidation"><a href="/wiki/retrieval-cache-invalidation/">검색 캐시 무효화</a><span class="wiki-index-summary">검색 캐시 무효화는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="retrieval-content-trust"><a href="/wiki/retrieval-content-trust/">검색 콘텐츠 신뢰</a><span class="wiki-index-summary">검색 콘텐츠 신뢰는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-evaluation"><a href="/wiki/retrieval-evaluation/">검색 평가</a><span class="wiki-index-summary">검색 평가는 질의에 대해 관련 문서가 결과 목록의 적절한 위치에 나타나는지를 측정하는 과정이다.</span></li>
+<li data-article-id="retrieval-quality-slo"><a href="/wiki/retrieval-quality-slo/">검색 품질 SLO</a><span class="wiki-index-summary">검색 품질 SLO은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="retrieval-filtering"><a href="/wiki/retrieval-filtering/">검색 필터링</a><span class="wiki-index-summary">검색 필터링은 의미 또는 키워드 검색 전후에 메타데이터·권한·시간·품질 조건으로 후보 문서를 제한하는 과정이다.</span></li>
 <li data-article-id="retriever"><a href="/wiki/retriever/">검색기</a><span class="wiki-index-summary">질의와 관련된 문서나 청크 후보를 저장소에서 찾는 구성 요소다.</span></li>
 <li data-article-id="validation-set"><a href="/wiki/validation-set/">검증 데이터셋</a><span class="wiki-index-summary">검증 데이터셋은 모델 학습 중 하이퍼파라미터 선택과 조기 종료에 사용하지만 가중치 직접 학습에는 쓰지 않는 분할이다.</span></li>
 <li data-article-id="validation-loss"><a href="/wiki/validation-loss/">검증 손실</a><span class="wiki-index-summary">검증 손실은 학습에 사용하지 않은 고정 검증 집합에서 현재 모델의 목적 함수 값을 계산한 지표다.</span></li>
 <li data-article-id="verifier-agent"><a href="/wiki/verifier-agent/">검증 에이전트</a><span class="wiki-index-summary">검증 에이전트는 주장이나 작업 결과가 명세, 외부 근거 또는 실행 가능한 검사와 일치하는지 확인하는 에이전트다.</span></li>
 <li data-article-id="gated-recurrent-unit"><a href="/wiki/gated-recurrent-unit/">게이트 순환 유닛</a><span class="wiki-index-summary">게이트 순환 유닛은 갱신 게이트와 리셋 게이트로 이전 상태와 새 후보 상태를 혼합하는 순환 신경망 구조다.</span></li>
+<li data-article-id="robustness-evaluation-grid"><a href="/wiki/robustness-evaluation-grid/">견고성 평가 그리드</a><span class="wiki-index-summary">견고성 평가 그리드는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="outcome-reward-model"><a href="/wiki/outcome-reward-model/">결과 보상 모델</a><span class="wiki-index-summary">결과 보상 모델은 생성 과정 전체보다 최종 산출물의 정확성이나 선호도를 입력으로 평가하는 모델이다.</span></li>
 <li data-article-id="decision-tree"><a href="/wiki/decision-tree/">결정 트리</a><span class="wiki-index-summary">결정 트리는 특성 조건으로 데이터를 재귀적으로 분할해 잎에서 범주나 수치를 예측하는 비모수 지도학습 모형이다.</span></li>
 <li data-article-id="deterministic-inference"><a href="/wiki/deterministic-inference/">결정적 추론</a><span class="wiki-index-summary">결정적 추론은 같은 모델·입력·설정·실행 환경에서 반복할 때 같은 출력을 산출하도록 통제된 추론 방식이다.</span></li>
@@ -83,6 +97,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="good-old-fashioned-ai"><a href="/wiki/good-old-fashioned-ai/">고전적 인공지능</a><span class="wiki-index-summary">명시적인 기호, 논리, 규칙, 탐색과 지식 표현을 중심으로 한 고전적 인공지능 연구 전통을 가리키는 표현이다.</span></li>
 <li data-article-id="high-dimensional-geometry"><a href="/wiki/high-dimensional-geometry/">고차원 기하학</a><span class="wiki-index-summary">고차원 기하학은 차원이 큰 벡터 공간에서 거리·각도·부피·확률 질량이 보이는 비직관적 성질을 다루는 영역이다.</span></li>
 <li data-article-id="area-under-curve"><a href="/wiki/area-under-curve/">곡선 아래 면적</a><span class="wiki-index-summary">성능 곡선 아래의 면적을 하나의 수로 요약한 값이며 어떤 곡선과 적분 규칙을 사용했는지 함께 명시해야 한다.</span></li>
+<li data-article-id="golden-set-governance"><a href="/wiki/golden-set-governance/">골든 세트 거버넌스</a><span class="wiki-index-summary">골든 세트 거버넌스는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="product-quantization"><a href="/wiki/product-quantization/">곱 양자화</a><span class="wiki-index-summary">곱 양자화는 고차원 벡터를 여러 부분공간으로 나누고 각 부분을 작은 코드북의 중심점 번호로 압축하는 방법이다.</span></li>
 <li data-article-id="spatial-reasoning"><a href="/wiki/spatial-reasoning/">공간 추론</a><span class="wiki-index-summary">공간 추론은 객체의 위치, 방향, 거리, 포함과 이동 관계를 표현하고 보이지 않는 관계를 도출하는 능력이다.</span></li>
 <li data-article-id="joint-embedding-space"><a href="/wiki/joint-embedding-space/">공동 임베딩 공간</a><span class="wiki-index-summary">공동 임베딩 공간은 서로 다른 모달리티의 의미적으로 대응하는 항목을 비교할 수 있도록 같은 벡터 공간에 배치한 표현 체계다.</span></li>
@@ -107,6 +122,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="corrigibility"><a href="/wiki/corrigibility/">교정 가능성</a><span class="wiki-index-summary">교정 가능성은 AI 시스템이 사람의 수정, 중단, 목표 변경과 통제 시도를 방해하지 않고 받아들이는 성질이다.</span></li>
 <li data-article-id="corrective-rag"><a href="/wiki/corrective-rag/">교정형 RAG</a><span class="wiki-index-summary">교정형 RAG는 검색 결과의 관련성과 신뢰성을 평가한 뒤 부족하거나 잘못된 문맥을 보완해 답변을 생성하는 방식이다.</span></li>
 <li data-article-id="intersectional-fairness"><a href="/wiki/intersectional-fairness/">교차 공정성</a><span class="wiki-index-summary">교차 공정성은 성별·인종·연령 등 여러 속성이 겹치는 하위 집단에서 성능과 결과의 불균형을 평가하는 관점이다.</span></li>
+<li data-article-id="cross-modal-latency-budget"><a href="/wiki/cross-modal-latency-budget/">교차 모달 지연 예산</a><span class="wiki-index-summary">교차 모달 지연 예산은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="interleaved-multimodal-data"><a href="/wiki/interleaved-multimodal-data/">교차 배열 멀티모달 데이터</a><span class="wiki-index-summary">교차 배열 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다.</span></li>
 <li data-article-id="cross-site-request-forgery"><a href="/wiki/cross-site-request-forgery/">교차 사이트 요청 위조</a><span class="wiki-index-summary">교차 사이트 요청 위조는 로그인된 사용자의 브라우저가 공격자 의도대로 다른 사이트에 상태 변경 요청을 보내게 하는 공격이다.</span></li>
 <li data-article-id="cross-entropy"><a href="/wiki/cross-entropy/">교차 엔트로피</a><span class="wiki-index-summary">교차 엔트로피는 실제 분포의 표본을 다른 예측 분포로 부호화할 때 필요한 평균 정보량이다.</span></li>
@@ -117,6 +133,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="span-corruption"><a href="/wiki/span-corruption/">구간 손상 복원</a><span class="wiki-index-summary">구간 손상 복원은 연속된 여러 토큰 구간을 특수 표식으로 바꾸고 누락된 구간을 생성하도록 하는 잡음 제거 학습 방식이다.</span></li>
 <li data-article-id="passage-retrieval"><a href="/wiki/passage-retrieval/">구절 검색</a><span class="wiki-index-summary">구절 검색은 긴 문서를 작은 문단이나 청크로 나누어 질의에 직접 관련된 구간을 반환하는 검색 과제다.</span></li>
 <li data-article-id="structured-output"><a href="/wiki/structured-output/">구조화 출력</a><span class="wiki-index-summary">모델 출력을 미리 정의한 JSON 스키마나 데이터 구조에 맞추는 기능이다.</span></li>
+<li data-article-id="structured-output-recovery"><a href="/wiki/structured-output-recovery/">구조화 출력 복구</a><span class="wiki-index-summary">구조화 출력 복구는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="local-global-optimum"><a href="/wiki/local-global-optimum/">국소 최적점과 전역 최적점</a><span class="wiki-index-summary">국소 최적점은 주변에서 가장 좋은 해이고 전역 최적점은 전체 실현 가능 영역에서 가장 좋은 해다.</span></li>
 <li data-article-id="clustering"><a href="/wiki/clustering/">군집화</a><span class="wiki-index-summary">군집화는 정답 레이블 없이 유사한 데이터가 같은 집단에 모이도록 구조를 찾는 비지도학습 과제다.</span></li>
 <li data-article-id="inductive-bias"><a href="/wiki/inductive-bias/">귀납적 편향</a><span class="wiki-index-summary">귀납적 편향은 관찰하지 않은 사례로 일반화할 때 일부 가설을 다른 가설보다 선호하게 하는 가정이다.</span></li>
@@ -156,6 +173,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="basis-vector"><a href="/wiki/basis-vector/">기저 벡터</a><span class="wiki-index-summary">기저 벡터는 벡터 공간의 모든 벡터를 유일한 선형결합으로 표현할 수 있게 하는 선형 독립 벡터 집합의 원소다.</span></li>
 <li data-article-id="symbolic-ai"><a href="/wiki/symbolic-ai/">기호주의 인공지능</a><span class="wiki-index-summary">지식을 기호와 명시적 규칙으로 표현하고 탐색·추론 절차를 적용해 결론이나 행동을 도출하는 인공지능 접근법이다.</span></li>
 <li data-article-id="equality-of-opportunity"><a href="/wiki/equality-of-opportunity/">기회 균등</a><span class="wiki-index-summary">기회 균등은 실제 양성인 사례에서 보호 집단별 참양성률이 같도록 요구하는 공정성 기준이다.</span></li>
+<li data-article-id="long-context-routing"><a href="/wiki/long-context-routing/">긴 문맥 라우팅</a><span class="wiki-index-summary">긴 문맥 라우팅은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="length-extrapolation"><a href="/wiki/length-extrapolation/">길이 외삽</a><span class="wiki-index-summary">길이 외삽은 모델이 학습에서 본 시퀀스 길이를 넘어선 입력에서도 규칙과 성능을 유지하는 능력이다.</span></li>
 <li data-article-id="length-penalty"><a href="/wiki/length-penalty/">길이 페널티</a><span class="wiki-index-summary">길이 페널티는 후보 시퀀스 점수를 길이에 따라 보정해 빔 탐색이 지나치게 짧거나 긴 출력을 선호하지 않게 하는 규칙이다.</span></li>
 <li data-article-id="mixture-of-depths"><a href="/wiki/mixture-of-depths/">깊이 혼합</a><span class="wiki-index-summary">깊이 혼합은 각 트랜스포머 층에서 일부 토큰만 계산 블록을 통과시키고 나머지는 우회시켜 토큰별 계산 깊이를 달리하는 조건부 계산 기법이다.</span></li>
@@ -184,6 +202,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <ul class="wiki-index-list">
 <li data-article-id="multilingual-capability"><a href="/wiki/multilingual-capability/">다국어 능력</a><span class="wiki-index-summary">다국어 능력은 모델이 여러 언어의 입력을 이해하고 생성하며 언어 사이의 의미를 이전하는 능력이다.</span></li>
 <li data-article-id="multilingual-language-model"><a href="/wiki/multilingual-language-model/">다국어 언어 모델</a><span class="wiki-index-summary">다국어 언어 모델은 여러 언어의 텍스트를 공동 학습해 언어 간에 표현과 능력을 공유하는 모델이다.</span></li>
+<li data-article-id="multilingual-evaluation-protocol"><a href="/wiki/multilingual-evaluation-protocol/">다국어 평가 프로토콜</a><span class="wiki-index-summary">다국어 평가 프로토콜은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="multivariable-calculus"><a href="/wiki/multivariable-calculus/">다변수 미적분학</a><span class="wiki-index-summary">다변수 미적분학은 여러 입력을 갖는 함수의 극한, 미분, 적분과 최적화를 다루는 수학 분야다.</span></li>
 <li data-article-id="diverse-beam-search"><a href="/wiki/diverse-beam-search/">다양성 빔 탐색</a><span class="wiki-index-summary">다양성 빔 탐색은 빔을 여러 그룹으로 나누고 앞선 그룹과 유사한 후보에 패널티를 주어 서로 다른 시퀀스를 찾는 방법이다.</span></li>
 <li data-article-id="manifold-learning"><a href="/wiki/manifold-learning/">다양체 학습</a><span class="wiki-index-summary">다양체 학습은 고차원 관측이 더 낮은 차원의 비선형 구조 위에 놓인다는 가정 아래 그 내재 좌표를 찾는 방법군이다.</span></li>
@@ -210,6 +229,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="fallback-model"><a href="/wiki/fallback-model/">대체 모델</a><span class="wiki-index-summary">대체 모델은 기본 모델이 실패·과부하·정책 부적합일 때 요청을 처리하도록 준비한 다른 모델이나 규칙 기반 경로다.</span></li>
 <li data-article-id="conversation-memory"><a href="/wiki/conversation-memory/">대화 메모리</a><span class="wiki-index-summary">대화 메모리는 사용자와 에이전트 사이의 발화, 역할, 결정과 미해결 항목을 대화 단위로 유지하는 기억이다.</span></li>
 <li data-article-id="conversation-context"><a href="/wiki/conversation-context/">대화 문맥</a><span class="wiki-index-summary">대화 문맥은 현재 발화를 해석하고 응답하기 위해 모델에 제공되는 이전 메시지, 역할, 도구 결과와 대화 상태의 집합이다.</span></li>
+<li data-article-id="conversation-state-compaction"><a href="/wiki/conversation-state-compaction/">대화 상태 압축</a><span class="wiki-index-summary">대화 상태 압축은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="interactive-notebook"><a href="/wiki/interactive-notebook/">대화형 노트북</a><span class="wiki-index-summary">대화형 노트북은 코드, 실행 결과, 설명과 시각화를 셀 단위 문서에 함께 기록하는 계산 환경이다.</span></li>
 <li data-article-id="interactive-model-demo"><a href="/wiki/interactive-model-demo/">대화형 모델 데모</a><span class="wiki-index-summary">대화형 모델 데모는 사용자가 입력을 바꾸고 모델 출력을 즉시 관찰하며 기능과 한계를 탐색하는 실행 가능한 인터페이스다.</span></li>
 <li data-article-id="data-leakage"><a href="/wiki/data-leakage/">데이터 누수</a><span class="wiki-index-summary">데이터 누수는 예측 시점에 사용할 수 없는 정보나 평가 대상의 정보가 학습 과정에 들어가 성능을 과대평가하게 하는 오류다.</span></li>
@@ -237,6 +257,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="tool-result"><a href="/wiki/tool-result/">도구 결과</a><span class="wiki-index-summary">도구 결과는 외부 기능 실행 뒤 에이전트에 반환되는 데이터, 상태, 오류와 부작용 정보다.</span></li>
 <li data-article-id="tool-result-handling"><a href="/wiki/tool-result-handling/">도구 결과 처리</a><span class="wiki-index-summary">도구 결과 처리는 외부 호출의 성공 값, 오류, 부분 결과와 부수 효과를 에이전트 상태에 안전하게 반영하는 절차다.</span></li>
 <li data-article-id="tool-permission"><a href="/wiki/tool-permission/">도구 권한</a><span class="wiki-index-summary">도구 권한은 에이전트가 특정 도구와 자원에 대해 조회·변경·전송할 수 있는 범위를 제한하는 정책이다.</span></li>
+<li data-article-id="tool-permission-broker"><a href="/wiki/tool-permission-broker/">도구 권한 브로커</a><span class="wiki-index-summary">도구 권한 브로커는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="tool-registry"><a href="/wiki/tool-registry/">도구 레지스트리</a><span class="wiki-index-summary">도구 레지스트리는 에이전트가 사용할 수 있는 도구의 명세, 버전, 권한과 상태를 검색 가능하게 관리하는 목록이다.</span></li>
 <li data-article-id="tool-discovery"><a href="/wiki/tool-discovery/">도구 발견</a><span class="wiki-index-summary">도구 발견은 현재 과제를 수행할 수 있는 도구를 레지스트리나 서버에서 찾아 기능과 제약을 파악하는 단계다.</span></li>
 <li data-article-id="tool-side-effect"><a href="/wiki/tool-side-effect/">도구 부작용</a><span class="wiki-index-summary">도구 부작용은 도구 호출이 반환값 이외에 파일·계정·메시지·금전·외부 시스템 상태에 남기는 변화다.</span></li>
@@ -247,9 +268,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="tool-error"><a href="/wiki/tool-error/">도구 오류</a><span class="wiki-index-summary">도구 오류는 에이전트나 API 호출이 형식, 권한, 네트워크, 실행 로직 등의 이유로 정상 결과를 반환하지 못한 상태다.</span></li>
 <li data-article-id="tool-argument"><a href="/wiki/tool-argument/">도구 인수</a><span class="wiki-index-summary">도구 인수는 선택된 도구 호출에 전달되는 구조화된 입력 값의 집합이다.</span></li>
 <li data-article-id="tool-definition"><a href="/wiki/tool-definition/">도구 정의</a><span class="wiki-index-summary">도구 정의는 에이전트가 호출할 수 있는 기능의 이름, 목적, 입력 스키마, 권한과 부작용을 기술한 계약이다.</span></li>
+<li data-article-id="tool-output-sanitization"><a href="/wiki/tool-output-sanitization/">도구 출력 정화</a><span class="wiki-index-summary">도구 출력 정화는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="tool-calling"><a href="/wiki/tool-calling/">도구 호출</a><span class="wiki-index-summary">모델이 정해진 함수 스키마를 선택하고 인수를 생성해 외부 기능 실행을 요청하는 방식이다.</span></li>
 <li data-article-id="domain-name-system"><a href="/wiki/domain-name-system/">도메인 이름 시스템</a><span class="wiki-index-summary">도메인 이름 시스템(DNS)은 사람이 읽는 도메인 이름을 IP 주소와 여러 자원 레코드에 연결하는 분산 계층형 데이터베이스다.</span></li>
 <li data-article-id="domain-adaptation"><a href="/wiki/domain-adaptation/">도메인 적응</a><span class="wiki-index-summary">도메인 적응은 학습 데이터와 운영 데이터의 분포가 다를 때 목표 도메인 성능을 높이도록 표현이나 모델을 조정하는 방법이다.</span></li>
+<li data-article-id="domain-expert-evaluation"><a href="/wiki/domain-expert-evaluation/">도메인 전문가 평가</a><span class="wiki-index-summary">도메인 전문가 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="independent-component-analysis"><a href="/wiki/independent-component-analysis/">독립 성분 분석</a><span class="wiki-index-summary">독립 성분 분석은 관측된 혼합 신호를 통계적으로 가능한 한 독립적인 잠재 성분의 선형 결합으로 분해하는 방법이다.</span></li>
 <li data-article-id="lip-reading"><a href="/wiki/lip-reading/">독순술 인식</a><span class="wiki-index-summary">독순술 인식은 화자의 입술과 얼굴 움직임만으로 발화 음소·단어·문장을 추정하는 시각 음성 인식 과제다.</span></li>
 <li data-article-id="synchronous-client"><a href="/wiki/synchronous-client/">동기 클라이언트</a><span class="wiki-index-summary">동기 클라이언트는 원격 요청이 완료될 때까지 호출 스레드나 작업의 진행을 기다리게 하는 API 사용 방식이다.</span></li>
@@ -273,6 +296,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="router-agent"><a href="/wiki/router-agent/">라우터 에이전트</a><span class="wiki-index-summary">라우터 에이전트는 요청의 종류와 위험, 필요한 능력을 판별해 적절한 모델, 도구 또는 전문 에이전트로 전달한다.</span></li>
 <li data-article-id="license-compatibility"><a href="/wiki/license-compatibility/">라이선스 호환성</a><span class="wiki-index-summary">라이선스 호환성은 서로 다른 라이선스의 저작물이나 아티팩트를 결합·재배포할 때 의무가 충돌하지 않는 성질이다.</span></li>
 <li data-article-id="random-forest"><a href="/wiki/random-forest/">랜덤 포레스트</a><span class="wiki-index-summary">랜덤 포레스트는 부트스트랩 표본과 무작위 특성 부분집합으로 학습한 여러 결정 트리의 예측을 결합하는 앙상블이다.</span></li>
+<li data-article-id="red-team-evidence-log"><a href="/wiki/red-team-evidence-log/">레드팀 근거 로그</a><span class="wiki-index-summary">레드팀 근거 로그는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="red-team-finding-severity"><a href="/wiki/red-team-finding-severity/">레드팀 발견 심각도</a><span class="wiki-index-summary">레드팀 발견 심각도는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="red-team-scenario-coverage"><a href="/wiki/red-team-scenario-coverage/">레드팀 시나리오 커버리지</a><span class="wiki-index-summary">레드팀 시나리오 커버리지는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="red-team-remediation-verification"><a href="/wiki/red-team-remediation-verification/">레드팀 조치 검증</a><span class="wiki-index-summary">레드팀 조치 검증은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="label"><a href="/wiki/label/">레이블</a><span class="wiki-index-summary">레이블은 지도학습에서 입력 표본에 대응해 제공되는 정답 범주, 값 또는 구조화된 목표 표시다.</span></li>
 <li data-article-id="label-smoothing"><a href="/wiki/label-smoothing/">레이블 스무딩</a><span class="wiki-index-summary">레이블 스무딩은 원-핫 정답분포의 일부 확률 질량을 다른 클래스에 나누어 과도한 확신을 줄이는 정규화 기법이다.</span></li>
 <li data-article-id="layer-dropping"><a href="/wiki/layer-dropping/">레이어 드로핑</a><span class="wiki-index-summary">층 드롭은 학습 중 일부 트랜스포머 층을 확률적으로 건너뛰거나 추론 전에 제거해 깊이에 강건한 모델을 만드는 기법이다.</span></li>
@@ -282,9 +309,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="logit"><a href="/wiki/logit/">로짓</a><span class="wiki-index-summary">확률로 정규화하기 전 모델이 각 클래스나 토큰 후보에 내놓는 실수 점수이며, 이항 문제에서는 로그 오즈로 해석된다.</span></li>
 <li data-article-id="local-attention"><a href="/wiki/local-attention/">로컬 어텐션</a><span class="wiki-index-summary">로컬 어텐션은 각 토큰이 주변의 제한된 창이나 이웃 위치에만 주의를 주도록 연결 범위를 줄인 방식이다.</span></li>
 <li data-article-id="rubric-based-judge"><a href="/wiki/rubric-based-judge/">루브릭 기반 심사</a><span class="wiki-index-summary">루브릭 기반 심사은 명시된 평가 차원, 등급 설명과 감점 조건에 따라 후보 응답을 채점하는 방식이다.</span></li>
+<li data-article-id="rubric-reliability"><a href="/wiki/rubric-reliability/">루브릭 신뢰도</a><span class="wiki-index-summary">루브릭 신뢰도는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="roofline-model"><a href="/wiki/roofline-model/">루프라인 모델</a><span class="wiki-index-summary">루프라인 모델은 하드웨어의 최대 계산 성능과 메모리 대역폭을 연산 강도에 따라 결합해 커널 성능 상한을 보여 주는 분석 모델이다.</span></li>
 <li data-article-id="leaderboard"><a href="/wiki/leaderboard/">리더보드</a><span class="wiki-index-summary">리더보드는 동일한 평가 규칙으로 측정한 모델이나 시스템의 성능을 순위와 함께 공개하는 표다.</span></li>
 <li data-article-id="reranker"><a href="/wiki/reranker/">리랭커</a><span class="wiki-index-summary">초기 검색 후보를 질의 관련성 기준으로 다시 정렬하는 모델이나 규칙이다.</span></li>
+<li data-article-id="reranker-budgeting"><a href="/wiki/reranker-budgeting/">리랭커 예산 관리</a><span class="wiki-index-summary">리랭커 예산 관리는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="listwise-ranking"><a href="/wiki/listwise-ranking/">리스트와이즈 순위화</a><span class="wiki-index-summary">리스트와이즈 순위화는 한 질의의 후보 목록 전체와 정답 순위를 함께 고려해 학습하는 방법이다.</span></li>
 <li data-article-id="likert-scale"><a href="/wiki/likert-scale/">리커트 척도</a><span class="wiki-index-summary">리커트 척도는 응답자가 진술에 대한 동의나 평가 정도를 순서가 있는 여러 범주 중 하나로 표시하는 척도다.</span></li>
 <li data-article-id="leaky-bucket"><a href="/wiki/leaky-bucket/">리키 버킷</a><span class="wiki-index-summary">리키 버킷은 들어오는 요청을 유한 큐에 담고 거의 일정한 속도로 내보내 출력 트래픽을 평탄화하는 알고리즘이다.</span></li>
@@ -306,17 +335,23 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="machine-learning-pipeline"><a href="/wiki/machine-learning-pipeline/">머신러닝 파이프라인</a><span class="wiki-index-summary">머신러닝 파이프라인은 데이터 수집·검증·변환·학습·평가·배포 단계를 재현 가능한 의존 그래프로 연결한 작업 흐름이다.</span></li>
 <li data-article-id="machine-learning-framework"><a href="/wiki/machine-learning-framework/">머신러닝 프레임워크</a><span class="wiki-index-summary">머신러닝 프레임워크는 모델 정의, 자동 미분, 최적화, 데이터 처리와 장치 실행을 통합 제공하는 개발 기반이다.</span></li>
 <li data-article-id="multi-agent-system"><a href="/wiki/multi-agent-system/">멀티 에이전트 시스템</a><span class="wiki-index-summary">역할이 다른 여러 에이전트가 협력하거나 경쟁하며 문제를 해결하는 시스템이다.</span></li>
+<li data-article-id="multi-lora-serving"><a href="/wiki/multi-lora-serving/">멀티 LoRA 서빙</a><span class="wiki-index-summary">멀티 LoRA 서빙은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="multimodal-contrastive-pretraining"><a href="/wiki/multimodal-contrastive-pretraining/">멀티모달 대조 사전학습</a><span class="wiki-index-summary">멀티모달 대조 사전학습은 짝을 이루는 서로 다른 모달리티 표현을 가깝게, 짝이 아닌 표현을 멀게 학습하는 방식이다.</span></li>
 <li data-article-id="multimodal-model"><a href="/wiki/multimodal-model/">멀티모달 모델</a><span class="wiki-index-summary">텍스트·이미지·음성·영상 등 둘 이상의 데이터 양식을 함께 처리하는 모델이다.</span></li>
 <li data-article-id="multimodal-generation"><a href="/wiki/multimodal-generation/">멀티모달 생성</a><span class="wiki-index-summary">멀티모달 생성은 텍스트·이미지·음성·영상 중 하나 이상의 입력을 조건으로 여러 양식의 새 콘텐츠를 만드는 작업이다.</span></li>
+<li data-article-id="multimodal-safety-evaluation"><a href="/wiki/multimodal-safety-evaluation/">멀티모달 안전 평가</a><span class="wiki-index-summary">멀티모달 안전 평가는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="multimodal-language-model"><a href="/wiki/multimodal-language-model/">멀티모달 언어 모델</a><span class="wiki-index-summary">멀티모달 언어 모델은 텍스트와 이미지, 오디오 등 다른 양식의 표현을 언어 모델과 결합해 이해와 생성을 수행한다.</span></li>
 <li data-article-id="multimodal-fusion"><a href="/wiki/multimodal-fusion/">멀티모달 융합</a><span class="wiki-index-summary">멀티모달 융합은 둘 이상의 모달리티 표현을 결합해 단일 채널보다 풍부한 예측이나 생성을 수행하는 과정이다.</span></li>
 <li data-article-id="multimodal-embedding"><a href="/wiki/multimodal-embedding/">멀티모달 임베딩</a><span class="wiki-index-summary">서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다.</span></li>
+<li data-article-id="multimodal-input-contract"><a href="/wiki/multimodal-input-contract/">멀티모달 입력 계약</a><span class="wiki-index-summary">멀티모달 입력 계약은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="multimodal-instruction-tuning"><a href="/wiki/multimodal-instruction-tuning/">멀티모달 지시 튜닝</a><span class="wiki-index-summary">멀티모달 지시 튜닝은 이미지·음성 등과 자연어 지시 및 응답의 짝으로 모델을 조정해 대화형 과제를 수행하게 하는 과정이다.</span></li>
 <li data-article-id="multimodal-jailbreak"><a href="/wiki/multimodal-jailbreak/">멀티모달 탈옥 공격</a><span class="wiki-index-summary">멀티모달 탈옥 공격은 텍스트 외 이미지·음성 등 입력 채널을 이용해 모델의 안전 정책이나 입력 검사를 우회하도록 유도하는 공격이다.</span></li>
 <li data-article-id="multimodal-tokenizer"><a href="/wiki/multimodal-tokenizer/">멀티모달 토크나이저</a><span class="wiki-index-summary">멀티모달 토크나이저는 이미지·음성·영상 같은 연속 신호를 모델이 다룰 토큰 또는 토큰 유사 표현으로 변환하는 구성 요소다.</span></li>
 <li data-article-id="multimodal-transformer"><a href="/wiki/multimodal-transformer/">멀티모달 트랜스포머</a><span class="wiki-index-summary">멀티모달 트랜스포머는 텍스트·이미지·음성 등 서로 다른 양식의 토큰을 어텐션으로 결합해 공동 표현이나 출력을 만드는 모델이다.</span></li>
 <li data-article-id="multimodal-evaluation"><a href="/wiki/multimodal-evaluation/">멀티모달 평가</a><span class="wiki-index-summary">멀티모달 평가는 둘 이상의 입력·출력 양식을 사용하는 모델의 인식·정렬·추론·생성 품질을 함께 측정하는 평가 체계다.</span></li>
+<li data-article-id="multi-agent-deadlock"><a href="/wiki/multi-agent-deadlock/">멀티에이전트 교착 상태</a><span class="wiki-index-summary">멀티에이전트 교착 상태는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="multi-agent-conflict-mediation"><a href="/wiki/multi-agent-conflict-mediation/">멀티에이전트 충돌 중재</a><span class="wiki-index-summary">멀티에이전트 충돌 중재는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="multi-agent-consensus-protocol"><a href="/wiki/multi-agent-consensus-protocol/">멀티에이전트 합의 프로토콜</a><span class="wiki-index-summary">멀티에이전트 합의 프로토콜은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="multi-query-attention"><a href="/wiki/multi-query-attention/">멀티쿼리 어텐션</a><span class="wiki-index-summary">멀티쿼리 어텐션은 여러 질의 헤드가 하나의 키·값 헤드 쌍을 공유해 추론 시 KV 캐시 크기와 메모리 대역폭을 줄인다.</span></li>
 <li data-article-id="multi-head-attention"><a href="/wiki/multi-head-attention/">멀티헤드 어텐션</a><span class="wiki-index-summary">여러 어텐션 헤드가 서로 다른 관계를 병렬로 학습하도록 구성한 연산이다.</span></li>
 <li data-article-id="memory-network"><a href="/wiki/memory-network/">메모리 네트워크</a><span class="wiki-index-summary">메모리 네트워크는 입력과 분리된 읽기·쓰기 가능한 메모리와 질의 기반 접근을 결합한 신경망 구조다.</span></li>
@@ -335,40 +370,53 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="specification-gaming"><a href="/wiki/specification-gaming/">명세 편법 수행</a><span class="wiki-index-summary">명세 편법 수행은 시스템이 명시된 보상이나 평가 규칙의 허점을 이용해 의도와 다른 방식으로 높은 점수를 얻는 행동이다.</span></li>
 <li data-article-id="modality"><a href="/wiki/modality/">모달리티</a><span class="wiki-index-summary">모달리티는 텍스트, 이미지, 음성, 영상, 센서값처럼 정보를 표현하고 관측하는 자료 형식 또는 채널이다.</span></li>
 <li data-article-id="modality-gap"><a href="/wiki/modality-gap/">모달리티 격차</a><span class="wiki-index-summary">모달리티 격차는 이미지, 텍스트, 음성과 같은 서로 다른 양식의 표현 분포와 의미 구조가 자연스럽게 일치하지 않는 현상이다.</span></li>
+<li data-article-id="modality-fallback-policy"><a href="/wiki/modality-fallback-policy/">모달리티 대체 정책</a><span class="wiki-index-summary">모달리티 대체 정책은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="modality-adapter"><a href="/wiki/modality-adapter/">모달리티 어댑터</a><span class="wiki-index-summary">모달리티 어댑터는 특정 양식 인코더의 출력을 다른 모델이 소비할 수 있도록 연결하는 소규모 학습 모듈이다.</span></li>
 <li data-article-id="modality-projection"><a href="/wiki/modality-projection/">모달리티 투영</a><span class="wiki-index-summary">모달리티 투영은 한 양식의 특징을 다른 양식이나 공통 표현 공간이 기대하는 차원과 분포로 변환하는 과정이다.</span></li>
 <li data-article-id="model"><a href="/wiki/model/">모델</a><span class="wiki-index-summary">입력을 출력으로 변환하도록 데이터에서 학습된 수학적 함수와 파라미터의 집합이다.</span></li>
 <li data-article-id="model-availability"><a href="/wiki/model-availability/">모델 가용성</a><span class="wiki-index-summary">모델 가용성은 사용자가 요구한 시점에 모델 서비스가 유효한 응답을 제공할 수 있는 비율이다.</span></li>
+<li data-article-id="model-weight-access-control"><a href="/wiki/model-weight-access-control/">모델 가중치 접근 제어</a><span class="wiki-index-summary">모델 가중치 접근 제어는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-weights"><a href="/wiki/model-weights/">모델 가중치 파일</a><span class="wiki-index-summary">학습 과정에서 갱신된 신경망 파라미터 텐서를 저장한 파일 또는 파일 집합이다.</span></li>
 <li data-article-id="model-pruning"><a href="/wiki/model-pruning/">모델 가지치기</a><span class="wiki-index-summary">모델 가지치기는 성능에 미치는 영향이 작은 가중치, 채널, 헤드나 층을 제거해 모델 크기와 계산량을 줄이는 기법이다.</span></li>
 <li data-article-id="model-search"><a href="/wiki/model-search/">모델 검색</a><span class="wiki-index-summary">모델 검색은 과제·입력 양식·라이선스·크기·평가 결과 같은 조건으로 사용할 모델 후보를 찾고 비교하는 과정이다.</span></li>
 <li data-article-id="model-gateway"><a href="/wiki/model-gateway/">모델 게이트웨이</a><span class="wiki-index-summary">모델 게이트웨이는 여러 모델 제공자와 내부 모델 앞에서 공통 인증, 라우팅, 정책과 관측 기능을 제공하는 진입 계층이다.</span></li>
 <li data-article-id="model-lineage"><a href="/wiki/model-lineage/">모델 계보</a><span class="wiki-index-summary">모델이 어떤 데이터, 코드, 구성, 학습 실행, 평가와 상위 아티팩트에서 만들어졌는지를 연결한 계보 정보다.</span></li>
+<li data-article-id="model-supply-chain-security"><a href="/wiki/model-supply-chain-security/">모델 공급망 보안</a><span class="wiki-index-summary">모델 공급망 보안은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-based-planning"><a href="/wiki/model-based-planning/">모델 기반 계획</a><span class="wiki-index-summary">모델 기반 계획은 환경의 상태 전이와 보상 또는 비용을 예측하는 모델을 이용해 행동 결과를 미리 비교하는 방식이다.</span></li>
+<li data-article-id="model-fallback-chain"><a href="/wiki/model-fallback-chain/">모델 대체 체인</a><span class="wiki-index-summary">모델 대체 체인은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-drift-monitoring"><a href="/wiki/model-drift-monitoring/">모델 드리프트 모니터링</a><span class="wiki-index-summary">모델 드리프트 모니터링은 운영 입력, 예측과 성능의 통계적 관계가 기준 기간에서 변하는지 지속 확인하는 과정이다.</span></li>
 <li data-article-id="model-license"><a href="/wiki/model-license/">모델 라이선스</a><span class="wiki-index-summary">모델 가중치·코드 등 배포물의 사용·수정·재배포 조건을 정한 법적 약정이다. 일부 약정은 출력과 파생 모델의 이용 조건도 별도로 규정한다.</span></li>
 <li data-article-id="model-registry"><a href="/wiki/model-registry/">모델 레지스트리</a><span class="wiki-index-summary">학습된 모델 버전과 메타데이터·검증 상태·배포 참조를 중앙에서 추적하고 관리하는 수명주기 시스템이다.</span></li>
+<li data-article-id="model-loading-latency"><a href="/wiki/model-loading-latency/">모델 로딩 지연 시간</a><span class="wiki-index-summary">모델 로딩 지연 시간은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-rollback"><a href="/wiki/model-rollback/">모델 롤백</a><span class="wiki-index-summary">문제가 있는 모델 변경을 중단하고 이전에 검증된 모델·구성·데이터 처리 상태로 되돌리는 복구 절차다.</span></li>
+<li data-article-id="model-rollback-safety"><a href="/wiki/model-rollback-safety/">모델 롤백 안전성</a><span class="wiki-index-summary">모델 롤백 안전성은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-metadata"><a href="/wiki/model-metadata/">모델 메타데이터</a><span class="wiki-index-summary">모델 메타데이터는 모델의 제작자·버전·과제·입출력·학습 데이터·라이선스·평가 결과를 설명하는 구조화된 정보다.</span></li>
 <li data-article-id="model-monitoring-platform"><a href="/wiki/model-monitoring-platform/">모델 모니터링 플랫폼</a><span class="wiki-index-summary">모델 모니터링 플랫폼은 배포된 모델의 입력, 예측, 지연시간, 오류와 품질 변화를 지속 관찰하는 시스템이다.</span></li>
 <li data-article-id="model-deployment"><a href="/wiki/model-deployment/">모델 배포</a><span class="wiki-index-summary">모델 배포는 검증된 모델 아티팩트를 실제 요청이나 배치 작업이 사용할 수 있는 실행 환경에 제공하는 과정이다.</span></li>
 <li data-article-id="model-backdoor"><a href="/wiki/model-backdoor/">모델 백도어</a><span class="wiki-index-summary">평소에는 정상적으로 동작하지만 특정 트리거나 조건에서 공격자가 원하는 출력을 내도록 숨겨진 행동을 가진 모델이다.</span></li>
 <li data-article-id="model-version"><a href="/wiki/model-version/">모델 버전</a><span class="wiki-index-summary">가중치·구조·전처리·토크나이저·설정과 평가 기록의 특정 조합을 식별하고 재현·비교·롤백하기 위한 불변 참조 단위다.</span></li>
+<li data-article-id="model-version-pinning"><a href="/wiki/model-version-pinning/">모델 버전 고정</a><span class="wiki-index-summary">모델 버전 고정은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-commoditization"><a href="/wiki/model-commoditization/">모델 범용재화화</a><span class="wiki-index-summary">모델 범용재화화는 비슷한 용도의 AI 모델이 널리 공급되고 교체 가능성이 높아지며 차별화와 가격 프리미엄이 줄어드는 시장 과정이다.</span></li>
 <li data-article-id="model-parallelism"><a href="/wiki/model-parallelism/">모델 병렬화</a><span class="wiki-index-summary">모델 병렬화는 하나의 모델 파라미터와 계산을 여러 장치에 나누어 단일 장치 용량을 넘는 모델을 실행하는 방식이다.</span></li>
 <li data-article-id="model-merging"><a href="/wiki/model-merging/">모델 병합</a><span class="wiki-index-summary">모델 병합은 같은 기반에서 학습된 여러 모델의 가중치나 업데이트를 결합해 하나의 모델을 만드는 방법이다.</span></li>
+<li data-article-id="model-security-disclosure"><a href="/wiki/model-security-disclosure/">모델 보안 취약점 공개</a><span class="wiki-index-summary">모델 보안 취약점 공개는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-replica"><a href="/wiki/model-replica/">모델 복제본</a><span class="wiki-index-summary">모델 복제본은 같은 모델 버전과 설정을 독립 프로세스나 장치에 적재한 추론 서비스 인스턴스다.</span></li>
 <li data-article-id="model-collapse"><a href="/wiki/model-collapse/">모델 붕괴</a><span class="wiki-index-summary">모델 붕괴는 생성 모델이 만든 합성 데이터가 반복적으로 다음 세대 학습에 섞일 때 원래 분포의 다양성과 희귀 사건을 잃으며 성능이 퇴화하는 현상이다.</span></li>
 <li data-article-id="model-denial-of-service"><a href="/wiki/model-denial-of-service/">모델 서비스 거부 공격</a><span class="wiki-index-summary">모델 서비스 거부 공격은 긴 입력, 반복 요청 또는 계산량이 큰 패턴으로 추론 자원을 고갈시켜 정상 사용을 방해하는 공격이다.</span></li>
 <li data-article-id="model-serving"><a href="/wiki/model-serving/">모델 서빙</a><span class="wiki-index-summary">모델 서빙은 학습된 모델을 요청 가능한 서비스로 배치해 입력 전처리, 추론, 출력 후처리와 운영 관측을 제공하는 체계다.</span></li>
 <li data-article-id="model-serving-platform"><a href="/wiki/model-serving-platform/">모델 서빙 플랫폼</a><span class="wiki-index-summary">모델 서빙 플랫폼은 모델 아티팩트를 버전된 추론 엔드포인트로 배포하고 확장·관측·수명주기를 관리하는 기반 시스템이다.</span></li>
+<li data-article-id="model-selection-policy"><a href="/wiki/model-selection-policy/">모델 선택 정책</a><span class="wiki-index-summary">모델 선택 정책은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="model-artifact-signing"><a href="/wiki/model-artifact-signing/">모델 아티팩트 서명</a><span class="wiki-index-summary">모델 아티팩트 서명은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-artifact-format"><a href="/wiki/model-artifact-format/">모델 아티팩트 형식</a><span class="wiki-index-summary">모델 구조와 파라미터 또는 관련 메타데이터를 파일로 표현하기 위한 직렬화 규약과 컨테이너 형식이다.</span></li>
+<li data-article-id="model-abuse-case-library"><a href="/wiki/model-abuse-case-library/">모델 악용 사례 라이브러리</a><span class="wiki-index-summary">모델 악용 사례 라이브러리는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-memorization"><a href="/wiki/model-memorization/">모델 암기</a><span class="wiki-index-summary">모델 암기는 학습 사례의 고유한 문자열이나 정보를 일반 규칙으로 추상화하지 않고 재현할 수 있게 저장한 현상이다.</span></li>
 <li data-article-id="model-update"><a href="/wiki/model-update/">모델 업데이트</a><span class="wiki-index-summary">운영 중인 모델이나 그 구성 요소를 새로운 버전으로 교체해 성능, 안전성, 비용 또는 호환성을 개선하는 변경이다.</span></li>
+<li data-article-id="model-capability-profile"><a href="/wiki/model-capability-profile/">모델 역량 프로파일</a><span class="wiki-index-summary">모델 역량 프로파일은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-inversion"><a href="/wiki/model-inversion/">모델 역추론 공격</a><span class="wiki-index-summary">모델 역추론 공격은 모델 출력과 접근 가능한 정보를 이용해 입력의 민감한 속성이나 대표적인 학습 특징을 복원하려는 공격이다.</span></li>
 <li data-article-id="model-poisoning"><a href="/wiki/model-poisoning/">모델 오염</a><span class="wiki-index-summary">공격자가 모델 가중치, 체크포인트 또는 학습·배포 아티팩트를 변조해 의도한 오작동을 심는 공급망 공격이다.</span></li>
 <li data-article-id="model-capacity"><a href="/wiki/model-capacity/">모델 용량</a><span class="wiki-index-summary">모델 용량은 주어진 구조와 파라미터가 표현하거나 구분할 수 있는 함수·패턴의 복잡성 범위다.</span></li>
 <li data-article-id="model-repository"><a href="/wiki/model-repository/">모델 저장소</a><span class="wiki-index-summary">모델 저장소는 모델 코드, 설정, 가중치와 설명 문서를 버전별로 보관하고 배포하는 저장 공간이다.</span></li>
+<li data-article-id="model-deprecation-migration"><a href="/wiki/model-deprecation-migration/">모델 종료 마이그레이션</a><span class="wiki-index-summary">모델 종료 마이그레이션은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-knowledge"><a href="/wiki/model-knowledge/">모델 지식</a><span class="wiki-index-summary">모델 지식은 학습 과정에서 매개변수와 표현에 압축되어 질의나 과제로 유도될 수 있는 사실·관계·절차 정보다.</span></li>
 <li data-article-id="model-extraction"><a href="/wiki/model-extraction/">모델 추출 공격</a><span class="wiki-index-summary">공격자가 모델 API를 반복 질의해 대상 모델의 기능, 결정 경계 또는 유사한 대체 모델을 복제하는 공격이다.</span></li>
 <li data-article-id="model-release"><a href="/wiki/model-release/">모델 출시</a><span class="wiki-index-summary">검증된 모델 버전과 관련 아티팩트를 정해진 사용자 또는 환경에서 사용할 수 있도록 승인하고 배포 가능한 상태로 발표하는 과정이다.</span></li>
@@ -384,7 +432,9 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="evaluation"><a href="/wiki/evaluation/">모델 평가</a><span class="wiki-index-summary">정해진 데이터·기준·절차로 모델이나 시스템의 품질과 위험을 측정하는 과정이다.</span></li>
 <li data-article-id="model-evaluation-report"><a href="/wiki/model-evaluation-report/">모델 평가 보고서</a><span class="wiki-index-summary">모델을 어떤 데이터와 절차, 지표로 평가했고 어떤 한계와 승인 결론을 얻었는지 기록한 검토 산출물이다.</span></li>
 <li data-article-id="model-retirement"><a href="/wiki/model-retirement/">모델 폐기</a><span class="wiki-index-summary">모델의 사용과 지원을 계획적으로 종료하고 대체 경로, 기록 보존과 접근 차단을 수행하는 수명주기 단계다.</span></li>
+<li data-article-id="model-fleet-routing"><a href="/wiki/model-fleet-routing/">모델 플릿 라우팅</a><span class="wiki-index-summary">모델 플릿 라우팅은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-hub"><a href="/wiki/model-hub/">모델 허브</a><span class="wiki-index-summary">모델·데이터셋·데모·평가 정보를 검색하고 배포하는 공유 플랫폼이다.</span></li>
+<li data-article-id="model-compatibility-matrix"><a href="/wiki/model-compatibility-matrix/">모델 호환성 행렬</a><span class="wiki-index-summary">모델 호환성 행렬은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="model-sparsity"><a href="/wiki/model-sparsity/">모델 희소성</a><span class="wiki-index-summary">모델 희소성은 가중치나 활성값 중 0 또는 사용되지 않는 요소의 비율과 구조를 나타내는 성질이다.</span></li>
 <li data-article-id="mode-collapse"><a href="/wiki/mode-collapse/">모드 붕괴</a><span class="wiki-index-summary">모드 붕괴는 생성 모델이 데이터 분포의 다양한 모드를 표현하지 못하고 소수의 유사한 출력만 반복하는 실패다.</span></li>
 <li data-article-id="momentum-optimizer"><a href="/wiki/momentum-optimizer/">모멘텀 최적화</a><span class="wiki-index-summary">모멘텀 최적화는 과거 기울기의 누적 방향을 속도 변수에 보존해 진동을 줄이고 일관된 방향의 이동을 가속하는 방법이다.</span></li>
@@ -424,6 +474,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="style-transfer"><a href="/wiki/style-transfer/">문체 변환</a><span class="wiki-index-summary">문체 변환은 원문의 핵심 의미나 내용 속성을 유지하면서 어조·격식·감정·저자적 특징 같은 스타일 속성을 바꾸는 생성 과제다.</span></li>
 <li data-article-id="mini-batch-gradient-descent"><a href="/wiki/mini-batch-gradient-descent/">미니배치 경사하강법</a><span class="wiki-index-summary">미니배치 경사하강법은 여러 사례로 구성된 작은 배치의 평균 기울기를 사용해 신경망 매개변수를 갱신하는 방식이다.</span></li>
 <li data-article-id="out-of-vocabulary-token"><a href="/wiki/out-of-vocabulary-token/">미등록 토큰</a><span class="wiki-index-summary">미등록 토큰은 입력 문자열을 토크나이저 어휘의 알려진 항목으로 표현할 수 없을 때 사용하는 대체 식별자다.</span></li>
+<li data-article-id="media-provenance-pipeline"><a href="/wiki/media-provenance-pipeline/">미디어 출처 파이프라인</a><span class="wiki-index-summary">미디어 출처 파이프라인은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="derivative"><a href="/wiki/derivative/">미분</a><span class="wiki-index-summary">입력의 작은 변화에 따라 함수 값이 얼마나 변하는지를 나타내는 연산이다.</span></li>
 <li data-article-id="fine-tuning"><a href="/wiki/fine-tuning/">미세조정</a><span class="wiki-index-summary">사전학습 모델을 특정 데이터와 목적에 맞게 추가 학습하는 과정이다.</span></li>
 <li data-article-id="sensitive-information-disclosure"><a href="/wiki/sensitive-information-disclosure/">민감정보 노출</a><span class="wiki-index-summary">민감정보 노출은 모델이나 애플리케이션이 개인정보, 비밀 키, 내부 지침 또는 보호된 문서를 허가되지 않은 사용자에게 드러내는 문제다.</span></li>
@@ -439,6 +490,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="byte-pair-encoding"><a href="/wiki/byte-pair-encoding/">바이트 페어 인코딩</a><span class="wiki-index-summary">자주 함께 나타나는 기호 쌍을 반복 병합해 서브워드 어휘를 만드는 방식이다.</span></li>
 <li data-article-id="repetition-penalty"><a href="/wiki/repetition-penalty/">반복 페널티</a><span class="wiki-index-summary">반복 페널티는 이미 생성된 토큰의 다음 단계 점수를 조정해 동일 표현의 과도한 반복을 줄이는 디코딩 제어다.</span></li>
 <li data-article-id="iterative-rag"><a href="/wiki/iterative-rag/">반복형 RAG</a><span class="wiki-index-summary">반복형 RAG는 생성 또는 평가 결과를 바탕으로 검색 질의와 문맥을 여러 차례 갱신하는 방식이다.</span></li>
+<li data-article-id="counterfactual-evaluation"><a href="/wiki/counterfactual-evaluation/">반사실 평가</a><span class="wiki-index-summary">반사실 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="directional-derivative"><a href="/wiki/directional-derivative/">방향 미분</a><span class="wiki-index-summary">방향 미분은 다변수 함수가 지정된 단위 방향으로 움직일 때 변하는 순간 비율이다.</span></li>
 <li data-article-id="bagging"><a href="/wiki/bagging/">배깅</a><span class="wiki-index-summary">배깅은 학습 데이터를 복원 추출한 여러 표본 집합에서 모델을 독립적으로 학습해 예측을 평균 또는 투표하는 앙상블 기법이다.</span></li>
 <li data-article-id="batch"><a href="/wiki/batch/">배치</a><span class="wiki-index-summary">한 번의 순전파와 역전파에서 함께 처리하는 데이터 예시의 묶음이다.</span></li>
@@ -461,15 +513,20 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="vector-projection"><a href="/wiki/vector-projection/">벡터 사영</a><span class="wiki-index-summary">벡터 사영은 한 벡터를 다른 벡터나 부분공간 방향의 성분으로 분해해 가장 가까운 점을 구하는 연산이다.</span></li>
 <li data-article-id="vector-index"><a href="/wiki/vector-index/">벡터 인덱스</a><span class="wiki-index-summary">벡터 인덱스는 임베딩 벡터를 저장하고 거리나 내적 기준으로 가까운 항목을 빠르게 검색하도록 조직한 자료구조다.</span></li>
 <li data-article-id="benchmark"><a href="/wiki/benchmark/">벤치마크</a><span class="wiki-index-summary">여러 모델이나 시스템을 비교하기 위해 고정한 과제·데이터·평가 지표의 묶음이다.</span></li>
+<li data-article-id="benchmark-refresh-policy"><a href="/wiki/benchmark-refresh-policy/">벤치마크 갱신 정책</a><span class="wiki-index-summary">벤치마크 갱신 정책은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="benchmark-dataset"><a href="/wiki/benchmark-dataset/">벤치마크 데이터셋</a><span class="wiki-index-summary">벤치마크 데이터셋은 모델이나 방법을 같은 입력과 정답 기준에서 비교하도록 고정한 평가용 데이터 모음이다.</span></li>
 <li data-article-id="benchmark-registry"><a href="/wiki/benchmark-registry/">벤치마크 레지스트리</a><span class="wiki-index-summary">벤치마크 레지스트리는 평가 과제의 데이터 버전·지표·실행 규칙·결과를 검색 가능하게 관리하는 카탈로그다.</span></li>
 <li data-article-id="benchmark-suite"><a href="/wiki/benchmark-suite/">벤치마크 모음</a><span class="wiki-index-summary">벤치마크 모음은 여러 과제·데이터셋·지표를 하나의 평가 프로토콜로 묶어 시스템의 다양한 능력을 측정하는 구성이다.</span></li>
 <li data-article-id="benchmark-contamination"><a href="/wiki/benchmark-contamination/">벤치마크 오염</a><span class="wiki-index-summary">벤치마크 오염은 평가 문제나 그 변형이 학습 데이터에 포함되어 모델이 일반화 대신 기억으로 높은 점수를 얻는 현상이다.</span></li>
 <li data-article-id="benchmark-validity"><a href="/wiki/benchmark-validity/">벤치마크 타당도</a><span class="wiki-index-summary">벤치마크 타당도는 평가 점수가 측정하려는 실제 능력이나 사용 목표를 얼마나 제대로 대표하는지를 뜻한다.</span></li>
+<li data-article-id="benchmark-retirement"><a href="/wiki/benchmark-retirement/">벤치마크 폐기</a><span class="wiki-index-summary">벤치마크 폐기는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="benchmark-saturation"><a href="/wiki/benchmark-saturation/">벤치마크 포화</a><span class="wiki-index-summary">벤치마크 포화는 많은 시스템이 평가 상한에 가까워져 점수 차이가 실제 능력 차이를 충분히 구분하지 못하는 상태다.</span></li>
 <li data-article-id="variational-autoencoder"><a href="/wiki/variational-autoencoder/">변분 오토인코더</a><span class="wiki-index-summary">변분 오토인코더는 잠재 변수의 확률분포를 추론하는 인코더와 데이터를 복원하는 디코더를 함께 학습하는 생성 모델이다.</span></li>
 <li data-article-id="parallel-tool-call"><a href="/wiki/parallel-tool-call/">병렬 도구 호출</a><span class="wiki-index-summary">병렬 도구 호출은 서로 의존하지 않는 여러 도구 요청을 동시에 실행해 전체 대기 시간을 줄이는 방식이다.</span></li>
 <li data-article-id="reward-model"><a href="/wiki/reward-model/">보상 모델</a><span class="wiki-index-summary">여러 모델 출력 중 사람의 선호에 가까운 출력을 점수화하도록 학습된 모델이다.</span></li>
+<li data-article-id="reward-model-calibration"><a href="/wiki/reward-model-calibration/">보상 모델 교정</a><span class="wiki-index-summary">보상 모델 교정은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="reward-model-drift"><a href="/wiki/reward-model-drift/">보상 모델 드리프트</a><span class="wiki-index-summary">보상 모델 드리프트는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="reward-model-ensemble"><a href="/wiki/reward-model-ensemble/">보상 모델 앙상블</a><span class="wiki-index-summary">보상 모델 앙상블은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="reward-tampering"><a href="/wiki/reward-tampering/">보상 변조</a><span class="wiki-index-summary">보상 변조는 에이전트가 과제 수행 대신 보상 계산기, 관측 또는 피드백 경로를 바꿔 높은 보상을 얻는 실패 유형이다.</span></li>
 <li data-article-id="reward-hacking"><a href="/wiki/reward-hacking/">보상 해킹</a><span class="wiki-index-summary">보상 해킹은 에이전트가 설계자의 실제 의도 대신 보상 함수의 허점이나 대리 지표를 이용해 높은 점수를 얻는 현상이다.</span></li>
 <li data-article-id="secure-aggregation"><a href="/wiki/secure-aggregation/">보안 집계</a><span class="wiki-index-summary">보안 집계는 서버가 개별 참여자의 입력을 보지 못한 채 여러 입력의 합이나 집계값만 얻도록 하는 암호 프로토콜이다.</span></li>
@@ -530,6 +587,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="pretraining"><a href="/wiki/pretraining/">사전학습</a><span class="wiki-index-summary">대규모 데이터로 일반적인 표현과 패턴을 먼저 학습하는 단계다.</span></li>
 <li data-article-id="pretraining-pipeline"><a href="/wiki/pretraining-pipeline/">사전학습 파이프라인</a><span class="wiki-index-summary">사전학습 파이프라인은 데이터 수집·정제·토큰화·혼합부터 분산 학습, 체크포인트와 평가까지 이어지는 생산 체계다.</span></li>
 <li data-article-id="prior-probability"><a href="/wiki/prior-probability/">사전확률</a><span class="wiki-index-summary">사전확률은 현재 데이터를 관측하기 전에 사건이나 매개변수에 부여하는 확률 또는 확률분포다.</span></li>
+<li data-article-id="post-training-lineage"><a href="/wiki/post-training-lineage/">사후학습 계보</a><span class="wiki-index-summary">사후학습 계보는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-data-decontamination"><a href="/wiki/post-training-data-decontamination/">사후학습 데이터 오염 제거</a><span class="wiki-index-summary">사후학습 데이터 오염 제거는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-reproducibility"><a href="/wiki/post-training-reproducibility/">사후학습 재현성</a><span class="wiki-index-summary">사후학습 재현성은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-ablation"><a href="/wiki/post-training-ablation/">사후학습 제거 실험</a><span class="wiki-index-summary">사후학습 제거 실험은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="post-training-checkpoint-selection"><a href="/wiki/post-training-checkpoint-selection/">사후학습 체크포인트 선택</a><span class="wiki-index-summary">사후학습 체크포인트 선택은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="posterior-probability"><a href="/wiki/posterior-probability/">사후확률</a><span class="wiki-index-summary">사후확률은 관측 데이터가 주어진 뒤 베이즈 정리에 따라 갱신된 사건 또는 매개변수의 확률이다.</span></li>
 <li data-article-id="right-to-deletion"><a href="/wiki/right-to-deletion/">삭제권</a><span class="wiki-index-summary">삭제권은 적용 법률과 예외 조건 아래에서 개인이 자신과 관련된 데이터의 삭제를 요구할 수 있는 권리다.</span></li>
 <li data-article-id="correlation"><a href="/wiki/correlation/">상관관계</a><span class="wiki-index-summary">상관관계는 두 변수의 선형 동행 정도를 각 표준편차로 정규화해 단위 없이 나타낸 값이다.</span></li>
@@ -563,7 +625,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="linear-regression"><a href="/wiki/linear-regression/">선형 회귀</a><span class="wiki-index-summary">선형 회귀는 목표값을 입력 특성의 가중합과 절편으로 표현해 연속값을 추정하는 회귀 모형이다.</span></li>
 <li data-article-id="linear-layer"><a href="/wiki/linear-layer/">선형층</a><span class="wiki-index-summary">선형층은 입력 벡터에 학습 가능한 행렬과 편향을 적용해 아핀 변환을 수행하는 층이다.</span></li>
 <li data-article-id="preference-data"><a href="/wiki/preference-data/">선호 데이터</a><span class="wiki-index-summary">선호 데이터는 동일하거나 관련된 입력에 대한 여러 출력의 비교, 순위 또는 점수로 어떤 응답이 더 나은지 기록한 자료다.</span></li>
+<li data-article-id="preference-data-governance"><a href="/wiki/preference-data-governance/">선호 데이터 거버넌스</a><span class="wiki-index-summary">선호 데이터 거버넌스는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="preference-shift-monitoring"><a href="/wiki/preference-shift-monitoring/">선호 변화 관측</a><span class="wiki-index-summary">선호 변화 관측은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="preference-loss"><a href="/wiki/preference-loss/">선호 손실</a><span class="wiki-index-summary">선호 손실은 같은 입력에 대한 선호 출력과 비선호 출력의 상대 점수를 학습하도록 구성한 목적 함수다.</span></li>
+<li data-article-id="preference-pair-quality"><a href="/wiki/preference-pair-quality/">선호 쌍 품질</a><span class="wiki-index-summary">선호 쌍 품질은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="explainable-ai"><a href="/wiki/explainable-ai/">설명 가능한 AI</a><span class="wiki-index-summary">설명 가능한 AI는 모델의 예측이나 행동을 사람이 이해하고 검토할 수 있는 형태의 이유와 증거로 제시하려는 방법과 연구 분야다.</span></li>
 <li data-article-id="reflection-loop"><a href="/wiki/reflection-loop/">성찰 루프</a><span class="wiki-index-summary">성찰 루프는 에이전트가 직전 시도의 결과와 오류를 검토해 다음 계획이나 답변을 수정하는 반복 제어 구조다.</span></li>
 <li data-article-id="world-model"><a href="/wiki/world-model/">세계 모델</a><span class="wiki-index-summary">세계 모델은 환경 상태와 행동에 따른 다음 상태·관측·보상을 내부적으로 예측하는 학습된 표현 또는 생성 모델이다.</span></li>
@@ -586,9 +651,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="numerical-precision"><a href="/wiki/numerical-precision/">수치 정밀도</a><span class="wiki-index-summary">수치 정밀도는 유한한 비트 표현이 실수를 구분하고 계산 결과를 유지할 수 있는 세밀함의 정도다.</span></li>
 <li data-article-id="learning-to-rank"><a href="/wiki/learning-to-rank/">순위 학습</a><span class="wiki-index-summary">순위 학습은 관련성 라벨이나 사용자 선호를 이용해 질의별 후보의 정렬 함수를 학습하는 방법군이다.</span></li>
 <li data-article-id="forward-pass"><a href="/wiki/forward-pass/">순전파</a><span class="wiki-index-summary">신경망 입력을 첫 층부터 마지막 층까지 순서대로 계산해 예측과 중간 활성화를 얻는 과정이다.</span></li>
+<li data-article-id="sequential-evaluation"><a href="/wiki/sequential-evaluation/">순차 평가</a><span class="wiki-index-summary">순차 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="recurrent-memory-transformer"><a href="/wiki/recurrent-memory-transformer/">순환 메모리 트랜스포머</a><span class="wiki-index-summary">순환 메모리 트랜스포머는 긴 입력을 구간별로 처리하면서 학습 가능한 메모리 토큰을 다음 구간에 반복 전달하는 구조다.</span></li>
 <li data-article-id="recurrent-neural-network"><a href="/wiki/recurrent-neural-network/">순환 신경망</a><span class="wiki-index-summary">순환 신경망은 이전 시점의 은닉 상태를 다음 시점 계산에 사용해 시퀀스 의존성을 표현하는 신경망이다.</span></li>
 <li data-article-id="recurrent-language-model-memory"><a href="/wiki/recurrent-language-model-memory/">순환형 언어 모델 메모리</a><span class="wiki-index-summary">순환형 언어 모델 메모리는 이전 구간의 내부 상태나 압축 표현을 다음 구간 계산에 반복 전달하는 장문맥 메커니즘이다.</span></li>
+<li data-article-id="shadow-evaluation"><a href="/wiki/shadow-evaluation/">쉐도 평가</a><span class="wiki-index-summary">쉐도 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="switch-transformer"><a href="/wiki/switch-transformer/">스위치 트랜스포머</a><span class="wiki-index-summary">Switch Transformer는 각 토큰을 여러 전문가 중 하나에 보내는 희소 혼합전문가 피드포워드 층을 사용한 트랜스포머다.</span></li>
 <li data-article-id="scalar"><a href="/wiki/scalar/">스칼라</a><span class="wiki-index-summary">벡터 공간의 벡터를 확대·축소하거나 계산의 단일 값을 나타내는 수학적 원소다.</span></li>
 <li data-article-id="scaled-dot-product-attention"><a href="/wiki/scaled-dot-product-attention/">스케일드 닷프로덕트 어텐션</a><span class="wiki-index-summary">스케일드 닷프로덕트 어텐션은 질의와 키의 내적을 키 차원의 제곱근으로 나눈 뒤 소프트맥스를 적용해 값의 가중합을 구한다.</span></li>
@@ -596,11 +663,14 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="schema-validation"><a href="/wiki/schema-validation/">스키마 검증</a><span class="wiki-index-summary">스키마 검증은 입력이나 출력 데이터가 선언된 구조·자료형·제약을 만족하는지 실행 전에 확인하는 절차다.</span></li>
 <li data-article-id="streaming-generation"><a href="/wiki/streaming-generation/">스트리밍 생성</a><span class="wiki-index-summary">스트리밍 생성은 모델이 전체 응답을 완성하기 전에 생성된 토큰이나 조각을 순차적으로 클라이언트에 전달하는 방식이다.</span></li>
 <li data-article-id="streaming-response"><a href="/wiki/streaming-response/">스트리밍 응답</a><span class="wiki-index-summary">전체 결과가 완성되기 전에 생성된 일부 데이터를 순차적으로 전송하는 방식이다.</span></li>
+<li data-article-id="streaming-response-contract"><a href="/wiki/streaming-response-contract/">스트리밍 응답 계약</a><span class="wiki-index-summary">스트리밍 응답 계약은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="stream-resume-protocol"><a href="/wiki/stream-resume-protocol/">스트림 재개 프로토콜</a><span class="wiki-index-summary">스트림 재개 프로토콜은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="spiking-neural-network"><a href="/wiki/spiking-neural-network/">스파이킹 신경망</a><span class="wiki-index-summary">스파이킹 신경망은 뉴런이 연속 활성값 대신 시간에 따른 이산 스파이크를 주고받도록 모델링한 신경망이다.</span></li>
 <li data-article-id="spectral-normalization"><a href="/wiki/spectral-normalization/">스펙트럴 정규화</a><span class="wiki-index-summary">스펙트럴 정규화는 가중치 행렬을 가장 큰 특이값으로 나누어 층의 립시츠 상한을 제한하는 정규화 방법이다.</span></li>
 <li data-article-id="spectrogram"><a href="/wiki/spectrogram/">스펙트로그램</a><span class="wiki-index-summary">스펙트로그램은 오디오 신호의 주파수 성분 세기가 시간에 따라 어떻게 변하는지를 2차원 배열로 나타낸 표현이다.</span></li>
 <li data-article-id="sliding-window-attention"><a href="/wiki/sliding-window-attention/">슬라이딩 윈도 어텐션</a><span class="wiki-index-summary">슬라이딩 윈도 어텐션은 각 위치가 일정한 앞뒤 또는 이전 토큰 창에만 주의를 주도록 창을 이동시키는 희소 패턴이다.</span></li>
 <li data-article-id="sliding-context-window"><a href="/wiki/sliding-context-window/">슬라이딩 컨텍스트 윈도우</a><span class="wiki-index-summary">슬라이딩 컨텍스트 윈도우는 긴 시퀀스를 처리할 때 최근 또는 인접한 일정 범위의 토큰만 주의 대상으로 유지하는 방식이다.</span></li>
+<li data-article-id="slice-based-release-gate"><a href="/wiki/slice-based-release-gate/">슬라이스 기반 릴리스 게이트</a><span class="wiki-index-summary">슬라이스 기반 릴리스 게이트는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="win-rate"><a href="/wiki/win-rate/">승률</a><span class="wiki-index-summary">승률은 두 모델이나 방법을 쌍대 비교했을 때 한쪽이 더 낫다고 판정된 비율이다.</span></li>
 <li data-article-id="visual-grounding"><a href="/wiki/visual-grounding/">시각 근거화</a><span class="wiki-index-summary">자연어 표현이 가리키는 이미지 영역이나 객체를 좌표, 상자 또는 마스크로 연결하는 과제다.</span></li>
 <li data-article-id="visual-document-retrieval"><a href="/wiki/visual-document-retrieval/">시각 문서 검색</a><span class="wiki-index-summary">시각 문서 검색은 질의와 관련된 문서 페이지를 텍스트 내용뿐 아니라 배치·도형·시각 표현을 이용해 찾는 검색 방식이다.</span></li>
@@ -614,6 +684,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="demonstration-example"><a href="/wiki/demonstration-example/">시범 예시</a><span class="wiki-index-summary">시범 예시는 언어 모델 문맥 안에서 원하는 입력-출력 관계나 작업 수행 방식을 보여 주는 하나의 예제다.</span></li>
 <li data-article-id="system-card"><a href="/wiki/system-card/">시스템 카드</a><span class="wiki-index-summary">시스템 카드는 개별 모델을 넘어 배포된 AI 시스템의 구성, 능력 평가, 안전 조치와 잔여 위험을 설명하는 문서다.</span></li>
 <li data-article-id="system-prompt"><a href="/wiki/system-prompt/">시스템 프롬프트</a><span class="wiki-index-summary">시스템 프롬프트는 대화형 언어 모델에 역할, 전역 규칙, 도구 사용과 응답 경계를 우선 문맥으로 제공하는 지시 메시지다.</span></li>
+<li data-article-id="system-prompt-composition"><a href="/wiki/system-prompt-composition/">시스템 프롬프트 합성</a><span class="wiki-index-summary">시스템 프롬프트 합성은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="beginning-end-token"><a href="/wiki/beginning-end-token/">시작·종료 토큰</a><span class="wiki-index-summary">시작·종료 토큰은 시퀀스의 시작과 끝 경계를 모델에 명시하는 특수 토큰이다.</span></li>
 <li data-article-id="sequence-classification-fine-tuning"><a href="/wiki/sequence-classification-fine-tuning/">시퀀스 분류 미세조정</a><span class="wiki-index-summary">시퀀스 분류 미세조정은 사전학습 모델의 문장·문서 표현에 분류기를 연결해 범주 예측 과제에 맞게 매개변수를 갱신하는 과정이다.</span></li>
 <li data-article-id="sequence-likelihood"><a href="/wiki/sequence-likelihood/">시퀀스 우도</a><span class="wiki-index-summary">시퀀스 우도는 모델이 관측된 토큰열에 부여하는 결합확률이며 각 토큰의 조건부 확률 곱으로 계산할 수 있다.</span></li>
@@ -646,6 +717,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <h2 id="index-ko-ss">ㅆ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="pairwise-comparison"><a href="/wiki/pairwise-comparison/">쌍대 비교</a><span class="wiki-index-summary">쌍대 비교는 두 후보를 동시에 제시하고 어느 쪽이 기준에 더 부합하는지 선택하게 하는 평가 방식이다.</span></li>
+<li data-article-id="pairwise-evaluation-design"><a href="/wiki/pairwise-evaluation-design/">쌍대 비교 평가 설계</a><span class="wiki-index-summary">쌍대 비교 평가 설계는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pairwise-preference-ranking"><a href="/wiki/pairwise-preference-ranking/">쌍대 선호 순위화</a><span class="wiki-index-summary">쌍대 선호 순위화는 두 후보 중 선호되는 항목을 관측해 전체 후보의 상대적 품질이나 보상 함수를 학습하는 방식이다.</span></li>
 <li data-article-id="pairwise-llm-judge"><a href="/wiki/pairwise-llm-judge/">쌍대 LLM 심사</a><span class="wiki-index-summary">쌍대 LLM 심사은 평가 모델이 두 후보 응답을 나란히 비교해 더 나은 쪽이나 동률을 선택하는 방식이다.</span></li>
 </ul>
@@ -657,7 +729,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="artifact-registry"><a href="/wiki/artifact-registry/">아티팩트 레지스트리</a><span class="wiki-index-summary">아티팩트 레지스트리는 모델·컨테이너·데이터 패키지 같은 빌드 산출물을 식별자와 버전으로 관리하는 서비스다.</span></li>
 <li data-article-id="saddle-point"><a href="/wiki/saddle-point/">안장점</a><span class="wiki-index-summary">안장점은 어떤 방향에서는 함수가 증가하고 다른 방향에서는 감소해 국소 최소나 최대가 아닌 정지점이다.</span></li>
 <li data-article-id="safety-benchmark"><a href="/wiki/safety-benchmark/">안전 벤치마크</a><span class="wiki-index-summary">안전 벤치마크는 유해 출력, 편향, 보안 취약성이나 거부 행동 등 모델의 위험 관련 특성을 측정하는 평가다.</span></li>
+<li data-article-id="safety-assurance-argument"><a href="/wiki/safety-assurance-argument/">안전 보증 논증</a><span class="wiki-index-summary">안전 보증 논증은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="safety-exception-process"><a href="/wiki/safety-exception-process/">안전 예외 처리 절차</a><span class="wiki-index-summary">안전 예외 처리 절차는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="safety-policy-versioning"><a href="/wiki/safety-policy-versioning/">안전 정책 버전 관리</a><span class="wiki-index-summary">안전 정책 버전 관리는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="safety-evaluation"><a href="/wiki/safety-evaluation/">안전 평가</a><span class="wiki-index-summary">안전 평가는 AI 시스템이 정의된 위해·오용·정책 위반 상황에서 얼마나 위험한 결과를 만들고 통제가 작동하는지 측정하는 과정이다.</span></li>
+<li data-article-id="safety-case"><a href="/wiki/safety-case/">안전성 논증서</a><span class="wiki-index-summary">안전성 논증서는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="insecure-output-handling"><a href="/wiki/insecure-output-handling/">안전하지 않은 출력 처리</a><span class="wiki-index-summary">안전하지 않은 출력 처리는 언어 모델의 출력을 검증 없이 코드, 쿼리, HTML 또는 외부 명령으로 실행해 취약점이 생기는 문제다.</span></li>
 <li data-article-id="algorithm"><a href="/wiki/algorithm/">알고리즘</a><span class="wiki-index-summary">문제를 해결하기 위해 입력을 처리하는 유한하고 명확한 절차다.</span></li>
 <li data-article-id="algorithmic-audit"><a href="/wiki/algorithmic-audit/">알고리즘 감사</a><span class="wiki-index-summary">알고리즘 감사는 AI 시스템의 설계, 데이터, 성능, 통제와 운영이 정한 기준을 충족하는지 독립적으로 조사하는 활동이다.</span></li>
@@ -671,6 +747,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="bidirectional-attention"><a href="/wiki/bidirectional-attention/">양방향 어텐션</a><span class="wiki-index-summary">양방향 어텐션은 각 토큰이 시퀀스의 앞과 뒤 모든 허용 위치를 함께 참고하도록 하는 어텐션 패턴이다.</span></li>
 <li data-article-id="quantization"><a href="/wiki/quantization/">양자화</a><span class="wiki-index-summary">가중치와 활성값을 낮은 정밀도로 표현해 메모리와 계산 비용을 줄이는 기법이다.</span></li>
 <li data-article-id="quantization-aware-training"><a href="/wiki/quantization-aware-training/">양자화 인식 학습</a><span class="wiki-index-summary">양자화 인식 학습은 학습 중 낮은 비트 양자화의 반올림과 범위를 모사해 양자화 후 정확도 저하를 줄이는 방법이다.</span></li>
+<li data-article-id="adapter-serving"><a href="/wiki/adapter-serving/">어댑터 서빙</a><span class="wiki-index-summary">어댑터 서빙은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="adapter-layer"><a href="/wiki/adapter-layer/">어댑터 층</a><span class="wiki-index-summary">어댑터 층은 사전학습 모델의 본체를 대부분 고정한 채 층 사이에 삽입해 과제별로 학습하는 작은 병목 모듈이다.</span></li>
 <li data-article-id="attention"><a href="/wiki/attention/">어텐션</a><span class="wiki-index-summary">현재 표현을 만들 때 입력의 각 부분에 서로 다른 중요도를 부여해 정보를 결합하는 연산이다.</span></li>
 <li data-article-id="attention-complexity"><a href="/wiki/attention-complexity/">어텐션 계산 복잡도</a><span class="wiki-index-summary">어텐션 계산 복잡도는 시퀀스 길이, 헤드 차원과 배치 크기에 따라 어텐션이 요구하는 연산과 메모리의 증가율이다.</span></li>
@@ -693,20 +770,38 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-index-summary">복잡한 에이전트 과제를 실행 가능하고 검증 가능한 하위 과제로 나누고 의존 관계를 정하는 과정이다.</span></li>
 <li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공률은 주어진 목표의 필수 완료 조건과 제약을 모두 만족한 독립 실행이 전체 시도에서 차지하는 비율이다.</span></li>
 <li data-article-id="agent-trajectory-evaluation"><a href="/wiki/agent-trajectory-evaluation/">에이전트 궤적 평가</a><span class="wiki-index-summary">에이전트 궤적 평가는 최종 답뿐 아니라 관측·추론·도구 호출·상태 전환으로 이어지는 실행 경로의 품질을 판정하는 방법이다.</span></li>
+<li data-article-id="agent-step-budget"><a href="/wiki/agent-step-budget/">에이전트 단계 예산</a><span class="wiki-index-summary">에이전트 단계 예산은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="short-term-agent-memory"><a href="/wiki/short-term-agent-memory/">에이전트 단기 기억</a><span class="wiki-index-summary">에이전트 단기 기억은 한 세션이나 인접한 작업 단계 사이에서 최근 대화와 행동 결과를 유지하는 임시 기억 계층이다.</span></li>
 <li data-article-id="agent-tool"><a href="/wiki/agent-tool/">에이전트 도구</a><span class="wiki-index-summary">에이전트 도구는 모델이 외부 정보 조회나 상태 변경을 수행할 수 있도록 명세된 함수·API·실행 환경이다.</span></li>
+<li data-article-id="agent-tool-retry-policy"><a href="/wiki/agent-tool-retry-policy/">에이전트 도구 재시도 정책</a><span class="wiki-index-summary">에이전트 도구 재시도 정책은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-tool-accuracy"><a href="/wiki/agent-tool-accuracy/">에이전트 도구 정확도</a><span class="wiki-index-summary">에이전트 도구 정확도는 적절한 도구 선택, 인수 구성, 호출 시점과 결과 해석이 기준에 맞는 정도다.</span></li>
+<li data-article-id="agent-tool-timeout-budget"><a href="/wiki/agent-tool-timeout-budget/">에이전트 도구 타임아웃 예산</a><span class="wiki-index-summary">에이전트 도구 타임아웃 예산은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-tool-transaction"><a href="/wiki/agent-tool-transaction/">에이전트 도구 트랜잭션</a><span class="wiki-index-summary">에이전트 도구 트랜잭션은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-runtime"><a href="/wiki/agent-runtime/">에이전트 런타임</a><span class="wiki-index-summary">에이전트 런타임은 모델 호출, 도구 실행, 상태 보존, 오류 복구와 관측 기록을 실제로 수행하는 실행 환경이다.</span></li>
 <li data-article-id="agent-loop"><a href="/wiki/agent-loop/">에이전트 루프</a><span class="wiki-index-summary">관찰·추론·행동·결과 반영을 목표 달성까지 반복하는 실행 구조다.</span></li>
+<li data-article-id="agent-loop-watchdog"><a href="/wiki/agent-loop-watchdog/">에이전트 루프 감시기</a><span class="wiki-index-summary">에이전트 루프 감시기는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-memory"><a href="/wiki/agent-memory/">에이전트 메모리</a><span class="wiki-index-summary">에이전트가 이전 상호작용과 작업 상태를 저장하고 이후 판단에 사용하는 구조다.</span></li>
+<li data-article-id="agent-memory-retention"><a href="/wiki/agent-memory-retention/">에이전트 메모리 보유</a><span class="wiki-index-summary">에이전트 메모리 보유는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-memory-consistency"><a href="/wiki/agent-memory-consistency/">에이전트 메모리 일관성</a><span class="wiki-index-summary">에이전트 메모리 일관성은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-idempotency"><a href="/wiki/agent-idempotency/">에이전트 멱등성</a><span class="wiki-index-summary">에이전트 멱등성은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-goal"><a href="/wiki/agent-goal/">에이전트 목표</a><span class="wiki-index-summary">에이전트가 도달하거나 유지하려는 바람직한 상태를 성공 조건과 제약으로 표현한 것이다.</span></li>
+<li data-article-id="agent-context-handoff"><a href="/wiki/agent-context-handoff/">에이전트 문맥 핸드오프</a><span class="wiki-index-summary">에이전트 문맥 핸드오프는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-benchmark"><a href="/wiki/agent-benchmark/">에이전트 벤치마크</a><span class="wiki-index-summary">에이전트 벤치마크는 계획·도구 사용·상태 관리가 필요한 과제와 성공 판정 환경을 묶어 에이전트 성능을 비교하는 평가 체계다.</span></li>
+<li data-article-id="agent-compensation-transaction"><a href="/wiki/agent-compensation-transaction/">에이전트 보상 트랜잭션</a><span class="wiki-index-summary">에이전트 보상 트랜잭션은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-security"><a href="/wiki/agent-security/">에이전트 보안</a><span class="wiki-index-summary">에이전트 보안은 자율 실행 시스템의 모델·메모리·도구·자격증명·통신과 공급망을 공격과 오용에서 보호하는 활동이다.</span></li>
+<li data-article-id="agent-side-effect-control"><a href="/wiki/agent-side-effect-control/">에이전트 부수 효과 제어</a><span class="wiki-index-summary">에이전트 부수 효과 제어는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-incident-playbook"><a href="/wiki/agent-incident-playbook/">에이전트 사고 대응 절차</a><span class="wiki-index-summary">에이전트 사고 대응 절차는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-human-approval-gate"><a href="/wiki/agent-human-approval-gate/">에이전트 사람 승인 게이트</a><span class="wiki-index-summary">에이전트 사람 승인 게이트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-state-machine"><a href="/wiki/agent-state-machine/">에이전트 상태 기계</a><span class="wiki-index-summary">에이전트 상태 기계는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-escalation-policy"><a href="/wiki/agent-escalation-policy/">에이전트 상향 보고 정책</a><span class="wiki-index-summary">에이전트 상향 보고 정책은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-sandbox"><a href="/wiki/agent-sandbox/">에이전트 샌드박스</a><span class="wiki-index-summary">에이전트 샌드박스는 에이전트가 실행하는 코드와 도구의 파일·네트워크·프로세스 접근을 격리하는 환경이다.</span></li>
 <li data-article-id="agent-reflection"><a href="/wiki/agent-reflection/">에이전트 성찰</a><span class="wiki-index-summary">에이전트 성찰은 직전 추론 과정이나 결과를 평가해 오류, 누락과 더 나은 다음 행동을 찾아내는 절차다.</span></li>
 <li data-article-id="agent-deliberation"><a href="/wiki/agent-deliberation/">에이전트 숙고</a><span class="wiki-index-summary">에이전트 숙고는 행동을 즉시 실행하지 않고 대안·근거·위험을 비교해 선택을 정교화하는 의사결정 단계다.</span></li>
 <li data-article-id="agent-swarm"><a href="/wiki/agent-swarm/">에이전트 스웜</a><span class="wiki-index-summary">에이전트 스웜은 다수의 비교적 자율적인 에이전트가 지역 정보와 단순한 상호작용 규칙으로 공동 문제를 푸는 구성이다.</span></li>
 <li data-article-id="agent-scratchpad"><a href="/wiki/agent-scratchpad/">에이전트 스크래치패드</a><span class="wiki-index-summary">에이전트 스크래치패드는 한 과제를 푸는 동안 임시 계산, 도구 결과, 다음 행동 후보를 유지하는 작업 공간이다.</span></li>
+<li data-article-id="agent-simulation-test"><a href="/wiki/agent-simulation-test/">에이전트 시뮬레이션 테스트</a><span class="wiki-index-summary">에이전트 시뮬레이션 테스트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-run-contract"><a href="/wiki/agent-run-contract/">에이전트 실행 계약</a><span class="wiki-index-summary">에이전트 실행 계약은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-run-replay"><a href="/wiki/agent-run-replay/">에이전트 실행 재현</a><span class="wiki-index-summary">에이전트 실행 재현은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-executor"><a href="/wiki/agent-executor/">에이전트 실행기</a><span class="wiki-index-summary">에이전트 실행기는 계획에 적힌 작업을 실제 모델 호출, 도구 호출 또는 외부 작업으로 변환하는 구성 요소다.</span></li>
 <li data-article-id="agent-role"><a href="/wiki/agent-role/">에이전트 역할</a><span class="wiki-index-summary">에이전트 역할은 다중 에이전트 시스템에서 한 에이전트가 맡을 책임, 사용 가능한 도구와 의사결정 범위를 정의한 규약이다.</span></li>
 <li data-article-id="agent-delegation"><a href="/wiki/agent-delegation/">에이전트 위임</a><span class="wiki-index-summary">에이전트 위임은 상위 에이전트가 목표의 일부와 필요한 권한·제약을 다른 에이전트에게 맡기는 작업 분배 방식이다.</span></li>
@@ -720,10 +815,14 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="agent-control-loop"><a href="/wiki/agent-control-loop/">에이전트 제어 루프</a><span class="wiki-index-summary">에이전트 제어 루프는 관찰, 상태 갱신, 계획, 행동, 결과 평가를 반복해 목표를 향해 진행하는 실행 순환이다.</span></li>
 <li data-article-id="agent-coordination"><a href="/wiki/agent-coordination/">에이전트 조정</a><span class="wiki-index-summary">에이전트 조정은 여러 에이전트의 작업 순서, 자원 사용과 상호 의존성을 맞춰 충돌과 중복을 줄이는 제어 활동이다.</span></li>
 <li data-article-id="agent-termination-condition"><a href="/wiki/agent-termination-condition/">에이전트 종료 조건</a><span class="wiki-index-summary">에이전트 종료 조건은 목표 달성, 실패 확정, 예산 소진 또는 사람 개입 필요성을 근거로 실행 루프를 멈추는 판정 규칙이다.</span></li>
+<li data-article-id="agent-least-privilege"><a href="/wiki/agent-least-privilege/">에이전트 최소 권한</a><span class="wiki-index-summary">에이전트 최소 권한은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-trace-evaluation"><a href="/wiki/agent-trace-evaluation/">에이전트 추적 평가</a><span class="wiki-index-summary">에이전트 추적 평가는 관측·계획·도구 호출·결과·상태 전환으로 이어지는 실행 기록을 단계별로 분석하는 평가 방법이다.</span></li>
+<li data-article-id="agent-canary-run"><a href="/wiki/agent-canary-run/">에이전트 카나리 실행</a><span class="wiki-index-summary">에이전트 카나리 실행은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-chaos-testing"><a href="/wiki/agent-chaos-testing/">에이전트 카오스 테스트</a><span class="wiki-index-summary">에이전트 카오스 테스트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-evaluation"><a href="/wiki/agent-evaluation/">에이전트 평가</a><span class="wiki-index-summary">에이전트 평가는 자율 시스템의 최종 결과뿐 아니라 계획, 도구 사용, 상태 관리, 복구와 안전한 중단 능력을 측정하는 과정이다.</span></li>
 <li data-article-id="agent-harness"><a href="/wiki/agent-harness/">에이전트 하네스</a><span class="wiki-index-summary">에이전트 하네스는 언어 모델 주위에 프롬프트, 도구, 메모리, 정책과 평가기를 결합한 실행 골격이다.</span></li>
 <li data-article-id="agent-handoff"><a href="/wiki/agent-handoff/">에이전트 핸드오프</a><span class="wiki-index-summary">에이전트 핸드오프는 한 에이전트가 진행 중인 작업의 책임과 필요한 문맥을 다른 에이전트에게 넘기는 전환 절차다.</span></li>
+<li data-article-id="agent-action-ledger"><a href="/wiki/agent-action-ledger/">에이전트 행동 원장</a><span class="wiki-index-summary">에이전트 행동 원장은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-collaboration"><a href="/wiki/agent-collaboration/">에이전트 협업</a><span class="wiki-index-summary">에이전트 협업은 서로 다른 능력이나 정보를 가진 에이전트들이 공동 목표를 위해 산출물과 피드백을 주고받는 과정이다.</span></li>
 <li data-article-id="agentic-rag"><a href="/wiki/agentic-rag/">에이전트형 RAG</a><span class="wiki-index-summary">에이전트형 RAG는 에이전트가 검색 필요성, 질의, 도구, 반복과 답변 검증을 동적으로 결정하는 검색 증강 생성 방식이다.</span></li>
 <li data-article-id="echo-state-network"><a href="/wiki/echo-state-network/">에코 상태 네트워크</a><span class="wiki-index-summary">에코 상태 네트워크는 고정된 희소 순환 저장소가 입력의 시간적 흔적을 만들고 출력층만 학습하는 저장소 컴퓨팅 모형이다.</span></li>
@@ -732,6 +831,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="edge-model-deployment"><a href="/wiki/edge-model-deployment/">엣지 모델 배포</a><span class="wiki-index-summary">엣지 모델 배포는 데이터가 생성되는 장치나 가까운 게이트웨이에 모델을 설치해 로컬에서 추론하는 방식이다.</span></li>
 <li data-article-id="edge-inference"><a href="/wiki/edge-inference/">엣지 추론</a><span class="wiki-index-summary">엣지 추론은 센서·모바일·현장 장치처럼 데이터 생성 지점 가까이에서 모델 예측을 수행하는 방식이다.</span></li>
 <li data-article-id="edge-ai"><a href="/wiki/edge-ai/">엣지 AI</a><span class="wiki-index-summary">엣지 AI는 데이터가 생성되는 단말이나 가까운 게이트웨이에서 모델 추론 또는 일부 학습을 수행하는 방식이다.</span></li>
+<li data-article-id="capability-regression"><a href="/wiki/capability-regression/">역량 회귀</a><span class="wiki-index-summary">역량 회귀는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="historical-bias"><a href="/wiki/historical-bias/">역사적 편향</a><span class="wiki-index-summary">역사적 편향은 데이터가 정확히 측정되었더라도 과거 사회의 불평등과 제도적 차별이 목표와 패턴에 반영된 상태다.</span></li>
 <li data-article-id="inverted-index"><a href="/wiki/inverted-index/">역색인</a><span class="wiki-index-summary">역색인은 각 용어나 토큰에서 그것이 등장한 문서와 위치 목록으로 연결하는 검색 자료구조다.</span></li>
 <li data-article-id="reciprocal-rank-fusion"><a href="/wiki/reciprocal-rank-fusion/">역순위 결합</a><span class="wiki-index-summary">역순위 결합은 여러 검색 결과에서 문서의 순위 역수 점수를 합해 하나의 순위로 합치는 비지도 융합 방법이다.</span></li>
@@ -745,6 +845,8 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="compute-bound-workload"><a href="/wiki/compute-bound-workload/">연산 집약 작업</a><span class="wiki-index-summary">연산 집약 작업은 실행 시간이 메모리 전송보다 계산 처리량에 주로 제한되는 작업이다.</span></li>
 <li data-article-id="operator-fusion"><a href="/wiki/operator-fusion/">연산자 융합</a><span class="wiki-index-summary">연산자 융합은 연속된 여러 고수준 연산을 하나의 실행 단위로 결합해 중간 메모리 이동과 실행 오버헤드를 줄이는 최적화다.</span></li>
 <li data-article-id="continuous-batching"><a href="/wiki/continuous-batching/">연속 배칭</a><span class="wiki-index-summary">연속 배칭은 실행 중인 추론 배치에 완료된 요청을 제거하고 새 요청을 단계별로 투입해 장치 활용률을 높이는 스케줄링 방식이다.</span></li>
+<li data-article-id="continuous-batching-fairness"><a href="/wiki/continuous-batching-fairness/">연속 배칭 공정성</a><span class="wiki-index-summary">연속 배칭 공정성은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="continuous-batching-policy"><a href="/wiki/continuous-batching-policy/">연속 배칭 정책</a><span class="wiki-index-summary">연속 배칭 정책은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="continued-pretraining"><a href="/wiki/continued-pretraining/">연속 사전학습</a><span class="wiki-index-summary">연속 사전학습은 이미 사전학습된 모델을 추가 말뭉치와 자기지도 목표로 더 학습해 도메인·언어·최신 지식을 반영하는 단계다.</span></li>
 <li data-article-id="chain-rule"><a href="/wiki/chain-rule/">연쇄 법칙</a><span class="wiki-index-summary">연쇄 법칙은 합성 함수의 미분을 각 구성 함수의 미분 곱으로 계산하는 규칙이다.</span></li>
 <li data-article-id="federated-search"><a href="/wiki/federated-search/">연합 검색</a><span class="wiki-index-summary">연합 검색은 서로 다른 색인이나 검색 서비스에 질의를 분배하고 결과를 하나의 순위 목록으로 통합하는 방식이다.</span></li>
@@ -767,6 +869,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="open-source-ai-definition"><a href="/wiki/open-source-ai-definition/">오픈소스 AI 정의</a><span class="wiki-index-summary">오픈소스 AI 정의는 AI 시스템을 연구·사용·수정·공유할 수 있으려면 어떤 형태의 코드, 데이터 정보와 파라미터가 제공되어야 하는지 설명하는 기준이다.</span></li>
 <li data-article-id="online-preference-learning"><a href="/wiki/online-preference-learning/">온라인 선호 학습</a><span class="wiki-index-summary">온라인 선호 학습은 현재 정책이 새 후보를 생성하고 그에 대한 최신 선호 피드백을 받아 반복적으로 정책을 갱신하는 방식이다.</span></li>
 <li data-article-id="online-inference"><a href="/wiki/online-inference/">온라인 추론</a><span class="wiki-index-summary">온라인 추론은 사용자나 시스템의 개별 요청에 대해 짧은 지연 시간 안에 즉시 예측을 반환하는 처리 방식이다.</span></li>
+<li data-article-id="online-evaluation-drift"><a href="/wiki/online-evaluation-drift/">온라인 평가 드리프트</a><span class="wiki-index-summary">온라인 평가 드리프트는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="online-learning"><a href="/wiki/online-learning/">온라인 학습</a><span class="wiki-index-summary">온라인 학습은 데이터가 순차적으로 도착할 때 각 관측을 이용해 모델을 지속적으로 갱신하는 학습 설정이다.</span></li>
 <li data-article-id="ontology"><a href="/wiki/ontology/">온톨로지</a><span class="wiki-index-summary">온톨로지는 특정 영역의 개념·관계·제약을 명시적인 형식 의미와 함께 정의한 지식 표현 체계다.</span></li>
 <li data-article-id="on-premises-ai"><a href="/wiki/on-premises-ai/">온프레미스 AI</a><span class="wiki-index-summary">온프레미스 AI는 조직이 직접 통제하는 시설과 인프라에서 모델·데이터·추론 서비스를 운영하는 배포 형태다.</span></li>
@@ -777,6 +880,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="outer-product"><a href="/wiki/outer-product/">외적곱</a><span class="wiki-index-summary">한 벡터의 각 성분과 다른 벡터의 각 성분을 모두 곱해 행렬을 만드는 연산이다.</span></li>
 <li data-article-id="request-queue"><a href="/wiki/request-queue/">요청 대기열</a><span class="wiki-index-summary">요청 대기열은 즉시 실행할 자원이 없는 추론 요청을 도착 순서와 우선순위 정보와 함께 보관하는 구조다.</span></li>
 <li data-article-id="request-signing"><a href="/wiki/request-signing/">요청 서명</a><span class="wiki-index-summary">요청 서명은 HTTP 요청의 선택된 구성 요소를 개인키나 공유키로 서명해 발신자와 전송 중 무결성을 확인하는 방식이다.</span></li>
+<li data-article-id="request-preemption"><a href="/wiki/request-preemption/">요청 선점</a><span class="wiki-index-summary">요청 선점은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="request-scheduler"><a href="/wiki/request-scheduler/">요청 스케줄러</a><span class="wiki-index-summary">요청 스케줄러는 동시 추론 요청의 우선순위, 배치 구성과 실행 순서를 결정하는 구성 요소다.</span></li>
 <li data-article-id="request-interceptor"><a href="/wiki/request-interceptor/">요청 인터셉터</a><span class="wiki-index-summary">요청 인터셉터는 API 요청이 전송되기 전이나 처리기에 도달하기 전에 공통 로직을 적용하는 가로채기 계층이다.</span></li>
 <li data-article-id="request-throttling"><a href="/wiki/request-throttling/">요청 조절</a><span class="wiki-index-summary">요청 조절은 서비스 보호와 공정한 사용을 위해 요청 처리 속도나 동시 실행량을 의도적으로 낮추는 제어다.</span></li>
@@ -806,9 +910,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="voice-activity-detection"><a href="/wiki/voice-activity-detection/">음성 활동 탐지</a><span class="wiki-index-summary">음성 활동 탐지는 오디오의 각 프레임이나 구간에 사람 음성이 존재하는지 판정하는 과제다.</span></li>
 <li data-article-id="speech-to-text"><a href="/wiki/speech-to-text/">음성-텍스트 변환</a><span class="wiki-index-summary">음성-텍스트 변환은 음성 파형을 해당 발화의 문자나 단어 시퀀스로 변환하는 과제다.</span></li>
 <li data-article-id="response-validation"><a href="/wiki/response-validation/">응답 검증</a><span class="wiki-index-summary">응답 검증은 외부 API나 모델 출력이 합의된 스키마와 의미 제약을 만족하는지 소비 전에 확인하는 절차다.</span></li>
+<li data-article-id="response-contract"><a href="/wiki/response-contract/">응답 계약</a><span class="wiki-index-summary">응답 계약은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="response-verbosity"><a href="/wiki/response-verbosity/">응답 장황성</a><span class="wiki-index-summary">응답 장황성은 필요한 정보량에 비해 출력이 얼마나 길고 반복적이며 우회적인지를 나타내는 특성이다.</span></li>
 <li data-article-id="response-format-tuning"><a href="/wiki/response-format-tuning/">응답 형식 튜닝</a><span class="wiki-index-summary">응답 형식 튜닝은 모델이 지정된 구조, 문체, 길이 또는 스키마에 맞춰 답하도록 예시 데이터로 미세조정하는 과정이다.</span></li>
 <li data-article-id="semantic-search"><a href="/wiki/semantic-search/">의미 검색</a><span class="wiki-index-summary">문자열의 정확한 일치보다 질의와 문서의 의미 유사성을 이용하는 검색 방식이다.</span></li>
+<li data-article-id="semantic-output-validation"><a href="/wiki/semantic-output-validation/">의미 기반 출력 검증</a><span class="wiki-index-summary">의미 기반 출력 검증은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pseudo-relevance-feedback"><a href="/wiki/pseudo-relevance-feedback/">의사 관련성 피드백</a><span class="wiki-index-summary">의사 관련성 피드백은 첫 검색의 상위 문서가 관련 있다고 가정하고 그 문서의 용어나 표현으로 질의를 보강하는 기법이다.</span></li>
 <li data-article-id="decision-making-system"><a href="/wiki/decision-making-system/">의사결정 시스템</a><span class="wiki-index-summary">의사결정 시스템은 관측과 예측을 목표·제약·비용 규칙에 결합해 가능한 행동 중 하나를 선택하는 시스템이다.</span></li>
 <li data-article-id="decision-provenance"><a href="/wiki/decision-provenance/">의사결정 출처 추적</a><span class="wiki-index-summary">의사결정 출처 추적은 AI가 내린 결과에 영향을 준 데이터, 모델, 규칙, 사람 승인과 처리 단계를 재구성할 수 있게 기록하는 체계다.</span></li>
@@ -847,6 +953,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="instance-normalization"><a href="/wiki/instance-normalization/">인스턴스 정규화</a><span class="wiki-index-summary">인스턴스 정규화는 각 표본과 채널별로 공간 위치의 평균과 분산을 사용해 활성값을 정규화하는 방법이다.</span></li>
 <li data-article-id="perceive-plan-act-cycle"><a href="/wiki/perceive-plan-act-cycle/">인식-계획-행동 순환</a><span class="wiki-index-summary">환경을 관찰해 현재 상태를 구성하고, 목표에 맞는 계획을 세운 뒤 행동을 실행하며 결과를 다음 관찰에 반영하는 에이전트 제어 순환이다.</span></li>
 <li data-article-id="citation"><a href="/wiki/citation/">인용</a><span class="wiki-index-summary">주장이나 생성 결과가 근거로 삼은 자료의 위치와 출처를 표시하는 정보다.</span></li>
+<li data-article-id="citation-grounding-contract"><a href="/wiki/citation-grounding-contract/">인용 근거 계약</a><span class="wiki-index-summary">인용 근거 계약은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="citation-generation"><a href="/wiki/citation-generation/">인용 생성</a><span class="wiki-index-summary">인용 생성은 생성 답변의 주장과 그 주장을 뒷받침하는 검색 문서 위치를 연결해 표시하는 과정이다.</span></li>
 <li data-article-id="citation-correctness"><a href="/wiki/citation-correctness/">인용 정확성</a><span class="wiki-index-summary">인용 정확성은 답변에 붙은 인용이 해당 주장과 올바른 출처를 실제로 연결하는 정도다.</span></li>
 <li data-article-id="encoder"><a href="/wiki/encoder/">인코더</a><span class="wiki-index-summary">입력 시퀀스를 문맥이 반영된 내부 표현으로 변환하는 구성 요소다.</span></li>
@@ -921,6 +1028,8 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="normalization-placement"><a href="/wiki/normalization-placement/">정규화 배치</a><span class="wiki-index-summary">정규화 배치는 트랜스포머 하위 계층의 앞이나 뒤 어느 위치에 정규화 연산을 둘지 정하는 구조 선택이다.</span></li>
 <li data-article-id="normalized-discounted-cumulative-gain"><a href="/wiki/normalized-discounted-cumulative-gain/">정규화 할인 누적 이득</a><span class="wiki-index-summary">정규화 할인 누적 이득은 순위가 낮아질수록 할인된 등급별 관련성 이득을 이상적인 순위의 값으로 나눈 지표다.</span></li>
 <li data-article-id="alignment-tax"><a href="/wiki/alignment-tax/">정렬 비용</a><span class="wiki-index-summary">정렬 비용은 안전·규정·인간 선호를 만족시키기 위한 통제가 유용성·성능·속도·자원에 추가하는 비용을 뜻한다.</span></li>
+<li data-article-id="alignment-capability-retention"><a href="/wiki/alignment-capability-retention/">정렬 역량 보존</a><span class="wiki-index-summary">정렬 역량 보존은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="alignment-evaluation-gate"><a href="/wiki/alignment-evaluation-gate/">정렬 평가 게이트</a><span class="wiki-index-summary">정렬 평가 게이트는 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="precision-recall-curve"><a href="/wiki/precision-recall-curve/">정밀도-재현율 곡선</a><span class="wiki-index-summary">분류 임계값을 변화시키며 재현율에 대한 정밀도를 그려 양성 탐지와 오탐의 교환 관계를 보여 주는 곡선이다.</span></li>
 <li data-article-id="precision-recall"><a href="/wiki/precision-recall/">정밀도와 재현율</a><span class="wiki-index-summary">정밀도는 양성으로 예측한 항목의 적중 비율이고 재현율은 실제 양성 가운데 찾아낸 비율이다.</span></li>
 <li data-article-id="information-gain"><a href="/wiki/information-gain/">정보 이득</a><span class="wiki-index-summary">정보 이득은 관측이나 분할 전후의 불확실성 감소량이다.</span></li>
@@ -969,7 +1078,9 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="exponential-backoff"><a href="/wiki/exponential-backoff/">지수 백오프</a><span class="wiki-index-summary">지수 백오프는 반복 실패할수록 재시도 사이의 대기 시간을 지수적으로 늘려 서비스 부담과 충돌을 줄이는 제어 방식이다.</span></li>
 <li data-article-id="instruction-mixture"><a href="/wiki/instruction-mixture/">지시 데이터 혼합</a><span class="wiki-index-summary">지시 데이터 혼합은 지시 튜닝에 사용할 여러 과제·출처·형식 데이터의 구성과 표본 비율을 정한 집합이다.</span></li>
 <li data-article-id="instruction-dataset"><a href="/wiki/instruction-dataset/">지시 데이터셋</a><span class="wiki-index-summary">지시 데이터셋은 자연어 지시, 선택적 입력과 기대 응답을 짝지어 모델의 과제 수행과 지시 따르기를 학습시키는 데이터 모음이다.</span></li>
+<li data-article-id="instruction-priority-architecture"><a href="/wiki/instruction-priority-architecture/">지시 우선순위 아키텍처</a><span class="wiki-index-summary">지시 우선순위 아키텍처는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="instruction-following"><a href="/wiki/instruction-following/">지시 이행</a><span class="wiki-index-summary">지시 이행은 언어 모델이 사용자의 명시적 요구와 상위 정책을 해석해 제약에 맞는 출력을 만드는 능력이다.</span></li>
+<li data-article-id="instruction-conflict-resolution"><a href="/wiki/instruction-conflict-resolution/">지시 충돌 해소</a><span class="wiki-index-summary">지시 충돌 해소는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="instruction-tuning"><a href="/wiki/instruction-tuning/">지시 튜닝</a><span class="wiki-index-summary">다양한 자연어 지시 데이터로 여러 과제를 지시 형식에 맞게 수행하도록 만드는 학습이다.</span></li>
 <li data-article-id="instruction-tuned-embedding"><a href="/wiki/instruction-tuned-embedding/">지시 튜닝 임베딩</a><span class="wiki-index-summary">지시 튜닝 임베딩은 검색·분류 같은 과제 설명을 입력에 포함하고 그 지시에 맞는 표현을 만들도록 학습한 임베딩이다.</span></li>
 <li data-article-id="instruction"><a href="/wiki/instruction/">지시문</a><span class="wiki-index-summary">지시문은 모델이 수행해야 할 과제, 입력의 의미, 제약과 성공 조건을 자연어나 구조화된 형식으로 기술한 내용이다.</span></li>
@@ -1028,16 +1139,28 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="inference"><a href="/wiki/inference/">추론</a><span class="wiki-index-summary">학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다.</span></li>
 <li data-article-id="inference-economics"><a href="/wiki/inference-economics/">추론 경제성</a><span class="wiki-index-summary">추론 경제성은 배포된 모델의 요청당 비용과 품질·지연시간·처리량 사이의 운영적 관계를 분석하는 관점이다.</span></li>
 <li data-article-id="inference-compute"><a href="/wiki/inference-compute/">추론 계산량</a><span class="wiki-index-summary">추론 계산량은 학습된 모델이 입력을 처리하고 출력을 생성하는 데 필요한 산술 연산과 자원 사용량이다.</span></li>
+<li data-article-id="inference-overload-control"><a href="/wiki/inference-overload-control/">추론 과부하 제어</a><span class="wiki-index-summary">추론 과부하 제어는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-graph-optimization"><a href="/wiki/inference-graph-optimization/">추론 그래프 최적화</a><span class="wiki-index-summary">추론 그래프 최적화는 학습이 끝난 모델 그래프를 같은 출력 의미를 유지하면서 더 빠르고 작게 실행되도록 변환하는 과정이다.</span></li>
+<li data-article-id="inference-tail-latency-debugging"><a href="/wiki/inference-tail-latency-debugging/">추론 꼬리 지연 디버깅</a><span class="wiki-index-summary">추론 꼬리 지연 디버깅은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="reasoning-effort-control"><a href="/wiki/reasoning-effort-control/">추론 노력 제어</a><span class="wiki-index-summary">추론 노력 제어는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="reasoning-capability"><a href="/wiki/reasoning-capability/">추론 능력</a><span class="wiki-index-summary">추론 능력은 모델이 주어진 정보에서 여러 단계의 관계를 구성해 새로운 결론이나 해결 절차를 도출하는 능력이다.</span></li>
 <li data-article-id="inference-monitoring"><a href="/wiki/inference-monitoring/">추론 모니터링</a><span class="wiki-index-summary">추론 모니터링은 운영 중 모델 요청의 품질·지연·오류·자원·안전 신호를 지속 수집하고 이상을 탐지하는 활동이다.</span></li>
 <li data-article-id="inference-load-balancing"><a href="/wiki/inference-load-balancing/">추론 부하 분산</a><span class="wiki-index-summary">추론 부하 분산은 여러 모델 복제본에 요청을 나눠 처리량과 가용성을 유지하는 방법이다.</span></li>
 <li data-article-id="inference-server"><a href="/wiki/inference-server/">추론 서버</a><span class="wiki-index-summary">추론 서버는 학습된 모델을 메모리에 적재하고 네트워크 요청을 받아 예측 결과를 반환하는 실행 서비스다.</span></li>
 <li data-article-id="inference-timeout"><a href="/wiki/inference-timeout/">추론 시간 초과</a><span class="wiki-index-summary">추론 시간 초과는 모델 요청이 정해진 기한 안에 완료되지 않으면 기다림을 중단하고 실패로 처리하는 제어다.</span></li>
+<li data-article-id="inference-energy-efficiency"><a href="/wiki/inference-energy-efficiency/">추론 에너지 효율</a><span class="wiki-index-summary">추론 에너지 효율은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-endpoint"><a href="/wiki/inference-endpoint/">추론 엔드포인트</a><span class="wiki-index-summary">추론 엔드포인트는 특정 모델 또는 모델 집합에 예측 요청을 보낼 수 있도록 공개된 네트워크 주소와 계약이다.</span></li>
+<li data-article-id="inference-backpressure"><a href="/wiki/inference-backpressure/">추론 역압</a><span class="wiki-index-summary">추론 역압은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-capacity-planning"><a href="/wiki/inference-capacity-planning/">추론 용량 계획</a><span class="wiki-index-summary">추론 용량 계획은 예상 트래픽과 서비스 목표를 만족하도록 모델 복제본, 가속기, 메모리와 큐 용량을 산정하는 과정이다.</span></li>
+<li data-article-id="inference-capacity-headroom"><a href="/wiki/inference-capacity-headroom/">추론 용량 여유분</a><span class="wiki-index-summary">추론 용량 여유분은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-workload-shaping"><a href="/wiki/inference-workload-shaping/">추론 워크로드 형상화</a><span class="wiki-index-summary">추론 워크로드 형상화는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-warm-pool"><a href="/wiki/inference-warm-pool/">추론 웜 풀</a><span class="wiki-index-summary">추론 웜 풀은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="inference-autoscaling"><a href="/wiki/inference-autoscaling/">추론 자동 확장</a><span class="wiki-index-summary">추론 자동 확장은 요청량과 자원 지표에 따라 모델 복제본 수를 자동으로 늘리거나 줄이는 운영 방식이다.</span></li>
 <li data-article-id="inference-retry"><a href="/wiki/inference-retry/">추론 재시도</a><span class="wiki-index-summary">추론 재시도는 일시적 오류나 제한 응답 뒤 같은 논리 요청을 다시 수행하는 복구 전략이다.</span></li>
+<li data-article-id="reasoning-trace-policy"><a href="/wiki/reasoning-trace-policy/">추론 추적 정책</a><span class="wiki-index-summary">추론 추적 정책은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-queue-discipline"><a href="/wiki/inference-queue-discipline/">추론 큐 규칙</a><span class="wiki-index-summary">추론 큐 규칙은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-carbon-accounting"><a href="/wiki/inference-carbon-accounting/">추론 탄소 회계</a><span class="wiki-index-summary">추론 탄소 회계는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inference-slo-error-budget"><a href="/wiki/inference-slo-error-budget/">추론 SLO 오류 예산</a><span class="wiki-index-summary">추론 SLO 오류 예산은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="reasoning-action-interleaving"><a href="/wiki/reasoning-action-interleaving/">추론-행동 교차 수행</a><span class="wiki-index-summary">추론-행동 교차 수행은 내부 판단과 외부 도구 실행을 번갈아 수행하며 다음 결정을 관측에 맞춰 갱신하는 에이전트 패턴이다.</span></li>
 <li data-article-id="tracing"><a href="/wiki/tracing/">추적</a><span class="wiki-index-summary">한 요청이 여러 모델·도구·단계를 거치는 실행 흐름과 시간을 기록하는 방법이다.</span></li>
 <li data-article-id="recommendation-system"><a href="/wiki/recommendation-system/">추천 시스템</a><span class="wiki-index-summary">추천 시스템은 사용자와 항목의 정보 및 상호작용을 이용해 관련성이 높은 항목을 선택·정렬하는 정보 필터링 시스템이다.</span></li>
@@ -1055,6 +1178,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <section class="wiki-index-group" data-index-group="ko-k">
 <h2 id="index-ko-k">ㅋ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="canary-evaluation"><a href="/wiki/canary-evaluation/">카나리 평가</a><span class="wiki-index-summary">카나리 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="copyleft-license"><a href="/wiki/copyleft-license/">카피레프트 라이선스</a><span class="wiki-index-summary">카피레프트 라이선스는 프로그램 또는 일정한 파생물을 배포할 때 같은 자유를 유지하도록 소스 제공과 동일 조건 적용을 요구한다.</span></li>
 <li data-article-id="cache-offloading"><a href="/wiki/cache-offloading/">캐시 오프로딩</a><span class="wiki-index-summary">캐시 오프로딩은 장치 메모리의 KV나 모델 상태 일부를 호스트 메모리 또는 저장장치로 옮겨 가속기 용량을 확보하는 방식이다.</span></li>
 <li data-article-id="cache-hit-rate"><a href="/wiki/cache-hit-rate/">캐시 적중률</a><span class="wiki-index-summary">캐시 적중률은 전체 조회 중 요청한 데이터가 캐시에 있어 원본 계산이나 저장소 접근을 피한 비율이다.</span></li>
@@ -1068,6 +1192,8 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="containerized-model"><a href="/wiki/containerized-model/">컨테이너화 모델</a><span class="wiki-index-summary">컨테이너화 모델은 모델 파일과 추론 코드 및 시스템 의존성을 컨테이너 이미지로 묶어 실행 환경을 고정한 배포 단위다.</span></li>
 <li data-article-id="context-engineering"><a href="/wiki/context-engineering/">컨텍스트 엔지니어링</a><span class="wiki-index-summary">컨텍스트 엔지니어링은 모델이 작업할 때 필요한 지시, 자료, 도구 결과와 대화 상태를 선택·구성·갱신하는 시스템 설계 활동이다.</span></li>
 <li data-article-id="context-window"><a href="/wiki/context-window/">컨텍스트 윈도우</a><span class="wiki-index-summary">모델이 한 번의 요청에서 참조할 수 있는 토큰 범위다.</span></li>
+<li data-article-id="context-window-budgeting"><a href="/wiki/context-window-budgeting/">컨텍스트 창 예산 관리</a><span class="wiki-index-summary">컨텍스트 창 예산 관리는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="context-cache-coherence"><a href="/wiki/context-cache-coherence/">컨텍스트 캐시 일관성</a><span class="wiki-index-summary">컨텍스트 캐시 일관성은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="context-caching"><a href="/wiki/context-caching/">컨텍스트 캐싱</a><span class="wiki-index-summary">컨텍스트 캐싱은 반복되는 입력 접두사의 중간 계산 결과를 저장해 후속 모델 호출에서 재사용하는 최적화다.</span></li>
 <li data-article-id="computer-vision"><a href="/wiki/computer-vision/">컴퓨터 비전</a><span class="wiki-index-summary">이미지와 영상에서 대상·장면·공간 구조를 추정하고 유용한 정보를 계산하는 인공지능 분야다.</span></li>
 <li data-article-id="computer-use-agent"><a href="/wiki/computer-use-agent/">컴퓨터 사용 에이전트</a><span class="wiki-index-summary">컴퓨터 사용 에이전트는 화면을 관찰하고 마우스·키보드·운영체제 기능을 조작해 여러 응용 프로그램에 걸친 과제를 수행하는 에이전트다.</span></li>
@@ -1119,7 +1245,11 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="token-cost"><a href="/wiki/token-cost/">토큰 비용</a><span class="wiki-index-summary">토큰 비용은 언어 모델이 처리하거나 생성한 토큰 수에 모델별 단가를 적용한 요청 비용이다.</span></li>
 <li data-article-id="token-usage-monitoring"><a href="/wiki/token-usage-monitoring/">토큰 사용량 모니터링</a><span class="wiki-index-summary">토큰 사용량 모니터링은 모델 요청의 입력·출력·캐시·추론 토큰 수를 지속 측정해 비용과 문맥 사용을 관찰하는 활동이다.</span></li>
 <li data-article-id="token-sampling"><a href="/wiki/token-sampling/">토큰 샘플링</a><span class="wiki-index-summary">토큰 샘플링은 다음 토큰 확률분포에서 난수로 토큰을 뽑아 생성 시퀀스를 이어가는 디코딩 방식이다.</span></li>
+<li data-article-id="token-scheduler"><a href="/wiki/token-scheduler/">토큰 스케줄러</a><span class="wiki-index-summary">토큰 스케줄러는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="token-budget-admission-control"><a href="/wiki/token-budget-admission-control/">토큰 예산 수용 제어</a><span class="wiki-index-summary">토큰 예산 수용 제어는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="token-budget-controller"><a href="/wiki/token-budget-controller/">토큰 예산 제어기</a><span class="wiki-index-summary">토큰 예산 제어기는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="token-embedding-layer"><a href="/wiki/token-embedding-layer/">토큰 임베딩층</a><span class="wiki-index-summary">토큰 임베딩층은 이산 토큰 식별자를 학습 가능한 연속 벡터로 변환하는 트랜스포머 입력 계층이다.</span></li>
+<li data-article-id="token-accounting"><a href="/wiki/token-accounting/">토큰 회계</a><span class="wiki-index-summary">토큰 회계는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="token-efficiency"><a href="/wiki/token-efficiency/">토큰 효율</a><span class="wiki-index-summary">토큰 효율은 주어진 품질이나 과제 성과를 달성하는 데 필요한 입력·출력 토큰 수가 얼마나 적은지를 나타내는 효율 관점이다.</span></li>
 <li data-article-id="tokenization"><a href="/wiki/tokenization/">토큰화</a><span class="wiki-index-summary">문자열을 모델의 어휘 집합에 있는 토큰 ID 시퀀스로 변환하는 과정이다.</span></li>
 <li data-article-id="statistical-significance"><a href="/wiki/statistical-significance/">통계적 유의성</a><span class="wiki-index-summary">통계적 유의성은 귀무가설 아래 관측된 차이 이상이 우연히 나타날 확률이 정한 기준보다 작은지를 나타내는 판단이다.</span></li>
@@ -1131,6 +1261,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="unified-response-api"><a href="/wiki/unified-response-api/">통합 응답 API</a><span class="wiki-index-summary">통합 응답 API는 텍스트·이미지·도구 호출 같은 여러 입력과 출력 유형을 하나의 응답 객체와 이벤트 모델로 다루는 API 형식이다.</span></li>
 <li data-article-id="uri"><a href="/wiki/uri/">통합 자원 식별자</a><span class="wiki-index-summary">통합 자원 식별자(URI)는 자원을 식별하기 위한 문자열 문법의 총칭이며 URL과 URN 같은 식별 방식을 포괄한다.</span></li>
 <li data-article-id="url"><a href="/wiki/url/">통합 자원 위치 지정자</a><span class="wiki-index-summary">통합 자원 위치 지정자(URL)는 자원의 위치와 접근 방법을 함께 나타내는 URI의 한 유형이다.</span></li>
+<li data-article-id="speculative-generation-policy"><a href="/wiki/speculative-generation-policy/">투기적 생성 정책</a><span class="wiki-index-summary">투기적 생성 정책은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="turing-test"><a href="/wiki/turing-test/">튜링 테스트</a><span class="wiki-index-summary">튜링 테스트는 텍스트 대화에서 심사자가 기계와 사람을 신뢰성 있게 구분할 수 있는지로 기계의 언어적 모방 능력을 평가하는 사고실험이다.</span></li>
 <li data-article-id="transformer"><a href="/wiki/transformer/">트랜스포머</a><span class="wiki-index-summary">어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다.</span></li>
 <li data-article-id="transformer-block"><a href="/wiki/transformer-block/">트랜스포머 블록</a><span class="wiki-index-summary">트랜스포머 블록은 어텐션·피드포워드·정규화·잔차 연결을 반복 가능한 단위로 묶은 핵심 계층이다.</span></li>
@@ -1158,6 +1289,9 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="foundation-model"><a href="/wiki/foundation-model/">파운데이션 모델</a><span class="wiki-index-summary">파운데이션 모델은 광범위한 데이터로 대규모 사전학습한 뒤 여러 하위 과제와 응용에 적응할 수 있는 범용 모델이다.</span></li>
 <li data-article-id="pipeline-parallelism"><a href="/wiki/pipeline-parallelism/">파이프라인 병렬화</a><span class="wiki-index-summary">파이프라인 병렬화는 모델의 연속된 층 구간을 여러 장치에 배치하고 미니배치를 마이크로배치로 흘려보내는 방식이다.</span></li>
 <li data-article-id="file-upload-api"><a href="/wiki/file-upload-api/">파일 업로드 API</a><span class="wiki-index-summary">파일 업로드 API는 바이너리 파일과 메타데이터를 서버에 전달해 저장·분석·변환 작업의 입력으로 등록하는 인터페이스다.</span></li>
+<li data-article-id="judge-length-bias-control"><a href="/wiki/judge-length-bias-control/">판정 길이 편향 통제</a><span class="wiki-index-summary">판정 길이 편향 통제는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="judge-calibration-curve"><a href="/wiki/judge-calibration-curve/">판정 모델 교정 곡선</a><span class="wiki-index-summary">판정 모델 교정 곡선은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="judge-position-randomization"><a href="/wiki/judge-position-randomization/">판정 위치 무작위화</a><span class="wiki-index-summary">판정 위치 무작위화는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="padding-mask"><a href="/wiki/padding-mask/">패딩 마스크</a><span class="wiki-index-summary">패딩 마스크는 길이가 다른 시퀀스를 한 배치로 맞추기 위해 추가한 패딩 위치가 어텐션과 손실에 영향을 주지 않게 하는 마스크다.</span></li>
 <li data-article-id="padding-token"><a href="/wiki/padding-token/">패딩 토큰</a><span class="wiki-index-summary">패딩 토큰은 길이가 다른 시퀀스를 같은 배치 형태로 맞추기 위해 빈 위치에 채우는 특수 토큰이다.</span></li>
 <li data-article-id="faceted-search"><a href="/wiki/faceted-search/">패싯 검색</a><span class="wiki-index-summary">패싯 검색은 검색 결과를 범주, 날짜, 유형 같은 구조화된 속성별 개수와 필터로 탐색하게 하는 인터페이스 및 검색 방식이다.</span></li>
@@ -1171,8 +1305,15 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="bias"><a href="/wiki/bias/">편향 항</a><span class="wiki-index-summary">선형 변환의 기준점을 이동시키기 위해 더하는 학습 가능한 값이다.</span></li>
 <li data-article-id="bias-variance-tradeoff"><a href="/wiki/bias-variance-tradeoff/">편향-분산 절충</a><span class="wiki-index-summary">편향-분산 절충은 모델의 단순화로 생기는 체계적 오차와 학습 표본 변화에 민감한 오차 사이의 관계다.</span></li>
 <li data-article-id="bias-fairness"><a href="/wiki/bias-fairness/">편향과 공정성</a><span class="wiki-index-summary">모델의 결과가 집단이나 특성에 따라 체계적으로 불리하게 달라지는지를 다루는 개념이다.</span></li>
+<li data-article-id="evaluation-dataset-lineage"><a href="/wiki/evaluation-dataset-lineage/">평가 데이터셋 계보</a><span class="wiki-index-summary">평가 데이터셋 계보는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="evaluation-rubric"><a href="/wiki/evaluation-rubric/">평가 루브릭</a><span class="wiki-index-summary">평가 루브릭은 결과를 판단할 기준과 수준별 설명, 배점 규칙을 명시한 채점 도구다.</span></li>
 <li data-article-id="evaluation-uncertainty"><a href="/wiki/evaluation-uncertainty/">평가 불확실성</a><span class="wiki-index-summary">평가 불확실성은 제한된 표본·평가자·무작위 실행·측정 오류 때문에 보고된 모델 성능이 참 성능과 다를 수 있는 정도다.</span></li>
+<li data-article-id="evaluation-slice"><a href="/wiki/evaluation-slice/">평가 슬라이스</a><span class="wiki-index-summary">평가 슬라이스는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-confidence-interval"><a href="/wiki/evaluation-confidence-interval/">평가 신뢰구간</a><span class="wiki-index-summary">평가 신뢰구간은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-budget-allocation"><a href="/wiki/evaluation-budget-allocation/">평가 예산 배분</a><span class="wiki-index-summary">평가 예산 배분은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-error-taxonomy"><a href="/wiki/evaluation-error-taxonomy/">평가 오류 분류 체계</a><span class="wiki-index-summary">평가 오류 분류 체계는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-contamination-audit"><a href="/wiki/evaluation-contamination-audit/">평가 오염 감사</a><span class="wiki-index-summary">평가 오염 감사는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="evaluation-decision-log"><a href="/wiki/evaluation-decision-log/">평가 의사결정 로그</a><span class="wiki-index-summary">평가 의사결정 로그는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="metric"><a href="/wiki/metric/">평가 지표</a><span class="wiki-index-summary">성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다.</span></li>
 <li data-article-id="evaluation-sampling"><a href="/wiki/evaluation-sampling/">평가 표본추출</a><span class="wiki-index-summary">평가 표본추출은 전체 가능한 입력 중 평가에 사용할 사례를 규칙에 따라 선택하는 과정이다.</span></li>
 <li data-article-id="inter-rater-reliability"><a href="/wiki/inter-rater-reliability/">평가자 간 신뢰도</a><span class="wiki-index-summary">평가자 간 신뢰도는 여러 평가자의 점수가 평가 대상의 차이를 일관되게 반영하는 정도를 통계적으로 측정한 값이다.</span></li>
@@ -1189,23 +1330,28 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="production-evaluation"><a href="/wiki/production-evaluation/">프로덕션 평가</a><span class="wiki-index-summary">프로덕션 평가는 실제 트래픽과 운영 제약에서 AI 시스템의 품질·안전·비용을 지속 측정하는 평가 체계다.</span></li>
 <li data-article-id="probing-classifier"><a href="/wiki/probing-classifier/">프로빙 분류기</a><span class="wiki-index-summary">프로빙 분류기는 고정된 모델의 중간 표현에 특정 속성 정보가 선형 또는 단순한 함수로 읽힐 수 있는지 시험하는 보조 예측기다.</span></li>
 <li data-article-id="prompt"><a href="/wiki/prompt/">프롬프트</a><span class="wiki-index-summary">모델에 과제·문맥·제약·출력 형식을 전달하는 입력이다.</span></li>
+<li data-article-id="prompt-contract-testing"><a href="/wiki/prompt-contract-testing/">프롬프트 계약 테스트</a><span class="wiki-index-summary">프롬프트 계약 테스트는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="prompt-delimiter"><a href="/wiki/prompt-delimiter/">프롬프트 구분자</a><span class="wiki-index-summary">프롬프트 구분자는 지시, 사용자 데이터, 예시, 인용문 같은 영역의 경계를 명확히 표시하는 문자 또는 태그다.</span></li>
+<li data-article-id="prompt-release-governance"><a href="/wiki/prompt-release-governance/">프롬프트 릴리스 거버넌스</a><span class="wiki-index-summary">프롬프트 릴리스 거버넌스는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="prompt-sensitivity"><a href="/wiki/prompt-sensitivity/">프롬프트 민감도</a><span class="wiki-index-summary">프롬프트 민감도는 의미가 비슷한 입력의 표현·순서·예시 변화가 모델 출력에 미치는 변동 정도다.</span></li>
 <li data-article-id="prompt-compression"><a href="/wiki/prompt-compression/">프롬프트 압축</a><span class="wiki-index-summary">프롬프트 압축은 핵심 의미와 과제 성능을 보존하면서 입력 문맥의 토큰 수를 줄이는 기법이다.</span></li>
 <li data-article-id="prompt-engineering"><a href="/wiki/prompt-engineering/">프롬프트 엔지니어링</a><span class="wiki-index-summary">프롬프트 엔지니어링은 모델 입력의 지시, 문맥, 예시와 제약을 설계하고 평가해 원하는 출력을 안정적으로 얻는 과정이다.</span></li>
 <li data-article-id="prompt-leakage"><a href="/wiki/prompt-leakage/">프롬프트 유출</a><span class="wiki-index-summary">프롬프트 유출은 시스템 지침, 내부 예시나 숨겨진 컨텍스트가 모델 응답을 통해 노출되는 현상이다.</span></li>
 <li data-article-id="prompt-injection"><a href="/wiki/prompt-injection/">프롬프트 인젝션</a><span class="wiki-index-summary">악의적 입력이 기존 지시를 무시하거나 비밀을 노출하도록 모델 행동을 조작하는 공격이다.</span></li>
 <li data-article-id="prompt-lookup-decoding"><a href="/wiki/prompt-lookup-decoding/">프롬프트 조회 디코딩</a><span class="wiki-index-summary">프롬프트 조회 디코딩은 입력 문맥에 이미 나타난 토큰 연속열을 초안 후보로 찾아 여러 토큰을 한 번에 검증하는 추론 가속 방식이다.</span></li>
+<li data-article-id="prompt-injection-defense-in-depth"><a href="/wiki/prompt-injection-defense-in-depth/">프롬프트 주입 다계층 방어</a><span class="wiki-index-summary">프롬프트 주입 다계층 방어는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="prompt-chaining"><a href="/wiki/prompt-chaining/">프롬프트 체이닝</a><span class="wiki-index-summary">프롬프트 체이닝은 복잡한 작업을 여러 모델 호출로 분해해 앞 단계 출력을 다음 단계 입력으로 연결하는 구성 방식이다.</span></li>
 <li data-article-id="prompt-trace"><a href="/wiki/prompt-trace/">프롬프트 추적</a><span class="wiki-index-summary">프롬프트 추적은 한 생성 요청에 사용된 시스템·사용자 메시지, 검색 문맥, 도구 결과와 모델 응답의 계보를 연결한 실행 기록이다.</span></li>
 <li data-article-id="prompt-caching"><a href="/wiki/prompt-caching/">프롬프트 캐싱</a><span class="wiki-index-summary">프롬프트 캐싱은 반복되는 프롬프트 접두사의 모델 계산 결과나 완성 결과를 저장해 후속 요청에서 재사용하는 기법이다.</span></li>
 <li data-article-id="prompt-template"><a href="/wiki/prompt-template/">프롬프트 템플릿</a><span class="wiki-index-summary">프롬프트 템플릿은 역할, 지시, 문맥, 예시와 출력 형식을 변수 슬롯으로 구조화해 반복 사용할 수 있게 한 입력 틀이다.</span></li>
 <li data-article-id="prompt-tuning"><a href="/wiki/prompt-tuning/">프롬프트 튜닝</a><span class="wiki-index-summary">프롬프트 튜닝은 입력 임베딩 앞에 학습 가능한 연속 프롬프트 벡터를 붙이고 기반 모델은 고정하는 미세조정 방법이다.</span></li>
+<li data-article-id="prompt-portfolio-observability"><a href="/wiki/prompt-portfolio-observability/">프롬프트 포트폴리오 관측성</a><span class="wiki-index-summary">프롬프트 포트폴리오 관측성은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="pre-normalization"><a href="/wiki/pre-normalization/">프리 정규화</a><span class="wiki-index-summary">프리 정규화는 트랜스포머 하위층에 입력하기 전에 층 정규화를 적용하고 그 결과를 잔차 경로와 결합하는 배치다.</span></li>
 <li data-article-id="prefix-language-model"><a href="/wiki/prefix-language-model/">프리픽스 언어 모델</a><span class="wiki-index-summary">프리픽스 언어 모델은 지정된 접두 구간에서는 양방향 문맥을 허용하고 생성 구간에서는 이전 위치만 참조하게 하는 언어 모델이다.</span></li>
 <li data-article-id="prefix-caching"><a href="/wiki/prefix-caching/">프리픽스 캐싱</a><span class="wiki-index-summary">프리픽스 캐싱은 여러 요청이 공유하는 프롬프트 접두사의 KV 상태를 저장해 같은 구간의 프리필 계산을 재사용하는 기법이다.</span></li>
 <li data-article-id="prefix-tuning"><a href="/wiki/prefix-tuning/">프리픽스 튜닝</a><span class="wiki-index-summary">프리픽스 튜닝은 각 트랜스포머 층의 어텐션에 학습 가능한 연속 키·값 접두사를 추가하는 매개변수 효율적 미세조정 방법이다.</span></li>
 <li data-article-id="prefill-phase"><a href="/wiki/prefill-phase/">프리필 단계</a><span class="wiki-index-summary">프리필 단계는 입력 토큰 전체를 병렬 처리해 첫 출력 예측과 이후 디코딩에 사용할 키·값 캐시를 만드는 추론 단계다.</span></li>
+<li data-article-id="prefill-decode-disaggregation"><a href="/wiki/prefill-decode-disaggregation/">프리필·디코드 분리</a><span class="wiki-index-summary">프리필·디코드 분리는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="flash-attention"><a href="/wiki/flash-attention/">플래시 어텐션</a><span class="wiki-index-summary">플래시 어텐션은 정확한 어텐션 결과를 유지하면서 GPU 고대역폭 메모리 왕복을 줄이는 IO 인식 알고리즘이다.</span></li>
 <li data-article-id="feed-forward-network"><a href="/wiki/feed-forward-network/">피드포워드 네트워크</a><span class="wiki-index-summary">각 토큰 위치에 독립적으로 적용되는 비선형 완전연결 변환 블록이다.</span></li>
 <li data-article-id="peer-to-peer-agents"><a href="/wiki/peer-to-peer-agents/">피어투피어 에이전트</a><span class="wiki-index-summary">피어투피어 에이전트는 고정된 중앙 감독자 없이 동등한 참여자들이 직접 메시지와 작업을 교환하는 다중 에이전트 구성이다.</span></li>
@@ -1217,6 +1363,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="hybrid-search"><a href="/wiki/hybrid-search/">하이브리드 검색</a><span class="wiki-index-summary">하이브리드 검색은 키워드 기반 희소 점수와 임베딩 기반 밀집 점수를 결합해 후보를 찾는 방식이다.</span></li>
+<li data-article-id="hybrid-retrieval-weighting"><a href="/wiki/hybrid-retrieval-weighting/">하이브리드 검색 가중치</a><span class="wiki-index-summary">하이브리드 검색 가중치는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="hybrid-rag"><a href="/wiki/hybrid-rag/">하이브리드 RAG</a><span class="wiki-index-summary">하이브리드 RAG는 생성 모델에 문맥을 공급할 때 키워드·밀집 벡터·지식 그래프 등 둘 이상의 검색 방식을 결합하는 검색 증강 생성 구조다.</span></li>
 <li data-article-id="hyperparameter"><a href="/wiki/hyperparameter/">하이퍼파라미터</a><span class="wiki-index-summary">학습 전에 사람이 정하거나 탐색하며 학습 과정과 모델 구조를 제어하는 값이다.</span></li>
 <li data-article-id="training-audit-log"><a href="/wiki/training-audit-log/">학습 감사 로그</a><span class="wiki-index-summary">학습 감사 로그는 모델 학습 과정의 입력 버전·설정·실행 주체·변경·산출물과 승인 사건을 변조 탐지 가능한 형태로 남긴 기록이다.</span></li>
@@ -1244,6 +1391,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="synthetic-data"><a href="/wiki/synthetic-data/">합성 데이터</a><span class="wiki-index-summary">실제 관측값을 그대로 복제하지 않고 규칙·시뮬레이션·통계 또는 생성 모델로 만든 데이터다.</span></li>
 <li data-article-id="convolutional-neural-network"><a href="/wiki/convolutional-neural-network/">합성곱 신경망</a><span class="wiki-index-summary">합성곱 신경망은 국소 필터의 가중치를 공간 위치에 공유해 격자 데이터의 특징을 학습하는 신경망이다.</span></li>
 <li data-article-id="action-recognition"><a href="/wiki/action-recognition/">행동 인식</a><span class="wiki-index-summary">행동 인식은 비디오에서 사람이나 객체가 수행하는 동작을 시간 구간과 범주로 식별하는 과제다.</span></li>
+<li data-article-id="behavioral-regression"><a href="/wiki/behavioral-regression/">행동 회귀</a><span class="wiki-index-summary">행동 회귀는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="matrix"><a href="/wiki/matrix/">행렬</a><span class="wiki-index-summary">수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다.</span></li>
 <li data-article-id="matrix-multiplication"><a href="/wiki/matrix-multiplication/">행렬 곱셈</a><span class="wiki-index-summary">첫 행렬의 행과 둘째 행렬의 열을 내적해 새로운 행렬을 만드는 선형대수 연산으로, 신경망의 선형 변환을 구성하는 핵심 계산이다.</span></li>
 <li data-article-id="determinant"><a href="/wiki/determinant/">행렬식</a><span class="wiki-index-summary">행렬식은 정사각행렬이 공간의 부피와 방향을 얼마나 바꾸는지 나타내는 스칼라이며 가역성과 연결된다.</span></li>
@@ -1300,18 +1448,23 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="ai-accelerator"><a href="/wiki/ai-accelerator/">AI 가속기</a><span class="wiki-index-summary">AI 가속기는 신경망 학습이나 추론의 핵심 연산을 범용 프로세서보다 빠르고 효율적으로 처리하도록 특화된 하드웨어의 총칭이다.</span></li>
 <li data-article-id="ai-governance"><a href="/wiki/ai-governance/">AI 거버넌스</a><span class="wiki-index-summary">AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다.</span></li>
 <li data-article-id="ai-governance-framework"><a href="/wiki/ai-governance-framework/">AI 거버넌스 프레임워크</a><span class="wiki-index-summary">AI 거버넌스 프레임워크는 조직의 AI 의사결정 권한, 정책, 수명주기 통제와 책임 구조를 정한 체계다.</span></li>
+<li data-article-id="ai-attack-surface-map"><a href="/wiki/ai-attack-surface-map/">AI 공격 표면 지도</a><span class="wiki-index-summary">AI 공격 표면 지도는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-supply-chain"><a href="/wiki/ai-supply-chain/">AI 공급망</a><span class="wiki-index-summary">AI 공급망은 데이터·모델·코드·가속기·클라우드·배포 서비스가 최종 AI 시스템에 이르는 의존 관계와 공급 주체의 연쇄다.</span></li>
 <li data-article-id="ai-supply-chain-vulnerability"><a href="/wiki/ai-supply-chain-vulnerability/">AI 공급망 취약점</a><span class="wiki-index-summary">AI 공급망 취약점은 모델, 데이터, 라이브러리, 저장소와 배포 구성 요소 중 하나가 변조되거나 신뢰되지 않아 전체 시스템이 손상되는 위험이다.</span></li>
 <li data-article-id="ai-regulatory-classification"><a href="/wiki/ai-regulatory-classification/">AI 규제 분류</a><span class="wiki-index-summary">AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 범주와 의무 수준에 대응시키는 절차다.</span></li>
+<li data-article-id="ai-kill-switch"><a href="/wiki/ai-kill-switch/">AI 긴급 정지 장치</a><span class="wiki-index-summary">AI 긴급 정지 장치는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-datacenter"><a href="/wiki/ai-datacenter/">AI 데이터센터</a><span class="wiki-index-summary">AI 데이터센터는 대규모 모델 학습과 추론을 위해 가속기, 고대역폭 네트워크, 저장소와 냉각·전력 설비를 통합한 시설이다.</span></li>
+<li data-article-id="ai-red-team-retest"><a href="/wiki/ai-red-team-retest/">AI 레드팀 재시험</a><span class="wiki-index-summary">AI 레드팀 재시험은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-red-teaming"><a href="/wiki/ai-red-teaming/">AI 레드팀 평가</a><span class="wiki-index-summary">AI 레드팀 평가은 공격자·오용자 관점에서 모델과 전체 시스템의 실패·우회·피해 경로를 체계적으로 탐색하는 평가 활동이다.</span></li>
 <li data-article-id="ai-water-footprint"><a href="/wiki/ai-water-footprint/">AI 물 발자국</a><span class="wiki-index-summary">AI 물 발자국은 AI 계산을 위한 데이터센터 냉각과 전력 생산, 하드웨어 공급망에서 소비·취수되는 물의 양과 지역 영향을 나타낸 지표다.</span></li>
 <li data-article-id="ai-security-monitoring"><a href="/wiki/ai-security-monitoring/">AI 보안 모니터링</a><span class="wiki-index-summary">AI 보안 모니터링은 모델·데이터·도구·API와 사용 행위에서 공격·오용·무결성 손상을 지속 탐지하는 활동이다.</span></li>
+<li data-article-id="ai-security-control-baseline"><a href="/wiki/ai-security-control-baseline/">AI 보안 통제 기준선</a><span class="wiki-index-summary">AI 보안 통제 기준선은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-incident-response"><a href="/wiki/ai-incident-response/">AI 사고 대응</a><span class="wiki-index-summary">AI 사고 대응은 AI 시스템의 위해·보안 침해·중대한 오작동을 식별하고 억제·복구·통지·학습하는 조직적 절차다.</span></li>
 <li data-article-id="ai-incident-reporting"><a href="/wiki/ai-incident-reporting/">AI 사고 보고</a><span class="wiki-index-summary">AI 사고 보고는 AI 시스템의 피해·오작동·보안 위반을 정해진 형식과 기한에 내부 또는 감독 기관에 알리는 절차다.</span></li>
 <li data-article-id="ai-disclosure"><a href="/wiki/ai-disclosure/">AI 사용 고지</a><span class="wiki-index-summary">AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI가 관여했다는 사실과 범위를 이용자에게 알리는 행위다.</span></li>
 <li data-article-id="ai-interoperability-standard"><a href="/wiki/ai-interoperability-standard/">AI 상호운용성 표준</a><span class="wiki-index-summary">AI 상호운용성 표준은 서로 다른 모델 형식, 런타임, 데이터·메타데이터 시스템이 의미를 보존하며 교환되도록 정한 공통 계약이다.</span></li>
 <li data-article-id="defense-in-depth-for-ai"><a href="/wiki/defense-in-depth-for-ai/">AI 심층 방어</a><span class="wiki-index-summary">AI 심층 방어는 한 통제가 실패해도 위해가 발생하지 않도록 데이터·모델·애플리케이션·도구·인프라·운영에 독립적인 보호층을 겹치는 전략이다.</span></li>
+<li data-article-id="ai-abuse-monitoring"><a href="/wiki/ai-abuse-monitoring/">AI 악용 모니터링</a><span class="wiki-index-summary">AI 악용 모니터링은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="ai-safety"><a href="/wiki/ai-safety/">AI 안전</a><span class="wiki-index-summary">AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하고 오용, 사고와 예측하지 못한 피해를 줄이기 위한 연구와 실무 영역이다.</span></li>
 <li data-article-id="ai-energy-consumption"><a href="/wiki/ai-energy-consumption/">AI 에너지 소비</a><span class="wiki-index-summary">AI 에너지 소비는 모델 학습·추론과 이를 지원하는 저장·네트워크·냉각 인프라가 일정 기간 사용한 에너지량이다.</span></li>
 <li data-article-id="ai-agent"><a href="/wiki/ai-agent/">AI 에이전트</a><span class="wiki-index-summary">목표를 바탕으로 상태를 관찰하고 도구를 선택해 여러 단계의 작업을 수행하는 시스템이다.</span></li>
@@ -1319,6 +1472,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="ai-risk-register"><a href="/wiki/ai-risk-register/">AI 위험 대장</a><span class="wiki-index-summary">AI 위험 대장은 식별된 위험의 원인, 영향, 가능성, 통제, 책임자와 상태를 한곳에 추적하는 관리 기록이다.</span></li>
 <li data-article-id="ai-risk-assessment"><a href="/wiki/ai-risk-assessment/">AI 위험 평가</a><span class="wiki-index-summary">AI 위험 평가는 AI 시스템이 사람, 조직과 환경에 일으킬 가능성과 영향을 사용 맥락에서 식별·분석하는 과정이다.</span></li>
 <li data-article-id="ai-threat-modeling"><a href="/wiki/ai-threat-modeling/">AI 위협 모델링</a><span class="wiki-index-summary">AI 위협 모델링은 AI 시스템의 자산·행위자·신뢰 경계·공격 표면과 가능한 피해 경로를 구조적으로 식별하는 과정이다.</span></li>
+<li data-article-id="ai-anomaly-triage"><a href="/wiki/ai-anomaly-triage/">AI 이상 현상 분류</a><span class="wiki-index-summary">AI 이상 현상 분류는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="alignment"><a href="/wiki/alignment/">AI 정렬</a><span class="wiki-index-summary">모델의 행동이 사람의 의도·가치·안전 제약과 일치하도록 만드는 연구와 과정이다.</span></li>
 <li data-article-id="ai-policy-enforcement"><a href="/wiki/ai-policy-enforcement/">AI 정책 집행</a><span class="wiki-index-summary">AI 정책 집행은 사용·데이터·출력·도구 권한 규칙을 AI 시스템의 요청 처리 경로에서 실제 허용·차단 행동으로 적용하는 활동이다.</span></li>
 <li data-article-id="ai-compliance-monitoring"><a href="/wiki/ai-compliance-monitoring/">AI 준수 모니터링</a><span class="wiki-index-summary">AI 준수 모니터링은 시스템 운영과 변경이 적용 법규·표준·내부 통제 요구를 계속 만족하는지 증거로 확인하는 과정이다.</span></li>
@@ -1334,20 +1488,38 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="all-reduce"><a href="/wiki/all-reduce/">All-Reduce</a><span class="wiki-index-summary">올리듀스는 여러 작업자의 같은 크기 텐서를 합·최대 같은 연산으로 결합하고 결과를 모든 작업자에게 배포하는 집단 통신이다.</span></li>
 <li data-article-id="api"><a href="/wiki/api/">API</a><span class="wiki-index-summary">소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다.</span></li>
 <li data-article-id="api-audit-log"><a href="/wiki/api-audit-log/">API 감사 로그</a><span class="wiki-index-summary">API 감사 로그는 누가 언제 어떤 API 자원에 어떤 작업을 요청했고 결과가 무엇이었는지를 보안·책임 추적 목적으로 기록한 사건 원장이다.</span></li>
+<li data-article-id="api-provider-abstraction"><a href="/wiki/api-provider-abstraction/">API 공급자 추상화</a><span class="wiki-index-summary">API 공급자 추상화는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-data-retention"><a href="/wiki/api-data-retention/">API 데이터 보유</a><span class="wiki-index-summary">API 데이터 보유는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-wrapper"><a href="/wiki/api-wrapper/">API 래퍼</a><span class="wiki-index-summary">API 래퍼는 원시 API 호출을 특정 업무에 맞는 더 단순하거나 안정적인 함수와 객체로 감싸는 계층이다.</span></li>
 <li data-article-id="api-logging"><a href="/wiki/api-logging/">API 로깅</a><span class="wiki-index-summary">API 로깅은 요청 수명주기의 식별자, 결과, 지연시간과 오류를 구조화된 사건으로 남기는 관측 활동이다.</span></li>
+<li data-article-id="api-region-routing"><a href="/wiki/api-region-routing/">API 리전 라우팅</a><span class="wiki-index-summary">API 리전 라우팅은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-batch-contract"><a href="/wiki/api-batch-contract/">API 배치 계약</a><span class="wiki-index-summary">API 배치 계약은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-version-pinning"><a href="/wiki/api-version-pinning/">API 버전 고정</a><span class="wiki-index-summary">API 버전 고정은 클라이언트가 호출할 API 계약의 특정 버전을 명시해 서버의 변경으로 동작이 예기치 않게 달라지는 것을 막는 방식이다.</span></li>
 <li data-article-id="api-versioning"><a href="/wiki/api-versioning/">API 버전 관리</a><span class="wiki-index-summary">API 버전 관리는 인터페이스 계약의 변경을 식별 가능한 버전으로 구분해 기존 클라이언트와 새 기능의 공존을 제어하는 절차다.</span></li>
+<li data-article-id="api-version-negotiation"><a href="/wiki/api-version-negotiation/">API 버전 협상</a><span class="wiki-index-summary">API 버전 협상은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-partial-failure"><a href="/wiki/api-partial-failure/">API 부분 실패</a><span class="wiki-index-summary">API 부분 실패는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-secret-rotation"><a href="/wiki/api-secret-rotation/">API 비밀 키 교체</a><span class="wiki-index-summary">API 비밀 키 교체는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-cost-tracking"><a href="/wiki/api-cost-tracking/">API 비용 추적</a><span class="wiki-index-summary">API 비용 추적은 측정된 사용량에 시점별 가격과 할인·예산 규칙을 적용해 요청·프로젝트·조직별 비용을 계산하는 활동이다.</span></li>
+<li data-article-id="api-schema-evolution"><a href="/wiki/api-schema-evolution/">API 스키마 진화</a><span class="wiki-index-summary">API 스키마 진화는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-endpoint"><a href="/wiki/api-endpoint/">API 엔드포인트</a><span class="wiki-index-summary">API 엔드포인트는 특정 기능이나 자원에 접근하도록 서버가 공개한 네트워크 주소와 요청 계약의 결합이다.</span></li>
 <li data-article-id="api-error-model"><a href="/wiki/api-error-model/">API 오류 모델</a><span class="wiki-index-summary">API 오류 모델은 실패를 기계가 처리할 수 있는 코드·상태·메시지·세부 정보·재시도 의미로 표현하는 일관된 계약이다.</span></li>
+<li data-article-id="api-error-envelope"><a href="/wiki/api-error-envelope/">API 오류 엔벨로프</a><span class="wiki-index-summary">API 오류 엔벨로프는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-rate-limit-budget"><a href="/wiki/api-rate-limit-budget/">API 요청 제한 예산</a><span class="wiki-index-summary">API 요청 제한 예산은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-request-deduplication"><a href="/wiki/api-request-deduplication/">API 요청 중복 제거</a><span class="wiki-index-summary">API 요청 중복 제거는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-retry-budget"><a href="/wiki/api-retry-budget/">API 재시도 예산</a><span class="wiki-index-summary">API 재시도 예산은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="api-conformance-suite"><a href="/wiki/api-conformance-suite/">API 적합성 테스트 스위트</a><span class="wiki-index-summary">API 적합성 테스트 스위트는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-deprecation"><a href="/wiki/api-deprecation/">API 지원 종료</a><span class="wiki-index-summary">API 지원 종료는 기존 기능을 즉시 제거하지 않고 사용 중단 예정과 대체 경로, 종료 시점을 공지하는 수명주기 단계다.</span></li>
 <li data-article-id="api-client"><a href="/wiki/api-client/">API 클라이언트</a><span class="wiki-index-summary">API 클라이언트는 원격 인터페이스의 엔드포인트를 호출하고 요청 수명주기를 관리하는 애플리케이션 구성 요소다.</span></li>
+<li data-article-id="api-client-observability"><a href="/wiki/api-client-observability/">API 클라이언트 관측성</a><span class="wiki-index-summary">API 클라이언트 관측성은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-key"><a href="/wiki/api-key/">API 키</a><span class="wiki-index-summary">API 요청의 프로젝트나 사용자를 식별하고 권한을 확인하는 비밀 문자열이다.</span></li>
+<li data-article-id="api-timeout-budget"><a href="/wiki/api-timeout-budget/">API 타임아웃 예산</a><span class="wiki-index-summary">API 타임아웃 예산은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-pagination"><a href="/wiki/api-pagination/">API 페이지네이션</a><span class="wiki-index-summary">API 페이지네이션은 큰 결과 집합을 제한된 크기의 여러 응답으로 나누고 다음 부분을 탐색할 위치 정보를 제공하는 방식이다.</span></li>
+<li data-article-id="api-backward-compatibility"><a href="/wiki/api-backward-compatibility/">API 하위 호환성</a><span class="wiki-index-summary">API 하위 호환성은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-quota"><a href="/wiki/api-quota/">API 할당량</a><span class="wiki-index-summary">API 할당량은 사용자·조직·키가 일정 기간에 소비할 수 있는 요청 수, 토큰, 연산량 또는 비용의 상한이다.</span></li>
+<li data-article-id="api-quota-allocation"><a href="/wiki/api-quota-allocation/">API 할당량 배분</a><span class="wiki-index-summary">API 할당량 배분은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="api-action-tool"><a href="/wiki/api-action-tool/">API 행동 도구</a><span class="wiki-index-summary">API 행동 도구는 원격 서비스의 명세된 엔드포인트를 호출해 정보를 조회하거나 외부 상태를 변경하는 에이전트 도구다.</span></li>
 <li data-article-id="api-type-generation"><a href="/wiki/api-type-generation/">API 형식 생성</a><span class="wiki-index-summary">API 형식 생성은 기계 판독 가능한 API 명세에서 요청·응답 자료형과 클라이언트 인터페이스 코드를 만드는 작업이다.</span></li>
+<li data-article-id="api-circuit-breaker-policy"><a href="/wiki/api-circuit-breaker-policy/">API 회로 차단기 정책</a><span class="wiki-index-summary">API 회로 차단기 정책은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-b">
@@ -1380,6 +1552,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="densenet"><a href="/wiki/densenet/">DenseNet</a><span class="wiki-index-summary">DenseNet은 각 층의 특징 맵을 이후 모든 층의 입력에 이어 붙이는 조밀 연결 합성곱 신경망이다.</span></li>
 <li data-article-id="diskann"><a href="/wiki/diskann/">DiskANN</a><span class="wiki-index-summary">DiskANN은 대규모 벡터를 SSD에 두고 그래프 탐색과 메모리 캐시를 결합해 낮은 지연의 근사 검색을 수행하는 방법이다.</span></li>
 <li data-article-id="dora"><a href="/wiki/dora/">DoRA</a><span class="wiki-index-summary">DoRA는 가중치 행렬을 크기와 방향으로 분해하고 방향 변화는 저계수 어댑터로, 크기는 별도 파라미터로 학습하는 미세조정 방법이다.</span></li>
+<li data-article-id="dpo-beta-selection"><a href="/wiki/dpo-beta-selection/">DPO 베타 선택</a><span class="wiki-index-summary">DPO 베타 선택은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-f">
@@ -1447,7 +1620,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="keras"><a href="/wiki/keras/">Keras</a><span class="wiki-index-summary">Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다.</span></li>
 <li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-index-summary">KL 페널티는 새 정책의 출력 분포가 기준 정책에서 지나치게 멀어지는 것을 억제하기 위해 KL 발산을 목적함수에 더하는 항이다.</span></li>
 <li data-article-id="kv-cache"><a href="/wiki/kv-cache/">KV 캐시</a><span class="wiki-index-summary">이전 토큰의 어텐션 키와 값을 저장해 자동회귀 생성의 중복 계산을 줄이는 캐시다.</span></li>
+<li data-article-id="kv-cache-isolation"><a href="/wiki/kv-cache-isolation/">KV 캐시 격리</a><span class="wiki-index-summary">KV 캐시 격리는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="kv-cache-admission"><a href="/wiki/kv-cache-admission/">KV 캐시 수용 제어</a><span class="wiki-index-summary">KV 캐시 수용 제어는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="kv-cache-quantization"><a href="/wiki/kv-cache-quantization/">KV 캐시 양자화</a><span class="wiki-index-summary">KV 캐시 양자화는 어텐션 키와 값을 더 낮은 비트 표현으로 저장해 생성 중 메모리 사용량을 줄이는 기법이다.</span></li>
+<li data-article-id="kv-cache-capacity-planning"><a href="/wiki/kv-cache-capacity-planning/">KV 캐시 용량 계획</a><span class="wiki-index-summary">KV 캐시 용량 계획은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-l">
@@ -1457,8 +1633,28 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="l2-regularization"><a href="/wiki/l2-regularization/">L2 정규화</a><span class="wiki-index-summary">L2 정규화는 모델 파라미터 제곱합을 목적 함수에 벌점으로 더해 큰 가중치를 억제하는 방법이다.</span></li>
 <li data-article-id="local-interpretable-model-agnostic-explanations"><a href="/wiki/local-interpretable-model-agnostic-explanations/">LIME 설명</a><span class="wiki-index-summary">LIME은 관심 예측 주변에서 원래 모델의 동작을 근사하는 단순한 지역 대리 모델로 특징 중요도를 설명하는 방법이다.</span></li>
 <li data-article-id="linux-foundation-ai-data"><a href="/wiki/linux-foundation-ai-data/">Linux Foundation AI &amp; Data</a><span class="wiki-index-summary">Linux Foundation AI &amp; Data는 개방형 인공지능과 데이터 프로젝트의 중립적 거버넌스·협업·생태계 지원을 제공하는 재단 조직이다.</span></li>
+<li data-article-id="llm-api-contract-test"><a href="/wiki/llm-api-contract-test/">LLM API 계약 테스트</a><span class="wiki-index-summary">LLM API 계약 테스트는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-api-idempotency"><a href="/wiki/llm-api-idempotency/">LLM API 멱등성</a><span class="wiki-index-summary">LLM API 멱등성은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-api-pagination"><a href="/wiki/llm-api-pagination/">LLM API 페이지 나누기</a><span class="wiki-index-summary">LLM API 페이지 나누기는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-feature-flag"><a href="/wiki/llm-feature-flag/">LLM 기능 플래그</a><span class="wiki-index-summary">LLM 기능 플래그는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-routing-gateway"><a href="/wiki/llm-routing-gateway/">LLM 라우팅 게이트웨이</a><span class="wiki-index-summary">LLM 라우팅 게이트웨이는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-cost-attribution"><a href="/wiki/llm-cost-attribution/">LLM 비용 귀속</a><span class="wiki-index-summary">LLM 비용 귀속은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-serving-slo"><a href="/wiki/llm-serving-slo/">LLM 서빙 SLO</a><span class="wiki-index-summary">LLM 서빙 SLO은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-session-state"><a href="/wiki/llm-session-state/">LLM 세션 상태</a><span class="wiki-index-summary">LLM 세션 상태는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="llm-as-a-judge"><a href="/wiki/llm-as-a-judge/">LLM 심사자</a><span class="wiki-index-summary">언어 모델을 사용해 다른 모델 출력의 품질을 판정하거나 비교하는 평가 방식이다.</span></li>
+<li data-article-id="llm-request-envelope"><a href="/wiki/llm-request-envelope/">LLM 요청 엔벨로프</a><span class="wiki-index-summary">LLM 요청 엔벨로프는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-request-normalization"><a href="/wiki/llm-request-normalization/">LLM 요청 정규화</a><span class="wiki-index-summary">LLM 요청 정규화는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-workload-classification"><a href="/wiki/llm-workload-classification/">LLM 워크로드 분류</a><span class="wiki-index-summary">LLM 워크로드 분류는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-webhook-signature"><a href="/wiki/llm-webhook-signature/">LLM 웹훅 서명</a><span class="wiki-index-summary">LLM 웹훅 서명은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-webhook-replay-defense"><a href="/wiki/llm-webhook-replay-defense/">LLM 웹훅 재전송 방어</a><span class="wiki-index-summary">LLM 웹훅 재전송 방어는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-response-reproducibility"><a href="/wiki/llm-response-reproducibility/">LLM 응답 재현성</a><span class="wiki-index-summary">LLM 응답 재현성은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-response-normalization"><a href="/wiki/llm-response-normalization/">LLM 응답 정규화</a><span class="wiki-index-summary">LLM 응답 정규화는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-output-determinism"><a href="/wiki/llm-output-determinism/">LLM 출력 결정성</a><span class="wiki-index-summary">LLM 출력 결정성은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="llm-penetration-testing"><a href="/wiki/llm-penetration-testing/">LLM 침투 테스트</a><span class="wiki-index-summary">LLM 침투 테스트은 언어 모델 애플리케이션의 프롬프트·검색·도구·권한 경계를 실제 공격 절차로 검증하는 보안 시험이다.</span></li>
+<li data-article-id="llm-client-conformance"><a href="/wiki/llm-client-conformance/">LLM 클라이언트 적합성</a><span class="wiki-index-summary">LLM 클라이언트 적합성은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-judge-ensemble"><a href="/wiki/llm-judge-ensemble/">LLM 판정 앙상블</a><span class="wiki-index-summary">LLM 판정 앙상블은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="llm-evaluation-contract"><a href="/wiki/llm-evaluation-contract/">LLM 평가 계약</a><span class="wiki-index-summary">LLM 평가 계약은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="inter-rater-agreement-for-llm"><a href="/wiki/inter-rater-agreement-for-llm/">LLM 평가자 간 일치도</a><span class="wiki-index-summary">LLM 평가자 간 일치도는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="llmops"><a href="/wiki/llmops/">LLMOps</a><span class="wiki-index-summary">LLMOps는 대규모 언어 모델 애플리케이션의 프롬프트, 검색, 평가, 모델 버전과 운영 위험을 관리하는 수명주기 실천이다.</span></li>
 <li data-article-id="proximal-policy-optimization-for-llm"><a href="/wiki/proximal-policy-optimization-for-llm/">LLM용 근접 정책 최적화</a><span class="wiki-index-summary">LLM용 근접 정책 최적화는 보상 신호를 높이되 새 언어 모델 정책이 기준 정책에서 한 번에 너무 멀어지지 않도록 갱신하는 강화학습 방법이다.</span></li>
 <li data-article-id="longformer"><a href="/wiki/longformer/">Longformer</a><span class="wiki-index-summary">Longformer는 각 토큰의 국소 슬라이딩 창 어텐션과 일부 토큰의 전역 어텐션을 결합해 긴 문서를 처리하는 트랜스포머다.</span></li>
@@ -1534,7 +1730,9 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <section class="wiki-index-group" data-index-group="en-r">
 <h2 id="index-en-r">R</h2>
 <ul class="wiki-index-list">
+<li data-article-id="rag-evidence-lineage"><a href="/wiki/rag-evidence-lineage/">RAG 근거 계보</a><span class="wiki-index-summary">RAG 근거 계보는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="context-compression-for-rag"><a href="/wiki/context-compression-for-rag/">RAG 문맥 압축</a><span class="wiki-index-summary">RAG 문맥 압축은 검색된 자료에서 질의에 필요한 정보만 남겨 생성 모델에 전달할 토큰 수와 잡음을 줄이는 기법이다.</span></li>
+<li data-article-id="rag-index-freshness"><a href="/wiki/rag-index-freshness/">RAG 색인 신선도</a><span class="wiki-index-summary">RAG 색인 신선도는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="rag-poisoning"><a href="/wiki/rag-poisoning/">RAG 오염</a><span class="wiki-index-summary">RAG 오염은 검색 증강 생성 시스템의 문서나 인덱스에 악성 또는 거짓 콘텐츠를 넣어 검색 결과와 모델 출력을 조작하는 공격이다.</span></li>
 <li data-article-id="rag-evaluation"><a href="/wiki/rag-evaluation/">RAG 평가</a><span class="wiki-index-summary">RAG 평가는 검색 증강 생성 시스템의 검색 품질, 근거 사용과 최종 답변 품질을 연결해 측정하는 절차다.</span></li>
 <li data-article-id="react-agent"><a href="/wiki/react-agent/">ReAct 에이전트</a><span class="wiki-index-summary">언어 모델이 추론 메모와 외부 행동, 관찰을 번갈아 생성하며 계획을 수정하고 도구를 사용하는 에이전트 패턴이다.</span></li>
@@ -1556,8 +1754,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="sdk"><a href="/wiki/sdk/">SDK</a><span class="wiki-index-summary">특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다.</span></li>
 <li data-article-id="self-rag"><a href="/wiki/self-rag/">Self-RAG</a><span class="wiki-index-summary">Self-RAG는 언어 모델이 필요할 때 검색하고 검색 결과의 관련성 및 자신의 답변 근거성을 스스로 평가하도록 학습하는 방식이다.</span></li>
 <li data-article-id="sentencepiece"><a href="/wiki/sentencepiece/">SentencePiece</a><span class="wiki-index-summary">SentencePiece는 공백으로 미리 분리하지 않은 원시 문장에서 서브워드 어휘와 토큰화를 함께 학습하는 언어 독립 도구다.</span></li>
+<li data-article-id="sft-data-mixture"><a href="/wiki/sft-data-mixture/">SFT 데이터 혼합</a><span class="wiki-index-summary">SFT 데이터 혼합은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="shapley-additive-explanations"><a href="/wiki/shapley-additive-explanations/">SHAP 설명</a><span class="wiki-index-summary">SHAP은 협력 게임의 샤플리 값을 이용해 한 예측과 기준값의 차이를 특징별 가산 기여도로 배분하는 설명 방법 계열이다.</span></li>
 <li data-article-id="sparql"><a href="/wiki/sparql/">SPARQL</a><span class="wiki-index-summary">SPARQL은 RDF 그래프에서 트리플 패턴을 매칭하고 결과를 선택·구성·갱신하는 표준 질의 언어와 프로토콜이다.</span></li>
+<li data-article-id="server-sent-event-recovery"><a href="/wiki/server-sent-event-recovery/">SSE 복구</a><span class="wiki-index-summary">SSE 복구는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="swe-bench"><a href="/wiki/swe-bench/">SWE-bench</a><span class="wiki-index-summary">SWE-bench는 실제 오픈소스 저장소의 이슈와 코드 상태를 사용해 시스템이 결함을 수정하고 테스트를 통과시키는 능력을 평가하는 벤치마크다.</span></li>
 <li data-article-id="swiglu"><a href="/wiki/swiglu/">SwiGLU</a><span class="wiki-index-summary">SwiGLU는 SiLU로 활성화한 선형 분기와 다른 선형 분기를 원소별로 곱하는 게이트 순방향층 함수다.</span></li>
 </ul>

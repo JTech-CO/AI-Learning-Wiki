@@ -132,7 +132,37 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+- [멀티 LoRA 서빙](/wiki/multi-lora-serving/)
+- [모델 로딩 지연 시간](/wiki/model-loading-latency/)
+- [모델 플릿 라우팅](/wiki/model-fleet-routing/)
+- [어댑터 서빙](/wiki/adapter-serving/)
+- [연속 배칭 공정성](/wiki/continuous-batching-fairness/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 20개 문서 보기</summary>
+
+- [연속 배칭 정책](/wiki/continuous-batching-policy/)
+- [요청 선점](/wiki/request-preemption/)
+- [추론 과부하 제어](/wiki/inference-overload-control/)
+- [추론 꼬리 지연 디버깅](/wiki/inference-tail-latency-debugging/)
+- [추론 에너지 효율](/wiki/inference-energy-efficiency/)
+- [추론 역압](/wiki/inference-backpressure/)
+- [추론 용량 여유분](/wiki/inference-capacity-headroom/)
+- [추론 워크로드 형상화](/wiki/inference-workload-shaping/)
+- [추론 웜 풀](/wiki/inference-warm-pool/)
+- [추론 큐 규칙](/wiki/inference-queue-discipline/)
+- [추론 탄소 회계](/wiki/inference-carbon-accounting/)
+- [추론 SLO 오류 예산](/wiki/inference-slo-error-budget/)
+- [토큰 스케줄러](/wiki/token-scheduler/)
+- [토큰 예산 수용 제어](/wiki/token-budget-admission-control/)
+- [프리필·디코드 분리](/wiki/prefill-decode-disaggregation/)
+- [KV 캐시 격리](/wiki/kv-cache-isolation/)
+- [KV 캐시 수용 제어](/wiki/kv-cache-admission/)
+- [KV 캐시 용량 계획](/wiki/kv-cache-capacity-planning/)
+- [LLM 비용 귀속](/wiki/llm-cost-attribution/)
+- [LLM 서빙 SLO](/wiki/llm-serving-slo/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 
