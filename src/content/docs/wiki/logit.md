@@ -121,9 +121,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [SciPy special.logit](https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.logit.html) — documentation
-<span id="reference-2"></span>2. [Logit — Wikipedia](https://en.wikipedia.org/wiki/Logit) — encyclopedia
-<span id="reference-3"></span>3. [An Introduction to Statistical Learning](https://www.statlearning.com/) — book
+1. <span id="reference-1"></span>[SciPy special.logit](https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.logit.html) — documentation
+2. <span id="reference-2"></span>[Logit — Wikipedia](https://en.wikipedia.org/wiki/Logit) — encyclopedia
+3. <span id="reference-3"></span>[An Introduction to Statistical Learning](https://www.statlearning.com/) — book
 
 ### 코스에서 계속 읽기
 

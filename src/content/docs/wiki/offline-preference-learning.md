@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) — paper
-<span id="reference-2"></span>2. [Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499) — paper
-<span id="reference-3"></span>3. [The RefinedWeb Dataset for Falcon LLM](https://arxiv.org/abs/2306.01116) — paper
-<span id="reference-4"></span>4. [DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining](https://arxiv.org/abs/2305.10429) — paper
-<span id="reference-5"></span>5. [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556) — paper
-<span id="reference-6"></span>6. [Hugging Face Datasets Documentation](https://huggingface.co/docs/datasets/index) — documentation
-<span id="reference-7"></span>7. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
-<span id="reference-8"></span>8. [Machine learning — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning) — encyclopedia
+1. <span id="reference-1"></span>[Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) — paper
+2. <span id="reference-2"></span>[Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499) — paper
+3. <span id="reference-3"></span>[The RefinedWeb Dataset for Falcon LLM](https://arxiv.org/abs/2306.01116) — paper
+4. <span id="reference-4"></span>[DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining](https://arxiv.org/abs/2305.10429) — paper
+5. <span id="reference-5"></span>[Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556) — paper
+6. <span id="reference-6"></span>[Hugging Face Datasets Documentation](https://huggingface.co/docs/datasets/index) — documentation
+7. <span id="reference-7"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
+8. <span id="reference-8"></span>[Machine learning — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning) — encyclopedia
 
 ### 코스에서 계속 읽기
 

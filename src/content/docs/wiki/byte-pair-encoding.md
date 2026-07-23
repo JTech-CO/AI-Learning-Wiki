@@ -167,11 +167,11 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
-<span id="reference-2"></span>2. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-<span id="reference-3"></span>3. [Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
-<span id="reference-4"></span>4. [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-<span id="reference-5"></span>5. [바이트 페어 인코딩 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%B0%94%EC%9D%B4%ED%8A%B8_%ED%8E%98%EC%96%B4_%EC%9D%B8%EC%BD%94%EB%94%A9) — encyclopedia
+1. <span id="reference-1"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
+2. <span id="reference-2"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
+3. <span id="reference-3"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
+4. <span id="reference-4"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
+5. <span id="reference-5"></span>[바이트 페어 인코딩 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%B0%94%EC%9D%B4%ED%8A%B8_%ED%8E%98%EC%96%B4_%EC%9D%B8%EC%BD%94%EB%94%A9) — encyclopedia
 
 ### 코스에서 계속 읽기
 

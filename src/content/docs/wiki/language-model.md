@@ -164,9 +164,9 @@ n-그램과 작은 전용 모델은 제한된 어휘와 낮은 지연, 해석 �
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
-<span id="reference-2"></span>2. [Language model — Wikipedia](https://en.wikipedia.org/wiki/Language_model) — encyclopedia
-<span id="reference-3"></span>3. [Speech and Language Processing: N-gram Language Models](https://web.stanford.edu/~jurafsky/slp3/3.pdf) — book
+1. <span id="reference-1"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
+2. <span id="reference-2"></span>[Language model — Wikipedia](https://en.wikipedia.org/wiki/Language_model) — encyclopedia
+3. <span id="reference-3"></span>[Speech and Language Processing: N-gram Language Models](https://web.stanford.edu/~jurafsky/slp3/3.pdf) — book
 
 ### 코스에서 계속 읽기
 

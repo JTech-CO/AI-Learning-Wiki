@@ -252,9 +252,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
-<span id="reference-2"></span>2. [Transfer learning — Wikipedia](https://en.wikipedia.org/wiki/Transfer_learning) — encyclopedia
-<span id="reference-3"></span>3. [Deep Learning Book: Representation Learning](https://www.deeplearningbook.org/contents/representation.html) — book
+1. <span id="reference-1"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
+2. <span id="reference-2"></span>[Transfer learning — Wikipedia](https://en.wikipedia.org/wiki/Transfer_learning) — encyclopedia
+3. <span id="reference-3"></span>[Deep Learning Book: Representation Learning](https://www.deeplearningbook.org/contents/representation.html) — book
 
 ### 코스에서 계속 읽기
 

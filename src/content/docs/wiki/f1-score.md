@@ -229,9 +229,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [A Systematic Analysis of Performance Measures for Classification Tasks](https://atour.iro.umontreal.ca/rali/sites/default/files/publis/SokolovaLapalme-JIPM09.pdf) — paper
-<span id="reference-2"></span>2. [TorchMetrics F-1 Score](https://lightning.ai/docs/torchmetrics/stable/classification/f1_score.html) — documentation
-<span id="reference-3"></span>3. [F-score — Wikipedia](https://en.wikipedia.org/wiki/F-score) — encyclopedia
+1. <span id="reference-1"></span>[A Systematic Analysis of Performance Measures for Classification Tasks](https://atour.iro.umontreal.ca/rali/sites/default/files/publis/SokolovaLapalme-JIPM09.pdf) — paper
+2. <span id="reference-2"></span>[TorchMetrics F-1 Score](https://lightning.ai/docs/torchmetrics/stable/classification/f1_score.html) — documentation
+3. <span id="reference-3"></span>[F-score — Wikipedia](https://en.wikipedia.org/wiki/F-score) — encyclopedia
 
 ### 코스에서 계속 읽기
 

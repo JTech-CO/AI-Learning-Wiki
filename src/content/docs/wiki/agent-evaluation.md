@@ -140,14 +140,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688) — paper
-<span id="reference-2"></span>2. [BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) — paper
-<span id="reference-3"></span>3. [ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) — paper
-<span id="reference-4"></span>4. [BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) — paper
-<span id="reference-5"></span>5. [On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) — paper
-<span id="reference-6"></span>6. [The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
-<span id="reference-7"></span>7. [MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-<span id="reference-8"></span>8. [Statistical classification — Wikipedia](https://en.wikipedia.org/wiki/Statistical_classification) — encyclopedia
+1. <span id="reference-1"></span>[AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688) — paper
+2. <span id="reference-2"></span>[BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) — paper
+3. <span id="reference-3"></span>[ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) — paper
+4. <span id="reference-4"></span>[BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) — paper
+5. <span id="reference-5"></span>[On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) — paper
+6. <span id="reference-6"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
+7. <span id="reference-7"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
+8. <span id="reference-8"></span>[Statistical classification — Wikipedia](https://en.wikipedia.org/wiki/Statistical_classification) — encyclopedia
 
 ### 코스에서 계속 읽기
 

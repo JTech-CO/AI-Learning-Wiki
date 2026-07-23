@@ -136,13 +136,13 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-<span id="reference-2"></span>2. [OWASP Top 10 for Large Language Model Applications](https://genai.owasp.org/llm-top-10/) — standard
-<span id="reference-3"></span>3. [Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/abs/1610.05820) — paper
-<span id="reference-4"></span>4. [Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures](https://arxiv.org/abs/1409.0031) — paper
-<span id="reference-5"></span>5. [OWASP GenAI Security Project](https://genai.owasp.org/) — standard
-<span id="reference-6"></span>6. [MITRE ATLAS](https://atlas.mitre.org/) — documentation
-<span id="reference-7"></span>7. [Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+2. <span id="reference-2"></span>[OWASP Top 10 for Large Language Model Applications](https://genai.owasp.org/llm-top-10/) — standard
+3. <span id="reference-3"></span>[Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/abs/1610.05820) — paper
+4. <span id="reference-4"></span>[Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures](https://arxiv.org/abs/1409.0031) — paper
+5. <span id="reference-5"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
+6. <span id="reference-6"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
+7. <span id="reference-7"></span>[Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
 
 ### 코스에서 계속 읽기
 

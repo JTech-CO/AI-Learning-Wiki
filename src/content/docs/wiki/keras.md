@@ -138,14 +138,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Keras Developer Guides](https://keras.io/guides/) — documentation
-<span id="reference-2"></span>2. [Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — standard
-<span id="reference-3"></span>3. [SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) — documentation
-<span id="reference-4"></span>4. [Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) — documentation
-<span id="reference-5"></span>5. [Open Source Licenses](https://opensource.org/licenses) — standard
-<span id="reference-6"></span>6. [SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
-<span id="reference-7"></span>7. [Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
-<span id="reference-8"></span>8. [Keras — Wikipedia](https://en.wikipedia.org/wiki/Keras) — encyclopedia
+1. <span id="reference-1"></span>[Keras Developer Guides](https://keras.io/guides/) — documentation
+2. <span id="reference-2"></span>[Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — standard
+3. <span id="reference-3"></span>[SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) — documentation
+4. <span id="reference-4"></span>[Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) — documentation
+5. <span id="reference-5"></span>[Open Source Licenses](https://opensource.org/licenses) — standard
+6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
+7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
+8. <span id="reference-8"></span>[Keras — Wikipedia](https://en.wikipedia.org/wiki/Keras) — encyclopedia
 
 ### 코스에서 계속 읽기
 

@@ -165,11 +165,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
-<span id="reference-2"></span>2. [Vocabulary — Wikipedia](https://en.wikipedia.org/wiki/Vocabulary) — encyclopedia
-<span id="reference-3"></span>3. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-<span id="reference-4"></span>4. [Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
-<span id="reference-5"></span>5. [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
+1. <span id="reference-1"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
+2. <span id="reference-2"></span>[Vocabulary — Wikipedia](https://en.wikipedia.org/wiki/Vocabulary) — encyclopedia
+3. <span id="reference-3"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
+4. <span id="reference-4"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
+5. <span id="reference-5"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
 
 ### 코스에서 계속 읽기
 

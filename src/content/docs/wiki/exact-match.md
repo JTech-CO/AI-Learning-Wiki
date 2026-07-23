@@ -148,14 +148,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) — paper
-<span id="reference-2"></span>2. [ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) — paper
-<span id="reference-3"></span>3. [BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) — paper
-<span id="reference-4"></span>4. [On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) — paper
-<span id="reference-5"></span>5. [The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
-<span id="reference-6"></span>6. [MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-<span id="reference-7"></span>7. [NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
-<span id="reference-8"></span>8. [SameAs — Wikipedia](https://en.wikipedia.org/wiki/SameAs) — encyclopedia
+1. <span id="reference-1"></span>[BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) — paper
+2. <span id="reference-2"></span>[ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) — paper
+3. <span id="reference-3"></span>[BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) — paper
+4. <span id="reference-4"></span>[On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) — paper
+5. <span id="reference-5"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
+6. <span id="reference-6"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
+7. <span id="reference-7"></span>[NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
+8. <span id="reference-8"></span>[SameAs — Wikipedia](https://en.wikipedia.org/wiki/SameAs) — encyclopedia
 
 ### 코스에서 계속 읽기
 

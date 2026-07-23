@@ -129,10 +129,10 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-<span id="reference-2"></span>2. [vLLM documentation](https://docs.vllm.ai/en/stable/) — documentation
-<span id="reference-3"></span>3. [The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
-<span id="reference-4"></span>4. [A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417) — paper
+1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
+2. <span id="reference-2"></span>[vLLM documentation](https://docs.vllm.ai/en/stable/) — documentation
+3. <span id="reference-3"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
+4. <span id="reference-4"></span>[A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417) — paper
 
 ### 코스에서 계속 읽기
 

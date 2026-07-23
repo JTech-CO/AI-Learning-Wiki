@@ -151,12 +151,12 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-<span id="reference-2"></span>2. [환각 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%99%98%EA%B0%81) — encyclopedia
-<span id="reference-3"></span>3. [Hallucination (artificial intelligence) — Wikipedia](https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29) — encyclopedia
-<span id="reference-4"></span>4. [OWASP GenAI Security Project](https://genai.owasp.org/) — standard
-<span id="reference-5"></span>5. [MITRE ATLAS](https://atlas.mitre.org/) — documentation
-<span id="reference-6"></span>6. [Hallucination — Wikipedia](https://en.wikipedia.org/wiki/Hallucination) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+2. <span id="reference-2"></span>[환각 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%99%98%EA%B0%81) — encyclopedia
+3. <span id="reference-3"></span>[Hallucination (artificial intelligence) — Wikipedia](https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29) — encyclopedia
+4. <span id="reference-4"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
+5. <span id="reference-5"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
+6. <span id="reference-6"></span>[Hallucination — Wikipedia](https://en.wikipedia.org/wiki/Hallucination) — encyclopedia
 
 ### 코스에서 계속 읽기
 

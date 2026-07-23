@@ -138,11 +138,11 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
-<span id="reference-2"></span>2. [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
-<span id="reference-3"></span>3. [Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) — paper
-<span id="reference-4"></span>4. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-<span id="reference-5"></span>5. [Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
+1. <span id="reference-1"></span>[Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
+2. <span id="reference-2"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
+3. <span id="reference-3"></span>[Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) — paper
+4. <span id="reference-4"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
+5. <span id="reference-5"></span>[Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
 
 ### 코스에서 계속 읽기
 

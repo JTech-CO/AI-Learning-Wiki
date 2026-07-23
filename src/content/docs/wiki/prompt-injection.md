@@ -222,9 +222,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-<span id="reference-2"></span>2. [OWASP GenAI Security Project](https://genai.owasp.org/) — standard
-<span id="reference-3"></span>3. [프롬프트 인젝션 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8_%EC%9D%B8%EC%A0%9D%EC%85%98) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+2. <span id="reference-2"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
+3. <span id="reference-3"></span>[프롬프트 인젝션 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8_%EC%9D%B8%EC%A0%9D%EC%85%98) — encyclopedia
 
 ### 코스에서 계속 읽기
 

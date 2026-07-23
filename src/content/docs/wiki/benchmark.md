@@ -192,13 +192,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
-<span id="reference-2"></span>2. [Benchmark (computing) — Wikipedia](https://en.wikipedia.org/wiki/Benchmark_%28computing%29) — encyclopedia
-<span id="reference-3"></span>3. [The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
-<span id="reference-4"></span>4. [MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-<span id="reference-5"></span>5. [NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
-<span id="reference-6"></span>6. [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-<span id="reference-7"></span>7. [Benchmark — Wikipedia](https://en.wikipedia.org/wiki/Benchmark) — encyclopedia
+1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
+2. <span id="reference-2"></span>[Benchmark (computing) — Wikipedia](https://en.wikipedia.org/wiki/Benchmark_%28computing%29) — encyclopedia
+3. <span id="reference-3"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
+4. <span id="reference-4"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
+5. <span id="reference-5"></span>[NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
+6. <span id="reference-6"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
+7. <span id="reference-7"></span>[Benchmark — Wikipedia](https://en.wikipedia.org/wiki/Benchmark) — encyclopedia
 
 ### 코스에서 계속 읽기
 

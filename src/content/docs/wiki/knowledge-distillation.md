@@ -156,12 +156,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
-<span id="reference-2"></span>2. [Knowledge distillation — Wikipedia](https://en.wikipedia.org/wiki/Knowledge_distillation) — encyclopedia
-<span id="reference-3"></span>3. [PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-<span id="reference-4"></span>4. [TRL Documentation](https://huggingface.co/docs/trl/index) — documentation
-<span id="reference-5"></span>5. [DeepSpeed Documentation](https://www.deepspeed.ai/) — documentation
-<span id="reference-6"></span>6. [지식 증류 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%A7%80%EC%8B%9D_%EC%A6%9D%EB%A5%98) — encyclopedia
+1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
+2. <span id="reference-2"></span>[Knowledge distillation — Wikipedia](https://en.wikipedia.org/wiki/Knowledge_distillation) — encyclopedia
+3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
+4. <span id="reference-4"></span>[TRL Documentation](https://huggingface.co/docs/trl/index) — documentation
+5. <span id="reference-5"></span>[DeepSpeed Documentation](https://www.deepspeed.ai/) — documentation
+6. <span id="reference-6"></span>[지식 증류 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%A7%80%EC%8B%9D_%EC%A6%9D%EB%A5%98) — encyclopedia
 
 ### 코스에서 계속 읽기
 

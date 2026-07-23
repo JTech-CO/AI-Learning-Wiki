@@ -152,14 +152,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Mathematics for Machine Learning](https://mml-book.github.io/) — book
-<span id="reference-2"></span>2. [Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) — book
-<span id="reference-3"></span>3. [Deep Learning: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-<span id="reference-4"></span>4. [NumPy Linear Algebra Reference](https://numpy.org/doc/stable/reference/routines.linalg.html) — documentation
-<span id="reference-5"></span>5. [Deep Learning](https://www.deeplearningbook.org/) — book
-<span id="reference-6"></span>6. [scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-<span id="reference-7"></span>7. [PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-<span id="reference-8"></span>8. [Vector space — Wikipedia](https://en.wikipedia.org/wiki/Vector_space) — encyclopedia
+1. <span id="reference-1"></span>[Mathematics for Machine Learning](https://mml-book.github.io/) — book
+2. <span id="reference-2"></span>[Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) — book
+3. <span id="reference-3"></span>[Deep Learning: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
+4. <span id="reference-4"></span>[NumPy Linear Algebra Reference](https://numpy.org/doc/stable/reference/routines.linalg.html) — documentation
+5. <span id="reference-5"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
+6. <span id="reference-6"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
+7. <span id="reference-7"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
+8. <span id="reference-8"></span>[Vector space — Wikipedia](https://en.wikipedia.org/wiki/Vector_space) — encyclopedia
 
 ### 코스에서 계속 읽기
 

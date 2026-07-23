@@ -136,13 +136,13 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-<span id="reference-2"></span>2. [RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) — standard
-<span id="reference-3"></span>3. [HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-<span id="reference-4"></span>4. [RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
-<span id="reference-5"></span>5. [RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
-<span id="reference-6"></span>6. [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-<span id="reference-7"></span>7. [HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+1. <span id="reference-1"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
+2. <span id="reference-2"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) — standard
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
+4. <span id="reference-4"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
+5. <span id="reference-5"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
+6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+7. <span id="reference-7"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
 
 ### 코스에서 계속 읽기
 

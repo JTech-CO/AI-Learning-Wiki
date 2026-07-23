@@ -148,14 +148,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Entropy and Information Theory](https://ee.stanford.edu/~gray/it.html) — book
-<span id="reference-2"></span>2. [Mathematics for Machine Learning](https://mml-book.github.io/) — book
-<span id="reference-3"></span>3. [Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) — book
-<span id="reference-4"></span>4. [Deep Learning: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-<span id="reference-5"></span>5. [NumPy Linear Algebra Reference](https://numpy.org/doc/stable/reference/routines.linalg.html) — documentation
-<span id="reference-6"></span>6. [Deep Learning](https://www.deeplearningbook.org/) — book
-<span id="reference-7"></span>7. [scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-<span id="reference-8"></span>8. [정보 이득 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%95%EB%B3%B4_%EC%9D%B4%EB%93%9D) — encyclopedia
+1. <span id="reference-1"></span>[Entropy and Information Theory](https://ee.stanford.edu/~gray/it.html) — book
+2. <span id="reference-2"></span>[Mathematics for Machine Learning](https://mml-book.github.io/) — book
+3. <span id="reference-3"></span>[Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) — book
+4. <span id="reference-4"></span>[Deep Learning: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
+5. <span id="reference-5"></span>[NumPy Linear Algebra Reference](https://numpy.org/doc/stable/reference/routines.linalg.html) — documentation
+6. <span id="reference-6"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
+7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
+8. <span id="reference-8"></span>[정보 이득 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%95%EB%B3%B4_%EC%9D%B4%EB%93%9D) — encyclopedia
 
 ### 코스에서 계속 읽기
 

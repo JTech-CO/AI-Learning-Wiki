@@ -144,14 +144,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Language Models as Knowledge Bases?](https://arxiv.org/abs/1909.01066) — paper
-<span id="reference-2"></span>2. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
-<span id="reference-3"></span>3. [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) — paper
-<span id="reference-4"></span>4. [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
-<span id="reference-5"></span>5. [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) — book
-<span id="reference-6"></span>6. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-<span id="reference-7"></span>7. [Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
-<span id="reference-8"></span>8. [Large language model — Wikipedia](https://en.wikipedia.org/wiki/Large_language_model) — encyclopedia
+1. <span id="reference-1"></span>[Language Models as Knowledge Bases?](https://arxiv.org/abs/1909.01066) — paper
+2. <span id="reference-2"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
+3. <span id="reference-3"></span>[Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) — paper
+4. <span id="reference-4"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
+5. <span id="reference-5"></span>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) — book
+6. <span id="reference-6"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
+7. <span id="reference-7"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
+8. <span id="reference-8"></span>[Large language model — Wikipedia](https://en.wikipedia.org/wiki/Large_language_model) — encyclopedia
 
 ### 코스에서 계속 읽기
 

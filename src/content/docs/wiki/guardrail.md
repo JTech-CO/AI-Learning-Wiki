@@ -273,9 +273,9 @@ AI 시스템의 입력·출력·도구 행동과 운영 상태를 정책에 맞�
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [NIST AI RMF: Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — standard
-<span id="reference-2"></span>2. [OWASP LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) — documentation
-<span id="reference-3"></span>3. [AI alignment — Wikipedia](https://en.wikipedia.org/wiki/AI_alignment) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI RMF: Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — standard
+2. <span id="reference-2"></span>[OWASP LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) — documentation
+3. <span id="reference-3"></span>[AI alignment — Wikipedia](https://en.wikipedia.org/wiki/AI_alignment) — encyclopedia
 
 ### 코스에서 계속 읽기
 

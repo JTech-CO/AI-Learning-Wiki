@@ -157,10 +157,10 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-<span id="reference-2"></span>2. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-<span id="reference-3"></span>3. [PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-<span id="reference-4"></span>4. [Transformer — Wikipedia](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) — encyclopedia
+1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
+2. <span id="reference-2"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
+3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
+4. <span id="reference-4"></span>[Transformer — Wikipedia](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) — encyclopedia
 
 ### 코스에서 계속 읽기
 

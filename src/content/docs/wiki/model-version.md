@@ -233,9 +233,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Towards Semantic Versioning of Open Pre-trained Language Model Releases](https://arxiv.org/abs/2409.10472) — paper
-<span id="reference-2"></span>2. [MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) — documentation
-<span id="reference-3"></span>3. [Software versioning — Wikipedia](https://en.wikipedia.org/wiki/Software_versioning) — encyclopedia
+1. <span id="reference-1"></span>[Towards Semantic Versioning of Open Pre-trained Language Model Releases](https://arxiv.org/abs/2409.10472) — paper
+2. <span id="reference-2"></span>[MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) — documentation
+3. <span id="reference-3"></span>[Software versioning — Wikipedia](https://en.wikipedia.org/wiki/Software_versioning) — encyclopedia
 
 ### 코스에서 계속 읽기
 

@@ -174,13 +174,13 @@ AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하�
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [OWASP Top 10 for Large Language Model Applications](https://genai.owasp.org/llm-top-10/) — standard
-<span id="reference-2"></span>2. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-<span id="reference-3"></span>3. [Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/abs/1610.05820) — paper
-<span id="reference-4"></span>4. [Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures](https://arxiv.org/abs/1409.0031) — paper
-<span id="reference-5"></span>5. [OWASP GenAI Security Project](https://genai.owasp.org/) — standard
-<span id="reference-6"></span>6. [MITRE ATLAS](https://atlas.mitre.org/) — documentation
-<span id="reference-7"></span>7. [AI 안전 — 한국어 위키백과](https://ko.wikipedia.org/wiki/AI_%EC%95%88%EC%A0%84) — encyclopedia
+1. <span id="reference-1"></span>[OWASP Top 10 for Large Language Model Applications](https://genai.owasp.org/llm-top-10/) — standard
+2. <span id="reference-2"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+3. <span id="reference-3"></span>[Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/abs/1610.05820) — paper
+4. <span id="reference-4"></span>[Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures](https://arxiv.org/abs/1409.0031) — paper
+5. <span id="reference-5"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
+6. <span id="reference-6"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
+7. <span id="reference-7"></span>[AI 안전 — 한국어 위키백과](https://ko.wikipedia.org/wiki/AI_%EC%95%88%EC%A0%84) — encyclopedia
 
 ### 코스에서 계속 읽기
 

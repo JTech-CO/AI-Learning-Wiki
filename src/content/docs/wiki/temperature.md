@@ -231,9 +231,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) — paper
-<span id="reference-2"></span>2. [Mistral AI: Temperature](https://docs.mistral.ai/resources/cookbooks/concept-deep-dive-sampling-temperature) — documentation
-<span id="reference-3"></span>3. [Softmax function — Wikipedia](https://en.wikipedia.org/wiki/Softmax_function) — encyclopedia
+1. <span id="reference-1"></span>[Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) — paper
+2. <span id="reference-2"></span>[Mistral AI: Temperature](https://docs.mistral.ai/resources/cookbooks/concept-deep-dive-sampling-temperature) — documentation
+3. <span id="reference-3"></span>[Softmax function — Wikipedia](https://en.wikipedia.org/wiki/Softmax_function) — encyclopedia
 
 ### 코스에서 계속 읽기
 

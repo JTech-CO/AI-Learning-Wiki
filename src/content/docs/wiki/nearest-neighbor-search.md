@@ -165,12 +165,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
-<span id="reference-2"></span>2. [Nearest neighbor search — Wikipedia](https://en.wikipedia.org/wiki/Nearest_neighbor_search) — encyclopedia
-<span id="reference-3"></span>3. [Faiss Documentation](https://faiss.ai/) — documentation
-<span id="reference-4"></span>4. [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) — book
-<span id="reference-5"></span>5. [Sentence Transformers Documentation](https://sbert.net/) — documentation
-<span id="reference-6"></span>6. [Information retrieval — Wikipedia](https://en.wikipedia.org/wiki/Information_retrieval) — encyclopedia
+1. <span id="reference-1"></span>[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
+2. <span id="reference-2"></span>[Nearest neighbor search — Wikipedia](https://en.wikipedia.org/wiki/Nearest_neighbor_search) — encyclopedia
+3. <span id="reference-3"></span>[Faiss Documentation](https://faiss.ai/) — documentation
+4. <span id="reference-4"></span>[Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) — book
+5. <span id="reference-5"></span>[Sentence Transformers Documentation](https://sbert.net/) — documentation
+6. <span id="reference-6"></span>[Information retrieval — Wikipedia](https://en.wikipedia.org/wiki/Information_retrieval) — encyclopedia
 
 ### 코스에서 계속 읽기
 

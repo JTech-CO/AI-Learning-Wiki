@@ -156,11 +156,11 @@ AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-<span id="reference-2"></span>2. [Information privacy — Wikipedia](https://en.wikipedia.org/wiki/Information_privacy) — encyclopedia
-<span id="reference-3"></span>3. [OWASP GenAI Security Project](https://genai.owasp.org/) — standard
-<span id="reference-4"></span>4. [MITRE ATLAS](https://atlas.mitre.org/) — documentation
-<span id="reference-5"></span>5. [Privacy — Wikipedia](https://en.wikipedia.org/wiki/Privacy) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+2. <span id="reference-2"></span>[Information privacy — Wikipedia](https://en.wikipedia.org/wiki/Information_privacy) — encyclopedia
+3. <span id="reference-3"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
+4. <span id="reference-4"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
+5. <span id="reference-5"></span>[Privacy — Wikipedia](https://en.wikipedia.org/wiki/Privacy) — encyclopedia
 
 ### 코스에서 계속 읽기
 

@@ -133,9 +133,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-<span id="reference-2"></span>2. [NumPy matmul](https://numpy.org/doc/stable/reference/generated/numpy.matmul.html) — documentation
-<span id="reference-3"></span>3. [Matrix multiplication — Wikipedia](https://en.wikipedia.org/wiki/Matrix_multiplication) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
+2. <span id="reference-2"></span>[NumPy matmul](https://numpy.org/doc/stable/reference/generated/numpy.matmul.html) — documentation
+3. <span id="reference-3"></span>[Matrix multiplication — Wikipedia](https://en.wikipedia.org/wiki/Matrix_multiplication) — encyclopedia
 
 ### 코스에서 계속 읽기
 

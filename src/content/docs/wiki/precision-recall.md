@@ -232,9 +232,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
-<span id="reference-2"></span>2. [Scikit-learn: Metrics and scoring](https://scikit-learn.org/stable/modules/model_evaluation.html) — documentation
-<span id="reference-3"></span>3. [Precision and recall — Wikipedia](https://en.wikipedia.org/wiki/Precision_and_recall) — encyclopedia
+1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
+2. <span id="reference-2"></span>[Scikit-learn: Metrics and scoring](https://scikit-learn.org/stable/modules/model_evaluation.html) — documentation
+3. <span id="reference-3"></span>[Precision and recall — Wikipedia](https://en.wikipedia.org/wiki/Precision_and_recall) — encyclopedia
 
 ### 코스에서 계속 읽기
 

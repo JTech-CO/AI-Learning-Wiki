@@ -246,11 +246,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-<span id="reference-2"></span>2. [Deep Learning](https://www.deeplearningbook.org/) — book
-<span id="reference-3"></span>3. [scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
-<span id="reference-4"></span>4. [PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-<span id="reference-5"></span>5. [코사인 유사도 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EC%9D%B8_%EC%9C%A0%EC%82%AC%EB%8F%84) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
+2. <span id="reference-2"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
+3. <span id="reference-3"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
+4. <span id="reference-4"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
+5. <span id="reference-5"></span>[코사인 유사도 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EC%9D%B8_%EC%9C%A0%EC%82%AC%EB%8F%84) — encyclopedia
 
 ### 코스에서 계속 읽기
 

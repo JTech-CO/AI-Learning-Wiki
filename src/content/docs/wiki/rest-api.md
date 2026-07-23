@@ -218,10 +218,10 @@ REST라는 이름만으로 일관된 스키마·보안·버전 관리가 보장�
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-<span id="reference-2"></span>2. [REST — Wikipedia](https://en.wikipedia.org/wiki/REST) — encyclopedia
-<span id="reference-3"></span>3. [HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-<span id="reference-4"></span>4. [Fielding Dissertation: Representational State Transfer](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) — paper
+1. <span id="reference-1"></span>[MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+2. <span id="reference-2"></span>[REST — Wikipedia](https://en.wikipedia.org/wiki/REST) — encyclopedia
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
+4. <span id="reference-4"></span>[Fielding Dissertation: Representational State Transfer](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) — paper
 
 ### 코스에서 계속 읽기
 

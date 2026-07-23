@@ -156,10 +156,10 @@ API 키가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판�
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-<span id="reference-2"></span>2. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-<span id="reference-3"></span>3. [HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-<span id="reference-4"></span>4. [HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+1. <span id="reference-1"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+2. <span id="reference-2"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
+4. <span id="reference-4"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
 
 ### 코스에서 계속 읽기
 

@@ -255,9 +255,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781) — paper
-<span id="reference-2"></span>2. [Word embedding — Wikipedia](https://en.wikipedia.org/wiki/Word_embedding) — encyclopedia
-<span id="reference-3"></span>3. [PyTorch Embedding layer](https://docs.pytorch.org/docs/stable/generated/torch.nn.Embedding.html) — documentation
+1. <span id="reference-1"></span>[Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781) — paper
+2. <span id="reference-2"></span>[Word embedding — Wikipedia](https://en.wikipedia.org/wiki/Word_embedding) — encyclopedia
+3. <span id="reference-3"></span>[PyTorch Embedding layer](https://docs.pytorch.org/docs/stable/generated/torch.nn.Embedding.html) — documentation
 
 ### 코스에서 계속 읽기
 

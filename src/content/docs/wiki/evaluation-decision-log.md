@@ -129,10 +129,10 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
-<span id="reference-2"></span>2. [MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-<span id="reference-3"></span>3. [NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
-<span id="reference-4"></span>4. [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
+1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
+2. <span id="reference-2"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
+3. <span id="reference-3"></span>[NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
+4. <span id="reference-4"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
 
 ### 코스에서 계속 읽기
 

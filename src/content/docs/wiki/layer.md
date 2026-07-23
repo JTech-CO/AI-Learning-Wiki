@@ -228,9 +228,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-<span id="reference-2"></span>2. [PyTorch Sequential](https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html) — documentation
-<span id="reference-3"></span>3. [Layer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Layer_%28deep_learning%29) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
+2. <span id="reference-2"></span>[PyTorch Sequential](https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html) — documentation
+3. <span id="reference-3"></span>[Layer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Layer_%28deep_learning%29) — encyclopedia
 
 ### 코스에서 계속 읽기
 

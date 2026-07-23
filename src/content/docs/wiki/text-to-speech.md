@@ -157,11 +157,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
-<span id="reference-2"></span>2. [Speech synthesis — Wikipedia](https://en.wikipedia.org/wiki/Speech_synthesis) — encyclopedia
-<span id="reference-3"></span>3. [Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
-<span id="reference-4"></span>4. [Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) — paper
-<span id="reference-5"></span>5. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
+1. <span id="reference-1"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
+2. <span id="reference-2"></span>[Speech synthesis — Wikipedia](https://en.wikipedia.org/wiki/Speech_synthesis) — encyclopedia
+3. <span id="reference-3"></span>[Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
+4. <span id="reference-4"></span>[Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) — paper
+5. <span id="reference-5"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
 
 ### 코스에서 계속 읽기
 

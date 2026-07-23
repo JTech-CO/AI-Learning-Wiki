@@ -259,9 +259,9 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-<span id="reference-2"></span>2. [Euclidean vector — Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector) — encyclopedia
-<span id="reference-3"></span>3. [numpy.ndarray — NumPy documentation](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html) — documentation
+1. <span id="reference-1"></span>[Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
+2. <span id="reference-2"></span>[Euclidean vector — Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector) — encyclopedia
+3. <span id="reference-3"></span>[numpy.ndarray — NumPy documentation](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html) — documentation
 
 ### 코스에서 계속 읽기
 

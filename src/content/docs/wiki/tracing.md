@@ -151,12 +151,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
-<span id="reference-2"></span>2. [The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
-<span id="reference-3"></span>3. [MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-<span id="reference-4"></span>4. [NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
-<span id="reference-5"></span>5. [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-<span id="reference-6"></span>6. [Tracing — Wikipedia](https://en.wikipedia.org/wiki/Tracing) — encyclopedia
+1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
+2. <span id="reference-2"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
+3. <span id="reference-3"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
+4. <span id="reference-4"></span>[NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
+5. <span id="reference-5"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
+6. <span id="reference-6"></span>[Tracing — Wikipedia](https://en.wikipedia.org/wiki/Tracing) — encyclopedia
 
 ### 코스에서 계속 읽기
 

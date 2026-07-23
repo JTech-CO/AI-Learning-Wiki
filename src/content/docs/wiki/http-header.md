@@ -138,10 +138,10 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-<span id="reference-2"></span>2. [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-<span id="reference-3"></span>3. [HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-<span id="reference-4"></span>4. [HTTP 헤더 필드 목록 — 한국어 위키백과](https://ko.wikipedia.org/wiki/HTTP_%ED%97%A4%EB%8D%94_%ED%95%84%EB%93%9C_%EB%AA%A9%EB%A1%9D) — encyclopedia
+1. <span id="reference-1"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
+2. <span id="reference-2"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
+4. <span id="reference-4"></span>[HTTP 헤더 필드 목록 — 한국어 위키백과](https://ko.wikipedia.org/wiki/HTTP_%ED%97%A4%EB%8D%94_%ED%95%84%EB%93%9C_%EB%AA%A9%EB%A1%9D) — encyclopedia
 
 ### 코스에서 계속 읽기
 

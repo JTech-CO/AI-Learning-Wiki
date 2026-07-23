@@ -140,14 +140,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) — paper
-<span id="reference-2"></span>2. [On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258) — paper
-<span id="reference-3"></span>3. [A Survey of Transfer Learning](https://arxiv.org/abs/1911.02685) — paper
-<span id="reference-4"></span>4. [An Overview of Multi-Task Learning in Deep Neural Networks](https://arxiv.org/abs/1706.05098) — paper
-<span id="reference-5"></span>5. [Deep Learning](https://www.deeplearningbook.org/) — book
-<span id="reference-6"></span>6. [Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-<span id="reference-7"></span>7. [scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-<span id="reference-8"></span>8. [Autoencoder — Wikipedia](https://en.wikipedia.org/wiki/Autoencoder) — encyclopedia
+1. <span id="reference-1"></span>[Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) — paper
+2. <span id="reference-2"></span>[On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258) — paper
+3. <span id="reference-3"></span>[A Survey of Transfer Learning](https://arxiv.org/abs/1911.02685) — paper
+4. <span id="reference-4"></span>[An Overview of Multi-Task Learning in Deep Neural Networks](https://arxiv.org/abs/1706.05098) — paper
+5. <span id="reference-5"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
+6. <span id="reference-6"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
+7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
+8. <span id="reference-8"></span>[Autoencoder — Wikipedia](https://en.wikipedia.org/wiki/Autoencoder) — encyclopedia
 
 ### 코스에서 계속 읽기
 

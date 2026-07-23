@@ -136,9 +136,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [A Survey on Image Data Augmentation for Deep Learning](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0197-0) — paper
-<span id="reference-2"></span>2. [Torchvision Transforms](https://docs.pytorch.org/vision/stable/transforms.html) — documentation
-<span id="reference-3"></span>3. [Data augmentation — Wikipedia](https://en.wikipedia.org/wiki/Data_augmentation) — encyclopedia
+1. <span id="reference-1"></span>[A Survey on Image Data Augmentation for Deep Learning](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0197-0) — paper
+2. <span id="reference-2"></span>[Torchvision Transforms](https://docs.pytorch.org/vision/stable/transforms.html) — documentation
+3. <span id="reference-3"></span>[Data augmentation — Wikipedia](https://en.wikipedia.org/wiki/Data_augmentation) — encyclopedia
 
 ### 코스에서 계속 읽기
 

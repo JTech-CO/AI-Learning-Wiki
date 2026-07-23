@@ -219,9 +219,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
-<span id="reference-2"></span>2. [Machine learning — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning) — encyclopedia
-<span id="reference-3"></span>3. [What is Machine Learning? — Google for Developers](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml) — documentation
+1. <span id="reference-1"></span>[Deep Learning Book](https://www.deeplearningbook.org/) — book
+2. <span id="reference-2"></span>[Machine learning — Wikipedia](https://en.wikipedia.org/wiki/Machine_learning) — encyclopedia
+3. <span id="reference-3"></span>[What is Machine Learning? — Google for Developers](https://developers.google.com/machine-learning/intro-to-ml/what-is-ml) — documentation
 
 ### 코스에서 계속 읽기
 

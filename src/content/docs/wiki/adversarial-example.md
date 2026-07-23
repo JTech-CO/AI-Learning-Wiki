@@ -138,10 +138,10 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-<span id="reference-2"></span>2. [OWASP GenAI Security Project](https://genai.owasp.org/) — standard
-<span id="reference-3"></span>3. [MITRE ATLAS](https://atlas.mitre.org/) — documentation
-<span id="reference-4"></span>4. [Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+2. <span id="reference-2"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
+3. <span id="reference-3"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
+4. <span id="reference-4"></span>[Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
 
 ### 코스에서 계속 읽기
 

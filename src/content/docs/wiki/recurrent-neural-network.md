@@ -148,13 +148,13 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning](https://www.deeplearningbook.org/) — book
-<span id="reference-2"></span>2. [Understanding the Difficulty of Training Deep Feedforward Neural Networks](https://proceedings.mlr.press/v9/glorot10a.html) — paper
-<span id="reference-3"></span>3. [Delving Deep into Rectifiers](https://arxiv.org/abs/1502.01852) — paper
-<span id="reference-4"></span>4. [Understanding the Effective Receptive Field in Deep Convolutional Neural Networks](https://arxiv.org/abs/1701.04128) — paper
-<span id="reference-5"></span>5. [PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-<span id="reference-6"></span>6. [scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-<span id="reference-7"></span>7. [Recurrent neural network — Wikipedia](https://en.wikipedia.org/wiki/Recurrent_neural_network) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
+2. <span id="reference-2"></span>[Understanding the Difficulty of Training Deep Feedforward Neural Networks](https://proceedings.mlr.press/v9/glorot10a.html) — paper
+3. <span id="reference-3"></span>[Delving Deep into Rectifiers](https://arxiv.org/abs/1502.01852) — paper
+4. <span id="reference-4"></span>[Understanding the Effective Receptive Field in Deep Convolutional Neural Networks](https://arxiv.org/abs/1701.04128) — paper
+5. <span id="reference-5"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
+6. <span id="reference-6"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
+7. <span id="reference-7"></span>[Recurrent neural network — Wikipedia](https://en.wikipedia.org/wiki/Recurrent_neural_network) — encyclopedia
 
 ### 코스에서 계속 읽기
 

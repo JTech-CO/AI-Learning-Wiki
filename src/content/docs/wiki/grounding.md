@@ -154,11 +154,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
-<span id="reference-2"></span>2. [Grounding — Wikipedia](https://en.wikipedia.org/wiki/Grounding) — encyclopedia
-<span id="reference-3"></span>3. [Faiss Documentation](https://faiss.ai/) — documentation
-<span id="reference-4"></span>4. [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) — book
-<span id="reference-5"></span>5. [Sentence Transformers Documentation](https://sbert.net/) — documentation
+1. <span id="reference-1"></span>[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
+2. <span id="reference-2"></span>[Grounding — Wikipedia](https://en.wikipedia.org/wiki/Grounding) — encyclopedia
+3. <span id="reference-3"></span>[Faiss Documentation](https://faiss.ai/) — documentation
+4. <span id="reference-4"></span>[Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) — book
+5. <span id="reference-5"></span>[Sentence Transformers Documentation](https://sbert.net/) — documentation
 
 ### 코스에서 계속 읽기
 

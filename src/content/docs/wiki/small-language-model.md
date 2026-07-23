@@ -134,9 +134,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Phi-3 Technical Report](https://arxiv.org/abs/2404.14219) — paper
-<span id="reference-2"></span>2. [Microsoft Research: Phi-3 Technical Report](https://www.microsoft.com/en-us/research/publication/phi-3-technical-report-a-highly-capable-language-model-locally-on-your-phone/) — documentation
-<span id="reference-3"></span>3. [Small language model — Wikipedia](https://en.wikipedia.org/wiki/Small_language_model) — encyclopedia
+1. <span id="reference-1"></span>[Phi-3 Technical Report](https://arxiv.org/abs/2404.14219) — paper
+2. <span id="reference-2"></span>[Microsoft Research: Phi-3 Technical Report](https://www.microsoft.com/en-us/research/publication/phi-3-technical-report-a-highly-capable-language-model-locally-on-your-phone/) — documentation
+3. <span id="reference-3"></span>[Small language model — Wikipedia](https://en.wikipedia.org/wiki/Small_language_model) — encyclopedia
 
 ### 코스에서 계속 읽기
 

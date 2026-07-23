@@ -124,9 +124,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
-<span id="reference-2"></span>2. [Reinforcement learning — Wikipedia](https://en.wikipedia.org/wiki/Reinforcement_learning) — encyclopedia
-<span id="reference-3"></span>3. [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) — paper
+1. <span id="reference-1"></span>[Deep Learning Book](https://www.deeplearningbook.org/) — book
+2. <span id="reference-2"></span>[Reinforcement learning — Wikipedia](https://en.wikipedia.org/wiki/Reinforcement_learning) — encyclopedia
+3. <span id="reference-3"></span>[Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) — paper
 
 ### 코스에서 계속 읽기
 

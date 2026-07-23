@@ -136,14 +136,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [OWASP Server-Side Request Forgery Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) — documentation
-<span id="reference-2"></span>2. [RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) — standard
-<span id="reference-3"></span>3. [HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-<span id="reference-4"></span>4. [RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
-<span id="reference-5"></span>5. [RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
-<span id="reference-6"></span>6. [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-<span id="reference-7"></span>7. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-<span id="reference-8"></span>8. [서버 사이드 요청 위조 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%84%9C%EB%B2%84_%EC%82%AC%EC%9D%B4%EB%93%9C_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0) — encyclopedia
+1. <span id="reference-1"></span>[OWASP Server-Side Request Forgery Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) — documentation
+2. <span id="reference-2"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) — standard
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
+4. <span id="reference-4"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
+5. <span id="reference-5"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
+6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
+8. <span id="reference-8"></span>[서버 사이드 요청 위조 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%84%9C%EB%B2%84_%EC%82%AC%EC%9D%B4%EB%93%9C_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0) — encyclopedia
 
 ### 코스에서 계속 읽기
 

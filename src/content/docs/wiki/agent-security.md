@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [OWASP Agentic AI Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) — standard
-<span id="reference-2"></span>2. [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
-<span id="reference-3"></span>3. [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — paper
-<span id="reference-4"></span>4. [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — paper
-<span id="reference-5"></span>5. [Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
-<span id="reference-6"></span>6. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-<span id="reference-7"></span>7. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-<span id="reference-8"></span>8. [Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+1. <span id="reference-1"></span>[OWASP Agentic AI Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) — standard
+2. <span id="reference-2"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
+3. <span id="reference-3"></span>[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — paper
+4. <span id="reference-4"></span>[Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — paper
+5. <span id="reference-5"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
+6. <span id="reference-6"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
+7. <span id="reference-7"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+8. <span id="reference-8"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
 
 ### 코스에서 계속 읽기
 

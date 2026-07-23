@@ -156,11 +156,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-<span id="reference-2"></span>2. [Data structure — Wikipedia](https://en.wikipedia.org/wiki/Data_structure) — encyclopedia
-<span id="reference-3"></span>3. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-<span id="reference-4"></span>4. [HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-<span id="reference-5"></span>5. [HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+1. <span id="reference-1"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+2. <span id="reference-2"></span>[Data structure — Wikipedia](https://en.wikipedia.org/wiki/Data_structure) — encyclopedia
+3. <span id="reference-3"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
+4. <span id="reference-4"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
+5. <span id="reference-5"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
 
 ### 코스에서 계속 읽기
 

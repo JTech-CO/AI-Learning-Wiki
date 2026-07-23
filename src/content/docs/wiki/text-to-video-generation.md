@@ -140,14 +140,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Video Diffusion Models](https://arxiv.org/abs/2204.03458) — paper
-<span id="reference-2"></span>2. [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
-<span id="reference-3"></span>3. [An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929) — paper
-<span id="reference-4"></span>4. [Feature Pyramid Networks for Object Detection](https://arxiv.org/abs/1612.03144) — paper
-<span id="reference-5"></span>5. [Simple Open-Vocabulary Object Detection with Vision Transformers](https://arxiv.org/abs/2205.06230) — paper
-<span id="reference-6"></span>6. [Torchvision Models and Pre-trained Weights](https://pytorch.org/vision/stable/models.html) — documentation
-<span id="reference-7"></span>7. [Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
-<span id="reference-8"></span>8. [Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
+1. <span id="reference-1"></span>[Video Diffusion Models](https://arxiv.org/abs/2204.03458) — paper
+2. <span id="reference-2"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
+3. <span id="reference-3"></span>[An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929) — paper
+4. <span id="reference-4"></span>[Feature Pyramid Networks for Object Detection](https://arxiv.org/abs/1612.03144) — paper
+5. <span id="reference-5"></span>[Simple Open-Vocabulary Object Detection with Vision Transformers](https://arxiv.org/abs/2205.06230) — paper
+6. <span id="reference-6"></span>[Torchvision Models and Pre-trained Weights](https://pytorch.org/vision/stable/models.html) — documentation
+7. <span id="reference-7"></span>[Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
+8. <span id="reference-8"></span>[Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
 
 ### 코스에서 계속 읽기
 

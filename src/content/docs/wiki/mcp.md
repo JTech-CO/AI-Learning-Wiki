@@ -127,10 +127,10 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
-<span id="reference-2"></span>2. [Model Context Protocol — Wikipedia](https://en.wikipedia.org/wiki/Model_Context_Protocol) — encyclopedia
-<span id="reference-3"></span>3. [Model Context Protocol Specification 2025-11-25](https://modelcontextprotocol.io/specification/2025-11-25) — standard
-<span id="reference-4"></span>4. [The 2026-07-28 MCP Specification Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) — standard
+1. <span id="reference-1"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
+2. <span id="reference-2"></span>[Model Context Protocol — Wikipedia](https://en.wikipedia.org/wiki/Model_Context_Protocol) — encyclopedia
+3. <span id="reference-3"></span>[Model Context Protocol Specification 2025-11-25](https://modelcontextprotocol.io/specification/2025-11-25) — standard
+4. <span id="reference-4"></span>[The 2026-07-28 MCP Specification Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) — standard
 
 ### 코스에서 계속 읽기
 

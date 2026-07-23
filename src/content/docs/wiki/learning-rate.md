@@ -157,12 +157,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-<span id="reference-2"></span>2. [Learning rate — Wikipedia](https://en.wikipedia.org/wiki/Learning_rate) — encyclopedia
-<span id="reference-3"></span>3. [Deep Learning](https://www.deeplearningbook.org/) — book
-<span id="reference-4"></span>4. [PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-<span id="reference-5"></span>5. [scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
-<span id="reference-6"></span>6. [학습률 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%95%99%EC%8A%B5%EB%A5%A0) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
+2. <span id="reference-2"></span>[Learning rate — Wikipedia](https://en.wikipedia.org/wiki/Learning_rate) — encyclopedia
+3. <span id="reference-3"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
+4. <span id="reference-4"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
+5. <span id="reference-5"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
+6. <span id="reference-6"></span>[학습률 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%95%99%EC%8A%B5%EB%A5%A0) — encyclopedia
 
 ### 코스에서 계속 읽기
 

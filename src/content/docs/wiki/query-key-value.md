@@ -176,9 +176,9 @@ KV 캐시를 구현할 때 배치에서 끝난 요청의 블록이 다른 요청
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-<span id="reference-2"></span>2. [PyTorch MultiheadAttention](https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html) — documentation
-<span id="reference-3"></span>3. [Attention (machine learning) — Wikipedia](https://en.wikipedia.org/wiki/Attention_%28machine_learning%29) — encyclopedia
+1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
+2. <span id="reference-2"></span>[PyTorch MultiheadAttention](https://docs.pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html) — documentation
+3. <span id="reference-3"></span>[Attention (machine learning) — Wikipedia](https://en.wikipedia.org/wiki/Attention_%28machine_learning%29) — encyclopedia
 
 ### 코스에서 계속 읽기
 

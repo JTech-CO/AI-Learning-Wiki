@@ -252,9 +252,9 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book](https://www.deeplearningbook.org/) — book
-<span id="reference-2"></span>2. [Artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence) — encyclopedia
-<span id="reference-3"></span>3. [OECD AI Principles](https://oecd.ai/en/principles) — standard
+1. <span id="reference-1"></span>[Deep Learning Book](https://www.deeplearningbook.org/) — book
+2. <span id="reference-2"></span>[Artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence) — encyclopedia
+3. <span id="reference-3"></span>[OECD AI Principles](https://oecd.ai/en/principles) — standard
 
 ### 코스에서 계속 읽기
 

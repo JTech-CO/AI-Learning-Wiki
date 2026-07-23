@@ -262,9 +262,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Hugging Face Hub documentation](https://huggingface.co/docs/hub/index) — documentation
-<span id="reference-2"></span>2. [Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993) — paper
-<span id="reference-3"></span>3. [Hugging Face — Wikipedia](https://en.wikipedia.org/wiki/Hugging_Face) — encyclopedia
+1. <span id="reference-1"></span>[Hugging Face Hub documentation](https://huggingface.co/docs/hub/index) — documentation
+2. <span id="reference-2"></span>[Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993) — paper
+3. <span id="reference-3"></span>[Hugging Face — Wikipedia](https://en.wikipedia.org/wiki/Hugging_Face) — encyclopedia
 
 ### 코스에서 계속 읽기
 

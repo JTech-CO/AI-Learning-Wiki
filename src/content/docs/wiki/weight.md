@@ -231,9 +231,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-<span id="reference-2"></span>2. [PyTorch Neural Networks Tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html) — documentation
-<span id="reference-3"></span>3. [Artificial neural network — Wikipedia](https://en.wikipedia.org/wiki/Artificial_neural_network) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
+2. <span id="reference-2"></span>[PyTorch Neural Networks Tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html) — documentation
+3. <span id="reference-3"></span>[Artificial neural network — Wikipedia](https://en.wikipedia.org/wiki/Artificial_neural_network) — encyclopedia
 
 ### 코스에서 계속 읽기
 

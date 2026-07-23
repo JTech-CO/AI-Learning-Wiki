@@ -154,12 +154,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-<span id="reference-1"></span>1. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-<span id="reference-2"></span>2. [The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
-<span id="reference-3"></span>3. [vLLM Documentation](https://docs.vllm.ai/en/stable/) — documentation
-<span id="reference-4"></span>4. [TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) — documentation
-<span id="reference-5"></span>5. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-<span id="reference-6"></span>6. [Latency — Wikipedia](https://en.wikipedia.org/wiki/Latency) — encyclopedia
+1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
+2. <span id="reference-2"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
+3. <span id="reference-3"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) — documentation
+4. <span id="reference-4"></span>[TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) — documentation
+5. <span id="reference-5"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
+6. <span id="reference-6"></span>[Latency — Wikipedia](https://en.wikipedia.org/wiki/Latency) — encyclopedia
 
 ### 코스에서 계속 읽기
 
