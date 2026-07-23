@@ -3,7 +3,7 @@ title: "API·SDK·도구 호출"
 description: "모델을 소프트웨어와 연결하는 인터페이스"
 ---
 
-모델을 소프트웨어와 연결하는 인터페이스 분야의 검토 완료 백과 문서입니다.
+모델을 소프트웨어와 연결하는 인터페이스 분야의 검토 완료 백과 문서다.
 
 <nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-h">H</a><a href="#index-en-j">J</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-o">O</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a></nav>
 

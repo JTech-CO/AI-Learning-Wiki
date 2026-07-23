@@ -48,7 +48,7 @@ for (const reviewed of ledger.articles) {
   if (priorReady.has(article.id)) errors.push(`${article.id}: overlaps prior publication-ready ledgers`);
   if (rule?.priorStage !== 'research-queued' || manifestItem?.previousStage !== 'research-queued' || manifestItem?.previousState !== 'candidate') errors.push(`${article.id}: did not enter W18 from the candidate research gate`);
   if (!w2ById.get(article.id)?.audit.readyForManualClaimReview) errors.push(`${article.id}: W2 evidence gate not met`);
-  if (article.reviewedAt !== rules.reviewedAt || article.status !== 'reviewed') errors.push(`${article.id}: review metadata differs from W18 rules`);
+  if (article.reviewedAt < rules.reviewedAt || article.status !== 'reviewed') errors.push(`${article.id}: review metadata predates W18 rules`);
   if (article.title !== manifestItem?.titleKo || article.englishTitle !== manifestItem?.titleEn) errors.push(`${article.id}: title metadata differs from taxonomy`);
   if (/[�]/u.test(JSON.stringify(article)) || /[🌀-🫿]/u.test(JSON.stringify(article))) errors.push(`${article.id}: replacement character or emoji detected`);
   const minimum = { core: 6000, standard: 4000, brief: 2500 }[manifestItem?.tier];

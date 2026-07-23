@@ -1,0 +1,78 @@
+{
+  "version": "content-freshness-audit-v1",
+  "reviewedAt": "2026-07-23",
+  "window": {
+    "from": "2026-07-17",
+    "to": "2026-07-23"
+  },
+  "policy": "공식 1차 자료에서 기존 백과 정의·버전·표준 동작에 영향을 주는 변경만 반영하고 단기 프리프린트와 홍보성 수치는 일반 사실로 승격하지 않는다.",
+  "theoryReview": {
+    "updated": false,
+    "note": "검토 기간에 기존 백과 정의를 바꿀 만큼 검증·정착된 새 이론을 확인하지 못해 단기 프리프린트는 편입하지 않았다."
+  },
+  "totals": {
+    "articlesReviewed": 1600,
+    "articlesUpdated": 4,
+    "officialUrlsVerified": 4
+  },
+  "articles": [
+    {
+      "articleId": "mcp",
+      "changedSections": [
+        "scope",
+        "mechanism"
+      ],
+      "summary": "안정 규격 2025-11-25와 2026-07-28 릴리스 후보를 구분하고 상태 비저장 핵심과 확장·폐기 정책을 반영했다.",
+      "sources": [
+        "https://modelcontextprotocol.io/specification/2025-11-25",
+        "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/"
+      ],
+      "beforeSha256": "7ccc440d4cd0e4be5f7457713a537ac63534354709edecd6ba28d478d0b5dc63",
+      "afterSha256": "fde67aa2400675571114f7f766513a4560a220b7928e1212648146cc66a41e9f",
+      "reviewedAt": "2026-07-23"
+    },
+    {
+      "articleId": "mcp-transport",
+      "changedSections": [
+        "scope",
+        "mechanism"
+      ],
+      "summary": "안정 규격의 세션 전송과 릴리스 후보의 상태 비저장 HTTP 전송 및 호환성 주의점을 구분했다.",
+      "sources": [
+        "https://modelcontextprotocol.io/specification/2025-11-25",
+        "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/"
+      ],
+      "beforeSha256": "98eb1a63349337aea6cd4b1a68ecff3b26ba39d0fdaf1c93be9ed1083e1ce5f7",
+      "afterSha256": "75e5041f32797629c0f7b819da76e1b6480ff58cccc51d7aff294eb8a45a20d0",
+      "reviewedAt": "2026-07-23"
+    },
+    {
+      "articleId": "pytorch",
+      "changedSections": [
+        "scope",
+        "limitations"
+      ],
+      "summary": "현재 최신 안정 버전 2.13.0의 핵심 기능과 하위 호환 변경·회귀 검토 필요성을 반영했다.",
+      "sources": [
+        "https://github.com/pytorch/pytorch/releases/tag/v2.13.0"
+      ],
+      "beforeSha256": "5c87694743098381332652c68e611e411edf350b7962296519a4315fcd14cc0f",
+      "afterSha256": "41676b4b4e3ef09b13b5c4d4a4436d8e7250bbb4dc14ed76890feb7d8f730254",
+      "reviewedAt": "2026-07-23"
+    },
+    {
+      "articleId": "token-efficiency",
+      "changedSections": [
+        "applications",
+        "worked-example"
+      ],
+      "summary": "Gemini 3.6 Flash의 공급자 보고 토큰 비교 사례와 동일 조건 재측정 원칙을 추가했다.",
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+      ],
+      "beforeSha256": "0e9fed20cc0844045aa709b810b949b6993ceed018ee9f88821ccb21a8738d5a",
+      "afterSha256": "306fabd1381e77a7c7905d78c896fc17a45c831f1e24024cb942abe258ec0f23",
+      "reviewedAt": "2026-07-23"
+    }
+  ]
+}

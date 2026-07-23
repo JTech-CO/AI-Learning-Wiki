@@ -19,7 +19,7 @@ for (const plan of plans) {
     id: plan.id,
     title: plan.title.ko,
     audience: plan.audience,
-    description: `${plan.audience}을 대상으로 핵심 개념부터 평가·운영·통제까지 백과 문서를 순서대로 연결한 전문 학습 코스입니다.`,
+    description: `${plan.audience} 대상의 핵심 개념부터 평가·운영·통제까지 백과 문서를 순서대로 연결한 전문 학습 코스다.`,
     steps
   };
   fs.writeFileSync(path.join(pathsDir, `${course.id}.path.json`), `${JSON.stringify(course, null, 2)}\n`);

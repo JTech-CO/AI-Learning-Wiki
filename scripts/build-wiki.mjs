@@ -70,7 +70,7 @@ const renderArticleIndex = (items, renderItem) => {
   const sections = groups.map((group) => `<section class="wiki-index-group" data-index-group="${group.id}">\n<h2 id="index-${group.id}">${group.label}</h2>\n<ul class="wiki-index-list">\n${group.articles.map(renderItem).join('\n')}\n</ul>\n</section>`).join('\n');
   return `${navigation}\n\n<div class="wiki-index-groups">\n${sections}\n</div>`;
 };
-const list = (refs) => refs.length ? refs.map((ref) => `- [${byId.get(ref)?.title ?? ref}](/wiki/${ref}/)`).join('\n') : '_해당 문서가 없습니다._';
+const list = (refs) => refs.length ? refs.map((ref) => `- [${byId.get(ref)?.title ?? ref}](/wiki/${ref}/)`).join('\n') : '_해당 문서가 없다._';
 const backlinkTitle = (ref) => byId.get(ref)?.title ?? ref;
 const backlinkTitleGroup = (ref) => /^[가-힣]/u.test(backlinkTitle(ref).trim()) ? 0 : /^[A-Za-z]/.test(backlinkTitle(ref).trim()) ? 1 : 2;
 const compareBacklinks = (leftRef, rightRef) => {
@@ -95,7 +95,7 @@ const courseContinuation = (article) => courseMap.get(article.id).map((courseId)
   const nextStep = course.steps[index + 1];
   if (nextStep) return `- **${course.title}:** [다음 문서 — ${byId.get(nextStep.ref).title}](/wiki/${nextStep.ref}/)`;
   return `- **${course.title}:** [코스 목록으로 돌아가기](/course/${course.id}/)`;
-}).join('\n') || '_이 문서에서 이어지는 코스가 없습니다._';
+}).join('\n') || '_이 문서에서 이어지는 코스가 없다._';
 const renderArticleSections = (article) => [
   ['개념과 원리', article.sections.slice(0, 4)],
   ['활용과 검증', article.sections.slice(4)],
@@ -109,13 +109,13 @@ for (const article of articles) {
   const aliasBlock = aliases.length ? `<p class="wiki-alias">${aliases.join(' · ')}</p>\n\n` : '';
   const categoryLinks = article.categories.map((category) => `[${CATEGORY_META[category]?.[0] ?? category}](/category/${category}/)`).join(' · ');
   const courseLinks = courseMap.get(article.id).map((id) => `[${courses.find((course) => course.id === id)?.title ?? id}](/course/${id}/)`).join(' · ');
-  const body = `---\ntitle: ${q(displayTitle)}\ndescription: ${q(article.summary)}\ntableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }\n---\n\n${aliasBlock}<p class="wiki-lead">${article.summary}</p>\n\n<div class="wiki-document-meta">분류: ${categoryLinks} · 문서 상태: ${publicationReady.has(article.id) ? '문장 단위 근거 검토 완료' : '출처 검토 완료'} · 최근 검토: ${article.reviewedAt}</div>\n\n${renderArticleSections(article)}\n\n## 문서 관계\n\n### 선행 개념\n\n${list(article.prerequisites)}\n\n### 관련 문서\n\n${list(article.related)}\n\n### 이 문서를 가리키는 문서\n\n${backlinkList(backlinks.get(article.id))}\n\n### 이 문서를 포함하는 코스\n\n${courseLinks || '_포함된 코스가 없습니다._'}\n\n## 참고와 다음 학습\n\n<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>\n\n### 참고 문헌\n\n${article.sources.map((source, index) => `${hasSectionEvidence ? `<span id="reference-${index + 1}"></span>` : ''}${index + 1}. [${source.title}](${source.url}) — ${source.type}`).join('\n')}\n\n### 코스에서 계속 읽기\n\n${courseContinuation(article)}\n`;
+  const body = `---\ntitle: ${q(displayTitle)}\ndescription: ${q(article.summary)}\ntableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }\n---\n\n${aliasBlock}<p class="wiki-lead">${article.summary}</p>\n\n<div class="wiki-document-meta">분류: ${categoryLinks} · 문서 상태: ${publicationReady.has(article.id) ? '문장 단위 근거 검토 완료' : '출처 검토 완료'} · 최근 검토: ${article.reviewedAt}</div>\n\n${renderArticleSections(article)}\n\n## 문서 관계\n\n### 선행 개념\n\n${list(article.prerequisites)}\n\n### 관련 문서\n\n${list(article.related)}\n\n### 이 문서를 가리키는 문서\n\n${backlinkList(backlinks.get(article.id))}\n\n### 이 문서를 포함하는 코스\n\n${courseLinks || '_포함된 코스가 없다._'}\n\n## 참고와 다음 학습\n\n<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았다.</div>\n\n### 참고 문헌\n\n${article.sources.map((source, index) => `${hasSectionEvidence ? `<span id="reference-${index + 1}"></span>` : ''}${index + 1}. [${source.title}](${source.url}) — ${source.type}`).join('\n')}\n\n### 코스에서 계속 읽기\n\n${courseContinuation(article)}\n`;
   await writeFile(path.join(docs, 'wiki', `${article.id}.md`), body, 'utf8');
 }
 
 for (const [category, meta] of Object.entries(CATEGORY_META)) {
   const members = articles.filter((article) => article.categories.includes(category));
-  const body = `---\ntitle: ${q(meta[0])}\ndescription: ${q(meta[1])}\n---\n\n${meta[1]} 분야의 검토 완료 백과 문서입니다.\n\n${renderArticleIndex(members, (article) => `<li data-article-id="${article.id}"><a href="/wiki/${article.id}/">${html(article.title)}</a><span class="wiki-index-summary">${html(article.summary)}</span></li>`)}\n`;
+  const body = `---\ntitle: ${q(meta[0])}\ndescription: ${q(meta[1])}\n---\n\n${meta[1]} 분야의 검토 완료 백과 문서다.\n\n${renderArticleIndex(members, (article) => `<li data-article-id="${article.id}"><a href="/wiki/${article.id}/">${html(article.title)}</a><span class="wiki-index-summary">${html(article.summary)}</span></li>`)}\n`;
   await writeFile(path.join(docs, 'category', `${category}.md`), body, 'utf8');
 }
 
@@ -128,7 +128,7 @@ const glossary = [...articles].sort((a, b) => a.title.localeCompare(b.title, 'ko
 const glossaryIndex = renderArticleIndex(glossary, (article) => `<li data-article-id="${article.id}"><a href="/wiki/${article.id}/">${html(article.title)}</a><span class="wiki-en">${html(article.englishTitle)}</span></li>`);
 const allPagesIndex = renderArticleIndex(glossary, (article) => `<li data-article-id="${article.id}"><a href="/wiki/${article.id}/">${html(article.title)}</a><span class="wiki-index-summary">${html(article.summary)}</span></li>`);
 await writeFile(path.join(docs, 'glossary.md'), `---\ntitle: 용어 색인\ndescription: AI·LLM 백과 문서 가나다 색인\n---\n\n${glossaryIndex}\n`, 'utf8');
-await writeFile(path.join(docs, 'special', 'all-pages.md'), `---\ntitle: 전체 문서(색인)\ndescription: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인\n---\n\n현재 검토 완료된 백과 문서는 **${articles.length}개**입니다.\n\n${allPagesIndex}\n`, 'utf8');
+await writeFile(path.join(docs, 'special', 'all-pages.md'), `---\ntitle: 전체 문서(색인)\ndescription: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인\n---\n\n현재 검토 완료된 백과 문서는 **${articles.length}개**다.\n\n${allPagesIndex}\n`, 'utf8');
 await writeFile(path.join(docs, 'special', 'recent.md'), `---\ntitle: 최근 검토 문서\ndescription: 최근 검토된 AI·LLM 백과 문서\n---\n\n${[...articles].sort((a, b) => b.reviewedAt.localeCompare(a.reviewedAt) || a.title.localeCompare(b.title, 'ko')).slice(0, 50).map((article) => `- ${article.reviewedAt} — [${article.title}](/wiki/${article.id}/)`).join('\n')}\n`, 'utf8');
 
 const index = {

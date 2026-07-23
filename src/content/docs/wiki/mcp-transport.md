@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-23</div>
 
 ## 개념과 원리
 
@@ -26,6 +26,8 @@ MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 �
 
 ‘MCP 전송 계층(MCP Transport)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
+2026년 7월 23일 기준 안정 규격은 2025-11-25이고 2026-07-28 규격은 릴리스 후보 상태다. 따라서 전송 구현을 설명할 때는 현재 안정 규격의 세션 동작과 후보 규격의 상태 비저장 동작을 구분해야 한다.
+
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
 
 ### 작동 원리
@@ -35,6 +37,8 @@ MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 �
 실행 경로는 입력 수신, 상태 구성, 선택, 도구 실행, 결과 관찰과 종료 판단으로 나눈다. 각 단계에 식별자와 시간·비용 예산을 붙이면 무한 반복과 중복 부작용을 탐지할 수 있다. ‘MCP 전송 계층(MCP Transport)’의 작동을 추적할 때는 입력 원본, 변환된 중간 상태, 선택된 설정과 최종 산출물을 순서대로 남긴다. 각 단계에 정상 범위와 오류 상태를 붙이면 결과가 나빠졌을 때 어느 경계가 먼저 무너졌는지 분리할 수 있다.
 
 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. ‘MCP 전송 계층(MCP Transport)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
+
+2025-11-25 안정 규격의 Streamable HTTP는 초기화 절차와 선택적 `Mcp-Session-Id`를 사용한다. 반면 2026-07-28 릴리스 후보는 초기화 절차와 프로토콜 수준 세션을 제거하고, 각 요청에 `MCP-Protocol-Version`, `Mcp-Method`, `Mcp-Name` 같은 라우팅 정보를 싣는 구조를 제안한다. 이 변경은 일반적인 HTTP 로드 밸런싱과 캐시를 쉽게 하지만 기존 전송 구현에는 호환성 검토가 필요한 중단적 변경이다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
 
@@ -124,15 +128,15 @@ MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 �
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+_해당 문서가 없다._
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없습니다._
+_포함된 코스가 없다._
 
 ## 참고와 다음 학습
 
-<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
+<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았다.</div>
 
 ### 참고 문헌
 
@@ -144,7 +148,8 @@ _포함된 코스가 없습니다._
 <span id="reference-6"></span>6. [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 <span id="reference-7"></span>7. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 <span id="reference-8"></span>8. [Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+<span id="reference-9"></span>9. [The 2026-07-28 MCP Specification Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) — standard
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없습니다._
+_이 문서에서 이어지는 코스가 없다._

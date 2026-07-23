@@ -9,7 +9,7 @@
     <button type="button" data-type="prompt" aria-pressed="false">프롬프트</button>
     <button type="button" data-type="snippet" aria-pressed="false">코드·설정</button>
   </div>
-  <p id="wiki-search-count" aria-live="polite">검색어를 입력하세요.</p>
+  <p id="wiki-search-count" aria-live="polite">검색어를 입력하면 결과가 표시된다.</p>
   <div id="wiki-search-results" class="wiki-search-results"></div>
   <nav id="wiki-search-pagination" class="wiki-pagination" aria-label="검색 결과 페이지" hidden>
     <button id="wiki-search-prev" type="button">이전</button>
@@ -69,7 +69,7 @@
   function render({ updateUrl = true } = {}) {
     const needle = input.value.trim().toLowerCase();
     if (!needle) {
-      count.textContent = '검색어를 입력하세요.';
+      count.textContent = '검색어를 입력하면 결과가 표시된다.';
       results.replaceChildren();
       pagination.hidden = true;
       currentPage = 1;
@@ -88,7 +88,7 @@
     const start = (currentPage - 1) * PAGE_SIZE;
     const end = Math.min(start + PAGE_SIZE, ranked.length);
     const pageItems = ranked.slice(start, end);
-    count.textContent = ranked.length ? ranked.length + '개 중 ' + (start + 1) + '–' + end + '번째 결과' : '검색 결과가 없습니다.';
+    count.textContent = ranked.length ? ranked.length + '개 중 ' + (start + 1) + '–' + end + '번째 결과' : '검색 결과가 없다.';
     results.replaceChildren(...pageItems.map(({ item }) => resultCard(item)));
     pagination.hidden = ranked.length <= PAGE_SIZE;
     previousPage.disabled = currentPage <= 1;
@@ -109,7 +109,7 @@
     ];
     render();
   }).catch(() => {
-    count.textContent = '검색 자료를 불러오지 못했습니다.';
+    count.textContent = '검색 자료를 불러오지 못했다.';
     pagination.hidden = true;
   });
 

@@ -3,7 +3,7 @@ title: "트랜스포머와 모델 구조"
 description: "현대 언어 모델을 이루는 핵심 아키텍처"
 ---
 
-현대 언어 모델을 이루는 핵심 아키텍처 분야의 검토 완료 백과 문서입니다.
+현대 언어 모델을 이루는 핵심 아키텍처 분야의 검토 완료 백과 문서다.
 
 <nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-c">C</a><a href="#index-en-g">G</a><a href="#index-en-l">L</a><a href="#index-en-n">N</a><a href="#index-en-p">P</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a><a href="#index-en-t">T</a><a href="#index-en-x">X</a><a href="#index-en-y">Y</a></nav>
 

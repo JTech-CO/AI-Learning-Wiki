@@ -3,6 +3,10 @@ title: 최근 검토 문서
 description: 최근 검토된 AI·LLM 백과 문서
 ---
 
+- 2026-07-23 — [모델 컨텍스트 프로토콜](/wiki/mcp/)
+- 2026-07-23 — [토큰 효율](/wiki/token-efficiency/)
+- 2026-07-23 — [MCP 전송 계층](/wiki/mcp-transport/)
+- 2026-07-23 — [PyTorch](/wiki/pytorch/)
 - 2026-07-16 — [가드레일 커버리지 행렬](/wiki/guardrail-coverage-matrix/)
 - 2026-07-16 — [개별 채점 평가 설계](/wiki/pointwise-evaluation-design/)
 - 2026-07-16 — [검색 결과 다양성](/wiki/retrieval-result-diversity/)
@@ -49,7 +53,3 @@ description: 최근 검토된 AI·LLM 백과 문서
 - 2026-07-16 — [모델 선택 정책](/wiki/model-selection-policy/)
 - 2026-07-16 — [모델 아티팩트 서명](/wiki/model-artifact-signing/)
 - 2026-07-16 — [모델 악용 사례 라이브러리](/wiki/model-abuse-case-library/)
-- 2026-07-16 — [모델 역량 프로파일](/wiki/model-capability-profile/)
-- 2026-07-16 — [모델 종료 마이그레이션](/wiki/model-deprecation-migration/)
-- 2026-07-16 — [모델 플릿 라우팅](/wiki/model-fleet-routing/)
-- 2026-07-16 — [모델 호환성 행렬](/wiki/model-compatibility-matrix/)

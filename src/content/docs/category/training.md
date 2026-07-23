@@ -3,7 +3,7 @@ title: "학습과 사후학습"
 description: "사전학습부터 정렬·경량화까지의 방법"
 ---
 
-사전학습부터 정렬·경량화까지의 방법 분야의 검토 완료 백과 문서입니다.
+사전학습부터 정렬·경량화까지의 방법 분야의 검토 완료 백과 문서다.
 
 <nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-d">D</a><a href="#index-en-i">I</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-q">Q</a><a href="#index-en-s">S</a><a href="#index-en-z">Z</a></nav>
 

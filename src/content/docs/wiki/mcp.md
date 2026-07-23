@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으로 연결하도록 정의한 프로토콜이다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-23</div>
 
 ## 개념과 원리
 
@@ -26,7 +26,9 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 이 문서에서 다루는 범위는 안정적인 개념과 구현 원리다. 최신 모델명·가격·한도처럼 자주 바뀌는 정보는 포함하지 않으며, 실제 사용 시점에는 연결된 공식 문서와 배포 환경의 버전을 다시 확인한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+2026년 7월 23일 기준 MCP의 안정 규격은 2025-11-25이며, 2026-07-28 규격은 최종본이 아닌 릴리스 후보다. 후보 규격은 프로토콜 핵심을 상태 비저장으로 전환하고 확장 프레임워크, Tasks와 MCP Apps, 권한 부여 강화 및 정식 폐기 정책을 제안한다. 구현과 문서에서는 안정 규격과 후보 규격을 혼용하지 않고 `MCP-Protocol-Version`과 기준 날짜를 함께 기록해야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
 ### 작동 원리
 
@@ -34,7 +36,9 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 [멀티 에이전트 시스템](/wiki/multi-agent-system/) 및 [인간 참여형 제어](/wiki/human-in-the-loop/) 개념을 먼저 이해하면 계산 위치와 역할을 구분하기 쉽다. 이 선행 관계를 기준으로 어느 단계에서 값이 만들어지고 다음 구성 요소로 어떻게 전달되는지 추적하면, 비슷한 용어를 기능 이름만으로 혼동하는 일을 줄일 수 있다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a></div>
+2026-07-28 릴리스 후보에서는 `initialize`/`initialized` 초기화 절차와 프로토콜 수준 세션을 제거하고, 요청마다 버전과 클라이언트 정보를 전달하는 상태 비저장 구조를 제안한다. 애플리케이션 상태가 필요하면 도구가 명시적 핸들을 발급하고 이후 호출의 일반 인자로 되돌려받는 방식으로 관리한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
 ### 구성 요소와 처리 흐름
 
@@ -119,13 +123,14 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 ## 참고와 다음 학습
 
-<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
+<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았다.</div>
 
 ### 참고 문헌
 
 <span id="reference-1"></span>1. [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
 <span id="reference-2"></span>2. [Model Context Protocol — Wikipedia](https://en.wikipedia.org/wiki/Model_Context_Protocol) — encyclopedia
 <span id="reference-3"></span>3. [Model Context Protocol Specification 2025-11-25](https://modelcontextprotocol.io/specification/2025-11-25) — standard
+<span id="reference-4"></span>4. [The 2026-07-28 MCP Specification Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) — standard
 
 ### 코스에서 계속 읽기
 

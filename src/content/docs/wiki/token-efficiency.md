@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">토큰 효율은 주어진 품질이나 과제 성과를 달성하는 데 필요한 입력·출력 토큰 수가 얼마나 적은지를 나타내는 효율 관점이다.</p>
 
-<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-23</div>
 
 ## 개념과 원리
 
@@ -58,6 +58,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ‘토큰 효율’의 활용 분야와 선택 기준를 검토하는 1번째 기록에서는 분야 llm, 세부 영역 model-properties, 우선순위 98라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
+최근 사례로 Google은 2026년 7월 21일 Gemini 3.6 Flash가 Artificial Analysis Index에서 3.5 Flash보다 출력 토큰을 17% 적게 사용했다고 보고했다. 이는 공급자가 제시한 특정 평가 결과이므로 모든 과제에서 성립하는 보편적 성능으로 해석해서는 안 된다. 같은 프롬프트, 추론 설정, 도구 권한과 성공 기준을 고정하고 품질·지연·비용을 함께 재측정해야 토큰 감소가 실제 효율 향상인지 판단할 수 있다.
+
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
 ### 한계와 흔한 오해
@@ -90,6 +92,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 이 사례에 ‘토큰 효율(Token Efficiency)’을 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 프롬프트·검색 문맥·출력을 같은 토크나이저로 계량하고 품질·비용·지연을 함께 측정해 성공 과제당 토큰 또는 토큰당 성과를 비교한다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
 
 결과 표에는 개선된 항목뿐 아니라 비용과 지연, 사람이 개입한 횟수, 실패 복구 시간과 남은 불확실성을 포함한다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 이 예시는 원리를 설명하기 위한 검증 틀이며 특정 제품이나 라이브러리의 성능을 보장하지 않는다.
+
+이 사례를 비교 실험으로 재현할 때는 모델 버전, 입력 토큰, 사고 수준, 도구 호출 권한과 종료 조건을 고정한다. 출력 토큰 수뿐 아니라 과제 성공률, 불필요한 도구 호출, 지연 시간과 총비용을 함께 기록해야 짧은 답변이나 실패 때문에 토큰만 줄어든 경우를 걸러낼 수 있다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -128,15 +132,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없습니다._
+_해당 문서가 없다._
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없습니다._
+_포함된 코스가 없다._
 
 ## 참고와 다음 학습
 
-<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했습니다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했습니다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았습니다.</div>
+<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았다.</div>
 
 ### 참고 문헌
 
@@ -148,7 +152,8 @@ _포함된 코스가 없습니다._
 <span id="reference-6"></span>6. [Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
 <span id="reference-7"></span>7. [Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
 <span id="reference-8"></span>8. [Large language model — Wikipedia](https://en.wikipedia.org/wiki/Large_language_model) — encyclopedia
+<span id="reference-9"></span>9. [Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/) — documentation
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없습니다._
+_이 문서에서 이어지는 코스가 없다._

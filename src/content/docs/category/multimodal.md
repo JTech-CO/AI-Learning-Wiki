@@ -3,7 +3,7 @@ title: "멀티모달 AI"
 description: "텍스트와 이미지·음성·영상을 함께 다루는 모델"
 ---
 
-텍스트와 이미지·음성·영상을 함께 다루는 모델 분야의 검토 완료 백과 문서입니다.
+텍스트와 이미지·음성·영상을 함께 다루는 모델 분야의 검토 완료 백과 문서다.
 
 <nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-c">C</a><a href="#index-en-p">P</a><a href="#index-en-q">Q</a></nav>
 

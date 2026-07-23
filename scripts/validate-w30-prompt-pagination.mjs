@@ -14,7 +14,7 @@ assert.match(component, /filtered\.slice\(start, end\)\.map\(card\)/, 'prompt pa
 assert.match(component, /previousPage\.disabled = currentPage <= 1;/, 'previous-page boundary missing');
 assert.match(component, /nextPage\.disabled = currentPage >= totalPages;/, 'next-page boundary missing');
 assert.match(component, /params\.set\('page', String\(currentPage\)\)/, 'prompt page URL state missing');
-assert.match(component, /조건에 맞는 프롬프트가 없습니다\./, 'empty result message missing');
+assert.match(component, /조건에 맞는 프롬프트가 없다\./, 'empty result message missing');
 assert.match(css, /\.wiki-pagination\s*\{[^}]*display:\s*flex;/s, 'pagination layout missing');
 assert.match(css, /\.wiki-pagination\[hidden\]\s*\{[^}]*display:\s*none;/s, 'pagination hidden state missing');
 

@@ -86,7 +86,7 @@
     const start = (currentPage - 1) * PAGE_SIZE;
     const end = Math.min(start + PAGE_SIZE, filtered.length);
     results.replaceChildren(...filtered.slice(start, end).map(card));
-    count.textContent = filtered.length ? `${filtered.length}개 중 ${start + 1}–${end}번째 프롬프트` : '조건에 맞는 프롬프트가 없습니다.';
+    count.textContent = filtered.length ? `${filtered.length}개 중 ${start + 1}–${end}번째 프롬프트` : '조건에 맞는 프롬프트가 없다.';
     pagination.hidden = filtered.length <= PAGE_SIZE;
     previousPage.disabled = currentPage <= 1;
     nextPage.disabled = currentPage >= totalPages;
@@ -121,7 +121,7 @@
     const requestedCourse = initialParams.get('course') ?? '';
     selectCourse(requestedCourse, { update: false });
     render({ updateUrl: false });
-  }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했습니다.');
+  }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했다.');
   [query, exampleFilter].forEach((control) => control?.addEventListener('input', () => { currentPage = 1; render(); }));
   courseMenu?.addEventListener('toggle', () => courseMenu.querySelector('summary')?.setAttribute('aria-expanded', String(courseMenu.open)));
   courseMenu?.addEventListener('keydown', (event) => { if (event.key === 'Escape') { courseMenu.open = false; courseMenu.querySelector('summary')?.focus(); } });

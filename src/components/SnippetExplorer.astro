@@ -75,7 +75,7 @@
     const start = (currentPage - 1) * PAGE_SIZE;
     const end = Math.min(start + PAGE_SIZE, filtered.length);
     results.replaceChildren(...filtered.slice(start, end).map(card));
-    count.textContent = filtered.length ? `${filtered.length}개 중 ${start + 1}–${end}번째 자료` : '조건에 맞는 코드·설정 자료가 없습니다.';
+    count.textContent = filtered.length ? `${filtered.length}개 중 ${start + 1}–${end}번째 자료` : '조건에 맞는 코드·설정 자료가 없다.';
     pagination.hidden = filtered.length <= PAGE_SIZE;
     previousPage.disabled = currentPage <= 1;
     nextPage.disabled = currentPage >= totalPages;
@@ -93,7 +93,7 @@
     type.value = [...type.options].some((option) => option.value === initialParams.get('type')) ? initialParams.get('type') : '';
     course.value = [...course.options].some((option) => option.value === initialParams.get('course')) ? initialParams.get('course') : '';
     render({ updateUrl: false });
-  }).catch(() => { count.textContent = '코드·설정 자료를 불러오지 못했습니다.'; });
+  }).catch(() => { count.textContent = '코드·설정 자료를 불러오지 못했다.'; });
   [query, type, course].forEach((control) => control?.addEventListener('input', () => { currentPage = 1; render(); }));
   previousPage?.addEventListener('click', () => { if (currentPage > 1) { currentPage -= 1; render(); results.scrollIntoView({ block: 'start' }); } });
   nextPage?.addEventListener('click', () => { currentPage += 1; render(); results.scrollIntoView({ block: 'start' }); });
