@@ -1,19 +1,19 @@
 {
-  "version": "W24-2026-07-15",
-  "snapshotDate": "2026-07-15",
+  "version": "W24-custom-domain-2026-07-26",
+  "snapshotDate": "2026-07-26",
   "purpose": "prevent the Wiki root URL from being replaced by a legal subpage during release",
-  "canonicalOrigin": "https://jtech-co.github.io/AI-Learning-Wiki",
+  "canonicalOrigin": "https://ai-wiki.kr",
   "routes": {
-    "home": "/AI-Learning-Wiki/",
-    "privacy": "/AI-Learning-Wiki/privacy-policy/",
-    "terms": "/AI-Learning-Wiki/terms-of-use/"
+    "home": "/",
+    "privacy": "/privacy-policy/",
+    "terms": "/terms-of-use/"
   },
   "gates": {
     "homeIdentityRequired": true,
     "legalPagesSeparate": true,
     "legalPagesLinkHome": true,
     "canonicalUrlsRequired": true,
-    "projectBasePathRequired": true,
+    "customDomainRootRequired": true,
     "githubActionsDeploymentRequired": true,
     "legacySitesConfigurationForbidden": true
   }

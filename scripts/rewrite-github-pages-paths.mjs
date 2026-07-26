@@ -2,7 +2,7 @@ import { readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const DIST = path.resolve('dist');
-const configuredBase = process.env.BASE_PATH ?? '/AI-Learning-Wiki';
+const configuredBase = process.env.BASE_PATH ?? '/';
 const BASE_PATH = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 
 const prefixPath = (value) => {

@@ -52,7 +52,7 @@ cd AI-Learning-Wiki
 npm ci
 ```
 
-필수 환경 변수는 없다. 배포 주소를 바꾸는 경우 origin은 `SITE_URL`, 하위 경로는 `BASE_PATH`로 지정한다. 기본 프로덕션 값은 GitHub Pages의 `https://jtech-co.github.io`와 `/AI-Learning-Wiki`다.
+필수 환경 변수는 없다. 배포 주소를 바꾸는 경우 origin은 `SITE_URL`, 하위 경로는 `BASE_PATH`로 지정한다. 기본 프로덕션 값은 사용자 지정 도메인 `https://ai-wiki.kr`와 루트 경로 `/`다.
 
 ### 2. 개발 서버 실행 (Run)
 
@@ -92,9 +92,9 @@ AI-Learning-Wiki/
 
 ## 5. 정보 (Information)
 
-- **Service:** [AI Learning Wiki](https://jtech-co.github.io/AI-Learning-Wiki/)
-- **Privacy:** [개인정보 처리방침](https://jtech-co.github.io/AI-Learning-Wiki/privacy-policy/)
-- **Terms:** [이용약관](https://jtech-co.github.io/AI-Learning-Wiki/terms-of-use/)
+- **Service:** [AI Learning Wiki](https://ai-wiki.kr/)
+- **Privacy:** [개인정보 처리방침](https://ai-wiki.kr/privacy-policy/)
+- **Terms:** [이용약관](https://ai-wiki.kr/terms-of-use/)
 - **Updates:** [업데이트 기록](UPDATES.md)
 - **License:** 별도 오픈소스 라이선스가 지정되지 않았으며, 저작권은 각 권리자에게 있다.
 - **Contact:** [GitHub Issues](https://github.com/JTech-CO/AI-Learning-Wiki/issues)

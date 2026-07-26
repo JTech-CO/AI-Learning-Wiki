@@ -2,7 +2,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve('dist');
-const configuredBase = process.env.BASE_PATH ?? '/AI-Learning-Wiki';
+const configuredBase = process.env.BASE_PATH ?? '/';
 const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 const stripBase = (pathname) => pathname === basePath ? '/' : pathname.startsWith(`${basePath}/`) ? pathname.slice(basePath.length) : pathname;
 const htmlFiles = [];

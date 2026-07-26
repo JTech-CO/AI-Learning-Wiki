@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
-const canonicalBase = 'https://jtech-co.github.io/AI-Learning-Wiki';
-const basePath = '/AI-Learning-Wiki';
+const canonicalBase = process.env.SITE_URL ?? 'https://ai-wiki.kr';
+const configuredBase = process.env.BASE_PATH ?? '/';
+const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 const read = (file) => readFile(file, 'utf8');
 const [home, privacy, terms, packageJson] = await Promise.all([
   read('dist/index.html'),
@@ -21,5 +22,5 @@ for (const [route, html] of [['privacy-policy', privacy], ['terms-of-use', terms
   assert.ok(html.includes(`href="${basePath}/"`), `${route} lacks a root return link`);
   assert.ok(html.includes(`<link rel="canonical" href="${canonicalBase}/${route}/"`), `${route} canonical URL mismatch`);
 }
-assert.equal(packageJson.homepage, `${canonicalBase}/`, 'package homepage must point to the GitHub Pages root');
+assert.equal(packageJson.homepage, `${canonicalBase}/`, 'package homepage must point to the public site root');
 console.log('W24 route validation: root, privacy, terms and canonical URLs are separated correctly');

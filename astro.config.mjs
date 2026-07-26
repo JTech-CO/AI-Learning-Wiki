@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const siteUrl = process.env.SITE_URL ?? 'https://jtech-co.github.io';
-const configuredBase = process.env.BASE_PATH ?? (process.argv.includes('dev') ? '/' : '/AI-Learning-Wiki');
+const siteUrl = process.env.SITE_URL ?? 'https://ai-wiki.kr';
+const configuredBase = process.env.BASE_PATH ?? '/';
 const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 const withBase = (pathname) => `${basePath}${pathname}`;
 const logoUrl = new URL(withBase('/logo.png'), siteUrl).toString();

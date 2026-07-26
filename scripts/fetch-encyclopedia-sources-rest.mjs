@@ -6,7 +6,7 @@ const ARTICLE_DIR = path.join(ROOT, 'content-model', 'articles');
 const OUT_DIR = path.join(ROOT, 'content-model', 'research');
 const OUT_FILE = path.join(OUT_DIR, 'encyclopedia-sources.json');
 const CACHE_FILE = path.join(OUT_DIR, 'encyclopedia-search-cache.json');
-const USER_AGENT = 'AI-Learning-Wiki/0.1 (https://jtech-co.github.io/AI-Learning-Wiki/; educational research)';
+const USER_AGENT = 'AI-Learning-Wiki/1.0 (https://ai-wiki.kr/; educational research)';
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const articles = await Promise.all(
   (await readdir(ARTICLE_DIR)).filter((name) => name.endsWith('.article.json'))

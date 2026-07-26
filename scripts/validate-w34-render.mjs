@@ -21,7 +21,7 @@ assert.match(course, /신뢰할 수 있는 AI/u);
 assert.doesNotMatch(course, /안전하고 신뢰할 수 있는 AI/u);
 assert.match(allPages, /전체 문서\(색인\)/u);
 
-assert.match(home, /data-wiki-base-path="\/AI-Learning-Wiki\/"/u, 'rendered random handler is not GitHub Pages base-aware');
+assert.match(home, /data-wiki-base-path="\/"/u, 'rendered random handler is not custom-domain root-aware');
 assert.match(home, /encodeURIComponent/u, 'rendered random handler does not build an article URL from its ID');
 assert.match(home, /location\.assign/u, 'rendered direct-random navigation handler missing');
 

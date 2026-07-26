@@ -12,7 +12,7 @@ const failures = [];
 const expect = (condition, message) => { if (!condition) failures.push(message); };
 const fileExists = async (file) => { try { return (await stat(file)).isFile(); } catch { return false; } };
 const readDist = (route) => readFile(path.join('dist', route), 'utf8');
-const configuredBase = process.env.BASE_PATH ?? '/AI-Learning-Wiki';
+const configuredBase = process.env.BASE_PATH ?? '/';
 const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 const withBase = (url) => url.startsWith('/') ? `${basePath}${url}` : url;
 

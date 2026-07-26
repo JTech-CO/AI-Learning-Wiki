@@ -2,8 +2,9 @@ import assert from 'node:assert/strict';
 import { access, readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 
-const BASE_PATH = '/AI-Learning-Wiki';
-const CANONICAL = 'https://jtech-co.github.io/AI-Learning-Wiki/';
+const configuredBase = process.env.BASE_PATH ?? '/';
+const BASE_PATH = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
+const CANONICAL = `${process.env.SITE_URL ?? 'https://ai-wiki.kr'}/`;
 const DIST = path.resolve('dist');
 
 async function walk(directory) {
@@ -65,7 +66,7 @@ for (const file of htmlFiles) {
   for (const match of html.matchAll(/\b(?:href|src|action|poster)=["'](\/[^"']*)/gi)) {
     const value = match[1];
     if (value.startsWith('//')) continue;
-    if (value === `${BASE_PATH}${BASE_PATH}` || value.startsWith(`${BASE_PATH}${BASE_PATH}/`)) {
+    if (BASE_PATH && (value === `${BASE_PATH}${BASE_PATH}` || value.startsWith(`${BASE_PATH}${BASE_PATH}/`))) {
       failures.push(`${path.relative(DIST, file)} -> duplicated base: ${value}`);
       continue;
     }
@@ -73,8 +74,9 @@ for (const file of htmlFiles) {
       failures.push(`${path.relative(DIST, file)} -> ${value}`);
     }
   }
-  if (/fetch\((["'`])\/(?!AI-Learning-Wiki\/)/.test(html)) {
-    failures.push(`${path.relative(DIST, file)} -> root fetch()`);
+  const fetchPaths = [...html.matchAll(/\bfetch\((["'`])(\/[^"'`]+)\1/g)].map((match) => match[2]);
+  if (fetchPaths.some((value) => value !== BASE_PATH && !value.startsWith(`${BASE_PATH}/`))) {
+    failures.push(`${path.relative(DIST, file)} -> fetch() escapes deployment root`);
   }
 }
 assert.equal(failures.length, 0, `GitHub Pages base-path escapes:\n${failures.slice(0, 20).join('\n')}`);
