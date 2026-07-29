@@ -1,0 +1,362 @@
+---
+const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
+---
+
+<section class="lab-tool" data-evaluation-metrics-lab data-base-path={basePath}>
+  <form class="lab-tool-form" data-evaluation-form>
+    <fieldset>
+      <legend>혼동행렬 입력</legend>
+      <p class="lab-field-note">
+        같은 평가 데이터와 같은 분류 임곗값에서 집계한 네 값을 입력한다.
+      </p>
+
+      <div class="lab-form-grid lab-metric-input-grid">
+        <label class="lab-field">
+          <span>참음성 (TN)</span>
+          <input type="number" name="trueNegative" min="0" step="1" value="450" required />
+          <small>실제 음성을 음성으로 분류한 수</small>
+        </label>
+
+        <label class="lab-field">
+          <span>거짓양성 (FP)</span>
+          <input type="number" name="falsePositive" min="0" step="1" value="50" required />
+          <small>실제 음성을 양성으로 잘못 분류한 수</small>
+        </label>
+
+        <label class="lab-field">
+          <span>거짓음성 (FN)</span>
+          <input type="number" name="falseNegative" min="0" step="1" value="40" required />
+          <small>실제 양성을 음성으로 잘못 분류한 수</small>
+        </label>
+
+        <label class="lab-field">
+          <span>참양성 (TP)</span>
+          <input type="number" name="truePositive" min="0" step="1" value="460" required />
+          <small>실제 양성을 양성으로 분류한 수</small>
+        </label>
+
+        <label class="lab-field">
+          <span>분류 임곗값 (선택)</span>
+          <input
+            type="number"
+            name="threshold"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5"
+            aria-describedby="evaluation-threshold-note"
+          />
+          <small id="evaluation-threshold-note">0 이상 1 이하. 점수 분포가 없어 변경 결과는 추정하지 않는다.</small>
+        </label>
+      </div>
+
+      <div class="lab-form-actions">
+        <button type="submit">지표 계산하기</button>
+        <button type="reset" class="lab-secondary-button">입력 초기화</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <p class="lab-tool-status" data-evaluation-status role="status" aria-live="polite">
+    예시 혼동행렬을 계산할 수 있다.
+  </p>
+
+  <section class="lab-result" data-evaluation-result hidden tabindex="-1">
+    <header class="lab-result-header">
+      <div>
+        <p class="lab-result-kicker">계산 결과</p>
+        <h2>분류 지표 해석</h2>
+      </div>
+      <button type="button" class="lab-secondary-button" data-copy-evaluation-url>
+        공유 주소 복사
+      </button>
+    </header>
+
+    <dl class="lab-result-summary">
+      <div>
+        <dt>전체 표본</dt>
+        <dd data-evaluation-total>-</dd>
+      </div>
+      <div>
+        <dt>실제 양성 / 음성</dt>
+        <dd data-evaluation-actual>-</dd>
+      </div>
+      <div>
+        <dt>분류 임곗값</dt>
+        <dd data-evaluation-threshold>-</dd>
+      </div>
+    </dl>
+
+    <div class="lab-warning-list" data-evaluation-warnings hidden>
+      <h3>해석 주의</h3>
+      <ul></ul>
+    </div>
+
+    <section aria-labelledby="evaluation-confusion-title">
+      <h3 id="evaluation-confusion-title">혼동행렬</h3>
+      <div class="lab-table-scroll">
+        <table class="lab-confusion-table">
+          <caption>행은 실제 클래스, 열은 예측 클래스다.</caption>
+          <thead>
+            <tr>
+              <th scope="col">실제 \ 예측</th>
+              <th scope="col">음성</th>
+              <th scope="col">양성</th>
+              <th scope="col">합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">음성</th>
+              <td data-confusion-tn>-</td>
+              <td data-confusion-fp>-</td>
+              <td data-confusion-negative>-</td>
+            </tr>
+            <tr>
+              <th scope="row">양성</th>
+              <td data-confusion-fn>-</td>
+              <td data-confusion-tp>-</td>
+              <td data-confusion-positive>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="evaluation-metric-title">
+      <h3 id="evaluation-metric-title">핵심 지표</h3>
+      <div class="lab-table-scroll">
+        <table class="lab-metric-table">
+          <thead>
+            <tr>
+              <th scope="col">지표</th>
+              <th scope="col">값</th>
+              <th scope="col">계산식</th>
+              <th scope="col">의미</th>
+            </tr>
+          </thead>
+          <tbody data-evaluation-metric-rows></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="evaluation-interpretation-title">
+      <h3 id="evaluation-interpretation-title">해석 안내</h3>
+      <p data-evaluation-interpretation></p>
+    </section>
+
+    <section aria-labelledby="evaluation-threshold-title">
+      <h3 id="evaluation-threshold-title">임곗값 변화의 방향</h3>
+      <p data-evaluation-threshold-limitation></p>
+      <div class="lab-threshold-grid" data-evaluation-threshold-directions></div>
+    </section>
+
+    <section class="lab-assumptions">
+      <h3>계산 가정</h3>
+      <ul data-evaluation-assumptions></ul>
+    </section>
+  </section>
+</section>
+
+<script>
+  import {
+    calculateEvaluationMetrics,
+    formatMetric,
+  } from '../../lib/evaluation-metrics.mjs';
+
+  const lab = document.querySelector('[data-evaluation-metrics-lab]');
+
+  if (lab instanceof HTMLElement) {
+    const form = lab.querySelector('[data-evaluation-form]');
+    const result = lab.querySelector('[data-evaluation-result]');
+    const status = lab.querySelector('[data-evaluation-status]');
+    const basePath = lab.dataset.basePath ?? '/';
+
+    const input = (name) => form?.elements.namedItem(name);
+    const text = (selector, value) => {
+      const element = lab.querySelector(selector);
+      if (element) element.textContent = value;
+    };
+    const wikiHref = (slug) => `${basePath}wiki/${slug}/`;
+
+    const renderWarnings = (warnings) => {
+      const container = lab.querySelector('[data-evaluation-warnings]');
+      const list = container?.querySelector('ul');
+      if (!container || !list) return;
+
+      list.replaceChildren();
+      container.hidden = warnings.length === 0;
+      for (const warning of warnings) {
+        const item = document.createElement('li');
+        item.dataset.severity = warning.severity;
+        item.textContent = warning.message;
+        list.append(item);
+      }
+    };
+
+    const renderMetrics = (metrics) => {
+      const body = lab.querySelector('[data-evaluation-metric-rows]');
+      if (!body) return;
+      body.replaceChildren();
+
+      for (const metric of metrics) {
+        const row = document.createElement('tr');
+
+        const name = document.createElement('th');
+        name.scope = 'row';
+        const link = document.createElement('a');
+        link.href = wikiHref(metric.wikiSlug);
+        link.textContent = metric.label;
+        name.append(link);
+
+        const value = document.createElement('td');
+        value.className = metric.value === null ? 'lab-metric-undefined' : '';
+        value.textContent = metric.value === null
+          ? '계산 불가'
+          : `${formatMetric(metric.value)} (${(metric.value * 100).toFixed(2)}%)`;
+
+        const formula = document.createElement('td');
+        const code = document.createElement('code');
+        code.textContent = metric.formula;
+        formula.append(code);
+
+        const description = document.createElement('td');
+        description.textContent = metric.describe;
+
+        row.append(name, value, formula, description);
+        body.append(row);
+      }
+    };
+
+    const renderThresholdDirections = (thresholdEffects) => {
+      const container = lab.querySelector('[data-evaluation-threshold-directions]');
+      if (!container) return;
+      container.replaceChildren();
+      text('[data-evaluation-threshold-limitation]', thresholdEffects.limitation);
+
+      for (const direction of thresholdEffects.directions) {
+        const article = document.createElement('article');
+        const heading = document.createElement('h4');
+        heading.textContent = direction.label;
+        const summary = document.createElement('p');
+        summary.textContent = direction.prediction;
+        const list = document.createElement('ul');
+        for (const effect of direction.likelyEffects) {
+          const item = document.createElement('li');
+          item.textContent = effect;
+          list.append(item);
+        }
+        article.append(heading, summary, list);
+        container.append(article);
+      }
+    };
+
+    const renderAssumptions = (assumptions) => {
+      const list = lab.querySelector('[data-evaluation-assumptions]');
+      if (!list) return;
+      list.replaceChildren();
+      for (const assumption of assumptions) {
+        const item = document.createElement('li');
+        item.textContent = assumption.text;
+        list.append(item);
+      }
+    };
+
+    const updateShareState = (calculation) => {
+      const url = new URL(window.location.href);
+      url.searchParams.set('tn', String(calculation.counts.trueNegative));
+      url.searchParams.set('fp', String(calculation.counts.falsePositive));
+      url.searchParams.set('fn', String(calculation.counts.falseNegative));
+      url.searchParams.set('tp', String(calculation.counts.truePositive));
+      if (calculation.threshold === null) url.searchParams.delete('threshold');
+      else url.searchParams.set('threshold', String(calculation.threshold));
+      window.history.replaceState({}, '', url);
+    };
+
+    const calculate = ({ updateUrl = true, focusResult = true } = {}) => {
+      if (!(form instanceof HTMLFormElement) || !form.reportValidity()) return;
+
+      try {
+        const calculation = calculateEvaluationMetrics({
+          trueNegative: input('trueNegative')?.value,
+          falsePositive: input('falsePositive')?.value,
+          falseNegative: input('falseNegative')?.value,
+          truePositive: input('truePositive')?.value,
+          threshold: input('threshold')?.value,
+        });
+
+        text('[data-evaluation-total]', `${calculation.totals.total.toLocaleString('ko-KR')}건`);
+        text(
+          '[data-evaluation-actual]',
+          `${calculation.totals.actualPositive.toLocaleString('ko-KR')}건 / ${calculation.totals.actualNegative.toLocaleString('ko-KR')}건`,
+        );
+        text('[data-evaluation-threshold]', calculation.thresholdEffects.label);
+        text('[data-confusion-tn]', calculation.counts.trueNegative.toLocaleString('ko-KR'));
+        text('[data-confusion-fp]', calculation.counts.falsePositive.toLocaleString('ko-KR'));
+        text('[data-confusion-fn]', calculation.counts.falseNegative.toLocaleString('ko-KR'));
+        text('[data-confusion-tp]', calculation.counts.truePositive.toLocaleString('ko-KR'));
+        text('[data-confusion-negative]', calculation.totals.actualNegative.toLocaleString('ko-KR'));
+        text('[data-confusion-positive]', calculation.totals.actualPositive.toLocaleString('ko-KR'));
+        text('[data-evaluation-interpretation]', calculation.interpretation);
+
+        renderWarnings(calculation.warnings);
+        renderMetrics(calculation.metrics);
+        renderThresholdDirections(calculation.thresholdEffects);
+        renderAssumptions(calculation.assumptions);
+        if (updateUrl) updateShareState(calculation);
+
+        result.hidden = false;
+        status.textContent = `${calculation.totals.total.toLocaleString('ko-KR')}건의 혼동행렬에서 5개 핵심 지표를 계산했다.`;
+        if (focusResult) {
+          result.focus({ preventScroll: true });
+          result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } catch (error) {
+        status.textContent = error instanceof Error
+          ? error.message
+          : '평가 지표를 계산하는 중 오류가 발생했다.';
+      }
+    };
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      calculate();
+    });
+
+    form?.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        const url = new URL(window.location.href);
+        url.search = '';
+        window.history.replaceState({}, '', url);
+        calculate({ updateUrl: false, focusResult: false });
+        status.textContent = '예시 혼동행렬로 입력을 초기화했다.';
+      });
+    });
+
+    lab.querySelector('[data-copy-evaluation-url]')?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        status.textContent = '현재 혼동행렬과 임곗값이 담긴 주소를 복사했다.';
+      } catch {
+        status.textContent = `주소 표시줄의 링크를 복사하면 같은 입력을 공유할 수 있다: ${window.location.href}`;
+      }
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const queryInputs = [
+      ['tn', 'trueNegative'],
+      ['fp', 'falsePositive'],
+      ['fn', 'falseNegative'],
+      ['tp', 'truePositive'],
+      ['threshold', 'threshold'],
+    ];
+    for (const [parameter, fieldName] of queryInputs) {
+      const field = input(fieldName);
+      if (params.has(parameter) && field instanceof HTMLInputElement) {
+        field.value = params.get(parameter) ?? '';
+      }
+    }
+
+    calculate({ updateUrl: false, focusResult: false });
+  }
+</script>

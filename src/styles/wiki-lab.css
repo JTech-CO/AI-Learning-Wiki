@@ -67,11 +67,21 @@
   font-weight: 700;
 }
 
+.lab-field-note {
+  margin: 0 0 .8rem;
+  color: #54595d;
+  font-size: .78rem;
+}
+
 .lab-form-grid {
   display: grid;
   grid-template-columns: minmax(16rem, 2fr) repeat(3, minmax(8rem, 1fr));
   gap: .85rem;
   align-items: end;
+}
+
+.lab-metric-input-grid {
+  grid-template-columns: repeat(5, minmax(7.5rem, 1fr));
 }
 
 .lab-field {
@@ -293,9 +303,86 @@
   padding-top: .6rem;
 }
 
+.lab-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.lab-confusion-table,
+.lab-metric-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #202122;
+  font-size: .8rem;
+}
+
+.lab-confusion-table {
+  min-width: 28rem;
+}
+
+.lab-metric-table {
+  min-width: 52rem;
+}
+
+.lab-confusion-table caption {
+  padding: 0 0 .4rem;
+  color: #54595d;
+  text-align: left;
+}
+
+.lab-confusion-table th,
+.lab-confusion-table td,
+.lab-metric-table th,
+.lab-metric-table td {
+  border: 1px solid #c8ccd1;
+  padding: .55rem .65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.lab-confusion-table th,
+.lab-metric-table th {
+  background: #f8f9fa;
+  font-weight: 700;
+}
+
+.lab-metric-table td:nth-child(2) {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.lab-metric-table code {
+  white-space: nowrap;
+}
+
+.lab-metric-undefined {
+  color: #6b4f00;
+  font-weight: 700;
+}
+
+.lab-threshold-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.lab-threshold-grid article {
+  border-top: 1px solid #c8ccd1;
+  padding-top: .6rem;
+}
+
+.lab-threshold-grid h4,
+.lab-threshold-grid p {
+  margin: .25rem 0;
+}
+
 @media (max-width: 70rem) {
   .lab-form-grid {
     grid-template-columns: minmax(15rem, 2fr) repeat(2, minmax(8rem, 1fr));
+  }
+
+  .lab-metric-input-grid {
+    grid-template-columns: repeat(3, minmax(8rem, 1fr));
   }
 
   .lab-field-goal {
@@ -306,7 +393,8 @@
 @media (max-width: 50rem) {
   .lab-planned-list,
   .lab-form-grid,
-  .lab-result-summary {
+  .lab-result-summary,
+  .lab-threshold-grid {
     grid-template-columns: 1fr;
   }
 

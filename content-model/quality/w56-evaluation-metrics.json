@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W56",
+  "releasedAt": "2026-07-29",
+  "tool": {
+    "id": "evaluation-metrics",
+    "title": {
+      "ko": "평가 지표 실험실",
+      "en": "Evaluation Metrics Lab"
+    },
+    "route": "/lab/evaluation-metrics/",
+    "status": "active",
+    "formulaVersion": "classification-metrics-v1",
+    "execution": {
+      "mode": "client-only",
+      "networkAccess": "none",
+      "transmitsUserInput": false,
+      "persistentStorage": "none"
+    }
+  },
+  "publicSurface": {
+    "hubRoute": "/lab/",
+    "hubPage": "src/content/docs/lab/index.mdx",
+    "toolPage": "src/content/docs/lab/evaluation-metrics.mdx",
+    "globalNavigation": "src/components/wiki/WikiSidebar.astro",
+    "homeNavigation": "src/components/wiki/WikiHome.astro",
+    "shareableParameters": [
+      "tn",
+      "fp",
+      "fn",
+      "tp",
+      "threshold"
+    ]
+  },
+  "implementation": {
+    "src/lib/evaluation-metrics.mjs": {
+      "bytes": 10795,
+      "sha256": "77654c0129856c0c5e22854728ec469e72c2de7849bb21ee2ce3e043980717ff"
+    },
+    "src/components/lab/EvaluationMetricsLab.astro": {
+      "bytes": 13559,
+      "sha256": "1d539b57ecd67af0f549e9ce07d756c319d11a9432c10c1919e559e11c6a601e"
+    },
+    "src/components/lab/LabDirectory.astro": {
+      "bytes": 1891,
+      "sha256": "1198c52f00617f319d3fc34b76f0f1423f707db70c66d868552585cfa79bf0d7"
+    },
+    "src/content/docs/lab/index.mdx": {
+      "bytes": 507,
+      "sha256": "7f3ad7e40ebb1d431db2cae88c529678bfd52e66acd7fd82a3905c916d83f575"
+    },
+    "src/content/docs/lab/evaluation-metrics.mdx": {
+      "bytes": 2681,
+      "sha256": "32eecff736d711be8a56ffeea0ea6ae446e0643d6ffd74bfb11c5d61147fb65b"
+    },
+    "src/styles/wiki-lab.css": {
+      "bytes": 6930,
+      "sha256": "e80cbef9485bafb94c37ea56fbf2e924073da7c274f25cea8bc0997474884fb9"
+    },
+    "content-model/labs/fixtures/w56-evaluation-metrics.json": {
+      "bytes": 3921,
+      "sha256": "45d974896d8665b9a9916779672212c04fa7834e6217f80720faaef2033cc657"
+    }
+  },
+  "deterministicFixtures": {
+    "source": "content-model/labs/fixtures/w56-evaluation-metrics.json",
+    "count": 8,
+    "requiredCount": 8,
+    "results": [
+      {
+        "id": "balanced-baseline",
+        "total": 1000,
+        "warningCodes": [],
+        "expectedWarningCodes": [],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "9d5ffa8949d261a994c4a5e6ea1de5905693af76716470146385dc6fcb8e2174"
+      },
+      {
+        "id": "perfect-classifier",
+        "total": 1000,
+        "warningCodes": [],
+        "expectedWarningCodes": [],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "f82910da0e21c34389edb50b5b0be5de9c1c38ec0c85cb5eb41b6bc74a19d670"
+      },
+      {
+        "id": "false-positive-heavy",
+        "total": 200,
+        "warningCodes": [],
+        "expectedWarningCodes": [],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "1ff1920d173ac1c2acf46059953e18fe1d42c46ee7e054429c90bf7503b70c7b"
+      },
+      {
+        "id": "false-negative-heavy",
+        "total": 200,
+        "warningCodes": [],
+        "expectedWarningCodes": [],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "e249eb6b6dc1c02db4cce12fca196a4d8dd32619ab92c2721f6f3593ab834fe5"
+      },
+      {
+        "id": "no-positive-predictions",
+        "total": 110,
+        "warningCodes": [
+          "CLASS_IMBALANCE",
+          "ZERO_DENOMINATOR"
+        ],
+        "expectedWarningCodes": [
+          "CLASS_IMBALANCE",
+          "ZERO_DENOMINATOR"
+        ],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "72d943a4499030d326eb05353612f557452a41649ac307e7825c5c5e3badd543"
+      },
+      {
+        "id": "no-actual-positives",
+        "total": 100,
+        "warningCodes": [
+          "CLASS_IMBALANCE",
+          "ZERO_DENOMINATOR"
+        ],
+        "expectedWarningCodes": [
+          "CLASS_IMBALANCE",
+          "ZERO_DENOMINATOR"
+        ],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "45f531106ffecd444c178850cf47f602f2cb3a9a771a85fc3a600b268b6ab4a9"
+      },
+      {
+        "id": "no-actual-negatives",
+        "total": 100,
+        "warningCodes": [
+          "CLASS_IMBALANCE",
+          "ZERO_DENOMINATOR"
+        ],
+        "expectedWarningCodes": [
+          "CLASS_IMBALANCE",
+          "ZERO_DENOMINATOR"
+        ],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "4996a76c28bbade808e50cbda6192c7b725425d0a7d4c7992ada4432ea66f067"
+      },
+      {
+        "id": "empty-matrix",
+        "total": 0,
+        "warningCodes": [
+          "ZERO_DENOMINATOR"
+        ],
+        "expectedWarningCodes": [
+          "ZERO_DENOMINATOR"
+        ],
+        "deterministic": true,
+        "finiteOrNull": true,
+        "sha256": "09c0270bcd8c974420977a01409f92925c0a8b1689e81cdefc56ecb1e77340ff"
+      }
+    ]
+  },
+  "interpretationPolicy": {
+    "zeroDenominator": "null-not-zero",
+    "classImbalanceRatio": 4,
+    "thresholdRecalculation": "direction-only-without-score-distribution",
+    "binaryClassificationOnly": true
+  },
+  "releaseGates": {
+    "clientOnly": true,
+    "noNetworkAccess": true,
+    "noInputTransmission": true,
+    "noPersistentStorage": true,
+    "assumptionsVisible": true,
+    "keyboardAccessible": true,
+    "mobileLayout": true,
+    "linksToWiki": true,
+    "shareableState": true,
+    "allFixturesDeterministic": true,
+    "allMetricValuesFiniteOrNull": true,
+    "allExpectedWarningsMatched": true
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W56",
+  "toolId": "evaluation-metrics",
+  "formulaVersion": "classification-metrics-v1",
+  "description": "평가 지표 계산식, 분모 0, 클래스 불균형과 임곗값 경계 처리를 고정하는 결정적 입력이다.",
+  "fixtures": [
+    {
+      "id": "balanced-baseline",
+      "inputs": {
+        "trueNegative": 450,
+        "falsePositive": 50,
+        "falseNegative": 40,
+        "truePositive": 460,
+        "threshold": 0.5
+      },
+      "expectedMetricValues": {
+        "accuracy": 0.91,
+        "precision": 0.9019607843137255,
+        "recall": 0.92,
+        "specificity": 0.9,
+        "f1-score": 0.9108910891089109
+      },
+      "expectedWarningCodes": []
+    },
+    {
+      "id": "perfect-classifier",
+      "inputs": {
+        "trueNegative": 500,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "truePositive": 500,
+        "threshold": 0.5
+      },
+      "expectedMetricValues": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "specificity": 1,
+        "f1-score": 1
+      },
+      "expectedWarningCodes": []
+    },
+    {
+      "id": "false-positive-heavy",
+      "inputs": {
+        "trueNegative": 50,
+        "falsePositive": 50,
+        "falseNegative": 5,
+        "truePositive": 95,
+        "threshold": 0
+      },
+      "expectedMetricValues": {
+        "accuracy": 0.725,
+        "precision": 0.6551724137931034,
+        "recall": 0.95,
+        "specificity": 0.5,
+        "f1-score": 0.7755102040816326
+      },
+      "expectedWarningCodes": []
+    },
+    {
+      "id": "false-negative-heavy",
+      "inputs": {
+        "trueNegative": 95,
+        "falsePositive": 5,
+        "falseNegative": 50,
+        "truePositive": 50,
+        "threshold": 1
+      },
+      "expectedMetricValues": {
+        "accuracy": 0.725,
+        "precision": 0.9090909090909091,
+        "recall": 0.5,
+        "specificity": 0.95,
+        "f1-score": 0.6451612903225806
+      },
+      "expectedWarningCodes": []
+    },
+    {
+      "id": "no-positive-predictions",
+      "inputs": {
+        "trueNegative": 100,
+        "falsePositive": 0,
+        "falseNegative": 10,
+        "truePositive": 0,
+        "threshold": 1
+      },
+      "expectedMetricValues": {
+        "accuracy": 0.9090909090909091,
+        "precision": null,
+        "recall": 0,
+        "specificity": 1,
+        "f1-score": 0
+      },
+      "expectedWarningCodes": [
+        "ZERO_DENOMINATOR",
+        "CLASS_IMBALANCE"
+      ]
+    },
+    {
+      "id": "no-actual-positives",
+      "inputs": {
+        "trueNegative": 90,
+        "falsePositive": 10,
+        "falseNegative": 0,
+        "truePositive": 0,
+        "threshold": 0.9
+      },
+      "expectedMetricValues": {
+        "accuracy": 0.9,
+        "precision": 0,
+        "recall": null,
+        "specificity": 0.9,
+        "f1-score": 0
+      },
+      "expectedWarningCodes": [
+        "ZERO_DENOMINATOR",
+        "CLASS_IMBALANCE"
+      ]
+    },
+    {
+      "id": "no-actual-negatives",
+      "inputs": {
+        "trueNegative": 0,
+        "falsePositive": 0,
+        "falseNegative": 10,
+        "truePositive": 90,
+        "threshold": 0.1
+      },
+      "expectedMetricValues": {
+        "accuracy": 0.9,
+        "precision": 1,
+        "recall": 0.9,
+        "specificity": null,
+        "f1-score": 0.9473684210526315
+      },
+      "expectedWarningCodes": [
+        "ZERO_DENOMINATOR",
+        "CLASS_IMBALANCE"
+      ]
+    },
+    {
+      "id": "empty-matrix",
+      "inputs": {
+        "trueNegative": 0,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "truePositive": 0,
+        "threshold": null
+      },
+      "expectedMetricValues": {
+        "accuracy": null,
+        "precision": null,
+        "recall": null,
+        "specificity": null,
+        "f1-score": null
+      },
+      "expectedWarningCodes": [
+        "ZERO_DENOMINATOR"
+      ]
+    }
+  ]
+}
