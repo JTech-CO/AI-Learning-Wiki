@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W57",
+  "toolId": "model-memory",
+  "formulaVersion": "model-memory-v1",
+  "description": "가중치, Adam 계열 학습 상태, KV 캐시와 문맥 길이 선형 증가 계산을 고정하는 결정적 입력이다.",
+  "fixtures": [
+    {
+      "id": "seven-billion-gqa-inference",
+      "inputs": {
+        "parameterCount": 7000000000,
+        "precision": 16,
+        "executionMode": "inference",
+        "layerCount": 32,
+        "batchSize": 1,
+        "contextLength": 8192,
+        "kvHeadCount": 8,
+        "headDimension": 128
+      },
+      "expected": {
+        "weightGiB": 13.0385160446167,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 1,
+        "totalGiB": 14.0385160446167,
+        "kvMiBPerTokenPerRequest": 0.125,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    },
+    {
+      "id": "seventy-billion-int8-inference",
+      "inputs": {
+        "parameterCount": 70000000000,
+        "precision": 8,
+        "executionMode": "inference",
+        "layerCount": 80,
+        "batchSize": 1,
+        "contextLength": 8192,
+        "kvHeadCount": 8,
+        "headDimension": 128
+      },
+      "expected": {
+        "weightGiB": 65.1925802230835,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 1.25,
+        "totalGiB": 66.4425802230835,
+        "kvMiBPerTokenPerRequest": 0.15625,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    },
+    {
+      "id": "thirteen-billion-mha-long-context",
+      "inputs": {
+        "parameterCount": 13000000000,
+        "precision": 16,
+        "executionMode": "inference",
+        "layerCount": 40,
+        "batchSize": 1,
+        "contextLength": 32768,
+        "kvHeadCount": 40,
+        "headDimension": 128
+      },
+      "expected": {
+        "weightGiB": 24.21438694000244,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 25,
+        "totalGiB": 49.21438694000244,
+        "kvMiBPerTokenPerRequest": 0.78125,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    },
+    {
+      "id": "seven-billion-batched-serving",
+      "inputs": {
+        "parameterCount": 7000000000,
+        "precision": 16,
+        "executionMode": "inference",
+        "layerCount": 32,
+        "batchSize": 16,
+        "contextLength": 4096,
+        "kvHeadCount": 8,
+        "headDimension": 128
+      },
+      "expected": {
+        "weightGiB": 13.0385160446167,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 8,
+        "totalGiB": 21.0385160446167,
+        "kvMiBPerTokenPerRequest": 0.125,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    },
+    {
+      "id": "seven-billion-mixed-precision-training",
+      "inputs": {
+        "parameterCount": 7000000000,
+        "precision": 16,
+        "executionMode": "training",
+        "layerCount": 32,
+        "batchSize": 1,
+        "contextLength": 2048,
+        "kvHeadCount": 8,
+        "headDimension": 128
+      },
+      "expected": {
+        "weightGiB": 13.0385160446167,
+        "trainingStateGiB": 104.3081283569336,
+        "kvCacheGiB": 0.25,
+        "totalGiB": 117.5966444015503,
+        "kvMiBPerTokenPerRequest": 0.125,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    },
+    {
+      "id": "one-billion-fp32-training",
+      "inputs": {
+        "parameterCount": 1000000000,
+        "precision": 32,
+        "executionMode": "training",
+        "layerCount": 24,
+        "batchSize": 4,
+        "contextLength": 2048,
+        "kvHeadCount": 16,
+        "headDimension": 64
+      },
+      "expected": {
+        "weightGiB": 3.725290298461914,
+        "trainingStateGiB": 11.175870895385742,
+        "kvCacheGiB": 1.5,
+        "totalGiB": 16.401161193847656,
+        "kvMiBPerTokenPerRequest": 0.1875,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    },
+    {
+      "id": "eight-billion-int4-inference",
+      "inputs": {
+        "parameterCount": 8000000000,
+        "precision": 4,
+        "executionMode": "inference",
+        "layerCount": 32,
+        "batchSize": 1,
+        "contextLength": 4096,
+        "kvHeadCount": 8,
+        "headDimension": 128
+      },
+      "expected": {
+        "weightGiB": 3.725290298461914,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 0.125,
+        "totalGiB": 3.850290298461914,
+        "kvMiBPerTokenPerRequest": 0.03125,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    },
+    {
+      "id": "thirty-billion-mqa-batch",
+      "inputs": {
+        "parameterCount": 30000000000,
+        "precision": 16,
+        "executionMode": "inference",
+        "layerCount": 60,
+        "batchSize": 8,
+        "contextLength": 16384,
+        "kvHeadCount": 1,
+        "headDimension": 128
+      },
+      "expected": {
+        "weightGiB": 55.87935447692871,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 3.75,
+        "totalGiB": 59.62935447692871,
+        "kvMiBPerTokenPerRequest": 0.029296875,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ]
+      }
+    }
+  ]
+}

@@ -585,13 +585,13 @@
       "id": "model-memory",
       "order": 3,
       "title": {
-        "ko": "모델 메모리 계산기",
+        "ko": "모델 메모리·KV 캐시·문맥 계산기",
         "en": "Model Memory Estimator"
       },
-      "summary": "파라미터 수, 수치 정밀도, 학습 상태와 KV 캐시 조건을 나누어 GPU 메모리 요구량의 근사 범위를 계산한다.",
+      "summary": "파라미터 수, 수치 정밀도, 학습 상태와 KV 캐시 구조·문맥 길이를 나누어 GPU 메모리 요구량의 최소 근사치를 계산한다.",
       "section": "measurement",
       "route": "/lab/model-memory/",
-      "status": "planned",
+      "status": "active",
       "plannedMilestone": "W57",
       "audiences": [
         "learner",

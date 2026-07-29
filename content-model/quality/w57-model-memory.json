@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W57",
+  "releasedAt": "2026-07-29",
+  "tool": {
+    "id": "model-memory",
+    "title": {
+      "ko": "모델 메모리·KV 캐시·문맥 계산기",
+      "en": "Model Memory Estimator"
+    },
+    "route": "/lab/model-memory/",
+    "status": "active",
+    "formulaVersion": "model-memory-v1",
+    "execution": {
+      "mode": "client-only",
+      "networkAccess": "none",
+      "transmitsUserInput": false,
+      "persistentStorage": "none"
+    }
+  },
+  "publicSurface": {
+    "hubRoute": "/lab/",
+    "hubPage": "src/content/docs/lab/index.mdx",
+    "toolPage": "src/content/docs/lab/model-memory.mdx",
+    "globalNavigation": "src/components/wiki/WikiSidebar.astro",
+    "homeNavigation": "src/components/wiki/WikiHome.astro",
+    "shareableParameters": [
+      "paramsB",
+      "precision",
+      "mode",
+      "layers",
+      "batch",
+      "context",
+      "kvHeads",
+      "headDim"
+    ]
+  },
+  "implementation": {
+    "src/lib/model-memory.mjs": {
+      "bytes": 12484,
+      "sha256": "ef119014347e87bd716ffe4cc6ec1fa632222e9a028c5f7434259c4a7fab8f6b"
+    },
+    "src/components/lab/ModelMemoryCalculator.astro": {
+      "bytes": 16331,
+      "sha256": "7e9a072357ddece963882318760ca074e87ec4f10bba66c0da5f53ef80298a3b"
+    },
+    "src/components/lab/LabDirectory.astro": {
+      "bytes": 1891,
+      "sha256": "1198c52f00617f319d3fc34b76f0f1423f707db70c66d868552585cfa79bf0d7"
+    },
+    "src/content/docs/lab/index.mdx": {
+      "bytes": 507,
+      "sha256": "7f3ad7e40ebb1d431db2cae88c529678bfd52e66acd7fd82a3905c916d83f575"
+    },
+    "src/content/docs/lab/model-memory.mdx": {
+      "bytes": 4292,
+      "sha256": "476343120ac8ce02aee32482cebfffaebde65eee6f3e0e106dfcc825087f0598"
+    },
+    "src/styles/wiki-lab.css": {
+      "bytes": 9069,
+      "sha256": "fe926bb2608026508656e04bb9ed6f532949d83eea37f413cc20c2edc1ae3899"
+    },
+    "content-model/labs/fixtures/w57-model-memory.json": {
+      "bytes": 5369,
+      "sha256": "6142c34aa8f1003dd542be7fcf17d307e7f492d6f8cb5e4ceaa9eead139a355e"
+    }
+  },
+  "deterministicFixtures": {
+    "source": "content-model/labs/fixtures/w57-model-memory.json",
+    "count": 8,
+    "requiredCount": 8,
+    "results": [
+      {
+        "id": "seven-billion-gqa-inference",
+        "executionMode": "inference",
+        "precision": 16,
+        "weightGiB": 13.0385160446167,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 1,
+        "totalGiB": 14.0385160446167,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "bc03f350a4918eb0ad96fd44c72720ea336a1942cb238cf75147b6d5e97e0761"
+      },
+      {
+        "id": "seventy-billion-int8-inference",
+        "executionMode": "inference",
+        "precision": 8,
+        "weightGiB": 65.1925802230835,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 1.25,
+        "totalGiB": 66.4425802230835,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "ae01af09a35a8ee9e39b652fdd77ee925baf9717274ecf51554f853af81029a8"
+      },
+      {
+        "id": "thirteen-billion-mha-long-context",
+        "executionMode": "inference",
+        "precision": 16,
+        "weightGiB": 24.21438694000244,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 25,
+        "totalGiB": 49.21438694000244,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "acc2379575530bc05aaaf1b46f390e22f704be2ba2cad7c1147863971fcf4c81"
+      },
+      {
+        "id": "seven-billion-batched-serving",
+        "executionMode": "inference",
+        "precision": 16,
+        "weightGiB": 13.0385160446167,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 8,
+        "totalGiB": 21.0385160446167,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "1c9e6b9d2c5eaedc95aa77b54e4e457bef4f495e24a0a5dc6cef20d91b8fe921"
+      },
+      {
+        "id": "seven-billion-mixed-precision-training",
+        "executionMode": "training",
+        "precision": 16,
+        "weightGiB": 13.0385160446167,
+        "trainingStateGiB": 104.3081283569336,
+        "kvCacheGiB": 0.25,
+        "totalGiB": 117.5966444015503,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "f821580b73ea8351dc97342dcd152680821584fb6c92997c1919825f3c76910a"
+      },
+      {
+        "id": "one-billion-fp32-training",
+        "executionMode": "training",
+        "precision": 32,
+        "weightGiB": 3.725290298461914,
+        "trainingStateGiB": 11.175870895385742,
+        "kvCacheGiB": 1.5,
+        "totalGiB": 16.401161193847656,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "1898b11b39b522aa69b85be25c48d4719a56eb34f44431093a3bd560674c603c"
+      },
+      {
+        "id": "eight-billion-int4-inference",
+        "executionMode": "inference",
+        "precision": 4,
+        "weightGiB": 3.725290298461914,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 0.125,
+        "totalGiB": 3.850290298461914,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "8aee110a05ac95598ba05f7520eda6463488469bedfbb5014e452a5054fdb214"
+      },
+      {
+        "id": "thirty-billion-mqa-batch",
+        "executionMode": "inference",
+        "precision": 16,
+        "weightGiB": 55.87935447692871,
+        "trainingStateGiB": 0,
+        "kvCacheGiB": 3.75,
+        "totalGiB": 59.62935447692871,
+        "warningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "expectedWarningCodes": [
+          "ESTIMATE_ONLY",
+          "TEMPORARY_MEMORY_EXCLUDED"
+        ],
+        "deterministic": true,
+        "finiteOutputs": true,
+        "sha256": "488dc09b66188dd725aae25103dea7dd26da27578a23266702c9682d5ddc7059"
+      }
+    ]
+  },
+  "calculationPolicy": {
+    "memoryUnit": "GiB",
+    "bytesPerGiB": 1073741824,
+    "weightFormula": "parameter-count * precision-bits / 8",
+    "kvCacheFormula": "2 * layers * batch * context-length * kv-heads * head-dimension * precision-bits / 8",
+    "trainingGradientBytesPerParameter": 4,
+    "adamMomentBytesPerParameter": 8,
+    "fp32MasterWeightBytesPerParameterWhenPrecisionBelow32": 4,
+    "contextScaling": "linear",
+    "temporaryMemoryIncluded": false
+  },
+  "releaseGates": {
+    "clientOnly": true,
+    "noNetworkAccess": true,
+    "noInputTransmission": true,
+    "noPersistentStorage": true,
+    "assumptionsVisible": true,
+    "keyboardAccessible": true,
+    "mobileLayout": true,
+    "linksToWiki": true,
+    "shareableState": true,
+    "allFixturesDeterministic": true,
+    "allOutputsFinite": true,
+    "allExpectedWarningsMatched": true
+  }
+}

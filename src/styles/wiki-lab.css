@@ -376,6 +376,100 @@
   margin: .25rem 0;
 }
 
+.lab-memory-form-grid {
+  grid-template-columns: repeat(4, minmax(9rem, 1fr));
+  align-items: start;
+}
+
+.lab-memory-summary {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.lab-memory-table,
+.lab-context-table,
+.lab-training-state-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #202122;
+  font-size: .8rem;
+}
+
+.lab-memory-table {
+  min-width: 50rem;
+}
+
+.lab-context-table {
+  min-width: 40rem;
+}
+
+.lab-training-state-table {
+  min-width: 34rem;
+}
+
+.lab-memory-table th,
+.lab-memory-table td,
+.lab-context-table th,
+.lab-context-table td,
+.lab-training-state-table th,
+.lab-training-state-table td {
+  border: 1px solid #c8ccd1;
+  padding: .55rem .65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.lab-memory-table th,
+.lab-context-table th,
+.lab-training-state-table th {
+  background: #f8f9fa;
+  font-weight: 700;
+}
+
+.lab-context-table caption {
+  padding: 0 0 .4rem;
+  color: #54595d;
+  text-align: left;
+}
+
+.lab-memory-table td:nth-child(2),
+.lab-memory-table td:nth-child(3),
+.lab-context-table th,
+.lab-context-table td,
+.lab-training-state-table td {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.lab-context-table .lab-memory-current > * {
+  background: #eaf3ff;
+}
+
+.lab-kv-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: .6rem 0 1rem;
+  border-top: 1px solid #c8ccd1;
+  border-bottom: 1px solid #c8ccd1;
+}
+
+.lab-kv-summary > div {
+  padding: .6rem .8rem;
+}
+
+.lab-kv-summary dt {
+  color: #54595d;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.lab-kv-summary dd {
+  margin: .2rem 0 0;
+}
+
+.lab-memory-excluded {
+  margin-top: 1.25rem;
+}
+
 @media (max-width: 70rem) {
   .lab-form-grid {
     grid-template-columns: minmax(15rem, 2fr) repeat(2, minmax(8rem, 1fr));
@@ -383,6 +477,27 @@
 
   .lab-metric-input-grid {
     grid-template-columns: repeat(3, minmax(8rem, 1fr));
+  }
+
+  .lab-memory-form-grid,
+  .lab-memory-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lab-memory-summary > div:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .lab-memory-summary > div:nth-child(n + 3) {
+    border-top: 1px solid #c8ccd1;
+  }
+
+  .lab-kv-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-kv-summary > div + div {
+    border-top: 1px solid #eaecf0;
   }
 
   .lab-field-goal {
