@@ -174,7 +174,11 @@
     "wiki:w54:report": "node scripts/build-w54-lab-architecture.mjs",
     "wiki:w54:validate": "node scripts/validate-w54-lab-architecture.mjs",
     "wiki:w54:release": "npm run wiki:w54:report && npm run wiki:w54:validate",
-    "postbuild": "npm run wiki:w54:release"
+    "postbuild": "npm run wiki:w54:release && npm run wiki:w55:release",
+    "wiki:w55:report": "node scripts/build-w55-learning-path.mjs",
+    "wiki:w55:validate": "node scripts/validate-w55-learning-path.mjs",
+    "wiki:w55:render": "node scripts/check-w55-render.mjs",
+    "wiki:w55:release": "npm run wiki:w55:report && npm run wiki:w55:validate && npm run wiki:w55:render"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

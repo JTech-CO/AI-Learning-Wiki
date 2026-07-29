@@ -1,0 +1,52 @@
+---
+import registry from '../../../content-model/labs/registry.json';
+
+const sections = new Map(registry.sections.map((section) => [section.id, section]));
+const activeTools = registry.tools
+  .filter((tool) => tool.status === 'active')
+  .sort((left, right) => left.order - right.order);
+const plannedTools = registry.tools
+  .filter((tool) => tool.status === 'planned')
+  .sort((left, right) => left.order - right.order);
+---
+
+<div class="lab-directory">
+  <section aria-labelledby="lab-active-title">
+    <h2 id="lab-active-title">사용 가능한 도구</h2>
+    <div class="lab-directory-list">
+      {activeTools.map((tool) => (
+        <article>
+          <p class="lab-directory-section">{sections.get(tool.section)?.title.ko}</p>
+          <h3><a href={tool.route}>{tool.title.ko}</a></h3>
+          <p>{tool.summary}</p>
+          <ul>
+            {tool.capabilities.map((capability) => <li>{capability}</li>)}
+          </ul>
+          <p><a href={tool.route}>도구 열기</a></p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="lab-planned-title">
+    <h2 id="lab-planned-title">준비 중인 도구</h2>
+    <ul class="lab-planned-list">
+      {plannedTools.map((tool) => (
+        <li>
+          <strong>{tool.title.ko}</strong>
+          <span>{sections.get(tool.section)?.title.ko}</span>
+          <p>{tool.summary}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section aria-labelledby="lab-policy-title">
+    <h2 id="lab-policy-title">공통 운영 원칙</h2>
+    <ul>
+      <li>도구 입력은 브라우저 안에서만 처리하며 서버로 전송하거나 저장하지 않는다.</li>
+      <li>결과에는 사용한 가정과 데이터 버전을 함께 표시한다.</li>
+      <li>계산 결과는 학습과 검토를 돕는 자료이며 전문적인 판단을 대신하지 않는다.</li>
+    </ul>
+  </section>
+</div>

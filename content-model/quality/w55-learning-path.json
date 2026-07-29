@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W55",
+  "releasedAt": "2026-07-29",
+  "tool": {
+    "id": "learning-path",
+    "title": {
+      "ko": "맞춤 학습 경로 생성기",
+      "en": "Personalized Learning Path Builder"
+    },
+    "route": "/lab/learning-path/",
+    "status": "active",
+    "formulaVersion": "graph-path-v1",
+    "execution": {
+      "mode": "client-only",
+      "networkAccess": "same-origin-data",
+      "transmitsUserInput": false,
+      "persistentStorage": "none"
+    }
+  },
+  "publicSurface": {
+    "hubRoute": "/lab/",
+    "hubPage": "src/content/docs/lab/index.mdx",
+    "toolPage": "src/content/docs/lab/learning-path.mdx",
+    "globalNavigation": "src/components/wiki/WikiSidebar.astro",
+    "homeNavigation": "src/components/wiki/WikiHome.astro",
+    "shareableParameters": [
+      "goal",
+      "level",
+      "limit",
+      "focus",
+      "math"
+    ]
+  },
+  "implementation": {
+    "src/lib/learning-path.mjs": {
+      "bytes": 12050,
+      "sha256": "28ae435363e1a11cdc559fbc619936deb477915743748b99a5ec57e9a0ad6524"
+    },
+    "src/components/lab/LearningPathBuilder.astro": {
+      "bytes": 13856,
+      "sha256": "0890c9167f949002ec6ee1b5b5f33992206e5d8d987e0c8887a189314fc6c3ad"
+    },
+    "src/components/lab/LabDirectory.astro": {
+      "bytes": 1891,
+      "sha256": "1198c52f00617f319d3fc34b76f0f1423f707db70c66d868552585cfa79bf0d7"
+    },
+    "src/content/docs/lab/index.mdx": {
+      "bytes": 507,
+      "sha256": "7f3ad7e40ebb1d431db2cae88c529678bfd52e66acd7fd82a3905c916d83f575"
+    },
+    "src/content/docs/lab/learning-path.mdx": {
+      "bytes": 2179,
+      "sha256": "1ffeee390c93098c13c98b329dc8053539d00db34d11ca998e2d6a9c5cd5cd3c"
+    },
+    "src/styles/wiki-lab.css": {
+      "bytes": 5095,
+      "sha256": "e2b0fcc233c4239ac3d510934f7af26c29251d0bbafb39f0d97bb5235fce4ec1"
+    },
+    "content-model/labs/fixtures/w55-learning-path.json": {
+      "bytes": 1515,
+      "sha256": "41d2047fb04993764ef418e806bba22fb66929ddd1bc2d06edf7a297c642ea72"
+    }
+  },
+  "dataSnapshot": {
+    "wikiGeneratedAt": "2026-07-29T07:39:08.835Z",
+    "articles": 1600,
+    "categories": 14,
+    "courses": 16,
+    "articlesWithPrerequisites": 1590,
+    "prerequisiteCoveragePercent": 99.4
+  },
+  "deterministicFixtures": {
+    "source": "content-model/labs/fixtures/w55-learning-path.json",
+    "count": 5,
+    "requiredCount": 5,
+    "results": [
+      {
+        "id": "rag-entry-balanced",
+        "goalId": "rag",
+        "pathLength": 12,
+        "prerequisiteCoverage": 39.3,
+        "warningCodes": [
+          "GRAPH_CYCLE",
+          "PATH_TRUNCATED"
+        ],
+        "expectedWarningCodes": [
+          "GRAPH_CYCLE",
+          "PATH_TRUNCATED"
+        ],
+        "targetIsLast": true,
+        "uniquePath": true,
+        "sha256": "b64e915a341c57267509e63bc0bcd241b835f84f9b2300ae595ea9cca7388ecb"
+      },
+      {
+        "id": "llm-intermediate-theory",
+        "goalId": "large-language-model",
+        "pathLength": 8,
+        "prerequisiteCoverage": 77.8,
+        "warningCodes": [
+          "GRAPH_CYCLE",
+          "PATH_TRUNCATED"
+        ],
+        "expectedWarningCodes": [
+          "GRAPH_CYCLE",
+          "PATH_TRUNCATED"
+        ],
+        "targetIsLast": true,
+        "uniquePath": true,
+        "sha256": "9f6abaccbc9976149bcde4a1671e429ab6aceabcdfc2f3ba63c91be5bfbaa112"
+      },
+      {
+        "id": "agent-professional-practice",
+        "goalId": "ai-agent",
+        "pathLength": 7,
+        "prerequisiteCoverage": 75,
+        "warningCodes": [
+          "PATH_TRUNCATED"
+        ],
+        "expectedWarningCodes": [
+          "PATH_TRUNCATED"
+        ],
+        "targetIsLast": true,
+        "uniquePath": true,
+        "sha256": "134451b1cd5cc2d316f0b1302d2e3d62988a7772c890acdaa43f66e439716688"
+      },
+      {
+        "id": "cross-entropy-without-mathematics",
+        "goalId": "cross-entropy",
+        "pathLength": 1,
+        "prerequisiteCoverage": 100,
+        "warningCodes": [
+          "MATH_FILTERED"
+        ],
+        "expectedWarningCodes": [
+          "MATH_FILTERED"
+        ],
+        "targetIsLast": true,
+        "uniquePath": true,
+        "sha256": "5220e31133552114b7558d4f2f18a4f5e3e34c60aa785b40c2530923db8515d2"
+      },
+      {
+        "id": "reinforcement-learning-full-path",
+        "goalId": "reinforcement-learning",
+        "pathLength": 9,
+        "prerequisiteCoverage": 100,
+        "warningCodes": [],
+        "expectedWarningCodes": [],
+        "targetIsLast": true,
+        "uniquePath": true,
+        "sha256": "1801ae90bca7555e07ddffc692fbbae466fd615da3252937404e854423e8b692"
+      }
+    ]
+  },
+  "releaseGates": {
+    "clientOnly": true,
+    "noInputTransmission": true,
+    "noPersistentStorage": true,
+    "assumptionsVisible": true,
+    "keyboardAccessible": true,
+    "mobileLayout": true,
+    "linksToWiki": true,
+    "shareableState": true,
+    "allFixturesDeterministic": true,
+    "allExpectedWarningsMatched": true
+  }
+}

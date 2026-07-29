@@ -20,7 +20,7 @@
     },
     "registryData": {
       "path": "content-model/labs/registry.json",
-      "sha256": "efb239f26861246256f73692d841326b3bbe8f082b35f17d5a900694dbc0a9ad"
+      "sha256": "c30ab6be11fb60e816cb49572e9c5121a48e11d35e7b3a678223c188468c8127"
     }
   },
   "informationArchitecture": {
@@ -78,8 +78,8 @@
   },
   "toolPlan": {
     "total": 6,
-    "active": 0,
-    "planned": 6,
+    "active": 1,
+    "planned": 5,
     "ids": [
       "learning-path",
       "evaluation-metrics",
@@ -131,8 +131,11 @@
     "hubRouteReserved": "/lab/",
     "hubActivation": "with-first-active-tool",
     "emptyHubForbidden": true,
-    "publicPageCreatedInW54": false,
-    "publicToolRoutesCreatedInW54": 0
+    "publicHubAvailable": true,
+    "publicToolRoutes": [
+      "/lab/learning-path/"
+    ],
+    "publicToolRouteCount": 1
   },
   "nextMilestone": {
     "id": "W55",

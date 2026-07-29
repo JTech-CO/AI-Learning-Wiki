@@ -49,7 +49,7 @@ assert.deepEqual(toolIds, expectedToolIds);
 assert.deepEqual(registry.tools.map((tool) => tool.order), [1, 2, 3, 4, 5, 6]);
 assert.equal(new Set(toolIds).size, toolIds.length);
 assert.equal(new Set(toolRoutes).size, toolRoutes.length);
-assert.equal(registry.tools.filter((tool) => tool.status === 'active').length, 0);
+assert.ok(registry.tools.every((tool) => ['active', 'planned'].includes(tool.status)));
 assert.deepEqual(
   Object.fromEntries(registry.tools.map((tool) => [tool.id, tool.plannedMilestone])),
   {
@@ -141,7 +141,8 @@ const withRelated = wiki.articles.filter((article) => article.related.length > 0
 const uniqueCourseArticles = new Set(wiki.courses.flatMap((course) => course.steps.map((step) => step.ref))).size;
 assert.equal(report.milestone, 'W54');
 assert.equal(report.toolPlan.total, registry.tools.length);
-assert.equal(report.toolPlan.active, 0);
+assert.equal(report.toolPlan.active, registry.tools.filter((tool) => tool.status === 'active').length);
+assert.equal(report.toolPlan.planned, registry.tools.filter((tool) => tool.status === 'planned').length);
 assert.equal(report.toolPlan.allClientOnly, true);
 assert.equal(report.toolPlan.allInputsPrivate, true);
 assert.equal(report.relationshipReadiness.articles, wiki.articles.length);
@@ -150,9 +151,23 @@ assert.ok(report.relationshipReadiness.prerequisiteCoveragePercent >= 95);
 assert.equal(report.relationshipReadiness.withRelated, withRelated);
 assert.equal(report.relationshipReadiness.relatedCoveragePercent, 100);
 assert.equal(report.relationshipReadiness.uniqueCourseArticles, uniqueCourseArticles);
-assert.equal(report.publicSurface.publicPageCreatedInW54, false);
-assert.equal(report.publicSurface.publicToolRoutesCreatedInW54, 0);
-assert.equal(fs.existsSync('src/content/docs/lab.mdx'), false, 'empty public lab hub must not be created in W54');
+const activeTools = registry.tools.filter((tool) => tool.status === 'active');
+const plannedTools = registry.tools.filter((tool) => tool.status === 'planned');
+const toolContentPath = (tool) => `src/content/docs${tool.route.slice(0, -1)}.mdx`;
+const publicToolRoutes = registry.tools
+  .filter((tool) => fs.existsSync(toolContentPath(tool)))
+  .map((tool) => tool.route);
+const publicHubAvailable = fs.existsSync('src/content/docs/lab/index.mdx');
+assert.equal(report.publicSurface.publicHubAvailable, publicHubAvailable);
+assert.deepEqual(report.publicSurface.publicToolRoutes, publicToolRoutes);
+assert.equal(report.publicSurface.publicToolRouteCount, publicToolRoutes.length);
+if (activeTools.length > 0) assert.equal(publicHubAvailable, true, 'an active tool requires the public lab hub');
+for (const tool of activeTools) {
+  assert.equal(fs.existsSync(toolContentPath(tool)), true, `${tool.id}: active tool page is missing`);
+}
+for (const tool of plannedTools) {
+  assert.equal(fs.existsSync(toolContentPath(tool)), false, `${tool.id}: planned tool must not expose an empty page`);
+}
 assert.equal(fs.existsSync('src/pages/lab'), false, 'empty public lab routes must not be created in W54');
 
 assert.equal(report.contracts.registry.sha256, sha256(readText(registrySchemaPath)));

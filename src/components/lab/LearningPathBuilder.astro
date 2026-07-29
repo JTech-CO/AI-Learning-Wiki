@@ -1,0 +1,373 @@
+---
+const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
+const wikiIndexUrl = `${basePath}data/wiki-index.json`;
+---
+
+<section class="lab-tool" data-learning-path-builder data-wiki-index-url={wikiIndexUrl}>
+  <form class="lab-tool-form" data-learning-path-form>
+    <fieldset>
+      <legend>학습 조건</legend>
+      <div class="lab-form-grid">
+        <label class="lab-field lab-field-goal">
+          <span>목표 문서</span>
+          <input
+            type="search"
+            name="goal"
+            list="learning-path-articles"
+            autocomplete="off"
+            placeholder="예: 검색 증강 생성, AI 에이전트"
+            required
+            aria-describedby="learning-path-goal-note"
+          />
+          <small id="learning-path-goal-note">백과 문서의 한국어·영문 제목이나 별칭으로 찾을 수 있다.</small>
+        </label>
+
+        <label class="lab-field">
+          <span>현재 수준</span>
+          <select name="level">
+            <option value="entry">입문</option>
+            <option value="intermediate">중급</option>
+            <option value="professional">전문</option>
+          </select>
+        </label>
+
+        <label class="lab-field">
+          <span>최대 문서 수</span>
+          <input type="number" name="limit" min="5" max="30" step="1" value="10" />
+        </label>
+
+        <label class="lab-field">
+          <span>학습 초점</span>
+          <select name="focus">
+            <option value="balanced">균형</option>
+            <option value="theory">이론</option>
+            <option value="practice">실무</option>
+          </select>
+        </label>
+
+        <label class="lab-field lab-field-checkbox">
+          <input type="checkbox" name="mathematics" checked />
+          <span>수학·통계 선수 문서 포함</span>
+        </label>
+      </div>
+
+      <datalist id="learning-path-articles" data-learning-path-options></datalist>
+
+      <div class="lab-form-actions">
+        <button type="submit">학습 경로 만들기</button>
+        <button type="reset" class="lab-secondary-button">조건 초기화</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <p class="lab-tool-status" data-learning-path-status role="status" aria-live="polite">
+    백과 문서 관계 데이터를 불러오는 중이다.
+  </p>
+
+  <section class="lab-result" data-learning-path-result hidden tabindex="-1">
+    <header class="lab-result-header">
+      <div>
+        <p class="lab-result-kicker">맞춤 결과</p>
+        <h2 data-result-title>추천 학습 경로</h2>
+      </div>
+      <button type="button" class="lab-secondary-button" data-copy-learning-path>
+        공유 주소 복사
+      </button>
+    </header>
+
+    <dl class="lab-result-summary">
+      <div>
+        <dt>경로 문서</dt>
+        <dd data-result-count>-</dd>
+      </div>
+      <div>
+        <dt>선수 관계 충족률</dt>
+        <dd data-result-coverage>-</dd>
+      </div>
+      <div>
+        <dt>학습 조건</dt>
+        <dd data-result-condition>-</dd>
+      </div>
+    </dl>
+
+    <div class="lab-warning-list" data-result-warnings hidden>
+      <h3>경로 생성 알림</h3>
+      <ul></ul>
+    </div>
+
+    <h3>권장 문서 순서</h3>
+    <ol class="lab-path-list" data-result-path></ol>
+
+    <section data-result-next hidden>
+      <h3>이어서 읽을 문서</h3>
+      <ul class="lab-related-list"></ul>
+    </section>
+
+    <section class="lab-assumptions">
+      <h3>계산 가정</h3>
+      <ul data-result-assumptions></ul>
+    </section>
+  </section>
+</section>
+
+<script>
+  import {
+    buildLearningPath,
+    resolveArticleQuery,
+  } from '../../lib/learning-path.mjs';
+
+  const builder = document.querySelector('[data-learning-path-builder]');
+
+  if (builder instanceof HTMLElement) {
+    const form = builder.querySelector('[data-learning-path-form]');
+    const status = builder.querySelector('[data-learning-path-status]');
+    const result = builder.querySelector('[data-learning-path-result]');
+    const options = builder.querySelector('[data-learning-path-options]');
+    const goalInput = form?.elements.namedItem('goal');
+    const levelInput = form?.elements.namedItem('level');
+    const limitInput = form?.elements.namedItem('limit');
+    const focusInput = form?.elements.namedItem('focus');
+    const mathematicsInput = form?.elements.namedItem('mathematics');
+    const courseById = new Map();
+    let wikiIndex = null;
+
+    const text = (selector, value) => {
+      const element = builder.querySelector(selector);
+      if (element) element.textContent = value;
+    };
+
+    const appendLink = (parent, item, className = '') => {
+      const link = document.createElement('a');
+      link.href = item.url;
+      link.textContent = item.title;
+      if (className) link.className = className;
+      parent.append(link);
+      return link;
+    };
+
+    const renderWarnings = (warnings) => {
+      const container = builder.querySelector('[data-result-warnings]');
+      const list = container?.querySelector('ul');
+      if (!container || !list) return;
+
+      list.replaceChildren();
+      container.hidden = warnings.length === 0;
+      for (const warning of warnings) {
+        const item = document.createElement('li');
+        item.dataset.severity = warning.severity;
+        item.textContent = warning.message;
+        list.append(item);
+      }
+    };
+
+    const renderPath = (path) => {
+      const list = builder.querySelector('[data-result-path]');
+      if (!list) return;
+      list.replaceChildren();
+
+      for (const article of path) {
+        const item = document.createElement('li');
+        item.className = 'lab-path-step';
+
+        const heading = document.createElement('h4');
+        appendLink(heading, article);
+        if (article.englishTitle && article.englishTitle !== article.title) {
+          const englishTitle = document.createElement('span');
+          englishTitle.textContent = article.englishTitle;
+          heading.append(' ', englishTitle);
+        }
+
+        const rationale = document.createElement('p');
+        rationale.className = 'lab-path-rationale';
+        rationale.textContent = article.rationale;
+
+        const summary = document.createElement('p');
+        summary.textContent = article.summary;
+
+        item.append(heading, rationale, summary);
+
+        const linkedCourses = article.courseIds
+          .map((courseId) => courseById.get(courseId))
+          .filter(Boolean);
+        if (linkedCourses.length > 0) {
+          const courseLine = document.createElement('p');
+          courseLine.className = 'lab-path-courses';
+          courseLine.append('연결 코스: ');
+          linkedCourses.forEach((course, index) => {
+            if (index > 0) courseLine.append(' · ');
+            appendLink(courseLine, course);
+          });
+          item.append(courseLine);
+        }
+
+        list.append(item);
+      }
+    };
+
+    const renderNextArticles = (articles) => {
+      const section = builder.querySelector('[data-result-next]');
+      const list = section?.querySelector('ul');
+      if (!section || !list) return;
+
+      list.replaceChildren();
+      section.hidden = articles.length === 0;
+      for (const article of articles) {
+        const item = document.createElement('li');
+        const line = document.createElement('p');
+        appendLink(line, article);
+        line.append(` — ${article.summary}`);
+        item.append(line);
+        list.append(item);
+      }
+    };
+
+    const renderAssumptions = (assumptions) => {
+      const list = builder.querySelector('[data-result-assumptions]');
+      if (!list) return;
+      list.replaceChildren();
+      for (const assumption of assumptions) {
+        const item = document.createElement('li');
+        item.textContent = assumption.text;
+        list.append(item);
+      }
+    };
+
+    const updateShareState = (article, pathResult) => {
+      const url = new URL(window.location.href);
+      url.searchParams.set('goal', article.id);
+      url.searchParams.set('level', pathResult.level);
+      url.searchParams.set('limit', String(pathResult.maxDocuments));
+      url.searchParams.set('focus', pathResult.focus);
+      url.searchParams.set('math', pathResult.includeMathematics ? '1' : '0');
+      window.history.replaceState({}, '', url);
+    };
+
+    const generate = () => {
+      if (!wikiIndex || !(goalInput instanceof HTMLInputElement)) return;
+      const article = resolveArticleQuery(wikiIndex.articles, goalInput.value);
+      if (!article) {
+        status.textContent = '일치하는 목표 문서를 찾지 못했다. 목록에서 문서를 선택하거나 제목을 다시 확인해 달라.';
+        goalInput.focus();
+        return;
+      }
+
+      goalInput.value = article.englishTitle
+        ? `${article.title} — ${article.englishTitle}`
+        : article.title;
+
+      try {
+        const pathResult = buildLearningPath({
+          articles: wikiIndex.articles,
+          courses: wikiIndex.courses,
+          goalId: article.id,
+          level: levelInput?.value,
+          maxDocuments: Number(limitInput?.value),
+          focus: focusInput?.value,
+          includeMathematics: mathematicsInput?.checked,
+        });
+
+        const levelLabel = levelInput?.selectedOptions?.[0]?.textContent ?? pathResult.level;
+        const focusLabel = focusInput?.selectedOptions?.[0]?.textContent ?? pathResult.focus;
+        text('[data-result-title]', `${article.title}까지의 추천 학습 경로`);
+        text('[data-result-count]', `${pathResult.path.length}개`);
+        text('[data-result-coverage]', `${pathResult.prerequisiteCoverage.toFixed(1)}%`);
+        text(
+          '[data-result-condition]',
+          `${levelLabel} · ${focusLabel} · 수학 ${pathResult.includeMathematics ? '포함' : '제외'}`,
+        );
+
+        renderWarnings(pathResult.warnings);
+        renderPath(pathResult.path);
+        renderNextArticles(pathResult.nextArticles);
+        renderAssumptions(pathResult.assumptions);
+        updateShareState(article, pathResult);
+
+        result.hidden = false;
+        status.textContent = `${article.title}을 목표로 ${pathResult.path.length}개 문서의 경로를 만들었다.`;
+        result.focus({ preventScroll: true });
+        result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (error) {
+        status.textContent = error instanceof Error
+          ? error.message
+          : '학습 경로를 만드는 중 오류가 발생했다.';
+      }
+    };
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      generate();
+    });
+
+    form?.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        result.hidden = true;
+        const url = new URL(window.location.href);
+        url.search = '';
+        window.history.replaceState({}, '', url);
+        status.textContent = wikiIndex
+          ? `${wikiIndex.articles.length.toLocaleString('ko-KR')}개 문서에서 목표를 선택할 수 있다.`
+          : '백과 문서 관계 데이터를 불러오는 중이다.';
+      });
+    });
+
+    builder.querySelector('[data-copy-learning-path]')?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        status.textContent = '현재 학습 조건이 담긴 주소를 복사했다.';
+      } catch {
+        status.textContent = `주소 표시줄의 링크를 복사하면 같은 학습 조건을 공유할 수 있다: ${window.location.href}`;
+      }
+    });
+
+    fetch(builder.dataset.wikiIndexUrl)
+      .then((response) => {
+        if (!response.ok) throw new Error(`문서 인덱스 응답 오류: ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        wikiIndex = data;
+        for (const course of wikiIndex.courses ?? []) courseById.set(course.id, course);
+
+        const fragment = document.createDocumentFragment();
+        for (const article of wikiIndex.articles ?? []) {
+          const option = document.createElement('option');
+          option.value = article.englishTitle
+            ? `${article.title} — ${article.englishTitle}`
+            : article.title;
+          option.label = article.categories?.join(' · ') ?? '';
+          fragment.append(option);
+        }
+        options?.append(fragment);
+        status.textContent = `${wikiIndex.articles.length.toLocaleString('ko-KR')}개 문서에서 목표를 선택할 수 있다.`;
+
+        const params = new URLSearchParams(window.location.search);
+        const queryGoal = params.get('goal');
+        if (queryGoal) {
+          const article = resolveArticleQuery(wikiIndex.articles, queryGoal);
+          if (article && goalInput instanceof HTMLInputElement) {
+            goalInput.value = article.englishTitle
+              ? `${article.title} — ${article.englishTitle}`
+              : article.title;
+            if (levelInput instanceof HTMLSelectElement && params.has('level')) {
+              levelInput.value = params.get('level');
+            }
+            if (limitInput instanceof HTMLInputElement && params.has('limit')) {
+              limitInput.value = params.get('limit');
+            }
+            if (focusInput instanceof HTMLSelectElement && params.has('focus')) {
+              focusInput.value = params.get('focus');
+            }
+            if (mathematicsInput instanceof HTMLInputElement && params.has('math')) {
+              mathematicsInput.checked = params.get('math') !== '0';
+            }
+            generate();
+          }
+        }
+      })
+      .catch((error) => {
+        status.textContent = error instanceof Error
+          ? `백과 문서 관계 데이터를 불러오지 못했다: ${error.message}`
+          : '백과 문서 관계 데이터를 불러오지 못했다.';
+      });
+  }
+</script>

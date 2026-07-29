@@ -97,7 +97,7 @@
       "summary": "목표 문서, 현재 수준과 학습 분량을 기준으로 선수 관계를 따라 권장 읽기 순서와 선택 이유를 구성한다.",
       "section": "learning",
       "route": "/lab/learning-path/",
-      "status": "planned",
+      "status": "active",
       "plannedMilestone": "W55",
       "audiences": [
         "learner",
@@ -295,6 +295,12 @@
             "severity": "info",
             "condition": "필요한 선수 문서가 최대 문서 수를 초과한 경우",
             "message": "우선순위가 낮은 문서를 생략하고 생략 수와 기준을 표시한다."
+          },
+          {
+            "code": "MATH_FILTERED",
+            "severity": "info",
+            "condition": "사용자가 수학 문서 제외를 선택해 수학·통계 선수 문서를 생략한 경우",
+            "message": "생략한 수학 선수 문서 수와 이론적 연결이 줄어들 수 있음을 표시한다."
           }
         ]
       },
@@ -319,7 +325,7 @@
             "title": "AI Learning Wiki article relationship index",
             "kind": "internal",
             "locator": "public/data/wiki-index.json",
-            "version": "W54 baseline",
+            "version": "W55 release",
             "accessedAt": "2026-07-29"
           },
           {

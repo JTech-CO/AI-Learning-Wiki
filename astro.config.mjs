@@ -26,7 +26,11 @@ export default defineConfig({
         { tag: 'meta', attrs: { property: 'og:image:alt', content: 'AI Learning Wiki 로고' } },
         { tag: 'meta', attrs: { name: 'twitter:image', content: logoUrl } }
       ],
-      customCss: ['./src/styles/wiki.css', './src/styles/wiki-library.css'],
+      customCss: [
+        './src/styles/wiki.css',
+        './src/styles/wiki-library.css',
+        './src/styles/wiki-lab.css'
+      ],
       locales: { root: { label: '한국어', lang: 'ko' } },
       pagefind: false,
       tableOfContents: false,
@@ -44,6 +48,7 @@ export default defineConfig({
         { label: '대문', link: '/' },
         { label: '전체 문서(색인)', link: '/special/all-pages/' },
         { label: '학습 코스', items: [{ autogenerate: { directory: 'course' } }] },
+        { label: 'AI 실험실', items: [{ autogenerate: { directory: 'lab' } }] },
         { label: '백과 분류', items: [{ autogenerate: { directory: 'category' } }] },
         { label: '프롬프트 자료실', link: '/prompt-explorer/' },
         { label: '코드·설정 자료실', link: '/snippet-explorer/' }

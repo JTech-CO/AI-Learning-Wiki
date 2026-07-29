@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W55",
+  "toolId": "learning-path",
+  "fixtures": [
+    {
+      "id": "rag-entry-balanced",
+      "goalId": "rag",
+      "level": "entry",
+      "maxDocuments": 12,
+      "focus": "balanced",
+      "includeMathematics": true,
+      "expectedWarningCodes": [
+        "GRAPH_CYCLE",
+        "PATH_TRUNCATED"
+      ]
+    },
+    {
+      "id": "llm-intermediate-theory",
+      "goalId": "large-language-model",
+      "level": "intermediate",
+      "maxDocuments": 8,
+      "focus": "theory",
+      "includeMathematics": true,
+      "expectedWarningCodes": [
+        "GRAPH_CYCLE",
+        "PATH_TRUNCATED"
+      ]
+    },
+    {
+      "id": "agent-professional-practice",
+      "goalId": "ai-agent",
+      "level": "professional",
+      "maxDocuments": 7,
+      "focus": "practice",
+      "includeMathematics": true,
+      "expectedWarningCodes": [
+        "PATH_TRUNCATED"
+      ]
+    },
+    {
+      "id": "cross-entropy-without-mathematics",
+      "goalId": "cross-entropy",
+      "level": "intermediate",
+      "maxDocuments": 10,
+      "focus": "theory",
+      "includeMathematics": false,
+      "expectedWarningCodes": [
+        "MATH_FILTERED"
+      ]
+    },
+    {
+      "id": "reinforcement-learning-full-path",
+      "goalId": "reinforcement-learning",
+      "level": "entry",
+      "maxDocuments": 30,
+      "focus": "balanced",
+      "includeMathematics": true,
+      "expectedWarningCodes": []
+    }
+  ]
+}

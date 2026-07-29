@@ -32,6 +32,10 @@ const byMilestone = Object.fromEntries(
     .sort((a, b) => a === 'backlog' ? 1 : b === 'backlog' ? -1 : Number(a.slice(1)) - Number(b.slice(1)))
     .map((milestone) => [milestone, registry.tools.filter((tool) => tool.plannedMilestone === milestone).map((tool) => tool.id)]),
 );
+const toolContentPath = (tool) => `src/content/docs${tool.route.slice(0, -1)}.mdx`;
+const publicToolRoutes = registry.tools
+  .filter((tool) => fs.existsSync(resolve(toolContentPath(tool))))
+  .map((tool) => tool.route);
 
 const report = {
   schemaVersion: '1.0',
@@ -76,8 +80,9 @@ const report = {
     hubRouteReserved: registry.hub.route,
     hubActivation: registry.hub.activation,
     emptyHubForbidden: registry.releasePolicy.emptyHubForbidden,
-    publicPageCreatedInW54: false,
-    publicToolRoutesCreatedInW54: 0,
+    publicHubAvailable: fs.existsSync(resolve('src/content/docs/lab/index.mdx')),
+    publicToolRoutes,
+    publicToolRouteCount: publicToolRoutes.length,
   },
   nextMilestone: {
     id: 'W55',
@@ -93,4 +98,4 @@ const report = {
 
 fs.mkdirSync(resolve('content-model/quality'), { recursive: true });
 fs.writeFileSync(resolve('content-model/quality/w54-lab-architecture.json'), `${JSON.stringify(report, null, 2)}\n`);
-console.log(`W54 lab architecture: ${report.toolPlan.total} tools planned, ${report.relationshipReadiness.prerequisiteCoveragePercent}% prerequisite coverage, public hub reserved`);
+console.log(`W54 lab architecture: ${report.toolPlan.total} tools registered, ${report.toolPlan.active} active, ${report.relationshipReadiness.prerequisiteCoveragePercent}% prerequisite coverage`);
