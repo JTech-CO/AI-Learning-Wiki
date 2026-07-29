@@ -170,7 +170,11 @@
     "wiki:w52:validate": "node scripts/validate-w52-artifact-release.mjs",
     "wiki:w53:report": "node scripts/build-w53-integrated-release.mjs",
     "wiki:w53:validate": "node scripts/validate-w53-integrated-release.mjs",
-    "wiki:w53:release": "npm run wiki:w53:report && npm run wiki:w53:validate"
+    "wiki:w53:release": "npm run wiki:w53:report && npm run wiki:w53:validate",
+    "wiki:w54:report": "node scripts/build-w54-lab-architecture.mjs",
+    "wiki:w54:validate": "node scripts/validate-w54-lab-architecture.mjs",
+    "wiki:w54:release": "npm run wiki:w54:report && npm run wiki:w54:validate",
+    "postbuild": "npm run wiki:w54:release"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

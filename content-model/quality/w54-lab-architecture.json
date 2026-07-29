@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W54",
+  "designedAt": "2026-07-29",
+  "contracts": {
+    "registry": {
+      "path": "content-model/schema.lab-registry-v1.json",
+      "id": "https://ai-wiki.kr/schemas/lab-registry-v1.json",
+      "sha256": "32d796ce58685f3900471918154116c6e3c5b8bd32101c520ef0d5ae98dd645d"
+    },
+    "toolManifest": {
+      "path": "content-model/schema.lab-tool-v1.json",
+      "id": "https://ai-wiki.kr/schemas/lab-tool-v1.json",
+      "sha256": "950c8ece5c86eee454497ca8f28bfdd3eaf6ebf86481ba807df9bcd6ba2b3804"
+    },
+    "runtimeSession": {
+      "path": "content-model/schema.lab-session-v1.json",
+      "id": "https://ai-wiki.kr/schemas/lab-session-v1.json",
+      "sha256": "44370a1a9f6673da784dcf8e993269adbb2b316379c10b8d90319821c09929f8"
+    },
+    "registryData": {
+      "path": "content-model/labs/registry.json",
+      "sha256": "efb239f26861246256f73692d841326b3bbe8f082b35f17d5a900694dbc0a9ad"
+    }
+  },
+  "informationArchitecture": {
+    "hub": {
+      "id": "ai-lab",
+      "title": {
+        "ko": "AI 실험실",
+        "en": "AI Lab"
+      },
+      "route": "/lab/",
+      "activation": "with-first-active-tool",
+      "description": "백과 문서의 개념을 학습 순서, 계산 결과, 검증 보고서로 직접 확인하는 위키 연계 실습 공간이다."
+    },
+    "navigation": {
+      "globalPlacement": "after-learning-courses",
+      "homePlacement": "browse-and-practice",
+      "breadcrumbs": [
+        "대문",
+        "AI 실험실",
+        "도구"
+      ],
+      "toolPageSections": [
+        "purpose",
+        "inputs",
+        "results",
+        "assumptions",
+        "sources",
+        "related-documents",
+        "usage-notes"
+      ]
+    },
+    "sectionOrder": [
+      "learning",
+      "measurement",
+      "validation",
+      "operations"
+    ],
+    "sourceOfTruth": {
+      "registry": "content-model/labs/registry.json",
+      "toolSchema": "content-model/schema.lab-tool-v1.json",
+      "sessionSchema": "content-model/schema.lab-session-v1.json",
+      "wikiIndex": "public/data/wiki-index.json",
+      "courses": "content-model/paths/*.path.json"
+    },
+    "releasePolicy": {
+      "emptyHubForbidden": true,
+      "defaultExecution": "client-only",
+      "userInputRetention": "none",
+      "externalApiDefault": "disabled",
+      "sourceVersionVisible": true,
+      "assumptionsVisible": true,
+      "visualStyle": "wiki-content-first",
+      "accessibility": "keyboard-and-mobile-required"
+    }
+  },
+  "toolPlan": {
+    "total": 6,
+    "active": 0,
+    "planned": 6,
+    "ids": [
+      "learning-path",
+      "evaluation-metrics",
+      "model-memory",
+      "prompt-schema",
+      "token-context",
+      "rag-evaluation"
+    ],
+    "bySection": {
+      "learning": 1,
+      "measurement": 4,
+      "validation": 1,
+      "operations": 0
+    },
+    "byMilestone": {
+      "W55": [
+        "learning-path"
+      ],
+      "W56": [
+        "evaluation-metrics"
+      ],
+      "W57": [
+        "model-memory"
+      ],
+      "W58": [
+        "prompt-schema"
+      ],
+      "backlog": [
+        "token-context",
+        "rag-evaluation"
+      ]
+    },
+    "allClientOnly": true,
+    "allInputsPrivate": true,
+    "allEvidenceLinked": true,
+    "allWikiLinked": true
+  },
+  "relationshipReadiness": {
+    "articles": 1600,
+    "withPrerequisites": 1590,
+    "prerequisiteCoveragePercent": 99.4,
+    "withRelated": 1600,
+    "relatedCoveragePercent": 100,
+    "courseSteps": 311,
+    "uniqueCourseArticles": 270,
+    "courseArticleCoveragePercent": 16.9
+  },
+  "publicSurface": {
+    "hubRouteReserved": "/lab/",
+    "hubActivation": "with-first-active-tool",
+    "emptyHubForbidden": true,
+    "publicPageCreatedInW54": false,
+    "publicToolRoutesCreatedInW54": 0
+  },
+  "nextMilestone": {
+    "id": "W55",
+    "toolId": "learning-path",
+    "entryCriteria": [
+      "W54 registry and schemas validate",
+      "article prerequisite coverage remains at least 95 percent",
+      "no user input leaves the browser",
+      "the hub activates together with the first working tool"
+    ]
+  }
+}

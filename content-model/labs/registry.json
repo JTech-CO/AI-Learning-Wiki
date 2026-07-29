@@ -1,0 +1,1596 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W54",
+  "updatedAt": "2026-07-29",
+  "hub": {
+    "id": "ai-lab",
+    "title": {
+      "ko": "AI 실험실",
+      "en": "AI Lab"
+    },
+    "route": "/lab/",
+    "activation": "with-first-active-tool",
+    "description": "백과 문서의 개념을 학습 순서, 계산 결과, 검증 보고서로 직접 확인하는 위키 연계 실습 공간이다."
+  },
+  "navigation": {
+    "globalPlacement": "after-learning-courses",
+    "homePlacement": "browse-and-practice",
+    "breadcrumbs": [
+      "대문",
+      "AI 실험실",
+      "도구"
+    ],
+    "toolPageSections": [
+      "purpose",
+      "inputs",
+      "results",
+      "assumptions",
+      "sources",
+      "related-documents",
+      "usage-notes"
+    ]
+  },
+  "sections": [
+    {
+      "id": "learning",
+      "order": 1,
+      "title": {
+        "ko": "학습 경로",
+        "en": "Learning Paths"
+      },
+      "description": "선수 문서와 관련 문서를 이용해 목표별 읽기 순서를 구성한다."
+    },
+    {
+      "id": "measurement",
+      "order": 2,
+      "title": {
+        "ko": "계산과 평가",
+        "en": "Measurement and Evaluation"
+      },
+      "description": "평가 지표, 메모리, 토큰과 검색 품질을 재현 가능한 입력으로 계산한다."
+    },
+    {
+      "id": "validation",
+      "order": 3,
+      "title": {
+        "ko": "설계 검증",
+        "en": "Design Validation"
+      },
+      "description": "프롬프트, 변수와 구조화 출력 계약의 형식 오류를 점검한다."
+    },
+    {
+      "id": "operations",
+      "order": 4,
+      "title": {
+        "ko": "운영과 안전",
+        "en": "Operations and Safety"
+      },
+      "description": "향후 관측성, 위험 점검과 프로토콜 흐름 해설 도구를 수용한다."
+    }
+  ],
+  "sourceOfTruth": {
+    "registry": "content-model/labs/registry.json",
+    "toolSchema": "content-model/schema.lab-tool-v1.json",
+    "sessionSchema": "content-model/schema.lab-session-v1.json",
+    "wikiIndex": "public/data/wiki-index.json",
+    "courses": "content-model/paths/*.path.json"
+  },
+  "releasePolicy": {
+    "emptyHubForbidden": true,
+    "defaultExecution": "client-only",
+    "userInputRetention": "none",
+    "externalApiDefault": "disabled",
+    "sourceVersionVisible": true,
+    "assumptionsVisible": true,
+    "visualStyle": "wiki-content-first",
+    "accessibility": "keyboard-and-mobile-required"
+  },
+  "tools": [
+    {
+      "schemaVersion": "1.0",
+      "id": "learning-path",
+      "order": 1,
+      "title": {
+        "ko": "맞춤 학습 경로 생성기",
+        "en": "Personalized Learning Path Builder"
+      },
+      "summary": "목표 문서, 현재 수준과 학습 분량을 기준으로 선수 관계를 따라 권장 읽기 순서와 선택 이유를 구성한다.",
+      "section": "learning",
+      "route": "/lab/learning-path/",
+      "status": "planned",
+      "plannedMilestone": "W55",
+      "audiences": [
+        "learner",
+        "educator"
+      ],
+      "capabilities": [
+        "목표 문서까지 필요한 선수 개념을 역방향으로 탐색한다.",
+        "수준과 최대 문서 수에 맞춰 중복 문서를 제거하고 순서를 정한다.",
+        "각 문서가 경로에 포함된 이유와 기존 코스 연결을 함께 표시한다."
+      ],
+      "execution": {
+        "mode": "client-only",
+        "networkAccess": "same-origin-data",
+        "transmitsUserInput": false,
+        "persistentStorage": "none"
+      },
+      "contracts": {
+        "sessionSchemaId": "https://ai-wiki.kr/schemas/lab-session-v1.json",
+        "inputFields": [
+          {
+            "id": "goal-article-id",
+            "label": {
+              "ko": "목표 문서",
+              "en": "Goal article"
+            },
+            "valueType": "article-id",
+            "required": true,
+            "unit": null,
+            "description": "학습 경로가 최종적으로 도달해야 하는 백과 문서 ID다.",
+            "wikiSlugs": [
+              "artificial-intelligence",
+              "machine-learning"
+            ]
+          },
+          {
+            "id": "level",
+            "label": {
+              "ko": "현재 수준",
+              "en": "Current level"
+            },
+            "valueType": "select",
+            "required": true,
+            "unit": null,
+            "description": "설명 깊이와 생략 가능한 기초 문서 범위를 결정한다.",
+            "constraints": {
+              "options": [
+                {
+                  "value": "entry",
+                  "label": {
+                    "ko": "입문",
+                    "en": "Entry"
+                  }
+                },
+                {
+                  "value": "intermediate",
+                  "label": {
+                    "ko": "중급",
+                    "en": "Intermediate"
+                  }
+                },
+                {
+                  "value": "professional",
+                  "label": {
+                    "ko": "전문",
+                    "en": "Professional"
+                  }
+                }
+              ]
+            },
+            "wikiSlugs": []
+          },
+          {
+            "id": "max-documents",
+            "label": {
+              "ko": "최대 문서 수",
+              "en": "Maximum documents"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "문서",
+            "description": "결과 경로에 포함할 수 있는 백과 문서의 상한이다.",
+            "constraints": {
+              "minimum": 5,
+              "maximum": 30
+            },
+            "wikiSlugs": []
+          },
+          {
+            "id": "focus",
+            "label": {
+              "ko": "학습 초점",
+              "en": "Learning focus"
+            },
+            "valueType": "select",
+            "required": true,
+            "unit": null,
+            "description": "이론, 실무 또는 균형 경로 중 우선할 연결 유형을 정한다.",
+            "constraints": {
+              "options": [
+                {
+                  "value": "theory",
+                  "label": {
+                    "ko": "이론",
+                    "en": "Theory"
+                  }
+                },
+                {
+                  "value": "practice",
+                  "label": {
+                    "ko": "실무",
+                    "en": "Practice"
+                  }
+                },
+                {
+                  "value": "balanced",
+                  "label": {
+                    "ko": "균형",
+                    "en": "Balanced"
+                  }
+                }
+              ]
+            },
+            "wikiSlugs": [
+              "knowledge-graph"
+            ]
+          },
+          {
+            "id": "include-mathematics",
+            "label": {
+              "ko": "수학 문서 포함",
+              "en": "Include mathematics"
+            },
+            "valueType": "boolean",
+            "required": true,
+            "unit": null,
+            "description": "수학·통계 분야의 선수 문서를 경로에 유지할지 정한다.",
+            "wikiSlugs": [
+              "machine-learning"
+            ]
+          }
+        ],
+        "outputFields": [
+          {
+            "id": "ordered-articles",
+            "label": {
+              "ko": "권장 문서 순서",
+              "en": "Recommended article order"
+            },
+            "valueType": "article-path",
+            "unit": null,
+            "precision": null,
+            "description": "선수 관계와 사용자의 제약을 반영한 중복 없는 문서 순서다.",
+            "wikiSlugs": [
+              "knowledge-graph"
+            ]
+          },
+          {
+            "id": "path-rationale",
+            "label": {
+              "ko": "선정 근거",
+              "en": "Path rationale"
+            },
+            "valueType": "breakdown",
+            "unit": null,
+            "precision": null,
+            "description": "각 문서가 경로에 포함된 관계와 기존 코스 연결을 설명한다.",
+            "wikiSlugs": [
+              "artificial-intelligence"
+            ]
+          },
+          {
+            "id": "prerequisite-coverage",
+            "label": {
+              "ko": "선수 관계 충족률",
+              "en": "Prerequisite coverage"
+            },
+            "valueType": "number",
+            "unit": "%",
+            "precision": 1,
+            "description": "결과 경로가 확인된 선수 문서를 얼마나 포함하는지 나타낸다.",
+            "wikiSlugs": [
+              "machine-learning"
+            ]
+          }
+        ],
+        "warningDefinitions": [
+          {
+            "code": "GRAPH_CYCLE",
+            "severity": "caution",
+            "condition": "선수 관계 탐색에서 순환 참조를 발견한 경우",
+            "message": "순환 관계를 한 번만 방문하고 해당 경로에 주의 표시를 남긴다."
+          },
+          {
+            "code": "PATH_TRUNCATED",
+            "severity": "info",
+            "condition": "필요한 선수 문서가 최대 문서 수를 초과한 경우",
+            "message": "우선순위가 낮은 문서를 생략하고 생략 수와 기준을 표시한다."
+          }
+        ]
+      },
+      "contentLinks": {
+        "wikiSlugs": [
+          "artificial-intelligence",
+          "machine-learning",
+          "knowledge-graph"
+        ],
+        "courseIds": [
+          "ai-foundations",
+          "llm-internals",
+          "advanced-rag"
+        ]
+      },
+      "evidence": {
+        "sourcePolicy": "internal-derived",
+        "formulaVersion": "graph-path-v1",
+        "sources": [
+          {
+            "id": "wiki-index",
+            "title": "AI Learning Wiki article relationship index",
+            "kind": "internal",
+            "locator": "public/data/wiki-index.json",
+            "version": "W54 baseline",
+            "accessedAt": "2026-07-29"
+          },
+          {
+            "id": "course-paths",
+            "title": "AI Learning Wiki ordered course paths",
+            "kind": "internal",
+            "locator": "content-model/paths/*.path.json",
+            "version": "W53 baseline",
+            "accessedAt": "2026-07-29"
+          }
+        ]
+      },
+      "releaseGate": {
+        "deterministicFixtureCount": 5,
+        "keyboardAccessible": true,
+        "mobileLayout": true,
+        "disclosesAssumptions": true,
+        "linksToWiki": true,
+        "noServerData": true,
+        "shareableState": true
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "evaluation-metrics",
+      "order": 2,
+      "title": {
+        "ko": "평가 지표 실험실",
+        "en": "Evaluation Metrics Lab"
+      },
+      "summary": "혼동행렬과 임곗값 입력으로 분류 지표를 계산하고 지표 사이의 상충 관계와 해석 주의점을 함께 보여준다.",
+      "section": "measurement",
+      "route": "/lab/evaluation-metrics/",
+      "status": "planned",
+      "plannedMilestone": "W56",
+      "audiences": [
+        "learner",
+        "developer",
+        "reviewer"
+      ],
+      "capabilities": [
+        "혼동행렬에서 정확도, 정밀도, 재현율, 특이도와 F1 점수를 계산한다.",
+        "임곗값 변화가 오탐과 미탐에 미치는 영향을 비교한다.",
+        "분모가 0이거나 클래스 불균형이 큰 경우 해석 주의를 표시한다."
+      ],
+      "execution": {
+        "mode": "client-only",
+        "networkAccess": "none",
+        "transmitsUserInput": false,
+        "persistentStorage": "none"
+      },
+      "contracts": {
+        "sessionSchemaId": "https://ai-wiki.kr/schemas/lab-session-v1.json",
+        "inputFields": [
+          {
+            "id": "true-negative",
+            "label": {
+              "ko": "참음성",
+              "en": "True negative"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "건",
+            "description": "음성 표본을 음성으로 올바르게 분류한 수다.",
+            "constraints": {
+              "minimum": 0
+            },
+            "wikiSlugs": [
+              "confusion-matrix"
+            ]
+          },
+          {
+            "id": "false-positive",
+            "label": {
+              "ko": "거짓양성",
+              "en": "False positive"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "건",
+            "description": "음성 표본을 양성으로 잘못 분류한 수다.",
+            "constraints": {
+              "minimum": 0
+            },
+            "wikiSlugs": [
+              "confusion-matrix"
+            ]
+          },
+          {
+            "id": "false-negative",
+            "label": {
+              "ko": "거짓음성",
+              "en": "False negative"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "건",
+            "description": "양성 표본을 음성으로 잘못 분류한 수다.",
+            "constraints": {
+              "minimum": 0
+            },
+            "wikiSlugs": [
+              "confusion-matrix"
+            ]
+          },
+          {
+            "id": "true-positive",
+            "label": {
+              "ko": "참양성",
+              "en": "True positive"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "건",
+            "description": "양성 표본을 양성으로 올바르게 분류한 수다.",
+            "constraints": {
+              "minimum": 0
+            },
+            "wikiSlugs": [
+              "confusion-matrix"
+            ]
+          },
+          {
+            "id": "classification-threshold",
+            "label": {
+              "ko": "분류 임곗값",
+              "en": "Classification threshold"
+            },
+            "valueType": "number",
+            "required": false,
+            "unit": null,
+            "description": "확률 점수를 양성으로 판단하는 선택적 기준값이다.",
+            "constraints": {
+              "minimum": 0,
+              "maximum": 1
+            },
+            "wikiSlugs": [
+              "roc-curve",
+              "precision-recall-curve"
+            ]
+          }
+        ],
+        "outputFields": [
+          {
+            "id": "classification-metrics",
+            "label": {
+              "ko": "분류 지표",
+              "en": "Classification metrics"
+            },
+            "valueType": "metric-set",
+            "unit": null,
+            "precision": 4,
+            "description": "혼동행렬에서 계산한 정확도, 정밀도, 재현율, 특이도와 F1 점수다.",
+            "wikiSlugs": [
+              "accuracy",
+              "f1-score",
+              "specificity"
+            ]
+          },
+          {
+            "id": "threshold-effects",
+            "label": {
+              "ko": "임곗값 영향",
+              "en": "Threshold effects"
+            },
+            "valueType": "breakdown",
+            "unit": null,
+            "precision": null,
+            "description": "임곗값 변화에 따른 오탐과 미탐의 방향을 설명한다.",
+            "wikiSlugs": [
+              "roc-curve",
+              "precision-recall-curve"
+            ]
+          },
+          {
+            "id": "metric-interpretation",
+            "label": {
+              "ko": "해석 안내",
+              "en": "Metric interpretation"
+            },
+            "valueType": "string",
+            "unit": null,
+            "precision": null,
+            "description": "클래스 분포와 사용 목적에 따라 우선할 지표를 설명한다.",
+            "wikiSlugs": [
+              "brier-score",
+              "confusion-matrix"
+            ]
+          }
+        ],
+        "warningDefinitions": [
+          {
+            "code": "ZERO_DENOMINATOR",
+            "severity": "caution",
+            "condition": "특정 지표의 분모가 0이 되어 정의할 수 없는 경우",
+            "message": "정의되지 않은 지표를 0으로 단정하지 않고 계산 불가로 표시한다."
+          },
+          {
+            "code": "CLASS_IMBALANCE",
+            "severity": "info",
+            "condition": "양성과 음성 표본 수의 차이가 큰 경우",
+            "message": "정확도만으로 평가하지 말고 정밀도와 재현율을 함께 확인하도록 안내한다."
+          }
+        ]
+      },
+      "contentLinks": {
+        "wikiSlugs": [
+          "confusion-matrix",
+          "accuracy",
+          "f1-score",
+          "specificity",
+          "roc-curve",
+          "precision-recall-curve",
+          "brier-score"
+        ],
+        "courseIds": [
+          "llm-evaluation",
+          "model-training"
+        ]
+      },
+      "evidence": {
+        "sourcePolicy": "mixed",
+        "formulaVersion": "classification-metrics-v1",
+        "sources": [
+          {
+            "id": "scikit-model-evaluation",
+            "title": "scikit-learn model evaluation documentation",
+            "kind": "official-documentation",
+            "locator": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+            "version": "1.9 stable documentation",
+            "accessedAt": "2026-07-29"
+          },
+          {
+            "id": "wiki-index",
+            "title": "AI Learning Wiki article relationship index",
+            "kind": "internal",
+            "locator": "public/data/wiki-index.json",
+            "version": "W54 baseline",
+            "accessedAt": "2026-07-29"
+          }
+        ]
+      },
+      "releaseGate": {
+        "deterministicFixtureCount": 8,
+        "keyboardAccessible": true,
+        "mobileLayout": true,
+        "disclosesAssumptions": true,
+        "linksToWiki": true,
+        "noServerData": true,
+        "shareableState": true
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "model-memory",
+      "order": 3,
+      "title": {
+        "ko": "모델 메모리 계산기",
+        "en": "Model Memory Estimator"
+      },
+      "summary": "파라미터 수, 수치 정밀도, 학습 상태와 KV 캐시 조건을 나누어 GPU 메모리 요구량의 근사 범위를 계산한다.",
+      "section": "measurement",
+      "route": "/lab/model-memory/",
+      "status": "planned",
+      "plannedMilestone": "W57",
+      "audiences": [
+        "learner",
+        "developer",
+        "operator"
+      ],
+      "capabilities": [
+        "가중치와 학습 상태 메모리를 수치 정밀도별로 나누어 계산한다.",
+        "레이어, KV 헤드, 헤드 차원, 배치와 문맥 길이로 KV 캐시를 추정한다.",
+        "활성값과 임시 버퍼가 모델·런타임에 따라 달라지는 한계를 표시한다."
+      ],
+      "execution": {
+        "mode": "client-only",
+        "networkAccess": "none",
+        "transmitsUserInput": false,
+        "persistentStorage": "none"
+      },
+      "contracts": {
+        "sessionSchemaId": "https://ai-wiki.kr/schemas/lab-session-v1.json",
+        "inputFields": [
+          {
+            "id": "parameter-count",
+            "label": {
+              "ko": "파라미터 수",
+              "en": "Parameter count"
+            },
+            "valueType": "number",
+            "required": true,
+            "unit": "개",
+            "description": "모델이 보유한 전체 학습 가능 파라미터 수다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "parameter-count"
+            ]
+          },
+          {
+            "id": "precision",
+            "label": {
+              "ko": "수치 정밀도",
+              "en": "Numerical precision"
+            },
+            "valueType": "select",
+            "required": true,
+            "unit": "bit",
+            "description": "가중치 또는 캐시 원소 하나를 저장하는 비트 수다.",
+            "constraints": {
+              "options": [
+                {
+                  "value": 32,
+                  "label": {
+                    "ko": "FP32",
+                    "en": "FP32"
+                  }
+                },
+                {
+                  "value": 16,
+                  "label": {
+                    "ko": "FP16/BF16",
+                    "en": "FP16/BF16"
+                  }
+                },
+                {
+                  "value": 8,
+                  "label": {
+                    "ko": "INT8",
+                    "en": "INT8"
+                  }
+                },
+                {
+                  "value": 4,
+                  "label": {
+                    "ko": "INT4",
+                    "en": "INT4"
+                  }
+                }
+              ]
+            },
+            "wikiSlugs": [
+              "quantization"
+            ]
+          },
+          {
+            "id": "execution-mode",
+            "label": {
+              "ko": "실행 모드",
+              "en": "Execution mode"
+            },
+            "valueType": "select",
+            "required": true,
+            "unit": null,
+            "description": "추론 또는 학습에 필요한 메모리 구성 요소를 선택한다.",
+            "constraints": {
+              "options": [
+                {
+                  "value": "inference",
+                  "label": {
+                    "ko": "추론",
+                    "en": "Inference"
+                  }
+                },
+                {
+                  "value": "training",
+                  "label": {
+                    "ko": "학습",
+                    "en": "Training"
+                  }
+                }
+              ]
+            },
+            "wikiSlugs": [
+              "optimizer-state"
+            ]
+          },
+          {
+            "id": "layer-count",
+            "label": {
+              "ko": "레이어 수",
+              "en": "Layer count"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "층",
+            "description": "KV 캐시 계산에 사용하는 트랜스포머 레이어 수다.",
+            "constraints": {
+              "minimum": 1,
+              "maximum": 1000
+            },
+            "wikiSlugs": [
+              "kv-cache"
+            ]
+          },
+          {
+            "id": "batch-size",
+            "label": {
+              "ko": "배치 크기",
+              "en": "Batch size"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "요청",
+            "description": "동시에 메모리에 유지하는 요청 또는 학습 표본 수다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "kv-cache"
+            ]
+          },
+          {
+            "id": "context-length",
+            "label": {
+              "ko": "문맥 길이",
+              "en": "Context length"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "토큰",
+            "description": "요청 하나에서 KV 캐시에 유지할 최대 토큰 수다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "context-window"
+            ]
+          },
+          {
+            "id": "kv-head-count",
+            "label": {
+              "ko": "KV 헤드 수",
+              "en": "KV head count"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "헤드",
+            "description": "레이어 하나에서 키와 값을 저장하는 KV 헤드 수다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "kv-cache"
+            ]
+          },
+          {
+            "id": "head-dimension",
+            "label": {
+              "ko": "헤드 차원",
+              "en": "Head dimension"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "차원",
+            "description": "각 키와 값 벡터가 갖는 차원 수다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "kv-cache"
+            ]
+          }
+        ],
+        "outputFields": [
+          {
+            "id": "weight-memory",
+            "label": {
+              "ko": "가중치 메모리",
+              "en": "Weight memory"
+            },
+            "valueType": "number",
+            "unit": "GiB",
+            "precision": 2,
+            "description": "파라미터 수와 수치 정밀도만으로 계산한 모델 가중치 용량이다.",
+            "wikiSlugs": [
+              "parameter-count",
+              "quantization"
+            ]
+          },
+          {
+            "id": "training-state-memory",
+            "label": {
+              "ko": "학습 상태 메모리",
+              "en": "Training state memory"
+            },
+            "valueType": "number",
+            "unit": "GiB",
+            "precision": 2,
+            "description": "학습 모드에서 그래디언트와 옵티마이저 상태에 필요한 근사 용량이다.",
+            "wikiSlugs": [
+              "optimizer-state"
+            ]
+          },
+          {
+            "id": "kv-cache-memory",
+            "label": {
+              "ko": "KV 캐시 메모리",
+              "en": "KV cache memory"
+            },
+            "valueType": "number",
+            "unit": "GiB",
+            "precision": 2,
+            "description": "레이어, 배치, 문맥 길이, KV 헤드와 헤드 차원으로 계산한 캐시 용량이다.",
+            "wikiSlugs": [
+              "kv-cache",
+              "context-window"
+            ]
+          },
+          {
+            "id": "total-estimate",
+            "label": {
+              "ko": "총 추정 메모리",
+              "en": "Total estimated memory"
+            },
+            "valueType": "number",
+            "unit": "GiB",
+            "precision": 2,
+            "description": "계산 가능한 구성 요소를 합친 최소 근사치이며 실제 최고 사용량과 다를 수 있다.",
+            "wikiSlugs": [
+              "tensor-parallelism"
+            ]
+          },
+          {
+            "id": "memory-breakdown",
+            "label": {
+              "ko": "구성 요소별 내역",
+              "en": "Memory breakdown"
+            },
+            "valueType": "breakdown",
+            "unit": null,
+            "precision": null,
+            "description": "가중치, 학습 상태, KV 캐시와 제외된 항목을 구분해 표시한다.",
+            "wikiSlugs": [
+              "parameter-count",
+              "optimizer-state",
+              "kv-cache"
+            ]
+          }
+        ],
+        "warningDefinitions": [
+          {
+            "code": "ESTIMATE_ONLY",
+            "severity": "caution",
+            "condition": "모델 구조와 런타임의 실제 할당량을 직접 측정하지 않은 경우",
+            "message": "결과는 비교와 계획을 위한 근사치이며 실제 장치에서 여유 용량을 두어야 한다."
+          },
+          {
+            "code": "TEMPORARY_MEMORY_EXCLUDED",
+            "severity": "info",
+            "condition": "활성값, 커널 작업 공간과 메모리 단편화를 포함하지 않은 경우",
+            "message": "총 추정치에 런타임 임시 버퍼와 활성값 최고 사용량이 포함되지 않았음을 표시한다."
+          }
+        ]
+      },
+      "contentLinks": {
+        "wikiSlugs": [
+          "parameter-count",
+          "quantization",
+          "kv-cache",
+          "context-window",
+          "tensor-parallelism",
+          "optimizer-state"
+        ],
+        "courseIds": [
+          "llm-internals",
+          "llmops-production",
+          "model-training"
+        ]
+      },
+      "evidence": {
+        "sourcePolicy": "mixed",
+        "formulaVersion": "model-memory-v1",
+        "sources": [
+          {
+            "id": "transformers-memory",
+            "title": "Hugging Face Transformers GPU memory usage",
+            "kind": "official-documentation",
+            "locator": "https://huggingface.co/docs/transformers/v5.6.1/model_memory_anatomy",
+            "version": "Transformers 5.6.1",
+            "accessedAt": "2026-07-29"
+          },
+          {
+            "id": "wiki-index",
+            "title": "AI Learning Wiki article relationship index",
+            "kind": "internal",
+            "locator": "public/data/wiki-index.json",
+            "version": "W54 baseline",
+            "accessedAt": "2026-07-29"
+          }
+        ]
+      },
+      "releaseGate": {
+        "deterministicFixtureCount": 8,
+        "keyboardAccessible": true,
+        "mobileLayout": true,
+        "disclosesAssumptions": true,
+        "linksToWiki": true,
+        "noServerData": true,
+        "shareableState": true
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "prompt-schema",
+      "order": 4,
+      "title": {
+        "ko": "프롬프트·JSON 스키마 검증기",
+        "en": "Prompt and JSON Schema Validator"
+      },
+      "summary": "프롬프트 변수의 선언·사용 불일치와 구조화 출력용 JSON Schema의 구문 및 기본 제약 오류를 브라우저에서 점검한다.",
+      "section": "validation",
+      "route": "/lab/prompt-schema/",
+      "status": "planned",
+      "plannedMilestone": "W58",
+      "audiences": [
+        "learner",
+        "developer",
+        "reviewer"
+      ],
+      "capabilities": [
+        "프롬프트 본문에서 변수 표기를 찾아 선언 목록과 대조한다.",
+        "JSON 문서와 JSON Schema의 구문 및 기본 구조를 검증한다.",
+        "오류 위치, 심각도, 수정 방향과 관련 백과 문서를 연결한다."
+      ],
+      "execution": {
+        "mode": "client-only",
+        "networkAccess": "none",
+        "transmitsUserInput": false,
+        "persistentStorage": "none"
+      },
+      "contracts": {
+        "sessionSchemaId": "https://ai-wiki.kr/schemas/lab-session-v1.json",
+        "inputFields": [
+          {
+            "id": "prompt-text",
+            "label": {
+              "ko": "프롬프트 본문",
+              "en": "Prompt text"
+            },
+            "valueType": "text",
+            "required": true,
+            "unit": null,
+            "description": "변수와 출력 지시를 검사할 프롬프트 원문이다.",
+            "constraints": {
+              "minLength": 1,
+              "maxLength": 50000
+            },
+            "wikiSlugs": [
+              "prompt-template"
+            ]
+          },
+          {
+            "id": "variable-definitions",
+            "label": {
+              "ko": "변수 정의",
+              "en": "Variable definitions"
+            },
+            "valueType": "json",
+            "required": false,
+            "unit": null,
+            "description": "프롬프트에서 사용할 변수 이름, 필수 여부와 설명의 JSON 목록이다.",
+            "wikiSlugs": [
+              "prompt-template"
+            ]
+          },
+          {
+            "id": "output-schema",
+            "label": {
+              "ko": "출력 스키마",
+              "en": "Output schema"
+            },
+            "valueType": "json",
+            "required": false,
+            "unit": null,
+            "description": "구조화 출력이 만족해야 하는 JSON Schema 문서다.",
+            "wikiSlugs": [
+              "json-schema",
+              "structured-output"
+            ]
+          }
+        ],
+        "outputFields": [
+          {
+            "id": "validation-report",
+            "label": {
+              "ko": "검증 보고서",
+              "en": "Validation report"
+            },
+            "valueType": "validation-report",
+            "unit": null,
+            "precision": null,
+            "description": "변수, JSON 구문과 스키마 제약 오류를 위치와 심각도별로 정리한다.",
+            "wikiSlugs": [
+              "prompt-template",
+              "json-schema",
+              "structured-output"
+            ]
+          },
+          {
+            "id": "unresolved-variables",
+            "label": {
+              "ko": "미해결 변수",
+              "en": "Unresolved variables"
+            },
+            "valueType": "json",
+            "unit": null,
+            "precision": null,
+            "description": "본문에서 사용했지만 정의하지 않았거나 정의만 하고 사용하지 않은 변수 목록이다.",
+            "wikiSlugs": [
+              "prompt-template"
+            ]
+          },
+          {
+            "id": "schema-validation",
+            "label": {
+              "ko": "스키마 검증 결과",
+              "en": "Schema validation result"
+            },
+            "valueType": "validation-report",
+            "unit": null,
+            "precision": null,
+            "description": "JSON Schema 자체의 유효성과 제공된 예시 출력의 일치 여부를 표시한다.",
+            "wikiSlugs": [
+              "json-schema",
+              "function-calling",
+              "tool-calling"
+            ]
+          }
+        ],
+        "warningDefinitions": [
+          {
+            "code": "UNRESOLVED_VARIABLE",
+            "severity": "caution",
+            "condition": "프롬프트 변수 사용과 선언 목록이 일치하지 않는 경우",
+            "message": "누락 또는 미사용 변수를 구분하고 해당 위치를 표시한다."
+          },
+          {
+            "code": "INVALID_JSON_SCHEMA",
+            "severity": "blocking",
+            "condition": "출력 스키마가 선택한 JSON Schema 규격에 맞지 않는 경우",
+            "message": "구조화 출력 검증을 중단하고 스키마 경로별 오류를 표시한다."
+          }
+        ]
+      },
+      "contentLinks": {
+        "wikiSlugs": [
+          "prompt-template",
+          "structured-output",
+          "json-schema",
+          "function-calling",
+          "tool-calling"
+        ],
+        "courseIds": [
+          "prompt-systems",
+          "api-development"
+        ]
+      },
+      "evidence": {
+        "sourcePolicy": "mixed",
+        "formulaVersion": "prompt-schema-v1",
+        "sources": [
+          {
+            "id": "json-schema-2020",
+            "title": "JSON Schema Draft 2020-12 specification",
+            "kind": "standard",
+            "locator": "https://json-schema.org/draft/2020-12/json-schema-core",
+            "version": "Draft 2020-12",
+            "accessedAt": "2026-07-29"
+          },
+          {
+            "id": "prompt-library",
+            "title": "AI Learning Wiki canonical prompt library",
+            "kind": "internal",
+            "locator": "content-model/library/prompts/*.prompt.json",
+            "version": "W53 baseline",
+            "accessedAt": "2026-07-29"
+          }
+        ]
+      },
+      "releaseGate": {
+        "deterministicFixtureCount": 10,
+        "keyboardAccessible": true,
+        "mobileLayout": true,
+        "disclosesAssumptions": true,
+        "linksToWiki": true,
+        "noServerData": true,
+        "shareableState": false
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "token-context",
+      "order": 5,
+      "title": {
+        "ko": "토큰·문맥 예산 계산기",
+        "en": "Token and Context Budget Planner"
+      },
+      "summary": "텍스트, 토크나이저 계열과 출력 예약량을 바탕으로 문맥 사용량과 남은 예산, 권장 청크 구성을 추정한다.",
+      "section": "measurement",
+      "route": "/lab/token-context/",
+      "status": "planned",
+      "plannedMilestone": "backlog",
+      "audiences": [
+        "learner",
+        "developer"
+      ],
+      "capabilities": [
+        "선택한 토크나이저 프로필로 입력 텍스트의 토큰 수를 계산하거나 추정한다.",
+        "시스템·입력·출력 예약량을 구분해 문맥 창 사용률을 표시한다.",
+        "청크 크기와 중첩 조건에 따른 예상 청크 수를 계산한다."
+      ],
+      "execution": {
+        "mode": "client-only",
+        "networkAccess": "same-origin-data",
+        "transmitsUserInput": false,
+        "persistentStorage": "none"
+      },
+      "contracts": {
+        "sessionSchemaId": "https://ai-wiki.kr/schemas/lab-session-v1.json",
+        "inputFields": [
+          {
+            "id": "input-text",
+            "label": {
+              "ko": "입력 텍스트",
+              "en": "Input text"
+            },
+            "valueType": "text",
+            "required": true,
+            "unit": null,
+            "description": "토큰화하고 문맥 예산을 계산할 원문 텍스트다.",
+            "constraints": {
+              "minLength": 1,
+              "maxLength": 200000
+            },
+            "wikiSlugs": [
+              "token",
+              "tokenizer"
+            ]
+          },
+          {
+            "id": "tokenizer-profile",
+            "label": {
+              "ko": "토크나이저 프로필",
+              "en": "Tokenizer profile"
+            },
+            "valueType": "select",
+            "required": true,
+            "unit": null,
+            "description": "정확 계산 또는 추정에 사용할 토큰화 규칙 계열이다.",
+            "constraints": {
+              "options": [
+                {
+                  "value": "provider-agnostic",
+                  "label": {
+                    "ko": "공급자 비종속 추정",
+                    "en": "Provider-agnostic estimate"
+                  }
+                },
+                {
+                  "value": "bpe",
+                  "label": {
+                    "ko": "BPE 계열",
+                    "en": "BPE family"
+                  }
+                },
+                {
+                  "value": "sentencepiece",
+                  "label": {
+                    "ko": "SentencePiece 계열",
+                    "en": "SentencePiece family"
+                  }
+                }
+              ]
+            },
+            "wikiSlugs": [
+              "tokenizer"
+            ]
+          },
+          {
+            "id": "context-window",
+            "label": {
+              "ko": "문맥 창",
+              "en": "Context window"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "토큰",
+            "description": "모델 호출에서 허용되는 전체 입력과 출력 토큰 상한이다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "context-window"
+            ]
+          },
+          {
+            "id": "reserved-output",
+            "label": {
+              "ko": "출력 예약량",
+              "en": "Reserved output"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "토큰",
+            "description": "응답 생성을 위해 문맥 창에서 미리 남겨둘 토큰 수다.",
+            "constraints": {
+              "minimum": 0
+            },
+            "wikiSlugs": [
+              "context-window"
+            ]
+          },
+          {
+            "id": "chunk-size",
+            "label": {
+              "ko": "청크 크기",
+              "en": "Chunk size"
+            },
+            "valueType": "integer",
+            "required": false,
+            "unit": "토큰",
+            "description": "긴 텍스트를 나눌 때 청크 하나에 배정할 목표 토큰 수다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "chunking"
+            ]
+          },
+          {
+            "id": "chunk-overlap",
+            "label": {
+              "ko": "청크 중첩",
+              "en": "Chunk overlap"
+            },
+            "valueType": "integer",
+            "required": false,
+            "unit": "토큰",
+            "description": "인접한 청크 사이에서 반복해 유지할 토큰 수다.",
+            "constraints": {
+              "minimum": 0
+            },
+            "wikiSlugs": [
+              "chunking"
+            ]
+          }
+        ],
+        "outputFields": [
+          {
+            "id": "estimated-token-count",
+            "label": {
+              "ko": "예상 토큰 수",
+              "en": "Estimated token count"
+            },
+            "valueType": "number",
+            "unit": "토큰",
+            "precision": 0,
+            "description": "선택한 토크나이저 프로필이 계산하거나 추정한 입력 토큰 수다.",
+            "wikiSlugs": [
+              "token",
+              "tokenizer"
+            ]
+          },
+          {
+            "id": "context-utilization",
+            "label": {
+              "ko": "문맥 사용률",
+              "en": "Context utilization"
+            },
+            "valueType": "number",
+            "unit": "%",
+            "precision": 1,
+            "description": "입력과 출력 예약량이 전체 문맥 창에서 차지하는 비율이다.",
+            "wikiSlugs": [
+              "context-window"
+            ]
+          },
+          {
+            "id": "remaining-budget",
+            "label": {
+              "ko": "남은 문맥 예산",
+              "en": "Remaining context budget"
+            },
+            "valueType": "number",
+            "unit": "토큰",
+            "precision": 0,
+            "description": "입력과 출력 예약량을 제외하고 추가로 사용할 수 있는 토큰 수다.",
+            "wikiSlugs": [
+              "context-window"
+            ]
+          },
+          {
+            "id": "chunk-plan",
+            "label": {
+              "ko": "청크 계획",
+              "en": "Chunk plan"
+            },
+            "valueType": "budget-report",
+            "unit": null,
+            "precision": null,
+            "description": "청크 크기와 중첩을 반영한 예상 청크 수와 마지막 청크 범위다.",
+            "wikiSlugs": [
+              "chunking",
+              "prompt-caching"
+            ]
+          }
+        ],
+        "warningDefinitions": [
+          {
+            "code": "TOKEN_ESTIMATE",
+            "severity": "info",
+            "condition": "선택한 실제 모델 토크나이저를 사용하지 않는 경우",
+            "message": "결과를 정확한 청구 또는 제한 판정값이 아닌 근사치로 표시한다."
+          },
+          {
+            "code": "CONTEXT_OVERFLOW",
+            "severity": "blocking",
+            "condition": "입력과 출력 예약량의 합이 문맥 창을 초과한 경우",
+            "message": "초과 토큰 수를 표시하고 입력 축소 또는 출력 예약량 조정을 안내한다."
+          }
+        ]
+      },
+      "contentLinks": {
+        "wikiSlugs": [
+          "token",
+          "tokenizer",
+          "context-window",
+          "chunking",
+          "prompt-caching"
+        ],
+        "courseIds": [
+          "llm-internals",
+          "api-development",
+          "rag-search"
+        ]
+      },
+      "evidence": {
+        "sourcePolicy": "mixed",
+        "formulaVersion": "token-budget-v1",
+        "sources": [
+          {
+            "id": "tokenizers-docs",
+            "title": "Hugging Face Tokenizers documentation",
+            "kind": "official-documentation",
+            "locator": "https://huggingface.co/docs/tokenizers/index",
+            "version": "current documentation",
+            "accessedAt": "2026-07-29"
+          },
+          {
+            "id": "wiki-index",
+            "title": "AI Learning Wiki article relationship index",
+            "kind": "internal",
+            "locator": "public/data/wiki-index.json",
+            "version": "W54 baseline",
+            "accessedAt": "2026-07-29"
+          }
+        ]
+      },
+      "releaseGate": {
+        "deterministicFixtureCount": 6,
+        "keyboardAccessible": true,
+        "mobileLayout": true,
+        "disclosesAssumptions": true,
+        "linksToWiki": true,
+        "noServerData": true,
+        "shareableState": false
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "rag-evaluation",
+      "order": 6,
+      "title": {
+        "ko": "RAG 평가 실험실",
+        "en": "RAG Evaluation Lab"
+      },
+      "summary": "정답 관련 문서와 검색 순위를 입력해 Recall@K, MRR과 nDCG를 계산하고 서로 다른 검색 결과를 비교한다.",
+      "section": "measurement",
+      "route": "/lab/rag-evaluation/",
+      "status": "planned",
+      "plannedMilestone": "backlog",
+      "audiences": [
+        "learner",
+        "developer",
+        "reviewer"
+      ],
+      "capabilities": [
+        "정답 관련 문서 집합과 검색 순위에서 Recall@K를 계산한다.",
+        "첫 관련 문서의 순위로 평균 역순위 계산 과정을 보여준다.",
+        "등급 관련성이 있는 결과에서 nDCG의 할인 누적 이득을 단계별로 표시한다."
+      ],
+      "execution": {
+        "mode": "client-only",
+        "networkAccess": "none",
+        "transmitsUserInput": false,
+        "persistentStorage": "none"
+      },
+      "contracts": {
+        "sessionSchemaId": "https://ai-wiki.kr/schemas/lab-session-v1.json",
+        "inputFields": [
+          {
+            "id": "relevant-documents",
+            "label": {
+              "ko": "정답 관련 문서",
+              "en": "Relevant documents"
+            },
+            "valueType": "json",
+            "required": true,
+            "unit": null,
+            "description": "질의에 관련 있다고 판정한 문서 ID와 선택적 관련성 등급 목록이다.",
+            "wikiSlugs": [
+              "recall-at-k",
+              "normalized-discounted-cumulative-gain"
+            ]
+          },
+          {
+            "id": "ranked-documents",
+            "label": {
+              "ko": "검색 순위",
+              "en": "Ranked documents"
+            },
+            "valueType": "json",
+            "required": true,
+            "unit": null,
+            "description": "검색기가 반환한 문서 ID를 높은 순위부터 나열한 목록이다.",
+            "wikiSlugs": [
+              "mean-reciprocal-rank"
+            ]
+          },
+          {
+            "id": "cutoff-k",
+            "label": {
+              "ko": "평가 절단값 K",
+              "en": "Evaluation cutoff K"
+            },
+            "valueType": "integer",
+            "required": true,
+            "unit": "순위",
+            "description": "상위 몇 개 검색 결과까지 평가에 포함할지 정하는 값이다.",
+            "constraints": {
+              "minimum": 1
+            },
+            "wikiSlugs": [
+              "recall-at-k"
+            ]
+          }
+        ],
+        "outputFields": [
+          {
+            "id": "recall-at-k",
+            "label": {
+              "ko": "Recall@K",
+              "en": "Recall@K"
+            },
+            "valueType": "number",
+            "unit": null,
+            "precision": 4,
+            "description": "전체 관련 문서 중 상위 K개 결과에서 찾은 문서의 비율이다.",
+            "wikiSlugs": [
+              "recall-at-k"
+            ]
+          },
+          {
+            "id": "mean-reciprocal-rank",
+            "label": {
+              "ko": "평균 역순위",
+              "en": "Mean reciprocal rank"
+            },
+            "valueType": "number",
+            "unit": null,
+            "precision": 4,
+            "description": "첫 관련 문서가 나타난 순위의 역수를 질의별로 평균한 값이다.",
+            "wikiSlugs": [
+              "mean-reciprocal-rank"
+            ]
+          },
+          {
+            "id": "normalized-dcg",
+            "label": {
+              "ko": "nDCG@K",
+              "en": "nDCG@K"
+            },
+            "valueType": "number",
+            "unit": null,
+            "precision": 4,
+            "description": "관련성 등급과 순위 할인을 반영한 정규화 누적 이득이다.",
+            "wikiSlugs": [
+              "normalized-discounted-cumulative-gain"
+            ]
+          },
+          {
+            "id": "ranking-breakdown",
+            "label": {
+              "ko": "순위별 계산 내역",
+              "en": "Ranking breakdown"
+            },
+            "valueType": "ranking-report",
+            "unit": null,
+            "precision": null,
+            "description": "각 순위의 관련성 판정, 할인값과 지표 기여도를 표로 보여준다.",
+            "wikiSlugs": [
+              "rag-evaluation",
+              "context-precision",
+              "context-recall"
+            ]
+          }
+        ],
+        "warningDefinitions": [
+          {
+            "code": "NO_RELEVANT_DOCUMENT",
+            "severity": "blocking",
+            "condition": "정답 관련 문서 집합이 비어 있는 경우",
+            "message": "검색 품질 지표를 계산하지 않고 먼저 정답 판정 기준을 입력하도록 안내한다."
+          },
+          {
+            "code": "BINARY_RELEVANCE_ONLY",
+            "severity": "info",
+            "condition": "관련성 등급 없이 관련 또는 무관만 입력한 경우",
+            "message": "nDCG가 이진 관련성만 반영하며 등급형 판정보다 정보가 적음을 표시한다."
+          }
+        ]
+      },
+      "contentLinks": {
+        "wikiSlugs": [
+          "rag-evaluation",
+          "recall-at-k",
+          "mean-reciprocal-rank",
+          "normalized-discounted-cumulative-gain",
+          "context-precision",
+          "context-recall"
+        ],
+        "courseIds": [
+          "rag-search",
+          "advanced-rag",
+          "llm-evaluation"
+        ]
+      },
+      "evidence": {
+        "sourcePolicy": "mixed",
+        "formulaVersion": "rag-ranking-metrics-v1",
+        "sources": [
+          {
+            "id": "scikit-ndcg",
+            "title": "scikit-learn normalized discounted cumulative gain documentation",
+            "kind": "official-documentation",
+            "locator": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ndcg_score.html",
+            "version": "1.9 stable documentation",
+            "accessedAt": "2026-07-29"
+          },
+          {
+            "id": "wiki-index",
+            "title": "AI Learning Wiki article relationship index",
+            "kind": "internal",
+            "locator": "public/data/wiki-index.json",
+            "version": "W54 baseline",
+            "accessedAt": "2026-07-29"
+          }
+        ]
+      },
+      "releaseGate": {
+        "deterministicFixtureCount": 8,
+        "keyboardAccessible": true,
+        "mobileLayout": true,
+        "disclosesAssumptions": true,
+        "linksToWiki": true,
+        "noServerData": true,
+        "shareableState": true
+      }
+    }
+  ]
+}

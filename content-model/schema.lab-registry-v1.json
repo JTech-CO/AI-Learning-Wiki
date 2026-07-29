@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-wiki.kr/schemas/lab-registry-v1.json",
+  "title": "AI Learning Wiki lab information architecture registry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "milestone",
+    "updatedAt",
+    "hub",
+    "navigation",
+    "sections",
+    "sourceOfTruth",
+    "releasePolicy",
+    "tools"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "milestone": { "const": "W54" },
+    "updatedAt": { "type": "string", "format": "date" },
+    "hub": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "route", "activation", "description"],
+      "properties": {
+        "id": { "const": "ai-lab" },
+        "title": { "$ref": "#/$defs/i18n" },
+        "route": { "const": "/lab/" },
+        "activation": { "const": "with-first-active-tool" },
+        "description": { "type": "string", "minLength": 20, "maxLength": 240 }
+      }
+    },
+    "navigation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["globalPlacement", "homePlacement", "breadcrumbs", "toolPageSections"],
+      "properties": {
+        "globalPlacement": { "const": "after-learning-courses" },
+        "homePlacement": { "const": "browse-and-practice" },
+        "breadcrumbs": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 2 }
+        },
+        "toolPageSections": {
+          "type": "array",
+          "minItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["purpose", "inputs", "results", "assumptions", "sources", "related-documents", "usage-notes"]
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "order", "title", "description"],
+        "properties": {
+          "id": { "enum": ["learning", "measurement", "validation", "operations"] },
+          "order": { "type": "integer", "minimum": 1, "maximum": 4 },
+          "title": { "$ref": "#/$defs/i18n" },
+          "description": { "type": "string", "minLength": 15, "maxLength": 180 }
+        }
+      }
+    },
+    "sourceOfTruth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry", "toolSchema", "sessionSchema", "wikiIndex", "courses"],
+      "properties": {
+        "registry": { "const": "content-model/labs/registry.json" },
+        "toolSchema": { "const": "content-model/schema.lab-tool-v1.json" },
+        "sessionSchema": { "const": "content-model/schema.lab-session-v1.json" },
+        "wikiIndex": { "const": "public/data/wiki-index.json" },
+        "courses": { "const": "content-model/paths/*.path.json" }
+      }
+    },
+    "releasePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "emptyHubForbidden",
+        "defaultExecution",
+        "userInputRetention",
+        "externalApiDefault",
+        "sourceVersionVisible",
+        "assumptionsVisible",
+        "visualStyle",
+        "accessibility"
+      ],
+      "properties": {
+        "emptyHubForbidden": { "const": true },
+        "defaultExecution": { "const": "client-only" },
+        "userInputRetention": { "const": "none" },
+        "externalApiDefault": { "const": "disabled" },
+        "sourceVersionVisible": { "const": true },
+        "assumptionsVisible": { "const": true },
+        "visualStyle": { "const": "wiki-content-first" },
+        "accessibility": { "const": "keyboard-and-mobile-required" }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "$ref": "https://ai-wiki.kr/schemas/lab-tool-v1.json" }
+    }
+  },
+  "$defs": {
+    "i18n": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ko", "en"],
+      "properties": {
+        "ko": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "en": { "type": "string", "minLength": 2, "maxLength": 80 }
+      }
+    }
+  }
+}
