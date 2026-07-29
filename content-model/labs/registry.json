@@ -937,13 +937,13 @@
       "id": "prompt-schema",
       "order": 4,
       "title": {
-        "ko": "프롬프트·JSON 스키마 검증기",
+        "ko": "프롬프트·JSON Schema 검증기",
         "en": "Prompt and JSON Schema Validator"
       },
-      "summary": "프롬프트 변수의 선언·사용 불일치와 구조화 출력용 JSON Schema의 구문 및 기본 제약 오류를 브라우저에서 점검한다.",
+      "summary": "프롬프트 변수의 선언·사용 불일치와 JSON Schema 자체 오류, 예시 출력의 제약 위반을 브라우저에서 점검한다.",
       "section": "validation",
       "route": "/lab/prompt-schema/",
-      "status": "planned",
+      "status": "active",
       "plannedMilestone": "W58",
       "audiences": [
         "learner",
@@ -952,7 +952,7 @@
       ],
       "capabilities": [
         "프롬프트 본문에서 변수 표기를 찾아 선언 목록과 대조한다.",
-        "JSON 문서와 JSON Schema의 구문 및 기본 구조를 검증한다.",
+        "JSON 문법, Draft 2020-12 스키마 자체와 예시 출력의 필수 필드·타입·추가 속성 제약을 검증한다.",
         "오류 위치, 심각도, 수정 방향과 관련 백과 문서를 연결한다."
       ],
       "execution": {
@@ -1006,6 +1006,21 @@
             "required": false,
             "unit": null,
             "description": "구조화 출력이 만족해야 하는 JSON Schema 문서다.",
+            "wikiSlugs": [
+              "json-schema",
+              "structured-output"
+            ]
+          },
+          {
+            "id": "example-output",
+            "label": {
+              "ko": "예시 출력",
+              "en": "Example output"
+            },
+            "valueType": "json",
+            "required": false,
+            "unit": null,
+            "description": "출력 스키마의 필수 필드, 타입과 추가 속성 제약을 대조할 JSON 예시 한 건이다.",
             "wikiSlugs": [
               "json-schema",
               "structured-output"
@@ -1068,10 +1083,28 @@
             "message": "누락 또는 미사용 변수를 구분하고 해당 위치를 표시한다."
           },
           {
+            "code": "INVALID_VARIABLE_DEFINITIONS",
+            "severity": "blocking",
+            "condition": "변수 정의 JSON의 문법, 이름 또는 항목 구조가 유효하지 않은 경우",
+            "message": "변수 대조를 중단하고 정의 경로별 오류와 허용 형식을 표시한다."
+          },
+          {
             "code": "INVALID_JSON_SCHEMA",
             "severity": "blocking",
             "condition": "출력 스키마가 선택한 JSON Schema 규격에 맞지 않는 경우",
             "message": "구조화 출력 검증을 중단하고 스키마 경로별 오류를 표시한다."
+          },
+          {
+            "code": "INVALID_EXAMPLE_JSON",
+            "severity": "blocking",
+            "condition": "예시 출력 JSON의 문법을 해석할 수 없는 경우",
+            "message": "예시 검증을 중단하고 JSON 문법 오류의 행과 열을 표시한다."
+          },
+          {
+            "code": "EXAMPLE_SCHEMA_MISMATCH",
+            "severity": "caution",
+            "condition": "예시 출력이 없거나 출력 스키마의 필수 필드·타입·추가 속성 제약과 일치하지 않는 경우",
+            "message": "필수 필드, 타입, 추가 속성 등 실패한 제약과 수정 방향을 표시한다."
           }
         ]
       },
@@ -1098,7 +1131,15 @@
             "kind": "standard",
             "locator": "https://json-schema.org/draft/2020-12/json-schema-core",
             "version": "Draft 2020-12",
-            "accessedAt": "2026-07-29"
+            "accessedAt": "2026-07-30"
+          },
+          {
+            "id": "json-schema-validation-2020",
+            "title": "JSON Schema Draft 2020-12 validation specification",
+            "kind": "standard",
+            "locator": "https://json-schema.org/draft/2020-12/json-schema-validation",
+            "version": "Draft 2020-12",
+            "accessedAt": "2026-07-30"
           },
           {
             "id": "prompt-library",
@@ -1106,7 +1147,7 @@
             "kind": "internal",
             "locator": "content-model/library/prompts/*.prompt.json",
             "version": "W53 baseline",
-            "accessedAt": "2026-07-29"
+            "accessedAt": "2026-07-30"
           }
         ]
       },

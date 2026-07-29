@@ -1,0 +1,481 @@
+---
+const examplePrompt = `너는 고객 지원 문의를 분류하는 분석가다.
+
+고객 문의:
+{{customer_message}}
+
+다음 기준으로 판단한다.
+- category: billing, technical, account, other 중 하나
+- summary: 문의의 핵심을 한 문장으로 요약
+- urgent: 즉시 대응이 필요하면 true
+
+설명 문장을 덧붙이지 말고 지정된 JSON 구조로만 답한다.`;
+
+const exampleVariables = JSON.stringify([
+  {
+    name: 'customer_message',
+    required: true,
+    description: '분류할 고객 문의 원문',
+  },
+], null, 2);
+
+const exampleSchema = JSON.stringify({
+  $schema: 'https://json-schema.org/draft/2020-12/schema',
+  type: 'object',
+  properties: {
+    category: {
+      type: 'string',
+      enum: ['billing', 'technical', 'account', 'other'],
+    },
+    summary: {
+      type: 'string',
+      minLength: 1,
+    },
+    urgent: {
+      type: 'boolean',
+    },
+  },
+  required: ['category', 'summary', 'urgent'],
+  additionalProperties: false,
+}, null, 2);
+
+const exampleOutput = JSON.stringify({
+  category: 'billing',
+  summary: '이중 결제된 금액의 환불 절차를 문의했다.',
+  urgent: false,
+}, null, 2);
+---
+
+<section class="lab-tool" data-prompt-schema-validator>
+  <form class="lab-tool-form" data-prompt-schema-form>
+    <fieldset>
+      <legend>프롬프트와 변수</legend>
+      <p class="lab-field-note">
+        변수는 <code>{'{{variable_name}}'}</code> 또는 <code>{'${variable_name}'}</code>로 표기한다.
+        입력 내용은 브라우저 밖으로 전송하거나 저장하지 않는다.
+      </p>
+
+      <label class="lab-field lab-prompt-field">
+        <span>프롬프트 본문</span>
+        <textarea
+          name="promptText"
+          rows="13"
+          minlength="1"
+          maxlength="50000"
+          required
+          spellcheck="false"
+        >{examplePrompt}</textarea>
+        <small>최대 50,000자 · 일반 중괄호는 변수로 처리하지 않는다.</small>
+      </label>
+
+      <label class="lab-field lab-json-field">
+        <span>변수 정의 JSON <em>선택</em></span>
+        <textarea
+          name="variableDefinitions"
+          rows="10"
+          maxlength="100000"
+          spellcheck="false"
+        >{exampleVariables}</textarea>
+        <small>문자열/객체 배열 또는 변수 이름을 키로 둔 객체를 지원한다.</small>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>구조화 출력</legend>
+      <p class="lab-field-note">
+        JSON Schema Draft 2020-12를 검사한다. 예시 출력은 스키마와 실제 값 한 건이 맞는지 확인할 때 사용한다.
+      </p>
+
+      <div class="lab-schema-input-grid">
+        <label class="lab-field lab-json-field">
+          <span>출력 JSON Schema <em>선택</em></span>
+          <textarea
+            name="outputSchema"
+            rows="22"
+            maxlength="100000"
+            spellcheck="false"
+          >{exampleSchema}</textarea>
+        </label>
+
+        <label class="lab-field lab-json-field">
+          <span>예시 출력 JSON <em>선택</em></span>
+          <textarea
+            name="exampleOutput"
+            rows="22"
+            maxlength="100000"
+            spellcheck="false"
+          >{exampleOutput}</textarea>
+        </label>
+      </div>
+
+      <div class="lab-form-actions">
+        <button type="submit">프롬프트·스키마 검증하기</button>
+        <button type="reset" class="lab-secondary-button">예시 입력으로 초기화</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <p class="lab-tool-status" data-prompt-schema-status role="status" aria-live="polite">
+    예시 프롬프트와 JSON Schema를 검사할 수 있다.
+  </p>
+
+  <section class="lab-result" data-prompt-schema-result hidden tabindex="-1">
+    <header class="lab-result-header">
+      <div>
+        <p class="lab-result-kicker">브라우저 내부 검증 결과</p>
+        <h2 data-prompt-schema-result-title>검증 보고서</h2>
+      </div>
+      <button type="button" class="lab-secondary-button" data-copy-prompt-schema-report>
+        원문 제외 보고서 복사
+      </button>
+    </header>
+
+    <dl class="lab-result-summary lab-prompt-schema-summary">
+      <div>
+        <dt>전체 판정</dt>
+        <dd data-validation-overall>-</dd>
+      </div>
+      <div>
+        <dt>프롬프트 변수</dt>
+        <dd data-validation-variables>-</dd>
+      </div>
+      <div>
+        <dt>JSON Schema</dt>
+        <dd data-validation-schema>-</dd>
+      </div>
+      <div>
+        <dt>예시 출력</dt>
+        <dd data-validation-example>-</dd>
+      </div>
+    </dl>
+
+    <div class="lab-warning-list" data-prompt-schema-warnings hidden>
+      <h3>확인이 필요한 항목</h3>
+      <ul></ul>
+    </div>
+
+    <section aria-labelledby="validation-issues-title">
+      <h3 id="validation-issues-title">검사 항목</h3>
+      <p data-validation-clean hidden>
+        구문 오류, 변수 불일치 또는 스키마 제약 위반을 찾지 못했다.
+      </p>
+      <div class="lab-table-scroll" data-validation-issue-table>
+        <table class="lab-validation-table">
+          <thead>
+            <tr>
+              <th scope="col">심각도</th>
+              <th scope="col">범위·위치</th>
+              <th scope="col">문제</th>
+              <th scope="col">수정 방향</th>
+            </tr>
+          </thead>
+          <tbody data-validation-issue-rows></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="validation-variable-title">
+      <h3 id="validation-variable-title">변수 대조</h3>
+      <div class="lab-table-scroll">
+        <table class="lab-variable-table">
+          <thead>
+            <tr>
+              <th scope="col">변수</th>
+              <th scope="col">본문 사용</th>
+              <th scope="col">정의</th>
+              <th scope="col">위치·설명</th>
+            </tr>
+          </thead>
+          <tbody data-variable-comparison-rows></tbody>
+        </table>
+      </div>
+      <p data-variable-empty hidden>본문과 정의 목록에서 변수를 찾지 못했다.</p>
+    </section>
+
+    <section aria-labelledby="validation-schema-title">
+      <h3 id="validation-schema-title">구조화 출력 검사</h3>
+      <dl class="lab-schema-status-list">
+        <div>
+          <dt>검사 규격</dt>
+          <dd data-schema-dialect>-</dd>
+        </div>
+        <div>
+          <dt>스키마 JSON 문법</dt>
+          <dd data-schema-syntax>-</dd>
+        </div>
+        <div>
+          <dt>스키마 자체 유효성</dt>
+          <dd data-schema-validity>-</dd>
+        </div>
+        <div>
+          <dt>예시 출력 일치</dt>
+          <dd data-example-match>-</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="lab-assumptions">
+      <h3>검사 가정과 한계</h3>
+      <ul data-prompt-schema-assumptions></ul>
+    </section>
+  </section>
+</section>
+
+<script>
+  import {
+    createPortablePromptSchemaReport,
+    validatePromptSchema,
+  } from '../../lib/prompt-schema.mjs';
+
+  const validator = document.querySelector('[data-prompt-schema-validator]');
+
+  if (validator instanceof HTMLElement) {
+    const form = validator.querySelector('[data-prompt-schema-form]');
+    const result = validator.querySelector('[data-prompt-schema-result]');
+    const status = validator.querySelector('[data-prompt-schema-status]');
+    let latestResult = null;
+
+    const field = (name) => form?.elements.namedItem(name);
+    const fieldValue = (name) => {
+      const input = field(name);
+      return input instanceof HTMLTextAreaElement ? input.value : '';
+    };
+    const text = (selector, value) => {
+      const element = validator.querySelector(selector);
+      if (element) element.textContent = value;
+    };
+    const triState = (value, {
+      missing = '미입력 · 선택',
+      valid = '유효',
+      invalid = '오류',
+    } = {}) => value === null ? missing : value ? valid : invalid;
+
+    const renderWarnings = (warnings) => {
+      const box = validator.querySelector('[data-prompt-schema-warnings]');
+      const list = box?.querySelector('ul');
+      if (!box || !list) return;
+      list.replaceChildren();
+      box.hidden = warnings.length === 0;
+      for (const warning of warnings) {
+        const item = document.createElement('li');
+        item.dataset.severity = warning.severity;
+        item.textContent = warning.message;
+        list.append(item);
+      }
+    };
+
+    const severityLabel = {
+      blocking: '차단',
+      caution: '주의',
+      info: '정보',
+    };
+    const scopeLabel = {
+      'prompt-text': '프롬프트',
+      'variable-definitions': '변수 정의',
+      'output-schema': '출력 스키마',
+      'example-output': '예시 출력',
+    };
+
+    const renderIssues = (report) => {
+      const clean = validator.querySelector('[data-validation-clean]');
+      const table = validator.querySelector('[data-validation-issue-table]');
+      const body = validator.querySelector('[data-validation-issue-rows]');
+      if (!clean || !table || !body) return;
+
+      const hasIssues = report.issues.length > 0;
+      clean.hidden = hasIssues;
+      table.hidden = !hasIssues;
+      body.replaceChildren();
+      for (const issue of report.issues) {
+        const row = document.createElement('tr');
+        row.dataset.severity = issue.severity;
+        const severity = document.createElement('th');
+        severity.scope = 'row';
+        severity.textContent = severityLabel[issue.severity] ?? issue.severity;
+        const location = document.createElement('td');
+        const locationScope = document.createElement('strong');
+        locationScope.textContent = scopeLabel[issue.scope] ?? issue.scope;
+        const locationPath = document.createElement('code');
+        locationPath.textContent = issue.path;
+        location.append(locationScope, document.createElement('br'), locationPath);
+        const message = document.createElement('td');
+        message.textContent = issue.message;
+        const suggestion = document.createElement('td');
+        suggestion.textContent = issue.suggestion;
+        row.append(severity, location, message, suggestion);
+        body.append(row);
+      }
+    };
+
+    const renderVariables = (promptValidation) => {
+      const body = validator.querySelector('[data-variable-comparison-rows]');
+      const empty = validator.querySelector('[data-variable-empty]');
+      if (!body || !empty) return;
+      body.replaceChildren();
+
+      const names = [...new Set([
+        ...promptValidation.usedVariables,
+        ...promptValidation.definedVariables,
+      ])].sort((left, right) => left.localeCompare(right, 'en'));
+      empty.hidden = names.length > 0;
+
+      for (const name of names) {
+        const occurrences = promptValidation.occurrences.filter(
+          (occurrence) => occurrence.name === name,
+        );
+        const definition = promptValidation.definitions.find(
+          (item) => item.name === name,
+        );
+        const row = document.createElement('tr');
+        if (!definition || occurrences.length === 0) row.dataset.state = 'mismatch';
+        const variable = document.createElement('th');
+        variable.scope = 'row';
+        const code = document.createElement('code');
+        code.textContent = name;
+        variable.append(code);
+        const used = document.createElement('td');
+        used.textContent = occurrences.length > 0
+          ? `${occurrences.length.toLocaleString('ko-KR')}회`
+          : '없음';
+        const defined = document.createElement('td');
+        defined.textContent = definition
+          ? definition.required ? '필수' : '선택'
+          : '없음';
+        const detail = document.createElement('td');
+        const positions = occurrences
+          .map(({ line, column }) => `${line}:${column}`)
+          .join(', ');
+        detail.textContent = [positions && `본문 ${positions}`, definition?.description]
+          .filter(Boolean)
+          .join(' · ') || '-';
+        row.append(variable, used, defined, detail);
+        body.append(row);
+      }
+    };
+
+    const renderAssumptions = (assumptions) => {
+      const list = validator.querySelector('[data-prompt-schema-assumptions]');
+      if (!list) return;
+      list.replaceChildren();
+      for (const assumption of assumptions) {
+        const item = document.createElement('li');
+        item.textContent = assumption.text;
+        list.append(item);
+      }
+    };
+
+    const validate = ({ focusResult = true } = {}) => {
+      if (!(form instanceof HTMLFormElement) || !form.reportValidity()) return;
+      try {
+        const calculation = validatePromptSchema({
+          promptText: fieldValue('promptText'),
+          variableDefinitions: fieldValue('variableDefinitions'),
+          outputSchema: fieldValue('outputSchema'),
+          exampleOutput: fieldValue('exampleOutput'),
+        });
+        latestResult = calculation;
+        const overall = calculation.resultStatus === 'ok'
+          ? '통과'
+          : calculation.resultStatus === 'error'
+            ? '차단 오류'
+            : '확인 필요';
+        const unresolvedCount =
+          calculation.promptValidation.unresolvedVariables.undefined.length
+          + calculation.promptValidation.unresolvedVariables.unused.length;
+
+        text('[data-prompt-schema-result-title]', `검증 보고서 · ${overall}`);
+        text('[data-validation-overall]', overall);
+        text(
+          '[data-validation-variables]',
+          `${calculation.promptValidation.usedVariables.length}개 사용 · `
+          + `${calculation.promptValidation.definedVariables.length}개 정의`
+          + (unresolvedCount > 0 ? ` · ${unresolvedCount}개 불일치` : ''),
+        );
+        text(
+          '[data-validation-schema]',
+          triState(calculation.schemaValidation.schemaValid, {
+            missing: '미입력 · 선택',
+            valid: 'Draft 2020-12 유효',
+            invalid: '스키마 오류',
+          }),
+        );
+        text(
+          '[data-validation-example]',
+          triState(calculation.schemaValidation.exampleMatchesSchema, {
+            missing: calculation.schemaValidation.exampleProvided
+              ? '검사하지 못함'
+              : '미입력 · 선택',
+            valid: '스키마와 일치',
+            invalid: '불일치',
+          }),
+        );
+        text('[data-schema-dialect]', calculation.schemaValidation.dialect);
+        text(
+          '[data-schema-syntax]',
+          triState(calculation.schemaValidation.schemaSyntaxValid),
+        );
+        text(
+          '[data-schema-validity]',
+          triState(calculation.schemaValidation.schemaValid),
+        );
+        text(
+          '[data-example-match]',
+          triState(calculation.schemaValidation.exampleMatchesSchema, {
+            missing: calculation.schemaValidation.exampleProvided
+              ? '검사하지 못함'
+              : '미입력 · 선택',
+            valid: '일치',
+            invalid: '불일치',
+          }),
+        );
+
+        renderWarnings(calculation.warnings);
+        renderIssues(calculation.validationReport);
+        renderVariables(calculation.promptValidation);
+        renderAssumptions(calculation.assumptions);
+        result.dataset.status = calculation.resultStatus;
+        result.hidden = false;
+        status.textContent = calculation.validationReport.issueCount === 0
+          ? '프롬프트 변수와 구조화 출력 검사에서 문제를 찾지 못했다.'
+          : `차단 ${calculation.validationReport.blockingCount}개, 주의 ${calculation.validationReport.cautionCount}개, 정보 ${calculation.validationReport.infoCount}개를 찾았다.`;
+
+        if (focusResult) {
+          result.focus({ preventScroll: true });
+          result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } catch (error) {
+        status.textContent = error instanceof Error
+          ? error.message
+          : '프롬프트와 스키마를 검증하는 중 오류가 발생했다.';
+      }
+    };
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      validate();
+    });
+
+    form?.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        validate({ focusResult: false });
+        status.textContent = '기본 고객 문의 분류 예시로 입력을 초기화했다.';
+      });
+    });
+
+    validator.querySelector('[data-copy-prompt-schema-report]')?.addEventListener(
+      'click',
+      async () => {
+        if (!latestResult) return;
+        const portable = createPortablePromptSchemaReport(latestResult);
+        try {
+          await navigator.clipboard.writeText(JSON.stringify(portable, null, 2));
+          status.textContent = '프롬프트 원문과 입력 JSON을 제외한 검증 보고서를 복사했다.';
+        } catch {
+          status.textContent = '보고서를 복사하지 못했다. 브라우저의 클립보드 권한을 확인해야 한다.';
+        }
+      },
+    );
+
+    validate({ focusResult: false });
+  }
+</script>

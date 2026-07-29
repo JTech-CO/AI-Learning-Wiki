@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W58",
+  "toolId": "prompt-schema",
+  "formulaVersion": "prompt-schema-v1",
+  "description": "프롬프트 변수 대조, JSON 문법, Draft 2020-12 메타스키마와 예시 출력 제약 검사를 고정하는 결정론 입력이다.",
+  "fixtures": [
+    {
+      "id": "valid-complete-template",
+      "inputs": {
+        "promptText": "고객 문의 {{customer_message}}를 ${output_language}로 분류하고 JSON으로 답한다.",
+        "variableDefinitions": [
+          {
+            "name": "customer_message",
+            "required": true
+          },
+          {
+            "name": "output_language",
+            "required": false
+          }
+        ],
+        "outputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string"
+            },
+            "urgent": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "category",
+            "urgent"
+          ],
+          "additionalProperties": false
+        },
+        "exampleOutput": {
+          "category": "billing",
+          "urgent": false
+        }
+      },
+      "expected": {
+        "resultStatus": "ok",
+        "warningCodes": [],
+        "issueCodes": [],
+        "issueKeywords": [],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": true,
+        "exampleMatchesSchema": true
+      }
+    },
+    {
+      "id": "valid-object-map-definitions",
+      "inputs": {
+        "promptText": "{{topic}}을 학습자 수준에 맞춰 설명한다.",
+        "variableDefinitions": {
+          "topic": {
+            "required": true,
+            "description": "설명할 주제"
+          }
+        }
+      },
+      "expected": {
+        "resultStatus": "ok",
+        "warningCodes": [],
+        "issueCodes": [],
+        "issueKeywords": [],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": null,
+        "exampleMatchesSchema": null
+      }
+    },
+    {
+      "id": "undefined-prompt-variable",
+      "inputs": {
+        "promptText": "{{document}}를 {{language}}로 요약한다.",
+        "variableDefinitions": [
+          "document"
+        ]
+      },
+      "expected": {
+        "resultStatus": "warning",
+        "warningCodes": [
+          "UNRESOLVED_VARIABLE"
+        ],
+        "issueCodes": [
+          "UNDEFINED_VARIABLE"
+        ],
+        "issueKeywords": [
+          "variable-use"
+        ],
+        "undefinedVariables": [
+          "language"
+        ],
+        "unusedVariables": [],
+        "schemaValid": null,
+        "exampleMatchesSchema": null
+      }
+    },
+    {
+      "id": "unused-variable-definition",
+      "inputs": {
+        "promptText": "{{document}}를 세 문장으로 요약한다.",
+        "variableDefinitions": {
+          "document": true,
+          "language": false
+        }
+      },
+      "expected": {
+        "resultStatus": "warning",
+        "warningCodes": [
+          "UNRESOLVED_VARIABLE"
+        ],
+        "issueCodes": [
+          "UNUSED_VARIABLE"
+        ],
+        "issueKeywords": [
+          "variable-definition"
+        ],
+        "undefinedVariables": [],
+        "unusedVariables": [
+          "language"
+        ],
+        "schemaValid": null,
+        "exampleMatchesSchema": null
+      }
+    },
+    {
+      "id": "invalid-variable-json-syntax",
+      "inputs": {
+        "promptText": "{{message}}를 분류한다.",
+        "variableDefinitions": "[{\"name\":\"message\",}]"
+      },
+      "expected": {
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_VARIABLE_DEFINITIONS"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SYNTAX"
+        ],
+        "issueKeywords": [
+          "json-syntax"
+        ],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": null,
+        "exampleMatchesSchema": null
+      }
+    },
+    {
+      "id": "invalid-variable-definition-shape",
+      "inputs": {
+        "promptText": "{{message}}를 분류한다.",
+        "variableDefinitions": [
+          {
+            "required": true
+          }
+        ]
+      },
+      "expected": {
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_VARIABLE_DEFINITIONS"
+        ],
+        "issueCodes": [
+          "INVALID_VARIABLE_DEFINITION"
+        ],
+        "issueKeywords": [
+          "required"
+        ],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": null,
+        "exampleMatchesSchema": null
+      }
+    },
+    {
+      "id": "invalid-output-schema-json",
+      "inputs": {
+        "promptText": "JSON 객체로 답한다.",
+        "outputSchema": "{\"type\":\"object\",}"
+      },
+      "expected": {
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_JSON_SCHEMA"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SYNTAX"
+        ],
+        "issueKeywords": [
+          "json-syntax"
+        ],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": false,
+        "exampleMatchesSchema": null
+      }
+    },
+    {
+      "id": "invalid-json-schema-keyword-type",
+      "inputs": {
+        "promptText": "JSON 객체로 답한다.",
+        "outputSchema": {
+          "type": "object",
+          "required": "name"
+        }
+      },
+      "expected": {
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_JSON_SCHEMA"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SCHEMA"
+        ],
+        "issueKeywords": [
+          "type"
+        ],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": false,
+        "exampleMatchesSchema": null
+      }
+    },
+    {
+      "id": "example-required-type-and-additional-errors",
+      "inputs": {
+        "promptText": "지정된 JSON 객체로만 답한다.",
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "count": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "label",
+            "count"
+          ],
+          "additionalProperties": false
+        },
+        "exampleOutput": {
+          "count": "two",
+          "debug": true
+        }
+      },
+      "expected": {
+        "resultStatus": "warning",
+        "warningCodes": [
+          "EXAMPLE_SCHEMA_MISMATCH"
+        ],
+        "issueCodes": [
+          "SCHEMA_INSTANCE_MISMATCH",
+          "SCHEMA_INSTANCE_MISMATCH",
+          "SCHEMA_INSTANCE_MISMATCH"
+        ],
+        "issueKeywords": [
+          "required",
+          "additionalProperties",
+          "type"
+        ],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": true,
+        "exampleMatchesSchema": false
+      }
+    },
+    {
+      "id": "invalid-example-json-syntax",
+      "inputs": {
+        "promptText": "지정된 JSON 객체로만 답한다.",
+        "outputSchema": {
+          "type": "object"
+        },
+        "exampleOutput": "{\"label\":\"ok\",}"
+      },
+      "expected": {
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_EXAMPLE_JSON"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SYNTAX"
+        ],
+        "issueKeywords": [
+          "json-syntax"
+        ],
+        "undefinedVariables": [],
+        "unusedVariables": [],
+        "schemaValid": true,
+        "exampleMatchesSchema": false
+      }
+    }
+  ]
+}

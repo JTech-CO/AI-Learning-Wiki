@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W58",
+  "releasedAt": "2026-07-29",
+  "tool": {
+    "id": "prompt-schema",
+    "title": {
+      "ko": "프롬프트·JSON Schema 검증기",
+      "en": "Prompt and JSON Schema Validator"
+    },
+    "route": "/lab/prompt-schema/",
+    "status": "active",
+    "formulaVersion": "prompt-schema-v1",
+    "execution": {
+      "mode": "client-only",
+      "networkAccess": "none",
+      "transmitsUserInput": false,
+      "persistentStorage": "none"
+    }
+  },
+  "publicSurface": {
+    "hubRoute": "/lab/",
+    "hubPage": "src/content/docs/lab/index.mdx",
+    "toolPage": "src/content/docs/lab/prompt-schema.mdx",
+    "globalNavigation": "src/components/wiki/WikiSidebar.astro",
+    "homeNavigation": "src/components/wiki/WikiHome.astro",
+    "shareableParameters": [],
+    "reportCopyExcludesRawInputs": true
+  },
+  "implementation": {
+    "src/lib/prompt-schema.mjs": {
+      "bytes": 27306,
+      "sha256": "fbbe3ee6a0275616b02b7fcc9555c67e9ca78b4af8070ba96fd4503efc436a70"
+    },
+    "src/components/lab/PromptSchemaValidator.astro": {
+      "bytes": 17126,
+      "sha256": "82c31e8bb5be7486c4e3fd9d3b75b4f446e7b3cfe6fc4bc5007f02f4c13ac5e4"
+    },
+    "src/components/lab/LabDirectory.astro": {
+      "bytes": 1891,
+      "sha256": "1198c52f00617f319d3fc34b76f0f1423f707db70c66d868552585cfa79bf0d7"
+    },
+    "src/content/docs/lab/index.mdx": {
+      "bytes": 507,
+      "sha256": "7f3ad7e40ebb1d431db2cae88c529678bfd52e66acd7fd82a3905c916d83f575"
+    },
+    "src/content/docs/lab/prompt-schema.mdx": {
+      "bytes": 4240,
+      "sha256": "840427861e0fb3f549578352b91003f4df4b204daddda7f25c8a484f190f3a77"
+    },
+    "src/styles/wiki-lab.css": {
+      "bytes": 11974,
+      "sha256": "1e9eaa119df6c5db361608f2150cae3541ccda86d11366a5904dd15100cdcd7c"
+    },
+    "content-model/labs/fixtures/w58-prompt-schema.json": {
+      "bytes": 7960,
+      "sha256": "20db42e7aaf59438d9f9d5372035d947fc680a2ed3427a1b5cfec4ff098f1699"
+    }
+  },
+  "deterministicFixtures": {
+    "source": "content-model/labs/fixtures/w58-prompt-schema.json",
+    "count": 10,
+    "requiredCount": 10,
+    "results": [
+      {
+        "id": "valid-complete-template",
+        "resultStatus": "ok",
+        "warningCodes": [],
+        "issueCodes": [],
+        "issueKeywords": [],
+        "schemaValid": true,
+        "exampleMatchesSchema": true,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "4980a36ba66fc6798cd2704e83a444cef9b67e8205a3f91a655bfc19d68d3200"
+      },
+      {
+        "id": "valid-object-map-definitions",
+        "resultStatus": "ok",
+        "warningCodes": [],
+        "issueCodes": [],
+        "issueKeywords": [],
+        "schemaValid": null,
+        "exampleMatchesSchema": null,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "def5bd3ce27934222d943a35f7c65e879d0594d972756a5276fd592503d4da80"
+      },
+      {
+        "id": "undefined-prompt-variable",
+        "resultStatus": "warning",
+        "warningCodes": [
+          "UNRESOLVED_VARIABLE"
+        ],
+        "issueCodes": [
+          "UNDEFINED_VARIABLE"
+        ],
+        "issueKeywords": [
+          "variable-use"
+        ],
+        "schemaValid": null,
+        "exampleMatchesSchema": null,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "354c9fa6340c1ba4e7eca555cea8b23f1e0eee9a7ff8e695ef7af713ccf26dad"
+      },
+      {
+        "id": "unused-variable-definition",
+        "resultStatus": "warning",
+        "warningCodes": [
+          "UNRESOLVED_VARIABLE"
+        ],
+        "issueCodes": [
+          "UNUSED_VARIABLE"
+        ],
+        "issueKeywords": [
+          "variable-definition"
+        ],
+        "schemaValid": null,
+        "exampleMatchesSchema": null,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "102b530eea1a7af1f6af4ac5c3cb51ed9963903bfbf0575fb44f7793e45efb21"
+      },
+      {
+        "id": "invalid-variable-json-syntax",
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_VARIABLE_DEFINITIONS"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SYNTAX"
+        ],
+        "issueKeywords": [
+          "json-syntax"
+        ],
+        "schemaValid": null,
+        "exampleMatchesSchema": null,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "05d1e824762e454449af6fb152651db331b91163285d5fd1c02584a395df2910"
+      },
+      {
+        "id": "invalid-variable-definition-shape",
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_VARIABLE_DEFINITIONS"
+        ],
+        "issueCodes": [
+          "INVALID_VARIABLE_DEFINITION"
+        ],
+        "issueKeywords": [
+          "required"
+        ],
+        "schemaValid": null,
+        "exampleMatchesSchema": null,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "6ed1d69e552f9ade5ec03ad112741391c4434bc3e7cef8060cce9bd470b98e2f"
+      },
+      {
+        "id": "invalid-output-schema-json",
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_JSON_SCHEMA"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SYNTAX"
+        ],
+        "issueKeywords": [
+          "json-syntax"
+        ],
+        "schemaValid": false,
+        "exampleMatchesSchema": null,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "095543aec907796f41517ae05735c74892b9d43f57a692397255f00f3d566c07"
+      },
+      {
+        "id": "invalid-json-schema-keyword-type",
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_JSON_SCHEMA"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SCHEMA"
+        ],
+        "issueKeywords": [
+          "type"
+        ],
+        "schemaValid": false,
+        "exampleMatchesSchema": null,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "db597598d5eec9a5c6d79121875b40396b560e8c3b8a2f8bceee0084619b1f5b"
+      },
+      {
+        "id": "example-required-type-and-additional-errors",
+        "resultStatus": "warning",
+        "warningCodes": [
+          "EXAMPLE_SCHEMA_MISMATCH"
+        ],
+        "issueCodes": [
+          "SCHEMA_INSTANCE_MISMATCH",
+          "SCHEMA_INSTANCE_MISMATCH",
+          "SCHEMA_INSTANCE_MISMATCH"
+        ],
+        "issueKeywords": [
+          "required",
+          "additionalProperties",
+          "type"
+        ],
+        "schemaValid": true,
+        "exampleMatchesSchema": false,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "08ccafcd134b724d22c2409c6c56b62cc42afeeb8e9db62040834561db4bd36a"
+      },
+      {
+        "id": "invalid-example-json-syntax",
+        "resultStatus": "error",
+        "warningCodes": [
+          "INVALID_EXAMPLE_JSON"
+        ],
+        "issueCodes": [
+          "INVALID_JSON_SYNTAX"
+        ],
+        "issueKeywords": [
+          "json-syntax"
+        ],
+        "schemaValid": true,
+        "exampleMatchesSchema": false,
+        "deterministic": true,
+        "expectedContractMatched": true,
+        "portableReportExcludesRawText": true,
+        "sha256": "f60492d831bc15836cd3d6c3471fed249952ba32809da4d94faaf8e6184fdef8"
+      }
+    ]
+  },
+  "validationPolicy": {
+    "placeholderSyntaxes": [
+      "{{name}}",
+      "${name}"
+    ],
+    "jsonSchemaDialect": "Draft 2020-12",
+    "jsonSchemaEngine": "Ajv 8.20.0",
+    "formatExtension": "ajv-formats 3.0.1",
+    "remoteReferencesLoaded": false,
+    "asynchronousSchemasSupported": false,
+    "promptMaxCharacters": 50000,
+    "jsonFieldMaxCharacters": 100000,
+    "exampleCount": 1,
+    "rawInputsPersisted": false,
+    "rawInputsInUrl": false
+  },
+  "releaseGates": {
+    "clientOnly": true,
+    "noNetworkAccess": true,
+    "noInputTransmission": true,
+    "noPersistentStorage": true,
+    "assumptionsVisible": true,
+    "keyboardAccessible": true,
+    "mobileLayout": true,
+    "linksToWiki": true,
+    "rawInputSharingDisabled": true,
+    "allFixturesDeterministic": true,
+    "allFixtureContractsMatched": true,
+    "allPortableReportsExcludeRawText": true
+  }
+}
