@@ -134,21 +134,21 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 60rem) {
   :root,
-  :root[data-theme='dark'] { --sl-nav-height: 7rem; }
+  :root[data-theme='dark'] { --sl-nav-height: 9.5rem; }
   .wiki-header {
     box-sizing: border-box;
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-rows: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
     align-content: center;
-    column-gap: 1rem;
-    row-gap: .25rem;
+    gap: .25rem;
   }
-  .wiki-wordmark { box-sizing: border-box; min-width: 0; max-width: 100%; overflow: hidden; }
+  .wiki-wordmark { box-sizing: border-box; grid-column: 1; grid-row: 1; min-width: 0; max-width: 100%; overflow: hidden; padding-inline-end: 4rem; }
   .wiki-wordmark-text { overflow: hidden; }
   .wiki-wordmark strong,
   .wiki-wordmark small { overflow: hidden; text-overflow: ellipsis; }
-  .wiki-global-search { grid-column: 1 / -1; width: 100%; }
-  .wiki-header-links { grid-column: 2; grid-row: 1; display: flex; justify-content: flex-end; font-size: .76rem; }
+  .wiki-global-search { grid-column: 1; grid-row: 2; width: 100%; }
+  .wiki-header-links { grid-column: 1; grid-row: 3; display: flex; justify-content: flex-start; font-size: .76rem; }
+  .wiki-header-links a { box-sizing: border-box; min-height: 2.35rem; border: 1px solid #a2a9b1; background: #f8f9fa; padding: 0 .65rem; }
 }
 @media (max-width: 50rem) {
   .wiki-wordmark small { display: none; }
@@ -159,7 +159,7 @@ a:hover { text-decoration: underline; }
 }
 @media (max-width: 36rem) {
   :root,
-  :root[data-theme='dark'] { --sl-nav-height: 8.6rem; }
+  :root[data-theme='dark'] { --sl-nav-height: 9.5rem; }
   html[data-has-sidebar] .page > .header { padding-inline-end: var(--sl-nav-pad-x); }
   .wiki-header {
     grid-template-columns: minmax(0, 1fr);
@@ -171,7 +171,7 @@ a:hover { text-decoration: underline; }
   .wiki-wordmark { grid-column: 1; grid-row: 1; padding-inline-end: 3.6rem; }
   .wiki-global-search { grid-column: 1; grid-row: 2; width: 100%; }
   .wiki-header-links { grid-column: 1; grid-row: 3; justify-content: flex-start; font-size: .72rem; }
-  .wiki-header-links a { min-height: 1.6rem; }
+  .wiki-header-links a { min-height: 2.35rem; }
 }
 @media (max-width: 30rem) {
   .wiki-site-logo { width: 2.15rem; height: 2.15rem; }

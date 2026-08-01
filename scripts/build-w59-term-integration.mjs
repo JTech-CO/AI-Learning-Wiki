@@ -4,7 +4,8 @@ import path from 'node:path';
 
 const readText = (file) => fs.readFileSync(file, 'utf8');
 const readJson = (file) => JSON.parse(readText(file));
-const sha256 = (value) => createHash('sha256').update(value).digest('hex');
+const canonicalText = (value) => value.replace(/\r\n?/g, '\n');
+const sha256 = (value) => createHash('sha256').update(canonicalText(value)).digest('hex');
 const countHtml = (directory) => fs.existsSync(directory)
   ? fs.readdirSync(directory, { withFileTypes: true }).reduce(
     (sum, entry) => sum + (
@@ -116,13 +117,16 @@ const report = {
     requiredFiles: Object.fromEntries(requiredFiles.map((file) => [file, fs.existsSync(file)])),
     allArticlesIndexed: catalog.terms.every((term) => publicIds.has(term.id)),
   },
-  implementation: Object.fromEntries(implementationFiles.map((file) => [
-    file,
-    {
-      bytes: Buffer.byteLength(readText(file)),
-      sha256: sha256(readText(file)),
-    },
-  ])),
+  implementation: Object.fromEntries(implementationFiles.map((file) => {
+    const text = canonicalText(readText(file));
+    return [
+      file,
+      {
+        bytes: Buffer.byteLength(text),
+        sha256: sha256(text),
+      },
+    ];
+  })),
   releaseGates: {
     exactCatalogSize: catalog.terms.length === 24,
     exactCorpusSize: articleFiles.length === catalog.baselineArticleCount + catalog.terms.length,

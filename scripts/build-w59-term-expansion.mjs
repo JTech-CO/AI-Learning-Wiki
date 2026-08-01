@@ -11,7 +11,8 @@ const ledgerPath = path.join(root, 'content-model', 'evidence', 'w59-claim-ledge
 const publicationPath = path.join(root, 'content-model', 'research', 'w59-publication-report.json');
 
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
-const sha256 = (value) => createHash('sha256').update(value).digest('hex');
+const canonicalText = (value) => value.replace(/\r\n?/g, '\n');
+const sha256 = (value) => createHash('sha256').update(canonicalText(value)).digest('hex');
 const quote = (value) => '‘' + value + '’';
 
 const catalog = await readJson(catalogPath);

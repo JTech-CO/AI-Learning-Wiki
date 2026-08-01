@@ -309,6 +309,19 @@
   overflow-x: auto;
 }
 
+.lab-tool :is(
+  .lab-confusion-table,
+  .lab-metric-table,
+  .lab-memory-table,
+  .lab-context-table,
+  .lab-training-state-table,
+  .lab-validation-table,
+  .lab-variable-table
+) :is(th, td) {
+  color: #202122;
+  -webkit-text-fill-color: currentColor;
+}
+
 .lab-confusion-table,
 .lab-metric-table {
   width: 100%;

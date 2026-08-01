@@ -80,6 +80,12 @@ const labTableSelectors = [
 for (const selector of labTableSelectors) {
   assert(labCss.includes(selector), `${selector} 스타일이 누락됐다.`);
 }
+assert(
+  labCss.includes('.lab-tool :is(')
+    && labCss.includes('-webkit-text-fill-color: currentColor;'),
+  'AI 실험실 표 셀의 명시적 전경색 보정이 없다.',
+);
+
 
 const cssFiles = (await readdir('dist/_astro')).filter((file) => file.endsWith('.css'));
 const renderedCss = (
@@ -97,6 +103,12 @@ assert(
   renderedCss.includes('.sl-markdown-content summary{color:#202122;-webkit-text-fill-color:#202122}'),
   '빌드 CSS에 펼침 제목 전경색 보정이 반영되지 않았다.',
 );
+assert(
+  renderedCss.includes('.lab-tool :is(')
+    && renderedCss.includes('-webkit-text-fill-color:currentColor'),
+  '빌드 CSS에 AI 실험실 표 셀 전경색 보정이 반영되지 않았다.',
+);
+
 
 const routeChecks = [
   ['index.html', 'wiki-home'],

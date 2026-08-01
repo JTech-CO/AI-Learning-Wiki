@@ -10,20 +10,20 @@ const layoutBudgets = [
   {
     label: 'tablet',
     viewport: 768,
-    navHeightRem: 7,
-    contentPx: (2.65 + 2.35 + 0.25) * rootFontPx,
+    navHeightRem: 9.5,
+    contentPx: (2.65 + 2.35 + 2.35 + (2 * 0.25)) * rootFontPx,
   },
   {
     label: 'small tablet',
     viewport: 576,
-    navHeightRem: 8.6,
-    contentPx: (2.35 + 2.35 + 1.6 + (2 * 0.25)) * rootFontPx,
+    navHeightRem: 9.5,
+    contentPx: (2.35 + 2.35 + 2.35 + (2 * 0.25)) * rootFontPx,
   },
   {
     label: 'mobile',
     viewport: 320,
-    navHeightRem: 8.6,
-    contentPx: (2.15 + 2.35 + 1.6 + (2 * 0.25)) * rootFontPx,
+    navHeightRem: 9.5,
+    contentPx: (2.15 + 2.35 + 2.35 + (2 * 0.25)) * rootFontPx,
   },
 ];
 
@@ -43,12 +43,12 @@ assert.doesNotMatch(
 );
 assert.match(
   sourceCss,
-  /@media \(max-width: 60rem\)[\s\S]*?--sl-nav-height:\s*7rem;/u,
+  /@media \(max-width: 60rem\)[\s\S]*?--sl-nav-height:\s*9\.5rem;/u,
   '태블릿 헤더 높이 보정이 없다.',
 );
 assert.match(
   sourceCss,
-  /@media \(max-width: 36rem\)[\s\S]*?--sl-nav-height:\s*8\.6rem;/u,
+  /@media \(max-width: 36rem\)[\s\S]*?--sl-nav-height:\s*9\.5rem;/u,
   '모바일 헤더 높이 보정이 없다.',
 );
 assert.match(
@@ -60,6 +60,11 @@ assert.match(
   sourceCss,
   /\.wiki-wordmark\s*\{[^}]*grid-column:\s*1;[^}]*padding-inline-end:\s*3\.6rem;/u,
   '모바일 메뉴 버튼과 워드마크의 충돌 방지 여백이 없다.',
+);
+assert.match(
+  sourceCss,
+  /@media \(max-width: 60rem\)[\s\S]*?\.wiki-header-links a\s*\{[^}]*min-height:\s*2\.35rem;[^}]*border:\s*1px solid #a2a9b1;/u,
+  '반응형 전체 문서(색인) 링크의 터치 영역 보정이 없다.',
 );
 
 const headerSource = await read('src/components/wiki/WikiHeader.astro');
@@ -91,11 +96,18 @@ for (const [relativePath, marker] of routeChecks) {
   );
 }
 
+const homeHtml = await read('dist/index.html');
+assert.match(
+  homeHtml,
+  /class="wiki-counts"[\s\S]*?<strong>1,624<\/strong>개/u,
+  '대문의 검토 완료 백과 문서 수가 1,624개가 아니다.',
+);
+
 const cssFiles = (await readdir('dist/_astro')).filter((file) => file.endsWith('.css'));
 const renderedCss = (
   await Promise.all(cssFiles.map((file) => read(path.join('dist/_astro', file))))
 ).join('\n');
-assert.ok(renderedCss.includes('--sl-nav-height:8.6rem'), '빌드 CSS에 모바일 헤더 높이 보정이 없다.');
+assert.ok(renderedCss.includes('--sl-nav-height:9.5rem'), '빌드 CSS에 모바일 헤더 높이 보정이 없다.');
 assert.ok(renderedCss.includes('padding-inline-end:var(--sl-nav-pad-x)'), '빌드 CSS에 모바일 검색 너비 보정이 없다.');
 
 console.log(

@@ -6,8 +6,10 @@ import addFormats from 'ajv-formats';
 
 const readText = (file) => fs.readFileSync(file, 'utf8');
 const readJson = (file) => JSON.parse(readText(file));
-const sha256 = (value) => createHash('sha256').update(value).digest('hex');
-const catalog = readJson('content-model/research/w59-term-catalog.json');
+const canonicalText = (value) => value.replace(/\r\n?/g, '\n');
+const sha256 = (value) => createHash('sha256').update(canonicalText(value)).digest('hex');
+const catalogText = readText('content-model/research/w59-term-catalog.json');
+const catalog = JSON.parse(catalogText);
 const publication = readJson('content-model/research/w59-publication-report.json');
 const ledger = readJson('content-model/evidence/w59-claim-ledger.json');
 const registry = readJson('content-model/labs/registry.json');
@@ -48,7 +50,13 @@ assert.deepEqual(publication.after, { articles: 1624 });
 assert.deepEqual(ledger.totals, { articles: 24, claimUnits: 240, sources: 126 });
 assert.equal(
   ledger.catalogSha256,
-  sha256(readText('content-model/research/w59-term-catalog.json')),
+  sha256(catalogText),
+);
+const catalogLf = canonicalText(catalogText);
+assert.equal(
+  sha256(catalogLf),
+  sha256(catalogLf.replace(/\n/g, '\r\n')),
+  'catalog hash must not depend on line endings',
 );
 
 const categoryCounts = {};
@@ -143,8 +151,9 @@ assert.ok(report.evidence.minimumBodyCharacters >= 4000);
 assert.equal(report.connections.length, 24);
 assert.ok(Object.values(report.releaseGates).every(Boolean), 'W59 release gate failed');
 for (const [file, fingerprint] of Object.entries(report.implementation)) {
-  assert.equal(fingerprint.bytes, Buffer.byteLength(readText(file)), file + ': byte count changed');
-  assert.equal(fingerprint.sha256, sha256(readText(file)), file + ': fingerprint changed');
+  const implementationText = canonicalText(readText(file));
+  assert.equal(fingerprint.bytes, Buffer.byteLength(implementationText), file + ': byte count changed');
+  assert.equal(fingerprint.sha256, sha256(implementationText), file + ': fingerprint changed');
 }
 
 console.log(
