@@ -132,7 +132,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [대응 부트스트랩](/wiki/paired-bootstrap/)
+- [최소 검출 가능 효과](/wiki/minimum-detectable-effect/)
+- [컨포멀 예측](/wiki/conformal-prediction/)
 
 ### 이 문서를 포함하는 코스
 

@@ -174,7 +174,7 @@
     "wiki:w54:report": "node scripts/build-w54-lab-architecture.mjs",
     "wiki:w54:validate": "node scripts/validate-w54-lab-architecture.mjs",
     "wiki:w54:release": "npm run wiki:w54:report && npm run wiki:w54:validate",
-    "postbuild": "npm run wiki:w54:release && npm run wiki:w55:release && npm run wiki:w56:release && npm run wiki:w57:release && npm run wiki:w58:release",
+    "postbuild": "npm run wiki:w54:release && npm run wiki:w55:release && npm run wiki:w56:release && npm run wiki:w57:release && npm run wiki:w58:release && npm run wiki:w59:release",
     "wiki:w55:report": "node scripts/build-w55-learning-path.mjs",
     "wiki:w55:validate": "node scripts/validate-w55-learning-path.mjs",
     "wiki:w55:render": "node scripts/check-w55-render.mjs",
@@ -190,7 +190,12 @@
     "wiki:w58:report": "node scripts/build-w58-prompt-schema.mjs",
     "wiki:w58:validate": "node scripts/validate-w58-prompt-schema.mjs",
     "wiki:w58:render": "node scripts/check-w58-render.mjs",
-    "wiki:w58:release": "npm run wiki:w58:report && npm run wiki:w58:validate && npm run wiki:w58:render"
+    "wiki:w58:release": "npm run wiki:w58:report && npm run wiki:w58:validate && npm run wiki:w58:render",
+    "wiki:w59:prepare": "node scripts/build-w59-term-expansion.mjs && node scripts/connect-w59-terms.mjs",
+    "wiki:w59:report": "node scripts/build-w59-term-integration.mjs",
+    "wiki:w59:validate": "node scripts/validate-w59-term-integration.mjs",
+    "wiki:w59:render": "node scripts/check-w59-render.mjs",
+    "wiki:w59:release": "npm run wiki:w59:report && npm run wiki:w59:validate && npm run wiki:w59:render"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

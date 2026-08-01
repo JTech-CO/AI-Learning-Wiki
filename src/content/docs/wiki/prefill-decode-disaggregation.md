@@ -116,6 +116,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
+- [분리형 서빙](/wiki/disaggregated-serving/)
 - [연속 배칭 공정성](/wiki/continuous-batching-fairness/)
 - [LLM 비용 귀속](/wiki/llm-cost-attribution/)
 

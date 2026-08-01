@@ -124,7 +124,7 @@ OpenAPI 명세는 HTTP API의 경로, 연산, 매개변수, 요청·응답 스�
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [JSON 스키마 주석](/wiki/json-schema-annotation/)
 
 ### 이 문서를 포함하는 코스
 

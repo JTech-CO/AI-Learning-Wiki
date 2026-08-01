@@ -141,10 +141,19 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 이 문서를 가리키는 문서
 
 - [도구 호출](/wiki/tool-calling/)
+- [미평가 속성 제어](/wiki/unevaluated-properties/)
 - [스트리밍 응답](/wiki/streaming-response/)
 - [요청 한도](/wiki/rate-limit/)
 - [HTTP 메서드](/wiki/http-method/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 3개 문서 보기</summary>
+
 - [HTTP 응답](/wiki/http-response/)
+- [JSON 스키마 방언](/wiki/json-schema-dialect/)
+- [JSON 스키마 주석](/wiki/json-schema-annotation/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 

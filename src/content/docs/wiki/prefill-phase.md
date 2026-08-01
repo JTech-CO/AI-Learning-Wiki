@@ -132,7 +132,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [분리형 서빙](/wiki/disaggregated-serving/)
+- [KV 캐시 전송](/wiki/kv-cache-transfer/)
 
 ### 이 문서를 포함하는 코스
 

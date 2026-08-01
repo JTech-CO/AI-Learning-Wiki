@@ -153,7 +153,7 @@ _해당 문서가 없다._
 - [거리 학습](/wiki/metric-learning/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 84개 문서 보기</summary>
+<summary>나머지 85개 문서 보기</summary>
 
 - [검증 데이터셋](/wiki/validation-set/)
 - [결정 트리](/wiki/decision-tree/)
@@ -232,6 +232,7 @@ _해당 문서가 없다._
 - [편향-분산 절충](/wiki/bias-variance-tradeoff/)
 - [표현학습](/wiki/representation-learning/)
 - [퓨샷 학습](/wiki/few-shot-learning/)
+- [학습 목표](/wiki/learning-objective/)
 - [학습·검증·테스트 분할](/wiki/train-validation-test-split/)
 - [확률 그래프 모델](/wiki/probabilistic-graphical-model/)
 - [확률 모델](/wiki/probabilistic-model/)

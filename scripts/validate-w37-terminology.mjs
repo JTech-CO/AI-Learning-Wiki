@@ -6,7 +6,7 @@ import path from 'node:path';
 const read = (file) => readFile(file, 'utf8');
 const articleFiles = (await readdir('content-model/articles')).filter((file) => file.endsWith('.article.json'));
 const generatedFiles = (await readdir('src/content/docs/wiki')).filter((file) => file.endsWith('.md'));
-assert.equal(articleFiles.length, 1600, 'wiki article source count changed');
+assert.ok(articleFiles.length >= 1600, 'wiki article source count dropped below the W53 baseline');
 assert.equal(generatedFiles.length, articleFiles.length, 'generated wiki article count changed');
 
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&');
@@ -50,7 +50,7 @@ const automatedAudit = JSON.parse(execFileSync(process.execPath, ['scripts/audit
   encoding: 'utf8',
   maxBuffer: 16 * 1024 * 1024,
 }));
-assert.equal(automatedAudit.auditedArticles, 1600);
+assert.equal(automatedAudit.auditedArticles, articleFiles.length);
 const unresolved = automatedAudit.candidates.filter((candidate) =>
   changedIds.has(candidate.articleId) && candidate.appearsInSummary && candidate.occurrences >= 3);
 assert.deepEqual(unresolved, [], 'W37 changed article still appears in high-confidence terminology candidates');

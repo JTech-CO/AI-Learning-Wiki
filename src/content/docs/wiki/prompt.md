@@ -257,4 +257,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **프롬프트 시스템 설계:** [다음 문서 — 프롬프트 엔지니어링](/wiki/prompt-engineering/)
-- **AI 기초:** [다음 문서 — 환각](/wiki/hallucination/)
+- **AI 기초:** [다음 문서 — 학습 목표](/wiki/learning-objective/)

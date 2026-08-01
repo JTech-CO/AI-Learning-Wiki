@@ -124,7 +124,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [예측 보류 메커니즘](/wiki/abstention-mechanism/)
 
 ### 이 문서를 포함하는 코스
 

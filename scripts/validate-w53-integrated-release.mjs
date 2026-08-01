@@ -30,12 +30,13 @@ const professionalCourseLabels = [
 
 assert.equal(report.milestone, 'W53');
 assert.deepEqual(report.targetCounts, { prompts: 1500, artifacts: 120, courses: 16, articles: 1600 });
-assert.deepEqual(report.canonicalCounts, { articles: 1600, courses: 16, prompts: 1500, artifacts: 120 });
+assert.ok(report.canonicalCounts.articles >= report.targetCounts.articles, 'article count dropped below the W53 release baseline');
+assert.deepEqual({ courses: report.canonicalCounts.courses, prompts: report.canonicalCounts.prompts, artifacts: report.canonicalCounts.artifacts }, { courses: 16, prompts: 1500, artifacts: 120 });
 assert.deepEqual({
   articles: report.publicCounts.articles, courses: report.publicCounts.courses,
   prompts: report.publicCounts.prompts, artifacts: report.publicCounts.artifacts,
 }, report.canonicalCounts);
-assert.equal(report.publicCounts.unifiedSearchRecords, 3220);
+assert.equal(report.publicCounts.unifiedSearchRecords, report.canonicalCounts.articles + 1500 + 120);
 assert.ok(report.promptQuality.longForm >= 300);
 assert.ok(report.promptQuality.markdown >= 200);
 assert.ok(report.promptQuality.schema >= 120);
@@ -46,7 +47,7 @@ assert.equal(Object.keys(report.courseCoverage).length, 16);
 assert.equal(report.professionalCourses.length, 8);
 for (const courseId of report.professionalCourses) {
   const coverage = report.courseCoverage[courseId];
-  assert.equal(coverage.wikiSteps, 24, `${courseId}: wiki path incomplete`);
+  assert.ok(coverage.wikiSteps >= 24, courseId + ': wiki path incomplete');
   assert.ok(coverage.prompts >= 43, `${courseId}: prompt coverage incomplete`);
   assert.ok(coverage.artifacts >= 11, `${courseId}: artifact coverage incomplete`);
 }
@@ -56,7 +57,7 @@ assert.ok(report.build.promptDataBytes > 1_000_000 && report.build.artifactDataB
 assert.ok(base.promptIds.every((id) => promptIds.includes(id)) && base.artifactIds.every((id) => artifactIds.includes(id)), 'frozen canonical ID lost');
 assert.equal(sha256(promptIds.filter((id) => base.promptIds.includes(id)).join('\n')), base.hashes.promptIdsSha256);
 assert.equal(sha256(artifactIds.filter((id) => base.artifactIds.includes(id)).join('\n')), base.hashes.artifactIdsSha256);
-assert.match(readme, /1,600개/u);
+assert.ok(readme.includes(report.canonicalCounts.articles.toLocaleString('en-US') + '개'), 'README article count is stale');
 assert.match(readme, /16개 추천 코스/u);
 assert.match(readme, /1,500개 프롬프트와 120개 코드·설정 자료/u);
 assert.doesNotMatch(readme, /1,142개 프롬프트|8개 추천 코스|1,400개 백과 문서/u);
@@ -84,4 +85,4 @@ assert.match(libraryStyles, /\.prompt-course-menu > summary::marker \{ content: 
 assert.match(libraryStyles, /\.prompt-course-menu > summary::after \{[^}]*border-right: 1\.5px solid currentColor;[^}]*transform: rotate\(45deg\);/su);
 assert.match(libraryStyles, /\.prompt-course-options button \{[^}]*margin-top: 0 !important;[^}]*line-height: 1\.35;/su);
 assert.match(libraryStyles, /\.prompt-card > details > summary \{[^}]*color: #202122 !important;[^}]*-webkit-text-fill-color: #202122;/su);
-console.log('W53 integrated release: 1600 articles + 16 courses + 1500 prompts + 120 artifacts, professional coverage and GitHub Pages routes OK');
+console.log('W53 integrated release baseline retained; current corpus ' + report.canonicalCounts.articles + ' articles + 16 courses + 1500 prompts + 120 artifacts');

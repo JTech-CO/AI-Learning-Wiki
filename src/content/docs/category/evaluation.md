@@ -36,6 +36,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <ul class="wiki-index-list">
 <li data-article-id="multilingual-evaluation-protocol"><a href="/wiki/multilingual-evaluation-protocol/">다국어 평가 프로토콜</a><span class="wiki-index-summary">다국어 평가 프로토콜은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="answer-relevance"><a href="/wiki/answer-relevance/">답변 관련성</a><span class="wiki-index-summary">답변 관련성은 생성된 답이 사용자의 질문 의도와 필요한 정보에 얼마나 직접 대응하는지를 나타낸다.</span></li>
+<li data-article-id="paired-bootstrap"><a href="/wiki/paired-bootstrap/">대응 부트스트랩</a><span class="wiki-index-summary">대응 부트스트랩은 같은 평가 사례에 대한 두 시스템의 결과 쌍을 함께 재표집해 지표 차이의 불확실성을 추정하는 방법이다.</span></li>
 <li data-article-id="data-annotation"><a href="/wiki/data-annotation/">데이터 주석</a><span class="wiki-index-summary">데이터 주석은 원시 데이터에 범주, 경계, 관계, 선호나 설명을 부여해 학습·평가에 사용할 참조 정보를 만드는 과정이다.</span></li>
 <li data-article-id="tool-use-evaluation"><a href="/wiki/tool-use-evaluation/">도구 사용 평가</a><span class="wiki-index-summary">도구 사용 평가는 에이전트가 적절한 도구를 선택하고 올바른 인수로 호출하며 결과와 오류를 정확히 처리하는지를 측정한다.</span></li>
 <li data-article-id="domain-expert-evaluation"><a href="/wiki/domain-expert-evaluation/">도메인 전문가 평가</a><span class="wiki-index-summary">도메인 전문가 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
@@ -83,6 +84,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <ul class="wiki-index-list">
 <li data-article-id="user-feedback-collection"><a href="/wiki/user-feedback-collection/">사용자 피드백 수집</a><span class="wiki-index-summary">사용자 피드백 수집은 실제 이용자가 AI 결과의 유용성·정확성·안전성에 제공한 명시적·암묵적 신호를 구조화해 기록하는 과정이다.</span></li>
 <li data-article-id="generation-evaluation"><a href="/wiki/generation-evaluation/">생성 평가</a><span class="wiki-index-summary">생성 평가는 모델 출력의 정확성, 관련성, 유창성, 다양성, 안전성과 과제 제약 준수를 측정하는 과정이다.</span></li>
+<li data-article-id="selective-prediction"><a href="/wiki/selective-prediction/">선택적 예측</a><span class="wiki-index-summary">선택적 예측은 모델이 모든 입력에 답하지 않고 신뢰 기준을 만족하는 일부 입력에만 예측을 내도록 하는 의사결정 방식이다.</span></li>
 <li data-article-id="sequential-evaluation"><a href="/wiki/sequential-evaluation/">순차 평가</a><span class="wiki-index-summary">순차 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="shadow-evaluation"><a href="/wiki/shadow-evaluation/">쉐도 평가</a><span class="wiki-index-summary">쉐도 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="slice-based-release-gate"><a href="/wiki/slice-based-release-gate/">슬라이스 기반 릴리스 게이트</a><span class="wiki-index-summary">슬라이스 기반 릴리스 게이트는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
@@ -110,8 +112,10 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <li data-article-id="safety-benchmark"><a href="/wiki/safety-benchmark/">안전 벤치마크</a><span class="wiki-index-summary">안전 벤치마크는 유해 출력, 편향, 보안 취약성이나 거부 행동 등 모델의 위험 관련 특성을 측정하는 평가다.</span></li>
 <li data-article-id="agent-evaluation"><a href="/wiki/agent-evaluation/">에이전트 평가</a><span class="wiki-index-summary">에이전트 평가는 자율 시스템의 최종 결과뿐 아니라 계획, 도구 사용, 상태 관리, 복구와 안전한 중단 능력을 측정하는 과정이다.</span></li>
 <li data-article-id="capability-regression"><a href="/wiki/capability-regression/">역량 회귀</a><span class="wiki-index-summary">역량 회귀는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="abstention-mechanism"><a href="/wiki/abstention-mechanism/">예측 보류 메커니즘</a><span class="wiki-index-summary">예측 보류 메커니즘은 불확실하거나 위험한 입력에 대해 모델이 답을 확정하지 않고 사람 검토나 다른 처리 경로로 넘기게 하는 규칙이다.</span></li>
 <li data-article-id="online-evaluation-drift"><a href="/wiki/online-evaluation-drift/">온라인 평가 드리프트</a><span class="wiki-index-summary">온라인 평가 드리프트는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="exact-match"><a href="/wiki/exact-match/">완전 일치</a><span class="wiki-index-summary">완전 일치는 예측 문자열이나 구조가 정답과 사전에 정한 정규화 뒤 정확히 같은지를 세는 평가 지표다.</span></li>
+<li data-article-id="risk-coverage-curve"><a href="/wiki/risk-coverage-curve/">위험도-포괄률 곡선</a><span class="wiki-index-summary">위험도-포괄률 곡선은 선택적 예측의 수락 임곗값을 바꾸며 자동 처리 비율과 선택된 표본의 오류를 함께 나타내는 평가 곡선이다.</span></li>
 <li data-article-id="human-evaluation"><a href="/wiki/human-evaluation/">인간 평가</a><span class="wiki-index-summary">인간 평가는 사람이 정의된 기준에 따라 모델 출력의 품질·선호·안전성 등을 직접 판단하는 평가 방식이다.</span></li>
 <li data-article-id="citation-correctness"><a href="/wiki/citation-correctness/">인용 정확성</a><span class="wiki-index-summary">인용 정확성은 답변에 붙은 인용이 해당 주장과 올바른 출처를 실제로 연결하는 정도다.</span></li>
 </ul>
@@ -141,6 +145,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <ul class="wiki-index-list">
 <li data-article-id="reference-based-evaluation"><a href="/wiki/reference-based-evaluation/">참조 기반 평가</a><span class="wiki-index-summary">참조 기반 평가는 모델 출력과 사람이 작성했거나 검증된 정답을 비교해 품질을 측정하는 방식이다.</span></li>
 <li data-article-id="reference-free-evaluation"><a href="/wiki/reference-free-evaluation/">참조 없는 평가</a><span class="wiki-index-summary">참조 없는 평가는 정답 문장 없이 입력, 출력, 평가 기준만으로 응답의 품질을 판단하는 방식이다.</span></li>
+<li data-article-id="minimum-detectable-effect"><a href="/wiki/minimum-detectable-effect/">최소 검출 가능 효과</a><span class="wiki-index-summary">최소 검출 가능 효과는 정한 유의수준, 검정력, 표본 크기와 변동성에서 실험이 지정된 확률로 검출하도록 설계된 가장 작은 효과 크기다.</span></li>
 <li data-article-id="tracing"><a href="/wiki/tracing/">추적</a><span class="wiki-index-summary">한 요청이 여러 모델·도구·단계를 거치는 실행 흐름과 시간을 기록하는 방법이다.</span></li>
 <li data-article-id="faithfulness"><a href="/wiki/faithfulness/">충실성</a><span class="wiki-index-summary">충실성은 생성 답변의 사실 주장과 추론이 제공된 근거 문맥에서 실제로 지지되는 정도다.</span></li>
 </ul>
@@ -149,6 +154,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-ko-k">ㅋ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="canary-evaluation"><a href="/wiki/canary-evaluation/">카나리 평가</a><span class="wiki-index-summary">카나리 평가는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="conformal-prediction"><a href="/wiki/conformal-prediction/">컨포멀 예측</a><span class="wiki-index-summary">컨포멀 예측은 교환 가능성 가정 아래 보정 데이터의 비적합도 점수를 사용해 유한 표본 포괄률을 목표로 하는 예측 집합이나 구간을 만드는 방법이다.</span></li>
 <li data-article-id="crowdsourced-evaluation"><a href="/wiki/crowdsourced-evaluation/">크라우드소싱 평가</a><span class="wiki-index-summary">크라우드소싱 평가는 온라인 참여자 집단에 작은 평가 과제를 분배해 대규모 판단 데이터를 수집하는 방식이다.</span></li>
 </ul>
 </section>

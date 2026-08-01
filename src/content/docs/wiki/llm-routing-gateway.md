@@ -116,6 +116,7 @@ LLM 라우팅 게이트웨이을 적용할 수 있는 대표 상황은 고객 �
 
 ### 이 문서를 가리키는 문서
 
+- [접두부 인식 스케줄링](/wiki/prefix-aware-scheduling/)
 - [LLM 요청 정규화](/wiki/llm-request-normalization/)
 - [LLM 클라이언트 적합성](/wiki/llm-client-conformance/)
 

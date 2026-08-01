@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-29T18:16:56.635Z",
+  "generatedAt": "2026-08-01T05:13:51.016Z",
   "counts": {
-    "articles": 1600,
+    "articles": 1624,
     "courses": 16
   },
   "categories": [
@@ -9,7 +9,7 @@
       "id": "foundations",
       "title": "AI·머신러닝 기초",
       "description": "인공지능의 범위와 기본 학습 방식",
-      "count": 100
+      "count": 106
     },
     {
       "id": "mathematics",
@@ -45,7 +45,7 @@
       "id": "inference",
       "title": "추론·서빙·최적화",
       "description": "학습된 모델이 출력을 생성하고 서비스되는 방식",
-      "count": 125
+      "count": 131
     },
     {
       "id": "retrieval",
@@ -57,7 +57,7 @@
       "id": "api",
       "title": "API·SDK·도구 호출",
       "description": "모델을 소프트웨어와 연결하는 인터페이스",
-      "count": 125
+      "count": 131
     },
     {
       "id": "agents",
@@ -75,7 +75,7 @@
       "id": "evaluation",
       "title": "평가·관측성·벤치마크",
       "description": "모델과 시스템의 품질을 측정하는 방법",
-      "count": 130
+      "count": 136
     },
     {
       "id": "safety",
@@ -387,7 +387,9 @@
         "tensor",
         "cosine-similarity"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "minimum-detectable-effect"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/hypothesis-testing/"
@@ -435,7 +437,9 @@
         "model-hub",
         "open-source-model"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kv-cache-tiering"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/accelerator-memory-hierarchy/"
@@ -3158,6 +3162,38 @@
       "url": "/wiki/teacher-forcing/"
     },
     {
+      "id": "curriculum-sequencing",
+      "title": "교육과정 순서화",
+      "englishTitle": "Curriculum Sequencing",
+      "aliases": [
+        "Curriculum Sequencing",
+        "학습 콘텐츠 순서화"
+      ],
+      "summary": "교육과정 순서화는 학습 목표와 선수 관계, 난도, 학습자 상태를 바탕으로 다음에 제시할 개념이나 활동의 순서를 정하는 과정이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "learning-objective",
+        "prerequisite-graph"
+      ],
+      "related": [
+        "curriculum-learning",
+        "knowledge-tracing",
+        "learning-curve"
+      ],
+      "backlinks": [
+        "bayesian-knowledge-tracing",
+        "mastery-learning",
+        "knowledge-tracing"
+      ],
+      "courses": [
+        "ai-foundations"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/curriculum-sequencing/"
+    },
+    {
       "id": "corrigibility",
       "title": "교정 가능성",
       "englishTitle": "Corrigibility",
@@ -3504,10 +3540,13 @@
       ],
       "backlinks": [
         "tool-calling",
+        "unevaluated-properties",
         "streaming-response",
         "rate-limit",
         "http-method",
-        "http-response"
+        "http-response",
+        "json-schema-dialect",
+        "json-schema-annotation"
       ],
       "courses": [
         "prompt-systems",
@@ -4372,7 +4411,10 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "selective-prediction",
+        "conformal-prediction"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/expected-calibration-error/"
@@ -5622,6 +5664,37 @@
       ],
       "reviewedAt": "2026-07-12",
       "url": "/wiki/large-language-model/"
+    },
+    {
+      "id": "paired-bootstrap",
+      "title": "대응 부트스트랩",
+      "englishTitle": "Paired Bootstrap",
+      "aliases": [
+        "Paired Bootstrap",
+        "Paired Bootstrap Resampling",
+        "대응 표본 부트스트랩"
+      ],
+      "summary": "대응 부트스트랩은 같은 평가 사례에 대한 두 시스템의 결과 쌍을 함께 재표집해 지표 차이의 불확실성을 추정하는 방법이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "bootstrap-method",
+        "evaluation"
+      ],
+      "related": [
+        "bootstrap-confidence-interval",
+        "confidence-interval",
+        "statistical-significance"
+      ],
+      "backlinks": [
+        "minimum-detectable-effect"
+      ],
+      "courses": [
+        "llm-evaluation"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/paired-bootstrap/"
     },
     {
       "id": "contrastive-objective",
@@ -7173,6 +7246,35 @@
       "url": "/wiki/dynamic-benchmark/"
     },
     {
+      "id": "dynamic-reference",
+      "title": "동적 스키마 참조",
+      "englishTitle": "Dynamic Schema Reference",
+      "aliases": [
+        "Dynamic Reference",
+        "$dynamicRef",
+        "동적 참조"
+      ],
+      "summary": "동적 스키마 참조는 Draft 2020-12의 $dynamicRef와 $dynamicAnchor를 사용해 참조가 통과한 동적 범위에서 재정의 가능한 스키마 대상을 찾는 기능이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "json-schema-dialect",
+        "uri"
+      ],
+      "related": [
+        "json-schema-vocabulary",
+        "schema-validation",
+        "api-schema-evolution"
+      ],
+      "backlinks": [],
+      "courses": [
+        "prompt-systems"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/dynamic-reference/"
+    },
+    {
       "id": "dropout",
       "title": "드롭아웃",
       "englishTitle": "Dropout",
@@ -7277,7 +7379,10 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "disaggregated-serving",
+        "kv-cache-transfer"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/decode-phase/"
@@ -9256,7 +9361,9 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kv-cache-transfer"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/memory-bandwidth/"
@@ -9957,7 +10064,8 @@
       ],
       "backlinks": [
         "model-selection-policy",
-        "model-compatibility-matrix"
+        "model-compatibility-matrix",
+        "abstention-mechanism"
       ],
       "courses": [],
       "reviewedAt": "2026-07-16",
@@ -11354,6 +11462,7 @@
         "capability-benchmark",
         "multilingual-evaluation-protocol",
         "answer-relevance",
+        "paired-bootstrap",
         "data-annotation",
         "data-augmentation",
         "tool-use-evaluation",
@@ -11382,6 +11491,7 @@
         "cost-monitoring",
         "user-feedback-collection",
         "generation-evaluation",
+        "mastery-learning",
         "sequential-evaluation",
         "shadow-evaluation",
         "slice-based-release-gate",
@@ -11442,6 +11552,7 @@
         "inter-rater-reliability",
         "production-evaluation",
         "prompt-trace",
+        "learning-objective",
         "synthetic-data",
         "behavioral-regression",
         "confusion-matrix",
@@ -12855,6 +12966,35 @@
       "url": "/wiki/fine-tuning/"
     },
     {
+      "id": "unevaluated-properties",
+      "title": "미평가 속성 제어",
+      "englishTitle": "Unevaluated Properties",
+      "aliases": [
+        "Unevaluated Properties",
+        "unevaluatedProperties",
+        "미평가 프로퍼티"
+      ],
+      "summary": "미평가 속성 제어는 JSON Schema의 unevaluatedProperties로 성공한 하위 스키마들이 아직 평가하지 않은 객체 속성에 마지막 제약을 적용하는 기능이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "json-schema-assertion",
+        "json-schema-vocabulary"
+      ],
+      "related": [
+        "json-schema-dialect",
+        "structured-output",
+        "schema-validation"
+      ],
+      "backlinks": [],
+      "courses": [
+        "prompt-systems"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/unevaluated-properties/"
+    },
+    {
       "id": "sensitive-information-disclosure",
       "title": "민감정보 노출",
       "englishTitle": "Sensitive Information Disclosure",
@@ -13281,6 +13421,7 @@
       ],
       "backlinks": [
         "beam-search",
+        "prefix-aware-scheduling",
         "latency",
         "throughput",
         "kv-cache"
@@ -13380,7 +13521,9 @@
         "deep-learning",
         "symbolic-ai"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "bayesian-knowledge-tracing"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/bayesian-network/"
@@ -13410,6 +13553,36 @@
       "url": "/wiki/bayes-theorem/"
     },
     {
+      "id": "bayesian-knowledge-tracing",
+      "title": "베이즈 지식 추적",
+      "englishTitle": "Bayesian Knowledge Tracing",
+      "aliases": [
+        "Bayesian Knowledge Tracing",
+        "BKT",
+        "베이지안 지식 추적"
+      ],
+      "summary": "베이즈 지식 추적은 개념별 숙달 여부를 숨은 상태로 두고 학습·추측·실수 확률을 이용해 응답마다 숙달 확률을 갱신하는 지식 추적 모형이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "knowledge-tracing",
+        "bayesian-network",
+        "hidden-markov-model"
+      ],
+      "related": [
+        "bayesian-learning",
+        "mastery-learning",
+        "curriculum-sequencing"
+      ],
+      "backlinks": [],
+      "courses": [
+        "ai-foundations"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/bayesian-knowledge-tracing/"
+    },
+    {
       "id": "bayesian-learning",
       "title": "베이즈 학습",
       "englishTitle": "Bayesian Learning",
@@ -13428,7 +13601,10 @@
         "deep-learning",
         "symbolic-ai"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "bayesian-knowledge-tracing",
+        "knowledge-tracing"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/bayesian-learning/"
@@ -14494,7 +14670,9 @@
         "tensor",
         "cosine-similarity"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "paired-bootstrap"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/bootstrap-method/"
@@ -14518,7 +14696,9 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "paired-bootstrap"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/bootstrap-confidence-interval/"
@@ -14566,7 +14746,9 @@
         "deep-learning",
         "symbolic-ai"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "selective-prediction"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/classification/"
@@ -14618,6 +14800,35 @@
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/disentangled-representation/"
+    },
+    {
+      "id": "disaggregated-serving",
+      "title": "분리형 서빙",
+      "englishTitle": "Disaggregated Serving",
+      "aliases": [
+        "Disaggregated Serving",
+        "프리필·디코드 분리 서빙"
+      ],
+      "summary": "분리형 서빙은 LLM 추론의 프리필과 디코드 단계 또는 캐시 저장 계층을 서로 다른 자원 풀에 배치해 독립적으로 확장하는 시스템 구조다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "prefill-phase",
+        "decode-phase",
+        "kv-cache-transfer"
+      ],
+      "related": [
+        "prefill-decode-disaggregation",
+        "throughput",
+        "service-level-objective"
+      ],
+      "backlinks": [],
+      "courses": [
+        "llmops-production"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/disaggregated-serving/"
     },
     {
       "id": "variance",
@@ -14734,7 +14945,9 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "abstention-mechanism"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/uncertainty-communication/"
@@ -14758,7 +14971,10 @@
         "deep-learning",
         "symbolic-ai"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "selective-prediction",
+        "conformal-prediction"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/uncertainty-quantification/"
@@ -16569,7 +16785,9 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "disaggregated-serving"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/service-level-objective/"
@@ -16671,6 +16889,36 @@
       "url": "/wiki/line-search/"
     },
     {
+      "id": "prerequisite-graph",
+      "title": "선수 개념 그래프",
+      "englishTitle": "Prerequisite Graph",
+      "aliases": [
+        "Prerequisite Graph",
+        "선수 지식 그래프"
+      ],
+      "summary": "선수 개념 그래프는 어떤 개념을 학습하기 전에 필요한 개념을 방향 간선으로 표현한 지식 구조다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "learning-objective",
+        "knowledge-graph"
+      ],
+      "related": [
+        "ontology",
+        "curriculum-learning",
+        "knowledge-tracing"
+      ],
+      "backlinks": [
+        "curriculum-sequencing"
+      ],
+      "courses": [
+        "ai-foundations"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/prerequisite-graph/"
+    },
+    {
       "id": "selection-bias",
       "title": "선택 편향",
       "englishTitle": "Selection Bias",
@@ -16693,6 +16941,39 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/selection-bias/"
+    },
+    {
+      "id": "selective-prediction",
+      "title": "선택적 예측",
+      "englishTitle": "Selective Prediction",
+      "aliases": [
+        "Selective Prediction",
+        "Selective Classification",
+        "선택적 분류"
+      ],
+      "summary": "선택적 예측은 모델이 모든 입력에 답하지 않고 신뢰 기준을 만족하는 일부 입력에만 예측을 내도록 하는 의사결정 방식이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "classification",
+        "uncertainty-quantification"
+      ],
+      "related": [
+        "abstention-mechanism",
+        "risk-coverage-curve",
+        "expected-calibration-error"
+      ],
+      "backlinks": [
+        "abstention-mechanism",
+        "risk-coverage-curve",
+        "conformal-prediction"
+      ],
+      "courses": [
+        "llm-evaluation"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/selective-prediction/"
     },
     {
       "id": "linear-transformation",
@@ -17531,6 +17812,36 @@
       "url": "/wiki/numerical-precision/"
     },
     {
+      "id": "mastery-learning",
+      "title": "숙달 학습",
+      "englishTitle": "Mastery Learning",
+      "aliases": [
+        "Mastery Learning",
+        "완전 학습"
+      ],
+      "summary": "숙달 학습은 정해진 시간에 진도를 맞추기보다 핵심 선수 능력을 충분히 달성한 뒤 다음 단계로 이동하도록 하는 학습 설계 원리다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "learning-objective"
+      ],
+      "related": [
+        "curriculum-sequencing",
+        "knowledge-tracing",
+        "evaluation"
+      ],
+      "backlinks": [
+        "bayesian-knowledge-tracing",
+        "knowledge-tracing"
+      ],
+      "courses": [
+        "ai-foundations"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/mastery-learning/"
+    },
+    {
       "id": "learning-to-rank",
       "title": "순위 학습",
       "englishTitle": "Learning to Rank",
@@ -17822,7 +18133,13 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "dynamic-reference",
+        "unevaluated-properties",
+        "json-schema-assertion",
+        "json-schema-dialect",
+        "json-schema-vocabulary"
+      ],
       "courses": [
         "prompt-systems"
       ],
@@ -19004,7 +19321,11 @@
         "tensor",
         "cosine-similarity"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "paired-bootstrap",
+        "minimum-detectable-effect",
+        "conformal-prediction"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/confidence-interval/"
@@ -22884,6 +23205,37 @@
       "url": "/wiki/prediction/"
     },
     {
+      "id": "abstention-mechanism",
+      "title": "예측 보류 메커니즘",
+      "englishTitle": "Abstention Mechanism",
+      "aliases": [
+        "Abstention Mechanism",
+        "Reject Option",
+        "거절 선택지"
+      ],
+      "summary": "예측 보류 메커니즘은 불확실하거나 위험한 입력에 대해 모델이 답을 확정하지 않고 사람 검토나 다른 처리 경로로 넘기게 하는 규칙이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "selective-prediction"
+      ],
+      "related": [
+        "human-in-the-loop",
+        "uncertainty-communication",
+        "model-fallback-chain"
+      ],
+      "backlinks": [
+        "selective-prediction",
+        "risk-coverage-curve"
+      ],
+      "courses": [
+        "llm-evaluation"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/abstention-mechanism/"
+    },
+    {
       "id": "audio-model",
       "title": "오디오 모델",
       "englishTitle": "Audio Model",
@@ -23421,7 +23773,9 @@
         "rag",
         "vector-database"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "prerequisite-graph"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/ontology/"
@@ -23992,6 +24346,37 @@
       "url": "/wiki/position-id/"
     },
     {
+      "id": "risk-coverage-curve",
+      "title": "위험도-포괄률 곡선",
+      "englishTitle": "Risk-Coverage Curve",
+      "aliases": [
+        "Risk-Coverage Curve",
+        "RC Curve",
+        "위험-커버리지 곡선"
+      ],
+      "summary": "위험도-포괄률 곡선은 선택적 예측의 수락 임곗값을 바꾸며 자동 처리 비율과 선택된 표본의 오류를 함께 나타내는 평가 곡선이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "selective-prediction",
+        "evaluation-uncertainty"
+      ],
+      "related": [
+        "roc-curve",
+        "precision-recall-curve",
+        "abstention-mechanism"
+      ],
+      "backlinks": [
+        "selective-prediction"
+      ],
+      "courses": [
+        "llm-evaluation"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/risk-coverage-curve/"
+    },
+    {
       "id": "unigram-language-model-tokenizer",
       "title": "유니그램 언어 모델 토크나이저",
       "englishTitle": "Unigram Language Model Tokenizer",
@@ -24154,7 +24539,10 @@
         "deep-learning",
         "symbolic-ai"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "bayesian-knowledge-tracing",
+        "knowledge-tracing"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/hidden-markov-model/"
@@ -24389,7 +24777,9 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "json-schema-assertion"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/response-validation/"
@@ -25226,6 +25616,7 @@
         "indirect-prompt-injection",
         "multi-agent-system",
         "mcp",
+        "abstention-mechanism",
         "workflow-orchestration",
         "webhook",
         "react-agent"
@@ -25439,6 +25830,7 @@
         "bias-variance-tradeoff",
         "representation-learning",
         "few-shot-learning",
+        "learning-objective",
         "train-validation-test-split",
         "probabilistic-graphical-model",
         "probabilistic-model",
@@ -27529,6 +27921,34 @@
       "url": "/wiki/graceful-degradation/"
     },
     {
+      "id": "prefix-aware-scheduling",
+      "title": "접두부 인식 스케줄링",
+      "englishTitle": "Prefix-Aware Scheduling",
+      "aliases": [
+        "Prefix-Aware Scheduling",
+        "접두부 기반 스케줄링"
+      ],
+      "summary": "접두부 인식 스케줄링은 요청 간 공유 가능한 프롬프트 접두부와 KV 캐시 위치를 고려해 실행 장치와 순서를 정하는 서빙 정책이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "kv-cache-reuse",
+        "cache-hit-rate"
+      ],
+      "related": [
+        "llm-routing-gateway",
+        "batching",
+        "cache-eviction"
+      ],
+      "backlinks": [],
+      "courses": [
+        "llmops-production"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/prefix-aware-scheduling/"
+    },
+    {
       "id": "normalization-placement",
       "title": "정규화 배치",
       "englishTitle": "Normalization Placement",
@@ -27677,7 +28097,9 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "risk-coverage-curve"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/precision-recall-curve/"
@@ -29212,7 +29634,10 @@
         "rag",
         "vector-database"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "prerequisite-graph",
+        "learning-objective"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/knowledge-graph/"
@@ -29295,6 +29720,40 @@
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/knowledge-distillation/"
+    },
+    {
+      "id": "knowledge-tracing",
+      "title": "지식 추적",
+      "englishTitle": "Knowledge Tracing",
+      "aliases": [
+        "Knowledge Tracing",
+        "KT",
+        "학습자 지식 상태 추적"
+      ],
+      "summary": "지식 추적은 문제 풀이와 학습 활동의 시간 순서로부터 학습자의 잠재 숙달 상태를 추정하고 다음 수행을 예측하는 계산 과제다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "mastery-learning",
+        "probability"
+      ],
+      "related": [
+        "bayesian-learning",
+        "hidden-markov-model",
+        "curriculum-sequencing"
+      ],
+      "backlinks": [
+        "curriculum-sequencing",
+        "bayesian-knowledge-tracing",
+        "prerequisite-graph",
+        "mastery-learning"
+      ],
+      "courses": [
+        "ai-foundations"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/knowledge-tracing/"
     },
     {
       "id": "locality-sensitive-hashing",
@@ -29965,6 +30424,7 @@
       ],
       "backlinks": [
         "batching",
+        "disaggregated-serving",
         "latency"
       ],
       "courses": [
@@ -30330,6 +30790,35 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/maximum-likelihood-estimation/"
+    },
+    {
+      "id": "minimum-detectable-effect",
+      "title": "최소 검출 가능 효과",
+      "englishTitle": "Minimum Detectable Effect",
+      "aliases": [
+        "Minimum Detectable Effect",
+        "MDE",
+        "최소 탐지 가능 효과"
+      ],
+      "summary": "최소 검출 가능 효과는 정한 유의수준, 검정력, 표본 크기와 변동성에서 실험이 지정된 확률로 검출하도록 설계된 가장 작은 효과 크기다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "hypothesis-testing",
+        "confidence-interval"
+      ],
+      "related": [
+        "statistical-significance",
+        "evaluation-budget-allocation",
+        "paired-bootstrap"
+      ],
+      "backlinks": [],
+      "courses": [
+        "llm-evaluation"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/minimum-detectable-effect/"
     },
     {
       "id": "least-privilege",
@@ -31526,7 +32015,10 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kv-cache-tiering",
+        "kv-cache-transfer"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/cache-offloading/"
@@ -31550,7 +32042,10 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "prefix-aware-scheduling",
+        "kv-cache-reuse"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/cache-hit-rate/"
@@ -31574,7 +32069,11 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "prefix-aware-scheduling",
+        "kv-cache-tiering",
+        "kv-cache-block"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/cache-eviction/"
@@ -31718,7 +32217,11 @@
         "deep-learning",
         "symbolic-ai"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "curriculum-sequencing",
+        "prerequisite-graph",
+        "learning-objective"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/curriculum-learning/"
@@ -31966,10 +32469,41 @@
         "prompt",
         "context-window"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kv-cache-reuse"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/context-caching/"
+    },
+    {
+      "id": "conformal-prediction",
+      "title": "컨포멀 예측",
+      "englishTitle": "Conformal Prediction",
+      "aliases": [
+        "Conformal Prediction",
+        "등각 예측",
+        "적합성 예측"
+      ],
+      "summary": "컨포멀 예측은 교환 가능성 가정 아래 보정 데이터의 비적합도 점수를 사용해 유한 표본 포괄률을 목표로 하는 예측 집합이나 구간을 만드는 방법이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "probability",
+        "uncertainty-quantification"
+      ],
+      "related": [
+        "confidence-interval",
+        "expected-calibration-error",
+        "selective-prediction"
+      ],
+      "backlinks": [],
+      "courses": [
+        "llm-evaluation"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/conformal-prediction/"
     },
     {
       "id": "computer-vision",
@@ -33783,7 +34317,10 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "paired-bootstrap",
+        "minimum-detectable-effect"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/statistical-significance/"
@@ -33951,7 +34488,9 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "dynamic-reference"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/uri/"
@@ -34914,7 +35453,9 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kv-cache-block"
+      ],
       "courses": [
         "llmops-production"
       ],
@@ -35126,7 +35667,9 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "risk-coverage-curve"
+      ],
       "courses": [
         "llm-evaluation"
       ],
@@ -35211,6 +35754,7 @@
       ],
       "backlinks": [
         "slice-based-release-gate",
+        "minimum-detectable-effect",
         "judge-calibration-curve"
       ],
       "courses": [
@@ -36516,7 +37060,10 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kv-cache-block",
+        "kv-cache-reuse"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/prefix-caching/"
@@ -36564,7 +37111,10 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "disaggregated-serving",
+        "kv-cache-transfer"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/prefill-phase/"
@@ -36590,6 +37140,7 @@
         "continuous-batching-fairness"
       ],
       "backlinks": [
+        "disaggregated-serving",
         "continuous-batching-fairness",
         "llm-cost-attribution"
       ],
@@ -36896,7 +37447,9 @@
         "activation-function",
         "weight"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "curriculum-sequencing"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/learning-curve/"
@@ -37190,6 +37743,37 @@
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/training-corpus/"
+    },
+    {
+      "id": "learning-objective",
+      "title": "학습 목표",
+      "englishTitle": "Learning Objective",
+      "aliases": [
+        "Learning Objective",
+        "학습 성과 목표"
+      ],
+      "summary": "학습 목표는 학습자가 과정이나 활동을 마친 뒤 설명하거나 수행할 수 있어야 하는 관찰 가능한 지식·기술·판단을 명시한 문장이다.",
+      "categories": [
+        "foundations"
+      ],
+      "prerequisites": [
+        "artificial-intelligence"
+      ],
+      "related": [
+        "knowledge-graph",
+        "evaluation",
+        "curriculum-learning"
+      ],
+      "backlinks": [
+        "curriculum-sequencing",
+        "prerequisite-graph",
+        "mastery-learning"
+      ],
+      "courses": [
+        "ai-foundations"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/learning-objective/"
     },
     {
       "id": "training-cost",
@@ -38054,6 +38638,8 @@
         "softmax",
         "language-model",
         "conditional-probability",
+        "knowledge-tracing",
+        "conformal-prediction",
         "tensor",
         "matrix",
         "probability-distribution"
@@ -40747,8 +41333,10 @@
         "api-backward-compatibility"
       ],
       "backlinks": [
+        "dynamic-reference",
         "api-version-negotiation",
-        "api-backward-compatibility"
+        "api-backward-compatibility",
+        "json-schema-dialect"
       ],
       "courses": [],
       "reviewedAt": "2026-07-16",
@@ -42726,12 +43314,140 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "json-schema-dialect"
+      ],
       "courses": [
         "prompt-systems"
       ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/json-schema/"
+    },
+    {
+      "id": "json-schema-assertion",
+      "title": "JSON 스키마 단언",
+      "englishTitle": "JSON Schema Assertion",
+      "aliases": [
+        "JSON Schema Assertion",
+        "검증 단언"
+      ],
+      "summary": "JSON 스키마 단언은 인스턴스가 자료형, 범위, 패턴과 필수 속성 같은 제약을 만족하는지 참 또는 거짓으로 판정하는 키워드 평가다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "json-schema-vocabulary"
+      ],
+      "related": [
+        "schema-validation",
+        "json-schema-annotation",
+        "response-validation"
+      ],
+      "backlinks": [
+        "unevaluated-properties",
+        "json-schema-vocabulary",
+        "json-schema-annotation"
+      ],
+      "courses": [
+        "prompt-systems"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/json-schema-assertion/"
+    },
+    {
+      "id": "json-schema-dialect",
+      "title": "JSON 스키마 방언",
+      "englishTitle": "JSON Schema Dialect",
+      "aliases": [
+        "JSON Schema Dialect",
+        "스키마 다이얼렉트"
+      ],
+      "summary": "JSON 스키마 방언은 스키마를 평가할 때 사용할 키워드 집합과 의미를 하나의 식별자로 묶은 JSON Schema 언어 버전 또는 확장 구성이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "json-schema",
+        "schema-validation"
+      ],
+      "related": [
+        "json-schema-vocabulary",
+        "api-schema-evolution",
+        "structured-output"
+      ],
+      "backlinks": [
+        "dynamic-reference",
+        "unevaluated-properties",
+        "json-schema-vocabulary"
+      ],
+      "courses": [
+        "prompt-systems"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/json-schema-dialect/"
+    },
+    {
+      "id": "json-schema-vocabulary",
+      "title": "JSON 스키마 어휘",
+      "englishTitle": "JSON Schema Vocabulary",
+      "aliases": [
+        "JSON Schema Vocabulary",
+        "스키마 보캐뷸러리"
+      ],
+      "summary": "JSON 스키마 어휘는 식별 가능한 목적 아래 함께 정의된 JSON Schema 키워드와 그 처리 의미의 집합이다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "json-schema-dialect"
+      ],
+      "related": [
+        "json-schema-annotation",
+        "json-schema-assertion",
+        "schema-validation"
+      ],
+      "backlinks": [
+        "dynamic-reference",
+        "unevaluated-properties",
+        "json-schema-assertion",
+        "json-schema-dialect",
+        "json-schema-annotation"
+      ],
+      "courses": [
+        "prompt-systems"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/json-schema-vocabulary/"
+    },
+    {
+      "id": "json-schema-annotation",
+      "title": "JSON 스키마 주석",
+      "englishTitle": "JSON Schema Annotation",
+      "aliases": [
+        "JSON Schema Annotation",
+        "스키마 메타데이터"
+      ],
+      "summary": "JSON 스키마 주석은 인스턴스의 유효성을 직접 바꾸지 않고 제목, 설명, 기본값, 예시와 사용 상태 같은 정보를 수집하는 키워드 결과다.",
+      "categories": [
+        "api"
+      ],
+      "prerequisites": [
+        "json-schema-vocabulary"
+      ],
+      "related": [
+        "json-schema-assertion",
+        "structured-output",
+        "openapi-specification"
+      ],
+      "backlinks": [
+        "json-schema-assertion",
+        "json-schema-vocabulary"
+      ],
+      "courses": [
+        "prompt-systems"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/json-schema-annotation/"
     },
     {
       "id": "json-web-token",
@@ -42876,7 +43592,9 @@
         "greedy-decoding",
         "batching",
         "beam-search",
-        "latency"
+        "latency",
+        "kv-cache-block",
+        "kv-cache-transfer"
       ],
       "courses": [
         "llmops-production"
@@ -42906,11 +43624,70 @@
       ],
       "backlinks": [
         "kv-cache-admission",
-        "kv-cache-capacity-planning"
+        "kv-cache-capacity-planning",
+        "kv-cache-reuse"
       ],
       "courses": [],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/kv-cache-isolation/"
+    },
+    {
+      "id": "kv-cache-tiering",
+      "title": "KV 캐시 계층화",
+      "englishTitle": "KV Cache Tiering",
+      "aliases": [
+        "KV Cache Tiering",
+        "계층형 KV 캐시"
+      ],
+      "summary": "KV 캐시 계층화는 접근 빈도와 재사용 가능성에 따라 KV 블록을 GPU, CPU 메모리, 로컬 저장장치와 원격 저장소에 나누어 두는 관리 방식이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "kv-cache-transfer",
+        "cache-offloading"
+      ],
+      "related": [
+        "accelerator-memory-hierarchy",
+        "cache-eviction",
+        "kv-cache-quantization"
+      ],
+      "backlinks": [],
+      "courses": [
+        "llmops-production"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/kv-cache-tiering/"
+    },
+    {
+      "id": "kv-cache-block",
+      "title": "KV 캐시 블록",
+      "englishTitle": "KV Cache Block",
+      "aliases": [
+        "KV Cache Block",
+        "KV 블록"
+      ],
+      "summary": "KV 캐시 블록은 일정 수의 토큰에 해당하는 어텐션 키·값 텐서를 묶어 할당, 참조, 공유와 퇴출의 단위로 관리하는 저장 구조다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "kv-cache",
+        "paged-kv-cache"
+      ],
+      "related": [
+        "cache-eviction",
+        "prefix-caching",
+        "kv-cache-capacity-planning"
+      ],
+      "backlinks": [
+        "kv-cache-reuse"
+      ],
+      "courses": [
+        "llmops-production"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/kv-cache-block/"
     },
     {
       "id": "kv-cache-admission",
@@ -42959,7 +43736,9 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kv-cache-tiering"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/kv-cache-quantization/"
@@ -42986,11 +43765,73 @@
       ],
       "backlinks": [
         "token-scheduler",
-        "kv-cache-isolation"
+        "kv-cache-isolation",
+        "kv-cache-block"
       ],
       "courses": [],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/kv-cache-capacity-planning/"
+    },
+    {
+      "id": "kv-cache-reuse",
+      "title": "KV 캐시 재사용",
+      "englishTitle": "KV Cache Reuse",
+      "aliases": [
+        "KV Cache Reuse",
+        "KV 재사용"
+      ],
+      "summary": "KV 캐시 재사용은 이전에 계산한 접두부나 문맥 구간의 키·값 상태를 호환되는 새 요청에 연결해 프리필 계산을 생략하는 최적화다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "kv-cache-block",
+        "prefix-caching"
+      ],
+      "related": [
+        "cache-hit-rate",
+        "context-caching",
+        "kv-cache-isolation"
+      ],
+      "backlinks": [
+        "prefix-aware-scheduling"
+      ],
+      "courses": [
+        "llmops-production"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/kv-cache-reuse/"
+    },
+    {
+      "id": "kv-cache-transfer",
+      "title": "KV 캐시 전송",
+      "englishTitle": "KV Cache Transfer",
+      "aliases": [
+        "KV Cache Transfer",
+        "KV 전송"
+      ],
+      "summary": "KV 캐시 전송은 한 작업자나 저장 계층에서 계산된 어텐션 키·값 텐서를 다른 디코드 작업자나 계층으로 옮기는 데이터 이동 과정이다.",
+      "categories": [
+        "inference"
+      ],
+      "prerequisites": [
+        "kv-cache",
+        "cache-offloading"
+      ],
+      "related": [
+        "prefill-phase",
+        "decode-phase",
+        "memory-bandwidth"
+      ],
+      "backlinks": [
+        "disaggregated-serving",
+        "kv-cache-tiering"
+      ],
+      "courses": [
+        "llmops-production"
+      ],
+      "reviewedAt": "2026-08-01",
+      "url": "/wiki/kv-cache-transfer/"
     },
     {
       "id": "l1-regularization",
@@ -43135,6 +43976,7 @@
         "llm-request-normalization"
       ],
       "backlinks": [
+        "prefix-aware-scheduling",
         "llm-request-normalization",
         "llm-client-conformance"
       ],
@@ -44534,7 +45376,9 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "json-schema-annotation"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/openapi-specification/"
@@ -45254,7 +46098,9 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "risk-coverage-curve"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/roc-curve/"
@@ -47286,6 +48132,48 @@
           "url": "/wiki/json-schema/"
         },
         {
+          "ref": "json-schema-dialect",
+          "required": true,
+          "reason": "JSON Schema의 방언·어휘·평가 의미를 구조화 출력 계약에 적용하는 필수 설계 문서다.",
+          "title": "JSON 스키마 방언",
+          "url": "/wiki/json-schema-dialect/"
+        },
+        {
+          "ref": "json-schema-vocabulary",
+          "required": true,
+          "reason": "JSON Schema의 방언·어휘·평가 의미를 구조화 출력 계약에 적용하는 필수 설계 문서다.",
+          "title": "JSON 스키마 어휘",
+          "url": "/wiki/json-schema-vocabulary/"
+        },
+        {
+          "ref": "json-schema-annotation",
+          "required": true,
+          "reason": "JSON Schema의 방언·어휘·평가 의미를 구조화 출력 계약에 적용하는 필수 설계 문서다.",
+          "title": "JSON 스키마 주석",
+          "url": "/wiki/json-schema-annotation/"
+        },
+        {
+          "ref": "json-schema-assertion",
+          "required": true,
+          "reason": "JSON Schema의 방언·어휘·평가 의미를 구조화 출력 계약에 적용하는 필수 설계 문서다.",
+          "title": "JSON 스키마 단언",
+          "url": "/wiki/json-schema-assertion/"
+        },
+        {
+          "ref": "dynamic-reference",
+          "required": true,
+          "reason": "JSON Schema의 방언·어휘·평가 의미를 구조화 출력 계약에 적용하는 필수 설계 문서다.",
+          "title": "동적 스키마 참조",
+          "url": "/wiki/dynamic-reference/"
+        },
+        {
+          "ref": "unevaluated-properties",
+          "required": true,
+          "reason": "JSON Schema의 방언·어휘·평가 의미를 구조화 출력 계약에 적용하는 필수 설계 문서다.",
+          "title": "미평가 속성 제어",
+          "url": "/wiki/unevaluated-properties/"
+        },
+        {
           "ref": "schema-validation",
           "required": true,
           "reason": "스키마 검증 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다.",
@@ -47454,6 +48342,48 @@
           "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다.",
           "title": "프롬프트",
           "url": "/wiki/prompt/"
+        },
+        {
+          "ref": "learning-objective",
+          "required": false,
+          "reason": "맞춤 학습 경로가 목표·선수 관계·숙달 상태를 어떻게 사용하는지 확인하는 선택 심화 문서다.",
+          "title": "학습 목표",
+          "url": "/wiki/learning-objective/"
+        },
+        {
+          "ref": "prerequisite-graph",
+          "required": false,
+          "reason": "맞춤 학습 경로가 목표·선수 관계·숙달 상태를 어떻게 사용하는지 확인하는 선택 심화 문서다.",
+          "title": "선수 개념 그래프",
+          "url": "/wiki/prerequisite-graph/"
+        },
+        {
+          "ref": "curriculum-sequencing",
+          "required": false,
+          "reason": "맞춤 학습 경로가 목표·선수 관계·숙달 상태를 어떻게 사용하는지 확인하는 선택 심화 문서다.",
+          "title": "교육과정 순서화",
+          "url": "/wiki/curriculum-sequencing/"
+        },
+        {
+          "ref": "mastery-learning",
+          "required": false,
+          "reason": "맞춤 학습 경로가 목표·선수 관계·숙달 상태를 어떻게 사용하는지 확인하는 선택 심화 문서다.",
+          "title": "숙달 학습",
+          "url": "/wiki/mastery-learning/"
+        },
+        {
+          "ref": "knowledge-tracing",
+          "required": false,
+          "reason": "맞춤 학습 경로가 목표·선수 관계·숙달 상태를 어떻게 사용하는지 확인하는 선택 심화 문서다.",
+          "title": "지식 추적",
+          "url": "/wiki/knowledge-tracing/"
+        },
+        {
+          "ref": "bayesian-knowledge-tracing",
+          "required": false,
+          "reason": "맞춤 학습 경로가 목표·선수 관계·숙달 상태를 어떻게 사용하는지 확인하는 선택 심화 문서다.",
+          "title": "베이즈 지식 추적",
+          "url": "/wiki/bayesian-knowledge-tracing/"
         },
         {
           "ref": "hallucination",
@@ -48075,6 +49005,48 @@
           "url": "/wiki/evaluation-uncertainty/"
         },
         {
+          "ref": "selective-prediction",
+          "required": false,
+          "reason": "평가 불확실성과 자동 판정 범위를 정량적으로 해석하기 위한 선택 심화 문서다.",
+          "title": "선택적 예측",
+          "url": "/wiki/selective-prediction/"
+        },
+        {
+          "ref": "abstention-mechanism",
+          "required": false,
+          "reason": "평가 불확실성과 자동 판정 범위를 정량적으로 해석하기 위한 선택 심화 문서다.",
+          "title": "예측 보류 메커니즘",
+          "url": "/wiki/abstention-mechanism/"
+        },
+        {
+          "ref": "risk-coverage-curve",
+          "required": false,
+          "reason": "평가 불확실성과 자동 판정 범위를 정량적으로 해석하기 위한 선택 심화 문서다.",
+          "title": "위험도-포괄률 곡선",
+          "url": "/wiki/risk-coverage-curve/"
+        },
+        {
+          "ref": "conformal-prediction",
+          "required": false,
+          "reason": "평가 불확실성과 자동 판정 범위를 정량적으로 해석하기 위한 선택 심화 문서다.",
+          "title": "컨포멀 예측",
+          "url": "/wiki/conformal-prediction/"
+        },
+        {
+          "ref": "paired-bootstrap",
+          "required": false,
+          "reason": "평가 불확실성과 자동 판정 범위를 정량적으로 해석하기 위한 선택 심화 문서다.",
+          "title": "대응 부트스트랩",
+          "url": "/wiki/paired-bootstrap/"
+        },
+        {
+          "ref": "minimum-detectable-effect",
+          "required": false,
+          "reason": "평가 불확실성과 자동 판정 범위를 정량적으로 해석하기 위한 선택 심화 문서다.",
+          "title": "최소 검출 가능 효과",
+          "url": "/wiki/minimum-detectable-effect/"
+        },
+        {
           "ref": "reference-based-evaluation",
           "required": true,
           "reason": "참조 기반 평가 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다.",
@@ -48285,6 +49257,48 @@
           "reason": "프롬프트 캐싱 문서를 통해 이 단계의 판단 기준과 다음 주제의 연결을 정리한다.",
           "title": "프롬프트 캐싱",
           "url": "/wiki/prompt-caching/"
+        },
+        {
+          "ref": "kv-cache-block",
+          "required": true,
+          "reason": "KV 캐시의 할당·재사용·전송과 분산 서빙을 용량 및 지연 계획에 연결하는 필수 운영 문서다.",
+          "title": "KV 캐시 블록",
+          "url": "/wiki/kv-cache-block/"
+        },
+        {
+          "ref": "kv-cache-reuse",
+          "required": true,
+          "reason": "KV 캐시의 할당·재사용·전송과 분산 서빙을 용량 및 지연 계획에 연결하는 필수 운영 문서다.",
+          "title": "KV 캐시 재사용",
+          "url": "/wiki/kv-cache-reuse/"
+        },
+        {
+          "ref": "prefix-aware-scheduling",
+          "required": true,
+          "reason": "KV 캐시의 할당·재사용·전송과 분산 서빙을 용량 및 지연 계획에 연결하는 필수 운영 문서다.",
+          "title": "접두부 인식 스케줄링",
+          "url": "/wiki/prefix-aware-scheduling/"
+        },
+        {
+          "ref": "kv-cache-transfer",
+          "required": true,
+          "reason": "KV 캐시의 할당·재사용·전송과 분산 서빙을 용량 및 지연 계획에 연결하는 필수 운영 문서다.",
+          "title": "KV 캐시 전송",
+          "url": "/wiki/kv-cache-transfer/"
+        },
+        {
+          "ref": "disaggregated-serving",
+          "required": true,
+          "reason": "KV 캐시의 할당·재사용·전송과 분산 서빙을 용량 및 지연 계획에 연결하는 필수 운영 문서다.",
+          "title": "분리형 서빙",
+          "url": "/wiki/disaggregated-serving/"
+        },
+        {
+          "ref": "kv-cache-tiering",
+          "required": true,
+          "reason": "KV 캐시의 할당·재사용·전송과 분산 서빙을 용량 및 지연 계획에 연결하는 필수 운영 문서다.",
+          "title": "KV 캐시 계층화",
+          "url": "/wiki/kv-cache-tiering/"
         },
         {
           "ref": "inference-load-balancing",

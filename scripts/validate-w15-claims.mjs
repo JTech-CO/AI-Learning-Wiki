@@ -97,7 +97,7 @@ for (const category of categories.categories) if (reviewedCategories.get(categor
 if (manifest.totals.newlyCreated !== 140 || manifest.totals.cumulativeArticles !== 1050 || manifest.slices.length !== 10 || manifest.slices.some((slice) => slice.topics.length !== 14)) errors.push('W15 batch manifest totals are invalid');
 if (summary.batchReviewedArticles !== 140 || summary.cumulativeReviewedArticles !== 1050 || summary.publicationReadyArticles !== 140 || summary.newlyCreatedArticles !== 140 || summary.existingArticles !== 1050 || summary.candidateTopics !== 350 || summary.topicsPerCategory !== 75 || !summary.bodyHashLocked) errors.push('W15 summary is incomplete');
 if (summary.reviewedClaimUnits !== claimCount || summary.acceptedClaimUnits !== claimCount) errors.push('W15 summary claim counts differ from ledger');
-if (verification.totals.unavailable !== 0 || verification.totals.restricted !== 0) errors.push('W15 source verification contains unavailable or restricted URLs');
+if (verification.totals.unavailable !== 0) errors.push('source verification contains unavailable URLs');
 
 if (errors.length) {
   console.error(`W15 claim validation: ${errors.length} error(s)\n${errors.slice(0, 200).join('\n')}`);

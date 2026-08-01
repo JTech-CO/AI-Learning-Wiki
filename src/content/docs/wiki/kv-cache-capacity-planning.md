@@ -118,6 +118,7 @@ KV 캐시 용량 계획을 적용할 수 있는 대표 상황은 피크 트래�
 
 - [토큰 스케줄러](/wiki/token-scheduler/)
 - [KV 캐시 격리](/wiki/kv-cache-isolation/)
+- [KV 캐시 블록](/wiki/kv-cache-block/)
 
 ### 이 문서를 포함하는 코스
 

@@ -28,9 +28,13 @@ for (const plan of newPlans) {
   const course = readJson(`content-model/paths/${plan.id}.path.json`);
   assert(validate(course), `${plan.id}: ${ajv.errorsText(validate.errors)}`);
   assert(course.title === plan.title.ko && course.audience === plan.audience, `${plan.id}: plan metadata drift`);
-  assert(course.steps.length === 24 && course.steps.every((step) => step.required), `${plan.id}: expected 24 ordered required steps`);
   const expectedRefs = plan.phases.flatMap((phase) => phase.steps).map((step) => step.refType === 'existing' ? step.articleId : step.candidateId);
-  assert(JSON.stringify(course.steps.map((step) => step.ref)) === JSON.stringify(expectedRefs), `${plan.id}: recommendation order changed`);
+  const currentRefs = course.steps.map((step) => step.ref);
+  const baselinePositions = expectedRefs.map((ref) => currentRefs.indexOf(ref));
+  assert(course.steps.length >= 24, `${plan.id}: W47 baseline steps were removed`);
+  assert(baselinePositions.every((position) => position >= 0), `${plan.id}: W47 baseline reference missing`);
+  assert(baselinePositions.every((position, index) => index === 0 || position > baselinePositions[index - 1]), `${plan.id}: W47 recommendation order changed`);
+  assert(expectedRefs.every((ref) => course.steps.find((step) => step.ref === ref)?.required), `${plan.id}: W47 required step became optional`);
   assert(course.steps.every((step) => articleIds.has(step.ref)), `${plan.id}: unresolved article reference`);
   assert(!/Guide|가이드|레슨|lesson/i.test(JSON.stringify(course)), `${plan.id}: guide-style wording remains`);
   w46Refs += course.steps.filter((step) => w46Ids.has(step.ref)).length;

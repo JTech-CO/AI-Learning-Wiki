@@ -128,7 +128,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [위험도-포괄률 곡선](/wiki/risk-coverage-curve/)
 
 ### 이 문서를 포함하는 코스
 
@@ -151,4 +151,4 @@ _해당 문서가 없다._
 
 ### 코스에서 계속 읽기
 
-- **LLM 평가와 관측성:** [다음 문서 — 참조 기반 평가](/wiki/reference-based-evaluation/)
+- **LLM 평가와 관측성:** [다음 문서 — 선택적 예측](/wiki/selective-prediction/)

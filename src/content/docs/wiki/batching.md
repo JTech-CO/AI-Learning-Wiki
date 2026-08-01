@@ -143,6 +143,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 이 문서를 가리키는 문서
 
 - [빔 탐색](/wiki/beam-search/)
+- [접두부 인식 스케줄링](/wiki/prefix-aware-scheduling/)
 - [지연 시간](/wiki/latency/)
 - [처리량](/wiki/throughput/)
 - [KV 캐시](/wiki/kv-cache/)

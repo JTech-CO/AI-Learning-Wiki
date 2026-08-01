@@ -30,6 +30,7 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <li data-article-id="synchronous-client"><a href="/wiki/synchronous-client/">동기 클라이언트</a><span class="wiki-index-summary">동기 클라이언트는 원격 요청이 완료될 때까지 호출 스레드나 작업의 진행을 기다리게 하는 API 사용 방식이다.</span></li>
 <li data-article-id="synchronous-api-request"><a href="/wiki/synchronous-api-request/">동기 API 요청</a><span class="wiki-index-summary">동기 API 요청은 클라이언트가 요청을 보낸 연결에서 처리가 끝날 때까지 기다린 뒤 최종 응답을 받는 상호작용 방식이다.</span></li>
 <li data-article-id="concurrency-limit"><a href="/wiki/concurrency-limit/">동시성 한도</a><span class="wiki-index-summary">동시성 한도는 한 주체나 서비스에서 같은 시점에 실행될 수 있는 요청·작업 수를 제한하는 운영 정책이다.</span></li>
+<li data-article-id="dynamic-reference"><a href="/wiki/dynamic-reference/">동적 스키마 참조</a><span class="wiki-index-summary">동적 스키마 참조는 Draft 2020-12의 $dynamicRef와 $dynamicAnchor를 사용해 참조가 통과한 동적 범위에서 재정의 가능한 스키마 대상을 찾는 기능이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-r">
@@ -45,6 +46,7 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <li data-article-id="command-line-api-client"><a href="/wiki/command-line-api-client/">명령줄 API 클라이언트</a><span class="wiki-index-summary">명령줄 API 클라이언트는 터미널 명령과 옵션으로 원격 API 요청을 만들고 결과를 표준 출력이나 파일로 제공하는 도구다.</span></li>
 <li data-article-id="stateless-api"><a href="/wiki/stateless-api/">무상태 API</a><span class="wiki-index-summary">무상태 API는 각 요청이 처리에 필요한 문맥을 자체적으로 포함하고 서버가 이전 요청의 세션 상태에 의존하지 않는 API다.</span></li>
 <li data-article-id="grammar-constrained-generation"><a href="/wiki/grammar-constrained-generation/">문법 제약 생성</a><span class="wiki-index-summary">문법 제약 생성은 출력이 지정된 문법이나 구조 스키마를 벗어나지 않도록 다음 토큰 후보를 제한하는 디코딩 방식이다.</span></li>
+<li data-article-id="unevaluated-properties"><a href="/wiki/unevaluated-properties/">미평가 속성 제어</a><span class="wiki-index-summary">미평가 속성 제어는 JSON Schema의 unevaluatedProperties로 성공한 하위 스키마들이 아직 평가하지 않은 객체 속성에 마지막 제약을 적용하는 기능이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-b">
@@ -199,6 +201,10 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <ul class="wiki-index-list">
 <li data-article-id="json"><a href="/wiki/json/">JSON</a><span class="wiki-index-summary">키-값과 배열 구조로 데이터를 표현하는 경량 텍스트 형식이다.</span></li>
 <li data-article-id="json-schema"><a href="/wiki/json-schema/">JSON 스키마</a><span class="wiki-index-summary">JSON 스키마는 JSON 인스턴스가 만족해야 할 자료형, 필수 속성, 값 범위와 조합 규칙을 선언하는 표준 어휘다.</span></li>
+<li data-article-id="json-schema-assertion"><a href="/wiki/json-schema-assertion/">JSON 스키마 단언</a><span class="wiki-index-summary">JSON 스키마 단언은 인스턴스가 자료형, 범위, 패턴과 필수 속성 같은 제약을 만족하는지 참 또는 거짓으로 판정하는 키워드 평가다.</span></li>
+<li data-article-id="json-schema-dialect"><a href="/wiki/json-schema-dialect/">JSON 스키마 방언</a><span class="wiki-index-summary">JSON 스키마 방언은 스키마를 평가할 때 사용할 키워드 집합과 의미를 하나의 식별자로 묶은 JSON Schema 언어 버전 또는 확장 구성이다.</span></li>
+<li data-article-id="json-schema-vocabulary"><a href="/wiki/json-schema-vocabulary/">JSON 스키마 어휘</a><span class="wiki-index-summary">JSON 스키마 어휘는 식별 가능한 목적 아래 함께 정의된 JSON Schema 키워드와 그 처리 의미의 집합이다.</span></li>
+<li data-article-id="json-schema-annotation"><a href="/wiki/json-schema-annotation/">JSON 스키마 주석</a><span class="wiki-index-summary">JSON 스키마 주석은 인스턴스의 유효성을 직접 바꾸지 않고 제목, 설명, 기본값, 예시와 사용 상태 같은 정보를 수집하는 키워드 결과다.</span></li>
 <li data-article-id="json-web-token"><a href="/wiki/json-web-token/">JSON 웹 토큰</a><span class="wiki-index-summary">JSON 웹 토큰은 JSON 주장 집합을 점으로 구분된 URL 안전 문자열에 담고 서명하거나 암호화할 수 있는 토큰 형식이다.</span></li>
 </ul>
 </section>

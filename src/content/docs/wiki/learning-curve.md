@@ -136,7 +136,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [교육과정 순서화](/wiki/curriculum-sequencing/)
 
 ### 이 문서를 포함하는 코스
 

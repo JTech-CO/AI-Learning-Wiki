@@ -117,6 +117,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 이 문서를 가리키는 문서
 
 - [슬라이스 기반 릴리스 게이트](/wiki/slice-based-release-gate/)
+- [최소 검출 가능 효과](/wiki/minimum-detectable-effect/)
 - [판정 모델 교정 곡선](/wiki/judge-calibration-curve/)
 
 ### 이 문서를 포함하는 코스

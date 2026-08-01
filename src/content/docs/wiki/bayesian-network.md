@@ -128,7 +128,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [베이즈 지식 추적](/wiki/bayesian-knowledge-tracing/)
 
 ### 이 문서를 포함하는 코스
 

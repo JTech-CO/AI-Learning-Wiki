@@ -156,4 +156,4 @@ _해당 문서가 없다._
 ### 코스에서 계속 읽기
 
 - **프롬프트 시스템 설계:** [다음 문서 — 프롬프트 압축](/wiki/prompt-compression/)
-- **LLMOps와 프로덕션 서빙:** [다음 문서 — 추론 부하 분산](/wiki/inference-load-balancing/)
+- **LLMOps와 프로덕션 서빙:** [다음 문서 — KV 캐시 블록](/wiki/kv-cache-block/)

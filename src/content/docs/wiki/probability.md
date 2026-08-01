@@ -146,11 +146,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [소프트맥스](/wiki/softmax/)
 - [언어 모델](/wiki/language-model/)
 - [조건부확률](/wiki/conditional-probability/)
-- [텐서](/wiki/tensor/)
+- [지식 추적](/wiki/knowledge-tracing/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 2개 문서 보기</summary>
+<summary>나머지 4개 문서 보기</summary>
 
+- [컨포멀 예측](/wiki/conformal-prediction/)
+- [텐서](/wiki/tensor/)
 - [행렬](/wiki/matrix/)
 - [확률분포](/wiki/probability-distribution/)
 

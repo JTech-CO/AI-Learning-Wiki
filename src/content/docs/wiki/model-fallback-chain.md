@@ -118,6 +118,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [모델 선택 정책](/wiki/model-selection-policy/)
 - [모델 호환성 행렬](/wiki/model-compatibility-matrix/)
+- [예측 보류 메커니즘](/wiki/abstention-mechanism/)
 
 ### 이 문서를 포함하는 코스
 

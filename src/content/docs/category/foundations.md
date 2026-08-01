@@ -25,6 +25,7 @@ description: "인공지능의 범위와 기본 학습 방식"
 <li data-article-id="no-free-lunch-theorem"><a href="/wiki/no-free-lunch-theorem/">공짜 점심 없음 정리</a><span class="wiki-index-summary">공짜 점심 없음 정리는 모든 가능한 문제 분포를 평균하면 어떤 학습 알고리즘도 다른 알고리즘보다 항상 우월할 수 없다는 결과다.</span></li>
 <li data-article-id="underfitting"><a href="/wiki/underfitting/">과소적합</a><span class="wiki-index-summary">과소적합은 모델이 학습 데이터의 주요 구조조차 충분히 표현하거나 최적화하지 못해 학습과 평가 오차가 모두 큰 상태다.</span></li>
 <li data-article-id="overfitting"><a href="/wiki/overfitting/">과적합</a><span class="wiki-index-summary">과적합은 모델이 학습 데이터의 우연한 세부와 잡음까지 맞춰 새 데이터에서 성능이 떨어지는 상태다.</span></li>
+<li data-article-id="curriculum-sequencing"><a href="/wiki/curriculum-sequencing/">교육과정 순서화</a><span class="wiki-index-summary">교육과정 순서화는 학습 목표와 선수 관계, 난도, 학습자 상태를 바탕으로 다음에 제시할 개념이나 활동의 순서를 정하는 과정이다.</span></li>
 <li data-article-id="clustering"><a href="/wiki/clustering/">군집화</a><span class="wiki-index-summary">군집화는 정답 레이블 없이 유사한 데이터가 같은 집단에 모이도록 구조를 찾는 비지도학습 과제다.</span></li>
 <li data-article-id="inductive-bias"><a href="/wiki/inductive-bias/">귀납적 편향</a><span class="wiki-index-summary">귀납적 편향은 관찰하지 않은 사례로 일반화할 때 일부 가설을 다른 가설보다 선호하게 하는 가정이다.</span></li>
 <li data-article-id="gradient-boosting"><a href="/wiki/gradient-boosting/">그래디언트 부스팅</a><span class="wiki-index-summary">그래디언트 부스팅은 이전 앙상블의 손실을 줄이는 방향으로 약한 예측기를 순차적으로 추가하는 지도학습 방법이다.</span></li>
@@ -79,6 +80,7 @@ description: "인공지능의 범위와 기본 학습 방식"
 <li data-article-id="batch-learning"><a href="/wiki/batch-learning/">배치 학습</a><span class="wiki-index-summary">배치 학습은 일정 시점에 모은 고정 데이터 묶음으로 모델을 학습하고 다음 재학습 전까지 파라미터를 유지하는 방식이다.</span></li>
 <li data-article-id="artificial-general-intelligence"><a href="/wiki/artificial-general-intelligence/">범용 인공지능</a><span class="wiki-index-summary">범용 인공지능은 서로 다른 영역의 지식과 기술을 폭넓게 습득하고 새로운 과제에 전이할 수 있다고 가정되는 일반 목적 AI 개념이다.</span></li>
 <li data-article-id="bayesian-network"><a href="/wiki/bayesian-network/">베이즈 네트워크</a><span class="wiki-index-summary">베이즈 네트워크는 방향성 비순환 그래프로 변수의 조건부 의존 관계를 표현하는 확률 그래프 모델이다.</span></li>
+<li data-article-id="bayesian-knowledge-tracing"><a href="/wiki/bayesian-knowledge-tracing/">베이즈 지식 추적</a><span class="wiki-index-summary">베이즈 지식 추적은 개념별 숙달 여부를 숨은 상태로 두고 학습·추측·실수 확률을 이용해 응답마다 숙달 확률을 갱신하는 지식 추적 모형이다.</span></li>
 <li data-article-id="bayesian-learning"><a href="/wiki/bayesian-learning/">베이즈 학습</a><span class="wiki-index-summary">베이즈 학습은 모수나 가설의 사전분포를 데이터의 가능도와 결합해 사후분포로 갱신하는 학습 방식이다.</span></li>
 <li data-article-id="boosting"><a href="/wiki/boosting/">부스팅</a><span class="wiki-index-summary">부스팅은 약한 학습기를 순차적으로 추가하면서 이전 단계가 어려워한 표본이나 잔차에 더 집중하는 앙상블 계열이다.</span></li>
 <li data-article-id="classification"><a href="/wiki/classification/">분류</a><span class="wiki-index-summary">분류는 입력을 미리 정의된 하나 이상의 범주로 예측하는 지도학습 문제다.</span></li>
@@ -95,7 +97,9 @@ description: "인공지능의 범위와 기본 학습 방식"
 <li data-article-id="generative-discriminative-model"><a href="/wiki/generative-discriminative-model/">생성 모델과 판별 모델</a><span class="wiki-index-summary">생성 모델과 판별 모델은 각각 데이터와 표적의 결합 구조를 모델링하는 접근과 입력에서 표적의 경계나 조건부분포를 직접 학습하는 접근이다.</span></li>
 <li data-article-id="generative-ai"><a href="/wiki/generative-ai/">생성형 인공지능</a><span class="wiki-index-summary">학습 데이터의 분포를 바탕으로 텍스트·이미지·음성·코드 같은 새로운 결과물을 생성하는 인공지능이다.</span></li>
 <li data-article-id="support-vector-machine"><a href="/wiki/support-vector-machine/">서포트 벡터 머신</a><span class="wiki-index-summary">서포트 벡터 머신은 클래스 사이 여백을 최대화하는 결정 경계 또는 커널 공간의 회귀 함수를 학습하는 모델이다.</span></li>
+<li data-article-id="prerequisite-graph"><a href="/wiki/prerequisite-graph/">선수 개념 그래프</a><span class="wiki-index-summary">선수 개념 그래프는 어떤 개념을 학습하기 전에 필요한 개념을 방향 간선으로 표현한 지식 구조다.</span></li>
 <li data-article-id="linear-regression"><a href="/wiki/linear-regression/">선형 회귀</a><span class="wiki-index-summary">선형 회귀는 목표값을 입력 특성의 가중합과 절편으로 표현해 연속값을 추정하는 회귀 모형이다.</span></li>
+<li data-article-id="mastery-learning"><a href="/wiki/mastery-learning/">숙달 학습</a><span class="wiki-index-summary">숙달 학습은 정해진 시간에 진도를 맞추기보다 핵심 선수 능력을 충분히 달성한 뒤 다음 단계로 이동하도록 하는 학습 설계 원리다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-ng">
@@ -130,6 +134,7 @@ description: "인공지능의 범위와 기본 학습 방식"
 <li data-article-id="semi-supervised-learning"><a href="/wiki/semi-supervised-learning/">준지도학습</a><span class="wiki-index-summary">준지도학습은 소량의 라벨 데이터와 더 많은 비라벨 데이터를 함께 사용해 예측 모델을 학습하는 방식이다.</span></li>
 <li data-article-id="supervised-learning"><a href="/wiki/supervised-learning/">지도학습</a><span class="wiki-index-summary">입력과 정답이 함께 있는 데이터로 입력에서 정답으로의 관계를 학습하는 방식이다.</span></li>
 <li data-article-id="continual-learning"><a href="/wiki/continual-learning/">지속학습</a><span class="wiki-index-summary">지속학습은 데이터나 과제가 시간에 따라 도착할 때 기존 능력을 유지하면서 새 지식을 순차적으로 학습하는 설정이다.</span></li>
+<li data-article-id="knowledge-tracing"><a href="/wiki/knowledge-tracing/">지식 추적</a><span class="wiki-index-summary">지식 추적은 문제 풀이와 학습 활동의 시간 순서로부터 학습자의 잠재 숙달 상태를 추정하고 다음 수행을 예측하는 계산 과제다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-ch">
@@ -169,6 +174,7 @@ description: "인공지능의 범위와 기본 학습 방식"
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="training-data"><a href="/wiki/training-data/">학습 데이터</a><span class="wiki-index-summary">모델이 파라미터를 조정하며 패턴을 배우는 데 사용하는 예시와 기록의 집합이다.</span></li>
+<li data-article-id="learning-objective"><a href="/wiki/learning-objective/">학습 목표</a><span class="wiki-index-summary">학습 목표는 학습자가 과정이나 활동을 마친 뒤 설명하거나 수행할 수 있어야 하는 관찰 가능한 지식·기술·판단을 명시한 문장이다.</span></li>
 <li data-article-id="train-validation-test-split"><a href="/wiki/train-validation-test-split/">학습·검증·테스트 분할</a><span class="wiki-index-summary">학습·검증·테스트 분할은 모델 적합, 설정 선택, 최종 평가에 사용할 데이터를 서로 겹치지 않게 나누는 절차다.</span></li>
 <li data-article-id="probabilistic-graphical-model"><a href="/wiki/probabilistic-graphical-model/">확률 그래프 모델</a><span class="wiki-index-summary">확률 그래프 모델은 확률변수를 노드로, 조건부 의존이나 상호작용을 간선으로 나타내 결합분포를 분해하는 모델이다.</span></li>
 <li data-article-id="probabilistic-model"><a href="/wiki/probabilistic-model/">확률 모델</a><span class="wiki-index-summary">확률 모델은 관측값과 숨은 변수의 불확실성을 확률분포로 표현하는 수학적 모델이다.</span></li>

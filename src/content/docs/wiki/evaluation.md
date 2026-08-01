@@ -153,7 +153,7 @@ _해당 문서가 없다._
 - [계획 평가](/wiki/planning-evaluation/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 123개 문서 보기</summary>
+<summary>나머지 126개 문서 보기</summary>
 
 - [곡선 아래 면적](/wiki/area-under-curve/)
 - [골든 세트 거버넌스](/wiki/golden-set-governance/)
@@ -164,6 +164,7 @@ _해당 문서가 없다._
 - [능력 벤치마크](/wiki/capability-benchmark/)
 - [다국어 평가 프로토콜](/wiki/multilingual-evaluation-protocol/)
 - [답변 관련성](/wiki/answer-relevance/)
+- [대응 부트스트랩](/wiki/paired-bootstrap/)
 - [데이터 주석](/wiki/data-annotation/)
 - [데이터 증강](/wiki/data-augmentation/)
 - [도구 사용 평가](/wiki/tool-use-evaluation/)
@@ -192,6 +193,7 @@ _해당 문서가 없다._
 - [비용 모니터링](/wiki/cost-monitoring/)
 - [사용자 피드백 수집](/wiki/user-feedback-collection/)
 - [생성 평가](/wiki/generation-evaluation/)
+- [숙달 학습](/wiki/mastery-learning/)
 - [순차 평가](/wiki/sequential-evaluation/)
 - [쉐도 평가](/wiki/shadow-evaluation/)
 - [슬라이스 기반 릴리스 게이트](/wiki/slice-based-release-gate/)
@@ -252,6 +254,7 @@ _해당 문서가 없다._
 - [평가자 간 신뢰도](/wiki/inter-rater-reliability/)
 - [프로덕션 평가](/wiki/production-evaluation/)
 - [프롬프트 추적](/wiki/prompt-trace/)
+- [학습 목표](/wiki/learning-objective/)
 - [합성 데이터](/wiki/synthetic-data/)
 - [행동 회귀](/wiki/behavioral-regression/)
 - [혼동 행렬](/wiki/confusion-matrix/)

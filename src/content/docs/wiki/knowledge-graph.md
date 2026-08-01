@@ -128,7 +128,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [선수 개념 그래프](/wiki/prerequisite-graph/)
+- [학습 목표](/wiki/learning-objective/)
 
 ### 이 문서를 포함하는 코스
 

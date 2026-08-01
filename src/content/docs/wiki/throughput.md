@@ -139,6 +139,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 이 문서를 가리키는 문서
 
 - [배칭](/wiki/batching/)
+- [분리형 서빙](/wiki/disaggregated-serving/)
 - [지연 시간](/wiki/latency/)
 
 ### 이 문서를 포함하는 코스

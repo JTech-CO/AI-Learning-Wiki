@@ -67,6 +67,7 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <li data-article-id="batch-inference"><a href="/wiki/batch-inference/">배치 추론</a><span class="wiki-index-summary">배치 추론은 대량의 저장된 입력을 묶어 일정이나 작업 단위로 처리하고 결과를 파일·테이블에 기록하는 방식이다.</span></li>
 <li data-article-id="batching"><a href="/wiki/batching/">배칭</a><span class="wiki-index-summary">여러 추론 요청을 묶어 하드웨어 사용률과 처리량을 높이는 기법이다.</span></li>
 <li data-article-id="backpressure"><a href="/wiki/backpressure/">백프레셔</a><span class="wiki-index-summary">역압은 하류 처리 속도가 입력 속도를 따라가지 못할 때 상류가 요청 생성이나 전달을 늦추도록 하는 흐름 제어다.</span></li>
+<li data-article-id="disaggregated-serving"><a href="/wiki/disaggregated-serving/">분리형 서빙</a><span class="wiki-index-summary">분리형 서빙은 LLM 추론의 프리필과 디코드 단계 또는 캐시 저장 계층을 서로 다른 자원 풀에 배치해 독립적으로 확장하는 시스템 구조다.</span></li>
 <li data-article-id="frequency-penalty"><a href="/wiki/frequency-penalty/">빈도 페널티</a><span class="wiki-index-summary">빈도 페널티는 지금까지 등장한 횟수에 비례해 해당 토큰의 로짓을 낮추는 생성 제어 방식이다.</span></li>
 <li data-article-id="beam-search"><a href="/wiki/beam-search/">빔 탐색</a><span class="wiki-index-summary">여러 후보 시퀀스를 동시에 유지하며 전체 점수가 높은 출력을 찾는 탐색 방법이다.</span></li>
 </ul>
@@ -107,6 +108,7 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <ul class="wiki-index-list">
 <li data-article-id="typical-sampling"><a href="/wiki/typical-sampling/">전형성 샘플링</a><span class="wiki-index-summary">현재 분포의 엔트로피에 가까운 정보량을 가진 토큰을 우선 남겨 전형적인 확률 영역에서 표본을 추출하는 디코딩 방법이다.</span></li>
 <li data-article-id="graceful-degradation"><a href="/wiki/graceful-degradation/">점진적 성능 저하</a><span class="wiki-index-summary">점진적 성능 저하는 과부하나 일부 구성 요소 장애에서도 핵심 기능을 유지하도록 품질·기능·속도를 통제된 방식으로 낮추는 운영 전략이다.</span></li>
+<li data-article-id="prefix-aware-scheduling"><a href="/wiki/prefix-aware-scheduling/">접두부 인식 스케줄링</a><span class="wiki-index-summary">접두부 인식 스케줄링은 요청 간 공유 가능한 프롬프트 접두부와 KV 캐시 위치를 고려해 실행 장치와 순서를 정하는 서빙 정책이다.</span></li>
 <li data-article-id="static-batching"><a href="/wiki/static-batching/">정적 배칭</a><span class="wiki-index-summary">정적 배칭은 미리 정한 개수나 고정된 입력 묶음을 하나의 텐서로 구성해 함께 추론하는 방식이다.</span></li>
 <li data-article-id="constrained-decoding"><a href="/wiki/constrained-decoding/">제약 디코딩</a><span class="wiki-index-summary">제약 디코딩은 문법, 스키마, 어휘 집합이나 필수 구문을 만족하는 토큰만 다음 후보로 허용하는 생성 방법이다.</span></li>
 <li data-article-id="presence-penalty"><a href="/wiki/presence-penalty/">존재 페널티</a><span class="wiki-index-summary">존재 페널티는 토큰이 한 번이라도 등장했는지를 기준으로 고정된 패널티를 적용하는 생성 제어 방식이다.</span></li>
@@ -213,9 +215,13 @@ description: "학습된 모델이 출력을 생성하고 서비스되는 방식"
 <ul class="wiki-index-list">
 <li data-article-id="kv-cache"><a href="/wiki/kv-cache/">KV 캐시</a><span class="wiki-index-summary">이전 토큰의 어텐션 키와 값을 저장해 자동회귀 생성의 중복 계산을 줄이는 캐시다.</span></li>
 <li data-article-id="kv-cache-isolation"><a href="/wiki/kv-cache-isolation/">KV 캐시 격리</a><span class="wiki-index-summary">KV 캐시 격리는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="kv-cache-tiering"><a href="/wiki/kv-cache-tiering/">KV 캐시 계층화</a><span class="wiki-index-summary">KV 캐시 계층화는 접근 빈도와 재사용 가능성에 따라 KV 블록을 GPU, CPU 메모리, 로컬 저장장치와 원격 저장소에 나누어 두는 관리 방식이다.</span></li>
+<li data-article-id="kv-cache-block"><a href="/wiki/kv-cache-block/">KV 캐시 블록</a><span class="wiki-index-summary">KV 캐시 블록은 일정 수의 토큰에 해당하는 어텐션 키·값 텐서를 묶어 할당, 참조, 공유와 퇴출의 단위로 관리하는 저장 구조다.</span></li>
 <li data-article-id="kv-cache-admission"><a href="/wiki/kv-cache-admission/">KV 캐시 수용 제어</a><span class="wiki-index-summary">KV 캐시 수용 제어는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="kv-cache-quantization"><a href="/wiki/kv-cache-quantization/">KV 캐시 양자화</a><span class="wiki-index-summary">KV 캐시 양자화는 어텐션 키와 값을 더 낮은 비트 표현으로 저장해 생성 중 메모리 사용량을 줄이는 기법이다.</span></li>
 <li data-article-id="kv-cache-capacity-planning"><a href="/wiki/kv-cache-capacity-planning/">KV 캐시 용량 계획</a><span class="wiki-index-summary">KV 캐시 용량 계획은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="kv-cache-reuse"><a href="/wiki/kv-cache-reuse/">KV 캐시 재사용</a><span class="wiki-index-summary">KV 캐시 재사용은 이전에 계산한 접두부나 문맥 구간의 키·값 상태를 호환되는 새 요청에 연결해 프리필 계산을 생략하는 최적화다.</span></li>
+<li data-article-id="kv-cache-transfer"><a href="/wiki/kv-cache-transfer/">KV 캐시 전송</a><span class="wiki-index-summary">KV 캐시 전송은 한 작업자나 저장 계층에서 계산된 어텐션 키·값 텐서를 다른 디코드 작업자나 계층으로 옮기는 데이터 이동 과정이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-l">

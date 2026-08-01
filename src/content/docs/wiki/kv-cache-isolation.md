@@ -118,6 +118,7 @@ KV 캐시 격리을 적용할 수 있는 대표 상황은 피크 트래픽에서
 
 - [KV 캐시 수용 제어](/wiki/kv-cache-admission/)
 - [KV 캐시 용량 계획](/wiki/kv-cache-capacity-planning/)
+- [KV 캐시 재사용](/wiki/kv-cache-reuse/)
 
 ### 이 문서를 포함하는 코스
 

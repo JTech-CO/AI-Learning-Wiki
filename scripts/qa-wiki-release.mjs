@@ -54,7 +54,7 @@ for (const course of wiki.courses) {
     expect(position > cursor, 'course order mismatch: ' + course.id + ' -> ' + step.ref);
     cursor = position;
   }
-  expect(!/wiki-course-check|필수|선택/.test(courseHtml), 'course progress decoration remains: ' + course.id);
+  expect(!/wiki-course-check|>\s*(?:필수|선택)\s*</u.test(courseHtml), 'course progress decoration remains: ' + course.id);
   for (let index = 0; index < course.steps.length - 1; index += 1) {
     const current = course.steps[index];
     const next = course.steps[index + 1];

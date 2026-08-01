@@ -146,11 +146,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [간접 프롬프트 인젝션](/wiki/indirect-prompt-injection/)
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [모델 컨텍스트 프로토콜](/wiki/mcp/)
-- [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
+- [예측 보류 메커니즘](/wiki/abstention-mechanism/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 2개 문서 보기</summary>
+<summary>나머지 3개 문서 보기</summary>
 
+- [워크플로 오케스트레이션](/wiki/workflow-orchestration/)
 - [웹훅](/wiki/webhook/)
 - [ReAct 에이전트](/wiki/react-agent/)
 

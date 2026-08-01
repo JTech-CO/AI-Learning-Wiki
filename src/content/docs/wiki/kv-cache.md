@@ -148,6 +148,14 @@ KV 캐시가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판
 - [배칭](/wiki/batching/)
 - [빔 탐색](/wiki/beam-search/)
 - [지연 시간](/wiki/latency/)
+- [KV 캐시 블록](/wiki/kv-cache-block/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 1개 문서 보기</summary>
+
+- [KV 캐시 전송](/wiki/kv-cache-transfer/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 

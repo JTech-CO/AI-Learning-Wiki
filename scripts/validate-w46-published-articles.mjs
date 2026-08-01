@@ -22,7 +22,7 @@ const validate = ajv.compile(schema);
 const assert = (condition, message) => { if (!condition) throw new Error(message); };
 
 assert(report.before.articles === 1400 && report.added.articles === 200 && report.after.articles === 1600, 'W46 promotion totals mismatch');
-assert(articleFiles.length === 1600, `W46 expected 1600 articles, got ${articleFiles.length}`);
+assert(articleFiles.length >= report.after.articles, 'W46 published baseline was reduced');
 assert(ledger.milestone === 'W46' && ledger.totals.articles === 200 && ledger.totals.claimUnits === 2000 && ledger.totals.sources === 800, 'W46 ledger totals mismatch');
 assert(new Set(ledger.articles.map((item) => item.articleId)).size === 200, 'W46 duplicate ledger article');
 const ledgerById = new Map(ledger.articles.map((item) => [item.articleId, item]));
@@ -45,4 +45,4 @@ for (const candidate of queue.candidates) {
   assert(manifestById.has(candidate.id), `${candidate.id}: W45 manifest gap`);
 }
 
-console.log('W46 published articles: 1600 total, 200 newly reviewed, 2000 locked section claims and 800 sources OK');
+console.log('W46 published baseline retained: 1600 articles, 200 newly reviewed, 2000 locked section claims and 800 sources OK; current total ' + articleFiles.length);

@@ -1,0 +1,438 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W59",
+  "releasedAt": "2026-08-01",
+  "corpus": {
+    "baselineArticles": 1600,
+    "addedArticles": 24,
+    "expectedArticles": 1624,
+    "canonicalArticles": 1624,
+    "publicArticles": 1624
+  },
+  "evidence": {
+    "catalogTerms": 24,
+    "reviewedArticles": 24,
+    "sectionClaims": 240,
+    "sourceReferences": 126,
+    "minimumBodyCharacters": 4193,
+    "maximumBodyCharacters": 4617,
+    "catalogSha256": "a20c92818088bdcd21e09fee1e81d075bc208c917ca28843bad38520b2efa51e"
+  },
+  "coverage": {
+    "categories": {
+      "api": 6,
+      "evaluation": 6,
+      "foundations": 6,
+      "inference": 6
+    },
+    "courses": {
+      "ai-foundations": 6,
+      "llm-evaluation": 6,
+      "llmops-production": 6,
+      "prompt-systems": 6
+    },
+    "tools": {
+      "evaluation-metrics": 6,
+      "learning-path": 6,
+      "model-memory": 6,
+      "prompt-schema": 6
+    }
+  },
+  "connections": [
+    {
+      "articleId": "learning-objective",
+      "category": "foundations",
+      "courseId": "ai-foundations",
+      "toolId": "learning-path",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/learning-objective/",
+      "courseRoute": "/course/ai-foundations/",
+      "toolRoute": "/lab/learning-path/"
+    },
+    {
+      "articleId": "prerequisite-graph",
+      "category": "foundations",
+      "courseId": "ai-foundations",
+      "toolId": "learning-path",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/prerequisite-graph/",
+      "courseRoute": "/course/ai-foundations/",
+      "toolRoute": "/lab/learning-path/"
+    },
+    {
+      "articleId": "curriculum-sequencing",
+      "category": "foundations",
+      "courseId": "ai-foundations",
+      "toolId": "learning-path",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/curriculum-sequencing/",
+      "courseRoute": "/course/ai-foundations/",
+      "toolRoute": "/lab/learning-path/"
+    },
+    {
+      "articleId": "mastery-learning",
+      "category": "foundations",
+      "courseId": "ai-foundations",
+      "toolId": "learning-path",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/mastery-learning/",
+      "courseRoute": "/course/ai-foundations/",
+      "toolRoute": "/lab/learning-path/"
+    },
+    {
+      "articleId": "knowledge-tracing",
+      "category": "foundations",
+      "courseId": "ai-foundations",
+      "toolId": "learning-path",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/knowledge-tracing/",
+      "courseRoute": "/course/ai-foundations/",
+      "toolRoute": "/lab/learning-path/"
+    },
+    {
+      "articleId": "bayesian-knowledge-tracing",
+      "category": "foundations",
+      "courseId": "ai-foundations",
+      "toolId": "learning-path",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/bayesian-knowledge-tracing/",
+      "courseRoute": "/course/ai-foundations/",
+      "toolRoute": "/lab/learning-path/"
+    },
+    {
+      "articleId": "selective-prediction",
+      "category": "evaluation",
+      "courseId": "llm-evaluation",
+      "toolId": "evaluation-metrics",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/selective-prediction/",
+      "courseRoute": "/course/llm-evaluation/",
+      "toolRoute": "/lab/evaluation-metrics/"
+    },
+    {
+      "articleId": "abstention-mechanism",
+      "category": "evaluation",
+      "courseId": "llm-evaluation",
+      "toolId": "evaluation-metrics",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/abstention-mechanism/",
+      "courseRoute": "/course/llm-evaluation/",
+      "toolRoute": "/lab/evaluation-metrics/"
+    },
+    {
+      "articleId": "risk-coverage-curve",
+      "category": "evaluation",
+      "courseId": "llm-evaluation",
+      "toolId": "evaluation-metrics",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/risk-coverage-curve/",
+      "courseRoute": "/course/llm-evaluation/",
+      "toolRoute": "/lab/evaluation-metrics/"
+    },
+    {
+      "articleId": "conformal-prediction",
+      "category": "evaluation",
+      "courseId": "llm-evaluation",
+      "toolId": "evaluation-metrics",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/conformal-prediction/",
+      "courseRoute": "/course/llm-evaluation/",
+      "toolRoute": "/lab/evaluation-metrics/"
+    },
+    {
+      "articleId": "paired-bootstrap",
+      "category": "evaluation",
+      "courseId": "llm-evaluation",
+      "toolId": "evaluation-metrics",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/paired-bootstrap/",
+      "courseRoute": "/course/llm-evaluation/",
+      "toolRoute": "/lab/evaluation-metrics/"
+    },
+    {
+      "articleId": "minimum-detectable-effect",
+      "category": "evaluation",
+      "courseId": "llm-evaluation",
+      "toolId": "evaluation-metrics",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/minimum-detectable-effect/",
+      "courseRoute": "/course/llm-evaluation/",
+      "toolRoute": "/lab/evaluation-metrics/"
+    },
+    {
+      "articleId": "kv-cache-block",
+      "category": "inference",
+      "courseId": "llmops-production",
+      "toolId": "model-memory",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/kv-cache-block/",
+      "courseRoute": "/course/llmops-production/",
+      "toolRoute": "/lab/model-memory/"
+    },
+    {
+      "articleId": "kv-cache-reuse",
+      "category": "inference",
+      "courseId": "llmops-production",
+      "toolId": "model-memory",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/kv-cache-reuse/",
+      "courseRoute": "/course/llmops-production/",
+      "toolRoute": "/lab/model-memory/"
+    },
+    {
+      "articleId": "prefix-aware-scheduling",
+      "category": "inference",
+      "courseId": "llmops-production",
+      "toolId": "model-memory",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/prefix-aware-scheduling/",
+      "courseRoute": "/course/llmops-production/",
+      "toolRoute": "/lab/model-memory/"
+    },
+    {
+      "articleId": "kv-cache-transfer",
+      "category": "inference",
+      "courseId": "llmops-production",
+      "toolId": "model-memory",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/kv-cache-transfer/",
+      "courseRoute": "/course/llmops-production/",
+      "toolRoute": "/lab/model-memory/"
+    },
+    {
+      "articleId": "disaggregated-serving",
+      "category": "inference",
+      "courseId": "llmops-production",
+      "toolId": "model-memory",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/disaggregated-serving/",
+      "courseRoute": "/course/llmops-production/",
+      "toolRoute": "/lab/model-memory/"
+    },
+    {
+      "articleId": "kv-cache-tiering",
+      "category": "inference",
+      "courseId": "llmops-production",
+      "toolId": "model-memory",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/kv-cache-tiering/",
+      "courseRoute": "/course/llmops-production/",
+      "toolRoute": "/lab/model-memory/"
+    },
+    {
+      "articleId": "json-schema-dialect",
+      "category": "api",
+      "courseId": "prompt-systems",
+      "toolId": "prompt-schema",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/json-schema-dialect/",
+      "courseRoute": "/course/prompt-systems/",
+      "toolRoute": "/lab/prompt-schema/"
+    },
+    {
+      "articleId": "json-schema-vocabulary",
+      "category": "api",
+      "courseId": "prompt-systems",
+      "toolId": "prompt-schema",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/json-schema-vocabulary/",
+      "courseRoute": "/course/prompt-systems/",
+      "toolRoute": "/lab/prompt-schema/"
+    },
+    {
+      "articleId": "json-schema-annotation",
+      "category": "api",
+      "courseId": "prompt-systems",
+      "toolId": "prompt-schema",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/json-schema-annotation/",
+      "courseRoute": "/course/prompt-systems/",
+      "toolRoute": "/lab/prompt-schema/"
+    },
+    {
+      "articleId": "json-schema-assertion",
+      "category": "api",
+      "courseId": "prompt-systems",
+      "toolId": "prompt-schema",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/json-schema-assertion/",
+      "courseRoute": "/course/prompt-systems/",
+      "toolRoute": "/lab/prompt-schema/"
+    },
+    {
+      "articleId": "dynamic-reference",
+      "category": "api",
+      "courseId": "prompt-systems",
+      "toolId": "prompt-schema",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/dynamic-reference/",
+      "courseRoute": "/course/prompt-systems/",
+      "toolRoute": "/lab/prompt-schema/"
+    },
+    {
+      "articleId": "unevaluated-properties",
+      "category": "api",
+      "courseId": "prompt-systems",
+      "toolId": "prompt-schema",
+      "courseLinked": true,
+      "toolLinked": true,
+      "publicIndexed": true,
+      "articleRoute": "/wiki/unevaluated-properties/",
+      "courseRoute": "/course/prompt-systems/",
+      "toolRoute": "/lab/prompt-schema/"
+    }
+  ],
+  "publicSurface": {
+    "htmlPages": 1671,
+    "requiredFiles": {
+      "dist/wiki/learning-objective/index.html": true,
+      "dist/wiki/prerequisite-graph/index.html": true,
+      "dist/wiki/curriculum-sequencing/index.html": true,
+      "dist/wiki/mastery-learning/index.html": true,
+      "dist/wiki/knowledge-tracing/index.html": true,
+      "dist/wiki/bayesian-knowledge-tracing/index.html": true,
+      "dist/wiki/selective-prediction/index.html": true,
+      "dist/wiki/abstention-mechanism/index.html": true,
+      "dist/wiki/risk-coverage-curve/index.html": true,
+      "dist/wiki/conformal-prediction/index.html": true,
+      "dist/wiki/paired-bootstrap/index.html": true,
+      "dist/wiki/minimum-detectable-effect/index.html": true,
+      "dist/wiki/kv-cache-block/index.html": true,
+      "dist/wiki/kv-cache-reuse/index.html": true,
+      "dist/wiki/prefix-aware-scheduling/index.html": true,
+      "dist/wiki/kv-cache-transfer/index.html": true,
+      "dist/wiki/disaggregated-serving/index.html": true,
+      "dist/wiki/kv-cache-tiering/index.html": true,
+      "dist/wiki/json-schema-dialect/index.html": true,
+      "dist/wiki/json-schema-vocabulary/index.html": true,
+      "dist/wiki/json-schema-annotation/index.html": true,
+      "dist/wiki/json-schema-assertion/index.html": true,
+      "dist/wiki/dynamic-reference/index.html": true,
+      "dist/wiki/unevaluated-properties/index.html": true,
+      "dist/course/ai-foundations/index.html": true,
+      "dist/course/llm-evaluation/index.html": true,
+      "dist/course/llmops-production/index.html": true,
+      "dist/course/prompt-systems/index.html": true,
+      "dist/lab/evaluation-metrics/index.html": true,
+      "dist/lab/learning-path/index.html": true,
+      "dist/lab/model-memory/index.html": true,
+      "dist/lab/prompt-schema/index.html": true
+    },
+    "allArticlesIndexed": true
+  },
+  "implementation": {
+    "content-model/research/w59-term-catalog.json": {
+      "bytes": 55453,
+      "sha256": "a20c92818088bdcd21e09fee1e81d075bc208c917ca28843bad38520b2efa51e"
+    },
+    "content-model/research/w59-publication-report.json": {
+      "bytes": 1228,
+      "sha256": "e44979144c1acd34b0419fe889c48ce060fe4a7631c8a850bda6c5c9be6653ca"
+    },
+    "content-model/evidence/w59-claim-ledger.json": {
+      "bytes": 85457,
+      "sha256": "9ae2888017ec727fa4049fa92271a3c9e46d51655e69b0bf552038abc5ee403d"
+    },
+    "content-model/labs/registry.json": {
+      "bytes": 54313,
+      "sha256": "64a6ef6e13978bf2c392fdf7b74a29e749abdfb368c3a5d385073a93a74cebef"
+    },
+    "scripts/build-w59-term-expansion.mjs": {
+      "bytes": 14809,
+      "sha256": "cf45762b64c248ce14d25356a3f50e5fc7cabb5eec240cfe9859d4417eb8eec9"
+    },
+    "scripts/connect-w59-terms.mjs": {
+      "bytes": 3130,
+      "sha256": "2c3d2fe1a99b5c998cebba1375d39b957b2050b72730763e0c04dc5089ff4e5e"
+    },
+    "content-model/paths/ai-foundations.path.json": {
+      "bytes": 4129,
+      "sha256": "c00108e614eedf202f8db0cb8632bc07c83f0c1112fd929210df782b2414e325"
+    },
+    "content-model/paths/llm-evaluation.path.json": {
+      "bytes": 6470,
+      "sha256": "79339481aac2795e2321255f5adc9e0ca3acbe3b2d806637d8e59d2ddf8d4845"
+    },
+    "content-model/paths/llmops-production.path.json": {
+      "bytes": 6471,
+      "sha256": "3714dfaaff2f06cbdfc6e9e1d3fcfb4a5653afb1742e08ffbc8b01d6fc22ff9a"
+    },
+    "content-model/paths/prompt-systems.path.json": {
+      "bytes": 6575,
+      "sha256": "8df7fa178f7f5fe40b13bc026200a5a9b8af3a447e9ff0add3c27962457ff31c"
+    },
+    "src/content/docs/lab/evaluation-metrics.mdx": {
+      "bytes": 3024,
+      "sha256": "0980cd5b6aa6d25b285d13e53f428c3beaf429c980344d15be1acf4eddfaf13b"
+    },
+    "src/content/docs/lab/learning-path.mdx": {
+      "bytes": 2524,
+      "sha256": "4833b932416bd364cd678e1049b9ad60a2309981ab2f476ab515768fc48b85df"
+    },
+    "src/content/docs/lab/model-memory.mdx": {
+      "bytes": 4602,
+      "sha256": "1a369c2271b485c9f9bc73cd7fdb7e219f686876eb681798005b09ceb9ee8439"
+    },
+    "src/content/docs/lab/prompt-schema.mdx": {
+      "bytes": 4583,
+      "sha256": "b142d80763f163d46e9a8f31ffd585fbe0984a499495c6b8374896a8459accc9"
+    }
+  },
+  "releaseGates": {
+    "exactCatalogSize": true,
+    "exactCorpusSize": true,
+    "publicationMatches": true,
+    "ledgerMatches": true,
+    "allConnectionsResolved": true,
+    "sixTermsPerCategory": true,
+    "sixTermsPerCourse": true,
+    "sixTermsPerTool": true,
+    "allRoutesRendered": true
+  }
+}

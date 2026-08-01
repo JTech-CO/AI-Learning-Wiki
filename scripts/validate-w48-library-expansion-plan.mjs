@@ -39,7 +39,10 @@ for (const course of plan.courses) {
   const activePath = readJson(`content-model/paths/${course.courseId}.path.json`);
   assert.equal(course.title, activePath.title, `${course.courseId}: title drift`);
   assert.equal(course.sourceSteps.length, 24, `${course.courseId}: expected 24 source steps`);
-  assert.deepEqual(course.sourceSteps.map((step) => step.wikiSlug), activePath.steps.map((step) => step.ref), `${course.courseId}: step order drift`);
+  const baselineRefs = course.sourceSteps.map((step) => step.wikiSlug);
+  const activeRefs = activePath.steps.map((step) => step.ref);
+  const baselinePositions = baselineRefs.map((ref) => activeRefs.indexOf(ref));
+  assert.ok(baselinePositions.every((position, index) => position >= 0 && (index === 0 || position > baselinePositions[index - 1])), `${course.courseId}: W48 source step missing or reordered`);
 }
 
 for (const id of plan.exampleEnrichmentPromptIds) {

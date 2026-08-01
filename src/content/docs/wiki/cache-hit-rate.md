@@ -132,7 +132,8 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [접두부 인식 스케줄링](/wiki/prefix-aware-scheduling/)
+- [KV 캐시 재사용](/wiki/kv-cache-reuse/)
 
 ### 이 문서를 포함하는 코스
 

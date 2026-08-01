@@ -9,6 +9,8 @@ const ledger = await readJson('content-model/taxonomy/topic-ledger.json');
 const topicById = new Map(ledger.topics.map((topic) => [topic.id, topic]));
 const expansionQueue = await readJson('content-model/research/w42-topic-candidates.json');
 const expansionById = new Map(expansionQueue.candidates.map((topic) => [topic.id, topic]));
+const w59Catalog = await readJson('content-model/research/w59-term-catalog.json');
+const w59ById = new Map(w59Catalog.terms.map((term) => [term.id, term]));
 const pathSchema = await readJson('content-model/schema.path.json');
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);
@@ -50,7 +52,7 @@ for (const course of paths) {
   for (const step of course.steps) if (!ids.has(step.ref)) errors.push(`${course.id}: missing course ref ${step.ref}`);
 }
 
-if (articles.length < 150 || articles.length > 1600) errors.push(`expected 150–1600 articles, found ${articles.length}`);
+if (articles.length < 1600) errors.push('expected at least the 1600-article W53 baseline, found ' + articles.length);
 for (const article of articles) {
   const topic = topicById.get(article.id);
   if (topic) {
@@ -58,11 +60,16 @@ for (const article of articles) {
     continue;
   }
   const expansion = expansionById.get(article.id);
-  if (!expansion) {
-    errors.push(`${article.id}: not registered in W0 or W42`);
+  if (expansion) {
+    if (expansion.title.ko !== article.title || expansion.title.en !== article.englishTitle || !article.categories.includes(expansion.category)) errors.push(article.id + ': title/category differs from the W42 queue');
     continue;
   }
-  if (expansion.title.ko !== article.title || expansion.title.en !== article.englishTitle || !article.categories.includes(expansion.category)) errors.push(`${article.id}: title/category differs from the W42 queue`);
+  const w59Term = w59ById.get(article.id);
+  if (!w59Term) {
+    errors.push(article.id + ': not registered in W0, W42, or W59');
+    continue;
+  }
+  if (w59Term.title !== article.title || w59Term.englishTitle !== article.englishTitle || !article.categories.includes(w59Term.category)) errors.push(article.id + ': title/category differs from the W59 catalog');
 }
 if (paths.length !== 16) errors.push(`expected 16 wiki courses, found ${paths.length}`);
 
