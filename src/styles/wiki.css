@@ -15,8 +15,11 @@
   --sl-color-gray-5: #c8ccd1;
   --sl-color-gray-6: #eaecf0;
   --sl-color-gray-7: #f8f9fa;
-  --sl-color-white: #fff;
-  --sl-color-black: #202122;
+  /* Starlight uses these as semantic foreground/background extremes.
+     This project keeps a light palette even when its generated HTML starts
+     with data-theme="dark", so their light-theme order must be preserved. */
+  --sl-color-white: #202122;
+  --sl-color-black: #fff;
   --sl-color-hairline-shade: #c8ccd1;
   --sl-content-width: 76rem;
   --sl-sidebar-width: 14rem;
@@ -63,7 +66,9 @@ a:hover { text-decoration: underline; }
 .sl-markdown-content h1,
 .sl-markdown-content h2,
 .sl-markdown-content h3,
-.sl-markdown-content h4 { color: #202122; font-family: Georgia, "Noto Serif KR", serif; letter-spacing: 0; }
+.sl-markdown-content h4,
+.sl-markdown-content h5,
+.sl-markdown-content h6 { color: #202122; font-family: Georgia, "Noto Serif KR", serif; letter-spacing: 0; }
 .main-pane h1#_top { color: #202122; font-family: Georgia, "Noto Serif KR", serif; font-weight: 700; margin-bottom: .65rem; border-bottom: 2px solid #72777d; padding-bottom: .45rem; font-size: 2.25rem; line-height: 1.2; letter-spacing: -.025em; }
 .sl-markdown-content h1 { margin-bottom: .55rem; border-bottom: 2px solid #72777d; padding-bottom: .45rem; font-size: 2.25rem; line-height: 1.2; }
 .sl-markdown-content h2 { border-bottom: 1px solid #c8ccd1; padding-bottom: .25rem; font-size: 1.45rem; }
@@ -71,10 +76,12 @@ a:hover { text-decoration: underline; }
 .sl-markdown-content h4 { margin-top: 1.35rem; font-size: 1rem; }
 .sl-markdown-content .sl-heading-wrapper { --sl-anchor-icon-size: .78rem; --sl-anchor-icon-gap: .55rem; }
 .sl-markdown-content table { display: table; width: 100%; }
-.sl-markdown-content th { background: #eaecf0; }
+.sl-markdown-content th { background: #eaecf0; color: #202122; -webkit-text-fill-color: #202122; }
 .sl-markdown-content th,
 .sl-markdown-content td { border: 1px solid #a2a9b1; }
 .sl-markdown-content code { border-radius: 0; }
+.sl-markdown-content summary { color: #202122; -webkit-text-fill-color: #202122; }
+.sl-markdown-content a:hover { color: #2a4b8d; }
 
 .wiki-alias { margin: -.5rem 0 .65rem; color: #54595d; font-size: .85rem; }
 .wiki-lead { max-width: 60rem; font-size: 1.14rem; line-height: 1.72; }
