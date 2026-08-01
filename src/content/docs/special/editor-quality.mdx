@@ -1,17 +1,4 @@
-import { writeFile } from 'node:fs/promises';
-
-await writeFile('src/content/docs/special/random.mdx', `---
-title: 무작위 문서
-description: 검토 완료 백과 문서 중 하나를 무작위로 엽니다
 ---
-
-import RandomArticle from '../../../components/wiki/RandomArticle.astro';
-
-
-<RandomArticle />
-`, 'utf8');
-
-await writeFile('src/content/docs/special/editor-quality.mdx', `---
 title: 편집 품질 대시보드
 description: 백과 문서의 검토 주기, 근거, 연결, 자료실 계약과 정적 빌드 상태를 한 화면에서 확인한다.
 pagefind: false
@@ -37,5 +24,3 @@ import EditorQualityDashboard from '../../../components/wiki/EditorQualityDashbo
 - [학습 재현성](/wiki/training-reproducibility/)
 - [회귀 테스트형 평가](/wiki/regression-evaluation/)
 - [전체 문서(색인)](/special/all-pages/)
-`, 'utf8');
-console.log('wiki special pages created');

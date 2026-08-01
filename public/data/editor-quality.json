@@ -1,0 +1,4153 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W60",
+  "asOf": "2026-08-01",
+  "formulaVersion": "editor-quality-v1",
+  "overallStatus": "pass",
+  "counts": {
+    "articles": 1624,
+    "reviewedArticles": 1624,
+    "courses": 16,
+    "prompts": 1500,
+    "artifacts": 120,
+    "activeTools": 4,
+    "reviewQueue": 215
+  },
+  "review": {
+    "policy": [
+      {
+        "id": "evergreen",
+        "label": "안정 개념",
+        "days": 730,
+        "articles": 794
+      },
+      {
+        "id": "periodic",
+        "label": "정기 검토",
+        "days": 180,
+        "articles": 627
+      },
+      {
+        "id": "fast-changing",
+        "label": "빠른 변화",
+        "days": 60,
+        "articles": 203
+      }
+    ],
+    "counts": {
+      "overdue": 0,
+      "dueWithin30Days": 0,
+      "dueWithin90Days": 203,
+      "currentBeyond90Days": 1421
+    },
+    "priorityCounts": {
+      "blocking": 0,
+      "attention": 12,
+      "scheduled": 203
+    },
+    "queue": [
+      {
+        "id": "curriculum-sequencing",
+        "title": "교육과정 순서화",
+        "englishTitle": "Curriculum Sequencing",
+        "url": "/wiki/curriculum-sequencing/",
+        "categoryId": "foundations",
+        "categoryTitle": "AI·머신러닝 기초",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 4,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "paired-bootstrap",
+        "title": "대응 부트스트랩",
+        "englishTitle": "Paired Bootstrap",
+        "url": "/wiki/paired-bootstrap/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 5,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "bayesian-knowledge-tracing",
+        "title": "베이즈 지식 추적",
+        "englishTitle": "Bayesian Knowledge Tracing",
+        "url": "/wiki/bayesian-knowledge-tracing/",
+        "categoryId": "foundations",
+        "categoryTitle": "AI·머신러닝 기초",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 4,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "prerequisite-graph",
+        "title": "선수 개념 그래프",
+        "englishTitle": "Prerequisite Graph",
+        "url": "/wiki/prerequisite-graph/",
+        "categoryId": "foundations",
+        "categoryTitle": "AI·머신러닝 기초",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 4,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "selective-prediction",
+        "title": "선택적 예측",
+        "englishTitle": "Selective Prediction",
+        "url": "/wiki/selective-prediction/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 5,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "mastery-learning",
+        "title": "숙달 학습",
+        "englishTitle": "Mastery Learning",
+        "url": "/wiki/mastery-learning/",
+        "categoryId": "foundations",
+        "categoryTitle": "AI·머신러닝 기초",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 4,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "abstention-mechanism",
+        "title": "예측 보류 메커니즘",
+        "englishTitle": "Abstention Mechanism",
+        "url": "/wiki/abstention-mechanism/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 5,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "risk-coverage-curve",
+        "title": "위험도-포괄률 곡선",
+        "englishTitle": "Risk-Coverage Curve",
+        "url": "/wiki/risk-coverage-curve/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 5,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "knowledge-tracing",
+        "title": "지식 추적",
+        "englishTitle": "Knowledge Tracing",
+        "url": "/wiki/knowledge-tracing/",
+        "categoryId": "foundations",
+        "categoryTitle": "AI·머신러닝 기초",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 4,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "minimum-detectable-effect",
+        "title": "최소 검출 가능 효과",
+        "englishTitle": "Minimum Detectable Effect",
+        "url": "/wiki/minimum-detectable-effect/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 5,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "conformal-prediction",
+        "title": "컨포멀 예측",
+        "englishTitle": "Conformal Prediction",
+        "url": "/wiki/conformal-prediction/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 5,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "learning-objective",
+        "title": "학습 목표",
+        "englishTitle": "Learning Objective",
+        "url": "/wiki/learning-objective/",
+        "categoryId": "foundations",
+        "categoryTitle": "AI·머신러닝 기초",
+        "volatility": "evergreen",
+        "volatilityLabel": "안정 개념",
+        "reviewedAt": "2026-08-01",
+        "dueAt": "2028-07-31",
+        "daysRemaining": 730,
+        "priority": "attention",
+        "sourceCount": 4,
+        "reasons": [
+          "자동 확인이 제한된 출처가 연결되어 있다."
+        ]
+      },
+      {
+        "id": "indirect-prompt-injection",
+        "title": "간접 프롬프트 인젝션",
+        "englishTitle": "Indirect Prompt Injection",
+        "url": "/wiki/indirect-prompt-injection/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-13",
+        "dueAt": "2026-09-11",
+        "daysRemaining": 41,
+        "priority": "scheduled",
+        "sourceCount": 3,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-update",
+        "title": "모델 업데이트",
+        "englishTitle": "Model Update",
+        "url": "/wiki/model-update/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-13",
+        "dueAt": "2026-09-11",
+        "daysRemaining": 41,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-release",
+        "title": "모델 출시",
+        "englishTitle": "Model Release",
+        "url": "/wiki/model-release/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-13",
+        "dueAt": "2026-09-11",
+        "daysRemaining": 41,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "excessive-agency",
+        "title": "과도한 자율성",
+        "englishTitle": "Excessive Agency",
+        "url": "/wiki/excessive-agency/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "leaderboard",
+        "title": "리더보드",
+        "englishTitle": "Leaderboard",
+        "url": "/wiki/leaderboard/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "browser-use-agent",
+        "title": "브라우저 사용 에이전트",
+        "englishTitle": "Browser-Use Agent",
+        "url": "/wiki/browser-use-agent/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "video-generation",
+        "title": "비디오 생성",
+        "englishTitle": "Video Generation",
+        "url": "/wiki/video-generation/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "video-diffusion",
+        "title": "비디오 확산",
+        "englishTitle": "Video Diffusion",
+        "url": "/wiki/video-diffusion/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "right-to-deletion",
+        "title": "삭제권",
+        "englishTitle": "Right to Deletion",
+        "url": "/wiki/right-to-deletion/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "world-simulation-model",
+        "title": "세계 시뮬레이션 모델",
+        "englishTitle": "World Simulation Model",
+        "url": "/wiki/world-simulation-model/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "neural-processing-unit",
+        "title": "신경망 처리 장치",
+        "englishTitle": "Neural Processing Unit",
+        "url": "/wiki/neural-processing-unit/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "realtime-api",
+        "title": "실시간 API",
+        "englishTitle": "Realtime API",
+        "url": "/wiki/realtime-api/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "open-source-ai-definition",
+        "title": "오픈소스 AI 정의",
+        "englishTitle": "Open Source AI Definition",
+        "url": "/wiki/open-source-ai-definition/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "speech-language-model",
+        "title": "음성 언어 모델",
+        "englishTitle": "Speech Language Model",
+        "url": "/wiki/speech-language-model/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "dual-use-ai",
+        "title": "이중용도 AI",
+        "englishTitle": "Dual-Use AI",
+        "url": "/wiki/dual-use-ai/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "long-video-understanding",
+        "title": "장시간 비디오 이해",
+        "englishTitle": "Long-Video Understanding",
+        "url": "/wiki/long-video-understanding/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "emergent-misalignment",
+        "title": "창발적 오정렬",
+        "englishTitle": "Emergent Misalignment",
+        "url": "/wiki/emergent-misalignment/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "computer-use-agent",
+        "title": "컴퓨터 사용 에이전트",
+        "englishTitle": "Computer-Use Agent",
+        "url": "/wiki/computer-use-agent/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "cloud-ai-service",
+        "title": "클라우드 AI 서비스",
+        "englishTitle": "Cloud AI Service",
+        "url": "/wiki/cloud-ai-service/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "unified-response-api",
+        "title": "통합 응답 API",
+        "englishTitle": "Unified Response API",
+        "url": "/wiki/unified-response-api/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "catastrophic-ai-risk",
+        "title": "파국적 AI 위험",
+        "englishTitle": "Catastrophic AI Risk",
+        "url": "/wiki/catastrophic-ai-risk/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "prompt-leakage",
+        "title": "프롬프트 유출",
+        "englishTitle": "Prompt Leakage",
+        "url": "/wiki/prompt-leakage/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-accelerator",
+        "title": "AI 가속기",
+        "englishTitle": "AI Accelerator",
+        "url": "/wiki/ai-accelerator/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-supply-chain-vulnerability",
+        "title": "AI 공급망 취약점",
+        "englishTitle": "AI Supply Chain Vulnerability",
+        "url": "/wiki/ai-supply-chain-vulnerability/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-datacenter",
+        "title": "AI 데이터센터",
+        "englishTitle": "AI Datacenter",
+        "url": "/wiki/ai-datacenter/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-misuse",
+        "title": "AI 오용",
+        "englishTitle": "AI Misuse",
+        "url": "/wiki/ai-misuse/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "cuda",
+        "title": "CUDA",
+        "englishTitle": "CUDA",
+        "url": "/wiki/cuda/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "jax",
+        "title": "JAX",
+        "englishTitle": "JAX",
+        "url": "/wiki/jax/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "keras",
+        "title": "Keras",
+        "englishTitle": "Keras",
+        "url": "/wiki/keras/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mlperf",
+        "title": "MLPerf",
+        "englishTitle": "MLPerf",
+        "url": "/wiki/mlperf/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "nvlink",
+        "title": "NVLink",
+        "englishTitle": "NVLink",
+        "url": "/wiki/nvlink/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "rag-poisoning",
+        "title": "RAG 오염",
+        "englishTitle": "RAG Poisoning",
+        "url": "/wiki/rag-poisoning/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "rocm",
+        "title": "ROCm",
+        "englishTitle": "ROCm",
+        "url": "/wiki/rocm/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "swe-bench",
+        "title": "SWE-bench",
+        "englishTitle": "SWE-bench",
+        "url": "/wiki/swe-bench/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "tensorflow",
+        "title": "TensorFlow",
+        "englishTitle": "TensorFlow",
+        "url": "/wiki/tensorflow/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "transformers-library",
+        "title": "Transformers 라이브러리",
+        "englishTitle": "Transformers Library",
+        "url": "/wiki/transformers-library/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-14",
+        "dueAt": "2026-09-12",
+        "daysRemaining": 42,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "compute-cost",
+        "title": "계산 비용",
+        "englishTitle": "Compute Cost",
+        "url": "/wiki/compute-cost/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "process-reward-model",
+        "title": "과정 보상 모델",
+        "englishTitle": "Process Reward Model",
+        "url": "/wiki/process-reward-model/",
+        "categoryId": "training",
+        "categoryTitle": "학습과 사후학습",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "managed-inference-platform",
+        "title": "관리형 추론 플랫폼",
+        "englishTitle": "Managed Inference Platform",
+        "url": "/wiki/managed-inference-platform/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "deepfake-detection",
+        "title": "딥페이크 탐지",
+        "englishTitle": "Deepfake Detection",
+        "url": "/wiki/deepfake-detection/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "machine-unlearning",
+        "title": "머신 언러닝",
+        "englishTitle": "Machine Unlearning",
+        "url": "/wiki/machine-unlearning/",
+        "categoryId": "training",
+        "categoryTitle": "학습과 사후학습",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multimodal-jailbreak",
+        "title": "멀티모달 탈옥 공격",
+        "englishTitle": "Multimodal Jailbreak",
+        "url": "/wiki/multimodal-jailbreak/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multimodal-tokenizer",
+        "title": "멀티모달 토크나이저",
+        "englishTitle": "Multimodal Tokenizer",
+        "url": "/wiki/multimodal-tokenizer/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-commoditization",
+        "title": "모델 범용재화화",
+        "englishTitle": "Model Commoditization",
+        "url": "/wiki/model-commoditization/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-serving-platform",
+        "title": "모델 서빙 플랫폼",
+        "englishTitle": "Model Serving Platform",
+        "url": "/wiki/model-serving-platform/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "artificial-general-intelligence",
+        "title": "범용 인공지능",
+        "englishTitle": "Artificial General Intelligence",
+        "url": "/wiki/artificial-general-intelligence/",
+        "categoryId": "foundations",
+        "categoryTitle": "AI·머신러닝 기초",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "cost-monitoring",
+        "title": "비용 모니터링",
+        "englishTitle": "Cost Monitoring",
+        "url": "/wiki/cost-monitoring/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-security",
+        "title": "에이전트 보안",
+        "englishTitle": "Agent Security",
+        "url": "/wiki/agent-security/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-swarm",
+        "title": "에이전트 스웜",
+        "englishTitle": "Agent Swarm",
+        "url": "/wiki/agent-swarm/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agentic-rag",
+        "title": "에이전트형 RAG",
+        "englishTitle": "Agentic RAG",
+        "url": "/wiki/agentic-rag/",
+        "categoryId": "retrieval",
+        "categoryTitle": "임베딩·검색·RAG",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "latent-reasoning",
+        "title": "잠재 추론",
+        "englishTitle": "Latent Reasoning",
+        "url": "/wiki/latent-reasoning/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "knowledge-cutoff",
+        "title": "지식 기준 시점",
+        "englishTitle": "Knowledge Cutoff",
+        "url": "/wiki/knowledge-cutoff/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-economics",
+        "title": "추론 경제성",
+        "englishTitle": "Inference Economics",
+        "url": "/wiki/inference-economics/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "reasoning-capability",
+        "title": "추론 능력",
+        "englishTitle": "Reasoning Capability",
+        "url": "/wiki/reasoning-capability/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "context-engineering",
+        "title": "컨텍스트 엔지니어링",
+        "englishTitle": "Context Engineering",
+        "url": "/wiki/context-engineering/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "content-provenance",
+        "title": "콘텐츠 출처 증명",
+        "englishTitle": "Content Provenance",
+        "url": "/wiki/content-provenance/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "text-to-video-generation",
+        "title": "텍스트-비디오 생성",
+        "englishTitle": "Text-to-Video Generation",
+        "url": "/wiki/text-to-video-generation/",
+        "categoryId": "multimodal",
+        "categoryTitle": "멀티모달 AI",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "token-cost",
+        "title": "토큰 비용",
+        "englishTitle": "Token Cost",
+        "url": "/wiki/token-cost/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "token-usage-monitoring",
+        "title": "토큰 사용량 모니터링",
+        "englishTitle": "Token Usage Monitoring",
+        "url": "/wiki/token-usage-monitoring/",
+        "categoryId": "evaluation",
+        "categoryTitle": "평가·관측성·벤치마크",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "runaway-agent",
+        "title": "통제 이탈 에이전트",
+        "englishTitle": "Runaway Agent",
+        "url": "/wiki/runaway-agent/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "training-data-copyright",
+        "title": "학습 데이터 저작권",
+        "englishTitle": "Training Data Copyright",
+        "url": "/wiki/training-data-copyright/",
+        "categoryId": "training",
+        "categoryTitle": "학습과 사후학습",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "training-cost",
+        "title": "학습 비용",
+        "englishTitle": "Training Cost",
+        "url": "/wiki/training-cost/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-supply-chain",
+        "title": "AI 공급망",
+        "englishTitle": "AI Supply Chain",
+        "url": "/wiki/ai-supply-chain/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-regulatory-classification",
+        "title": "AI 규제 분류",
+        "englishTitle": "AI Regulatory Classification",
+        "url": "/wiki/ai-regulatory-classification/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-incident-reporting",
+        "title": "AI 사고 보고",
+        "englishTitle": "AI Incident Reporting",
+        "url": "/wiki/ai-incident-reporting/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-disclosure",
+        "title": "AI 사용 고지",
+        "englishTitle": "AI Disclosure",
+        "url": "/wiki/ai-disclosure/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-interoperability-standard",
+        "title": "AI 상호운용성 표준",
+        "englishTitle": "AI Interoperability Standard",
+        "url": "/wiki/ai-interoperability-standard/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-energy-consumption",
+        "title": "AI 에너지 소비",
+        "englishTitle": "AI Energy Consumption",
+        "url": "/wiki/ai-energy-consumption/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-compliance-monitoring",
+        "title": "AI 준수 모니터링",
+        "englishTitle": "AI Compliance Monitoring",
+        "url": "/wiki/ai-compliance-monitoring/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "total-cost-of-ownership-for-ai",
+        "title": "AI 총소유비용",
+        "englishTitle": "Total Cost of Ownership for AI",
+        "url": "/wiki/total-cost-of-ownership-for-ai/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "ai-chip-availability",
+        "title": "AI 칩 가용성",
+        "englishTitle": "AI Chip Availability",
+        "url": "/wiki/ai-chip-availability/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-cost-tracking",
+        "title": "API 비용 추적",
+        "englishTitle": "API Cost Tracking",
+        "url": "/wiki/api-cost-tracking/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-penetration-testing",
+        "title": "LLM 침투 테스트",
+        "englishTitle": "LLM Penetration Testing",
+        "url": "/wiki/llm-penetration-testing/",
+        "categoryId": "safety",
+        "categoryTitle": "안전·보안·윤리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 7,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llmops",
+        "title": "LLMOps",
+        "englishTitle": "LLMOps",
+        "url": "/wiki/llmops/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-tools",
+        "title": "MCP 도구",
+        "englishTitle": "MCP Tools",
+        "url": "/wiki/mcp-tools/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-resources",
+        "title": "MCP 리소스",
+        "englishTitle": "MCP Resources",
+        "url": "/wiki/mcp-resources/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-elicitation",
+        "title": "MCP 사용자 정보 요청",
+        "englishTitle": "MCP Elicitation",
+        "url": "/wiki/mcp-elicitation/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-sampling",
+        "title": "MCP 샘플링",
+        "englishTitle": "MCP Sampling",
+        "url": "/wiki/mcp-sampling/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-server",
+        "title": "MCP 서버",
+        "englishTitle": "MCP Server",
+        "url": "/wiki/mcp-server/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-client",
+        "title": "MCP 클라이언트",
+        "englishTitle": "MCP Client",
+        "url": "/wiki/mcp-client/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-prompts",
+        "title": "MCP 프롬프트",
+        "englishTitle": "MCP Prompts",
+        "url": "/wiki/mcp-prompts/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-host",
+        "title": "MCP 호스트",
+        "englishTitle": "MCP Host",
+        "url": "/wiki/mcp-host/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mlflow",
+        "title": "MLflow",
+        "englishTitle": "MLflow",
+        "url": "/wiki/mlflow/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "npu-inference",
+        "title": "NPU 추론",
+        "englishTitle": "NPU Inference",
+        "url": "/wiki/npu-inference/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "tensorrt-llm",
+        "title": "TensorRT-LLM",
+        "englishTitle": "TensorRT-LLM",
+        "url": "/wiki/tensorrt-llm/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-15",
+        "dueAt": "2026-09-13",
+        "daysRemaining": 43,
+        "priority": "scheduled",
+        "sourceCount": 8,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "cross-modal-latency-budget",
+        "title": "교차 모달 지연 예산",
+        "englishTitle": "Cross-modal Latency Budget",
+        "url": "/wiki/cross-modal-latency-budget/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "structured-output-recovery",
+        "title": "구조화 출력 복구",
+        "englishTitle": "Structured Output Recovery",
+        "url": "/wiki/structured-output-recovery/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "long-context-routing",
+        "title": "긴 문맥 라우팅",
+        "englishTitle": "Long-context Routing",
+        "url": "/wiki/long-context-routing/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "conversation-state-compaction",
+        "title": "대화 상태 압축",
+        "englishTitle": "Conversation State Compaction",
+        "url": "/wiki/conversation-state-compaction/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "tool-permission-broker",
+        "title": "도구 권한 브로커",
+        "englishTitle": "Tool Permission Broker",
+        "url": "/wiki/tool-permission-broker/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multi-lora-serving",
+        "title": "멀티 LoRA 서빙",
+        "englishTitle": "Multi-LoRA Serving",
+        "url": "/wiki/multi-lora-serving/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multimodal-safety-evaluation",
+        "title": "멀티모달 안전 평가",
+        "englishTitle": "Multimodal Safety Evaluation",
+        "url": "/wiki/multimodal-safety-evaluation/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multimodal-input-contract",
+        "title": "멀티모달 입력 계약",
+        "englishTitle": "Multimodal Input Contract",
+        "url": "/wiki/multimodal-input-contract/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multi-agent-deadlock",
+        "title": "멀티에이전트 교착 상태",
+        "englishTitle": "Multi-agent Deadlock",
+        "url": "/wiki/multi-agent-deadlock/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multi-agent-conflict-mediation",
+        "title": "멀티에이전트 충돌 중재",
+        "englishTitle": "Multi-agent Conflict Mediation",
+        "url": "/wiki/multi-agent-conflict-mediation/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "multi-agent-consensus-protocol",
+        "title": "멀티에이전트 합의 프로토콜",
+        "englishTitle": "Multi-agent Consensus Protocol",
+        "url": "/wiki/multi-agent-consensus-protocol/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "modality-fallback-policy",
+        "title": "모달리티 대체 정책",
+        "englishTitle": "Modality Fallback Policy",
+        "url": "/wiki/modality-fallback-policy/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-fallback-chain",
+        "title": "모델 대체 체인",
+        "englishTitle": "Model Fallback Chain",
+        "url": "/wiki/model-fallback-chain/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-loading-latency",
+        "title": "모델 로딩 지연 시간",
+        "englishTitle": "Model-loading Latency",
+        "url": "/wiki/model-loading-latency/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-version-pinning",
+        "title": "모델 버전 고정",
+        "englishTitle": "Model Version Pinning",
+        "url": "/wiki/model-version-pinning/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-selection-policy",
+        "title": "모델 선택 정책",
+        "englishTitle": "Model Selection Policy",
+        "url": "/wiki/model-selection-policy/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-capability-profile",
+        "title": "모델 역량 프로파일",
+        "englishTitle": "Model Capability Profile",
+        "url": "/wiki/model-capability-profile/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-deprecation-migration",
+        "title": "모델 종료 마이그레이션",
+        "englishTitle": "Model Deprecation Migration",
+        "url": "/wiki/model-deprecation-migration/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-fleet-routing",
+        "title": "모델 플릿 라우팅",
+        "englishTitle": "Model Fleet Routing",
+        "url": "/wiki/model-fleet-routing/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "model-compatibility-matrix",
+        "title": "모델 호환성 행렬",
+        "englishTitle": "Model Compatibility Matrix",
+        "url": "/wiki/model-compatibility-matrix/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "media-provenance-pipeline",
+        "title": "미디어 출처 파이프라인",
+        "englishTitle": "Media Provenance Pipeline",
+        "url": "/wiki/media-provenance-pipeline/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "streaming-response-contract",
+        "title": "스트리밍 응답 계약",
+        "englishTitle": "Streaming Response Contract",
+        "url": "/wiki/streaming-response-contract/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "stream-resume-protocol",
+        "title": "스트림 재개 프로토콜",
+        "englishTitle": "Stream Resume Protocol",
+        "url": "/wiki/stream-resume-protocol/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "system-prompt-composition",
+        "title": "시스템 프롬프트 합성",
+        "englishTitle": "System Prompt Composition",
+        "url": "/wiki/system-prompt-composition/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "adapter-serving",
+        "title": "어댑터 서빙",
+        "englishTitle": "Adapter Serving",
+        "url": "/wiki/adapter-serving/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-step-budget",
+        "title": "에이전트 단계 예산",
+        "englishTitle": "Agent Step Budget",
+        "url": "/wiki/agent-step-budget/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-tool-retry-policy",
+        "title": "에이전트 도구 재시도 정책",
+        "englishTitle": "Agent Tool Retry Policy",
+        "url": "/wiki/agent-tool-retry-policy/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-tool-timeout-budget",
+        "title": "에이전트 도구 타임아웃 예산",
+        "englishTitle": "Agent Tool Timeout Budget",
+        "url": "/wiki/agent-tool-timeout-budget/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-tool-transaction",
+        "title": "에이전트 도구 트랜잭션",
+        "englishTitle": "Agent Tool Transaction",
+        "url": "/wiki/agent-tool-transaction/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-loop-watchdog",
+        "title": "에이전트 루프 감시기",
+        "englishTitle": "Agent Loop Watchdog",
+        "url": "/wiki/agent-loop-watchdog/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-memory-retention",
+        "title": "에이전트 메모리 보유",
+        "englishTitle": "Agent Memory Retention",
+        "url": "/wiki/agent-memory-retention/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-memory-consistency",
+        "title": "에이전트 메모리 일관성",
+        "englishTitle": "Agent Memory Consistency",
+        "url": "/wiki/agent-memory-consistency/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-idempotency",
+        "title": "에이전트 멱등성",
+        "englishTitle": "Agent Idempotency",
+        "url": "/wiki/agent-idempotency/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-context-handoff",
+        "title": "에이전트 문맥 핸드오프",
+        "englishTitle": "Agent Context Handoff",
+        "url": "/wiki/agent-context-handoff/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-compensation-transaction",
+        "title": "에이전트 보상 트랜잭션",
+        "englishTitle": "Agent Compensation Transaction",
+        "url": "/wiki/agent-compensation-transaction/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-side-effect-control",
+        "title": "에이전트 부수 효과 제어",
+        "englishTitle": "Agent Side-effect Control",
+        "url": "/wiki/agent-side-effect-control/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-incident-playbook",
+        "title": "에이전트 사고 대응 절차",
+        "englishTitle": "Agent Incident Playbook",
+        "url": "/wiki/agent-incident-playbook/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-human-approval-gate",
+        "title": "에이전트 사람 승인 게이트",
+        "englishTitle": "Agent Human-approval Gate",
+        "url": "/wiki/agent-human-approval-gate/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-state-machine",
+        "title": "에이전트 상태 기계",
+        "englishTitle": "Agent State Machine",
+        "url": "/wiki/agent-state-machine/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-escalation-policy",
+        "title": "에이전트 상향 보고 정책",
+        "englishTitle": "Agent Escalation Policy",
+        "url": "/wiki/agent-escalation-policy/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-simulation-test",
+        "title": "에이전트 시뮬레이션 테스트",
+        "englishTitle": "Agent Simulation Test",
+        "url": "/wiki/agent-simulation-test/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-run-contract",
+        "title": "에이전트 실행 계약",
+        "englishTitle": "Agent Run Contract",
+        "url": "/wiki/agent-run-contract/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-run-replay",
+        "title": "에이전트 실행 재현",
+        "englishTitle": "Agent Run Replay",
+        "url": "/wiki/agent-run-replay/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-canary-run",
+        "title": "에이전트 카나리 실행",
+        "englishTitle": "Agent Canary Run",
+        "url": "/wiki/agent-canary-run/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-chaos-testing",
+        "title": "에이전트 카오스 테스트",
+        "englishTitle": "Agent Chaos Testing",
+        "url": "/wiki/agent-chaos-testing/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "agent-action-ledger",
+        "title": "에이전트 행동 원장",
+        "englishTitle": "Agent Action Ledger",
+        "url": "/wiki/agent-action-ledger/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "continuous-batching-fairness",
+        "title": "연속 배칭 공정성",
+        "englishTitle": "Continuous Batching Fairness",
+        "url": "/wiki/continuous-batching-fairness/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "continuous-batching-policy",
+        "title": "연속 배칭 정책",
+        "englishTitle": "Continuous Batching Policy",
+        "url": "/wiki/continuous-batching-policy/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "request-preemption",
+        "title": "요청 선점",
+        "englishTitle": "Request Preemption",
+        "url": "/wiki/request-preemption/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "response-contract",
+        "title": "응답 계약",
+        "englishTitle": "Response Contract",
+        "url": "/wiki/response-contract/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "semantic-output-validation",
+        "title": "의미 기반 출력 검증",
+        "englishTitle": "Semantic Output Validation",
+        "url": "/wiki/semantic-output-validation/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "instruction-priority-architecture",
+        "title": "지시 우선순위 아키텍처",
+        "englishTitle": "Instruction Priority Architecture",
+        "url": "/wiki/instruction-priority-architecture/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "instruction-conflict-resolution",
+        "title": "지시 충돌 해소",
+        "englishTitle": "Instruction Conflict Resolution",
+        "url": "/wiki/instruction-conflict-resolution/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-overload-control",
+        "title": "추론 과부하 제어",
+        "englishTitle": "Inference Overload Control",
+        "url": "/wiki/inference-overload-control/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-tail-latency-debugging",
+        "title": "추론 꼬리 지연 디버깅",
+        "englishTitle": "Inference Tail-latency Debugging",
+        "url": "/wiki/inference-tail-latency-debugging/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "reasoning-effort-control",
+        "title": "추론 노력 제어",
+        "englishTitle": "Reasoning Effort Control",
+        "url": "/wiki/reasoning-effort-control/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-energy-efficiency",
+        "title": "추론 에너지 효율",
+        "englishTitle": "Inference Energy Efficiency",
+        "url": "/wiki/inference-energy-efficiency/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-backpressure",
+        "title": "추론 역압",
+        "englishTitle": "Inference Backpressure",
+        "url": "/wiki/inference-backpressure/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-capacity-headroom",
+        "title": "추론 용량 여유분",
+        "englishTitle": "Inference Capacity Headroom",
+        "url": "/wiki/inference-capacity-headroom/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-workload-shaping",
+        "title": "추론 워크로드 형상화",
+        "englishTitle": "Inference Workload Shaping",
+        "url": "/wiki/inference-workload-shaping/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-warm-pool",
+        "title": "추론 웜 풀",
+        "englishTitle": "Inference Warm Pool",
+        "url": "/wiki/inference-warm-pool/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "reasoning-trace-policy",
+        "title": "추론 추적 정책",
+        "englishTitle": "Reasoning Trace Policy",
+        "url": "/wiki/reasoning-trace-policy/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-queue-discipline",
+        "title": "추론 큐 규칙",
+        "englishTitle": "Inference Queue Discipline",
+        "url": "/wiki/inference-queue-discipline/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-carbon-accounting",
+        "title": "추론 탄소 회계",
+        "englishTitle": "Inference Carbon Accounting",
+        "url": "/wiki/inference-carbon-accounting/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "inference-slo-error-budget",
+        "title": "추론 SLO 오류 예산",
+        "englishTitle": "Inference SLO Error Budget",
+        "url": "/wiki/inference-slo-error-budget/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "context-window-budgeting",
+        "title": "컨텍스트 창 예산 관리",
+        "englishTitle": "Context-window Budgeting",
+        "url": "/wiki/context-window-budgeting/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "context-cache-coherence",
+        "title": "컨텍스트 캐시 일관성",
+        "englishTitle": "Context Cache Coherence",
+        "url": "/wiki/context-cache-coherence/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "token-scheduler",
+        "title": "토큰 스케줄러",
+        "englishTitle": "Token Scheduler",
+        "url": "/wiki/token-scheduler/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "token-budget-admission-control",
+        "title": "토큰 예산 수용 제어",
+        "englishTitle": "Token-budget Admission Control",
+        "url": "/wiki/token-budget-admission-control/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "token-budget-controller",
+        "title": "토큰 예산 제어기",
+        "englishTitle": "Token Budget Controller",
+        "url": "/wiki/token-budget-controller/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "token-accounting",
+        "title": "토큰 회계",
+        "englishTitle": "Token Accounting",
+        "url": "/wiki/token-accounting/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "speculative-generation-policy",
+        "title": "투기적 생성 정책",
+        "englishTitle": "Speculative Generation Policy",
+        "url": "/wiki/speculative-generation-policy/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "prompt-contract-testing",
+        "title": "프롬프트 계약 테스트",
+        "englishTitle": "Prompt Contract Testing",
+        "url": "/wiki/prompt-contract-testing/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "prompt-release-governance",
+        "title": "프롬프트 릴리스 거버넌스",
+        "englishTitle": "Prompt Release Governance",
+        "url": "/wiki/prompt-release-governance/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "prompt-portfolio-observability",
+        "title": "프롬프트 포트폴리오 관측성",
+        "englishTitle": "Prompt Portfolio Observability",
+        "url": "/wiki/prompt-portfolio-observability/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "prefill-decode-disaggregation",
+        "title": "프리필·디코드 분리",
+        "englishTitle": "Prefill-decode Disaggregation",
+        "url": "/wiki/prefill-decode-disaggregation/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-provider-abstraction",
+        "title": "API 공급자 추상화",
+        "englishTitle": "API Provider Abstraction",
+        "url": "/wiki/api-provider-abstraction/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-data-retention",
+        "title": "API 데이터 보유",
+        "englishTitle": "API Data Retention",
+        "url": "/wiki/api-data-retention/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-region-routing",
+        "title": "API 리전 라우팅",
+        "englishTitle": "API Region Routing",
+        "url": "/wiki/api-region-routing/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-batch-contract",
+        "title": "API 배치 계약",
+        "englishTitle": "API Batch Contract",
+        "url": "/wiki/api-batch-contract/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-version-negotiation",
+        "title": "API 버전 협상",
+        "englishTitle": "API Version Negotiation",
+        "url": "/wiki/api-version-negotiation/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-partial-failure",
+        "title": "API 부분 실패",
+        "englishTitle": "API Partial Failure",
+        "url": "/wiki/api-partial-failure/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-secret-rotation",
+        "title": "API 비밀 키 교체",
+        "englishTitle": "API Secret Rotation",
+        "url": "/wiki/api-secret-rotation/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-schema-evolution",
+        "title": "API 스키마 진화",
+        "englishTitle": "API Schema Evolution",
+        "url": "/wiki/api-schema-evolution/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-error-envelope",
+        "title": "API 오류 엔벨로프",
+        "englishTitle": "API Error Envelope",
+        "url": "/wiki/api-error-envelope/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-rate-limit-budget",
+        "title": "API 요청 제한 예산",
+        "englishTitle": "API Rate-limit Budget",
+        "url": "/wiki/api-rate-limit-budget/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-request-deduplication",
+        "title": "API 요청 중복 제거",
+        "englishTitle": "API Request Deduplication",
+        "url": "/wiki/api-request-deduplication/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-retry-budget",
+        "title": "API 재시도 예산",
+        "englishTitle": "API Retry Budget",
+        "url": "/wiki/api-retry-budget/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-conformance-suite",
+        "title": "API 적합성 테스트 스위트",
+        "englishTitle": "API Conformance Suite",
+        "url": "/wiki/api-conformance-suite/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-client-observability",
+        "title": "API 클라이언트 관측성",
+        "englishTitle": "API Client Observability",
+        "url": "/wiki/api-client-observability/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-timeout-budget",
+        "title": "API 타임아웃 예산",
+        "englishTitle": "API Timeout Budget",
+        "url": "/wiki/api-timeout-budget/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-backward-compatibility",
+        "title": "API 하위 호환성",
+        "englishTitle": "API Backward Compatibility",
+        "url": "/wiki/api-backward-compatibility/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-quota-allocation",
+        "title": "API 할당량 배분",
+        "englishTitle": "API Quota Allocation",
+        "url": "/wiki/api-quota-allocation/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "api-circuit-breaker-policy",
+        "title": "API 회로 차단기 정책",
+        "englishTitle": "API Circuit-breaker Policy",
+        "url": "/wiki/api-circuit-breaker-policy/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "kv-cache-isolation",
+        "title": "KV 캐시 격리",
+        "englishTitle": "KV-cache Isolation",
+        "url": "/wiki/kv-cache-isolation/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "kv-cache-admission",
+        "title": "KV 캐시 수용 제어",
+        "englishTitle": "KV-cache Admission",
+        "url": "/wiki/kv-cache-admission/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "kv-cache-capacity-planning",
+        "title": "KV 캐시 용량 계획",
+        "englishTitle": "KV-cache Capacity Planning",
+        "url": "/wiki/kv-cache-capacity-planning/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-feature-flag",
+        "title": "LLM 기능 플래그",
+        "englishTitle": "LLM Feature Flag",
+        "url": "/wiki/llm-feature-flag/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-routing-gateway",
+        "title": "LLM 라우팅 게이트웨이",
+        "englishTitle": "LLM Routing Gateway",
+        "url": "/wiki/llm-routing-gateway/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-cost-attribution",
+        "title": "LLM 비용 귀속",
+        "englishTitle": "LLM Cost Attribution",
+        "url": "/wiki/llm-cost-attribution/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-serving-slo",
+        "title": "LLM 서빙 SLO",
+        "englishTitle": "LLM Serving SLO",
+        "url": "/wiki/llm-serving-slo/",
+        "categoryId": "inference",
+        "categoryTitle": "추론·서빙·최적화",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-session-state",
+        "title": "LLM 세션 상태",
+        "englishTitle": "LLM Session State",
+        "url": "/wiki/llm-session-state/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-request-envelope",
+        "title": "LLM 요청 엔벨로프",
+        "englishTitle": "LLM Request Envelope",
+        "url": "/wiki/llm-request-envelope/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-request-normalization",
+        "title": "LLM 요청 정규화",
+        "englishTitle": "LLM Request Normalization",
+        "url": "/wiki/llm-request-normalization/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-workload-classification",
+        "title": "LLM 워크로드 분류",
+        "englishTitle": "LLM Workload Classification",
+        "url": "/wiki/llm-workload-classification/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-webhook-signature",
+        "title": "LLM 웹훅 서명",
+        "englishTitle": "LLM Webhook Signature",
+        "url": "/wiki/llm-webhook-signature/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-webhook-replay-defense",
+        "title": "LLM 웹훅 재전송 방어",
+        "englishTitle": "LLM Webhook Replay Defense",
+        "url": "/wiki/llm-webhook-replay-defense/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-response-reproducibility",
+        "title": "LLM 응답 재현성",
+        "englishTitle": "LLM Response Reproducibility",
+        "url": "/wiki/llm-response-reproducibility/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-response-normalization",
+        "title": "LLM 응답 정규화",
+        "englishTitle": "LLM Response Normalization",
+        "url": "/wiki/llm-response-normalization/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-output-determinism",
+        "title": "LLM 출력 결정성",
+        "englishTitle": "LLM Output Determinism",
+        "url": "/wiki/llm-output-determinism/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-client-conformance",
+        "title": "LLM 클라이언트 적합성",
+        "englishTitle": "LLM Client Conformance",
+        "url": "/wiki/llm-client-conformance/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-api-contract-test",
+        "title": "LLM API 계약 테스트",
+        "englishTitle": "LLM API Contract Test",
+        "url": "/wiki/llm-api-contract-test/",
+        "categoryId": "llm",
+        "categoryTitle": "LLM과 토큰 처리",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-api-idempotency",
+        "title": "LLM API 멱등성",
+        "englishTitle": "LLM API Idempotency",
+        "url": "/wiki/llm-api-idempotency/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "llm-api-pagination",
+        "title": "LLM API 페이지 나누기",
+        "englishTitle": "LLM API Pagination",
+        "url": "/wiki/llm-api-pagination/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "server-sent-event-recovery",
+        "title": "SSE 복구",
+        "englishTitle": "Server-sent Event Recovery",
+        "url": "/wiki/server-sent-event-recovery/",
+        "categoryId": "api",
+        "categoryTitle": "API·SDK·도구 호출",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-16",
+        "dueAt": "2026-09-14",
+        "daysRemaining": 44,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp",
+        "title": "모델 컨텍스트 프로토콜",
+        "englishTitle": "Model Context Protocol",
+        "url": "/wiki/mcp/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-23",
+        "dueAt": "2026-09-21",
+        "daysRemaining": 51,
+        "priority": "scheduled",
+        "sourceCount": 4,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "mcp-transport",
+        "title": "MCP 전송 계층",
+        "englishTitle": "MCP Transport",
+        "url": "/wiki/mcp-transport/",
+        "categoryId": "agents",
+        "categoryTitle": "에이전트·자동화·MCP",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-23",
+        "dueAt": "2026-09-21",
+        "daysRemaining": 51,
+        "priority": "scheduled",
+        "sourceCount": 9,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      },
+      {
+        "id": "pytorch",
+        "title": "PyTorch",
+        "englishTitle": "PyTorch",
+        "url": "/wiki/pytorch/",
+        "categoryId": "ecosystem",
+        "categoryTitle": "모델·서비스 생태계",
+        "volatility": "fast-changing",
+        "volatilityLabel": "빠른 변화",
+        "reviewedAt": "2026-07-23",
+        "dueAt": "2026-09-21",
+        "daysRemaining": 51,
+        "priority": "scheduled",
+        "sourceCount": 9,
+        "reasons": [
+          "90일 안에 재검토 기한이 도래한다."
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "uniqueArticleSourceUrls": 1053,
+    "trackedSourceUrls": 1053,
+    "untrackedSourceUrls": 0,
+    "reachableSourceUrls": 1051,
+    "restrictedSourceUrls": 2,
+    "unavailableSourceUrls": 0,
+    "articlesMeetingSourceMinimum": 1624,
+    "factualSections": 14816,
+    "evidencedFactualSections": 14816,
+    "invalidSourceReferences": 0
+  },
+  "structure": {
+    "exactlyTenSections": 1624,
+    "unresolvedRelations": 0,
+    "orphanArticles": 0,
+    "publicIndexMatches": true
+  },
+  "coverage": {
+    "courseLinkedArticles": 294,
+    "unresolvedCourseSteps": 0,
+    "activeTools": 4,
+    "missingActiveToolPages": 0,
+    "promptRecordsValid": 1500,
+    "artifactRecordsValid": 120
+  },
+  "categories": [
+    {
+      "id": "foundations",
+      "title": "AI·머신러닝 기초",
+      "articles": 106,
+      "overdue": 0,
+      "dueWithin90Days": 1,
+      "sourceWatch": 6
+    },
+    {
+      "id": "mathematics",
+      "title": "수학·통계 기초",
+      "articles": 100,
+      "overdue": 0,
+      "dueWithin90Days": 0,
+      "sourceWatch": 0
+    },
+    {
+      "id": "neural",
+      "title": "신경망과 딥러닝",
+      "articles": 100,
+      "overdue": 0,
+      "dueWithin90Days": 0,
+      "sourceWatch": 0
+    },
+    {
+      "id": "transformer",
+      "title": "트랜스포머와 모델 구조",
+      "articles": 100,
+      "overdue": 0,
+      "dueWithin90Days": 0,
+      "sourceWatch": 0
+    },
+    {
+      "id": "llm",
+      "title": "LLM과 토큰 처리",
+      "articles": 140,
+      "overdue": 0,
+      "dueWithin90Days": 44,
+      "sourceWatch": 0
+    },
+    {
+      "id": "training",
+      "title": "학습과 사후학습",
+      "articles": 115,
+      "overdue": 0,
+      "dueWithin90Days": 3,
+      "sourceWatch": 0
+    },
+    {
+      "id": "inference",
+      "title": "추론·서빙·최적화",
+      "articles": 131,
+      "overdue": 0,
+      "dueWithin90Days": 28,
+      "sourceWatch": 0
+    },
+    {
+      "id": "retrieval",
+      "title": "임베딩·검색·RAG",
+      "articles": 115,
+      "overdue": 0,
+      "dueWithin90Days": 1,
+      "sourceWatch": 0
+    },
+    {
+      "id": "api",
+      "title": "API·SDK·도구 호출",
+      "articles": 131,
+      "overdue": 0,
+      "dueWithin90Days": 28,
+      "sourceWatch": 0
+    },
+    {
+      "id": "agents",
+      "title": "에이전트·자동화·MCP",
+      "articles": 125,
+      "overdue": 0,
+      "dueWithin90Days": 40,
+      "sourceWatch": 0
+    },
+    {
+      "id": "multimodal",
+      "title": "멀티모달 AI",
+      "articles": 100,
+      "overdue": 0,
+      "dueWithin90Days": 10,
+      "sourceWatch": 0
+    },
+    {
+      "id": "evaluation",
+      "title": "평가·관측성·벤치마크",
+      "articles": 136,
+      "overdue": 0,
+      "dueWithin90Days": 5,
+      "sourceWatch": 6
+    },
+    {
+      "id": "safety",
+      "title": "안전·보안·윤리",
+      "articles": 125,
+      "overdue": 0,
+      "dueWithin90Days": 15,
+      "sourceWatch": 0
+    },
+    {
+      "id": "ecosystem",
+      "title": "모델·서비스 생태계",
+      "articles": 100,
+      "overdue": 0,
+      "dueWithin90Days": 28,
+      "sourceWatch": 0
+    }
+  ],
+  "gates": [
+    {
+      "id": "reviewed-publication",
+      "label": "검토 완료 문서만 공개",
+      "status": "pass",
+      "value": "1,624/1,624",
+      "description": "공개 문서 상태가 모두 reviewed인지 확인한다."
+    },
+    {
+      "id": "review-cadence",
+      "label": "재검토 기한 준수",
+      "status": "pass",
+      "value": "기한 초과 0개",
+      "description": "향후 90일 안에 203개를 계획 검토한다."
+    },
+    {
+      "id": "evidence-coverage",
+      "label": "출처·본문 근거 범위",
+      "status": "pass",
+      "value": "1,624/1,624 문서",
+      "description": "문서당 최소 3개 출처와 본문 섹션의 유효한 sourceRefs를 확인한다."
+    },
+    {
+      "id": "source-reachability",
+      "label": "외부 출처 도달성",
+      "status": "pass",
+      "value": "도달 1,051 · 제한 2",
+      "description": "접근 제한은 별도 관찰 대상으로 남기며 확인 불가 링크는 출시를 막는다."
+    },
+    {
+      "id": "relationship-integrity",
+      "label": "문서 관계 무결성",
+      "status": "pass",
+      "value": "미해결 0건",
+      "description": "선수·관련 문서와 공개 색인의 ID가 모두 실제 문서로 이어지는지 확인한다."
+    },
+    {
+      "id": "library-contracts",
+      "label": "자료실 데이터 계약",
+      "status": "pass",
+      "value": "프롬프트 1,500 · 자료 120",
+      "description": "프롬프트와 코드·설정 자료의 필수 공개 필드를 확인한다."
+    },
+    {
+      "id": "course-tool-connections",
+      "label": "코스·도구 연결",
+      "status": "pass",
+      "value": "코스 16 · 도구 4",
+      "description": "모든 코스 단계와 활성 실험실 도구의 공개 경로를 확인한다."
+    },
+    {
+      "id": "static-build",
+      "label": "정적 빌드·내부 링크",
+      "status": "pass",
+      "value": "1,672 페이지",
+      "description": "84,902개 내부 링크에서 0개 오류를 확인했다."
+    }
+  ],
+  "release": {
+    "status": "complete",
+    "htmlPages": 1672,
+    "internalLinkReferences": 84902,
+    "brokenInternalLinks": 0,
+    "requiredRoutes": {
+      "index.html": true,
+      "special/editor-quality/index.html": true,
+      "special/all-pages/index.html": true,
+      "paths/index.html": true,
+      "prompt-explorer/index.html": true,
+      "snippet-explorer/index.html": true,
+      "search/index.html": true,
+      "lab/learning-path/index.html": true,
+      "lab/evaluation-metrics/index.html": true,
+      "lab/model-memory/index.html": true,
+      "lab/prompt-schema/index.html": true
+    }
+  },
+  "provenance": {
+    "qualityPolicyVersion": "W0-2026-07-13",
+    "taxonomyVersion": "W0-2026-07-13",
+    "wikiGeneratedAt": "2026-08-01T06:03:54.856Z",
+    "sourceVerificationVersion": "W2-2026-07-13",
+    "sourceVerificationCheckedAt": "2026-08-01T05:03:20.138Z",
+    "inputsSha256": {
+      "qualityPolicy": "3dcc7450cc5fb054593867539e9fe09b3944eff3ea718ed277179bdb73b450c4",
+      "taxonomy": "1cfda280d4b8522b080406eea0eaab18c4eb82ed7dbc81cdd6539119152483af",
+      "wikiIndex": "d5d7e22d50f27d5b54044008418df3e2053236befb11e77dbc7ca33ce6e71106",
+      "sourceVerification": "6fc62fef7c4ee2ced73b74a694c31cad67bd6067b6e36dee671ff95a5854da7d",
+      "promptLibrary": "91231afe3da0c2325ff52bb5af9df069b332b34b88fea86729bb9dd34e908271",
+      "artifactLibrary": "f8252a72b12280fda23986fae92d5fb0fc37831d187dbd444fe480958a72c914"
+    }
+  }
+}

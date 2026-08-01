@@ -1,0 +1,307 @@
+---
+import quality from '../../../public/data/editor-quality.json';
+
+const formatCount = (value) => Number(value).toLocaleString('ko-KR');
+const priorityLabels = {
+  blocking: '차단',
+  attention: '확인 필요',
+  scheduled: '계획 검토',
+};
+const gateLabels = {
+  pass: '통과',
+  pending: '확인 중',
+  caution: '주의',
+  blocking: '차단',
+};
+const remainingLabel = (days) => days < 0
+  ? `${formatCount(Math.abs(days))}일 초과`
+  : `${formatCount(days)}일 남음`;
+const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
+const qualityDataUrl = `${basePath}data/editor-quality.json`;
+---
+
+<section
+  class="editor-quality-dashboard"
+  data-editor-quality-dashboard
+  data-quality-url={qualityDataUrl}
+>
+  <p class="editor-quality-baseline">
+    기준일 <time datetime={quality.asOf}>{quality.asOf}</time> · 집계식 <code>{quality.formulaVersion}</code>
+  </p>
+
+  <dl class="editor-quality-summary" aria-label="콘텐츠 품질 요약">
+    <div>
+      <dt>검토 완료 문서</dt>
+      <dd>{formatCount(quality.counts.reviewedArticles)}<span>/{formatCount(quality.counts.articles)}</span></dd>
+    </div>
+    <div>
+      <dt>검토 기한 초과</dt>
+      <dd>{formatCount(quality.review.counts.overdue)}<span>개</span></dd>
+    </div>
+    <div>
+      <dt>90일 내 계획 검토</dt>
+      <dd>{formatCount(quality.review.counts.dueWithin30Days + quality.review.counts.dueWithin90Days)}<span>개</span></dd>
+    </div>
+    <div>
+      <dt>출시 게이트</dt>
+      <dd data-release-gate-summary>{formatCount(quality.gates.filter((gate) => gate.status === 'pass').length)}<span>/{formatCount(quality.gates.length)}</span></dd>
+    </div>
+  </dl>
+
+  <p class="editor-quality-release" data-release-summary aria-live="polite">
+    {quality.release.status === 'complete'
+      ? `${formatCount(quality.release.htmlPages)}개 정적 페이지와 ${formatCount(quality.release.internalLinkReferences)}개 내부 링크를 확인했다.`
+      : '콘텐츠 스냅샷을 확인했다. 정적 페이지와 내부 링크 결과는 프로덕션 빌드 뒤 확정된다.'}
+  </p>
+
+  <section aria-labelledby="editor-quality-gates-title">
+    <h2 id="editor-quality-gates-title">출시 게이트</h2>
+    <div class="editor-quality-table-scroll">
+      <table class="editor-quality-gate-table">
+        <caption>문서·근거·연결·자료실·정적 빌드의 출시 조건</caption>
+        <thead>
+          <tr>
+            <th scope="col">검사</th>
+            <th scope="col">상태</th>
+            <th scope="col">결과</th>
+            <th scope="col">판정 기준</th>
+          </tr>
+        </thead>
+        <tbody>
+          {quality.gates.map((gate) => (
+            <tr data-release-gate={gate.id === 'static-build' ? '' : undefined}>
+              <th scope="row">{gate.label}</th>
+              <td><span class="editor-quality-state" data-status={gate.status}>{gateLabels[gate.status]}</span></td>
+              <td data-release-value={gate.id === 'static-build' ? '' : undefined}>{gate.value}</td>
+              <td data-release-description={gate.id === 'static-build' ? '' : undefined}>{gate.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="editor-quality-queue-title">
+    <h2 id="editor-quality-queue-title">검토 대기열</h2>
+    <p>
+      정책상 다음 검토 시점이 가까운 문서와 출처·연결 확인이 필요한 문서를 모았다.
+      기본 순서는 차단 여부, 검토 기한, 가나다순이다.
+    </p>
+    <form class="editor-quality-filter" data-quality-filter role="search">
+      <label>
+        <span>문서 검색</span>
+        <input type="search" name="query" placeholder="한국어·영문 제목 또는 문서 ID" autocomplete="off" />
+      </label>
+      <label>
+        <span>분야</span>
+        <select name="category">
+          <option value="all">전체 분야</option>
+          {quality.categories.map((category) => <option value={category.id}>{category.title}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>우선순위</span>
+        <select name="priority">
+          <option value="all">전체 우선순위</option>
+          <option value="blocking">차단</option>
+          <option value="attention">확인 필요</option>
+          <option value="scheduled">계획 검토</option>
+        </select>
+      </label>
+      <button type="reset">필터 초기화</button>
+    </form>
+
+    <p class="editor-quality-filter-status" data-quality-filter-status aria-live="polite">
+      {formatCount(quality.review.queue.length)}개 대기 항목을 표시한다.
+    </p>
+
+    <div class="editor-quality-table-scroll">
+      <table class="editor-quality-queue-table">
+        <caption>편집 검토 우선순위와 다음 검토 시점</caption>
+        <thead>
+          <tr>
+            <th scope="col">문서</th>
+            <th scope="col">분야</th>
+            <th scope="col">우선순위</th>
+            <th scope="col">다음 검토</th>
+            <th scope="col">출처</th>
+            <th scope="col">사유</th>
+          </tr>
+        </thead>
+        <tbody>
+          {quality.review.queue.map((item) => (
+            <tr
+              data-editor-quality-row
+              data-search={`${item.title} ${item.englishTitle} ${item.id}`.normalize('NFKC').toLocaleLowerCase('ko-KR')}
+              data-category={item.categoryId}
+              data-priority={item.priority}
+            >
+              <th scope="row">
+                <a href={item.url}>{item.title}</a>
+                <span>{item.englishTitle}</span>
+              </th>
+              <td>{item.categoryTitle}</td>
+              <td><span class="editor-quality-state" data-status={item.priority}>{priorityLabels[item.priority]}</span></td>
+              <td>
+                <time datetime={item.dueAt}>{item.dueAt}</time>
+                <span>{remainingLabel(item.daysRemaining)}</span>
+              </td>
+              <td>{formatCount(item.sourceCount)}개</td>
+              <td>{item.reasons.join(' ')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="editor-quality-empty" data-quality-empty hidden>조건에 맞는 대기 항목이 없다.</p>
+  </section>
+
+  <div class="editor-quality-columns">
+    <section aria-labelledby="editor-quality-category-title">
+      <h2 id="editor-quality-category-title">분야별 현황</h2>
+      <div class="editor-quality-table-scroll">
+        <table class="editor-quality-category-table">
+          <caption>분야별 문서 수와 계획 검토 대상</caption>
+          <thead>
+            <tr>
+              <th scope="col">분야</th>
+              <th scope="col">문서</th>
+              <th scope="col">90일 내</th>
+              <th scope="col">출처 확인</th>
+            </tr>
+          </thead>
+          <tbody>
+            {quality.categories.map((category) => (
+              <tr>
+                <th scope="row"><a href={`/category/${category.id}/`}>{category.title}</a></th>
+                <td>{formatCount(category.articles)}</td>
+                <td>{formatCount(category.dueWithin90Days)}</td>
+                <td>{formatCount(category.sourceWatch)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="editor-quality-evidence-title">
+      <h2 id="editor-quality-evidence-title">근거와 연결</h2>
+      <dl class="editor-quality-facts">
+        <div>
+          <dt>추적 중인 고유 출처</dt>
+          <dd>{formatCount(quality.evidence.trackedSourceUrls)}개</dd>
+        </div>
+        <div>
+          <dt>도달 가능 / 접근 제한 / 확인 불가</dt>
+          <dd>{formatCount(quality.evidence.reachableSourceUrls)} / {formatCount(quality.evidence.restrictedSourceUrls)} / {formatCount(quality.evidence.unavailableSourceUrls)}</dd>
+        </div>
+        <div>
+          <dt>근거가 연결된 본문 섹션</dt>
+          <dd>{formatCount(quality.evidence.evidencedFactualSections)} / {formatCount(quality.evidence.factualSections)}</dd>
+        </div>
+        <div>
+          <dt>미해결 문서 관계</dt>
+          <dd>{formatCount(quality.structure.unresolvedRelations)}건</dd>
+        </div>
+        <div>
+          <dt>코스에 포함된 고유 문서</dt>
+          <dd>{formatCount(quality.coverage.courseLinkedArticles)}개</dd>
+        </div>
+        <div>
+          <dt>검증된 자료실 레코드</dt>
+          <dd>프롬프트 {formatCount(quality.coverage.promptRecordsValid)} · 코드·설정 {formatCount(quality.coverage.artifactRecordsValid)}</dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+
+  <details class="editor-quality-method">
+    <summary>집계 기준</summary>
+    <ul>
+      {quality.review.policy.map((item) => (
+        <li><strong>{item.label}</strong>: 최근 검토일부터 {formatCount(item.days)}일마다 다시 확인한다. 현재 {formatCount(item.articles)}개 문서에 적용한다.</li>
+      ))}
+      <li>문서당 독립 출처 3개 이상, 학습 체크를 제외한 각 본문 섹션의 유효한 출처 번호, 해결 가능한 선수·관련 문서 ID를 검사한다.</li>
+      <li>접근 제한 출처는 즉시 실패로 간주하지 않으며, 확인 불가 출처와 끊어진 내부 링크는 출시 차단 대상으로 분류한다.</li>
+      <li>검토 대기열은 편집 순서를 돕는 목록이며 문서가 부정확하다는 판정 자체를 뜻하지 않는다.</li>
+    </ul>
+  </details>
+</section>
+
+<script>
+  const dashboard = document.querySelector('[data-editor-quality-dashboard]');
+
+  if (dashboard instanceof HTMLElement) {
+    const filter = dashboard.querySelector('[data-quality-filter]');
+    const rows = [...dashboard.querySelectorAll('[data-editor-quality-row]')];
+    const status = dashboard.querySelector('[data-quality-filter-status]');
+    const empty = dashboard.querySelector('[data-quality-empty]');
+
+    const normalize = (value) => value.normalize('NFKC').toLocaleLowerCase('ko-KR').trim();
+    const applyFilters = () => {
+      if (!(filter instanceof HTMLFormElement)) return;
+      const data = new FormData(filter);
+      const query = normalize(String(data.get('query') ?? ''));
+      const category = String(data.get('category') ?? 'all');
+      const priority = String(data.get('priority') ?? 'all');
+      let visible = 0;
+
+      for (const row of rows) {
+        const matchesQuery = !query || row.dataset.search?.includes(query);
+        const matchesCategory = category === 'all' || row.dataset.category === category;
+        const matchesPriority = priority === 'all' || row.dataset.priority === priority;
+        row.hidden = !(matchesQuery && matchesCategory && matchesPriority);
+        if (!row.hidden) visible += 1;
+      }
+
+      if (status) status.textContent = `${visible.toLocaleString('ko-KR')} / ${rows.length.toLocaleString('ko-KR')}개 대기 항목을 표시한다.`;
+      if (empty instanceof HTMLElement) empty.hidden = visible !== 0;
+    };
+
+    if (filter instanceof HTMLFormElement) {
+      filter.addEventListener('input', applyFilters);
+      filter.addEventListener('reset', () => window.setTimeout(applyFilters));
+    }
+    applyFilters();
+
+    const qualityUrl = dashboard.dataset.qualityUrl;
+    if (qualityUrl) {
+      fetch(qualityUrl)
+        .then((response) => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return response.json();
+        })
+        .then((snapshot) => {
+          if (snapshot.release?.status !== 'complete') return;
+          const releaseSummary = dashboard.querySelector('[data-release-summary]');
+          const gateSummary = dashboard.querySelector('[data-release-gate-summary]');
+          const releaseGate = dashboard.querySelector('[data-release-gate]');
+          const releaseState = releaseGate?.querySelector('[data-status]');
+          const releaseValue = releaseGate?.querySelector('[data-release-value]');
+          const releaseDescription = releaseGate?.querySelector('[data-release-description]');
+          const pages = Number(snapshot.release.htmlPages).toLocaleString('ko-KR');
+          const links = Number(snapshot.release.internalLinkReferences).toLocaleString('ko-KR');
+          const broken = Number(snapshot.release.brokenInternalLinks).toLocaleString('ko-KR');
+
+          if (gateSummary) {
+            const total = Number(snapshot.gates?.length ?? 0);
+            const passed = Number(snapshot.gates?.filter((gate) => gate.status === 'pass').length ?? 0);
+            const totalLabel = document.createElement('span');
+            totalLabel.textContent = `/${total.toLocaleString('ko-KR')}`;
+            gateSummary.replaceChildren(document.createTextNode(passed.toLocaleString('ko-KR')), totalLabel);
+          }
+          if (releaseSummary) releaseSummary.textContent = `${pages}개 정적 페이지와 ${links}개 내부 링크를 확인했다.`;
+          if (releaseState instanceof HTMLElement) {
+            releaseState.dataset.status = snapshot.release.brokenInternalLinks === 0 ? 'pass' : 'blocking';
+            releaseState.textContent = snapshot.release.brokenInternalLinks === 0 ? '통과' : '차단';
+          }
+          if (releaseValue) releaseValue.textContent = `${pages} 페이지`;
+          if (releaseDescription) releaseDescription.textContent = `${links}개 내부 링크에서 ${broken}개 오류를 확인했다.`;
+        })
+        .catch(() => {
+          const releaseSummary = dashboard.querySelector('[data-release-summary]');
+          if (releaseSummary) releaseSummary.textContent = '정적 빌드 스냅샷을 불러오지 못했다. 콘텐츠 집계 결과는 현재 페이지에 그대로 표시한다.';
+        });
+    }
+  }
+</script>

@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-wiki.kr/schemas/editor-quality-v1.json",
+  "title": "AI Learning Wiki editor quality snapshot v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "milestone",
+    "asOf",
+    "formulaVersion",
+    "overallStatus",
+    "counts",
+    "review",
+    "evidence",
+    "structure",
+    "coverage",
+    "categories",
+    "gates",
+    "release",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "milestone": { "const": "W60" },
+    "asOf": { "type": "string", "format": "date" },
+    "formulaVersion": { "const": "editor-quality-v1" },
+    "overallStatus": { "enum": ["pass", "pending", "blocking"] },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["articles", "reviewedArticles", "courses", "prompts", "artifacts", "activeTools", "reviewQueue"],
+      "properties": {
+        "articles": { "type": "integer", "minimum": 0 },
+        "reviewedArticles": { "type": "integer", "minimum": 0 },
+        "courses": { "type": "integer", "minimum": 0 },
+        "prompts": { "type": "integer", "minimum": 0 },
+        "artifacts": { "type": "integer", "minimum": 0 },
+        "activeTools": { "type": "integer", "minimum": 0 },
+        "reviewQueue": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy", "counts", "priorityCounts", "queue"],
+      "properties": {
+        "policy": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label", "days", "articles"],
+            "properties": {
+              "id": { "enum": ["evergreen", "periodic", "fast-changing"] },
+              "label": { "type": "string", "minLength": 2 },
+              "days": { "type": "integer", "minimum": 1 },
+              "articles": { "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "counts": { "$ref": "#/$defs/reviewCounts" },
+        "priorityCounts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["blocking", "attention", "scheduled"],
+          "properties": {
+            "blocking": { "type": "integer", "minimum": 0 },
+            "attention": { "type": "integer", "minimum": 0 },
+            "scheduled": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "queue": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/queueItem" }
+        }
+      }
+    },
+    "evidence": { "$ref": "#/$defs/nonNegativeIntegerMap" },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exactlyTenSections", "unresolvedRelations", "orphanArticles", "publicIndexMatches"],
+      "properties": {
+        "exactlyTenSections": { "type": "integer", "minimum": 0 },
+        "unresolvedRelations": { "type": "integer", "minimum": 0 },
+        "orphanArticles": { "type": "integer", "minimum": 0 },
+        "publicIndexMatches": { "type": "boolean" }
+      }
+    },
+    "coverage": { "$ref": "#/$defs/nonNegativeIntegerMap" },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "articles", "overdue", "dueWithin90Days", "sourceWatch"],
+        "properties": {
+          "id": { "$ref": "#/$defs/slug" },
+          "title": { "type": "string", "minLength": 2 },
+          "articles": { "type": "integer", "minimum": 0 },
+          "overdue": { "type": "integer", "minimum": 0 },
+          "dueWithin90Days": { "type": "integer", "minimum": 0 },
+          "sourceWatch": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/gate" }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "htmlPages", "internalLinkReferences", "brokenInternalLinks", "requiredRoutes"],
+      "properties": {
+        "status": { "enum": ["pending", "complete", "failed"] },
+        "htmlPages": { "type": ["integer", "null"], "minimum": 0 },
+        "internalLinkReferences": { "type": ["integer", "null"], "minimum": 0 },
+        "brokenInternalLinks": { "type": ["integer", "null"], "minimum": 0 },
+        "requiredRoutes": {
+          "type": "object",
+          "additionalProperties": { "type": "boolean" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "qualityPolicyVersion",
+        "taxonomyVersion",
+        "wikiGeneratedAt",
+        "sourceVerificationVersion",
+        "sourceVerificationCheckedAt",
+        "inputsSha256"
+      ],
+      "properties": {
+        "qualityPolicyVersion": { "type": "string", "minLength": 1 },
+        "taxonomyVersion": { "type": "string", "minLength": 1 },
+        "wikiGeneratedAt": { "type": "string", "minLength": 1 },
+        "sourceVerificationVersion": { "type": "string", "minLength": 1 },
+        "sourceVerificationCheckedAt": { "type": "string", "format": "date-time" },
+        "inputsSha256": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["qualityPolicy", "taxonomy", "wikiIndex", "sourceVerification", "promptLibrary", "artifactLibrary"],
+          "properties": {
+            "qualityPolicy": { "$ref": "#/$defs/sha256" },
+            "taxonomy": { "$ref": "#/$defs/sha256" },
+            "wikiIndex": { "$ref": "#/$defs/sha256" },
+            "sourceVerification": { "$ref": "#/$defs/sha256" },
+            "promptLibrary": { "$ref": "#/$defs/sha256" },
+            "artifactLibrary": { "$ref": "#/$defs/sha256" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "reviewCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overdue", "dueWithin30Days", "dueWithin90Days", "currentBeyond90Days"],
+      "properties": {
+        "overdue": { "type": "integer", "minimum": 0 },
+        "dueWithin30Days": { "type": "integer", "minimum": 0 },
+        "dueWithin90Days": { "type": "integer", "minimum": 0 },
+        "currentBeyond90Days": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "nonNegativeIntegerMap": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "queueItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "englishTitle",
+        "url",
+        "categoryId",
+        "categoryTitle",
+        "volatility",
+        "volatilityLabel",
+        "reviewedAt",
+        "dueAt",
+        "daysRemaining",
+        "priority",
+        "sourceCount",
+        "reasons"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "title": { "type": "string", "minLength": 1 },
+        "englishTitle": { "type": "string" },
+        "url": { "type": "string", "pattern": "^/wiki/[a-z0-9-]+/$" },
+        "categoryId": { "$ref": "#/$defs/slug" },
+        "categoryTitle": { "type": "string", "minLength": 2 },
+        "volatility": { "enum": ["evergreen", "periodic", "fast-changing"] },
+        "volatilityLabel": { "type": "string", "minLength": 2 },
+        "reviewedAt": { "type": "string", "format": "date" },
+        "dueAt": { "type": "string", "format": "date" },
+        "daysRemaining": { "type": "integer" },
+        "priority": { "enum": ["blocking", "attention", "scheduled"] },
+        "sourceCount": { "type": "integer", "minimum": 0 },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 4 }
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "status", "value", "description"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "label": { "type": "string", "minLength": 2 },
+        "status": { "enum": ["pass", "pending", "blocking", "caution"] },
+        "value": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 8 }
+      }
+    }
+  }
+}
