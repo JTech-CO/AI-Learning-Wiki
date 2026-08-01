@@ -175,7 +175,7 @@
     "wiki:w54:report": "node scripts/build-w54-lab-architecture.mjs",
     "wiki:w54:validate": "node scripts/validate-w54-lab-architecture.mjs",
     "wiki:w54:release": "npm run wiki:w54:report && npm run wiki:w54:validate",
-    "postbuild": "npm run wiki:w54:release && npm run wiki:w55:release && npm run wiki:w56:release && npm run wiki:w57:release && npm run wiki:w58:release && npm run wiki:w59:release && npm run wiki:w60:release && npm run ui:contrast",
+    "postbuild": "npm run wiki:w54:release && npm run wiki:w55:release && npm run wiki:w56:release && npm run wiki:w57:release && npm run wiki:w58:release && npm run wiki:w59:release && npm run wiki:w60:release && npm run ui:contrast && npm run ui:header",
     "wiki:w55:report": "node scripts/build-w55-learning-path.mjs",
     "wiki:w55:validate": "node scripts/validate-w55-learning-path.mjs",
     "wiki:w55:render": "node scripts/check-w55-render.mjs",
@@ -202,7 +202,8 @@
     "wiki:w60:validate": "node scripts/validate-w60-editor-quality.mjs",
     "wiki:w60:render": "node scripts/check-w60-render.mjs",
     "wiki:w60:release": "npm run wiki:w60:report && npm run wiki:w60:validate && npm run wiki:w60:render",
-    "ui:contrast": "node scripts/check-light-theme-contrast.mjs"
+    "ui:contrast": "node scripts/check-light-theme-contrast.mjs",
+    "ui:header": "node scripts/check-responsive-header.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",
