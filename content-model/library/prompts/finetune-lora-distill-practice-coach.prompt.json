@@ -1,6 +1,6 @@
 {
   "id": "finetune-lora-distill-practice-coach",
-  "version": 1,
+  "version": 2,
   "title": "실습 코치 프롬프트",
   "summary": "실습 코치 프롬프트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
   "kind": "plain",
@@ -27,7 +27,13 @@
     "sections": []
   },
   "notes": "원문에 별도 복붙 템플릿이 없어 위키가 추가한 학습 보조 프롬프트입니다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "학습 주제: 회의록 요약용 LoRA 모델 계획\n실습 과제: 데이터 수량, 정제 기준, 학습·검증 분할과 rank 후보를 정하고 싶다.",
+      "output": "첫 단계는 데이터 요구사항 정의다. 회의 유형 3가지와 원하는 요약 형식 1가지를 적고, 각 유형에서 익명화한 회의록-요약 쌍을 몇 건 확보할 수 있는지 표로 작성해 보라.\n잘된 점: 데이터 수량과 LoRA 설정을 함께 계획하려는 목표가 분명하다.\n개선점: rank를 정하기 전에 입력 길이, 출력 형식, 개인정보 제거 기준을 먼저 확정해야 한다. 작성한 표를 보내면 다음 단계에서 분할과 최소 베이스라인을 점검한다."
+    }
+  ],
   "tags": [
     "요약",
     "계획",
@@ -49,5 +55,5 @@
     "legacyKey": "public:finetune-lora-distill-practice-coach"
   },
   "status": "reviewed",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-09"
 }

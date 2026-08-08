@@ -1,6 +1,6 @@
 {
   "id": "ai-guards-p2",
-  "version": 1,
+  "version": 2,
   "title": "비용 폭주 방지 가드 설계",
   "summary": "비용 폭주 방지 가드 설계 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
   "kind": "plain",
@@ -27,7 +27,13 @@
     "sections": []
   },
   "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "스택: Node.js\n모델: 운영 환경에서 선택한 소형 언어 모델\n목표: 고객 문의 분류 자동화",
+      "output": "const MAX_CALLS = 6;\nconst MAX_ESTIMATED_COST = 0.12;\nlet calls = 0;\nlet estimatedCost = 0;\nfunction assertBudget(nextCost) {\n  if (++calls > MAX_CALLS) throw new Error(\"call limit exceeded\");\n  estimatedCost += nextCost;\n  if (estimatedCost > MAX_ESTIMATED_COST) throw new Error(\"cost limit exceeded\");\n}\n// 재시도는 네트워크 오류에만 최대 2회 적용하고, 같은 입력의 반복 호출은 요청 해시로 차단한다.\n// 실제 단가는 실행 시점의 공급자 가격표에서 주입한다."
+    }
+  ],
   "tags": [
     "코딩",
     "자동화",
@@ -49,5 +55,5 @@
     "legacyKey": "public:ai-guards-p2"
   },
   "status": "reviewed",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-09"
 }

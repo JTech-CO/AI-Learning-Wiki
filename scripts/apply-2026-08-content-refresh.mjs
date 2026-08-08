@@ -661,6 +661,166 @@ function applyEditorialArtifactCleanup() {
   }));
 }
 
+function applyCorePromptExamples() {
+  const examples = {
+    'img-bg': {
+      input: '대상: 투명 유리컵의 아이스 말차 라떼\n배경: 밝은 원목 책상과 흐릿한 초록 식물\n분위기: 늦은 오후 자연광, 차분하고 청량함',
+      output: '정사각형 SNS 배경 이미지. 말차 라떼를 화면 오른쪽 아래에 두고 왼쪽에는 게시물 문구를 배치할 여백을 남긴다. 얕은 심도와 부드러운 자연광을 사용하며 텍스트·로고·워터마크는 넣지 않는다.',
+    },
+    'img-illust': {
+      input: '주제: 노트북으로 공부하는 성인 학습자\n색감: 남색과 하늘색 중심의 낮은 채도',
+      output: '16:9 썸네일용 플랫 일러스트. 책상 앞 학습자를 중앙에 배치하고 배경은 단순한 기하 도형으로 정리한다. 작은 화면에서도 인물이 구분되도록 명암 대비를 확보하며 글자는 넣지 않는다.',
+    },
+    'content-creator-ai-p1': {
+      input: '주제: 1인 가구를 위한 15분 저녁 식사\n채널: 블로그',
+      output: '주제 30개: 1. 냉동 채소 볶음밥 2. 달걀 덮밥 3. 두부 김치볼 4. 참치 비빔면 5. 전자레인지 감자 6. 닭가슴살 카레 7. 토마토 달걀볶음 8. 냉동만두 수프 9. 버섯 크림파스타 10. 고등어 덮밥 11. 순두부 달걀찜 12. 오이 참치밥 13. 김치 치즈리조또 14. 들기름 메밀면 15. 소고기 숙주볶음 16. 콩나물 불고기 17. 양배추 오코노미야키 18. 새우 마늘볶음 19. 닭안심 샐러드 20. 된장 버터우동 21. 토르티야 피자 22. 연두부 명란밥 23. 꽁치 김치찜 24. 가지 덮밥 25. 햄 채소볶음 26. 곤약 비빔밥 27. 페스토 감자샐러드 28. 어묵 떡볶이 29. 시금치 달걀국 30. 주말 재료 소진 비빔밥.\n제작 워크플로: 1) 검색 의도와 재료 제약 확인 2) 직접 조리하며 시간·양을 기록하고 실제 사진 촬영 3) 재료·과정·실패 팁으로 초안 작성 4) 본인이 겪은 대체 재료와 맛 평가 추가 5) 조리 시간과 수치를 재검증한 뒤 게시한다.',
+    },
+    'content-distribution-engine-p2': {
+      input: '코어 콘텐츠: 회의 시간을 줄이려면 안건마다 결정할 항목과 제한 시간을 미리 적고, 종료 전에 담당자와 기한을 확인해야 한다.',
+      output: '네이버 블로그: 회의 시간을 줄이는 3가지 준비법 - 안건별 결정 항목, 제한 시간, 담당자·기한 확인 방법을 사례와 함께 설명한다.\nX 스레드: 1/ 회의가 길어지는 이유는 말이 많아서가 아니라 결정 기준이 없어서다. 2/ 안건마다 결정할 문장을 먼저 쓴다. 3/ 제한 시간을 적는다. 4/ 논의와 결정을 분리한다. 5/ 담당자와 기한을 확인한다. 6/ 다음 회의에서 한 가지만 적용해 본다.\n인스타 카드뉴스: 문제 / 결정 문장 / 제한 시간 / 담당자와 기한.\n링크드인: 회의 전 결정 항목을 명시하고 종료 전 책임자와 기한을 확인하는 작은 규칙이 실행력을 높인다.\n뉴스레터: 긴 회의의 원인은 준비 부족일 수 있다. 다음 회의에는 결정할 항목과 제한 시간을 먼저 적어 보자. 끝나기 전 담당자와 기한까지 확인하면 후속 업무가 선명해진다.',
+    },
+    'ai-agents-tools-p4': {
+      input: '도구: 사내 문서 검색, 고객 이메일 초안 작성, 이메일 발송, CRM 메모 저장',
+      output: 'P0: 이메일 발송과 CRM 저장은 항상 사람의 명시적 승인을 받은 뒤 실행한다. P0: 에이전트 전체 반복은 8회, 동일 도구 연속 호출은 2회로 제한한다. P1: 수신자·본문·첨부 파일을 발송 직전에 다시 표시한다. P1: 입력 스키마를 검증하고 개인정보·비밀정보를 로그에서 마스킹한다. P1: 실행당 비용 상한을 정하고 80%에서 경고, 100%에서 중단한다. P2: 실패는 지수 백오프로 최대 2회만 재시도하고 모든 부작용 도구에 멱등 키를 사용한다.',
+    },
+    'ai-guards-p1': {
+      input: '작업: 기술 블로그 초안 생성\n필수 필드: title, body, tags\n규칙: title 5자 이상, body 200자 이상, tags 최소 1개',
+      output: 'const DraftSchema = z.object({\n  title: z.string().min(5),\n  body: z.string().min(200),\n  tags: z.array(z.string()).min(1)\n});\nasync function validateOrQueue(run) {\n  for (let attempt = 0; attempt < 2; attempt += 1) {\n    const result = DraftSchema.safeParse(await run());\n    if (result.success) return result.data;\n  }\n  return { status: "review_required" };\n}',
+    },
+    'ai-guards-p2': {
+      input: '스택: Node.js\n모델: 운영 환경에서 선택한 소형 언어 모델\n목표: 고객 문의 분류 자동화',
+      output: 'const MAX_CALLS = 6;\nconst MAX_ESTIMATED_COST = 0.12;\nlet calls = 0;\nlet estimatedCost = 0;\nfunction assertBudget(nextCost) {\n  if (++calls > MAX_CALLS) throw new Error("call limit exceeded");\n  estimatedCost += nextCost;\n  if (estimatedCost > MAX_ESTIMATED_COST) throw new Error("cost limit exceeded");\n}\n// 재시도는 네트워크 오류에만 최대 2회 적용하고, 같은 입력의 반복 호출은 요청 해시로 차단한다.\n// 실제 단가는 실행 시점의 공급자 가격표에서 주입한다.',
+    },
+    'ai-guards-p3': {
+      input: '언어: Python\n대상: 분기 실적 보고서 요약',
+      output: 'def verify_summary(source, sentences):\n    checked = []\n    for sentence in sentences:\n        claims = extract_numbers_names_and_claims(sentence)\n        verified = all(normalize(claim) in normalize(source) for claim in claims)\n        checked.append({"text": sentence, "status": "VERIFIED" if verified else "UNVERIFIED"})\n    return checked\n# 숫자는 단위와 부호까지, 고유명사는 정규화한 완전 일치로 먼저 대조한다.\n# 문자열 일치는 의미 검증을 대신하지 않으므로 UNVERIFIED 항목은 사람이 원문 문맥을 확인한다.',
+    },
+    'ai-agents-tools-p1': {
+      input: '기능: 대한민국 행정구역 이름으로 현재 날씨 조회',
+      output: '{\n  "type": "function",\n  "function": {\n    "name": "get_current_weather",\n    "description": "사용자가 특정 국내 지역의 현재 기온·강수·날씨 상태를 물을 때만 호출한다.",\n    "parameters": {\n      "type": "object",\n      "properties": {\n        "location": { "type": "string", "description": "시·군·구를 포함한 지역명" },\n        "unit": { "type": "string", "enum": ["celsius", "fahrenheit"] }\n      },\n      "required": ["location"],\n      "additionalProperties": false\n    }\n  }\n}',
+    },
+    'ai-agents-tools-p2': {
+      input: '도구: get_weather, calculator\n언어: Python\n최대 도구 호출: 5회',
+      output: 'messages = [{"role": "user", "content": question}]\nfor step in range(5):\n    response = call_model(messages, tools=[get_weather_schema, calculator_schema])\n    print({"step": step + 1, "tool_calls": response.tool_calls})\n    if not response.tool_calls:\n        return response.text\n    for call in response.tool_calls:\n        result = dispatch_allowlisted_tool(call)\n        messages.extend(make_tool_result_messages(response, call, result))\nraise RuntimeError("도구 호출 한도 5회를 초과했다")\n# 실제 구현에서는 공급자 SDK의 현재 메시지 형식에 맞추고 도구 이름·인수를 허용 목록과 스키마로 검증한다.',
+    },
+    'ai-orchestration-p1': {
+      input: '결과물: 사내 기술 뉴스레터 1편',
+      output: '| 단계 | 입력 | AI가 하는 일 | 출력 형식 | 다음 단계 | 흐름 |\n| 1. 자료 수집 | 승인된 출처 목록 | 최근 글 후보 추출 | URL·제목 표 | 2 | 병렬 |\n| 2. 근거 정리 | 후보 원문 | 날짜·핵심 주장·인용 기록 | 근거표 | 3 | 순서 |\n| 3. 초안 작성 | 근거표·독자 정의 | 섹션별 초안 작성 | Markdown | 4 | 순서 |\n| 4. 품질 게이트 | 초안·원문 | 사실·링크·중복 검사 | 통과/수정 목록 | 3 또는 5 | 분기 |\n| 5. 편집·발행 | 통과 초안 | 문체와 길이 정리 | 최종 Markdown | 종료 | 순서 |',
+    },
+    'automation-mindset-p1': {
+      input: '업무: 매주 월요일 고객 문의 CSV를 받아 긴급 문의를 분류하고 담당자에게 전달한다.',
+      output: '트리거 후보: 1) 월요일 오전 9시 2) 새 CSV가 지정 폴더에 저장될 때.\n조건 후보: 1) 상태가 미처리인 행만 2) 긴급 키워드와 고객 등급을 함께 충족한 행만 3) 필수 열이 없는 파일은 검토 큐로 이동.\n액션 후보: 1) 긴급도와 근거를 표에 추가 2) 담당 팀별 목록 생성 3) 발송 전 사람이 확인할 요약 작성.\n권장 논리: 파일 도착 → 스키마 검사 → 미처리 행 필터 → 긴급도 분류 → 검토 승인 → 담당자 전달.',
+    },
+    'cost-latency-optimization-p1': {
+      input: '작업 설명: 고객 이메일을 배송·환불·제품 문의로 분류하고 20자 이내 이유를 반환한다.\n현재 프롬프트: 이메일을 세 범주 중 하나로 분류하고 JSON으로 답하라.',
+      output: '판단: 소형 모델로 시작하기 적합하다. 범주가 세 개이고 출력이 짧으며 추론 깊이가 낮다.\n품질 위험: 1) 한 이메일에 환불과 제품 문의가 함께 있는 복합 의도 2) 반어·분노 표현 3) 개인정보가 섞인 장문 전달 메일.\n전환 기준: 대표 데이터에서 범주별 F1과 JSON 유효률을 측정하고, 기준 미달 사례만 상위 모델로 라우팅한다.',
+    },
+    'cost-latency-optimization-p2': {
+      input: '원본 프롬프트: 안녕하세요. 바쁘시겠지만 아래 고객 문의 내용을 꼼꼼하게 읽어 주시고, 가능하다면 배송, 환불, 제품 문의 가운데 가장 적절한 하나를 선택해 주시면 감사하겠습니다. 답변은 JSON 형태로 부탁드립니다.',
+      output: '축약본: 다음 고객 문의를 배송·환불·제품 문의 중 하나로 분류하라. JSON만 반환하라: {"category":"배송|환불|제품 문의","reason":"20자 이내"}. 문의: [본문]\n대략적 토큰 수: 원본 약 65, 축약본 약 38. 실제 수치는 사용하는 모델의 토크나이저로 다시 측정한다.',
+    },
+    'cost-latency-optimization-p3': {
+      input: '사용자가 결제 화면에서 오류 메시지를 입력하면 원인 후보와 다음 조치를 안내한다. 운영팀은 하루치 실패 사례 통계를 다음 날 오전에 확인한다.',
+      output: '결제 오류 안내는 실시간 처리 대상이다. 사용자가 다음 행동을 결정해야 하므로 수 초 안에 응답해야 한다. 하루치 실패 사례 집계와 추세 분석은 배치 처리 대상이다. 다만 결제 실패율 급증·보안 의심·전체 장애 신호는 배치까지 기다리지 말고 임계값 기반 경보로 전환해야 한다.',
+    },
+    'cost-latency-optimization-p4': {
+      input: '프롬프트: 너는 고객지원 분류기다. 범주는 배송, 환불, 제품 문의다. JSON 스키마와 판단 규칙은 매번 같다. 이번 고객 문의는 "주문한 상품이 아직 오지 않았어요"다.',
+      output: '고정 부분: 역할, 세 범주 정의, 판단 규칙, JSON 스키마, 예시. 이 내용을 프롬프트 앞에 둔다.\n가변 부분: 고객 문의 본문과 요청 ID. 이 내용을 맨 뒤에 둔다.\n재구성: [고정] 고객지원 분류 규칙과 출력 스키마 → [가변] request_id: 1842, message: 주문한 상품이 아직 오지 않았어요. 고정 접두사는 바이트 단위로 동일하게 유지하고 사용자별 비밀정보는 포함하지 않는다.',
+    },
+    'finetune-lora-distill-practice-coach': {
+      input: '학습 주제: 회의록 요약용 LoRA 모델 계획\n실습 과제: 데이터 수량, 정제 기준, 학습·검증 분할과 rank 후보를 정하고 싶다.',
+      output: '첫 단계는 데이터 요구사항 정의다. 회의 유형 3가지와 원하는 요약 형식 1가지를 적고, 각 유형에서 익명화한 회의록-요약 쌍을 몇 건 확보할 수 있는지 표로 작성해 보라.\n잘된 점: 데이터 수량과 LoRA 설정을 함께 계획하려는 목표가 분명하다.\n개선점: rank를 정하기 전에 입력 길이, 출력 형식, 개인정보 제거 기준을 먼저 확정해야 한다. 작성한 표를 보내면 다음 단계에서 분할과 최소 베이스라인을 점검한다.',
+    },
+    'p17-edge-case': {
+      input: '입력: "배송이 언제 와요?"\n출력: {"intent":"배송"}\n입력: "결제 취소하고 싶어요"\n출력: {"intent":"환불"}',
+      output: '입력: "배송받은 물건이 다른데 환불은 어떻게 하나요?"\n출력: {"intent":"환불"}\n입력: "취소는 아니고 배송지만 바꾸고 싶어요"\n출력: {"intent":"배송"}\n첫 예시는 배송과 환불이 함께 등장하지만 사용자의 최종 행동을 기준으로 환불을 선택한다. 둘째 예시는 취소라는 단어보다 부정 표현과 실제 요청을 우선한다.',
+    },
+    'vllm-production-serving-p2': {
+      input: '모델 파일: models/llama-3.2-3b-instruct-q4_k_m.gguf\n문맥 길이: 4096\nGPU 오프로딩 레이어: 35',
+      output: 'llama-server -m models/llama-3.2-3b-instruct-q4_k_m.gguf --port 8000 -c 4096 -ngl 35\n실행 전 모델 파일 경로와 사용 가능한 VRAM을 확인한다. GPU 메모리가 부족하면 -ngl 값을 낮추고, 외부 공개가 필요하지 않다면 서버를 로컬 인터페이스에만 바인딩한다.',
+    },
+    'vllm-production-serving-p4': {
+      input: '대상: 승인된 로컬 추론 서버 http://localhost:8000\n동시 사용자: 100\n초당 증가 사용자: 10',
+      output: 'locust -f loadtest.py --host http://localhost:8000 --users 100 --spawn-rate 10\n먼저 10명으로 연결·오류율을 확인한 뒤 25→50→100명 순으로 올린다. p50·p95 지연, 초당 요청 수, 오류율, GPU 메모리와 서버 큐 길이를 함께 기록하며 운영 서버에는 사전 승인 없이 실행하지 않는다.',
+    },
+    'p37-chunk-strategy': {
+      input: '문서 유형: 사내 정보보안 규정\n샘플: 제12조 계정 관리. 관리자는 퇴사자의 계정을 퇴사일 당일 비활성화해야 한다. 예외 승인은 보안책임자가 기록한다. 다음 표는 권한별 검토 주기를 정한다.',
+      output: '| 요소 | 권장안 | 이유 |\n| 청크 크기 | 500~900자에서 시작 | 조문 하나와 예외 조건을 함께 보존하기 쉽다 |\n| 겹침 | 80~120자 | 조문 간 참조 문장을 다음 청크와 연결한다 |\n| 문단 | 조 번호를 경계로 분리 | 검색 결과에 규정 식별자를 남긴다 |\n| 표 | 머리글을 각 행에 반복하고 표 단위 원문도 보존 | 열 의미 손실을 줄인다 |\n| 목록 | 상위 항목을 각 하위 항목에 덧붙임 | 조건의 소속을 유지한다 |\n실제 값은 대표 질문으로 검색 재현율과 답변 근거성을 비교해 조정한다.',
+    },
+    'rag-advanced-p1': {
+      input: '질문: 퇴사자 계정은 언제 비활성화해야 하나요?\n업로드 문서: 제12조 계정 관리. 관리자는 퇴사자의 계정을 퇴사일 당일 비활성화해야 한다.',
+      output: '퇴사자 계정은 퇴사일 당일 비활성화해야 한다.\n근거: "관리자는 퇴사자의 계정을 퇴사일 당일 비활성화해야 한다."',
+    },
+    'vector-store-setup-p1': {
+      input: '문서: 제1조 이 규정은 회사 정보자산의 보호 기준을 정한다. 제2조 모든 계정은 개인별로 발급하며 공유해서는 안 된다. 제3조 관리자는 분기마다 권한을 검토하고 불필요한 권한을 회수한다.',
+      output: 'docs = [\n  "제1조 목적\\n이 규정은 회사 정보자산의 보호 기준을 정한다.",\n  "제2조 계정 발급\\n모든 계정은 개인별로 발급하며 공유해서는 안 된다.",\n  "제3조 권한 검토\\n관리자는 분기마다 권한을 검토하고 불필요한 권한을 회수한다."\n]\n짧은 샘플이라 조문 단위를 유지했다. 실제 장문에서는 300~500자 목표보다 의미 경계를 우선하고 문서 ID·조 번호를 별도 메타데이터로 저장한다.',
+    },
+    'vector-store-setup-p3': {
+      input: '검색된 자료:\n[문서 A, 제12조] 관리자는 퇴사자의 계정을 퇴사일 당일 비활성화해야 한다.\n[문서 B, 제4조] 권한 검토 결과는 1년간 보관한다.\n질문: 퇴사자 계정 비활성화 시점과 검토 기록 보관 기간은?',
+      output: '퇴사자 계정은 퇴사일 당일 비활성화해야 하며, 권한 검토 기록은 1년간 보관한다.\n근거: 문서 A 제12조, 문서 B 제4조.',
+    },
+    'p10i-diagnose': {
+      input: '내 프롬프트: 신제품 소개 글 써줘.',
+      output: '빠진 요소: 대상 독자, 글의 목적, 분량, 출력 형식, 말투가 정해지지 않았다.\n개선판: 20~30대 재택근무자를 대상으로 높이 조절 책상의 핵심 장점 3가지를 소개하는 700자 블로그 글을 작성하라. 제목 1개, 도입 2문장, 장점별 소제목, 구매 전 확인사항을 포함하고 차분한 설명체를 사용하라. 확인되지 않은 효능은 단정하지 말라.',
+    },
+    'p10i-split': {
+      input: '최종 목표: 사내 문서 검색형 챗봇의 작은 시제품을 만든다.',
+      output: '1단계: 사용 대상, 답할 문서 범위, 성공 기준을 정리해 달라고 요청한다.\n2단계: 문서 샘플을 기준으로 정제·청킹·메타데이터 방식을 설계해 달라고 요청한다.\n3단계: 임베딩·검색·답변 생성의 최소 구조와 구현 순서를 요청한다.\n4단계: 대표 질문과 정답 근거로 평가표를 만들도록 요청한다.\n5단계: 권한·개인정보·로그·실패 대응 점검표를 요청한다.',
+    },
+    'p13i-role': {
+      input: '역할: 친절한 데이터 분석 입문 강사\n요청: 평균과 중앙값의 차이를 설명해줘.',
+      output: '평균은 모든 값을 더한 뒤 개수로 나눈 값이고, 중앙값은 값을 순서대로 놓았을 때 가운데 값이다. 예를 들어 월급이 200만 원, 210만 원, 220만 원, 230만 원, 2,000만 원이면 평균은 큰 값의 영향을 받아 572만 원이지만 중앙값은 220만 원이다. 값이 한쪽으로 크게 치우친 자료에서는 중앙값이 일반적인 수준을 더 잘 보여줄 수 있다.',
+    },
+    'p16i-format': {
+      input: '예시 표: | 우선순위 | 작업 | 상태 |\n|---|---|---|\n| 높음 | 결제 오류 수정 | 진행 중 |\n정리할 새 데이터: 검색 오류 수정, 우선순위 중간, 상태 예정',
+      output: '| 우선순위 | 작업 | 상태 |\n|---|---|---|\n| 중간 | 검색 오류 수정 | 예정 |',
+    },
+    'p14i-seed': {
+      input: '이전 요약: 우리는 초보자용 RAG 실습을 기획했다. 데이터는 사내 공개 FAQ 50개이고, Python을 사용한다. 아직 임베딩 모델과 평가 질문 수는 정하지 않았다. 다음 목표는 최소 구현 순서를 확정하는 것이다.',
+      output: '이전 맥락을 반영하면 다음 단계는 데이터 정제 → 청킹 → 임베딩 → 검색 → 근거 기반 답변 → 평가 순서를 확정하는 일이다. 구현안을 정하기 전에 두 가지를 확인하고 싶다. 외부 API 사용이 가능한가, 그리고 평가 질문은 실제 사용자 문의에서 만들 수 있는가?',
+    },
+    'p23-step-solve': {
+      input: '사과 3개와 배 2개가 5,000원이고, 사과 1개와 배 4개가 6,000원이다. 각각의 가격을 구하라.',
+      output: '사과 가격을 a, 배 가격을 b라 두면 3a+2b=5000, a+4b=6000이다. 둘째 식에서 a=6000-4b이고 이를 첫째 식에 대입하면 18000-12b+2b=5000이다. 따라서 b=1300원이고 a=800원이다. 검산하면 3×800+2×1300=5000, 800+4×1300=6000으로 두 식을 모두 만족한다.\n결론: 사과는 800원, 배는 1,300원이다.',
+    },
+    'p42i-standard': {
+      input: '질문: RAG는 왜 사용하는가?',
+      output: 'RAG는 모델이 답하기 전에 외부 자료를 검색해 관련 근거를 함께 제공하는 방식이다. 모델이 학습할 때 없었던 최신 정보나 조직 내부 문서를 활용할 수 있다. 예를 들어 사내 규정 챗봇은 질문과 관련된 조항을 먼저 찾은 뒤 그 조항만 근거로 답할 수 있다. 다만 검색 결과가 틀리면 답변도 틀릴 수 있으므로 검색 품질과 출처 표시를 함께 평가해야 한다. RAG가 환각을 완전히 없애는 것은 아니다.',
+    },
+    'p41i-compare': {
+      input: '내가 하려는 일: 토큰과 컨텍스트 윈도의 관계를 이해한다.',
+      output: '토큰은 모델이 글을 읽을 때 사용하는 작은 조각이고, 컨텍스트 윈도는 한 번에 담을 수 있는 토큰의 최대 범위다. 책을 낱말 조각으로 나누고 일정 크기의 책상 위에 올려놓는다고 생각하면 쉽다. 책상이 작으면 오래된 조각을 치우거나 요약해야 한다. 예를 들어 입력 8,000토큰과 출력 2,000토큰이 같은 한도에 포함된다면 최소 10,000토큰의 공간이 필요하다.',
+    },
+  };
+
+  if (Object.keys(examples).length !== 32) {
+    throw new Error('Expected 32 curated prompt examples');
+  }
+
+  const courseCounts = new Map();
+  for (const [id, example] of Object.entries(examples)) {
+    const prompt = readPrompt(id);
+    if (prompt.examples.length > 0) throw new Error(id + ': examples already exist');
+    prompt.examples = [{ label: '작성 예시', ...example }];
+    prompt.version += 1;
+    prompt.reviewedAt = REVIEW_DATE;
+    for (const courseId of prompt.courseIds) {
+      courseCounts.set(courseId, (courseCounts.get(courseId) ?? 0) + 1);
+    }
+    writePrompt(prompt);
+  }
+
+  const invalidCourse = [...courseCounts.entries()].find(([, count]) => count !== 4);
+  if (courseCounts.size !== 8 || invalidCourse) {
+    throw new Error('Expected four examples in each of eight courses');
+  }
+
+  console.log(JSON.stringify({
+    updatedPrompts: Object.keys(examples).length,
+    courseCounts: Object.fromEntries([...courseCounts.entries()].sort()),
+  }));
+}
+
 const phase = process.argv[2];
 if (phase === '1') {
   applyMcpRefresh();
@@ -672,6 +832,8 @@ if (phase === '1') {
   applyPlatformExamplesRefresh();
 } else if (phase === '5') {
   applyEditorialArtifactCleanup();
+} else if (phase === '6') {
+  applyCorePromptExamples();
 } else {
-  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2|3|4|5>');
+  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2|3|4|5|6>');
 }

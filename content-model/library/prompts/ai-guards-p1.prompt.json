@@ -1,6 +1,6 @@
 {
   "id": "ai-guards-p1",
-  "version": 1,
+  "version": 2,
   "title": "출력 스키마 검증 코드 생성",
   "summary": "출력 스키마 검증 코드 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
   "kind": "plain",
@@ -33,7 +33,13 @@
     "sections": []
   },
   "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "작업: 기술 블로그 초안 생성\n필수 필드: title, body, tags\n규칙: title 5자 이상, body 200자 이상, tags 최소 1개",
+      "output": "const DraftSchema = z.object({\n  title: z.string().min(5),\n  body: z.string().min(200),\n  tags: z.array(z.string()).min(1)\n});\nasync function validateOrQueue(run) {\n  for (let attempt = 0; attempt < 2; attempt += 1) {\n    const result = DraftSchema.safeParse(await run());\n    if (result.success) return result.data;\n  }\n  return { status: \"review_required\" };\n}"
+    }
+  ],
   "tags": [
     "글쓰기",
     "코딩",
@@ -55,5 +61,5 @@
     "legacyKey": "public:ai-guards-p1"
   },
   "status": "reviewed",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-09"
 }

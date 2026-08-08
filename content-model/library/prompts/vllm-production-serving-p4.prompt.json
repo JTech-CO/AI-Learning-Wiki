@@ -1,6 +1,6 @@
 {
   "id": "vllm-production-serving-p4",
-  "version": 1,
+  "version": 2,
   "title": "부하 테스트",
   "summary": "부하 테스트 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
   "kind": "plain",
@@ -27,7 +27,13 @@
     "sections": []
   },
   "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "대상: 승인된 로컬 추론 서버 http://localhost:8000\n동시 사용자: 100\n초당 증가 사용자: 10",
+      "output": "locust -f loadtest.py --host http://localhost:8000 --users 100 --spawn-rate 10\n먼저 10명으로 연결·오류율을 확인한 뒤 25→50→100명 순으로 올린다. p50·p95 지연, 초당 요청 수, 오류율, GPU 메모리와 서버 큐 길이를 함께 기록하며 운영 서버에는 사전 승인 없이 실행하지 않는다."
+    }
+  ],
   "tags": [
     "테스트",
     "API",
@@ -47,5 +53,5 @@
     "legacyKey": "public:vllm-production-serving-p4"
   },
   "status": "reviewed",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-09"
 }

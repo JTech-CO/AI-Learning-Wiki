@@ -1,6 +1,6 @@
 {
   "id": "ai-agents-tools-p1",
-  "version": 1,
+  "version": 2,
   "title": "도구 스키마 초안 생성",
   "summary": "도구 스키마 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
   "kind": "json-schema",
@@ -21,7 +21,13 @@
     "sections": []
   },
   "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "기능: 대한민국 행정구역 이름으로 현재 날씨 조회",
+      "output": "{\n  \"type\": \"function\",\n  \"function\": {\n    \"name\": \"get_current_weather\",\n    \"description\": \"사용자가 특정 국내 지역의 현재 기온·강수·날씨 상태를 물을 때만 호출한다.\",\n    \"parameters\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"location\": { \"type\": \"string\", \"description\": \"시·군·구를 포함한 지역명\" },\n        \"unit\": { \"type\": \"string\", \"enum\": [\"celsius\", \"fahrenheit\"] }\n      },\n      \"required\": [\"location\"],\n      \"additionalProperties\": false\n    }\n  }\n}"
+    }
+  ],
   "tags": [
     "글쓰기",
     "자동화",
@@ -42,5 +48,5 @@
     "legacyKey": "public:ai-agents-tools-p1"
   },
   "status": "reviewed",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-09"
 }

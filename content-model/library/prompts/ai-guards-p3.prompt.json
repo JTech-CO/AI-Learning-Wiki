@@ -1,6 +1,6 @@
 {
   "id": "ai-guards-p3",
-  "version": 1,
+  "version": 2,
   "title": "환각 근거 대조 체크",
   "summary": "환각 근거 대조 체크 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
   "kind": "plain",
@@ -21,7 +21,13 @@
     "sections": []
   },
   "notes": "실제 비밀 키와 개인정보를 제거한 뒤 사용하고, 결과는 조직의 보안 정책에 따라 검토한다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "작성 예시",
+      "input": "언어: Python\n대상: 분기 실적 보고서 요약",
+      "output": "def verify_summary(source, sentences):\n    checked = []\n    for sentence in sentences:\n        claims = extract_numbers_names_and_claims(sentence)\n        verified = all(normalize(claim) in normalize(source) for claim in claims)\n        checked.append({\"text\": sentence, \"status\": \"VERIFIED\" if verified else \"UNVERIFIED\"})\n    return checked\n# 숫자는 단위와 부호까지, 고유명사는 정규화한 완전 일치로 먼저 대조한다.\n# 문자열 일치는 의미 검증을 대신하지 않으므로 UNVERIFIED 항목은 사람이 원문 문맥을 확인한다."
+    }
+  ],
   "tags": [
     "글쓰기",
     "요약",
@@ -43,5 +49,5 @@
     "legacyKey": "public:ai-guards-p3"
   },
   "status": "reviewed",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-09"
 }

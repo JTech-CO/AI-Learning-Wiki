@@ -38,7 +38,8 @@ const allowedTags = new Set(controlledPolicy.controlledTags.map((item) => item.l
 assert.ok(publicPrompts.prompts.every((item) => item.tags.length >= 1 && item.tags.length <= 6 && item.tags.every((tag) => allowedTags.has(tag))), 'uncontrolled prompt tag remains');
 assert.ok(publicArtifacts.snippets.every((item) => item.tags.length >= 1 && item.tags.length <= 6 && item.tags.every((tag) => allowedTags.has(tag))), 'uncontrolled artifact tag remains');
 assert.ok(publicPrompts.prompts.every((item) => item.notes.length >= 10), 'prompt usage note missing');
-assert.equal(publicPrompts.prompts.filter((item) => item.examples.length > 0).length, 500);
+const promptsWithExamples = publicPrompts.prompts.filter((item) => item.examples.length > 0).length;
+assert.ok(promptsWithExamples >= 532, 'expected at least 532 prompts with examples, received ' + promptsWithExamples);
 assert.deepEqual(new Set(publicArtifacts.snippets.map((item) => item.type)), new Set(['code', 'config', 'query', 'payload', 'schema', 'workflow', 'template']));
 assert.ok(publicArtifacts.snippets.every((item) => item.runtime && item.validation && item.securityNotes.length > 0));
 assert.ok(!/EduVerse|에듀버스/iu.test(JSON.stringify(publicPrompts.prompts)));
