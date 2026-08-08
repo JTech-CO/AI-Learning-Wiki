@@ -605,6 +605,62 @@ function applyPlatformExamplesRefresh() {
   console.log(`Platform examples refresh complete: ${ids.length} articles`);
 }
 
+
+function applyEditorialArtifactCleanup() {
+  const files = fs.readdirSync(ARTICLE_DIR).filter((file) => file.endsWith('.article.json'));
+  const milestoneHeading = /^\*\*W\d+\b.*\*\*$/;
+  const reviewHeading = /^\*\*.+ 심화 점검 \d+\*\*$/;
+  const reviewBody = /를 검토하는 \d+번째 기록에서는 분야 [a-z-]+, 세부 영역 [a-z0-9-]+, 우선순위 \d+라는 분류 정보/;
+  const changedIds = [];
+  let removedMilestones = 0;
+  let removedReviewHeadings = 0;
+  let removedReviewBodies = 0;
+
+  for (const file of files) {
+    const article = JSON.parse(fs.readFileSync(path.join(ARTICLE_DIR, file), 'utf8'));
+    let changed = false;
+    for (const item of article.sections) {
+      const paragraphs = item.body.split(/\n\n+/);
+      const kept = [];
+      for (const paragraph of paragraphs) {
+        const value = paragraph.trim();
+        if (milestoneHeading.test(value)) {
+          removedMilestones += 1;
+          changed = true;
+          continue;
+        }
+        if (reviewHeading.test(value)) {
+          removedReviewHeadings += 1;
+          changed = true;
+          continue;
+        }
+        if (reviewBody.test(value)) {
+          removedReviewBodies += 1;
+          changed = true;
+          continue;
+        }
+        kept.push(paragraph);
+      }
+      item.body = kept.join('\n\n').trim();
+    }
+    if (changed) {
+      changedIds.push(article.id);
+      writeArticle(article);
+    }
+  }
+
+  if (removedMilestones !== 576 || removedReviewHeadings !== 1639 || removedReviewBodies !== 1639) {
+    throw new Error(`Unexpected cleanup counts: milestones=${removedMilestones}, reviewHeadings=${removedReviewHeadings}, reviewBodies=${removedReviewBodies}`);
+  }
+
+  console.log(JSON.stringify({
+    changedArticles: changedIds.length,
+    removedMilestones,
+    removedReviewHeadings,
+    removedReviewBodies,
+  }));
+}
+
 const phase = process.argv[2];
 if (phase === '1') {
   applyMcpRefresh();
@@ -614,6 +670,8 @@ if (phase === '1') {
   applyModelIdRefresh();
 } else if (phase === '4') {
   applyPlatformExamplesRefresh();
+} else if (phase === '5') {
+  applyEditorialArtifactCleanup();
 } else {
-  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2|3|4>');
+  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2|3|4|5>');
 }
