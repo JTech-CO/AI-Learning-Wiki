@@ -526,6 +526,85 @@ function applyModelIdRefresh() {
   console.log('Model ID refresh complete: 3 prompts');
 }
 
+
+const OPENAI_CHANGELOG = {
+  title: 'OpenAI API Changelog',
+  url: 'https://developers.openai.com/api/docs/changelog',
+  type: 'documentation',
+};
+
+const OPENAI_MODELS = {
+  title: 'OpenAI API Models',
+  url: 'https://developers.openai.com/api/docs/models',
+  type: 'documentation',
+};
+
+const CLAUDE_RELEASE_NOTES = {
+  title: 'Claude Platform Release Notes',
+  url: 'https://platform.claude.com/docs/en/release-notes/overview',
+  type: 'documentation',
+};
+
+function applyPlatformExamplesRefresh() {
+  const ids = ['long-context-routing', 'context-window', 'api-cost-tracking', 'usage-metering', 'agent-step-budget', 'agent-delegation', 'managed-inference-platform', 'api-region-routing'];
+  const articles = Object.fromEntries(ids.map((id) => [id, readArticle(id)]));
+
+  const longContext = articles['long-context-routing'];
+  appendParagraph(longContext, 'examples-checklist', '날짜가 붙은 서비스 사례로, OpenAI는 2026년 8월 5일 GPT-5.6 Sol·Terra·Luna의 272K 토큰 초과 장문맥 요청에도 Fast mode를 지원한다고 발표했다. 이는 최대 2.5배 빠른 처리 경로의 예시이지 모든 요청의 품질·지연 개선을 보장하는 규칙이 아니다. 라우터는 모델·문맥 길이·서비스 티어·비용·지연 목표를 함께 입력으로 사용하고 일반 경로와 같은 평가셋으로 비교해야 한다.');
+  appendParagraph(longContext, 'tradeoffs', '장문맥 지원 한도와 빠른 처리 경로는 서로 다른 속성이다. 모델이 긴 입력을 받을 수 있어도 검색·요약·청킹보다 정확하거나 저렴하다는 뜻은 아니며, 특정 공급자의 기준 길이와 속도 배수는 변경될 수 있다. 기준일과 모델 ID를 기록하고 입력 길이 구간별 품질·첫 토큰 지연·총 비용을 다시 측정한다.');
+
+  const contextWindow = articles['context-window'];
+  appendParagraph(contextWindow, 'applications', '2026년 8월의 OpenAI Fast mode 장문맥 지원은 컨텍스트 윈도우와 서비스 실행 경로를 구분해야 하는 사례다. 272K 토큰을 넘는 요청이 특정 모델·티어에서 허용되더라도 실제 유효 문맥, 최대 출력, 지연과 비용은 별도 조건이다. 문서에는 광고된 최대값뿐 아니라 시험한 입력 길이와 출력 예약량을 함께 적는다.');
+  appendParagraph(contextWindow, 'limitations', '최대 컨텍스트 수치는 모든 토큰이 같은 정도로 활용된다는 보장이 아니다. 위치별 정보 회수, 주의 분산, 출력 토큰 예약, 도구 스키마와 시스템 지시가 사용할 공간을 같은 예산에서 차감하므로 실제 작업 한도는 더 작을 수 있다.');
+
+  const costTracking = articles['api-cost-tracking'];
+  appendParagraph(costTracking, 'applications', 'OpenAI는 2026년 8월 4일 Usage·Costs 대시보드와 API에서 API 키를 기준으로 필터링·그룹화하는 기능을 추가했다. 운영에서는 이 차원을 팀·서비스·환경별 귀속에 활용하되 키 자체를 사람 식별자로 사용하지 않고 프로젝트·태그·원장 메타데이터와 연결한다. 공급자 집계와 내부 요청 원장을 주기적으로 대사해 누락·지연·크레딧 반영 차이를 기록한다.');
+  appendParagraph(costTracking, 'limitations', '대시보드 수치는 청구 원장의 확정값과 시간차가 있을 수 있고 캐시 할인·배치 할인·크레딧·세금이 요청 시점 추정치와 다를 수 있다. API 키가 회전되거나 공유되면 귀속이 끊기므로 키 수명과 소유 프로젝트의 변경 이력을 보존한다.');
+
+  const metering = articles['usage-metering'];
+  appendParagraph(metering, 'applications', '2026년 8월 4일 OpenAI Usage API의 API 키별 필터·그룹화 지원은 공급자 계측과 내부 관측을 대사하는 사례다. 요청 ID·프로젝트·API 키 식별자·모델·입출력 토큰·캐시 토큰·시간 구간을 정규화하고, 키 원문이 아니라 회전 가능한 내부 식별자를 저장한다.');
+  appendParagraph(metering, 'limitations', '공급자 집계 차원은 내부 사용자·기능·고객 단위와 일치하지 않을 수 있다. 재시도·스트리밍 중단·배치·캐시 사용을 이중 계산하지 않도록 수집 규칙을 문서화하고, 원장과의 허용 오차와 마감 시점을 정한다.');
+
+  const budget = articles['agent-step-budget'];
+  appendParagraph(budget, 'examples-checklist', 'Anthropic은 2026년 8월 7일 Claude Managed Agents에 세션 예산의 하드 캡과 `budget_reached` 종료 상태를 추가했다. 이는 단계 예산을 런타임 중단 조건으로 구현한 사례다. 공급자 기능을 사용하더라도 토큰·비용·도구 호출·경과 시간 예산을 분리하고, 중단 뒤 부분 결과·부작용·재개 가능성을 애플리케이션이 명시해야 한다.');
+  appendParagraph(budget, 'failure-modes', '세션 비용 상한만으로 안전한 종료가 보장되지는 않는다. 한 번의 고위험 도구 호출은 예산 안에서도 큰 부작용을 만들 수 있으므로 권한·승인 게이트와 별도로 통제한다. `budget_reached`를 오류나 성공으로 뭉개지 않고 독립 종료 사유로 기록한다.');
+
+  const delegation = articles['agent-delegation'];
+  appendParagraph(delegation, 'applications', 'Anthropic은 2026년 8월 7일 관리형 다중 에이전트 구성에 advisor 모델 역할을 추가했다. 자문 모델은 계획·검토·전문 지식을 제공하되 실행 권한과 최종 책임을 갖지 않는 역할 분리 사례다. 권고 내용, 채택 여부, 최종 결정자와 실행 주체를 각각 기록하면 조언이 승인으로 오인되는 일을 줄일 수 있다.');
+  appendParagraph(delegation, 'limitations', '더 강한 자문 모델을 추가해도 사실성이나 합의가 자동 보장되지는 않는다. 자문 모델과 실행 모델이 같은 오류 원인을 공유할 수 있으므로 독립 근거, 반대 검토, 비용 상한과 책임자를 둔다.');
+
+  const managed = articles['managed-inference-platform'];
+  appendParagraph(managed, 'applications', 'Anthropic은 2026년 8월 5일 Enterprise용 inference hooks 베타를, 8월 7일 `inference_geo` 제어를 발표했다. 추론 훅은 요청 전후의 정책·관측·승인 처리를 중앙화하는 사례이고, 지역 제어는 추론 처리 위치를 선택하는 사례다. 도입 시 훅의 실행 순서·실패 정책·추가 지연과 지역별 지원 모델을 명시한다.');
+  appendParagraph(managed, 'limitations', '공급자 추론 훅은 애플리케이션의 전체 정책 경로를 자동으로 포괄하지 않으며 훅 실패가 허용·차단 중 어느 쪽으로 동작하는지 확인해야 한다. 추론 지역 선택도 로그·백업·지원 데이터·외부 도구 호출의 저장 위치까지 자동 보장하지 않으므로 계약과 데이터 흐름을 별도로 검토한다.');
+
+  const region = articles['api-region-routing'];
+  appendParagraph(region, 'examples-checklist', 'Anthropic의 2026년 8월 7일 `inference_geo`는 요청별 추론 지역을 명시하는 공급자 기능의 사례다. 라우터는 법적·계약상 허용 지역, 모델 가용성, 장애 조치 지역, 지연과 비용을 함께 평가하고 실제 응답에 기록된 처리 위치와 정책 결정을 감사 로그에 남긴다.');
+  appendParagraph(region, 'security-governance', '지역 라우팅과 데이터 레지던시는 같은 말이 아니다. 추론 위치를 지정해도 프롬프트 로그, 캐시, 백업, 안전 모니터링, 지원 티켓과 연결 도구가 다른 지역에서 처리될 수 있다. 공급자 문서·계약·하위 처리자 목록을 기준일과 함께 확인하고 장애 시 우회 정책을 명시한다.');
+
+  for (const article of [longContext, contextWindow, costTracking, metering]) {
+    const changelogRef = ensureSource(article, OPENAI_CHANGELOG);
+    const modelsRef = ensureSource(article, OPENAI_MODELS);
+    const applicationSection = article.id === 'long-context-routing' ? 'examples-checklist' : 'applications';
+    const limitationSection = article.id === 'long-context-routing' ? 'tradeoffs' : 'limitations';
+    addSourceRef(article, applicationSection, changelogRef, modelsRef);
+    addSourceRef(article, limitationSection, changelogRef, modelsRef);
+    article.reviewedAt = REVIEW_DATE;
+    writeArticle(article);
+  }
+
+  for (const article of [budget, delegation, managed, region]) {
+    const notesRef = ensureSource(article, CLAUDE_RELEASE_NOTES);
+    const applicationSection = ['agent-step-budget', 'api-region-routing'].includes(article.id) ? 'examples-checklist' : 'applications';
+    const limitationSection = article.id === 'agent-step-budget' ? 'failure-modes' : article.id === 'api-region-routing' ? 'security-governance' : 'limitations';
+    addSourceRef(article, applicationSection, notesRef);
+    addSourceRef(article, limitationSection, notesRef);
+    article.reviewedAt = REVIEW_DATE;
+    writeArticle(article);
+  }
+
+  console.log(`Platform examples refresh complete: ${ids.length} articles`);
+}
+
 const phase = process.argv[2];
 if (phase === '1') {
   applyMcpRefresh();
@@ -533,6 +612,8 @@ if (phase === '1') {
   applyEuAiActRefresh();
 } else if (phase === '3') {
   applyModelIdRefresh();
+} else if (phase === '4') {
+  applyPlatformExamplesRefresh();
 } else {
-  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2|3>');
+  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2|3|4>');
 }
