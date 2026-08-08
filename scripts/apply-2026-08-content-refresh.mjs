@@ -457,11 +457,82 @@ intended_use, out_of_scope_uses, data, performance_metrics, known_limitations, h
   console.log(`EU AI Act refresh complete: ${ids.length} articles, 3 prompts`);
 }
 
+
+function applyModelIdRefresh() {
+  const shortest = readPrompt('p10e-shortest-call');
+  Object.assign(shortest, {
+    version: shortest.version + 1,
+    title: 'Anthropic API 첫 호출 코드 생성',
+    summary: '현재 지원되는 Anthropic 모델 ID와 공식 SDK를 변수로 받아 최소 호출 예제를 생성한다.',
+    template: `[프로그래밍 언어]와 최신 [Anthropic 공식 SDK]를 사용해 입력 문장을 [모델 ID]로 보내고 답변 텍스트만 출력하는 최소 실행 예제를 작성하라. 모델 ID를 코드에 숨기지 말고 환경변수 또는 설정값으로 분리하라. 설치 명령, 필수 환경변수, 실행 명령과 각 단계의 짧은 한국어 주석을 포함하라. 사용한 SDK 인터페이스와 모델 ID가 기준일 [기준일]의 Anthropic 공식 문서에서 지원되는지 확인할 체크 항목도 적어라.`,
+    variables: [
+      { name: 'language', description: '프로그래밍 언어', required: true, example: 'Python' },
+      { name: 'sdk', description: 'Anthropic 공식 SDK와 버전 범위', required: true, example: 'anthropic Python SDK 최신 안정 버전' },
+      { name: 'model_id', description: '현재 계정과 API에서 지원되는 모델 ID', required: true, example: 'claude-opus-5' },
+      { name: 'reference_date', description: '공식 문서 확인 기준일', required: true, example: '2026-08-09' },
+    ],
+    outputContract: { format: 'code', description: '설치·환경설정·최소 호출·실행 방법과 지원 여부 확인 항목을 포함한 코드', schema: null, sections: ['설치', '환경변수', '코드', '실행', '버전 확인'] },
+    notes: '모델 ID와 SDK 인터페이스는 변경될 수 있다. 실행 전에 Anthropic 공식 모델·SDK 문서와 계정의 사용 가능 모델을 확인하고 API 키·운영 데이터는 예제에 넣지 않는다.',
+    reviewedAt: REVIEW_DATE,
+  });
+  shortest.examples = shortest.examples.map((example) => ({
+    ...example,
+    input: 'Python, Anthropic 공식 SDK, 현재 지원 모델 ID를 사용해 입력 문장을 보내고 답 텍스트만 출력하는 최소 예제를 작성한다.',
+  }));
+  writePrompt(shortest);
+
+  const structured = readPrompt('p20e-func');
+  Object.assign(structured, {
+    version: structured.version + 1,
+    title: '구조화 출력 검증·재시도 함수 생성',
+    summary: '선택한 공급자의 현재 지원 모델과 구조화 출력 기능을 사용해 Pydantic 검증·재시도 함수를 생성한다.',
+    template: `다음 [Pydantic BaseModel 코드]로 LLM 응답을 검증하고 실패 원인을 다음 요청에 전달해 최대 [재시도 횟수]회 재시도하는 Python 함수를 작성하라.
+
+- 공급자와 공식 SDK: [공급자와 SDK]
+- 현재 지원 모델 ID: [모델 ID]
+- 공식 구조화 출력 방식: [response_format/tool input_schema/기타]
+
+공급자의 현재 공식 구조화 출력 기능을 우선 사용하고, 지원되지 않을 때만 JSON 텍스트 폴백을 별도 함수로 제공하라. 폴백은 코드 펜스 제거, JSON 파싱, Pydantic 검증 순으로 처리하고 정규식으로 첫 중괄호부터 마지막 중괄호까지 무조건 자르지 말라. 재시도마다 검증 오류를 구조화해 전달하고 마지막 실패에는 원인과 원본 응답의 안전한 요약을 반환하라. 모델 ID와 기능 지원 여부를 [기준일]의 공식 문서에서 확인할 체크 항목을 포함하라.`,
+    variables: [
+      { name: 'pydantic_model', description: 'Pydantic BaseModel 코드', required: true, example: 'class Answer(BaseModel): ...' },
+      { name: 'retry_limit', description: '최대 재시도 횟수', required: true, example: '3' },
+      { name: 'provider_sdk', description: '공급자와 공식 SDK', required: true, example: 'OpenAI Python SDK' },
+      { name: 'model_id', description: '현재 지원되는 모델 ID', required: true, example: '공식 모델 목록에서 선택' },
+      { name: 'structured_output_api', description: '공식 구조화 출력 인터페이스', required: true, example: 'response_format' },
+      { name: 'reference_date', description: '공식 문서 확인 기준일', required: true, example: '2026-08-09' },
+    ],
+    outputContract: { format: 'code', description: '공식 구조화 출력 경로와 안전한 폴백·검증·재시도를 분리한 Python 코드', schema: null, sections: ['의존성', '주 경로', '폴백', '재시도', '테스트', '지원 여부 확인'] },
+    notes: '모델명과 구조화 출력 인터페이스를 공급자별 공식 문서에서 확인한다. 원본 응답에 비밀정보가 있을 수 있으므로 오류 로그에는 전체 본문을 남기지 않고, 재시도에 상한과 지수 백오프를 둔다.',
+    reviewedAt: REVIEW_DATE,
+  });
+  writePrompt(structured);
+
+  const toolUse = readPrompt('p21-skeleton');
+  Object.assign(toolUse, {
+    version: toolUse.version + 1,
+    title: 'Anthropic 도구 호출 한 사이클 코드',
+    summary: '현재 Anthropic SDK와 선택한 모델 ID로 도구 호출 한 사이클을 재현하는 최소 코드를 생성한다.',
+    template: `최신 Anthropic Python SDK와 [모델 ID]를 사용해 도구 호출 한 사이클을 실행하는 최소 코드를 작성하라. 흐름은 도구 스키마 정의 → 첫 모델 호출 → tool_use 블록 검증 → 허용 목록의 get_weather(city) 실행 → tool_result 반환 → 최종 답변 순서다. 모델 ID는 환경변수나 설정값으로 분리하고, 기준일 [기준일]의 공식 문서와 계정에서 지원 여부를 확인하는 절차를 덧붙여라. 알 수 없는 도구 이름, 잘못된 인수, 시간 초과와 API 오류를 처리하고 도구 실행 결과를 신뢰할 수 없는 데이터로 취급하라. 각 단계에 짧은 한국어 주석과 실행 명령을 포함하라.`,
+    variables: [
+      { name: 'model_id', description: '현재 Anthropic API에서 지원되는 모델 ID', required: true, example: 'claude-opus-5' },
+      { name: 'reference_date', description: '공식 문서 확인 기준일', required: true, example: '2026-08-09' },
+    ],
+    outputContract: { format: 'code', description: '설정·도구 스키마·호출 루프·오류 처리·실행 방법을 포함한 Python 코드', schema: null, sections: ['설정', '도구', '호출 루프', '오류 처리', '실행', '버전 확인'] },
+    notes: '실행 전 Anthropic 공식 SDK와 모델 목록에서 지원 여부를 확인한다. API 키를 코드에 넣지 않고 도구 이름·인수 허용 목록, 시간 제한과 부작용 승인을 적용한다.',
+    reviewedAt: REVIEW_DATE,
+  });
+  writePrompt(toolUse);
+
+  console.log('Model ID refresh complete: 3 prompts');
+}
+
 const phase = process.argv[2];
 if (phase === '1') {
   applyMcpRefresh();
 } else if (phase === '2') {
   applyEuAiActRefresh();
+} else if (phase === '3') {
+  applyModelIdRefresh();
 } else {
-  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2>');
+  throw new Error('Usage: node scripts/apply-2026-08-content-refresh.mjs <1|2|3>');
 }

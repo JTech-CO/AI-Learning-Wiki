@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T16:26:01.583Z",
+  "generatedAt": "2026-08-08T16:29:33.996Z",
   "policyVersion": "W39-2026-07-16",
   "counts": {
     "sourceModules": 0,
@@ -3994,35 +3994,6 @@
       "providerScope": "provider-agnostic"
     },
     {
-      "id": "p10e-shortest-call",
-      "course": "api-development",
-      "courseTitle": "AI API 개발",
-      "courseUrl": "/course/api-development/",
-      "title": "가장 짧은 첫 호출 코드 생성",
-      "template": "[언어]와 [Anthropic 공식 SDK]로 내가 입력한 문장을 모델 [claude-opus-4-8]에게 보내고 답 텍스트만 출력하는 가장 짧은 예제 코드를 줘. 각 줄에 한국어 주석을 달아줘.",
-      "notes": "비밀 키와 운영 데이터를 제거한 예제로 먼저 시험하고, 생성된 코드는 테스트와 보안 검토를 거친다.",
-      "tags": [
-        "글쓰기",
-        "코딩",
-        "디버깅",
-        "API",
-        "프롬프트 설계",
-        "콘텐츠"
-      ],
-      "examples": [
-        {
-          "label": "작성 예시",
-          "input": "한국어와 실제 값로 내가 입력한 문장을 모델 실제 값에게 보내고 답 텍스트만 출력하는 가장 짧은 예제 코드를 줘. 각 줄에 한국어 주석을 달아줘.",
-          "output": ""
-        }
-      ],
-      "relatedWikiUrl": "/wiki/sdk/",
-      "url": "/wiki/sdk/",
-      "kind": "plain",
-      "difficulty": "intermediate",
-      "providerScope": "anthropic"
-    },
-    {
       "id": "pricing-first-offer-p1",
       "course": "api-development",
       "courseTitle": "AI API 개발",
@@ -7870,6 +7841,35 @@
       "kind": "plain",
       "difficulty": "entry",
       "providerScope": "provider-agnostic"
+    },
+    {
+      "id": "p10e-shortest-call",
+      "course": "api-development",
+      "courseTitle": "AI API 개발",
+      "courseUrl": "/course/api-development/",
+      "title": "Anthropic API 첫 호출 코드 생성",
+      "template": "[프로그래밍 언어]와 최신 [Anthropic 공식 SDK]를 사용해 입력 문장을 [모델 ID]로 보내고 답변 텍스트만 출력하는 최소 실행 예제를 작성하라. 모델 ID를 코드에 숨기지 말고 환경변수 또는 설정값으로 분리하라. 설치 명령, 필수 환경변수, 실행 명령과 각 단계의 짧은 한국어 주석을 포함하라. 사용한 SDK 인터페이스와 모델 ID가 기준일 [기준일]의 Anthropic 공식 문서에서 지원되는지 확인할 체크 항목도 적어라.",
+      "notes": "모델 ID와 SDK 인터페이스는 변경될 수 있다. 실행 전에 Anthropic 공식 모델·SDK 문서와 계정의 사용 가능 모델을 확인하고 API 키·운영 데이터는 예제에 넣지 않는다.",
+      "tags": [
+        "글쓰기",
+        "코딩",
+        "디버깅",
+        "API",
+        "프롬프트 설계",
+        "콘텐츠"
+      ],
+      "examples": [
+        {
+          "label": "작성 예시",
+          "input": "Python, Anthropic 공식 SDK, 현재 지원 모델 ID를 사용해 입력 문장을 보내고 답 텍스트만 출력하는 최소 예제를 작성한다.",
+          "output": ""
+        }
+      ],
+      "relatedWikiUrl": "/wiki/sdk/",
+      "url": "/wiki/sdk/",
+      "kind": "plain",
+      "difficulty": "intermediate",
+      "providerScope": "anthropic"
     },
     {
       "id": "p3e-parse",
@@ -13330,29 +13330,6 @@
       "providerScope": "provider-agnostic"
     },
     {
-      "id": "p21-skeleton",
-      "course": "agent-systems",
-      "courseTitle": "AI 에이전트",
-      "courseUrl": "/course/agent-systems/",
-      "title": "한 사이클 전체 코드 뼈대",
-      "template": "Anthropic Python SDK로 tool use 한 사이클(스키마 정의 → 첫 호출 → tool_use 감지 → 함수 실행 → tool_result 반환 → 최종 답변)을 도는 최소 실행 코드를 처음부터 끝까지 짜줘. 도구는 get_weather(city) 하나, 모델은 claude-opus-4-8, 주석으로 각 단계를 한국어로. 실행하면 바로 답이 나오게.",
-      "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
-      "tags": [
-        "번역",
-        "코딩",
-        "API",
-        "AI 에이전트",
-        "구조화 출력",
-        "Python"
-      ],
-      "examples": [],
-      "relatedWikiUrl": "/wiki/function-calling/",
-      "url": "/wiki/function-calling/",
-      "kind": "plain",
-      "difficulty": "intermediate",
-      "providerScope": "anthropic"
-    },
-    {
       "id": "py-functions-p2",
       "course": "agent-systems",
       "courseTitle": "AI 에이전트",
@@ -13483,6 +13460,29 @@
       "kind": "plain",
       "difficulty": "entry",
       "providerScope": "provider-agnostic"
+    },
+    {
+      "id": "p21-skeleton",
+      "course": "agent-systems",
+      "courseTitle": "AI 에이전트",
+      "courseUrl": "/course/agent-systems/",
+      "title": "Anthropic 도구 호출 한 사이클 코드",
+      "template": "최신 Anthropic Python SDK와 [모델 ID]를 사용해 도구 호출 한 사이클을 실행하는 최소 코드를 작성하라. 흐름은 도구 스키마 정의 → 첫 모델 호출 → tool_use 블록 검증 → 허용 목록의 get_weather(city) 실행 → tool_result 반환 → 최종 답변 순서다. 모델 ID는 환경변수나 설정값으로 분리하고, 기준일 [기준일]의 공식 문서와 계정에서 지원 여부를 확인하는 절차를 덧붙여라. 알 수 없는 도구 이름, 잘못된 인수, 시간 초과와 API 오류를 처리하고 도구 실행 결과를 신뢰할 수 없는 데이터로 취급하라. 각 단계에 짧은 한국어 주석과 실행 명령을 포함하라.",
+      "notes": "실행 전 Anthropic 공식 SDK와 모델 목록에서 지원 여부를 확인한다. API 키를 코드에 넣지 않고 도구 이름·인수 허용 목록, 시간 제한과 부작용 승인을 적용한다.",
+      "tags": [
+        "번역",
+        "코딩",
+        "API",
+        "AI 에이전트",
+        "구조화 출력",
+        "Python"
+      ],
+      "examples": [],
+      "relatedWikiUrl": "/wiki/function-calling/",
+      "url": "/wiki/function-calling/",
+      "kind": "plain",
+      "difficulty": "intermediate",
+      "providerScope": "anthropic"
     },
     {
       "id": "json-apis-p3",
@@ -15398,29 +15398,6 @@
       "providerScope": "provider-agnostic"
     },
     {
-      "id": "p20e-func",
-      "course": "responsible-ai",
-      "courseTitle": "신뢰할 수 있는 AI",
-      "courseUrl": "/course/responsible-ai/",
-      "title": "검증+재시도 파이썬 함수 생성",
-      "template": "다음 Pydantic 모델로 LLM 응답을 검증하고 실패 시 에러를 되먹여 최대 3회 자동 재시도하는 파이썬 함수를. 구조화 출력(response_format/tool input_schema)을 우선 쓰고, 안 되면 정규식으로 첫 {부터 마지막 }까지 잘라 파싱하는 폴백도. 모델: [Pydantic BaseModel 코드] 사용 LLM: [OpenAI gpt-4o / Claude 중 택1]",
-      "notes": "중요한 사실·날짜·수치는 연결된 1차 출처에서 다시 확인하고, 확인되지 않은 내용은 사용하지 않는다.",
-      "tags": [
-        "코딩",
-        "디버깅",
-        "구조화 출력",
-        "검증",
-        "Python",
-        "데이터 엔지니어링"
-      ],
-      "examples": [],
-      "relatedWikiUrl": "/wiki/json-schema/",
-      "url": "/wiki/json-schema/",
-      "kind": "plain",
-      "difficulty": "intermediate",
-      "providerScope": "multi-provider"
-    },
-    {
       "id": "p18w-rewrite",
       "course": "responsible-ai",
       "courseTitle": "신뢰할 수 있는 AI",
@@ -15876,6 +15853,29 @@
       "kind": "markdown",
       "difficulty": "entry",
       "providerScope": "provider-agnostic"
+    },
+    {
+      "id": "p20e-func",
+      "course": "responsible-ai",
+      "courseTitle": "신뢰할 수 있는 AI",
+      "courseUrl": "/course/responsible-ai/",
+      "title": "구조화 출력 검증·재시도 함수 생성",
+      "template": "다음 [Pydantic BaseModel 코드]로 LLM 응답을 검증하고 실패 원인을 다음 요청에 전달해 최대 [재시도 횟수]회 재시도하는 Python 함수를 작성하라.\n\n- 공급자와 공식 SDK: [공급자와 SDK]\n- 현재 지원 모델 ID: [모델 ID]\n- 공식 구조화 출력 방식: [response_format/tool input_schema/기타]\n\n공급자의 현재 공식 구조화 출력 기능을 우선 사용하고, 지원되지 않을 때만 JSON 텍스트 폴백을 별도 함수로 제공하라. 폴백은 코드 펜스 제거, JSON 파싱, Pydantic 검증 순으로 처리하고 정규식으로 첫 중괄호부터 마지막 중괄호까지 무조건 자르지 말라. 재시도마다 검증 오류를 구조화해 전달하고 마지막 실패에는 원인과 원본 응답의 안전한 요약을 반환하라. 모델 ID와 기능 지원 여부를 [기준일]의 공식 문서에서 확인할 체크 항목을 포함하라.",
+      "notes": "모델명과 구조화 출력 인터페이스를 공급자별 공식 문서에서 확인한다. 원본 응답에 비밀정보가 있을 수 있으므로 오류 로그에는 전체 본문을 남기지 않고, 재시도에 상한과 지수 백오프를 둔다.",
+      "tags": [
+        "코딩",
+        "디버깅",
+        "구조화 출력",
+        "검증",
+        "Python",
+        "데이터 엔지니어링"
+      ],
+      "examples": [],
+      "relatedWikiUrl": "/wiki/json-schema/",
+      "url": "/wiki/json-schema/",
+      "kind": "plain",
+      "difficulty": "intermediate",
+      "providerScope": "multi-provider"
     },
     {
       "id": "p18e-rule",
