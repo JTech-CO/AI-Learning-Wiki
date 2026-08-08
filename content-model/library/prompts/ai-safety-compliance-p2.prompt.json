@@ -1,32 +1,61 @@
 {
   "id": "ai-safety-compliance-p2",
-  "version": 1,
+  "version": 2,
   "title": "모델 카드 초안 생성",
-  "summary": "모델 카드 초안 생성 작업을 재사용 가능한 프롬프트로 수행하도록 입력과 출력 조건을 정리한다.",
+  "summary": "모델의 용도·성능·한계와 검증 근거를 정리하고 필요한 경우 최신 EU AI Act 기술문서 요구와의 차이를 표시한다.",
   "kind": "plain",
-  "difficulty": "intermediate",
-  "template": "다음 시스템의 모델 카드를 작성해줘: 용도=[___], 모델=[___], 학습데이터 개요=[___], 평가결과=[전체/하위그룹별 메트릭]. intended_use / out_of_scope_uses / performance_metrics / known_limitations / ethical_considerations / contact 섹션으로 구성하고, 고위험이면 EU AI Act Annex IV 기술문서 항목과의 매핑도 표로 붙여줘.",
+  "difficulty": "advanced",
+  "template": "다음 시스템의 모델 카드 초안을 작성하라.\n\n- 기준일·관할: [기준일과 관할]\n- 시스템과 모델 버전: [시스템과 모델]\n- 의도된 용도·금지 용도: [용도 범위]\n- 학습·평가 데이터 개요: [데이터 개요]\n- 전체·하위집단 평가 결과: [평가 결과]\n- 예비 규제 분류와 근거: [규제 분류 근거]\n\nintended_use, out_of_scope_uses, data, performance_metrics, known_limitations, human_oversight, monitoring, ethical_considerations, owner_contact, version_history 순서로 작성하라. 예비 검토에서 고위험 가능성이 확인된 경우에만 최신 EUR-Lex의 Annex IV 항목과 현재 증거를 매핑한 '기술문서 차이 표'를 추가하라. 매핑되지 않은 항목은 추정해 채우지 말고 담당자·필요 자료·완료 기준을 적는다. 모델 카드는 법적 기술문서 전체를 대체하지 않는다고 명시하라.",
   "variables": [
     {
-      "name": "input_1",
-      "description": "___",
+      "name": "reference_scope",
+      "description": "기준일과 적용 관할",
       "required": true,
-      "example": "___"
+      "example": "2026-08-09, EU"
     },
     {
-      "name": "input_2",
-      "description": "전체/하위그룹별 메트릭",
+      "name": "system_model",
+      "description": "시스템명과 모델 버전",
       "required": true,
-      "example": "전체/하위그룹별 메트릭"
+      "example": "지원서 보조 분석기 2.3"
+    },
+    {
+      "name": "use_scope",
+      "description": "의도된 용도와 금지 용도",
+      "required": true,
+      "example": "담당자 검토 지원, 자동 탈락 금지"
+    },
+    {
+      "name": "data_overview",
+      "description": "학습·평가 데이터 개요",
+      "required": true,
+      "example": "내부 승인 데이터와 독립 평가셋"
+    },
+    {
+      "name": "evaluation_results",
+      "description": "전체·하위집단 평가 결과",
+      "required": true,
+      "example": "전체 F1 0.88, 최저 하위집단 0.79"
+    },
+    {
+      "name": "regulatory_basis",
+      "description": "예비 분류와 근거 또는 미결정 사유",
+      "required": true,
+      "example": "Annex III 고용 분야 해당 가능성"
     }
   ],
   "outputContract": {
-    "format": "table",
-    "description": "요청한 조건과 형식을 지키며 확인 가능한 결과만 반환한다.",
+    "format": "mixed",
+    "description": "모델 카드 본문과 근거 기반 Annex IV 차이 표",
     "schema": null,
-    "sections": []
+    "sections": [
+      "모델 카드",
+      "근거와 불확실성",
+      "기술문서 차이 표",
+      "검토·승인"
+    ]
   },
-  "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
+  "notes": "모델 카드와 Annex IV 기술문서의 목적을 구분한다. 최신 공식 법령을 확인하고 누락 항목을 생성해 채우지 않으며 법무·준법·모델 책임자의 검토를 받는다.",
   "examples": [],
   "tags": [
     "글쓰기",
@@ -40,7 +69,9 @@
     "responsible-ai"
   ],
   "relatedWikiSlugs": [
-    "guardrail"
+    "model-transparency",
+    "ai-regulatory-classification",
+    "ai-compliance-monitoring"
   ],
   "providerScope": "provider-agnostic",
   "provenance": {
@@ -49,5 +80,5 @@
     "legacyKey": "public:ai-safety-compliance-p2"
   },
   "status": "reviewed",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-09"
 }
