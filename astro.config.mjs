@@ -5,7 +5,8 @@ const siteUrl = process.env.SITE_URL ?? 'https://ai-wiki.kr';
 const configuredBase = process.env.BASE_PATH ?? '/';
 const basePath = configuredBase === '/' ? '' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 const withBase = (pathname) => `${basePath}${pathname}`;
-const logoUrl = new URL(withBase('/logo.png'), siteUrl).toString();
+const ogImageUrl = new URL(withBase('/social/og-image.png'), siteUrl).toString();
+const twitterImageUrl = new URL(withBase('/social/twitter-card.png'), siteUrl).toString();
 
 export default defineConfig({
   site: siteUrl,
@@ -20,11 +21,15 @@ export default defineConfig({
         { tag: 'link', attrs: { rel: 'apple-touch-icon', href: withBase('/logo.png') } },
         { tag: 'link', attrs: { rel: 'manifest', href: withBase('/site.webmanifest') } },
         { tag: 'meta', attrs: { name: 'theme-color', content: '#ffffff' } },
-        { tag: 'meta', attrs: { property: 'og:image', content: logoUrl } },
-        { tag: 'meta', attrs: { property: 'og:image:width', content: '1254' } },
-        { tag: 'meta', attrs: { property: 'og:image:height', content: '1254' } },
-        { tag: 'meta', attrs: { property: 'og:image:alt', content: 'AI Learning Wiki 로고' } },
-        { tag: 'meta', attrs: { name: 'twitter:image', content: logoUrl } }
+        { tag: 'meta', attrs: { property: 'og:image', content: ogImageUrl } },
+        { tag: 'meta', attrs: { property: 'og:image:secure_url', content: ogImageUrl } },
+        { tag: 'meta', attrs: { property: 'og:image:type', content: 'image/png' } },
+        { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
+        { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
+        { tag: 'meta', attrs: { property: 'og:image:alt', content: 'AI Learning Wiki — AI와 LLM을 연결하는 백과사전' } },
+        { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
+        { tag: 'meta', attrs: { name: 'twitter:image', content: twitterImageUrl } },
+        { tag: 'meta', attrs: { name: 'twitter:image:alt', content: 'AI Learning Wiki — AI와 LLM을 연결하는 백과사전' } }
       ],
       customCss: [
         './src/styles/wiki.css',

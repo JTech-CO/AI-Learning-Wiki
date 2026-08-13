@@ -203,7 +203,8 @@
     "wiki:w60:render": "node scripts/check-w60-render.mjs",
     "wiki:w60:release": "npm run wiki:w60:report && npm run wiki:w60:validate && npm run wiki:w60:render",
     "ui:contrast": "node scripts/check-light-theme-contrast.mjs",
-    "ui:header": "node scripts/check-responsive-header.mjs"
+    "ui:header": "node scripts/check-responsive-header.mjs",
+    "social:images": "node scripts/build-social-images.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",
