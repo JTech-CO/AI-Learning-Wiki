@@ -123,12 +123,13 @@
     },
     {
       "articleId": "mcp",
-      "reviewNote": "클라이언트-서버 구조, JSON-RPC 기반 메시지, 도구·리소스·프롬프트 기능과 보안 경계를 공식 명세에서 확인했다.",
+      "reviewedAt": "2026-08-13",
+      "reviewNote": "2026-07-28 정식 규격의 상태 비저장 요청 모델, 요청별 기능 협상, 확장 프레임워크와 이전 규격 폐기 정책을 공식 명세와 릴리스 공지에서 재검토했다.",
       "evidenceSets": {
-        "concept": [{ "sourceRef": 3, "locator": "Architecture and Base Protocol sections" }],
-        "provenance": [{ "sourceRef": 2, "locator": "Lead, architecture and protocol sections" }],
+        "concept": [{ "sourceRef": 3, "locator": "Specification overview, Base Protocol and Key Changes sections" }],
+        "provenance": [{ "sourceRef": 2, "locator": "Lead, architecture and protocol sections" }, { "sourceRef": 3, "locator": "Specification overview and Key Changes sections" }, { "sourceRef": 4, "locator": "2026-07-28 release overview and deprecations sections" }],
         "implementation": [{ "sourceRef": 3, "locator": "Client Features, Server Features, Tools, Resources and Prompts sections" }],
-        "limitations": [{ "sourceRef": 3, "locator": "Security Best Practices and authorization sections" }]
+        "limitations": [{ "sourceRef": 3, "locator": "Security and Trust & Safety and authorization sections" }]
       }
     },
     {

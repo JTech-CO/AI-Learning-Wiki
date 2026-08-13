@@ -94,6 +94,7 @@
     "wiki:w16:queue": "node scripts/build-w16-production-queue.mjs && node scripts/validate-w16-production-queue.mjs",
     "wiki:w16:render": "node scripts/check-w16-render.mjs",
     "astro:build": "node --max-old-space-size=8192 node_modules/astro/bin/astro.mjs build",
+    "build:site": "npm run astro:build && npm run pages:paths && npm run smoke && npm run links && npm run qa",
     "wiki:w17:prepare": "node scripts/prepare-w17-batch.mjs",
     "wiki:w17:refresh": "node scripts/build-w17-claim-ledger.mjs",
     "wiki:w17:validate": "node scripts/validate-w17-claims.mjs",

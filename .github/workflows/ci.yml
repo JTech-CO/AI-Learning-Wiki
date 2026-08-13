@@ -31,7 +31,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
       - run: npm run validate:complete
-      - run: npm run build
+      - run: npm run build:site
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4

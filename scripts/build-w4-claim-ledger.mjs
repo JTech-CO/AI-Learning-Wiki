@@ -27,7 +27,7 @@ for (const rule of rules.articles) {
   });
   articles.push({
     articleId: article.id,
-    reviewedAt: rules.reviewedAt,
+    reviewedAt: rule.reviewedAt ?? rules.reviewedAt,
     reviewer: rules.reviewer,
     reviewNote: rule.reviewNote,
     articleBodySha256: sha(factualSections.map((section) => `${section.id}\n${section.body}`).join('\n\n')),

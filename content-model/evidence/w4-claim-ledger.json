@@ -1,7 +1,7 @@
 {
   "version": "W4-2026-07-13",
-  "generatedAt": "2026-07-23T05:02:01.103Z",
-  "rulesSha256": "8e2494473da125ab0667db11e75dafe4117aa3ae06369641278f889fb18d438e",
+  "generatedAt": "2026-08-13T08:57:13.235Z",
+  "rulesSha256": "9b56443443726157c25b409f715e0f766496a0b618f0e989a8835389872fe031",
   "articles": [
     {
       "articleId": "reinforcement-learning",
@@ -8138,10 +8138,10 @@
     },
     {
       "articleId": "mcp",
-      "reviewedAt": "2026-07-13",
+      "reviewedAt": "2026-08-13",
       "reviewer": "AI Learning Wiki W4 editorial audit",
-      "reviewNote": "클라이언트-서버 구조, JSON-RPC 기반 메시지, 도구·리소스·프롬프트 기능과 보안 경계를 공식 명세에서 확인했다.",
-      "articleBodySha256": "bb681ded599072e9e5f956eb52a646b22bd473742cfdadff62dbdc69c8d7cd55",
+      "reviewNote": "2026-07-28 정식 규격의 상태 비저장 요청 모델, 요청별 기능 협상, 확장 프레임워크와 이전 규격 폐기 정책을 공식 명세와 릴리스 공지에서 재검토했다.",
+      "articleBodySha256": "e61f84f7ca39ea26e294a6bf95dd9ecf31a06aa7d38284769bf3fd7b31588de6",
       "publicationReady": true,
       "sections": [
         {
@@ -8155,7 +8155,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
@@ -8166,7 +8166,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
@@ -8177,7 +8177,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
@@ -8188,7 +8188,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             }
@@ -8206,6 +8206,14 @@
                 {
                   "sourceRef": 2,
                   "locator": "Lead, architecture and protocol sections"
+                },
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview and Key Changes sections"
+                },
+                {
+                  "sourceRef": 4,
+                  "locator": "2026-07-28 release overview and deprecations sections"
                 }
               ]
             },
@@ -8217,6 +8225,14 @@
                 {
                   "sourceRef": 2,
                   "locator": "Lead, architecture and protocol sections"
+                },
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview and Key Changes sections"
+                },
+                {
+                  "sourceRef": 4,
+                  "locator": "2026-07-28 release overview and deprecations sections"
                 }
               ]
             },
@@ -8228,6 +8244,14 @@
                 {
                   "sourceRef": 2,
                   "locator": "Lead, architecture and protocol sections"
+                },
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview and Key Changes sections"
+                },
+                {
+                  "sourceRef": 4,
+                  "locator": "2026-07-28 release overview and deprecations sections"
                 }
               ]
             },
@@ -8239,39 +8263,71 @@
                 {
                   "sourceRef": 2,
                   "locator": "Lead, architecture and protocol sections"
+                },
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview and Key Changes sections"
+                },
+                {
+                  "sourceRef": 4,
+                  "locator": "2026-07-28 release overview and deprecations sections"
                 }
               ]
             },
             {
               "claimId": "mcp-scope-05",
-              "textSha256": "00b92c6eecb9fdcc6021e98da47128bad62e3e661c8aa85aa7075c86834652ba",
+              "textSha256": "66eb2107278dd39ce9a39fe1d045530962921bfcb49cf758c801b181d688c19b",
               "decision": "accepted",
               "evidence": [
                 {
                   "sourceRef": 2,
                   "locator": "Lead, architecture and protocol sections"
+                },
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview and Key Changes sections"
+                },
+                {
+                  "sourceRef": 4,
+                  "locator": "2026-07-28 release overview and deprecations sections"
                 }
               ]
             },
             {
               "claimId": "mcp-scope-06",
-              "textSha256": "d1a4de66b40ba5debe7181340b500fe1793bf638694bdf90afd1a5eec045ce78",
+              "textSha256": "f2679a00570d57caf7a01f289bf5080a90e8b0a253c280018f8cb0e035223184",
               "decision": "accepted",
               "evidence": [
                 {
                   "sourceRef": 2,
                   "locator": "Lead, architecture and protocol sections"
+                },
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview and Key Changes sections"
+                },
+                {
+                  "sourceRef": 4,
+                  "locator": "2026-07-28 release overview and deprecations sections"
                 }
               ]
             },
             {
               "claimId": "mcp-scope-07",
-              "textSha256": "54ba366759b64c722daf28cacac5f7b065ee3a02055609839361678025f0dabf",
+              "textSha256": "186ae14398cdc4f04af337b4df5ae9fef22be88eb3797509e67825ec169b8132",
               "decision": "accepted",
               "evidence": [
                 {
                   "sourceRef": 2,
                   "locator": "Lead, architecture and protocol sections"
+                },
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview and Key Changes sections"
+                },
+                {
+                  "sourceRef": 4,
+                  "locator": "2026-07-28 release overview and deprecations sections"
                 }
               ]
             }
@@ -8288,7 +8344,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
@@ -8299,7 +8355,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
@@ -8310,29 +8366,40 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
             {
               "claimId": "mcp-mechanism-04",
-              "textSha256": "b6c1fcaba5b0393518d4eabc40cf0dc88481d42dc3a6c90a91c5c29fef819054",
+              "textSha256": "24a0a05e79c1f84b74960fd41e67651d2d637ac863d28a41ef30cc18fde2f18b",
               "decision": "accepted",
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
             {
               "claimId": "mcp-mechanism-05",
-              "textSha256": "096f28b583e5846a5f98d3101d24276783f5f2240790120f10af9d5bc0e438ca",
+              "textSha256": "368cb62747750f716ba644e8e75ea99354be795770dc3161873d9cdfc262896a",
               "decision": "accepted",
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
+                }
+              ]
+            },
+            {
+              "claimId": "mcp-mechanism-06",
+              "textSha256": "b55867256328a113070df8c65ec2f2b60e371a9ec188d34f9081776809e4ea48",
+              "decision": "accepted",
+              "evidence": [
+                {
+                  "sourceRef": 3,
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             }
@@ -8460,7 +8527,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Security Best Practices and authorization sections"
+                  "locator": "Security and Trust & Safety and authorization sections"
                 }
               ]
             },
@@ -8471,7 +8538,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Security Best Practices and authorization sections"
+                  "locator": "Security and Trust & Safety and authorization sections"
                 }
               ]
             },
@@ -8482,7 +8549,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Security Best Practices and authorization sections"
+                  "locator": "Security and Trust & Safety and authorization sections"
                 }
               ]
             },
@@ -8493,7 +8560,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Security Best Practices and authorization sections"
+                  "locator": "Security and Trust & Safety and authorization sections"
                 }
               ]
             }
@@ -8510,7 +8577,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             },
@@ -8521,7 +8588,7 @@
               "evidence": [
                 {
                   "sourceRef": 3,
-                  "locator": "Architecture and Base Protocol sections"
+                  "locator": "Specification overview, Base Protocol and Key Changes sections"
                 }
               ]
             }
