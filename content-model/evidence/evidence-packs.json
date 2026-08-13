@@ -1,6 +1,6 @@
 {
   "version": "W2-2026-07-13",
-  "generatedAt": "2026-08-01T05:03:20.138Z",
+  "generatedAt": "2026-08-13T08:50:05.441Z",
   "topicCatalogSha256": "25e7bf1c0cc19ffcad268b52c28236f7005996ce92b06af24bbfa23b5ac31a16",
   "articles": [
     {
@@ -7424,8 +7424,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2027-01-11T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2027-02-05T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -7458,6 +7458,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -7578,6 +7591,7 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
@@ -7593,6 +7607,7 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
@@ -7608,6 +7623,7 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
@@ -7623,6 +7639,7 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
@@ -7654,6 +7671,7 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
@@ -7669,6 +7687,7 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
@@ -7686,10 +7705,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "independentFamilies": 6,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -16455,8 +16474,8 @@
       "categoryId": "safety",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "agent-security-nist",
@@ -16478,6 +16497,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-6c3efae2cfc1",
+          "title": "European Commission Guidelines on Article 50 Transparency Obligations",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-95769a8e35f0",
           "title": "OWASP GenAI Security Project",
           "url": "https://genai.owasp.org/",
@@ -16489,6 +16521,32 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-9f7d87fbe987",
+          "title": "Regulation (EU) 2024/1689: Artificial Intelligence Act",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+          "type": "standard",
+          "family": "technical-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-14T17:52:33.544Z"
+        },
+        {
+          "id": "src-a9e3e225dba7",
+          "title": "Code of Practice on Transparency of AI-generated Content",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-b2ac367daf50",
@@ -16564,6 +16622,7 @@
           "candidateSourceIds": [
             "src-54dbc1541342",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
             "src-c678f61aafad",
             "src-d334df2a2076",
             "src-e1c379c19fd1",
@@ -16578,6 +16637,7 @@
           "candidateSourceIds": [
             "src-54dbc1541342",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
             "src-c678f61aafad",
             "src-d334df2a2076",
             "src-e1c379c19fd1",
@@ -16591,7 +16651,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -16605,7 +16668,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -16619,7 +16685,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -16633,7 +16702,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -16648,6 +16720,7 @@
           "candidateSourceIds": [
             "src-54dbc1541342",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
             "src-c678f61aafad",
             "src-d334df2a2076",
             "src-e1c379c19fd1",
@@ -16661,7 +16734,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -16675,7 +16751,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -16693,9 +16772,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 6,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 7,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -17264,8 +17343,8 @@
       "categoryId": "safety",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "agent-security-nist",
@@ -17287,6 +17366,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-6c3efae2cfc1",
+          "title": "European Commission Guidelines on Article 50 Transparency Obligations",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-95769a8e35f0",
           "title": "OWASP GenAI Security Project",
           "url": "https://genai.owasp.org/",
@@ -17298,6 +17390,32 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-9f7d87fbe987",
+          "title": "Regulation (EU) 2024/1689: Artificial Intelligence Act",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+          "type": "standard",
+          "family": "technical-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-14T17:52:33.544Z"
+        },
+        {
+          "id": "src-a9e3e225dba7",
+          "title": "Code of Practice on Transparency of AI-generated Content",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-b2ac367daf50",
@@ -17386,6 +17504,7 @@
           "candidateSourceIds": [
             "src-54dbc1541342",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
             "src-c678f61aafad",
             "src-d334df2a2076",
             "src-e1c379c19fd1",
@@ -17401,6 +17520,7 @@
           "candidateSourceIds": [
             "src-54dbc1541342",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
             "src-c678f61aafad",
             "src-d334df2a2076",
             "src-e1c379c19fd1",
@@ -17415,7 +17535,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -17430,7 +17553,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -17445,7 +17571,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -17460,7 +17589,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -17476,6 +17608,7 @@
           "candidateSourceIds": [
             "src-54dbc1541342",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
             "src-c678f61aafad",
             "src-d334df2a2076",
             "src-e1c379c19fd1",
@@ -17490,7 +17623,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -17505,7 +17641,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -17524,9 +17663,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 10,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 11,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -20421,8 +20560,8 @@
       "categoryId": "safety",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "agent-security-nist",
@@ -20442,6 +20581,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-6c3efae2cfc1",
+          "title": "European Commission Guidelines on Article 50 Transparency Obligations",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-95769a8e35f0",
@@ -20468,6 +20620,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-14T17:52:33.544Z"
+        },
+        {
+          "id": "src-a9e3e225dba7",
+          "title": "Code of Practice on Transparency of AI-generated Content",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-b2ac367daf50",
@@ -20572,8 +20737,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -20587,8 +20754,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -20602,8 +20771,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -20617,8 +20788,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -20647,8 +20820,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -20662,8 +20837,10 @@
           "factual": true,
           "candidateSourceIds": [
             "src-54dbc1541342",
+            "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
             "src-d334df2a2076",
@@ -20681,9 +20858,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -28690,8 +28867,8 @@
       "categoryId": "api",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -28699,6 +28876,32 @@
         "rfc-9110"
       ],
       "sources": [
+        {
+          "id": "src-0e5ba6524c75",
+          "title": "OpenAI API Models",
+          "url": "https://developers.openai.com/api/docs/models",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
+          "id": "src-49e8d0577a5e",
+          "title": "OpenAI API Changelog",
+          "url": "https://developers.openai.com/api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
@@ -28838,6 +29041,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -28853,6 +29058,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -28868,6 +29075,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -28883,6 +29092,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -28912,6 +29123,8 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -28927,6 +29140,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -28947,9 +29162,9 @@
       ],
       "audit": {
         "independentFamilies": 4,
-        "primaryCandidates": 7,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -70084,8 +70299,8 @@
       "categoryId": "multimodal",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "w3c-webnn",
@@ -70132,6 +70347,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-6c3efae2cfc1",
+          "title": "European Commission Guidelines on Article 50 Transparency Obligations",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-7a036360ab73",
@@ -70186,6 +70414,32 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-9f7d87fbe987",
+          "title": "Regulation (EU) 2024/1689: Artificial Intelligence Act",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+          "type": "standard",
+          "family": "technical-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-14T17:52:33.544Z"
+        },
+        {
+          "id": "src-a9e3e225dba7",
+          "title": "Code of Practice on Transparency of AI-generated Content",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-b77847dadc4b",
           "title": "Torchvision Models and Pre-trained Weights",
           "url": "https://pytorch.org/vision/stable/models.html",
@@ -70211,7 +70465,8 @@
             "src-7a036360ab73",
             "src-85a07e02efe9",
             "src-89509c5a100a",
-            "src-9655b10ab589"
+            "src-9655b10ab589",
+            "src-9f7d87fbe987"
           ],
           "assignmentStatus": "review-required"
         },
@@ -70226,7 +70481,8 @@
             "src-7a036360ab73",
             "src-85a07e02efe9",
             "src-89509c5a100a",
-            "src-9655b10ab589"
+            "src-9655b10ab589",
+            "src-9f7d87fbe987"
           ],
           "assignmentStatus": "review-required"
         },
@@ -70238,9 +70494,12 @@
             "src-34af97ed3e66",
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b"
           ],
           "assignmentStatus": "review-required"
@@ -70253,9 +70512,12 @@
             "src-34af97ed3e66",
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b"
           ],
           "assignmentStatus": "review-required"
@@ -70268,9 +70530,12 @@
             "src-34af97ed3e66",
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b"
           ],
           "assignmentStatus": "review-required"
@@ -70283,9 +70548,12 @@
             "src-34af97ed3e66",
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b"
           ],
           "assignmentStatus": "review-required"
@@ -70301,7 +70569,8 @@
             "src-7a036360ab73",
             "src-85a07e02efe9",
             "src-89509c5a100a",
-            "src-9655b10ab589"
+            "src-9655b10ab589",
+            "src-9f7d87fbe987"
           ],
           "assignmentStatus": "review-required"
         },
@@ -70313,9 +70582,12 @@
             "src-34af97ed3e66",
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b"
           ],
           "assignmentStatus": "review-required"
@@ -70328,9 +70600,12 @@
             "src-34af97ed3e66",
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b"
           ],
           "assignmentStatus": "review-required"
@@ -70345,9 +70620,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 10,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 11,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -74221,8 +74496,8 @@
       "categoryId": "llm",
       "tier": "standard",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-13",
-      "reviewDueAt": "2028-07-12T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2028-08-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "huggingface-transformers",
@@ -74230,6 +74505,19 @@
         "google-ml-glossary"
       ],
       "sources": [
+        {
+          "id": "src-0e5ba6524c75",
+          "title": "OpenAI API Models",
+          "url": "https://developers.openai.com/api/docs/models",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-2cab3ea10b8b",
           "title": "Language Models are Few-Shot Learners",
@@ -74255,6 +74543,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-49e8d0577a5e",
+          "title": "OpenAI API Changelog",
+          "url": "https://developers.openai.com/api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-595bd3e726b0",
@@ -74335,8 +74636,10 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
             "src-2cab3ea10b8b",
             "src-45d1a1574128",
+            "src-49e8d0577a5e",
             "src-933846efb3bd",
             "src-ceefe0755b1f"
           ],
@@ -74347,8 +74650,10 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
             "src-2cab3ea10b8b",
             "src-45d1a1574128",
+            "src-49e8d0577a5e",
             "src-933846efb3bd",
             "src-ceefe0755b1f"
           ],
@@ -74359,8 +74664,10 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
             "src-2cab3ea10b8b",
             "src-45d1a1574128",
+            "src-49e8d0577a5e",
             "src-933846efb3bd",
             "src-ceefe0755b1f"
           ],
@@ -74371,8 +74678,10 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
             "src-2cab3ea10b8b",
             "src-45d1a1574128",
+            "src-49e8d0577a5e",
             "src-933846efb3bd",
             "src-ceefe0755b1f"
           ],
@@ -74393,8 +74702,10 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
             "src-2cab3ea10b8b",
             "src-45d1a1574128",
+            "src-49e8d0577a5e",
             "src-933846efb3bd",
             "src-ceefe0755b1f"
           ],
@@ -74405,8 +74716,10 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
             "src-2cab3ea10b8b",
             "src-45d1a1574128",
+            "src-49e8d0577a5e",
             "src-933846efb3bd",
             "src-ceefe0755b1f"
           ],
@@ -74422,9 +74735,9 @@
       ],
       "audit": {
         "independentFamilies": 3,
-        "primaryCandidates": 4,
+        "primaryCandidates": 6,
         "encyclopediaFamilies": 1,
-        "reachableSources": 5,
+        "reachableSources": 7,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -93305,8 +93618,8 @@
       "categoryId": "multimodal",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "w3c-webnn",
@@ -93340,6 +93653,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-6c3efae2cfc1",
+          "title": "European Commission Guidelines on Article 50 Transparency Obligations",
+          "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-7a036360ab73",
@@ -93394,6 +93720,32 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-9f7d87fbe987",
+          "title": "Regulation (EU) 2024/1689: Artificial Intelligence Act",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+          "type": "standard",
+          "family": "technical-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-07-14T17:52:33.544Z"
+        },
+        {
+          "id": "src-a9e3e225dba7",
+          "title": "Code of Practice on Transparency of AI-generated Content",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-b77847dadc4b",
           "title": "Torchvision Models and Pre-trained Weights",
           "url": "https://pytorch.org/vision/stable/models.html",
@@ -93432,6 +93784,7 @@
             "src-85a07e02efe9",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
             "src-baac28b6ad0a"
           ],
           "assignmentStatus": "review-required"
@@ -93447,6 +93800,7 @@
             "src-85a07e02efe9",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
             "src-baac28b6ad0a"
           ],
           "assignmentStatus": "review-required"
@@ -93458,9 +93812,12 @@
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b",
             "src-baac28b6ad0a"
           ],
@@ -93473,9 +93830,12 @@
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b",
             "src-baac28b6ad0a"
           ],
@@ -93488,9 +93848,12 @@
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b",
             "src-baac28b6ad0a"
           ],
@@ -93503,9 +93866,12 @@
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b",
             "src-baac28b6ad0a"
           ],
@@ -93522,6 +93888,7 @@
             "src-85a07e02efe9",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
             "src-baac28b6ad0a"
           ],
           "assignmentStatus": "review-required"
@@ -93533,9 +93900,12 @@
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b",
             "src-baac28b6ad0a"
           ],
@@ -93548,9 +93918,12 @@
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
             "src-4aba4475c526",
+            "src-6c3efae2cfc1",
             "src-7a036360ab73",
             "src-89509c5a100a",
             "src-9655b10ab589",
+            "src-9f7d87fbe987",
+            "src-a9e3e225dba7",
             "src-b77847dadc4b",
             "src-baac28b6ad0a"
           ],
@@ -93565,10 +93938,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 4,
-        "primaryCandidates": 7,
+        "independentFamilies": 5,
+        "primaryCandidates": 10,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 11,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -195574,8 +195947,8 @@
       "categoryId": "ecosystem",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "spdx-spec",
@@ -195595,6 +195968,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-63154ed5d034",
@@ -195719,6 +196105,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-2629574b34e9",
+            "src-4182359e79e6",
             "src-63154ed5d034",
             "src-986f2e70bad8",
             "src-a5878ed41338",
@@ -195734,6 +196121,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-2629574b34e9",
+            "src-4182359e79e6",
             "src-63154ed5d034",
             "src-986f2e70bad8",
             "src-a5878ed41338",
@@ -195749,6 +196137,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-2629574b34e9",
+            "src-4182359e79e6",
             "src-63154ed5d034",
             "src-986f2e70bad8",
             "src-a5878ed41338",
@@ -195764,6 +196153,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-2629574b34e9",
+            "src-4182359e79e6",
             "src-63154ed5d034",
             "src-986f2e70bad8",
             "src-a5878ed41338",
@@ -195791,6 +196181,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-2629574b34e9",
+            "src-4182359e79e6",
             "src-63154ed5d034",
             "src-986f2e70bad8",
             "src-a5878ed41338",
@@ -195806,6 +196197,7 @@
           "factual": true,
           "candidateSourceIds": [
             "src-2629574b34e9",
+            "src-4182359e79e6",
             "src-63154ed5d034",
             "src-986f2e70bad8",
             "src-a5878ed41338",
@@ -195825,9 +196217,9 @@
       ],
       "audit": {
         "independentFamilies": 4,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -200290,8 +200682,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-23",
-      "reviewDueAt": "2026-09-21T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -200300,17 +200692,17 @@
       ],
       "sources": [
         {
-          "id": "src-0d95fa0076f1",
-          "title": "The 2026-07-28 MCP Specification Release Candidate",
-          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
-          "type": "standard",
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
           "family": "protocol-standard",
           "origin": "article",
           "primaryCandidate": true,
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-23T04:42:48.774Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-7647307fe498",
@@ -200318,19 +200710,6 @@
           "url": "https://arxiv.org/abs/2210.03629",
           "type": "paper",
           "family": "research-paper",
-          "origin": "article",
-          "primaryCandidate": true,
-          "encyclopedia": false,
-          "reachability": "verified",
-          "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
-        },
-        {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification 2025-11-25",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
-          "type": "standard",
-          "family": "protocol-standard",
           "origin": "article",
           "primaryCandidate": true,
           "encyclopedia": false,
@@ -200352,6 +200731,19 @@
           "checkedAt": "2026-07-12T21:36:57.587Z"
         },
         {
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
+          "type": "standard",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-fb21ebc8d2bf",
           "title": "Model Context Protocol — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
@@ -200371,9 +200763,8 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-7647307fe498",
-            "src-7b138caa8e63",
+            "src-d1aed5d46f78",
             "src-fb21ebc8d2bf"
           ],
           "assignmentStatus": "review-required"
@@ -200383,9 +200774,8 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-7647307fe498",
-            "src-7b138caa8e63",
+            "src-d1aed5d46f78",
             "src-fb21ebc8d2bf"
           ],
           "assignmentStatus": "review-required"
@@ -200395,9 +200785,9 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
+            "src-3bef6a91327c",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200406,9 +200796,9 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
+            "src-3bef6a91327c",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200417,9 +200807,9 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
+            "src-3bef6a91327c",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200428,9 +200818,9 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
+            "src-3bef6a91327c",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200439,9 +200829,8 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-7647307fe498",
-            "src-7b138caa8e63",
+            "src-d1aed5d46f78",
             "src-fb21ebc8d2bf"
           ],
           "assignmentStatus": "review-required"
@@ -200451,9 +200840,9 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
+            "src-3bef6a91327c",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200462,9 +200851,9 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
+            "src-3bef6a91327c",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200497,8 +200886,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -200533,6 +200922,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
           "url": "https://spec.openapis.org/oas/latest.html",
@@ -200557,19 +200959,6 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
-        },
-        {
-          "id": "src-6a01ecb9df48",
-          "title": "Model Context Protocol Architecture",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
-          "type": "standard",
-          "family": "protocol-standard",
-          "origin": "article",
-          "primaryCandidate": true,
-          "encyclopedia": false,
-          "reachability": "verified",
-          "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:17:53.761Z"
         },
         {
           "id": "src-721c65211037",
@@ -200598,9 +200987,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -200608,7 +200997,20 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
+          "id": "src-eee6cbbccab2",
+          "title": "MCP 2026-07-28: Architecture",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+          "type": "standard",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -200621,10 +201023,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200637,10 +201039,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200651,11 +201053,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200666,11 +201069,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200681,11 +201085,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200696,11 +201101,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200713,10 +201119,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200727,11 +201133,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200742,11 +201149,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200760,9 +201168,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -200779,8 +201187,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -200789,9 +201197,9 @@
       ],
       "sources": [
         {
-          "id": "src-1a6dbc0e5829",
-          "title": "Model Context Protocol: Elicitation",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation",
+          "id": "src-0049ed6bcde6",
+          "title": "MCP 2026-07-28: Elicitation",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -200799,7 +201207,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:52:33.544Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-1df60a1d4afe",
@@ -200826,6 +201234,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -200880,9 +201301,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -200890,7 +201311,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -200899,14 +201320,14 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200915,14 +201336,14 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200931,13 +201352,14 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200946,13 +201368,14 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200961,13 +201384,14 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200976,13 +201400,14 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -200991,14 +201416,14 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201007,13 +201432,14 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201022,13 +201448,14 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-1a6dbc0e5829",
+            "src-0049ed6bcde6",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201042,9 +201469,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -201061,8 +201488,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -201097,6 +201524,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
           "url": "https://spec.openapis.org/oas/latest.html",
@@ -201121,19 +201561,6 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
-        },
-        {
-          "id": "src-6a01ecb9df48",
-          "title": "Model Context Protocol Architecture",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
-          "type": "standard",
-          "family": "protocol-standard",
-          "origin": "article",
-          "primaryCandidate": true,
-          "encyclopedia": false,
-          "reachability": "verified",
-          "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:17:53.761Z"
         },
         {
           "id": "src-721c65211037",
@@ -201162,9 +201589,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -201172,7 +201599,20 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
+          "id": "src-eee6cbbccab2",
+          "title": "MCP 2026-07-28: Architecture",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+          "type": "standard",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -201185,10 +201625,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201201,10 +201641,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201215,11 +201655,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201230,11 +201671,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201245,11 +201687,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201260,11 +201703,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201277,10 +201721,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201291,11 +201735,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201306,11 +201751,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201324,9 +201770,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -201343,8 +201789,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -201366,19 +201812,6 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-1f910fca1d02",
-          "title": "Model Context Protocol: Prompts",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts",
-          "type": "standard",
-          "family": "protocol-standard",
-          "origin": "article",
-          "primaryCandidate": true,
-          "encyclopedia": false,
-          "reachability": "verified",
-          "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:52:33.544Z"
-        },
-        {
           "id": "src-200002328137",
           "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
           "url": "https://arxiv.org/abs/2302.04761",
@@ -201390,6 +201823,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -201418,6 +201864,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-626e6a88e5b1",
+          "title": "MCP 2026-07-28: Prompts",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/prompts",
+          "type": "standard",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-721c65211037",
           "title": "Intelligent agent — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Intelligent_agent",
@@ -201444,9 +201903,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -201454,7 +201913,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -201464,13 +201923,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201480,13 +201939,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201496,12 +201955,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201511,12 +201971,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201526,12 +201987,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201541,12 +202003,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201556,13 +202019,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201572,12 +202035,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201587,12 +202051,13 @@
           "factual": true,
           "candidateSourceIds": [
             "src-1df60a1d4afe",
-            "src-1f910fca1d02",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-626e6a88e5b1",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201606,9 +202071,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -201625,8 +202090,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -201659,6 +202124,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -201713,9 +202191,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-a4347016e843",
+          "title": "MCP 2026-07-28: Resources",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/resources",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -201723,12 +202201,12 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
-          "id": "src-fd67269f96e1",
-          "title": "Model Context Protocol: Resources",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -201736,7 +202214,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:52:33.544Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -201751,8 +202229,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201767,8 +202245,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201779,11 +202257,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201794,11 +202273,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201809,11 +202289,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201824,11 +202305,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201843,8 +202325,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201855,11 +202337,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201870,11 +202353,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-fd67269f96e1"
+            "src-a4347016e843",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -201888,9 +202372,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -201907,8 +202391,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -201941,6 +202425,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -201995,9 +202492,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-b13d8c59508c",
+          "title": "MCP 2026-07-28: Sampling",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/sampling",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -202005,12 +202502,12 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
-          "id": "src-9219341c3e89",
-          "title": "Model Context Protocol: Sampling",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/client/sampling",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -202018,7 +202515,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:52:33.544Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -202033,8 +202530,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202049,8 +202546,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202061,11 +202558,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202076,11 +202574,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202091,11 +202590,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202106,11 +202606,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202125,8 +202626,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202137,11 +202638,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202152,11 +202654,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-9219341c3e89"
+            "src-b13d8c59508c",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202170,9 +202673,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -202189,8 +202692,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -202225,6 +202728,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
           "url": "https://spec.openapis.org/oas/latest.html",
@@ -202249,19 +202765,6 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
-        },
-        {
-          "id": "src-6a01ecb9df48",
-          "title": "Model Context Protocol Architecture",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
-          "type": "standard",
-          "family": "protocol-standard",
-          "origin": "article",
-          "primaryCandidate": true,
-          "encyclopedia": false,
-          "reachability": "verified",
-          "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:17:53.761Z"
         },
         {
           "id": "src-721c65211037",
@@ -202290,9 +202793,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -202300,7 +202803,20 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
+          "id": "src-eee6cbbccab2",
+          "title": "MCP 2026-07-28: Architecture",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+          "type": "standard",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -202313,10 +202829,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202329,10 +202845,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202343,11 +202859,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202358,11 +202875,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202373,11 +202891,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202388,11 +202907,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202405,10 +202925,10 @@
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202419,11 +202939,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202434,11 +202955,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
-            "src-6a01ecb9df48",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-d1aed5d46f78",
+            "src-eee6cbbccab2"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202452,9 +202974,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -202471,8 +202993,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2026-09-13T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -202505,6 +203027,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -202559,9 +203094,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-920caecd56af",
+          "title": "MCP 2026-07-28: Tools",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -202569,12 +203104,12 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
-          "id": "src-aca6492c13f6",
-          "title": "Model Context Protocol: Tools",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -202582,7 +203117,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:52:33.544Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -202597,8 +203132,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202613,8 +203148,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202625,11 +203160,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202640,11 +203176,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202655,11 +203192,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202670,11 +203208,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202689,8 +203228,8 @@
             "src-54dbc1541342",
             "src-721c65211037",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202701,11 +203240,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202716,11 +203256,12 @@
           "candidateSourceIds": [
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-aca6492c13f6"
+            "src-920caecd56af",
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202734,9 +203275,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -202753,8 +203294,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-23",
-      "reviewDueAt": "2026-09-21T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2026-10-08T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -202762,19 +203303,6 @@
         "agent-security-nist"
       ],
       "sources": [
-        {
-          "id": "src-0d95fa0076f1",
-          "title": "The 2026-07-28 MCP Specification Release Candidate",
-          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
-          "type": "standard",
-          "family": "protocol-standard",
-          "origin": "article",
-          "primaryCandidate": true,
-          "encyclopedia": false,
-          "reachability": "verified",
-          "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-23T04:42:48.774Z"
-        },
         {
           "id": "src-1df60a1d4afe",
           "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
@@ -202800,6 +203328,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-3bef6a91327c",
+          "title": "The 2026-07-28 MCP Specification",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+          "type": "documentation",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -202841,6 +203382,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-7296cd40e850",
+          "title": "MCP 2026-07-28: Transports",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports",
+          "type": "standard",
+          "family": "protocol-standard",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-7647307fe498",
           "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
           "url": "https://arxiv.org/abs/2210.03629",
@@ -202854,9 +203408,9 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
-          "id": "src-7b138caa8e63",
-          "title": "Model Context Protocol Specification",
-          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "id": "src-d1aed5d46f78",
+          "title": "Model Context Protocol Specification 2026-07-28",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28",
           "type": "standard",
           "family": "protocol-standard",
           "origin": "article",
@@ -202864,20 +203418,7 @@
           "encyclopedia": false,
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-13T19:24:51.785Z"
-        },
-        {
-          "id": "src-e4efcb5b005d",
-          "title": "Model Context Protocol: Transports",
-          "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports",
-          "type": "standard",
-          "family": "protocol-standard",
-          "origin": "article",
-          "primaryCandidate": true,
-          "encyclopedia": false,
-          "reachability": "verified",
-          "relevanceStatus": "editor-linked",
-          "checkedAt": "2026-07-14T17:52:33.544Z"
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         }
       ],
       "sections": [
@@ -202886,15 +203427,14 @@
           "sectionTitle": "개요와 핵심 정의",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-721c65211037",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202903,15 +203443,14 @@
           "sectionTitle": "배경과 설명 범위",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-721c65211037",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202920,14 +203459,14 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202936,14 +203475,14 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202952,14 +203491,14 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202968,14 +203507,14 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -202984,15 +203523,14 @@
           "sectionTitle": "관련 개념과의 구분",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-721c65211037",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -203001,14 +203539,14 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -203017,14 +203555,14 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
-            "src-0d95fa0076f1",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-3bef6a91327c",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-7296cd40e850",
             "src-7647307fe498",
-            "src-7b138caa8e63",
-            "src-e4efcb5b005d"
+            "src-d1aed5d46f78"
           ],
           "assignmentStatus": "review-required"
         },
@@ -356158,8 +356696,8 @@
       "categoryId": "api",
       "tier": "brief",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2027-01-11T00:00:00.000Z",
+      "reviewedAt": "2026-08-09",
+      "reviewDueAt": "2027-02-05T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -356167,6 +356705,32 @@
         "rfc-9110"
       ],
       "sources": [
+        {
+          "id": "src-0e5ba6524c75",
+          "title": "OpenAI API Models",
+          "url": "https://developers.openai.com/api/docs/models",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
+          "id": "src-49e8d0577a5e",
+          "title": "OpenAI API Changelog",
+          "url": "https://developers.openai.com/api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
@@ -356306,6 +356870,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -356321,6 +356887,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -356336,6 +356904,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -356351,6 +356921,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -356380,6 +356952,8 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -356395,6 +356969,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-0e5ba6524c75",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -356415,9 +356991,9 @@
       ],
       "audit": {
         "independentFamilies": 4,
-        "primaryCandidates": 7,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,

@@ -1,6 +1,6 @@
 {
   "version": "W2-2026-07-13",
-  "checkedAt": "2026-08-01T05:03:20.138Z",
+  "checkedAt": "2026-08-13T08:50:05.441Z",
   "policy": {
     "metadataOnly": true,
     "storedProse": false,
@@ -8,10 +8,10 @@
     "incrementalChecks": true
   },
   "totals": {
-    "uniqueUrls": 1053,
-    "articleUrls": 1053,
+    "uniqueUrls": 1059,
+    "articleUrls": 1059,
     "anchorUrls": 29,
-    "reachable": 1051,
+    "reachable": 1057,
     "restricted": 2,
     "unavailable": 0
   },
@@ -9174,17 +9174,25 @@
       "anchorIds": []
     },
     {
-      "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
-      "finalUrl": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "finalUrl": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
       "status": 200,
       "state": "reachable",
       "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": null,
-      "checkedAt": "2026-07-23T04:42:48.774Z",
+      "etag": "W/\"6a695d23-20a2f\"",
+      "lastModified": "Wed, 29 Jul 2026 01:53:39 GMT",
+      "checkedAt": "2026-08-13T08:50:05.441Z",
       "error": null,
       "articleIds": [
         "mcp",
+        "mcp-client",
+        "mcp-elicitation",
+        "mcp-host",
+        "mcp-prompts",
+        "mcp-resources",
+        "mcp-sampling",
+        "mcp-server",
+        "mcp-tools",
         "mcp-transport"
       ],
       "anchorIds": []
@@ -9931,6 +9939,80 @@
       "error": null,
       "articleIds": [
         "machine-learning"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "finalUrl": "https://developers.openai.com/api/docs/changelog",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"13f447994d8e89dab90e67a844a67d9c\"",
+      "lastModified": "Thu, 13 Aug 2026 05:02:49 GMT",
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "api-cost-tracking",
+        "context-window",
+        "long-context-routing",
+        "usage-metering"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/models",
+      "finalUrl": "https://developers.openai.com/api/docs/models",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "api-cost-tracking",
+        "context-window",
+        "long-context-routing",
+        "usage-metering"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+      "finalUrl": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": "\"1786610381\"",
+      "lastModified": "Thu, 13 Aug 2026 08:39:41 GMT",
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "ai-compliance-monitoring",
+        "ai-disclosure",
+        "ai-regulatory-classification",
+        "content-provenance",
+        "deepfake-detection"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+      "finalUrl": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=UTF-8",
+      "etag": "\"1786610378\"",
+      "lastModified": "Thu, 13 Aug 2026 08:39:38 GMT",
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "ai-compliance-monitoring",
+        "ai-disclosure",
+        "ai-regulatory-classification",
+        "content-provenance",
+        "deepfake-detection"
       ],
       "anchorIds": []
     },
@@ -17075,8 +17157,12 @@
       "checkedAt": "2026-07-14T17:52:33.544Z",
       "error": null,
       "articleIds": [
+        "ai-compliance-monitoring",
+        "ai-disclosure",
         "ai-incident-reporting",
-        "ai-regulatory-classification"
+        "ai-regulatory-classification",
+        "content-provenance",
+        "deepfake-detection"
       ],
       "anchorIds": []
     },
@@ -20725,113 +20811,6 @@
       "anchorIds": []
     },
     {
-      "url": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
-      "finalUrl": "https://modelcontextprotocol.io/specification/2025-06-18/architecture",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": "Tue, 14 Jul 2026 16:52:04 GMT",
-      "checkedAt": "2026-07-14T17:17:53.761Z",
-      "error": null,
-      "articleIds": [
-        "mcp-client",
-        "mcp-host",
-        "mcp-server"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports",
-      "finalUrl": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": "Tue, 14 Jul 2026 17:52:39 GMT",
-      "checkedAt": "2026-07-14T17:52:33.544Z",
-      "error": null,
-      "articleIds": [
-        "mcp-transport"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation",
-      "finalUrl": "https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": "Tue, 14 Jul 2026 17:52:39 GMT",
-      "checkedAt": "2026-07-14T17:52:33.544Z",
-      "error": null,
-      "articleIds": [
-        "mcp-elicitation"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://modelcontextprotocol.io/specification/2025-06-18/client/sampling",
-      "finalUrl": "https://modelcontextprotocol.io/specification/2025-06-18/client/sampling",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": "Tue, 14 Jul 2026 17:52:39 GMT",
-      "checkedAt": "2026-07-14T17:52:33.544Z",
-      "error": null,
-      "articleIds": [
-        "mcp-sampling"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts",
-      "finalUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": "Tue, 14 Jul 2026 17:52:39 GMT",
-      "checkedAt": "2026-07-14T17:52:33.544Z",
-      "error": null,
-      "articleIds": [
-        "mcp-prompts"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources",
-      "finalUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": "Tue, 14 Jul 2026 16:56:40 GMT",
-      "checkedAt": "2026-07-14T17:52:33.544Z",
-      "error": null,
-      "articleIds": [
-        "mcp-resources"
-      ],
-      "anchorIds": []
-    },
-    {
-      "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
-      "finalUrl": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
-      "status": 200,
-      "state": "reachable",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": "Tue, 14 Jul 2026 17:04:07 GMT",
-      "checkedAt": "2026-07-14T17:52:33.544Z",
-      "error": null,
-      "articleIds": [
-        "mcp-tools"
-      ],
-      "anchorIds": []
-    },
-    {
       "url": "https://modelcontextprotocol.io/specification/2025-11-25",
       "finalUrl": "https://modelcontextprotocol.io/specification/2025-11-25",
       "status": 200,
@@ -20909,16 +20888,6 @@
         "human-in-the-loop",
         "inter-agent-communication",
         "long-term-agent-memory",
-        "mcp",
-        "mcp-client",
-        "mcp-elicitation",
-        "mcp-host",
-        "mcp-prompts",
-        "mcp-resources",
-        "mcp-sampling",
-        "mcp-server",
-        "mcp-tools",
-        "mcp-transport",
         "memory-consolidation",
         "memory-forgetting",
         "model-based-planning",
@@ -20965,9 +20934,140 @@
         "worker-agent",
         "working-memory"
       ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp",
+        "mcp-client",
+        "mcp-elicitation",
+        "mcp-host",
+        "mcp-prompts",
+        "mcp-resources",
+        "mcp-sampling",
+        "mcp-server",
+        "mcp-tools",
+        "mcp-transport"
+      ],
       "anchorIds": [
         "mcp-spec"
       ]
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp-client",
+        "mcp-host",
+        "mcp-server"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp-transport"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp-elicitation"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/sampling",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/client/sampling",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp-sampling"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/prompts",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/server/prompts",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp-prompts"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/resources",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/server/resources",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp-resources"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "mcp-tools"
+      ],
+      "anchorIds": []
     },
     {
       "url": "https://nlp.stanford.edu/IR-book/",
@@ -21813,6 +21913,24 @@
         "condition-number",
         "numerical-precision",
         "numerical-stability"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "finalUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-13T08:50:05.441Z",
+      "error": null,
+      "articleIds": [
+        "agent-delegation",
+        "agent-step-budget",
+        "api-region-routing",
+        "managed-inference-platform"
       ],
       "anchorIds": []
     },
