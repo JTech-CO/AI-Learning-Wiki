@@ -137,7 +137,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[모델 학습과 튜닝](/course/model-training/)
+[모델 학습과 튜닝](/course/model-training/) · [AI를 위한 수학·통계](/course/ai-mathematics-statistics/)
 
 ## 참고와 다음 학습
 
@@ -154,3 +154,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **모델 학습과 튜닝:** [다음 문서 — 최적화](/wiki/optimization/)
+- **AI를 위한 수학·통계:** [다음 문서 — 야코비 행렬](/wiki/jacobian-matrix/)

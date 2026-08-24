@@ -209,7 +209,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[LLM 내부 구조](/course/llm-internals/)
+[AI를 위한 수학·통계](/course/ai-mathematics-statistics/) · [LLM 내부 구조](/course/llm-internals/)
 
 ## 참고와 다음 학습
 
@@ -223,4 +223,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **AI를 위한 수학·통계:** [다음 문서 — 전치행렬](/wiki/matrix-transpose/)
 - **LLM 내부 구조:** [다음 문서 — 신경망](/wiki/neural-network/)

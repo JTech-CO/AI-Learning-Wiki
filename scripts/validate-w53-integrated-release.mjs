@@ -27,11 +27,22 @@ const professionalCourseLabels = [
   'AI 보안과 레드팀',
   '멀티모달 AI 시스템',
 ];
+const p0CourseLabels = [
+  'AI를 위한 수학·통계',
+  '현대 신경망과 모델 아키텍처',
+  '트랜스포머 아키텍처',
+  '효율적·장문맥 트랜스포머',
+  'AI 시스템·하드웨어·서빙',
+  '모델·서비스 생태계',
+  '프로덕션 AI API 시스템',
+  '데이터·학습 파이프라인',
+];
 
 assert.equal(report.milestone, 'W53');
 assert.deepEqual(report.targetCounts, { prompts: 1500, artifacts: 120, courses: 16, articles: 1600 });
 assert.ok(report.canonicalCounts.articles >= report.targetCounts.articles, 'article count dropped below the W53 release baseline');
-assert.deepEqual({ courses: report.canonicalCounts.courses, prompts: report.canonicalCounts.prompts, artifacts: report.canonicalCounts.artifacts }, { courses: 16, prompts: 1500, artifacts: 120 });
+assert.ok(report.canonicalCounts.courses >= report.targetCounts.courses, 'course count dropped below the W53 release baseline');
+assert.deepEqual({ prompts: report.canonicalCounts.prompts, artifacts: report.canonicalCounts.artifacts }, { prompts: 1500, artifacts: 120 });
 assert.deepEqual({
   articles: report.publicCounts.articles, courses: report.publicCounts.courses,
   prompts: report.publicCounts.prompts, artifacts: report.publicCounts.artifacts,
@@ -43,7 +54,7 @@ assert.ok(report.promptQuality.schema >= 120);
 assert.ok(report.promptQuality.withExamples >= 500);
 assert.deepEqual(report.artifactQuality.types, ['code', 'config', 'payload', 'query', 'schema', 'template', 'workflow']);
 assert.deepEqual({ withRuntime: report.artifactQuality.withRuntime, withValidation: report.artifactQuality.withValidation, withSecurityNotes: report.artifactQuality.withSecurityNotes }, { withRuntime: 120, withValidation: 120, withSecurityNotes: 120 });
-assert.equal(Object.keys(report.courseCoverage).length, 16);
+assert.equal(Object.keys(report.courseCoverage).length, report.canonicalCounts.courses);
 assert.equal(report.professionalCourses.length, 8);
 for (const courseId of report.professionalCourses) {
   const coverage = report.courseCoverage[courseId];
@@ -58,19 +69,19 @@ assert.ok(base.promptIds.every((id) => promptIds.includes(id)) && base.artifactI
 assert.equal(sha256(promptIds.filter((id) => base.promptIds.includes(id)).join('\n')), base.hashes.promptIdsSha256);
 assert.equal(sha256(artifactIds.filter((id) => base.artifactIds.includes(id)).join('\n')), base.hashes.artifactIdsSha256);
 assert.ok(readme.includes(report.canonicalCounts.articles.toLocaleString('en-US') + '개'), 'README article count is stale');
-assert.match(readme, /16개 추천 코스/u);
+assert.match(readme, /24개 추천 코스/u);
 assert.match(readme, /1,500개 프롬프트와 120개 코드·설정 자료/u);
 assert.doesNotMatch(readme, /1,142개 프롬프트|8개 추천 코스|1,400개 백과 문서/u);
 assert.match(homeSource, /formatCount\(wiki\.counts\.articles\)/u);
 assert.match(promptPage, /1,500개 프롬프트/u);
 assert.match(promptPage, /16개 학습 코스/u);
 assert.doesNotMatch(promptPage + pathsPage, /1,142|8개 (?:학습 코스|과정)|150개 핵심/u);
-assert.match(pathsPage, /16개 과정/u);
+assert.match(pathsPage, /24개 과정/u);
 assert.match(termsPage, /프롬프트 및 코드·설정 자료/u);
 assert.match(sidebarSource, /<details class="wiki-sidebar-more" open=\{showAdditionalCourses\}>/u);
 assert.match(sidebarSource, /<summary>더 보기<\/summary>/u);
-assert.equal((sidebarSource.match(/\{ id: '[^']+', title: '[^']+' \}/gu) ?? []).length, 8, 'sidebar additional course count mismatch');
-for (const label of professionalCourseLabels) assert.ok(sidebarSource.includes(label), `sidebar course label missing: ${label}`);
+assert.equal((sidebarSource.match(/\{ id: '[^']+', title: '[^']+' \}/gu) ?? []).length, 16, 'sidebar additional course count mismatch');
+for (const label of [...professionalCourseLabels, ...p0CourseLabels]) assert.ok(sidebarSource.includes(label), `sidebar course label missing: ${label}`);
 assert.match(wikiStyles, /\.wiki-sidebar-more\[open\] > summary::before/u);
 assert.match(wikiStyles, /\.wiki-category-index > div \{[^}]*margin-top: 0 !important;/su);
 assert.match(wikiStyles, /\.wiki-home-columns > \* \{ margin-top: 0 !important; \}/u);
@@ -85,4 +96,4 @@ assert.match(libraryStyles, /\.prompt-course-menu > summary::marker \{ content: 
 assert.match(libraryStyles, /\.prompt-course-menu > summary::after \{[^}]*border-right: 1\.5px solid currentColor;[^}]*transform: rotate\(45deg\);/su);
 assert.match(libraryStyles, /\.prompt-course-options button \{[^}]*margin-top: 0 !important;[^}]*line-height: 1\.35;/su);
 assert.match(libraryStyles, /\.prompt-card > details > summary \{[^}]*color: #202122 !important;[^}]*-webkit-text-fill-color: #202122;/su);
-console.log('W53 integrated release baseline retained; current corpus ' + report.canonicalCounts.articles + ' articles + 16 courses + 1500 prompts + 120 artifacts');
+console.log('W53 integrated release baseline retained; current corpus ' + report.canonicalCounts.articles + ' articles + ' + report.canonicalCounts.courses + ' courses + 1500 prompts + 120 artifacts');

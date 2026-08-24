@@ -119,8 +119,13 @@ for (const [category, meta] of Object.entries(CATEGORY_META)) {
   await writeFile(path.join(docs, 'category', `${category}.md`), body, 'utf8');
 }
 
+const COURSE_LEVEL_LABELS = {
+  entry: '입문', intermediate: '중급', advanced: '고급', professional: '전문',
+};
 for (const course of courses) {
-  const body = `---\ntitle: ${q(course.title)}\ndescription: ${q(course.description)}\n---\n\n<p class="wiki-lead">${course.description}</p>\n\n**대상:** ${course.audience}\n\n## 권장 문서 순서\n\n${course.steps.map((step, index) => { const article = byId.get(step.ref); return `${index + 1}. [${article.title}](/wiki/${article.id}/)`; }).join('\n')}\n`;
+  const prerequisites = (course.prerequisiteCourses ?? []).map((courseId) => { const prerequisite = courses.find((item) => item.id === courseId); return `[${prerequisite?.title ?? courseId}](/course/${courseId}/)`; }).join(' · ');
+  const courseMeta = [`**대상:** ${course.audience}`, course.level ? `**난이도:** ${COURSE_LEVEL_LABELS[course.level] ?? course.level}` : '', prerequisites ? `**권장 선수 코스:** ${prerequisites}` : ''].filter(Boolean).join('\n\n');
+  const body = `---\ntitle: ${q(course.title)}\ndescription: ${q(course.description)}\n---\n\n<p class="wiki-lead">${course.description}</p>\n\n${courseMeta}\n\n## 권장 문서 순서\n\n${course.steps.map((step, index) => { const article = byId.get(step.ref); return `${index + 1}. [${article.title}](/wiki/${article.id}/)`; }).join('\n')}\n`;
   await writeFile(path.join(docs, 'course', `${course.id}.md`), body, 'utf8');
 }
 

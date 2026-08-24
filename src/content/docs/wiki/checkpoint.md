@@ -114,7 +114,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[데이터·학습 파이프라인](/course/data-training-pipelines/)
 
 ## 참고와 다음 학습
 
@@ -128,4 +128,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **데이터·학습 파이프라인:** [다음 문서 — 데이터 병렬화](/wiki/data-parallelism/)

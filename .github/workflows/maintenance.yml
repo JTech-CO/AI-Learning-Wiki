@@ -1,0 +1,54 @@
+name: weekly-maintenance-monitor
+
+on:
+  schedule:
+    - cron: '17 20 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: maintenance-monitor
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SITE_URL: https://ai-wiki.kr
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Refresh source metadata into an artifact
+        run: >-
+          node scripts/collect-w2-source-verification.mjs
+          --refresh
+          --previous content-model/evidence/source-verification.json
+          --output artifacts/maintenance/source-verification-refreshed.json
+      - name: Build maintenance review queue and source delta
+        run: >-
+          node scripts/build-maintenance-report.mjs
+          --source-verification artifacts/maintenance/source-verification-refreshed.json
+          --output artifacts/maintenance/maintenance-report.json
+      - name: Confirm the canonical source snapshot was not modified
+        run: git diff --exit-code -- content-model/evidence/source-verification.json
+      - name: Probe the production deployment
+        if: always()
+        run: >-
+          node scripts/check-production-site.mjs
+          --base-url "$SITE_URL"
+          --output artifacts/maintenance/production-probe.json
+      - name: Upload maintenance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: maintenance-${{ github.run_id }}
+          path: artifacts/maintenance/
+          if-no-files-found: error
+          retention-days: 30

@@ -146,7 +146,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[AI 기초](/course/ai-foundations/)
+[모델·서비스 생태계](/course/model-service-ecosystem/) · [AI 기초](/course/ai-foundations/)
 
 ## 참고와 다음 학습
 
@@ -161,4 +161,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **모델·서비스 생태계:** [다음 문서 — 모델 라이선스](/wiki/model-license/)
 - **AI 기초:** [다음 문서 — 학습 데이터](/wiki/training-data/)

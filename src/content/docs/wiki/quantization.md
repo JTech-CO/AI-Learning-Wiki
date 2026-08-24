@@ -137,7 +137,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[모델 학습과 튜닝](/course/model-training/)
+[모델 학습과 튜닝](/course/model-training/) · [AI 시스템·하드웨어·서빙](/course/ai-serving-systems/)
 
 ## 참고와 다음 학습
 
@@ -154,3 +154,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **모델 학습과 튜닝:** [코스 목록으로 돌아가기](/course/model-training/)
+- **AI 시스템·하드웨어·서빙:** [다음 문서 — 학습 후 양자화](/wiki/post-training-quantization/)

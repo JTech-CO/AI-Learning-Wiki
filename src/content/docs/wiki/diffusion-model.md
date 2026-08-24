@@ -136,7 +136,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[멀티모달 AI](/course/multimodal-ai/)
+[멀티모달 AI](/course/multimodal-ai/) · [현대 신경망과 모델 아키텍처](/course/neural-model-architectures/)
 
 ## 참고와 다음 학습
 
@@ -154,3 +154,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [다음 문서 — 음성 인식](/wiki/speech-recognition/)
+- **현대 신경망과 모델 아키텍처:** [다음 문서 — 샴 신경망](/wiki/siamese-network/)

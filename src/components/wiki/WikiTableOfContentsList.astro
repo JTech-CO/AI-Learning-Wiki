@@ -26,7 +26,7 @@ const { toc, depth = 0, root = false } = Astro.props;
         <li class="wiki-toc-group">
           <details open data-wiki-toc-group>
             <summary>
-              <a href={`#${heading.slug}`} data-wiki-toc-link>{label}</a>
+              <span>{label}</span>
             </summary>
             <Astro.self toc={heading.children} depth={depth + 1} />
           </details>
@@ -107,7 +107,7 @@ const { toc, depth = 0, root = false } = Astro.props;
   details[open] > summary::before {
     transform: rotate(90deg);
   }
-  details > summary > a {
+  details > summary > span {
     min-width: 0;
     flex: 1;
     padding-left: 0;

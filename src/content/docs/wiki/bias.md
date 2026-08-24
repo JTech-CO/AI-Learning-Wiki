@@ -142,7 +142,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[현대 신경망과 모델 아키텍처](/course/neural-model-architectures/)
 
 ## 참고와 다음 학습
 
@@ -158,4 +158,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **현대 신경망과 모델 아키텍처:** [다음 문서 — 신경망 층](/wiki/layer/)

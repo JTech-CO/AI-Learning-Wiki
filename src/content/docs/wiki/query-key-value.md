@@ -168,7 +168,7 @@ KV 캐시를 구현할 때 배치에서 끝난 요청의 블록이 다른 요청
 
 ### 이 문서를 포함하는 코스
 
-[LLM 내부 구조](/course/llm-internals/)
+[트랜스포머 아키텍처](/course/transformer-architecture/) · [LLM 내부 구조](/course/llm-internals/)
 
 ## 참고와 다음 학습
 
@@ -182,4 +182,5 @@ KV 캐시를 구현할 때 배치에서 끝난 요청의 블록이 다른 요청
 
 ### 코스에서 계속 읽기
 
+- **트랜스포머 아키텍처:** [다음 문서 — 가산 어텐션](/wiki/additive-attention/)
 - **LLM 내부 구조:** [다음 문서 — 위치 인코딩](/wiki/positional-encoding/)

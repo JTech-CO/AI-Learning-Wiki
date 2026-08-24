@@ -8,6 +8,14 @@ const additionalCourses = [
   { id: 'post-training-alignment', title: '사후학습과 정렬 심화' },
   { id: 'ai-security-redteam', title: 'AI 보안과 레드팀' },
   { id: 'multimodal-systems', title: '멀티모달 AI 시스템' },
+  { id: 'ai-mathematics-statistics', title: 'AI를 위한 수학·통계' },
+  { id: 'neural-model-architectures', title: '현대 신경망과 모델 아키텍처' },
+  { id: 'transformer-architecture', title: '트랜스포머 아키텍처' },
+  { id: 'efficient-long-context-transformers', title: '효율적·장문맥 트랜스포머' },
+  { id: 'ai-serving-systems', title: 'AI 시스템·하드웨어·서빙' },
+  { id: 'model-service-ecosystem', title: '모델·서비스 생태계' },
+  { id: 'production-ai-api-systems', title: '프로덕션 AI API 시스템' },
+  { id: 'data-training-pipelines', title: '데이터·학습 파이프라인' },
 ];
 const showAdditionalCourses = additionalCourses.some((course) => Astro.url.pathname.includes(`/course/${course.id}/`));
 ---

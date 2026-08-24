@@ -1,0 +1,263 @@
+{
+  "id": "data-training-pipelines",
+  "title": "데이터·학습 파이프라인",
+  "audience": "학습 데이터와 분산 사전학습 파이프라인을 설계하려는 엔지니어",
+  "description": "데이터 분할·품질·출처·혼합에서 학습 목표·패킹·체크포인트·분산 병렬화까지 연결한 고급 과정이다.",
+  "level": "advanced",
+  "prerequisiteCourses": [
+    "ai-foundations",
+    "model-training"
+  ],
+  "steps": [
+    {
+      "ref": "dataset",
+      "required": true,
+      "reason": "분야의 공통 언어와 출발점을 먼저 확립한다."
+    },
+    {
+      "ref": "label",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "feature",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "target-variable",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-distribution",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-preprocessing",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "train-validation-test-split",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "validation-set",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "test-set",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-leakage",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "out-of-distribution-data",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "distribution-shift",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "dataset-deduplication",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "training-data-filtering",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "training-data-formatting",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-documentation",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "training-data-consent",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "training-data-copyright",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "training-data-provenance",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "training-corpus",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "web-scale-training-data",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "synthetic-data",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-augmentation",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-mixture",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-curriculum",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "instruction-dataset",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "instruction-mixture",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "sft-data-mixture",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "document-packing",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "sequence-packing",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "causal-language-modeling-objective",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "masked-language-modeling-objective",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "denoising-objective",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "span-corruption",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "contrastive-objective",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "multi-task-objective",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "reconstruction-loss",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "auxiliary-loss",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "pretraining-pipeline",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "continued-pretraining",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "checkpoint",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "data-parallelism",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "model-parallelism",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "tensor-parallelism",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "pipeline-parallelism",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "expert-parallelism",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "all-reduce",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "fully-sharded-data-parallel",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "zero-redundancy-optimizer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "training-reproducibility",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    }
+  ]
+}

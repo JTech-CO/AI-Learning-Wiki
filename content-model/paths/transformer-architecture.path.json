@@ -1,0 +1,258 @@
+{
+  "id": "transformer-architecture",
+  "title": "트랜스포머 아키텍처",
+  "audience": "트랜스포머 블록과 대표 언어 모델 계열을 구조 수준에서 이해하려는 학습자",
+  "description": "임베딩·어텐션·정규화·인코더와 디코더를 거쳐 대표 트랜스포머 아키텍처를 연결한 고급 과정이다.",
+  "level": "advanced",
+  "prerequisiteCourses": [
+    "neural-model-architectures",
+    "llm-internals"
+  ],
+  "steps": [
+    {
+      "ref": "transformer",
+      "required": true,
+      "reason": "분야의 공통 언어와 출발점을 먼저 확립한다."
+    },
+    {
+      "ref": "token-embedding-layer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "segment-embedding",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "positional-encoding",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "sinusoidal-position-encoding",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "learned-position-embedding",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "absolute-position-encoding",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "position-id",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "query-key-value",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "additive-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "dot-product-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "scaled-dot-product-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "attention-score",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "attention-matrix",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "attention-head",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "multi-head-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "attention-mask",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "padding-mask",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "causal-mask",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "encoder",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "decoder",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "encoder-decoder",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "cross-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "encoder-decoder-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "feed-forward-network",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "residual-connection",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "layer-normalization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "pre-normalization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "post-normalization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "normalization-placement",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "transformer-block",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "output-projection",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "language-modeling-head",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "encoder-only-transformer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "decoder-only-model",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "sequence-to-sequence-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "bidirectional-attention",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "prefix-language-model",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "bert-architecture",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "gpt-architecture",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "t5-architecture",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "bart-architecture",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "xlnet-architecture",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "conformer-architecture",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "vision-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "geglu",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "swiglu",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "rms-normalization",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    }
+  ]
+}

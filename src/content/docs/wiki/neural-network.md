@@ -249,7 +249,7 @@ _해당 문서가 없다._
 
 ### 이 문서를 포함하는 코스
 
-[AI 기초](/course/ai-foundations/) · [LLM 내부 구조](/course/llm-internals/)
+[현대 신경망과 모델 아키텍처](/course/neural-model-architectures/) · [AI 기초](/course/ai-foundations/) · [LLM 내부 구조](/course/llm-internals/)
 
 ## 참고와 다음 학습
 
@@ -263,5 +263,6 @@ _해당 문서가 없다._
 
 ### 코스에서 계속 읽기
 
+- **현대 신경망과 모델 아키텍처:** [다음 문서 — 가중치](/wiki/weight/)
 - **AI 기초:** [다음 문서 — 파라미터](/wiki/parameter/)
 - **LLM 내부 구조:** [다음 문서 — 임베딩](/wiki/embedding/)

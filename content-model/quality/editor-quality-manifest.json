@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "snapshot": {
+    "id": "editor-quality-current",
+    "schemaVersion": "2.0",
+    "formulaVersion": "editor-quality-v2",
+    "schemaPath": "content-model/schema.editor-quality-v2.json"
+  },
+  "clock": {
+    "timeZone": "Asia/Seoul",
+    "asOfEnvironmentVariable": "EDITOR_QUALITY_AS_OF",
+    "sourceDateEpochEnvironmentVariable": "SOURCE_DATE_EPOCH"
+  },
+  "outputs": {
+    "canonical": "content-model/quality/editor-quality-current.json",
+    "public": "public/data/editor-quality.json",
+    "release": "dist/data/editor-quality.json"
+  },
+  "frozenBaselines": [
+    {
+      "id": "W60",
+      "path": "content-model/quality/w60-editor-quality.json",
+      "schemaPath": "content-model/schema.editor-quality-v1.json",
+      "sha256": "d104110db8d1f1d820420b48ecfc75025a116c3b7a4defcc599d138a1b393bb8"
+    }
+  ]
+}

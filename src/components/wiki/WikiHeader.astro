@@ -27,7 +27,8 @@ const indexUrl = `${basePath}data/wiki-index.json`;
   if (header && randomLinks.length) {
     const indexUrl = header.getAttribute('data-wiki-index-url');
     const basePath = header.getAttribute('data-wiki-base-path') ?? '/';
-    const articlesPromise = fetch(indexUrl).then((response) => {
+    let articlesPromise;
+    const loadArticles = () => articlesPromise ??= fetch(indexUrl).then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     }).then((data) => data.articles);
@@ -36,7 +37,7 @@ const indexUrl = `${basePath}data/wiki-index.json`;
       link.addEventListener('click', async (event) => {
         event.preventDefault();
         try {
-          const articles = await articlesPromise;
+          const articles = await loadArticles();
           const article = articles[Math.floor(Math.random() * articles.length)];
           if (!article?.id) throw new Error('random article missing');
           location.assign(`${basePath}wiki/${encodeURIComponent(article.id)}/`);

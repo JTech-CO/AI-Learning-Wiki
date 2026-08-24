@@ -66,3 +66,7 @@ astro-dev-toolbar, .kudos { display: none !important; }
 .prompt-note { border-left: 3px solid #72777d; color: #54595d; padding-left: .65rem; }
 .example-label { color: #54595d; font-size: .75rem; font-weight: 700; margin-bottom: .2rem; }
 @media(max-width:50rem){.snippet-controls{grid-template-columns:1fr;}}
+.catalog-deep-link { margin: .8rem 0; border: 1px solid #a2a9b1; background: #f8f9fa; color: #202122; padding: .55rem .7rem; font-size: .82rem; }
+.catalog-deep-link[hidden] { display: none; }
+.prompt-card[id], .snippet-card[id] { scroll-margin-top: calc(var(--sl-nav-height) + 1rem); }
+.prompt-card:focus, .snippet-card:focus { outline: 3px solid #36c; outline-offset: 3px; }

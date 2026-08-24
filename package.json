@@ -1,13 +1,13 @@
 {
   "name": "ai-learning-wiki",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run wiki:w60:prepare",
+    "prebuild": "npm run p0:courses:prepare && npm run p0:courses:validate && npm run wiki:w60:prepare",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run wiki:w11:validate && npm run wiki:w11:queue && npm run wiki:w12:validate && npm run wiki:w12:queue && npm run wiki:w13:validate && npm run wiki:w13:queue && npm run wiki:w14:validate && npm run wiki:w14:queue && npm run wiki:w15:validate && npm run wiki:w15:queue && npm run wiki:w16:validate && npm run wiki:w16:queue && npm run wiki:w17:validate && npm run wiki:w17:queue && npm run wiki:w18:validate && npm run wiki:w18:queue && npm run wiki:w19:validate && npm run wiki:w20:validate && npm run wiki:w21:validate && npm run wiki:w22:validate && npm run wiki:w23:validate && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run wiki:w27:validate && npm run wiki:w29:validate && npm run wiki:w30:validate && npm run wiki:w31:validate && npm run wiki:w32:validate && npm run wiki:w33:validate && npm run wiki:w34:validate && npm run wiki:w35:validate && npm run wiki:w36:validate && npm run wiki:w37:validate && npm run wiki:w38:validate && npm run wiki:w39:validate && npm run wiki:w40:validate && npm run wiki:w41:validate && npm run wiki:w42:validate && npm run wiki:w43:validate && npm run wiki:w44:validate && npm run wiki:w45:validate && npm run wiki:w46:validate && npm run wiki:w47:validate && npm run wiki:w48:validate && npm run wiki:w49:validate && npm run wiki:w50:validate && npm run wiki:w51:validate && npm run wiki:w52:validate && npm run validate:generated && node --max-old-space-size=8192 node_modules/astro/bin/astro.mjs build && npm run pages:paths && npm run wiki:w34:render && npm run wiki:w35:render && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w11:render && npm run wiki:w12:render && npm run wiki:w13:render && npm run wiki:w14:render && npm run wiki:w15:render && npm run wiki:w16:render && npm run wiki:w17:render && npm run wiki:w18:render && npm run wiki:w24:validate && npm run wiki:w25:validate && npm run wiki:w28:validate && npm run smoke && npm run links && npm run qa && npm run wiki:w53:release",
+    "build": "npm run wiki:taxonomy && npm run wiki:evidence && npm run wiki:evidence:audit && npm run wiki:claims && npm run wiki:w4:validate && npm run wiki:w5:validate && npm run wiki:w6:validate && npm run wiki:w7:validate && npm run wiki:w8:validate && npm run wiki:w8:queue && npm run wiki:w9:validate && npm run wiki:w9:queue && npm run wiki:w10:validate && npm run wiki:w10:queue && npm run wiki:w11:validate && npm run wiki:w11:queue && npm run wiki:w12:validate && npm run wiki:w12:queue && npm run wiki:w13:validate && npm run wiki:w13:queue && npm run wiki:w14:validate && npm run wiki:w14:queue && npm run wiki:w15:validate && npm run wiki:w15:queue && npm run wiki:w16:validate && npm run wiki:w16:queue && npm run wiki:w17:validate && npm run wiki:w17:queue && npm run wiki:w18:validate && npm run wiki:w18:queue && npm run wiki:w19:validate && npm run wiki:w20:validate && npm run wiki:w21:validate && npm run wiki:w22:validate && npm run wiki:w23:validate && npm run validate && npm run wiki:validate && npm run data && npm run gen && npm run wiki:build && npm run wiki:test && npm run p0:search:validate && npm run wiki:w27:validate && npm run wiki:w29:validate && npm run wiki:w30:validate && npm run wiki:w31:validate && npm run wiki:w32:validate && npm run wiki:w33:validate && npm run wiki:w34:validate && npm run wiki:w35:validate && npm run wiki:w36:validate && npm run wiki:w37:validate && npm run wiki:w38:validate && npm run wiki:w39:validate && npm run wiki:w40:validate && npm run wiki:w41:validate && npm run wiki:w42:validate && npm run wiki:w43:validate && npm run wiki:w44:validate && npm run wiki:w45:validate && npm run wiki:w46:validate && npm run wiki:w47:validate && npm run wiki:w48:validate && npm run wiki:w49:validate && npm run wiki:w50:validate && npm run wiki:w51:validate && npm run wiki:w52:validate && npm run validate:generated && node --max-old-space-size=8192 node_modules/astro/bin/astro.mjs build && npm run pages:paths && npm run wiki:w34:render && npm run wiki:w35:render && npm run wiki:w3:render && npm run wiki:w4:render && npm run wiki:w5:render && npm run wiki:w6:render && npm run wiki:w7:render && npm run wiki:w8:render && npm run wiki:w9:render && npm run wiki:w10:render && npm run wiki:w11:render && npm run wiki:w12:render && npm run wiki:w13:render && npm run wiki:w14:render && npm run wiki:w15:render && npm run wiki:w16:render && npm run wiki:w17:render && npm run wiki:w18:render && npm run wiki:w24:validate && npm run wiki:w25:validate && npm run wiki:w28:validate && npm run smoke && npm run links && npm run qa && npm run wiki:w53:release",
     "gen": "node scripts/build-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -206,7 +206,22 @@
     "ui:contrast": "node scripts/check-light-theme-contrast.mjs",
     "ui:header": "node scripts/check-responsive-header.mjs",
     "social:images": "node scripts/build-social-images.mjs",
-    "refresh:2026-08-24": "node scripts/finalize-2026-08-24-content-refresh.mjs"
+    "refresh:2026-08-24": "node scripts/finalize-2026-08-24-content-refresh.mjs",
+    "p0:courses:prepare": "node scripts/build-p0-course-expansion.mjs",
+    "p0:courses:validate": "node scripts/validate-p0-course-expansion.mjs",
+    "p0:search:validate": "node scripts/validate-p0-search-v2.mjs",
+    "editor:quality:build": "node scripts/build-editor-quality-current.mjs",
+    "editor:quality:validate": "node scripts/validate-editor-quality-current.mjs",
+    "maintenance:report": "node scripts/build-maintenance-report.mjs",
+    "production:check": "node scripts/check-production-site.mjs",
+    "test:browser": "playwright test",
+    "p0:validate": "npm run p0:courses:prepare && npm run p0:courses:validate && npm run wiki:build && npm run p0:search:validate && npm run editor:quality:build && npm run editor:quality:validate && npm run wiki:quality:test",
+    "wiki:quality:test": "node scripts/test-editor-quality-runtime.mjs",
+    "wiki:quality:prepare": "node scripts/build-editor-quality-current.mjs --prepare",
+    "wiki:quality:report": "node scripts/build-editor-quality-current.mjs --release",
+    "wiki:quality:validate": "node scripts/validate-editor-quality-current.mjs",
+    "maintenance:sources": "node scripts/collect-source-verification.mjs --refresh --previous content-model/evidence/source-verification.json --output artifacts/maintenance/source-verification-refreshed.json",
+    "maintenance:probe": "node scripts/check-production-site.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",
@@ -214,8 +229,10 @@
     "sharp": "^0.35.3"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@emnapi/core": "^1.11.2",
     "@emnapi/runtime": "^1.11.2",
+    "@playwright/test": "^1.62.1",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1"
   },

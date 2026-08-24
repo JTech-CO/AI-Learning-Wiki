@@ -137,7 +137,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[LLM 내부 구조](/course/llm-internals/)
+[트랜스포머 아키텍처](/course/transformer-architecture/) · [LLM 내부 구조](/course/llm-internals/)
 
 ## 참고와 다음 학습
 
@@ -152,4 +152,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **트랜스포머 아키텍처:** [다음 문서 — 시퀀스-투-시퀀스 트랜스포머](/wiki/sequence-to-sequence-transformer/)
 - **LLM 내부 구조:** [다음 문서 — 컨텍스트 윈도우](/wiki/context-window/)

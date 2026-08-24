@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-wiki.kr/schemas/editor-quality-v2.json",
+  "title": "AI Learning Wiki current editor quality snapshot v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "snapshotId",
+    "generatedAt",
+    "asOf",
+    "formulaVersion",
+    "overallStatus",
+    "counts",
+    "review",
+    "evidence",
+    "structure",
+    "coverage",
+    "categories",
+    "gates",
+    "release",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "2.0" },
+    "snapshotId": { "const": "editor-quality-current" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "asOf": { "type": "string", "format": "date" },
+    "formulaVersion": { "const": "editor-quality-v2" },
+    "overallStatus": { "enum": ["pass", "pending", "blocking"] },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["articles", "reviewedArticles", "courses", "prompts", "artifacts", "activeTools", "reviewQueue"],
+      "properties": {
+        "articles": { "type": "integer", "minimum": 0 },
+        "reviewedArticles": { "type": "integer", "minimum": 0 },
+        "courses": { "type": "integer", "minimum": 0 },
+        "prompts": { "type": "integer", "minimum": 0 },
+        "artifacts": { "type": "integer", "minimum": 0 },
+        "activeTools": { "type": "integer", "minimum": 0 },
+        "reviewQueue": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy", "counts", "priorityCounts", "queue"],
+      "properties": {
+        "policy": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label", "days", "articles"],
+            "properties": {
+              "id": { "enum": ["evergreen", "periodic", "fast-changing"] },
+              "label": { "type": "string", "minLength": 2 },
+              "days": { "type": "integer", "minimum": 1 },
+              "articles": { "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "counts": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/reviewCounts" },
+        "priorityCounts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["blocking", "attention", "scheduled"],
+          "properties": {
+            "blocking": { "type": "integer", "minimum": 0 },
+            "attention": { "type": "integer", "minimum": 0 },
+            "scheduled": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "queue": {
+          "type": "array",
+          "items": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/queueItem" }
+        }
+      }
+    },
+    "evidence": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/nonNegativeIntegerMap" },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimumSectionCount",
+        "recommendedSectionCountMin",
+        "recommendedSectionCountMax",
+        "validSectionCounts",
+        "belowMinimumSections",
+        "belowRecommendedSections",
+        "aboveRecommendedSections",
+        "duplicateSectionIds",
+        "unresolvedRelations",
+        "orphanArticles",
+        "publicIndexMatches"
+      ],
+      "properties": {
+        "minimumSectionCount": { "type": "integer", "minimum": 1 },
+        "recommendedSectionCountMin": { "type": "integer", "minimum": 1 },
+        "recommendedSectionCountMax": { "type": "integer", "minimum": 1 },
+        "validSectionCounts": { "type": "integer", "minimum": 0 },
+        "belowMinimumSections": { "type": "integer", "minimum": 0 },
+        "belowRecommendedSections": { "type": "integer", "minimum": 0 },
+        "aboveRecommendedSections": { "type": "integer", "minimum": 0 },
+        "duplicateSectionIds": { "type": "integer", "minimum": 0 },
+        "unresolvedRelations": { "type": "integer", "minimum": 0 },
+        "orphanArticles": { "type": "integer", "minimum": 0 },
+        "publicIndexMatches": { "type": "boolean" }
+      }
+    },
+    "coverage": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/nonNegativeIntegerMap" },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "articles", "overdue", "dueWithin90Days", "sourceWatch"],
+        "properties": {
+          "id": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/slug" },
+          "title": { "type": "string", "minLength": 2 },
+          "articles": { "type": "integer", "minimum": 0 },
+          "overdue": { "type": "integer", "minimum": 0 },
+          "dueWithin90Days": { "type": "integer", "minimum": 0 },
+          "sourceWatch": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/gate" }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "htmlPages", "internalLinkReferences", "brokenInternalLinks", "requiredRoutes"],
+      "properties": {
+        "status": { "enum": ["pending", "complete", "failed"] },
+        "htmlPages": { "type": ["integer", "null"], "minimum": 0 },
+        "internalLinkReferences": { "type": ["integer", "null"], "minimum": 0 },
+        "brokenInternalLinks": { "type": ["integer", "null"], "minimum": 0 },
+        "requiredRoutes": {
+          "type": "object",
+          "additionalProperties": { "type": "boolean" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "buildClockSource",
+        "qualityPolicyVersion",
+        "taxonomyVersion",
+        "wikiGeneratedAt",
+        "sourceVerificationVersion",
+        "sourceVerificationCheckedAt",
+        "inputsSha256"
+      ],
+      "properties": {
+        "buildClockSource": { "enum": ["cli", "environment", "source-date-epoch", "system-clock"] },
+        "qualityPolicyVersion": { "type": "string", "minLength": 1 },
+        "taxonomyVersion": { "type": "string", "minLength": 1 },
+        "wikiGeneratedAt": { "type": "string", "minLength": 1 },
+        "sourceVerificationVersion": { "type": "string", "minLength": 1 },
+        "sourceVerificationCheckedAt": { "type": "string", "format": "date-time" },
+        "inputsSha256": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "manifest",
+            "articleSchema",
+            "qualityPolicy",
+            "taxonomy",
+            "wikiIndex",
+            "sourceVerification",
+            "promptLibrary",
+            "artifactLibrary"
+          ],
+          "properties": {
+            "manifest": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" },
+            "articleSchema": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" },
+            "qualityPolicy": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" },
+            "taxonomy": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" },
+            "wikiIndex": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" },
+            "sourceVerification": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" },
+            "promptLibrary": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" },
+            "artifactLibrary": { "$ref": "https://ai-wiki.kr/schemas/editor-quality-v1.json#/$defs/sha256" }
+          }
+        }
+      }
+    }
+  }
+}

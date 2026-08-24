@@ -14,6 +14,7 @@
       <select id="prompt-examples"><option value="">전체</option><option value="yes">예시 있음</option><option value="no">예시 없음</option></select>
     </label>
   </div>
+  <p id="prompt-deep-link" class="catalog-deep-link" hidden><strong>공유된 프롬프트를 표시하고 있다.</strong> <a id="prompt-list-return" href="./">전체 프롬프트 목록으로 돌아가기</a></p>
   <p id="prompt-count" class="explorer-count" aria-live="polite">프롬프트를 불러오는 중…</p>
   <div id="prompt-results" class="prompt-results"></div>
   <nav id="prompt-pagination" class="wiki-pagination" aria-label="프롬프트 목록 페이지" hidden>
@@ -24,13 +25,19 @@
 </section>
 
 <script>
+  import { rankCatalogItems } from '../lib/catalog-search.mjs';
+
   const courseNames = { 'ai-foundations':'AI 기초','llm-internals':'LLM 내부 구조','model-training':'모델 학습과 튜닝','rag-search':'임베딩과 RAG','api-development':'AI API 개발','agent-systems':'AI 에이전트','responsible-ai':'신뢰할 수 있는 AI','multimodal-ai':'멀티모달 AI','prompt-systems':'프롬프트 시스템 설계','llm-evaluation':'LLM 평가와 관측성','llmops-production':'LLMOps와 프로덕션 서빙','advanced-rag':'고급 RAG와 지식 시스템','production-agents':'프로덕션 AI 에이전트','post-training-alignment':'사후학습과 정렬 심화','ai-security-redteam':'AI 보안과 레드팀','multimodal-systems':'멀티모달 AI 시스템' };
   const courseOrder = Object.keys(courseNames);
   const query = document.querySelector('#prompt-query');
   const courseMenu = document.querySelector('#prompt-course-menu');
   const courseLabel = document.querySelector('#prompt-course-label');
   const courseOptions = document.querySelector('#prompt-course-options');
-  const exampleFilter = document.querySelector('#prompt-examples'); const results = document.querySelector('#prompt-results'); const count = document.querySelector('#prompt-count');
+  const exampleFilter = document.querySelector('#prompt-examples');
+  const results = document.querySelector('#prompt-results');
+  const count = document.querySelector('#prompt-count');
+  const deepLinkNotice = document.querySelector('#prompt-deep-link');
+  const listReturn = document.querySelector('#prompt-list-return');
   const promptDataUrl = document.querySelector('.prompt-explorer')?.getAttribute('data-prompts-url') ?? '../data/prompts.json';
   const pagination = document.querySelector('#prompt-pagination');
   const previousPage = document.querySelector('#prompt-prev');
@@ -39,23 +46,39 @@
   const PAGE_SIZE = 40;
   let prompts = [];
   let selectedCourse = '';
+  let selectedPromptId = '';
   let currentPage = 1;
   const initialParams = new URLSearchParams(location.search);
+
+  const hashPromptId = () => {
+    if (!location.hash.startsWith('#prompt-')) return '';
+    try { return decodeURIComponent(location.hash.slice('#prompt-'.length)); } catch { return ''; }
+  };
+  const promptUrl = (id, absolute = false) => {
+    const url = new URL(location.pathname, location.origin);
+    url.searchParams.set('id', id);
+    url.hash = `prompt-${encodeURIComponent(id)}`;
+    return absolute ? url.href : `${url.pathname}${url.search}${url.hash}`;
+  };
+
   query.value = initialParams.get('q') ?? '';
   exampleFilter.value = initialParams.get('examples') ?? '';
+  selectedPromptId = initialParams.get('id') ?? hashPromptId();
   currentPage = Math.max(1, Number.parseInt(initialParams.get('page') ?? '1', 10) || 1);
+
   function card(prompt) {
-    const article = document.createElement('article'); article.className = 'prompt-card';
+    const article = document.createElement('article'); article.className = 'prompt-card'; article.id = `prompt-${prompt.id}`; article.tabIndex = -1;
     const meta = document.createElement('p'); meta.className = 'catalog-meta'; const courseLink = document.createElement('a'); courseLink.href = prompt.courseUrl; courseLink.textContent = courseNames[prompt.course] ?? prompt.courseTitle; meta.append(courseLink);
-    const heading = document.createElement('h3'); heading.textContent = prompt.title;
+    const heading = document.createElement('h3'); const headingLink = document.createElement('a'); headingLink.href = promptUrl(prompt.id); headingLink.textContent = prompt.title; headingLink.title = '이 프롬프트의 영구 링크'; heading.append(headingLink);
     const badge = document.createElement('span'); badge.className = `example-badge ${prompt.examples.length ? 'has-example' : ''}`; badge.textContent = prompt.examples.length ? `작성 예시 ${prompt.examples.length}개` : '작성 예시 없음';
     const pre = document.createElement('pre'); const code = document.createElement('code'); code.textContent = prompt.template; pre.append(code);
     const actions = document.createElement('div'); actions.className = 'prompt-actions';
     const copy = document.createElement('button'); copy.type = 'button'; copy.textContent = '프롬프트 복사'; copy.addEventListener('click', async () => { await navigator.clipboard.writeText(prompt.template); copy.textContent = '복사됨 ✓'; setTimeout(() => copy.textContent = '프롬프트 복사', 1200); });
+    const permalink = document.createElement('button'); permalink.type = 'button'; permalink.textContent = '영구 링크 복사'; permalink.addEventListener('click', async () => { await navigator.clipboard.writeText(promptUrl(prompt.id, true)); permalink.textContent = '링크 복사됨'; setTimeout(() => permalink.textContent = '영구 링크 복사', 1200); });
     const source = document.createElement('a'); source.href = prompt.relatedWikiUrl; source.textContent = '관련 Wiki 문서 →';
     const path = document.createElement('a'); path.href = prompt.courseUrl; path.textContent = '코스에서 보기 →';
     const tagRow = document.createElement('p'); tagRow.className = 'catalog-tags'; prompt.tags.forEach((tag) => { const item = document.createElement('span'); item.textContent = tag; tagRow.append(item); });
-    actions.append(copy, source, path); article.append(meta, heading, badge, tagRow, pre, actions);
+    actions.append(copy, permalink, source, path); article.append(meta, heading, badge, tagRow, pre, actions);
     if (prompt.notes) { const note = document.createElement('p'); note.className = 'prompt-note'; note.textContent = '사용 주의: ' + prompt.notes; article.append(note); }
     if (prompt.examples.length) {
       const details = document.createElement('details'); const summary = document.createElement('summary'); summary.textContent = '작성 예시 보기'; details.append(summary);
@@ -69,7 +92,12 @@
     }
     return article;
   }
+
   function syncUrl() {
+    if (selectedPromptId) {
+      history.replaceState(null, '', promptUrl(selectedPromptId));
+      return;
+    }
     const params = new URLSearchParams();
     if (query.value.trim()) params.set('q', query.value.trim());
     if (selectedCourse) params.set('course', selectedCourse);
@@ -78,26 +106,45 @@
     const search = params.toString();
     history.replaceState(null, '', search ? `?${search}` : location.pathname);
   }
+
+  function focusSelected() {
+    if (!selectedPromptId) return;
+    requestAnimationFrame(() => {
+      const selected = document.getElementById(`prompt-${selectedPromptId}`);
+      selected?.scrollIntoView({ block: 'start' });
+      selected?.focus({ preventScroll: true });
+    });
+  }
+
   function render({ updateUrl = true } = {}) {
-    const needle = query.value.trim().toLowerCase();
-    const filtered = prompts.filter((prompt) => (!selectedCourse || prompt.course === selectedCourse) && (!exampleFilter.value || (exampleFilter.value === 'yes') === Boolean(prompt.examples.length)) && (!needle || `${prompt.title} ${prompt.template} ${(prompt.tags ?? []).join(' ')}`.toLowerCase().includes(needle)));
+    let filtered;
+    if (selectedPromptId) {
+      filtered = prompts.filter((prompt) => prompt.id === selectedPromptId);
+    } else {
+      const faceted = prompts.filter((prompt) => (!selectedCourse || prompt.course === selectedCourse) && (!exampleFilter.value || (exampleFilter.value === 'yes') === Boolean(prompt.examples.length)));
+      filtered = rankCatalogItems(faceted, query.value).map(({ item }) => item);
+    }
     const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-    currentPage = Math.min(Math.max(1, currentPage), totalPages);
+    currentPage = selectedPromptId ? 1 : Math.min(Math.max(1, currentPage), totalPages);
     const start = (currentPage - 1) * PAGE_SIZE;
     const end = Math.min(start + PAGE_SIZE, filtered.length);
     results.replaceChildren(...filtered.slice(start, end).map(card));
-    count.textContent = filtered.length ? `${filtered.length}개 중 ${start + 1}–${end}번째 프롬프트` : '조건에 맞는 프롬프트가 없다.';
-    pagination.hidden = filtered.length <= PAGE_SIZE;
+    if (selectedPromptId) count.textContent = filtered.length ? '공유된 프롬프트 1개' : '해당 프롬프트를 찾지 못했다.';
+    else count.textContent = filtered.length ? `${filtered.length}개 중 ${start + 1}–${end}번째 프롬프트` : '조건에 맞는 프롬프트가 없다.';
+    deepLinkNotice.hidden = !selectedPromptId;
+    pagination.hidden = Boolean(selectedPromptId) || filtered.length <= PAGE_SIZE;
     previousPage.disabled = currentPage <= 1;
     nextPage.disabled = currentPage >= totalPages;
     pageStatus.textContent = `${currentPage} / ${totalPages} 페이지`;
     if (updateUrl) syncUrl();
+    focusSelected();
   }
+
   fetch(promptDataUrl).then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
   }).then((data) => {
-    prompts = data.prompts;
+    prompts = data.prompts.map((prompt) => ({ ...prompt, searchText: prompt.template, courseLabels: [courseNames[prompt.course] ?? prompt.courseTitle] }));
     const availableCourses = new Set(prompts.map((item) => item.course));
     const courseIds = courseOrder.filter((id) => availableCourses.has(id));
     const makeCourseOption = (id, label) => {
@@ -112,7 +159,7 @@
       courseLabel.textContent = selectedCourse ? courseNames[selectedCourse] : '전체 코스';
       courseOptions.querySelectorAll('[data-course-value]').forEach((option) => option.setAttribute('aria-selected', String(option.dataset.courseValue === selectedCourse)));
       courseMenu.open = false;
-      if (update) { currentPage = 1; render(); }
+      if (update) { selectedPromptId = ''; currentPage = 1; render(); }
     };
     courseOptions.addEventListener('click', (event) => {
       const option = event.target.closest('[data-course-value]');
@@ -122,7 +169,10 @@
     selectCourse(requestedCourse, { update: false });
     render({ updateUrl: false });
   }).catch(() => count.textContent = '프롬프트 목록을 불러오지 못했다.');
-  [query, exampleFilter].forEach((control) => control?.addEventListener('input', () => { currentPage = 1; render(); }));
+
+  query?.addEventListener('input', () => { selectedPromptId = ''; currentPage = 1; render(); });
+  exampleFilter?.addEventListener('input', () => { selectedPromptId = ''; currentPage = 1; render(); });
+  listReturn?.addEventListener('click', (event) => { event.preventDefault(); selectedPromptId = ''; currentPage = 1; render(); query.focus(); });
   courseMenu?.addEventListener('toggle', () => courseMenu.querySelector('summary')?.setAttribute('aria-expanded', String(courseMenu.open)));
   courseMenu?.addEventListener('keydown', (event) => { if (event.key === 'Escape') { courseMenu.open = false; courseMenu.querySelector('summary')?.focus(); } });
   document.addEventListener('click', (event) => { if (courseMenu?.open && !courseMenu.contains(event.target)) courseMenu.open = false; });

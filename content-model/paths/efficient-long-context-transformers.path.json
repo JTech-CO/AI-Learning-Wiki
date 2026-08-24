@@ -1,0 +1,258 @@
+{
+  "id": "efficient-long-context-transformers",
+  "title": "효율적·장문맥 트랜스포머",
+  "audience": "장문맥과 추론 효율화 기법을 설계·비교하려는 전문 학습자",
+  "description": "희소·선형·메모리 효율 어텐션에서 위치 확장과 장문맥 모델 계보까지 연결한 전문 과정이다.",
+  "level": "professional",
+  "prerequisiteCourses": [
+    "transformer-architecture",
+    "llm-internals"
+  ],
+  "steps": [
+    {
+      "ref": "attention-complexity",
+      "required": true,
+      "reason": "분야의 공통 언어와 출발점을 먼저 확립한다."
+    },
+    {
+      "ref": "local-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "global-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "sliding-window-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "block-sparse-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "sparse-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "sparse-transformer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "linear-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "low-rank-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "kernelized-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "memory-efficient-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "flash-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "fused-transformer-kernel",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "chunked-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "multi-query-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "grouped-query-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "key-value-compression",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "key-value-projection",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "paged-attention",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "attention-sink",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "head-pruning",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "layer-dropping",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "early-exit-transformer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "adaptive-computation-time-transformer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "mixture-of-depths",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "switch-transformer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "long-context-transformer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "context-length-extension",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "length-extrapolation",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "position-interpolation",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "relative-position-encoding",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "rotary-position-embedding",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "alibi-position-bias",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "ntk-aware-scaling",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "yarn-scaling",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "transformer-xl",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "recurrent-memory-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "longformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "bigbird",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "performer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "reformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "memory-augmented-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "retrieval-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "hierarchical-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "graph-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "universal-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "state-space-transformer-hybrid",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "diffusion-transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "speculative-transformer-block",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    }
+  ]
+}

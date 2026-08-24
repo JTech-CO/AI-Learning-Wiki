@@ -30,8 +30,16 @@ jobs:
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
+      - name: Validate P0 search, courses and current quality snapshot
+        run: npm run p0:validate
       - run: npm run validate:complete
       - run: npm run build:site
+      - name: Confirm the release quality snapshot after the production build
+        run: npm run wiki:w60:release
+      - name: Install Chromium for browser regression tests
+        run: npx playwright install --with-deps chromium
+      - name: Run browser regression tests
+        run: npm run test:browser
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4

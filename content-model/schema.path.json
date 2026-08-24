@@ -10,6 +10,15 @@
     "title": { "type": "string", "minLength": 1 },
     "audience": { "type": "string", "minLength": 1 },
     "description": { "type": "string", "minLength": 20 },
+    "level": {
+      "type": "string",
+      "enum": ["entry", "intermediate", "advanced", "professional"]
+    },
+    "prerequisiteCourses": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
     "steps": {
       "type": "array",
       "minItems": 8,

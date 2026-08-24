@@ -147,7 +147,7 @@ KV 캐시가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판
 
 ### 이 문서를 포함하는 코스
 
-[LLMOps와 프로덕션 서빙](/course/llmops-production/)
+[AI 시스템·하드웨어·서빙](/course/ai-serving-systems/) · [LLMOps와 프로덕션 서빙](/course/llmops-production/)
 
 ## 참고와 다음 학습
 
@@ -164,4 +164,5 @@ KV 캐시가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판
 
 ### 코스에서 계속 읽기
 
+- **AI 시스템·하드웨어·서빙:** [다음 문서 — 프리필 단계](/wiki/prefill-phase/)
 - **LLMOps와 프로덕션 서빙:** [다음 문서 — 페이지드 KV 캐시](/wiki/paged-kv-cache/)

@@ -121,7 +121,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[프로덕션 AI API 시스템](/course/production-ai-api-systems/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +136,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **프로덕션 AI API 시스템:** [다음 문서 — 스트림 재개 프로토콜](/wiki/stream-resume-protocol/)

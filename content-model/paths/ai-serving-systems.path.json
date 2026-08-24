@@ -1,0 +1,263 @@
+{
+  "id": "ai-serving-systems",
+  "title": "AI 시스템·하드웨어·서빙",
+  "audience": "모델 추론 인프라의 성능·용량·신뢰성을 설계하려는 엔지니어",
+  "description": "AI 가속기와 메모리 계층에서 컴파일·양자화·KV 캐시·배칭·서빙 운영까지 연결한 전문 과정이다.",
+  "level": "professional",
+  "prerequisiteCourses": [
+    "llm-internals",
+    "api-development"
+  ],
+  "steps": [
+    {
+      "ref": "inference",
+      "required": true,
+      "reason": "분야의 공통 언어와 출발점을 먼저 확립한다."
+    },
+    {
+      "ref": "ai-accelerator",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "graphics-processing-unit",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "tensor-processing-unit",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "neural-processing-unit",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "high-bandwidth-memory",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "accelerator-memory-hierarchy",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "accelerator-memory",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "memory-bandwidth",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "accelerator-interconnect",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "nvlink",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "infiniband",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "cuda",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "rocm",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "compute-cluster",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "ai-datacenter",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "roofline-model",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "compute-bound-workload",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "memory-bound-workload",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "graph-compilation",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "ahead-of-time-compilation",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "operator-fusion",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "kernel-fusion",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "xla-compiler",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "onnx-runtime",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "tensorrt-llm",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "cpu-inference",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "gpu-inference",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "tpu-inference",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "npu-inference",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "quantization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "post-training-quantization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "weight-only-quantization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "activation-quantization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "int8-inference",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "int4-inference",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "fp8-inference",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "kv-cache",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "prefill-phase",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "decode-phase",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "continuous-batching",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "request-scheduler",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "time-to-first-token",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "streaming-generation",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "service-level-objective",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "inference-tail-latency-debugging",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "model-replica",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "multi-model-serving",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "model-gateway",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "edge-inference",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    }
+  ]
+}

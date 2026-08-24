@@ -251,7 +251,7 @@ _해당 문서가 없다._
 
 ### 이 문서를 포함하는 코스
 
-[임베딩과 RAG](/course/rag-search/) · [LLM 내부 구조](/course/llm-internals/)
+[임베딩과 RAG](/course/rag-search/) · [AI를 위한 수학·통계](/course/ai-mathematics-statistics/) · [LLM 내부 구조](/course/llm-internals/)
 
 ## 참고와 다음 학습
 
@@ -266,4 +266,5 @@ _해당 문서가 없다._
 ### 코스에서 계속 읽기
 
 - **임베딩과 RAG:** [다음 문서 — 코사인 유사도](/wiki/cosine-similarity/)
+- **AI를 위한 수학·통계:** [다음 문서 — 벡터 공간](/wiki/vector-space/)
 - **LLM 내부 구조:** [다음 문서 — 행렬](/wiki/matrix/)

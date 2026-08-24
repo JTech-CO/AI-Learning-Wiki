@@ -113,7 +113,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[멀티모달 AI](/course/multimodal-ai/)
+[멀티모달 AI](/course/multimodal-ai/) · [모델·서비스 생태계](/course/model-service-ecosystem/)
 
 ## 참고와 다음 학습
 
@@ -128,3 +128,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **멀티모달 AI:** [코스 목록으로 돌아가기](/course/multimodal-ai/)
+- **모델·서비스 생태계:** [다음 문서 — 오픈소스 모델](/wiki/open-source-model/)

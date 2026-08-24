@@ -1,0 +1,263 @@
+{
+  "id": "neural-model-architectures",
+  "title": "현대 신경망과 모델 아키텍처",
+  "audience": "신경망의 계산 구조와 주요 아키텍처 계보를 체계적으로 익히려는 학습자",
+  "description": "뉴런과 계산 그래프에서 합성곱·순환·그래프·생성 모델까지 신경망 구조의 발전을 연결한 중급 과정이다.",
+  "level": "intermediate",
+  "prerequisiteCourses": [
+    "ai-foundations",
+    "ai-mathematics-statistics"
+  ],
+  "steps": [
+    {
+      "ref": "neuron",
+      "required": true,
+      "reason": "분야의 공통 언어와 출발점을 먼저 확립한다."
+    },
+    {
+      "ref": "neural-network",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "weight",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "bias",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "layer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "input-layer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "hidden-layer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "output-layer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "linear-layer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "dense-layer",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "activation-function",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "forward-pass",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "computational-graph",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "loss-function",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "backpropagation",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "parameter-initialization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "network-depth",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "network-width",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "vanishing-gradient",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "exploding-gradient",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "gradient-clipping",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "gradient-norm",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "batch-normalization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "group-normalization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "instance-normalization",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "dropout",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "weight-decay",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "residual-network",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "convolutional-neural-network",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "receptive-field",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "recurrent-neural-network",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "hidden-state",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "long-short-term-memory",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "gated-recurrent-unit",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "autoencoder",
+      "required": true,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "variational-autoencoder",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "generative-adversarial-network",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "energy-based-model",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "diffusion-model",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "siamese-network",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "metric-learning",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "graph-neural-network",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "graph-convolutional-network",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "graph-attention-network",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "memory-network",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "neural-turing-machine",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "neural-ordinary-differential-equation",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "spiking-neural-network",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "transformer",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    },
+    {
+      "ref": "mechanistic-interpretability",
+      "required": false,
+      "reason": "앞 단계의 개념을 확장해 다음 주제를 이해하기 위한 연결 고리를 만든다."
+    }
+  ]
+}

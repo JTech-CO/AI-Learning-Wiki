@@ -19,7 +19,7 @@ const assert = (condition, message) => { if (!condition) throw new Error(message
 assert(report.milestone === 'W47' && report.policy.deliveryModel === 'ordered-wiki-path' && report.policy.guideLessonsAllowed === false, 'W47 policy mismatch');
 assert(report.totals.before === 8 && report.totals.added === 8 && report.totals.after === 16, 'W47 course totals mismatch');
 assert(report.totals.steps === 192 && report.totals.existingArticleRefs === 152 && report.totals.w46ArticleRefs === 40, 'W47 step totals mismatch');
-assert(pathFiles.length === 16, `W47 expected 16 paths, got ${pathFiles.length}`);
+assert(pathFiles.length >= 16, `W47 baseline requires at least 16 paths, got ${pathFiles.length}`);
 const newIds = new Set(newPlans.map((plan) => plan.id));
 assert(newIds.size === 8, 'W47 professional course IDs must be unique');
 let w46Refs = 0;
