@@ -124,9 +124,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Speech: Scaling up end-to-end speech recognition](https://arxiv.org/abs/1412.5567) — paper
-2. <span id="reference-2"></span>[Speech recognition — Wikipedia](https://en.wikipedia.org/wiki/Speech_recognition) — encyclopedia
-3. <span id="reference-3"></span>[Google Cloud Speech-to-Text documentation](https://cloud.google.com/speech-to-text/docs) — documentation
+1. <span id="reference-1"></span>[Deep Speech: Scaling up end-to-end speech recognition](https://arxiv.org/abs/1412.5567) - paper
+2. <span id="reference-2"></span>[Speech recognition - Wikipedia](https://en.wikipedia.org/wiki/Speech_recognition) - encyclopedia
+3. <span id="reference-3"></span>[Google Cloud Speech-to-Text documentation](https://cloud.google.com/speech-to-text/docs) - documentation
 
 ### 코스에서 계속 읽기
 

@@ -129,10 +129,10 @@ LLM 서빙 SLO을 적용할 수 있는 대표 상황은 피크 트래픽에서 �
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-2. <span id="reference-2"></span>[vLLM documentation](https://docs.vllm.ai/en/stable/) — documentation
-3. <span id="reference-3"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
-4. <span id="reference-4"></span>[A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417) — paper
+1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) - paper
+2. <span id="reference-2"></span>[vLLM documentation](https://docs.vllm.ai/en/stable/) - documentation
+3. <span id="reference-3"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) - paper
+4. <span id="reference-4"></span>[A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417) - paper
 
 ### 코스에서 계속 읽기
 

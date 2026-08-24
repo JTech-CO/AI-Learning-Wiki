@@ -224,9 +224,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Computer Science as Empirical Inquiry: Symbols and Search](https://courses.media.mit.edu/2004spring/mas966/Newell%20Simon%20Physical%20symbol%20systems.pdf) — paper
-2. <span id="reference-2"></span>[The Quest for Artificial Intelligence](https://ai.stanford.edu/~nilsson/QAI/qai) — book
-3. <span id="reference-3"></span>[Symbolic artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence) — encyclopedia
+1. <span id="reference-1"></span>[Computer Science as Empirical Inquiry: Symbols and Search](https://courses.media.mit.edu/2004spring/mas966/Newell%20Simon%20Physical%20symbol%20systems.pdf) - paper
+2. <span id="reference-2"></span>[The Quest for Artificial Intelligence](https://ai.stanford.edu/~nilsson/QAI/qai) - book
+3. <span id="reference-3"></span>[Symbolic artificial intelligence - Wikipedia](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence) - encyclopedia
 
 ### 코스에서 계속 읽기
 

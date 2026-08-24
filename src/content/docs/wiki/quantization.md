@@ -145,11 +145,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
-2. <span id="reference-2"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-3. <span id="reference-3"></span>[TRL Documentation](https://huggingface.co/docs/trl/index) — documentation
-4. <span id="reference-4"></span>[DeepSpeed Documentation](https://www.deepspeed.ai/) — documentation
-5. <span id="reference-5"></span>[Quantization — Wikipedia](https://en.wikipedia.org/wiki/Quantization) — encyclopedia
+1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) - paper
+2. <span id="reference-2"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) - documentation
+3. <span id="reference-3"></span>[TRL Documentation](https://huggingface.co/docs/trl/index) - documentation
+4. <span id="reference-4"></span>[DeepSpeed Documentation](https://www.deepspeed.ai/) - documentation
+5. <span id="reference-5"></span>[Quantization - Wikipedia](https://en.wikipedia.org/wiki/Quantization) - encyclopedia
 
 ### 코스에서 계속 읽기
 

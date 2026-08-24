@@ -121,9 +121,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[The Open Source Definition](https://opensource.org/osd) — standard
-2. <span id="reference-2"></span>[Software license — Wikipedia](https://en.wikipedia.org/wiki/Software_license) — encyclopedia
-3. <span id="reference-3"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
+1. <span id="reference-1"></span>[The Open Source Definition](https://opensource.org/osd) - standard
+2. <span id="reference-2"></span>[Software license - Wikipedia](https://en.wikipedia.org/wiki/Software_license) - encyclopedia
+3. <span id="reference-3"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) - standard
 
 ### 코스에서 계속 읽기
 

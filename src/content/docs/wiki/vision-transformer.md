@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) — paper
-2. <span id="reference-2"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-3. <span id="reference-3"></span>[Fast Transformer Decoding: One Write-Head is All You Need](https://arxiv.org/abs/1911.02150) — paper
-4. <span id="reference-4"></span>[GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](https://arxiv.org/abs/2305.13245) — paper
-5. <span id="reference-5"></span>[Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150) — paper
-6. <span id="reference-6"></span>[PyTorch MultiheadAttention Documentation](https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html) — documentation
-7. <span id="reference-7"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-8. <span id="reference-8"></span>[비전 트랜스포머 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%B9%84%EC%A0%84_%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8) — encyclopedia
+1. <span id="reference-1"></span>[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) - paper
+2. <span id="reference-2"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) - paper
+3. <span id="reference-3"></span>[Fast Transformer Decoding: One Write-Head is All You Need](https://arxiv.org/abs/1911.02150) - paper
+4. <span id="reference-4"></span>[GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](https://arxiv.org/abs/2305.13245) - paper
+5. <span id="reference-5"></span>[Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150) - paper
+6. <span id="reference-6"></span>[PyTorch MultiheadAttention Documentation](https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html) - documentation
+7. <span id="reference-7"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+8. <span id="reference-8"></span>[비전 트랜스포머 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%B9%84%EC%A0%84_%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8) - encyclopedia
 
 ### 코스에서 계속 읽기
 

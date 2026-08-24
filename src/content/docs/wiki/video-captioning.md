@@ -136,14 +136,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Sequence to Sequence – Video to Text](https://arxiv.org/abs/1505.00487) — paper
-2. <span id="reference-2"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
-3. <span id="reference-3"></span>[An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929) — paper
-4. <span id="reference-4"></span>[Feature Pyramid Networks for Object Detection](https://arxiv.org/abs/1612.03144) — paper
-5. <span id="reference-5"></span>[Simple Open-Vocabulary Object Detection with Vision Transformers](https://arxiv.org/abs/2205.06230) — paper
-6. <span id="reference-6"></span>[Torchvision Models and Pre-trained Weights](https://pytorch.org/vision/stable/models.html) — documentation
-7. <span id="reference-7"></span>[Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
-8. <span id="reference-8"></span>[Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
+1. <span id="reference-1"></span>[Sequence to Sequence – Video to Text](https://arxiv.org/abs/1505.00487) - paper
+2. <span id="reference-2"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) - paper
+3. <span id="reference-3"></span>[An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929) - paper
+4. <span id="reference-4"></span>[Feature Pyramid Networks for Object Detection](https://arxiv.org/abs/1612.03144) - paper
+5. <span id="reference-5"></span>[Simple Open-Vocabulary Object Detection with Vision Transformers](https://arxiv.org/abs/2205.06230) - paper
+6. <span id="reference-6"></span>[Torchvision Models and Pre-trained Weights](https://pytorch.org/vision/stable/models.html) - documentation
+7. <span id="reference-7"></span>[Web Neural Network API](https://www.w3.org/TR/webnn/) - standard
+8. <span id="reference-8"></span>[Multimodal learning - Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) - encyclopedia
 
 ### 코스에서 계속 읽기
 

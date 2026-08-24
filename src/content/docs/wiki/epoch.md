@@ -142,11 +142,11 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-2. <span id="reference-2"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-4. <span id="reference-4"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
-5. <span id="reference-5"></span>[Epoch — Wikipedia](https://en.wikipedia.org/wiki/Epoch) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) - book
+2. <span id="reference-2"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) - documentation
+4. <span id="reference-4"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) - documentation
+5. <span id="reference-5"></span>[Epoch - Wikipedia](https://en.wikipedia.org/wiki/Epoch) - encyclopedia
 
 ### 코스에서 계속 읽기
 

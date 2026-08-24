@@ -215,9 +215,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-2. <span id="reference-2"></span>[Attention (machine learning) — Wikipedia](https://en.wikipedia.org/wiki/Attention_%28machine_learning%29) — encyclopedia
-3. <span id="reference-3"></span>[PyTorch: torch.nn](https://docs.pytorch.org/docs/stable/nn.html) — documentation
+1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) - paper
+2. <span id="reference-2"></span>[Attention (machine learning) - Wikipedia](https://en.wikipedia.org/wiki/Attention_%28machine_learning%29) - encyclopedia
+3. <span id="reference-3"></span>[PyTorch: torch.nn](https://docs.pytorch.org/docs/stable/nn.html) - documentation
 
 ### 코스에서 계속 읽기
 

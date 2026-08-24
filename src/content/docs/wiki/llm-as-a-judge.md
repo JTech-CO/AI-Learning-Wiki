@@ -145,13 +145,13 @@ LLM 심사자가 잘 작동하는 조건만 나열하면 실제 적용 범위를
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
-2. <span id="reference-2"></span>[LLM-as-a-Judge — Wikipedia](https://en.wikipedia.org/wiki/LLM-as-a-Judge) — encyclopedia
-3. <span id="reference-3"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
-4. <span id="reference-4"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-5. <span id="reference-5"></span>[NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) — documentation
-6. <span id="reference-6"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-7. <span id="reference-7"></span>[Statistical classification — Wikipedia](https://en.wikipedia.org/wiki/Statistical_classification) — encyclopedia
+1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) - paper
+2. <span id="reference-2"></span>[LLM-as-a-Judge - Wikipedia](https://en.wikipedia.org/wiki/LLM-as-a-Judge) - encyclopedia
+3. <span id="reference-3"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) - book
+4. <span id="reference-4"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) - documentation
+5. <span id="reference-5"></span>[NIST AI Evaluation](https://www.nist.gov/artificial-intelligence) - documentation
+6. <span id="reference-6"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) - documentation
+7. <span id="reference-7"></span>[Statistical classification - Wikipedia](https://en.wikipedia.org/wiki/Statistical_classification) - encyclopedia
 
 ### 코스에서 계속 읽기
 

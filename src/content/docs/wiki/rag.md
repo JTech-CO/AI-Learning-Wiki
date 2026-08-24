@@ -237,9 +237,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
-2. <span id="reference-2"></span>[Retrieval-augmented generation — Wikipedia](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) — encyclopedia
-3. <span id="reference-3"></span>[RAG — Transformers documentation](https://huggingface.co/docs/transformers/model_doc/rag) — documentation
+1. <span id="reference-1"></span>[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) - paper
+2. <span id="reference-2"></span>[Retrieval-augmented generation - Wikipedia](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) - encyclopedia
+3. <span id="reference-3"></span>[RAG - Transformers documentation](https://huggingface.co/docs/transformers/model_doc/rag) - documentation
 
 ### 코스에서 계속 읽기
 

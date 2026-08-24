@@ -144,10 +144,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-2. <span id="reference-2"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-4. <span id="reference-4"></span>[Transformer — Wikipedia](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) — encyclopedia
+1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) - paper
+2. <span id="reference-2"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) - documentation
+4. <span id="reference-4"></span>[Transformer - Wikipedia](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) - encyclopedia
 
 ### 코스에서 계속 읽기
 

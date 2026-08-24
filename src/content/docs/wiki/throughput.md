@@ -140,13 +140,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-2. <span id="reference-2"></span>[Throughput — Wikipedia](https://en.wikipedia.org/wiki/Throughput) — encyclopedia
-3. <span id="reference-3"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
-4. <span id="reference-4"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) — documentation
-5. <span id="reference-5"></span>[TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) — documentation
-6. <span id="reference-6"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-7. <span id="reference-7"></span>[Network throughput — Wikipedia](https://en.wikipedia.org/wiki/Network_throughput) — encyclopedia
+1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) - paper
+2. <span id="reference-2"></span>[Throughput - Wikipedia](https://en.wikipedia.org/wiki/Throughput) - encyclopedia
+3. <span id="reference-3"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) - paper
+4. <span id="reference-4"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) - documentation
+5. <span id="reference-5"></span>[TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) - documentation
+6. <span id="reference-6"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+7. <span id="reference-7"></span>[Network throughput - Wikipedia](https://en.wikipedia.org/wiki/Network_throughput) - encyclopedia
 
 ### 코스에서 계속 읽기
 

@@ -156,14 +156,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models](https://arxiv.org/abs/2104.08663) — paper
-2. <span id="reference-2"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) — paper
-3. <span id="reference-3"></span>[Matryoshka Representation Learning](https://arxiv.org/abs/2205.13147) — paper
-4. <span id="reference-4"></span>[One Embedder, Any Task: Instruction-Finetuned Text Embeddings](https://arxiv.org/abs/2212.09741) — paper
-5. <span id="reference-5"></span>[Faiss Documentation](https://faiss.ai/) — documentation
-6. <span id="reference-6"></span>[Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) — book
-7. <span id="reference-7"></span>[Sentence Transformers Documentation](https://sbert.net/) — documentation
-8. <span id="reference-8"></span>[문서 검색 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%84%9C_%EA%B2%80%EC%83%89) — encyclopedia
+1. <span id="reference-1"></span>[BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models](https://arxiv.org/abs/2104.08663) - paper
+2. <span id="reference-2"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) - paper
+3. <span id="reference-3"></span>[Matryoshka Representation Learning](https://arxiv.org/abs/2205.13147) - paper
+4. <span id="reference-4"></span>[One Embedder, Any Task: Instruction-Finetuned Text Embeddings](https://arxiv.org/abs/2212.09741) - paper
+5. <span id="reference-5"></span>[Faiss Documentation](https://faiss.ai/) - documentation
+6. <span id="reference-6"></span>[Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) - book
+7. <span id="reference-7"></span>[Sentence Transformers Documentation](https://sbert.net/) - documentation
+8. <span id="reference-8"></span>[문서 검색 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%84%9C_%EA%B2%80%EC%83%89) - encyclopedia
 
 ### 코스에서 계속 읽기
 

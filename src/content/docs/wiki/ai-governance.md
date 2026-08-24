@@ -215,9 +215,9 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-2. <span id="reference-2"></span>[Regulation of artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Regulation_of_artificial_intelligence) — encyclopedia
-3. <span id="reference-3"></span>[OECD AI Principles](https://oecd.ai/en/principles) — standard
+1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) - standard
+2. <span id="reference-2"></span>[Regulation of artificial intelligence - Wikipedia](https://en.wikipedia.org/wiki/Regulation_of_artificial_intelligence) - encyclopedia
+3. <span id="reference-3"></span>[OECD AI Principles](https://oecd.ai/en/principles) - standard
 
 ### 코스에서 계속 읽기
 

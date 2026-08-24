@@ -137,14 +137,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU](https://arxiv.org/abs/2303.06865) — paper
-2. <span id="reference-2"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
-3. <span id="reference-3"></span>[A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417) — paper
-4. <span id="reference-4"></span>[Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models](https://arxiv.org/abs/1610.02424) — paper
-5. <span id="reference-5"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-6. <span id="reference-6"></span>[vLLM Documentation](https://docs.vllm.ai/en/latest/) — documentation
-7. <span id="reference-7"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) — documentation
-8. <span id="reference-8"></span>[Natural language generation — Wikipedia](https://en.wikipedia.org/wiki/Natural_language_generation) — encyclopedia
+1. <span id="reference-1"></span>[FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU](https://arxiv.org/abs/2303.06865) - paper
+2. <span id="reference-2"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) - paper
+3. <span id="reference-3"></span>[A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417) - paper
+4. <span id="reference-4"></span>[Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models](https://arxiv.org/abs/1610.02424) - paper
+5. <span id="reference-5"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) - paper
+6. <span id="reference-6"></span>[vLLM Documentation](https://docs.vllm.ai/en/latest/) - documentation
+7. <span id="reference-7"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) - documentation
+8. <span id="reference-8"></span>[Natural language generation - Wikipedia](https://en.wikipedia.org/wiki/Natural_language_generation) - encyclopedia
 
 ### 코스에서 계속 읽기
 

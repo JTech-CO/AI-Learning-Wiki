@@ -138,10 +138,10 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-2. <span id="reference-2"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-3. <span id="reference-3"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
-4. <span id="reference-4"></span>[Connectionism — Wikipedia](https://en.wikipedia.org/wiki/Connectionism) — encyclopedia
+1. <span id="reference-1"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) - documentation
+2. <span id="reference-2"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+3. <span id="reference-3"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) - documentation
+4. <span id="reference-4"></span>[Connectionism - Wikipedia](https://en.wikipedia.org/wiki/Connectionism) - encyclopedia
 
 ### 코스에서 계속 읽기
 

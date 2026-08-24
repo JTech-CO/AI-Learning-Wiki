@@ -219,9 +219,9 @@ HTTP 요청은 메서드, URL, 헤더, 본문으로 서버에 작업을 전달�
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-2. <span id="reference-2"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
-3. <span id="reference-3"></span>[MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
+1. <span id="reference-1"></span>[RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) - standard
+2. <span id="reference-2"></span>[HTTP - Wikipedia](https://en.wikipedia.org/wiki/HTTP) - encyclopedia
+3. <span id="reference-3"></span>[MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) - documentation
 
 ### 코스에서 계속 읽기
 

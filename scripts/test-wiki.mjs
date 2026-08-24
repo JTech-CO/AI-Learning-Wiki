@@ -21,6 +21,8 @@ for (const article of wiki.articles) {
   if (!referenceLines.length) failures.push(`references missing: ${article.id}`);
   referenceLines.forEach((line, index) => {
     if (!line.startsWith(`${index + 1}. `)) failures.push(`reference list formatting: ${article.id} line ${index + 1}`);
+    if (line.includes('—')) failures.push(`reference em dash: ${article.id} line ${index + 1}`);
+    if (!/ - (?:book|documentation|encyclopedia|paper|specification|standard)$/u.test(line)) failures.push(`reference separator: ${article.id} line ${index + 1}`);
   });
 }
 const cases = { LLM: 'large-language-model', RAG: 'rag', API: 'api', 트랜스포머: 'transformer', 토큰: 'token', '프롬프트 인젝션': 'prompt-injection', MCP: 'mcp' };

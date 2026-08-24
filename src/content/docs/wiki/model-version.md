@@ -235,11 +235,11 @@ Google은 2026년 8월 13일 Gemini 3.7 Flash를 정식 출시했다. 안정 모
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Towards Semantic Versioning of Open Pre-trained Language Model Releases](https://arxiv.org/abs/2409.10472) — paper
-2. <span id="reference-2"></span>[MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) — documentation
-3. <span id="reference-3"></span>[Software versioning — Wikipedia](https://en.wikipedia.org/wiki/Software_versioning) — encyclopedia
-4. <span id="reference-4"></span>[Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash) — documentation
-5. <span id="reference-5"></span>[Gemini API Release Notes](https://ai.google.dev/gemini-api/docs/changelog) — documentation
+1. <span id="reference-1"></span>[Towards Semantic Versioning of Open Pre-trained Language Model Releases](https://arxiv.org/abs/2409.10472) - paper
+2. <span id="reference-2"></span>[MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) - documentation
+3. <span id="reference-3"></span>[Software versioning - Wikipedia](https://en.wikipedia.org/wiki/Software_versioning) - encyclopedia
+4. <span id="reference-4"></span>[Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash) - documentation
+5. <span id="reference-5"></span>[Gemini API Release Notes](https://ai.google.dev/gemini-api/docs/changelog) - documentation
 
 ### 코스에서 계속 읽기
 

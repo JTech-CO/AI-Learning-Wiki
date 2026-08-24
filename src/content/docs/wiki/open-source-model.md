@@ -220,10 +220,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[The Open Source Definition](https://opensource.org/osd) — standard
-2. <span id="reference-2"></span>[The Open Source AI Definition 1.0](https://opensource.org/ai/open-source-ai-definition) — standard
-3. <span id="reference-3"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
-4. <span id="reference-4"></span>[Open-source artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Open-source_artificial_intelligence) — encyclopedia
+1. <span id="reference-1"></span>[The Open Source Definition](https://opensource.org/osd) - standard
+2. <span id="reference-2"></span>[The Open Source AI Definition 1.0](https://opensource.org/ai/open-source-ai-definition) - standard
+3. <span id="reference-3"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) - standard
+4. <span id="reference-4"></span>[Open-source artificial intelligence - Wikipedia](https://en.wikipedia.org/wiki/Open-source_artificial_intelligence) - encyclopedia
 
 ### 코스에서 계속 읽기
 

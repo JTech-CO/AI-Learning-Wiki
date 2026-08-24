@@ -136,17 +136,17 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[RFC 8594: The Sunset HTTP Header Field](https://www.rfc-editor.org/rfc/rfc8594.html) — standard
-2. <span id="reference-2"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) — standard
-3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-4. <span id="reference-4"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
-5. <span id="reference-5"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
-6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-8. <span id="reference-8"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
-9. <span id="reference-9"></span>[OpenAI API Deprecations](https://developers.openai.com/api/docs/deprecations) — documentation
-10. <span id="reference-10"></span>[OpenAI Assistants에서 Responses로 이전](https://developers.openai.com/api/docs/guides/migrate-to-responses) — documentation
-11. <span id="reference-11"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
+1. <span id="reference-1"></span>[RFC 8594: The Sunset HTTP Header Field](https://www.rfc-editor.org/rfc/rfc8594.html) - standard
+2. <span id="reference-2"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) - standard
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) - standard
+4. <span id="reference-4"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) - standard
+5. <span id="reference-5"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) - standard
+6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) - documentation
+7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) - standard
+8. <span id="reference-8"></span>[HTTP - Wikipedia](https://en.wikipedia.org/wiki/HTTP) - encyclopedia
+9. <span id="reference-9"></span>[OpenAI API Deprecations](https://developers.openai.com/api/docs/deprecations) - documentation
+10. <span id="reference-10"></span>[OpenAI Assistants에서 Responses로 이전](https://developers.openai.com/api/docs/guides/migrate-to-responses) - documentation
+11. <span id="reference-11"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) - documentation
 
 ### 코스에서 계속 읽기
 

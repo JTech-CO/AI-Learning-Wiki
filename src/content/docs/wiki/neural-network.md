@@ -257,9 +257,9 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-2. <span id="reference-2"></span>[Neural network — Wikipedia](https://en.wikipedia.org/wiki/Neural_network) — encyclopedia
-3. <span id="reference-3"></span>[torch.nn — PyTorch documentation](https://docs.pytorch.org/docs/stable/nn.html) — documentation
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) - book
+2. <span id="reference-2"></span>[Neural network - Wikipedia](https://en.wikipedia.org/wiki/Neural_network) - encyclopedia
+3. <span id="reference-3"></span>[torch.nn - PyTorch documentation](https://docs.pytorch.org/docs/stable/nn.html) - documentation
 
 ### 코스에서 계속 읽기
 

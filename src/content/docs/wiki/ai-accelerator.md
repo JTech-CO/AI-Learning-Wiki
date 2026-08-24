@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[GPTPU: Accelerating Applications using Edge Tensor Processing Units](https://arxiv.org/abs/2107.05473) — paper
-2. <span id="reference-2"></span>[Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — standard
-3. <span id="reference-3"></span>[SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) — documentation
-4. <span id="reference-4"></span>[Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) — documentation
-5. <span id="reference-5"></span>[Open Source Licenses](https://opensource.org/licenses) — standard
-6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
-7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
-8. <span id="reference-8"></span>[신경망 처리 장치 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%8B%A0%EA%B2%BD%EB%A7%9D_%EC%B2%98%EB%A6%AC_%EC%9E%A5%EC%B9%98) — encyclopedia
+1. <span id="reference-1"></span>[GPTPU: Accelerating Applications using Edge Tensor Processing Units](https://arxiv.org/abs/2107.05473) - paper
+2. <span id="reference-2"></span>[Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) - standard
+3. <span id="reference-3"></span>[SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) - documentation
+4. <span id="reference-4"></span>[Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) - documentation
+5. <span id="reference-5"></span>[Open Source Licenses](https://opensource.org/licenses) - standard
+6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) - standard
+7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) - documentation
+8. <span id="reference-8"></span>[신경망 처리 장치 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%8B%A0%EA%B2%BD%EB%A7%9D_%EC%B2%98%EB%A6%AC_%EC%9E%A5%EC%B9%98) - encyclopedia
 
 ### 코스에서 계속 읽기
 

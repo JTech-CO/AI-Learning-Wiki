@@ -241,11 +241,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-2. <span id="reference-2"></span>[Training, validation, and test data sets — Wikipedia](https://en.wikipedia.org/wiki/Training%2C_validation%2C_and_test_data_sets) — encyclopedia
-3. <span id="reference-3"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-4. <span id="reference-4"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
-5. <span id="reference-5"></span>[Artificial intelligence — Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+2. <span id="reference-2"></span>[Training, validation, and test data sets - Wikipedia](https://en.wikipedia.org/wiki/Training%2C_validation%2C_and_test_data_sets) - encyclopedia
+3. <span id="reference-3"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) - documentation
+4. <span id="reference-4"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) - documentation
+5. <span id="reference-5"></span>[Artificial intelligence - Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence) - encyclopedia
 
 ### 코스에서 계속 읽기
 

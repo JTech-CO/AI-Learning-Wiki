@@ -135,13 +135,13 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) — standard
-2. <span id="reference-2"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-3. <span id="reference-3"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
-4. <span id="reference-4"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
-5. <span id="reference-5"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
-6. <span id="reference-6"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) — documentation
-7. <span id="reference-7"></span>[OpenAI API Data Controls](https://developers.openai.com/api/docs/guides/your-data) — documentation
+1. <span id="reference-1"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) - standard
+2. <span id="reference-2"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) - standard
+3. <span id="reference-3"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) - standard
+4. <span id="reference-4"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) - standard
+5. <span id="reference-5"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) - documentation
+6. <span id="reference-6"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) - documentation
+7. <span id="reference-7"></span>[OpenAI API Data Controls](https://developers.openai.com/api/docs/guides/your-data) - documentation
 
 ### 코스에서 계속 읽기
 

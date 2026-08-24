@@ -145,11 +145,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-2. <span id="reference-2"></span>[Backpropagation — Wikipedia](https://en.wikipedia.org/wiki/Backpropagation) — encyclopedia
-3. <span id="reference-3"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-4. <span id="reference-4"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-5. <span id="reference-5"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) — documentation
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) - book
+2. <span id="reference-2"></span>[Backpropagation - Wikipedia](https://en.wikipedia.org/wiki/Backpropagation) - encyclopedia
+3. <span id="reference-3"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+4. <span id="reference-4"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) - documentation
+5. <span id="reference-5"></span>[scikit-learn 공식 사용자 문서](https://scikit-learn.org/stable/user_guide.html) - documentation
 
 ### 코스에서 계속 읽기
 

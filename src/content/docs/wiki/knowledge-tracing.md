@@ -154,10 +154,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Knowledge Tracing: A Survey](https://doi.org/10.1145/3569576) — paper
-2. <span id="reference-2"></span>[Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge](https://doi.org/10.1007/BF01099821) — paper
-3. <span id="reference-3"></span>[Learning for Mastery](https://eric.ed.gov/?id=ED053419) — paper
-4. <span id="reference-4"></span>[1EdTech Competencies and Academic Standards Exchange](https://www.1edtech.org/standards/case) — standard
+1. <span id="reference-1"></span>[Knowledge Tracing: A Survey](https://doi.org/10.1145/3569576) - paper
+2. <span id="reference-2"></span>[Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge](https://doi.org/10.1007/BF01099821) - paper
+3. <span id="reference-3"></span>[Learning for Mastery](https://eric.ed.gov/?id=ED053419) - paper
+4. <span id="reference-4"></span>[1EdTech Competencies and Academic Standards Exchange](https://www.1edtech.org/standards/case) - standard
 
 ### 코스에서 계속 읽기
 

@@ -129,10 +129,10 @@ AI 공격 표면 지도을 적용할 수 있는 대표 상황은 프롬프트 �
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[OWASP Top 10 for Large Language Model Applications](https://genai.owasp.org/llm-top-10/) — standard
-2. <span id="reference-2"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-3. <span id="reference-3"></span>[Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/abs/1610.05820) — paper
-4. <span id="reference-4"></span>[Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures](https://arxiv.org/abs/1409.0031) — paper
+1. <span id="reference-1"></span>[OWASP Top 10 for Large Language Model Applications](https://genai.owasp.org/llm-top-10/) - standard
+2. <span id="reference-2"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) - standard
+3. <span id="reference-3"></span>[Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/abs/1610.05820) - paper
+4. <span id="reference-4"></span>[Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures](https://arxiv.org/abs/1409.0031) - paper
 
 ### 코스에서 계속 읽기
 

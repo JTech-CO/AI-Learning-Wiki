@@ -225,9 +225,9 @@ REST API, 웹 페이지, 파일 전송, 모델 추론 API의 결과 전달에 �
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-2. <span id="reference-2"></span>[MDN: HTTP messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages) — documentation
-3. <span id="reference-3"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+1. <span id="reference-1"></span>[RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) - standard
+2. <span id="reference-2"></span>[MDN: HTTP messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages) - documentation
+3. <span id="reference-3"></span>[HTTP - Wikipedia](https://en.wikipedia.org/wiki/HTTP) - encyclopedia
 
 ### 코스에서 계속 읽기
 

@@ -151,12 +151,12 @@ type, required, minimum, pattern과 enum은 대표적인 단언 키워드다. �
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[JSON Schema Core Specification Draft 2020-12](https://json-schema.org/draft/2020-12/json-schema-core) — specification
-2. <span id="reference-2"></span>[JSON Schema Validation Specification Draft 2020-12](https://json-schema.org/draft/2020-12/json-schema-validation) — specification
-3. <span id="reference-3"></span>[JSON Schema: Dialect and Vocabulary Declaration](https://json-schema.org/understanding-json-schema/reference/schema) — documentation
-4. <span id="reference-4"></span>[JSON Schema Glossary](https://json-schema.org/learn/glossary) — documentation
-5. <span id="reference-5"></span>[JSON Schema Annotations](https://json-schema.org/understanding-json-schema/reference/annotations) — documentation
-6. <span id="reference-6"></span>[JSON Schema Object and Unevaluated Properties](https://json-schema.org/understanding-json-schema/reference/object) — documentation
+1. <span id="reference-1"></span>[JSON Schema Core Specification Draft 2020-12](https://json-schema.org/draft/2020-12/json-schema-core) - specification
+2. <span id="reference-2"></span>[JSON Schema Validation Specification Draft 2020-12](https://json-schema.org/draft/2020-12/json-schema-validation) - specification
+3. <span id="reference-3"></span>[JSON Schema: Dialect and Vocabulary Declaration](https://json-schema.org/understanding-json-schema/reference/schema) - documentation
+4. <span id="reference-4"></span>[JSON Schema Glossary](https://json-schema.org/learn/glossary) - documentation
+5. <span id="reference-5"></span>[JSON Schema Annotations](https://json-schema.org/understanding-json-schema/reference/annotations) - documentation
+6. <span id="reference-6"></span>[JSON Schema Object and Unevaluated Properties](https://json-schema.org/understanding-json-schema/reference/object) - documentation
 
 ### 코스에서 계속 읽기
 

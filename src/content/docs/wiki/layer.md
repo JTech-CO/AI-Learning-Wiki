@@ -228,9 +228,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-2. <span id="reference-2"></span>[PyTorch Sequential](https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html) — documentation
-3. <span id="reference-3"></span>[Layer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Layer_%28deep_learning%29) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) - book
+2. <span id="reference-2"></span>[PyTorch Sequential](https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html) - documentation
+3. <span id="reference-3"></span>[Layer (deep learning) - Wikipedia](https://en.wikipedia.org/wiki/Layer_%28deep_learning%29) - encyclopedia
 
 ### 코스에서 계속 읽기
 

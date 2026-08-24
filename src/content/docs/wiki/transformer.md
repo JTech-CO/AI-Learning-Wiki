@@ -209,9 +209,9 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-2. <span id="reference-2"></span>[Transformer (deep learning) — Wikipedia](https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29) — encyclopedia
-3. <span id="reference-3"></span>[Transformers documentation](https://huggingface.co/docs/transformers/index) — documentation
+1. <span id="reference-1"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) - paper
+2. <span id="reference-2"></span>[Transformer (deep learning) - Wikipedia](https://en.wikipedia.org/wiki/Transformer_%28deep_learning%29) - encyclopedia
+3. <span id="reference-3"></span>[Transformers documentation](https://huggingface.co/docs/transformers/index) - documentation
 
 ### 코스에서 계속 읽기
 

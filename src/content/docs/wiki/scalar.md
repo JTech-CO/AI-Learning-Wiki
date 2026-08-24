@@ -130,9 +130,9 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-2. <span id="reference-2"></span>[NumPy Scalars](https://numpy.org/doc/stable/reference/arrays.scalars.html) — documentation
-3. <span id="reference-3"></span>[Scalar (mathematics) — Wikipedia](https://en.wikipedia.org/wiki/Scalar_%28mathematics%29) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) - book
+2. <span id="reference-2"></span>[NumPy Scalars](https://numpy.org/doc/stable/reference/arrays.scalars.html) - documentation
+3. <span id="reference-3"></span>[Scalar (mathematics) - Wikipedia](https://en.wikipedia.org/wiki/Scalar_%28mathematics%29) - encyclopedia
 
 ### 코스에서 계속 읽기
 

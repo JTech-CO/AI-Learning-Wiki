@@ -134,9 +134,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Synthetic Data — What, Why and How?](https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/Synthetic_Data_Survey-24.pdf) — paper
-2. <span id="reference-2"></span>[Synthetic Data Vault Documentation](https://docs.sdv.dev/sdv) — documentation
-3. <span id="reference-3"></span>[Synthetic data — Wikipedia](https://en.wikipedia.org/wiki/Synthetic_data) — encyclopedia
+1. <span id="reference-1"></span>[Synthetic Data - What, Why and How?](https://royalsociety.org/-/media/policy/projects/privacy-enhancing-technologies/Synthetic_Data_Survey-24.pdf) - paper
+2. <span id="reference-2"></span>[Synthetic Data Vault Documentation](https://docs.sdv.dev/sdv) - documentation
+3. <span id="reference-3"></span>[Synthetic data - Wikipedia](https://en.wikipedia.org/wiki/Synthetic_data) - encyclopedia
 
 ### 코스에서 계속 읽기
 

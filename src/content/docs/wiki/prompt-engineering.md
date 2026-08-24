@@ -181,14 +181,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](https://arxiv.org/abs/2107.13586) — paper
-2. <span id="reference-2"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
-3. <span id="reference-3"></span>[Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) — paper
-4. <span id="reference-4"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
-5. <span id="reference-5"></span>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) — book
-6. <span id="reference-6"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-7. <span id="reference-7"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
-8. <span id="reference-8"></span>[Prompt engineering — Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering) — encyclopedia
+1. <span id="reference-1"></span>[Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](https://arxiv.org/abs/2107.13586) - paper
+2. <span id="reference-2"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) - paper
+3. <span id="reference-3"></span>[Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) - paper
+4. <span id="reference-4"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) - paper
+5. <span id="reference-5"></span>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - book
+6. <span id="reference-6"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+7. <span id="reference-7"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) - documentation
+8. <span id="reference-8"></span>[Prompt engineering - Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering) - encyclopedia
 
 ### 코스에서 계속 읽기
 

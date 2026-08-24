@@ -140,16 +140,16 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/index.html) — documentation
-2. <span id="reference-2"></span>[Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — standard
-3. <span id="reference-3"></span>[SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) — documentation
-4. <span id="reference-4"></span>[Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) — documentation
-5. <span id="reference-5"></span>[Open Source Licenses](https://opensource.org/licenses) — standard
-6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
-7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
-8. <span id="reference-8"></span>[PyTorch — Wikipedia](https://en.wikipedia.org/wiki/PyTorch) — encyclopedia
-9. <span id="reference-9"></span>[PyTorch 2.13.0 Release Notes](https://github.com/pytorch/pytorch/releases/tag/v2.13.0) — documentation
-10. <span id="reference-10"></span>[PyTorch Releases](https://github.com/pytorch/pytorch/releases) — documentation
+1. <span id="reference-1"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/index.html) - documentation
+2. <span id="reference-2"></span>[Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) - standard
+3. <span id="reference-3"></span>[SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) - documentation
+4. <span id="reference-4"></span>[Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) - documentation
+5. <span id="reference-5"></span>[Open Source Licenses](https://opensource.org/licenses) - standard
+6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) - standard
+7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) - documentation
+8. <span id="reference-8"></span>[PyTorch - Wikipedia](https://en.wikipedia.org/wiki/PyTorch) - encyclopedia
+9. <span id="reference-9"></span>[PyTorch 2.13.0 Release Notes](https://github.com/pytorch/pytorch/releases/tag/v2.13.0) - documentation
+10. <span id="reference-10"></span>[PyTorch Releases](https://github.com/pytorch/pytorch/releases) - documentation
 
 ### 코스에서 계속 읽기
 

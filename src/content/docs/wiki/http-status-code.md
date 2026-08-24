@@ -138,10 +138,10 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-2. <span id="reference-2"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-4. <span id="reference-4"></span>[HTTP 상태 코드 — 한국어 위키백과](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C) — encyclopedia
+1. <span id="reference-1"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) - standard
+2. <span id="reference-2"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) - documentation
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) - standard
+4. <span id="reference-4"></span>[HTTP 상태 코드 - 한국어 위키백과](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C) - encyclopedia
 
 ### 코스에서 계속 읽기
 

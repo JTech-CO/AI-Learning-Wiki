@@ -131,9 +131,9 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Not what you've signed up for: Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) — paper
-2. <span id="reference-2"></span>[OWASP LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) — documentation
-3. <span id="reference-3"></span>[Prompt injection — Wikipedia](https://en.wikipedia.org/wiki/Prompt_injection) — encyclopedia
+1. <span id="reference-1"></span>[Not what you've signed up for: Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) - paper
+2. <span id="reference-2"></span>[OWASP LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) - documentation
+3. <span id="reference-3"></span>[Prompt injection - Wikipedia](https://en.wikipedia.org/wiki/Prompt_injection) - encyclopedia
 
 ### 코스에서 계속 읽기
 

@@ -136,13 +136,13 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258) — paper
-2. <span id="reference-2"></span>[A Survey of Transfer Learning](https://arxiv.org/abs/1911.02685) — paper
-3. <span id="reference-3"></span>[An Overview of Multi-Task Learning in Deep Neural Networks](https://arxiv.org/abs/1706.05098) — paper
-4. <span id="reference-4"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-5. <span id="reference-5"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-6. <span id="reference-6"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-7. <span id="reference-7"></span>[전이학습 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5) — encyclopedia
+1. <span id="reference-1"></span>[On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258) - paper
+2. <span id="reference-2"></span>[A Survey of Transfer Learning](https://arxiv.org/abs/1911.02685) - paper
+3. <span id="reference-3"></span>[An Overview of Multi-Task Learning in Deep Neural Networks](https://arxiv.org/abs/1706.05098) - paper
+4. <span id="reference-4"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+5. <span id="reference-5"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) - documentation
+6. <span id="reference-6"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) - documentation
+7. <span id="reference-7"></span>[전이학습 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5) - encyclopedia
 
 ### 코스에서 계속 읽기
 

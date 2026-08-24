@@ -125,9 +125,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[NIST AI 100-2e2023: Adversarial Machine Learning](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf) — standard
-2. <span id="reference-2"></span>[OWASP LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) — documentation
-3. <span id="reference-3"></span>[Prompt injection — Wikipedia](https://en.wikipedia.org/wiki/Prompt_injection) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI 100-2e2023: Adversarial Machine Learning](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf) - standard
+2. <span id="reference-2"></span>[OWASP LLM01: Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) - documentation
+3. <span id="reference-3"></span>[Prompt injection - Wikipedia](https://en.wikipedia.org/wiki/Prompt_injection) - encyclopedia
 
 ### 코스에서 계속 읽기
 

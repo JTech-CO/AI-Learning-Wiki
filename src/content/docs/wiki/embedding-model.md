@@ -134,9 +134,9 @@ FAQ 검색에서는 질문과 각 답변 문서를 같은 모델로 벡터화하
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) — paper
-2. <span id="reference-2"></span>[Sentence Transformers: Semantic Textual Similarity](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html) — documentation
-3. <span id="reference-3"></span>[Word embedding — Wikipedia](https://en.wikipedia.org/wiki/Word_embedding) — encyclopedia
+1. <span id="reference-1"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) - paper
+2. <span id="reference-2"></span>[Sentence Transformers: Semantic Textual Similarity](https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html) - documentation
+3. <span id="reference-3"></span>[Word embedding - Wikipedia](https://en.wikipedia.org/wiki/Word_embedding) - encyclopedia
 
 ### 코스에서 계속 읽기
 

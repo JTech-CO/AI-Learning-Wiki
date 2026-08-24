@@ -146,12 +146,12 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-2. <span id="reference-2"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
-3. <span id="reference-3"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) — documentation
-4. <span id="reference-4"></span>[TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) — documentation
-5. <span id="reference-5"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-6. <span id="reference-6"></span>[Batch — Wikipedia](https://en.wikipedia.org/wiki/Batch) — encyclopedia
+1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) - paper
+2. <span id="reference-2"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) - paper
+3. <span id="reference-3"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) - documentation
+4. <span id="reference-4"></span>[TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) - documentation
+5. <span id="reference-5"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+6. <span id="reference-6"></span>[Batch - Wikipedia](https://en.wikipedia.org/wiki/Batch) - encyclopedia
 
 ### 코스에서 계속 읽기
 

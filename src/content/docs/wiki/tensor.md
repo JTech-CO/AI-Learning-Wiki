@@ -220,9 +220,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-2. <span id="reference-2"></span>[Tensor (machine learning) — Wikipedia](https://en.wikipedia.org/wiki/Tensor_%28machine_learning%29) — encyclopedia
-3. <span id="reference-3"></span>[PyTorch tensor operations](https://docs.pytorch.org/docs/stable/torch) — documentation
+1. <span id="reference-1"></span>[Deep Learning Book: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) - book
+2. <span id="reference-2"></span>[Tensor (machine learning) - Wikipedia](https://en.wikipedia.org/wiki/Tensor_%28machine_learning%29) - encyclopedia
+3. <span id="reference-3"></span>[PyTorch tensor operations](https://docs.pytorch.org/docs/stable/torch) - documentation
 
 ### 코스에서 계속 읽기
 

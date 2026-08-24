@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Blockwise Parallel Decoding for Deep Autoregressive Models](https://arxiv.org/abs/1811.03115) — paper
-2. <span id="reference-2"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) — paper
-3. <span id="reference-3"></span>[Fast Transformer Decoding: One Write-Head is All You Need](https://arxiv.org/abs/1911.02150) — paper
-4. <span id="reference-4"></span>[GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](https://arxiv.org/abs/2305.13245) — paper
-5. <span id="reference-5"></span>[Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150) — paper
-6. <span id="reference-6"></span>[PyTorch MultiheadAttention Documentation](https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html) — documentation
-7. <span id="reference-7"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-8. <span id="reference-8"></span>[Transformer — Wikipedia](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) — encyclopedia
+1. <span id="reference-1"></span>[Blockwise Parallel Decoding for Deep Autoregressive Models](https://arxiv.org/abs/1811.03115) - paper
+2. <span id="reference-2"></span>[Attention Is All You Need](https://arxiv.org/abs/1706.03762) - paper
+3. <span id="reference-3"></span>[Fast Transformer Decoding: One Write-Head is All You Need](https://arxiv.org/abs/1911.02150) - paper
+4. <span id="reference-4"></span>[GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](https://arxiv.org/abs/2305.13245) - paper
+5. <span id="reference-5"></span>[Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150) - paper
+6. <span id="reference-6"></span>[PyTorch MultiheadAttention Documentation](https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html) - documentation
+7. <span id="reference-7"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+8. <span id="reference-8"></span>[Transformer - Wikipedia](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) - encyclopedia
 
 ### 코스에서 계속 읽기
 

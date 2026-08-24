@@ -143,11 +143,11 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
-2. <span id="reference-2"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-3. <span id="reference-3"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
-4. <span id="reference-4"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-5. <span id="reference-5"></span>[Hyperparameter — Wikipedia](https://en.wikipedia.org/wiki/Hyperparameter) — encyclopedia
+1. <span id="reference-1"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) - paper
+2. <span id="reference-2"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+3. <span id="reference-3"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) - documentation
+4. <span id="reference-4"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) - documentation
+5. <span id="reference-5"></span>[Hyperparameter - Wikipedia](https://en.wikipedia.org/wiki/Hyperparameter) - encyclopedia
 
 ### 코스에서 계속 읽기
 

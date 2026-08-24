@@ -122,9 +122,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
-2. <span id="reference-2"></span>[Checkpointing — Wikipedia](https://en.wikipedia.org/wiki/Checkpointing) — encyclopedia
-3. <span id="reference-3"></span>[PyTorch: Saving and Loading Models](https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html) — documentation
+1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) - paper
+2. <span id="reference-2"></span>[Checkpointing - Wikipedia](https://en.wikipedia.org/wiki/Checkpointing) - encyclopedia
+3. <span id="reference-3"></span>[PyTorch: Saving and Loading Models](https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html) - documentation
 
 ### 코스에서 계속 읽기
 

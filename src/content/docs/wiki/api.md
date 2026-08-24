@@ -254,9 +254,9 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-2. <span id="reference-2"></span>[API — 한국어 위키백과](https://ko.wikipedia.org/wiki/API) — encyclopedia
-3. <span id="reference-3"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
+1. <span id="reference-1"></span>[MDN Web Docs: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) - documentation
+2. <span id="reference-2"></span>[API - 한국어 위키백과](https://ko.wikipedia.org/wiki/API) - encyclopedia
+3. <span id="reference-3"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) - standard
 
 ### 코스에서 계속 읽기
 

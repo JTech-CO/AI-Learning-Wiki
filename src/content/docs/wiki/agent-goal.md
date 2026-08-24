@@ -138,11 +138,11 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
-2. <span id="reference-2"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
-3. <span id="reference-3"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-4. <span id="reference-4"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-5. <span id="reference-5"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+1. <span id="reference-1"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) - paper
+2. <span id="reference-2"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) - standard
+3. <span id="reference-3"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) - standard
+4. <span id="reference-4"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) - standard
+5. <span id="reference-5"></span>[Intelligent agent - Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) - encyclopedia
 
 ### 코스에서 계속 읽기
 

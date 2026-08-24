@@ -151,11 +151,11 @@ ROC 곡선은 양성 판정 임곗값에 따른 참양성률과 거짓양성률�
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Selective Classification for Deep Neural Networks](https://arxiv.org/abs/1705.08500) — paper
-2. <span id="reference-2"></span>[SelectiveNet: A Deep Neural Network with an Integrated Reject Option](https://proceedings.mlr.press/v97/geifman19a.html) — paper
-3. <span id="reference-3"></span>[A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification](https://arxiv.org/abs/2107.07511) — paper
-4. <span id="reference-4"></span>[Statistical Significance Tests for Machine Translation Evaluation](https://aclanthology.org/W04-3250.pdf) — paper
-5. <span id="reference-5"></span>[Minimum Detectable Effects: A Simple Way to Report the Statistical Power of Experimental Designs](https://doi.org/10.1177/0193841X9501900504) — paper
+1. <span id="reference-1"></span>[Selective Classification for Deep Neural Networks](https://arxiv.org/abs/1705.08500) - paper
+2. <span id="reference-2"></span>[SelectiveNet: A Deep Neural Network with an Integrated Reject Option](https://proceedings.mlr.press/v97/geifman19a.html) - paper
+3. <span id="reference-3"></span>[A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification](https://arxiv.org/abs/2107.07511) - paper
+4. <span id="reference-4"></span>[Statistical Significance Tests for Machine Translation Evaluation](https://aclanthology.org/W04-3250.pdf) - paper
+5. <span id="reference-5"></span>[Minimum Detectable Effects: A Simple Way to Report the Statistical Power of Experimental Designs](https://doi.org/10.1177/0193841X9501900504) - paper
 
 ### 코스에서 계속 읽기
 

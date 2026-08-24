@@ -137,14 +137,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/) — book
-2. <span id="reference-2"></span>[BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) — paper
-3. <span id="reference-3"></span>[ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) — paper
-4. <span id="reference-4"></span>[BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) — paper
-5. <span id="reference-5"></span>[On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) — paper
-6. <span id="reference-6"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
-7. <span id="reference-7"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-8. <span id="reference-8"></span>[통계적 유의성 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%86%B5%EA%B3%84%EC%A0%81_%EC%9C%A0%EC%9D%98%EC%84%B1) — encyclopedia
+1. <span id="reference-1"></span>[NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/) - book
+2. <span id="reference-2"></span>[BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) - paper
+3. <span id="reference-3"></span>[ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) - paper
+4. <span id="reference-4"></span>[BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) - paper
+5. <span id="reference-5"></span>[On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) - paper
+6. <span id="reference-6"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) - book
+7. <span id="reference-7"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) - documentation
+8. <span id="reference-8"></span>[통계적 유의성 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%ED%86%B5%EA%B3%84%EC%A0%81_%EC%9C%A0%EC%9D%98%EC%84%B1) - encyclopedia
 
 ### 코스에서 계속 읽기
 

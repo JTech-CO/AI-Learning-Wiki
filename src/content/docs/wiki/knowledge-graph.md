@@ -137,14 +137,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[W3C RDF 1.1 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf11-concepts/) — standard
-2. <span id="reference-2"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) — paper
-3. <span id="reference-3"></span>[Matryoshka Representation Learning](https://arxiv.org/abs/2205.13147) — paper
-4. <span id="reference-4"></span>[One Embedder, Any Task: Instruction-Finetuned Text Embeddings](https://arxiv.org/abs/2212.09741) — paper
-5. <span id="reference-5"></span>[BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models](https://arxiv.org/abs/2104.08663) — paper
-6. <span id="reference-6"></span>[Faiss Documentation](https://faiss.ai/) — documentation
-7. <span id="reference-7"></span>[Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) — book
-8. <span id="reference-8"></span>[Knowledge Graph — Wikipedia](https://en.wikipedia.org/wiki/Knowledge_Graph) — encyclopedia
+1. <span id="reference-1"></span>[W3C RDF 1.1 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf11-concepts/) - standard
+2. <span id="reference-2"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) - paper
+3. <span id="reference-3"></span>[Matryoshka Representation Learning](https://arxiv.org/abs/2205.13147) - paper
+4. <span id="reference-4"></span>[One Embedder, Any Task: Instruction-Finetuned Text Embeddings](https://arxiv.org/abs/2212.09741) - paper
+5. <span id="reference-5"></span>[BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models](https://arxiv.org/abs/2104.08663) - paper
+6. <span id="reference-6"></span>[Faiss Documentation](https://faiss.ai/) - documentation
+7. <span id="reference-7"></span>[Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/) - book
+8. <span id="reference-8"></span>[Knowledge Graph - Wikipedia](https://en.wikipedia.org/wiki/Knowledge_Graph) - encyclopedia
 
 ### 코스에서 계속 읽기
 

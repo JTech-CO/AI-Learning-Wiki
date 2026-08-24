@@ -133,12 +133,12 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](https://arxiv.org/abs/2107.13586) — paper
-2. <span id="reference-2"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
-3. <span id="reference-3"></span>[Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) — paper
-4. <span id="reference-4"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
-5. <span id="reference-5"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) — documentation
-6. <span id="reference-6"></span>[OpenAI API Models](https://developers.openai.com/api/docs/models) — documentation
+1. <span id="reference-1"></span>[Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](https://arxiv.org/abs/2107.13586) - paper
+2. <span id="reference-2"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) - paper
+3. <span id="reference-3"></span>[Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) - paper
+4. <span id="reference-4"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) - paper
+5. <span id="reference-5"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) - documentation
+6. <span id="reference-6"></span>[OpenAI API Models](https://developers.openai.com/api/docs/models) - documentation
 
 ### 코스에서 계속 읽기
 

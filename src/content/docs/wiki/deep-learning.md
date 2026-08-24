@@ -227,9 +227,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book](https://www.deeplearningbook.org/) — book
-2. <span id="reference-2"></span>[Deep learning](https://www.nature.com/articles/nature14539) — paper
-3. <span id="reference-3"></span>[Deep learning — Wikipedia](https://en.wikipedia.org/wiki/Deep_learning) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book](https://www.deeplearningbook.org/) - book
+2. <span id="reference-2"></span>[Deep learning](https://www.nature.com/articles/nature14539) - paper
+3. <span id="reference-3"></span>[Deep learning - Wikipedia](https://en.wikipedia.org/wiki/Deep_learning) - encyclopedia
 
 ### 코스에서 계속 읽기
 

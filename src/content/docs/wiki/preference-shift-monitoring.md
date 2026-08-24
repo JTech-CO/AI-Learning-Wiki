@@ -129,10 +129,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
-2. <span id="reference-2"></span>[Fine-tuning — Transformers documentation](https://huggingface.co/docs/transformers/training) — documentation
-3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-4. <span id="reference-4"></span>[TRL Documentation](https://huggingface.co/docs/trl/index) — documentation
+1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) - paper
+2. <span id="reference-2"></span>[Fine-tuning - Transformers documentation](https://huggingface.co/docs/transformers/training) - documentation
+3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) - documentation
+4. <span id="reference-4"></span>[TRL Documentation](https://huggingface.co/docs/trl/index) - documentation
 
 ### 코스에서 계속 읽기
 

@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/) — book
-2. <span id="reference-2"></span>[Mathematics for Machine Learning](https://mml-book.github.io/) — book
-3. <span id="reference-3"></span>[Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) — book
-4. <span id="reference-4"></span>[Deep Learning: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) — book
-5. <span id="reference-5"></span>[NumPy Linear Algebra Reference](https://numpy.org/doc/stable/reference/routines.linalg.html) — documentation
-6. <span id="reference-6"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-8. <span id="reference-8"></span>[볼록 최적화 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%B3%BC%EB%A1%9D_%EC%B5%9C%EC%A0%81%ED%99%94) — encyclopedia
+1. <span id="reference-1"></span>[Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/) - book
+2. <span id="reference-2"></span>[Mathematics for Machine Learning](https://mml-book.github.io/) - book
+3. <span id="reference-3"></span>[Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) - book
+4. <span id="reference-4"></span>[Deep Learning: Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) - book
+5. <span id="reference-5"></span>[NumPy Linear Algebra Reference](https://numpy.org/doc/stable/reference/routines.linalg.html) - documentation
+6. <span id="reference-6"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) - documentation
+8. <span id="reference-8"></span>[볼록 최적화 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%B3%BC%EB%A1%9D_%EC%B5%9C%EC%A0%81%ED%99%94) - encyclopedia
 
 ### 코스에서 계속 읽기
 

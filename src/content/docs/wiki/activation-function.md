@@ -220,10 +220,10 @@ ReLU·시그모이드·GELU는 출력 범위와 기울기 특성이 달라 층�
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-2. <span id="reference-2"></span>[Activation function — Wikipedia](https://en.wikipedia.org/wiki/Activation_function) — encyclopedia
-3. <span id="reference-3"></span>[Gaussian Error Linear Units (GELUs)](https://arxiv.org/abs/1606.08415) — paper
-4. <span id="reference-4"></span>[PyTorch: torch.nn](https://docs.pytorch.org/docs/stable/nn.html) — documentation
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) - book
+2. <span id="reference-2"></span>[Activation function - Wikipedia](https://en.wikipedia.org/wiki/Activation_function) - encyclopedia
+3. <span id="reference-3"></span>[Gaussian Error Linear Units (GELUs)](https://arxiv.org/abs/1606.08415) - paper
+4. <span id="reference-4"></span>[PyTorch: torch.nn](https://docs.pytorch.org/docs/stable/nn.html) - documentation
 
 ### 코스에서 계속 읽기
 

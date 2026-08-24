@@ -231,9 +231,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) — book
-2. <span id="reference-2"></span>[PyTorch Neural Networks Tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html) — documentation
-3. <span id="reference-3"></span>[Artificial neural network — Wikipedia](https://en.wikipedia.org/wiki/Artificial_neural_network) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Deep Feedforward Networks](https://www.deeplearningbook.org/contents/mlp.html) - book
+2. <span id="reference-2"></span>[PyTorch Neural Networks Tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html) - documentation
+3. <span id="reference-3"></span>[Artificial neural network - Wikipedia](https://en.wikipedia.org/wiki/Artificial_neural_network) - encyclopedia
 
 ### 코스에서 계속 읽기
 

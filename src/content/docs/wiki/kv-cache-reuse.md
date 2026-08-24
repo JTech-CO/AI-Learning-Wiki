@@ -151,12 +151,12 @@ KV 캐시 재사용은 이전에 계산한 접두부나 문맥 구간의 키·�
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) — paper
-2. <span id="reference-2"></span>[vLLM Automatic Prefix Caching](https://docs.vllm.ai/en/stable/design/prefix_caching/) — documentation
-3. <span id="reference-3"></span>[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://arxiv.org/abs/2401.09670) — paper
-4. <span id="reference-4"></span>[Preble: Efficient Distributed Prompt Scheduling for LLM Serving](https://arxiv.org/abs/2407.00023) — paper
-5. <span id="reference-5"></span>[Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079) — paper
-6. <span id="reference-6"></span>[LMCache Documentation](https://docs.lmcache.ai/) — documentation
+1. <span id="reference-1"></span>[Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) - paper
+2. <span id="reference-2"></span>[vLLM Automatic Prefix Caching](https://docs.vllm.ai/en/stable/design/prefix_caching/) - documentation
+3. <span id="reference-3"></span>[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://arxiv.org/abs/2401.09670) - paper
+4. <span id="reference-4"></span>[Preble: Efficient Distributed Prompt Scheduling for LLM Serving](https://arxiv.org/abs/2407.00023) - paper
+5. <span id="reference-5"></span>[Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](https://arxiv.org/abs/2407.00079) - paper
+6. <span id="reference-6"></span>[LMCache Documentation](https://docs.lmcache.ai/) - documentation
 
 ### 코스에서 계속 읽기
 

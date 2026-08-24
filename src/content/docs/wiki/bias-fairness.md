@@ -144,11 +144,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
-2. <span id="reference-2"></span>[Algorithmic bias — Wikipedia](https://en.wikipedia.org/wiki/Algorithmic_bias) — encyclopedia
-3. <span id="reference-3"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
-4. <span id="reference-4"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
-5. <span id="reference-5"></span>[Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
+1. <span id="reference-1"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) - standard
+2. <span id="reference-2"></span>[Algorithmic bias - Wikipedia](https://en.wikipedia.org/wiki/Algorithmic_bias) - encyclopedia
+3. <span id="reference-3"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) - standard
+4. <span id="reference-4"></span>[MITRE ATLAS](https://atlas.mitre.org/) - documentation
+5. <span id="reference-5"></span>[Adversarial machine learning - Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) - encyclopedia
 
 ### 코스에서 계속 읽기
 

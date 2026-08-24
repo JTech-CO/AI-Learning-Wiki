@@ -136,14 +136,14 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[scikit-learn Supervised Learning Reference](https://scikit-learn.org/stable/supervised_learning.html) — documentation
-2. <span id="reference-2"></span>[On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258) — paper
-3. <span id="reference-3"></span>[A Survey of Transfer Learning](https://arxiv.org/abs/1911.02685) — paper
-4. <span id="reference-4"></span>[An Overview of Multi-Task Learning in Deep Neural Networks](https://arxiv.org/abs/1706.05098) — paper
-5. <span id="reference-5"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-6. <span id="reference-6"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
-7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-8. <span id="reference-8"></span>[나이브 베이즈 분류 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%82%98%EC%9D%B4%EB%B8%8C_%EB%B2%A0%EC%9D%B4%EC%A6%88_%EB%B6%84%EB%A5%98) — encyclopedia
+1. <span id="reference-1"></span>[scikit-learn Supervised Learning Reference](https://scikit-learn.org/stable/supervised_learning.html) - documentation
+2. <span id="reference-2"></span>[On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258) - paper
+3. <span id="reference-3"></span>[A Survey of Transfer Learning](https://arxiv.org/abs/1911.02685) - paper
+4. <span id="reference-4"></span>[An Overview of Multi-Task Learning in Deep Neural Networks](https://arxiv.org/abs/1706.05098) - paper
+5. <span id="reference-5"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+6. <span id="reference-6"></span>[Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) - documentation
+7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) - documentation
+8. <span id="reference-8"></span>[나이브 베이즈 분류 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%82%98%EC%9D%B4%EB%B8%8C_%EB%B2%A0%EC%9D%B4%EC%A6%88_%EB%B6%84%EB%A5%98) - encyclopedia
 
 ### 코스에서 계속 읽기
 

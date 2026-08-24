@@ -129,10 +129,10 @@ SSE 복구을 적용할 수 있는 대표 상황은 두 LLM 공급자 사이를 
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) — standard
-2. <span id="reference-2"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-3. <span id="reference-3"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
-4. <span id="reference-4"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
+1. <span id="reference-1"></span>[RFC 3986: Uniform Resource Identifier](https://www.rfc-editor.org/rfc/rfc3986.html) - standard
+2. <span id="reference-2"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) - standard
+3. <span id="reference-3"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) - standard
+4. <span id="reference-4"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) - standard
 
 ### 코스에서 계속 읽기
 

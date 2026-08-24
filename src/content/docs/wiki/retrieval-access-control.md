@@ -129,10 +129,10 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — paper
-2. <span id="reference-2"></span>[RAG — Transformers documentation](https://huggingface.co/docs/transformers/model_doc/rag) — documentation
-3. <span id="reference-3"></span>[BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models](https://arxiv.org/abs/2104.08663) — paper
-4. <span id="reference-4"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) — paper
+1. <span id="reference-1"></span>[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) - paper
+2. <span id="reference-2"></span>[RAG - Transformers documentation](https://huggingface.co/docs/transformers/model_doc/rag) - documentation
+3. <span id="reference-3"></span>[BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models](https://arxiv.org/abs/2104.08663) - paper
+4. <span id="reference-4"></span>[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084) - paper
 
 ### 코스에서 계속 읽기
 

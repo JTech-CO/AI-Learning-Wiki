@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Graph Attention Networks](https://arxiv.org/abs/1710.10903) — paper
-2. <span id="reference-2"></span>[Deep Learning](https://www.deeplearningbook.org/) — book
-3. <span id="reference-3"></span>[Understanding the Difficulty of Training Deep Feedforward Neural Networks](https://proceedings.mlr.press/v9/glorot10a.html) — paper
-4. <span id="reference-4"></span>[Delving Deep into Rectifiers](https://arxiv.org/abs/1502.01852) — paper
-5. <span id="reference-5"></span>[Understanding the Effective Receptive Field in Deep Convolutional Neural Networks](https://arxiv.org/abs/1701.04128) — paper
-6. <span id="reference-6"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) — documentation
-8. <span id="reference-8"></span>[Graph neural network — Wikipedia](https://en.wikipedia.org/wiki/Graph_neural_network) — encyclopedia
+1. <span id="reference-1"></span>[Graph Attention Networks](https://arxiv.org/abs/1710.10903) - paper
+2. <span id="reference-2"></span>[Deep Learning](https://www.deeplearningbook.org/) - book
+3. <span id="reference-3"></span>[Understanding the Difficulty of Training Deep Feedforward Neural Networks](https://proceedings.mlr.press/v9/glorot10a.html) - paper
+4. <span id="reference-4"></span>[Delving Deep into Rectifiers](https://arxiv.org/abs/1502.01852) - paper
+5. <span id="reference-5"></span>[Understanding the Effective Receptive Field in Deep Convolutional Neural Networks](https://arxiv.org/abs/1701.04128) - paper
+6. <span id="reference-6"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) - documentation
+7. <span id="reference-7"></span>[scikit-learn Documentation](https://scikit-learn.org/stable/user_guide.html) - documentation
+8. <span id="reference-8"></span>[Graph neural network - Wikipedia](https://en.wikipedia.org/wiki/Graph_neural_network) - encyclopedia
 
 ### 코스에서 계속 읽기
 

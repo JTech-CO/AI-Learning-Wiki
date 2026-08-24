@@ -143,9 +143,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Deep Learning Book: Numerical Computation and Output Units](https://www.deeplearningbook.org/contents/numerical.html) — book
-2. <span id="reference-2"></span>[PyTorch Softmax](https://docs.pytorch.org/docs/stable/generated/torch.nn.Softmax.html) — documentation
-3. <span id="reference-3"></span>[Softmax function — Wikipedia](https://en.wikipedia.org/wiki/Softmax_function) — encyclopedia
+1. <span id="reference-1"></span>[Deep Learning Book: Numerical Computation and Output Units](https://www.deeplearningbook.org/contents/numerical.html) - book
+2. <span id="reference-2"></span>[PyTorch Softmax](https://docs.pytorch.org/docs/stable/generated/torch.nn.Softmax.html) - documentation
+3. <span id="reference-3"></span>[Softmax function - Wikipedia](https://en.wikipedia.org/wiki/Softmax_function) - encyclopedia
 
 ### 코스에서 계속 읽기
 

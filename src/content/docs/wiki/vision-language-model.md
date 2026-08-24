@@ -220,9 +220,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
-2. <span id="reference-2"></span>[Vision-language model — Wikipedia](https://en.wikipedia.org/wiki/Vision-language_model) — encyclopedia
-3. <span id="reference-3"></span>[Hugging Face: Multimodal chat templates](https://huggingface.co/docs/transformers/en/chat_templating_multimodal) — documentation
+1. <span id="reference-1"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) - paper
+2. <span id="reference-2"></span>[Vision-language model - Wikipedia](https://en.wikipedia.org/wiki/Vision-language_model) - encyclopedia
+3. <span id="reference-3"></span>[Hugging Face: Multimodal chat templates](https://huggingface.co/docs/transformers/en/chat_templating_multimodal) - documentation
 
 ### 코스에서 계속 읽기
 

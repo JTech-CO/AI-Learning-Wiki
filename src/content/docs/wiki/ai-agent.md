@@ -278,10 +278,10 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
-2. <span id="reference-2"></span>[AI agent — Wikipedia](https://en.wikipedia.org/wiki/AI_agent) — encyclopedia
-3. <span id="reference-3"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
-4. <span id="reference-4"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
+1. <span id="reference-1"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) - paper
+2. <span id="reference-2"></span>[AI agent - Wikipedia](https://en.wikipedia.org/wiki/AI_agent) - encyclopedia
+3. <span id="reference-3"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) - standard
+4. <span id="reference-4"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) - standard
 
 ### 코스에서 계속 읽기
 

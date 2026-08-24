@@ -138,11 +138,11 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) — paper
-2. <span id="reference-2"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) — documentation
-3. <span id="reference-3"></span>[TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) — documentation
-4. <span id="reference-4"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
-5. <span id="reference-5"></span>[Natural language generation — Wikipedia](https://en.wikipedia.org/wiki/Natural_language_generation) — encyclopedia
+1. <span id="reference-1"></span>[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) - paper
+2. <span id="reference-2"></span>[vLLM Documentation](https://docs.vllm.ai/en/stable/) - documentation
+3. <span id="reference-3"></span>[TensorRT-LLM Documentation](https://nvidia.github.io/TensorRT-LLM/) - documentation
+4. <span id="reference-4"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) - documentation
+5. <span id="reference-5"></span>[Natural language generation - Wikipedia](https://en.wikipedia.org/wiki/Natural_language_generation) - encyclopedia
 
 ### 코스에서 계속 읽기
 

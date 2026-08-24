@@ -136,14 +136,14 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[SPDX Specification 3.0.1](https://spdx.github.io/spdx-spec/v3.0.1/) — standard
-2. <span id="reference-2"></span>[Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — standard
-3. <span id="reference-3"></span>[SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) — documentation
-4. <span id="reference-4"></span>[Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) — documentation
-5. <span id="reference-5"></span>[Open Source Licenses](https://opensource.org/licenses) — standard
-6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
-7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
-8. <span id="reference-8"></span>[라이선스 호환성 — 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4_%ED%98%B8%ED%99%98%EC%84%B1) — encyclopedia
+1. <span id="reference-1"></span>[SPDX Specification 3.0.1](https://spdx.github.io/spdx-spec/v3.0.1/) - standard
+2. <span id="reference-2"></span>[Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) - standard
+3. <span id="reference-3"></span>[SafeTensors Documentation](https://huggingface.co/docs/safetensors/index) - documentation
+4. <span id="reference-4"></span>[Reproducible Builds: Definition](https://reproducible-builds.org/docs/definition/) - documentation
+5. <span id="reference-5"></span>[Open Source Licenses](https://opensource.org/licenses) - standard
+6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) - standard
+7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) - documentation
+8. <span id="reference-8"></span>[라이선스 호환성 - 한국어 위키백과](https://ko.wikipedia.org/wiki/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4_%ED%98%B8%ED%99%98%EC%84%B1) - encyclopedia
 
 ### 코스에서 계속 읽기
 

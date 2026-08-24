@@ -139,12 +139,12 @@ AI 정렬이 잘 작동하는 조건만 나열하면 실제 적용 범위를 판
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — paper
-2. <span id="reference-2"></span>[AI alignment — Wikipedia](https://en.wikipedia.org/wiki/AI_alignment) — encyclopedia
-3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) — documentation
-4. <span id="reference-4"></span>[TRL Documentation](https://huggingface.co/docs/trl/index) — documentation
-5. <span id="reference-5"></span>[DeepSpeed Documentation](https://www.deepspeed.ai/) — documentation
-6. <span id="reference-6"></span>[AI 정렬 — 한국어 위키백과](https://ko.wikipedia.org/wiki/AI_%EC%A0%95%EB%A0%AC) — encyclopedia
+1. <span id="reference-1"></span>[Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) - paper
+2. <span id="reference-2"></span>[AI alignment - Wikipedia](https://en.wikipedia.org/wiki/AI_alignment) - encyclopedia
+3. <span id="reference-3"></span>[PyTorch Documentation](https://docs.pytorch.org/docs/stable/) - documentation
+4. <span id="reference-4"></span>[TRL Documentation](https://huggingface.co/docs/trl/index) - documentation
+5. <span id="reference-5"></span>[DeepSpeed Documentation](https://www.deepspeed.ai/) - documentation
+6. <span id="reference-6"></span>[AI 정렬 - 한국어 위키백과](https://ko.wikipedia.org/wiki/AI_%EC%A0%95%EB%A0%AC) - encyclopedia
 
 ### 코스에서 계속 읽기
 

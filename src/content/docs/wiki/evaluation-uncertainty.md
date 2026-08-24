@@ -136,14 +136,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[NIST/SEMATECH e-Handbook: Bootstrap Methods](https://www.itl.nist.gov/div898/handbook/eda/section3/eda362.htm) — book
-2. <span id="reference-2"></span>[BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) — paper
-3. <span id="reference-3"></span>[ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) — paper
-4. <span id="reference-4"></span>[BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) — paper
-5. <span id="reference-5"></span>[On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) — paper
-6. <span id="reference-6"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) — book
-7. <span id="reference-7"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) — documentation
-8. <span id="reference-8"></span>[Statistical classification — Wikipedia](https://en.wikipedia.org/wiki/Statistical_classification) — encyclopedia
+1. <span id="reference-1"></span>[NIST/SEMATECH e-Handbook: Bootstrap Methods](https://www.itl.nist.gov/div898/handbook/eda/section3/eda362.htm) - book
+2. <span id="reference-2"></span>[BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/) - paper
+3. <span id="reference-3"></span>[ROUGE: A Package for Automatic Evaluation of Summaries](https://aclanthology.org/W04-1013/) - paper
+4. <span id="reference-4"></span>[BERTScore: Evaluating Text Generation with BERT](https://arxiv.org/abs/1904.09675) - paper
+5. <span id="reference-5"></span>[On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) - paper
+6. <span id="reference-6"></span>[The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) - book
+7. <span id="reference-7"></span>[MLCommons Benchmarks](https://mlcommons.org/benchmarks/) - documentation
+8. <span id="reference-8"></span>[Statistical classification - Wikipedia](https://en.wikipedia.org/wiki/Statistical_classification) - encyclopedia
 
 ### 코스에서 계속 읽기
 

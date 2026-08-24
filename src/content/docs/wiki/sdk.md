@@ -147,12 +147,12 @@ SDK 버전이 서버 기능과 어긋날 수 있어 변경 기록과 원시 HTTP
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
-2. <span id="reference-2"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
-3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
-4. <span id="reference-4"></span>[Software development kit — Wikipedia](https://en.wikipedia.org/wiki/Software_development_kit) — encyclopedia
-5. <span id="reference-5"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
-6. <span id="reference-6"></span>[Claude Python SDK](https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python) — documentation
+1. <span id="reference-1"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) - documentation
+2. <span id="reference-2"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) - standard
+3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) - standard
+4. <span id="reference-4"></span>[Software development kit - Wikipedia](https://en.wikipedia.org/wiki/Software_development_kit) - encyclopedia
+5. <span id="reference-5"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) - documentation
+6. <span id="reference-6"></span>[Claude Python SDK](https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python) - documentation
 
 ### 코스에서 계속 읽기
 

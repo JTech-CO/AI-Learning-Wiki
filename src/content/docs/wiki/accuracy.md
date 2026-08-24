@@ -125,9 +125,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) — paper
-2. <span id="reference-2"></span>[Accuracy and precision — Wikipedia](https://en.wikipedia.org/wiki/Accuracy_and_precision) — encyclopedia
-3. <span id="reference-3"></span>[Google Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — documentation
+1. <span id="reference-1"></span>[Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) - paper
+2. <span id="reference-2"></span>[Accuracy and precision - Wikipedia](https://en.wikipedia.org/wiki/Accuracy_and_precision) - encyclopedia
+3. <span id="reference-3"></span>[Google Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) - documentation
 
 ### 코스에서 계속 읽기
 

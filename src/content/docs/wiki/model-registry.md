@@ -232,9 +232,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[TFX: A TensorFlow-Based Production-Scale Machine Learning Platform](https://research.google/pubs/tfx-a-tensorflow-based-production-scale-machine-learning-platform/) — paper
-2. <span id="reference-2"></span>[MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) — documentation
-3. <span id="reference-3"></span>[MLOps — Wikipedia](https://en.wikipedia.org/wiki/MLOps) — encyclopedia
+1. <span id="reference-1"></span>[TFX: A TensorFlow-Based Production-Scale Machine Learning Platform](https://research.google/pubs/tfx-a-tensorflow-based-production-scale-machine-learning-platform/) - paper
+2. <span id="reference-2"></span>[MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) - documentation
+3. <span id="reference-3"></span>[MLOps - Wikipedia](https://en.wikipedia.org/wiki/MLOps) - encyclopedia
 
 ### 코스에서 계속 읽기
 

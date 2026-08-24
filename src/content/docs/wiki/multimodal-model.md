@@ -260,11 +260,11 @@ _해당 문서가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
-2. <span id="reference-2"></span>[Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
-3. <span id="reference-3"></span>[Multimodal chat templates — Transformers documentation](https://huggingface.co/docs/transformers/en/chat_templating_multimodal) — documentation
-4. <span id="reference-4"></span>[Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash) — documentation
-5. <span id="reference-5"></span>[Gemini API Release Notes](https://ai.google.dev/gemini-api/docs/changelog) — documentation
+1. <span id="reference-1"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) - paper
+2. <span id="reference-2"></span>[Multimodal learning - Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) - encyclopedia
+3. <span id="reference-3"></span>[Multimodal chat templates - Transformers documentation](https://huggingface.co/docs/transformers/en/chat_templating_multimodal) - documentation
+4. <span id="reference-4"></span>[Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash) - documentation
+5. <span id="reference-5"></span>[Gemini API Release Notes](https://ai.google.dev/gemini-api/docs/changelog) - documentation
 
 ### 코스에서 계속 읽기
 

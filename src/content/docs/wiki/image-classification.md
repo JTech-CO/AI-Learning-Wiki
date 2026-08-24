@@ -268,9 +268,9 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) — paper
-2. <span id="reference-2"></span>[Torchvision Models and Pre-trained Weights](https://docs.pytorch.org/vision/stable/models.html) — documentation
-3. <span id="reference-3"></span>[Image classification — Wikipedia](https://en.wikipedia.org/wiki/Image_classification) — encyclopedia
+1. <span id="reference-1"></span>[ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) - paper
+2. <span id="reference-2"></span>[Torchvision Models and Pre-trained Weights](https://docs.pytorch.org/vision/stable/models.html) - documentation
+3. <span id="reference-3"></span>[Image classification - Wikipedia](https://en.wikipedia.org/wiki/Image_classification) - encyclopedia
 
 ### 코스에서 계속 읽기
 
