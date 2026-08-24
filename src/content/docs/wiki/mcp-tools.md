@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">MCP 도구는 모델이 외부 시스템의 계산이나 상태 변경 기능을 호출하도록 서버가 이름·설명·입력 스키마와 함께 공개하는 실행 인터페이스다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -26,7 +26,7 @@ MCP 도구는 모델이 외부 시스템의 계산이나 상태 변경 기능을
 
 ‘MCP 도구(MCP Tools)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-5">[5]</a> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a></div>
 
 ### 작동 원리
 
@@ -36,7 +36,9 @@ MCP 도구는 모델이 외부 시스템의 계산이나 상태 변경 기능을
 
 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. ‘MCP 도구(MCP Tools)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+`2026-07-28`에서 `tools/list` 결과는 결정적 순서와 `ttlMs`, `cacheScope` 캐시 힌트를 제공할 수 있다. Streamable HTTP의 `tools/call` 요청은 `Mcp-Method`와 `Mcp-Name` 헤더를 사용하므로 게이트웨이가 본문을 해석하지 않고도 도구별 라우팅·계측·권한 정책을 적용할 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-5">[5]</a> <a href="#reference-9">[9]</a></div>
 
 ### 구성 요소와 처리 흐름
 
@@ -136,14 +138,15 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Model Context Protocol: Tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools) — standard
+1. <span id="reference-1"></span>[MCP 2026-07-28: Tools](https://modelcontextprotocol.io/specification/2026-07-28/server/tools) — standard
 2. <span id="reference-2"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
 3. <span id="reference-3"></span>[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — paper
 4. <span id="reference-4"></span>[Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — paper
-5. <span id="reference-5"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
+5. <span id="reference-5"></span>[Model Context Protocol Specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28) — standard
 6. <span id="reference-6"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 7. <span id="reference-7"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 8. <span id="reference-8"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+9. <span id="reference-9"></span>[The 2026-07-28 MCP Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — documentation
 
 ### 코스에서 계속 읽기
 

@@ -1691,10 +1691,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="mcp-tools"><a href="/wiki/mcp-tools/">MCP 도구</a><span class="wiki-index-summary">MCP 도구는 모델이 외부 시스템의 계산이나 상태 변경 기능을 호출하도록 서버가 이름·설명·입력 스키마와 함께 공개하는 실행 인터페이스다.</span></li>
 <li data-article-id="mcp-resources"><a href="/wiki/mcp-resources/">MCP 리소스</a><span class="wiki-index-summary">MCP 리소스는 서버가 URI로 식별해 클라이언트에 제공하는 읽기 가능한 데이터와 문맥 객체다.</span></li>
 <li data-article-id="mcp-elicitation"><a href="/wiki/mcp-elicitation/">MCP 사용자 정보 요청</a><span class="wiki-index-summary">MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 정보를 요청하는 기능이다.</span></li>
-<li data-article-id="mcp-sampling"><a href="/wiki/mcp-sampling/">MCP 샘플링</a><span class="wiki-index-summary">MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다.</span></li>
+<li data-article-id="mcp-sampling"><a href="/wiki/mcp-sampling/">MCP 샘플링</a><span class="wiki-index-summary">MCP 샘플링은 서버가 호스트의 모델 생성 능력을 요청하던 기존 클라이언트 기능이며, 2026-07-28 규격에서 폐기 절차에 들어갔다.</span></li>
 <li data-article-id="mcp-server"><a href="/wiki/mcp-server/">MCP 서버</a><span class="wiki-index-summary">MCP 서버는 표준 프로토콜을 통해 도구, 리소스와 프롬프트 같은 기능을 MCP 클라이언트에 제공하는 프로그램이다.</span></li>
 <li data-article-id="mcp-transport"><a href="/wiki/mcp-transport/">MCP 전송 계층</a><span class="wiki-index-summary">MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.</span></li>
-<li data-article-id="mcp-client"><a href="/wiki/mcp-client/">MCP 클라이언트</a><span class="wiki-index-summary">MCP 클라이언트는 MCP 호스트 안에서 특정 서버와 일대일 세션을 맺고 프로토콜 메시지를 주고받는 구성 요소다.</span></li>
+<li data-article-id="mcp-client"><a href="/wiki/mcp-client/">MCP 클라이언트</a><span class="wiki-index-summary">MCP 클라이언트는 MCP 호스트 안에서 특정 서버와 일대일 관계를 유지하며 요청별 프로토콜 메시지를 주고받는 구성 요소다.</span></li>
 <li data-article-id="mcp-prompts"><a href="/wiki/mcp-prompts/">MCP 프롬프트</a><span class="wiki-index-summary">MCP 프롬프트는 서버가 재사용 가능한 메시지 템플릿과 입력 인수로 공개하는 사용자 선택형 상호작용 구성 요소다.</span></li>
 <li data-article-id="mcp-host"><a href="/wiki/mcp-host/">MCP 호스트</a><span class="wiki-index-summary">MCP 호스트는 하나 이상의 MCP 클라이언트를 내장해 사용자 애플리케이션과 외부 MCP 서버 사이의 연결·권한·문맥을 관리하는 프로그램이다.</span></li>
 <li data-article-id="meteor-score"><a href="/wiki/meteor-score/">METEOR 점수</a><span class="wiki-index-summary">METEOR는 후보와 참조의 단어 정렬을 바탕으로 정밀도·재현율 조화평균과 어순 단절 패널티를 계산하는 생성 평가 지표다.</span></li>

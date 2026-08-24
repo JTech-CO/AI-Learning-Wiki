@@ -74,9 +74,11 @@
       "title": "운영·관측·복구",
       "sourceRefs": [
         2,
-        4
+        4,
+        6,
+        7
       ],
-      "body": "API 리전 라우팅을 변경할 때는 버전, 적용 대상, 관측 지표, 예상 영향, 롤백 조건을 하나의 변경 기록에 남긴다. 배포는 오프라인 재현, 쉐도 실행, 소규모 카나리, 단계적 확대 순으로 진행하고 각 단계에서 중단 기준을 자동 판정할 수 있게 한다.\n\n관측 화면은 성공 지표만 보여주지 않고 거부, 대체 경로, 재시도, 사람 개입, 복구 소요 시간을 함께 보여준다. 복구 절차는 담당자와 권한, 예상 소요 시간, 데이터 영향, 복구 후 검증 항목을 포함해야 한다. 주기적 후속 검토로 임시 조치가 영구 정책으로 남는 것을 방지한다."
+      "body": "API 리전 라우팅을 변경할 때는 버전, 적용 대상, 관측 지표, 예상 영향, 롤백 조건을 하나의 변경 기록에 남긴다. 배포는 오프라인 재현, 쉐도 실행, 소규모 카나리, 단계적 확대 순으로 진행하고 각 단계에서 중단 기준을 자동 판정할 수 있게 한다.\n\n관측 화면은 성공 지표만 보여주지 않고 거부, 대체 경로, 재시도, 사람 개입, 복구 소요 시간을 함께 보여준다. 복구 절차는 담당자와 권한, 예상 소요 시간, 데이터 영향, 복구 후 검증 항목을 포함해야 한다. 주기적 후속 검토로 임시 조치가 영구 정책으로 남는 것을 방지한다.\n\nOpenAI는 2026년 8월 21일부터 Global geography 프로젝트의 API 키가 지원되는 요청에 한해 `us.api.openai.com` 또는 `eu.api.openai.com` 같은 지역 접두 도메인으로 처리 위치를 요청별 선택할 수 있게 했다. 이 방식도 고객·프로젝트 자격, 데이터 보존 통제, 엔드포인트와 모델 지원 조건을 그대로 따르므로, 도메인 선택만으로 데이터 경계가 보장된다고 가정하지 말고 요청별 정책 판정과 실제 처리 리전을 함께 감사해야 한다."
     },
     {
       "id": "security-governance",
@@ -139,9 +141,19 @@
       "title": "Claude Platform Release Notes",
       "url": "https://platform.claude.com/docs/en/release-notes/overview",
       "type": "documentation"
+    },
+    {
+      "title": "OpenAI API Changelog",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "type": "documentation"
+    },
+    {
+      "title": "OpenAI API Data Controls",
+      "url": "https://developers.openai.com/api/docs/guides/your-data",
+      "type": "documentation"
     }
   ],
   "status": "reviewed",
   "volatility": "fast-changing",
-  "reviewedAt": "2026-08-09"
+  "reviewedAt": "2026-08-24"
 }

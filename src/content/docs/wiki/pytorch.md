@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">PyTorch는 동적 텐서 연산, 자동 미분, 신경망 모듈과 분산 학습 도구를 제공하는 오픈소스 머신러닝 프레임워크다.</p>
 
-<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-23</div>
+<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -26,9 +26,9 @@ PyTorch는 동적 텐서 연산, 자동 미분, 신경망 모듈과 분산 학�
 
 ‘PyTorch’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-2026년 7월 23일 기준 공식 GitHub Releases가 표시하는 최신 안정 버전은 2026년 7월 8일 공개된 PyTorch 2.13.0이다. 이 버전은 Apple Silicon용 FlexAttention, 대규모 어휘 학습의 메모리 사용을 줄이는 `nn.LinearCrossEntropyLoss`, 분산 통신용 torchcomms와 FSDP2 통신 중첩 개선 등을 포함한다.
+2026년 8월 24일 재확인 결과 공식 GitHub Releases가 표시하는 최신 안정 버전은 2026년 7월 8일 공개된 PyTorch 2.13.0이다. 이 버전은 Apple Silicon용 FlexAttention, 대규모 어휘 학습의 메모리 사용을 줄이는 `nn.LinearCrossEntropyLoss`, 분산 통신용 torchcomms와 FSDP2 통신 중첩 개선 등을 포함한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a> <a href="#reference-10">[10]</a></div>
 
 ### 작동 원리
 
@@ -45,10 +45,6 @@ PyTorch는 동적 텐서 연산, 자동 미분, 신경망 모듈과 분산 학�
 ‘PyTorch’를 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 도입 전에는 파일 출처와 해시, 적용 라이선스, 파생물 조건, 취약점과 재현 가능성을 확인한다. 모델 버전과 실행 환경을 하나의 계보로 묶어 이후 변경과 회수를 추적한다.
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. PyTorch는 동적 텐서 연산, 자동 미분, 신경망 모듈과 분산 학습 도구를 제공하는 오픈소스 머신러닝 프레임워크다.
-
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘PyTorch’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 ecosystem, 세부 영역 data-tooling, 우선순위 58라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -153,6 +149,7 @@ _포함된 코스가 없다._
 7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
 8. <span id="reference-8"></span>[PyTorch — Wikipedia](https://en.wikipedia.org/wiki/PyTorch) — encyclopedia
 9. <span id="reference-9"></span>[PyTorch 2.13.0 Release Notes](https://github.com/pytorch/pytorch/releases/tag/v2.13.0) — documentation
+10. <span id="reference-10"></span>[PyTorch Releases](https://github.com/pytorch/pytorch/releases) — documentation
 
 ### 코스에서 계속 읽기
 

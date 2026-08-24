@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -15,8 +15,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다.
 
 ‘SDK’ 개념은 API·SDK·도구 호출 영역에서 무엇을 계산하거나 통제하는지 설명하는 표제어다. 이름을 외우는 데서 멈추지 않고 입력, 변환 과정, 출력, 적용 조건을 분리해 보면 제품과 논문마다 다른 표현을 같은 원리 위에서 비교할 수 있다. API 분야는 모델과 데이터, 도구를 소프트웨어 계약으로 안전하게 연결하는 방법을 다룬다.
-
-#### 개념 모델 확장
 
 특정 플랫폼이나 API를 쉽게 사용하도록 제공하는 라이브러리·도구·문서의 묶음이다. 이 정의를 암기하는 데서 멈추지 않고 이 표제어가 전제하는 입력, 내부 표현, 변환 규칙과 관찰 가능한 출력을 각각 적는다. 상위 개념과 하위 구현을 분리하고, 정의가 성립하는 정상 사례와 성립하지 않는 반례를 한 쌍으로 구성한다. 용어가 여러 분야에서 쓰이면 공통 의미와 분야별 의미를 표로 나눠 같은 단어를 다른 계산 절차에 잘못 적용하지 않게 한다.
 
@@ -36,8 +34,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 [API](/wiki/api/) 및 [REST API](/wiki/rest-api/) 개념을 먼저 이해하면 계산 위치와 역할을 구분하기 쉽다. 이 선행 관계를 기준으로 어느 단계에서 값이 만들어지고 다음 구성 요소로 어떻게 전달되는지 추적하면, 비슷한 용어를 기능 이름만으로 혼동하는 일을 줄일 수 있다.
 
-#### 심층 검토 — SDK
-
 이 표제어를 API 관점에서 검토할 때는 메시지 의미와 전송 방식, 애플리케이션 계약을 구분한다. 요청과 응답의 필드 이름만 맞아도 상태 코드, 헤더, 본문 인코딩과 재시도 규칙이 다르면 상호 운용성이 깨질 수 있다. 정상 사례와 함께 누락값, 중복 요청, 시간 초과, 부분 실패와 버전 불일치 사례를 계약 시험으로 고정한다. 이 설명을 기존 정의와 연결해 입력, 처리, 출력, 평가와 실패 조건을 다시 확인한다. 출처마다 표제어의 범위가 다를 수 있으므로 공통된 정의와 구현별 차이를 구분하고, 수치·버전·정책처럼 변할 수 있는 내용은 기준 날짜와 원문 위치를 남긴다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a></div>
@@ -47,8 +43,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 실제 시스템에서는 ‘SDK’ 개념만 독립적으로 동작하지 않는다. [REST API](/wiki/rest-api/), [HTTP 요청](/wiki/http-request/), [JSON](/wiki/json/) 문서와 이어서 보면 데이터 준비, 모델 계산, 출력 제어, 운영 검증 중 어느 위치에 놓이는지 확인할 수 있다.
 
 처리 흐름을 문서화할 때는 입력 형식, 파라미터와 기본값, 실패 조건, 출력 스키마, 관측 가능한 지표를 함께 적는다. 이렇게 해야 같은 이름을 쓰는 서로 다른 라이브러리와 서비스의 동작 차이를 재현 가능한 방식으로 비교할 수 있다.
-
-#### 구현·측정 설계
 
 SDK의 구현을 비교할 때는 입력 스키마와 자료형, 중간 산출물, 기본값, 오류 처리, 버전과 실행 환경을 고정한다. 결과 품질은 하나의 평균값으로 끝내지 않고 하위 집단과 경계 사례, 지연시간, 메모리와 비용을 함께 기록한다. 작은 기준 사례를 손으로 계산하거나 독립 구현과 대조해 인터페이스가 맞지만 의미가 다른 오류를 찾는다. 구성 변경 전후에는 같은 데이터와 평가 코드를 사용하고 차이가 생긴 최초 단계를 추적한다.
 
@@ -70,11 +64,11 @@ SDK 버전이 서버 기능과 어긋날 수 있어 변경 기록과 원시 HTTP
 
 인증·버전·오류·호출 제한·비밀 관리가 빠진 예제 코드를 운영 환경에 그대로 쓰지 않는다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.
 
-#### 반례·경계 사례
-
 이 표제어가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판단할 수 없다. 데이터가 부족하거나 분포가 달라지는 경우, 값의 단위와 차원이 맞지 않는 경우, 권한·네트워크·자원이 제한되는 경우와 의도적으로 조작된 입력을 별도 시험한다. 실패가 탐지되지 않은 채 정상 출력처럼 보이는 경우를 우선 찾아 경고 지표와 중단선을 정한다. 알려진 한계를 우회하는 임시 조치와 근본적인 개선을 구분하고 잔여 위험의 책임자를 명시한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+2026년 8월 20일 Anthropic Python SDK 1.0은 Python 3.10 이상과 `httpx2` 전송 계층을 요구하고, 레거시 Text Completions와 Python SDK v1의 Messages 메서드 표면에서 sampling 매개변수를 제거했다. 비동기 원시 응답은 `await response.parse()`로 파싱하며 Bedrock 리전 누락은 오류가 된다. SDK 주 버전 업그레이드는 HTTP 클라이언트만 교체하는 작업이 아니므로 제거된 메서드·매개변수, 비동기 파싱과 환경 기본값을 계약 테스트해야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-5">[5]</a> <a href="#reference-6">[6]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -102,13 +96,9 @@ SDK 버전이 서버 기능과 어긋날 수 있어 변경 기록과 원시 HTTP
 6. **판단 근거 보존:** 성공 사례만 남기지 말고 실패 입력과 원인 가설, 수정 전후 수치를 함께 저장한다. 그래야 담당자가 바뀌거나 모델이 교체되어도 ‘SDK’에 대한 선택을 다시 검증할 수 있다.
 7. **재검토 조건 지정:** 데이터 분포, 모델 버전, 비용 구조 또는 정책이 바뀌면 이전 결론을 그대로 재사용하지 않고 같은 기준으로 다시 평가한다.
 
-#### 출처·재현 점검
-
 - SDK의 정의를 외부 백과와 대조하되 핵심 작동 주장은 논문·표준·공식 문서에서 확인한다.
 - 데이터, 모델, 코드와 도구 버전을 고정하고 정상·경계·실패 사례를 같은 조건에서 반복한다.
 - 알려진 한계와 잔여 위험, 사람이 검토해야 하는 조건, 다음 검토 날짜를 기록한다.
-
-#### 검증 기록 설계
 
 1. 이 표제어를 선택한 이유와 제외한 대안을 같은 평가 기준으로 적는다.
 2. 데이터 기준 시점, 표본 구성, 전처리와 접근 권한을 고정한다.
@@ -161,6 +151,8 @@ SDK 버전이 서버 기능과 어긋날 수 있어 변경 기록과 원시 HTTP
 2. <span id="reference-2"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 3. <span id="reference-3"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
 4. <span id="reference-4"></span>[Software development kit — Wikipedia](https://en.wikipedia.org/wiki/Software_development_kit) — encyclopedia
+5. <span id="reference-5"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
+6. <span id="reference-6"></span>[Claude Python SDK](https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python) — documentation
 
 ### 코스에서 계속 읽기
 

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">API 감사 로그는 누가 언제 어떤 API 자원에 어떤 작업을 요청했고 결과가 무엇이었는지를 보안·책임 추적 목적으로 기록한 사건 원장이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -54,7 +54,9 @@ API 감사 로그는 누가 언제 어떤 API 자원에 어떤 작업을 요청�
 
 정상 응답뿐 아니라 빈 값, 잘못된 인코딩, 큰 본문, 중복 요청, 시간 초과, 권한 없음과 부분 실패를 계약 테스트에 포함한다. 로그에는 비밀 값 대신 상관관계 식별자를 남긴다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+Anthropic은 2026년 8월 11일 Compliance API에서 로컬 Cowork·Claude Code 세션의 전사와 메타데이터 조회를 베타로 제공하고, API 응답에 `anthropic-workspace-id` 헤더를 추가했다. 준수 수집 범위와 `read:compliance_user_data` 권한을 명시하고, 워크스페이스 ID를 요청·비용·감사 이벤트의 귀속 검증에 사용하되 전사 보유·접근·삭제 정책은 별도 통제로 관리한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -144,6 +146,8 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
 7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 8. <span id="reference-8"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+9. <span id="reference-9"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
+10. <span id="reference-10"></span>[Claude Compliance API](https://platform.claude.com/docs/en/manage-claude/compliance-api) — documentation
 
 ### 코스에서 계속 읽기
 

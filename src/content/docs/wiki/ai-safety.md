@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하고 오용, 사고와 예측하지 못한 피해를 줄이기 위한 연구와 실무 영역이다.</p>
 
-<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
+<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -18,7 +18,9 @@ AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하�
 
 ‘AI 안전(AI Safety)’라는 표제는 한국어 설명과 국제적으로 통용되는 영문 용어를 함께 제공한다. 핵심은 번역된 이름이 아니라 이 개념이 무엇을 입력으로 받아 어떤 변환을 거쳐 어떤 결과를 내며, 결과가 유효하다고 판단할 조건이 무엇인지 이해하는 데 있다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+2026년 8월 Gemini 3.7 Flash 모델 카드는 텍스트·다국어·이미지에서 텍스트로 이어지는 안전 자동 평가, 전문가 레드팀, CBRN·사이버·조작·ML 연구개발 임곗값 평가를 서로 구분한다. 공급자가 평가 질의를 갱신했다고 밝혔으므로 모델 카드 사이의 수치를 그대로 시계열 비교하지 않고 평가셋 버전, 자동·수동 평가 범위와 판단 기준을 함께 기록해야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-8">[8]</a></div>
 
 ### 배경과 설명 범위
 
@@ -44,10 +46,6 @@ AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하�
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하고 오용, 사고와 예측하지 못한 피해를 줄이기 위한 연구와 실무 영역이다.
 
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘AI 안전’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 safety, 세부 영역 alignment-misuse, 우선순위 21라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
-
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
 ## 활용과 검증
@@ -57,10 +55,6 @@ AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하�
 ‘AI 안전(AI Safety)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 문서 검색형 에이전트에서 악성 문서 유입, 내부 지침 요구, 긴 요청과 외부 도구 호출을 각각 시험하고 권한 차단과 감사 기록을 확인한다.
 
 정상 사용자와 악성 사용자의 현실적인 시나리오, 권한이 다른 계정과 자원 고갈 조건을 시험한다. 방어 성공률뿐 아니라 오탐, 우회와 업무 품질 저하를 측정한다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다.
-
-#### 활용 분야와 선택 기준 심화 점검 2
-
-‘AI 안전’의 활용 분야와 선택 기준를 검토하는 2번째 기록에서는 분야 safety, 세부 영역 alignment-misuse, 우선순위 21라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -181,6 +175,7 @@ AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하�
 5. <span id="reference-5"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
 6. <span id="reference-6"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
 7. <span id="reference-7"></span>[AI 안전 — 한국어 위키백과](https://ko.wikipedia.org/wiki/AI_%EC%95%88%EC%A0%84) — encyclopedia
+8. <span id="reference-8"></span>[Gemini 3.7 Flash Model Card](https://deepmind.google/models/model-cards/gemini-3-7-flash/) — documentation
 
 ### 코스에서 계속 읽기
 

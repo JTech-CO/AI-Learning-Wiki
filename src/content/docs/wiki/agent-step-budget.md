@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">에이전트 단계 예산은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-16</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -66,7 +66,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 진단은 최종 출력에서 역순으로 진행한다. 결과 검증, 실행 기록, 정책 선택, 입력 정규화 순으로 경계를 확인하면 변수를 빠르게 줄일 수 있다. 재현이 어려운 경우에는 실제 민감 데이터를 제거한 최소 재현 입력과 정책 버전을 함께 보존한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-4">[4]</a></div>
+세션 비용 상한만으로 안전한 종료가 보장되지는 않는다. 한 번의 고위험 도구 호출은 예산 안에서도 큰 부작용을 만들 수 있으므로 권한·승인 게이트와 별도로 통제한다. `budget_reached`를 오류나 성공으로 뭉개지 않고 독립 종료 사유로 기록한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-4">[4]</a> <a href="#reference-5">[5]</a></div>
 
 ### 운영·관측·복구
 
@@ -99,7 +101,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 실제 배포 후에는 체크리스트의 통과 여부보다 각 항목에서 발생한 예외와 사람 개입을 기록해 다음 버전의 정책을 개선한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+Anthropic은 2026년 8월 7일 Claude Managed Agents에 세션 예산의 하드 캡과 `budget_reached` 종료 상태를 추가했다. 이는 단계 예산을 런타임 중단 조건으로 구현한 사례다. 공급자 기능을 사용하더라도 토큰·비용·도구 호출·경과 시간 예산을 분리하고, 중단 뒤 부분 결과·부작용·재개 가능성을 애플리케이션이 명시해야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-5">[5]</a></div>
 
 ## 문서 관계
 
@@ -133,6 +137,7 @@ _포함된 코스가 없다._
 2. <span id="reference-2"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
 3. <span id="reference-3"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 4. <span id="reference-4"></span>[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — paper
+5. <span id="reference-5"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
 
 ### 코스에서 계속 읽기
 

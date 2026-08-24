@@ -1,20 +1,20 @@
 ---
 title: "MCP 샘플링 MCP Sampling"
-description: "MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다."
+description: "MCP 샘플링은 서버가 호스트의 모델 생성 능력을 요청하던 기존 클라이언트 기능이며, 2026-07-28 규격에서 폐기 절차에 들어갔다."
 tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ---
 
-<p class="wiki-lead">MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다.</p>
+<p class="wiki-lead">MCP 샘플링은 서버가 호스트의 모델 생성 능력을 요청하던 기존 클라이언트 기능이며, 2026-07-28 규격에서 폐기 절차에 들어갔다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
 ### 개요와 핵심 정의
 
-MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다.
+MCP 샘플링은 서버가 호스트의 모델 생성 능력을 요청하던 기존 클라이언트 기능이며, 2026-07-28 규격에서 폐기 절차에 들어갔다.
 
-서버가 메시지·모델 선호·토큰 한도를 포함한 생성 요청을 클라이언트에 보내면 호스트가 사용자 승인과 정책을 적용해 모델을 호출하고 결과를 서버에 반환한다. 에이전트 구조를 설명할 때는 언어 모델의 추론 능력과 실행 시스템의 권한을 분리한다. 모델이 제안한 행동, 런타임이 허용한 행동, 외부 시스템에서 실제로 발생한 상태 변화는 서로 다른 기록이다.
+이전 규격에서는 서버가 `sampling/createMessage`로 메시지·모델 선호·토큰 한도를 보냈지만, 새 구현은 이 서버 시작 요청을 채택하지 않고 다중 왕복 요청(MRTR)이나 명시적 확장으로 마이그레이션해야 한다. 에이전트 구조를 설명할 때는 언어 모델의 추론 능력과 실행 시스템의 권한을 분리한다. 모델이 제안한 행동, 런타임이 허용한 행동, 외부 시스템에서 실제로 발생한 상태 변화는 서로 다른 기록이다.
 
 ‘MCP 샘플링(MCP Sampling)’라는 표제는 한국어 설명과 국제적으로 통용되는 영문 용어를 함께 제공한다. 핵심은 번역된 이름이 아니라 이 개념이 무엇을 입력으로 받아 어떤 변환을 거쳐 어떤 결과를 내며, 결과가 유효하다고 판단할 조건이 무엇인지 이해하는 데 있다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다.
 
@@ -26,27 +26,25 @@ MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩
 
 ‘MCP 샘플링(MCP Sampling)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+`2026-07-28` 정식 규격은 Sampling을 폐기 대상으로 지정했으며 최소 12개월의 호환 기간을 둔다. 기존 구현은 즉시 중단되는 것이 아니지만 새 구현에서는 채택하지 않고, 모델 입력이 필요한 작업을 `InputRequiredResult`와 `inputResponses` 기반 MRTR 또는 명시적으로 협상한 확장으로 옮긴다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-5">[5]</a> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a></div>
 
 ### 작동 원리
 
-서버가 메시지·모델 선호·토큰 한도를 포함한 생성 요청을 클라이언트에 보내면 호스트가 사용자 승인과 정책을 적용해 모델을 호출하고 결과를 서버에 반환한다.
+이전 규격에서는 서버가 `sampling/createMessage`로 메시지·모델 선호·토큰 한도를 보냈지만, 새 구현은 이 서버 시작 요청을 채택하지 않고 다중 왕복 요청(MRTR)이나 명시적 확장으로 마이그레이션해야 한다.
 
 실행 경로는 입력 수신, 상태 구성, 선택, 도구 실행, 결과 관찰과 종료 판단으로 나눈다. 각 단계에 식별자와 시간·비용 예산을 붙이면 무한 반복과 중복 부작용을 탐지할 수 있다. ‘MCP 샘플링(MCP Sampling)’의 작동을 추적할 때는 입력 원본, 변환된 중간 상태, 선택된 설정과 최종 산출물을 순서대로 남긴다. 각 단계에 정상 범위와 오류 상태를 붙이면 결과가 나빠졌을 때 어느 경계가 먼저 무너졌는지 분리할 수 있다.
 
 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. ‘MCP 샘플링(MCP Sampling)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-5">[5]</a> <a href="#reference-9">[9]</a></div>
 
 ### 구성 요소와 처리 흐름
 
 ‘MCP 샘플링(MCP Sampling)’을 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 실행 경로는 입력 수신, 상태 구성, 선택, 도구 실행, 결과 관찰과 종료 판단으로 나눈다. 각 단계에 식별자와 시간·비용 예산을 붙이면 무한 반복과 중복 부작용을 탐지할 수 있다.
 
-구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다.
-
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘MCP 샘플링’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 agents, 세부 영역 protocols-mcp, 우선순위 88라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
+구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. MCP 샘플링은 서버가 호스트의 모델 생성 능력을 요청하던 기존 클라이언트 기능이며, 2026-07-28 규격에서 폐기 절차에 들어갔다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -72,7 +70,7 @@ MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩
 
 ### 관련 개념과의 구분
 
-‘MCP 샘플링(MCP Sampling)’은 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다.
+‘MCP 샘플링(MCP Sampling)’은 같은 분야의 용어와 입력, 출력, 목적, 갱신 시점과 실패 비용을 기준으로 구분한다. MCP 샘플링은 서버가 호스트의 모델 생성 능력을 요청하던 기존 클라이언트 기능이며, 2026-07-28 규격에서 폐기 절차에 들어갔다.
 
 - [ai-agent](/wiki/ai-agent/): 이 분야를 이해하기 위한 상위 또는 선행 개념이다.
 - [agent-loop](/wiki/agent-loop/): 구현 흐름에서 함께 사용되는 인접 개념이다.
@@ -87,7 +85,7 @@ MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩
 
 고객 문의 처리 업무를 예로 들면 요청 분류, 자료 조회, 답안 작성과 발송 승인을 서로 다른 단계로 나누고 각 단계의 입력과 결과를 보존한다.
 
-이 사례에 ‘MCP 샘플링(MCP Sampling)’을 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 서버가 메시지·모델 선호·토큰 한도를 포함한 생성 요청을 클라이언트에 보내면 호스트가 사용자 승인과 정책을 적용해 모델을 호출하고 결과를 서버에 반환한다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
+이 사례에 ‘MCP 샘플링(MCP Sampling)’을 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 이전 규격에서는 서버가 `sampling/createMessage`로 메시지·모델 선호·토큰 한도를 보냈지만, 새 구현은 이 서버 시작 요청을 채택하지 않고 다중 왕복 요청(MRTR)이나 명시적 확장으로 마이그레이션해야 한다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
 
 결과 표에는 개선된 항목뿐 아니라 비용과 지연, 사람이 개입한 횟수, 실패 복구 시간과 남은 불확실성을 포함한다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. 이 예시는 원리를 설명하기 위한 검증 틀이며 특정 제품이나 라이브러리의 성능을 보장하지 않는다.
 
@@ -104,7 +102,7 @@ MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩
 7. **위험 통제:** 외부 쓰기, 결제, 메시지 전송처럼 되돌리기 어려운 행동은 사람 승인이나 별도 정책 엔진을 거친다. 프롬프트상의 금지 문구만으로 권한 통제를 대신하지 않는다.
 8. **재현과 재검토:** 버전, 설정, 날짜, 알려진 한계와 다음 검토 조건을 남긴다.
 
-평가는 최종 답만이 아니라 계획의 적합성, 불필요한 도구 호출, 실패 복구, 권한 위반과 중단 가능성을 함께 본다. 재현 가능한 작업 묶음과 실제 실패 사례를 사용해야 한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. MCP 샘플링은 서버가 호스트의 모델 호출 능력을 요청해 중첩된 언어 모델 생성을 수행하는 기능이다. 서버가 메시지·모델 선호·토큰 한도를 포함한 생성 요청을 클라이언트에 보내면 호스트가 사용자 승인과 정책을 적용해 모델을 호출하고 결과를 서버에 반환한다.
+평가는 최종 답만이 아니라 계획의 적합성, 불필요한 도구 호출, 실패 복구, 권한 위반과 중단 가능성을 함께 본다. 재현 가능한 작업 묶음과 실제 실패 사례를 사용해야 한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. MCP 샘플링은 서버가 호스트의 모델 생성 능력을 요청하던 기존 클라이언트 기능이며, 2026-07-28 규격에서 폐기 절차에 들어갔다. 이전 규격에서는 서버가 `sampling/createMessage`로 메시지·모델 선호·토큰 한도를 보냈지만, 새 구현은 이 서버 시작 요청을 채택하지 않고 다중 왕복 요청(MRTR)이나 명시적 확장으로 마이그레이션해야 한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -140,14 +138,15 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Model Context Protocol: Sampling](https://modelcontextprotocol.io/specification/2025-06-18/client/sampling) — standard
+1. <span id="reference-1"></span>[MCP 2026-07-28: Sampling](https://modelcontextprotocol.io/specification/2026-07-28/client/sampling) — standard
 2. <span id="reference-2"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
 3. <span id="reference-3"></span>[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — paper
 4. <span id="reference-4"></span>[Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — paper
-5. <span id="reference-5"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
+5. <span id="reference-5"></span>[Model Context Protocol Specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28) — standard
 6. <span id="reference-6"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 7. <span id="reference-7"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 8. <span id="reference-8"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+9. <span id="reference-9"></span>[The 2026-07-28 MCP Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — documentation
 
 ### 코스에서 계속 읽기
 

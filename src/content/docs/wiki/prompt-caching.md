@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">프롬프트 캐싱은 반복되는 프롬프트 접두사의 모델 계산 결과나 완성 결과를 저장해 후속 요청에서 재사용하는 기법이다.</p>
 
-<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -44,10 +44,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 프롬프트 캐싱은 반복되는 프롬프트 접두사의 모델 계산 결과나 완성 결과를 저장해 후속 요청에서 재사용하는 기법이다.
 
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘프롬프트 캐싱’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 llm, 세부 영역 context-memory, 우선순위 76라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
-
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
 ## 활용과 검증
@@ -58,11 +54,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 퍼플렉서티와 하위 과제 성능, 긴 문맥, 여러 언어와 코드, 안전성을 분리해 평가한다. 데이터 중복과 프롬프트 형식이 점수에 미치는 영향도 기록한다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다.
 
-#### 활용 분야와 선택 기준 심화 점검 2
+OpenAI가 2026년 8월 20일 공개한 Prompt Caching 대시보드는 캐시 적중률, 캐시 읽기·쓰기, 캐시 읽기·쓰기·미캐시 토큰의 분해를 보여 주고 모델과 서비스 티어별 필터를 제공한다. 대시보드의 적중률만 보지 말고 캐시 쓰기 대비 재사용 횟수, 만료·무효화 원인, 지연시간과 실제 할인 비용을 같은 기간에 대조해야 한다.
 
-‘프롬프트 캐싱’의 활용 분야와 선택 기준를 검토하는 2번째 기록에서는 분야 llm, 세부 영역 context-memory, 우선순위 76라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
-
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -152,6 +146,8 @@ _해당 문서가 없다._
 6. <span id="reference-6"></span>[Transformers Documentation](https://huggingface.co/docs/transformers/index) — documentation
 7. <span id="reference-7"></span>[Tokenizers Documentation](https://huggingface.co/docs/tokenizers/index) — documentation
 8. <span id="reference-8"></span>[Large language model — Wikipedia](https://en.wikipedia.org/wiki/Large_language_model) — encyclopedia
+9. <span id="reference-9"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) — documentation
+10. <span id="reference-10"></span>[OpenAI Prompt Caching](https://developers.openai.com/api/docs/guides/prompt-caching) — documentation
 
 ### 코스에서 계속 읽기
 

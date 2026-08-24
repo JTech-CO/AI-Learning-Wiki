@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">딥페이크 탐지는 합성·변조된 얼굴·음성·영상과 실제 기록을 구분하고 조작 근거를 찾는 분석 과제다.</p>
 
-<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -26,7 +26,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ‘딥페이크 탐지(Deepfake Detection)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+기술적 딥페이크 탐지와 법적 공개 의무는 별개다. EU AI Act Article 50은 적용 대상 딥페이크를 배포하는 자에게 콘텐츠가 인위적으로 생성·조작됐음을 명확히 공개하도록 요구하며 2026년 8월 2일부터 적용된다. 탐지기가 낮은 확률을 냈다는 이유만으로 공개 의무가 사라지는 것은 아니다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a> <a href="#reference-11">[11]</a></div>
 
 ### 작동 원리
 
@@ -36,17 +38,15 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. ‘딥페이크 탐지(Deepfake Detection)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+운영 절차는 출처 메타데이터와 서명 검증, 워터마크 탐지, 시청각 포렌식 모델, 생성·편집 기록과 사람 검토를 결합한다. 결과에는 탐지 점수뿐 아니라 사용 모델·임곗값·지원 매체·변환 이력·불확실성을 남기고, 별도 단계에서 Article 50의 공개 대상과 예외를 판정한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 구성 요소와 처리 흐름
 
 ‘딥페이크 탐지(Deepfake Detection)’를 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 픽셀을 패치나 특징 지도로 변환하고 필요한 경우 텍스트 표현과 같은 공간에 정렬한다. 지역 특징과 전역 문맥을 결합해 분류, 위치 예측 또는 생성에 전달한다.
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. 딥페이크 탐지는 합성·변조된 얼굴·음성·영상과 실제 기록을 구분하고 조작 근거를 찾는 분석 과제다.
-
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘딥페이크 탐지’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 multimodal, 세부 영역 evaluation-safety, 우선순위 99라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -58,10 +58,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 해상도, 객체 크기, 가림, 촬영 조건과 텍스트 표현을 바꾼 시험을 포함한다. 전체 점수와 함께 영역별 위치 정확도, 검색 순위와 언어별 성능을 본다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다.
 
-#### 활용 분야와 선택 기준 심화 점검 2
-
-‘딥페이크 탐지’의 활용 분야와 선택 기준를 검토하는 2번째 기록에서는 분야 multimodal, 세부 영역 evaluation-safety, 우선순위 99라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
-
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
 ### 한계와 흔한 오해
@@ -72,7 +68,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. ‘딥페이크 탐지(Deepfake Detection)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -152,6 +148,9 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[Torchvision Models and Pre-trained Weights](https://pytorch.org/vision/stable/models.html) — documentation
 7. <span id="reference-7"></span>[Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
 8. <span id="reference-8"></span>[Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
+9. <span id="reference-9"></span>[Regulation (EU) 2024/1689: Artificial Intelligence Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — standard
+10. <span id="reference-10"></span>[European Commission Guidelines on Article 50 Transparency Obligations](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems) — documentation
+11. <span id="reference-11"></span>[Code of Practice on Transparency of AI-generated Content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) — documentation
 
 ### 코스에서 계속 읽기
 

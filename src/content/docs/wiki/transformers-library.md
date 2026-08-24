@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">Transformers 라이브러리는 사전학습된 트랜스포머 모델, 토크나이저, 설정과 학습·추론 유틸리티를 공통 API로 제공한다.</p>
 
-<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
+<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -26,7 +26,9 @@ Transformers 라이브러리는 사전학습된 트랜스포머 모델, 토크�
 
 ‘Transformers 라이브러리(Transformers Library)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+2026년 8월 24일 기준 공식 GitHub Releases의 최신 안정 버전은 8월 19일 공개된 Transformers 5.15.1이다. 5.15.0에서는 선형 어텐션 계열 커널을 명시적으로 활성화하도록 바꾸고, 캐시 자르기 API가 음수 상대 오프셋만 받도록 제한했으며, T5 계열에 SDPA 등 여러 어텐션 백엔드를 추가했다. 5.15.1은 DFlash·MTP 후보 생성기의 장치·설정 문제와 CUDA 환경의 Lanczos 이미지 처리 문제를 수정했다. 비공개 보조 API와 기본 어텐션 구현에 의존하지 말고 버전을 고정한 뒤 회귀 시험을 수행한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 작동 원리
 
@@ -144,6 +146,8 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
 7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
 8. <span id="reference-8"></span>[MLOps — Wikipedia](https://en.wikipedia.org/wiki/MLOps) — encyclopedia
+9. <span id="reference-9"></span>[Transformers 5.15.0 Release](https://github.com/huggingface/transformers/releases/tag/v5.15.0) — documentation
+10. <span id="reference-10"></span>[Transformers 5.15.1 Release](https://github.com/huggingface/transformers/releases/tag/v5.15.1) — documentation
 
 ### 코스에서 계속 읽기
 

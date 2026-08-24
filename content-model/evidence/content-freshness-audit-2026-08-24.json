@@ -1,0 +1,91 @@
+{
+  "version": "2026-08-24",
+  "reviewedAt": "2026-08-24",
+  "reviewWindow": {
+    "from": "2026-08-01",
+    "to": "2026-08-24"
+  },
+  "policy": {
+    "primarySourcesOnlyForMutableClaims": true,
+    "materialChangesOnly": true,
+    "previewFeaturesMustBeLabeled": true,
+    "priceClaimsRequireEffectivePeriod": true,
+    "historicalAuditFilesRemainImmutable": true
+  },
+  "totals": {
+    "updatedArticles": 18,
+    "verifiedUnchangedArticles": 13
+  },
+  "updatedArticleIds": [
+    "ai-compliance-monitoring",
+    "ai-safety",
+    "api-audit-log",
+    "api-cost-tracking",
+    "api-deprecation",
+    "api-region-routing",
+    "browser-use-agent",
+    "computer-use-agent",
+    "file-upload-api",
+    "image-generation-api",
+    "model-deprecation-migration",
+    "model-version",
+    "multimodal-model",
+    "multimodal-safety-evaluation",
+    "prompt-caching",
+    "pytorch",
+    "sdk",
+    "transformers-library"
+  ],
+  "verifiedUnchangedArticleIds": [
+    "managed-inference-platform",
+    "mcp",
+    "mcp-client",
+    "mcp-elicitation",
+    "mcp-host",
+    "mcp-prompts",
+    "mcp-resources",
+    "mcp-sampling",
+    "mcp-server",
+    "mcp-tools",
+    "mcp-transport",
+    "realtime-api",
+    "usage-metering"
+  ],
+  "excludedFromPublishedClaims": [
+    {
+      "item": "GPT-5.6 Sol Ultrafast mode",
+      "reason": "제한된 고객 대상 미리 보기이며 장문맥 기능과 직접 연결되지 않아 기존 장문맥 문서에 포함하지 않았다."
+    },
+    {
+      "item": "PyTorch 2.14 release branch",
+      "reason": "릴리스 브랜치만 존재하고 2026-08-24 기준 정식 안정 버전이 아니므로 2.13.0을 유지했다."
+    },
+    {
+      "item": "NIST SP 1353",
+      "reason": "Initial Public Draft 단계라 확정 표준이나 지침으로 서술하지 않았다."
+    }
+  ],
+  "primarySources": [
+    "https://ai.google.dev/gemini-api/docs/changelog",
+    "https://ai.google.dev/gemini-api/docs/generate-content/latest-model",
+    "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+    "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+    "https://developers.openai.com/api/docs/changelog",
+    "https://developers.openai.com/api/docs/deprecations",
+    "https://developers.openai.com/api/docs/guides/image-generation",
+    "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+    "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "https://developers.openai.com/api/docs/guides/your-data",
+    "https://developers.openai.com/api/docs/models",
+    "https://github.com/huggingface/transformers/releases/tag/v5.15.0",
+    "https://github.com/huggingface/transformers/releases/tag/v5.15.1",
+    "https://github.com/pytorch/pytorch/releases",
+    "https://platform.claude.com/docs/en/about-claude/pricing",
+    "https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-tool",
+    "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+    "https://platform.claude.com/docs/en/build-with-claude/files",
+    "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python",
+    "https://platform.claude.com/docs/en/manage-claude/compliance-api",
+    "https://platform.claude.com/docs/en/release-notes/overview"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "version": "W2-2026-07-13",
-  "checkedAt": "2026-08-13T08:50:05.441Z",
+  "checkedAt": "2026-08-24T04:30:05.356Z",
   "policy": {
     "metadataOnly": true,
     "storedProse": false,
@@ -8,10 +8,10 @@
     "incrementalChecks": true
   },
   "totals": {
-    "uniqueUrls": 1059,
-    "articleUrls": 1059,
+    "uniqueUrls": 1077,
+    "articleUrls": 1077,
     "anchorUrls": 29,
-    "reachable": 1057,
+    "reachable": 1075,
     "restricted": 2,
     "unavailable": 0
   },
@@ -356,6 +356,55 @@
       "articleIds": [
         "edge-model-deployment",
         "mobile-model-deployment"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Thu, 13 Aug 2026 17:03:07 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "api-cost-tracking",
+        "model-version",
+        "multimodal-model"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/generate-content/latest-model",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs/generate-content/latest-model",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Fri, 21 Aug 2026 04:54:14 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "model-deprecation-migration"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "finalUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": "Thu, 13 Aug 2026 17:03:07 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "model-deprecation-migration",
+        "model-version",
+        "multimodal-model"
       ],
       "anchorIds": []
     },
@@ -9604,6 +9653,22 @@
       "anchorIds": []
     },
     {
+      "url": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "finalUrl": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html",
+      "etag": "\"MMJ6vA\"",
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "ai-safety",
+        "multimodal-safety-evaluation"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
       "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
       "status": 200,
@@ -9954,9 +10019,87 @@
       "error": null,
       "articleIds": [
         "api-cost-tracking",
+        "api-region-routing",
         "context-window",
+        "image-generation-api",
         "long-context-routing",
+        "prompt-caching",
         "usage-metering"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "finalUrl": "https://developers.openai.com/api/docs/deprecations",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"1a3d5a630d6aaf0f82de3927e68e3178\"",
+      "lastModified": "Mon, 24 Aug 2026 00:43:03 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "api-deprecation"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/image-generation",
+      "finalUrl": "https://developers.openai.com/api/docs/guides/image-generation",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"62031938f8920dd04e8c6d5d16e3a673\"",
+      "lastModified": "Mon, 24 Aug 2026 00:38:38 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "image-generation-api"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+      "finalUrl": "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"c5b1efa5d6461a6e880a8ba3d3d2911e\"",
+      "lastModified": "Mon, 24 Aug 2026 01:04:16 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "api-deprecation"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/prompt-caching",
+      "finalUrl": "https://developers.openai.com/api/docs/guides/prompt-caching",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"cdcfc8a66cc6ca32526ecfa2f3ec8746\"",
+      "lastModified": "Mon, 24 Aug 2026 00:51:59 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "prompt-caching"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/your-data",
+      "finalUrl": "https://developers.openai.com/api/docs/guides/your-data",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"ce0d1151e68805d277917364b6541ab3\"",
+      "lastModified": "Mon, 24 Aug 2026 00:42:30 GMT",
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "api-region-routing"
       ],
       "anchorIds": []
     },
@@ -17627,6 +17770,36 @@
       "anchorIds": []
     },
     {
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.15.0",
+      "finalUrl": "https://github.com/huggingface/transformers/releases/tag/v5.15.0",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"6d7f0efbd57ee905bfd0c2d3cb2732b4\"",
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "transformers-library"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.15.1",
+      "finalUrl": "https://github.com/huggingface/transformers/releases/tag/v5.15.1",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"384246b08f4312a8ca1221c82076f199\"",
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "transformers-library"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://github.com/microsoft/api-guidelines",
       "finalUrl": "https://github.com/microsoft/api-guidelines",
       "status": 200,
@@ -17670,6 +17843,21 @@
         "artifact-registry",
         "model-repository",
         "package-registry"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://github.com/pytorch/pytorch/releases",
+      "finalUrl": "https://github.com/pytorch/pytorch/releases",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": "W/\"ec926a82fd8e0d0a510bdb1b537a56ff\"",
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "pytorch"
       ],
       "anchorIds": []
     },
@@ -21917,6 +22105,97 @@
       "anchorIds": []
     },
     {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "finalUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "api-cost-tracking"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-tool",
+      "finalUrl": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-tool",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "browser-use-agent"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+      "finalUrl": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "computer-use-agent"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+      "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/files",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "file-upload-api"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python",
+      "finalUrl": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "sdk"
+      ],
+      "anchorIds": []
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/manage-claude/compliance-api",
+      "finalUrl": "https://platform.claude.com/docs/en/manage-claude/compliance-api",
+      "status": 200,
+      "state": "reachable",
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "checkedAt": "2026-08-24T04:30:05.356Z",
+      "error": null,
+      "articleIds": [
+        "ai-compliance-monitoring",
+        "api-audit-log"
+      ],
+      "anchorIds": []
+    },
+    {
       "url": "https://platform.claude.com/docs/en/release-notes/overview",
       "finalUrl": "https://platform.claude.com/docs/en/release-notes/overview",
       "status": 200,
@@ -21929,8 +22208,15 @@
       "articleIds": [
         "agent-delegation",
         "agent-step-budget",
+        "ai-compliance-monitoring",
+        "api-audit-log",
+        "api-deprecation",
         "api-region-routing",
-        "managed-inference-platform"
+        "browser-use-agent",
+        "computer-use-agent",
+        "file-upload-api",
+        "managed-inference-platform",
+        "sdk"
       ],
       "anchorIds": []
     },

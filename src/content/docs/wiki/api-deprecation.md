@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">API 지원 종료는 기존 기능을 즉시 제거하지 않고 사용 중단 예정과 대체 경로, 종료 시점을 공지하는 수명주기 단계다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -50,11 +50,11 @@ API 지원 종료는 기존 기능을 즉시 제거하지 않고 사용 중단 �
 
 ### 활용 분야와 선택 기준
 
-‘API 지원 종료(API Deprecation)’의 활용 여부는 유행이나 모델 크기가 아니라 해결하려는 문제와 평가 가능한 개선으로 결정한다. 문서 요약 API라면 업로드 주소, 콘텐츠 유형, 처리 상태 조회, 결과 표현과 실패 재시도 조건을 각각 명세하고 큰 문서와 중단된 연결을 시험한다.
+‘API 지원 종료(API Deprecation)’는 호출 인벤토리, 종료일, 대체 경로와 회귀 시험을 하나의 이행 계획으로 관리할 때 의미가 있다. OpenAI의 `gpt-5.2-chat-latest`와 `gpt-5.3-chat-latest`는 2026년 8월 10일 종료됐으며 권장 대체 모델은 `gpt-5.6-sol`이다. Assistants API는 8월 26일 종료될 예정이므로 Responses API와 Conversations API로 이전해야 한다. Anthropic의 실험적 prompt generation·improvement·templatization 엔드포인트도 8월 17일 종료 뒤 오류를 반환한다. 실험 API도 종료일을 넘기면 동작하지 않으므로 내보내기와 대체 경로 시험을 사전에 완료한다.
 
 정상 응답뿐 아니라 빈 값, 잘못된 인코딩, 큰 본문, 중복 요청, 시간 초과, 권한 없음과 부분 실패를 계약 테스트에 포함한다. 로그에는 비밀 값 대신 상관관계 식별자를 남긴다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a> <a href="#reference-11">[11]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -81,13 +81,13 @@ API 지원 종료는 기존 기능을 즉시 제거하지 않고 사용 중단 �
 
 ### 구체적인 적용 예시
 
-문서 요약 API라면 업로드 주소, 콘텐츠 유형, 처리 상태 조회, 결과 표현과 실패 재시도 조건을 각각 명세하고 큰 문서와 중단된 연결을 시험한다.
+지원 종료 대응에서는 코드·프롬프트·대시보드에서 구형 모델 ID와 엔드포인트를 검색하고 호출량을 기준으로 소유자를 배정한다. 대체 API의 상태·도구 호출·대화 보존 계약을 비교한 뒤 고정 평가셋으로 병렬 실행하고, 종료일 전 트래픽 전환과 롤백 불가 시점을 승인한다.
 
 이 사례에 ‘API 지원 종료(API Deprecation)’를 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 사용량과 의존성을 측정해 경고 헤더·문서·로그로 일정을 알리고 이행 기간 뒤 계약된 정책에 따라 기능을 제거한다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
 
 결과 표에는 개선된 항목뿐 아니라 비용과 지연, 사람이 개입한 횟수, 실패 복구 시간과 남은 불확실성을 포함한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. 이 예시는 원리를 설명하기 위한 검증 틀이며 특정 제품이나 라이브러리의 성능을 보장하지 않는다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 실무 적용과 검증 절차
 
@@ -144,6 +144,9 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
 7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 8. <span id="reference-8"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+9. <span id="reference-9"></span>[OpenAI API Deprecations](https://developers.openai.com/api/docs/deprecations) — documentation
+10. <span id="reference-10"></span>[OpenAI Assistants에서 Responses로 이전](https://developers.openai.com/api/docs/guides/migrate-to-responses) — documentation
+11. <span id="reference-11"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
 
 ### 코스에서 계속 읽기
 

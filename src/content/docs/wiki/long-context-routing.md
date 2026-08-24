@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">긴 문맥 라우팅은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</p>
 
-<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-16</div>
+<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -58,7 +58,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 따라서 전체 요청에 하나의 정책을 적용하지 않는다. 사용자 영향, 요청 가치, 실패 후 복구 가능성에 따라 보수적·표준·속도 우선 정책으로 분리한다. 각 정책은 적용 조건, 예산, 허용 오류, 롤백 조건을 포함하고 운영 데이터로 주기적으로 재조정한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+장문맥 지원 한도와 빠른 처리 경로는 서로 다른 속성이다. 모델이 긴 입력을 받을 수 있어도 검색·요약·청킹보다 정확하거나 저렴하다는 뜻은 아니며, 특정 공급자의 기준 길이와 속도 배수는 변경될 수 있다. 기준일과 모델 ID를 기록하고 입력 길이 구간별 품질·첫 토큰 지연·총 비용을 다시 측정한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a> <a href="#reference-5">[5]</a> <a href="#reference-6">[6]</a></div>
 
 ### 실패 모드와 진단
 
@@ -99,7 +101,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 실제 배포 후에는 체크리스트의 통과 여부보다 각 항목에서 발생한 예외와 사람 개입을 기록해 다음 버전의 정책을 개선한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+날짜가 붙은 서비스 사례로, OpenAI는 2026년 8월 5일 GPT-5.6 Sol·Terra·Luna의 272K 토큰 초과 장문맥 요청에도 Fast mode를 지원한다고 발표했다. 이는 최대 2.5배 빠른 처리 경로의 예시이지 모든 요청의 품질·지연 개선을 보장하는 규칙이 아니다. 라우터는 모델·문맥 길이·서비스 티어·비용·지연 목표를 함께 입력으로 사용하고 일반 경로와 같은 평가셋으로 비교해야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-5">[5]</a> <a href="#reference-6">[6]</a></div>
 
 ## 문서 관계
 
@@ -133,6 +137,8 @@ _포함된 코스가 없다._
 2. <span id="reference-2"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
 3. <span id="reference-3"></span>[Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) — paper
 4. <span id="reference-4"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
+5. <span id="reference-5"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) — documentation
+6. <span id="reference-6"></span>[OpenAI API Models](https://developers.openai.com/api/docs/models) — documentation
 
 ### 코스에서 계속 읽기
 

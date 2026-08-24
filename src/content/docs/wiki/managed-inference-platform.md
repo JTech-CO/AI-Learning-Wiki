@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">관리형 추론 플랫폼은 클라우드나 서비스 제공자가 인프라 운영을 맡고 사용자가 모델 배포와 호출에 집중하게 하는 호스팅 서비스다.</p>
 
-<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -54,7 +54,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 라이선스 원문과 배포 파일을 대조하고 상업 사용, 호스팅, 재배포, 연구 예외와 특허 조항을 체크리스트로 검토한다. 기술적 실행 가능성과 법적 허용 가능성을 별도 승인한다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+Anthropic은 2026년 8월 5일 Enterprise용 inference hooks 베타를, 8월 7일 `inference_geo` 제어를 발표했다. 추론 훅은 요청 전후의 정책·관측·승인 처리를 중앙화하는 사례이고, 지역 제어는 추론 처리 위치를 선택하는 사례다. 도입 시 훅의 실행 순서·실패 정책·추가 지연과 지역별 지원 모델을 명시한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -64,7 +66,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. ‘관리형 추론 플랫폼(Managed Inference Platform)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+공급자 추론 훅은 애플리케이션의 전체 정책 경로를 자동으로 포괄하지 않으며 훅 실패가 허용·차단 중 어느 쪽으로 동작하는지 확인해야 한다. 추론 지역 선택도 로그·백업·지원 데이터·외부 도구 호출의 저장 위치까지 자동 보장하지 않으므로 계약과 데이터 흐름을 별도로 검토한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -144,6 +148,7 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[SPDX Specification](https://spdx.github.io/spdx-spec/) — standard
 7. <span id="reference-7"></span>[Hugging Face Hub Documentation](https://huggingface.co/docs/hub/index) — documentation
 8. <span id="reference-8"></span>[MLOps — Wikipedia](https://en.wikipedia.org/wiki/MLOps) — encyclopedia
+9. <span id="reference-9"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
 
 ### 코스에서 계속 읽기
 

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">에이전트 위임은 상위 에이전트가 목표의 일부와 필요한 권한·제약을 다른 에이전트에게 맡기는 작업 분배 방식이다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -44,10 +44,6 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. 에이전트 위임은 상위 에이전트가 목표의 일부와 필요한 권한·제약을 다른 에이전트에게 맡기는 작업 분배 방식이다.
 
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘에이전트 위임’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 agents, 세부 영역 multi-agent, 우선순위 71라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
-
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
 ## 활용과 검증
@@ -58,7 +54,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 평가는 최종 답만이 아니라 계획의 적합성, 불필요한 도구 호출, 실패 복구, 권한 위반과 중단 가능성을 함께 본다. 재현 가능한 작업 묶음과 실제 실패 사례를 사용해야 한다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+Anthropic은 2026년 8월 7일 관리형 다중 에이전트 구성에 advisor 모델 역할을 추가했다. 자문 모델은 계획·검토·전문 지식을 제공하되 실행 권한과 최종 책임을 갖지 않는 역할 분리 사례다. 권고 내용, 채택 여부, 최종 결정자와 실행 주체를 각각 기록하면 조언이 승인으로 오인되는 일을 줄일 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -68,7 +66,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. ‘에이전트 위임(Agent Delegation)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+더 강한 자문 모델을 추가해도 사실성이나 합의가 자동 보장되지는 않는다. 자문 모델과 실행 모델이 같은 오류 원인을 공유할 수 있으므로 독립 근거, 반대 검토, 비용 상한과 책임자를 둔다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -148,6 +148,7 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 7. <span id="reference-7"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 8. <span id="reference-8"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+9. <span id="reference-9"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
 
 ### 코스에서 계속 읽기
 

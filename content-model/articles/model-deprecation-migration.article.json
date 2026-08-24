@@ -12,9 +12,11 @@
       "title": "개요와 적용 범위",
       "sourceRefs": [
         1,
-        2
+        2,
+        5,
+        6
       ],
-      "body": "모델 종료 마이그레이션은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 특정한 판단과 통제를 분리해 설명하기 위한 운영 설계 개념이다. 모델 종료 마이그레이션의 정의, 구성 요소, 의사결정 기준, 실패 모드와 운영 검증 범위를 다룬다.\n\n이 개념의 목적은 기술 이름을 하나 더 만드는 데 있지 않다. 실제 시스템에서 어떤 입력과 상태를 관측하고, 어떤 기준으로 변경을 허용하며, 실패했을 때 어떤 경로로 복구할지를 하나의 문서화된 판단 단위로 묶는 것이 핵심이다. 적용 범위는 워크로드, 사용자 위험, 비용 제약을 명시한 경우로 한정한다."
+      "body": "모델 종료 마이그레이션은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 특정한 판단과 통제를 분리해 설명하기 위한 운영 설계 개념이다. 모델 종료 마이그레이션의 정의, 구성 요소, 의사결정 기준, 실패 모드와 운영 검증 범위를 다룬다.\n\n이 개념의 목적은 기술 이름을 하나 더 만드는 데 있지 않다. 실제 시스템에서 어떤 입력과 상태를 관측하고, 어떤 기준으로 변경을 허용하며, 실패했을 때 어떤 경로로 복구할지를 하나의 문서화된 판단 단위로 묶는 것이 핵심이다. 적용 범위는 워크로드, 사용자 위험, 비용 제약을 명시한 경우로 한정한다.\n\nGemini 3.7 Flash로 이전할 때는 모델 ID만 바꾸지 않는다. Google의 2026년 8월 마이그레이션 안내는 `temperature`·`top_p`·`top_k` 제거, `thinking_budget`의 `thinking_level` 교체, `candidate_count` 제거, 미리 채운 모델 턴 제거, 마지막 사용자 턴의 비어 있지 않은 텍스트 보장과 함수 응답의 `call_id`·`name` 확인을 요구한다. 모델 교체에는 요청 스키마, 대화 검증과 도구 호출 계약의 회귀 시험이 포함돼야 한다."
     },
     {
       "id": "terminology-boundary",
@@ -132,9 +134,19 @@
       "title": "Language Models are Few-Shot Learners",
       "url": "https://arxiv.org/abs/2005.14165",
       "type": "paper"
+    },
+    {
+      "title": "Gemini 3.7 Flash 마이그레이션 문서",
+      "url": "https://ai.google.dev/gemini-api/docs/generate-content/latest-model",
+      "type": "documentation"
+    },
+    {
+      "title": "Gemini 3.7 Flash",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "type": "documentation"
     }
   ],
   "status": "reviewed",
   "volatility": "fast-changing",
-  "reviewedAt": "2026-07-16"
+  "reviewedAt": "2026-08-24"
 }

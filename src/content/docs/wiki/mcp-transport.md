@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-23</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -14,7 +14,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다.
 
-로컬 표준 입출력이나 원격 HTTP 전송이 요청·응답·알림의 경계를 보존하고 세션·재연결·인증 규칙에 따라 양방향 메시지를 운반한다. 에이전트 구조를 설명할 때는 언어 모델의 추론 능력과 실행 시스템의 권한을 분리한다. 모델이 제안한 행동, 런타임이 허용한 행동, 외부 시스템에서 실제로 발생한 상태 변화는 서로 다른 기록이다.
+로컬 표준 입출력이나 원격 HTTP 전송은 요청·응답·알림의 경계를 보존하고 요청별 메타데이터·취소·인증 규칙에 따라 메시지를 운반한다. 에이전트 구조를 설명할 때는 언어 모델의 추론 능력과 실행 시스템의 권한을 분리한다. 모델이 제안한 행동, 런타임이 허용한 행동, 외부 시스템에서 실제로 발생한 상태 변화는 서로 다른 기록이다.
 
 ‘MCP 전송 계층(MCP Transport)’라는 표제는 한국어 설명과 국제적으로 통용되는 영문 용어를 함께 제공한다. 핵심은 번역된 이름이 아니라 이 개념이 무엇을 입력으로 받아 어떤 변환을 거쳐 어떤 결과를 내며, 결과가 유효하다고 판단할 조건이 무엇인지 이해하는 데 있다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다.
 
@@ -26,21 +26,21 @@ MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 �
 
 ‘MCP 전송 계층(MCP Transport)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-2026년 7월 23일 기준 안정 규격은 2025-11-25이고 2026-07-28 규격은 릴리스 후보 상태다. 따라서 전송 구현을 설명할 때는 현재 안정 규격의 세션 동작과 후보 규격의 상태 비저장 동작을 구분해야 한다.
+`2026-07-28` 정식 규격은 stdio와 Streamable HTTP를 표준 전송으로 정의한다. 이전 규격의 연결 범위 세션과 서버 시작 JSON-RPC 요청은 호환 대상으로만 남으며, 새 구현은 요청별 메타데이터와 응답 범위 스트림을 기준으로 설계한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-5">[5]</a> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a></div>
 
 ### 작동 원리
 
-로컬 표준 입출력이나 원격 HTTP 전송이 요청·응답·알림의 경계를 보존하고 세션·재연결·인증 규칙에 따라 양방향 메시지를 운반한다.
+로컬 표준 입출력이나 원격 HTTP 전송은 요청·응답·알림의 경계를 보존하고 요청별 메타데이터·취소·인증 규칙에 따라 메시지를 운반한다.
 
 실행 경로는 입력 수신, 상태 구성, 선택, 도구 실행, 결과 관찰과 종료 판단으로 나눈다. 각 단계에 식별자와 시간·비용 예산을 붙이면 무한 반복과 중복 부작용을 탐지할 수 있다. ‘MCP 전송 계층(MCP Transport)’의 작동을 추적할 때는 입력 원본, 변환된 중간 상태, 선택된 설정과 최종 산출물을 순서대로 남긴다. 각 단계에 정상 범위와 오류 상태를 붙이면 결과가 나빠졌을 때 어느 경계가 먼저 무너졌는지 분리할 수 있다.
 
 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. ‘MCP 전송 계층(MCP Transport)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-2025-11-25 안정 규격의 Streamable HTTP는 초기화 절차와 선택적 `Mcp-Session-Id`를 사용한다. 반면 2026-07-28 릴리스 후보는 초기화 절차와 프로토콜 수준 세션을 제거하고, 각 요청에 `MCP-Protocol-Version`, `Mcp-Method`, `Mcp-Name` 같은 라우팅 정보를 싣는 구조를 제안한다. 이 변경은 일반적인 HTTP 로드 밸런싱과 캐시를 쉽게 하지만 기존 전송 구현에는 호환성 검토가 필요한 중단적 변경이다.
+Streamable HTTP에서는 각 메시지를 단일 MCP 엔드포인트로 POST하고 JSON 응답 또는 요청 범위 SSE 스트림으로 결과를 받는다. 요청 본문의 `_meta`가 프로토콜 정보의 원본이며 `Mcp-Method`와 `Mcp-Name` 헤더는 게이트웨이 라우팅과 정책 적용을 위해 이를 반영한다. 서버는 독립 JSON-RPC 요청을 시작하지 않고 응답·알림만 전송한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-5">[5]</a> <a href="#reference-9">[9]</a></div>
 
 ### 구성 요소와 처리 흐름
 
@@ -87,7 +87,7 @@ MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 �
 
 고객 문의 처리 업무를 예로 들면 요청 분류, 자료 조회, 답안 작성과 발송 승인을 서로 다른 단계로 나누고 각 단계의 입력과 결과를 보존한다.
 
-이 사례에 ‘MCP 전송 계층(MCP Transport)’을 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 로컬 표준 입출력이나 원격 HTTP 전송이 요청·응답·알림의 경계를 보존하고 세션·재연결·인증 규칙에 따라 양방향 메시지를 운반한다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
+이 사례에 ‘MCP 전송 계층(MCP Transport)’을 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 로컬 표준 입출력이나 원격 HTTP 전송은 요청·응답·알림의 경계를 보존하고 요청별 메타데이터·취소·인증 규칙에 따라 메시지를 운반한다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
 
 결과 표에는 개선된 항목뿐 아니라 비용과 지연, 사람이 개입한 횟수, 실패 복구 시간과 남은 불확실성을 포함한다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 이 예시는 원리를 설명하기 위한 검증 틀이며 특정 제품이나 라이브러리의 성능을 보장하지 않는다.
 
@@ -104,7 +104,7 @@ MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 �
 7. **위험 통제:** 외부 쓰기, 결제, 메시지 전송처럼 되돌리기 어려운 행동은 사람 승인이나 별도 정책 엔진을 거친다. 프롬프트상의 금지 문구만으로 권한 통제를 대신하지 않는다.
 8. **재현과 재검토:** 버전, 설정, 날짜, 알려진 한계와 다음 검토 조건을 남긴다.
 
-평가는 최종 답만이 아니라 계획의 적합성, 불필요한 도구 호출, 실패 복구, 권한 위반과 중단 가능성을 함께 본다. 재현 가능한 작업 묶음과 실제 실패 사례를 사용해야 한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다. 로컬 표준 입출력이나 원격 HTTP 전송이 요청·응답·알림의 경계를 보존하고 세션·재연결·인증 규칙에 따라 양방향 메시지를 운반한다.
+평가는 최종 답만이 아니라 계획의 적합성, 불필요한 도구 호출, 실패 복구, 권한 위반과 중단 가능성을 함께 본다. 재현 가능한 작업 묶음과 실제 실패 사례를 사용해야 한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. MCP 전송 계층은 JSON-RPC 메시지를 클라이언트와 서버 사이에 전달하는 연결 방식과 프레이밍 규칙이다. 로컬 표준 입출력이나 원격 HTTP 전송은 요청·응답·알림의 경계를 보존하고 요청별 메타데이터·취소·인증 규칙에 따라 메시지를 운반한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -140,15 +140,15 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Model Context Protocol: Transports](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports) — standard
+1. <span id="reference-1"></span>[MCP 2026-07-28: Transports](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports) — standard
 2. <span id="reference-2"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
 3. <span id="reference-3"></span>[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — paper
 4. <span id="reference-4"></span>[Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — paper
-5. <span id="reference-5"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
+5. <span id="reference-5"></span>[Model Context Protocol Specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28) — standard
 6. <span id="reference-6"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 7. <span id="reference-7"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 8. <span id="reference-8"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
-9. <span id="reference-9"></span>[The 2026-07-28 MCP Specification Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) — standard
+9. <span id="reference-9"></span>[The 2026-07-28 MCP Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — documentation
 
 ### 코스에서 계속 읽기
 

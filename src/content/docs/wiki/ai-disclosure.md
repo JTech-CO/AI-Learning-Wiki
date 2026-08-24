@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI가 관여했다는 사실과 범위를 이용자에게 알리는 행위다.</p>
 
-<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -26,7 +26,9 @@ AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI
 
 ‘AI 사용 고지(AI Disclosure)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+EU AI Act Article 50의 투명성 의무는 2026년 8월 2일부터 적용된다. 자연인과 직접 상호작용하는 AI, 합성·조작 콘텐츠의 기계 판독 가능한 표시, 감정 인식·생체 분류, 딥페이크와 일부 공익 목적 텍스트는 서로 다른 제공자·배포자 의무와 예외를 가진다. 따라서 “AI를 사용했다”는 한 문장만으로 모든 사례의 요구를 충족한다고 판단해서는 안 된다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a> <a href="#reference-11">[11]</a></div>
 
 ### 작동 원리
 
@@ -36,17 +38,15 @@ AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI
 
 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. ‘AI 사용 고지(AI Disclosure)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+고지는 대상·시점·표현·기술 표식을 분리해 설계한다. 상호작용 고지는 이용자가 첫 상호작용 전에 이해할 수 있어야 하며, 생성·조작 콘텐츠의 제공자는 산출물이 AI 생성임을 탐지 가능한 기계 판독 형식으로 표시한다. 딥페이크나 공익 사안에 관한 특정 AI 생성 텍스트를 공개하는 배포자는 사람이 인식할 수 있는 방식으로 그 사실을 알린다. 예외와 역할 구분은 최신 공식 지침과 실제 관할권을 기준으로 확인한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 구성 요소와 처리 흐름
 
 ‘AI 사용 고지(AI Disclosure)’를 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 데이터 수집부터 모델, 검색, 도구를 거쳐 출력이 사용되는 지점까지 흐름을 그려 공격 표면을 찾는다. 예방, 탐지, 제한, 복구와 사후 분석 통제를 겹쳐 배치한다.
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI가 관여했다는 사실과 범위를 이용자에게 알리는 행위다.
-
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘AI 사용 고지’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 safety, 세부 영역 transparency, 우선순위 72라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -68,7 +68,9 @@ AI 사용 고지는 콘텐츠나 서비스의 생성·변형·의사결정에 AI
 
 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. ‘AI 사용 고지(AI Disclosure)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+C2PA 같은 출처 메타데이터, 화면의 고지 문구, 내부 감사 기록은 서로 보완하지만 동일하지 않다. 기술 표식이 있다고 이용자 고지가 자동 충족되는 것도 아니고, 고지 문구가 있다고 생성 이력과 무결성이 증명되는 것도 아니다. 법적 적용 여부는 시스템 역할·시장·콘텐츠 목적·인간 편집 통제에 따라 달라지므로 자동 판정 결과를 법률 의견으로 사용하지 않는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -148,6 +150,9 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
 7. <span id="reference-7"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
 8. <span id="reference-8"></span>[Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
+9. <span id="reference-9"></span>[Regulation (EU) 2024/1689: Artificial Intelligence Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — standard
+10. <span id="reference-10"></span>[European Commission Guidelines on Article 50 Transparency Obligations](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems) — documentation
+11. <span id="reference-11"></span>[Code of Practice on Transparency of AI-generated Content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) — documentation
 
 ### 코스에서 계속 읽기
 

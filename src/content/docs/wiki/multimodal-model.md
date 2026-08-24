@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">텍스트·이미지·음성·영상 등 둘 이상의 데이터 양식을 함께 처리하는 모델이다.</p>
 
-<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-12</div>
+<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -50,7 +50,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 선택 기준은 “널리 쓰인다”가 아니라 현재 데이터와 사용자의 실패 비용을 얼마나 줄이는가이다. 오프라인 실험, 작은 실제 트래픽, 배포 후 모니터링 순으로 증거를 쌓는 편이 안전하다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+Gemini 3.7 Flash의 2026년 8월 정식 사양은 텍스트·이미지·영상·음성·PDF를 입력으로 받고 텍스트를 출력하며, 이미지 생성과 Live API는 지원하지 않는다고 구분한다. “멀티모달”이라는 표지만으로 모든 모달리티를 양방향 생성한다고 추정하지 말고 입력·출력 방향, 토큰 한도, 도구별 지원 상태와 미리 보기 여부를 모델 버전별로 확인한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-5">[5]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -261,6 +263,8 @@ _해당 문서가 없다._
 1. <span id="reference-1"></span>[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) — paper
 2. <span id="reference-2"></span>[Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
 3. <span id="reference-3"></span>[Multimodal chat templates — Transformers documentation](https://huggingface.co/docs/transformers/en/chat_templating_multimodal) — documentation
+4. <span id="reference-4"></span>[Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash) — documentation
+5. <span id="reference-5"></span>[Gemini API Release Notes](https://ai.google.dev/gemini-api/docs/changelog) — documentation
 
 ### 코스에서 계속 읽기
 

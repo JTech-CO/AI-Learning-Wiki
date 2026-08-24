@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 범주와 의무 수준에 대응시키는 절차다.</p>
 
-<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -26,7 +26,9 @@ AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 
 
 ‘AI 규제 분류(AI Regulatory Classification)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+EU AI Act의 분류는 하나의 “위험 등급”만 고르는 작업이 아니다. 금지 관행, 고위험 시스템, 범용 AI 모델 의무와 Article 50 투명성 의무는 적용 축이 다르며 하나의 시스템에 동시에 적용될 수 있다. 특히 챗봇·생성 콘텐츠를 무조건 “제한적 위험”으로 확정하는 표현은 역할·용도·예외와 다른 의무를 가릴 수 있다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 작동 원리
 
@@ -36,7 +38,9 @@ AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 
 
 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. ‘AI 규제 분류(AI Regulatory Classification)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+분류 순서는 관할과 시장, 행위자 역할, 금지 관행, Annex I·III 고위험 범위, 범용 AI 모델 여부, Article 50 투명성 의무, 분야별 법률 순으로 나눈다. 각 결론에는 확인한 조항·기준일·남은 정보·신뢰 수준을 기록하고, 정보가 부족하면 “최소 위험”으로 추정하지 않고 미결정 상태로 남긴다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-9">[9]</a></div>
 
 ### 구성 요소와 처리 흐름
 
@@ -64,7 +68,7 @@ AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 
 
 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. ‘AI 규제 분류(AI Regulatory Classification)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -144,6 +148,8 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[OWASP GenAI Security Project](https://genai.owasp.org/) — standard
 7. <span id="reference-7"></span>[MITRE ATLAS](https://atlas.mitre.org/) — documentation
 8. <span id="reference-8"></span>[Adversarial machine learning — Wikipedia](https://en.wikipedia.org/wiki/Adversarial_machine_learning) — encyclopedia
+9. <span id="reference-9"></span>[European Commission Guidelines on Article 50 Transparency Obligations](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems) — documentation
+10. <span id="reference-10"></span>[Code of Practice on Transparency of AI-generated Content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) — documentation
 
 ### 코스에서 계속 읽기
 

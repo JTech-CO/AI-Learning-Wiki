@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 정보를 요청하는 기능이다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -14,7 +14,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 정보를 요청하는 기능이다.
 
-서버가 질문과 응답 스키마를 클라이언트에 보내면 호스트가 승인 가능한 화면을 표시하고 사용자의 수락·거절·취소 상태와 검증된 값을 돌려준다. 에이전트 구조를 설명할 때는 언어 모델의 추론 능력과 실행 시스템의 권한을 분리한다. 모델이 제안한 행동, 런타임이 허용한 행동, 외부 시스템에서 실제로 발생한 상태 변화는 서로 다른 기록이다.
+서버가 작업 응답을 `input_required`로 반환하면 호스트가 승인 가능한 화면을 표시하고, 클라이언트는 검증된 사용자 응답을 `inputResponses`에 담아 원래 요청을 다시 보낸다. 에이전트 구조를 설명할 때는 언어 모델의 추론 능력과 실행 시스템의 권한을 분리한다. 모델이 제안한 행동, 런타임이 허용한 행동, 외부 시스템에서 실제로 발생한 상태 변화는 서로 다른 기록이다.
 
 ‘MCP 사용자 정보 요청(MCP Elicitation)’라는 표제는 한국어 설명과 국제적으로 통용되는 영문 용어를 함께 제공한다. 핵심은 번역된 이름이 아니라 이 개념이 무엇을 입력으로 받아 어떤 변환을 거쳐 어떤 결과를 내며, 결과가 유효하다고 판단할 조건이 무엇인지 이해하는 데 있다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다.
 
@@ -26,17 +26,19 @@ MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 �
 
 ‘MCP 사용자 정보 요청(MCP Elicitation)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-5">[5]</a> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a></div>
 
 ### 작동 원리
 
-서버가 질문과 응답 스키마를 클라이언트에 보내면 호스트가 승인 가능한 화면을 표시하고 사용자의 수락·거절·취소 상태와 검증된 값을 돌려준다.
+서버가 작업 응답을 `input_required`로 반환하면 호스트가 승인 가능한 화면을 표시하고, 클라이언트는 검증된 사용자 응답을 `inputResponses`에 담아 원래 요청을 다시 보낸다.
 
 실행 경로는 입력 수신, 상태 구성, 선택, 도구 실행, 결과 관찰과 종료 판단으로 나눈다. 각 단계에 식별자와 시간·비용 예산을 붙이면 무한 반복과 중복 부작용을 탐지할 수 있다. ‘MCP 사용자 정보 요청(MCP Elicitation)’의 작동을 추적할 때는 입력 원본, 변환된 중간 상태, 선택된 설정과 최종 산출물을 순서대로 남긴다. 각 단계에 정상 범위와 오류 상태를 붙이면 결과가 나빠졌을 때 어느 경계가 먼저 무너졌는지 분리할 수 있다.
 
 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. ‘MCP 사용자 정보 요청(MCP Elicitation)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+`2026-07-28`에서는 서버 시작 `elicitation/create` 요청 대신 다중 왕복 요청(MRTR)을 사용한다. 서버는 필요한 입력의 스키마와 이유를 `InputRequiredResult`로 반환하고, 클라이언트는 사용자의 수락·거절·취소를 적용한 뒤 원래 호출을 재개한다. 민감정보 요구와 자동 제출을 금지하고 각 왕복의 동의 기록을 남겨야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-5">[5]</a> <a href="#reference-9">[9]</a></div>
 
 ### 구성 요소와 처리 흐름
 
@@ -83,7 +85,7 @@ MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 �
 
 고객 문의 처리 업무를 예로 들면 요청 분류, 자료 조회, 답안 작성과 발송 승인을 서로 다른 단계로 나누고 각 단계의 입력과 결과를 보존한다.
 
-이 사례에 ‘MCP 사용자 정보 요청(MCP Elicitation)’을 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 서버가 질문과 응답 스키마를 클라이언트에 보내면 호스트가 승인 가능한 화면을 표시하고 사용자의 수락·거절·취소 상태와 검증된 값을 돌려준다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
+이 사례에 ‘MCP 사용자 정보 요청(MCP Elicitation)’을 적용한다면 먼저 성공 조건과 금지 조건을 적고 기준선 결과를 저장한다. 그다음 서버가 작업 응답을 `input_required`로 반환하면 호스트가 승인 가능한 화면을 표시하고, 클라이언트는 검증된 사용자 응답을 `inputResponses`에 담아 원래 요청을 다시 보낸다. 입력과 중간 상태, 최종 결과를 단계별로 수집하고 정상 사례, 경계 사례, 의도적인 실패 사례를 같은 절차로 실행한다.
 
 결과 표에는 개선된 항목뿐 아니라 비용과 지연, 사람이 개입한 횟수, 실패 복구 시간과 남은 불확실성을 포함한다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다. 이 예시는 원리를 설명하기 위한 검증 틀이며 특정 제품이나 라이브러리의 성능을 보장하지 않는다.
 
@@ -100,7 +102,7 @@ MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 �
 7. **위험 통제:** 외부 쓰기, 결제, 메시지 전송처럼 되돌리기 어려운 행동은 사람 승인이나 별도 정책 엔진을 거친다. 프롬프트상의 금지 문구만으로 권한 통제를 대신하지 않는다.
 8. **재현과 재검토:** 버전, 설정, 날짜, 알려진 한계와 다음 검토 조건을 남긴다.
 
-평가는 최종 답만이 아니라 계획의 적합성, 불필요한 도구 호출, 실패 복구, 권한 위반과 중단 가능성을 함께 본다. 재현 가능한 작업 묶음과 실제 실패 사례를 사용해야 한다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 정보를 요청하는 기능이다. 서버가 질문과 응답 스키마를 클라이언트에 보내면 호스트가 승인 가능한 화면을 표시하고 사용자의 수락·거절·취소 상태와 검증된 값을 돌려준다.
+평가는 최종 답만이 아니라 계획의 적합성, 불필요한 도구 호출, 실패 복구, 권한 위반과 중단 가능성을 함께 본다. 재현 가능한 작업 묶음과 실제 실패 사례를 사용해야 한다. 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. MCP 유도 입력은 서버가 작업 도중 사용자에게 추가 구조화 정보를 요청하는 기능이다. 서버가 작업 응답을 `input_required`로 반환하면 호스트가 승인 가능한 화면을 표시하고, 클라이언트는 검증된 사용자 응답을 `inputResponses`에 담아 원래 요청을 다시 보낸다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -136,14 +138,15 @@ _포함된 코스가 없다._
 
 ### 참고 문헌
 
-1. <span id="reference-1"></span>[Model Context Protocol: Elicitation](https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation) — standard
+1. <span id="reference-1"></span>[MCP 2026-07-28: Elicitation](https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation) — standard
 2. <span id="reference-2"></span>[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — paper
 3. <span id="reference-3"></span>[Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — paper
 4. <span id="reference-4"></span>[Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) — paper
-5. <span id="reference-5"></span>[Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) — standard
+5. <span id="reference-5"></span>[Model Context Protocol Specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28) — standard
 6. <span id="reference-6"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 7. <span id="reference-7"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 8. <span id="reference-8"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+9. <span id="reference-9"></span>[The 2026-07-28 MCP Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — documentation
 
 ### 코스에서 계속 읽기
 

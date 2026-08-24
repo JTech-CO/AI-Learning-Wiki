@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">콘텐츠 출처 증명은 디지털 콘텐츠의 생성 주체·도구·편집 이력과 무결성을 검증 가능한 메타데이터로 연결하는 체계다.</p>
 
-<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [멀티모달 AI](/category/multimodal/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -26,7 +26,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ‘콘텐츠 출처 증명(Content Provenance)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. 관련 자료를 읽을 때 표준 문서와 논문은 정의·가정·실험 조건을 확인하는 데 사용하고, 백과 자료는 용어의 일반적 범위와 인접 개념을 찾는 출발점으로 사용한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a></div>
+EU AI Act Article 50(2)는 적용 대상 생성·조작 콘텐츠가 AI 생성임을 탐지할 수 있도록 기계 판독 가능한 형식으로 표시할 것을 요구한다. C2PA 같은 출처 증명 규격은 생성·편집 이력과 무결성을 전달하는 구현 수단이 될 수 있지만, 특정 규격 사용 자체가 모든 법적 의무 충족을 보장하지는 않는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-8">[8]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a> <a href="#reference-11">[11]</a></div>
 
 ### 작동 원리
 
@@ -36,17 +38,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. ‘콘텐츠 출처 증명(Content Provenance)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 구성 요소와 처리 흐름
 
 ‘콘텐츠 출처 증명(Content Provenance)’을 실제 시스템으로 구현하면 데이터 또는 요청 인터페이스, 핵심 계산부, 상태와 설정, 결과 검증부, 관측과 오류 처리부로 나눌 수 있다. 픽셀을 패치나 특징 지도로 변환하고 필요한 경우 텍스트 표현과 같은 공간에 정렬한다. 지역 특징과 전역 문맥을 결합해 분류, 위치 예측 또는 생성에 전달한다.
 
 구성 요소 사이에는 자료형, 크기, 권한, 시간 제한과 오류 전달 규칙을 명시한다. 내부 구현을 바꾸더라도 이 계약과 검증 사례를 유지하면 교체 전후의 동작을 비교할 수 있다. 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. 콘텐츠 출처 증명은 디지털 콘텐츠의 생성 주체·도구·편집 이력과 무결성을 검증 가능한 메타데이터로 연결하는 체계다.
-
-#### 구성 요소와 처리 흐름 심화 점검 1
-
-‘콘텐츠 출처 증명’의 구성 요소와 처리 흐름를 검토하는 1번째 기록에서는 분야 multimodal, 세부 영역 evaluation-safety, 우선순위 100라는 분류 정보가 실제 내용과 맞는지 확인한다. 정의 문장, 작동 설명, 적용 사례와 한계가 서로 모순되지 않는지 대조하고, 출처가 다루지 않는 편집 판단은 일반 사실처럼 단정하지 않는다. 변경된 데이터나 구현이 있다면 동일한 기준선과 실패 사례로 재시험해 차이를 기록한다.
 
 <div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
 
@@ -68,7 +66,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 문서의 용어는 제품 이름이나 특정 인터페이스와 분리한다. 표준과 논문의 정의, 구현 세부, 운영 정책을 층별로 적으면 시간이 지나도 바뀐 부분만 다시 검토할 수 있다. ‘콘텐츠 출처 증명(Content Provenance)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+메타데이터는 제거되거나 변환 과정에서 손실될 수 있고, 유효한 서명은 콘텐츠의 진실성 자체가 아니라 기록된 출처와 무결성을 증명한다. 따라서 워터마크·출처 자격증명·사람이 읽는 고지·배포 로그를 함께 시험하고, 실제 게시 경로가 기계 판독 표시를 보존하는지 확인한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -148,6 +148,9 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[Torchvision Models and Pre-trained Weights](https://pytorch.org/vision/stable/models.html) — documentation
 7. <span id="reference-7"></span>[Web Neural Network API](https://www.w3.org/TR/webnn/) — standard
 8. <span id="reference-8"></span>[Multimodal learning — Wikipedia](https://en.wikipedia.org/wiki/Multimodal_learning) — encyclopedia
+9. <span id="reference-9"></span>[Regulation (EU) 2024/1689: Artificial Intelligence Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — standard
+10. <span id="reference-10"></span>[European Commission Guidelines on Article 50 Transparency Obligations](https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems) — documentation
+11. <span id="reference-11"></span>[Code of Practice on Transparency of AI-generated Content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) — documentation
 
 ### 코스에서 계속 읽기
 

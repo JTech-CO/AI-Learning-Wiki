@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">사용량 계측은 API 요청이 소비한 호출 수, 토큰, 바이트, 시간과 연산 자원을 귀속 가능한 측정값으로 기록하는 과정이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-09</div>
 
 ## 개념과 원리
 
@@ -54,7 +54,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 정상 응답뿐 아니라 빈 값, 잘못된 인코딩, 큰 본문, 중복 요청, 시간 초과, 권한 없음과 부분 실패를 계약 테스트에 포함한다. 로그에는 비밀 값 대신 상관관계 식별자를 남긴다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+2026년 8월 4일 OpenAI Usage API의 API 키별 필터·그룹화 지원은 공급자 계측과 내부 관측을 대사하는 사례다. 요청 ID·프로젝트·API 키 식별자·모델·입출력 토큰·캐시 토큰·시간 구간을 정규화하고, 키 원문이 아니라 회전 가능한 내부 식별자를 저장한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -64,7 +66,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 도입 판단에는 기준선이 필요하다. 같은 데이터와 예산에서 더 단순한 방법을 먼저 측정하고, 복잡한 구성이 개선한 항목과 악화시킨 항목을 함께 기록해야 한다. ‘사용량 계측(Usage Metering)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+공급자 집계 차원은 내부 사용자·기능·고객 단위와 일치하지 않을 수 있다. 재시도·스트리밍 중단·배치·캐시 사용을 이중 계산하지 않도록 수집 규칙을 문서화하고, 원장과의 허용 오차와 마감 시점을 정한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -144,6 +148,8 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
 7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 8. <span id="reference-8"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+9. <span id="reference-9"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) — documentation
+10. <span id="reference-10"></span>[OpenAI API Models](https://developers.openai.com/api/docs/models) — documentation
 
 ### 코스에서 계속 읽기
 

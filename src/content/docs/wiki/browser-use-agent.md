@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">브라우저 사용 에이전트는 웹 페이지의 시각 정보와 문서 구조를 해석해 탐색·입력·클릭·다운로드 같은 브라우저 행동을 수행하는 에이전트다.</p>
 
-<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -64,7 +64,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다. ‘브라우저 사용 에이전트(Browser-Use Agent)’를 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+Anthropic은 2026년 8월 19일 computer use 도구의 정식 버전 `computer_toolset_20260801`과 browser use 도구 `browser_toolset_20260801`을 공개했다. 브라우저와 컴퓨터 사용은 웹 콘텐츠를 신뢰하지 않는 입력으로 취급하고 최소 권한의 VM·컨테이너, 네트워크 도메인 허용 목록, 비HTTP(S) 차단, 민감 파일·자격 증명 격리와 중요한 행동의 사람 확인을 실행 계층에서 강제해야 한다. JavaScript 실행과 파일 업로드는 필요한 작업에만 활성화한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -144,6 +146,8 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 7. <span id="reference-7"></span>[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — standard
 8. <span id="reference-8"></span>[Intelligent agent — Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent) — encyclopedia
+9. <span id="reference-9"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
+10. <span id="reference-10"></span>[Claude Browser Use Tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-tool) — documentation
 
 ### 코스에서 계속 읽기
 

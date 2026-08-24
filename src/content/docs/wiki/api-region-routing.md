@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">API 리전 라우팅은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-16</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -74,7 +74,9 @@ API 리전 라우팅을 변경할 때는 버전, 적용 대상, 관측 지표, �
 
 관측 화면은 성공 지표만 보여주지 않고 거부, 대체 경로, 재시도, 사람 개입, 복구 소요 시간을 함께 보여준다. 복구 절차는 담당자와 권한, 예상 소요 시간, 데이터 영향, 복구 후 검증 항목을 포함해야 한다. 주기적 후속 검토로 임시 조치가 영구 정책으로 남는 것을 방지한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-4">[4]</a></div>
+OpenAI는 2026년 8월 21일부터 Global geography 프로젝트의 API 키가 지원되는 요청에 한해 `us.api.openai.com` 또는 `eu.api.openai.com` 같은 지역 접두 도메인으로 처리 위치를 요청별 선택할 수 있게 했다. 이 방식도 고객·프로젝트 자격, 데이터 보존 통제, 엔드포인트와 모델 지원 조건을 그대로 따르므로, 도메인 선택만으로 데이터 경계가 보장된다고 가정하지 말고 요청별 정책 판정과 실제 처리 리전을 함께 감사해야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-4">[4]</a> <a href="#reference-6">[6]</a> <a href="#reference-7">[7]</a></div>
 
 ### 안전·보안·거버넌스
 
@@ -82,7 +84,9 @@ API 리전 라우팅을 운영할 때는 멱등성 키, 타임아웃 예산, 회
 
 민감 데이터와 비밀 값은 로그에 남기지 않고 필요한 시점에 최소 권한으로만 제공한다. 정책 예외는 승인자, 사유, 적용 범위, 만료 시점을 필수로 남겨야 한다. 사고 후에는 탐지부터 복구까지의 시간선과 의사결정 근거를 보존하고, 조치가 실제로 재발을 막았는지 동일 시나리오로 재시험한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+지역 라우팅과 데이터 레지던시는 같은 말이 아니다. 추론 위치를 지정해도 프롬프트 로그, 캐시, 백업, 안전 모니터링, 지원 티켓과 연결 도구가 다른 지역에서 처리될 수 있다. 공급자 문서·계약·하위 처리자 목록을 기준일과 함께 확인하고 장애 시 우회 정책을 명시한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-5">[5]</a></div>
 
 ### 적용 예시와 검토 목록
 
@@ -99,7 +103,9 @@ API 리전 라우팅을 적용할 수 있는 대표 상황은 두 LLM 공급자 
 
 실제 배포 후에는 체크리스트의 통과 여부보다 각 항목에서 발생한 예외와 사람 개입을 기록해 다음 버전의 정책을 개선한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+Anthropic의 2026년 8월 7일 `inference_geo`는 요청별 추론 지역을 명시하는 공급자 기능의 사례다. 라우터는 법적·계약상 허용 지역, 모델 가용성, 장애 조치 지역, 지연과 비용을 함께 평가하고 실제 응답에 기록된 처리 위치와 정책 결정을 감사 로그에 남긴다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-5">[5]</a></div>
 
 ## 문서 관계
 
@@ -133,6 +139,9 @@ _포함된 코스가 없다._
 2. <span id="reference-2"></span>[HTTP Semantics RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) — standard
 3. <span id="reference-3"></span>[RFC 8446: The Transport Layer Security Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — standard
 4. <span id="reference-4"></span>[RFC 1034: Domain Names - Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) — standard
+5. <span id="reference-5"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
+6. <span id="reference-6"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) — documentation
+7. <span id="reference-7"></span>[OpenAI API Data Controls](https://developers.openai.com/api/docs/guides/your-data) — documentation
 
 ### 코스에서 계속 읽기
 

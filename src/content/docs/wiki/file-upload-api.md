@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">파일 업로드 API는 바이너리 파일과 메타데이터를 서버에 전달해 저장·분석·변환 작업의 입력으로 등록하는 인터페이스다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-14</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -54,7 +54,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 정상 응답뿐 아니라 빈 값, 잘못된 인코딩, 큰 본문, 중복 요청, 시간 초과, 권한 없음과 부분 실패를 계약 테스트에 포함한다. 로그에는 비밀 값 대신 상관관계 식별자를 남긴다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 설명은 정의를 외우는 데서 끝나지 않는다. 입력과 출력, 계산 단계, 실패 조건과 관찰 가능한 지표를 한 표에 배치하면 비슷한 용어를 실제 시스템에서 구분할 수 있다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+Anthropic Files API는 2026년 8월 19일 정식 버전으로 전환됐다. 파일 API 계약에는 업로드 만료를 나타내는 `expires_in_seconds`와 `expires_at`, `page`·`next_page` 페이지네이션, `ids[]` 필터를 포함하고, 구형 베타 헤더를 보낼 때의 응답 차이를 버전별로 시험해야 한다. 만료된 파일을 영구 저장소처럼 참조하거나 페이지 첫 결과만 전체 목록으로 해석하지 않는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -144,6 +146,8 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
 7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 8. <span id="reference-8"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+9. <span id="reference-9"></span>[Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview) — documentation
+10. <span id="reference-10"></span>[Claude Files API](https://platform.claude.com/docs/en/build-with-claude/files) — documentation
 
 ### 코스에서 계속 읽기
 

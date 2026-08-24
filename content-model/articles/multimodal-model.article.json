@@ -46,10 +46,12 @@
     {
       "id": "applications",
       "title": "활용 분야와 선택 기준",
-      "body": "문서 이해, 이미지 질의응답, 음성 인터페이스와 콘텐츠 생성에 사용한다. ‘멀티모달 모델’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.\n\n선택 기준은 “널리 쓰인다”가 아니라 현재 데이터와 사용자의 실패 비용을 얼마나 줄이는가이다. 오프라인 실험, 작은 실제 트래픽, 배포 후 모니터링 순으로 증거를 쌓는 편이 안전하다.",
+      "body": "문서 이해, 이미지 질의응답, 음성 인터페이스와 콘텐츠 생성에 사용한다. ‘멀티모달 모델’ 개념을 도입할 때는 기대 효과를 품질, 지연 시간, 처리량, 메모리, 비용, 안전성 중 측정 가능한 항목으로 바꾼다. 그다음 단순한 기준선과 비교해 개선 폭과 추가 복잡도를 함께 기록한다.\n\n선택 기준은 “널리 쓰인다”가 아니라 현재 데이터와 사용자의 실패 비용을 얼마나 줄이는가이다. 오프라인 실험, 작은 실제 트래픽, 배포 후 모니터링 순으로 증거를 쌓는 편이 안전하다.\n\nGemini 3.7 Flash의 2026년 8월 정식 사양은 텍스트·이미지·영상·음성·PDF를 입력으로 받고 텍스트를 출력하며, 이미지 생성과 Live API는 지원하지 않는다고 구분한다. “멀티모달”이라는 표지만으로 모든 모달리티를 양방향 생성한다고 추정하지 말고 입력·출력 방향, 토큰 한도, 도구별 지원 상태와 미리 보기 여부를 모델 버전별로 확인한다.",
       "sourceRefs": [
         1,
-        3
+        3,
+        4,
+        5
       ]
     },
     {
@@ -117,9 +119,19 @@
       "title": "Multimodal chat templates — Transformers documentation",
       "url": "https://huggingface.co/docs/transformers/en/chat_templating_multimodal",
       "type": "documentation"
+    },
+    {
+      "title": "Gemini 3.7 Flash",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "type": "documentation"
+    },
+    {
+      "title": "Gemini API Release Notes",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "type": "documentation"
     }
   ],
   "status": "reviewed",
   "volatility": "evergreen",
-  "reviewedAt": "2026-07-12"
+  "reviewedAt": "2026-08-24"
 }

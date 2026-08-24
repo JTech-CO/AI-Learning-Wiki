@@ -1,6 +1,6 @@
 {
   "version": "W2-2026-07-13",
-  "generatedAt": "2026-08-13T08:50:05.441Z",
+  "generatedAt": "2026-08-24T04:30:05.356Z",
   "topicCatalogSha256": "25e7bf1c0cc19ffcad268b52c28236f7005996ce92b06af24bbfa23b5ac31a16",
   "articles": [
     {
@@ -16474,8 +16474,8 @@
       "categoryId": "safety",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "agent-security-nist",
@@ -16483,6 +16483,19 @@
         "mitre-atlas"
       ],
       "sources": [
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-54dbc1541342",
           "title": "NIST AI Risk Management Framework",
@@ -16534,6 +16547,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-14T17:52:33.544Z"
+        },
+        {
+          "id": "src-a26043848a70",
+          "title": "Claude Compliance API",
+          "url": "https://platform.claude.com/docs/en/manage-claude/compliance-api",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-a9e3e225dba7",
@@ -16650,10 +16676,12 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-54dbc1541342",
             "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a26043848a70",
             "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
@@ -16667,10 +16695,12 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-54dbc1541342",
             "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a26043848a70",
             "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
@@ -16684,10 +16714,12 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-54dbc1541342",
             "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a26043848a70",
             "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
@@ -16701,10 +16733,12 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-54dbc1541342",
             "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a26043848a70",
             "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
@@ -16733,10 +16767,12 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-54dbc1541342",
             "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a26043848a70",
             "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
@@ -16750,10 +16786,12 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-54dbc1541342",
             "src-6c3efae2cfc1",
             "src-95769a8e35f0",
             "src-9f7d87fbe987",
+            "src-a26043848a70",
             "src-a9e3e225dba7",
             "src-b2ac367daf50",
             "src-c678f61aafad",
@@ -16772,9 +16810,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 9,
+        "primaryCandidates": 11,
         "encyclopediaFamilies": 1,
-        "reachableSources": 10,
+        "reachableSources": 12,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -21391,8 +21429,8 @@
       "categoryId": "safety",
       "tier": "standard",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-14",
-      "reviewDueAt": "2027-01-10T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2027-02-20T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "agent-security-nist",
@@ -21400,6 +21438,19 @@
         "mitre-atlas"
       ],
       "sources": [
+        {
+          "id": "src-4b122e97795e",
+          "title": "Gemini 3.7 Flash Model Card",
+          "url": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
         {
           "id": "src-54dbc1541342",
           "title": "NIST AI Risk Management Framework",
@@ -21526,6 +21577,7 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-4b122e97795e",
             "src-54dbc1541342",
             "src-95769a8e35f0",
             "src-b2ac367daf50",
@@ -21540,6 +21592,7 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-4b122e97795e",
             "src-54dbc1541342",
             "src-95769a8e35f0",
             "src-b2ac367daf50",
@@ -21554,6 +21607,7 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-4b122e97795e",
             "src-54dbc1541342",
             "src-95769a8e35f0",
             "src-b2ac367daf50",
@@ -21568,6 +21622,7 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-4b122e97795e",
             "src-54dbc1541342",
             "src-95769a8e35f0",
             "src-b2ac367daf50",
@@ -21596,6 +21651,7 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-4b122e97795e",
             "src-54dbc1541342",
             "src-95769a8e35f0",
             "src-b2ac367daf50",
@@ -21610,6 +21666,7 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-4b122e97795e",
             "src-54dbc1541342",
             "src-95769a8e35f0",
             "src-b2ac367daf50",
@@ -21629,9 +21686,9 @@
       ],
       "audit": {
         "independentFamilies": 5,
-        "primaryCandidates": 6,
+        "primaryCandidates": 7,
         "encyclopediaFamilies": 1,
-        "reachableSources": 7,
+        "reachableSources": 8,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -28309,8 +28366,8 @@
       "categoryId": "api",
       "tier": "brief",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2027-01-11T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2027-02-20T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -28318,6 +28375,19 @@
         "rfc-9110"
       ],
       "sources": [
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
@@ -28343,6 +28413,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-14T18:16:32.234Z"
+        },
+        {
+          "id": "src-a26043848a70",
+          "title": "Claude Compliance API",
+          "url": "https://platform.claude.com/docs/en/manage-claude/compliance-api",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-b1b13a12aee7",
@@ -28459,8 +28542,10 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-705f094fb89c",
+            "src-a26043848a70",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
@@ -28474,8 +28559,10 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-705f094fb89c",
+            "src-a26043848a70",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
@@ -28489,8 +28576,10 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-705f094fb89c",
+            "src-a26043848a70",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
@@ -28504,8 +28593,10 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-705f094fb89c",
+            "src-a26043848a70",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
@@ -28534,8 +28625,10 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-705f094fb89c",
+            "src-a26043848a70",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
@@ -28549,8 +28642,10 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-705f094fb89c",
+            "src-a26043848a70",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
@@ -28568,10 +28663,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 4,
-        "primaryCandidates": 7,
+        "independentFamilies": 5,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -28867,8 +28962,8 @@
       "categoryId": "api",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -28903,6 +28998,19 @@
           "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
+          "id": "src-50846cd1ff36",
+          "title": "Claude API Pricing",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
+        {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
           "url": "https://spec.openapis.org/oas/latest.html",
@@ -28914,6 +29022,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-a24fd97eb3d0",
+          "title": "Gemini API Release Notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-b1b13a12aee7",
@@ -29043,7 +29164,9 @@
           "candidateSourceIds": [
             "src-0e5ba6524c75",
             "src-49e8d0577a5e",
+            "src-50846cd1ff36",
             "src-529619ee7996",
+            "src-a24fd97eb3d0",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e1038c581bd2",
@@ -29060,7 +29183,9 @@
           "candidateSourceIds": [
             "src-0e5ba6524c75",
             "src-49e8d0577a5e",
+            "src-50846cd1ff36",
             "src-529619ee7996",
+            "src-a24fd97eb3d0",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e1038c581bd2",
@@ -29077,7 +29202,9 @@
           "candidateSourceIds": [
             "src-0e5ba6524c75",
             "src-49e8d0577a5e",
+            "src-50846cd1ff36",
             "src-529619ee7996",
+            "src-a24fd97eb3d0",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e1038c581bd2",
@@ -29094,7 +29221,9 @@
           "candidateSourceIds": [
             "src-0e5ba6524c75",
             "src-49e8d0577a5e",
+            "src-50846cd1ff36",
             "src-529619ee7996",
+            "src-a24fd97eb3d0",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e1038c581bd2",
@@ -29125,7 +29254,9 @@
           "candidateSourceIds": [
             "src-0e5ba6524c75",
             "src-49e8d0577a5e",
+            "src-50846cd1ff36",
             "src-529619ee7996",
+            "src-a24fd97eb3d0",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e1038c581bd2",
@@ -29142,7 +29273,9 @@
           "candidateSourceIds": [
             "src-0e5ba6524c75",
             "src-49e8d0577a5e",
+            "src-50846cd1ff36",
             "src-529619ee7996",
+            "src-a24fd97eb3d0",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
             "src-e1038c581bd2",
@@ -29162,9 +29295,9 @@
       ],
       "audit": {
         "independentFamilies": 4,
-        "primaryCandidates": 9,
+        "primaryCandidates": 11,
         "encyclopediaFamilies": 1,
-        "reachableSources": 10,
+        "reachableSources": 12,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -29181,8 +29314,8 @@
       "categoryId": "api",
       "tier": "standard",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-14",
-      "reviewDueAt": "2027-01-10T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2027-02-20T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -29190,6 +29323,19 @@
         "rfc-9110"
       ],
       "sources": [
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
@@ -29230,6 +29376,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-bab0e18b2802",
+          "title": "OpenAI API Deprecations",
+          "url": "https://developers.openai.com/api/docs/deprecations",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
+        {
           "id": "src-c368a0dbdf8f",
           "title": "RFC 1034: Domain Names - Concepts and Facilities",
           "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
@@ -29267,6 +29426,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-e55c99509dfc",
+          "title": "OpenAI Assistants to Responses Migration Guide",
+          "url": "https://developers.openai.com/api/docs/guides/migrate-to-responses",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-e9fee425ea43",
@@ -29331,12 +29503,15 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-7c5463b20765",
             "src-b1b13a12aee7",
+            "src-bab0e18b2802",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
             "src-e47b60754748",
+            "src-e55c99509dfc",
             "src-e9fee425ea43"
           ],
           "assignmentStatus": "review-required"
@@ -29346,12 +29521,15 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-7c5463b20765",
             "src-b1b13a12aee7",
+            "src-bab0e18b2802",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
             "src-e47b60754748",
+            "src-e55c99509dfc",
             "src-e9fee425ea43"
           ],
           "assignmentStatus": "review-required"
@@ -29361,12 +29539,15 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-7c5463b20765",
             "src-b1b13a12aee7",
+            "src-bab0e18b2802",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
             "src-e47b60754748",
+            "src-e55c99509dfc",
             "src-e9fee425ea43"
           ],
           "assignmentStatus": "review-required"
@@ -29376,12 +29557,15 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-7c5463b20765",
             "src-b1b13a12aee7",
+            "src-bab0e18b2802",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
             "src-e47b60754748",
+            "src-e55c99509dfc",
             "src-e9fee425ea43"
           ],
           "assignmentStatus": "review-required"
@@ -29406,12 +29590,15 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-7c5463b20765",
             "src-b1b13a12aee7",
+            "src-bab0e18b2802",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
             "src-e47b60754748",
+            "src-e55c99509dfc",
             "src-e9fee425ea43"
           ],
           "assignmentStatus": "review-required"
@@ -29421,12 +29608,15 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-7c5463b20765",
             "src-b1b13a12aee7",
+            "src-bab0e18b2802",
             "src-c368a0dbdf8f",
             "src-e28608fb71a7",
             "src-e47b60754748",
+            "src-e55c99509dfc",
             "src-e9fee425ea43"
           ],
           "assignmentStatus": "review-required"
@@ -29440,10 +29630,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 3,
-        "primaryCandidates": 7,
+        "independentFamilies": 4,
+        "primaryCandidates": 10,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 11,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -51578,8 +51768,8 @@
       "categoryId": "agents",
       "tier": "standard",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-14",
-      "reviewDueAt": "2026-09-12T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -51627,6 +51817,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
           "url": "https://spec.openapis.org/oas/latest.html",
@@ -51651,6 +51854,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-5ec44f89359f",
+          "title": "Claude Browser Use Tool",
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-tool",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-721c65211037",
@@ -51733,8 +51949,10 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-5ec44f89359f",
             "src-7647307fe498",
             "src-7b138caa8e63"
           ],
@@ -51748,8 +51966,10 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-5ec44f89359f",
             "src-7647307fe498",
             "src-7b138caa8e63"
           ],
@@ -51763,8 +51983,10 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-5ec44f89359f",
             "src-7647307fe498",
             "src-7b138caa8e63"
           ],
@@ -51778,8 +52000,10 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-5ec44f89359f",
             "src-7647307fe498",
             "src-7b138caa8e63"
           ],
@@ -51809,8 +52033,10 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-5ec44f89359f",
             "src-7647307fe498",
             "src-7b138caa8e63"
           ],
@@ -51824,8 +52050,10 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
+            "src-5ec44f89359f",
             "src-7647307fe498",
             "src-7b138caa8e63"
           ],
@@ -51840,10 +52068,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "independentFamilies": 6,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -65141,8 +65369,8 @@
       "categoryId": "agents",
       "tier": "standard",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-14",
-      "reviewDueAt": "2026-09-12T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -65188,6 +65416,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -65253,6 +65494,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-acf1524a1de8",
+          "title": "Claude Computer Use Tool",
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         }
       ],
       "sections": [
@@ -65296,10 +65550,12 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-7b138caa8e63",
+            "src-acf1524a1de8"
           ],
           "assignmentStatus": "review-required"
         },
@@ -65311,10 +65567,12 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-7b138caa8e63",
+            "src-acf1524a1de8"
           ],
           "assignmentStatus": "review-required"
         },
@@ -65326,10 +65584,12 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-7b138caa8e63",
+            "src-acf1524a1de8"
           ],
           "assignmentStatus": "review-required"
         },
@@ -65341,10 +65601,12 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-7b138caa8e63",
+            "src-acf1524a1de8"
           ],
           "assignmentStatus": "review-required"
         },
@@ -65372,10 +65634,12 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-7b138caa8e63",
+            "src-acf1524a1de8"
           ],
           "assignmentStatus": "review-required"
         },
@@ -65387,10 +65651,12 @@
             "src-0dcc940602be",
             "src-1df60a1d4afe",
             "src-200002328137",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-54dbc1541342",
             "src-7647307fe498",
-            "src-7b138caa8e63"
+            "src-7b138caa8e63",
+            "src-acf1524a1de8"
           ],
           "assignmentStatus": "review-required"
         },
@@ -65403,10 +65669,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 5,
-        "primaryCandidates": 7,
+        "independentFamilies": 6,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -127681,8 +127947,8 @@
       "categoryId": "api",
       "tier": "standard",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-14",
-      "reviewDueAt": "2027-01-10T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2027-02-20T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -127690,6 +127956,19 @@
         "rfc-9110"
       ],
       "sources": [
+        {
+          "id": "src-0f030b5355d8",
+          "title": "Claude Files API",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
         {
           "id": "src-2e5b0dcd6c00",
           "title": "RFC 7578: multipart/form-data",
@@ -127702,6 +127981,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
         },
         {
           "id": "src-529619ee7996",
@@ -127831,7 +128123,9 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-0f030b5355d8",
             "src-2e5b0dcd6c00",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -127846,7 +128140,9 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-0f030b5355d8",
             "src-2e5b0dcd6c00",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -127861,7 +128157,9 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-0f030b5355d8",
             "src-2e5b0dcd6c00",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -127876,7 +128174,9 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-0f030b5355d8",
             "src-2e5b0dcd6c00",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -127906,7 +128206,9 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-0f030b5355d8",
             "src-2e5b0dcd6c00",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -127921,7 +128223,9 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-0f030b5355d8",
             "src-2e5b0dcd6c00",
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -127940,10 +128244,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 3,
-        "primaryCandidates": 7,
+        "independentFamilies": 4,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -153507,8 +153811,8 @@
       "categoryId": "api",
       "tier": "standard",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-14",
-      "reviewDueAt": "2027-01-10T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2027-02-20T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -153516,6 +153820,32 @@
         "rfc-9110"
       ],
       "sources": [
+        {
+          "id": "src-121b461632ab",
+          "title": "OpenAI Image Generation Guide",
+          "url": "https://developers.openai.com/api/docs/guides/image-generation",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
+        {
+          "id": "src-49e8d0577a5e",
+          "title": "OpenAI API Changelog",
+          "url": "https://developers.openai.com/api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
@@ -153642,6 +153972,8 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-121b461632ab",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -153656,6 +153988,8 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-121b461632ab",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -153670,6 +154004,8 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-121b461632ab",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -153684,6 +154020,8 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-121b461632ab",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -153712,6 +154050,8 @@
           "sectionTitle": "구체적인 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-121b461632ab",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -153726,6 +154066,8 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-121b461632ab",
+            "src-49e8d0577a5e",
             "src-529619ee7996",
             "src-b1b13a12aee7",
             "src-c368a0dbdf8f",
@@ -153744,10 +154086,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 3,
-        "primaryCandidates": 6,
+        "independentFamilies": 4,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 7,
+        "reachableSources": 9,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -200682,8 +201024,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -200886,8 +201228,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -201187,8 +201529,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -201488,8 +201830,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -201789,8 +202131,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -202090,8 +202432,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -202391,8 +202733,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -202692,8 +203034,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -202993,8 +203335,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -203294,8 +203636,8 @@
       "categoryId": "agents",
       "tier": "brief",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-08-09",
-      "reviewDueAt": "2026-10-08T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "mcp-spec",
@@ -225056,8 +225398,8 @@
       "categoryId": "ecosystem",
       "tier": "core",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-13",
-      "reviewDueAt": "2027-01-09T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2027-02-20T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "spdx-spec",
@@ -225103,6 +225445,32 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-7ff10c981762",
+          "title": "Gemini 3.7 Flash",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
+        {
+          "id": "src-a24fd97eb3d0",
+          "title": "Gemini API Release Notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         }
       ],
       "sections": [
@@ -225132,7 +225500,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-35d9d40d3d3b",
-            "src-36d10217e688"
+            "src-36d10217e688",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -225142,7 +225512,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-35d9d40d3d3b",
-            "src-36d10217e688"
+            "src-36d10217e688",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -225152,7 +225524,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-35d9d40d3d3b",
-            "src-36d10217e688"
+            "src-36d10217e688",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -225162,7 +225536,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-35d9d40d3d3b",
-            "src-36d10217e688"
+            "src-36d10217e688",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -225182,7 +225558,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-35d9d40d3d3b",
-            "src-36d10217e688"
+            "src-36d10217e688",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -225192,7 +225570,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-35d9d40d3d3b",
-            "src-36d10217e688"
+            "src-36d10217e688",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -225206,9 +225586,9 @@
       ],
       "audit": {
         "independentFamilies": 3,
-        "primaryCandidates": 2,
+        "primaryCandidates": 4,
         "encyclopediaFamilies": 1,
-        "reachableSources": 3,
+        "reachableSources": 5,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -232663,8 +233043,8 @@
       "categoryId": "multimodal",
       "tier": "standard",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-12",
-      "reviewDueAt": "2028-07-11T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2028-08-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "w3c-webnn",
@@ -232700,6 +233080,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-7ff10c981762",
+          "title": "Gemini 3.7 Flash",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
+        {
           "id": "src-85a07e02efe9",
           "title": "Multimodal learning — Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Multimodal_learning",
@@ -232711,6 +233104,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-a24fd97eb3d0",
+          "title": "Gemini API Release Notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         }
       ],
       "sections": [
@@ -232740,7 +233146,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
-            "src-67ea53d9edbb"
+            "src-67ea53d9edbb",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -232750,7 +233158,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
-            "src-67ea53d9edbb"
+            "src-67ea53d9edbb",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -232760,7 +233170,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
-            "src-67ea53d9edbb"
+            "src-67ea53d9edbb",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -232770,7 +233182,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
-            "src-67ea53d9edbb"
+            "src-67ea53d9edbb",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -232790,7 +233204,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
-            "src-67ea53d9edbb"
+            "src-67ea53d9edbb",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -232800,7 +233216,9 @@
           "factual": true,
           "candidateSourceIds": [
             "src-3d7d444bcdb3",
-            "src-67ea53d9edbb"
+            "src-67ea53d9edbb",
+            "src-7ff10c981762",
+            "src-a24fd97eb3d0"
           ],
           "assignmentStatus": "review-required"
         },
@@ -232814,9 +233232,9 @@
       ],
       "audit": {
         "independentFamilies": 3,
-        "primaryCandidates": 2,
+        "primaryCandidates": 4,
         "encyclopediaFamilies": 1,
-        "reachableSources": 3,
+        "reachableSources": 5,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -273206,8 +273624,8 @@
       "categoryId": "llm",
       "tier": "brief",
       "volatility": "periodic",
-      "reviewedAt": "2026-07-15",
-      "reviewDueAt": "2027-01-11T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2027-02-20T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "huggingface-transformers",
@@ -273255,6 +273673,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-49e8d0577a5e",
+          "title": "OpenAI API Changelog",
+          "url": "https://developers.openai.com/api/docs/changelog",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
+        {
           "id": "src-6c920ffe1ecc",
           "title": "vLLM Automatic Prefix Caching",
           "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
@@ -273292,6 +273723,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-c86beef864f4",
+          "title": "OpenAI Prompt Caching",
+          "url": "https://developers.openai.com/api/docs/guides/prompt-caching",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-ceefe0755b1f",
@@ -273355,9 +273799,11 @@
             "src-2cab3ea10b8b",
             "src-32f3c7d144f0",
             "src-3c62359064ba",
+            "src-49e8d0577a5e",
             "src-6c920ffe1ecc",
             "src-933846efb3bd",
             "src-a7e1a9a39c87",
+            "src-c86beef864f4",
             "src-ceefe0755b1f"
           ],
           "assignmentStatus": "review-required"
@@ -273370,9 +273816,11 @@
             "src-2cab3ea10b8b",
             "src-32f3c7d144f0",
             "src-3c62359064ba",
+            "src-49e8d0577a5e",
             "src-6c920ffe1ecc",
             "src-933846efb3bd",
             "src-a7e1a9a39c87",
+            "src-c86beef864f4",
             "src-ceefe0755b1f"
           ],
           "assignmentStatus": "review-required"
@@ -273385,9 +273833,11 @@
             "src-2cab3ea10b8b",
             "src-32f3c7d144f0",
             "src-3c62359064ba",
+            "src-49e8d0577a5e",
             "src-6c920ffe1ecc",
             "src-933846efb3bd",
             "src-a7e1a9a39c87",
+            "src-c86beef864f4",
             "src-ceefe0755b1f"
           ],
           "assignmentStatus": "review-required"
@@ -273400,9 +273850,11 @@
             "src-2cab3ea10b8b",
             "src-32f3c7d144f0",
             "src-3c62359064ba",
+            "src-49e8d0577a5e",
             "src-6c920ffe1ecc",
             "src-933846efb3bd",
             "src-a7e1a9a39c87",
+            "src-c86beef864f4",
             "src-ceefe0755b1f"
           ],
           "assignmentStatus": "review-required"
@@ -273428,9 +273880,11 @@
             "src-2cab3ea10b8b",
             "src-32f3c7d144f0",
             "src-3c62359064ba",
+            "src-49e8d0577a5e",
             "src-6c920ffe1ecc",
             "src-933846efb3bd",
             "src-a7e1a9a39c87",
+            "src-c86beef864f4",
             "src-ceefe0755b1f"
           ],
           "assignmentStatus": "review-required"
@@ -273443,9 +273897,11 @@
             "src-2cab3ea10b8b",
             "src-32f3c7d144f0",
             "src-3c62359064ba",
+            "src-49e8d0577a5e",
             "src-6c920ffe1ecc",
             "src-933846efb3bd",
             "src-a7e1a9a39c87",
+            "src-c86beef864f4",
             "src-ceefe0755b1f"
           ],
           "assignmentStatus": "review-required"
@@ -273460,9 +273916,9 @@
       ],
       "audit": {
         "independentFamilies": 4,
-        "primaryCandidates": 6,
+        "primaryCandidates": 8,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -277242,8 +277698,8 @@
       "categoryId": "ecosystem",
       "tier": "standard",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-23",
-      "reviewDueAt": "2026-09-21T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "spdx-spec",
@@ -277369,6 +277825,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-e396d75ad880",
+          "title": "PyTorch Releases",
+          "url": "https://github.com/pytorch/pytorch/releases",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
+        {
           "id": "src-f4800ca44ab3",
           "title": "PyTorch 2.13.0 Release Notes",
           "url": "https://github.com/pytorch/pytorch/releases/tag/v2.13.0",
@@ -277419,6 +277888,7 @@
             "src-c5dedde19db4",
             "src-cb4c66eb61d6",
             "src-e3547329fbee",
+            "src-e396d75ad880",
             "src-f4800ca44ab3"
           ],
           "assignmentStatus": "review-required"
@@ -277435,6 +277905,7 @@
             "src-c5dedde19db4",
             "src-cb4c66eb61d6",
             "src-e3547329fbee",
+            "src-e396d75ad880",
             "src-f4800ca44ab3"
           ],
           "assignmentStatus": "review-required"
@@ -277451,6 +277922,7 @@
             "src-c5dedde19db4",
             "src-cb4c66eb61d6",
             "src-e3547329fbee",
+            "src-e396d75ad880",
             "src-f4800ca44ab3"
           ],
           "assignmentStatus": "review-required"
@@ -277467,6 +277939,7 @@
             "src-c5dedde19db4",
             "src-cb4c66eb61d6",
             "src-e3547329fbee",
+            "src-e396d75ad880",
             "src-f4800ca44ab3"
           ],
           "assignmentStatus": "review-required"
@@ -277495,6 +277968,7 @@
             "src-c5dedde19db4",
             "src-cb4c66eb61d6",
             "src-e3547329fbee",
+            "src-e396d75ad880",
             "src-f4800ca44ab3"
           ],
           "assignmentStatus": "review-required"
@@ -277511,6 +277985,7 @@
             "src-c5dedde19db4",
             "src-cb4c66eb61d6",
             "src-e3547329fbee",
+            "src-e396d75ad880",
             "src-f4800ca44ab3"
           ],
           "assignmentStatus": "review-required"
@@ -277525,9 +278000,9 @@
       ],
       "audit": {
         "independentFamilies": 4,
-        "primaryCandidates": 8,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 9,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -305137,8 +305612,8 @@
       "categoryId": "api",
       "tier": "standard",
       "volatility": "evergreen",
-      "reviewedAt": "2026-07-13",
-      "reviewDueAt": "2028-07-12T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2028-08-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "openapi-spec",
@@ -305146,6 +305621,19 @@
         "rfc-9110"
       ],
       "sources": [
+        {
+          "id": "src-4182359e79e6",
+          "title": "Claude Platform Release Notes",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-13T08:50:05.441Z"
+        },
         {
           "id": "src-529619ee7996",
           "title": "OpenAPI Specification",
@@ -305184,6 +305672,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-c049b5bcea54",
+          "title": "Claude Python SDK",
+          "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-dbe1112148a9",
@@ -305240,8 +305741,10 @@
           "sectionTitle": "작동 원리",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
+            "src-c049b5bcea54",
             "src-e47b60754748"
           ],
           "assignmentStatus": "review-required"
@@ -305251,8 +305754,10 @@
           "sectionTitle": "구성 요소와 처리 흐름",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
+            "src-c049b5bcea54",
             "src-e47b60754748"
           ],
           "assignmentStatus": "review-required"
@@ -305262,8 +305767,10 @@
           "sectionTitle": "활용 분야와 선택 기준",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
+            "src-c049b5bcea54",
             "src-e47b60754748"
           ],
           "assignmentStatus": "review-required"
@@ -305273,8 +305780,10 @@
           "sectionTitle": "한계와 흔한 오해",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
+            "src-c049b5bcea54",
             "src-e47b60754748"
           ],
           "assignmentStatus": "review-required"
@@ -305295,8 +305804,10 @@
           "sectionTitle": "구체적 적용 예시",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
+            "src-c049b5bcea54",
             "src-e47b60754748"
           ],
           "assignmentStatus": "review-required"
@@ -305306,8 +305817,10 @@
           "sectionTitle": "실무 적용과 검증 절차",
           "factual": true,
           "candidateSourceIds": [
+            "src-4182359e79e6",
             "src-529619ee7996",
             "src-b1b13a12aee7",
+            "src-c049b5bcea54",
             "src-e47b60754748"
           ],
           "assignmentStatus": "review-required"
@@ -305321,10 +305834,10 @@
         }
       ],
       "audit": {
-        "independentFamilies": 3,
-        "primaryCandidates": 3,
+        "independentFamilies": 4,
+        "primaryCandidates": 5,
         "encyclopediaFamilies": 1,
-        "reachableSources": 4,
+        "reachableSources": 6,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,
@@ -351858,8 +352371,8 @@
       "categoryId": "ecosystem",
       "tier": "standard",
       "volatility": "fast-changing",
-      "reviewedAt": "2026-07-14",
-      "reviewDueAt": "2026-09-12T00:00:00.000Z",
+      "reviewedAt": "2026-08-24",
+      "reviewDueAt": "2026-10-23T00:00:00.000Z",
       "manualReviewRequired": true,
       "researchAnchorIds": [
         "spdx-spec",
@@ -351907,6 +352420,19 @@
           "checkedAt": "2026-07-13T19:24:51.785Z"
         },
         {
+          "id": "src-7df98f84a450",
+          "title": "Transformers 5.15.1 Release",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.15.1",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
+        },
+        {
           "id": "src-986f2e70bad8",
           "title": "Reproducible Builds: Definition",
           "url": "https://reproducible-builds.org/docs/definition/",
@@ -351931,6 +352457,19 @@
           "reachability": "verified",
           "relevanceStatus": "editor-linked",
           "checkedAt": "2026-07-13T19:24:51.785Z"
+        },
+        {
+          "id": "src-c07a67b182a2",
+          "title": "Transformers 5.15.0 Release",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.15.0",
+          "type": "documentation",
+          "family": "official-documentation",
+          "origin": "article",
+          "primaryCandidate": true,
+          "encyclopedia": false,
+          "reachability": "verified",
+          "relevanceStatus": "editor-linked",
+          "checkedAt": "2026-08-24T04:30:05.356Z"
         },
         {
           "id": "src-cb4c66eb61d6",
@@ -352004,8 +352543,10 @@
           "candidateSourceIds": [
             "src-2629574b34e9",
             "src-63154ed5d034",
+            "src-7df98f84a450",
             "src-986f2e70bad8",
             "src-a5878ed41338",
+            "src-c07a67b182a2",
             "src-cb4c66eb61d6",
             "src-ceefe0755b1f",
             "src-e3547329fbee"
@@ -352019,8 +352560,10 @@
           "candidateSourceIds": [
             "src-2629574b34e9",
             "src-63154ed5d034",
+            "src-7df98f84a450",
             "src-986f2e70bad8",
             "src-a5878ed41338",
+            "src-c07a67b182a2",
             "src-cb4c66eb61d6",
             "src-ceefe0755b1f",
             "src-e3547329fbee"
@@ -352034,8 +352577,10 @@
           "candidateSourceIds": [
             "src-2629574b34e9",
             "src-63154ed5d034",
+            "src-7df98f84a450",
             "src-986f2e70bad8",
             "src-a5878ed41338",
+            "src-c07a67b182a2",
             "src-cb4c66eb61d6",
             "src-ceefe0755b1f",
             "src-e3547329fbee"
@@ -352049,8 +352594,10 @@
           "candidateSourceIds": [
             "src-2629574b34e9",
             "src-63154ed5d034",
+            "src-7df98f84a450",
             "src-986f2e70bad8",
             "src-a5878ed41338",
+            "src-c07a67b182a2",
             "src-cb4c66eb61d6",
             "src-ceefe0755b1f",
             "src-e3547329fbee"
@@ -352076,8 +352623,10 @@
           "candidateSourceIds": [
             "src-2629574b34e9",
             "src-63154ed5d034",
+            "src-7df98f84a450",
             "src-986f2e70bad8",
             "src-a5878ed41338",
+            "src-c07a67b182a2",
             "src-cb4c66eb61d6",
             "src-ceefe0755b1f",
             "src-e3547329fbee"
@@ -352091,8 +352640,10 @@
           "candidateSourceIds": [
             "src-2629574b34e9",
             "src-63154ed5d034",
+            "src-7df98f84a450",
             "src-986f2e70bad8",
             "src-a5878ed41338",
+            "src-c07a67b182a2",
             "src-cb4c66eb61d6",
             "src-ceefe0755b1f",
             "src-e3547329fbee"
@@ -352109,9 +352660,9 @@
       ],
       "audit": {
         "independentFamilies": 4,
-        "primaryCandidates": 7,
+        "primaryCandidates": 9,
         "encyclopediaFamilies": 1,
-        "reachableSources": 8,
+        "reachableSources": 10,
         "factualSections": 9,
         "sectionsWithCandidates": 9,
         "readyForManualClaimReview": true,

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">API 비용 추적은 측정된 사용량에 시점별 가격과 할인·예산 규칙을 적용해 요청·프로젝트·조직별 비용을 계산하는 활동이다.</p>
 
-<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-15</div>
+<div class="wiki-document-meta">분류: [API·SDK·도구 호출](/category/api/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -54,7 +54,11 @@ API 비용 추적은 측정된 사용량에 시점별 가격과 할인·예산 �
 
 정상 응답뿐 아니라 빈 값, 잘못된 인코딩, 큰 본문, 중복 요청, 시간 초과, 권한 없음과 부분 실패를 계약 테스트에 포함한다. 로그에는 비밀 값 대신 상관관계 식별자를 남긴다. 기본 방법과 비교해 정확도·품질, 지연시간, 처리량, 비용, 설명 가능성과 운영 복잡도를 함께 기록한다. 장점 하나가 나타났더라도 다른 하위 집단이나 실패 사례에서 손실이 커지면 제한된 범위에만 적용한다. 평균값만으로 결론을 내리지 않고 정상·경계·실패 사례를 나눈다. 사람 검토가 필요한 사건, 자동 중단 기준과 다음 재검토 날짜까지 정해야 운영 지식이 된다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a></div>
+OpenAI는 2026년 8월 4일 Usage·Costs 대시보드와 API에서 API 키를 기준으로 필터링·그룹화하는 기능을 추가했다. 운영에서는 이 차원을 팀·서비스·환경별 귀속에 활용하되 키 자체를 사람 식별자로 사용하지 않고 프로젝트·태그·원장 메타데이터와 연결한다. 공급자 집계와 내부 요청 원장을 주기적으로 대사해 누락·지연·크레딧 반영 차이를 기록한다.
+
+가격표에는 효력 시작일·종료일과 표준·한시 상태를 함께 저장한다. 예를 들어 GPT-5.6 Sol의 API 가격은 2026년 8월 21일부터 입력 100만 토큰당 4달러, 출력 100만 토큰당 20달러로 조정됐고 이 프로모션 가격은 적어도 2026년 11월 21일까지 유지될 예정이다. Claude Sonnet 5의 입력 2달러·출력 10달러 가격은 8월 10일 표준 가격으로 확정됐으며, Gemini 3.7 Flash 가격은 12월 31일까지 도입 가격이다. 예정 가격과 확정 가격을 분리하고 적용 기간 밖의 비용을 같은 단가로 재계산하지 않는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-4">[4]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a> <a href="#reference-11">[11]</a> <a href="#reference-12">[12]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -64,7 +68,9 @@ API 비용 추적은 측정된 사용량에 시점별 가격과 할인·예산 �
 
 재현 가능한 검토를 위해 데이터·모델·코드·도구 버전과 난수 설정을 고정한다. 결과가 달라졌다면 한 번에 하나의 조건만 바꾸어 원인을 좁힌다. ‘API 비용 추적(API Cost Tracking)’을 검토할 때는 적용 전제, 관찰 가능한 입력과 출력, 계산 또는 의사결정 단계, 자원 비용과 실패 시 피해를 따로 적는다. 정의에 포함되지 않은 성질을 이름만으로 추정하지 않고, 빠르게 바뀌는 구현은 기준 날짜와 버전을 붙인다. 한계 검토에서는 정상 동작을 설명하는 근거와 실패 가능성을 설명하는 근거를 분리하고, 완화책을 적용한 뒤 새로 생긴 제약도 함께 기록한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+대시보드 수치는 청구 원장의 확정값과 시간차가 있을 수 있고 캐시 할인·배치 할인·크레딧·세금이 요청 시점 추정치와 다를 수 있다. API 키가 회전되거나 공유되면 귀속이 끊기므로 키 수명과 소유 프로젝트의 변경 이력을 보존한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a> <a href="#reference-9">[9]</a> <a href="#reference-10">[10]</a></div>
 
 ### 관련 개념과의 구분
 
@@ -144,6 +150,10 @@ _포함된 코스가 없다._
 6. <span id="reference-6"></span>[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) — documentation
 7. <span id="reference-7"></span>[OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — standard
 8. <span id="reference-8"></span>[HTTP — Wikipedia](https://en.wikipedia.org/wiki/HTTP) — encyclopedia
+9. <span id="reference-9"></span>[OpenAI API Changelog](https://developers.openai.com/api/docs/changelog) — documentation
+10. <span id="reference-10"></span>[OpenAI API Models](https://developers.openai.com/api/docs/models) — documentation
+11. <span id="reference-11"></span>[Claude API Pricing](https://platform.claude.com/docs/en/about-claude/pricing) — documentation
+12. <span id="reference-12"></span>[Gemini API Release Notes](https://ai.google.dev/gemini-api/docs/changelog) — documentation
 
 ### 코스에서 계속 읽기
 

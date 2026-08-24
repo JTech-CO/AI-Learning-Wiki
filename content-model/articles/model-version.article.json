@@ -44,10 +44,12 @@
     {
       "id": "applications",
       "title": "활용 분야와 선택 기준",
-      "body": "후보 모델 비교, 점진 배포, A/B 시험, 사고 롤백과 규제 감사에 사용한다. 운영 트래픽 로그에는 모델 이름뿐 아니라 정확한 버전과 추론 구성 ID를 남겨 결과를 재현한다.\n\n도입 여부는 정확도만이 아니라 지연시간, 비용, 설명 가능성, 데이터 요구량과 실패 시 피해를 함께 비교해 결정한다. 단순한 기준선과 실제 업무 데이터에서의 검증 결과가 복잡한 구성을 정당화해야 한다.",
+      "body": "후보 모델 비교, 점진 배포, A/B 시험, 사고 롤백과 규제 감사에 사용한다. 운영 트래픽 로그에는 모델 이름뿐 아니라 정확한 버전과 추론 구성 ID를 남겨 결과를 재현한다.\n\n도입 여부는 정확도만이 아니라 지연시간, 비용, 설명 가능성, 데이터 요구량과 실패 시 피해를 함께 비교해 결정한다. 단순한 기준선과 실제 업무 데이터에서의 검증 결과가 복잡한 구성을 정당화해야 한다.\n\nGoogle은 2026년 8월 13일 Gemini 3.7 Flash를 정식 출시했다. 안정 모델 ID는 `gemini-3.7-flash`이며 텍스트·이미지·영상·음성·PDF 입력과 텍스트 출력, 1,048,576 입력 토큰과 65,536 출력 토큰을 지원한다. 모델 세대명과 안정 ID, 입출력 계약, 사고 수준과 도구 호환성을 별도 필드로 고정해야 별칭 변경이나 모델 교체를 버전 변화와 혼동하지 않는다.",
       "sourceRefs": [
         1,
-        2
+        2,
+        4,
+        5
       ]
     },
     {
@@ -118,9 +120,19 @@
       "title": "Software versioning — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Software_versioning",
       "type": "encyclopedia"
+    },
+    {
+      "title": "Gemini 3.7 Flash",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "type": "documentation"
+    },
+    {
+      "title": "Gemini API Release Notes",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "type": "documentation"
     }
   ],
   "status": "reviewed",
   "volatility": "periodic",
-  "reviewedAt": "2026-07-13"
+  "reviewedAt": "2026-08-24"
 }

@@ -6,7 +6,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">모델 종료 마이그레이션은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</p>
 
-<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-16</div>
+<div class="wiki-document-meta">분류: [LLM과 토큰 처리](/category/llm/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -16,7 +16,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 이 개념의 목적은 기술 이름을 하나 더 만드는 데 있지 않다. 실제 시스템에서 어떤 입력과 상태를 관측하고, 어떤 기준으로 변경을 허용하며, 실패했을 때 어떤 경로로 복구할지를 하나의 문서화된 판단 단위로 묶는 것이 핵심이다. 적용 범위는 워크로드, 사용자 위험, 비용 제약을 명시한 경우로 한정한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+Gemini 3.7 Flash로 이전할 때는 모델 ID만 바꾸지 않는다. Google의 2026년 8월 마이그레이션 안내는 `temperature`·`top_p`·`top_k` 제거, `thinking_budget`의 `thinking_level` 교체, `candidate_count` 제거, 미리 채운 모델 턴 제거, 마지막 사용자 턴의 비어 있지 않은 텍스트 보장과 함수 응답의 `call_id`·`name` 확인을 요구한다. 모델 교체에는 요청 스키마, 대화 검증과 도구 호출 계약의 회귀 시험이 포함돼야 한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-5">[5]</a> <a href="#reference-6">[6]</a></div>
 
 ### 용어의 위치와 경계
 
@@ -133,6 +135,8 @@ _포함된 코스가 없다._
 2. <span id="reference-2"></span>[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) — paper
 3. <span id="reference-3"></span>[Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) — paper
 4. <span id="reference-4"></span>[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — paper
+5. <span id="reference-5"></span>[Gemini 3.7 Flash 마이그레이션 문서](https://ai.google.dev/gemini-api/docs/generate-content/latest-model) — documentation
+6. <span id="reference-6"></span>[Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash) — documentation
 
 ### 코스에서 계속 읽기
 

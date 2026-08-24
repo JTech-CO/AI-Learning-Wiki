@@ -1,7 +1,7 @@
 {
   "name": "ai-learning-wiki",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "prebuild": "npm run wiki:w60:prepare",
@@ -205,7 +205,8 @@
     "wiki:w60:release": "npm run wiki:w60:report && npm run wiki:w60:validate && npm run wiki:w60:render",
     "ui:contrast": "node scripts/check-light-theme-contrast.mjs",
     "ui:header": "node scripts/check-responsive-header.mjs",
-    "social:images": "node scripts/build-social-images.mjs"
+    "social:images": "node scripts/build-social-images.mjs",
+    "refresh:2026-08-24": "node scripts/finalize-2026-08-24-content-refresh.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

@@ -8,7 +8,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 <p class="wiki-lead">가중치·구조·전처리·토크나이저·설정과 평가 기록의 특정 조합을 식별하고 재현·비교·롤백하기 위한 불변 참조 단위다.</p>
 
-<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-07-13</div>
+<div class="wiki-document-meta">분류: [모델·서비스 생태계](/category/ecosystem/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-24</div>
 
 ## 개념과 원리
 
@@ -52,7 +52,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 도입 여부는 정확도만이 아니라 지연시간, 비용, 설명 가능성, 데이터 요구량과 실패 시 피해를 함께 비교해 결정한다. 단순한 기준선과 실제 업무 데이터에서의 검증 결과가 복잡한 구성을 정당화해야 한다.
 
-<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+Google은 2026년 8월 13일 Gemini 3.7 Flash를 정식 출시했다. 안정 모델 ID는 `gemini-3.7-flash`이며 텍스트·이미지·영상·음성·PDF 입력과 텍스트 출력, 1,048,576 입력 토큰과 65,536 출력 토큰을 지원한다. 모델 세대명과 안정 ID, 입출력 계약, 사고 수준과 도구 호환성을 별도 필드로 고정해야 별칭 변경이나 모델 교체를 버전 변화와 혼동하지 않는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-4">[4]</a> <a href="#reference-5">[5]</a></div>
 
 ### 한계와 흔한 오해
 
@@ -236,6 +238,8 @@ _포함된 코스가 없다._
 1. <span id="reference-1"></span>[Towards Semantic Versioning of Open Pre-trained Language Model Releases](https://arxiv.org/abs/2409.10472) — paper
 2. <span id="reference-2"></span>[MLflow Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) — documentation
 3. <span id="reference-3"></span>[Software versioning — Wikipedia](https://en.wikipedia.org/wiki/Software_versioning) — encyclopedia
+4. <span id="reference-4"></span>[Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash) — documentation
+5. <span id="reference-5"></span>[Gemini API Release Notes](https://ai.google.dev/gemini-api/docs/changelog) — documentation
 
 ### 코스에서 계속 읽기
 

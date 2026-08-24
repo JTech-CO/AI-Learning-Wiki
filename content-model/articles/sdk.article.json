@@ -53,10 +53,12 @@
     {
       "id": "limitations",
       "title": "한계와 흔한 오해",
-      "body": "SDK 버전이 서버 기능과 어긋날 수 있어 변경 기록과 원시 HTTP 계약을 함께 확인한다.\n\n인증·버전·오류·호출 제한·비밀 관리가 빠진 예제 코드를 운영 환경에 그대로 쓰지 않는다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.\n\n이 표제어가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판단할 수 없다. 데이터가 부족하거나 분포가 달라지는 경우, 값의 단위와 차원이 맞지 않는 경우, 권한·네트워크·자원이 제한되는 경우와 의도적으로 조작된 입력을 별도 시험한다. 실패가 탐지되지 않은 채 정상 출력처럼 보이는 경우를 우선 찾아 경고 지표와 중단선을 정한다. 알려진 한계를 우회하는 임시 조치와 근본적인 개선을 구분하고 잔여 위험의 책임자를 명시한다.",
+      "body": "SDK 버전이 서버 기능과 어긋날 수 있어 변경 기록과 원시 HTTP 계약을 함께 확인한다.\n\n인증·버전·오류·호출 제한·비밀 관리가 빠진 예제 코드를 운영 환경에 그대로 쓰지 않는다. 하나의 수치나 데모를 모든 환경에 일반화하지 말고, 데이터 분포·모델 버전·하드웨어·기본 파라미터·평가 방식이 같은지 확인한다. 특히 생성 결과가 자연스럽다는 이유만으로 사실성, 공정성, 보안성까지 확보되었다고 판단하지 않는다.\n\n이 표제어가 잘 작동하는 조건만 나열하면 실제 적용 범위를 판단할 수 없다. 데이터가 부족하거나 분포가 달라지는 경우, 값의 단위와 차원이 맞지 않는 경우, 권한·네트워크·자원이 제한되는 경우와 의도적으로 조작된 입력을 별도 시험한다. 실패가 탐지되지 않은 채 정상 출력처럼 보이는 경우를 우선 찾아 경고 지표와 중단선을 정한다. 알려진 한계를 우회하는 임시 조치와 근본적인 개선을 구분하고 잔여 위험의 책임자를 명시한다.\n\n2026년 8월 20일 Anthropic Python SDK 1.0은 Python 3.10 이상과 `httpx2` 전송 계층을 요구하고, 레거시 Text Completions와 Python SDK v1의 Messages 메서드 표면에서 sampling 매개변수를 제거했다. 비동기 원시 응답은 `await response.parse()`로 파싱하며 Bedrock 리전 누락은 오류가 된다. SDK 주 버전 업그레이드는 HTTP 클라이언트만 교체하는 작업이 아니므로 제거된 메서드·매개변수, 비동기 파싱과 환경 기본값을 계약 테스트해야 한다.",
       "sourceRefs": [
         1,
-        2
+        2,
+        5,
+        6
       ]
     },
     {
@@ -123,9 +125,19 @@
       "title": "Software development kit — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Software_development_kit",
       "type": "encyclopedia"
+    },
+    {
+      "title": "Claude Platform Release Notes",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "type": "documentation"
+    },
+    {
+      "title": "Claude Python SDK",
+      "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python",
+      "type": "documentation"
     }
   ],
   "status": "reviewed",
   "volatility": "evergreen",
-  "reviewedAt": "2026-07-13"
+  "reviewedAt": "2026-08-24"
 }

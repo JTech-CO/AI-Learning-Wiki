@@ -103,12 +103,12 @@ for (let index = 1; index < snapshot.review.queue.length; index += 1) {
   assert.ok(order <= 0, `review queue order changed at ${current.id}`);
 }
 
-assert.equal(snapshot.evidence.uniqueArticleSourceUrls, 1053);
-assert.equal(snapshot.evidence.trackedSourceUrls, 1053);
+assert.equal(snapshot.evidence.uniqueArticleSourceUrls, sourceVerification.totals.articleUrls);
+assert.equal(snapshot.evidence.trackedSourceUrls, sourceVerification.totals.articleUrls);
 assert.equal(snapshot.evidence.untrackedSourceUrls, 0);
-assert.equal(snapshot.evidence.reachableSourceUrls, 1051);
-assert.equal(snapshot.evidence.restrictedSourceUrls, 2);
-assert.equal(snapshot.evidence.unavailableSourceUrls, 0);
+assert.equal(snapshot.evidence.reachableSourceUrls, sourceVerification.totals.reachable);
+assert.equal(snapshot.evidence.restrictedSourceUrls, sourceVerification.totals.restricted);
+assert.equal(snapshot.evidence.unavailableSourceUrls, sourceVerification.totals.unavailable);
 assert.equal(snapshot.evidence.articlesMeetingSourceMinimum, articles.length);
 assert.equal(
   snapshot.evidence.factualSections,
