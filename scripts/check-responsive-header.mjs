@@ -97,10 +97,12 @@ for (const [relativePath, marker] of routeChecks) {
 }
 
 const homeHtml = await read('dist/index.html');
+const wikiIndex = JSON.parse(await read('public/data/wiki-index.json'));
+const expectedArticleCount = Number(wikiIndex.counts.articles).toLocaleString('ko-KR');
 assert.match(
   homeHtml,
-  /class="wiki-counts"[\s\S]*?<strong>1,624<\/strong>개/u,
-  '대문의 검토 완료 백과 문서 수가 1,624개가 아니다.',
+  new RegExp('class="wiki-counts"[\\s\\S]*?<strong>' + expectedArticleCount + '<\\/strong>개', 'u'),
+  '대문의 검토 완료 백과 문서 수가 ' + expectedArticleCount + '개가 아니다.',
 );
 
 const cssFiles = (await readdir('dist/_astro')).filter((file) => file.endsWith('.css'));

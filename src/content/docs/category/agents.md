@@ -83,6 +83,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <ul class="wiki-index-list">
 <li data-article-id="agent-guardrail"><a href="/wiki/agent-guardrail/">에이전트 가드레일</a><span class="wiki-index-summary">에이전트 가드레일은 에이전트의 입력·계획·도구 사용·출력에 정책과 권한 경계를 적용해 위험 행동을 예방·탐지·중단하는 통제다.</span></li>
 <li data-article-id="inter-agent-communication"><a href="/wiki/inter-agent-communication/">에이전트 간 통신</a><span class="wiki-index-summary">에이전트 간 통신은 에이전트들이 의도, 관측, 요청과 결과를 정해진 메시지 형식으로 교환하는 메커니즘이다.</span></li>
+<li data-article-id="a2a-protocol"><a href="/wiki/a2a-protocol/">에이전트 간 프로토콜</a><span class="wiki-index-summary">에이전트 간 프로토콜(A2A)은 구현이 서로 다른 독립 에이전트가 능력을 발견하고 장기 작업을 협업하도록 데이터 모델과 연산 의미를 표준화한 개방형 규약이다.</span></li>
 <li data-article-id="agent-plan-quality"><a href="/wiki/agent-plan-quality/">에이전트 계획 품질</a><span class="wiki-index-summary">에이전트 계획 품질은 목표를 달성하기 위한 단계가 타당한 순서·의존성·완료 조건·비용·위험을 얼마나 잘 표현하는지 나타내는 평가 대상이다.</span></li>
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-index-summary">복잡한 에이전트 과제를 실행 가능하고 검증 가능한 하위 과제로 나누고 의존 관계를 정하는 과정이다.</span></li>
 <li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공률은 주어진 목표의 필수 완료 조건과 제약을 모두 만족한 독립 실행이 전체 시도에서 차지하는 비율이다.</span></li>
@@ -103,6 +104,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="agent-idempotency"><a href="/wiki/agent-idempotency/">에이전트 멱등성</a><span class="wiki-index-summary">에이전트 멱등성은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-goal"><a href="/wiki/agent-goal/">에이전트 목표</a><span class="wiki-index-summary">에이전트가 도달하거나 유지하려는 바람직한 상태를 성공 조건과 제약으로 표현한 것이다.</span></li>
 <li data-article-id="agent-context-handoff"><a href="/wiki/agent-context-handoff/">에이전트 문맥 핸드오프</a><span class="wiki-index-summary">에이전트 문맥 핸드오프는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-discovery"><a href="/wiki/agent-discovery/">에이전트 발견</a><span class="wiki-index-summary">에이전트 발견은 클라이언트가 작업 후보를 수행할 원격 에이전트의 Agent Card를 찾고 신뢰·기능·접속 조건을 검증하는 절차다.</span></li>
 <li data-article-id="agent-benchmark"><a href="/wiki/agent-benchmark/">에이전트 벤치마크</a><span class="wiki-index-summary">에이전트 벤치마크는 계획·도구 사용·상태 관리가 필요한 과제와 성공 판정 환경을 묶어 에이전트 성능을 비교하는 평가 체계다.</span></li>
 <li data-article-id="agent-compensation-transaction"><a href="/wiki/agent-compensation-transaction/">에이전트 보상 트랜잭션</a><span class="wiki-index-summary">에이전트 보상 트랜잭션은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-security"><a href="/wiki/agent-security/">에이전트 보안</a><span class="wiki-index-summary">에이전트 보안은 자율 실행 시스템의 모델·메모리·도구·자격증명·통신과 공급망을 공격과 오용에서 보호하는 활동이다.</span></li>
@@ -134,6 +136,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="agent-termination-condition"><a href="/wiki/agent-termination-condition/">에이전트 종료 조건</a><span class="wiki-index-summary">에이전트 종료 조건은 목표 달성, 실패 확정, 예산 소진 또는 사람 개입 필요성을 근거로 실행 루프를 멈추는 판정 규칙이다.</span></li>
 <li data-article-id="agent-trace-evaluation"><a href="/wiki/agent-trace-evaluation/">에이전트 추적 평가</a><span class="wiki-index-summary">에이전트 추적 평가는 관측·계획·도구 호출·결과·상태 전환으로 이어지는 실행 기록을 단계별로 분석하는 평가 방법이다.</span></li>
 <li data-article-id="agent-canary-run"><a href="/wiki/agent-canary-run/">에이전트 카나리 실행</a><span class="wiki-index-summary">에이전트 카나리 실행은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-card"><a href="/wiki/agent-card/">에이전트 카드</a><span class="wiki-index-summary">에이전트 카드는 A2A 서버의 정체성, 기술, 인터페이스, 프로토콜 버전과 보안 요구를 기계가 읽을 수 있게 공개하는 JSON 메타데이터 문서다.</span></li>
 <li data-article-id="agent-chaos-testing"><a href="/wiki/agent-chaos-testing/">에이전트 카오스 테스트</a><span class="wiki-index-summary">에이전트 카오스 테스트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-harness"><a href="/wiki/agent-harness/">에이전트 하네스</a><span class="wiki-index-summary">에이전트 하네스는 언어 모델 주위에 프롬프트, 도구, 메모리, 정책과 평가기를 결합한 실행 골격이다.</span></li>
 <li data-article-id="agent-handoff"><a href="/wiki/agent-handoff/">에이전트 핸드오프</a><span class="wiki-index-summary">에이전트 핸드오프는 한 에이전트가 진행 중인 작업의 책임과 필요한 문맥을 다른 에이전트에게 넘기는 전환 절차다.</span></li>
@@ -184,6 +187,18 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <section class="wiki-index-group" data-index-group="en-a">
 <h2 id="index-en-a">A</h2>
 <ul class="wiki-index-list">
+<li data-article-id="a2a-observability"><a href="/wiki/a2a-observability/">A2A 관측성</a><span class="wiki-index-summary">A2A 관측성은 여러 조직·에이전트 경계를 지나는 Message와 Task, Artifact, 인증·정책 결정을 공통 추적 문맥과 지표로 연결하는 운영 체계다.</span></li>
+<li data-article-id="a2a-capability-negotiation"><a href="/wiki/a2a-capability-negotiation/">A2A 기능 협상</a><span class="wiki-index-summary">A2A 기능 협상은 Agent Card와 요청 헤더를 대조해 양쪽이 함께 지원하는 바인딩, 버전, 모달리티, 스트리밍·푸시·확장을 선택하는 절차다.</span></li>
+<li data-article-id="a2a-message"><a href="/wiki/a2a-message/">A2A 메시지</a><span class="wiki-index-summary">A2A 메시지는 클라이언트와 원격 에이전트 사이의 한 차례 의사소통을 역할, 고유 messageId와 하나 이상의 Part로 표현하는 프로토콜 객체다.</span></li>
+<li data-article-id="a2a-version-negotiation"><a href="/wiki/a2a-version-negotiation/">A2A 버전 협상</a><span class="wiki-index-summary">A2A 버전 협상은 Agent Card의 인터페이스 버전과 요청의 A2A-Version을 맞춰 기능 의미를 고정하고 호환되지 않는 Major.Minor 조합을 명시적으로 거부하는 절차다.</span></li>
+<li data-article-id="a2a-artifact"><a href="/wiki/a2a-artifact/">A2A 산출물</a><span class="wiki-index-summary">A2A 산출물은 원격 에이전트가 Task 수행 결과로 생성한 문서·파일·구조화 데이터를 고유 artifactId와 Part 집합으로 표현한 납품 객체다.</span></li>
+<li data-article-id="a2a-authentication-delegation"><a href="/wiki/a2a-authentication-delegation/">A2A 인증과 권한 위임</a><span class="wiki-index-summary">A2A 인증과 권한 위임은 클라이언트·사용자·원격 에이전트의 신원을 HTTP 계층에서 확인하고 작업에 필요한 최소 권한만 대상 서비스에 전달하는 보안 경계다.</span></li>
+<li data-article-id="a2a-task-lifecycle"><a href="/wiki/a2a-task-lifecycle/">A2A 작업 수명 주기</a><span class="wiki-index-summary">A2A 작업 수명 주기는 장기 실행을 Task 객체와 명시적 상태 전이로 추적하고 입력 요구, 인증 요구, 완료·취소·실패를 일관되게 처리하는 계약이다.</span></li>
+<li data-article-id="a2a-conformance-testing"><a href="/wiki/a2a-conformance-testing/">A2A 적합성 시험</a><span class="wiki-index-summary">A2A 적합성 시험은 구현이 정본 데이터 모델, 연산, 상태 전이, 오류와 선택한 바인딩의 규범 요구를 같은 의미로 수행하는지 검증하는 계약 시험이다.</span></li>
+<li data-article-id="a2a-content-part"><a href="/wiki/a2a-content-part/">A2A 콘텐츠 파트</a><span class="wiki-index-summary">A2A 콘텐츠 파트는 Message와 Artifact 안에서 텍스트, 원시 바이트, URL 또는 구조화 데이터를 하나만 선택해 담는 최소 콘텐츠 컨테이너다.</span></li>
+<li data-article-id="a2a-push-notification"><a href="/wiki/a2a-push-notification/">A2A 푸시 알림</a><span class="wiki-index-summary">A2A 푸시 알림은 장기 Task의 상태 변화가 생겼을 때 서버가 등록된 웹훅으로 알림을 보내 연결이 끊긴 클라이언트가 작업을 다시 조회하게 하는 비동기 전달 방식이다.</span></li>
+<li data-article-id="a2a-protocol-gateway"><a href="/wiki/a2a-protocol-gateway/">A2A 프로토콜 게이트웨이</a><span class="wiki-index-summary">A2A 프로토콜 게이트웨이는 에이전트 호출 경계에서 발견, 바인딩 변환, 인증, 정책, 속도 제한과 관측을 중앙 적용하되 Task 의미를 보존하는 중개 계층이다.</span></li>
+<li data-article-id="a2a-protocol-binding"><a href="/wiki/a2a-protocol-binding/">A2A 프로토콜 바인딩</a><span class="wiki-index-summary">A2A 프로토콜 바인딩은 추상 A2A 연산과 데이터 모델을 JSON-RPC, gRPC, HTTP+JSON/REST 같은 구체적 전송·직렬화 규칙에 매핑하는 계약이다.</span></li>
 <li data-article-id="ai-agent"><a href="/wiki/ai-agent/">AI 에이전트</a><span class="wiki-index-summary">목표를 바탕으로 상태를 관찰하고 도구를 선택해 여러 단계의 작업을 수행하는 시스템이다.</span></li>
 <li data-article-id="api-action-tool"><a href="/wiki/api-action-tool/">API 행동 도구</a><span class="wiki-index-summary">API 행동 도구는 원격 서비스의 명세된 엔드포인트를 호출해 정보를 조회하거나 외부 상태를 변경하는 에이전트 도구다.</span></li>
 </ul>
@@ -200,6 +215,7 @@ description: "모델이 도구를 사용해 여러 단계를 수행하는 구조
 <li data-article-id="mcp-client"><a href="/wiki/mcp-client/">MCP 클라이언트</a><span class="wiki-index-summary">MCP 클라이언트는 MCP 호스트 안에서 특정 서버와 일대일 관계를 유지하며 요청별 프로토콜 메시지를 주고받는 구성 요소다.</span></li>
 <li data-article-id="mcp-prompts"><a href="/wiki/mcp-prompts/">MCP 프롬프트</a><span class="wiki-index-summary">MCP 프롬프트는 서버가 재사용 가능한 메시지 템플릿과 입력 인수로 공개하는 사용자 선택형 상호작용 구성 요소다.</span></li>
 <li data-article-id="mcp-host"><a href="/wiki/mcp-host/">MCP 호스트</a><span class="wiki-index-summary">MCP 호스트는 하나 이상의 MCP 클라이언트를 내장해 사용자 애플리케이션과 외부 MCP 서버 사이의 연결·권한·문맥을 관리하는 프로그램이다.</span></li>
+<li data-article-id="mcp-a2a-boundary"><a href="/wiki/mcp-a2a-boundary/">MCP와 A2A의 경계</a><span class="wiki-index-summary">MCP와 A2A의 경계는 도구·리소스 사용 계약과 독립 에이전트 협업 계약을 구분해 각 프로토콜을 올바른 시스템 경계에 배치하는 설계 원칙이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-r">

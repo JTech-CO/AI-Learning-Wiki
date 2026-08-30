@@ -3,9 +3,9 @@ title: 전체 문서(색인)
 description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 ---
 
-현재 검토 완료된 백과 문서는 **1624개**다.
+현재 검토 완료된 백과 문서는 **1676개**다.
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-gg">ㄲ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-c">C</a><a href="#index-en-d">D</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-h">H</a><a href="#index-en-i">I</a><a href="#index-en-j">J</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-n">N</a><a href="#index-en-o">O</a><a href="#index-en-p">P</a><a href="#index-en-q">Q</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a><a href="#index-en-t">T</a><a href="#index-en-u">U</a><a href="#index-en-w">W</a><a href="#index-en-x">X</a><a href="#index-en-y">Y</a><a href="#index-en-z">Z</a><a href="#index-other">기타</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-gg">ㄲ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-c">C</a><a href="#index-en-d">D</a><a href="#index-en-e">E</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-h">H</a><a href="#index-en-i">I</a><a href="#index-en-j">J</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-n">N</a><a href="#index-en-o">O</a><a href="#index-en-p">P</a><a href="#index-en-q">Q</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a><a href="#index-en-t">T</a><a href="#index-en-u">U</a><a href="#index-en-w">W</a><a href="#index-en-x">X</a><a href="#index-en-y">Y</a><a href="#index-en-z">Z</a><a href="#index-other">기타</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
@@ -92,6 +92,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="plan-and-execute"><a href="/wiki/plan-and-execute/">계획 후 실행</a><span class="wiki-index-summary">계획 후 실행은 목표를 먼저 여러 하위 과제로 분해한 다음 실행기가 각 단계를 수행하고 결과에 따라 계획을 수정하는 에이전트 방식이다.</span></li>
 <li data-article-id="planner-agent"><a href="/wiki/planner-agent/">계획자 에이전트</a><span class="wiki-index-summary">계획자 에이전트는 목표를 실행 가능한 단계로 분해하고 선후 관계, 필요한 정보와 도구를 정하는 에이전트다.</span></li>
 <li data-article-id="high-bandwidth-memory"><a href="/wiki/high-bandwidth-memory/">고대역폭 메모리</a><span class="wiki-index-summary">고대역폭 메모리는 넓은 인터페이스와 적층 구조로 가속기에 높은 데이터 전송률을 제공하는 메모리 기술이다.</span></li>
+<li data-article-id="korean-high-impact-ai-confirmation"><a href="/wiki/korean-high-impact-ai-confirmation/">고영향 인공지능 확인 절차</a><span class="wiki-index-summary">고영향 인공지능 확인 절차는 사업자가 자사 시스템의 법정 고영향 해당 여부를 정부에 확인 또는 재확인 요청하는 행정 절차다.</span></li>
 <li data-article-id="eigendecomposition"><a href="/wiki/eigendecomposition/">고유분해</a><span class="wiki-index-summary">고유분해는 행렬을 고유벡터 행렬과 고윳값 대각행렬의 곱으로 나타내는 분해다.</span></li>
 <li data-article-id="eigenvalue-eigenvector"><a href="/wiki/eigenvalue-eigenvector/">고윳값과 고유벡터</a><span class="wiki-index-summary">고윳값과 고유벡터는 선형 변환 뒤에도 방향이 유지되고 크기만 특정 배수로 변하는 벡터와 그 배수다.</span></li>
 <li data-article-id="good-old-fashioned-ai"><a href="/wiki/good-old-fashioned-ai/">고전적 인공지능</a><span class="wiki-index-summary">명시적인 기호, 논리, 규칙, 탐색과 지식 표현을 중심으로 한 고전적 인공지능 연구 전통을 가리키는 표현이다.</span></li>
@@ -131,6 +132,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="cross-modal-attention"><a href="/wiki/cross-modal-attention/">교차모달 어텐션</a><span class="wiki-index-summary">교차모달 어텐션은 한 모달리티의 표현을 질의로, 다른 모달리티의 표현을 키와 값으로 사용해 관련 정보를 선택하는 연산이다.</span></li>
 <li data-article-id="cross-modal-alignment"><a href="/wiki/cross-modal-alignment/">교차모달 정렬</a><span class="wiki-index-summary">교차모달 정렬은 서로 다른 모달리티에서 같은 대상이나 의미를 나타내는 요소를 대응시키는 과정이다.</span></li>
 <li data-article-id="cross-lingual-embedding"><a href="/wiki/cross-lingual-embedding/">교차언어 임베딩</a><span class="wiki-index-summary">교차언어 임베딩은 서로 다른 언어의 의미가 같은 문장이나 문서를 공통 벡터 공간에서 가깝게 표현한다.</span></li>
+<li data-article-id="cross-lingual-transfer"><a href="/wiki/cross-lingual-transfer/">교차언어 전이</a><span class="wiki-index-summary">교차언어 전이는 한 언어에서 학습한 표현이나 과제 지식을 다른 언어의 데이터가 적은 상황에 재사용하는 학습 전략이다.</span></li>
 <li data-article-id="span-corruption"><a href="/wiki/span-corruption/">구간 손상 복원</a><span class="wiki-index-summary">구간 손상 복원은 연속된 여러 토큰 구간을 특수 표식으로 바꾸고 누락된 구간을 생성하도록 하는 잡음 제거 학습 방식이다.</span></li>
 <li data-article-id="passage-retrieval"><a href="/wiki/passage-retrieval/">구절 검색</a><span class="wiki-index-summary">구절 검색은 긴 문서를 작은 문단이나 청크로 나누어 질의에 직접 관련된 구간을 반환하는 검색 과제다.</span></li>
 <li data-article-id="structured-output"><a href="/wiki/structured-output/">구조화 출력</a><span class="wiki-index-summary">모델 출력을 미리 정의한 JSON 스키마나 데이터 구조에 맞추는 기능이다.</span></li>
@@ -203,6 +205,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <ul class="wiki-index-list">
 <li data-article-id="multilingual-capability"><a href="/wiki/multilingual-capability/">다국어 능력</a><span class="wiki-index-summary">다국어 능력은 모델이 여러 언어의 입력을 이해하고 생성하며 언어 사이의 의미를 이전하는 능력이다.</span></li>
 <li data-article-id="multilingual-language-model"><a href="/wiki/multilingual-language-model/">다국어 언어 모델</a><span class="wiki-index-summary">다국어 언어 모델은 여러 언어의 텍스트를 공동 학습해 언어 간에 표현과 능력을 공유하는 모델이다.</span></li>
+<li data-article-id="multilingual-token-fertility"><a href="/wiki/multilingual-token-fertility/">다국어 토큰 분절률</a><span class="wiki-index-summary">다국어 토큰 분절률은 같은 언어 단위가 평균 몇 개의 모델 토큰으로 나뉘는지 측정해 언어별 토큰화 효율과 비용 격차를 드러내는 지표다.</span></li>
 <li data-article-id="multilingual-evaluation-protocol"><a href="/wiki/multilingual-evaluation-protocol/">다국어 평가 프로토콜</a><span class="wiki-index-summary">다국어 평가 프로토콜은 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="multivariable-calculus"><a href="/wiki/multivariable-calculus/">다변수 미적분학</a><span class="wiki-index-summary">다변수 미적분학은 여러 입력을 갖는 함수의 극한, 미분, 적분과 최적화를 다루는 수학 분야다.</span></li>
 <li data-article-id="diverse-beam-search"><a href="/wiki/diverse-beam-search/">다양성 빔 탐색</a><span class="wiki-index-summary">다양성 빔 탐색은 빔을 여러 그룹으로 나누고 앞선 그룹과 유사한 후보에 패널티를 주어 서로 다른 시퀀스를 찾는 방법이다.</span></li>
@@ -694,6 +697,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="system-card"><a href="/wiki/system-card/">시스템 카드</a><span class="wiki-index-summary">시스템 카드는 개별 모델을 넘어 배포된 AI 시스템의 구성, 능력 평가, 안전 조치와 잔여 위험을 설명하는 문서다.</span></li>
 <li data-article-id="system-prompt"><a href="/wiki/system-prompt/">시스템 프롬프트</a><span class="wiki-index-summary">시스템 프롬프트는 대화형 언어 모델에 역할, 전역 규칙, 도구 사용과 응답 경계를 우선 문맥으로 제공하는 지시 메시지다.</span></li>
 <li data-article-id="system-prompt-composition"><a href="/wiki/system-prompt-composition/">시스템 프롬프트 합성</a><span class="wiki-index-summary">시스템 프롬프트 합성은 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="systemic-risk-general-purpose-ai-model"><a href="/wiki/systemic-risk-general-purpose-ai-model/">시스템적 위험 범용 AI 모델</a><span class="wiki-index-summary">시스템적 위험 범용 AI 모델은 고영향 역량이나 위원회 지정으로 EU 차원의 광범위한 위험을 낳을 수 있어 추가 의무가 적용되는 GPAI 모델이다.</span></li>
 <li data-article-id="beginning-end-token"><a href="/wiki/beginning-end-token/">시작·종료 토큰</a><span class="wiki-index-summary">시작·종료 토큰은 시퀀스의 시작과 끝 경계를 모델에 명시하는 특수 토큰이다.</span></li>
 <li data-article-id="sequence-classification-fine-tuning"><a href="/wiki/sequence-classification-fine-tuning/">시퀀스 분류 미세조정</a><span class="wiki-index-summary">시퀀스 분류 미세조정은 사전학습 모델의 문장·문서 표현에 분류기를 연결해 범주 예측 과제에 맞게 매개변수를 갱신하는 과정이다.</span></li>
 <li data-article-id="sequence-likelihood"><a href="/wiki/sequence-likelihood/">시퀀스 우도</a><span class="wiki-index-summary">시퀀스 우도는 모델이 관측된 토큰열에 부여하는 결합확률이며 각 토큰의 조건부 확률 곱으로 계산할 수 있다.</span></li>
@@ -775,6 +779,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="energy-based-model"><a href="/wiki/energy-based-model/">에너지 기반 모델</a><span class="wiki-index-summary">에너지 기반 모델은 입력과 출력 조합의 적합성을 스칼라 에너지로 표현하고 낮은 에너지 상태를 더 그럴듯하게 보는 모델이다.</span></li>
 <li data-article-id="agent-guardrail"><a href="/wiki/agent-guardrail/">에이전트 가드레일</a><span class="wiki-index-summary">에이전트 가드레일은 에이전트의 입력·계획·도구 사용·출력에 정책과 권한 경계를 적용해 위험 행동을 예방·탐지·중단하는 통제다.</span></li>
 <li data-article-id="inter-agent-communication"><a href="/wiki/inter-agent-communication/">에이전트 간 통신</a><span class="wiki-index-summary">에이전트 간 통신은 에이전트들이 의도, 관측, 요청과 결과를 정해진 메시지 형식으로 교환하는 메커니즘이다.</span></li>
+<li data-article-id="a2a-protocol"><a href="/wiki/a2a-protocol/">에이전트 간 프로토콜</a><span class="wiki-index-summary">에이전트 간 프로토콜(A2A)은 구현이 서로 다른 독립 에이전트가 능력을 발견하고 장기 작업을 협업하도록 데이터 모델과 연산 의미를 표준화한 개방형 규약이다.</span></li>
 <li data-article-id="agent-plan-quality"><a href="/wiki/agent-plan-quality/">에이전트 계획 품질</a><span class="wiki-index-summary">에이전트 계획 품질은 목표를 달성하기 위한 단계가 타당한 순서·의존성·완료 조건·비용·위험을 얼마나 잘 표현하는지 나타내는 평가 대상이다.</span></li>
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-index-summary">복잡한 에이전트 과제를 실행 가능하고 검증 가능한 하위 과제로 나누고 의존 관계를 정하는 과정이다.</span></li>
 <li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-index-summary">에이전트 과제 성공률은 주어진 목표의 필수 완료 조건과 제약을 모두 만족한 독립 실행이 전체 시도에서 차지하는 비율이다.</span></li>
@@ -795,6 +800,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="agent-idempotency"><a href="/wiki/agent-idempotency/">에이전트 멱등성</a><span class="wiki-index-summary">에이전트 멱등성은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-goal"><a href="/wiki/agent-goal/">에이전트 목표</a><span class="wiki-index-summary">에이전트가 도달하거나 유지하려는 바람직한 상태를 성공 조건과 제약으로 표현한 것이다.</span></li>
 <li data-article-id="agent-context-handoff"><a href="/wiki/agent-context-handoff/">에이전트 문맥 핸드오프</a><span class="wiki-index-summary">에이전트 문맥 핸드오프는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-discovery"><a href="/wiki/agent-discovery/">에이전트 발견</a><span class="wiki-index-summary">에이전트 발견은 클라이언트가 작업 후보를 수행할 원격 에이전트의 Agent Card를 찾고 신뢰·기능·접속 조건을 검증하는 절차다.</span></li>
 <li data-article-id="agent-benchmark"><a href="/wiki/agent-benchmark/">에이전트 벤치마크</a><span class="wiki-index-summary">에이전트 벤치마크는 계획·도구 사용·상태 관리가 필요한 과제와 성공 판정 환경을 묶어 에이전트 성능을 비교하는 평가 체계다.</span></li>
 <li data-article-id="agent-compensation-transaction"><a href="/wiki/agent-compensation-transaction/">에이전트 보상 트랜잭션</a><span class="wiki-index-summary">에이전트 보상 트랜잭션은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-security"><a href="/wiki/agent-security/">에이전트 보안</a><span class="wiki-index-summary">에이전트 보안은 자율 실행 시스템의 모델·메모리·도구·자격증명·통신과 공급망을 공격과 오용에서 보호하는 활동이다.</span></li>
@@ -827,6 +833,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="agent-least-privilege"><a href="/wiki/agent-least-privilege/">에이전트 최소 권한</a><span class="wiki-index-summary">에이전트 최소 권한은 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-trace-evaluation"><a href="/wiki/agent-trace-evaluation/">에이전트 추적 평가</a><span class="wiki-index-summary">에이전트 추적 평가는 관측·계획·도구 호출·결과·상태 전환으로 이어지는 실행 기록을 단계별로 분석하는 평가 방법이다.</span></li>
 <li data-article-id="agent-canary-run"><a href="/wiki/agent-canary-run/">에이전트 카나리 실행</a><span class="wiki-index-summary">에이전트 카나리 실행은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="agent-card"><a href="/wiki/agent-card/">에이전트 카드</a><span class="wiki-index-summary">에이전트 카드는 A2A 서버의 정체성, 기술, 인터페이스, 프로토콜 버전과 보안 요구를 기계가 읽을 수 있게 공개하는 JSON 메타데이터 문서다.</span></li>
 <li data-article-id="agent-chaos-testing"><a href="/wiki/agent-chaos-testing/">에이전트 카오스 테스트</a><span class="wiki-index-summary">에이전트 카오스 테스트는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="agent-evaluation"><a href="/wiki/agent-evaluation/">에이전트 평가</a><span class="wiki-index-summary">에이전트 평가는 자율 시스템의 최종 결과뿐 아니라 계획, 도구 사용, 상태 관리, 복구와 안전한 중단 능력을 측정하는 과정이다.</span></li>
 <li data-article-id="agent-harness"><a href="/wiki/agent-harness/">에이전트 하네스</a><span class="wiki-index-summary">에이전트 하네스는 언어 모델 주위에 프롬프트, 도구, 메모리, 정책과 평가기를 결합한 실행 골격이다.</span></li>
@@ -1403,6 +1410,24 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="learning-rate-schedule"><a href="/wiki/learning-rate-schedule/">학습률 스케줄</a><span class="wiki-index-summary">학습률 스케줄은 학습 단계나 검증 신호에 따라 옵티마이저의 학습률을 바꾸는 규칙이다.</span></li>
 <li data-article-id="learning-rate-warmup"><a href="/wiki/learning-rate-warmup/">학습률 워밍업</a><span class="wiki-index-summary">학습률 워밍업은 학습 초기에 작은 학습률에서 시작해 정해진 기간 동안 목표 학습률까지 점진적으로 높이는 기법이다.</span></li>
 <li data-article-id="learned-position-embedding"><a href="/wiki/learned-position-embedding/">학습형 위치 임베딩</a><span class="wiki-index-summary">학습형 위치 임베딩은 각 시퀀스 위치에 대응하는 벡터를 모델 파라미터로 두고 데이터에서 학습하는 방식이다.</span></li>
+<li data-article-id="korean-high-impact-ai"><a href="/wiki/korean-high-impact-ai/">한국 고영향 인공지능</a><span class="wiki-index-summary">한국 고영향 인공지능은 사람의 생명·안전이나 기본권에 중대한 영향을 미칠 우려가 있어 법정 영역과 기준으로 식별하는 인공지능시스템이다.</span></li>
+<li data-article-id="korean-high-impact-ai-operator-duties"><a href="/wiki/korean-high-impact-ai-operator-duties/">한국 고영향 AI 사업자 책무</a><span class="wiki-index-summary">한국 고영향 AI 사업자 책무는 고영향 인공지능 관련 사업자가 위험관리, 설명·보호 조치 등 법정 신뢰성 조치를 이행하는 체계다.</span></li>
+<li data-article-id="korean-ai-basic-act"><a href="/wiki/korean-ai-basic-act/">한국 인공지능기본법</a><span class="wiki-index-summary">한국 인공지능기본법은 인공지능의 발전과 신뢰 기반 조성을 함께 규율하는 한국의 기본 법률이다.</span></li>
+<li data-article-id="korean-ai-safety-duty"><a href="/wiki/korean-ai-safety-duty/">한국 AI 안전성 확보 의무</a><span class="wiki-index-summary">한국 AI 안전성 확보 의무는 법정 누적 연산량 기준 이상 인공지능시스템의 수명주기 위험관리와 안전사고 대응을 요구하는 제도다.</span></li>
+<li data-article-id="korean-ai-impact-assessment"><a href="/wiki/korean-ai-impact-assessment/">한국 AI 영향평가</a><span class="wiki-index-summary">한국 AI 영향평가는 고영향 인공지능이 기본권에 미치는 영향을 사업자가 사전에 구조적으로 평가하고 완화하는 제도다.</span></li>
+<li data-article-id="korean-ai-transparency-duty"><a href="/wiki/korean-ai-transparency-duty/">한국 AI 투명성 확보 의무</a><span class="wiki-index-summary">한국 AI 투명성 확보 의무는 고영향·생성형 인공지능 기반 제품·서비스와 생성 결과물에 대해 법이 정한 고지와 표시를 제공하는 의무다.</span></li>
+<li data-article-id="korean-pii-detection"><a href="/wiki/korean-pii-detection/">한국어 개인정보 탐지</a><span class="wiki-index-summary">한국어 개인정보 탐지는 한국어 문서와 대화에서 직접·간접 식별자를 찾아 위험 수준과 처리 정책에 맞게 분류하는 절차다.</span></li>
+<li data-article-id="korean-named-entity-recognition"><a href="/wiki/korean-named-entity-recognition/">한국어 개체명 인식</a><span class="wiki-index-summary">한국어 개체명 인식은 한국어 문장에서 사람·기관·장소·날짜 등 지정 범주의 문자열 범위와 유형을 찾아내는 순차 표지 과제다.</span></li>
+<li data-article-id="korean-honorifics-and-speech-acts"><a href="/wiki/korean-honorifics-and-speech-acts/">한국어 높임말과 화행</a><span class="wiki-index-summary">한국어 높임말과 화행은 주체·객체·청자에 대한 높임 표현과 진술·질문·요청 같은 발화 의도를 사회적 관계와 문맥에서 함께 해석하는 문제다.</span></li>
+<li data-article-id="korean-word-spacing-variation"><a href="/wiki/korean-word-spacing-variation/">한국어 띄어쓰기 변이</a><span class="wiki-index-summary">한국어 띄어쓰기 변이는 같은 내용이 규범·구어·입력 습관에 따라 서로 다른 공백 경계로 나타나 토큰화와 검색 결과를 바꾸는 현상이다.</span></li>
+<li data-article-id="korean-sentence-segmentation"><a href="/wiki/korean-sentence-segmentation/">한국어 문장 분할</a><span class="wiki-index-summary">한국어 문장 분할은 종결 어미·문장부호·인용·대화 문맥을 이용해 한국어 연속 텍스트에서 문장 경계를 판정하는 처리다.</span></li>
+<li data-article-id="korean-dialect-robustness"><a href="/wiki/korean-dialect-robustness/">한국어 방언 강건성</a><span class="wiki-index-summary">한국어 방언 강건성은 표준어 중심으로 학습한 모델이 지역 어휘·음운·문법 변이를 만나도 의미와 사용자 의도를 안정적으로 처리하는 정도다.</span></li>
+<li data-article-id="korean-language-identification"><a href="/wiki/korean-language-identification/">한국어 언어 식별</a><span class="wiki-index-summary">한국어 언어 식별은 문서·문장·토큰이 한국어인지, 또는 다른 언어와 혼용되었는지를 문자와 문맥 단서로 판정하는 과제다.</span></li>
+<li data-article-id="korean-output-language-alignment"><a href="/wiki/korean-output-language-alignment/">한국어 출력 언어 정렬</a><span class="wiki-index-summary">한국어 출력 언어 정렬은 한영 혼용 입력과 대화 문맥에서 사용자가 기대하는 응답 언어를 추론하고 그 언어를 끝까지 유지하는 능력이다.</span></li>
+<li data-article-id="korean-tokenization"><a href="/wiki/korean-tokenization/">한국어 토큰화</a><span class="wiki-index-summary">한국어 토큰화는 한글 음절·자모·어절·형태소와 부분어 어휘 사이의 경계를 정해 한국어 문자열을 모델 토큰열로 바꾸는 절차다.</span></li>
+<li data-article-id="korean-morphological-analysis"><a href="/wiki/korean-morphological-analysis/">한국어 형태소 분석</a><span class="wiki-index-summary">한국어 형태소 분석은 어절을 어간·어미·조사·접사 같은 최소 기능 단위로 나누고 각 단위의 품사와 문법 정보를 판정하는 처리다.</span></li>
+<li data-article-id="korean-english-code-switching"><a href="/wiki/korean-english-code-switching/">한국어·영어 코드 스위칭</a><span class="wiki-index-summary">한국어·영어 코드 스위칭은 한 발화나 대화 안에서 두 언어가 단어·구·문장 단위로 번갈아 나타나는 사용 양상과 처리 문제다.</span></li>
+<li data-article-id="hangul-unicode-normalization"><a href="/wiki/hangul-unicode-normalization/">한글 유니코드 정규화</a><span class="wiki-index-summary">한글 유니코드 정규화는 완성형 음절과 조합 자모처럼 정준적으로 동등한 표현을 NFC·NFD 규칙에 따라 일관된 코드 포인트열로 바꾸는 절차다.</span></li>
 <li data-article-id="function-calling"><a href="/wiki/function-calling/">함수 호출</a><span class="wiki-index-summary">함수 호출은 모델이 자연어 답 대신 미리 정의된 함수 이름과 구조화된 인수를 선택해 외부 실행을 요청하는 인터페이스 패턴이다.</span></li>
 <li data-article-id="synthetic-data"><a href="/wiki/synthetic-data/">합성 데이터</a><span class="wiki-index-summary">실제 관측값을 그대로 복제하지 않고 규칙·시뮬레이션·통계 또는 생성 모델로 만든 데이터다.</span></li>
 <li data-article-id="convolutional-neural-network"><a href="/wiki/convolutional-neural-network/">합성곱 신경망</a><span class="wiki-index-summary">합성곱 신경망은 국소 필터의 가중치를 공간 위치에 공유해 격자 데이터의 특징을 학습하는 신경망이다.</span></li>
@@ -1458,6 +1483,18 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <section class="wiki-index-group" data-index-group="en-a">
 <h2 id="index-en-a">A</h2>
 <ul class="wiki-index-list">
+<li data-article-id="a2a-observability"><a href="/wiki/a2a-observability/">A2A 관측성</a><span class="wiki-index-summary">A2A 관측성은 여러 조직·에이전트 경계를 지나는 Message와 Task, Artifact, 인증·정책 결정을 공통 추적 문맥과 지표로 연결하는 운영 체계다.</span></li>
+<li data-article-id="a2a-capability-negotiation"><a href="/wiki/a2a-capability-negotiation/">A2A 기능 협상</a><span class="wiki-index-summary">A2A 기능 협상은 Agent Card와 요청 헤더를 대조해 양쪽이 함께 지원하는 바인딩, 버전, 모달리티, 스트리밍·푸시·확장을 선택하는 절차다.</span></li>
+<li data-article-id="a2a-message"><a href="/wiki/a2a-message/">A2A 메시지</a><span class="wiki-index-summary">A2A 메시지는 클라이언트와 원격 에이전트 사이의 한 차례 의사소통을 역할, 고유 messageId와 하나 이상의 Part로 표현하는 프로토콜 객체다.</span></li>
+<li data-article-id="a2a-version-negotiation"><a href="/wiki/a2a-version-negotiation/">A2A 버전 협상</a><span class="wiki-index-summary">A2A 버전 협상은 Agent Card의 인터페이스 버전과 요청의 A2A-Version을 맞춰 기능 의미를 고정하고 호환되지 않는 Major.Minor 조합을 명시적으로 거부하는 절차다.</span></li>
+<li data-article-id="a2a-artifact"><a href="/wiki/a2a-artifact/">A2A 산출물</a><span class="wiki-index-summary">A2A 산출물은 원격 에이전트가 Task 수행 결과로 생성한 문서·파일·구조화 데이터를 고유 artifactId와 Part 집합으로 표현한 납품 객체다.</span></li>
+<li data-article-id="a2a-authentication-delegation"><a href="/wiki/a2a-authentication-delegation/">A2A 인증과 권한 위임</a><span class="wiki-index-summary">A2A 인증과 권한 위임은 클라이언트·사용자·원격 에이전트의 신원을 HTTP 계층에서 확인하고 작업에 필요한 최소 권한만 대상 서비스에 전달하는 보안 경계다.</span></li>
+<li data-article-id="a2a-task-lifecycle"><a href="/wiki/a2a-task-lifecycle/">A2A 작업 수명 주기</a><span class="wiki-index-summary">A2A 작업 수명 주기는 장기 실행을 Task 객체와 명시적 상태 전이로 추적하고 입력 요구, 인증 요구, 완료·취소·실패를 일관되게 처리하는 계약이다.</span></li>
+<li data-article-id="a2a-conformance-testing"><a href="/wiki/a2a-conformance-testing/">A2A 적합성 시험</a><span class="wiki-index-summary">A2A 적합성 시험은 구현이 정본 데이터 모델, 연산, 상태 전이, 오류와 선택한 바인딩의 규범 요구를 같은 의미로 수행하는지 검증하는 계약 시험이다.</span></li>
+<li data-article-id="a2a-content-part"><a href="/wiki/a2a-content-part/">A2A 콘텐츠 파트</a><span class="wiki-index-summary">A2A 콘텐츠 파트는 Message와 Artifact 안에서 텍스트, 원시 바이트, URL 또는 구조화 데이터를 하나만 선택해 담는 최소 콘텐츠 컨테이너다.</span></li>
+<li data-article-id="a2a-push-notification"><a href="/wiki/a2a-push-notification/">A2A 푸시 알림</a><span class="wiki-index-summary">A2A 푸시 알림은 장기 Task의 상태 변화가 생겼을 때 서버가 등록된 웹훅으로 알림을 보내 연결이 끊긴 클라이언트가 작업을 다시 조회하게 하는 비동기 전달 방식이다.</span></li>
+<li data-article-id="a2a-protocol-gateway"><a href="/wiki/a2a-protocol-gateway/">A2A 프로토콜 게이트웨이</a><span class="wiki-index-summary">A2A 프로토콜 게이트웨이는 에이전트 호출 경계에서 발견, 바인딩 변환, 인증, 정책, 속도 제한과 관측을 중앙 적용하되 Task 의미를 보존하는 중개 계층이다.</span></li>
+<li data-article-id="a2a-protocol-binding"><a href="/wiki/a2a-protocol-binding/">A2A 프로토콜 바인딩</a><span class="wiki-index-summary">A2A 프로토콜 바인딩은 추상 A2A 연산과 데이터 모델을 JSON-RPC, gRPC, HTTP+JSON/REST 같은 구체적 전송·직렬화 규칙에 매핑하는 계약이다.</span></li>
 <li data-article-id="adagrad"><a href="/wiki/adagrad/">AdaGrad</a><span class="wiki-index-summary">AdaGrad는 매개변수별 과거 제곱 기울기를 누적해 자주 갱신된 방향의 유효 학습률을 줄이는 적응형 최적화법이다.</span></li>
 <li data-article-id="adam-optimizer"><a href="/wiki/adam-optimizer/">Adam 최적화</a><span class="wiki-index-summary">Adam은 그래디언트의 1차 모멘트와 제곱 그래디언트의 2차 모멘트를 지수이동평균으로 추정하는 적응적 옵티마이저다.</span></li>
 <li data-article-id="adamw"><a href="/wiki/adamw/">AdamW</a><span class="wiki-index-summary">AdamW는 Adam의 적응적 그래디언트 갱신과 가중치 감쇠를 분리해 적용하는 옵티마이저다.</span></li>
@@ -1571,6 +1608,21 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="dpo-beta-selection"><a href="/wiki/dpo-beta-selection/">DPO 베타 선택</a><span class="wiki-index-summary">DPO 베타 선택은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 </ul>
 </section>
+<section class="wiki-index-group" data-index-group="en-e">
+<h2 id="index-en-e">E</h2>
+<ul class="wiki-index-list">
+<li data-article-id="eu-ai-act-prohibited-practices"><a href="/wiki/eu-ai-act-prohibited-practices/">EU AI Act 금지 관행</a><span class="wiki-index-summary">EU AI Act 금지 관행은 기본권과 안전에 용인할 수 없는 위험을 만드는 특정 AI 개발·출시·사용 행위를 금지하는 규칙이다.</span></li>
+<li data-article-id="eu-ai-literacy-duty"><a href="/wiki/eu-ai-literacy-duty/">EU AI 리터러시 의무</a><span class="wiki-index-summary">EU AI 리터러시 의무는 AI를 운영·사용하는 인력이 역할과 맥락에 맞는 이해와 역량을 갖추도록 조치를 설계하는 규율이다.</span></li>
+<li data-article-id="eu-high-risk-record-keeping"><a href="/wiki/eu-high-risk-record-keeping/">EU 고위험 AI 기록보존</a><span class="wiki-index-summary">EU 고위험 AI 기록보존은 시스템이 수명주기 사건을 자동 기록하고 책임 주체가 요구 기간 동안 추적 가능한 증거를 유지하게 하는 요구사항이다.</span></li>
+<li data-article-id="eu-high-risk-data-governance"><a href="/wiki/eu-high-risk-data-governance/">EU 고위험 AI 데이터 거버넌스</a><span class="wiki-index-summary">EU 고위험 AI 데이터 거버넌스는 학습·검증·시험 데이터의 목적 적합성, 품질, 대표성과 편향 통제를 수명주기 절차로 관리하는 요구사항이다.</span></li>
+<li data-article-id="eu-high-risk-post-market-monitoring"><a href="/wiki/eu-high-risk-post-market-monitoring/">EU 고위험 AI 사후시장 모니터링</a><span class="wiki-index-summary">EU 고위험 AI 사후시장 모니터링은 출시 후 성능·위험·오용·사고 정보를 체계적으로 수집해 지속 준수와 개선에 사용하는 체계다.</span></li>
+<li data-article-id="eu-high-risk-ai-system"><a href="/wiki/eu-high-risk-ai-system/">EU 고위험 AI 시스템</a><span class="wiki-index-summary">EU 고위험 AI 시스템은 제품 안전 구성요소 또는 민감한 이용 사례로 인해 건강·안전·기본권 위험이 큰 것으로 분류되는 AI 시스템이다.</span></li>
+<li data-article-id="eu-high-risk-conformity-assessment"><a href="/wiki/eu-high-risk-conformity-assessment/">EU 고위험 AI 적합성 평가</a><span class="wiki-index-summary">EU 고위험 AI 적합성 평가는 시장 출시·사용 개시 전에 시스템이 AI Act 필수 요구사항을 충족함을 입증하는 절차다.</span></li>
+<li data-article-id="eu-fundamental-rights-impact-assessment"><a href="/wiki/eu-fundamental-rights-impact-assessment/">EU 기본권 영향평가</a><span class="wiki-index-summary">EU 기본권 영향평가(FRIA)는 특정 고위험 AI 배포자가 사용 맥락에서 기본권 영향을 식별·완화하고 감독기관에 알리는 절차다.</span></li>
+<li data-article-id="general-purpose-ai-provider-obligations"><a href="/wiki/general-purpose-ai-provider-obligations/">EU 범용 AI 모델 제공자 의무</a><span class="wiki-index-summary">EU 범용 AI 모델 제공자 의무는 기술 문서, 하류 제공자 정보, 저작권 정책과 학습 콘텐츠 요약을 요구하는 AI Act 규율이다.</span></li>
+<li data-article-id="gpai-code-of-practice"><a href="/wiki/gpai-code-of-practice/">EU 범용 AI 실천강령</a><span class="wiki-index-summary">EU 범용 AI 실천강령은 GPAI 제공자가 AI Act의 투명성·저작권·안전·보안 의무 준수를 입증하도록 돕는 자발적 준수 도구다.</span></li>
+</ul>
+</section>
 <section class="wiki-index-group" data-index-group="en-f">
 <h2 id="index-en-f">F</h2>
 <ul class="wiki-index-list">
@@ -1639,6 +1691,10 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="k-means-clustering"><a href="/wiki/k-means-clustering/">K-평균 군집화</a><span class="wiki-index-summary">K-평균 군집화는 각 점을 가장 가까운 중심에 배정하고 군집 내 제곱거리를 줄이도록 K개 중심을 반복 갱신하는 알고리즘이다.</span></li>
 <li data-article-id="keras"><a href="/wiki/keras/">Keras</a><span class="wiki-index-summary">Keras는 신경망 층, 모델, 학습 루프를 고수준 API로 조립하고 여러 계산 백엔드에서 실행할 수 있게 하는 라이브러리다.</span></li>
 <li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-index-summary">KL 페널티는 새 정책의 출력 분포가 기준 정책에서 지나치게 멀어지는 것을 억제하기 위해 KL 발산을 목적함수에 더하는 항이다.</span></li>
+<li data-article-id="klue"><a href="/wiki/klue/">KLUE</a><span class="wiki-index-summary">KLUE는 한국어 자연어 이해를 주제 분류·문장 유사도·추론·개체명·관계·의존 구문·기계독해·대화 상태 추적의 여덟 과제로 평가하는 벤치마크다.</span></li>
+<li data-article-id="kmmlu"><a href="/wiki/kmmlu/">KMMLU</a><span class="wiki-index-summary">KMMLU는 한국어로 원래 작성된 시험 문제를 바탕으로 인문·사회·과학·공학·전문 직무 등 45개 분야의 객관식 문제 해결 능력을 평가하는 벤치마크다.</span></li>
+<li data-article-id="ko-h5-benchmark"><a href="/wiki/ko-h5-benchmark/">Ko-H5 벤치마크</a><span class="wiki-index-summary">Ko-H5 벤치마크는 공개 한국어 LLM을 여러 한국어 능력 과제로 비교하고 비공개 시험 세트로 데이터 오염 위험을 줄이려 한 평가 묶음이다.</span></li>
+<li data-article-id="korquad"><a href="/wiki/korquad/">KorQuAD</a><span class="wiki-index-summary">KorQuAD는 한국어 위키 문서를 읽고 질문의 답이 되는 문자열 범위를 찾도록 만든 한국어 기계독해 데이터셋과 평가 체계다.</span></li>
 <li data-article-id="kv-cache"><a href="/wiki/kv-cache/">KV 캐시</a><span class="wiki-index-summary">이전 토큰의 어텐션 키와 값을 저장해 자동회귀 생성의 중복 계산을 줄이는 캐시다.</span></li>
 <li data-article-id="kv-cache-isolation"><a href="/wiki/kv-cache-isolation/">KV 캐시 격리</a><span class="wiki-index-summary">KV 캐시 격리는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="kv-cache-tiering"><a href="/wiki/kv-cache-tiering/">KV 캐시 계층화</a><span class="wiki-index-summary">KV 캐시 계층화는 접근 빈도와 재사용 가능성에 따라 KV 블록을 GPU, CPU 메모리, 로컬 저장장치와 원격 저장소에 나누어 두는 관리 방식이다.</span></li>
@@ -1697,6 +1753,7 @@ description: 검토 완료 AI·LLM 백과 문서 가나다·영문 색인
 <li data-article-id="mcp-client"><a href="/wiki/mcp-client/">MCP 클라이언트</a><span class="wiki-index-summary">MCP 클라이언트는 MCP 호스트 안에서 특정 서버와 일대일 관계를 유지하며 요청별 프로토콜 메시지를 주고받는 구성 요소다.</span></li>
 <li data-article-id="mcp-prompts"><a href="/wiki/mcp-prompts/">MCP 프롬프트</a><span class="wiki-index-summary">MCP 프롬프트는 서버가 재사용 가능한 메시지 템플릿과 입력 인수로 공개하는 사용자 선택형 상호작용 구성 요소다.</span></li>
 <li data-article-id="mcp-host"><a href="/wiki/mcp-host/">MCP 호스트</a><span class="wiki-index-summary">MCP 호스트는 하나 이상의 MCP 클라이언트를 내장해 사용자 애플리케이션과 외부 MCP 서버 사이의 연결·권한·문맥을 관리하는 프로그램이다.</span></li>
+<li data-article-id="mcp-a2a-boundary"><a href="/wiki/mcp-a2a-boundary/">MCP와 A2A의 경계</a><span class="wiki-index-summary">MCP와 A2A의 경계는 도구·리소스 사용 계약과 독립 에이전트 협업 계약을 구분해 각 프로토콜을 올바른 시스템 경계에 배치하는 설계 원칙이다.</span></li>
 <li data-article-id="meteor-score"><a href="/wiki/meteor-score/">METEOR 점수</a><span class="wiki-index-summary">METEOR는 후보와 참조의 단어 정렬을 바탕으로 정밀도·재현율 조화평균과 어순 단절 패널티를 계산하는 생성 평가 지표다.</span></li>
 <li data-article-id="mime-type"><a href="/wiki/mime-type/">MIME 유형</a><span class="wiki-index-summary">MIME 유형은 데이터의 매체 형식과 선택적 세부 형식을 type/subtype 형태로 식별하는 표준 표지다.</span></li>
 <li data-article-id="min-p-sampling"><a href="/wiki/min-p-sampling/">Min-p 샘플링</a><span class="wiki-index-summary">최고 확률 토큰의 확률에 비례한 최소 임계값보다 낮은 토큰을 제거한 뒤 남은 분포에서 추출하는 디코딩 방법이다.</span></li>

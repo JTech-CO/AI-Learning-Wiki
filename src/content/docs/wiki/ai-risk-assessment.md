@@ -124,11 +124,12 @@ AI 위험 평가는 AI 시스템이 사람, 조직과 환경에 일으킬 가능
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [시스템적 위험 범용 AI 모델](/wiki/systemic-risk-general-purpose-ai-model/)
+- [한국 AI 안전성 확보 의무](/wiki/korean-ai-safety-duty/)
 
 ### 이 문서를 포함하는 코스
 
-[AI 보안과 레드팀](/course/ai-security-redteam/)
+[AI 규제와 리터러시](/course/ai-regulation-literacy/) · [AI 보안과 레드팀](/course/ai-security-redteam/)
 
 ## 참고와 다음 학습
 
@@ -146,4 +147,5 @@ _해당 문서가 없다._
 
 ### 코스에서 계속 읽기
 
+- **AI 규제와 리터러시:** [다음 문서 — AI 위험 대장](/wiki/ai-risk-register/)
 - **AI 보안과 레드팀:** [다음 문서 — AI 위험 대장](/wiki/ai-risk-register/)

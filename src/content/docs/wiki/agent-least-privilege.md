@@ -117,11 +117,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 이 문서를 가리키는 문서
 
 - [검색 콘텐츠 신뢰](/wiki/retrieval-content-trust/)
+- [A2A 인증과 권한 위임](/wiki/a2a-authentication-delegation/)
 - [AI 악용 모니터링](/wiki/ai-abuse-monitoring/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +137,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — A2A 메시지](/wiki/a2a-message/)

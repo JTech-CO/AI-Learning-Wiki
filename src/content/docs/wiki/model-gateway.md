@@ -124,7 +124,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [A2A 프로토콜 게이트웨이](/wiki/a2a-protocol-gateway/)
 
 ### 이 문서를 포함하는 코스
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24",
+  "generatedAt": "2026-08-30",
   "count": 100,
   "itemTypeLabels": {
     "multiple-choice": "개념 확인",
@@ -493,11 +493,11 @@
             },
             {
               "id": "C",
-              "text": "데이터 증강"
+              "text": "교차언어 전이"
             },
             {
               "id": "D",
-              "text": "잡음 제거 목표"
+              "text": "데이터셋 라이선스"
             }
           ],
           "answer": "A",
@@ -533,7 +533,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "자동 평가자"
+              "text": "답변 관련성"
             },
             {
               "id": "B",
@@ -541,11 +541,11 @@
             },
             {
               "id": "C",
-              "text": "벤치마크 포화"
+              "text": "벤치마크 갱신 정책"
             },
             {
               "id": "D",
-              "text": "부트스트랩 신뢰구간"
+              "text": "BLEU 점수"
             }
           ],
           "answer": "B",
@@ -556,107 +556,11 @@
       ]
     },
     {
-      "id": "learning-check-vector",
-      "articleId": "vector",
-      "title": "벡터 학습 체크",
-      "url": "/wiki/vector/",
-      "educationalLevel": "entry",
-      "competencyRequired": [],
-      "teaches": [
-        "순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다. 유클리드 공간에서는 크기와 방향을 가진 대상으로 해석할 수 있다."
-      ],
-      "assesses": [
-        "case-judgment"
-      ],
-      "courseIds": [
-        "rag-search",
-        "ai-mathematics-statistics",
-        "llm-internals"
-      ],
-      "items": [
-        {
-          "id": "vector-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다. 유클리드 공간에서는 크기와 방향을 가진 대상으로 해석할 수 있다.”",
-          "choices": [
-            {
-              "id": "A",
-              "text": "조건수"
-            },
-            {
-              "id": "B",
-              "text": "상관관계"
-            },
-            {
-              "id": "C",
-              "text": "벡터"
-            },
-            {
-              "id": "D",
-              "text": "행렬식"
-            }
-          ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘벡터’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/vector/"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-transformer",
-      "articleId": "transformer",
-      "title": "트랜스포머 학습 체크",
-      "url": "/wiki/transformer/",
-      "educationalLevel": "advanced",
-      "competencyRequired": [],
-      "teaches": [
-        "어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다."
-      ],
-      "assesses": [
-        "multiple-choice"
-      ],
-      "courseIds": [
-        "transformer-architecture",
-        "neural-model-architectures",
-        "llm-internals"
-      ],
-      "items": [
-        {
-          "id": "transformer-definition",
-          "type": "multiple-choice",
-          "prompt": "‘트랜스포머’의 설명으로 가장 알맞은 것은 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "BART 아키텍처는 양방향 인코더와 왼쪽에서 오른쪽으로 생성하는 디코더를 결합한 잡음 제거 시퀀스-투-시퀀스 모델이다."
-            },
-            {
-              "id": "B",
-              "text": "Conformer는 음성의 국소 패턴과 장거리 의존성을 함께 모델링하도록 합성곱과 트랜스포머 블록을 결합한 인코더 구조다."
-            },
-            {
-              "id": "C",
-              "text": "조기 종료 트랜스포머는 중간 층에 예측 헤드를 두고 충분히 확신하는 입력을 마지막 층 전에 반환하는 적응형 추론 구조다."
-            },
-            {
-              "id": "D",
-              "text": "어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다."
-            }
-          ],
-          "answer": "D",
-          "explanation": "어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/transformer/#개념과-원리"
-        }
-      ]
-    },
-    {
       "id": "learning-check-ai-agent",
       "articleId": "ai-agent",
       "title": "AI 에이전트 학습 체크",
       "url": "/wiki/ai-agent/",
-      "educationalLevel": "entry",
+      "educationalLevel": "professional",
       "competencyRequired": [
         {
           "id": "model",
@@ -673,39 +577,136 @@
         "목표를 바탕으로 상태를 관찰하고 도구를 선택해 여러 단계의 작업을 수행하는 시스템이다."
       ],
       "assesses": [
-        "sequence"
+        "case-judgment"
       ],
       "courseIds": [
+        "agent-interoperability",
         "production-agents",
         "agent-systems"
       ],
       "items": [
         {
-          "id": "ai-agent-sequence",
-          "type": "sequence",
-          "prompt": "‘AI 에이전트’ 다음에 ‘프로덕션 AI 에이전트’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "ai-agent-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “목표를 바탕으로 상태를 관찰하고 도구를 선택해 여러 단계의 작업을 수행하는 시스템이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "에이전트 루프"
+              "text": "A2A 푸시 알림"
             },
             {
               "id": "B",
-              "text": "에이전트 상향 보고 정책"
+              "text": "에이전트 카드"
             },
             {
               "id": "C",
-              "text": "에이전트 멱등성"
+              "text": "AI 에이전트"
             },
             {
               "id": "D",
-              "text": "에이전트 계획 품질"
+              "text": "에이전트 위임"
+            }
+          ],
+          "answer": "C",
+          "explanation": "이 설명은 ‘AI 에이전트’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/ai-agent/"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-vector",
+      "articleId": "vector",
+      "title": "벡터 학습 체크",
+      "url": "/wiki/vector/",
+      "educationalLevel": "entry",
+      "competencyRequired": [],
+      "teaches": [
+        "순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다. 유클리드 공간에서는 크기와 방향을 가진 대상으로 해석할 수 있다."
+      ],
+      "assesses": [
+        "multiple-choice"
+      ],
+      "courseIds": [
+        "rag-search",
+        "ai-mathematics-statistics",
+        "llm-internals"
+      ],
+      "items": [
+        {
+          "id": "vector-definition",
+          "type": "multiple-choice",
+          "prompt": "‘벡터’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "조건부 엔트로피는 다른 확률변수의 값을 알고 난 뒤에도 남는 대상 변수의 평균 불확실성이다."
+            },
+            {
+              "id": "B",
+              "text": "두 벡터 사이 각도의 코사인으로 방향의 유사성을 측정하는 값이다."
+            },
+            {
+              "id": "C",
+              "text": "방향 미분은 다변수 함수가 지정된 단위 방향으로 움직일 때 변하는 순간 비율이다."
+            },
+            {
+              "id": "D",
+              "text": "순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다. 유클리드 공간에서는 크기와 방향을 가진 대상으로 해석할 수 있다."
+            }
+          ],
+          "answer": "D",
+          "explanation": "순서가 있는 수치 목록으로, 모델에서 데이터와 파라미터를 표현하는 기본 단위다. 유클리드 공간에서는 크기와 방향을 가진 대상으로 해석할 수 있다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/vector/#개념과-원리"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-transformer",
+      "articleId": "transformer",
+      "title": "트랜스포머 학습 체크",
+      "url": "/wiki/transformer/",
+      "educationalLevel": "advanced",
+      "competencyRequired": [],
+      "teaches": [
+        "어텐션을 중심으로 시퀀스의 관계를 병렬 계산하는 신경망 아키텍처다."
+      ],
+      "assesses": [
+        "sequence"
+      ],
+      "courseIds": [
+        "transformer-architecture",
+        "neural-model-architectures",
+        "llm-internals"
+      ],
+      "items": [
+        {
+          "id": "transformer-sequence",
+          "type": "sequence",
+          "prompt": "‘트랜스포머’ 다음에 ‘트랜스포머 아키텍처’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "토큰 임베딩층"
+            },
+            {
+              "id": "B",
+              "text": "BERT 아키텍처"
+            },
+            {
+              "id": "C",
+              "text": "문맥 길이 확장"
+            },
+            {
+              "id": "D",
+              "text": "인코더"
             }
           ],
           "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘AI 에이전트’ 다음에 ‘에이전트 루프’을 학습한다.",
+          "explanation": "이 코스의 권장 순서에서는 ‘트랜스포머’ 다음에 ‘토큰 임베딩층’을 학습한다.",
           "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/production-agents/"
+          "reviewUrl": "/course/transformer-architecture/"
         }
       ]
     },
@@ -739,7 +740,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "API 오류 모델"
+              "text": "API 회로 차단기 정책"
             },
             {
               "id": "B",
@@ -747,11 +748,11 @@
             },
             {
               "id": "C",
-              "text": "API 할당량 배분"
+              "text": "API 엔드포인트"
             },
             {
               "id": "D",
-              "text": "API 타임아웃 예산"
+              "text": "API 공급자 추상화"
             }
           ],
           "answer": "B",
@@ -820,6 +821,64 @@
       ]
     },
     {
+      "id": "learning-check-language-model",
+      "articleId": "language-model",
+      "title": "언어 모델 학습 체크",
+      "url": "/wiki/language-model/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "probability",
+          "title": "확률",
+          "url": "/wiki/probability/"
+        },
+        {
+          "id": "token",
+          "title": "토큰",
+          "url": "/wiki/token/"
+        }
+      ],
+      "teaches": [
+        "토큰 시퀀스의 확률 분포를 학습해 다음 토큰이나 누락된 토큰을 예측하는 모델이다."
+      ],
+      "assesses": [
+        "multiple-choice"
+      ],
+      "courseIds": [
+        "korean-multilingual-ai",
+        "ai-foundations"
+      ],
+      "items": [
+        {
+          "id": "language-model-definition",
+          "type": "multiple-choice",
+          "prompt": "‘언어 모델’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "컨텍스트 캐싱은 반복되는 입력 접두사의 중간 계산 결과를 저장해 후속 모델 호출에서 재사용하는 최적화다."
+            },
+            {
+              "id": "B",
+              "text": "컨텍스트 창 예산 관리는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+            },
+            {
+              "id": "C",
+              "text": "창발적 능력은 모델 규모나 학습량이 증가할 때 특정 측정에서 이전보다 급격히 나타나는 것처럼 보이는 과제 수행 능력이다."
+            },
+            {
+              "id": "D",
+              "text": "토큰 시퀀스의 확률 분포를 학습해 다음 토큰이나 누락된 토큰을 예측하는 모델이다."
+            }
+          ],
+          "answer": "D",
+          "explanation": "토큰 시퀀스의 확률 분포를 학습해 다음 토큰이나 누락된 토큰을 예측하는 모델이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/language-model/#개념과-원리"
+        }
+      ]
+    },
+    {
       "id": "learning-check-neuron",
       "articleId": "neuron",
       "title": "인공 뉴런 학습 체크",
@@ -841,38 +900,38 @@
         "입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다."
       ],
       "assesses": [
-        "multiple-choice"
+        "sequence"
       ],
       "courseIds": [
         "neural-model-architectures"
       ],
       "items": [
         {
-          "id": "neuron-definition",
-          "type": "multiple-choice",
-          "prompt": "‘인공 뉴런’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "neuron-sequence",
+          "type": "sequence",
+          "prompt": "‘인공 뉴런’ 다음에 ‘현대 신경망과 모델 아키텍처’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "죽은 뉴런은 관측되는 입력 범위에서 활성값이나 기울기가 거의 항상 0이어서 학습과 출력에 기여하지 않는 신경망 단위다."
+              "text": "신경망"
             },
             {
               "id": "B",
-              "text": "에너지 기반 모델은 입력과 출력 조합의 적합성을 스칼라 에너지로 표현하고 낮은 에너지 상태를 더 그럴듯하게 보는 모델이다."
+              "text": "심층 신뢰 신경망"
             },
             {
               "id": "C",
-              "text": "그래디언트 누적은 여러 마이크로배치의 그래디언트를 모은 뒤 한 번 매개변수를 갱신해 큰 유효 배치를 구현하는 기법이다."
+              "text": "에포크"
             },
             {
               "id": "D",
-              "text": "입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다."
+              "text": "그래디언트 클리핑"
             }
           ],
-          "answer": "D",
-          "explanation": "입력의 가중합에 활성화 함수를 적용해 출력을 만드는 신경망의 계산 단위다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/neuron/#개념과-원리"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘인공 뉴런’ 다음에 ‘신경망’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/neural-model-architectures/"
         }
       ]
     },
@@ -893,38 +952,96 @@
         "어텐션 계산 복잡도는 시퀀스 길이, 헤드 차원과 배치 크기에 따라 어텐션이 요구하는 연산과 메모리의 증가율이다."
       ],
       "assesses": [
-        "sequence"
+        "concept-distinction"
       ],
       "courseIds": [
         "efficient-long-context-transformers"
       ],
       "items": [
         {
-          "id": "attention-complexity-sequence",
-          "type": "sequence",
-          "prompt": "‘어텐션 계산 복잡도’ 다음에 ‘효율적·장문맥 트랜스포머’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "attention-complexity-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘어텐션 계산 복잡도’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "로컬 어텐션"
+              "text": "Conformer 아키텍처"
             },
             {
               "id": "B",
-              "text": "청크 어텐션"
+              "text": "트랜스포머"
             },
             {
               "id": "C",
-              "text": "닷프로덕트 어텐션"
+              "text": "조기 종료 트랜스포머"
             },
             {
               "id": "D",
-              "text": "플래시 어텐션"
+              "text": "융합 트랜스포머 커널"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘어텐션 계산 복잡도’ 다음에 ‘로컬 어텐션’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/efficient-long-context-transformers/"
+          "answer": "B",
+          "explanation": "‘트랜스포머’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/attention-complexity/#문서-관계"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-ai-governance",
+      "articleId": "ai-governance",
+      "title": "AI 거버넌스 학습 체크",
+      "url": "/wiki/ai-governance/",
+      "educationalLevel": "entry",
+      "competencyRequired": [
+        {
+          "id": "bias-fairness",
+          "title": "편향과 공정성",
+          "url": "/wiki/bias-fairness/"
+        },
+        {
+          "id": "privacy",
+          "title": "개인정보 보호",
+          "url": "/wiki/privacy/"
+        }
+      ],
+      "teaches": [
+        "AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다."
+      ],
+      "assesses": [
+        "case-judgment"
+      ],
+      "courseIds": [
+        "responsible-ai",
+        "ai-regulation-literacy"
+      ],
+      "items": [
+        {
+          "id": "ai-governance-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다.”",
+          "choices": [
+            {
+              "id": "A",
+              "text": "AI 오용"
+            },
+            {
+              "id": "B",
+              "text": "AI 안전"
+            },
+            {
+              "id": "C",
+              "text": "AI 거버넌스"
+            },
+            {
+              "id": "D",
+              "text": "알고리즘 이의제기 가능성"
+            }
+          ],
+          "answer": "C",
+          "explanation": "이 설명은 ‘AI 거버넌스’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/ai-governance/"
         }
       ]
     },
@@ -939,38 +1056,38 @@
         "컴퓨터 시스템이 지각·추론·학습·행동과 같은 지능적 과제를 수행하도록 만드는 연구와 기술의 총칭이다."
       ],
       "assesses": [
-        "concept-distinction"
+        "multiple-choice"
       ],
       "courseIds": [
         "ai-foundations"
       ],
       "items": [
         {
-          "id": "artificial-intelligence-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘인공지능’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "artificial-intelligence-definition",
+          "type": "multiple-choice",
+          "prompt": "‘인공지능’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "계산지능"
+              "text": "인지와 지능이 많은 단순 처리 단위의 연결과 상호작용에서 나타난다고 보는 계산적 접근이다."
             },
             {
               "id": "B",
-              "text": "머신러닝"
+              "text": "데이터 전처리는 원시 데이터를 학습과 평가에 적합한 형식·척도·품질로 변환하는 단계다."
             },
             {
               "id": "C",
-              "text": "데이터 분포"
+              "text": "분포 이동은 운영 데이터의 입력·표적 또는 두 변수의 관계가 학습 데이터 분포와 달라진 상태다."
             },
             {
               "id": "D",
-              "text": "차원 축소"
+              "text": "컴퓨터 시스템이 지각·추론·학습·행동과 같은 지능적 과제를 수행하도록 만드는 연구와 기술의 총칭이다."
             }
           ],
-          "answer": "B",
-          "explanation": "‘머신러닝’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/artificial-intelligence/#문서-관계"
+          "answer": "D",
+          "explanation": "컴퓨터 시스템이 지각·추론·학습·행동과 같은 지능적 과제를 수행하도록 만드는 연구와 기술의 총칭이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/artificial-intelligence/#개념과-원리"
         }
       ]
     },
@@ -991,38 +1108,38 @@
         "AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하고 오용, 사고와 예측하지 못한 피해를 줄이기 위한 연구와 실무 영역이다."
       ],
       "assesses": [
-        "case-judgment"
+        "sequence"
       ],
       "courseIds": [
         "ai-security-redteam"
       ],
       "items": [
         {
-          "id": "ai-safety-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “AI 안전은 AI 시스템이 의도한 목표를 신뢰할 수 있게 수행하고 오용, 사고와 예측하지 못한 피해를 줄이기 위한 연구와 실무 영역이다.”",
+          "id": "ai-safety-sequence",
+          "type": "sequence",
+          "prompt": "‘AI 안전’ 다음에 ‘AI 보안과 레드팀’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "AI 오용"
+              "text": "AI 위협 모델링"
             },
             {
               "id": "B",
-              "text": "AI 보안 통제 기준선"
+              "text": "AI 정책 집행"
             },
             {
               "id": "C",
-              "text": "AI 안전"
+              "text": "AI 보안 모니터링"
             },
             {
               "id": "D",
-              "text": "알고리즘 영향 평가"
+              "text": "정렬 비용"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘AI 안전’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/ai-safety/"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘AI 안전’ 다음에 ‘AI 위협 모델링’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/ai-security-redteam/"
         }
       ]
     },
@@ -1037,7 +1154,7 @@
         "학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "concept-distinction"
       ],
       "courseIds": [
         "ai-serving-systems",
@@ -1046,31 +1163,31 @@
       ],
       "items": [
         {
-          "id": "inference-definition",
-          "type": "multiple-choice",
-          "prompt": "‘추론’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "inference-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘추론’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "연속 배칭 정책은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+              "text": "CPU 추론"
             },
             {
               "id": "B",
-              "text": "초안 모델은 추측 디코딩에서 목표 모델보다 빠르게 다음 토큰 후보 묶음을 제안하는 보조 모델이다."
+              "text": "로짓"
             },
             {
               "id": "C",
-              "text": "GPU 추론은 다수의 병렬 연산 장치를 가진 GPU에서 모델의 순전파와 생성 연산을 실행하는 방식이다."
+              "text": "엣지 추론"
             },
             {
               "id": "D",
-              "text": "학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다."
+              "text": "그래프 컴파일"
             }
           ],
-          "answer": "D",
-          "explanation": "학습된 모델이 새 입력을 받아 예측이나 생성을 수행하는 과정이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/inference/#개념과-원리"
+          "answer": "B",
+          "explanation": "‘로짓’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/inference/#문서-관계"
         }
       ]
     },
@@ -1096,7 +1213,7 @@
         "모델이 정해진 함수 스키마를 선택하고 인수를 생성해 외부 기능 실행을 요청하는 방식이다."
       ],
       "assesses": [
-        "sequence"
+        "case-judgment"
       ],
       "courseIds": [
         "agent-systems",
@@ -1104,13 +1221,13 @@
       ],
       "items": [
         {
-          "id": "tool-calling-sequence",
-          "type": "sequence",
-          "prompt": "‘도구 호출’ 다음에 ‘AI 에이전트 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "tool-calling-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “모델이 정해진 함수 스키마를 선택하고 인수를 생성해 외부 기능 실행을 요청하는 방식이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "AI 에이전트"
+              "text": "API 오류 모델"
             },
             {
               "id": "B",
@@ -1118,17 +1235,17 @@
             },
             {
               "id": "C",
-              "text": "API 타임아웃 예산"
+              "text": "도구 호출"
             },
             {
               "id": "D",
-              "text": "비동기 클라이언트"
+              "text": "API 타임아웃 예산"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘도구 호출’ 다음에 ‘AI 에이전트’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/agent-systems/"
+          "answer": "C",
+          "explanation": "이 설명은 ‘도구 호출’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/tool-calling/"
         }
       ]
     },
@@ -1143,38 +1260,38 @@
         "소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다."
       ],
       "assesses": [
-        "concept-distinction"
+        "multiple-choice"
       ],
       "courseIds": [
         "api-development"
       ],
       "items": [
         {
-          "id": "api-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘API’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "api-definition",
+          "type": "multiple-choice",
+          "prompt": "‘API’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "API 리전 라우팅"
+              "text": "API 로깅은 요청 수명주기의 식별자, 결과, 지연시간과 오류를 구조화된 사건으로 남기는 관측 활동이다."
             },
             {
               "id": "B",
-              "text": "REST API"
+              "text": "API 리전 라우팅은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "C",
-              "text": "API 버전 협상"
+              "text": "API 버전 협상은 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "D",
-              "text": "배치 API"
+              "text": "소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다."
             }
           ],
-          "answer": "B",
-          "explanation": "‘REST API’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/api/#문서-관계"
+          "answer": "D",
+          "explanation": "소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/api/#개념과-원리"
         }
       ]
     },
@@ -1189,38 +1306,38 @@
         "벡터 공간의 벡터를 확대·축소하거나 계산의 단일 값을 나타내는 수학적 원소다."
       ],
       "assesses": [
-        "case-judgment"
+        "sequence"
       ],
       "courseIds": [
         "ai-mathematics-statistics"
       ],
       "items": [
         {
-          "id": "scalar-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “벡터 공간의 벡터를 확대·축소하거나 계산의 단일 값을 나타내는 수학적 원소다.”",
+          "id": "scalar-sequence",
+          "type": "sequence",
+          "prompt": "‘스칼라’ 다음에 ‘AI를 위한 수학·통계’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "데이터 처리 부등식"
+              "text": "벡터"
             },
             {
               "id": "B",
-              "text": "엔트로피"
+              "text": "행렬식"
             },
             {
               "id": "C",
-              "text": "스칼라"
+              "text": "기댓값"
             },
             {
               "id": "D",
-              "text": "헤세 행렬"
+              "text": "가설검정"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘스칼라’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/scalar/"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘스칼라’ 다음에 ‘벡터’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/ai-mathematics-statistics/"
         }
       ]
     },
@@ -1241,38 +1358,38 @@
         "문서 검색은 질의에 관련된 전체 문서 단위를 대규모 컬렉션에서 찾아 순위화하는 과정이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "concept-distinction"
       ],
       "courseIds": [
         "advanced-rag"
       ],
       "items": [
         {
-          "id": "document-retrieval-definition",
-          "type": "multiple-choice",
-          "prompt": "‘문서 검색’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "document-retrieval-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘문서 검색’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "문서 파싱은 PDF, HTML, 워드 파일 등의 바이트와 레이아웃을 제목·문단·표·목록 같은 구조화된 요소로 변환하는 과정이다."
+              "text": "임베딩 비등방성"
             },
             {
               "id": "B",
-              "text": "임베딩 풀링은 여러 토큰 또는 구간 표현을 하나의 고정 길이 벡터로 합치는 연산이다."
+              "text": "임베딩"
             },
             {
               "id": "C",
-              "text": "그래프 검색은 질의와 관련된 노드·간선·경로를 구조적·의미적 조건으로 찾아 반환하는 정보 검색 방식이다."
+              "text": "패싯 검색"
             },
             {
               "id": "D",
-              "text": "문서 검색은 질의에 관련된 전체 문서 단위를 대규모 컬렉션에서 찾아 순위화하는 과정이다."
+              "text": "근거화"
             }
           ],
-          "answer": "D",
-          "explanation": "문서 검색은 질의에 관련된 전체 문서 단위를 대규모 컬렉션에서 찾아 순위화하는 과정이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/document-retrieval/#개념과-원리"
+          "answer": "B",
+          "explanation": "‘임베딩’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/document-retrieval/#문서-관계"
         }
       ]
     },
@@ -1293,38 +1410,38 @@
         "레이블은 지도학습에서 입력 표본에 대응해 제공되는 정답 범주, 값 또는 구조화된 목표 표시다."
       ],
       "assesses": [
-        "sequence"
+        "case-judgment"
       ],
       "courseIds": [
         "data-training-pipelines"
       ],
       "items": [
         {
-          "id": "label-sequence",
-          "type": "sequence",
-          "prompt": "‘레이블’ 다음에 ‘데이터·학습 파이프라인’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "label-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “레이블은 지도학습에서 입력 표본에 대응해 제공되는 정답 범주, 값 또는 구조화된 목표 표시다.”",
           "choices": [
             {
               "id": "A",
-              "text": "특성"
+              "text": "데이터 누수"
             },
             {
               "id": "B",
-              "text": "교육과정 순서화"
+              "text": "분리 표현"
             },
             {
               "id": "C",
-              "text": "딥러닝"
+              "text": "레이블"
             },
             {
               "id": "D",
-              "text": "특성 공학"
+              "text": "퓨샷 학습"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘레이블’ 다음에 ‘특성’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/data-training-pipelines/"
+          "answer": "C",
+          "explanation": "이 설명은 ‘레이블’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/label/"
         }
       ]
     },
@@ -1350,7 +1467,7 @@
         "문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다."
       ],
       "assesses": [
-        "concept-distinction"
+        "multiple-choice"
       ],
       "courseIds": [
         "multimodal-ai",
@@ -1359,31 +1476,31 @@
       ],
       "items": [
         {
-          "id": "embedding-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘임베딩’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "embedding-definition",
+          "type": "multiple-choice",
+          "prompt": "‘임베딩’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "임베딩 비등방성"
+              "text": "임베딩 드리프트는 모델, 데이터 또는 전처리 변경으로 같은 입력의 벡터 분포와 이웃 관계가 시간에 따라 달라지는 현상이다."
             },
             {
               "id": "B",
-              "text": "벡터"
+              "text": "연합 검색은 서로 다른 색인이나 검색 서비스에 질의를 분배하고 결과를 하나의 순위 목록으로 통합하는 방식이다."
             },
             {
               "id": "C",
-              "text": "패싯 검색"
+              "text": "하이브리드 RAG는 생성 모델에 문맥을 공급할 때 키워드·밀집 벡터·지식 그래프 등 둘 이상의 검색 방식을 결합하는 검색 증강 생성 구조다."
             },
             {
               "id": "D",
-              "text": "근거화"
+              "text": "문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다."
             }
           ],
-          "answer": "B",
-          "explanation": "‘벡터’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/embedding/#문서-관계"
+          "answer": "D",
+          "explanation": "문장·이미지·항목의 의미나 특성을 연속적인 벡터 공간에 표현한 값이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/embedding/#개념과-원리"
         }
       ]
     },
@@ -1404,38 +1521,38 @@
         "멀티모달 언어 모델은 텍스트와 이미지, 오디오 등 다른 양식의 표현을 언어 모델과 결합해 이해와 생성을 수행한다."
       ],
       "assesses": [
-        "case-judgment"
+        "sequence"
       ],
       "courseIds": [
         "multimodal-systems"
       ],
       "items": [
         {
-          "id": "multimodal-language-model-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “멀티모달 언어 모델은 텍스트와 이미지, 오디오 등 다른 양식의 표현을 언어 모델과 결합해 이해와 생성을 수행한다.”",
+          "id": "multimodal-language-model-sequence",
+          "type": "sequence",
+          "prompt": "‘멀티모달 언어 모델’ 다음에 ‘멀티모달 AI 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "교차 모달 지연 예산"
+              "text": "멀티모달 트랜스포머"
             },
             {
               "id": "B",
-              "text": "퓨샷 프롬프팅"
+              "text": "밀집 언어 모델"
             },
             {
               "id": "C",
-              "text": "멀티모달 언어 모델"
+              "text": "하이퍼파라미터"
             },
             {
               "id": "D",
-              "text": "지시 이행"
+              "text": "지시 우선순위 아키텍처"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘멀티모달 언어 모델’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/multimodal-language-model/"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘멀티모달 언어 모델’ 다음에 ‘멀티모달 트랜스포머’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/multimodal-systems/"
         }
       ]
     },
@@ -1461,7 +1578,7 @@
         "여러 변수에 대한 함수 변화율을 모은 벡터로, 손실을 줄이는 방향을 알려준다."
       ],
       "assesses": [
-        "multiple-choice"
+        "concept-distinction"
       ],
       "courseIds": [
         "model-training",
@@ -1469,31 +1586,31 @@
       ],
       "items": [
         {
-          "id": "gradient-definition",
-          "type": "multiple-choice",
-          "prompt": "‘기울기’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "gradient-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘기울기’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "고유분해는 행렬을 고유벡터 행렬과 고윳값 대각행렬의 곱으로 나타내는 분해다."
+              "text": "엔트로피"
             },
             {
               "id": "B",
-              "text": "부동소수점 연산은 실수를 부호, 유효숫자와 지수의 유한 비트 표현으로 근사해 계산하는 방식이다."
+              "text": "확률분포"
             },
             {
               "id": "C",
-              "text": "결합 엔트로피는 둘 이상의 확률변수 값을 함께 관측하기 전의 전체 평균 불확실성이다."
+              "text": "고차원 기하학"
             },
             {
               "id": "D",
-              "text": "여러 변수에 대한 함수 변화율을 모은 벡터로, 손실을 줄이는 방향을 알려준다."
+              "text": "커널 함수"
             }
           ],
-          "answer": "D",
-          "explanation": "여러 변수에 대한 함수 변화율을 모은 벡터로, 손실을 줄이는 방향을 알려준다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/gradient/#개념과-원리"
+          "answer": "B",
+          "explanation": "‘확률분포’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/gradient/#문서-관계"
         }
       ]
     },
@@ -1514,7 +1631,7 @@
         "모델 가중치·코드 등 배포물의 사용·수정·재배포 조건을 정한 법적 약정이다. 일부 약정은 출력과 파생 모델의 이용 조건도 별도로 규정한다."
       ],
       "assesses": [
-        "multiple-choice"
+        "case-judgment"
       ],
       "courseIds": [
         "multimodal-ai",
@@ -1522,31 +1639,31 @@
       ],
       "items": [
         {
-          "id": "model-license-definition",
-          "type": "multiple-choice",
-          "prompt": "‘모델 라이선스’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "model-license-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “모델 가중치·코드 등 배포물의 사용·수정·재배포 조건을 정한 법적 약정이다. 일부 약정은 출력과 파생 모델의 이용 조건도 별도로 규정한다.”",
           "choices": [
             {
               "id": "A",
-              "text": "모델 가중치·코드 등 배포물의 사용·수정·재배포 조건을 정한 법적 약정이다. 일부 약정은 출력과 파생 모델의 이용 조건도 별도로 규정한다."
+              "text": "특성 저장소"
             },
             {
               "id": "B",
-              "text": "실험 추적은 학습 실행의 코드 버전, 하이퍼파라미터, 지표, 산출물과 환경을 연결해 비교 가능하게 기록하는 체계다."
+              "text": "ISO/IEC JTC 1/SC 42"
             },
             {
               "id": "C",
-              "text": "대화형 노트북은 코드, 실행 결과, 설명과 시각화를 셀 단위 문서에 함께 기록하는 계산 환경이다."
+              "text": "모델 라이선스"
             },
             {
               "id": "D",
-              "text": "LLMOps는 대규모 언어 모델 애플리케이션의 프롬프트, 검색, 평가, 모델 버전과 운영 위험을 관리하는 수명주기 실천이다."
+              "text": "머신러닝 프레임워크"
             }
           ],
-          "answer": "A",
-          "explanation": "모델 가중치·코드 등 배포물의 사용·수정·재배포 조건을 정한 법적 약정이다. 일부 약정은 출력과 파생 모델의 이용 조건도 별도로 규정한다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/model-license/#개념과-원리"
+          "answer": "C",
+          "explanation": "이 설명은 ‘모델 라이선스’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/model-license/"
         }
       ]
     },
@@ -1572,7 +1689,7 @@
         "지시와 모범 응답 쌍으로 모델이 원하는 응답 형식을 따르도록 학습하는 단계다."
       ],
       "assesses": [
-        "concept-distinction"
+        "multiple-choice"
       ],
       "courseIds": [
         "model-training",
@@ -1580,31 +1697,31 @@
       ],
       "items": [
         {
-          "id": "supervised-fine-tuning-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘지도 미세조정’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "supervised-fine-tuning-definition",
+          "type": "multiple-choice",
+          "prompt": "‘지도 미세조정’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "DoRA"
+              "text": "별도 강화학습 루프 없이 선호 응답과 비선호 응답으로 정책을 직접 최적화하는 방법이다."
             },
             {
               "id": "B",
-              "text": "사전학습"
+              "text": "그래디언트 체크포인팅은 순전파 활성값 일부만 저장하고 역전파 때 누락된 구간을 다시 계산해 메모리를 줄이는 기법이다."
             },
             {
               "id": "C",
-              "text": "완전 샤딩 데이터 병렬화"
+              "text": "기존 가중치를 고정하고 저랭크 행렬만 학습하는 파라미터 효율적 미세조정 기법이다."
             },
             {
               "id": "D",
-              "text": "지식 증류"
+              "text": "지시와 모범 응답 쌍으로 모델이 원하는 응답 형식을 따르도록 학습하는 단계다."
             }
           ],
-          "answer": "B",
-          "explanation": "‘사전학습’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/supervised-fine-tuning/#문서-관계"
+          "answer": "D",
+          "explanation": "지시와 모범 응답 쌍으로 모델이 원하는 응답 형식을 따르도록 학습하는 단계다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/supervised-fine-tuning/#개념과-원리"
         }
       ]
     },
@@ -1625,39 +1742,98 @@
         "여러 모델이나 시스템을 비교하기 위해 고정한 과제·데이터·평가 지표의 묶음이다."
       ],
       "assesses": [
-        "case-judgment"
+        "sequence"
       ],
       "courseIds": [
         "responsible-ai",
+        "korean-multilingual-ai",
         "llm-evaluation"
       ],
       "items": [
         {
-          "id": "benchmark-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “여러 모델이나 시스템을 비교하기 위해 고정한 과제·데이터·평가 지표의 묶음이다.”",
+          "id": "benchmark-sequence",
+          "type": "sequence",
+          "prompt": "‘벤치마크’ 다음에 ‘신뢰할 수 있는 AI’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "문맥 관련성"
+              "text": "평가 지표"
             },
             {
               "id": "B",
-              "text": "효과 크기"
+              "text": "문맥 관련성"
             },
             {
               "id": "C",
-              "text": "벤치마크"
+              "text": "효과 크기"
             },
             {
               "id": "D",
               "text": "평가 의사결정 로그"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘벤치마크’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/benchmark/"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘벤치마크’ 다음에 ‘평가 지표’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-multi-agent-system",
+      "articleId": "multi-agent-system",
+      "title": "멀티 에이전트 시스템 학습 체크",
+      "url": "/wiki/multi-agent-system/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "state-management",
+          "title": "상태 관리",
+          "url": "/wiki/state-management/"
+        },
+        {
+          "id": "workflow-orchestration",
+          "title": "워크플로 오케스트레이션",
+          "url": "/wiki/workflow-orchestration/"
+        }
+      ],
+      "teaches": [
+        "역할이 다른 여러 에이전트가 협력하거나 경쟁하며 문제를 해결하는 시스템이다."
+      ],
+      "assesses": [
+        "concept-distinction"
+      ],
+      "courseIds": [
+        "agent-interoperability",
+        "agent-systems"
+      ],
+      "items": [
+        {
+          "id": "multi-agent-system-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘멀티 에이전트 시스템’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "에이전트 사람 승인 게이트"
+            },
+            {
+              "id": "B",
+              "text": "상태 관리"
+            },
+            {
+              "id": "C",
+              "text": "에이전트 메모리 보유"
+            },
+            {
+              "id": "D",
+              "text": "에이전트 런타임"
+            }
+          ],
+          "answer": "B",
+          "explanation": "‘상태 관리’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/multi-agent-system/#문서-관계"
         }
       ]
     },
@@ -1678,38 +1854,38 @@
         "토큰 임베딩층은 이산 토큰 식별자를 학습 가능한 연속 벡터로 변환하는 트랜스포머 입력 계층이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "case-judgment"
       ],
       "courseIds": [
         "transformer-architecture"
       ],
       "items": [
         {
-          "id": "token-embedding-layer-definition",
-          "type": "multiple-choice",
-          "prompt": "‘토큰 임베딩층’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "token-embedding-layer-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “토큰 임베딩층은 이산 토큰 식별자를 학습 가능한 연속 벡터로 변환하는 트랜스포머 입력 계층이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "플래시 어텐션은 정확한 어텐션 결과를 유지하면서 GPU 고대역폭 메모리 왕복을 줄이는 IO 인식 알고리즘이다."
+              "text": "글로벌 어텐션"
             },
             {
               "id": "B",
-              "text": "어텐션 헤드 가지치기는 중요도가 낮은 멀티헤드 어텐션 헤드를 제거해 모델 계산과 크기를 줄이는 압축 기법이다."
+              "text": "키·값 압축"
             },
             {
               "id": "C",
-              "text": "한 샘플 내부 특성의 분포를 정규화해 학습과 추론을 안정화하는 연산이다."
+              "text": "토큰 임베딩층"
             },
             {
               "id": "D",
-              "text": "토큰 임베딩층은 이산 토큰 식별자를 학습 가능한 연속 벡터로 변환하는 트랜스포머 입력 계층이다."
+              "text": "선형 어텐션"
             }
           ],
-          "answer": "D",
-          "explanation": "토큰 임베딩층은 이산 토큰 식별자를 학습 가능한 연속 벡터로 변환하는 트랜스포머 입력 계층이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/token-embedding-layer/#개념과-원리"
+          "answer": "C",
+          "explanation": "이 설명은 ‘토큰 임베딩층’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/token-embedding-layer/"
         }
       ]
     },
@@ -1730,7 +1906,7 @@
         "관찰·추론·행동·결과 반영을 목표 달성까지 반복하는 실행 구조다."
       ],
       "assesses": [
-        "sequence"
+        "multiple-choice"
       ],
       "courseIds": [
         "production-agents",
@@ -1738,31 +1914,31 @@
       ],
       "items": [
         {
-          "id": "agent-loop-sequence",
-          "type": "sequence",
-          "prompt": "‘에이전트 루프’ 다음에 ‘프로덕션 AI 에이전트’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "agent-loop-definition",
+          "type": "multiple-choice",
+          "prompt": "‘에이전트 루프’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "에이전트 목표"
+              "text": "에이전트 사고 대응 절차는 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "B",
-              "text": "에이전트 샌드박스"
+              "text": "에이전트 재계획은 실행 중 관측이나 제약이 바뀌었을 때 남은 계획을 수정하거나 새로 만드는 복구 절차다."
             },
             {
               "id": "C",
-              "text": "에이전트 단계 예산"
+              "text": "에이전트 보안은 자율 실행 시스템의 모델·메모리·도구·자격증명·통신과 공급망을 공격과 오용에서 보호하는 활동이다."
             },
             {
               "id": "D",
-              "text": "에이전트 도구 재시도 정책"
+              "text": "관찰·추론·행동·결과 반영을 목표 달성까지 반복하는 실행 구조다."
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘에이전트 루프’ 다음에 ‘에이전트 목표’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/production-agents/"
+          "answer": "D",
+          "explanation": "관찰·추론·행동·결과 반영을 목표 달성까지 반복하는 실행 구조다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/agent-loop/#개념과-원리"
         }
       ]
     },
@@ -1783,38 +1959,38 @@
         "통합 자원 위치 지정자(URL)는 자원의 위치와 접근 방법을 함께 나타내는 URI의 한 유형이다."
       ],
       "assesses": [
-        "concept-distinction"
+        "sequence"
       ],
       "courseIds": [
         "production-ai-api-systems"
       ],
       "items": [
         {
-          "id": "url-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘통합 자원 위치 지정자’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "url-sequence",
+          "type": "sequence",
+          "prompt": "‘통합 자원 위치 지정자’ 다음에 ‘프로덕션 AI API 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "비동기 API 작업"
+              "text": "도메인 이름 시스템"
             },
             {
               "id": "B",
-              "text": "API"
+              "text": "API 타임아웃 예산"
             },
             {
               "id": "C",
-              "text": "클라이언트 미들웨어"
+              "text": "비동기 클라이언트"
             },
             {
               "id": "D",
-              "text": "교차 사이트 요청 위조"
+              "text": "명령줄 API 클라이언트"
             }
           ],
-          "answer": "B",
-          "explanation": "‘API’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/url/#문서-관계"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘통합 자원 위치 지정자’ 다음에 ‘도메인 이름 시스템’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/production-ai-api-systems/"
         }
       ]
     },
@@ -1835,38 +2011,91 @@
         "프롬프트 엔지니어링은 모델 입력의 지시, 문맥, 예시와 제약을 설계하고 평가해 원하는 출력을 안정적으로 얻는 과정이다."
       ],
       "assesses": [
-        "case-judgment"
+        "concept-distinction"
       ],
       "courseIds": [
         "prompt-systems"
       ],
       "items": [
         {
-          "id": "prompt-engineering-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “프롬프트 엔지니어링은 모델 입력의 지시, 문맥, 예시와 제약을 설계하고 평가해 원하는 출력을 안정적으로 얻는 과정이다.”",
+          "id": "prompt-engineering-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘프롬프트 엔지니어링’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "하이퍼파라미터"
+              "text": "문맥 내 학습"
             },
             {
               "id": "B",
-              "text": "지시 우선순위 아키텍처"
+              "text": "대규모 언어 모델"
             },
             {
               "id": "C",
-              "text": "프롬프트 엔지니어링"
+              "text": "한국어·영어 코드 스위칭"
             },
             {
               "id": "D",
-              "text": "LLM API 계약 테스트"
+              "text": "한국어 띄어쓰기 변이"
+            }
+          ],
+          "answer": "B",
+          "explanation": "‘대규모 언어 모델’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/prompt-engineering/#문서-관계"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-large-language-model",
+      "articleId": "large-language-model",
+      "title": "대규모 언어 모델 학습 체크",
+      "url": "/wiki/large-language-model/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "language-model",
+          "title": "언어 모델",
+          "url": "/wiki/language-model/"
+        }
+      ],
+      "teaches": [
+        "대규모 데이터와 많은 파라미터로 학습해 다양한 언어 과제를 수행하는 언어 모델이다."
+      ],
+      "assesses": [
+        "case-judgment"
+      ],
+      "courseIds": [
+        "korean-multilingual-ai",
+        "ai-foundations"
+      ],
+      "items": [
+        {
+          "id": "large-language-model-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “대규모 데이터와 많은 파라미터로 학습해 다양한 언어 과제를 수행하는 언어 모델이다.”",
+          "choices": [
+            {
+              "id": "A",
+              "text": "추론 계산량"
+            },
+            {
+              "id": "B",
+              "text": "한국어 높임말과 화행"
+            },
+            {
+              "id": "C",
+              "text": "대규모 언어 모델"
+            },
+            {
+              "id": "D",
+              "text": "언어 모델"
             }
           ],
           "answer": "C",
-          "explanation": "이 설명은 ‘프롬프트 엔지니어링’의 핵심 정의와 적용 대상을 요약한다.",
+          "explanation": "이 설명은 ‘대규모 언어 모델’의 핵심 정의와 적용 대상을 요약한다.",
           "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/prompt-engineering/"
+          "reviewUrl": "/wiki/large-language-model/"
         }
       ]
     },
@@ -1896,15 +2125,15 @@
           "choices": [
             {
               "id": "A",
-              "text": "그래프 합성곱 신경망은 그래프의 인접 구조와 정규화된 이웃 집계를 사용해 노드 표현을 변환하는 그래프 신경망이다."
+              "text": "은닉 상태는 순환 모델이나 상태 공간 모델이 이전 입력 정보를 요약해 다음 계산으로 전달하는 내부 표현이다."
             },
             {
               "id": "B",
-              "text": "인스턴스 정규화는 각 표본과 채널별로 공간 위치의 평균과 분산을 사용해 활성값을 정규화하는 방법이다."
+              "text": "레이블 스무딩은 원-핫 정답분포의 일부 확률 질량을 다른 클래스에 나누어 과도한 확신을 줄이는 정규화 기법이다."
             },
             {
               "id": "C",
-              "text": "학습 곡선은 학습 단계나 데이터 크기에 따른 훈련·검증 성능의 변화를 나타내는 기록이다."
+              "text": "선형층은 입력 벡터에 학습 가능한 행렬과 편향을 적용해 아핀 변환을 수행하는 층이다."
             },
             {
               "id": "D",
@@ -1952,21 +2181,73 @@
             },
             {
               "id": "B",
-              "text": "그래프 트랜스포머"
+              "text": "커널화 어텐션"
             },
             {
               "id": "C",
-              "text": "언어 모델링 헤드"
+              "text": "길이 외삽"
             },
             {
               "id": "D",
-              "text": "Longformer"
+              "text": "깊이 혼합"
             }
           ],
           "answer": "A",
           "explanation": "이 코스의 권장 순서에서는 ‘로컬 어텐션’ 다음에 ‘글로벌 어텐션’을 학습한다.",
           "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
           "reviewUrl": "/course/efficient-long-context-transformers/"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-ai-accountability",
+      "articleId": "ai-accountability",
+      "title": "AI 책임성 학습 체크",
+      "url": "/wiki/ai-accountability/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "guardrail",
+          "title": "가드레일",
+          "url": "/wiki/guardrail/"
+        }
+      ],
+      "teaches": [
+        "AI 책임성은 AI 관련 결정과 결과에 대해 지정된 주체가 설명하고 통제하며 피해를 시정할 의무를 갖는 원칙이다."
+      ],
+      "assesses": [
+        "concept-distinction"
+      ],
+      "courseIds": [
+        "ai-regulation-literacy"
+      ],
+      "items": [
+        {
+          "id": "ai-accountability-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘AI 책임성’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "콘텐츠 조정"
+            },
+            {
+              "id": "B",
+              "text": "가드레일"
+            },
+            {
+              "id": "C",
+              "text": "데이터셋 데이터시트"
+            },
+            {
+              "id": "D",
+              "text": "이중용도 AI"
+            }
+          ],
+          "answer": "B",
+          "explanation": "‘가드레일’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/ai-accountability/#문서-관계"
         }
       ]
     },
@@ -1987,38 +2268,38 @@
         "명시적으로 모든 규칙을 작성하지 않고 데이터에서 패턴을 학습해 예측이나 결정을 수행하는 인공지능의 한 분야다."
       ],
       "assesses": [
-        "concept-distinction"
+        "case-judgment"
       ],
       "courseIds": [
         "ai-foundations"
       ],
       "items": [
         {
-          "id": "machine-learning-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘머신러닝’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "machine-learning-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “명시적으로 모든 규칙을 작성하지 않고 데이터에서 패턴을 학습해 예측이나 결정을 수행하는 인공지능의 한 분야다.”",
           "choices": [
             {
               "id": "A",
-              "text": "특성"
+              "text": "가우스 과정"
             },
             {
               "id": "B",
-              "text": "인공지능"
+              "text": "계층적 군집화"
             },
             {
               "id": "C",
-              "text": "생성형 인공지능"
+              "text": "머신러닝"
             },
             {
               "id": "D",
-              "text": "가설 공간"
+              "text": "지식 추적"
             }
           ],
-          "answer": "B",
-          "explanation": "‘인공지능’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/machine-learning/#문서-관계"
+          "answer": "C",
+          "explanation": "이 설명은 ‘머신러닝’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/machine-learning/"
         }
       ]
     },
@@ -2039,38 +2320,38 @@
         "AI 위협 모델링은 AI 시스템의 자산·행위자·신뢰 경계·공격 표면과 가능한 피해 경로를 구조적으로 식별하는 과정이다."
       ],
       "assesses": [
-        "case-judgment"
+        "multiple-choice"
       ],
       "courseIds": [
         "ai-security-redteam"
       ],
       "items": [
         {
-          "id": "ai-threat-modeling-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “AI 위협 모델링은 AI 시스템의 자산·행위자·신뢰 경계·공격 표면과 가능한 피해 경로를 구조적으로 식별하는 과정이다.”",
+          "id": "ai-threat-modeling-definition",
+          "type": "multiple-choice",
+          "prompt": "‘AI 위협 모델링’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "파국적 AI 위험"
+              "text": "교정 가능성은 AI 시스템이 사람의 수정, 중단, 목표 변경과 통제 시도를 방해하지 않고 받아들이는 성질이다."
             },
             {
               "id": "B",
-              "text": "데이터 최소화"
+              "text": "의사결정 출처 추적은 AI가 내린 결과에 영향을 준 데이터, 모델, 규칙, 사람 승인과 처리 단계를 재구성할 수 있게 기록하는 체계다."
             },
             {
               "id": "C",
-              "text": "AI 위협 모델링"
+              "text": "기회 균등은 실제 양성인 사례에서 보호 집단별 참양성률이 같도록 요구하는 공정성 기준이다."
             },
             {
               "id": "D",
-              "text": "차등 개인정보 보호"
+              "text": "AI 위협 모델링은 AI 시스템의 자산·행위자·신뢰 경계·공격 표면과 가능한 피해 경로를 구조적으로 식별하는 과정이다."
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘AI 위협 모델링’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/ai-threat-modeling/"
+          "answer": "D",
+          "explanation": "AI 위협 모델링은 AI 시스템의 자산·행위자·신뢰 경계·공격 표면과 가능한 피해 경로를 구조적으로 식별하는 과정이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/ai-threat-modeling/#개념과-원리"
         }
       ]
     },
@@ -2091,38 +2372,38 @@
         "AI 가속기는 신경망 학습이나 추론의 핵심 연산을 범용 프로세서보다 빠르고 효율적으로 처리하도록 특화된 하드웨어의 총칭이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "sequence"
       ],
       "courseIds": [
         "ai-serving-systems"
       ],
       "items": [
         {
-          "id": "ai-accelerator-definition",
-          "type": "multiple-choice",
-          "prompt": "‘AI 가속기’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "ai-accelerator-sequence",
+          "type": "sequence",
+          "prompt": "‘AI 가속기’ 다음에 ‘AI 시스템·하드웨어·서빙’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "라이선스 호환성은 서로 다른 라이선스의 저작물이나 아티팩트를 결합·재배포할 때 의무가 충돌하지 않는 성질이다."
+              "text": "그래픽 처리 장치"
             },
             {
               "id": "B",
-              "text": "MLflow는 머신러닝 실험, 실행 기록, 모델 패키징과 등록을 위한 오픈소스 수명주기 도구 모음이다."
+              "text": "관리형 추론 플랫폼"
             },
             {
               "id": "C",
-              "text": "모델 배포는 검증된 모델 아티팩트를 실제 요청이나 배치 작업이 사용할 수 있는 실행 환경에 제공하는 과정이다."
+              "text": "모델 카탈로그"
             },
             {
               "id": "D",
-              "text": "AI 가속기는 신경망 학습이나 추론의 핵심 연산을 범용 프로세서보다 빠르고 효율적으로 처리하도록 특화된 하드웨어의 총칭이다."
+              "text": "모델 라이선스"
             }
           ],
-          "answer": "D",
-          "explanation": "AI 가속기는 신경망 학습이나 추론의 핵심 연산을 범용 프로세서보다 빠르고 효율적으로 처리하도록 특화된 하드웨어의 총칭이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/ai-accelerator/#개념과-원리"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘AI 가속기’ 다음에 ‘그래픽 처리 장치’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/ai-serving-systems/"
         }
       ]
     },
@@ -2143,38 +2424,38 @@
         "클라이언트가 서버에 메서드·주소·헤더·본문을 보내는 메시지다."
       ],
       "assesses": [
-        "sequence"
+        "concept-distinction"
       ],
       "courseIds": [
         "api-development"
       ],
       "items": [
         {
-          "id": "http-request-sequence",
-          "type": "sequence",
-          "prompt": "‘HTTP 요청’ 다음에 ‘AI API 개발’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "http-request-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘HTTP 요청’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "JSON"
+              "text": "배치 API"
             },
             {
               "id": "B",
-              "text": "클라이언트 미들웨어"
+              "text": "API"
             },
             {
               "id": "C",
-              "text": "교차 사이트 요청 위조"
+              "text": "동시성 한도"
             },
             {
               "id": "D",
-              "text": "파일 업로드 API"
+              "text": "동적 스키마 참조"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘HTTP 요청’ 다음에 ‘JSON’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/api-development/"
+          "answer": "B",
+          "explanation": "‘API’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/http-request/#문서-관계"
         }
       ]
     },
@@ -2195,7 +2476,7 @@
         "수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다."
       ],
       "assesses": [
-        "concept-distinction"
+        "case-judgment"
       ],
       "courseIds": [
         "ai-mathematics-statistics",
@@ -2203,31 +2484,31 @@
       ],
       "items": [
         {
-          "id": "matrix-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘행렬’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "matrix-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “수치를 행과 열로 배열한 구조로, 신경망의 선형 변환과 배치 계산에 사용된다.”",
           "choices": [
             {
               "id": "A",
-              "text": "젠슨-섀넌 발산"
+              "text": "쿨백-라이블러 발산"
             },
             {
               "id": "B",
-              "text": "벡터"
+              "text": "마할라노비스 거리"
             },
             {
               "id": "C",
-              "text": "큰 수의 법칙"
+              "text": "행렬"
             },
             {
               "id": "D",
-              "text": "주변확률"
+              "text": "전치행렬"
             }
           ],
-          "answer": "B",
-          "explanation": "‘벡터’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/matrix/#문서-관계"
+          "answer": "C",
+          "explanation": "이 설명은 ‘행렬’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/matrix/"
         }
       ]
     },
@@ -2253,7 +2534,7 @@
         "성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다."
       ],
       "assesses": [
-        "case-judgment"
+        "multiple-choice"
       ],
       "courseIds": [
         "responsible-ai",
@@ -2261,31 +2542,31 @@
       ],
       "items": [
         {
-          "id": "metric-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다.”",
+          "id": "metric-definition",
+          "type": "multiple-choice",
+          "prompt": "‘평가 지표’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "평가 신뢰구간"
+              "text": "평가 의사결정 로그는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "B",
-              "text": "평가 슬라이스"
+              "text": "기대 보정 오차(ECE)는 비슷한 신뢰도의 예측을 구간으로 묶고 각 구간의 평균 신뢰도와 실제 정확도 차이를 가중 평균한 값이다."
             },
             {
               "id": "C",
-              "text": "평가 지표"
+              "text": "근거 충실도는 시스템 출력이 주어진 자료나 관측 가능한 사실에 기반하고 근거 밖 내용을 단정하지 않는 성질이다."
             },
             {
               "id": "D",
-              "text": "생성 평가"
+              "text": "성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다."
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘평가 지표’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/metric/"
+          "answer": "D",
+          "explanation": "성능이나 품질의 특정 측면을 수치로 요약하는 측정 기준이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/metric/#개념과-원리"
         }
       ]
     },
@@ -2306,38 +2587,38 @@
         "모델 서빙은 학습된 모델을 요청 가능한 서비스로 배치해 입력 전처리, 추론, 출력 후처리와 운영 관측을 제공하는 체계다."
       ],
       "assesses": [
-        "multiple-choice"
+        "sequence"
       ],
       "courseIds": [
         "llmops-production"
       ],
       "items": [
         {
-          "id": "model-serving-definition",
-          "type": "multiple-choice",
-          "prompt": "‘모델 서빙’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "model-serving-sequence",
+          "type": "sequence",
+          "prompt": "‘모델 서빙’ 다음에 ‘LLMOps와 프로덕션 서빙’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "추론 탄소 회계는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+              "text": "모델 서빙 플랫폼"
             },
             {
               "id": "B",
-              "text": "추론 큐 규칙은 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+              "text": "추론 모니터링"
             },
             {
               "id": "C",
-              "text": "추론 워크로드 형상화는 모델 로딩·스케줄링·KV 캐시·토큰 생성을 다루는 추론 서빙 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+              "text": "추론 시간 초과"
             },
             {
               "id": "D",
-              "text": "모델 서빙은 학습된 모델을 요청 가능한 서비스로 배치해 입력 전처리, 추론, 출력 후처리와 운영 관측을 제공하는 체계다."
+              "text": "KV 캐시"
             }
           ],
-          "answer": "D",
-          "explanation": "모델 서빙은 학습된 모델을 요청 가능한 서비스로 배치해 입력 전처리, 추론, 출력 후처리와 운영 관측을 제공하는 체계다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/model-serving/#개념과-원리"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘모델 서빙’ 다음에 ‘모델 서빙 플랫폼’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/llmops-production/"
         }
       ]
     },
@@ -2358,38 +2639,38 @@
         "어휘 검색은 질의와 문서에 실제로 나타난 토큰·어근·구의 일치를 중심으로 후보를 찾는 검색 방식이다."
       ],
       "assesses": [
-        "sequence"
+        "concept-distinction"
       ],
       "courseIds": [
         "advanced-rag"
       ],
       "items": [
         {
-          "id": "lexical-retrieval-sequence",
-          "type": "sequence",
-          "prompt": "‘어휘 검색’ 다음에 ‘고급 RAG와 지식 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "lexical-retrieval-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘어휘 검색’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "밀집 검색"
+              "text": "지시 튜닝 임베딩"
             },
             {
               "id": "B",
-              "text": "하이브리드 검색"
+              "text": "임베딩"
             },
             {
               "id": "C",
-              "text": "역색인"
+              "text": "순위 학습"
             },
             {
               "id": "D",
-              "text": "지역 민감 해싱"
+              "text": "다중 홉 RAG"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘어휘 검색’ 다음에 ‘밀집 검색’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/advanced-rag/"
+          "answer": "B",
+          "explanation": "‘임베딩’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/lexical-retrieval/#문서-관계"
         }
       ]
     },
@@ -2410,38 +2691,38 @@
         "특성은 예측이나 분석에 사용하도록 관측 대상을 수치·범주·벡터 등으로 표현한 입력 변수다."
       ],
       "assesses": [
-        "concept-distinction"
+        "case-judgment"
       ],
       "courseIds": [
         "data-training-pipelines"
       ],
       "items": [
         {
-          "id": "feature-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘특성’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "feature-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “특성은 예측이나 분석에 사용하도록 관측 대상을 수치·범주·벡터 등으로 표현한 입력 변수다.”",
           "choices": [
             {
               "id": "A",
-              "text": "고전적 인공지능"
+              "text": "가설 공간"
             },
             {
               "id": "B",
-              "text": "인공지능"
+              "text": "잠재 표현"
             },
             {
               "id": "C",
-              "text": "귀납적 편향"
+              "text": "특성"
             },
             {
               "id": "D",
-              "text": "선형 회귀"
+              "text": "마르코프 확률장"
             }
           ],
-          "answer": "B",
-          "explanation": "‘인공지능’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/feature/#문서-관계"
+          "answer": "C",
+          "explanation": "이 설명은 ‘특성’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/feature/"
         }
       ]
     },
@@ -2467,7 +2748,7 @@
         "서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다."
       ],
       "assesses": [
-        "case-judgment"
+        "multiple-choice"
       ],
       "courseIds": [
         "multimodal-ai",
@@ -2475,31 +2756,31 @@
       ],
       "items": [
         {
-          "id": "multimodal-embedding-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다.”",
+          "id": "multimodal-embedding-definition",
+          "type": "multiple-choice",
+          "prompt": "‘멀티모달 임베딩’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "멀티모달 대조 사전학습"
+              "text": "멀티모달 탈옥 공격은 텍스트 외 이미지·음성 등 입력 채널을 이용해 모델의 안전 정책이나 입력 검사를 우회하도록 유도하는 공격이다."
             },
             {
               "id": "B",
-              "text": "멀티모달 토크나이저"
+              "text": "광학 흐름은 연속 영상 프레임 사이에서 각 화소가 이동한 방향과 크기를 추정한 벡터장이다."
             },
             {
               "id": "C",
-              "text": "멀티모달 임베딩"
+              "text": "점수 기반 생성 모델은 데이터 분포의 로그밀도 기울기인 점수 함수를 학습해 노이즈에서 표본을 생성하는 모델이다."
             },
             {
               "id": "D",
-              "text": "Perceiver 리샘플러"
+              "text": "서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다."
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘멀티모달 임베딩’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/multimodal-embedding/"
+          "answer": "D",
+          "explanation": "서로 다른 데이터 양식을 비교 가능한 하나의 벡터 공간에 배치한 표현이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/multimodal-embedding/#개념과-원리"
         }
       ]
     },
@@ -2520,38 +2801,38 @@
         "멀티모달 트랜스포머는 텍스트·이미지·음성 등 서로 다른 양식의 토큰을 어텐션으로 결합해 공동 표현이나 출력을 만드는 모델이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "sequence"
       ],
       "courseIds": [
         "multimodal-systems"
       ],
       "items": [
         {
-          "id": "multimodal-transformer-definition",
-          "type": "multiple-choice",
-          "prompt": "‘멀티모달 트랜스포머’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "multimodal-transformer-sequence",
+          "type": "sequence",
+          "prompt": "‘멀티모달 트랜스포머’ 다음에 ‘멀티모달 AI 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "길이 외삽은 모델이 학습에서 본 시퀀스 길이를 넘어선 입력에서도 규칙과 성능을 유지하는 능력이다."
+              "text": "멀티모달 토크나이저"
             },
             {
               "id": "B",
-              "text": "메모리 효율적 어텐션은 전체 어텐션 행렬을 메모리에 물질화하지 않고 동일하거나 근사한 출력을 계산하는 방법군이다."
+              "text": "저랭크 어텐션"
             },
             {
               "id": "C",
-              "text": "패딩 마스크는 길이가 다른 시퀀스를 한 배치로 맞추기 위해 추가한 패딩 위치가 어텐션과 손실에 영향을 주지 않게 하는 마스크다."
+              "text": "NTK 인식 스케일링"
             },
             {
               "id": "D",
-              "text": "멀티모달 트랜스포머는 텍스트·이미지·음성 등 서로 다른 양식의 토큰을 어텐션으로 결합해 공동 표현이나 출력을 만드는 모델이다."
+              "text": "위치 인코딩"
             }
           ],
-          "answer": "D",
-          "explanation": "멀티모달 트랜스포머는 텍스트·이미지·음성 등 서로 다른 양식의 토큰을 어텐션으로 결합해 공동 표현이나 출력을 만드는 모델이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/multimodal-transformer/#개념과-원리"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘멀티모달 트랜스포머’ 다음에 ‘멀티모달 토크나이저’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/multimodal-systems/"
         }
       ]
     },
@@ -2577,38 +2858,38 @@
         "목적 함수를 최소화하거나 최대화하는 파라미터를 찾는 과정이다."
       ],
       "assesses": [
-        "sequence"
+        "concept-distinction"
       ],
       "courseIds": [
         "model-training"
       ],
       "items": [
         {
-          "id": "optimization-sequence",
-          "type": "sequence",
-          "prompt": "‘최적화’ 다음에 ‘모델 학습과 튜닝’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "optimization-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘최적화’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "손실 함수"
+              "text": "마할라노비스 거리"
             },
             {
               "id": "B",
-              "text": "큰 수의 법칙"
+              "text": "기울기"
             },
             {
               "id": "C",
-              "text": "주변확률"
+              "text": "행렬의 계수"
             },
             {
               "id": "D",
-              "text": "최대우도추정"
+              "text": "뉴턴 방법"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘최적화’ 다음에 ‘손실 함수’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/model-training/"
+          "answer": "B",
+          "explanation": "‘기울기’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/optimization/#문서-관계"
         }
       ]
     },
@@ -2629,38 +2910,38 @@
         "사용·연구·수정·공유의 자유를 보장하고, 모델을 수정하는 데 필요한 코드·파라미터·데이터 정보를 제공하는 AI 모델 또는 시스템이다."
       ],
       "assesses": [
-        "concept-distinction"
+        "case-judgment"
       ],
       "courseIds": [
         "model-service-ecosystem"
       ],
       "items": [
         {
-          "id": "open-source-model-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘오픈소스 모델’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "open-source-model-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “사용·연구·수정·공유의 자유를 보장하고, 모델을 수정하는 데 필요한 코드·파라미터·데이터 정보를 제공하는 AI 모델 또는 시스템이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "모바일 모델 배포"
+              "text": "모델 범용재화화"
             },
             {
               "id": "B",
-              "text": "모델 라이선스"
+              "text": "모델 메타데이터"
             },
             {
               "id": "C",
-              "text": "모델 평가 보고서"
+              "text": "오픈소스 모델"
             },
             {
               "id": "D",
-              "text": "모델 레지스트리"
+              "text": "모델 롤백"
             }
           ],
-          "answer": "B",
-          "explanation": "‘모델 라이선스’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/open-source-model/#문서-관계"
+          "answer": "C",
+          "explanation": "이 설명은 ‘오픈소스 모델’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/open-source-model/"
         }
       ]
     },
@@ -2686,7 +2967,7 @@
         "다양한 자연어 지시 데이터로 여러 과제를 지시 형식에 맞게 수행하도록 만드는 학습이다."
       ],
       "assesses": [
-        "case-judgment"
+        "multiple-choice"
       ],
       "courseIds": [
         "model-training",
@@ -2694,31 +2975,83 @@
       ],
       "items": [
         {
-          "id": "instruction-tuning-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “다양한 자연어 지시 데이터로 여러 과제를 지시 형식에 맞게 수행하도록 만드는 학습이다.”",
+          "id": "instruction-tuning-definition",
+          "type": "multiple-choice",
+          "prompt": "‘지시 튜닝’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "다중 과제 지시 튜닝"
+              "text": "온라인 선호 학습은 현재 정책이 새 후보를 생성하고 그에 대한 최신 선호 피드백을 받아 반복적으로 정책을 갱신하는 방식이다."
             },
             {
               "id": "B",
-              "text": "파라미터 효율적 미세조정"
+              "text": "사후학습 제거 실험은 지시 튜닝·선호 학습·보상 모델·정렬 평가를 포함하는 사후학습 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "C",
-              "text": "지시 튜닝"
+              "text": "선호 손실은 같은 입력에 대한 선호 출력과 비선호 출력의 상대 점수를 학습하도록 구성한 목적 함수다."
             },
             {
               "id": "D",
-              "text": "사후학습 계보"
+              "text": "다양한 자연어 지시 데이터로 여러 과제를 지시 형식에 맞게 수행하도록 만드는 학습이다."
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘지시 튜닝’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/instruction-tuning/"
+          "answer": "D",
+          "explanation": "다양한 자연어 지시 데이터로 여러 과제를 지시 형식에 맞게 수행하도록 만드는 학습이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/instruction-tuning/#개념과-원리"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-inter-agent-communication",
+      "articleId": "inter-agent-communication",
+      "title": "에이전트 간 통신 학습 체크",
+      "url": "/wiki/inter-agent-communication/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "ai-agent",
+          "title": "AI 에이전트",
+          "url": "/wiki/ai-agent/"
+        }
+      ],
+      "teaches": [
+        "에이전트 간 통신은 에이전트들이 의도, 관측, 요청과 결과를 정해진 메시지 형식으로 교환하는 메커니즘이다."
+      ],
+      "assesses": [
+        "sequence"
+      ],
+      "courseIds": [
+        "agent-interoperability"
+      ],
+      "items": [
+        {
+          "id": "inter-agent-communication-sequence",
+          "type": "sequence",
+          "prompt": "‘에이전트 간 통신’ 다음에 ‘에이전트 상호운용과 실행 계약’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "에이전트 실행 계약"
+            },
+            {
+              "id": "B",
+              "text": "에이전트 스웜"
+            },
+            {
+              "id": "C",
+              "text": "에이전트 도구 타임아웃 예산"
+            },
+            {
+              "id": "D",
+              "text": "블랙보드 아키텍처"
+            }
+          ],
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘에이전트 간 통신’ 다음에 ‘에이전트 실행 계약’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/agent-interoperability/"
         }
       ]
     },
@@ -2739,38 +3072,38 @@
         "세그먼트 임베딩은 한 입력 안에서 문장 쌍이나 문서 구간처럼 서로 다른 부분의 소속을 나타내는 학습 벡터다."
       ],
       "assesses": [
-        "multiple-choice"
+        "concept-distinction"
       ],
       "courseIds": [
         "transformer-architecture"
       ],
       "items": [
         {
-          "id": "segment-embedding-definition",
-          "type": "multiple-choice",
-          "prompt": "‘세그먼트 임베딩’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "segment-embedding-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘세그먼트 임베딩’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "Longformer는 각 토큰의 국소 슬라이딩 창 어텐션과 일부 토큰의 전역 어텐션을 결합해 긴 문서를 처리하는 트랜스포머다."
+              "text": "멀티쿼리 어텐션"
             },
             {
               "id": "B",
-              "text": "멀티모달 트랜스포머는 텍스트·이미지·음성 등 서로 다른 양식의 토큰을 어텐션으로 결합해 공동 표현이나 출력을 만드는 모델이다."
+              "text": "트랜스포머"
             },
             {
               "id": "C",
-              "text": "위치 ID는 시퀀스 안 각 토큰에 위치 인코딩이나 회전 각도를 할당하기 위한 정수 인덱스다."
+              "text": "Performer"
             },
             {
               "id": "D",
-              "text": "세그먼트 임베딩은 한 입력 안에서 문장 쌍이나 문서 구간처럼 서로 다른 부분의 소속을 나타내는 학습 벡터다."
+              "text": "쿼리·키·값"
             }
           ],
-          "answer": "D",
-          "explanation": "세그먼트 임베딩은 한 입력 안에서 문장 쌍이나 문서 구간처럼 서로 다른 부분의 소속을 나타내는 학습 벡터다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/segment-embedding/#개념과-원리"
+          "answer": "B",
+          "explanation": "‘트랜스포머’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/segment-embedding/#문서-관계"
         }
       ]
     },
@@ -2791,38 +3124,38 @@
         "에이전트가 도달하거나 유지하려는 바람직한 상태를 성공 조건과 제약으로 표현한 것이다."
       ],
       "assesses": [
-        "sequence"
+        "case-judgment"
       ],
       "courseIds": [
         "production-agents"
       ],
       "items": [
         {
-          "id": "agent-goal-sequence",
-          "type": "sequence",
-          "prompt": "‘에이전트 목표’ 다음에 ‘프로덕션 AI 에이전트’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "agent-goal-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “에이전트가 도달하거나 유지하려는 바람직한 상태를 성공 조건과 제약으로 표현한 것이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "에이전트 과제 분해"
+              "text": "에이전트 종료 조건"
             },
             {
               "id": "B",
-              "text": "API 행동 도구"
+              "text": "에이전트 궤적 평가"
             },
             {
               "id": "C",
-              "text": "비평 에이전트"
+              "text": "에이전트 목표"
             },
             {
               "id": "D",
-              "text": "에이전트 장기 기억"
+              "text": "컴퓨터 사용 에이전트"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘에이전트 목표’ 다음에 ‘에이전트 과제 분해’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/production-agents/"
+          "answer": "C",
+          "explanation": "이 설명은 ‘에이전트 목표’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/agent-goal/"
         }
       ]
     },
@@ -2843,38 +3176,38 @@
         "도메인 이름 시스템(DNS)은 사람이 읽는 도메인 이름을 IP 주소와 여러 자원 레코드에 연결하는 분산 계층형 데이터베이스다."
       ],
       "assesses": [
-        "concept-distinction"
+        "multiple-choice"
       ],
       "courseIds": [
         "production-ai-api-systems"
       ],
       "items": [
         {
-          "id": "domain-name-system-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘도메인 이름 시스템’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "domain-name-system-definition",
+          "type": "multiple-choice",
+          "prompt": "‘도메인 이름 시스템’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "파일 업로드 API"
+              "text": "임베딩 API는 텍스트나 다른 입력을 의미 비교와 검색에 사용할 수 있는 고정 길이 수치 벡터로 변환하는 인터페이스다."
             },
             {
               "id": "B",
-              "text": "API"
+              "text": "HTTP 429는 클라이언트가 일정 시간에 너무 많은 요청을 보내 서버가 처리를 거부했음을 나타내는 상태 코드다."
             },
             {
               "id": "C",
-              "text": "HTTP 메서드"
+              "text": "HTTPS는 HTTP 메시지를 전송 계층 보안(TLS) 연결 위에서 교환해 기밀성, 무결성과 서버 인증을 제공하는 방식이다."
             },
             {
               "id": "D",
-              "text": "JSON"
+              "text": "도메인 이름 시스템(DNS)은 사람이 읽는 도메인 이름을 IP 주소와 여러 자원 레코드에 연결하는 분산 계층형 데이터베이스다."
             }
           ],
-          "answer": "B",
-          "explanation": "‘API’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/domain-name-system/#문서-관계"
+          "answer": "D",
+          "explanation": "도메인 이름 시스템(DNS)은 사람이 읽는 도메인 이름을 IP 주소와 여러 자원 레코드에 연결하는 분산 계층형 데이터베이스다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/domain-name-system/#개념과-원리"
         }
       ]
     },
@@ -2895,38 +3228,96 @@
         "시스템 프롬프트는 대화형 언어 모델에 역할, 전역 규칙, 도구 사용과 응답 경계를 우선 문맥으로 제공하는 지시 메시지다."
       ],
       "assesses": [
-        "case-judgment"
+        "sequence"
       ],
       "courseIds": [
         "prompt-systems"
       ],
       "items": [
         {
-          "id": "system-prompt-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “시스템 프롬프트는 대화형 언어 모델에 역할, 전역 규칙, 도구 사용과 응답 경계를 우선 문맥으로 제공하는 지시 메시지다.”",
+          "id": "system-prompt-sequence",
+          "type": "sequence",
+          "prompt": "‘시스템 프롬프트’ 다음에 ‘프롬프트 시스템 설계’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "LLM 응답 정규화"
+              "text": "사용자 프롬프트"
             },
             {
               "id": "B",
-              "text": "마스크 언어 모델"
+              "text": "LLM 출력 결정성"
             },
             {
               "id": "C",
-              "text": "시스템 프롬프트"
+              "text": "LLM 워크로드 분류"
             },
             {
               "id": "D",
-              "text": "모델 호환성 행렬"
+              "text": "모달리티 대체 정책"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘시스템 프롬프트’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/system-prompt/"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘시스템 프롬프트’ 다음에 ‘사용자 프롬프트’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/prompt-systems/"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-tokenization",
+      "articleId": "tokenization",
+      "title": "토큰화 학습 체크",
+      "url": "/wiki/tokenization/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "token",
+          "title": "토큰",
+          "url": "/wiki/token/"
+        },
+        {
+          "id": "vocabulary",
+          "title": "어휘 집합",
+          "url": "/wiki/vocabulary/"
+        }
+      ],
+      "teaches": [
+        "문자열을 모델의 어휘 집합에 있는 토큰 ID 시퀀스로 변환하는 과정이다."
+      ],
+      "assesses": [
+        "concept-distinction"
+      ],
+      "courseIds": [
+        "korean-multilingual-ai",
+        "llm-internals"
+      ],
+      "items": [
+        {
+          "id": "tokenization-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘토큰화’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "LLM 요청 엔벨로프"
+            },
+            {
+              "id": "B",
+              "text": "토큰"
+            },
+            {
+              "id": "C",
+              "text": "긴 문맥 라우팅"
+            },
+            {
+              "id": "D",
+              "text": "모델 역량 프로파일"
+            }
+          ],
+          "answer": "B",
+          "explanation": "‘토큰’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/tokenization/#문서-관계"
         }
       ]
     },
@@ -2952,38 +3343,38 @@
         "신경망에서 입력 신호의 영향력을 조절하며 학습 과정에서 손실을 줄이는 방향으로 갱신되는 수치형 매개변수다."
       ],
       "assesses": [
-        "multiple-choice"
+        "case-judgment"
       ],
       "courseIds": [
         "neural-model-architectures"
       ],
       "items": [
         {
-          "id": "weight-definition",
-          "type": "multiple-choice",
-          "prompt": "‘가중치’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "weight-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “신경망에서 입력 신호의 영향력을 조절하며 학습 과정에서 손실을 줄이는 방향으로 갱신되는 수치형 매개변수다.”",
           "choices": [
             {
               "id": "A",
-              "text": "장단기 메모리는 입력·망각·출력 게이트와 셀 상태로 장기 의존성 학습을 돕는 순환 신경망 구조다."
+              "text": "혼합 정밀도 학습"
             },
             {
               "id": "B",
-              "text": "혼합 정밀도 학습은 신경망 학습의 일부 연산과 저장에 낮은 수치 정밀도를 사용하면서 필요한 부분은 높은 정밀도로 유지하는 기법이다."
+              "text": "신경망 너비"
             },
             {
               "id": "C",
-              "text": "신경망 너비는 한 층이 가진 유닛, 채널 또는 은닉 차원의 크기를 뜻한다."
+              "text": "가중치"
             },
             {
               "id": "D",
-              "text": "신경망에서 입력 신호의 영향력을 조절하며 학습 과정에서 손실을 줄이는 방향으로 갱신되는 수치형 매개변수다."
+              "text": "출력층"
             }
           ],
-          "answer": "D",
-          "explanation": "신경망에서 입력 신호의 영향력을 조절하며 학습 과정에서 손실을 줄이는 방향으로 갱신되는 수치형 매개변수다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/weight/#개념과-원리"
+          "answer": "C",
+          "explanation": "이 설명은 ‘가중치’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/weight/"
         }
       ]
     },
@@ -3004,38 +3395,90 @@
         "글로벌 어텐션은 선택된 토큰이 시퀀스 전체와 상호작용하거나 모든 토큰이 전역 위치를 볼 수 있게 하는 연결 방식이다."
       ],
       "assesses": [
-        "sequence"
+        "multiple-choice"
       ],
       "courseIds": [
         "efficient-long-context-transformers"
       ],
       "items": [
         {
-          "id": "global-attention-sequence",
-          "type": "sequence",
-          "prompt": "‘글로벌 어텐션’ 다음에 ‘효율적·장문맥 트랜스포머’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "global-attention-definition",
+          "type": "multiple-choice",
+          "prompt": "‘글로벌 어텐션’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "슬라이딩 윈도 어텐션"
+              "text": "Performer는 소프트맥스 어텐션을 무작위 특징 기반 커널로 근사해 시퀀스 길이에 선형인 계산을 목표로 하는 트랜스포머 변형이다."
             },
             {
               "id": "B",
-              "text": "멀티쿼리 어텐션"
+              "text": "어텐션에서 무엇을 찾을지 나타내는 쿼리와 비교 기준인 키, 선택된 정보를 전달하는 값으로 입력 표현을 투영한 세 집합이다."
             },
             {
               "id": "C",
-              "text": "Performer"
+              "text": "회전 위치 임베딩은 위치에 따른 회전 변환을 질의와 키 벡터의 차원 쌍에 적용해 상대 위치가 내적에 나타나게 하는 방식이다."
             },
             {
               "id": "D",
-              "text": "쿼리·키·값"
+              "text": "글로벌 어텐션은 선택된 토큰이 시퀀스 전체와 상호작용하거나 모든 토큰이 전역 위치를 볼 수 있게 하는 연결 방식이다."
+            }
+          ],
+          "answer": "D",
+          "explanation": "글로벌 어텐션은 선택된 토큰이 시퀀스 전체와 상호작용하거나 모든 토큰이 전역 위치를 볼 수 있게 하는 연결 방식이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/global-attention/#개념과-원리"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-ai-regulatory-classification",
+      "articleId": "ai-regulatory-classification",
+      "title": "AI 규제 분류 학습 체크",
+      "url": "/wiki/ai-regulatory-classification/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "guardrail",
+          "title": "가드레일",
+          "url": "/wiki/guardrail/"
+        }
+      ],
+      "teaches": [
+        "AI 규제 분류는 시스템의 용도·영향 대상·위험 특성을 법적 범주와 의무 수준에 대응시키는 절차다."
+      ],
+      "assesses": [
+        "sequence"
+      ],
+      "courseIds": [
+        "ai-regulation-literacy"
+      ],
+      "items": [
+        {
+          "id": "ai-regulatory-classification-sequence",
+          "type": "sequence",
+          "prompt": "‘AI 규제 분류’ 다음에 ‘AI 규제와 리터러시’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "한국 인공지능기본법"
+            },
+            {
+              "id": "B",
+              "text": "EU 고위험 AI 데이터 거버넌스"
+            },
+            {
+              "id": "C",
+              "text": "비인지에 의한 공정성"
+            },
+            {
+              "id": "D",
+              "text": "환각"
             }
           ],
           "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘글로벌 어텐션’ 다음에 ‘슬라이딩 윈도 어텐션’을 학습한다.",
+          "explanation": "이 코스의 권장 순서에서는 ‘AI 규제 분류’ 다음에 ‘한국 인공지능기본법’을 학습한다.",
           "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/efficient-long-context-transformers/"
+          "reviewUrl": "/course/ai-regulation-literacy/"
         }
       ]
     },
@@ -3074,7 +3517,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "잠재 표현"
+              "text": "숙달 학습"
             },
             {
               "id": "B",
@@ -3082,11 +3525,11 @@
             },
             {
               "id": "C",
-              "text": "마르코프 확률장"
+              "text": "나이브 베이즈 분류기"
             },
             {
               "id": "D",
-              "text": "다중 과제 학습"
+              "text": "선수 개념 그래프"
             }
           ],
           "answer": "B",
@@ -3101,7 +3544,7 @@
       "articleId": "ai-risk-assessment",
       "title": "AI 위험 평가 학습 체크",
       "url": "/wiki/ai-risk-assessment/",
-      "educationalLevel": "entry",
+      "educationalLevel": "professional",
       "competencyRequired": [
         {
           "id": "guardrail",
@@ -3116,6 +3559,7 @@
         "case-judgment"
       ],
       "courseIds": [
+        "ai-regulation-literacy",
         "ai-security-redteam"
       ],
       "items": [
@@ -3126,11 +3570,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "회피 공격"
+              "text": "EU 고위험 AI 기록보존"
             },
             {
               "id": "B",
-              "text": "가드레일"
+              "text": "EU 범용 AI 모델 제공자 의무"
             },
             {
               "id": "C",
@@ -3138,7 +3582,7 @@
             },
             {
               "id": "D",
-              "text": "교차 공정성"
+              "text": "인간 감독"
             }
           ],
           "answer": "C",
@@ -3178,15 +3622,15 @@
           "choices": [
             {
               "id": "A",
-              "text": "모델 메타데이터는 모델의 제작자·버전·과제·입출력·학습 데이터·라이선스·평가 결과를 설명하는 구조화된 정보다."
-            },
-            {
-              "id": "B",
               "text": "문제가 있는 모델 변경을 중단하고 이전에 검증된 모델·구성·데이터 처리 상태로 되돌리는 복구 절차다."
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "NIST AI 프로그램은 신뢰할 수 있는 인공지능의 측정, 표준, 위험 관리와 기술 연구를 추진하는 미국 국립표준기술연구소의 활동군이다."
+            },
+            {
+              "id": "C",
+              "text": "오픈 웨이트 모델은 학습된 파라미터가 공개되어 내려받아 추론하거나 추가 학습할 수 있는 모델이다."
             },
             {
               "id": "D",
@@ -3239,15 +3683,15 @@
             },
             {
               "id": "B",
-              "text": "HTTP 메시지 본문"
+              "text": "HTTP 헤더"
             },
             {
               "id": "C",
-              "text": "이미지 생성 API"
+              "text": "멱등성 키"
             },
             {
               "id": "D",
-              "text": "리키 버킷"
+              "text": "JSON 웹 토큰"
             }
           ],
           "answer": "A",
@@ -3287,7 +3731,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "전치행렬"
+              "text": "수치 정밀도"
             },
             {
               "id": "B",
@@ -3295,11 +3739,11 @@
             },
             {
               "id": "C",
-              "text": "수치 적분"
+              "text": "P값"
             },
             {
               "id": "D",
-              "text": "오버플로와 언더플로"
+              "text": "준뉴턴 방법"
             }
           ],
           "answer": "B",
@@ -3339,11 +3783,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "모델 패키지"
+              "text": "모델 업데이트"
             },
             {
               "id": "B",
-              "text": "모델 업데이트"
+              "text": "온프레미스 AI"
             },
             {
               "id": "C",
@@ -3351,7 +3795,7 @@
             },
             {
               "id": "D",
-              "text": "온프레미스 AI"
+              "text": "허용적 라이선스"
             }
           ],
           "answer": "C",
@@ -3391,15 +3835,15 @@
           "choices": [
             {
               "id": "A",
-              "text": "다중 홉 RAG는 하나의 검색으로 답하기 어려운 질의를 여러 단계의 검색과 추론으로 해결하는 검색 증강 생성 방식이다."
+              "text": "Precision@K는 검색 결과 상위 K개 중 관련 문서가 차지하는 비율이다."
             },
             {
               "id": "B",
-              "text": "포인트와이즈 순위화는 각 질의-문서 쌍의 관련성 점수나 등급을 서로 독립적인 예측 문제로 학습하는 방법이다."
+              "text": "검색 질의 라우팅은 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "C",
-              "text": "질의 라우팅은 사용자 질의를 특성과 목적에 따라 적절한 검색기, 지식원 또는 처리 경로로 보내는 과정이다."
+              "text": "재귀 검색은 첫 검색 결과에서 새 질의나 하위 주제를 만들어 필요한 근거가 충분할 때까지 반복 검색하는 방식이다."
             },
             {
               "id": "D",
@@ -3447,15 +3891,15 @@
             },
             {
               "id": "B",
-              "text": "다양체 학습"
+              "text": "다중 과제 학습"
             },
             {
               "id": "C",
-              "text": "모델 용량"
+              "text": "예측"
             },
             {
               "id": "D",
-              "text": "과적합"
+              "text": "회귀"
             }
           ],
           "answer": "A",
@@ -3496,7 +3940,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "장면 문자 인식"
+              "text": "음성-텍스트 변환"
             },
             {
               "id": "B",
@@ -3504,11 +3948,11 @@
             },
             {
               "id": "C",
-              "text": "음성 인식"
+              "text": "텍스트-이미지 생성"
             },
             {
               "id": "D",
-              "text": "텍스트-오디오 생성"
+              "text": "비디오 질의응답"
             }
           ],
           "answer": "B",
@@ -3548,11 +3992,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "공간 추론"
+              "text": "표 인식"
             },
             {
               "id": "B",
-              "text": "음성 번역"
+              "text": "텍스트-비디오 생성"
             },
             {
               "id": "C",
@@ -3560,7 +4004,7 @@
             },
             {
               "id": "D",
-              "text": "음성 합성"
+              "text": "비디오 이해"
             }
           ],
           "answer": "C",
@@ -3606,15 +4050,15 @@
           "choices": [
             {
               "id": "A",
-              "text": "신경망 깊이는 입력에서 출력까지 거치는 학습 가능한 층이나 변환 단계의 수를 뜻한다."
+              "text": "출력층은 신경망의 마지막 표현을 과제에 필요한 로짓, 확률, 실수값 또는 벡터로 변환하는 층이다."
             },
             {
               "id": "B",
-              "text": "옵티마이저 상태는 학습 갱신을 계산하기 위해 매개변수 외에 유지하는 모멘트, 누적 그래디언트, 단계 수 등의 값이다."
+              "text": "RMSProp은 최근 제곱 기울기의 지수이동평균으로 각 매개변수의 학습률을 조정하는 적응형 최적화법이다."
             },
             {
               "id": "C",
-              "text": "제한 볼츠만 머신은 가시층과 은닉층 사이에만 연결을 둔 에너지 기반 확률 모형이다."
+              "text": "확률적 깊이는 잔차 신경망 학습 중 일부 잔차 블록을 무작위로 건너뛰어 다양한 유효 깊이를 학습하는 정규화 기법이다."
             },
             {
               "id": "D",
@@ -3662,15 +4106,15 @@
             },
             {
               "id": "B",
-              "text": "모델 검색"
-            },
-            {
-              "id": "C",
               "text": "NVLink"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Partnership on AI"
+            },
+            {
+              "id": "D",
+              "text": "SafeTensors"
             }
           ],
           "answer": "A",
@@ -3710,7 +4154,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "선호 쌍 품질"
+              "text": "프롬프트 튜닝"
             },
             {
               "id": "B",
@@ -3718,17 +4162,69 @@
             },
             {
               "id": "C",
-              "text": "프롬프트 튜닝"
+              "text": "AI 피드백 기반 강화학습"
             },
             {
               "id": "D",
-              "text": "AI 피드백 기반 강화학습"
+              "text": "보상 모델 앙상블"
             }
           ],
           "answer": "B",
           "explanation": "‘미세조정’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
           "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
           "reviewUrl": "/wiki/preference-data/#문서-관계"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-agent-run-contract",
+      "articleId": "agent-run-contract",
+      "title": "에이전트 실행 계약 학습 체크",
+      "url": "/wiki/agent-run-contract/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "ai-agent",
+          "title": "AI 에이전트",
+          "url": "/wiki/ai-agent/"
+        }
+      ],
+      "teaches": [
+        "에이전트 실행 계약은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+      ],
+      "assesses": [
+        "case-judgment"
+      ],
+      "courseIds": [
+        "agent-interoperability"
+      ],
+      "items": [
+        {
+          "id": "agent-run-contract-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “에이전트 실행 계약은 계획·도구 호출·상태 변경을 반복하는 AI 에이전트 실행 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.”",
+          "choices": [
+            {
+              "id": "A",
+              "text": "인간 승인 게이트"
+            },
+            {
+              "id": "B",
+              "text": "MCP 사용자 정보 요청"
+            },
+            {
+              "id": "C",
+              "text": "에이전트 실행 계약"
+            },
+            {
+              "id": "D",
+              "text": "MCP 전송 계층"
+            }
+          ],
+          "answer": "C",
+          "explanation": "이 설명은 ‘에이전트 실행 계약’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/agent-run-contract/"
         }
       ]
     },
@@ -3754,7 +4250,7 @@
         "텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다."
       ],
       "assesses": [
-        "case-judgment"
+        "multiple-choice"
       ],
       "courseIds": [
         "advanced-rag",
@@ -3762,31 +4258,31 @@
       ],
       "items": [
         {
-          "id": "embedding-model-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다.”",
+          "id": "embedding-model-definition",
+          "type": "multiple-choice",
+          "prompt": "‘임베딩 모델’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "포인트와이즈 순위화"
+              "text": "외부 자료를 검색해 그 결과를 생성 모델의 문맥으로 제공하는 구조다."
             },
             {
               "id": "B",
-              "text": "질의 라우팅"
+              "text": "관련성 점수는 특정 질의와 문서가 정보 요구 관점에서 얼마나 잘 맞는지를 나타내는 수치다."
             },
             {
               "id": "C",
-              "text": "임베딩 모델"
+              "text": "검색 결과 중복 제거는 코퍼스·색인·검색기·리랭커·인용을 연결하는 RAG 지식 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "D",
-              "text": "역순위 결합"
+              "text": "텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다."
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘임베딩 모델’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/embedding-model/"
+          "answer": "D",
+          "explanation": "텍스트·이미지 같은 입력을 비교와 검색에 사용할 수 있는 고정 길이 벡터로 변환하도록 학습한 모델이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/embedding-model/#개념과-원리"
         }
       ]
     },
@@ -3812,7 +4308,7 @@
         "어텐션 모델에 토큰의 순서와 상대 위치 정보를 주입하는 표현이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "sequence"
       ],
       "courseIds": [
         "transformer-architecture",
@@ -3820,31 +4316,31 @@
       ],
       "items": [
         {
-          "id": "positional-encoding-definition",
-          "type": "multiple-choice",
-          "prompt": "‘위치 인코딩’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "positional-encoding-sequence",
+          "type": "sequence",
+          "prompt": "‘위치 인코딩’ 다음에 ‘트랜스포머 아키텍처’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "순환 메모리 트랜스포머는 긴 입력을 구간별로 처리하면서 학습 가능한 메모리 토큰을 다음 구간에 반복 전달하는 구조다."
+              "text": "사인파 위치 인코딩"
             },
             {
               "id": "B",
-              "text": "스케일드 닷프로덕트 어텐션은 질의와 키의 내적을 키 차원의 제곱근으로 나눈 뒤 소프트맥스를 적용해 값의 가중합을 구한다."
+              "text": "셀프 어텐션"
             },
             {
               "id": "C",
-              "text": "희소 트랜스포머는 모든 토큰 쌍 대신 미리 정한 일부 위치 쌍에만 어텐션을 계산해 긴 시퀀스의 비용을 줄이는 구조다."
+              "text": "상태 공간-트랜스포머 하이브리드"
             },
             {
               "id": "D",
-              "text": "어텐션 모델에 토큰의 순서와 상대 위치 정보를 주입하는 표현이다."
+              "text": "Transformer-XL"
             }
           ],
-          "answer": "D",
-          "explanation": "어텐션 모델에 토큰의 순서와 상대 위치 정보를 주입하는 표현이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/positional-encoding/#개념과-원리"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘위치 인코딩’ 다음에 ‘사인파 위치 인코딩’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/transformer-architecture/"
         }
       ]
     },
@@ -3865,38 +4361,38 @@
         "복잡한 에이전트 과제를 실행 가능하고 검증 가능한 하위 과제로 나누고 의존 관계를 정하는 과정이다."
       ],
       "assesses": [
-        "sequence"
+        "concept-distinction"
       ],
       "courseIds": [
         "production-agents"
       ],
       "items": [
         {
-          "id": "agent-task-decomposition-sequence",
-          "type": "sequence",
-          "prompt": "‘에이전트 과제 분해’ 다음에 ‘프로덕션 AI 에이전트’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "agent-task-decomposition-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘에이전트 과제 분해’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "에이전트 숙고"
+              "text": "에이전트 장기 기억"
             },
             {
               "id": "B",
-              "text": "MCP 리소스"
+              "text": "AI 에이전트"
             },
             {
               "id": "C",
-              "text": "모델 기반 계획"
+              "text": "MCP 리소스"
             },
             {
               "id": "D",
-              "text": "멀티 에이전트 시스템"
+              "text": "모델 기반 계획"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘에이전트 과제 분해’ 다음에 ‘에이전트 숙고’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/production-agents/"
+          "answer": "B",
+          "explanation": "‘AI 에이전트’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/agent-task-decomposition/#문서-관계"
         }
       ]
     },
@@ -3917,16 +4413,16 @@
         "HTTPS는 HTTP 메시지를 전송 계층 보안(TLS) 연결 위에서 교환해 기밀성, 무결성과 서버 인증을 제공하는 방식이다."
       ],
       "assesses": [
-        "concept-distinction"
+        "case-judgment"
       ],
       "courseIds": [
         "production-ai-api-systems"
       ],
       "items": [
         {
-          "id": "https-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘HTTPS’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "https-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “HTTPS는 HTTP 메시지를 전송 계층 보안(TLS) 연결 위에서 교환해 기밀성, 무결성과 서버 인증을 제공하는 방식이다.”",
           "choices": [
             {
               "id": "A",
@@ -3934,21 +4430,21 @@
             },
             {
               "id": "B",
-              "text": "API"
+              "text": "MCP와 A2A의 경계"
             },
             {
               "id": "C",
-              "text": "MIME 유형"
+              "text": "HTTPS"
             },
             {
               "id": "D",
-              "text": "병렬 도구 호출"
+              "text": "출력 파서"
             }
           ],
-          "answer": "B",
-          "explanation": "‘API’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/https/#문서-관계"
+          "answer": "C",
+          "explanation": "이 설명은 ‘HTTPS’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/https/"
         }
       ]
     },
@@ -3969,38 +4465,95 @@
         "사용자 프롬프트는 사용자가 모델에 전달하는 질문, 자료, 제약과 원하는 결과 형식을 담은 입력 메시지다."
       ],
       "assesses": [
-        "case-judgment"
+        "multiple-choice"
       ],
       "courseIds": [
         "prompt-systems"
       ],
       "items": [
         {
-          "id": "user-prompt-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “사용자 프롬프트는 사용자가 모델에 전달하는 질문, 자료, 제약과 원하는 결과 형식을 담은 입력 메시지다.”",
+          "id": "user-prompt-definition",
+          "type": "multiple-choice",
+          "prompt": "‘사용자 프롬프트’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "모델 크기"
+              "text": "모델 크기는 파라미터 수뿐 아니라 가중치 정밀도와 실행·배포에 필요한 저장 공간과 메모리 규모를 나타내는 운영 지표다."
             },
             {
               "id": "B",
-              "text": "N-그램 언어 모델"
+              "text": "멀티모달 안전 평가는 대규모 언어 모델 응용의 지시·문맥·출력 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
             },
             {
               "id": "C",
-              "text": "사용자 프롬프트"
+              "text": "출력 제약은 모델 응답이 따라야 할 형식, 길이, 값 범위, 어휘 또는 문법 조건이다."
+            },
+            {
+              "id": "D",
+              "text": "사용자 프롬프트는 사용자가 모델에 전달하는 질문, 자료, 제약과 원하는 결과 형식을 담은 입력 메시지다."
+            }
+          ],
+          "answer": "D",
+          "explanation": "사용자 프롬프트는 사용자가 모델에 전달하는 질문, 자료, 제약과 원하는 결과 형식을 담은 입력 메시지다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/user-prompt/#개념과-원리"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-tokenizer",
+      "articleId": "tokenizer",
+      "title": "토크나이저 학습 체크",
+      "url": "/wiki/tokenizer/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "token",
+          "title": "토큰",
+          "url": "/wiki/token/"
+        },
+        {
+          "id": "tokenization",
+          "title": "토큰화",
+          "url": "/wiki/tokenization/"
+        }
+      ],
+      "teaches": [
+        "텍스트와 토큰 ID 사이의 분할·변환 규칙을 구현한 구성 요소다."
+      ],
+      "assesses": [
+        "sequence"
+      ],
+      "courseIds": [
+        "korean-multilingual-ai"
+      ],
+      "items": [
+        {
+          "id": "tokenizer-sequence",
+          "type": "sequence",
+          "prompt": "‘토크나이저’ 다음에 ‘한국어·다국어 AI’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "문자 단위 토큰화"
+            },
+            {
+              "id": "B",
+              "text": "모델 버전 고정"
+            },
+            {
+              "id": "C",
+              "text": "N-그램 언어 모델"
             },
             {
               "id": "D",
               "text": "패딩 토큰"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘사용자 프롬프트’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/user-prompt/"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘토크나이저’ 다음에 ‘문자 단위 토큰화’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/korean-multilingual-ai/"
         }
       ]
     },
@@ -4026,38 +4579,38 @@
         "선형 변환의 기준점을 이동시키기 위해 더하는 학습 가능한 값이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "concept-distinction"
       ],
       "courseIds": [
         "neural-model-architectures"
       ],
       "items": [
         {
-          "id": "bias-definition",
-          "type": "multiple-choice",
-          "prompt": "‘편향 항’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "bias-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘편향 항’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "출력층은 신경망의 마지막 표현을 과제에 필요한 로짓, 확률, 실수값 또는 벡터로 변환하는 층이다."
+              "text": "SHAP 설명"
             },
             {
               "id": "B",
-              "text": "RMSProp은 최근 제곱 기울기의 지수이동평균으로 각 매개변수의 학습률을 조정하는 적응형 최적화법이다."
+              "text": "신경망 층"
             },
             {
               "id": "C",
-              "text": "확률적 깊이는 잔차 신경망 학습 중 일부 잔차 블록을 무작위로 건너뛰어 다양한 유효 깊이를 학습하는 정규화 기법이다."
+              "text": "학습 손실"
             },
             {
               "id": "D",
-              "text": "선형 변환의 기준점을 이동시키기 위해 더하는 학습 가능한 값이다."
+              "text": "활성화 함수"
             }
           ],
-          "answer": "D",
-          "explanation": "선형 변환의 기준점을 이동시키기 위해 더하는 학습 가능한 값이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/bias/#개념과-원리"
+          "answer": "B",
+          "explanation": "‘신경망 층’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/bias/#문서-관계"
         }
       ]
     },
@@ -4078,38 +4631,95 @@
         "슬라이딩 윈도 어텐션은 각 위치가 일정한 앞뒤 또는 이전 토큰 창에만 주의를 주도록 창을 이동시키는 희소 패턴이다."
       ],
       "assesses": [
-        "sequence"
+        "case-judgment"
       ],
       "courseIds": [
         "efficient-long-context-transformers"
       ],
       "items": [
         {
-          "id": "sliding-window-attention-sequence",
-          "type": "sequence",
-          "prompt": "‘슬라이딩 윈도 어텐션’ 다음에 ‘효율적·장문맥 트랜스포머’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "sliding-window-attention-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “슬라이딩 윈도 어텐션은 각 위치가 일정한 앞뒤 또는 이전 토큰 창에만 주의를 주도록 창을 이동시키는 희소 패턴이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "블록 희소 어텐션"
+              "text": "추측형 트랜스포머 블록"
             },
             {
               "id": "B",
-              "text": "검색 결합 트랜스포머"
+              "text": "트랜스포머 블록"
             },
             {
               "id": "C",
-              "text": "사인파 위치 인코딩"
+              "text": "슬라이딩 윈도 어텐션"
             },
             {
               "id": "D",
-              "text": "T5 아키텍처"
+              "text": "적응형 계산 시간 트랜스포머"
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘슬라이딩 윈도 어텐션’ 다음에 ‘블록 희소 어텐션’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/efficient-long-context-transformers/"
+          "answer": "C",
+          "explanation": "이 설명은 ‘슬라이딩 윈도 어텐션’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/sliding-window-attention/"
+        }
+      ]
+    },
+    {
+      "id": "learning-check-korean-ai-basic-act",
+      "articleId": "korean-ai-basic-act",
+      "title": "한국 인공지능기본법 학습 체크",
+      "url": "/wiki/korean-ai-basic-act/",
+      "educationalLevel": "professional",
+      "competencyRequired": [
+        {
+          "id": "ai-governance",
+          "title": "AI 거버넌스",
+          "url": "/wiki/ai-governance/"
+        },
+        {
+          "id": "ai-regulatory-classification",
+          "title": "AI 규제 분류",
+          "url": "/wiki/ai-regulatory-classification/"
+        }
+      ],
+      "teaches": [
+        "한국 인공지능기본법은 인공지능의 발전과 신뢰 기반 조성을 함께 규율하는 한국의 기본 법률이다."
+      ],
+      "assesses": [
+        "multiple-choice"
+      ],
+      "courseIds": [
+        "ai-regulation-literacy"
+      ],
+      "items": [
+        {
+          "id": "korean-ai-basic-act-definition",
+          "type": "multiple-choice",
+          "prompt": "‘한국 인공지능기본법’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "한국 AI 안전성 확보 의무는 법정 누적 연산량 기준 이상 인공지능시스템의 수명주기 위험관리와 안전사고 대응을 요구하는 제도다."
+            },
+            {
+              "id": "B",
+              "text": "측정 편향은 사용한 관측값이나 라벨이 의도한 개념을 집단이나 상황에 따라 체계적으로 다르게 나타내는 오류다."
+            },
+            {
+              "id": "C",
+              "text": "모델 서비스 거부 공격은 긴 입력, 반복 요청 또는 계산량이 큰 패턴으로 추론 자원을 고갈시켜 정상 사용을 방해하는 공격이다."
+            },
+            {
+              "id": "D",
+              "text": "한국 인공지능기본법은 인공지능의 발전과 신뢰 기반 조성을 함께 규율하는 한국의 기본 법률이다."
+            }
+          ],
+          "answer": "D",
+          "explanation": "한국 인공지능기본법은 인공지능의 발전과 신뢰 기반 조성을 함께 규율하는 한국의 기본 법률이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/korean-ai-basic-act/#개념과-원리"
         }
       ]
     },
@@ -4135,38 +4745,38 @@
         "학습 데이터의 분포를 바탕으로 텍스트·이미지·음성·코드 같은 새로운 결과물을 생성하는 인공지능이다."
       ],
       "assesses": [
-        "concept-distinction"
+        "sequence"
       ],
       "courseIds": [
         "ai-foundations"
       ],
       "items": [
         {
-          "id": "generative-ai-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘생성형 인공지능’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "generative-ai-sequence",
+          "type": "sequence",
+          "prompt": "‘생성형 인공지능’ 다음에 ‘AI 기초’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "과적합"
+              "text": "모델"
             },
             {
               "id": "B",
-              "text": "머신러닝"
+              "text": "자기지도학습"
             },
             {
               "id": "C",
-              "text": "추천 시스템"
+              "text": "테스트 데이터셋"
             },
             {
               "id": "D",
-              "text": "지도학습"
+              "text": "비지도학습"
             }
           ],
-          "answer": "B",
-          "explanation": "‘머신러닝’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/generative-ai/#문서-관계"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘생성형 인공지능’ 다음에 ‘모델’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/ai-foundations/"
         }
       ]
     },
@@ -4175,7 +4785,7 @@
       "articleId": "ai-risk-register",
       "title": "AI 위험 대장 학습 체크",
       "url": "/wiki/ai-risk-register/",
-      "educationalLevel": "entry",
+      "educationalLevel": "professional",
       "competencyRequired": [
         {
           "id": "guardrail",
@@ -4187,38 +4797,39 @@
         "AI 위험 대장은 식별된 위험의 원인, 영향, 가능성, 통제, 책임자와 상태를 한곳에 추적하는 관리 기록이다."
       ],
       "assesses": [
-        "case-judgment"
+        "concept-distinction"
       ],
       "courseIds": [
+        "ai-regulation-literacy",
         "ai-security-redteam"
       ],
       "items": [
         {
-          "id": "ai-risk-register-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “AI 위험 대장은 식별된 위험의 원인, 영향, 가능성, 통제, 책임자와 상태를 한곳에 추적하는 관리 기록이다.”",
+          "id": "ai-risk-register-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘AI 위험 대장’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "모델 악용 사례 라이브러리"
+              "text": "한국 고영향 인공지능"
             },
             {
               "id": "B",
-              "text": "모델 오염"
+              "text": "가드레일"
             },
             {
               "id": "C",
-              "text": "AI 위험 대장"
+              "text": "암기 데이터 추출"
             },
             {
               "id": "D",
-              "text": "개인 식별 정보"
+              "text": "모델 역추론 공격"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘AI 위험 대장’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/ai-risk-register/"
+          "answer": "B",
+          "explanation": "‘가드레일’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/ai-risk-register/#문서-관계"
         }
       ]
     },
@@ -4239,38 +4850,38 @@
         "텐서 처리 장치는 신경망의 행렬 곱과 텐서 연산을 높은 처리량과 에너지 효율로 수행하도록 설계된 전용 가속기다."
       ],
       "assesses": [
-        "multiple-choice"
+        "case-judgment"
       ],
       "courseIds": [
         "ai-serving-systems"
       ],
       "items": [
         {
-          "id": "tensor-processing-unit-definition",
-          "type": "multiple-choice",
-          "prompt": "‘텐서 처리 장치’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "tensor-processing-unit-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “텐서 처리 장치는 신경망의 행렬 곱과 텐서 연산을 높은 처리량과 에너지 효율로 수행하도록 설계된 전용 가속기다.”",
           "choices": [
             {
               "id": "A",
-              "text": "오픈소스 AI 정의는 AI 시스템을 연구·사용·수정·공유할 수 있으려면 어떤 형태의 코드, 데이터 정보와 파라미터가 제공되어야 하는지 설명하는 기준이다."
+              "text": "ROCm"
             },
             {
               "id": "B",
-              "text": "재현 가능한 모델 빌드는 같은 소스, 데이터 식별자와 환경에서 의미상 동일한 모델 아티팩트를 다시 만들 수 있는 성질이다."
+              "text": "학습 비용"
             },
             {
               "id": "C",
-              "text": "텐서 라이브러리는 다차원 배열과 그 위의 수치 연산, 장치 이동, 자동 미분 기능을 제공하는 소프트웨어 계층이다."
+              "text": "텐서 처리 장치"
             },
             {
               "id": "D",
-              "text": "텐서 처리 장치는 신경망의 행렬 곱과 텐서 연산을 높은 처리량과 에너지 효율로 수행하도록 설계된 전용 가속기다."
+              "text": "AI 탄소 발자국"
             }
           ],
-          "answer": "D",
-          "explanation": "텐서 처리 장치는 신경망의 행렬 곱과 텐서 연산을 높은 처리량과 에너지 효율로 수행하도록 설계된 전용 가속기다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/tensor-processing-unit/#개념과-원리"
+          "answer": "C",
+          "explanation": "이 설명은 ‘텐서 처리 장치’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/tensor-processing-unit/"
         }
       ]
     },
@@ -4296,38 +4907,38 @@
         "목표를 하위 단계와 실행 순서로 분해하고 필요에 따라 계획을 수정하는 과정이다."
       ],
       "assesses": [
-        "sequence"
+        "multiple-choice"
       ],
       "courseIds": [
         "agent-systems"
       ],
       "items": [
         {
-          "id": "planning-sequence",
-          "type": "sequence",
-          "prompt": "‘계획’ 다음에 ‘AI 에이전트 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "planning-definition",
+          "type": "multiple-choice",
+          "prompt": "‘계획’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "상태 관리"
+              "text": "MCP 서버는 표준 프로토콜을 통해 도구, 리소스와 프롬프트 같은 기능을 MCP 클라이언트에 제공하는 프로그램이다."
             },
             {
               "id": "B",
-              "text": "모델 기반 계획"
+              "text": "다중 에이전트 갈등 해결은 에이전트들의 목표, 자원 요구나 결론이 충돌할 때 공동 실행 가능한 결정을 만드는 과정이다."
             },
             {
               "id": "C",
-              "text": "멀티 에이전트 시스템"
+              "text": "피어투피어 에이전트는 고정된 중앙 감독자 없이 동등한 참여자들이 직접 메시지와 작업을 교환하는 다중 에이전트 구성이다."
             },
             {
               "id": "D",
-              "text": "계획자 에이전트"
+              "text": "목표를 하위 단계와 실행 순서로 분해하고 필요에 따라 계획을 수정하는 과정이다."
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘계획’ 다음에 ‘상태 관리’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/agent-systems/"
+          "answer": "D",
+          "explanation": "목표를 하위 단계와 실행 순서로 분해하고 필요에 따라 계획을 수정하는 과정이다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/planning/#개념과-원리"
         }
       ]
     },
@@ -4348,38 +4959,38 @@
         "REST의 제약과 균일한 인터페이스를 적용해 자원의 표현을 주고받도록 설계한 웹 API 방식이다."
       ],
       "assesses": [
-        "concept-distinction"
+        "sequence"
       ],
       "courseIds": [
         "api-development"
       ],
       "items": [
         {
-          "id": "rest-api-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘REST API’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "rest-api-sequence",
+          "type": "sequence",
+          "prompt": "‘REST API’ 다음에 ‘AI API 개발’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "MIME 유형"
+              "text": "SDK"
             },
             {
               "id": "B",
-              "text": "API"
+              "text": "콘텐츠 조정 API"
             },
             {
               "id": "C",
-              "text": "병렬 도구 호출"
+              "text": "경로 매개변수"
             },
             {
               "id": "D",
-              "text": "요청 서명"
+              "text": "요청 조절"
             }
           ],
-          "answer": "B",
-          "explanation": "‘API’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/rest-api/#문서-관계"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘REST API’ 다음에 ‘SDK’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/api-development/"
         }
       ]
     },
@@ -4400,38 +5011,38 @@
         "기저 벡터는 벡터 공간의 모든 벡터를 유일한 선형결합으로 표현할 수 있게 하는 선형 독립 벡터 집합의 원소다."
       ],
       "assesses": [
-        "case-judgment"
+        "concept-distinction"
       ],
       "courseIds": [
         "ai-mathematics-statistics"
       ],
       "items": [
         {
-          "id": "basis-vector-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “기저 벡터는 벡터 공간의 모든 벡터를 유일한 선형결합으로 표현할 수 있게 하는 선형 독립 벡터 집합의 원소다.”",
+          "id": "basis-vector-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘기저 벡터’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "준뉴턴 방법"
+              "text": "텐서"
             },
             {
               "id": "B",
-              "text": "통계적 편향"
+              "text": "벡터"
             },
             {
               "id": "C",
-              "text": "기저 벡터"
+              "text": "자동 미분"
             },
             {
               "id": "D",
-              "text": "벡터 노름"
+              "text": "측도 집중"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘기저 벡터’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/basis-vector/"
+          "answer": "B",
+          "explanation": "‘벡터’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/basis-vector/#문서-관계"
         }
       ]
     },
@@ -4452,38 +5063,38 @@
         "벤치마크 데이터셋은 모델이나 방법을 같은 입력과 정답 기준에서 비교하도록 고정한 평가용 데이터 모음이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "case-judgment"
       ],
       "courseIds": [
         "llm-evaluation"
       ],
       "items": [
         {
-          "id": "benchmark-dataset-definition",
-          "type": "multiple-choice",
-          "prompt": "‘벤치마크 데이터셋’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "benchmark-dataset-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “벤치마크 데이터셋은 모델이나 방법을 같은 입력과 정답 기준에서 비교하도록 고정한 평가용 데이터 모음이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "MLPerf는 합의된 모델·데이터·품질 목표와 실행 규칙으로 AI 학습 및 추론 시스템의 성능을 비교하는 벤치마크 제품군이다."
+              "text": "모델 텔레메트리"
             },
             {
               "id": "B",
-              "text": "온라인 평가 드리프트는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+              "text": "쌍대 비교 평가 설계"
             },
             {
               "id": "C",
-              "text": "개별 채점 평가 설계는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다."
+              "text": "벤치마크 데이터셋"
             },
             {
               "id": "D",
-              "text": "벤치마크 데이터셋은 모델이나 방법을 같은 입력과 정답 기준에서 비교하도록 고정한 평가용 데이터 모음이다."
+              "text": "정밀도와 재현율"
             }
           ],
-          "answer": "D",
-          "explanation": "벤치마크 데이터셋은 모델이나 방법을 같은 입력과 정답 기준에서 비교하도록 고정한 평가용 데이터 모음이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/benchmark-dataset/#개념과-원리"
+          "answer": "C",
+          "explanation": "이 설명은 ‘벤치마크 데이터셋’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/benchmark-dataset/"
         }
       ]
     },
@@ -4504,38 +5115,38 @@
         "추론 서버는 학습된 모델을 메모리에 적재하고 네트워크 요청을 받아 예측 결과를 반환하는 실행 서비스다."
       ],
       "assesses": [
-        "sequence"
+        "multiple-choice"
       ],
       "courseIds": [
         "llmops-production"
       ],
       "items": [
         {
-          "id": "inference-server-sequence",
-          "type": "sequence",
-          "prompt": "‘추론 서버’ 다음에 ‘LLMOps와 프로덕션 서빙’ 코스에서 이어 읽을 문서는 무엇인가?",
+          "id": "inference-server-definition",
+          "type": "multiple-choice",
+          "prompt": "‘추론 서버’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "온라인 추론"
+              "text": "학습 후 양자화는 추가 전체 학습 없이 이미 학습된 모델의 가중치나 활성값을 낮은 비트 표현으로 변환하는 기법이다."
             },
             {
               "id": "B",
-              "text": "모델 서빙"
+              "text": "반복 페널티는 이미 생성된 토큰의 다음 단계 점수를 조정해 동일 표현의 과도한 반복을 줄이는 디코딩 제어다."
             },
             {
               "id": "C",
-              "text": "ONNX Runtime"
+              "text": "여러 실수 점수를 지수화하고 합으로 나눠 합이 1인 비율 벡터로 바꾸는 함수다."
             },
             {
               "id": "D",
-              "text": "접두부 인식 스케줄링"
+              "text": "추론 서버는 학습된 모델을 메모리에 적재하고 네트워크 요청을 받아 예측 결과를 반환하는 실행 서비스다."
             }
           ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘추론 서버’ 다음에 ‘온라인 추론’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/llmops-production/"
+          "answer": "D",
+          "explanation": "추론 서버는 학습된 모델을 메모리에 적재하고 네트워크 요청을 받아 예측 결과를 반환하는 실행 서비스다.",
+          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
+          "reviewUrl": "/wiki/inference-server/#개념과-원리"
         }
       ]
     },
@@ -4556,38 +5167,38 @@
         "하이브리드 RAG는 생성 모델에 문맥을 공급할 때 키워드·밀집 벡터·지식 그래프 등 둘 이상의 검색 방식을 결합하는 검색 증강 생성 구조다."
       ],
       "assesses": [
-        "concept-distinction"
+        "sequence"
       ],
       "courseIds": [
         "advanced-rag"
       ],
       "items": [
         {
-          "id": "hybrid-rag-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘하이브리드 RAG’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
+          "id": "hybrid-rag-sequence",
+          "type": "sequence",
+          "prompt": "‘하이브리드 RAG’ 다음에 ‘고급 RAG와 지식 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "재귀 검색"
+              "text": "임베딩 모델"
             },
             {
               "id": "B",
-              "text": "임베딩"
+              "text": "검색 적중률"
             },
             {
               "id": "C",
-              "text": "검색 문맥"
+              "text": "Self-RAG"
             },
             {
               "id": "D",
-              "text": "검색 품질 SLO"
+              "text": "부분 그래프 검색"
             }
           ],
-          "answer": "B",
-          "explanation": "‘임베딩’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/hybrid-rag/#문서-관계"
+          "answer": "A",
+          "explanation": "이 코스의 권장 순서에서는 ‘하이브리드 RAG’ 다음에 ‘임베딩 모델’을 학습한다.",
+          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
+          "reviewUrl": "/course/advanced-rag/"
         }
       ]
     },
@@ -4608,38 +5219,38 @@
         "데이터 분포는 가능한 관측값과 레이블이 나타날 확률 구조를 설명하는 개념이다."
       ],
       "assesses": [
-        "case-judgment"
+        "concept-distinction"
       ],
       "courseIds": [
         "data-training-pipelines"
       ],
       "items": [
         {
-          "id": "data-distribution-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “데이터 분포는 가능한 관측값과 레이블이 나타날 확률 구조를 설명하는 개념이다.”",
+          "id": "data-distribution-distinction",
+          "type": "concept-distinction",
+          "prompt": "‘데이터 분포’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "강화학습"
+              "text": "학습 데이터"
             },
             {
               "id": "B",
-              "text": "기호주의 인공지능"
+              "text": "인공지능"
             },
             {
               "id": "C",
-              "text": "데이터 분포"
+              "text": "제로샷 학습"
             },
             {
               "id": "D",
-              "text": "불확실성 정량화"
+              "text": "범용 인공지능"
             }
           ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘데이터 분포’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/data-distribution/"
+          "answer": "B",
+          "explanation": "‘인공지능’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
+          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
+          "reviewUrl": "/wiki/data-distribution/#문서-관계"
         }
       ]
     },
@@ -4665,38 +5276,38 @@
         "이미지 속 글자의 위치와 내용을 판독해 텍스트로 변환하는 기술이다."
       ],
       "assesses": [
-        "multiple-choice"
+        "case-judgment"
       ],
       "courseIds": [
         "multimodal-ai"
       ],
       "items": [
         {
-          "id": "ocr-definition",
-          "type": "multiple-choice",
-          "prompt": "‘광학 문자 인식’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "id": "ocr-scenario",
+          "type": "case-judgment",
+          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “이미지 속 글자의 위치와 내용을 판독해 텍스트로 변환하는 기술이다.”",
           "choices": [
             {
               "id": "A",
-              "text": "비디오 토큰화는 연속적인 화소와 시간 정보를 모델이 처리할 이산 코드나 연속 토큰 시퀀스로 변환하는 과정이다."
+              "text": "제로샷 이미지 분류"
             },
             {
               "id": "B",
-              "text": "이미지와 그 이미지에 관한 자연어 질문을 입력받아 답을 생성하거나 선택하는 멀티모달 과제다."
+              "text": "컴퓨터 비전"
             },
             {
               "id": "C",
-              "text": "오디오 임베딩은 음향 구간의 내용이나 화자·환경 특성을 비교 가능한 고정 길이 벡터로 표현한 것이다."
+              "text": "광학 문자 인식"
             },
             {
               "id": "D",
-              "text": "이미지 속 글자의 위치와 내용을 판독해 텍스트로 변환하는 기술이다."
+              "text": "확산 잡음 제거 단계"
             }
           ],
-          "answer": "D",
-          "explanation": "이미지 속 글자의 위치와 내용을 판독해 텍스트로 변환하는 기술이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/ocr/#개념과-원리"
+          "answer": "C",
+          "explanation": "이 설명은 ‘광학 문자 인식’의 핵심 정의와 적용 대상을 요약한다.",
+          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
+          "reviewUrl": "/wiki/ocr/"
         }
       ]
     },
@@ -4717,631 +5328,38 @@
         "교차 배열 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다."
       ],
       "assesses": [
-        "sequence"
+        "multiple-choice"
       ],
       "courseIds": [
         "multimodal-systems"
       ],
       "items": [
         {
-          "id": "interleaved-multimodal-data-sequence",
-          "type": "sequence",
-          "prompt": "‘교차 배열 멀티모달 데이터’ 다음에 ‘멀티모달 AI 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "공동 임베딩 공간"
-            },
-            {
-              "id": "B",
-              "text": "비디오 이해"
-            },
-            {
-              "id": "C",
-              "text": "시각 추론"
-            },
-            {
-              "id": "D",
-              "text": "오디오 모델"
-            }
-          ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘교차 배열 멀티모달 데이터’ 다음에 ‘공동 임베딩 공간’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/multimodal-systems/"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-backpropagation",
-      "articleId": "backpropagation",
-      "title": "역전파 학습 체크",
-      "url": "/wiki/backpropagation/",
-      "educationalLevel": "entry",
-      "competencyRequired": [
-        {
-          "id": "activation-function",
-          "title": "활성화 함수",
-          "url": "/wiki/activation-function/"
-        },
-        {
-          "id": "loss-function",
-          "title": "손실 함수",
-          "url": "/wiki/loss-function/"
-        }
-      ],
-      "teaches": [
-        "출력의 손실에서 각 파라미터의 기여도를 연쇄 법칙으로 계산하는 알고리즘이다."
-      ],
-      "assesses": [
-        "concept-distinction"
-      ],
-      "courseIds": [
-        "model-training",
-        "neural-model-architectures"
-      ],
-      "items": [
-        {
-          "id": "backpropagation-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘역전파’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "확률적 깊이"
-            },
-            {
-              "id": "B",
-              "text": "활성화 함수"
-            },
-            {
-              "id": "C",
-              "text": "변분 오토인코더"
-            },
-            {
-              "id": "D",
-              "text": "AdamW"
-            }
-          ],
-          "answer": "B",
-          "explanation": "‘활성화 함수’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/backpropagation/#문서-관계"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-source-available-model",
-      "articleId": "source-available-model",
-      "title": "소스 공개 모델 학습 체크",
-      "url": "/wiki/source-available-model/",
-      "educationalLevel": "intermediate",
-      "competencyRequired": [
-        {
-          "id": "model-version",
-          "title": "모델 버전",
-          "url": "/wiki/model-version/"
-        }
-      ],
-      "teaches": [
-        "소스 공개 모델은 코드나 일부 구성 요소를 열람할 수 있지만 오픈소스가 요구하는 사용·수정·재배포 권리가 제한될 수 있는 모델이다."
-      ],
-      "assesses": [
-        "case-judgment"
-      ],
-      "courseIds": [
-        "model-service-ecosystem"
-      ],
-      "items": [
-        {
-          "id": "source-available-model-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “소스 공개 모델은 코드나 일부 구성 요소를 열람할 수 있지만 오픈소스가 요구하는 사용·수정·재배포 권리가 제한될 수 있는 모델이다.”",
-          "choices": [
-            {
-              "id": "A",
-              "text": "SafeTensors"
-            },
-            {
-              "id": "B",
-              "text": "Transformers 라이브러리"
-            },
-            {
-              "id": "C",
-              "text": "소스 공개 모델"
-            },
-            {
-              "id": "D",
-              "text": "AI 데이터센터"
-            }
-          ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘소스 공개 모델’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/source-available-model/"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-pairwise-preference-ranking",
-      "articleId": "pairwise-preference-ranking",
-      "title": "쌍대 선호 순위화 학습 체크",
-      "url": "/wiki/pairwise-preference-ranking/",
-      "educationalLevel": "entry",
-      "competencyRequired": [
-        {
-          "id": "fine-tuning",
-          "title": "미세조정",
-          "url": "/wiki/fine-tuning/"
-        }
-      ],
-      "teaches": [
-        "쌍대 선호 순위화는 두 후보 중 선호되는 항목을 관측해 전체 후보의 상대적 품질이나 보상 함수를 학습하는 방식이다."
-      ],
-      "assesses": [
-        "multiple-choice"
-      ],
-      "courseIds": [
-        "post-training-alignment"
-      ],
-      "items": [
-        {
-          "id": "pairwise-preference-ranking-definition",
+          "id": "interleaved-multimodal-data-definition",
           "type": "multiple-choice",
-          "prompt": "‘쌍대 선호 순위화’의 설명으로 가장 알맞은 것은 무엇인가?",
+          "prompt": "‘교차 배열 멀티모달 데이터’의 설명으로 가장 알맞은 것은 무엇인가?",
           "choices": [
             {
               "id": "A",
-              "text": "사람의 선호 신호를 이용해 모델 응답 정책을 조정하는 사후학습 방법이다."
+              "text": "행동 인식은 비디오에서 사람이나 객체가 수행하는 동작을 시간 구간과 범주로 식별하는 과제다."
             },
             {
               "id": "B",
-              "text": "실제 관측값을 그대로 복제하지 않고 규칙·시뮬레이션·통계 또는 생성 모델로 만든 데이터다."
+              "text": "콘텐츠 출처 증명은 디지털 콘텐츠의 생성 주체·도구·편집 이력과 무결성을 검증 가능한 메타데이터로 연결하는 체계다."
             },
             {
               "id": "C",
-              "text": "학습 데이터 동의는 개인이나 권리자가 자신의 데이터가 모델 학습에 사용되는 범위와 목적을 알고 허용한 상태다."
+              "text": "데이터에 노이즈를 더하고 제거하는 역과정을 학습해 샘플을 생성하는 모델이다."
             },
             {
               "id": "D",
-              "text": "쌍대 선호 순위화는 두 후보 중 선호되는 항목을 관측해 전체 후보의 상대적 품질이나 보상 함수를 학습하는 방식이다."
+              "text": "교차 배열 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다."
             }
           ],
           "answer": "D",
-          "explanation": "쌍대 선호 순위화는 두 후보 중 선호되는 항목을 관측해 전체 후보의 상대적 품질이나 보상 함수를 학습하는 방식이다.",
+          "explanation": "교차 배열 멀티모달 데이터는 한 문맥 안에서 텍스트와 이미지·영상·음성 등의 항목이 의미 순서에 따라 번갈아 나타나는 자료다.",
           "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/pairwise-preference-ranking/#개념과-원리"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-precision-recall",
-      "articleId": "precision-recall",
-      "title": "정밀도와 재현율 학습 체크",
-      "url": "/wiki/precision-recall/",
-      "educationalLevel": "entry",
-      "competencyRequired": [
-        {
-          "id": "metric",
-          "title": "평가 지표",
-          "url": "/wiki/metric/"
-        },
-        {
-          "id": "accuracy",
-          "title": "정확도",
-          "url": "/wiki/accuracy/"
-        }
-      ],
-      "teaches": [
-        "정밀도는 양성으로 예측한 항목의 적중 비율이고 재현율은 실제 양성 가운데 찾아낸 비율이다."
-      ],
-      "assesses": [
-        "sequence"
-      ],
-      "courseIds": [
-        "responsible-ai"
-      ],
-      "items": [
-        {
-          "id": "precision-recall-sequence",
-          "type": "sequence",
-          "prompt": "‘정밀도와 재현율’ 다음에 ‘신뢰할 수 있는 AI’ 코스에서 이어 읽을 문서는 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "LLM 심사자"
-            },
-            {
-              "id": "B",
-              "text": "대응 부트스트랩"
-            },
-            {
-              "id": "C",
-              "text": "개별 LLM 심사"
-            },
-            {
-              "id": "D",
-              "text": "참조 기반 평가"
-            }
-          ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘정밀도와 재현율’ 다음에 ‘LLM 심사자’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/responsible-ai/"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-semantic-search",
-      "articleId": "semantic-search",
-      "title": "의미 검색 학습 체크",
-      "url": "/wiki/semantic-search/",
-      "educationalLevel": "entry",
-      "competencyRequired": [
-        {
-          "id": "embedding-model",
-          "title": "임베딩 모델",
-          "url": "/wiki/embedding-model/"
-        },
-        {
-          "id": "vector-database",
-          "title": "벡터 데이터베이스",
-          "url": "/wiki/vector-database/"
-        }
-      ],
-      "teaches": [
-        "문자열의 정확한 일치보다 질의와 문서의 의미 유사성을 이용하는 검색 방식이다."
-      ],
-      "assesses": [
-        "concept-distinction"
-      ],
-      "courseIds": [
-        "rag-search"
-      ],
-      "items": [
-        {
-          "id": "semantic-search-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘의미 검색’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "검색 문맥"
-            },
-            {
-              "id": "B",
-              "text": "임베딩 모델"
-            },
-            {
-              "id": "C",
-              "text": "검색 품질 SLO"
-            },
-            {
-              "id": "D",
-              "text": "SPARQL"
-            }
-          ],
-          "answer": "B",
-          "explanation": "‘임베딩 모델’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/semantic-search/#문서-관계"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-sinusoidal-position-encoding",
-      "articleId": "sinusoidal-position-encoding",
-      "title": "사인파 위치 인코딩 학습 체크",
-      "url": "/wiki/sinusoidal-position-encoding/",
-      "educationalLevel": "advanced",
-      "competencyRequired": [
-        {
-          "id": "transformer",
-          "title": "트랜스포머",
-          "url": "/wiki/transformer/"
-        }
-      ],
-      "teaches": [
-        "사인파 위치 인코딩은 서로 다른 주파수의 사인·코사인 함숫값으로 토큰 위치를 나타내는 고정 벡터 방식이다."
-      ],
-      "assesses": [
-        "case-judgment"
-      ],
-      "courseIds": [
-        "transformer-architecture"
-      ],
-      "items": [
-        {
-          "id": "sinusoidal-position-encoding-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “사인파 위치 인코딩은 서로 다른 주파수의 사인·코사인 함숫값으로 토큰 위치를 나타내는 고정 벡터 방식이다.”",
-          "choices": [
-            {
-              "id": "A",
-              "text": "Transformer-XL"
-            },
-            {
-              "id": "B",
-              "text": "가산 어텐션"
-            },
-            {
-              "id": "C",
-              "text": "사인파 위치 인코딩"
-            },
-            {
-              "id": "D",
-              "text": "어텐션 점수"
-            }
-          ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘사인파 위치 인코딩’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/sinusoidal-position-encoding/"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-agent-deliberation",
-      "articleId": "agent-deliberation",
-      "title": "에이전트 숙고 학습 체크",
-      "url": "/wiki/agent-deliberation/",
-      "educationalLevel": "entry",
-      "competencyRequired": [
-        {
-          "id": "ai-agent",
-          "title": "AI 에이전트",
-          "url": "/wiki/ai-agent/"
-        }
-      ],
-      "teaches": [
-        "에이전트 숙고는 행동을 즉시 실행하지 않고 대안·근거·위험을 비교해 선택을 정교화하는 의사결정 단계다."
-      ],
-      "assesses": [
-        "multiple-choice"
-      ],
-      "courseIds": [
-        "production-agents"
-      ],
-      "items": [
-        {
-          "id": "agent-deliberation-definition",
-          "type": "multiple-choice",
-          "prompt": "‘에이전트 숙고’의 설명으로 가장 알맞은 것은 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "에이전트 절차 기억은 과제를 수행하는 방법, 도구 사용 순서, 성공·실패 조건을 재사용 가능한 절차로 보존한 기억이다."
-            },
-            {
-              "id": "B",
-              "text": "에이전트 의미 기억은 특정 사건의 시간 순서와 분리해 일반화된 사실·개념·관계를 장기 보존하는 기억 계층이다."
-            },
-            {
-              "id": "C",
-              "text": "도구 발견은 현재 과제를 수행할 수 있는 도구를 레지스트리나 서버에서 찾아 기능과 제약을 파악하는 단계다."
-            },
-            {
-              "id": "D",
-              "text": "에이전트 숙고는 행동을 즉시 실행하지 않고 대안·근거·위험을 비교해 선택을 정교화하는 의사결정 단계다."
-            }
-          ],
-          "answer": "D",
-          "explanation": "에이전트 숙고는 행동을 즉시 실행하지 않고 대안·근거·위험을 비교해 선택을 정교화하는 의사결정 단계다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/agent-deliberation/#개념과-원리"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-transport-layer-security",
-      "articleId": "transport-layer-security",
-      "title": "전송 계층 보안 학습 체크",
-      "url": "/wiki/transport-layer-security/",
-      "educationalLevel": "advanced",
-      "competencyRequired": [
-        {
-          "id": "api",
-          "title": "API",
-          "url": "/wiki/api/"
-        }
-      ],
-      "teaches": [
-        "전송 계층 보안(TLS)은 통신 상대 인증, 키 합의와 암호화된 레코드 전송을 제공하는 보안 프로토콜이다."
-      ],
-      "assesses": [
-        "sequence"
-      ],
-      "courseIds": [
-        "production-ai-api-systems"
-      ],
-      "items": [
-        {
-          "id": "transport-layer-security-sequence",
-          "type": "sequence",
-          "prompt": "‘전송 계층 보안’ 다음에 ‘프로덕션 AI API 시스템’ 코스에서 이어 읽을 문서는 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "HTTP 메서드"
-            },
-            {
-              "id": "B",
-              "text": "요청 조절"
-            },
-            {
-              "id": "C",
-              "text": "직렬화"
-            },
-            {
-              "id": "D",
-              "text": "스트림 재개 프로토콜"
-            }
-          ],
-          "answer": "A",
-          "explanation": "이 코스의 권장 순서에서는 ‘전송 계층 보안’ 다음에 ‘HTTP 메서드’을 학습한다.",
-          "incorrectReason": "같은 분야의 문서라도 현재 코스의 선수 관계와 권장 순서를 구분해야 한다.",
-          "reviewUrl": "/course/production-ai-api-systems/"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-prompt-template",
-      "articleId": "prompt-template",
-      "title": "프롬프트 템플릿 학습 체크",
-      "url": "/wiki/prompt-template/",
-      "educationalLevel": "entry",
-      "competencyRequired": [
-        {
-          "id": "large-language-model",
-          "title": "대규모 언어 모델",
-          "url": "/wiki/large-language-model/"
-        }
-      ],
-      "teaches": [
-        "프롬프트 템플릿은 역할, 지시, 문맥, 예시와 출력 형식을 변수 슬롯으로 구조화해 반복 사용할 수 있게 한 입력 틀이다."
-      ],
-      "assesses": [
-        "concept-distinction"
-      ],
-      "courseIds": [
-        "prompt-systems"
-      ],
-      "items": [
-        {
-          "id": "prompt-template-distinction",
-          "type": "concept-distinction",
-          "prompt": "‘프롬프트 템플릿’ 문서에서 직접 연결한 선행·관련 개념은 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "프롬프트 엔지니어링"
-            },
-            {
-              "id": "B",
-              "text": "대규모 언어 모델"
-            },
-            {
-              "id": "C",
-              "text": "순환형 언어 모델 메모리"
-            },
-            {
-              "id": "D",
-              "text": "의미 기반 출력 검증"
-            }
-          ],
-          "answer": "B",
-          "explanation": "‘대규모 언어 모델’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.",
-          "incorrectReason": "용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.",
-          "reviewUrl": "/wiki/prompt-template/#문서-관계"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-layer",
-      "articleId": "layer",
-      "title": "신경망 층 학습 체크",
-      "url": "/wiki/layer/",
-      "educationalLevel": "intermediate",
-      "competencyRequired": [
-        {
-          "id": "neural-network",
-          "title": "신경망",
-          "url": "/wiki/neural-network/"
-        },
-        {
-          "id": "neuron",
-          "title": "인공 뉴런",
-          "url": "/wiki/neuron/"
-        }
-      ],
-      "teaches": [
-        "입력 표현을 정해진 연산과 학습 파라미터로 변환해 다음 표현으로 전달하는 신경망의 구성 단위다."
-      ],
-      "assesses": [
-        "case-judgment"
-      ],
-      "courseIds": [
-        "neural-model-architectures"
-      ],
-      "items": [
-        {
-          "id": "layer-scenario",
-          "type": "case-judgment",
-          "prompt": "다음 설명을 검토할 때 가장 먼저 읽어야 할 문서는 무엇인가? “입력 표현을 정해진 연산과 학습 파라미터로 변환해 다음 표현으로 전달하는 신경망의 구성 단위다.”",
-          "choices": [
-            {
-              "id": "A",
-              "text": "가중치 감쇠"
-            },
-            {
-              "id": "B",
-              "text": "역전파"
-            },
-            {
-              "id": "C",
-              "text": "신경망 층"
-            },
-            {
-              "id": "D",
-              "text": "합성곱 신경망"
-            }
-          ],
-          "answer": "C",
-          "explanation": "이 설명은 ‘신경망 층’의 핵심 정의와 적용 대상을 요약한다.",
-          "incorrectReason": "사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.",
-          "reviewUrl": "/wiki/layer/"
-        }
-      ]
-    },
-    {
-      "id": "learning-check-block-sparse-attention",
-      "articleId": "block-sparse-attention",
-      "title": "블록 희소 어텐션 학습 체크",
-      "url": "/wiki/block-sparse-attention/",
-      "educationalLevel": "professional",
-      "competencyRequired": [
-        {
-          "id": "transformer",
-          "title": "트랜스포머",
-          "url": "/wiki/transformer/"
-        }
-      ],
-      "teaches": [
-        "블록 희소 어텐션은 어텐션 행렬을 블록 단위로 제한해 일부 질의-키 블록만 계산하는 희소 방식이다."
-      ],
-      "assesses": [
-        "multiple-choice"
-      ],
-      "courseIds": [
-        "efficient-long-context-transformers"
-      ],
-      "items": [
-        {
-          "id": "block-sparse-attention-definition",
-          "type": "multiple-choice",
-          "prompt": "‘블록 희소 어텐션’의 설명으로 가장 알맞은 것은 무엇인가?",
-          "choices": [
-            {
-              "id": "A",
-              "text": "절대 위치 인코딩은 각 토큰의 시퀀스 내 고유 위치를 나타내는 벡터를 내용 표현에 더하거나 결합하는 방식이다."
-            },
-            {
-              "id": "B",
-              "text": "어텐션 마스크는 각 질의 위치가 참조할 수 있는 키 위치를 허용·차단하는 행렬 또는 규칙이다."
-            },
-            {
-              "id": "C",
-              "text": "BigBird는 국소·무작위·전역 연결을 조합한 블록 희소 어텐션으로 긴 시퀀스의 계산량을 줄이는 트랜스포머다."
-            },
-            {
-              "id": "D",
-              "text": "블록 희소 어텐션은 어텐션 행렬을 블록 단위로 제한해 일부 질의-키 블록만 계산하는 희소 방식이다."
-            }
-          ],
-          "answer": "D",
-          "explanation": "블록 희소 어텐션은 어텐션 행렬을 블록 단위로 제한해 일부 질의-키 블록만 계산하는 희소 방식이다.",
-          "incorrectReason": "선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.",
-          "reviewUrl": "/wiki/block-sparse-attention/#개념과-원리"
+          "reviewUrl": "/wiki/interleaved-multimodal-data/#개념과-원리"
         }
       ]
     }

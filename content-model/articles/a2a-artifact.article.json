@@ -1,0 +1,133 @@
+{
+  "id": "a2a-artifact",
+  "title": "A2A 산출물",
+  "englishTitle": "A2A Artifact",
+  "aliases": [
+    "A2A Artifact",
+    "Artifact Object"
+  ],
+  "summary": "A2A 산출물은 원격 에이전트가 Task 수행 결과로 생성한 문서·파일·구조화 데이터를 고유 artifactId와 Part 집합으로 표현한 납품 객체다.",
+  "sections": [
+    {
+      "id": "definition",
+      "title": "정의와 적용 경계",
+      "body": "A2A Artifact는 Task가 만들어 낸 구체적인 결과다. artifactId, 선택적 이름·설명, 하나 이상의 Part를 가지며 보고서, 이미지, 코드, 데이터 묶음처럼 이후 소비자가 사용할 납품물을 표현한다. 에이전트의 설명이나 질문은 Message로, 작업 결과는 Artifact로 구분하면 재연결과 후속 작업에서 결과를 안정적으로 참조할 수 있다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "protocol-model",
+      "title": "프로토콜 객체와 계약",
+      "body": "Artifact는 전체 객체로 도착하거나 TaskArtifactUpdateEvent를 통해 청크로 갱신될 수 있다. 갱신 이벤트의 append와 lastChunk 의미를 처리해 같은 artifactId에 데이터를 이어 붙이고 완료를 판정한다. 여러 Artifact가 한 Task에 속할 수 있으며, 후속 Task는 referenceTaskIds와 명시적 Part로 필요한 이전 결과를 참조한다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "interaction-flow",
+      "title": "상호작용 흐름",
+      "body": "수신기는 taskId와 artifactId 조합으로 조립 버퍼를 만들고 이벤트 순서·중복·누락을 검사한다. URL Part는 다운로드 전에 정책을 적용하고, raw Part는 mediaType·크기·해시를 확인한다. 최종 청크가 도착하면 스키마·파일 형식·악성 콘텐츠를 검증하고 원본 Task, 생성 시각, 에이전트 버전과 함께 저장한다.",
+      "sourceRefs": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "security-failures",
+      "title": "실패·보안 경계",
+      "body": "Artifact는 에이전트가 생성했어도 신뢰할 수 없는 외부 콘텐츠다. 실행 가능한 코드·문서 매크로·HTML, 압축 폭탄, 경로 순회 파일명, 내부망 URL과 개인정보를 차단하거나 격리해야 한다. 결과 검증과 사용자 승인 전에 자동 배포·발송·결제 같은 부수 효과를 연결하지 않는다. 보유 기간과 삭제 전파도 원본 데이터 정책에 맞춘다.",
+      "sourceRefs": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "implementation-validation",
+      "title": "구현과 검증",
+      "body": "시험은 단일 Part, 여러 Part, 대용량 청크, 순서 뒤바뀜, 중복 이벤트, lastChunk 누락, 같은 artifactId의 내용 변경과 부분 실패를 포함한다. 조립 결과의 해시와 mediaType을 기록하고, 산출물 완전성·스키마 통과율·격리율·후속 소비 실패율을 측정한다. 스트리밍 화면 표시와 정본 저장 경로가 서로 다른 결과를 만들지 않는지도 확인한다.",
+      "sourceRefs": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "distinctions",
+      "title": "인접 개념과의 구분",
+      "body": "Artifact는 결과의 내용과 식별자를 담고, 모델 아티팩트는 보통 가중치·토크나이저 같은 배포 자산을 뜻한다. A2A Message에 파일 Part를 넣을 수도 있지만 최종 납품물을 Message로만 보내면 Task 결과 검색과 갱신 의미가 약해진다. Artifact Registry는 여러 산출물의 보존·버전·계보를 관리하는 상위 저장 시스템이다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "artifact-example",
+      "title": "증분 보고서 사례",
+      "body": "시장 조사 에이전트가 표, 본문, 출처 목록을 가진 보고서를 만드는 동안 같은 artifactId로 여러 TaskArtifactUpdateEvent를 보낼 수 있다. 클라이언트는 각 이벤트의 append 여부를 따라 Part를 이어 붙이고 lastChunk가 올 때까지 임시 상태로 표시한다. 표 데이터는 application/json 스키마로, 본문은 text/markdown으로, 원본 자료는 만료 URL로 분리한다. 최종 조립 뒤 각 URL의 허용 도메인과 해시를 검증하고 출처 목록이 본문 인용과 일치하는지 검사한다. 화면에 먼저 보인 초안 청크를 정본 보고서로 저장하지 않으며 failed나 canceled Task의 부분 산출물은 명시적인 복구 정책 없이는 자동 사용하지 않는다. 청크 중복과 순서 오류가 있어도 같은 해시의 최종 산출물을 재현할 수 있어야 한다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "artifact-governance",
+      "title": "산출물 계보와 보존",
+      "body": "Artifact 저장소는 artifactId만이 아니라 원본 taskId·contextId, 제공 Agent Card 버전, 생성 시각, mediaType, 크기, 콘텐츠 해시, 검증·격리 상태와 파생 관계를 기록한다. 후속 에이전트가 결과를 수정하면 기존 Artifact를 덮지 않고 새 Artifact를 만들며 어떤 이전 결과를 참조했는지 남긴다. 개인정보나 저작권 자료가 포함된 경우 원본의 보유·삭제 정책을 파생 산출물에도 적용한다. 악성 검사 결과가 뒤늦게 바뀌면 이미 소비한 시스템에 폐기 이벤트를 전달한다. 품질 승인은 파일이 열리는지만 보지 않고 필수 Part 완전성, 스키마, 사실성·출처, 정책 위반과 사람이 승인한 버전을 함께 확인한다. 재사용 횟수와 소비 실패를 추적해 신뢰 등급을 갱신한다. 저장소 밖으로 내보낼 때도 원본의 보안 등급과 사용 조건을 함께 전달해 파일 복사 뒤 계보가 끊기지 않게 한다.",
+      "sourceRefs": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "learning-check",
+      "title": "학습 체크",
+      "body": "- Artifact 청크를 안전하게 조립하고 완료를 판정할 수 있는가?\n- Message의 파일 Part와 Task Artifact의 용도를 구분할 수 있는가?\n- 원격 산출물을 자동 실행하지 않게 할 검증·격리 절차를 설계할 수 있는가?"
+    }
+  ],
+  "categories": [
+    "agents"
+  ],
+  "prerequisites": [
+    "a2a-task-lifecycle",
+    "a2a-content-part"
+  ],
+  "related": [
+    "a2a-message",
+    "artifact-registry",
+    "model-artifact-format",
+    "a2a-observability"
+  ],
+  "sources": [
+    {
+      "title": "Agent2Agent Protocol Specification 1.0",
+      "url": "https://a2a-protocol.org/latest/specification/",
+      "type": "standard"
+    },
+    {
+      "title": "A2A Normative Protocol Buffer Definition",
+      "url": "https://github.com/a2aproject/A2A/blob/main/specification/a2a.proto",
+      "type": "specification"
+    },
+    {
+      "title": "A2A Core Concepts",
+      "url": "https://a2a-protocol.org/latest/topics/key-concepts/",
+      "type": "documentation"
+    },
+    {
+      "title": "A2A Life of a Task",
+      "url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+      "type": "documentation"
+    },
+    {
+      "title": "A2A Enterprise Features",
+      "url": "https://a2a-protocol.org/latest/topics/enterprise-ready/",
+      "type": "documentation"
+    }
+  ],
+  "status": "reviewed",
+  "volatility": "fast-changing",
+  "reviewedAt": "2026-08-30"
+}

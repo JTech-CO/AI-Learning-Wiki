@@ -128,11 +128,15 @@ EU AI Act의 분류는 하나의 “위험 등급”만 고르는 작업이 아�
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [고영향 인공지능 확인 절차](/wiki/korean-high-impact-ai-confirmation/)
+- [한국 고영향 인공지능](/wiki/korean-high-impact-ai/)
+- [한국 인공지능기본법](/wiki/korean-ai-basic-act/)
+- [EU AI Act 금지 관행](/wiki/eu-ai-act-prohibited-practices/)
+- [EU 고위험 AI 시스템](/wiki/eu-high-risk-ai-system/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -153,4 +157,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **AI 규제와 리터러시:** [다음 문서 — 한국 인공지능기본법](/wiki/korean-ai-basic-act/)

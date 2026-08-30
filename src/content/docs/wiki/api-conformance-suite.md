@@ -116,12 +116,13 @@ API 적합성 테스트 스위트을 적용할 수 있는 대표 상황은 두 L
 
 ### 이 문서를 가리키는 문서
 
+- [A2A 적합성 시험](/wiki/a2a-conformance-testing/)
 - [API 공급자 추상화](/wiki/api-provider-abstraction/)
 - [API 버전 협상](/wiki/api-version-negotiation/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +137,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — A2A 적합성 시험](/wiki/a2a-conformance-testing/)

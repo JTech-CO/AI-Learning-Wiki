@@ -1,0 +1,109 @@
+---
+title: "A2A 인증과 권한 위임 A2A Authentication and Delegation"
+description: "A2A 인증과 권한 위임은 클라이언트·사용자·원격 에이전트의 신원을 HTTP 계층에서 확인하고 작업에 필요한 최소 권한만 대상 서비스에 전달하는 보안 경계다."
+tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
+---
+
+<p class="wiki-alias">A2A Authorization · A2A Delegated Authorization</p>
+
+<p class="wiki-lead">A2A 인증과 권한 위임은 클라이언트·사용자·원격 에이전트의 신원을 HTTP 계층에서 확인하고 작업에 필요한 최소 권한만 대상 서비스에 전달하는 보안 경계다.</p>
+
+<div class="wiki-document-meta">분류: [에이전트·자동화·MCP](/category/agents/) · [안전·보안·윤리](/category/safety/) · 문서 상태: 문장 단위 근거 검토 완료 · 최근 검토: 2026-08-30</div>
+
+## 개념과 원리
+
+### 정의와 적용 경계
+
+A2A 페이로드는 사용자나 클라이언트 신원을 직접 싣지 않으며 인증 요구는 Agent Card에 선언되고 실제 자격 증명은 HTTP 헤더에서 전달된다. 서버는 각 요청에서 호출 주체를 인증한 뒤 기술·Task·데이터·행동 수준 권한을 별도로 판정한다. 유효한 토큰이 있다는 사실은 특정 Task를 읽거나 외부 행동을 실행할 권한과 같지 않다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+
+### 프로토콜 객체와 계약
+
+Agent Card의 securitySchemes는 OpenAPI 형식을 따라 OAuth 2.0, API 키, mTLS 같은 방법을 설명한다. OAuth 토큰은 대상 자원과 scope를 좁히고 가능하면 발신자 제약을 사용한다. 에이전트가 사용자 대신 하위 서비스에 접근할 때 원래 토큰을 무조건 전달하지 않고 RFC 8693 토큰 교환 같은 방식으로 대상·권한·수명을 축소한 위임 토큰을 발급한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+
+### 상호작용 흐름
+
+클라이언트는 카드의 보안 요구를 읽고 신뢰된 권한 서버 메타데이터를 확인해 자격을 얻은 뒤 HTTP Authorization 헤더로 요청한다. 작업 중 다른 서비스 자격이 필요하면 서버는 auth-required 상태로 중단하고, 클라이언트는 대역 밖 인증을 완료해 필요한 정보로 Task를 재개한다. 토큰 발급·교환·사용 주체와 최종 외부 행동을 하나의 감사 연결로 묶는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-3">[3]</a></div>
+
+### 실패·보안 경계
+
+토큰 통과는 confused deputy와 권한 확산을 만든다. audience·resource·issuer·scope·subject를 검증하고, 사용자 토큰과 에이전트 서비스 계정의 주체를 구분하며, 장기 Task보다 짧은 토큰이 만료될 때 재승인 규칙을 둔다. 카드가 가리키는 권한 서버와 보호 자원 메타데이터를 교차 확인해 악성 인증 엔드포인트와 피싱을 막는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-6">[6]</a></div>
+
+## 활용과 검증
+
+### 구현과 검증
+
+시험은 401과 WWW-Authenticate 도전, 유효하지만 scope가 부족한 403, 잘못된 audience·issuer, 만료·폐기 토큰, taskId의 다른 주체 접근, auth-required 재개와 토큰 교환 실패를 포함한다. 로그에는 토큰 본문 대신 issuer·subject의 비식별 해시, audience, scope 집합, 정책 결정 ID와 Task ID를 남긴다. 권한 거부율과 과권한 탐지 건수를 추적한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a> <a href="#reference-3">[3]</a></div>
+
+### 인접 개념과의 구분
+
+인증은 누구인지 확인하고 권한 부여는 무엇을 할 수 있는지 판정하며 위임은 다른 주체가 제한된 범위에서 대신 행동하도록 권한을 전달한다. A2A의 auth-required는 자격이 더 필요하다는 작업 상태이지 토큰 발급 프로토콜이 아니다. 프롬프트로 역할을 설명하는 것은 보안 주체나 강제 가능한 권한 경계를 만들지 않는다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+
+### 대상 제한 위임 사례
+
+사용자가 일정 조정 에이전트에 회의 변경을 요청하고, 원격 캘린더 에이전트가 다시 사내 캘린더 API를 호출한다고 하자. 사용자 로그인 토큰을 두 에이전트와 API 전체에 전달하지 않는다. A2A 클라이언트는 일정 조정 기술 호출에 필요한 scope와 audience를 가진 토큰을 사용하고, 원격 에이전트는 토큰 교환으로 캘린더 API 대상·특정 일정 수정 scope·짧은 수명의 새 토큰을 얻는다. Task가 auth-required가 되면 사용자는 브라우저의 권한 서버에서 추가 동의를 수행하며 비밀번호나 API 키를 Message Part로 보내지 않는다. 최종 변경 감사에는 사용자 주체, 위임 에이전트, 대상 자원, 승인 scope, Task와 외부 일정 ID를 연결한다. 토큰 만료 후 같은 Task를 재개할 때도 현재 권한을 다시 확인한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-2">[2]</a></div>
+
+### 권한 판정과 폐기
+
+서버 권한 정책은 호출 주체, 대표 사용자, Agent Card skill, Task 소유자, 데이터 등급, 요청 행동과 위험을 입력으로 받는다. 토큰 서명만 확인하지 않고 issuer·audience·resource·scope·만료·발신자 제약과 조직 상태를 검증한다. 장기 Task 중 사용자가 권한을 철회하면 다음 도구 실행 전에 다시 판정하고 진행 중 외부 작업의 중단·보상 범위를 결정한다. 서비스 계정으로 실행한 결과도 어느 사용자 요청에서 유래했는지 감사 연결을 유지한다. 비상 예외 권한은 승인자·사유·만료를 필수로 하고 자동 갱신하지 않는다. 정기 검토에서는 사용되지 않는 scope, 토큰 교환 실패, 다른 테넌트 접근 시도와 auth-required 반복을 찾아 정책을 축소한다. 폐기 이벤트가 캐시된 권한 결정까지 무효화하는지 시험한다.
+
+<div class="wiki-section-sources" aria-label="이 구획의 근거"><span>근거</span> <a href="#reference-1">[1]</a> <a href="#reference-6">[6]</a></div>
+
+### 학습 체크
+
+- Agent Card 선언, HTTP 인증, 작업별 권한 판정을 서로 분리할 수 있는가?
+- 토큰 전달보다 대상 제한 토큰 교환이 필요한 이유를 설명할 수 있는가?
+- auth-required 재개에서 자격 증명이 노출되지 않게 할 절차를 설계할 수 있는가?
+
+## 문서 관계
+
+### 선행 개념
+
+- [OAuth](/wiki/oauth/)
+- [에이전트 위임](/wiki/agent-delegation/)
+
+### 관련 문서
+
+- [에이전트 카드](/wiki/agent-card/)
+- [에이전트 최소 권한](/wiki/agent-least-privilege/)
+- [OAuth 범위](/wiki/oauth-scope/)
+- [상호 TLS](/wiki/mutual-tls/)
+
+### 이 문서를 가리키는 문서
+
+- [에이전트 카드](/wiki/agent-card/)
+- [A2A 프로토콜 게이트웨이](/wiki/a2a-protocol-gateway/)
+
+### 이 문서를 포함하는 코스
+
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/)
+
+## 참고와 다음 학습
+
+<div class="wiki-source-note">외부 백과는 표제어 범위와 용어 관계를 대조하는 데 사용했다. Wikipedia 자료는 CC BY-SA 4.0에 따라 출처를 표시하며, 본문은 원문을 복제하지 않고 1차 자료와 함께 재서술했다. Grokipedia는 robots.txt가 허용한 공개 메타데이터만 확인하고 본문은 가져오지 않았다.</div>
+
+### 참고 문헌
+
+1. <span id="reference-1"></span>[A2A Enterprise Features](https://a2a-protocol.org/latest/topics/enterprise-ready/) - documentation
+2. <span id="reference-2"></span>[Agent2Agent Protocol Specification 1.0](https://a2a-protocol.org/latest/specification/) - standard
+3. <span id="reference-3"></span>[OpenAPI Specification 3.2.0](https://spec.openapis.org/oas/v3.2.0.html) - standard
+4. <span id="reference-4"></span>[RFC 9700: Best Current Practice for OAuth 2.0 Security](https://www.rfc-editor.org/rfc/rfc9700.html) - standard
+5. <span id="reference-5"></span>[RFC 8693: OAuth 2.0 Token Exchange](https://www.rfc-editor.org/rfc/rfc8693.html) - standard
+6. <span id="reference-6"></span>[RFC 9728: OAuth 2.0 Protected Resource Metadata](https://www.rfc-editor.org/rfc/rfc9728.html) - standard
+
+### 코스에서 계속 읽기
+
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — 에이전트 최소 권한](/wiki/agent-least-privilege/)

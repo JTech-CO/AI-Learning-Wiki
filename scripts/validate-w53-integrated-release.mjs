@@ -37,6 +37,11 @@ const p0CourseLabels = [
   '프로덕션 AI API 시스템',
   '데이터·학습 파이프라인',
 ];
+const p2CourseLabels = [
+  '한국어·다국어 AI',
+  'AI 규제와 리터러시',
+  '에이전트 상호운용과 실행 계약',
+];
 
 assert.equal(report.milestone, 'W53');
 assert.deepEqual(report.targetCounts, { prompts: 1500, artifacts: 120, courses: 16, articles: 1600 });
@@ -68,20 +73,20 @@ assert.ok(report.build.promptDataBytes > 1_000_000 && report.build.artifactDataB
 assert.ok(base.promptIds.every((id) => promptIds.includes(id)) && base.artifactIds.every((id) => artifactIds.includes(id)), 'frozen canonical ID lost');
 assert.equal(sha256(promptIds.filter((id) => base.promptIds.includes(id)).join('\n')), base.hashes.promptIdsSha256);
 assert.equal(sha256(artifactIds.filter((id) => base.artifactIds.includes(id)).join('\n')), base.hashes.artifactIdsSha256);
-assert.ok(readme.includes(report.canonicalCounts.articles.toLocaleString('en-US') + '개'), 'README article count is stale');
-assert.match(readme, /24개 추천 코스/u);
+assert.ok(readme.includes(fs.readdirSync('content-model/articles').filter((name) => name.endsWith('.article.json')).length.toLocaleString('en-US') + '개'), 'README article count is stale');
+assert.match(readme, /27개 추천 코스/u);
 assert.match(readme, /1,500개 프롬프트와 120개 코드·설정 자료/u);
 assert.doesNotMatch(readme, /1,142개 프롬프트|8개 추천 코스|1,400개 백과 문서/u);
 assert.match(homeSource, /formatCount\(wiki\.counts\.articles\)/u);
 assert.match(promptPage, /1,500개 프롬프트/u);
 assert.match(promptPage, /16개 학습 코스/u);
 assert.doesNotMatch(promptPage + pathsPage, /1,142|8개 (?:학습 코스|과정)|150개 핵심/u);
-assert.match(pathsPage, /24개 과정/u);
-assert.match(termsPage, /프롬프트 및 코드·설정 자료/u);
+assert.match(pathsPage, /27개 과정/u);
+assert.match(termsPage, /프롬프트,\s*코드·설정 자료/u);
 assert.match(sidebarSource, /<details class="wiki-sidebar-more" open=\{showAdditionalCourses\}>/u);
 assert.match(sidebarSource, /<summary>더 보기<\/summary>/u);
-assert.equal((sidebarSource.match(/\{ id: '[^']+', title: '[^']+' \}/gu) ?? []).length, 16, 'sidebar additional course count mismatch');
-for (const label of [...professionalCourseLabels, ...p0CourseLabels]) assert.ok(sidebarSource.includes(label), `sidebar course label missing: ${label}`);
+assert.equal((sidebarSource.match(/\{ id: '[^']+', title: '[^']+' \}/gu) ?? []).length, 19, 'sidebar additional course count mismatch');
+for (const label of [...professionalCourseLabels, ...p0CourseLabels, ...p2CourseLabels]) assert.ok(sidebarSource.includes(label), `sidebar course label missing: ${label}`);
 assert.match(wikiStyles, /\.wiki-sidebar-more\[open\] > summary::before/u);
 assert.match(wikiStyles, /\.wiki-category-index > div \{[^}]*margin-top: 0 !important;/su);
 assert.match(wikiStyles, /\.wiki-home-columns > \* \{ margin-top: 0 !important; \}/u);

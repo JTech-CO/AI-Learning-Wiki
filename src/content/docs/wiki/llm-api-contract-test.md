@@ -117,6 +117,7 @@ LLM API 계약 테스트을 적용할 수 있는 대표 상황은 고객 지원 
 ### 이 문서를 가리키는 문서
 
 - [모델 종료 마이그레이션](/wiki/model-deprecation-migration/)
+- [A2A 적합성 시험](/wiki/a2a-conformance-testing/)
 - [LLM 클라이언트 적합성](/wiki/llm-client-conformance/)
 
 ### 이 문서를 포함하는 코스

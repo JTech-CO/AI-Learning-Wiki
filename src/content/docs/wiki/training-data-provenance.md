@@ -124,7 +124,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [EU 고위험 AI 데이터 거버넌스](/wiki/eu-high-risk-data-governance/)
 
 ### 이 문서를 포함하는 코스
 

@@ -124,11 +124,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [EU 범용 AI 모델 제공자 의무](/wiki/general-purpose-ai-provider-obligations/)
+- [EU 범용 AI 실천강령](/wiki/gpai-code-of-practice/)
 
 ### 이 문서를 포함하는 코스
 
-[데이터·학습 파이프라인](/course/data-training-pipelines/)
+[데이터·학습 파이프라인](/course/data-training-pipelines/) · [AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -148,3 +149,4 @@ _해당 문서가 없다._
 ### 코스에서 계속 읽기
 
 - **데이터·학습 파이프라인:** [다음 문서 — 학습 데이터 출처 추적](/wiki/training-data-provenance/)
+- **AI 규제와 리터러시:** [다음 문서 — 시스템적 위험 범용 AI 모델](/wiki/systemic-risk-general-purpose-ai-model/)

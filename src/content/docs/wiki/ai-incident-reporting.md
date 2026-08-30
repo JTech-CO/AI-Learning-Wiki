@@ -124,11 +124,13 @@ AI 사고 보고는 AI 시스템의 피해·오작동·보안 위반을 정해�
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [시스템적 위험 범용 AI 모델](/wiki/systemic-risk-general-purpose-ai-model/)
+- [한국 AI 안전성 확보 의무](/wiki/korean-ai-safety-duty/)
+- [EU 고위험 AI 사후시장 모니터링](/wiki/eu-high-risk-post-market-monitoring/)
 
 ### 이 문서를 포함하는 코스
 
-[AI 보안과 레드팀](/course/ai-security-redteam/)
+[AI 규제와 리터러시](/course/ai-regulation-literacy/) · [AI 보안과 레드팀](/course/ai-security-redteam/)
 
 ## 참고와 다음 학습
 
@@ -147,4 +149,5 @@ _해당 문서가 없다._
 
 ### 코스에서 계속 읽기
 
+- **AI 규제와 리터러시:** [다음 문서 — EU 기본권 영향평가](/wiki/eu-fundamental-rights-impact-assessment/)
 - **AI 보안과 레드팀:** [다음 문서 — AI 공격 표면 지도](/wiki/ai-attack-surface-map/)

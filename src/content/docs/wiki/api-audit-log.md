@@ -126,7 +126,7 @@ Anthropic은 2026년 8월 11일 Compliance API에서 로컬 Cowork·Claude Code 
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [EU 고위험 AI 기록보존](/wiki/eu-high-risk-record-keeping/)
 
 ### 이 문서를 포함하는 코스
 

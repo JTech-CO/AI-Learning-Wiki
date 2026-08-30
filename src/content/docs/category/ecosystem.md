@@ -87,6 +87,7 @@ description: "모델 공개와 배포 생태계의 기본 개념"
 <h2 id="index-ko-ng">ㅇ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="artifact-registry"><a href="/wiki/artifact-registry/">아티팩트 레지스트리</a><span class="wiki-index-summary">아티팩트 레지스트리는 모델·컨테이너·데이터 패키지 같은 빌드 산출물을 식별자와 버전으로 관리하는 서비스다.</span></li>
+<li data-article-id="agent-discovery"><a href="/wiki/agent-discovery/">에이전트 발견</a><span class="wiki-index-summary">에이전트 발견은 클라이언트가 작업 후보를 수행할 원격 에이전트의 Agent Card를 찾고 신뢰·기능·접속 조건을 검증하는 절차다.</span></li>
 <li data-article-id="edge-model-deployment"><a href="/wiki/edge-model-deployment/">엣지 모델 배포</a><span class="wiki-index-summary">엣지 모델 배포는 데이터가 생성되는 장치나 가까운 게이트웨이에 모델을 설치해 로컬에서 추론하는 방식이다.</span></li>
 <li data-article-id="edge-ai"><a href="/wiki/edge-ai/">엣지 AI</a><span class="wiki-index-summary">엣지 AI는 데이터가 생성되는 단말이나 가까운 게이트웨이에서 모델 추론 또는 일부 학습을 수행하는 방식이다.</span></li>
 <li data-article-id="research-only-license"><a href="/wiki/research-only-license/">연구 전용 라이선스</a><span class="wiki-index-summary">연구 전용 라이선스는 평가와 비상업 연구 같은 목적만 허용하고 제품 운영이나 상업적 이용을 제한하는 사용 조건이다.</span></li>

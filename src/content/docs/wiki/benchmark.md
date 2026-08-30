@@ -136,7 +136,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [도메인 전문가 평가](/wiki/domain-expert-evaluation/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 29개 문서 보기</summary>
+<summary>나머지 32개 문서 보기</summary>
 
 - [루브릭 신뢰도](/wiki/rubric-reliability/)
 - [모델 평가](/wiki/evaluation/)
@@ -164,6 +164,9 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [평가 지표](/wiki/metric/)
 - [행동 회귀](/wiki/behavioral-regression/)
 - [F1 점수](/wiki/f1-score/)
+- [KLUE](/wiki/klue/)
+- [KMMLU](/wiki/kmmlu/)
+- [Ko-H5 벤치마크](/wiki/ko-h5-benchmark/)
 - [LLM 판정 앙상블](/wiki/llm-judge-ensemble/)
 - [LLM 평가 계약](/wiki/llm-evaluation-contract/)
 - [LLM 평가자 간 일치도](/wiki/inter-rater-agreement-for-llm/)
@@ -172,7 +175,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/) · [LLM 평가와 관측성](/course/llm-evaluation/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [한국어·다국어 AI](/course/korean-multilingual-ai/) · [LLM 평가와 관측성](/course/llm-evaluation/)
 
 ## 참고와 다음 학습
 
@@ -191,4 +194,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — 평가 지표](/wiki/metric/)
+- **한국어·다국어 AI:** [다음 문서 — 벤치마크 오염](/wiki/benchmark-contamination/)
 - **LLM 평가와 관측성:** [다음 문서 — 벤치마크 데이터셋](/wiki/benchmark-dataset/)

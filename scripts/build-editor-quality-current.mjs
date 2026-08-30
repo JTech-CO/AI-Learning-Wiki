@@ -108,7 +108,7 @@ const articleAudit = articles.map((article) => {
   if (relationIds.length === 0) orphanArticles += 1;
   for (const section of article.sections) {
     const refs = section.sourceRefs ?? [];
-    if (section.id !== 'check') {
+    if (!['check', 'learning-check'].includes(section.id)) {
       factualSections += 1;
       if (refs.length > 0) evidencedFactualSections += 1;
       else evidenceMissing.push(section.id);

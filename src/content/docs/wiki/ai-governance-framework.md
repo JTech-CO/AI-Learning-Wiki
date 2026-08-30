@@ -124,11 +124,12 @@ AI 거버넌스 프레임워크는 조직의 AI 의사결정 권한, 정책, 수
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [한국 고영향 AI 사업자 책무](/wiki/korean-high-impact-ai-operator-duties/)
+- [EU 고위험 AI 적합성 평가](/wiki/eu-high-risk-conformity-assessment/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -146,4 +147,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **AI 규제와 리터러시:** [코스 목록으로 돌아가기](/course/ai-regulation-literacy/)

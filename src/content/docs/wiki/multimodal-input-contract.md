@@ -118,6 +118,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [모달리티 대체 정책](/wiki/modality-fallback-policy/)
 - [프롬프트 포트폴리오 관측성](/wiki/prompt-portfolio-observability/)
+- [A2A 콘텐츠 파트](/wiki/a2a-content-part/)
 
 ### 이 문서를 포함하는 코스
 

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "release": "P2",
+  "version": "1.3.0",
+  "reviewedAt": "2026-08-30",
+  "baseline": {
+    "articles": 1624,
+    "courses": 24
+  },
+  "target": {
+    "articles": 1676,
+    "courses": 27
+  },
+  "current": {
+    "articles": 1676,
+    "courses": 27
+  },
+  "totals": {
+    "articles": 52,
+    "sections": 396,
+    "sources": 215,
+    "sourceDomains": 21,
+    "bodyCharacters": 134481
+  },
+  "categories": {
+    "agents": 16,
+    "api": 10,
+    "ecosystem": 1,
+    "evaluation": 8,
+    "llm": 10,
+    "safety": 20,
+    "training": 1
+  },
+  "groups": [
+    {
+      "id": "korean-multilingual-ai",
+      "milestone": "W70",
+      "courseId": "korean-multilingual-ai",
+      "articleCount": 18,
+      "courseSteps": 37,
+      "bodyCharacters": 41245,
+      "sources": 61
+    },
+    {
+      "id": "ai-regulation-literacy",
+      "milestone": "W71",
+      "courseId": "ai-regulation-literacy",
+      "articleCount": 18,
+      "courseSteps": 36,
+      "bodyCharacters": 57117,
+      "sources": 80
+    },
+    {
+      "id": "agent-interoperability",
+      "milestone": "W72",
+      "courseId": "agent-interoperability",
+      "articleCount": 16,
+      "courseSteps": 32,
+      "bodyCharacters": 36119,
+      "sources": 74
+    }
+  ],
+  "releaseGates": {
+    "exactArticleGrowth": true,
+    "exactCourseGrowth": true,
+    "everyArticleAssignedToCourse": true,
+    "primarySourcesOnly": true
+  }
+}

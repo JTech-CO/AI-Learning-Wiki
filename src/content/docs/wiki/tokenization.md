@@ -109,14 +109,25 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
+- [다국어 토큰 분절률](/wiki/multilingual-token-fertility/)
 - [어휘 집합](/wiki/vocabulary/)
 - [토크나이저](/wiki/tokenizer/)
 - [토큰](/wiki/token/)
 - [하이퍼파라미터](/wiki/hyperparameter/)
 
+<details class="wiki-backlinks-more">
+<summary>나머지 4개 문서 보기</summary>
+
+- [한국어 개체명 인식](/wiki/korean-named-entity-recognition/)
+- [한국어 띄어쓰기 변이](/wiki/korean-word-spacing-variation/)
+- [한국어 토큰화](/wiki/korean-tokenization/)
+- [한국어 형태소 분석](/wiki/korean-morphological-analysis/)
+
+</details>
+
 ### 이 문서를 포함하는 코스
 
-[LLM 내부 구조](/course/llm-internals/)
+[한국어·다국어 AI](/course/korean-multilingual-ai/) · [LLM 내부 구조](/course/llm-internals/)
 
 ## 참고와 다음 학습
 
@@ -130,4 +141,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **한국어·다국어 AI:** [다음 문서 — 토크나이저](/wiki/tokenizer/)
 - **LLM 내부 구조:** [다음 문서 — 어휘 집합](/wiki/vocabulary/)

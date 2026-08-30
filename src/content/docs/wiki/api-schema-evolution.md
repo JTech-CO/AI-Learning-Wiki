@@ -117,6 +117,7 @@ API 스키마 진화을 적용할 수 있는 대표 상황은 두 LLM 공급자 
 ### 이 문서를 가리키는 문서
 
 - [동적 스키마 참조](/wiki/dynamic-reference/)
+- [A2A 버전 협상](/wiki/a2a-version-negotiation/)
 - [API 버전 협상](/wiki/api-version-negotiation/)
 - [API 하위 호환성](/wiki/api-backward-compatibility/)
 - [JSON 스키마 방언](/wiki/json-schema-dialect/)

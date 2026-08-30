@@ -81,7 +81,9 @@ for (const file of htmlFiles) {
     .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
     .replace(/<[^>]+>/g, ' ');
-  expect(!/(?:에듀버스|eduverse|기존 실습|\bGuide\b)/i.test(visibleText), 'legacy source wording in ' + path.relative('dist', file));
+  // Guide alone is common in legitimate paper and documentation titles.
+  // Only flag the former site's identity and its lesson/Guide phrasing.
+  expect(!/(?:에듀버스|eduverse|기존 실습|(?:기존|실습|학습)\s+Guide\b)/i.test(visibleText), 'legacy source wording in ' + path.relative('dist', file));
   expect(!/href=["']\/courses\//i.test(html), 'legacy lesson link in ' + path.relative('dist', file));
 }
 

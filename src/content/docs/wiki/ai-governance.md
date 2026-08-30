@@ -112,7 +112,7 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 - [개인정보 보호](/wiki/privacy/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 88개 문서 보기</summary>
+<summary>나머지 92개 문서 보기</summary>
 
 - [공정성 지표](/wiki/fairness-metric/)
 - [과도한 자율성](/wiki/excessive-agency/)
@@ -177,6 +177,7 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 - [표현 편향](/wiki/representation-bias/)
 - [프롬프트 유출](/wiki/prompt-leakage/)
 - [학습 데이터 오염](/wiki/training-data-poisoning/)
+- [한국 인공지능기본법](/wiki/korean-ai-basic-act/)
 - [허용 사용 정책](/wiki/acceptable-use-policy/)
 - [확장 가능한 감독](/wiki/scalable-oversight/)
 - [회피 공격](/wiki/evasion-attack/)
@@ -199,6 +200,9 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 - [AI 책임성](/wiki/ai-accountability/)
 - [AI 통제 문제](/wiki/ai-control-problem/)
 - [AI 해석 가능성](/wiki/ai-interpretability/)
+- [EU AI Act 금지 관행](/wiki/eu-ai-act-prohibited-practices/)
+- [EU AI 리터러시 의무](/wiki/eu-ai-literacy-duty/)
+- [EU 범용 AI 모델 제공자 의무](/wiki/general-purpose-ai-provider-obligations/)
 - [LLM 침투 테스트](/wiki/llm-penetration-testing/)
 - [NIST AI 위험 관리 프레임워크](/wiki/nist-ai-risk-management-framework/)
 - [RAG 오염](/wiki/rag-poisoning/)
@@ -207,7 +211,7 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -222,3 +226,4 @@ AI 거버넌스는 데이터 수집부터 모델 개발, 배포, 감시, 폐기�
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [코스 목록으로 돌아가기](/course/responsible-ai/)
+- **AI 규제와 리터러시:** [다음 문서 — AI 책임성](/wiki/ai-accountability/)

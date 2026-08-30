@@ -124,11 +124,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [KMMLU](/wiki/kmmlu/)
+- [Ko-H5 벤치마크](/wiki/ko-h5-benchmark/)
+- [KorQuAD](/wiki/korquad/)
 
 ### 이 문서를 포함하는 코스
 
-[LLM 평가와 관측성](/course/llm-evaluation/)
+[한국어·다국어 AI](/course/korean-multilingual-ai/) · [LLM 평가와 관측성](/course/llm-evaluation/)
 
 ## 참고와 다음 학습
 
@@ -147,4 +149,5 @@ _해당 문서가 없다._
 
 ### 코스에서 계속 읽기
 
+- **한국어·다국어 AI:** [다음 문서 — 다국어 평가 프로토콜](/wiki/multilingual-evaluation-protocol/)
 - **LLM 평가와 관측성:** [다음 문서 — 평가 루브릭](/wiki/evaluation-rubric/)

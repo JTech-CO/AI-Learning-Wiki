@@ -118,6 +118,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [모델 가중치 접근 제어](/wiki/model-weight-access-control/)
 - [모델 공급망 보안](/wiki/model-supply-chain-security/)
+- [EU 고위험 AI 적합성 평가](/wiki/eu-high-risk-conformity-assessment/)
 
 ### 이 문서를 포함하는 코스
 

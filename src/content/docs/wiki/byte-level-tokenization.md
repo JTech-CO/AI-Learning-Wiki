@@ -124,11 +124,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [다국어 토큰 분절률](/wiki/multilingual-token-fertility/)
+- [한글 유니코드 정규화](/wiki/hangul-unicode-normalization/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[한국어·다국어 AI](/course/korean-multilingual-ai/)
 
 ## 참고와 다음 학습
 
@@ -147,4 +148,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **한국어·다국어 AI:** [다음 문서 — 바이트 페어 인코딩](/wiki/byte-pair-encoding/)

@@ -26,7 +26,8 @@ const [w4Ledger, w5Ledger, w6Ledger, w7Ledger, w8Ledger, w9Ledger, w10Ledger, w1
   readJson('content-model/evidence/w18-claim-ledger.json')
 ]);
 const w46Ledger = await readJson('content-model/evidence/w46-claim-ledger.json');
-const publicationReady = new Set([...w4Ledger.articles, ...w5Ledger.articles, ...w6Ledger.articles, ...w7Ledger.articles, ...w8Ledger.articles, ...w9Ledger.articles, ...w10Ledger.articles, ...w11Ledger.articles, ...w12Ledger.articles, ...w13Ledger.articles, ...w14Ledger.articles, ...w15Ledger.articles, ...w16Ledger.articles, ...w17Ledger.articles, ...w18Ledger.articles, ...w46Ledger.articles].filter((article) => article.publicationReady).map((article) => article.articleId));
+const p2Ledger = await readJson('content-model/evidence/p2-claim-ledger.json');
+const publicationReady = new Set([...w4Ledger.articles, ...w5Ledger.articles, ...w6Ledger.articles, ...w7Ledger.articles, ...w8Ledger.articles, ...w9Ledger.articles, ...w10Ledger.articles, ...w11Ledger.articles, ...w12Ledger.articles, ...w13Ledger.articles, ...w14Ledger.articles, ...w15Ledger.articles, ...w16Ledger.articles, ...w17Ledger.articles, ...w18Ledger.articles, ...w46Ledger.articles, ...p2Ledger.articles].filter((article) => article.publicationReady).map((article) => article.articleId));
 const byId = new Map(articles.map((article) => [article.id, article]));
 const backlinks = new Map(articles.map((article) => [article.id, []]));
 const courseMap = new Map(articles.map((article) => [article.id, []]));

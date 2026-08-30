@@ -79,6 +79,8 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <section class="wiki-index-group" data-index-group="ko-ng">
 <h2 id="index-ko-ng">ㅇ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="a2a-protocol"><a href="/wiki/a2a-protocol/">에이전트 간 프로토콜</a><span class="wiki-index-summary">에이전트 간 프로토콜(A2A)은 구현이 서로 다른 독립 에이전트가 능력을 발견하고 장기 작업을 협업하도록 데이터 모델과 연산 의미를 표준화한 개방형 규약이다.</span></li>
+<li data-article-id="agent-card"><a href="/wiki/agent-card/">에이전트 카드</a><span class="wiki-index-summary">에이전트 카드는 A2A 서버의 정체성, 기술, 인터페이스, 프로토콜 버전과 보안 요구를 기계가 읽을 수 있게 공개하는 JSON 메타데이터 문서다.</span></li>
 <li data-article-id="deserialization"><a href="/wiki/deserialization/">역직렬화</a><span class="wiki-index-summary">역직렬화는 전송되거나 저장된 표현을 애플리케이션이 다룰 수 있는 객체와 자료형으로 복원하는 과정이다.</span></li>
 <li data-article-id="audio-api"><a href="/wiki/audio-api/">오디오 API</a><span class="wiki-index-summary">오디오 API는 음성 인식, 번역, 합성 등 오디오 입력과 출력을 모델 서비스로 요청하는 인터페이스다.</span></li>
 <li data-article-id="request-signing"><a href="/wiki/request-signing/">요청 서명</a><span class="wiki-index-summary">요청 서명은 HTTP 요청의 선택된 구성 요소를 개인키나 공유키로 서명해 발신자와 전송 중 무결성을 확인하는 방식이다.</span></li>
@@ -147,6 +149,13 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <section class="wiki-index-group" data-index-group="en-a">
 <h2 id="index-en-a">A</h2>
 <ul class="wiki-index-list">
+<li data-article-id="a2a-capability-negotiation"><a href="/wiki/a2a-capability-negotiation/">A2A 기능 협상</a><span class="wiki-index-summary">A2A 기능 협상은 Agent Card와 요청 헤더를 대조해 양쪽이 함께 지원하는 바인딩, 버전, 모달리티, 스트리밍·푸시·확장을 선택하는 절차다.</span></li>
+<li data-article-id="a2a-message"><a href="/wiki/a2a-message/">A2A 메시지</a><span class="wiki-index-summary">A2A 메시지는 클라이언트와 원격 에이전트 사이의 한 차례 의사소통을 역할, 고유 messageId와 하나 이상의 Part로 표현하는 프로토콜 객체다.</span></li>
+<li data-article-id="a2a-version-negotiation"><a href="/wiki/a2a-version-negotiation/">A2A 버전 협상</a><span class="wiki-index-summary">A2A 버전 협상은 Agent Card의 인터페이스 버전과 요청의 A2A-Version을 맞춰 기능 의미를 고정하고 호환되지 않는 Major.Minor 조합을 명시적으로 거부하는 절차다.</span></li>
+<li data-article-id="a2a-content-part"><a href="/wiki/a2a-content-part/">A2A 콘텐츠 파트</a><span class="wiki-index-summary">A2A 콘텐츠 파트는 Message와 Artifact 안에서 텍스트, 원시 바이트, URL 또는 구조화 데이터를 하나만 선택해 담는 최소 콘텐츠 컨테이너다.</span></li>
+<li data-article-id="a2a-push-notification"><a href="/wiki/a2a-push-notification/">A2A 푸시 알림</a><span class="wiki-index-summary">A2A 푸시 알림은 장기 Task의 상태 변화가 생겼을 때 서버가 등록된 웹훅으로 알림을 보내 연결이 끊긴 클라이언트가 작업을 다시 조회하게 하는 비동기 전달 방식이다.</span></li>
+<li data-article-id="a2a-protocol-gateway"><a href="/wiki/a2a-protocol-gateway/">A2A 프로토콜 게이트웨이</a><span class="wiki-index-summary">A2A 프로토콜 게이트웨이는 에이전트 호출 경계에서 발견, 바인딩 변환, 인증, 정책, 속도 제한과 관측을 중앙 적용하되 Task 의미를 보존하는 중개 계층이다.</span></li>
+<li data-article-id="a2a-protocol-binding"><a href="/wiki/a2a-protocol-binding/">A2A 프로토콜 바인딩</a><span class="wiki-index-summary">A2A 프로토콜 바인딩은 추상 A2A 연산과 데이터 모델을 JSON-RPC, gRPC, HTTP+JSON/REST 같은 구체적 전송·직렬화 규칙에 매핑하는 계약이다.</span></li>
 <li data-article-id="api"><a href="/wiki/api/">API</a><span class="wiki-index-summary">소프트웨어 구성 요소가 정해진 규약으로 기능과 데이터를 요청·교환하는 인터페이스다.</span></li>
 <li data-article-id="api-audit-log"><a href="/wiki/api-audit-log/">API 감사 로그</a><span class="wiki-index-summary">API 감사 로그는 누가 언제 어떤 API 자원에 어떤 작업을 요청했고 결과가 무엇이었는지를 보안·책임 추적 목적으로 기록한 사건 원장이다.</span></li>
 <li data-article-id="api-provider-abstraction"><a href="/wiki/api-provider-abstraction/">API 공급자 추상화</a><span class="wiki-index-summary">API 공급자 추상화는 LLM 서비스의 클라이언·게이트웨이·공급자 간 API 계약 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
@@ -220,6 +229,7 @@ description: "모델을 소프트웨어와 연결하는 인터페이스"
 <section class="wiki-index-group" data-index-group="en-m">
 <h2 id="index-en-m">M</h2>
 <ul class="wiki-index-list">
+<li data-article-id="mcp-a2a-boundary"><a href="/wiki/mcp-a2a-boundary/">MCP와 A2A의 경계</a><span class="wiki-index-summary">MCP와 A2A의 경계는 도구·리소스 사용 계약과 독립 에이전트 협업 계약을 구분해 각 프로토콜을 올바른 시스템 경계에 배치하는 설계 원칙이다.</span></li>
 <li data-article-id="mime-type"><a href="/wiki/mime-type/">MIME 유형</a><span class="wiki-index-summary">MIME 유형은 데이터의 매체 형식과 선택적 세부 형식을 type/subtype 형태로 식별하는 표준 표지다.</span></li>
 </ul>
 </section>

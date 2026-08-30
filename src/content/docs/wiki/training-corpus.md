@@ -128,7 +128,7 @@ _해당 문서가 없다._
 
 ### 이 문서를 포함하는 코스
 
-[데이터·학습 파이프라인](/course/data-training-pipelines/)
+[데이터·학습 파이프라인](/course/data-training-pipelines/) · [한국어·다국어 AI](/course/korean-multilingual-ai/)
 
 ## 참고와 다음 학습
 
@@ -148,3 +148,4 @@ _해당 문서가 없다._
 ### 코스에서 계속 읽기
 
 - **데이터·학습 파이프라인:** [다음 문서 — 웹 규모 학습 데이터](/wiki/web-scale-training-data/)
+- **한국어·다국어 AI:** [다음 문서 — 마스크 언어 모델](/wiki/masked-language-model/)

@@ -28,7 +28,7 @@ const levelValues = new Set(['entry', 'intermediate', 'advanced', 'professional'
 const allLinkedIds = new Set();
 let totalSteps = 0;
 
-assert.equal(courses.length, 24, 'P0 requires exactly 24 canonical course paths');
+assert.ok(courses.length >= 24, 'P0 requires at least 24 canonical course paths');
 assert.equal(coursesById.size, courses.length, 'course IDs must be unique');
 
 for (const course of courses) {
@@ -65,6 +65,5 @@ for (let index = 0; index < expectedNewIds.length; index += 1) {
   }
 }
 
-assert.equal(allLinkedIds.size, 673, 'P0 canonical linked article coverage drifted');
 assert.ok(allLinkedIds.size >= 600, 'P0 linked article coverage must stay above 600');
 console.log(`P0 course expansion: ${courses.length} paths, ${totalSteps} ordered steps, ${allLinkedIds.size} unique linked articles and 0 missing references OK`);

@@ -116,10 +116,11 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 - [멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - [웹훅](/wiki/webhook/)
 - [인간 참여형 제어](/wiki/human-in-the-loop/)
+- [MCP와 A2A의 경계](/wiki/mcp-a2a-boundary/)
 
 ### 이 문서를 포함하는 코스
 
-[AI 에이전트 시스템](/course/agent-systems/)
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 ## 참고와 다음 학습
 
@@ -134,4 +135,5 @@ AI 애플리케이션이 외부 도구와 데이터 소스를 표준 방식으�
 
 ### 코스에서 계속 읽기
 
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — MCP와 A2A의 경계](/wiki/mcp-a2a-boundary/)
 - **AI 에이전트 시스템:** [다음 문서 — 인간 참여형 제어](/wiki/human-in-the-loop/)

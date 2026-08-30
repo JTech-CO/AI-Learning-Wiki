@@ -23,6 +23,7 @@ description: "언어 모델의 입력·문맥·생성 단위"
 <ul class="wiki-index-list">
 <li data-article-id="multilingual-capability"><a href="/wiki/multilingual-capability/">다국어 능력</a><span class="wiki-index-summary">다국어 능력은 모델이 여러 언어의 입력을 이해하고 생성하며 언어 사이의 의미를 이전하는 능력이다.</span></li>
 <li data-article-id="multilingual-language-model"><a href="/wiki/multilingual-language-model/">다국어 언어 모델</a><span class="wiki-index-summary">다국어 언어 모델은 여러 언어의 텍스트를 공동 학습해 언어 간에 표현과 능력을 공유하는 모델이다.</span></li>
+<li data-article-id="multilingual-token-fertility"><a href="/wiki/multilingual-token-fertility/">다국어 토큰 분절률</a><span class="wiki-index-summary">다국어 토큰 분절률은 같은 언어 단위가 평균 몇 개의 모델 토큰으로 나뉘는지 측정해 언어별 토큰화 효율과 비용 격차를 드러내는 지표다.</span></li>
 <li data-article-id="next-token-prediction"><a href="/wiki/next-token-prediction/">다음 토큰 예측</a><span class="wiki-index-summary">앞선 토큰 문맥을 조건으로 바로 다음 토큰의 확률분포를 예측하도록 언어 모델을 학습하고 생성하는 방식이다.</span></li>
 <li data-article-id="large-language-model"><a href="/wiki/large-language-model/">대규모 언어 모델</a><span class="wiki-index-summary">대규모 데이터와 많은 파라미터로 학습해 다양한 언어 과제를 수행하는 언어 모델이다.</span></li>
 <li data-article-id="conversation-context"><a href="/wiki/conversation-context/">대화 문맥</a><span class="wiki-index-summary">대화 문맥은 현재 발화를 해석하고 응답하기 위해 모델에 제공되는 이전 메시지, 역할, 도구 결과와 대화 상태의 집합이다.</span></li>
@@ -191,6 +192,15 @@ description: "언어 모델의 입력·문맥·생성 단위"
 <ul class="wiki-index-list">
 <li data-article-id="hyperparameter"><a href="/wiki/hyperparameter/">하이퍼파라미터</a><span class="wiki-index-summary">학습 전에 사람이 정하거나 탐색하며 학습 과정과 모델 구조를 제어하는 값이다.</span></li>
 <li data-article-id="training-compute"><a href="/wiki/training-compute/">학습 계산량</a><span class="wiki-index-summary">학습 계산량은 순전파·역전파·파라미터 갱신을 수행하는 데 사용된 총 산술 연산과 하드웨어 시간이다.</span></li>
+<li data-article-id="korean-named-entity-recognition"><a href="/wiki/korean-named-entity-recognition/">한국어 개체명 인식</a><span class="wiki-index-summary">한국어 개체명 인식은 한국어 문장에서 사람·기관·장소·날짜 등 지정 범주의 문자열 범위와 유형을 찾아내는 순차 표지 과제다.</span></li>
+<li data-article-id="korean-honorifics-and-speech-acts"><a href="/wiki/korean-honorifics-and-speech-acts/">한국어 높임말과 화행</a><span class="wiki-index-summary">한국어 높임말과 화행은 주체·객체·청자에 대한 높임 표현과 진술·질문·요청 같은 발화 의도를 사회적 관계와 문맥에서 함께 해석하는 문제다.</span></li>
+<li data-article-id="korean-word-spacing-variation"><a href="/wiki/korean-word-spacing-variation/">한국어 띄어쓰기 변이</a><span class="wiki-index-summary">한국어 띄어쓰기 변이는 같은 내용이 규범·구어·입력 습관에 따라 서로 다른 공백 경계로 나타나 토큰화와 검색 결과를 바꾸는 현상이다.</span></li>
+<li data-article-id="korean-sentence-segmentation"><a href="/wiki/korean-sentence-segmentation/">한국어 문장 분할</a><span class="wiki-index-summary">한국어 문장 분할은 종결 어미·문장부호·인용·대화 문맥을 이용해 한국어 연속 텍스트에서 문장 경계를 판정하는 처리다.</span></li>
+<li data-article-id="korean-language-identification"><a href="/wiki/korean-language-identification/">한국어 언어 식별</a><span class="wiki-index-summary">한국어 언어 식별은 문서·문장·토큰이 한국어인지, 또는 다른 언어와 혼용되었는지를 문자와 문맥 단서로 판정하는 과제다.</span></li>
+<li data-article-id="korean-tokenization"><a href="/wiki/korean-tokenization/">한국어 토큰화</a><span class="wiki-index-summary">한국어 토큰화는 한글 음절·자모·어절·형태소와 부분어 어휘 사이의 경계를 정해 한국어 문자열을 모델 토큰열로 바꾸는 절차다.</span></li>
+<li data-article-id="korean-morphological-analysis"><a href="/wiki/korean-morphological-analysis/">한국어 형태소 분석</a><span class="wiki-index-summary">한국어 형태소 분석은 어절을 어간·어미·조사·접사 같은 최소 기능 단위로 나누고 각 단위의 품사와 문법 정보를 판정하는 처리다.</span></li>
+<li data-article-id="korean-english-code-switching"><a href="/wiki/korean-english-code-switching/">한국어·영어 코드 스위칭</a><span class="wiki-index-summary">한국어·영어 코드 스위칭은 한 발화나 대화 안에서 두 언어가 단어·구·문장 단위로 번갈아 나타나는 사용 양상과 처리 문제다.</span></li>
+<li data-article-id="hangul-unicode-normalization"><a href="/wiki/hangul-unicode-normalization/">한글 유니코드 정규화</a><span class="wiki-index-summary">한글 유니코드 정규화는 완성형 음절과 조합 자모처럼 정준적으로 동등한 표현을 NFC·NFD 규칙에 따라 일관된 코드 포인트열로 바꾸는 절차다.</span></li>
 <li data-article-id="sparse-language-model"><a href="/wiki/sparse-language-model/">희소 언어 모델</a><span class="wiki-index-summary">희소 언어 모델은 토큰마다 파라미터나 연결의 일부만 활성화해 전체 용량과 실제 계산량을 분리하는 언어 모델이다.</span></li>
 </ul>
 </section>

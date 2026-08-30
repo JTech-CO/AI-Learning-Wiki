@@ -97,7 +97,7 @@ for (const article of articles) {
   }
   for (const section of article.sections) {
     const refs = section.sourceRefs ?? [];
-    if (section.id !== 'check') {
+    if (!['check', 'learning-check'].includes(section.id)) {
       factualSections += 1;
       if (refs.length > 0) evidencedFactualSections += 1;
       else if (contract.sourceRefsRequiredForEveryFactualSection) {

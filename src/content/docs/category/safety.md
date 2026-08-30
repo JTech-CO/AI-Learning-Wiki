@@ -5,7 +5,7 @@ description: "AI 시스템의 위험을 식별하고 통제하는 방법"
 
 AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완료 백과 문서다.
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-l">L</a><a href="#index-en-n">N</a><a href="#index-en-r">R</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-e">E</a><a href="#index-en-l">L</a><a href="#index-en-n">N</a><a href="#index-en-r">R</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
@@ -20,6 +20,7 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <li data-article-id="privacy-attack"><a href="/wiki/privacy-attack/">개인정보 공격</a><span class="wiki-index-summary">개인정보 공격은 모델·출력·기울기·API 응답을 이용해 개인의 참여 여부나 민감한 속성·원본 정보를 추론하려는 공격이다.</span></li>
 <li data-article-id="privacy"><a href="/wiki/privacy/">개인정보 보호</a><span class="wiki-index-summary">AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리와 위험을 관리하는 원칙이다.</span></li>
 <li data-article-id="retrieval-content-trust"><a href="/wiki/retrieval-content-trust/">검색 콘텐츠 신뢰</a><span class="wiki-index-summary">검색 콘텐츠 신뢰는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
+<li data-article-id="korean-high-impact-ai-confirmation"><a href="/wiki/korean-high-impact-ai-confirmation/">고영향 인공지능 확인 절차</a><span class="wiki-index-summary">고영향 인공지능 확인 절차는 사업자가 자사 시스템의 법정 고영향 해당 여부를 정부에 확인 또는 재확인 요청하는 행정 절차다.</span></li>
 <li data-article-id="fairness-metric"><a href="/wiki/fairness-metric/">공정성 지표</a><span class="wiki-index-summary">공정성 지표는 집단 또는 개인 사이의 예측 결과와 오류 차이를 특정 규범 기준으로 수치화한 측정값이다.</span></li>
 <li data-article-id="excessive-agency"><a href="/wiki/excessive-agency/">과도한 자율성</a><span class="wiki-index-summary">과도한 자율성은 AI 시스템에 필요한 범위를 넘는 기능, 권한 또는 독립 실행 능력을 부여해 피해 가능성이 커지는 위험이다.</span></li>
 <li data-article-id="corrigibility"><a href="/wiki/corrigibility/">교정 가능성</a><span class="wiki-index-summary">교정 가능성은 AI 시스템이 사람의 수정, 중단, 목표 변경과 통제 시도를 방해하지 않고 받아들이는 성질이다.</span></li>
@@ -94,6 +95,7 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <li data-article-id="selection-bias"><a href="/wiki/selection-bias/">선택 편향</a><span class="wiki-index-summary">선택 편향은 표본에 포함될 확률이 결과나 관심 변수와 관련되어 모집단 관계가 왜곡되는 현상이다.</span></li>
 <li data-article-id="explainable-ai"><a href="/wiki/explainable-ai/">설명 가능한 AI</a><span class="wiki-index-summary">설명 가능한 AI는 모델의 예측이나 행동을 사람이 이해하고 검토할 수 있는 형태의 이유와 증거로 제시하려는 방법과 연구 분야다.</span></li>
 <li data-article-id="system-card"><a href="/wiki/system-card/">시스템 카드</a><span class="wiki-index-summary">시스템 카드는 개별 모델을 넘어 배포된 AI 시스템의 구성, 능력 평가, 안전 조치와 잔여 위험을 설명하는 문서다.</span></li>
+<li data-article-id="systemic-risk-general-purpose-ai-model"><a href="/wiki/systemic-risk-general-purpose-ai-model/">시스템적 위험 범용 AI 모델</a><span class="wiki-index-summary">시스템적 위험 범용 AI 모델은 고영향 역량이나 위원회 지정으로 EU 차원의 광범위한 위험을 낳을 수 있어 추가 의무가 적용되는 GPAI 모델이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="ko-ng">
@@ -168,6 +170,13 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
 <li data-article-id="training-data-poisoning"><a href="/wiki/training-data-poisoning/">학습 데이터 오염</a><span class="wiki-index-summary">공격자가 학습 데이터에 조작된 사례나 레이블을 섞어 모델의 일반 성능 또는 특정 행동을 훼손하는 공격이다.</span></li>
+<li data-article-id="korean-high-impact-ai"><a href="/wiki/korean-high-impact-ai/">한국 고영향 인공지능</a><span class="wiki-index-summary">한국 고영향 인공지능은 사람의 생명·안전이나 기본권에 중대한 영향을 미칠 우려가 있어 법정 영역과 기준으로 식별하는 인공지능시스템이다.</span></li>
+<li data-article-id="korean-high-impact-ai-operator-duties"><a href="/wiki/korean-high-impact-ai-operator-duties/">한국 고영향 AI 사업자 책무</a><span class="wiki-index-summary">한국 고영향 AI 사업자 책무는 고영향 인공지능 관련 사업자가 위험관리, 설명·보호 조치 등 법정 신뢰성 조치를 이행하는 체계다.</span></li>
+<li data-article-id="korean-ai-basic-act"><a href="/wiki/korean-ai-basic-act/">한국 인공지능기본법</a><span class="wiki-index-summary">한국 인공지능기본법은 인공지능의 발전과 신뢰 기반 조성을 함께 규율하는 한국의 기본 법률이다.</span></li>
+<li data-article-id="korean-ai-safety-duty"><a href="/wiki/korean-ai-safety-duty/">한국 AI 안전성 확보 의무</a><span class="wiki-index-summary">한국 AI 안전성 확보 의무는 법정 누적 연산량 기준 이상 인공지능시스템의 수명주기 위험관리와 안전사고 대응을 요구하는 제도다.</span></li>
+<li data-article-id="korean-ai-impact-assessment"><a href="/wiki/korean-ai-impact-assessment/">한국 AI 영향평가</a><span class="wiki-index-summary">한국 AI 영향평가는 고영향 인공지능이 기본권에 미치는 영향을 사업자가 사전에 구조적으로 평가하고 완화하는 제도다.</span></li>
+<li data-article-id="korean-ai-transparency-duty"><a href="/wiki/korean-ai-transparency-duty/">한국 AI 투명성 확보 의무</a><span class="wiki-index-summary">한국 AI 투명성 확보 의무는 고영향·생성형 인공지능 기반 제품·서비스와 생성 결과물에 대해 법이 정한 고지와 표시를 제공하는 의무다.</span></li>
+<li data-article-id="korean-pii-detection"><a href="/wiki/korean-pii-detection/">한국어 개인정보 탐지</a><span class="wiki-index-summary">한국어 개인정보 탐지는 한국어 문서와 대화에서 직접·간접 식별자를 찾아 위험 수준과 처리 정책에 맞게 분류하는 절차다.</span></li>
 <li data-article-id="acceptable-use-policy"><a href="/wiki/acceptable-use-policy/">허용 사용 정책</a><span class="wiki-index-summary">허용 사용 정책은 AI 서비스에서 허용·제한·금지되는 용도와 위반 시 조치를 이용자에게 알리는 규칙이다.</span></li>
 <li data-article-id="scalable-oversight"><a href="/wiki/scalable-oversight/">확장 가능한 감독</a><span class="wiki-index-summary">확장 가능한 감독은 사람이 직접 완전히 평가하기 어려운 복잡한 AI 행동을 제한된 인간 노력으로 신뢰성 있게 감독하는 방법이다.</span></li>
 <li data-article-id="hallucination"><a href="/wiki/hallucination/">환각</a><span class="wiki-index-summary">모델이 근거가 없거나 사실과 다른 내용을 그럴듯하게 생성하는 현상이다.</span></li>
@@ -177,6 +186,7 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <section class="wiki-index-group" data-index-group="en-a">
 <h2 id="index-en-a">A</h2>
 <ul class="wiki-index-list">
+<li data-article-id="a2a-authentication-delegation"><a href="/wiki/a2a-authentication-delegation/">A2A 인증과 권한 위임</a><span class="wiki-index-summary">A2A 인증과 권한 위임은 클라이언트·사용자·원격 에이전트의 신원을 HTTP 계층에서 확인하고 작업에 필요한 최소 권한만 대상 서비스에 전달하는 보안 경계다.</span></li>
 <li data-article-id="ai-governance"><a href="/wiki/ai-governance/">AI 거버넌스</a><span class="wiki-index-summary">AI의 개발과 사용을 조직의 정책·책임·통제·감사 체계로 관리하는 활동이다.</span></li>
 <li data-article-id="ai-governance-framework"><a href="/wiki/ai-governance-framework/">AI 거버넌스 프레임워크</a><span class="wiki-index-summary">AI 거버넌스 프레임워크는 조직의 AI 의사결정 권한, 정책, 수명주기 통제와 책임 구조를 정한 체계다.</span></li>
 <li data-article-id="ai-attack-surface-map"><a href="/wiki/ai-attack-surface-map/">AI 공격 표면 지도</a><span class="wiki-index-summary">AI 공격 표면 지도는 모델·데이터·도구·운영 계층의 AI 위협 관리와 보안 통제 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
@@ -203,6 +213,21 @@ AI 시스템의 위험을 식별하고 통제하는 방법 분야의 검토 완�
 <li data-article-id="ai-accountability"><a href="/wiki/ai-accountability/">AI 책임성</a><span class="wiki-index-summary">AI 책임성은 AI 관련 결정과 결과에 대해 지정된 주체가 설명하고 통제하며 피해를 시정할 의무를 갖는 원칙이다.</span></li>
 <li data-article-id="ai-control-problem"><a href="/wiki/ai-control-problem/">AI 통제 문제</a><span class="wiki-index-summary">AI 통제 문제는 강력한 AI 시스템이 사람의 의도와 안전 경계 안에서 행동하도록 감시·제한·개입 수단을 설계하는 문제다.</span></li>
 <li data-article-id="ai-interpretability"><a href="/wiki/ai-interpretability/">AI 해석 가능성</a><span class="wiki-index-summary">AI 해석 가능성은 모델의 내부 표현, 계산 과정과 행동 원인을 조사해 의미 있는 설명을 얻을 수 있는 성질과 분석 활동이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-e">
+<h2 id="index-en-e">E</h2>
+<ul class="wiki-index-list">
+<li data-article-id="eu-ai-act-prohibited-practices"><a href="/wiki/eu-ai-act-prohibited-practices/">EU AI Act 금지 관행</a><span class="wiki-index-summary">EU AI Act 금지 관행은 기본권과 안전에 용인할 수 없는 위험을 만드는 특정 AI 개발·출시·사용 행위를 금지하는 규칙이다.</span></li>
+<li data-article-id="eu-ai-literacy-duty"><a href="/wiki/eu-ai-literacy-duty/">EU AI 리터러시 의무</a><span class="wiki-index-summary">EU AI 리터러시 의무는 AI를 운영·사용하는 인력이 역할과 맥락에 맞는 이해와 역량을 갖추도록 조치를 설계하는 규율이다.</span></li>
+<li data-article-id="eu-high-risk-record-keeping"><a href="/wiki/eu-high-risk-record-keeping/">EU 고위험 AI 기록보존</a><span class="wiki-index-summary">EU 고위험 AI 기록보존은 시스템이 수명주기 사건을 자동 기록하고 책임 주체가 요구 기간 동안 추적 가능한 증거를 유지하게 하는 요구사항이다.</span></li>
+<li data-article-id="eu-high-risk-data-governance"><a href="/wiki/eu-high-risk-data-governance/">EU 고위험 AI 데이터 거버넌스</a><span class="wiki-index-summary">EU 고위험 AI 데이터 거버넌스는 학습·검증·시험 데이터의 목적 적합성, 품질, 대표성과 편향 통제를 수명주기 절차로 관리하는 요구사항이다.</span></li>
+<li data-article-id="eu-high-risk-post-market-monitoring"><a href="/wiki/eu-high-risk-post-market-monitoring/">EU 고위험 AI 사후시장 모니터링</a><span class="wiki-index-summary">EU 고위험 AI 사후시장 모니터링은 출시 후 성능·위험·오용·사고 정보를 체계적으로 수집해 지속 준수와 개선에 사용하는 체계다.</span></li>
+<li data-article-id="eu-high-risk-ai-system"><a href="/wiki/eu-high-risk-ai-system/">EU 고위험 AI 시스템</a><span class="wiki-index-summary">EU 고위험 AI 시스템은 제품 안전 구성요소 또는 민감한 이용 사례로 인해 건강·안전·기본권 위험이 큰 것으로 분류되는 AI 시스템이다.</span></li>
+<li data-article-id="eu-high-risk-conformity-assessment"><a href="/wiki/eu-high-risk-conformity-assessment/">EU 고위험 AI 적합성 평가</a><span class="wiki-index-summary">EU 고위험 AI 적합성 평가는 시장 출시·사용 개시 전에 시스템이 AI Act 필수 요구사항을 충족함을 입증하는 절차다.</span></li>
+<li data-article-id="eu-fundamental-rights-impact-assessment"><a href="/wiki/eu-fundamental-rights-impact-assessment/">EU 기본권 영향평가</a><span class="wiki-index-summary">EU 기본권 영향평가(FRIA)는 특정 고위험 AI 배포자가 사용 맥락에서 기본권 영향을 식별·완화하고 감독기관에 알리는 절차다.</span></li>
+<li data-article-id="general-purpose-ai-provider-obligations"><a href="/wiki/general-purpose-ai-provider-obligations/">EU 범용 AI 모델 제공자 의무</a><span class="wiki-index-summary">EU 범용 AI 모델 제공자 의무는 기술 문서, 하류 제공자 정보, 저작권 정책과 학습 콘텐츠 요약을 요구하는 AI Act 규율이다.</span></li>
+<li data-article-id="gpai-code-of-practice"><a href="/wiki/gpai-code-of-practice/">EU 범용 AI 실천강령</a><span class="wiki-index-summary">EU 범용 AI 실천강령은 GPAI 제공자가 AI Act의 투명성·저작권·안전·보안 의무 준수를 입증하도록 돕는 자발적 준수 도구다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-l">

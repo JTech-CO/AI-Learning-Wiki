@@ -3,7 +3,7 @@ title: 용어 색인
 description: AI·LLM 백과 문서 가나다 색인
 ---
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-gg">ㄲ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-c">C</a><a href="#index-en-d">D</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-h">H</a><a href="#index-en-i">I</a><a href="#index-en-j">J</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-n">N</a><a href="#index-en-o">O</a><a href="#index-en-p">P</a><a href="#index-en-q">Q</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a><a href="#index-en-t">T</a><a href="#index-en-u">U</a><a href="#index-en-w">W</a><a href="#index-en-x">X</a><a href="#index-en-y">Y</a><a href="#index-en-z">Z</a><a href="#index-other">기타</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-gg">ㄲ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-c">C</a><a href="#index-en-d">D</a><a href="#index-en-e">E</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-h">H</a><a href="#index-en-i">I</a><a href="#index-en-j">J</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-n">N</a><a href="#index-en-o">O</a><a href="#index-en-p">P</a><a href="#index-en-q">Q</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a><a href="#index-en-t">T</a><a href="#index-en-u">U</a><a href="#index-en-w">W</a><a href="#index-en-x">X</a><a href="#index-en-y">Y</a><a href="#index-en-z">Z</a><a href="#index-other">기타</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
@@ -90,6 +90,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="plan-and-execute"><a href="/wiki/plan-and-execute/">계획 후 실행</a><span class="wiki-en">Plan-and-Execute</span></li>
 <li data-article-id="planner-agent"><a href="/wiki/planner-agent/">계획자 에이전트</a><span class="wiki-en">Planner Agent</span></li>
 <li data-article-id="high-bandwidth-memory"><a href="/wiki/high-bandwidth-memory/">고대역폭 메모리</a><span class="wiki-en">High-Bandwidth Memory</span></li>
+<li data-article-id="korean-high-impact-ai-confirmation"><a href="/wiki/korean-high-impact-ai-confirmation/">고영향 인공지능 확인 절차</a><span class="wiki-en">Korean High-Impact AI Confirmation Procedure</span></li>
 <li data-article-id="eigendecomposition"><a href="/wiki/eigendecomposition/">고유분해</a><span class="wiki-en">Eigendecomposition</span></li>
 <li data-article-id="eigenvalue-eigenvector"><a href="/wiki/eigenvalue-eigenvector/">고윳값과 고유벡터</a><span class="wiki-en">Eigenvalue and Eigenvector</span></li>
 <li data-article-id="good-old-fashioned-ai"><a href="/wiki/good-old-fashioned-ai/">고전적 인공지능</a><span class="wiki-en">Good Old-Fashioned Artificial Intelligence</span></li>
@@ -129,6 +130,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="cross-modal-attention"><a href="/wiki/cross-modal-attention/">교차모달 어텐션</a><span class="wiki-en">Cross-Modal Attention</span></li>
 <li data-article-id="cross-modal-alignment"><a href="/wiki/cross-modal-alignment/">교차모달 정렬</a><span class="wiki-en">Cross-Modal Alignment</span></li>
 <li data-article-id="cross-lingual-embedding"><a href="/wiki/cross-lingual-embedding/">교차언어 임베딩</a><span class="wiki-en">Cross-Lingual Embedding</span></li>
+<li data-article-id="cross-lingual-transfer"><a href="/wiki/cross-lingual-transfer/">교차언어 전이</a><span class="wiki-en">Cross-Lingual Transfer</span></li>
 <li data-article-id="span-corruption"><a href="/wiki/span-corruption/">구간 손상 복원</a><span class="wiki-en">Span Corruption</span></li>
 <li data-article-id="passage-retrieval"><a href="/wiki/passage-retrieval/">구절 검색</a><span class="wiki-en">Passage Retrieval</span></li>
 <li data-article-id="structured-output"><a href="/wiki/structured-output/">구조화 출력</a><span class="wiki-en">Structured Output</span></li>
@@ -201,6 +203,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <ul class="wiki-index-list">
 <li data-article-id="multilingual-capability"><a href="/wiki/multilingual-capability/">다국어 능력</a><span class="wiki-en">Multilingual Capability</span></li>
 <li data-article-id="multilingual-language-model"><a href="/wiki/multilingual-language-model/">다국어 언어 모델</a><span class="wiki-en">Multilingual Language Model</span></li>
+<li data-article-id="multilingual-token-fertility"><a href="/wiki/multilingual-token-fertility/">다국어 토큰 분절률</a><span class="wiki-en">Multilingual Token Fertility</span></li>
 <li data-article-id="multilingual-evaluation-protocol"><a href="/wiki/multilingual-evaluation-protocol/">다국어 평가 프로토콜</a><span class="wiki-en">Multilingual Evaluation Protocol</span></li>
 <li data-article-id="multivariable-calculus"><a href="/wiki/multivariable-calculus/">다변수 미적분학</a><span class="wiki-en">Multivariable Calculus</span></li>
 <li data-article-id="diverse-beam-search"><a href="/wiki/diverse-beam-search/">다양성 빔 탐색</a><span class="wiki-en">Diverse Beam Search</span></li>
@@ -692,6 +695,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="system-card"><a href="/wiki/system-card/">시스템 카드</a><span class="wiki-en">System Card</span></li>
 <li data-article-id="system-prompt"><a href="/wiki/system-prompt/">시스템 프롬프트</a><span class="wiki-en">System Prompt</span></li>
 <li data-article-id="system-prompt-composition"><a href="/wiki/system-prompt-composition/">시스템 프롬프트 합성</a><span class="wiki-en">System Prompt Composition</span></li>
+<li data-article-id="systemic-risk-general-purpose-ai-model"><a href="/wiki/systemic-risk-general-purpose-ai-model/">시스템적 위험 범용 AI 모델</a><span class="wiki-en">General-Purpose AI Model with Systemic Risk</span></li>
 <li data-article-id="beginning-end-token"><a href="/wiki/beginning-end-token/">시작·종료 토큰</a><span class="wiki-en">Beginning and End Token</span></li>
 <li data-article-id="sequence-classification-fine-tuning"><a href="/wiki/sequence-classification-fine-tuning/">시퀀스 분류 미세조정</a><span class="wiki-en">Sequence Classification Fine-Tuning</span></li>
 <li data-article-id="sequence-likelihood"><a href="/wiki/sequence-likelihood/">시퀀스 우도</a><span class="wiki-en">Sequence Likelihood</span></li>
@@ -773,6 +777,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="energy-based-model"><a href="/wiki/energy-based-model/">에너지 기반 모델</a><span class="wiki-en">Energy-Based Model</span></li>
 <li data-article-id="agent-guardrail"><a href="/wiki/agent-guardrail/">에이전트 가드레일</a><span class="wiki-en">Agent Guardrail</span></li>
 <li data-article-id="inter-agent-communication"><a href="/wiki/inter-agent-communication/">에이전트 간 통신</a><span class="wiki-en">Inter-Agent Communication</span></li>
+<li data-article-id="a2a-protocol"><a href="/wiki/a2a-protocol/">에이전트 간 프로토콜</a><span class="wiki-en">Agent2Agent Protocol</span></li>
 <li data-article-id="agent-plan-quality"><a href="/wiki/agent-plan-quality/">에이전트 계획 품질</a><span class="wiki-en">Agent Plan Quality</span></li>
 <li data-article-id="agent-task-decomposition"><a href="/wiki/agent-task-decomposition/">에이전트 과제 분해</a><span class="wiki-en">Agent Task Decomposition</span></li>
 <li data-article-id="agent-task-success"><a href="/wiki/agent-task-success/">에이전트 과제 성공률</a><span class="wiki-en">Agent Task Success</span></li>
@@ -793,6 +798,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="agent-idempotency"><a href="/wiki/agent-idempotency/">에이전트 멱등성</a><span class="wiki-en">Agent Idempotency</span></li>
 <li data-article-id="agent-goal"><a href="/wiki/agent-goal/">에이전트 목표</a><span class="wiki-en">Agent Goal</span></li>
 <li data-article-id="agent-context-handoff"><a href="/wiki/agent-context-handoff/">에이전트 문맥 핸드오프</a><span class="wiki-en">Agent Context Handoff</span></li>
+<li data-article-id="agent-discovery"><a href="/wiki/agent-discovery/">에이전트 발견</a><span class="wiki-en">Agent Discovery</span></li>
 <li data-article-id="agent-benchmark"><a href="/wiki/agent-benchmark/">에이전트 벤치마크</a><span class="wiki-en">Agent Benchmark</span></li>
 <li data-article-id="agent-compensation-transaction"><a href="/wiki/agent-compensation-transaction/">에이전트 보상 트랜잭션</a><span class="wiki-en">Agent Compensation Transaction</span></li>
 <li data-article-id="agent-security"><a href="/wiki/agent-security/">에이전트 보안</a><span class="wiki-en">Agent Security</span></li>
@@ -825,6 +831,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="agent-least-privilege"><a href="/wiki/agent-least-privilege/">에이전트 최소 권한</a><span class="wiki-en">Agent Least Privilege</span></li>
 <li data-article-id="agent-trace-evaluation"><a href="/wiki/agent-trace-evaluation/">에이전트 추적 평가</a><span class="wiki-en">Agent Trace Evaluation</span></li>
 <li data-article-id="agent-canary-run"><a href="/wiki/agent-canary-run/">에이전트 카나리 실행</a><span class="wiki-en">Agent Canary Run</span></li>
+<li data-article-id="agent-card"><a href="/wiki/agent-card/">에이전트 카드</a><span class="wiki-en">Agent Card</span></li>
 <li data-article-id="agent-chaos-testing"><a href="/wiki/agent-chaos-testing/">에이전트 카오스 테스트</a><span class="wiki-en">Agent Chaos Testing</span></li>
 <li data-article-id="agent-evaluation"><a href="/wiki/agent-evaluation/">에이전트 평가</a><span class="wiki-en">Agent Evaluation</span></li>
 <li data-article-id="agent-harness"><a href="/wiki/agent-harness/">에이전트 하네스</a><span class="wiki-en">Agent Harness</span></li>
@@ -1401,6 +1408,24 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="learning-rate-schedule"><a href="/wiki/learning-rate-schedule/">학습률 스케줄</a><span class="wiki-en">Learning Rate Schedule</span></li>
 <li data-article-id="learning-rate-warmup"><a href="/wiki/learning-rate-warmup/">학습률 워밍업</a><span class="wiki-en">Learning Rate Warmup</span></li>
 <li data-article-id="learned-position-embedding"><a href="/wiki/learned-position-embedding/">학습형 위치 임베딩</a><span class="wiki-en">Learned Position Embedding</span></li>
+<li data-article-id="korean-high-impact-ai"><a href="/wiki/korean-high-impact-ai/">한국 고영향 인공지능</a><span class="wiki-en">Korean High-Impact AI</span></li>
+<li data-article-id="korean-high-impact-ai-operator-duties"><a href="/wiki/korean-high-impact-ai-operator-duties/">한국 고영향 AI 사업자 책무</a><span class="wiki-en">Korean High-Impact AI Operator Duties</span></li>
+<li data-article-id="korean-ai-basic-act"><a href="/wiki/korean-ai-basic-act/">한국 인공지능기본법</a><span class="wiki-en">Korean AI Basic Act</span></li>
+<li data-article-id="korean-ai-safety-duty"><a href="/wiki/korean-ai-safety-duty/">한국 AI 안전성 확보 의무</a><span class="wiki-en">Korean AI Safety Duty</span></li>
+<li data-article-id="korean-ai-impact-assessment"><a href="/wiki/korean-ai-impact-assessment/">한국 AI 영향평가</a><span class="wiki-en">Korean AI Impact Assessment</span></li>
+<li data-article-id="korean-ai-transparency-duty"><a href="/wiki/korean-ai-transparency-duty/">한국 AI 투명성 확보 의무</a><span class="wiki-en">Korean AI Transparency Duty</span></li>
+<li data-article-id="korean-pii-detection"><a href="/wiki/korean-pii-detection/">한국어 개인정보 탐지</a><span class="wiki-en">Korean PII Detection</span></li>
+<li data-article-id="korean-named-entity-recognition"><a href="/wiki/korean-named-entity-recognition/">한국어 개체명 인식</a><span class="wiki-en">Korean Named Entity Recognition</span></li>
+<li data-article-id="korean-honorifics-and-speech-acts"><a href="/wiki/korean-honorifics-and-speech-acts/">한국어 높임말과 화행</a><span class="wiki-en">Korean Honorifics and Speech Acts</span></li>
+<li data-article-id="korean-word-spacing-variation"><a href="/wiki/korean-word-spacing-variation/">한국어 띄어쓰기 변이</a><span class="wiki-en">Korean Word-Spacing Variation</span></li>
+<li data-article-id="korean-sentence-segmentation"><a href="/wiki/korean-sentence-segmentation/">한국어 문장 분할</a><span class="wiki-en">Korean Sentence Segmentation</span></li>
+<li data-article-id="korean-dialect-robustness"><a href="/wiki/korean-dialect-robustness/">한국어 방언 강건성</a><span class="wiki-en">Korean Dialect Robustness</span></li>
+<li data-article-id="korean-language-identification"><a href="/wiki/korean-language-identification/">한국어 언어 식별</a><span class="wiki-en">Korean Language Identification</span></li>
+<li data-article-id="korean-output-language-alignment"><a href="/wiki/korean-output-language-alignment/">한국어 출력 언어 정렬</a><span class="wiki-en">Korean Output Language Alignment</span></li>
+<li data-article-id="korean-tokenization"><a href="/wiki/korean-tokenization/">한국어 토큰화</a><span class="wiki-en">Korean Tokenization</span></li>
+<li data-article-id="korean-morphological-analysis"><a href="/wiki/korean-morphological-analysis/">한국어 형태소 분석</a><span class="wiki-en">Korean Morphological Analysis</span></li>
+<li data-article-id="korean-english-code-switching"><a href="/wiki/korean-english-code-switching/">한국어·영어 코드 스위칭</a><span class="wiki-en">Korean-English Code-Switching</span></li>
+<li data-article-id="hangul-unicode-normalization"><a href="/wiki/hangul-unicode-normalization/">한글 유니코드 정규화</a><span class="wiki-en">Hangul Unicode Normalization</span></li>
 <li data-article-id="function-calling"><a href="/wiki/function-calling/">함수 호출</a><span class="wiki-en">Function Calling</span></li>
 <li data-article-id="synthetic-data"><a href="/wiki/synthetic-data/">합성 데이터</a><span class="wiki-en">Synthetic Data</span></li>
 <li data-article-id="convolutional-neural-network"><a href="/wiki/convolutional-neural-network/">합성곱 신경망</a><span class="wiki-en">Convolutional Neural Network</span></li>
@@ -1456,6 +1481,18 @@ description: AI·LLM 백과 문서 가나다 색인
 <section class="wiki-index-group" data-index-group="en-a">
 <h2 id="index-en-a">A</h2>
 <ul class="wiki-index-list">
+<li data-article-id="a2a-observability"><a href="/wiki/a2a-observability/">A2A 관측성</a><span class="wiki-en">A2A Observability</span></li>
+<li data-article-id="a2a-capability-negotiation"><a href="/wiki/a2a-capability-negotiation/">A2A 기능 협상</a><span class="wiki-en">A2A Capability Negotiation</span></li>
+<li data-article-id="a2a-message"><a href="/wiki/a2a-message/">A2A 메시지</a><span class="wiki-en">A2A Message</span></li>
+<li data-article-id="a2a-version-negotiation"><a href="/wiki/a2a-version-negotiation/">A2A 버전 협상</a><span class="wiki-en">A2A Version Negotiation</span></li>
+<li data-article-id="a2a-artifact"><a href="/wiki/a2a-artifact/">A2A 산출물</a><span class="wiki-en">A2A Artifact</span></li>
+<li data-article-id="a2a-authentication-delegation"><a href="/wiki/a2a-authentication-delegation/">A2A 인증과 권한 위임</a><span class="wiki-en">A2A Authentication and Delegation</span></li>
+<li data-article-id="a2a-task-lifecycle"><a href="/wiki/a2a-task-lifecycle/">A2A 작업 수명 주기</a><span class="wiki-en">A2A Task Lifecycle</span></li>
+<li data-article-id="a2a-conformance-testing"><a href="/wiki/a2a-conformance-testing/">A2A 적합성 시험</a><span class="wiki-en">A2A Conformance Testing</span></li>
+<li data-article-id="a2a-content-part"><a href="/wiki/a2a-content-part/">A2A 콘텐츠 파트</a><span class="wiki-en">A2A Content Part</span></li>
+<li data-article-id="a2a-push-notification"><a href="/wiki/a2a-push-notification/">A2A 푸시 알림</a><span class="wiki-en">A2A Push Notification</span></li>
+<li data-article-id="a2a-protocol-gateway"><a href="/wiki/a2a-protocol-gateway/">A2A 프로토콜 게이트웨이</a><span class="wiki-en">A2A Protocol Gateway</span></li>
+<li data-article-id="a2a-protocol-binding"><a href="/wiki/a2a-protocol-binding/">A2A 프로토콜 바인딩</a><span class="wiki-en">A2A Protocol Binding</span></li>
 <li data-article-id="adagrad"><a href="/wiki/adagrad/">AdaGrad</a><span class="wiki-en">AdaGrad</span></li>
 <li data-article-id="adam-optimizer"><a href="/wiki/adam-optimizer/">Adam 최적화</a><span class="wiki-en">Adam Optimizer</span></li>
 <li data-article-id="adamw"><a href="/wiki/adamw/">AdamW</a><span class="wiki-en">AdamW</span></li>
@@ -1569,6 +1606,21 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="dpo-beta-selection"><a href="/wiki/dpo-beta-selection/">DPO 베타 선택</a><span class="wiki-en">DPO Beta Selection</span></li>
 </ul>
 </section>
+<section class="wiki-index-group" data-index-group="en-e">
+<h2 id="index-en-e">E</h2>
+<ul class="wiki-index-list">
+<li data-article-id="eu-ai-act-prohibited-practices"><a href="/wiki/eu-ai-act-prohibited-practices/">EU AI Act 금지 관행</a><span class="wiki-en">EU AI Act Prohibited Practices</span></li>
+<li data-article-id="eu-ai-literacy-duty"><a href="/wiki/eu-ai-literacy-duty/">EU AI 리터러시 의무</a><span class="wiki-en">EU AI Literacy Duty</span></li>
+<li data-article-id="eu-high-risk-record-keeping"><a href="/wiki/eu-high-risk-record-keeping/">EU 고위험 AI 기록보존</a><span class="wiki-en">EU High-Risk AI Record-Keeping</span></li>
+<li data-article-id="eu-high-risk-data-governance"><a href="/wiki/eu-high-risk-data-governance/">EU 고위험 AI 데이터 거버넌스</a><span class="wiki-en">EU High-Risk AI Data Governance</span></li>
+<li data-article-id="eu-high-risk-post-market-monitoring"><a href="/wiki/eu-high-risk-post-market-monitoring/">EU 고위험 AI 사후시장 모니터링</a><span class="wiki-en">EU High-Risk AI Post-Market Monitoring</span></li>
+<li data-article-id="eu-high-risk-ai-system"><a href="/wiki/eu-high-risk-ai-system/">EU 고위험 AI 시스템</a><span class="wiki-en">EU High-Risk AI System</span></li>
+<li data-article-id="eu-high-risk-conformity-assessment"><a href="/wiki/eu-high-risk-conformity-assessment/">EU 고위험 AI 적합성 평가</a><span class="wiki-en">EU High-Risk AI Conformity Assessment</span></li>
+<li data-article-id="eu-fundamental-rights-impact-assessment"><a href="/wiki/eu-fundamental-rights-impact-assessment/">EU 기본권 영향평가</a><span class="wiki-en">EU Fundamental Rights Impact Assessment</span></li>
+<li data-article-id="general-purpose-ai-provider-obligations"><a href="/wiki/general-purpose-ai-provider-obligations/">EU 범용 AI 모델 제공자 의무</a><span class="wiki-en">EU General-Purpose AI Model Provider Obligations</span></li>
+<li data-article-id="gpai-code-of-practice"><a href="/wiki/gpai-code-of-practice/">EU 범용 AI 실천강령</a><span class="wiki-en">EU General-Purpose AI Code of Practice</span></li>
+</ul>
+</section>
 <section class="wiki-index-group" data-index-group="en-f">
 <h2 id="index-en-f">F</h2>
 <ul class="wiki-index-list">
@@ -1637,6 +1689,10 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="k-means-clustering"><a href="/wiki/k-means-clustering/">K-평균 군집화</a><span class="wiki-en">K-Means Clustering</span></li>
 <li data-article-id="keras"><a href="/wiki/keras/">Keras</a><span class="wiki-en">Keras</span></li>
 <li data-article-id="kl-penalty"><a href="/wiki/kl-penalty/">KL 페널티</a><span class="wiki-en">KL Penalty</span></li>
+<li data-article-id="klue"><a href="/wiki/klue/">KLUE</a><span class="wiki-en">Korean Language Understanding Evaluation</span></li>
+<li data-article-id="kmmlu"><a href="/wiki/kmmlu/">KMMLU</a><span class="wiki-en">Korean Massive Multitask Language Understanding</span></li>
+<li data-article-id="ko-h5-benchmark"><a href="/wiki/ko-h5-benchmark/">Ko-H5 벤치마크</a><span class="wiki-en">Ko-H5 Benchmark</span></li>
+<li data-article-id="korquad"><a href="/wiki/korquad/">KorQuAD</a><span class="wiki-en">Korean Question Answering Dataset</span></li>
 <li data-article-id="kv-cache"><a href="/wiki/kv-cache/">KV 캐시</a><span class="wiki-en">Key-Value Cache</span></li>
 <li data-article-id="kv-cache-isolation"><a href="/wiki/kv-cache-isolation/">KV 캐시 격리</a><span class="wiki-en">KV-cache Isolation</span></li>
 <li data-article-id="kv-cache-tiering"><a href="/wiki/kv-cache-tiering/">KV 캐시 계층화</a><span class="wiki-en">KV Cache Tiering</span></li>
@@ -1695,6 +1751,7 @@ description: AI·LLM 백과 문서 가나다 색인
 <li data-article-id="mcp-client"><a href="/wiki/mcp-client/">MCP 클라이언트</a><span class="wiki-en">MCP Client</span></li>
 <li data-article-id="mcp-prompts"><a href="/wiki/mcp-prompts/">MCP 프롬프트</a><span class="wiki-en">MCP Prompts</span></li>
 <li data-article-id="mcp-host"><a href="/wiki/mcp-host/">MCP 호스트</a><span class="wiki-en">MCP Host</span></li>
+<li data-article-id="mcp-a2a-boundary"><a href="/wiki/mcp-a2a-boundary/">MCP와 A2A의 경계</a><span class="wiki-en">MCP and A2A Boundary</span></li>
 <li data-article-id="meteor-score"><a href="/wiki/meteor-score/">METEOR 점수</a><span class="wiki-en">METEOR Score</span></li>
 <li data-article-id="mime-type"><a href="/wiki/mime-type/">MIME 유형</a><span class="wiki-en">MIME Type</span></li>
 <li data-article-id="min-p-sampling"><a href="/wiki/min-p-sampling/">Min-p 샘플링</a><span class="wiki-en">Min-P Sampling</span></li>

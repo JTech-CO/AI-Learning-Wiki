@@ -118,10 +118,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [안전 보증 논증](/wiki/safety-assurance-argument/)
 - [안전 예외 처리 절차](/wiki/safety-exception-process/)
+- [한국 AI 안전성 확보 의무](/wiki/korean-ai-safety-duty/)
+- [EU 고위험 AI 적합성 평가](/wiki/eu-high-risk-conformity-assessment/)
+- [EU 범용 AI 실천강령](/wiki/gpai-code-of-practice/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +139,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **AI 규제와 리터러시:** [다음 문서 — EU 고위험 AI 사후시장 모니터링](/wiki/eu-high-risk-post-market-monitoring/)

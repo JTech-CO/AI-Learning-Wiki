@@ -128,10 +128,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [모델 컨텍스트 프로토콜](/wiki/mcp/)
 - [인간 참여형 제어](/wiki/human-in-the-loop/)
+- [A2A 푸시 알림](/wiki/a2a-push-notification/)
 
 ### 이 문서를 포함하는 코스
 
-[AI 에이전트 시스템](/course/agent-systems/)
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 ## 참고와 다음 학습
 
@@ -147,4 +148,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — 스트리밍 응답 계약](/wiki/streaming-response-contract/)
 - **AI 에이전트 시스템:** [다음 문서 — 모델 컨텍스트 프로토콜](/wiki/mcp/)

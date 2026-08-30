@@ -16,6 +16,9 @@ const additionalCourses = [
   { id: 'model-service-ecosystem', title: '모델·서비스 생태계' },
   { id: 'production-ai-api-systems', title: '프로덕션 AI API 시스템' },
   { id: 'data-training-pipelines', title: '데이터·학습 파이프라인' },
+  { id: 'korean-multilingual-ai', title: '한국어·다국어 AI' },
+  { id: 'ai-regulation-literacy', title: 'AI 규제와 리터러시' },
+  { id: 'agent-interoperability', title: '에이전트 상호운용과 실행 계약' },
 ];
 const showAdditionalCourses = additionalCourses.some((course) => Astro.url.pathname.includes(`/course/${course.id}/`));
 ---

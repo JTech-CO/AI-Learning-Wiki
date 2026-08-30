@@ -1,0 +1,198 @@
+{
+  "id": "korean-multilingual-ai",
+  "title": "한국어·다국어 AI",
+  "audience": "한국어와 다국어 AI의 데이터·토큰화·평가·안전성을 설계하고 검증하려는 개발자와 연구자",
+  "description": "한글 표현과 한국어 형태·화용 처리에서 교차언어 전이, 개인정보, 코드 스위칭과 한국어 벤치마크까지 연결한 전문 학습 과정이다.",
+  "level": "professional",
+  "prerequisiteCourses": [
+    "llm-internals",
+    "model-training"
+  ],
+  "steps": [
+    {
+      "ref": "language-model",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "large-language-model",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "tokenization",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "tokenizer",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "character-tokenization",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "byte-level-tokenization",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "byte-pair-encoding",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "unigram-language-model-tokenizer",
+      "required": true,
+      "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다."
+    },
+    {
+      "ref": "hangul-unicode-normalization",
+      "required": true,
+      "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다."
+    },
+    {
+      "ref": "sentence-segmentation",
+      "required": true,
+      "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다."
+    },
+    {
+      "ref": "korean-sentence-segmentation",
+      "required": true,
+      "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다."
+    },
+    {
+      "ref": "korean-word-spacing-variation",
+      "required": true,
+      "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다."
+    },
+    {
+      "ref": "korean-morphological-analysis",
+      "required": true,
+      "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다."
+    },
+    {
+      "ref": "korean-tokenization",
+      "required": true,
+      "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다."
+    },
+    {
+      "ref": "training-corpus",
+      "required": true,
+      "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다."
+    },
+    {
+      "ref": "masked-language-model",
+      "required": true,
+      "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다."
+    },
+    {
+      "ref": "multilingual-language-model",
+      "required": true,
+      "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다."
+    },
+    {
+      "ref": "multilingual-capability",
+      "required": true,
+      "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다."
+    },
+    {
+      "ref": "cross-lingual-embedding",
+      "required": true,
+      "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다."
+    },
+    {
+      "ref": "transfer-learning",
+      "required": true,
+      "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다."
+    },
+    {
+      "ref": "cross-lingual-transfer",
+      "required": true,
+      "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다."
+    },
+    {
+      "ref": "korean-language-identification",
+      "required": true,
+      "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다."
+    },
+    {
+      "ref": "multilingual-token-fertility",
+      "required": true,
+      "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다."
+    },
+    {
+      "ref": "korean-honorifics-and-speech-acts",
+      "required": true,
+      "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다."
+    },
+    {
+      "ref": "korean-named-entity-recognition",
+      "required": true,
+      "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다."
+    },
+    {
+      "ref": "personally-identifiable-information",
+      "required": true,
+      "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다."
+    },
+    {
+      "ref": "korean-pii-detection",
+      "required": true,
+      "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다."
+    },
+    {
+      "ref": "korean-english-code-switching",
+      "required": true,
+      "reason": "혼용 입력과 출력 언어·방언 강건성을 실제 사용 맥락에서 평가한다."
+    },
+    {
+      "ref": "korean-output-language-alignment",
+      "required": true,
+      "reason": "혼용 입력과 출력 언어·방언 강건성을 실제 사용 맥락에서 평가한다."
+    },
+    {
+      "ref": "korean-dialect-robustness",
+      "required": true,
+      "reason": "혼용 입력과 출력 언어·방언 강건성을 실제 사용 맥락에서 평가한다."
+    },
+    {
+      "ref": "benchmark",
+      "required": true,
+      "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다."
+    },
+    {
+      "ref": "benchmark-contamination",
+      "required": true,
+      "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다."
+    },
+    {
+      "ref": "multilingual-evaluation-protocol",
+      "required": true,
+      "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다."
+    },
+    {
+      "ref": "klue",
+      "required": true,
+      "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다."
+    },
+    {
+      "ref": "korquad",
+      "required": false,
+      "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다."
+    },
+    {
+      "ref": "kmmlu",
+      "required": false,
+      "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다."
+    },
+    {
+      "ref": "ko-h5-benchmark",
+      "required": false,
+      "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다."
+    }
+  ]
+}

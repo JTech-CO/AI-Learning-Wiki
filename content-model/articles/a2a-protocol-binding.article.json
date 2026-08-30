@@ -1,0 +1,133 @@
+{
+  "id": "a2a-protocol-binding",
+  "title": "A2A 프로토콜 바인딩",
+  "englishTitle": "A2A Protocol Binding",
+  "aliases": [
+    "A2A Binding",
+    "A2A Transport Binding"
+  ],
+  "summary": "A2A 프로토콜 바인딩은 추상 A2A 연산과 데이터 모델을 JSON-RPC, gRPC, HTTP+JSON/REST 같은 구체적 전송·직렬화 규칙에 매핑하는 계약이다.",
+  "sections": [
+    {
+      "id": "definition",
+      "title": "정의와 적용 경계",
+      "body": "A2A 프로토콜 바인딩은 Send Message, Get Task, Cancel Task 같은 추상 연산을 특정 전송의 메서드·경로·헤더·오류·스트림으로 표현한다. 1.0 사양은 JSON-RPC, gRPC, HTTP+JSON/REST 표준 바인딩을 제공하고 Agent Card의 supportedInterfaces에서 엔드포인트와 함께 선언한다. 바인딩을 바꿔도 데이터 모델과 작업 의미는 변하지 않아야 한다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "protocol-model",
+      "title": "프로토콜 객체와 계약",
+      "body": "정본 protobuf 유형은 각 바인딩의 직렬화 모델로 변환된다. JSON은 camelCase 필드, 시간·열거·바이트 매핑을 따라야 하며 오류는 전송 고유 코드와 A2A 오류 의미를 함께 보존한다. 스트리밍은 바인딩별 전달 기법이 달라도 이벤트 순서, 상태·Artifact 갱신과 종료 신호가 동등해야 한다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "interaction-flow",
+      "title": "상호작용 흐름",
+      "body": "클라이언트는 Agent Card의 supportedInterfaces를 순서대로 읽어 구현 가능한 protocolBinding과 protocolVersion을 선택한다. 요청마다 A2A-Version 등 서비스 매개변수를 전송 방식에 맞게 전달하고 응답을 공통 객체로 역직렬화한다. 연결 실패를 다른 바인딩으로 전환할 때 중복 Message·Task 생성 가능성을 평가한 뒤 같은 호출을 재실행한다.",
+      "sourceRefs": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "security-failures",
+      "title": "실패·보안 경계",
+      "body": "바인딩 변환기가 인증 헤더, trace context, 테넌트 식별자나 콘텐츠 크기 제한을 누락하면 같은 프로토콜이라도 보안 의미가 달라진다. 커스텀 바인딩은 자격 증명 전달, 오류 노출, 프레이밍, 백프레셔와 재연결 규칙을 명시해야 한다. 암호화되지 않은 대체 전송으로 자동 하향하지 않는다.",
+      "sourceRefs": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "implementation-validation",
+      "title": "구현과 검증",
+      "body": "동일 논리 요청을 각 바인딩으로 보내 Task·Message·Artifact와 오류 결과를 비교하는 교차 바인딩 시험을 만든다. 열거값, 빈 선택 필드, 대용량 raw Part, 취소, 스트림 재연결, 알 수 없는 필드와 버전 오류를 포함한다. 커스텀 바인딩은 핵심 연산 전체를 지원하거나 제한을 카드에 명확히 광고해야 한다.",
+      "sourceRefs": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "distinctions",
+      "title": "인접 개념과의 구분",
+      "body": "바인딩은 같은 A2A 의미를 운반하는 방법이고 Extension은 기존 바인딩 위에서 데이터·연산·상태 의미를 확장한다. 전송 프로토콜만 같다고 바인딩이 호환되는 것은 아니며 직렬화와 오류·스트림 의미까지 맞아야 한다. API 게이트웨이는 여러 바인딩을 중개할 수 있지만 그 자체가 새로운 표준 바인딩은 아니다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "binding-example",
+      "title": "REST와 gRPC 비교 사례",
+      "body": "동일 Send Message를 REST와 gRPC로 구현할 때 클라이언트가 보는 Message·Task oneof 결과와 오류 의미는 같아야 한다. REST는 HTTP 경로·메서드·JSON 상태 코드 매핑을 사용하고 gRPC는 서비스 메서드·protobuf와 gRPC 상태를 사용한다. raw Part의 바이트 표현, 타임스탬프, 열거값과 알 수 없는 필드 처리도 정본 protobuf와 일치시킨다. 서버 스트리밍이 중간 Artifact와 상태 갱신을 보내면 두 바인딩 모두 생성 순서를 보존하고 터미널 상태에서 끝나야 한다. REST 프록시가 빈 필드를 제거하거나 gRPC 게이트웨이가 오류 세부를 바꿨다면 객체 모양뿐 아니라 클라이언트 복구 결정이 달라지는지 확인한다. 같은 golden Task로 결과 해시를 비교한다.",
+      "sourceRefs": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "custom-binding-review",
+      "title": "커스텀 바인딩 검토 항목",
+      "body": "WebSocket이나 MQTT 같은 커스텀 바인딩을 제안하려면 모든 추상 연산의 매핑, 데이터 유형·바이트·시간 표현, 서비스 매개변수, 인증 자격 전달, 오류 코드, 순서와 재연결·완료 의미를 명세한다. Agent Card에는 전역 고유 URI의 protocolBinding과 버전, endpoint를 선언하고 표준 바인딩과 의도적인 차이를 공개한다. 구현은 빈 값, 대용량 Part, backpressure, 네트워크 분할, 중복 프레임과 인증 갱신을 시험한다. 공식 URI처럼 보이는 사설 식별자를 만들거나 실험 바인딩을 기본 활성화하지 않는다. 핵심 데이터 모델을 운반하지 못하는 제한은 임의 확장으로 숨기지 말고 상호운용 불가 조건으로 명시한다. 참조 구현과 샘플 캡처를 제공해 제3자가 재현할 수 있게 한다. 바인딩 URI의 버전과 wire 버전, 구현 패키지 버전을 혼용하지 않고 각각 기록한다. 중개 프록시가 헤더나 메타데이터 크기를 제한할 때 서비스 매개변수가 잘려도 조용히 실행되지 않게 오류를 정의한다. 표준 바인딩과 커스텀 바인딩의 지원 범위를 카드에서 별도 항목으로 검증한다.",
+      "sourceRefs": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "learning-check",
+      "title": "학습 체크",
+      "body": "- 추상 연산과 전송 바인딩을 구분할 수 있는가?\n- 교차 바인딩 적합성 시험에서 비교할 항목을 열거할 수 있는가?\n- 커스텀 바인딩이 인증·오류·스트리밍을 정의해야 하는 이유를 설명할 수 있는가?"
+    }
+  ],
+  "categories": [
+    "agents",
+    "api"
+  ],
+  "prerequisites": [
+    "a2a-protocol"
+  ],
+  "related": [
+    "a2a-capability-negotiation",
+    "a2a-version-negotiation",
+    "streaming-response-contract",
+    "a2a-protocol-gateway"
+  ],
+  "sources": [
+    {
+      "title": "Agent2Agent Protocol Specification 1.0",
+      "url": "https://a2a-protocol.org/latest/specification/",
+      "type": "standard"
+    },
+    {
+      "title": "A2A Normative Protocol Buffer Definition",
+      "url": "https://github.com/a2aproject/A2A/blob/main/specification/a2a.proto",
+      "type": "specification"
+    },
+    {
+      "title": "A2A Custom Protocol Bindings",
+      "url": "https://a2a-protocol.org/latest/topics/custom-protocol-bindings/",
+      "type": "documentation"
+    },
+    {
+      "title": "A2A Extension and Protocol Binding Governance",
+      "url": "https://a2a-protocol.org/latest/topics/extension-and-binding-governance/",
+      "type": "documentation"
+    },
+    {
+      "title": "A2A Core Concepts",
+      "url": "https://a2a-protocol.org/latest/topics/key-concepts/",
+      "type": "documentation"
+    }
+  ],
+  "status": "reviewed",
+  "volatility": "fast-changing",
+  "reviewedAt": "2026-08-30"
+}

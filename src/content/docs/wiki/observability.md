@@ -130,11 +130,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [정밀도와 재현율](/wiki/precision-recall/)
 - [추적](/wiki/tracing/)
+- [A2A 관측성](/wiki/a2a-observability/)
+- [EU 고위험 AI 사후시장 모니터링](/wiki/eu-high-risk-post-market-monitoring/)
 - [LLM 심사자](/wiki/llm-as-a-judge/)
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 에이전트 시스템](/course/agent-systems/) · [AI API 개발](/course/api-development/) · [LLM 평가와 관측성](/course/llm-evaluation/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [에이전트 상호운용과 실행 계약](/course/agent-interoperability/) · [AI 에이전트 시스템](/course/agent-systems/) · [AI API 개발](/course/api-development/) · [LLM 평가와 관측성](/course/llm-evaluation/)
 
 ## 참고와 다음 학습
 
@@ -153,6 +155,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — 환각](/wiki/hallucination/)
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — A2A 관측성](/wiki/a2a-observability/)
 - **AI 에이전트 시스템:** [코스 목록으로 돌아가기](/course/agent-systems/)
 - **AI API 개발:** [다음 문서 — 추적](/wiki/tracing/)
 - **LLM 평가와 관측성:** [다음 문서 — LLM 평가 계약](/wiki/llm-evaluation-contract/)

@@ -124,11 +124,12 @@ AI 위험 대장은 식별된 위험의 원인, 영향, 가능성, 통제, 책�
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [한국 AI 안전성 확보 의무](/wiki/korean-ai-safety-duty/)
+- [EU 고위험 AI 사후시장 모니터링](/wiki/eu-high-risk-post-market-monitoring/)
 
 ### 이 문서를 포함하는 코스
 
-[AI 보안과 레드팀](/course/ai-security-redteam/)
+[AI 규제와 리터러시](/course/ai-regulation-literacy/) · [AI 보안과 레드팀](/course/ai-security-redteam/)
 
 ## 참고와 다음 학습
 
@@ -146,4 +147,5 @@ _해당 문서가 없다._
 
 ### 코스에서 계속 읽기
 
+- **AI 규제와 리터러시:** [다음 문서 — 한국 고영향 AI 사업자 책무](/wiki/korean-high-impact-ai-operator-duties/)
 - **AI 보안과 레드팀:** [다음 문서 — AI 레드팀 평가](/wiki/ai-red-teaming/)

@@ -124,11 +124,14 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [교차언어 전이](/wiki/cross-lingual-transfer/)
+- [다국어 토큰 분절률](/wiki/multilingual-token-fertility/)
+- [한국어 언어 식별](/wiki/korean-language-identification/)
+- [한국어·영어 코드 스위칭](/wiki/korean-english-code-switching/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[한국어·다국어 AI](/course/korean-multilingual-ai/)
 
 ## 참고와 다음 학습
 
@@ -147,4 +150,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **한국어·다국어 AI:** [다음 문서 — 다국어 능력](/wiki/multilingual-capability/)

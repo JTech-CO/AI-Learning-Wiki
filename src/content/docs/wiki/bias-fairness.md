@@ -132,11 +132,13 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [개인정보 보호](/wiki/privacy/)
 - [콘텐츠 조정](/wiki/content-moderation/)
+- [한국 AI 영향평가](/wiki/korean-ai-impact-assessment/)
 - [AI 거버넌스](/wiki/ai-governance/)
+- [EU 고위험 AI 데이터 거버넌스](/wiki/eu-high-risk-data-governance/)
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -153,3 +155,4 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — 개인정보 보호](/wiki/privacy/)
+- **AI 규제와 리터러시:** [다음 문서 — 개인정보 보호](/wiki/privacy/)

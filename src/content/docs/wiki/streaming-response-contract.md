@@ -117,11 +117,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 ### 이 문서를 가리키는 문서
 
 - [스트림 재개 프로토콜](/wiki/stream-resume-protocol/)
+- [A2A 프로토콜 바인딩](/wiki/a2a-protocol-binding/)
 - [SSE 복구](/wiki/server-sent-event-recovery/)
 
 ### 이 문서를 포함하는 코스
 
-[프로덕션 AI API 시스템](/course/production-ai-api-systems/)
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/) · [프로덕션 AI API 시스템](/course/production-ai-api-systems/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +137,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — A2A 프로토콜 바인딩](/wiki/a2a-protocol-binding/)
 - **프로덕션 AI API 시스템:** [다음 문서 — 스트림 재개 프로토콜](/wiki/stream-resume-protocol/)

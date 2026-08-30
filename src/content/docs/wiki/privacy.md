@@ -131,12 +131,22 @@ AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리
 - [가드레일](/wiki/guardrail/)
 - [콘텐츠 조정](/wiki/content-moderation/)
 - [편향과 공정성](/wiki/bias-fairness/)
+- [한국 AI 영향평가](/wiki/korean-ai-impact-assessment/)
+- [한국어 개인정보 탐지](/wiki/korean-pii-detection/)
+
+<details class="wiki-backlinks-more">
+<summary>나머지 4개 문서 보기</summary>
+
 - [합성 데이터](/wiki/synthetic-data/)
 - [AI 거버넌스](/wiki/ai-governance/)
+- [EU 고위험 AI 데이터 거버넌스](/wiki/eu-high-risk-data-governance/)
+- [EU 기본권 영향평가](/wiki/eu-fundamental-rights-impact-assessment/)
+
+</details>
 
 ### 이 문서를 포함하는 코스
 
-[신뢰할 수 있는 AI](/course/responsible-ai/)
+[신뢰할 수 있는 AI](/course/responsible-ai/) · [AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -153,3 +163,4 @@ AI 시스템이 개인 데이터를 수집·처리·저장·공개할 때 권리
 ### 코스에서 계속 읽기
 
 - **신뢰할 수 있는 AI:** [다음 문서 — AI 거버넌스](/wiki/ai-governance/)
+- **AI 규제와 리터러시:** [다음 문서 — EU 고위험 AI 기록보존](/wiki/eu-high-risk-record-keeping/)

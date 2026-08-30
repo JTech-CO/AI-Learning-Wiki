@@ -152,7 +152,7 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 - [계획](/wiki/planning/)
 
 <details class="wiki-backlinks-more">
-<summary>나머지 111개 문서 보기</summary>
+<summary>나머지 112개 문서 보기</summary>
 
 - [계획 검증](/wiki/plan-verification/)
 - [계획 후 실행](/wiki/plan-and-execute/)
@@ -188,6 +188,7 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 - [세션 상태](/wiki/session-state/)
 - [에이전트 가드레일](/wiki/agent-guardrail/)
 - [에이전트 간 통신](/wiki/inter-agent-communication/)
+- [에이전트 간 프로토콜](/wiki/a2a-protocol/)
 - [에이전트 계획 품질](/wiki/agent-plan-quality/)
 - [에이전트 과제 분해](/wiki/agent-task-decomposition/)
 - [에이전트 과제 성공률](/wiki/agent-task-success/)
@@ -270,7 +271,7 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 
 ### 이 문서를 포함하는 코스
 
-[프로덕션 AI 에이전트](/course/production-agents/) · [AI 에이전트 시스템](/course/agent-systems/)
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/) · [프로덕션 AI 에이전트](/course/production-agents/) · [AI 에이전트 시스템](/course/agent-systems/)
 
 ## 참고와 다음 학습
 
@@ -285,5 +286,6 @@ MCP처럼 도구와 자원을 기술하는 프로토콜은 모델과 외부 기�
 
 ### 코스에서 계속 읽기
 
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — 멀티 에이전트 시스템](/wiki/multi-agent-system/)
 - **프로덕션 AI 에이전트:** [다음 문서 — 에이전트 루프](/wiki/agent-loop/)
 - **AI 에이전트 시스템:** [다음 문서 — 에이전트 루프](/wiki/agent-loop/)

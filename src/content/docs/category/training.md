@@ -18,6 +18,7 @@ description: "사전학습부터 정렬·경량화까지의 방법"
 <li data-article-id="task-vector"><a href="/wiki/task-vector/">과제 벡터</a><span class="wiki-index-summary">과제 벡터는 미세조정 모델과 기반 모델의 가중치 차이로 표현한 과제별 파라미터 업데이트다.</span></li>
 <li data-article-id="task-adaptation"><a href="/wiki/task-adaptation/">과제 적응</a><span class="wiki-index-summary">과제 적응은 범용 또는 다른 과제로 학습된 모델을 새로운 목표 과제의 입출력과 평가 기준에 맞게 조정하는 과정이다.</span></li>
 <li data-article-id="teacher-forcing"><a href="/wiki/teacher-forcing/">교사 강요</a><span class="wiki-index-summary">교사 강요는 순차 모델 학습에서 이전 시점의 모델 예측 대신 실제 정답 토큰을 다음 입력으로 제공하는 방법이다.</span></li>
+<li data-article-id="cross-lingual-transfer"><a href="/wiki/cross-lingual-transfer/">교차언어 전이</a><span class="wiki-index-summary">교차언어 전이는 한 언어에서 학습한 표현이나 과제 지식을 다른 언어의 데이터가 적은 상황에 재사용하는 학습 전략이다.</span></li>
 <li data-article-id="span-corruption"><a href="/wiki/span-corruption/">구간 손상 복원</a><span class="wiki-index-summary">구간 손상 복원은 연속된 여러 토큰 구간을 특수 표식으로 바꾸고 누락된 구간을 생성하도록 하는 잡음 제거 학습 방식이다.</span></li>
 <li data-article-id="gradient-checkpointing"><a href="/wiki/gradient-checkpointing/">그래디언트 체크포인팅</a><span class="wiki-index-summary">그래디언트 체크포인팅은 순전파 활성값 일부만 저장하고 역전파 때 누락된 구간을 다시 계산해 메모리를 줄이는 기법이다.</span></li>
 <li data-article-id="rejection-sampling"><a href="/wiki/rejection-sampling/">기각 표본추출</a><span class="wiki-index-summary">거부 표집은 제안 분포에서 후보를 생성한 뒤 목표 기준에 따른 수용 확률이나 임계값으로 일부만 채택하는 표집 방법이다.</span></li>

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-24T14:02:50.410Z",
+  "generatedAt": "2026-08-30T11:41:43.041Z",
   "counts": {
-    "articles": 1624,
-    "courses": 24
+    "articles": 1676,
+    "courses": 27
   },
   "categories": [
     {
@@ -33,13 +33,13 @@
       "id": "llm",
       "title": "LLM과 토큰 처리",
       "description": "언어 모델의 입력·문맥·생성 단위",
-      "count": 140
+      "count": 150
     },
     {
       "id": "training",
       "title": "학습과 사후학습",
       "description": "사전학습부터 정렬·경량화까지의 방법",
-      "count": 115
+      "count": 116
     },
     {
       "id": "inference",
@@ -57,13 +57,13 @@
       "id": "api",
       "title": "API·SDK·도구 호출",
       "description": "모델을 소프트웨어와 연결하는 인터페이스",
-      "count": 131
+      "count": 141
     },
     {
       "id": "agents",
       "title": "에이전트·자동화·MCP",
       "description": "모델이 도구를 사용해 여러 단계를 수행하는 구조",
-      "count": 125
+      "count": 141
     },
     {
       "id": "multimodal",
@@ -75,19 +75,19 @@
       "id": "evaluation",
       "title": "평가·관측성·벤치마크",
       "description": "모델과 시스템의 품질을 측정하는 방법",
-      "count": 136
+      "count": 144
     },
     {
       "id": "safety",
       "title": "안전·보안·윤리",
       "description": "AI 시스템의 위험을 식별하고 통제하는 방법",
-      "count": 125
+      "count": 145
     },
     {
       "id": "ecosystem",
       "title": "모델·서비스 생태계",
       "description": "모델 공개와 배포 생태계의 기본 개념",
-      "count": 100
+      "count": 101
     }
   ],
   "articles": [
@@ -973,8 +973,12 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-pii-detection"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/personally-identifiable-information/"
     },
@@ -1053,11 +1057,16 @@
         "guardrail",
         "content-moderation",
         "bias-fairness",
+        "korean-ai-impact-assessment",
+        "korean-pii-detection",
         "synthetic-data",
-        "ai-governance"
+        "ai-governance",
+        "eu-high-risk-data-governance",
+        "eu-fundamental-rights-impact-assessment"
       ],
       "courses": [
-        "responsible-ai"
+        "responsible-ai",
+        "ai-regulation-literacy"
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/privacy/"
@@ -1105,7 +1114,9 @@
         "rag",
         "vector-database"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "korean-named-entity-recognition"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/entity-linking/"
@@ -2526,6 +2537,36 @@
       "url": "/wiki/high-bandwidth-memory/"
     },
     {
+      "id": "korean-high-impact-ai-confirmation",
+      "title": "고영향 인공지능 확인 절차",
+      "englishTitle": "Korean High-Impact AI Confirmation Procedure",
+      "aliases": [
+        "고영향 AI 확인",
+        "고영향 인공지능 재확인"
+      ],
+      "summary": "고영향 인공지능 확인 절차는 사업자가 자사 시스템의 법정 고영향 해당 여부를 정부에 확인 또는 재확인 요청하는 행정 절차다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "korean-high-impact-ai",
+        "korean-ai-basic-act"
+      ],
+      "related": [
+        "korean-high-impact-ai-operator-duties",
+        "algorithmic-impact-assessment",
+        "ai-regulatory-classification"
+      ],
+      "backlinks": [
+        "korean-high-impact-ai"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-high-impact-ai-confirmation/"
+    },
+    {
       "id": "eigendecomposition",
       "title": "고유분해",
       "englishTitle": "Eigendecomposition",
@@ -3113,10 +3154,13 @@
       "backlinks": [
         "precision-recall",
         "tracing",
+        "a2a-observability",
+        "eu-high-risk-post-market-monitoring",
         "llm-as-a-judge"
       ],
       "courses": [
         "responsible-ai",
+        "agent-interoperability",
         "agent-systems",
         "api-development",
         "llm-evaluation"
@@ -3510,10 +3554,42 @@
         "rag",
         "vector-database"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "cross-lingual-transfer"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/cross-lingual-embedding/"
+    },
+    {
+      "id": "cross-lingual-transfer",
+      "title": "교차언어 전이",
+      "englishTitle": "Cross-Lingual Transfer",
+      "aliases": [
+        "교차 언어 전이학습",
+        "Cross-Lingual Transfer Learning"
+      ],
+      "summary": "교차언어 전이는 한 언어에서 학습한 표현이나 과제 지식을 다른 언어의 데이터가 적은 상황에 재사용하는 학습 전략이다.",
+      "categories": [
+        "training"
+      ],
+      "prerequisites": [
+        "transfer-learning",
+        "multilingual-language-model"
+      ],
+      "related": [
+        "cross-lingual-embedding",
+        "multilingual-evaluation-protocol",
+        "korean-named-entity-recognition"
+      ],
+      "backlinks": [],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/cross-lingual-transfer/"
     },
     {
       "id": "span-corruption",
@@ -5131,8 +5207,16 @@
         "prompt",
         "context-window"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-dialect-robustness",
+        "korean-language-identification",
+        "korean-output-language-alignment",
+        "korean-english-code-switching",
+        "kmmlu"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/multilingual-capability/"
     },
@@ -5155,10 +5239,47 @@
         "prompt",
         "context-window"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "cross-lingual-transfer",
+        "multilingual-token-fertility",
+        "korean-language-identification",
+        "korean-english-code-switching"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/multilingual-language-model/"
+    },
+    {
+      "id": "multilingual-token-fertility",
+      "title": "다국어 토큰 분절률",
+      "englishTitle": "Multilingual Token Fertility",
+      "aliases": [
+        "토큰 fertility",
+        "다국어 토큰 비옥도"
+      ],
+      "summary": "다국어 토큰 분절률은 같은 언어 단위가 평균 몇 개의 모델 토큰으로 나뉘는지 측정해 언어별 토큰화 효율과 비용 격차를 드러내는 지표다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "tokenization",
+        "multilingual-language-model"
+      ],
+      "related": [
+        "korean-tokenization",
+        "byte-level-tokenization",
+        "multilingual-evaluation-protocol"
+      ],
+      "backlinks": [
+        "korean-tokenization"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/multilingual-token-fertility/"
     },
     {
       "id": "multilingual-evaluation-protocol",
@@ -5182,9 +5303,17 @@
       ],
       "backlinks": [
         "robustness-evaluation-grid",
-        "domain-expert-evaluation"
+        "cross-lingual-transfer",
+        "multilingual-token-fertility",
+        "domain-expert-evaluation",
+        "korean-dialect-robustness",
+        "korean-output-language-alignment",
+        "klue",
+        "ko-h5-benchmark"
       ],
-      "courses": [],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/multilingual-evaluation-protocol/"
     },
@@ -5753,6 +5882,7 @@
         "wordpiece"
       ],
       "courses": [
+        "korean-multilingual-ai",
         "ai-foundations"
       ],
       "reviewedAt": "2026-07-12",
@@ -6758,7 +6888,9 @@
         "react-agent",
         "tool-calling"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "agent-discovery"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/tool-discovery/"
@@ -8403,7 +8535,9 @@
         "context-window"
       ],
       "backlinks": [],
-      "courses": [],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/masked-language-model/"
     },
@@ -8748,6 +8882,7 @@
         "human-in-the-loop"
       ],
       "courses": [
+        "agent-interoperability",
         "agent-systems"
       ],
       "reviewedAt": "2026-07-13",
@@ -9122,7 +9257,8 @@
       ],
       "backlinks": [
         "modality-fallback-policy",
-        "prompt-portfolio-observability"
+        "prompt-portfolio-observability",
+        "a2a-content-part"
       ],
       "courses": [
         "multimodal-systems"
@@ -9782,7 +9918,9 @@
         "rest-api"
       ],
       "backlinks": [],
-      "courses": [],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/idempotency-key/"
     },
@@ -10144,7 +10282,9 @@
         "top-p-sampling",
         "greedy-decoding"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-protocol-gateway"
+      ],
       "courses": [
         "ai-serving-systems"
       ],
@@ -11080,7 +11220,8 @@
       ],
       "backlinks": [
         "model-weight-access-control",
-        "model-supply-chain-security"
+        "model-supply-chain-security",
+        "eu-high-risk-conformity-assessment"
       ],
       "courses": [],
       "reviewedAt": "2026-07-16",
@@ -11105,7 +11246,9 @@
         "model-hub",
         "open-source-model"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-artifact"
+      ],
       "courses": [
         "model-service-ecosystem"
       ],
@@ -11495,9 +11638,11 @@
       "backlinks": [
         "multi-agent-system",
         "webhook",
-        "human-in-the-loop"
+        "human-in-the-loop",
+        "mcp-a2a-boundary"
       ],
       "courses": [
+        "agent-interoperability",
         "agent-systems"
       ],
       "reviewedAt": "2026-08-24",
@@ -11572,7 +11717,9 @@
         "model-hub",
         "open-source-model"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "agent-discovery"
+      ],
       "courses": [
         "model-service-ecosystem"
       ],
@@ -11622,8 +11769,14 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-ai-transparency-duty",
+        "general-purpose-ai-provider-obligations",
+        "gpai-code-of-practice"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/model-transparency/"
     },
@@ -12865,8 +13018,12 @@
         "prompt",
         "context-window"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "hangul-unicode-normalization"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/character-tokenization/"
     },
@@ -12889,8 +13046,12 @@
         "rag",
         "vector-database"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-sentence-segmentation"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/sentence-segmentation/"
     },
@@ -13355,8 +13516,13 @@
         "prompt",
         "context-window"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "multilingual-token-fertility",
+        "hangul-unicode-normalization"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/byte-level-tokenization/"
     },
@@ -13385,9 +13551,12 @@
         "vocabulary",
         "context-window",
         "tokenizer",
-        "prompt"
+        "prompt",
+        "korean-tokenization"
       ],
-      "courses": [],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/byte-pair-encoding/"
     },
@@ -14278,12 +14447,16 @@
         "metric",
         "behavioral-regression",
         "f1-score",
+        "klue",
+        "kmmlu",
+        "ko-h5-benchmark",
         "llm-judge-ensemble",
         "llm-evaluation-contract",
         "inter-rater-agreement-for-llm"
       ],
       "courses": [
         "responsible-ai",
+        "korean-multilingual-ai",
         "llm-evaluation"
       ],
       "reviewedAt": "2026-07-13",
@@ -14336,7 +14509,9 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "korquad"
+      ],
       "courses": [
         "llm-evaluation"
       ],
@@ -14412,8 +14587,13 @@
         "supervised-fine-tuning",
         "training-data"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "kmmlu",
+        "ko-h5-benchmark",
+        "korquad"
+      ],
       "courses": [
+        "korean-multilingual-ai",
         "llm-evaluation"
       ],
       "reviewedAt": "2026-07-14",
@@ -16590,6 +16770,7 @@
         "workflow-orchestration"
       ],
       "courses": [
+        "agent-interoperability",
         "agent-systems"
       ],
       "reviewedAt": "2026-07-13",
@@ -16640,7 +16821,9 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-authentication-delegation"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/mutual-tls/"
@@ -18565,9 +18748,11 @@
       ],
       "backlinks": [
         "stream-resume-protocol",
+        "a2a-protocol-binding",
         "server-sent-event-recovery"
       ],
       "courses": [
+        "agent-interoperability",
         "production-ai-api-systems"
       ],
       "reviewedAt": "2026-07-16",
@@ -18595,6 +18780,7 @@
       ],
       "backlinks": [
         "streaming-response-contract",
+        "a2a-push-notification",
         "llm-api-pagination"
       ],
       "courses": [
@@ -19098,6 +19284,37 @@
       "courses": [],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/system-prompt-composition/"
+    },
+    {
+      "id": "systemic-risk-general-purpose-ai-model",
+      "title": "시스템적 위험 범용 AI 모델",
+      "englishTitle": "General-Purpose AI Model with Systemic Risk",
+      "aliases": [
+        "GPAI with Systemic Risk",
+        "AI Act Article 51"
+      ],
+      "summary": "시스템적 위험 범용 AI 모델은 고영향 역량이나 위원회 지정으로 EU 차원의 광범위한 위험을 낳을 수 있어 추가 의무가 적용되는 GPAI 모델이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "general-purpose-ai-provider-obligations",
+        "ai-risk-assessment"
+      ],
+      "related": [
+        "gpai-code-of-practice",
+        "catastrophic-ai-risk",
+        "ai-incident-reporting"
+      ],
+      "backlinks": [
+        "general-purpose-ai-provider-obligations",
+        "gpai-code-of-practice"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/systemic-risk-general-purpose-ai-model/"
     },
     {
       "id": "beginning-end-token",
@@ -20090,7 +20307,10 @@
         "model-hub",
         "open-source-model"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "agent-discovery",
+        "a2a-artifact"
+      ],
       "courses": [
         "model-service-ecosystem"
       ],
@@ -20275,9 +20495,14 @@
       ],
       "backlinks": [
         "safety-assurance-argument",
-        "safety-exception-process"
+        "safety-exception-process",
+        "korean-ai-safety-duty",
+        "eu-high-risk-conformity-assessment",
+        "gpai-code-of-practice"
       ],
-      "courses": [],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/safety-case/"
     },
@@ -20374,8 +20599,14 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-high-impact-ai-confirmation",
+        "korean-ai-impact-assessment",
+        "eu-fundamental-rights-impact-assessment"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/algorithmic-impact-assessment/"
     },
@@ -20398,8 +20629,13 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "eu-fundamental-rights-impact-assessment",
+        "eu-ai-act-prohibited-practices"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/algorithmic-contestability/"
     },
@@ -21043,9 +21279,11 @@
         "large-language-model",
         "small-language-model",
         "speech-recognition",
-        "embedding-model"
+        "embedding-model",
+        "korean-honorifics-and-speech-acts"
       ],
       "courses": [
+        "korean-multilingual-ai",
         "ai-foundations"
       ],
       "reviewedAt": "2026-07-13",
@@ -21196,10 +21434,56 @@
         "react-agent",
         "tool-calling"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "a2a-protocol",
+        "a2a-message",
+        "mcp-a2a-boundary"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/inter-agent-communication/"
+    },
+    {
+      "id": "a2a-protocol",
+      "title": "에이전트 간 프로토콜",
+      "englishTitle": "Agent2Agent Protocol",
+      "aliases": [
+        "A2A",
+        "A2A Protocol",
+        "Agent-to-Agent Protocol"
+      ],
+      "summary": "에이전트 간 프로토콜(A2A)은 구현이 서로 다른 독립 에이전트가 능력을 발견하고 장기 작업을 협업하도록 데이터 모델과 연산 의미를 표준화한 개방형 규약이다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "ai-agent",
+        "inter-agent-communication"
+      ],
+      "related": [
+        "agent-card",
+        "a2a-task-lifecycle",
+        "mcp-a2a-boundary",
+        "agent-run-contract"
+      ],
+      "backlinks": [
+        "agent-card",
+        "a2a-message",
+        "a2a-task-lifecycle",
+        "a2a-conformance-testing",
+        "a2a-content-part",
+        "a2a-protocol-gateway",
+        "a2a-protocol-binding",
+        "mcp-a2a-boundary"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-protocol/"
     },
     {
       "id": "agent-plan-quality",
@@ -21864,6 +22148,37 @@
       "url": "/wiki/agent-context-handoff/"
     },
     {
+      "id": "agent-discovery",
+      "title": "에이전트 발견",
+      "englishTitle": "Agent Discovery",
+      "aliases": [
+        "A2A Agent Discovery",
+        "에이전트 디스커버리"
+      ],
+      "summary": "에이전트 발견은 클라이언트가 작업 후보를 수행할 원격 에이전트의 Agent Card를 찾고 신뢰·기능·접속 조건을 검증하는 절차다.",
+      "categories": [
+        "agents",
+        "ecosystem"
+      ],
+      "prerequisites": [
+        "agent-card"
+      ],
+      "related": [
+        "tool-discovery",
+        "artifact-registry",
+        "a2a-capability-negotiation",
+        "model-discovery"
+      ],
+      "backlinks": [
+        "agent-card"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/agent-discovery/"
+    },
+    {
       "id": "agent-benchmark",
       "title": "에이전트 벤치마크",
       "englishTitle": "Agent Benchmark",
@@ -22051,9 +22366,12 @@
       ],
       "backlinks": [
         "agent-incident-playbook",
-        "agent-run-contract"
+        "agent-run-contract",
+        "a2a-task-lifecycle"
       ],
-      "courses": [],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/agent-state-machine/"
     },
@@ -22260,10 +22578,14 @@
         "agent-step-budget"
       ],
       "backlinks": [
+        "a2a-protocol",
         "agent-step-budget",
-        "agent-state-machine"
+        "agent-state-machine",
+        "a2a-task-lifecycle"
       ],
-      "courses": [],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/agent-run-contract/"
     },
@@ -22364,7 +22686,9 @@
         "react-agent",
         "tool-calling"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-authentication-delegation"
+      ],
       "courses": [],
       "reviewedAt": "2026-08-09",
       "url": "/wiki/agent-delegation/"
@@ -22641,9 +22965,12 @@
       ],
       "backlinks": [
         "retrieval-content-trust",
+        "a2a-authentication-delegation",
         "ai-abuse-monitoring"
       ],
-      "courses": [],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/agent-least-privilege/"
     },
@@ -22666,7 +22993,9 @@
         "react-agent",
         "tool-calling"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-observability"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/agent-trace-evaluation/"
@@ -22698,6 +23027,41 @@
       "courses": [],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/agent-canary-run/"
+    },
+    {
+      "id": "agent-card",
+      "title": "에이전트 카드",
+      "englishTitle": "Agent Card",
+      "aliases": [
+        "AgentCard",
+        "A2A Agent Card"
+      ],
+      "summary": "에이전트 카드는 A2A 서버의 정체성, 기술, 인터페이스, 프로토콜 버전과 보안 요구를 기계가 읽을 수 있게 공개하는 JSON 메타데이터 문서다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "a2a-protocol"
+      ],
+      "related": [
+        "agent-discovery",
+        "a2a-capability-negotiation",
+        "openapi-specification",
+        "a2a-authentication-delegation"
+      ],
+      "backlinks": [
+        "a2a-protocol",
+        "agent-discovery",
+        "a2a-capability-negotiation",
+        "a2a-version-negotiation",
+        "a2a-authentication-delegation"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/agent-card/"
     },
     {
       "id": "agent-chaos-testing",
@@ -24698,9 +25062,11 @@
       ],
       "backlinks": [
         "mcp",
-        "human-in-the-loop"
+        "human-in-the-loop",
+        "a2a-push-notification"
       ],
       "courses": [
+        "agent-interoperability",
         "agent-systems"
       ],
       "reviewedAt": "2026-07-13",
@@ -24841,7 +25207,9 @@
         "context-window"
       ],
       "backlinks": [],
-      "courses": [],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/unigram-language-model-tokenizer/"
     },
@@ -26019,8 +26387,13 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-high-impact-ai-operator-duties",
+        "eu-ai-literacy-duty"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/human-oversight/"
     },
@@ -28272,8 +28645,12 @@
         "deep-learning",
         "symbolic-ai"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "cross-lingual-transfer"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/transfer-learning/"
     },
@@ -28913,7 +29290,9 @@
         "content-moderation"
       ],
       "backlinks": [],
-      "courses": [],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/third-party-ai-risk/"
     },
@@ -34446,7 +34825,9 @@
         "token",
         "tokenization"
       ],
-      "courses": [],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/tokenizer/"
     },
@@ -34876,12 +35257,18 @@
         "vocabulary"
       ],
       "backlinks": [
+        "multilingual-token-fertility",
         "vocabulary",
         "tokenizer",
         "token",
-        "hyperparameter"
+        "hyperparameter",
+        "korean-named-entity-recognition",
+        "korean-word-spacing-variation",
+        "korean-tokenization",
+        "korean-morphological-analysis"
       ],
       "courses": [
+        "korean-multilingual-ai",
         "llm-internals"
       ],
       "reviewedAt": "2026-07-13",
@@ -35567,7 +35954,9 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "systemic-risk-general-purpose-ai-model"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/catastrophic-ai-risk/"
@@ -36205,10 +36594,13 @@
       "backlinks": [
         "privacy",
         "content-moderation",
-        "ai-governance"
+        "korean-ai-impact-assessment",
+        "ai-governance",
+        "eu-high-risk-data-governance"
       ],
       "courses": [
-        "responsible-ai"
+        "responsible-ai",
+        "ai-regulation-literacy"
       ],
       "reviewedAt": "2026-07-13",
       "url": "/wiki/bias-fairness/"
@@ -37502,7 +37894,9 @@
         "f1-score",
         "precision-recall"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-observability"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/prompt-trace/"
@@ -38030,7 +38424,10 @@
         "supervised-fine-tuning",
         "training-data"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "eu-high-risk-record-keeping",
+        "eu-high-risk-data-governance"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/training-audit-log/"
@@ -38276,9 +38673,13 @@
         "supervised-fine-tuning",
         "training-data"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "general-purpose-ai-provider-obligations",
+        "gpai-code-of-practice"
+      ],
       "courses": [
-        "data-training-pipelines"
+        "data-training-pipelines",
+        "ai-regulation-literacy"
       ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/training-data-copyright/"
@@ -38302,7 +38703,9 @@
         "supervised-fine-tuning",
         "training-data"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "eu-high-risk-data-governance"
+      ],
       "courses": [
         "data-training-pipelines"
       ],
@@ -38382,7 +38785,8 @@
       ],
       "backlinks": [],
       "courses": [
-        "data-training-pipelines"
+        "data-training-pipelines",
+        "korean-multilingual-ai"
       ],
       "reviewedAt": "2026-07-14",
       "url": "/wiki/training-corpus/"
@@ -38673,6 +39077,571 @@
       ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/learned-position-embedding/"
+    },
+    {
+      "id": "korean-high-impact-ai",
+      "title": "한국 고영향 인공지능",
+      "englishTitle": "Korean High-Impact AI",
+      "aliases": [
+        "고영향 인공지능"
+      ],
+      "summary": "한국 고영향 인공지능은 사람의 생명·안전이나 기본권에 중대한 영향을 미칠 우려가 있어 법정 영역과 기준으로 식별하는 인공지능시스템이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "korean-ai-basic-act",
+        "ai-regulatory-classification"
+      ],
+      "related": [
+        "korean-high-impact-ai-confirmation",
+        "korean-high-impact-ai-operator-duties",
+        "eu-high-risk-ai-system"
+      ],
+      "backlinks": [
+        "korean-high-impact-ai-confirmation",
+        "korean-high-impact-ai-operator-duties",
+        "korean-ai-basic-act",
+        "korean-ai-impact-assessment",
+        "korean-ai-transparency-duty",
+        "eu-high-risk-ai-system"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-high-impact-ai/"
+    },
+    {
+      "id": "korean-high-impact-ai-operator-duties",
+      "title": "한국 고영향 AI 사업자 책무",
+      "englishTitle": "Korean High-Impact AI Operator Duties",
+      "aliases": [
+        "고영향 인공지능 사업자 책무"
+      ],
+      "summary": "한국 고영향 AI 사업자 책무는 고영향 인공지능 관련 사업자가 위험관리, 설명·보호 조치 등 법정 신뢰성 조치를 이행하는 체계다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "korean-high-impact-ai",
+        "ai-governance-framework"
+      ],
+      "related": [
+        "human-oversight",
+        "ai-accountability",
+        "korean-ai-impact-assessment"
+      ],
+      "backlinks": [
+        "korean-high-impact-ai-confirmation",
+        "korean-high-impact-ai"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-high-impact-ai-operator-duties/"
+    },
+    {
+      "id": "korean-ai-basic-act",
+      "title": "한국 인공지능기본법",
+      "englishTitle": "Korean AI Basic Act",
+      "aliases": [
+        "인공지능기본법",
+        "AI 기본법"
+      ],
+      "summary": "한국 인공지능기본법은 인공지능의 발전과 신뢰 기반 조성을 함께 규율하는 한국의 기본 법률이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "ai-governance",
+        "ai-regulatory-classification"
+      ],
+      "related": [
+        "korean-high-impact-ai",
+        "korean-ai-transparency-duty",
+        "korean-ai-safety-duty"
+      ],
+      "backlinks": [
+        "korean-high-impact-ai-confirmation",
+        "korean-high-impact-ai",
+        "korean-ai-safety-duty",
+        "korean-ai-transparency-duty",
+        "eu-ai-literacy-duty"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-ai-basic-act/"
+    },
+    {
+      "id": "korean-ai-safety-duty",
+      "title": "한국 AI 안전성 확보 의무",
+      "englishTitle": "Korean AI Safety Duty",
+      "aliases": [
+        "인공지능 안전성 확보 의무"
+      ],
+      "summary": "한국 AI 안전성 확보 의무는 법정 누적 연산량 기준 이상 인공지능시스템의 수명주기 위험관리와 안전사고 대응을 요구하는 제도다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "korean-ai-basic-act",
+        "ai-risk-assessment"
+      ],
+      "related": [
+        "ai-incident-reporting",
+        "ai-risk-register",
+        "safety-case"
+      ],
+      "backlinks": [
+        "korean-ai-basic-act"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-ai-safety-duty/"
+    },
+    {
+      "id": "korean-ai-impact-assessment",
+      "title": "한국 AI 영향평가",
+      "englishTitle": "Korean AI Impact Assessment",
+      "aliases": [
+        "인공지능 영향평가"
+      ],
+      "summary": "한국 AI 영향평가는 고영향 인공지능이 기본권에 미치는 영향을 사업자가 사전에 구조적으로 평가하고 완화하는 제도다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "korean-high-impact-ai",
+        "algorithmic-impact-assessment"
+      ],
+      "related": [
+        "bias-fairness",
+        "privacy",
+        "eu-fundamental-rights-impact-assessment"
+      ],
+      "backlinks": [
+        "korean-high-impact-ai-operator-duties",
+        "eu-fundamental-rights-impact-assessment"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-ai-impact-assessment/"
+    },
+    {
+      "id": "korean-ai-transparency-duty",
+      "title": "한국 AI 투명성 확보 의무",
+      "englishTitle": "Korean AI Transparency Duty",
+      "aliases": [
+        "인공지능 투명성 확보 의무"
+      ],
+      "summary": "한국 AI 투명성 확보 의무는 고영향·생성형 인공지능 기반 제품·서비스와 생성 결과물에 대해 법이 정한 고지와 표시를 제공하는 의무다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "korean-ai-basic-act",
+        "ai-disclosure"
+      ],
+      "related": [
+        "model-transparency",
+        "korean-high-impact-ai",
+        "ai-accountability"
+      ],
+      "backlinks": [
+        "korean-ai-basic-act"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-ai-transparency-duty/"
+    },
+    {
+      "id": "korean-pii-detection",
+      "title": "한국어 개인정보 탐지",
+      "englishTitle": "Korean PII Detection",
+      "aliases": [
+        "한국어 개인 식별 정보 탐지",
+        "Korean Personal Information Detection"
+      ],
+      "summary": "한국어 개인정보 탐지는 한국어 문서와 대화에서 직접·간접 식별자를 찾아 위험 수준과 처리 정책에 맞게 분류하는 절차다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "personally-identifiable-information",
+        "korean-named-entity-recognition"
+      ],
+      "related": [
+        "privacy",
+        "korean-morphological-analysis",
+        "klue"
+      ],
+      "backlinks": [
+        "korean-named-entity-recognition"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-pii-detection/"
+    },
+    {
+      "id": "korean-named-entity-recognition",
+      "title": "한국어 개체명 인식",
+      "englishTitle": "Korean Named Entity Recognition",
+      "aliases": [
+        "한국어 NER",
+        "Korean NER"
+      ],
+      "summary": "한국어 개체명 인식은 한국어 문장에서 사람·기관·장소·날짜 등 지정 범주의 문자열 범위와 유형을 찾아내는 순차 표지 과제다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "korean-morphological-analysis",
+        "tokenization"
+      ],
+      "related": [
+        "entity-linking",
+        "korean-pii-detection",
+        "klue"
+      ],
+      "backlinks": [
+        "cross-lingual-transfer",
+        "korean-pii-detection",
+        "klue",
+        "korquad"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-named-entity-recognition/"
+    },
+    {
+      "id": "korean-honorifics-and-speech-acts",
+      "title": "한국어 높임말과 화행",
+      "englishTitle": "Korean Honorifics and Speech Acts",
+      "aliases": [
+        "한국어 높임법과 화행",
+        "Korean Politeness and Speech Acts"
+      ],
+      "summary": "한국어 높임말과 화행은 주체·객체·청자에 대한 높임 표현과 진술·질문·요청 같은 발화 의도를 사회적 관계와 문맥에서 함께 해석하는 문제다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "language-model"
+      ],
+      "related": [
+        "korean-sentence-segmentation",
+        "korean-output-language-alignment",
+        "ko-h5-benchmark"
+      ],
+      "backlinks": [
+        "korean-sentence-segmentation",
+        "korean-dialect-robustness",
+        "korean-output-language-alignment"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-honorifics-and-speech-acts/"
+    },
+    {
+      "id": "korean-word-spacing-variation",
+      "title": "한국어 띄어쓰기 변이",
+      "englishTitle": "Korean Word-Spacing Variation",
+      "aliases": [
+        "한국어 공백 변이",
+        "Korean Spacing Variation"
+      ],
+      "summary": "한국어 띄어쓰기 변이는 같은 내용이 규범·구어·입력 습관에 따라 서로 다른 공백 경계로 나타나 토큰화와 검색 결과를 바꾸는 현상이다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "tokenization"
+      ],
+      "related": [
+        "korean-morphological-analysis",
+        "korean-tokenization",
+        "korean-sentence-segmentation"
+      ],
+      "backlinks": [
+        "korean-sentence-segmentation",
+        "korean-morphological-analysis",
+        "hangul-unicode-normalization"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-word-spacing-variation/"
+    },
+    {
+      "id": "korean-sentence-segmentation",
+      "title": "한국어 문장 분할",
+      "englishTitle": "Korean Sentence Segmentation",
+      "aliases": [
+        "한국어 문장 경계 탐지",
+        "Korean Sentence Boundary Detection"
+      ],
+      "summary": "한국어 문장 분할은 종결 어미·문장부호·인용·대화 문맥을 이용해 한국어 연속 텍스트에서 문장 경계를 판정하는 처리다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "sentence-segmentation",
+        "hangul-unicode-normalization"
+      ],
+      "related": [
+        "korean-morphological-analysis",
+        "korean-word-spacing-variation",
+        "korean-honorifics-and-speech-acts"
+      ],
+      "backlinks": [
+        "korean-honorifics-and-speech-acts",
+        "korean-word-spacing-variation",
+        "korean-morphological-analysis",
+        "korquad"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-sentence-segmentation/"
+    },
+    {
+      "id": "korean-dialect-robustness",
+      "title": "한국어 방언 강건성",
+      "englishTitle": "Korean Dialect Robustness",
+      "aliases": [
+        "한국어 지역어 강건성",
+        "Korean Dialect Robustness Evaluation"
+      ],
+      "summary": "한국어 방언 강건성은 표준어 중심으로 학습한 모델이 지역 어휘·음운·문법 변이를 만나도 의미와 사용자 의도를 안정적으로 처리하는 정도다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "multilingual-evaluation-protocol",
+        "korean-tokenization"
+      ],
+      "related": [
+        "korean-honorifics-and-speech-acts",
+        "korean-language-identification",
+        "multilingual-capability"
+      ],
+      "backlinks": [],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-dialect-robustness/"
+    },
+    {
+      "id": "korean-language-identification",
+      "title": "한국어 언어 식별",
+      "englishTitle": "Korean Language Identification",
+      "aliases": [
+        "한국어 식별",
+        "Korean Language ID"
+      ],
+      "summary": "한국어 언어 식별은 문서·문장·토큰이 한국어인지, 또는 다른 언어와 혼용되었는지를 문자와 문맥 단서로 판정하는 과제다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "multilingual-language-model"
+      ],
+      "related": [
+        "korean-english-code-switching",
+        "hangul-unicode-normalization",
+        "multilingual-capability"
+      ],
+      "backlinks": [
+        "korean-dialect-robustness",
+        "korean-output-language-alignment",
+        "korean-english-code-switching"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-language-identification/"
+    },
+    {
+      "id": "korean-output-language-alignment",
+      "title": "한국어 출력 언어 정렬",
+      "englishTitle": "Korean Output Language Alignment",
+      "aliases": [
+        "한국어 응답 언어 정렬",
+        "Korean Response Language Alignment"
+      ],
+      "summary": "한국어 출력 언어 정렬은 한영 혼용 입력과 대화 문맥에서 사용자가 기대하는 응답 언어를 추론하고 그 언어를 끝까지 유지하는 능력이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "korean-english-code-switching",
+        "multilingual-capability"
+      ],
+      "related": [
+        "korean-language-identification",
+        "korean-honorifics-and-speech-acts",
+        "multilingual-evaluation-protocol"
+      ],
+      "backlinks": [
+        "korean-honorifics-and-speech-acts",
+        "korean-english-code-switching"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-output-language-alignment/"
+    },
+    {
+      "id": "korean-tokenization",
+      "title": "한국어 토큰화",
+      "englishTitle": "Korean Tokenization",
+      "aliases": [
+        "한국어 부분어 토큰화",
+        "Korean Subword Tokenization"
+      ],
+      "summary": "한국어 토큰화는 한글 음절·자모·어절·형태소와 부분어 어휘 사이의 경계를 정해 한국어 문자열을 모델 토큰열로 바꾸는 절차다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "tokenization",
+        "korean-morphological-analysis"
+      ],
+      "related": [
+        "byte-pair-encoding",
+        "multilingual-token-fertility",
+        "hangul-unicode-normalization"
+      ],
+      "backlinks": [
+        "multilingual-token-fertility",
+        "korean-word-spacing-variation",
+        "korean-dialect-robustness",
+        "korean-morphological-analysis",
+        "korean-english-code-switching",
+        "hangul-unicode-normalization"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-tokenization/"
+    },
+    {
+      "id": "korean-morphological-analysis",
+      "title": "한국어 형태소 분석",
+      "englishTitle": "Korean Morphological Analysis",
+      "aliases": [
+        "한국어 형태 분석",
+        "Korean Morpheme Analysis"
+      ],
+      "summary": "한국어 형태소 분석은 어절을 어간·어미·조사·접사 같은 최소 기능 단위로 나누고 각 단위의 품사와 문법 정보를 판정하는 처리다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "tokenization",
+        "korean-word-spacing-variation"
+      ],
+      "related": [
+        "korean-tokenization",
+        "korean-sentence-segmentation",
+        "klue"
+      ],
+      "backlinks": [
+        "korean-pii-detection",
+        "korean-named-entity-recognition",
+        "korean-word-spacing-variation",
+        "korean-sentence-segmentation",
+        "korean-tokenization"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-morphological-analysis/"
+    },
+    {
+      "id": "korean-english-code-switching",
+      "title": "한국어·영어 코드 스위칭",
+      "englishTitle": "Korean-English Code-Switching",
+      "aliases": [
+        "한영 코드 스위칭",
+        "Korean-English Code Mixing"
+      ],
+      "summary": "한국어·영어 코드 스위칭은 한 발화나 대화 안에서 두 언어가 단어·구·문장 단위로 번갈아 나타나는 사용 양상과 처리 문제다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "multilingual-language-model",
+        "korean-language-identification"
+      ],
+      "related": [
+        "korean-output-language-alignment",
+        "multilingual-capability",
+        "korean-tokenization"
+      ],
+      "backlinks": [
+        "korean-language-identification",
+        "korean-output-language-alignment"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korean-english-code-switching/"
+    },
+    {
+      "id": "hangul-unicode-normalization",
+      "title": "한글 유니코드 정규화",
+      "englishTitle": "Hangul Unicode Normalization",
+      "aliases": [
+        "한글 NFC·NFD 정규화",
+        "Hangul Normalization"
+      ],
+      "summary": "한글 유니코드 정규화는 완성형 음절과 조합 자모처럼 정준적으로 동등한 표현을 NFC·NFD 규칙에 따라 일관된 코드 포인트열로 바꾸는 절차다.",
+      "categories": [
+        "llm"
+      ],
+      "prerequisites": [
+        "character-tokenization"
+      ],
+      "related": [
+        "korean-tokenization",
+        "korean-word-spacing-variation",
+        "byte-level-tokenization"
+      ],
+      "backlinks": [
+        "korean-sentence-segmentation",
+        "korean-language-identification",
+        "korean-tokenization"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/hangul-unicode-normalization/"
     },
     {
       "id": "function-calling",
@@ -40138,6 +41107,409 @@
       "url": "/wiki/sparse-transformer/"
     },
     {
+      "id": "a2a-observability",
+      "title": "A2A 관측성",
+      "englishTitle": "A2A Observability",
+      "aliases": [
+        "Agent-to-Agent Observability",
+        "A2A Tracing"
+      ],
+      "summary": "A2A 관측성은 여러 조직·에이전트 경계를 지나는 Message와 Task, Artifact, 인증·정책 결정을 공통 추적 문맥과 지표로 연결하는 운영 체계다.",
+      "categories": [
+        "agents",
+        "evaluation"
+      ],
+      "prerequisites": [
+        "observability",
+        "a2a-task-lifecycle"
+      ],
+      "related": [
+        "agent-trace-evaluation",
+        "prompt-trace",
+        "a2a-protocol-gateway",
+        "a2a-conformance-testing"
+      ],
+      "backlinks": [
+        "a2a-artifact",
+        "a2a-conformance-testing",
+        "a2a-push-notification",
+        "a2a-protocol-gateway"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-observability/"
+    },
+    {
+      "id": "a2a-capability-negotiation",
+      "title": "A2A 기능 협상",
+      "englishTitle": "A2A Capability Negotiation",
+      "aliases": [
+        "A2A Capability Negotiation",
+        "에이전트 기능 협상"
+      ],
+      "summary": "A2A 기능 협상은 Agent Card와 요청 헤더를 대조해 양쪽이 함께 지원하는 바인딩, 버전, 모달리티, 스트리밍·푸시·확장을 선택하는 절차다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "agent-card"
+      ],
+      "related": [
+        "a2a-protocol-binding",
+        "a2a-version-negotiation",
+        "a2a-push-notification",
+        "api-version-negotiation"
+      ],
+      "backlinks": [
+        "agent-discovery",
+        "agent-card",
+        "a2a-version-negotiation",
+        "a2a-protocol-binding"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-capability-negotiation/"
+    },
+    {
+      "id": "a2a-message",
+      "title": "A2A 메시지",
+      "englishTitle": "A2A Message",
+      "aliases": [
+        "A2A Message Object",
+        "Message"
+      ],
+      "summary": "A2A 메시지는 클라이언트와 원격 에이전트 사이의 한 차례 의사소통을 역할, 고유 messageId와 하나 이상의 Part로 표현하는 프로토콜 객체다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "a2a-protocol"
+      ],
+      "related": [
+        "a2a-content-part",
+        "a2a-artifact",
+        "a2a-task-lifecycle",
+        "inter-agent-communication"
+      ],
+      "backlinks": [
+        "a2a-artifact",
+        "a2a-task-lifecycle",
+        "a2a-content-part"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-message/"
+    },
+    {
+      "id": "a2a-version-negotiation",
+      "title": "A2A 버전 협상",
+      "englishTitle": "A2A Version Negotiation",
+      "aliases": [
+        "A2A Protocol Versioning",
+        "A2A-Version"
+      ],
+      "summary": "A2A 버전 협상은 Agent Card의 인터페이스 버전과 요청의 A2A-Version을 맞춰 기능 의미를 고정하고 호환되지 않는 Major.Minor 조합을 명시적으로 거부하는 절차다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "a2a-protocol-binding",
+        "api-version-negotiation"
+      ],
+      "related": [
+        "a2a-capability-negotiation",
+        "agent-card",
+        "a2a-conformance-testing",
+        "api-schema-evolution"
+      ],
+      "backlinks": [
+        "a2a-capability-negotiation",
+        "a2a-conformance-testing",
+        "a2a-protocol-binding"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-version-negotiation/"
+    },
+    {
+      "id": "a2a-artifact",
+      "title": "A2A 산출물",
+      "englishTitle": "A2A Artifact",
+      "aliases": [
+        "A2A Artifact",
+        "Artifact Object"
+      ],
+      "summary": "A2A 산출물은 원격 에이전트가 Task 수행 결과로 생성한 문서·파일·구조화 데이터를 고유 artifactId와 Part 집합으로 표현한 납품 객체다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "a2a-task-lifecycle",
+        "a2a-content-part"
+      ],
+      "related": [
+        "a2a-message",
+        "artifact-registry",
+        "model-artifact-format",
+        "a2a-observability"
+      ],
+      "backlinks": [
+        "a2a-message",
+        "a2a-task-lifecycle",
+        "a2a-content-part"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-artifact/"
+    },
+    {
+      "id": "a2a-authentication-delegation",
+      "title": "A2A 인증과 권한 위임",
+      "englishTitle": "A2A Authentication and Delegation",
+      "aliases": [
+        "A2A Authorization",
+        "A2A Delegated Authorization"
+      ],
+      "summary": "A2A 인증과 권한 위임은 클라이언트·사용자·원격 에이전트의 신원을 HTTP 계층에서 확인하고 작업에 필요한 최소 권한만 대상 서비스에 전달하는 보안 경계다.",
+      "categories": [
+        "agents",
+        "safety"
+      ],
+      "prerequisites": [
+        "oauth",
+        "agent-delegation"
+      ],
+      "related": [
+        "agent-card",
+        "agent-least-privilege",
+        "oauth-scope",
+        "mutual-tls"
+      ],
+      "backlinks": [
+        "agent-card",
+        "a2a-protocol-gateway"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-authentication-delegation/"
+    },
+    {
+      "id": "a2a-task-lifecycle",
+      "title": "A2A 작업 수명 주기",
+      "englishTitle": "A2A Task Lifecycle",
+      "aliases": [
+        "A2A Task State Machine",
+        "A2A Task Lifecycle"
+      ],
+      "summary": "A2A 작업 수명 주기는 장기 실행을 Task 객체와 명시적 상태 전이로 추적하고 입력 요구, 인증 요구, 완료·취소·실패를 일관되게 처리하는 계약이다.",
+      "categories": [
+        "agents"
+      ],
+      "prerequisites": [
+        "a2a-protocol",
+        "agent-state-machine"
+      ],
+      "related": [
+        "agent-run-contract",
+        "a2a-message",
+        "a2a-artifact",
+        "a2a-push-notification"
+      ],
+      "backlinks": [
+        "a2a-protocol",
+        "a2a-observability",
+        "a2a-message",
+        "a2a-artifact",
+        "a2a-push-notification"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-task-lifecycle/"
+    },
+    {
+      "id": "a2a-conformance-testing",
+      "title": "A2A 적합성 시험",
+      "englishTitle": "A2A Conformance Testing",
+      "aliases": [
+        "A2A Protocol Conformance",
+        "A2A Contract Testing"
+      ],
+      "summary": "A2A 적합성 시험은 구현이 정본 데이터 모델, 연산, 상태 전이, 오류와 선택한 바인딩의 규범 요구를 같은 의미로 수행하는지 검증하는 계약 시험이다.",
+      "categories": [
+        "agents",
+        "evaluation"
+      ],
+      "prerequisites": [
+        "a2a-protocol",
+        "api-conformance-suite"
+      ],
+      "related": [
+        "a2a-protocol-binding",
+        "a2a-version-negotiation",
+        "a2a-observability",
+        "llm-api-contract-test"
+      ],
+      "backlinks": [
+        "a2a-observability",
+        "a2a-version-negotiation"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-conformance-testing/"
+    },
+    {
+      "id": "a2a-content-part",
+      "title": "A2A 콘텐츠 파트",
+      "englishTitle": "A2A Content Part",
+      "aliases": [
+        "A2A Part",
+        "Part Object"
+      ],
+      "summary": "A2A 콘텐츠 파트는 Message와 Artifact 안에서 텍스트, 원시 바이트, URL 또는 구조화 데이터를 하나만 선택해 담는 최소 콘텐츠 컨테이너다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "a2a-protocol"
+      ],
+      "related": [
+        "a2a-message",
+        "a2a-artifact",
+        "multimodal-input-contract",
+        "http-message-body"
+      ],
+      "backlinks": [
+        "a2a-message",
+        "a2a-artifact"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-content-part/"
+    },
+    {
+      "id": "a2a-push-notification",
+      "title": "A2A 푸시 알림",
+      "englishTitle": "A2A Push Notification",
+      "aliases": [
+        "A2A Push Notifications",
+        "Task Push Notification"
+      ],
+      "summary": "A2A 푸시 알림은 장기 Task의 상태 변화가 생겼을 때 서버가 등록된 웹훅으로 알림을 보내 연결이 끊긴 클라이언트가 작업을 다시 조회하게 하는 비동기 전달 방식이다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "a2a-task-lifecycle",
+        "webhook"
+      ],
+      "related": [
+        "stream-resume-protocol",
+        "llm-webhook-signature",
+        "llm-webhook-replay-defense",
+        "a2a-observability"
+      ],
+      "backlinks": [
+        "a2a-capability-negotiation",
+        "a2a-task-lifecycle"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-push-notification/"
+    },
+    {
+      "id": "a2a-protocol-gateway",
+      "title": "A2A 프로토콜 게이트웨이",
+      "englishTitle": "A2A Protocol Gateway",
+      "aliases": [
+        "Agent Protocol Gateway",
+        "A2A Gateway"
+      ],
+      "summary": "A2A 프로토콜 게이트웨이는 에이전트 호출 경계에서 발견, 바인딩 변환, 인증, 정책, 속도 제한과 관측을 중앙 적용하되 Task 의미를 보존하는 중개 계층이다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "a2a-protocol",
+        "model-gateway"
+      ],
+      "related": [
+        "a2a-protocol-binding",
+        "a2a-authentication-delegation",
+        "a2a-observability",
+        "mcp-a2a-boundary"
+      ],
+      "backlinks": [
+        "a2a-observability",
+        "a2a-protocol-binding",
+        "mcp-a2a-boundary"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-protocol-gateway/"
+    },
+    {
+      "id": "a2a-protocol-binding",
+      "title": "A2A 프로토콜 바인딩",
+      "englishTitle": "A2A Protocol Binding",
+      "aliases": [
+        "A2A Binding",
+        "A2A Transport Binding"
+      ],
+      "summary": "A2A 프로토콜 바인딩은 추상 A2A 연산과 데이터 모델을 JSON-RPC, gRPC, HTTP+JSON/REST 같은 구체적 전송·직렬화 규칙에 매핑하는 계약이다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "a2a-protocol"
+      ],
+      "related": [
+        "a2a-capability-negotiation",
+        "a2a-version-negotiation",
+        "streaming-response-contract",
+        "a2a-protocol-gateway"
+      ],
+      "backlinks": [
+        "a2a-capability-negotiation",
+        "a2a-version-negotiation",
+        "a2a-conformance-testing",
+        "a2a-protocol-gateway"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/a2a-protocol-binding/"
+    },
+    {
       "id": "adagrad",
       "title": "AdaGrad",
       "englishTitle": "AdaGrad",
@@ -40318,6 +41690,7 @@
         "representation-bias",
         "prompt-leakage",
         "training-data-poisoning",
+        "korean-ai-basic-act",
         "acceptable-use-policy",
         "scalable-oversight",
         "evasion-attack",
@@ -40340,12 +41713,16 @@
         "ai-accountability",
         "ai-control-problem",
         "ai-interpretability",
+        "general-purpose-ai-provider-obligations",
+        "eu-ai-literacy-duty",
+        "eu-ai-act-prohibited-practices",
         "llm-penetration-testing",
         "nist-ai-risk-management-framework",
         "rag-poisoning"
       ],
       "courses": [
-        "responsible-ai"
+        "responsible-ai",
+        "ai-regulation-literacy"
       ],
       "reviewedAt": "2026-07-12",
       "url": "/wiki/ai-governance/"
@@ -40369,8 +41746,13 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-high-impact-ai-operator-duties",
+        "eu-high-risk-conformity-assessment"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/ai-governance-framework/"
     },
@@ -40471,8 +41853,16 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-high-impact-ai-confirmation",
+        "korean-high-impact-ai",
+        "korean-ai-basic-act",
+        "eu-high-risk-ai-system",
+        "eu-ai-act-prohibited-practices"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-08-09",
       "url": "/wiki/ai-regulatory-classification/"
     },
@@ -40709,8 +42099,13 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "systemic-risk-general-purpose-ai-model",
+        "korean-ai-safety-duty",
+        "eu-high-risk-post-market-monitoring"
+      ],
       "courses": [
+        "ai-regulation-literacy",
         "ai-security-redteam"
       ],
       "reviewedAt": "2026-07-15",
@@ -40735,7 +42130,9 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "korean-ai-transparency-duty"
+      ],
       "courses": [],
       "reviewedAt": "2026-08-09",
       "url": "/wiki/ai-disclosure/"
@@ -40951,6 +42348,7 @@
         "session-state",
         "agent-guardrail",
         "inter-agent-communication",
+        "a2a-protocol",
         "agent-plan-quality",
         "agent-task-decomposition",
         "agent-task-success",
@@ -41030,6 +42428,7 @@
         "mcp-host"
       ],
       "courses": [
+        "agent-interoperability",
         "production-agents",
         "agent-systems"
       ],
@@ -41081,8 +42480,12 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "korean-ai-safety-duty",
+        "eu-high-risk-post-market-monitoring"
+      ],
       "courses": [
+        "ai-regulation-literacy",
         "ai-security-redteam"
       ],
       "reviewedAt": "2026-07-15",
@@ -41107,8 +42510,12 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "systemic-risk-general-purpose-ai-model",
+        "korean-ai-safety-duty"
+      ],
       "courses": [
+        "ai-regulation-literacy",
         "ai-security-redteam"
       ],
       "reviewedAt": "2026-07-15",
@@ -41266,7 +42673,9 @@
         "content-moderation"
       ],
       "backlinks": [],
-      "courses": [],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-08-24",
       "url": "/wiki/ai-compliance-monitoring/"
     },
@@ -41289,8 +42698,16 @@
         "ai-governance",
         "content-moderation"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "korean-high-impact-ai-operator-duties",
+        "korean-ai-transparency-duty",
+        "eu-high-risk-record-keeping",
+        "eu-ai-literacy-duty",
+        "eu-ai-act-prohibited-practices"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/ai-accountability/"
     },
@@ -41651,7 +43068,9 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "eu-high-risk-record-keeping"
+      ],
       "courses": [],
       "reviewedAt": "2026-08-24",
       "url": "/wiki/api-audit-log/"
@@ -41911,10 +43330,14 @@
         "api-schema-evolution"
       ],
       "backlinks": [
+        "a2a-capability-negotiation",
+        "a2a-version-negotiation",
         "api-schema-evolution",
         "api-conformance-suite"
       ],
-      "courses": [],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/api-version-negotiation/"
     },
@@ -42020,6 +43443,7 @@
       ],
       "backlinks": [
         "dynamic-reference",
+        "a2a-version-negotiation",
         "api-version-negotiation",
         "api-backward-compatibility",
         "json-schema-dialect"
@@ -42237,10 +43661,13 @@
         "api-version-negotiation"
       ],
       "backlinks": [
+        "a2a-conformance-testing",
         "api-provider-abstraction",
         "api-version-negotiation"
       ],
-      "courses": [],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-16",
       "url": "/wiki/api-conformance-suite/"
     },
@@ -42996,6 +44423,311 @@
       "url": "/wiki/dpo-beta-selection/"
     },
     {
+      "id": "eu-high-risk-record-keeping",
+      "title": "EU 고위험 AI 기록보존",
+      "englishTitle": "EU High-Risk AI Record-Keeping",
+      "aliases": [
+        "AI Act Record-Keeping",
+        "자동 로그 기록"
+      ],
+      "summary": "EU 고위험 AI 기록보존은 시스템이 수명주기 사건을 자동 기록하고 책임 주체가 요구 기간 동안 추적 가능한 증거를 유지하게 하는 요구사항이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "eu-high-risk-ai-system",
+        "training-audit-log"
+      ],
+      "related": [
+        "api-audit-log",
+        "ai-accountability",
+        "eu-high-risk-post-market-monitoring"
+      ],
+      "backlinks": [],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-high-risk-record-keeping/"
+    },
+    {
+      "id": "eu-high-risk-data-governance",
+      "title": "EU 고위험 AI 데이터 거버넌스",
+      "englishTitle": "EU High-Risk AI Data Governance",
+      "aliases": [
+        "AI Act Data Governance",
+        "AI Act Article 10"
+      ],
+      "summary": "EU 고위험 AI 데이터 거버넌스는 학습·검증·시험 데이터의 목적 적합성, 품질, 대표성과 편향 통제를 수명주기 절차로 관리하는 요구사항이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "eu-high-risk-ai-system",
+        "training-data-provenance"
+      ],
+      "related": [
+        "bias-fairness",
+        "privacy",
+        "training-audit-log"
+      ],
+      "backlinks": [
+        "eu-high-risk-ai-system"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-high-risk-data-governance/"
+    },
+    {
+      "id": "eu-high-risk-post-market-monitoring",
+      "title": "EU 고위험 AI 사후시장 모니터링",
+      "englishTitle": "EU High-Risk AI Post-Market Monitoring",
+      "aliases": [
+        "AI Act Post-Market Monitoring"
+      ],
+      "summary": "EU 고위험 AI 사후시장 모니터링은 출시 후 성능·위험·오용·사고 정보를 체계적으로 수집해 지속 준수와 개선에 사용하는 체계다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "eu-high-risk-ai-system",
+        "observability"
+      ],
+      "related": [
+        "ai-incident-reporting",
+        "eu-high-risk-conformity-assessment",
+        "ai-risk-register"
+      ],
+      "backlinks": [
+        "eu-high-risk-record-keeping",
+        "eu-high-risk-conformity-assessment"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-high-risk-post-market-monitoring/"
+    },
+    {
+      "id": "eu-high-risk-ai-system",
+      "title": "EU 고위험 AI 시스템",
+      "englishTitle": "EU High-Risk AI System",
+      "aliases": [
+        "High-Risk AI System",
+        "AI Act Article 6"
+      ],
+      "summary": "EU 고위험 AI 시스템은 제품 안전 구성요소 또는 민감한 이용 사례로 인해 건강·안전·기본권 위험이 큰 것으로 분류되는 AI 시스템이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "ai-regulatory-classification",
+        "eu-ai-act-prohibited-practices"
+      ],
+      "related": [
+        "eu-high-risk-conformity-assessment",
+        "eu-high-risk-data-governance",
+        "korean-high-impact-ai"
+      ],
+      "backlinks": [
+        "korean-high-impact-ai",
+        "eu-high-risk-record-keeping",
+        "eu-high-risk-data-governance",
+        "eu-high-risk-post-market-monitoring",
+        "eu-high-risk-conformity-assessment",
+        "eu-fundamental-rights-impact-assessment",
+        "eu-ai-literacy-duty",
+        "eu-ai-act-prohibited-practices"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-high-risk-ai-system/"
+    },
+    {
+      "id": "eu-high-risk-conformity-assessment",
+      "title": "EU 고위험 AI 적합성 평가",
+      "englishTitle": "EU High-Risk AI Conformity Assessment",
+      "aliases": [
+        "AI Act Conformity Assessment"
+      ],
+      "summary": "EU 고위험 AI 적합성 평가는 시장 출시·사용 개시 전에 시스템이 AI Act 필수 요구사항을 충족함을 입증하는 절차다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "eu-high-risk-ai-system",
+        "ai-governance-framework"
+      ],
+      "related": [
+        "eu-high-risk-post-market-monitoring",
+        "safety-case",
+        "model-artifact-signing"
+      ],
+      "backlinks": [
+        "eu-high-risk-post-market-monitoring",
+        "eu-high-risk-ai-system"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-high-risk-conformity-assessment/"
+    },
+    {
+      "id": "eu-fundamental-rights-impact-assessment",
+      "title": "EU 기본권 영향평가",
+      "englishTitle": "EU Fundamental Rights Impact Assessment",
+      "aliases": [
+        "FRIA",
+        "Fundamental Rights Impact Assessment"
+      ],
+      "summary": "EU 기본권 영향평가(FRIA)는 특정 고위험 AI 배포자가 사용 맥락에서 기본권 영향을 식별·완화하고 감독기관에 알리는 절차다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "eu-high-risk-ai-system",
+        "algorithmic-impact-assessment"
+      ],
+      "related": [
+        "korean-ai-impact-assessment",
+        "privacy",
+        "algorithmic-contestability"
+      ],
+      "backlinks": [
+        "korean-ai-impact-assessment"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-fundamental-rights-impact-assessment/"
+    },
+    {
+      "id": "general-purpose-ai-provider-obligations",
+      "title": "EU 범용 AI 모델 제공자 의무",
+      "englishTitle": "EU General-Purpose AI Model Provider Obligations",
+      "aliases": [
+        "GPAI 제공자 의무",
+        "AI Act Article 53"
+      ],
+      "summary": "EU 범용 AI 모델 제공자 의무는 기술 문서, 하류 제공자 정보, 저작권 정책과 학습 콘텐츠 요약을 요구하는 AI Act 규율이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "ai-governance",
+        "model-transparency"
+      ],
+      "related": [
+        "systemic-risk-general-purpose-ai-model",
+        "gpai-code-of-practice",
+        "training-data-copyright"
+      ],
+      "backlinks": [
+        "systemic-risk-general-purpose-ai-model",
+        "gpai-code-of-practice"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/general-purpose-ai-provider-obligations/"
+    },
+    {
+      "id": "gpai-code-of-practice",
+      "title": "EU 범용 AI 실천강령",
+      "englishTitle": "EU General-Purpose AI Code of Practice",
+      "aliases": [
+        "GPAI Code of Practice",
+        "범용 AI 행동강령"
+      ],
+      "summary": "EU 범용 AI 실천강령은 GPAI 제공자가 AI Act의 투명성·저작권·안전·보안 의무 준수를 입증하도록 돕는 자발적 준수 도구다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "general-purpose-ai-provider-obligations",
+        "systemic-risk-general-purpose-ai-model"
+      ],
+      "related": [
+        "training-data-copyright",
+        "model-transparency",
+        "safety-case"
+      ],
+      "backlinks": [
+        "systemic-risk-general-purpose-ai-model",
+        "general-purpose-ai-provider-obligations"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/gpai-code-of-practice/"
+    },
+    {
+      "id": "eu-ai-literacy-duty",
+      "title": "EU AI 리터러시 의무",
+      "englishTitle": "EU AI Literacy Duty",
+      "aliases": [
+        "AI Act Article 4",
+        "AI 리터러시"
+      ],
+      "summary": "EU AI 리터러시 의무는 AI를 운영·사용하는 인력이 역할과 맥락에 맞는 이해와 역량을 갖추도록 조치를 설계하는 규율이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "ai-governance",
+        "human-oversight"
+      ],
+      "related": [
+        "ai-accountability",
+        "eu-high-risk-ai-system",
+        "korean-ai-basic-act"
+      ],
+      "backlinks": [],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-ai-literacy-duty/"
+    },
+    {
+      "id": "eu-ai-act-prohibited-practices",
+      "title": "EU AI Act 금지 관행",
+      "englishTitle": "EU AI Act Prohibited Practices",
+      "aliases": [
+        "EU 금지 AI 관행",
+        "AI Act Article 5"
+      ],
+      "summary": "EU AI Act 금지 관행은 기본권과 안전에 용인할 수 없는 위험을 만드는 특정 AI 개발·출시·사용 행위를 금지하는 규칙이다.",
+      "categories": [
+        "safety"
+      ],
+      "prerequisites": [
+        "ai-regulatory-classification",
+        "ai-governance"
+      ],
+      "related": [
+        "eu-high-risk-ai-system",
+        "algorithmic-contestability",
+        "ai-accountability"
+      ],
+      "backlinks": [
+        "eu-high-risk-ai-system"
+      ],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/eu-ai-act-prohibited-practices/"
+    },
+    {
       "id": "f-divergence",
       "title": "F-발산",
       "englishTitle": "F-Divergence",
@@ -43454,7 +45186,9 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-content-part"
+      ],
       "courses": [
         "production-ai-api-systems"
       ],
@@ -44296,6 +46030,133 @@
       "url": "/wiki/kl-penalty/"
     },
     {
+      "id": "klue",
+      "title": "KLUE",
+      "englishTitle": "Korean Language Understanding Evaluation",
+      "aliases": [
+        "한국어 언어 이해 평가",
+        "KLUE 벤치마크"
+      ],
+      "summary": "KLUE는 한국어 자연어 이해를 주제 분류·문장 유사도·추론·개체명·관계·의존 구문·기계독해·대화 상태 추적의 여덟 과제로 평가하는 벤치마크다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "benchmark",
+        "multilingual-evaluation-protocol"
+      ],
+      "related": [
+        "korean-named-entity-recognition",
+        "korquad",
+        "kmmlu"
+      ],
+      "backlinks": [
+        "korean-pii-detection",
+        "korean-named-entity-recognition",
+        "korean-morphological-analysis",
+        "kmmlu",
+        "ko-h5-benchmark",
+        "korquad"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/klue/"
+    },
+    {
+      "id": "kmmlu",
+      "title": "KMMLU",
+      "englishTitle": "Korean Massive Multitask Language Understanding",
+      "aliases": [
+        "한국어 대규모 다과제 언어 이해",
+        "KMMLU 벤치마크"
+      ],
+      "summary": "KMMLU는 한국어로 원래 작성된 시험 문제를 바탕으로 인문·사회·과학·공학·전문 직무 등 45개 분야의 객관식 문제 해결 능력을 평가하는 벤치마크다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "benchmark",
+        "klue"
+      ],
+      "related": [
+        "ko-h5-benchmark",
+        "benchmark-contamination",
+        "multilingual-capability"
+      ],
+      "backlinks": [
+        "klue",
+        "ko-h5-benchmark"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/kmmlu/"
+    },
+    {
+      "id": "ko-h5-benchmark",
+      "title": "Ko-H5 벤치마크",
+      "englishTitle": "Ko-H5 Benchmark",
+      "aliases": [
+        "Open Ko-LLM Leaderboard Ko-H5",
+        "Ko-H5"
+      ],
+      "summary": "Ko-H5 벤치마크는 공개 한국어 LLM을 여러 한국어 능력 과제로 비교하고 비공개 시험 세트로 데이터 오염 위험을 줄이려 한 평가 묶음이다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "benchmark",
+        "kmmlu"
+      ],
+      "related": [
+        "klue",
+        "benchmark-contamination",
+        "multilingual-evaluation-protocol"
+      ],
+      "backlinks": [
+        "korean-honorifics-and-speech-acts",
+        "kmmlu"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/ko-h5-benchmark/"
+    },
+    {
+      "id": "korquad",
+      "title": "KorQuAD",
+      "englishTitle": "Korean Question Answering Dataset",
+      "aliases": [
+        "한국어 질의응답 데이터셋",
+        "KorQuAD 벤치마크"
+      ],
+      "summary": "KorQuAD는 한국어 위키 문서를 읽고 질문의 답이 되는 문자열 범위를 찾도록 만든 한국어 기계독해 데이터셋과 평가 체계다.",
+      "categories": [
+        "evaluation"
+      ],
+      "prerequisites": [
+        "benchmark-dataset",
+        "korean-sentence-segmentation"
+      ],
+      "related": [
+        "klue",
+        "korean-named-entity-recognition",
+        "benchmark-contamination"
+      ],
+      "backlinks": [
+        "klue"
+      ],
+      "courses": [
+        "korean-multilingual-ai"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/korquad/"
+    },
+    {
       "id": "kv-cache",
       "title": "KV 캐시",
       "englishTitle": "Key-Value Cache",
@@ -44938,6 +46799,7 @@
         "llm-webhook-replay-defense"
       ],
       "backlinks": [
+        "a2a-push-notification",
         "llm-webhook-replay-defense",
         "server-sent-event-recovery"
       ],
@@ -44966,6 +46828,7 @@
         "api-rate-limit-budget"
       ],
       "backlinks": [
+        "a2a-push-notification",
         "api-rate-limit-budget",
         "llm-webhook-signature"
       ],
@@ -45217,6 +47080,7 @@
       ],
       "backlinks": [
         "model-deprecation-migration",
+        "a2a-conformance-testing",
         "llm-client-conformance"
       ],
       "courses": [],
@@ -45501,7 +47365,9 @@
         "react-agent",
         "tool-calling"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "mcp-a2a-boundary"
+      ],
       "courses": [],
       "reviewedAt": "2026-08-24",
       "url": "/wiki/mcp-server/"
@@ -45549,7 +47415,9 @@
         "react-agent",
         "tool-calling"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "mcp-a2a-boundary"
+      ],
       "courses": [],
       "reviewedAt": "2026-08-24",
       "url": "/wiki/mcp-client/"
@@ -45601,6 +47469,39 @@
       "courses": [],
       "reviewedAt": "2026-08-24",
       "url": "/wiki/mcp-host/"
+    },
+    {
+      "id": "mcp-a2a-boundary",
+      "title": "MCP와 A2A의 경계",
+      "englishTitle": "MCP and A2A Boundary",
+      "aliases": [
+        "MCP vs A2A",
+        "MCP-A2A Boundary"
+      ],
+      "summary": "MCP와 A2A의 경계는 도구·리소스 사용 계약과 독립 에이전트 협업 계약을 구분해 각 프로토콜을 올바른 시스템 경계에 배치하는 설계 원칙이다.",
+      "categories": [
+        "agents",
+        "api"
+      ],
+      "prerequisites": [
+        "mcp",
+        "a2a-protocol"
+      ],
+      "related": [
+        "mcp-client",
+        "mcp-server",
+        "inter-agent-communication",
+        "a2a-protocol-gateway"
+      ],
+      "backlinks": [
+        "a2a-protocol",
+        "a2a-protocol-gateway"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
+      "reviewedAt": "2026-08-30",
+      "url": "/wiki/mcp-a2a-boundary/"
     },
     {
       "id": "meteor-score",
@@ -45906,7 +47807,9 @@
         "content-moderation"
       ],
       "backlinks": [],
-      "courses": [],
+      "courses": [
+        "ai-regulation-literacy"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/nist-ai-risk-management-framework/"
     },
@@ -46027,8 +47930,12 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
-      "courses": [],
+      "backlinks": [
+        "a2a-authentication-delegation"
+      ],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/oauth/"
     },
@@ -46051,7 +47958,9 @@
         "http-response",
         "rest-api"
       ],
-      "backlinks": [],
+      "backlinks": [
+        "a2a-authentication-delegation"
+      ],
       "courses": [],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/oauth-scope/"
@@ -46124,9 +48033,12 @@
         "rest-api"
       ],
       "backlinks": [
+        "agent-card",
         "json-schema-annotation"
       ],
-      "courses": [],
+      "courses": [
+        "agent-interoperability"
+      ],
       "reviewedAt": "2026-07-15",
       "url": "/wiki/openapi-specification/"
     },
@@ -49248,6 +51160,243 @@
       "url": "/course/responsible-ai/"
     },
     {
+      "id": "agent-interoperability",
+      "title": "에이전트 상호운용과 실행 계약",
+      "audience": "조직 경계를 넘는 AI 에이전트 협업 API를 설계·운영·검증하는 개발자와 플랫폼 엔지니어",
+      "description": "에이전트의 기본 실행 계약에서 출발해 A2A 발견·객체·작업 수명·인증·바인딩·게이트웨이·MCP 경계·관측성과 적합성 시험까지 순서대로 학습한다.",
+      "level": "professional",
+      "prerequisiteCourses": [
+        "agent-systems"
+      ],
+      "steps": [
+        {
+          "ref": "ai-agent",
+          "required": true,
+          "reason": "자율 에이전트와 단순 모델 호출의 책임 경계를 먼저 정립한다.",
+          "title": "AI 에이전트",
+          "url": "/wiki/ai-agent/"
+        },
+        {
+          "ref": "multi-agent-system",
+          "required": true,
+          "reason": "여러 에이전트가 분업할 때 생기는 상태와 조정 문제를 이해한다.",
+          "title": "멀티 에이전트 시스템",
+          "url": "/wiki/multi-agent-system/"
+        },
+        {
+          "ref": "inter-agent-communication",
+          "required": true,
+          "reason": "에이전트 사이 메시지 교환의 일반 원칙을 프로토콜 학습의 바탕으로 삼는다.",
+          "title": "에이전트 간 통신",
+          "url": "/wiki/inter-agent-communication/"
+        },
+        {
+          "ref": "agent-run-contract",
+          "required": true,
+          "reason": "목표·권한·종료·복구를 묶는 실행 계약을 먼저 고정한다.",
+          "title": "에이전트 실행 계약",
+          "url": "/wiki/agent-run-contract/"
+        },
+        {
+          "ref": "state-management",
+          "required": true,
+          "reason": "장기 상호작용이 요구하는 상태 소유권과 지속성을 구분한다.",
+          "title": "상태 관리",
+          "url": "/wiki/state-management/"
+        },
+        {
+          "ref": "a2a-protocol",
+          "required": true,
+          "reason": "A2A의 데이터 모델·연산·바인딩 세 층을 전체 지도처럼 익힌다.",
+          "title": "에이전트 간 프로토콜",
+          "url": "/wiki/a2a-protocol/"
+        },
+        {
+          "ref": "agent-card",
+          "required": true,
+          "reason": "원격 에이전트의 인터페이스·기술·보안 요구를 읽는 정본 메타데이터를 배운다.",
+          "title": "에이전트 카드",
+          "url": "/wiki/agent-card/"
+        },
+        {
+          "ref": "agent-discovery",
+          "required": true,
+          "reason": "Agent Card를 안전하게 찾고 후보를 검증하는 발견 전략을 익힌다.",
+          "title": "에이전트 발견",
+          "url": "/wiki/agent-discovery/"
+        },
+        {
+          "ref": "a2a-capability-negotiation",
+          "required": true,
+          "reason": "바인딩·버전·모달리티·선택 기능의 공통 교집합을 선택한다.",
+          "title": "A2A 기능 협상",
+          "url": "/wiki/a2a-capability-negotiation/"
+        },
+        {
+          "ref": "openapi-specification",
+          "required": true,
+          "reason": "Agent Card 보안 스킴과 HTTP 표면이 재사용하는 API 명세 개념을 확인한다.",
+          "title": "OpenAPI 명세",
+          "url": "/wiki/openapi-specification/"
+        },
+        {
+          "ref": "oauth",
+          "required": true,
+          "reason": "원격 에이전트 인증과 위임에 필요한 OAuth 역할과 토큰을 이해한다.",
+          "title": "OAuth",
+          "url": "/wiki/oauth/"
+        },
+        {
+          "ref": "a2a-authentication-delegation",
+          "required": true,
+          "reason": "사용자·클라이언트·에이전트 권한을 최소 범위로 이어 붙인다.",
+          "title": "A2A 인증과 권한 위임",
+          "url": "/wiki/a2a-authentication-delegation/"
+        },
+        {
+          "ref": "agent-least-privilege",
+          "required": true,
+          "reason": "발견된 기능 전체가 아닌 현재 작업에 필요한 권한만 승인한다.",
+          "title": "에이전트 최소 권한",
+          "url": "/wiki/agent-least-privilege/"
+        },
+        {
+          "ref": "a2a-message",
+          "required": true,
+          "reason": "한 차례 의사소통과 messageId·역할의 계약을 구체화한다.",
+          "title": "A2A 메시지",
+          "url": "/wiki/a2a-message/"
+        },
+        {
+          "ref": "a2a-content-part",
+          "required": true,
+          "reason": "텍스트·파일·URL·구조화 데이터를 안전하게 운반하는 최소 단위를 익힌다.",
+          "title": "A2A 콘텐츠 파트",
+          "url": "/wiki/a2a-content-part/"
+        },
+        {
+          "ref": "a2a-artifact",
+          "required": true,
+          "reason": "대화와 분리된 Task 결과의 조립·검증·보존 방식을 배운다.",
+          "title": "A2A 산출물",
+          "url": "/wiki/a2a-artifact/"
+        },
+        {
+          "ref": "a2a-task-lifecycle",
+          "required": true,
+          "reason": "입력·인증 요구와 완료·취소·실패를 상태 기계로 관리한다.",
+          "title": "A2A 작업 수명 주기",
+          "url": "/wiki/a2a-task-lifecycle/"
+        },
+        {
+          "ref": "agent-state-machine",
+          "required": true,
+          "reason": "허용 상태 전이와 경쟁 조건을 일반 상태 기계 관점에서 검토한다.",
+          "title": "에이전트 상태 기계",
+          "url": "/wiki/agent-state-machine/"
+        },
+        {
+          "ref": "idempotency-key",
+          "required": true,
+          "reason": "재시도와 중복 Message가 부수 효과를 반복하지 않게 설계한다.",
+          "title": "멱등성 키",
+          "url": "/wiki/idempotency-key/"
+        },
+        {
+          "ref": "a2a-push-notification",
+          "required": true,
+          "reason": "연결이 끊긴 장기 Task 갱신을 안전한 웹훅으로 수신한다.",
+          "title": "A2A 푸시 알림",
+          "url": "/wiki/a2a-push-notification/"
+        },
+        {
+          "ref": "webhook",
+          "required": false,
+          "reason": "푸시 콜백의 서명·재시도·중복 제거 기초를 보강한다.",
+          "title": "웹훅",
+          "url": "/wiki/webhook/"
+        },
+        {
+          "ref": "streaming-response-contract",
+          "required": false,
+          "reason": "스트리밍 갱신의 순서·종료·재연결 계약을 비교한다.",
+          "title": "스트리밍 응답 계약",
+          "url": "/wiki/streaming-response-contract/"
+        },
+        {
+          "ref": "a2a-protocol-binding",
+          "required": true,
+          "reason": "추상 연산을 JSON-RPC·gRPC·REST에 의미 보존하며 매핑한다.",
+          "title": "A2A 프로토콜 바인딩",
+          "url": "/wiki/a2a-protocol-binding/"
+        },
+        {
+          "ref": "api-version-negotiation",
+          "required": true,
+          "reason": "일반 API의 버전 호환과 폐기 전략을 선행 기준으로 삼는다.",
+          "title": "API 버전 협상",
+          "url": "/wiki/api-version-negotiation/"
+        },
+        {
+          "ref": "a2a-version-negotiation",
+          "required": true,
+          "reason": "A2A-Version과 Agent Card 인터페이스 버전을 안전하게 맞춘다.",
+          "title": "A2A 버전 협상",
+          "url": "/wiki/a2a-version-negotiation/"
+        },
+        {
+          "ref": "a2a-protocol-gateway",
+          "required": true,
+          "reason": "여러 에이전트 경계에 정책·라우팅·바인딩 변환을 적용한다.",
+          "title": "A2A 프로토콜 게이트웨이",
+          "url": "/wiki/a2a-protocol-gateway/"
+        },
+        {
+          "ref": "mcp",
+          "required": true,
+          "reason": "에이전트 내부 도구·리소스 연결을 담당하는 보완 프로토콜을 복습한다.",
+          "title": "모델 컨텍스트 프로토콜",
+          "url": "/wiki/mcp/"
+        },
+        {
+          "ref": "mcp-a2a-boundary",
+          "required": true,
+          "reason": "자율 협업과 원자 도구 호출을 구분해 두 프로토콜의 경계를 배치한다.",
+          "title": "MCP와 A2A의 경계",
+          "url": "/wiki/mcp-a2a-boundary/"
+        },
+        {
+          "ref": "observability",
+          "required": true,
+          "reason": "분산 실행을 이해하는 로그·지표·추적의 일반 원리를 확인한다.",
+          "title": "관측성",
+          "url": "/wiki/observability/"
+        },
+        {
+          "ref": "a2a-observability",
+          "required": true,
+          "reason": "Task와 Message, 푸시·하위 호출을 공통 추적 문맥으로 연결한다.",
+          "title": "A2A 관측성",
+          "url": "/wiki/a2a-observability/"
+        },
+        {
+          "ref": "api-conformance-suite",
+          "required": true,
+          "reason": "API 계약을 반복 검증하는 적합성 시험 구조를 준비한다.",
+          "title": "API 적합성 테스트 스위트",
+          "url": "/wiki/api-conformance-suite/"
+        },
+        {
+          "ref": "a2a-conformance-testing",
+          "required": true,
+          "reason": "데이터 모델·상태·오류·바인딩을 통합 검증해 과정을 마무리한다.",
+          "title": "A2A 적합성 시험",
+          "url": "/wiki/a2a-conformance-testing/"
+        }
+      ],
+      "url": "/course/agent-interoperability/"
+    },
+    {
       "id": "rag-search",
       "title": "임베딩과 RAG",
       "audience": "문서 검색과 지식 기반 AI를 설계하려는 학습자",
@@ -50471,6 +52620,279 @@
       "url": "/course/prompt-systems/"
     },
     {
+      "id": "korean-multilingual-ai",
+      "title": "한국어·다국어 AI",
+      "audience": "한국어와 다국어 AI의 데이터·토큰화·평가·안전성을 설계하고 검증하려는 개발자와 연구자",
+      "description": "한글 표현과 한국어 형태·화용 처리에서 교차언어 전이, 개인정보, 코드 스위칭과 한국어 벤치마크까지 연결한 전문 학습 과정이다.",
+      "level": "professional",
+      "prerequisiteCourses": [
+        "llm-internals",
+        "model-training"
+      ],
+      "steps": [
+        {
+          "ref": "language-model",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "언어 모델",
+          "url": "/wiki/language-model/"
+        },
+        {
+          "ref": "large-language-model",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "대규모 언어 모델",
+          "url": "/wiki/large-language-model/"
+        },
+        {
+          "ref": "tokenization",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "토큰화",
+          "url": "/wiki/tokenization/"
+        },
+        {
+          "ref": "tokenizer",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "토크나이저",
+          "url": "/wiki/tokenizer/"
+        },
+        {
+          "ref": "character-tokenization",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "문자 단위 토큰화",
+          "url": "/wiki/character-tokenization/"
+        },
+        {
+          "ref": "byte-level-tokenization",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "바이트 단위 토큰화",
+          "url": "/wiki/byte-level-tokenization/"
+        },
+        {
+          "ref": "byte-pair-encoding",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "바이트 페어 인코딩",
+          "url": "/wiki/byte-pair-encoding/"
+        },
+        {
+          "ref": "unigram-language-model-tokenizer",
+          "required": true,
+          "reason": "언어 모델과 토큰화의 공통 계약을 먼저 확립한다.",
+          "title": "유니그램 언어 모델 토크나이저",
+          "url": "/wiki/unigram-language-model-tokenizer/"
+        },
+        {
+          "ref": "hangul-unicode-normalization",
+          "required": true,
+          "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다.",
+          "title": "한글 유니코드 정규화",
+          "url": "/wiki/hangul-unicode-normalization/"
+        },
+        {
+          "ref": "sentence-segmentation",
+          "required": true,
+          "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다.",
+          "title": "문장 분할",
+          "url": "/wiki/sentence-segmentation/"
+        },
+        {
+          "ref": "korean-sentence-segmentation",
+          "required": true,
+          "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다.",
+          "title": "한국어 문장 분할",
+          "url": "/wiki/korean-sentence-segmentation/"
+        },
+        {
+          "ref": "korean-word-spacing-variation",
+          "required": true,
+          "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다.",
+          "title": "한국어 띄어쓰기 변이",
+          "url": "/wiki/korean-word-spacing-variation/"
+        },
+        {
+          "ref": "korean-morphological-analysis",
+          "required": true,
+          "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다.",
+          "title": "한국어 형태소 분석",
+          "url": "/wiki/korean-morphological-analysis/"
+        },
+        {
+          "ref": "korean-tokenization",
+          "required": true,
+          "reason": "한글 표현·문장·어절·형태소 경계를 순서대로 연결한다.",
+          "title": "한국어 토큰화",
+          "url": "/wiki/korean-tokenization/"
+        },
+        {
+          "ref": "training-corpus",
+          "required": true,
+          "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다.",
+          "title": "학습 말뭉치",
+          "url": "/wiki/training-corpus/"
+        },
+        {
+          "ref": "masked-language-model",
+          "required": true,
+          "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다.",
+          "title": "마스크 언어 모델",
+          "url": "/wiki/masked-language-model/"
+        },
+        {
+          "ref": "multilingual-language-model",
+          "required": true,
+          "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다.",
+          "title": "다국어 언어 모델",
+          "url": "/wiki/multilingual-language-model/"
+        },
+        {
+          "ref": "multilingual-capability",
+          "required": true,
+          "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다.",
+          "title": "다국어 능력",
+          "url": "/wiki/multilingual-capability/"
+        },
+        {
+          "ref": "cross-lingual-embedding",
+          "required": true,
+          "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다.",
+          "title": "교차언어 임베딩",
+          "url": "/wiki/cross-lingual-embedding/"
+        },
+        {
+          "ref": "transfer-learning",
+          "required": true,
+          "reason": "다국어 사전학습과 공유 표현의 기반을 이해한다.",
+          "title": "전이학습",
+          "url": "/wiki/transfer-learning/"
+        },
+        {
+          "ref": "cross-lingual-transfer",
+          "required": true,
+          "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다.",
+          "title": "교차언어 전이",
+          "url": "/wiki/cross-lingual-transfer/"
+        },
+        {
+          "ref": "korean-language-identification",
+          "required": true,
+          "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다.",
+          "title": "한국어 언어 식별",
+          "url": "/wiki/korean-language-identification/"
+        },
+        {
+          "ref": "multilingual-token-fertility",
+          "required": true,
+          "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다.",
+          "title": "다국어 토큰 분절률",
+          "url": "/wiki/multilingual-token-fertility/"
+        },
+        {
+          "ref": "korean-honorifics-and-speech-acts",
+          "required": true,
+          "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다.",
+          "title": "한국어 높임말과 화행",
+          "url": "/wiki/korean-honorifics-and-speech-acts/"
+        },
+        {
+          "ref": "korean-named-entity-recognition",
+          "required": true,
+          "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다.",
+          "title": "한국어 개체명 인식",
+          "url": "/wiki/korean-named-entity-recognition/"
+        },
+        {
+          "ref": "personally-identifiable-information",
+          "required": true,
+          "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다.",
+          "title": "개인 식별 정보",
+          "url": "/wiki/personally-identifiable-information/"
+        },
+        {
+          "ref": "korean-pii-detection",
+          "required": true,
+          "reason": "한국어 전이·언어 식별·화용·개인정보 처리 능력을 설계한다.",
+          "title": "한국어 개인정보 탐지",
+          "url": "/wiki/korean-pii-detection/"
+        },
+        {
+          "ref": "korean-english-code-switching",
+          "required": true,
+          "reason": "혼용 입력과 출력 언어·방언 강건성을 실제 사용 맥락에서 평가한다.",
+          "title": "한국어·영어 코드 스위칭",
+          "url": "/wiki/korean-english-code-switching/"
+        },
+        {
+          "ref": "korean-output-language-alignment",
+          "required": true,
+          "reason": "혼용 입력과 출력 언어·방언 강건성을 실제 사용 맥락에서 평가한다.",
+          "title": "한국어 출력 언어 정렬",
+          "url": "/wiki/korean-output-language-alignment/"
+        },
+        {
+          "ref": "korean-dialect-robustness",
+          "required": true,
+          "reason": "혼용 입력과 출력 언어·방언 강건성을 실제 사용 맥락에서 평가한다.",
+          "title": "한국어 방언 강건성",
+          "url": "/wiki/korean-dialect-robustness/"
+        },
+        {
+          "ref": "benchmark",
+          "required": true,
+          "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다.",
+          "title": "벤치마크",
+          "url": "/wiki/benchmark/"
+        },
+        {
+          "ref": "benchmark-contamination",
+          "required": true,
+          "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다.",
+          "title": "벤치마크 오염",
+          "url": "/wiki/benchmark-contamination/"
+        },
+        {
+          "ref": "multilingual-evaluation-protocol",
+          "required": true,
+          "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다.",
+          "title": "다국어 평가 프로토콜",
+          "url": "/wiki/multilingual-evaluation-protocol/"
+        },
+        {
+          "ref": "klue",
+          "required": true,
+          "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다.",
+          "title": "KLUE",
+          "url": "/wiki/klue/"
+        },
+        {
+          "ref": "korquad",
+          "required": false,
+          "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다.",
+          "title": "KorQuAD",
+          "url": "/wiki/korquad/"
+        },
+        {
+          "ref": "kmmlu",
+          "required": false,
+          "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다.",
+          "title": "KMMLU",
+          "url": "/wiki/kmmlu/"
+        },
+        {
+          "ref": "ko-h5-benchmark",
+          "required": false,
+          "reason": "벤치마크의 데이터 계보·오염·지표를 구분해 한국어 모델을 검증한다.",
+          "title": "Ko-H5 벤치마크",
+          "url": "/wiki/ko-h5-benchmark/"
+        }
+      ],
+      "url": "/course/korean-multilingual-ai/"
+    },
+    {
       "id": "neural-model-architectures",
       "title": "현대 신경망과 모델 아키텍처",
       "audience": "신경망의 계산 구조와 주요 아키텍처 계보를 체계적으로 익히려는 학습자",
@@ -51190,6 +53612,271 @@
         }
       ],
       "url": "/course/efficient-long-context-transformers/"
+    },
+    {
+      "id": "ai-regulation-literacy",
+      "title": "AI 규제와 리터러시",
+      "audience": "한국과 EU의 AI 규제를 제품·모델·운영 통제로 전환해야 하는 기획자, 개발자, 품질·법무·정책 담당자",
+      "description": "한국 인공지능기본법과 EU AI Act를 관할·역할·위험 분류부터 영향평가, 적합성, 운영 증거와 GPAI 의무까지 공식 1차 자료에 따라 학습하는 전문 과정이다.",
+      "level": "professional",
+      "prerequisiteCourses": [
+        "responsible-ai"
+      ],
+      "steps": [
+        {
+          "ref": "ai-governance",
+          "required": true,
+          "reason": "규제 문서를 읽기 전에 조직 책임·정책·증거를 연결하는 거버넌스의 공통 언어를 익힌다.",
+          "title": "AI 거버넌스",
+          "url": "/wiki/ai-governance/"
+        },
+        {
+          "ref": "ai-accountability",
+          "required": true,
+          "reason": "결정권자와 실행자, 설명·시정 책임을 구분해 이후 법정 역할 분석의 기준을 세운다.",
+          "title": "AI 책임성",
+          "url": "/wiki/ai-accountability/"
+        },
+        {
+          "ref": "ai-regulatory-classification",
+          "required": true,
+          "reason": "금지·고위험·투명성·일반 위험을 구분하는 위험 기반 규제 구조를 익힌다.",
+          "title": "AI 규제 분류",
+          "url": "/wiki/ai-regulatory-classification/"
+        },
+        {
+          "ref": "korean-ai-basic-act",
+          "required": true,
+          "reason": "한국 인공지능기본법의 적용범위와 진흥·신뢰 의무 구조를 현재 시행본으로 확인한다.",
+          "title": "한국 인공지능기본법",
+          "url": "/wiki/korean-ai-basic-act/"
+        },
+        {
+          "ref": "korean-high-impact-ai",
+          "required": true,
+          "reason": "한국 법의 고영향 인공지능 구성요건을 목적과 실제 영향 중심으로 판정한다.",
+          "title": "한국 고영향 인공지능",
+          "url": "/wiki/korean-high-impact-ai/"
+        },
+        {
+          "ref": "korean-high-impact-ai-confirmation",
+          "required": true,
+          "reason": "불확실한 고영향 분류를 자체 검토와 공식 확인·재확인 절차로 연결한다.",
+          "title": "고영향 인공지능 확인 절차",
+          "url": "/wiki/korean-high-impact-ai-confirmation/"
+        },
+        {
+          "ref": "korean-ai-transparency-duty",
+          "required": true,
+          "reason": "한국의 사전 고지와 생성 결과물 표시를 매체·접근성·예외별로 설계한다.",
+          "title": "한국 AI 투명성 확보 의무",
+          "url": "/wiki/korean-ai-transparency-duty/"
+        },
+        {
+          "ref": "model-transparency",
+          "required": false,
+          "reason": "법적 고지와 모델의 역량·한계 투명성이 어떤 증거에서 만나고 다른지 비교한다.",
+          "title": "모델 투명성",
+          "url": "/wiki/model-transparency/"
+        },
+        {
+          "ref": "korean-ai-safety-duty",
+          "required": true,
+          "reason": "법정 누적 연산량 기준과 수명주기 위험관리·사고 대응 의무를 구분한다.",
+          "title": "한국 AI 안전성 확보 의무",
+          "url": "/wiki/korean-ai-safety-duty/"
+        },
+        {
+          "ref": "ai-risk-assessment",
+          "required": true,
+          "reason": "위험 시나리오의 심각도·가능성·통제를 평가하는 실무 방법을 적용한다.",
+          "title": "AI 위험 평가",
+          "url": "/wiki/ai-risk-assessment/"
+        },
+        {
+          "ref": "ai-risk-register",
+          "required": true,
+          "reason": "평가 결과를 소유자·조치·기한·잔여 위험이 있는 운영 등록부로 전환한다.",
+          "title": "AI 위험 대장",
+          "url": "/wiki/ai-risk-register/"
+        },
+        {
+          "ref": "korean-high-impact-ai-operator-duties",
+          "required": true,
+          "reason": "개발사업자와 이용사업자의 고영향 AI 책무를 공급망 증거에 연결한다.",
+          "title": "한국 고영향 AI 사업자 책무",
+          "url": "/wiki/korean-high-impact-ai-operator-duties/"
+        },
+        {
+          "ref": "algorithmic-impact-assessment",
+          "required": true,
+          "reason": "일반 알고리즘 영향평가의 목적·이해관계자·완화 구조를 먼저 익힌다.",
+          "title": "알고리즘 영향 평가",
+          "url": "/wiki/algorithmic-impact-assessment/"
+        },
+        {
+          "ref": "korean-ai-impact-assessment",
+          "required": true,
+          "reason": "한국 법정 AI 영향평가의 대상·범위와 갱신 조건을 일반 방법론과 구분한다.",
+          "title": "한국 AI 영향평가",
+          "url": "/wiki/korean-ai-impact-assessment/"
+        },
+        {
+          "ref": "human-oversight",
+          "required": true,
+          "reason": "사람 감독을 이름뿐인 승인 단계가 아니라 권한·정보·개입 가능한 통제로 설계한다.",
+          "title": "인간 감독",
+          "url": "/wiki/human-oversight/"
+        },
+        {
+          "ref": "eu-ai-literacy-duty",
+          "required": true,
+          "reason": "역할·맥락별 AI 리터러시 조치와 2026년 개정 이후의 검토 경계를 이해한다.",
+          "title": "EU AI 리터러시 의무",
+          "url": "/wiki/eu-ai-literacy-duty/"
+        },
+        {
+          "ref": "eu-ai-act-prohibited-practices",
+          "required": true,
+          "reason": "EU에서 허용되지 않는 관행의 구성요건과 좁은 예외를 기능 단위로 판정한다.",
+          "title": "EU AI Act 금지 관행",
+          "url": "/wiki/eu-ai-act-prohibited-practices/"
+        },
+        {
+          "ref": "eu-high-risk-ai-system",
+          "required": true,
+          "reason": "Annex I 제품 경로와 Annex III 이용 사례 경로, 변경된 적용 일정을 구분한다.",
+          "title": "EU 고위험 AI 시스템",
+          "url": "/wiki/eu-high-risk-ai-system/"
+        },
+        {
+          "ref": "eu-high-risk-data-governance",
+          "required": true,
+          "reason": "의도된 목적에 맞는 데이터 품질·대표성·편향 통제를 증거화한다.",
+          "title": "EU 고위험 AI 데이터 거버넌스",
+          "url": "/wiki/eu-high-risk-data-governance/"
+        },
+        {
+          "ref": "bias-fairness",
+          "required": false,
+          "reason": "법정 데이터 통제를 집단별 오류·공정성 평가와 연결하되 동일 개념으로 합치지 않는다.",
+          "title": "편향과 공정성",
+          "url": "/wiki/bias-fairness/"
+        },
+        {
+          "ref": "privacy",
+          "required": true,
+          "reason": "규제 증거와 로그를 수집할 때 개인정보 적법성·최소화·보유 경계를 함께 검토한다.",
+          "title": "개인정보 보호",
+          "url": "/wiki/privacy/"
+        },
+        {
+          "ref": "eu-high-risk-record-keeping",
+          "required": true,
+          "reason": "고위험 시스템의 자동 기록과 조직별 보존·접근·삭제 책임을 설계한다.",
+          "title": "EU 고위험 AI 기록보존",
+          "url": "/wiki/eu-high-risk-record-keeping/"
+        },
+        {
+          "ref": "eu-high-risk-conformity-assessment",
+          "required": true,
+          "reason": "출시 전 필수 요구사항을 시험·기술 문서·선언과 적합성 평가 경로에 매핑한다.",
+          "title": "EU 고위험 AI 적합성 평가",
+          "url": "/wiki/eu-high-risk-conformity-assessment/"
+        },
+        {
+          "ref": "safety-case",
+          "required": false,
+          "reason": "주장·논거·증거 구조로 준수 판단과 잔여 위험을 검토 가능하게 정리한다.",
+          "title": "안전성 논증서",
+          "url": "/wiki/safety-case/"
+        },
+        {
+          "ref": "eu-high-risk-post-market-monitoring",
+          "required": true,
+          "reason": "출시 후 위험·성능·오용 신호를 능동 수집해 위험관리와 변경 통제로 되돌린다.",
+          "title": "EU 고위험 AI 사후시장 모니터링",
+          "url": "/wiki/eu-high-risk-post-market-monitoring/"
+        },
+        {
+          "ref": "ai-incident-reporting",
+          "required": true,
+          "reason": "사고 심각도·시간선·완화·후속 갱신을 법정 보고와 내부 대응에 연결한다.",
+          "title": "AI 사고 보고",
+          "url": "/wiki/ai-incident-reporting/"
+        },
+        {
+          "ref": "eu-fundamental-rights-impact-assessment",
+          "required": true,
+          "reason": "특정 배포자의 실제 사용 맥락에서 기본권 위험과 감독기관 통지를 평가한다.",
+          "title": "EU 기본권 영향평가",
+          "url": "/wiki/eu-fundamental-rights-impact-assessment/"
+        },
+        {
+          "ref": "algorithmic-contestability",
+          "required": false,
+          "reason": "영향받는 사람이 결정을 이해하고 이의제기·시정을 요청할 수 있는 절차를 확인한다.",
+          "title": "알고리즘 이의제기 가능성",
+          "url": "/wiki/algorithmic-contestability/"
+        },
+        {
+          "ref": "general-purpose-ai-provider-obligations",
+          "required": true,
+          "reason": "GPAI 모델 제공자의 기술 문서·하류 정보·저작권 정책·학습 요약 의무를 익힌다.",
+          "title": "EU 범용 AI 모델 제공자 의무",
+          "url": "/wiki/general-purpose-ai-provider-obligations/"
+        },
+        {
+          "ref": "training-data-copyright",
+          "required": true,
+          "reason": "학습 데이터 권리와 권리유보 대응을 GPAI 저작권 정책의 기술 통제로 연결한다.",
+          "title": "학습 데이터 저작권",
+          "url": "/wiki/training-data-copyright/"
+        },
+        {
+          "ref": "systemic-risk-general-purpose-ai-model",
+          "required": true,
+          "reason": "시스템적 위험 GPAI의 통지·평가·완화·사고·사이버보안 추가 의무를 이해한다.",
+          "title": "시스템적 위험 범용 AI 모델",
+          "url": "/wiki/systemic-risk-general-purpose-ai-model/"
+        },
+        {
+          "ref": "gpai-code-of-practice",
+          "required": true,
+          "reason": "자발적 GPAI 실천강령의 장별 적용 대상과 준수 입증 방식을 법률과 구분한다.",
+          "title": "EU 범용 AI 실천강령",
+          "url": "/wiki/gpai-code-of-practice/"
+        },
+        {
+          "ref": "nist-ai-risk-management-framework",
+          "required": false,
+          "reason": "법정 요구와 별도로 위험을 GOVERN·MAP·MEASURE·MANAGE하는 실행 프레임을 비교한다.",
+          "title": "NIST AI 위험 관리 프레임워크",
+          "url": "/wiki/nist-ai-risk-management-framework/"
+        },
+        {
+          "ref": "ai-compliance-monitoring",
+          "required": true,
+          "reason": "법령·제품·통제·증거의 변화를 지속 추적하는 준수 모니터링으로 전환한다.",
+          "title": "AI 준수 모니터링",
+          "url": "/wiki/ai-compliance-monitoring/"
+        },
+        {
+          "ref": "third-party-ai-risk",
+          "required": false,
+          "reason": "외부 모델·데이터·도구 때문에 직접 확보하지 못하는 증거와 계약 통제를 검토한다.",
+          "title": "제3자 AI 위험",
+          "url": "/wiki/third-party-ai-risk/"
+        },
+        {
+          "ref": "ai-governance-framework",
+          "required": true,
+          "reason": "한국·EU 규칙을 조직의 역할, 출시 게이트, 운영 모니터링과 재검토 주기로 통합한다.",
+          "title": "AI 거버넌스 프레임워크",
+          "url": "/wiki/ai-governance-framework/"
+        }
+      ],
+      "url": "/course/ai-regulation-literacy/"
     },
     {
       "id": "ai-foundations",

@@ -142,10 +142,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 - [컨텍스트 윈도우](/wiki/context-window/)
 - [토크나이저](/wiki/tokenizer/)
 - [프롬프트](/wiki/prompt/)
+- [한국어 토큰화](/wiki/korean-tokenization/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[한국어·다국어 AI](/course/korean-multilingual-ai/)
 
 ## 참고와 다음 학습
 
@@ -161,4 +162,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **한국어·다국어 AI:** [다음 문서 — 유니그램 언어 모델 토크나이저](/wiki/unigram-language-model-tokenizer/)

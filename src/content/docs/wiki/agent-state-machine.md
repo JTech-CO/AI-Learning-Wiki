@@ -118,10 +118,11 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 - [에이전트 사고 대응 절차](/wiki/agent-incident-playbook/)
 - [에이전트 실행 계약](/wiki/agent-run-contract/)
+- [A2A 작업 수명 주기](/wiki/a2a-task-lifecycle/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[에이전트 상호운용과 실행 계약](/course/agent-interoperability/)
 
 ## 참고와 다음 학습
 
@@ -136,4 +137,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **에이전트 상호운용과 실행 계약:** [다음 문서 — 멱등성 키](/wiki/idempotency-key/)

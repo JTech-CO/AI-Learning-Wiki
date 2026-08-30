@@ -207,7 +207,7 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 포함하는 코스
 
-[AI 기초](/course/ai-foundations/)
+[한국어·다국어 AI](/course/korean-multilingual-ai/) · [AI 기초](/course/ai-foundations/)
 
 ## 참고와 다음 학습
 
@@ -221,4 +221,5 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 코스에서 계속 읽기
 
+- **한국어·다국어 AI:** [다음 문서 — 토큰화](/wiki/tokenization/)
 - **AI 기초:** [다음 문서 — 토큰](/wiki/token/)

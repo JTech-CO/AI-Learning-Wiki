@@ -34,8 +34,12 @@ jobs:
         run: npm run p0:validate
       - name: Validate P1 local learning, prompt quality, labs and learning checks
         run: npm run p1:validate
+      - name: Validate P2 multilingual, regulation and agent-interoperability content
+        run: npm run p2:validate
       - run: npm run validate:complete
       - run: npm run build:site
+      - name: Confirm P2 search, course, backlink and rendered-route integration
+        run: npm run p2:release
       - name: Confirm the release quality snapshot after the production build
         run: npm run wiki:w60:release
       - name: Install Chromium for browser regression tests

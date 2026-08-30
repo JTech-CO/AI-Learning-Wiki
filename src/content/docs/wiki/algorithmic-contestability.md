@@ -124,11 +124,12 @@ tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 }
 
 ### 이 문서를 가리키는 문서
 
-_해당 문서가 없다._
+- [EU AI Act 금지 관행](/wiki/eu-ai-act-prohibited-practices/)
+- [EU 기본권 영향평가](/wiki/eu-fundamental-rights-impact-assessment/)
 
 ### 이 문서를 포함하는 코스
 
-_포함된 코스가 없다._
+[AI 규제와 리터러시](/course/ai-regulation-literacy/)
 
 ## 참고와 다음 학습
 
@@ -147,4 +148,4 @@ _포함된 코스가 없다._
 
 ### 코스에서 계속 읽기
 
-_이 문서에서 이어지는 코스가 없다._
+- **AI 규제와 리터러시:** [다음 문서 — EU 범용 AI 모델 제공자 의무](/wiki/general-purpose-ai-provider-obligations/)

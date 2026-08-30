@@ -116,6 +116,7 @@ LLM 웹훅 서명을 적용할 수 있는 대표 상황은 두 LLM 공급자 사
 
 ### 이 문서를 가리키는 문서
 
+- [A2A 푸시 알림](/wiki/a2a-push-notification/)
 - [LLM 웹훅 재전송 방어](/wiki/llm-webhook-replay-defense/)
 - [SSE 복구](/wiki/server-sent-event-recovery/)
 

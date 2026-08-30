@@ -5,7 +5,7 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 
 모델과 시스템의 품질을 측정하는 방법 분야의 검토 완료 백과 문서다.
 
-<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-b">B</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-h">H</a><a href="#index-en-i">I</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-p">P</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a></nav>
+<nav class="wiki-letter-index" aria-label="문서 초성 색인"><a href="#index-ko-g">ㄱ</a><a href="#index-ko-n">ㄴ</a><a href="#index-ko-d">ㄷ</a><a href="#index-ko-r">ㄹ</a><a href="#index-ko-m">ㅁ</a><a href="#index-ko-b">ㅂ</a><a href="#index-ko-s">ㅅ</a><a href="#index-ko-ss">ㅆ</a><a href="#index-ko-ng">ㅇ</a><a href="#index-ko-j">ㅈ</a><a href="#index-ko-ch">ㅊ</a><a href="#index-ko-k">ㅋ</a><a href="#index-ko-t">ㅌ</a><a href="#index-ko-p">ㅍ</a><a href="#index-ko-h">ㅎ</a><a href="#index-en-a">A</a><a href="#index-en-b">B</a><a href="#index-en-f">F</a><a href="#index-en-g">G</a><a href="#index-en-h">H</a><a href="#index-en-i">I</a><a href="#index-en-k">K</a><a href="#index-en-l">L</a><a href="#index-en-m">M</a><a href="#index-en-p">P</a><a href="#index-en-r">R</a><a href="#index-en-s">S</a></nav>
 
 <div class="wiki-index-groups">
 <section class="wiki-index-group" data-index-group="ko-g">
@@ -191,10 +191,19 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <section class="wiki-index-group" data-index-group="ko-h">
 <h2 id="index-ko-h">ㅎ</h2>
 <ul class="wiki-index-list">
+<li data-article-id="korean-dialect-robustness"><a href="/wiki/korean-dialect-robustness/">한국어 방언 강건성</a><span class="wiki-index-summary">한국어 방언 강건성은 표준어 중심으로 학습한 모델이 지역 어휘·음운·문법 변이를 만나도 의미와 사용자 의도를 안정적으로 처리하는 정도다.</span></li>
+<li data-article-id="korean-output-language-alignment"><a href="/wiki/korean-output-language-alignment/">한국어 출력 언어 정렬</a><span class="wiki-index-summary">한국어 출력 언어 정렬은 한영 혼용 입력과 대화 문맥에서 사용자가 기대하는 응답 언어를 추론하고 그 언어를 끝까지 유지하는 능력이다.</span></li>
 <li data-article-id="behavioral-regression"><a href="/wiki/behavioral-regression/">행동 회귀</a><span class="wiki-index-summary">행동 회귀는 모델과 LLM 시스템의 품질 측정·비교·배포 판정 계층에서 입력·판단·관측·복구 조건을 일관된 형식으로 관리하기 위한 운영 설계 개념이다.</span></li>
 <li data-article-id="confusion-matrix"><a href="/wiki/confusion-matrix/">혼동 행렬</a><span class="wiki-index-summary">분류 모델의 실제 클래스와 예측 클래스를 교차표로 집계해 어떤 종류의 정답과 오류가 발생했는지 보여 주는 행렬이다.</span></li>
 <li data-article-id="regression-evaluation"><a href="/wiki/regression-evaluation/">회귀 테스트형 평가</a><span class="wiki-index-summary">회귀 테스트형 평가는 모델·프롬프트·데이터 변경 뒤 이전에 통과하던 사례와 핵심 지표가 나빠지지 않았는지 확인하는 반복 시험이다.</span></li>
 <li data-article-id="effect-size"><a href="/wiki/effect-size/">효과 크기</a><span class="wiki-index-summary">효과 크기는 두 조건의 차이나 변수 관계의 크기를 표본 수와 분리해 정량화한 값이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-a">
+<h2 id="index-en-a">A</h2>
+<ul class="wiki-index-list">
+<li data-article-id="a2a-observability"><a href="/wiki/a2a-observability/">A2A 관측성</a><span class="wiki-index-summary">A2A 관측성은 여러 조직·에이전트 경계를 지나는 Message와 Task, Artifact, 인증·정책 결정을 공통 추적 문맥과 지표로 연결하는 운영 체계다.</span></li>
+<li data-article-id="a2a-conformance-testing"><a href="/wiki/a2a-conformance-testing/">A2A 적합성 시험</a><span class="wiki-index-summary">A2A 적합성 시험은 구현이 정본 데이터 모델, 연산, 상태 전이, 오류와 선택한 바인딩의 규범 요구를 같은 의미로 수행하는지 검증하는 계약 시험이다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-b">
@@ -229,6 +238,15 @@ description: "모델과 시스템의 품질을 측정하는 방법"
 <h2 id="index-en-i">I</h2>
 <ul class="wiki-index-list">
 <li data-article-id="imagenet"><a href="/wiki/imagenet/">ImageNet</a><span class="wiki-index-summary">ImageNet은 대규모 계층형 이미지 범주와 주석으로 구성되어 이미지 분류와 시각 표현 학습 연구에 널리 쓰인 데이터셋이다.</span></li>
+</ul>
+</section>
+<section class="wiki-index-group" data-index-group="en-k">
+<h2 id="index-en-k">K</h2>
+<ul class="wiki-index-list">
+<li data-article-id="klue"><a href="/wiki/klue/">KLUE</a><span class="wiki-index-summary">KLUE는 한국어 자연어 이해를 주제 분류·문장 유사도·추론·개체명·관계·의존 구문·기계독해·대화 상태 추적의 여덟 과제로 평가하는 벤치마크다.</span></li>
+<li data-article-id="kmmlu"><a href="/wiki/kmmlu/">KMMLU</a><span class="wiki-index-summary">KMMLU는 한국어로 원래 작성된 시험 문제를 바탕으로 인문·사회·과학·공학·전문 직무 등 45개 분야의 객관식 문제 해결 능력을 평가하는 벤치마크다.</span></li>
+<li data-article-id="ko-h5-benchmark"><a href="/wiki/ko-h5-benchmark/">Ko-H5 벤치마크</a><span class="wiki-index-summary">Ko-H5 벤치마크는 공개 한국어 LLM을 여러 한국어 능력 과제로 비교하고 비공개 시험 세트로 데이터 오염 위험을 줄이려 한 평가 묶음이다.</span></li>
+<li data-article-id="korquad"><a href="/wiki/korquad/">KorQuAD</a><span class="wiki-index-summary">KorQuAD는 한국어 위키 문서를 읽고 질문의 답이 되는 문자열 범위를 찾도록 만든 한국어 기계독해 데이터셋과 평가 체계다.</span></li>
 </ul>
 </section>
 <section class="wiki-index-group" data-index-group="en-l">

@@ -154,9 +154,16 @@ n-그램과 작은 전용 모델은 제한된 어휘와 낮은 지연, 해석 �
 - [음성 인식](/wiki/speech-recognition/)
 - [임베딩 모델](/wiki/embedding-model/)
 
+<details class="wiki-backlinks-more">
+<summary>나머지 1개 문서 보기</summary>
+
+- [한국어 높임말과 화행](/wiki/korean-honorifics-and-speech-acts/)
+
+</details>
+
 ### 이 문서를 포함하는 코스
 
-[AI 기초](/course/ai-foundations/)
+[한국어·다국어 AI](/course/korean-multilingual-ai/) · [AI 기초](/course/ai-foundations/)
 
 ## 참고와 다음 학습
 
@@ -170,4 +177,5 @@ n-그램과 작은 전용 모델은 제한된 어휘와 낮은 지연, 해석 �
 
 ### 코스에서 계속 읽기
 
+- **한국어·다국어 AI:** [다음 문서 — 대규모 언어 모델](/wiki/large-language-model/)
 - **AI 기초:** [다음 문서 — 대규모 언어 모델](/wiki/large-language-model/)
