@@ -33,7 +33,13 @@
     "sections": []
   },
   "notes": "전송·저장·삭제 같은 부작용이 없는 시험 환경에서 먼저 실행하고, 되돌릴 수 없는 작업은 사람의 승인을 받는다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "W66 검증 예시",
+      "input": "나는 Node.js로 Anthropic 메시지 API를 써서 미니 에이전트를 만들고 있어. 도구 두 개를 등록하고 stop_reason이 tool_use가 아닐 때까지 도는 도구 루프를 완성해줘. 도구1: get_weather - 도시명을 받아 섭씨 기온 반환, 도구2: calculate - 수식 문자열을 계산. 요구사항: (1) tools 배열을 JSON Schema로 정의 (2) name→실제 함수 디스패처(mock) (3) while 루프에서 tool_result를 tool_use_id와 함께 되먹임 (4) 최대 반복 8회 가드 (5) 각 스텝 콘솔 로그. 전체 실행 가능한 코드로.",
+      "output": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"도구 2개 + 루프 코드 생성 출력\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"result\",\n    \"evidence\",\n    \"needs_review\"\n  ],\n  \"properties\": {\n    \"result\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"needs_review\": {\n      \"type\": \"boolean\"\n    }\n  }\n}"
+    }
+  ],
   "tags": [
     "스프레드시트",
     "코딩",

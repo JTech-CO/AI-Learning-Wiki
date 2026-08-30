@@ -1,0 +1,122 @@
+.wiki-learning-check {
+  margin-top: 3rem;
+  border-top: 2px solid #72777d;
+  padding-top: 1rem;
+}
+
+.wiki-learning-check header > * { margin: .35rem 0; }
+
+.wiki-learning-check__kicker {
+  color: #54595d;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.wiki-learning-check__prerequisites,
+.wiki-learning-check__privacy {
+  color: #54595d;
+  font-size: .78rem;
+}
+
+.wiki-learning-check__form { margin-top: 1rem; }
+
+.wiki-learning-check__form fieldset {
+  margin: 0;
+  border: 1px solid #c8ccd1;
+  background: #f8f9fa;
+  padding: 1rem;
+}
+
+.wiki-learning-check__form legend {
+  max-width: calc(100% - 1rem);
+  background: #fff;
+  color: #202122;
+  padding: 0 .45rem;
+  font: inherit;
+  font-weight: 700;
+}
+
+.wiki-learning-check__form legend span {
+  display: block;
+  color: #54595d;
+  font-size: .7rem;
+}
+
+.wiki-learning-check__choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .55rem 1rem;
+}
+
+.wiki-learning-check__choices label {
+  display: flex;
+  align-items: start;
+  gap: .45rem;
+  margin: 0;
+  border: 1px solid #eaecf0;
+  background: #fff;
+  color: #202122;
+  padding: .65rem;
+  cursor: pointer;
+}
+
+.wiki-learning-check__choices input {
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  margin-top: .2rem;
+}
+
+.wiki-learning-check__choices label:has(input:focus-visible) {
+  outline: 3px solid #36c;
+  outline-offset: 2px;
+}
+
+.wiki-learning-check__actions {
+  display: flex;
+  gap: .6rem;
+  margin-top: .7rem;
+}
+
+.wiki-learning-check__actions button {
+  min-height: 2.35rem;
+  border: 1px solid #2a4b8d;
+  border-radius: 0;
+  background: #36c;
+  color: #fff;
+  padding: .4rem .8rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wiki-learning-check__actions .wiki-learning-check__secondary {
+  border-color: #72777d;
+  background: #fff;
+  color: #202122;
+}
+
+.wiki-learning-check__actions button:focus-visible {
+  outline: 3px solid #36c;
+  outline-offset: 2px;
+}
+
+.wiki-learning-check__feedback {
+  margin-top: .8rem;
+  border-left: 3px solid #36c;
+  background: #f8f9fa;
+  color: #202122;
+  padding: .7rem .85rem;
+}
+
+.wiki-learning-check__feedback p { margin: .35rem 0 0; }
+
+@media (max-width: 50rem) {
+  .wiki-learning-check__choices { grid-template-columns: 1fr; }
+}
+
+@media (forced-colors: active) {
+  .wiki-learning-check__form fieldset,
+  .wiki-learning-check__choices label,
+  .wiki-learning-check__feedback { border-color: CanvasText; }
+}

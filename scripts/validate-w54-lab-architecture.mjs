@@ -57,8 +57,8 @@ assert.deepEqual(
     'evaluation-metrics': 'W56',
     'model-memory': 'W57',
     'prompt-schema': 'W58',
-    'token-context': 'backlog',
-    'rag-evaluation': 'backlog',
+    'token-context': 'W67',
+    'rag-evaluation': 'W68',
   },
 );
 

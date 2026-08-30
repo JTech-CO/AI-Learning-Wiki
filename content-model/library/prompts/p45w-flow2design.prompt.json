@@ -73,7 +73,7 @@
     {
       "label": "작성 예시",
       "input": "나는 노코드 자동화 도구 실제 값로 아래 업무 흐름을 만들려고 해. 초보자용으로, 어떤 모듈(블록)을 어떤 순서로 놓아야 하는지 단계별로 알려줘. 조건 분기는 Router+Filter로, 실패 대비는 재시도와 오류 알림으로 해줘.\n실제 값\n트리거: 실제 값\n중간 단계: 실제 값\n조건 분기: 만약 실제 값이면 실제 값, 아니면 실제 값\n실패 대비: 실제 값가 실패하면 실제 값\n각 모듈의 이름과 핵심 설정값까지 구체적으로.",
-      "output": ""
+      "output": "```python\ndef validate_result(result):\n    required = {\"result\", \"evidence\", \"needs_review\"}\n    missing = required - result.keys()\n    if missing:\n        raise ValueError(f\"missing fields: {sorted(missing)}\")\n    return result\n```\n\n환불 요청을 분류하고 승인 담당자에게 넘기는 에이전트에 workflow orchestration 원칙을 적용해 관찰 사실, 판단 근거, 불확실성, 다음 확인 행동을 구분한 결과를 만들었다."
     }
   ],
   "tags": [

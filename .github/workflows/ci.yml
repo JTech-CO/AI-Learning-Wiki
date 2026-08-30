@@ -32,6 +32,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Validate P0 search, courses and current quality snapshot
         run: npm run p0:validate
+      - name: Validate P1 local learning, prompt quality, labs and learning checks
+        run: npm run p1:validate
       - run: npm run validate:complete
       - run: npm run build:site
       - name: Confirm the release quality snapshot after the production build

@@ -76,6 +76,10 @@ const labTableSelectors = [
   '.lab-training-state-table',
   '.lab-validation-table',
   '.lab-variable-table',
+  '.lab-token-table',
+  '.lab-token-cost-table',
+  '.lab-rag-metric-table',
+  '.lab-rag-query-table',
 ];
 for (const selector of labTableSelectors) {
   assert(labCss.includes(selector), `${selector} 스타일이 누락됐다.`);
@@ -115,6 +119,8 @@ const routeChecks = [
   ['lab/index.html', 'lab-directory'],
   ['lab/evaluation-metrics/index.html', 'data-evaluation-metrics-lab'],
   ['lab/model-memory/index.html', 'data-model-memory-calculator'],
+  ['lab/token-context/index.html', 'data-token-context-calculator'],
+  ['lab/rag-evaluation/index.html', 'data-rag-evaluation-lab'],
   ['lab/learning-path/index.html', 'data-learning-path-builder'],
   ['lab/prompt-schema/index.html', 'data-prompt-schema-validator'],
   ['special/editor-quality/index.html', 'data-editor-quality-dashboard'],

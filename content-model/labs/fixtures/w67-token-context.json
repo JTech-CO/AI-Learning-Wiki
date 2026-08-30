@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W67",
+  "toolId": "token-context",
+  "formulaVersion": "token-context-budget-v1",
+  "fixtures": [
+    { "id": "balanced-korean", "inputs": { "systemText": "근거를 확인해 답한다.", "userText": "검색 결과를 요약해줘.", "toolText": "", "retrievalText": "관련 문서와 인용", "tokenizerProfile": "provider-agnostic", "contextWindow": 8192, "reservedOutput": 1024, "safetyMarginPercent": 10, "batchSize": 1, "calls": 1, "inputCostPerMillion": 1, "outputCostPerMillion": 2 }, "expected": { "risk": "safe", "warningCodes": ["TOKEN_ESTIMATE"] } },
+    { "id": "english-bpe", "inputs": { "systemText": "Answer with citations.", "userText": "Summarize the retrieved documents.", "toolText": "", "retrievalText": "Document A and document B", "tokenizerProfile": "bpe", "contextWindow": 4096, "reservedOutput": 512, "safetyMarginPercent": 5, "batchSize": 2, "calls": 5, "inputCostPerMillion": 0.5, "outputCostPerMillion": 1.5 }, "expected": { "risk": "safe", "warningCodes": ["TOKEN_ESTIMATE"] } },
+    { "id": "sentencepiece-mixed", "inputs": { "systemText": "한국어와 English를 함께 처리한다.", "userText": "표를 만들어줘.", "toolText": "{\"name\":\"search\"}", "retrievalText": "긴 문맥 대신 짧은 예시", "tokenizerProfile": "sentencepiece", "contextWindow": 2048, "reservedOutput": 256, "safetyMarginPercent": 10, "batchSize": 4, "calls": 3, "inputCostPerMillion": 2, "outputCostPerMillion": 6 }, "expected": { "risk": "safe", "warningCodes": ["TOKEN_ESTIMATE"] } },
+    { "id": "near-limit", "inputs": { "systemText": "시스템", "userText": "가나다라마바사아자차카타파하가나다라마바사아자차카타파하", "toolText": "도구 결과", "retrievalText": "검색 문맥", "tokenizerProfile": "provider-agnostic", "contextWindow": 80, "reservedOutput": 8, "safetyMarginPercent": 10, "batchSize": 1, "calls": 1, "inputCostPerMillion": 1, "outputCostPerMillion": 1 }, "expected": { "risk": "caution", "warningCodes": ["TOKEN_ESTIMATE", "TRUNCATION_RISK"] } },
+    { "id": "overflow", "inputs": { "systemText": "긴 시스템 지시를 반복한다 긴 시스템 지시를 반복한다", "userText": "긴 사용자 입력을 반복한다 긴 사용자 입력을 반복한다", "toolText": "긴 도구 결과를 반복한다", "retrievalText": "긴 검색 문맥을 반복한다 긴 검색 문맥을 반복한다", "tokenizerProfile": "provider-agnostic", "contextWindow": 64, "reservedOutput": 32, "safetyMarginPercent": 20, "batchSize": 1, "calls": 1, "inputCostPerMillion": 1, "outputCostPerMillion": 1 }, "expected": { "risk": "overflow", "warningCodes": ["TOKEN_ESTIMATE", "CONTEXT_OVERFLOW"] } },
+    { "id": "zero-pricing-large-batch", "inputs": { "systemText": "정책", "userText": "요청", "toolText": "", "retrievalText": "", "tokenizerProfile": "bpe", "contextWindow": 131072, "reservedOutput": 4096, "safetyMarginPercent": 15, "batchSize": 128, "calls": 100, "inputCostPerMillion": 0, "outputCostPerMillion": 0 }, "expected": { "risk": "safe", "warningCodes": ["TOKEN_ESTIMATE"] } }
+  ]
+}
+

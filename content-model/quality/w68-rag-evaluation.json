@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W68",
+  "releasedAt": "2026-08-30",
+  "tool": {
+    "id": "rag-evaluation",
+    "title": {
+      "ko": "RAG 평가 실험실",
+      "en": "RAG Evaluation Lab"
+    },
+    "route": "/lab/rag-evaluation/",
+    "status": "active",
+    "formulaVersion": "rag-ranking-metrics-v2",
+    "execution": {
+      "mode": "client-only",
+      "networkAccess": "none",
+      "transmitsUserInput": false,
+      "persistentStorage": "none"
+    }
+  },
+  "implementation": {
+    "src/lib/rag-evaluation.mjs": {
+      "bytes": 11234,
+      "sha256": "f08da499dffcfd0d3a7e12970a058cf93df3d2f571f751e647bfda881b2796af"
+    },
+    "src/components/lab/RagEvaluationLab.astro": {
+      "bytes": 11333,
+      "sha256": "8cee871b5a2c0069a102eab48f271dd9c5e47ccb4a1b16d5c90ee5783d552714"
+    },
+    "src/content/docs/lab/rag-evaluation.mdx": {
+      "bytes": 2923,
+      "sha256": "4dd459cdf1b480af42b731416781cb1cdf7b30ca5e2c1128087df1f6cc07d9b9"
+    },
+    "src/styles/wiki-lab.css": {
+      "bytes": 15161,
+      "sha256": "b2668f0273236f975031d8dc477e4405d1334913ef18d2f9818e6c9bb2f325da"
+    },
+    "scripts/validate-w68-rag-evaluation.mjs": {
+      "bytes": 4113,
+      "sha256": "06d077385601f2c853dcd541f54a270793bafe94b447a709cc11811ea86a3eba"
+    }
+  },
+  "deterministicFixtures": {
+    "source": "content-model/labs/fixtures/w68-rag-evaluation.json",
+    "count": 8,
+    "requiredCount": 8,
+    "results": [
+      {
+        "id": "perfect-graded",
+        "deterministic": true,
+        "warningCodes": [],
+        "sha256": "e398983bdc058d182087c5b31a97d9ca67ffabf7f1f9361cf6b93fe8a6cb28dd"
+      },
+      {
+        "id": "reranking-improves",
+        "deterministic": true,
+        "warningCodes": [],
+        "sha256": "e4e258f9d530c8ce1c168abc287890b071958c9ecc787dcf2cd2996e591b3437"
+      },
+      {
+        "id": "duplicate-penalty",
+        "deterministic": true,
+        "warningCodes": [
+          "BINARY_RELEVANCE_ONLY"
+        ],
+        "sha256": "7c9f810dc8fcce4732cd363e3d904f6c1ad47e7d16bf4520f5a253a77f0101ec"
+      },
+      {
+        "id": "no-hit",
+        "deterministic": true,
+        "warningCodes": [
+          "BINARY_RELEVANCE_ONLY"
+        ],
+        "sha256": "9a3941ad7ba9b49f200c68eaf5387b9d38b9ba64510e49a86791ae8e0ad02fe2"
+      },
+      {
+        "id": "below-k",
+        "deterministic": true,
+        "warningCodes": [
+          "BINARY_RELEVANCE_ONLY",
+          "RESULTS_BELOW_K"
+        ],
+        "sha256": "9d84d9cb659fa1e88d399062e8e54433dad3c5cbb19bf3662a2219e291f878c4"
+      },
+      {
+        "id": "macro-average",
+        "deterministic": true,
+        "warningCodes": [
+          "BINARY_RELEVANCE_ONLY"
+        ],
+        "sha256": "7f3a23a160e76cdfcecbea7c46823922698e61a374abee83b72cd759d86fd15a"
+      },
+      {
+        "id": "evidence-coverage",
+        "deterministic": true,
+        "warningCodes": [
+          "BINARY_RELEVANCE_ONLY"
+        ],
+        "sha256": "860c9b722a9b3d5747f1e70a3be55843ba92aa930c8c6c698102db762c674661"
+      },
+      {
+        "id": "csv-equivalent",
+        "deterministic": true,
+        "warningCodes": [],
+        "sha256": "c458dfd37117a42a4557d4762766203c497c6edcc4346a5a14a8431e62446076"
+      }
+    ]
+  },
+  "releaseGates": {
+    "active": true,
+    "clientOnly": true,
+    "noNetwork": true,
+    "noInputTransmission": true,
+    "noPersistence": true,
+    "keyboardAccessible": true,
+    "mobileLayout": true,
+    "linksToWiki": true,
+    "deterministic": true
+  }
+}

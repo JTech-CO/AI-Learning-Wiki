@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-wiki.kr/schemas/learning-check-v1.json",
+  "title": "AI Learning Wiki structured learning checks",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "count", "itemTypeLabels", "assessments"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatedAt": { "type": "string", "format": "date" },
+    "count": { "type": "integer", "minimum": 1 },
+    "itemTypeLabels": {
+      "type": "object",
+      "required": ["multiple-choice", "concept-distinction", "sequence", "calculation", "case-judgment"],
+      "properties": {
+        "multiple-choice": { "type": "string", "minLength": 1 },
+        "concept-distinction": { "type": "string", "minLength": 1 },
+        "sequence": { "type": "string", "minLength": 1 },
+        "calculation": { "type": "string", "minLength": 1 },
+        "case-judgment": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "assessments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assessment" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "link": {
+      "type": "object",
+      "required": ["id", "title", "url"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "pattern": "^/wiki/[^/]+/$" }
+      },
+      "additionalProperties": false
+    },
+    "choice": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "enum": ["A", "B", "C", "D"] },
+        "text": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "item": {
+      "type": "object",
+      "required": ["id", "type", "prompt", "choices", "answer", "explanation", "incorrectReason", "reviewUrl"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "enum": ["multiple-choice", "concept-distinction", "sequence", "calculation", "case-judgment"] },
+        "prompt": { "type": "string", "minLength": 1 },
+        "choices": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "$ref": "#/$defs/choice" } },
+        "answer": { "enum": ["A", "B", "C", "D"] },
+        "explanation": { "type": "string", "minLength": 1 },
+        "incorrectReason": { "type": "string", "minLength": 1 },
+        "reviewUrl": { "type": "string", "pattern": "^/(wiki|course)/" }
+      },
+      "additionalProperties": false
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["id", "articleId", "title", "url", "educationalLevel", "competencyRequired", "teaches", "assesses", "courseIds", "items"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "articleId": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "pattern": "^/wiki/[^/]+/$" },
+        "educationalLevel": { "type": "string", "minLength": 1 },
+        "competencyRequired": { "type": "array", "items": { "$ref": "#/$defs/link" } },
+        "teaches": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "assesses": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "courseIds": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/item" } }
+      },
+      "additionalProperties": false
+    }
+  }
+}

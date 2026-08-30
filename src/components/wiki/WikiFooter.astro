@@ -1,10 +1,12 @@
 ---
 import Pagination from 'virtual:starlight/components/Pagination';
+import LearningCheck from '../learning/LearningCheck.astro';
 
 const currentYear = new Date().getFullYear();
 ---
 
 <footer class="wiki-site-footer">
+  <LearningCheck />
   <Pagination />
   <div class="wiki-site-footer__content">
     <nav aria-label="사이트 정보">

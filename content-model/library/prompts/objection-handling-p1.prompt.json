@@ -45,7 +45,13 @@
     "sections": []
   },
   "notes": "입력 자리표시자를 실제 상황에 맞게 바꾸고, 결과의 사실성·톤·누락 여부를 사람이 최종 확인한다.",
-  "examples": [],
+  "examples": [
+    {
+      "label": "W66 검증 예시",
+      "input": "너는 세일즈 코치야. 내가 무엇을 판매/제안하는 상황이고, 대상은 고객 특징이야. 자주 듣는 반론 3개는 다음과 같아: 1) 가격 반론 2) 타이밍 반론 3) 신뢰 반론. 각 반론마다 '① 인정 문장 → ② 진짜 걱정을 여는 재질문 → ③ 프레임을 바꾸는 재구성 → ④ 부담 낮은 다음 스텝 클로징' 순서로 실제 말하듯 구어체 스크립트를 만들어줘. 반박하거나 몰아붙이지 말고, 없는 수치는 지어내지 말 것.",
+      "output": "# 반론별 응대 스크립트 3종 생성\n\n```python\ndef validate_result(result):\n    required = {\"result\", \"evidence\", \"needs_review\"}\n    missing = required - result.keys()\n    if missing:\n        raise ValueError(f\"missing fields: {sorted(missing)}\")\n    return result\n```\n\nB2B AI 도구의 잠재 고객 40곳을 검토하는 영업팀에 맞춰 목적, 근거, 제한 조건, 검토 요청을 포함한 초안을 작성하고 확인되지 않은 수치는 빈칸으로 남겼다."
+    }
+  ],
   "tags": [
     "글쓰기",
     "영업"

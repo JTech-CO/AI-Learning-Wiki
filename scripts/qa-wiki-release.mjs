@@ -26,7 +26,10 @@ expect(prompts.prompts.every((item) => item.template && item.notes && item.kind 
 expect(prompts.prompts.every((item) => !('sourceUrl' in item) && !('sourceCourse' in item) && !('moduleId' in item) && !('moduleTitle' in item)), 'legacy lesson provenance remains public');
 expect(prompts.prompts.every((item) => !(item.tags ?? []).some((tag) => /eduverse/i.test(tag))), 'source-specific prompt tag remains');
 expect(prompts.prompts.every((item) => item.courseUrl === '/course/' + item.course + '/'), 'prompt course URL mismatch');
-expect(prompts.prompts.every((item) => item.url.startsWith('/wiki/') && item.relatedWikiUrl === item.url), 'prompt Wiki link mismatch');
+expect(prompts.prompts.every((item) =>
+  item.url === `/prompt-explorer/?id=${encodeURIComponent(item.id)}#prompt-${encodeURIComponent(item.id)}`
+  && item.relatedWikiUrl.startsWith('/wiki/')),
+'prompt permalink or Wiki link mismatch');
 
 for (const route of ['index.html', 'paths/index.html', 'prompt-explorer/index.html', 'snippet-explorer/index.html', 'search/index.html']) {
   expect(await fileExists(path.join('dist', route)), 'missing dist/' + route);

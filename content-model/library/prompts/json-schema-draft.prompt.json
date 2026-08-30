@@ -25,7 +25,7 @@
     {
       "label": "작성 예시",
       "input": "주문에는 주문번호, 이메일, 1개 이상의 상품, 원화 총액, 상태가 필요하다. JSON Schema 초안과 질문을 만들어줘.",
-      "output": ""
+      "output": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"title\": \"자연어 요구사항을 JSON Schema로 변환 출력\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\n    \"result\",\n    \"evidence\",\n    \"needs_review\"\n  ],\n  \"properties\": {\n    \"result\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"evidence\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"needs_review\": {\n      \"type\": \"boolean\"\n    }\n  }\n}"
     }
   ],
   "tags": [

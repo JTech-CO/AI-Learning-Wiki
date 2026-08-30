@@ -1,0 +1,337 @@
+---
+import wiki from '../../../public/data/wiki-index.json';
+
+const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
+const articleReviews = Object.fromEntries(wiki.articles.map((article) => [article.url, article.reviewedAt]));
+const articleReviewsJson = JSON.stringify(articleReviews).replace(/</g, '\\u003c');
+const courses = wiki.courses.map((course) => ({
+  id: course.id,
+  title: course.title,
+  url: course.url,
+  steps: course.steps.map(({ title, url }) => ({ title, url })),
+}));
+---
+
+<section class="wiki-learning-dashboard" data-learning-dashboard data-base-path={basePath}>
+  <script type="application/json" data-learning-review-dates set:html={articleReviewsJson} />
+  <div class="wiki-learning-notice">
+    <strong>이 기기의 브라우저에만 저장된다.</strong>
+    <p>최근 본 문서, 북마크와 읽음 표시는 계정이나 서버로 전송하지 않는다. 브라우저 데이터를 지우면 함께 삭제되므로 필요하면 JSON 파일로 백업할 수 있다.</p>
+  </div>
+
+  <div class="wiki-learning-summary" aria-label="학습 기록 요약">
+    <div><span>읽은 문서</span><strong data-learning-read-count>0</strong></div>
+    <div><span>북마크</span><strong data-learning-bookmark-count>0</strong></div>
+    <div><span>진행 중 코스</span><strong data-learning-course-count>0</strong></div>
+    <div><span>학습 확인 정답/풀이</span><strong><span data-learning-correct-count>0</span>/<span data-learning-assessment-count>0</span></strong></div>
+  </div>
+
+  <section class="wiki-learning-continue" data-learning-continue hidden>
+    <div>
+      <p class="wiki-learning-eyebrow">이어보기</p>
+      <h2 data-learning-continue-title>최근 본 문서</h2>
+      <p data-learning-continue-meta></p>
+    </div>
+    <a class="wiki-learning-primary" data-learning-continue-link href="/special/all-pages/">문서 열기</a>
+  </section>
+
+  <section class="wiki-learning-saved-paths" aria-labelledby="learning-saved-paths-title">
+    <h2 id="learning-saved-paths-title">저장한 맞춤 학습 경로</h2>
+    <p data-learning-path-empty>저장한 맞춤 경로가 없다. <a href="/lab/learning-path/">맞춤 학습 경로 생성기</a>에서 만들 수 있다.</p>
+    <div class="wiki-learning-saved-path-grid" data-learning-path-list></div>
+  </section>
+
+  <section aria-labelledby="learning-courses-title">
+    <h2 id="learning-courses-title">코스 진행률</h2>
+    <p>코스에 포함된 문서를 읽음으로 표시하면 진도에 즉시 반영된다.</p>
+    <div class="wiki-learning-course-grid">
+      {courses.map((course) => (
+        <article class="wiki-learning-course-card" data-learning-course data-course={JSON.stringify(course)}>
+          <h3><a href={course.url}>{course.title}</a></h3>
+          <p><strong data-course-progress-text>0/{course.steps.length}</strong> <span data-course-percent>0%</span></p>
+          <progress data-course-progress max={course.steps.length} value="0"><span>0%</span></progress>
+          <a data-course-resume href={course.steps[0]?.url ?? course.url}>첫 문서 열기</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <div class="wiki-learning-lists">
+    <section aria-labelledby="learning-recent-title">
+      <h2 id="learning-recent-title">최근 본 문서</h2>
+      <p data-learning-recent-empty>아직 본 문서가 없다.</p>
+      <ol class="wiki-learning-item-list" data-learning-recent-list></ol>
+    </section>
+    <section aria-labelledby="learning-bookmarks-title">
+      <h2 id="learning-bookmarks-title">북마크</h2>
+      <p data-learning-bookmark-empty>저장한 북마크가 없다.</p>
+      <ol class="wiki-learning-item-list" data-learning-bookmark-list></ol>
+    </section>
+  </div>
+
+  <section class="wiki-learning-data" aria-labelledby="learning-data-title">
+    <h2 id="learning-data-title">기록 백업과 복원</h2>
+    <p>JSON 파일에는 이 화면에 표시되는 문서 제목, 내부 주소와 기록 시각만 포함된다.</p>
+    <div class="wiki-learning-data-actions">
+      <button type="button" data-learning-export>JSON 내보내기</button>
+      <label for="learning-import-mode">가져오기 방식</label>
+      <select id="learning-import-mode" data-learning-import-mode>
+        <option value="merge">현재 기록과 합치기</option>
+        <option value="replace">현재 기록 교체하기</option>
+      </select>
+      <input id="learning-import-file" data-learning-import type="file" accept="application/json,.json" />
+      <label class="wiki-learning-file-button" for="learning-import-file">JSON 가져오기</label>
+      <button class="wiki-learning-danger" type="button" data-learning-clear>모든 기록 삭제</button>
+    </div>
+    <p data-learning-feedback aria-live="polite"></p>
+  </section>
+
+  <noscript><p>학습 기록은 브라우저 JavaScript가 켜져 있을 때 사용할 수 있다.</p></noscript>
+</section>
+
+<script>
+  import {
+    clearLearningState,
+    getCourseProgress,
+    isMarkedRead,
+    loadLearningState,
+    mergeLearningStates,
+    parseLearningStateImport,
+    removeCustomLearningPath,
+    saveLearningState,
+    serializeLearningState,
+    toggleLearningBookmark,
+  } from '../../lib/learning-state.mjs';
+
+  const dashboard = document.querySelector('[data-learning-dashboard]');
+  if (dashboard instanceof HTMLElement) {
+    const basePath = dashboard.dataset.basePath ?? '/';
+    const reviewDatesElement = dashboard.querySelector('[data-learning-review-dates]');
+    const reviewDates = JSON.parse(reviewDatesElement?.textContent ?? '{}');
+    const localHref = (url) => basePath === '/' ? url : `${basePath}${url.replace(/^\/+/, '')}`;
+    const readCount = dashboard.querySelector('[data-learning-read-count]');
+    const bookmarkCount = dashboard.querySelector('[data-learning-bookmark-count]');
+    const courseCount = dashboard.querySelector('[data-learning-course-count]');
+    const correctCount = dashboard.querySelector('[data-learning-correct-count]');
+    const assessmentCount = dashboard.querySelector('[data-learning-assessment-count]');
+    const continuePanel = dashboard.querySelector('[data-learning-continue]');
+    const continueTitle = dashboard.querySelector('[data-learning-continue-title]');
+    const continueMeta = dashboard.querySelector('[data-learning-continue-meta]');
+    const continueLink = dashboard.querySelector('[data-learning-continue-link]');
+    const recentList = dashboard.querySelector('[data-learning-recent-list]');
+    const bookmarkList = dashboard.querySelector('[data-learning-bookmark-list]');
+    const recentEmpty = dashboard.querySelector('[data-learning-recent-empty]');
+    const bookmarkEmpty = dashboard.querySelector('[data-learning-bookmark-empty]');
+    const savedPathList = dashboard.querySelector('[data-learning-path-list]');
+    const savedPathEmpty = dashboard.querySelector('[data-learning-path-empty]');
+    const feedback = dashboard.querySelector('[data-learning-feedback]');
+    const importInput = dashboard.querySelector('[data-learning-import]');
+    const importMode = dashboard.querySelector('[data-learning-import-mode]');
+    const courseCards = [...dashboard.querySelectorAll('[data-learning-course]')];
+    const dateFormat = new Intl.DateTimeFormat('ko-KR', { dateStyle: 'medium', timeStyle: 'short' });
+    let state = loadLearningState();
+
+    const formatDate = (value) => {
+      const date = new Date(value);
+      return Number.isNaN(date.valueOf()) ? '' : dateFormat.format(date);
+    };
+    const announce = (message) => { if (feedback) feedback.textContent = message; };
+    const persist = (nextState, message) => {
+      try {
+        state = saveLearningState(nextState);
+        announce(message);
+      } catch {
+        announce('브라우저 저장소를 사용할 수 없어 변경하지 못했다.');
+      }
+      render();
+    };
+
+    const renderList = (target, entries, dateKey, removable = false) => {
+      if (!(target instanceof HTMLOListElement)) return;
+      target.replaceChildren();
+      for (const entry of entries.slice(0, 20)) {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = localHref(entry.url);
+        link.textContent = entry.title;
+        item.append(link);
+        if (isMarkedRead(state, entry.url)) {
+          const readLabel = document.createElement('span');
+          readLabel.className = 'wiki-learning-read-label';
+          readLabel.textContent = '읽음';
+          item.append(readLabel);
+        }
+        const lastVisit = state.recent.find((value) => value.url === entry.url)?.visitedAt;
+        const lastRead = state.read.find((value) => value.url === entry.url)?.readAt;
+        const lastChecked = [lastVisit, lastRead, entry[dateKey]].filter(Boolean).sort().at(-1);
+        if (reviewDates[entry.url] && lastChecked?.slice(0, 10) < reviewDates[entry.url]) {
+          const updatedLabel = document.createElement('span');
+          updatedLabel.className = 'wiki-learning-update-label';
+          updatedLabel.textContent = '업데이트됨';
+          updatedLabel.title = `${reviewDates[entry.url]}에 다시 검토된 문서`;
+          item.append(updatedLabel);
+        }
+        const time = document.createElement('time');
+        time.dateTime = entry[dateKey];
+        time.textContent = formatDate(entry[dateKey]);
+        item.append(time);
+        if (removable) {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.textContent = '해제';
+          button.setAttribute('aria-label', `${entry.title} 북마크 해제`);
+          button.addEventListener('click', () => persist(toggleLearningBookmark(state, entry, false), '북마크에서 제거했다.'));
+          item.append(button);
+        }
+        target.append(item);
+      }
+    };
+
+    const renderSavedPaths = () => {
+      if (!(savedPathList instanceof HTMLElement)) return;
+      savedPathList.replaceChildren();
+      if (savedPathEmpty instanceof HTMLElement) savedPathEmpty.hidden = state.savedPaths.length > 0;
+      for (const path of state.savedPaths) {
+        const progress = getCourseProgress(path, state);
+        const card = document.createElement('article');
+        card.className = 'wiki-learning-saved-path-card';
+        const heading = document.createElement('h3');
+        heading.textContent = path.title;
+        const meta = document.createElement('p');
+        meta.textContent = `${progress.completed}/${progress.total}개 문서 · ${progress.percent}% · ${formatDate(path.savedAt)} 저장`;
+        const meter = document.createElement('progress');
+        meter.max = Math.max(progress.total, 1);
+        meter.value = progress.completed;
+        meter.setAttribute('aria-label', `${path.title} ${progress.percent}% 완료`);
+        const actions = document.createElement('div');
+        actions.className = 'wiki-learning-saved-path-actions';
+        if (progress.resumeStep) {
+          const resume = document.createElement('a');
+          resume.href = localHref(progress.resumeStep.url);
+          resume.textContent = progress.started ? '이어보기' : '첫 문서 열기';
+          resume.setAttribute('aria-label', `${path.title}: ${progress.resumeStep.title}부터 ${resume.textContent}`);
+          actions.append(resume);
+        }
+        const params = new URLSearchParams({
+          goal: path.goalId,
+          level: path.settings.level,
+          limit: String(path.settings.maxDocuments),
+          focus: path.settings.focus,
+          math: path.settings.includeMathematics ? '1' : '0',
+        });
+        const reopen = document.createElement('a');
+        reopen.href = `${localHref('/lab/learning-path/')}?${params}`;
+        reopen.textContent = '조건 다시 열기';
+        actions.append(reopen);
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.textContent = '삭제';
+        remove.setAttribute('aria-label', `${path.title} 삭제`);
+        remove.addEventListener('click', () => persist(removeCustomLearningPath(state, path.id), '맞춤 학습 경로를 삭제했다.'));
+        actions.append(remove);
+        card.append(heading, meta, meter, actions);
+        savedPathList.append(card);
+      }
+    };
+
+    const render = () => {
+      if (readCount) readCount.textContent = state.read.length.toLocaleString('ko-KR');
+      if (bookmarkCount) bookmarkCount.textContent = state.bookmarks.length.toLocaleString('ko-KR');
+      if (assessmentCount) assessmentCount.textContent = state.assessments.length.toLocaleString('ko-KR');
+      if (correctCount) correctCount.textContent = state.assessments.filter((result) => result.correct).length.toLocaleString('ko-KR');
+      renderList(recentList, state.recent.filter((entry) => entry.kind === 'article'), 'visitedAt');
+      renderList(bookmarkList, state.bookmarks, 'savedAt', true);
+      renderSavedPaths();
+      if (recentEmpty instanceof HTMLElement) recentEmpty.hidden = state.recent.some((entry) => entry.kind === 'article');
+      if (bookmarkEmpty instanceof HTMLElement) bookmarkEmpty.hidden = state.bookmarks.length > 0;
+
+      const recentArticle = state.recent.find((entry) => entry.kind === 'article');
+      if (continuePanel instanceof HTMLElement) continuePanel.hidden = !recentArticle;
+      if (recentArticle) {
+        if (continueTitle) continueTitle.textContent = recentArticle.title;
+        if (continueMeta) {
+          const updated = reviewDates[recentArticle.url] && recentArticle.visitedAt.slice(0, 10) < reviewDates[recentArticle.url];
+          continueMeta.textContent = `${formatDate(recentArticle.visitedAt)}에 마지막으로 열었다.${updated ? ` ${reviewDates[recentArticle.url]}에 문서가 업데이트됐다.` : ''}`;
+        }
+        if (continueLink instanceof HTMLAnchorElement) continueLink.href = localHref(recentArticle.url);
+      }
+
+      let activeCourses = 0;
+      for (const card of courseCards) {
+        if (!(card instanceof HTMLElement)) continue;
+        const course = JSON.parse(card.dataset.course ?? 'null');
+        if (!course) continue;
+        const progress = getCourseProgress(course, state);
+        if (progress.completed > 0 && !progress.complete) activeCourses += 1;
+        const progressText = card.querySelector('[data-course-progress-text]');
+        const percentText = card.querySelector('[data-course-percent]');
+        const meter = card.querySelector('[data-course-progress]');
+        const resume = card.querySelector('[data-course-resume]');
+        if (progressText) progressText.textContent = `${progress.completed}/${progress.total}`;
+        if (percentText) percentText.textContent = progress.complete ? '완료' : `${progress.percent}%`;
+        if (meter instanceof HTMLProgressElement) {
+          meter.max = Math.max(progress.total, 1);
+          meter.value = progress.completed;
+          meter.setAttribute('aria-label', `${course.title} ${progress.percent}% 완료`);
+        }
+        if (resume instanceof HTMLAnchorElement) {
+          resume.hidden = !progress.resumeStep;
+          if (progress.resumeStep) {
+            resume.href = localHref(progress.resumeStep.url);
+            resume.textContent = progress.started ? '이어보기' : '첫 문서 열기';
+            resume.setAttribute('aria-label', `${course.title}: ${progress.resumeStep.title}부터 ${resume.textContent}`);
+          }
+        }
+      }
+      if (courseCount) courseCount.textContent = activeCourses.toLocaleString('ko-KR');
+    };
+
+    dashboard.querySelector('[data-learning-export]')?.addEventListener('click', () => {
+      const blob = new Blob([serializeLearningState(state)], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement('a');
+      anchor.href = url;
+      anchor.download = `ai-learning-wiki-learning-${new Date().toISOString().slice(0, 10)}.json`;
+      anchor.click();
+      URL.revokeObjectURL(url);
+      announce('학습 기록 JSON 파일을 만들었다.');
+    });
+
+    importInput?.addEventListener('change', async () => {
+      const file = importInput instanceof HTMLInputElement ? importInput.files?.[0] : null;
+      if (!file) return;
+      try {
+        if (file.size > 1_000_000) throw new RangeError('1MB보다 큰 파일은 가져올 수 없다.');
+        const imported = parseLearningStateImport(await file.text());
+        const mode = importMode instanceof HTMLSelectElement ? importMode.value : 'merge';
+        if (mode === 'replace' && !window.confirm('현재 학습 기록을 가져온 파일로 교체할까요?')) return;
+        const next = mode === 'replace' ? imported : mergeLearningStates(state, imported);
+        persist(next, `학습 기록을 ${mode === 'replace' ? '교체' : '병합'}했다.`);
+      } catch (error) {
+        announce(error instanceof Error ? error.message : '학습 기록을 가져오지 못했다.');
+      } finally {
+        if (importInput instanceof HTMLInputElement) importInput.value = '';
+      }
+    });
+
+    dashboard.querySelector('[data-learning-clear]')?.addEventListener('click', () => {
+      if (!window.confirm('이 브라우저의 최근 기록, 북마크와 읽음 표시를 모두 삭제할까요?')) return;
+      try {
+        clearLearningState();
+        state = loadLearningState();
+        announce('이 브라우저의 학습 기록을 모두 삭제했다.');
+        render();
+      } catch {
+        announce('브라우저 저장소를 사용할 수 없어 기록을 삭제하지 못했다.');
+      }
+    });
+
+    window.addEventListener('storage', (event) => {
+      if (event.key?.startsWith('ai-learning-wiki:learning-state:')) {
+        state = loadLearningState();
+        render();
+      }
+    });
+    render();
+  }
+</script>

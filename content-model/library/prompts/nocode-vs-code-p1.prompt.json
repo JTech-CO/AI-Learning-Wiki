@@ -43,7 +43,7 @@
     {
       "label": "작성 예시",
       "input": "나는 다음 자동화를 운영 중이야.\n흐름: 실제 값\n월 실행량: 1만 건\n사용 중인 노코드 도구: 실제 값\n5가지 전환 신호에 대한 내 답:\n1) 요금제 한도 초과 위험: 실제 값\n2) 도구에 없는 세밀한 로직 필요: 실제 값\n3) 같은 흐름 5개 이상 복제: 실제 값\n4) 커넥터 없는 API 직접 호출: 실제 값\n5) 재시도·로그·버전관리 필요: 실제 값\n이 상황에서 '노코드 유지 / 하이브리드 / 전면 코드' 중 무엇을 추천하는지, 그 이유, 그리고 코드로 갈아탈 부분이 있다면 정확히 어느 조각인지 알려줘.",
-      "output": ""
+      "output": "```python\ndef validate_result(result):\n    required = {\"result\", \"evidence\", \"needs_review\"}\n    missing = required - result.keys()\n    if missing:\n        raise ValueError(f\"missing fields: {sorted(missing)}\")\n    return result\n```\n\n입력 검증, 시간 제한, 구조화 오류 응답을 포함한 구현안을 만들고 정상·빈 결과·시간 초과 사례를 테스트에 포함했다."
     }
   ],
   "tags": [

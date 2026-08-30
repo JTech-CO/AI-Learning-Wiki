@@ -1,0 +1,72 @@
+---
+const SAMPLE = JSON.stringify([
+  { queryId: 'q-1', relevant: [{ id: 'doc-a', grade: 3 }, { id: 'doc-c', grade: 2 }], before: [{ id: 'doc-x', hasEvidence: false }, { id: 'doc-a', hasEvidence: true }, { id: 'doc-a', hasEvidence: true }, { id: 'doc-c', hasEvidence: true }], after: [{ id: 'doc-a', hasEvidence: true }, { id: 'doc-c', hasEvidence: true }, { id: 'doc-x', hasEvidence: false }] },
+  { queryId: 'q-2', relevant: [{ id: 'doc-k', grade: 2 }], before: [{ id: 'doc-z', hasEvidence: false }, { id: 'doc-y', hasEvidence: true }, { id: 'doc-k', hasEvidence: true }], after: [{ id: 'doc-k', hasEvidence: true }, { id: 'doc-z', hasEvidence: false }] },
+], null, 2);
+---
+
+<section class="lab-tool" data-rag-evaluation-lab>
+  <form class="lab-tool-form" data-rag-evaluation-form>
+    <fieldset>
+      <legend>평가 데이터</legend>
+      <p class="lab-field-note">JSON 또는 CSV를 브라우저 안에서 읽는다. 질의, 정답 관련 문서, 검색 전·재순위화 후 순위를 함께 입력할 수 있다.</p>
+      <div class="lab-form-grid lab-rag-settings-grid">
+        <label class="lab-field"><span>입력 형식</span><select name="format"><option value="json" selected>JSON</option><option value="csv">CSV</option></select></label>
+        <label class="lab-field"><span>평가 절단값 K</span><input type="number" name="cutoffK" min="1" step="1" value="3" required /></label>
+        <label class="lab-field lab-file-field"><span>파일 가져오기</span><input type="file" name="datasetFile" accept=".json,.csv,application/json,text/csv" /><small>파일은 서버로 전송하지 않는다.</small></label>
+      </div>
+      <label class="lab-field lab-json-field lab-rag-dataset"><span>질의별 평가 데이터</span><textarea name="dataset" rows="18" spellcheck="false">{SAMPLE}</textarea></label>
+      <details class="lab-format-help"><summary>JSON·CSV 입력 형식</summary><p>JSON: <code>queryId</code>, <code>relevant</code>, <code>before</code>, <code>after</code> 배열을 사용한다. 문서는 <code>{`{"id":"doc-a","grade":3,"hasEvidence":true}`}</code> 형태다.</p><p>CSV: <code>query_id,document_id,relevance,before_rank,after_rank,has_evidence</code> 열을 사용한다.</p></details>
+      <div class="lab-form-actions"><button type="submit">RAG 지표 계산하기</button><button type="button" class="lab-secondary-button" data-load-rag-sample>예시 불러오기</button></div>
+    </fieldset>
+  </form>
+  <p class="lab-tool-status" data-rag-status role="status" aria-live="polite">예시 2개 질의의 검색 전·재순위화 후 결과를 비교할 수 있다.</p>
+
+  <section class="lab-result" data-rag-result hidden tabindex="-1">
+    <header class="lab-result-header"><div><p class="lab-result-kicker">계산 결과</p><h2>검색·재순위화 품질 비교</h2></div><div class="lab-export-actions"><button type="button" class="lab-secondary-button" data-export-rag-json>JSON 내보내기</button><button type="button" class="lab-secondary-button" data-export-rag-csv>CSV 내보내기</button></div></header>
+    <dl class="lab-result-summary lab-rag-summary"><div><dt>질의 수</dt><dd data-rag-query-count>-</dd></div><div><dt>평가 K</dt><dd data-rag-k>-</dd></div><div><dt>재순위화 종합</dt><dd data-rag-verdict>-</dd></div></dl>
+    <div class="lab-warning-list" data-rag-warnings hidden><h3>해석 주의</h3><ul></ul></div>
+    <section aria-labelledby="rag-aggregate-title"><h3 id="rag-aggregate-title">평균 지표</h3><div class="lab-table-scroll" tabindex="0" role="region" aria-label="RAG 평균 지표 표"><table class="lab-rag-metric-table"><thead><tr><th scope="col">지표</th><th scope="col">검색 전</th><th scope="col">재순위화 후</th><th scope="col">변화</th><th scope="col">해석</th></tr></thead><tbody data-rag-metric-rows></tbody></table></div></section>
+    <section aria-labelledby="rag-query-title"><h3 id="rag-query-title">질의별 내역</h3><div class="lab-table-scroll" tabindex="0" role="region" aria-label="RAG 질의별 내역 표"><table class="lab-rag-query-table"><thead><tr><th scope="col">질의</th><th scope="col">실행</th><th scope="col">P@K</th><th scope="col">R@K</th><th scope="col">RR</th><th scope="col">nDCG@K</th><th scope="col">중복률</th><th scope="col">근거 포함률</th></tr></thead><tbody data-rag-query-rows></tbody></table></div></section>
+    <section class="lab-assumptions"><h3>계산 가정</h3><ul data-rag-assumptions></ul><p><strong>공식 버전:</strong> <code>rag-ranking-metrics-v2</code> · <strong>확인일:</strong> 2026-08-30</p></section>
+  </section>
+</section>
+
+<script>
+  import { evaluateRagDataset, ragResultToCsv } from '../../lib/rag-evaluation.mjs';
+  const lab = document.querySelector('[data-rag-evaluation-lab]');
+  if (lab instanceof HTMLElement) {
+    const form = lab.querySelector('[data-rag-evaluation-form]'); const result = lab.querySelector('[data-rag-result]'); const status = lab.querySelector('[data-rag-status]'); const MAX_DATASET_BYTES = 5 * 1024 * 1024; let latestResult;
+    const field = (name) => form?.elements.namedItem(name); const sampleDataset = field('dataset')?.defaultValue ?? ''; const setText = (selector, value) => { const target = lab.querySelector(selector); if (target) target.textContent = value; };
+    const percent = (value) => `${(value * 100).toFixed(2)}%`; const signed = (value) => `${value >= 0 ? '+' : ''}${(value * 100).toFixed(2)}%p`;
+    const metrics = [
+      ['precisionAtK', 'Precision@K', '상위 K개 중 중복을 제외한 관련 문서 비율'], ['recallAtK', 'Recall@K', '전체 정답 관련 문서 중 상위 K개에서 찾은 비율'], ['reciprocalRank', 'MRR', '첫 관련 문서 순위 역수의 질의 평균'], ['ndcgAtK', 'nDCG@K', '등급 관련성과 순위 할인을 반영한 값'], ['duplicateRate', '중복률', '상위 K개 안의 반복 문서 비율(낮을수록 좋음)'], ['evidenceCoverage', '근거 포함률', '상위 K개 중 근거 표시가 있는 문서 비율'],
+    ];
+    const render = ({ focus = true } = {}) => {
+      if (!(form instanceof HTMLFormElement) || !form.reportValidity()) return;
+      try {
+        const datasetText = field('dataset')?.value ?? '';
+        if (new TextEncoder().encode(datasetText).byteLength > MAX_DATASET_BYTES) throw new RangeError('평가 데이터는 5MB 이하여야 한다.');
+        latestResult = evaluateRagDataset({ format: field('format')?.value, cutoffK: field('cutoffK')?.value, dataset: field('dataset')?.value });
+        setText('[data-rag-query-count]', `${latestResult.queryCount.toLocaleString('ko-KR')}개`); setText('[data-rag-k]', String(latestResult.k));
+        const qualityDelta = latestResult.delta.recallAtK + latestResult.delta.reciprocalRank + latestResult.delta.ndcgAtK - latestResult.delta.duplicateRate;
+        setText('[data-rag-verdict]', qualityDelta > 0.0001 ? '개선' : qualityDelta < -0.0001 ? '악화' : '변화 없음');
+        const metricBody = lab.querySelector('[data-rag-metric-rows]'); metricBody?.replaceChildren();
+        metrics.forEach(([key, label, description]) => { const row = document.createElement('tr'); const inverse = key === 'duplicateRate'; const delta = latestResult.delta[key]; [label, percent(latestResult.before[key]), percent(latestResult.after[key]), signed(delta), description].forEach((cell, index) => { const element = document.createElement(index === 0 ? 'th' : 'td'); if (index === 0) element.scope = 'row'; element.textContent = cell; if (index === 3) element.dataset.direction = Math.abs(delta) < 1e-12 ? 'neutral' : ((delta > 0) !== inverse ? 'positive' : 'negative'); row.append(element); }); metricBody?.append(row); });
+        const queryBody = lab.querySelector('[data-rag-query-rows]'); queryBody?.replaceChildren(); latestResult.perQuery.forEach((query) => ['before','after'].forEach((run) => { const row = document.createElement('tr'); [query.queryId, run === 'before' ? '검색 전' : '재순위화 후', percent(query[run].precisionAtK), percent(query[run].recallAtK), query[run].reciprocalRank.toFixed(4), query[run].ndcgAtK.toFixed(4), percent(query[run].duplicateRate), percent(query[run].evidenceCoverage)].forEach((cell, index) => { const element = document.createElement(index === 0 ? 'th' : 'td'); if (index === 0) element.scope = 'row'; element.textContent = cell; row.append(element); }); queryBody?.append(row); }));
+        const warnings = lab.querySelector('[data-rag-warnings]'); const warningList = warnings?.querySelector('ul'); warningList?.replaceChildren(); if (warnings) warnings.hidden = latestResult.warnings.length === 0; latestResult.warnings.forEach((warning) => { const item = document.createElement('li'); item.dataset.severity = warning.severity; item.textContent = warning.message; warningList?.append(item); });
+        const assumptions = lab.querySelector('[data-rag-assumptions]'); assumptions?.replaceChildren(); latestResult.assumptions.forEach((assumption) => { const item = document.createElement('li'); item.textContent = assumption.text; assumptions?.append(item); });
+        if (result) result.hidden = false; if (status) status.textContent = `${latestResult.queryCount}개 질의에서 검색 전·재순위화 후 6개 지표를 계산했다.`; if (focus) { result?.focus({ preventScroll: true }); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      } catch (error) { if (status) status.textContent = error instanceof Error ? error.message : 'RAG 평가 데이터를 계산하지 못했다.'; }
+    };
+    const download = (content, type, filename) => { const blob = new Blob([content], { type }); const url = URL.createObjectURL(blob); const anchor = document.createElement('a'); anchor.href = url; anchor.download = filename; anchor.click(); URL.revokeObjectURL(url); };
+    form?.addEventListener('submit', (event) => { event.preventDefault(); render(); });
+    field('datasetFile')?.addEventListener('change', async (event) => { const file = event.target?.files?.[0]; if (!file) return; if (file.size > MAX_DATASET_BYTES) { if (status) status.textContent = '파일이 5MB를 초과해 불러오지 않았다.'; event.target.value = ''; return; } const dataset = field('dataset'); const format = field('format'); if (dataset instanceof HTMLTextAreaElement) dataset.value = await file.text(); if (format instanceof HTMLSelectElement) format.value = file.name.toLowerCase().endsWith('.csv') ? 'csv' : 'json'; if (status) status.textContent = `${file.name}을 브라우저에서 불러왔다.`; });
+    lab.querySelector('[data-load-rag-sample]')?.addEventListener('click', () => { const dataset = field('dataset'); const format = field('format'); if (dataset instanceof HTMLTextAreaElement) dataset.value = sampleDataset; if (format instanceof HTMLSelectElement) format.value = 'json'; render({ focus: false }); });
+    lab.querySelector('[data-export-rag-json]')?.addEventListener('click', () => { if (latestResult) download(JSON.stringify(latestResult, null, 2), 'application/json', 'rag-evaluation-result.json'); });
+    lab.querySelector('[data-export-rag-csv]')?.addEventListener('click', () => { if (latestResult) download(`\uFEFF${ragResultToCsv(latestResult)}`, 'text/csv;charset=utf-8', 'rag-evaluation-result.csv'); });
+    render({ focus: false });
+  }
+</script>
+
+

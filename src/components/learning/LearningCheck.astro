@@ -1,0 +1,122 @@
+---
+import learningChecks from '../../../public/data/learning-checks.json';
+
+const articleMatch = Astro.url.pathname.match(/\/wiki\/([^/]+)\/?$/);
+const articleId = articleMatch ? decodeURIComponent(articleMatch[1]) : '';
+const assessment = learningChecks.assessments.find((item) => item.articleId === articleId);
+const typeLabels = learningChecks.itemTypeLabels;
+const structuredData = assessment ? {
+  '@context': 'https://schema.org',
+  '@type': 'Quiz',
+  name: assessment.title,
+  url: new URL(assessment.url, Astro.site ?? Astro.url.origin).toString(),
+  educationalLevel: assessment.educationalLevel,
+  teaches: assessment.teaches,
+  assesses: assessment.assesses.map((type) => typeLabels[type] ?? type),
+  competencyRequired: assessment.competencyRequired.map((item) => item.title),
+  hasPart: assessment.items.map((item) => ({
+    '@type': 'Question',
+    name: item.prompt,
+    eduQuestionType: typeLabels[item.type] ?? item.type,
+    suggestedAnswer: item.choices.map((choice) => ({ '@type': 'Answer', text: choice.text })),
+  })),
+} : null;
+---
+
+{assessment && (
+  <section class="wiki-learning-check" data-learning-check data-article-id={assessment.articleId} aria-labelledby="wiki-learning-check-title">
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <header>
+      <p class="wiki-learning-check__kicker">구조화 학습 체크</p>
+      <h2 id="wiki-learning-check-title">읽은 내용 확인</h2>
+      <p>{assessment.teaches[0]}</p>
+    </header>
+
+    {assessment.competencyRequired.length > 0 && (
+      <p class="wiki-learning-check__prerequisites">
+        <strong>선수 역량:</strong>{' '}
+        {assessment.competencyRequired.map((item, index) => (
+          <>{index > 0 ? ' · ' : ''}<a href={item.url}>{item.title}</a></>
+        ))}
+      </p>
+    )}
+
+    {assessment.items.map((item) => (
+      <form class="wiki-learning-check__form" data-learning-check-form data-answer={item.answer} data-explanation={item.explanation} data-incorrect-reason={item.incorrectReason}>
+        <fieldset>
+          <legend>
+            <span>{typeLabels[item.type] ?? item.type}</span>
+            {item.prompt}
+          </legend>
+          <div class="wiki-learning-check__choices">
+            {item.choices.map((choice) => (
+              <label>
+                <input type="radio" name={item.id} value={choice.id} required />
+                <span><b>{choice.id}.</b> {choice.text}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        <div class="wiki-learning-check__actions">
+          <button type="submit">정답 확인</button>
+          <button type="reset" class="wiki-learning-check__secondary" hidden data-learning-check-reset>다시 풀기</button>
+        </div>
+        <div class="wiki-learning-check__feedback" role="status" aria-live="polite" hidden data-learning-check-feedback>
+          <strong data-learning-check-result></strong>
+          <p data-learning-check-reason></p>
+          <p><a href={item.reviewUrl}>관련 부분 다시 읽기</a></p>
+        </div>
+      </form>
+    ))}
+
+    <p class="wiki-learning-check__privacy">풀이 결과는 이 브라우저에만 저장되며 서버로 전송되지 않는다.</p>
+  </section>
+)}
+
+<script>
+  import {
+    loadLearningState,
+    recordAssessmentResult,
+    saveLearningState,
+  } from '../../lib/learning-state.mjs';
+
+  const writeResult = (articleId, correct) => {
+    const answeredAt = new Date().toISOString();
+    try {
+      const state = recordAssessmentResult(loadLearningState(), { articleId, correct, answeredAt });
+      saveLearningState(state);
+    } catch { /* 저장 차단 환경에서도 채점은 계속한다. */ }
+    window.dispatchEvent(new CustomEvent('wiki:assessment-completed', { detail: { articleId, correct, answeredAt } }));
+  };
+
+  document.querySelectorAll('[data-learning-check]').forEach((container) => {
+    const articleId = container.getAttribute('data-article-id') ?? '';
+    container.querySelectorAll('[data-learning-check-form]').forEach((form) => {
+      if (!(form instanceof HTMLFormElement)) return;
+      const feedback = form.querySelector('[data-learning-check-feedback]');
+      const result = form.querySelector('[data-learning-check-result]');
+      const reason = form.querySelector('[data-learning-check-reason]');
+      const reset = form.querySelector('[data-learning-check-reset]');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const selected = new FormData(form).values().next().value;
+        const correct = selected === form.dataset.answer;
+        if (result) result.textContent = correct ? '정답이다.' : '다시 확인할 부분이 있다.';
+        if (reason) reason.textContent = correct
+          ? form.dataset.explanation ?? ''
+          : `${form.dataset.incorrectReason ?? ''} ${form.dataset.explanation ?? ''}`.trim();
+        if (feedback instanceof HTMLElement) feedback.hidden = false;
+        if (reset instanceof HTMLElement) reset.hidden = false;
+        form.querySelectorAll('input').forEach((input) => { input.disabled = true; });
+        writeResult(articleId, correct);
+      });
+
+      form.addEventListener('reset', () => {
+        form.querySelectorAll('input').forEach((input) => { input.disabled = false; });
+        if (feedback instanceof HTMLElement) feedback.hidden = true;
+        if (reset instanceof HTMLElement) reset.hidden = true;
+      });
+    });
+  });
+</script>

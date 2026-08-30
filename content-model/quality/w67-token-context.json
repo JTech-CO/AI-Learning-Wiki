@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W67",
+  "releasedAt": "2026-08-30",
+  "tool": {
+    "id": "token-context",
+    "title": {
+      "ko": "토큰·문맥 예산 계산기",
+      "en": "Token and Context Budget Planner"
+    },
+    "route": "/lab/token-context/",
+    "status": "active",
+    "formulaVersion": "token-context-budget-v1",
+    "execution": {
+      "mode": "client-only",
+      "networkAccess": "none",
+      "transmitsUserInput": false,
+      "persistentStorage": "none"
+    }
+  },
+  "implementation": {
+    "src/lib/token-context.mjs": {
+      "bytes": 8660,
+      "sha256": "aafeb9ebe0a33a947aa58f4905fd7878e6cf62654122d4aa80f0c1bd28271fc3"
+    },
+    "src/components/lab/TokenContextCalculator.astro": {
+      "bytes": 12352,
+      "sha256": "0392a78b9fa26d9dc650a7658becdd2f1e7c1ca59c77588033861372ed6f8694"
+    },
+    "src/content/docs/lab/token-context.mdx": {
+      "bytes": 2479,
+      "sha256": "607ba182bb7bc34bd6dae618a1a02f8eb3bde323bb210e2ee391c03c50a8ebd1"
+    },
+    "src/styles/wiki-lab.css": {
+      "bytes": 15161,
+      "sha256": "b2668f0273236f975031d8dc477e4405d1334913ef18d2f9818e6c9bb2f325da"
+    },
+    "scripts/validate-w67-token-context.mjs": {
+      "bytes": 3258,
+      "sha256": "7d1e57d563bbb4b4f0e8a504ba751775e5268ca59f518d67f9f75b764bc32f57"
+    }
+  },
+  "deterministicFixtures": {
+    "source": "content-model/labs/fixtures/w67-token-context.json",
+    "count": 6,
+    "requiredCount": 6,
+    "results": [
+      {
+        "id": "balanced-korean",
+        "deterministic": true,
+        "warningCodes": [
+          "TOKEN_ESTIMATE"
+        ],
+        "sha256": "416b9ff3e995fe19d35b9b3d03eea0e230b9457e1d79eb698619e7e2f41d1479"
+      },
+      {
+        "id": "english-bpe",
+        "deterministic": true,
+        "warningCodes": [
+          "TOKEN_ESTIMATE"
+        ],
+        "sha256": "5574d5a239265cf0be6f347a75bff38214456cf54864ba6efb161b70e69f0b4e"
+      },
+      {
+        "id": "sentencepiece-mixed",
+        "deterministic": true,
+        "warningCodes": [
+          "TOKEN_ESTIMATE"
+        ],
+        "sha256": "16a8fea41100a5b50a8640a714a58d2f3e57f5a3427922b1acd3c9452eb43d38"
+      },
+      {
+        "id": "near-limit",
+        "deterministic": true,
+        "warningCodes": [
+          "TOKEN_ESTIMATE",
+          "TRUNCATION_RISK"
+        ],
+        "sha256": "392e6237cbcc71c42b8f66dc2bec77dd915dd796b8e1e8a06f34367d0a547f29"
+      },
+      {
+        "id": "overflow",
+        "deterministic": true,
+        "warningCodes": [
+          "TOKEN_ESTIMATE",
+          "CONTEXT_OVERFLOW"
+        ],
+        "sha256": "2ebe11d7acc3b8c85d91c00ed58164b5054e9ff303addd377de88b318a6d6dd9"
+      },
+      {
+        "id": "zero-pricing-large-batch",
+        "deterministic": true,
+        "warningCodes": [
+          "TOKEN_ESTIMATE"
+        ],
+        "sha256": "a087337f54a9574b3b0572384df4248f85ea11db5acf364ff9932eb150bd5c04"
+      }
+    ]
+  },
+  "releaseGates": {
+    "active": true,
+    "clientOnly": true,
+    "noNetwork": true,
+    "noInputTransmission": true,
+    "noPersistence": true,
+    "keyboardAccessible": true,
+    "mobileLayout": true,
+    "linksToWiki": true,
+    "deterministic": true
+  }
+}

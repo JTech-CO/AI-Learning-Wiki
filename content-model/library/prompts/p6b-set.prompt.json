@@ -67,7 +67,7 @@
     {
       "label": "작성 예시",
       "input": "나는 코딩 초보야. 아래 문제를 초보도 이해할 수 있게 고쳐줘.\n실제 값 지금 실제 값\n실제 값 실제 값\n실제 값 실제 값\n실제 값 (빨간 글씨 전체를 여기에)\n실제 값 (에러 위치 근처 코드)\n답은 이 순서로 줘: 1)원인 한 줄 2)고친 코드 3)왜 그렇게 고쳤는지 초보용 설명",
-      "output": ""
+      "output": "```python\ndef validate_result(result):\n    required = {\"result\", \"evidence\", \"needs_review\"}\n    missing = required - result.keys()\n    if missing:\n        raise ValueError(f\"missing fields: {sorted(missing)}\")\n    return result\n```\n\n분당 600건을 처리하는 요약 API 운영 환경에 prompt 원칙을 적용해 관찰 사실, 판단 근거, 불확실성, 다음 확인 행동을 구분한 결과를 만들었다."
     }
   ],
   "tags": [

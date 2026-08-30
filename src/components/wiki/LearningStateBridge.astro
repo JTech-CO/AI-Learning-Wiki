@@ -1,0 +1,136 @@
+---
+import wiki from '../../../public/data/wiki-index.json';
+
+const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
+const routePath = Astro.url.pathname.startsWith(basePath) && basePath !== '/'
+  ? `/${Astro.url.pathname.slice(basePath.length)}`
+  : Astro.url.pathname;
+const canonicalPath = routePath.endsWith('/') ? routePath : `${routePath}/`;
+const article = wiki.articles.find((item) => item.url === canonicalPath);
+const course = wiki.courses.find((item) => item.url === canonicalPath);
+const context = article
+  ? { kind: 'article', id: article.id, title: article.title, url: article.url }
+  : course
+    ? { kind: 'course', id: course.id, title: course.title, url: course.url }
+    : null;
+const courseData = course
+  ? { id: course.id, title: course.title, url: course.url, steps: course.steps.map(({ title, url }) => ({ title, url })) }
+  : null;
+---
+
+{context && (
+  <aside
+    class="wiki-learning-dock"
+    data-learning-state-bridge
+    data-context={JSON.stringify(context)}
+    data-course={courseData ? JSON.stringify(courseData) : undefined}
+    data-base-path={basePath}
+    aria-label="로컬 학습 기록"
+    hidden
+  >
+    <div class="wiki-learning-dock__summary">
+      <strong>{context.kind === 'article' ? '학습 기록' : '코스 진도'}</strong>
+      <span data-learning-summary>이 브라우저에서 상태를 확인하는 중</span>
+    </div>
+    <div class="wiki-learning-dock__actions">
+      {context.kind === 'article' && (
+        <>
+          <button type="button" data-learning-bookmark aria-pressed="false">북마크 추가</button>
+          <button type="button" data-learning-read aria-pressed="false">읽음으로 표시</button>
+        </>
+      )}
+      {context.kind === 'course' && <a data-learning-resume href={courseData?.steps[0]?.url ?? '/learning-progress/'}>이어보기</a>}
+      <a href="/learning-progress/">내 학습</a>
+    </div>
+    <span class="sr-only" data-learning-feedback aria-live="polite"></span>
+  </aside>
+)}
+
+<script>
+  import {
+    getCourseProgress,
+    isBookmarked,
+    isMarkedRead,
+    loadLearningState,
+    recordLearningVisit,
+    saveLearningState,
+    setLearningRead,
+    toggleLearningBookmark,
+  } from '../../lib/learning-state.mjs';
+
+  const root = document.querySelector('[data-learning-state-bridge]');
+  if (root instanceof HTMLElement) {
+    const context = JSON.parse(root.dataset.context ?? 'null');
+    const course = root.dataset.course ? JSON.parse(root.dataset.course) : null;
+    const basePath = root.dataset.basePath ?? '/';
+    const bookmarkButton = root.querySelector('[data-learning-bookmark]');
+    const readButton = root.querySelector('[data-learning-read]');
+    const resumeLink = root.querySelector('[data-learning-resume]');
+    const summary = root.querySelector('[data-learning-summary]');
+    const feedback = root.querySelector('[data-learning-feedback]');
+    let state = loadLearningState();
+
+    const localHref = (url) => basePath === '/' ? url : `${basePath}${url.replace(/^\/+/, '')}`;
+    const persist = (nextState, message) => {
+      try {
+        state = saveLearningState(nextState);
+        if (feedback) feedback.textContent = message;
+        window.dispatchEvent(new CustomEvent('ai-learning-state:change', { detail: state }));
+      } catch {
+        if (feedback) feedback.textContent = '브라우저 저장소를 사용할 수 없어 변경하지 못했다.';
+      }
+      render();
+    };
+
+    const render = () => {
+      if (context.kind === 'article') {
+        const bookmarked = isBookmarked(state, context.url);
+        const read = isMarkedRead(state, context.url);
+        if (bookmarkButton instanceof HTMLButtonElement) {
+          bookmarkButton.setAttribute('aria-pressed', String(bookmarked));
+          bookmarkButton.textContent = bookmarked ? '북마크 해제' : '북마크 추가';
+        }
+        if (readButton instanceof HTMLButtonElement) {
+          readButton.setAttribute('aria-pressed', String(read));
+          readButton.textContent = read ? '읽음 취소' : '읽음으로 표시';
+        }
+        if (summary) summary.textContent = read ? '읽은 문서로 표시됨' : '최근 본 문서에 자동 저장됨';
+      } else if (course) {
+        const progress = getCourseProgress(course, state);
+        if (summary) summary.textContent = `${progress.completed}/${progress.total}개 문서 · ${progress.percent}%`;
+        if (resumeLink instanceof HTMLAnchorElement) {
+          const target = progress.resumeStep;
+          resumeLink.hidden = !target;
+          if (target) {
+            resumeLink.href = localHref(target.url);
+            resumeLink.textContent = progress.started ? '이어보기' : '첫 문서 열기';
+            resumeLink.setAttribute('aria-label', `${target.title}부터 ${resumeLink.textContent}`);
+          }
+        }
+      }
+    };
+
+    if (context.kind === 'article') {
+      persist(recordLearningVisit(state, context), '최근 본 문서에 저장했다.');
+    } else {
+      render();
+    }
+    root.hidden = false;
+
+    bookmarkButton?.addEventListener('click', () => {
+      const next = toggleLearningBookmark(state, context);
+      const saved = isBookmarked(next, context.url);
+      persist(next, saved ? '북마크에 추가했다.' : '북마크에서 제거했다.');
+    });
+    readButton?.addEventListener('click', () => {
+      const nextRead = !isMarkedRead(state, context.url);
+      persist(setLearningRead(state, context, nextRead), nextRead ? '읽은 문서로 표시했다.' : '읽음 표시를 취소했다.');
+    });
+    window.addEventListener('storage', (event) => {
+      if (event.key?.startsWith('ai-learning-wiki:learning-state:')) {
+        state = loadLearningState();
+        render();
+      }
+    });
+  }
+</script>

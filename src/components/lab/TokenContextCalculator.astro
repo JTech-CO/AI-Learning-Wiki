@@ -1,0 +1,109 @@
+---
+import { TOKEN_CONTEXT_PRESETS, TOKENIZER_PROFILES } from '../../lib/token-context.mjs';
+const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
+---
+
+<section class="lab-tool" data-token-context-calculator data-base-path={basePath}>
+  <form class="lab-tool-form" data-token-context-form>
+    <fieldset>
+      <legend>문맥과 단가 설정</legend>
+      <p class="lab-field-note">프리셋은 공급자·모델명이 아닌 비교용 문맥 크기다. 실제 모델의 제한과 가격은 직접 확인해 입력한다.</p>
+      <div class="lab-form-grid lab-token-settings-grid">
+        <label class="lab-field"><span>문맥 프리셋</span><select name="presetId" data-token-preset>{TOKEN_CONTEXT_PRESETS.map((preset) => <option value={preset.id} selected={preset.id === 'balanced-32k'}>{preset.label}</option>)}</select></label>
+        <label class="lab-field"><span>문맥 창</span><input type="number" name="contextWindow" min="1" step="1" value="32768" required /><small>입력과 출력을 합친 최대 토큰</small></label>
+        <label class="lab-field"><span>토크나이저 프로필</span><select name="tokenizerProfile">{Object.entries(TOKENIZER_PROFILES).map(([id, profile]) => <option value={id}>{profile.label}</option>)}</select></label>
+        <label class="lab-field"><span>출력 예약량</span><input type="number" name="reservedOutput" min="0" step="1" value="2048" required /></label>
+        <label class="lab-field"><span>안전 여유분 (%)</span><input type="number" name="safetyMarginPercent" min="0" max="50" step="1" value="10" required /></label>
+        <label class="lab-field"><span>배치 크기</span><input type="number" name="batchSize" min="1" step="1" value="1" required /></label>
+        <label class="lab-field"><span>반복 호출 수</span><input type="number" name="calls" min="1" step="1" value="1" required /></label>
+        <label class="lab-field"><span>입력 단가 (USD/1M)</span><input type="number" name="inputCostPerMillion" min="0" step="0.0001" value="0" required /></label>
+        <label class="lab-field"><span>출력 단가 (USD/1M)</span><input type="number" name="outputCostPerMillion" min="0" step="0.0001" value="0" required /></label>
+      </div>
+      <p class="lab-preset-meta" data-token-preset-meta></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>메시지 계층별 입력</legend>
+      <div class="lab-schema-input-grid lab-token-text-grid">
+        <label class="lab-field lab-prompt-field"><span>시스템 지시</span><textarea name="systemText" rows="5">당신은 근거를 확인하고 간결한 한국어로 답하는 AI 도우미다.</textarea></label>
+        <label class="lab-field lab-prompt-field"><span>사용자 입력</span><textarea name="userText" rows="5">검색된 자료를 바탕으로 핵심 결론과 한계를 정리해줘.</textarea></label>
+        <label class="lab-field lab-prompt-field"><span>도구 정의·결과</span><textarea name="toolText" rows="5" placeholder="함수 스키마, 실행 결과, 에이전트 상태"></textarea></label>
+        <label class="lab-field lab-prompt-field"><span>검색 문맥</span><textarea name="retrievalText" rows="5" placeholder="RAG로 검색한 문서 조각"></textarea></label>
+      </div>
+      <div class="lab-form-actions"><button type="submit">문맥 예산 계산하기</button><button type="reset" class="lab-secondary-button">예시로 초기화</button></div>
+    </fieldset>
+  </form>
+
+  <p class="lab-tool-status" data-token-context-status role="status" aria-live="polite">메시지 계층을 나눠 토큰·비용 상한을 계산할 수 있다.</p>
+
+  <section class="lab-result" data-token-context-result hidden tabindex="-1">
+    <header class="lab-result-header"><div><p class="lab-result-kicker">계산 결과</p><h2>문맥 예산과 잘림 위험</h2></div><button type="button" class="lab-secondary-button" data-copy-token-url>설정 주소 복사</button></header>
+    <dl class="lab-result-summary lab-token-summary">
+      <div><dt>입력 추정</dt><dd data-token-input>-</dd></div>
+      <div><dt>출력 예약</dt><dd data-token-output>-</dd></div>
+      <div><dt>남은 입력 예산</dt><dd data-token-remaining>-</dd></div>
+      <div><dt>잘림 위험</dt><dd data-token-risk>-</dd></div>
+      <div><dt>문맥 사용률</dt><dd data-token-utilization>-</dd></div>
+      <div><dt>배치 비용 상한</dt><dd data-token-cost>-</dd></div>
+    </dl>
+    <div class="lab-warning-list" data-token-warnings hidden><h3>확인 사항</h3><ul></ul></div>
+    <section aria-labelledby="token-breakdown-title"><h3 id="token-breakdown-title">메시지별 추정 내역</h3><div class="lab-table-scroll" tabindex="0" role="region" aria-label="메시지별 추정 내역 표"><table class="lab-token-table"><thead><tr><th scope="col">계층</th><th scope="col">내용 토큰</th><th scope="col">래퍼</th><th scope="col">합계</th><th scope="col">입력 내 비율</th></tr></thead><tbody data-token-segment-rows></tbody></table></div></section>
+    <section aria-labelledby="token-cost-title"><h3 id="token-cost-title">비용 시나리오</h3><div class="lab-table-scroll" tabindex="0" role="region" aria-label="비용 시나리오 표"><table class="lab-token-cost-table"><thead><tr><th scope="col">범위</th><th scope="col">입력</th><th scope="col">출력 상한</th><th scope="col">합계</th></tr></thead><tbody data-token-cost-rows></tbody></table></div></section>
+    <p class="lab-tool-cross-link">KV 캐시와 장치 메모리까지 계산하려면 <a href={`${basePath}lab/model-memory/`}>모델 메모리·KV 캐시·문맥 계산기</a>를 이어서 사용한다.</p>
+    <section class="lab-assumptions"><h3>계산 가정</h3><ul data-token-assumptions></ul><p><strong>공식 버전:</strong> <code>token-context-budget-v1</code> · <strong>확인일:</strong> 2026-08-30</p></section>
+  </section>
+</section>
+
+<script>
+  import { calculateTokenContextBudget, TOKEN_CONTEXT_PRESETS } from '../../lib/token-context.mjs';
+  const lab = document.querySelector('[data-token-context-calculator]');
+  if (lab instanceof HTMLElement) {
+    const form = lab.querySelector('[data-token-context-form]');
+    const result = lab.querySelector('[data-token-context-result]');
+    const status = lab.querySelector('[data-token-context-status]');
+    const field = (name) => form?.elements.namedItem(name);
+    const value = (name) => field(name)?.value ?? '';
+    const setText = (selector, text) => { const target = lab.querySelector(selector); if (target) target.textContent = text; };
+    const money = (amount) => `$${amount.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 6 })}`;
+    const updatePresetMeta = () => {
+      const preset = TOKEN_CONTEXT_PRESETS.find(({ id }) => id === value('presetId'));
+      if (preset) setText('[data-token-preset-meta]', `프리셋 ${preset.version} · 확인일 ${preset.checkedAt} · 모델별 실제 상한은 공식 문서에서 다시 확인한다.`);
+    };
+    field('presetId')?.addEventListener('change', () => {
+      const preset = TOKEN_CONTEXT_PRESETS.find(({ id }) => id === value('presetId'));
+      const context = field('contextWindow');
+      if (preset && context instanceof HTMLInputElement) context.value = String(preset.contextWindow);
+      updatePresetMeta();
+    });
+    const render = ({ focus = true, updateUrl = true } = {}) => {
+      if (!(form instanceof HTMLFormElement) || !form.reportValidity()) return;
+      try {
+        const calculation = calculateTokenContextBudget(Object.fromEntries(new FormData(form)));
+        setText('[data-token-input]', `${calculation.totals.inputTokens.toLocaleString('ko-KR')}토큰`);
+        setText('[data-token-output]', `${calculation.totals.reservedOutput.toLocaleString('ko-KR')}토큰`);
+        setText('[data-token-remaining]', `${calculation.totals.remainingInputBudget.toLocaleString('ko-KR')}토큰`);
+        setText('[data-token-risk]', calculation.risk.label);
+        setText('[data-token-utilization]', `${(calculation.totals.utilization * 100).toFixed(1)}%`);
+        setText('[data-token-cost]', `${money(calculation.costs.batchTotal)} / ${calculation.costs.batchRequests.toLocaleString('ko-KR')}회`);
+        const segmentBody = lab.querySelector('[data-token-segment-rows]'); segmentBody?.replaceChildren();
+        for (const segment of calculation.segments) {
+          const row = document.createElement('tr');
+          [segment.label, segment.contentTokens.toLocaleString('ko-KR'), segment.wrapperTokens.toLocaleString('ko-KR'), segment.tokens.toLocaleString('ko-KR'), `${(segment.tokens / Math.max(1, calculation.totals.inputTokens) * 100).toFixed(1)}%`].forEach((cell, index) => { const element = document.createElement(index === 0 ? 'th' : 'td'); if (index === 0) element.scope = 'row'; element.textContent = cell; row.append(element); });
+          segmentBody?.append(row);
+        }
+        const costBody = lab.querySelector('[data-token-cost-rows]'); costBody?.replaceChildren();
+        [['요청 1회', calculation.costs.oneRequestInput, calculation.costs.oneRequestOutput, calculation.costs.oneRequestTotal], [`배치 ${calculation.costs.batchRequests.toLocaleString('ko-KR')}회`, calculation.costs.batchInput, calculation.costs.batchOutput, calculation.costs.batchTotal]].forEach(([label, input, output, total]) => { const row = document.createElement('tr'); [label, money(input), money(output), money(total)].forEach((cell, index) => { const element = document.createElement(index === 0 ? 'th' : 'td'); if (index === 0) element.scope = 'row'; element.textContent = cell; row.append(element); }); costBody?.append(row); });
+        const warningBox = lab.querySelector('[data-token-warnings]'); const warningList = warningBox?.querySelector('ul'); warningList?.replaceChildren(); if (warningBox) warningBox.hidden = calculation.warnings.length === 0; calculation.warnings.forEach((warning) => { const item = document.createElement('li'); item.dataset.severity = warning.severity; item.textContent = warning.message; warningList?.append(item); });
+        const assumptionList = lab.querySelector('[data-token-assumptions]'); assumptionList?.replaceChildren(); calculation.assumptions.forEach((assumption) => { const item = document.createElement('li'); item.textContent = assumption.text; assumptionList?.append(item); });
+        if (updateUrl) { const url = new URL(window.location.href); ['presetId','tokenizerProfile','contextWindow','reservedOutput','safetyMarginPercent','batchSize','calls','inputCostPerMillion','outputCostPerMillion'].forEach((name) => url.searchParams.set(name, value(name))); history.replaceState({}, '', url); }
+        if (result) result.hidden = false; if (status) status.textContent = `${calculation.totals.inputTokens.toLocaleString('ko-KR')}토큰을 추정했다. ${calculation.risk.message}`;
+        if (focus) { result?.focus({ preventScroll: true }); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      } catch (error) { if (status) status.textContent = error instanceof Error ? error.message : '문맥 예산을 계산하지 못했다.'; }
+    };
+    form?.addEventListener('submit', (event) => { event.preventDefault(); render(); });
+    form?.addEventListener('reset', () => setTimeout(() => { updatePresetMeta(); render({ focus: false, updateUrl: false }); if (status) status.textContent = '예시 입력으로 초기화했다.'; }));
+    lab.querySelector('[data-copy-token-url]')?.addEventListener('click', async () => { try { await navigator.clipboard.writeText(location.href); if (status) status.textContent = '비민감 설정이 담긴 주소를 복사했다. 입력 텍스트는 주소에 포함하지 않는다.'; } catch { if (status) status.textContent = '주소 표시줄의 링크를 직접 복사한다.'; } });
+    const params = new URLSearchParams(location.search); ['presetId','tokenizerProfile','contextWindow','reservedOutput','safetyMarginPercent','batchSize','calls','inputCostPerMillion','outputCostPerMillion'].forEach((name) => { const target = field(name); if (params.has(name) && (target instanceof HTMLInputElement || target instanceof HTMLSelectElement)) target.value = params.get(name) ?? ''; });
+    updatePresetMeta(); render({ focus: false, updateUrl: false });
+  }
+</script>

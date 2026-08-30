@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "milestone": "W54",
-  "designedAt": "2026-08-01",
+  "designedAt": "2026-08-30",
   "contracts": {
     "registry": {
       "path": "content-model/schema.lab-registry-v1.json",
@@ -20,7 +20,7 @@
     },
     "registryData": {
       "path": "content-model/labs/registry.json",
-      "sha256": "64a6ef6e13978bf2c392fdf7b74a29e749abdfb368c3a5d385073a93a74cebef"
+      "sha256": "de56828714ea833254bf643f482acb6cac00f2931801b0f5ede5ef82e06e61fd"
     }
   },
   "informationArchitecture": {
@@ -78,8 +78,8 @@
   },
   "toolPlan": {
     "total": 6,
-    "active": 4,
-    "planned": 2,
+    "active": 6,
+    "planned": 0,
     "ids": [
       "learning-path",
       "evaluation-metrics",
@@ -107,8 +107,10 @@
       "W58": [
         "prompt-schema"
       ],
-      "backlog": [
-        "token-context",
+      "W67": [
+        "token-context"
+      ],
+      "W68": [
         "rag-evaluation"
       ]
     },
@@ -123,9 +125,9 @@
     "prerequisiteCoveragePercent": 99.4,
     "withRelated": 1624,
     "relatedCoveragePercent": 100,
-    "courseSteps": 335,
-    "uniqueCourseArticles": 294,
-    "courseArticleCoveragePercent": 18.1
+    "courseSteps": 733,
+    "uniqueCourseArticles": 673,
+    "courseArticleCoveragePercent": 41.4
   },
   "publicSurface": {
     "hubRouteReserved": "/lab/",
@@ -136,9 +138,11 @@
       "/lab/learning-path/",
       "/lab/evaluation-metrics/",
       "/lab/model-memory/",
-      "/lab/prompt-schema/"
+      "/lab/prompt-schema/",
+      "/lab/token-context/",
+      "/lab/rag-evaluation/"
     ],
-    "publicToolRouteCount": 4
+    "publicToolRouteCount": 6
   },
   "nextMilestone": {
     "id": "W55",

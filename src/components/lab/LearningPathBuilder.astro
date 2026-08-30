@@ -70,9 +70,14 @@ const wikiIndexUrl = `${basePath}data/wiki-index.json`;
         <p class="lab-result-kicker">맞춤 결과</p>
         <h2 data-result-title>추천 학습 경로</h2>
       </div>
-      <button type="button" class="lab-secondary-button" data-copy-learning-path>
-        공유 주소 복사
-      </button>
+      <div class="lab-result-actions">
+        <button type="button" class="lab-secondary-button" data-save-learning-path disabled>
+          내 학습에 저장
+        </button>
+        <button type="button" class="lab-secondary-button" data-copy-learning-path>
+          공유 주소 복사
+        </button>
+      </div>
     </header>
 
     <dl class="lab-result-summary">
@@ -115,6 +120,11 @@ const wikiIndexUrl = `${basePath}data/wiki-index.json`;
     buildLearningPath,
     resolveArticleQuery,
   } from '../../lib/learning-path.mjs';
+  import {
+    loadLearningState,
+    saveCustomLearningPath,
+    saveLearningState,
+  } from '../../lib/learning-state.mjs';
 
   const builder = document.querySelector('[data-learning-path-builder]');
 
@@ -128,8 +138,10 @@ const wikiIndexUrl = `${basePath}data/wiki-index.json`;
     const limitInput = form?.elements.namedItem('limit');
     const focusInput = form?.elements.namedItem('focus');
     const mathematicsInput = form?.elements.namedItem('mathematics');
+    const savePathButton = builder.querySelector('[data-save-learning-path]');
     const courseById = new Map();
     let wikiIndex = null;
+    let latestSavedPath = null;
 
     const text = (selector, value) => {
       const element = builder.querySelector(selector);
@@ -266,6 +278,20 @@ const wikiIndexUrl = `${basePath}data/wiki-index.json`;
           includeMathematics: mathematicsInput?.checked,
         });
 
+        latestSavedPath = {
+          id: `${article.id}:${pathResult.level}:${pathResult.focus}:${pathResult.includeMathematics ? 'math' : 'no-math'}:${pathResult.maxDocuments}`,
+          goalId: article.id,
+          title: `${article.title}까지의 추천 학습 경로`,
+          settings: {
+            level: pathResult.level,
+            focus: pathResult.focus,
+            maxDocuments: pathResult.maxDocuments,
+            includeMathematics: pathResult.includeMathematics,
+          },
+          steps: pathResult.path.map(({ title, url }) => ({ title, url })),
+        };
+        if (savePathButton instanceof HTMLButtonElement) savePathButton.disabled = false;
+
         const levelLabel = levelInput?.selectedOptions?.[0]?.textContent ?? pathResult.level;
         const focusLabel = focusInput?.selectedOptions?.[0]?.textContent ?? pathResult.focus;
         text('[data-result-title]', `${article.title}까지의 추천 학습 경로`);
@@ -301,6 +327,8 @@ const wikiIndexUrl = `${basePath}data/wiki-index.json`;
     form?.addEventListener('reset', () => {
       window.setTimeout(() => {
         result.hidden = true;
+        latestSavedPath = null;
+        if (savePathButton instanceof HTMLButtonElement) savePathButton.disabled = true;
         const url = new URL(window.location.href);
         url.search = '';
         window.history.replaceState({}, '', url);
@@ -308,6 +336,18 @@ const wikiIndexUrl = `${basePath}data/wiki-index.json`;
           ? `${wikiIndex.articles.length.toLocaleString('ko-KR')}개 문서에서 목표를 선택할 수 있다.`
           : '백과 문서 관계 데이터를 불러오는 중이다.';
       });
+    });
+
+    savePathButton?.addEventListener('click', () => {
+      if (!latestSavedPath) return;
+      try {
+        const state = loadLearningState();
+        saveLearningState(saveCustomLearningPath(state, latestSavedPath));
+        status.textContent = '맞춤 학습 경로를 이 브라우저의 내 학습에 저장했다.';
+        window.dispatchEvent(new CustomEvent('ai-learning-state:change'));
+      } catch {
+        status.textContent = '브라우저 저장소를 사용할 수 없어 학습 경로를 저장하지 못했다.';
+      }
     });
 
     builder.querySelector('[data-copy-learning-path]')?.addEventListener('click', async () => {

@@ -35,7 +35,9 @@ export default defineConfig({
         './src/styles/wiki.css',
         './src/styles/wiki-library.css',
         './src/styles/wiki-lab.css',
-        './src/styles/wiki-editor-quality.css'
+        './src/styles/wiki-editor-quality.css',
+        './src/styles/wiki-learning-check.css',
+        './src/styles/wiki-learning.css'
       ],
       locales: { root: { label: '한국어', lang: 'ko' } },
       pagefind: false,

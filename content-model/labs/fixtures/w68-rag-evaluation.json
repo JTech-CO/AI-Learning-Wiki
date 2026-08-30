@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "milestone": "W68",
+  "toolId": "rag-evaluation",
+  "formulaVersion": "rag-ranking-metrics-v2",
+  "fixtures": [
+    { "id": "perfect-graded", "cutoffK": 3, "queries": [{ "queryId": "q1", "relevant": [{ "id": "a", "grade": 3 }, { "id": "b", "grade": 2 }], "before": [{ "id": "a", "hasEvidence": true }, { "id": "b", "hasEvidence": true }, { "id": "x" }], "after": [{ "id": "a", "hasEvidence": true }, { "id": "b", "hasEvidence": true }, { "id": "x" }] }] },
+    { "id": "reranking-improves", "cutoffK": 3, "queries": [{ "queryId": "q1", "relevant": [{ "id": "a", "grade": 2 }], "before": [{ "id": "x" }, { "id": "y" }, { "id": "a", "hasEvidence": true }], "after": [{ "id": "a", "hasEvidence": true }, { "id": "x" }, { "id": "y" }] }] },
+    { "id": "duplicate-penalty", "cutoffK": 4, "queries": [{ "queryId": "q1", "relevant": ["a", "b"], "before": ["a", "a", "x", "b"], "after": ["a", "b", "x", "y"] }] },
+    { "id": "no-hit", "cutoffK": 2, "queries": [{ "queryId": "q1", "relevant": ["a"], "before": ["x", "y"], "after": ["y", "z"] }] },
+    { "id": "below-k", "cutoffK": 5, "queries": [{ "queryId": "q1", "relevant": ["a"], "before": ["a"], "after": ["a"] }] },
+    { "id": "macro-average", "cutoffK": 2, "queries": [{ "queryId": "q1", "relevant": ["a"], "before": ["a", "x"], "after": ["a", "x"] }, { "queryId": "q2", "relevant": ["b"], "before": ["x", "b"], "after": ["b", "x"] }] },
+    { "id": "evidence-coverage", "cutoffK": 3, "queries": [{ "queryId": "q1", "relevant": ["a"], "before": [{ "id": "a", "hasEvidence": false }, { "id": "x", "hasEvidence": false }, { "id": "y", "hasEvidence": false }], "after": [{ "id": "a", "hasEvidence": true }, { "id": "x", "hasEvidence": true }, { "id": "y", "hasEvidence": false }] }] },
+    { "id": "csv-equivalent", "cutoffK": 2, "csv": "query_id,document_id,relevance,before_rank,after_rank,has_evidence\nq1,a,2,2,1,true\nq1,x,0,1,2,false" }
+  ]
+}

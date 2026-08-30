@@ -1,4 +1,6 @@
 ---
+import LearningStateBridge from './LearningStateBridge.astro';
+
 const query = Astro.url.searchParams.get('q') ?? '';
 const basePath = `${import.meta.env.BASE_URL.replace(/\/+$/, '')}/`;
 const indexUrl = `${basePath}data/wiki-index.json`;
@@ -17,9 +19,12 @@ const indexUrl = `${basePath}data/wiki-index.json`;
     <button type="submit">검색</button>
   </form>
   <nav class="wiki-header-links" aria-label="빠른 메뉴">
+    <a href="/learning-progress/">내 학습</a>
     <a href="/special/all-pages/">전체 문서(색인)</a>
   </nav>
 </div>
+
+<LearningStateBridge />
 
 <script>
   const header = document.querySelector('.wiki-header');
