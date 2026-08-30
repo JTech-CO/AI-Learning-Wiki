@@ -1,7 +1,7 @@
 {
   "name": "ai-learning-wiki",
   "type": "module",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "private": true,
   "scripts": {
     "prebuild": "npm run p0:courses:prepare && npm run p0:courses:validate && npm run wiki:w60:prepare && npm run p1:validate && npm run p2:validate",
@@ -234,16 +234,18 @@
     "wiki:w66:prepare": "node scripts/build-w66-prompt-workbench.mjs",
     "wiki:w66:validate": "node scripts/validate-w66-prompt-workbench.mjs",
     "wiki:w66:release": "npm run wiki:w66:prepare && npm run data && npm run wiki:w66:validate",
-    "p1:checks:prepare": "node scripts/build-p1-learning-checks.mjs",
-    "p1:checks:validate": "node scripts/validate-p1-learning-checks.mjs",
+    "learning-checks:prepare": "node scripts/build-p1-learning-checks.mjs",
+    "learning-checks:validate": "node scripts/validate-p1-learning-checks.mjs",
+    "p1:checks:prepare": "npm run learning-checks:prepare",
+    "p1:checks:validate": "npm run learning-checks:validate",
     "p1:prepare": "npm run wiki:w66:prepare && npm run data && npm run p1:checks:prepare",
     "p1:validate": "npm run p1:prepare && npm run wiki:w65:validate && npm run wiki:w66:validate && npm run wiki:w67:report && npm run wiki:w67:validate && npm run wiki:w68:report && npm run wiki:w68:validate && npm run p1:checks:validate",
     "wiki:w70:validate": "node scripts/validate-w70-korean-multilingual.mjs",
     "wiki:w71:validate": "node scripts/validate-w71-regulation-literacy.mjs",
     "wiki:w72:validate": "node scripts/validate-w72-agent-interoperability.mjs",
     "p2:prepare": "node scripts/build-p2-content-expansion.mjs",
-    "p2:validate": "npm run p2:prepare && npm run wiki:w70:validate && npm run wiki:w71:validate && npm run wiki:w72:validate && node scripts/validate-p2-content-expansion.mjs",
-    "p2:release": "npm run p2:prepare && node scripts/validate-p2-content-expansion.mjs --generated"
+    "p2:validate": "npm run p2:prepare && npm run wiki:w70:validate && npm run wiki:w71:validate && npm run wiki:w72:validate && npm run learning-checks:prepare && npm run learning-checks:validate && node scripts/validate-p2-content-expansion.mjs",
+    "p2:release": "npm run p2:prepare && npm run learning-checks:prepare && npm run learning-checks:validate && node scripts/validate-p2-content-expansion.mjs --generated"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.3",

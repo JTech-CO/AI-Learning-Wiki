@@ -1,8 +1,13 @@
 ---
 import learningChecks from '../../../public/data/learning-checks.json';
 
-const articleMatch = Astro.url.pathname.match(/\/wiki\/([^/]+)\/?$/);
-const articleId = articleMatch ? decodeURIComponent(articleMatch[1]) : '';
+const routeId = Astro.locals.starlightRoute.id
+  .replace(/^\/+|\/+$/g, '')
+  .replace(/\.(md|mdx)$/i, '');
+const routeParts = routeId.split('/');
+const articleId = routeParts.length === 2 && routeParts[0] === 'wiki'
+  ? decodeURIComponent(routeParts[1])
+  : '';
 const assessment = learningChecks.assessments.find((item) => item.articleId === articleId);
 const typeLabels = learningChecks.itemTypeLabels;
 const structuredData = assessment ? {

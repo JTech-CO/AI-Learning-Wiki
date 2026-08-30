@@ -65,26 +65,48 @@ const requiredCore = Object.keys(calculationTemplates).filter((id) => (
 const selectedIds = [...requiredCore];
 const seen = new Set(selectedIds);
 const orderedCourses = [...courses].sort((left, right) => left.title.localeCompare(right.title, 'ko'));
-for (let stepIndex = 0; selectedIds.length < 100; stepIndex += 1) {
-  let added = false;
+const maximumCourseLength = Math.max(0, ...orderedCourses.map((course) => course.steps.length));
+for (let stepIndex = 0; stepIndex < maximumCourseLength; stepIndex += 1) {
   for (const course of orderedCourses) {
     const ref = course.steps[stepIndex]?.ref;
     if (!ref || seen.has(ref) || !byId.has(ref)) continue;
     selectedIds.push(ref);
     seen.add(ref);
-    added = true;
-    if (selectedIds.length === 100) break;
   }
-  if (!added && stepIndex > Math.max(...orderedCourses.map((course) => course.steps.length))) break;
 }
-if (selectedIds.length !== 100) throw new Error(`핵심 학습 체크 문서가 ${selectedIds.length}개다. 100개가 필요하다.`);
+
+const expectedCourseArticleIds = new Set(
+  orderedCourses.flatMap((course) => course.steps.map((step) => step.ref)).filter((id) => byId.has(id)),
+);
+if (selectedIds.length !== expectedCourseArticleIds.size) {
+  throw new Error(`코스 연결 문서 ${expectedCourseArticleIds.size}개 중 학습 체크 대상은 ${selectedIds.length}개다.`);
+}
 
 const categoryPeers = (article) => articles.filter((candidate) => candidate.id !== article.id && candidate.categories.some((category) => article.categories.includes(category)));
-const deterministicPeers = (article, index, count = 3) => {
-  const peers = categoryPeers(article).sort((left, right) => left.id.localeCompare(right.id));
-  if (peers.length < count) throw new Error(`${article.id}: 오답 후보가 부족하다.`);
-  const offset = index % peers.length;
-  return Array.from({ length: count }, (_, peerIndex) => peers[(offset + peerIndex * 7) % peers.length]);
+const deterministicPeers = (article, index, valueFor, excludedValues = [], count = 3) => {
+  const categoryCandidates = categoryPeers(article).sort((left, right) => left.id.localeCompare(right.id));
+  const categoryIds = new Set(categoryCandidates.map((candidate) => candidate.id));
+  const fallbackCandidates = articles
+    .filter((candidate) => candidate.id !== article.id && !categoryIds.has(candidate.id))
+    .sort((left, right) => left.id.localeCompare(right.id));
+  const correctValue = valueFor(article).trim();
+  const usedValues = new Set([correctValue, ...excludedValues.map((value) => value.trim())]);
+  const selected = [];
+  const collectFrom = (candidates) => {
+    if (!candidates.length) return;
+    const offset = index % candidates.length;
+    for (let candidateIndex = 0; candidateIndex < candidates.length && selected.length < count; candidateIndex += 1) {
+      const candidate = candidates[(offset + candidateIndex) % candidates.length];
+      const value = valueFor(candidate).trim();
+      if (!value || usedValues.has(value)) continue;
+      selected.push(candidate);
+      usedValues.add(value);
+    }
+  };
+  collectFrom(categoryCandidates);
+  collectFrom(fallbackCandidates);
+  if (selected.length < count) throw new Error(`${article.id}: 서로 다른 오답 후보가 ${selected.length}개뿐이다.`);
+  return selected;
 };
 const shuffledChoices = (correctText, distractorTexts, correctOffset) => {
   const values = [...distractorTexts.slice(0, 3)];
@@ -92,8 +114,13 @@ const shuffledChoices = (correctText, distractorTexts, correctOffset) => {
   return values.map((text, index) => ({ id: String.fromCharCode(65 + index), text }));
 };
 const levelFor = (course) => course?.level ?? 'entry';
+const articleReviewUrl = (article) => `/wiki/${article.id}/#개념과-원리`;
+const stableSeed = (value) => [...value].reduce(
+  (seed, character) => ((seed * 31) + character.codePointAt(0)) >>> 0,
+  2166136261,
+);
 
-const makeQuestion = (article, index, course, stepIndex) => {
+const makeQuestion = (article, course, stepIndex) => {
   const calculation = calculationTemplates[article.id];
   if (calculation) {
     return {
@@ -106,14 +133,15 @@ const makeQuestion = (article, index, course, stepIndex) => {
     };
   }
 
-  const peers = deterministicPeers(article, index);
-  const correctOffset = index % 4;
+  const seed = stableSeed(article.id);
+  const correctOffset = seed % 4;
   const nextStep = course?.steps[stepIndex + 1];
   const relation = [...article.prerequisites, ...article.related].find((id) => byId.has(id));
-  const variant = index % 4;
+  const variant = Math.floor(seed / 4) % 4;
 
   if (variant === 0 && nextStep && byId.has(nextStep.ref)) {
     const nextArticle = byId.get(nextStep.ref);
+    const peers = deterministicPeers(article, seed, (peer) => peer.title, [nextArticle.title]);
     const choices = shuffledChoices(nextArticle.title, peers.map((peer) => peer.title), correctOffset);
     return {
       id: `${article.id}-sequence`, type: 'sequence',
@@ -127,6 +155,7 @@ const makeQuestion = (article, index, course, stepIndex) => {
 
   if (variant === 1 && relation) {
     const related = byId.get(relation);
+    const peers = deterministicPeers(article, seed, (peer) => peer.title, [related.title]);
     const choices = shuffledChoices(related.title, peers.map((peer) => peer.title), correctOffset);
     return {
       id: `${article.id}-distinction`, type: 'concept-distinction',
@@ -134,11 +163,12 @@ const makeQuestion = (article, index, course, stepIndex) => {
       choices, answer: choices[correctOffset].id,
       explanation: `‘${related.title}’은 이 문서의 개념 관계에 직접 연결되어 있다. 두 문서의 입력·출력과 적용 범위를 나란히 비교한다.`,
       incorrectReason: '용어가 비슷한 것과 문서의 개념 그래프에서 직접 연결된 것은 다르다.',
-      reviewUrl: `/wiki/${article.id}/#문서-관계`,
+      reviewUrl: `/wiki/${related.id}/`,
     };
   }
 
   if (variant === 2) {
+    const peers = deterministicPeers(article, seed, (peer) => peer.title);
     const choices = shuffledChoices(article.title, peers.map((peer) => peer.title), correctOffset);
     return {
       id: `${article.id}-scenario`, type: 'case-judgment',
@@ -146,10 +176,11 @@ const makeQuestion = (article, index, course, stepIndex) => {
       choices, answer: choices[correctOffset].id,
       explanation: `이 설명은 ‘${article.title}’의 핵심 정의와 적용 대상을 요약한다.`,
       incorrectReason: '사례의 핵심 입력·출력 또는 적용 대상을 각 표제어의 정의와 대조해야 한다.',
-      reviewUrl: `/wiki/${article.id}/`,
+      reviewUrl: articleReviewUrl(article),
     };
   }
 
+  const peers = deterministicPeers(article, seed, (peer) => peer.summary);
   const choices = shuffledChoices(article.summary, peers.map((peer) => peer.summary), correctOffset);
   return {
     id: `${article.id}-definition`, type: 'multiple-choice',
@@ -157,11 +188,11 @@ const makeQuestion = (article, index, course, stepIndex) => {
     choices, answer: choices[correctOffset].id,
     explanation: article.summary,
     incorrectReason: '선택한 설명은 같은 분야의 다른 개념에 해당한다. 표제어의 입력·출력과 적용 범위를 다시 구분한다.',
-    reviewUrl: `/wiki/${article.id}/#개념과-원리`,
+    reviewUrl: articleReviewUrl(article),
   };
 };
 
-const assessments = selectedIds.map((articleId, index) => {
+const assessments = selectedIds.sort((left, right) => left.localeCompare(right)).map((articleId) => {
   const article = byId.get(articleId);
   const memberships = orderedCourses.filter((course) => course.steps.some((step) => step.ref === articleId));
   const primaryCourse = memberships[0];
@@ -169,7 +200,7 @@ const assessments = selectedIds.map((articleId, index) => {
   const prerequisites = article.prerequisites.filter((id) => byId.has(id)).slice(0, 3).map((id) => ({
     id, title: byId.get(id).title, url: `/wiki/${id}/`,
   }));
-  const item = makeQuestion(article, index, primaryCourse, stepIndex);
+  const item = makeQuestion(article, primaryCourse, stepIndex);
   return {
     id: `learning-check-${articleId}`,
     articleId,
@@ -200,4 +231,4 @@ const payload = {
 
 await mkdir('public/data', { recursive: true });
 await writeFile('public/data/learning-checks.json', `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
-console.log(`P1 structured learning checks: ${assessments.length} articles, ${new Set(assessments.flatMap((assessment) => assessment.assesses)).size} item types`);
+console.log(`Structured learning checks: ${assessments.length} course articles, ${new Set(assessments.flatMap((assessment) => assessment.assesses)).size} item types`);
